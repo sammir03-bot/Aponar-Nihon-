@@ -1,0 +1,3061 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>জাপানি ইন্টারভিউ প্র্যাকটিস শিট</title>
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans', 'Noto Sans Bengali', 'Meiryo', sans-serif;
+            background-color: #f5f7fa;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* প্রধান কন্টেইনার - প্রিন্টের জন্য A4 */
+        .document {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* হেডার */
+        .header {
+            background: linear-gradient(135deg, #2c3e50, #1e2a36);
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+            border-bottom: 5px solid #e67e22;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* প্রশ্নের তালিকা */
+        .qa-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 40px;
+        }
+
+        /* প্রতিটি কার্ড */
+        .qa-item {
+            background: #f9f9fc;
+            border-left: 6px solid #e67e22;
+            border-radius: 0 12px 12px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+            transition: transform 0.2s;
+            break-inside: avoid; /* প্রিন্টে একসাথে রাখে */
+            page-break-inside: avoid;
+            margin-bottom: 20px;
+        }
+
+        .qa-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+        }
+
+        .qa-number {
+            background: #e67e22;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            padding: 8px 15px;
+            display: inline-block;
+            border-radius: 0 0 20px 0;
+            margin-bottom: 10px;
+        }
+
+        .qa-japanese {
+            padding: 0 20px 10px 20px;
+            font-size: 1.1rem;
+            color: #1e2a36;
+        }
+
+        .qa-japanese p {
+            margin: 5px 0;
+        }
+
+        .qa-bengali {
+            padding: 0 20px 15px 20px;
+            font-size: 1rem;
+            color: #2c3e50;
+            background: #eef2f7;
+            border-radius: 0 0 8px 8px;
+            border-top: 1px dashed #bdc3c7;
+        }
+
+        .qa-bengali p {
+            margin: 8px 0;
+            font-weight: 400;
+        }
+
+        /* ছোট ডিভাইসে এক কলাম */
+        @media (max-width: 768px) {
+            .qa-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+            .header h1 { font-size: 2rem; }
+        }
+
+        /* প্রিন্ট স্টাইল */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .document {
+                box-shadow: none;
+                border-radius: 0;
+            }
+            .qa-item {
+                break-inside: avoid;
+                page-break-inside: avoid;
+                border-left-color: #333;
+            }
+            .qa-number {
+                background: #333;
+            }
+            .header {
+                background: #2c3e50;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        /* ফুটার */
+        .footer {
+            background: #ecf0f1;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            border-top: 1px solid #bdc3c7;
+        }
+
+        /* ফুরিগানা সমর্থন (ruby) */
+        ruby {
+            ruby-align: center;
+        }
+        rt {
+            font-size: 0.7rem;
+            color: #555;
+        }
+    </style>
+    <!-- Google Fonts: জাপানি ও বাংলা -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+Bengali:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="document">
+        <div class="header">
+            <h1>🗾 Skype Interview Practice Sheet</h1>
+            <p>日本語 & বাংলা | ২৫০টি প্রশ্ন ও উত্তর</p>
+        </div>
+
+        <div class="qa-grid">
+            <!-- 
+                সমস্ত প্রশ্ন ও উত্তর নিচে দেওয়া হলো।
+                নম্বর ক্রমানুসারে ১ থেকে ২৫০ পর্যন্ত।
+                কিছু প্রশ্ন নম্বর পুনরাবৃত্তি হয়েছে (যেমন ১৩, ২৮, ২৯) ঠিক আগের পিডিএফের মতোই রাখা হয়েছে।
+                জাপানি লেখায় ফুরিগানা সংরক্ষিত, বাংলা অনুবাদ সহ।
+            -->
+            <!-- ① -->
+            <div class="qa-item">
+                <div class="qa-number">①</div>
+                <div class="qa-japanese">
+                    <p><strong>お名前(なまえ)は何(なん)ですか？</strong></p>
+                    <p>Ans: 私(わたし)の名前(なまえ)はラフマンです。「ラフマン」で呼(よ)んでください。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার নাম কী? উত্তর: আমার নাম রহমান। "রহমান" বলে ডাকুন।</p>
+                </div>
+            </div>
+            <!-- ② -->
+            <div class="qa-item">
+                <div class="qa-number">②</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの おたんじょび/せいねんがっぴ は いつ ですか？</strong></p>
+                    <p>Ans: わたしの おたんじょび/せいねんがっぴ は ２０００年(ねん)の１月(がつ)１日(にち)です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার জন্মদিন/জন্ম তারিখ কবে? উত্তর: আমার জন্মদিন ২০০০ সালের ১লা জানুয়ারি।</p>
+                </div>
+            </div>
+            <!-- ③ -->
+            <div class="qa-item">
+                <div class="qa-number">③</div>
+                <div class="qa-japanese">
+                    <p><strong>今(いま)は なんさい/おいくつ ですか？</strong></p>
+                    <p>Ans: 今(いま)は ２２歳(さい)です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> এখন আপনার বয়স কত? উত্তর: এখন ২২ বছর।</p>
+                </div>
+            </div>
+            <!-- ④ -->
+            <div class="qa-item">
+                <div class="qa-number">④</div>
+                <div class="qa-japanese">
+                    <p><strong>いま どこに すんで いますか？/どこ から きましたか？</strong></p>
+                    <p>Ans: いま バングラデシュのナラヤンガンジに すんで います。/ バングラデシュのナラヤンガンジから きました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> এখন কোথায় থাকেন? / কোথা থেকে এসেছেন? উত্তর: এখন বাংলাদেশের নারায়ণগঞ্জে থাকি। / বাংলাদেশের নারায়ণগঞ্জ থেকে এসেছি।</p>
+                </div>
+            </div>
+            <!-- ⑤ -->
+            <div class="qa-item">
+                <div class="qa-number">⑤</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたのまち/ところ は どんな まち/ところ ですか？</strong></p>
+                    <p>Ans: きれいな まち/ところ です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার শহর/স্থানটি কেমন? উত্তর: পরিষ্কার শহর/স্থান।</p>
+                </div>
+            </div>
+            <!-- ⑥ -->
+            <div class="qa-item">
+                <div class="qa-number">⑥</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は いま どこ に いますか？</strong></p>
+                    <p>Ans: いま わたしの にほんご がっこう に います。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি এখন কোথায় আছেন? উত্তর: এখন আমার জাপানি ভাষা স্কুলে আছি।</p>
+                </div>
+            </div>
+            <!-- ⑦ -->
+            <div class="qa-item">
+                <div class="qa-number">⑦</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた の にほんご の がっこう は どこ に ありますか？</strong></p>
+                    <p>Ans: ナラヤンガンジのシブマーケットにあります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার জাপানি ভাষার স্কুল কোথায়? উত্তর: নারায়ণগঞ্জের শিবু মার্কেটে আছে।</p>
+                </div>
+            </div>
+            <!-- ⑧ -->
+            <div class="qa-item">
+                <div class="qa-number">⑧</div>
+                <div class="qa-japanese">
+                    <p><strong>がっこう の 名前(なまえ) は なん ですか？</strong></p>
+                    <p>Ans: JEJC JAPANESE LANGUAGE ACADEMY です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> স্কুলের নাম কী? উত্তর: JEJC JAPANESE LANGUAGE ACADEMY।</p>
+                </div>
+            </div>
+            <!-- ⑨ -->
+            <div class="qa-item">
+                <div class="qa-number">⑨</div>
+                <div class="qa-japanese">
+                    <p><strong>まいにち がっこう へ いきますか？</strong></p>
+                    <p>Ans: はい、まいにち がっこう へ いきます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> প্রতিদিন স্কুলে যান? উত্তর: হ্যাঁ, প্রতিদিন স্কুলে যাই।</p>
+                </div>
+            </div>
+            <!-- ⑩ -->
+            <div class="qa-item">
+                <div class="qa-number">⑩</div>
+                <div class="qa-japanese">
+                    <p><strong>どうやって がっこう へ いきますか？</strong></p>
+                    <p>Ans: バスで 学校(がっこう) へ いきます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কিভাবে স্কুলে যান? উত্তর: বাসে স্কুলে যাই।</p>
+                </div>
+            </div>
+            <!-- ⑪ -->
+            <div class="qa-item">
+                <div class="qa-number">⑪</div>
+                <div class="qa-japanese">
+                    <p><strong>がっこうのなかで なに を しますか？</strong></p>
+                    <p>Ans: にほんごを べんきょうします。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> স্কুলের ভিতরে কী করেন? উত্তর: জাপানি ভাষা পড়ি।</p>
+                </div>
+            </div>
+            <!-- ⑫ -->
+            <div class="qa-item">
+                <div class="qa-number">⑫</div>
+                <div class="qa-japanese">
+                    <p><strong>がっこう まで なん じかん かかりますか？</strong></p>
+                    <p>Ans: ３０分(ぷん)ぐらい かかります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> স্কুল পর্যন্ত কত সময় লাগে? উত্তর: প্রায় ৩০ মিনিট লাগে।</p>
+                </div>
+            </div>
+            <!-- ⑬ -->
+            <div class="qa-item">
+                <div class="qa-number">⑬</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの にほんご がっこう で なんじかん べんきょうしますか？</strong></p>
+                    <p>Ans: よじかん ぐらい べんきょうします。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার জাপানি স্কুলে কত ঘন্টা পড়াশোনা করেন? উত্তর: প্রায় ৪ ঘন্টা পড়াশোনা করি।</p>
+                </div>
+            </div>
+            <!-- ⑬ (দ্বিতীয়) -->
+            <div class="qa-item">
+                <div class="qa-number">⑬</div>
+                <div class="qa-japanese">
+                    <p><strong>いつ から いつ まで べんきょうしますか？</strong></p>
+                    <p>Ans: ごぜん くじ から ごご いちじ まで べんきょうします。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কখন থেকে কখন পর্যন্ত পড়াশোনা করেন? উত্তর: সকাল ৯টা থেকে দুপুর ১টা পর্যন্ত পড়াশোনা করি।</p>
+                </div>
+            </div>
+            <!-- ⑭ -->
+            <div class="qa-item">
+                <div class="qa-number">⑭</div>
+                <div class="qa-japanese">
+                    <p><strong>にほんご は どう おもいますか？</strong></p>
+                    <p>Ans: ちょっと むずかしい ですが おもしろい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানি ভাষা কেমন মনে হয়? উত্তর: একটু কঠিন তবে মজার।</p>
+                </div>
+            </div>
+            <!-- ⑮ -->
+            <div class="qa-item">
+                <div class="qa-number">⑮</div>
+                <div class="qa-japanese">
+                    <p><strong>なに が むずかしい ですか？</strong></p>
+                    <p>Ans: かんじの かきかた が ちょっと むずかしい と おもいます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কী কঠিন? উত্তর: কাঞ্জি লেখার পদ্ধতি একটু কঠিন মনে হয়।</p>
+                </div>
+            </div>
+            <!-- ⑯ -->
+            <div class="qa-item">
+                <div class="qa-number">⑯</div>
+                <div class="qa-japanese">
+                    <p><strong>なに が おもしろい ですか？</strong></p>
+                    <p>Ans: ひらがな と かたかな が おもしろい と おもいます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কী মজার? উত্তর: হিরাগানা ও কাতাকানা মজার মনে হয়।</p>
+                </div>
+            </div>
+            <!-- ⑰ -->
+            <div class="qa-item">
+                <div class="qa-number">⑰</div>
+                <div class="qa-japanese">
+                    <p><strong>にほんご が すき ですか？</strong></p>
+                    <p>Ans: はい、だいすき です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানি ভাষা পছন্দ? উত্তর: হ্যাঁ, খুব পছন্দ।</p>
+                </div>
+            </div>
+            <!-- ⑱ -->
+            <div class="qa-item">
+                <div class="qa-number">⑱</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの がっこう の しゅうまつ/やすみの ひ は いつ ですか？</strong></p>
+                    <p>Ans: きんようび です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার স্কুলের সপ্তাহান্ত/ছুটির দিন কবে? উত্তর: শুক্রবার।</p>
+                </div>
+            </div>
+            <!-- ⑲ -->
+            <div class="qa-item">
+                <div class="qa-number">⑲</div>
+                <div class="qa-japanese">
+                    <p><strong>にほんご の がっこう は どう ですか？</strong></p>
+                    <p>Ans: おもしろい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানি ভাষার স্কুল কেমন? উত্তর: মজার।</p>
+                </div>
+            </div>
+            <!-- ⑳ -->
+            <div class="qa-item">
+                <div class="qa-number">⑳</div>
+                <div class="qa-japanese">
+                    <p><strong>パスポート を もって いますか？</strong></p>
+                    <p>Ans: はい、あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> পাসপোর্ট আছে? উত্তর: হ্যাঁ, আছে।</p>
+                </div>
+            </div>
+            <!-- ㉑ -->
+            <div class="qa-item">
+                <div class="qa-number">㉑</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は いま いしゃ ですか？</strong></p>
+                    <p>Ans: いいえ、いしゃ じゃ ありません、がくせい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি এখন ডাক্তার? উত্তর: না, ডাক্তার নই, ছাত্র।</p>
+                </div>
+            </div>
+            <!-- ㉒ -->
+            <div class="qa-item">
+                <div class="qa-number">㉒</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は アメリカじん ですか？</strong></p>
+                    <p>Ans: いいえ、アメリカじん じゃ ありません、バングラデシュ人(じん)です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি কি আমেরিকান? উত্তর: না, আমেরিকান নই, বাংলাদেশি।</p>
+                </div>
+            </div>
+            <!-- ㉓ -->
+            <div class="qa-item">
+                <div class="qa-number">㉓</div>
+                <div class="qa-japanese">
+                    <p><strong>バングラデシュ では いま の てんき は どう ですか？</strong></p>
+                    <p>Ans: はれくもり です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বাংলাদেশে এখন আবহাওয়া কেমন? উত্তর: রোদ ও মেঘলা।</p>
+                </div>
+            </div>
+            <!-- ㉔ -->
+            <div class="qa-item">
+                <div class="qa-number">㉔</div>
+                <div class="qa-japanese">
+                    <p><strong>いま あめ が ふって いますか？</strong></p>
+                    <p>Ans: いいえ、ふっていません。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> এখন বৃষ্টি পড়ছে? উত্তর: না, পড়ছে না।</p>
+                </div>
+            </div>
+            <!-- ㉕ -->
+            <div class="qa-item">
+                <div class="qa-number">㉕</div>
+                <div class="qa-japanese">
+                    <p><strong>いま なんじ ですか？</strong></p>
+                    <p>Ans: いま ごぜん じゅうじ です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> এখন কটা বাজে? উত্তর: এখন সকাল ১০টা।</p>
+                </div>
+            </div>
+            <!-- ㉘ -->
+            <div class="qa-item">
+                <div class="qa-number">㉘</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は まいにち にほんご を べんきょうしますか？</strong></p>
+                    <p>Ans: はい、まいにち にほんご を べんきょうします。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি কি প্রতিদিন জাপানি পড়েন? উত্তর: হ্যাঁ, প্রতিদিন জাপানি পড়ি।</p>
+                </div>
+            </div>
+            <!-- ㉗ -->
+            <div class="qa-item">
+                <div class="qa-number">㉗</div>
+                <div class="qa-japanese">
+                    <p><strong>まいにち なん じかん にほんご を べんきょうしますか？</strong></p>
+                    <p>Ans: まいにち 四時間(よじかん) ぐらい にほんご を べんきょうします。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> প্রতিদিন কত ঘন্টা জাপানি পড়েন? উত্তর: প্রতিদিন প্রায় ৪ ঘন্টা জাপানি পড়ি।</p>
+                </div>
+            </div>
+            <!-- ㉘ (দ্বিতীয়) -->
+            <div class="qa-item">
+                <div class="qa-number">㉘</div>
+                <div class="qa-japanese">
+                    <p><strong>なんじ から なんじ まで にほんご を べんきょうしますか？</strong></p>
+                    <p>Ans: ごご ろくじ から じゅうじ まで にほんご を べんきょうします。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কখন থেকে কখন পর্যন্ত জাপানি পড়েন? উত্তর: বিকাল ৬টা থেকে রাত ১০টা পর্যন্ত জাপানি পড়ি।</p>
+                </div>
+            </div>
+            <!-- ㉘ (তৃতীয়) -->
+            <div class="qa-item">
+                <div class="qa-number">㉘</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は 日本語(にほんご) の しけん を うけた こと が ありますか？</strong></p>
+                    <p>Ans: はい、あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি কি জাপানি ভাষার পরীক্ষা দিয়েছেন? উত্তর: হ্যাঁ, দিয়েছি।</p>
+                </div>
+            </div>
+            <!-- ㉘ (চতুর্থ) -->
+            <div class="qa-item">
+                <div class="qa-number">㉘</div>
+                <div class="qa-japanese">
+                    <p><strong>どんな しけん を うけた こと が ありますか？</strong></p>
+                    <p>Ans: ナット テスト/JLPT N５ を うけました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কী কী পরীক্ষা দিয়েছেন? উত্তর: NAT টেস্ট/JLPT N5 দিয়েছি।</p>
+                </div>
+            </div>
+            <!-- ㉙ -->
+            <div class="qa-item">
+                <div class="qa-number">㉙</div>
+                <div class="qa-japanese">
+                    <p><strong>そのあと ごうかくしましたか？</strong></p>
+                    <p>Ans: はい、ごうかくしました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> তারপর পাস করেছেন? উত্তর: হ্যাঁ, পাস করেছি।</p>
+                </div>
+            </div>
+            <!-- ㉘ (পঞ্চম) -->
+            <div class="qa-item">
+                <div class="qa-number">㉘</div>
+                <div class="qa-japanese">
+                    <p><strong>いつ ごうかくしましたか？</strong></p>
+                    <p>Ans: ２０２３年(ねん)の１２月(がつ)に ごうかくしました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কবে পাস করেছেন? উত্তর: ২০২৩ সালের ডিসেম্বরে পাস করেছি।</p>
+                </div>
+            </div>
+            <!-- ㉙ (দ্বিতীয়) -->
+            <div class="qa-item">
+                <div class="qa-number">㉙</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は いま なに を して いますか？</strong></p>
+                    <p>Ans: わたし は いま がくせい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি এখন কী করছেন? উত্তর: আমি এখন ছাত্র।</p>
+                </div>
+            </div>
+            <!-- ㉙ (তৃতীয়) -->
+            <div class="qa-item">
+                <div class="qa-number">㉙</div>
+                <div class="qa-japanese">
+                    <p><strong>どんな がくせい ですか？</strong></p>
+                    <p>Ans: わたし は いま にほんご の がくせい と だいがくせい です。(WHO ARE STUDYING BOTH OF UNIVERSITY AND JAPANESE)</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেমন ছাত্র? উত্তর: আমি এখন জাপানি ভাষার ছাত্র এবং বিশ্ববিদ্যালয়ের ছাত্র।</p>
+                </div>
+            </div>
+            <!-- ㉙ (চতুর্থ) -->
+            <div class="qa-item">
+                <div class="qa-number">㉙</div>
+                <div class="qa-japanese">
+                    <p><strong>いつ から にほんご を べんきょうして いますか？</strong></p>
+                    <p>Ans: ２０２３年(ねん)の ４月(がつ)から にほんご を べんきょうしています。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কখন থেকে জাপানি পড়ছেন? উত্তর: ২০২৩ সালের এপ্রিল থেকে জাপানি পড়ছি।</p>
+                </div>
+            </div>
+            <!-- ㊳ -->
+            <div class="qa-item">
+                <div class="qa-number">㊳</div>
+                <div class="qa-japanese">
+                    <p><strong>どのくらい にほんご を べんきょうして いますか？</strong></p>
+                    <p>Ans: １ねんはんぐらい にほんご を べんきょうしています。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কতদিন ধরে জাপানি পড়ছেন? উত্তর: প্রায় দেড় বছর ধরে জাপানি পড়ছি।</p>
+                </div>
+            </div>
+            <!-- ㊴ -->
+            <div class="qa-item">
+                <div class="qa-number">㊴</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は こうこう を そつぎょうしましたか？</strong></p>
+                    <p>Ans: はい、そつぎょうしました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি কি উচ্চ বিদ্যালয় থেকে স্নাতক হয়েছেন? উত্তর: হ্যাঁ, স্নাতক হয়েছি।</p>
+                </div>
+            </div>
+            <!-- ㊵ -->
+            <div class="qa-item">
+                <div class="qa-number">㊵</div>
+                <div class="qa-japanese">
+                    <p><strong>いつ こうこう を そつぎょうしましたか？</strong></p>
+                    <p>Ans: ２０１８年(ねん)の３月(がつ)に こうこう を そつぎょうしました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কবে উচ্চ বিদ্যালয় থেকে স্নাতক হয়েছেন? উত্তর: ২০১৮ সালের মার্চে উচ্চ বিদ্যালয় থেকে স্নাতক হয়েছি।</p>
+                </div>
+            </div>
+            <!-- ㊶ -->
+            <div class="qa-item">
+                <div class="qa-number">㊶</div>
+                <div class="qa-japanese">
+                    <p><strong>こうこう の なまえ は なん ですか？</strong></p>
+                    <p>Ans: ナラヤンガンジ・ハイスクールです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> উচ্চ বিদ্যালয়ের নাম কী? উত্তর: নারায়ণগঞ্জ হাইস্কুল।</p>
+                </div>
+            </div>
+            <!-- ㊷ -->
+            <div class="qa-item">
+                <div class="qa-number">㊷</div>
+                <div class="qa-japanese">
+                    <p><strong>こうこう で なに を べんきょうしましたか？</strong></p>
+                    <p>Ans: 科学(かがく)と数学(すうがく)をべんきょうしました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> উচ্চ বিদ্যালয়ে কী পড়েছেন? উত্তর: বিজ্ঞান ও গণিত পড়েছি।</p>
+                </div>
+            </div>
+            <!-- ㊸ -->
+            <div class="qa-item">
+                <div class="qa-number">㊸</div>
+                <div class="qa-japanese">
+                    <p><strong>そのあと だいがく に はいりましたか？</strong></p>
+                    <p>Ans: はい、はいりました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> তারপর বিশ্ববিদ্যালয়ে ভর্তি হয়েছেন? উত্তর: হ্যাঁ, ভর্তি হয়েছি।</p>
+                </div>
+            </div>
+            <!-- ㊹ -->
+            <div class="qa-item">
+                <div class="qa-number">㊹</div>
+                <div class="qa-japanese">
+                    <p><strong>なにか しごと を やった こと が ありますか？</strong></p>
+                    <p>Ans: はい、あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কোনো কাজ করেছেন? উত্তর: হ্যাঁ, করেছি।</p>
+                </div>
+            </div>
+            <!-- ㊺ -->
+            <div class="qa-item">
+                <div class="qa-number">㊺</div>
+                <div class="qa-japanese">
+                    <p><strong>どんな しごと を やった こと が ありますか？</strong></p>
+                    <p>Ans: アルバイトのしごとをやったことがあります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কী ধরনের কাজ করেছেন? উত্তর: খণ্ডকালীন কাজ করেছি।</p>
+                </div>
+            </div>
+            <!-- ㊻ -->
+            <div class="qa-item">
+                <div class="qa-number">㊻</div>
+                <div class="qa-japanese">
+                    <p><strong>いつ から しごと を やった こと ありますか？</strong></p>
+                    <p>Ans: ２０２０年(ねん)の６月(がつ)からしごとをやっています。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কখন থেকে কাজ করছেন? উত্তর: ২০২০ সালের জুন থেকে কাজ করছি।</p>
+                </div>
+            </div>
+            <!-- ㊼ -->
+            <div class="qa-item">
+                <div class="qa-number">㊼</div>
+                <div class="qa-japanese">
+                    <p><strong>いつ だいがく に はいりましたか？「WHO ARE STUDYING UNIVERSITY」</strong></p>
+                    <p>Ans: ２０１৯年(ねん)の４月(がつ)に はいりました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কবে বিশ্ববিদ্যালয়ে ভর্তি হয়েছেন? উত্তর: ২০১৯ সালের এপ্রিলে ভর্তি হয়েছি।</p>
+                </div>
+            </div>
+            <!-- ④ (দ্বিতীয়) - দয়া করে নম্বর ঠিক রাখুন, আসলে ৪৪? পিডিএফে ④ হিসাবে দেখানো হয়েছে, আমি সেভাবেই রাখছি -->
+            <div class="qa-item">
+                <div class="qa-number">④</div>
+                <div class="qa-japanese">
+                    <p><strong>だいがく で なに を べんきょうして いますか？「WHO ARE STUDYING UNIVERSITY」</strong></p>
+                    <p>Ans: 経済学(けいざいがく)をべんきょうしています。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বিশ্ববিদ্যালয়ে কী পড়ছেন? উত্তর: অর্থনীতি পড়ছি।</p>
+                </div>
+            </div>
+            <!-- ⑤ (দ্বিতীয়) -->
+            <div class="qa-item">
+                <div class="qa-number">⑤</div>
+                <div class="qa-japanese">
+                    <p><strong>だいがく で いま なんねんせい ですか？「WHO ARE STUDYING UNIVERSITY」</strong></p>
+                    <p>Ans: ３年生(ねんせい)です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বিশ্ববিদ্যালয়ে এখন কত বর্ষে? উত্তর: ৩য় বর্ষে।</p>
+                </div>
+            </div>
+            <!-- ⑥ (দ্বিতীয়) -->
+            <div class="qa-item">
+                <div class="qa-number">⑥</div>
+                <div class="qa-japanese">
+                    <p><strong>だいがく の なまえ は なん ですか？「WHO ARE STUDYING UNIVERSITY」</strong></p>
+                    <p>Ans: ダッカ大学(だいがく)です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বিশ্ববিদ্যালয়ের নাম কী? উত্তর: ঢাকা বিশ্ববিদ্যালয়।</p>
+                </div>
+            </div>
+            <!-- ⑦ (দ্বিতীয়) -->
+            <div class="qa-item">
+                <div class="qa-number">⑦</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は だいがく を そつぎょうしましたか？「THOSE WHO HAVE COMPLETED UNIVERSITY STUDIES」</strong></p>
+                    <p>Ans: はい、そつぎょうしました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি কি বিশ্ববিদ্যালয় থেকে স্নাতক হয়েছেন? উত্তর: হ্যাঁ, স্নাতক হয়েছি।</p>
+                </div>
+            </div>
+            <!-- ⑧ (দ্বিতীয়) -->
+            <div class="qa-item">
+                <div class="qa-number">⑧</div>
+                <div class="qa-japanese">
+                    <p><strong>いつ そつぎょうしましたか？「THOSE WHO HAVE COMPLETED UNIVERSITY STUDIES」</strong></p>
+                    <p>Ans: ２０２৩年(ねん)の３月(がつ)に そつぎょうしました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কবে স্নাতক হয়েছেন? উত্তর: ২০২৩ সালের মার্চে স্নাতক হয়েছি।</p>
+                </div>
+            </div>
+            <!-- ⑨ (দ্বিতীয়) -->
+            <div class="qa-item">
+                <div class="qa-number">⑨</div>
+                <div class="qa-japanese">
+                    <p><strong>だいがく の なまえ は なん でしたか？「THOSE WHO HAVE COMPLETED UNIVERSITY STUDIES」</strong></p>
+                    <p>Ans: ダッカ大学(だいがく)です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বিশ্ববিদ্যালয়ের নাম কী ছিল? উত্তর: ঢাকা বিশ্ববিদ্যালয়।</p>
+                </div>
+            </div>
+            <!-- ⑩ (দ্বিতীয়) -->
+            <div class="qa-item">
+                <div class="qa-number">⑩</div>
+                <div class="qa-japanese">
+                    <p><strong>だいがく で なに を べんきょうしましたか？「THOSE WHO HAVE COMPLETED UNIVERSITY STUDIES」</strong></p>
+                    <p>Ans: 経済学(けいざいがく)をべんきょうしました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বিশ্ববিদ্যালয়ে কী পড়েছিলেন? উত্তর: অর্থনীতি পড়েছিলাম।</p>
+                </div>
+            </div>
+            <!-- 51 -->
+            <div class="qa-item">
+                <div class="qa-number">51</div>
+                <div class="qa-japanese">
+                    <p><strong>こうこう/だいがく を おわったら なに を しましたか？</strong></p>
+                    <p>Ans: にほんご を ならいました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> উচ্চ বিদ্যালয়/বিশ্ববিদ্যালয় শেষে কী করলেন? উত্তর: জাপানি ভাষা শিখলাম।</p>
+                </div>
+            </div>
+            <!-- 52 -->
+            <div class="qa-item">
+                <div class="qa-number">52</div>
+                <div class="qa-japanese">
+                    <p><strong>どうして にほんご を ならいましたか？</strong></p>
+                    <p>Ans: にほんへ いって にほんの がっこう/だいがく で べんきょうしたい ですから にほんご を ならいました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন জাপানি শিখলেন? উত্তর: জাপানে গিয়ে জাপানি স্কুল/বিশ্ববিদ্যালয়ে পড়তে চাই বলে জাপানি শিখলাম।</p>
+                </div>
+            </div>
+            <!-- 53 -->
+            <div class="qa-item">
+                <div class="qa-number">53</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの なまえ は ミラ ですか？</strong></p>
+                    <p>Ans: いいえ、ミラ じゃ ありません、ラフマンです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার নাম মিরা? উত্তর: না, মিরা নই, রহমান।</p>
+                </div>
+            </div>
+            <!-- 54 -->
+            <div class="qa-item">
+                <div class="qa-number">54</div>
+                <div class="qa-japanese">
+                    <p><strong>コーヒー と おちゃ どちら が すき ですか？</strong></p>
+                    <p>Ans: どちら も すき です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কফি নাকি চা, কোনটা পছন্দ? উত্তর: দুটোই পছন্দ।</p>
+                </div>
+            </div>
+            <!-- 55 -->
+            <div class="qa-item">
+                <div class="qa-number">55</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの しょうらい の ゆめ は なん ですか？</strong></p>
+                    <p>Ans: にほんで けいざいがくを べんきょうして、にほんの かいしゃではたらくことです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার ভবিষ্যতের স্বপ্ন কী? উত্তর: জাপানে অর্থনীতি পড়ে জাপানি কোম্পানিতে কাজ করা।</p>
+                </div>
+            </div>
+            <!-- 56 -->
+            <div class="qa-item">
+                <div class="qa-number">56</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの しゅみ は なん ですか？</strong></p>
+                    <p>Ans: しゅみ は サッカーと おんがくです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার শখ কী? উত্তর: শখ ফুটবল ও সঙ্গীত।</p>
+                </div>
+            </div>
+            <!-- 57 -->
+            <div class="qa-item">
+                <div class="qa-number">57</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの ほしょうにん/けいひしべんしゃ は だれ ですか？</strong></p>
+                    <p>Ans: ちちです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার গ্যারান্টার/খরচ প্রদানকারী কে? উত্তর: আমার বাবা।</p>
+                </div>
+            </div>
+            <!-- 58 -->
+            <div class="qa-item">
+                <div class="qa-number">58</div>
+                <div class="qa-japanese">
+                    <p><strong>ほしょうにん の しごと は なん ですか？</strong></p>
+                    <p>Ans: しょうばいです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> গ্যারান্টারের পেশা কী? উত্তর: ব্যবসা।</p>
+                </div>
+            </div>
+            <!-- 59 -->
+            <div class="qa-item">
+                <div class="qa-number">59</div>
+                <div class="qa-japanese">
+                    <p><strong>どんな しょうばい を して いますか？</strong></p>
+                    <p>Ans: ふくのしょうばいをしています。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কী ধরনের ব্যবসা করেন? উত্তর: পোশাকের ব্যবসা করেন।</p>
+                </div>
+            </div>
+            <!-- 60 -->
+            <div class="qa-item">
+                <div class="qa-number">60</div>
+                <div class="qa-japanese">
+                    <p><strong>しょうばい は どこ に ありますか？</strong></p>
+                    <p>Ans: ナラヤンガンジにあります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ব্যবসা কোথায়? উত্তর: নারায়ণগঞ্জে।</p>
+                </div>
+            </div>
+            <!-- 61 -->
+            <div class="qa-item">
+                <div class="qa-number">61</div>
+                <div class="qa-japanese">
+                    <p><strong>しょうばい の なまえ は なん ですか？</strong></p>
+                    <p>Ans: ラフマン・ストアです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ব্যবসার নাম কী? উত্তর: রহমান স্টোর।</p>
+                </div>
+            </div>
+            <!-- 62 -->
+            <div class="qa-item">
+                <div class="qa-number">62</div>
+                <div class="qa-japanese">
+                    <p><strong>ほしょうにん は どこ に すんで いますか？</strong></p>
+                    <p>Ans: バングラデシュのナラヤンガンジにすんでいます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> গ্যারান্টার কোথায় থাকেন? উত্তর: বাংলাদেশের নারায়ণগঞ্জে থাকেন।</p>
+                </div>
+            </div>
+            <!-- 63 -->
+            <div class="qa-item">
+                <div class="qa-number">63</div>
+                <div class="qa-japanese">
+                    <p><strong>ほしょうにん の なまえ は なん ですか？</strong></p>
+                    <p>Ans: アブドゥル・ラフマンです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> গ্যারান্টারের নাম কী? উত্তর: আব্দুর রহমান।</p>
+                </div>
+            </div>
+            <!-- 64 -->
+            <div class="qa-item">
+                <div class="qa-number">64</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は だれ と すんで いますか？</strong></p>
+                    <p>Ans: かぞくとすんでいます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি কার সাথে থাকেন? উত্তর: পরিবারের সাথে থাকি।</p>
+                </div>
+            </div>
+            <!-- 65 -->
+            <div class="qa-item">
+                <div class="qa-number">65</div>
+                <div class="qa-japanese">
+                    <p><strong>かぞく は なん にん いますか？</strong></p>
+                    <p>Ans: ５にんいます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> পরিবারে কয়জন? উত্তর: ৫ জন।</p>
+                </div>
+            </div>
+            <!-- 66 -->
+            <div class="qa-item">
+                <div class="qa-number">66</div>
+                <div class="qa-japanese">
+                    <p><strong>だれ と だれ が いますか？</strong></p>
+                    <p>Ans: ちちとははとあにとあねとわたしがいます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কে কে আছেন? উত্তর: বাবা, মা, বড় ভাই, বড় বোন ও আমি।</p>
+                </div>
+            </div>
+            <!-- 67 -->
+            <div class="qa-item">
+                <div class="qa-number">67</div>
+                <div class="qa-japanese">
+                    <p><strong>きょうだい は なん にん いますか？</strong></p>
+                    <p>Ans: ３にんです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ভাইবোন কয়জন? উত্তর: ৩ জন।</p>
+                </div>
+            </div>
+            <!-- ●きょうだい で だれ と だれ が いますか？ -->
+            <div class="qa-item">
+                <div class="qa-number">●</div>
+                <div class="qa-japanese">
+                    <p><strong>きょうだい で だれ と だれ が いますか？</strong></p>
+                    <p>Ans: あにとあねとわたしです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ভাইবোনদের মধ্যে কে কে? উত্তর: বড় ভাই, বড় বোন ও আমি।</p>
+                </div>
+            </div>
+            <!-- 68 -->
+            <div class="qa-item">
+                <div class="qa-number">68</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は なんばんめ ですか？</strong></p>
+                    <p>Ans: わたしは ３ばんめです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি কততম? উত্তর: আমি তৃতীয়।</p>
+                </div>
+            </div>
+            <!-- 69 -->
+            <div class="qa-item">
+                <div class="qa-number">69</div>
+                <div class="qa-japanese">
+                    <p><strong>おとうさん の なまえ は なん ですか？</strong></p>
+                    <p>Ans: ちちのなまえはアブドゥル・ラフマンです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বাবার নাম কী? উত্তর: বাবার নাম আব্দুর রহমান।</p>
+                </div>
+            </div>
+            <!-- 70 -->
+            <div class="qa-item">
+                <div class="qa-number">70</div>
+                <div class="qa-japanese">
+                    <p><strong>おかあさん の なまえ は なん ですか？</strong></p>
+                    <p>Ans: ははのなまえはファティマ・ベグムです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> মায়ের নাম কী? উত্তর: মায়ের নাম ফাতিমা বেগম।</p>
+                </div>
+            </div>
+            <!-- 71 -->
+            <div class="qa-item">
+                <div class="qa-number">71</div>
+                <div class="qa-japanese">
+                    <p><strong>おとうさん は なんさい ですか？</strong></p>
+                    <p>Ans: ５０歳(さい)です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বাবার বয়স কত? উত্তর: ৫০ বছর।</p>
+                </div>
+            </div>
+            <!-- 72 -->
+            <div class="qa-item">
+                <div class="qa-number">72</div>
+                <div class="qa-japanese">
+                    <p><strong>おかあさん は なんさい ですか？</strong></p>
+                    <p>Ans: ４５歳(さい)です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> মায়ের বয়স কত? উত্তর: ৪৫ বছর।</p>
+                </div>
+            </div>
+            <!-- 73 -->
+            <div class="qa-item">
+                <div class="qa-number">73</div>
+                <div class="qa-japanese">
+                    <p><strong>おとうさん の しごと は なん ですか？</strong></p>
+                    <p>Ans: ちちはしょうばいをしています。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বাবার পেশা কী? উত্তর: বাবা ব্যবসা করেন।</p>
+                </div>
+            </div>
+            <!-- 74 -->
+            <div class="qa-item">
+                <div class="qa-number">74</div>
+                <div class="qa-japanese">
+                    <p><strong>どんな しょうばい を して いますか？</strong></p>
+                    <p>Ans: ふくのしょうばいをしています。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কী ধরনের ব্যবসা করেন? উত্তর: পোশাকের ব্যবসা করেন।</p>
+                </div>
+            </div>
+            <!-- 75 -->
+            <div class="qa-item">
+                <div class="qa-number">75</div>
+                <div class="qa-japanese">
+                    <p><strong>しょうばい で てつだいますか？</strong></p>
+                    <p>Ans: はい、ときどき てつだいます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ব্যবসায় সাহায্য করেন? উত্তর: হ্যাঁ, মাঝে মাঝে সাহায্য করি।</p>
+                </div>
+            </div>
+            <!-- 76 -->
+            <div class="qa-item">
+                <div class="qa-number">76</div>
+                <div class="qa-japanese">
+                    <p><strong>おかあさん の しごと は なん ですか？</strong></p>
+                    <p>Ans: はははしゅふです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> মায়ের পেশা কী? উত্তর: মা গৃহিণী।</p>
+                </div>
+            </div>
+            <!-- 77 -->
+            <div class="qa-item">
+                <div class="qa-number">77</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの がくひ は だれ が はらいますか？</strong></p>
+                    <p>Ans: ちちがはらいます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার পড়ার খরচ কে দেয়? উত্তর: বাবা দেন।</p>
+                </div>
+            </div>
+            <!-- 78 -->
+            <div class="qa-item">
+                <div class="qa-number">78</div>
+                <div class="qa-japanese">
+                    <p><strong>おかあさん は どんな ひと ですか？</strong></p>
+                    <p>Ans: きれいで しんせつ な ひと です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> মা কেমন মানুষ? উত্তর: সুন্দরী ও সদয় মানুষ।</p>
+                </div>
+            </div>
+            <!-- 79 -->
+            <div class="qa-item">
+                <div class="qa-number">79</div>
+                <div class="qa-japanese">
+                    <p><strong>おとうさん は どんな ひと ですか？</strong></p>
+                    <p>Ans: えらい ひと です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বাবা কেমন মানুষ? উত্তর: শ্রদ্ধেয় মানুষ।</p>
+                </div>
+            </div>
+            <!-- 80 -->
+            <div class="qa-item">
+                <div class="qa-number">80</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は どんな ひと ですか？</strong></p>
+                    <p>Ans: わたし は しんせつ な ひと です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি কেমন মানুষ? উত্তর: আমি সদয় মানুষ।</p>
+                </div>
+            </div>
+            <!-- 81 -->
+            <div class="qa-item">
+                <div class="qa-number">81</div>
+                <div class="qa-japanese">
+                    <p><strong>きょうかしょ の なまえ は なん ですか？</strong></p>
+                    <p>Ans: みんなの にほんご です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> পাঠ্যবইয়ের নাম কী? উত্তর: মিন্না নো নিহোঙ্গো।</p>
+                </div>
+            </div>
+            <!-- 82 -->
+            <div class="qa-item">
+                <div class="qa-number">82</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は にほんご が わからない とき/こまっている とき なに を しますか？</strong></p>
+                    <p>Ans: せんせい に ききます そして もっと がんばって にほんご を べんきょうします。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানি বুঝতে না পারলে/সমস্যায় পড়লে কী করেন? উত্তর: শিক্ষককে জিজ্ঞাসা করি এবং আরও চেষ্টা করে জাপানি পড়ি।</p>
+                </div>
+            </div>
+            <!-- 83 -->
+            <div class="qa-item">
+                <div class="qa-number">83</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は なぜ/どうして にほん へ いきますか/いきたいですか？</strong></p>
+                    <p>Ans: 日本(にほん)は あんぜん な くに です そして にほん の きょういく は せかいで いい ですから にほん へ べんきょうする ために いきたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন জাপানে যেতে চান? উত্তর: জাপান নিরাপদ দেশ এবং জাপানের শিক্ষা বিশ্বে ভালো, তাই পড়তে জাপানে যেতে চাই।</p>
+                </div>
+            </div>
+            <!-- 84 -->
+            <div class="qa-item">
+                <div class="qa-number">84</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は なぜ/どうして にほん を えらびましたか？</strong></p>
+                    <p>Ans: 日本(にほん)は あんぜん な くに です そして にほん の きょういく は せかいで いい ですから にほん を えらびました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন জাপান বেছে নিলেন? উত্তর: জাপান নিরাপদ দেশ এবং জাপানের শিক্ষা বিশ্বে ভালো, তাই জাপান বেছেছি।</p>
+                </div>
+            </div>
+            <!-- 85 -->
+            <div class="qa-item">
+                <div class="qa-number">85</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は なぜ/どうして にほん で りゅうがくしたい/べんきょうしたい ですか？</strong></p>
+                    <p>Ans: 日本(にほん)は あんぜん な くに です そして にほん の きょういく は せかいで いい ですから にほん で りゅうがくしたい/べんきょうしたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন জাপানে পড়তে চান? উত্তর: জাপান নিরাপদ দেশ এবং জাপানের শিক্ষা বিশ্বে ভালো, তাই জাপানে পড়তে চাই।</p>
+                </div>
+            </div>
+            <!-- 86 -->
+            <div class="qa-item">
+                <div class="qa-number">86</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は にほん へ いって まず/はじめに なに を しますか？</strong></p>
+                    <p>Ans: にほん へ いって まず にほんご がっこう で にほんご を べんきょうします そのあと だいがく/せんもんがっこう に はいりたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে গিয়ে প্রথমে কী করবেন? উত্তর: জাপানে গিয়ে প্রথমে জাপানি স্কুলে জাপানি পড়ব, তারপর বিশ্ববিদ্যালয়/কলেজে ভর্তি হতে চাই।</p>
+                </div>
+            </div>
+            <!-- 87 -->
+            <div class="qa-item">
+                <div class="qa-number">87</div>
+                <div class="qa-japanese">
+                    <p><strong>だいがく/せんもんがっこう で なに を べんきょうしますか？</strong></p>
+                    <p>Ans: 経済学(けいざいがく)をべんきょうしたいです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বিশ্ববিদ্যালয়/কলেজে কী পড়বেন? উত্তর: অর্থনীতি পড়তে চাই।</p>
+                </div>
+            </div>
+            <!-- 88 -->
+            <div class="qa-item">
+                <div class="qa-number">88</div>
+                <div class="qa-japanese">
+                    <p><strong>どうして だいがく/せんもんがっこう で けいざいがくを べんきょうしますか？</strong></p>
+                    <p>Ans: わたしの ゆめ ですから。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন বিশ্ববিদ্যালয়/কলেজে অর্থনীতি পড়বেন? উত্তর: আমার স্বপ্ন বলে।</p>
+                </div>
+            </div>
+            <!-- 89 -->
+            <div class="qa-item">
+                <div class="qa-number">89</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん へ いって どこで すみたい ですか？</strong></p>
+                    <p>Ans: がっこう の りょう で すみたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে গিয়ে কোথায় থাকতে চান? উত্তর: স্কুলের হোস্টেলে থাকতে চাই।</p>
+                </div>
+            </div>
+            <!-- ●どうして がっこう の りょう で すみたい ですか？ -->
+            <div class="qa-item">
+                <div class="qa-number">●</div>
+                <div class="qa-japanese">
+                    <p><strong>どうして がっこう の りょう で すみたい ですか？</strong></p>
+                    <p>Ans: べんり ですから。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন স্কুলের হোস্টেলে থাকতে চান? উত্তর: সুবিধাজনক বলে।</p>
+                </div>
+            </div>
+            <!-- 90 -->
+            <div class="qa-item">
+                <div class="qa-number">90</div>
+                <div class="qa-japanese">
+                    <p><strong>だれ と すみたい ですか？</strong></p>
+                    <p>Ans: りゅうがくせい と いっしょに すみたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কার সাথে থাকতে চান? উত্তর: বিদেশি শিক্ষার্থীদের সাথে থাকতে চাই।</p>
+                </div>
+            </div>
+            <!-- 91 -->
+            <div class="qa-item">
+                <div class="qa-number">91</div>
+                <div class="qa-japanese">
+                    <p><strong>りゅうがくせい と いっしょに すむ こと が できますか？ だいじょうぶですか？</strong></p>
+                    <p>Ans: はい、できますよ、だいじょうぶ です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বিদেশি শিক্ষার্থীদের সাথে থাকতে পারবেন? সমস্যা হবে? উত্তর: হ্যাঁ, পারব,没问题।</p>
+                </div>
+            </div>
+            <!-- 92 -->
+            <div class="qa-item">
+                <div class="qa-number">92</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん へ いってから べんきょうしながら なにか しごと を したい こと が ありますか？</strong></p>
+                    <p>Ans: はい、あります。アルバイト を したい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে গিয়ে পড়াশোনার পাশাপাশি কোনো কাজ করতে চান? উত্তর: হ্যাঁ, খণ্ডকালীন কাজ করতে চাই।</p>
+                </div>
+            </div>
+            <!-- 93 -->
+            <div class="qa-item">
+                <div class="qa-number">93</div>
+                <div class="qa-japanese">
+                    <p><strong>どうして アルバイト を したい ですか？</strong></p>
+                    <p>Ans: じぶんの せいかつ の ために アルバイト を したい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন খণ্ডকালীন কাজ করতে চান? উত্তর: নিজের জীবনযাত্রার জন্য খণ্ডকালীন কাজ করতে চাই।</p>
+                </div>
+            </div>
+            <!-- 94 -->
+            <div class="qa-item">
+                <div class="qa-number">94</div>
+                <div class="qa-japanese">
+                    <p><strong>どんな アルバイト を したい ですか？</strong></p>
+                    <p>Ans: コンビニのアルバイトをしたいです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কী ধরনের খণ্ডকালীন কাজ করতে চান? উত্তর: সুবিধার দোকানে কাজ করতে চাই।</p>
+                </div>
+            </div>
+            <!-- 95 -->
+            <div class="qa-item">
+                <div class="qa-number">95</div>
+                <div class="qa-japanese">
+                    <p><strong>いっしゅうかん に なんじかん アルバイト を しますか？</strong></p>
+                    <p>Ans: にじゅうはち じかん アルバイト を したい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> সপ্তাহে কত ঘন্টা খণ্ডকালীন কাজ করবেন? উত্তর: ২৮ ঘন্টা কাজ করতে চাই।</p>
+                </div>
+            </div>
+            <!-- 96 -->
+            <div class="qa-item">
+                <div class="qa-number">96</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は にほんご の がっこう で なんねんかん べんきょうしますか？</strong></p>
+                    <p>Ans: に ねん ぐらい べんきょうします。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি জাপানি স্কুলে কত বছর পড়বেন? উত্তর: প্রায় ২ বছর পড়ব।</p>
+                </div>
+            </div>
+            <!-- 97 -->
+            <div class="qa-item">
+                <div class="qa-number">97</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は だいがく で なんねんかん べんきょうしますか？</strong></p>
+                    <p>Ans: よねん ぐらい べんきょうします。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি বিশ্ববিদ্যালয়ে কত বছর পড়বেন? উত্তর: প্রায় ৪ বছর পড়ব।</p>
+                </div>
+            </div>
+            <!-- 98 -->
+            <div class="qa-item">
+                <div class="qa-number">98</div>
+                <div class="qa-japanese">
+                    <p><strong>せんもんがっこう で なんねんかん べんきょうしますか？</strong></p>
+                    <p>Ans: さん ねん ぐらい べんきょうします。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কলেজে কত বছর পড়বেন? উত্তর: প্রায় ৩ বছর পড়ব।</p>
+                </div>
+            </div>
+            <!-- 99 -->
+            <div class="qa-item">
+                <div class="qa-number">99</div>
+                <div class="qa-japanese">
+                    <p><strong>だいがく/せんもんがっこう で べんきょうした あとで なに を しますか？</strong></p>
+                    <p>Ans: にほん の かいしゃ で はたらきたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বিশ্ববিদ্যালয়/কলেজে পড়ার পর কী করবেন? উত্তর: জাপানের কোম্পানিতে কাজ করতে চাই।</p>
+                </div>
+            </div>
+            <!-- 100 -->
+            <div class="qa-item">
+                <div class="qa-number">100</div>
+                <div class="qa-japanese">
+                    <p><strong>どうして にほんの かいしゃ で はたらきたい ですか？</strong></p>
+                    <p>Ans: わたしの ゆめ ですから。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন জাপানি কোম্পানিতে কাজ করতে চান? উত্তর: আমার স্বপ্ন বলে।</p>
+                </div>
+            </div>
+            <!-- 101 -->
+            <div class="qa-item">
+                <div class="qa-number">101</div>
+                <div class="qa-japanese">
+                    <p><strong>どんな かいしゃ で はたらきたい ですか？</strong></p>
+                    <p>Ans: ぎんこうの かいしゃ で はたらきたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কী ধরনের কোম্পানিতে কাজ করতে চান? উত্তর: ব্যাংকের কোম্পানিতে কাজ করতে চাই।</p>
+                </div>
+            </div>
+            <!-- 102 -->
+            <div class="qa-item">
+                <div class="qa-number">102</div>
+                <div class="qa-japanese">
+                    <p><strong>どうして ぎんこうの かいしゃ で はたらきたい ですか？</strong></p>
+                    <p>Ans: ゆめ ですから。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন ব্যাংকের কোম্পানিতে কাজ করতে চান? উত্তর: স্বপ্ন বলে।</p>
+                </div>
+            </div>
+            <!-- 103 -->
+            <div class="qa-item">
+                <div class="qa-number">103</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん で なんねんかん すみたい ですか？</strong></p>
+                    <p>Ans: じゅう ねん ぐらい すみたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে কত বছর থাকতে চান? উত্তর: প্রায় ১০ বছর থাকতে চাই।</p>
+                </div>
+            </div>
+            <!-- 104 -->
+            <div class="qa-item">
+                <div class="qa-number">104</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん で なんねんかん べんきょうしたい ですか？</strong></p>
+                    <p>Ans: ご ねん ぐらい べんきょうしたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে কত বছর পড়তে চান? উত্তর: প্রায় ৫ বছর পড়তে চাই।</p>
+                </div>
+            </div>
+            <!-- 105 -->
+            <div class="qa-item">
+                <div class="qa-number">105</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん で はたらいた/べんきょうした あとで じぶんの くに へ かえりたいですか？</strong></p>
+                    <p>Ans: チャンス が もらったら にほん で ずっと すみたいです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে কাজ/পড়ার পর নিজ দেশে ফিরতে চান? উত্তর: সুযোগ পেলে জাপানে স্থায়ীভাবে থাকতে চাই।</p>
+                </div>
+            </div>
+            <!-- 106 -->
+            <div class="qa-item">
+                <div class="qa-number">106</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん の なにが いちばん すき ですか？</strong></p>
+                    <p>Ans: ふじさん が いちばん すき です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানের কী সবচেয়ে পছন্দ? উত্তর: ফুজি পর্বত সবচেয়ে পছন্দ।</p>
+                </div>
+            </div>
+            <!-- 107 -->
+            <div class="qa-item">
+                <div class="qa-number">107</div>
+                <div class="qa-japanese">
+                    <p><strong>どうして ふじさん が いちばん すき ですか？</strong></p>
+                    <p>Ans: きれい な やま ですから すき です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন ফুজি পর্বত পছন্দ? উত্তর: সুন্দর পর্বত বলে পছন্দ।</p>
+                </div>
+            </div>
+            <!-- 108 -->
+            <div class="qa-item">
+                <div class="qa-number">108</div>
+                <div class="qa-japanese">
+                    <p><strong>ふじさん の なに が いちばん すき ですか？</strong></p>
+                    <p>Ans: ふじさん の ゆき が すき です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ফুজি পর্বতের কী সবচেয়ে পছন্দ? উত্তর: ফুজি পর্বতের তুষার পছন্দ।</p>
+                </div>
+            </div>
+            <!-- 109 -->
+            <div class="qa-item">
+                <div class="qa-number">109</div>
+                <div class="qa-japanese">
+                    <p><strong>ふじさん みた こと が ありますか？</strong></p>
+                    <p>Ans: はい、インタネット で みました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ফুজি পর্বত দেখেছেন? উত্তর: হ্যাঁ, ইন্টারনেটে দেখেছি।</p>
+                </div>
+            </div>
+            <!-- 110 -->
+            <div class="qa-item">
+                <div class="qa-number">110</div>
+                <div class="qa-japanese">
+                    <p><strong>ふじさん へ いった こと が ありますか？</strong></p>
+                    <p>Ans: いいえ、ありません。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ফুজি পর্বতে গেছেন? উত্তর: না, যাইনি।</p>
+                </div>
+            </div>
+            <!-- 111 -->
+            <div class="qa-item">
+                <div class="qa-number">111</div>
+                <div class="qa-japanese">
+                    <p><strong>にほんの アニメ/えいがを みた こと が ありますか？</strong></p>
+                    <p>Ans: いいえ、ありません。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানি অ্যানিমে/সিনেমা দেখেছেন? উত্তর: না, দেখিনি।</p>
+                </div>
+            </div>
+            <!-- 112 -->
+            <div class="qa-item">
+                <div class="qa-number">112</div>
+                <div class="qa-japanese">
+                    <p><strong>でんしゃ に のった こと が ありますか？</strong></p>
+                    <p>Ans: はい、あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ট্রেনে চড়েছেন? উত্তর: হ্যাঁ, চড়েছি।</p>
+                </div>
+            </div>
+            <!-- 113 -->
+            <div class="qa-item">
+                <div class="qa-number">113</div>
+                <div class="qa-japanese">
+                    <p><strong>でんしゃ に のった こと が どう ですか？</strong></p>
+                    <p>Ans: とても おもしろい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ট্রেনে চড়া কেমন? উত্তর: খুব মজার।</p>
+                </div>
+            </div>
+            <!-- 114 -->
+            <div class="qa-item">
+                <div class="qa-number">114</div>
+                <div class="qa-japanese">
+                    <p><strong>にほんじん は どうですか？</strong></p>
+                    <p>Ans: しんせつ な ひと です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানি মানুষ কেমন? উত্তর: সদয় মানুষ।</p>
+                </div>
+            </div>
+            <!-- 115 -->
+            <div class="qa-item">
+                <div class="qa-number">115</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん は どんな くに ですか？</strong></p>
+                    <p>Ans: にほん は あんぜん で きれい な くに です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপান কেমন দেশ? উত্তর: জাপান নিরাপদ ও সুন্দর দেশ।</p>
+                </div>
+            </div>
+            <!-- 116 -->
+            <div class="qa-item">
+                <div class="qa-number">116</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん に ついて どう おもいますか？</strong></p>
+                    <p>Ans: にほん は あんぜん な くに です。にほんじん は しんせつ な ひと です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপান সম্পর্কে কেমন মনে হয়? উত্তর: জাপান নিরাপদ দেশ, জাপানি মানুষ সদয়।</p>
+                </div>
+            </div>
+            <!-- 117 -->
+            <div class="qa-item">
+                <div class="qa-number">117</div>
+                <div class="qa-japanese">
+                    <p><strong>バングラデシュ は どんな くに ですか？</strong></p>
+                    <p>Ans: きれい な くに です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বাংলাদেশ কেমন দেশ? উত্তর: সুন্দর দেশ।</p>
+                </div>
+            </div>
+            <!-- 118 -->
+            <div class="qa-item">
+                <div class="qa-number">118</div>
+                <div class="qa-japanese">
+                    <p><strong>バングラデシュ じん は どんな ひと ですか？</strong></p>
+                    <p>Ans: しんせつ な ひと です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বাংলাদেশি মানুষ কেমন? উত্তর: সদয় মানুষ।</p>
+                </div>
+            </div>
+            <!-- 119 -->
+            <div class="qa-item">
+                <div class="qa-number">119</div>
+                <div class="qa-japanese">
+                    <p><strong>バングラデシュ の いちばん すき な こと は なん ですか？</strong></p>
+                    <p>Ans: コックスバザールです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বাংলাদেশের সবচেয়ে পছন্দের জিনিস কী? উত্তর: কক্সবাজার।</p>
+                </div>
+            </div>
+            <!-- 120 -->
+            <div class="qa-item">
+                <div class="qa-number">120</div>
+                <div class="qa-japanese">
+                    <p><strong>どうして コックスバザール が すき ですか？</strong></p>
+                    <p>Ans： きれい な うみ が あります から すき です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন কক্সবাজার পছন্দ? উত্তর: সুন্দর সাগর আছে বলে পছন্দ।</p>
+                </div>
+            </div>
+            <!-- 121 -->
+            <div class="qa-item">
+                <div class="qa-number">121</div>
+                <div class="qa-japanese">
+                    <p><strong>うみ が すき ですか？</strong></p>
+                    <p>Ans： はい、すき です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> সাগর পছন্দ? উত্তর: হ্যাঁ, পছন্দ।</p>
+                </div>
+            </div>
+            <!-- 122 -->
+            <div class="qa-item">
+                <div class="qa-number">122</div>
+                <div class="qa-japanese">
+                    <p><strong>コックスバザール へ いった こと が ありますか？</strong></p>
+                    <p>Ans： はい、あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কক্সবাজার গেছেন? উত্তর: হ্যাঁ, গেছি।</p>
+                </div>
+            </div>
+            <!-- 123 -->
+            <div class="qa-item">
+                <div class="qa-number">123</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は だれ と コックスバザール へ いった こと が ありますか？</strong></p>
+                    <p>Ans: かぞく と いっしょに いった こと が あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি কার সাথে কক্সবাজার গেছেন? উত্তর: পরিবারের সাথে গেছি।</p>
+                </div>
+            </div>
+            <!-- 124 -->
+            <div class="qa-item">
+                <div class="qa-number">124</div>
+                <div class="qa-japanese">
+                    <p><strong>なんかい いった こと が ありますか？</strong></p>
+                    <p>Ans： さんかい いった こと が あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কতবার গেছেন? উত্তর: তিনবার গেছি।</p>
+                </div>
+            </div>
+            <!-- 125 -->
+            <div class="qa-item">
+                <div class="qa-number">125</div>
+                <div class="qa-japanese">
+                    <p><strong>コックスバザール へ いった こと が どう でしたか？</strong></p>
+                    <p>Ans： とても おもしろい でした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কক্সবাজার যাওয়া কেমন ছিল? উত্তর: খুব মজার ছিল।</p>
+                </div>
+            </div>
+            <!-- 126 -->
+            <div class="qa-item">
+                <div class="qa-number">126</div>
+                <div class="qa-japanese">
+                    <p><strong>にほんの なにか りょうり を たべた こと が ありますか？</strong></p>
+                    <p>Ans： いいえ、ありません。たべたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানি কোনো খাবার খেয়েছেন? উত্তর: না, খাইনি। খেতে চাই।</p>
+                </div>
+            </div>
+            <!-- 127 -->
+            <div class="qa-item">
+                <div class="qa-number">127</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん へ いって どんな りょうり を たべて みたい ですか？</strong></p>
+                    <p>Ans： ラーメン を たべたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে গিয়ে কী খাবার খেতে চান? উত্তর: রামেন খেতে চাই।</p>
+                </div>
+            </div>
+            <!-- 128 -->
+            <div class="qa-item">
+                <div class="qa-number">128</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん へ いって なにか ところ へ いった こと が ありますか？</strong></p>
+                    <p>Ans: いいえ、ありません、いって みたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে গিয়ে কোনো জায়গায় গেছেন? উত্তর: না, যাইনি, যেতে চাই।</p>
+                </div>
+            </div>
+            <!-- 129 -->
+            <div class="qa-item">
+                <div class="qa-number">129</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん へ いって から どこ へ いって みたい ですか？</strong></p>
+                    <p>Ans: ふじさん へ いって みたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে গিয়ে কোথায় যেতে চান? উত্তর: ফুজি পর্বতে যেতে চাই।</p>
+                </div>
+            </div>
+            <!-- 130 -->
+            <div class="qa-item">
+                <div class="qa-number">130</div>
+                <div class="qa-japanese">
+                    <p><strong>どうして にほん へ いってから ふじさん へ いって みたい ですか？</strong></p>
+                    <p>Ans: ふじさん は たかくて きれい な やま です から ふじさん へ いって みたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন জাপানে গিয়ে ফুজি পর্বতে যেতে চান? উত্তর: ফুজি পর্বত উঁচু ও সুন্দর পর্বত বলে যেতে চাই।</p>
+                </div>
+            </div>
+            <!-- 131 -->
+            <div class="qa-item">
+                <div class="qa-number">131</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん へ いって から だれと ふじさん へ いって みたい ですか？</strong></p>
+                    <p>Ans: りゅうがくせい と いって みたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে গিয়ে কার সাথে ফুজি পর্বতে যেতে চান? উত্তর: বিদেশি শিক্ষার্থীদের সাথে যেতে চাই।</p>
+                </div>
+            </div>
+            <!-- 132 -->
+            <div class="qa-item">
+                <div class="qa-number">132</div>
+                <div class="qa-japanese">
+                    <p><strong>いつ ふじさん へ いって みたい ですか？</strong></p>
+                    <p>Ans: やすみの ひ に ふじさん へ いって みたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কবে ফুজি পর্বতে যেতে চান? উত্তর: ছুটির দিনে ফুজি পর্বতে যেতে চাই।</p>
+                </div>
+            </div>
+            <!-- 133 -->
+            <div class="qa-item">
+                <div class="qa-number">133</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は やすみ の ひ に なに を しますか？</strong></p>
+                    <p>Ans: ともだち と いっしょに あそびます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি ছুটির দিনে কী করেন? উত্তর: বন্ধুদের সাথে খেলি।</p>
+                </div>
+            </div>
+            <!-- 134 -->
+            <div class="qa-item">
+                <div class="qa-number">134</div>
+                <div class="qa-japanese">
+                    <p><strong>どこで あそびますか？</strong></p>
+                    <p>Ans: こうえん で あそびます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কোথায় খেলেন? উত্তর: পার্কে খেলি।</p>
+                </div>
+            </div>
+            <!-- 135 -->
+            <div class="qa-item">
+                <div class="qa-number">135</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん へ いって から やすみの ひ に なに を したい ですか？</strong></p>
+                    <p>Ans: ともだち と あそびたい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে গিয়ে ছুটির দিনে কী করতে চান? উত্তর: বন্ধুদের সাথে খেলতে চাই।</p>
+                </div>
+            </div>
+            <!-- 136 -->
+            <div class="qa-item">
+                <div class="qa-number">136</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの たんしょ は なん ですか？</strong></p>
+                    <p>Ans: しらない ひと と はなす とき ちょっと きんちょうします。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার দুর্বলতা কী? উত্তর: অচেনা মানুষের সাথে কথা বলার সময় একটু ঘাবড়ে যাই।</p>
+                </div>
+            </div>
+            <!-- 137 -->
+            <div class="qa-item">
+                <div class="qa-number">137</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの ちょうしょ は なん ですか？</strong></p>
+                    <p>Ans: しょうじきなところ/しんせつ な ひと です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার ভালো দিক কী? উত্তর: সৎ/সদয় মানুষ।</p>
+                </div>
+            </div>
+            <!-- 138 -->
+            <div class="qa-item">
+                <div class="qa-number">138</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの しゅうきょう は なん ですか？</strong></p>
+                    <p>Ans: イスラムきょうです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার ধর্ম কী? উত্তর: ইসলাম।</p>
+                </div>
+            </div>
+            <!-- 139 -->
+            <div class="qa-item">
+                <div class="qa-number">139</div>
+                <div class="qa-japanese">
+                    <p><strong>イスラムきょうでなにかたべられないものがありますか？</strong></p>
+                    <p>Ans: はい、あります、イスラムきょうでぶたにくです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ইসলাম ধর্মে কী কী খাবার নিষিদ্ধ? উত্তর: হ্যাঁ, আছে, ইসলামে শূকরের মাংস নিষিদ্ধ।</p>
+                </div>
+            </div>
+            <!-- 140 -->
+            <div class="qa-item">
+                <div class="qa-number">140</div>
+                <div class="qa-japanese">
+                    <p><strong>イスラムきょうでなにかのめないものがありますか？</strong></p>
+                    <p>Ans: はい、あります。ワインとおさけです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ইসলাম ধর্মে কী কী পানীয় নিষিদ্ধ? উত্তর: হ্যাঁ, আছে। ওয়াইন ও মদ।</p>
+                </div>
+            </div>
+            <!-- 141 -->
+            <div class="qa-item">
+                <div class="qa-number">141</div>
+                <div class="qa-japanese">
+                    <p><strong>どうしてそれはたべられないとのめないですか？</strong></p>
+                    <p>Ans: イスラムきょうでだめですから。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কেন সেগুলো খাওয়া/পান করা যায় না? উত্তর: ইসলামে নিষেধ বলে।</p>
+                </div>
+            </div>
+            <!-- 142 -->
+            <div class="qa-item">
+                <div class="qa-number">142</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたはまいにちおいのりをしますか？</strong></p>
+                    <p>Ans: はい、イスラムきょうでいちにちにごかいおいのりをします。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি কি প্রতিদিন নামাজ পড়েন? উত্তর: হ্যাঁ, ইসলামে দিনে পাঁচবার নামাজ পড়ি।</p>
+                </div>
+            </div>
+            <!-- 143 -->
+            <div class="qa-item">
+                <div class="qa-number">143</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたがにほんへいくことをごかぞくはさんせいしていますか？</strong></p>
+                    <p>Ans: はい、だいじょうぶです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার জাপান যাওয়ার ব্যাপারে পরিবার সম্মতি দিয়েছে? উত্তর: হ্যাঁ,没问题।</p>
+                </div>
+            </div>
+            <!-- 144 -->
+            <div class="qa-item">
+                <div class="qa-number">144</div>
+                <div class="qa-japanese">
+                    <p><strong>にほんのルールはちょっときびしいですからまもることができますか？</strong></p>
+                    <p>Ans: はい、できますよ、だいじょうぶ です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানের নিয়ম একটু কঠোর, মেনে চলতে পারবেন? উত্তর: হ্যাঁ, পারব,没问题।</p>
+                </div>
+            </div>
+            <!-- 145 -->
+            <div class="qa-item">
+                <div class="qa-number">145</div>
+                <div class="qa-japanese">
+                    <p><strong>にほんにしりあいとともだちがいますか？</strong></p>
+                    <p>Ans: いいえ、いません。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে পরিচিত বা বন্ধু আছে? উত্তর: না, নেই।</p>
+                </div>
+            </div>
+            <!-- 146 -->
+            <div class="qa-item">
+                <div class="qa-number">146</div>
+                <div class="qa-japanese">
+                    <p><strong>にほんでしんせいしたことがありますか？</strong></p>
+                    <p>Ans: いいえ、ありません。はじめてです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে আবেদন করেছেন? উত্তর: না, করিনি। প্রথমবার।</p>
+                </div>
+            </div>
+            <!-- 147 -->
+            <div class="qa-item">
+                <div class="qa-number">147</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん で がいこくじん と いっしょうに すむ こと が できますか？</strong></p>
+                    <p>Ans: はい、できますよ、だいじょうぶ です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে বিদেশিদের সাথে থাকতে পারবেন? উত্তর: হ্যাঁ, পারব,没问题।</p>
+                </div>
+            </div>
+            <!-- 148 -->
+            <div class="qa-item">
+                <div class="qa-number">148</div>
+                <div class="qa-japanese">
+                    <p><strong>りょうり を つくる こと が できますか？</strong></p>
+                    <p>Ans: はい、できます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> রান্না করতে পারেন? উত্তর: হ্যাঁ, পারেন।</p>
+                </div>
+            </div>
+            <!-- 149 -->
+            <div class="qa-item">
+                <div class="qa-number">149</div>
+                <div class="qa-japanese">
+                    <p><strong>どんな りょうり が つくる こと が できますか？</strong></p>
+                    <p>Ans: ビリヤニと ごはん と カレー と パン と たまご です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কী কী রান্না করতে পারেন? উত্তর: বিরিয়ানি, ভাত, তরকারি, রুটি, ডিম।</p>
+                </div>
+            </div>
+            <!-- 150 -->
+            <div class="qa-item">
+                <div class="qa-number">150</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの がっこう の にほんご の せんせい は どうですか？</strong></p>
+                    <p>Ans: しんせつ な ひと です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার স্কুলের জাপানি শিক্ষক কেমন? উত্তর: সদয় মানুষ।</p>
+                </div>
+            </div>
+            <!-- 151 -->
+            <div class="qa-item">
+                <div class="qa-number">151</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの すきな たべもの は なん ですか？</strong></p>
+                    <p>Ans: ビリヤニです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার প্রিয় খাবার কী? উত্তর: বিরিয়ানি।</p>
+                </div>
+            </div>
+            <!-- 152 -->
+            <div class="qa-item">
+                <div class="qa-number">152</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの すきな のみもの は なん ですか？</strong></p>
+                    <p>Ans: チャです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার প্রিয় পানীয় কী? উত্তর: চা।</p>
+                </div>
+            </div>
+            <!-- 153 -->
+            <div class="qa-item">
+                <div class="qa-number">153</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの すきな やさい は なん ですか？</strong></p>
+                    <p>Ans: じゃがいもです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার প্রিয় সবজি কী? উত্তর: আলু।</p>
+                </div>
+            </div>
+            <!-- 154 -->
+            <div class="qa-item">
+                <div class="qa-number">154</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの すきな くだもの は なん ですか？</strong></p>
+                    <p>Ans: マンゴーです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার প্রিয় ফল কী? উত্তর: আম।</p>
+                </div>
+            </div>
+            <!-- 155 -->
+            <div class="qa-item">
+                <div class="qa-number">155</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの すき な どうぶつ は なん ですか？</strong></p>
+                    <p>Ans: ねこです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার প্রিয় প্রাণী কী? উত্তর: বেড়াল।</p>
+                </div>
+            </div>
+            <!-- 156 -->
+            <div class="qa-item">
+                <div class="qa-number">156</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの すきな はな は なん ですか？</strong></p>
+                    <p>Ans: ばらです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার প্রিয় ফুল কী? উত্তর: গোলাপ।</p>
+                </div>
+            </div>
+            <!-- 157 -->
+            <div class="qa-item">
+                <div class="qa-number">157</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの すきな いろ は なん ですか？</strong></p>
+                    <p>Ans: あおです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার প্রিয় রং কী? উত্তর: নীল।</p>
+                </div>
+            </div>
+            <!-- 158 -->
+            <div class="qa-item">
+                <div class="qa-number">158</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの すきな スポーツ は なん ですか？</strong></p>
+                    <p>Ans: サッカーです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার প্রিয় খেলা কী? উত্তর: ফুটবল।</p>
+                </div>
+            </div>
+            <!-- 159 -->
+            <div class="qa-item">
+                <div class="qa-number">159</div>
+                <div class="qa-japanese">
+                    <p><strong>スポーツ で いちばん すき な プレイヤー の なまえ は なん ですか？</strong></p>
+                    <p>Ans: リオネル・メッシです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> খেলায় সবচেয়ে প্রিয় খেলোয়াড়ের নাম কী? উত্তর: লিওনেল মেসি।</p>
+                </div>
+            </div>
+            <!-- 160 -->
+            <div class="qa-item">
+                <div class="qa-number">160</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの すきな てんき は どうですか？</strong></p>
+                    <p>Ans: はれです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার প্রিয় আবহাওয়া কেমন? উত্তর: রোদেলা।</p>
+                </div>
+            </div>
+            <!-- 161 -->
+            <div class="qa-item">
+                <div class="qa-number">161</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの すき な ところ は どこ ですか？</strong></p>
+                    <p>Ans: こうえんです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার প্রিয় জায়গা কোথায়? উত্তর: পার্ক।</p>
+                </div>
+            </div>
+            <!-- 162 -->
+            <div class="qa-item">
+                <div class="qa-number">162</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの ふく/シャツ の いろ は なん ですか？</strong></p>
+                    <p>Ans: しろです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার পোশাক/শার্টের রং কী? উত্তর: সাদা।</p>
+                </div>
+            </div>
+            <!-- 163 -->
+            <div class="qa-item">
+                <div class="qa-number">163</div>
+                <div class="qa-japanese">
+                    <p><strong>きのうのばん は なに を しましたか？</strong></p>
+                    <p>Ans: にほんご を べんきょうして、ばんごはん を たべて、ねました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> গত রাতে কী করলেন? উত্তর: জাপানি পড়লাম, রাতের খাবার খেলাম, ঘুমালাম।</p>
+                </div>
+            </div>
+            <!-- 164 -->
+            <div class="qa-item">
+                <div class="qa-number">164</div>
+                <div class="qa-japanese">
+                    <p><strong>なん じ に ねましたか？</strong></p>
+                    <p>Ans: じゅういち じ に ねました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কটায় ঘুমালেন? উত্তর: ১১টায় ঘুমালাম।</p>
+                </div>
+            </div>
+            <!-- 165 -->
+            <div class="qa-item">
+                <div class="qa-number">165</div>
+                <div class="qa-japanese">
+                    <p><strong>きのうのばん は なにを たべましたか？</strong></p>
+                    <p>Ans: ごはん と さかな を たべました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> গত রাতে কী খেলেন? উত্তর: ভাত ও মাছ খেলাম।</p>
+                </div>
+            </div>
+            <!-- 166 -->
+            <div class="qa-item">
+                <div class="qa-number">166</div>
+                <div class="qa-japanese">
+                    <p><strong>けさ なんじに おきましたか？</strong></p>
+                    <p>Ans: ろく じ に おきました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আজ সকালে কটায় উঠলেন? উত্তর: ৬টায় উঠলাম।</p>
+                </div>
+            </div>
+            <!-- 167 -->
+            <div class="qa-item">
+                <div class="qa-number">167</div>
+                <div class="qa-japanese">
+                    <p><strong>おきて から なに を しましたか？</strong></p>
+                    <p>Ans: おきて から シャワー を あびて おいのり を して あさごはん を たべて にほんご がっこう に きました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> উঠে কী করলেন? উত্তর: উঠে গোসল করলাম, নামাজ পড়লাম, সকালের নাস্তা খেলাম, জাপানি স্কুলে এলাম।</p>
+                </div>
+            </div>
+            <!-- 168 -->
+            <div class="qa-item">
+                <div class="qa-number">168</div>
+                <div class="qa-japanese">
+                    <p><strong>けさ は なにを たべましたか？</strong></p>
+                    <p>Ans: パン と たまご を たべました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আজ সকালে কী খেলেন? উত্তর: রুটি ও ডিম খেলাম।</p>
+                </div>
+            </div>
+            <!-- 169 -->
+            <div class="qa-item">
+                <div class="qa-number">169</div>
+                <div class="qa-japanese">
+                    <p><strong>いつ がっこう へ きましたか？</strong></p>
+                    <p>Ans: くじに きました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কখন স্কুলে এলেন? উত্তর: ৯টায় এলাম।</p>
+                </div>
+            </div>
+            <!-- だれ と がっこう へ いきますか？ -->
+            <div class="qa-item">
+                <div class="qa-number">●</div>
+                <div class="qa-japanese">
+                    <p><strong>だれ と がっこう へ いきますか？</strong></p>
+                    <p>Ans: ともだち と がっこう へ いきます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কার সাথে স্কুলে যান? উত্তর: বন্ধুর সাথে স্কুলে যাই।</p>
+                </div>
+            </div>
+            <!-- 170 -->
+            <div class="qa-item">
+                <div class="qa-number">170</div>
+                <div class="qa-japanese">
+                    <p><strong>がっこう は なん ようびから なん ようびまで ですか？</strong></p>
+                    <p>Ans: がっこう は げつようび から もくようび まで です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> স্কুল কবে থেকে কবে পর্যন্ত? উত্তর: স্কুল সোমবার থেকে বৃহস্পতিবার পর্যন্ত।</p>
+                </div>
+            </div>
+            <!-- 171 -->
+            <div class="qa-item">
+                <div class="qa-number">171</div>
+                <div class="qa-japanese">
+                    <p><strong>がっこう の しゅうまつ は なんようび ですか？</strong></p>
+                    <p>Ans: きんようび です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> স্কুলের ছুটির দিন কবে? উত্তর: শুক্রবার।</p>
+                </div>
+            </div>
+            <!-- 172 -->
+            <div class="qa-item">
+                <div class="qa-number">172</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの がっこう/うち の まえ に なに が ありますか？</strong></p>
+                    <p>Ans: こうえん が あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার স্কুল/বাড়ির সামনে কী আছে? উত্তর: পার্ক আছে।</p>
+                </div>
+            </div>
+            <!-- 173 -->
+            <div class="qa-item">
+                <div class="qa-number">173</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの がっこう/うち の となり に なに が ありますか？</strong></p>
+                    <p>Ans: スーパーが あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার স্কুল/বাড়ির পাশে কী আছে? উত্তর: সুপার মার্কেট আছে।</p>
+                </div>
+            </div>
+            <!-- 174 -->
+            <div class="qa-item">
+                <div class="qa-number">174</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの がっこう/うち の みぎがわ に なに が ありますか？</strong></p>
+                    <p>Ans: きっさてん が あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার স্কুল/বাড়ির ডান পাশে কী আছে? উত্তর: কফি শপ আছে।</p>
+                </div>
+            </div>
+            <!-- 175 -->
+            <div class="qa-item">
+                <div class="qa-number">175</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの がっこう/うち の ひだりがわ に なに が ありますか？</strong></p>
+                    <p>Ans: コンビニ が あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার স্কুল/বাড়ির বাম পাশে কী আছে? উত্তর: সুবিধার দোকান আছে।</p>
+                </div>
+            </div>
+            <!-- 176 -->
+            <div class="qa-item">
+                <div class="qa-number">176</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの がっこう/うち の うしろ に なにが ありますか？</strong></p>
+                    <p>Ans: ぎんこう が あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার স্কুল/বাড়ির পিছনে কী আছে? উত্তর: ব্যাংক আছে।</p>
+                </div>
+            </div>
+            <!-- 177 -->
+            <div class="qa-item">
+                <div class="qa-number">177</div>
+                <div class="qa-japanese">
+                    <p><strong>コンピューター が どこ に ありますか？</strong></p>
+                    <p>Ans: わたしの まえ に あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কম্পিউটার কোথায়? উত্তর: আমার সামনে আছে।</p>
+                </div>
+            </div>
+            <!-- 178 -->
+            <div class="qa-item">
+                <div class="qa-number">178</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの まえ に なにが ありますか？</strong></p>
+                    <p>Ans: コンピューター が あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার সামনে কী আছে? উত্তর: কম্পিউটার আছে।</p>
+                </div>
+            </div>
+            <!-- あなたの うしろ に なにが ありますか？ -->
+            <div class="qa-item">
+                <div class="qa-number">●</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの うしろ に なにが ありますか？</strong></p>
+                    <p>Ans: いすがあります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার পিছনে কী আছে? উত্তর: চেয়ার আছে।</p>
+                </div>
+            </div>
+            <!-- 179 -->
+            <div class="qa-item">
+                <div class="qa-number">179</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた の きょうだい で だれ と だれ が いますか？</strong></p>
+                    <p>Ans: あにとあねとわたしがいます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার ভাইবোনদের মধ্যে কে কে আছেন? উত্তর: বড় ভাই, বড় বোন ও আমি।</p>
+                </div>
+            </div>
+            <!-- 180 -->
+            <div class="qa-item">
+                <div class="qa-number">180</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は あなたの たんじょうび に なに を もらいましたか？</strong></p>
+                    <p>Ans: ほんを もらいました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি আপনার জন্মদিনে কী পেয়েছিলেন? উত্তর: বই পেয়েছিলাম।</p>
+                </div>
+            </div>
+            <!-- どんなほんを もらいましたか？ -->
+            <div class="qa-item">
+                <div class="qa-number">●</div>
+                <div class="qa-japanese">
+                    <p><strong>どんなほんを もらいましたか？</strong></p>
+                    <p>Ans: にほんごのほんをもらいました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কী ধরনের বই পেয়েছিলেন? উত্তর: জাপানি ভাষার বই পেয়েছিলাম।</p>
+                </div>
+            </div>
+            <!-- 181 -->
+            <div class="qa-item">
+                <div class="qa-number">181</div>
+                <div class="qa-japanese">
+                    <p><strong>だれ から もらいましたか？</strong></p>
+                    <p>Ans: ともだちから もらいました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কার কাছ থেকে পেয়েছিলেন? উত্তর: বন্ধুর কাছ থেকে পেয়েছিলাম।</p>
+                </div>
+            </div>
+            <!-- 182 -->
+            <div class="qa-item">
+                <div class="qa-number">182</div>
+                <div class="qa-japanese">
+                    <p><strong>いくら でしたか？</strong></p>
+                    <p>Ans: １０００タカでした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কত টাকা দাম ছিল? উত্তর: ১০০০ টাকা।</p>
+                </div>
+            </div>
+            <!-- 183 -->
+            <div class="qa-item">
+                <div class="qa-number">183</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は あなた の たんじょうび に なに を しましたか？</strong></p>
+                    <p>Ans: かぞく と ともだち と いっしょに あそびました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি আপনার জন্মদিনে কী করেছিলেন? উত্তর: পরিবার ও বন্ধুদের সাথে খেলেছিলাম।</p>
+                </div>
+            </div>
+            <!-- 184 -->
+            <div class="qa-item">
+                <div class="qa-number">184</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は あなた の おかあさん の たんじょうび に なに を あげましたか？</strong></p>
+                    <p>Ans: きれい な はな を あげました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি আপনার মায়ের জন্মদিনে কী দিয়েছিলেন? উত্তর: সুন্দর ফুল দিয়েছিলাম।</p>
+                </div>
+            </div>
+            <!-- 185 -->
+            <div class="qa-item">
+                <div class="qa-number">185</div>
+                <div class="qa-japanese">
+                    <p><strong>どんな はな を あげましたか？</strong></p>
+                    <p>Ans: ばら を あげました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কী ধরনের ফুল দিয়েছিলেন? উত্তর: গোলাপ দিয়েছিলাম।</p>
+                </div>
+            </div>
+            <!-- 186 -->
+            <div class="qa-item">
+                <div class="qa-number">186</div>
+                <div class="qa-japanese">
+                    <p><strong>いくら でしたか？</strong></p>
+                    <p>Ans: ５００タカでした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কত টাকা দাম ছিল? উত্তর: ৫০০ টাকা।</p>
+                </div>
+            </div>
+            <!-- 187 -->
+            <div class="qa-item">
+                <div class="qa-number">187</div>
+                <div class="qa-japanese">
+                    <p><strong>どこの はな でしたか？</strong></p>
+                    <p>Ans: バングラデシュ の はな でした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কোথাকার ফুল ছিল? উত্তর: বাংলাদেশের ফুল ছিল।</p>
+                </div>
+            </div>
+            <!-- 188 -->
+            <div class="qa-item">
+                <div class="qa-number">188</div>
+                <div class="qa-japanese">
+                    <p><strong>どこ から かいましたか？</strong></p>
+                    <p>Ans: はなや から かいました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কোথা থেকে কিনেছিলেন? উত্তর: ফুলের দোকান থেকে কিনেছিলাম।</p>
+                </div>
+            </div>
+            <!-- 189 -->
+            <div class="qa-item">
+                <div class="qa-number">189</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は あなたの おとうさん の たんじょうび に なに を あげましたか？</strong></p>
+                    <p>Ans: シャツ を あげました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি আপনার বাবার জন্মদিনে কী দিয়েছিলেন? উত্তর: শার্ট দিয়েছিলাম।</p>
+                </div>
+            </div>
+            <!-- 190 -->
+            <div class="qa-item">
+                <div class="qa-number">190</div>
+                <div class="qa-japanese">
+                    <p><strong>どんな シャツ を あげましたか？</strong></p>
+                    <p>Ans: きれい な シャツ を あげました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কী ধরনের শার্ট দিয়েছিলেন? উত্তর: সুন্দর শার্ট দিয়েছিলাম।</p>
+                </div>
+            </div>
+            <!-- 191 -->
+            <div class="qa-item">
+                <div class="qa-number">191</div>
+                <div class="qa-japanese">
+                    <p><strong>いくら でしたか？</strong></p>
+                    <p>Ans: ８００タカでした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কত টাকা দাম ছিল? উত্তর: ৮০০ টাকা।</p>
+                </div>
+            </div>
+            <!-- 192 -->
+            <div class="qa-item">
+                <div class="qa-number">192</div>
+                <div class="qa-japanese">
+                    <p><strong>どこ から かいましたか？</strong></p>
+                    <p>Ans: スーパー から シャツ を かいました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কোথা থেকে কিনেছিলেন? উত্তর: সুপার মার্কেট থেকে শার্ট কিনেছিলাম।</p>
+                </div>
+            </div>
+            <!-- 193 -->
+            <div class="qa-item">
+                <div class="qa-number">193</div>
+                <div class="qa-japanese">
+                    <p><strong>どこ の シャツ でしたか？</strong></p>
+                    <p>Ans: バングラデシュ の シャツ でした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কোথাকার শার্ট ছিল? উত্তর: বাংলাদেশের শার্ট ছিল।</p>
+                </div>
+            </div>
+            <!-- ●あなた は あなたの おとうさん の たんじょうび に なに を しましたか？ -->
+            <div class="qa-item">
+                <div class="qa-number">●</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は あなたの おとうさん の たんじょうび に なに を しましたか？</strong></p>
+                    <p>Ans: かぞく と いっしょに あそびました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি আপনার বাবার জন্মদিনে কী করেছিলেন? উত্তর: পরিবারের সাথে খেলেছিলাম।</p>
+                </div>
+            </div>
+            <!-- ●あなた は あなたの おかあさん の たんじょうび に なに を しましたか？ -->
+            <div class="qa-item">
+                <div class="qa-number">●</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は あなたの おかあさん の たんじょうび に なに を しましたか？</strong></p>
+                    <p>Ans: かぞく と いっしょに あそびました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি আপনার মায়ের জন্মদিনে কী করেছিলেন? উত্তর: পরিবারের সাথে খেলেছিলাম।</p>
+                </div>
+            </div>
+            <!-- 194 -->
+            <div class="qa-item">
+                <div class="qa-number">194</div>
+                <div class="qa-japanese">
+                    <p><strong>きょう は なんようび ですか？</strong></p>
+                    <p>Ans: げつようびです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আজ কী বার? উত্তর: সোমবার।</p>
+                </div>
+            </div>
+            <!-- 195 -->
+            <div class="qa-item">
+                <div class="qa-number">195</div>
+                <div class="qa-japanese">
+                    <p><strong>あした は なんようび ですか？</strong></p>
+                    <p>Ans: かようびです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আগামীকাল কী বার? উত্তর: মঙ্গলবার।</p>
+                </div>
+            </div>
+            <!-- 196 -->
+            <div class="qa-item">
+                <div class="qa-number">196</div>
+                <div class="qa-japanese">
+                    <p><strong>あさって は なん ようび ですか？</strong></p>
+                    <p>Ans: すいようびです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> পরশু কী বার? উত্তর: বুধবার।</p>
+                </div>
+            </div>
+            <!-- 197 -->
+            <div class="qa-item">
+                <div class="qa-number">197</div>
+                <div class="qa-japanese">
+                    <p><strong>きのう は なん ようび でしたか？</strong></p>
+                    <p>Ans: にちようびでした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> গতকাল কী বার ছিল? উত্তর: রবিবার ছিল।</p>
+                </div>
+            </div>
+            <!-- 198 -->
+            <div class="qa-item">
+                <div class="qa-number">198</div>
+                <div class="qa-japanese">
+                    <p><strong>おととい は なんようび でしたか？</strong></p>
+                    <p>Ans: どようびでした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> গত পরশু কী বার ছিল? উত্তর: শনিবার ছিল।</p>
+                </div>
+            </div>
+            <!-- 199 -->
+            <div class="qa-item">
+                <div class="qa-number">199</div>
+                <div class="qa-japanese">
+                    <p><strong>きょう は なん ねんの なん がつ の なんにち ですか？</strong></p>
+                    <p>Ans: きょう は ２０２４ねんの６がつ２５日です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আজ কোন সালের কত তারিখ? উত্তর: আজ ২০২৪ সালের ২৫শে জুন।</p>
+                </div>
+            </div>
+            <!-- 200 -->
+            <div class="qa-item">
+                <div class="qa-number">200</div>
+                <div class="qa-japanese">
+                    <p><strong>あした は なんねん の なんがつ の なん にち ですか？</strong></p>
+                    <p>Ans: あした は ２０２４ねんの６がつ２６日です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আগামীকাল কোন সালের কত তারিখ? উত্তর: আগামীকাল ২০২৪ সালের ২৬শে জুন।</p>
+                </div>
+            </div>
+            <!-- 201 -->
+            <div class="qa-item">
+                <div class="qa-number">201</div>
+                <div class="qa-japanese">
+                    <p><strong>あさって は なんねん の なん がつ の なんにち ですか？</strong></p>
+                    <p>Ans: あさって は ２０２４ねんの６がつ２７日です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> পরশু কোন সালের কত তারিখ? উত্তর: পরশু ২০২৪ সালের ২৭শে জুন।</p>
+                </div>
+            </div>
+            <!-- 202 -->
+            <div class="qa-item">
+                <div class="qa-number">202</div>
+                <div class="qa-japanese">
+                    <p><strong>きのう は なん ねん の なんがつ の なんにち でしたか？</strong></p>
+                    <p>Ans: きのう は ２０２４ねんの６がつ２４日でした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> গতকাল কোন সালের কত তারিখ ছিল? উত্তর: গতকাল ২০২৪ সালের ২৪শে জুন ছিল।</p>
+                </div>
+            </div>
+            <!-- 203 -->
+            <div class="qa-item">
+                <div class="qa-number">203</div>
+                <div class="qa-japanese">
+                    <p><strong>おととい は なん ねん の なん がつ の なん にち でしたか？</strong></p>
+                    <p>Ans: おととい は ２０２４ねんの６がつ２３日でした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> গত পরশু কোন সালের কত তারিখ ছিল? উত্তর: গত পরশু ২০২৪ সালের ২৩শে জুন ছিল।</p>
+                </div>
+            </div>
+            <!-- 204 -->
+            <div class="qa-item">
+                <div class="qa-number">204</div>
+                <div class="qa-japanese">
+                    <p><strong>きょう は なん にち ですか？</strong></p>
+                    <p>Ans: ２５にちです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আজ কত তারিখ? উত্তর: ২৫শে।</p>
+                </div>
+            </div>
+            <!-- 205 -->
+            <div class="qa-item">
+                <div class="qa-number">205</div>
+                <div class="qa-japanese">
+                    <p><strong>あした は なん にち ですか？</strong></p>
+                    <p>Ans: ２６にちです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আগামীকাল কত তারিখ? উত্তর: ২৬শে।</p>
+                </div>
+            </div>
+            <!-- 206 -->
+            <div class="qa-item">
+                <div class="qa-number">206</div>
+                <div class="qa-japanese">
+                    <p><strong>あさって は なん にち ですか？</strong></p>
+                    <p>Ans: ２７にちです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> পরশু কত তারিখ? উত্তর: ২৭শে।</p>
+                </div>
+            </div>
+            <!-- 207 -->
+            <div class="qa-item">
+                <div class="qa-number">207</div>
+                <div class="qa-japanese">
+                    <p><strong>きのう は なん にち でしたか？</strong></p>
+                    <p>Ans: ２４にちでした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> গতকাল কত তারিখ ছিল? উত্তর: ২৪শে ছিল।</p>
+                </div>
+            </div>
+            <!-- 208 -->
+            <div class="qa-item">
+                <div class="qa-number">208</div>
+                <div class="qa-japanese">
+                    <p><strong>おととい は なん にち でしたか？</strong></p>
+                    <p>Ans: ２３にちでした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> গত পরশু কত তারিখ ছিল? উত্তর: ২৩শে ছিল।</p>
+                </div>
+            </div>
+            <!-- 209 -->
+            <div class="qa-item">
+                <div class="qa-number">209</div>
+                <div class="qa-japanese">
+                    <p><strong>かんじ が できますか？</strong></p>
+                    <p>Ans: はい できます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কাঞ্জি পারেন? উত্তর: হ্যাঁ, পারেন।</p>
+                </div>
+            </div>
+            <!-- 210 -->
+            <div class="qa-item">
+                <div class="qa-number">210</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は かんじ を いくつ ぐらい しっていますか？</strong></p>
+                    <p>Ans: １００ぐらい できます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি প্রায় কতগুলি কাঞ্জি জানেন? উত্তর: প্রায় ১০০টি পারেন।</p>
+                </div>
+            </div>
+            <!-- 211 -->
+            <div class="qa-item">
+                <div class="qa-number">211</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた の しんちょう は なん センチ ですか？</strong></p>
+                    <p>Ans: １７０センチです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার উচ্চতা কত সেন্টিমিটার? উত্তর: ১৭০ সেমি।</p>
+                </div>
+            </div>
+            <!-- 212 -->
+            <div class="qa-item">
+                <div class="qa-number">212</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた の たいじゅう は なん キロ ですか？</strong></p>
+                    <p>Ans: ６０キロです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার ওজন কত কেজি? উত্তর: ৬০ কেজি।</p>
+                </div>
+            </div>
+            <!-- 213 -->
+            <div class="qa-item">
+                <div class="qa-number">213</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた の きらい な こと は なん ですか？</strong></p>
+                    <p>Ans: うそ を いう こと が きらい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার অপছন্দের জিনিস কী? উত্তর: মিথ্যা বলা অপছন্দ।</p>
+                </div>
+            </div>
+            <!-- 214 -->
+            <div class="qa-item">
+                <div class="qa-number">214</div>
+                <div class="qa-japanese">
+                    <p><strong>ひらがな と かたかな が できますか？</strong></p>
+                    <p>Ans: はい、できます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> হিরাগানা ও কাতাকানা পারেন? উত্তর: হ্যাঁ, পারেন।</p>
+                </div>
+            </div>
+            <!-- 215 -->
+            <div class="qa-item">
+                <div class="qa-number">215</div>
+                <div class="qa-japanese">
+                    <p><strong>じぶんで ひらがな と かたかな と かんじ を かく こと が できますか？</strong></p>
+                    <p>Ans: はい、できます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> নিজে হিরাগানা, কাতাকানা ও কাঞ্জি লিখতে পারেন? উত্তর: হ্যাঁ, পারেন।</p>
+                </div>
+            </div>
+            <!-- 216 -->
+            <div class="qa-item">
+                <div class="qa-number">216</div>
+                <div class="qa-japanese">
+                    <p><strong>おくに は どちら ですか？</strong></p>
+                    <p>Ans: バングラデシュです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার দেশ কোথায়? উত্তর: বাংলাদেশ।</p>
+                </div>
+            </div>
+            <!-- 217 -->
+            <div class="qa-item">
+                <div class="qa-number">217</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は おさけ と ビール と ワイン を のめますか？</strong></p>
+                    <p>Ans: いいえ のめません。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি মদ, বিয়ার, ওয়াইন পান করতে পারেন? উত্তর: না, পারেন না।</p>
+                </div>
+            </div>
+            <!-- 218 -->
+            <div class="qa-item">
+                <div class="qa-number">218</div>
+                <div class="qa-japanese">
+                    <p><strong>たばこ を すいますか？</strong></p>
+                    <p>Ans: いいえ、すいません。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি ধূমপান করেন? উত্তর: না, করি না।</p>
+                </div>
+            </div>
+            <!-- 219 -->
+            <div class="qa-item">
+                <div class="qa-number">219</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は あなたの がっこう から うち へ かえってから なに を しますか？</strong></p>
+                    <p>Ans: ちょっと やすみます そのあと シャワー を あびて ひるごはん を たべて ともだち と あそびます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি আপনার স্কুল থেকে বাড়ি ফিরে কী করেন? উত্তর: একটু বিশ্রাম নেই, তারপর গোসল করি, দুপুরের খাবার খাই, বন্ধুদের সাথে খেলি।</p>
+                </div>
+            </div>
+            <!-- 220 -->
+            <div class="qa-item">
+                <div class="qa-number">220</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた の みぎがわ に なに が ありますか？</strong></p>
+                    <p>Ans: ドア が あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার ডান পাশে কী আছে? উত্তর: দরজা আছে।</p>
+                </div>
+            </div>
+            <!-- 221 -->
+            <div class="qa-item">
+                <div class="qa-number">221</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた の ひだりがわ に なに が ありますか？</strong></p>
+                    <p>Ans: まど が あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার বাম পাশে কী আছে? উত্তর: জানালা আছে।</p>
+                </div>
+            </div>
+            <!-- 222 -->
+            <div class="qa-item">
+                <div class="qa-number">222</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた の にほんごの がっこう は いつ から はじめますか？</strong></p>
+                    <p>Ans: ごぜん くじ から はじめます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার জাপানি স্কুল কখন শুরু হয়? উত্তর: সকাল ৯টা থেকে শুরু হয়।</p>
+                </div>
+            </div>
+            <!-- 223 -->
+            <div class="qa-item">
+                <div class="qa-number">223</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの にほんご がっこう は いつ おわりますか？</strong></p>
+                    <p>Ans: ごご いちじ に おわります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার জাপানি স্কুল কখন শেষ হয়? উত্তর: দুপুর ১টায় শেষ হয়।</p>
+                </div>
+            </div>
+            <!-- 224 -->
+            <div class="qa-item">
+                <div class="qa-number">224</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた は がっこう の しゅうまつ/やすみの ひに なに を して いますか？</strong></p>
+                    <p>Ans: ともだち と いっしょに サッカー を します。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনি স্কুলের ছুটির দিনে কী করেন? উত্তর: বন্ধুদের সাথে ফুটবল খেলি।</p>
+                </div>
+            </div>
+            <!-- 225 -->
+            <div class="qa-item">
+                <div class="qa-number">225</div>
+                <div class="qa-japanese">
+                    <p><strong>どこ で サッカー を しますか？</strong></p>
+                    <p>Ans: こうえん で サッカー を します。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কোথায় ফুটবল খেলেন? উত্তর: পার্কে ফুটবল খেলি।</p>
+                </div>
+            </div>
+            <!-- 226 -->
+            <div class="qa-item">
+                <div class="qa-number">226</div>
+                <div class="qa-japanese">
+                    <p><strong>だれ と サッカー を しますか？</strong></p>
+                    <p>Ans: ともだち と サッカー を します。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কার সাথে ফুটবল খেলেন? উত্তর: বন্ধুদের সাথে ফুটবল খেলি।</p>
+                </div>
+            </div>
+            <!-- 227 -->
+            <div class="qa-item">
+                <div class="qa-number">227</div>
+                <div class="qa-japanese">
+                    <p><strong>まいにち サッカー を しますか？</strong></p>
+                    <p>Ans: いいえ、きんようび だけ サッカー を します。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> প্রতিদিন ফুটবল খেলেন? উত্তর: না, শুধু শুক্রবার ফুটবল খেলি।</p>
+                </div>
+            </div>
+            <!-- いっしゅうかん に なん にち/ようび サッカー を しますか？ -->
+            <div class="qa-item">
+                <div class="qa-number">●</div>
+                <div class="qa-japanese">
+                    <p><strong>いっしゅうかん に なん にち/ようび サッカー を しますか？</strong></p>
+                    <p>Ans: きんようび だけ サッカー を します。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> সপ্তাহে কত দিন ফুটবল খেলেন? উত্তর: শুধু শুক্রবার ফুটবল খেলি।</p>
+                </div>
+            </div>
+            <!-- 228 -->
+            <div class="qa-item">
+                <div class="qa-number">228</div>
+                <div class="qa-japanese">
+                    <p><strong>なん じかん サッカー を しますか？</strong></p>
+                    <p>Ans: に じかん サッカー を します。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কত ঘন্টা ফুটবল খেলেন? উত্তর: ২ ঘন্টা ফুটবল খেলি।</p>
+                </div>
+            </div>
+            <!-- 229 -->
+            <div class="qa-item">
+                <div class="qa-number">229</div>
+                <div class="qa-japanese">
+                    <p><strong>いつ から いつ まで サッカー を しますか？</strong></p>
+                    <p>Ans: ごご よじ から ろくじ まで サッカー を します。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কখন থেকে কখন পর্যন্ত ফুটবল খেলেন? উত্তর: বিকাল ৪টা থেকে ৬টা পর্যন্ত ফুটবল খেলি।</p>
+                </div>
+            </div>
+            <!-- 230 -->
+            <div class="qa-item">
+                <div class="qa-number">230</div>
+                <div class="qa-japanese">
+                    <p><strong>サッカー ボール が ありますか？</strong></p>
+                    <p>Ans: はい、あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ফুটবল বল আছে? উত্তর: হ্যাঁ, আছে।</p>
+                </div>
+            </div>
+            <!-- 231 -->
+            <div class="qa-item">
+                <div class="qa-number">231</div>
+                <div class="qa-japanese">
+                    <p><strong>サッカー ボール の いろ は なん ですか？</strong></p>
+                    <p>Ans: しろ と くろ です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ফুটবল বলের রং কী? উত্তর: সাদা ও কালো।</p>
+                </div>
+            </div>
+            <!-- 232 -->
+            <div class="qa-item">
+                <div class="qa-number">232</div>
+                <div class="qa-japanese">
+                    <p><strong>どこ で かいましたか？</strong></p>
+                    <p>Ans: マーケット で かいました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কোথায় কিনেছিলেন? উত্তর: বাজার থেকে কিনেছিলাম।</p>
+                </div>
+            </div>
+            <!-- 233 -->
+            <div class="qa-item">
+                <div class="qa-number">233</div>
+                <div class="qa-japanese">
+                    <p><strong>どこ の ボール ですか？</strong></p>
+                    <p>Ans: バングラデシュ の ボール です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কোথাকার বল? উত্তর: বাংলাদেশের বল।</p>
+                </div>
+            </div>
+            <!-- 234 -->
+            <div class="qa-item">
+                <div class="qa-number">234</div>
+                <div class="qa-japanese">
+                    <p><strong>いくら でしたか？</strong></p>
+                    <p>Ans: ６００タカでした。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কত টাকা ছিল? উত্তর: ৬০০ টাকা ছিল।</p>
+                </div>
+            </div>
+            <!-- 235 -->
+            <div class="qa-item">
+                <div class="qa-number">235</div>
+                <div class="qa-japanese">
+                    <p><strong>サッカー では いちばん すきな せんしゅ/プレーヤー の なまえ は なん ですか？</strong></p>
+                    <p>Ans: リオネル・メッシです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> ফুটবলে সবচেয়ে প্রিয় খেলোয়াড়ের নাম কী? উত্তর: লিওনেল মেসি।</p>
+                </div>
+            </div>
+            <!-- 236 -->
+            <div class="qa-item">
+                <div class="qa-number">236</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた の ほしょうにん/けいひしべんしゃ/スポンサー の ねんしゅう は いくら ですか？</strong></p>
+                    <p>Ans: ３０万円ぐらいです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার গ্যারান্টার/খরচ প্রদানকারী/স্পনসরের বার্ষিক আয় কত? উত্তর: প্রায় ৩০ লক্ষ টাকা।</p>
+                </div>
+            </div>
+            <!-- 237 -->
+            <div class="qa-item">
+                <div class="qa-number">237</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた の ほしょうにん/けいひしべんしゃ/スポンサー の げっしゅう は いくら ですか？</strong></p>
+                    <p>Ans: ２５００００タカぐらいです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার গ্যারান্টার/খরচ প্রদানকারী/স্পনসরের মাসিক আয় কত? উত্তর: প্রায় ২৫০০০০ টাকা।</p>
+                </div>
+            </div>
+            <!-- 238 -->
+            <div class="qa-item">
+                <div class="qa-number">238</div>
+                <div class="qa-japanese">
+                    <p><strong>どうやって にほん へ いきますか？</strong></p>
+                    <p>Ans: ひこうき で にほん へ いきます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কিভাবে জাপানে যাবেন? উত্তর: বিমানে জাপানে যাব।</p>
+                </div>
+            </div>
+            <!-- 239 -->
+            <div class="qa-item">
+                <div class="qa-number">239</div>
+                <div class="qa-japanese">
+                    <p><strong>ひこうき に のった こと が ありますか？</strong></p>
+                    <p>Ans: いいえ、ありません。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> বিমানে চড়েছেন? উত্তর: না, চড়িনি।</p>
+                </div>
+            </div>
+            <!-- 240 -->
+            <div class="qa-item">
+                <div class="qa-number">240</div>
+                <div class="qa-japanese">
+                    <p><strong>にほん に いった/きた こと が ありますか？</strong></p>
+                    <p>Ans: いいえ、ありません。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> জাপানে গেছেন? উত্তর: না, যাইনি।</p>
+                </div>
+            </div>
+            <!-- 241 -->
+            <div class="qa-item">
+                <div class="qa-number">241</div>
+                <div class="qa-japanese">
+                    <p><strong>じてんしゃ に のる こと が できますか？</strong></p>
+                    <p>Ans: はい、できます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> সাইকেল চালাতে পারেন? উত্তর: হ্যাঁ, পারেন।</p>
+                </div>
+            </div>
+            <!-- 242 -->
+            <div class="qa-item">
+                <div class="qa-number">242</div>
+                <div class="qa-japanese">
+                    <p><strong>じてんしゃ に のる こと が どう ですか？</strong></p>
+                    <p>Ans: おもしろい です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> সাইকেল চালানো কেমন? উত্তর: মজার।</p>
+                </div>
+            </div>
+            <!-- 243 -->
+            <div class="qa-item">
+                <div class="qa-number">243</div>
+                <div class="qa-japanese">
+                    <p><strong>あなたの じぶんの じてんしゃ が ありますか？</strong></p>
+                    <p>Ans: はい、あります。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার নিজের সাইকেল আছে? উত্তর: হ্যাঁ, আছে।</p>
+                </div>
+            </div>
+            <!-- 244 -->
+            <div class="qa-item">
+                <div class="qa-number">244</div>
+                <div class="qa-japanese">
+                    <p><strong>だれから もらいましたか？</strong></p>
+                    <p>Ans: ちち から もらいました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কার কাছ থেকে পেয়েছেন? উত্তর: বাবার কাছ থেকে পেয়েছি।</p>
+                </div>
+            </div>
+            <!-- 245 -->
+            <div class="qa-item">
+                <div class="qa-number">245</div>
+                <div class="qa-japanese">
+                    <p><strong>あなた の じてんしゃ は どう ですか？</strong></p>
+                    <p>Ans: いい じてんしゃ です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> আপনার সাইকেল কেমন? উত্তর: ভালো সাইকেল।</p>
+                </div>
+            </div>
+            <!-- 246 -->
+            <div class="qa-item">
+                <div class="qa-number">246</div>
+                <div class="qa-japanese">
+                    <p><strong>どこの じてんしゃ ですか？</strong></p>
+                    <p>Ans: バングラデシュ の じてんしゃ です。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কোথাকার সাইকেল? উত্তর: বাংলাদেশের সাইকেল।</p>
+                </div>
+            </div>
+            <!-- 247 -->
+            <div class="qa-item">
+                <div class="qa-number">247</div>
+                <div class="qa-japanese">
+                    <p><strong>どこから かいましたか？</strong></p>
+                    <p>Ans: マーケット から かいました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কোথা থেকে কিনেছেন? উত্তর: বাজার থেকে কিনেছি।</p>
+                </div>
+            </div>
+            <!-- 248 -->
+            <div class="qa-item">
+                <div class="qa-number">248</div>
+                <div class="qa-japanese">
+                    <p><strong>いくら ですか？</strong></p>
+                    <p>Ans: ２００００タカです。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> কত টাকা? উত্তর: ২০০০০ টাকা।</p>
+                </div>
+            </div>
+            <!-- 249 -->
+            <div class="qa-item">
+                <div class="qa-number">249</div>
+                <div class="qa-japanese">
+                    <p><strong>さいご いつ じてんしゃ に のりましたか？</strong></p>
+                    <p>Ans: きのう のりました。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> শেষ কবে সাইকেল চালিয়েছেন? উত্তর: গতকাল চালিয়েছি।</p>
+                </div>
+            </div>
+            <!-- 250 -->
+            <div class="qa-item">
+                <div class="qa-number">250</div>
+                <div class="qa-japanese">
+                    <p><strong>ひらがな と かんじ と かたかな どれ が むずかしい と おもいますか？</strong></p>
+                    <p>Ans: かたかな と かんじ の かきかた が ちょっと むずかしい と おもいます。</p>
+                </div>
+                <div class="qa-bengali">
+                    <p><strong>বাংলা:</strong> হিরাগানা, কাঞ্জি, কাতাকানার মধ্যে কোনটি কঠিন মনে হয়? উত্তর: কাতাকানা ও কাঞ্জি লেখার পদ্ধতি একটু কঠিন মনে হয়।</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© ২০২৫ | Skype Interview Practice Sheet | জাপানি ও বাংলায় ২৫০টি প্রশ্নোত্তর</p>
+        </div>
+    </div>
+</body>
+</html>
