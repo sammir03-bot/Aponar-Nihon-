@@ -49,7 +49,7 @@
             background: rgba(255,255,255,0.98);
             backdrop-filter: blur(20px);
             z-index: 1000;
-            padding: 12px 0;
+            padding: 8px 0;
             box-shadow: 0 2px 15px rgba(0,0,0,0.06);
             border-bottom: 1px solid rgba(0,0,0,0.05);
         }
@@ -63,34 +63,19 @@
             align-items: center;
         }
 
+        /* NEW LOGO STYLES */
         .logo {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 10px;
             text-decoration: none;
         }
 
-        .logo-icon {
-            width: 40px;
-            height: 40px;
-            background: var(--gradient-1);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 20px;
-            font-weight: 700;
-            box-shadow: 0 4px 10px rgba(230,57,70,0.25);
-        }
-
-        .logo-text {
-            font-size: 1.3rem;
-            font-weight: 800;
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .logo-img {
+            height: 45px;
+            width: auto;
+            display: block;
+            border-radius: 8px;
         }
 
         .mobile-menu-btn {
@@ -942,6 +927,10 @@
 
         /* Tablet and Desktop */
         @media (min-width: 768px) {
+            .logo-img {
+                height: 50px;
+            }
+
             .hero-text h1 {
                 font-size: 2.5rem;
             }
@@ -1007,6 +996,10 @@
         @media (min-width: 1024px) {
             .nav-container {
                 padding: 0 30px;
+            }
+
+            .logo-img {
+                height: 55px;
             }
 
             .mobile-menu-btn {
@@ -1095,8 +1088,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="#" class="logo">
-                <div class="logo-icon">日</div>
-                <span class="logo-text">আপনার নিহোন</span>
+                <!-- NEW LOGO IMAGE -->
+                <img src="aponar-nihon(1).png" alt="আপনার নিহোন" class="logo-img">
             </a>
             <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Menu">
                 <i class="fas fa-bars" id="menuIcon"></i>
@@ -1340,7 +1333,7 @@
                             </li>
                             <li>
                                 <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/N4%20-%20VOCABULARY%20(LESSION%2025-50)-compressed.pdf" class="pdf-link" target="_blank">
-                                    <i class="fas fa-file-pdf"></i>
+                                    <i class="fas fa-file-pab fa-file-pdf"></i>
                                     <div>
                                         <span>N4 Vocabulary (Lesson 25-50)</span>
                                         <small>PDF</small>
