@@ -1,0 +1,2147 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>আপনার নিহোন - জাপানি ভাষা শিক্ষা</title>
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <style>
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+           -webkit-tap-highlight-color: transparent;
+       }
+
+       :root {
+           --primary: #e63946;
+           --primary-dark: #d62839;
+           --secondary: #1d3557;
+           --accent: #f4a261;
+           --light: #f1faee;
+           --dark: #1d3557;
+           --gradient-1: linear-gradient(135deg, #e63946 0%, #f4a261 100%);
+           --gradient-2: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+           --shadow: 0 4px 20px rgba(0,0,0,0.08);
+           --shadow-hover: 0 8px 30px rgba(0,0,0,0.12);
+           --success: #2a9d8f;
+           --error: #e63946;
+       }
+
+       html {
+           scroll-behavior: smooth;
+           font-size: 16px;
+       }
+
+       body {
+           font-family: 'Noto Sans Bengali', 'Noto Sans JP', sans-serif;
+           background: #f8f9fa;
+           color: #333;
+           line-height: 1.6;
+           overflow-x: hidden;
+           -webkit-font-smoothing: antialiased;
+       }
+
+       /* Mobile Navigation */
+       .navbar {
+           position: fixed;
+           top: 0;
+           width: 100%;
+           background: rgba(255,255,255,0.98);
+           backdrop-filter: blur(20px);
+           z-index: 1000;
+           padding: 8px 0;
+           box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+           border-bottom: 1px solid rgba(0,0,0,0.05);
+       }
+
+       .nav-container {
+           max-width: 1400px;
+           margin: 0 auto;
+           padding: 0 15px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+
+       .logo {
+           display: flex;
+           align-items: center;
+           gap: 10px;
+           text-decoration: none;
+           min-width: 0;
+       }
+
+       .logo-img {
+           height: 70px;
+           width: auto;
+           display: block;
+           border-radius: 8px;
+           flex-shrink: 0;
+       }
+
+       .logo-text{
+           font-size: 18px;
+           font-weight: 800;
+           color: var(--dark);
+           line-height: 1;
+           white-space: nowrap;
+       }
+
+       @media (max-width: 360px){
+           .logo-text{ font-size: 16px; }
+       }
+
+       @media (min-width: 768px){
+           .logo-text{ font-size: 20px; }
+       }
+
+       .mobile-menu-btn {
+           background: none;
+           border: none;
+           font-size: 22px;
+           color: var(--dark);
+           cursor: pointer;
+           width: 40px;
+           height: 40px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           border-radius: 8px;
+           transition: all 0.3s ease;
+       }
+
+       .mobile-menu-btn:hover {
+           background: #f0f0f0;
+       }
+
+       .nav-menu {
+           display: none;
+           position: fixed;
+           top: 65px;
+           left: 0;
+           right: 0;
+           background: white;
+           flex-direction: column;
+           padding: 15px;
+           box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+           z-index: 999;
+           border-radius: 0 0 20px 20px;
+           max-height: calc(100vh - 70px);
+           overflow-y: auto;
+       }
+
+       .nav-menu.active {
+           display: flex;
+       }
+
+       .nav-menu li {
+           list-style: none;
+           border-bottom: 1px solid #f0f0f0;
+       }
+
+       .nav-menu li:last-child {
+           border-bottom: none;
+       }
+
+       .nav-menu a {
+           text-decoration: none;
+           color: var(--dark);
+           font-weight: 600;
+           padding: 15px;
+           display: block;
+           border-radius: 10px;
+           transition: all 0.3s ease;
+           font-size: 1rem;
+       }
+
+       .nav-menu a:hover, .nav-menu a.active {
+           background: var(--gradient-1);
+           color: white;
+       }
+
+       /* Hero Section */
+       .hero {
+           margin-top: 65px;
+           padding: 40px 15px;
+           background: var(--gradient-2);
+           position: relative;
+           overflow: hidden;
+       }
+
+       .hero::before {
+           content: '';
+           position: absolute;
+           top: 0;
+           left: 0;
+           right: 0;
+           bottom: 0;
+           background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="0.5"/></svg>');
+           background-size: 60px 60px;
+           opacity: 0.5;
+       }
+
+       .hero-content {
+           position: relative;
+           z-index: 1;
+           text-align: center;
+       }
+
+       .hero-text h1 {
+           font-size: 1.8rem;
+           color: white;
+           font-weight: 800;
+           line-height: 1.3;
+           margin-bottom: 15px;
+       }
+
+       .hero-text h1 span {
+           color: var(--accent);
+           display: block;
+       }
+
+       .hero-text p {
+           font-size: 1rem;
+           color: rgba(255,255,255,0.9);
+           margin-bottom: 25px;
+           font-weight: 400;
+           line-height: 1.7;
+       }
+
+       .hero-badges {
+           display: flex;
+           flex-wrap: wrap;
+           gap: 8px;
+           margin-bottom: 25px;
+           justify-content: center;
+       }
+
+       .badge {
+           background: rgba(255,255,255,0.15);
+           backdrop-filter: blur(10px);
+           padding: 6px 14px;
+           border-radius: 20px;
+           color: white;
+           font-weight: 600;
+           font-size: 0.8rem;
+           border: 1px solid rgba(255,255,255,0.2);
+           display: flex;
+           align-items: center;
+           gap: 6px;
+       }
+
+       .hero-buttons {
+           display: flex;
+           flex-direction: column;
+           gap: 12px;
+       }
+
+       .btn {
+           padding: 14px 24px;
+           border-radius: 50px;
+           text-decoration: none;
+           font-weight: 700;
+           font-size: 0.95rem;
+           transition: all 0.3s ease;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           gap: 8px;
+           border: none;
+           cursor: pointer;
+           width: 100%;
+       }
+
+       .btn-primary {
+           background: var(--accent);
+           color: var(--dark);
+           box-shadow: 0 6px 20px rgba(244,162,97,0.35);
+       }
+
+       .btn-secondary {
+           background: transparent;
+           color: white;
+           border: 2px solid rgba(255,255,255,0.4);
+       }
+
+       /* Interview Section */
+       .interview-section {
+           padding: 50px 15px;
+           background: white;
+       }
+
+       .section-header {
+           text-align: center;
+           margin-bottom: 35px;
+       }
+
+       .section-header h2 {
+           font-size: 1.6rem;
+           color: var(--dark);
+           font-weight: 800;
+           margin-bottom: 10px;
+       }
+
+       .section-header p {
+           font-size: 0.95rem;
+           color: #666;
+           line-height: 1.6;
+       }
+
+       .interview-grid {
+           display: flex;
+           flex-direction: column;
+           gap: 20px;
+       }
+
+       .interview-card {
+           background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+           border-radius: 20px;
+           padding: 30px 25px;
+           color: white;
+           position: relative;
+           overflow: hidden;
+           transition: all 0.4s ease;
+           box-shadow: var(--shadow);
+       }
+
+       .interview-card:active {
+           transform: scale(0.98);
+       }
+
+       .interview-card.embassy {
+           background: var(--gradient-1);
+       }
+
+       .interview-card::before {
+           content: '';
+           position: absolute;
+           top: -30%;
+           right: -30%;
+           width: 80%;
+           height: 80%;
+           background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+       }
+
+       .interview-icon {
+           width: 60px;
+           height: 60px;
+           background: rgba(255,255,255,0.15);
+           border-radius: 15px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 28px;
+           margin-bottom: 20px;
+           backdrop-filter: blur(10px);
+       }
+
+       .interview-card h3 {
+           font-size: 1.4rem;
+           margin-bottom: 12px;
+           font-weight: 700;
+       }
+
+       .interview-card p {
+           opacity: 0.95;
+           margin-bottom: 20px;
+           line-height: 1.7;
+           font-size: 0.95rem;
+       }
+
+       .interview-features {
+           list-style: none;
+           margin-bottom: 25px;
+       }
+
+       .interview-features li {
+           display: flex;
+           align-items: center;
+           gap: 10px;
+           margin-bottom: 10px;
+           font-size: 0.9rem;
+       }
+
+       .interview-features i {
+           color: var(--accent);
+           font-size: 14px;
+       }
+
+       .btn-white {
+           background: white;
+           color: var(--dark);
+           padding: 14px 24px;
+           border-radius: 30px;
+           text-decoration: none;
+           font-weight: 700;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           gap: 8px;
+           transition: all 0.3s ease;
+           font-size: 0.95rem;
+           box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+       }
+
+       .btn-white:active {
+           transform: scale(0.95);
+       }
+
+       /* JLPT Sections */
+       .jlpt-section {
+           padding: 50px 15px;
+           background: #f8f9fa;
+       }
+
+       .jlpt-section:nth-child(even) {
+           background: white;
+       }
+
+       .jlpt-header {
+           background: white;
+           border-radius: 16px;
+           padding: 25px;
+           margin-bottom: 25px;
+           box-shadow: var(--shadow);
+           display: flex;
+           flex-direction: column;
+           gap: 20px;
+           text-align: center;
+       }
+
+       .jlpt-badge {
+           width: 90px;
+           height: 90px;
+           background: var(--gradient-2);
+           border-radius: 16px;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           color: white;
+           box-shadow: 0 8px 25px rgba(29,53,87,0.25);
+           margin: 0 auto;
+       }
+
+       .jlpt-badge.n5 {
+           background: var(--gradient-1);
+           box-shadow: 0 8px 25px rgba(230,57,70,0.25);
+       }
+
+       .jlpt-badge span {
+           font-size: 2rem;
+           font-weight: 800;
+           line-height: 1;
+       }
+
+       .jlpt-badge small {
+           font-size: 0.75rem;
+           opacity: 0.9;
+           margin-top: 4px;
+       }
+
+       .jlpt-info h2 {
+           font-size: 1.5rem;
+           color: var(--dark);
+           margin-bottom: 8px;
+       }
+
+       .jlpt-info p {
+           color: #666;
+           font-size: 0.95rem;
+           line-height: 1.6;
+       }
+
+       .materials-grid {
+           display: flex;
+           flex-direction: column;
+           gap: 15px;
+       }
+
+       .material-card {
+           background: white;
+           border-radius: 16px;
+           overflow: hidden;
+           box-shadow: var(--shadow);
+           transition: all 0.3s ease;
+       }
+
+       .material-card:active {
+           transform: scale(0.98);
+       }
+
+       .material-header {
+           padding: 18px 20px;
+           background: var(--gradient-2);
+           color: white;
+           display: flex;
+           align-items: center;
+           gap: 12px;
+       }
+
+       .material-card.vocab .material-header {
+           background: linear-gradient(135deg, #e63946 0%, #f4a261 100%);
+       }
+
+       .material-card.kanji .material-header {
+           background: linear-gradient(135deg, #2a9d8f 0%, #264653 100%);
+       }
+
+       .material-card.grammar .material-header {
+           background: linear-gradient(135deg, #e76f51 0%, #f4a261 100%);
+       }
+
+       .material-card.reading .material-header {
+           background: linear-gradient(135deg, #9b5de5 0%, #f15bb5 100%);
+       }
+
+       .material-header i {
+           font-size: 20px;
+       }
+
+       .material-header h3 {
+           font-size: 1.1rem;
+           font-weight: 700;
+       }
+
+       .material-body {
+           padding: 15px;
+       }
+
+       .pdf-list {
+           list-style: none;
+       }
+
+       .pdf-list li {
+           margin-bottom: 10px;
+       }
+
+       .pdf-link {
+           display: flex;
+           align-items: center;
+           gap: 12px;
+           padding: 14px;
+           background: #f8f9fa;
+           border-radius: 12px;
+           text-decoration: none;
+           color: var(--dark);
+           transition: all 0.3s ease;
+           border: 2px solid transparent;
+       }
+
+       .pdf-link:active {
+           background: white;
+           border-color: var(--primary);
+           transform: scale(0.98);
+       }
+
+       .pdf-link i {
+           color: var(--primary);
+           font-size: 22px;
+           flex-shrink: 0;
+       }
+
+       .pdf-link div {
+           flex: 1;
+           min-width: 0;
+       }
+
+       .pdf-link span {
+           font-weight: 600;
+           font-size: 0.9rem;
+           display: block;
+           white-space: nowrap;
+           overflow: hidden;
+           text-overflow: ellipsis;
+       }
+
+       .pdf-link small {
+           color: #999;
+           font-size: 0.75rem;
+       }
+
+       /* Features Grid */
+       .features {
+           padding: 50px 15px;
+           background: white;
+       }
+
+       .features-grid {
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 15px;
+       }
+
+       .feature-card {
+           background: white;
+           border-radius: 16px;
+           padding: 25px 20px;
+           box-shadow: var(--shadow);
+           border: 1px solid #f0f0f0;
+           display: flex;
+           align-items: flex-start;
+           gap: 15px;
+       }
+
+       .feature-icon {
+           width: 50px;
+           height: 50px;
+           background: var(--gradient-1);
+           border-radius: 12px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color: white;
+           font-size: 22px;
+           flex-shrink: 0;
+       }
+
+       .feature-content h3 {
+           font-size: 1.1rem;
+           color: var(--dark);
+           margin-bottom: 6px;
+           font-weight: 700;
+       }
+
+       .feature-content p {
+           color: #666;
+           font-size: 0.9rem;
+           line-height: 1.6;
+       }
+
+       /* About Section */
+       .about-section {
+           padding: 50px 15px;
+           background: #f8f9fa;
+       }
+
+       .about-content {
+           display: flex;
+           flex-direction: column;
+           gap: 30px;
+       }
+
+       .about-text h2 {
+           font-size: 1.6rem;
+           color: var(--dark);
+           margin-bottom: 15px;
+           font-weight: 800;
+       }
+
+       .about-text p {
+           color: #555;
+           margin-bottom: 15px;
+           font-size: 0.95rem;
+           line-height: 1.8;
+       }
+
+       .stats-grid {
+           display: grid;
+           grid-template-columns: repeat(3, 1fr);
+           gap: 10px;
+           margin-top: 25px;
+       }
+
+       .stat-item {
+           text-align: center;
+           padding: 15px 10px;
+           background: white;
+           border-radius: 12px;
+           box-shadow: var(--shadow);
+       }
+
+       .stat-number {
+           font-size: 1.4rem;
+           font-weight: 800;
+           color: var(--primary);
+           display: block;
+       }
+
+       .stat-label {
+           color: #666;
+           font-size: 0.75rem;
+           margin-top: 4px;
+       }
+
+       .about-visual {
+           background: var(--gradient-1);
+           height: 250px;
+           border-radius: 20px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color: white;
+           font-size: 6rem;
+           box-shadow: var(--shadow-hover);
+           position: relative;
+           overflow: hidden;
+       }
+
+       .about-visual::before {
+           content: '';
+           position: absolute;
+           top: -50%;
+           left: -50%;
+           width: 200%;
+           height: 200%;
+           background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+       }
+
+       /* Contact Section */
+       .contact-section {
+           padding: 50px 15px;
+           background: white;
+       }
+
+       .contact-grid {
+           display: flex;
+           flex-direction: column;
+           gap: 30px;
+       }
+
+       .contact-info h3 {
+           font-size: 1.4rem;
+           color: var(--dark);
+           margin-bottom: 12px;
+       }
+
+       .contact-info > p {
+           color: #666;
+           margin-bottom: 25px;
+           font-size: 0.95rem;
+       }
+
+       .contact-methods {
+           display: flex;
+           flex-direction: column;
+           gap: 12px;
+       }
+
+       .contact-item {
+           display: flex;
+           align-items: center;
+           gap: 15px;
+           padding: 16px;
+           background: #f8f9fa;
+           border-radius: 14px;
+           transition: all 0.3s ease;
+           text-decoration: none;
+           color: var(--dark);
+       }
+
+       .contact-item:active {
+           background: var(--primary);
+           color: white;
+           transform: scale(0.98);
+       }
+
+       .contact-icon {
+           width: 45px;
+           height: 45px;
+           background: var(--gradient-1);
+           border-radius: 12px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color: white;
+           font-size: 18px;
+           flex-shrink: 0;
+       }
+
+       .contact-item:active .contact-icon {
+           background: white;
+           color: var(--primary);
+       }
+
+       .contact-details h4 {
+           font-size: 1rem;
+           margin-bottom: 3px;
+           font-weight: 600;
+       }
+
+       .contact-details p {
+           font-size: 0.85rem;
+           opacity: 0.8;
+           margin: 0;
+       }
+
+       .contact-form {
+           background: #f8f9fa;
+           padding: 25px;
+           border-radius: 20px;
+       }
+
+       .form-group {
+           margin-bottom: 18px;
+       }
+
+       .form-group label {
+           display: block;
+           margin-bottom: 6px;
+           font-weight: 600;
+           color: var(--dark);
+           font-size: 0.9rem;
+       }
+
+       .form-group input,
+       .form-group textarea {
+           width: 100%;
+           padding: 14px;
+           border: 2px solid #e0e0e0;
+           border-radius: 12px;
+           font-family: inherit;
+           font-size: 1rem;
+           transition: all 0.3s ease;
+           background: white;
+       }
+
+       .form-group input:focus,
+       .form-group textarea:focus {
+           outline: none;
+           border-color: var(--primary);
+       }
+
+       .form-group textarea {
+           min-height: 100px;
+           resize: vertical;
+       }
+
+       .submit-btn {
+           width: 100%;
+           padding: 16px;
+           background: var(--gradient-1);
+           color: white;
+           border: none;
+           border-radius: 12px;
+           font-size: 1rem;
+           font-weight: 700;
+           cursor: pointer;
+           transition: all 0.3s ease;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           gap: 8px;
+       }
+
+       .submit-btn:hover:not(:disabled) {
+           transform: translateY(-2px);
+           box-shadow: 0 8px 25px rgba(230,57,70,0.3);
+       }
+
+       .submit-btn:active:not(:disabled) {
+           transform: scale(0.98);
+       }
+
+       .submit-btn:disabled {
+           opacity: 0.7;
+           cursor: not-allowed;
+       }
+
+       .submit-btn.success {
+           background: var(--success);
+       }
+
+       .submit-btn.error {
+           background: var(--error);
+       }
+
+       .form-status {
+           margin-top: 15px;
+           padding: 12px;
+           border-radius: 10px;
+           font-size: 0.9rem;
+           display: none;
+           align-items: center;
+           gap: 8px;
+       }
+
+       .form-status.show {
+           display: flex;
+       }
+
+       .form-status.success {
+           background: rgba(42,157,143,0.1);
+           color: var(--success);
+           border: 1px solid var(--success);
+       }
+
+       .form-status.error {
+           background: rgba(230,57,70,0.1);
+           color: var(--error);
+           border: 1px solid var(--error);
+       }
+
+       /* Footer */
+       .footer {
+           background: var(--dark);
+           color: white;
+           padding: 50px 15px 25px;
+       }
+
+       .footer-brand {
+           text-align: center;
+           margin-bottom: 35px;
+       }
+
+       .footer-brand h3 {
+           font-size: 1.5rem;
+           margin-bottom: 12px;
+           background: var(--gradient-1);
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           background-clip: text;
+       }
+
+       .footer-brand p {
+           color: rgba(255,255,255,0.7);
+           line-height: 1.7;
+           font-size: 0.9rem;
+           margin-bottom: 20px;
+       }
+
+       .social-links {
+           display: flex;
+           justify-content: center;
+           gap: 12px;
+       }
+
+       .social-links a {
+           width: 42px;
+           height: 42px;
+           background: rgba(255,255,255,0.1);
+           border-radius: 10px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           color: white;
+           text-decoration: none;
+           transition: all 0.3s ease;
+           font-size: 18px;
+       }
+
+       .social-links a:active {
+           background: var(--primary);
+           transform: scale(0.95);
+       }
+
+       .footer-links-container {
+           display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 25px;
+           margin-bottom: 35px;
+       }
+
+       .footer-column h4 {
+           font-size: 1rem;
+           margin-bottom: 15px;
+           color: var(--accent);
+           font-weight: 700;
+       }
+
+       .footer-links {
+           list-style: none;
+       }
+
+       .footer-links li {
+           margin-bottom: 10px;
+       }
+
+       .footer-links a {
+           color: rgba(255,255,255,0.7);
+           text-decoration: none;
+           transition: all 0.3s ease;
+           display: flex;
+           align-items: center;
+           gap: 6px;
+           font-size: 0.85rem;
+       }
+
+       .footer-links a:active {
+           color: white;
+           padding-left: 5px;
+       }
+
+       .footer-bottom {
+           border-top: 1px solid rgba(255,255,255,0.1);
+           padding-top: 25px;
+           text-align: center;
+       }
+
+       .footer-bottom-links {
+           display: flex;
+           flex-wrap: wrap;
+           justify-content: center;
+           gap: 15px;
+           margin-bottom: 15px;
+       }
+
+       .footer-bottom-links a {
+           color: rgba(255,255,255,0.7);
+           text-decoration: none;
+           font-size: 0.8rem;
+       }
+
+       .footer-bottom p {
+           color: rgba(255,255,255,0.5);
+           font-size: 0.85rem;
+           margin-bottom: 5px;
+       }
+
+       /* Guide Section - New Addition */
+       .guide-section {
+           padding: 50px 15px;
+           background: #f8f9fa;
+       }
+
+       .guide-grid {
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 20px;
+       }
+
+       .guide-card {
+           background: white;
+           border-radius: 16px;
+           padding: 25px;
+           box-shadow: var(--shadow);
+           border: 1px solid #f0f0f0;
+           transition: all 0.3s ease;
+           display: flex;
+           flex-direction: column;
+           height: 100%;
+       }
+
+       .guide-card:active {
+           transform: scale(0.98);
+       }
+
+       .guide-card h4 {
+           font-size: 1.2rem;
+           color: var(--dark);
+           margin-bottom: 12px;
+           font-weight: 700;
+           display: flex;
+           align-items: center;
+           gap: 10px;
+       }
+
+       .guide-card h4 i {
+           color: var(--primary);
+           font-size: 1.1rem;
+       }
+
+       .guide-card p {
+           color: #666;
+           font-size: 0.9rem;
+           line-height: 1.7;
+           margin-bottom: 15px;
+           flex-grow: 1;
+       }
+
+       .guide-card a {
+           color: var(--primary);
+           font-weight: 600;
+           font-size: 0.9rem;
+           display: inline-flex;
+           align-items: center;
+           gap: 6px;
+           text-decoration: none;
+           margin-top: auto;
+       }
+
+       .guide-card a:active {
+           gap: 10px;
+       }
+
+       .highlight {
+           color: var(--primary);
+           font-weight: 700;
+           background: rgba(230, 57, 70, 0.08);
+           padding: 2px 6px;
+           border-radius: 4px;
+       }
+
+       .goal-content {
+           background: white;
+           border-radius: 16px;
+           padding: 25px;
+           box-shadow: var(--shadow);
+           border-left: 4px solid var(--primary);
+       }
+
+       .goal-content p {
+           color: #555;
+           font-size: 0.95rem;
+           line-height: 1.8;
+           margin-bottom: 15px;
+       }
+
+       .goal-content p:last-child {
+           margin-bottom: 0;
+       }
+
+       /* Tablet and Desktop */
+       @media (min-width: 768px) {
+           .logo-img {
+               height: 75px;
+           }
+
+           .hero-text h1 {
+               font-size: 2.5rem;
+           }
+
+           .hero-text h1 span {
+               display: inline;
+           }
+
+           .hero-buttons {
+               flex-direction: row;
+               justify-content: center;
+           }
+
+           .btn {
+               width: auto;
+           }
+
+           .interview-grid {
+               flex-direction: row;
+           }
+
+           .interview-card {
+               flex: 1;
+           }
+
+           .materials-grid {
+               display: grid;
+               grid-template-columns: 1fr 1fr;
+               gap: 20px;
+           }
+
+           .features-grid {
+               grid-template-columns: 1fr 1fr;
+           }
+
+           .about-content {
+               flex-direction: row;
+               align-items: center;
+           }
+
+           .about-text {
+               flex: 1;
+           }
+
+           .about-visual {
+               flex: 1;
+               height: 350px;
+           }
+
+           .contact-grid {
+               flex-direction: row;
+           }
+
+           .contact-info, .contact-form {
+               flex: 1;
+           }
+
+           .footer-links-container {
+               grid-template-columns: repeat(3, 1fr);
+           }
+
+           /* Guide Section Desktop */
+           .guide-grid {
+               grid-template-columns: 1fr 1fr;
+           }
+       }
+
+       @media (min-width: 1024px) {
+           .nav-container {
+               padding: 0 30px;
+           }
+
+           .logo-img {
+               height: 80px;
+           }
+
+           .mobile-menu-btn {
+               display: none;
+           }
+
+           .nav-menu {
+               display: flex !important;
+               position: static;
+               flex-direction: row;
+               padding: 0;
+               box-shadow: none;
+               background: transparent;
+               border-radius: 0;
+               max-height: none;
+               overflow: visible;
+           }
+
+           .nav-menu li {
+               border-bottom: none;
+           }
+
+           .nav-menu a {
+               padding: 10px 18px;
+               border-radius: 25px;
+               font-size: 0.9rem;
+           }
+
+           .hero {
+               padding: 80px 30px;
+           }
+
+           .hero-text h1 {
+               font-size: 3rem;
+           }
+
+           .interview-grid {
+               gap: 30px;
+           }
+
+           .materials-grid {
+               grid-template-columns: repeat(4, 1fr);
+           }
+
+           .features-grid {
+               grid-template-columns: repeat(3, 1fr);
+           }
+
+           .footer-grid {
+               display: grid;
+               grid-template-columns: 2fr 1fr 1fr 1fr;
+               gap: 40px;
+               text-align: left;
+           }
+
+           .footer-brand {
+               text-align: left;
+           }
+
+           .social-links {
+               justify-content: flex-start;
+           }
+
+           .footer-links-container {
+               display: contents;
+           }
+
+           /* Guide Section Large Desktop */
+           .guide-grid {
+               grid-template-columns: repeat(3, 1fr);
+           }
+       }
+
+       /* Logo Center Styles */
+       .nav-container{
+           position: relative;
+       }
+
+       .logo-center{
+           position: absolute;
+           left: 50%;
+           transform: translateX(-50%);
+           text-align: center;
+       }
+
+       .logo-center-text{
+           font-size: 22px;
+           font-weight: 900;
+           letter-spacing: 1px;
+           background: linear-gradient(
+               90deg,
+               #e63946,
+               #f4a261,
+               #2a9d8f,
+               #457b9d,
+               #e63946
+           );
+           background-size: 300%;
+           -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+           background-clip: text;
+           animation: logoColorMove 6s linear infinite;
+           text-shadow: 0 4px 15px rgba(0,0,0,0.15);
+       }
+
+       @keyframes logoColorMove {
+           0%{
+               background-position: 0%;
+           }
+           100%{
+               background-position: 300%;
+           }
+       }
+
+       .logo-center-tag {
+           display: block;
+           font-size: 11px;
+           color: #666;
+           font-weight: 500;
+           letter-spacing: 0.5px;
+           margin-top: 2px;
+       }
+
+       @media (max-width: 480px) {
+           .logo-center-text {
+               font-size: 18px;
+           }
+           .logo-center-tag {
+               font-size: 10px;
+           }
+       }
+
+       /* Utility */
+       .text-center {
+           text-align: center;
+       }
+
+       .mt-20 {
+           margin-top: 20px;
+       }
+
+       .mb-20 {
+           margin-bottom: 20px;
+       }
+
+       .loading-spinner {
+           display: inline-block;
+           width: 18px;
+           height: 18px;
+           border: 2px solid rgba(255,255,255,0.3);
+           border-radius: 50%;
+           border-top-color: white;
+           animation: spin 0.8s linear infinite;
+       }
+
+       @keyframes spin {
+           to { transform: rotate(360deg); }
+       }
+   </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+ <div class="nav-container">
+   <!-- Left: Logo -->
+   <a href="#home" class="logo" aria-label="আপনার নিহোন হোম">
+     <img src="aponar-nihon(1).png" alt="আপনার নিহোন" class="logo-img">
+   </a>
+
+   <!-- Center: Title -->
+   <div class="logo-center" aria-label="সাইট টাইটেল">
+     <span class="logo-center-text">আপনার নিহোন</span>
+     <span class="logo-center-tag">Japanese Learning Hub</span>
+   </div>
+
+   <!-- Right: Menu Button -->
+   <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Menu">
+     <i class="fas fa-bars" id="menuIcon"></i>
+   </button>
+
+   <!-- Menu -->
+   <ul class="nav-menu" id="navMenu">
+     <li><a href="#home" class="active" onclick="closeMenu()">হোম</a></li>
+     <li><a href="#guide" onclick="closeMenu()">সম্পূর্ণ গাইড</a></li>
+     <li><a href="#interviews" onclick="closeMenu()">ইন্টারভিউ</a></li>
+     <li><a href="#n5" onclick="closeMenu()">JLPT N5</a></li>
+     <li><a href="#n4" onclick="closeMenu()">JLPT N4</a></li>
+     <li><a href="#about" onclick="closeMenu()">আমাদের সম্পর্কে</a></li>
+     <li><a href="#contact" onclick="closeMenu()">যোগাযোগ</a></li>
+   </ul>
+ </div>
+</nav>
+
+   <!-- Hero Section -->
+   <section class="hero" id="home">
+       <div class="hero-content">
+           <div class="hero-text">
+               <h1>জাপানি ভাষা শিক্ষার <span>সেরা প্ল্যাটফর্ম</span></h1>
+               <p>JLPT N5, N4 প্রস্তুতি, Skype Interview এবং Embassy Interview এর জন্য সম্পূর্ণ গাইডলাইন</p>
+               <div class="hero-badges">
+                   <span class="badge"><i class="fas fa-check"></i> N5 কোর্স</span>
+                   <span class="badge"><i class="fas fa-check"></i> N4 কোর্স</span>
+                   <span class="badge"><i class="fas fa-check"></i> Interview</span>
+               </div>
+               <div class="hero-buttons">
+                   <a href="#interviews" class="btn btn-primary">
+                       <i class="fas fa-video"></i> Interview দেখুন
+                   </a>
+                   <a href="#n5" class="btn btn-secondary">
+                       <i class="fas fa-book"></i> N5 শেখা
+                   </a>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Guide Section - বাংলাদেশ থেকে জাপানে পড়াশোনার সম্পূর্ণ গাইড ২০২৬ -->
+   <section class="guide-section" id="guide">
+       <div class="container">
+           <div class="section-header">
+               <h2><i class="fas fa-book-open" style="color: var(--primary);"></i> বাংলাদেশ থেকে জাপানে পড়াশোনার সম্পূর্ণ গাইড ২০২৬</h2>
+               <p>Study in Japan from Bangladesh - ভর্তি থেকে চাকরি পর্যন্ত বিস্তারিত রোডম্যাপ</p>
+           </div>
+           
+           <div class="goal-content" style="margin-bottom: 30px;">
+               <p style="font-size: 1rem; line-height: 1.8; color: #555;">
+                   <strong>জাপানে উচ্চশিক্ষা</strong> বাংলাদেশি শিক্ষার্থীদের জন্য একটি সমৃদ্ধিশালী ভবিষ্যৎ নিশ্চিত করে। বিশ্বমানের শিক্ষাব্যবস্থা, উন্নত প্রযুক্তি এবং দ্রুত ক্যারিয়ার গ্রোথের সুযোগ makes Japan an ideal destination for Bangladeshi students.
+               </p>
+           </div>
+
+           <div class="guide-grid">
+               <div class="guide-card">
+                   <h4><i class="fas fa-university"></i> ভর্তি প্রক্রিয়া</h4>
+                   <p>Study in Japan from Bangladesh এর প্রথম ধাপ হলো সঠিক প্রতিষ্ঠান নির্বাচন। জাপানে দুই ধরনের শিক্ষা প্রতিষ্ঠান রয়েছে: <strong>Japanese Language Schools</strong> এবং <strong>Universities/Colleges</strong>। ভাষা স্কুলে ১-২ বছর জাপানি ভাষা শিখে বিশ্ববিদ্যালয়ে ভর্তি হওয়া যায়।</p>
+                   <a href="study-in-japan.html">বিস্তারিত জানুন <i class="fas fa-arrow-right"></i></a>
+               </div>
+
+               <div class="guide-card">
+                   <h4><i class="fas fa-file-alt"></i> COE কী এবং কেন প্রয়োজন</h4>
+                   <p><strong>Certificate of Eligibility (COE)</strong> জাপান যাওয়ার মূল চাবিকাঠি। এটি জাপান ইমিগ্রেশন কর্তৃক ইস্যু করা হয় এবং আপনার ভিসা আবেদনের ভিত্তি। COE পেতে প্রয়োজন: ভর্তি কনফার্মেশন, আর্থিক প্রমাণ (ব্যাংক স্টেটমেন্ট), এবং জমা দেওয়া ফরম।</p>
+                   <a href="japan-student-visa.html">ভিসা প্রক্রিয়া জানুন <i class="fas fa-arrow-right"></i></a>
+               </div>
+
+               <div class="guide-card">
+                   <h4><i class="fas fa-yen-sign"></i> খরচের বিস্তারিত বিশ্লেষণ</h4>
+                   <p><strong>Cost of Studying in Japan</strong> শহরভেদে ভিন্ন হয়। টোকিওতে বাৎসরিক খরচ ১২-১৫ লাখ টাকা, অন্যান্য শহরে ৮-১০ লাখ। এর মধ্যে টিউশন ফি ৪-৬ লাখ এবং লিভিং এক্সপেন্স ৪-৯ লাখ। প্রথম বছরের খরচ দেখাতে হবে <strong>ব্যাংক স্টেটমেন্টে</strong> (সাধারণত ১৫-২০ লাখ টাকা)।</p>
+                   <a href="cost-of-studying-in-japan.html">খরচের হিসাব দেখুন <i class="fas fa-arrow-right"></i></a>
+               </div>
+
+               <div class="guide-card">
+                   <h4><i class="fas fa-briefcase"></i> পার্ট-টাইম জব (২৮ ঘণ্টা)</h4>
+                   <p>স্টুডেন্ট ভিসায় আপনার সপ্তাহে <strong>২৮ ঘণ্টা</strong> পার্ট-টাইম কাজের অনুমতি রয়েছে। <strong>Part-time job in Japan for students</strong> এর গড় বেতন ঘণ্টায় ১,০০০-১,২০০ ইয়েন। মাসে ১-১.৫ লাখ ইয়েন আয় সম্ভব। কনভিনিয়েন্স স্টোর, রেস্তোরাঁ, এবং ফ্যাক্টরিতে সহজেই কাজ পাওয়া যায়।</p>
+                   <a href="part-time-job-in-japan.html">কাজের বিস্তারিত <i class="fas fa-arrow-right"></i></a>
+               </div>
+
+               <div class="guide-card">
+                   <h4><i class="fas fa-language"></i> JLPT N5-N3 এর গুরুত্ব</h4>
+                   <p><strong>Japanese Language Course N5 N4 N3</strong> ভিন্ন লেভেলের জন্য প্রয়োজন। N5 দিয়ে ভাষা স্কুলে ভর্তি সম্ভব, কিন্তু N3 থাকলে ভিসা সাক্সেস রেট বেশি। JLPT সার্টিফিকেট ছাড়া জাপানে স্টুডেন্ট ভিসা পাওয়া প্রায় অসম্ভব। আমাদের ৪-৬ মাসের ইন্টেনসিভ কোর্সে N5/N4 সম্পূর্ণ করা যায়।</p>
+                   <a href="japanese-language-course.html">কোর্স ডিটেইলস <i class="fas fa-arrow-right"></i></a>
+               </div>
+
+               <div class="guide-card">
+                   <h4><i class="fas fa-user-tie"></i> পড়াশোনা শেষে কাজের সুযোগ</h4>
+                   <p>জাপানে <strong>Work in Japan after study</strong> এর সুযোগ অপরিসীম। স্নাতক শেষে আপনি ১ বছরের Job Hunting Visa পাবেন। IT, Engineering, Nursing, এবং Business সেক্টরে প্রচুর চাকরির সুযোগ। জাপানি কোম্পানিগুলো বিদেশি কর্মীদের জন্য মাসিক ৩-৫ লাখ ইয়েন বেতন দেয়।</p>
+                   <a href="part-time-job-in-japan.html">ক্যারিয়ার পরামর্শ নিন <i class="fas fa-arrow-right"></i></a>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Interview Section -->
+   <section class="interview-section" id="interviews">
+       <div class="container">
+           <div class="section-header">
+               <h2><i class="fas fa-user-tie" style="color: var(--primary);"></i> ইন্টারভিউ প্রস্তুতি</h2>
+               <p>Skype Interview এবং Embassy Interview এর জন্য সম্পূর্ণ গাইড</p>
+           </div>
+           <div class="interview-grid">
+               <!-- Skype Interview -->
+               <div class="interview-card">
+                   <div class="interview-icon">
+                       <i class="fas fa-video"></i>
+                   </div>
+                   <h3>Skype Interview</h3>
+                   <p>জাপানি স্কুল/বিশ্ববিদ্যালয়ের Skype Interview এর জন্য ২৫০টি প্রশ্নোত্তর। ফুরিগানা ও বাংলা অনুবাদসহ।</p>
+                   <ul class="interview-features">
+                       <li><i class="fas fa-check-circle"></i> ২৫০টি প্রশ্নোত্তর</li>
+                       <li><i class="fas fa-check-circle"></i> ফুরিগানা সহ জাপানি</li>
+                       <li><i class="fas fa-check-circle"></i> বাংলা অনুবাদ</li>
+                       <li><i class="fas fa-check-circle"></i> প্রিন্ট ফ্রেন্ডলি</li>
+                   </ul>
+                   <a href="skype sheet.html" class="btn-white" target="_blank">
+                       <i class="fas fa-external-link-alt"></i> দেখুন
+                   </a>
+               </div>
+
+               <!-- Embassy Interview -->
+               <div class="interview-card embassy">
+                   <div class="interview-icon">
+                       <i class="fas fa-landmark"></i>
+                   </div>
+                   <h3>Embassy Interview</h3>
+                   <p>জাপান এম্বাসি ভিসা Interview এর জন্য ১৫০টি গুরুত্বপূর্ণ প্রশ্ন। বিভিন্ন ক্যাটেগরিতে সাজানো।</p>
+                   <ul class="interview-features">
+                       <li><i class="fas fa-check-circle"></i> ১৫০টি প্রশ্নোত্তর</li>
+                       <li><i class="fas fa-check-circle"></i> ১০টি ক্যাটেগরি</li>
+                       <li><i class="fas fa-check-circle"></i> ফুরিগানা সহ</li>
+                       <li><i class="fas fa-check-circle"></i> প্রিন্ট রেডি</li>
+                   </ul>
+                   <a href="embassy interview.html" class="btn-white" target="_blank">
+                       <i class="fas fa-external-link-alt"></i> দেখুন
+                   </a>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- JLPT N5 Section -->
+   <section class="jlpt-section" id="n5">
+       <div class="container">
+           <div class="jlpt-header">
+               <div class="jlpt-badge n5">
+                   <span>N5</span>
+                   <small>BEGINNER</small>
+               </div>
+               <div class="jlpt-info">
+                   <h2>JLPT N5 - বিগিনার লেভেল</h2>
+                   <p>১০২টি কানজি, বেসিক ভোকাবুলারি ও গ্রামার শিখুন</p>
+               </div>
+           </div>
+
+           <div class="materials-grid">
+               <div class="material-card vocab">
+                   <div class="material-header">
+                       <i class="fas fa-spell-check"></i>
+                       <h3>ভোকাবুলারি</h3>
+                   </div>
+                   <div class="material-body">
+                       <ul class="pdf-list">
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/678461380-N5-bangla-vocabulary-1-25-1-compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>N5 Bangla Vocabulary 1-25</span>
+                                       <small>PDF</small>
+                                   </div>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/539338880-N5-Bangla-Vocabulary-compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>N5 Bangla Vocabulary</span>
+                                       <small>PDF Complete</small>
+                                   </div>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/N5%20VOCABULARY%20(বাংলা)-compressed-compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>N5 Vocabulary (বাংলা)</span>
+                                       <small>PDF</small>
+                                   </div>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="material-card kanji">
+                   <div class="material-header">
+                       <i class="fas fa-font"></i>
+                       <h3>কানজি 漢字</h3>
+                   </div>
+                   <div class="material-body">
+                       <ul class="pdf-list">
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/N5%20KANJI%20102-compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>N5 Kanji 102</span>
+                                       <small>PDF • 102 Characters</small>
+                                   </div>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="material-card grammar">
+                   <div class="material-header">
+                       <i class="fas fa-book-open"></i>
+                       <h3>গ্রামার 文法</h3>
+                   </div>
+                   <div class="material-body">
+                       <ul class="pdf-list">
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/798546720-n5-Grammar-Bangla--compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>N5 Grammar Bangla</span>
+                                       <small>PDF</small>
+                                   </div>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/772129403-N5-Bangla-Grammar-compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>N5 Bangla Grammar</span>
+                                       <small>PDF</small>
+                                   </div>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="material-card reading">
+                   <div class="material-header">
+                       <i class="fas fa-book-reader"></i>
+                       <h3>রিডিং 読解</h3>
+                   </div>
+                   <div class="material-body">
+                       <ul class="pdf-list">
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/N5%20READING%20%26%20GRAMMAR%20(%20MINNA%20NO%20NIHONGO)%20(1)-compressed-compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>N5 Reading & Grammar</span>
+                                       <small>Minna no Nihongo</small>
+                                   </div>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- JLPT N4 Section -->
+   <section class="jlpt-section" id="n4" style="background: white;">
+       <div class="container">
+           <div class="jlpt-header">
+               <div class="jlpt-badge">
+                   <span>N4</span>
+                   <small>ELEMENTARY</small>
+               </div>
+               <div class="jlpt-info">
+                   <h2>JLPT N4 - এলিমেন্টারি লেভেল</h2>
+                   <p>৩২০টি কানজি, বাড়তি ভোকাবুলারি ও জটিল গ্রামার</p>
+               </div>
+           </div>
+
+           <div class="materials-grid">
+               <div class="material-card vocab">
+                   <div class="material-header">
+                       <i class="fas fa-spell-check"></i>
+                       <h3>ভোকাবুলারি</h3>
+                   </div>
+                   <div class="material-body">
+                       <ul class="pdf-list">
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/477830617-Jlpt-N4-VocabList-Bangla-compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>JLPT N4 Vocab List Bangla</span>
+                                       <small>PDF</small>
+                                   </div>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/N4%20-%20VOCABULARY%20(LESSION%2025-50)-compressed-compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>N4 Vocabulary (Lesson 25-50)</span>
+                                       <small>PDF</small>
+                                   </div>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="material-card kanji">
+                   <div class="material-header">
+                       <i class="fas fa-font"></i>
+                       <h3>কানজি 漢字</h3>
+                   </div>
+                   <div class="material-body">
+                       <ul class="pdf-list">
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/N4%20-%20KANJI%20(320%20)%20(2)-compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>N4 Kanji (320)</span>
+                                       <small>PDF • 320 Characters</small>
+                                   </div>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="material-card grammar">
+                   <div class="material-header">
+                       <i class="fas fa-book-open"></i>
+                       <h3>গ্রামার 文法</h3>
+                   </div>
+                   <div class="material-body">
+                       <ul class="pdf-list">
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/685953808-N-4-Grammar-Bangla-2021nn%20(1)-compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>N4 Grammar Bangla 2021</span>
+                                       <small>PDF</small>
+                                   </div>
+                               </a>
+                           </li>
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/N4%20-%20GRAMMAR%20RULES%20(25-50)-compressed-compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>N4 Grammar Rules (25-50)</span>
+                                       <small>PDF</small>
+                                   </div>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+               <div class="material-card reading">
+                   <div class="material-header">
+                       <i class="fas fa-book-reader"></i>
+                       <h3>রিডিং 読解</h3>
+                   </div>
+                   <div class="material-body">
+                       <ul class="pdf-list">
+                           <li>
+                               <a href="https://pub-4d41276aa336454a99633fa33d3570c5.r2.dev/N4%20-%20READING%20(LESSION%2025-50)-compressed.pdf" class="pdf-link" target="_blank">
+                                   <i class="fas fa-file-pdf"></i>
+                                   <div>
+                                       <span>N4 Reading (Lesson 25-50)</span>
+                                       <small>PDF</small>
+                                   </div>
+                               </a>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Features Section -->
+   <section class="features">
+       <div class="container">
+           <div class="section-header">
+               <h2>আমাদের ফিচারসমূহ</h2>
+               <p>জাপানি ভাষা শিক্ষার জন্য সবকিছু একই প্ল্যাটফর্মে</p>
+           </div>
+           <div class="features-grid">
+               <div class="feature-card">
+                   <div class="feature-icon">
+                       <i class="fas fa-language"></i>
+                   </div>
+                   <div class="feature-content">
+                       <h3>সম্পূর্ণ N5 কোর্স</h3>
+                       <p>ভোকাবুলারি, কানজি, গ্রামার ও রিডিং</p>
+                   </div>
+               </div>
+               <div class="feature-card">
+                   <div class="feature-icon">
+                       <i class="fas fa-book"></i>
+                   </div>
+                   <div class="feature-content">
+                       <h3>সম্পূর্ণ N4 কোর্স</h3>
+                       <p>উন্নত লেভেলের সব ম্যাটেরিয়ালস</p>
+                   </div>
+               </div>
+               <div class="feature-card">
+                   <div class="feature-icon">
+                       <i class="fas fa-video"></i>
+                   </div>
+                   <div class="feature-content">
+                       <h3>Skype Interview</h3>
+                       <p>২৫০টি প্রশ্নোত্তর ফুরিগানা সহ</p>
+                   </div>
+               </div>
+               <div class="feature-card">
+                   <div class="feature-icon">
+                       <i class="fas fa-landmark"></i>
+                   </div>
+                   <div class="feature-content">
+                       <h3>Embassy Interview</h3>
+                       <p>১৫০টি গুরুত্বপূর্ণ প্রশ্ন ও উত্তর</p>
+                   </div>
+               </div>
+               <div class="feature-card">
+                   <div class="feature-icon">
+                       <i class="fas fa-file-pdf"></i>
+                   </div>
+                   <div class="feature-content">
+                       <h3>PDF ম্যাটেরিয়ালস</h3>
+                       <p>অফলাইনে পড়ার সুবিধা</p>
+                   </div>
+               </div>
+               <div class="feature-card">
+                   <div class="feature-icon">
+                       <i class="fas fa-mobile-alt"></i>
+                   </div>
+                   <div class="feature-content">
+                       <h3>মোবাইল ফ্রেন্ডলি</h3>
+                       <p>যেকোনো ডিভাইসে সহজে ব্যবহার</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- About Section -->
+   <section class="about-section" id="about">
+       <div class="container">
+           <div class="about-content">
+               <div class="about-text">
+                   <h2>আমাদের সম্পর্কে</h2>
+                   <p><strong>আপনার নিহোন</strong> বাংলাদেশের শিক্ষার্থীদের জন্য তৈরি একটি সম্পূর্ণ জাপানি ভাষা শিক্ষা প্ল্যাটফর্ম।</p>
+                   <p>আমাদের প্ল্যাটফর্মে আপনি পাবেন JLPT N5 এবং N4 এর সম্পূর্ণ স্টাডি ম্যাটেরিয়াল, Skype Interview এবং Embassy Interview এর জন্য বিস্তারিত প্রস্তুতি গাইড।</p>
+                   
+                   <div class="stats-grid">
+                       <div class="stat-item">
+                           <span class="stat-number">৫০০০+</span>
+                           <span class="stat-label">শিক্ষার্থী</span>
+                       </div>
+                       <div class="stat-item">
+                           <span class="stat-number">১০০+</span>
+                           <span class="stat-label">PDF</span>
+                       </div>
+                       <div class="stat-item">
+                           <span class="stat-number">৯৮%</span>
+                           <span class="stat-label">সাকসেস</span>
+                       </div>
+                   </div>
+               </div>
+               <div class="about-visual">
+                   日
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Contact Section with Telegram Bot -->
+   <section class="contact-section" id="contact">
+       <div class="container">
+           <div class="section-header">
+               <h2>যোগাযোগ করুন</h2>
+               <p>যেকোনো প্রয়োজনে আমাদের সাথে যোগাযোগ করুন</p>
+           </div>
+           <div class="contact-grid">
+               <div class="contact-info">
+                   <h3>সোশ্যাল মিডিয়া</h3>
+                   <p>আমাদের সাথে যুক্ত হন</p>
+                   
+                   <div class="contact-methods">
+                       <a href="https://facebook.com/shsammir91" target="_blank" class="contact-item">
+                           <div class="contact-icon">
+                               <i class="fab fa-facebook-f"></i>
+                           </div>
+                           <div class="contact-details">
+                               <h4>Facebook</h4>
+                               <p>facebook.com/shsammir91</p>
+                           </div>
+                       </a>
+                       
+                       <a href="https://wa.me/8801576580302" target="_blank" class="contact-item">
+                           <div class="contact-icon">
+                               <i class="fab fa-whatsapp"></i>
+                           </div>
+                           <div class="contact-details">
+                               <h4>WhatsApp</h4>
+                               <p>01576580302</p>
+                           </div>
+                       </a>
+                       
+                       <a href="mailto:sammir160432@gmail.com" class="contact-item">
+                           <div class="contact-icon">
+                               <i class="fas fa-envelope"></i>
+                           </div>
+                           <div class="contact-details">
+                               <h4>Email</h4>
+                               <p>sammir160432@gmail.com</p>
+                           </div>
+                       </a>
+                       
+                       <a href="https://t.me/sammir03" target="_blank" class="contact-item">
+                           <div class="contact-icon">
+                               <i class="fab fa-telegram-plane"></i>
+                           </div>
+                           <div class="contact-details">
+                               <h4>Telegram</h4>
+                               <p>t.me/sammir03</p>
+                           </div>
+                       </a>
+                   </div>
+               </div>
+
+               <div class="contact-form">
+                   <form id="contactForm" onsubmit="handleTelegramSubmit(event)">
+                       <div class="form-group">
+                           <label>আপনার নাম *</label>
+                           <input type="text" id="formName" placeholder="নাম লিখুন" required>
+                       </div>
+                       <div class="form-group">
+                           <label>ইমেইল *</label>
+                           <input type="email" id="formEmail" placeholder="ইমেইল লিখুন" required>
+                       </div>
+                       <div class="form-group">
+                           <label>বিষয়</label>
+                           <input type="text" id="formSubject" placeholder="বিষয় লিখুন">
+                       </div>
+                       <div class="form-group">
+                           <label>মেসেজ *</label>
+                           <textarea id="formMessage" placeholder="মেসেজ লিখুন..." required></textarea>
+                       </div>
+                       <button type="submit" class="submit-btn" id="submitBtn">
+                           <i class="fas fa-paper-plane"></i> পাঠান
+                       </button>
+                       <div id="formStatus" class="form-status"></div>
+                   </form>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+       <div class="container">
+           <div class="footer-brand">
+               <h3>আপনার নিহোন</h3>
+               <p>বাংলাদেশের সেরা জাপানি ভাষা শিক্ষা প্ল্যাটফর্ম</p>
+               <div class="social-links">
+                   <a href="https://facebook.com/shsammir91" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                   <a href="https://wa.me/8801576580302" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                   <a href="https://t.me/sammir03" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+                   <a href="mailto:sammir160432@gmail.com"><i class="fas fa-envelope"></i></a>
+               </div>
+           </div>
+           
+           <div class="footer-links-container">
+               <div class="footer-column">
+                   <h4>দ্রুত লিংক</h4>
+                   <ul class="footer-links">
+                       <li><a href="#home">হোম</a></li>
+                       <li><a href="#guide">সম্পূর্ণ গাইড</a></li>
+                       <li><a href="#interviews">Interview</a></li>
+                       <li><a href="#n5">JLPT N5</a></li>
+                       <li><a href="#n4">JLPT N4</a></li>
+                   </ul>
+               </div>
+               
+               <div class="footer-column">
+                   <h4>ইন্টারভিউ</h4>
+                   <ul class="footer-links">
+                       <li><a href="skype sheet.html" target="_blank">Skype Interview</a></li>
+                       <li><a href="embassy interview.html" target="_blank">Embassy Interview</a></li>
+                       <li><a href="#about">About</a></li>
+                       <li><a href="#contact">Contact</a></li>
+                   </ul>
+               </div>
+               
+               <div class="footer-column">
+                   <h4>লিগ্যাল</h4>
+                   <ul class="footer-links">
+                       <li><a href="#" onclick="showAlert('Privacy Policy')">Privacy Policy</a></li>
+                       <li><a href="#" onclick="showAlert('Terms')">Terms</a></li>
+                       <li><a href="#" onclick="showAlert('Disclaimer')">Disclaimer</a></li>
+                   </ul>
+               </div>
+           </div>
+           
+           <div class="footer-bottom">
+               <div class="footer-bottom-links">
+                   <a href="#" onclick="showAlert('Privacy Policy')">Privacy Policy</a>
+                   <a href="#" onclick="showAlert('Terms')">Terms & Conditions</a>
+                   <a href="#" onclick="showAlert('Disclaimer')">Disclaimer</a>
+               </div>
+               <p>&copy; ২০২৫ আপনার নিহোন। সর্বস্বত্ব সংরক্ষিত।</p>
+               <p style="margin-top: 8px; font-size: 0.8rem; opacity: 0.7;">Created by SAMMIR</p>
+           </div>
+       </div>
+   </footer>
+
+   <script>
+       // Telegram Bot Configuration
+       const BOT_TOKEN = '8647663721:AAHoK-ST7h45KAtbJb8VCIg8S-UD9SgNM2M';
+       const CHAT_ID = '5652231503';
+       const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+       // Mobile Menu
+       function toggleMenu() {
+           const navMenu = document.getElementById('navMenu');
+           const menuIcon = document.getElementById('menuIcon');
+           
+           navMenu.classList.toggle('active');
+           
+           if (navMenu.classList.contains('active')) {
+               menuIcon.classList.remove('fa-bars');
+               menuIcon.classList.add('fa-times');
+               document.body.style.overflow = 'hidden';
+           } else {
+               menuIcon.classList.remove('fa-times');
+               menuIcon.classList.add('fa-bars');
+               document.body.style.overflow = 'auto';
+           }
+       }
+
+       function closeMenu() {
+           const navMenu = document.getElementById('navMenu');
+           const menuIcon = document.getElementById('menuIcon');
+           
+           navMenu.classList.remove('active');
+           menuIcon.classList.remove('fa-times');
+           menuIcon.classList.add('fa-bars');
+           document.body.style.overflow = 'auto';
+       }
+
+       // Smooth Scroll
+       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+           anchor.addEventListener('click', function (e) {
+               e.preventDefault();
+               const target = document.querySelector(this.getAttribute('href'));
+               if (target) {
+                   const offset = 70;
+                   const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+                   window.scrollTo({
+                       top: targetPosition,
+                       behavior: 'smooth'
+                   });
+               }
+           });
+       });
+
+       // Active Navigation
+       window.addEventListener('scroll', () => {
+           let current = '';
+           const sections = document.querySelectorAll('section');
+           
+           sections.forEach(section => {
+               const sectionTop = section.offsetTop;
+               const sectionHeight = section.clientHeight;
+               if (scrollY >= (sectionTop - 100)) {
+                   current = section.getAttribute('id');
+               }
+           });
+
+           document.querySelectorAll('.nav-menu a').forEach(link => {
+               link.classList.remove('active');
+               if (link.getAttribute('href') === '#' + current) {
+                   link.classList.add('active');
+               }
+           });
+       });
+
+       // Telegram Form Submit Handler
+       async function handleTelegramSubmit(e) {
+           e.preventDefault();
+           
+           const submitBtn = document.getElementById('submitBtn');
+           const formStatus = document.getElementById('formStatus');
+           const originalText = submitBtn.innerHTML;
+           
+           // Get form values
+           const name = document.getElementById('formName').value.trim();
+           const email = document.getElementById('formEmail').value.trim();
+           const subject = document.getElementById('formSubject').value.trim() || 'কোনো বিষয় নেই';
+           const message = document.getElementById('formMessage').value.trim();
+           
+           // Validation
+           if (!name || !email || !message) {
+               showStatus('error', 'অনুগ্রহ করে সব প্রয়োজনীয় তথ্য পূরণ করুন');
+               return;
+           }
+           
+           // Show loading state
+           submitBtn.disabled = true;
+           submitBtn.innerHTML = '<span class="loading-spinner"></span> পাঠানো হচ্ছে...';
+           formStatus.classList.remove('show');
+           
+           // Prepare Telegram message
+           const telegramMessage = `
+📨 <b>নতুন যোগাযোগ মেসেজ</b>
+
+👤 <b>নাম:</b> ${escapeHtml(name)}
+📧 <b>ইমেইল:</b> ${escapeHtml(email)}
+📝 <b>বিষয়:</b> ${escapeHtml(subject)}
+
+💬 <b>মেসেজ:</b>
+${escapeHtml(message)}
+
+⏰ <i>সময়: ${new Date().toLocaleString('bn-BD')}</i>
+🌐 <i>আপনার নিহোন ওয়েবসাইট</i>
+           `.trim();
+           
+           try {
+               const response = await fetch(TELEGRAM_API_URL, {
+                   method: 'POST',
+                   headers: {
+                       'Content-Type': 'application/json',
+                   },
+                   body: JSON.stringify({
+                       chat_id: CHAT_ID,
+                       text: telegramMessage,
+                       parse_mode: 'HTML'
+                   })
+               });
+               
+               const data = await response.json();
+               
+               if (data.ok) {
+                   // Success
+                   submitBtn.innerHTML = '<i class="fas fa-check"></i> পাঠানো হয়েছে!';
+                   submitBtn.classList.add('success');
+                   showStatus('success', 'ধন্যবাদ! আপনার মেসেজ পাঠানো হয়েছে। শীঘ্রই আমরা আপনার সাথে যোগাযোগ করব।');
+                   
+                   // Reset form after 2 seconds
+                   setTimeout(() => {
+                       document.getElementById('contactForm').reset();
+                       submitBtn.innerHTML = originalText;
+                       submitBtn.classList.remove('success');
+                       submitBtn.disabled = false;
+                       formStatus.classList.remove('show');
+                   }, 3000);
+               } else {
+                   throw new Error('Telegram API error');
+               }
+           } catch (error) {
+               console.error('Error:', error);
+               submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> ব্যর্থ হয়েছে';
+               submitBtn.classList.add('error');
+               showStatus('error', 'দুঃখিত! মেসেজ পাঠাতে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন অথবা সরাসরি WhatsApp/Email-এ যোগাযোগ করুন।');
+               
+               setTimeout(() => {
+                   submitBtn.innerHTML = originalText;
+                   submitBtn.classList.remove('error');
+                   submitBtn.disabled = false;
+               }, 3000);
+           }
+       }
+
+       // Helper function to show status message
+       function showStatus(type, message) {
+           const formStatus = document.getElementById('formStatus');
+           formStatus.className = `form-status ${type} show`;
+           formStatus.innerHTML = `<i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i> ${message}`;
+       }
+
+       // Helper function to escape HTML
+       function escapeHtml(text) {
+           const div = document.createElement('div');
+           div.textContent = text;
+           return div.innerHTML;
+       }
+
+       function showAlert(page) {
+           alert(page + ' পেজটি শীঘ্রই আপডেট করা হবে।');
+       }
+
+       // Touch feedback for mobile
+       document.querySelectorAll('.btn, .pdf-link, .contact-item, .interview-card, .guide-card').forEach(el => {
+           el.addEventListener('touchstart', function() {
+               this.style.transform = 'scale(0.98)';
+           });
+           el.addEventListener('touchend', function() {
+               this.style.transform = '';
+           });
+       });
+   </script>
+</body>
+</html>
