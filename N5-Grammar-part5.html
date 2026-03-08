@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLPT N5 文法クイズ - パート5 (問題81-100) ふりがな付き</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', 'Noto Sans Bengali', 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+            background: linear-gradient(145deg, #e0f2fe 0%, #bae6fd 100%);
+            min-height: 100vh;
+            padding: 30px 20px;
+            color: #0c4a6e;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 40px 40px 20px 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-bottom: 6px solid #0284c7;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.4em;
+            font-weight: 700;
+            color: #0369a1;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        h1 span {
+            background: #0284c7;
+            color: white;
+            font-size: 0.45em;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .subhead {
+            font-size: 1.2em;
+            color: #0369a1;
+            background: #f0f9ff;
+            padding: 12px 20px;
+            border-radius: 60px;
+            display: inline-block;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px dashed #7dd3fc;
+            font-weight: 600;
+            color: #0369a1;
+        }
+
+        .badge {
+            background: #0369a1;
+            color: white;
+            padding: 8px 25px;
+            border-radius: 40px;
+            font-size: 1em;
+        }
+
+        .quiz-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .question-card {
+            background: white;
+            border-radius: 30px;
+            padding: 25px 30px;
+            box-shadow: 0 10px 25px rgba(2, 132, 199, 0.1);
+            transition: transform 0.2s;
+            border: 2px solid #bae6fd;
+        }
+
+        .question-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 35px rgba(2, 132, 199, 0.2);
+            border-color: #38bdf8;
+        }
+
+        .q-num {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            font-weight: 600;
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-size: 1rem;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .sentence {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            line-height: 2.2;
+            background: #f0f9ff;
+            padding: 20px 25px;
+            border-radius: 25px;
+            border: 2px solid #bae6fd;
+            font-weight: 600;
+            color: #075985;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .blank {
+            display: inline-block;
+            background: #fee2e2;
+            color: #b91c1c;
+            font-weight: 700;
+            padding: 4px 15px;
+            border-radius: 40px;
+            border: 2px dashed #ef4444;
+            margin: 0 5px;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin: 20px 0 15px;
+        }
+
+        .option-btn {
+            background: white;
+            border: 3px solid #bae6fd;
+            padding: 18px 12px;
+            border-radius: 60px;
+            font-size: 1.3em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s;
+            text-align: center;
+            color: #075985;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.02);
+        }
+
+        .option-btn:hover:not(.disabled-opt) {
+            background: #e0f2fe;
+            border-color: #0284c7;
+            transform: scale(1.01);
+            box-shadow: 0 10px 15px rgba(2,132,199,0.15);
+        }
+
+        .correct-opt {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+            box-shadow: 0 5px 15px rgba(34,197,94,0.25);
+        }
+
+        .wrong-opt {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #7f1d1d !important;
+            opacity: 0.9;
+        }
+
+        .disabled-opt {
+            opacity: 0.6;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .feedback {
+            margin-top: 20px;
+            padding: 18px 22px;
+            border-radius: 25px;
+            background: #f8fafc;
+            border-left: 8px solid #64748b;
+            font-size: 1.1em;
+            line-height: 1.7;
+            border: 1px solid #cbd5e1;
+        }
+
+        .feedback.correct-fb {
+            background: #f0fdf4;
+            border-left-color: #22c55e;
+        }
+
+        .feedback.wrong-fb {
+            background: #fef2f2;
+            border-left-color: #ef4444;
+        }
+
+        .fb-title {
+            font-weight: 700;
+            margin-right: 10px;
+            font-size: 1.1em;
+        }
+
+        .rule {
+            background: #fffbeb;
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin-top: 10px;
+            border-left: 5px solid #f59e0b;
+            font-size: 0.95em;
+        }
+
+        .translation {
+            background: #e0f2fe;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin-top: 8px;
+            font-style: italic;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 40px 0 30px;
+            justify-content: center;
+        }
+
+        .primary-btn, .secondary-btn {
+            border: none;
+            padding: 16px 40px;
+            border-radius: 60px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            border: 2px solid transparent;
+        }
+
+        .primary-btn {
+            background: #0284c7;
+            color: white;
+        }
+
+        .primary-btn:hover {
+            background: #0369a1;
+            transform: translateY(-4px);
+            box-shadow: 0 20px 30px rgba(2,132,199,0.35);
+        }
+
+        .secondary-btn {
+            background: #1e293b;
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            background: #0f172a;
+            transform: translateY(-4px);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #0369a1;
+            font-size: 1rem;
+            background: white;
+            padding: 20px;
+            border-radius: 70px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            border: 2px solid #bae6fd;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #0284c7, transparent);
+            margin: 30px 0;
+        }
+
+        @media (max-width: 700px) {
+            h1 { font-size: 2em; }
+            .sentence { font-size: 1.5em; }
+            .options { grid-template-columns: 1fr; }
+            .option-btn { padding: 15px; }
+        }
+
+        /* furigana styling */
+        ruby {
+            ruby-align: center;
+        }
+        rt {
+            font-size: 0.6em;
+            color: #0284c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                📘 JLPT N5 文法クイズ
+                <span>Part 5 (81-100)</span>
+            </h1>
+            <div class="subhead">
+                正しい助詞・文法を選んでください。（ふりがな付き）
+            </div>
+            <div class="stats">
+                <span>🈳 全20問</span>
+                <span class="badge">レベル N5 · 文法</span>
+            </div>
+        </div>
+
+        <div class="quiz-grid" id="quizGrid">
+            <!-- JavaScriptで生成 -->
+        </div>
+
+        <div class="action-buttons">
+            <button class="primary-btn" onclick="revealAllAnswers()">✅ 全ての答えを見る</button>
+            <button class="secondary-btn" onclick="resetAll()">🔄 リセット</button>
+        </div>
+
+        <hr>
+        <div class="footer">
+            ⚡ 日本語能力試験 N5 対策 | 解説はベンガル語（簡単なルール説明）
+        </div>
+    </div>
+
+    <script>
+        // 質問データ (問題81-100) with furigana using <ruby> tags
+        const questions = [
+            { num: 81, sentence: '<ruby>寝<rt>ね</rt></ruby>る<ruby>前<rt>まえ</rt></ruby>（　）<ruby>歯<rt>は</rt></ruby>をみがきます。', options: ['を', 'に', 'の', 'が'], correct: 'c' },
+            { num: 82, sentence: 'ご<ruby>飯<rt>はん</rt></ruby>を<ruby>食<rt>た</rt></ruby>べ（　）あとで、<ruby>勉強<rt>べんきょう</rt></ruby>します。', options: ['た', 'て', 'る', 'ない'], correct: 'a' },
+            { num: 83, sentence: '<ruby>日曜日<rt>にちようび</rt></ruby>は<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>んだり、<ruby>映画<rt>えいが</rt></ruby>を<ruby>見<rt>み</rt></ruby>たり（　）。', options: ['します', 'いきます', 'あります', 'なります'], correct: 'a' },
+            { num: 84, sentence: 'ひまなとき、<ruby>音楽<rt>おんがく</rt></ruby>を<ruby>聞<rt>き</rt></ruby>い（　）<ruby>本<rt>ほん</rt></ruby>を<ruby>読<rt>よ</rt></ruby>みます。', options: ['て', 'た', 'で', 'に'], correct: 'a' },
+            { num: 85, sentence: 'ここでは<ruby>日本語<rt>にほんご</rt></ruby>だけ（　）<ruby>話<rt>はな</rt></ruby>してください。', options: ['が', 'で', 'を', 'に'], correct: 'b' },
+            { num: 86, sentence: '<ruby>今日<rt>きょう</rt></ruby>はつかれ（　）から、<ruby>早<rt>はや</rt></ruby>く<ruby>寝<rt>ね</rt></ruby>ます。', options: ['る', 'て', 'た', 'ている'], correct: 'b' },
+            { num: 87, sentence: 'お<ruby>茶<rt>ちゃ</rt></ruby>をもっと<ruby>飲<rt>の</rt></ruby>み（　）です。', options: ['たい', 'ます', 'ません', 'ました'], correct: 'a' },
+            { num: 88, sentence: 'きょうはあまり<ruby>勉強<rt>べんきょう</rt></ruby>し（　）ほうがいいです。', options: ['た', 'ない', 'なく', 'ません'], correct: 'b' },
+            { num: 89, sentence: 'たばこは<ruby>吸<rt>す</rt></ruby>わ（　）ほうがいいですよ。', options: ['ない', 'なく', 'なかった', 'ません'], correct: 'a' },
+            { num: 90, sentence: 'テストのまえにもう<ruby>一度<rt>いちど</rt></ruby><ruby>練習<rt>れんしゅう</rt></ruby>し（　）。', options: ['ましょう', 'ません', 'たいです', 'ました'], correct: 'a' },
+            { num: 91, sentence: 'かぜをひいた（　）、<ruby>学校<rt>がっこう</rt></ruby>を<ruby>休<rt>やす</rt></ruby>みました。', options: ['から', 'ので', 'が', 'でも'], correct: 'a' },
+            { num: 92, sentence: 'この<ruby>本<rt>ほん</rt></ruby>はむずかし（　）すぎます。', options: ['い', 'く', 'くて', 'さ'], correct: 'b' },
+            { num: 93, sentence: 'コーヒーを<ruby>飲<rt>の</rt></ruby>みすぎ（　）、おなかがいたいです。', options: ['て', 'た', 'る', 'てから'], correct: 'a' },
+            { num: 94, sentence: '<ruby>毎朝<rt>まいあさ</rt></ruby>ジョギングをする（　）があります。', options: ['こと', 'の', 'ところ', 'とき'], correct: 'a' },
+            { num: 95, sentence: '<ruby>子供<rt>こども</rt></ruby>のとき、<ruby>日本<rt>にほん</rt></ruby>に<ruby>住<rt>す</rt></ruby>んでい（　）。', options: ['た', 'て', 'ました', 'ません'], correct: 'a' },
+            { num: 96, sentence: '<ruby>日本語<rt>にほんご</rt></ruby>を<ruby>勉強<rt>べんきょう</rt></ruby>し<ruby>始<rt>はじ</rt></ruby>め（　）のは１<ruby>年<rt>ねん</rt></ruby><ruby>前<rt>まえ</rt></ruby>です。', options: ['る', 'た', 'た', 'たこと'], correct: 'b' },
+            { num: 97, sentence: 'ねつがある（　）、きょうは<ruby>会社<rt>かいしゃ</rt></ruby>を<ruby>休<rt>やす</rt></ruby>みます。', options: ['から', 'が', 'ので', 'でも'], correct: 'c' },
+            { num: 98, sentence: '<ruby>日本語<rt>にほんご</rt></ruby>の<ruby>新聞<rt>しんぶん</rt></ruby>はほとんど<ruby>読<rt>よ</rt></ruby>め（　）。', options: ['ます', 'ません', 'たいです', 'でした'], correct: 'b' },
+            { num: 99, sentence: 'きのうは<ruby>何<rt>なに</rt></ruby>も<ruby>食<rt>た</rt></ruby>べ（　）でした。', options: ['ない', 'なく', 'ません', 'ません'], correct: 'c' },
+            { num: 100, sentence: '<ruby>日本語<rt>にほんご</rt></ruby>のクラスは９<ruby>時<rt>じ</rt></ruby>から１０<ruby>時<rt>じ</rt></ruby>（　）です。', options: ['まで', 'で', 'に', 'へ'], correct: 'a' }
+        ];
+
+        // 詳細な解説 (ベンガル語) - সরল ভাষায়
+        const explanations = {
+            81: {
+                rule: '「の前に」 মানে "করার আগে"।',
+                translation: 'ঘুমানোর আগে দাঁত ব্রাশ করি।',
+                detail: '「寝る前に」 = ঘুমানোর আগে।'
+            },
+            82: {
+                rule: '「たあとで」 মানে "করার পরে"।',
+                translation: 'খাওয়ার পরে পড়াশোনা করি।',
+                detail: '「食べたあとで」 = খাওয়ার পরে।'
+            83: {
+                rule: '「たり～たりします」 দিয়ে একাধিক কাজের উদাহরণ দেওয়া হয়।',
+                translation: 'রোববার বই পড়ি বা সিনেমা দেখি।',
+                detail: '「読んだり見たりします」 = পড়া বা দেখা করা।'
+            },
+            84: {
+                rule: '「て」 দিয়ে দুই কাজের ধারাবাহিকতা বোঝায়।',
+                translation: 'ফাঁকে গান শুনে বই পড়ি।',
+                detail: '「聞いて読みます」 = শুনে পড়ি।'
+            },
+            85: {
+                rule: '「で」 দিয়ে ভাষা বা মাধ্যম বোঝায়।',
+                translation: 'এখানে শুধু জাপানিতে বলুন।',
+                detail: '「日本語だけで」 = শুধু জাপানি ভাষায়।'
+            },
+            86: {
+                rule: '「てから」 এর সংক্ষেপে কারণ বোঝাতে।',
+                translation: 'আজ ক্লান্ত, তাই তাড়াতাড়ি ঘুমাব।',
+                detail: '「つかれてから」 = ক্লান্ত হওয়ার কারণে।'
+            },
+            87: {
+                rule: '「たいです」 মানে "চাই"।',
+                translation: 'আরও চা খেতে চাই।',
+                detail: '「飲みたいです」 = খেতে চাই।'
+            },
+            88: {
+                rule: '「ないほうがいい」 মানে "না করাই ভালো"।',
+                translation: 'আজ খুব বেশি না পড়াই ভালো।',
+                detail: '「しないほうがいい」 = না করাই ভালো।'
+            },
+            89: {
+                rule: '「ないほうがいい」 মানে "না করাই ভালো"।',
+                translation: 'সিগারেট না খাওয়াই ভালো।',
+                detail: '「吸わないほうがいい」 = না খাওয়াই ভালো।'
+            },
+            90: {
+                rule: '「ましょう」 মানে "চলুন করি"।',
+                translation: 'পরীক্ষার আগে আরেকবার প্র্যাকটিস করি।',
+                detail: '「練習しましょう」 = চল প্র্যাকটিস করি।'
+            },
+            91: {
+                rule: '「から」 মানে "কারণ"।',
+                translation: 'ঠান্ডা লেগেছে, তাই স্কুলে যাইনি।',
+                detail: '「ひいたから」 = লেগেছে বলে।'
+            },
+            92: {
+                rule: '「すぎる」 মানে "খুব বেশি"।',
+                translation: 'এই বইটা খুব বেশি কঠিন।',
+                detail: '「むずかしすぎる」 = খুব বেশি কঠিন।'
+            },
+            93: {
+                rule: '「て」 দিয়ে কারণ বোঝায়।',
+                translation: 'কফি খুব বেশি খেয়ে পেট ব্যথা।',
+                detail: '「飲みすぎて」 = খুব বেশি খেয়ে।'
+            },
+            94: {
+                rule: '「ことがある」 মানে "কখনো কখনো করা"।',
+                translation: 'প্রতিদিন সকালে জগিং করি।',
+                detail: '「することがある」 = মাঝে মাঝে করি।'
+            },
+            95: {
+                rule: '「ていた」 মানে "ছিলাম" (অতীত চলমান)।',
+                translation: 'ছোটবেলায় জাপানে থাকতাম।',
+                detail: '「住んでいた」 = থাকতাম।'
+            },
+            96: {
+                rule: '「た」 দিয়ে অতীত কাল।',
+                translation: 'জাপানি পড়া শুরু করেছিলাম এক বছর আগে।',
+                detail: '「始めたのは」 = শুরু করেছিলাম।'
+            },
+            97: {
+                rule: '「ので」 মানে "কারণ" (একটু নরম)।',
+                translation: 'জ্বর আছে, তাই অফিস ছুটি নেব।',
+                detail: '「あるので」 = আছে বলে।'
+            },
+            98: {
+                rule: '「ません」 মানে "না"।',
+                translation: 'জাপানি খবরের কাগজ প্রায় পড়তে পারি না।',
+                detail: '「読めません」 = পড়তে পারি না।'
+            },
+            99: {
+                rule: '「ませんでした」 অতীত নেতিবাচক।',
+                translation: 'গতকাল কিছুই খাইনি।',
+                detail: '「食べませんでした」 = খাইনি।'
+            },
+            100: {
+                rule: '「から～まで」 মানে "থেকে ... পর্যন্ত"।',
+                translation: 'জাপানি ক্লাস ৯টা থেকে ১০টা পর্যন্ত।',
+                detail: '「１０時まで」 = ১০টা পর্যন্ত।'
+            }
+        };
+
+        // HTML 生成
+        function renderQuestions() {
+            const grid = document.getElementById('quizGrid');
+            grid.innerHTML = '';
+            questions.forEach(q => {
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                card.id = `q${q.num}`;
+                
+                let optionsHtml = '';
+                const optLetters = ['a', 'b', 'c', 'd'];
+                q.options.forEach((opt, idx) => {
+                    optionsHtml += `<div class="option-btn" onclick="checkAnswer(this, ${q.num}, '${optLetters[idx]}')">${optLetters[idx].toUpperCase()}) ${opt}</div>`;
+                });
+
+                // বাক্যটি দেখান, ফাঁকা জায়গা হাইলাইট করা
+                const sentenceWithBlank = q.sentence.replace('（　）', '<span class="blank">（　）</span>');
+
+                card.innerHTML = `
+                    <div class="q-num">Q${q.num}</div>
+                    <div class="sentence">${sentenceWithBlank}</div>
+                    <div class="options" id="opt-group-${q.num}">
+                        ${optionsHtml}
+                    </div>
+                    <div class="feedback" id="fb-${q.num}"></div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // 答えをチェック
+        function checkAnswer(element, qNum, selectedOpt) {
+            const groupId = 'opt-group-' + qNum;
+            const options = document.querySelectorAll(`#${groupId} .option-btn`);
+            const feedbackDiv = document.getElementById('fb-' + qNum);
+
+            if (options[0].classList.contains('disabled-opt')) return;
+
+            const q = questions.find(q => q.num === qNum);
+            const correctAns = q.correct;
+            const isCorrect = (selectedOpt === correctAns);
+
+            options.forEach(opt => opt.classList.add('disabled-opt'));
+
+            options.forEach(opt => {
+                if (opt.getAttribute('onclick').includes(`'${correctAns}'`)) {
+                    opt.classList.add('correct-opt');
+                }
+            });
+
+            if (!isCorrect) {
+                element.classList.add('wrong-opt');
+            }
+
+            const exp = explanations[qNum];
+            if (isCorrect) {
+                feedbackDiv.innerHTML = `
+                    <div class="feedback correct-fb">
+                        <span class="fb-title">⭕ せいかい！</span> 
+                        <div class="rule"><strong>📌 ルール:</strong> ${exp.rule}</div>
+                        <div class="translation"><strong>📖 翻訳:</strong> ${exp.translation}</div>
+                        <div><strong>💡 詳細:</strong> ${exp.detail}</div>
+                    </div>
+                `;
+            } else {
+                feedbackDiv.innerHTML = `
+                    <div class="feedback wrong-fb">
+                        <span class="fb-title">❌ まちがい。</span> 正しい答えは緑色です。<br>
+                        <div class="rule"><strong>📌 ルール:</strong> ${exp.rule}</div>
+                        <div class="translation"><strong>📖 翻訳:</strong> ${exp.translation}</div>
+                        <div><strong>💡 詳細:</strong> ${exp.detail}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // 全ての答えを表示
+        function revealAllAnswers() {
+            for (let qNum = 81; qNum <= 100; qNum++) {
+                const groupId = 'opt-group-' + qNum;
+                const options = document.querySelectorAll(`#${groupId} .option-btn`);
+                const feedbackDiv = document.getElementById('fb-' + qNum);
+                const q = questions.find(q => q.num === qNum);
+                const correctAns = q.correct;
+                const exp = explanations[qNum];
+
+                options.forEach(opt => {
+                    opt.classList.add('disabled-opt');
+                    if (opt.getAttribute('onclick').includes(`'${correctAns}'`)) {
+                        opt.classList.add('correct-opt');
+                    }
+                });
+
+                feedbackDiv.innerHTML = `
+                    <div class="feedback correct-fb">
+                        <span class="fb-title">✅ 答え：</span> 
+                        <div class="rule"><strong>📌 ルール:</strong> ${exp.rule}</div>
+                        <div class="translation"><strong>📖 翻訳:</strong> ${exp.translation}</div>
+                        <div><strong>💡 詳細:</strong> ${exp.detail}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // リセット
+        function resetAll() {
+            for (let qNum = 81; qNum <= 100; qNum++) {
+                const groupId = 'opt-group-' + qNum;
+                const options = document.querySelectorAll(`#${groupId} .option-btn`);
+                const feedbackDiv = document.getElementById('fb-' + qNum);
+
+                options.forEach(opt => {
+                    opt.classList.remove('disabled-opt', 'correct-opt', 'wrong-opt');
+                });
+
+                feedbackDiv.innerHTML = '';
+            }
+        }
+
+        window.onload = renderQuestions;
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+</body>
+</html>
