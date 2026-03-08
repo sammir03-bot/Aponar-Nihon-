@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLPT N5 漢字クイズ - パート1 (問題1-15) ふりがな付き</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', 'Noto Sans Bengali', 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+            background: linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%);
+            min-height: 100vh;
+            padding: 30px 20px;
+            color: #0c4a6e;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 40px 40px 20px 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-bottom: 6px solid #0284c7;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.4em;
+            font-weight: 700;
+            color: #0369a1;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        h1 span {
+            background: #0284c7;
+            color: white;
+            font-size: 0.45em;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .subhead {
+            font-size: 1.2em;
+            color: #0369a1;
+            background: #f0f9ff;
+            padding: 12px 20px;
+            border-radius: 60px;
+            display: inline-block;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px dashed #7dd3fc;
+            font-weight: 600;
+            color: #0369a1;
+        }
+
+        .badge {
+            background: #0369a1;
+            color: white;
+            padding: 8px 25px;
+            border-radius: 40px;
+            font-size: 1em;
+        }
+
+        .quiz-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .question-card {
+            background: white;
+            border-radius: 30px;
+            padding: 25px 30px;
+            box-shadow: 0 10px 25px rgba(2, 132, 199, 0.1);
+            transition: transform 0.2s;
+            border: 2px solid #bae6fd;
+        }
+
+        .question-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 35px rgba(2, 132, 199, 0.2);
+            border-color: #38bdf8;
+        }
+
+        .q-num {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            font-weight: 600;
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-size: 1rem;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .sentence {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            line-height: 2.2;
+            background: #f0f9ff;
+            padding: 20px 25px;
+            border-radius: 25px;
+            border: 2px solid #bae6fd;
+            font-weight: 600;
+            color: #075985;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .highlight-kanji {
+            display: inline-block;
+            background: #fee2e2;
+            color: #b91c1c;
+            font-weight: 700;
+            padding: 4px 15px;
+            border-radius: 40px;
+            border: 2px solid #fecaca;
+            margin: 0 5px;
+            font-size: 1.2em;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin: 20px 0 15px;
+        }
+
+        .option-btn {
+            background: white;
+            border: 3px solid #bae6fd;
+            padding: 18px 12px;
+            border-radius: 60px;
+            font-size: 1.3em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s;
+            text-align: center;
+            color: #075985;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.02);
+        }
+
+        .option-btn:hover:not(.disabled-opt) {
+            background: #e0f2fe;
+            border-color: #0284c7;
+            transform: scale(1.01);
+            box-shadow: 0 10px 15px rgba(2,132,199,0.15);
+        }
+
+        .correct-opt {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+            box-shadow: 0 5px 15px rgba(34,197,94,0.25);
+        }
+
+        .wrong-opt {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #7f1d1d !important;
+            opacity: 0.9;
+        }
+
+        .disabled-opt {
+            opacity: 0.6;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .feedback {
+            margin-top: 20px;
+            padding: 18px 22px;
+            border-radius: 25px;
+            background: #f8fafc;
+            border-left: 8px solid #64748b;
+            font-size: 1.1em;
+            line-height: 1.7;
+            border: 1px solid #cbd5e1;
+        }
+
+        .feedback.correct-fb {
+            background: #f0fdf4;
+            border-left-color: #22c55e;
+        }
+
+        .feedback.wrong-fb {
+            background: #fef2f2;
+            border-left-color: #ef4444;
+        }
+
+        .fb-title {
+            font-weight: 700;
+            margin-right: 10px;
+            font-size: 1.1em;
+        }
+
+        .rule {
+            background: #fffbeb;
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin-top: 10px;
+            border-left: 5px solid #f59e0b;
+            font-size: 0.95em;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 40px 0 30px;
+            justify-content: center;
+        }
+
+        .primary-btn, .secondary-btn {
+            border: none;
+            padding: 16px 40px;
+            border-radius: 60px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            border: 2px solid transparent;
+        }
+
+        .primary-btn {
+            background: #0284c7;
+            color: white;
+        }
+
+        .primary-btn:hover {
+            background: #0369a1;
+            transform: translateY(-4px);
+            box-shadow: 0 20px 30px rgba(2,132,199,0.35);
+        }
+
+        .secondary-btn {
+            background: #1e293b;
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            background: #0f172a;
+            transform: translateY(-4px);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #0369a1;
+            font-size: 1rem;
+            background: white;
+            padding: 20px;
+            border-radius: 70px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            border: 2px solid #bae6fd;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #0284c7, transparent);
+            margin: 30px 0;
+        }
+
+        @media (max-width: 700px) {
+            h1 { font-size: 2em; }
+            .sentence { font-size: 1.5em; }
+            .options { grid-template-columns: 1fr; }
+            .option-btn { padding: 15px; }
+        }
+
+        /* furigana styling */
+        ruby {
+            ruby-align: center;
+        }
+        rt {
+            font-size: 0.6em;
+            color: #0284c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                📘 JLPT N5 漢字クイズ
+                <span>Part 1 (1-15)</span>
+            </h1>
+            <div class="subhead">
+                かんじの よみかた・かきかたを えらんでください。（ふりがな付き）
+            </div>
+            <div class="stats">
+                <span>🈳 全15問</span>
+                <span class="badge">レベル N5 · 漢字</span>
+            </div>
+        </div>
+
+        <div class="quiz-grid" id="quizGrid">
+            <!-- JavaScriptで生成 -->
+        </div>
+
+        <div class="action-buttons">
+            <button class="primary-btn" onclick="revealAllAnswers()">✅ 全ての答えを見る</button>
+            <button class="secondary-btn" onclick="resetAll()">🔄 リセット</button>
+        </div>
+
+        <hr>
+        <div class="footer">
+            ⚡ 日本語能力試験 N5 対策 | 解説はベンガル語（とても簡単な説明）
+        </div>
+    </div>
+
+    <script>
+        // 質問データ (問題1-15) with furigana - JLPT N5 official style
+        const questions = [
+            // Type 1: Kanji reading questions (もんだい１ style)
+            { 
+                num: 1, 
+                type: 'reading',
+                sentence: 'ちかくに <ruby>大<rt>おお</rt></ruby>きい <span class="highlight-kanji">【山】</span>が あります。',
+                question: '【山】の 読(よ)み方(かた)は どれですか。',
+                options: ['かわ', 'やま', 'もり', 'そら'], 
+                correct: 'b' 
+            },
+            { 
+                num: 2, 
+                type: 'reading',
+                sentence: 'あの <span class="highlight-kanji">【川】</span>は とても <ruby>長<rt>なが</rt></ruby>い です。',
+                question: '【川】の 読み方は？',
+                options: ['かわ', 'かわら', 'かわい', 'かわう'], 
+                correct: 'a' 
+            },
+            { 
+                num: 3, 
+                type: 'reading',
+                sentence: 'きょうは <span class="highlight-kanji">【雨】</span>が ふっています。',
+                question: '【雨】の 読み方は？',
+                options: ['ゆき', 'あめ', 'くも', 'かぜ'], 
+                correct: 'b' 
+            },
+            { 
+                num: 4, 
+                type: 'reading',
+                sentence: '<ruby>日曜日<rt>にちようび</rt></ruby>に <span class="highlight-kanji">【友】</span>だちと えいがを <ruby>見<rt>み</rt></ruby>ました。',
+                question: '【友】の 読み方は？ (「友だち」の「友」だけ)',
+                options: ['とも', 'ともだ', 'ともだち', 'とみ'], 
+                correct: 'a' 
+            },
+            { 
+                num: 5, 
+                type: 'reading',
+                sentence: '<ruby>毎日<rt>まいにち</rt></ruby> <span class="highlight-kanji">【新聞】</span>を <ruby>読<rt>よ</rt></ruby>みます。',
+                question: '【新聞】の 読み方は？',
+                options: ['しんもん', 'しんぶん', 'じんぶん', 'しんぼん'], 
+                correct: 'b' 
+            },
+            { 
+                num: 6, 
+                type: 'reading',
+                sentence: 'ここに <span class="highlight-kanji">【名前】</span>を <ruby>書<rt>か</rt></ruby>いて ください。',
+                question: '【名前】の 読み方は？',
+                options: ['ななまえ', 'なめい', 'なまえ', 'ななえ'], 
+                correct: 'c' 
+            },
+            { 
+                num: 7, 
+                type: 'reading',
+                sentence: 'あした <span class="highlight-kanji">【学校】</span>で テストが あります。',
+                question: '【学校】の 読み方は？',
+                options: ['がっこう', 'がこう', 'がこお', 'がっこお'], 
+                correct: 'a' 
+            },
+            { 
+                num: 8, 
+                type: 'reading',
+                sentence: '<span class="highlight-kanji">【先生】</span>は とても やさしい です。',
+                question: '【先生】の 読み方は？',
+                options: ['せんせ', 'せんせい', 'せいせん', 'せいせい'], 
+                correct: 'b' 
+            },
+            { 
+                num: 9, 
+                type: 'reading',
+                sentence: '７<ruby>時<rt>じ</rt></ruby>に <span class="highlight-kanji">【起】</span>きます。',
+                question: '【起】の 読み方は？',
+                options: ['おき', 'おこ', 'ね', 'た'], 
+                correct: 'a' 
+            },
+            { 
+                num: 10, 
+                type: 'reading',
+                sentence: 'たなかさんは <ruby>毎日<rt>まいにち</rt></ruby> <span class="highlight-kanji">【働】</span>きます。',
+                question: '【働】の 読み方は？',
+                options: ['はたら', 'はたらき', 'はたらく', 'はたら'], 
+                correct: 'c' 
+            },
+            { 
+                num: 11, 
+                type: 'reading',
+                sentence: 'あの <ruby>人<rt>ひと</rt></ruby>は <span class="highlight-kanji">【有名】</span>な <ruby>歌手<rt>かしゅ</rt></ruby>です。',
+                question: '【有名】の 読み方は？',
+                options: ['ゆうめ', 'ゆうめい', 'ゆめい', 'ゆめいな'], 
+                correct: 'b' 
+            },
+            { 
+                num: 12, 
+                type: 'reading',
+                sentence: '<span class="highlight-kanji">【駅】</span>の <ruby>近<rt>ちか</rt></ruby>くに <ruby>住<rt>す</rt></ruby>んで います。',
+                question: '【駅】の 読み方は？',
+                options: ['えき', 'えぎ', 'えち', 'えこ'], 
+                correct: 'a' 
+            },
+            // Type 2: Choose correct kanji (もんだい２ style)
+            { 
+                num: 13, 
+                type: 'kanji',
+                sentence: 'わたしは まいにち 「にほんご」 を べんきょうします。',
+                question: '「にほんご」 を かんじ で どう <ruby>書<rt>か</rt></ruby>きますか。',
+                options: ['日本口', '日木語', '日本語', '日本午'], 
+                correct: 'c' 
+            },
+            { 
+                num: 14, 
+                type: 'kanji',
+                sentence: 'あした の 「あさ」 ７じ に おきます。',
+                question: '「あさ」 の かんじ は どれ？',
+                options: ['夕', '朝', '昼', '今'], 
+                correct: 'b' 
+            },
+            { 
+                num: 15, 
+                type: 'kanji',
+                sentence: 'ここ は とても 「くらい」 です。',
+                question: '「くらい」 の かんじ は？',
+                options: ['明い', '黒い', '暗い', '青い'], 
+                correct: 'c' 
+            }
+        ];
+
+        // 簡単な解説 (ベンガル語) - খুব সহজ ভাষায়
+        const explanations = {
+            1: '【山】 = やま (পাহাড়)। বাক্যে "পাশে বড় পাহাড় আছে" মানে হচ্ছে।',
+            2: '【川】 = かわ (নদী)। অন্য অপশনগুলো ভুল পড়া।',
+            3: '【雨】 = あめ (বৃষ্টি)। 雪(ゆき) মানে তুষার।',
+            4: '【友】 একা থাকলে とも। 友だち = ともだち (বন্ধু)।',
+            5: '【新聞】 = しんぶん (খবরের কাগজ)। JLPT N5-এ খুব কমন শব্দ।',
+            6: '【名前】 = なまえ (নাম)। অফিসিয়াল পরীক্ষায় প্রায়ই আসে।',
+            7: '【学校】 = がっこう। ছোট っ + দীর্ঘ こう, বানান ভুল অপশন আছে।',
+            8: '【先生】 = せんせい। い লম্বা করে পড়তে হবে।',
+            9: '【起きます】 = おきます (ঘুম থেকে ওঠা)। এখানে 起-এর পড়া おき।',
+            10: '【働く】 = はたらく (কাজ করা)। ডিকশনারি ফর্মে পড়া জিজ্ঞেস করেছে।',
+            11: '【有名】 = ゆうめい (বিখ্যাত)। う লম্বা করে পড়তে হবে।',
+            12: '【駅】 = えき (স্টেশন)। N5-এর মৌলিক কাঞ্জি।',
+            13: '日本語 = にほんご (জাপানি ভাষা)। সঠিক কাঞ্জি হচ্ছে 日+本+語।',
+            14: '朝 = あさ (সকাল)। 夕 = সন্ধ্যা, 昼 = দুপুর।',
+            15: '暗い = くらい (অন্ধকার)। JLPT-এ এই প্রশ্ন টাইপ দেখা যায়।'
+        };
+
+        // HTML 生成
+        function renderQuestions() {
+            const grid = document.getElementById('quizGrid');
+            grid.innerHTML = '';
+            
+            questions.forEach(q => {
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                card.id = `q${q.num}`;
+                
+                let optionsHtml = '';
+                const optLetters = ['a', 'b', 'c', 'd'];
+                q.options.forEach((opt, idx) => {
+                    optionsHtml += `<div class="option-btn" onclick="checkAnswer(this, ${q.num}, '${optLetters[idx]}')">${optLetters[idx].toUpperCase()}) ${opt}</div>`;
+                });
+
+                card.innerHTML = `
+                    <div class="q-num">Q${q.num}</div>
+                    <div class="sentence">${q.sentence}</div>
+                    <div class="question-text">${q.question}</div>
+                    <div class="options" id="opt-group-${q.num}">
+                        ${optionsHtml}
+                    </div>
+                    <div class="feedback" id="fb-${q.num}"></div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // 答えをチェック
+        function checkAnswer(element, qNum, selectedOpt) {
+            const groupId = 'opt-group-' + qNum;
+            const options = document.querySelectorAll(`#${groupId} .option-btn`);
+            const feedbackDiv = document.getElementById('fb-' + qNum);
+
+            if (options[0].classList.contains('disabled-opt')) return;
+
+            const q = questions.find(q => q.num === qNum);
+            const correctAns = q.correct;
+            const isCorrect = (selectedOpt === correctAns);
+
+            options.forEach(opt => opt.classList.add('disabled-opt'));
+
+            options.forEach(opt => {
+                if (opt.getAttribute('onclick').includes(`'${correctAns}'`)) {
+                    opt.classList.add('correct-opt');
+                }
+            });
+
+            if (!isCorrect) {
+                element.classList.add('wrong-opt');
+            }
+
+            const exp = explanations[qNum];
+            if (isCorrect) {
+                feedbackDiv.innerHTML = `
+                    <div class="feedback correct-fb">
+                        <span class="fb-title">⭕ せいかい！</span> 
+                        <div class="rule">${exp}</div>
+                    </div>
+                `;
+            } else {
+                feedbackDiv.innerHTML = `
+                    <div class="feedback wrong-fb">
+                        <span class="fb-title">❌ まちがい。</span> 正しい答えは緑色です。<br>
+                        <div class="rule">${exp}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // 全ての答えを表示
+        function revealAllAnswers() {
+            for (let qNum = 1; qNum <= 15; qNum++) {
+                const groupId = 'opt-group-' + qNum;
+                const options = document.querySelectorAll(`#${groupId} .option-btn`);
+                const feedbackDiv = document.getElementById('fb-' + qNum);
+                const q = questions.find(q => q.num === qNum);
+                const correctAns = q.correct;
+                const exp = explanations[qNum];
+
+                options.forEach(opt => {
+                    opt.classList.add('disabled-opt');
+                    if (opt.getAttribute('onclick').includes(`'${correctAns}'`)) {
+                        opt.classList.add('correct-opt');
+                    }
+                });
+
+                feedbackDiv.innerHTML = `
+                    <div class="feedback correct-fb">
+                        <span class="fb-title">✅ 答え：</span> 
+                        <div class="rule">${exp}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // リセット
+        function resetAll() {
+            for (let qNum = 1; qNum <= 15; qNum++) {
+                const groupId = 'opt-group-' + qNum;
+                const options = document.querySelectorAll(`#${groupId} .option-btn`);
+                const feedbackDiv = document.getElementById('fb-' + qNum);
+
+                options.forEach(opt => {
+                    opt.classList.remove('disabled-opt', 'correct-opt', 'wrong-opt');
+                });
+
+                feedbackDiv.innerHTML = '';
+            }
+        }
+
+        window.onload = renderQuestions;
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+</body>
+</html>

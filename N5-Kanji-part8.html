@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLPT N5 漢字クイズ - パート8 (問題106-120) ふりがな付き</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', 'Noto Sans Bengali', 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+            background: linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%);
+            min-height: 100vh;
+            padding: 30px 20px;
+            color: #0c4a6e;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 40px 40px 20px 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-bottom: 6px solid #0284c7;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.4em;
+            font-weight: 700;
+            color: #0369a1;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        h1 span {
+            background: #0284c7;
+            color: white;
+            font-size: 0.45em;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .subhead {
+            font-size: 1.2em;
+            color: #0369a1;
+            background: #f0f9ff;
+            padding: 12px 20px;
+            border-radius: 60px;
+            display: inline-block;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px dashed #7dd3fc;
+            font-weight: 600;
+            color: #0369a1;
+        }
+
+        .badge {
+            background: #0369a1;
+            color: white;
+            padding: 8px 25px;
+            border-radius: 40px;
+            font-size: 1em;
+        }
+
+        .quiz-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .question-card {
+            background: white;
+            border-radius: 30px;
+            padding: 25px 30px;
+            box-shadow: 0 10px 25px rgba(2, 132, 199, 0.1);
+            transition: transform 0.2s;
+            border: 2px solid #bae6fd;
+        }
+
+        .question-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 35px rgba(2, 132, 199, 0.2);
+            border-color: #38bdf8;
+        }
+
+        .q-num {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            font-weight: 600;
+            padding: 6px 20px;
+            border-radius: 40px;
+            font-size: 1rem;
+            margin-bottom: 18px;
+            letter-spacing: 0.5px;
+        }
+
+        .sentence {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            line-height: 2.2;
+            background: #f0f9ff;
+            padding: 20px 25px;
+            border-radius: 25px;
+            border: 2px solid #bae6fd;
+            font-weight: 600;
+            color: #075985;
+            text-align: center;
+            word-break: break-word;
+        }
+
+        .highlight-kanji {
+            display: inline-block;
+            background: #fee2e2;
+            color: #b91c1c;
+            font-weight: 700;
+            padding: 4px 15px;
+            border-radius: 40px;
+            border: 2px solid #fecaca;
+            margin: 0 5px;
+            font-size: 1.2em;
+        }
+
+        .question-text {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            font-weight: 500;
+            color: #075985;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+            margin: 20px 0 15px;
+        }
+
+        .option-btn {
+            background: white;
+            border: 3px solid #bae6fd;
+            padding: 18px 12px;
+            border-radius: 60px;
+            font-size: 1.3em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s;
+            text-align: center;
+            color: #075985;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.02);
+        }
+
+        .option-btn:hover:not(.disabled-opt) {
+            background: #e0f2fe;
+            border-color: #0284c7;
+            transform: scale(1.01);
+            box-shadow: 0 10px 15px rgba(2,132,199,0.15);
+        }
+
+        .correct-opt {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+            box-shadow: 0 5px 15px rgba(34,197,94,0.25);
+        }
+
+        .wrong-opt {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #7f1d1d !important;
+            opacity: 0.9;
+        }
+
+        .disabled-opt {
+            opacity: 0.6;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .feedback {
+            margin-top: 20px;
+            padding: 18px 22px;
+            border-radius: 25px;
+            background: #f8fafc;
+            border-left: 8px solid #64748b;
+            font-size: 1.1em;
+            line-height: 1.7;
+            border: 1px solid #cbd5e1;
+        }
+
+        .feedback.correct-fb {
+            background: #f0fdf4;
+            border-left-color: #22c55e;
+        }
+
+        .feedback.wrong-fb {
+            background: #fef2f2;
+            border-left-color: #ef4444;
+        }
+
+        .fb-title {
+            font-weight: 700;
+            margin-right: 10px;
+            font-size: 1.1em;
+        }
+
+        .rule {
+            background: #fffbeb;
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin-top: 10px;
+            border-left: 5px solid #f59e0b;
+            font-size: 0.95em;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 40px 0 30px;
+            justify-content: center;
+        }
+
+        .primary-btn, .secondary-btn {
+            border: none;
+            padding: 16px 40px;
+            border-radius: 60px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            border: 2px solid transparent;
+        }
+
+        .primary-btn {
+            background: #0284c7;
+            color: white;
+        }
+
+        .primary-btn:hover {
+            background: #0369a1;
+            transform: translateY(-4px);
+            box-shadow: 0 20px 30px rgba(2,132,199,0.35);
+        }
+
+        .secondary-btn {
+            background: #1e293b;
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            background: #0f172a;
+            transform: translateY(-4px);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #0369a1;
+            font-size: 1rem;
+            background: white;
+            padding: 20px;
+            border-radius: 70px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            border: 2px solid #bae6fd;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #0284c7, transparent);
+            margin: 30px 0;
+        }
+
+        @media (max-width: 700px) {
+            h1 { font-size: 2em; }
+            .sentence { font-size: 1.5em; }
+            .options { grid-template-columns: 1fr; }
+            .option-btn { padding: 15px; }
+        }
+
+        /* furigana styling */
+        ruby {
+            ruby-align: center;
+        }
+        rt {
+            font-size: 0.6em;
+            color: #0284c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                📘 JLPT N5 漢字クイズ
+                <span>Part 8 (106-120)</span>
+            </h1>
+            <div class="subhead">
+                ひらがなに あう かんじを えらんでください。（ふりがな付き）
+            </div>
+            <div class="stats">
+                <span>🈳 全15問</span>
+                <span class="badge">レベル N5 · 漢字</span>
+            </div>
+        </div>
+
+        <div class="quiz-grid" id="quizGrid">
+            <!-- JavaScriptで生成 -->
+        </div>
+
+        <div class="action-buttons">
+            <button class="primary-btn" onclick="revealAllAnswers()">✅ 全ての答えを見る</button>
+            <button class="secondary-btn" onclick="resetAll()">🔄 リセット</button>
+        </div>
+
+        <hr>
+        <div class="footer">
+            ⚡ 日本語能力試験 N5 対策 | 解説はベンガル語（とても簡単な説明）
+        </div>
+    </div>
+
+    <script>
+        // 質問データ (問題106-120) with furigana - JLPT N5 official style
+        const questions = [
+            // Type 2: Choose correct kanji (もんだい２ style) - 続き
+            { 
+                num: 106, 
+                type: 'kanji',
+                sentence: 'ここ から 「きょうと」 まで ２<ruby>時間<rt>じかん</rt></ruby> かかります。',
+                question: '「きょうと」 の かんじ は どれ？',
+                options: ['京土', '京都', '京里', '京国'], 
+                correct: 'b' 
+            },
+            { 
+                num: 107, 
+                type: 'kanji',
+                sentence: '「おしごと」は なん です か।',
+                question: '「おしごと」 の 正しい かんじ は？',
+                options: ['お仕事', 'お仕事', 'お仕事事', 'お仕ごと'], 
+                correct: 'b' 
+            },
+            { 
+                num: 108, 
+                type: 'kanji',
+                sentence: 'きのう は ともだち の 「たんじょうび」 でした।',
+                question: '「たんじょうび」 の かんじ は？',
+                options: ['誕生日', '誕生火', '生日', '生年日'], 
+                correct: 'a' 
+            },
+            { 
+                num: 109, 
+                type: 'kanji',
+                sentence: '「きって」 を ３<ruby>枚<rt>まい</rt></ruby> ください।',
+                question: '「きって」 の かんじ は？',
+                options: ['切手', '切紙', '手切', '手紙'], 
+                correct: 'a' 
+            },
+            { 
+                num: 110, 
+                type: 'kanji',
+                sentence: 'これは 「じしょ」 です।',
+                question: '「じしょ」 の かんじ は？',
+                options: ['字書', '辞書', '事書', '話書'], 
+                correct: 'b' 
+            },
+            { 
+                num: 111, 
+                type: 'kanji',
+                sentence: '「でんき」を つけて ください।',
+                question: '「でんき」 の かんじ は？',
+                options: ['電気', '電器', '天気', '元気'], 
+                correct: 'a' 
+            },
+            { 
+                num: 112, 
+                type: 'kanji',
+                sentence: 'ここ は 「きんえん」 です। たばこ を すって は いけません।',
+                question: '「きんえん」 の かんじ は？',
+                options: ['金煙', '止煙', '禁煙', '禁火'], 
+                correct: 'c' 
+            },
+            { 
+                num: 113, 
+                type: 'kanji',
+                sentence: '「じどうはんばいき」で ジュース を かいました।',
+                question: '「じどうはんばいき」 の かんじ は？',
+                options: ['自動販売機', '自動販売器', '自道販売機', '自動売買機'], 
+                correct: 'a' 
+            },
+            { 
+                num: 114, 
+                type: 'kanji',
+                sentence: '「みずうみ」で ボート に のりました।',
+                question: '「みずうみ」 の かんじ は？',
+                options: ['海水', '湖', '河', '洋'], 
+                correct: 'b' 
+            },
+            { 
+                num: 115, 
+                type: 'kanji',
+                sentence: '「ひるやすみ」に ともだち と はなします।',
+                question: '「ひるやすみ」 の かんじ は？',
+                options: ['午休', '昼休み', '日休み', '昼休'], 
+                correct: 'b' 
+            },
+            { 
+                num: 116, 
+                type: 'kanji',
+                sentence: '「じこしょうかい」を して ください।',
+                question: '「じこしょうかい」 の かんじ は？',
+                options: ['自己紹介', '自子紹介', '自己照会', '自分紹介'], 
+                correct: 'a' 
+            },
+            { 
+                num: 117, 
+                type: 'kanji',
+                sentence: '「いけ」に さかな が たくさん います।',
+                question: '「いけ」 の かんじ は？',
+                options: ['河', '池', '湖', '海'], 
+                correct: 'b' 
+            },
+            { 
+                num: 118, 
+                type: 'kanji',
+                sentence: '「はなび」を <ruby>見<rt>み</rt></ruby>に <ruby>行<rt>い</rt></ruby>きました।',
+                question: '「はなび」 の かんじ は？',
+                options: ['花火', '花日', '火花', '火日'], 
+                correct: 'a' 
+            },
+            { 
+                num: 119, 
+                type: 'kanji',
+                sentence: '「さかな」を かう ため に スーパー へ <ruby>行<rt>い</rt></ruby>きます।',
+                question: '「さかな」 の かんじ は？',
+                options: ['鳥', '肉', '魚', '牛'], 
+                correct: 'c' 
+            },
+            { 
+                num: 120, 
+                type: 'kanji',
+                sentence: '「そら」が とても あおい です।',
+                question: '「そら」 の かんじ は？',
+                options: ['空', '天', '上', '青'], 
+                correct: 'a' 
+            }
+        ];
+
+        // 簡単な解説 (ベンガル語) - খুব সহজ ভাষায়
+        const explanations = {
+            106: '【京都】 = きょうと (কিয়োটো শহর)। N5-এ এই ধরনের শহরের নাম কাঞ্জি আসে।',
+            107: '【仕事】 = しごと (কাজ)। "お" যোগ করে ভদ্র শব্দ "お仕事" হয়।',
+            108: '【誕生日】 = たんじょうび (জন্মদিন)। JLPT N5-এর খুব কমন শব্দ।',
+            109: '【切手】 = きって (ডাকটিকিট)। 手紙 (てがみ) = চিঠি, আলাদা শব্দ।',
+            110: '【辞書】 = じしょ (অভিধান)। 辞 = শব্দ/ছাড়া, 書 = বই।',
+            111: '【電気】 = でんき (বিদ্যুৎ/লাইট)। 天気 = てんき (আবহাওয়া)।',
+            112: '【禁煙】 = きんえん (ধূমপান নিষিদ্ধ)। সাইনবোর্ডে এই শব্দ প্রায়ই দেখা যায়।',
+            113: '【自動販売機】 = じどうはんばいき (ভেন্ডিং মেশিন)। লম্বা শব্দ কিন্তু N5-এ চেনা জরুরি।',
+            114: '【湖】 = みずうみ (হ্রদ/লেক)। 川 = নদী, 海 = সাগর।',
+            115: '【昼休み】 = ひるやすみ (দুপুরের বিরতি)। JLPT রিডিং-এ আসে।',
+            116: '【自己紹介】 = じこしょうかい (নিজের পরিচয় দেওয়া)। প্রথম ক্লাসে এই শব্দ লাগে।',
+            117: '【池】 = いけ (পুকুর)। N5-এ সব প্রকৃতির কাঞ্জি থাকে।',
+            118: '【花火】 = はなび (আতশবাজি)। 花 = ফুল, 火 = আগুন।',
+            119: '【魚】 = さかな (মাছ)। N5 টপ কাঞ্জির মধ্যে একটা।',
+            120: '【空】 = そら (আকাশ)। 空気 (くうき) = বাতাস।'
+        };
+
+        // HTML 生成
+        function renderQuestions() {
+            const grid = document.getElementById('quizGrid');
+            grid.innerHTML = '';
+            
+            questions.forEach(q => {
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                card.id = `q${q.num}`;
+                
+                let optionsHtml = '';
+                const optLetters = ['a', 'b', 'c', 'd'];
+                q.options.forEach((opt, idx) => {
+                    optionsHtml += `<div class="option-btn" onclick="checkAnswer(this, ${q.num}, '${optLetters[idx]}')">${optLetters[idx].toUpperCase()}) ${opt}</div>`;
+                });
+
+                card.innerHTML = `
+                    <div class="q-num">Q${q.num}</div>
+                    <div class="sentence">${q.sentence}</div>
+                    <div class="question-text">${q.question}</div>
+                    <div class="options" id="opt-group-${q.num}">
+                        ${optionsHtml}
+                    </div>
+                    <div class="feedback" id="fb-${q.num}"></div>
+                `;
+                grid.appendChild(card);
+            });
+        }
+
+        // 答えをチェック
+        function checkAnswer(element, qNum, selectedOpt) {
+            const groupId = 'opt-group-' + qNum;
+            const options = document.querySelectorAll(`#${groupId} .option-btn`);
+            const feedbackDiv = document.getElementById('fb-' + qNum);
+
+            if (options[0].classList.contains('disabled-opt')) return;
+
+            const q = questions.find(q => q.num === qNum);
+            const correctAns = q.correct;
+            const isCorrect = (selectedOpt === correctAns);
+
+            options.forEach(opt => opt.classList.add('disabled-opt'));
+
+            options.forEach(opt => {
+                if (opt.getAttribute('onclick').includes(`'${correctAns}'`)) {
+                    opt.classList.add('correct-opt');
+                }
+            });
+
+            if (!isCorrect) {
+                element.classList.add('wrong-opt');
+            }
+
+            const exp = explanations[qNum];
+            if (isCorrect) {
+                feedbackDiv.innerHTML = `
+                    <div class="feedback correct-fb">
+                        <span class="fb-title">⭕ せいかい！</span> 
+                        <div class="rule">${exp}</div>
+                    </div>
+                `;
+            } else {
+                feedbackDiv.innerHTML = `
+                    <div class="feedback wrong-fb">
+                        <span class="fb-title">❌ まちがい。</span> 正しい答えは緑色です。<br>
+                        <div class="rule">${exp}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // 全ての答えを表示
+        function revealAllAnswers() {
+            for (let qNum = 106; qNum <= 120; qNum++) {
+                const groupId = 'opt-group-' + qNum;
+                const options = document.querySelectorAll(`#${groupId} .option-btn`);
+                const feedbackDiv = document.getElementById('fb-' + qNum);
+                const q = questions.find(q => q.num === qNum);
+                const correctAns = q.correct;
+                const exp = explanations[qNum];
+
+                options.forEach(opt => {
+                    opt.classList.add('disabled-opt');
+                    if (opt.getAttribute('onclick').includes(`'${correctAns}'`)) {
+                        opt.classList.add('correct-opt');
+                    }
+                });
+
+                feedbackDiv.innerHTML = `
+                    <div class="feedback correct-fb">
+                        <span class="fb-title">✅ 答え：</span> 
+                        <div class="rule">${exp}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // リセット
+        function resetAll() {
+            for (let qNum = 106; qNum <= 120; qNum++) {
+                const groupId = 'opt-group-' + qNum;
+                const options = document.querySelectorAll(`#${groupId} .option-btn`);
+                const feedbackDiv = document.getElementById('fb-' + qNum);
+
+                options.forEach(opt => {
+                    opt.classList.remove('disabled-opt', 'correct-opt', 'wrong-opt');
+                });
+
+                feedbackDiv.innerHTML = '';
+            }
+        }
+
+        window.onload = renderQuestions;
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+</body>
+</html>
