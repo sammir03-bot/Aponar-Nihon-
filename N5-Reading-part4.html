@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLPT N5 読解クイズ - パート4 (問題61-80) ふりがな付き</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', 'Noto Sans Bengali', 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+            background: linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%);
+            min-height: 100vh;
+            padding: 30px 20px;
+            color: #0c4a6e;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 40px 40px 20px 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-bottom: 6px solid #0284c7;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.4em;
+            font-weight: 700;
+            color: #0369a1;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        h1 span {
+            background: #0284c7;
+            color: white;
+            font-size: 0.45em;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .subhead {
+            font-size: 1.2em;
+            color: #0369a1;
+            background: #f0f9ff;
+            padding: 12px 20px;
+            border-radius: 60px;
+            display: inline-block;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px dashed #7dd3fc;
+            font-weight: 600;
+            color: #0369a1;
+        }
+
+        .badge {
+            background: #0369a1;
+            color: white;
+            padding: 8px 25px;
+            border-radius: 40px;
+            font-size: 1em;
+        }
+
+        .quiz-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .passage-card {
+            background: white;
+            border-radius: 30px;
+            padding: 25px 30px;
+            box-shadow: 0 10px 25px rgba(2, 132, 199, 0.1);
+            border: 2px solid #bae6fd;
+        }
+
+        .passage-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #0284c7;
+            margin-bottom: 15px;
+            border-bottom: 2px dashed #7dd3fc;
+            padding-bottom: 8px;
+        }
+
+        .passage-text {
+            font-size: 1.3em;
+            line-height: 2.2;
+            background: #f0f9ff;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #bae6fd;
+        }
+
+        .question-card {
+            background: white;
+            border-radius: 25px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(2, 132, 199, 0.08);
+            border: 2px solid #e0f2fe;
+        }
+
+        .q-num {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            font-weight: 600;
+            padding: 4px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .question-text {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-weight: 500;
+            color: #075985;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 15px 0;
+        }
+
+        .option-btn {
+            background: white;
+            border: 2.5px solid #bae6fd;
+            padding: 12px 10px;
+            border-radius: 40px;
+            font-size: 1.1em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.25s;
+            text-align: center;
+            color: #075985;
+        }
+
+        .option-btn:hover:not(.disabled-opt) {
+            background: #e0f2fe;
+            border-color: #0284c7;
+            transform: scale(1.01);
+        }
+
+        .correct-opt {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+        }
+
+        .wrong-opt {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #7f1d1d !important;
+            opacity: 0.9;
+        }
+
+        .disabled-opt {
+            opacity: 0.6;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .feedback {
+            margin-top: 15px;
+            padding: 15px 20px;
+            border-radius: 20px;
+            background: #f8fafc;
+            border-left: 6px solid #64748b;
+            font-size: 1.05em;
+            line-height: 1.6;
+            border: 1px solid #cbd5e1;
+        }
+
+        .feedback.correct-fb {
+            background: #f0fdf4;
+            border-left-color: #22c55e;
+        }
+
+        .feedback.wrong-fb {
+            background: #fef2f2;
+            border-left-color: #ef4444;
+        }
+
+        .fb-title {
+            font-weight: 700;
+            margin-right: 8px;
+            font-size: 1.05em;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 40px 0 30px;
+            justify-content: center;
+        }
+
+        .primary-btn, .secondary-btn {
+            border: none;
+            padding: 16px 40px;
+            border-radius: 60px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .primary-btn {
+            background: #0284c7;
+            color: white;
+        }
+
+        .primary-btn:hover {
+            background: #0369a1;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(2,132,199,0.3);
+        }
+
+        .secondary-btn {
+            background: #1e293b;
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            background: #0f172a;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #0369a1;
+            font-size: 1rem;
+            background: white;
+            padding: 20px;
+            border-radius: 70px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            border: 2px solid #bae6fd;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #0284c7, transparent);
+            margin: 30px 0;
+        }
+
+        @media (max-width: 700px) {
+            h1 { font-size: 2em; }
+            .passage-text { font-size: 1.1em; }
+            .question-text { font-size: 1.2em; }
+            .options { grid-template-columns: 1fr; }
+        }
+
+        /* furigana styling */
+        ruby {
+            ruby-align: center;
+        }
+        rt {
+            font-size: 0.55em;
+            color: #0284c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                📖 JLPT N5 読解クイズ
+                <span>Part 4 (問題61-80)</span>
+            </h1>
+            <div class="subhead">
+                文章を読んで質問に答えてください。（ふりがな付き・簡単な解説）
+            </div>
+            <div class="stats">
+                <span>🈳 5つの文章 / 20問</span>
+                <span class="badge">レベル N5 · 読解</span>
+            </div>
+        </div>
+
+        <div class="quiz-grid" id="quizGrid">
+            <!-- JavaScriptで生成 -->
+        </div>
+
+        <div class="action-buttons">
+            <button class="primary-btn" onclick="revealAllAnswers()">✅ 全ての答えを見る</button>
+            <button class="secondary-btn" onclick="resetAll()">🔄 リセット</button>
+        </div>
+
+        <hr>
+        <div class="footer">
+            ⚡ 日本語能力試験 N5 対策 | 解説はベンガル語（とても簡単な説明）
+        </div>
+    </div>
+
+    <script>
+        // 文章データ (Passage 16-20) with furigana
+        const passages = [
+            {
+                id: 16,
+                title: 'パッセージ １６：バスの時間',
+                text: 'この バスは <ruby>駅前<rt>えきまえ</rt></ruby>から <ruby>大学<rt>だいがく</rt></ruby>まで <ruby>行<rt>い</rt></ruby>きます。<br><ruby>駅前<rt>えきまえ</rt></ruby>を ８<ruby>時<rt>じ</rt></ruby>に <ruby>出<rt>で</rt></ruby>て、 <ruby>大学<rt>だいがく</rt></ruby>には ８<ruby>時<rt>じ</rt></ruby>２０<ruby>分<rt>ぷん</rt></ruby>に <ruby>着<rt>つ</rt></ruby>きます。<br>この バスは <ruby>一日<rt>いちにち</rt></ruby>に １０<ruby>本<rt>ぽん</rt></ruby> あります。',
+                questions: [
+                    { num: 61, text: 'この バスは どこから どこまで <ruby>行<rt>い</rt></ruby>きますか।', options: ['<ruby>家<rt>いえ</rt></ruby>から <ruby>駅<rt>えき</rt></ruby>まで', '<ruby>駅前<rt>えきまえ</rt></ruby>から <ruby>大学<rt>だいがく</rt></ruby>まで', '<ruby>学校<rt>がっこう</rt></ruby>から <ruby>公園<rt>こうえん</rt></ruby>まで', '<ruby>駅<rt>えき</rt></ruby>から <ruby>空港<rt>くうこう</rt></ruby>まで'], correct: 'b' },
+                    { num: 62, text: '<ruby>駅前<rt>えきまえ</rt></ruby>を <ruby>出<rt>で</rt></ruby>る <ruby>時間<rt>じかん</rt></ruby>は いつですか।', options: ['７<ruby>時<rt>じ</rt></ruby>', '৮<ruby>時<rt>じ</rt></ruby>', '৮<ruby>時<rt>じ</rt></ruby>২০<ruby>分<rt>ぷん</rt></ruby>', '৯<ruby>時<rt>じ</rt></ruby>'], correct: 'b' },
+                    { num: 63, text: '<ruby>大学<rt>だいがく</rt></ruby>に <ruby>着<rt>つ</rt></ruby>く のは <ruby>何時<rt>なんじ</rt></ruby>ですか।', options: ['৮<ruby>時<rt>じ</rt></ruby>১০<ruby>分<rt>ぷん</rt></ruby>', '৮<ruby>時<rt>じ</rt></ruby>২০<ruby>分<rt>ぷん</rt></ruby>', '৮<ruby>時<rt>じ</rt></ruby>৩০<ruby>分<rt>ぷん</rt></ruby>', '৯<ruby>時<rt>じ</rt></ruby>'], correct: 'b' },
+                    { num: 64, text: 'この バスは <ruby>一日<rt>いちにち</rt></ruby>に <ruby>何本<rt>なんぼん</rt></ruby> ありますか।', options: ['৫<ruby>本<rt>ぽん</rt></ruby>', '৮<ruby>本<rt>ぽん</rt></ruby>', '১০<ruby>本<rt>ぽん</rt></ruby>', '২০<ruby>本<rt>ぽん</rt></ruby>'], correct: 'c' }
+                ]
+            },
+            {
+                id: 17,
+                title: 'パッセージ １７：どくしょのしゅみ',
+                text: 'わたしの しゅみは <ruby>読書<rt>どくしょ</rt></ruby>です。<br>一<ruby>週間<rt>いっしゅうかん</rt></ruby>に ３さつ ぐらい <ruby>本<rt>ほん</rt></ruby>を <ruby>読<rt>よ</rt></ruby>みます。<br>とくに ミステリーの <ruby>小説<rt>しょうせつ</rt></ruby>が <ruby>好<rt>す</rt></ruby>きです।',
+                questions: [
+                    { num: 65, text: 'わたしの しゅみは <ruby>何<rt>なん</rt></ruby>ですか।', options: ['テニス', '<ruby>料理<rt>りょうり</rt></ruby>', '<ruby>読書<rt>どくしょ</rt></ruby>', 'ダンス'], correct: 'c' },
+                    { num: 66, text: '一<ruby>週間<rt>いっしゅうかん</rt></ruby>に <ruby>本<rt>ほん</rt></ruby>を どのくらい <ruby>読<rt>よ</rt></ruby>みますか।', options: ['１さつ ぐらい', '২さつ ぐらい', '৩さつ ぐらい', '৫さつ ぐらい'], correct: 'c' },
+                    { num: 67, text: 'どんな <ruby>本<rt>ほん</rt></ruby>が とくに <ruby>好<rt>す</rt></ruby>きですか।', options: ['えほん', 'ミステリーの <ruby>小説<rt>しょうせつ</rt></ruby>', 'じてんしゃの 本', '<ruby>料理<rt>りょうり</rt></ruby>の 本'], correct: 'b' },
+                    { num: 68, text: 'この <ruby>人<rt>ひと</rt></ruby>について <ruby>正<rt>ただ</rt></ruby>しい ものは どれですか।', options: ['<ruby>本<rt>ほん</rt></ruby>を 読むのが きらいです।', 'まったく <ruby>本<rt>ほん</rt></ruby>を 読みません।', 'よく <ruby>本<rt>ほん</rt></ruby>を <ruby>読<rt>よ</rt></ruby>む <ruby>人<rt>ひと</rt></ruby>です।', 'スポーツの 本だけ 読みます।'], correct: 'c' }
+                ]
+            },
+            {
+                id: 18,
+                title: 'パッセージ １８：クラスのスケジュール',
+                text: 'こちらは <ruby>日本語<rt>にほんご</rt></ruby>クラスの スケジュールです。<br><ruby>月<rt>げつ</rt></ruby>・<ruby>水<rt>すい</rt></ruby>・<ruby>金<rt>きん</rt></ruby>：　<ruby>文法<rt>ぶんぽう</rt></ruby>の クラス<br><ruby>火<rt>か</rt></ruby>・<ruby>木<rt>もく</rt></ruby>：　　　<ruby>会話<rt>かいわ</rt></ruby>の クラス',
+                questions: [
+                    { num: 69, text: '<ruby>文法<rt>ぶんぽう</rt></ruby>の クラスは いつ ありますか।', options: ['<ruby>月<rt>げつ</rt></ruby>・<ruby>水<rt>すい</rt></ruby>・<ruby>金<rt>きん</rt></ruby>', '<ruby>火<rt>か</rt></ruby>・<ruby>木<rt>もく</rt></ruby>', '<ruby>土<rt>ど</rt></ruby>・<ruby>日<rt>にち</rt></ruby>', '<ruby>毎日<rt>まいにち</rt></ruby>'], correct: 'a' },
+                    { num: 70, text: '<ruby>会話<rt>かいわ</rt></ruby>の クラスは いつ ありますか।', options: ['<ruby>月<rt>げつ</rt></ruby>・<ruby>水<rt>すい</rt></ruby>・<ruby>金<rt>きん</rt></ruby>', '<ruby>火<rt>か</rt></ruby>・<ruby>木<rt>もく</rt></ruby>', '<ruby>土<rt>ど</rt></ruby>・<ruby>日<rt>にち</rt></ruby>', '<ruby>毎日<rt>まいにち</rt></ruby>'], correct: 'b' },
+                    { num: 71, text: '一<ruby>週間<rt>いっしゅうかん</rt></ruby>に <ruby>文法<rt>ぶんぽう</rt></ruby>の クラスは いくつ ありますか।', options: ['１<ruby>回<rt>かい</rt></ruby>', '２<ruby>回<rt>かい</rt></ruby>', '৩<ruby>回<rt>かい</rt></ruby>', '৪<ruby>回<rt>かい</rt></ruby>'], correct: 'c' },
+                    { num: 72, text: '<ruby>会話<rt>かいわ</rt></ruby>の クラスについて <ruby>正<rt>ただ</rt></ruby>しい ものは どれですか।', options: ['<ruby>週<rt>しゅう</rt></ruby>に １<ruby>回<rt>かい</rt></ruby> です।', '<ruby>週<rt>しゅう</rt></ruby>に ২<ruby>回<rt>かい</rt></ruby> です।', '<ruby>週<rt>しゅう</rt></ruby>に ৩<ruby>回<rt>かい</rt></ruby> です।', '<ruby>週<rt>しゅう</rt></ruby>に ৫<ruby>回<rt>かい</rt></ruby> です।'], correct: 'b' }
+                ]
+            },
+            {
+                id: 19,
+                title: 'パッセージ １９：マリアさん',
+                text: 'マリアさんは スペインから <ruby>来<rt>き</rt></ruby>ました。<br>いま <ruby>東京<rt>とうきょう</rt></ruby>の <ruby>日本語学校<rt>にほんごがっこう</rt></ruby>で <ruby>勉強<rt>べんきょう</rt></ruby>して います。<br><ruby>日本<rt>にほん</rt></ruby>の <ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>では、 すし と ラーメンが <ruby>大好<rt>だいす</rt></ruby>きです।',
+                questions: [
+                    { num: 73, text: 'マリアさんは どこから <ruby>来<rt>き</rt></ruby>ましたか।', options: ['フランス', 'ドイツ', 'スペイン', 'イタリア'], correct: 'c' },
+                    { num: 74, text: 'いま どこで <ruby>勉強<rt>べんきょう</rt></ruby>して いますか।', options: ['スペインの <ruby>大学<rt>だいがく</rt></ruby>', '<ruby>東京<rt>とうきょう</rt></ruby>の <ruby>日本語学校<rt>にほんごがっこう</rt></ruby>', '<ruby>大阪<rt>おおさか</rt></ruby>の <ruby>高校<rt>こうこう</rt></ruby>', '<ruby>京都<rt>きょうと</rt></ruby>の <ruby>大学<rt>だいがく</rt></ruby>'], correct: 'b' },
+                    { num: 75, text: '<ruby>日本<rt>にほん</rt></ruby>の <ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>で <ruby>好<rt>す</rt></ruby>きな ものは どれですか।', options: ['カレー と パン', 'さかな と にく', 'すし と ラーメン', 'ピザ と パスタ'], correct: 'c' },
+                    { num: 76, text: 'この <ruby>文<rt>ぶん</rt></ruby>から わかる ことは どれですか।', options: ['マリアさんは <ruby>日本人<rt>にほんじん</rt></ruby>です।', 'マリアさんは <ruby>日本語<rt>にほんご</rt></ruby>を <ruby>勉強<rt>べんきょう</rt></ruby>して いません।', 'マリアさんは 日本の <ruby>食<rt>た</rt></ruby>べ<ruby>物<rt>もの</rt></ruby>が きらいです।', 'マリアさんは <ruby>日本語学校<rt>にほんごがっこう</rt></ruby>の <ruby>学生<rt>がくせい</rt></ruby>です।'], correct: 'd' }
+                ]
+            },
+            {
+                id: 20,
+                title: 'パッセージ ２０：天気よほう',
+                text: 'きょうの <ruby>天気予報<rt>てんきよほう</rt></ruby>です。<br><ruby>朝<rt>あさ</rt></ruby>：　くもり<br><ruby>昼<rt>ひる</rt></ruby>：　はれ<br><ruby>夜<rt>よる</rt></ruby>：　<ruby>雨<rt>あめ</rt></ruby>',
+                questions: [
+                    { num: 77, text: '<ruby>朝<rt>あさ</rt></ruby>の <ruby>天気<rt>てんき</rt></ruby>は どうですか।', options: ['はれ', 'くもり', 'あめ', 'ゆき'], correct: 'b' },
+                    { num: 78, text: '<ruby>昼<rt>ひる</rt></ruby>は どんな <ruby>天気<rt>てんき</rt></ruby>ですか।', options: ['はれ', 'くもり', 'あめ', 'ゆき'], correct: 'a' },
+                    { num: 79, text: '<ruby>夜<rt>よる</rt></ruby>は どう なりますか।', options: ['はれ', 'くもり', 'あめ', 'ゆき'], correct: 'c' },
+                    { num: 80, text: 'この よほう から <ruby>正<rt>ただ</rt></ruby>しい ものは どれですか।', options: ['<ruby>一日中<rt>いちにちじゅう</rt></ruby> はれです।', '<ruby>朝<rt>あさ</rt></ruby>は あめで、 <ruby>夜<rt>よる</rt></ruby>は くもりです।', '<ruby>昼<rt>ひる</rt></ruby>は はれ ですが、 <ruby>夜<rt>よる</rt></ruby>は あめです।', 'ずっと くもりです।'], correct: 'c' }
+                ]
+            }
+        ];
+
+        // 簡単な解説 (ベンガル語)
+        const explanations = {
+            61: 'প্রথম লাইনে পরিষ্কার লেখা: “駅前から大学まで行きます” → তাই B।',
+            62: 'দ্বিতীয় লাইনে “駅前を８時に出て” → ৮টায় ছাড়ে।',
+            63: 'একই লাইনে “大学には８時２０分に着きます” → ৮:২০-এ পৌঁছায়।',
+            64: '“一日に１０本あります” – দিনে ১০টা বাস।',
+            65: 'প্রথম লাইনে সরাসরি “しゅみは読書です” লেখা আছে।',
+            66: '“一週間に３さつぐらい本を読みます” → সপ্তাহে প্রায় ৩টা বই।',
+            67: 'তৃতীয় লাইনে স্পষ্ট: “ミステリーの小説が好きです” → রহস্য উপন্যাস পছন্দ।',
+            68: 'সপ্তাহে ৩টা বই পড়ে → ভালোই বই পড়ে, তাই C ঠিক।',
+            69: 'টেবিলে “月・水・金：文法のクラス” লেখা → তাই A।',
+            70: '“火・木：会話のクラス” → মঙ্গলবার, বৃহস্পতিবার।',
+            71: 'সোম, বুধ, শুক্র → মোট ৩ দিন।',
+            72: '火・木 = সপ্তাহে ২ দিন, তাই B ঠিক।',
+            73: 'প্রথম লাইনে “スペインから来ました” → তাই C।',
+            74: 'দ্বিতীয় লাইনে “東京の日本語学校で勉強しています” → B।',
+            75: 'তৃতীয় লাইনে “すしとラーメンが大好きです” → C।',
+            76: '“日本語学校で勉強しています” = ছাত্র/ছাত্রী, তাই D।',
+            77: 'টেবিলে “朝：くもり” → সকাল মেঘলা।',
+            78: '“昼：はれ” → দুপুরে রোদ।',
+            79: '“夜：雨” → রাতে বৃষ্টি।',
+            80: 'সকাল = くもり, দুপুর = はれ, রাত = 雨 → তাই C একমাত্র মিলছে।'
+        };
+
+        // HTML 生成
+        function renderPassages() {
+            const grid = document.getElementById('quizGrid');
+            grid.innerHTML = '';
+            
+            passages.forEach(passage => {
+                const passageDiv = document.createElement('div');
+                passageDiv.className = 'passage-card';
+                
+                let passageHtml = `
+                    <div class="passage-title">📌 ${passage.title}</div>
+                    <div class="passage-text">${passage.text}</div>
+                `;
+                
+                passage.questions.forEach(q => {
+                    let optionsHtml = '';
+                    const optLetters = ['a', 'b', 'c', 'd'];
+                    q.options.forEach((opt, idx) => {
+                        optionsHtml += `<div class="option-btn" onclick="checkAnswer(this, ${q.num}, '${optLetters[idx]}')">${optLetters[idx].toUpperCase()}) ${opt}</div>`;
+                    });
+                    
+                    passageHtml += `
+                        <div class="question-card" id="q${q.num}">
+                            <div class="q-num">Q${q.num}</div>
+                            <div class="question-text">${q.text}</div>
+                            <div class="options" id="opt-group-${q.num}">
+                                ${optionsHtml}
+                            </div>
+                            <div class="feedback" id="fb-${q.num}"></div>
+                        </div>
+                    `;
+                });
+                
+                passageDiv.innerHTML = passageHtml;
+                grid.appendChild(passageDiv);
+            });
+        }
+
+        // 答えをチェック
+        function checkAnswer(element, qNum, selectedOpt) {
+            const groupId = 'opt-group-' + qNum;
+            const options = document.querySelectorAll(`#${groupId} .option-btn`);
+            const feedbackDiv = document.getElementById('fb-' + qNum);
+
+            if (options[0].classList.contains('disabled-opt')) return;
+
+            // 正解を探す
+            let correctAns = '';
+            passages.forEach(p => {
+                p.questions.forEach(q => {
+                    if (q.num === qNum) correctAns = q.correct;
+                });
+            });
+            
+            const isCorrect = (selectedOpt === correctAns);
+            options.forEach(opt => opt.classList.add('disabled-opt'));
+
+            options.forEach(opt => {
+                if (opt.getAttribute('onclick').includes(`'${correctAns}'`)) {
+                    opt.classList.add('correct-opt');
+                }
+            });
+
+            if (!isCorrect) {
+                element.classList.add('wrong-opt');
+            }
+
+            const exp = explanations[qNum];
+            if (isCorrect) {
+                feedbackDiv.innerHTML = `
+                    <div class="feedback correct-fb">
+                        <span class="fb-title">⭕ せいかい！</span> 
+                        <div>${exp}</div>
+                    </div>
+                `;
+            } else {
+                feedbackDiv.innerHTML = `
+                    <div class="feedback wrong-fb">
+                        <span class="fb-title">❌ まちがい。</span> 正しい答えは緑色です。<br>
+                        <div>${exp}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // 全ての答えを表示
+        function revealAllAnswers() {
+            for (let qNum = 61; qNum <= 80; qNum++) {
+                const groupId = 'opt-group-' + qNum;
+                const options = document.querySelectorAll(`#${groupId} .option-btn`);
+                const feedbackDiv = document.getElementById('fb-' + qNum);
+                
+                let correctAns = '';
+                passages.forEach(p => {
+                    p.questions.forEach(q => {
+                        if (q.num === qNum) correctAns = q.correct;
+                    });
+                });
+                
+                const exp = explanations[qNum];
+
+                options.forEach(opt => {
+                    opt.classList.add('disabled-opt');
+                    if (opt.getAttribute('onclick').includes(`'${correctAns}'`)) {
+                        opt.classList.add('correct-opt');
+                    }
+                });
+
+                feedbackDiv.innerHTML = `
+                    <div class="feedback correct-fb">
+                        <span class="fb-title">✅ 答え：</span> 
+                        <div>${exp}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // リセット
+        function resetAll() {
+            for (let qNum = 61; qNum <= 80; qNum++) {
+                const groupId = 'opt-group-' + qNum;
+                const options = document.querySelectorAll(`#${groupId} .option-btn`);
+                const feedbackDiv = document.getElementById('fb-' + qNum);
+
+                options.forEach(opt => {
+                    opt.classList.remove('disabled-opt', 'correct-opt', 'wrong-opt');
+                });
+
+                feedbackDiv.innerHTML = '';
+            }
+        }
+
+        window.onload = renderPassages;
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+</body>
+</html>

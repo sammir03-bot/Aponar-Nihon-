@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLPT N5 読解クイズ - パート9 (問題161-180) ふりがな付き</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Hind Siliguri', 'Noto Sans Bengali', 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
+            background: linear-gradient(145deg, #f0f9ff 0%, #e0f2fe 100%);
+            min-height: 100vh;
+            padding: 30px 20px;
+            color: #0c4a6e;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            border-radius: 40px 40px 20px 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border-bottom: 6px solid #0284c7;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.4em;
+            font-weight: 700;
+            color: #0369a1;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        h1 span {
+            background: #0284c7;
+            color: white;
+            font-size: 0.45em;
+            padding: 6px 20px;
+            border-radius: 50px;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+
+        .subhead {
+            font-size: 1.2em;
+            color: #0369a1;
+            background: #f0f9ff;
+            padding: 12px 20px;
+            border-radius: 60px;
+            display: inline-block;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 2px dashed #7dd3fc;
+            font-weight: 600;
+            color: #0369a1;
+        }
+
+        .badge {
+            background: #0369a1;
+            color: white;
+            padding: 8px 25px;
+            border-radius: 40px;
+            font-size: 1em;
+        }
+
+        .quiz-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .passage-card {
+            background: white;
+            border-radius: 30px;
+            padding: 25px 30px;
+            box-shadow: 0 10px 25px rgba(2, 132, 199, 0.1);
+            border: 2px solid #bae6fd;
+        }
+
+        .passage-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            color: #0284c7;
+            margin-bottom: 15px;
+            border-bottom: 2px dashed #7dd3fc;
+            padding-bottom: 8px;
+        }
+
+        .passage-text {
+            font-size: 1.3em;
+            line-height: 2.2;
+            background: #f0f9ff;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border: 1px solid #bae6fd;
+        }
+
+        .question-card {
+            background: white;
+            border-radius: 25px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(2, 132, 199, 0.08);
+            border: 2px solid #e0f2fe;
+        }
+
+        .q-num {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            font-weight: 600;
+            padding: 4px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .question-text {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            font-weight: 500;
+            color: #075985;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 15px 0;
+        }
+
+        .option-btn {
+            background: white;
+            border: 2.5px solid #bae6fd;
+            padding: 12px 10px;
+            border-radius: 40px;
+            font-size: 1.1em;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.25s;
+            text-align: center;
+            color: #075985;
+        }
+
+        .option-btn:hover:not(.disabled-opt) {
+            background: #e0f2fe;
+            border-color: #0284c7;
+            transform: scale(1.01);
+        }
+
+        .correct-opt {
+            background: #dcfce7 !important;
+            border-color: #22c55e !important;
+            color: #166534 !important;
+        }
+
+        .wrong-opt {
+            background: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #7f1d1d !important;
+            opacity: 0.9;
+        }
+
+        .disabled-opt {
+            opacity: 0.6;
+            cursor: not-allowed;
+            pointer-events: none;
+        }
+
+        .feedback {
+            margin-top: 15px;
+            padding: 15px 20px;
+            border-radius: 20px;
+            background: #f8fafc;
+            border-left: 6px solid #64748b;
+            font-size: 1.05em;
+            line-height: 1.6;
+            border: 1px solid #cbd5e1;
+        }
+
+        .feedback.correct-fb {
+            background: #f0fdf4;
+            border-left-color: #22c55e;
+        }
+
+        .feedback.wrong-fb {
+            background: #fef2f2;
+            border-left-color: #ef4444;
+        }
+
+        .fb-title {
+            font-weight: 700;
+            margin-right: 8px;
+            font-size: 1.05em;
+        }
+
+        .action-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 40px 0 30px;
+            justify-content: center;
+        }
+
+        .primary-btn, .secondary-btn {
+            border: none;
+            padding: 16px 40px;
+            border-radius: 60px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .primary-btn {
+            background: #0284c7;
+            color: white;
+        }
+
+        .primary-btn:hover {
+            background: #0369a1;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(2,132,199,0.3);
+        }
+
+        .secondary-btn {
+            background: #1e293b;
+            color: white;
+        }
+
+        .secondary-btn:hover {
+            background: #0f172a;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #0369a1;
+            font-size: 1rem;
+            background: white;
+            padding: 20px;
+            border-radius: 70px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+            border: 2px solid #bae6fd;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, transparent, #0284c7, transparent);
+            margin: 30px 0;
+        }
+
+        @media (max-width: 700px) {
+            h1 { font-size: 2em; }
+            .passage-text { font-size: 1.1em; }
+            .question-text { font-size: 1.2em; }
+            .options { grid-template-columns: 1fr; }
+        }
+
+        /* furigana styling */
+        ruby {
+            ruby-align: center;
+        }
+        rt {
+            font-size: 0.55em;
+            color: #0284c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                📖 JLPT N5 読解クイズ
+                <span>Part 9 (問題161-180)</span>
+            </h1>
+            <div class="subhead">
+                文章を読んで質問に答えてください。（ふりがな付き・簡単な解説）
+            </div>
+            <div class="stats">
+                <span>🈳 5つの文章 / 20問</span>
+                <span class="badge">レベル N5 · 読解</span>
+            </div>
+        </div>
+
+        <div class="quiz-grid" id="quizGrid">
+            <!-- JavaScriptで生成 -->
+        </div>
+
+        <div class="action-buttons">
+            <button class="primary-btn" onclick="revealAllAnswers()">✅ 全ての答えを見る</button>
+            <button class="secondary-btn" onclick="resetAll()">🔄 リセット</button>
+        </div>
+
+        <hr>
+        <div class="footer">
+            ⚡ 日本語能力試験 N5 対策 | 解説はベンガル語（とても簡単な説明）
+        </div>
+    </div>
+
+    <script>
+        // 文章データ (Passage 41-45) with furigana
+        const passages = [
+            {
+                id: 41,
+                title: 'パッセージ ４１：レストランの予約メール',
+                text: 'レストラン <ruby>予約<rt>よやく</rt></ruby>メール<br><br><ruby>田中<rt>たなか</rt></ruby>さま<br><br>３<ruby>月<rt>がつ</rt></ruby>１５<ruby>日<rt>にち</rt></ruby> <ruby>土曜日<rt>どようび</rt></ruby><br><ruby>午後<rt>ごご</rt></ruby>７<ruby>時<rt>じ</rt></ruby>から ４<ruby>人<rt>にん</rt></ruby> の <ruby>予約<rt>よやく</rt></ruby>を うけたまわりました。<br>お<ruby>店<rt>みせ</rt></ruby>の <ruby>名前<rt>なまえ</rt></ruby>は 「さくらレストラン」、 <ruby>場所<rt>ばしょ</rt></ruby>は <ruby>駅前<rt>えきまえ</rt></ruby>です।',
+                questions: [
+                    { num: 161, text: '<ruby>予約<rt>よやく</rt></ruby>を した <ruby>人<rt>ひと</rt></ruby>の <ruby>名前<rt>なまえ</rt></ruby>は だれですか।', options: ['さくら', '<ruby>山田<rt>やまだ</rt></ruby>', '<ruby>田中<rt>たなか</rt></ruby>', '<ruby>鈴木<rt>すずき</rt></ruby>'], correct: 'c' },
+                    { num: 162, text: '<ruby>予約<rt>よやく</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>は いつですか।', options: ['৩<ruby>月<rt>がつ</rt></ruby>১৪<ruby>日<rt>にち</rt></ruby> <ruby>金曜日<rt>きんようび</rt></ruby>', '৩<ruby>月<rt>がつ</rt></ruby>১৫<ruby>日<rt>にち</rt></ruby> <ruby>土曜日<rt>どようび</rt></ruby>', '৩<ruby>月<rt>がつ</rt></ruby>১৬<ruby>日<rt>にち</rt></ruby> <ruby>日曜日<rt>にちようび</rt></ruby>', '৪<ruby>月<rt>がつ</rt></ruby>১৫<ruby>日<rt>にち</rt></ruby>'], correct: 'b' },
+                    { num: 163, text: '<ruby>予約<rt>よやく</rt></ruby>の <ruby>時間<rt>じかん</rt></ruby>は <ruby>何時<rt>なんじ</rt></ruby>から ですか।', options: ['<ruby>午後<rt>ごご</rt></ruby>৬<ruby>時<rt>じ</rt></ruby>から', '<ruby>午後<rt>ごご</rt></ruby>৭<ruby>時<rt>じ</rt></ruby>から', '<ruby>午後<rt>ごご</rt></ruby>৮<ruby>時<rt>じ</rt></ruby>から', '<ruby>午前<rt>ごぜん</rt></ruby>৭<ruby>時<rt>じ</rt></ruby>から'], correct: 'b' },
+                    { num: 164, text: 'レストランは どこ に ありますか।', options: ['<ruby>学校<rt>がっこう</rt></ruby>の <ruby>前<rt>まえ</rt></ruby>', '<ruby>山<rt>やま</rt></ruby>の <ruby>上<rt>うえ</rt></ruby>', '<ruby>駅前<rt>えきまえ</rt></ruby>', '<ruby>川<rt>かわ</rt></ruby>の そば'], correct: 'c' }
+                ]
+            },
+            {
+                id: 42,
+                title: 'パッセージ ４２：ホテルのチェックインカード',
+                text: 'ホテル チェックイン カード<br><br><ruby>名前<rt>なまえ</rt></ruby>：　マリア・ロペス<br><ruby>国<rt>くに</rt></ruby>：　スペイン<br><ruby>泊<rt>と</rt></ruby>まる <ruby>日<rt>ひ</rt></ruby>：　４<ruby>月<rt>がつ</rt></ruby>１０<ruby>日<rt>とおか</rt></ruby>〜４<ruby>月<rt>がつ</rt></ruby>１２<ruby>日<rt>じゅうににち</rt></ruby><br><ruby>部屋<rt>へや</rt></ruby>の タイプ：　シングル',
+                questions: [
+                    { num: 165, text: 'この <ruby>人<rt>ひと</rt></ruby>の <ruby>名前<rt>なまえ</rt></ruby>は <ruby>何<rt>なん</rt></ruby>ですか।', options: ['マリア・ロペス', 'さとう まり', 'マリア・スズキ', 'ロペス・タナカ'], correct: 'a' },
+                    { num: 166, text: '<ruby>国<rt>くに</rt></ruby>は どこですか।', options: ['<ruby>日本<rt>にほん</rt></ruby>', 'アメリカ', 'フランス', 'スペイン'], correct: 'd' },
+                    { num: 167, text: 'この <ruby>人<rt>ひと</rt></ruby>は <ruby>何日間<rt>なんにちかん</rt></ruby> <ruby>泊<rt>と</rt></ruby>まりますか।', options: ['১<ruby>日<rt>にち</rt></ruby>', '২<ruby>日<rt>にち</rt></ruby>', '৩<ruby>日<rt>にち</rt></ruby>', '৪<ruby>日<rt>にち</rt></ruby>'], correct: 'b' },
+                    { num: 168, text: '<ruby>部屋<rt>へや</rt></ruby>の タイプは <ruby>何<rt>なん</rt></ruby>ですか।', options: ['ツイン', 'ダブル', 'シングル', 'スイート'], correct: 'c' }
+                ]
+            },
+            {
+                id: 43,
+                title: 'パッセージ ４３：バスツアーのパンフレット',
+                text: '<ruby>日帰<rt>ひがえ</rt></ruby>り バスツアー<br><br><ruby>行<rt>い</rt></ruby>き<ruby>先<rt>さき</rt></ruby>：　<ruby>富士山<rt>ふじさん</rt></ruby> と <ruby>近<rt>ちか</rt></ruby>く の こうえん<br><ruby>日<rt>ひ</rt></ruby>：　৫<ruby>月<rt>がつ</rt></ruby>৩<ruby>日<rt>にち</rt></ruby> <ruby>日曜日<rt>にちようび</rt></ruby><br><ruby>時間<rt>じかん</rt></ruby>：　<ruby>朝<rt>あさ</rt></ruby>৮<ruby>時<rt>じ</rt></ruby> に <ruby>東京駅<rt>とうきょうえき</rt></ruby> <ruby>出発<rt>しゅっぱつ</rt></ruby><br>　　　　　<ruby>夜<rt>よる</rt></ruby>৭<ruby>時<rt>じ</rt></ruby> に <ruby>東京駅<rt>とうきょうえき</rt></ruby> に <ruby>戻<rt>もど</rt></ruby>ります',
+                questions: [
+                    { num: 169, text: 'この ツアーは どこへ <ruby>行<rt>い</rt></ruby>きますか।', options: ['<ruby>京都<rt>きょうと</rt></ruby>', '<ruby>大阪<rt>おおさか</rt></ruby>', '<ruby>富士山<rt>ふじさん</rt></ruby> と <ruby>近<rt>ちか</rt></ruby>く の こうえん', '<ruby>海<rt>うみ</rt></ruby>'], correct: 'c' },
+                    { num: 170, text: 'ツアーの<ruby>日<rt>ひ</rt></ruby>は いつですか।', options: ['৫<ruby>月<rt>がつ</rt></ruby>১<ruby>日<rt>にち</rt></ruby> <ruby>金曜日<rt>きんようび</rt></ruby>', '৫<ruby>月<rt>がつ</rt></ruby>২<ruby>日<rt>にち</rt></ruby> <ruby>土曜日<rt>どようび</rt></ruby>', '৫<ruby>月<rt>がつ</rt></ruby>৩<ruby>日<rt>にち</rt></ruby> <ruby>日曜日<rt>にちようび</rt></ruby>', '৫<ruby>月<rt>がつ</rt></ruby>৪<ruby>日<rt>にち</rt></ruby> <ruby>月曜日<rt>げつようび</rt></ruby>'], correct: 'c' },
+                    { num: 171, text: 'バスは <ruby>何時<rt>なんじ</rt></ruby>に <ruby>東京駅<rt>とうきょうえき</rt></ruby>を <ruby>出発<rt>しゅっぱつ</rt></ruby>しますか।', options: ['<ruby>朝<rt>あさ</rt></ruby>৭<ruby>時<rt>じ</rt></ruby>', '<ruby>朝<rt>あさ</rt></ruby>৮<ruby>時<rt>じ</rt></ruby>', '<ruby>朝<rt>あさ</rt></ruby>৯<ruby>時<rt>じ</rt></ruby>', '<ruby>昼<rt>ひる</rt></ruby>১২<ruby>時<rt>じ</rt></ruby>'], correct: 'b' },
+                    { num: 172, text: '<ruby>東京駅<rt>とうきょうえき</rt></ruby>に <ruby>戻<rt>もど</rt></ruby>って <ruby>来<rt>く</rt></ruby>る のは <ruby>何時<rt>なんじ</rt></ruby>ですか।', options: ['<ruby>午後<rt>ごご</rt></ruby>৩<ruby>時<rt>じ</rt></ruby>', '<ruby>午後<rt>ごご</rt></ruby>৫<ruby>時<rt>じ</rt></ruby>', '<ruby>夜<rt>よる</rt></ruby>৭<ruby>時<rt>じ</rt></ruby>', '<ruby>夜<rt>よる</rt></ruby>৯<ruby>時<rt>じ</rt></ruby>'], correct: 'c' }
+                ]
+            },
+            {
+                id: 44,
+                title: 'パッセージ ４４：日本語クラスの出席表',
+                text: 'にほんご クラス <ruby>出席表<rt>しゅっせきひょう</rt></ruby><br><br><ruby>月曜日<rt>げつようび</rt></ruby><br><br>たなか　○<br>リー　　○<br>アリ　　×<br>さとう　○<br><br>※ ○（まる）＝ <ruby>出席<rt>しゅっせき</rt></ruby>　×（ばつ）＝ <ruby>休<rt>やす</rt></ruby>み',
+                questions: [
+                    { num: 173, text: 'アリさんは きょう、 クラスに <ruby>来<rt>き</rt></ruby>ましたか।', options: ['はい、 来ました।', 'いいえ、 <ruby>休<rt>やす</rt></ruby>み でした।'], correct: 'b' },
+                    { num: 174, text: 'クラスに <ruby>来<rt>き</rt></ruby>た <ruby>人<rt>ひと</rt></ruby>は <ruby>何人<rt>なんにん</rt></ruby>ですか।', options: ['১<ruby>人<rt>にん</rt></ruby>', '২<ruby>人<rt>にん</rt></ruby>', '৩<ruby>人<rt>にん</rt></ruby>', '৪<ruby>人<rt>にん</rt></ruby>'], correct: 'c' },
+                    { num: 175, text: '<ruby>休<rt>やす</rt></ruby>んだ <ruby>人<rt>ひと</rt></ruby>は だれ ですか।', options: ['たなか', 'リー', 'アリ', 'さとう'], correct: 'c' },
+                    { num: 176, text: 'この <ruby>日<rt>ひ</rt></ruby>に ついて <ruby>正<rt>ただ</rt></ruby>しい ものは どれですか।', options: ['<ruby>全員<rt>ぜんいん</rt></ruby>が <ruby>出席<rt>しゅっせき</rt></ruby>しました。', '১<ruby>人<rt>にん</rt></ruby>だけ 休みました。', '২<ruby>人<rt>にん</rt></ruby> 休みました。', 'だれも 来ませんでした。'], correct: 'b' }
+                ]
+            },
+            {
+                id: 45,
+                title: 'パッセージ ４５：スーパーのセール',
+                text: 'スーパー <ruby>週末<rt>しゅうまつ</rt></ruby> セール<br><br>・<ruby>土曜日<rt>どようび</rt></ruby> と <ruby>日曜日<rt>にちようび</rt></ruby><br>　やさい と くだもの が ３<ruby>割引<rt>わりびき</rt></ruby>き です。<br><br>・<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby> と たまご は、 <ruby>日曜日<rt>にちようび</rt></ruby> だけ <ruby>安<rt>やす</rt></ruby>く なります।',
+                questions: [
+                    { num: 177, text: 'セールは いつ ありますか।', options: ['<ruby>月曜日<rt>げつようび</rt></ruby> と <ruby>火曜日<rt>かようび</rt></ruby>', '<ruby>水曜日<rt>すいようび</rt></ruby> と <ruby>木曜日<rt>もくようび</rt></ruby>', '<ruby>土曜日<rt>どようび</rt></ruby> と <ruby>日曜日<rt>にちようび</rt></ruby>', '<ruby>毎日<rt>まいにち</rt></ruby>'], correct: 'c' },
+                    { num: 178, text: '３<ruby>割引<rt>わりびき</rt></ruby>き になる のは <ruby>何<rt>なに</rt></ruby>ですか।', options: ['やさい と くだもの', '<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby> と たまご', 'にく と さかな', 'パン と ケーキ'], correct: 'a' },
+                    { num: 179, text: '<ruby>牛乳<rt>ぎゅうにゅう</rt></ruby>と たまごが <ruby>安<rt>やす</rt></ruby>く なる のは いつですか।', options: ['<ruby>土曜日<rt>どようび</rt></ruby> だけ', '<ruby>日曜日<rt>にちようび</rt></ruby> だけ', '<ruby>土曜日<rt>どようび</rt></ruby> と <ruby>日曜日<rt>にちようび</rt></ruby>', '<ruby>毎日<rt>まいにち</rt></ruby>'], correct: 'b' },
+                    { num: 180, text: 'この セール について <ruby>正<rt>ただ</rt></ruby>しい もの は どれですか।', options: ['いつも やさいが 安い です।', '<ruby>日曜日<rt>にちようび</rt></ruby> は <ruby>牛乳<rt>ぎゅうにゅう</rt></ruby> と たまごも 安い です।', '<ruby>土曜日<rt>どようび</rt></ruby> は <ruby>牛乳<rt>ぎゅうにゅう</rt></ruby> と たまごが 安い です।', 'セールは <ruby>月曜日<rt>げつようび</rt></ruby> と <ruby>火曜日<rt>かようび</rt></ruby> です।'], correct: 'b' }
+                ]
+            }
+        ];
+
+        // 簡単な解説 (ベンガル語)
+        const explanations = {
+            161: 'দ্বিতীয় লাইনে “田中さま” লেখা → রিজার্ভেশন যার নামে, তিনি তানাকা সান।',
+            162: '“３月１５日 土曜日” স্পষ্ট আছে।',
+            163: '“午後７時から４人の予約” → ৭টা থেকে।',
+            164: '“場所は駅前です” → স্টেশনের সামনে।',
+            165: '“名前：マリア・ロペス” লেখা।',
+            166: '“国：スペイン” → স্পেন।',
+            167: '৪/১০ থেকে ৪/১২ = ২ রাত। (সহজ উত্তর: ২ দিন)',
+            168: 'শেষ লাইনে “シングル” লেখা → এক বেডের রুম।',
+            169: '“行き先：富士山と近くのこうえん” লেখা আছে।',
+            170: '“５月３日 日曜日” → ৫ই মে রবিবার।',
+            171: '“朝８時に東京駅出発” → সকাল ৮টা।',
+            172: '“夜７時に東京駅に戻ります” → রাত ৭টা।',
+            173: 'আলির পাশে “×” আছে → আজ ক্লাসে আসেনি, ছুটি।',
+            174: '○ আছে তানাকা, লি, সাতো → ৩ জন উপস্থিত।',
+            175: 'শুধু আলির পাশে × আছে।',
+            176: '৩ জন ○, ১ জন × → একমাত্র B ঠিক।',
+            177: 'প্রথম লাইনে “土曜日と日曜日” স্পষ্ট।',
+            178: '“やさいとくだものが３割引きです” লেখা আছে।',
+            179: '“牛乳とたまごは、日曜日だけ安くなります” → শুধু রবিবারে।',
+            180: 'টেক্সট অনুযায়ী – সপ্তাহান্তে সবজি+ফল সেলে, আর রবিবারে অতিরিক্ত দুধ+ডিমও সস্তা হয়।'
+        };
+
+        // HTML 生成
+        function renderPassages() {
+            const grid = document.getElementById('quizGrid');
+            grid.innerHTML = '';
+            
+            passages.forEach(passage => {
+                const passageDiv = document.createElement('div');
+                passageDiv.className = 'passage-card';
+                
+                let passageHtml = `
+                    <div class="passage-title">📌 ${passage.title}</div>
+                    <div class="passage-text">${passage.text}</div>
+                `;
+                
+                passage.questions.forEach(q => {
+                    let optionsHtml = '';
+                    const optLetters = ['a', 'b', 'c', 'd'];
+                    q.options.forEach((opt, idx) => {
+                        optionsHtml += `<div class="option-btn" onclick="checkAnswer(this, ${q.num}, '${optLetters[idx]}')">${optLetters[idx].toUpperCase()}) ${opt}</div>`;
+                    });
+                    
+                    passageHtml += `
+                        <div class="question-card" id="q${q.num}">
+                            <div class="q-num">Q${q.num}</div>
+                            <div class="question-text">${q.text}</div>
+                            <div class="options" id="opt-group-${q.num}">
+                                ${optionsHtml}
+                            </div>
+                            <div class="feedback" id="fb-${q.num}"></div>
+                        </div>
+                    `;
+                });
+                
+                passageDiv.innerHTML = passageHtml;
+                grid.appendChild(passageDiv);
+            });
+        }
+
+        // 答えをチェック
+        function checkAnswer(element, qNum, selectedOpt) {
+            const groupId = 'opt-group-' + qNum;
+            const options = document.querySelectorAll(`#${groupId} .option-btn`);
+            const feedbackDiv = document.getElementById('fb-' + qNum);
+
+            if (options[0].classList.contains('disabled-opt')) return;
+
+            // 正解を探す
+            let correctAns = '';
+            passages.forEach(p => {
+                p.questions.forEach(q => {
+                    if (q.num === qNum) correctAns = q.correct;
+                });
+            });
+            
+            const isCorrect = (selectedOpt === correctAns);
+            options.forEach(opt => opt.classList.add('disabled-opt'));
+
+            options.forEach(opt => {
+                if (opt.getAttribute('onclick').includes(`'${correctAns}'`)) {
+                    opt.classList.add('correct-opt');
+                }
+            });
+
+            if (!isCorrect) {
+                element.classList.add('wrong-opt');
+            }
+
+            const exp = explanations[qNum];
+            if (isCorrect) {
+                feedbackDiv.innerHTML = `
+                    <div class="feedback correct-fb">
+                        <span class="fb-title">⭕ せいかい！</span> 
+                        <div>${exp}</div>
+                    </div>
+                `;
+            } else {
+                feedbackDiv.innerHTML = `
+                    <div class="feedback wrong-fb">
+                        <span class="fb-title">❌ まちがい。</span> 正しい答えは緑色です。<br>
+                        <div>${exp}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // 全ての答えを表示
+        function revealAllAnswers() {
+            for (let qNum = 161; qNum <= 180; qNum++) {
+                const groupId = 'opt-group-' + qNum;
+                const options = document.querySelectorAll(`#${groupId} .option-btn`);
+                const feedbackDiv = document.getElementById('fb-' + qNum);
+                
+                let correctAns = '';
+                passages.forEach(p => {
+                    p.questions.forEach(q => {
+                        if (q.num === qNum) correctAns = q.correct;
+                    });
+                });
+                
+                const exp = explanations[qNum];
+
+                options.forEach(opt => {
+                    opt.classList.add('disabled-opt');
+                    if (opt.getAttribute('onclick').includes(`'${correctAns}'`)) {
+                        opt.classList.add('correct-opt');
+                    }
+                });
+
+                feedbackDiv.innerHTML = `
+                    <div class="feedback correct-fb">
+                        <span class="fb-title">✅ 答え：</span> 
+                        <div>${exp}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // リセット
+        function resetAll() {
+            for (let qNum = 161; qNum <= 180; qNum++) {
+                const groupId = 'opt-group-' + qNum;
+                const options = document.querySelectorAll(`#${groupId} .option-btn`);
+                const feedbackDiv = document.getElementById('fb-' + qNum);
+
+                options.forEach(opt => {
+                    opt.classList.remove('disabled-opt', 'correct-opt', 'wrong-opt');
+                });
+
+                feedbackDiv.innerHTML = '';
+            }
+        }
+
+        window.onload = renderPassages;
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+</body>
+</html>
