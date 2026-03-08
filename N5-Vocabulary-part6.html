@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLPT N5 ভোকাবুলারি কুইজ • পার্ট ৬ (১০১-১২০)</title>
+    <!-- ফন্ট ও স্টাইল -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Hind Siliguri', 'Poppins', sans-serif;
+            background: linear-gradient(145deg, #f6f9fc 0%, #e6f0f5 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #1e2b4f, #2b3d6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -0.5px;
+            text-shadow: 4px 4px 10px rgba(0,20,40,0.2);
+        }
+        .header p {
+            font-size: 1.3rem;
+            color: #2c3e50;
+            background: rgba(255,255,255,0.6);
+            backdrop-filter: blur(4px);
+            display: inline-block;
+            padding: 8px 30px;
+            border-radius: 60px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border: 1px solid rgba(255,255,255,0.8);
+        }
+        .quiz-grid {
+            max-width: 1000px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .card {
+            background: rgba(255,255,255,0.85);
+            backdrop-filter: blur(12px);
+            border-radius: 50px;
+            padding: 30px 35px;
+            box-shadow: 0 30px 50px -20px rgba(0,40,80,0.3), 0 0 0 1px rgba(255,255,255,0.6) inset;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid rgba(255,255,255,0.7);
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 40px 60px -15px rgba(20,60,120,0.4);
+        }
+        .q-num {
+            display: inline-block;
+            background: #2b3d6b;
+            color: white;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 5px 25px;
+            border-radius: 40px;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 12px rgba(0,30,70,0.3);
+        }
+        .q-text {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #0b1e38;
+            margin-bottom: 25px;
+            line-height: 1.4;
+            word-break: keep-all;
+        }
+        .options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .option {
+            flex: 1 1 calc(50% - 20px);
+            min-width: 200px;
+            background: white;
+            border: 2px solid #cfddee;
+            border-radius: 60px;
+            padding: 16px 24px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a2e4f;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: left;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.04);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .option:hover:not(.selected-correct):not(.selected-wrong) {
+            background: #e5efff;
+            border-color: #2b3d6b;
+            transform: scale(1.01);
+            box-shadow: 0 12px 20px -10px #2b3d6b80;
+        }
+        .option input[type="radio"] {
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            border: 3px solid #9bb5d4;
+            border-radius: 50%;
+            margin-right: 8px;
+            transition: 0.1s;
+            position: relative;
+            cursor: pointer;
+        }
+        .option input[type="radio"]:checked {
+            border-color: #2b3d6b;
+            background: #2b3d6b;
+            box-shadow: inset 0 0 0 5px white;
+        }
+        .option.selected-correct {
+            background: linear-gradient(145deg, #b9f5d8, #9be5c0);
+            border-color: #0f7b4b;
+            color: #0a4d2e;
+            box-shadow: 0 12px 20px -12px #0f7b4b;
+        }
+        .option.selected-wrong {
+            background: linear-gradient(145deg, #ffd6d6, #ffbaba);
+            border-color: #b81c1c;
+            color: #750e0e;
+            box-shadow: 0 12px 20px -12px #b81c1c;
+        }
+        .feedback {
+            background: #ffffffcc;
+            backdrop-filter: blur(4px);
+            border-radius: 40px;
+            padding: 18px 25px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-left: 8px solid #2b3d6b;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            margin-top: 10px;
+        }
+        .feedback .icon {
+            font-size: 2.8rem;
+            line-height: 1;
+            min-width: 60px;
+            text-align: center;
+        }
+        .feedback .explanation {
+            font-size: 1.2rem;
+            color: #1e2f47;
+            background: #eaf1fa;
+            padding: 10px 25px;
+            border-radius: 40px;
+            flex: 1;
+            font-weight: 500;
+            border: 1px solid #b7d0e9;
+        }
+        hr {
+            border: none;
+            border-top: 2px dashed #9fb8d1;
+            margin: 20px 0 0;
+        }
+        .footer-note {
+            margin-top: 50px;
+            font-size: 1.2rem;
+            color: #1e2f47;
+            background: #ffffffb3;
+            backdrop-filter: blur(4px);
+            padding: 12px 35px;
+            border-radius: 60px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🇯🇵 JLPT N5 言葉クイズ</h1>
+        <p>পার্ট ৬ · প্রশ্ন ১০১–১২০</p>
+    </div>
+
+    <div class="quiz-grid" id="quizContainer"></div>
+
+    <div class="footer-note">
+        ✅ সঠিক   ❌ ভুল   |   ব্যাখ্যা সহজ বাংলায়
+    </div>
+
+    <script>
+        (function() {
+            const questions = [
+                { q: "空（そら）に白（しろ）い（　）がたくさんあります।", opt: ["くも", "ゆき", "あめ", "かぜ"], correct: "A", exp: "くも = মেঘ।" },
+                { q: "日本（にほん）の一番（いちばん）高（たか）い（　）は富士山（ふじさん）です।", opt: ["やま", "かわ", "うみ", "みち"], correct: "A", exp: "やま = পাহাড়/পর্বত।" },
+                { q: "この（　）はとても長（なが）いです।駅（えき）までつづいています।", opt: ["みち", "かわ", "うみ", "くも"], correct: "A", exp: "みち = রাস্তা।" },
+                { q: "日本は（　）にかこまれています।", opt: ["うみ", "やま", "かわ", "もり"], correct: "A", exp: "うみ = সমুদ্র/সাগর।" },
+                { q: "日本（にほん）に大（おお）きい（　）がたくさんあります।— きよみず寺（でら）など।", opt: ["おてら", "がっこう", "ホテル", "アパート"], correct: "A", exp: "おてら = মন্দির (বৌদ্ধ মন্দির)।" },
+                { q: "わたしの（　）はバンコクです।", opt: ["いえ", "くに", "がっこう", "まち"], correct: "B", exp: "くに = দেশ।" },
+                { q: "日本語の（　）はなんですか।—「にほんご」です।", opt: ["ことば", "くに", "まち", "しごと"], correct: "A", exp: "ことば = ভাষা/শব্দ।" },
+                { q: "すみません、いま何（　）ですか।", opt: ["じ", "にち", "がつ", "さい"], correct: "A", exp: "じ = টা/ঘণ্টা (সময়ের একক)।" },
+                { q: "たんじょう日は何（　）ですか।— ４月３日（がつみっか）です।", opt: ["がつ", "じ", "さい", "えん"], correct: "A", exp: "がつ = মাস বোঝাতে ব্যবহৃত কাউন্টার।" },
+                { q: "山田（やまだ）さんは今年（ことし）２０（　）です।", opt: ["さい", "がつ", "じ", "にち"], correct: "A", exp: "さい = বছর বয়সের কাউন্টার।" },
+                { q: "このノートは१००（　）でした।", opt: ["えん", "ドル", "キロ", "さい"], correct: "A", exp: "えん = জাপানি ইয়েন (মুদ্রা)।" },
+                { q: "きょうは何（　）ですか।— ２０日（はつか）です।", opt: ["にち", "がつ", "じ", "さい"], correct: "A", exp: "にち = তারিখের ইউনিট।" },
+                { q: "夜（よる）、月（つき）と（　）がきれいです।", opt: ["ほし", "くも", "やま", "かわ"], correct: "A", exp: "ほし = তারা।" },
+                { q: "日本語のクラスは月曜（げつよう）日から金曜（きんよう）日（　）あります।", opt: ["まで", "に", "しか", "から"], correct: "A", exp: "〜から〜まで = থেকে–পর্যন্ত। এখানে days vocab পুনরাবৃত্তি।" },
+                { q: "（　）テストをしますから、よくべんきょうしてください।", opt: ["こんど", "きのう", "おととい", "おととし"], correct: "A", exp: "こんど = পরের বার/আগামীবার।" },
+                { q: "（　）日本語の勉強（べんきょう）をはじめました।まだ一年（いちねん）です।", opt: ["きょねん", "ことし", "さらいねん", "おととし"], correct: "A", exp: "きょねん = গত বছর।" },
+                { q: "山田（やまだ）さんは（　）会社（かいしゃ）にはいりました।", opt: ["ことし", "きょねん", "さらいねん", "おととし"], correct: "A", exp: "ことし = এ বছর।" },
+                { q: "田中（たなか）さんは（　）日本へ行（い）く予定（よてい）です।", opt: ["らいねん", "きょねん", "ことし", "おととし"], correct: "A", exp: "らいねん = আগামী বছর।" },
+                { q: "今日は金曜（きんよう）日です。明日（あした）は（　）です।", opt: ["どようび", "にちようび", "げつようび", "きんようび"], correct: "A", exp: "どようび = শনিবার।" },
+                { q: "きのうの（　）はなんでしたか।— 日本語のテストでした।", opt: ["じゅぎょう", "しゅくだい", "テスト", "やすみ"], correct: "C", exp: "テスト = পরীক্ষা।" }
+            ];
+
+            const container = document.getElementById('quizContainer');
+            container.innerHTML = '';
+
+            questions.forEach((q, idx) => {
+                const number = idx + 101;  // 101-120
+                const card = document.createElement('div');
+                card.className = 'card';
+
+                // question number
+                const numSpan = document.createElement('span');
+                numSpan.className = 'q-num';
+                numSpan.innerText = `প্রশ্ন ${number}`;
+                card.appendChild(numSpan);
+
+                // question text
+                const qText = document.createElement('div');
+                qText.className = 'q-text';
+                qText.innerText = `${number}. ${q.q}`;
+                card.appendChild(qText);
+
+                // options container
+                const optsDiv = document.createElement('div');
+                optsDiv.className = 'options';
+                const groupName = `q${number}`;
+
+                q.opt.forEach((opt, optIdx) => {
+                    const letter = String.fromCharCode(65 + optIdx);
+                    const label = document.createElement('label');
+                    label.className = 'option';
+
+                    const radio = document.createElement('input');
+                    radio.type = 'radio';
+                    radio.name = groupName;
+                    radio.value = letter;
+
+                    label.appendChild(radio);
+                    label.appendChild(document.createTextNode(`${letter}. ${opt}`));
+                    optsDiv.appendChild(label);
+                });
+                card.appendChild(optsDiv);
+
+                // feedback area (hidden initially)
+                const feedback = document.createElement('div');
+                feedback.className = 'feedback';
+                feedback.style.display = 'none';
+
+                const iconSpan = document.createElement('span');
+                iconSpan.className = 'icon';
+                const expSpan = document.createElement('span');
+                expSpan.className = 'explanation';
+
+                feedback.appendChild(iconSpan);
+                feedback.appendChild(expSpan);
+                card.appendChild(feedback);
+
+                container.appendChild(card);
+
+                // add event listeners
+                const radios = card.querySelectorAll('input[type="radio"]');
+                radios.forEach(radio => {
+                    radio.addEventListener('change', function() {
+                        // reset styles
+                        const labels = card.querySelectorAll('.option');
+                        labels.forEach(l => l.classList.remove('selected-correct', 'selected-wrong'));
+
+                        const parentLabel = this.closest('.option');
+                        const isCorrect = (this.value === q.correct);
+
+                        if (isCorrect) {
+                            parentLabel.classList.add('selected-correct');
+                            iconSpan.innerHTML = '✅';
+                        } else {
+                            parentLabel.classList.add('selected-wrong');
+                            iconSpan.innerHTML = '❌';
+                        }
+
+                        expSpan.innerText = q.exp;
+                        feedback.style.display = 'flex';
+                    });
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
