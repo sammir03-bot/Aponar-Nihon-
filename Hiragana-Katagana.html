@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>হিরাগানা ও কাতাকানা চার্ট - আপনার নিহোন</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #6C5CE7;
+      --primary-light: #A29BFE;
+      --accent: #FF6B6B;
+      --accent-green: #00B894;
+      --accent-blue: #0984E3;
+      --dark: #1A1A2E;
+      --text-primary: #2D3436;
+      --text-secondary: #636E72;
+      --text-muted: #B2BEC3;
+      --bg-primary: #FFFFFF;
+      --bg-secondary: #F8FAFC;
+      --bg-muted: #F1F5F9;
+      --border: #E8EDF2;
+      --radius: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+      --shadow-lg: 0 10px 25px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04);
+      --shadow-xl: 0 20px 50px -12px rgba(0,0,0,0.12);
+    }
+
+    body {
+      font-family: 'Noto Sans Bengali', 'Noto Sans JP', sans-serif;
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      padding: 60px 0;
+      text-align: center;
+      color: white;
+    }
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      color: rgba(255,255,255,0.7);
+      font-size: 1.1rem;
+    }
+
+    /* Navigation Tabs */
+    .nav-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 20px;
+      background: white;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-tab {
+      padding: 12px 24px;
+      border: 2px solid var(--border);
+      background: white;
+      border-radius: 9999px;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-tab:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .nav-tab.active {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      color: white;
+      border-color: transparent;
+    }
+
+    .nav-tab .icon {
+      font-size: 1.2rem;
+    }
+
+    /* Section Styles */
+    .section {
+      padding: 40px 0;
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .badge.hiragana {
+      background: #EC4899;
+      color: white;
+    }
+
+    .badge.katakana {
+      background: #3B82F6;
+      color: white;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: var(--text-secondary);
+    }
+
+    /* Card Styles */
+    .card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--border);
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card-title .icon {
+      font-size: 1.2rem;
+    }
+
+    /* Kana Grid */
+    .kana-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+    }
+
+    .kana-grid.combo {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    @media (max-width: 768px) {
+      .kana-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+      }
+      .kana-grid.combo {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .kana-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .kana-card {
+      background: var(--bg-muted);
+      border-radius: var(--radius);
+      padding: 16px 4px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+    }
+
+    .kana-card:hover {
+      background: rgba(108, 92, 231, 0.1);
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .kana-card .char {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 2rem;
+      font-weight: 500;
+      margin-bottom: 4px;
+    }
+
+    .kana-card.combo .char {
+      font-size: 1.5rem;
+    }
+
+    .kana-card .romaji {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .kana-card .bangla {
+      font-size: 0.8rem;
+      color: #0984E3;
+      font-weight: 500;
+      margin-top: 2px;
+      background: rgba(9, 132, 227, 0.05);
+      display: inline-block;
+      padding: 2px 6px;
+      border-radius: 20px;
+    }
+
+    /* Practice Button */
+    .practice-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 32px;
+      border-radius: 9999px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      color: white;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+    }
+
+    .practice-btn.hiragana {
+      background: linear-gradient(135deg, #EC4899, #F43F5E);
+    }
+
+    .practice-btn.katakana {
+      background: linear-gradient(135deg, #3B82F6, #06B6D4);
+    }
+
+    .practice-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .practice-section {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    /* Quiz Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal {
+      background: white;
+      border-radius: var(--radius-xl);
+      padding: 32px;
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+      animation: scaleIn 0.3s ease;
+    }
+
+    @keyframes scaleIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .modal-header {
+      margin-bottom: 24px;
+    }
+
+    .modal-header h3 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+
+    .score-display {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .quiz-char {
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 6rem;
+      margin: 24px 0;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .quiz-options {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .quiz-option {
+      padding: 16px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--bg-muted);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .quiz-option:hover {
+      border-color: var(--primary);
+      background: rgba(108, 92, 231, 0.1);
+    }
+
+    .quiz-option.correct {
+      border-color: var(--accent-green);
+      background: rgba(0, 184, 148, 0.1);
+    }
+
+    .quiz-option.wrong {
+      border-color: var(--accent);
+      background: rgba(255, 107, 107, 0.1);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-secondary);
+    }
+
+    .modal-close:hover {
+      color: var(--text-primary);
+    }
+
+    /* Toast Notification */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--dark);
+      color: white;
+      padding: 12px 24px;
+      border-radius: var(--radius);
+      font-weight: 500;
+      z-index: 2000;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    .toast.success {
+      background: var(--accent-green);
+    }
+
+    .toast.error {
+      background: var(--accent);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--dark);
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .footer p {
+      color: rgba(255,255,255,0.6);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1>🎌 আপনার নিহোন</h1>
+      <p>জাপানি ভাষা শেখার সেরা প্ল্যাটফর্ম</p>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <nav class="nav-tabs">
+    <button class="nav-tab active" onclick="showSection('hiragana', event)">
+      <span class="icon">あ</span>
+      হিরাগানা
+    </button>
+    <button class="nav-tab" onclick="showSection('katakana', event)">
+      <span class="icon">ア</span>
+      কাতাকানা
+    </button>
+  </nav>
+
+  <!-- Hiragana Section -->
+  <section id="hiragana-section" class="section active">
+    <div class="container">
+      <div class="section-title">
+        <span class="badge hiragana">📝 হিরাগানা</span>
+        <h2>হিরাগানা চার্ট</h2>
+        <p>জাপানি ভাষার মৌলিক অক্ষর। মোট ৪৬টি বেসিক হিরাগানা আছে।</p>
+      </div>
+
+      <!-- Basic Characters -->
+      <div class="card">
+        <h3 class="card-title">
+          <span class="icon">✨</span>
+          বেসিক অক্ষর (Basic)
+        </h3>
+        <div class="kana-grid" id="hiragana-basic"></div>
+      </div>
+
+      <!-- Dakuten -->
+      <div class="card">
+        <h3 class="card-title">
+          <span class="icon">🔊</span>
+          দাকুটেন (Dakuten - Voiced Sounds)
+        </h3>
+        <div class="kana-grid" id="hiragana-dakuten"></div>
+      </div>
+
+      <!-- Combo -->
+      <div class="card">
+        <h3 class="card-title">
+          <span class="icon">🎯</span>
+          যৌগিক অক্ষর (Combo)
+        </h3>
+        <div class="kana-grid combo" id="hiragana-combo"></div>
+      </div>
+
+      <!-- Practice Button -->
+      <div class="practice-section">
+        <button class="practice-btn hiragana" onclick="startPractice('hiragana')">
+          🧠 হিরাগানা প্র্যাকটিস শুরু করুন
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Katakana Section -->
+  <section id="katakana-section" class="section">
+    <div class="container">
+      <div class="section-title">
+        <span class="badge katakana">📝 কাতাকানা</span>
+        <h2>কাতাকানা চার্ট</h2>
+        <p>বিদেশি শব্দ, নাম এবং জোর দেওয়ার জন্য ব্যবহৃত হয়।</p>
+      </div>
+
+      <!-- Basic Characters -->
+      <div class="card">
+        <h3 class="card-title">
+          <span class="icon">✨</span>
+          বেসিক অক্ষর (Basic)
+        </h3>
+        <div class="kana-grid" id="katakana-basic"></div>
+      </div>
+
+      <!-- Dakuten -->
+      <div class="card">
+        <h3 class="card-title">
+          <span class="icon">🔊</span>
+          দাকুটেন (Dakuten - Voiced Sounds)
+        </h3>
+        <div class="kana-grid" id="katakana-dakuten"></div>
+      </div>
+
+      <!-- Combo -->
+      <div class="card">
+        <h3 class="card-title">
+          <span class="icon">🎯</span>
+          যৌগিক অক্ষর (Combo)
+        </h3>
+        <div class="kana-grid combo" id="katakana-combo"></div>
+      </div>
+
+      <!-- Practice Button -->
+      <div class="practice-section">
+        <button class="practice-btn katakana" onclick="startPractice('katakana')">
+          🧠 কাতাকানা প্র্যাকটিস শুরু করুন
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz Modal -->
+  <div class="modal-overlay" id="quizModal">
+    <div class="modal">
+      <button class="modal-close" onclick="closeQuiz()">✕</button>
+      <div class="modal-header">
+        <h3 id="quizTitle">প্র্যাকটিস</h3>
+        <p class="score-display">স্কোর: <span id="score">0</span> / <span id="total">0</span></p>
+      </div>
+      <div class="quiz-char" id="quizChar">あ</div>
+      <div class="quiz-options" id="quizOptions"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; ২০২৬ আপনার নিহোন। সর্বস্বত্ব সংরক্ষিত।</p>
+    </div>
+  </footer>
+
+  <script>
+    // ============================================
+    // Helper: রোমাজি থেকে বাংলা উচ্চারণ
+    // ============================================
+    function romajiToBangla(rom) {
+      // বিশেষ ক্ষেত্রে সরাসরি ম্যাপিং
+      const special = {
+        'shi': 'শি',
+        'chi': 'চি',
+        'tsu': 'ৎসু',
+        'fu': 'ফু',
+        'ji': 'জি',
+        'zu': 'জু',
+        'ya': 'ইয়া',
+        'yu': 'ইয়ু',
+        'yo': 'ইয়ো',
+        'wa': 'ওয়া',
+        'wo': 'ও',
+        'n': 'ন'
+      };
+      if (special[rom]) return special[rom];
+
+      // যৌগিক ধ্বনি: consonant + y + vowel (যেমন: kya, kyu, kyo, nya, hyo ইত্যাদি)
+      const matchY = rom.match(/^(.*?)(y)([aieuo])$/);
+      if (matchY) {
+        const cons = matchY[1];
+        const vowel = matchY[3];
+        // vowel sign for y-sound
+        const vowelSign = vowel === 'a' ? '্যা' : vowel === 'i' ? '্যি' : vowel === 'u' ? '্যু' : vowel === 'e' ? '্যে' : '্যো';
+        // consonant mapping
+        let consBangla = '';
+        if (cons === 'k') consBangla = 'ক';
+        else if (cons === 'g') consBangla = 'গ';
+        else if (cons === 's') consBangla = 'স';
+        else if (cons === 'z') consBangla = 'জ';
+        else if (cons === 't') consBangla = 'ত';
+        else if (cons === 'd') consBangla = 'দ';
+        else if (cons === 'n') consBangla = 'ন';
+        else if (cons === 'h') consBangla = 'হ';
+        else if (cons === 'b') consBangla = 'ব';
+        else if (cons === 'p') consBangla = 'প';
+        else if (cons === 'm') consBangla = 'ম';
+        else if (cons === 'r') consBangla = 'র';
+        else if (cons === 'sh') consBangla = 'শ';
+        else if (cons === 'ch') consBangla = 'চ';
+        else if (cons === 'ts') consBangla = 'ত্স';
+        else if (cons === 'f') consBangla = 'ফ';
+        else if (cons === 'j') consBangla = 'জ';
+        else consBangla = cons; // fallback
+        return consBangla + vowelSign;
+      }
+
+      // সাধারণ ব্যঞ্জন+স্বর (যেমন: ka, ki, sa, shi ইত্যাদি)
+      const matchCV = rom.match(/^([^aeiou]+)([aeiou])$/);
+      if (matchCV) {
+        const cons = matchCV[1];
+        const vowel = matchCV[2];
+        const vowelMap = {a:'া', i:'ি', u:'ু', e:'ে', o:'ো'};
+        let consBangla = '';
+        if (cons === 'k') consBangla = 'ক';
+        else if (cons === 'g') consBangla = 'গ';
+        else if (cons === 's') consBangla = 'স';
+        else if (cons === 'z') consBangla = 'জ';
+        else if (cons === 't') consBangla = 'ত';
+        else if (cons === 'd') consBangla = 'দ';
+        else if (cons === 'n') consBangla = 'ন';
+        else if (cons === 'h') consBangla = 'হ';
+        else if (cons === 'b') consBangla = 'ব';
+        else if (cons === 'p') consBangla = 'প';
+        else if (cons === 'm') consBangla = 'ম';
+        else if (cons === 'r') consBangla = 'র';
+        else if (cons === 'w') consBangla = 'ও';
+        else if (cons === 'sh') consBangla = 'শ';
+        else if (cons === 'ch') consBangla = 'চ';
+        else if (cons === 'ts') consBangla = 'ত্স';
+        else if (cons === 'f') consBangla = 'ফ';
+        else if (cons === 'j') consBangla = 'জ';
+        else consBangla = cons; // fallback
+        return consBangla + (vowelMap[vowel] || '');
+      }
+
+      // শুধু স্বরবর্ণ (a, i, u, e, o)
+      const vowelOnly = {a:'আ', i:'ই', u:'উ', e:'এ', o:'ও'};
+      if (vowelOnly[rom]) return vowelOnly[rom];
+
+      // কোনো ম্যাচ না হলে রোমাজিই দেখাও
+      return rom;
+    }
+
+    // ============================================
+    // HIRAGANA DATA
+    // ============================================
+    const hiraganaData = {
+      basic: [
+        { char: 'あ', romaji: 'a' }, { char: 'い', romaji: 'i' }, { char: 'う', romaji: 'u' },
+        { char: 'え', romaji: 'e' }, { char: 'お', romaji: 'o' },
+        { char: 'か', romaji: 'ka' }, { char: 'き', romaji: 'ki' }, { char: 'く', romaji: 'ku' },
+        { char: 'け', romaji: 'ke' }, { char: 'こ', romaji: 'ko' },
+        { char: 'さ', romaji: 'sa' }, { char: 'し', romaji: 'shi' }, { char: 'す', romaji: 'su' },
+        { char: 'せ', romaji: 'se' }, { char: 'そ', romaji: 'so' },
+        { char: 'た', romaji: 'ta' }, { char: 'ち', romaji: 'chi' }, { char: 'つ', romaji: 'tsu' },
+        { char: 'て', romaji: 'te' }, { char: 'と', romaji: 'to' },
+        { char: 'な', romaji: 'na' }, { char: 'に', romaji: 'ni' }, { char: 'ぬ', romaji: 'nu' },
+        { char: 'ね', romaji: 'ne' }, { char: 'の', romaji: 'no' },
+        { char: 'は', romaji: 'ha' }, { char: 'ひ', romaji: 'hi' }, { char: 'ふ', romaji: 'fu' },
+        { char: 'へ', romaji: 'he' }, { char: 'ほ', romaji: 'ho' },
+        { char: 'ま', romaji: 'ma' }, { char: 'み', romaji: 'mi' }, { char: 'む', romaji: 'mu' },
+        { char: 'め', romaji: 'me' }, { char: 'も', romaji: 'mo' },
+        { char: 'や', romaji: 'ya' }, { char: 'ゆ', romaji: 'yu' }, { char: 'よ', romaji: 'yo' },
+        { char: 'ら', romaji: 'ra' }, { char: 'り', romaji: 'ri' }, { char: 'る', romaji: 'ru' },
+        { char: 'れ', romaji: 're' }, { char: 'ろ', romaji: 'ro' },
+        { char: 'わ', romaji: 'wa' }, { char: 'を', romaji: 'wo' },
+        { char: 'ん', romaji: 'n' }
+      ],
+      dakuten: [
+        { char: 'が', romaji: 'ga' }, { char: 'ぎ', romaji: 'gi' }, { char: 'ぐ', romaji: 'gu' },
+        { char: 'げ', romaji: 'ge' }, { char: 'ご', romaji: 'go' },
+        { char: 'ざ', romaji: 'za' }, { char: 'じ', romaji: 'ji' }, { char: 'ず', romaji: 'zu' },
+        { char: 'ぜ', romaji: 'ze' }, { char: 'ぞ', romaji: 'zo' },
+        { char: 'だ', romaji: 'da' }, { char: 'ぢ', romaji: 'ji' }, { char: 'づ', romaji: 'zu' },
+        { char: 'で', romaji: 'de' }, { char: 'ど', romaji: 'do' },
+        { char: 'ば', romaji: 'ba' }, { char: 'び', romaji: 'bi' }, { char: 'ぶ', romaji: 'bu' },
+        { char: 'べ', romaji: 'be' }, { char: 'ぼ', romaji: 'bo' },
+        { char: 'ぱ', romaji: 'pa' }, { char: 'ぴ', romaji: 'pi' }, { char: 'ぷ', romaji: 'pu' },
+        { char: 'ぺ', romaji: 'pe' }, { char: 'ぽ', romaji: 'po' }
+      ],
+      combo: [
+        { char: 'きゃ', romaji: 'kya' }, { char: 'きゅ', romaji: 'kyu' }, { char: 'きょ', romaji: 'kyo' },
+        { char: 'しゃ', romaji: 'sha' }, { char: 'しゅ', romaji: 'shu' }, { char: 'しょ', romaji: 'sho' },
+        { char: 'ちゃ', romaji: 'cha' }, { char: 'ちゅ', romaji: 'chu' }, { char: 'ちょ', romaji: 'cho' },
+        { char: 'にゃ', romaji: 'nya' }, { char: 'にゅ', romaji: 'nyu' }, { char: 'にょ', romaji: 'nyo' },
+        { char: 'ひゃ', romaji: 'hya' }, { char: 'ひゅ', romaji: 'hyu' }, { char: 'ひょ', romaji: 'hyo' },
+        { char: 'みゃ', romaji: 'mya' }, { char: 'みゅ', romaji: 'myu' }, { char: 'みょ', romaji: 'myo' },
+        { char: 'りゃ', romaji: 'rya' }, { char: 'りゅ', romaji: 'ryu' }, { char: 'りょ', romaji: 'ryo' },
+        { char: 'ぎゃ', romaji: 'gya' }, { char: 'ぎゅ', romaji: 'gyu' }, { char: 'ぎょ', romaji: 'gyo' },
+        { char: 'じゃ', romaji: 'ja' }, { char: 'じゅ', romaji: 'ju' }, { char: 'じょ', romaji: 'jo' },
+        { char: 'びゃ', romaji: 'bya' }, { char: 'びゅ', romaji: 'byu' }, { char: 'びょ', romaji: 'byo' },
+        { char: 'ぴゃ', romaji: 'pya' }, { char: 'ぴゅ', romaji: 'pyu' }, { char: 'ぴょ', romaji: 'pyo' }
+      ]
+    };
+
+    // ============================================
+    // KATAKANA DATA
+    // ============================================
+    const katakanaData = {
+      basic: [
+        { char: 'ア', romaji: 'a' }, { char: 'イ', romaji: 'i' }, { char: 'ウ', romaji: 'u' },
+        { char: 'エ', romaji: 'e' }, { char: 'オ', romaji: 'o' },
+        { char: 'カ', romaji: 'ka' }, { char: 'キ', romaji: 'ki' }, { char: 'ク', romaji: 'ku' },
+        { char: 'ケ', romaji: 'ke' }, { char: 'コ', romaji: 'ko' },
+        { char: 'サ', romaji: 'sa' }, { char: 'シ', romaji: 'shi' }, { char: 'ス', romaji: 'su' },
+        { char: 'セ', romaji: 'se' }, { char: 'ソ', romaji: 'so' },
+        { char: 'タ', romaji: 'ta' }, { char: 'チ', romaji: 'chi' }, { char: 'ツ', romaji: 'tsu' },
+        { char: 'テ', romaji: 'te' }, { char: 'ト', romaji: 'to' },
+        { char: 'ナ', romaji: 'na' }, { char: 'ニ', romaji: 'ni' }, { char: 'ヌ', romaji: 'nu' },
+        { char: 'ネ', romaji: 'ne' }, { char: 'ノ', romaji: 'no' },
+        { char: 'ハ', romaji: 'ha' }, { char: 'ヒ', romaji: 'hi' }, { char: 'フ', romaji: 'fu' },
+        { char: 'ヘ', romaji: 'he' }, { char: 'ホ', romaji: 'ho' },
+        { char: 'マ', romaji: 'ma' }, { char: 'ミ', romaji: 'mi' }, { char: 'ム', romaji: 'mu' },
+        { char: 'メ', romaji: 'me' }, { char: 'モ', romaji: 'mo' },
+        { char: 'ヤ', romaji: 'ya' }, { char: 'ユ', romaji: 'yu' }, { char: 'ヨ', romaji: 'yo' },
+        { char: 'ラ', romaji: 'ra' }, { char: 'リ', romaji: 'ri' }, { char: 'ル', romaji: 'ru' },
+        { char: 'レ', romaji: 're' }, { char: 'ロ', romaji: 'ro' },
+        { char: 'ワ', romaji: 'wa' }, { char: 'ヲ', romaji: 'wo' },
+        { char: 'ン', romaji: 'n' }
+      ],
+      dakuten: [
+        { char: 'ガ', romaji: 'ga' }, { char: 'ギ', romaji: 'gi' }, { char: 'グ', romaji: 'gu' },
+        { char: 'ゲ', romaji: 'ge' }, { char: 'ゴ', romaji: 'go' },
+        { char: 'ザ', romaji: 'za' }, { char: 'ジ', romaji: 'ji' }, { char: 'ズ', romaji: 'zu' },
+        { char: 'ゼ', romaji: 'ze' }, { char: 'ゾ', romaji: 'zo' },
+        { char: 'ダ', romaji: 'da' }, { char: 'ヂ', romaji: 'ji' }, { char: 'ヅ', romaji: 'zu' },
+        { char: 'デ', romaji: 'de' }, { char: 'ド', romaji: 'do' },
+        { char: 'バ', romaji: 'ba' }, { char: 'ビ', romaji: 'bi' }, { char: 'ブ', romaji: 'bu' },
+        { char: 'ベ', romaji: 'be' }, { char: 'ボ', romaji: 'bo' },
+        { char: 'パ', romaji: 'pa' }, { char: 'ピ', romaji: 'pi' }, { char: 'プ', romaji: 'pu' },
+        { char: 'ペ', romaji: 'pe' }, { char: 'ポ', romaji: 'po' }
+      ],
+      combo: [
+        { char: 'キャ', romaji: 'kya' }, { char: 'キュ', romaji: 'kyu' }, { char: 'キョ', romaji: 'kyo' },
+        { char: 'シャ', romaji: 'sha' }, { char: 'シュ', romaji: 'shu' }, { char: 'ショ', romaji: 'sho' },
+        { char: 'チャ', romaji: 'cha' }, { char: 'チュ', romaji: 'chu' }, { char: 'チョ', romaji: 'cho' },
+        { char: 'ニャ', romaji: 'nya' }, { char: 'ニュ', romaji: 'nyu' }, { char: 'ニョ', romaji: 'nyo' },
+        { char: 'ヒャ', romaji: 'hya' }, { char: 'ヒュ', romaji: 'hyu' }, { char: 'ヒョ', romaji: 'hyo' },
+        { char: 'ミャ', romaji: 'mya' }, { char: 'ミュ', romaji: 'myu' }, { char: 'ミョ', romaji: 'myo' },
+        { char: 'リャ', romaji: 'rya' }, { char: 'リュ', romaji: 'ryu' }, { char: 'リョ', romaji: 'ryo' },
+        { char: 'ギャ', romaji: 'gya' }, { char: 'ギュ', romaji: 'gyu' }, { char: 'ギョ', romaji: 'gyo' },
+        { char: 'ジャ', romaji: 'ja' }, { char: 'ジュ', romaji: 'ju' }, { char: 'ジョ', romaji: 'jo' },
+        { char: 'ビャ', romaji: 'bya' }, { char: 'ビュ', romaji: 'byu' }, { char: 'ビョ', romaji: 'byo' },
+        { char: 'ピャ', romaji: 'pya' }, { char: 'ピュ', romaji: 'pyu' }, { char: 'ピョ', romaji: 'pyo' }
+      ]
+    };
+
+    // ============================================
+    // RENDER FUNCTIONS (এখন বাংলাসহ)
+    // ============================================
+    function renderKanaCard(item, isCombo = false) {
+      const bangla = romajiToBangla(item.romaji);
+      return `
+        <div class="kana-card ${isCombo ? 'combo' : ''}" onclick="showToast('${item.char} = ${item.romaji} / ${bangla}')">
+          <div class="char">${item.char}</div>
+          <div class="romaji">${item.romaji}</div>
+          <div class="bangla">${bangla}</div>
+        </div>
+      `;
+    }
+
+    function renderSection() {
+      // Hiragana
+      document.getElementById('hiragana-basic').innerHTML = hiraganaData.basic.map(item => renderKanaCard(item)).join('');
+      document.getElementById('hiragana-dakuten').innerHTML = hiraganaData.dakuten.map(item => renderKanaCard(item)).join('');
+      document.getElementById('hiragana-combo').innerHTML = hiraganaData.combo.map(item => renderKanaCard(item, true)).join('');
+
+      // Katakana
+      document.getElementById('katakana-basic').innerHTML = katakanaData.basic.map(item => renderKanaCard(item)).join('');
+      document.getElementById('katakana-dakuten').innerHTML = katakanaData.dakuten.map(item => renderKanaCard(item)).join('');
+      document.getElementById('katakana-combo').innerHTML = katakanaData.combo.map(item => renderKanaCard(item, true)).join('');
+    }
+
+    // ============================================
+    // TAB NAVIGATION (event fixed)
+    // ============================================
+    function showSection(section, ev) {
+      // Update tabs
+      document.querySelectorAll('.nav-tab').forEach(tab => tab.classList.remove('active'));
+      ev.target.closest('.nav-tab').classList.add('active');
+
+      // Update sections
+      document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(section + '-section').classList.add('active');
+    }
+
+    // ============================================
+    // TOAST NOTIFICATION (বাংলাসহ)
+    // ============================================
+    function showToast(message, type = 'info') {
+      const toast = document.getElementById('toast');
+      toast.textContent = message;
+      toast.className = 'toast show ' + type;
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2000);
+    }
+
+    // ============================================
+    // QUIZ PRACTICE (অপরিবর্তিত, শুধু রোমাজি ব্যবহার করে)
+    // ============================================
+    let currentMode = null;
+    let currentKana = null;
+    let score = 0;
+    let total = 0;
+
+    function startPractice(mode) {
+      currentMode = mode;
+      score = 0;
+      total = 0;
+      document.getElementById('quizTitle').textContent = mode === 'hiragana' ? 'হিরাগানা প্র্যাকটিস' : 'কাতাকানা প্র্যাকটিস';
+      document.getElementById('quizModal').classList.add('active');
+      nextQuestion();
+    }
+
+    function closeQuiz() {
+      document.getElementById('quizModal').classList.remove('active');
+    }
+
+    function nextQuestion() {
+      const data = currentMode === 'hiragana' ? hiraganaData : katakanaData;
+      const allKana = [...data.basic, ...data.dakuten];
+      
+      currentKana = allKana[Math.floor(Math.random() * allKana.length)];
+      document.getElementById('quizChar').textContent = currentKana.char;
+      
+      // Generate options
+      const options = [currentKana.romaji];
+      while (options.length < 4) {
+        const random = allKana[Math.floor(Math.random() * allKana.length)];
+        if (!options.includes(random.romaji)) {
+          options.push(random.romaji);
+        }
+      }
+      
+      // Shuffle options
+      options.sort(() => Math.random() - 0.5);
+      
+      // Render options
+      document.getElementById('quizOptions').innerHTML = options.map(opt => 
+        `<button class="quiz-option" onclick="checkAnswer('${opt}', this)">${opt}</button>`
+      ).join('');
+      
+      updateScore();
+    }
+
+    function checkAnswer(answer, btn) {
+      const buttons = document.querySelectorAll('.quiz-option');
+      buttons.forEach(b => b.disabled = true);
+      
+      total++;
+      if (answer === currentKana.romaji) {
+        score++;
+        btn.classList.add('correct');
+        showToast('✓ সঠিক!', 'success');
+      } else {
+        btn.classList.add('wrong');
+        buttons.forEach(b => {
+          if (b.textContent === currentKana.romaji) {
+            b.classList.add('correct');
+          }
+        });
+        showToast('✗ ভুল! সঠিক: ' + currentKana.romaji, 'error');
+      }
+      
+      updateScore();
+      
+      setTimeout(() => {
+        nextQuestion();
+      }, 1500);
+    }
+
+    function updateScore() {
+      document.getElementById('score').textContent = score;
+      document.getElementById('total').textContent = total;
+    }
+
+    // Initialize
+    renderSection();
+  </script>
+</body>
+</html>
