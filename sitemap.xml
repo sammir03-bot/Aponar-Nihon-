@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+<!-- Homepage -->
 <url>
 <loc>https://aponar-nihon.eu.cc/</loc>
-<lastmod>2026-03-06</lastmod>
-<changefreq>weekly</changefreq>
+<changefreq>daily</changefreq>
 <priority>1.0</priority>
 </url>
 
+<!-- Core Pages -->
+<url>
+<loc>https://aponar-nihon.eu.cc/index.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://aponar-nihon.eu.cc/Hiragana-Katagana.html</loc>
+<changefreq>monthly</changefreq>
+<priority>0.9</priority>
+</url>
+
+<url>
+<loc>https://aponar-nihon.eu.cc/dashboard.html</loc>
+<changefreq>weekly</changefreq>
+<priority>0.8</priority>
+</url>
+
+<!-- Japan Guide Pages -->
 <url>
 <loc>https://aponar-nihon.eu.cc/study-in-japan.html</loc>
 <changefreq>monthly</changefreq>
@@ -30,7 +49,7 @@
 <url>
 <loc>https://aponar-nihon.eu.cc/part-time-job-in-japan.html</loc>
 <changefreq>monthly</changefreq>
-<priority>0.9</priority>
+<priority>0.8</priority>
 </url>
 
 <url>
@@ -39,8 +58,9 @@
 <priority>0.8</priority>
 </url>
 
+<!-- FIXED URL (NO SPACE) -->
 <url>
-<loc>https://aponar-nihon.eu.cc/embassy%20interview.html</loc>
+<loc>https://aponar-nihon.eu.cc/embassy-interview.html</loc>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
