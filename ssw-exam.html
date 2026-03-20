@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>SSW স্কিল টেস্ট - পরীক্ষা প্রস্তুতি | আপনার নিহোন</title>
+   <meta name="description" content="জাপান SSW স্পেসিফায়েড স্কিল টেস্টের সম্পূর্ণ গাইড। পরীক্ষার সিলেবাস, বাংলাদেশে পরীক্ষা কেন্দ্র, রেজিস্ট্রেশন প্রক্রিয়া ও প্রস্তুতির টিপস।">
+   
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   <style>
+       :root {
+           --primary: #6C5CE7;
+           --primary-light: #A29BFE;
+           --primary-dark: #5A4BD1;
+           --primary-glow: rgba(108, 92, 231, 0.15);
+           --accent: #FF6B6B;
+           --accent-green: #00B894;
+           --accent-blue: #0984E3;
+           --accent-orange: #FFA502;
+           --dark: #1A1A2E;
+           --text-primary: #2D3436;
+           --text-secondary: #636E72;
+           --text-muted: #B2BEC3;
+           --border: #E8EDF2;
+           --bg-primary: #FFFFFF;
+           --bg-secondary: #F8FAFC;
+           --bg-tertiary: #F1F5F9;
+           --gradient-hero: linear-gradient(135deg, #FF6B6B 0%, #FFA502 100%);
+           --gradient-primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+           --gradient-accent: linear-gradient(135deg, #FF6B6B 0%, #FFA502 100%);
+           --gradient-success: linear-gradient(135deg, #00B894 0%, #00CEC9 100%);
+           --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+           --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+           --shadow-lg: 0 10px 25px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04);
+           --shadow-xl: 0 20px 50px -12px rgba(0,0,0,0.12);
+           --shadow-card: 0 4px 24px rgba(0,0,0,0.06);
+           --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+           --section-padding: 60px 20px;
+           --container-max: 900px;
+           --radius-sm: 8px;
+           --radius-md: 12px;
+           --radius-lg: 16px;
+           --radius-xl: 24px;
+           --radius-full: 9999px;
+       }
+
+       * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+       html { scroll-behavior: smooth; font-size: 16px; }
+       body { 
+           font-family: 'Noto Sans Bengali', 'Inter', 'Noto Sans JP', sans-serif; 
+           background: var(--bg-secondary); 
+           color: var(--text-primary); 
+           line-height: 1.8; 
+           overflow-x: hidden;
+       }
+
+       .container { max-width: var(--container-max); margin: 0 auto; padding: 0 20px; }
+
+       /* Navbar */
+       .navbar { 
+           position: fixed; 
+           top: 0; 
+           width: 100%; 
+           background: rgba(255,255,255,0.95); 
+           backdrop-filter: blur(20px) saturate(180%); 
+           z-index: 1000; 
+           border-bottom: 1px solid rgba(0,0,0,0.04);
+           transition: var(--transition);
+       }
+       .navbar.scrolled { box-shadow: var(--shadow-md); }
+       .nav-container { 
+           max-width: var(--container-max); 
+           margin: 0 auto; 
+           padding: 12px 20px; 
+           display: flex; 
+           justify-content: space-between; 
+           align-items: center; 
+       }
+       .logo { display: flex; align-items: center; text-decoration: none; }
+       .logo-img { height: 45px; width: auto; border-radius: var(--radius-md); }
+       .back-btn {
+           display: flex;
+           align-items: center;
+           gap: 8px;
+           padding: 10px 20px;
+           background: var(--gradient-primary);
+           color: white;
+           text-decoration: none;
+           border-radius: var(--radius-full);
+           font-weight: 600;
+           font-size: 0.85rem;
+           transition: var(--transition);
+       }
+       .back-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(108, 92, 231, 0.3); }
+
+       /* Content Header */
+       .content-header {
+           margin-top: 80px;
+           padding: 40px 20px;
+           background: linear-gradient(135deg, #fff5f5 0%, #ffe8cc 100%);
+           text-align: center;
+           border-bottom: 1px solid rgba(255, 107, 107, 0.1);
+       }
+       .content-header h1 {
+           font-size: 1.9rem;
+           color: var(--dark);
+           font-weight: 900;
+           margin-bottom: 12px;
+           line-height: 1.3;
+       }
+       .content-header h1 i { color: var(--accent); }
+       .content-header p {
+           color: var(--text-secondary);
+           font-size: 1rem;
+           max-width: 600px;
+           margin: 0 auto;
+       }
+
+       /* Main Content */
+       .main-content {
+           padding: var(--section-padding);
+           max-width: 800px;
+           margin: 0 auto;
+       }
+
+       /* Article Card */
+       .article-card {
+           background: white;
+           border-radius: var(--radius-xl);
+           padding: 32px;
+           margin-bottom: 24px;
+           box-shadow: var(--shadow-card);
+           border: 1px solid var(--border);
+       }
+       .article-card h2 {
+           font-size: 1.4rem;
+           color: var(--dark);
+           font-weight: 800;
+           margin-bottom: 20px;
+           display: flex;
+           align-items: center;
+           gap: 12px;
+           padding-bottom: 16px;
+           border-bottom: 2px solid var(--border);
+       }
+       .article-card h2 i { color: var(--accent); }
+       .article-card h3 {
+           font-size: 1.15rem;
+           color: var(--dark);
+           font-weight: 700;
+           margin: 24px 0 12px 0;
+       }
+       .article-card p {
+           color: var(--text-secondary);
+           margin-bottom: 16px;
+           font-size: 0.95rem;
+           line-height: 1.9;
+       }
+       .article-card strong { color: var(--dark); font-weight: 600; }
+
+       /* Exam Info Grid */
+       .exam-info-grid {
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 16px;
+           margin: 20px 0;
+       }
+       .exam-info-card {
+           background: var(--bg-secondary);
+           padding: 20px;
+           border-radius: var(--radius-lg);
+           border-left: 4px solid var(--accent);
+       }
+       .exam-info-card h4 {
+           font-size: 1rem;
+           color: var(--dark);
+           margin-bottom: 8px;
+           display: flex;
+           align-items: center;
+           gap: 8px;
+       }
+       .exam-info-card h4 i { color: var(--accent); }
+       .exam-info-card p { margin: 0; font-size: 0.9rem; }
+
+       /* Test Centers */
+       .center-list {
+           list-style: none;
+           padding: 0;
+           margin: 20px 0;
+       }
+       .center-item {
+           display: flex;
+           align-items: flex-start;
+           gap: 16px;
+           padding: 16px;
+           margin-bottom: 12px;
+           background: var(--bg-secondary);
+           border-radius: var(--radius-md);
+           border: 1px solid var(--border);
+       }
+       .center-icon {
+           width: 40px;
+           height: 40px;
+           background: var(--gradient-accent);
+           color: white;
+           border-radius: var(--radius-md);
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 1.1rem;
+           flex-shrink: 0;
+       }
+       .center-info h4 {
+           font-size: 1rem;
+           color: var(--dark);
+           margin-bottom: 4px;
+       }
+       .center-info p {
+           margin: 0;
+           font-size: 0.85rem;
+       }
+
+       /* Registration Steps */
+       .reg-step {
+           display: flex;
+           gap: 16px;
+           margin-bottom: 20px;
+           padding: 16px;
+           background: var(--bg-secondary);
+           border-radius: var(--radius-lg);
+       }
+       .reg-number {
+           width: 32px;
+           height: 32px;
+           background: var(--gradient-accent);
+           color: white;
+           border-radius: var(--radius-full);
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-weight: 700;
+           font-size: 0.9rem;
+           flex-shrink: 0;
+       }
+       .reg-content h4 {
+           font-size: 1rem;
+           color: var(--dark);
+           margin-bottom: 6px;
+       }
+       .reg-content p { margin: 0; font-size: 0.9rem; }
+
+       /* Syllabus Table */
+       .syllabus-table {
+           width: 100%;
+           border-collapse: collapse;
+           margin: 20px 0;
+           font-size: 0.9rem;
+       }
+       .syllabus-table th,
+       .syllabus-table td {
+           padding: 12px;
+           text-align: left;
+           border: 1px solid var(--border);
+       }
+       .syllabus-table th {
+           background: var(--gradient-accent);
+           color: white;
+           font-weight: 700;
+       }
+       .syllabus-table tr:nth-child(even) { background: var(--bg-secondary); }
+
+       /* Tips Cards */
+       .tips-grid {
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 12px;
+           margin: 20px 0;
+       }
+       .tip-card {
+           background: var(--bg-secondary);
+           padding: 16px;
+           border-radius: var(--radius-md);
+           border-left: 3px solid var(--accent-green);
+       }
+       .tip-card h4 {
+           font-size: 0.95rem;
+           color: var(--dark);
+           margin-bottom: 6px;
+           display: flex;
+           align-items: center;
+           gap: 8px;
+       }
+       .tip-card h4 i { color: var(--accent-green); }
+       .tip-card p { margin: 0; font-size: 0.85rem; }
+
+       /* Highlight Box */
+       .highlight-box {
+           background: linear-gradient(135deg, rgba(255,107,107,0.08) 0%, rgba(255,165,2,0.08) 100%);
+           border-left: 4px solid var(--accent);
+           padding: 20px;
+           border-radius: var(--radius-md);
+           margin: 20px 0;
+       }
+       .highlight-box p { margin: 0; color: var(--text-primary); }
+
+       /* Important Dates */
+       .date-card {
+           background: linear-gradient(135deg, rgba(0,184,148,0.08) 0%, rgba(0,206,201,0.08) 100%);
+           border: 1px solid rgba(0,184,148,0.2);
+           padding: 20px;
+           border-radius: var(--radius-lg);
+           margin: 20px 0;
+       }
+       .date-card h4 {
+           color: var(--accent-green);
+           margin-bottom: 12px;
+           font-size: 1rem;
+       }
+       .date-list {
+           list-style: none;
+           padding: 0;
+       }
+       .date-list li {
+           display: flex;
+           justify-content: space-between;
+           padding: 8px 0;
+           border-bottom: 1px dashed var(--border);
+           font-size: 0.9rem;
+       }
+       .date-list li:last-child { border-bottom: none; }
+
+       /* Navigation Footer */
+       .nav-footer {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 24px 0;
+           margin-top: 40px;
+           border-top: 1px solid var(--border);
+       }
+       .nav-btn {
+           display: flex;
+           align-items: center;
+           gap: 8px;
+           padding: 12px 20px;
+           background: white;
+           color: var(--dark);
+           text-decoration: none;
+           border-radius: var(--radius-md);
+           font-weight: 600;
+           font-size: 0.9rem;
+           border: 2px solid var(--border);
+           transition: var(--transition);
+       }
+       .nav-btn:hover {
+           background: var(--primary);
+           color: white;
+           border-color: var(--primary);
+       }
+       .nav-btn.next {
+           background: var(--gradient-accent);
+           color: white;
+           border-color: transparent;
+       }
+
+       /* Footer */
+       .footer {
+           background: var(--dark);
+           color: white;
+           padding: 30px 20px;
+           text-align: center;
+           margin-top: 40px;
+       }
+       .footer p { color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+       .footer a { color: var(--primary-light); text-decoration: none; }
+
+       /* Responsive */
+       @media (min-width: 768px) {
+           .content-header h1 { font-size: 2.2rem; }
+           .exam-info-grid { grid-template-columns: repeat(2, 1fr); }
+           .tips-grid { grid-template-columns: repeat(2, 1fr); }
+       }
+   </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+   <div class="nav-container">
+       <a href="ssw.html" class="logo">
+           <img src="aponar-nihon(1).png" alt="আপনার নিহোন" class="logo-img">
+       </a>
+       <a href="ssw.html" class="back-btn">
+           <i class="fas fa-arrow-left"></i> SSW হাবে ফিরুন
+       </a>
+   </div>
+</nav>
+
+<header class="content-header">
+   <div class="container">
+       <h1><i class="fas fa-clipboard-check"></i> SSW স্কিল টেস্ট</h1>
+       <p>特定技能評価試験 - জাপানে কাজ করার জন্য প্রয়োজনীয় দক্ষতা পরীক্ষার সম্পূর্ণ গাইড</p>
+   </div>
+</header>
+
+<main class="main-content">
+   
+   <!-- What is Skill Test -->
+   <article class="article-card">
+       <h2><i class="fas fa-question-circle"></i> স্কিল টেস্ট কী?</h2>
+       <p>
+           <strong>Specified Skills Test (特定技能評価試験)</strong> হলো জাপান সরকার কর্তৃক নির্ধারিত একটি দক্ষতা মূল্যায়ন পরীক্ষা। এই পরীক্ষায় উত্তীর্ণ হলে প্রমাণিত হয় যে আপনি নির্দিষ্ট ক্ষেত্রে কাজ করার জন্য প্রয়োজনীয় জ্ঞান ও দক্ষতা অর্জন করেছেন।
+       </p>
+       <p>
+           <strong>গুরুত্বপূর্ণ:</strong> SSW ভিসার জন্য শুধু JLPT N4 পাস করলেই চলবে না, অবশ্যই সংশ্লিষ্ট সেক্টরের স্কিল টেস্টেও উত্তীর্ণ হতে হবে। তবে কেয়ারগিভিং সেক্টরে "কাঙ্গারু" (介護) পরীক্ষা আলাদা।
+       </p>
+
+       <div class="exam-info-grid">
+           <div class="exam-info-card">
+               <h4><i class="fas fa-building"></i> পরীক্ষা পরিচালনা</h4>
+               <p>JITCO (Japan International Training Cooperation Organization) এবং সংশ্লিষ্ট শিল্প সংস্থা</p>
+           </div>
+           <div class="exam-info-card">
+               <h4><i class="fas fa-globe"></i> পরীক্ষা ভাষা</h4>
+               <p>জাপানি ভাষায় (JLPT N4 লেভেল), কিছু ক্ষেত্রে ইংরেজি অনুবাদ থাকে</p>
+           </div>
+           <div class="exam-info-card">
+               <h4><i class="fas fa-clock"></i> পরীক্ষার সময়</h4>
+               <p>সেক্টর ভেদে ১-২ ঘণ্টা (MCQ + Practical)</p>
+           </div>
+           <div class="exam-info-card">
+               <h4><i class="fas fa-check-circle"></i> পাস মার্ক</h4>
+               <p>সাধারণত ৬০-৭০% (সেক্টর ভেদে ভিন্ন)</p>
+           </div>
+       </div>
+   </article>
+
+   <!-- Test Centers in Bangladesh -->
+   <article class="article-card">
+       <h2><i class="fas fa-map-marker-alt"></i> বাংলাদেশে পরীক্ষা কেন্দ্র</h2>
+       <p>বর্তমানে বাংলাদেশে নিম্নলিখিত সেক্টরগুলোর স্কিল টেস্ট নেওয়া হয়:</p>
+       
+       <ul class="center-list">
+           <li class="center-item">
+               <div class="center-icon"><i class="fas fa-hand-holding-heart"></i></div>
+               <div class="center-info">
+                   <h4>নার্সিং কেয়ার (介護)</h4>
+                   <p>কাঙ্গারো পরীক্ষা - বছরে ২-৩ বার, ঢাকায়</p>
+               </div>
+           </li>
+           <li class="center-item">
+               <div class="center-icon"><i class="fas fa-utensils"></i></div>
+               <div class="center-info">
+                   <h4>ফুড সার্ভিস (外食業)</h4>
+                   <p>জাপান ফুড সার্ভিস অ্যাসোসিয়েশন - ঢাকায় পরীক্ষা কেন্দ্র রয়েছে</p>
+               </div>
+           </li>
+           <li class="center-item">
+               <div class="center-icon"><i class="fas fa-seedling"></i></div>
+               <div class="center-info">
+                   <h4>কৃষি (農業)</h4>
+                   <p>কৃষি সেক্টরের পরীক্ষা - বাংলাদেশে কেন্দ্র রয়েছে</p>
+               </div>
+           </li>
+           <li class="center-item">
+               <div class="center-icon"><i class="fas fa-car"></i></div>
+               <div class="center-info">
+                   <h4>অটোমোবাইল (自動車整備)</h4>
+                   <p>অটোমোবাইল মেইনটেন্যান্স - নির্বাচিত কেন্দ্রে</p>
+               </div>
+           </li>
+       </ul>
+
+       <div class="highlight-box">
+           <p><strong>নোট:</strong> কনস্ট্রাকশন ও শিপবিল্ডিং সেক্টরের পরীক্ষা বাংলাদেশে নেই। এই সেক্টরে যেতে হলে জাপানে গিয়ে পরীক্ষা দিতে হবে বা অন্য দেশে (যেমন: ভারত, থাইল্যান্ড) পরীক্ষা দিতে হবে।</p>
+       </div>
+   </article>
+
+   <!-- Registration Process -->
+   <article class="article-card">
+       <h2><i class="fas fa-edit"></i> রেজিস্ট্রেশন প্রক্রিয়া</h2>
+       <p>স্কিল টেস্টে অংশগ্রহণের জন্য অনলাইনে রেজিস্ট্রেশন করতে হবে:</p>
+       
+       <div class="reg-step">
+           <div class="reg-number">১</div>
+           <div class="reg-content">
+               <h4>ওয়েবসাইটে যান</h4>
+               <p>JITCO বা সংশ্লিষ্ট সেক্টরের অফিসিয়াল ওয়েবসাইটে যান</p>
+           </div>
+       </div>
+       <div class="reg-step">
+           <div class="reg-number">২</div>
+           <div class="reg-content">
+               <h4>অ্যাকাউন্ট তৈরি</h4>
+               <p>ইমেইল দিয়ে রেজিস্ট্রেশন করুন</p>
+           </div>
+       </div>
+       <div class="reg-step">
+           <div class="reg-number">৩</div>
+           <div class="reg-content">
+               <h4>ফরম পূরণ</h4>
+               <p>ব্যক্তিগত তথ্য, শিক্ষাগত যোগ্যতা, JLPT সার্টিফিকেট নম্বর দিন</p>
+           </div>
+       </div>
+       <div class="reg-step">
+           <div class="reg-number">৪</div>
+           <div class="reg-content">
+               <h4>ফি পরিশোধ</h4>
+               <p>ব্যাংক ড্রাফট বা অনলাইন পেমেন্ট করুন (ফি: ¥5,000-¥10,000)</p>
+           </div>
+       </div>
+       <div class="reg-step">
+           <div class="reg-number">৫</div>
+           <div class="reg-content">
+               <h4>এডমিট কার্ড</h4>
+               <p>পরীক্ষার ১ সপ্তাহ আগে এডমিট কার্ড ডাউনলোড করুন</p>
+           </div>
+       </div>
+
+       <div class="date-card">
+           <h4><i class="fas fa-calendar-alt"></i> ২০২৬ সালের পরীক্ষার সম্ভাব্য সময় (Caregiving)</h4>
+           <ul class="date-list">
+               <li><span>১ম ব্যাচ রেজিস্ট্রেশন</span> <strong>জানুয়ারি-ফেব্রুয়ারি</strong></li>
+               <li><span>১ম পরীক্ষা</span> <strong>মার্চ-এপ্রিল</strong></li>
+               <li><span>২য় ব্যাচ রেজিস্ট্রেশন</span> <strong>জুলাই-আগস্ট</strong></li>
+               <li><span>২য় পরীক্ষা</span> <strong>সেপ্টেম্বর-অক্টোবর</strong></li>
+           </ul>
+       </div>
+   </article>
+
+   <!-- Exam Format -->
+   <article class="article-card">
+       <h2><i class="fas fa-file-alt"></i> পরীক্ষার ফরম্যাট ও সিলেবাস</h2>
+       <p>সেক্টর ভেদে পরীক্ষার ধরন ভিন্ন হতে পারে। সাধারণত নিম্নলিখিত বিষয়গুলো থাকে:</p>
+       
+       <table class="syllabus-table">
+           <thead>
+               <tr>
+                   <th>বিষয়</th>
+                   <th>মার্কস</th>
+                   <th>বিবরণ</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>বিষয়বস্তু জ্ঞান</td>
+                   <td>৪০%</td>
+                   <td>সংশ্লিষ্ট সেক্টরের তাত্ত্বিক জ্ঞান</td>
+               </tr>
+               <tr>
+                   <td>কারিগরি দক্ষতা</td>
+                   <td>৩০%</td>
+                   <td>প্র্যাক্টিকাল কাজের দক্ষতা</td>
+               </tr>
+               <tr>
+                   <td>নিরাপত্তা</td>
+                   <td>২০%</td>
+                   <td>কাজের নিরাপত্তা বিধি</td>
+               </tr>
+               <tr>
+                   <td>জাপানি ভাষা</td>
+                   <td>১০%</td>
+                   <td>দৈনন্দিন কাজে ভাষা ব্যবহার</td>
+               </tr>
+           </tbody>
+       </table>
+
+       <h3>📝 পরীক্ষার ধরন</h3>
+       <ul class="center-list" style="margin-top: 16px;">
+           <li class="center-item" style="padding: 12px;">
+               <div class="center-icon" style="width: 32px; height: 32px; font-size: 0.9rem;"><i class="fas fa-check-square"></i></div>
+               <div class="center-info">
+                   <h4 style="font-size: 0.95rem;">MCQ (বহুনির্বাচনি)</h4>
+                   <p style="font-size: 0.85rem;">৪টি অপশন থেকে সঠিক উত্তর নির্বাচন করতে হবে</p>
+               </div>
+           </li>
+           <li class="center-item" style="padding: 12px;">
+               <div class="center-icon" style="width: 32px; height: 32px; font-size: 0.9rem;"><i class="fas fa-tools"></i></div>
+               <div class="center-info">
+                   <h4 style="font-size: 0.95rem;">Practical (কারিগরি)</h4>
+                   <p style="font-size: 0.85rem;">কিছু সেক্টরে হাতে-কলমে পরীক্ষা নেওয়া হয়</p>
+               </div>
+           </li>
+           <li class="center-item" style="padding: 12px;">
+               <div class="center-icon" style="width: 32px; height: 32px; font-size: 0.9rem;"><i class="fas fa-comments"></i></div>
+               <div class="center-info">
+                   <h4 style="font-size: 0.95rem;">Interview (মৌখিক)</h4>
+                   <p style="font-size: 0.85rem;">কেয়ারগিভিং সেক্টরে মৌখিক পরীক্ষা থাকে</p>
+               </div>
+           </li>
+       </ul>
+   </article>
+
+   <!-- Preparation Tips -->
+   <article class="article-card">
+       <h2><i class="fas fa-graduation-cap"></i> প্রস্তুতির টিপস</h2>
+       
+       <div class="tips-grid">
+           <div class="tip-card">
+               <h4><i class="fas fa-book"></i> স্টাডি ম্যাটেরিয়াল</h4>
+               <p>JITCO ওয়েবসাইট থেকে অফিসিয়াল সিলেবাস ও প্র্যাকটিস প্রশ্ন সংগ্রহ করুন</p>
+           </div>
+           <div class="tip-card">
+               <h4><i class="fas fa-language"></i> জাপানি ভাষা</h4>
+               <p>JLPT N4 শেখা শেষ করুন। পরীক্ষার প্রশ্ন জাপানি ভাষায় থাকে</p>
+           </div>
+           <div class="tip-card">
+               <h4><i class="fas fa-users"></i> ট্রেনিং কোর্স</h4>
+               <p>বাংলাদেশে JITCO অনুমোদিত ট্রেনিং সেন্টারে ভর্তি হন</p>
+           </div>
+           <div class="tip-card">
+               <h4><i class="fas fa-clock"></i> সময় ব্যবস্থাপনা</h4>
+               <p>পরীক্ষার আগে কমপক্ষে ৩-৬ মাস প্রস্তুতি নিন</p>
+           </div>
+           <div class="tip-card">
+               <h4><i class="fas fa-laptop"></i> অনলাইন রিসোর্স</h4>
+               <p>YouTube-এ JITCO চ্যানেলে টিউটোরিয়াল ভিডিও দেখুন</p>
+           </div>
+           <div class="tip-card">
+               <h4><i class="fas fa-redo"></i> প্র্যাকটিস</h4>
+               <p>পূর্ববর্তী বছরের প্রশ্নপত্র সমাধান করুন</p>
+           </div>
+       </div>
+
+       <div class="highlight-box">
+           <p><strong>💡 পরামর্শ:</strong> কেয়ারগিভিং পরীক্ষার জন্য "কাঙ্গারো" টেক্সটবুকটি পড়ুন। এটি বাংলা অনুবাদসহ পাওয়া যায়। পরীক্ষার প্রশ্নের বড় একটি অংশ এই বই থেকে আসে।</p>
+       </div>
+   </article>
+
+   <!-- After Exam -->
+   <article class="article-card">
+       <h2><i class="fas fa-certificate"></i> পরীক্ষা পরবর্তী প্রক্রিয়া</h2>
+       
+       <h3>📊 ফলাফল প্রকাশ</h3>
+       <p>পরীক্ষার ১-২ মাসের মধ্যে ফলাফল JITCO ওয়েবসাইটে প্রকাশিত হয়। এসএমএস ও ইমেইলেও জানানো হয়।</p>
+       
+       <h3>🎉 পাস করলে</h3>
+       <ul class="center-list">
+           <li class="center-item">
+               <div class="center-icon"><i class="fas fa-award"></i></div>
+               <div class="center-info">
+                   <h4>সার্টিফিকেট সংগ্রহ</h4>
+                   <p>অনলাইনে সার্টিফিকেট ডাউনলোড করুন বা কেন্দ্র থেকে সংগ্রহ করুন</p>
+               </div>
+           </li>
+           <li class="center-item">
+               <div class="center-icon"><i class="fas fa-briefcase"></i></div>
+               <div class="center-info">
+                   <h4>জব অফার খোঁজা</h4>
+                   <p>এজেন্সি বা সরাসরি কোম্পানিতে জব অফারের জন্য আবেদন করুন</p>
+               </div>
+           </li>
+           <li class="center-item">
+               <div class="center-icon"><i class="fas fa-passport"></i></div>
+               <div class="center-info">
+                   <h4>COE আবেদন</h4>
+                   <p>জব অফার পেলে COE এর জন্য আবেদন করুন</p>
+               </div>
+           </li>
+       </ul>
+
+       <h3>😞 ফেল করলে</h3>
+       <p>হতাশ হবেন না! পরবর্তী ব্যাচে আবার পরীক্ষা দিতে পারবেন। ব্যর্থতার কারণ বিশ্লেষণ করে আরও ভালো প্রস্তুতি নিন।</p>
+   </article>
+
+   <!-- Navigation Footer -->
+   <div class="nav-footer">
+       <a href="ssw-visa-process.html" class="nav-btn">
+           <i class="fas fa-arrow-left"></i> আগের: ভিসা প্রক্রিয়া
+       </a>
+       <a href="ssw-documents.html" class="nav-btn next">
+           পরবর্তী: ডকুমেন্টস <i class="fas fa-arrow-right"></i>
+       </a>
+   </div>
+
+</main>
+
+<footer class="footer">
+   <div class="container">
+       <p>&copy; ২০২৬ আপনার নিহোন। সর্বস্বত্ব সংরক্ষিত।</p>
+       <p style="margin-top: 6px;"><a href="ssw.html">SSW হাবে ফিরুন</a> | <a href="index.html">হোম</a></p>
+   </div>
+</footer>
+
+<script>
+   window.addEventListener('scroll', () => {
+       const navbar = document.getElementById('navbar');
+       if (window.scrollY > 10) {
+           navbar.classList.add('scrolled');
+       } else {
+           navbar.classList.remove('scrolled');
+       }
+   });
+</script>
+
+</body>
+</html>

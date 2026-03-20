@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>SSW ভিসা প্রক্রিয়া - সম্পূর্ণ গাইড | আপনার নিহোন</title>
+   <meta name="description" content="জাপান SSW ভিসা আবেদনের সম্পূর্ণ প্রক্রিয়া। COE সংগ্রহ থেকে ভিসা ইস্যু পর্যন্ত step-by-step গাইড, প্রয়োজনীয় ডকুমেন্টস ও সময়সীমা।">
+   
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   <style>
+       :root {
+           --primary: #6C5CE7;
+           --primary-light: #A29BFE;
+           --primary-dark: #5A4BD1;
+           --primary-glow: rgba(108, 92, 231, 0.15);
+           --accent: #FF6B6B;
+           --accent-green: #00B894;
+           --accent-blue: #0984E3;
+           --accent-orange: #FFA502;
+           --dark: #1A1A2E;
+           --text-primary: #2D3436;
+           --text-secondary: #636E72;
+           --text-muted: #B2BEC3;
+           --border: #E8EDF2;
+           --bg-primary: #FFFFFF;
+           --bg-secondary: #F8FAFC;
+           --bg-tertiary: #F1F5F9;
+           --gradient-hero: linear-gradient(135deg, #0984E3 0%, #74B9FF 100%);
+           --gradient-primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+           --gradient-accent: linear-gradient(135deg, #FF6B6B 0%, #FFA502 100%);
+           --gradient-success: linear-gradient(135deg, #00B894 0%, #00CEC9 100%);
+           --gradient-blue: linear-gradient(135deg, #0984E3 0%, #74B9FF 100%);
+           --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+           --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+           --shadow-lg: 0 10px 25px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04);
+           --shadow-xl: 0 20px 50px -12px rgba(0,0,0,0.12);
+           --shadow-card: 0 4px 24px rgba(0,0,0,0.06);
+           --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+           --section-padding: 60px 20px;
+           --container-max: 900px;
+           --radius-sm: 8px;
+           --radius-md: 12px;
+           --radius-lg: 16px;
+           --radius-xl: 24px;
+           --radius-full: 9999px;
+       }
+
+       * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+       html { scroll-behavior: smooth; font-size: 16px; }
+       body { 
+           font-family: 'Noto Sans Bengali', 'Inter', 'Noto Sans JP', sans-serif; 
+           background: var(--bg-secondary); 
+           color: var(--text-primary); 
+           line-height: 1.8; 
+           overflow-x: hidden;
+       }
+
+       .container { max-width: var(--container-max); margin: 0 auto; padding: 0 20px; }
+
+       /* Navbar */
+       .navbar { 
+           position: fixed; 
+           top: 0; 
+           width: 100%; 
+           background: rgba(255,255,255,0.95); 
+           backdrop-filter: blur(20px) saturate(180%); 
+           z-index: 1000; 
+           border-bottom: 1px solid rgba(0,0,0,0.04);
+           transition: var(--transition);
+       }
+       .navbar.scrolled { box-shadow: var(--shadow-md); }
+       .nav-container { 
+           max-width: var(--container-max); 
+           margin: 0 auto; 
+           padding: 12px 20px; 
+           display: flex; 
+           justify-content: space-between; 
+           align-items: center; 
+       }
+       .logo { display: flex; align-items: center; text-decoration: none; }
+       .logo-img { height: 45px; width: auto; border-radius: var(--radius-md); }
+       .back-btn {
+           display: flex;
+           align-items: center;
+           gap: 8px;
+           padding: 10px 20px;
+           background: var(--gradient-primary);
+           color: white;
+           text-decoration: none;
+           border-radius: var(--radius-full);
+           font-weight: 600;
+           font-size: 0.85rem;
+           transition: var(--transition);
+       }
+       .back-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(108, 92, 231, 0.3); }
+
+       /* Content Header */
+       .content-header {
+           margin-top: 80px;
+           padding: 40px 20px;
+           background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f2 100%);
+           text-align: center;
+           border-bottom: 1px solid rgba(9, 132, 227, 0.1);
+       }
+       .content-header h1 {
+           font-size: 1.9rem;
+           color: var(--dark);
+           font-weight: 900;
+           margin-bottom: 12px;
+           line-height: 1.3;
+       }
+       .content-header h1 i { color: var(--accent-blue); }
+       .content-header p {
+           color: var(--text-secondary);
+           font-size: 1rem;
+           max-width: 600px;
+           margin: 0 auto;
+       }
+
+       /* Main Content */
+       .main-content {
+           padding: var(--section-padding);
+           max-width: 800px;
+           margin: 0 auto;
+       }
+
+       /* Article Card */
+       .article-card {
+           background: white;
+           border-radius: var(--radius-xl);
+           padding: 32px;
+           margin-bottom: 24px;
+           box-shadow: var(--shadow-card);
+           border: 1px solid var(--border);
+       }
+       .article-card h2 {
+           font-size: 1.4rem;
+           color: var(--dark);
+           font-weight: 800;
+           margin-bottom: 20px;
+           display: flex;
+           align-items: center;
+           gap: 12px;
+           padding-bottom: 16px;
+           border-bottom: 2px solid var(--border);
+       }
+       .article-card h2 i { color: var(--accent-blue); }
+       .article-card h3 {
+           font-size: 1.15rem;
+           color: var(--dark);
+           font-weight: 700;
+           margin: 24px 0 12px 0;
+       }
+       .article-card p {
+           color: var(--text-secondary);
+           margin-bottom: 16px;
+           font-size: 0.95rem;
+           line-height: 1.9;
+       }
+       .article-card strong { color: var(--dark); font-weight: 600; }
+
+       /* Process Steps */
+       .process-step {
+           display: flex;
+           gap: 20px;
+           margin-bottom: 24px;
+           padding: 20px;
+           background: var(--bg-secondary);
+           border-radius: var(--radius-lg);
+           border-left: 4px solid var(--accent-blue);
+       }
+       .step-number {
+           width: 40px;
+           height: 40px;
+           background: var(--gradient-blue);
+           color: white;
+           border-radius: var(--radius-full);
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-weight: 900;
+           font-size: 1.1rem;
+           flex-shrink: 0;
+       }
+       .step-content h4 {
+           font-size: 1.1rem;
+           color: var(--dark);
+           margin-bottom: 8px;
+           font-weight: 700;
+       }
+       .step-content p {
+           margin: 0;
+           font-size: 0.9rem;
+       }
+
+       /* Timeline */
+       .timeline {
+           position: relative;
+           padding-left: 30px;
+           margin: 20px 0;
+       }
+       .timeline::before {
+           content: '';
+           position: absolute;
+           left: 10px;
+           top: 0;
+           bottom: 0;
+           width: 2px;
+           background: var(--border);
+       }
+       .timeline-item {
+           position: relative;
+           margin-bottom: 20px;
+           padding-left: 20px;
+       }
+       .timeline-item::before {
+           content: '';
+           position: absolute;
+           left: -25px;
+           top: 5px;
+           width: 12px;
+           height: 12px;
+           background: var(--accent-blue);
+           border-radius: 50%;
+           border: 3px solid white;
+           box-shadow: 0 0 0 3px var(--accent-blue);
+       }
+       .timeline-item h4 {
+           font-size: 1rem;
+           color: var(--dark);
+           margin-bottom: 6px;
+       }
+       .timeline-item p {
+           margin: 0;
+           font-size: 0.9rem;
+       }
+
+       /* Document List */
+       .doc-list {
+           list-style: none;
+           padding: 0;
+       }
+       .doc-list li {
+           display: flex;
+           align-items: center;
+           gap: 12px;
+           padding: 12px;
+           margin-bottom: 8px;
+           background: var(--bg-secondary);
+           border-radius: var(--radius-md);
+           font-size: 0.9rem;
+       }
+       .doc-list li i { color: var(--accent-green); }
+
+       /* Fee Table */
+       .fee-table {
+           width: 100%;
+           border-collapse: collapse;
+           margin: 20px 0;
+           font-size: 0.9rem;
+       }
+       .fee-table th,
+       .fee-table td {
+           padding: 12px;
+           text-align: left;
+           border: 1px solid var(--border);
+       }
+       .fee-table th {
+           background: var(--gradient-blue);
+           color: white;
+           font-weight: 700;
+       }
+       .fee-table tr:nth-child(even) { background: var(--bg-secondary); }
+
+       /* Highlight Box */
+       .highlight-box {
+           background: linear-gradient(135deg, rgba(9,132,227,0.08) 0%, rgba(116,185,255,0.08) 100%);
+           border-left: 4px solid var(--accent-blue);
+           padding: 20px;
+           border-radius: var(--radius-md);
+           margin: 20px 0;
+       }
+       .highlight-box p { margin: 0; color: var(--text-primary); }
+
+       .warning-box {
+           background: linear-gradient(135deg, rgba(255,107,107,0.08) 0%, rgba(255,165,2,0.08) 100%);
+           border-left: 4px solid var(--accent);
+           padding: 20px;
+           border-radius: var(--radius-md);
+           margin: 20px 0;
+       }
+       .warning-box p { margin: 0; color: var(--text-primary); }
+
+       /* Tips Grid */
+       .tips-grid {
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 12px;
+           margin: 20px 0;
+       }
+       .tip-card {
+           background: var(--bg-secondary);
+           padding: 16px;
+           border-radius: var(--radius-md);
+           border-left: 3px solid var(--accent-green);
+       }
+       .tip-card h4 {
+           font-size: 0.95rem;
+           color: var(--dark);
+           margin-bottom: 6px;
+           display: flex;
+           align-items: center;
+           gap: 8px;
+       }
+       .tip-card h4 i { color: var(--accent-green); }
+       .tip-card p { margin: 0; font-size: 0.85rem; }
+
+       /* Navigation Footer */
+       .nav-footer {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 24px 0;
+           margin-top: 40px;
+           border-top: 1px solid var(--border);
+       }
+       .nav-btn {
+           display: flex;
+           align-items: center;
+           gap: 8px;
+           padding: 12px 20px;
+           background: white;
+           color: var(--dark);
+           text-decoration: none;
+           border-radius: var(--radius-md);
+           font-weight: 600;
+           font-size: 0.9rem;
+           border: 2px solid var(--border);
+           transition: var(--transition);
+       }
+       .nav-btn:hover {
+           background: var(--primary);
+           color: white;
+           border-color: var(--primary);
+       }
+       .nav-btn.next {
+           background: var(--gradient-blue);
+           color: white;
+           border-color: transparent;
+       }
+
+       /* Footer */
+       .footer {
+           background: var(--dark);
+           color: white;
+           padding: 30px 20px;
+           text-align: center;
+           margin-top: 40px;
+       }
+       .footer p { color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+       .footer a { color: var(--primary-light); text-decoration: none; }
+
+       /* Responsive */
+       @media (min-width: 768px) {
+           .content-header h1 { font-size: 2.2rem; }
+           .tips-grid { grid-template-columns: repeat(2, 1fr); }
+       }
+   </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+   <div class="nav-container">
+       <a href="ssw.html" class="logo">
+           <img src="aponar-nihon(1).png" alt="আপনার নিহোন" class="logo-img">
+       </a>
+       <a href="ssw.html" class="back-btn">
+           <i class="fas fa-arrow-left"></i> SSW হাবে ফিরুন
+       </a>
+   </div>
+</nav>
+
+<header class="content-header">
+   <div class="container">
+       <h1><i class="fas fa-passport"></i> SSW ভিসা প্রক্রিয়া</h1>
+       <p>COE (Certificate of Eligibility) সংগ্রহ থেকে জাপান যাত্রা পর্যন্ত সম্পূর্ণ step-by-step গাইড</p>
+   </div>
+</header>
+
+<main class="main-content">
+   
+   <!-- Overview -->
+   <article class="article-card">
+       <h2><i class="fas fa-list-ol"></i> ভিসা প্রক্রিয়ার ধাপসমূহ</h2>
+       <p>SSW ভিসা পেতে মূলত ৫টি ধাপ পার করতে হয়। প্রতিটি ধাপ সফলভাবে সম্পন্ন করতে হবে:</p>
+       
+       <div class="process-step">
+           <div class="step-number">১</div>
+           <div class="step-content">
+               <h4>জব অফার সংগ্রহ</h4>
+               <p>জাপানি এজেন্সি বা সরাসরি কোম্পানি থেকে জব অফার লেটার সংগ্রহ করুন। এটি COE আবেদনের ভিত্তি।</p>
+           </div>
+       </div>
+       
+       <div class="process-step">
+           <div class="step-number">২</div>
+           <div class="step-content">
+               <h4>COE আবেদন</h4>
+               <p>জাপানে নিয়োগকর্তা বা এজেন্সি Imigration Office-এ COE (Certificate of Eligibility) এর জন্য আবেদন করে।</p>
+           </div>
+       </div>
+       
+       <div class="process-step">
+           <div class="step-number">৩</div>
+           <div class="step-content">
+               <h4>COE সংগ্রহ</h4>
+               <p>Immigration Bureau কর্তৃক COE অনুমোদিত হলে এটি বাংলাদেশে পাঠানো হয়। সময় লাগে ১-৩ মাস।</p>
+           </div>
+       </div>
+       
+       <div class="process-step">
+           <div class="step-number">৪</div>
+           <div class="step-content">
+               <h4>ভিসা আবেদন</h4>
+               <p>COE নিয়ে ঢাকার জাপান এম্বাসিতে ভিসা আবেদন করুন। সাধারণত ৫-১০ কার্যদিবসে ভিসা ইস্যু হয়।</p>
+           </div>
+       </div>
+       
+       <div class="process-step">
+           <div class="step-number">৫</div>
+           <div class="step-content">
+               <h4>জাপান যাত্রা</h4>
+               <p>ভিসা সংগ্রহ করে টিকিট কাটুন এবং জাপানে যান। এয়ারপোর্টে Residence Card সংগ্রহ করুন।</p>
+           </div>
+       </div>
+   </article>
+
+   <!-- Step 1: Job Offer -->
+   <article class="article-card">
+       <h2><i class="fas fa-briefcase"></i> ধাপ ১: জব অফার সংগ্রহ</h2>
+       <p>SSW ভিসার জন্য জাপানি কোম্পানি থেকে সরাসরি জব অফার লেটার (Letter of Employment) লাগবে। এটি পাওয়ার উপায়:</p>
+       
+       <h3>🔍 উপায় ১: জাপানি এজেন্সির মাধ্যমে</h3>
+       <ul class="doc-list">
+           <li><i class="fas fa-check-circle"></i> বাংলাদেশে অনুমোদিত জাপানি এজেন্সির সাথে যোগাযোগ করুন</li>
+           <li><i class="fas fa-check-circle"></i> এজেন্সি আপনার প্রোফাইল জাপানি কোম্পানিতে পাঠাবে</li>
+           <li><i class="fas fa-check-circle"></i> ভার্চুয়াল ইন্টারভিউর ব্যবস্থা করবে</li>
+           <li><i class="fas fa-check-circle"></i> চাকরি নিশ্চিত হলে জব অফার লেটার দেবে</li>
+       </ul>
+
+       <h3>🔍 উপায় ২: সরাসরি কোম্পানি থেকে</h3>
+       <ul class="doc-list">
+           <li><i class="fas fa-check-circle"></i> জাপানি কোম্পানির ওয়েবসাইটে সরাসরি আবেদন করুন</li>
+           <li><i class="fas fa-check-circle"></i> LinkedIn বা জব পোর্টাল ব্যবহার করুন</li>
+           <li><i class="fas fa-check-circle"></i> ভিডিও ইন্টারভিউ দিন</li>
+           <li><i class="fas fa-check-circle"></i> সিলেক্ট হলে জব অফার লেটার পাবেন</li>
+       </ul>
+
+       <div class="highlight-box">
+           <p><strong>জব অফার লেটারে থাকতে হবে:</strong> কোম্পানির নাম ও ঠিকানা, পদবি, বেতন, কাজের ঘণ্টা, চুক্তির মেয়াদ, এবং SSW ভিসা স্পনসরশিপের উল্লেখ।</p>
+       </div>
+   </article>
+
+   <!-- Step 2: COE -->
+   <article class="article-card">
+       <h2><i class="fas fa-file-contract"></i> ধাপ ২: COE (Certificate of Eligibility)</h2>
+       <p>COE হলো জাপান ইমিগ্রেশন কর্তৃক ইস্যু করা একটি সার্টিফিকেট যা প্রমাণ করে যে আপনি জাপানে কাজ করার যোগ্য।</p>
+       
+       <h3>📋 COE আবেদনের প্রক্রিয়া</h3>
+       <div class="timeline">
+           <div class="timeline-item">
+               <h4>কোম্পানি আবেদন করে</h4>
+               <p>জাপানে নিয়োগকর্তা কোম্পানি নিকটস্থ Immigration Office-এ আবেদন করে</p>
+           </div>
+           <div class="timeline-item">
+               <h4>ডকুমেন্টস জমা দেওয়া</h4>
+               <p>আপনার পাসপোর্ট কপি, ছবি, JLPT/JFT সার্টিফিকেট, স্কিল টেস্ট রেজাল্ট, জব অফার লেটার জমা দেওয়া হয়</p>
+           </div>
+           <div class="timeline-item">
+               <h4>পর্যালোচনা</h4>
+               <p>Immigration Bureau ডকুমেন্টস যাচাই করে (১-৩ মাস সময় লাগে)</p>
+           </div>
+           <div class="timeline-item">
+               <h4>COE ইস্যু</h4>
+               <p>অনুমোদিত হলে COE ইস্যু হয় এবং বাংলাদেশে পাঠানো হয়</p>
+           </div>
+       </div>
+
+       <h3>⏱️ সময়সীমা</h3>
+       <p>COE প্রসেসিং সময় সাধারণত <strong>১ থেকে ৩ মাস</strong>। ব্যস্ত মৌসুমে (এপ্রিল-মে) সময় বেশি লাগতে পারে।</p>
+
+       <h3>💰 ফি</h3>
+       <table class="fee-table">
+           <thead>
+               <tr>
+                   <th>সেবা</th>
+                   <th>ফি (JPY)</th>
+                   <th>ফি (BDT)</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>COE Application</td>
+                   <td>০</td>
+                   <td>ফ্রি</td>
+               </tr>
+               <tr>
+                   <td>এজেন্সি ফি (ঐচ্ছিক)</td>
+                   <td>ভেরিয়েবল</td>
+                   <td>১-২ লাখ টাকা</td>
+               </tr>
+           </tbody>
+       </table>
+   </article>
+
+   <!-- Step 3: Visa Application -->
+   <article class="article-card">
+       <h2><i class="fas fa-stamp"></i> ধাপ ৩: জাপান এম্বাসিতে ভিসা আবেদন</h2>
+       <p>COE হাতে পেলে ঢাকার জাপান এম্বাসিতে ভিসা আবেদন করতে হবে।</p>
+       
+       <h3>📍 ঠিকানা ও সময়</h3>
+       <ul class="doc-list">
+           <li><i class="fas fa-map-marker-alt"></i> <strong>ঠিকানা:</strong> ৫ মিন্টো রোড, রামনা, ঢাকা-১০০০</li>
+           <li><i class="fas fa-clock"></i> <strong>সময়:</strong> সকাল ৯:০০ - ১১:৩০ (রবি-বৃহস্পতি)</li>
+           <li><i class="fas fa-phone"></i> <strong>ফোন:</strong> ০২-৫৮৮১-৭০০০</li>
+       </ul>
+
+       <h3>📄 প্রয়োজনীয় ডকুমেন্টস</h3>
+       <ul class="doc-list">
+           <li><i class="fas fa-check-circle"></i> পাসপোর্ট (মেয়াদ কমপক্ষে ৬ মাস)</li>
+           <li><i class="fas fa-check-circle"></i> COE (Original + ১ কপি)</li>
+           <li><i class="fas fa-check-circle"></i> ভিসা আবেদন ফরম (Embassy থেকে সংগ্রহ)</li>
+           <li><i class="fas fa-check-circle"></i> পাসপোর্ট সাইজ ছবি ২ কপি (সাদা ব্যাকগ্রাউন্ড)</li>
+           <li><i class="fas fa-check-circle"></i> জব অফার লেটার কপি</li>
+       </ul>
+
+       <h3>💰 ভিসা ফি</h3>
+       <table class="fee-table">
+           <thead>
+               <tr>
+                   <th>ভিসা টাইপ</th>
+                   <th>ফি (BDT)</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>Single Entry (৩ মাস)</td>
+                   <td>৪০০০ টাকা</td>
+               </tr>
+               <tr>
+                   <td>Multiple Entry</td>
+                   <td>৮০০০ টাকা</td>
+               </tr>
+           </tbody>
+       </table>
+
+       <h3>⏱️ প্রসেসিং সময়</h3>
+       <p>সাধারণত <strong>৫-১০ কার্যদিবস</strong>। কখনো কখনো অতিরিক্ত ডকুমেন্টস চাওয়া হতে পারে।</p>
+
+       <div class="warning-box">
+           <p><strong>⚠️ সতর্কতা:</strong> COE এর মেয়াদ ৩ মাস। এই সময়ের মধ্যে ভিসা আবেদন করতে হবে, নতুবা COE বাতিল হয়ে যাবে এবং নতুন করে আবেদন করতে হবে।</p>
+       </div>
+   </article>
+
+   <!-- Step 4: Arrival -->
+   <article class="article-card">
+       <h2><i class="fas fa-plane-arrival"></i> ধাপ ৪: জাপানে আগমন ও Residence Card</h2>
+       <p>ভিসা পাওয়ার পর জাপান যেতে পারবেন। এয়ারপোর্টে কিছু গুরুত্বপূর্ণ কাজ করতে হবে:</p>
+       
+       <h3>🛬 এয়ারপোর্টে করণীয়</h3>
+       <div class="timeline">
+           <div class="timeline-item">
+               <h4>Immigration Check</h4>
+               <p>পাসপোর্ট, ভিসা, এবং COE দেখিয়ে ইমিগ্রেশন ক্লিয়ারেন্স নিন</p>
+           </div>
+           <div class="timeline-item">
+               <h4>Residence Card সংগ্রহ</h4>
+               <p>নারিতা/হানেদা/কানসাই এয়ারপোর্টে Residence Card ইস্যু করা হয় (১ ঘণ্টার মধ্যে)</p>
+           </div>
+           <div class="timeline-item">
+               <h4>Re-Entry Permit</h4>
+               <p>যদি ১ বছরের মধ্যে বাংলাদেশে আসতে চান, তাহলে Special Re-Entry Permit নিন (ফ্রি)</p>
+           </div>
+           <div class="timeline-item">
+               <h4>মunicipal Office রেজিস্ট্রেশন</h4>
+               <p>১৪ দিনের মধ্যে বসবাসকারী শহরের City Office-এ রেজিস্ট্রেশন করুন</p>
+           </div>
+       </div>
+
+       <h3>📝 Residence Card তথ্য</h3>
+       <ul class="doc-list">
+           <li><i class="fas fa-id-card"></i> <strong>মেয়াদ:</strong> ৫ বছর (SSW-1)</li>
+           <li><i class="fas fa-id-card"></i> <strong>আপডেট:</strong> কোম্পানি পরিবর্তন করলে ১৪ দিনের মধ্যে আপডেট করতে হবে</li>
+           <li><i class="fas fa-id-card"></i> <strong>নবায়ন:</strong> মেয়াদ শেষের ৩ মাস আগে নবায়নের আবেদন করতে হবে</li>
+       </ul>
+   </article>
+
+   <!-- Tips -->
+   <article class="article-card">
+       <h2><i class="fas fa-lightbulb"></i> গুরুত্বপূর্ণ টিপস</h2>
+       
+       <div class="tips-grid">
+           <div class="tip-card">
+               <h4><i class="fas fa-clock"></i> সময় ব্যবস্থাপনা</h4>
+               <p>পুরো প্রক্রিয়ায় ৩-৬ মাস সময় লাগে। তাড়াহুড়া করবেন না।</p>
+           </div>
+           <div class="tip-card">
+               <h4><i class="fas fa-file-alt"></i> ডকুমেন্টস</h4>
+               <p>সব কাগজের কপি রাখুন। অনুবাদ করা লাগলে certified translator ব্যবহার করুন।</p>
+           </div>
+           <div class="tip-card">
+               <h4><i class="fas fa-money-bill-wave"></i> আর্থিক প্রস্তুতি</h4>
+               <p>প্রথম ২-৩ মাসের খরচ (৩-৪ লাখ টাকা) সাথে রাখুন।</p>
+           </div>
+           <div class="tip-card">
+               <h4><i class="fas fa-phone"></i> যোগাযোগ</h4>
+               <p>এজেন্সি বা কোম্পানির সাথে নিয়মিত যোগাযোগ রাখুন।</p>
+           </div>
+       </div>
+   </article>
+
+   <!-- Navigation Footer -->
+   <div class="nav-footer">
+       <a href="ssw-overview.html" class="nav-btn">
+           <i class="fas fa-arrow-left"></i> আগের: Overview
+       </a>
+       <a href="ssw-exam.html" class="nav-btn next">
+           পরবর্তী: স্কিল টেস্ট <i class="fas fa-arrow-right"></i>
+       </a>
+   </div>
+
+</main>
+
+<footer class="footer">
+   <div class="container">
+       <p>&copy; ২০২৬ আপনার নিহোন। সর্বস্বত্ব সংরক্ষিত।</p>
+       <p style="margin-top: 6px;"><a href="ssw.html">SSW হাবে ফিরুন</a> | <a href="index.html">হোম</a></p>
+   </div>
+</footer>
+
+<script>
+   window.addEventListener('scroll', () => {
+       const navbar = document.getElementById('navbar');
+       if (window.scrollY > 10) {
+           navbar.classList.add('scrolled');
+       } else {
+           navbar.classList.remove('scrolled');
+       }
+   });
+</script>
+
+</body>
+</html>

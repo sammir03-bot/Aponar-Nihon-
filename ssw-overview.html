@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>SSW Overview - 特定技能 সম্পূর্ণ পরিচিতি | আপনার নিহোন</title>
+   <meta name="description" content="জাপান SSW (Specified Skilled Worker) ভিসার সম্পূর্ণ ওভারভিউ। SSW-1 ও SSW-2 এর পার্থক্য, ১৪টি কর্মক্ষেত্র, ভিসার মেয়াদ ও সুবিধা বিস্তারিত।">
+   
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   <style>
+       :root {
+           --primary: #6C5CE7;
+           --primary-light: #A29BFE;
+           --primary-dark: #5A4BD1;
+           --primary-glow: rgba(108, 92, 231, 0.15);
+           --accent: #FF6B6B;
+           --accent-green: #00B894;
+           --accent-blue: #0984E3;
+           --accent-orange: #FFA502;
+           --dark: #1A1A2E;
+           --text-primary: #2D3436;
+           --text-secondary: #636E72;
+           --text-muted: #B2BEC3;
+           --border: #E8EDF2;
+           --bg-primary: #FFFFFF;
+           --bg-secondary: #F8FAFC;
+           --bg-tertiary: #F1F5F9;
+           --gradient-hero: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+           --gradient-primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+           --gradient-accent: linear-gradient(135deg, #FF6B6B 0%, #FFA502 100%);
+           --gradient-success: linear-gradient(135deg, #00B894 0%, #00CEC9 100%);
+           --gradient-blue: linear-gradient(135deg, #0984E3 0%, #74B9FF 100%);
+           --gradient-orange: linear-gradient(135deg, #FFA502 0%, #FDCB6E 100%);
+           --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+           --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+           --shadow-lg: 0 10px 25px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04);
+           --shadow-xl: 0 20px 50px -12px rgba(0,0,0,0.12);
+           --shadow-card: 0 4px 24px rgba(0,0,0,0.06);
+           --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+           --section-padding: 60px 20px;
+           --container-max: 900px;
+           --radius-sm: 8px;
+           --radius-md: 12px;
+           --radius-lg: 16px;
+           --radius-xl: 24px;
+           --radius-full: 9999px;
+       }
+
+       * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+       html { scroll-behavior: smooth; font-size: 16px; }
+       body { 
+           font-family: 'Noto Sans Bengali', 'Inter', 'Noto Sans JP', sans-serif; 
+           background: var(--bg-secondary); 
+           color: var(--text-primary); 
+           line-height: 1.8; 
+           overflow-x: hidden;
+       }
+
+       .container { max-width: var(--container-max); margin: 0 auto; padding: 0 20px; }
+
+       /* Navbar */
+       .navbar { 
+           position: fixed; 
+           top: 0; 
+           width: 100%; 
+           background: rgba(255,255,255,0.95); 
+           backdrop-filter: blur(20px) saturate(180%); 
+           z-index: 1000; 
+           border-bottom: 1px solid rgba(0,0,0,0.04);
+           transition: var(--transition);
+       }
+       .navbar.scrolled { box-shadow: var(--shadow-md); }
+       .nav-container { 
+           max-width: var(--container-max); 
+           margin: 0 auto; 
+           padding: 12px 20px; 
+           display: flex; 
+           justify-content: space-between; 
+           align-items: center; 
+       }
+       .logo { display: flex; align-items: center; text-decoration: none; }
+       .logo-img { height: 45px; width: auto; border-radius: var(--radius-md); }
+       .back-btn {
+           display: flex;
+           align-items: center;
+           gap: 8px;
+           padding: 10px 20px;
+           background: var(--gradient-primary);
+           color: white;
+           text-decoration: none;
+           border-radius: var(--radius-full);
+           font-weight: 600;
+           font-size: 0.85rem;
+           transition: var(--transition);
+       }
+       .back-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(108, 92, 231, 0.3); }
+
+       /* Content Header */
+       .content-header {
+           margin-top: 80px;
+           padding: 40px 20px;
+           background: linear-gradient(135deg, #f5f0ff 0%, #e8e2ff 100%);
+           text-align: center;
+           border-bottom: 1px solid rgba(108, 92, 231, 0.1);
+       }
+       .content-header h1 {
+           font-size: 1.9rem;
+           color: var(--dark);
+           font-weight: 900;
+           margin-bottom: 12px;
+           line-height: 1.3;
+       }
+       .content-header p {
+           color: var(--text-secondary);
+           font-size: 1rem;
+           max-width: 600px;
+           margin: 0 auto;
+       }
+
+       /* Main Content */
+       .main-content {
+           padding: var(--section-padding);
+           max-width: 800px;
+           margin: 0 auto;
+       }
+
+       /* Article Card */
+       .article-card {
+           background: white;
+           border-radius: var(--radius-xl);
+           padding: 32px;
+           margin-bottom: 24px;
+           box-shadow: var(--shadow-card);
+           border: 1px solid var(--border);
+       }
+       .article-card h2 {
+           font-size: 1.4rem;
+           color: var(--dark);
+           font-weight: 800;
+           margin-bottom: 20px;
+           display: flex;
+           align-items: center;
+           gap: 12px;
+           padding-bottom: 16px;
+           border-bottom: 2px solid var(--border);
+       }
+       .article-card h2 i { color: var(--primary); }
+       .article-card h3 {
+           font-size: 1.2rem;
+           color: var(--dark);
+           font-weight: 700;
+           margin: 24px 0 12px 0;
+       }
+       .article-card p {
+           color: var(--text-secondary);
+           margin-bottom: 16px;
+           font-size: 0.95rem;
+           line-height: 1.9;
+       }
+       .article-card strong { color: var(--dark); font-weight: 600; }
+
+       /* Comparison Table */
+       .comparison-table {
+           width: 100%;
+           border-collapse: collapse;
+           margin: 20px 0;
+           font-size: 0.9rem;
+       }
+       .comparison-table th,
+       .comparison-table td {
+           padding: 14px;
+           text-align: left;
+           border: 1px solid var(--border);
+       }
+       .comparison-table th {
+           background: var(--gradient-primary);
+           color: white;
+           font-weight: 700;
+       }
+       .comparison-table tr:nth-child(even) { background: var(--bg-secondary); }
+       .comparison-table td:first-child { font-weight: 600; color: var(--dark); }
+
+       /* Sector Grid */
+       .sector-grid {
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 12px;
+           margin: 20px 0;
+       }
+       .sector-item {
+           display: flex;
+           align-items: center;
+           gap: 12px;
+           padding: 14px 16px;
+           background: var(--bg-secondary);
+           border-radius: var(--radius-md);
+           border-left: 4px solid var(--primary);
+       }
+       .sector-item i { color: var(--primary); font-size: 1.1rem; }
+       .sector-item span { font-weight: 600; color: var(--dark); font-size: 0.95rem; }
+       .sector-item small {
+           margin-left: auto;
+           color: var(--text-muted);
+           font-size: 0.8rem;
+       }
+
+       /* Highlight Box */
+       .highlight-box {
+           background: linear-gradient(135deg, rgba(108,92,231,0.08) 0%, rgba(162,155,254,0.08) 100%);
+           border-left: 4px solid var(--primary);
+           padding: 20px;
+           border-radius: var(--radius-md);
+           margin: 20px 0;
+       }
+       .highlight-box p { margin: 0; color: var(--text-primary); }
+
+       /* List Style */
+       .custom-list {
+           list-style: none;
+           padding: 0;
+           margin: 16px 0;
+       }
+       .custom-list li {
+           position: relative;
+           padding-left: 28px;
+           margin-bottom: 12px;
+           color: var(--text-secondary);
+           font-size: 0.95rem;
+           line-height: 1.7;
+       }
+       .custom-list li::before {
+           content: '\\f00c';
+           font-family: 'Font Awesome 6 Free';
+           font-weight: 900;
+           position: absolute;
+           left: 0;
+           top: 2px;
+           color: var(--accent-green);
+           font-size: 0.9rem;
+       }
+
+       /* Navigation Footer */
+       .nav-footer {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 24px 0;
+           margin-top: 40px;
+           border-top: 1px solid var(--border);
+       }
+       .nav-btn {
+           display: flex;
+           align-items: center;
+           gap: 8px;
+           padding: 12px 20px;
+           background: white;
+           color: var(--dark);
+           text-decoration: none;
+           border-radius: var(--radius-md);
+           font-weight: 600;
+           font-size: 0.9rem;
+           border: 2px solid var(--border);
+           transition: var(--transition);
+       }
+       .nav-btn:hover {
+           background: var(--primary);
+           color: white;
+           border-color: var(--primary);
+       }
+       .nav-btn.next {
+           background: var(--gradient-primary);
+           color: white;
+           border-color: transparent;
+       }
+
+       /* Footer */
+       .footer {
+           background: var(--dark);
+           color: white;
+           padding: 30px 20px;
+           text-align: center;
+           margin-top: 40px;
+       }
+       .footer p { color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+       .footer a { color: var(--primary-light); text-decoration: none; }
+
+       /* Responsive */
+       @media (min-width: 768px) {
+           .content-header h1 { font-size: 2.2rem; }
+           .sector-grid { grid-template-columns: repeat(2, 1fr); }
+       }
+   </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+   <div class="nav-container">
+       <a href="ssw.html" class="logo">
+           <img src="aponar-nihon(1).png" alt="আপনার নিহোন" class="logo-img">
+       </a>
+       <a href="ssw.html" class="back-btn">
+           <i class="fas fa-arrow-left"></i> SSW হাবে ফিরুন
+       </a>
+   </div>
+</nav>
+
+<header class="content-header">
+   <div class="container">
+       <h1><i class="fas fa-info-circle" style="color: var(--primary);"></i> SSW Overview</h1>
+       <p>特定技能 (Specified Skilled Worker) ভিসার সম্পূর্ণ পরিচিতি - জাপানে দক্ষ কর্মী হিসেবে কাজ করার সুযোগ</p>
+   </div>
+</header>
+
+<main class="main-content">
+   
+   <!-- What is SSW -->
+   <article class="article-card">
+       <h2><i class="fas fa-lightbulb"></i> SSW কী?</h2>
+       <p>
+           <strong>Specified Skilled Worker (特定技能 - Tokutei Ginou)</strong> হলো জাপান সরকার কর্তৃক ২০১৯ সালে চালু করা একটি বিশেষ কর্মী ভিসা ক্যাটেগরি। জাপানের ক্রমবর্ধমান শ্রমিক সংকট মোকাবেলায় এবং বিদেশি দক্ষ কর্মী আকর্ষণের জন্য এই ভিসা চালু করা হয়।
+       </p>
+       <p>
+           এই ভিসার মাধ্যমে বাংলাদেশিসহ বিশ্বের যেকোনো দেশের নাগরিকরা জাপানের নির্দিষ্ট ১৪টি শিল্পখাতে (সেক্টরে) সরাসরি চাকরি করতে পারেন। এটি ট্রেনি/টেকনিক্যাল ইন্টার্নশিপ ভিসা থেকে সম্পূর্ণ ভিন্ন এবং অনেক বেশি সুবিধাজনক।
+       </p>
+       
+       <div class="highlight-box">
+           <p><strong>মূল সুবিধা:</strong> SSW ভিসায় কোনো স্পনসর বা এজেন্সির প্রয়োজন নেই। সরাসরি জাপানি কোম্পানিতে চাকরি করা যায় এবং ৫ বছর পর নবায়নযোগ্য।</p>
+       </div>
+   </article>
+
+   <!-- SSW-1 vs SSW-2 -->
+   <article class="article-card">
+       <h2><i class="fas fa-code-branch"></i> SSW-1 vs SSW-2: পার্থক্য কী?</h2>
+       <p>জাপান SSW ভিসা দুটি লেভেলে বিভক্ত। প্রতিটির সুবিধা ও শর্ত ভিন্ন:</p>
+       
+       <table class="comparison-table">
+           <thead>
+               <tr>
+                   <th>বিষয়</th>
+                   <th>SSW-1 (Type 1)</th>
+                   <th>SSW-2 (Type 2)</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>ভিসার মেয়াদ</td>
+                   <td>সর্বোচ্চ ৫ বছর</td>
+                   <td>অসীম (বারবার নবায়ন)</td>
+               </tr>
+               <tr>
+                   <td>যোগ্যতা</td>
+                   <td>JLPT N4 + স্কিল টেস্ট</td>
+                   <td>SSW-1 অভিজ্ঞতা + উচ্চতর দক্ষতা</td>
+               </tr>
+               <tr>
+                   <td>পরিবার ভিসা</td>
+                   <td>❌ অনুমোদিত নয়</td>
+                   <td>✅ স্ত্রী/স্বামী ও সন্তান আনা যায়</td>
+               </tr>
+               <tr>
+                   <td>স্থায়ী বসবাস</td>
+                   <td>❌ সরাসরি নয়</td>
+                   <td>✅ সম্ভব (নির্দিষ্ট শর্তে)</td>
+               </tr>
+               <tr>
+                   <td>জব চেঞ্জ</td>
+                   <td>একই সেক্টরে সম্ভব</td>
+                   <td>সীমাহীন</td>
+               </tr>
+               <tr>
+                   <td>সেক্টর সংখ্যা</td>
+                   <td>১৪টি সেক্টর</td>
+                   <td>২টি সেক্টর (কনস্ট্রাকশন, শিপবিল্ডিং)</td>
+               </tr>
+           </tbody>
+       </table>
+
+       <div class="highlight-box">
+           <p><strong>গুরুত্বপূর্ণ:</strong> বাংলাদেশি কর্মীরা প্রথমে SSW-1 দিয়ে যান। ৫ বছর কাজের অভিজ্ঞতা ও উচ্চতর দক্ষতা অর্জন করলে SSW-2 তে আবেদন করতে পারেন।</p>
+       </div>
+   </article>
+
+   <!-- 14 Sectors -->
+   <article class="article-card">
+       <h2><i class="fas fa-industry"></i> ১৪টি কর্মক্ষেত্র (Sectors)</h2>
+       <p>SSW-1 ভিসায় জাপানের নিম্নলিখিত ১৪টি শিল্পখাতে কাজ করা যায়:</p>
+       
+       <div class="sector-grid">
+           <div class="sector-item">
+               <i class="fas fa-hand-holding-heart"></i>
+               <span>নার্সিং কেয়ার (介護)</span>
+               <small>Caregiving</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-utensils"></i>
+               <span>ফুড সার্ভিস (外食業)</span>
+               <small>Restaurant</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-seedling"></i>
+               <span>কৃষি (農業)</span>
+               <small>Agriculture</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-fish"></i>
+               <span>ফিশারিজ (漁業)</span>
+               <small>Fisheries</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-wine-bottle"></i>
+               <span>ফুড অ্যান্ড ড্রিংক (飲料食品製造業)</span>
+               <small>Manufacturing</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-hotel"></i>
+               <span>অ্যাকমোডেশন (宿泊業)</span>
+               <small>Hotels</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-broom"></i>
+               <span>বিল্ডিং ক্লিনিং (ビルクリーニング)</span>
+               <small>Cleaning</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-industry"></i>
+               <span>ম্যাটেরিয়ালস প্রসেসিং (産業機械製造業)</span>
+               <small>Manufacturing</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-car"></i>
+               <span>অটোমোবাইল (自動車整備)</span>
+               <small>Auto Repair</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-plane"></i>
+               <span>এভিয়েশন (航空)</span>
+               <small>Airport</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-home"></i>
+               <span>হাউজিং (造園)</span>
+               <small>Landscaping</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-hard-hat"></i>
+               <span>কনস্ট্রাকশন (建設)</span>
+               <small>Construction</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-ship"></i>
+               <span>শিপবিল্ডিং (造船)</span>
+               <small>Shipbuilding</small>
+           </div>
+           <div class="sector-item">
+               <i class="fas fa-tshirt"></i>
+               <span>গার্মেন্টস (アパレル産業)</span>
+               <small>Apparel</small>
+           </div>
+       </div>
+
+       <p><strong>জনপ্রিয় সেক্টর:</strong> বাংলাদেশি কর্মীদের জন্য <strong>নার্সিং কেয়ার, ফুড সার্ভিস, কৃষি, অটোমোবাইল</strong> এবং <strong>কনস্ট্রাকশন</strong> সবচেয়ে জনপ্রিয়। এগুলোতে চাহিদা বেশি এবং বাংলাদেশে পরীক্ষা কেন্দ্রও রয়েছে।</p>
+   </article>
+
+   <!-- Benefits -->
+   <article class="article-card">
+       <h2><i class="fas fa-star"></i> SSW ভিসার সুবিধাসমূহ</h2>
+       
+       <h3>💼 পেশাগত সুবিধা</h3>
+       <ul class="custom-list">
+           <li><strong>সরাসরি চাকরি:</strong> কোনো এজেন্সি বা স্পনসর ছাড়াই সরাসরি জাপানি কোম্পানিতে চাকরি</li>
+           <li><strong>সমান বেতন:</strong> জাপানি কর্মীদের সমান বেতন ও সুবিধা পাবেন</li>
+           <li><strong>জব সিকিউরিটি:</strong> কোম্পানি পরিবর্তনের সুবিধা (একই সেক্টরে)</li>
+           <li><strong>ওভারটাইম:</strong> অতিরিক্ত কাজের জন্য বাড়তি পারিশ্রমিক</li>
+       </ul>
+
+       <h3>🏠 ব্যক্তিগত সুবিধা</h3>
+       <ul class="custom-list">
+           <li><strong>দীর্ঘমেয়াদী ভিসা:</strong> ৫ বছর ভিসা, পরে নবায়নযোগ্য</li>
+           <li><strong>স্বাস্থ্যসেবা:</strong> জাপানের বিশ্বমানের স্বাস্থ্যসেবার সুবিধা</li>
+           <li><strong>সোশ্যাল সিকিউরিটি:</strong> পেনশন, ইনস্যুরেন্স সুবিধা</li>
+           <li><strong>ভাষা শেখা:</strong> জাপানি ভাষা শেখার সুযোগ</li>
+       </ul>
+
+       <h3>📈 ভবিষ্যৎ সুবিধা</h3>
+       <ul class="custom-list">
+           <li><strong>SSW-2 আপগ্রেড:</strong> উন্নত দক্ষতা অর্জনে স্থায়ী ভিসার সুযোগ</li>
+           <li><strong>পরিবার নিয়ে যাওয়া:</strong> SSW-2 তে স্ত্রী/স্বামী ও সন্তান আনতে পারবেন</li>
+           <li><strong>স্থায়ী বসবাস:</strong> দীর্ঘমেয়াদী বসবাসের সুযোগ</li>
+           <li><strong>অভিজ্ঞতা:</strong> আন্তর্জাতিক কাজের অভিজ্ঞতা সংগ্রহ</li>
+       </ul>
+   </article>
+
+   <!-- Eligibility -->
+   <article class="article-card">
+       <h2><i class="fas fa-user-check"></i> যোগ্যতা ও প্রয়োজনীয়তা</h2>
+       
+       <h3>📋 মৌলিক যোগ্যতা</h3>
+       <ul class="custom-list">
+           <li><strong>বয়স:</strong> ন্যূনতম ১৮ বছর (কোনো upper limit নেই)</li>
+           <li><strong>শিক্ষাগত যোগ্যতা:</strong> ন্যূনতম SSC/JSC পাস (কিছু সেক্টরে HSC বাঞ্ছনীয়)</li>
+           <li><strong>স্বাস্থ্য:</strong> শারীরিক ও মানসিকভাবে সুস্থ</li>
+           <li><strong>অপরাধমুক্ত:</strong> কোনো গুরুতর অপরাধের রেকর্ড নেই</li>
+       </ul>
+
+       <h3>🗣️ ভাষাগত যোগ্যতা</h3>
+       <ul class="custom-list">
+           <li><strong>JLPT N4:</strong> Japanese Language Proficiency Test N4 পাস সার্টিফিকেট</li>
+           <li><strong>বিকল্প:</strong> JFT-Basic (Japan Foundation Test for Basic Japanese) পাস</li>
+           <li><strong>দক্ষতা:</strong> দৈনন্দিন কাজে জাপানি ভাষায় যোগাযোগ করতে সক্ষম হতে হবে</li>
+       </ul>
+
+       <h3>🛠️ পেশাগত যোগ্যতা</h3>
+       <ul class="custom-list">
+           <li><strong>স্কিল টেস্ট:</strong> নির্বাচিত সেক্টরে Specified Skills Test পাস করতে হবে</li>
+           <li><strong>অভিজ্ঞতা:</strong> কিছু সেক্টরে পূর্ব অভিজ্ঞতা বাঞ্ছনীয় (বাধ্যতামূলক নয়)</li>
+           <li><strong>ট্রেনিং:</strong> কিছু ক্ষেত্রে সংশ্লিষ্ট ট্রেনিং সার্টিফিকেট লাগতে পারে</li>
+       </ul>
+
+       <div class="highlight-box">
+           <p><strong>বিশেষ নোট:</strong> যদি আপনি জাপানে ট্রেনি হিসেবে ৩ বছর কাজ করেছেন এবং সম্পর্কিত সেক্টরে SSW আবেদন করেন, তাহলে স্কিল টেস্ট ছাড়া শুধু JLPT N4 দিয়ে আবেদন করা যায়।</p>
+       </div>
+   </article>
+
+   <!-- Navigation Footer -->
+   <div class="nav-footer">
+       <a href="ssw.html" class="nav-btn">
+           <i class="fas fa-arrow-left"></i> SSW হাব
+       </a>
+       <a href="ssw-visa-process.html" class="nav-btn next">
+           পরবর্তী: ভিসা প্রক্রিয়া <i class="fas fa-arrow-right"></i>
+       </a>
+   </div>
+
+</main>
+
+<footer class="footer">
+   <div class="container">
+       <p>&copy; ২০২৬ আপনার নিহোন। সর্বস্বত্ব সংরক্ষিত।</p>
+       <p style="margin-top: 6px;"><a href="ssw.html">SSW হাবে ফিরুন</a> | <a href="index.html">হোম</a></p>
+   </div>
+</footer>
+
+<script>
+   window.addEventListener('scroll', () => {
+       const navbar = document.getElementById('navbar');
+       if (window.scrollY > 10) {
+           navbar.classList.add('scrolled');
+       } else {
+           navbar.classList.remove('scrolled');
+       }
+   });
+</script>
+
+</body>
+</html>

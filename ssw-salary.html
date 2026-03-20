@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>SSW বেতন ও সুবিধা - সম্পূর্ণ হিসাব | আপনার নিহোন</title>
+   <meta name="description" content="জাপান SSW কর্মীদের বেতন, জীবনযাত্রার খরচ, ওভারটাইম, বোনাস ও সঞ্চয়ের বিস্তারিত হিসাব। সেক্টর অনুযায়ী বেতনের তুলনা।">
+   
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   <style>
+       :root {
+           --primary: #6C5CE7;
+           --primary-light: #A29BFE;
+           --primary-dark: #5A4BD1;
+           --primary-glow: rgba(108, 92, 231, 0.15);
+           --accent: #FF6B6B;
+           --accent-green: #00B894;
+           --accent-blue: #0984E3;
+           --accent-orange: #FFA502;
+           --accent-teal: #1ABC9C;
+           --dark: #1A1A2E;
+           --text-primary: #2D3436;
+           --text-secondary: #636E72;
+           --text-muted: #B2BEC3;
+           --border: #E8EDF2;
+           --bg-primary: #FFFFFF;
+           --bg-secondary: #F8FAFC;
+           --bg-tertiary: #F1F5F9;
+           --gradient-hero: linear-gradient(135deg, #1ABC9C 0%, #16A085 100%);
+           --gradient-primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+           --gradient-accent: linear-gradient(135deg, #FF6B6B 0%, #FFA502 100%);
+           --gradient-teal: linear-gradient(135deg, #1ABC9C 0%, #16A085 100%);
+           --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+           --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+           --shadow-lg: 0 10px 25px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04);
+           --shadow-xl: 0 20px 50px -12px rgba(0,0,0,0.12);
+           --shadow-card: 0 4px 24px rgba(0,0,0,0.06);
+           --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+           --section-padding: 60px 20px;
+           --container-max: 900px;
+           --radius-sm: 8px;
+           --radius-md: 12px;
+           --radius-lg: 16px;
+           --radius-xl: 24px;
+           --radius-full: 9999px;
+       }
+
+       * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+       html { scroll-behavior: smooth; font-size: 16px; }
+       body { 
+           font-family: 'Noto Sans Bengali', 'Inter', 'Noto Sans JP', sans-serif; 
+           background: var(--bg-secondary); 
+           color: var(--text-primary); 
+           line-height: 1.8; 
+           overflow-x: hidden;
+       }
+
+       .container { max-width: var(--container-max); margin: 0 auto; padding: 0 20px; }
+
+       /* Navbar */
+       .navbar { 
+           position: fixed; 
+           top: 0; 
+           width: 100%; 
+           background: rgba(255,255,255,0.95); 
+           backdrop-filter: blur(20px) saturate(180%); 
+           z-index: 1000; 
+           border-bottom: 1px solid rgba(0,0,0,0.04);
+           transition: var(--transition);
+       }
+       .navbar.scrolled { box-shadow: var(--shadow-md); }
+       .nav-container { 
+           max-width: var(--container-max); 
+           margin: 0 auto; 
+           padding: 12px 20px; 
+           display: flex; 
+           justify-content: space-between; 
+           align-items: center; 
+       }
+       .logo { display: flex; align-items: center; text-decoration: none; }
+       .logo-img { height: 45px; width: auto; border-radius: var(--radius-md); }
+       .back-btn {
+           display: flex;
+           align-items: center;
+           gap: 8px;
+           padding: 10px 20px;
+           background: var(--gradient-primary);
+           color: white;
+           text-decoration: none;
+           border-radius: var(--radius-full);
+           font-weight: 600;
+           font-size: 0.85rem;
+           transition: var(--transition);
+       }
+       .back-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(108, 92, 231, 0.3); }
+
+       /* Content Header */
+       .content-header {
+           margin-top: 80px;
+           padding: 40px 20px;
+           background: linear-gradient(135deg, #e8f8f5 0%, #d1f2eb 100%);
+           text-align: center;
+           border-bottom: 1px solid rgba(26, 188, 156, 0.1);
+       }
+       .content-header h1 {
+           font-size: 1.9rem;
+           color: var(--dark);
+           font-weight: 900;
+           margin-bottom: 12px;
+           line-height: 1.3;
+       }
+       .content-header h1 i { color: var(--accent-teal); }
+       .content-header p {
+           color: var(--text-secondary);
+           font-size: 1rem;
+           max-width: 600px;
+           margin: 0 auto;
+       }
+
+       /* Main Content */
+       .main-content {
+           padding: var(--section-padding);
+           max-width: 800px;
+           margin: 0 auto;
+       }
+
+       /* Article Card */
+       .article-card {
+           background: white;
+           border-radius: var(--radius-xl);
+           padding: 32px;
+           margin-bottom: 24px;
+           box-shadow: var(--shadow-card);
+           border: 1px solid var(--border);
+       }
+       .article-card h2 {
+           font-size: 1.4rem;
+           color: var(--dark);
+           font-weight: 800;
+           margin-bottom: 20px;
+           display: flex;
+           align-items: center;
+           gap: 12px;
+           padding-bottom: 16px;
+           border-bottom: 2px solid var(--border);
+       }
+       .article-card h2 i { color: var(--accent-teal); }
+       .article-card h3 {
+           font-size: 1.15rem;
+           color: var(--dark);
+           font-weight: 700;
+           margin: 24px 0 12px 0;
+       }
+       .article-card p {
+           color: var(--text-secondary);
+           margin-bottom: 16px;
+           font-size: 0.95rem;
+           line-height: 1.9;
+       }
+       .article-card strong { color: var(--dark); font-weight: 600; }
+
+       /* Salary Table */
+       .salary-table {
+           width: 100%;
+           border-collapse: collapse;
+           margin: 20px 0;
+           font-size: 0.9rem;
+       }
+       .salary-table th,
+       .salary-table td {
+           padding: 12px;
+           text-align: left;
+           border: 1px solid var(--border);
+       }
+       .salary-table th {
+           background: var(--gradient-teal);
+           color: white;
+           font-weight: 700;
+       }
+       .salary-table tr:nth-child(even) { background: var(--bg-secondary); }
+       .salary-table td:first-child { font-weight: 600; color: var(--dark); }
+       .salary-highlight {
+           background: rgba(26, 188, 156, 0.1);
+           font-weight: 700;
+       }
+
+       /* Calculation Box */
+       .calc-box {
+           background: var(--bg-secondary);
+           border-radius: var(--radius-lg);
+           padding: 24px;
+           margin: 20px 0;
+       }
+       .calc-row {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 10px 0;
+           border-bottom: 1px dashed var(--border);
+       }
+       .calc-row:last-child { border-bottom: none; }
+       .calc-row.total {
+           font-weight: 700;
+           color: var(--dark);
+           font-size: 1.1rem;
+           border-top: 2px solid var(--accent-teal);
+           margin-top: 10px;
+           padding-top: 15px;
+       }
+       .calc-label { color: var(--text-secondary); }
+       .calc-value { font-weight: 600; color: var(--dark); }
+
+       /* Expense Cards */
+       .expense-grid {
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 12px;
+           margin: 20px 0;
+       }
+       .expense-card {
+           background: var(--bg-secondary);
+           padding: 16px;
+           border-radius: var(--radius-md);
+           border-left: 3px solid var(--accent);
+       }
+       .expense-card h4 {
+           font-size: 0.95rem;
+           color: var(--dark);
+           margin-bottom: 6px;
+           display: flex;
+           align-items: center;
+           gap: 8px;
+       }
+       .expense-card h4 i { color: var(--accent); }
+       .expense-card p { margin: 0; font-size: 0.85rem; }
+
+       /* Savings Chart */
+       .savings-chart {
+           background: linear-gradient(135deg, rgba(26,188,156,0.08) 0%, rgba(22,160,133,0.08) 100%);
+           border: 1px solid rgba(26, 188, 156, 0.2);
+           border-radius: var(--radius-lg);
+           padding: 24px;
+           margin: 20px 0;
+       }
+       .savings-chart h4 {
+           color: var(--accent-teal);
+           margin-bottom: 16px;
+           font-size: 1rem;
+       }
+       .savings-bar {
+           display: flex;
+           align-items: center;
+           margin-bottom: 12px;
+       }
+       .savings-label {
+           width: 100px;
+           font-size: 0.85rem;
+           color: var(--text-secondary);
+       }
+       .savings-progress {
+           flex: 1;
+           height: 24px;
+           background: var(--bg-secondary);
+           border-radius: var(--radius-sm);
+           overflow: hidden;
+           margin: 0 12px;
+       }
+       .savings-fill {
+           height: 100%;
+           background: var(--gradient-teal);
+           border-radius: var(--radius-sm);
+           display: flex;
+           align-items: center;
+           justify-content: flex-end;
+           padding-right: 8px;
+           color: white;
+           font-size: 0.75rem;
+           font-weight: 700;
+       }
+       .savings-amount {
+           width: 80px;
+           text-align: right;
+           font-weight: 600;
+           color: var(--dark);
+           font-size: 0.9rem;
+       }
+
+       /* Benefits List */
+       .benefits-list {
+           list-style: none;
+           padding: 0;
+           margin: 20px 0;
+       }
+       .benefits-list li {
+           display: flex;
+           align-items: center;
+           gap: 12px;
+           padding: 12px;
+           margin-bottom: 8px;
+           background: white;
+           border: 1px solid var(--border);
+           border-radius: var(--radius-md);
+       }
+       .benefits-list li i {
+           color: var(--accent-green);
+           font-size: 1.1rem;
+       }
+
+       /* Highlight Box */
+       .highlight-box {
+           background: linear-gradient(135deg, rgba(26,188,156,0.08) 0%, rgba(22,160,133,0.08) 100%);
+           border-left: 4px solid var(--accent-teal);
+           padding: 20px;
+           border-radius: var(--radius-md);
+           margin: 20px 0;
+       }
+       .highlight-box p { margin: 0; color: var(--text-primary); }
+
+       /* Navigation Footer */
+       .nav-footer {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 24px 0;
+           margin-top: 40px;
+           border-top: 1px solid var(--border);
+       }
+       .nav-btn {
+           display: flex;
+           align-items: center;
+           gap: 8px;
+           padding: 12px 20px;
+           background: white;
+           color: var(--dark);
+           text-decoration: none;
+           border-radius: var(--radius-md);
+           font-weight: 600;
+           font-size: 0.9rem;
+           border: 2px solid var(--border);
+           transition: var(--transition);
+       }
+       .nav-btn:hover {
+           background: var(--primary);
+           color: white;
+           border-color: var(--primary);
+       }
+       .nav-btn.next {
+           background: var(--gradient-teal);
+           color: white;
+           border-color: transparent;
+       }
+
+       /* Footer */
+       .footer {
+           background: var(--dark);
+           color: white;
+           padding: 30px 20px;
+           text-align: center;
+           margin-top: 40px;
+       }
+       .footer p { color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+       .footer a { color: var(--primary-light); text-decoration: none; }
+
+       /* Responsive */
+       @media (min-width: 768px) {
+           .content-header h1 { font-size: 2.2rem; }
+           .expense-grid { grid-template-columns: repeat(2, 1fr); }
+       }
+   </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+   <div class="nav-container">
+       <a href="ssw.html" class="logo">
+           <img src="aponar-nihon(1).png" alt="আপনার নিহোন" class="logo-img">
+       </a>
+       <a href="ssw.html" class="back-btn">
+           <i class="fas fa-arrow-left"></i> SSW হাবে ফিরুন
+       </a>
+   </div>
+</nav>
+
+<header class="content-header">
+   <div class="container">
+       <h1><i class="fas fa-yen-sign"></i> SSW বেতন ও সুবিধা</h1>
+       <p>জাপানে SSW কর্মী হিসেবে আয়, খরচ ও সঞ্চয়ের বিস্তারিত হিসাব</p>
+   </div>
+</header>
+
+<main class="main-content">
+   
+   <!-- Salary by Sector -->
+   <article class="article-card">
+       <h2><i class="fas fa-table"></i> সেক্টর অনুযায়ী বেতন</h2>
+       <p>নিচের তালিকায় বিভিন্ন সেক্টরের গড় মাসিক বেতন দেওয়া হলো (ইয়েনে):</p>
+       
+       <table class="salary-table">
+           <thead>
+               <tr>
+                   <th>সেক্টর</th>
+                   <th>মাসিক বেতন (¥)</th>
+                   <th>বাংলাদেশি টাকায়*</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr class="salary-highlight">
+                   <td><strong>কনস্ট্রাকশন</strong></td>
+                   <td>¥200,000 - ¥280,000</td>
+                   <td>১.৬ - ২.২ লাখ টাকা</td>
+               </tr>
+               <tr class="salary-highlight">
+                   <td><strong>শিপবিল্ডিং</strong></td>
+                   <td>¥200,000 - ¥280,000</td>
+                   <td>১.৬ - ২.২ লাখ টাকা</td>
+               </tr>
+               <tr>
+                   <td>নার্সিং কেয়ার</td>
+                   <td>¥180,000 - ¥230,000</td>
+                   <td>১.৪ - ১.৮ লাখ টাকা</td>
+               </tr>
+               <tr>
+                   <td>অটোমোবাইল</td>
+                   <td>¥180,000 - ¥240,000</td>
+                   <td>১.৪ - ১.৯ লাখ টাকা</td>
+               </tr>
+               <tr>
+                   <td>এভিয়েশন</td>
+                   <td>¥180,000 - ¥230,000</td>
+                   <td>১.৪ - ১.৮ লাখ টাকা</td>
+               </tr>
+               <tr>
+                   <td>ফুড সার্ভিস</td>
+                   <td>¥170,000 - ¥220,000</td>
+                   <td>১.৪ - ১.৮ লাখ টাকা</td>
+               </tr>
+               <tr>
+                   <td>ম্যাটেরিয়ালস প্রসেসিং</td>
+                   <td>¥180,000 - ¥230,000</td>
+                   <td>১.৪ - ১.৮ লাখ টাকা</td>
+               </tr>
+               <tr>
+                   <td>ফিশারিজ</td>
+                   <td>¥170,000 - ¥220,000</td>
+                   <td>১.৪ - ১.৮ লাখ টাকা</td>
+               </tr>
+               <tr>
+                   <td>অ্যাকমোডেশন</td>
+                   <td>¥170,000 - ¥210,000</td>
+                   <td>১.৪ - ১.৭ লাখ টাকা</td>
+               </tr>
+               <tr>
+                   <td>কৃষি</td>
+                   <td>¥160,000 - ¥200,000</td>
+                   <td>১.৩ - ১.৬ লাখ টাকা</td>
+               </tr>
+               <tr>
+                   <td>বিল্ডিং ক্লিনিং</td>
+                   <td>¥160,000 - ¥200,000</td>
+                   <td>১.৩ - ১.৬ লাখ টাকা</td>
+               </tr>
+               <tr>
+                   <td>গার্মেন্টস</td>
+                   <td>¥160,000 - ¥200,000</td>
+                   <td>১.৩ - ১.৬ লাখ টাকা</td>
+               </tr>
+           </tbody>
+       </table>
+       <p style="font-size: 0.85rem; color: var(--text-muted);">* ১ ইয়েন = ০.৮০ টাকা ধরে হিসাব (বিনিময় হার পরিবর্তনশীল)</p>
+   </article>
+
+   <!-- Monthly Calculation -->
+   <article class="article-card">
+       <h2><i class="fas fa-calculator"></i> মাসিক আয়-ব্যয় হিসাব</h2>
+       <p>একজন SSW কর্মীর গড় মাসিক হিসাব (নার্সিং কেয়ার সেক্টর, টোকিও):</p>
+       
+       <div class="calc-box">
+           <h3 style="margin-top: 0; color: var(--accent-teal);">💰 আয়ের উৎস</h3>
+           <div class="calc-row">
+               <span class="calc-label">মূল বেতন</span>
+               <span class="calc-value">¥200,000</span>
+           </div>
+           <div class="calc-row">
+               <span class="calc-label">ওভারটাইম (২০ ঘণ্টা)</span>
+               <span class="calc-value">¥25,000</span>
+           </div>
+           <div class="calc-row">
+               <span class="calc-label">বাড়ি ভাড়া ভাতা</span>
+               <span class="calc-value">¥20,000</span>
+           </div>
+           <div class="calc-row total">
+               <span class="calc-label">মোট আয়</span>
+               <span class="calc-value">¥245,000</span>
+           </div>
+       </div>
+
+       <div class="calc-box">
+           <h3 style="margin-top: 0; color: var(--accent);">💸 খরচ</h3>
+           <div class="calc-row">
+               <span class="calc-label">বাড়ি ভাড়া</span>
+               <span class="calc-value">¥50,000</span>
+           </div>
+           <div class="calc-row">
+               <span class="calc-label">খাবার</span>
+               <span class="calc-value">¥30,000</span>
+           </div>
+           <div class="calc-row">
+               <span class="calc-label">পরিবহন</span>
+               <span class="calc-value">¥10,000</span>
+           </div>
+           <div class="calc-row">
+               <span class="calc-label">ইউটিলিটি (বিদ্যুৎ, গ্যাস, পানি)</span>
+               <span class="calc-value">¥10,000</span>
+           </div>
+           <div class="calc-row">
+               <span class="calc-label">ট্যাক্স ও ইনস্যুরেন্স</span>
+               <span class="calc-value">¥25,000</span>
+           </div>
+           <div class="calc-row">
+               <span class="calc-label">ফোন/ইন্টারনেট</span>
+               <span class="calc-value">¥5,000</span>
+           </div>
+           <div class="calc-row">
+               <span class="calc-label">অন্যান্য</span>
+               <span class="calc-value">¥15,000</span>
+           </div>
+           <div class="calc-row total">
+               <span class="calc-label">মোট খরচ</span>
+               <span class="calc-value">¥145,000</span>
+           </div>
+       </div>
+
+       <div class="calc-box" style="background: linear-gradient(135deg, rgba(0,184,148,0.1) 0%, rgba(0,206,201,0.1) 100%); border: 2px solid var(--accent-green);">
+           <div class="calc-row total" style="border: none; margin: 0;">
+               <span class="calc-label" style="font-size: 1.2rem;">🎯 মাসিক সঞ্চয়</span>
+               <span class="calc-value" style="font-size: 1.3rem; color: var(--accent-green);">¥100,000 (৳80,000)</span>
+           </div>
+       </div>
+   </article>
+
+   <!-- Expense Details -->
+   <article class="article-card">
+       <h2><i class="fas fa-home"></i> জীবনযাত্রার খরচ বিস্তারিত</h2>
+       
+       <div class="expense-grid">
+           <div class="expense-card">
+               <h4><i class="fas fa-home"></i> বাসা ভাড়া</h4>
+               <p>টোকিও: ¥50,000-80,000<br>অন্যান্য শহর: ¥30,000-50,000<br>কোম্পানি accommodation দিলে আরও কম</p>
+           </div>
+           <div class="expense-card">
+               <h4><i class="fas fa-utensils"></i> খাবার</h4>
+               <p>নিজে রান্না করলে: ¥25,000-35,000<br>বাইরে খেলে: ¥40,000-60,000<br>কোম্পানি meal দিলে সস্তা</p>
+           </div>
+           <div class="expense-card">
+               <h4><i class="fas fa-bus"></i> পরিবহন</h4>
+               <p>মাসিক পাস: ¥10,000-20,000<br>কোম্পানি দূরত্বের উপর নির্ভরশীল<br>কিছু কোম্পানি transport দেয়</p>
+           </div>
+           <div class="expense-card">
+               <h4><i class="fas fa-bolt"></i> ইউটিলিটি</h4>
+               <p>বিদ্যুৎ: ¥3,000-5,000<br>গ্যাস: ¥3,000-5,000<br>পানি: ¥2,000-3,000<br>মোবাইল: ¥3,000-5,000</p>
+           </div>
+       </div>
+   </article>
+
+   <!-- Yearly Savings -->
+   <article class="article-card">
+       <h2><i class="fas fa-piggy-bank"></i> বার্ষিক সঞ্চয়ের হিসাব</h2>
+       <p>ভালো সঞ্চয়ের অভ্যাস থাকলে একজন SSW কর্মী বছরে এত টাকা পাঠাতে পারেন:</p>
+       
+       <div class="savings-chart">
+           <h4><i class="fas fa-chart-bar"></i> সঞ্চয়ের পরিমাণ (বছরে)</h4>
+           
+           <div class="savings-bar">
+               <div class="savings-label">কৃষি</div>
+               <div class="savings-progress">
+                   <div class="savings-fill" style="width: 40%;">¥600K</div>
+               </div>
+               <div class="savings-amount">৳4.8L</div>
+           </div>
+           
+           <div class="savings-bar">
+               <div class="savings-label">ফুড</div>
+               <div class="savings-progress">
+                   <div class="savings-fill" style="width: 60%;">¥900K</div>
+               </div>
+               <div class="savings-amount">৳7.2L</div>
+           </div>
+           
+           <div class="savings-bar">
+               <div class="savings-label">কেয়ার</div>
+               <div class="savings-progress">
+                   <div class="savings-fill" style="width: 80%;">¥1.2M</div>
+               </div>
+               <div class="savings-amount">৳9.6L</div>
+           </div>
+           
+           <div class="savings-bar">
+               <div class="savings-label">কনস্ট.</div>
+               <div class="savings-progress">
+                   <div class="savings-fill" style="width: 100%;">¥1.5M+</div>
+               </div>
+               <div class="savings-amount">৳12L+</div>
+           </div>
+       </div>
+
+       <div class="highlight-box">
+           <p><strong>💡 সঞ্চয় বাড়ানোর টিপস:</strong> ওভারটাইম কাজ করুন, নিজে রান্না করুন, অপ্রয়োজনীয় খরচ কমান, এবং নিয়মিত বাংলাদেশে টাকা পাঠান ( remittance rate ভালো পাবেন)।</p>
+       </div>
+   </article>
+
+   <!-- Additional Benefits -->
+   <article class="article-card">
+       <h2><i class="fas fa-gift"></i> অতিরিক্ত সুবিধা</h2>
+       <p>বেতন ছাড়াও SSW কর্মীরা নিম্নলিখিত সুবিধা পান:</p>
+       
+       <ul class="benefits-list">
+           <li><i class="fas fa-check-circle"></i> <strong>স্বাস্থ্যবীমা:</strong> জাপানের বিশ্বমানের স্বাস্থ্যসেবা (৭০% খরচ সরকার বহন করে)</li>
+           <li><i class="fas fa-check-circle"></i> <strong>পেনশন:</strong> দীর্ঘমেয়াদী বসবাসে পেনশন সুবিধা</li>
+           <li><i class="fas fa-check-circle"></i> <strong>বোনাস:</strong> অনেক কোম্পানি বছরে ২ বার বোনাস দেয় (গড় ২-৪ মাসের বেতন)</li>
+           <li><i class="fas fa-check-circle"></i> <strong>পেইড লিভ:</strong> বছরে ১০-২০ দিন ছুটি বেতনসহ</li>
+           <li><i class="fas fa-check-circle"></i> <strong>ট্রেনিং:</strong> কোম্পানি কর্তৃক বিনামূল্যে প্রশিক্ষণ</li>
+           <li><i class="fas fa-check-circle"></i> <strong>আবাসন সহায়তা:</strong> কিছু কোম্পানি বাড়ি ভাড়া দেয় বা কম দামে accommodation দেয়</li>
+       </ul>
+   </article>
+
+   <!-- Navigation Footer -->
+   <div class="nav-footer">
+       <a href="ssw-job.html" class="nav-btn">
+           <i class="fas fa-arrow-left"></i> আগের: জব সেক্টর
+       </a>
+       <a href="ssw-faq.html" class="nav-btn next">
+           পরবর্তী: FAQ <i class="fas fa-arrow-right"></i>
+       </a>
+   </div>
+
+</main>
+
+<footer class="footer">
+   <div class="container">
+       <p>&copy; ২০২৬ আপনার নিহোন। সর্বস্বত্ব সংরক্ষিত।</p>
+       <p style="margin-top: 6px;"><a href="ssw.html">SSW হাবে ফিরুন</a> | <a href="index.html">হোম</a></p>
+   </div>
+</footer>
+
+<script>
+   window.addEventListener('scroll', () => {
+       const navbar = document.getElementById('navbar');
+       if (window.scrollY > 10) {
+           navbar.classList.add('scrolled');
+       } else {
+           navbar.classList.remove('scrolled');
+       }
+   });
+</script>
+
+</body>
+</html>

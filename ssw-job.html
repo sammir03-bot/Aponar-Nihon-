@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <title>SSW জব সেক্টর - ১৪টি কর্মক্ষেত্র বিস্তারিত | আপনার নিহোন</title>
+   <meta name="description" content="জাপান SSW ভিসার ১৪টি কর্মক্ষেত্রের বিস্তারিত বিবরণ। নার্সিং কেয়ার, ফুড সার্ভিস, কৃষি, কনস্ট্রাকশন সহ সব সেক্টরের কাজের বিবরণ।">
+   
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+   <style>
+       :root {
+           --primary: #6C5CE7;
+           --primary-light: #A29BFE;
+           --primary-dark: #5A4BD1;
+           --primary-glow: rgba(108, 92, 231, 0.15);
+           --accent: #FF6B6B;
+           --accent-green: #00B894;
+           --accent-blue: #0984E3;
+           --accent-orange: #FFA502;
+           --accent-teal: #1ABC9C;
+           --dark: #1A1A2E;
+           --text-primary: #2D3436;
+           --text-secondary: #636E72;
+           --text-muted: #B2BEC3;
+           --border: #E8EDF2;
+           --bg-primary: #FFFFFF;
+           --bg-secondary: #F8FAFC;
+           --bg-tertiary: #F1F5F9;
+           --gradient-hero: linear-gradient(135deg, #FFA502 0%, #FDCB6E 100%);
+           --gradient-primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+           --gradient-accent: linear-gradient(135deg, #FF6B6B 0%, #FFA502 100%);
+           --gradient-orange: linear-gradient(135deg, #FFA502 0%, #FDCB6E 100%);
+           --gradient-teal: linear-gradient(135deg, #1ABC9C 0%, #16A085 100%);
+           --shadow-sm: 0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06);
+           --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+           --shadow-lg: 0 10px 25px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.04);
+           --shadow-xl: 0 20px 50px -12px rgba(0,0,0,0.12);
+           --shadow-card: 0 4px 24px rgba(0,0,0,0.06);
+           --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+           --section-padding: 60px 20px;
+           --container-max: 900px;
+           --radius-sm: 8px;
+           --radius-md: 12px;
+           --radius-lg: 16px;
+           --radius-xl: 24px;
+           --radius-full: 9999px;
+       }
+
+       * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+       html { scroll-behavior: smooth; font-size: 16px; }
+       body { 
+           font-family: 'Noto Sans Bengali', 'Inter', 'Noto Sans JP', sans-serif; 
+           background: var(--bg-secondary); 
+           color: var(--text-primary); 
+           line-height: 1.8; 
+           overflow-x: hidden;
+       }
+
+       .container { max-width: var(--container-max); margin: 0 auto; padding: 0 20px; }
+
+       /* Navbar */
+       .navbar { 
+           position: fixed; 
+           top: 0; 
+           width: 100%; 
+           background: rgba(255,255,255,0.95); 
+           backdrop-filter: blur(20px) saturate(180%); 
+           z-index: 1000; 
+           border-bottom: 1px solid rgba(0,0,0,0.04);
+           transition: var(--transition);
+       }
+       .navbar.scrolled { box-shadow: var(--shadow-md); }
+       .nav-container { 
+           max-width: var(--container-max); 
+           margin: 0 auto; 
+           padding: 12px 20px; 
+           display: flex; 
+           justify-content: space-between; 
+           align-items: center; 
+       }
+       .logo { display: flex; align-items: center; text-decoration: none; }
+       .logo-img { height: 45px; width: auto; border-radius: var(--radius-md); }
+       .back-btn {
+           display: flex;
+           align-items: center;
+           gap: 8px;
+           padding: 10px 20px;
+           background: var(--gradient-primary);
+           color: white;
+           text-decoration: none;
+           border-radius: var(--radius-full);
+           font-weight: 600;
+           font-size: 0.85rem;
+           transition: var(--transition);
+       }
+       .back-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(108, 92, 231, 0.3); }
+
+       /* Content Header */
+       .content-header {
+           margin-top: 80px;
+           padding: 40px 20px;
+           background: linear-gradient(135deg, #fff8e1 0%, #ffecb3 100%);
+           text-align: center;
+           border-bottom: 1px solid rgba(255, 165, 2, 0.1);
+       }
+       .content-header h1 {
+           font-size: 1.9rem;
+           color: var(--dark);
+           font-weight: 900;
+           margin-bottom: 12px;
+           line-height: 1.3;
+       }
+       .content-header h1 i { color: var(--accent-orange); }
+       .content-header p {
+           color: var(--text-secondary);
+           font-size: 1rem;
+           max-width: 600px;
+           margin: 0 auto;
+       }
+
+       /* Main Content */
+       .main-content {
+           padding: var(--section-padding);
+           max-width: 800px;
+           margin: 0 auto;
+       }
+
+       /* Article Card */
+       .article-card {
+           background: white;
+           border-radius: var(--radius-xl);
+           padding: 32px;
+           margin-bottom: 24px;
+           box-shadow: var(--shadow-card);
+           border: 1px solid var(--border);
+       }
+       .article-card h2 {
+           font-size: 1.4rem;
+           color: var(--dark);
+           font-weight: 800;
+           margin-bottom: 20px;
+           display: flex;
+           align-items: center;
+           gap: 12px;
+           padding-bottom: 16px;
+           border-bottom: 2px solid var(--border);
+       }
+       .article-card h2 i { color: var(--accent-orange); }
+       .article-card h3 {
+           font-size: 1.15rem;
+           color: var(--dark);
+           font-weight: 700;
+           margin: 24px 0 12px 0;
+       }
+       .article-card p {
+           color: var(--text-secondary);
+           margin-bottom: 16px;
+           font-size: 0.95rem;
+           line-height: 1.9;
+       }
+       .article-card strong { color: var(--dark); font-weight: 600; }
+
+       /* Sector Card */
+       .sector-card {
+           background: var(--bg-secondary);
+           border-radius: var(--radius-lg);
+           padding: 24px;
+           margin-bottom: 20px;
+           border: 1px solid var(--border);
+           transition: var(--transition);
+       }
+       .sector-card:hover {
+           border-color: var(--accent-orange);
+           box-shadow: var(--shadow-md);
+       }
+       .sector-header {
+           display: flex;
+           align-items: center;
+           gap: 16px;
+           margin-bottom: 16px;
+       }
+       .sector-icon {
+           width: 50px;
+           height: 50px;
+           background: var(--gradient-orange);
+           color: white;
+           border-radius: var(--radius-md);
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           font-size: 1.3rem;
+       }
+       .sector-title h4 {
+           font-size: 1.1rem;
+           color: var(--dark);
+           margin-bottom: 4px;
+       }
+       .sector-title span {
+           font-size: 0.85rem;
+           color: var(--text-muted);
+       }
+       .sector-details {
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 12px;
+       }
+       .detail-item {
+           display: flex;
+           align-items: flex-start;
+           gap: 10px;
+           font-size: 0.9rem;
+       }
+       .detail-item i {
+           color: var(--accent-green);
+           margin-top: 4px;
+       }
+       .detail-item strong { color: var(--dark); }
+
+       /* Popular Badge */
+       .popular-badge {
+           display: inline-flex;
+           align-items: center;
+           gap: 6px;
+           background: var(--gradient-accent);
+           color: white;
+           padding: 4px 12px;
+           border-radius: var(--radius-full);
+           font-size: 0.75rem;
+           font-weight: 700;
+           margin-left: 10px;
+       }
+
+       /* Comparison Table */
+       .compare-table {
+           width: 100%;
+           border-collapse: collapse;
+           margin: 20px 0;
+           font-size: 0.85rem;
+       }
+       .compare-table th,
+       .compare-table td {
+           padding: 12px;
+           text-align: left;
+           border: 1px solid var(--border);
+       }
+       .compare-table th {
+           background: var(--gradient-orange);
+           color: white;
+           font-weight: 700;
+       }
+       .compare-table tr:nth-child(even) { background: var(--bg-secondary); }
+
+       /* Highlight Box */
+       .highlight-box {
+           background: linear-gradient(135deg, rgba(255,165,2,0.08) 0%, rgba(253,203,110,0.08) 100%);
+           border-left: 4px solid var(--accent-orange);
+           padding: 20px;
+           border-radius: var(--radius-md);
+           margin: 20px 0;
+       }
+       .highlight-box p { margin: 0; color: var(--text-primary); }
+
+       /* Tips Grid */
+       .tips-grid {
+           display: grid;
+           grid-template-columns: 1fr;
+           gap: 12px;
+           margin: 20px 0;
+       }
+       .tip-card {
+           background: var(--bg-secondary);
+           padding: 16px;
+           border-radius: var(--radius-md);
+           border-left: 3px solid var(--accent-green);
+       }
+       .tip-card h4 {
+           font-size: 0.95rem;
+           color: var(--dark);
+           margin-bottom: 6px;
+           display: flex;
+           align-items: center;
+           gap: 8px;
+       }
+       .tip-card h4 i { color: var(--accent-green); }
+       .tip-card p { margin: 0; font-size: 0.85rem; }
+
+       /* Navigation Footer */
+       .nav-footer {
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 24px 0;
+           margin-top: 40px;
+           border-top: 1px solid var(--border);
+       }
+       .nav-btn {
+           display: flex;
+           align-items: center;
+           gap: 8px;
+           padding: 12px 20px;
+           background: white;
+           color: var(--dark);
+           text-decoration: none;
+           border-radius: var(--radius-md);
+           font-weight: 600;
+           font-size: 0.9rem;
+           border: 2px solid var(--border);
+           transition: var(--transition);
+       }
+       .nav-btn:hover {
+           background: var(--primary);
+           color: white;
+           border-color: var(--primary);
+       }
+       .nav-btn.next {
+           background: var(--gradient-orange);
+           color: white;
+           border-color: transparent;
+       }
+
+       /* Footer */
+       .footer {
+           background: var(--dark);
+           color: white;
+           padding: 30px 20px;
+           text-align: center;
+           margin-top: 40px;
+       }
+       .footer p { color: rgba(255,255,255,0.6); font-size: 0.85rem; }
+       .footer a { color: var(--primary-light); text-decoration: none; }
+
+       /* Responsive */
+       @media (min-width: 768px) {
+           .content-header h1 { font-size: 2.2rem; }
+           .sector-details { grid-template-columns: repeat(2, 1fr); }
+           .tips-grid { grid-template-columns: repeat(2, 1fr); }
+       }
+   </style>
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+   <div class="nav-container">
+       <a href="ssw.html" class="logo">
+           <img src="aponar-nihon(1).png" alt="আপনার নিহোন" class="logo-img">
+       </a>
+       <a href="ssw.html" class="back-btn">
+           <i class="fas fa-arrow-left"></i> SSW হাবে ফিরুন
+       </a>
+   </div>
+</nav>
+
+<header class="content-header">
+   <div class="container">
+       <h1><i class="fas fa-industry"></i> SSW জব সেক্টর</h1>
+       <p>জাপানে SSW ভিসায় কাজ করার ১৪টি কর্মক্ষেত্রের বিস্তারিত বিবরণ ও তুলনা</p>
+   </div>
+</header>
+
+<main class="main-content">
+   
+   <!-- Introduction -->
+   <article class="article-card">
+       <h2><i class="fas fa-info-circle"></i> সেক্টর নির্বাচন গাইড</h2>
+       <p>
+           SSW ভিসায় জাপানের ১৪টি ভিন্ন শিল্পখাতে কাজ করা যায়। প্রতিটি সেক্টরের কাজের ধরন, বেতন, ও চাহিদা ভিন্ন। আপনার শিক্ষা, অভিজ্ঞতা, ও আগ্রহ অনুযায়ী সঠিক সেক্টর নির্বাচন করুন।
+       </p>
+       <p>
+           <strong>বাংলাদেশি কর্মীদের জন্য সবচেয়ে জনপ্রিয় সেক্টর:</strong> নার্সিং কেয়ার, ফুড সার্ভিস, কৃষি, অটোমোবাইল, এবং কনস্ট্রাকশন।
+       </p>
+   </article>
+
+   <!-- Popular Sectors -->
+   <article class="article-card">
+       <h2><i class="fas fa-star"></i> জনপ্রিয় সেক্টরসমূহ</h2>
+       
+       <!-- Caregiving -->
+       <div class="sector-card">
+           <div class="sector-header">
+               <div class="sector-icon"><i class="fas fa-hand-holding-heart"></i></div>
+               <div class="sector-title">
+                   <h4>নার্সিং কেয়ার (介護)<span class="popular-badge"><i class="fas fa-fire"></i> জনপ্রিয়</span></h4>
+                   <span>Caregiving / Elderly Care</span>
+               </div>
+           </div>
+           <div class="sector-details">
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>কাজের বিবরণ:</strong> বয়োবৃদ্ধদের দেখাশোনা, ওষুধ খাওয়ানো, স্নান করানো, খাবার পরিবেশনা</div>
+               </div>
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>যোগ্যতা:</strong> ধৈর্য ও মানবিক গুণাবলী থাকতে হবে</div>
+               </div>
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>বেতন:</strong> ¥180,000 - ¥230,000/মাস</div>
+               </div>
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>পরীক্ষা:</strong> কাঙ্গারো (介護) পরীক্ষা - বাংলাদেশে কেন্দ্র আছে</div>
+               </div>
+           </div>
+       </div>
+
+       <!-- Food Service -->
+       <div class="sector-card">
+           <div class="sector-header">
+               <div class="sector-icon"><i class="fas fa-utensils"></i></div>
+               <div class="sector-title">
+                   <h4>ফুড সার্ভিস (外食業)<span class="popular-badge"><i class="fas fa-fire"></i> জনপ্রিয়</span></h4>
+                   <span>Restaurant / Food Industry</span>
+               </div>
+           </div>
+           <div class="sector-details">
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>কাজের বিবরণ:</strong> রেস্তোরাঁয় খাবার তৈরি, পরিবেশনা, কিচেন হেল্পার</div>
+               </div>
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>যোগ্যতা:</strong> রান্নার আগ্রহ থাকলে ভালো হয়</div>
+               </div>
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>বেতন:</strong> ¥170,000 - ¥220,000/মাস</div>
+               </div>
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>পরীক্ষা:</strong> ফুড সার্ভিস স্কিল টেস্ট - বাংলাদেশে কেন্দ্র আছে</div>
+               </div>
+           </div>
+       </div>
+
+       <!-- Agriculture -->
+       <div class="sector-card">
+           <div class="sector-header">
+               <div class="sector-icon"><i class="fas fa-seedling"></i></div>
+               <div class="sector-title">
+                   <h4>কৃষি (農業)<span class="popular-badge"><i class="fas fa-fire"></i> জনপ্রিয়</span></h4>
+                   <span>Agriculture / Farming</span>
+               </div>
+           </div>
+           <div class="sector-details">
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>কাজের বিবরণ:</strong> সবজি/ফল চাষ, গ্রিনহাউসে কাজ, ফসল কাটা</div>
+               </div>
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>যোগ্যতা:</strong> শারীরিক শক্তি ও কঠিন পরিশ্রমের সক্ষমতা</div>
+               </div>
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>বেতন:</strong> ¥160,000 - ¥200,000/মাস</div>
+               </div>
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>পরীক্ষা:</strong> এগ্রিকালচার স্কিল টেস্ট - বাংলাদেশে কেন্দ্র আছে</div>
+               </div>
+           </div>
+       </div>
+
+       <!-- Construction -->
+       <div class="sector-card">
+           <div class="sector-header">
+               <div class="sector-icon"><i class="fas fa-hard-hat"></i></div>
+               <div class="sector-title">
+                   <h4>কনস্ট্রাকশন (建設)</h4>
+                   <span>Construction / Building</span>
+               </div>
+           </div>
+           <div class="sector-details">
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>কাজের বিবরণ:</strong> নির্মাণ কাজে সহায়তা, স্কেফোল্ডিং, কংক্রিট কাজ</div>
+               </div>
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>যোগ্যতা:</strong> শারীরিকভাবে শক্তিশালী হতে হবে</div>
+               </div>
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>বেতন:</strong> ¥200,000 - ¥280,000/মাস (ওভারটাইম সহ)</div>
+               </div>
+               <div class="detail-item">
+                   <i class="fas fa-check-circle"></i>
+                   <div><strong>পরীক্ষা:</strong> বাংলাদেশে কেন্দ্র নেই, জাপানে বা অন্য দেশে পরীক্ষা দিতে হয়</div>
+               </div>
+           </div>
+       </div>
+   </article>
+
+   <!-- Other Sectors -->
+   <article class="article-card">
+       <h2><i class="fas fa-th-large"></i> অন্যান্য সেক্টর</h2>
+       
+       <table class="compare-table">
+           <thead>
+               <tr>
+                   <th>সেক্টর</th>
+                   <th>কাজের ধরন</th>
+                   <th>বেতন (¥/মাস)</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td><strong>ফিশারিজ (漁業)</strong></td>
+                   <td>মাছ ধরা, প্রসেসিং</td>
+                   <td>¥170,000 - ¥220,000</td>
+               </tr>
+               <tr>
+                   <td><strong>ফুড ম্যানুফ্যাকচারিং</strong></td>
+                   <td>খাদ্য প্রক্রিয়াকরণ</td>
+                   <td>¥170,000 - ¥210,000</td>
+               </tr>
+               <tr>
+                   <td><strong>অ্যাকমোডেশন (宿泊)</strong></td>
+                   <td>হোটেল পরিষেবা</td>
+                   <td>¥170,000 - ¥210,000</td>
+               </tr>
+               <tr>
+                   <td><strong>বিল্ডিং ক্লিনিং</strong></td>
+                   <td>অফিস/বিল্ডিং পরিষ্কার</td>
+                   <td>¥160,000 - ¥200,000</td>
+               </tr>
+               <tr>
+                   <td><strong>ম্যাটেরিয়ালস প্রসেসিং</strong></td>
+                   <td>ধাতু/প্লাস্টিক প্রসেসিং</td>
+                   <td>¥180,000 - ¥230,000</td>
+               </tr>
+               <tr>
+                   <td><strong>অটোমোবাইল</strong></td>
+                   <td>গাড়ি মেরামত</td>
+                   <td>¥180,000 - ¥240,000</td>
+               </tr>
+               <tr>
+                   <td><strong>এভিয়েশন (航空)</strong></td>
+                   <td>বিমানবন্দর গ্রাউন্ড স্টাফ</td>
+                   <td>¥180,000 - ¥230,000</td>
+               </tr>
+               <tr>
+                   <td><strong>হাউজিং/ল্যান্ডস্কেপিং</strong></td>
+                   <td>বাগান পরিচর্যা</td>
+                   <td>¥160,000 - ¥200,000</td>
+               </tr>
+               <tr>
+                   <td><strong>শিপবিল্ডিং (造船)</strong></td>
+                   <td>জাহাজ নির্মাণ</td>
+                   <td>¥200,000 - ¥280,000</td>
+               </tr>
+               <tr>
+                   <td><strong>গার্মেন্টস</strong></td>
+                   <td>পোশাক তৈরি</td>
+                   <td>¥160,000 - ¥200,000</td>
+               </tr>
+           </tbody>
+       </table>
+   </article>
+
+   <!-- Sector Selection Tips -->
+   <article class="article-card">
+       <h2><i class="fas fa-lightbulb"></i> সেক্টর নির্বাচনের টিপস</h2>
+       
+       <div class="tips-grid">
+           <div class="tip-card">
+               <h4><i class="fas fa-heart"></i> আপনার আগ্রহ</h4>
+               <p>যে কাজে আগ্রহ আছে সেটি বেছে নিন। দীর্ঘমেয়াদী কাজে আগ্রহ না থাকলে কঠিন হবে।</p>
+           </div>
+           <div class="tip-card">
+               <h4><i class="fas fa-map-marker-alt"></i> পরীক্ষা কেন্দ্র</h4>
+               <p>বাংলাদেশে পরীক্ষা কেন্দ্র আছে এমন সেক্টরে আবেদন করা সহজ।</p>
+           </div>
+           <div class="tip-card">
+               <h4><i class="fas fa-money-bill-wave"></i> বেতন</h4>
+               <p>কনস্ট্রাকশন, শিপবিল্ডিং, কেয়ারিং এ বেতন বেশি। কিন্তু কাজও কঠিন।</p>
+           </div>
+           <div class="tip-card">
+               <h4><i class="fas fa-chart-line"></i> ক্যারিয়ার</h4>
+               <p>SSW-2 তে আপগ্রেড করতে চাইলে কনস্ট্রাকশন বা শিপবিল্ডিং ভালো অপশন।</p>
+           </div>
+       </div>
+
+       <div class="highlight-box">
+           <p><strong>💡 পরামর্শ:</strong> যদি আপনি জাপানি ভাষায় দক্ষ হন এবং মানুষের সেবা করতে পছন্দ করেন, তাহলে <strong>নার্সিং কেয়ার</strong> সবচেয়ে ভালো অপশন। বেতন ভালো, চাহিদা বেশি, এবং ভবিষ্যতে SSW-2 তে আপগ্রেড সহজ।</p>
+       </div>
+   </article>
+
+   <!-- Navigation Footer -->
+   <div class="nav-footer">
+       <a href="ssw-interview.html" class="nav-btn">
+           <i class="fas fa-arrow-left"></i> আগের: ইন্টারভিউ
+       </a>
+       <a href="ssw-salary.html" class="nav-btn next">
+           পরবর্তী: বেতন ও সুবিধা <i class="fas fa-arrow-right"></i>
+       </a>
+   </div>
+
+</main>
+
+<footer class="footer">
+   <div class="container">
+       <p>&copy; ২০২৬ আপনার নিহোন। সর্বস্বত্ব সংরক্ষিত।</p>
+       <p style="margin-top: 6px;"><a href="ssw.html">SSW হাবে ফিরুন</a> | <a href="index.html">হোম</a></p>
+   </div>
+</footer>
+
+<script>
+   window.addEventListener('scroll', () => {
+       const navbar = document.getElementById('navbar');
+       if (window.scrollY > 10) {
+           navbar.classList.add('scrolled');
+       } else {
+           navbar.classList.remove('scrolled');
+       }
+   });
+</script>
+
+</body>
+</html>
