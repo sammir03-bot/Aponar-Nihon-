@@ -1,6 +1,7 @@
 {
+  "id": "/",
   "name": "আপনার নিহোন",
-  "short_name": "নিহোন",
+  "short_name": "আপনার নিহোন",
   "description": "JLPT N5, N4, Interview ও Quiz শেখার বাংলা জাপানি ভাষা প্ল্যাটফর্ম",
   "start_url": "/",
   "scope": "/",
@@ -8,6 +9,9 @@
   "background_color": "#fffdf8",
   "theme_color": "#244a7c",
   "orientation": "portrait-primary",
+  "lang": "bn",
+  "dir": "ltr",
+  "categories": ["education", "books", "productivity"],
   "icons": [
     {
       "src": "/logo.png",
