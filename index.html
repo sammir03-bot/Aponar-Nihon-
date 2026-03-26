@@ -18,7 +18,8 @@
    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png">
    <link rel="apple-touch-icon" href="/logo.png">
    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://aponar-nihon.eu.cc/sitemap.xml">
-
+<link rel="manifest" href="/manifest.json">
+<meta name="mobile-web-app-capable" content="yes">
    <meta property="og:locale" content="bn_BD">
    <meta property="og:site_name" content="আপনার নিহোন">
    <meta property="og:title" content="আপনার নিহোন | জাপানি ভাষা শিক্ষা">
@@ -4277,5 +4278,15 @@ ${escapeHtml(message)}
        }, 500);
    });
 </script>
+   <script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then(() => console.log("Service Worker registered"))
+      .catch((error) => console.error("Service Worker registration failed:", error));
+  });
+}
+   </script>
 </body>
 </html>
