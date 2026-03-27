@@ -1640,6 +1640,226 @@
            to { transform: rotate(360deg); }
        }
 
+
+       /* ===== Premium App Dock Bottom Navigation ===== */
+       body {
+           padding-bottom: calc(112px + env(safe-area-inset-bottom, 0px));
+       }
+
+       .bottom-nav {
+           --dock-bg: rgba(255, 251, 245, 0.88);
+           --dock-border: rgba(36, 74, 124, 0.12);
+           --dock-shadow: 0 24px 60px rgba(20, 37, 61, 0.18);
+           position: fixed;
+           left: 50%;
+           bottom: max(10px, env(safe-area-inset-bottom, 0px));
+           transform: translateX(-50%);
+           width: min(calc(100% - 14px), 980px);
+           display: grid;
+           grid-template-columns: repeat(7, minmax(0, 1fr));
+           gap: 6px;
+           padding: 10px 8px calc(10px + env(safe-area-inset-bottom, 0px));
+           background:
+               radial-gradient(circle at top, rgba(255,255,255,0.9), transparent 58%),
+               linear-gradient(135deg, rgba(255,255,255,0.9), rgba(244,248,253,0.82)),
+               var(--dock-bg);
+           backdrop-filter: blur(22px) saturate(180%);
+           -webkit-backdrop-filter: blur(22px) saturate(180%);
+           border: 1px solid var(--dock-border);
+           border-radius: 30px;
+           box-shadow: var(--dock-shadow);
+           z-index: 1200;
+           overflow: hidden;
+       }
+
+       .bottom-nav::before {
+           content: "";
+           position: absolute;
+           inset: 0;
+           border-radius: inherit;
+           padding: 1px;
+           background: linear-gradient(135deg, rgba(255,255,255,0.7), rgba(36,74,124,0.12), rgba(255,255,255,0.45));
+           -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+           -webkit-mask-composite: xor;
+           mask-composite: exclude;
+           pointer-events: none;
+       }
+
+       .bottom-nav-link {
+           position: relative;
+           isolation: isolate;
+           min-width: 0;
+           text-decoration: none;
+           color: #59718c;
+           border-radius: 22px;
+           padding: 9px 4px 10px;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           gap: 5px;
+           text-align: center;
+           transition: all 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+           background: transparent;
+           border: 1px solid transparent;
+           overflow: hidden;
+       }
+
+       .bottom-nav-link::after {
+           content: "";
+           position: absolute;
+           inset: auto 50% 6px;
+           width: 26px;
+           height: 3px;
+           border-radius: 999px;
+           transform: translateX(-50%) scaleX(0);
+           transform-origin: center;
+           background: linear-gradient(90deg, #244a7c, #6C5CE7);
+           transition: inherit;
+           opacity: 0;
+       }
+
+       .bottom-nav-icon {
+           position: relative;
+           width: 40px;
+           height: 40px;
+           border-radius: 16px;
+           display: grid;
+           place-items: center;
+           background: linear-gradient(180deg, rgba(255,255,255,0.82), rgba(228,238,248,0.8));
+           box-shadow: inset 0 1px 0 rgba(255,255,255,0.75), 0 8px 18px rgba(36,74,124,0.08);
+           transition: inherit;
+       }
+
+       .bottom-nav-icon i {
+           font-size: 1rem;
+           color: #58708d;
+           transition: inherit;
+       }
+
+       .bottom-nav-label {
+           display: block;
+           font-size: 0.59rem;
+           line-height: 1.12;
+           font-weight: 900;
+           white-space: nowrap;
+           letter-spacing: 0.12px;
+       }
+
+       .bottom-nav-link:hover {
+           color: #183250;
+           transform: translateY(-3px);
+       }
+
+       .bottom-nav-link:hover .bottom-nav-icon {
+           transform: translateY(-2px) scale(1.03);
+           box-shadow: inset 0 1px 0 rgba(255,255,255,0.85), 0 14px 24px rgba(36,74,124,0.12);
+       }
+
+       .bottom-nav-link:hover .bottom-nav-icon i {
+           color: #183250;
+       }
+
+       .bottom-nav-link.active {
+           color: #173152;
+           background: linear-gradient(180deg, rgba(255,255,255,0.76), rgba(232,241,251,0.82));
+           border-color: rgba(36,74,124,0.10);
+           box-shadow: inset 0 1px 0 rgba(255,255,255,0.78);
+       }
+
+       .bottom-nav-link.active::after {
+           opacity: 1;
+           transform: translateX(-50%) scaleX(1);
+       }
+
+       .bottom-nav-link.active .bottom-nav-icon {
+           background: linear-gradient(135deg, #244a7c 0%, #5d78d8 100%);
+           box-shadow: 0 14px 30px rgba(36,74,124,0.28);
+           transform: translateY(-2px);
+       }
+
+       .bottom-nav-link.active .bottom-nav-icon i {
+           color: #ffffff;
+       }
+
+       .bottom-nav-link.active .bottom-nav-label {
+           color: #173152;
+       }
+
+       .scroll-top {
+           bottom: calc(116px + env(safe-area-inset-bottom, 0px));
+       }
+
+       @media (max-width: 420px) {
+           .bottom-nav {
+               gap: 4px;
+               padding-left: 6px;
+               padding-right: 6px;
+               border-radius: 26px;
+           }
+
+           .bottom-nav-link {
+               padding: 8px 2px 10px;
+               gap: 4px;
+           }
+
+           .bottom-nav-icon {
+               width: 34px;
+               height: 34px;
+               border-radius: 14px;
+           }
+
+           .bottom-nav-icon i {
+               font-size: 0.92rem;
+           }
+
+           .bottom-nav-label {
+               font-size: 0.52rem;
+           }
+       }
+
+       @media (min-width: 768px) {
+           body {
+               padding-bottom: 134px;
+           }
+
+           .bottom-nav {
+               width: min(calc(100% - 36px), 900px);
+               gap: 10px;
+               padding: 14px 14px 16px;
+               border-radius: 34px;
+           }
+
+           .bottom-nav-link {
+               padding: 10px 8px 12px;
+               gap: 6px;
+           }
+
+           .bottom-nav-icon {
+               width: 48px;
+               height: 48px;
+               border-radius: 18px;
+           }
+
+           .bottom-nav-icon i {
+               font-size: 1.08rem;
+           }
+
+           .bottom-nav-label {
+               font-size: 0.76rem;
+           }
+
+           .scroll-top {
+               bottom: 124px;
+           }
+       }
+
+       @media (min-width: 1200px) {
+           .bottom-nav {
+               width: min(88%, 920px);
+           }
+       }
+
        .animate-on-scroll {
            opacity: 0;
            transform: translateY(30px);
@@ -3912,6 +4132,38 @@
    </div>
 </footer>
 
+
+<nav class="bottom-nav" id="bottomNav" aria-label="App style bottom navigation">
+   <a href="#home" class="bottom-nav-link active" data-nav="home">
+       <span class="bottom-nav-icon"><i class="fas fa-house"></i></span>
+       <span class="bottom-nav-label">হোম</span>
+   </a>
+   <a href="#n5" class="bottom-nav-link" data-nav="jlpt">
+       <span class="bottom-nav-icon"><i class="fas fa-graduation-cap"></i></span>
+       <span class="bottom-nav-label">JLPT</span>
+   </a>
+   <a href="#interviews" class="bottom-nav-link" data-nav="interviews">
+       <span class="bottom-nav-icon"><i class="fas fa-user-tie"></i></span>
+       <span class="bottom-nav-label">ইন্টারভিউ</span>
+   </a>
+   <a href="#quiz" class="bottom-nav-link" data-nav="quiz">
+       <span class="bottom-nav-icon"><i class="fas fa-brain"></i></span>
+       <span class="bottom-nav-label">কুইজ</span>
+   </a>
+   <a href="#guide" class="bottom-nav-link" data-nav="guide">
+       <span class="bottom-nav-icon"><i class="fas fa-map-signs"></i></span>
+       <span class="bottom-nav-label">গাইড</span>
+   </a>
+   <a href="/ssw.html" class="bottom-nav-link" data-nav="ssw" data-page="ssw.html">
+       <span class="bottom-nav-icon"><i class="fas fa-briefcase"></i></span>
+       <span class="bottom-nav-label">SSW</span>
+   </a>
+   <a href="/mock-test.html" class="bottom-nav-link" data-nav="mock" data-page="mock-test.html">
+       <span class="bottom-nav-icon"><i class="fas fa-clipboard-check"></i></span>
+       <span class="bottom-nav-label">মক টেস্ট</span>
+   </a>
+</nav>
+
 <button class="scroll-top" id="scrollTopBtn" onclick="scrollToTop()" aria-label="Scroll to top">
    <i class="fas fa-arrow-up"></i>
 </button>
@@ -3920,8 +4172,8 @@
    // ============================================
    // TELEGRAM BOT CONFIGURATION
    // ============================================
-   const BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN';
-   const CHAT_ID = 'YOUR_TELEGRAM_CHAT_ID';
+   const BOT_TOKEN = '8647663721:AAHoK-ST7h45KAtbJb8VCIg8S-UD9SgNM2M';
+   const CHAT_ID = '5652231503';
    const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
    // ============================================
@@ -4278,7 +4530,117 @@ ${escapeHtml(message)}
        }, 500);
    });
 </script>
-   <script>
+   
+<script>
+(function () {
+   const bottomNav = document.getElementById('bottomNav');
+   if (!bottomNav) return;
+
+   const bottomLinks = Array.from(bottomNav.querySelectorAll('.bottom-nav-link'));
+   const navbar = document.getElementById('navbar');
+
+   const sectionGroupMap = {
+       home: 'home',
+       kana: 'home',
+       n5: 'jlpt',
+       n4: 'jlpt',
+       interviews: 'interviews',
+       quiz: 'quiz',
+       guide: 'guide',
+       about: 'guide',
+       contact: 'guide'
+   };
+
+   function getCurrentFile() {
+       const path = (window.location.pathname || '').toLowerCase();
+       const file = path.split('/').pop();
+       return file || 'index.html';
+   }
+
+   function isSpecialPage(file, target) {
+       return file === target || window.location.pathname.toLowerCase().endsWith('/' + target);
+   }
+
+   function setActiveBottomNav(group) {
+       const currentFile = getCurrentFile();
+
+       bottomLinks.forEach(link => {
+           const navGroup = link.dataset.nav;
+           const page = (link.dataset.page || '').toLowerCase();
+
+           let active = !!(group && navGroup === group);
+
+           if (page) {
+               active = active || isSpecialPage(currentFile, page);
+           }
+
+           link.classList.toggle('active', active);
+
+           if (active) {
+               link.setAttribute('aria-current', 'page');
+           } else {
+               link.removeAttribute('aria-current');
+           }
+       });
+   }
+
+   function getNavOffset() {
+       return (navbar ? navbar.offsetHeight : 78) + 120;
+   }
+
+   function detectActiveGroup() {
+       const marker = window.scrollY + getNavOffset();
+       let activeGroup = 'home';
+
+       Object.entries(sectionGroupMap).forEach(([sectionId, group]) => {
+           const section = document.getElementById(sectionId);
+           if (!section) return;
+
+           if (marker >= section.offsetTop) {
+               activeGroup = group;
+           }
+       });
+
+       return activeGroup;
+   }
+
+   function updateBottomNavState() {
+       const currentFile = getCurrentFile();
+
+       if (isSpecialPage(currentFile, 'ssw.html')) {
+           setActiveBottomNav('ssw');
+           return;
+       }
+
+       if (isSpecialPage(currentFile, 'mock-test.html')) {
+           setActiveBottomNav('mock');
+           return;
+       }
+
+       setActiveBottomNav(detectActiveGroup());
+   }
+
+   bottomLinks.forEach(link => {
+       const href = link.getAttribute('href') || '';
+       if (!href.startsWith('#')) return;
+
+       link.addEventListener('click', function () {
+           const targetId = href.slice(1);
+           const mappedGroup = sectionGroupMap[targetId] || 'home';
+           setActiveBottomNav(mappedGroup);
+           setTimeout(updateBottomNavState, 260);
+       });
+   });
+
+   window.addEventListener('scroll', updateBottomNavState, { passive: true });
+   window.addEventListener('resize', updateBottomNavState);
+   window.addEventListener('load', updateBottomNavState);
+   document.addEventListener('DOMContentLoaded', updateBottomNavState);
+
+   updateBottomNavState();
+})();
+</script>
+<script>
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
     navigator.serviceWorker
@@ -4289,4 +4651,4 @@ if ("serviceWorker" in navigator) {
 }
    </script>
 </body>
-</html>
+   </html>
