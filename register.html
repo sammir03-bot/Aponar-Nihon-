@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>রেজিস্ট্রেশন | আপনার নিহোন</title>
+  <meta name="theme-color" content="#244a7c" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/logo.png">
+  <link rel="apple-touch-icon" href="/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+    
+    :root{
+      --primary:#244a7c;
+      --primary-deep:#16324f;
+      --primary-light:#3d6ba3;
+      --violet:#6c5ce7;
+      --violet-soft:#a29bfe;
+      --accent:#ff8c42;
+      --accent-soft:#ffb347;
+      --success:#00d084;
+      --error:#ff4757;
+      --text:#17253a;
+      --muted:#66758b;
+      --card:#ffffff;
+      --border:#e6edf7;
+      --radius:24px;
+    }
+
+    body{
+      font-family:'Noto Sans Bengali','Inter',sans-serif;
+      min-height:100vh;
+      color:var(--text);
+      background:#0f172a;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:20px;
+      overflow-x:hidden;
+      position:relative;
+    }
+
+    .bg-mesh{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      z-index:-2;
+      background: 
+        radial-gradient(circle at 20% 30%, rgba(108,92,231,0.4) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(255,140,66,0.35) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(36,74,124,0.3) 0%, transparent 40%),
+        linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      background-size: 200% 200%;
+      animation: meshMove 20s ease infinite;
+    }
+
+    @keyframes meshMove {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    .particles{
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      z-index:-1;
+      overflow:hidden;
+      pointer-events:none;
+    }
+    
+    .particle{
+      position:absolute;
+      width:4px;
+      height:4px;
+      background:rgba(255,255,255,0.4);
+      border-radius:50%;
+      animation: float 20s infinite;
+      box-shadow:0 0 10px rgba(255,255,255,0.3);
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+    }
+
+    .register-container{
+      width:100%;
+      max-width:480px;
+      animation:slideUp 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    @keyframes slideUp {
+      from { opacity:0; transform:translateY(40px); }
+      to { opacity:1; transform:translateY(0); }
+    }
+
+    .auth-card{
+      background:rgba(255,255,255,0.95);
+      padding:40px 36px;
+      border-radius:32px;
+      border:1px solid rgba(255,255,255,0.3);
+      backdrop-filter:blur(30px) saturate(180%);
+      -webkit-backdrop-filter:blur(30px) saturate(180%);
+      box-shadow:
+        0 35px 80px rgba(0,0,0,0.4),
+        0 0 0 1px rgba(255,255,255,0.1),
+        inset 0 0 80px rgba(255,255,255,0.1);
+      position:relative;
+      overflow:hidden;
+    }
+    
+    .auth-card::before{
+      content:"";position:absolute;top:-50%;left:-50%;
+      width:200%;height:200%;
+      background:radial-gradient(circle, rgba(108,92,231,0.03) 0%, transparent 70%);
+      pointer-events:none;
+    }
+
+    .logo-section{
+      text-align:center;
+      margin-bottom:28px;
+      position:relative;
+      z-index:1;
+    }
+    
+    .logo-wrap{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      width:72px;
+      height:72px;
+      background:linear-gradient(135deg, #fff, #f8fafc);
+      border-radius:22px;
+      box-shadow:0 16px 35px rgba(0,0,0,0.12);
+      margin-bottom:16px;
+      position:relative;
+      overflow:hidden;
+      transition:transform 0.3s ease;
+    }
+    
+    .logo-wrap::before{
+      content:"";position:absolute;inset:0;
+      background:linear-gradient(135deg, transparent, rgba(255,255,255,0.8), transparent);
+      transform:translateX(-100%);
+      transition:0.6s;
+    }
+    
+    .logo-wrap:hover{
+      transform:translateY(-3px) scale(1.05);
+    }
+    .logo-wrap:hover::before{
+      transform:translateX(100%);
+    }
+    
+    .logo-wrap img{
+      width:50px;height:50px;
+      object-fit:contain;
+      position:relative;
+      z-index:1;
+    }
+
+    .brand-title{
+      font-size:1.6rem;
+      font-weight:900;
+      background:linear-gradient(135deg, var(--primary-deep), var(--violet));
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      background-clip:text;
+      margin-bottom:6px;
+      letter-spacing:-0.5px;
+    }
+    
+    .brand-subtitle{
+      font-size:0.9rem;
+      color:var(--muted);
+      font-weight:500;
+    }
+
+    .form-header{
+      text-align:center;
+      margin-bottom:24px;
+      position:relative;
+      z-index:1;
+    }
+    
+    .form-header h1{
+      font-size:1.5rem;
+      font-weight:800;
+      color:var(--text);
+      margin-bottom:6px;
+    }
+    
+    .form-header p{
+      font-size:0.95rem;
+      color:var(--muted);
+      line-height:1.6;
+    }
+
+    .google-btn{
+      width:100%;height:56px;border:none;border-radius:16px;
+      background:#fff;color:#1f2937;cursor:pointer;
+      display:flex;align-items:center;justify-content:center;gap:12px;
+      font-weight:600;font-size:0.95rem;
+      box-shadow:0 4px 20px rgba(0,0,0,0.08);
+      border:2px solid #e5e7eb;
+      transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      position:relative;
+      overflow:hidden;
+      margin-bottom:20px;
+    }
+    
+    .google-btn::before{
+      content:"";position:absolute;inset:0;
+      background:linear-gradient(135deg, transparent, rgba(255,255,255,0.2), transparent);
+      transform:translateX(-100%);
+      transition:0.5s;
+    }
+    
+    .google-btn:hover{
+      transform:translateY(-2px);
+      box-shadow:0 12px 30px rgba(0,0,0,0.12);
+      border-color:#d1d5db;
+    }
+    .google-btn:hover::before{transform:translateX(100%)}
+    .google-btn:active{transform:translateY(0) scale(0.98)}
+
+    .google-icon{
+      width:20px;height:20px;
+      background:conic-gradient(from 45deg, #ea4335 0 25%, #fbbc05 25% 50%, #34a853 50% 75%, #4285f4 75% 100%);
+      border-radius:50%;
+      display:grid;place-items:center;
+      color:#fff;font-size:.7rem;font-weight:800;
+    }
+
+    .divider{
+      display:flex;align-items:center;gap:16px;
+      margin:20px 0;color:#9ca3af;font-size:.875rem;font-weight:600;
+      position:relative;
+    }
+    .divider::before,.divider::after{
+      content:"";height:1px;flex:1;
+      background:linear-gradient(90deg, transparent, #e5e7eb, transparent);
+    }
+
+    .form-group{
+      margin-bottom:18px;
+      position:relative;
+    }
+    
+    .form-label{
+      display:block;font-size:.85rem;font-weight:700;
+      color:#374151;margin-bottom:6px;
+      transition:all 0.3s ease;
+    }
+    
+    .input-wrap{
+      position:relative;
+      transition:all 0.3s ease;
+    }
+    
+    .input-wrap:focus-within{
+      transform:translateY(-2px);
+    }
+
+    .auth-input{
+      width:100%;height:54px;
+      border:2px solid #e5e7eb;border-radius:14px;
+      padding:0 46px 0 44px;
+      font-size:0.95rem;font-family:inherit;
+      background:#fff;color:var(--text);
+      transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .auth-input:hover{border-color:#d1d5db}
+    .auth-input:focus{
+      outline:none;border-color:var(--violet);
+      box-shadow:0 0 0 4px rgba(108,92,231,0.1), 0 0 20px rgba(108,92,231,0.15);
+    }
+    
+    .input-wrap i.left{
+      position:absolute;left:16px;top:50%;
+      transform:translateY(-50%);
+      color:#9ca3af;font-size:1rem;
+      transition:all 0.3s ease;
+    }
+    
+    .input-wrap:focus-within i.left{
+      color:var(--violet);
+      transform:translateY(-50%) scale(1.1);
+    }
+
+    .password-toggle{
+      position:absolute;right:14px;top:50%;
+      transform:translateY(-50%);
+      border:none;background:transparent;
+      color:#9ca3af;font-size:1rem;
+      padding:6px;cursor:pointer;
+      border-radius:6px;
+      transition:all 0.3s ease;
+    }
+    .password-toggle:hover{
+      color:var(--violet);
+      background:rgba(108,92,231,0.1);
+    }
+
+    .hint{
+      font-size:0.8rem;
+      color:var(--muted);
+      margin-top:6px;
+      margin-left:4px;
+      display:flex;
+      align-items:center;
+      gap:6px;
+    }
+    .hint::before{
+      content:"\f05a";
+      font-family:"Font Awesome 6 Free";
+      font-weight:900;
+      font-size:0.75rem;
+      color:var(--violet-soft);
+    }
+
+    .submit-btn{
+      width:100%;height:56px;border:none;border-radius:16px;
+      cursor:pointer;
+      background:linear-gradient(135deg, var(--accent-soft), var(--accent));
+      color:#fff;font-weight:700;font-size:1rem;
+      box-shadow:0 10px 30px rgba(255,140,66,0.35);
+      transition:all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display:flex;align-items:center;justify-content:center;gap:10px;
+      position:relative;
+      overflow:hidden;
+      margin-top:8px;
+    }
+    
+    .submit-btn::before{
+      content:"";position:absolute;inset:0;
+      background:linear-gradient(135deg, transparent, rgba(255,255,255,0.3), transparent);
+      transform:translateX(-100%);
+      transition:0.6s;
+    }
+    
+    .submit-btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 20px 40px rgba(255,140,66,0.45);
+    }
+    .submit-btn:hover::before{transform:translateX(100%)}
+    .submit-btn:active{transform:translateY(-1px) scale(0.98)}
+    
+    .submit-btn:disabled{
+      opacity:0.7;cursor:not-allowed;
+      transform:none;
+      background:#cbd5e1;
+      box-shadow:none;
+    }
+
+    .submit-btn.loading .btn-text{opacity:0}
+    .submit-btn.loading::after{
+      content:"";position:absolute;
+      width:24px;height:24px;
+      border:3px solid rgba(255,255,255,0.3);
+      border-top-color:#fff;
+      border-radius:50%;
+      animation:spin 0.8s linear infinite;
+    }
+    
+    @keyframes spin{to{transform:rotate(360deg)}}
+
+    .msg{
+      margin-top:16px;padding:14px 18px;border-radius:12px;
+      font-size:.9rem;line-height:1.6;
+      display:none;align-items:center;gap:10px;
+      animation:slideDown 0.3s ease;
+      border-left:4px solid transparent;
+    }
+    
+    @keyframes slideDown {
+      from { opacity:0; transform:translateY(-10px); }
+      to { opacity:1; transform:translateY(0); }
+    }
+    
+    .msg.show{display:flex}
+    .msg.error{
+      background:#fef2f2;color:#dc2626;
+      border-left-color:#dc2626;
+    }
+    .msg.success{
+      background:#f0fdf4;color:#16a34a;
+      border-left-color:#16a34a;
+    }
+
+    .bottom-links{
+      margin-top:24px;display:flex;flex-direction:column;
+      gap:14px;text-align:center;
+      position:relative;
+      z-index:1;
+    }
+    
+    .bottom-links p{
+      font-size:.95rem;color:#6b7280;
+      display:flex;align-items:center;
+      justify-content:center;gap:8px;
+      flex-wrap:wrap;
+    }
+    
+    .link-group{
+      display:flex;
+      justify-content:center;
+      gap:16px;
+      flex-wrap:wrap;
+    }
+    
+    .secondary-link{
+      display:inline-flex;align-items:center;gap:8px;
+      color:#6b7280;font-weight:600;text-decoration:none;
+      padding:10px 20px;border-radius:12px;
+      background:#f3f4f6;
+      transition:all 0.3s ease;
+      font-size:.9rem;
+    }
+    .secondary-link:hover{
+      background:#e5e7eb;color:#374151;
+      transform:translateY(-2px);
+    }
+
+    .mini-note{
+      margin-top:16px;font-size:.75rem;line-height:1.6;
+      color:#9ca3af;text-align:center;
+      padding:12px;
+      background:rgba(249,250,251,0.8);
+      border-radius:8px;
+      border:1px dashed #e5e7eb;
+    }
+
+    .glow-orb{
+      position:fixed;
+      border-radius:50%;
+      filter:blur(100px);
+      opacity:0.3;
+      pointer-events:none;
+      z-index:-1;
+    }
+    .glow-1{
+      width:400px;height:400px;
+      background:var(--violet);
+      top:10%;left:10%;
+      animation:pulse 10s ease-in-out infinite;
+    }
+    .glow-2{
+      width:350px;height:350px;
+      background:var(--accent);
+      bottom:10%;right:10%;
+      animation:pulse 10s ease-in-out infinite 5s;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { transform:scale(1); opacity:0.3; }
+      50% { transform:scale(1.2); opacity:0.15; }
+    }
+
+    @media (max-width: 640px){
+      body{padding:16px}
+      .auth-card{
+        padding:32px 24px;
+        border-radius:24px;
+      }
+      .logo-wrap{
+        width:64px;height:64px;
+      }
+      .brand-title{
+        font-size:1.5rem;
+      }
+      .auth-input{height:52px}
+      .google-btn{height:54px}
+      .submit-btn{height:54px}
+    }
+
+    @media (max-width: 380px){
+      .auth-card{padding:24px 20px}
+      .link-group{flex-direction:column;gap:10px}
+      .link-group a{width:100%;justify-content:center}
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-mesh"></div>
+  <div class="particles" id="particles"></div>
+  <div class="glow-orb glow-1"></div>
+  <div class="glow-orb glow-2"></div>
+
+  <div class="register-container">
+    <div class="auth-card">
+      <div class="logo-section">
+        <div class="logo-wrap">
+          <img src="/logo.png" alt="আপনার নিহোন">
+        </div>
+        <h2 class="brand-title">আপনার নিহোন</h2>
+        <p class="brand-subtitle">Japanese Learning Hub</p>
+      </div>
+
+      <div class="form-header">
+        <h1>রেজিস্ট্রেশন করুন</h1>
+        <p>নতুন অ্যাকাউন্ট তৈরি করে শেখা শুরু করুন</p>
+      </div>
+
+      <button type="button" class="google-btn" id="googleRegisterBtn">
+        <span class="google-icon">G</span>
+        <span class="btn-text">Google দিয়ে রেজিস্ট্রেশন করুন</span>
+      </button>
+
+      <div class="divider">অথবা</div>
+
+      <form id="registerForm" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="name">পূর্ণ নাম</label>
+          <div class="input-wrap">
+            <i class="fas fa-user left"></i>
+            <input class="auth-input" type="text" id="name" placeholder="আপনার নাম লিখুন" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">ইমেইল</label>
+          <div class="input-wrap">
+            <i class="fas fa-envelope left"></i>
+            <input class="auth-input" type="email" id="email" placeholder="আপনার ইমেইল লিখুন" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="password">পাসওয়ার্ড</label>
+          <div class="input-wrap">
+            <i class="fas fa-lock left"></i>
+            <input class="auth-input" type="password" id="password" placeholder="শক্তিশালী পাসওয়ার্ড দিন" required>
+            <button type="button" class="password-toggle" id="togglePassword" aria-label="পাসওয়ার্ড দেখুন">
+              <i class="fas fa-eye"></i>
+            </button>
+          </div>
+          <p class="hint">কমপক্ষে ৬ অক্ষরের পাসওয়ার্ড ব্যবহার করুন</p>
+        </div>
+
+        <button class="submit-btn" type="submit" id="registerBtn">
+          <i class="fas fa-user-plus"></i>
+          <span class="btn-text">রেজিস্ট্রেশন করুন</span>
+        </button>
+
+        <div id="msg" class="msg"></div>
+      </form>
+
+      <div class="bottom-links">
+        <p>
+          আগে থেকেই অ্যাকাউন্ট আছে?
+          <a class="auth-link" href="./login.html">লগইন করুন</a>
+        </p>
+        
+        <div class="link-group">
+          <a class="secondary-link" href="./index.html">
+            <i class="fas fa-home"></i>
+            হোম
+          </a>
+          <a class="secondary-link" href="./help.html">
+            <i class="fas fa-circle-question"></i>
+            সাহায্য
+          </a>
+        </div>
+      </div>
+
+      <p class="mini-note">
+        <i class="fas fa-shield-alt"></i>
+        নিরাপদ রেজিস্ট্রেশন | SSL Protected
+      </p>
+    </div>
+  </div>
+
+  <script>
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 15; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.animationDelay = Math.random() * 20 + 's';
+      particle.style.animationDuration = (20 + Math.random() * 10) + 's';
+      particlesContainer.appendChild(particle);
+    }
+
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('password');
+    
+    if (togglePassword && passwordInput) {
+      togglePassword.addEventListener('click', () => {
+        const isPassword = passwordInput.type === 'password';
+        passwordInput.type = isPassword ? 'text' : 'password';
+        togglePassword.innerHTML = isPassword
+          ? '<i class="fas fa-eye-slash"></i>'
+          : '<i class="fas fa-eye"></i>';
+      });
+    }
+
+    const inputs = document.querySelectorAll('.auth-input');
+    inputs.forEach(input => {
+      input.addEventListener('focus', () => {
+        input.parentElement.style.transform = 'translateY(-2px)';
+      });
+      input.addEventListener('blur', () => {
+        input.parentElement.style.transform = 'translateY(0)';
+      });
+    });
+  </script>
+
+  <script type="module" src="./assets/js/register.js"></script>
+</body>
+</html>
