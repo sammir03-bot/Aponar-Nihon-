@@ -1,115 +1,126 @@
-const CACHE_NAME = "aponar-nihon-offline-v1";
+const STATIC_CACHE = "aponar-nihon-static-v2";
+const DYNAMIC_CACHE = "aponar-nihon-dynamic-v2";
 
-const URLS_TO_CACHE = [
+const STATIC_ASSETS = [
   "/",
-  "/index.html",
   "/manifest.json",
   "/logo.png",
-
-  "/about.html",
-  "/contact.html",
-  "/dashboard.html",
-  "/privacy-policy.html",
-
-  "/Hiragana-Katagana.html",
-
-  "/N5-Vocabulary.html",
-  "/N5-Vocabulary-part1.html",
-  "/N5-Vocabulary-part2.html",
-  "/N5-Vocabulary-part3.html",
-  "/N5-Vocabulary-part4.html",
-  "/N5-Vocabulary-part5.html",
-  "/N5-Vocabulary-part6.html",
-  "/N5-Vocabulary-part7.html",
-  "/N5-Vocabulary-part8.html",
-  "/N5-Vocabulary-part9.html",
-  "/N5-Vocabulary-part10.html",
-
-  "/N5-Grammar-part1.html",
-  "/N5-Grammar-part2.html",
-  "/N5-Grammar-part3.html",
-  "/N5-Grammar-part4.html",
-  "/N5-Grammar-part5.html",
-  "/N5-Grammar-part6.html",
-  "/N5-Grammar-part7.html",
-  "/N5-Grammar-part8.html",
-  "/N5-Grammar-part9.html",
-  "/N5-Grammar-part10.html",
-
-  "/N5-Kanji-part1.html",
-  "/N5-Kanji-part2.html",
-  "/N5-Kanji-part3.html",
-  "/N5-Kanji-part4.html",
-  "/N5-Kanji-part5.html",
-  "/N5-Kanji-part6.html",
-  "/N5-Kanji-part7.html",
-  "/N5-Kanji-part8.html",
-  "/N5-Kanji-part9.html",
-  "/N5-Kanji-part10.html",
-
-  "/N5-Reading-part1.html",
-  "/N5-Reading-part2.html",
-  "/N5-Reading-part3.html",
-  "/N5-Reading-part4.html",
-  "/N5-Reading-part5.html",
-  "/N5-Reading-part6.html",
-  "/N5-Reading-part7.html",
-  "/N5-Reading-part8.html",
-  "/N5-Reading-part9.html",
-  "/N5-Reading-part10.html",
-
-  "/ssw.html",
-  "/ssw-exam.html",
-  "/ssw-faq.html",
-  "/ssw-interview.html",
-  "/ssw-job.html",
-  "/ssw-overview.html",
-  "/ssw-salary.html",
-  "/ssw-visa-process.html"
+  "/aponar-nihon(1).png"
 ];
 
-// Install
 self.addEventListener("install", (event) => {
-  event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(URLS_TO_CACHE))
-  );
   self.skipWaiting();
+  event.waitUntil(
+    caches.open(STATIC_CACHE).then((cache) => cache.addAll(STATIC_ASSETS))
+  );
 });
 
-// Activate
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
       Promise.all(
         keys.map((key) => {
-          if (key !== CACHE_NAME) {
+          if (key !== STATIC_CACHE && key !== DYNAMIC_CACHE) {
             return caches.delete(key);
           }
         })
       )
-    )
+    ).then(() => self.clients.claim())
   );
-  self.clients.claim();
 });
 
-// Fetch
-self.addEventListener("fetch", (event) => {
-  if (event.request.method !== "GET") return;
+self.addEventListener("message", (event) => {
+  if (event.data && event.data.type === "SKIP_WAITING") {
+    self.skipWaiting();
+  }
+});
 
-  event.respondWith(
-    caches.match(event.request).then((cached) => {
-      return (
-        cached ||
-        fetch(event.request)
-          .then((response) => {
-            const clone = response.clone();
-            caches.open(CACHE_NAME).then((cache) => {
-              cache.put(event.request, clone);
+self.addEventListener("fetch", (event) => {
+  const request = event.request;
+
+  if (request.method !== "GET") return;
+
+  const url = new URL(request.url);
+
+  // HTML pages => Network First
+  if (
+    request.mode === "navigate" ||
+    (request.headers.get("accept") || "").includes("text/html")
+  ) {
+    event.respondWith(
+      fetch(request)
+        .then((networkResponse) => {
+          const copy = networkResponse.clone();
+          caches.open(DYNAMIC_CACHE).then((cache) => {
+            cache.put(request, copy);
+          });
+          return networkResponse;
+        })
+        .catch(() =>
+          caches.match(request).then((cached) => cached || caches.match("/index.html"))
+        )
+    );
+    return;
+  }
+
+  // CSS & JS => Stale While Revalidate
+  if (
+    url.pathname.endsWith(".css") ||
+    url.pathname.endsWith(".js")
+  ) {
+    event.respondWith(
+      caches.match(request).then((cachedResponse) => {
+        const fetchPromise = fetch(request)
+          .then((networkResponse) => {
+            const copy = networkResponse.clone();
+            caches.open(DYNAMIC_CACHE).then((cache) => {
+              cache.put(request, copy);
             });
-            return response;
+            return networkResponse;
           })
-          .catch(() => caches.match("/index.html"))
-      );
-    })
+          .catch(() => cachedResponse);
+
+        return cachedResponse || fetchPromise;
+      })
+    );
+    return;
+  }
+
+  // Images => Cache First
+  if (
+    request.destination === "image" ||
+    url.pathname.endsWith(".png") ||
+    url.pathname.endsWith(".jpg") ||
+    url.pathname.endsWith(".jpeg") ||
+    url.pathname.endsWith(".webp") ||
+    url.pathname.endsWith(".svg")
+  ) {
+    event.respondWith(
+      caches.match(request).then((cachedResponse) => {
+        if (cachedResponse) return cachedResponse;
+
+        return fetch(request).then((networkResponse) => {
+          const copy = networkResponse.clone();
+          caches.open(DYNAMIC_CACHE).then((cache) => {
+            cache.put(request, copy);
+          });
+          return networkResponse;
+        });
+      })
+    );
+    return;
+  }
+
+  // Default => Network First
+  event.respondWith(
+    fetch(request)
+      .then((networkResponse) => {
+        const copy = networkResponse.clone();
+        caches.open(DYNAMIC_CACHE).then((cache) => {
+          cache.put(request, copy);
+        });
+        return networkResponse;
+      })
+      .catch(() => caches.match(request))
   );
 });
