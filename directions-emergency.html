@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>পথ ও জরুরি প্রয়োজন | আপনার নিহোন</title>
+<meta name="theme-color" content="#244a7c">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+:root {
+  --primary:#244a7c; --primary-light:#5f87c1; --accent:#d85c4a; --accent-warm:#e4a34a;
+  --dark:#14253d; --text-primary:#213043; --text-secondary:#5b6b7f; --text-muted:#8d99a8;
+  --border:#dde6f0; --bg-primary:#fffdf8; --bg-secondary:#f5f7fb; --radius-xl:20px; --radius-lg:14px;
+  --shadow-card:0 18px 42px rgba(20,37,61,0.06); --shadow-lg:0 20px 50px rgba(20,37,61,0.10);
+}
+body {
+  font-family:'Noto Sans Bengali','Inter','Noto Sans JP',sans-serif;
+  background:radial-gradient(circle at top left,rgba(216,92,74,0.05),transparent 28%),radial-gradient(circle at bottom right,rgba(36,74,124,0.06),transparent 32%),var(--bg-secondary);
+  color:var(--text-primary); line-height:1.7; overflow-x:hidden; padding-bottom:120px;
+}
+.container { max-width:900px; margin:0 auto; padding:0 16px; }
+
+.topbar {
+  position:sticky; top:0; z-index:100;
+  background:rgba(255,253,248,0.92); backdrop-filter:blur(18px) saturate(170%);
+  border-bottom:1px solid rgba(36,74,124,0.08); box-shadow:0 10px 30px rgba(23,49,82,0.07);
+}
+.topbar-inner { display:flex; align-items:center; justify-content:space-between; padding:12px 16px; max-width:900px; margin:0 auto; }
+.back-btn {
+  width:40px; height:40px; border-radius:12px; background:linear-gradient(135deg,#244f72,#3f72af);
+  color:#fff; display:flex; align-items:center; justify-content:center; text-decoration:none;
+  box-shadow:0 8px 20px rgba(36,79,124,0.18); transition:transform .2s;
+}
+.back-btn:hover { transform:scale(1.05); }
+.page-title { font-size:1.15rem; font-weight:800; color:#173152; }
+.page-sub { font-size:.72rem; color:#7a8ba3; font-weight:600; letter-spacing:.5px; }
+
+.hero-mini {
+  background:linear-gradient(135deg,#6C5CE7 0%,#A29BFE 50%,#FF6B6B 100%);
+  padding:36px 16px 44px; text-align:center; position:relative; overflow:hidden;
+}
+.hero-mini::before {
+  content:''; position:absolute; inset:0;
+  background:radial-gradient(circle at 20% 30%,rgba(255,255,255,0.15),transparent 50%),radial-gradient(circle at 80% 70%,rgba(255,255,255,0.08),transparent 50%);
+}
+.hero-mini h1 { position:relative; z-index:1; font-size:clamp(1.6rem,5vw,2.4rem); color:#fff; font-weight:900; margin-bottom:8px; }
+.hero-mini p { position:relative; z-index:1; color:rgba(255,255,255,0.88); font-size:.95rem; max-width:500px; margin:0 auto; }
+.hero-badge {
+  display:inline-flex; align-items:center; gap:6px; background:rgba(255,255,255,0.14);
+  border:1px solid rgba(255,255,255,0.22); padding:6px 16px; border-radius:999px;
+  color:#fff6ea; font-weight:700; font-size:.78rem; margin-bottom:14px; position:relative; z-index:1;
+}
+
+.section { padding:28px 0; }
+.section-header { text-align:center; margin-bottom:28px; }
+.section-label {
+  display:inline-flex; align-items:center; gap:8px; background:rgba(36,74,124,0.09);
+  padding:6px 16px; border-radius:999px; color:#244a7c; font-weight:700; font-size:.78rem;
+  margin-bottom:10px; letter-spacing:.5px; text-transform:uppercase;
+}
+.section-header h2 { font-size:1.35rem; color:var(--dark); font-weight:900; }
+
+.cat-card {
+  background:rgba(255,255,255,0.88); backdrop-filter:blur(10px);
+  border:1px solid rgba(36,74,124,0.08); border-radius:var(--radius-xl);
+  box-shadow:var(--shadow-card); margin-bottom:20px; overflow:hidden;
+}
+.cat-header {
+  padding:16px 20px; background:linear-gradient(135deg,#244a7c,#3f72af);
+  color:#fff; display:flex; align-items:center; gap:12px;
+}
+.cat-header i { font-size:1.1rem; }
+.cat-header h3 { font-size:1.05rem; font-weight:800; }
+.cat-body { padding:10px; }
+
+.phrase-row {
+  display:flex; align-items:flex-start; gap:14px; padding:14px 12px;
+  border-radius:var(--radius-lg); transition:all .25s ease; position:relative;
+}
+.phrase-row:hover { background:rgba(36,74,124,0.04); }
+.phrase-row:not(:last-child) { border-bottom:1px solid rgba(36,74,124,0.06); }
+
+.phrase-num {
+  width:32px; height:32px; border-radius:10px; background:linear-gradient(135deg,#6C5CE7,#FF6B6B);
+  color:#fff; display:flex; align-items:center; justify-content:center;
+  font-size:.8rem; font-weight:800; flex-shrink:0; margin-top:2px;
+}
+.phrase-content { flex:1; min-width:0; }
+.phrase-jp {
+  font-family:'Noto Sans JP',sans-serif; font-size:1.25rem; font-weight:700;
+  color:var(--dark); margin-bottom:4px; line-height:1.5;
+}
+.phrase-jp ruby { ruby-align:center; }
+.phrase-jp rt {
+  font-size:.55rem; color:var(--accent); font-weight:600; letter-spacing:.3px;
+}
+.phrase-roma {
+  font-size:.82rem; color:var(--text-muted); font-weight:600; letter-spacing:.3px;
+  margin-bottom:6px; font-style:italic;
+}
+.phrase-meaning {
+  font-size:.95rem; color:var(--text-secondary); font-weight:600;
+  background:rgba(36,74,124,0.04); padding:6px 12px; border-radius:10px; display:inline-block;
+}
+.phrase-tag {
+  display:inline-block; font-size:.65rem; font-weight:700; padding:3px 10px; border-radius:999px;
+  margin-top:6px; text-transform:uppercase; letter-spacing:.3px;
+}
+.tag-formal { background:rgba(36,74,124,0.08); color:#244a7c; }
+.tag-casual { background:rgba(216,92,74,0.10); color:#c85c49; }
+.tag-polite { background:rgba(95,135,193,0.10); color:#3f72af; }
+.tag-emergency { background:rgba(200,92,73,0.14); color:#c85c49; }
+
+.copy-btn {
+  width:36px; height:36px; border-radius:10px; border:1px solid var(--border);
+  background:#fff; color:var(--primary); display:flex; align-items:center; justify-content:center;
+  cursor:pointer; flex-shrink:0; transition:all .2s; font-size:.9rem;
+}
+.copy-btn:hover { background:var(--primary); color:#fff; transform:scale(1.08); }
+.copy-btn.copied { background:linear-gradient(135deg,#5e7f73,#89a69a); color:#fff; border-color:transparent; }
+
+.toast {
+  position:fixed; bottom:calc(100px + env(safe-area-inset-bottom)); left:50%; transform:translateX(-50%) translateY(20px);
+  background:linear-gradient(135deg,#6C5CE7,#FF6B6B); color:#fff; padding:12px 24px; border-radius:14px;
+  font-weight:700; font-size:.9rem; box-shadow:0 12px 30px rgba(108,92,231,0.25); opacity:0; pointer-events:none;
+  transition:all .35s cubic-bezier(.34,1.56,.64,1); z-index:2000; display:flex; align-items:center; gap:10px;
+}
+.toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+
+.app-bottom-nav-wrap {
+  position:fixed; left:50%; bottom:10px; transform:translateX(-50%);
+  width:min(860px,calc(100% - 16px)); z-index:980; pointer-events:none;
+}
+.app-bottom-nav {
+  position:relative; display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); gap:2px;
+  padding:6px 6px calc(8px + env(safe-area-inset-bottom)); border-radius:28px;
+  background:linear-gradient(180deg,rgba(255,255,255,0.96) 0%,rgba(250,252,255,0.98) 100%);
+  backdrop-filter:blur(28px) saturate(200%); border:1px solid rgba(255,255,255,0.65);
+  box-shadow:0 20px 60px rgba(17,32,67,0.14),0 8px 24px rgba(60,86,140,0.10),inset 0 1px 0 rgba(255,255,255,0.85),0 0 0 1px rgba(36,74,124,0.06);
+  overflow:hidden; pointer-events:auto;
+}
+.app-nav-link { position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; min-height:58px; padding:5px 1px 4px; border-radius:16px; text-decoration:none; color:#7a8ba3; transition:color .25s ease,transform .25s cubic-bezier(.34,1.56,.64,1); isolation:isolate; overflow:hidden; z-index:1; }
+.app-nav-link::before { content:''; position:absolute; inset:0; border-radius:inherit; background:linear-gradient(135deg,rgba(36,74,124,0.06),rgba(108,92,231,0.04)); opacity:0; transform:scale(0.85); transition:opacity .25s ease,transform .25s cubic-bezier(.34,1.56,.64,1); z-index:-1; }
+.app-nav-link::after { content:''; position:absolute; left:50%; bottom:4px; width:20px; height:3px; border-radius:999px; background:linear-gradient(90deg,#244f72,#6C5CE7); transform:translateX(-50%) scaleX(0); opacity:0; transition:transform .35s cubic-bezier(.34,1.56,.64,1),opacity .25s ease; }
+.app-nav-link.active { color:#132c49; transform:translateY(-4px); }
+.app-nav-link.active::before { opacity:1; transform:scale(1); }
+.app-nav-link.active::after { opacity:1; transform:translateX(-50%) scaleX(1); }
+.app-nav-icon { position:relative; width:30px; height:30px; border-radius:12px; display:inline-flex; align-items:center; justify-content:center; background:linear-gradient(180deg,rgba(255,255,255,0.98),rgba(239,243,252,0.98)); border:1px solid rgba(36,79,124,0.08); box-shadow:0 4px 12px rgba(36,79,124,0.06); color:#5a7090; font-size:.82rem; transition:all .3s cubic-bezier(.34,1.56,.64,1); }
+.app-nav-link.active .app-nav-icon { color:#fff; background:linear-gradient(135deg,#6C5CE7 0%,#FF6B6B 100%); border-color:rgba(255,255,255,0.25); box-shadow:0 10px 24px rgba(76,93,196,0.28),0 4px 8px rgba(36,79,124,0.15),inset 0 1px 0 rgba(255,255,255,0.25); transform:translateY(-1px) scale(1.05); }
+.app-nav-label { display:block; font-size:clamp(.50rem,2.5vw,.64rem); font-weight:700; line-height:1.1; letter-spacing:-.01em; white-space:nowrap; }
+
+@media (max-width:420px){
+  .app-bottom-nav { gap:0; padding-inline:2px; }
+  .app-nav-link { min-height:56px; padding:4px 0px 3px; }
+  .app-nav-icon { width:28px; height:28px; border-radius:10px; }
+  .app-nav-label { font-size:.48rem; letter-spacing:0; }
+}
+@media (min-width:768px){
+  .app-bottom-nav-wrap { width:min(800px,calc(100% - 40px)); bottom:14px; }
+  .app-bottom-nav { gap:4px; padding:8px 10px 12px; border-radius:32px; }
+  .app-nav-link { min-height:68px; padding:8px 4px; border-radius:24px; }
+  .app-nav-icon { width:36px; height:36px; border-radius:16px; font-size:.95rem; }
+  .app-nav-label { font-size:.72rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html#essential-phrases" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+    <div style="text-align:center;">
+      <div class="page-title">পথ ও জরুরি প্রয়োজন</div>
+      <div class="page-sub">Directions & Emergency</div>
+    </div>
+    <div style="width:40px;"></div>
+  </div>
+</div>
+
+<div class="hero-mini">
+  <div class="hero-badge"><i class="fas fa-map-marker-alt"></i> 道案内と緊急</div>
+  <h1>পথ ও জরুরি প্রয়োজন</h1>
+  <p>রাস্তা খুঁজে বের করা, সহায়তা চাওয়া, জরুরি পরিস্থিতি ও দৈনন্দিন প্রয়োজনীয় জাপানি বাক্য</p>
+</div>
+
+<div class="container">
+
+  <!-- Directions -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label"><i class="fas fa-map-signs"></i> পথ জিজ্ঞাসা</div>
+      <h2>রাস্তা ও দিকনির্দেশনা</h2>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header"><i class="fas fa-route"></i><h3>Directions — 道案内</h3></div>
+      <div class="cat-body">
+
+        <div class="phrase-row">
+          <div class="phrase-num">1</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>〜<rt>〜</rt>は<rt>は</rt>どこ<rt>どこ</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">~ wa doko desu ka?</div>
+            <div class="phrase-meaning">~ কোথায়? (যেকোনো জায়গার নাম বসান)</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('〜はどこですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">2</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>えき<rt>えき</rt>は<rt>は</rt>どこ<rt>どこ</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">Eki wa doko desu ka?</div>
+            <div class="phrase-meaning">স্টেশন কোথায়?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('えきはどこですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">3</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>トイレ<rt>トイレ</rt>は<rt>は</rt>どこ<rt>どこ</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">Toire wa doko desu ka?</div>
+            <div class="phrase-meaning">টয়লেট কোথায়?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('トイレはどこですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">4</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>こんびに<rt>こんびに</rt>は<rt>は</rt>どこ<rt>どこ</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">Konbini wa doko desu ka?</div>
+            <div class="phrase-meaning">কনভিনিয়েন্স স্টোর কোথায়?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('こんびにはどこですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">5</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>みぎ<rt>みぎ</rt></ruby></div>
+            <div class="phrase-roma">Migi</div>
+            <div class="phrase-meaning">ডান দিক</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('みぎ',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">6</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ひだり<rt>ひだり</rt></ruby></div>
+            <div class="phrase-roma">Hidari</div>
+            <div class="phrase-meaning">বাম দিক</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ひだり',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">7</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>まっすぐ<rt>まっすぐ</rt></ruby></div>
+            <div class="phrase-roma">Massugu</div>
+            <div class="phrase-meaning">সোজা</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('まっすぐ',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">8</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>うしろ<rt>うしろ</rt></ruby></div>
+            <div class="phrase-roma">Ushiro</div>
+            <div class="phrase-meaning">পেছনে</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('うしろ',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">9</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>まえ<rt>まえ</rt></ruby></div>
+            <div class="phrase-roma">Mae</div>
+            <div class="phrase-meaning">সামনে</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('まえ',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">10</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ちかく<rt>ちかく</rt>に<rt>に</rt>ありますか<rt>ありますか</rt></ruby></div>
+            <div class="phrase-roma">Chikaku ni arimasu ka?</div>
+            <div class="phrase-meaning">কাছাকাছি আছে?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ちかくにありますか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">11</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>どの<rt>どの</rt>くらい<rt>くらい</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">Dono kurai desu ka?</div>
+            <div class="phrase-meaning">কত দূর? / কত সময় লাগবে?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('どのくらいですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">12</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ありがとう<rt>ありがとう</rt>ございます<rt>ございます</rt>、たすかりました<rt>たすかりました</rt></ruby></div>
+            <div class="phrase-roma">Arigatou gozaimasu, tasukarimashita</div>
+            <div class="phrase-meaning">ধন্যবাদ, আপনার সাহায্যে বেঁচে গেলাম</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ありがとうございます、たすかりました',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Transportation -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label"><i class="fas fa-train"></i> যাতায়াত</div>
+      <h2>ট্রেন, বাস ও ট্যাক্সি</h2>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header" style="background:linear-gradient(135deg,#5e7f73,#89a69a);"><i class="fas fa-bus"></i><h3>Transportation — 交通</h3></div>
+      <div class="cat-body">
+
+        <div class="phrase-row">
+          <div class="phrase-num">1</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>〜<rt>〜</rt>いき<rt>いき</rt>の<rt>の</rt>でんしゃ<rt>でんしゃ</rt>は<rt>は</rt>どれ<rt>どれ</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">~ iki no densha wa dore desu ka?</div>
+            <div class="phrase-meaning">~ যাওয়ার ট্রেন কোনটি?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('〜いきのでんしゃはどれですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">2</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>この<rt>この</rt>でんしゃ<rt>でんしゃ</rt>は<rt>は</rt>〜<rt>〜</rt>に<rt>に</rt>いきますか<rt>いきますか</rt></ruby></div>
+            <div class="phrase-roma">Kono densha wa ~ ni ikimasu ka?</div>
+            <div class="phrase-meaning">এই ট্রেন ~ যায়?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('このでんしゃは〜にいきますか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">3</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>つぎ<rt>つぎ</rt>の<rt>の</rt>えき<rt>えき</rt>は<rt>は</rt>どこ<rt>どこ</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">Tsugi no eki wa doko desu ka?</div>
+            <div class="phrase-meaning">পরবর্তী স্টেশন কোথায়?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('つぎのえきはどこですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">4</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>〜<rt>〜</rt>まで<rt>まで</rt>いくら<rt>いくら</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">~ made ikura desu ka?</div>
+            <div class="phrase-meaning">~ পর্যন্ত কত টাকা? (ট্যাক্সি/ট্রেন)</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('〜までいくらですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">5</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ここ<rt>ここ</rt>で<rt>で</rt>おります<rt>おります</rt></ruby></div>
+            <div class="phrase-roma">Koko de orimasu</div>
+            <div class="phrase-meaning">আমি এখানে নামব (ট্যাক্সি/বাস)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ここでおります',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">6</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>〜<rt>〜</rt>まで<rt>まで</rt>お<rt>お</rt>ねがい<rt>ねがい</rt>します<rt>します</rt></ruby></div>
+            <div class="phrase-roma">~ made onegai shimasu</div>
+            <div class="phrase-meaning">~ পর্যন্ত যান, অনুগ্রহ করে (ট্যাক্সি)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('〜までおねがいします',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">7</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ちず<rt>ちず</rt>を<rt>を</rt>みせて<rt>みせて</rt>ください<rt>ください</rt></ruby></div>
+            <div class="phrase-roma">Chizu wo misete kudasai</div>
+            <div class="phrase-meaning">ম্যাপ দেখান, অনুগ্রহ করে</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ちずをみせてください',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">8</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>えき<rt>えき</rt>までは<rt>までは</rt>どう<rt>どう</rt>やって<rt>やって</rt>いきますか<rt>いきますか</rt></ruby></div>
+            <div class="phrase-roma">Eki made wa dou yatte ikimasu ka?</div>
+            <div class="phrase-meaning">স্টেশনে কীভাবে যাব?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('えきまではどうやっていきますか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Emergency -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label"><i class="fas fa-kit-medical"></i> জরুরি পরিস্থিতি</div>
+      <h2>জরুরি ও বিপদজনক পরিস্থিতি</h2>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header" style="background:linear-gradient(135deg,#c85c49,#e4a34a);"><i class="fas fa-triangle-exclamation"></i><h3>Emergency — 緊急事態</h3></div>
+      <div class="cat-body">
+
+        <div class="phrase-row">
+          <div class="phrase-num">1</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>たすけて<rt>たすけて</rt>ください<rt>ください</rt>！<rt>！</rt></ruby></div>
+            <div class="phrase-roma">Tasukete kudasai!</div>
+            <div class="phrase-meaning">আমাকে সাহায্য করুন!</div>
+            <span class="phrase-tag tag-emergency">Emergency</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('たすけてください！',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">2</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>きけん<rt>きけん</rt>です<rt>です</rt>！<rt>！</rt></ruby></div>
+            <div class="phrase-roma">Kiken desu!</div>
+            <div class="phrase-meaning">বিপদ! / বিপজ্জনক!</div>
+            <span class="phrase-tag tag-emergency">Emergency</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('きけんです！',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">3</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>けが<rt>けが</rt>を<rt>を</rt>しました<rt>しました</rt></ruby></div>
+            <div class="phrase-roma">Kega wo shimashita</div>
+            <div class="phrase-meaning">আমি আহত হয়েছি</div>
+            <span class="phrase-tag tag-emergency">Emergency</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('けがをしました',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">4</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>びょういん<rt>びょういん</rt>は<rt>は</rt>どこ<rt>どこ</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">Byouin wa doko desu ka?</div>
+            <div class="phrase-meaning">হাসপাতাল কোথায়?</div>
+            <span class="phrase-tag tag-emergency">Emergency</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('びょういんはどこですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">5</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>くすりや<rt>くすりや</rt>は<rt>は</rt>どこ<rt>どこ</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">Kusuriya wa doko desu ka?</div>
+            <div class="phrase-meaning">ফার্মেসি কোথায়?</div>
+            <span class="phrase-tag tag-emergency">Emergency</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('くすりやはどこですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">6</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>けいさつ<rt>けいさつ</rt>を<rt>を</rt>よんで<rt>よんで</rt>ください<rt>ください</rt></ruby></div>
+            <div class="phrase-roma">Keisatsu wo yonde kudasai</div>
+            <div class="phrase-meaning">পুলিশ ডাকুন, অনুগ্রহ করে</div>
+            <span class="phrase-tag tag-emergency">Emergency</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('けいさつをよんでください',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">7</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>どろぼう<rt>どろぼう</rt>です<rt>です</rt>！<rt>！</rt></ruby></div>
+            <div class="phrase-roma">Dorobou desu!</div>
+            <div class="phrase-meaning">চোর! / চুরি হয়েছে!</div>
+            <span class="phrase-tag tag-emergency">Emergency</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('どろぼうです！',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">8</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>かじ<rt>かじ</rt>です<rt>です</rt>！<rt>！</rt></ruby></div>
+            <div class="phrase-roma">Kaji desu!</div>
+            <div class="phrase-meaning">আগুন! (আগুন লেগেছে)</div>
+            <span class="phrase-tag tag-emergency">Emergency</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('かじです！',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">9</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>じしん<rt>じしん</rt>です<rt>です</rt>！<rt>！</rt></ruby></div>
+            <div class="phrase-roma">Jishin desu!</div>
+            <div class="phrase-meaning">ভূমিকম্প!</div>
+            <span class="phrase-tag tag-emergency">Emergency</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('じしんです！',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">10</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>だいじょうぶ<rt>だいじょうぶ</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">Daijoubu desu ka?</div>
+            <div class="phrase-meaning">আপনি ঠিক আছেন? (অন্যকে জিজ্ঞাসা)</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('だいじょうぶですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Daily Needs -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label"><i class="fas fa-hand-holding-medical"></i> দৈনন্দিন প্রয়োজন</div>
+      <h2>সাধারণ প্রয়োজন ও অনুরোধ</h2>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header" style="background:linear-gradient(135deg,#6C5CE7,#A29BFE);"><i class="fas fa-clipboard-list"></i><h3>Daily Needs — 日常の必要</h3></div>
+      <div class="cat-body">
+
+        <div class="phrase-row">
+          <div class="phrase-num">1</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>わかりません<rt>わかりません</rt></ruby></div>
+            <div class="phrase-roma">Wakarimasen</div>
+            <div class="phrase-meaning">আমি বুঝতে পারছি না (ফরমাল)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('わかりません',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">2</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>もう<rt>もう</rt>いちど<rt>いちど</rt>いって<rt>いって</rt>ください<rt>ください</rt></ruby></div>
+            <div class="phrase-roma">Mou ichido itte kudasai</div>
+            <div class="phrase-meaning">আবার বলুন, অনুগ্রহ করে</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('もういちどいってください',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">3</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ゆっくり<rt>ゆっくり</rt>いって<rt>いって</rt>ください<rt>ください</rt></ruby></div>
+            <div class="phrase-roma">Yukkuri itte kudasai</div>
+            <div class="phrase-meaning">ধীরে বলুন, অনুগ্রহ করে</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ゆっくりいってください',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">4</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>えいご<rt>えいご</rt>が<rt>が</rt>できますか<rt>できますか</rt></ruby></div>
+            <div class="phrase-roma">Eigo ga dekimasu ka?</div>
+            <div class="phrase-meaning">আপনি কি ইংরেজি বলতে পারেন?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('えいごができますか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">5</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>にほんご<rt>にほんご</rt>が<rt>が</rt>すこし<rt>すこし</rt>しか<rt>しか</rt>わかりません<rt>わかりません</rt></ruby></div>
+            <div class="phrase-roma">Nihongo ga sukoshi shika wakarimasen</div>
+            <div class="phrase-meaning">আমি খুব কম জাপানি বুঝি</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('にほんごがすこししかわかりません',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">6</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>でんわ<rt>でんわ</rt>を<rt>を</rt>かりて<rt>かりて</rt>も<rt>も</rt>いい<rt>いい</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">Denwa wo karite mo ii desu ka?</div>
+            <div class="phrase-meaning">আমি কি ফোন ধার নিতে পারি?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('でんわをかりてもいいですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">7</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>Wi-Fi<rt>ワイファイ</rt>は<rt>は</rt>ありますか<rt>ありますか</rt></ruby></div>
+            <div class="phrase-roma">Wi-Fi wa arimasu ka?</div>
+            <div class="phrase-meaning">Wi-Fi আছে?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('Wi-Fiはありますか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">8</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>パスポート<rt>パスポート</rt>を<rt>を</rt>なくしました<rt>なくしました</rt></ruby></div>
+            <div class="phrase-roma">Pasupooto wo nakushimashita</div>
+            <div class="phrase-meaning">আমার পাসপোর্ট হারিয়ে গেছে</div>
+            <span class="phrase-tag tag-emergency">Emergency</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('パスポートをなくしました',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">9</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ざんねん<rt>ざんねん</rt>です<rt>です</rt></ruby></div>
+            <div class="phrase-roma">Zannen desu</div>
+            <div class="phrase-meaning">দুঃখিত / আফসোস (কোনো খারাপ খবর শুনলে)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ざんねんです',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">10</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>たいへん<rt>たいへん</rt>です<rt>です</rt>ね<rt>ね</rt></ruby></div>
+            <div class="phrase-roma">Taihen desu ne</div>
+            <div class="phrase-meaning">অনেক কঠিন তাই না? / দুঃখজনক</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('たいへんですね',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"><i class="fas fa-check-circle"></i><span id="toastMsg">কপি হয়েছে!</span></div>
+
+<div class="app-bottom-nav-wrap">
+  <nav class="app-bottom-nav">
+    <a href="index.html#home" class="app-nav-link" data-nav="home"><span class="app-nav-icon"><i class="fa-solid fa-house"></i></span><span class="app-nav-label">হোম</span></a>
+    <a href="index.html#n5" class="app-nav-link" data-nav="jlpt"><span class="app-nav-icon"><i class="fa-solid fa-book-open-reader"></i></span><span class="app-nav-label">JLPT</span></a>
+    <a href="index.html#interviews" class="app-nav-link" data-nav="interview"><span class="app-nav-icon"><i class="fa-solid fa-user-tie"></i></span><span class="app-nav-label">ইন্টারভিউ</span></a>
+    <a href="index.html#quiz" class="app-nav-link" data-nav="quiz"><span class="app-nav-icon"><i class="fa-solid fa-circle-question"></i></span><span class="app-nav-label">কুইজ</span></a>
+    <a href="index.html#guide" class="app-nav-link" data-nav="guide"><span class="app-nav-icon"><i class="fa-solid fa-compass"></i></span><span class="app-nav-label">গাইড</span></a>
+    <a href="index.html#essential-phrases" class="app-nav-link active" data-nav="phrases"><span class="app-nav-icon"><i class="fa-solid fa-comments"></i></span><span class="app-nav-label">বাক্য</span></a>
+    <a href="ssw.html" class="app-nav-link" data-nav="ssw"><span class="app-nav-icon"><i class="fa-solid fa-briefcase"></i></span><span class="app-nav-label">SSW</span></a>
+    <a href="mock-test.html" class="app-nav-link" data-nav="mock"><span class="app-nav-icon"><i class="fa-solid fa-file-lines"></i></span><span class="app-nav-label">মক টেস্ট</span></a>
+  </nav>
+</div>
+
+<script>
+function copyText(text,btn){
+  if(navigator.clipboard){ navigator.clipboard.writeText(text); }
+  else {
+    const ta=document.createElement('textarea'); ta.value=text; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+  }
+  btn.classList.add('copied'); btn.innerHTML='<i class="fas fa-check"></i>';
+  showToast('"'+text+'" কপি হয়েছে!');
+  setTimeout(()=>{ btn.classList.remove('copied'); btn.innerHTML='<i class="fas fa-copy"></i>'; },1800);
+}
+function showToast(msg){
+  const t=document.getElementById('toast'), tm=document.getElementById('toastMsg');
+  tm.textContent=msg; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2200);
+}
+</script>
+</body>
+</html>
