@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>দৈনন্দিন শুভেচ্ছা | আপনার নিহোন</title>
+<meta name="theme-color" content="#244a7c">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+:root {
+  --primary:#244a7c; --primary-light:#5f87c1; --accent:#d85c4a; --accent-warm:#e4a34a;
+  --dark:#14253d; --text-primary:#213043; --text-secondary:#5b6b7f; --text-muted:#8d99a8;
+  --border:#dde6f0; --bg-primary:#fffdf8; --bg-secondary:#f5f7fb; --radius-xl:20px; --radius-lg:14px;
+  --shadow-card:0 18px 42px rgba(20,37,61,0.06); --shadow-lg:0 20px 50px rgba(20,37,61,0.10);
+}
+body {
+  font-family:'Noto Sans Bengali','Inter','Noto Sans JP',sans-serif;
+  background:radial-gradient(circle at top left,rgba(216,92,74,0.05),transparent 28%),radial-gradient(circle at bottom right,rgba(36,74,124,0.06),transparent 32%),var(--bg-secondary);
+  color:var(--text-primary); line-height:1.7; overflow-x:hidden; padding-bottom:120px;
+}
+.container { max-width:900px; margin:0 auto; padding:0 16px; }
+
+/* Top bar */
+.topbar {
+  position:sticky; top:0; z-index:100;
+  background:rgba(255,253,248,0.92); backdrop-filter:blur(18px) saturate(170%);
+  border-bottom:1px solid rgba(36,74,124,0.08); box-shadow:0 10px 30px rgba(23,49,82,0.07);
+}
+.topbar-inner { display:flex; align-items:center; justify-content:space-between; padding:12px 16px; max-width:900px; margin:0 auto; }
+.back-btn {
+  width:40px; height:40px; border-radius:12px; background:linear-gradient(135deg,#244f72,#3f72af);
+  color:#fff; display:flex; align-items:center; justify-content:center; text-decoration:none;
+  box-shadow:0 8px 20px rgba(36,79,124,0.18); transition:transform .2s;
+}
+.back-btn:hover { transform:scale(1.05); }
+.page-title { font-size:1.15rem; font-weight:800; color:#173152; }
+.page-sub { font-size:.72rem; color:#7a8ba3; font-weight:600; letter-spacing:.5px; }
+
+/* Hero mini */
+.hero-mini {
+  background:linear-gradient(135deg,#1f3b60 0%,#30567f 45%,#4f779f 100%);
+  padding:36px 16px 44px; text-align:center; position:relative; overflow:hidden;
+}
+.hero-mini::before {
+  content:''; position:absolute; inset:0;
+  background:radial-gradient(circle at 20% 30%,rgba(255,255,255,0.12),transparent 50%),radial-gradient(circle at 80% 70%,rgba(255,255,255,0.06),transparent 50%);
+}
+.hero-mini h1 { position:relative; z-index:1; font-size:clamp(1.6rem,5vw,2.4rem); color:#fff; font-weight:900; margin-bottom:8px; }
+.hero-mini p { position:relative; z-index:1; color:rgba(255,255,255,0.82); font-size:.95rem; max-width:500px; margin:0 auto; }
+.hero-badge {
+  display:inline-flex; align-items:center; gap:6px; background:rgba(255,255,255,0.12);
+  border:1px solid rgba(255,255,255,0.18); padding:6px 16px; border-radius:999px;
+  color:#ffe2b6; font-weight:700; font-size:.78rem; margin-bottom:14px; position:relative; z-index:1;
+}
+
+/* Section */
+.section { padding:28px 0; }
+.section-header { text-align:center; margin-bottom:28px; }
+.section-label {
+  display:inline-flex; align-items:center; gap:8px; background:rgba(36,74,124,0.09);
+  padding:6px 16px; border-radius:999px; color:#244a7c; font-weight:700; font-size:.78rem;
+  margin-bottom:10px; letter-spacing:.5px; text-transform:uppercase;
+}
+.section-header h2 { font-size:1.35rem; color:var(--dark); font-weight:900; }
+
+/* Category card */
+.cat-card {
+  background:rgba(255,255,255,0.88); backdrop-filter:blur(10px);
+  border:1px solid rgba(36,74,124,0.08); border-radius:var(--radius-xl);
+  box-shadow:var(--shadow-card); margin-bottom:20px; overflow:hidden;
+}
+.cat-header {
+  padding:16px 20px; background:linear-gradient(135deg,#244a7c,#3f72af);
+  color:#fff; display:flex; align-items:center; gap:12px;
+}
+.cat-header i { font-size:1.1rem; }
+.cat-header h3 { font-size:1.05rem; font-weight:800; }
+.cat-body { padding:10px; }
+
+/* Phrase row */
+.phrase-row {
+  display:flex; align-items:flex-start; gap:14px; padding:14px 12px;
+  border-radius:var(--radius-lg); transition:all .25s ease; position:relative;
+}
+.phrase-row:hover { background:rgba(36,74,124,0.04); }
+.phrase-row:not(:last-child) { border-bottom:1px solid rgba(36,74,124,0.06); }
+
+.phrase-num {
+  width:32px; height:32px; border-radius:10px; background:linear-gradient(135deg,#244f72,#6C5CE7);
+  color:#fff; display:flex; align-items:center; justify-content:center;
+  font-size:.8rem; font-weight:800; flex-shrink:0; margin-top:2px;
+}
+.phrase-content { flex:1; min-width:0; }
+.phrase-jp {
+  font-family:'Noto Sans JP',sans-serif; font-size:1.25rem; font-weight:700;
+  color:var(--dark); margin-bottom:4px; line-height:1.5;
+}
+.phrase-jp ruby { ruby-align:center; }
+.phrase-jp rt {
+  font-size:.55rem; color:var(--accent); font-weight:600; letter-spacing:.3px;
+}
+.phrase-roma {
+  font-size:.82rem; color:var(--text-muted); font-weight:600; letter-spacing:.3px;
+  margin-bottom:6px; font-style:italic;
+}
+.phrase-meaning {
+  font-size:.95rem; color:var(--text-secondary); font-weight:600;
+  background:rgba(36,74,124,0.04); padding:6px 12px; border-radius:10px; display:inline-block;
+}
+.phrase-tag {
+  display:inline-block; font-size:.65rem; font-weight:700; padding:3px 10px; border-radius:999px;
+  margin-top:6px; text-transform:uppercase; letter-spacing:.3px;
+}
+.tag-formal { background:rgba(36,74,124,0.08); color:#244a7c; }
+.tag-casual { background:rgba(216,92,74,0.10); color:#c85c49; }
+.tag-polite { background:rgba(95,135,193,0.10); color:#3f72af; }
+
+.copy-btn {
+  width:36px; height:36px; border-radius:10px; border:1px solid var(--border);
+  background:#fff; color:var(--primary); display:flex; align-items:center; justify-content:center;
+  cursor:pointer; flex-shrink:0; transition:all .2s; font-size:.9rem;
+}
+.copy-btn:hover { background:var(--primary); color:#fff; transform:scale(1.08); }
+.copy-btn.copied { background:linear-gradient(135deg,#5e7f73,#89a69a); color:#fff; border-color:transparent; }
+
+/* Toast */
+.toast {
+  position:fixed; bottom:calc(100px + env(safe-area-inset-bottom)); left:50%; transform:translateX(-50%) translateY(20px);
+  background:linear-gradient(135deg,#244f72,#3f72af); color:#fff; padding:12px 24px; border-radius:14px;
+  font-weight:700; font-size:.9rem; box-shadow:0 12px 30px rgba(36,79,124,0.25); opacity:0; pointer-events:none;
+  transition:all .35s cubic-bezier(.34,1.56,.64,1); z-index:2000; display:flex; align-items:center; gap:10px;
+}
+.toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+
+/* Bottom nav */
+.app-bottom-nav-wrap {
+  position:fixed; left:50%; bottom:10px; transform:translateX(-50%);
+  width:min(860px,calc(100% - 16px)); z-index:980; pointer-events:none;
+}
+.app-bottom-nav {
+  position:relative; display:grid; grid-template-columns:repeat(8,minmax(0,1fr)); gap:2px;
+  padding:6px 6px calc(8px + env(safe-area-inset-bottom)); border-radius:28px;
+  background:linear-gradient(180deg,rgba(255,255,255,0.96) 0%,rgba(250,252,255,0.98) 100%);
+  backdrop-filter:blur(28px) saturate(200%); border:1px solid rgba(255,255,255,0.65);
+  box-shadow:0 20px 60px rgba(17,32,67,0.14),0 8px 24px rgba(60,86,140,0.10),inset 0 1px 0 rgba(255,255,255,0.85),0 0 0 1px rgba(36,74,124,0.06);
+  overflow:hidden; pointer-events:auto;
+}
+.app-nav-link { position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px; min-height:58px; padding:5px 1px 4px; border-radius:16px; text-decoration:none; color:#7a8ba3; transition:color .25s ease,transform .25s cubic-bezier(.34,1.56,.64,1); isolation:isolate; overflow:hidden; z-index:1; }
+.app-nav-link::before { content:''; position:absolute; inset:0; border-radius:inherit; background:linear-gradient(135deg,rgba(36,74,124,0.06),rgba(108,92,231,0.04)); opacity:0; transform:scale(0.85); transition:opacity .25s ease,transform .25s cubic-bezier(.34,1.56,.64,1); z-index:-1; }
+.app-nav-link::after { content:''; position:absolute; left:50%; bottom:4px; width:20px; height:3px; border-radius:999px; background:linear-gradient(90deg,#244f72,#6C5CE7); transform:translateX(-50%) scaleX(0); opacity:0; transition:transform .35s cubic-bezier(.34,1.56,.64,1),opacity .25s ease; }
+.app-nav-link.active { color:#132c49; transform:translateY(-4px); }
+.app-nav-link.active::before { opacity:1; transform:scale(1); }
+.app-nav-link.active::after { opacity:1; transform:translateX(-50%) scaleX(1); }
+.app-nav-icon { position:relative; width:30px; height:30px; border-radius:12px; display:inline-flex; align-items:center; justify-content:center; background:linear-gradient(180deg,rgba(255,255,255,0.98),rgba(239,243,252,0.98)); border:1px solid rgba(36,79,124,0.08); box-shadow:0 4px 12px rgba(36,79,124,0.06); color:#5a7090; font-size:.82rem; transition:all .3s cubic-bezier(.34,1.56,.64,1); }
+.app-nav-link.active .app-nav-icon { color:#fff; background:linear-gradient(135deg,#6C5CE7 0%,#FF6B6B 100%); border-color:rgba(255,255,255,0.25); box-shadow:0 10px 24px rgba(76,93,196,0.28),0 4px 8px rgba(36,79,124,0.15),inset 0 1px 0 rgba(255,255,255,0.25); transform:translateY(-1px) scale(1.05); }
+.app-nav-label { display:block; font-size:clamp(.50rem,2.5vw,.64rem); font-weight:700; line-height:1.1; letter-spacing:-.01em; white-space:nowrap; }
+
+@media (max-width:420px){
+  .app-bottom-nav { gap:0; padding-inline:2px; }
+  .app-nav-link { min-height:56px; padding:4px 0px 3px; }
+  .app-nav-icon { width:28px; height:28px; border-radius:10px; }
+  .app-nav-label { font-size:.48rem; letter-spacing:0; }
+}
+@media (min-width:768px){
+  .app-bottom-nav-wrap { width:min(800px,calc(100% - 40px)); bottom:14px; }
+  .app-bottom-nav { gap:4px; padding:8px 10px 12px; border-radius:32px; }
+  .app-nav-link { min-height:68px; padding:8px 4px; border-radius:24px; }
+  .app-nav-icon { width:36px; height:36px; border-radius:16px; font-size:.95rem; }
+  .app-nav-label { font-size:.72rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html#essential-phrases" class="back-btn"><i class="fas fa-arrow-left"></i></a>
+    <div style="text-align:center;">
+      <div class="page-title">দৈনন্দিন শুভেচ্ছা</div>
+      <div class="page-sub">Daily Greetings & Common Phrases</div>
+    </div>
+    <div style="width:40px;"></div>
+  </div>
+</div>
+
+<div class="hero-mini">
+  <div class="hero-badge"><i class="fas fa-handshake"></i> 日常の挨拶</div>
+  <h1>দৈনন্দিন শুভেচ্ছা</h1>
+  <p>জাপানে প্রতিদিনের কথোপকথনে সবচেয়ে বেশি ব্যবহৃত শুভেচ্ছা ও ভদ্রতার বাক্য</p>
+</div>
+
+<div class="container">
+
+  <!-- সকাল-দুপুর-রাত -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label"><i class="fas fa-sun"></i> সময় অনুযায়ী শুভেচ্ছা</div>
+      <h2>সকাল / দুপুর / সন্ধ্যা / রাত</h2>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header"><i class="fas fa-cloud-sun"></i><h3>Time-based Greetings — 時間帯の挨拶</h3></div>
+      <div class="cat-body">
+
+        <div class="phrase-row">
+          <div class="phrase-num">1</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>お<rt>お</rt>はよう<rt>はよう</rt>ございます<rt>ございます</rt></ruby></div>
+            <div class="phrase-roma">Ohayou gozaimasu</div>
+            <div class="phrase-meaning">সুপ্রভাত (ফরমাল)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('おはようございます',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">2</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>お<rt>お</rt>はよう<rt>はよう</rt></ruby></div>
+            <div class="phrase-roma">Ohayou</div>
+            <div class="phrase-meaning">সুপ্রভাত (ক্যাজুয়াল — বন্ধু/ফ্যামিলি)</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('おはよう',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">3</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>こんにちは<rt>こんにちは</rt></ruby></div>
+            <div class="phrase-roma">Konnichiwa</div>
+            <div class="phrase-meaning">হ্যালো / শুভ দুপুর (সকাল ১১টা – সন্ধ্যা ৫টা)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('こんにちは',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">4</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>こんばんは<rt>こんばんは</rt></ruby></div>
+            <div class="phrase-roma">Konbanwa</div>
+            <div class="phrase-meaning">শুভ সন্ধ্যা (সন্ধ্যা ৫টা পর থেকে)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('こんばんは',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">5</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>お<rt>お</rt>やすみ<rt>やすみ</rt>なさい<rt>なさい</rt></ruby></div>
+            <div class="phrase-roma">Oyasuminasai</div>
+            <div class="phrase-meaning">শুভ রাত্রি / ঘুমান (ফরমাল)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('おやすみなさい',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">6</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>お<rt>お</rt>やすみ<rt>やすみ</rt></ruby></div>
+            <div class="phrase-roma">Oyasumi</div>
+            <div class="phrase-meaning">শুভ রাত্রি (ক্যাজুয়াল)</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('おやすみ',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ধন্যবাদ ও ক্ষমা -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label"><i class="fas fa-heart"></i> ভদ্রতা ও কৃতজ্ঞতা</div>
+      <h2>ধন্যবাদ, ক্ষমা ও অনুমতি</h2>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header" style="background:linear-gradient(135deg,#c85c49,#e4a34a);"><i class="fas fa-hands-praying"></i><h3>Thanks & Apologies — 感謝と謝罪</h3></div>
+      <div class="cat-body">
+
+        <div class="phrase-row">
+          <div class="phrase-num">1</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ありがとう<rt>ありがとう</rt>ございます<rt>ございます</rt></ruby></div>
+            <div class="phrase-roma">Arigatou gozaimasu</div>
+            <div class="phrase-meaning">আপনাকে অনেক ধন্যবাদ (ফরমাল)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ありがとうございます',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">2</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ありがとう<rt>ありがとう</rt></ruby></div>
+            <div class="phrase-roma">Arigatou</div>
+            <div class="phrase-meaning">ধন্যবাদ (ক্যাজুয়াল)</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ありがとう',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">3</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>どうも<rt>どうも</rt>ありがとう<rt>ありがとう</rt>ございます<rt>ございます</rt></ruby></div>
+            <div class="phrase-roma">Doumo arigatou gozaimasu</div>
+            <div class="phrase-meaning">আপনাকে খুবই ধন্যবাদ (অনেক বেশি কৃতজ্ঞতা)</div>
+            <span class="phrase-tag tag-formal">Very Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('どうもありがとうございます',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">4</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>すみません<rt>すみません</rt></ruby></div>
+            <div class="phrase-roma">Sumimasen</div>
+            <div class="phrase-meaning">মাফ করবেন / এক্সকিউজ মি / দুঃখিত</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('すみません',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">5</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ごめん<rt>ごめん</rt>なさい<rt>なさい</rt></ruby></div>
+            <div class="phrase-roma">Gomen nasai</div>
+            <div class="phrase-meaning">আমি দুঃখিত / ক্ষমা করবেন (ফরমাল ক্ষমা)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ごめんなさい',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">6</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ごめん<rt>ごめん</rt></ruby></div>
+            <div class="phrase-roma">Gomen</div>
+            <div class="phrase-meaning">সরি (ক্যাজুয়াল — বন্ধুদের মধ্যে)</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ごめん',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">7</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>しつれい<rt>しつれい</rt>します<rt>します</rt></ruby></div>
+            <div class="phrase-roma">Shitsurei shimasu</div>
+            <div class="phrase-meaning">অনুমতি দিন / আমি বিদায় নিচ্ছি (অফিস/ফরমাল)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('しつれいします',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">8</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>お<rt>お</rt>じゃま<rt>じゃま</rt>します<rt>します</rt></ruby></div>
+            <div class="phrase-roma">Ojama shimasu</div>
+            <div class="phrase-meaning">বিরক্ত করছি (ঘরে ঢোকার সময় বলা হয়)</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('おじゃまします',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- পরিচয় -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label"><i class="fas fa-user"></i> নিজের পরিচয়</div>
+      <h2>নিজের পরিচয় দেওয়া</h2>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header" style="background:linear-gradient(135deg,#5e7f73,#89a69a);"><i class="fas fa-id-card"></i><h3>Self Introduction — 自己紹介</h3></div>
+      <div class="cat-body">
+
+        <div class="phrase-row">
+          <div class="phrase-num">1</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>はじめまして<rt>はじめまして</rt></ruby></div>
+            <div class="phrase-roma">Hajimemashite</div>
+            <div class="phrase-meaning">প্রথমবার দেখা হলো / আপনার সাথে পরিচয় পেয়ে ভালো লাগলো</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('はじめまして',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">2</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>わたし<rt>わたし</rt>は<rt>は</rt>〜<rt>〜</rt>です<rt>です</rt></ruby></div>
+            <div class="phrase-roma">Watashi wa ~ desu</div>
+            <div class="phrase-meaning">আমি ~ (নাম/পেশা)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('わたしは〜です',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">3</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>どうぞ<rt>どうぞ</rt>よろしく<rt>よろしく</rt>お<rt>お</rt>ねがい<rt>ねがい</rt>します<rt>します</rt></ruby></div>
+            <div class="phrase-roma">Douzo yoroshiku onegai shimasu</div>
+            <div class="phrase-meaning">আমার সাথে ভালোভাবে থাকবেন / আমাকে গ্রহণ করবেন (পরিচয়ের শেষে)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('どうぞよろしくおねがいします',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">4</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>よろしく<rt>よろしく</rt></ruby></div>
+            <div class="phrase-roma">Yoroshiku</div>
+            <div class="phrase-meaning">আমাকে গ্রহণ করো (ক্যাজুয়াল)</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('よろしく',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">5</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>お<rt>お</rt>なまえ<rt>なまえ</rt>は<rt>は</rt>？<rt>？</rt></ruby></div>
+            <div class="phrase-roma">Onamae wa?</div>
+            <div class="phrase-meaning">আপনার নাম কী?</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('おなまえは？',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">6</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>〜<rt>〜</rt>から<rt>から</rt>きました<rt>きました</rt></ruby></div>
+            <div class="phrase-roma">~ kara kimashita</div>
+            <div class="phrase-meaning">আমি ~ থেকে এসেছি</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('〜からきました',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- বিদায় -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label"><i class="fas fa-door-open"></i> বিদায়</div>
+      <h2>বিদায় জানানো</h2>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header" style="background:linear-gradient(135deg,#6C5CE7,#A29BFE);"><i class="fas fa-hand-wave"></i><h3>Farewells — 別れの挨拶</h3></div>
+      <div class="cat-body">
+
+        <div class="phrase-row">
+          <div class="phrase-num">1</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>さようなら<rt>さようなら</rt></ruby></div>
+            <div class="phrase-roma">Sayounara</div>
+            <div class="phrase-meaning">বিদায় (দীর্ঘদিনের জন্য — আবেগঘন)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('さようなら',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">2</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>じゃあ<rt>じゃあ</rt>ね<rt>ね</rt></ruby></div>
+            <div class="phrase-roma">Jaa ne</div>
+            <div class="phrase-meaning">তাহলে পরে দেখা হবে (ক্যাজুয়াল)</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('じゃあね',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">3</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>また<rt>また</rt>ね<rt>ね</rt></ruby></div>
+            <div class="phrase-roma">Mata ne</div>
+            <div class="phrase-meaning">আবার দেখা হবে (ক্যাজুয়াল)</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('またね',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">4</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>また<rt>また</rt>あした<rt>あした</rt></ruby></div>
+            <div class="phrase-roma">Mata ashita</div>
+            <div class="phrase-meaning">কাল দেখা হবে</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('またあした',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">5</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>いって<rt>いって</rt>きます<rt>きます</rt></ruby></div>
+            <div class="phrase-roma">Ittekimasu</div>
+            <div class="phrase-meaning">আমি বের হচ্ছি (বাড়ি থেকে বের হওয়ার সময়)</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('いってきます',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">6</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>いって<rt>いって</rt>らっしゃい<rt>らっしゃい</rt></ruby></div>
+            <div class="phrase-roma">Itterasshai</div>
+            <div class="phrase-meaning">ভালো থেকো / ফিরে আসো (যে বাড়িতে থাকে সে বলে)</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('いってらっしゃい',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">7</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ただいま<rt>ただいま</rt></ruby></div>
+            <div class="phrase-roma">Tadaima</div>
+            <div class="phrase-meaning">আমি ফিরে এসেছি (বাড়ি ফেরার সময়)</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ただいま',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">8</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>お<rt>お</rt>かえり<rt>かえり</rt>なさい<rt>なさい</rt></ruby></div>
+            <div class="phrase-roma">Okaerinasai</div>
+            <div class="phrase-meaning">স্বাগতম / ফিরে আসার জন্য ধন্যবাদ (বাড়িতে থাকা ব্যক্তি বলে)</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('おかえりなさい',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- সাধারণ প্রশ্ন -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-label"><i class="fas fa-comments"></i> সাধারণ কথোপকথন</div>
+      <h2>প্রতিদিনের সাধারণ বাক্য</h2>
+    </div>
+    <div class="cat-card">
+      <div class="cat-header" style="background:linear-gradient(135deg,#d48058,#e9b566);"><i class="fas fa-comment-dots"></i><h3>Common Phrases — 日常表現</h3></div>
+      <div class="cat-body">
+
+        <div class="phrase-row">
+          <div class="phrase-num">1</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>お<rt>お</rt>げんき<rt>げんき</rt>ですか<rt>ですか</rt></ruby></div>
+            <div class="phrase-roma">Ogenki desu ka?</div>
+            <div class="phrase-meaning">আপনি কেমন আছেন? (ফরমাল)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('おげんきですか',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">2</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>げんき<rt>げんき</rt>です<rt>です</rt></ruby></div>
+            <div class="phrase-roma">Genki desu</div>
+            <div class="phrase-meaning">আমি ভালো আছি</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('げんきです',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">3</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>はい<rt>はい</rt></ruby></div>
+            <div class="phrase-roma">Hai</div>
+            <div class="phrase-meaning">হ্যাঁ / জি</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('はい',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">4</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>いいえ<rt>いいえ</rt></ruby></div>
+            <div class="phrase-roma">Iie</div>
+            <div class="phrase-meaning">না</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('いいえ',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">5</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>わかりました<rt>わかりました</rt></ruby></div>
+            <div class="phrase-roma">Wakarimashita</div>
+            <div class="phrase-meaning">বুঝতে পেরেছি (ফরমাল)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('わかりました',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">6</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>わかります<rt>わかります</rt></ruby></div>
+            <div class="phrase-roma">Wakarimasu</div>
+            <div class="phrase-meaning">আমি বুঝি (ফরমাল বর্তমান)</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('わかります',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">7</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>わからない<rt>わからない</rt></ruby></div>
+            <div class="phrase-roma">Wakaranai</div>
+            <div class="phrase-meaning">আমি বুঝতে পারছি না (ক্যাজুয়াল)</div>
+            <span class="phrase-tag tag-casual">Casual</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('わからない',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">8</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>ちょっと<rt>ちょっと</rt>まって<rt>まって</rt>ください<rt>ください</rt></ruby></div>
+            <div class="phrase-roma">Chotto matte kudasai</div>
+            <div class="phrase-meaning">একটু অপেক্ষা করুন</div>
+            <span class="phrase-tag tag-polite">Polite</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('ちょっとまってください',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">9</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>だいじょうぶ<rt>だいじょうぶ</rt>です<rt>です</rt></ruby></div>
+            <div class="phrase-roma">Daijoubu desu</div>
+            <div class="phrase-meaning">আমি ঠিক আছি / কোনো সমস্যা নেই</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('だいじょうぶです',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+        <div class="phrase-row">
+          <div class="phrase-num">10</div>
+          <div class="phrase-content">
+            <div class="phrase-jp"><ruby>たのしい<rt>たのしい</rt>です<rt>です</rt></ruby></div>
+            <div class="phrase-roma">Tanoshii desu</div>
+            <div class="phrase-meaning">এটা মজার / আমি উপভোগ করছি</div>
+            <span class="phrase-tag tag-formal">Formal</span>
+          </div>
+          <button class="copy-btn" onclick="copyText('たのしいです',this)"><i class="fas fa-copy"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast"><i class="fas fa-check-circle"></i><span id="toastMsg">কপি হয়েছে!</span></div>
+
+<!-- Bottom Nav -->
+<div class="app-bottom-nav-wrap">
+  <nav class="app-bottom-nav">
+    <a href="index.html#home" class="app-nav-link" data-nav="home"><span class="app-nav-icon"><i class="fa-solid fa-house"></i></span><span class="app-nav-label">হোম</span></a>
+    <a href="index.html#n5" class="app-nav-link" data-nav="jlpt"><span class="app-nav-icon"><i class="fa-solid fa-book-open-reader"></i></span><span class="app-nav-label">JLPT</span></a>
+    <a href="index.html#interviews" class="app-nav-link" data-nav="interview"><span class="app-nav-icon"><i class="fa-solid fa-user-tie"></i></span><span class="app-nav-label">ইন্টারভিউ</span></a>
+    <a href="index.html#quiz" class="app-nav-link" data-nav="quiz"><span class="app-nav-icon"><i class="fa-solid fa-circle-question"></i></span><span class="app-nav-label">কুইজ</span></a>
+    <a href="index.html#guide" class="app-nav-link" data-nav="guide"><span class="app-nav-icon"><i class="fa-solid fa-compass"></i></span><span class="app-nav-label">গাইড</span></a>
+    <a href="index.html#essential-phrases" class="app-nav-link active" data-nav="phrases"><span class="app-nav-icon"><i class="fa-solid fa-comments"></i></span><span class="app-nav-label">বাক্য</span></a>
+    <a href="ssw.html" class="app-nav-link" data-nav="ssw"><span class="app-nav-icon"><i class="fa-solid fa-briefcase"></i></span><span class="app-nav-label">SSW</span></a>
+    <a href="mock-test.html" class="app-nav-link" data-nav="mock"><span class="app-nav-icon"><i class="fa-solid fa-file-lines"></i></span><span class="app-nav-label">মক টেস্ট</span></a>
+  </nav>
+</div>
+
+<script>
+function copyText(text,btn){
+  if(navigator.clipboard){ navigator.clipboard.writeText(text); }
+  else {
+    const ta=document.createElement('textarea'); ta.value=text; document.body.appendChild(ta); ta.select();
+    document.execCommand('copy'); document.body.removeChild(ta);
+  }
+  btn.classList.add('copied'); btn.innerHTML='<i class="fas fa-check"></i>';
+  showToast('"'+text+'" কপি হয়েছে!');
+  setTimeout(()=>{ btn.classList.remove('copied'); btn.innerHTML='<i class="fas fa-copy"></i>'; },1800);
+}
+function showToast(msg){
+  const t=document.getElementById('toast'), tm=document.getElementById('toastMsg');
+  tm.textContent=msg; t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),2200);
+}
+</script>
+</body>
+</html>
