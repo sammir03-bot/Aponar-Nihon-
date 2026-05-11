@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AI টিউটর | আপনার নিহোন — জাপানি ভাষা শিক্ষা</title>
+    <meta name="description" content="AI দিয়ে বাংলায় জাপানি ভাষা শিখুন — ব্যাকরণ, কানজি, ফুরিগানা, অনুবাদ সবকিছু একসাথে।">
+    <meta name="theme-color" content="#0f172a">
+    <link rel="icon" type="image/png" href="/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300;400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        :root {
+            --primary: #6C5CE7;
+            --primary-light: #A29BFE;
+            --primary-dark: #5A4BD1;
+            --accent: #FF6B6B;
+            --accent-warm: #FFA502;
+            --accent-green: #00B894;
+            --accent-blue: #0984E3;
+            --dark: #0f172a;
+            --dark-secondary: #1e293b;
+            --dark-tertiary: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --border: rgba(255,255,255,0.08);
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-tertiary: #334155;
+            --gradient-primary: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 100%);
+            --gradient-accent: linear-gradient(135deg, #FF6B6B 0%, #FFA502 100%);
+            --gradient-success: linear-gradient(135deg, #00B894 0%, #00CEC9 100%);
+            --gradient-blue: linear-gradient(135deg, #0984E3 0%, #74B9FF 100%);
+            --gradient-warm: linear-gradient(135deg, #FD79A8 0%, #FDCB6E 100%);
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+            --shadow-md: 0 4px 20px rgba(0,0,0,0.4);
+            --shadow-lg: 0 10px 40px rgba(0,0,0,0.5);
+            --shadow-xl: 0 20px 60px rgba(0,0,0,0.6);
+            --shadow-glow: 0 0 40px rgba(108, 92, 231, 0.15);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --radius-full: 9999px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body {
+            font-family: 'Noto Sans Bengali', 'Inter', 'Noto Sans JP', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            height: 100dvh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            height: 60px;
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(20px) saturate(180%);
+            -webkit-backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            padding: 0 16px;
+            gap: 12px;
+        }
+        .nav-back {
+            width: 36px; height: 36px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.08);
+            color: var(--text-secondary);
+            display: flex; align-items: center; justify-content: center;
+            text-decoration: none;
+            transition: var(--transition);
+            flex-shrink: 0;
+        }
+        .nav-back:hover { background: rgba(108,92,231,0.2); color: var(--primary-light); transform: translateX(-2px); }
+        .nav-brand {
+            display: flex; align-items: center; gap: 10px;
+            text-decoration: none;
+            flex: 1;
+            min-width: 0;
+        }
+        .nav-brand img {
+            width: 36px; height: 36px;
+            border-radius: 10px;
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+        .nav-brand-text {
+            display: flex; flex-direction: column;
+            min-width: 0;
+        }
+        .nav-brand-text strong {
+            color: var(--text-primary);
+            font-size: 1.05rem;
+            font-weight: 800;
+            line-height: 1.2;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .nav-brand-text span {
+            color: var(--text-muted);
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .nav-actions {
+            display: flex; align-items: center; gap: 8px;
+            flex-shrink: 0;
+        }
+        .nav-btn {
+            width: 36px; height: 36px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.08);
+            color: var(--text-secondary);
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: 0.9rem;
+            position: relative;
+        }
+        .nav-btn:hover { background: rgba(108,92,231,0.2); color: var(--primary-light); }
+        .nav-status {
+            display: flex; align-items: center; gap: 6px;
+            padding: 6px 12px;
+            background: rgba(0,184,148,0.1);
+            border: 1px solid rgba(0,184,148,0.2);
+            border-radius: var(--radius-full);
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--accent-green);
+        }
+        .nav-status .dot {
+            width: 6px; height: 6px;
+            background: var(--accent-green);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        .nav-status.offline {
+            background: rgba(255,107,107,0.1);
+            border-color: rgba(255,107,107,0.2);
+            color: var(--accent);
+        }
+        .nav-status.offline .dot {
+            background: var(--accent);
+            animation: none;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(0.8); }
+        }
+
+        .main-wrap {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-top: 60px;
+            height: calc(100dvh - 60px);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chat-area {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px 16px 100px;
+            scroll-behavior: smooth;
+            position: relative;
+        }
+        .chat-area::-webkit-scrollbar { width: 5px; }
+        .chat-area::-webkit-scrollbar-track { background: transparent; }
+        .chat-area::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 10px; }
+
+        .chat-bg {
+            position: fixed;
+            inset: 60px 0 0 0;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .chat-bg::before {
+            content: '';
+            position: absolute;
+            top: -20%; right: -10%;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(108,92,231,0.08), transparent 70%);
+            border-radius: 50%;
+        }
+        .chat-bg::after {
+            content: '';
+            position: absolute;
+            bottom: -10%; left: -10%;
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, rgba(255,107,107,0.06), transparent 70%);
+            border-radius: 50%;
+        }
+
+        .welcome-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100%;
+            text-align: center;
+            padding: 40px 20px;
+            animation: fadeInUp 0.6s ease;
+        }
+        .welcome-avatar {
+            width: 80px; height: 80px;
+            background: var(--gradient-primary);
+            border-radius: 24px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem;
+            color: white;
+            margin-bottom: 24px;
+            box-shadow: 0 16px 40px rgba(108,92,231,0.3);
+            position: relative;
+        }
+        .welcome-avatar::after {
+            content: '';
+            position: absolute;
+            inset: -4px;
+            border-radius: 28px;
+            background: linear-gradient(135deg, rgba(108,92,231,0.3), rgba(255,107,107,0.2));
+            z-index: -1;
+            animation: rotate 4s linear infinite;
+        }
+        @keyframes rotate { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+        .welcome-screen h1 {
+            font-size: 1.6rem;
+            font-weight: 900;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #fff, #A29BFE);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .welcome-screen p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            max-width: 420px;
+            margin-bottom: 32px;
+            line-height: 1.8;
+        }
+        .welcome-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            max-width: 520px;
+        }
+        .welcome-chip {
+            padding: 12px 18px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: var(--radius-full);
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex; align-items: center; gap: 8px;
+        }
+        .welcome-chip:hover {
+            background: rgba(108,92,231,0.15);
+            border-color: rgba(108,92,231,0.3);
+            color: var(--text-primary);
+            transform: translateY(-2px);
+        }
+        .welcome-chip i { color: var(--primary-light); font-size: 0.8rem; }
+
+        .messages-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+        .message {
+            display: flex;
+            gap: 12px;
+            max-width: 92%;
+            animation: fadeSlideIn 0.35s ease;
+        }
+        .message.user { align-self: flex-end; flex-direction: row-reverse; margin-left: auto; }
+        .message.bot { align-self: flex-start; }
+        @keyframes fadeSlideIn {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .msg-avatar {
+            width: 34px; height: 34px;
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .message.bot .msg-avatar {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: 0 4px 12px rgba(108,92,231,0.3);
+        }
+        .message.user .msg-avatar {
+            background: var(--gradient-accent);
+            color: white;
+            box-shadow: 0 4px 12px rgba(255,107,107,0.3);
+        }
+        .msg-bubble {
+            padding: 14px 18px;
+            border-radius: 18px;
+            font-size: 0.93rem;
+            line-height: 1.75;
+            word-break: break-word;
+            position: relative;
+        }
+        .message.bot .msg-bubble {
+            background: rgba(255,255,255,0.06);
+            color: rgba(255,255,255,0.92);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-bottom-left-radius: 4px;
+        }
+        .message.user .msg-bubble {
+            background: var(--gradient-accent);
+            color: white;
+            border-bottom-right-radius: 4px;
+            box-shadow: 0 8px 24px rgba(255,107,107,0.2);
+        }
+        .msg-time {
+            font-size: 0.65rem;
+            color: var(--text-muted);
+            margin-top: 6px;
+            text-align: right;
+            opacity: 0.7;
+        }
+        .message.user .msg-time { text-align: left; }
+
+        .msg-bubble strong { color: var(--primary-light); font-weight: 700; }
+        .msg-bubble code {
+            background: rgba(108,92,231,0.15);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Noto Sans JP', monospace;
+            font-size: 0.88em;
+            color: var(--primary-light);
+        }
+        .msg-bubble pre {
+            background: rgba(0,0,0,0.3);
+            padding: 12px;
+            border-radius: 10px;
+            overflow-x: auto;
+            margin: 8px 0;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .msg-bubble pre code {
+            background: none;
+            padding: 0;
+            font-size: 0.85em;
+            color: #a5b4fc;
+        }
+        .msg-bubble ul, .msg-bubble ol {
+            margin: 8px 0 8px 18px;
+            padding: 0;
+        }
+        .msg-bubble li { margin-bottom: 4px; }
+        .msg-bubble h3 { font-size: 1.05rem; margin: 12px 0 8px; color: var(--text-primary); }
+        .msg-bubble h4 { font-size: 0.95rem; margin: 12px 0 8px; color: var(--text-primary); }
+        .msg-bubble p { margin-bottom: 8px; }
+        .msg-bubble p:last-child { margin-bottom: 0; }
+        .msg-bubble .kanji-highlight {
+            background: linear-gradient(135deg, rgba(255,170,0,0.15), rgba(255,107,107,0.1));
+            padding: 1px 4px;
+            border-radius: 4px;
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 500;
+        }
+        .msg-bubble .furigana {
+            font-size: 0.75em;
+            color: var(--text-muted);
+            vertical-align: super;
+        }
+
+        .msg-actions {
+            display: flex;
+            gap: 6px;
+            margin-top: 6px;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+        }
+        .message.bot:hover .msg-actions { opacity: 1; }
+        .msg-action-btn {
+            width: 28px; height: 28px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.06);
+            color: var(--text-muted);
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            font-size: 0.75rem;
+            transition: var(--transition);
+        }
+        .msg-action-btn:hover {
+            background: rgba(108,92,231,0.2);
+            color: var(--primary-light);
+            border-color: rgba(108,92,231,0.3);
+        }
+
+        .typing-indicator {
+            display: flex;
+            gap: 4px;
+            padding: 18px 20px;
+            align-items: center;
+        }
+        .typing-indicator span {
+            width: 7px; height: 7px;
+            background: rgba(255,255,255,0.4);
+            border-radius: 50%;
+            animation: typingBounce 1.4s infinite ease-in-out both;
+        }
+        .typing-indicator span:nth-child(1) { animation-delay: -0.32s; }
+        .typing-indicator span:nth-child(2) { animation-delay: -0.16s; }
+        @keyframes typingBounce {
+            0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+            40% { transform: scale(1); opacity: 1; }
+        }
+
+        .error-bubble {
+            background: rgba(255,107,107,0.08) !important;
+            border-color: rgba(255,107,107,0.2) !important;
+            color: #ff8e8e !important;
+        }
+        .error-bubble .retry-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 10px;
+            padding: 8px 14px;
+            background: rgba(255,107,107,0.15);
+            border: 1px solid rgba(255,107,107,0.25);
+            border-radius: 10px;
+            color: #ff8e8e;
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .error-bubble .retry-btn:hover {
+            background: rgba(255,107,107,0.25);
+            transform: translateY(-1px);
+        }
+
+        .input-area {
+            position: fixed;
+            bottom: 0; left: 0; right: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid var(--border);
+            padding: 12px 16px calc(16px + env(safe-area-inset-bottom));
+            z-index: 100;
+        }
+        .input-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .input-chips {
+            display: flex;
+            gap: 8px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            margin-bottom: 4px;
+            scrollbar-width: none;
+        }
+        .input-chips::-webkit-scrollbar { display: none; }
+        .input-chip {
+            flex-shrink: 0;
+            padding: 8px 14px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: var(--radius-full);
+            color: var(--text-secondary);
+            font-size: 0.8rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            white-space: nowrap;
+        }
+        .input-chip:hover {
+            background: rgba(108,92,231,0.15);
+            border-color: rgba(108,92,231,0.3);
+            color: var(--text-primary);
+        }
+        .input-wrap {
+            display: flex;
+            gap: 10px;
+            align-items: flex-end;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 8px 8px 8px 16px;
+            transition: var(--transition);
+        }
+        .input-wrap:focus-within {
+            border-color: rgba(108,92,231,0.4);
+            box-shadow: 0 0 0 3px rgba(108,92,231,0.1), var(--shadow-glow);
+            background: rgba(255,255,255,0.06);
+        }
+        .input-wrap textarea {
+            flex: 1;
+            background: transparent;
+            border: none;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            resize: none;
+            max-height: 120px;
+            min-height: 24px;
+            padding: 6px 0;
+            outline: none;
+        }
+        .input-wrap textarea::placeholder { color: var(--text-muted); }
+        .input-actions {
+            display: flex; align-items: center; gap: 6px;
+            flex-shrink: 0;
+        }
+        .input-action {
+            width: 36px; height: 36px;
+            border-radius: 12px;
+            background: transparent;
+            border: none;
+            color: var(--text-muted);
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        .input-action:hover { color: var(--text-primary); background: rgba(255,255,255,0.05); }
+        .input-action.recording {
+            color: var(--accent);
+            background: rgba(255,107,107,0.1);
+            animation: pulse 1s infinite;
+        }
+        .input-send {
+            width: 40px; height: 40px;
+            border-radius: 14px;
+            background: var(--gradient-primary);
+            border: none;
+            color: white;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 16px rgba(108,92,231,0.3);
+        }
+        .input-send:hover:not(:disabled) {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(108,92,231,0.4);
+        }
+        .input-send:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        .input-send .spinner {
+            width: 18px; height: 18px;
+            border: 2px solid rgba(255,255,255,0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        .input-hint {
+            text-align: center;
+            margin-top: 8px;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            opacity: 0.6;
+        }
+
+        .toast {
+            position: fixed;
+            top: 76px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-20px);
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            padding: 12px 20px;
+            border-radius: 14px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            box-shadow: var(--shadow-lg);
+            z-index: 2000;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+            pointer-events: auto;
+        }
+        .toast.success { border-color: rgba(0,184,148,0.3); color: var(--accent-green); }
+        .toast.error { border-color: rgba(255,107,107,0.3); color: var(--accent); }
+        .toast i { font-size: 1rem; }
+
+        .modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(8px);
+            z-index: 1500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+        }
+        .modal-backdrop.show { opacity: 1; pointer-events: auto; }
+        .modal {
+            width: min(100%, 420px);
+            background: linear-gradient(180deg, var(--bg-secondary), var(--bg-primary));
+            border: 1px solid var(--border);
+            border-radius: 24px;
+            padding: 24px;
+            box-shadow: var(--shadow-xl);
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+        .modal-backdrop.show .modal { transform: scale(1); }
+        .modal-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .modal-header h3 {
+            font-size: 1.15rem;
+            font-weight: 800;
+            color: var(--text-primary);
+        }
+        .modal-close {
+            width: 32px; height: 32px;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.08);
+            color: var(--text-secondary);
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: var(--transition);
+        }
+        .modal-close:hover { background: rgba(255,107,107,0.15); color: var(--accent); }
+        .modal-field {
+            margin-bottom: 16px;
+        }
+        .modal-field label {
+            display: block;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+        }
+        .modal-field input, .modal-field select {
+            width: 100%;
+            padding: 12px 14px;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 12px;
+            color: var(--text-primary);
+            font-family: inherit;
+            font-size: 0.9rem;
+            outline: none;
+            transition: var(--transition);
+        }
+        .modal-field input:focus, .modal-field select:focus {
+            border-color: rgba(108,92,231,0.4);
+            box-shadow: 0 0 0 3px rgba(108,92,231,0.1);
+        }
+        .modal-field input::placeholder { color: var(--text-muted); }
+        .modal-field small {
+            display: block;
+            margin-top: 6px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+        .modal-btn {
+            width: 100%;
+            padding: 14px;
+            background: var(--gradient-primary);
+            border: none;
+            border-radius: 14px;
+            color: white;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 800;
+            cursor: pointer;
+            transition: var(--transition);
+            box-shadow: 0 8px 24px rgba(108,92,231,0.25);
+        }
+        .modal-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(108,92,231,0.35); }
+        .modal-divider {
+            height: 1px;
+            background: var(--border);
+            margin: 16px 0;
+        }
+        .modal-danger {
+            background: rgba(255,107,107,0.1) !important;
+            border: 1px solid rgba(255,107,107,0.2) !important;
+            color: #ff8e8e !important;
+            box-shadow: none !important;
+        }
+        .modal-danger:hover { background: rgba(255,107,107,0.2) !important; }
+
+        @media (min-width: 768px) {
+            .navbar { padding: 0 24px; height: 64px; }
+            .main-wrap { margin-top: 64px; height: calc(100dvh - 64px); }
+            .chat-area { padding: 28px 24px 110px; }
+            .message { max-width: 80%; }
+            .welcome-screen h1 { font-size: 2rem; }
+            .welcome-avatar { width: 90px; height: 90px; font-size: 2.5rem; }
+            .input-area { padding: 14px 24px calc(18px + env(safe-area-inset-bottom)); }
+        }
+        @media (max-width: 480px) {
+            .nav-status { display: none; }
+            .welcome-screen h1 { font-size: 1.35rem; }
+            .msg-bubble { font-size: 0.88rem; padding: 12px 14px; }
+            .input-chip { padding: 6px 10px; font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="nav-back" aria-label="Back"><i class="fas fa-arrow-left"></i></a>
+    <a href="index.html" class="nav-brand">
+        <img src="logo.png" alt="আপনার নিহোন" loading="lazy">
+        <div class="nav-brand-text">
+            <strong>AI টিউটর</strong>
+            <span>আপনার নিহোন</span>
+        </div>
+    </a>
+    <div class="nav-status" id="apiStatus">
+        <span class="dot"></span>
+        <span>অনলাইন</span>
+    </div>
+    <div class="nav-actions">
+        <button class="nav-btn" id="clearChatBtn" title="চ্যাট মুছুন" aria-label="Clear chat"><i class="fas fa-trash-alt"></i></button>
+        <button class="nav-btn" id="settingsBtn" title="সেটিংস" aria-label="Settings"><i class="fas fa-cog"></i></button>
+    </div>
+</nav>
+
+<div class="main-wrap">
+    <div class="chat-bg"></div>
+    <div class="chat-area" id="chatArea">
+        <div class="messages-container" id="messagesContainer">
+            <div class="welcome-screen" id="welcomeScreen">
+                <div class="welcome-avatar"><i class="fas fa-robot"></i></div>
+                <h1>আপনার ব্যক্তিগত জাপানি টিউটর</h1>
+                <p>AI দিয়ে বাংলায় জাপানি ভাষা শিখুন — ব্যাকরণ, কানজি, ফুরিগানা, অনুবাদ সবকিছু একসাথে। নিচের যেকোনো একটি প্রশ্ন দিয়ে শুরু করুন।</p>
+                <div class="welcome-chips">
+                    <button class="welcome-chip" data-prompt="JLPT N5-এর Top 10 কানজি শেখান"><i class="fas fa-star"></i> Top 10 কানজি</button>
+                    <button class="welcome-chip" data-prompt="জাপানি ভাষার বেসিক গ্রামার শেখান"><i class="fas fa-book"></i> বেসিক গ্রামার</button>
+                    <button class="welcome-chip" data-prompt="হিরাগানা কীভাবে শিখব"><i class="fas fa-font"></i> হিরাগানা শেখা</button>
+                    <button class="welcome-chip" data-prompt="JLPT N5 পরীক্ষার ফরম্যাট বুঝিয়ে দিন"><i class="fas fa-clipboard-list"></i> N5 ফরম্যাট</button>
+                    <button class="welcome-chip" data-prompt="日本語 থেকে বাংলা অনুবাদ করুন: こんにちは、元気ですか"><i class="fas fa-language"></i> অনুবাদ</button>
+                    <button class="welcome-chip" data-prompt="জাপানি সংখ্যা ১ থেকে ১০ শেখান"><i class="fas fa-sort-numeric-up"></i> সংখ্যা শেখা</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="input-area">
+    <div class="input-container">
+        <div class="input-chips" id="inputChips">
+            <button class="input-chip" data-prompt="N5 কানজি">N5 কানজি</button>
+            <button class="input-chip" data-prompt="গ্রামার">গ্রামার</button>
+            <button class="input-chip" data-prompt="ফুরিগানা">ফুরিগানা</button>
+            <button class="input-chip" data-prompt="ভোকাবুলারি">ভোকাবুলারি</button>
+            <button class="input-chip" data-prompt="Mock Test টিপস">Mock Test</button>
+            <button class="input-chip" data-prompt="Interview প্রস্তুতি">Interview</button>
+        </div>
+        <div class="input-wrap">
+            <textarea id="messageInput" rows="1" placeholder="বাংলায় বা জাপানিতে লিখুন..." enterkeyhint="send"></textarea>
+            <div class="input-actions">
+                <button class="input-action" id="voiceBtn" title="ভয়েস ইনপুট" aria-label="Voice input"><i class="fas fa-microphone"></i></button>
+                <button class="input-send" id="sendBtn" title="পাঠান" aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <div class="input-hint">AI উত্তর সর্বদা সঠিক নাও হতে পারে। গুরুত্বপূর্ণ তথ্য যাচাই করুন।</div>
+    </div>
+</div>
+
+<div class="toast" id="toast"><i class="fas fa-info-circle"></i><span id="toastText"></span></div>
+
+<div class="modal-backdrop" id="settingsModal">
+    <div class="modal">
+        <div class="modal-header">
+            <h3><i class="fas fa-cog" style="margin-right:8px;color:var(--primary-light);"></i>সেটিংস</h3>
+            <button class="modal-close" id="closeSettings"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-field">
+            <label>API এন্ডপয়েন্ট URL</label>
+            <input type="text" id="apiEndpoint" placeholder="https://your-api-gateway.execute-api.region.amazonaws.com/prod/chat">
+            <small>আপনার AWS API Gateway এন্ডপয়েন্ট URL দিন। খালি রাখলে ডেমো মোডে চলবে।</small>
+        </div>
+        <div class="modal-field">
+            <label>API কী</label>
+            <input type="password" id="apiKeyInput" value="ABSKQmVkcm9ja0FQSUtleS1zOThyLWF0LTg3NTkyNjEzNTMwMzpPN3EzWWkwVVFqUkpVeUZqN2RUY1N2OHp0VHBWKzJpV2VybTQ0VWwxWVNVVXZOTlZ1MVF4eDFZVW9udz0=">
+            <small>API Gateway x-api-key হেডারে ব্যবহৃত হবে।</small>
+        </div>
+        <div class="modal-field">
+            <label>মডেল / পরিবেশ</label>
+            <select id="modelSelect">
+                <option value="auto">অটো (ডিফল্ট)</option>
+                <option value="demo">ডেমো মোড (অফলাইন)</option>
+            </select>
+        </div>
+        <button class="modal-btn" id="saveSettings">সেভ করুন</button>
+        <div class="modal-divider"></div>
+        <button class="modal-btn modal-danger" id="clearHistoryBtn">সম্পূর্ণ ইতিহাস মুছুন</button>
+    </div>
+</div>
+
+<script>
+  const DEFAULT_API_KEY = 'ABSKQmVkcm9ja0FQSUtleS1zOThyLWF0LTg3NTkyNjEzNTMwMzpPN3EzWWkwVVFqUkpVeUZqN2RUY1N2OHp0VHBWKzJpV2VybTQ0VWwxWVNVVXZOTlZ1MVF4eDFZVW9udz0=';
+const STORAGE_KEY = 'nihon_tutor_chat_v1';
+const SETTINGS_KEY = 'nihon_tutor_settings_v1';
+
+let settings = {
+    apiEndpoint: '',
+    apiKey: DEFAULT_API_KEY,
+    model: 'auto'
+};
+
+let messages = [];
+let isTyping = false;
+let recognition = null;
+
+const demoResponses = {
+    'default': `আমি আপনার AI জাপানি টিউটর। দুঃখিত, এই মুহূর্তে আমি API-এর সাথে সংযুক্ত নই। তবে আমি আপনাকে সাহায্য করতে পারি!
+
+**জাপানি ভাষা শেখার কিছু টিপস:**
+
+১. প্রতিদিন কমপক্ষে ৩০ মিনিট হিরাগানা ও কাতাকানা প্র্যাকটিস করুন।
+২. কানজি শেখার জন্য RTK (Remembering the Kanji) মেথড ব্যবহার করতে পারেন।
+৩. Minna no Nihongo বইটি N5 ও N4-এর জন্য অসাধারণ।
+৪. জাপানি অ্যানিমে ও ড্রামা দেখুন — এতে শ্রবণ দক্ষতা বাড়বে।
+
+আপনি কোন বিষয়ে জানতে চান?`,
+
+    'kanji': `**JLPT N5-এর Top 10 কানজি:**
+
+| কানজি | অনুপ্রয়োগ | অর্থ |
+|--------|-----------|------|
+| **日** | ひ / にち | দিন, সূর্য |
+| **月** | つき / げつ | মাস, চাঁদ |
+| **火** | ひ / か | আগুন |
+| **水** | みず / すい | পানি |
+| **木** | き / もく | গাছ |
+| **金** | かね / きん | টাকা, সোনা |
+| **土** | つち / ど | মাটি |
+| **人** | ひと / にん | মানুষ |
+| **大** | おお / だい | বড় |
+| **小** | ちい / しょう | ছোট |
+
+প্রতিটি কানজির radicals বুঝতে চেষ্টা করুন — এতে মনে রাখা সহজ হবে।`,
+
+    'grammar': `**জাপানি বেসিক গ্রামার — です (desu):**
+
+**です** হলো জাপানি ভাষার সবচেয়ে গুরুত্বপূর্ণ ক্রিয়া। এটি "হয়/আছে" অর্থে ব্যবহৃত হয়।
+
+**গঠন:**
+\`\`\`
+[নাউন] + です
+\`\`\`
+
+**উদাহরণ:**
+- わたしはがくせい**です**। (আমি একজন ছাত্র।)
+- これはほん**です**। (এটি একটি বই।)
+- きょうはにちようび**です**। (আজ রবিবার।)
+
+**নেতিবাচক:**
+- です → **ではありません** (dewa arimasen)
+- これはほん**ではありません**। (এটি বই নয়।)
+
+**প্রশ্ন:**
+- です → **ですか** (desu ka)
+- あなたはがくせい**ですか**। (আপনি কি ছাত্র?)`,
+
+    'hiragana': `**হিরাগানা বর্ণমালা — あ行 (A-গো):**
+
+| あ (a) | い (i) | う (u) | え (e) | お (o) |
+|--------|--------|--------|--------|--------|
+| **あ** | **い** | **う** | **え** | **お** |
+| か (ka) | き (ki) | く (ku) | け (ke) | こ (ko) |
+| さ (sa) | し (shi) | す (su) | せ (se) | そ (so) |
+| た (ta) | ち (chi) | つ (tsu) | て (te) | と (to) |
+| な (na) | に (ni) | ぬ (nu) | ね (ne) | の (no) |
+| は (ha) | ひ (hi) | ふ (fu) | へ (he) | ほ (ho) |
+| ま (ma) | み (mi) | む (mu) | め (me) | も (mo) |
+| や (ya) | — | ゆ (yu) | — | よ (yo) |
+| ら (ra) | り (ri) | る (ru) | れ (re) | ろ (ro) |
+| わ (wa) | — | を (wo) | — | ん (n) |
+
+**মনে রাখার টিপ:** প্রতিদিন একটি row (গো) করে শিখুন। ১০ দিনে সম্পূর্ণ হিরাগানা শেষ!`,
+
+    'furigana': `**ফুরিগানা (ふりがな) কী?**
+
+ফুরিগানা হলো কানজির উপরে বা পাশে ছোট হিরাগানা অক্ষর যা কানজির উচ্চারণ বোঝায়।
+
+**উদাহরণ:**
+\`\`\`
+日(ひ)本(ほん)語(ご) → にほんご (Nihongo)
+私(わたし) → わたし (watashi)
+学生(がくせい) → がくせい (gakusei)
+\`\`\`
+
+**কেন গুরুত্বপূর্ণ?**
+- কানজির উচ্চারণ মনে রাখা সহজ হয়
+- পড়ার সময় দ্রুত বোঝা যায়
+- JLPT-এ ফুরিগানা ছাড়া কানজি আসে না (N5-এ)
+
+**আমাদের ওয়েবসাইটে সব PDF-এ ফুরিগানা সহ কানজি আছে!**`,
+
+    'vocabulary': `**JLPT N5 Daily Vocabulary — দিন ১:**
+
+| জাপানি | ফুরিগানা | বাংলা |
+|--------|----------|-------|
+| 私 | わたし | আমি |
+| あなた | — | তুমি/আপনি |
+| 人 | ひと | মানুষ |
+| 友だち | ともだち | বন্ধু |
+| 家族 | かぞく | পরিবার |
+| 先生 | せんせい | শিক্ষক |
+| 学生 | がくせい | ছাত্র |
+| 日本 | にほん | জাপান |
+| 本 | ほん | বই |
+| 電話 | でんわ | টেলিফোন |
+
+**মনে রাখার টিপ:** প্রতিটি শব্দ দিয়ে একটি বাক্য তৈরি করুন। যেমন:
+*わたしはがくせいです।* (আমি একজন ছাত্র।)`,
+
+    'interview': `**Embassy Interview-এর Top ৫ প্রশ্ন:**
+
+**১. なぜ日本に行きたいですか।**
+(কেন জাপানে যেতে চান?)
+→ *日本の文化と技術を学びたいです।*
+(আমি জাপানের সংস্কৃতি ও প্রযুক্তি শিখতে চাই।)
+
+**২. 日本のどこに行きますか।**
+(জাপানের কোথায় যাবেন?)
+→ *東京の○○学校に行きます।*
+(আমি টোকিওর [স্কুলের নাম] স্কুলে যাব।)
+
+**৩. だれがお金を払いますか।**
+(কে টাকা দেবে?)
+→ *両親がお金を払います।*
+(আমার বাবা-মা টাকা দেবেন।)
+
+**৪. 日本に帰国したら何をしますか।**
+(জাপানে গিয়ে কী করবেন?)
+→ *一生懸命勉強して、日本の会社で働きたいです।*
+(আমি কঠোর পরিশ্রম করে জাপানি কোম্পানিতে কাজ করতে চাই।)
+
+**৫. 日本語をどのくらい勉強しましたか。**
+(কতদিন জাপানি শিখেছেন?)
+→ *6か月間日本語学校で勉強しました।*
+(আমি ৬ মাস জাপানি ভাষা স্কুলে পড়েছি।)`,
+
+    'mock': `**JLPT Mock Test-এ ভালো করার ৫টি টিপস:**
+
+১. **সময় ব্যবস্থাপনা** — প্রতিটি প্রশ্নে বেশি সময় নেবেন না। কঠিন প্রশ্ন skip করে পরে করুন।
+
+২. **কানজি প্র্যাকটিস** — N5-এ 102টি কানজি আসে। প্রতিদিন ১০টি করে revise করুন।
+
+৩. **গ্রামার প্যাটার্ন** — です/ます form, past tense, negative form মাস্টার করুন।
+
+৪. **শ্রবণ অভ্যাস** — NHK World বা জাপানি পডকাস্ট শুনুন। Mock test-এ listening ৩০% নম্বর।
+
+৫. **পূর্ববর্তী বছরের প্রশ্ন** — কমপক্ষে ৫ বছরের পুরনো প্রশ্ন সমাধান করুন।
+
+> 💡 **প্রো টিপ:** আমাদের ওয়েবসাইটের Mock Test দিয়ে নিজেকে যাচাই করুন!`,
+
+    'number': `**জাপানি সংখ্যা ১ থেকে ১০:**
+
+| সংখ্যা | কানজি | হিরাগানা |
+|--------|-------|----------|
+| ১ | 一 | いち (ichi) |
+| ২ | 二 | に (ni) |
+| ৩ | 三 | さん (san) |
+| ৪ | 四 | よん/し (yon/shi) |
+| ৫ | 五 | ご (go) |
+| ৬ | 六 | ろく (roku) |
+| ৭ | 七 | なな/しち (nana/shichi) |
+| ৮ | 八 | はち (hachi) |
+| ৯ | 九 | きゅう/く (kyuu/ku) |
+| ১০ | 十 | じゅう (juu) |
+
+**গণনা (Counters):**
+- ১টি বই → **いっさつ** (issatsu)
+- ২টি বই → **にさつ** (nisatsu)
+- ৩টি বই → **さんさつ** (sansatsu)
+
+**মনে রাখুন:** জাপানিতে প্রতিটি জিনিসের জন্য আলাদা counter আছে!`,
+};
+
+function getDemoResponse(text) {
+    const lower = text.toLowerCase();
+    if (/kanji|কানজি|漢字/.test(text)) return demoResponses['kanji'];
+    if (/grammar|গ্রামার|文法|ব্যাকরণ/.test(text)) return demoResponses['grammar'];
+    if (/hiragana|হিরাগানা|ひらがな/.test(text)) return demoResponses['hiragana'];
+    if (/furigana|ফুরিগানা|ふりがな/.test(text)) return demoResponses['furigana'];
+    if (/vocab|ভোকাব|শব্দ/.test(text)) return demoResponses['vocabulary'];
+    if (/interview|ইন্টারভিউ|visa|ভিসা/.test(text)) return demoResponses['interview'];
+    if (/mock|test|পরীক্ষা|exam/.test(text)) return demoResponses['mock'];
+    if (/number|সংখ্যা|count/.test(text)) return demoResponses['number'];
+    if (/translate|অনুবাদ|বাংলা/.test(text)) {
+        return `**অনুবাদ:**
+
+আপনার বাক্যটি অনুবাদ করছি...
+
+জাপানি ভাষায় অনুবাদ করতে হলে:
+১. প্রথমে Subject (কে/কী)
+২. তারপর Object (কার উপর)
+৩. শেষে Verb (কী করছে)
+
+**উদাহরণ:**
+*আমি বাজারে যাচ্ছি* → わたしはいちばにいきます।
+
+আরও অনুবাদ চাইলে পুরো বাক্যটি দিন!`;
+    }
+    return demoResponses['default'];
+}
+
+function $(sel) { return document.querySelector(sel); }
+function $$(sel) { return document.querySelectorAll(sel); }
+
+function showToast(text, type) {
+    type = type || 'info';
+    const toast = $('#toast');
+    const toastText = $('#toastText');
+    toastText.textContent = text;
+    toast.className = 'toast ' + type + ' show';
+    setTimeout(function() { toast.classList.remove('show'); }, 3000);
+}
+
+function formatTime() {
+    var now = new Date();
+    return now.toLocaleTimeString('bn-BD', { hour: '2-digit', minute: '2-digit' });
+}
+
+function escapeHtml(text) {
+    var div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+}
+
+function simpleMarkdown(text) {
+    var html = escapeHtml(text);
+    html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+    html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+    html = html.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
+    html = html.replace(/^#### (.+)$/gm, '<h4>$1</h4>');
+    html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+    html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
+    html = html.replace(/\n/g, '<br>');
+    html = html.replace(/([一-龯々〆〤ヿ]+)\(([^)]+)\)/g, '<span class="kanji-highlight">$1</span><span class="furigana">($2)</span>');
+    return html;
+}
+
+function createMessageBubble(text, sender, isError) {
+    isError = isError || false;
+    var div = document.createElement('div');
+    div.className = 'message ' + sender;
+    var time = formatTime();
+    var icon = sender === 'bot' ? '<i class="fas fa-robot"></i>' : '<i class="fas fa-user"></i>';
+    var content = sender === 'bot' ? simpleMarkdown(text) : escapeHtml(text);
+    var bubbleClass = isError ? 'msg-bubble error-bubble' : 'msg-bubble';
+
+    div.innerHTML =
+        '<div class="msg-avatar">' + icon + '</div>' +
+        '<div>' +
+            '<div class="' + bubbleClass + '">' + content + '</div>' +
+            '<div class="msg-time">' + time + '</div>' +
+            (sender === 'bot' && !isError ?
+            '<div class="msg-actions">' +
+                '<button class="msg-action-btn" onclick="copyMessage(this)" title="কপি"><i class="fas fa-copy"></i></button>' +
+                '<button class="msg-action-btn" onclick="speakText(this)" title="শুনুন"><i class="fas fa-volume-up"></i></button>' +
+            '</div>' : '') +
+        '</div>';
+    return div;
+}
+
+function createTypingIndicator() {
+    var div = document.createElement('div');
+    div.className = 'message bot';
+    div.id = 'typingIndicator';
+    div.innerHTML =
+        '<div class="msg-avatar"><i class="fas fa-robot"></i></div>' +
+        '<div class="msg-bubble">' +
+            '<div class="typing-indicator">' +
+                '<span></span><span></span><span></span>' +
+            '</div>' +
+        '</div>';
+    return div;
+}
+
+function addMessage(text, sender, isError) {
+    isError = isError || false;
+    var container = $('#messagesContainer');
+    var welcome = $('#welcomeScreen');
+    if (welcome) welcome.style.display = 'none';
+
+    var bubble = createMessageBubble(text, sender, isError);
+    container.appendChild(bubble);
+    scrollToBottom();
+
+    messages.push({ text: text, sender: sender, time: Date.now(), isError: isError });
+    saveMessages();
+}
+
+function showTyping() {
+    var container = $('#messagesContainer');
+    var welcome = $('#welcomeScreen');
+    if (welcome) welcome.style.display = 'none';
+
+    var indicator = createTypingIndicator();
+    container.appendChild(indicator);
+    scrollToBottom();
+    isTyping = true;
+}
+
+function hideTyping() {
+    var indicator = $('#typingIndicator');
+    if (indicator) indicator.remove();
+    isTyping = false;
+}
+
+function scrollToBottom() {
+    var area = $('#chatArea');
+    area.scrollTo({ top: area.scrollHeight, behavior: 'smooth' });
+}
+
+async function callAPI(userMessage) {
+    var endpoint = (settings.apiEndpoint || '').trim();
+    var apiKey = (settings.apiKey || '').trim();
+
+    if (!endpoint || settings.model === 'demo') {
+        await simulateDelay(1500 + Math.random() * 1000);
+        return { ok: true, text: getDemoResponse(userMessage) };
+    }
+
+    try {
+        var controller = new AbortController();
+        var timeout = setTimeout(function() { controller.abort(); }, 30000);
+
+        var response = await fetch(endpoint, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'x-api-key': apiKey,
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                message: userMessage,
+                language: 'bn',
+                context: 'japanese_language_learning',
+                timestamp: new Date().toISOString()
+            }),
+            signal: controller.signal
+        });
+
+        clearTimeout(timeout);
+
+        if (!response.ok) {
+            var errText = await response.text().catch(function() { return 'Unknown error'; });
+            throw new Error('HTTP ' + response.status + ': ' + errText);
+        }
+
+        var data = await response.json();
+        var reply = data.response || data.message || data.body || data.text || data.content || data.result || JSON.stringify(data);
+        return { ok: true, text: reply };
+
+    } catch (error) {
+        console.error('API Error:', error);
+        await simulateDelay(800);
+        return {
+            ok: false,
+            text: '⚠️ **API সংযোগ সমস্যা**\n\n' + error.message + '\n\n---\n\n' + getDemoResponse(userMessage),
+            isError: true
+        };
+    }
+}
+
+function simulateDelay(ms) {
+    return new Promise(function(resolve) { setTimeout(resolve, ms); });
+}
+
+async function sendMessage(text) {
+    if (!text.trim() || isTyping) return;
+
+    var input = $('#messageInput');
+    var sendBtn = $('#sendBtn');
+
+    addMessage(text, 'user');
+    input.value = '';
+    input.style.height = 'auto';
+    sendBtn.disabled = true;
+    sendBtn.innerHTML = '<div class="spinner"></div>';
+
+    showTyping();
+
+    try {
+        var result = await callAPI(text);
+        hideTyping();
+        addMessage(result.text, 'bot', result.isError);
+        updateApiStatus(result.ok);
+    } catch (err) {
+        hideTyping();
+        addMessage('দুঃখিত, একটি অজানা ত্রুটি হয়েছে। আবার চেষ্টা করুন।', 'bot', true);
+        updateApiStatus(false);
+    } finally {
+        sendBtn.disabled = false;
+        sendBtn.innerHTML = '<i class="fas fa-paper-plane"></i>';
+        input.focus();
+    }
+}
+
+function updateApiStatus(online) {
+    var status = $('#apiStatus');
+    if (!status) return;
+    if (online) {
+        status.classList.remove('offline');
+        status.innerHTML = '<span class="dot"></span><span>অনলাইন</span>';
+    } else {
+        status.classList.add('offline');
+        status.innerHTML = '<span class="dot"></span><span>ডেমো মোড</span>';
+    }
+}
+
+function copyMessage(btn) {
+    var bubble = btn.closest('.message').querySelector('.msg-bubble');
+    var text = bubble.innerText;
+    navigator.clipboard.writeText(text).then(function() {
+        showToast('কপি হয়েছে!', 'success');
+    }).catch(function() {
+        showToast('কপি করতে ব্যর্থ', 'error');
+    });
+}
+
+function speakText(btn) {
+    var bubble = btn.closest('.message').querySelector('.msg-bubble');
+    var text = bubble.innerText;
+    if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        var utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'bn-BD';
+        utterance.rate = 0.95;
+        window.speechSynthesis.speak(utterance);
+    } else {
+        showToast('আপনার ব্রাউজারে TTS সাপোর্ট নেই', 'error');
+    }
+}
+
+function initVoiceInput() {
+    if (!('webkitSpeechRecognition' in window) && !('SpeechRecognition' in window)) {
+        $('#voiceBtn').style.display = 'none';
+        return;
+    }
+    var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    recognition = new SpeechRecognition();
+    recognition.lang = 'bn-BD';
+    recognition.continuous = false;
+    recognition.interimResults = false;
+
+    recognition.onstart = function() {
+        $('#voiceBtn').classList.add('recording');
+        showToast('শুনছি... বলুন');
+    };
+    recognition.onend = function() {
+        $('#voiceBtn').classList.remove('recording');
+    };
+    recognition.onresult = function(e) {
+        var transcript = e.results[0][0].transcript;
+        $('#messageInput').value = transcript;
+        autoResizeTextarea();
+    };
+    recognition.onerror = function() {
+        $('#voiceBtn').classList.remove('recording');
+        showToast('ভয়েস শুনতে পাইনি', 'error');
+    };
+}
+
+function toggleVoice() {
+    if (!recognition) return;
+    if ($('#voiceBtn').classList.contains('recording')) {
+        recognition.stop();
+    } else {
+        recognition.start();
+    }
+}
+
+function saveMessages() {
+    try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(messages));
+    } catch (e) { /* ignore */ }
+}
+
+function loadMessages() {
+    try {
+        var stored = localStorage.getItem(STORAGE_KEY);
+        if (stored) {
+            messages = JSON.parse(stored);
+            if (messages.length > 0) {
+                $('#welcomeScreen').style.display = 'none';
+                var container = $('#messagesContainer');
+                messages.forEach(function(msg) {
+                    var bubble = createMessageBubble(msg.text, msg.sender, msg.isError);
+                    container.appendChild(bubble);
+                });
+                setTimeout(scrollToBottom, 100);
+            }
+        }
+    } catch (e) { /* ignore */ }
+}
+
+function clearMessages() {
+    messages = [];
+    saveMessages();
+    $('#messagesContainer').innerHTML = '<div class="welcome-screen" id="welcomeScreen">' +
+        '<div class="welcome-avatar"><i class="fas fa-robot"></i></div>' +
+        '<h1>আপনার ব্যক্তিগত জাপানি টিউটর</h1>' +
+        '<p>AI দিয়ে বাংলায় জাপানি ভাষা শিখুন — ব্যাকরণ, কানজি, ফুরিগানা, অনুবাদ সবকিছু একসাথে। নিচের যেকোনো একটি প্রশ্ন দিয়ে শুরু করুন।</p>' +
+        '<div class="welcome-chips">' +
+            '<button class="welcome-chip" data-prompt="JLPT N5-এর Top 10 কানজি শেখান"><i class="fas fa-star"></i> Top 10 কানজি</button>' +
+            '<button class="welcome-chip" data-prompt="জাপানি ভাষার বেসিক গ্রামার শেখান"><i class="fas fa-book"></i> বেসিক গ্রামার</button>' +
+            '<button class="welcome-chip" data-prompt="হিরাগানা কীভাবে শিখব"><i class="fas fa-font"></i> হিরাগানা শেখা</button>' +
+            '<button class="welcome-chip" data-prompt="JLPT N5 পরীক্ষার ফরম্যাট বুঝিয়ে দিন"><i class="fas fa-clipboard-list"></i> N5 ফরম্যাট</button>' +
+            '<button class="welcome-chip" data-prompt="日本語 থেকে বাংলা অনুবাদ করুন: こんにちは、元気ですか"><i class="fas fa-language"></i> অনুবাদ</button>' +
+            '<button class="welcome-chip" data-prompt="জাপানি সংখ্যা ১ থেকে ১০ শেখান"><i class="fas fa-sort-numeric-up"></i> সংখ্যা শেখা</button>' +
+        '</div>' +
+    '</div>';
+    bindChipEvents();
+    showToast('চ্যাট মুছে ফেলা হয়েছে', 'success');
+}
+
+function saveSettings() {
+    settings.apiEndpoint = $('#apiEndpoint').value;
+    settings.apiKey = $('#apiKeyInput').value;
+    settings.model = $('#modelSelect').value;
+    try {
+        localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+    } catch (e) { /* ignore */ }
+    showToast('সেটিংস সেভ হয়েছে', 'success');
+    $('#settingsModal').classList.remove('show');
+    updateApiStatus(settings.apiEndpoint && settings.model !== 'demo');
+}
+
+function loadSettings() {
+    try {
+        var stored = localStorage.getItem(SETTINGS_KEY);
+        if (stored) {
+            var parsed = JSON.parse(stored);
+            settings = Object.assign({}, settings, parsed);
+        }
+    } catch (e) { /* ignore */ }
+    $('#apiEndpoint').value = settings.apiEndpoint || '';
+    $('#apiKeyInput').value = settings.apiKey || DEFAULT_API_KEY;
+    $('#modelSelect').value = settings.model || 'auto';
+    updateApiStatus(settings.apiEndpoint && settings.model !== 'demo');
+}
+
+function autoResizeTextarea() {
+    var textarea = $('#messageInput');
+    textarea.style.height = 'auto';
+    textarea.style.height = Math.min(textarea.scrollHeight, 120) + 'px';
+}
+
+function bindChipEvents() {
+    $$('.welcome-chip, .input-chip').forEach(function(chip) {
+        chip.addEventListener('click', function() {
+            var prompt = this.getAttribute('data-prompt');
+            if (prompt) sendMessage(prompt);
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    loadSettings();
+    loadMessages();
+    initVoiceInput();
+    bindChipEvents();
+
+    $('#sendBtn').addEventListener('click', function() {
+        sendMessage($('#messageInput').value);
+    });
+
+    $('#messageInput').addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' && !e.shiftKey) {
+            e.preventDefault();
+            sendMessage(this.value);
+        }
+    });
+
+    $('#messageInput').addEventListener('input', autoResizeTextarea);
+
+    $('#voiceBtn').addEventListener('click', toggleVoice);
+
+    $('#clearChatBtn').addEventListener('click', function() {
+        if (confirm('আপনি কি নিশ্চিত যে চ্যাট মুছে ফেলতে চান?')) {
+            clearMessages();
+        }
+    });
+
+    $('#settingsBtn').addEventListener('click', function() {
+        $('#settingsModal').classList.add('show');
+    });
+    $('#closeSettings').addEventListener('click', function() {
+        $('#settingsModal').classList.remove('show');
+    });
+    $('#settingsModal').addEventListener('click', function(e) {
+        if (e.target === this) this.classList.remove('show');
+    });
+    $('#saveSettings').addEventListener('click', saveSettings);
+    $('#clearHistoryBtn').addEventListener('click', function() {
+        if (confirm('সম্পূর্ণ চ্যাট ইতিহাস মুছে ফেলবেন?')) {
+            clearMessages();
+            $('#settingsModal').classList.remove('show');
+        }
+    });
+
+    if (settings.apiEndpoint && settings.model !== 'demo') {
+        fetch(settings.apiEndpoint, {
+            method: 'HEAD',
+            headers: { 'x-api-key': settings.apiKey }
+        }).then(function() {
+            updateApiStatus(true);
+        }).catch(function() {
+            updateApiStatus(false);
+        });
+    }
+});
+</script>
+</body>
+</html>
