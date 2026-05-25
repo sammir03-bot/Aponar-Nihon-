@@ -1,0 +1,778 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Minna no Nihongo I Vocabulary | আপনার নিহোন</title>
+  <meta name="description" content="মিন্না নো নিহোঙ্গো I অনুসারে Lesson 1–25 ভোকাবুলারি মেইন রোডম্যাপ। প্রতিটি সাব-পেজে থাকবে শব্দ, ফুরিগানা, বাংলা অর্থ, উদাহরণ বাক্য, অডিও ও ছোট কুইজ।">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+:root{
+  --ink:#18263b;--muted:#607086;--paper:#fffdf8;--soft:#f5f7fb;--line:rgba(25,54,86,.12);
+  --blue:#244a7c;--blue2:#3f72af;--gold:#e4a34a;--red:#d85c4a;--green:#6f8f7a;
+  --shadow:0 20px 60px rgba(23,49,82,.12);--shadow2:0 10px 30px rgba(23,49,82,.10);
+  --radius:24px;--radius2:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth} 
+body{font-family:'Noto Sans Bengali','Noto Sans JP',Inter,system-ui,sans-serif;background:radial-gradient(circle at 8% 8%,rgba(216,92,74,.10),transparent 24%),radial-gradient(circle at 94% 18%,rgba(63,114,175,.12),transparent 26%),linear-gradient(180deg,#fffdf8 0%,#f5f7fb 52%,#fffdf8 100%);color:var(--ink);line-height:1.75;overflow-x:hidden}
+a{text-decoration:none;color:inherit}.container{width:min(1180px,calc(100% - 32px));margin:auto}
+
+/* Navbar */
+.navbar{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.88);backdrop-filter:blur(18px) saturate(170%);border-bottom:1px solid var(--line);box-shadow:0 8px 24px rgba(23,49,82,.06);transition:all .3s ease}
+.navbar-inner{height:70px;display:flex;align-items:center;justify-content:space-between;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand img{width:48px;height:48px;object-fit:contain;border-radius:14px;box-shadow:0 8px 20px rgba(23,49,82,.10);transition:transform .3s ease}
+.brand:hover img{transform:rotate(-8deg) scale(1.08)}
+.brand-title{font-weight:900;font-size:clamp(19px,4.8vw,27px);line-height:1;color:#173152;white-space:nowrap}
+.brand-sub{font-size:9px;letter-spacing:1.3px;text-transform:uppercase;color:#7a8899;font-weight:800;margin-top:4px}
+.top-links{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.top-link{font-weight:800;color:#244a7c;border:1px solid rgba(36,74,124,.10);background:rgba(255,255,255,.66);padding:10px 14px;border-radius:999px;transition:all .25s cubic-bezier(.34,1.56,.64,1)}
+.top-link:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(23,49,82,.10);background:#fff;color:var(--red)}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;padding:54px 0 46px}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(36,74,124,.96),rgba(63,114,175,.88)),url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='white' fill-opacity='.05'%3E%3Ccircle cx='6' cy='6' r='2'/%3E%3Ccircle cx='46' cy='46' r='2'/%3E%3Cpath d='M20 0h1v80h-1zM0 20h80v1H0z'/%3E%3C/g%3E%3C/svg%3E")}
+.hero .container{position:relative}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);color:#fff7e8;border-radius:999px;padding:8px 14px;font-weight:900;font-size:13px;margin-bottom:16px;animation:fadeInDown .6s ease both}
+.hero h1{font-size:clamp(33px,7vw,72px);line-height:1.06;color:#fff;font-weight:1000;letter-spacing:-1.2px;text-shadow:0 20px 45px rgba(11,31,53,.24);animation:fadeInUp .7s .1s ease both}
+.hero h1 span{color:#ffe2b6}
+.hero p{color:rgba(255,255,255,.88);font-size:clamp(15px,2.2vw,18px);max-width:720px;margin-top:14px;animation:fadeInUp .7s .2s ease both}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px;animation:fadeInUp .7s .3s ease both}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:14px 18px;font-weight:900;border:0;cursor:pointer;transition:all .25s cubic-bezier(.34,1.56,.64,1);position:relative;overflow:hidden}
+.btn-primary{background:linear-gradient(135deg,#d85c4a,#e4a34a);color:#fff;box-shadow:0 18px 38px rgba(216,92,74,.28)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.18)}
+.btn:hover{transform:translateY(-4px) scale(1.02);box-shadow:0 22px 48px rgba(216,92,74,.35)}
+.btn:active{transform:translateY(-1px) scale(.98)}
+.hero-panel{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:28px;padding:22px;box-shadow:0 30px 80px rgba(8,26,44,.22);backdrop-filter:blur(14px);animation:fadeInUp .8s .4s ease both}
+.panel-title{color:#fff;font-weight:1000;font-size:22px;margin-bottom:14px}
+.mini-row{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.mini-card{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:14px;color:#fff;transition:all .3s ease}
+.mini-card:hover{background:rgba(255,255,255,.22);transform:translateY(-3px)}
+.mini-card b{display:block;font-size:24px;line-height:1}
+.mini-card span{display:block;color:rgba(255,255,255,.72);font-size:12px;font-weight:800;margin-top:3px}
+.notice{margin-top:12px;background:rgba(255,226,182,.14);border:1px solid rgba(255,226,182,.22);color:#fff7e8;border-radius:18px;padding:12px 14px;font-size:13px;font-weight:800}
+
+/* Toolbar */
+.toolbar-wrap{padding:24px 0 0}
+.toolbar{background:rgba(255,255,255,.84);border:1px solid var(--line);border-radius:28px;padding:16px;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;box-shadow:var(--shadow2);backdrop-filter:blur(12px);margin-top:-32px;position:relative;z-index:3;transition:all .3s ease}
+.toolbar:focus-within{box-shadow:0 14px 40px rgba(23,49,82,.14);transform:translateY(-2px)}
+.search{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid rgba(36,74,124,.12);border-radius:20px;padding:12px 14px;transition:all .2s ease}
+.search:focus-within{border-color:rgba(36,74,124,.3);box-shadow:0 4px 12px rgba(36,74,124,.08)}
+.search i{color:#d85c4a;transition:transform .3s ease}
+.search:focus-within i{transform:scale(1.15)}
+.search input{border:0;outline:0;width:100%;font:inherit;background:transparent;color:var(--ink);font-weight:700}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{border:1px solid rgba(36,74,124,.14);background:#fff;color:#244a7c;border-radius:999px;padding:10px 13px;font-weight:900;font-size:13px;cursor:pointer;transition:all .2s cubic-bezier(.34,1.56,.64,1)}
+.chip.active,.chip:hover{background:#244a7c;color:#fff;transform:translateY(-2px);box-shadow:0 6px 16px rgba(36,74,124,.18)}
+
+/* Course */
+.course{padding:44px 0 70px}
+.section-head{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:end;margin-bottom:22px}
+.section-label{display:inline-flex;align-items:center;gap:8px;background:rgba(36,74,124,.09);color:#244a7c;font-weight:1000;padding:7px 14px;border-radius:999px;font-size:13px;margin-bottom:12px}
+.section-head h2{font-size:clamp(27px,5vw,44px);line-height:1.12}
+.section-head p{color:var(--muted);max-width:720px;margin-top:10px;font-weight:650}
+.progress-box{background:#fff;border:1px solid var(--line);border-radius:22px;padding:15px 16px;min-width:220px;box-shadow:var(--shadow2);transition:all .3s ease}
+.progress-box:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.progress-box b{display:flex;justify-content:space-between;gap:14px;color:#244a7c}
+.bar{height:8px;background:#eef3f9;border-radius:999px;overflow:hidden;margin-top:10px}
+.bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,#d85c4a,#e4a34a);border-radius:999px;transition:width .8s cubic-bezier(.34,1.56,.64,1)}
+
+/* Lesson Grid */
+.lesson-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.lesson-card{position:relative;display:flex;flex-direction:column;min-height:260px;background:rgba(255,255,255,.92);border:1px solid rgba(36,74,124,.10);border-radius:26px;padding:20px;box-shadow:0 16px 42px rgba(23,49,82,.08);overflow:hidden;transition:all .35s cubic-bezier(.34,1.56,.64,1);opacity:0;transform:translateY(30px)}
+.lesson-card.visible{opacity:1;transform:translateY(0)}
+.lesson-card:before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:linear-gradient(90deg,#244a7c,#d85c4a,#e4a34a);opacity:.85;transition:height .3s ease}
+.lesson-card:hover:before{height:7px}
+.lesson-card:hover{transform:translateY(-8px);box-shadow:0 28px 70px rgba(23,49,82,.16);border-color:rgba(36,74,124,.2)}
+.lesson-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;margin-bottom:14px}
+.lesson-badge{display:inline-flex;align-items:center;gap:7px;border-radius:999px;background:rgba(36,74,124,.08);color:#244a7c;font-weight:1000;padding:7px 11px;font-size:12px;transition:all .2s ease}
+.lesson-card:hover .lesson-badge{background:#244a7c;color:#fff}
+.complete{appearance:none;width:34px;height:34px;border-radius:12px;border:2px solid rgba(36,74,124,.16);background:#fff;cursor:pointer;position:relative;flex-shrink:0;transition:all .2s ease}
+.complete:hover{border-color:var(--green);transform:scale(1.1)}
+.complete:checked{background:linear-gradient(135deg,#6f8f7a,#9db7a8);border-color:transparent;animation:pop .3s ease}
+.complete:checked:after{content:"✓";position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-weight:1000}
+.lesson-card h3{font-size:20px;line-height:1.28;color:#173152;margin-bottom:9px}
+.jp{font-family:'Noto Sans JP',sans-serif;color:#d85c4a;font-weight:900;letter-spacing:.1px}
+.lesson-card p{color:#607086;font-weight:650;font-size:14px}
+.lesson-meta{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}
+.meta{display:inline-flex;gap:6px;align-items:center;background:#f5f7fb;border:1px solid rgba(36,74,124,.08);border-radius:999px;padding:7px 10px;color:#44566c;font-size:12px;font-weight:900;transition:all .2s ease}
+.lesson-card:hover .meta{background:rgba(36,74,124,.08);color:#244a7c}
+.lesson-footer{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px dashed rgba(36,74,124,.16);padding-top:14px}
+.start{display:inline-flex;align-items:center;gap:8px;color:#244a7c;font-weight:1000;transition:all .2s ease}
+.start i{transition:transform .25s ease}
+.lesson-card:hover .start{color:var(--red)}
+.lesson-card:hover .start i{transform:translateX(6px)}
+.tag{font-size:12px;font-weight:1000;color:#fff;background:linear-gradient(135deg,#d85c4a,#e4a34a);padding:6px 10px;border-radius:999px;transition:all .2s ease}
+.lesson-card:hover .tag{transform:scale(1.05);box-shadow:0 6px 16px rgba(216,92,74,.25)}
+
+/* Summary Table */
+.summary-section{padding:0 0 60px}
+.summary-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+.summary-title{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:1000;color:var(--blue);margin-bottom:20px}
+.summary-table{width:100%;border-collapse:separate;border-spacing:0;font-size:14px}
+.summary-table th{background:linear-gradient(135deg,var(--blue),var(--blue2));color:#fff;padding:12px 10px;font-weight:800;text-align:left}
+.summary-table th:first-child{border-radius:14px 0 0 0}
+.summary-table th:last-child{border-radius:0 14px 0 0;text-align:center}
+.summary-table td{padding:10px;border-bottom:1px solid var(--line);font-weight:650;transition:all .2s ease}
+.summary-table tr:hover td{background:rgba(36,74,124,.04)}
+.summary-table td:first-child{font-weight:900;color:var(--blue);width:90px}
+.summary-table td:nth-child(2){color:var(--ink)}
+.summary-table td:nth-child(3){color:var(--muted);font-size:13px}
+.summary-table td:last-child{text-align:center}
+.status-dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#e0e6ef;transition:all .3s ease}
+.status-dot.done{background:linear-gradient(135deg,var(--green),#8bc4a6);box-shadow:0 0 8px rgba(111,143,122,.4);transform:scale(1.3)}
+.summary-table tr:hover .status-dot{transform:scale(1.2)}
+.summary-table tbody tr:last-child td:first-child{border-radius:0 0 0 14px}
+.summary-table tbody tr:last-child td:last-child{border-radius:0 0 14px 0}
+
+/* Guide */
+.guide{padding:0 0 76px}
+.guide-card{background:linear-gradient(135deg,rgba(36,74,124,.96),rgba(63,114,175,.92));border-radius:30px;color:#fff;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:18px;box-shadow:var(--shadow)}
+.guide-card h2{font-size:clamp(24px,4vw,36px);line-height:1.18}
+.guide-card p{color:rgba(255,255,255,.83);margin-top:10px}
+.steps{display:grid;gap:10px}
+.step{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.16);border-radius:18px;padding:14px;font-weight:900;transition:all .2s ease;cursor:pointer}
+.step:hover{background:rgba(255,255,255,.2);transform:translateX(6px)}
+
+/* Footer */
+.footer{padding:34px 0 80px;text-align:center;color:#728096;font-size:14px}
+.hidden{display:none!important}
+
+/* Animations */
+@keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeInDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes pop{0%{transform:scale(.8)}50%{transform:scale(1.2)}100%{transform:scale(1)}}
+
+/* Responsive */
+@media(max-width:960px){.hero-grid,.guide-card{grid-template-columns:1fr}.lesson-grid{grid-template-columns:repeat(2,1fr)}.section-head{grid-template-columns:1fr}.progress-box{min-width:0}.toolbar{grid-template-columns:1fr}}
+@media(max-width:620px){.navbar-inner{height:64px}.brand img{width:42px;height:42px}.top-links{display:none}.hero{padding:40px 0 38px}.lesson-grid{grid-template-columns:1fr}.mini-row{grid-template-columns:1fr 1fr}.toolbar{border-radius:22px}.course{padding-top:32px}.lesson-card{min-height:230px}.hero-actions .btn{width:100%}.summary-table th,.summary-table td{padding:8px;font-size:13px}}
+  </style>
+</head>
+<body data-page="n5-vocabulary">
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a class="brand" href="index.html" aria-label="আপনার নিহোন হোম">
+        <img src="logo.png" alt="আপনার নিহোন">
+        <span><span class="brand-title">আপনার নিহোন</span><span class="brand-sub">Japanese Learning Hub</span></span>
+      </a>
+      <div class="top-links">
+        <a class="top-link" href="index.html#n5"><i class="fa-solid fa-house"></i> Home</a>
+        <a class="top-link" href="n5-vocabulary.html">N5 Vocabulary</a>
+        <a class="top-link" href="n5-grammar.html">N5 Grammar</a>
+        <a class="top-link" href="n4-vocabulary.html">N4 Vocabulary</a>
+        <a class="top-link" href="n4-grammar.html">N4 Grammar</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow"><i class="fa-solid fa-spell-check"></i> JLPT N5 • VOCABULARY • Lessons 1–25</div>
+        <h1>Minna<br>no<br>Nihongo I Vocabulary<br><span>Lessons 1–25</span></h1>
+        <p>মিন্না নো নিহোঙ্গো I অনুসারে Lesson 1–25 ভোকাবুলারি মেইন রোডম্যাপ। প্রতিটি সাব-পেজে থাকবে শব্দ, ফুরিগানা, বাংলা অর্থ, উদাহরণ বাক্য, অডিও ও ছোট কুইজ।</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#lessons"><i class="fa-solid fa-play"></i> Lesson শুরু করুন</a>
+          <a class="btn btn-ghost" href="index.html#n5"><i class="fa-solid fa-arrow-left"></i> Main index</a>
+        </div>
+      </div>
+      <aside class="hero-panel" aria-label="Course summary">
+        <div class="panel-title">কোর্স ম্যাপ</div>
+        <div class="mini-row">
+          <div class="mini-card"><b>25</b><span>Lessons</span></div>
+          <div class="mini-card"><b>I</b><span>Shokyū Book</span></div>
+          <div class="mini-card"><b>N5</b><span>Target Level</span></div>
+          <div class="mini-card"><b>HTML</b><span>Main Page</span></div>
+        </div>
+        <div class="notice"><i class="fa-solid fa-circle-info"></i> সাব-পেজ পরে বানালেও এই main page এখনই index থেকে কাজ করবে।</div>
+      </aside>
+    </div>
+  </header>
+
+  <div class="toolbar-wrap" id="lessons">
+    <div class="container">
+      <div class="toolbar">
+        <label class="search" aria-label="Search lessons">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input id="lessonSearch" type="search" placeholder="Lesson, Japanese pattern, বাংলা keyword দিয়ে খুঁজুন...">
+        </label>
+        <div class="chips" aria-label="Filter lessons">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="todo">Not done</button>
+          <button class="chip" data-filter="done">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="course">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <div class="section-label"><i class="fa-solid fa-torii-gate"></i> Minna no Nihongo অনুসারে</div>
+          <h2>Vocabulary Roadmap</h2>
+          <p>প্রতিটি Lesson card মিন্না নো নিহোঙ্গো ক্রম অনুযায়ী সাজানো। পরে আপনি একই নামের সাব HTML তৈরি করলে এই পেজ থেকে সরাসরি lesson খুলবে।</p>
+        </div>
+        <div class="progress-box">
+          <b><span>Progress</span><span id="progressText">0/25 Complete</span></b>
+          <div class="bar"><span id="progressBar"></span></div>
+        </div>
+      </div>
+      <div class="lesson-grid">
+        <article class="lesson-card" data-text="Lesson 1 People, Names &amp; Nationalities わたし・先生・学生・〜人 পরিচয়, পেশা, দেশ ও মানুষের মৌলিক শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 01</span>
+            <input class="complete" type="checkbox" data-lesson="1" aria-label="Mark lesson 1 complete">
+          </div>
+          <h3>People, Names &amp; Nationalities</h3>
+          <p class="jp">わたし・先生・学生・〜人</p>
+          <p>পরিচয়, পেশা, দেশ ও মানুষের মৌলিক শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-01-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 2 Things &amp; Demonstratives これ・それ・あれ・この ক্লাসরুম ও দৈনন্দিন জিনিস চেনানোর শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 02</span>
+            <input class="complete" type="checkbox" data-lesson="2" aria-label="Mark lesson 2 complete">
+          </div>
+          <h3>Things &amp; Demonstratives</h3>
+          <p class="jp">これ・それ・あれ・この</p>
+          <p>ক্লাসরুম ও দৈনন্দিন জিনিস চেনানোর শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-02-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 3 Places, Floors &amp; Prices ここ・そこ・どこ・いくら স্থান, ভবন, তলা, কাউন্টার ও দাম জিজ্ঞাসা।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 03</span>
+            <input class="complete" type="checkbox" data-lesson="3" aria-label="Mark lesson 3 complete">
+          </div>
+          <h3>Places, Floors &amp; Prices</h3>
+          <p class="jp">ここ・そこ・どこ・いくら</p>
+          <p>স্থান, ভবন, তলা, কাউন্টার ও দাম জিজ্ঞাসা।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-03-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 4 Time, Days &amp; Schedule 今・〜時・〜分・休み সময়, দিন, কাজের সময়সূচি ও ক্রিয়া।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 04</span>
+            <input class="complete" type="checkbox" data-lesson="4" aria-label="Mark lesson 4 complete">
+          </div>
+          <h3>Time, Days &amp; Schedule</h3>
+          <p class="jp">今・〜時・〜分・休み</p>
+          <p>সময়, দিন, কাজের সময়সূচি ও ক্রিয়া।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-04-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 5 Travel &amp; Transportation 行きます・来ます・電車 যাতায়াত, গন্তব্য, যানবাহন ও সঙ্গী।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 05</span>
+            <input class="complete" type="checkbox" data-lesson="5" aria-label="Mark lesson 5 complete">
+          </div>
+          <h3>Travel &amp; Transportation</h3>
+          <p class="jp">行きます・来ます・電車</p>
+          <p>যাতায়াত, গন্তব্য, যানবাহন ও সঙ্গী।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-05-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 6 Daily Actions &amp; Food 食べます・飲みます・見ます খাওয়া, দেখা, পড়া ও দৈনন্দিন কাজের শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 06</span>
+            <input class="complete" type="checkbox" data-lesson="6" aria-label="Mark lesson 6 complete">
+          </div>
+          <h3>Daily Actions &amp; Food</h3>
+          <p class="jp">食べます・飲みます・見ます</p>
+          <p>খাওয়া, দেখা, পড়া ও দৈনন্দিন কাজের শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-06-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 7 Tools, Gifts &amp; Languages 箸・日本語・あげます উপকরণ, ভাষা, উপহার ও যোগাযোগের শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 07</span>
+            <input class="complete" type="checkbox" data-lesson="7" aria-label="Mark lesson 7 complete">
+          </div>
+          <h3>Tools, Gifts &amp; Languages</h3>
+          <p class="jp">箸・日本語・あげます</p>
+          <p>উপকরণ, ভাষা, উপহার ও যোগাযোগের শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-07-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 8 Adjectives &amp; Descriptions 大きい・小さい・静か মানুষ, শহর, খাবার ও জিনিস বর্ণনার শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 08</span>
+            <input class="complete" type="checkbox" data-lesson="8" aria-label="Mark lesson 8 complete">
+          </div>
+          <h3>Adjectives &amp; Descriptions</h3>
+          <p class="jp">大きい・小さい・静か</p>
+          <p>মানুষ, শহর, খাবার ও জিনিস বর্ণনার শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-08-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 9 Likes, Skills &amp; Reasons 好き・上手・わかります পছন্দ, দক্ষতা, বোঝা, কারণ ও অনুভূতি।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 09</span>
+            <input class="complete" type="checkbox" data-lesson="9" aria-label="Mark lesson 9 complete">
+          </div>
+          <h3>Likes, Skills &amp; Reasons</h3>
+          <p class="jp">好き・上手・わかります</p>
+          <p>পছন্দ, দক্ষতা, বোঝা, কারণ ও অনুভূতি।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-09-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 10 Existence &amp; Position あります・います・上・下 কোথায় কী আছে—অবস্থান ও ঘরের শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 10</span>
+            <input class="complete" type="checkbox" data-lesson="10" aria-label="Mark lesson 10 complete">
+          </div>
+          <h3>Existence &amp; Position</h3>
+          <p class="jp">あります・います・上・下</p>
+          <p>কোথায় কী আছে—অবস্থান ও ঘরের শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-10-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 11 Counters &amp; Quantities ひとつ・〜人・〜回 সংখ্যা, কাউন্টার, পরিমাণ ও ঘনত্ব।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 11</span>
+            <input class="complete" type="checkbox" data-lesson="11" aria-label="Mark lesson 11 complete">
+          </div>
+          <h3>Counters &amp; Quantities</h3>
+          <p class="jp">ひとつ・〜人・〜回</p>
+          <p>সংখ্যা, কাউন্টার, পরিমাণ ও ঘনত্ব।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-11-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 12 Past, Seasons &amp; Comparison 昨日・去年・一番 অতীত, ঋতু, আবহাওয়া ও তুলনার শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 12</span>
+            <input class="complete" type="checkbox" data-lesson="12" aria-label="Mark lesson 12 complete">
+          </div>
+          <h3>Past, Seasons &amp; Comparison</h3>
+          <p class="jp">昨日・去年・一番</p>
+          <p>অতীত, ঋতু, আবহাওয়া ও তুলনার শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-12-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 13 Wants &amp; Purpose 欲しい・〜たい・遊びに ইচ্ছা, উদ্দেশ্য, কেনাকাটা ও ঘোরার শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 13</span>
+            <input class="complete" type="checkbox" data-lesson="13" aria-label="Mark lesson 13 complete">
+          </div>
+          <h3>Wants &amp; Purpose</h3>
+          <p class="jp">欲しい・〜たい・遊びに</p>
+          <p>ইচ্ছা, উদ্দেশ্য, কেনাকাটা ও ঘোরার শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-13-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 14 Te-form Action Words 開けて・書いて・待って অনুরোধ, কাজের নির্দেশ ও চলমান কাজ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 14</span>
+            <input class="complete" type="checkbox" data-lesson="14" aria-label="Mark lesson 14 complete">
+          </div>
+          <h3>Te-form Action Words</h3>
+          <p class="jp">開けて・書いて・待って</p>
+          <p>অনুরোধ, কাজের নির্দেশ ও চলমান কাজ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-14-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 15 Rules &amp; Ongoing States 使ってもいい・住んでいます অনুমতি, নিষেধ, পেশা ও বাসস্থানের শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 15</span>
+            <input class="complete" type="checkbox" data-lesson="15" aria-label="Mark lesson 15 complete">
+          </div>
+          <h3>Rules &amp; Ongoing States</h3>
+          <p class="jp">使ってもいい・住んでいます</p>
+          <p>অনুমতি, নিষেধ, পেশা ও বাসস্থানের শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-15-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 16 Sequence &amp; Movement 乗って・降りて・浴びて পরপর কাজ, যাতায়াত ও দৈনন্দিন রুটিন।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 16</span>
+            <input class="complete" type="checkbox" data-lesson="16" aria-label="Mark lesson 16 complete">
+          </div>
+          <h3>Sequence &amp; Movement</h3>
+          <p class="jp">乗って・降りて・浴びて</p>
+          <p>পরপর কাজ, যাতায়াত ও দৈনন্দিন রুটিন।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-16-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 17 Health, Duty &amp; Prohibition 薬・病気・休みます স্বাস্থ্য, নিয়ম, করণীয় ও না-করার শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 17</span>
+            <input class="complete" type="checkbox" data-lesson="17" aria-label="Mark lesson 17 complete">
+          </div>
+          <h3>Health, Duty &amp; Prohibition</h3>
+          <p class="jp">薬・病気・休みます</p>
+          <p>স্বাস্থ্য, নিয়ম, করণীয় ও না-করার শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-17-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 18 Ability &amp; Hobbies できます・趣味・泳ぎます সক্ষমতা, শখ, খেলাধুলা ও শেখার শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 18</span>
+            <input class="complete" type="checkbox" data-lesson="18" aria-label="Mark lesson 18 complete">
+          </div>
+          <h3>Ability &amp; Hobbies</h3>
+          <p class="jp">できます・趣味・泳ぎます</p>
+          <p>সক্ষমতা, শখ, খেলাধুলা ও শেখার শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-18-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 19 Experience &amp; Change 登ったこと・掃除・眠い অভিজ্ঞতা, পরিবর্তন, কাজ ও অনুভূতির শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 19</span>
+            <input class="complete" type="checkbox" data-lesson="19" aria-label="Mark lesson 19 complete">
+          </div>
+          <h3>Experience &amp; Change</h3>
+          <p class="jp">登ったこと・掃除・眠い</p>
+          <p>অভিজ্ঞতা, পরিবর্তন, কাজ ও অনুভূতির শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-19-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 20 Plain Style Conversation いる・いる？・うん বন্ধুত্বপূর্ণ কথোপকথন ও casual শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 20</span>
+            <input class="complete" type="checkbox" data-lesson="20" aria-label="Mark lesson 20 complete">
+          </div>
+          <h3>Plain Style Conversation</h3>
+          <p class="jp">いる・いる？・うん</p>
+          <p>বন্ধুত্বপূর্ণ কথোপকথন ও casual শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-20-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 21 Opinions &amp; News 思います・言います・ニュース মতামত, খবর, বক্তৃতা ও চিন্তার শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 21</span>
+            <input class="complete" type="checkbox" data-lesson="21" aria-label="Mark lesson 21 complete">
+          </div>
+          <h3>Opinions &amp; News</h3>
+          <p class="jp">思います・言います・ニュース</p>
+          <p>মতামত, খবর, বক্তৃতা ও চিন্তার শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-21-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 22 Noun Modification 着ている人・読む本 মানুষ/জিনিস বর্ণনা করা এবং modifier শব্দ।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 22</span>
+            <input class="complete" type="checkbox" data-lesson="22" aria-label="Mark lesson 22 complete">
+          </div>
+          <h3>Noun Modification</h3>
+          <p class="jp">着ている人・読む本</p>
+          <p>মানুষ/জিনিস বর্ণনা করা এবং modifier শব্দ।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-22-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 23 When &amp; Machine Use 押す・回す・故障 সময়, শর্ত, মেশিন ও ব্যবহারবিধি।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 23</span>
+            <input class="complete" type="checkbox" data-lesson="23" aria-label="Mark lesson 23 complete">
+          </div>
+          <h3>When &amp; Machine Use</h3>
+          <p class="jp">押す・回す・故障</p>
+          <p>সময়, শর্ত, মেশিন ও ব্যবহারবিধি।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-23-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 24 Giving Help &amp; Favors くれます・手伝います সাহায্য, উপকার, সম্পর্ক ও কাজ করে দেওয়া।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 24</span>
+            <input class="complete" type="checkbox" data-lesson="24" aria-label="Mark lesson 24 complete">
+          </div>
+          <h3>Giving Help &amp; Favors</h3>
+          <p class="jp">くれます・手伝います</p>
+          <p>সাহায্য, উপকার, সম্পর্ক ও কাজ করে দেওয়া।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-24-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+
+        <article class="lesson-card" data-text="Lesson 25 Conditionals &amp; Review 雨だったら・高くても শর্ত, বিপরীত পরিস্থিতি ও সম্পূর্ণ রিভিশন।">
+          <div class="lesson-top">
+            <span class="lesson-badge"><i class="fa-solid fa-layer-group"></i> Lesson 25</span>
+            <input class="complete" type="checkbox" data-lesson="25" aria-label="Mark lesson 25 complete">
+          </div>
+          <h3>Conditionals &amp; Review</h3>
+          <p class="jp">雨だったら・高くても</p>
+          <p>শর্ত, বিপরীত পরিস্থিতি ও সম্পূর্ণ রিভিশন।</p>
+          <div class="lesson-meta">
+            <span class="meta"><i class="fa-solid fa-book"></i> Minna no Nihongo</span>
+            <span class="meta"><i class="fa-solid fa-language"></i> Vocabulary</span>
+          </div>
+          <div class="lesson-footer">
+            <a class="start" href="n5-vocab-lesson-25-real.html">Start Lesson <i class="fa-solid fa-arrow-right"></i></a>
+            <span class="tag">Sub page</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- Summary Table -->
+  <section class="summary-section">
+    <div class="container">
+      <div class="summary-card">
+        <div class="summary-title"><i class="fa-solid fa-table-list"></i> সারণি — N5 Vocabulary (Lesson 1–25)</div>
+        <div style="overflow-x:auto">
+          <table class="summary-table">
+            <thead>
+              <tr><th>Lesson</th><th>Topic</th><th>Key Pattern</th><th>Status</th></tr>
+            </thead>
+            <tbody id="summaryBody">
+              <tr><td>01</td><td>People, Names &amp; Nationalities</td><td>わたし・先生・学生</td><td><span class="status-dot" data-lesson="1"></span></td></tr>
+              <tr><td>02</td><td>Things &amp; Demonstratives</td><td>これ・それ・あれ</td><td><span class="status-dot" data-lesson="2"></span></td></tr>
+              <tr><td>03</td><td>Places, Floors &amp; Prices</td><td>ここ・そこ・どこ</td><td><span class="status-dot" data-lesson="3"></span></td></tr>
+              <tr><td>04</td><td>Time, Days &amp; Schedule</td><td>今・〜時・〜分</td><td><span class="status-dot" data-lesson="4"></span></td></tr>
+              <tr><td>05</td><td>Travel &amp; Transportation</td><td>行きます・来ます</td><td><span class="status-dot" data-lesson="5"></span></td></tr>
+              <tr><td>06</td><td>Daily Actions &amp; Food</td><td>食べます・飲みます</td><td><span class="status-dot" data-lesson="6"></span></td></tr>
+              <tr><td>07</td><td>Tools, Gifts &amp; Languages</td><td>箸・日本語・あげます</td><td><span class="status-dot" data-lesson="7"></span></td></tr>
+              <tr><td>08</td><td>Adjectives &amp; Descriptions</td><td>大きい・小さい・静か</td><td><span class="status-dot" data-lesson="8"></span></td></tr>
+              <tr><td>09</td><td>Likes, Skills &amp; Reasons</td><td>好き・上手・わかります</td><td><span class="status-dot" data-lesson="9"></span></td></tr>
+              <tr><td>10</td><td>Existence &amp; Position</td><td>あります・います・上</td><td><span class="status-dot" data-lesson="10"></span></td></tr>
+              <tr><td>11</td><td>Counters &amp; Quantities</td><td>ひとつ・〜人・〜回</td><td><span class="status-dot" data-lesson="11"></span></td></tr>
+              <tr><td>12</td><td>Past, Seasons &amp; Comparison</td><td>昨日・去年・一番</td><td><span class="status-dot" data-lesson="12"></span></td></tr>
+              <tr><td>13</td><td>Wants &amp; Purpose</td><td>欲しい・〜たい・遊びに</td><td><span class="status-dot" data-lesson="13"></span></td></tr>
+              <tr><td>14</td><td>Te-form Action Words</td><td>開けて・書いて・待って</td><td><span class="status-dot" data-lesson="14"></span></td></tr>
+              <tr><td>15</td><td>Rules &amp; Ongoing States</td><td>使ってもいい・住んで</td><td><span class="status-dot" data-lesson="15"></span></td></tr>
+              <tr><td>16</td><td>Sequence &amp; Movement</td><td>乗って・降りて・浴びて</td><td><span class="status-dot" data-lesson="16"></span></td></tr>
+              <tr><td>17</td><td>Health, Duty &amp; Prohibition</td><td>薬・病気・休みます</td><td><span class="status-dot" data-lesson="17"></span></td></tr>
+              <tr><td>18</td><td>Ability &amp; Hobbies</td><td>できます・趣味・泳ぎ</td><td><span class="status-dot" data-lesson="18"></span></td></tr>
+              <tr><td>19</td><td>Experience &amp; Change</td><td>登ったこと・掃除・眠い</td><td><span class="status-dot" data-lesson="19"></span></td></tr>
+              <tr><td>20</td><td>Plain Style Conversation</td><td>いる・いる？・うん</td><td><span class="status-dot" data-lesson="20"></span></td></tr>
+              <tr><td>21</td><td>Opinions &amp; News</td><td>思います・言います</td><td><span class="status-dot" data-lesson="21"></span></td></tr>
+              <tr><td>22</td><td>Noun Modification</td><td>着ている人・読む本</td><td><span class="status-dot" data-lesson="22"></span></td></tr>
+              <tr><td>23</td><td>When &amp; Machine Use</td><td>押す・回す・故障</td><td><span class="status-dot" data-lesson="23"></span></td></tr>
+              <tr><td>24</td><td>Giving Help &amp; Favors</td><td>くれます・手伝います</td><td><span class="status-dot" data-lesson="24"></span></td></tr>
+              <tr><td>25</td><td>Conditionals &amp; Review</td><td>雨だったら・高くても</td><td><span class="status-dot" data-lesson="25"></span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">© 2026 আপনার নিহোন • Minna no Nihongo based learning roadmap • Made for Bangla learners</footer>
+  <script>
+(function(){
+  const pageKey = document.body.dataset.page || location.pathname;
+  const search = document.getElementById('lessonSearch');
+  const cards = Array.from(document.querySelectorAll('.lesson-card'));
+  const chips = Array.from(document.querySelectorAll('.chip'));
+  const bar = document.getElementById('progressBar');
+  const progressText = document.getElementById('progressText');
+  let filter = 'all';
+  function updateProgress(){
+    const checks = Array.from(document.querySelectorAll('.complete'));
+    const done = checks.filter(c=>c.checked).length;
+    const pct = checks.length ? Math.round(done/checks.length*100) : 0;
+    if(bar) bar.style.width = pct + '%';
+    if(progressText) progressText.textContent = done + '/' + checks.length + ' Complete';
+    // Update summary table dots
+    document.querySelectorAll('.status-dot').forEach(dot=>{
+      const key = 'aponarnihon:' + pageKey + ':' + dot.dataset.lesson;
+      dot.classList.toggle('done', localStorage.getItem(key)==='1');
+    });
+  }
+  document.querySelectorAll('.complete').forEach(chk=>{
+    const key = 'aponarnihon:' + pageKey + ':' + chk.dataset.lesson;
+    chk.checked = localStorage.getItem(key)==='1';
+    chk.addEventListener('change',()=>{localStorage.setItem(key, chk.checked?'1':'0'); apply(); updateProgress();});
+  });
+  function apply(){
+    const q = (search?.value || '').trim().toLowerCase();
+    cards.forEach(card=>{
+      const text = card.innerText.toLowerCase();
+      const checked = card.querySelector('.complete')?.checked;
+      const matchesQ = !q || text.includes(q);
+      const matchesF = filter==='all' || (filter==='done' && checked) || (filter==='todo' && !checked);
+      card.classList.toggle('hidden', !(matchesQ && matchesF));
+    });
+  }
+  search?.addEventListener('input', apply);
+  chips.forEach(ch=>ch.addEventListener('click',()=>{chips.forEach(c=>c.classList.remove('active')); ch.classList.add('active'); filter=ch.dataset.filter; apply();}));
+  
+  // Intersection Observer for card animations
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach((e,i)=>{
+      if(e.isIntersecting){
+        setTimeout(()=>e.target.classList.add('visible'), i*60);
+      }
+    });
+  },{threshold:.1});
+  cards.forEach(c=>io.observe(c));
+  
+  updateProgress(); apply();
+})();
+</script>
+</body>
+</html>
