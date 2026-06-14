@@ -1,0 +1,2635 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N5 Kanji Master Dark — 漢字マスター | আপনার নিহোন</title>
+<meta name="description" content="N5 Kanji 120: Flip cards, writing practice with ghost trace, quiz, progress tracker. Dark immersive learning experience.">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700;800;900&family=Noto+Sans+JP:wght@400;700;900&family=Yusei+Magic&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #000000;
+  --bg-elevated: #0A0A0A;
+  --bg-elevated-2: #111111;
+  --ink: #E7E7E7;
+  --ink-secondary: #A0A0A0;
+  --ink-muted: #666666;
+  --accent-primary: #E91E8C;
+  --accent-secondary: #FF5722;
+  --accent-tertiary: #6823B8;
+  --accent-cyan: #7BB9B9;
+  --accent-sage: #A9C6A9;
+  --border: rgba(255,255,255,0.06);
+  --border-hover: rgba(255,255,255,0.12);
+  --radius: 24px;
+  --radius-pill: 9999px;
+  --max-width: 1200px;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Space Grotesk','Plus Jakarta Sans','Noto Sans Bengali',system-ui,sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  background:radial-gradient(ellipse 80% 60% at 50% -10%, rgba(104,35,184,0.12), transparent);
+  pointer-events:none;
+  z-index:0;
+}
+
+/* ===== NAVIGATION ===== */
+.nav{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:linear-gradient(180deg,#0A0A0A,rgba(10,10,10,0.92));
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+  transition:box-shadow 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.nav.scrolled{box-shadow:0 4px 30px rgba(0,0,0,0.5)}
+.navin{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:0 24px;
+  height:72px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+}
+.brand{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--ink);text-decoration:none}
+.logo{
+  width:48px;height:48px;border-radius:16px;
+  background:linear-gradient(135deg,var(--accent-primary),var(--accent-secondary));
+  color:#fff;display:grid;place-items:center;
+  font:900 24px 'Noto Sans JP';
+  flex-shrink:0;
+}
+.brand-text{line-height:1.2}
+.brand small{display:block;color:var(--ink-muted);font-size:11px;font-weight:400}
+.links{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.links a{
+  border-radius:var(--radius-pill);
+  padding:10px 20px;
+  font-size:13px;font-weight:600;
+  border:1px solid var(--border);
+  color:var(--ink-secondary);
+  text-decoration:none;
+  transition:all 0.3s ease;
+}
+.links a:hover{border-color:rgba(233,30,140,0.4);color:var(--accent-primary)}
+.links a.active{background:rgba(233,30,140,0.12);border-color:rgba(233,30,140,0.3);color:var(--accent-primary)}
+.links a.disabled{opacity:0.4;pointer-events:none}
+
+/* ===== HERO ===== */
+.hero{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:#000;
+}
+#hero-canvas{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#000;
+}
+.hero-readability{
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse 60% 50% at 50% 50%, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.25) 70%, transparent 100%);
+  z-index:1;
+  pointer-events:none;
+}
+.hero-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  max-width:900px;
+  padding:0 24px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  border:1px solid rgba(233,30,140,0.4);
+  background:rgba(233,30,140,0.1);
+  color:var(--accent-primary);
+  border-radius:var(--radius-pill);
+  padding:10px 22px;
+  font-weight:600;
+  font-size:13px;
+  letter-spacing:0.04em;
+}
+.hero h1{
+  font-size:clamp(3.5rem, 8vw, 7rem);
+  font-weight:700;
+  color:var(--ink);
+  letter-spacing:-0.02em;
+  line-height:0.9;
+  margin-top:32px;
+}
+.hero h1 .jp{font-family:'Noto Sans JP',sans-serif}
+.hero .subtitle{
+  font-size:clamp(1rem, 2.5vw, 1.35rem);
+  color:var(--ink-secondary);
+  font-weight:400;
+  line-height:1.7;
+  max-width:640px;
+  margin-top:28px;
+  font-family:'Noto Sans Bengali','Space Grotesk',sans-serif;
+}
+.hero-actions{
+  display:flex;
+  gap:16px;
+  justify-content:center;
+  margin-top:48px;
+  flex-wrap:wrap;
+}
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  border-radius:var(--radius-pill);
+  padding:14px 32px;
+  font-weight:700;
+  font-size:1rem;
+  border:none;
+  cursor:pointer;
+  text-decoration:none;
+  transition:all 0.35s cubic-bezier(0.34,1.56,0.64,1);
+  position:relative;
+  overflow:hidden;
+  font-family:inherit;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--accent-primary),var(--accent-secondary));
+  color:#fff;
+  box-shadow:0 8px 32px rgba(233,30,140,0.35);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(233,30,140,0.5)}
+.btn-secondary{
+  background:transparent;
+  color:var(--accent-cyan);
+  border:1px solid rgba(123,185,185,0.4);
+}
+.btn-secondary:hover{background:rgba(123,185,185,0.1);border-color:rgba(123,185,185,0.6)}
+.btn-ghost{
+  background:transparent;
+  color:var(--ink-secondary);
+  border:1px solid var(--border);
+  font-size:13px;
+  padding:10px 20px;
+}
+.btn-ghost:hover{border-color:rgba(233,30,140,0.3);color:var(--ink)}
+.btn-sm{padding:8px 18px;font-size:13px}
+
+/* ===== SCROLL INDICATOR ===== */
+.scroll-indicator{
+  position:absolute;
+  bottom:40px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:2;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:8px;
+  animation:float 2.5s ease-in-out infinite;
+}
+.scroll-indicator .dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--accent-primary);opacity:0.6;
+}
+.scroll-indicator span{font-size:12px;color:var(--ink-muted)}
+@keyframes float{
+  0%,100%{transform:translateX(-50%) translateY(0)}
+  50%{transform:translateX(-50%) translateY(8px)}
+}
+
+/* ===== PROGRESS BAR ===== */
+.progress-bar{
+  position:sticky;
+  top:72px;
+  z-index:90;
+  background:var(--bg-elevated);
+  border-bottom:1px solid var(--border);
+  padding:16px 24px;
+}
+.progress-in{
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+.progress-text{
+  font-size:13px;
+  color:var(--ink-secondary);
+  font-weight:500;
+  display:flex;
+  justify-content:space-between;
+}
+.progress-text .pct{color:var(--accent-primary);font-weight:700}
+.progress-track{
+  height:4px;
+  background:#1A1A1A;
+  border-radius:var(--radius-pill);
+  overflow:hidden;
+  margin-top:10px;
+}
+.progress-fill{
+  height:100%;
+  background:linear-gradient(90deg,var(--accent-primary),var(--accent-secondary));
+  border-radius:var(--radius-pill);
+  transition:width 0.6s cubic-bezier(0.16,1,0.3,1);
+  width:0%;
+}
+
+/* ===== CONTROLS ===== */
+.controls{
+  position:sticky;
+  top:calc(72px + 58px);
+  z-index:85;
+  background:rgba(0,0,0,0.88);
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);
+  padding:16px 24px;
+}
+.controls-in{
+  max-width:var(--max-width);
+  margin:0 auto;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+.search-wrap{position:relative;width:100%;max-width:600px}
+.search-icon{
+  position:absolute;
+  left:18px;
+  top:50%;
+  transform:translateY(-50%);
+  color:var(--ink-muted);
+  font-size:16px;
+}
+#search{
+  width:100%;
+  height:48px;
+  border-radius:16px;
+  border:1px solid rgba(255,255,255,0.08);
+  background:var(--bg-elevated-2);
+  padding:0 20px 0 48px;
+  font-size:14px;
+  color:var(--ink);
+  font-family:inherit;
+  outline:none;
+  transition:all 0.3s ease;
+}
+#search::placeholder{color:#444}
+#search:focus{
+  border-color:rgba(233,30,140,0.5);
+  box-shadow:0 0 0 3px rgba(233,30,140,0.1);
+}
+.pills-row{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.pill{
+  border-radius:var(--radius-pill);
+  padding:7px 16px;
+  font-size:12px;
+  font-weight:600;
+  border:1px solid rgba(255,255,255,0.08);
+  background:transparent;
+  color:var(--ink-secondary);
+  cursor:pointer;
+  transition:all 0.25s ease;
+  font-family:inherit;
+  white-space:nowrap;
+}
+.pill:hover{border-color:rgba(233,30,140,0.3);color:var(--ink)}
+.pill.active{
+  background:rgba(233,30,140,0.15);
+  border-color:rgba(233,30,140,0.4);
+  color:var(--accent-primary);
+}
+.tools-row{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.view-btn{
+  border-radius:12px;
+  padding:9px 16px;
+  font-weight:600;
+  font-size:13px;
+  border:1px solid rgba(255,255,255,0.08);
+  background:transparent;
+  color:var(--ink-secondary);
+  cursor:pointer;
+  transition:all 0.25s ease;
+  font-family:inherit;
+}
+.view-btn:hover{border-color:rgba(233,30,140,0.3);color:var(--ink)}
+.view-btn.active{
+  background:rgba(233,30,140,0.15);
+  color:var(--accent-primary);
+  border-color:rgba(233,30,140,0.3);
+}
+
+/* ===== MAIN CONTENT ===== */
+.main{
+  position:relative;
+  z-index:2;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:40px 24px 80px;
+}
+
+/* ===== GRID VIEW ===== */
+.grid-view{
+  display:grid;
+  grid-template-columns:repeat(8,1fr);
+  gap:16px;
+}
+@media(max-width:1024px){.grid-view{grid-template-columns:repeat(6,1fr)}}
+@media(max-width:768px){.grid-view{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:480px){.grid-view{grid-template-columns:repeat(3,1fr);gap:10px}}
+
+.kanji-card{
+  background:var(--bg-elevated);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:20px 16px;
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+  transition:all 0.4s cubic-bezier(0.16,1,0.3,1);
+  opacity:0;
+  transform:translateY(30px);
+}
+.kanji-card.visible{
+  opacity:1;
+  transform:translateY(0);
+}
+.kanji-card:hover{
+  transform:translateY(-6px);
+  border-color:rgba(233,30,140,0.25);
+  box-shadow:0 24px 60px rgba(0,0,0,0.5),0 0 30px rgba(233,30,140,0.08);
+}
+.kanji-card.learned{border-color:rgba(169,198,169,0.25)}
+.kanji-card .card-num{
+  position:absolute;
+  top:10px;left:14px;
+  font-size:10px;font-weight:600;
+  color:var(--ink-muted);
+}
+.kanji-card .learned-badge{
+  position:absolute;
+  top:10px;right:10px;
+  width:24px;height:24px;
+  border-radius:50%;
+  background:rgba(169,198,169,0.15);
+  color:var(--accent-sage);
+  display:grid;place-items:center;
+  font-size:12px;
+}
+.kanji-card .k{
+  font-family:'Noto Sans JP',sans-serif;
+  font-size:clamp(2.2rem,4vw,3rem);
+  font-weight:900;
+  color:var(--ink);
+  text-align:center;
+  margin-top:8px;
+  line-height:1.2;
+}
+.kanji-card .meaning{
+  font-family:'Noto Sans Bengali','Space Grotesk',sans-serif;
+  font-size:12px;
+  color:var(--ink-secondary);
+  text-align:center;
+  margin-top:6px;
+  line-height:1.5;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.card-expanded{
+  max-height:0;
+  overflow:hidden;
+  transition:max-height 0.5s cubic-bezier(0.16,1,0.3,1);
+}
+.card-expanded.open{max-height:400px}
+.card-expanded-inner{
+  padding-top:14px;
+  border-top:1px solid var(--border);
+  margin-top:14px;
+}
+.reading{
+  font-size:11px;
+  color:var(--accent-cyan);
+  line-height:1.7;
+}
+.reading b{font-weight:600;color:var(--ink-secondary)}
+.card-examples{
+  font-size:11px;
+  color:var(--accent-sage);
+  margin-top:10px;
+  line-height:1.8;
+}
+.card-examples .ex-line{
+  margin-bottom:4px;
+  padding-left:14px;
+  position:relative;
+}
+.card-examples .ex-line::before{
+  content:attr(data-num);
+  position:absolute;
+  left:0;
+  font-weight:700;
+  color:var(--accent-tertiary);
+  font-size:10px;
+}
+.card-actions-row{
+  display:flex;
+  gap:8px;
+  margin-top:12px;
+  flex-wrap:wrap;
+}
+.card-actions-row button{
+  font-size:11px;
+  padding:6px 14px;
+  border-radius:var(--radius-pill);
+  border:1px solid rgba(123,185,185,0.3);
+  background:transparent;
+  color:var(--accent-cyan);
+  cursor:pointer;
+  transition:all 0.2s ease;
+  font-family:inherit;
+  font-weight:600;
+}
+.card-actions-row button:hover{background:rgba(123,185,185,0.12)}
+.card-actions-row .btn-learn{
+  border-color:rgba(169,198,169,0.3);
+  color:var(--accent-sage);
+}
+.card-actions-row .btn-learn:hover{background:rgba(169,198,169,0.12)}
+.card-actions-row .btn-learn.active{
+  background:rgba(169,198,169,0.2);
+  border-color:rgba(169,198,169,0.5);
+}
+
+/* ===== FLIP CARDS VIEW ===== */
+.flip-view{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:24px;
+}
+.flip-card{
+  height:300px;
+  perspective:1200px;
+  cursor:pointer;
+}
+.flip-card-inner{
+  width:100%;height:100%;
+  position:relative;
+  transition:transform 0.7s cubic-bezier(0.34,1.56,0.64,1);
+  transform-style:preserve-3d;
+}
+.flip-card.flipped .flip-card-inner{transform:rotateY(180deg)}
+.flip-face{
+  position:absolute;
+  inset:0;
+  backface-visibility:hidden;
+  border-radius:var(--radius);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:32px;
+  border:1px solid var(--border);
+}
+.flip-front{
+  background:linear-gradient(145deg,var(--bg-elevated),var(--bg-elevated-2));
+}
+.flip-front .k{
+  font-family:'Noto Sans JP',sans-serif;
+  font-size:clamp(4rem,10vw,6rem);
+  font-weight:900;
+  color:var(--ink);
+}
+.flip-front .hint{
+  font-size:13px;
+  color:var(--ink-muted);
+  margin-top:16px;
+}
+.flip-back{
+  background:linear-gradient(145deg,var(--bg-elevated-2),var(--bg-elevated));
+  transform:rotateY(180deg);
+  border-color:rgba(233,30,140,0.2);
+  text-align:center;
+}
+.flip-back .meaning{
+  font-size:18px;
+  color:var(--ink);
+  font-weight:600;
+  font-family:'Noto Sans Bengali','Space Grotesk',sans-serif;
+}
+.flip-back .reading{
+  font-size:13px;
+  color:var(--accent-cyan);
+  margin-top:10px;
+}
+.flip-back .ex{
+  font-size:12px;
+  color:var(--accent-sage);
+  margin-top:12px;
+  line-height:1.7;
+}
+.flip-back .hint-back{
+  font-size:11px;
+  color:var(--ink-muted);
+  margin-top:auto;
+}
+
+/* ===== WRITING PRACTICE ===== */
+.writing-view{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  min-height:70vh;
+  padding:40px 0;
+}
+.writing-info{text-align:center;margin-bottom:32px}
+.writing-info .k{
+  font-family:'Noto Sans JP',sans-serif;
+  font-size:clamp(5rem,12vw,9rem);
+  font-weight:900;
+  color:var(--ink);
+  line-height:1;
+}
+.writing-info .meaning{
+  font-size:18px;
+  color:var(--ink-secondary);
+  margin-top:12px;
+  font-family:'Noto Sans Bengali',sans-serif;
+}
+.writing-info .ex{
+  font-size:15px;
+  color:var(--accent-sage);
+  margin-top:16px;
+  max-width:600px;
+  line-height:2;
+}
+.canvas-wrap{
+  width:min(480px,90vw);
+  aspect-ratio:1;
+  background:var(--bg-elevated);
+  border:2px dashed rgba(123,185,185,0.25);
+  border-radius:32px;
+  position:relative;
+  overflow:hidden;
+  transition:all 0.3s ease;
+}
+.canvas-wrap:hover{
+  border-color:rgba(123,185,185,0.5);
+  box-shadow:0 0 40px rgba(123,185,185,0.08);
+}
+#writeCanvas{
+  width:100%;height:100%;
+  cursor:crosshair;
+  display:block;
+}
+.canvas-ghost{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  opacity:0;
+  transition:opacity 0.4s ease;
+}
+.canvas-ghost.show{opacity:1}
+#ghostCanvas{
+  width:100%;height:100%;
+  display:block;
+}
+.canvas-template{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  pointer-events:none;
+  font-family:'Noto Sans JP',sans-serif;
+  font-size:clamp(8rem,18vw,14rem);
+  font-weight:700;
+  color:var(--ink);
+  opacity:0.06;
+}
+.writing-controls{
+  display:flex;
+  gap:12px;
+  margin-top:24px;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+/* ===== STUDY MODE OVERLAY ===== */
+.study-overlay{
+  position:fixed;
+  inset:0;
+  z-index:200;
+  background:var(--bg);
+  display:none;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  transform:scale(0.95);
+  transition:all 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.study-overlay.active{
+  display:flex;
+  opacity:1;
+  transform:scale(1);
+}
+.study-overlay .close-btn{
+  position:absolute;
+  top:32px;
+  right:32px;
+  width:48px;height:48px;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,0.1);
+  background:var(--bg-elevated);
+  color:var(--ink);
+  font-size:20px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  display:grid;
+  place-items:center;
+  z-index:10;
+}
+.study-overlay .close-btn:hover{
+  border-color:rgba(233,30,140,0.4);
+  color:var(--accent-primary);
+}
+.study-content{
+  text-align:center;
+  padding:0 24px;
+}
+.study-content .k{
+  font-family:'Noto Sans JP',sans-serif;
+  font-size:clamp(8rem,20vw,14rem);
+  font-weight:900;
+  color:var(--ink);
+  line-height:1;
+}
+.study-content .meaning{
+  font-size:clamp(1.5rem,4vw,2.5rem);
+  color:var(--ink-secondary);
+  margin-top:16px;
+  font-family:'Noto Sans Bengali',sans-serif;
+}
+.study-content .reading{
+  font-size:18px;
+  color:var(--accent-cyan);
+  margin-top:12px;
+}
+.study-content .ex{
+  font-size:18px;
+  color:var(--accent-sage);
+  margin-top:24px;
+  max-width:700px;
+  line-height:2;
+  margin-left:auto;
+  margin-right:auto;
+}
+.study-nav{
+  display:flex;
+  gap:16px;
+  margin-top:48px;
+  justify-content:center;
+}
+
+/* ===== QUIZ OVERLAY ===== */
+.quiz-overlay{
+  position:fixed;
+  inset:0;
+  z-index:200;
+  background:var(--bg);
+  display:none;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  opacity:0;
+  transform:scale(0.95);
+  transition:all 0.4s cubic-bezier(0.16,1,0.3,1);
+}
+.quiz-overlay.active{
+  display:flex;
+  opacity:1;
+  transform:scale(1);
+}
+.quiz-overlay .close-btn{
+  position:absolute;
+  top:32px;
+  right:32px;
+  width:48px;height:48px;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,0.1);
+  background:var(--bg-elevated);
+  color:var(--ink);
+  font-size:20px;
+  cursor:pointer;
+  transition:all 0.3s ease;
+  display:grid;
+  place-items:center;
+  z-index:10;
+}
+.quiz-overlay .close-btn:hover{
+  border-color:rgba(233,30,140,0.4);
+  color:var(--accent-primary);
+}
+.quiz-content{
+  text-align:center;
+  padding:0 24px;
+  max-width:600px;
+  width:100%;
+}
+.quiz-label{
+  font-size:16px;
+  color:var(--ink-secondary);
+}
+.quiz-kanji{
+  font-family:'Noto Sans JP',sans-serif;
+  font-size:clamp(5rem,12vw,9rem);
+  font-weight:900;
+  color:var(--ink);
+  margin-top:16px;
+  line-height:1;
+}
+.quiz-reading-hint{
+  font-size:15px;
+  color:var(--accent-cyan);
+  margin-top:10px;
+}
+.quiz-options{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin-top:48px;
+}
+@media(max-width:480px){.quiz-options{grid-template-columns:1fr}}
+.quiz-option{
+  background:var(--bg-elevated);
+  border:1px solid rgba(255,255,255,0.08);
+  border-radius:20px;
+  padding:20px 24px;
+  font-size:16px;
+  color:var(--ink);
+  text-align:left;
+  cursor:pointer;
+  transition:all 0.25s ease;
+  font-family:'Noto Sans Bengali','Space Grotesk',sans-serif;
+  font-weight:500;
+}
+.quiz-option:hover{
+  border-color:rgba(233,30,140,0.3);
+  background:var(--bg-elevated-2);
+}
+.quiz-option.correct{
+  border-color:var(--accent-sage);
+  background:rgba(169,198,169,0.1);
+  color:var(--accent-sage);
+}
+.quiz-option.wrong{
+  border-color:var(--accent-secondary);
+  background:rgba(255,87,34,0.1);
+  color:var(--accent-secondary);
+}
+.quiz-option.disabled{pointer-events:none}
+.quiz-score-row{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  margin-top:32px;
+}
+.quiz-score{
+  color:var(--accent-primary);
+  font-weight:700;
+  font-size:18px;
+}
+
+/* ===== STUDY TOOLS SECTION ===== */
+.study-tools{
+  position:relative;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  padding:80px 24px;
+}
+#gooey-canvas{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:#000;
+}
+.study-tools-readability{
+  position:absolute;
+  inset:0;
+  background:radial-gradient(ellipse 50% 50% at 50% 50%,rgba(0,0,0,0.75) 0%,rgba(0,0,0,0.35) 60%,transparent 100%);
+  z-index:1;
+  pointer-events:none;
+}
+.study-tools-content{
+  position:relative;
+  z-index:2;
+  max-width:960px;
+  width:100%;
+  text-align:center;
+}
+.study-tools-content h2{
+  font-size:clamp(2rem,5vw,3.5rem);
+  font-weight:700;
+  color:var(--ink);
+}
+.study-tools-content p{
+  font-size:17px;
+  color:var(--ink-secondary);
+  max-width:560px;
+  margin:20px auto 0;
+}
+.tool-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+  margin-top:48px;
+}
+@media(max-width:768px){.tool-cards{grid-template-columns:1fr}}
+.tool-card{
+  background:rgba(10,10,10,0.88);
+  backdrop-filter:blur(20px);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:32px;
+  text-align:left;
+  transition:all 0.35s cubic-bezier(0.16,1,0.3,1);
+}
+.tool-card:hover{
+  transform:translateY(-4px);
+  border-color:rgba(233,30,140,0.25);
+}
+.tool-icon{
+  width:56px;height:56px;
+  border-radius:16px;
+  display:grid;place-items:center;
+  font-size:24px;
+  margin-bottom:20px;
+}
+.tool-card:nth-child(1) .tool-icon{background:linear-gradient(135deg,var(--accent-primary),var(--accent-secondary))}
+.tool-card:nth-child(2) .tool-icon{background:linear-gradient(135deg,var(--accent-cyan),var(--accent-sage))}
+.tool-card:nth-child(3) .tool-icon{background:linear-gradient(135deg,var(--accent-tertiary),var(--accent-primary))}
+.tool-card h3{
+  font-size:18px;
+  font-weight:600;
+  color:var(--ink);
+}
+.tool-card p{
+  font-size:14px;
+  color:var(--ink-secondary);
+  margin-top:8px;
+  line-height:1.6;
+}
+
+/* ===== FOOTER / CTA ===== */
+.footer-section{
+  position:relative;
+  min-height:60vh;
+  min-height:max(60vh,500px);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  background:#000;
+  padding:80px 24px;
+}
+#spotlight-canvas{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+.footer-readability{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to bottom,rgba(0,0,0,0.5) 0%,transparent 30%,transparent 70%,rgba(0,0,0,0.5) 100%);
+  z-index:1;
+  pointer-events:none;
+}
+.footer-readability-bottom{
+  position:absolute;
+  bottom:0;left:0;right:0;
+  height:40%;
+  background:linear-gradient(to top,#000 0%,transparent 100%);
+  z-index:1;
+  pointer-events:none;
+}
+.footer-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+}
+.footer-content h2{
+  font-size:clamp(2rem,5vw,3rem);
+  font-weight:700;
+  color:var(--ink);
+}
+.footer-content p{
+  font-size:16px;
+  color:var(--ink-secondary);
+  margin-top:12px;
+}
+.footer-content .progress-text-footer{
+  color:var(--accent-primary);
+  font-weight:600;
+  margin-top:16px;
+}
+.footer-bar{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:32px 24px;
+  border-top:1px solid var(--border);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:12px;
+  font-size:13px;
+  color:var(--ink-muted);
+  position:relative;
+  z-index:2;
+}
+.footer-bar a{
+  color:var(--accent-primary);
+  text-decoration:none;
+  transition:all 0.2s ease;
+}
+.footer-bar a:hover{text-decoration:underline}
+
+/* ===== TOAST ===== */
+.toast{
+  position:fixed;
+  bottom:32px;
+  left:50%;
+  transform:translateX(-50%) translateY(20px);
+  background:var(--bg-elevated);
+  border:1px solid rgba(255,255,255,0.08);
+  color:var(--ink);
+  padding:14px 28px;
+  border-radius:16px;
+  font-size:14px;
+  font-weight:500;
+  z-index:300;
+  opacity:0;
+  transition:all 0.35s cubic-bezier(0.16,1,0.3,1);
+  pointer-events:none;
+  white-space:nowrap;
+}
+.toast.show{
+  opacity:1;
+  transform:translateX(-50%) translateY(0);
+}
+.toast.success{border-color:rgba(169,198,169,0.4);color:var(--accent-sage)}
+.toast.error{border-color:rgba(255,87,34,0.4);color:var(--accent-secondary)}
+
+/* ===== CONFETTI CANVAS ===== */
+#confetti-canvas{
+  position:fixed;
+  inset:0;
+  z-index:250;
+  pointer-events:none;
+}
+
+/* ===== RIPPLE ===== */
+.ripple{
+  position:absolute;
+  border-radius:50%;
+  background:rgba(233,30,140,0.3);
+  transform:scale(0);
+  animation:rippleAnim 0.6s ease-out;
+  pointer-events:none;
+}
+@keyframes rippleAnim{
+  to{transform:scale(4);opacity:0}
+}
+
+/* ===== RUBY ===== */
+ruby{font-family:'Noto Sans JP',sans-serif}
+rt{font-size:0.55em;color:var(--ink-muted);font-family:'Noto Sans JP',sans-serif}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp{
+  from{opacity:0;transform:translateY(30px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* ===== HIDE ===== */
+.hidden{display:none!important}
+
+
+/* ===== MOBILE OPTIONS MENU ===== */
+.mobile-menu-btn{
+  display:none;
+  align-items:center;
+  justify-content:center;
+  gap:6px;
+  min-height:38px;
+  padding:8px 14px;
+  border-radius:9999px;
+  border:1px solid rgba(233,30,140,0.35);
+  background:rgba(233,30,140,0.12);
+  color:var(--accent-primary);
+  font-family:inherit;
+  font-size:13px;
+  font-weight:700;
+  cursor:pointer;
+}
+.mobile-menu-btn:active{transform:scale(0.98)}
+
+
+/* ===== MOBILE COMFORT FIXES ===== */
+@media (max-width: 600px){
+  :root{--radius:18px}
+  body{line-height:1.6}
+
+  .navin{
+    height:58px;
+    padding:0 12px;
+    gap:8px;
+  }
+  .logo{
+    width:38px;
+    height:38px;
+    border-radius:12px;
+    font-size:20px;
+  }
+  .brand-text{font-size:14px}
+  .brand small{font-size:10px}
+  .links{display:none}
+  .mobile-menu-btn{display:inline-flex}
+  .controls.mobile-collapsed{display:none}
+  .controls.mobile-open{display:block}
+
+  .hero{
+    min-height:62vh;
+    padding:48px 0 32px;
+  }
+  .hero-readability,
+  .study-tools-readability,
+  .footer-readability{
+    background:radial-gradient(ellipse 80% 55% at 50% 35%, rgba(104,35,184,0.18), transparent 70%);
+  }
+  .hero-content{padding:0 16px}
+  .badge{
+    padding:8px 14px;
+    font-size:11px;
+    line-height:1.35;
+    text-align:center;
+    max-width:100%;
+  }
+  .hero h1{
+    font-size:clamp(2.5rem,15vw,4rem);
+    margin-top:22px;
+    line-height:0.95;
+  }
+  .hero .subtitle{
+    font-size:15px;
+    margin-top:18px;
+    line-height:1.65;
+  }
+  .hero-actions{
+    width:100%;
+    margin-top:28px;
+    gap:10px;
+  }
+  .hero-actions .btn{
+    width:100%;
+    max-width:330px;
+    padding:12px 20px;
+  }
+  .scroll-indicator{display:none}
+
+  .progress-bar{
+    top:58px;
+    padding:10px 12px;
+  }
+  .progress-text{font-size:12px}
+  .progress-track{margin-top:8px}
+
+  .controls{
+    top:calc(58px + 45px);
+    padding:10px 12px;
+    max-height:48vh;
+    overflow-y:auto;
+  }
+  .controls-in{gap:10px}
+  .search-wrap{max-width:100%}
+  #search{
+    height:44px;
+    border-radius:14px;
+    font-size:13px;
+  }
+  .pills-row{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    padding-bottom:4px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .pills-row::-webkit-scrollbar{display:none}
+  .pill{
+    flex:0 0 auto;
+    padding:7px 14px;
+  }
+  .tools-row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:8px;
+  }
+  .tools-row .btn,
+  .tools-row .view-btn{
+    width:100%;
+    padding:9px 10px;
+    font-size:12px;
+  }
+
+  .main{
+    padding:24px 12px 60px;
+  }
+  .grid-view{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:12px;
+  }
+  .kanji-card{
+    border-radius:18px;
+    padding:18px 12px;
+  }
+  .kanji-card .card-num{top:8px;left:10px}
+  .kanji-card .learned-badge{top:8px;right:8px}
+  .kanji-card .k{
+    font-size:2.6rem;
+    margin-top:12px;
+  }
+  .kanji-card .meaning{
+    font-size:13px;
+    -webkit-line-clamp:3;
+  }
+  .card-expanded.open{max-height:520px}
+  .reading,
+  .card-examples{font-size:12px}
+
+  .flip-view{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  .flip-card{height:260px}
+
+  .writing-view{
+    min-height:55vh;
+    padding:20px 0;
+  }
+  .writing-info{margin-bottom:22px}
+  .writing-info .k{font-size:clamp(4rem,22vw,6rem)}
+  .writing-info .meaning{font-size:16px}
+  .writing-info .ex{font-size:14px;line-height:1.7}
+  .canvas-wrap{
+    width:min(340px,92vw);
+    border-radius:24px;
+  }
+  .writing-controls .btn{
+    padding:11px 18px;
+  }
+
+  .study-tools,
+  .footer-section{
+    min-height:auto;
+    padding:56px 16px;
+  }
+  .study-tools-content h2,
+  .footer-content h2{
+    font-size:clamp(1.9rem,9vw,2.6rem);
+  }
+  .study-tools-content p,
+  .footer-content p{
+    font-size:15px;
+  }
+  .tool-cards{
+    gap:16px;
+    margin-top:30px;
+  }
+  .tool-card{padding:22px}
+
+  .study-overlay .close-btn,
+  .quiz-overlay .close-btn{
+    top:16px;
+    right:16px;
+    width:42px;
+    height:42px;
+  }
+  .study-content .k{font-size:clamp(5rem,30vw,8rem)}
+  .study-content .meaning{font-size:1.35rem}
+  .study-content .reading{font-size:15px}
+  .study-content .ex{
+    font-size:15px;
+    line-height:1.8;
+    margin-top:18px;
+  }
+  .study-nav{
+    margin-top:30px;
+    flex-direction:column;
+    align-items:center;
+  }
+  .study-nav .btn{width:min(260px,90vw)}
+
+  .quiz-content{padding:0 16px}
+  .quiz-kanji{font-size:clamp(4rem,24vw,6rem)}
+  .quiz-options{
+    gap:10px;
+    margin-top:28px;
+  }
+  .quiz-option{
+    padding:16px;
+    font-size:15px;
+  }
+  .quiz-score-row{
+    gap:12px;
+    margin-top:24px;
+    flex-wrap:wrap;
+  }
+
+  .footer-bar{
+    padding:24px 16px;
+    flex-direction:column;
+    text-align:center;
+  }
+  .toast{
+    max-width:calc(100vw - 24px);
+    white-space:normal;
+    text-align:center;
+    bottom:20px;
+  }
+}
+
+@media (max-width: 360px){
+  .grid-view{grid-template-columns:1fr}
+  .tools-row{grid-template-columns:1fr}
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{
+    animation-duration:0.01ms!important;
+    animation-iteration-count:1!important;
+    transition-duration:0.01ms!important;
+    scroll-behavior:auto!important;
+  }
+}
+
+/* Keep N4-style animations visible on mobile, but reduce intensity for comfort */
+@media (max-width: 600px){
+  #hero-canvas,#gooey-canvas,#spotlight-canvas{display:block}
+  .hero{min-height:70vh}
+}
+
+</style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="nav" id="navbar">
+  <div class="navin">
+    <a class="brand" href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">
+      <div class="logo">漢</div>
+      <div class="brand-text">আপনার নিহোন<small>N5 Kanji Master</small></div>
+    </a>
+    <div class="links">
+      <a href="#" class="disabled">Home</a>
+      <a href="#" class="active">N5 Kanji</a>
+      <a href="#" class="disabled">N4 Kanji</a>
+      <a href="#" class="disabled">Grammar</a>
+    </div>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-expanded="false" aria-controls="controlsPanel" onclick="toggleMobileControls()">☰ অপশন</button>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-readability"></div>
+  <div class="hero-content">
+    <div class="badge">JLPT N5 &bull; 120 Core Kanji &bull; 音読み・訓読み + Writing + Quiz</div>
+    <h1>N5 Kanji<br><span class="jp">漢字マスター</span></h1>
+    <p class="subtitle">১২০টি Kanji ফ্লিপ কার্ড, লেখার প্র্যাকটিস, কুইজ ও প্রোগ্রেস ট্র্যাকার — একসাথে।</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#main" onclick="document.getElementById('main').scrollIntoView({behavior:'smooth'});return false">শেখা শুরু করুন &darr;</a>
+      <a class="btn btn-secondary" href="#" onclick="switchView('writing');document.getElementById('main').scrollIntoView({behavior:'smooth'});return false">&#9997; লেখার প্র্যাকটিস</a>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="dot"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ===== PROGRESS BAR ===== -->
+<div class="progress-bar">
+  <div class="progress-in">
+    <div class="progress-text">
+      <span id="progLabel">Progress: 0 / 120 kanji</span>
+      <span class="pct" id="progPct">0%</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="progFill"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CONTROLS ===== -->
+<div class="controls mobile-collapsed" id="controlsPanel">
+  <div class="controls-in">
+    <div class="search-wrap">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" id="search" placeholder="Search Kanji, 音読み, 訓読み, Bangla meaning, examples..." autocomplete="off">
+    </div>
+    <div class="pills-row" id="pillsRow">
+      <button class="pill active" data-cat="all">সব</button>
+      <button class="pill" data-cat="Ch 1 সংখ্যা ও সময়">Ch 1 সংখ্যা ও সময়</button>
+      <button class="pill" data-cat="Ch 2 মানুষ ও পরিবার">Ch 2 মানুষ ও পরিবার</button>
+      <button class="pill" data-cat="Ch 3 প্রকৃতি ও উপাদান">Ch 3 প্রকৃতি ও উপাদান</button>
+      <button class="pill" data-cat="Ch 4 দিক ও স্থান">Ch 4 দিক ও স্থান</button>
+      <button class="pill" data-cat="Ch 5 স্কুল ও শিক্ষা">Ch 5 স্কুল ও শিক্ষা</button>
+      <button class="pill" data-cat="Ch 6 দৈনন্দিন কাজ">Ch 6 দৈনন্দিন কাজ</button>
+      <button class="pill" data-cat="Ch 7 শরীর ও স্বাস্থ্য">Ch 7 শরীর ও স্বাস্থ্য</button>
+      <button class="pill" data-cat="Ch 8 খাবার ও রান্না">Ch 8 খাবার ও রান্না</button>
+      <button class="pill" data-cat="Ch 9 সময় ও ক্যালেন্ডার">Ch 9 সময় ও ক্যালেন্ডার</button>
+      <button class="pill" data-cat="Ch 10 যাতায়াত ও ভ্রমণ">Ch 10 যাতায়াত ও ভ্রমণ</button>
+      <button class="pill" data-cat="Ch 11 কাজ ও অর্থ">Ch 11 কাজ ও অর্থ</button>
+      <button class="pill" data-cat="Ch 12 বিশেষণ ও বর্ণনা">Ch 12 বিশেষণ ও বর্ণনা</button>
+    </div>
+    <div class="tools-row">
+      <button class="view-btn active" data-view="grid">&#128203; Full Kanji</button>
+      <button class="view-btn" data-view="flip">&#127183; Flip Cards</button>
+      <button class="view-btn" data-view="writing">&#9997; Writing</button>
+      <button class="btn btn-ghost btn-sm" onclick="randomKanji()">&#128256; Random</button>
+      <button class="btn btn-ghost btn-sm" onclick="resetProgress()" style="color:#FF5722;border-color:rgba(255,87,34,0.2)">&#10060; Reset</button>
+      <button class="btn btn-ghost btn-sm" id="audioBtn" onclick="toggleAudio()">&#127925; Audio</button>
+      <button class="btn btn-primary btn-sm" onclick="openStudy()">&#128214; Study Mode</button>
+      <button class="btn btn-sm" onclick="openQuiz()" style="background:linear-gradient(135deg,#6823B8,#E91E8C);color:#fff;border:none">&#127919; Quiz Mode</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="main" id="main">
+  <div class="grid-view" id="gridView"></div>
+  <div class="flip-view hidden" id="flipView"></div>
+  <div class="writing-view hidden" id="writingView"></div>
+</main>
+
+<!-- ===== STUDY TOOLS SECTION ===== -->
+<section class="study-tools" id="studyTools">
+  <canvas id="gooey-canvas"></canvas>
+  <div class="study-tools-readability"></div>
+  <div class="study-tools-content">
+    <h2>Master Kanji Through Practice</h2>
+    <p>Write, flip, and quiz your way to memorizing all 120 N5 Kanji.</p>
+    <div class="tool-cards">
+      <div class="tool-card">
+        <div class="tool-icon">&#127183;</div>
+        <h3>Flip Cards</h3>
+        <p>Tap to reveal meaning, 音読み・訓読み &amp; examples. Perfect for quick memorization.</p>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">&#9997;</div>
+        <h3>Writing Practice</h3>
+        <p>Draw with your finger or stylus. Ghost trace guide helps you learn stroke order.</p>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">&#127919;</div>
+        <h3>Quiz Mode</h3>
+        <p>Test yourself with randomized multiple choice questions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER / CTA ===== -->
+<section class="footer-section" id="footerSection">
+  <div id="spotlight-container" style="position:absolute;inset:0;z-index:0"></div>
+  <div class="footer-readability"></div>
+  <div class="footer-readability-bottom"></div>
+  <div class="footer-content">
+    <h2>Keep Learning</h2>
+    <p>You are doing great! Continue practicing to master all 120 Kanji.</p>
+    <div class="progress-text-footer" id="footerProgress">0 / 120 completed</div>
+  </div>
+</section>
+
+<div class="footer-bar">
+  <span>&copy; 2025 আপনার নিহোন</span>
+  <span>Made with &#128150; for learners</span>
+  <a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">Back to top &uarr;</a>
+</div>
+
+<!-- ===== STUDY OVERLAY ===== -->
+<div class="study-overlay" id="studyOverlay">
+  <button class="close-btn" onclick="closeStudy()">&times;</button>
+  <div class="study-content">
+    <div class="k" id="studyK"></div>
+    <div class="meaning" id="studyM"></div>
+    <div class="reading" id="studyR"></div>
+    <div class="ex" id="studyE"></div>
+    <div class="study-nav">
+      <button class="btn btn-ghost" onclick="studyPrev()">&larr; Previous</button>
+      <button class="btn btn-primary" onclick="studyNext()">Next &rarr;</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== QUIZ OVERLAY ===== -->
+<div class="quiz-overlay" id="quizOverlay">
+  <button class="close-btn" onclick="closeQuiz()">&times;</button>
+  <div class="quiz-content">
+    <div class="quiz-label">What is the meaning of:</div>
+    <div class="quiz-kanji" id="quizK"></div>
+    <div class="quiz-reading-hint" id="quizHint"></div>
+    <div class="quiz-options" id="quizOptions"></div>
+    <div class="quiz-score-row">
+      <span class="quiz-score" id="quizScore">Score: 0</span>
+      <button class="btn btn-primary btn-sm" onclick="nextQuiz()">Next &rarr;</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== TOAST ===== -->
+<div class="toast" id="toast"></div>
+
+<!-- ===== CONFETTI CANVAS ===== -->
+<canvas id="confetti-canvas"></canvas>
+
+<script>
+// ===== KANJI DATA =====
+const DATA = [{"no":1,"kanji":"一","on":"イチ・イツ","kun":"ひと・ひとつ","bn":"এক","cat":"Ch 1 সংখ্যা ও সময়","examples":"一月= জানুয়ারি","six_examples":[{"type":"word","html":"<ruby>一月<rt>いちがつ</rt></ruby> = জানুয়ারি","plain":"一月 いちがつ ichigatsu জানুয়ারি"},{"type":"word","html":"<ruby>一人<rt>ひとり</rt></ruby> = একা","plain":"一人 ひとり hitori একা"},{"type":"word","html":"<ruby>一日<rt>いちにち</rt></ruby> = একদিন","plain":"一日 いちにち ichinichi একদিন"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「一」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 一 を 書きます"},{"type":"sentence","html":"「一」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"一 は N5 の 漢字 です"},{"type":"sentence","html":"「一」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"一 の 読み方 を 覚えます"}]},{"no":2,"kanji":"二","on":"ニ・ジ","kun":"ふた・ふたつ","bn":"দুই","cat":"Ch 1 সংখ্যা ও সময়","examples":"二月= ফেব্রুয়ারি","six_examples":[{"type":"word","html":"<ruby>二月<rt>にがつ</rt></ruby> = ফেব্রুয়ারি","plain":"二月 にがつ nigatsu ফেব্রুয়ারি"},{"type":"word","html":"<ruby>二人<rt>ふたり</rt></ruby> = দুজন","plain":"二人 ふたり futari দুজন"},{"type":"word","html":"<ruby>二回<rt>にかい</rt></ruby> = দুইবার","plain":"二回 にかい nikai দুইবার"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「二」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 二 を 書きます"},{"type":"sentence","html":"「二」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"二 は N5 の 漢字 です"},{"type":"sentence","html":"「二」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"二 の 読み方 を 覚えます"}]},{"no":3,"kanji":"三","on":"サン","kun":"み・みつ・みっつ","bn":"তিন","cat":"Ch 1 সংখ্যা ও সময়","examples":"三月= মার্চ","six_examples":[{"type":"word","html":"<ruby>三月<rt>さんがつ</rt></ruby> = মার্চ","plain":"三月 さんがつ sangatsu মার্চ"},{"type":"word","html":"<ruby>三つ<rt>みっつ</rt></ruby> = তিনটি","plain":"三つ みっつ mittsu তিনটি"},{"type":"word","html":"<ruby>三時<rt>さんじ</rt></ruby> = তিনটা বাজে","plain":"三時 さんじ sanji তিনটা বাজে"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「三」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 三 を 書きます"},{"type":"sentence","html":"「三」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"三 は N5 の 漢字 です"},{"type":"sentence","html":"「三」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"三 の 読み方 を 覚えます"}]},{"no":4,"kanji":"四","on":"シ","kun":"よ・よつ・よっつ・よん","bn":"চার","cat":"Ch 1 সংখ্যা ও সময়","examples":"四月= এপ্রিল","six_examples":[{"type":"word","html":"<ruby>四月<rt>しがつ</rt></ruby> = এপ্রিল","plain":"四月 しがつ shigatsu এপ্রিল"},{"type":"word","html":"<ruby>四つ<rt>よっつ</rt></ruby> = চারটি","plain":"四つ よっつ yottsu চারটি"},{"type":"word","html":"<ruby>四時<rt>よじ</rt></ruby> = চারটা বাজে","plain":"四時 よじ yoji চারটা বাজে"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「四」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 四 を 書きます"},{"type":"sentence","html":"「四」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"四 は N5 の 漢字 です"},{"type":"sentence","html":"「四」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"四 の 読み方 を 覚えます"}]},{"no":5,"kanji":"五","on":"ゴ","kun":"いつ・いつつ","bn":"পাঁচ","cat":"Ch 1 সংখ্যা ও সময়","examples":"五月= মে","six_examples":[{"type":"word","html":"<ruby>五月<rt>ごがつ</rt></ruby> = মে","plain":"五月 ごがつ gogatsu মে"},{"type":"word","html":"<ruby>五つ<rt>いつつ</rt></ruby> = পাঁচটি","plain":"五つ いつつ itsutsu পাঁচটি"},{"type":"word","html":"<ruby>五人<rt>ごにん</rt></ruby> = পাঁচজন","plain":"五人 ごにん gonin পাঁচজন"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「五」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 五 を 書きます"},{"type":"sentence","html":"「五」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"五 は N5 の 漢字 です"},{"type":"sentence","html":"「五」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"五 の 読み方 を 覚えます"}]},{"no":6,"kanji":"六","on":"ロク","kun":"む・むつ・むっつ・むい","bn":"ছয়","cat":"Ch 1 সংখ্যা ও সময়","examples":"六月= জুন","six_examples":[{"type":"word","html":"<ruby>六月<rt>ろくがつ</rt></ruby> = জুন","plain":"六月 ろくがつ rokugatsu জুন"},{"type":"word","html":"<ruby>六つ<rt>むっつ</rt></ruby> = ছয়টি","plain":"六つ むっつ muttsu ছয়টি"},{"type":"word","html":"<ruby>六時<rt>ろくじ</rt></ruby> = ছয়টা বাজে","plain":"六時 ろくじ rokuji ছয়টা বাজে"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「六」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 六 を 書きます"},{"type":"sentence","html":"「六」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"六 は N5 の 漢字 です"},{"type":"sentence","html":"「六」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"六 の 読み方 を 覚えます"}]},{"no":7,"kanji":"七","on":"シチ","kun":"なな・ななつ・なの","bn":"সাত","cat":"Ch 1 সংখ্যা ও সময়","examples":"七月= জুলাই","six_examples":[{"type":"word","html":"<ruby>七月<rt>しちがつ</rt></ruby> = জুলাই","plain":"七月 しちがつ shichigatsu জুলাই"},{"type":"word","html":"<ruby>七つ<rt>ななつ</rt></ruby> = সাতটি","plain":"七つ ななつ nanatsu সাতটি"},{"type":"word","html":"<ruby>七時<rt>しちじ</rt></ruby> = সাতটা বাজে","plain":"七時 しちじ shichiji সাতটা বাজে"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「七」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 七 を 書きます"},{"type":"sentence","html":"「七」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"七 は N5 の 漢字 です"},{"type":"sentence","html":"「七」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"七 の 読み方 を 覚えます"}]},{"no":8,"kanji":"八","on":"ハチ","kun":"や・やつ・やっつ・よう","bn":"আট","cat":"Ch 1 সংখ্যা ও সময়","examples":"八月= আগস্ট","six_examples":[{"type":"word","html":"<ruby>八月<rt>はちがつ</rt></ruby> = আগস্ট","plain":"八月 はちがつ hachigatsu আগস্ট"},{"type":"word","html":"<ruby>八つ<rt>やっつ</rt></ruby> = আটটি","plain":"八つ やっつ yattsu আটটি"},{"type":"word","html":"<ruby>八時<rt>はちじ</rt></ruby> = আটটা বাজে","plain":"八時 はちじ hachiji আটটা বাজে"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「八」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 八 を 書きます"},{"type":"sentence","html":"「八」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"八 は N5 の 漢字 です"},{"type":"sentence","html":"「八」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"八 の 読み方 を 覚えます"}]},{"no":9,"kanji":"九","on":"キュウ・ク","kun":"ここの・ここのつ","bn":"নয়","cat":"Ch 1 সংখ্যা ও সময়","examples":"九月= সেপ্টেম্বর","six_examples":[{"type":"word","html":"<ruby>九月<rt>くがつ</rt></ruby> = সেপ্টেম্বর","plain":"九月 くがつ kugatsu সেপ্টেম্বর"},{"type":"word","html":"<ruby>九つ<rt>ここのつ</rt></ruby> = নয়টি","plain":"九つ ここのつ kokonotsu নয়টি"},{"type":"word","html":"<ruby>九時<rt>くじ</rt></ruby> = নয়টা বাজে","plain":"九時 くじ kuji নয়টা বাজে"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「九」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 九 を 書きます"},{"type":"sentence","html":"「九」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"九 は N5 の 漢字 です"},{"type":"sentence","html":"「九」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"九 の 読み方 を 覚えます"}]},{"no":10,"kanji":"十","on":"ジュウ・ジッ・ジュッ","kun":"とお・と","bn":"দশ","cat":"Ch 1 সংখ্যা ও সময়","examples":"十月= অক্টোবর","six_examples":[{"type":"word","html":"<ruby>十月<rt>じゅうがつ</rt></ruby> = অক্টোবর","plain":"十月 じゅうがつ juugatsu অক্টোবর"},{"type":"word","html":"<ruby>十人<rt>じゅうにん</rt></ruby> = দশজন","plain":"十人 じゅうにん juunin দশজন"},{"type":"word","html":"<ruby>十分<rt>じゅっぷん</rt></ruby> = দশ মিনিট","plain":"十分 じゅっぷん juppun দশ মিনিট"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「十」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 十 を 書きます"},{"type":"sentence","html":"「十」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"十 は N5 の 漢字 です"},{"type":"sentence","html":"「十」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"十 の 読み方 を 覚えます"}]},{"no":11,"kanji":"人","on":"ジン・ニン","kun":"ひと","bn":"মানুষ","cat":"Ch 2 মানুষ ও পরিবার","examples":"日本人= জাপানি","six_examples":[{"type":"word","html":"<ruby>日本人<rt>にほんじん</rt></ruby> = জাপানি","plain":"日本人 にほんじん nihonjin জাপানি"},{"type":"word","html":"<ruby>一人<rt>ひとり</rt></ruby> = একা","plain":"一人 ひとり hitori একা"},{"type":"word","html":"<ruby>人口<rt>じんこう</rt></ruby> = জনসংখ্যা","plain":"人口 じんこう jinkou জনসংখ্যা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「人」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 人 を 書きます"},{"type":"sentence","html":"「人」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"人 は N5 の 漢字 です"},{"type":"sentence","html":"「人」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"人 の 読み方 を 覚えます"}]},{"no":12,"kanji":"子","on":"シ・ス","kun":"こ","bn":"বাচ্চা","cat":"Ch 2 মানুষ ও পরিবার","examples":"子供= বাচ্চা","six_examples":[{"type":"word","html":"<ruby>子供<rt>こども</rt></ruby> = বাচ্চা","plain":"子供 こども kodomo বাচ্চা"},{"type":"word","html":"<ruby>女子<rt>じょし</rt></ruby> = মেয়ে","plain":"女子 じょし joshi মেয়ে"},{"type":"word","html":"<ruby>男子<rt>だんし</rt></ruby> = ছেলে","plain":"男子 だんし danshi ছেলে"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「子」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 子 を 書きます"},{"type":"sentence","html":"「子」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"子 は N5 の 漢字 です"},{"type":"sentence","html":"「子」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"子 の 読み方 を 覚えます"}]},{"no":13,"kanji":"女","on":"ジョ・ニョ・ニョウ","kun":"おんな・め","bn":"মহিলা","cat":"Ch 2 মানুষ ও পরিবার","examples":"女の人= মহিলা","six_examples":[{"type":"word","html":"<ruby>女の人<rt>おんなのひと</rt></ruby> = মহিলা","plain":"女の人 おんなのひと onnanohito মহিলা"},{"type":"word","html":"<ruby>女性<rt>じょせい</rt></ruby> = নারী","plain":"女性 じょせい josei নারী"},{"type":"word","html":"<ruby>女の子<rt>おんなのこ</rt></ruby> = মেয়ে বাচ্চা","plain":"女の子 おんなのこ onnanoko মেয়ে বাচ্চা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「女」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 女 を 書きます"},{"type":"sentence","html":"「女」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"女 は N5 の 漢字 です"},{"type":"sentence","html":"「女」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"女 の 読み方 を 覚えます"}]},{"no":14,"kanji":"男","on":"ダン・ナン","kun":"おとこ","bn":"পুরুষ","cat":"Ch 2 মানুষ ও পরিবার","examples":"男の人= পুরুষ","six_examples":[{"type":"word","html":"<ruby>男の人<rt>おとこのひと</rt></ruby> = পুরুষ","plain":"男の人 おとこのひと otokonohito পুরুষ"},{"type":"word","html":"<ruby>男性<rt>だんせい</rt></ruby> = পুরুষ","plain":"男性 だんせい dansei পুরুষ"},{"type":"word","html":"<ruby>男の子<rt>おとこのこ</rt></ruby> = ছেলে বাচ্চা","plain":"男の子 おとこのこ otokonoko ছেলে বাচ্চা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「男」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 男 を 書きます"},{"type":"sentence","html":"「男」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"男 は N5 の 漢字 です"},{"type":"sentence","html":"「男」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"男 の 読み方 を 覚えます"}]},{"no":15,"kanji":"父","on":"フ","kun":"ちち","bn":"বাবা","cat":"Ch 2 মানুষ ও পরিবার","examples":"父親= বাবা","six_examples":[{"type":"word","html":"<ruby>父親<rt>ちちおや</rt></ruby> = বাবা","plain":"父親 ちちおや chichioya বাবা"},{"type":"word","html":"<ruby>お父さん<rt>おとうさん</rt></ruby> = বাবা (সম্মানসূচক)","plain":"お父さん おとうさん otousan বাবা (সম্মানসূচক)"},{"type":"word","html":"<ruby>父母<rt>ふぼ</rt></ruby> = বাবা-মা","plain":"父母 ふぼ fubo বাবা-মা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「父」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 父 を 書きます"},{"type":"sentence","html":"「父」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"父 は N5 の 漢字 です"},{"type":"sentence","html":"「父」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"父 の 読み方 を 覚えます"}]},{"no":16,"kanji":"母","on":"ボ","kun":"はは","bn":"মা","cat":"Ch 2 মানুষ ও পরিবার","examples":"母親= মা","six_examples":[{"type":"word","html":"<ruby>母親<rt>ははおや</rt></ruby> = মা","plain":"母親 ははおや hahaoya মা"},{"type":"word","html":"<ruby>お母さん<rt>おかあさん</rt></ruby> = মা (সম্মানসূচক)","plain":"お母さん おかあさん okaasan মা (সম্মানসূচক)"},{"type":"word","html":"<ruby>母国<rt>ぼこく</rt></ruby> = মাতৃভূমি","plain":"母国 ぼこく bokoku মাতৃভূমি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「母」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 母 を 書きます"},{"type":"sentence","html":"「母」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"母 は N5 の 漢字 です"},{"type":"sentence","html":"「母」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"母 の 読み方 を 覚えます"}]},{"no":17,"kanji":"友","on":"ユウ","kun":"とも","bn":"বন্ধু","cat":"Ch 2 মানুষ ও পরিবার","examples":"友達= বন্ধু","six_examples":[{"type":"word","html":"<ruby>友達<rt>ともだち</rt></ruby> = বন্ধু","plain":"友達 ともだち tomodachi বন্ধু"},{"type":"word","html":"<ruby>友人<rt>ゆうじん</rt></ruby> = বন্ধু (ফর্মাল)","plain":"友人 ゆうじん yuujin বন্ধু (ফর্মাল)"},{"type":"word","html":"<ruby>親友<rt>しんゆう</rt></ruby> = ঘনিষ্ঠ বন্ধু","plain":"親友 しんゆう shinyuu ঘনিষ্ঠ বন্ধু"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「友」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 友 を 書きます"},{"type":"sentence","html":"「友」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"友 は N5 の 漢字 です"},{"type":"sentence","html":"「友」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"友 の 読み方 を 覚えます"}]},{"no":18,"kanji":"名","on":"メイ・ミョウ","kun":"な","bn":"নাম","cat":"Ch 2 মানুষ ও পরিবার","examples":"名前= নাম","six_examples":[{"type":"word","html":"<ruby>名前<rt>なまえ</rt></ruby> = নাম","plain":"名前 なまえ namae নাম"},{"type":"word","html":"<ruby>有名<rt>ゆうめい</rt></ruby> = বিখ্যাত","plain":"有名 ゆうめい yuumei বিখ্যাত"},{"type":"word","html":"<ruby>名刺<rt>めいし</rt></ruby> = ভিজিটিং কার্ড","plain":"名刺 めいし meishi ভিজিটিং কার্ড"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「名」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 名 を 書きます"},{"type":"sentence","html":"「名」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"名 は N5 の 漢字 です"},{"type":"sentence","html":"「名」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"名 の 読み方 を 覚えます"}]},{"no":19,"kanji":"先","on":"セン","kun":"さき","bn":"আগে","cat":"Ch 2 মানুষ ও পরিবার","examples":"先生= শিক্ষক","six_examples":[{"type":"word","html":"<ruby>先生<rt>せんせい</rt></ruby> = শিক্ষক","plain":"先生 せんせい sensei শিক্ষক"},{"type":"word","html":"<ruby>先月<rt>せんげつ</rt></ruby> = গত মাস","plain":"先月 せんげつ sengetsu গত মাস"},{"type":"word","html":"<ruby>先週<rt>せんしゅう</rt></ruby> = গত সপ্তাহ","plain":"先週 せんしゅう senshuu গত সপ্তাহ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「先」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 先 を 書きます"},{"type":"sentence","html":"「先」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"先 は N5 の 漢字 です"},{"type":"sentence","html":"「先」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"先 の 読み方 を 覚えます"}]},{"no":20,"kanji":"生","on":"セイ・ショウ","kun":"いきる・うまれる・なま","bn":"জীবন/জন্ম","cat":"Ch 2 মানুষ ও পরিবার","examples":"学生= ছাত্র","six_examples":[{"type":"word","html":"<ruby>学生<rt>がくせい</rt></ruby> = ছাত্র","plain":"学生 がくせい gakusei ছাত্র"},{"type":"word","html":"<ruby>人生<rt>じんせい</rt></ruby> = জীবন","plain":"人生 じんせい jinsei জীবন"},{"type":"word","html":"<ruby>生年月日<rt>せいねんがっぴ</rt></ruby> = জন্মতারিখ","plain":"生年月日 せいねんがっぴ seinengappi জন্মতারিখ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「生」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 生 を 書きます"},{"type":"sentence","html":"「生」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"生 は N5 の 漢字 です"},{"type":"sentence","html":"「生」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"生 の 読み方 を 覚えます"}]},{"no":21,"kanji":"山","on":"サン","kun":"やま","bn":"পাহাড়","cat":"Ch 3 প্রকৃতি ও উপাদান","examples":"山田= Yamada (নাম)","six_examples":[{"type":"word","html":"<ruby>山田<rt>やまだ</rt></ruby> = Yamada (নাম)","plain":"山田 やまだ yamada Yamada (নাম)"},{"type":"word","html":"<ruby>火山<rt>かざん</rt></ruby> = আগ্নেয়গিরি","plain":"火山 かざん kazan আগ্নেয়গিরি"},{"type":"word","html":"<ruby>登山<rt>とざん</rt></ruby> = পাহাড়ে ওঠা","plain":"登山 とざん tozan পাহাড়ে ওঠা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「山」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 山 を 書きます"},{"type":"sentence","html":"「山」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"山 は N5 の 漢字 です"},{"type":"sentence","html":"「山」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"山 の 読み方 を 覚えます"}]},{"no":22,"kanji":"川","on":"セン","kun":"かわ","bn":"নদী","cat":"Ch 3 প্রকৃতি ও উপাদান","examples":"川口= Kawaguchi (নাম)","six_examples":[{"type":"word","html":"<ruby>川口<rt>かわぐち</rt></ruby> = Kawaguchi (নাম)","plain":"川口 かわぐち kawaguchi Kawaguchi (নাম)"},{"type":"word","html":"<ruby>河川<rt>かせん</rt></ruby> = নদী","plain":"河川 かせん kasen নদী"},{"type":"word","html":"<ruby>川崎<rt>かわさき</rt></ruby> = Kawasaki (নাম)","plain":"川崎 かわさき kawasaki Kawasaki (নাম)"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「川」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 川 を 書きます"},{"type":"sentence","html":"「川」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"川 は N5 の 漢字 です"},{"type":"sentence","html":"「川」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"川 の 読み方 を 覚えます"}]},{"no":23,"kanji":"木","on":"ボク・モク","kun":"き・こ","bn":"গাছ","cat":"Ch 3 প্রকৃতি ও উপাদান","examples":"木曜日= বৃহস্পতিবার","six_examples":[{"type":"word","html":"<ruby>木曜日<rt>もくようび</rt></ruby> = বৃহস্পতিবার","plain":"木曜日 もくようび mokuyoubi বৃহস্পতিবার"},{"type":"word","html":"<ruby>木材<rt>もくざい</rt></ruby> = কাঠ","plain":"木材 もくざい mokuzai কাঠ"},{"type":"word","html":"<ruby>大木<rt>たいぼく</rt></ruby> = বড় গাছ","plain":"大木 たいぼく taiboku বড় গাছ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「木」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 木 を 書きます"},{"type":"sentence","html":"「木」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"木 は N5 の 漢字 です"},{"type":"sentence","html":"「木」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"木 の 読み方 を 覚えます"}]},{"no":24,"kanji":"水","on":"スイ","kun":"みず","bn":"পানি","cat":"Ch 3 প্রকৃতি ও উপাদান","examples":"水曜日= বুধবার","six_examples":[{"type":"word","html":"<ruby>水曜日<rt>すいようび</rt></ruby> = বুধবার","plain":"水曜日 すいようび suiyoubi বুধবার"},{"type":"word","html":"<ruby>水道<rt>すいどう</rt></ruby> = পানির লাইন","plain":"水道 すいどう suidou পানির লাইন"},{"type":"word","html":"<ruby>水色<rt>みずいろ</rt></ruby> = হালকা নীল","plain":"水色 みずいろ mizuiro হালকা নীল"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「水」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 水 を 書きます"},{"type":"sentence","html":"「水」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"水 は N5 の 漢字 です"},{"type":"sentence","html":"「水」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"水 の 読み方 を 覚えます"}]},{"no":25,"kanji":"火","on":"カ","kun":"ひ・ほ","bn":"আগুন","cat":"Ch 3 প্রকৃতি ও উপাদান","examples":"火曜日= মঙ্গলবার","six_examples":[{"type":"word","html":"<ruby>火曜日<rt>かようび</rt></ruby> = মঙ্গলবার","plain":"火曜日 かようび kayoubi মঙ্গলবার"},{"type":"word","html":"<ruby>火事<rt>かじ</rt></ruby> = আগুন","plain":"火事 かじ kaji আগুন"},{"type":"word","html":"<ruby>花火<rt>はなび</rt></ruby> = আতশবাজি","plain":"花火 はなび hanabi আতশবাজি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「火」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 火 を 書きます"},{"type":"sentence","html":"「火」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"火 は N5 の 漢字 です"},{"type":"sentence","html":"「火」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"火 の 読み方 を 覚えます"}]},{"no":26,"kanji":"土","on":"ド・ト","kun":"つち","bn":"মাটি","cat":"Ch 3 প্রকৃতি ও উপাদান","examples":"土曜日= শনিবার","six_examples":[{"type":"word","html":"<ruby>土曜日<rt>どようび</rt></ruby> = শনিবার","plain":"土曜日 どようび doyoubi শনিবার"},{"type":"word","html":"<ruby>土地<rt>とち</rt></ruby> = জমি","plain":"土地 とち tochi জমি"},{"type":"word","html":"<ruby>粘土<rt>ねんど</rt></ruby> = কাদামাটি","plain":"粘土 ねんど nendo কাদামাটি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「土」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 土 を 書きます"},{"type":"sentence","html":"「土」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"土 は N5 の 漢字 です"},{"type":"sentence","html":"「土」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"土 の 読み方 を 覚えます"}]},{"no":27,"kanji":"天","on":"テン","kun":"あめ・あま","bn":"আকাশ","cat":"Ch 3 প্রকৃতি ও উপাদান","examples":"天気= আবহাওয়া","six_examples":[{"type":"word","html":"<ruby>天気<rt>てんき</rt></ruby> = আবহাওয়া","plain":"天気 てんき tenki আবহাওয়া"},{"type":"word","html":"<ruby>今日<rt>きょう</rt></ruby> = আজ","plain":"今日 きょう kyou আজ"},{"type":"word","html":"<ruby>天国<rt>てんごく</rt></ruby> = স্বর্গ","plain":"天国 てんごく tengoku স্বর্গ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「天」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 天 を 書きます"},{"type":"sentence","html":"「天」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"天 は N5 の 漢字 です"},{"type":"sentence","html":"「天」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"天 の 読み方 を 覚えます"}]},{"no":28,"kanji":"気","on":"キ・ケ","kun":"—","bn":"বায়ু/মন","cat":"Ch 3 প্রকৃতি ও উপাদান","examples":"気分= মনের অবস্থা","six_examples":[{"type":"word","html":"<ruby>気分<rt>きぶん</rt></ruby> = মনের অবস্থা","plain":"気分 きぶん kibun মনের অবস্থা"},{"type":"word","html":"<ruby>元気<rt>げんき</rt></ruby> = ভালো আছি","plain":"元気 げんき genki ভালো আছি"},{"type":"word","html":"<ruby>気持ち<rt>きもち</rt></ruby> = অনুভূতি","plain":"気持ち きもち kimochi অনুভূতি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「気」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 気 を 書きます"},{"type":"sentence","html":"「気」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"気 は N5 の 漢字 です"},{"type":"sentence","html":"「気」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"気 の 読み方 を 覚えます"}]},{"no":29,"kanji":"空","on":"クウ","kun":"そら・あく・から","bn":"আকাশ/শূন্য","cat":"Ch 3 প্রকৃতি ও উপাদান","examples":"空気= বাতাস","six_examples":[{"type":"word","html":"<ruby>空気<rt>くうき</rt></ruby> = বাতাস","plain":"空気 くうき kuuki বাতাস"},{"type":"word","html":"<ruby>空港<rt>くうこう</rt></ruby> = বিমানবন্দর","plain":"空港 くうこう kuukou বিমানবন্দর"},{"type":"word","html":"<ruby>空手<rt>からて</rt></ruby> = কারাতে","plain":"空手 からて karate কারাতে"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「空」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 空 を 書きます"},{"type":"sentence","html":"「空」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"空 は N5 の 漢字 です"},{"type":"sentence","html":"「空」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"空 の 読み方 を 覚えます"}]},{"no":30,"kanji":"雨","on":"ウ","kun":"あめ・あま","bn":"বৃষ্টি","cat":"Ch 3 প্রকৃতি ও উপাদান","examples":"雨の日= বৃষ্টির দিন","six_examples":[{"type":"word","html":"<ruby>雨の日<rt>あめのひ</rt></ruby> = বৃষ্টির দিন","plain":"雨の日 あめのひ amenohi বৃষ্টির দিন"},{"type":"word","html":"<ruby>大雨<rt>おおあめ</rt></ruby> = ভারী বৃষ্টি","plain":"大雨 おおあめ ooame ভারী বৃষ্টি"},{"type":"word","html":"<ruby>梅雨<rt>つゆ</rt></ruby> = বর্ষাকাল","plain":"梅雨 つゆ tsuyu বর্ষাকাল"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「雨」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 雨 を 書きます"},{"type":"sentence","html":"「雨」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"雨 は N5 の 漢字 です"},{"type":"sentence","html":"「雨」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"雨 の 読み方 を 覚えます"}]},{"no":31,"kanji":"上","on":"ジョウ・ショウ","kun":"うえ・うわ・かみ・あげる","bn":"উপর","cat":"Ch 4 দিক ও স্থান","examples":"上着= জ্যাকেট","six_examples":[{"type":"word","html":"<ruby>上着<rt>うわぎ</rt></ruby> = জ্যাকেট","plain":"上着 うわぎ uwagi জ্যাকেট"},{"type":"word","html":"<ruby>上手<rt>じょうず</rt></ruby> = দক্ষ","plain":"上手 じょうず jouzu দক্ষ"},{"type":"word","html":"<ruby>以上<rt>いじょう</rt></ruby> = এর উপরে","plain":"以上 いじょう ijou এর উপরে"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「上」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 上 を 書きます"},{"type":"sentence","html":"「上」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"上 は N5 の 漢字 です"},{"type":"sentence","html":"「上」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"上 の 読み方 を 覚えます"}]},{"no":32,"kanji":"下","on":"カ・ゲ","kun":"した・しも・もと・さげる・くだる","bn":"নিচ","cat":"Ch 4 দিক ও স্থান","examples":"下着= অন্তর্বাস","six_examples":[{"type":"word","html":"<ruby>下着<rt>したぎ</rt></ruby> = অন্তর্বাস","plain":"下着 したぎ shitagi অন্তর্বাস"},{"type":"word","html":"<ruby>地下<rt>ちか</rt></ruby> = ভূগর্ভ","plain":"地下 ちか chika ভূগর্ভ"},{"type":"word","html":"<ruby>下手<rt>へた</rt></ruby> = অদক্ষ","plain":"下手 へた heta অদক্ষ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「下」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 下 を 書きます"},{"type":"sentence","html":"「下」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"下 は N5 の 漢字 です"},{"type":"sentence","html":"「下」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"下 の 読み方 を 覚えます"}]},{"no":33,"kanji":"中","on":"チュウ","kun":"なか","bn":"ভিতর/মাঝখান","cat":"Ch 4 দিক ও স্থান","examples":"中国= চীন","six_examples":[{"type":"word","html":"<ruby>中国<rt>ちゅうごく</rt></ruby> = চীন","plain":"中国 ちゅうごく chuugoku চীন"},{"type":"word","html":"<ruby>中学校<rt>ちゅうがっこう</rt></ruby> = মাধ্যমিক স্কুল","plain":"中学校 ちゅうがっこう chuugakkou মাধ্যমিক স্কুল"},{"type":"word","html":"<ruby>中心<rt>ちゅうしん</rt></ruby> = কেন্দ্র","plain":"中心 ちゅうしん chuushin কেন্দ্র"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「中」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 中 を 書きます"},{"type":"sentence","html":"「中」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"中 は N5 の 漢字 です"},{"type":"sentence","html":"「中」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"中 の 読み方 を 覚えます"}]},{"no":34,"kanji":"外","on":"ガイ・ゲ","kun":"そと・ほか・はずす","bn":"বাইরে","cat":"Ch 4 দিক ও স্থান","examples":"外国= বিদেশ","six_examples":[{"type":"word","html":"<ruby>外国<rt>がいこく</rt></ruby> = বিদেশ","plain":"外国 がいこく gaikoku বিদেশ"},{"type":"word","html":"<ruby>外国人<rt>がいこくじん</rt></ruby> = বিদেশি","plain":"外国人 がいこくじん gaikokujin বিদেশি"},{"type":"word","html":"<ruby>外出<rt>がいしゅつ</rt></ruby> = বাইরে যাওয়া","plain":"外出 がいしゅつ gaishutsu বাইরে যাওয়া"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「外」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 外 を 書きます"},{"type":"sentence","html":"「外」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"外 は N5 の 漢字 です"},{"type":"sentence","html":"「外」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"外 の 読み方 を 覚えます"}]},{"no":35,"kanji":"左","on":"サ","kun":"ひだり","bn":"বাম","cat":"Ch 4 দিক ও স্থান","examples":"左側= বাম পাশ","six_examples":[{"type":"word","html":"<ruby>左側<rt>ひだりがわ</rt></ruby> = বাম পাশ","plain":"左側 ひだりがわ hidarigawa বাম পাশ"},{"type":"word","html":"<ruby>左手<rt>ひだりて</rt></ruby> = বাম হাত","plain":"左手 ひだりて hidarite বাম হাত"},{"type":"word","html":"<ruby>左右<rt>さゆう</rt></ruby> = ডানবাম","plain":"左右 さゆう sayuu ডানবাম"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「左」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 左 を 書きます"},{"type":"sentence","html":"「左」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"左 は N5 の 漢字 です"},{"type":"sentence","html":"「左」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"左 の 読み方 を 覚えます"}]},{"no":36,"kanji":"右","on":"ウ・ユウ","kun":"みぎ","bn":"ডান","cat":"Ch 4 দিক ও স্থান","examples":"右側= ডান পাশ","six_examples":[{"type":"word","html":"<ruby>右側<rt>みぎがわ</rt></ruby> = ডান পাশ","plain":"右側 みぎがわ migigawa ডান পাশ"},{"type":"word","html":"<ruby>右手<rt>みぎて</rt></ruby> = ডান হাত","plain":"右手 みぎて migite ডান হাত"},{"type":"word","html":"<ruby>右折<rt>うせつ</rt></ruby> = ডানে ঘোরা","plain":"右折 うせつ usetsu ডানে ঘোরা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「右」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 右 を 書きます"},{"type":"sentence","html":"「右」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"右 は N5 の 漢字 です"},{"type":"sentence","html":"「右」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"右 の 読み方 を 覚えます"}]},{"no":37,"kanji":"東","on":"トウ","kun":"ひがし","bn":"পূর্ব","cat":"Ch 4 দিক ও স্থান","examples":"東京= টোকিও","six_examples":[{"type":"word","html":"<ruby>東京<rt>とうきょう</rt></ruby> = টোকিও","plain":"東京 とうきょう toukyou টোকিও"},{"type":"word","html":"<ruby>東口<rt>ひがしぐち</rt></ruby> = পূর্ব দিকের গেট","plain":"東口 ひがしぐち higashiguchi পূর্ব দিকের গেট"},{"type":"word","html":"<ruby>東洋<rt>とうよう</rt></ruby> = পূর্ব দেশ","plain":"東洋 とうよう touyou পূর্ব দেশ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「東」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 東 を 書きます"},{"type":"sentence","html":"「東」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"東 は N5 の 漢字 です"},{"type":"sentence","html":"「東」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"東 の 読み方 を 覚えます"}]},{"no":38,"kanji":"西","on":"セイ・サイ","kun":"にし","bn":"পশ্চিম","cat":"Ch 4 দিক ও স্থান","examples":"西洋= পশ্চিমা দেশ","six_examples":[{"type":"word","html":"<ruby>西洋<rt>せいよう</rt></ruby> = পশ্চিমা দেশ","plain":"西洋 せいよう seiyou পশ্চিমা দেশ"},{"type":"word","html":"<ruby>西口<rt>にしぐち</rt></ruby> = পশ্চিম দিকের গেট","plain":"西口 にしぐち nishiguchi পশ্চিম দিকের গেট"},{"type":"word","html":"<ruby>東西<rt>とうざい</rt></ruby> = পূর্ব-পশ্চিম","plain":"東西 とうざい touzai পূর্ব-পশ্চিম"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「西」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 西 を 書きます"},{"type":"sentence","html":"「西」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"西 は N5 の 漢字 です"},{"type":"sentence","html":"「西」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"西 の 読み方 を 覚えます"}]},{"no":39,"kanji":"南","on":"ナン・ナ","kun":"みなみ","bn":"দক্ষিণ","cat":"Ch 4 দিক ও স্থান","examples":"南口= দক্ষিণ দিকের গেট","six_examples":[{"type":"word","html":"<ruby>南口<rt>みなみぐち</rt></ruby> = দক্ষিণ দিকের গেট","plain":"南口 みなみぐち minamiguchi দক্ষিণ দিকের গেট"},{"type":"word","html":"<ruby>南極<rt>なんきょく</rt></ruby> = দক্ষিণ মেরু","plain":"南極 なんきょく nankyoku দক্ষিণ মেরু"},{"type":"word","html":"<ruby>南北<rt>なんぼく</rt></ruby> = উত্তর-দক্ষিণ","plain":"南北 なんぼく nanboku উত্তর-দক্ষিণ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「南」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 南 を 書きます"},{"type":"sentence","html":"「南」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"南 は N5 の 漢字 です"},{"type":"sentence","html":"「南」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"南 の 読み方 を 覚えます"}]},{"no":40,"kanji":"北","on":"ホク","kun":"きた","bn":"উত্তর","cat":"Ch 4 দিক ও স্থান","examples":"北口= উত্তর দিকের গেট","six_examples":[{"type":"word","html":"<ruby>北口<rt>きたぐち</rt></ruby> = উত্তর দিকের গেট","plain":"北口 きたぐち kitaguchi উত্তর দিকের গেট"},{"type":"word","html":"<ruby>北海道<rt>ほっかいどう</rt></ruby> = হোক্কাইদো","plain":"北海道 ほっかいどう hokkaidou হোক্কাইদো"},{"type":"word","html":"<ruby>北極<rt>ほっきょく</rt></ruby> = উত্তর মেরু","plain":"北極 ほっきょく hokkyoku উত্তর মেরু"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「北」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 北 を 書きます"},{"type":"sentence","html":"「北」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"北 は N5 の 漢字 です"},{"type":"sentence","html":"「北」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"北 の 読み方 を 覚えます"}]},{"no":41,"kanji":"学","on":"ガク","kun":"まなぶ","bn":"শিক্ষা","cat":"Ch 5 স্কুল ও শিক্ষা","examples":"学校= স্কুল","six_examples":[{"type":"word","html":"<ruby>学校<rt>がっこう</rt></ruby> = স্কুল","plain":"学校 がっこう gakkou স্কুল"},{"type":"word","html":"<ruby>大学<rt>だいがく</rt></ruby> = বিশ্ববিদ্যালয়","plain":"大学 だいがく daigaku বিশ্ববিদ্যালয়"},{"type":"word","html":"<ruby>学生<rt>がくせい</rt></ruby> = ছাত্র","plain":"学生 がくせい gakusei ছাত্র"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「学」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 学 を 書きます"},{"type":"sentence","html":"「学」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"学 は N5 の 漢字 です"},{"type":"sentence","html":"「学」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"学 の 読み方 を 覚えます"}]},{"no":42,"kanji":"校","on":"コウ","kun":"—","bn":"স্কুল","cat":"Ch 5 স্কুল ও শিক্ষা","examples":"学校= স্কুল","six_examples":[{"type":"word","html":"<ruby>学校<rt>がっこう</rt></ruby> = স্কুল","plain":"学校 がっこう gakkou স্কুল"},{"type":"word","html":"<ruby>高校<rt>こうこう</rt></ruby> = হাই স্কুল","plain":"高校 こうこう koukou হাই স্কুল"},{"type":"word","html":"<ruby>校長<rt>こうちょう</rt></ruby> = প্রধান শিক্ষক","plain":"校長 こうちょう kouchou প্রধান শিক্ষক"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「校」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 校 を 書きます"},{"type":"sentence","html":"「校」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"校 は N5 の 漢字 です"},{"type":"sentence","html":"「校」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"校 の 読み方 を 覚えます"}]},{"no":43,"kanji":"本","on":"ホン","kun":"もと","bn":"বই","cat":"Ch 5 স্কুল ও শিক্ষা","examples":"日本= জাপান","six_examples":[{"type":"word","html":"<ruby>日本<rt>にほん</rt></ruby> = জাপান","plain":"日本 にほん nihon জাপান"},{"type":"word","html":"<ruby>本屋<rt>ほんや</rt></ruby> = বইয়ের দোকান","plain":"本屋 ほんや honya বইয়ের দোকান"},{"type":"word","html":"<ruby>本当<rt>ほんとう</rt></ruby> = সত্যি","plain":"本当 ほんとう hontou সত্যি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「本」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 本 を 書きます"},{"type":"sentence","html":"「本」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"本 は N5 の 漢字 です"},{"type":"sentence","html":"「本」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"本 の 読み方 を 覚えます"}]},{"no":44,"kanji":"文","on":"ブン・モン","kun":"ふみ","bn":"লেখা/সাহিত্য","cat":"Ch 5 স্কুল ও শিক্ষা","examples":"文化= সংস্কৃতি","six_examples":[{"type":"word","html":"<ruby>文化<rt>ぶんか</rt></ruby> = সংস্কৃতি","plain":"文化 ぶんか bunka সংস্কৃতি"},{"type":"word","html":"<ruby>文学<rt>ぶんがく</rt></ruby> = সাহিত্য","plain":"文学 ぶんがく bungaku সাহিত্য"},{"type":"word","html":"<ruby>作文<rt>さくぶん</rt></ruby> = রচনা","plain":"作文 さくぶん sakubun রচনা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「文」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 文 を 書きます"},{"type":"sentence","html":"「文」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"文 は N5 の 漢字 です"},{"type":"sentence","html":"「文」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"文 の 読み方 を 覚えます"}]},{"no":45,"kanji":"字","on":"ジ","kun":"あざ","bn":"অক্ষর","cat":"Ch 5 স্কুল ও শিক্ষা","examples":"漢字= কাঞ্জি","six_examples":[{"type":"word","html":"<ruby>漢字<rt>かんじ</rt></ruby> = কাঞ্জি","plain":"漢字 かんじ kanji কাঞ্জি"},{"type":"word","html":"<ruby>文字<rt>もじ</rt></ruby> = অক্ষর","plain":"文字 もじ moji অক্ষর"},{"type":"word","html":"<ruby>名字<rt>みょうじ</rt></ruby> = পদবি","plain":"名字 みょうじ myouji পদবি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「字」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 字 を 書きます"},{"type":"sentence","html":"「字」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"字 は N5 の 漢字 です"},{"type":"sentence","html":"「字」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"字 の 読み方 を 覚えます"}]},{"no":46,"kanji":"書","on":"ショ","kun":"かく","bn":"লেখা","cat":"Ch 5 স্কুল ও শিক্ষা","examples":"書く= লেখা","six_examples":[{"type":"word","html":"<ruby>書く<rt>かく</rt></ruby> = লেখা","plain":"書く かく kaku লেখা"},{"type":"word","html":"<ruby>図書館<rt>としょかん</rt></ruby> = গ্রন্থাগার","plain":"図書館 としょかん toshokan গ্রন্থাগার"},{"type":"word","html":"<ruby>辞書<rt>じしょ</rt></ruby> = অভিধান","plain":"辞書 じしょ jisho অভিধান"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「書」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 書 を 書きます"},{"type":"sentence","html":"「書」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"書 は N5 の 漢字 です"},{"type":"sentence","html":"「書」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"書 の 読み方 を 覚えます"}]},{"no":47,"kanji":"読","on":"ドク・トク・トウ","kun":"よむ","bn":"পড়া","cat":"Ch 5 স্কুল ও শিক্ষা","examples":"読む= পড়া","six_examples":[{"type":"word","html":"<ruby>読む<rt>よむ</rt></ruby> = পড়া","plain":"読む よむ yomu পড়া"},{"type":"word","html":"<ruby>読書<rt>どくしょ</rt></ruby> = পড়াশোনা","plain":"読書 どくしょ dokusho পড়াশোনা"},{"type":"word","html":"<ruby>音読<rt>おんどく</rt></ruby> = জোরে পড়া","plain":"音読 おんどく ondoku জোরে পড়া"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「読」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 読 を 書きます"},{"type":"sentence","html":"「読」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"読 は N5 の 漢字 です"},{"type":"sentence","html":"「読」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"読 の 読み方 を 覚えます"}]},{"no":48,"kanji":"話","on":"ワ","kun":"はなす・はなし","bn":"কথা","cat":"Ch 5 স্কুল ও শিক্ষা","examples":"話す= কথা বলা","six_examples":[{"type":"word","html":"<ruby>話す<rt>はなす</rt></ruby> = কথা বলা","plain":"話す はなす hanasu কথা বলা"},{"type":"word","html":"<ruby>電話<rt>でんわ</rt></ruby> = টেলিফোন","plain":"電話 でんわ denwa টেলিফোন"},{"type":"word","html":"<ruby>会話<rt>かいわ</rt></ruby> = কথোপকথন","plain":"会話 かいわ kaiwa কথোপকথন"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「話」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 話 を 書きます"},{"type":"sentence","html":"「話」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"話 は N5 の 漢字 です"},{"type":"sentence","html":"「話」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"話 の 読み方 を 覚えます"}]},{"no":49,"kanji":"語","on":"ゴ","kun":"かたる・かたらう","bn":"ভাষা/শব্দ","cat":"Ch 5 স্কুল ও শিক্ষা","examples":"日本語= জাপানি ভাষা","six_examples":[{"type":"word","html":"<ruby>日本語<rt>にほんご</rt></ruby> = জাপানি ভাষা","plain":"日本語 にほんご nihongo জাপানি ভাষা"},{"type":"word","html":"<ruby>英語<rt>えいご</rt></ruby> = ইংরেজি","plain":"英語 えいご eigo ইংরেজি"},{"type":"word","html":"<ruby>言語<rt>げんご</rt></ruby> = ভাষা","plain":"言語 げんご gengo ভাষা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「語」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 語 を 書きます"},{"type":"sentence","html":"「語」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"語 は N5 の 漢字 です"},{"type":"sentence","html":"「語」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"語 の 読み方 を 覚えます"}]},{"no":50,"kanji":"聞","on":"ブン・モン","kun":"きく・きこえる","bn":"শোনা","cat":"Ch 5 স্কুল ও শিক্ষা","examples":"聞く= শোনা","six_examples":[{"type":"word","html":"<ruby>聞く<rt>きく</rt></ruby> = শোনা","plain":"聞く きく kiku শোনা"},{"type":"word","html":"<ruby>新聞<rt>しんぶん</rt></ruby> = সংবাদপত্র","plain":"新聞 しんぶん shinbun সংবাদপত্র"},{"type":"word","html":"<ruby>聞こえる<rt>きこえる</rt></ruby> = শোনা যায়","plain":"聞こえる きこえる kikoeru শোনা যায়"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「聞」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 聞 を 書きます"},{"type":"sentence","html":"「聞」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"聞 は N5 の 漢字 です"},{"type":"sentence","html":"「聞」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"聞 の 読み方 を 覚えます"}]},{"no":51,"kanji":"食","on":"ショク・ジキ","kun":"たべる・くう","bn":"খাওয়া","cat":"Ch 6 দৈনন্দিন কাজ","examples":"食べる= খাওয়া","six_examples":[{"type":"word","html":"<ruby>食べる<rt>たべる</rt></ruby> = খাওয়া","plain":"食べる たべる taberu খাওয়া"},{"type":"word","html":"<ruby>食事<rt>しょくじ</rt></ruby> = খাবার","plain":"食事 しょくじ shokuji খাবার"},{"type":"word","html":"<ruby>食堂<rt>しょくどう</rt></ruby> = ডাইনিং হল","plain":"食堂 しょくどう shokudou ডাইনিং হল"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「食」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 食 を 書きます"},{"type":"sentence","html":"「食」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"食 は N5 の 漢字 です"},{"type":"sentence","html":"「食」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"食 の 読み方 を 覚えます"}]},{"no":52,"kanji":"飲","on":"イン","kun":"のむ","bn":"পান করা","cat":"Ch 6 দৈনন্দিন কাজ","examples":"飲む= পান করা","six_examples":[{"type":"word","html":"<ruby>飲む<rt>のむ</rt></ruby> = পান করা","plain":"飲む のむ nomu পান করা"},{"type":"word","html":"<ruby>飲み物<rt>のみもの</rt></ruby> = পানীয়","plain":"飲み物 のみもの nomimono পানীয়"},{"type":"word","html":"<ruby>飲食店<rt>いんしょくてん</rt></ruby> = রেস্তোরাঁ","plain":"飲食店 いんしょくてん inshokuten রেস্তোরাঁ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「飲」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 飲 を 書きます"},{"type":"sentence","html":"「飲」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"飲 は N5 の 漢字 です"},{"type":"sentence","html":"「飲」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"飲 の 読み方 を 覚えます"}]},{"no":53,"kanji":"見","on":"ケン","kun":"みる・みえる・みせる","bn":"দেখা","cat":"Ch 6 দৈনন্দিন কাজ","examples":"見る= দেখা","six_examples":[{"type":"word","html":"<ruby>見る<rt>みる</rt></ruby> = দেখা","plain":"見る みる miru দেখা"},{"type":"word","html":"<ruby>意見<rt>いけん</rt></ruby> = মতামত","plain":"意見 いけん iken মতামত"},{"type":"word","html":"<ruby>見学<rt>けんがく</rt></ruby> = পর্যবেক্ষণ","plain":"見学 けんがく kengaku পর্যবেক্ষণ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「見」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 見 を 書きます"},{"type":"sentence","html":"「見」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"見 は N5 の 漢字 です"},{"type":"sentence","html":"「見」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"見 の 読み方 を 覚えます"}]},{"no":54,"kanji":"行","on":"コウ・ギョウ・アン","kun":"いく・ゆく・おこなう","bn":"যাওয়া","cat":"Ch 6 দৈনন্দিন কাজ","examples":"行く= যাওয়া","six_examples":[{"type":"word","html":"<ruby>行く<rt>いく</rt></ruby> = যাওয়া","plain":"行く いく iku যাওয়া"},{"type":"word","html":"<ruby>銀行<rt>ぎんこう</rt></ruby> = ব্যাংক","plain":"銀行 ぎんこう ginkou ব্যাংক"},{"type":"word","html":"<ruby>旅行<rt>りょこう</rt></ruby> = ভ্রমণ","plain":"旅行 りょこう ryokou ভ্রমণ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「行」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 行 を 書きます"},{"type":"sentence","html":"「行」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"行 は N5 の 漢字 です"},{"type":"sentence","html":"「行」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"行 の 読み方 を 覚えます"}]},{"no":55,"kanji":"来","on":"ライ","kun":"くる・きたる","bn":"আসা","cat":"Ch 6 দৈনন্দিন কাজ","examples":"来る= আসা","six_examples":[{"type":"word","html":"<ruby>来る<rt>くる</rt></ruby> = আসা","plain":"来る くる kuru আসা"},{"type":"word","html":"<ruby>来年<rt>らいねん</rt></ruby> = আগামী বছর","plain":"来年 らいねん rainen আগামী বছর"},{"type":"word","html":"<ruby>来月<rt>らいげつ</rt></ruby> = আগামী মাস","plain":"来月 らいげつ raigetsu আগামী মাস"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「来」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 来 を 書きます"},{"type":"sentence","html":"「来」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"来 は N5 の 漢字 です"},{"type":"sentence","html":"「来」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"来 の 読み方 を 覚えます"}]},{"no":56,"kanji":"帰","on":"キ","kun":"かえる・かえす","bn":"ফেরা","cat":"Ch 6 দৈনন্দিন কাজ","examples":"帰る= ফেরা","six_examples":[{"type":"word","html":"<ruby>帰る<rt>かえる</rt></ruby> = ফেরা","plain":"帰る かえる kaeru ফেরা"},{"type":"word","html":"<ruby>帰国<rt>きこく</rt></ruby> = দেশে ফেরা","plain":"帰国 きこく kikoku দেশে ফেরা"},{"type":"word","html":"<ruby>帰り<rt>かえり</rt></ruby> = ফেরার পথ","plain":"帰り かえり kaeri ফেরার পথ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「帰」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 帰 を 書きます"},{"type":"sentence","html":"「帰」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"帰 は N5 の 漢字 です"},{"type":"sentence","html":"「帰」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"帰 の 読み方 を 覚えます"}]},{"no":57,"kanji":"入","on":"ニュウ","kun":"はいる・いる・いれる","bn":"প্রবেশ","cat":"Ch 6 দৈনন্দিন কাজ","examples":"入る= প্রবেশ","six_examples":[{"type":"word","html":"<ruby>入る<rt>はいる</rt></ruby> = প্রবেশ","plain":"入る はいる hairu প্রবেশ"},{"type":"word","html":"<ruby>入口<rt>いりぐち</rt></ruby> = প্রবেশদ্বার","plain":"入口 いりぐち iriguchi প্রবেশদ্বার"},{"type":"word","html":"<ruby>入学<rt>にゅうがく</rt></ruby> = ভর্তি","plain":"入学 にゅうがく nyuugaku ভর্তি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「入」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 入 を 書きます"},{"type":"sentence","html":"「入」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"入 は N5 の 漢字 です"},{"type":"sentence","html":"「入」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"入 の 読み方 を 覚えます"}]},{"no":58,"kanji":"出","on":"シュツ・スイ","kun":"でる・だす","bn":"বের হওয়া","cat":"Ch 6 দৈনন্দিন কাজ","examples":"出る= বের হওয়া","six_examples":[{"type":"word","html":"<ruby>出る<rt>でる</rt></ruby> = বের হওয়া","plain":"出る でる deru বের হওয়া"},{"type":"word","html":"<ruby>出口<rt>でぐち</rt></ruby> = বের হওয়ার দরজা","plain":"出口 でぐち deguchi বের হওয়ার দরজা"},{"type":"word","html":"<ruby>出勤<rt>しゅっきん</rt></ruby> = অফিসে যাওয়া","plain":"出勤 しゅっきん shukkin অফিসে যাওয়া"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「出」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 出 を 書きます"},{"type":"sentence","html":"「出」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"出 は N5 の 漢字 です"},{"type":"sentence","html":"「出」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"出 の 読み方 を 覚えます"}]},{"no":59,"kanji":"立","on":"リツ・リュウ","kun":"たつ・たてる","bn":"দাঁড়ানো","cat":"Ch 6 দৈনন্দিন কাজ","examples":"立つ= দাঁড়ানো","six_examples":[{"type":"word","html":"<ruby>立つ<rt>たつ</rt></ruby> = দাঁড়ানো","plain":"立つ たつ tatsu দাঁড়ানো"},{"type":"word","html":"<ruby>立派<rt>りっぱ</rt></ruby> = চমৎকার","plain":"立派 りっぱ rippa চমৎকার"},{"type":"word","html":"<ruby>独立<rt>どくりつ</rt></ruby> = স্বাধীনতা","plain":"独立 どくりつ dokuritsu স্বাধীনতা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「立」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 立 を 書きます"},{"type":"sentence","html":"「立」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"立 は N5 の 漢字 です"},{"type":"sentence","html":"「立」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"立 の 読み方 を 覚えます"}]},{"no":60,"kanji":"休","on":"キュウ","kun":"やすむ・やすまる・やすめる","bn":"বিশ্রাম","cat":"Ch 6 দৈনন্দিন কাজ","examples":"休む= বিশ্রাম নেওয়া","six_examples":[{"type":"word","html":"<ruby>休む<rt>やすむ</rt></ruby> = বিশ্রাম নেওয়া","plain":"休む やすむ yasumu বিশ্রাম নেওয়া"},{"type":"word","html":"<ruby>休日<rt>きゅうじつ</rt></ruby> = ছুটির দিন","plain":"休日 きゅうじつ kyuujitsu ছুটির দিন"},{"type":"word","html":"<ruby>夏休み<rt>なつやすみ</rt></ruby> = গ্রীষ্মকালীন ছুটি","plain":"夏休み なつやすみ natsuyasumi গ্রীষ্মকালীন ছুটি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「休」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 休 を 書きます"},{"type":"sentence","html":"「休」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"休 は N5 の 漢字 です"},{"type":"sentence","html":"「休」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"休 の 読み方 を 覚えます"}]},{"no":61,"kanji":"目","on":"モク・ボク","kun":"め・ま","bn":"চোখ","cat":"Ch 7 শরীর ও স্বাস্থ্য","examples":"目= চোখ","six_examples":[{"type":"word","html":"<ruby>目<rt>め</rt></ruby> = চোখ","plain":"目 め me চোখ"},{"type":"word","html":"<ruby>目的<rt>もくてき</rt></ruby> = লক্ষ্য","plain":"目的 もくてき mokuteki লক্ষ্য"},{"type":"word","html":"<ruby>一目<rt>いちもく</rt></ruby> = এক নজর","plain":"一目 いちもく ichimoku এক নজর"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「目」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 目 を 書きます"},{"type":"sentence","html":"「目」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"目 は N5 の 漢字 です"},{"type":"sentence","html":"「目」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"目 の 読み方 を 覚えます"}]},{"no":62,"kanji":"耳","on":"ジ","kun":"みみ","bn":"কান","cat":"Ch 7 শরীর ও স্বাস্থ্য","examples":"耳= কান","six_examples":[{"type":"word","html":"<ruby>耳<rt>みみ</rt></ruby> = কান","plain":"耳 みみ mimi কান"},{"type":"word","html":"<ruby>耳鼻科<rt>じびか</rt></ruby> = ENT ডাক্তার","plain":"耳鼻科 じびか jibika ENT ডাক্তার"},{"type":"word","html":"<ruby>耳鳴り<rt>みみなり</rt></ruby> = কানে শব্দ","plain":"耳鳴り みみなり miminari কানে শব্দ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「耳」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 耳 を 書きます"},{"type":"sentence","html":"「耳」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"耳 は N5 の 漢字 です"},{"type":"sentence","html":"「耳」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"耳 の 読み方 を 覚えます"}]},{"no":63,"kanji":"口","on":"コウ・ク","kun":"くち","bn":"মুখ","cat":"Ch 7 শরীর ও স্বাস্থ্য","examples":"口= মুখ","six_examples":[{"type":"word","html":"<ruby>口<rt>くち</rt></ruby> = মুখ","plain":"口 くち kuchi মুখ"},{"type":"word","html":"<ruby>人口<rt>じんこう</rt></ruby> = জনসংখ্যা","plain":"人口 じんこう jinkou জনসংখ্যা"},{"type":"word","html":"<ruby>出口<rt>でぐち</rt></ruby> = বের হওয়ার দরজা","plain":"出口 でぐち deguchi বের হওয়ার দরজা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「口」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 口 を 書きます"},{"type":"sentence","html":"「口」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"口 は N5 の 漢字 です"},{"type":"sentence","html":"「口」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"口 の 読み方 を 覚えます"}]},{"no":64,"kanji":"手","on":"シュ","kun":"て・た","bn":"হাত","cat":"Ch 7 শরীর ও স্বাস্থ্য","examples":"手= হাত","six_examples":[{"type":"word","html":"<ruby>手<rt>て</rt></ruby> = হাত","plain":"手 て te হাত"},{"type":"word","html":"<ruby>手紙<rt>てがみ</rt></ruby> = চিঠি","plain":"手紙 てがみ tegami চিঠি"},{"type":"word","html":"<ruby>下手<rt>へた</rt></ruby> = অদক্ষ","plain":"下手 へた heta অদক্ষ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「手」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 手 を 書きます"},{"type":"sentence","html":"「手」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"手 は N5 の 漢字 です"},{"type":"sentence","html":"「手」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"手 の 読み方 を 覚えます"}]},{"no":65,"kanji":"足","on":"ソク","kun":"あし・たりる・たす","bn":"পা","cat":"Ch 7 শরীর ও স্বাস্থ্য","examples":"足= পা","six_examples":[{"type":"word","html":"<ruby>足<rt>あし</rt></ruby> = পা","plain":"足 あし ashi পা"},{"type":"word","html":"<ruby>足りる<rt>たりる</rt></ruby> = যথেষ্ট","plain":"足りる たりる tariru যথেষ্ট"},{"type":"word","html":"<ruby>一足<rt>いっそく</rt></ruby> = একজোড়া (জুতা)","plain":"一足 いっそく issoku একজোড়া (জুতা)"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「足」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 足 を 書きます"},{"type":"sentence","html":"「足」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"足 は N5 の 漢字 です"},{"type":"sentence","html":"「足」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"足 の 読み方 を 覚えます"}]},{"no":66,"kanji":"体","on":"タイ・テイ","kun":"からだ","bn":"শরীর","cat":"Ch 7 শরীর ও স্বাস্থ্য","examples":"体= শরীর","six_examples":[{"type":"word","html":"<ruby>体<rt>からだ</rt></ruby> = শরীর","plain":"体 からだ karada শরীর"},{"type":"word","html":"<ruby>体育<rt>たいいく</rt></ruby> = শারীরিক শিক্ষা","plain":"体育 たいいく taiiku শারীরিক শিক্ষা"},{"type":"word","html":"<ruby>大体<rt>だいたい</rt></ruby> = প্রায়","plain":"大体 だいたい daitai প্রায়"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「体」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 体 を 書きます"},{"type":"sentence","html":"「体」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"体 は N5 の 漢字 です"},{"type":"sentence","html":"「体」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"体 の 読み方 を 覚えます"}]},{"no":67,"kanji":"心","on":"シン","kun":"こころ","bn":"হৃদয়/মন","cat":"Ch 7 শরীর ও স্বাস্থ্য","examples":"心= মন","six_examples":[{"type":"word","html":"<ruby>心<rt>こころ</rt></ruby> = মন","plain":"心 こころ kokoro মন"},{"type":"word","html":"<ruby>心配<rt>しんぱい</rt></ruby> = চিন্তা","plain":"心配 しんぱい shinpai চিন্তা"},{"type":"word","html":"<ruby>安心<rt>あんしん</rt></ruby> = শান্তি","plain":"安心 あんしん anshin শান্তি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「心」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 心 を 書きます"},{"type":"sentence","html":"「心」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"心 は N5 の 漢字 です"},{"type":"sentence","html":"「心」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"心 の 読み方 を 覚えます"}]},{"no":68,"kanji":"病","on":"ビョウ・ヘイ","kun":"やむ・やまい","bn":"রোগ","cat":"Ch 7 শরীর ও স্বাস্থ্য","examples":"病気= অসুস্থতা","six_examples":[{"type":"word","html":"<ruby>病気<rt>びょうき</rt></ruby> = অসুস্থতা","plain":"病気 びょうき byouki অসুস্থতা"},{"type":"word","html":"<ruby>病院<rt>びょういん</rt></ruby> = হাসপাতাল","plain":"病院 びょういん byouin হাসপাতাল"},{"type":"word","html":"<ruby>看病<rt>かんびょう</rt></ruby> = সেবা করা","plain":"看病 かんびょう kanbyou সেবা করা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「病」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 病 を 書きます"},{"type":"sentence","html":"「病」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"病 は N5 の 漢字 です"},{"type":"sentence","html":"「病」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"病 の 読み方 を 覚えます"}]},{"no":69,"kanji":"院","on":"イン","kun":"—","bn":"ইনস্টিটিউট","cat":"Ch 7 শরীর ও স্বাস্থ্য","examples":"病院= হাসপাতাল","six_examples":[{"type":"word","html":"<ruby>病院<rt>びょういん</rt></ruby> = হাসপাতাল","plain":"病院 びょういん byouin হাসপাতাল"},{"type":"word","html":"<ruby>大学院<rt>だいがくいん</rt></ruby> = পোস্ট-গ্র্যাজুয়েট","plain":"大学院 だいがくいん daigakuin পোস্ট-গ্র্যাজুয়েট"},{"type":"word","html":"<ruby>入院<rt>にゅういん</rt></ruby> = হাসপাতালে ভর্তি","plain":"入院 にゅういん nyuuin হাসপাতালে ভর্তি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「院」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 院 を 書きます"},{"type":"sentence","html":"「院」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"院 は N5 の 漢字 です"},{"type":"sentence","html":"「院」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"院 の 読み方 を 覚えます"}]},{"no":70,"kanji":"薬","on":"ヤク","kun":"くすり","bn":"ওষুধ","cat":"Ch 7 শরীর ও স্বাস্থ্য","examples":"薬= ওষুধ","six_examples":[{"type":"word","html":"<ruby>薬<rt>くすり</rt></ruby> = ওষুধ","plain":"薬 くすり kusuri ওষুধ"},{"type":"word","html":"<ruby>薬局<rt>やっきょく</rt></ruby> = ফার্মেসি","plain":"薬局 やっきょく yakkyoku ফার্মেসি"},{"type":"word","html":"<ruby>漢方薬<rt>かんぽうやく</rt></ruby> = চীনা ওষুধ","plain":"漢方薬 かんぽうやく kanpouyaku চীনা ওষুধ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「薬」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 薬 を 書きます"},{"type":"sentence","html":"「薬」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"薬 は N5 の 漢字 です"},{"type":"sentence","html":"「薬」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"薬 の 読み方 を 覚えます"}]},{"no":71,"kanji":"米","on":"ベイ・マイ","kun":"こめ","bn":"চাল","cat":"Ch 8 খাবার ও রান্না","examples":"米= চাল","six_examples":[{"type":"word","html":"<ruby>米<rt>こめ</rt></ruby> = চাল","plain":"米 こめ kome চাল"},{"type":"word","html":"<ruby>お米<rt>おこめ</rt></ruby> = চাল (সম্মানসূচক)","plain":"お米 おこめ okome চাল (সম্মানসূচক)"},{"type":"word","html":"<ruby>新米<rt>しんまい</rt></ruby> = নতুন চাল","plain":"新米 しんまい shinmai নতুন চাল"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「米」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 米 を 書きます"},{"type":"sentence","html":"「米」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"米 は N5 の 漢字 です"},{"type":"sentence","html":"「米」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"米 の 読み方 を 覚えます"}]},{"no":72,"kanji":"肉","on":"ニク","kun":"—","bn":"মাংস","cat":"Ch 8 খাবার ও রান্না","examples":"肉= মাংস","six_examples":[{"type":"word","html":"<ruby>肉<rt>にく</rt></ruby> = মাংস","plain":"肉 にく niku মাংস"},{"type":"word","html":"<ruby>牛肉<rt>ぎゅうにく</rt></ruby> = গরুর মাংস","plain":"牛肉 ぎゅうにく gyuuniku গরুর মাংস"},{"type":"word","html":"<ruby>豚肉<rt>ぶたにく</rt></ruby> = শুকরের মাংস","plain":"豚肉 ぶたにく butaniku শুকরের মাংস"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「肉」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 肉 を 書きます"},{"type":"sentence","html":"「肉」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"肉 は N5 の 漢字 です"},{"type":"sentence","html":"「肉」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"肉 の 読み方 を 覚えます"}]},{"no":73,"kanji":"魚","on":"ギョ","kun":"さかな・うお","bn":"মাছ","cat":"Ch 8 খাবার ও রান্না","examples":"魚= মাছ","six_examples":[{"type":"word","html":"<ruby>魚<rt>さかな</rt></ruby> = মাছ","plain":"魚 さかな sakana মাছ"},{"type":"word","html":"<ruby>金魚<rt>きんぎょ</rt></ruby> = স্বর্ণমাছ","plain":"金魚 きんぎょ kingyo স্বর্ণমাছ"},{"type":"word","html":"<ruby>魚屋<rt>さかなや</rt></ruby> = মাছের দোকান","plain":"魚屋 さかなや sakanaya মাছের দোকান"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「魚」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 魚 を 書きます"},{"type":"sentence","html":"「魚」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"魚 は N5 の 漢字 です"},{"type":"sentence","html":"「魚」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"魚 の 読み方 を 覚えます"}]},{"no":74,"kanji":"茶","on":"チャ・サ","kun":"—","bn":"চা","cat":"Ch 8 খাবার ও রান্না","examples":"お茶= চা","six_examples":[{"type":"word","html":"<ruby>お茶<rt>おちゃ</rt></ruby> = চা","plain":"お茶 おちゃ ocha চা"},{"type":"word","html":"<ruby>紅茶<rt>こうちゃ</rt></ruby> = কালো চা","plain":"紅茶 こうちゃ koucha কালো চা"},{"type":"word","html":"<ruby>茶色<rt>ちゃいろ</rt></ruby> = বাদামি","plain":"茶色 ちゃいろ chairo বাদামি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「茶」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 茶 を 書きます"},{"type":"sentence","html":"「茶」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"茶 は N5 の 漢字 です"},{"type":"sentence","html":"「茶」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"茶 の 読み方 を 覚えます"}]},{"no":75,"kanji":"酒","on":"シュ","kun":"さけ・さか","bn":"মদ","cat":"Ch 8 খাবার ও রান্না","examples":"酒= মদ","six_examples":[{"type":"word","html":"<ruby>酒<rt>さけ</rt></ruby> = মদ","plain":"酒 さけ sake মদ"},{"type":"word","html":"<ruby>日本酒<rt>にほんしゅ</rt></ruby> = জাপানি মদ","plain":"日本酒 にほんしゅ nihonshu জাপানি মদ"},{"type":"word","html":"<ruby>酒屋<rt>さかや</rt></ruby> = মদের দোকান","plain":"酒屋 さかや sakaya মদের দোকান"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「酒」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 酒 を 書きます"},{"type":"sentence","html":"「酒」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"酒 は N5 の 漢字 です"},{"type":"sentence","html":"「酒」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"酒 の 読み方 を 覚えます"}]},{"no":76,"kanji":"菜","on":"サイ","kun":"な","bn":"শাকসবজি","cat":"Ch 8 খাবার ও রান্না","examples":"野菜= শাকসবজি","six_examples":[{"type":"word","html":"<ruby>野菜<rt>やさい</rt></ruby> = শাকসবজি","plain":"野菜 やさい yasai শাকসবজি"},{"type":"word","html":"<ruby>白菜<rt>はくさい</rt></ruby> = বাঁধাকপি","plain":"白菜 はくさい hakusai বাঁধাকপি"},{"type":"word","html":"<ruby>菜園<rt>さいえん</rt></ruby> = বাগান","plain":"菜園 さいえん saien বাগান"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「菜」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 菜 を 書きます"},{"type":"sentence","html":"「菜」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"菜 は N5 の 漢字 です"},{"type":"sentence","html":"「菜」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"菜 の 読み方 を 覚えます"}]},{"no":77,"kanji":"果","on":"カ","kun":"はたす・はてる・くだもの","bn":"ফল","cat":"Ch 8 খাবার ও রান্না","examples":"果物= ফল","six_examples":[{"type":"word","html":"<ruby>果物<rt>くだもの</rt></ruby> = ফল","plain":"果物 くだもの kudamono ফল"},{"type":"word","html":"<ruby>果実<rt>かじつ</rt></ruby> = ফলমূল","plain":"果実 かじつ kajitsu ফলমূল"},{"type":"word","html":"<ruby>結果<rt>けっか</rt></ruby> = ফলাফল","plain":"結果 けっか kekka ফলাফল"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「果」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 果 を 書きます"},{"type":"sentence","html":"「果」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"果 は N5 の 漢字 です"},{"type":"sentence","html":"「果」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"果 の 読み方 を 覚えます"}]},{"no":78,"kanji":"物","on":"ブツ・モツ","kun":"もの","bn":"জিনিস","cat":"Ch 8 খাবার ও রান্না","examples":"物= জিনিস","six_examples":[{"type":"word","html":"<ruby>物<rt>もの</rt></ruby> = জিনিস","plain":"物 もの mono জিনিস"},{"type":"word","html":"<ruby>食べ物<rt>たべもの</rt></ruby> = খাবার","plain":"食べ物 たべもの tabemono খাবার"},{"type":"word","html":"<ruby>動物<rt>どうぶつ</rt></ruby> = জন্তু","plain":"動物 どうぶつ doubutsu জন্তু"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「物」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 物 を 書きます"},{"type":"sentence","html":"「物」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"物 は N5 の 漢字 です"},{"type":"sentence","html":"「物」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"物 の 読み方 を 覚えます"}]},{"no":79,"kanji":"料","on":"リョウ","kun":"—","bn":"উপাদান","cat":"Ch 8 খাবার ও রান্না","examples":"料理= রান্না","six_examples":[{"type":"word","html":"<ruby>料理<rt>りょうり</rt></ruby> = রান্না","plain":"料理 りょうり ryouri রান্না"},{"type":"word","html":"<ruby>材料<rt>ざいりょう</rt></ruby> = উপাদান","plain":"材料 ざいりょう zairyou উপাদান"},{"type":"word","html":"<ruby>無料<rt>むりょう</rt></ruby> = ফ্রি","plain":"無料 むりょう muryou ফ্রি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「料」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 料 を 書きます"},{"type":"sentence","html":"「料」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"料 は N5 の 漢字 です"},{"type":"sentence","html":"「料」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"料 の 読み方 を 覚えます"}]},{"no":80,"kanji":"理","on":"リ","kun":"—","bn":"বিজ্ঞান/ব্যবস্থা","cat":"Ch 8 খাবার ও রান্না","examples":"料理= রান্না","six_examples":[{"type":"word","html":"<ruby>料理<rt>りょうり</rt></ruby> = রান্না","plain":"料理 りょうり ryouri রান্না"},{"type":"word","html":"<ruby>理由<rt>りゆう</rt></ruby> = কারণ","plain":"理由 りゆう riyuu কারণ"},{"type":"word","html":"<ruby>理解<rt>りかい</rt></ruby> = বোঝা","plain":"理解 りかい rikai বোঝা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「理」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 理 を 書きます"},{"type":"sentence","html":"「理」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"理 は N5 の 漢字 です"},{"type":"sentence","html":"「理」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"理 の 読み方 を 覚えます"}]},{"no":81,"kanji":"日","on":"ニチ・ジツ","kun":"ひ・か","bn":"দিন/সূর্য","cat":"Ch 9 সময় ও ক্যালেন্ডার","examples":"日曜日= রবিবার","six_examples":[{"type":"word","html":"<ruby>日曜日<rt>にちようび</rt></ruby> = রবিবার","plain":"日曜日 にちようび nichiyoubi রবিবার"},{"type":"word","html":"<ruby>今日<rt>きょう</rt></ruby> = আজ","plain":"今日 きょう kyou আজ"},{"type":"word","html":"<ruby>毎日<rt>まいにち</rt></ruby> = প্রতিদিন","plain":"毎日 まいにち mainichi প্রতিদিন"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「日」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 日 を 書きます"},{"type":"sentence","html":"「日」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"日 は N5 の 漢字 です"},{"type":"sentence","html":"「日」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"日 の 読み方 を 覚えます"}]},{"no":82,"kanji":"月","on":"ゲツ・ガツ","kun":"つき","bn":"চাঁদ/মাস","cat":"Ch 9 সময় ও ক্যালেন্ডার","examples":"月曜日= সোমবার","six_examples":[{"type":"word","html":"<ruby>月曜日<rt>げつようび</rt></ruby> = সোমবার","plain":"月曜日 げつようび getsuyoubi সোমবার"},{"type":"word","html":"<ruby>一月<rt>いちがつ</rt></ruby> = জানুয়ারি","plain":"一月 いちがつ ichigatsu জানুয়ারি"},{"type":"word","html":"<ruby>毎月<rt>まいつき</rt></ruby> = প্রতি মাস","plain":"毎月 まいつき maitsuki প্রতি মাস"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「月」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 月 を 書きます"},{"type":"sentence","html":"「月」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"月 は N5 の 漢字 です"},{"type":"sentence","html":"「月」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"月 の 読み方 を 覚えます"}]},{"no":83,"kanji":"年","on":"ネン","kun":"とし","bn":"বছর","cat":"Ch 9 সময় ও ক্যালেন্ডার","examples":"今年= এই বছর","six_examples":[{"type":"word","html":"<ruby>今年<rt>ことし</rt></ruby> = এই বছর","plain":"今年 ことし kotoshi এই বছর"},{"type":"word","html":"<ruby>来年<rt>らいねん</rt></ruby> = আগামী বছর","plain":"来年 らいねん rainen আগামী বছর"},{"type":"word","html":"<ruby>毎年<rt>まいとし</rt></ruby> = প্রতি বছর","plain":"毎年 まいとし maitoshi প্রতি বছর"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「年」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 年 を 書きます"},{"type":"sentence","html":"「年」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"年 は N5 の 漢字 です"},{"type":"sentence","html":"「年」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"年 の 読み方 を 覚えます"}]},{"no":84,"kanji":"時","on":"ジ","kun":"とき","bn":"সময়","cat":"Ch 9 সময় ও ক্যালেন্ডার","examples":"時々= মাঝেমাঝে","six_examples":[{"type":"word","html":"<ruby>時々<rt>ときどき</rt></ruby> = মাঝেমাঝে","plain":"時々 ときどき tokidoki মাঝেমাঝে"},{"type":"word","html":"<ruby>時間<rt>じかん</rt></ruby> = সময়","plain":"時間 じかん jikan সময়"},{"type":"word","html":"<ruby>時計<rt>とけい</rt></ruby> = ঘড়ি","plain":"時計 とけい tokei ঘড়ি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「時」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 時 を 書きます"},{"type":"sentence","html":"「時」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"時 は N5 の 漢字 です"},{"type":"sentence","html":"「時」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"時 の 読み方 を 覚えます"}]},{"no":85,"kanji":"分","on":"ブン・フン・ブ","kun":"わける・わかる","bn":"মিনিট","cat":"Ch 9 সময় ও ক্যালেন্ডার","examples":"分かる= বোঝা","six_examples":[{"type":"word","html":"<ruby>分かる<rt>わかる</rt></ruby> = বোঝা","plain":"分かる わかる wakaru বোঝা"},{"type":"word","html":"<ruby>十分<rt>じゅっぷん</rt></ruby> = দশ মিনিট","plain":"十分 じゅっぷん juppun দশ মিনিট"},{"type":"word","html":"<ruby>分野<rt>ぶんや</rt></ruby> = ক্ষেত্র","plain":"分野 ぶんや bunya ক্ষেত্র"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「分」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 分 を 書きます"},{"type":"sentence","html":"「分」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"分 は N5 の 漢字 です"},{"type":"sentence","html":"「分」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"分 の 読み方 を 覚えます"}]},{"no":86,"kanji":"午","on":"ゴ","kun":"—","bn":"দুপুর","cat":"Ch 9 সময় ও ক্যালেন্ডার","examples":"午前= সকাল","six_examples":[{"type":"word","html":"<ruby>午前<rt>ごぜん</rt></ruby> = সকাল","plain":"午前 ごぜん gozen সকাল"},{"type":"word","html":"<ruby>午後<rt>ごご</rt></ruby> = বিকাল","plain":"午後 ごご gogo বিকাল"},{"type":"word","html":"<ruby>正午<rt>しょうご</rt></ruby> = দুপুর ১২টা","plain":"正午 しょうご shougo দুপুর ১২টা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「午」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 午 を 書きます"},{"type":"sentence","html":"「午」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"午 は N5 の 漢字 です"},{"type":"sentence","html":"「午」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"午 の 読み方 を 覚えます"}]},{"no":87,"kanji":"前","on":"ゼン","kun":"まえ","bn":"আগে","cat":"Ch 9 সময় ও ক্যালেন্ডার","examples":"前= সামনে","six_examples":[{"type":"word","html":"<ruby>前<rt>まえ</rt></ruby> = সামনে","plain":"前 まえ mae সামনে"},{"type":"word","html":"<ruby>午前<rt>ごぜん</rt></ruby> = সকাল","plain":"午前 ごぜん gozen সকাল"},{"type":"word","html":"<ruby>以前<rt>いぜん</rt></ruby> = আগে","plain":"以前 いぜん izen আগে"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「前」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 前 を 書きます"},{"type":"sentence","html":"「前」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"前 は N5 の 漢字 です"},{"type":"sentence","html":"「前」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"前 の 読み方 を 覚えます"}]},{"no":88,"kanji":"後","on":"ゴ・コウ","kun":"のち・うしろ・あと・おくれる","bn":"পরে","cat":"Ch 9 সময় ও ক্যালেন্ডার","examples":"後= পরে","six_examples":[{"type":"word","html":"<ruby>後<rt>あと</rt></ruby> = পরে","plain":"後 あと ato পরে"},{"type":"word","html":"<ruby>午後<rt>ごご</rt></ruby> = বিকাল","plain":"午後 ごご gogo বিকাল"},{"type":"word","html":"<ruby>最後<rt>さいご</rt></ruby> = শেষ","plain":"最後 さいご saigo শেষ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「後」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 後 を 書きます"},{"type":"sentence","html":"「後」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"後 は N5 の 漢字 です"},{"type":"sentence","html":"「後」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"後 の 読み方 を 覚えます"}]},{"no":89,"kanji":"間","on":"カン・ケン","kun":"あいだ・ま","bn":"মাঝে","cat":"Ch 9 সময় ও ক্যালেন্ডার","examples":"間= মাঝে","six_examples":[{"type":"word","html":"<ruby>間<rt>あいだ</rt></ruby> = মাঝে","plain":"間 あいだ aida মাঝে"},{"type":"word","html":"<ruby>時間<rt>じかん</rt></ruby> = সময়","plain":"時間 じかん jikan সময়"},{"type":"word","html":"<ruby>人間<rt>にんげん</rt></ruby> = মানুষ","plain":"人間 にんげん ningen মানুষ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「間」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 間 を 書きます"},{"type":"sentence","html":"「間」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"間 は N5 の 漢字 です"},{"type":"sentence","html":"「間」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"間 の 読み方 を 覚えます"}]},{"no":90,"kanji":"毎","on":"マイ","kun":"ごと","bn":"প্রতি","cat":"Ch 9 সময় ও ক্যালেন্ডার","examples":"毎日= প্রতিদিন","six_examples":[{"type":"word","html":"<ruby>毎日<rt>まいにち</rt></ruby> = প্রতিদিন","plain":"毎日 まいにち mainichi প্রতিদিন"},{"type":"word","html":"<ruby>毎週<rt>まいしゅう</rt></ruby> = প্রতি সপ্তাহ","plain":"毎週 まいしゅう maishuu প্রতি সপ্তাহ"},{"type":"word","html":"<ruby>毎月<rt>まいつき</rt></ruby> = প্রতি মাস","plain":"毎月 まいつき maitsuki প্রতি মাস"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「毎」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 毎 を 書きます"},{"type":"sentence","html":"「毎」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"毎 は N5 の 漢字 です"},{"type":"sentence","html":"「毎」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"毎 の 読み方 を 覚えます"}]},{"no":91,"kanji":"車","on":"シャ","kun":"くるま","bn":"গাড়ি","cat":"Ch 10 যাতায়াত ও ভ্রমণ","examples":"車= গাড়ি","six_examples":[{"type":"word","html":"<ruby>車<rt>くるま</rt></ruby> = গাড়ি","plain":"車 くるま kuruma গাড়ি"},{"type":"word","html":"<ruby>電車<rt>でんしゃ</rt></ruby> = ট্রেন","plain":"電車 でんしゃ densha ট্রেন"},{"type":"word","html":"<ruby>自転車<rt>じてんしゃ</rt></ruby> = সাইকেল","plain":"自転車 じてんしゃ jitensha সাইকেল"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「車」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 車 を 書きます"},{"type":"sentence","html":"「車」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"車 は N5 の 漢字 です"},{"type":"sentence","html":"「車」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"車 の 読み方 を 覚えます"}]},{"no":92,"kanji":"電","on":"デン","kun":"—","bn":"বিদ্যুৎ","cat":"Ch 10 যাতায়াত ও ভ্রমণ","examples":"電車= ট্রেন","six_examples":[{"type":"word","html":"<ruby>電車<rt>でんしゃ</rt></ruby> = ট্রেন","plain":"電車 でんしゃ densha ট্রেন"},{"type":"word","html":"<ruby>電話<rt>でんわ</rt></ruby> = টেলিফোন","plain":"電話 でんわ denwa টেলিফোন"},{"type":"word","html":"<ruby>電気<rt>でんき</rt></ruby> = বিদ্যুৎ","plain":"電気 でんき denki বিদ্যুৎ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「電」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 電 を 書きます"},{"type":"sentence","html":"「電」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"電 は N5 の 漢字 です"},{"type":"sentence","html":"「電」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"電 の 読み方 を 覚えます"}]},{"no":93,"kanji":"駅","on":"エキ","kun":"—","bn":"স্টেশন","cat":"Ch 10 যাতায়াত ও ভ্রমণ","examples":"駅= স্টেশন","six_examples":[{"type":"word","html":"<ruby>駅<rt>えき</rt></ruby> = স্টেশন","plain":"駅 えき eki স্টেশন"},{"type":"word","html":"<ruby>駅前<rt>えきまえ</rt></ruby> = স্টেশনের সামনে","plain":"駅前 えきまえ ekimae স্টেশনের সামনে"},{"type":"word","html":"<ruby>駅員<rt>えきいん</rt></ruby> = স্টেশন কর্মচারী","plain":"駅員 えきいん ekiin স্টেশন কর্মচারী"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「駅」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 駅 を 書きます"},{"type":"sentence","html":"「駅」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"駅 は N5 の 漢字 です"},{"type":"sentence","html":"「駅」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"駅 の 読み方 を 覚えます"}]},{"no":94,"kanji":"道","on":"ドウ・トウ","kun":"みち","bn":"রাস্তা","cat":"Ch 10 যাতায়াত ও ভ্রমণ","examples":"道= রাস্তা","six_examples":[{"type":"word","html":"<ruby>道<rt>みち</rt></ruby> = রাস্তা","plain":"道 みち michi রাস্তা"},{"type":"word","html":"<ruby>道路<rt>どうろ</rt></ruby> = পথ","plain":"道路 どうろ douro পথ"},{"type":"word","html":"<ruby>地下道<rt>ちかどう</rt></ruby> = আন্ডারপাস","plain":"地下道 ちかどう chikadou আন্ডারপাস"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「道」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 道 を 書きます"},{"type":"sentence","html":"「道」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"道 は N5 の 漢字 です"},{"type":"sentence","html":"「道」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"道 の 読み方 を 覚えます"}]},{"no":95,"kanji":"門","on":"モン","kun":"かど","bn":"দরজা/গেট","cat":"Ch 10 যাতায়াত ও ভ্রমণ","examples":"門= দরজা","six_examples":[{"type":"word","html":"<ruby>門<rt>もん</rt></ruby> = দরজা","plain":"門 もん mon দরজা"},{"type":"word","html":"<ruby>専門<rt>せんもん</rt></ruby> = বিশেষজ্ঞ","plain":"専門 せんもん senmon বিশেষজ্ঞ"},{"type":"word","html":"<ruby>入門<rt>にゅうもん</rt></ruby> = প্রবেশ","plain":"入門 にゅうもん nyuumon প্রবেশ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「門」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 門 を 書きます"},{"type":"sentence","html":"「門」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"門 は N5 の 漢字 です"},{"type":"sentence","html":"「門」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"門 の 読み方 を 覚えます"}]},{"no":96,"kanji":"店","on":"テン","kun":"みせ","bn":"দোকান","cat":"Ch 10 যাতায়াত ও ভ্রমণ","examples":"店= দোকান","six_examples":[{"type":"word","html":"<ruby>店<rt>みせ</rt></ruby> = দোকান","plain":"店 みせ mise দোকান"},{"type":"word","html":"<ruby>本屋<rt>ほんや</rt></ruby> = বইয়ের দোকান","plain":"本屋 ほんや honya বইয়ের দোকান"},{"type":"word","html":"<ruby>喫茶店<rt>きっさてん</rt></ruby> = কফি শপ","plain":"喫茶店 きっさてん kissaten কফি শপ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「店」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 店 を 書きます"},{"type":"sentence","html":"「店」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"店 は N5 の 漢字 です"},{"type":"sentence","html":"「店」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"店 の 読み方 を 覚えます"}]},{"no":97,"kanji":"家","on":"カ・ケ","kun":"いえ・や","bn":"বাড়ি","cat":"Ch 10 যাতায়াত ও ভ্রমণ","examples":"家= বাড়ি","six_examples":[{"type":"word","html":"<ruby>家<rt>いえ</rt></ruby> = বাড়ি","plain":"家 いえ ie বাড়ি"},{"type":"word","html":"<ruby>家族<rt>かぞく</rt></ruby> = পরিবার","plain":"家族 かぞく kazoku পরিবার"},{"type":"word","html":"<ruby>大家<rt>おおや</rt></ruby> = বাড়িওয়ালা","plain":"大家 おおや ooya বাড়িওয়ালা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「家」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 家 を 書きます"},{"type":"sentence","html":"「家」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"家 は N5 の 漢字 です"},{"type":"sentence","html":"「家」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"家 の 読み方 を 覚えます"}]},{"no":98,"kanji":"室","on":"シツ","kun":"むろ","bn":"ঘর","cat":"Ch 10 যাতায়াত ও ভ্রমণ","examples":"教室= ক্লাসরুম","six_examples":[{"type":"word","html":"<ruby>教室<rt>きょうしつ</rt></ruby> = ক্লাসরুম","plain":"教室 きょうしつ kyoushitsu ক্লাসরুম"},{"type":"word","html":"<ruby>会議室<rt>かいぎしつ</rt></ruby> = মিটিং রুম","plain":"会議室 かいぎしつ kaigishitsu মিটিং রুম"},{"type":"word","html":"<ruby>地下室<rt>ちかしつ</rt></ruby> = বেসমেন্ট","plain":"地下室 ちかしつ chikashitsu বেসমেন্ট"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「室」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 室 を 書きます"},{"type":"sentence","html":"「室」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"室 は N5 の 漢字 です"},{"type":"sentence","html":"「室」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"室 の 読み方 を 覚えます"}]},{"no":99,"kanji":"国","on":"コク","kun":"くに","bn":"দেশ","cat":"Ch 10 যাতায়াত ও ভ্রমণ","examples":"国= দেশ","six_examples":[{"type":"word","html":"<ruby>国<rt>くに</rt></ruby> = দেশ","plain":"国 くに kuni দেশ"},{"type":"word","html":"<ruby>外国<rt>がいこく</rt></ruby> = বিদেশ","plain":"外国 がいこく gaikoku বিদেশ"},{"type":"word","html":"<ruby>中国<rt>ちゅうごく</rt></ruby> = চীন","plain":"中国 ちゅうごく chuugoku চীন"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「国」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 国 を 書きます"},{"type":"sentence","html":"「国」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"国 は N5 の 漢字 です"},{"type":"sentence","html":"「国」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"国 の 読み方 を 覚えます"}]},{"no":100,"kanji":"京","on":"キョウ・ケイ","kun":"—","bn":"রাজধানী","cat":"Ch 10 যাতায়াত ও ভ্রমণ","examples":"東京= টোকিও","six_examples":[{"type":"word","html":"<ruby>東京<rt>とうきょう</rt></ruby> = টোকিও","plain":"東京 とうきょう toukyou টোকিও"},{"type":"word","html":"<ruby>京都<rt>きょうと</rt></ruby> = কিয়োটো","plain":"京都 きょうと kyouto কিয়োটো"},{"type":"word","html":"<ruby>北京<rt>ぺきん</rt></ruby> = বেইজিং","plain":"北京 ぺきん pekin বেইজিং"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「京」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 京 を 書きます"},{"type":"sentence","html":"「京」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"京 は N5 の 漢字 です"},{"type":"sentence","html":"「京」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"京 の 読み方 を 覚えます"}]},{"no":101,"kanji":"仕","on":"シ・ジ","kun":"つかえる","bn":"কাজ","cat":"Ch 11 কাজ ও অর্থ","examples":"仕事= কাজ","six_examples":[{"type":"word","html":"<ruby>仕事<rt>しごと</rt></ruby> = কাজ","plain":"仕事 しごと shigoto কাজ"},{"type":"word","html":"<ruby>仕方<rt>しかた</rt></ruby> = পদ্ধতি","plain":"仕方 しかた shikata পদ্ধতি"},{"type":"word","html":"<ruby>仕上げる<rt>しあげる</rt></ruby> = শেষ করা","plain":"仕上げる しあげる shiageeru শেষ করা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「仕」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 仕 を 書きます"},{"type":"sentence","html":"「仕」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"仕 は N5 の 漢字 です"},{"type":"sentence","html":"「仕」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"仕 の 読み方 を 覚えます"}]},{"no":102,"kanji":"事","on":"ジ・ズ","kun":"こと","bn":"বিষয়/কাজ","cat":"Ch 11 কাজ ও অর্থ","examples":"仕事= কাজ","six_examples":[{"type":"word","html":"<ruby>仕事<rt>しごと</rt></ruby> = কাজ","plain":"仕事 しごと shigoto কাজ"},{"type":"word","html":"<ruby>大事<rt>だいじ</rt></ruby> = গুরুত্বপূর্ণ","plain":"大事 だいじ daiji গুরুত্বপূর্ণ"},{"type":"word","html":"<ruby>事故<rt>じこ</rt></ruby> = দুর্ঘটনা","plain":"事故 じこ jiko দুর্ঘটনা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「事」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 事 を 書きます"},{"type":"sentence","html":"「事」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"事 は N5 の 漢字 です"},{"type":"sentence","html":"「事」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"事 の 読み方 を 覚えます"}]},{"no":103,"kanji":"作","on":"サク・サ","kun":"つくる","bn":"তৈরি","cat":"Ch 11 কাজ ও অর্থ","examples":"作る= তৈরি করা","six_examples":[{"type":"word","html":"<ruby>作る<rt>つくる</rt></ruby> = তৈরি করা","plain":"作る つくる tsukuru তৈরি করা"},{"type":"word","html":"<ruby>作品<rt>さくひん</rt></ruby> = কর্ম","plain":"作品 さくひん sakuhin কর্ম"},{"type":"word","html":"<ruby>作文<rt>さくぶん</rt></ruby> = রচনা","plain":"作文 さくぶん sakubun রচনা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「作」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 作 を 書きます"},{"type":"sentence","html":"「作」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"作 は N5 の 漢字 です"},{"type":"sentence","html":"「作」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"作 の 読み方 を 覚えます"}]},{"no":104,"kanji":"業","on":"ギョウ・ゴウ","kun":"わざ","bn":"ব্যবসা","cat":"Ch 11 কাজ ও অর্থ","examples":"仕事= কাজ","six_examples":[{"type":"word","html":"<ruby>仕事<rt>しごと</rt></ruby> = কাজ","plain":"仕事 しごと shigoto কাজ"},{"type":"word","html":"<ruby>授業<rt>じゅぎょう</rt></ruby> = ক্লাস","plain":"授業 じゅぎょう jugyou ক্লাস"},{"type":"word","html":"<ruby>営業<rt>えいぎょう</rt></ruby> = ব্যবসা","plain":"営業 えいぎょう eigyou ব্যবসা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「業」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 業 を 書きます"},{"type":"sentence","html":"「業」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"業 は N5 の 漢字 です"},{"type":"sentence","html":"「業」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"業 の 読み方 を 覚えます"}]},{"no":105,"kanji":"買","on":"バイ","kun":"かう","bn":"কেনা","cat":"Ch 11 কাজ ও অর্থ","examples":"買う= কেনা","six_examples":[{"type":"word","html":"<ruby>買う<rt>かう</rt></ruby> = কেনা","plain":"買う かう kau কেনা"},{"type":"word","html":"<ruby>買い物<rt>かいもの</rt></ruby> = কেনাকাটা","plain":"買い物 かいもの kaimono কেনাকাটা"},{"type":"word","html":"<ruby>売買<rt>ばいばい</rt></ruby> = কেনাবেচা","plain":"売買 ばいばい baibai কেনাবেচা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「買」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 買 を 書きます"},{"type":"sentence","html":"「買」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"買 は N5 の 漢字 です"},{"type":"sentence","html":"「買」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"買 の 読み方 を 覚えます"}]},{"no":106,"kanji":"売","on":"バイ","kun":"うる・うれる","bn":"বিক্রি","cat":"Ch 11 কাজ ও অর্থ","examples":"売る= বিক্রি","six_examples":[{"type":"word","html":"<ruby>売る<rt>うる</rt></ruby> = বিক্রি","plain":"売る うる uru বিক্রি"},{"type":"word","html":"<ruby>売店<rt>ばいてん</rt></ruby> = দোকান","plain":"売店 ばいてん baiten দোকান"},{"type":"word","html":"<ruby>売買<rt>ばいばい</rt></ruby> = কেনাবেচা","plain":"売買 ばいばい baibai কেনাবেচা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「売」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 売 を 書きます"},{"type":"sentence","html":"「売」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"売 は N5 の 漢字 です"},{"type":"sentence","html":"「売」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"売 の 読み方 を 覚えます"}]},{"no":107,"kanji":"金","on":"キン・コン","kun":"かね・かな","bn":"টাকা","cat":"Ch 11 কাজ ও অর্থ","examples":"お金= টাকা","six_examples":[{"type":"word","html":"<ruby>お金<rt>おかね</rt></ruby> = টাকা","plain":"お金 おかね okane টাকা"},{"type":"word","html":"<ruby>金曜日<rt>きんようび</rt></ruby> = শুক্রবার","plain":"金曜日 きんようび kinyoubi শুক্রবার"},{"type":"word","html":"<ruby>銀行<rt>ぎんこう</rt></ruby> = ব্যাংক","plain":"銀行 ぎんこう ginkou ব্যাংক"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「金」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 金 を 書きます"},{"type":"sentence","html":"「金」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"金 は N5 の 漢字 です"},{"type":"sentence","html":"「金」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"金 の 読み方 を 覚えます"}]},{"no":108,"kanji":"銀","on":"ギン","kun":"しろがね","bn":"রূপা","cat":"Ch 11 কাজ ও অর্থ","examples":"銀行= ব্যাংক","six_examples":[{"type":"word","html":"<ruby>銀行<rt>ぎんこう</rt></ruby> = ব্যাংক","plain":"銀行 ぎんこう ginkou ব্যাংক"},{"type":"word","html":"<ruby>銀座<rt>ぎんざ</rt></ruby> = Ginza (স্থান)","plain":"銀座 ぎんざ ginza Ginza (স্থান)"},{"type":"word","html":"<ruby>銀色<rt>ぎんいろ</rt></ruby> = রূপালি","plain":"銀色 ぎんいろ giniro রূপালি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「銀」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 銀 を 書きます"},{"type":"sentence","html":"「銀」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"銀 は N5 の 漢字 です"},{"type":"sentence","html":"「銀」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"銀 の 読み方 を 覚えます"}]},{"no":109,"kanji":"員","on":"イン","kun":"—","bn":"সদস্য","cat":"Ch 11 কাজ ও অর্থ","examples":"会員= সদস্য","six_examples":[{"type":"word","html":"<ruby>会員<rt>かいいん</rt></ruby> = সদস্য","plain":"会員 かいいん kaiin সদস্য"},{"type":"word","html":"<ruby>店員<rt>てんいん</rt></ruby> = দোকানদার","plain":"店員 てんいん tenin দোকানদার"},{"type":"word","html":"<ruby>駅員<rt>えきいん</rt></ruby> = স্টেশন কর্মচারী","plain":"駅員 えきいん ekiin স্টেশন কর্মচারী"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「員」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 員 を 書きます"},{"type":"sentence","html":"「員」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"員 は N5 の 漢字 です"},{"type":"sentence","html":"「員」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"員 の 読み方 を 覚えます"}]},{"no":110,"kanji":"社","on":"シャ","kun":"やしろ","bn":"কোম্পানি","cat":"Ch 11 কাজ ও অর্থ","examples":"会社= কোম্পানি","six_examples":[{"type":"word","html":"<ruby>会社<rt>かいしゃ</rt></ruby> = কোম্পানি","plain":"会社 かいしゃ kaisha কোম্পানি"},{"type":"word","html":"<ruby>社長<rt>しゃちょう</rt></ruby> = প্রেসিডেন্ট","plain":"社長 しゃちょう shachou প্রেসিডেন্ট"},{"type":"word","html":"<ruby>神社<rt>じんじゃ</rt></ruby> = মন্দির","plain":"神社 じんじゃ jinjya মন্দির"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「社」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 社 を 書きます"},{"type":"sentence","html":"「社」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"社 は N5 の 漢字 です"},{"type":"sentence","html":"「社」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"社 の 読み方 を 覚えます"}]},{"no":111,"kanji":"大","on":"ダイ・タイ","kun":"おお・おおきい","bn":"বড়","cat":"Ch 12 বিশেষণ ও বর্ণনা","examples":"大きい= বড়","six_examples":[{"type":"word","html":"<ruby>大きい<rt>おおきい</rt></ruby> = বড়","plain":"大きい おおきい ookii বড়"},{"type":"word","html":"<ruby>大学<rt>だいがく</rt></ruby> = বিশ্ববিদ্যালয়","plain":"大学 だいがく daigaku বিশ্ববিদ্যালয়"},{"type":"word","html":"<ruby>大体<rt>だいたい</rt></ruby> = প্রায়","plain":"大体 だいたい daitai প্রায়"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「大」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 大 を 書きます"},{"type":"sentence","html":"「大」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"大 は N5 の 漢字 です"},{"type":"sentence","html":"「大」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"大 の 読み方 を 覚えます"}]},{"no":112,"kanji":"小","on":"ショウ","kun":"ちいさい・こ・お","bn":"ছোট","cat":"Ch 12 বিশেষণ ও বর্ণনা","examples":"小さい= ছোট","six_examples":[{"type":"word","html":"<ruby>小さい<rt>ちいさい</rt></ruby> = ছোট","plain":"小さい ちいさい chiisai ছোট"},{"type":"word","html":"<ruby>小学校<rt>しょうがっこう</rt></ruby> = প্রাথমিক স্কুল","plain":"小学校 しょうがっこう shougakkou প্রাথমিক স্কুল"},{"type":"word","html":"<ruby>小説<rt>しょうせつ</rt></ruby> = উপন্যাস","plain":"小説 しょうせつ shousetsu উপন্যাস"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「小」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 小 を 書きます"},{"type":"sentence","html":"「小」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"小 は N5 の 漢字 です"},{"type":"sentence","html":"「小」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"小 の 読み方 を 覚えます"}]},{"no":113,"kanji":"高","on":"コウ","kun":"たかい・たか・たかまる","bn":"উঁচু","cat":"Ch 12 বিশেষণ ও বর্ণনা","examples":"高い= উঁচু/দামি","six_examples":[{"type":"word","html":"<ruby>高い<rt>たかい</rt></ruby> = উঁচু/দামি","plain":"高い たかい takai উঁচু/দামি"},{"type":"word","html":"<ruby>高校<rt>こうこう</rt></ruby> = হাই স্কুল","plain":"高校 こうこう koukou হাই স্কুল"},{"type":"word","html":"<ruby>最高<rt>さいこう</rt></ruby> = সেরা","plain":"最高 さいこう saikou সেরা"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「高」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 高 を 書きます"},{"type":"sentence","html":"「高」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"高 は N5 の 漢字 です"},{"type":"sentence","html":"「高」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"高 の 読み方 を 覚えます"}]},{"no":114,"kanji":"安","on":"アン","kun":"やすい","bn":"সস্তা","cat":"Ch 12 বিশেষণ ও বর্ণনা","examples":"安い= সস্তা","six_examples":[{"type":"word","html":"<ruby>安い<rt>やすい</rt></ruby> = সস্তা","plain":"安い やすい yasui সস্তা"},{"type":"word","html":"<ruby>安全<rt>あんぜん</rt></ruby> = নিরাপদ","plain":"安全 あんぜん anzen নিরাপদ"},{"type":"word","html":"<ruby>安心<rt>あんしん</rt></ruby> = শান্তি","plain":"安心 あんしん anshin শান্তি"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「安」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 安 を 書きます"},{"type":"sentence","html":"「安」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"安 は N5 の 漢字 です"},{"type":"sentence","html":"「安」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"安 の 読み方 を 覚えます"}]},{"no":115,"kanji":"新","on":"シン","kun":"あたらしい・あらた・にい","bn":"নতুন","cat":"Ch 12 বিশেষণ ও বর্ণনা","examples":"新しい= নতুন","six_examples":[{"type":"word","html":"<ruby>新しい<rt>あたらしい</rt></ruby> = নতুন","plain":"新しい あたらしい atarashii নতুন"},{"type":"word","html":"<ruby>新聞<rt>しんぶん</rt></ruby> = সংবাদপত্র","plain":"新聞 しんぶん shinbun সংবাদপত্র"},{"type":"word","html":"<ruby>新年<rt>しんねん</rt></ruby> = নববর্ষ","plain":"新年 しんねん shinnen নববর্ষ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「新」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 新 を 書きます"},{"type":"sentence","html":"「新」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"新 は N5 の 漢字 です"},{"type":"sentence","html":"「新」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"新 の 読み方 を 覚えます"}]},{"no":116,"kanji":"古","on":"コ","kun":"ふるい・ふるす","bn":"পুরনো","cat":"Ch 12 বিশেষণ ও বর্ণনা","examples":"古い= পুরনো","six_examples":[{"type":"word","html":"<ruby>古い<rt>ふるい</rt></ruby> = পুরনো","plain":"古い ふるい furui পুরনো"},{"type":"word","html":"<ruby>中古<rt>ちゅうこ</rt></ruby> = ব্যবহৃত","plain":"中古 ちゅうこ chuuko ব্যবহৃত"},{"type":"word","html":"<ruby>古典<rt>こてん</rt></ruby> = ক্লাসিক","plain":"古典 こてん koten ক্লাসিক"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「古」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 古 を 書きます"},{"type":"sentence","html":"「古」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"古 は N5 の 漢字 です"},{"type":"sentence","html":"「古」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"古 の 読み方 を 覚えます"}]},{"no":117,"kanji":"長","on":"チョウ","kun":"ながい・おさ","bn":"লম্বা","cat":"Ch 12 বিশেষণ ও বর্ণনা","examples":"長い= লম্বা","six_examples":[{"type":"word","html":"<ruby>長い<rt>ながい</rt></ruby> = লম্বা","plain":"長い ながい nagai লম্বা"},{"type":"word","html":"<ruby>社長<rt>しゃちょう</rt></ruby> = প্রেসিডেন্ট","plain":"社長 しゃちょう shachou প্রেসিডেন্ট"},{"type":"word","html":"<ruby>部長<rt>ぶちょう</rt></ruby> = বিভাগীয় প্রধান","plain":"部長 ぶちょう buchou বিভাগীয় প্রধান"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「長」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 長 を 書きます"},{"type":"sentence","html":"「長」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"長 は N5 の 漢字 です"},{"type":"sentence","html":"「長」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"長 の 読み方 を 覚えます"}]},{"no":118,"kanji":"少","on":"ショウ","kun":"すくない・すこし","bn":"অল্প","cat":"Ch 12 বিশেষণ ও বর্ণনা","examples":"少ない= কম","six_examples":[{"type":"word","html":"<ruby>少ない<rt>すくない</rt></ruby> = কম","plain":"少ない すくない sukunai কম"},{"type":"word","html":"<ruby>少年<rt>しょうねん</rt></ruby> = কিশোর","plain":"少年 しょうねん shounen কিশোর"},{"type":"word","html":"<ruby>少し<rt>すこし</rt></ruby> = অল্প","plain":"少し すこし sukoshi অল্প"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「少」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 少 を 書きます"},{"type":"sentence","html":"「少」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"少 は N5 の 漢字 です"},{"type":"sentence","html":"「少」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"少 の 読み方 を 覚えます"}]},{"no":119,"kanji":"多","on":"タ","kun":"おおい","bn":"বেশি","cat":"Ch 12 বিশেষণ ও বর্ণনা","examples":"多い= বেশি","six_examples":[{"type":"word","html":"<ruby>多い<rt>おおい</rt></ruby> = বেশি","plain":"多い おおい ooi বেশি"},{"type":"word","html":"<ruby>多分<rt>たぶん</rt></ruby> = সম্ভবত","plain":"多分 たぶん tabun সম্ভবত"},{"type":"word","html":"<ruby>多国籍<rt>たこくせき</rt></ruby> = বহুজাতিক","plain":"多国籍 たこくせき takokuseki বহুজাতিক"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「多」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 多 を 書きます"},{"type":"sentence","html":"「多」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"多 は N5 の 漢字 です"},{"type":"sentence","html":"「多」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"多 の 読み方 を 覚えます"}]},{"no":120,"kanji":"早","on":"ソウ・サッ","kun":"はやい・はやまる","bn":"তাড়াতাড়ি","cat":"Ch 12 বিশেষণ ও বর্ণনা","examples":"早い= তাড়াতাড়ি","six_examples":[{"type":"word","html":"<ruby>早い<rt>はやい</rt></ruby> = তাড়াতাড়ি","plain":"早い はやい hayai তাড়াতাড়ি"},{"type":"word","html":"<ruby>早朝<rt>そうちょう</rt></ruby> = ভোর","plain":"早朝 そうちょう souchou ভোর"},{"type":"word","html":"<ruby>早速<rt>さっそく</rt></ruby> = তৎক্ষণাৎ","plain":"早速 さっそく sassoku তৎক্ষণাৎ"},{"type":"sentence","html":"<ruby>私<rt>わたし</rt></ruby>は「早」を<ruby>書<rt>か</rt></ruby>きます。","plain":"私 は 早 を 書きます"},{"type":"sentence","html":"「早」はN5の<ruby>漢字<rt>かんじ</rt></ruby>です。","plain":"早 は N5 の 漢字 です"},{"type":"sentence","html":"「早」の<ruby>読<rt>よ</rt></ruby>み<ruby>方<rt>かた</rt></ruby>を<ruby>覚<rt>おぼ</rt></ruby>えます。","plain":"早 の 読み方 を 覚えます"}]}];
+
+// ===== STATE =====
+const LS_KEY = 'aponarnihon-n5-kanji-dark-learned';
+let learned = new Set();
+try{learned = new Set(JSON.parse(localStorage.getItem(LS_KEY)||'[]'));}catch(e){learned = new Set();}
+let currentView = 'grid';
+let activeCat = 'all';
+let searchQ = '';
+let studyIdx = 0;
+let quizScore = 0;
+let audioEnabled = false;
+let writingIdx = 0;
+
+// ===== UTILITY =====
+function $(s){return document.querySelector(s);}
+function $$(s){return document.querySelectorAll(s);}
+function esc(s){
+  const d = document.createElement('div');
+  d.textContent = s;
+  return d.innerHTML;
+}
+
+// ===== MOBILE OPTIONS PANEL =====
+const mobileQuery = window.matchMedia('(max-width: 600px)');
+function isMobile(){return mobileQuery.matches;}
+function setMobileControls(open){
+  const panel = $('#controlsPanel');
+  const btn = $('#mobileMenuBtn');
+  if(!panel) return;
+
+  if(!isMobile()){
+    panel.classList.remove('mobile-collapsed','mobile-open');
+    if(btn){
+      btn.setAttribute('aria-expanded','false');
+      btn.textContent = '☰ অপশন';
+    }
+    return;
+  }
+
+  panel.classList.toggle('mobile-collapsed', !open);
+  panel.classList.toggle('mobile-open', open);
+  if(btn){
+    btn.setAttribute('aria-expanded', String(open));
+    btn.textContent = open ? '✕ বন্ধ' : '☰ অপশন';
+  }
+}
+function toggleMobileControls(){
+  const panel = $('#controlsPanel');
+  setMobileControls(panel ? panel.classList.contains('mobile-collapsed') : true);
+}
+function hideMobileControls(){
+  if(isMobile()) setMobileControls(false);
+}
+function initMobileControls(){
+  setMobileControls(isMobile() ? false : true);
+}
+if(mobileQuery.addEventListener){
+  mobileQuery.addEventListener('change', initMobileControls);
+}else if(mobileQuery.addListener){
+  mobileQuery.addListener(initMobileControls);
+}
+
+function toast(msg, type){
+  const t = $('#toast');
+  t.textContent = msg;
+  t.className = 'toast' + (type ? ' ' + type : '');
+  requestAnimationFrame(() => t.classList.add('show'));
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+function saveLearned(){
+  localStorage.setItem(LS_KEY, JSON.stringify([...learned]));
+  updateProgress();
+}
+function updateProgress(){
+  const n = learned.size;
+  const pct = Math.round((n / DATA.length) * 100);
+  $('#progLabel').textContent = `Progress: ${n} / ${DATA.length} kanji`;
+  $('#progPct').textContent = pct + '%';
+  $('#progFill').style.width = pct + '%';
+  $('#footerProgress').textContent = `${n} / ${DATA.length} completed`;
+  if(n === DATA.length && n > 0){triggerConfetti(); toast('All 120 N5 Kanji mastered! Amazing!','success');}
+}
+
+// ===== VIEW SWITCHING =====
+function switchView(view){
+  currentView = view;
+  $('#gridView').classList.toggle('hidden', view !== 'grid');
+  $('#flipView').classList.toggle('hidden', view !== 'flip');
+  $('#writingView').classList.toggle('hidden', view !== 'writing');
+  $$('.view-btn').forEach(b => b.classList.toggle('active', b.dataset.view === view));
+  if(view === 'writing') renderWriting();
+  else if(view === 'flip') renderFlip();
+  else renderGrid();
+  hideMobileControls();
+}
+
+$$('.view-btn').forEach(btn => {
+  btn.addEventListener('click', () => switchView(btn.dataset.view));
+});
+
+// ===== CATEGORY PILLS =====
+$('#pillsRow').addEventListener('click', e => {
+  const pill = e.target.closest('.pill');
+  if(!pill) return;
+  $$('.pill').forEach(p => p.classList.remove('active'));
+  pill.classList.add('active');
+  activeCat = pill.dataset.cat;
+  applyFilters();
+  hideMobileControls();
+});
+
+// ===== SEARCH =====
+$('#search').addEventListener('input', e => {
+  searchQ = e.target.value.toLowerCase().trim();
+  applyFilters();
+});
+$('#search').addEventListener('keydown', e => {
+  if(e.key === 'Enter'){
+    e.target.blur();
+    hideMobileControls();
+  }
+});
+
+// ===== GRID RENDER =====
+function renderGrid(){
+  const el = $('#gridView');
+  el.innerHTML = DATA.map((k, i) => {
+    const isLearned = learned.has(String(k.no));
+    return `<div class="kanji-card ${isLearned?'learned':''}" data-no="${k.no}" data-cat="${esc(k.cat)}" data-search="${esc((k.kanji+' '+k.on+' '+k.kun+' '+k.bn+' '+k.six_examples.map(e=>e.plain).join(' ')).toLowerCase())}" style="transition-delay:${(i%8)*0.04}s">
+      <span class="card-num">#${k.no}</span>
+      ${isLearned ? '<span class="learned-badge">&#10003;</span>' : ''}
+      <div class="k">${esc(k.kanji)}</div>
+      <div class="meaning">${esc(k.bn)}</div>
+      <div class="card-expanded" id="exp-${k.no}">
+        <div class="card-expanded-inner">
+          <div class="reading"><b>音読み:</b> ${esc(k.on)} &nbsp;|&nbsp; <b>訓読み:</b> ${esc(k.kun)}</div>
+          <div class="card-examples">
+            ${k.six_examples.map((ex, idx) => `<div class="ex-line" data-num="${idx+1}.">${ex.html}</div>`).join('')}
+          </div>
+          <div class="card-actions-row">
+            <button onclick="event.stopPropagation();openWriteKanji(${k.no})">&#9997; Write</button>
+            <button class="btn-learn ${isLearned?'active':''}" onclick="event.stopPropagation();toggleLearned(${k.no})">${isLearned?'&#10003; Learned':'Mark Learned'}</button>
+          </div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  applyFilters();
+  observeCards();
+}
+
+// ===== FLIP CARDS RENDER =====
+function renderFlip(){
+  const el = $('#flipView');
+  el.innerHTML = DATA.map(k => {
+    const isLearned = learned.has(String(k.no));
+    return `<div class="flip-card ${isLearned?'learned':''}" data-no="${k.no}" data-cat="${esc(k.cat)}" data-search="${esc((k.kanji+' '+k.on+' '+k.kun+' '+k.bn).toLowerCase())}" onclick="this.classList.toggle('flipped')">
+      <div class="flip-card-inner">
+        <div class="flip-face flip-front">
+          <div class="k">${esc(k.kanji)}</div>
+          <div class="hint">Tap to flip</div>
+          ${isLearned ? '<span class="learned-badge" style="position:absolute;top:10px;right:10px">&#10003;</span>' : ''}
+        </div>
+        <div class="flip-face flip-back">
+          <div class="meaning">${esc(k.bn)}</div>
+          <div class="reading"><b>音:</b> ${esc(k.on)}<br><b>訓:</b> ${esc(k.kun)}</div>
+          <div class="ex">${k.six_examples[0].html}</div>
+          <div class="hint-back">Tap to flip back</div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  applyFilters();
+}
+
+// ===== FILTERING =====
+function applyFilters(){
+  const cards = $$(currentView === 'grid' ? '.kanji-card' : '.flip-card');
+  cards.forEach(card => {
+    const matchesSearch = !searchQ || card.dataset.search.includes(searchQ) || card.textContent.toLowerCase().includes(searchQ);
+    const matchesCat = activeCat === 'all' || card.dataset.cat === activeCat;
+    card.classList.toggle('hidden', !(matchesSearch && matchesCat));
+  });
+}
+
+// ===== CARD EXPAND =====
+$('#gridView').addEventListener('click', e => {
+  const card = e.target.closest('.kanji-card');
+  if(!card) return;
+  // Don't expand if clicking a button
+  if(e.target.closest('button')) return;
+  const exp = card.querySelector('.card-expanded');
+  if(exp) exp.classList.toggle('open');
+});
+
+// ===== LEARNED TOGGLE =====
+function toggleLearned(no){
+  const id = String(no);
+  if(learned.has(id)){learned.delete(id); toast('Removed from learned');}
+  else{learned.add(id); toast('Marked as learned!','success');}
+  saveLearned();
+  renderGrid();
+}
+
+// ===== WRITING PRACTICE =====
+function renderWriting(){
+  const k = DATA[writingIdx];
+  const el = $('#writingView');
+  el.innerHTML = `
+    <div class="writing-info">
+      <div class="k">${esc(k.kanji)}</div>
+      <div class="meaning">${esc(k.bn)}<br><span style="font-size:14px;color:var(--accent-cyan)">音読み: ${esc(k.on)} / 訓読み: ${esc(k.kun)}</span></div>
+      <div class="ex">${k.six_examples[0].html}</div>
+    </div>
+    <div class="canvas-wrap">
+      <canvas id="writeCanvas" width="480" height="480"></canvas>
+      <div class="canvas-ghost" id="ghostWrap"><canvas id="ghostCanvas" width="480" height="480"></canvas></div>
+      <div class="canvas-template">${esc(k.kanji)}</div>
+    </div>
+    <div class="writing-controls">
+      <button class="btn btn-ghost btn-sm" onclick="clearCanvas()" style="color:#FF5722;border-color:rgba(255,87,34,0.3)">Erase</button>
+      <button class="btn btn-primary btn-sm" onclick="nextWriting()">Next Kanji &rarr;</button>
+      <button class="btn btn-ghost btn-sm" onclick="toggleGhost()" style="color:#6823B8;border-color:rgba(104,35,184,0.3)">Ghost Trace</button>
+      <button class="btn btn-ghost btn-sm" onclick="simulateStroke()" style="color:var(--accent-cyan);border-color:rgba(123,185,185,0.3)">Simulate Stroke</button>
+    </div>
+  `;
+  setupCanvas();
+}
+
+function openWriteKanji(no){
+  writingIdx = DATA.findIndex(k => k.no === no);
+  if(writingIdx === -1) writingIdx = 0;
+  switchView('writing');
+  document.getElementById('main').scrollIntoView({behavior:'smooth'});
+}
+
+function nextWriting(){
+  writingIdx = (writingIdx + 1) % DATA.length;
+  renderWriting();
+}
+
+let ctxWrite, isDrawing = false;
+function setupCanvas(){
+  const canvas = $('#writeCanvas');
+  if(!canvas) return;
+  ctxWrite = canvas.getContext('2d');
+  ctxWrite.lineCap = 'round';
+  ctxWrite.lineJoin = 'round';
+  ctxWrite.lineWidth = 4;
+  ctxWrite.strokeStyle = '#E7E7E7';
+
+  // Draw grid
+  drawGrid(ctxWrite, 480, 480);
+
+  const getPos = e => {
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = 480 / rect.width;
+    const scaleY = 480 / rect.height;
+    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
+    return {x: (clientX - rect.left) * scaleX, y: (clientY - rect.top) * scaleY};
+  };
+
+  const start = e => {isDrawing = true; const p = getPos(e); ctxWrite.beginPath(); ctxWrite.moveTo(p.x, p.y); e.preventDefault();};
+  const draw = e => {if(!isDrawing) return; const p = getPos(e); ctxWrite.lineTo(p.x, p.y); ctxWrite.stroke(); e.preventDefault();};
+  const stop = () => {isDrawing = false; ctxWrite.beginPath();};
+
+  canvas.addEventListener('mousedown', start);
+  canvas.addEventListener('mousemove', draw);
+  canvas.addEventListener('mouseup', stop);
+  canvas.addEventListener('mouseleave', stop);
+  canvas.addEventListener('touchstart', start, {passive:false});
+  canvas.addEventListener('touchmove', draw, {passive:false});
+  canvas.addEventListener('touchend', stop);
+}
+
+function drawGrid(ctx, w, h){
+  ctx.save();
+  ctx.strokeStyle = 'rgba(255,255,255,0.03)';
+  ctx.lineWidth = 1;
+  for(let x = 0; x <= w; x += 48){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,h);ctx.stroke();}
+  for(let y = 0; y <= h; y += 48){ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(w,y);ctx.stroke();}
+  // Center lines darker
+  ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+  ctx.lineWidth = 1;
+  ctx.beginPath();ctx.moveTo(w/2,0);ctx.lineTo(w/2,h);ctx.stroke();
+  ctx.beginPath();ctx.moveTo(0,h/2);ctx.lineTo(w,h/2);ctx.stroke();
+  ctx.restore();
+}
+
+function clearCanvas(){
+  const canvas = $('#writeCanvas');
+  if(!canvas) return;
+  ctxWrite.clearRect(0, 0, 480, 480);
+  drawGrid(ctxWrite, 480, 480);
+}
+
+let ghostVisible = false;
+function toggleGhost(){
+  ghostVisible = !ghostVisible;
+  const wrap = $('#ghostWrap');
+  if(wrap) wrap.classList.toggle('show', ghostVisible);
+  if(ghostVisible) drawGhost();
+}
+
+function drawGhost(){
+  const c = $('#ghostCanvas');
+  if(!c) return;
+  const ctx = c.getContext('2d');
+  ctx.clearRect(0, 0, 480, 480);
+  const k = DATA[writingIdx].kanji;
+  ctx.save();
+  ctx.font = 'bold 320px "Noto Sans JP", sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.strokeStyle = 'rgba(169,198,169,0.3)';
+  ctx.lineWidth = 3;
+  ctx.strokeText(k, 240, 240);
+  ctx.restore();
+}
+
+function simulateStroke(){
+  clearCanvas();
+  const k = DATA[writingIdx].kanji;
+  // Simulate by drawing the kanji with animation
+  const canvas = $('#writeCanvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  drawGrid(ctx, 480, 480);
+
+  // Draw character progressively
+  ctx.save();
+  ctx.font = 'bold 320px "Noto Sans JP", sans-serif';
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  ctx.fillStyle = '#E91E8C';
+  ctx.globalAlpha = 0;
+
+  let alpha = 0;
+  const fadeIn = () => {
+    alpha += 0.02;
+    if(alpha > 1) alpha = 1;
+    ctx.clearRect(0, 0, 480, 480);
+    drawGrid(ctx, 480, 480);
+    ctx.globalAlpha = alpha;
+    ctx.fillText(k, 240, 240);
+    ctx.globalAlpha = 1;
+    if(alpha < 1) requestAnimationFrame(fadeIn);
+  };
+  fadeIn();
+  ctx.restore();
+}
+
+// ===== RANDOM =====
+function randomKanji(){
+  hideMobileControls();
+  const r = Math.floor(Math.random() * DATA.length);
+  if(currentView === 'grid'){
+    const cards = $$('.kanji-card:not(.hidden)');
+    if(cards[r]) cards[r].scrollIntoView({behavior:'smooth', block:'center'});
+  } else if(currentView === 'writing'){
+    writingIdx = r; renderWriting();
+  }
+}
+
+// ===== RESET =====
+function resetProgress(){
+  hideMobileControls();
+  if(!confirm('Reset all learning progress?')) return;
+  learned.clear();
+  saveLearned();
+  renderGrid();
+  toast('Progress reset');
+}
+
+// ===== AUDIO =====
+function toggleAudio(){
+  hideMobileControls();
+  audioEnabled = !audioEnabled;
+  $('#audioBtn').textContent = audioEnabled ? '&#127925;&#128263; Audio' : '&#127925; Audio';
+  toast(audioEnabled ? 'Audio enabled' : 'Audio disabled');
+}
+function speak(text){
+  if(!audioEnabled) return;
+  try{
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = 'ja-JP';
+    u.rate = 0.75;
+    speechSynthesis.cancel();
+    speechSynthesis.speak(u);
+  }catch(e){console.log('TTS error',e);}
+}
+
+// ===== STUDY MODE =====
+function openStudy(){
+  hideMobileControls();
+  studyIdx = 0;
+  updateStudy();
+  $('#studyOverlay').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function closeStudy(){
+  $('#studyOverlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+function updateStudy(){
+  const k = DATA[studyIdx];
+  $('#studyK').textContent = k.kanji;
+  $('#studyM').textContent = k.bn;
+  $('#studyR').textContent = '音読み: ' + k.on + ' / 訓読み: ' + k.kun;
+  $('#studyE').innerHTML = k.six_examples.map((ex, i) => `<div><b>${i+1}.</b> ${ex.html}</div>`).join('');
+  if(audioEnabled) speak(k.kanji);
+}
+function studyNext(){studyIdx = (studyIdx + 1) % DATA.length; updateStudy();}
+function studyPrev(){studyIdx = (studyIdx - 1 + DATA.length) % DATA.length; updateStudy();}
+
+// ===== QUIZ MODE =====
+let currentQuizAnswer = null;
+function openQuiz(){
+  hideMobileControls();
+  quizScore = 0;
+  $('#quizScore').textContent = 'Score: 0';
+  $('#quizOverlay').classList.add('active');
+  document.body.style.overflow = 'hidden';
+  nextQuiz();
+}
+function closeQuiz(){
+  $('#quizOverlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+function nextQuiz(){
+  const q = DATA[Math.floor(Math.random() * DATA.length)];
+  currentQuizAnswer = q.no;
+  $('#quizK').textContent = q.kanji;
+  $('#quizHint').textContent = q.on + ' / ' + q.kun;
+
+  // Generate 3 distractors
+  const distractors = DATA.filter(d => d.no !== q.no)
+    .sort(() => Math.random() - 0.5)
+    .slice(0, 3);
+  const options = [q, ...distractors].sort(() => Math.random() - 0.5);
+
+  $('#quizOptions').innerHTML = options.map(opt => 
+    `<button class="quiz-option" data-no="${opt.no}" onclick="answerQuiz(${opt.no})">${esc(opt.bn)}</button>`
+  ).join('');
+}
+function answerQuiz(no){
+  const opts = $$('.quiz-option');
+  opts.forEach(o => o.classList.add('disabled'));
+
+  const correct = no === currentQuizAnswer;
+  opts.forEach(o => {
+    if(parseInt(o.dataset.no) === currentQuizAnswer) o.classList.add('correct');
+    else if(parseInt(o.dataset.no) === no && !correct) o.classList.add('wrong');
+  });
+
+  if(correct){quizScore++; toast('Correct!','success');}
+  else{toast('Wrong! Try again.','error');}
+
+  $('#quizScore').textContent = 'Score: ' + quizScore;
+}
+
+// ===== KEYBOARD =====
+document.addEventListener('keydown', e => {
+  if($('#studyOverlay').classList.contains('active')){
+    if(e.key === 'ArrowRight') studyNext();
+    if(e.key === 'ArrowLeft') studyPrev();
+    if(e.key === 'Escape') closeStudy();
+  }
+  if($('#quizOverlay').classList.contains('active')){
+    if(e.key === 'Escape') closeQuiz();
+  }
+});
+
+// ===== CARD OBSERVER =====
+function observeCards(){
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if(en.isIntersecting) en.target.classList.add('visible');
+    });
+  }, {threshold: 0.05});
+  $$('.kanji-card').forEach(c => obs.observe(c));
+}
+
+// ===== NAVBAR SCROLL =====
+window.addEventListener('scroll', () => {
+  $('#navbar').classList.toggle('scrolled', window.scrollY > 80);
+});
+
+// ===== CONFETTI =====
+function triggerConfetti(){
+  const canvas = $('#confetti-canvas');
+  const ctx = canvas.getContext('2d');
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const colors = ['#E91E8C','#FF5722','#6823B8','#7BB9B9','#A9C6A9','#E7E7E7'];
+  const particles = [];
+  for(let i = 0; i < 200; i++){
+    particles.push({
+      x: Math.random() * canvas.width,
+      y: -20 - Math.random() * 200,
+      vx: (Math.random() - 0.5) * 4,
+      vy: Math.random() * 3 + 1,
+      color: colors[Math.floor(Math.random() * colors.length)],
+      size: Math.random() * 8 + 4,
+      rotation: Math.random() * 360,
+      rotSpeed: (Math.random() - 0.5) * 10
+    });
+  }
+
+  let frame = 0;
+  function drawConfetti(){
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    let alive = false;
+    particles.forEach(p => {
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vy += 0.05;
+      p.rotation += p.rotSpeed;
+      if(p.y < canvas.height + 20) alive = true;
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(p.rotation * Math.PI / 180);
+      ctx.fillStyle = p.color;
+      ctx.fillRect(-p.size/2, -p.size/2, p.size, p.size * 0.6);
+      ctx.restore();
+    });
+    frame++;
+    if(alive && frame < 300) requestAnimationFrame(drawConfetti);
+    else ctx.clearRect(0,0,canvas.width,canvas.height);
+  }
+  drawConfetti();
+}
+
+// ===== HERO SHADER: font_shape_distortion_effect =====
+(function(){
+  const canvas = document.getElementById('hero-canvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let width, height;
+  let mouse = {x: -1, y: -1};
+  let isVisible = true;
+
+  const config = {
+    gridSpacing: 24,
+    lineWidth: 0.8,
+    lineColor: 'rgba(123, 185, 185, 0.14)',
+    accentColor: 'rgba(104, 35, 184, 0.18)',
+    distortionStrength: 60,
+    noiseScale: 0.002,
+    imageSize: 220,
+    lensRadius: 180,
+    lensStrength: 0.8
+  };
+
+  // Perlin noise
+  const perm = [];
+  const p = [];
+  for(let i = 0; i < 256; i++) p[i] = Math.floor(Math.random() * 256);
+  for(let i = 0; i < 512; i++) perm[i] = p[i & 255];
+
+  function fade(t){return t*t*t*(t*(t*6-15)+10);}
+  function lerp(a,b,t){return a+t*(b-a);}
+  function grad(hash,x,y,z){
+    const h = hash & 15;
+    const u = h < 8 ? x : y;
+    const v = h < 4 ? y : h === 12 || h === 14 ? x : z;
+    return ((h & 1) === 0 ? u : -u) + ((h & 2) === 0 ? v : -v);
+  }
+  function noise3D(x,y,z){
+    const X = Math.floor(x) & 255, Y = Math.floor(y) & 255, Z = Math.floor(z) & 255;
+    x -= Math.floor(x); y -= Math.floor(y); z -= Math.floor(z);
+    const u = fade(x), v = fade(y), w = fade(z);
+    const A = perm[X]+Y, AA = perm[A]+Z, AB = perm[A+1]+Z;
+    const B = perm[X+1]+Y, BA = perm[B]+Z, BB = perm[B+1]+Z;
+    return lerp(
+      lerp(lerp(grad(perm[AA],x,y,z),grad(perm[BA],x-1,y,z),u),
+           lerp(grad(perm[AB],x,y-1,z),grad(perm[BB],x-1,y-1,z),u),v),
+      lerp(lerp(grad(perm[AA+1],x,y,z-1),grad(perm[BA+1],x-1,y,z-1),u),
+           lerp(grad(perm[AB+1],x,y-1,z-1),grad(perm[BB+1],x-1,y-1,z-1),u),v),w
+    );
+  }
+
+  function getWarpedPoint(x, y, time){
+    const dist = noise3D(x * config.noiseScale, y * config.noiseScale, time) * config.distortionStrength;
+    const angle = noise3D(x * config.noiseScale + 100, y * config.noiseScale + 100, time) * Math.PI * 2;
+    return {x: x + Math.cos(angle) * dist, y: y + Math.sin(angle) * dist};
+  }
+
+  // Pre-render kanji image
+  const kanjiImg = document.createElement('canvas');
+  kanjiImg.width = config.imageSize;
+  kanjiImg.height = config.imageSize;
+  const kCtx = kanjiImg.getContext('2d');
+  kCtx.fillStyle = '#000';
+  kCtx.fillRect(0, 0, config.imageSize, config.imageSize);
+  kCtx.font = '900 140px "Noto Sans JP", sans-serif';
+  kCtx.textAlign = 'center';
+  kCtx.textBaseline = 'middle';
+  kCtx.fillStyle = '#E7E7E7';
+  kCtx.fillText('N5', config.imageSize/2, config.imageSize/2);
+
+  function resize(){
+    width = canvas.parentElement.offsetWidth;
+    height = canvas.parentElement.offsetHeight;
+    canvas.width = width;
+    canvas.height = height;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  // Mouse tracking
+  canvas.parentElement.addEventListener('mousemove', e => {
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
+  });
+  canvas.parentElement.addEventListener('mouseleave', () => {mouse.x = -1; mouse.y = -1;});
+
+  // Visibility observer
+  const obs = new IntersectionObserver(entries => {isVisible = entries[0].isIntersecting;});
+  obs.observe(canvas);
+
+  function draw(time){
+    requestAnimationFrame(draw);
+    if(!isVisible) return;
+    const t = time * 0.001;
+    ctx.clearRect(0, 0, width, height);
+    ctx.fillStyle = '#000';
+    ctx.fillRect(0, 0, width, height);
+
+    const spacing = config.gridSpacing;
+    const startX = -spacing, endX = width + spacing;
+    const startY = -spacing, endY = height + spacing;
+
+    // Draw warped grid
+    ctx.save();
+    ctx.strokeStyle = config.lineColor;
+    ctx.lineWidth = config.lineWidth;
+
+    // Horizontal lines
+    for(let y = startY; y <= endY; y += spacing){
+      ctx.beginPath();
+      for(let x = startX; x <= endX; x += 5){
+        const wp = getWarpedPoint(x, y, t);
+        if(x === startX) ctx.moveTo(wp.x, wp.y);
+        else ctx.lineTo(wp.x, wp.y);
+      }
+      ctx.stroke();
+    }
+    // Vertical lines
+    for(let x = startX; x <= endX; x += spacing){
+      ctx.beginPath();
+      for(let y = startY; y <= endY; y += 5){
+        const wp = getWarpedPoint(x, y, t);
+        if(y === startY) ctx.moveTo(wp.x, wp.y);
+        else ctx.lineTo(wp.x, wp.y);
+      }
+      ctx.stroke();
+    }
+
+    // Draw accent intersections
+    ctx.strokeStyle = config.accentColor;
+    ctx.lineWidth = 0.5;
+    for(let y = startY; y <= endY; y += spacing * 3){
+      for(let x = startX; x <= endX; x += spacing * 3){
+        const wp = getWarpedPoint(x, y, t);
+        ctx.beginPath();
+        ctx.arc(wp.x, wp.y, 2, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+    }
+    ctx.restore();
+
+    // Lens distortion with kanji image
+    if(mouse.x > 0 && mouse.y > 0){
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(mouse.x, mouse.y, config.lensRadius, 0, Math.PI * 2);
+      ctx.clip();
+
+      // Draw image with distortion
+      const imgSize = config.imageSize;
+      const srcX = mouse.x - imgSize/2;
+      const srcY = mouse.y - imgSize/2;
+
+      // Simple barrel distortion by drawing scaled
+      const scale = 1.2;
+      ctx.drawImage(kanjiImg, 
+        mouse.x - imgSize*scale/2, mouse.y - imgSize*scale/2,
+        imgSize*scale, imgSize*scale
+      );
+
+      // Glow ring
+      ctx.beginPath();
+      ctx.arc(mouse.x, mouse.y, config.lensRadius, 0, Math.PI * 2);
+      ctx.strokeStyle = 'rgba(123, 185, 185, 0.3)';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+      ctx.restore();
+    }
+  }
+  requestAnimationFrame(draw);
+})();
+
+// ===== GOOEY METABALLS: fluid_spring_gooey_scroll =====
+(function(){
+  const canvas = document.getElementById('gooey-canvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  let width, height, isVisible = false;
+
+  function resize(){
+    const rect = canvas.parentElement.getBoundingClientRect();
+    width = rect.width;
+    height = rect.height;
+    canvas.width = width;
+    canvas.height = height;
+  }
+  resize();
+  window.addEventListener('resize', resize);
+
+  const obs = new IntersectionObserver(entries => {isVisible = entries[0].isIntersecting;});
+  obs.observe(canvas);
+
+  // Metaballs
+  const colors = [
+    {r:233,g:30,b:140}, {r:255,g:87,b:34}, {r:104,g:35,b:184},
+    {r:123,g:185,b:185}, {r:233,g:30,b:140}
+  ];
+  const balls = colors.map((c, i) => ({
+    x: width/2 + (Math.random()-0.5)*200,
+    y: height/2 + (Math.random()-0.5)*200,
+    vx: 0, vy: 0,
+    radius: 35 + Math.random()*20,
+    color: c,
+    mass: 1 + Math.random()
+  }));
+
+  let scrollVel = 0;
+  let lastSY = window.scrollY;
+  window.addEventListener('scroll', () => {
+    scrollVel = window.scrollY - lastSY;
+    lastSY = window.scrollY;
+  });
+
+  const trailPoints = [];
+
+  function updatePhysics(){
+    // Spring forces between adjacent balls
+    for(let i = 0; i < balls.length; i++){
+      for(let j = i+1; j < balls.length; j++){
+        const dx = balls[j].x - balls[i].x;
+        const dy = balls[j].y - balls[i].y;
+        const dist = Math.sqrt(dx*dx + dy*dy);
+        const restLen = (balls[i].radius + balls[j].radius) * 1.2;
+        const force = 0.003 * (dist - restLen);
+        const fx = (dx/dist) * force;
+        const fy = (dy/dist) * force;
+        balls[i].vx += fx/balls[i].mass;
+        balls[i].vy += fy/balls[i].mass;
+        balls[j].vx -= fx/balls[j].mass;
+        balls[j].vy -= fy/balls[j].mass;
+      }
+    }
+
+    // Update positions
+    balls.forEach(b => {
+      b.vx *= 0.97;
+      b.vy *= 0.97;
+      b.x += b.vx;
+      b.y += b.vy;
+      // Center attraction
+      b.vx += (width/2 - b.x) * 0.0003;
+      b.vy += (height/2 - b.y) * 0.0003;
+      // Bounds
+      if(b.x < b.radius){b.x = b.radius; b.vx *= -0.7;}
+      if(b.x > width - b.radius){b.x = width - b.radius; b.vx *= -0.7;}
+      if(b.y < b.radius){b.y = b.radius; b.vy *= -0.7;}
+      if(b.y > height - b.radius){b.y = height - b.radius; b.vy *= -0.7;}
+    });
+
+    // Trail
+    const cx = balls.reduce((s,b)=>s+b.x,0)/balls.length;
+    const cy = balls.reduce((s,b)=>s+b.y,0)/balls.length;
+    const vel = Math.abs(scrollVel);
+    if(vel > 2){
+      trailPoints.push({x: cx, y: cy, age: 0, intensity: Math.min(vel*0.03, 1)});
+    }
+    for(let i = trailPoints.length-1; i >= 0; i--){
+      trailPoints[i].age++;
+      trailPoints[i].intensity *= 0.96;
+      if(trailPoints[i].age > 60 || trailPoints[i].intensity < 0.01) trailPoints.splice(i, 1);
+    }
+    scrollVel *= 0.9;
+  }
+
+  // Offscreen canvas for gooey threshold
+  const offCanvas = document.createElement('canvas');
+  const offCtx = offCanvas.getContext('2d');
+
+  function draw(){
+    requestAnimationFrame(draw);
+    if(!isVisible) return;
+    updatePhysics();
+
+    offCanvas.width = width;
+    offCanvas.height = height;
+
+    // Draw metaballs as gradients on offscreen
+    balls.forEach(b => {
+      const grad = offCtx.createRadialGradient(b.x, b.y, 0, b.x, b.y, b.radius);
+      grad.addColorStop(0, `rgba(${b.color.r},${b.color.g},${b.color.b},1)`);
+      grad.addColorStop(1, `rgba(${b.color.r},${b.color.g},${b.color.b},0)`);
+      offCtx.fillStyle = grad;
+      offCtx.fillRect(b.x - b.radius, b.y - b.radius, b.radius*2, b.radius*2);
+    });
+
+    // Threshold + color
+    const imgData = offCtx.getImageData(0, 0, width, height);
+    const data = imgData.data;
+    ctx.fillStyle = '#000';
+    ctx.fillRect(0, 0, width, height);
+
+    const outCanvas = document.createElement('canvas');
+    outCanvas.width = width;
+    outCanvas.height = height;
+    const outCtx = outCanvas.getContext('2d');
+    const outImg = outCtx.createImageData(width, height);
+    const out = outImg.data;
+
+    for(let i = 0; i < data.length; i += 4){
+      const alpha = data[i+3];
+      if(alpha > 70){
+        out[i] = data[i];
+        out[i+1] = data[i+1];
+        out[i+2] = data[i+2];
+        out[i+3] = 255;
+      }
+    }
+    outCtx.putImageData(outImg, 0, 0);
+    ctx.drawImage(outCanvas, 0, 0);
+
+    // Trail
+    if(trailPoints.length > 0){
+      ctx.save();
+      ctx.globalCompositeOperation = 'screen';
+      trailPoints.forEach(p => {
+        const r = 20 + p.intensity * 60;
+        const grad = ctx.createRadialGradient(p.x, p.y, 0, p.x, p.y, r);
+        grad.addColorStop(0, `rgba(233,30,140,${p.intensity*0.5})`);
+        grad.addColorStop(1, 'rgba(233,30,140,0)');
+        ctx.fillStyle = grad;
+        ctx.fillRect(p.x-r, p.y-r, r*2, r*2);
+      });
+      ctx.restore();
+    }
+  }
+  requestAnimationFrame(draw);
+})();
+
+// ===== FOOTER SPOTLIGHT: interactive_spotlight_text =====
+(function(){
+  const container = document.getElementById('spotlight-container');
+  if(!container) return;
+
+  // Load Three.js from CDN
+  import('https://unpkg.com/three@0.160.0/build/three.module.js').then(THREE => {
+    const scene = new THREE.Scene();
+    const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+    const renderer = new THREE.WebGLRenderer({alpha: true, antialias: false});
+    renderer.setSize(container.clientWidth, container.clientHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    container.appendChild(renderer.domElement);
+
+    const vertexShader = `
+      varying vec2 vUv;
+      void main(){
+        vUv = uv;
+        gl_Position = vec4(position, 1.0);
+      }
+    `;
+
+    const fragmentShader = `
+      precision highp float;
+      varying vec2 vUv;
+      uniform float uTime;
+      uniform vec2 uMouse;
+      uniform vec2 uResolution;
+      uniform float uLightIntensity;
+      uniform float uAmbient;
+      uniform float uSpotRadius;
+      uniform float uSpotSoftness;
+
+      vec3 mod289v3(vec3 x){return x - floor(x * (1.0/289.0)) * 289.0;}
+      vec2 mod289v2(vec2 x){return x - floor(x * (1.0/289.0)) * 289.0;}
+      vec3 permute(vec3 x){return mod289v3(((x*34.0)+1.0)*x);}
+
+      float snoise(vec2 v){
+        const vec4 C = vec4(0.211324865405187, 0.366025403784439, -0.577350269189626, 0.024390243902439);
+        vec2 i = floor(v + dot(v, C.yy));
+        vec2 x0 = v - i + dot(i, C.xx);
+        vec2 i1;
+        i1 = (x0.x > x0.y) ? vec2(1.0, 0.0) : vec2(0.0, 1.0);
+        vec4 x12 = x0.xyxy + C.xxzz;
+        x12.xy -= i1;
+        i = mod289v2(i);
+        vec3 p = permute(permute(i.y + vec3(0.0, i1.y, 1.0)) + i.x + vec3(0.0, i1.x, 1.0));
+        vec3 m = max(0.5 - vec3(dot(x0,x0), dot(x12.xy,x12.xy), dot(x12.zw,x12.zw)), 0.0);
+        m = m*m; m = m*m;
+        vec3 x = 2.0 * fract(p * C.www) - 1.0;
+        vec3 h = abs(x) - 0.5;
+        vec3 ox = floor(x + 0.5);
+        vec3 a0 = x - ox;
+        m *= 1.79284291400159 - 0.85373472095314 * (a0*a0 + h*h);
+        vec3 g;
+        g.x = a0.x * x0.x + h.x * x0.y;
+        g.yz = a0.yz * x12.xz + h.yz * x12.yw;
+        return 130.0 * dot(m, g);
+      }
+
+      float sdSegment(vec2 p, vec2 a, vec2 b){
+        vec2 pa = p - a, ba = b - a;
+        float h = clamp(dot(pa, ba) / dot(ba, ba), 0.0, 1.0);
+        return length(pa - ba * h);
+      }
+
+      float sdCircle(vec2 p, float r){return length(p) - r;}
+      float sdBox(vec2 p, vec2 b){
+        vec2 d = abs(p) - b;
+        return length(max(d, 0.0)) + min(max(d.x, d.y), 0.0);
+      }
+
+      float getTextDist(vec2 p){
+        float d = 1e5;
+        float bevel = 0.08;
+        float t = uTime * 0.5;
+        p += vec2(snoise(p*3.0+t), snoise(p*3.0+t+50.0)) * 0.02;
+        p += vec2(snoise(p*8.0-t*0.5), snoise(p*8.0-t*0.5+100.0)) * 0.01;
+
+        // "漢" strokes (simplified SDF)
+        // Top radical (氵approx as 3 short segments)
+        float mainD = 1e5;
+        mainD = min(mainD, sdSegment(p, vec2(-0.4,0.6), vec2(0.4,0.6)) - 0.08);
+        mainD = min(mainD, sdSegment(p, vec2(-0.35,0.35), vec2(0.35,0.35)) - 0.08);
+        mainD = min(mainD, sdSegment(p, vec2(-0.4,0.1), vec2(0.4,0.1)) - 0.08);
+        mainD = min(mainD, sdSegment(p, vec2(-0.4,0.6), vec2(-0.4,-0.1)) - 0.07);
+        mainD = min(mainD, sdSegment(p, vec2(0.0,0.6), vec2(0.0,-0.1)) - 0.07);
+        mainD = min(mainD, sdSegment(p, vec2(0.4,0.6), vec2(0.4,-0.1)) - 0.07);
+        // Diagonal strokes
+        mainD = min(mainD, sdSegment(p, vec2(-0.4,0.1), vec2(0.1,-0.3)) - 0.07);
+        mainD = min(mainD, sdSegment(p, vec2(0.4,0.1), vec2(-0.1,-0.3)) - 0.07);
+
+        // "字" strokes
+        // Roof
+        mainD = min(mainD, sdSegment(p, vec2(-0.35,-0.3), vec2(0.35,-0.3)) - 0.08);
+        mainD = min(mainD, sdSegment(p, vec2(-0.35,-0.3), vec2(-0.5,-0.55)) - 0.06);
+        mainD = min(mainD, sdSegment(p, vec2(0.35,-0.3), vec2(0.5,-0.55)) - 0.06);
+        // Child radical
+        mainD = min(mainD, sdSegment(p, vec2(-0.25,-0.55), vec2(0.25,-0.55)) - 0.07);
+        mainD = min(mainD, sdSegment(p, vec2(0.0,-0.3), vec2(0.0,-0.85)) - 0.07);
+        mainD = min(mainD, sdSegment(p, vec2(0.0,-0.85), vec2(0.2,-0.65)) - 0.06);
+        mainD = min(mainD, sdSegment(p, vec2(-0.3,-0.7), vec2(0.3,-0.7)) - 0.06);
+
+        // Cross decoration
+        float crossD = 1e5;
+        crossD = min(crossD, sdSegment(p, vec2(0.0,-0.1), vec2(0.0,-0.5)) - 0.04);
+        crossD = min(crossD, sdSegment(p, vec2(-0.2,-0.3), vec2(0.2,-0.3)) - 0.04);
+
+        // Bevel
+        mainD = max(mainD, -sdBox(p, vec2(0.75,0.85)) + bevel);
+
+        float subD = mainD - 0.02;
+        d = min(d, mainD);
+        d = min(d, subD * 0.8);
+        d = min(d, crossD);
+        return d;
+      }
+
+      float getDist(vec3 p){
+        float d = getTextDist(p.xy);
+        d = max(d, p.z);
+        float noise = snoise(p.xy * 5.0 + uTime * 0.3) * 0.01;
+        d += noise;
+        return d;
+      }
+
+      vec3 getNormal(vec3 p){
+        vec2 e = vec2(0.001, 0.0);
+        return normalize(vec3(
+          getDist(p+e.xyy)-getDist(p-e.xyy),
+          getDist(p+e.yxy)-getDist(p-e.yxy),
+          getDist(p+e.yyx)-getDist(p-e.yyx)
+        ));
+      }
+
+      float softShadow(vec3 ro, vec3 rd, float mint, float maxt, float k){
+        float res = 1.0, t = mint;
+        for(int i = 0; i < 16; i++){
+          if(t > maxt) break;
+          float h = getDist(ro + t * rd);
+          res = min(res, k * h / t);
+          if(h < 0.001) return 0.0;
+          t += h;
+        }
+        return res;
+      }
+
+      float calcSpotlight(vec3 p, vec3 normal, vec3 lightPos, vec3 lightDir, float radius, float softness){
+        vec3 toLight = lightPos - p;
+        float dist = length(toLight);
+        vec3 lightDirNorm = normalize(toLight);
+        float angle = dot(lightDirNorm, -lightDir);
+        float cone = smoothstep(radius, radius * softness, angle);
+        float falloff = 1.0 / (1.0 + dist * dist * 0.5);
+        float diff = max(dot(normal, lightDirNorm), 0.0);
+        float shadow = softShadow(p, lightDirNorm, 0.1, 10.0, 8.0);
+        return cone * falloff * diff * shadow;
+      }
+
+      void main(){
+        vec2 uv = vUv;
+        uv -= 0.5;
+        uv.x *= uResolution.x / uResolution.y;
+
+        vec3 ro = vec3(0.0, 0.0, 2.0);
+        vec3 rd = normalize(vec3(uv, -1.0));
+
+        float t = 0.0;
+        vec3 pt = ro;
+        float d = 0.0;
+
+        for(int i = 0; i < 80; i++){
+          d = getDist(pt);
+          t += d;
+          pt = ro + rd * t;
+          if(d < 0.001 || t > 10.0) break;
+        }
+
+        vec3 lightPos = vec3((uMouse.x - 0.5) * 4.0, (0.5 - uMouse.y) * 4.0, 3.0);
+        vec3 lightDir = vec3(0.0, 0.0, -1.0);
+
+        vec3 col = vec3(0.0);
+
+        if(d < 0.001){
+          vec3 normal = getNormal(pt);
+          vec3 viewDir = normalize(ro - pt);
+          vec3 halfDir = normalize(normalize(lightPos - pt) + viewDir);
+
+          float spot = calcSpotlight(pt, normal, lightPos, lightDir, uSpotRadius, uSpotSoftness);
+          float ambient = uAmbient;
+
+          vec3 baseColor = vec3(0.9, 0.9, 0.95);
+          vec3 warmTint = vec3(1.0, 0.95, 0.9);
+          vec3 litColor = baseColor * (ambient + spot * uLightIntensity) * warmTint;
+
+          // Edge glow
+          float edgeGlow = smoothstep(0.0, 0.05, -sdCircle(pt.xy, 0.8));
+          litColor += vec3(0.3, 0.1, 0.2) * edgeGlow * (1.0 - spot);
+
+          // Fog
+          float fog = exp(-t * t * 0.1);
+          col = mix(vec3(0.0), litColor, fog);
+        }
+
+        gl_FragColor = vec4(col, 1.0);
+      }
+    `;
+
+    const uniforms = {
+      uTime: {value: 0.0},
+      uMouse: {value: new THREE.Vector2(0.5, 0.5)},
+      uResolution: {value: new THREE.Vector2(container.clientWidth, container.clientHeight)},
+      uLightIntensity: {value: 2.0},
+      uAmbient: {value: 0.01},
+      uSpotRadius: {value: 0.25},
+      uSpotSoftness: {value: 2.0}
+    };
+
+    const material = new THREE.ShaderMaterial({
+      vertexShader,
+      fragmentShader,
+      uniforms
+    });
+
+    const geometry = new THREE.PlaneGeometry(2, 2);
+    const mesh = new THREE.Mesh(geometry, material);
+    scene.add(mesh);
+
+    const clock = new THREE.Clock();
+    let isVisible = false;
+
+    const obs = new IntersectionObserver(entries => {isVisible = entries[0].isIntersecting;});
+    obs.observe(container);
+
+    function animate(){
+      requestAnimationFrame(animate);
+      if(!isVisible) return;
+      material.uniforms.uTime.value = clock.getElapsedTime();
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    container.addEventListener('mousemove', e => {
+      const rect = container.getBoundingClientRect();
+      material.uniforms.uMouse.value.x = (e.clientX - rect.left) / rect.width;
+      material.uniforms.uMouse.value.y = 1.0 - (e.clientY - rect.top) / rect.height;
+    });
+
+    window.addEventListener('resize', () => {
+      const w = container.clientWidth;
+      const h = container.clientHeight;
+      renderer.setSize(w, h);
+      material.uniforms.uResolution.value.set(w, h);
+    });
+  }).catch(err => {
+    console.log('Three.js failed to load:', err);
+    container.style.background = 'radial-gradient(ellipse at center, #0A0A0A 0%, #000 100%)';
+  });
+})();
+
+// ===== INIT =====
+document.addEventListener('DOMContentLoaded', () => {
+  updateProgress();
+  renderGrid();
+});
+</script>
+</body>
+</html>
