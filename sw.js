@@ -1,6 +1,6 @@
-/* Aponar Nihon service-worker wrapper — N3 full vocabulary hotfix.
-   Keeps the proven v27 worker intact, but intercepts N3 Vocabulary navigation
-   so the complete 1,345-word source always receives the 4-example UI. */
+/* Aponar Nihon service-worker wrapper — fresh N3 vocabulary and grammar pages.
+   Keeps the proven v27 worker intact, while making the two updated N3 guides
+   network-first so mobile visitors do not receive an older cached version. */
 
 const __anNativeAddEventListener = self.addEventListener.bind(self);
 let __anLegacyFetchListener = null;
@@ -16,8 +16,9 @@ self.addEventListener = function(type, listener, options){
 importScripts('/sw-base-v27.js');
 self.addEventListener = __anNativeAddEventListener;
 
-const __AN_N3_CSS = '<link rel="stylesheet" href="/n3-vocabulary-all.css?v=2">';
-const __AN_N3_JS = '<script src="/n3-vocabulary-all.js?v=2"></script>';
+const __AN_N3_CSS = '<link rel="stylesheet" href="/n3-vocabulary-all.css?v=5">';
+const __AN_N3_EXAMPLES = '<script src="/n3-vocabulary-examples.js?v=1"></script>';
+const __AN_N3_JS = '<script src="/n3-vocabulary-all.js?v=5"></script>';
 
 async function __anEnhanceN3(response){
   if(!response || !response.ok) return response;
@@ -27,6 +28,9 @@ async function __anEnhanceN3(response){
     let html = await response.text();
     if(!html.includes('/n3-vocabulary-all.css')){
       html = html.replace('</head>', __AN_N3_CSS + '\n</head>');
+    }
+    if(!html.includes('/n3-vocabulary-examples.js')){
+      html = html.replace('</body>', __AN_N3_EXAMPLES + '\n</body>');
     }
     if(!html.includes('/n3-vocabulary-all.js')){
       html = html.replace('</body>', __AN_N3_JS + '\n</body>');
@@ -46,16 +50,28 @@ __anNativeAddEventListener('fetch', event => {
   const request = event.request;
   if(request.method === 'GET'){
     const url = new URL(request.url);
-    const isN3 = url.origin === self.location.origin &&
+    const isN3Vocabulary = url.origin === self.location.origin &&
       (url.pathname === '/n3-vocabulary.html' || url.pathname === '/n3-vocabulary');
+    const isN3Grammar = url.origin === self.location.origin &&
+      (url.pathname === '/n3-grammar.html' || url.pathname === '/n3-grammar');
     const isHtml = request.mode === 'navigate' || (request.headers.get('accept') || '').includes('text/html');
-    if(isN3 && isHtml){
+    if(isN3Vocabulary && isHtml){
       event.respondWith(
         fetch(request, {cache:'no-store'})
           .then(__anEnhanceN3)
           .catch(async () => {
             const cached = await caches.match('/n3-vocabulary.html', {ignoreSearch:true});
             return cached ? __anEnhanceN3(cached) : caches.match('/index.html');
+          })
+      );
+      return;
+    }
+    if(isN3Grammar && isHtml){
+      event.respondWith(
+        fetch(request, {cache:'no-store'})
+          .catch(async () => {
+            const cached = await caches.match('/n3-grammar.html', {ignoreSearch:true});
+            return cached || caches.match('/index.html');
           })
       );
       return;

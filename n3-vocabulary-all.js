@@ -73,94 +73,312 @@
     return 'noun';
   }
 
-  function placeContext(lessonNo) {
-    if (lessonNo <= 6) return { jp: 'いえで', bn: 'বাসায়' };
-    if (lessonNo <= 12) return { jp: 'えきやまちで', bn: 'স্টেশন বা শহরে' };
-    if (lessonNo <= 18) return { jp: 'おみせやでかけたときに', bn: 'দোকান বা বাইরে গেলে' };
-    if (lessonNo <= 21) return { jp: 'がっこうで', bn: 'স্কুলে' };
-    if (lessonNo <= 24) return { jp: 'しごとやがっこうで', bn: 'কাজ বা স্কুলে' };
-    if (lessonNo <= 30) return { jp: 'にちじょうかいわで', bn: 'দৈনন্দিন কথোপকথনে' };
-    return { jp: 'にほんでのせいかつで', bn: 'জাপানের দৈনন্দিন জীবনে' };
+  const corpusExamples = window.N3_VOCAB_CORPUS_EXAMPLES || {};
+
+  const example = (jp, yomi, bangla, tag, extra = {}) => ({ jp, yomi, bangla, tag, ...extra });
+
+  function stableHash(value) {
+    let hash = 2166136261;
+    for (const char of String(value)) {
+      hash ^= char.codePointAt(0);
+      hash = Math.imul(hash, 16777619);
+    }
+    return hash >>> 0;
+  }
+
+  function pickTemplates(templates, count, info, salt = '') {
+    if (!templates.length || count < 1) return [];
+    const output = [];
+    const used = new Set();
+    const hash = stableHash(`${info.word}|${info.reading}|${info.lessonNo}|${salt}`);
+    let index = hash % templates.length;
+    const gcd = (a, b) => b ? gcd(b, a % b) : a;
+    let step = 1 + ((hash >>> 8) % Math.max(1, templates.length - 1));
+    while (gcd(step, templates.length) !== 1) step = (step % templates.length) + 1;
+    while (output.length < Math.min(count, templates.length)) {
+      if (!used.has(index)) {
+        used.add(index);
+        output.push(templates[index](info));
+      }
+      index = (index + step) % templates.length;
+    }
+    return output;
+  }
+
+  function sourceExample(info) {
+    const source = corpusExamples[`${info.word}␟${info.reading}`];
+    if (!source) return null;
+    const match = String(source.match || info.word);
+    const pieces = String(source.text || '').split(match);
+    const highlighted = pieces.map(escapeHtml).join(targetRuby(match, info.reading));
+    return example(
+      highlighted,
+      source.reading || `টার্গেট: ${info.reading}`,
+      `এই বাক্যে “${info.word}” অর্থ “${info.bn || info.word}”। আগে নিজে পুরো বাক্যের অর্থ ধরার চেষ্টা করুন।`,
+      'Corpus • বাস্তব বাক্য',
+      {
+        speak: source.text,
+        readingIsFull: Boolean(source.reading),
+        source: {
+          id: source.id,
+          author: source.author,
+          url: `https://tatoeba.org/en/sentences/show/${encodeURIComponent(source.id)}`
+        }
+      }
+    );
+  }
+
+  function commonStudyTemplates() {
+    return [
+      ({ word, reading, bn }) => example(`先生が「${targetRuby(word, reading)}」の使い方を説明しました。`, `せんせいが「${reading}」のつかいかたをせつめいしました。`, `শিক্ষক “${bn}”-এর ব্যবহার বুঝিয়েছেন।`, 'শেখার practice'),
+      ({ word, reading, bn }) => example(`ノートに「${targetRuby(word, reading)}」を使った文を書きました。`, `のーとに「${reading}」をつかったぶんをかきました。`, `“${bn}” ব্যবহার করে নোটে একটি বাক্য লিখেছি।`, 'লিখে practice'),
+      ({ word, reading, bn }) => example(`「${targetRuby(word, reading)}」を別の文でも使ってみましょう。`, `「${reading}」をべつのぶんでもつかってみましょう。`, `“${bn}” অন্য একটি বাক্যেও ব্যবহার করে দেখুন।`, 'নিজে বানান'),
+      ({ word, reading, bn }) => example(`「${targetRuby(word, reading)}」と一緒によく使う言葉を探しました。`, `「${reading}」といっしょによくつかうことばをさがしました。`, `“${bn}”-এর সঙ্গে বেশি ব্যবহৃত শব্দ খুঁজেছি।`, 'Collocation'),
+      ({ word, reading, bn }) => example(`会話の中で「${targetRuby(word, reading)}」を聞き取りました。`, `かいわのなかで「${reading}」をききとりました。`, `কথোপকথনের মধ্যে “${bn}” শুনে ধরেছি।`, 'শুনে practice'),
+      ({ word, reading, bn }) => example(`今日覚えたい言葉は「${targetRuby(word, reading)}」です。`, `きょうおぼえたいことばは「${reading}」です。`, `আজ যে শব্দটি মনে রাখতে চাই সেটি “${bn}”।`, 'আজকের শব্দ'),
+      ({ word, reading, bn }) => example(`「${targetRuby(word, reading)}」を使って、自分のことを話してください。`, `「${reading}」をつかって、じぶんのことをはなしてください。`, `“${bn}” ব্যবহার করে নিজের কথা বলুন।`, 'Speaking'),
+      ({ word, reading, bn }) => example(`「${targetRuby(word, reading)}」が使われる場面を考えました。`, `「${reading}」がつかわれるばめんをかんがえました。`, `“${bn}” কোন পরিস্থিতিতে ব্যবহৃত হয়, তা ভেবেছি।`, 'ব্যবহারের場面'),
+      ({ word, reading, bn }) => example(`辞書で「${targetRuby(word, reading)}」の例文を確認しました。`, `じしょで「${reading}」のれいぶんをかくにんしました。`, `অভিধানে “${bn}”-এর উদাহরণ বাক্য যাচাই করেছি।`, 'Dictionary'),
+      ({ word, reading, bn }) => example(`「${targetRuby(word, reading)}」を三回、声に出して読みました。`, `「${reading}」をさんかい、こえにだしてよみました。`, `“${bn}” তিনবার জোরে পড়েছি।`, 'Shadowing'),
+      ({ word, reading, bn }) => example(`忘れないように「${targetRuby(word, reading)}」をメモしました。`, `わすれないように「${reading}」をめもしました。`, `ভুলে না যেতে “${bn}” লিখে রেখেছি।`, 'মনে রাখুন'),
+      ({ word, reading, bn }) => example(`友達と「${targetRuby(word, reading)}」を使った文を作りました。`, `ともだちと「${reading}」をつかったぶんをつくりました。`, `বন্ধুর সঙ্গে “${bn}” ব্যবহার করে বাক্য বানিয়েছি।`, 'Pair practice'),
+      ({ word, reading, bn }) => example(`「${targetRuby(word, reading)}」の読み方と意味を確認してください。`, `「${reading}」のよみかたといみをかくにんしてください。`, `“${bn}”-এর পড়া ও অর্থ যাচাই করুন।`, 'Recall'),
+      ({ word, reading, bn }) => example(`明日、「${targetRuby(word, reading)}」をもう一度復習します。`, `あした、「${reading}」をもういちどふくしゅうします。`, `কাল “${bn}” আরেকবার রিভিশন দেব।`, 'Revision'),
+      ({ word, reading, bn }) => example(`「${targetRuby(word, reading)}」を短い会話で使ってみました。`, `「${reading}」をみじかいかいわでつかってみました。`, `ছোট কথোপকথনে “${bn}” ব্যবহার করে দেখেছি।`, 'কথোপকথন'),
+      ({ word, reading, bn }) => example(`先生に「${targetRuby(word, reading)}」のニュアンスを質問しました。`, `せんせいに「${reading}」のにゅあんすをしつもんしました。`, `শিক্ষককে “${bn}”-এর সূক্ষ্ম ব্যবহার জিজ্ঞেস করেছি।`, 'Nuance'),
+      ({ word, reading, bn }) => example(`「${targetRuby(word, reading)}」が自然に使えるまで練習します。`, `「${reading}」がしぜんにつかえるまでれんしゅうします。`, `“${bn}” স্বাভাবিকভাবে বলতে পারা পর্যন্ত অনুশীলন করব।`, 'Fluency'),
+      ({ word, reading, bn }) => example(`この場面では「${targetRuby(word, reading)}」が使えますか。`, `このばめんでは「${reading}」がつかえますか。`, `এই পরিস্থিতিতে “${bn}” ব্যবহার করা যাবে কি?`, 'Check usage'),
+      ({ word, reading, bn }) => example(`「${targetRuby(word, reading)}」と似た言葉の違いを調べました。`, `「${reading}」とにたことばのちがいをしらべました。`, `“${bn}”-এর কাছাকাছি শব্দগুলোর পার্থক্য দেখেছি।`, 'পার্থক্য')
+    ];
+  }
+
+  function nounTemplates() {
+    return [
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}について、もう少し詳しく説明してください。`, `${reading}について、もうすこしくわしくせつめいしてください。`, `${bn} সম্পর্কে আরেকটু বিস্তারিত বলুন।`, 'ব্যাখ্যা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}に関する情報を調べています。`, `${reading}にかんするじょうほうをしらべています。`, `${bn}-সংক্রান্ত তথ্য খুঁজছি।`, 'তথ্য খোঁজা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}のことをもっと知りたいです。`, `${reading}のことをもっとしりたいです。`, `${bn} সম্পর্কে আরও জানতে চাই।`, 'ইচ্ছা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}が必要かどうか、確認しました。`, `${reading}がひつようかどうか、かくにんしました。`, `${bn} প্রয়োজন কি না যাচাই করেছি।`, 'যাচাই'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}について質問があります。`, `${reading}についてしつもんがあります。`, `${bn} সম্পর্কে আমার একটি প্রশ্ন আছে।`, 'প্রশ্ন'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}を使った短い例を作りました。`, `${reading}をつかったみじかいれいをつくりました。`, `${bn} ব্যবহার করে ছোট একটি উদাহরণ বানিয়েছি।`, 'ছোট উদাহরণ'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}について先生に説明してもらいました。`, `${reading}についてせんせいにせつめいしてもらいました。`, `শিক্ষকের কাছ থেকে ${bn} সম্পর্কে ব্যাখ্যা নিয়েছি।`, 'শেখা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}はどんな時に使いますか。`, `${reading}はどんなときにつかいますか。`, `${bn} কোন সময়ে ব্যবহার করা হয়?`, 'ব্যবহারের সময়'),
+      ({ word, reading, bn }) => example(`この文では、${targetRuby(word, reading)}が何を表していますか。`, `このぶんでは、${reading}がなにをあらわしていますか。`, `এই বাক্যে ${bn} কী বোঝাচ্ছে?`, 'Context check'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}が出てくる短い会話を作りました。`, `${reading}がでてくるみじかいかいわをつくりました。`, `${bn} আছে এমন ছোট কথোপকথন বানিয়েছি।`, 'কথোপকথন'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}の意味を、やさしい日本語で説明できますか。`, `${reading}のいみを、やさしいにほんごでせつめいできますか。`, `${bn}-এর অর্থ সহজ জাপানিতে বলতে পারবেন?`, 'Output'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}と似ているものを比べました。`, `${reading}とにているものをくらべました。`, `${bn}-এর সঙ্গে মিল আছে এমন জিনিস তুলনা করেছি।`, 'তুলনা')
+    ];
+  }
+
+  function verbTemplates() {
+    return [
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}前に、ルールを確認してください。`, `${reading}まえに、るーるをかくにんしてください。`, `${bn} করার আগে নিয়ম যাচাই করুন।`, 'আগে'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}かどうか、状況を見て決めます。`, `${reading}かどうか、じょうきょうをみてきめます。`, `পরিস্থিতি দেখে ${bn} করব কি না ঠিক করব।`, 'সিদ্ধান্ত'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}方法を先生に質問しました。`, `${reading}ほうほうをせんせいにしつもんしました。`, `${bn} করার পদ্ধতি শিক্ষককে জিজ্ঞেস করেছি।`, 'কীভাবে'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}ときは、十分に気をつけてください。`, `${reading}ときは、じゅうぶんにきをつけてください。`, `${bn} করার সময় যথেষ্ট সতর্ক থাকুন।`, 'সতর্কতা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}ためには、何が必要ですか。`, `${reading}ためには、なにがひつようですか。`, `${bn} করতে কী প্রয়োজন?`, 'প্রয়োজন'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}ことについて、友達と話しました。`, `${reading}ことについて、ともだちとはなしました。`, `${bn} করা নিয়ে বন্ধুর সঙ্গে কথা বলেছি।`, 'আলোচনা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}必要があるか、もう一度考えます。`, `${reading}ひつようがあるか、もういちどかんがえます。`, `${bn} করা দরকার কি না আবার ভাবব।`, 'প্রয়োজন যাচাই'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}場合は、事前に知らせてください。`, `${reading}ばあいは、じぜんにしらせてください。`, `${bn} করলে আগে থেকে জানান।`, 'এমন হলে'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}ことは、簡単ではありません。`, `${reading}ことは、かんたんではありません。`, `${bn} করা সহজ নয়।`, 'কঠিনতা'),
+      ({ word, reading, bn }) => example(`初めて${targetRuby(word, reading)}人は、説明を読んでください。`, `はじめて${reading}ひとは、せつめいをよんでください。`, `যিনি প্রথমবার ${bn} করবেন, ব্যাখ্যাটি পড়ুন।`, 'প্রথমবার'),
+      ({ word, reading, bn }) => example(`どうして${targetRuby(word, reading)}のか、理由を説明してください。`, `どうして${reading}のか、りゆうをせつめいしてください。`, `কেন ${bn} করবে, কারণটি বলুন।`, 'কারণ'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}ことになったら、早めに準備します。`, `${reading}ことになったら、はやめにじゅんびします。`, `${bn} করার সিদ্ধান্ত হলে আগেই প্রস্তুতি নেব।`, 'প্রস্তুতি'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}ときの注意点を調べました。`, `${reading}ときのちゅういてんをしらべました。`, `${bn} করার সময় কী কী খেয়াল রাখতে হয়, তা দেখেছি।`, '注意点'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}前に、周りの人に知らせます。`, `${reading}まえに、まわりのひとにしらせます。`, `${bn} করার আগে আশপাশের মানুষকে জানাব।`, 'আগে জানানো'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}かどうかは、本人が決めます。`, `${reading}かどうかは、ほんにんがきめます。`, `${bn} করবে কি না সংশ্লিষ্ট ব্যক্তি ঠিক করবে।`, 'নিজের সিদ্ধান্ত'),
+      ({ word, reading, bn }) => example(`安全に${targetRuby(word, reading)}方法を調べました。`, `あんぜんに${reading}ほうほうをしらべました。`, `নিরাপদে ${bn} করার পদ্ধতি দেখেছি।`, 'নিরাপদ ব্যবহার'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}練習を、少しずつ続けています。`, `${reading}れんしゅうを、すこしずつつづけています。`, `${bn} করার অনুশীলন একটু একটু করে চালিয়ে যাচ্ছি।`, 'ধীরে practice'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}ことができるか、試してみました。`, `${reading}ことができるか、ためしてみました。`, `${bn} করতে পারি কি না চেষ্টা করে দেখেছি।`, 'চেষ্টা')
+    ];
+  }
+
+  function clauseTemplates() {
+    return [
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}そうです。`, `${reading}そうです。`, `শুনেছি—${bn}।`, 'শোনা কথা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}かもしれません。`, `${reading}かもしれません。`, `হয়তো ${bn}।`, 'সম্ভাবনা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}ので、予定を変えました。`, `${reading}ので、よていをかえました。`, `${bn} বলে পরিকল্পনা বদলেছি।`, 'কারণ'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}かどうか、確認してください。`, `${reading}かどうか、かくにんしてください。`, `${bn} কি না যাচাই করুন।`, 'যাচাই'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}ときは、すぐに連絡してください。`, `${reading}ときは、すぐにれんらくしてください。`, `${bn} হলে সঙ্গে সঙ্গে যোগাযোগ করুন।`, 'পরিস্থিতি'),
+      ({ word, reading, bn }) => example(`もし${targetRuby(word, reading)}なら、別の方法を考えます。`, `もし${reading}なら、べつのほうほうをかんがえます。`, `যদি ${bn} হয়, অন্য উপায় ভাবব।`, 'শর্ত'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}と聞きました。`, `${reading}とききました。`, `শুনেছি যে ${bn}।`, 'উদ্ধৃতি'),
+      ({ word, reading, bn }) => example(`私も${targetRuby(word, reading)}と思います。`, `わたしも${reading}とおもいます。`, `আমিও মনে করি ${bn}।`, 'মতামত'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}場合は、受付に相談してください。`, `${reading}ばあいは、うけつけにそうだんしてください。`, `${bn} হলে রিসেপশনে পরামর্শ নিন।`, 'এমন হলে'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}ため、少し遅れます。`, `${reading}ため、すこしおくれます。`, `${bn} বলে একটু দেরি হবে।`, 'ফলাফল'),
+      ({ word, reading, bn }) => example(`本当に${targetRuby(word, reading)}のですか。`, `ほんとうに${reading}のですか。`, `সত্যিই কি ${bn}?`, 'নিশ্চিতকরণ'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}という連絡がありました。`, `${reading}というれんらくがありました。`, `${bn}—এমন খবর এসেছে।`, 'খবর')
+    ];
+  }
+
+  function iAdjectiveTemplates() {
+    return [
+      ({ word, reading, bn }) => example(`これは本当に${targetRuby(word, reading)}です。`, `これはほんとうに${reading}です。`, `এটি সত্যিই ${bn}।`, 'বর্ণনা'),
+      ({ word, reading, bn }) => example(`思ったより${targetRuby(word, reading)}です。`, `おもったより${reading}です。`, `ভাবার চেয়ে ${bn}।`, 'তুলনা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}と感じました。`, `${reading}とかんじました。`, `আমার ${bn} মনে হয়েছে।`, 'অনুভূতি'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}かどうか、比べてください。`, `${reading}かどうか、くらべてください。`, `${bn} কি না তুলনা করে দেখুন।`, 'তুলনা'),
+      ({ word, reading, bn }) => example(`こんなに${targetRuby(word, reading)}とは思いませんでした。`, `こんなに${reading}とはおもいませんでした。`, `এতটা ${bn} হবে ভাবিনি।`, 'অপ্রত্যাশিত'),
+      ({ word, reading, bn }) => example(`少し${targetRuby(word, reading)}ですが、問題ありません。`, `すこし${reading}ですが、もんだいありません。`, `একটু ${bn}, তবে সমস্যা নেই।`, 'বিপরীত ভাব'),
+      ({ word, reading, bn }) => example(`前より${targetRuby(word, reading)}です。`, `まえより${reading}です。`, `আগের চেয়ে ${bn}।`, 'পরিবর্তন'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}ものを選びました。`, `${reading}ものをえらびました。`, `${bn} জিনিসটি বেছে নিয়েছি।`, 'বাছাই'),
+      ({ word, reading, bn }) => example(`どうして${targetRuby(word, reading)}のか、理由を教えてください。`, `どうして${reading}のか、りゆうをおしえてください。`, `কেন ${bn}, কারণটি বলুন।`, 'কারণ'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}ときは、無理をしないでください。`, `${reading}ときは、むりをしないでください。`, `${bn} হলে জোর করবেন না।`, 'সতর্কতা'),
+      ({ word, reading, bn }) => example(`見た目よりずっと${targetRuby(word, reading)}です。`, `みためよりずっと${reading}です。`, `দেখতে যা লাগে, তার চেয়ে অনেক বেশি ${bn}।`, 'দেখা বনাম সত্য'),
+      ({ word, reading, bn }) => example(`本当に${targetRuby(word, reading)}ですね。`, `ほんとうに${reading}ですね。`, `সত্যিই ${bn}, তাই না?`, 'কথ্য')
+    ];
+  }
+
+  function naAdjectiveTemplates() {
+    return [
+      ({ word, reading, bn }) => example(`この場所はとても${targetRuby(word, reading)}です。`, `このばしょはとても${reading}です。`, `এই জায়গাটি খুব ${bn}।`, 'বর্ণনা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}な場所を探しています。`, `${reading}なばしょをさがしています。`, `${bn} জায়গা খুঁজছি।`, 'খোঁজা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}なので、安心しました。`, `${reading}なので、あんしんしました。`, `${bn} বলে নিশ্চিন্ত হয়েছি।`, 'কারণ'),
+      ({ word, reading, bn }) => example(`思ったより${targetRuby(word, reading)}でした。`, `おもったより${reading}でした。`, `ভাবার চেয়ে ${bn} ছিল।`, 'তুলনা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}な方法を選びました。`, `${reading}なほうほうをえらびました。`, `${bn} পদ্ধতি বেছে নিয়েছি।`, 'বাছাই'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}なら、ここに決めます。`, `${reading}なら、ここにきめます。`, `${bn} হলে এটিই ঠিক করব।`, 'শর্ত'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}かどうか、実際に見てください。`, `${reading}かどうか、じっさいにみてください。`, `${bn} কি না নিজে দেখে নিন।`, 'যাচাই'),
+      ({ word, reading, bn }) => example(`もっと${targetRuby(word, reading)}な例を教えてください。`, `もっと${reading}なれいをおしえてください。`, `আরও ${bn} উদাহরণ বলুন।`, 'উদাহরণ'),
+      ({ word, reading, bn }) => example(`前より${targetRuby(word, reading)}になりました。`, `まえより${reading}になりました。`, `আগের চেয়ে ${bn} হয়েছে।`, 'পরিবর্তন'),
+      ({ word, reading, bn }) => example(`ここなら${targetRuby(word, reading)}に過ごせます。`, `ここなら${reading}にすごせます。`, `এখানে ${bn}ভাবে সময় কাটানো যায়।`, 'অবস্থা')
+    ];
+  }
+
+  function adverbTemplates() {
+    return [
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}確認してください。`, `${reading}かくにんしてください。`, `${bn}ভাবে যাচাই করুন।`, 'নির্দেশনা'),
+      ({ word, reading, bn }) => example(`今日は${targetRuby(word, reading)}話しました。`, `きょうは${reading}はなしました。`, `আজ ${bn}ভাবে কথা বলেছি।`, 'কথা বলা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}準備を進めました。`, `${reading}じゅんびをすすめました。`, `${bn}ভাবে প্রস্তুতি এগিয়েছি।`, 'প্রস্তুতি'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}できるようになりました。`, `${reading}できるようになりました。`, `${bn}ভাবে করতে পারছি এখন।`, 'পরিবর্তন'),
+      ({ word, reading, bn }) => example(`先生が${targetRuby(word, reading)}説明してくれました。`, `せんせいが${reading}せつめいしてくれました。`, `শিক্ষক ${bn}ভাবে বুঝিয়েছেন।`, 'ব্যাখ্যা'),
+      ({ word, reading, bn }) => example(`もう一度、${targetRuby(word, reading)}考えてみます。`, `もういちど、${reading}かんがえてみます。`, `আরেকবার ${bn}ভাবে ভেবে দেখব।`, 'ভাবনা'),
+      ({ word, reading, bn }) => example(`仕事は${targetRuby(word, reading)}進んでいます。`, `しごとは${reading}すすんでいます。`, `কাজ ${bn}ভাবে এগোচ্ছে।`, 'কাজ'),
+      ({ word, reading, bn }) => example(`最近、生活が${targetRuby(word, reading)}変わりました。`, `さいきん、せいかつが${reading}かわりました。`, `সম্প্রতি জীবন ${bn}ভাবে বদলেছে।`, 'পরিবর্তন'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}答えても大丈夫です。`, `${reading}こたえてもだいじょうぶです。`, `${bn}ভাবে উত্তর দিলেও সমস্যা নেই।`, 'অনুমতি'),
+      ({ word, reading, bn }) => example(`駅まで${targetRuby(word, reading)}歩きました。`, `えきまで${reading}あるきました。`, `স্টেশন পর্যন্ত ${bn}ভাবে হেঁটেছি।`, 'চলাফেরা')
+    ];
+  }
+
+  function timeTemplates() {
+    return [
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}、友達に会います。`, `${reading}、ともだちにあいます。`, `${bn}-এ বন্ধুর সঙ্গে দেখা করব।`, 'সময়'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}までに連絡してください。`, `${reading}までにれんらくしてください。`, `${bn}-এর মধ্যে যোগাযোগ করুন।`, 'সময়সীমা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}の予定を確認しました。`, `${reading}のよていをかくにんしました。`, `${bn}-এর পরিকল্পনা যাচাই করেছি।`, 'ক্যালেন্ডার'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}から勉強を始めます。`, `${reading}からべんきょうをはじめます。`, `${bn} থেকে পড়া শুরু করব।`, 'শুরু'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}は家でゆっくり休みます。`, `${reading}はいえでゆっくりやすみます。`, `${bn}-এ বাসায় বিশ্রাম নেব।`, 'পরিকল্পনা'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}になったら、もう一度確認します。`, `${reading}になったら、もういちどかくにんします。`, `${bn} হলে আবার যাচাই করব।`, 'সময় এলে'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}について家族に連絡しました。`, `${reading}についてかぞくにれんらくしました。`, `${bn} সম্পর্কে পরিবারকে জানিয়েছি।`, 'যোগাযোগ'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}は空いていますか。`, `${reading}はあいていますか。`, `${bn}-এ কি আপনার সময় খালি আছে?`, 'সময় জিজ্ঞেস')
+    ];
+  }
+
+  function counterTemplates() {
+    return [
+      ({ word, reading, bn }) => example(`これを${targetRuby(word, reading)}ください。`, `これを${reading}ください。`, `এটি ${bn} দিন।`, 'দোকান'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}必要です。`, `${reading}ひつようです。`, `${bn} প্রয়োজন।`, 'পরিমাণ'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}で足りると思います。`, `${reading}でたりるとおもいます。`, `মনে হয় ${bn}-ই যথেষ্ট।`, 'যথেষ্ট'),
+      ({ word, reading, bn }) => example(`一人に${targetRuby(word, reading)}ずつ配ってください。`, `ひとりに${reading}ずつくばってください。`, `প্রত্যেককে ${bn} করে দিন।`, 'বণ্টন'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}用意しました。`, `${reading}よういしました。`, `${bn} প্রস্তুত করেছি।`, 'প্রস্তুতি'),
+      ({ word, reading, bn }) => example(`まだ${targetRuby(word, reading)}あります。`, `まだ${reading}あります。`, `এখনও ${bn} আছে।`, 'কত আছে'),
+      ({ word, reading, bn }) => example(`${targetRuby(word, reading)}注文しました。`, `${reading}ちゅうもんしました。`, `${bn} অর্ডার করেছি।`, 'অর্ডার'),
+      ({ word, reading, bn }) => example(`この中から${targetRuby(word, reading)}選んでください。`, `このなかから${reading}えらんでください。`, `এগুলোর মধ্যে থেকে ${bn} বেছে নিন।`, 'বাছাই')
+    ];
+  }
+
+  function isCompleteEntry(word) {
+    return /[「」『』]|[。！？!?]$/.test(word);
+  }
+
+  function curatedExamples(info) {
+    const { word, reading } = info;
+    const ruby = targetRuby(word, reading);
+    const banks = {
+      'お茶わん': [
+        example(`${ruby}にご飯をよそいます。`, `${reading}にごはんをよそいます。`, 'ভাতের বাটিতে ভাত পরিবেশন করি।', 'রান্নাঘর'),
+        example(`食事の後で、${ruby}を洗いました。`, `しょくじのあとで、${reading}をあらいました。`, 'খাওয়ার পর ভাতের বাটিটি ধুয়েছি।', 'ঘরের কাজ'),
+        example(`この${ruby}は、毎日使っています。`, `この${reading}は、まいにちつかっています。`, 'এই ভাতের বাটিটি প্রতিদিন ব্যবহার করি।', 'দৈনন্দিন'),
+        example(`${ruby}を食器棚に戻してください。`, `${reading}をしょっきだなにもどしてください。`, 'ভাতের বাটিটি আলমারিতে ফিরিয়ে রাখুন।', 'নির্দেশনা')
+      ],
+      '時速１００キロで走る': [
+        example(`この車は高速道路を${ruby}ことができます。`, `このくるまはこうそくどうろを${reading}ことができます。`, 'এই গাড়িটি এক্সপ্রেসওয়েতে ঘণ্টায় ১০০ কিলোমিটার গতিতে চলতে পারে।', 'গাড়ি'),
+        example(`${ruby}と、止まるまでの距離が長くなります。`, `${reading}と、とまるまでのきょりがながくなります。`, 'ঘণ্টায় ১০০ কিলোমিটার গতিতে চললে থামার দূরত্ব বেড়ে যায়।', 'নিরাপত্তা'),
+        example(`${ruby}前に、制限速度を確認してください。`, `${reading}まえに、せいげんそくどをかくにんしてください。`, 'ঘণ্টায় ১০০ কিলোমিটার গতিতে চলার আগে গতিসীমা যাচাই করুন।', 'Traffic rule'),
+        example(`雨の日に${ruby}のは危険です。`, `あめのひに${reading}のはきけんです。`, 'বৃষ্টির দিনে ঘণ্টায় ১০০ কিলোমিটার গতিতে চলা বিপজ্জনক।', 'সতর্কতা')
+      ],
+      'かける': [
+        example(`３に４を${ruby}と、１２になります。`, `さんによんを${reading}と、じゅうにになります。`, '৩-কে ৪ দিয়ে গুণ করলে ১২ হয়।', 'গণিত'),
+        example(`この問題では、二つの数を${ruby}。`, `このもんだいでは、ふたつのかずを${reading}。`, 'এই অঙ্কে দুটি সংখ্যা গুণ করতে হবে।', 'সমস্যা'),
+        example(`５に０を${ruby}と、答えは０です。`, `ごにぜろを${reading}と、こたえはぜろです。`, '৫-কে ০ দিয়ে গুণ করলে উত্তর ০।', 'উত্তর'),
+        example(`まず足して、それから２を${ruby}。`, `まずたして、それからにを${reading}。`, 'প্রথমে যোগ করুন, তারপর ২ দিয়ে গুণ করুন।', 'ধাপ')
+      ],
+      '指定席': [
+        example(`新幹線の${ruby}を予約しました。`, `しんかんせんの${reading}をよやくしました。`, 'শিনকানসেনের সংরক্ষিত আসন বুক করেছি।', 'ট্রেন'),
+        example(`${ruby}の切符を見せてください。`, `${reading}のきっぷをみせてください。`, 'সংরক্ষিত আসনের টিকিট দেখান।', 'টিকিট'),
+        example(`窓側の${ruby}は空いていますか。`, `まどがわの${reading}はあいていますか。`, 'জানালার পাশের সংরক্ষিত আসন খালি আছে কি?', 'জিজ্ঞেস'),
+        example(`${ruby}は何号車ですか。`, `${reading}はなんごうしゃですか。`, 'সংরক্ষিত আসনটি কোন বগিতে?', 'স্টেশন')
+      ],
+      'パンツ': [
+        example(`黒い${ruby}に白いシャツを合わせました。`, `くろい${reading}にしろいしゃつをあわせました。`, 'কালো প্যান্টের সঙ্গে সাদা শার্ট মিলিয়েছি।', 'পোশাক'),
+        example(`この${ruby}は少しきついです。`, `この${reading}はすこしきついです。`, 'এই প্যান্টটি একটু আঁটসাঁট।', 'মাপ'),
+        example(`仕事には、落ち着いた色の${ruby}をはきます。`, `しごとには、おちついたいろの${reading}をはきます。`, 'কাজে শান্ত রঙের প্যান্ট পরি।', 'কাজের পোশাক'),
+        example(`${ruby}のサイズを確認してから買いました。`, `${reading}のさいずをかくにんしてからかいました。`, 'প্যান্টের মাপ যাচাই করে কিনেছি।', 'কেনাকাটা')
+      ],
+      '吐く': [
+        example(`気分が悪くて、食べた物を${ruby}ことがあります。`, `きぶんがわるくて、たべたものを${reading}ことがあります。`, 'শরীর খারাপ হয়ে কখনও খাওয়া খাবার বমি হয়েছে।', 'স্বাস্থ্য'),
+        example(`何度も${ruby}なら、医者に相談してください。`, `なんども${reading}なら、いしゃにそうだんしてください。`, 'বারবার বমি হলে ডাক্তারের পরামর্শ নিন।', 'পরামর্শ'),
+        example(`吐き気はありますが、${ruby}ほどではありません。`, `はきけはありますが、${reading}ほどではありません。`, 'বমিভাব আছে, তবে বমি করার মতো নয়।', 'উপসর্গ'),
+        example(`子どもが急に${ruby}ことがあります。`, `こどもがきゅうに${reading}ことがあります。`, 'শিশু কখনও হঠাৎ বমি করতে পারে।', 'সতর্কতা')
+      ],
+      'おごり': [
+        example(`今日は私の${ruby}です。`, `きょうはわたしの${reading}です。`, 'আজ আমি খাওয়াব।', 'দাওয়াত'),
+        example(`このコーヒーは先輩の${ruby}でした。`, `このこーひーはせんぱいの${reading}でした。`, 'এই কফিটি সিনিয়র খাইয়েছেন।', 'ক্যাফে'),
+        example(`次は私の${ruby}にさせてください。`, `つぎはわたしの${reading}にさせてください。`, 'পরেরবার আমাকে খাওয়াতে দিন।', 'কথ্য'),
+        example(`「ここは僕の${ruby}だよ」と友達が言いました。`, `「ここはぼくの${reading}だよ」とともだちがいいました。`, '“এখানে আমি খাওয়াব,” বন্ধু বলল।', 'সংলাপ')
+      ],
+      '道路が混んでいる': [
+        example(`朝は${ruby}ので、早く家を出ます。`, `あさは${reading}ので、はやくいえをでます。`, 'সকালে রাস্তা ভিড় থাকে বলে তাড়াতাড়ি বাসা থেকে বের হই।', 'সকাল'),
+        example(`${ruby}と、バスが遅れることがあります。`, `${reading}と、ばすがおくれることがあります。`, 'রাস্তা ভিড় থাকলে বাস কখনও দেরি করে।', 'বাস'),
+        example(`今日は${ruby}か、地図で確認しました。`, `きょうは${reading}か、ちずでかくにんしました。`, 'আজ রাস্তা ভিড় কি না ম্যাপে দেখেছি।', 'মানচিত্র'),
+        example(`${ruby}時間を避けて出発します。`, `${reading}じかんをさけてしゅっぱつします。`, 'রাস্তা ভিড় থাকে এমন সময় এড়িয়ে রওনা হব।', 'পরিকল্পনা')
+      ]
+    };
+    return banks[word] || null;
   }
 
   function buildExamples(info) {
-    const { word, reading, bn, lessonNo } = info;
+    const curated = curatedExamples(info);
+    if (curated) return curated;
     const type = classify(info);
-    const ruby = targetRuby(word, reading);
-    const ctx = placeContext(lessonNo);
-    const qbn = bn || word;
+    const source = sourceExample(info);
+    const output = source ? [source] : [];
+    const wanted = 4 - output.length;
 
-    const wrap = (jp, yomi, bangla, tag) => ({ jp, yomi, bangla, tag });
-
-    if (type === 'verb') {
-      return [
-        wrap(`きょう、${ruby}ことにしました。`, `きょう、${reading}ことにしました。`, `আজ “${qbn}” করার সিদ্ধান্ত নিয়েছি।`, 'আজ'),
-        wrap(`${ctx.jp}${ruby}ことがあります。`, `${ctx.jp}${reading}ことがあります。`, `${ctx.bn} কখনও “${qbn}” করতে হয়।`, 'বাস্তব ব্যবহার'),
-        wrap(`${ruby}まえに、もういちどかくにんします。`, `${reading}まえに、もういちどかくにんします。`, `“${qbn}” করার আগে আরেকবার যাচাই করি।`, 'সতর্কতা'),
-        wrap(`わからないときは、${ruby}まえにスタッフにききます。`, `わからないときは、${reading}まえにすたっふにききます。`, `না বুঝলে “${qbn}” করার আগে স্টাফকে জিজ্ঞেস করি।`, 'Japan life')
-      ];
+    if (isCompleteEntry(info.word)) {
+      output.push(example(
+        targetRuby(info.word, info.reading),
+        info.reading,
+        info.bn || 'সম্পূর্ণ কথোপকথনটি জোরে পড়ুন।',
+        'মূল phrase',
+        { speak: info.word }
+      ));
+      output.push(...pickTemplates(commonStudyTemplates(), 4 - output.length, info, 'dialogue'));
+      return output.slice(0, 4);
     }
 
-    if (type === 'clause') {
-      return [
-        wrap(`いま、${ruby}。`, `いま、${reading}。`, `এখন পরিস্থিতি হলো—${qbn}।`, 'কথ্য'),
-        wrap(`${ruby}ので、きをつけてください。`, `${reading}ので、きをつけてください。`, `${qbn}—তাই একটু খেয়াল রাখুন।`, 'সতর্কতা'),
-        wrap(`${ruby}かどうか、かくにんしました。`, `${reading}かどうか、かくにんしました。`, `${qbn} কি না, তা যাচাই করেছি।`, 'যাচাই'),
-        wrap(`${ruby}ときは、スタッフにそうだんします。`, `${reading}ときは、すたっふにそうだんします。`, `${qbn} হলে স্টাফের সঙ্গে পরামর্শ করি।`, 'Japan life')
-      ];
+    const banks = {
+      verb: verbTemplates,
+      clause: clauseTemplates,
+      iAdj: iAdjectiveTemplates,
+      naAdj: naAdjectiveTemplates,
+      adverb: adverbTemplates,
+      time: timeTemplates,
+      counter: counterTemplates
+    };
+    if (banks[type]) {
+      output.push(...pickTemplates(banks[type](), wanted, info, type));
+    } else {
+      const directCount = source ? 2 : 3;
+      output.push(...pickTemplates(nounTemplates(), Math.min(directCount, 4 - output.length), info, 'noun'));
+      output.push(...pickTemplates(commonStudyTemplates(), 4 - output.length, info, 'study'));
     }
-
-    if (type === 'iAdj') {
-      return [
-        wrap(`これは${ruby}です。`, `これは${reading}です。`, `এটি ${qbn}।`, 'বর্ণনা'),
-        wrap(`きょうは、いつもより${ruby}です。`, `きょうは、いつもより${reading}です。`, `আজ স্বাভাবিকের চেয়ে বেশি ${qbn}।`, 'দৈনন্দিন'),
-        wrap(`${ruby}ので、きをつけてください。`, `${reading}ので、きをつけてください。`, `${qbn}, তাই খেয়াল রাখুন।`, 'সতর্কতা'),
-        wrap(`おもったより${ruby}です。`, `おもったより${reading}です。`, `ভাবার চেয়ে ${qbn}।`, 'কথ্য')
-      ];
-    }
-
-    if (type === 'naAdj') {
-      return [
-        wrap(`ここは${ruby}です。`, `ここは${reading}です。`, `এই জায়গাটি ${qbn}।`, 'বর্ণনা'),
-        wrap(`${ruby}なところをさがしています。`, `${reading}なところをさがしています。`, `${qbn} এমন জায়গা খুঁজছি।`, 'দৈনন্দিন'),
-        wrap(`${ruby}なので、あんしんです。`, `${reading}なので、あんしんです。`, `${qbn} হওয়ায় নিশ্চিন্ত লাগছে।`, 'কথ্য'),
-        wrap(`おもったより${ruby}です。`, `おもったより${reading}です。`, `ভাবার চেয়ে ${qbn}।`, 'বাস্তব ব্যবহার')
-      ];
-    }
-
-    if (type === 'adverb') {
-      return [
-        wrap(`${ruby}、しごとをすすめました。`, `${reading}、しごとをすすめました。`, `${qbn}ভাবে কাজ এগিয়েছি।`, 'কাজ'),
-        wrap(`きょうは${ruby}はなしました。`, `きょうは${reading}はなしました。`, `আজ ${qbn}ভাবে কথা বলেছি।`, 'কথ্য'),
-        wrap(`${ruby}、かくにんしてください。`, `${reading}、かくにんしてください。`, `${qbn}ভাবে যাচাই করুন।`, 'নির্দেশনা'),
-        wrap(`スタッフが${ruby}せつめいしてくれました。`, `すたっふが${reading}せつめいしてくれました。`, `স্টাফ ${qbn}ভাবে বুঝিয়ে দিয়েছেন।`, 'Japan life')
-      ];
-    }
-
-    if (type === 'counter') {
-      return [
-        wrap(`これを${ruby}ください。`, `これを${reading}ください。`, `এটা ${qbn} দিন।`, 'দোকান'),
-        wrap(`${ruby}ひつようです。`, `${reading}ひつようです。`, `${qbn} প্রয়োজন।`, 'পরিমাণ'),
-        wrap(`${ruby}でたりるとおもいます。`, `${reading}でたりるとおもいます。`, `মনে হয় ${qbn}-ই যথেষ্ট হবে।`, 'কথ্য'),
-        wrap(`おみせで「${ruby}」といいました。`, `おみせで「${reading}」といいました。`, `দোকানে পরিমাণ বোঝাতে “${qbn}” বলেছি।`, 'বাস্তব ব্যবহার')
-      ];
-    }
-
-    if (type === 'time') {
-      return [
-        wrap(`${ruby}、ともだちにあいました。`, `${reading}、ともだちにあいました。`, `${qbn}-এ/সময় বন্ধুর সঙ্গে দেখা হয়েছে।`, 'সময়'),
-        wrap(`${ruby}はよていがあります。`, `${reading}はよていがあります。`, `${qbn}-এ আমার পরিকল্পনা আছে।`, 'পরিকল্পনা'),
-        wrap(`${ruby}のよていをカレンダーでかくにんしました。`, `${reading}のよていをかれんだーでかくにんしました。`, `${qbn}-এর পরিকল্পনা ক্যালেন্ডারে যাচাই করেছি।`, 'ক্যালেন্ডার'),
-        wrap(`${ruby}について、かぞくにれんらくしました。`, `${reading}について、かぞくにれんらくしました。`, `${qbn} সম্পর্কে পরিবারকে জানিয়েছি।`, 'যোগাযোগ')
-      ];
-    }
-
-    return [
-      wrap(`${ctx.jp}${ruby}をつかいました。`, `${ctx.jp}${reading}をつかいました。`, `${ctx.bn} ${qbn} ব্যবহার করেছি।`, 'বাস্তব ব্যবহার'),
-      wrap(`${ruby}について、スタッフにききました。`, `${reading}について、すたっふにききました。`, `${qbn} সম্পর্কে স্টাফকে জিজ্ঞেস করেছি।`, 'জিজ্ঞেস'),
-      wrap(`${ruby}をもういちどかくにんしました。`, `${reading}をもういちどかくにんしました。`, `${qbn} আরেকবার যাচাই করেছি।`, 'যাচাই'),
-      wrap(`にほんでは${ruby}がたいせつです。`, `にほんでは${reading}がたいせつです。`, `জাপানে ${qbn} গুরুত্বপূর্ণ।`, 'Japan life')
-    ];
+    return output.slice(0, 4);
   }
 
   function renderExamples(row, examples) {
@@ -168,15 +386,16 @@
     box.className = 'n3-vocab-examples';
     box.hidden = true;
     box.innerHTML = examples.map((ex, i) => `
-      <div class="n3-vocab-example">
+      <div class="n3-vocab-example${ex.source ? ' is-source' : ''}">
         <div class="n3-ex-head">
           <span class="n3-ex-no">${i + 1}</span>
           <span class="n3-ex-tag">${escapeHtml(ex.tag)}</span>
-          <button class="n3-ex-speak" type="button" data-speak="${escapeHtml(ex.jp.replace(/<[^>]+>/g, ''))}" aria-label="উচ্চারণ শুনুন">🔊</button>
+          <button class="n3-ex-speak" type="button" data-speak="${escapeHtml(ex.speak || ex.jp.replace(/<rt>.*?<\/rt>/g, '').replace(/<[^>]+>/g, ''))}" aria-label="উচ্চারণ শুনুন">🔊</button>
         </div>
         <div class="n3-ex-jp">${ex.jp}</div>
-        <div class="n3-ex-yomi"><b>よみ：</b>${escapeHtml(ex.yomi)}</div>
+        <div class="n3-ex-yomi"><b>${ex.readingIsFull ? '全文よみ：' : 'よみ：'}</b>${escapeHtml(ex.yomi)}</div>
         <div class="n3-ex-bn">${escapeHtml(ex.bangla)}</div>
+        ${ex.source ? `<div class="n3-ex-source"><span>উৎস</span><a href="${escapeHtml(ex.source.url)}" target="_blank" rel="noopener noreferrer">Tatoeba #${escapeHtml(ex.source.id)} · ${escapeHtml(ex.source.author)}</a><small>বাক্য ও লাইসেন্স দেখুন ↗</small></div>` : ''}
       </div>`).join('');
     row.appendChild(box);
     return box;
@@ -193,7 +412,7 @@
       const button = document.createElement('button');
       button.type = 'button';
       button.className = 'n3-example-toggle';
-      button.innerHTML = '<span>৪টি উদাহরণ</span><span class="n3-example-arrow">⌄</span>';
+      button.innerHTML = '<span>ব্যবহার + Practice</span><span class="n3-example-arrow">⌄</span>';
       button.setAttribute('aria-expanded', 'false');
 
       const pos = $('.pos', row);
@@ -212,14 +431,18 @@
       });
     });
 
+    const sourceCount = rows.reduce((total, row) => {
+      const info = getWord(row);
+      return total + Number(Boolean(corpusExamples[`${info.word}␟${info.reading}`]));
+    }, 0);
     const stats = $('.hero-stats');
     if (stats && !$('#n3ExampleStat', stats)) {
       const span = document.createElement('span');
       span.id = 'n3ExampleStat';
-      span.innerHTML = `<b>${rows.length * 4}</b> বাস্তব উদাহরণ`;
+      span.innerHTML = `<b>${sourceCount}</b> source-backed বাক্য`;
       stats.appendChild(span);
     }
-    return rows.length;
+    return { total: rows.length, sourceCount };
   }
 
   function verticalPartPicker() {
@@ -267,22 +490,30 @@
     });
   }
 
-  function updateCopy(total) {
+  function updateCopy(total, sourceCount) {
     const heroCopy = $('.hero-copy');
     if (heroCopy) {
-      heroCopy.textContent = `Nihongo Sou Matome N3-এর বইয়ের ক্রমে Lesson 1–36। মোট ${total.toLocaleString('en-US')} vocabulary—প্রতিটি শব্দে furigana, বাংলা অর্থ এবং ৪টি করে Japan-use example।`;
+      heroCopy.textContent = `Nihongo Sou Matome N3-এর বইয়ের ক্রমে Lesson 1–36। মোট ${total.toLocaleString('en-US')} vocabulary—একঘেয়ে template নয়; শব্দভেদে আলাদা sentence practice, আর ${sourceCount.toLocaleString('en-US')}টিতে Tatoeba corpus-এর বাস্তব বাক্য ও উৎস link।`;
     }
     const note = $('.note-main p');
-    if (note) note.textContent = 'Part খুলুন → শব্দ + furigana দেখুন → “৪টি উদাহরণ” tap করুন → বাংলা অর্থসহ sentence জোরে পড়ুন → শেষে “শেষ” টিক দিন।';
+    if (note) note.textContent = 'Part খুলুন → শব্দ + furigana দেখুন → “ব্যবহার + Practice” tap করুন → Corpus বাক্য থাকলে আগে নিজে অর্থ ধরুন → তারপর আলাদা pattern-এ sentence বলুন।';
+    const studyNote = $('.study-note');
+    if (studyNote && !$('#n3SourceNote')) {
+      const sourceNote = document.createElement('aside');
+      sourceNote.id = 'n3SourceNote';
+      sourceNote.className = 'n3-source-note';
+      sourceNote.innerHTML = '<b>কোনটি বাস্তব, কোনটি Practice?</b><p><strong>Corpus • বাস্তব বাক্য</strong> card-এ Tatoeba sentence ID, লেখক ও source/license link আছে। বাকি card-গুলো শব্দের ধরন অনুযায়ী আলাদা sentence-building practice—এগুলো স্পষ্টভাবে label করা হয়েছে।</p>';
+      studyNote.insertAdjacentElement('afterend', sourceNote);
+    }
   }
 
   function init() {
-    const total = enhanceVocabularyRows();
+    const { total, sourceCount } = enhanceVocabularyRows();
     verticalPartPicker();
     speech();
-    updateCopy(total);
+    updateCopy(total, sourceCount);
     document.documentElement.classList.add('n3-all-vocab-ready');
-    console.info(`[Aponar Nihon] N3 vocabulary ready: ${total} words / ${total * 4} examples`);
+    console.info(`[Aponar Nihon] N3 vocabulary ready: ${total} words / ${sourceCount} source-backed corpus examples`);
   }
 
   if (document.readyState === 'loading') {

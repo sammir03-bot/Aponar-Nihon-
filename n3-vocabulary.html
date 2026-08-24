@@ -14,12 +14,12 @@
 <script>
 (async()=>{
   try{
-    const response=await fetch('/n3-vocabulary-content.html?v=1345',{cache:'no-store'});
+    const response=await fetch('/n3-vocabulary-content.html?v=20260824',{cache:'no-store'});
     if(!response.ok) throw new Error('HTTP '+response.status);
     let html=await response.text();
     if(!html.includes('data-vocab-row')) throw new Error('Vocabulary source invalid');
-    html=html.replace('</head>','<link rel="stylesheet" href="/n3-vocabulary-all.css?v=3">\n</head>');
-    const enhancement='<script src="/n3-vocabulary-all.js?v=3"></scr'+'ipt>\n</body>';
+    html=html.replace('</head>','<link rel="stylesheet" href="/n3-vocabulary-all.css?v=5">\n</head>');
+    const enhancement='<script src="/n3-vocabulary-examples.js?v=1"></scr'+'ipt>\n<script src="/n3-vocabulary-all.js?v=5"></scr'+'ipt>\n</body>';
     html=html.replace('</body>',enhancement);
     document.open();
     document.write(html);
