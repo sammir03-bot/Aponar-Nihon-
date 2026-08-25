@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import process from 'node:process';
 
-const base = (process.env.ANON_LIVE_BASE_URL || 'https://aponar-nihon-web.sammir160432.workers.dev').replace(/\/$/, '');
+const base = (process.env.ANON_LIVE_BASE_URL || 'https://app.aponar-nihon.workers.dev').replace(/\/$/, '');
 const checks = [
   ['/', 'text/html'],
   ['/n5-grammar.html', 'text/html'],
