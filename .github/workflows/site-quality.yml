@@ -26,5 +26,7 @@ jobs:
         run: |
           test -s _site/assets/css/pro-core.css
           test -s _site/assets/js/pro-core.js
+          test -s _site/assets/js/ts/platform.js
           test -s _site/assets/data/search-index.json
           test -s _site/assets/data/site-audit.json
+          test -s _site/_headers
