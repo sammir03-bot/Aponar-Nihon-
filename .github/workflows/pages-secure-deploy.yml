@@ -22,12 +22,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: '22'
+          package-manager-cache: false
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
@@ -35,7 +36,7 @@ jobs:
       - name: Build and verify static site
         run: npm run verify
 
-      - name: Publish private Google Maps key
+      - name: Publish restricted Google Maps browser key
         env:
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
         run: |
