@@ -20,12 +20,15 @@ EXCLUDED_DIRS = {
 EXCLUDED_FILES = {
     ".gitignore", "package.json", "tsconfig.web.json", "tsconfig.worker.json",
     "tsconfig.types.json", "playwright.config.mjs", "lighthouserc.cjs",
-    "wrangler.toml", "ARCHITECTURE.md", "SECURITY.md",
+    "wrangler.toml", "ARCHITECTURE.md", "SECURITY.md", "CNAME",
 }
 
 PRO_CSS = '<link rel="stylesheet" href="/assets/css/pro-core.css?v=20260825">'
 PRO_JS = '<script defer src="/assets/js/pro-core.js?v=20260825"></script>'
 PLATFORM_TS = '<script type="module" src="/assets/js/ts/platform.js?v=20260825"></script>'
+LEGACY_ORIGIN = "https://aponar-nihon.eu.cc"
+PRODUCTION_ORIGIN = "https://app.aponar-nihon.workers.dev"
+ORIGIN_REWRITE_SUFFIXES = {".html", ".js", ".json", ".xml", ".txt", ".webmanifest"}
 
 
 def copy_static_tree(destination: Path) -> int:
@@ -45,6 +48,37 @@ def copy_static_tree(destination: Path) -> int:
         shutil.copy2(source, target)
         copied += 1
     return copied
+
+
+def rewrite_production_origin(destination: Path) -> tuple[int, int, int]:
+    changed_files = replacements = html_checks = 0
+    for target in sorted(destination.rglob("*")):
+        if not target.is_file() or target.suffix.lower() not in ORIGIN_REWRITE_SUFFIXES:
+            continue
+        try:
+            text = target.read_text(encoding="utf-8")
+        except UnicodeDecodeError:
+            continue
+        if LEGACY_ORIGIN not in text:
+            continue
+
+        before_hash = visible_text_hash(text) if target.suffix.lower() == ".html" else None
+        count = text.count(LEGACY_ORIGIN)
+        updated = text.replace(LEGACY_ORIGIN, PRODUCTION_ORIGIN)
+
+        if before_hash is not None:
+            html_checks += 1
+            if visible_text_hash(updated) != before_hash:
+                raise RuntimeError(
+                    f"Content integrity failure in {target.relative_to(destination)}: "
+                    "production-origin rewrite changed visible educational text"
+                )
+
+        target.write_text(updated, encoding="utf-8", newline="\n")
+        changed_files += 1
+        replacements += count
+
+    return changed_files, replacements, html_checks
 
 
 def inject_professional_assets(destination: Path) -> tuple[int, int]:
@@ -78,6 +112,7 @@ def build(destination: Path, check_links: bool = False) -> int:
         )
 
     copied = copy_static_tree(destination)
+    origin_files, origin_replacements, origin_html_checks = rewrite_production_origin(destination)
     injected, injection_checked = inject_professional_assets(destination)
     changed, post_checked, repaired, secured = postprocess_site(destination)
     indexed = build_search_index(
@@ -86,8 +121,13 @@ def build(destination: Path, check_links: bool = False) -> int:
     )
 
     print(f"Copied files: {copied}")
+    print(f"Production-origin files rewritten: {origin_files}")
+    print(f"Production-origin references rewritten: {origin_replacements}")
     print(f"HTML pages enhanced: {injected}")
-    print(f"Content-integrity checks passed: {injection_checked + post_checked}")
+    print(
+        "Content-integrity checks passed: "
+        f"{origin_html_checks + injection_checked + post_checked}"
+    )
     print(f"HTML pages post-processed: {changed}")
     print(f"Internal links repaired safely: {repaired}")
     print(f"_blank links hardened: {secured}")
