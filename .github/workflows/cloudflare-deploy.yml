@@ -2,28 +2,25 @@ name: Cloudflare Deploy
 
 on:
   workflow_dispatch:
-    inputs:
-      deploy_worker:
-        description: 'Deploy Cloudflare Worker API too'
-        required: true
-        default: true
-        type: boolean
 
 permissions:
   contents: read
 
+environment:
+  name: production
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment: production
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: '22'
+          package-manager-cache: false
 
       - name: Verify Cloudflare credentials are configured
         env:
@@ -33,17 +30,10 @@ jobs:
           test -n "$CLOUDFLARE_API_TOKEN" || { echo 'Missing CLOUDFLARE_API_TOKEN'; exit 1; }
           test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo 'Missing CLOUDFLARE_ACCOUNT_ID'; exit 1; }
 
-      - name: Build verified static site
+      - name: Build verified site
         run: npm run verify
 
-      - name: Deploy Cloudflare Pages
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-        run: npx --yes wrangler@4 pages deploy _site --project-name=aponar-nihon --branch=main
-
-      - name: Deploy Worker API
-        if: ${{ inputs.deploy_worker }}
+      - name: Deploy Worker and static assets
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
