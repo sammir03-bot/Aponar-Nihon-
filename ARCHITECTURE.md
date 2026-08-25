@@ -8,8 +8,8 @@ Aponar Nihon is a static-first full-stack Japanese learning platform. The archit
 - **Web tooling:** Node.js 22 for TypeScript compilation, quality automation and CI commands.
 - **Content processing:** Python for static build, content-integrity validation, search-index generation, corpus tools and internal-link diagnostics.
 - **Database/Auth:** Supabase for authentication, profiles, student progress and activity history. Generated TypeScript database types live in `src/types/supabase.ts`.
-- **Hosting/CDN target:** Cloudflare Pages for the static site and global edge delivery. GitHub Pages remains supported during migration.
-- **Backend API:** Cloudflare Workers. The secure foundation lives in `workers/api/` and exposes health/config routes without putting server secrets in browser code.
+- **Hosting/CDN:** Cloudflare Workers Static Assets serves the verified `_site` build globally at the edge. GitHub Pages remains supported during migration/rollback.
+- **Backend API:** the same Cloudflare Worker handles `/api/*` before static assets. The secure foundation lives in `workers/api/` and keeps server secrets out of browser code.
 - **Android:** Java/Kotlin only for native Android code under `android/`.
 - **Testing:** Playwright for real-browser mobile/desktop smoke tests and Lighthouse CI for performance, accessibility, best-practices and SEO budgets.
 - **Security:** Cloudflare `_headers`, CSP, Permissions-Policy, referrer policy, MIME sniffing protection, safe external links, origin checks and automated quality checks.
@@ -24,11 +24,12 @@ Existing HTML remains the source of truth while migration is in progress. Conten
 
 `npm run verify` is the main quality command:
 
-1. TypeScript is compiled from `src/ts/` into generated browser JavaScript.
+1. TypeScript is type-checked/compiled from `src/ts/` into generated browser JavaScript.
 2. Python creates `_site`, injects shared professional CSS/JS/TypeScript runtime and validates visible-text integrity.
 3. Python generates the local search index and reports broken internal links.
 4. Node.js audits the generated site and writes a machine-readable quality report.
 5. CI verifies critical generated assets before deployment.
+6. Wrangler deploys the Worker plus `_site` static assets to Cloudflare.
 
 Development-only directories and configuration are excluded from the published `_site` output.
 
@@ -36,9 +37,11 @@ Development-only directories and configuration are excluded from the published `
 
 `Browser Quality` CI builds the same verified site, then runs Playwright on Chromium in mobile and desktop modes. Critical pages are checked for successful rendering, document language, page title, runtime initialization and duplicate IDs. Lighthouse CI adds measurable performance, accessibility, best-practice and SEO budgets.
 
-## Cloudflare backend
+## Cloudflare delivery and backend
 
-`wrangler.toml` configures the `aponar-nihon-api` Worker. `workers/api/src/index.ts` applies an origin allow-list, CORS policy, no-store caching and defensive response headers. Sensitive API keys must be stored as Cloudflare Worker secrets, never in HTML, CSS, browser JavaScript or the repository.
+`wrangler.toml` configures `aponar-nihon-web` with `_site` as the static-asset directory. Static pages/assets are served at Cloudflare's edge, while `/api/*` is routed through `workers/api/src/index.ts` first. The Worker applies an origin allow-list, CORS policy, no-store caching for API responses and defensive response headers. Sensitive API keys must be stored as Cloudflare Worker secrets, never in HTML, CSS, browser JavaScript or the repository.
+
+The Cloudflare Workers Builds production branch is `professional-refactor-20260825` during verification. `main` remains untouched until the refactor is explicitly approved for merge.
 
 ## Supabase
 
