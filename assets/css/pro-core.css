@@ -10,6 +10,7 @@
     --an-focus-ring: rgba(22, 119, 210, 0.20);
     --an-radius-control: 12px;
     --an-tap-size: 44px;
+    --an-sticky-offset: 96px;
   }
 
   html {
@@ -17,12 +18,19 @@
     text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
     scroll-behavior: smooth;
+    scroll-padding-top: var(--an-sticky-offset);
+    overflow-x: clip;
   }
 
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-wrap: break-word;
+    overscroll-behavior-x: none;
+  }
+
+  :where([id]) {
+    scroll-margin-top: var(--an-sticky-offset);
   }
 
   :where(button, input, select, textarea) {
@@ -91,12 +99,80 @@
   }
 
   @media (max-width: 767px) {
+    :root {
+      --an-sticky-offset: 82px;
+    }
+
     :where(input, select, textarea) {
       font-size: 16px;
     }
 
     :where(.container, .app-home-container) {
       max-width: 100%;
+    }
+
+    /* The home screen had accumulated several generations of navigation CSS.
+       This final shared layer keeps the dock compact and guarantees that the
+       last card is never hidden behind it. */
+    body:has(.app-bottom-nav-wrap) {
+      padding-bottom: calc(74px + env(safe-area-inset-bottom)) !important;
+    }
+
+    .app-bottom-nav-wrap {
+      bottom: 0 !important;
+    }
+
+    .app-bottom-nav {
+      min-height: 62px !important;
+      padding-top: 4px !important;
+      padding-bottom: calc(4px + env(safe-area-inset-bottom)) !important;
+    }
+
+    .app-nav-link {
+      min-height: 54px !important;
+      padding-top: 3px !important;
+      padding-bottom: 2px !important;
+      gap: 2px !important;
+    }
+
+    .app-nav-icon {
+      width: 31px !important;
+      height: 29px !important;
+    }
+
+    .app-nav-label {
+      font-size: 9.5px !important;
+      line-height: 1.1 !important;
+    }
+
+    .scroll-top {
+      bottom: calc(78px + env(safe-area-inset-bottom)) !important;
+    }
+
+    /* Preserve the existing app-like header, but recover useful vertical room
+       on phones. Content and controls are unchanged. */
+    .navbar.app-blue-header {
+      min-height: 142px !important;
+    }
+
+    .navbar.app-blue-header .app-header-inner {
+      padding-top: 25px !important;
+      padding-bottom: 46px !important;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .navbar.app-blue-header {
+      min-height: 132px !important;
+    }
+
+    .navbar.app-blue-header .app-header-inner {
+      padding-top: 21px !important;
+      padding-bottom: 42px !important;
+    }
+
+    .app-nav-label {
+      font-size: 9px !important;
     }
   }
 
@@ -113,7 +189,7 @@
   }
 
   @media print {
-    :where(.navbar, .app-bottom-nav, .scroll-top, .pwa-install-box) {
+    :where(.navbar, .app-bottom-nav-wrap, .app-bottom-nav, .scroll-top, .pwa-install-box) {
       display: none !important;
     }
   }
