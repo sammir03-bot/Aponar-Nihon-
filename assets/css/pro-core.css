@@ -1,0 +1,120 @@
+/*
+ * Aponar Nihon — professional core layer
+ * Non-destructive, site-wide polish. Page-specific colours and content remain
+ * owned by each existing page.
+ */
+
+@layer an-professional {
+  :root {
+    --an-focus: #1677d2;
+    --an-focus-ring: rgba(22, 119, 210, 0.20);
+    --an-radius-control: 12px;
+    --an-tap-size: 44px;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-wrap: break-word;
+  }
+
+  :where(button, input, select, textarea) {
+    font: inherit;
+  }
+
+  :where(button, [role="button"], input[type="button"], input[type="submit"], input[type="reset"]) {
+    touch-action: manipulation;
+  }
+
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline: 3px solid var(--an-focus) !important;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 5px var(--an-focus-ring);
+  }
+
+  :where(img, video, canvas, svg) {
+    max-width: 100%;
+  }
+
+  :where(img:not([width])) {
+    height: auto;
+  }
+
+  :where(h1, h2, h3) {
+    text-wrap: balance;
+  }
+
+  :where(p, li) {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: rgba(22, 119, 210, 0.18);
+  }
+
+  /* Keep the existing visual language, while making interactive surfaces feel
+     consistent on touch devices and keyboards. */
+  :where(.btn, .pdf-link, .quiz-part-btn, .japan-guide-btn, .app-card-heading > a,
+         .app-home-section-title > a, .app-classic-menu-btn) {
+    min-height: var(--an-tap-size);
+    touch-action: manipulation;
+  }
+
+  :where(.material-card, .guide-card, .feature-card, .quiz-category-card,
+         .app-search-panel, .app-tool-item, .contact-item) {
+    isolation: isolate;
+  }
+
+  /* Avoid layout jumps when media is decoded. */
+  img[loading="lazy"] {
+    content-visibility: auto;
+  }
+
+  /* Desktop hover should feel precise; phones should not run fake hover work. */
+  @media (hover: hover) and (pointer: fine) {
+    :where(.btn, .pdf-link, .quiz-part-btn, .app-tool-item, .nav-item-link) {
+      will-change: transform;
+    }
+  }
+
+  @media (hover: none), (pointer: coarse) {
+    :where(.btn, .pdf-link, .quiz-part-btn, .app-tool-item, .nav-item-link) {
+      -webkit-tap-highlight-color: rgba(22, 119, 210, 0.08);
+    }
+  }
+
+  @media (max-width: 767px) {
+    :where(input, select, textarea) {
+      font-size: 16px;
+    }
+
+    :where(.container, .app-home-container) {
+      max-width: 100%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto !important;
+    }
+
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  @media print {
+    :where(.navbar, .app-bottom-nav, .scroll-top, .pwa-install-box) {
+      display: none !important;
+    }
+  }
+}
