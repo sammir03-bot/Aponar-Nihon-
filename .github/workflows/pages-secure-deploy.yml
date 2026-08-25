@@ -24,11 +24,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Build and verify static site
-        run: python3 tools/build_site.py --out _site --check-links
+        run: npm run verify
 
       - name: Publish private Google Maps key
         env:
