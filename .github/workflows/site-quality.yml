@@ -1,0 +1,24 @@
+name: Site Quality
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build with zero-content-loss guard
+        run: python3 tools/build_site.py --out _site --check-links
+
+      - name: Verify generated professional assets
+        run: |
+          test -s _site/assets/css/pro-core.css
+          test -s _site/assets/js/pro-core.js
+          test -s _site/assets/data/search-index.json
