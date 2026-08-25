@@ -1,0 +1,33 @@
+name: Live Preview Smoke
+
+on:
+  workflow_dispatch:
+    inputs:
+      base_url:
+        description: 'Cloudflare deployment URL'
+        required: false
+        default: 'https://aponar-nihon-web.sammir160432.workers.dev'
+  schedule:
+    - cron: '17 3 * * *'
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+
+      - name: Check live Cloudflare deployment
+        env:
+          ANON_LIVE_BASE_URL: ${{ inputs.base_url || 'https://aponar-nihon-web.sammir160432.workers.dev' }}
+        run: node tools/live_smoke.mjs
