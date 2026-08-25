@@ -13,11 +13,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+
+      - name: Protect existing source content
+        run: python3 tools/compare_visible_content.py --base origin/main
 
       - name: Build and verify with Python + Node.js
         run: npm run verify
