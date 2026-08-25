@@ -7,6 +7,7 @@ from pathlib import Path
 
 from sitecore.htmltools import inject_assets, visible_text_hash
 from sitecore.linkcheck import find_broken_page_links
+from sitecore.postprocess import postprocess_site
 from sitecore.search_index import build_search_index
 
 
@@ -57,33 +58,54 @@ def inject_professional_assets(destination: Path) -> tuple[int, int]:
         after_hash = visible_text_hash(enhanced)
         checked += 1
         if before_hash != after_hash:
-            raise RuntimeError(f"Content integrity failure in {page.relative_to(destination)}: visible text changed during asset injection")
+            raise RuntimeError(
+                f"Content integrity failure in {page.relative_to(destination)}: "
+                "visible text changed during asset injection"
+            )
         page.write_text(enhanced, encoding="utf-8", newline="\n")
         changed += 1
     return changed, checked
 
 
 def build(destination: Path, check_links: bool = False) -> int:
-    if destination.exists(): shutil.rmtree(destination)
+    if destination.exists():
+        shutil.rmtree(destination)
+
     compiled = ROOT / "assets" / "js" / "ts" / "platform.js"
     if not compiled.exists():
-        raise RuntimeError("TypeScript runtime missing. Run npm run build:ts before the Python site build.")
+        raise RuntimeError(
+            "TypeScript runtime missing. Run npm run build:ts before the Python site build."
+        )
+
     copied = copy_static_tree(destination)
-    injected, integrity_checked = inject_professional_assets(destination)
-    indexed = build_search_index(destination, destination / "assets" / "data" / "search-index.json")
+    injected, injection_checked = inject_professional_assets(destination)
+    changed, post_checked, repaired, secured = postprocess_site(destination)
+    indexed = build_search_index(
+        destination,
+        destination / "assets" / "data" / "search-index.json",
+    )
+
     print(f"Copied files: {copied}")
     print(f"HTML pages enhanced: {injected}")
-    print(f"Content-integrity checks passed: {integrity_checked}")
+    print(f"Content-integrity checks passed: {injection_checked + post_checked}")
+    print(f"HTML pages post-processed: {changed}")
+    print(f"Internal links repaired safely: {repaired}")
+    print(f"_blank links hardened: {secured}")
     print(f"Search-index pages: {indexed}")
+
     if check_links:
         broken = find_broken_page_links(destination)
         print(f"Internal page-link warnings: {len(broken)}")
-        for page, href in broken[:60]: print(f"  WARN {page} -> {href}")
+        for page, href in broken[:60]:
+            print(f"  WARN {page} -> {href}")
+
     return 0
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Build Aponar Nihon as a safe, optimized static site.")
+    parser = argparse.ArgumentParser(
+        description="Build Aponar Nihon as a safe, optimized static site."
+    )
     parser.add_argument("--out", default="_site")
     parser.add_argument("--check-links", action="store_true")
     return parser.parse_args()
@@ -92,7 +114,8 @@ def parse_args() -> argparse.Namespace:
 def main() -> int:
     args = parse_args()
     out = Path(args.out)
-    if not out.is_absolute(): out = ROOT / out
+    if not out.is_absolute():
+        out = ROOT / out
     return build(out.resolve(), check_links=args.check_links)
 
 
