@@ -1,0 +1,8 @@
+name = "aponar-nihon-api"
+main = "workers/api/src/index.ts"
+compatibility_date = "2026-08-25"
+workers_dev = true
+
+[vars]
+APP_ORIGIN = "https://aponar-nihon.eu.cc"
+API_VERSION = "2026.08"
