@@ -24,9 +24,11 @@ function securityHeaders(origin: string): HeadersInit {
 
 function allowedOrigin(request: Request, env: Env): string | null {
   const expected = env.APP_ORIGIN?.trim() || DEFAULT_ORIGIN;
+  const requestOrigin = new URL(request.url).origin;
   const origin = request.headers.get("origin");
 
-  if (!origin) return expected;
+  if (!origin) return requestOrigin;
+  if (origin === requestOrigin) return origin;
   if (origin === expected) return origin;
   if (/^https:\/\/[a-z0-9-]+\.pages\.dev$/i.test(origin)) return origin;
   if (/^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/i.test(origin)) return origin;
@@ -46,9 +48,10 @@ function requestId(request: Request): string {
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
+    const requestOrigin = new URL(request.url).origin;
     const origin = allowedOrigin(request, env);
     if (!origin) {
-      return json({ ok: false, error: "origin_not_allowed" }, 403, DEFAULT_ORIGIN);
+      return json({ ok: false, error: "origin_not_allowed" }, 403, requestOrigin);
     }
 
     if (request.method === "OPTIONS") {
