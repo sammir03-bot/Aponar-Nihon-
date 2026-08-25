@@ -25,6 +25,12 @@ function countMatches(text, regex) {
   return [...text.matchAll(regex)].length;
 }
 
+function markupOnly(html) {
+  return html
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi, '')
+    .replace(/<style\b[^>]*>[\s\S]*?<\/style\s*>/gi, '');
+}
+
 function duplicateIds(html) {
   const seen = new Set();
   const dupes = new Set();
@@ -34,6 +40,17 @@ function duplicateIds(html) {
     seen.add(id);
   }
   return [...dupes];
+}
+
+function unprotectedBlankLinks(html) {
+  let count = 0;
+  for (const match of html.matchAll(/<a\b[^>]*\btarget\s*=\s*["']_blank["'][^>]*>/gi)) {
+    const tag = match[0];
+    const rel = tag.match(/\brel\s*=\s*["']([^"']*)["']/i)?.[1] || '';
+    const tokens = new Set(rel.toLowerCase().split(/\s+/).filter(Boolean));
+    if (!tokens.has('noopener')) count += 1;
+  }
+  return count;
 }
 
 function sha256(buffer) {
@@ -48,6 +65,7 @@ if (!(await exists(root))) {
 const requiredAssets = [
   'assets/css/pro-core.css',
   'assets/js/pro-core.js',
+  'assets/js/ts/platform.js',
   'assets/data/search-index.json',
 ];
 for (const rel of requiredAssets) {
@@ -81,14 +99,14 @@ for (const file of files) {
 for (const file of htmlFiles) {
   const rel = path.relative(root, file).replaceAll(path.sep, '/');
   const html = await fs.readFile(file, 'utf8');
-  const dupes = duplicateIds(html);
+  const markup = markupOnly(html);
+  const dupes = duplicateIds(markup);
   if (dupes.length) warnings.push(`${rel}: duplicate id(s): ${dupes.slice(0, 8).join(', ')}`);
 
-  const blankLinks = countMatches(html, /target\s*=\s*["']_blank["']/gi);
-  const protectedBlankLinks = countMatches(html, /target\s*=\s*["']_blank["'][^>]*rel\s*=\s*["'][^"']*noopener/gi);
-  if (blankLinks > protectedBlankLinks) warnings.push(`${rel}: ${blankLinks - protectedBlankLinks} external _blank link(s) may need rel=noopener`);
+  const unsafeBlank = unprotectedBlankLinks(markup);
+  if (unsafeBlank) warnings.push(`${rel}: ${unsafeBlank} external _blank link(s) need rel=noopener`);
 
-  const missingAlt = countMatches(html, /<img\b(?![^>]*\balt\s*=)[^>]*>/gi);
+  const missingAlt = countMatches(markup, /<img\b(?![^>]*\balt\s*=)[^>]*>/gi);
   if (missingAlt) warnings.push(`${rel}: ${missingAlt} image(s) missing alt attribute`);
 }
 
@@ -105,6 +123,7 @@ if (!(await exists(indexPath))) {
     [/<link\b[^>]*rel\s*=\s*["']canonical["'][^>]*>/i, 'index.html is missing canonical URL'],
     [/assets\/css\/pro-core\.css/i, 'professional CSS layer was not injected into index.html'],
     [/assets\/js\/pro-core\.js/i, 'professional JS layer was not injected into index.html'],
+    [/assets\/js\/ts\/platform\.js/i, 'TypeScript platform runtime was not injected into index.html'],
   ];
   for (const [pattern, message] of critical) if (!pattern.test(index)) errors.push(message);
 }
