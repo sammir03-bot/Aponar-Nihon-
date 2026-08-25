@@ -1,0 +1,15 @@
+{
+  "name": "aponar-nihon",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Static-first Japanese learning platform with Python content tooling and Node.js web-quality automation.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "python3 tools/build_site.py --out _site --check-links",
+    "quality": "node tools/web_quality.mjs _site",
+    "verify": "npm run build && npm run quality"
+  }
+}
