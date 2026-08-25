@@ -1,6 +1,23 @@
 name: Browser Quality
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - '*.html'
+      - 'assets/**'
+      - 'src/**'
+      - 'tools/**'
+      - 'tests/**'
+      - 'workers/**'
+      - 'package.json'
+      - 'tsconfig.web.json'
+      - 'tsconfig.worker.json'
+      - 'playwright.config.mjs'
+      - 'lighthouserc.cjs'
+      - 'wrangler.toml'
+      - '.github/workflows/browser-quality.yml'
   pull_request:
     paths:
       - '*.html'
@@ -8,15 +25,22 @@ on:
       - 'src/**'
       - 'tools/**'
       - 'tests/**'
+      - 'workers/**'
       - 'package.json'
       - 'tsconfig.web.json'
+      - 'tsconfig.worker.json'
       - 'playwright.config.mjs'
       - 'lighthouserc.cjs'
+      - 'wrangler.toml'
       - '.github/workflows/browser-quality.yml'
   workflow_dispatch:
 
 permissions:
   contents: read
+
+concurrency:
+  group: browser-quality-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   browser-quality:
