@@ -59,10 +59,10 @@ jobs:
           const browser=await chromium.launch({headless:true});
           const context=await browser.newContext({viewport:{width:1080,height:1920},deviceScaleFactor:1,isMobile:true,hasTouch:true,locale:'bn-BD'});
           const pages=[
-            ['01-home.png','https://aponar-nihon.eu.cc/'],
-            ['02-student-toolkit.png','https://aponar-nihon.eu.cc/student-tools.html#toolkit'],
-            ['03-cv-builder.png','https://aponar-nihon.eu.cc/cv-builder.html'],
-            ['04-ebook-library.png','https://aponar-nihon.eu.cc/ebook-library.html']
+            ['01-home.png','https://app.aponar-nihon.workers.dev/'],
+            ['02-student-toolkit.png','https://app.aponar-nihon.workers.dev/student-tools.html#toolkit'],
+            ['03-cv-builder.png','https://app.aponar-nihon.workers.dev/cv-builder.html'],
+            ['04-ebook-library.png','https://app.aponar-nihon.workers.dev/ebook-library.html']
           ];
           for(const [file,url] of pages){
             const page=await context.newPage();

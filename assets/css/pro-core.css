@@ -1,0 +1,196 @@
+/*
+ * Aponar Nihon — professional core layer
+ * Non-destructive, site-wide polish. Page-specific colours and content remain
+ * owned by each existing page.
+ */
+
+@layer an-professional {
+  :root {
+    --an-focus: #1677d2;
+    --an-focus-ring: rgba(22, 119, 210, 0.20);
+    --an-radius-control: 12px;
+    --an-tap-size: 44px;
+    --an-sticky-offset: 96px;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--an-sticky-offset);
+    overflow-x: clip;
+  }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-wrap: break-word;
+    overscroll-behavior-x: none;
+  }
+
+  :where([id]) {
+    scroll-margin-top: var(--an-sticky-offset);
+  }
+
+  :where(button, input, select, textarea) {
+    font: inherit;
+  }
+
+  :where(button, [role="button"], input[type="button"], input[type="submit"], input[type="reset"]) {
+    touch-action: manipulation;
+  }
+
+  :where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline: 3px solid var(--an-focus) !important;
+    outline-offset: 3px;
+    box-shadow: 0 0 0 5px var(--an-focus-ring);
+  }
+
+  :where(img, video, canvas, svg) {
+    max-width: 100%;
+  }
+
+  :where(img:not([width])) {
+    height: auto;
+  }
+
+  :where(h1, h2, h3) {
+    text-wrap: balance;
+  }
+
+  :where(p, li) {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background: rgba(22, 119, 210, 0.18);
+  }
+
+  /* Keep the existing visual language, while making interactive surfaces feel
+     consistent on touch devices and keyboards. */
+  :where(.btn, .pdf-link, .quiz-part-btn, .japan-guide-btn, .app-card-heading > a,
+         .app-home-section-title > a, .app-classic-menu-btn) {
+    min-height: var(--an-tap-size);
+    touch-action: manipulation;
+  }
+
+  :where(.material-card, .guide-card, .feature-card, .quiz-category-card,
+         .app-search-panel, .app-tool-item, .contact-item) {
+    isolation: isolate;
+  }
+
+  /* Avoid layout jumps when media is decoded. */
+  img[loading="lazy"] {
+    content-visibility: auto;
+  }
+
+  /* Desktop hover should feel precise; phones should not run fake hover work. */
+  @media (hover: hover) and (pointer: fine) {
+    :where(.btn, .pdf-link, .quiz-part-btn, .app-tool-item, .nav-item-link) {
+      will-change: transform;
+    }
+  }
+
+  @media (hover: none), (pointer: coarse) {
+    :where(.btn, .pdf-link, .quiz-part-btn, .app-tool-item, .nav-item-link) {
+      -webkit-tap-highlight-color: rgba(22, 119, 210, 0.08);
+    }
+  }
+
+  @media (max-width: 767px) {
+    :root {
+      --an-sticky-offset: 82px;
+    }
+
+    :where(input, select, textarea) {
+      font-size: 16px;
+    }
+
+    :where(.container, .app-home-container) {
+      max-width: 100%;
+    }
+
+    /* The home screen had accumulated several generations of navigation CSS.
+       This final shared layer keeps the dock compact and guarantees that the
+       last card is never hidden behind it. */
+    body:has(.app-bottom-nav-wrap) {
+      padding-bottom: calc(74px + env(safe-area-inset-bottom)) !important;
+    }
+
+    .app-bottom-nav-wrap {
+      bottom: 0 !important;
+    }
+
+    .app-bottom-nav {
+      min-height: 62px !important;
+      padding-top: 4px !important;
+      padding-bottom: calc(4px + env(safe-area-inset-bottom)) !important;
+    }
+
+    .app-nav-link {
+      min-height: 54px !important;
+      padding-top: 3px !important;
+      padding-bottom: 2px !important;
+      gap: 2px !important;
+    }
+
+    .app-nav-icon {
+      width: 31px !important;
+      height: 29px !important;
+    }
+
+    .app-nav-label {
+      font-size: 9.5px !important;
+      line-height: 1.1 !important;
+    }
+
+    .scroll-top {
+      bottom: calc(78px + env(safe-area-inset-bottom)) !important;
+    }
+
+    /* Preserve the existing app-like header, but recover useful vertical room
+       on phones. Content and controls are unchanged. */
+    .navbar.app-blue-header {
+      min-height: 142px !important;
+    }
+
+    .navbar.app-blue-header .app-header-inner {
+      padding-top: 25px !important;
+      padding-bottom: 46px !important;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .navbar.app-blue-header {
+      min-height: 132px !important;
+    }
+
+    .navbar.app-blue-header .app-header-inner {
+      padding-top: 21px !important;
+      padding-bottom: 42px !important;
+    }
+
+    .app-nav-label {
+      font-size: 9px !important;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto !important;
+    }
+
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  @media print {
+    :where(.navbar, .app-bottom-nav-wrap, .app-bottom-nav, .scroll-top, .pwa-install-box) {
+      display: none !important;
+    }
+  }
+}

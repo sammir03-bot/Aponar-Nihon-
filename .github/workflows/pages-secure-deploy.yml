@@ -22,25 +22,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Prepare static site
+      - name: Build and verify static site
+        run: npm run verify
+
+      - name: Publish restricted Google Maps browser key
         env:
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
         run: |
           test -n "$GOOGLE_MAPS_API_KEY" || { echo "GOOGLE_MAPS_API_KEY secret is missing"; exit 1; }
-          mkdir -p _site
-          rsync -a ./ _site/ \
-            --exclude '.git/' \
-            --exclude '.github/' \
-            --exclude '_site/' \
-            --exclude 'android/' \
-            --exclude 'play-store/' \
-            --exclude 'node_modules/'
-          python - <<'PY'
+          python3 - <<'PY'
           import json, os, pathlib
           from urllib.parse import urlparse, parse_qs
 

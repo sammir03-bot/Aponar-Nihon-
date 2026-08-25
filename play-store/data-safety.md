@@ -36,14 +36,14 @@ Aponar Nihon does not sell user data. Supabase acts as a service provider for au
 - Admin access separated from normal student accounts
 
 ## Account deletion
-- In-app/external URL: `https://aponar-nihon.eu.cc/delete-account.html`
-- Privacy policy: `https://aponar-nihon.eu.cc/privacy-policy.html`
+- In-app/external URL: `https://app.aponar-nihon.workers.dev/delete-account.html`
+- Privacy policy: `https://app.aponar-nihon.workers.dev/privacy-policy.html`
 - Deletion removes the Auth user and app-owned profile/activity/progress records through the authenticated Supabase Edge Function.
 
 ## Play Console answers to review
 1. Does the app collect or share required user data? **Yes — collect.**
 2. Is all user data encrypted in transit? **Yes (HTTPS).**
 3. Can users request deletion? **Yes.**
-4. Account deletion URL: `https://aponar-nihon.eu.cc/delete-account.html`
+4. Account deletion URL: `https://app.aponar-nihon.workers.dev/delete-account.html`
 
 Do not mark advertising, financial, health, precise location, contacts, SMS/call logs or files/media as collected unless a future feature actually adds them.

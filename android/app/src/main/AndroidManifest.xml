@@ -52,7 +52,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="aponar-nihon.eu.cc" />
+                <data android:scheme="https" android:host="app.aponar-nihon.workers.dev" />
             </intent-filter>
         </activity>
     </application>

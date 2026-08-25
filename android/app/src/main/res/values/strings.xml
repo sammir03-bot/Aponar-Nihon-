@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Aponar Nihon</string>
-    <string name="launch_url">https://aponar-nihon.eu.cc/</string>
-    <string name="web_manifest_url">https://aponar-nihon.eu.cc/manifest.json</string>
-    <string name="asset_statements">[{"relation":["delegate_permission/common.handle_all_urls"],"target":{"namespace":"web","site":"https://aponar-nihon.eu.cc"}}]</string>
+    <string name="launch_url">https://app.aponar-nihon.workers.dev/</string>
+    <string name="web_manifest_url">https://app.aponar-nihon.workers.dev/manifest.json</string>
+    <string name="asset_statements">[{"relation":["delegate_permission/common.handle_all_urls"],"target":{"namespace":"web","site":"https://app.aponar-nihon.workers.dev"}}]</string>
 </resources>

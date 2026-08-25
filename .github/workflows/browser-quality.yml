@@ -1,0 +1,51 @@
+name: Browser Quality
+
+on:
+  pull_request:
+    paths:
+      - '*.html'
+      - 'assets/**'
+      - 'src/**'
+      - 'tools/**'
+      - 'tests/**'
+      - 'package.json'
+      - 'tsconfig.web.json'
+      - 'playwright.config.mjs'
+      - 'lighthouserc.cjs'
+      - '.github/workflows/browser-quality.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser-quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+
+      - name: Build verified site
+        run: npm run verify
+
+      - name: Install Playwright test runner
+        run: npm install --no-save @playwright/test@1.62.1
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Playwright smoke tests
+        run: npx playwright test
+
+      - name: Install Lighthouse CI
+        run: npm install --no-save @lhci/cli@0.15.1
+
+      - name: Run Lighthouse CI
+        run: npx lhci autorun

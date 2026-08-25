@@ -9,6 +9,14 @@ android/build/
 android/app/build/
 android/local.properties
 
+# Web build/test outputs
+_site/
+node_modules/
+assets/js/ts/
+playwright-report/
+test-results/
+.lighthouseci/
+
 # Editor/OS
 .DS_Store
 .idea/

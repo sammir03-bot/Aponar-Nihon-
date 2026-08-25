@@ -5,9 +5,9 @@
 - Package ID: **com.aponarnihon.app**
 - Category: **Education**
 - Default language: **Bengali (Bangla)**
-- Website: `https://aponar-nihon.eu.cc/`
-- Privacy policy: `https://aponar-nihon.eu.cc/privacy-policy.html`
-- Account deletion: `https://aponar-nihon.eu.cc/delete-account.html`
+- Website: `https://app.aponar-nihon.workers.dev/`
+- Privacy policy: `https://app.aponar-nihon.workers.dev/privacy-policy.html`
+- Account deletion: `https://app.aponar-nihon.workers.dev/delete-account.html`
 
 ## Short description (Bangla)
 বাংলায় JLPT, জাপানি কথোপকথন, Mock Test, CV Builder ও Student Toolkit।
