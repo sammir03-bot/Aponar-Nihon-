@@ -7,16 +7,24 @@ on:
         description: 'Cloudflare deployment URL'
         required: false
         default: 'https://app.aponar-nihon.workers.dev'
+  push:
+    branches:
+      - professional-refactor-20260825
+      - main
   schedule:
     - cron: '17 3 * * *'
 
 permissions:
   contents: read
 
+concurrency:
+  group: live-preview-smoke-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   smoke:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -27,7 +35,19 @@ jobs:
           node-version: '22'
           package-manager-cache: false
 
-      - name: Check live Cloudflare deployment
+      - name: Verify live Cloudflare deployment with propagation retries
         env:
           ANON_LIVE_BASE_URL: ${{ inputs.base_url || 'https://app.aponar-nihon.workers.dev' }}
-        run: node tools/live_smoke.mjs
+        shell: bash
+        run: |
+          for attempt in {1..10}; do
+            echo "Live smoke attempt ${attempt}/10: ${ANON_LIVE_BASE_URL}"
+            if node tools/live_smoke.mjs; then
+              exit 0
+            fi
+            if [ "$attempt" -lt 10 ]; then
+              sleep 30
+            fi
+          done
+          echo "Cloudflare deployment did not become healthy within the retry window."
+          exit 1
