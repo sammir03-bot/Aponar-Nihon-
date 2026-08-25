@@ -1,4 +1,4 @@
-name = "aponar-nihon-web"
+name = "app"
 main = "workers/api/src/index.ts"
 compatibility_date = "2026-08-25"
 workers_dev = true
@@ -11,5 +11,5 @@ not_found_handling = "404-page"
 html_handling = "auto-trailing-slash"
 
 [vars]
-APP_ORIGIN = "https://aponar-nihon.eu.cc"
+APP_ORIGIN = "https://app.aponar-nihon.workers.dev"
 API_VERSION = "2026.08"
