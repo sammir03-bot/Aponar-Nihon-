@@ -52,6 +52,8 @@ Cloudflare Workers Builds is connected to GitHub and currently uses `professiona
 
 `tools/live_smoke.mjs` and the `Live Preview Smoke` GitHub workflow provide external checks of the deployed homepage, learning pages, auth/profile routes and `/api/health`. After this branch is merged, the scheduled workflow can act as a lightweight availability/regression monitor.
 
+A custom-domain cutover is deliberately separate from code merge. Before attaching `aponar-nihon.eu.cc` to the Worker, verify Cloudflare DNS/TLS ownership and ensure Supabase Auth accepts the custom-domain redirect URLs. This keeps the current live domain reversible until the verified Worker deployment is ready to become canonical.
+
 ## Supabase
 
 The active database contains `profiles`, `student_progress` and `activity_events` with RLS policies for user-owned data and admin access. Browser code uses only the publishable key. PUBLIC/anonymous execution of `touch_profile_activity()` has been revoked while authenticated use remains available. Service-role credentials must never be shipped to browsers.
