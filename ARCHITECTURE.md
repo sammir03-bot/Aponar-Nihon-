@@ -1,52 +1,57 @@
 # Aponar Nihon Architecture
 
-Aponar Nihon is intentionally a fast static-first learning platform. The goal is not to force GitHub language percentages; each language is used where it is strongest while preserving every existing piece of educational content.
+Aponar Nihon is a static-first full-stack Japanese learning platform. The architecture uses each technology only where it is strongest while protecting every existing lesson, example, explanation and URL.
 
-## Responsibilities
+## Production stack
 
-### HTML — content and semantic structure
-
-HTML remains the source of truth for the existing pages, lessons, guides, headings, examples and educational text. Existing URLs stay compatible so bookmarks and search-engine links do not break.
-
-### JavaScript — browser interaction
-
-JavaScript owns browser-side behavior such as quizzes, mock tests, timers, search UI, account/auth flows, PWA behavior, CV tools and other interactions that need to respond immediately on the user's device.
-
-### Node.js — web build orchestration and quality automation
-
-Node.js is the web-engineering layer around the static site. It provides a standard `npm` workflow, runs the Python content-safe build, performs a post-build web audit, checks critical metadata and generated assets, produces a SHA-256 file manifest, and writes a machine-readable site-quality report. This gives the project a modern professional CI/deployment workflow without requiring a permanent Node server.
-
-The current Node.js tooling deliberately uses only built-in Node APIs, so there is no dependency-install penalty and no unnecessary third-party supply-chain risk. Future tooling such as TypeScript, bundling, browser tests or Lighthouse budgets can be added here when they deliver a real benefit.
-
-### Python — content build, validation and corpus tooling
-
-Python runs before deployment. It copies the static site, injects shared professional assets, validates that visible text has not changed, generates a lightweight search index, and reports broken internal page links. Content generators and corpus-processing tools should also live here.
-
-### Android / Java
-
-The Android wrapper/app remains isolated under `android/`. Java is appropriate for native Android-specific code, but website code should not be rewritten in Java just to increase a language percentage.
+- **Frontend:** semantic HTML + modern CSS + JavaScript/TypeScript.
+- **Web tooling:** Node.js 22 for TypeScript compilation, quality automation and CI commands.
+- **Content processing:** Python for static build, content-integrity validation, search-index generation, corpus tools and internal-link diagnostics.
+- **Database/Auth:** Supabase for authentication, profiles, student progress and activity history. Generated TypeScript database types live in `src/types/supabase.ts`.
+- **Hosting/CDN target:** Cloudflare Pages for the static site and global edge delivery. GitHub Pages remains supported during migration.
+- **Backend API:** Cloudflare Workers. The secure foundation lives in `workers/api/` and exposes health/config routes without putting server secrets in browser code.
+- **Android:** Java/Kotlin only for native Android code under `android/`.
+- **Testing:** Playwright for real-browser mobile/desktop smoke tests and Lighthouse CI for performance, accessibility, best-practices and SEO budgets.
+- **Security:** Cloudflare `_headers`, CSP, Permissions-Policy, referrer policy, MIME sniffing protection, safe external links, origin checks and automated quality checks.
 
 ## Zero-content-loss rule
 
-`tools/build_site.py` computes a SHA-256 digest of the human-visible text of every HTML page before and after build-time enhancement. Script and style bodies are excluded from that digest. If an enhancement changes visible page text, the build stops instead of deploying.
+`tools/build_site.py` computes a SHA-256 digest of the human-visible text of every HTML page before and after build-time enhancement. Script and style bodies are excluded. If build-time work changes visible educational text, the build stops instead of deploying.
 
-This makes the existing educational content the protected asset, while allowing the codebase and presentation layer to evolve safely.
+Existing HTML remains the source of truth while migration is in progress. Content is never moved or rewritten merely to alter GitHub language percentages.
 
-## Quality pipeline
+## Build pipeline
 
-`npm run verify` is the single professional verification command. It runs the Python build first, then the Node.js web audit. The Node audit checks the generated site, verifies critical home-page metadata and injected shared assets, records warnings such as duplicate IDs or missing image alt attributes, and writes `assets/data/site-audit.json` with file sizes and hashes.
+`npm run verify` is the main quality command:
 
-## Deployment
+1. TypeScript is compiled from `src/ts/` into generated browser JavaScript.
+2. Python creates `_site`, injects shared professional CSS/JS/TypeScript runtime and validates visible-text integrity.
+3. Python generates the local search index and reports broken internal links.
+4. Node.js audits the generated site and writes a machine-readable quality report.
+5. CI verifies critical generated assets before deployment.
 
-GitHub Actions installs Node.js 22, runs `npm run verify`, injects the runtime Google Maps configuration, and only then uploads the Pages artifact. Pull requests use the same quality gate, so the preview/test path and the production path stay aligned.
+Development-only directories and configuration are excluded from the published `_site` output.
+
+## Browser quality
+
+`Browser Quality` CI builds the same verified site, then runs Playwright on Chromium in mobile and desktop modes. Critical pages are checked for successful rendering, document language, page title, runtime initialization and duplicate IDs. Lighthouse CI adds measurable performance, accessibility, best-practice and SEO budgets.
+
+## Cloudflare backend
+
+`wrangler.toml` configures the `aponar-nihon-api` Worker. `workers/api/src/index.ts` applies an origin allow-list, CORS policy, no-store caching and defensive response headers. Sensitive API keys must be stored as Cloudflare Worker secrets, never in HTML, CSS, browser JavaScript or the repository.
+
+## Supabase
+
+The active database currently contains the platform tables `profiles`, `student_progress` and `activity_events`, with authenticated-user policies already present. Frontend code should use the publishable client key only. Service-role credentials must never be shipped to browsers.
 
 ## Design principles
 
 - Preserve all existing user-facing content and URLs.
-- Static-first for speed, SEO and low hosting cost.
-- Progressive enhancement: the site remains readable even if JavaScript fails.
-- Mobile-first touch targets and accessibility-friendly focus states.
-- Shared CSS/JS for consistency instead of repeatedly adding page-specific overrides.
-- Node.js for web tooling, CI and future TypeScript/browser-test workflows.
-- Python for content integrity, generation and corpus processing.
-- Java for Android-specific native code, not artificial language statistics.
+- Static-first for speed, SEO, reliability and low hosting cost.
+- Progressive enhancement: educational content remains readable even when JavaScript fails.
+- Mobile-first interaction and accessibility-friendly focus/touch targets.
+- Shared components and generated assets instead of repeated page-specific overrides.
+- TypeScript for new browser logic; legacy JavaScript can migrate gradually.
+- Python for content integrity and generation; Node.js for web engineering and CI.
+- Cloudflare Workers only where server-side logic or secret isolation is actually needed.
+- Supabase RLS remains the primary protection for per-user database records.
