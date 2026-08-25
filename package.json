@@ -18,6 +18,7 @@
     "verify": "npm run typecheck && npm run build && npm run quality",
     "test:browser": "playwright test",
     "lighthouse": "lhci autorun",
+    "live:smoke": "node tools/live_smoke.mjs",
     "worker:dev": "npx --yes wrangler@4 dev",
     "worker:deploy": "npx --yes wrangler@4 deploy"
   }
