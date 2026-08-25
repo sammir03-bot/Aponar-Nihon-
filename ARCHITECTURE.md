@@ -12,7 +12,7 @@ Aponar Nihon is a static-first full-stack Japanese learning platform. The archit
 - **Backend API:** the same Cloudflare Worker handles `/api/*` before static assets. The secure foundation lives in `workers/api/` and keeps server secrets out of browser code.
 - **Android:** Java/Kotlin only for native Android code under `android/`.
 - **Testing:** Playwright for real-browser mobile/desktop smoke tests and Lighthouse CI for performance, accessibility, best-practices and SEO budgets.
-- **Security:** Cloudflare `_headers`, CSP, Permissions-Policy, referrer policy, MIME sniffing protection, safe external links, origin checks, Supabase RLS and automated quality checks.
+- **Security:** Cloudflare `_headers`, CSP, HSTS, Permissions-Policy, referrer policy, MIME sniffing protection, safe external links, origin checks, Supabase RLS and automated quality checks.
 
 ## Zero-content-loss rule
 
@@ -42,11 +42,15 @@ Development-only directories and configuration are excluded from the published `
 
 `Browser Quality` CI builds the same verified site and runs Chromium in mobile and desktop modes. It checks critical page rendering, document language, page titles, generated assets, important home links, runtime initialization, duplicate IDs and mobile dock sizing. Lighthouse CI adds measurable performance, accessibility, best-practice and SEO budgets.
 
+Playwright uses the current stable test runner while Lighthouse CI remains pinned to its latest stable release. These CI-only tools are installed transiently and are not shipped in the production browser bundle.
+
 ## Cloudflare delivery and backend
 
 `wrangler.toml` configures `aponar-nihon-web` with `_site` as the static-asset directory. Static pages/assets are served at Cloudflare's edge, while `/api/*` is routed through `workers/api/src/index.ts` first. The Worker accepts secure same-origin requests on the current Workers preview and future custom domains, and applies CORS, no-store caching for API responses and defensive response headers.
 
 Cloudflare Workers Builds is connected to GitHub and currently uses `professional-refactor-20260825` as its production branch for verification. Successful branch builds are already being served from the Workers deployment; `main` remains untouched until final cutover is explicitly approved.
+
+`tools/live_smoke.mjs` and the `Live Preview Smoke` GitHub workflow provide external checks of the deployed homepage, learning pages, auth/profile routes and `/api/health`. After this branch is merged, the scheduled workflow can act as a lightweight availability/regression monitor.
 
 ## Supabase
 
