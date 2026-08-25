@@ -14,11 +14,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build with zero-content-loss guard
-        run: python3 tools/build_site.py --out _site --check-links
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Build and verify with Python + Node.js
+        run: npm run verify
 
       - name: Verify generated professional assets
         run: |
           test -s _site/assets/css/pro-core.css
           test -s _site/assets/js/pro-core.js
           test -s _site/assets/data/search-index.json
+          test -s _site/assets/data/site-audit.json
