@@ -1,35 +1,36 @@
 # Aponar Nihon production cutover
 
+Official production origin: `https://app.aponar-nihon.workers.dev`.
+
 Use this checklist only after Site Quality and Browser Quality are green on the final branch head.
 
 ## Cloudflare
 
-1. Open Workers & Pages → `aponar-nihon-web` → Domains.
-2. Add the canonical custom domain `aponar-nihon.eu.cc` to the Worker.
-3. Let Cloudflare create/verify the DNS target and TLS certificate.
-4. Keep the `workers.dev` hostname enabled until the custom domain is verified.
-5. Open the custom domain in a private browser and verify `/`, `/n5-grammar.html`, `/n4-grammar.html`, `/n3-grammar.html`, `/auth.html`, `/profile.html`, and `/api/health`.
+1. Keep the Workers account subdomain as `aponar-nihon`.
+2. Keep the Worker name as `app` (`name = "app"` in `wrangler.toml`).
+3. Keep `workers_dev = true`.
+4. Verify `https://app.aponar-nihon.workers.dev/` and `/api/health` after each production deploy.
+5. No custom-domain DNS or nameserver change is required for this production setup.
 
-Do not add a guessed `routes` entry to `wrangler.toml` before Cloudflare confirms the zone/domain binding in the dashboard.
+The legacy `aponar-nihon.eu.cc` value may remain in untouched source HTML for content preservation, but the production build rewrites legacy absolute-origin references to the official Workers URL without changing visible educational text. `CNAME` is excluded from the Workers build output.
 
 ## Supabase Auth
 
-Before testing OAuth/email redirects on the custom domain, ensure the Supabase Authentication URL configuration accepts:
+Authentication URL settings must accept the official origin:
 
-- `https://aponar-nihon.eu.cc/**`
-- the current `workers.dev` preview URL while preview testing is still needed
+- `https://app.aponar-nihon.workers.dev/**`
 
-Keep localhost redirect URLs only if local development still uses them. Browser code derives OAuth redirects from the current origin, so the allowed redirect list must match the hostname users are testing.
+Keep localhost redirects only if local development still uses them. Browser code derives OAuth/email redirects from the current origin, so the Supabase allow-list must include the hostname users actually open.
 
 ## GitHub
 
-After the custom-domain smoke test is green:
+After the official Workers URL passes smoke tests:
 
 1. Merge PR #2 into `main`.
 2. Change Cloudflare Workers Builds production branch from `professional-refactor-20260825` to `main`.
 3. Confirm the first `main` Cloudflare build is green.
-4. Keep the branch/Workers preview available briefly as a rollback reference.
+4. Keep the refactor branch briefly as a rollback reference.
 
 ## Rollback
 
-If the custom-domain deployment has a regression, switch the Cloudflare deployment/version back to the last known-good Worker version or temporarily restore the previous domain target. The architecture keeps GitHub Pages as a fallback path and never removes the original educational source HTML during the migration.
+If a deployment regresses, restore the last known-good Worker version. The migration keeps the original educational source HTML protected by visible-text integrity checks and does not delete lesson content.
