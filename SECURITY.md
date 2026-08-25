@@ -22,16 +22,18 @@ Supabase's leaked-password protection is currently disabled. It should be enable
 
 ## Backend API
 
-Cloudflare Worker APIs validate allowed origins and accept the actual request origin for same-origin deployments, so the same code works on the `workers.dev` preview and a future custom domain. Sensitive routes use no-store caching and defensive response headers. Any future privileged endpoint must also validate authentication/authorization, request shape and rate limits.
+The official production origin is `https://app.aponar-nihon.workers.dev`. Cloudflare Worker APIs validate allowed origins and always accept the actual request origin for same-origin deployments. Sensitive routes use no-store caching and defensive response headers. Any future privileged endpoint must also validate authentication/authorization, request shape and rate limits.
+
+Supabase Authentication URL settings must allow `https://app.aponar-nihon.workers.dev/**` for OAuth and email redirects used by the production site.
 
 ## CI safety
 
 This architecture PR has two independent content guards:
 
 1. GitHub CI compares every existing source HTML file with `origin/main` and fails if a file disappears or human-visible text changes.
-2. The Python build hashes human-visible text before and after build-time enhancement and fails if injected CSS/JS, link repair or security hardening alters visible educational content.
+2. The Python build hashes human-visible text before and after build-time enhancement and fails if production-origin migration, injected CSS/JS, link repair or security hardening alters visible educational content.
 
-Node.js audit, Playwright and Lighthouse add metadata, browser, accessibility, performance and security regression detection. Broken legacy links are repaired only in generated `_site` markup, leaving source lessons untouched. A separate live-smoke workflow can check the deployed Workers URL and `/api/health` after deployment.
+Node.js audit, Playwright and Lighthouse add metadata, browser, accessibility, performance and security regression detection. Broken legacy links are repaired only in generated `_site` markup, leaving source lessons untouched. A separate live-smoke workflow checks the deployed `https://app.aponar-nihon.workers.dev` site and `/api/health` after deployment.
 
 ## Reporting
 
