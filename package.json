@@ -8,11 +8,14 @@
     "node": ">=22"
   },
   "scripts": {
+    "typecheck:types": "npx --yes --package typescript@5.9.2 tsc -p tsconfig.types.json",
+    "typecheck:worker": "npx --yes --package typescript@5.9.2 tsc -p tsconfig.worker.json",
+    "typecheck": "npm run typecheck:types && npm run typecheck:worker",
     "build:ts": "npx --yes --package typescript@5.9.2 tsc -p tsconfig.web.json",
     "build:site": "python3 tools/build_site.py --out _site --check-links",
     "build": "npm run build:ts && npm run build:site",
     "quality": "node tools/web_quality.mjs _site",
-    "verify": "npm run build && npm run quality",
+    "verify": "npm run typecheck && npm run build && npm run quality",
     "test:browser": "playwright test",
     "lighthouse": "lhci autorun",
     "worker:dev": "npx --yes wrangler@4 dev",
