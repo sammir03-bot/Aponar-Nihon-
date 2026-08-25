@@ -5,7 +5,7 @@ export interface Env {
 
 type JsonRecord = Record<string, unknown>;
 
-const DEFAULT_ORIGIN = "https://aponar-nihon.eu.cc";
+const DEFAULT_ORIGIN = "https://app.aponar-nihon.workers.dev";
 
 function securityHeaders(origin: string): HeadersInit {
   return {
