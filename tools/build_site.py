@@ -17,8 +17,9 @@ EXCLUDED_DIRS = {
     "playwright-report", "test-results",
 }
 EXCLUDED_FILES = {
-    ".gitignore", "package.json", "tsconfig.web.json", "playwright.config.mjs",
-    "lighthouserc.cjs", "wrangler.toml", "ARCHITECTURE.md", "SECURITY.md",
+    ".gitignore", "package.json", "tsconfig.web.json", "tsconfig.worker.json",
+    "tsconfig.types.json", "playwright.config.mjs", "lighthouserc.cjs",
+    "wrangler.toml", "ARCHITECTURE.md", "SECURITY.md",
 }
 
 PRO_CSS = '<link rel="stylesheet" href="/assets/css/pro-core.css?v=20260825">'
