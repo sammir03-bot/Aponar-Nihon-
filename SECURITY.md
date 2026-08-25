@@ -6,7 +6,7 @@ Never commit Supabase service-role keys, Cloudflare API tokens, AI provider keys
 
 ## Browser security
 
-Cloudflare Workers Static Assets applies the repository `_headers` policy to the verified `_site` build. CSP, Permissions-Policy, Referrer-Policy, MIME-sniffing protection and frame restrictions are compatibility-first because the existing site still uses several external CDNs. Tighten external origins gradually after browser tests prove that learning, auth and media flows remain intact.
+Cloudflare Workers Static Assets applies the repository `_headers` policy to the verified `_site` build. HSTS, CSP, Permissions-Policy, Referrer-Policy, MIME-sniffing protection and frame restrictions are compatibility-first because the existing site still uses several external CDNs and inline legacy code. Tighten external origins gradually after browser tests prove that learning, auth and media flows remain intact.
 
 All generated `target="_blank"` links are hardened at build time with `rel="noopener noreferrer"`. The runtime keeps the same protection for links created dynamically in the browser.
 
@@ -14,9 +14,11 @@ All generated `target="_blank"` links are hardened at build time with `rel="noop
 
 Supabase Row Level Security remains enabled for `profiles`, `student_progress` and `activity_events`. Client operations are scoped to the signed-in user, with admin access controlled by `is_admin()` and the existing RLS policies.
 
-`touch_profile_activity()` is executable only by `authenticated`, `service_role` and the database owner; PUBLIC/anonymous execution has been revoked. Administrative SECURITY DEFINER RPCs keep an explicit `is_admin()` authorization check and a fixed `search_path`. Revisit SECURITY DEFINER only together with admin-flow regression tests.
+`touch_profile_activity()` is executable only by `authenticated`, `service_role` and the database owner; PUBLIC/anonymous execution has been revoked by migration `restrict_touch_profile_activity_execution`.
 
-Supabase's leaked-password protection should be enabled in Authentication settings when the project plan supports it. Supabase documents this protection as a Pro-plan-and-above feature.
+Supabase's database advisor still reports warning-level exposure for authenticated GraphQL table discovery and the intentionally callable administrative SECURITY DEFINER RPCs. These are not being silenced by removing permissions the application relies on: the tables remain protected by RLS, while the admin RPCs use a fixed `search_path` and explicit `is_admin()` authorization. Any redesign of those RPCs should happen together with admin regression tests rather than by blindly revoking access.
+
+Supabase's leaked-password protection is currently disabled. It should be enabled in Authentication settings when the project plan supports it.
 
 ## Backend API
 
@@ -29,7 +31,7 @@ This architecture PR has two independent content guards:
 1. GitHub CI compares every existing source HTML file with `origin/main` and fails if a file disappears or human-visible text changes.
 2. The Python build hashes human-visible text before and after build-time enhancement and fails if injected CSS/JS, link repair or security hardening alters visible educational content.
 
-Node.js audit, Playwright and Lighthouse add metadata, browser, accessibility, performance and security regression detection. Broken legacy links are repaired only in generated `_site` markup, leaving source lessons untouched.
+Node.js audit, Playwright and Lighthouse add metadata, browser, accessibility, performance and security regression detection. Broken legacy links are repaired only in generated `_site` markup, leaving source lessons untouched. A separate live-smoke workflow can check the deployed Workers URL and `/api/health` after deployment.
 
 ## Reporting
 
