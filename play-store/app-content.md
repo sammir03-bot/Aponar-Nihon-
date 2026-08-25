@@ -13,13 +13,13 @@ Primary audience: students and adult learners studying Japanese, especially Bang
 Educational language-learning content, quizzes, Japan-life information, job-interview/CV guidance and student utilities. No intended violence, sexual content, gambling or controlled-substance promotion.
 
 ## Privacy policy URL
-`https://aponar-nihon.eu.cc/privacy-policy.html`
+`https://app.aponar-nihon.workers.dev/privacy-policy.html`
 
 ## Account deletion URL
-`https://aponar-nihon.eu.cc/delete-account.html`
+`https://app.aponar-nihon.workers.dev/delete-account.html`
 
 ## Category
 Education
 
 ## Website
-`https://aponar-nihon.eu.cc/`
+`https://app.aponar-nihon.workers.dev/`
