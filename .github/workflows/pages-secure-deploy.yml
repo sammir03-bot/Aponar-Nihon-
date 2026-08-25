@@ -27,20 +27,15 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Prepare static site
+      - name: Build and verify static site
+        run: python3 tools/build_site.py --out _site --check-links
+
+      - name: Publish private Google Maps key
         env:
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
         run: |
           test -n "$GOOGLE_MAPS_API_KEY" || { echo "GOOGLE_MAPS_API_KEY secret is missing"; exit 1; }
-          mkdir -p _site
-          rsync -a ./ _site/ \
-            --exclude '.git/' \
-            --exclude '.github/' \
-            --exclude '_site/' \
-            --exclude 'android/' \
-            --exclude 'play-store/' \
-            --exclude 'node_modules/'
-          python - <<'PY'
+          python3 - <<'PY'
           import json, os, pathlib
           from urllib.parse import urlparse, parse_qs
 
