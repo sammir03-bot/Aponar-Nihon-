@@ -13,9 +13,15 @@ TARGET_BLANK_RE = re.compile(r"\btarget\s*=\s*([\"'])_blank\1", re.IGNORECASE)
 REL_RE = re.compile(r"\brel\s*=\s*([\"'])(.*?)\1", re.IGNORECASE | re.DOTALL)
 VOCAB_SOURCE_RE = re.compile(r"^Vocabulary-lesson\d+\.html$", re.IGNORECASE)
 VOCAB_TARGET_RE = re.compile(r"^lesson-(\d+)\.html$", re.IGNORECASE)
+N4_QUIZ_PART_RE = re.compile(
+    r"^N4-(Vocabulary|Kanji|Grammar|Reading)-part(\d+)\.html$", re.IGNORECASE
+)
 
 ALIASES = {
     "n3-matome-grammar.html": "n3-grammar.html",
+    "disclaimer.html": "Disclaimer",
+    "login.html": "auth.html",
+    "help.html": "contact.html",
 }
 
 IGNORED_SCHEMES = {"http", "https", "mailto", "tel", "sms", "javascript", "data"}
@@ -37,8 +43,15 @@ def _candidate_rewrite(href: str, page: Path, root: Path) -> str | None:
 
     source_name = page.name
     basename = Path(raw_path).name
-    replacement: str | None = None
 
+    quiz_match = N4_QUIZ_PART_RE.match(basename)
+    if quiz_match and (root / "jlpt-quiz.html").exists():
+        category = quiz_match.group(1).lower()
+        part = max(1, min(10, int(quiz_match.group(2))))
+        fragment = f"#{parsed.fragment}" if parsed.fragment else ""
+        return f"/jlpt-quiz.html?level=n4&category={category}&part={part}{fragment}"
+
+    replacement: str | None = None
     alias = ALIASES.get(basename.lower())
     if alias and (root / alias).exists():
         replacement = "/" + alias
