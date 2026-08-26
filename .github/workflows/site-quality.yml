@@ -42,7 +42,7 @@ jobs:
       - name: Build and verify with Python + Node.js
         run: npm run verify
 
-      - name: Verify generated professional assets
+      - name: Verify generated professional and SEO assets
         run: |
           test -s _site/assets/css/pro-core.css
           test -s _site/assets/js/pro-core.js
@@ -50,3 +50,8 @@ jobs:
           test -s _site/assets/data/search-index.json
           test -s _site/assets/data/site-audit.json
           test -s _site/_headers
+          test -s _site/robots.txt
+          test -s _site/sitemap.xml
+          grep -Fq 'Sitemap: https://app.aponar-nihon.workers.dev/sitemap.xml' _site/robots.txt
+          grep -Fq '<loc>https://app.aponar-nihon.workers.dev/</loc>' _site/sitemap.xml
+          grep -Fq '<link rel="canonical" href="https://app.aponar-nihon.workers.dev/">' _site/index.html
