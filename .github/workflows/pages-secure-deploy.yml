@@ -36,6 +36,9 @@ jobs:
       - name: Build and verify static site
         run: npm run verify
 
+      - name: Preserve legacy GitHub Pages custom-domain metadata
+        run: printf '%s\n' 'aponar-nihon.eu.cc' > _site/CNAME
+
       - name: Publish restricted Google Maps browser key
         env:
           GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
@@ -60,7 +63,7 @@ jobs:
           PY
 
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: _site
 
