@@ -9,6 +9,7 @@ from sitecore.htmltools import inject_assets, visible_text_hash
 from sitecore.linkcheck import find_broken_page_links
 from sitecore.postprocess import postprocess_site
 from sitecore.search_index import build_search_index
+from sitecore.seo import prepare_search_engine_files
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -115,6 +116,7 @@ def build(destination: Path, check_links: bool = False) -> int:
     origin_files, origin_replacements, origin_html_checks = rewrite_production_origin(destination)
     injected, injection_checked = inject_professional_assets(destination)
     changed, post_checked, repaired, secured = postprocess_site(destination)
+    canonicals, noindex, seo_checked, verification, sitemap_urls = prepare_search_engine_files(destination)
     indexed = build_search_index(
         destination,
         destination / "assets" / "data" / "search-index.json",
@@ -126,11 +128,15 @@ def build(destination: Path, check_links: bool = False) -> int:
     print(f"HTML pages enhanced: {injected}")
     print(
         "Content-integrity checks passed: "
-        f"{origin_html_checks + injection_checked + post_checked}"
+        f"{origin_html_checks + injection_checked + post_checked + seo_checked}"
     )
     print(f"HTML pages post-processed: {changed}")
     print(f"Internal links repaired safely: {repaired}")
     print(f"_blank links hardened: {secured}")
+    print(f"SEO canonical pages: {canonicals}")
+    print(f"SEO noindex pages: {noindex}")
+    print(f"Search Console verification injected: {'yes' if verification else 'no'}")
+    print(f"Sitemap URLs: {sitemap_urls}")
     print(f"Search-index pages: {indexed}")
 
     if check_links:
