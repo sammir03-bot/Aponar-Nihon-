@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from urllib.parse import quote
 
 from sitecore.htmltools import extract_page_meta
 
@@ -26,6 +27,17 @@ def should_index(path: Path, root: Path) -> bool:
     return True
 
 
+def public_url(path: Path, root: Path) -> str:
+    rel = path.relative_to(root).as_posix()
+    if rel == "index.html":
+        return "/"
+    if rel.endswith("/index.html"):
+        rel = rel[: -len("index.html")]
+    elif rel.endswith(".html"):
+        rel = rel[:-5]
+    return "/" + quote(rel, safe="/-._~")
+
+
 def build_search_index(root: Path, output: Path) -> int:
     records: list[dict[str, object]] = []
 
@@ -37,11 +49,9 @@ def build_search_index(root: Path, output: Path) -> int:
         if not (title or headings):
             continue
 
-        rel = path.relative_to(root).as_posix()
-        url = "/" if rel == "index.html" else f"/{rel}"
         records.append(
             {
-                "url": url,
+                "url": public_url(path, root),
                 "title": title or (headings[0] if headings else path.stem),
                 "description": description,
                 "headings": headings[:24],
