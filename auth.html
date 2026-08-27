@@ -22,6 +22,28 @@
     .security{display:flex;gap:8px;align-items:flex-start;margin-top:14px;padding:11px 12px;background:#f7fafc;border-radius:14px;color:#7b8d9d;font-size:10px;line-height:1.5}.lock{font-size:13px}
     @media(max-width:420px){.shell{padding:14px 10px 24px;align-items:start}.auth-card{border-radius:26px;padding:20px 16px;margin-top:12px}.brand img{width:52px;height:52px}.brand-title{font-size:20px}.google-btn{height:54px}.control{height:49px}}
   </style>
+
+<meta name="robots" content="noindex,nofollow">
+
+<script id="legacy-origin-redirect">
+(function(){
+  var h = location.hostname;
+  if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
+  var p = location.pathname || "/";
+  if (h === "sammir03-bot.github.io") {
+    var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
+    for (var i = 0; i < bases.length; i++) {
+      var base = bases[i];
+      if (p === base || p === base + "/") { p = "/"; break; }
+      if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+    }
+  }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
+  location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
+})();
+</script>
 </head>
 <body>
   <main class="shell">

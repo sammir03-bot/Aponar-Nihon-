@@ -18,6 +18,28 @@
     @media(max-width:820px){.layout{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr;gap:16px}.side .card:last-child{grid-column:1/-1}}
     @media(max-width:600px){.container{width:min(100% - 18px,1100px)}.nav{min-height:64px}.brand strong{font-size:14px}.brand img{width:39px;height:39px}.nav-btn{height:39px;padding:0 10px}.nav-btn .desktop{display:none}.hero{padding-top:14px}.hero-card{border-radius:25px;padding:20px 17px}.profile-head{gap:13px}.avatar,.avatar-fallback{width:72px;height:72px;border-radius:22px}.hero h1{font-size:23px}.hero-email{font-size:10px}.layout{gap:12px}.card{border-radius:21px;padding:17px 14px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.side{grid-template-columns:1fr}.side .card:last-child{grid-column:auto}.save-bar{position:sticky;bottom:8px;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);padding:8px;border-radius:18px;margin-left:-6px;margin-right:-6px;box-shadow:0 10px 30px rgba(20,62,95,.10)}}
   </style>
+
+<meta name="robots" content="noindex,nofollow">
+
+<script id="legacy-origin-redirect">
+(function(){
+  var h = location.hostname;
+  if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
+  var p = location.pathname || "/";
+  if (h === "sammir03-bot.github.io") {
+    var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
+    for (var i = 0; i < bases.length; i++) {
+      var base = bases[i];
+      if (p === base || p === base + "/") { p = "/"; break; }
+      if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+    }
+  }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
+  location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
+})();
+</script>
 </head>
 <body>
   <header class="top"><div class="container nav"><a class="brand" href="/"><img src="/logo.png" alt="Aponar Nihon"><strong>APONAR NIHON</strong></a><div class="spacer"></div><a class="nav-btn" href="/">⌂ <span class="desktop">হোম</span></a><a id="adminLink" class="nav-btn" href="/admin.html" style="display:none">Admin</a><button id="logoutBtn" class="nav-btn logout" type="button">Logout</button><a class="nav-btn logout" href="/delete-account.html" title="Delete account">Delete Account</a></div></header>

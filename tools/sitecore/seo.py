@@ -14,11 +14,25 @@ PRODUCTION_ORIGIN = "https://app.aponar-nihon.workers.dev"
 VERIFICATION_FILE = Path(__file__).resolve().parents[1] / "google-site-verification.txt"
 
 
-def _url_for(path: Path, root: Path) -> str:
+def _clean_public_path(path: Path, root: Path) -> str:
+    """Return the URL path Cloudflare Static Assets actually serves.
+
+    wrangler.toml uses html_handling = "auto-trailing-slash", so public HTML
+    files are exposed as clean URLs (for example /n5-grammar, not
+    /n5-grammar.html). Canonicals and the sitemap must match that final URL.
+    """
     rel = path.relative_to(root).as_posix()
     if rel == "index.html":
-        return f"{PRODUCTION_ORIGIN}/"
-    return f"{PRODUCTION_ORIGIN}/{quote(rel, safe='/-._~')}"
+        return "/"
+    if rel.endswith("/index.html"):
+        rel = rel[: -len("index.html")]
+    elif rel.endswith(".html"):
+        rel = rel[:-5]
+    return "/" + quote(rel, safe="/-._~")
+
+
+def _url_for(path: Path, root: Path) -> str:
+    return f"{PRODUCTION_ORIGIN}{_clean_public_path(path, root)}"
 
 
 def _load_verification_token() -> str:
@@ -32,7 +46,6 @@ def _load_verification_token() -> str:
     if not raw:
         return ""
 
-    # Accept either Google's bare token or the complete verification meta tag.
     match = re.search(
         r'name=["\']google-site-verification["\'][^>]*content=["\']([^"\']+)["\']',
         raw,
@@ -72,10 +85,21 @@ def apply_seo_metadata(root: Path) -> tuple[int, int, int, bool]:
 
         if should_index(page, root):
             canonical = _url_for(page, root)
+            canonical_tag = re.compile(
+                r'<link\b(?=[^>]*\brel=["\']canonical["\'])[^>]*>',
+                flags=re.IGNORECASE,
+            )
             snippet = f'<link rel="canonical" href="{html_lib.escape(canonical, quote=True)}">'
-            updated = _inject_head_snippet(updated, snippet)
-            if updated != document:
-                canonical_count += 1
+            if canonical_tag.search(updated):
+                prior = updated
+                updated = canonical_tag.sub(snippet, updated, count=1)
+                if updated != prior:
+                    canonical_count += 1
+            else:
+                prior = updated
+                updated = _inject_head_snippet(updated, snippet)
+                if updated != prior:
+                    canonical_count += 1
         elif not re.search(
             r'<meta\b[^>]*name=["\']robots["\'][^>]*>', updated, flags=re.IGNORECASE
         ):

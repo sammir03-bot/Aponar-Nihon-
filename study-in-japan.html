@@ -59,6 +59,30 @@
        @media (max-width: 992px) { .content-grid { grid-template-columns: 1fr; } .sidebar { position: static; } .desktop-menu { display: none; } .mobile-toggle { display: flex; } .page-header h1 { font-size: 2rem; } .footer-grid { grid-template-columns: repeat(2, 1fr); } }
        @media (max-width: 576px) { .footer-grid { grid-template-columns: 1fr; } }
    </style>
+
+
+
+<script id="legacy-origin-redirect">
+(function(){
+  var h = location.hostname;
+  if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
+  var p = location.pathname || "/";
+  if (h === "sammir03-bot.github.io") {
+    var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
+    for (var i = 0; i < bases.length; i++) {
+      var base = bases[i];
+      if (p === base || p === base + "/") { p = "/"; break; }
+      if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+    }
+  }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
+  location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
+})();
+</script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/study-in-japan">
 </head>
 <body>
    <header class="header">
