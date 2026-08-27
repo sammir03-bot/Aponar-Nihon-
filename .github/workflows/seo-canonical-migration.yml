@@ -3,7 +3,7 @@ name: SEO canonical migration
 on:
   push:
     branches:
-      - seo-canonical-fix-20260827
+      - seo-clean-url-fix-20260827
     paths:
       - .github/workflows/seo-canonical-migration.yml
 
@@ -17,7 +17,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: seo-canonical-fix-20260827
+          ref: seo-clean-url-fix-20260827
           fetch-depth: 0
 
       - name: Set up Python
@@ -25,15 +25,19 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Migrate canonical origin and legacy hosts
+      - name: Migrate canonical origin and clean URLs
         run: python3 tools/migrate_seo_origin.py
 
       - name: Sanity checks
         run: |
           test ! -f CNAME
           grep -q 'https://app.aponar-nihon.workers.dev/sitemap.xml' robots.txt
-          grep -q 'https://app.aponar-nihon.workers.dev/' sitemap.xml
           grep -q '<link rel="canonical" href="https://app.aponar-nihon.workers.dev/">' index.html
+          grep -q '<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n5-grammar">' n5-grammar.html
+          grep -q '<url><loc>https://app.aponar-nihon.workers.dev/n5-grammar</loc></url>' sitemap.xml
+          ! grep -q '<url><loc>https://app.aponar-nihon.workers.dev/n5-grammar.html</loc></url>' sitemap.xml
+          grep -q '<h1 class="logo-center-text">আপনার নিহোন</h1>' index.html
+          grep -q 'alt="আপনার নিহোন লোগো"' index.html
           grep -q 'legacy-origin-redirect' index.html
           ! grep -R --include='*.html' --include='*.xml' --include='*.json' --include='*.txt' --include='*.webmanifest' 'https://aponar-nihon.eu.cc' . \
             --exclude-dir=.git --exclude-dir=.github --exclude-dir=_site --exclude-dir=tools --exclude-dir=android --exclude-dir=play-store --exclude-dir=node_modules
@@ -47,5 +51,5 @@ jobs:
             echo 'No migration changes needed.'
             exit 0
           fi
-          git commit -m 'Consolidate SEO canonical signals on Workers origin'
-          git push origin HEAD:seo-canonical-fix-20260827
+          git commit -m 'Align canonical URLs with Cloudflare clean routes'
+          git push origin HEAD:seo-clean-url-fix-20260827
