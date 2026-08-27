@@ -15,7 +15,7 @@
 @media(max-width:620px){.opts{grid-template-columns:1fr}.hero{padding:27px 0 22px}.furigana-btn{font-size:.7rem;padding:8px}.card{padding:14px}.wrap{width:min(100% - 18px,940px)}}
 </style>
 
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/jlpt-quiz.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -30,9 +30,14 @@
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/jlpt-quiz">
 </head>
 <body>
 <header class="top"><div class="wrap topin"><a class="back" href="index.html#quiz" aria-label="Back">←</a><div class="brand"><b>আপনার নিহোন · JLPT Quiz</b><small id="topSub">বাংলা ব্যাখ্যাসহ প্র্যাকটিস</small></div><button class="furigana-btn" id="furiganaBtn">ふ Furigana ON</button></div></header>

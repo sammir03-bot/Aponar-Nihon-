@@ -5270,7 +5270,7 @@ a, button { -webkit-tap-highlight-color:transparent; }
 </style>
 
 
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -5285,9 +5285,14 @@ a, button { -webkit-tap-highlight-color:transparent; }
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/">
 </head>
 <body>
 
@@ -5295,12 +5300,12 @@ a, button { -webkit-tap-highlight-color:transparent; }
   <div class="nav-container app-classic-inner">
     <a href="#home" class="logo app-classic-logo" aria-label="আপনার নিহোন হোম">
       <span class="app-classic-logo-visual" aria-hidden="true">
-        <img src="logo.png" alt="" class="logo-img app-classic-logo-img" width="55" height="55" loading="eager" decoding="async" fetchpriority="high"
+        <img src="logo.png" alt="আপনার নিহোন লোগো" class="logo-img app-classic-logo-img" width="55" height="55" loading="eager" decoding="async" fetchpriority="high"
              onerror="this.style.setProperty('display','none','important');this.nextElementSibling.hidden=false;">
         <span class="app-classic-logo-fallback" hidden>あ</span>
       </span>
       <span class="logo-center app-classic-copy">
-        <span class="logo-center-text">আপনার নিহোন</span>
+        <h1 class="logo-center-text">আপনার নিহোন</h1>
         <span class="logo-center-tag">Japanese Learning Hub</span>
       </span>
     </a>

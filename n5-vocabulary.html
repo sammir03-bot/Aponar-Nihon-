@@ -269,7 +269,7 @@ button{color:inherit}
 }
 </style>
 
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n5-vocabulary.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -284,9 +284,14 @@ button{color:inherit}
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n5-vocabulary">
 </head>
 <body data-page="n5-vocabulary" style="--accent:#059669;--accent-rgb:5,150,105;--accent2:#2dd4bf;--accent2-rgb:45,212,191;--warm:#f59e0b">
   <a class="skip-link" href="#lessons">Lesson তালিকায় যান</a>

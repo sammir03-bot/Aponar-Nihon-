@@ -12,7 +12,7 @@
 @media(max-width:760px){.grid{grid-template-columns:1fr}.wide{grid-column:auto}.qibla-layout{grid-template-columns:1fr}.prayers{grid-template-columns:repeat(2,1fr)}.hero-card{padding:20px 17px}.card{padding:16px 13px}.map{height:290px}}
 </style>
 
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/muslim-japan.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -27,9 +27,14 @@
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/muslim-japan">
 </head>
 <body>
 <header class="top"><div class="wrap nav"><a class="brand" href="/"><img src="/logo.png" alt="Aponar Nihon">APONAR NIHON</a><div class="spacer"></div><a class="home" href="/" aria-label="হোম"><i class="fa-solid fa-house"></i></a></div></header>

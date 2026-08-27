@@ -339,7 +339,7 @@
        }
    </style>
 
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/ssw-job.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -354,9 +354,14 @@
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/ssw-job">
 </head>
 <body>
 

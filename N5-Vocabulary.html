@@ -46,7 +46,7 @@
     @media (min-width:768px) { .overview-grid{grid-template-columns:1.3fr .7fr;} .lessons-grid,.kanji-grid{grid-template-columns:repeat(2,minmax(0,1fr));} .detail-grid{grid-template-columns:1fr 1fr;} }
     @media (min-width:1100px) { .lessons-grid,.kanji-grid{grid-template-columns:repeat(3,minmax(0,1fr));} } @media (max-width:767px) { .nav-container{flex-direction:column; align-items:stretch;} .nav-actions{justify-content:space-between;} .hero{padding-top:72px;} .stats-grid{grid-template-columns:1fr;} .lesson-head{align-items:flex-start; flex-direction:column;} .lesson-actions,.page-nav{flex-direction:column;} .lesson-btn,.ghost-btn,.btn{width:100%; justify-content:center;} }
 </style>
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/N5-Vocabulary.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -61,9 +61,14 @@
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/N5-Vocabulary">
 </head><body><nav class="navbar" aria-label="প্রধান নেভিগেশন"><div class="nav-container"><a class="logo" href="../../index.html"><span class="logo-mark"><i class="fa-solid fa-torii-gate"></i></span><span>আপনার নিহোন</span></a><div class="nav-actions"><a class="nav-link" href="../../index.html">Home</a><a class="nav-link" href="../../n5/vocabulary/index.html">N5</a><a class="nav-link" href="../../n4/vocabulary/index.html">N4</a></div></div></nav><header class="hero"><div class="hero-content"><div class="hero-label"><i class="fa-solid fa-book-open"></i> Structured HTML Learning</div><h1><span>N5 Vocabulary</span></h1><p>N5 Vocabulary এর serial lesson list. প্রতিটি page SEO-friendly, mobile-friendly, and PDF-free.</p><div class="hero-badges"><span class="badge"><i class="fa-solid fa-mobile-screen"></i> মোবাইল-ফ্রেন্ডলি</span><span class="badge"><i class="fa-solid fa-magnifying-glass"></i> সার্চ রেডি</span><span class="badge"><i class="fa-solid fa-chart-line"></i> প্রগ্রেস ট্র্যাকিং</span></div></div></header><main class="content-section"><div class="container"><div class="breadcrumb-wrap"><ol class="breadcrumb"><li><a href="../../index.html">Home</a></li><li><i class="fa-solid fa-angle-right"></i></li><li><a href="../vocabulary/index.html">N5</a></li><li><i class="fa-solid fa-angle-right"></i></li><li class="current">Vocabulary</li></ol></div><section class="overview-grid"><article class="guide-card"><h3><i class="fa-solid fa-compass"></i> N5 Vocabulary Overview</h3><p>N5 Vocabulary এর সব lessons/entries এখানে serial order-এ সাজানো আছে। Homepage design language বজায় রেখে PDF-based system থেকে HTML-based learning page-এ migrate করা হয়েছে।</p></article><div class="stats-grid"><article class="stat-card"><strong>25</strong><span>Total Pages</span></article><article class="stat-card"><strong>N5</strong><span>JLPT Level</span></article></div></section><section class="search-card"><h3><i class="fa-solid fa-magnifying-glass"></i> Search Vocabulary</h3><p>Lesson number বা topic লিখে দ্রুত filter করুন।</p><div class="search-box"><i class="fa-solid fa-search"></i><input type="search" placeholder="Lesson 1, Kanji 5, topic..." data-lesson-search></div></section><section><div class="section-header"><div class="section-label"><i class="fa-solid fa-list"></i> Lesson List</div><h2>N5 Vocabulary Lessons</h2><p>একটি lesson/card এ ক্লিক করলে detail page খুলবে।</p></div><div class="lessons-grid"><!-- Lesson 1 (already Vocabulary-lesson1.html, kept unchanged) -->
 <article class="lesson-card" data-search-item="N5 Vocabulary lesson 1"><div class="lesson-head"><div class="lesson-number">1</div><div class="lesson-status"><i class="fa-solid fa-bolt"></i> HTML Ready</div></div><div class="lesson-content"><h3>N5 Vocabulary Lesson 1</h3><p>N5 Vocabulary এর structured lesson page. PDF এর বদলে student-friendly HTML format.</p><div class="lesson-meta"><span><i class="fa-solid fa-layer-group"></i> ১২+ শব্দ</span><span><i class="fa-solid fa-mobile-screen"></i> Responsive</span></div><div class="lesson-actions"><a class="lesson-btn" href="Vocabulary-lesson1.html"><i class="fa-solid fa-arrow-right"></i> Open Page</a></div></div></article>
 <!-- Lesson 2 to 25: href updated from lesson-X.html to Vocabulary-lessonX.html -->

@@ -16,7 +16,7 @@
 @media(min-width:680px){.options{grid-template-columns:1fr 1fr}.question-card{padding:19px}.sheet{place-items:center}.sheet-card{border-radius:28px}}@media(max-width:560px){.part-step{gap:4px;padding:7px 4px;font-size:.57rem}.part-preview{gap:6px}.preview-item{padding:10px 5px}.score-grid{grid-template-columns:1fr 1fr}.score-card:last-child{grid-column:1/-1}.answer-line{grid-template-columns:1fr}.review-headline{align-items:flex-start;flex-direction:column}}@media(max-width:370px){.timer{min-width:70px;padding:8px 6px;font-size:.76rem}.top-row{grid-template-columns:40px minmax(0,1fr) auto}.icon-button{width:40px;height:40px}.bottom-dock{grid-template-columns:1fr}.dock-progress{display:none}.submit-part{width:100%}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}@media print{.exam-top,.bottom-dock,.result-nav,.result-actions,.review-filter{display:none!important}.result-view{padding:0}.result-hero,.score-card,.review-item{box-shadow:none}}
 </style>
 
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/jlpt-exam.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -31,9 +31,14 @@
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/jlpt-exam">
 </head>
 <body>
 <main class="start-view" id="startView"><div class="start-shell"><div class="start-top"><a class="back-link" id="introBack" href="mock-test.html" aria-label="টেস্ট তালিকায় ফিরুন">←</a><div class="mini-brand"><span>日</span> আপনার নিহোন</div><span style="width:44px"></span></div><section class="start-card"><div class="start-hero" id="startHero"><span class="level-pill" id="levelPill">JLPT</span><h1 id="introTitle">Mock Test</h1><p>একটি পার্টের সব প্রশ্ন নিচে দেখুন। পার্ট জমা দেওয়ার পর পরবর্তী পার্ট খুলবে।</p></div><div class="start-body"><div class="part-preview" id="partPreview"></div><div class="source-note"><strong id="sourceLabel">Reference:</strong> <span id="sourceText">JLPT structure</span></div><span class="section-label">পরীক্ষার সময় নির্বাচন</span><div class="mode-row"><label class="mode-option"><input type="radio" name="mode" value="full" checked><span id="realTimeLabel">Real Time</span></label><label class="mode-option"><input type="radio" name="mode" value="practice"><span>Practice · দ্রুত</span></label></div><div class="sound-row"><button type="button" id="soundCheckBtn">🔊 Sound Check</button><div class="sound-copy"><strong>লিসেনিংয়ের আগে শব্দ পরীক্ষা করুন</strong><small id="soundStatus">Japanese voice শোনা গেলে প্রস্তুত</small></div></div><div class="start-actions"><button class="primary-button" type="button" id="startBtn">পরীক্ষা শুরু করুন →</button><button class="secondary-button hidden" type="button" id="resumeBtn">আগের জায়গা থেকে চালিয়ে যান</button><button class="danger-button hidden" type="button" id="restartBtn">নতুন করে শুরু করুন</button></div></div></section></div></main>

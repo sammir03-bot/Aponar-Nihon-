@@ -26,7 +26,7 @@
 <link rel="stylesheet" href="/cv-parttime-v2.css?v=2">
 <link rel="stylesheet" href="/cv-jis-format.css?v=1">
 
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/cv-builder.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -41,9 +41,14 @@
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/cv-builder">
 </head>
 <body>
 <header class="top"><div class="wrap topin"><a class="brand" href="/"><img src="/logo.png" alt="Aponar Nihon"><b>APONAR NIHON</b></a><div class="top-actions"><a class="topbtn" href="/"><i class="fa-solid fa-house"></i> <span>হোম</span></a></div></div></header>
