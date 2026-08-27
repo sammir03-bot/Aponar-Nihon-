@@ -10,7 +10,7 @@
   });
 
   const clean=v=>typeof v==='string'?v.trim():v;
-  const PROD_ORIGIN='https://aponar-nihon.eu.cc';
+  const PROD_ORIGIN='https://app.aponar-nihon.workers.dev';
   const appOrigin=()=>{
     const host=(location.hostname||'').toLowerCase();
     if(host==='localhost'||host==='127.0.0.1'||host==='0.0.0.0'||host==='[::1]') return PROD_ORIGIN;
