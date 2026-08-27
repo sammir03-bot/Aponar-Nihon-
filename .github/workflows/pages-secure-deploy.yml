@@ -36,31 +36,102 @@ jobs:
       - name: Build and verify static site
         run: npm run verify
 
-      - name: Preserve legacy GitHub Pages custom-domain metadata
-        run: printf '%s\n' 'aponar-nihon.eu.cc' > _site/CNAME
-
-      - name: Publish restricted Google Maps browser key
-        env:
-          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
+      - name: Convert GitHub Pages to legacy redirects
         run: |
-          test -n "$GOOGLE_MAPS_API_KEY" || { echo "GOOGLE_MAPS_API_KEY secret is missing"; exit 1; }
           python3 - <<'PY'
-          import json, os, pathlib
-          from urllib.parse import urlparse, parse_qs
+          from pathlib import Path
+          from urllib.parse import quote
+          import html
 
-          raw = os.environ['GOOGLE_MAPS_API_KEY'].strip()
-          key = raw
-          if raw.startswith(('http://', 'https://')):
-              key = parse_qs(urlparse(raw).query).get('key', [''])[0].strip()
+          root = Path('_site')
+          production = 'https://app.aponar-nihon.workers.dev'
 
-          if not key.startswith('AIza'):
-              raise SystemExit('GOOGLE_MAPS_API_KEY must be a Google Maps browser key or a Maps JS URL containing ?key=...')
+          def clean_target(page: Path) -> str:
+              rel = page.relative_to(root).as_posix()
+              if rel == 'index.html':
+                  path = '/'
+              elif rel.endswith('/index.html'):
+                  path = '/' + rel[:-len('index.html')]
+              elif rel.endswith('.html'):
+                  path = '/' + rel[:-5]
+              else:
+                  path = '/' + rel
+              return production + quote(path, safe='/-._~')
 
-          pathlib.Path('_site/google-maps-config.js').write_text(
-              'window.AN_GOOGLE_MAPS_KEY = ' + json.dumps(key) + ';\n',
-              encoding='utf-8'
+          def redirect_document(target: str) -> str:
+              escaped = html.escape(target, quote=True)
+              js_target = target.replace('\\', '\\\\').replace('"', '\\"')
+              return f'''<!doctype html>
+          <html lang="bn">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>Aponar Nihon moved</title>
+            <link rel="canonical" href="{escaped}">
+            <meta http-equiv="refresh" content="0; url={escaped}">
+            <script>location.replace("{js_target}" + location.search + location.hash);</script>
+          </head>
+          <body>
+            <p>Aponar Nihon নতুন ঠিকানায় চলে গেছে।</p>
+            <p><a href="{escaped}">নতুন সাইট খুলুন</a></p>
+          </body>
+          </html>
+          '''
+
+          for page in root.rglob('*.html'):
+              if page.name == '404.html' and page.parent == root:
+                  continue
+              page.write_text(redirect_document(clean_target(page)), encoding='utf-8')
+
+          # Unknown legacy paths also follow the same path on the Workers origin.
+          (root / '404.html').write_text('''<!doctype html>
+          <html lang="bn">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>Aponar Nihon moved</title>
+            <link rel="canonical" href="https://app.aponar-nihon.workers.dev/">
+            <meta http-equiv="refresh" content="0; url=https://app.aponar-nihon.workers.dev/">
+            <script>
+            (function(){
+              var p = location.pathname || '/';
+              var bases = ['/Aponar-Nihon-', '/Aponar-Nihon'];
+              for (var i = 0; i < bases.length; i++) {
+                var base = bases[i];
+                if (p === base || p === base + '/') { p = '/'; break; }
+                if (p.indexOf(base + '/') === 0) { p = p.slice(base.length) || '/'; break; }
+              }
+              if (p === '/index.html') p = '/';
+              else if (p.endsWith('/index.html')) p = p.slice(0, -10);
+              else if (p.endsWith('.html')) p = p.slice(0, -5);
+              location.replace('https://app.aponar-nihon.workers.dev' + p + location.search + location.hash);
+            })();
+            </script>
+          </head>
+          <body>
+            <p>Aponar Nihon নতুন ঠিকানায় চলে গেছে।</p>
+            <p><a href="https://app.aponar-nihon.workers.dev/">নতুন সাইট খুলুন</a></p>
+          </body>
+          </html>
+          ''', encoding='utf-8')
+
+          (root / 'robots.txt').write_text(
+              'User-agent: *\nAllow: /\nSitemap: https://app.aponar-nihon.workers.dev/sitemap.xml\n',
+              encoding='utf-8',
           )
+
+          # Do not publish the former custom-domain CNAME from the legacy artifact.
+          cname = root / 'CNAME'
+          if cname.exists():
+              cname.unlink()
           PY
+
+      - name: Verify legacy redirect output
+        run: |
+          grep -F 'https://app.aponar-nihon.workers.dev/' _site/index.html
+          grep -F 'http-equiv="refresh"' _site/index.html
+          grep -F 'location.replace' _site/index.html
+          test ! -e _site/CNAME
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
