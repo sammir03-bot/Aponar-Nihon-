@@ -128,7 +128,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n5-vocab-lesson-03-real.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -143,9 +143,14 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n5-vocab-lesson-03-real">
 </head>
 <body>
   <nav class="nav">

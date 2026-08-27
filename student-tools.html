@@ -17,7 +17,7 @@
 </style>
 <link rel="stylesheet" href="/student-time-manager.css?v=1">
 
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/student-tools.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -32,9 +32,14 @@
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/student-tools">
 </head>
 <body>
 <header class="top"><div class="wrap nav"><a class="brand" href="index.html"><img src="/logo.png" alt="আপনার নিহোন"><span><strong>আপনার নিহোন</strong><small>STUDENT POWER TOOLS</small></span></a><div class="spacer"></div><a class="home" href="index.html">← হোম</a></div></header>

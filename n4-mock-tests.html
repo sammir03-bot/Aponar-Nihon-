@@ -1,5 +1,5 @@
 <!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="description" content="JLPT N4 এর ১০টি পূর্ণাঙ্গ বাংলা mock test, listening, timer ও marksheet।"><meta name="theme-color" content="#173152"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"><link rel="stylesheet" href="mock-level-hub.css">
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n4-mock-tests.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -14,7 +14,12 @@
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n4-mock-tests">
 </head><body data-level="n4"><header class="topbar"><div class="wrap topbar-inner"><a class="brand" href="index.html"><img src="logo.png" alt="আপনার নিহোন"><span><strong>আপনার নিহোন</strong><small>Japanese Learning Hub</small></span></a><a class="back" href="mock-test.html"><i class="fa-solid fa-arrow-left"></i><span>সব লেভেল</span></a></div></header><section class="hero"><div class="wrap hero-inner"><div class="eyebrow"><i class="fa-solid fa-graduation-cap"></i> <span id="levelName">JLPT</span> · <span id="levelSub"></span></div><h1 id="heroTitle">Mock Test</h1><p id="heroDesc"></p><div class="hero-pills"><span class="hero-pill" id="timePill"></span><span class="hero-pill" id="passPill"></span><span class="hero-pill">অটো-সেভ + Resume</span></div></div></section><main class="section"><div class="wrap"><div class="section-head"><span><i class="fa-solid fa-clipboard-list"></i> টেস্ট নির্বাচন</span><h2>Mock Test 01–10</h2><p><span id="levelJp"></span> · বর্তমান JLPT timing অনুযায়ী full practice।</p></div><div class="exam-grid" id="examGrid"></div><div class="notice"><i class="fa-solid fa-circle-info"></i><div><strong>এই level-এর reference</strong><p id="sourceNote"></p></div></div></div></main><footer class="footer">© ২০২৬ আপনার নিহোন · JLPT Mock Center</footer><nav class="bottom-nav"><a href="index.html"><i class="fa-solid fa-house"></i>হোম</a><a href="mock-test.html"><i class="fa-solid fa-layer-group"></i>লেভেল</a><a class="active" id="activeLevel" href="#"><i class="fa-solid fa-file-lines"></i>N4</a><a href="index.html#quiz"><i class="fa-solid fa-circle-question"></i>কুইজ</a><a href="index.html#guide"><i class="fa-solid fa-compass"></i>গাইড</a></nav><script src="mock-level-hub.js?v=20260808"></script></body></html>

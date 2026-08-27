@@ -17,7 +17,7 @@
     [hidden]{display:none!important}@media(max-width:930px){.study-note{grid-template-columns:1fr 1fr}.note-main{grid-column:1/-1}.control-grid{grid-template-columns:1fr 1fr auto auto}.search{grid-column:1/-1}.control-grid .tool-btn:last-child{display:none}.vocab-list{grid-template-columns:1fr}.vocab-row{border-right:0!important}.vocab-row:nth-child(2){border-top:1px solid #edf0f5}.site-links a:first-child{display:none}}@media(max-width:650px){html{scroll-padding-top:210px}.brand-shell{padding:11px 12px}.brand-copy small{display:none}.site-links a{padding:7px 8px;font-size:.7rem}.hero-inner{padding:28px 14px 32px}.hero-inner:after{right:0;font-size:6.8rem}.hero-copy{font-size:.88rem}.toolbar{padding:9px}.control-grid{grid-template-columns:1fr 1fr}.control-grid select{grid-column:1/-1}.tool-btn{padding:7px 6px;font-size:.76rem}.progress-line{flex-wrap:wrap}.result-count{width:100%;margin-left:0}.study-note{grid-template-columns:1fr}.note-main{grid-column:auto}main{padding:16px 10px 60px}.week-heading h2 span{display:block;margin:2px 0 0}.lesson-card,.exam-card{padding:13px;border-radius:19px}.lesson-num,.exam-icon{width:49px;height:49px;flex-basis:49px;border-radius:14px}.card-head{gap:9px;align-items:flex-start}.lesson-title h3{font-size:1.05rem}.done-label{padding:6px}.done-label span{display:none}.memory-tip>p{display:block;margin:3px 0 0}.vocab-row{grid-template-columns:28px 1fr auto;gap:7px}.word-bn{grid-column:2/-1}.options{grid-template-columns:1fr}.exam-group>summary{display:grid}.questions{padding:3px 10px 10px}.exam-actions{bottom:5px;flex-wrap:wrap}.score{width:100%;margin-left:0}.submit-exam,.reset-exam{flex:1}.site-links a:last-child{display:none}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}@media print{.hero,.toolbar-shell,.study-note,.done-label,.memory-tip,.back-part,.exam-actions,.skip{display:none!important}body{background:#fff;color:#111}.week{break-before:page}.lesson-card,.exam-card{box-shadow:none;break-inside:avoid}.answer-note{display:grid}.exam-group{break-inside:avoid}}
   </style>
 
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n3-vocabulary-content.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -32,9 +32,14 @@
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n3-vocabulary-content">
 </head>
 <body>
   <a class="skip" href="#study-content">Lesson-এ যান</a>

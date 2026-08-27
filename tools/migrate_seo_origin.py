@@ -30,7 +30,7 @@ ROBOTS_RE = re.compile(
     r"<meta\b(?=[^>]*\bname\s*=\s*[\"']robots[\"'])[^>]*>", re.I
 )
 REDIRECT_MARKER = "legacy-origin-redirect"
-REDIRECT_SCRIPT = f'''<script id="{REDIRECT_MARKER}">\n(function(){{\n  var h = location.hostname;\n  if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;\n  var p = location.pathname || "/";\n  if (h === "sammir03-bot.github.io") {{\n    var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];\n    for (var i = 0; i < bases.length; i++) {{\n      var base = bases[i];\n      if (p === base || p === base + "/") {{ p = "/"; break; }}\n      if (p.indexOf(base + "/") === 0) {{ p = p.slice(base.length) || "/"; break; }}\n    }}\n  }}\n  location.replace("{PRODUCTION_ORIGIN}" + p + location.search + location.hash);\n}})();\n</script>'''
+REDIRECT_SCRIPT = f'''<script id="{REDIRECT_MARKER}">\n(function(){{\n  var h = location.hostname;\n  if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;\n  var p = location.pathname || "/";\n  if (h === "sammir03-bot.github.io") {{\n    var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];\n    for (var i = 0; i < bases.length; i++) {{\n      var base = bases[i];\n      if (p === base || p === base + "/") {{ p = "/"; break; }}\n      if (p.indexOf(base + "/") === 0) {{ p = p.slice(base.length) || "/"; break; }}\n    }}\n  }}\n  if (p === "/index.html") p = "/";\n  else if (p.endsWith("/index.html")) p = p.slice(0, -10);\n  else if (p.endsWith(".html")) p = p.slice(0, -5);\n  location.replace("{PRODUCTION_ORIGIN}" + p + location.search + location.hash);\n}})();\n</script>'''
 
 
 def is_public_path(path: Path) -> bool:
@@ -47,11 +47,19 @@ def should_index(path: Path) -> bool:
     return True
 
 
-def url_for(path: Path) -> str:
+def clean_public_path(path: Path) -> str:
     rel = path.relative_to(ROOT).as_posix()
     if rel == "index.html":
-        return PRODUCTION_ORIGIN + "/"
-    return PRODUCTION_ORIGIN + "/" + quote(rel, safe="/-._~")
+        return "/"
+    if rel.endswith("/index.html"):
+        rel = rel[: -len("index.html")]
+    elif rel.endswith(".html"):
+        rel = rel[:-5]
+    return "/" + quote(rel, safe="/-._~")
+
+
+def url_for(path: Path) -> str:
+    return PRODUCTION_ORIGIN + clean_public_path(path)
 
 
 def inject_before_head_close(text: str, snippet: str) -> str:
@@ -71,6 +79,25 @@ def rewrite_legacy_origins(text: str) -> tuple[str, int]:
     return text, count
 
 
+def improve_home_semantics(path: Path, text: str) -> tuple[str, bool]:
+    if path.relative_to(ROOT).as_posix() != "index.html":
+        return text, False
+    original = text
+    text = re.sub(
+        r'<span class="logo-center-text">(.*?)</span>',
+        r'<h1 class="logo-center-text">\1</h1>',
+        text,
+        count=1,
+        flags=re.DOTALL,
+    )
+    text = text.replace(
+        '<img src="logo.png" alt="" class="logo-img app-classic-logo-img"',
+        '<img src="logo.png" alt="আপনার নিহোন লোগো" class="logo-img app-classic-logo-img"',
+        1,
+    )
+    return text, text != original
+
+
 def canonicalize_html(path: Path, text: str) -> tuple[str, bool, bool]:
     changed_canonical = False
     changed_redirect = False
@@ -78,24 +105,31 @@ def canonicalize_html(path: Path, text: str) -> tuple[str, bool, bool]:
     if should_index(path):
         tag = f'<link rel="canonical" href="{url_for(path)}">'
         without = CANONICAL_RE.sub("", text)
-        text = inject_before_head_close(without, tag)
-        changed_canonical = text != without or bool(CANONICAL_RE.search(text))
+        updated = inject_before_head_close(without, tag)
+        changed_canonical = updated != text
+        text = updated
     else:
         if not ROBOTS_RE.search(text):
             updated = inject_before_head_close(text, '<meta name="robots" content="noindex,nofollow">')
             changed_canonical = updated != text
             text = updated
 
-    if REDIRECT_MARKER not in text:
+    redirect_re = re.compile(
+        rf'<script\s+id=["\']{re.escape(REDIRECT_MARKER)}["\']>.*?</script>',
+        re.I | re.S,
+    )
+    if redirect_re.search(text):
+        updated = redirect_re.sub(REDIRECT_SCRIPT, text, count=1)
+    else:
         updated = inject_before_head_close(text, REDIRECT_SCRIPT)
-        changed_redirect = updated != text
-        text = updated
+    changed_redirect = updated != text
+    text = updated
 
     return text, changed_canonical, changed_redirect
 
 
-def rewrite_public_files() -> tuple[int, int, int, int]:
-    changed_files = replacements = canonical_pages = redirect_pages = 0
+def rewrite_public_files() -> tuple[int, int, int, int, int]:
+    changed_files = replacements = canonical_pages = redirect_pages = semantic_pages = 0
     for path in sorted(ROOT.rglob("*")):
         if not path.is_file() or not is_public_path(path) or path.suffix.lower() not in TEXT_SUFFIXES:
             continue
@@ -106,16 +140,18 @@ def rewrite_public_files() -> tuple[int, int, int, int]:
         updated, count = rewrite_legacy_origins(original)
         replacements += count
         if path.suffix.lower() == ".html":
-            before = updated
+            updated, semantic_changed = improve_home_semantics(path, updated)
+            if semantic_changed:
+                semantic_pages += 1
             updated, canonical_changed, redirect_changed = canonicalize_html(path, updated)
-            if canonical_changed and updated != before:
+            if canonical_changed:
                 canonical_pages += 1
             if redirect_changed:
                 redirect_pages += 1
         if updated != original:
             path.write_text(updated, encoding="utf-8", newline="\n")
             changed_files += 1
-    return changed_files, replacements, canonical_pages, redirect_pages
+    return changed_files, replacements, canonical_pages, redirect_pages, semantic_pages
 
 
 def rebuild_sitemap() -> int:
@@ -139,7 +175,7 @@ def rebuild_robots() -> None:
 
 
 def main() -> int:
-    changed, replacements, canonicals, redirects = rewrite_public_files()
+    changed, replacements, canonicals, redirects, semantics = rewrite_public_files()
     sitemap_count = rebuild_sitemap()
     rebuild_robots()
     cname = ROOT / "CNAME"
@@ -149,7 +185,8 @@ def main() -> int:
     print(f"Changed public files: {changed}")
     print(f"Legacy origin replacements: {replacements}")
     print(f"Canonical pages updated: {canonicals}")
-    print(f"Legacy-host redirect pages injected: {redirects}")
+    print(f"Legacy-host redirect pages updated: {redirects}")
+    print(f"Homepage semantic pages updated: {semantics}")
     print(f"Sitemap URLs: {sitemap_count}")
     return 0
 

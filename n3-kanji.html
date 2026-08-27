@@ -17,7 +17,7 @@
     [hidden]{display:none!important}@keyframes flash{0%,100%{box-shadow:none}30%{border-color:var(--acid);box-shadow:0 0 0 5px rgba(201,255,85,.28),0 18px 40px rgba(25,36,64,.15)}}@media(max-width:1040px){.control-grid{grid-template-columns:1fr 1fr repeat(4,auto)}.search{grid-column:1/-1}.control-grid .print-btn{display:none}.hero-grid{grid-template-columns:1fr minmax(260px,.48fr)}.method-strip{grid-template-columns:1fr 1fr}.method-main{grid-column:1/-1}}@media(max-width:820px){.hero-grid{grid-template-columns:1fr}.hero-art{display:none}.kanji-grid{grid-template-columns:1fr}.site-links a:first-child{display:none}}@media(max-width:650px){html{scroll-padding-top:18px}.topbar{padding:11px 12px}.brand-copy small{display:none}.site-links a{padding:7px 8px;font-size:.68rem}.site-links a:last-child{display:none}.hero-grid{padding:28px 14px 32px}.hero-copy{font-size:.86rem}.command{padding:9px}.control-grid{grid-template-columns:1fr 1fr}.control-grid select{grid-column:1/-1}.tool-btn{padding:7px 6px;font-size:.72rem}.random-btn{display:none}.progress-line{flex-wrap:wrap}.result-count{width:100%;margin-left:0}.method-strip{grid-template-columns:1fr}.method-main{grid-column:auto}main{padding:16px 10px 60px}.week-heading h2 span{display:block;margin:2px 0 0}.lesson-card,.exam-card{padding:13px;border-radius:19px}.lesson-id,.exam-mark{width:49px;height:49px;flex-basis:49px;border-radius:14px}.lesson-head,.exam-head{align-items:flex-start;gap:9px}.lesson-title h3,.exam-title h3{font-size:1.04rem}.done-label{padding:6px}.done-label>span:last-child{display:none}.memory-lane{grid-template-columns:1fr}.anchor-list{grid-template-columns:1fr}.cluster-head{grid-template-columns:74px 1fr}.glyph-box strong{font-size:1.9rem}.word-row{grid-template-columns:1fr;gap:1px}.word-jp{font-size:1.02rem}.options{grid-template-columns:1fr}.exam-rule{display:grid}.exam-group>summary{display:grid}.questions{padding:3px 10px 10px}.exam-actions{bottom:5px;flex-wrap:wrap}.submit-exam,.reset-exam{flex:1}.score{width:100%;margin-left:0}}@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}@media print{.hero,.command-shell,.method-strip,.done-label,.memory-lane,.back-part,.exam-actions,.skip{display:none!important}body{background:#fff;color:#111}.week{break-before:page}.lesson-card,.exam-card{box-shadow:none;break-inside:avoid}.answer-note{display:grid}.exam-group{break-inside:avoid}}
   </style>
 
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n3-kanji.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -32,9 +32,14 @@
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n3-kanji">
 </head>
 <body>
   <a class="skip" href="#study-content">Lesson-এ যান</a>

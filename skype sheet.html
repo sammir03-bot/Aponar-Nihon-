@@ -1,5 +1,5 @@
 <!doctype html><html lang="bn"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#173152"><title>Skype Interview — 250 Q&A | আপনার নিহোন</title><meta name="description" content="Skype interview-এর ২৫০টি Japanese প্রশ্নোত্তর—Romaji, বাংলা, voice, search, copy ও random practice।"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/interview-premium.css?v=20260808">
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/skype%20sheet.html">
+
 
 <script id="legacy-origin-redirect">
 (function(){
@@ -14,7 +14,12 @@
       if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
     }
   }
+  if (p === "/index.html") p = "/";
+  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+  else if (p.endsWith(".html")) p = p.slice(0, -5);
   location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
 })();
 </script>
+
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/skype%20sheet">
 </head><body data-mode="skype" data-archive="archive/skype-sheet-legacy.html"><header class="topbar"><div class="wrap topin"><a class="back" href="index.html#interview" aria-label="ফিরে যান">←</a><div class="brand"><b>আপনার নিহোন · Skype Interview</b><small>Japanese + Romaji + বাংলা</small></div><button class="top-action" id="printBtn">🖨 Print</button></div></header><section class="hero skype"><div class="wrap hero-inner"><span class="eyebrow">🎥 SKYPE INTERVIEW MASTER</span><h1>২৫০টি প্রশ্ন ও উত্তর</h1><p>প্রতিটি প্রশ্নে Japanese, answer, Romaji এবং বাংলা—একসাথে। Japanese voice শুনুন, copy করুন, search/filter করুন এবং random প্রশ্নে live interview-এর মতো practice করুন।</p><div class="hero-stats"><span>250 Q&A</span><span>Romaji Included</span><span>বাংলা Meaning</span><span>Voice Practice</span><span>Auto Search</span></div></div></section><section class="controls"><div class="wrap"><div class="control-row"><label class="search"><input id="searchInput" type="search" placeholder="Japanese, Romaji বা বাংলা দিয়ে খুঁজুন…" autocomplete="off"></label><select class="select" id="sortSelect" aria-label="Sort"><option value="asc">১ → ২৫০</option><option value="desc">২৫০ → ১</option></select></div><div class="chips" id="chips"></div></div></section><main class="main"><div class="wrap"><div class="notice"><span>🎧</span><div><b>Romaji + Speaking Practice</b>প্রথমে Japanese line দেখুন, তারপর Romaji দিয়ে pronunciation মিলিয়ে নিন। শেষে বাংলা না দেখে নিজের answer বলুন। Romaji automatic reading support—furigana/কানা থাকা লাইনে সবচেয়ে নির্ভুল কাজ করে।</div></div><div class="results-bar"><span id="resultCount">প্রশ্ন লোড হচ্ছে…</span><span>🔊 Japanese voice · ⧉ Copy</span></div><div id="loading" class="empty">২৫০টি প্রশ্ন ও Romaji প্রস্তুত করা হচ্ছে…</div><section class="qa-list" id="qaList"></section><section class="practice-panel"><h2>🎤 Real Interview Drill</h2><p>Random Question চাপুন → প্রশ্ন শুনুন → ৫ সেকেন্ড ভেবে Japanese-এ উত্তর দিন → তারপর card-এর answer/Romaji/বাংলা মিলিয়ে দেখুন।</p><div class="practice-actions"><button id="randomBtn">Random Question</button><a href="embassy-interview.html">Embassy Interview</a></div></section></div></main><footer class="footer">© 2026 আপনার নিহোন · Skype Interview Practice</footer><button class="fab" id="topBtn" aria-label="উপরে যান">↑</button><div class="toast" id="toast"></div><script src="assets/js/interview-reader.js?v=20260808"></script></body></html>
