@@ -33,9 +33,10 @@ jobs:
           test ! -f CNAME
           grep -q 'https://app.aponar-nihon.workers.dev/sitemap.xml' robots.txt
           grep -q 'https://app.aponar-nihon.workers.dev/' sitemap.xml
+          grep -q '<link rel="canonical" href="https://app.aponar-nihon.workers.dev/">' index.html
+          grep -q 'legacy-origin-redirect' index.html
           ! grep -R --include='*.html' --include='*.xml' --include='*.json' --include='*.txt' --include='*.webmanifest' 'https://aponar-nihon.eu.cc' . \
             --exclude-dir=.git --exclude-dir=.github --exclude-dir=_site --exclude-dir=tools --exclude-dir=android --exclude-dir=play-store --exclude-dir=node_modules
-          git diff --check
 
       - name: Commit migration
         run: |
