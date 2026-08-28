@@ -191,14 +191,12 @@ async function parseTutorRequest(request: Request): Promise<TutorRequest> {
 }
 
 function interactionInput(history: TutorHistoryItem[], message: string): string {
-  if (!history.length) return message;
-
   const transcript = history.map((item) => {
     const speaker = item.role === "bot" ? "টিউটর" : "শিক্ষার্থী";
     return `${speaker}: ${item.text}`;
   });
   transcript.push(`শিক্ষার্থী: ${message}`);
-  return `আগের কথোপকথনটি শুধু প্রাসঙ্গিক context হিসেবে ব্যবহার করুন। শেষ শিক্ষার্থীর প্রশ্নের উত্তর দিন।\n\n${transcript.join("\n\n")}`;
+  return `${SYSTEM_INSTRUCTION}\n\n--- Learner conversation ---\nআগের কথোপকথনটি শুধু প্রাসঙ্গিক context হিসেবে ব্যবহার করুন। শেষ শিক্ষার্থীর প্রশ্নের উত্তর দিন।\n\n${transcript.join("\n\n")}`;
 }
 
 function extractInteractionText(value: unknown): string | null {
@@ -233,12 +231,7 @@ async function callGemini(env: Env, tutorRequest: TutorRequest): Promise<string>
     },
     body: JSON.stringify({
       model,
-      system_instruction: SYSTEM_INSTRUCTION,
-      input: interactionInput(tutorRequest.history, tutorRequest.message),
-      store: false,
-      generation_config: {
-        max_output_tokens: 1_800
-      }
+      input: interactionInput(tutorRequest.history, tutorRequest.message)
     }),
     signal: AbortSignal.timeout(45_000)
   });
