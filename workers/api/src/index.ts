@@ -20,7 +20,7 @@ type TutorModelReply = {
 const DEFAULT_ORIGIN = "https://app.aponar-nihon.workers.dev";
 const DEFAULT_MODEL = "gemini-flash-latest";
 const GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions";
-const PRIMARY_WORKERS_AI_MODEL = "@cf/google/gemma-4-26b-a4b-it";
+const PRIMARY_WORKERS_AI_MODEL = "@cf/qwen/qwen3.8-27b";
 const SECONDARY_WORKERS_AI_MODEL = "@cf/openai/gpt-oss-120b";
 const MAX_REQUEST_BYTES = 32_768;
 const MAX_MESSAGE_CHARS = 6_000;
@@ -336,8 +336,9 @@ async function callWorkersAI(
 
   const input = {
     messages,
-    max_completion_tokens: 2_800,
+    max_completion_tokens: 4_200,
     reasoning_effort: "low" as const,
+    chat_template_kwargs: { enable_thinking: false },
     temperature: 0.1
   };
   const options = { signal: AbortSignal.timeout(55_000) };
