@@ -17,11 +17,24 @@ type TutorModelReply = {
   provider: "gemini" | "workers-ai";
 };
 
+type N3MatomeRule = [
+  number,
+  number,
+  number,
+  string,
+  string,
+  string,
+  string,
+  string,
+  string
+];
+
 const DEFAULT_ORIGIN = "https://app.aponar-nihon.workers.dev";
 const DEFAULT_MODEL = "gemini-flash-latest";
 const GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions";
-const PRIMARY_WORKERS_AI_MODEL = "@cf/qwen/qwen3.8-27b";
-const SECONDARY_WORKERS_AI_MODEL = "@cf/openai/gpt-oss-120b";
+const PRIMARY_WORKERS_AI_MODEL = "@cf/openai/gpt-oss-120b";
+const SECONDARY_WORKERS_AI_MODEL = "@cf/zai-org/glm-4.7-flash";
+const N3_MATOME_ASSET_URL = `${DEFAULT_ORIGIN}/assets/js/n3-matome-data.js`;
 const MAX_REQUEST_BYTES = 32_768;
 const MAX_MESSAGE_CHARS = 6_000;
 const MAX_HISTORY_ITEMS = 8;
@@ -45,7 +58,19 @@ Teaching rules:
 11. Before returning any grammar explanation, silently verify every formation row, Japanese example, reading, translation and “common mistake”. Omit a claim if you are not certain. Never label a valid polite form as ungrammatical. For example, the textbook-standard connections for 〜とは限らない are: verb plain form + とは限らない, i-adjective + とは限らない, na-adjective + だとは限らない, and noun + だとは限らない; 〜とは限りません is its valid polite form.
 12. Do not add romaji unless the learner explicitly requests romaji. Prefer correct, natural Japanese over word-for-word examples, and never end an answer mid-table or mid-sentence.
 13. For a detailed grammar comparison, finish every promised section within the available space. Use this order: one-line distinction, meaning and mental image, formation, natural examples, side-by-side difference, common mistakes, memory hook, then practice and answer. Avoid repeating the same point in multiple sections. If space is tight, shorten prose rather than dropping the comparison, memory hook, or practice answer.
-14. Japanese readings must use the word's real contextual reading, not an on-yomi guessed from an individual kanji. In particular: 限る（かぎる）, 限らない（かぎらない）, and 〜とは限らない（〜とはかぎらない）. Silently re-read all furigana once before sending.`;
+14. Japanese readings must use the word's real contextual reading, not an on-yomi guessed from an individual kanji. In particular: 限る（かぎる）, 限らない（かぎらない）, and 〜とは限らない（〜とはかぎらない）. Silently re-read all furigana once before sending.
+15. Never write a romaji reading, English transliteration line, or Korean translation unless the learner explicitly requests it. “Reading” means kana, not Latin letters. A request such as “romaji দেবেন না” must be followed exactly.
+16. 〜わけではない is usually a partial or contextual denial: it rejects an assumed interpretation, reason, or blanket conclusion (“it is not that…”), often while leaving part of the surrounding idea true. Do not teach it as simple 100% complete negation. Do not invent double-negative examples such as 上手ではないわけではない unless the learner specifically asks about double negatives.`;
+
+const WAKE_KAGIRANAI_REFERENCE = `Verified comparison reference — use these facts exactly and do not contradict them:
+- 〜わけではない: partial/contextual denial. It rejects an assumed interpretation or implication: “এমন নয় যে… / তার মানে এই নয় যে…”. It does not automatically deny the whole situation.
+  Formation: verb plain + わけではない; i-adjective plain + わけではない; present affirmative na-adjective + なわけではない; present affirmative noun + なわけではない. Past/negative plain forms change normally.
+  Natural examples: 日本料理が嫌いなわけではありません。ただ、納豆が苦手なんです。 / 忙しいですが、連絡する時間がないわけではありません。 / お金がほしいわけではなく、経験を積みたいんです。
+- 〜とは限らない（〜とはかぎらない）: denies universal certainty, not the whole claim: “সবসময়/অবশ্যই এমন নয়; exception আছে.”
+  Formation: verb plain + とは限らない; i-adjective plain + とは限らない; na-adjective + だとは限らない; noun + だとは限らない. 〜とは限りません is valid polite Japanese.
+  Natural examples: 高いものが必ずしもいいとは限りません。 / 日本人だからといって、日本語の文法を説明できるとは限りません。 / 有名な店がおいしいとは限りません。
+- One-line contrast: わけではない corrects a particular interpretation; とは限らない corrects an overgeneralization or 100% certainty. Neither pattern should be explained as ordinary complete negation.
+- Readings: 日本料理（にほんりょうり）, 嫌い（きらい）, 納豆（なっとう）, 苦手（にがて）, 忙しい（いそがしい）, 連絡（れんらく）, 経験（けいけん）, 積む（つむ）, 高い（たかい）, 必ずしも（かならずしも）, 限らない（かぎらない）, 日本人（にほんじん）, 文法（ぶんぽう）, 説明（せつめい）, 有名（ゆうめい）, 店（みせ）.`;
 
 class HttpError extends Error {
   readonly status: number;
@@ -299,6 +324,9 @@ function extractWorkersAIText(value: unknown): string | null {
   if (typeof value.output_text === "string" && value.output_text.trim()) {
     return value.output_text.trim();
   }
+  if (typeof value.response === "string" && value.response.trim()) {
+    return value.response.trim();
+  }
   if (!Array.isArray(value.choices)) return null;
 
   for (const choice of value.choices) {
@@ -311,18 +339,118 @@ function extractWorkersAIText(value: unknown): string | null {
   return null;
 }
 
-function workersAIMessages(tutorRequest: TutorRequest): Array<{
+function isN3MatomeRule(value: unknown): value is N3MatomeRule {
+  return Array.isArray(value)
+    && value.length === 9
+    && value.slice(0, 3).every((item) => typeof item === "number")
+    && value.slice(3).every((item) => typeof item === "string");
+}
+
+async function loadN3MatomeRules(env: Env): Promise<N3MatomeRule[]> {
+  try {
+    const response = await env.ASSETS.fetch(new Request(N3_MATOME_ASSET_URL));
+    if (!response.ok) return [];
+
+    const source = await readBoundedStream(response.body, 131_072);
+    const rules: N3MatomeRule[] = [];
+    for (const sourceLine of source.split("\n")) {
+      const line = sourceLine.trim().replace(/,$/, "");
+      if (!/^\[\d+,/.test(line) || !line.endsWith("]")) continue;
+      try {
+        const parsed: unknown = JSON.parse(line);
+        if (isN3MatomeRule(parsed)) rules.push(parsed);
+      } catch {
+        // Ignore one malformed content row instead of disabling the tutor.
+      }
+    }
+    return rules;
+  } catch (error) {
+    console.warn(JSON.stringify({
+      event: "tutor_reference_load_failed",
+      reason: error instanceof HttpError ? error.code : "asset_read_failed"
+    }));
+    return [];
+  }
+}
+
+function normalizeGrammarMatch(value: string): string {
+  return value.normalize("NFKC").replace(/[〜～\s]/g, "").toLowerCase();
+}
+
+function grammarTitleAliases(title: string): string[] {
+  const aliases = new Set<string>();
+  for (const part of title.split("／")) {
+    const normalized = normalizeGrammarMatch(part);
+    if (normalized.length >= 5) aliases.add(normalized);
+
+    const waveIndex = Math.max(part.lastIndexOf("〜"), part.lastIndexOf("～"));
+    if (waveIndex >= 0) {
+      const afterWave = normalizeGrammarMatch(part.slice(waveIndex + 1));
+      if (afterWave.length >= 5) aliases.add(afterWave);
+    }
+  }
+  return [...aliases];
+}
+
+async function n3GrammarReference(env: Env, message: string): Promise<string | null> {
+  const normalizedMessage = normalizeGrammarMatch(message);
+  const rules = await loadN3MatomeRules(env);
+  const matches = rules
+    .map((rule) => {
+      const score = Math.max(0, ...grammarTitleAliases(rule[3])
+        .filter((alias) => normalizedMessage.includes(alias))
+        .map((alias) => alias.length));
+      return { rule, score };
+    })
+    .filter((item) => item.score > 0)
+    .sort((a, b) => b.score - a.score || a.rule[0] - b.rule[0])
+    .slice(0, 3);
+
+  const hasWake = normalizedMessage.includes("わけではない");
+  const hasKagiranai = normalizedMessage.includes("とは限らない")
+    || normalizedMessage.includes("とは限りません");
+  if (!matches.length && !hasWake && !hasKagiranai) return null;
+
+  const sections = matches.map(({ rule }) => [
+    `Verified N3 Matome rule #${rule[0]}: ${rule[3]}`,
+    `Formation: ${rule[4]}`,
+    `Core meaning: ${rule[5]}`,
+    `Memory image: ${rule[6]}`,
+    `Verified example: ${rule[7]}`,
+    `Bangla meaning: ${rule[8]}`
+  ].join("\n"));
+  if (hasWake || hasKagiranai) sections.push(WAKE_KAGIRANAI_REFERENCE);
+
+  return `Aponar Nihon verified lesson references follow. Ground the answer in these references. Never contradict them, but explain them naturally rather than mentioning a database or source.\n\n${sections.join("\n\n")}`;
+}
+
+function correctKnownReadingTypos(text: string): string {
+  return text
+    .replaceAll("げんらない", "かぎらない")
+    .replaceAll("げんりません", "かぎりません")
+    .replaceAll("限(げん)らない", "限(かぎ)らない")
+    .replaceAll("限（げん）らない", "限（かぎ）らない")
+    .replaceAll("限(げん)りません", "限(かぎ)りません")
+    .replaceAll("限（げん）りません", "限（かぎ）りません");
+}
+
+async function workersAIMessages(env: Env, tutorRequest: TutorRequest): Promise<Array<{
   role: "system" | "user" | "assistant";
   content: string;
-}> {
-  return [
+}>> {
+  const reference = await n3GrammarReference(env, tutorRequest.message);
+  const messages: Array<{ role: "system" | "user" | "assistant"; content: string }> = [
     { role: "system", content: SYSTEM_INSTRUCTION },
+  ];
+  if (reference) messages.push({ role: "system", content: reference });
+  messages.push(
     ...tutorRequest.history.map((item) => ({
       role: item.role === "bot" ? "assistant" as const : "user" as const,
       content: item.text
     })),
     { role: "user", content: tutorRequest.message }
-  ];
+  );
+  return messages;
 }
 
 async function callWorkersAI(
@@ -330,18 +458,16 @@ async function callWorkersAI(
   tutorRequest: TutorRequest,
   model: typeof PRIMARY_WORKERS_AI_MODEL | typeof SECONDARY_WORKERS_AI_MODEL
 ): Promise<string> {
-  const messages: Array<{ role: "system" | "user" | "assistant"; content: string }> = [
-    ...workersAIMessages(tutorRequest)
-  ];
+  const messages = await workersAIMessages(env, tutorRequest);
 
   const input = {
     messages,
-    max_completion_tokens: 4_200,
+    max_completion_tokens: 5_200,
     reasoning_effort: "low" as const,
     chat_template_kwargs: { enable_thinking: false },
     temperature: 0.1
   };
-  const options = { signal: AbortSignal.timeout(55_000) };
+  const options = { signal: AbortSignal.timeout(75_000) };
   const output = model === PRIMARY_WORKERS_AI_MODEL
     ? await env.AI.run(PRIMARY_WORKERS_AI_MODEL, input, options)
     : await env.AI.run(SECONDARY_WORKERS_AI_MODEL, input, options);
@@ -349,7 +475,7 @@ async function callWorkersAI(
   if (!text) {
     throw new HttpError(502, "empty_fallback_response", "AI খালি উত্তর দিয়েছে। প্রশ্নটি অন্যভাবে লিখে আবার চেষ্টা করুন।");
   }
-  return text;
+  return correctKnownReadingTypos(text);
 }
 
 async function generateTutorReply(env: Env, tutorRequest: TutorRequest): Promise<TutorModelReply> {

@@ -871,7 +871,7 @@
         </div>
         <div class="modal-field">
             <label><i class="fas fa-sparkles"></i> AI সংযোগ</label>
-            <small>Qwen 3.8 এখন primary; OpenAI gpt-oss-120b ও Gemini Flash automatic backup হিসেবে নিরাপদ Cloudflare backend দিয়ে সংযুক্ত। API key কখনো browser-এ পাঠানো বা সংরক্ষণ করা হয় না।</small>
+            <small>OpenAI gpt-oss-120b এখন primary; GLM 4.7 ও Gemini Flash automatic backup হিসেবে নিরাপদ Cloudflare backend দিয়ে সংযুক্ত। N3 প্রশ্নে verified Matome lesson reference ব্যবহার হয়। API key কখনো browser-এ পাঠানো বা সংরক্ষণ করা হয় না।</small>
         </div>
         <div class="modal-field">
             <label><i class="fas fa-shield-alt"></i> ব্যবহার ও গোপনীয়তা</label>
@@ -1146,7 +1146,7 @@ async function callAPI(userMessage) {
     var timeout;
     try {
         var controller = new AbortController();
-        timeout = setTimeout(function() { controller.abort(); }, 70000);
+        timeout = setTimeout(function() { controller.abort(); }, 90000);
 
         var history = messages
             .slice(0, -1)
