@@ -101,3 +101,29 @@ test('mobile home dock stays compact and content-safe', async ({ page }, testInf
   expect(metrics.bottomPadding).toBeGreaterThanOrEqual(60);
   expect(metrics.height).toBeLessThan(metrics.viewportHeight * 0.16);
 });
+
+test('mobile Matome week cards stay readable without text overlap', async ({ page }, testInfo) => {
+  test.skip(!testInfo.project.name.includes('mobile'), 'mobile-specific layout check');
+  await page.addInitScript(() => localStorage.setItem('n3MatomeTheme', 'dark'));
+  await page.goto('/n3-matome-grammar.html', { waitUntil: 'domcontentloaded' });
+
+  const cards = page.locator('.week-card');
+  await expect(cards).toHaveCount(7);
+  const issues = await cards.evaluateAll((weekCards) => weekCards.flatMap((card, index) => {
+    const title = card.querySelector('b');
+    const description = card.querySelector('p');
+    const count = card.querySelector('small');
+    if (!title || !description || !count) return [`card ${index}: missing content`];
+
+    const titleColor = getComputedStyle(title).color.match(/\d+/g)?.slice(0, 3).map(Number) || [];
+    const titleIsDark = titleColor.length === 3 && titleColor.every(channel => channel < 80);
+    const descriptionBottom = description.getBoundingClientRect().bottom;
+    const countTop = count.getBoundingClientRect().top;
+    const result = [];
+    if (titleIsDark) result.push(`card ${index}: dark title on dark surface`);
+    if (descriptionBottom > countTop + 1) result.push(`card ${index}: description/count overlap`);
+    return result;
+  }));
+
+  expect(issues).toEqual([]);
+});
