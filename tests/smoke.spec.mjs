@@ -7,6 +7,7 @@ const criticalPages = [
   '/n4-grammar.html',
   '/n4-vocabulary.html',
   '/n3-grammar.html',
+  '/n3-matome-grammar.html',
   '/n3-vocabulary.html',
   '/mock-test.html',
   '/profile.html',
@@ -47,6 +48,7 @@ test('high-value home links resolve locally', async ({ page, request }) => {
     '/n5-grammar.html',
     '/n4-grammar.html',
     '/n3-grammar.html',
+    '/n3-matome-grammar.html',
     '/cv-builder.html',
     '/mock-test.html',
     '/profile.html',
@@ -61,7 +63,12 @@ test('high-value home links resolve locally', async ({ page, request }) => {
 test('generated browser assets are available', async ({ request }) => {
   for (const path of [
     '/assets/css/pro-core.css',
+    '/assets/css/n3-grammar-deep.css',
+    '/assets/css/n3-matome.css',
     '/assets/js/pro-core.js',
+    '/assets/js/n3-grammar-deep.js',
+    '/assets/js/n3-matome-app.js',
+    '/assets/js/n3-matome-data.js',
     '/assets/js/ts/platform.js',
     '/assets/data/search-index.json',
     '/assets/data/site-audit.json',

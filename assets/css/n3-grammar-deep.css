@@ -1,0 +1,101 @@
+/* TRY! N3 — rule-specific deep learning layer */
+.deep-mastery {
+  margin-top: 16px;
+  border: 1px solid #cfd7ff;
+  border-radius: 18px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #fbfcff, #f5f3ff);
+  box-shadow: 0 10px 26px rgba(67, 56, 202, .07);
+}
+
+.deep-mastery-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 15px;
+  color: #fff;
+  background: linear-gradient(135deg, #4338ca, #7c3aed);
+}
+
+.deep-mastery-head b { font-size: 1rem; }
+.deep-mastery-head span {
+  padding: 4px 9px;
+  border: 1px solid rgba(255,255,255,.24);
+  border-radius: 999px;
+  background: rgba(255,255,255,.12);
+  font-size: .72rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.deep-mastery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.deep-mastery-cell {
+  min-width: 0;
+  padding: 14px 15px;
+  border-top: 1px solid #e4e7ff;
+}
+
+.deep-mastery-cell:nth-child(odd) { border-right: 1px solid #e4e7ff; }
+.deep-mastery-cell b {
+  display: block;
+  margin-bottom: 5px;
+  color: #4338ca;
+  font-size: .88rem;
+}
+.deep-mastery-cell p { margin: 0; color: #344054; line-height: 1.72; }
+.deep-mastery-cell--memory {
+  grid-column: 1 / -1;
+  border-right: 0 !important;
+  background: linear-gradient(90deg, rgba(245,158,11,.09), rgba(251,191,36,.04));
+}
+.deep-mastery-cell--memory b { color: #9a5b08; }
+
+.deep-study-prompt {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 0 15px 15px;
+  padding: 11px 12px;
+  border: 1px dashed #c7d2fe;
+  border-radius: 13px;
+  background: rgba(255,255,255,.78);
+  color: #3730a3;
+  font-size: .9rem;
+}
+.deep-study-prompt::before { content: "✍"; font-weight: 900; }
+
+body[data-theme="dark"] .deep-mastery {
+  border-color: #36415f;
+  background: linear-gradient(145deg, #151d2d, #17182c);
+}
+body[data-theme="dark"] .deep-mastery-cell { border-color: #303b57; }
+body[data-theme="dark"] .deep-mastery-cell b { color: #c7d2fe; }
+body[data-theme="dark"] .deep-mastery-cell p { color: #c4cad6; }
+body[data-theme="dark"] .deep-mastery-cell--memory {
+  background: linear-gradient(90deg, rgba(245,158,11,.12), rgba(251,191,36,.03));
+}
+body[data-theme="dark"] .deep-mastery-cell--memory b { color: #fcd34d; }
+body[data-theme="dark"] .deep-study-prompt {
+  border-color: #3d4b75;
+  background: rgba(15,23,42,.72);
+  color: #c7d2fe;
+}
+
+@media (max-width: 700px) {
+  .deep-mastery-grid { grid-template-columns: 1fr; }
+  .deep-mastery-cell:nth-child(odd) { border-right: 0; }
+  .deep-mastery-cell--memory { grid-column: auto; }
+  .deep-mastery-head { padding: 12px 13px; }
+  .deep-mastery-cell { padding: 12px 13px; }
+  .deep-study-prompt { margin: 0 13px 13px; }
+}
+
+@media print {
+  .deep-mastery { box-shadow: none; break-inside: avoid; }
+  .deep-study-prompt { display: none; }
+}
