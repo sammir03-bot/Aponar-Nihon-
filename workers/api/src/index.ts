@@ -12,7 +12,7 @@ type TutorRequest = {
 };
 
 const DEFAULT_ORIGIN = "https://app.aponar-nihon.workers.dev";
-const DEFAULT_MODEL = "gemini-2.5-flash";
+const DEFAULT_MODEL = "gemini-flash-latest";
 const GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions";
 const MAX_REQUEST_BYTES = 32_768;
 const MAX_MESSAGE_CHARS = 6_000;
@@ -275,7 +275,11 @@ async function callGemini(env: Env, tutorRequest: TutorRequest): Promise<string>
     if (response.status === 400) {
       throw new HttpError(502, "ai_request_invalid", "Gemini request configuration সঠিক নয়। Admin-কে জানান।");
     }
-    throw new HttpError(502, "ai_provider_error", "AI থেকে উত্তর পাওয়া যায়নি। একটু পরে আবার চেষ্টা করুন।");
+    throw new HttpError(
+      502,
+      "ai_provider_error",
+      `AI service উত্তর দেয়নি (${response.status}/${providerCode})। একটু পরে আবার চেষ্টা করুন।`
+    );
   }
 
   const text = extractInteractionText(payload);

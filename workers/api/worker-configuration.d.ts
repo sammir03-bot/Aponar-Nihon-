@@ -6,7 +6,7 @@ interface __BaseEnv_Env {
 	ASSETS: Fetcher;
 	APP_ORIGIN: "https://app.aponar-nihon.workers.dev";
 	API_VERSION: "2026.08";
-	GEMINI_MODEL: "gemini-2.5-flash";
+	GEMINI_MODEL: "gemini-flash-latest";
 	GEMINI_API_KEY: string;
 }
 declare namespace Cloudflare {
