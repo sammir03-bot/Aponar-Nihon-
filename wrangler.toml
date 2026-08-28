@@ -14,7 +14,7 @@ html_handling = "auto-trailing-slash"
 [vars]
 APP_ORIGIN = "https://app.aponar-nihon.workers.dev"
 API_VERSION = "2026.08"
-GEMINI_MODEL = "gemini-3.7-flash"
+GEMINI_MODEL = "gemini-2.5-flash"
 
 [secrets]
 required = [ "GEMINI_API_KEY" ]

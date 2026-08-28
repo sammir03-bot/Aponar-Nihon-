@@ -12,7 +12,7 @@ type TutorRequest = {
 };
 
 const DEFAULT_ORIGIN = "https://app.aponar-nihon.workers.dev";
-const DEFAULT_MODEL = "gemini-3.7-flash";
+const DEFAULT_MODEL = "gemini-2.5-flash";
 const GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions";
 const MAX_REQUEST_BYTES = 32_768;
 const MAX_MESSAGE_CHARS = 6_000;
