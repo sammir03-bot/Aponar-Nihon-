@@ -7,6 +7,7 @@ const checks = [
   ['/n5-grammar.html', ['text/html']],
   ['/n4-grammar.html', ['text/html']],
   ['/n3-grammar.html', ['text/html']],
+  ['/n3-matome-grammar.html', ['text/html']],
   ['/n3-vocabulary.html', ['text/html']],
   ['/mock-test.html', ['text/html']],
   ['/auth.html', ['text/html']],

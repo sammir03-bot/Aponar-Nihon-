@@ -18,7 +18,6 @@ N4_QUIZ_PART_RE = re.compile(
 )
 
 ALIASES = {
-    "n3-matome-grammar.html": "n3-grammar.html",
     "disclaimer.html": "Disclaimer",
     "login.html": "auth.html",
     "help.html": "contact.html",

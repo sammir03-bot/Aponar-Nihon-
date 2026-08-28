@@ -1,5 +1,5 @@
 /* Aponar Nihon service-worker wrapper — fresh N3 vocabulary and grammar pages.
-   Keeps the proven v27 worker intact, while making the two updated N3 guides
+   Keeps the proven v27 worker intact, while making the updated N3 guides
    network-first so mobile visitors do not receive an older cached version. */
 
 const __anNativeAddEventListener = self.addEventListener.bind(self);
@@ -54,6 +54,8 @@ __anNativeAddEventListener('fetch', event => {
       (url.pathname === '/n3-vocabulary.html' || url.pathname === '/n3-vocabulary');
     const isN3Grammar = url.origin === self.location.origin &&
       (url.pathname === '/n3-grammar.html' || url.pathname === '/n3-grammar');
+    const isN3MatomeGrammar = url.origin === self.location.origin &&
+      (url.pathname === '/n3-matome-grammar.html' || url.pathname === '/n3-matome-grammar');
     const isHtml = request.mode === 'navigate' || (request.headers.get('accept') || '').includes('text/html');
     if(isN3Vocabulary && isHtml){
       event.respondWith(
@@ -71,6 +73,16 @@ __anNativeAddEventListener('fetch', event => {
         fetch(request, {cache:'no-store'})
           .catch(async () => {
             const cached = await caches.match('/n3-grammar.html', {ignoreSearch:true});
+            return cached || caches.match('/index.html');
+          })
+      );
+      return;
+    }
+    if(isN3MatomeGrammar && isHtml){
+      event.respondWith(
+        fetch(request, {cache:'no-store'})
+          .catch(async () => {
+            const cached = await caches.match('/n3-matome-grammar.html', {ignoreSearch:true});
             return cached || caches.match('/index.html');
           })
       );
