@@ -11,9 +11,16 @@ type TutorRequest = {
   clientId: string;
 };
 
+type TutorModelReply = {
+  text: string;
+  model: string;
+  provider: "gemini" | "workers-ai";
+};
+
 const DEFAULT_ORIGIN = "https://app.aponar-nihon.workers.dev";
 const DEFAULT_MODEL = "gemini-flash-latest";
 const GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions";
+const WORKERS_AI_MODEL = "@cf/openai/gpt-oss-120b";
 const MAX_REQUEST_BYTES = 32_768;
 const MAX_MESSAGE_CHARS = 6_000;
 const MAX_HISTORY_ITEMS = 8;
@@ -233,7 +240,7 @@ async function callGemini(env: Env, tutorRequest: TutorRequest): Promise<string>
       model,
       input: interactionInput(tutorRequest.history, tutorRequest.message)
     }),
-    signal: AbortSignal.timeout(45_000)
+    signal: AbortSignal.timeout(10_000)
   });
 
   const rawResponse = await readBoundedStream(response.body, MAX_UPSTREAM_BYTES);
@@ -282,6 +289,75 @@ async function callGemini(env: Env, tutorRequest: TutorRequest): Promise<string>
   return text;
 }
 
+function extractWorkersAIText(value: unknown): string | null {
+  if (!isRecord(value)) return null;
+  if (typeof value.output_text === "string" && value.output_text.trim()) {
+    return value.output_text.trim();
+  }
+  if (!Array.isArray(value.choices)) return null;
+
+  for (const choice of value.choices) {
+    if (!isRecord(choice) || !isRecord(choice.message) || typeof choice.message.content !== "string") {
+      continue;
+    }
+    const text = choice.message.content.trim();
+    if (text) return text;
+  }
+  return null;
+}
+
+async function callWorkersAI(env: Env, tutorRequest: TutorRequest): Promise<string> {
+  const messages: Array<{ role: "system" | "user" | "assistant"; content: string }> = [
+    { role: "system", content: SYSTEM_INSTRUCTION },
+    ...tutorRequest.history.map((item) => ({
+      role: item.role === "bot" ? "assistant" as const : "user" as const,
+      content: item.text
+    })),
+    { role: "user", content: tutorRequest.message }
+  ];
+
+  const output = await env.AI.run(WORKERS_AI_MODEL, {
+    messages,
+    max_tokens: 1_800,
+    temperature: 0.3
+  });
+  const text = extractWorkersAIText(output);
+  if (!text) {
+    throw new HttpError(502, "empty_fallback_response", "AI খালি উত্তর দিয়েছে। প্রশ্নটি অন্যভাবে লিখে আবার চেষ্টা করুন।");
+  }
+  return text;
+}
+
+async function generateTutorReply(env: Env, tutorRequest: TutorRequest): Promise<TutorModelReply> {
+  try {
+    return {
+      text: await callGemini(env, tutorRequest),
+      model: env.GEMINI_MODEL || DEFAULT_MODEL,
+      provider: "gemini"
+    };
+  } catch (error) {
+    console.warn(JSON.stringify({
+      event: "gemini_fallback_started",
+      reason: error instanceof HttpError ? error.code : "request_failed"
+    }));
+  }
+
+  try {
+    return {
+      text: await callWorkersAI(env, tutorRequest),
+      model: WORKERS_AI_MODEL,
+      provider: "workers-ai"
+    };
+  } catch (error) {
+    console.error(JSON.stringify({
+      event: "workers_ai_fallback_failed",
+      reason: error instanceof HttpError ? error.code : "request_failed"
+    }));
+    if (error instanceof HttpError) throw error;
+    throw new HttpError(502, "all_ai_providers_failed", "AI service এখন উত্তর দিতে পারছে না। একটু পরে আবার চেষ্টা করুন।");
+  }
+}
+
 async function handleTutor(
   request: Request,
   env: Env,
@@ -296,18 +372,20 @@ async function handleTutor(
     throw new HttpError(429, "rate_limited", "এক মিনিটে অনেক প্রশ্ন হয়েছে। একটু অপেক্ষা করে আবার পাঠান।");
   }
 
-  const response = await callGemini(env, tutorRequest);
+  const reply = await generateTutorReply(env, tutorRequest);
   console.log(JSON.stringify({
     event: "tutor_response_ok",
     request_id: rid,
-    model: env.GEMINI_MODEL || DEFAULT_MODEL,
+    model: reply.model,
+    provider: reply.provider,
     duration_ms: Date.now() - startedAt
   }));
 
   return json({
     ok: true,
-    response,
-    model: env.GEMINI_MODEL || DEFAULT_MODEL,
+    response: reply.text,
+    model: reply.model,
+    provider: reply.provider,
     request_id: rid
   }, 200, origin);
 }
@@ -342,6 +420,7 @@ export default {
           ok: true,
           api_version: env.API_VERSION || "2026.08",
           tutor_enabled: true,
+          fallback_enabled: true,
           request_id: rid
         }, 200, origin);
       }
@@ -354,6 +433,7 @@ export default {
           ok: true,
           service: "aponar-nihon-ai-tutor",
           model: env.GEMINI_MODEL || DEFAULT_MODEL,
+          fallback_model: WORKERS_AI_MODEL,
           request_id: rid
         }, 200, origin);
       }
