@@ -1,6 +1,7 @@
 name = "app"
 main = "workers/api/src/index.ts"
-compatibility_date = "2026-08-25"
+compatibility_date = "2026-08-28"
+compatibility_flags = [ "nodejs_compat" ]
 workers_dev = true
 
 [assets]
@@ -13,3 +14,22 @@ html_handling = "auto-trailing-slash"
 [vars]
 APP_ORIGIN = "https://app.aponar-nihon.workers.dev"
 API_VERSION = "2026.08"
+GEMINI_MODEL = "gemini-3.7-flash"
+
+[secrets]
+required = [ "GEMINI_API_KEY" ]
+
+[[ratelimits]]
+name = "TUTOR_RATE_LIMITER"
+namespace_id = "2026082801"
+
+  [ratelimits.simple]
+  limit = 12
+  period = 60
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1
+
+[observability.traces]
+enabled = false

@@ -19,7 +19,8 @@
     "test:browser": "playwright test",
     "lighthouse": "lhci autorun",
     "live:smoke": "node tools/live_smoke.mjs",
+    "worker:types": "npx --yes wrangler@4 types workers/api/worker-configuration.d.ts",
     "worker:dev": "npx --yes wrangler@4 dev",
-    "worker:deploy": "npx --yes wrangler@4 deploy"
+    "worker:deploy": "npx --yes wrangler@4 deploy --keep-vars"
   }
 }
