@@ -11,18 +11,17 @@ type TutorRequest = {
   clientId: string;
 };
 
-type InteractionTextContent = {
-  type: "text";
+type GeminiPart = {
   text: string;
 };
 
-type InteractionStep = {
-  type: "user_input" | "model_output";
-  content: InteractionTextContent[];
+type GeminiContent = {
+  role: "user" | "model";
+  parts: GeminiPart[];
 };
 
 const DEFAULT_ORIGIN = "https://app.aponar-nihon.workers.dev";
-const GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions";
+const GEMINI_API_ROOT = "https://generativelanguage.googleapis.com/v1beta/models";
 const MAX_REQUEST_BYTES = 32_768;
 const MAX_MESSAGE_CHARS = 6_000;
 const MAX_HISTORY_ITEMS = 8;
@@ -199,56 +198,58 @@ async function parseTutorRequest(request: Request): Promise<TutorRequest> {
   };
 }
 
-function interactionSteps(history: TutorHistoryItem[], message: string): InteractionStep[] {
-  const steps: InteractionStep[] = history.map((item) => ({
-    type: item.role === "user" ? "user_input" : "model_output",
-    content: [{ type: "text", text: item.text }]
-  }));
-  steps.push({
-    type: "user_input",
-    content: [{ type: "text", text: message }]
-  });
-  return steps;
+function geminiContents(history: TutorHistoryItem[], message: string): GeminiContent[] {
+  const turns: TutorHistoryItem[] = [...history, { role: "user", text: message }];
+  const contents: GeminiContent[] = [];
+
+  for (const turn of turns) {
+    const role = turn.role === "bot" ? "model" : "user";
+    const previous = contents.at(-1);
+    if (previous?.role === role) {
+      previous.parts.push({ text: turn.text });
+    } else {
+      contents.push({ role, parts: [{ text: turn.text }] });
+    }
+  }
+  return contents;
 }
 
-function extractInteractionText(value: unknown): string | null {
+function extractGeminiText(value: unknown): string | null {
   if (!isRecord(value)) return null;
-  if (typeof value.output_text === "string" && value.output_text.trim()) {
-    return value.output_text.trim();
-  }
-
-  const resource = isRecord(value.interaction) ? value.interaction : value;
-  if (!Array.isArray(resource.steps)) return null;
+  if (!Array.isArray(value.candidates)) return null;
 
   const blocks: string[] = [];
-  for (const step of resource.steps) {
-    if (!isRecord(step) || step.type !== "model_output" || !Array.isArray(step.content)) continue;
-    for (const content of step.content) {
-      if (!isRecord(content) || content.type !== "text" || typeof content.text !== "string") continue;
-      const text = content.text.trim();
+  for (const candidate of value.candidates) {
+    if (!isRecord(candidate) || !isRecord(candidate.content) || !Array.isArray(candidate.content.parts)) {
+      continue;
+    }
+    for (const part of candidate.content.parts) {
+      if (!isRecord(part) || part.thought === true || typeof part.text !== "string") continue;
+      const text = part.text.trim();
       if (text) blocks.push(text);
     }
+    if (blocks.length) break;
   }
   return blocks.length ? blocks.join("\n\n") : null;
 }
 
 async function callGemini(env: Env, tutorRequest: TutorRequest): Promise<string> {
-  const model = env.GEMINI_MODEL?.trim() || "gemini-3.7-flash";
-  const response = await fetch(GEMINI_ENDPOINT, {
+  const configuredModel = env.GEMINI_MODEL?.trim() || "gemini-3.7-flash";
+  const model = /^[A-Za-z0-9._-]+$/.test(configuredModel) ? configuredModel : "gemini-3.7-flash";
+  const endpoint = `${GEMINI_API_ROOT}/${encodeURIComponent(model)}:generateContent`;
+  const response = await fetch(endpoint, {
     method: "POST",
     headers: {
       "content-type": "application/json",
       "x-goog-api-key": env.GEMINI_API_KEY
     },
     body: JSON.stringify({
-      model,
-      system_instruction: SYSTEM_INSTRUCTION,
-      input: interactionSteps(tutorRequest.history, tutorRequest.message),
-      store: false,
-      generation_config: {
-        thinking_level: "medium",
-        thinking_summaries: "none",
-        max_output_tokens: 1_800
+      systemInstruction: {
+        parts: [{ text: SYSTEM_INSTRUCTION }]
+      },
+      contents: geminiContents(tutorRequest.history, tutorRequest.message),
+      generationConfig: {
+        maxOutputTokens: 1_800
       }
     }),
     signal: AbortSignal.timeout(45_000)
@@ -277,10 +278,19 @@ async function callGemini(env: Env, tutorRequest: TutorRequest): Promise<string>
     if (response.status === 429) {
       throw new HttpError(503, "ai_quota_exceeded", "আজকের ফ্রি AI সীমা শেষ হয়েছে। কিছুক্ষণ পরে আবার চেষ্টা করুন।");
     }
+    if (response.status === 401 || response.status === 403) {
+      throw new HttpError(502, "ai_key_rejected", "Gemini API key গ্রহণ করা হয়নি। AI Studio-তে key সক্রিয় আছে কি না দেখুন।");
+    }
+    if (response.status === 404) {
+      throw new HttpError(502, "ai_model_unavailable", "নির্বাচিত Gemini model পাওয়া যাচ্ছে না। একটু পরে আবার চেষ্টা করুন।");
+    }
+    if (response.status === 400) {
+      throw new HttpError(502, "ai_request_invalid", "Gemini request configuration সঠিক নয়। Admin-কে জানান।");
+    }
     throw new HttpError(502, "ai_provider_error", "AI থেকে উত্তর পাওয়া যায়নি। একটু পরে আবার চেষ্টা করুন।");
   }
 
-  const text = extractInteractionText(payload);
+  const text = extractGeminiText(payload);
   if (!text) {
     throw new HttpError(502, "empty_ai_response", "AI খালি উত্তর দিয়েছে। প্রশ্নটি অন্যভাবে লিখে আবার চেষ্টা করুন।");
   }
