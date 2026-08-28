@@ -21,6 +21,7 @@ type GeminiContent = {
 };
 
 const DEFAULT_ORIGIN = "https://app.aponar-nihon.workers.dev";
+const DEFAULT_MODEL = "gemini-2.5-flash";
 const GEMINI_API_ROOT = "https://generativelanguage.googleapis.com/v1beta/models";
 const MAX_REQUEST_BYTES = 32_768;
 const MAX_MESSAGE_CHARS = 6_000;
@@ -234,8 +235,8 @@ function extractGeminiText(value: unknown): string | null {
 }
 
 async function callGemini(env: Env, tutorRequest: TutorRequest): Promise<string> {
-  const configuredModel = env.GEMINI_MODEL?.trim() || "gemini-3.7-flash";
-  const model = /^[A-Za-z0-9._-]+$/.test(configuredModel) ? configuredModel : "gemini-3.7-flash";
+  const configuredModel = env.GEMINI_MODEL?.trim() || DEFAULT_MODEL;
+  const model = /^[A-Za-z0-9._-]+$/.test(configuredModel) ? configuredModel : DEFAULT_MODEL;
   const endpoint = `${GEMINI_API_ROOT}/${encodeURIComponent(model)}:generateContent`;
   const response = await fetch(endpoint, {
     method: "POST",
@@ -315,14 +316,14 @@ async function handleTutor(
   console.log(JSON.stringify({
     event: "tutor_response_ok",
     request_id: rid,
-    model: env.GEMINI_MODEL || "gemini-3.7-flash",
+    model: env.GEMINI_MODEL || DEFAULT_MODEL,
     duration_ms: Date.now() - startedAt
   }));
 
   return json({
     ok: true,
     response,
-    model: env.GEMINI_MODEL || "gemini-3.7-flash",
+    model: env.GEMINI_MODEL || DEFAULT_MODEL,
     request_id: rid
   }, 200, origin);
 }
@@ -368,7 +369,7 @@ export default {
         return json({
           ok: true,
           service: "aponar-nihon-ai-tutor",
-          model: env.GEMINI_MODEL || "gemini-3.7-flash",
+          model: env.GEMINI_MODEL || DEFAULT_MODEL,
           request_id: rid
         }, 200, origin);
       }
