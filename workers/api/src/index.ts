@@ -11,18 +11,9 @@ type TutorRequest = {
   clientId: string;
 };
 
-type GeminiPart = {
-  text: string;
-};
-
-type GeminiContent = {
-  role: "user" | "model";
-  parts: GeminiPart[];
-};
-
 const DEFAULT_ORIGIN = "https://app.aponar-nihon.workers.dev";
-const DEFAULT_MODEL = "gemini-2.5-flash";
-const GEMINI_API_ROOT = "https://generativelanguage.googleapis.com/v1beta/models";
+const DEFAULT_MODEL = "gemini-3.7-flash";
+const GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions";
 const MAX_REQUEST_BYTES = 32_768;
 const MAX_MESSAGE_CHARS = 6_000;
 const MAX_HISTORY_ITEMS = 8;
@@ -199,37 +190,34 @@ async function parseTutorRequest(request: Request): Promise<TutorRequest> {
   };
 }
 
-function geminiContents(history: TutorHistoryItem[], message: string): GeminiContent[] {
-  const turns: TutorHistoryItem[] = [...history, { role: "user", text: message }];
-  const contents: GeminiContent[] = [];
+function interactionInput(history: TutorHistoryItem[], message: string): string {
+  if (!history.length) return message;
 
-  for (const turn of turns) {
-    const role = turn.role === "bot" ? "model" : "user";
-    const previous = contents.at(-1);
-    if (previous?.role === role) {
-      previous.parts.push({ text: turn.text });
-    } else {
-      contents.push({ role, parts: [{ text: turn.text }] });
-    }
-  }
-  return contents;
+  const transcript = history.map((item) => {
+    const speaker = item.role === "bot" ? "টিউটর" : "শিক্ষার্থী";
+    return `${speaker}: ${item.text}`;
+  });
+  transcript.push(`শিক্ষার্থী: ${message}`);
+  return `আগের কথোপকথনটি শুধু প্রাসঙ্গিক context হিসেবে ব্যবহার করুন। শেষ শিক্ষার্থীর প্রশ্নের উত্তর দিন।\n\n${transcript.join("\n\n")}`;
 }
 
-function extractGeminiText(value: unknown): string | null {
+function extractInteractionText(value: unknown): string | null {
   if (!isRecord(value)) return null;
-  if (!Array.isArray(value.candidates)) return null;
+  if (typeof value.output_text === "string" && value.output_text.trim()) {
+    return value.output_text.trim();
+  }
+
+  const resource = isRecord(value.interaction) ? value.interaction : value;
+  if (!Array.isArray(resource.steps)) return null;
 
   const blocks: string[] = [];
-  for (const candidate of value.candidates) {
-    if (!isRecord(candidate) || !isRecord(candidate.content) || !Array.isArray(candidate.content.parts)) {
-      continue;
-    }
-    for (const part of candidate.content.parts) {
-      if (!isRecord(part) || part.thought === true || typeof part.text !== "string") continue;
-      const text = part.text.trim();
+  for (const step of resource.steps) {
+    if (!isRecord(step) || step.type !== "model_output" || !Array.isArray(step.content)) continue;
+    for (const content of step.content) {
+      if (!isRecord(content) || content.type !== "text" || typeof content.text !== "string") continue;
+      const text = content.text.trim();
       if (text) blocks.push(text);
     }
-    if (blocks.length) break;
   }
   return blocks.length ? blocks.join("\n\n") : null;
 }
@@ -237,20 +225,19 @@ function extractGeminiText(value: unknown): string | null {
 async function callGemini(env: Env, tutorRequest: TutorRequest): Promise<string> {
   const configuredModel = env.GEMINI_MODEL?.trim() || DEFAULT_MODEL;
   const model = /^[A-Za-z0-9._-]+$/.test(configuredModel) ? configuredModel : DEFAULT_MODEL;
-  const endpoint = `${GEMINI_API_ROOT}/${encodeURIComponent(model)}:generateContent`;
-  const response = await fetch(endpoint, {
+  const response = await fetch(GEMINI_ENDPOINT, {
     method: "POST",
     headers: {
       "content-type": "application/json",
       "x-goog-api-key": env.GEMINI_API_KEY
     },
     body: JSON.stringify({
-      systemInstruction: {
-        parts: [{ text: SYSTEM_INSTRUCTION }]
-      },
-      contents: geminiContents(tutorRequest.history, tutorRequest.message),
-      generationConfig: {
-        maxOutputTokens: 1_800
+      model,
+      system_instruction: SYSTEM_INSTRUCTION,
+      input: interactionInput(tutorRequest.history, tutorRequest.message),
+      store: false,
+      generation_config: {
+        max_output_tokens: 1_800
       }
     }),
     signal: AbortSignal.timeout(45_000)
@@ -291,7 +278,7 @@ async function callGemini(env: Env, tutorRequest: TutorRequest): Promise<string>
     throw new HttpError(502, "ai_provider_error", "AI থেকে উত্তর পাওয়া যায়নি। একটু পরে আবার চেষ্টা করুন।");
   }
 
-  const text = extractGeminiText(payload);
+  const text = extractInteractionText(payload);
   if (!text) {
     throw new HttpError(502, "empty_ai_response", "AI খালি উত্তর দিয়েছে। প্রশ্নটি অন্যভাবে লিখে আবার চেষ্টা করুন।");
   }
