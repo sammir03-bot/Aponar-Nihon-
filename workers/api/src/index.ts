@@ -60,7 +60,8 @@ Teaching rules:
 13. For a detailed grammar comparison, finish every promised section within the available space. Use this order: one-line distinction, meaning and mental image, formation, natural examples, side-by-side difference, common mistakes, memory hook, then practice and answer. Avoid repeating the same point in multiple sections. If space is tight, shorten prose rather than dropping the comparison, memory hook, or practice answer.
 14. Japanese readings must use the word's real contextual reading, not an on-yomi guessed from an individual kanji. In particular: 限る（かぎる）, 限らない（かぎらない）, and 〜とは限らない（〜とはかぎらない）. Silently re-read all furigana once before sending.
 15. Never write a romaji reading, English transliteration line, or Korean translation unless the learner explicitly requests it. “Reading” means kana, not Latin letters. A request such as “romaji দেবেন না” must be followed exactly.
-16. 〜わけではない is usually a partial or contextual denial: it rejects an assumed interpretation, reason, or blanket conclusion (“it is not that…”), often while leaving part of the surrounding idea true. Do not teach it as simple 100% complete negation. Do not invent double-negative examples such as 上手ではないわけではない unless the learner specifically asks about double negatives.`;
+16. 〜わけではない is usually a partial or contextual denial: it rejects an assumed interpretation, reason, or blanket conclusion (“it is not that…”), often while leaving part of the surrounding idea true. Do not teach it as simple 100% complete negation. Do not invent double-negative examples such as 上手ではないわけではない unless the learner specifically asks about double negatives.
+17. A memory hook may be visual or conceptual, but must not claim a fake word origin or use an unrelated same-sound kanji as if it explained the grammar. Do not mark grammatical Japanese as wrong merely because another form is more formal or fits the intended nuance better; describe that distinction accurately.`;
 
 const WAKE_KAGIRANAI_REFERENCE = `Verified comparison reference — use these facts exactly and do not contradict them:
 - 〜わけではない: partial/contextual denial. It rejects an assumed interpretation or implication: “এমন নয় যে… / তার মানে এই নয় যে…”. It does not automatically deny the whole situation.
@@ -70,6 +71,10 @@ const WAKE_KAGIRANAI_REFERENCE = `Verified comparison reference — use these fa
   Formation: verb plain + とは限らない; i-adjective plain + とは限らない; na-adjective + だとは限らない; noun + だとは限らない. 〜とは限りません is valid polite Japanese.
   Natural examples: 高いものが必ずしもいいとは限りません。 / 日本人だからといって、日本語の文法を説明できるとは限りません。 / 有名な店がおいしいとは限りません。
 - One-line contrast: わけではない corrects a particular interpretation; とは限らない corrects an overgeneralization or 100% certainty. Neither pattern should be explained as ordinary complete negation.
+- Important valid forms: 高いものが必ずしもいいわけではない is grammatical and natural; do not mark it wrong merely because とは限らない is also possible. 〜とは限らないです also occurs in polite conversation; 〜とは限りません is the more standard/formal polite form, but do not call the former ungrammatical.
+- Recommended common mistakes to teach: (1) forgetting な in present affirmative na-adjective/noun + なわけではない, (2) forgetting だ in na-adjective/noun + だとは限らない, (3) using わけではない when the intended focus is clearly universal certainty, or using とは限らない when correcting one specific interpretation, and (4) misreading 限らない. Do not fabricate an invalid example to force a contrast.
+- Memory hook: わけではない = correct only the listener's interpretation, leaving the rest of the scene; とは限らない = erase a small part of a “100%” circle to leave exceptions. Never invent a fake etymology, unrelated same-sound kanji, or wordplay such as わ＝和, け＝毛, or かぎ＝鍵.
+- Natural practice model: 値段が高いからといって、料理がおいしいとは限りません。 Do not write the less natural 味が美味しい when 料理がおいしい expresses the point cleanly.
 - Readings: 日本料理（にほんりょうり）, 嫌い（きらい）, 納豆（なっとう）, 苦手（にがて）, 忙しい（いそがしい）, 連絡（れんらく）, 経験（けいけん）, 積む（つむ）, 高い（たかい）, 必ずしも（かならずしも）, 限らない（かぎらない）, 日本人（にほんじん）, 文法（ぶんぽう）, 説明（せつめい）, 有名（ゆうめい）, 店（みせ）.`;
 
 class HttpError extends Error {
