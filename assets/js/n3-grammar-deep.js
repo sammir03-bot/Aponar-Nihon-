@@ -812,6 +812,11 @@
   }
 
   function enhance() {
+    const heroTitle = document.querySelector('header h1');
+    const heroSubtitle = document.querySelector('header .sub');
+    if (heroTitle) heroTitle.textContent = 'TRY! N3 — প্রতিটি Rule একবার বুঝে সারাজীবন মনে রাখো';
+    if (heroSubtitle) heroSubtitle.textContent = '১১৩টি Grammar • Rule-specific গভীর ব্যাখ্যা • সূক্ষ্ম ব্যবহার • confusing “VS” • মনে রাখার ছবি • ১,১৩০টি উদাহরণ';
+
     const cards = [...document.querySelectorAll('article.card[id^="rule-"]')];
     cards.forEach(card => {
       const id = Number(card.id.replace('rule-', ''));

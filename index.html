@@ -5759,7 +5759,7 @@ a, button { -webkit-tap-highlight-color:transparent; }
                <div class="material-body"><ul class="pdf-list">
                  <li>
                    <a href="n3-grammar.html" class="pdf-link">
-                       <i class="fas fa-book-open"></i><div><span>TRY! N3</span><small>গভীর ব্যাখ্যা + ১০টি উদাহরণ</small></div><i class="fas fa-chevron-right download-icon"></i>
+                       <i class="fas fa-book-open"></i><div><span>N3 Grammar Rules</span><small>গঠন + ব্যবহার + উদাহরণ</small></div><i class="fas fa-chevron-right download-icon"></i>
                    </a>
                  </li>
                  <li>
@@ -7047,6 +7047,14 @@ if ("serviceWorker" in navigator) {
 
   const langButtons = document.querySelectorAll('.app-lang-switch button');
   const input = document.getElementById('appSearchInput');
+  const tryN3Link = document.querySelector('a[href="n3-grammar.html"]');
+  if (tryN3Link) {
+    const title = tryN3Link.querySelector('span');
+    const subtitle = tryN3Link.querySelector('small');
+    if (title) title.textContent = 'TRY! N3';
+    if (subtitle) subtitle.textContent = 'গভীর ব্যাখ্যা + ১০টি উদাহরণ';
+    tryN3Link.setAttribute('aria-label', 'TRY! N3 — গভীর grammar guide');
+  }
   langButtons.forEach(btn => btn.addEventListener('click', () => {
     langButtons.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
