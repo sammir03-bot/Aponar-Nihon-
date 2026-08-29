@@ -3,6 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <script id="legacy-origin-redirect">
+  (function(){
+    var h = location.hostname;
+    if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
+    var p = location.pathname || "/";
+    if (h === "sammir03-bot.github.io") {
+      var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
+      for (var i = 0; i < bases.length; i++) {
+        var base = bases[i];
+        if (p === base || p === base + "/") { p = "/"; break; }
+        if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+      }
+    }
+    if (p === "/index.html") p = "/";
+    else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+    else if (p.endsWith(".html")) p = p.slice(0, -5);
+    location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
+  })();
+  </script>
   <title>আপনার নিহোন | JLPT N5 N4 N3 ও জাপান লাইফ গাইড</title>
   <meta name="description" content="আপনার নিহোন—বাংলায় JLPT N5, N4, N3, AI Tutor, Mock Test, Interview, দরকারি জাপানি ও Japan Life Guide-এর app-style learning hub।">
   <meta name="keywords" content="আপনার নিহোন, Aponar Nihon, JLPT Bangla, JLPT N5 Bangla, JLPT N4 Bangla, JLPT N3 Bangla, Japanese AI Tutor Bangla">

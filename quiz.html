@@ -2,6 +2,25 @@
 <html lang="bn">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <script id="legacy-origin-redirect">
+  (function(){
+    var h = location.hostname;
+    if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
+    var p = location.pathname || "/";
+    if (h === "sammir03-bot.github.io") {
+      var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
+      for (var i = 0; i < bases.length; i++) {
+        var base = bases[i];
+        if (p === base || p === base + "/") { p = "/"; break; }
+        if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+      }
+    }
+    if (p === "/index.html") p = "/";
+    else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+    else if (p.endsWith(".html")) p = p.slice(0, -5);
+    location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
+  })();
+  </script>
   <title>JLPT কুইজ ও Practice Arena | আপনার নিহোন</title>
   <meta name="description" content="JLPT N5, N4 ও N3 Vocabulary, Kanji, Grammar, Reading quiz, daily challenge, AI Quiz Coach ও ৩০টি Full Mock Test।">
   <meta name="theme-color" content="#06140f"><link rel="canonical" href="https://app.aponar-nihon.workers.dev/quiz"><link rel="icon" href="/logo.png" type="image/png"><link rel="manifest" href="/manifest.json">
