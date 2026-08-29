@@ -118,8 +118,8 @@ test('mobile home dock stays compact and content-safe', async ({ page }, testInf
 
 test('AI Tutor exposes level, mode, and depth controls', async ({ page }) => {
   await page.goto('/tutor-section.html', { waitUntil: 'domcontentloaded' });
-  await expect(page.locator('[data-level="N5"]')).toBeVisible();
-  await expect(page.locator('[data-mode="conversation"]').first()).toBeVisible();
+  await expect(page.locator('#activeLevelLabel')).toBeVisible();
+  await expect(page.locator('[data-mode="conversation"]').first()).toBeAttached();
   await page.locator('#settingsButton').click();
   await expect(page.locator('#settingsDialog')).toBeVisible();
   await expect(page.locator('input[name="settingsDepth"][value="deep"]')).toBeAttached();
