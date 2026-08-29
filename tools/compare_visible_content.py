@@ -16,7 +16,12 @@ ROOT = Path(__file__).resolve().parents[1]
 # evolve. Add to this map only when a product change explicitly moves a page.
 MOVED_PAGE_ARCHIVES = {
     "index.html": "archive/home-full-legacy.html",
-    "tutor-section.html": "archive/tutor-section-legacy.html",
+    "tutor-section.html": "archive/tutor-section-v2.html",
+    "n5.html": "archive/n5-hub-v1.html",
+    "n4.html": "archive/n4-hub-v1.html",
+    "n3.html": "archive/n3-hub-v1.html",
+    "quiz.html": "archive/quiz-hub-v1.html",
+    "interview.html": "archive/interview-hub-v1.html",
 }
 
 
