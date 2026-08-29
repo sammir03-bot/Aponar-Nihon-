@@ -2,7 +2,8 @@
   "use strict";
 
   var API_ENDPOINT = "/api/tutor";
-  var STATE_KEY = "nihon_tutor_state_v2";
+  var STATE_KEY = "nihon_tutor_state_v3";
+  var PREVIOUS_STATE_KEY = "nihon_tutor_state_v2";
   var LEGACY_CHAT_KEY = "nihon_tutor_chat_v1";
   var CLIENT_ID_KEY = "nihon_tutor_client_v1";
   var USAGE_KEY = "nihon_tutor_usage_v1";
@@ -63,6 +64,24 @@
         ["বাংলা hint", "এই প্রশ্নের জন্য শুধু একটি ছোট বাংলা hint দিন"],
         ["আবার বলুন", "আরও সহজ Japanese-এ প্রশ্নটি আবার করুন"],
         ["আমার ভুল", "আমার শেষ উত্তরের ভুলগুলো সংক্ষেপে ঠিক করুন"]
+      ]
+    },
+    interview: {
+      label: "ইন্টারভিউ কোচ",
+      icon: "fa-user-tie",
+      title: "Real interview practice শুরু করুন",
+      text: "একবারে একটি বাস্তব প্রশ্ন, আপনার উত্তরের ছোট correction, তারপর পরের প্রশ্ন—Job, School, Embassy বা SSW track-এ।",
+      placeholder: "Japanese-এ interview answer লিখুন…",
+      starters: [
+        ["fa-store", "Part-time Job", "অরুবাইতো interview", "Part-time job interview শুরু করুন। আপনি interviewer হবেন, একবারে একটি Japanese প্রশ্ন করবেন এবং আমার উত্তর ঠিক করবেন।"],
+        ["fa-video", "School Interview", "Language school / University", "Japanese language school interview শুরু করুন। একবারে একটি প্রশ্ন করুন এবং আমার উত্তরের natural Japanese ঠিক করুন।"],
+        ["fa-building-columns", "Embassy Interview", "Visa purpose ও study plan", "Japan embassy interview practice শুরু করুন। একবারে একটি প্রশ্ন করুন; উত্তর সংক্ষিপ্ত ও সৎ রাখতে সাহায্য করুন।"],
+        ["fa-helmet-safety", "SSW Interview", "কাজ, skill ও motivation", "SSW job interview শুরু করুন। প্রথমে sector জিজ্ঞেস করুন, তারপর একবারে একটি Japanese প্রশ্ন করুন।"]
+      ],
+      chips: [
+        ["বাংলা hint", "এই interview প্রশ্নের উত্তরের জন্য শুধু একটি ছোট বাংলা hint দিন"],
+        ["উত্তর ঠিক করুন", "আমার শেষ উত্তরটি সংক্ষিপ্ত ও natural Japanese করে দিন"],
+        ["পরের প্রশ্ন", "পরের interview প্রশ্নটি করুন"]
       ]
     },
     quiz: {
@@ -296,9 +315,35 @@
         if (Array.isArray(saved.messages)) state.messages = saved.messages.map(normalizeMessage).filter(Boolean).slice(-30);
         return;
       }
-      var legacy = JSON.parse(localStorage.getItem(LEGACY_CHAT_KEY) || "[]");
-      if (Array.isArray(legacy)) state.messages = legacy.map(normalizeMessage).filter(Boolean).slice(-30);
+      var previous = JSON.parse(localStorage.getItem(PREVIOUS_STATE_KEY) || "null");
+      if (previous && typeof previous === "object") {
+        if (VALID_LEVELS.includes(previous.level)) state.level = previous.level;
+        if (Object.prototype.hasOwnProperty.call(MODES, previous.mode)) state.mode = previous.mode;
+        if (VALID_DEPTHS.includes(previous.depth)) state.depth = previous.depth;
+      }
+      localStorage.removeItem(LEGACY_CHAT_KEY);
     } catch (_error) { /* Start with safe defaults. */ }
+  }
+
+  function applyUrlPreferences() {
+    var params = new URLSearchParams(window.location.search);
+    var level = (params.get("level") || "").toUpperCase();
+    var mode = (params.get("mode") || "").toLowerCase();
+    var depth = (params.get("depth") || "").toLowerCase();
+    if (VALID_LEVELS.includes(level)) state.level = level;
+    if (Object.prototype.hasOwnProperty.call(MODES, mode)) state.mode = mode;
+    if (VALID_DEPTHS.includes(depth)) state.depth = depth;
+    if (params.get("fresh") === "1") state.messages = [];
+
+    var prompt = (params.get("prompt") || "").trim().slice(0, 6000);
+    if (prompt) {
+      els.input.value = prompt;
+      window.requestAnimationFrame(function () {
+        resizeInput();
+        els.input.focus({ preventScroll: true });
+      });
+    }
+    saveState();
   }
 
   function saveState() {
@@ -727,6 +772,18 @@
     window.addEventListener("offline", function () { setStatus(false); });
   }
 
+  function setupViewport() {
+    if (!window.visualViewport) return;
+    var updateViewport = function () {
+      var viewportHeight = Math.round(window.visualViewport.height);
+      document.documentElement.style.setProperty("--tutor-viewport-height", viewportHeight + "px");
+      document.body.classList.toggle("tutor-keyboard-open", window.innerHeight - viewportHeight > 140);
+    };
+    window.visualViewport.addEventListener("resize", updateViewport);
+    window.visualViewport.addEventListener("scroll", updateViewport);
+    updateViewport();
+  }
+
   function initialize() {
     els.messages = $("#tutorMessages");
     els.chat = $("#tutorChat");
@@ -746,12 +803,14 @@
     els.statusText = $("#tutorStatusText");
 
     loadState();
+    applyUrlPreferences();
     renderConversation(false);
     updateInterface();
     bindEvents();
     setupVoice();
     checkStatus();
     resizeInput();
+    setupViewport();
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initialize);

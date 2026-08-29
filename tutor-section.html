@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&amp;family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/app-shell.css?v=20260829">
-  <link rel="stylesheet" href="/assets/css/tutor-pro.css?v=20260829">
+  <link rel="stylesheet" href="/assets/css/tutor-pro.css?v=20260829.2">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="bn_BD">
   <meta property="og:site_name" content="আপনার নিহোন">
@@ -70,6 +70,7 @@
           <button class="tutor-mode-btn active" type="button" data-mode="learn" aria-pressed="true"><span class="tutor-mode-icon"><i class="fa-solid fa-book-open" aria-hidden="true"></i></span><span class="tutor-mode-copy"><strong>বুঝিয়ে শেখান</strong><small>ব্যাকরণ · কানজি · শব্দ</small></span></button>
           <button class="tutor-mode-btn" type="button" data-mode="correct" aria-pressed="false"><span class="tutor-mode-icon"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i></span><span class="tutor-mode-copy"><strong>বাক্য ঠিক করুন</strong><small>ভুল ও natural expression</small></span></button>
           <button class="tutor-mode-btn" type="button" data-mode="conversation" aria-pressed="false"><span class="tutor-mode-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></span><span class="tutor-mode-copy"><strong>কথোপকথন</strong><small>এক ধাপ করে role-play</small></span></button>
+          <button class="tutor-mode-btn" type="button" data-mode="interview" aria-pressed="false"><span class="tutor-mode-icon"><i class="fa-solid fa-user-tie" aria-hidden="true"></i></span><span class="tutor-mode-copy"><strong>ইন্টারভিউ কোচ</strong><small>Job · School · Embassy</small></span></button>
           <button class="tutor-mode-btn" type="button" data-mode="quiz" aria-pressed="false"><span class="tutor-mode-icon"><i class="fa-solid fa-circle-question" aria-hidden="true"></i></span><span class="tutor-mode-copy"><strong>কুইজ প্র্যাকটিস</strong><small>একবারে একটি প্রশ্ন</small></span></button>
           <button class="tutor-mode-btn" type="button" data-mode="translate" aria-pressed="false"><span class="tutor-mode-icon"><i class="fa-solid fa-language" aria-hidden="true"></i></span><span class="tutor-mode-copy"><strong>অনুবাদ ও বিশ্লেষণ</strong><small>Natural + literal breakdown</small></span></button>
         </div>
@@ -87,12 +88,21 @@
         <div class="tutor-context-right"><span class="tutor-usage">আজ <b id="dailyUsage">০</b>/২০</span></div>
       </div>
 
-      <div class="tutor-mobile-modes" id="mobileModes" aria-label="শেখার মোড">
-        <button class="tutor-mobile-mode active" type="button" data-mode="learn" aria-pressed="true">শেখান</button>
-        <button class="tutor-mobile-mode" type="button" data-mode="correct" aria-pressed="false">বাক্য ঠিক</button>
-        <button class="tutor-mobile-mode" type="button" data-mode="conversation" aria-pressed="false">কথোপকথন</button>
-        <button class="tutor-mobile-mode" type="button" data-mode="quiz" aria-pressed="false">কুইজ</button>
-        <button class="tutor-mobile-mode" type="button" data-mode="translate" aria-pressed="false">অনুবাদ</button>
+      <div class="tutor-mobile-controls" aria-label="দ্রুত শেখার সেটিংস">
+        <div class="tutor-mobile-levels" aria-label="JLPT লেভেল">
+          <span>লেভেল</span>
+          <button class="tutor-mobile-level active" type="button" data-level="N5" aria-pressed="true">N5</button>
+          <button class="tutor-mobile-level" type="button" data-level="N4" aria-pressed="false">N4</button>
+          <button class="tutor-mobile-level" type="button" data-level="N3" aria-pressed="false">N3</button>
+        </div>
+        <div class="tutor-mobile-modes" id="mobileModes" aria-label="শেখার মোড">
+          <button class="tutor-mobile-mode active" type="button" data-mode="learn" aria-pressed="true">শেখান</button>
+          <button class="tutor-mobile-mode" type="button" data-mode="correct" aria-pressed="false">বাক্য ঠিক</button>
+          <button class="tutor-mobile-mode" type="button" data-mode="conversation" aria-pressed="false">কথোপকথন</button>
+          <button class="tutor-mobile-mode" type="button" data-mode="interview" aria-pressed="false">ইন্টারভিউ</button>
+          <button class="tutor-mobile-mode" type="button" data-mode="quiz" aria-pressed="false">কুইজ</button>
+          <button class="tutor-mobile-mode" type="button" data-mode="translate" aria-pressed="false">অনুবাদ</button>
+        </div>
       </div>
 
       <div class="tutor-chat" id="tutorChat" aria-live="polite" aria-busy="false">
@@ -167,7 +177,7 @@
   <div class="tutor-toast" id="tutorToast" role="status" aria-live="polite"><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span></span></div>
 
   <script defer src="/assets/js/app-shell.js?v=20260829"></script>
-  <script defer src="/assets/js/tutor-pro.js?v=20260829"></script>
+  <script defer src="/assets/js/tutor-pro.js?v=20260829.2"></script>
   <script defer src="/activity-tracker.js"></script>
 </body>
 </html>

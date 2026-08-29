@@ -6,7 +6,7 @@ type TutorHistoryItem = {
 };
 
 type TutorLevel = "N5" | "N4" | "N3";
-type TutorMode = "learn" | "correct" | "conversation" | "quiz" | "translate";
+type TutorMode = "learn" | "correct" | "conversation" | "interview" | "quiz" | "translate";
 type TutorDepth = "quick" | "standard" | "deep";
 
 type TutorRequest = {
@@ -21,7 +21,7 @@ type TutorRequest = {
 type TutorModelReply = {
   text: string;
   model: string;
-  provider: "gemini" | "workers-ai";
+  provider: "gemini" | "workers-ai" | "local";
 };
 
 type N3MatomeRule = [
@@ -49,7 +49,7 @@ const MAX_HISTORY_ITEM_CHARS = 2_000;
 const MAX_HISTORY_CHARS = 10_000;
 const MAX_UPSTREAM_BYTES = 262_144;
 const TUTOR_LEVELS: readonly TutorLevel[] = ["N5", "N4", "N3"];
-const TUTOR_MODES: readonly TutorMode[] = ["learn", "correct", "conversation", "quiz", "translate"];
+const TUTOR_MODES: readonly TutorMode[] = ["learn", "correct", "conversation", "interview", "quiz", "translate"];
 const TUTOR_DEPTHS: readonly TutorDepth[] = ["quick", "standard", "deep"];
 
 const SYSTEM_INSTRUCTION = `You are “Aponar Nihon AI Tutor”, an exceptionally careful Japanese-language teacher for Bangla-speaking learners preparing for JLPT N5, N4 and N3.
@@ -71,7 +71,9 @@ Teaching rules:
 14. Japanese readings must use the word's real contextual reading, not an on-yomi guessed from an individual kanji. In particular: 限る（かぎる）, 限らない（かぎらない）, and 〜とは限らない（〜とはかぎらない）. Silently re-read all furigana once before sending.
 15. Never write a romaji reading, English transliteration line, or Korean translation unless the learner explicitly requests it. “Reading” means kana, not Latin letters. A request such as “romaji দেবেন না” must be followed exactly.
 16. 〜わけではない is usually a partial or contextual denial: it rejects an assumed interpretation, reason, or blanket conclusion (“it is not that…”), often while leaving part of the surrounding idea true. Do not teach it as simple 100% complete negation. Do not invent double-negative examples such as 上手ではないわけではない unless the learner specifically asks about double negatives.
-17. A memory hook may be visual or conceptual, but must not claim a fake word origin or use an unrelated same-sound kanji as if it explained the grammar. Do not mark grammatical Japanese as wrong merely because another form is more formal or fits the intended nuance better; describe that distinction accurately.`;
+17. A memory hook may be visual or conceptual, but must not claim a fake word origin or use an unrelated same-sound kanji as if it explained the grammar. Do not mark grammatical Japanese as wrong merely because another form is more formal or fits the intended nuance better; describe that distinction accurately.
+18. Never claim to be ChatGPT, OpenAI, Gemini, Claude or any other specific model/provider. You are “আপনার নিহোন AI জাপানি টিউটর”. Internal providers can change and are not your learner-facing identity.
+19. For a casual greeting or small-talk message, answer warmly and naturally in one or two short Bangla sentences, then offer one concrete Japanese learning next step matched to the active level. Do not reply with a generic support-desk sentence.`;
 
 const WAKE_KAGIRANAI_REFERENCE = `Verified comparison reference — use these facts exactly and do not contradict them:
 - 〜わけではない: partial/contextual denial. It rejects an assumed interpretation or implication: “এমন নয় যে… / তার মানে এই নয় যে…”. It does not automatically deny the whole situation.
@@ -268,6 +270,7 @@ function tutorLearningInstruction(tutorRequest: TutorRequest): string {
     learn: "TEACH MODE: Explain the requested point step-by-step in Bangla. Match examples and practice to the selected JLPT level.",
     correct: "CORRECTION MODE: Always show these sections: ‘আপনার বাক্য’, ‘সঠিক/আরও স্বাভাবিক বাক্য’, and ‘কেন’. Preserve the intended meaning, distinguish grammatical from merely unnatural, then give one reusable corrected example.",
     conversation: "CONVERSATION MODE: Run a Japanese-first role-play one turn at a time. Ask exactly one short question or give one short prompt per reply. After the learner answers, briefly correct only important errors in Bangla, show a natural Japanese version, then continue with exactly one next turn. Do not write the whole dialogue at once.",
+    interview: "INTERVIEW MODE: Act as a realistic but supportive Japanese interviewer. First identify the requested track (part-time job, language school/university, embassy, or SSW) if it is not clear. Ask exactly one level-appropriate Japanese question per turn. After each learner answer, give a compact Bangla assessment, a corrected natural Japanese answer that preserves truthful facts, one delivery tip, and then exactly one next question. Never invent personal details for the learner and never present immigration advice as official guidance.",
     quiz: "QUIZ MODE: Give exactly one level-appropriate question at a time. Do not reveal the answer until the learner attempts it. After an attempt, mark it, explain briefly, then ask exactly one next question unless the learner asks to stop.",
     translate: "TRANSLATION MODE: Give a natural translation first, then a concise literal breakdown. Explain important particles, conjugation, register and one alternative expression when useful."
   };
@@ -496,7 +499,7 @@ function correctKnownReadingTypos(text: string): string {
 type WorkersAIModel = typeof PRIMARY_WORKERS_AI_MODEL | typeof SECONDARY_WORKERS_AI_MODEL;
 
 function completionBudget(tutorRequest: TutorRequest): number {
-  if (tutorRequest.mode === "conversation") return 1_200;
+  if (tutorRequest.mode === "conversation" || tutorRequest.mode === "interview") return 1_200;
   if (tutorRequest.mode === "quiz") return 1_600;
   if (tutorRequest.depth === "quick") return 1_600;
   if (tutorRequest.depth === "deep") return 5_200;
@@ -504,13 +507,32 @@ function completionBudget(tutorRequest: TutorRequest): number {
 }
 
 function responseTemperature(mode: TutorMode): number {
-  if (mode === "conversation") return 0.25;
+  if (mode === "conversation" || mode === "interview") return 0.25;
   if (mode === "correct" || mode === "quiz") return 0.05;
   return 0.1;
 }
 
+function isTutorIdentityQuestion(message: string): boolean {
+  const normalized = message.normalize("NFKC").toLowerCase();
+  return /\b(?:what|which)\s+(?:ai\s+)?model\b|\bmodel\s+(?:name|are you|is this)\b|কোন\s*(?:মডেল|model)|কি\s*(?:মডেল|model)|(?:মডেল|model).*(?:নাম|আছ|হও)|তুমি.*(?:chatgpt|openai|gemini|claude)|(?:モデル名|どのモデル)/i.test(normalized);
+}
+
+function casualTutorGreeting(level: TutorLevel, message: string): string | null {
+  const normalized = message.normalize("NFKC").trim().toLowerCase().replace(/[?!！？।.]+$/g, "").trim();
+  if (!/^(?:হাই|হ্যালো|সালাম|কি অবস্থা|কী অবস্থা|কেমন আছ|কেমন আছো|কেমন আছেন|hello|hi|hey|こんにちは|元気|お元気ですか)$/.test(normalized)) {
+    return null;
+  }
+  const nextSteps: Record<TutorLevel, string> = {
+    N5: "আজ **N5-এর ৫টি দরকারি শব্দ** শিখবেন, নাকি **です／ます** দিয়ে দুইটি বাক্য বানাবেন?",
+    N4: "আজ **N4-এর একটি grammar pattern** শিখবেন, নাকি ছোট **Japanese conversation** করবেন?",
+    N3: "আজ **N3 grammar nuance compare** করবেন, নাকি একটি ছোট **reading challenge** নেবেন?"
+  };
+  return `ভালো আছি—আপনার সঙ্গে Japanese practice করতে প্রস্তুত 😊\n\n${nextSteps[level]}`;
+}
+
 function preferredWorkersAIModels(tutorRequest: TutorRequest): WorkersAIModel[] {
   const multilingualFirst = tutorRequest.mode === "conversation"
+    || tutorRequest.mode === "interview"
     || tutorRequest.mode === "correct"
     || tutorRequest.mode === "translate";
   return multilingualFirst
@@ -566,6 +588,23 @@ async function callWorkersAI(
 }
 
 async function generateTutorReply(env: Env, tutorRequest: TutorRequest): Promise<TutorModelReply> {
+  if (isTutorIdentityQuestion(tutorRequest.message)) {
+    return {
+      text: "আমি **আপনার নিহোন AI জাপানি টিউটর**—N5, N4 ও N3 শিক্ষার্থীদের বাংলায় জাপানি শেখানোর জন্য তৈরি।\n\nআমার কাজ হলো grammar বুঝিয়ে দেওয়া, বাক্য ঠিক করা, কথোপকথন ও quiz practice করানো। ভেতরের AI provider বা model সময়ের সঙ্গে বদলাতে পারে, তাই আমি কোনো নির্দিষ্ট model-এর নাম দাবি করি না।",
+      model: "aponar-nihon-identity",
+      provider: "local"
+    };
+  }
+
+  const greeting = casualTutorGreeting(tutorRequest.level, tutorRequest.message);
+  if (greeting) {
+    return {
+      text: greeting,
+      model: "aponar-nihon-greeting",
+      provider: "local"
+    };
+  }
+
   for (const model of preferredWorkersAIModels(tutorRequest)) {
     try {
       return {

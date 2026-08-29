@@ -4,6 +4,7 @@ const criticalPages = [
   '/',
   '/n5.html',
   '/n4.html',
+  '/n4-reading.html',
   '/n3.html',
   '/quiz.html',
   '/interview.html',
@@ -56,6 +57,7 @@ test('high-value home links resolve locally', async ({ page, request }) => {
   const expected = [
     '/n5.html',
     '/n4.html',
+    '/n4-reading.html',
     '/n3.html',
     '/quiz.html',
     '/interview.html',
@@ -83,6 +85,8 @@ test('generated browser assets are available', async ({ request }) => {
     '/assets/js/n3-grammar-deep.js',
     '/assets/js/n3-matome-app.js',
     '/assets/js/n3-matome-data.js',
+    '/assets/css/learning-hub-pro.css',
+    '/assets/js/learning-hub-pro.js',
     '/assets/js/ts/platform.js',
     '/assets/data/search-index.json',
     '/assets/data/site-audit.json',
@@ -120,9 +124,50 @@ test('AI Tutor exposes level, mode, and depth controls', async ({ page }) => {
   await page.goto('/tutor-section.html', { waitUntil: 'domcontentloaded' });
   await expect(page.locator('#activeLevelLabel')).toBeVisible();
   await expect(page.locator('[data-mode="conversation"]').first()).toBeAttached();
+  await expect(page.locator('[data-mode="interview"]').first()).toBeAttached();
   await page.locator('#settingsButton').click();
   await expect(page.locator('#settingsDialog')).toBeVisible();
   await expect(page.locator('input[name="settingsDepth"][value="deep"]')).toBeAttached();
+});
+
+test('premium learning hubs expose dedicated resources and saved progress', async ({ page }) => {
+  for (const path of ['/n5.html', '/n4.html', '/n3.html', '/quiz.html', '/interview.html']) {
+    await page.goto(path, { waitUntil: 'domcontentloaded' });
+    await expect(page.locator('[data-learning-hub]')).toBeAttached();
+    await expect(page.locator('.lh-hero')).toBeVisible();
+    await expect(page.locator('[data-progress-value]')).toBeVisible();
+    expect(await page.locator('[data-track]').count(), `${path} needs dedicated subpage actions`).toBeGreaterThanOrEqual(3);
+  }
+});
+
+test('mobile AI Tutor reserves independent rows for controls, chat, and composer', async ({ page }, testInfo) => {
+  test.skip(!testInfo.project.name.includes('mobile'), 'mobile-specific layout check');
+  await page.goto('/tutor-section.html', { waitUntil: 'domcontentloaded' });
+  await expect(page.locator('.tutor-mobile-levels')).toBeVisible();
+
+  const metrics = await page.evaluate(() => {
+    const stage = document.querySelector('.tutor-stage');
+    const chat = document.querySelector('.tutor-chat');
+    const composer = document.querySelector('.tutor-composer-area');
+    if (!stage || !chat || !composer) return null;
+    const stageRect = stage.getBoundingClientRect();
+    const chatRect = chat.getBoundingClientRect();
+    const composerRect = composer.getBoundingClientRect();
+    return {
+      rows: getComputedStyle(stage).gridTemplateRows.split(' ').length,
+      chatHeight: chatRect.height,
+      chatBottom: chatRect.bottom,
+      composerTop: composerRect.top,
+      composerBottom: composerRect.bottom,
+      stageBottom: stageRect.bottom,
+    };
+  });
+
+  expect(metrics).not.toBeNull();
+  expect(metrics.rows).toBeGreaterThanOrEqual(4);
+  expect(metrics.chatHeight).toBeGreaterThan(120);
+  expect(metrics.chatBottom).toBeLessThanOrEqual(metrics.composerTop + 1);
+  expect(metrics.composerBottom).toBeLessThanOrEqual(metrics.stageBottom + 1);
 });
 
 test('mobile Matome week cards stay readable without text overlap', async ({ page }, testInfo) => {
