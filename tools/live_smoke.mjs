@@ -3,7 +3,16 @@ import process from 'node:process';
 
 const base = (process.env.ANON_LIVE_BASE_URL || 'https://app.aponar-nihon.workers.dev').replace(/\/$/, '');
 const checks = [
-  ['/', ['text/html']],
+  ['/', ['text/html'], ['সব গুরুত্বপূর্ণ সেকশন', '/assets/css/app-shell.css']],
+  ['/n5.html', ['text/html'], ['JLPT N5', '/n5-vocabulary.html']],
+  ['/n4.html', ['text/html'], ['JLPT N4', '/n4-vocabulary.html']],
+  ['/n3.html', ['text/html'], ['JLPT N3', '/n3-matome-grammar.html']],
+  ['/quiz.html', ['text/html'], ['JLPT কুইজ', '/mock-test.html']],
+  ['/interview.html', ['text/html'], ['ইন্টারভিউ প্রস্তুতি', '/embassy-interview.html']],
+  ['/japan-life.html', ['text/html'], ['জাপান লাইফ', '/japan-emergency-guide.html']],
+  ['/essential-phrases.html', ['text/html'], ['দরকারি জাপানি বাক্য', '/tutor-section.html']],
+  ['/study-guide.html', ['text/html'], ['স্টাডি গাইড', '/study-in-japan.html']],
+  ['/tutor-section.html', ['text/html'], ['data-mode="conversation"', '/assets/js/tutor-pro.js']],
   ['/n5-grammar.html', ['text/html']],
   ['/n4-grammar.html', ['text/html']],
   ['/n3-grammar.html', ['text/html']],
@@ -19,7 +28,7 @@ const checks = [
 
 const failures = [];
 
-for (const [pathname, expectedTypes] of checks) {
+for (const [pathname, expectedTypes, requiredFragments = []] of checks) {
   const url = new URL(pathname, `${base}/`);
   try {
     const response = await fetch(url, {
@@ -35,6 +44,11 @@ for (const [pathname, expectedTypes] of checks) {
     }
     if (!expectedTypes.some((type) => contentType.toLowerCase().includes(type))) {
       failures.push(`${pathname}: expected ${expectedTypes.join(' or ')}, got ${contentType || 'no content-type'}`);
+      continue;
+    }
+    const missingFragment = requiredFragments.find((fragment) => !body.includes(fragment));
+    if (missingFragment) {
+      failures.push(`${pathname}: expected deployed marker ${JSON.stringify(missingFragment)}`);
       continue;
     }
 
