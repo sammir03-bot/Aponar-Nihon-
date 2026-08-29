@@ -86,7 +86,9 @@ test('generated browser assets are available', async ({ request }) => {
     '/assets/js/n3-matome-app.js',
     '/assets/js/n3-matome-data.js',
     '/assets/css/learning-hub-pro.css',
+    '/assets/css/app-menu.css',
     '/assets/js/learning-hub-pro.js',
+    '/assets/js/app-menu.js',
     '/assets/js/ts/platform.js',
     '/assets/data/search-index.json',
     '/assets/data/site-audit.json',
@@ -138,6 +140,29 @@ test('premium learning hubs expose dedicated resources and saved progress', asyn
     await expect(page.locator('[data-progress-value]')).toBeVisible();
     expect(await page.locator('[data-track]').count(), `${path} needs dedicated subpage actions`).toBeGreaterThanOrEqual(3);
   }
+});
+
+test('shared app menu opens, highlights the section, and closes accessibly', async ({ page }) => {
+  const menuPages = ['/n5.html', '/n4.html', '/n4-reading.html', '/n3.html', '/quiz.html', '/interview.html', '/tutor-section.html'];
+
+  for (const path of menuPages) {
+    await page.goto(path, { waitUntil: 'domcontentloaded' });
+    await expect(page.locator('[data-app-menu-open]')).toBeAttached();
+    await expect(page.locator('#appMenu')).toBeAttached();
+  }
+
+  await page.goto('/n5.html', { waitUntil: 'domcontentloaded' });
+  const opener = page.locator('[data-app-menu-open]');
+  await expect(opener).toHaveAttribute('aria-expanded', 'false');
+  await opener.click();
+  await expect(page.locator('#appMenu')).toBeVisible();
+  await expect(opener).toHaveAttribute('aria-expanded', 'true');
+  await expect(page.locator('.app-menu-link[aria-current="page"] .app-menu-link-copy strong')).toHaveText('JLPT N5');
+  expect(await page.locator('.app-menu-link').count()).toBeGreaterThanOrEqual(12);
+
+  await page.keyboard.press('Escape');
+  await expect(page.locator('#appMenu')).toBeHidden();
+  await expect(opener).toHaveAttribute('aria-expanded', 'false');
 });
 
 test('mobile AI Tutor reserves independent rows for controls, chat, and composer', async ({ page }, testInfo) => {

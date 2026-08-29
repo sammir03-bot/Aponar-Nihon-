@@ -4,7 +4,7 @@ import process from 'node:process';
 const base = (process.env.ANON_LIVE_BASE_URL || 'https://app.aponar-nihon.workers.dev').replace(/\/$/, '');
 const checks = [
   ['/', ['text/html'], ['সব গুরুত্বপূর্ণ সেকশন', '/assets/css/app-shell.css']],
-  ['/n5.html', ['text/html'], ['JLPT N5', '/n5-vocabulary.html', '/assets/css/learning-hub-pro.css']],
+  ['/n5.html', ['text/html'], ['JLPT N5', '/n5-vocabulary.html', '/assets/css/learning-hub-pro.css', '/assets/js/app-menu.js', 'data-app-menu-open']],
   ['/n4.html', ['text/html'], ['JLPT N4', '/n4-vocabulary.html', '/n4-reading.html']],
   ['/n3.html', ['text/html'], ['JLPT N3', '/n3-matome-grammar.html', '/assets/js/learning-hub-pro.js']],
   ['/quiz.html', ['text/html'], ['JLPT কুইজ', '/mock-test.html', 'data-learning-hub="quiz"']],
@@ -13,7 +13,7 @@ const checks = [
   ['/japan-life.html', ['text/html'], ['জাপান লাইফ', '/japan-emergency-guide.html']],
   ['/essential-phrases.html', ['text/html'], ['দরকারি জাপানি বাক্য', '/tutor-section.html']],
   ['/study-guide.html', ['text/html'], ['স্টাডি গাইড', '/study-in-japan.html']],
-  ['/tutor-section.html', ['text/html'], ['data-mode="conversation"', 'data-mode="interview"', '/assets/js/tutor-pro.js']],
+  ['/tutor-section.html', ['text/html'], ['data-mode="conversation"', 'data-mode="interview"', '/assets/js/tutor-pro.js', '/assets/js/app-menu.js', 'data-app-menu-open']],
   ['/n5-grammar.html', ['text/html']],
   ['/n4-grammar.html', ['text/html']],
   ['/n3-grammar.html', ['text/html']],
