@@ -21,10 +21,9 @@
   ],
   "prefer_related_applications": false,
   "shortcuts": [
-    {"name":"Grammar VS","short_name":"Grammar VS","url":"/grammar-vs.html"},
-    {"name":"Muslim Japan","short_name":"Muslim Japan","url":"/muslim-japan.html"},
-    {"name":"Student Toolkit","short_name":"Toolkit","url":"/student-tools.html#toolkit"},
-    {"name":"Japan CV Builder","short_name":"CV Builder","url":"/cv-builder.html"},
-    {"name":"Mock Test","short_name":"Mock Test","url":"/mock-test.html"}
+    {"name":"AI জাপানি টিউটর","short_name":"AI Tutor","url":"/tutor-section.html"},
+    {"name":"JLPT N5 শেখা","short_name":"JLPT N5","url":"/n5.html"},
+    {"name":"JLPT N3 শেখা","short_name":"JLPT N3","url":"/n3.html"},
+    {"name":"JLPT Mock Test","short_name":"Mock Test","url":"/mock-test.html"}
   ]
 }

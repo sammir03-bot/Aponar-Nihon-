@@ -5,10 +5,17 @@ type TutorHistoryItem = {
   text: string;
 };
 
+type TutorLevel = "N5" | "N4" | "N3";
+type TutorMode = "learn" | "correct" | "conversation" | "quiz" | "translate";
+type TutorDepth = "quick" | "standard" | "deep";
+
 type TutorRequest = {
   message: string;
   history: TutorHistoryItem[];
   clientId: string;
+  level: TutorLevel;
+  mode: TutorMode;
+  depth: TutorDepth;
 };
 
 type TutorModelReply = {
@@ -41,6 +48,9 @@ const MAX_HISTORY_ITEMS = 8;
 const MAX_HISTORY_ITEM_CHARS = 2_000;
 const MAX_HISTORY_CHARS = 10_000;
 const MAX_UPSTREAM_BYTES = 262_144;
+const TUTOR_LEVELS: readonly TutorLevel[] = ["N5", "N4", "N3"];
+const TUTOR_MODES: readonly TutorMode[] = ["learn", "correct", "conversation", "quiz", "translate"];
+const TUTOR_DEPTHS: readonly TutorDepth[] = ["quick", "standard", "deep"];
 
 const SYSTEM_INSTRUCTION = `You are “Aponar Nihon AI Tutor”, an exceptionally careful Japanese-language teacher for Bangla-speaking learners preparing for JLPT N5, N4 and N3.
 
@@ -225,20 +235,64 @@ async function parseTutorRequest(request: Request): Promise<TutorRequest> {
     throw new HttpError(400, "client_id_required", "Browser পরিচয় পাওয়া যায়নি। পেজটি refresh করুন।");
   }
 
+  const rawLevel = typeof parsed.level === "string" ? parsed.level.toUpperCase() : "N5";
+  const rawMode = typeof parsed.mode === "string" ? parsed.mode.toLowerCase() : "learn";
+  const rawDepth = typeof parsed.depth === "string" ? parsed.depth.toLowerCase() : "standard";
+  if (!TUTOR_LEVELS.includes(rawLevel as TutorLevel)) {
+    throw new HttpError(400, "invalid_level", "JLPT level হিসেবে N5, N4 অথবা N3 বেছে নিন।");
+  }
+  if (!TUTOR_MODES.includes(rawMode as TutorMode)) {
+    throw new HttpError(400, "invalid_mode", "শেখার mode সঠিক নয়। আবার বেছে নিন।");
+  }
+  if (!TUTOR_DEPTHS.includes(rawDepth as TutorDepth)) {
+    throw new HttpError(400, "invalid_depth", "উত্তরের বিস্তারিত মাত্রা সঠিক নয়।");
+  }
+
   return {
     message,
     history: validateHistory(parsed.history),
-    clientId
+    clientId,
+    level: rawLevel as TutorLevel,
+    mode: rawMode as TutorMode,
+    depth: rawDepth as TutorDepth
   };
 }
 
-function interactionInput(history: TutorHistoryItem[], message: string): string {
-  const transcript = history.map((item) => {
+function tutorLearningInstruction(tutorRequest: TutorRequest): string {
+  const levelInstructions: Record<TutorLevel, string> = {
+    N5: "The learner is at JLPT N5. Use beginner vocabulary, short Japanese sentences and N5 grammar unless a comparison requires one clearly labelled higher-level form.",
+    N4: "The learner is at JLPT N4. Use N4 vocabulary and grammar, connect explanations to N5 foundations, and label any N3 form as advanced.",
+    N3: "The learner is at JLPT N3. Use natural intermediate Japanese, teach nuance and register, and compare easily confused N3 patterns when useful."
+  };
+  const modeInstructions: Record<TutorMode, string> = {
+    learn: "TEACH MODE: Explain the requested point step-by-step in Bangla. Match examples and practice to the selected JLPT level.",
+    correct: "CORRECTION MODE: Always show these sections: ‘আপনার বাক্য’, ‘সঠিক/আরও স্বাভাবিক বাক্য’, and ‘কেন’. Preserve the intended meaning, distinguish grammatical from merely unnatural, then give one reusable corrected example.",
+    conversation: "CONVERSATION MODE: Run a Japanese-first role-play one turn at a time. Ask exactly one short question or give one short prompt per reply. After the learner answers, briefly correct only important errors in Bangla, show a natural Japanese version, then continue with exactly one next turn. Do not write the whole dialogue at once.",
+    quiz: "QUIZ MODE: Give exactly one level-appropriate question at a time. Do not reveal the answer until the learner attempts it. After an attempt, mark it, explain briefly, then ask exactly one next question unless the learner asks to stop.",
+    translate: "TRANSLATION MODE: Give a natural translation first, then a concise literal breakdown. Explain important particles, conjugation, register and one alternative expression when useful."
+  };
+  const depthInstructions: Record<TutorDepth, string> = {
+    quick: "DEPTH: Keep the answer compact and immediately useful, normally 4–8 short lines. Do not omit a correction or essential warning.",
+    standard: "DEPTH: Give a balanced answer with enough examples to understand and practise, without repeating the same point.",
+    deep: "DEPTH: Teach thoroughly with formation, nuance, multiple natural examples, common mistakes, comparison, memory hook and a small practice item when relevant. Finish every promised section."
+  };
+
+  return [
+    `Active learner profile: JLPT ${tutorRequest.level}.`,
+    levelInstructions[tutorRequest.level],
+    modeInstructions[tutorRequest.mode],
+    depthInstructions[tutorRequest.depth],
+    "Treat this profile as an instructional setting, not as text to quote back to the learner."
+  ].join("\n");
+}
+
+function interactionInput(tutorRequest: TutorRequest): string {
+  const transcript = tutorRequest.history.map((item) => {
     const speaker = item.role === "bot" ? "টিউটর" : "শিক্ষার্থী";
     return `${speaker}: ${item.text}`;
   });
-  transcript.push(`শিক্ষার্থী: ${message}`);
-  return `${SYSTEM_INSTRUCTION}\n\n--- Learner conversation ---\nআগের কথোপকথনটি শুধু প্রাসঙ্গিক context হিসেবে ব্যবহার করুন। শেষ শিক্ষার্থীর প্রশ্নের উত্তর দিন।\n\n${transcript.join("\n\n")}`;
+  transcript.push(`শিক্ষার্থী: ${tutorRequest.message}`);
+  return `${SYSTEM_INSTRUCTION}\n\n--- Active learning profile ---\n${tutorLearningInstruction(tutorRequest)}\n\n--- Learner conversation ---\nআগের কথোপকথনটি শুধু প্রাসঙ্গিক context হিসেবে ব্যবহার করুন। শেষ শিক্ষার্থীর প্রশ্নের উত্তর দিন।\n\n${transcript.join("\n\n")}`;
 }
 
 function extractInteractionText(value: unknown): string | null {
@@ -273,7 +327,7 @@ async function callGemini(env: Env, tutorRequest: TutorRequest): Promise<string>
     },
     body: JSON.stringify({
       model,
-      input: interactionInput(tutorRequest.history, tutorRequest.message)
+      input: interactionInput(tutorRequest)
     }),
     signal: AbortSignal.timeout(10_000)
   });
@@ -439,6 +493,31 @@ function correctKnownReadingTypos(text: string): string {
     .replaceAll("限（げん）りません", "限（かぎ）りません");
 }
 
+type WorkersAIModel = typeof PRIMARY_WORKERS_AI_MODEL | typeof SECONDARY_WORKERS_AI_MODEL;
+
+function completionBudget(tutorRequest: TutorRequest): number {
+  if (tutorRequest.mode === "conversation") return 1_200;
+  if (tutorRequest.mode === "quiz") return 1_600;
+  if (tutorRequest.depth === "quick") return 1_600;
+  if (tutorRequest.depth === "deep") return 5_200;
+  return 3_200;
+}
+
+function responseTemperature(mode: TutorMode): number {
+  if (mode === "conversation") return 0.25;
+  if (mode === "correct" || mode === "quiz") return 0.05;
+  return 0.1;
+}
+
+function preferredWorkersAIModels(tutorRequest: TutorRequest): WorkersAIModel[] {
+  const multilingualFirst = tutorRequest.mode === "conversation"
+    || tutorRequest.mode === "correct"
+    || tutorRequest.mode === "translate";
+  return multilingualFirst
+    ? [SECONDARY_WORKERS_AI_MODEL, PRIMARY_WORKERS_AI_MODEL]
+    : [PRIMARY_WORKERS_AI_MODEL, SECONDARY_WORKERS_AI_MODEL];
+}
+
 async function workersAIMessages(env: Env, tutorRequest: TutorRequest): Promise<Array<{
   role: "system" | "user" | "assistant";
   content: string;
@@ -446,6 +525,7 @@ async function workersAIMessages(env: Env, tutorRequest: TutorRequest): Promise<
   const reference = await n3GrammarReference(env, tutorRequest.message);
   const messages: Array<{ role: "system" | "user" | "assistant"; content: string }> = [
     { role: "system", content: SYSTEM_INSTRUCTION },
+    { role: "system", content: tutorLearningInstruction(tutorRequest) },
   ];
   if (reference) messages.push({ role: "system", content: reference });
   messages.push(
@@ -461,16 +541,18 @@ async function workersAIMessages(env: Env, tutorRequest: TutorRequest): Promise<
 async function callWorkersAI(
   env: Env,
   tutorRequest: TutorRequest,
-  model: typeof PRIMARY_WORKERS_AI_MODEL | typeof SECONDARY_WORKERS_AI_MODEL
+  model: WorkersAIModel
 ): Promise<string> {
   const messages = await workersAIMessages(env, tutorRequest);
 
   const input = {
     messages,
-    max_completion_tokens: 5_200,
-    reasoning_effort: "low" as const,
+    max_completion_tokens: completionBudget(tutorRequest),
+    reasoning_effort: tutorRequest.depth === "deep" && model === PRIMARY_WORKERS_AI_MODEL
+      ? "medium" as const
+      : "low" as const,
     chat_template_kwargs: { enable_thinking: false },
-    temperature: 0.1
+    temperature: responseTemperature(tutorRequest.mode)
   };
   const options = { signal: AbortSignal.timeout(75_000) };
   const output = model === PRIMARY_WORKERS_AI_MODEL
@@ -484,32 +566,21 @@ async function callWorkersAI(
 }
 
 async function generateTutorReply(env: Env, tutorRequest: TutorRequest): Promise<TutorModelReply> {
-  try {
-    return {
-      text: await callWorkersAI(env, tutorRequest, PRIMARY_WORKERS_AI_MODEL),
-      model: PRIMARY_WORKERS_AI_MODEL,
-      provider: "workers-ai"
-    };
-  } catch (error) {
-    console.warn(JSON.stringify({
-      event: "workers_ai_primary_failed",
-      model: PRIMARY_WORKERS_AI_MODEL,
-      reason: error instanceof HttpError ? error.code : "request_failed"
-    }));
-  }
-
-  try {
-    return {
-      text: await callWorkersAI(env, tutorRequest, SECONDARY_WORKERS_AI_MODEL),
-      model: SECONDARY_WORKERS_AI_MODEL,
-      provider: "workers-ai"
-    };
-  } catch (error) {
-    console.warn(JSON.stringify({
-      event: "workers_ai_secondary_failed",
-      model: SECONDARY_WORKERS_AI_MODEL,
-      reason: error instanceof HttpError ? error.code : "request_failed"
-    }));
+  for (const model of preferredWorkersAIModels(tutorRequest)) {
+    try {
+      return {
+        text: await callWorkersAI(env, tutorRequest, model),
+        model,
+        provider: "workers-ai"
+      };
+    } catch (error) {
+      console.warn(JSON.stringify({
+        event: "workers_ai_model_failed",
+        mode: tutorRequest.mode,
+        model,
+        reason: error instanceof HttpError ? error.code : "request_failed"
+      }));
+    }
   }
 
   try {
@@ -548,14 +619,18 @@ async function handleTutor(
     request_id: rid,
     model: reply.model,
     provider: reply.provider,
+    level: tutorRequest.level,
+    mode: tutorRequest.mode,
+    depth: tutorRequest.depth,
     duration_ms: Date.now() - startedAt
   }));
 
   return json({
     ok: true,
     response: reply.text,
-    model: reply.model,
-    provider: reply.provider,
+    level: tutorRequest.level,
+    mode: tutorRequest.mode,
+    depth: tutorRequest.depth,
     request_id: rid
   }, 200, origin);
 }

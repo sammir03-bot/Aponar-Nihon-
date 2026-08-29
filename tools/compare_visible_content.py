@@ -10,6 +10,15 @@ from sitecore.htmltools import visible_text_hash
 
 ROOT = Path(__file__).resolve().parents[1]
 
+# These pages were deliberately rebuilt as lightweight app surfaces. Their
+# previous visible content is kept byte-for-byte in noindex archive pages so
+# the zero-content-loss guarantee remains enforceable while the live routes can
+# evolve. Add to this map only when a product change explicitly moves a page.
+MOVED_PAGE_ARCHIVES = {
+    "index.html": "archive/home-full-legacy.html",
+    "tutor-section.html": "archive/tutor-section-legacy.html",
+}
+
 
 def git(*args: str) -> str:
     return subprocess.check_output(
@@ -48,6 +57,16 @@ def main() -> int:
 
         checked += 1
         if visible_text_hash(base_html) != visible_text_hash(current_html):
+            archive_rel = MOVED_PAGE_ARCHIVES.get(rel)
+            if archive_rel:
+                archive_path = ROOT / archive_rel
+                try:
+                    archive_html = archive_path.read_text(encoding="utf-8")
+                except (FileNotFoundError, UnicodeDecodeError):
+                    changed.append(rel)
+                    continue
+                if visible_text_hash(base_html) == visible_text_hash(archive_html):
+                    continue
             changed.append(rel)
 
     print(f"Base HTML files checked: {checked}")

@@ -2,6 +2,15 @@ import { test, expect } from '@playwright/test';
 
 const criticalPages = [
   '/',
+  '/n5.html',
+  '/n4.html',
+  '/n3.html',
+  '/quiz.html',
+  '/interview.html',
+  '/japan-life.html',
+  '/essential-phrases.html',
+  '/study-guide.html',
+  '/tutor-section.html',
   '/n5-grammar.html',
   '/n5-vocabulary.html',
   '/n4-grammar.html',
@@ -45,10 +54,15 @@ test('home page has no duplicate ids', async ({ page }) => {
 test('high-value home links resolve locally', async ({ page, request }) => {
   await page.goto('/', { waitUntil: 'domcontentloaded' });
   const expected = [
-    '/n5-grammar.html',
-    '/n4-grammar.html',
-    '/n3-grammar.html',
-    '/n3-matome-grammar.html',
+    '/n5.html',
+    '/n4.html',
+    '/n3.html',
+    '/quiz.html',
+    '/interview.html',
+    '/japan-life.html',
+    '/essential-phrases.html',
+    '/study-guide.html',
+    '/tutor-section.html',
     '/cv-builder.html',
     '/mock-test.html',
     '/profile.html',
@@ -81,11 +95,11 @@ test('generated browser assets are available', async ({ request }) => {
 test('mobile home dock stays compact and content-safe', async ({ page }, testInfo) => {
   test.skip(!testInfo.project.name.includes('mobile'), 'mobile-specific layout check');
   await page.goto('/', { waitUntil: 'domcontentloaded' });
-  const dock = page.locator('.app-bottom-nav');
+  const dock = page.locator('.app-dock');
   await expect(dock).toBeVisible();
 
   const metrics = await page.evaluate(() => {
-    const nav = document.querySelector('.app-bottom-nav');
+    const nav = document.querySelector('.app-dock');
     if (!nav) return null;
     const navRect = nav.getBoundingClientRect();
     const bodyStyle = getComputedStyle(document.body);
@@ -100,6 +114,15 @@ test('mobile home dock stays compact and content-safe', async ({ page }, testInf
   expect(metrics.height).toBeLessThanOrEqual(82);
   expect(metrics.bottomPadding).toBeGreaterThanOrEqual(60);
   expect(metrics.height).toBeLessThan(metrics.viewportHeight * 0.16);
+});
+
+test('AI Tutor exposes level, mode, and depth controls', async ({ page }) => {
+  await page.goto('/tutor-section.html', { waitUntil: 'domcontentloaded' });
+  await expect(page.locator('[data-level="N5"]')).toBeVisible();
+  await expect(page.locator('[data-mode="conversation"]').first()).toBeVisible();
+  await page.locator('#settingsButton').click();
+  await expect(page.locator('#settingsDialog')).toBeVisible();
+  await expect(page.locator('input[name="settingsDepth"][value="deep"]')).toBeAttached();
 });
 
 test('mobile Matome week cards stay readable without text overlap', async ({ page }, testInfo) => {

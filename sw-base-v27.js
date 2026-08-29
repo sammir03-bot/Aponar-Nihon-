@@ -1,11 +1,25 @@
-const STATIC_CACHE = "aponar-nihon-static-v27";
-const DYNAMIC_CACHE = "aponar-nihon-dynamic-v27";
+const STATIC_CACHE = "aponar-nihon-static-v28";
+const DYNAMIC_CACHE = "aponar-nihon-dynamic-v28";
 
 const STATIC_ASSETS = [
   "/",
   "/index.html",
   "/manifest.json",
   "/logo.png",
+  "/assets/css/app-shell.css?v=20260829",
+  "/assets/css/tutor-pro.css?v=20260829",
+  "/assets/js/app-shell.js?v=20260829",
+  "/assets/js/tutor-pro.js?v=20260829",
+  "/n5.html",
+  "/n4.html",
+  "/n3.html",
+  "/quiz.html",
+  "/interview.html",
+  "/japan-life.html",
+  "/essential-phrases.html",
+  "/study-guide.html",
+  "/tutor-section.html",
+  "/mock-test.html",
   "/aponar-nihon(1).png",
   "/ebook-library.html",
   "/student-tools.html",

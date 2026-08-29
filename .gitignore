@@ -16,6 +16,8 @@ assets/js/ts/
 playwright-report/
 test-results/
 .lighthouseci/
+__pycache__/
+*.py[cod]
 
 # Editor/OS
 .DS_Store

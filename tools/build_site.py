@@ -22,6 +22,7 @@ EXCLUDED_FILES = {
     ".gitignore", "package.json", "tsconfig.web.json", "tsconfig.worker.json",
     "tsconfig.types.json", "playwright.config.mjs", "lighthouserc.cjs",
     "wrangler.toml", "ARCHITECTURE.md", "SECURITY.md", "CNAME",
+    "archive/home-full-legacy.html", "archive/tutor-section-legacy.html",
 }
 
 PRO_CSS = '<link rel="stylesheet" href="/assets/css/pro-core.css?v=20260825">'

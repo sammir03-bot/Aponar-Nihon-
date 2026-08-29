@@ -1,6 +1,6 @@
-/* Aponar Nihon service-worker wrapper — fresh N3 vocabulary and grammar pages.
-   Keeps the proven v27 worker intact, while making the updated N3 guides
-   network-first so mobile visitors do not receive an older cached version. */
+/* Aponar Nihon service-worker wrapper — app shell v28.
+   The dashboard, dedicated section hubs and AI Tutor assets are available
+   offline after install, while updated learning pages stay network-first. */
 
 const __anNativeAddEventListener = self.addEventListener.bind(self);
 let __anLegacyFetchListener = null;
