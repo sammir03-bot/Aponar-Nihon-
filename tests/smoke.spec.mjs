@@ -18,6 +18,7 @@ const criticalPages = [
   '/n4-vocabulary.html',
   '/n3-grammar.html',
   '/n3-matome-grammar.html',
+  '/grammar-vs.html',
   '/n3-vocabulary.html',
   '/mock-test.html',
   '/profile.html',
@@ -85,6 +86,7 @@ test('generated browser assets are available', async ({ request }) => {
     '/assets/js/n3-grammar-deep.js',
     '/assets/js/n3-matome-app.js',
     '/assets/js/n3-matome-data.js',
+    '/assets/js/n3-matome-details.js',
     '/assets/css/learning-hub-pro.css',
     '/assets/css/app-menu.css',
     '/assets/js/learning-hub-pro.js',
@@ -219,4 +221,39 @@ test('mobile Matome week cards stay readable without text overlap', async ({ pag
   }));
 
   expect(issues).toEqual([]);
+});
+
+test('Matome exposes complete Part, Day, explanation, and example coverage', async ({ page }) => {
+  await page.goto('/n3-matome-grammar.html', { waitUntil: 'domcontentloaded' });
+
+  await expect(page.locator('.week-card')).toHaveCount(7);
+  await expect(page.locator('.part-group')).toHaveCount(6);
+  await expect(page.locator('.day-group')).toHaveCount(36);
+  await expect(page.locator('.rule-card')).toHaveCount(132);
+  await expect(page.locator('.rule-card:not(.hidden)')).toHaveCount(3);
+
+  const firstLesson = page.locator('.rule-card:not(.hidden)').first();
+  await expect(firstLesson.locator('.deep-explanation')).not.toBeEmpty();
+  await expect(firstLesson.locator('.why-cell')).toContainText('কেন ব্যবহার করবেন');
+  await expect(firstLesson.locator('.when-cell')).toContainText('কোন সময় ব্যবহার করবেন');
+  await expect(firstLesson.locator('.mistake-cell')).toContainText('common ভুল');
+  await expect(firstLesson.locator('.memory-cell')).toContainText('ঠান্ডা মাথায়');
+  await expect(firstLesson.locator('.real-example')).toHaveCount(3);
+  await expect(firstLesson.locator('.example-bn')).toHaveCount(3);
+});
+
+test('Grammar VS is organized into Parts with full learning support', async ({ page }) => {
+  await page.goto('/grammar-vs.html', { waitUntil: 'domcontentloaded' });
+
+  await expect(page.locator('.part-nav button')).toHaveCount(6);
+  await expect(page.locator('.vs-part')).toHaveCount(5);
+  await expect(page.locator('.card')).toHaveCount(21);
+
+  const firstComparison = page.locator('.card').first();
+  await expect(firstComparison.locator('.why-use')).toContainText('কেন');
+  await expect(firstComparison.locator('.details .box')).toHaveCount(2);
+  await expect(firstComparison.locator('.ex small')).toHaveCount(2);
+  await expect(firstComparison.locator('.trap')).toContainText('common ভুল');
+  await expect(firstComparison.locator('.memory-calm')).toContainText('মনে রাখার টিপস');
+  await expect(firstComparison.locator('.recall')).toContainText('Practice');
 });
