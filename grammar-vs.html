@@ -4,6 +4,8 @@
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}body{margin:0;background:linear-gradient(180deg,#f5f1ff,#f8fbff 45%,#f3f7fb);color:#26354f;font-family:'Noto Sans Bengali','Inter',sans-serif}.jp{font-family:'Noto Sans JP',sans-serif}.wrap{width:min(1140px,calc(100% - 22px));margin:auto}.top{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);backdrop-filter:blur(16px);border-bottom:1px solid #e6e0f2}.nav{height:68px;display:flex;align-items:center;gap:10px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#283756;font-weight:900}.brand img{width:42px;height:42px}.spacer{flex:1}.home{width:42px;height:42px;border:1px solid #e2ddec;border-radius:13px;background:#fff;display:grid;place-items:center;color:#6847b0;text-decoration:none}.hero{padding:20px 0 14px}.hero-card{position:relative;overflow:hidden;border-radius:30px;padding:26px;background:linear-gradient(135deg,#6241aa,#7655c6 58%,#a56ad3);color:#fff;box-shadow:0 22px 56px rgba(96,66,166,.24)}.hero-card:after{content:'VS';position:absolute;right:16px;top:-25px;font:900 150px/1 'Inter';opacity:.09}.kicker{font:800 10px 'Inter';letter-spacing:.16em;opacity:.8}.hero h1{font-size:clamp(29px,7vw,46px);line-height:1.08;margin:6px 0}.hero p{margin:0;max-width:800px;font-size:13px;opacity:.91}.notice{margin-top:14px;padding:10px 12px;border-radius:13px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.17);font-size:10px}.toolbar{position:sticky;top:68px;z-index:45;background:rgba(247,248,253,.95);backdrop-filter:blur(14px);padding:10px 0}.tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.tab{height:48px;border:1px solid #dfd8ee;border-radius:14px;background:#fff;color:#5a4b79;font-weight:900;cursor:pointer}.tab.active{background:#6848b4;color:#fff;border-color:#6848b4;box-shadow:0 8px 20px rgba(104,72,180,.18)}.search{margin-top:8px;position:relative}.search i{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#8a7fa0}.search input{width:100%;height:48px;border:1px solid #e1dced;border-radius:15px;background:#fff;padding:0 14px 0 42px;font:700 12px 'Noto Sans Bengali','Inter';outline:none}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;margin:15px 0 10px}.section-head h2{margin:0;font-size:23px}.count{font:800 10px 'Inter';color:#806caf}.cards{display:grid;gap:12px;margin-bottom:36px}.card{background:#fff;border:1px solid #e4dff0;border-radius:23px;padding:18px;box-shadow:0 10px 30px rgba(69,52,106,.06)}.pair{display:grid;grid-template-columns:1fr 58px 1fr;gap:9px;align-items:stretch}.side{border-radius:17px;padding:14px;background:#faf8ff;border:1px solid #eae4f5}.side.b{background:#f5f9ff;border-color:#e1eaf6}.grammar{font:900 clamp(20px,5vw,27px)/1.25 'Noto Sans JP';color:#5d3ea8}.side.b .grammar{color:#1e6ea6}.meaning{font-size:10px;color:#768395;margin-top:5px}.vs{display:grid;place-items:center;font:900 13px 'Inter';color:#9a8bae}.core{margin-top:12px;padding:13px;border-radius:16px;background:#f7f4fc;border-left:4px solid #6d4fc2;font-size:11px;line-height:1.65}.core b{color:#6542af}.details{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:10px}.box{border:1px solid #e5e4ed;border-radius:15px;padding:12px;background:#fff}.box h3{margin:0 0 6px;font-size:11px;color:#5d4b7c}.box p{margin:0;color:#657989;font-size:10px;line-height:1.65}.examples{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:9px}.ex{padding:11px;border-radius:14px;background:#f5f9ff;border:1px solid #e3ecf5}.ex.good{background:#f0faf5;border-color:#d8eee2}.ex.bad{background:#fff5f5;border-color:#f0dddd}.ex b{display:block;font-size:9px;margin-bottom:4px;color:#647c8d}.ex .jp{font-size:13px;font-weight:700;color:#253f57;line-height:1.65}.ex small{display:block;font-size:9px;color:#768c9a;margin-top:4px}.trap{margin-top:9px;padding:11px;border-radius:14px;background:#fff8e8;border:1px solid #f1e3ba;font-size:10px;line-height:1.6;color:#765f27}.trap b{color:#9c7014}.empty{text-align:center;padding:40px 15px;color:#8e849c}.level-intro{padding:13px;border-radius:16px;background:#fff;border:1px solid #e4dff0;font-size:10px;color:#728392;line-height:1.65;margin-bottom:10px}
 @media(max-width:720px){.hero-card{padding:21px 17px}.card{padding:14px 11px}.pair{grid-template-columns:1fr 38px 1fr}.side{padding:11px}.details,.examples{grid-template-columns:1fr}.grammar{font-size:19px}.toolbar{top:64px}.nav{height:64px}}
+.part-nav{display:flex;gap:7px;overflow-x:auto;margin:0 0 13px;padding:4px 0 7px;scrollbar-width:thin}.part-nav button{flex:0 0 auto;min-height:40px;padding:8px 12px;border:1px solid #dfd8ee;border-radius:12px;background:#fff;color:#654f88;font:900 10px 'Noto Sans Bengali','Inter';cursor:pointer}.part-nav button.active{color:#fff;border-color:#6848b4;background:#6848b4;box-shadow:0 7px 16px rgba(104,72,180,.18)}.vs-part{display:grid;gap:12px;margin:0 0 21px}.vs-part-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding:16px 17px;border-radius:20px;color:#fff;background:linear-gradient(135deg,#33235f,#6848b4 62%,#9c62cc);box-shadow:0 12px 28px rgba(75,51,125,.16)}.vs-part-kicker{display:block;font:900 9px 'Inter';letter-spacing:.13em;opacity:.78}.vs-part-head h2{margin:4px 0 0;font-size:19px;line-height:1.25}.vs-part-head p{margin:4px 0 0;color:rgba(255,255,255,.72);font-size:9px}.vs-part-count{flex:0 0 auto;padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.13);font:800 9px 'Inter'}.why-use{margin-top:10px;padding:13px;border:1px solid #dce8f6;border-radius:15px;background:#f5f9ff}.why-use h3,.explain-title,.memory-calm h3{margin:0 0 5px;color:#315f88;font-size:11px}.why-use p{margin:0;color:#5f7488;font-size:10px;line-height:1.7}.explain-title{color:#6542af}.box p b{color:#4d6480}.ex small{font-size:10px;line-height:1.55}.memory-calm{margin-top:9px;padding:12px;border:1px solid #cfe8dd;border-radius:15px;background:#f0faf5}.memory-calm h3{color:#28725d}.memory-calm p{margin:0;color:#4f756a;font-size:10px;line-height:1.7}.recall{margin-top:8px;padding:9px 11px;border:1px dashed #cbbbea;border-radius:13px;color:#715b91;background:#fbf9ff;font-size:9px;line-height:1.6}.card-no{display:inline-flex;margin-bottom:9px;padding:4px 8px;border-radius:999px;color:#6848b4;background:#eee8ff;font:900 9px 'Inter'}
+@media(max-width:720px){.vs-part-head{align-items:flex-start;flex-direction:column}.vs-part-count{white-space:normal}}
 </style>
 
 
@@ -83,8 +85,76 @@ N3:[
 ['〜さえ','〜まで','এমনকি A-ও—minimum/extreme','এমনকি A পর্যন্ত—range/extreme','さえ often “even the minimum/unexpected”; まで often extent reaches A。','名前さえ知らない','子どもまで知っている','忙しくて昼ご飯さえ食べられません。','その話は子どもまで知っています。','Requirement “এটুকু হলেই” pattern さえ〜ば; まで〜ば নয়।']
 ]};
 const intro={N5:'N5-এ সবচেয়ে বেশি particle, existence verb এবং basic intention expression গুলিয়ে যায়। এখানে rule মুখস্থ নয়—sentence-এর role দেখে পার্থক্য ধরুন।',N4:'N4-এ একই অর্থের মতো শোনানো condition, reason, purpose, preparation ও experience grammar বেশি confuse করে।',N3:'N3-তে nuance, viewpoint, speaker intention এবং formal/casual difference সবচেয়ে গুরুত্বপূর্ণ। তাই এখানে common exam + real-life trap বেশি রাখা হয়েছে।'};
-let level='N3';const $=s=>document.querySelector(s);
-function card(d,i){const [a,b,ma,mb,core,useA,useB,exA,exB,trap]=d;return `<article class="card"><div class="pair"><div class="side"><div class="grammar jp">${a}</div><div class="meaning">${ma}</div></div><div class="vs">VS</div><div class="side b"><div class="grammar jp">${b}</div><div class="meaning">${mb}</div></div></div><div class="core"><b>মূল পার্থক্য:</b> ${core}</div><div class="details"><div class="box"><h3 class="jp">${a} — কখন?</h3><p>${useA}</p></div><div class="box"><h3 class="jp">${b} — কখন?</h3><p>${useB}</p></div></div><div class="examples"><div class="ex good"><b>A example</b><div class="jp">${exA}</div></div><div class="ex good"><b>B example</b><div class="jp">${exB}</div></div></div><div class="trap"><b>⚠️ সবাই যে জায়গায় ভুল করে:</b> ${trap}</div></article>`}
-function render(){const q=$('#search').value.trim().toLowerCase();const arr=DATA[level].filter(d=>!q||d.join(' ').toLowerCase().includes(q));$('#title').textContent=`${level} Grammar VS`;$('#subtitle').textContent=level==='N3'?'Most confusing comparisons':'Level-wise confusing pairs';$('#count').textContent=`${arr.length} comparison`;$('#intro').textContent=intro[level];$('#cards').innerHTML=arr.length?arr.map(card).join(''):'<div class="empty">এই search-এ comparison পাওয়া যায়নি।</div>';document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.level===level))}
-document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{level=b.dataset.level;render();window.scrollTo({top:document.querySelector('.toolbar').offsetTop-65,behavior:'smooth'})});$('#search').addEventListener('input',render);render();
+const PARTS={
+N5:[
+{from:0,to:4,title:'Particle, দিক ও অস্তিত্ব',focus:'は・が・に・で・へ・と・や・ある・いる'},
+{from:5,to:7,title:'ইচ্ছা, আমন্ত্রণ ও সময়ের অবস্থা',focus:'たい・ほしい・ませんか・ましょう・もう・まだ'}
+],
+N4:[
+{from:0,to:3,title:'Condition, কারণ ও অনুমান',focus:'たら・なら・から・ので・そう・よう・みたい'},
+{from:4,to:7,title:'উদ্দেশ্য, প্রস্তুতি ও বাধ্যতা',focus:'ために・ように・ておく・てしまう・ながら'},
+{from:8,to:11,title:'সীমা, অভিজ্ঞতা ও viewpoint',focus:'しか・だけ・ことがある・くれる・もらう・と思う'}
+],
+N3:[
+{from:0,to:4,title:'শর্ত, উদ্দেশ্য ও সিদ্ধান্ত',focus:'ても・てでも・ば・たら・なら・ように・ことにする'},
+{from:5,to:10,title:'নিশ্চয়তা, わけ ও কারণ',focus:'はず・に違いない・わけ・おかげ・せい・によって'},
+{from:11,to:14,title:'সময়, stage ও পরিবর্তন',focus:'うちに・間に・最中・ところ・ばかり・以来'},
+{from:15,to:17,title:'Viewpoint, role ও target',focus:'に対して・について・にとって・として・向け・向き'},
+{from:18,to:20,title:'Concession, repetition ও emphasis',focus:'ものの・ながらも・たびに・ごとに・さえ・まで'}
+]};
+const EXAMPLE_BN={
+N5:[
+['আমি একজন শিক্ষার্থী।','কে এসেছেন? Tanaka-san এসেছেন।'],
+['আমি Tokyo-তে থাকি।','Library-তে বই পড়ি।'],
+['Company-তে যাই।','Kyoto-র দিকে ভ্রমণে যাই।'],
+['Apple ও banana কিনেছি।','বই, notebook ইত্যাদি কিনেছি।'],
+['ঘরে TV আছে।','Park-এ শিশু আছে।'],
+['Japanese পড়তে চাই।','পানি চাই।'],
+['Cinema দেখবেন?','চলুন একটু বিশ্রাম নিই।'],
+['Homework ইতিমধ্যে করেছি।','এখনো শেষ হয়নি।']
+],
+N4:[
+['বাসায় ফিরলে phone করব।','Japan গেলে Suica সুবিধাজনক।'],
+['সময় নেই বলে তাড়াহুড়ো করছি।','শরীর খারাপ, তাই আমাকে ছুটি নিতে দিন।'],
+['Cakeটি দেখতে সুস্বাদু মনে হচ্ছে।','শুনেছি কাল তুষার পড়বে।'],
+['মনে হচ্ছে বাইরে শান্ত।','ওই ব্যক্তি দেখতে student-এর মতো।'],
+['পাস করার জন্য পড়াশোনা করি।','যাতে শোনা যায়, জোরে বলি।'],
+['Ticket আগে কিনে রাখব।','Wallet হারিয়ে ফেলেছি।'],
+['Homework করতেই হবে।','আজ না এলেও চলবে।'],
+['হাঁটতে হাঁটতে কথা বলি।','খাবার খেয়ে তারপর পড়ি।'],
+['শুধু পানি আছে।','মাত্র একজন এসেছেন।'],
+['কখনো train দেরি করে।','Fuji পাহাড়ে ওঠার অভিজ্ঞতা আছে।'],
+['শিক্ষক আমাকে বুঝিয়ে দিয়েছেন।','শিক্ষকের কাছ থেকে ব্যাখ্যা পেয়েছি।'],
+['আমার মনে হয় এটি সুবিধাজনক।','Tanaka-san বলেছেন তিনি আসবেন না।']
+],
+N3:[
+['ব্যস্ত হলেও পড়াশোনা করি।','সারারাত জেগে হলেও শেষ করব।'],
+['বসন্ত এলে উষ্ণ হয়।','কাজ শেষ হলে বাসায় ফিরব।'],
+['বাসায় ফিরলে বিশ্রাম নেব।','গাড়ি কিনলে maintenance cost-ও ভাবুন।'],
+['দেরি না হওয়ার জন্য আগে বের হই।','Qualification নেওয়ার জন্য পড়ি।'],
+['পরের মাস থেকে সঞ্চয় করার সিদ্ধান্ত নিয়েছি।','পরের মাসে Osaka যাওয়ার সিদ্ধান্ত হয়েছে।'],
+['Trainটি ১০টায় আসার কথা।','ওই reaction হলে নিশ্চয় সে জানে।'],
+['জানালা খোলা—তাই তো ঠান্ডা।','যেতে চাই না—এমন নয়।'],
+['এত দামি জিনিস free হওয়া অসম্ভব।','তাড়াহুড়োর দরকার নেই।'],
+['বন্ধুর সাহায্যে বেঁচে গেছি।','Traffic jam-এর কারণে দেরি করেছি।'],
+['Japanese ভালো হওয়ার সঙ্গে confidence বেড়েছে।','Rule অনুযায়ী কাজ করুন।'],
+['দেশভেদে rule আলাদা।','Forecast অনুযায়ী কাল বৃষ্টি।'],
+['গরম থাকতে খেয়ে নিন।','ঘুমানোর সময় phone এসেছিল।'],
+['খাবারের মাঝখানে phone এসেছিল।','এইমাত্র বাসা থেকে বের হয়েছি।'],
+['গত মাসেই company-তে যোগ দিয়েছি।','এইমাত্র station-এ পৌঁছেছি।'],
+['Japan আসার পর থেকে প্রতিদিন পড়ি।','খেয়ে তারপর বাইরে যাই।'],
+['Customer-এর সঙ্গে ভদ্রভাবে কথা বলি।','Visa সম্পর্কে প্রশ্ন আছে।'],
+['আমার কাছে Japanese গুরুত্বপূর্ণ।','বিদেশি শিক্ষার্থী হিসেবে Japan এসেছি।'],
+['এটি বিদেশিদের লক্ষ্য করে বানানো guide।','এই কাজটি শারীরিকভাবে শক্ত মানুষের উপযোগী।'],
+['Japan এলেও কাজ পাইনি।','বিপদ জানার পরও এগিয়েছি।'],
+['এই গান শুনলেই প্রতিবার স্মৃতি মনে পড়ে।','প্রতি ছয় ঘণ্টা পর medicine খাই।'],
+['এত ব্যস্ত যে lunch-ও খেতে পারি না।','এই গল্প এমনকি শিশুরাও জানে।']
+]};
+let level='N3';let selectedPart='all';const $=s=>document.querySelector(s);
+function partIndexFor(itemIndex){return PARTS[level].findIndex(p=>itemIndex>=p.from&&itemIndex<=p.to)}
+function ensurePartNav(){let nav=$('#partNav');if(!nav){nav=document.createElement('nav');nav.id='partNav';nav.className='part-nav';nav.setAttribute('aria-label','Grammar comparison Part');$('#intro').insertAdjacentElement('afterend',nav)}return nav}
+function renderPartNav(){const nav=ensurePartNav();const buttons=[`<button type="button" data-part="all" class="${selectedPart==='all'?'active':''}">সব Part</button>`];PARTS[level].forEach((p,i)=>buttons.push(`<button type="button" data-part="${i}" class="${selectedPart===String(i)?'active':''}">Part ${String(i+1).padStart(2,'0')} • ${p.title}</button>`));nav.innerHTML=buttons.join('');nav.querySelectorAll('button').forEach(button=>button.onclick=()=>{selectedPart=button.dataset.part;render();$('#cards').scrollIntoView({behavior:'smooth',block:'start'})})}
+function card(d,itemIndex){const [a,b,ma,mb,core,useA,useB,exA,exB,trap]=d;const bn=EXAMPLE_BN[level][itemIndex]||['বাংলা অর্থ যোগ করা হচ্ছে।','বাংলা অর্থ যোগ করা হচ্ছে।'];return `<article class="card"><span class="card-no">Comparison ${String(itemIndex+1).padStart(2,'0')}</span><div class="pair"><div class="side"><div class="grammar jp">${a}</div><div class="meaning">${ma}</div></div><div class="vs">VS</div><div class="side b"><div class="grammar jp">${b}</div><div class="meaning">${mb}</div></div></div><section class="why-use"><h3>কেন এই দুই Grammar আলাদা করে শিখবেন?</h3><p>দুটির বাংলা কাছাকাছি হলেও কাজ এক নয়। <b>${ma}</b> বোঝাতে ${a}, আর <b>${mb}</b> বোঝাতে ${b} ব্যবহার করবেন। ভুলটি বেছে নিলে sentence-এর আসল nuance বদলে যাবে।</p></section><div class="core"><b class="explain-title">সহজ বাংলা ব্যাখ্যা:</b> ${core}</div><div class="details"><div class="box"><h3 class="jp">${a} — কোন সময়?</h3><p><b>এই rule বেছে নিন যখন:</b> ${useA}। অর্থের লক্ষ্য—${ma}।</p></div><div class="box"><h3 class="jp">${b} — কোন সময়?</h3><p><b>এই rule বেছে নিন যখন:</b> ${useB}। অর্থের লক্ষ্য—${mb}।</p></div></div><div class="examples"><div class="ex good"><b>বাস্তব Example • ${a}</b><div class="jp">${exA}</div><small>${bn[0]}</small></div><div class="ex good"><b>বাস্তব Example • ${b}</b><div class="jp">${exB}</div><small>${bn[1]}</small></div></div><div class="trap"><b>⚠️ সবচেয়ে common ভুল:</b> ${trap}</div><section class="memory-calm"><h3>🧠 ঠান্ডা মাথায় মনে রাখার টিপস</h3><p>দুই সেকেন্ড থামুন: আমি কি “${ma}” বলতে চাই, নাকি “${mb}”? প্রথমটি হলে <b>${a}</b>; দ্বিতীয়টি হলে <b>${b}</b>। বাংলা শব্দ নয়—speaker-এর উদ্দেশ্য মিলিয়ে নিন।</p></section><div class="recall"><b>১০-সেকেন্ড Practice:</b> উপরের example বন্ধ করে ${a} দিয়ে নিজের একটি বাক্য, তারপর ${b} দিয়ে তার বিপরীত/আলাদা nuance-এর আরেকটি বাক্য বলুন।</div></article>`}
+function render(){const q=$('#search').value.trim().toLowerCase();const indexed=DATA[level].map((d,index)=>({d,index,part:partIndexFor(index)})).filter(x=>(!q||x.d.join(' ').toLowerCase().includes(q))&&(selectedPart==='all'||x.part===Number(selectedPart)));$('#title').textContent=`${level} Grammar VS — Part ধরে`;$('#subtitle').textContent=level==='N3'?'Most confusing comparisons • পূর্ণ বাংলা ব্যাখ্যা':'Level-wise Part • পূর্ণ বাংলা ব্যাখ্যা';$('#count').textContent=`${indexed.length} comparison`;$('#intro').textContent=`${intro[level]} প্রতিটি comparison-এ কেন, কখন, common ভুল, বাংলা-সহ বাস্তব example এবং শান্তভাবে মনে রাখার tip দেওয়া আছে।`;renderPartNav();const sections=PARTS[level].map((part,partIndex)=>{const items=indexed.filter(x=>x.part===partIndex);if(!items.length)return'';return `<section class="vs-part" id="vs-${level.toLowerCase()}-part-${partIndex+1}"><header class="vs-part-head"><div><span class="vs-part-kicker">PART ${String(partIndex+1).padStart(2,'0')}</span><h2>${part.title}</h2><p>${part.focus}</p></div><span class="vs-part-count">${items.length} Comparison</span></header>${items.map(x=>card(x.d,x.index)).join('')}</section>`}).join('');$('#cards').innerHTML=sections||'<div class="empty">এই search বা Part-এ comparison পাওয়া যায়নি।</div>';document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.level===level))}
+document.querySelectorAll('.tab').forEach(b=>b.onclick=()=>{level=b.dataset.level;selectedPart='all';$('#search').value='';render();window.scrollTo({top:document.querySelector('.toolbar').offsetTop-65,behavior:'smooth'})});$('#search').addEventListener('input',()=>{selectedPart='all';render()});render();
 </script></body></html>
