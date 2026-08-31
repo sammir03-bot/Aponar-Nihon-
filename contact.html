@@ -1,77 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="bn">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>Contact | আপনার নিহোন</title>
-  <meta name="description" content="আপনার নিহোন এর সাথে যোগাযোগ করুন।">
-  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="description" content="আপনার নিহোন Japanese Learning Hub-এর সাথে যোগাযোগ করুন।">
+  <meta name="theme-color" content="#1677e8">
+  <link rel="canonical" href="https://app.aponar-nihon.workers.dev/contact">
+  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/app-shell.css?v=20260829">
   <style>
-    body{
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      margin: 0;
-      padding: 0;
-      background:#f8f9fa;
-      color:#222;
-    }
-    .container{
-      max-width: 900px;
-      margin: 40px auto;
-      background:#fff;
-      padding: 30px 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-    }
-    h1{color:#d62839;}
-    a{color:#d62839;text-decoration:none;}
-    footer{
-      text-align:center;
-      padding:20px;
-      margin-top:30px;
-      background:#111;
-      color:#fff;
+    .contact-main{padding-block:24px 42px}
+    .contact-card{overflow:hidden;border:1px solid rgba(224,231,240,.9);border-radius:30px;background:#fff;box-shadow:var(--app-shadow)}
+    .contact-hero{padding:34px 30px 24px;background:radial-gradient(circle at 92% 0,rgba(22,119,232,.14),transparent 17rem),linear-gradient(135deg,#fff,#f7fbff)}
+    .contact-kicker{display:inline-flex;align-items:center;gap:8px;color:var(--app-primary);font-size:.77rem;font-weight:900}
+    .contact-hero h1{margin-top:8px;color:#172033;font-size:clamp(2rem,7vw,3.2rem);font-weight:950;line-height:1.05;letter-spacing:-.035em}
+    .contact-hero p{max-width:680px;margin-top:14px;color:#637187;font-size:.98rem;font-weight:600;line-height:1.8}
+    .contact-list{display:grid;gap:12px;padding:24px 30px 30px}
+    .contact-item{display:grid;grid-template-columns:48px minmax(0,1fr) auto;align-items:center;gap:14px;padding:16px;border:1px solid #e6ebf2;border-radius:18px;background:#fff;color:#263449;text-decoration:none;transition:180ms ease}
+    .contact-item:hover{border-color:#b9dcff;background:#f8fbff;transform:translateY(-1px);box-shadow:var(--app-shadow-soft)}
+    .contact-icon{width:48px;height:48px;display:grid;place-items:center;border-radius:15px;background:#edf6ff;color:var(--app-primary);font-size:1.18rem}
+    .contact-copy{min-width:0;display:grid;gap:3px}
+    .contact-copy strong{font-size:.9rem;font-weight:900;color:#1f2d40}
+    .contact-copy span{overflow-wrap:anywhere;color:#627086;font-size:.82rem;font-weight:650}
+    .contact-go{color:#9aa8b8;font-size:.84rem}
+    .contact-note{margin:0 30px 30px;padding:16px 18px;border-radius:17px;background:#f7f9fc;color:#5f6c80;font-size:.84rem;font-weight:650;line-height:1.75}
+    .contact-footer{padding:26px 16px 34px;text-align:center;color:#748196;font-size:.78rem;font-weight:700}
+    @media(max-width:620px){
+      .contact-main{padding-top:15px}
+      .contact-card{border-radius:26px}
+      .contact-hero{padding:27px 20px 20px}
+      .contact-list{padding:18px 20px 22px}
+      .contact-item{grid-template-columns:44px minmax(0,1fr) auto;padding:13px;gap:11px;border-radius:16px}
+      .contact-icon{width:44px;height:44px;border-radius:13px}
+      .contact-note{margin:0 20px 22px}
     }
   </style>
-
-
-
-<script id="legacy-origin-redirect">
-(function(){
-  var h = location.hostname;
-  if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
-  var p = location.pathname || "/";
-  if (h === "sammir03-bot.github.io") {
-    var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
-    for (var i = 0; i < bases.length; i++) {
-      var base = bases[i];
-      if (p === base || p === base + "/") { p = "/"; break; }
-      if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+  <script id="legacy-origin-redirect">
+  (function(){
+    var h=location.hostname;
+    if(h!=="sammir03-bot.github.io"&&h!=="aponar-nihon.eu.cc")return;
+    var p=location.pathname||"/";
+    if(h==="sammir03-bot.github.io"){
+      var bases=["/Aponar-Nihon-","/Aponar-Nihon"];
+      for(var i=0;i<bases.length;i++){
+        var base=bases[i];
+        if(p===base||p===base+"/"){p="/";break;}
+        if(p.indexOf(base+"/")===0){p=p.slice(base.length)||"/";break;}
+      }
     }
-  }
-  if (p === "/index.html") p = "/";
-  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
-  else if (p.endsWith(".html")) p = p.slice(0, -5);
-  location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
-})();
-</script>
-
-<link rel="canonical" href="https://app.aponar-nihon.workers.dev/contact">
+    if(p==="/index.html")p="/";
+    else if(p.endsWith("/index.html"))p=p.slice(0,-10);
+    else if(p.endsWith(".html"))p=p.slice(0,-5);
+    location.replace("https://app.aponar-nihon.workers.dev"+p+location.search+location.hash);
+  })();
+  </script>
 </head>
-<body>
-  <div class="container">
-    <h1>Contact</h1>
-    <p>আপনার নিহোন সম্পর্কে কোনো প্রশ্ন, পরামর্শ বা সহযোগিতার জন্য যোগাযোগ করতে পারেন।</p>
+<body class="app-page" data-page="contact">
+  <header class="app-topbar">
+    <div class="app-shell app-topbar-inner">
+      <a class="app-brand" href="/" aria-label="আপনার নিহোন হোম">
+        <img src="/logo.png" alt="আপনার নিহোন লোগো" width="44" height="44" fetchpriority="high">
+        <span class="app-brand-copy">
+          <strong>আপনার নিহোন</strong>
+          <small>JAPANESE LEARNING HUB</small>
+        </span>
+      </a>
+      <div class="app-top-actions">
+        <a class="app-back-button" href="/" aria-label="হোমে ফিরুন"><i class="fa-solid fa-house" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </header>
 
-    <p><strong>Email:</strong> your-email@example.com</p>
-    <p><strong>Facebook:</strong> your-facebook-link</p>
-    <p><strong>WhatsApp:</strong> your-whatsapp-number</p>
+  <main class="app-shell contact-main">
+    <section class="contact-card" aria-labelledby="contact-title">
+      <div class="contact-hero">
+        <span class="contact-kicker"><i class="fa-solid fa-headset" aria-hidden="true"></i> যোগাযোগ</span>
+        <h1 id="contact-title">Contact</h1>
+        <p>আপনার নিহোন সম্পর্কে কোনো প্রশ্ন, পরামর্শ বা সহযোগিতার জন্য নিচের যেকোনো মাধ্যমে যোগাযোগ করতে পারেন।</p>
+      </div>
 
-    <p>আপনার প্রয়োজনে আমরা দ্রুত উত্তর দেওয়ার চেষ্টা করব।</p>
-  </div>
+      <div class="contact-list">
+        <a class="contact-item" href="mailto:sammir160432@gmail.com">
+          <span class="contact-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+          <span class="contact-copy"><strong>Email</strong><span>sammir160432@gmail.com</span></span>
+          <i class="fa-solid fa-arrow-up-right-from-square contact-go" aria-hidden="true"></i>
+        </a>
 
-  <footer>
-    © 2026 আপনার নিহোন | All Rights Reserved
-  </footer>
+        <a class="contact-item" href="https://www.facebook.com/share/18MGSB731p/" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></span>
+          <span class="contact-copy"><strong>Facebook</strong><span>আপনার নিহোন Facebook</span></span>
+          <i class="fa-solid fa-arrow-up-right-from-square contact-go" aria-hidden="true"></i>
+        </a>
+
+        <a class="contact-item" href="https://wa.me/8801576580302" target="_blank" rel="noopener noreferrer">
+          <span class="contact-icon"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></span>
+          <span class="contact-copy"><strong>WhatsApp</strong><span>01576580302</span></span>
+          <i class="fa-solid fa-arrow-up-right-from-square contact-go" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <p class="contact-note">আপনার প্রয়োজনে যত দ্রুত সম্ভব উত্তর দেওয়ার চেষ্টা করা হবে।</p>
+    </section>
+  </main>
+
+  <footer class="contact-footer">© 2026 আপনার নিহোন · Japanese Learning Hub · All Rights Reserved</footer>
 </body>
 </html>
