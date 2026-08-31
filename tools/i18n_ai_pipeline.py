@@ -410,7 +410,7 @@ def parse_translation_array(raw: str, expected: int) -> list[str]:
                 and all(isinstance(item, str) and item.strip() for item in value)
             ):
                 return [item.strip() for item in value]
-    raise ValueError(f"AI response did not contain exactly {expected} translations")
+    raise ValueError(\n        f"AI response did not contain exactly {expected} translations; response={raw[:800]!r}"\n    )
 
 
 def prompt_for(
