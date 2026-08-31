@@ -90,6 +90,12 @@ body.aponar-language-open .aponar-language-chevron {
   z-index: 5000;
 }
 
+.tutor-top-actions .aponar-language-button {
+  min-width: 112px;
+  height: 40px;
+  box-shadow: none;
+}
+
 html[dir="rtl"] .aponar-language-floating {
   right: auto;
   left: max(12px, env(safe-area-inset-left));
@@ -346,6 +352,22 @@ html[dir="rtl"] .aponar-language-option:not([dir="rtl"]) {
 
   .aponar-language-grid {
     gap: 8px;
+  }
+}
+
+@media (max-width: 620px) {
+  .tutor-top-actions .aponar-language-button {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 11px;
+  }
+
+  .tutor-top-actions .aponar-language-globe,
+  .tutor-top-actions .aponar-language-current-label,
+  .tutor-top-actions .aponar-language-chevron {
+    display: none;
   }
 }
 
