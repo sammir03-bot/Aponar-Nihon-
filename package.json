@@ -14,7 +14,7 @@
     "build:ts": "npx --yes --package typescript@5.9.2 tsc -p tsconfig.web.json",
     "build:site": "python3 tools/build_site.py --out _site --check-links",
     "build": "npm run build:ts && npm run build:site",
-    "quality": "node tools/web_quality.mjs _site && python3 tools/check_legacy_redirects.py",
+    "quality": "node tools/web_quality.mjs _site && python3 tools/check_legacy_redirects.py && python3 tools/check_i18n.py _site && python3 tools/check_i18n_packs.py",
     "verify": "npm run typecheck && npm run build && npm run quality",
     "test:browser": "playwright test",
     "lighthouse": "lhci autorun",

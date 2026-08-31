@@ -9,6 +9,10 @@
   var state = { opened: [], checks: [], lastHref: "" };
   var toastTimer = 0;
 
+  function tr(key, fallback) {
+    return window.AponarI18n ? window.AponarI18n.t(key, fallback) : fallback;
+  }
+
   function readJson(key, fallback) {
     try {
       var value = JSON.parse(localStorage.getItem(key) || "null");
@@ -77,7 +81,7 @@
     } catch (_error) { /* Keep the progress available even in private mode. */ }
     var mockResults = readJson("aponarNihonMockResults", {});
     var mocks = mockResults && typeof mockResults === "object" ? Object.keys(mockResults).length : 0;
-    return { done: Math.min(sets, 90) + Math.min(mocks, 30), total: 120, label: sets + "টি quiz set · " + mocks + "টি mock" };
+    return { done: Math.min(sets, 90) + Math.min(mocks, 30), total: 120, label: sets + " quiz · " + mocks + " mock" };
   }
 
   function setCardStatus(card) {
@@ -88,10 +92,10 @@
     card.classList.toggle("is-opened", opened || Boolean(progress && progress.done));
     if (!status) return;
     if (progress) {
-      status.textContent = progress.done + "/" + progress.total + " সম্পন্ন";
+      status.textContent = progress.done + "/" + progress.total + " " + tr("progress.done", "সম্পন্ন");
       return;
     }
-    status.textContent = opened ? "খোলা হয়েছে" : "শুরু হয়নি";
+    status.textContent = opened ? tr("progress.opened", "খোলা হয়েছে") : tr("progress.notStarted", "শুরু হয়নি");
   }
 
   function progressMetrics() {
@@ -109,14 +113,14 @@
       done += progress.done;
       total += progress.total;
     });
-    if (total) return { done: done, total: total, label: done + "/" + total + " শেখা সংরক্ষিত" };
+    if (total) return { done: done, total: total, label: done + "/" + total + " " + tr("progress.saved", "শেখা সংরক্ষিত") };
 
     var resources = document.querySelectorAll("[data-track]").length;
     var checks = document.querySelectorAll("[data-plan-check]").length;
     return {
       done: Math.min(state.opened.length, resources) + Math.min(state.checks.length, checks),
       total: resources + checks,
-      label: state.opened.length + "টি resource · " + state.checks.length + "টি প্রস্তুতি"
+      label: state.opened.length + " resource · " + state.checks.length + " " + tr("progress.done", "সম্পন্ন")
     };
   }
 
@@ -136,7 +140,14 @@
     var checked = document.querySelectorAll("[data-plan-check]:checked").length;
     var totalChecks = document.querySelectorAll("[data-plan-check]").length;
     var planCount = document.querySelector("[data-plan-count]");
-    if (planCount) planCount.textContent = checked + "/" + totalChecks + " শেষ";
+    if (planCount) planCount.textContent = checked + "/" + totalChecks + " " + tr("progress.finished", "শেষ");
+
+    var continueLink = document.querySelector("[data-continue]");
+    if (continueLink && state.lastHref) {
+      continueLink.href = state.lastHref;
+      var continueLabel = continueLink.querySelector("span");
+      if (continueLabel) continueLabel.textContent = tr("progress.continue", "শেষ resource থেকে চালিয়ে যান");
+    }
   }
 
   function showSaved() {
@@ -170,13 +181,6 @@
         saveState();
       });
     });
-
-    var continueLink = document.querySelector("[data-continue]");
-    if (continueLink && state.lastHref) {
-      continueLink.href = state.lastHref;
-      var label = continueLink.querySelector("span");
-      if (label) label.textContent = "শেষ resource থেকে চালিয়ে যান";
-    }
   }
 
   function setupDailyLinks() {
@@ -197,4 +201,5 @@
   updateProgress();
   window.addEventListener("pageshow", updateProgress);
   window.addEventListener("storage", updateProgress);
+  window.addEventListener("aponar:languagechange", updateProgress);
 })();
