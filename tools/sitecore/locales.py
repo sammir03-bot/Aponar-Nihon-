@@ -41,8 +41,8 @@ EXCLUDED_LOCALIZED_PAGES = {"admin.html", "refresh-site.html"}
 TRANSLATABLE_ATTRIBUTES = {"aria-label", "placeholder", "title", "alt"}
 BUTTON_INPUT_TYPES = {"button", "submit", "reset"}
 ATTRIBUTE_VALUE_RE = re.compile(
-    r"(?P<prefix>\\s+(?P<name>aria-label|placeholder|title|alt|value|content)\\s*=\\s*)"
-    r"(?P<quote>[\\"'])(?P<value>.*?)(?P=quote)",
+    r"""(?P<prefix>\\s+(?P<name>aria-label|placeholder|title|alt|value|content)\\s*=\\s*)"""
+    r"""(?P<quote>["'])(?P<value>.*?)(?P=quote)""",
     flags=re.IGNORECASE | re.DOTALL,
 )
 
