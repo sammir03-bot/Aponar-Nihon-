@@ -4,6 +4,9 @@ const languageButton = '#aponarLanguageButton';
 
 test('Bangla is default and language choice persists', async ({ page }) => {
   await page.goto('/');
+  await page.evaluate(() => localStorage.removeItem('aponarNihonLanguage'));
+  await page.reload();
+
   await expect(page.locator('html')).toHaveAttribute('lang', 'bn');
   await expect(page.locator(languageButton)).toBeVisible();
   await expect(page.locator(`${languageButton} [data-language-code]`)).toHaveText('BN');
