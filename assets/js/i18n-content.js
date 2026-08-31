@@ -72,13 +72,14 @@
         element.removeAttribute("data-i18n-content-dir");
       });
 
-      if (!pack || !Array.isArray(pack.entries) || !pack.entries.length) return;
+      if (!pack || pack.reviewed !== true || !Array.isArray(pack.entries) || !pack.entries.length) return;
 
       var table = new Map();
       pack.entries.forEach(function (entry) {
         if (!entry || typeof entry.source !== "string" || typeof entry.target !== "string") return;
         var source = normalize(entry.source);
-        if (source) table.set(source, entry.target);
+        var target = entry.target.trim();
+        if (source && target) table.set(source, target);
       });
       if (!table.size) return;
 
@@ -132,7 +133,7 @@
         return;
       }
       var pack = await response.json();
-      if (!pack || pack.targetLanguage !== language || !Array.isArray(pack.entries)) {
+      if (!pack || pack.reviewed !== true || pack.targetLanguage !== language || !Array.isArray(pack.entries)) {
         packCache.set(key, null);
         activePack = null;
         restore();
