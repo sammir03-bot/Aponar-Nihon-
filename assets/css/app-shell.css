@@ -94,6 +94,8 @@ a {
 
 .app-brand {
   min-width: 0;
+  flex: 1 1 auto;
+  overflow: hidden;
   display: inline-flex;
   align-items: center;
   gap: 11px;
@@ -102,8 +104,8 @@ a {
 }
 
 .app-brand img {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
   flex: 0 0 auto;
   object-fit: contain;
   border-radius: 14px;
@@ -135,6 +137,7 @@ a {
 }
 
 .app-top-actions {
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   gap: 9px;
@@ -1038,7 +1041,7 @@ body[data-hub="study"] { --hub-accent: #53657b; --hub-soft: #eef2f6; --hub-gradi
   body.app-page { padding-bottom: calc(86px + var(--safe-bottom)); }
   .app-shell { width: min(100% - 22px, 1180px); }
   .app-topbar { height: 62px; }
-  .app-brand img { width: 38px; height: 38px; border-radius: 12px; }
+  .app-brand img { width: 42px; height: 42px; border-radius: 13px; }
   .app-brand-copy strong { font-size: 0.96rem; }
   .app-brand-copy small { font-size: 0.61rem; }
   .app-icon-button,
@@ -1092,6 +1095,10 @@ body[data-hub="study"] { --hub-accent: #53657b; --hub-soft: #eef2f6; --hub-gradi
   .app-tool-icon { width: 52px; height: 52px; }
   .app-tool b { font-size: 0.68rem; }
   .app-tool small { display: none; }
+}
+
+@media (max-width: 420px) {
+  .app-brand-copy small { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
