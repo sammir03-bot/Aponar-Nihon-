@@ -1,0 +1,152 @@
+/* Aponar Nihon home-brand priority layer.
+   The language choice is global, but its picker is intentionally shown only on Home. */
+
+body:not([data-page="home"]) .aponar-language-button,
+body:not([data-page="home"]) .aponar-language-layer {
+  display: none !important;
+}
+
+body[data-page="home"] .app-topbar-inner {
+  gap: 10px;
+}
+
+body[data-page="home"] .app-brand {
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: 10px;
+}
+
+body[data-page="home"] .app-brand img {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  border: 1px solid rgba(22, 119, 232, 0.10);
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 5px 14px rgba(24, 72, 116, 0.10);
+}
+
+body[data-page="home"] .app-brand-copy {
+  min-width: 0;
+  overflow: visible;
+}
+
+body[data-page="home"] .app-brand-copy strong {
+  max-width: none;
+  overflow: visible;
+  color: #12243a;
+  font-size: 1.08rem;
+  font-weight: 950;
+  letter-spacing: -0.015em;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+body[data-page="home"] .app-brand-copy small {
+  max-width: none;
+  overflow: visible;
+  margin-top: 2px;
+  color: #77869a;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+body[data-page="home"] .app-top-actions {
+  flex: 0 0 auto;
+  gap: 6px;
+}
+
+/* Keep the only visible language control compact so the logo + full name win the header. */
+body[data-page="home"] .aponar-language-button {
+  width: 50px;
+  min-width: 50px;
+  height: 40px;
+  padding: 0;
+  gap: 3px;
+  border-radius: 13px;
+  box-shadow: none;
+}
+
+body[data-page="home"] .aponar-language-current-label,
+body[data-page="home"] .aponar-language-current-code,
+body[data-page="home"] .aponar-language-chevron {
+  display: none !important;
+}
+
+body[data-page="home"] .aponar-language-globe {
+  font-size: 14px;
+}
+
+body[data-page="home"] .aponar-language-current-flag {
+  font-size: 18px;
+}
+
+@media (max-width: 620px) {
+  body[data-page="home"] .app-topbar {
+    height: 66px;
+  }
+
+  body[data-page="home"] .app-shell.app-topbar-inner {
+    width: min(100% - 16px, 1180px);
+  }
+
+  body[data-page="home"] .app-brand {
+    gap: 8px;
+  }
+
+  body[data-page="home"] .app-brand img {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+  }
+
+  body[data-page="home"] .app-brand-copy strong {
+    font-size: 1rem;
+  }
+
+  body[data-page="home"] .app-brand-copy small {
+    font-size: 0.56rem;
+  }
+
+  body[data-page="home"] .app-icon-button,
+  body[data-page="home"] .app-back-button {
+    width: 36px;
+    height: 36px;
+    border-radius: 11px;
+  }
+
+  body[data-page="home"] .aponar-language-button {
+    width: 44px;
+    min-width: 44px;
+    height: 36px;
+    border-radius: 11px;
+  }
+}
+
+@media (max-width: 400px) {
+  body[data-page="home"] .app-brand-copy small {
+    display: none;
+  }
+
+  body[data-page="home"] .aponar-language-button {
+    width: 38px;
+    min-width: 38px;
+  }
+
+  body[data-page="home"] .aponar-language-globe {
+    display: none;
+  }
+
+  body[data-page="home"] .aponar-language-current-flag {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 350px) {
+  body[data-page="home"] .app-top-actions .app-icon-button:first-of-type {
+    display: none;
+  }
+}
