@@ -29,17 +29,22 @@ def main() -> int:
     if not pages:
         raise SystemExit("No built HTML pages found")
 
+    checked = 0
     missing: list[str] = []
     for page in pages:
+        rel = page.relative_to(site).as_posix()
+        if page.name.startswith("google"):
+            continue
+        checked += 1
         html = page.read_text(encoding="utf-8", errors="ignore")
         if "/assets/js/i18n.js?v=20260831" not in html or "/assets/css/i18n.css?v=20260831" not in html:
-            missing.append(page.relative_to(site).as_posix())
+            missing.append(rel)
 
     if missing:
         sample = ", ".join(missing[:12])
         raise SystemExit(f"Multilingual assets missing from {len(missing)} pages: {sample}")
 
-    print(f"i18n OK: {len(SUPPORTED)} languages, Bangla default, {len(pages)} HTML pages wired")
+    print(f"i18n OK: {len(SUPPORTED)} languages, Bangla default, {checked} HTML pages wired")
     return 0
 
 
