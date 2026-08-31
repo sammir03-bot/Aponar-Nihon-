@@ -4,8 +4,10 @@ from __future__ import annotations
 import sys
 from pathlib import Path
 
+from sitecore.locales import localized_route_for_page
+
 ROOT = Path(__file__).resolve().parents[1]
-SUPPORTED = ("bn", "ja", "en", "vi", "ne", "hi", "ur", "my", "zh")
+SUPPORTED = ("bn", "ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil")
 
 
 def main() -> int:
@@ -22,18 +24,33 @@ def main() -> int:
     source = runtime.read_text(encoding="utf-8")
     if 'DEFAULT_LANGUAGE = "bn"' not in source:
         raise SystemExit("Bangla must remain the default language")
+    if "normalizeLanguage" not in source:
+        raise SystemExit("Legacy profile language values must normalize to locale codes")
     for code in SUPPORTED:
         if f"{code}: {{" not in source:
             raise SystemExit(f"Missing supported language: {code}")
+
+    tutor_client = (ROOT / "assets" / "js" / "tutor-pro.js").read_text(encoding="utf-8")
+    tutor_worker = (ROOT / "workers" / "api" / "src" / "index.ts").read_text(encoding="utf-8")
+    if "window.AponarI18n.getLanguage()" not in tutor_client:
+        raise SystemExit("AI Tutor client is not sending the active explanation language")
+    for code in SUPPORTED:
+        if f'"{code}"' not in tutor_worker:
+            raise SystemExit(f"AI Tutor does not accept language: {code}")
+
+    profile_source = (ROOT / "profile.html").read_text(encoding="utf-8")
+    for code in SUPPORTED:
+        if f'<option value="{code}">' not in profile_source:
+            raise SystemExit(f"Profile language preference is missing: {code}")
 
     pages = list(site.rglob("*.html"))
     if not pages:
         raise SystemExit("No built HTML pages found")
 
     required = (
-        "/assets/css/i18n.css?v=20260831",
-        "/assets/js/i18n.js?v=20260831",
-        "/assets/js/i18n-content.js?v=20260831",
+        "/assets/css/i18n.css?v=20260831.2",
+        "/assets/js/i18n.js?v=20260831.2",
+        "/assets/js/i18n-content.js?v=20260831.2",
     )
     checked = 0
     missing: list[str] = []
@@ -50,9 +67,35 @@ def main() -> int:
         sample = ", ".join(missing[:12])
         raise SystemExit(f"Multilingual assets missing from {len(missing)} pages: {sample}")
 
+    if localized_route_for_page(site / "n3-grammar.html", site).as_posix() != "n3/grammar":
+        raise SystemExit("Localized route contract is broken for /<language>/n3/grammar/")
+
+    localized_checked = 0
+    for code in SUPPORTED[1:]:
+        direction = "rtl" if code == "ur" else "ltr"
+        for route in ("about", "n5"):
+            localized = site / code / route / "index.html"
+            if not localized.exists():
+                raise SystemExit(f"Missing localized core route: {code}/{route}/index.html")
+            html = localized.read_text(encoding="utf-8")
+            if f'lang="{code}"' not in html or f'dir="{direction}"' not in html:
+                raise SystemExit(f"Wrong document locale on {localized.relative_to(site)}")
+            if f'data-language-preset="{code}"' not in html:
+                raise SystemExit(f"Missing locale bootstrap on {localized.relative_to(site)}")
+            if f'hreflang="{code}"' not in html or 'hreflang="x-default"' not in html:
+                raise SystemExit(f"Missing hreflang cluster on {localized.relative_to(site)}")
+            localized_checked += 1
+
+    english_n5 = (site / "en" / "n5" / "index.html").read_text(encoding="utf-8")
+    if "Build a strong Japanese foundation" not in english_n5:
+        raise SystemExit("Reviewed English N5 copy was not rendered at build time")
+    if "BEGINNER · 日本語能力試験" not in english_n5:
+        raise SystemExit("Japanese study text changed in the localized N5 page")
+
     print(
         f"i18n OK: {len(SUPPORTED)} languages, Bangla default, "
-        f"content-pack loader enabled, {checked} HTML pages wired"
+        f"content-pack loader enabled, {checked} HTML pages wired, "
+        f"{localized_checked} localized core routes checked"
     )
     return 0
 

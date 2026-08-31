@@ -6,15 +6,34 @@
   var RTL_LANGUAGES = { ur: true };
 
   var LANGUAGES = {
-    bn: { label: "বাংলা", short: "BN" },
-    ja: { label: "日本語", short: "JA" },
-    en: { label: "English", short: "EN" },
-    vi: { label: "Tiếng Việt", short: "VI" },
-    ne: { label: "नेपाली", short: "NE" },
-    hi: { label: "हिन्दी", short: "HI" },
-    ur: { label: "اردو", short: "UR" },
-    my: { label: "မြန်မာ", short: "MY" },
-    zh: { label: "中文", short: "ZH" }
+    bn: { label: "বাংলা", short: "BN", flag: "🇧🇩" },
+    ja: { label: "日本語", short: "JA", flag: "🇯🇵" },
+    en: { label: "English", short: "EN", flag: "🇬🇧" },
+    vi: { label: "Tiếng Việt", short: "VI", flag: "🇻🇳" },
+    ne: { label: "नेपाली", short: "NE", flag: "🇳🇵" },
+    hi: { label: "हिन्दी", short: "HI", flag: "🇮🇳" },
+    ur: { label: "اردو", short: "UR", flag: "🇵🇰" },
+    my: { label: "မြန်မာ", short: "MY", flag: "🇲🇲" },
+    zh: { label: "中文", short: "ZH", flag: "🇨🇳" },
+    si: { label: "සිංහල", short: "SI", flag: "🇱🇰" },
+    fil: { label: "Filipino", short: "FIL", flag: "🇵🇭" }
+  };
+
+  var LANGUAGE_ALIASES = {
+    bangla: "bn",
+    bengali: "bn",
+    japanese: "ja",
+    english: "en",
+    vietnamese: "vi",
+    nepali: "ne",
+    hindi: "hi",
+    urdu: "ur",
+    burmese: "my",
+    myanmar: "my",
+    chinese: "zh",
+    sinhala: "si",
+    tagalog: "fil",
+    filipino: "fil"
   };
 
   var MESSAGES = {
@@ -124,17 +143,119 @@
       "language.button": "语言", "language.title": "选择你的语言", "language.subtitle": "孟加拉语保持为默认语言。你的选择会保存在此设备上。", "language.close": "关闭", "language.active": "当前语言", "brand.name": "Aponar Nihon", "brand.tagline": "面向所有人的日语学习平台",
       "menu.main": "主页", "menu.jlpt": "JLPT学习", "menu.practice": "练习与准备", "menu.japan": "日本生活与实用工具", "menu.home": "首页", "menu.home.note": "所有重要板块", "menu.n5.note": "初学者学习中心", "menu.n4.note": "初级学习中心", "menu.n3.note": "中级学习中心", "menu.quiz": "Quiz Arena", "menu.quiz.note": "按级别和类别练习", "menu.tutor.note": "你的私人日语教练", "menu.mock.note": "模拟考试与复习", "menu.interview": "面试", "menu.interview.note": "工作、学校、使馆与SSW", "menu.japanlife": "日本生活", "menu.japanlife.note": "新来日本者实用指南", "menu.cv.note": "制作日式简历", "menu.toolkit.note": "生活与学习工具", "menu.profile.note": "进度与账号", "menu.title": "Aponar Nihon", "menu.subtitle": "一个菜单管理整个学习应用", "menu.intro": "从这里直接打开需要的板块", "menu.footer": "用自己的语言学习日语 · あなたの日本", "menu.close": "关闭菜单",
       "home.search": "搜索汉字、词汇、语法…", "home.noResults": "未找到—试试 N5、N4、N3、AI 或 quiz", "home.eyebrow": "全部集中在一处", "home.title": "重要板块", "home.n5.note": "基础课程", "home.n4.note": "下一步", "home.n3.note": "中级", "home.quiz": "测验", "home.quiz.note": "免费练习", "home.tutor": "AI Tutor", "home.tutor.note": "用你的语言提问", "home.mock.note": "考试练习", "home.interview": "面试", "home.interview.note": "工作与使馆", "home.ssw.note": "完整指南", "home.phrases": "实用短语", "home.phrases.note": "会话", "home.japanlife": "日本生活", "home.japanlife.note": "新手指南", "home.kana": "平假名与片假名", "home.kana.note": "学习假名", "progress.done": "已完成", "progress.opened": "已打开", "progress.notStarted": "未开始", "progress.saved": "学习进度已保存", "progress.finished": "完成", "progress.continue": "从上次的学习资源继续"
+    },
+    si: {
+      "language.button": "භාෂාව", "language.title": "ඔබගේ භාෂාව තෝරන්න", "language.subtitle": "බංග්ලා පෙරනිමි භාෂාව ලෙස පවතී. ඔබගේ තේරීම මෙම උපාංගයේ සුරැකේ.", "language.close": "වසන්න", "language.active": "දැනට තෝරාගත් භාෂාව", "brand.name": "Aponar Nihon", "brand.tagline": "සියලු දෙනා සඳහා ජපන් භාෂා ඉගෙනීම",
+      "menu.main": "ප්‍රධාන", "menu.jlpt": "JLPT ඉගෙනීම", "menu.practice": "පුහුණුව සහ සූදානම", "menu.japan": "ජපාන ජීවිතය සහ මෙවලම්", "menu.home": "මුල් පිටුව", "menu.home.note": "සියලු වැදගත් කොටස්", "menu.n5.note": "ආරම්භක ඉගෙනුම් මධ්‍යස්ථානය", "menu.n4.note": "මූලික ඉගෙනුම් මධ්‍යස්ථානය", "menu.n3.note": "මධ්‍යම මට්ටමේ ඉගෙනුම් මධ්‍යස්ථානය", "menu.quiz": "ප්‍රශ්නාවලි Arena", "menu.quiz.note": "මට්ටම සහ කාණ්ඩය අනුව පුහුණුව", "menu.tutor.note": "ඔබගේ පුද්ගලික ජපන් භාෂා උපදේශකයා", "menu.mock.note": "ආදර්ශ විභාග සහ සමාලෝචනය", "menu.interview": "සම්මුඛ පරීක්ෂණ", "menu.interview.note": "රැකියා, පාසල්, තානාපති කාර්යාල සහ SSW", "menu.japanlife": "ජපාන ජීවිතය", "menu.japanlife.note": "නවකයන් සඳහා ප්‍රායෝගික මාර්ගෝපදේශය", "menu.cv.note": "ජපන් ආකාරයේ CV එකක් සාදන්න", "menu.toolkit.note": "ජීවිතය සහ අධ්‍යයනය සඳහා මෙවලම්", "menu.profile.note": "ප්‍රගතිය සහ ගිණුම", "menu.title": "Aponar Nihon", "menu.subtitle": "සම්පූර්ණ ඉගෙනුම් app එක එකම මෙනුවක", "menu.intro": "ඔබට අවශ්‍ය කොටස මෙතැනින් සෘජුව විවෘත කරන්න", "menu.footer": "ඔබගේම භාෂාවෙන් ජපන් භාෂාව ඉගෙන ගන්න · あなたの日本", "menu.close": "මෙනුව වසන්න",
+      "home.search": "කන්ජි, වචන මාලාව, ව්‍යාකරණ සොයන්න…", "home.noResults": "කිසිවක් හමු නොවීය—N5, N4, N3, AI හෝ quiz උත්සාහ කරන්න", "home.eyebrow": "සියල්ල එකම තැනක", "home.title": "සියලු වැදගත් කොටස්", "home.n5.note": "මූලික පාඨමාලාව", "home.n4.note": "ඊළඟ පියවර", "home.n3.note": "මධ්‍යම මට්ටම", "home.quiz": "ප්‍රශ්නාවලිය", "home.quiz.note": "නොමිලේ පුහුණුව", "home.tutor": "AI Tutor", "home.tutor.note": "ඔබගේ භාෂාවෙන් අසන්න", "home.mock.note": "විභාග පුහුණුව", "home.interview": "සම්මුඛ පරීක්ෂණ", "home.interview.note": "රැකියා සහ තානාපති කාර්යාල", "home.ssw.note": "සම්පූර්ණ මාර්ගෝපදේශය", "home.phrases": "ප්‍රයෝජනවත් වාක්‍ය", "home.phrases.note": "සංවාද", "home.japanlife": "ජපාන ජීවිතය", "home.japanlife.note": "නවකයන්ගේ මාර්ගෝපදේශය", "home.kana": "හිරගනා සහ කතකනා", "home.kana.note": "අක්ෂර ඉගෙන ගන්න", "progress.done": "සම්පූර්ණයි", "progress.opened": "විවෘත කර ඇත", "progress.notStarted": "තවම ආරම්භ කර නැත", "progress.saved": "ඉගෙනුම් ප්‍රගතිය සුරැකිණි", "progress.finished": "අවසන්", "progress.continue": "අවසන් වරට බැලූ පාඩමෙන් ඉදිරියට යන්න"
+    },
+    fil: {
+      "language.button": "Wika", "language.title": "Piliin ang iyong wika", "language.subtitle": "Mananatiling default ang Bangla. Tatandaan sa device na ito ang pinili mo.", "language.close": "Isara", "language.active": "Kasalukuyang wika", "brand.name": "Aponar Nihon", "brand.tagline": "Pag-aaral ng Japanese para sa lahat",
+      "menu.main": "Pangunahin", "menu.jlpt": "Mag-aral ng JLPT", "menu.practice": "Pagsasanay at paghahanda", "menu.japan": "Buhay sa Japan at mga tool", "menu.home": "Home", "menu.home.note": "Lahat ng mahalagang seksyon", "menu.n5.note": "Learning center para sa baguhan", "menu.n4.note": "Elementary learning center", "menu.n3.note": "Intermediate learning center", "menu.quiz": "Quiz Arena", "menu.quiz.note": "Magsanay ayon sa level at category", "menu.tutor.note": "Personal mong Japanese coach", "menu.mock.note": "Mock exam at review", "menu.interview": "Interview", "menu.interview.note": "Trabaho, paaralan, embahada at SSW", "menu.japanlife": "Buhay sa Japan", "menu.japanlife.note": "Praktikal na gabay para sa mga bagong dating", "menu.cv.note": "Gumawa ng Japanese-style CV", "menu.toolkit.note": "Mga tool para sa buhay at pag-aaral", "menu.profile.note": "Progress at account", "menu.title": "Aponar Nihon", "menu.subtitle": "Buong learning app sa iisang menu", "menu.intro": "Buksan dito mismo ang seksyong kailangan mo", "menu.footer": "Mag-aral ng Japanese sa sarili mong wika · あなたの日本", "menu.close": "Isara ang menu",
+      "home.search": "Maghanap ng kanji, vocabulary, grammar…", "home.noResults": "Walang nakita—subukan ang N5, N4, N3, AI o quiz", "home.eyebrow": "Lahat sa iisang lugar", "home.title": "Lahat ng mahalagang seksyon", "home.n5.note": "Basic course", "home.n4.note": "Susunod na hakbang", "home.n3.note": "Intermediate", "home.quiz": "Quiz", "home.quiz.note": "Libreng pagsasanay", "home.tutor": "AI Tutor", "home.tutor.note": "Magtanong sa sarili mong wika", "home.mock.note": "Pagsasanay para sa exam", "home.interview": "Interview", "home.interview.note": "Trabaho at embahada", "home.ssw.note": "Kumpletong gabay", "home.phrases": "Mahahalagang parirala", "home.phrases.note": "Conversation", "home.japanlife": "Buhay sa Japan", "home.japanlife.note": "Gabay para sa bagong dating", "home.kana": "Hiragana at Katakana", "home.kana.note": "Aralin ang mga character", "progress.done": "tapos", "progress.opened": "Nabuksan", "progress.notStarted": "Hindi pa nasisimulan", "progress.saved": "Naka-save ang progress", "progress.finished": "tapos", "progress.continue": "Magpatuloy mula sa huling lesson"
     }
   };
 
   var currentLanguage = DEFAULT_LANGUAGE;
+  var profileSyncInFlight = false;
 
-  function readLanguage() {
+  function normalizeLanguage(value) {
+    if (typeof value !== "string") return "";
+    var raw = value.trim();
+    if (!raw) return "";
+    var lowered = raw.toLocaleLowerCase();
+    if (LANGUAGES[lowered]) return lowered;
+    if (LANGUAGE_ALIASES[lowered]) return LANGUAGE_ALIASES[lowered];
+    var match = Object.keys(LANGUAGES).find(function (code) {
+      return LANGUAGES[code].label === raw || LANGUAGES[code].label.toLocaleLowerCase() === lowered;
+    });
+    return match || "";
+  }
+
+  function languageFromPath() {
+    var preset = document.documentElement.dataset.languagePreset || "";
+    if (LANGUAGES[preset]) return preset;
+    var first = (window.location.pathname || "/").split("/").filter(Boolean)[0] || "";
+    try { first = decodeURIComponent(first); } catch (_error) { /* Keep the raw segment. */ }
+    return LANGUAGES[first] ? first : "";
+  }
+
+  function storedLanguage() {
     try {
       var saved = localStorage.getItem(STORAGE_KEY) || "";
-      if (LANGUAGES[saved]) return saved;
-    } catch (_error) { /* no persistence available */ }
-    return DEFAULT_LANGUAGE;
+      return normalizeLanguage(saved);
+    } catch (_error) {
+      return "";
+    }
+  }
+
+  function readLanguage() {
+    return languageFromPath() || storedLanguage() || DEFAULT_LANGUAGE;
+  }
+
+  function rememberLanguage(language) {
+    try { localStorage.setItem(STORAGE_KEY, language); } catch (_error) { /* no-op */ }
+  }
+
+  function normalizedRoute(pathname) {
+    var path = pathname || "/";
+    path = path.replace(/\/index\.html$/i, "/").replace(/\.html$/i, "");
+    if (path.length > 1) path = path.replace(/\/+$/, "");
+    return path || "/";
+  }
+
+  function alternatePath(language) {
+    var link = document.querySelector('link[rel~="alternate"][hreflang="' + language + '"]');
+    if (!link || !link.href) return "";
+    try {
+      var target = new URL(link.href, window.location.href);
+      target.search = window.location.search;
+      target.hash = window.location.hash;
+      return target.pathname + target.search + target.hash;
+    } catch (_error) {
+      return "";
+    }
+  }
+
+  function navigateToLanguage(language, replace) {
+    var target = alternatePath(language);
+    if (!target) return false;
+    var targetUrl = new URL(target, window.location.href);
+    if (normalizedRoute(targetUrl.pathname) === normalizedRoute(window.location.pathname)) return false;
+    if (replace) window.location.replace(target);
+    else window.location.assign(target);
+    return true;
+  }
+
+  function persistProfileLanguage(language) {
+    language = normalizeLanguage(language);
+    if (!language) return;
+    if (!window.AN || typeof window.AN.updateProfile !== "function") return;
+    Promise.resolve(window.AN.updateProfile({ preferred_language: language })).catch(function () {
+      // Local preference remains authoritative when profile sync is unavailable.
+    });
+  }
+
+  async function syncProfileLanguage() {
+    if (profileSyncInFlight || !window.AN || typeof window.AN.profile !== "function") return;
+    profileSyncInFlight = true;
+    try {
+      var profile = await window.AN.profile();
+      if (!profile) return;
+      var rawPreferred = typeof profile.preferred_language === "string" ? profile.preferred_language.trim() : "";
+      var preferred = normalizeLanguage(rawPreferred);
+      var local = languageFromPath() || storedLanguage();
+      if (local && rawPreferred !== local && typeof window.AN.updateProfile === "function") {
+        await window.AN.updateProfile({ preferred_language: local });
+      } else if (!local && preferred) {
+        setLanguage(preferred, { persistProfile: false });
+        navigateToLanguage(preferred, true);
+      }
+    } catch (_error) {
+      // Authentication/profile access is optional; device persistence still works.
+    } finally {
+      profileSyncInFlight = false;
+    }
   }
 
   function t(key, fallback) {
@@ -169,6 +290,8 @@
     var button = document.getElementById("aponarLanguageButton");
     if (button) {
       var label = LANGUAGES[currentLanguage];
+      button.querySelector("[data-language-flag]").textContent = label.flag;
+      button.querySelector("[data-language-label]").textContent = label.label;
       button.querySelector("[data-language-code]").textContent = label.short;
       button.setAttribute("aria-label", t("language.button", "Language") + ": " + label.label);
     }
@@ -184,18 +307,22 @@
     if (title) title.textContent = t("language.title", "Choose language");
     if (subtitle) subtitle.textContent = t("language.subtitle", "");
     if (close) close.textContent = t("language.close", "Close");
+    document.querySelectorAll("[data-language-close]").forEach(function (element) {
+      element.setAttribute("aria-label", t("language.close", "Close"));
+    });
   }
 
   function setLanguage(language, options) {
-    if (!LANGUAGES[language]) language = DEFAULT_LANGUAGE;
+    language = normalizeLanguage(language) || DEFAULT_LANGUAGE;
     currentLanguage = language;
     if (!options || options.persist !== false) {
-      try { localStorage.setItem(STORAGE_KEY, currentLanguage); } catch (_error) { /* no-op */ }
+      rememberLanguage(currentLanguage);
     }
     applyDocumentLanguage();
     translateAnnotated(document);
     updatePicker();
     window.dispatchEvent(new CustomEvent("aponar:languagechange", { detail: { language: currentLanguage } }));
+    if (!options || options.persistProfile !== false) persistProfileLanguage(currentLanguage);
   }
 
   function closePicker() {
@@ -204,6 +331,8 @@
     layer.classList.remove("open");
     window.setTimeout(function () { layer.hidden = true; }, 180);
     document.body.classList.remove("aponar-language-open");
+    var button = document.getElementById("aponarLanguageButton");
+    if (button) button.focus({ preventScroll: true });
   }
 
   function openPicker() {
@@ -211,7 +340,11 @@
     if (!layer) return;
     layer.hidden = false;
     document.body.classList.add("aponar-language-open");
-    window.requestAnimationFrame(function () { layer.classList.add("open"); });
+    window.requestAnimationFrame(function () {
+      layer.classList.add("open");
+      var active = layer.querySelector("[data-language-option].active");
+      if (active) active.focus({ preventScroll: true });
+    });
   }
 
   function mountPicker() {
@@ -221,16 +354,28 @@
     button.type = "button";
     button.className = "aponar-language-button";
     button.id = "aponarLanguageButton";
-    button.innerHTML = '<i class="fa-solid fa-globe" aria-hidden="true"></i><span data-language-code>BN</span>';
+    button.innerHTML = '<span class="aponar-language-globe" aria-hidden="true">🌐</span>' +
+      '<span class="aponar-language-current-flag" data-language-flag>🇧🇩</span>' +
+      '<span class="aponar-language-current-label" data-language-label>বাংলা</span>' +
+      '<span class="aponar-language-current-code" data-language-code>BN</span>' +
+      '<span class="aponar-language-chevron" aria-hidden="true">▾</span>';
     button.addEventListener("click", openPicker);
 
-    var actions = document.querySelector(".app-top-actions");
+    var actions = document.querySelector(".app-top-actions,.lh-top-actions,.nm-actions,.app-header-actions,.navbar-actions");
     if (actions) actions.insertBefore(button, actions.firstChild);
-    else document.body.appendChild(button);
+    else {
+      button.classList.add("aponar-language-floating");
+      document.body.appendChild(button);
+    }
 
     var options = Object.keys(LANGUAGES).map(function (code) {
       var item = LANGUAGES[code];
-      return '<button type="button" class="aponar-language-option" data-language-option="' + code + '"><span class="aponar-language-native">' + item.label + '</span><span class="aponar-language-code">' + item.short + '</span></button>';
+      var direction = RTL_LANGUAGES[code] ? ' dir="rtl"' : '';
+      return '<button type="button" class="aponar-language-option" data-language-option="' + code + '"' + direction + '>' +
+        '<span class="aponar-language-flag" aria-hidden="true">' + item.flag + '</span>' +
+        '<span class="aponar-language-option-copy"><span class="aponar-language-native" lang="' + code + '">' + item.label + '</span>' +
+        '<span class="aponar-language-code">' + item.short + '</span></span>' +
+        '<span class="aponar-language-check" aria-hidden="true">✓</span></button>';
     }).join("");
 
     var layer = document.createElement("div");
@@ -239,7 +384,7 @@
     layer.hidden = true;
     layer.innerHTML = '<button class="aponar-language-backdrop" type="button" data-language-close aria-label="Close"></button>' +
       '<section class="aponar-language-sheet" role="dialog" aria-modal="true" aria-labelledby="aponarLanguageTitle">' +
-      '<div class="aponar-language-head"><div><h2 id="aponarLanguageTitle" data-language-title></h2><p data-language-subtitle></p></div><button type="button" class="aponar-language-x" data-language-close aria-label="Close"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>' +
+      '<div class="aponar-language-head"><div><h2 id="aponarLanguageTitle" data-language-title></h2><p data-language-subtitle></p></div><button type="button" class="aponar-language-x" data-language-close aria-label="Close"><span aria-hidden="true">×</span></button></div>' +
       '<div class="aponar-language-grid">' + options + '</div>' +
       '<button type="button" class="aponar-language-done" data-language-close><span data-language-close-label></span></button>' +
       '</section>';
@@ -248,7 +393,10 @@
     layer.addEventListener("click", function (event) {
       var option = event.target.closest("[data-language-option]");
       if (option) {
-        setLanguage(option.dataset.languageOption);
+        var chosen = option.dataset.languageOption;
+        setLanguage(chosen);
+        closePicker();
+        window.setTimeout(function () { navigateToLanguage(chosen, false); }, 40);
         return;
       }
       if (event.target.closest("[data-language-close]")) closePicker();
@@ -262,13 +410,16 @@
   }
 
   currentLanguage = readLanguage();
+  if (languageFromPath()) rememberLanguage(currentLanguage);
   applyDocumentLanguage();
 
   window.AponarI18n = {
     languages: LANGUAGES,
     defaultLanguage: DEFAULT_LANGUAGE,
+    normalizeLanguage: normalizeLanguage,
     getLanguage: function () { return currentLanguage; },
     setLanguage: setLanguage,
+    localizedPath: alternatePath,
     t: t,
     translate: translateAnnotated,
     register: function (language, messages) {
@@ -284,5 +435,11 @@
   document.addEventListener("DOMContentLoaded", function () {
     mountPicker();
     translateAnnotated(document);
+    if (currentLanguage !== DEFAULT_LANGUAGE || languageFromPath()) {
+      window.setTimeout(function () { navigateToLanguage(currentLanguage, true); }, 0);
+    }
+    window.setTimeout(syncProfileLanguage, 500);
+    window.setTimeout(syncProfileLanguage, 1600);
   });
+  window.addEventListener("an-auth-changed", syncProfileLanguage);
 })();

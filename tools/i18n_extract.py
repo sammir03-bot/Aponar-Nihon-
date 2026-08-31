@@ -8,7 +8,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SUPPORTED = {"ja", "en", "vi", "ne", "hi", "ur", "my", "zh"}
+SUPPORTED = {"ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil"}
 BANGLA_RE = re.compile(r"[\u0980-\u09ff]")
 WHITESPACE_RE = re.compile(r"\s+")
 SKIP_TAGS = {"script", "style", "noscript", "template", "code", "pre", "textarea", "svg"}

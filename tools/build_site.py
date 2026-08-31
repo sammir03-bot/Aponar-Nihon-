@@ -7,6 +7,7 @@ from pathlib import Path
 
 from sitecore.htmltools import inject_assets, visible_text_hash
 from sitecore.linkcheck import find_broken_page_links
+from sitecore.locales import build_localized_pages
 from sitecore.postprocess import postprocess_site
 from sitecore.search_index import build_search_index
 from sitecore.seo import prepare_search_engine_files
@@ -25,9 +26,9 @@ EXCLUDED_FILES = {
     "archive/home-full-legacy.html", "archive/tutor-section-legacy.html",
 }
 
-I18N_CSS = '<link rel="stylesheet" href="/assets/css/i18n.css?v=20260831">'
-I18N_JS = '<script src="/assets/js/i18n.js?v=20260831"></script>'
-I18N_CONTENT_JS = '<script defer src="/assets/js/i18n-content.js?v=20260831"></script>'
+I18N_CSS = '<link rel="stylesheet" href="/assets/css/i18n.css?v=20260831.2">'
+I18N_JS = '<script src="/assets/js/i18n.js?v=20260831.2"></script>'
+I18N_CONTENT_JS = '<script defer src="/assets/js/i18n-content.js?v=20260831.2"></script>'
 PRO_CSS = '<link rel="stylesheet" href="/assets/css/pro-core.css?v=20260825">'
 PRO_JS = '<script defer src="/assets/js/pro-core.js?v=20260825"></script>'
 PLATFORM_TS = '<script type="module" src="/assets/js/ts/platform.js?v=20260825"></script>'
@@ -123,6 +124,7 @@ def build(destination: Path, check_links: bool = False) -> int:
     origin_files, origin_replacements, origin_html_checks = rewrite_production_origin(destination)
     injected, injection_checked = inject_professional_assets(destination)
     changed, post_checked, repaired, secured = postprocess_site(destination)
+    localized_pages, localized_clusters, localized_nodes = build_localized_pages(destination)
     canonicals, noindex, seo_checked, verification, sitemap_urls = prepare_search_engine_files(destination)
     indexed = build_search_index(
         destination,
@@ -140,6 +142,9 @@ def build(destination: Path, check_links: bool = False) -> int:
     print(f"HTML pages post-processed: {changed}")
     print(f"Internal links repaired safely: {repaired}")
     print(f"_blank links hardened: {secured}")
+    print(f"Localized HTML pages: {localized_pages}")
+    print(f"Localized hreflang clusters: {localized_clusters}")
+    print(f"Reviewed text nodes localized at build time: {localized_nodes}")
     print(f"SEO canonical pages: {canonicals}")
     print(f"SEO noindex pages: {noindex}")
     print(f"Search Console verification injected: {'yes' if verification else 'no'}")

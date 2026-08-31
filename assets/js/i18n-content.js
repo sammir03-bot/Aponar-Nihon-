@@ -14,8 +14,14 @@
 
   function pageKey() {
     var path = window.location.pathname || "/";
-    if (path === "/" || /\/index\.html$/i.test(path)) return "index";
-    path = path.replace(/^\/+|\/+$/g, "").replace(/\.html$/i, "");
+    var explicit = document.documentElement.dataset.i18nPage || "";
+    if (explicit) return explicit;
+
+    var parts = path.replace(/^\/+|\/+$/g, "").split("/").filter(Boolean);
+    if (parts.length && window.AponarI18n.languages[parts[0]]) parts.shift();
+    if (parts.length && /^index\.html$/i.test(parts[parts.length - 1])) parts.pop();
+    path = parts.join("/").replace(/\.html$/i, "");
+    if (!path) return "index";
     return path.replace(/[^a-zA-Z0-9._-]+/g, "__") || "index";
   }
 

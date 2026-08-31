@@ -7,8 +7,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PACK_DIR = ROOT / "assets" / "i18n" / "pages"
-SUPPORTED = {"ja", "en", "vi", "ne", "hi", "ur", "my", "zh"}
-PACK_NAME_RE = re.compile(r"^(?P<page>.+)\.(?P<language>ja|en|vi|ne|hi|ur|my|zh)\.json$")
+SUPPORTED = {"ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil"}
+LANGUAGE_PATTERN = "|".join(sorted((re.escape(code) for code in SUPPORTED), key=len, reverse=True))
+PACK_NAME_RE = re.compile(rf"^(?P<page>.+)\.(?P<language>{LANGUAGE_PATTERN})\.json$")
 
 
 def fail(message: str) -> None:
@@ -21,6 +22,7 @@ def main() -> int:
 
     checked = 0
     reviewed_entries = 0
+    available: set[tuple[str, str]] = set()
     for path in sorted(PACK_DIR.glob("*.json")):
         match = PACK_NAME_RE.match(path.name)
         if not match:
@@ -40,6 +42,7 @@ def main() -> int:
             fail(f"Pack page key mismatch: {path.relative_to(ROOT)}")
         if payload.get("reviewed") is not True:
             fail(f"Only reviewed packs may be committed: {path.relative_to(ROOT)}")
+        available.add((page, language))
 
         entries = payload.get("entries")
         if not isinstance(entries, list) or not entries:
@@ -61,6 +64,15 @@ def main() -> int:
             seen.add(normalized)
             reviewed_entries += 1
         checked += 1
+
+    missing_core = sorted(
+        f"{page}.{language}.json"
+        for page in {"about", "n5"}
+        for language in SUPPORTED
+        if (page, language) not in available
+    )
+    if missing_core:
+        fail("Missing core translation packs: " + ", ".join(missing_core))
 
     print(f"i18n packs OK: {checked} reviewed packs, {reviewed_entries} translated entries")
     return 0
