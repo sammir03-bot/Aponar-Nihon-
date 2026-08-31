@@ -167,7 +167,9 @@
     var observer = new MutationObserver(function (mutations) {
       if (applying) return;
       var meaningful = mutations.some(function (mutation) {
-        return mutation.type === "childList" || mutation.type === "characterData";
+        if (mutation.type === "childList") return true;
+        if (mutation.type === "characterData") return !translatedNodes.has(mutation.target);
+        return false;
       });
       if (meaningful) scheduleDynamicRefresh();
     });
