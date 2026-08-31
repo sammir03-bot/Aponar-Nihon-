@@ -42,16 +42,27 @@ body[data-page="home"] .app-brand-copy strong {
   white-space: nowrap;
 }
 
+/* Keep this as a fixed brand line in every selected language. */
 body[data-page="home"] .app-brand-copy small {
+  display: block;
   max-width: none;
   overflow: visible;
   margin-top: 2px;
   color: #77869a;
+  font-size: 0;
+  font-weight: 800;
+  letter-spacing: 0.035em;
+  line-height: 1.1;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+
+body[data-page="home"] .app-brand-copy small::after {
+  content: "JAPANESE LEARNING HUB";
+  font-family: Inter, system-ui, sans-serif;
   font-size: 0.62rem;
   font-weight: 800;
   letter-spacing: 0.035em;
-  text-overflow: clip;
-  white-space: nowrap;
 }
 
 body[data-page="home"] .app-top-actions {
@@ -107,8 +118,9 @@ body[data-page="home"] .aponar-language-current-flag {
     font-size: 1rem;
   }
 
-  body[data-page="home"] .app-brand-copy small {
-    font-size: 0.56rem;
+  body[data-page="home"] .app-brand-copy small::after {
+    font-size: 0.54rem;
+    letter-spacing: 0.025em;
   }
 
   body[data-page="home"] .app-icon-button,
@@ -128,7 +140,12 @@ body[data-page="home"] .aponar-language-current-flag {
 
 @media (max-width: 400px) {
   body[data-page="home"] .app-brand-copy small {
-    display: none;
+    display: block;
+  }
+
+  body[data-page="home"] .app-brand-copy small::after {
+    font-size: 0.49rem;
+    letter-spacing: 0.015em;
   }
 
   body[data-page="home"] .aponar-language-button {
