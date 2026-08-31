@@ -44,7 +44,7 @@ JAPANESE_TOKEN_RE = re.compile(r"[一-龯々〆ヵヶぁ-ゖァ-ヺー]+")
 PROTECTED_TOKEN_RE = re.compile(
     r"https?://[^\s\"'<>]+|www\.[^\s\"'<>]+|"
     r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}|"
-    r"\bN[1-5]\b|\{\{[^{}]+\}\}|\$\\{[^{}]+\}|\{[A-Za-z0-9_.-]+\}|%[sd]"
+    r"\bN[1-5]\b|\{\{[^{}]+\}\}|\$\x7b[^{}]+\}|\{[A-Za-z0-9_.-]+\}|%[sd]"
 )
 FIXED_BRANDS = ("আপনার নিহোন", "Aponar Nihon")
 FIXED_EXACT_TEXT = {
