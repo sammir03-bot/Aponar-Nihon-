@@ -28,16 +28,16 @@
     var explicit = document.documentElement.dataset.i18nPage || "";
     if (explicit) return explicit;
 
-    var parts = path.replace(/^\\/+|\\/+$/g, "").split("/").filter(Boolean);
+    var parts = path.replace(/^\/+|\/+$/g, "").split("/").filter(Boolean);
     if (parts.length && window.AponarI18n.languages[parts[0]]) parts.shift();
-    if (parts.length && /^index\\.html$/i.test(parts[parts.length - 1])) parts.pop();
-    path = parts.join("/").replace(/\\.html$/i, "");
+    if (parts.length && /^index\.html$/i.test(parts[parts.length - 1])) parts.pop();
+    path = parts.join("/").replace(/\.html$/i, "");
     if (!path) return "index";
     return path.replace(/[^a-zA-Z0-9._-]+/g, "__") || "index";
   }
 
   function normalize(value) {
-    return String(value || "").replace(/\\s+/g, " ").trim();
+    return String(value || "").replace(/\s+/g, " ").trim();
   }
 
   function protectedElement(element) {
@@ -129,8 +129,8 @@
     if (!originalText.has(node)) originalText.set(node, node.nodeValue);
 
     var raw = node.nodeValue || "";
-    var leading = (raw.match(/^\\s*/) || [""])[0];
-    var trailing = (raw.match(/\\s*$/) || [""])[0];
+    var leading = (raw.match(/^\s*/) || [""])[0];
+    var trailing = (raw.match(/\s*$/) || [""])[0];
     node.nodeValue = leading + target + trailing;
     translatedNodes.add(node);
 
