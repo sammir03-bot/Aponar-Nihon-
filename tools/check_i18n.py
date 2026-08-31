@@ -14,8 +14,9 @@ def main() -> int:
         site = (ROOT / site).resolve()
 
     runtime = ROOT / "assets" / "js" / "i18n.js"
+    content_runtime = ROOT / "assets" / "js" / "i18n-content.js"
     styles = ROOT / "assets" / "css" / "i18n.css"
-    if not runtime.exists() or not styles.exists():
+    if not runtime.exists() or not content_runtime.exists() or not styles.exists():
         raise SystemExit("Missing multilingual runtime assets")
 
     source = runtime.read_text(encoding="utf-8")
@@ -29,6 +30,11 @@ def main() -> int:
     if not pages:
         raise SystemExit("No built HTML pages found")
 
+    required = (
+        "/assets/css/i18n.css?v=20260831",
+        "/assets/js/i18n.js?v=20260831",
+        "/assets/js/i18n-content.js?v=20260831",
+    )
     checked = 0
     missing: list[str] = []
     for page in pages:
@@ -37,14 +43,17 @@ def main() -> int:
             continue
         checked += 1
         html = page.read_text(encoding="utf-8", errors="ignore")
-        if "/assets/js/i18n.js?v=20260831" not in html or "/assets/css/i18n.css?v=20260831" not in html:
+        if any(asset not in html for asset in required):
             missing.append(rel)
 
     if missing:
         sample = ", ".join(missing[:12])
         raise SystemExit(f"Multilingual assets missing from {len(missing)} pages: {sample}")
 
-    print(f"i18n OK: {len(SUPPORTED)} languages, Bangla default, {checked} HTML pages wired")
+    print(
+        f"i18n OK: {len(SUPPORTED)} languages, Bangla default, "
+        f"content-pack loader enabled, {checked} HTML pages wired"
+    )
     return 0
 
 
