@@ -12,6 +12,8 @@ Bangla (`bn`) is the source/default language. The shared UI is translated by `as
 - `ur` — اردو
 - `my` — မြန်မာ
 - `zh` — 中文
+- `si` — සිංහල (Sri Lanka)
+- `fil` — Filipino (Philippines)
 
 ## File naming
 
@@ -50,6 +52,7 @@ A Vietnamese pack for the first example is:
 5. Urdu packs may use normal Urdu text; the runtime applies direction handling without changing Japanese source text.
 6. A missing pack is safe: the page stays in Bangla rather than showing an unreviewed translation.
 7. Prefer one reviewed pack per page/language. Do not use browser auto-translation as the source of truth for educational material.
+8. Reviewed packs are also rendered into crawlable locale routes at build time (for example `/en/n5/`). The Bangla source remains at the unprefixed URL.
 
 ## Workflow
 

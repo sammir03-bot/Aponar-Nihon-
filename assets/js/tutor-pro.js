@@ -565,7 +565,8 @@
           client_id: clientId,
           level: state.level,
           mode: state.mode,
-          depth: state.depth
+          depth: state.depth,
+          language: window.AponarI18n ? window.AponarI18n.getLanguage() : "bn"
         }),
         signal: controller.signal
       });

@@ -1,1 +1,388 @@
-.aponar-language-button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-width:48px;height:42px;padding:0 11px;border:1px solid rgba(148,163,184,.28);border-radius:14px;background:rgba(255,255,255,.9);color:#0f172a;font:800 12px/1 Inter,"Noto Sans Bengali","Noto Sans JP",sans-serif;box-shadow:0 8px 22px rgba(15,23,42,.08);cursor:pointer;-webkit-tap-highlight-color:transparent}.aponar-language-button i{font-size:15px}.aponar-language-button:hover{transform:translateY(-1px)}body>.aponar-language-button{position:fixed;right:0;top:50%;z-index:950;min-width:46px;width:46px;height:48px;padding:0 4px;border-radius:14px 0 0 14px;transform:translateY(-50%);box-shadow:0 8px 24px rgba(15,23,42,.16)}body>.aponar-language-button:hover{transform:translateY(calc(-50% - 1px))}.aponar-language-layer{position:fixed;inset:0;z-index:1400;display:grid;align-items:end;justify-items:center}.aponar-language-layer[hidden]{display:none}.aponar-language-backdrop{position:absolute;inset:0;border:0;background:rgba(15,23,42,.5);backdrop-filter:blur(4px);opacity:0;transition:opacity .18s ease}.aponar-language-sheet{position:relative;width:min(720px,100%);max-height:min(82vh,760px);overflow:auto;background:#fff;border-radius:24px 24px 0 0;padding:20px clamp(16px,4vw,28px) calc(18px + env(safe-area-inset-bottom));box-shadow:0 -22px 60px rgba(15,23,42,.2);transform:translateY(18px);opacity:0;transition:transform .18s ease,opacity .18s ease}.aponar-language-layer.open .aponar-language-backdrop{opacity:1}.aponar-language-layer.open .aponar-language-sheet{transform:translateY(0);opacity:1}.aponar-language-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:16px}.aponar-language-head h2{margin:0;color:#0f172a;font:900 clamp(21px,4vw,28px)/1.25 Inter,"Noto Sans Bengali","Noto Sans JP",sans-serif}.aponar-language-head p{margin:7px 0 0;color:#64748b;font:600 13px/1.6 Inter,"Noto Sans Bengali","Noto Sans JP",sans-serif}.aponar-language-x{flex:0 0 auto;width:40px;height:40px;border:1px solid #e2e8f0;border-radius:12px;background:#f8fafc;color:#334155;cursor:pointer}.aponar-language-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.aponar-language-option{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:56px;padding:12px 14px;border:1px solid #e2e8f0;border-radius:16px;background:#fff;color:#0f172a;cursor:pointer;text-align:start;font-family:Inter,"Noto Sans Bengali","Noto Sans JP",sans-serif}.aponar-language-option.active{border-color:#1677e8;background:#eff6ff;box-shadow:0 0 0 2px rgba(22,119,232,.1)}.aponar-language-option.active::after{content:"✓";font-weight:900;color:#1677e8}.aponar-language-native{font-size:15px;font-weight:800}.aponar-language-code{margin-inline-start:auto;color:#94a3b8;font-size:11px;font-weight:900;letter-spacing:.08em}.aponar-language-option.active .aponar-language-code{display:none}.aponar-language-done{width:100%;min-height:48px;margin-top:16px;border:0;border-radius:15px;background:#1677e8;color:#fff;font:800 14px/1 Inter,"Noto Sans Bengali","Noto Sans JP",sans-serif;cursor:pointer}.aponar-language-open{overflow:hidden}html[dir="rtl"] .aponar-language-head,html[dir="rtl"] .aponar-language-option{text-align:right}.app-top-actions .aponar-language-button{box-shadow:none;background:transparent}@media(min-width:640px){.aponar-language-layer{align-items:center}.aponar-language-sheet{border-radius:24px;max-width:680px}.aponar-language-grid{grid-template-columns:repeat(3,minmax(0,1fr))}body>.aponar-language-button{right:16px;border-radius:14px}}@media(prefers-color-scheme:dark){body:not(.light-theme) .aponar-language-button{background:rgba(15,23,42,.88);border-color:rgba(148,163,184,.22);color:#f8fafc}body:not(.light-theme) .aponar-language-sheet{background:#0f172a}body:not(.light-theme) .aponar-language-head h2,body:not(.light-theme) .aponar-language-option{color:#f8fafc}body:not(.light-theme) .aponar-language-head p{color:#94a3b8}body:not(.light-theme) .aponar-language-option{background:#111827;border-color:#334155}body:not(.light-theme) .aponar-language-option.active{background:#172554;border-color:#3b82f6}body:not(.light-theme) .aponar-language-x{background:#111827;border-color:#334155;color:#f8fafc}}
+:root {
+  --aponar-i18n-ink: #173b5e;
+  --aponar-i18n-muted: #6f8396;
+  --aponar-i18n-blue: #176fc1;
+  --aponar-i18n-border: rgba(29, 91, 140, 0.16);
+}
+
+body.aponar-language-open {
+  overflow: hidden !important;
+}
+
+.aponar-language-button {
+  position: relative;
+  z-index: 70;
+  min-width: 126px;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--aponar-i18n-border);
+  border-radius: 14px;
+  background: linear-gradient(180deg, #fff 0%, #f4f9fd 100%);
+  color: var(--aponar-i18n-ink);
+  box-shadow: 0 8px 22px rgba(24, 78, 122, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  font: 800 12px/1.1 "Noto Sans Bengali", "Noto Sans Sinhala", "Noto Sans Myanmar", Inter, system-ui, sans-serif;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.aponar-language-button:hover {
+  border-color: rgba(23, 111, 193, 0.34);
+  box-shadow: 0 10px 26px rgba(24, 78, 122, 0.15);
+}
+
+.aponar-language-button:active {
+  transform: scale(0.97);
+}
+
+.aponar-language-button:focus-visible,
+.aponar-language-option:focus-visible,
+.aponar-language-x:focus-visible,
+.aponar-language-done:focus-visible {
+  outline: 3px solid rgba(31, 126, 214, 0.28);
+  outline-offset: 2px;
+}
+
+.aponar-language-globe {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.aponar-language-current-flag,
+.aponar-language-flag {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  line-height: 1;
+}
+
+.aponar-language-current-flag {
+  font-size: 17px;
+}
+
+.aponar-language-current-label {
+  max-width: 92px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.aponar-language-current-code {
+  display: none;
+}
+
+.aponar-language-chevron {
+  color: #8194a5;
+  font-size: 9px;
+  transition: transform 160ms ease;
+}
+
+body.aponar-language-open .aponar-language-chevron {
+  transform: rotate(180deg);
+}
+
+.aponar-language-floating {
+  position: fixed;
+  top: max(12px, env(safe-area-inset-top));
+  right: max(12px, env(safe-area-inset-right));
+  z-index: 5000;
+}
+
+.tutor-top-actions .aponar-language-button {
+  min-width: 112px;
+  height: 40px;
+  box-shadow: none;
+}
+
+html[dir="rtl"] .aponar-language-floating {
+  right: auto;
+  left: max(12px, env(safe-area-inset-left));
+}
+
+.aponar-language-layer[hidden] {
+  display: none !important;
+}
+
+.aponar-language-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.aponar-language-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: rgba(6, 20, 35, 0.58);
+  opacity: 0;
+  backdrop-filter: blur(8px);
+  transition: opacity 180ms ease;
+  cursor: default;
+}
+
+.aponar-language-sheet {
+  position: relative;
+  width: min(620px, 100%);
+  max-height: min(760px, calc(100dvh - 40px));
+  overflow: auto;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.78);
+  border-radius: 28px;
+  background: linear-gradient(155deg, #fff 0%, #f5faff 100%);
+  color: var(--aponar-i18n-ink);
+  box-shadow: 0 30px 90px rgba(4, 24, 42, 0.3);
+  opacity: 0;
+  transform: translateY(14px) scale(0.98);
+  transition: opacity 180ms ease, transform 180ms ease;
+  font-family: "Noto Sans Bengali", "Noto Sans Sinhala", "Noto Sans Myanmar", Inter, system-ui, sans-serif;
+}
+
+.aponar-language-layer.open .aponar-language-backdrop,
+.aponar-language-layer.open .aponar-language-sheet {
+  opacity: 1;
+}
+
+.aponar-language-layer.open .aponar-language-sheet {
+  transform: translateY(0) scale(1);
+}
+
+.aponar-language-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 19px;
+}
+
+.aponar-language-head h2 {
+  margin: 0;
+  color: #153d61;
+  font-size: clamp(21px, 4vw, 28px);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.aponar-language-head p {
+  max-width: 470px;
+  margin: 7px 0 0;
+  color: var(--aponar-i18n-muted);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.65;
+}
+
+.aponar-language-x {
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  border-radius: 13px;
+  background: #eaf2f8;
+  color: #567086;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+
+.aponar-language-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.aponar-language-option {
+  min-width: 0;
+  min-height: 64px;
+  padding: 10px 12px;
+  border: 1px solid #dce8f1;
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #234d6f;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 11px;
+  text-align: start;
+  cursor: pointer;
+  transition: transform 150ms ease, border-color 150ms ease, background 150ms ease, box-shadow 150ms ease;
+}
+
+.aponar-language-option:hover {
+  transform: translateY(-1px);
+  border-color: rgba(23, 111, 193, 0.36);
+  box-shadow: 0 9px 22px rgba(30, 83, 125, 0.1);
+}
+
+.aponar-language-option.active {
+  border-color: rgba(23, 111, 193, 0.58);
+  background: linear-gradient(135deg, #edf7ff 0%, #f7fbff 100%);
+  box-shadow: inset 0 0 0 1px rgba(23, 111, 193, 0.1);
+}
+
+.aponar-language-flag {
+  width: 34px;
+  height: 34px;
+  border-radius: 11px;
+  background: #f1f6fa;
+  display: grid;
+  place-items: center;
+  font-size: 21px;
+}
+
+.aponar-language-option-copy {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.aponar-language-native {
+  overflow: hidden;
+  color: #173f61;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.aponar-language-code {
+  color: #8a9baa;
+  font: 800 9px/1 Inter, system-ui, sans-serif;
+  letter-spacing: 0.12em;
+}
+
+.aponar-language-check {
+  color: var(--aponar-i18n-blue);
+  font: 900 16px/1 Inter, system-ui, sans-serif;
+  opacity: 0;
+  transform: scale(0.75);
+  transition: opacity 150ms ease, transform 150ms ease;
+}
+
+.aponar-language-option.active .aponar-language-check {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.aponar-language-done {
+  width: 100%;
+  height: 46px;
+  margin-top: 16px;
+  border: 0;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #176fc1, #2d5ad1);
+  color: #fff;
+  font: 900 13px/1 "Noto Sans Bengali", "Noto Sans Sinhala", Inter, system-ui, sans-serif;
+  box-shadow: 0 10px 22px rgba(31, 91, 185, 0.22);
+  cursor: pointer;
+}
+
+html[dir="rtl"] .aponar-language-sheet {
+  direction: rtl;
+}
+
+html[dir="rtl"] .aponar-language-option:not([dir="rtl"]) {
+  direction: ltr;
+}
+
+@media (max-width: 640px) {
+  .aponar-language-layer {
+    align-items: end;
+    padding: 0;
+  }
+
+  .aponar-language-sheet {
+    width: 100%;
+    max-height: min(86dvh, 760px);
+    padding: 20px 14px max(16px, env(safe-area-inset-bottom));
+    border-radius: 28px 28px 0 0;
+    transform: translateY(32px);
+  }
+
+  .aponar-language-head {
+    margin-bottom: 15px;
+  }
+
+  .aponar-language-head p {
+    font-size: 11px;
+  }
+
+  .aponar-language-option {
+    min-height: 59px;
+    padding: 9px 10px;
+    gap: 8px;
+  }
+
+  .aponar-language-flag {
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    font-size: 19px;
+  }
+
+  .aponar-language-native {
+    font-size: 12px;
+  }
+
+  .aponar-language-check {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .aponar-language-button {
+    min-width: 112px;
+    height: 40px;
+    padding: 0 10px;
+    gap: 6px;
+    border-radius: 13px;
+  }
+
+  .aponar-language-current-label {
+    max-width: 66px;
+    font-size: 11px;
+  }
+
+  .aponar-language-grid {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 620px) {
+  .tutor-top-actions .aponar-language-button {
+    width: 36px;
+    min-width: 36px;
+    height: 36px;
+    padding: 0;
+    border-radius: 11px;
+  }
+
+  .tutor-top-actions .aponar-language-globe,
+  .tutor-top-actions .aponar-language-current-label,
+  .tutor-top-actions .aponar-language-chevron {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .aponar-language-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aponar-language-button,
+  .aponar-language-backdrop,
+  .aponar-language-sheet,
+  .aponar-language-option,
+  .aponar-language-check {
+    transition: none !important;
+  }
+}
