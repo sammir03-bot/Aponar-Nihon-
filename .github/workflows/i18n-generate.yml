@@ -6,6 +6,7 @@ on:
       - feat/full-static-i18n
     paths:
       - .github/workflows/i18n-generate.yml
+      - tools/i18n_ai_pipeline.py
   workflow_dispatch:
 
 permissions:
