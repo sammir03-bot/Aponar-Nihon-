@@ -36,6 +36,16 @@ URL_ATTRIBUTE_RE = re.compile(
     flags=re.IGNORECASE | re.DOTALL,
 )
 
+FIXED_BRAND_TEXT = {"আপনার নিহোন", "APONAR NIHON", "Aponar Nihon", "JAPANESE LEARNING HUB"}
+EXCLUDED_LOCALIZED_PAGES = {"admin.html", "refresh-site.html"}
+TRANSLATABLE_ATTRIBUTES = {"aria-label", "placeholder", "title", "alt"}
+BUTTON_INPUT_TYPES = {"button", "submit", "reset"}
+ATTRIBUTE_VALUE_RE = re.compile(
+    r"(?P<prefix>\\s+(?P<name>aria-label|placeholder|title|alt|value|content)\\s*=\\s*)"
+    r"(?P<quote>[\\"'])(?P<value>.*?)(?P=quote)",
+    flags=re.IGNORECASE | re.DOTALL,
+)
+
 SKIP_TEXT_TAGS = {
     "script",
     "style",
@@ -91,17 +101,54 @@ class _ReviewedTranslationParser(HTMLParser):
         classes = set(attributes.get("class", "").split())
         return "jp" in classes or "data-i18n-no-content" in attributes
 
+    def _translate_attributes(
+        self,
+        raw: str,
+        tag: str,
+        attrs: list[tuple[str, str | None]],
+        skip_here: bool,
+    ) -> str:
+        if self.skip_depth or skip_here:
+            return raw
+        attributes = {name.lower(): (value or "") for name, value in attrs}
+        allowed = set(TRANSLATABLE_ATTRIBUTES)
+        if tag == "input" and attributes.get("type", "").lower() in BUTTON_INPUT_TYPES:
+            allowed.add("value")
+        if tag == "meta" and attributes.get("name", "").lower() == "description":
+            allowed.add("content")
+
+        def replace(match: re.Match[str]) -> str:
+            name = match.group("name").lower()
+            if name not in allowed:
+                return match.group(0)
+            source = _normalize(html_lib.unescape(match.group("value")))
+            if not source or source in FIXED_BRAND_TEXT:
+                return match.group(0)
+            target = self.entries.get(source)
+            if target is None:
+                return match.group(0)
+            self.translation_count += 1
+            escaped = html_lib.escape(target, quote=True)
+            return f"{match.group('prefix')}{match.group('quote')}{escaped}{match.group('quote')}"
+
+        return ATTRIBUTE_VALUE_RE.sub(replace, raw)
+
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         lower = tag.lower()
-        self.parts.append(self.get_starttag_text())
         skip_here = self._must_preserve(lower, attrs)
+        raw = self.get_starttag_text()
+        self.parts.append(self._translate_attributes(raw, lower, attrs, skip_here))
         if lower not in VOID_TAGS:
             self.stack.append((lower, skip_here))
             if skip_here:
                 self.skip_depth += 1
 
     def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
-        self.parts.append(self.get_starttag_text())
+        lower = tag.lower()
+        skip_here = self._must_preserve(lower, attrs)
+        self.parts.append(
+            self._translate_attributes(self.get_starttag_text(), lower, attrs, skip_here)
+        )
 
     def handle_endtag(self, tag: str) -> None:
         lower = tag.lower()
@@ -120,6 +167,9 @@ class _ReviewedTranslationParser(HTMLParser):
             self.parts.append(data)
             return
         source = _normalize(data)
+        if source in FIXED_BRAND_TEXT:
+            self.parts.append(data)
+            return
         target = self.entries.get(source)
         if not source or target is None:
             self.parts.append(data)
@@ -265,24 +315,8 @@ def _truncate_description(value: str, limit: int = 165) -> str:
 
 
 def _localize_metadata(document: str, language: str, entries: dict[str, str]) -> str:
-    brand = BRAND_NAMES.get(language, "Aponar Nihon")
-
-    def replace_title(match: re.Match[str]) -> str:
-        title = match.group(2)
-        for source, target in sorted(entries.items(), key=lambda item: len(item[0]), reverse=True):
-            title = title.replace(source, target)
-        title = title.replace("আপনার নিহোন", brand)
-        return f"{match.group(1)}{title}{match.group(3)}"
-
-    document = TITLE_RE.sub(replace_title, document, count=1)
-    candidates = [target for target in entries.values() if len(_normalize(target)) >= 55]
-    if not candidates:
-        return document
-    description = _truncate_description(max(candidates, key=lambda item: len(_normalize(item))))
-    snippet = f'<meta name="description" content="{html_lib.escape(description, quote=True)}">'
-    if DESCRIPTION_RE.search(document):
-        return DESCRIPTION_RE.sub(snippet, document, count=1)
-    return re.sub(r"</head\s*>", f"\n{snippet}\n</head>", document, count=1, flags=re.IGNORECASE)
+    """Text and description metadata are translated by the exact-match HTML parser."""
+    return document
 
 
 def _inject_alternates(document: str, alternates: list[tuple[str, str]]) -> str:
@@ -316,13 +350,56 @@ def _load_reviewed_packs(root: Path) -> dict[str, dict[str, dict[str, object]]]:
     return packs
 
 
+def _load_reviewed_memories(root: Path) -> dict[str, dict[str, str]]:
+    memory_dir = root / "translations"
+    memories: dict[str, dict[str, str]] = {}
+    for language in SUPPORTED_LANGUAGES:
+        path = memory_dir / f"{language}.json"
+        if not path.exists():
+            continue
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        if (
+            payload.get("reviewed") is not True
+            or payload.get("sourceLanguage") != DEFAULT_LANGUAGE
+            or payload.get("targetLanguage") != language
+        ):
+            continue
+        entries = {
+            _normalize(str(entry["source"])): str(entry["target"]).strip()
+            for entry in payload.get("entries", [])
+            if isinstance(entry, dict) and entry.get("source") and entry.get("target")
+        }
+        if entries:
+            memories[language] = entries
+    return memories
+
+
+def _route_plan(pages: list[Path], root: Path) -> dict[Path, Path]:
+    planned: dict[Path, Path] = {}
+    used: dict[Path, Path] = {}
+    for page in pages:
+        route = localized_route_for_page(page, root)
+        if route in used:
+            route = page.relative_to(root).with_suffix("")
+        candidate = route
+        suffix = 2
+        while candidate in used:
+            candidate = route.parent / f"{route.name}-{suffix}"
+            suffix += 1
+        planned[page] = candidate
+        used[candidate] = page
+    return planned
+
+
 def build_localized_pages(root: Path) -> tuple[int, int, int]:
-    """Render reviewed packs into locale routes and add canonical hreflang clusters."""
+    """Render every reviewed memory into locale routes and hreflang clusters."""
     base_pages = [
         page
         for page in sorted(root.rglob("*.html"))
-        if not page.relative_to(root).parts
-        or page.relative_to(root).parts[0] not in SUPPORTED_LANGUAGES
+        if page.relative_to(root).parts
+        and page.relative_to(root).parts[0] not in SUPPORTED_LANGUAGES
+        and page.name not in EXCLUDED_LOCALIZED_PAGES
+        and not page.name.startswith("google")
     ]
     page_by_key: dict[str, Path] = {}
     for page in base_pages:
@@ -331,26 +408,41 @@ def build_localized_pages(root: Path) -> tuple[int, int, int]:
             raise RuntimeError(f"Duplicate i18n page key: {key}")
         page_by_key[key] = page
 
+    memories = _load_reviewed_memories(root)
     packs = _load_reviewed_packs(root)
+    if memories and set(memories) != set(SUPPORTED_LANGUAGES):
+        missing = sorted(set(SUPPORTED_LANGUAGES) - set(memories))
+        raise RuntimeError("Missing reviewed translation memories: " + ", ".join(missing))
+
+    route_by_page = _route_plan(list(page_by_key.values()), root)
     clusters: dict[Path, dict[str, Path]] = {}
     generated = translated_nodes = 0
 
-    for key, language_packs in sorted(packs.items()):
-        source_page = page_by_key.get(key)
-        if source_page is None:
-            raise RuntimeError(f"Translation pack has no source HTML page: {key}")
+    for key, source_page in sorted(page_by_key.items()):
         source_document = source_page.read_text(encoding="utf-8")
-        route = localized_route_for_page(source_page, root)
+        route = route_by_page[source_page]
+        language_packs = packs.get(key, {})
 
         for language in SUPPORTED_LANGUAGES:
+            memory_entries = memories.get(language)
             payload = language_packs.get(language)
-            if payload is None:
+            if memory_entries is None and payload is None:
                 continue
-            entries = {
-                _normalize(str(entry["source"])): str(entry["target"]).strip()
-                for entry in payload["entries"]
-                if isinstance(entry, dict) and entry.get("source") and entry.get("target")
-            }
+
+            if memory_entries is None:
+                entries: dict[str, str] = {}
+            else:
+                entries = memory_entries
+            if payload is not None:
+                overrides = {
+                    _normalize(str(entry["source"])): str(entry["target"]).strip()
+                    for entry in payload["entries"]
+                    if isinstance(entry, dict) and entry.get("source") and entry.get("target")
+                }
+                if overrides:
+                    entries = dict(entries)
+                    entries.update(overrides)
+
             parser = _ReviewedTranslationParser(entries)
             parser.feed(source_document)
             parser.close()
