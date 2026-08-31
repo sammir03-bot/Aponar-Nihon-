@@ -236,6 +236,30 @@
     });
   }
 
+  function mountProfileLanguageSelect(preferred) {
+    var select = document.getElementById("language");
+    if (!select || select.tagName !== "SELECT") return;
+    var profilePath = /\/(?:profile(?:\.html)?)(?:\/)?$/i.test(window.location.pathname || "");
+    if (!profilePath && !select.hasAttribute("data-aponar-language-profile")) return;
+
+    var selected = normalizeLanguage(preferred) || normalizeLanguage(select.value) || currentLanguage;
+    select.textContent = "";
+    Object.keys(LANGUAGES).forEach(function (code) {
+      var option = document.createElement("option");
+      option.value = code;
+      option.textContent = LANGUAGES[code].flag + " " + LANGUAGES[code].label;
+      select.appendChild(option);
+    });
+    select.value = selected;
+    select.dataset.aponarLanguageProfile = "true";
+    if (select.dataset.aponarLanguageBound !== "true") {
+      select.dataset.aponarLanguageBound = "true";
+      select.addEventListener("change", function () {
+        setLanguage(select.value, { persistProfile: false });
+      });
+    }
+  }
+
   async function syncProfileLanguage() {
     if (profileSyncInFlight || !window.AN || typeof window.AN.profile !== "function") return;
     profileSyncInFlight = true;
@@ -244,6 +268,7 @@
       if (!profile) return;
       var rawPreferred = typeof profile.preferred_language === "string" ? profile.preferred_language.trim() : "";
       var preferred = normalizeLanguage(rawPreferred);
+      mountProfileLanguageSelect(preferred);
       var local = languageFromPath() || storedLanguage();
       if (local && rawPreferred !== local && typeof window.AN.updateProfile === "function") {
         await window.AN.updateProfile({ preferred_language: local });
@@ -417,6 +442,7 @@
     languages: LANGUAGES,
     defaultLanguage: DEFAULT_LANGUAGE,
     normalizeLanguage: normalizeLanguage,
+    mountProfileLanguageSelect: mountProfileLanguageSelect,
     getLanguage: function () { return currentLanguage; },
     setLanguage: setLanguage,
     localizedPath: alternatePath,
@@ -434,6 +460,7 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     mountPicker();
+    mountProfileLanguageSelect(storedLanguage() || currentLanguage);
     translateAnnotated(document);
     if (currentLanguage !== DEFAULT_LANGUAGE || languageFromPath()) {
       window.setTimeout(function () { navigateToLanguage(currentLanguage, true); }, 0);
@@ -442,4 +469,8 @@
     window.setTimeout(syncProfileLanguage, 1600);
   });
   window.addEventListener("an-auth-changed", syncProfileLanguage);
+  window.addEventListener("an-profile-updated", function (event) {
+    var detail = event && event.detail ? event.detail : {};
+    mountProfileLanguageSelect(detail.preferred_language || storedLanguage() || currentLanguage);
+  });
 })();

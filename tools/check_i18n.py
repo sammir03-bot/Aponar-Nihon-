@@ -38,10 +38,8 @@ def main() -> int:
         if f'"{code}"' not in tutor_worker:
             raise SystemExit(f"AI Tutor does not accept language: {code}")
 
-    profile_source = (ROOT / "profile.html").read_text(encoding="utf-8")
-    for code in SUPPORTED:
-        if f'<option value="{code}">' not in profile_source:
-            raise SystemExit(f"Profile language preference is missing: {code}")
+    if "mountProfileLanguageSelect" not in source:
+        raise SystemExit("Profile language preference must use the shared language registry")
 
     pages = list(site.rglob("*.html"))
     if not pages:

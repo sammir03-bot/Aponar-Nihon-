@@ -41,6 +41,18 @@ test('legacy profile language labels normalize to locale codes', async ({ page }
   await expect.poll(() => page.evaluate(() => window.AponarI18n?.normalizeLanguage('বাংলা'))).toBe('bn');
   await expect.poll(() => page.evaluate(() => window.AponarI18n?.normalizeLanguage('English'))).toBe('en');
   await expect.poll(() => page.evaluate(() => window.AponarI18n?.normalizeLanguage('Tagalog'))).toBe('fil');
+
+  await page.evaluate(() => {
+    const select = document.createElement('select');
+    select.id = 'language';
+    select.dataset.aponarLanguageProfile = 'true';
+    document.body.appendChild(select);
+    window.AponarI18n.mountProfileLanguageSelect('English');
+  });
+  await expect(page.locator('#language option')).toHaveCount(11);
+  await expect(page.locator('#language')).toHaveValue('en');
+  await page.locator('#language').selectOption('vi');
+  await expect.poll(() => page.evaluate(() => localStorage.getItem('aponarNihonLanguage'))).toBe('vi');
 });
 
 test('Sinhala and Filipino shared UI preferences are supported', async ({ page }) => {
