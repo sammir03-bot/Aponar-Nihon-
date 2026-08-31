@@ -86,7 +86,9 @@ test('generated browser assets are available', async ({ request }) => {
     '/assets/js/n3-grammar-deep.js',
     '/assets/js/n3-matome-app.js',
     '/assets/js/n3-matome-data.js',
+    '/assets/js/n3-matome-easy.js',
     '/assets/js/n3-matome-details.js',
+    '/assets/js/n3-matome-examples.js',
     '/assets/css/learning-hub-pro.css',
     '/assets/css/app-menu.css',
     '/assets/js/learning-hub-pro.js',
@@ -233,13 +235,14 @@ test('Matome exposes complete Part, Day, explanation, and example coverage', asy
   await expect(page.locator('.rule-card:not(.hidden)')).toHaveCount(3);
 
   const firstLesson = page.locator('.rule-card:not(.hidden)').first();
-  await expect(firstLesson.locator('.deep-explanation')).not.toBeEmpty();
+  await expect(firstLesson.locator('.meaning')).toContainText('কাজটি করা হয়');
+  await expect(firstLesson.locator('.deep-explanation')).toContainText('কে কাজটি করেছে');
   await expect(firstLesson.locator('.why-cell')).toContainText('কেন ব্যবহার করবেন');
-  await expect(firstLesson.locator('.when-cell')).toContainText('কোন সময় ব্যবহার করবেন');
-  await expect(firstLesson.locator('.mistake-cell')).toContainText('common ভুল');
+  await expect(firstLesson.locator('.when-cell')).toContainText('কখন বলবেন');
+  await expect(firstLesson.locator('.mistake-cell')).toContainText('সবচেয়ে সাধারণ ভুল');
   await expect(firstLesson.locator('.memory-cell')).toContainText('ঠান্ডা মাথায়');
-  await expect(firstLesson.locator('.real-example')).toHaveCount(3);
-  await expect(firstLesson.locator('.example-bn')).toHaveCount(3);
+  await expect(firstLesson.locator('.real-example')).toHaveCount(10);
+  await expect(firstLesson.locator('.example-bn')).toHaveCount(10);
 });
 
 test('Grammar VS is organized into Parts with full learning support', async ({ page }) => {
@@ -250,10 +253,24 @@ test('Grammar VS is organized into Parts with full learning support', async ({ p
   await expect(page.locator('.card')).toHaveCount(21);
 
   const firstComparison = page.locator('.card').first();
-  await expect(firstComparison.locator('.why-use')).toContainText('কেন');
+  await expect(firstComparison.locator('.why-use')).toContainText('এক কথায় পার্থক্য');
+  await expect(firstComparison.locator('.core')).toContainText('শুধু বলে—বাধা আছে');
   await expect(firstComparison.locator('.details .box')).toHaveCount(2);
   await expect(firstComparison.locator('.ex small')).toHaveCount(2);
-  await expect(firstComparison.locator('.trap')).toContainText('common ভুল');
-  await expect(firstComparison.locator('.memory-calm')).toContainText('মনে রাখার টিপস');
-  await expect(firstComparison.locator('.recall')).toContainText('Practice');
+  await expect(firstComparison.locator('.trap')).toContainText('সবচেয়ে সাধারণ ভুল');
+  await expect(firstComparison.locator('.memory-calm')).toContainText('সহজে মনে রাখুন');
+  await expect(firstComparison.locator('.recall')).toContainText('নিজে বলে দেখুন');
+});
+
+test('Grammar VS keeps every learning explanation in easy Bangla', async ({ page }) => {
+  await page.goto('/grammar-vs.html', { waitUntil: 'domcontentloaded' });
+
+  for (const level of ['N5', 'N4', 'N3']) {
+    await page.locator(`.tab[data-level="${level}"]`).click();
+    const explanations = await page
+      .locator('.meaning, .core, .details .box p, .ex small, .trap, .memory-calm p')
+      .allTextContents();
+    const mixedEnglish = explanations.filter(text => /[A-Za-z]/.test(text));
+    expect(mixedEnglish, `${level} explanations should not contain English`).toEqual([]);
+  }
 });
