@@ -1,0 +1,89 @@
+name: Full multilingual AI draft and review
+
+on:
+  push:
+    branches:
+      - feat/full-static-i18n
+    paths:
+      - .github/workflows/i18n-generate.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: full-static-i18n-generation
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    if: ${{ !contains(github.event.head_commit.message, '[skip i18n-generate]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      max-parallel: 10
+      matrix:
+        language: [ja, en, vi, ne, hi, ur, my, zh, si, fil]
+
+    steps:
+      - name: Checkout translation branch
+        uses: actions/checkout@v7
+        with:
+          ref: feat/full-static-i18n
+
+      - name: Check translation pipeline syntax
+        run: python3 -m py_compile tools/i18n_ai_pipeline.py
+
+      - name: Draft and review ${{ matrix.language }}
+        env:
+          APONAR_I18N_RPM: "8"
+        run: |
+          python3 tools/i18n_ai_pipeline.py \
+            --language "${{ matrix.language }}" \
+            --output "translations/${{ matrix.language }}.json"
+
+      - name: Upload reviewed memory
+        uses: actions/upload-artifact@v4
+        with:
+          name: memory-${{ matrix.language }}
+          path: translations/${{ matrix.language }}.json
+          if-no-files-found: error
+          retention-days: 2
+
+  collect:
+    if: ${{ !cancelled() }}
+    needs: translate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Require every language job
+        env:
+          NEEDS_JSON: ${{ toJson(needs.translate.result) }}
+        run: |
+          test "${NEEDS_JSON}" = '"success"'
+
+      - name: Checkout translation branch
+        uses: actions/checkout@v7
+        with:
+          ref: feat/full-static-i18n
+
+      - name: Download reviewed memories
+        uses: actions/download-artifact@v4
+        with:
+          pattern: memory-*
+          path: translations
+          merge-multiple: true
+
+      - name: Validate complete multilingual catalog
+        run: python3 tools/i18n_ai_pipeline.py --validate-dir translations
+
+      - name: Commit reviewed static translation memories
+        run: |
+          git config user.name "Aponar Nihon Translation Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git rm .github/workflows/i18n-generate.yml
+          git add translations
+          git commit -m "i18n: add reviewed translations for every public string [skip i18n-generate]"
+          git push origin HEAD:feat/full-static-i18n
