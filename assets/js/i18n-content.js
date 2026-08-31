@@ -108,6 +108,8 @@
 
   async function loadPack(language) {
     activeLanguage = language;
+    var serial = ++requestSerial;
+
     if (language === "bn") {
       activePack = null;
       restore();
@@ -116,16 +118,16 @@
 
     var key = pageKey() + ":" + language;
     if (packCache.has(key)) {
+      if (serial !== requestSerial || activeLanguage !== language) return;
       activePack = packCache.get(key);
       applyPack(activePack, language);
       return;
     }
 
-    var serial = ++requestSerial;
     var url = "/assets/i18n/pages/" + encodeURIComponent(pageKey()) + "." + encodeURIComponent(language) + ".json";
     try {
       var response = await fetch(url, { headers: { Accept: "application/json" }, cache: "force-cache" });
-      if (serial !== requestSerial) return;
+      if (serial !== requestSerial || activeLanguage !== language) return;
       if (!response.ok) {
         packCache.set(key, null);
         activePack = null;
@@ -133,6 +135,7 @@
         return;
       }
       var pack = await response.json();
+      if (serial !== requestSerial || activeLanguage !== language) return;
       if (!pack || pack.reviewed !== true || pack.targetLanguage !== language || !Array.isArray(pack.entries)) {
         packCache.set(key, null);
         activePack = null;
@@ -143,7 +146,7 @@
       activePack = pack;
       applyPack(activePack, language);
     } catch (_error) {
-      if (serial === requestSerial) {
+      if (serial === requestSerial && activeLanguage === language) {
         activePack = null;
         restore();
       }
