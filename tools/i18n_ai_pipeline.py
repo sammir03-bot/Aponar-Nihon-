@@ -204,6 +204,41 @@ def _decode_js_escape(text: str, index: int) -> tuple[str, int]:
     return char, index + 1
 
 
+def _regex_can_start(source: str, index: int) -> bool:
+    previous = index - 1
+    while previous >= 0 and source[previous].isspace():
+        previous -= 1
+    if previous < 0 or source[previous] in "([{,:;=!?&|+*%^~<>":
+        return True
+    end = previous + 1
+    while previous >= 0 and (source[previous].isalnum() or source[previous] in "_$"):
+        previous -= 1
+    return source[previous + 1 : end] in {"return", "throw", "case", "delete", "typeof", "void", "yield"}
+
+
+def _skip_regex_literal(source: str, index: int) -> int:
+    index += 1
+    in_class = False
+    while index < len(source):
+        char = source[index]
+        if char == "\\":
+            index += 2
+            continue
+        if char == "[":
+            in_class = True
+        elif char == "]":
+            in_class = False
+        elif char == "/" and not in_class:
+            index += 1
+            while index < len(source) and source[index].isalpha():
+                index += 1
+            return index
+        elif char in "\n\r":
+            return index
+        index += 1
+    return index
+
+
 def extract_js_strings(source: str) -> list[str]:
     items: list[str] = []
     index = 0
@@ -218,14 +253,19 @@ def extract_js_strings(source: str) -> list[str]:
             end = source.find("*/", index + 2)
             index = length if end < 0 else end + 2
             continue
+        if char == "/" and _regex_can_start(source, index):
+            index = _skip_regex_literal(source, index)
+            continue
         if char not in {"'", '"', "\x60"}:
             index += 1
             continue
 
+        start = index
         quote = char
         index += 1
         buffer: list[str] = []
         dynamic_template = False
+        closed = False
         while index < length:
             char = source[index]
             if char == "\\":
@@ -234,11 +274,17 @@ def extract_js_strings(source: str) -> list[str]:
                 continue
             if char == quote:
                 index += 1
+                closed = True
                 break
             if quote == "\x60" and char == "$" and index + 1 < length and source[index + 1] == "{":
                 dynamic_template = True
             buffer.append(char)
             index += 1
+            if len(buffer) > 2_000:
+                break
+        if not closed:
+            index = start + 1
+            continue
         if not dynamic_template:
             text = normalize("".join(buffer))
             if is_source(text):
