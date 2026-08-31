@@ -1,5 +1,5 @@
-const STATIC_CACHE = "aponar-nihon-static-v29";
-const DYNAMIC_CACHE = "aponar-nihon-dynamic-v29";
+const STATIC_CACHE = "aponar-nihon-static-v30";
+const DYNAMIC_CACHE = "aponar-nihon-dynamic-v30";
 
 const STATIC_ASSETS = [
   "/",
@@ -8,11 +8,12 @@ const STATIC_ASSETS = [
   "/logo.png",
   "/assets/css/app-shell.css?v=20260829",
   "/assets/css/tutor-pro.css?v=20260829",
-  "/assets/js/app-shell.js?v=20260831.2",
+  "/assets/js/app-shell.js?v=20260831.3",
   "/assets/js/tutor-pro.js?v=20260831.2",
-  "/assets/css/i18n.css?v=20260831.2",
-  "/assets/js/i18n.js?v=20260831.2",
-  "/assets/js/i18n-content.js?v=20260831.2",
+  "/assets/css/i18n.css?v=20260831.3",
+  "/assets/css/home-brand.css?v=20260831.1",
+  "/assets/js/i18n.js?v=20260831.3",
+  "/assets/js/i18n-content.js?v=20260831.3",
   "/n5.html",
   "/n4.html",
   "/n3.html",
