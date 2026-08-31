@@ -1,0 +1,24 @@
+name: Translation response canary
+
+on:
+  push:
+    branches:
+      - feat/full-static-i18n
+    paths:
+      - .github/workflows/i18n-canary.yml
+
+permissions:
+  contents: read
+
+jobs:
+  canary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: feat/full-static-i18n
+      - name: Inspect one public-string response
+        env:
+          APONAR_I18N_RPM: "8"
+        run: python3 tools/i18n_ai_pipeline.py --language en --limit 1 --no-review --output /tmp/canary.json
