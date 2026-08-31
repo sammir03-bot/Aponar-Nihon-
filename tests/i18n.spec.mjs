@@ -34,6 +34,17 @@ test('reviewed page packs translate content while preserving preference', async 
   await expect(page.getByText('Chúng tôi cung cấp gì')).toBeVisible();
 });
 
+test('N5 hub loads reviewed English copy and preserves Japanese study text', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('aponarNihonLanguage', 'en'));
+  await page.goto('/n5.html');
+
+  await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+  await expect(page.getByText('Build a strong Japanese foundation', { exact: true })).toBeVisible();
+  await expect(page.getByText('Start with N5', { exact: true })).toBeVisible();
+  await expect(page.getByText('Start the first lesson', { exact: true })).toBeVisible();
+  await expect(page.getByText('BEGINNER · 日本語能力試験', { exact: true })).toBeVisible();
+});
+
 test('Urdu switches the document to RTL and loads Urdu content', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('aponarNihonLanguage', 'ur'));
   await page.goto('/about.html');
