@@ -166,6 +166,8 @@ main { max-width: 1160px; margin: auto; padding: 24px 14px 90px; }
 .lesson-explanation { margin-top: 12px; padding: 14px; border: 1px solid #e6ddfb; border-radius: 15px; background: linear-gradient(145deg,#faf8ff,#f6f2ff); }
 .lesson-kicker { display: inline-flex; padding: 4px 8px; border-radius: 999px; color: var(--purple); background: #ebe4ff; font-size: .68rem; font-weight: 950; }
 .lesson-explanation .meaning { margin: 10px 0 0; color: var(--ink); font-size: .98rem; font-weight: 850; }
+.spoken-explanation { margin-top: 12px; padding-top: 12px; border-top: 1px dashed #d8cdf2; }
+.spoken-explanation h4 { margin: 0; color: var(--purple); font-size: .82rem; }
 .deep-explanation { margin: 7px 0 0; color: var(--muted); font-size: .88rem; line-height: 1.75; }
 .learning-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
 .learning-cell { padding: 13px; border: 1px solid var(--line); border-radius: 15px; background: var(--surface-2); }
