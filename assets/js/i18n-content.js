@@ -7,6 +7,10 @@
   var originalText = new WeakMap();
   var packCache = new Map();
   var requestSerial = 0;
+  var activePack = null;
+  var activeLanguage = "bn";
+  var applying = false;
+  var mutationTimer = 0;
 
   function pageKey() {
     var path = window.location.pathname || "/";
@@ -20,14 +24,19 @@
   }
 
   function restore() {
-    translatedNodes.forEach(function (node) {
-      if (originalText.has(node) && node.isConnected) node.nodeValue = originalText.get(node);
-    });
-    translatedNodes.clear();
-    document.querySelectorAll("[data-i18n-content-dir]").forEach(function (element) {
-      element.removeAttribute("dir");
-      element.removeAttribute("data-i18n-content-dir");
-    });
+    applying = true;
+    try {
+      translatedNodes.forEach(function (node) {
+        if (originalText.has(node) && node.isConnected) node.nodeValue = originalText.get(node);
+      });
+      translatedNodes.clear();
+      document.querySelectorAll("[data-i18n-content-dir]").forEach(function (element) {
+        element.removeAttribute("dir");
+        element.removeAttribute("data-i18n-content-dir");
+      });
+    } finally {
+      applying = false;
+    }
   }
 
   function shouldSkip(node) {
@@ -52,46 +61,62 @@
   }
 
   function applyPack(pack, language) {
-    restore();
-    if (!pack || !Array.isArray(pack.entries) || !pack.entries.length) return;
+    applying = true;
+    try {
+      translatedNodes.forEach(function (node) {
+        if (originalText.has(node) && node.isConnected) node.nodeValue = originalText.get(node);
+      });
+      translatedNodes.clear();
+      document.querySelectorAll("[data-i18n-content-dir]").forEach(function (element) {
+        element.removeAttribute("dir");
+        element.removeAttribute("data-i18n-content-dir");
+      });
 
-    var table = new Map();
-    pack.entries.forEach(function (entry) {
-      if (!entry || typeof entry.source !== "string" || typeof entry.target !== "string") return;
-      var source = normalize(entry.source);
-      if (source) table.set(source, entry.target);
-    });
-    if (!table.size) return;
+      if (!pack || !Array.isArray(pack.entries) || !pack.entries.length) return;
 
-    var root = document.querySelector("main") || document.body;
-    textNodes(root).forEach(function (node) {
-      var source = normalize(node.nodeValue);
-      var target = table.get(source);
-      if (typeof target !== "string") return;
-      if (!originalText.has(node)) originalText.set(node, node.nodeValue);
+      var table = new Map();
+      pack.entries.forEach(function (entry) {
+        if (!entry || typeof entry.source !== "string" || typeof entry.target !== "string") return;
+        var source = normalize(entry.source);
+        if (source) table.set(source, entry.target);
+      });
+      if (!table.size) return;
 
-      var raw = node.nodeValue || "";
-      var leading = raw.match(/^\s*/)?.[0] || "";
-      var trailing = raw.match(/\s*$/)?.[0] || "";
-      node.nodeValue = leading + target + trailing;
-      translatedNodes.add(node);
+      var root = document.querySelector("main") || document.body;
+      textNodes(root).forEach(function (node) {
+        var source = normalize(node.nodeValue);
+        var target = table.get(source);
+        if (typeof target !== "string") return;
+        if (!originalText.has(node)) originalText.set(node, node.nodeValue);
 
-      if (language === "ur" && node.parentElement) {
-        node.parentElement.setAttribute("dir", "auto");
-        node.parentElement.setAttribute("data-i18n-content-dir", "true");
-      }
-    });
+        var raw = node.nodeValue || "";
+        var leading = raw.match(/^\s*/)?.[0] || "";
+        var trailing = raw.match(/\s*$/)?.[0] || "";
+        node.nodeValue = leading + target + trailing;
+        translatedNodes.add(node);
+
+        if (language === "ur" && node.parentElement) {
+          node.parentElement.setAttribute("dir", "auto");
+          node.parentElement.setAttribute("data-i18n-content-dir", "true");
+        }
+      });
+    } finally {
+      applying = false;
+    }
   }
 
   async function loadPack(language) {
+    activeLanguage = language;
     if (language === "bn") {
+      activePack = null;
       restore();
       return;
     }
 
     var key = pageKey() + ":" + language;
     if (packCache.has(key)) {
-      applyPack(packCache.get(key), language);
+      activePack = packCache.get(key);
+      applyPack(activePack, language);
       return;
     }
 
@@ -102,19 +127,25 @@
       if (serial !== requestSerial) return;
       if (!response.ok) {
         packCache.set(key, null);
+        activePack = null;
         restore();
         return;
       }
       var pack = await response.json();
       if (!pack || pack.targetLanguage !== language || !Array.isArray(pack.entries)) {
         packCache.set(key, null);
+        activePack = null;
         restore();
         return;
       }
       packCache.set(key, pack);
-      applyPack(pack, language);
+      activePack = pack;
+      applyPack(activePack, language);
     } catch (_error) {
-      if (serial === requestSerial) restore();
+      if (serial === requestSerial) {
+        activePack = null;
+        restore();
+      }
     }
   }
 
@@ -122,7 +153,31 @@
     loadPack(window.AponarI18n.getLanguage());
   }
 
-  document.addEventListener("DOMContentLoaded", sync);
+  function scheduleDynamicRefresh() {
+    if (applying || activeLanguage === "bn" || !activePack) return;
+    window.clearTimeout(mutationTimer);
+    mutationTimer = window.setTimeout(function () {
+      if (!applying && activePack && activeLanguage !== "bn") applyPack(activePack, activeLanguage);
+    }, 80);
+  }
+
+  function observeDynamicContent() {
+    var root = document.querySelector("main") || document.body;
+    if (!root || typeof MutationObserver === "undefined") return;
+    var observer = new MutationObserver(function (mutations) {
+      if (applying) return;
+      var meaningful = mutations.some(function (mutation) {
+        return mutation.type === "childList" || mutation.type === "characterData";
+      });
+      if (meaningful) scheduleDynamicRefresh();
+    });
+    observer.observe(root, { childList: true, subtree: true, characterData: true });
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    sync();
+    observeDynamicContent();
+  });
   window.addEventListener("aponar:languagechange", function () {
     window.requestAnimationFrame(sync);
   });
