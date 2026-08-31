@@ -26,10 +26,10 @@ EXCLUDED_FILES = {
     "archive/home-full-legacy.html", "archive/tutor-section-legacy.html",
 }
 
-I18N_CSS = '<link rel="stylesheet" href="/assets/css/i18n.css?v=20260831.2">'
+I18N_CSS = '<link rel="stylesheet" href="/assets/css/i18n.css?v=20260831.3">'
 HOME_BRAND_CSS = '<link rel="stylesheet" href="/assets/css/home-brand.css?v=20260831.1">'
-I18N_JS = '<script src="/assets/js/i18n.js?v=20260831.2"></script>'
-I18N_CONTENT_JS = '<script defer src="/assets/js/i18n-content.js?v=20260831.2"></script>'
+I18N_JS = '<script src="/assets/js/i18n.js?v=20260831.3"></script>'
+I18N_CONTENT_JS = '<script defer src="/assets/js/i18n-content.js?v=20260831.3"></script>'
 PRO_CSS = '<link rel="stylesheet" href="/assets/css/pro-core.css?v=20260825">'
 PRO_JS = '<script defer src="/assets/js/pro-core.js?v=20260825"></script>'
 PLATFORM_TS = '<script type="module" src="/assets/js/ts/platform.js?v=20260825"></script>'
