@@ -66,6 +66,7 @@ jobs:
           <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width,initial-scale=1">
+            <meta name="robots" content="noindex,follow">
             <title>Aponar Nihon moved</title>
             <link rel="canonical" href="{escaped}">
             <meta http-equiv="refresh" content="0; url={escaped}">
@@ -89,6 +90,7 @@ jobs:
           <head>
             <meta charset="utf-8">
             <meta name="viewport" content="width=device-width,initial-scale=1">
+            <meta name="robots" content="noindex,follow">
             <title>Aponar Nihon moved</title>
             <link rel="canonical" href="https://app.aponar-nihon.workers.dev/">
             <meta http-equiv="refresh" content="0; url=https://app.aponar-nihon.workers.dev/">
@@ -130,6 +132,7 @@ jobs:
         run: |
           grep -F 'https://app.aponar-nihon.workers.dev/' _site/index.html
           grep -F 'http-equiv="refresh"' _site/index.html
+          grep -F 'name="robots" content="noindex,follow"' _site/index.html
           grep -F 'location.replace' _site/index.html
           test ! -e _site/CNAME
 
