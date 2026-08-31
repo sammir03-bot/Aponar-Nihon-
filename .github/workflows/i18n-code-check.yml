@@ -1,0 +1,28 @@
+name: Multilingual code preflight
+
+on:
+  push:
+    branches:
+      - feat/full-static-i18n
+    paths:
+      - .github/workflows/i18n-code-check.yml
+      - tools/sitecore/locales.py
+      - assets/js/i18n-content.js
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: feat/full-static-i18n
+      - name: Compile Python locale tooling
+        run: python3 -m py_compile tools/sitecore/locales.py tools/i18n_ai_pipeline.py
+      - name: Parse browser translation runtime
+        run: node --check assets/js/i18n-content.js
+      - name: Import locale renderer
+        run: PYTHONPATH=tools python3 -c "from sitecore.locales import build_localized_pages; print('locale renderer import OK')"
