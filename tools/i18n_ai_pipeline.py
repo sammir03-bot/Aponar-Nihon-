@@ -547,7 +547,7 @@ def write_memory(
     reviewed: bool,
 ) -> None:
     missing = [str(row["source"]) for row in catalog if str(row["source"]) not in translations]
-    if missing:
+    if missing and reviewed:
         raise RuntimeError(f"Translation memory is incomplete: {len(missing)} source(s) missing")
     entries = [
         {
@@ -555,6 +555,7 @@ def write_memory(
             "target": translations[str(row["source"])],
         }
         for row in catalog
+        if str(row["source"]) in translations
     ]
     payload = {
         "schemaVersion": 1,
