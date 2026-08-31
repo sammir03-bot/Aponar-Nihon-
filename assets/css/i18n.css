@@ -9,6 +9,13 @@ body.aponar-language-open {
   overflow: hidden !important;
 }
 
+/* Brand identity and header controls keep a stable visual order in RTL locales. */
+.app-topbar-inner,
+.app-brand,
+.app-top-actions {
+  direction: ltr;
+}
+
 .aponar-language-button {
   position: relative;
   z-index: 70;
@@ -88,12 +95,6 @@ body.aponar-language-open .aponar-language-chevron {
   top: max(12px, env(safe-area-inset-top));
   right: max(12px, env(safe-area-inset-right));
   z-index: 5000;
-}
-
-.tutor-top-actions .aponar-language-button {
-  min-width: 112px;
-  height: 40px;
-  box-shadow: none;
 }
 
 html[dir="rtl"] .aponar-language-floating {
@@ -356,17 +357,18 @@ html[dir="rtl"] .aponar-language-option:not([dir="rtl"]) {
 }
 
 @media (max-width: 620px) {
-  .tutor-top-actions .aponar-language-button {
-    width: 36px;
-    min-width: 36px;
-    height: 36px;
+  .app-top-actions .aponar-language-button {
+    width: 38px;
+    min-width: 38px;
+    height: 38px;
     padding: 0;
-    border-radius: 11px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(40, 66, 98, 0.05);
   }
 
-  .tutor-top-actions .aponar-language-globe,
-  .tutor-top-actions .aponar-language-current-label,
-  .tutor-top-actions .aponar-language-chevron {
+  .app-top-actions .aponar-language-globe,
+  .app-top-actions .aponar-language-current-label,
+  .app-top-actions .aponar-language-chevron {
     display: none;
   }
 }

@@ -42,17 +42,50 @@ test('legacy profile language labels normalize to locale codes', async ({ page }
   await expect.poll(() => page.evaluate(() => window.AponarI18n?.normalizeLanguage('English'))).toBe('en');
   await expect.poll(() => page.evaluate(() => window.AponarI18n?.normalizeLanguage('Tagalog'))).toBe('fil');
 
-  await page.evaluate(() => {
+  const profileLanguage = await page.evaluate(() => {
+    const field = document.createElement('div');
+    field.className = 'field';
     const select = document.createElement('select');
     select.id = 'language';
     select.dataset.aponarLanguageProfile = 'true';
-    document.body.appendChild(select);
+    field.appendChild(select);
+    document.body.appendChild(field);
     window.AponarI18n.mountProfileLanguageSelect('English');
+    select.value = 'vi';
+    select.dispatchEvent(new Event('change', { bubbles: true }));
+    return {
+      hidden: field.hidden,
+      count: select.options.length,
+      value: select.value
+    };
   });
-  await expect(page.locator('#language option')).toHaveCount(11);
-  await expect(page.locator('#language')).toHaveValue('en');
-  await page.locator('#language').selectOption('vi');
+  expect(profileLanguage).toEqual({ hidden: true, count: 11, value: 'vi' });
   await expect.poll(() => page.evaluate(() => localStorage.getItem('aponarNihonLanguage'))).toBe('vi');
+});
+
+test('the language picker appears only on Home and the saved choice applies elsewhere', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator(languageButton)).toBeVisible();
+  await page.locator(languageButton).click();
+  await page.locator('[data-language-option="vi"]').click();
+
+  await page.goto('/about.html');
+  await expect(page.locator(languageButton)).toHaveCount(0);
+  await expect(page.locator('html')).toHaveAttribute('lang', 'vi');
+  await expect(page.locator('h1')).toHaveText('Về chúng tôi');
+
+  await page.goto('/tutor-section.html');
+  await expect(page.locator(languageButton)).toHaveCount(0);
+  await expect(page.locator('html')).toHaveAttribute('lang', 'vi');
+});
+
+test('brand name and header layout stay stable when Urdu is selected', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('aponarNihonLanguage', 'ur'));
+  await page.goto('/');
+
+  await expect(page.locator('.app-brand-copy strong')).toHaveText('আপনার নিহোন');
+  await expect(page.locator('.app-brand-copy small')).toHaveText('JAPANESE LEARNING HUB');
+  await expect(page.locator('.app-topbar-inner')).toHaveCSS('direction', 'ltr');
 });
 
 test('Sinhala and Filipino shared UI preferences are supported', async ({ page }) => {
@@ -121,11 +154,14 @@ test('reviewed packs have crawlable locale URLs and hreflang metadata', async ({
 });
 
 test('selecting a reviewed language opens its canonical locale route', async ({ page }) => {
-  await page.goto('/n5.html');
+  await page.goto('/');
   await page.locator(languageButton).click();
   await page.locator('[data-language-option="fil"]').click();
 
+  await page.goto('/n5.html');
+
   await page.waitForURL('**/fil/n5/');
+  await expect(page.locator(languageButton)).toHaveCount(0);
   await expect(page.locator('html')).toHaveAttribute('lang', 'fil');
   await expect(page.locator('.lh-hero h1')).toContainText('Bumuo ng matibay na pundasyon sa Japanese');
   await expect(page.locator('.lh-brand-copy small')).toHaveText('BEGINNER · 日本語能力試験');

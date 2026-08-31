@@ -204,6 +204,10 @@
     return path || "/";
   }
 
+  function isHomeRoute() {
+    return normalizedRoute(window.location.pathname) === "/";
+  }
+
   function alternatePath(language) {
     var link = document.querySelector('link[rel~="alternate"][hreflang="' + language + '"]');
     if (!link || !link.href) return "";
@@ -252,6 +256,14 @@
     });
     select.value = selected;
     select.dataset.aponarLanguageProfile = "true";
+    var profileField = select.closest(".field");
+    if (profileField) {
+      profileField.hidden = true;
+      profileField.setAttribute("aria-hidden", "true");
+    } else {
+      select.hidden = true;
+      select.setAttribute("aria-hidden", "true");
+    }
     if (select.dataset.aponarLanguageBound !== "true") {
       select.dataset.aponarLanguageBound = "true";
       select.addEventListener("change", function () {
@@ -373,6 +385,7 @@
   }
 
   function mountPicker() {
+    if (!isHomeRoute()) return;
     if (document.getElementById("aponarLanguageButton")) return;
 
     var button = document.createElement("button");
@@ -386,7 +399,7 @@
       '<span class="aponar-language-chevron" aria-hidden="true">▾</span>';
     button.addEventListener("click", openPicker);
 
-    var actions = document.querySelector(".app-top-actions,.lh-top-actions,.nm-actions,.app-header-actions,.navbar-actions,.tutor-top-actions");
+    var actions = document.querySelector(".app-top-actions");
     if (actions) actions.insertBefore(button, actions.firstChild);
     else {
       button.classList.add("aponar-language-floating");

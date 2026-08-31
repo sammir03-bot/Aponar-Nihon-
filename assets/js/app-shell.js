@@ -80,8 +80,6 @@
 
   function applyHomeLanguage() {
     if (document.body.dataset.page !== "home") return;
-    setText(".app-brand-copy strong", "brand.name", "আপনার নিহোন");
-    setText(".app-brand-copy small", "brand.tagline", "JAPANESE LEARNING HUB");
     setText(".app-eyebrow", "home.eyebrow", "এক জায়গায় সবকিছু");
     setText("#all-sections-title", "home.title", "সব গুরুত্বপূর্ণ সেকশন");
 
