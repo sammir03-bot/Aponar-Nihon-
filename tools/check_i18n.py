@@ -46,9 +46,10 @@ def main() -> int:
         raise SystemExit("No built HTML pages found")
 
     required = (
-        "/assets/css/i18n.css?v=20260831.2",
-        "/assets/js/i18n.js?v=20260831.2",
-        "/assets/js/i18n-content.js?v=20260831.2",
+        "/assets/css/i18n.css?v=20260831.3",
+        "/assets/css/home-brand.css?v=20260831.1",
+        "/assets/js/i18n.js?v=20260831.3",
+        "/assets/js/i18n-content.js?v=20260831.3",
     )
     checked = 0
     missing: list[str] = []
