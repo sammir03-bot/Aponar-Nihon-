@@ -25,6 +25,8 @@ EXCLUDED_FILES = {
     "archive/home-full-legacy.html", "archive/tutor-section-legacy.html",
 }
 
+I18N_CSS = '<link rel="stylesheet" href="/assets/css/i18n.css?v=20260831">'
+I18N_JS = '<script src="/assets/js/i18n.js?v=20260831"></script>'
 PRO_CSS = '<link rel="stylesheet" href="/assets/css/pro-core.css?v=20260825">'
 PRO_JS = '<script defer src="/assets/js/pro-core.js?v=20260825"></script>'
 PLATFORM_TS = '<script type="module" src="/assets/js/ts/platform.js?v=20260825"></script>'
@@ -88,7 +90,7 @@ def inject_professional_assets(destination: Path) -> tuple[int, int]:
     for page in sorted(destination.rglob("*.html")):
         html = page.read_text(encoding="utf-8")
         before_hash = visible_text_hash(html)
-        enhanced = inject_assets(html, (PRO_CSS, PRO_JS, PLATFORM_TS))
+        enhanced = inject_assets(html, (I18N_CSS, I18N_JS, PRO_CSS, PRO_JS, PLATFORM_TS))
         if enhanced == html:
             continue
         after_hash = visible_text_hash(enhanced)
