@@ -3,7 +3,7 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260901.4";
+  var RUNTIME_VERSION = "20260901.5";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + RUNTIME_VERSION;
   var TRANSLATABLE_ATTRIBUTES = [
@@ -88,7 +88,7 @@
 
   function isPreservedTextNode(node) {
     var parent = node && node.parentElement;
-    if (!parent || parent.closest(PRESERVE_SELECTOR) || parent.closest("[data-i18n]") || parent.closest(JAPANESE_SELECTOR)) return true;
+    if (!parent || parent.closest(PRESERVE_SELECTOR) || parent.closest(JAPANESE_SELECTOR)) return true;
     var head = parent.closest("head");
     return !!(head && parent.tagName !== "TITLE");
   }
@@ -96,8 +96,6 @@
   function shouldTranslateAttribute(element, attribute) {
     if (!element || element.closest(PRESERVE_SELECTOR)) return false;
     if (element.closest(JAPANESE_SELECTOR) && attribute !== "aria-label" && attribute !== "title") return false;
-    if (attribute === "aria-label" && element.hasAttribute("data-i18n-aria-label")) return false;
-    if (attribute === "placeholder" && element.hasAttribute("data-i18n-placeholder")) return false;
     if (attribute === "content") {
       if (element.tagName !== "META") return false;
       var name = (element.getAttribute("name") || element.getAttribute("property") || "").toLowerCase();

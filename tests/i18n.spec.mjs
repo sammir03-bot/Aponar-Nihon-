@@ -168,7 +168,9 @@ test('runtime localization covers title, attributes, dynamic text, and dialogs',
     'ডাইনামিক অংশ': '動的セクション',
     'পরীক্ষার শিরোনাম': 'ローカライズされたページタイトル',
     'সতর্কতা বার্তা': '警告メッセージ',
-    'ব্র্যান্ড সাবটাইটেল': 'ブランドのサブタイトル'
+    'ব্র্যান্ড সাবটাইটেল': 'ブランドのサブタイトル',
+    'Mock Test': '模擬試験',
+    'Open AI Tutor': 'AIチューターを開く'
   };
 
   await page.addInitScript(() => {
@@ -198,7 +200,7 @@ test('runtime localization covers title, attributes, dynamic text, and dialogs',
     const section = document.createElement('section');
     section.id = 'runtimeI18nFixture';
     section.setAttribute('aria-label', 'ডাইনামিক অংশ');
-    section.innerHTML = '<h2>ডাইনামিক লেখা</h2><div data-i18n-no-content>ব্র্যান্ড সাবটাইটেল</div><input placeholder="এখানে লিখুন"><img alt="উদাহরণ ছবি">';
+    section.innerHTML = '<h2>ডাইনামিক লেখা</h2><div data-i18n-no-content>ব্র্যান্ড সাবটাইটেল</div><span data-i18n="runtime.mock">Mock Test</span><button data-i18n-aria-label="runtime.tutor" aria-label="Open AI Tutor">AI</button><input placeholder="এখানে লিখুন"><img alt="উদাহরণ ছবি">';
     document.body.appendChild(section);
   });
 
@@ -219,6 +221,8 @@ test('runtime localization covers title, attributes, dynamic text, and dialogs',
   await page.locator('[data-language-option="ja"]').click();
   await expect(page.locator('html')).toHaveAttribute('lang', 'ja');
   await expect(fixture.locator('h2')).toHaveText('動的テキスト');
+  await expect(fixture.locator('[data-i18n="runtime.mock"]')).toHaveText('模擬試験');
+  await expect(fixture.locator('[data-i18n-aria-label="runtime.tutor"]')).toHaveAttribute('aria-label', 'AIチューターを開く');
   await expect(fixture.locator('input')).toHaveAttribute('placeholder', 'ここに入力');
 });
 

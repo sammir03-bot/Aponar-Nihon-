@@ -29,7 +29,7 @@ EXCLUDED_FILES = {
 I18N_CSS = '<link rel="stylesheet" href="/assets/css/i18n.css?v=20260901.1">'
 HOME_BRAND_CSS = '<link rel="stylesheet" href="/assets/css/home-brand.css?v=20260831.1">'
 I18N_JS = '<script src="/assets/js/i18n.js?v=20260901.1"></script>'
-I18N_CONTENT_JS = '<script defer src="/assets/js/i18n-content.js?v=20260901.4"></script>'
+I18N_CONTENT_JS = '<script defer src="/assets/js/i18n-content.js?v=20260901.5"></script>'
 PRO_CSS = '<link rel="stylesheet" href="/assets/css/pro-core.css?v=20260825">'
 PRO_JS = '<script defer src="/assets/js/pro-core.js?v=20260825"></script>'
 PLATFORM_TS = '<script type="module" src="/assets/js/ts/platform.js?v=20260825"></script>'

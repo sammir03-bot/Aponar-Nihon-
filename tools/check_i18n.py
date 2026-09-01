@@ -67,6 +67,10 @@ def main() -> int:
         raise SystemExit("Incomplete full-page i18n runtime: " + ", ".join(missing_contracts))
     if 'parent.closest("[data-i18n-no-content]")' in content_source:
         raise SystemExit("Full-page i18n must not exclude user-facing brand content")
+    if 'parent.closest("[data-i18n]")' in content_source:
+        raise SystemExit("Full-page i18n must translate annotated UI copy that remains in another language")
+    if 'element.hasAttribute("data-i18n-aria-label")' in content_source or 'element.hasAttribute("data-i18n-placeholder")' in content_source:
+        raise SystemExit("Full-page i18n must translate annotated accessibility and form copy")
     if 'JAPANESE_SELECTOR = ["[lang=\'ja\']"' in content_source:
         raise SystemExit("Japanese document locale must not preserve the whole page")
 
@@ -96,7 +100,7 @@ def main() -> int:
         "/assets/css/i18n.css?v=20260901.1",
         "/assets/css/home-brand.css?v=20260831.1",
         "/assets/js/i18n.js?v=20260901.1",
-        "/assets/js/i18n-content.js?v=20260901.4",
+        "/assets/js/i18n-content.js?v=20260901.5",
     )
     checked = 0
     missing: list[str] = []
