@@ -562,6 +562,58 @@ async function callTranslationModel(
   return translations;
 }
 
+async function callGeminiTranslation(
+  env: Env,
+  input: TranslationRequest
+): Promise<{ translations: TranslationItem[]; model: string }> {
+  const configuredModel = env.GEMINI_MODEL?.trim() || DEFAULT_MODEL;
+  const model = /^[A-Za-z0-9._-]+$/.test(configuredModel) ? configuredModel : DEFAULT_MODEL;
+  if (!env.GEMINI_API_KEY?.trim()) {
+    throw new HttpError(502, "translation_fallback_unavailable", "The translation fallback is not configured.");
+  }
+
+  const response = await fetch(GEMINI_ENDPOINT, {
+    method: "POST",
+    headers: {
+      "content-type": "application/json",
+      "x-goog-api-key": env.GEMINI_API_KEY
+    },
+    body: JSON.stringify({
+      model,
+      input: translationInstruction(input)
+    }),
+    signal: AbortSignal.timeout(75_000)
+  });
+
+  const rawResponse = await readBoundedStream(response.body, MAX_UPSTREAM_BYTES);
+  let payload: unknown = null;
+  if (rawResponse) {
+    try {
+      payload = JSON.parse(rawResponse);
+    } catch {
+      payload = null;
+    }
+  }
+  if (!response.ok) {
+    const providerCode = isRecord(payload) && isRecord(payload.error) && typeof payload.error.status === "string"
+      ? payload.error.status
+      : "unknown";
+    console.warn(JSON.stringify({
+      event: "i18n_gemini_failed",
+      status: response.status,
+      provider_code: providerCode
+    }));
+    throw new HttpError(502, "translation_fallback_failed", "The translation fallback did not respond.");
+  }
+
+  const text = extractInteractionText(payload);
+  const translations = text ? parseTranslationModelOutput(text, input) : null;
+  if (!translations) {
+    throw new HttpError(502, "invalid_translation_fallback_response", "The translation fallback returned incomplete data.");
+  }
+  return { translations, model };
+}
+
 async function translationDigest(input: TranslationRequest): Promise<string> {
   const canonical = JSON.stringify({
     version: "20260901.1",
@@ -608,6 +660,19 @@ async function handleTranslation(
         event: "i18n_model_failed",
         request_id: rid,
         model,
+        reason: error instanceof HttpError ? error.code : "request_failed"
+      }));
+    }
+  }
+  if (!translations) {
+    try {
+      const fallback = await callGeminiTranslation(env, input);
+      translations = fallback.translations;
+      usedModel = `gemini:${fallback.model}`;
+    } catch (error) {
+      console.warn(JSON.stringify({
+        event: "i18n_translation_fallback_failed",
+        request_id: rid,
         reason: error instanceof HttpError ? error.code : "request_failed"
       }));
     }

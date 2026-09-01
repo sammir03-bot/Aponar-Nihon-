@@ -73,6 +73,8 @@ def main() -> int:
         "MAX_TRANSLATION_ITEMS",
         "I18N_RATE_LIMITER",
         "defaultWorkerCache",
+        "callGeminiTranslation",
+        "i18n_translation_fallback_failed",
     ):
         if required_worker_value not in worker_source:
             raise SystemExit(f"Missing translation API contract: {required_worker_value}")
