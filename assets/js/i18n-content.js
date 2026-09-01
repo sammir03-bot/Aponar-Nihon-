@@ -3,7 +3,7 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260901.2";
+  var RUNTIME_VERSION = "20260901.3";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + RUNTIME_VERSION;
   var TRANSLATABLE_ATTRIBUTES = [
@@ -384,7 +384,20 @@
     var element = node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement;
     if (element && !element.closest(PRESERVE_SELECTOR)) element.setAttribute("data-aponar-i18n-pending", "true");
   }
-  function scheduleRefresh() { window.clearTimeout(refreshTimer); refreshTimer = window.setTimeout(function () { sync(false); }, 90); }
+  function scheduleRefresh() {
+    window.clearTimeout(refreshTimer);
+    function refreshWhenReady() {
+      var layer = document.getElementById("aponarI18nStatus");
+      var blocking = document.documentElement.classList.contains("aponar-i18n-loading")
+        && layer && !layer.classList.contains("error");
+      if (blocking) {
+        refreshTimer = window.setTimeout(refreshWhenReady, 120);
+        return;
+      }
+      sync(false);
+    }
+    refreshTimer = window.setTimeout(refreshWhenReady, 90);
+  }
   function observeDynamicContent() {
     if (typeof MutationObserver === "undefined" || !document.documentElement) return;
     observer = new MutationObserver(function (mutations) {
