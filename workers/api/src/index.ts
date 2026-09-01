@@ -712,6 +712,24 @@ async function callTranslationModel(
   input: TranslationRequest,
   model: WorkersAIModel
 ): Promise<TranslationItem[]> {
+  const maxModelBatchItems = 12;
+  if (input.items.length > maxModelBatchItems) {
+    const batches: TranslationItem[][] = [];
+    for (let index = 0; index < input.items.length; index += maxModelBatchItems) {
+      batches.push(input.items.slice(index, index + maxModelBatchItems));
+    }
+    const results = new Array<TranslationItem[]>(batches.length);
+    let cursor = 0;
+    async function worker(): Promise<void> {
+      while (cursor < batches.length) {
+        const index = cursor;
+        cursor += 1;
+        results[index] = await callTranslationModel(env, { ...input, items: batches[index] }, model);
+      }
+    }
+    await Promise.all(Array.from({ length: Math.min(3, batches.length) }, worker));
+    return results.flat();
+  }
   try {
     return await callTranslationModelOnce(env, input, model);
   } catch (error) {

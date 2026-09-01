@@ -92,6 +92,7 @@ def main() -> int:
         "same_language_cleanup_required",
         "incomplete_nmt_translation",
         "callTranslationModelOnce",
+        "maxModelBatchItems = 12",
         "first.concat(second)",
     ):
         if required_worker_value not in worker_source:
