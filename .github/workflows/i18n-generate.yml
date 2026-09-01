@@ -5,9 +5,14 @@ on:
     branches:
       - feat/full-static-i18n
     paths:
-      - .github/workflows/i18n-generate.yml
-      - tools/i18n_ai_pipeline.py
+      - tools/i18n-run-request.txt
   workflow_dispatch:
+    inputs:
+      confirm_paid_usage:
+        description: I approve Workers AI paid usage for this bounded translation job
+        required: true
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -18,73 +23,93 @@ concurrency:
 
 jobs:
   translate:
-    if: ${{ contains(github.event.head_commit.message, '[run full i18n]') }}
+    if: >-
+      ${{
+        (github.event_name == 'workflow_dispatch' && inputs.confirm_paid_usage == true) ||
+        (github.event_name == 'push' && contains(github.event.head_commit.message, '[run paid i18n]'))
+      }}
     runs-on: ubuntu-latest
-    timeout-minutes: 180
-    strategy:
-      fail-fast: false
-      max-parallel: 10
-      matrix:
-        language: [ja, en, vi, ne, hi, ur, my, zh, si, fil]
+    environment:
+      name: production
+    timeout-minutes: 360
 
     steps:
       - name: Checkout translation branch
         uses: actions/checkout@v7
         with:
           ref: feat/full-static-i18n
+          fetch-depth: 0
 
-      - name: Check translation pipeline syntax
-        run: python3 -m py_compile tools/i18n_ai_pipeline.py
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          package-manager-cache: false
 
-      - name: Draft and review ${{ matrix.language }}
-        env:
-          APONAR_I18N_RPM: "8"
+      - name: Validate translation code before paid inference
         run: |
-          python3 tools/i18n_ai_pipeline.py \
-            --language "${{ matrix.language }}" \
-            --output "translations/${{ matrix.language }}.json"
+          python3 -m py_compile tools/i18n_ai_pipeline.py
+          python3 -m unittest tests/test_i18n_ai_pipeline.py -v
+          npx --yes wrangler@4 deploy --dry-run --config tools/i18n-worker/wrangler.toml
 
-      - name: Upload reviewed memory
-        uses: actions/upload-artifact@v4
-        with:
-          name: memory-${{ matrix.language }}
-          path: translations/${{ matrix.language }}.json
-          if-no-files-found: error
-          retention-days: 2
-
-  collect:
-    if: ${{ !cancelled() }}
-    needs: translate
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-
-    steps:
-      - name: Require every language job
-        env:
-          NEEDS_JSON: ${{ toJson(needs.translate.result) }}
+      - name: Create temporary job credential
+        shell: bash
         run: |
-          test "${NEEDS_JSON}" = '"success"'
+          token="$(openssl rand -hex 32)"
+          echo "::add-mask::$token"
+          echo "APONAR_I18N_JOB_TOKEN=$token" >> "$GITHUB_ENV"
+          echo "APONAR_I18N_WORKER_URL=https://aponar-nihon-i18n-job.aponar-nihon.workers.dev" >> "$GITHUB_ENV"
 
-      - name: Checkout translation branch
-        uses: actions/checkout@v7
-        with:
-          ref: feat/full-static-i18n
+      - name: Deploy temporary translation Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 deploy --config tools/i18n-worker/wrangler.toml
 
-      - name: Download reviewed memories
-        uses: actions/download-artifact@v4
-        with:
-          pattern: memory-*
-          path: translations
-          merge-multiple: true
+      - name: Protect temporary translation Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: printf '%s' "$APONAR_I18N_JOB_TOKEN" | npx --yes wrangler@4 secret put I18N_JOB_TOKEN --config tools/i18n-worker/wrangler.toml
+
+      - name: Confirm temporary Worker health
+        run: |
+          sleep 5
+          curl --fail --silent --show-error "$APONAR_I18N_WORKER_URL/health"
+
+      - name: Generate resumable reviewed memories
+        shell: bash
+        run: |
+          set +e
+          final_status=0
+          for language in ja en vi ne hi ur my zh si fil; do
+            python3 tools/i18n_ai_pipeline.py \
+              --language "$language" \
+              --output "translations/$language.json"
+            language_status=$?
+
+            if test -f "translations/$language.json"; then
+              git add "translations/$language.json"
+              if ! git diff --cached --quiet; then
+                git config user.name "Aponar Nihon Translation Bot"
+                git config user.email "actions@users.noreply.github.com"
+                git commit -m "i18n: checkpoint reviewed $language memory [skip i18n-generate]"
+                git push origin HEAD:feat/full-static-i18n
+              fi
+            fi
+
+            if test "$language_status" -ne 0; then
+              final_status="$language_status"
+              break
+            fi
+          done
+          exit "$final_status"
 
       - name: Validate complete multilingual catalog
         run: python3 tools/i18n_ai_pipeline.py --validate-dir translations
 
-      - name: Commit reviewed static translation memories
-        run: |
-          git config user.name "Aponar Nihon Translation Bot"
-          git config user.email "actions@users.noreply.github.com"
-          git rm .github/workflows/i18n-generate.yml
-          git add translations
-          git commit -m "i18n: add reviewed translations for every public string [skip i18n-generate]"
-          git push origin HEAD:feat/full-static-i18n
+      - name: Delete temporary translation Worker
+        if: always()
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 delete --config tools/i18n-worker/wrangler.toml --force

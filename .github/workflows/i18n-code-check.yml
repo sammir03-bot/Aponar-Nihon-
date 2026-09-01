@@ -6,7 +6,11 @@ on:
       - feat/full-static-i18n
     paths:
       - .github/workflows/i18n-code-check.yml
+      - .github/workflows/i18n-generate.yml
       - tools/sitecore/locales.py
+      - tools/i18n_ai_pipeline.py
+      - tools/i18n-worker/**
+      - tests/test_i18n_ai_pipeline.py
       - assets/js/i18n-content.js
 
 permissions:
@@ -22,6 +26,10 @@ jobs:
           ref: feat/full-static-i18n
       - name: Compile Python locale tooling
         run: python3 -m py_compile tools/sitecore/locales.py tools/i18n_ai_pipeline.py
+      - name: Test translation checkpoints and integrity guards
+        run: python3 -m unittest tests/test_i18n_ai_pipeline.py -v
+      - name: Bundle temporary translation Worker
+        run: npx --yes wrangler@4 deploy --dry-run --config tools/i18n-worker/wrangler.toml
       - name: Parse browser translation runtime
         run: node --check assets/js/i18n-content.js
       - name: Import locale renderer
