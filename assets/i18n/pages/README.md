@@ -1,6 +1,6 @@
 # Aponar Nihon page translation packs
 
-Bangla (`bn`) is the source/default language. The shared UI is translated by `assets/js/i18n.js`. Long lesson/content translations live here as reviewed per-page JSON packs so Japanese study text is never blindly machine-translated in the browser.
+Bangla (`bn`) is the source/default language. The shared UI is translated by `assets/js/i18n.js`. Reviewed long-form lesson translations live here and always take priority. `assets/js/i18n-content.js` then completes any missing page text through the rate-limited `/api/i18n/translate` service, including user-facing attributes and content added dynamically after load.
 
 ## Supported languages
 
@@ -50,9 +50,10 @@ A Vietnamese pack for the first example is:
 3. Do not invent grammar rules or alter formation tables to make a translation sound smoother.
 4. Preserve placeholders, numbers, JLPT level names and code-like tokens when they carry meaning.
 5. Urdu packs may use normal Urdu text; the runtime applies direction handling without changing Japanese source text.
-6. A missing pack is safe: the page stays in Bangla rather than showing an unreviewed translation.
+6. A missing pack is completed by the runtime translation service. The opaque localized loading surface stays in place until every collected string has a translation, so mixed-language content is not exposed.
 7. Prefer one reviewed pack per page/language. Do not use browser auto-translation as the source of truth for educational material.
 8. Reviewed packs are also rendered into crawlable locale routes at build time (for example `/en/n5/`). The Bangla source remains at the unprefixed URL.
+9. Runtime coverage includes visible text, document title and description metadata, `placeholder`, `title`, `alt`, `aria-label`, `aria-description`, button values, data-backed labels, dynamic DOM updates, alerts and confirmation dialogs. User-entered text and protected Japanese study elements are never sent for translation.
 
 ## Workflow
 

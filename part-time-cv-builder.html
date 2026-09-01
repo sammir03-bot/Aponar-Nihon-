@@ -99,7 +99,7 @@ document.querySelectorAll('[data-mot]').forEach(b=>b.onclick=()=>{document.getEl
 document.getElementById('printBtn').onclick=()=>window.print();
 document.getElementById('sampleBtn').onclick=()=>{const sample={furigana:'イスラム エムディー アシュラフル',name:'ISLAM MD ASHRAFUL',dob:'2003-10-25',gender:'男',addressKana:'とうきょうとあだちくあだち4-16-6 ろいやるこあ ごたんの 203',postal:'120-0001',currentDate:new Date().toISOString().slice(0,10),address:'東京都足立区足立4-16-6 ROYAL CORE 五反野 203',email:'example@gmail.com',phone:'070-0000-0000',motivation:'日本に来たばかりではありますが、仕事を通して日本語や仕事のルールを学び、責任を持って長く働きたいと考えています。',schoolDays:'月～金',schoolStart:'13:15',schoolEnd:'16:45',workStartDate:new Date().toISOString().slice(0,10),availability:'平日は授業後、土日は終日勤務可能です。',wishes:'学校と部屋の近くで、夕方から夜勤も可能です。',history:[{y:'2022',m:'9',t:'KAZI NOMAN AHMED COLLEGE 卒業'},{y:'2024',m:'6',t:'日本語教育機関 入学'},{y:'2024',m:'12',t:'日本語教育機関 卒業'},{y:'2025',m:'5',t:'日本語学校 入学'}],qual:[{y:'2024',m:'11',t:'NAT N5 合格'},{y:'2025',m:'1',t:'JLPT N5 合格'}]};localStorage.setItem(KEY,JSON.stringify(sample));location.reload()};
 document.getElementById('backupBtn').onclick=()=>{const blob=new Blob([JSON.stringify(state(),null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='aponar-nihon-part-time-cv-backup.json';a.click();URL.revokeObjectURL(a.href)};
-document.getElementById('clearBtn').onclick=()=>{if(confirm('সব তথ্য মুছে ফেলবেন?')){localStorage.removeItem(KEY);location.reload()}};
+document.getElementById('clearBtn').onclick=async()=>{if(await window.AponarI18nContent.confirm('সব তথ্য মুছে ফেলবেন?')){localStorage.removeItem(KEY);location.reload()}};
 load();
 </script>
 </body></html>

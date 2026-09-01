@@ -26,6 +26,17 @@ type TutorModelReply = {
   provider: "gemini" | "workers-ai" | "local";
 };
 
+type TranslationItem = {
+  id: string;
+  text: string;
+};
+
+type TranslationRequest = {
+  page: string;
+  targetLanguage: TutorLanguage;
+  items: TranslationItem[];
+};
+
 type N3MatomeRule = [
   number,
   number,
@@ -50,6 +61,10 @@ const MAX_HISTORY_ITEMS = 8;
 const MAX_HISTORY_ITEM_CHARS = 2_000;
 const MAX_HISTORY_CHARS = 10_000;
 const MAX_UPSTREAM_BYTES = 262_144;
+const MAX_TRANSLATION_REQUEST_BYTES = 131_072;
+const MAX_TRANSLATION_ITEMS = 70;
+const MAX_TRANSLATION_ITEM_CHARS = 6_000;
+const MAX_TRANSLATION_TOTAL_CHARS = 24_000;
 const TUTOR_LEVELS: readonly TutorLevel[] = ["N5", "N4", "N3"];
 const TUTOR_MODES: readonly TutorMode[] = ["learn", "correct", "conversation", "interview", "quiz", "translate"];
 const TUTOR_DEPTHS: readonly TutorDepth[] = ["quick", "standard", "deep"];
@@ -227,7 +242,7 @@ async function parseTutorRequest(request: Request): Promise<TutorRequest> {
     throw new HttpError(413, "body_too_large", "অনুরোধটি অনেক বড়। ছোট করে আবার পাঠান।");
   }
 
-  const rawBody = await readBoundedStream(request.body, MAX_REQUEST_BYTES);
+  const rawBody = await readBoundedStream(request.body, MAX_TRANSLATION_REQUEST_BYTES);
   let parsed: unknown;
   try {
     parsed = JSON.parse(rawBody);
@@ -421,6 +436,206 @@ function extractWorkersAIText(value: unknown): string | null {
     if (text) return text;
   }
   return null;
+}
+
+async function parseTranslationRequest(request: Request): Promise<TranslationRequest> {
+  const contentType = request.headers.get("content-type") || "";
+  if (!contentType.toLowerCase().includes("application/json")) {
+    throw new HttpError(415, "json_required", "Translation requests must use JSON.");
+  }
+
+  const rawBody = await readBoundedStream(request.body, MAX_REQUEST_BYTES);
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(rawBody);
+  } catch {
+    throw new HttpError(400, "invalid_json", "The translation request is not valid JSON.");
+  }
+  if (!isRecord(parsed)) {
+    throw new HttpError(400, "invalid_request", "The translation request is invalid.");
+  }
+
+  const page = typeof parsed.page === "string" ? parsed.page.trim() : "";
+  const targetLanguage = typeof parsed.targetLanguage === "string"
+    ? parsed.targetLanguage.toLowerCase()
+    : "";
+  if (!/^[A-Za-z0-9._-]{1,180}$/.test(page)) {
+    throw new HttpError(400, "invalid_page", "The page key is invalid.");
+  }
+  if (!TUTOR_LANGUAGES.includes(targetLanguage as TutorLanguage)) {
+    throw new HttpError(400, "invalid_language", "The requested language is not supported.");
+  }
+  if (!Array.isArray(parsed.items) || !parsed.items.length || parsed.items.length > MAX_TRANSLATION_ITEMS) {
+    throw new HttpError(400, "invalid_items", `Send between 1 and ${MAX_TRANSLATION_ITEMS} translation items.`);
+  }
+
+  const items: TranslationItem[] = [];
+  const ids = new Set<string>();
+  let totalChars = 0;
+  for (const rawItem of parsed.items) {
+    if (!isRecord(rawItem)) throw new HttpError(400, "invalid_item", "A translation item is invalid.");
+    const id = typeof rawItem.id === "string" ? rawItem.id.trim() : "";
+    const text = typeof rawItem.text === "string" ? rawItem.text.trim() : "";
+    if (!/^[A-Za-z0-9_-]{1,40}$/.test(id) || ids.has(id)) {
+      throw new HttpError(400, "invalid_item_id", "Translation item IDs must be unique.");
+    }
+    if (!text || text.length > MAX_TRANSLATION_ITEM_CHARS) {
+      throw new HttpError(400, "invalid_item_text", `Each translation item must be 1-${MAX_TRANSLATION_ITEM_CHARS} characters.`);
+    }
+    ids.add(id);
+    totalChars += text.length;
+    if (totalChars > MAX_TRANSLATION_TOTAL_CHARS) {
+      throw new HttpError(413, "translation_batch_too_large", `Translation text must stay within ${MAX_TRANSLATION_TOTAL_CHARS} characters.`);
+    }
+    items.push({ id, text });
+  }
+
+  return { page, targetLanguage: targetLanguage as TutorLanguage, items };
+}
+
+function translationInstruction(input: TranslationRequest): string {
+  const targetName = TUTOR_LANGUAGE_NAMES[input.targetLanguage];
+  return `You are the production localization engine for Aponar Nihon, a Japanese-learning website.
+
+Translate every input item's user-facing text into ${targetName}. Return valid JSON only, with exactly this shape:
+{"translations":[{"id":"same-id","text":"complete translation"}]}
+
+Hard requirements:
+1. Return every ID exactly once and do not add IDs, commentary, Markdown, or code fences.
+2. Translate the complete UI/explanation sentence naturally. Do not leave Bangla or English prose behind when the target is another language.
+3. Japanese learning material is not the old interface language: preserve Japanese examples, kanji, kana, furigana, readings, grammar patterns, particles, and quoted Japanese answers exactly. Translate the explanation around them.
+4. Preserve Aponar Nihon, URLs, email placeholders, numbers, HTML-free punctuation, JLPT, N5/N4/N3, AI, CV, SSW, and tokens such as ⟦AN_PRIVATE_0⟧ exactly when they are identifiers, acronyms, or protected values.
+5. For Bangla, replace ordinary English UI prose with natural Bangla; for English, remove Bangla prose; for Japanese, render all explanatory/UI prose in natural Japanese.
+6. Keep meaning, warnings, form labels, button intent, and success/error tone exact. Never invent educational facts.
+
+Input JSON:
+${JSON.stringify({ page: input.page, items: input.items })}`;
+}
+
+function parseTranslationModelOutput(raw: string, expected: TranslationRequest): TranslationItem[] | null {
+  const trimmed = raw.trim().replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/i, "");
+  const objectText = trimmed.startsWith("{") ? trimmed : trimmed.match(/\{[\s\S]*\}/)?.[0] || "";
+  let parsed: unknown;
+  try {
+    parsed = JSON.parse(objectText);
+  } catch {
+    return null;
+  }
+  if (!isRecord(parsed) || !Array.isArray(parsed.translations)) return null;
+
+  const expectedIds = new Set(expected.items.map((item) => item.id));
+  const seen = new Set<string>();
+  const translations: TranslationItem[] = [];
+  for (const entry of parsed.translations) {
+    if (!isRecord(entry) || typeof entry.id !== "string" || typeof entry.text !== "string") return null;
+    const id = entry.id.trim();
+    const text = entry.text.trim();
+    if (!expectedIds.has(id) || seen.has(id) || !text) return null;
+    seen.add(id);
+    translations.push({ id, text });
+  }
+  return seen.size === expectedIds.size ? translations : null;
+}
+
+async function callTranslationModel(
+  env: Env,
+  input: TranslationRequest,
+  model: WorkersAIModel
+): Promise<TranslationItem[]> {
+  const request = {
+    messages: [
+      { role: "system" as const, content: "Translate website UI and explanations exactly. Output strict JSON only." },
+      { role: "user" as const, content: translationInstruction(input) }
+    ],
+    max_completion_tokens: 12_000,
+    reasoning_effort: "low" as const,
+    chat_template_kwargs: { enable_thinking: false },
+    temperature: 0
+  };
+  const options = { signal: AbortSignal.timeout(75_000) };
+  const output = model === PRIMARY_WORKERS_AI_MODEL
+    ? await env.AI.run(PRIMARY_WORKERS_AI_MODEL, request, options)
+    : await env.AI.run(SECONDARY_WORKERS_AI_MODEL, request, options);
+  const text = extractWorkersAIText(output);
+  const translations = text ? parseTranslationModelOutput(text, input) : null;
+  if (!translations) throw new HttpError(502, "invalid_translation_response", "The translation provider returned incomplete data.");
+  return translations;
+}
+
+async function translationDigest(input: TranslationRequest): Promise<string> {
+  const canonical = JSON.stringify({
+    version: "20260901.1",
+    targetLanguage: input.targetLanguage,
+    items: input.items
+  });
+  const digest = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(canonical));
+  return [...new Uint8Array(digest)].map((value) => value.toString(16).padStart(2, "0")).join("");
+}
+
+function defaultWorkerCache(): Cache {
+  return (caches as CacheStorage & { default: Cache }).default;
+}
+
+async function handleTranslation(
+  request: Request,
+  env: Env,
+  origin: string,
+  rid: string
+): Promise<Response> {
+  const startedAt = Date.now();
+  const input = await parseTranslationRequest(request);
+  const digest = await translationDigest(input);
+  const cacheRequest = new Request(new URL(`/__aponar_i18n_worker__/${digest}`, request.url), { method: "GET" });
+  const cached = await defaultWorkerCache().match(cacheRequest);
+  if (cached) {
+    const payload = await cached.json<JsonRecord>();
+    return json({ ...payload, cached: true, request_id: rid }, 200, origin);
+  }
+
+  const rateLimitKey = `${request.headers.get("cf-connecting-ip") || "anonymous"}:${input.targetLanguage}`;
+  const { success } = await env.I18N_RATE_LIMITER.limit({ key: rateLimitKey });
+  if (!success) throw new HttpError(429, "translation_rate_limited", "Too many translation batches. Try again shortly.");
+
+  let translations: TranslationItem[] | null = null;
+  let usedModel = "";
+  for (const model of [SECONDARY_WORKERS_AI_MODEL, PRIMARY_WORKERS_AI_MODEL] as const) {
+    try {
+      translations = await callTranslationModel(env, input, model);
+      usedModel = model;
+      break;
+    } catch (error) {
+      console.warn(JSON.stringify({
+        event: "i18n_model_failed",
+        request_id: rid,
+        model,
+        reason: error instanceof HttpError ? error.code : "request_failed"
+      }));
+    }
+  }
+  if (!translations) throw new HttpError(502, "translation_failed", "The page translation could not be completed.");
+
+  const payload: JsonRecord = {
+    ok: true,
+    page: input.page,
+    targetLanguage: input.targetLanguage,
+    translations
+  };
+  await defaultWorkerCache().put(cacheRequest, new Response(JSON.stringify(payload), {
+    headers: {
+      "cache-control": "public, max-age=31536000, immutable",
+      "content-type": "application/json; charset=utf-8"
+    }
+  }));
+  console.log(JSON.stringify({
+    event: "i18n_translation_ok",
+    request_id: rid,
+    language: input.targetLanguage,
+    page: input.page,
+    items: input.items.length,
+    model: usedModel,
+    duration_ms: Date.now() - startedAt
+  }));
+  return json({ ...payload, cached: false, request_id: rid }, 200, origin);
 }
 
 function isN3MatomeRule(value: unknown): value is N3MatomeRule {
@@ -746,6 +961,10 @@ export default {
           fallback_models: [SECONDARY_WORKERS_AI_MODEL, env.GEMINI_MODEL || DEFAULT_MODEL],
           request_id: rid
         }, 200, origin);
+      }
+
+      if (request.method === "POST" && url.pathname === "/api/i18n/translate") {
+        return await handleTranslation(request, env, origin, rid);
       }
 
       if (request.method === "POST" && url.pathname === "/api/tutor") {

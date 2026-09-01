@@ -30,6 +30,14 @@ namespace_id = "2026082801"
   limit = 12
   period = 60
 
+[[ratelimits]]
+name = "I18N_RATE_LIMITER"
+namespace_id = "2026090101"
+
+  [ratelimits.simple]
+  limit = 45
+  period = 60
+
 [observability.logs]
 enabled = true
 head_sampling_rate = 1

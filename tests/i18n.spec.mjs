@@ -63,19 +63,19 @@ test('legacy profile language labels normalize to locale codes', async ({ page }
   await expect.poll(() => page.evaluate(() => localStorage.getItem('aponarNihonLanguage'))).toBe('vi');
 });
 
-test('the language picker appears only on Home and the saved choice applies elsewhere', async ({ page }) => {
+test('the language picker is available sitewide and the saved choice applies everywhere', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator(languageButton)).toBeVisible();
   await page.locator(languageButton).click();
   await page.locator('[data-language-option="vi"]').click();
 
   await page.goto('/about.html');
-  await expect(page.locator(languageButton)).toHaveCount(0);
+  await expect(page.locator(languageButton)).toBeVisible();
   await expect(page.locator('html')).toHaveAttribute('lang', 'vi');
   await expect(page.locator('h1')).toHaveText('Về chúng tôi');
 
   await page.goto('/tutor-section.html');
-  await expect(page.locator(languageButton)).toHaveCount(0);
+  await expect(page.locator(languageButton)).toBeVisible();
   await expect(page.locator('html')).toHaveAttribute('lang', 'vi');
 });
 
@@ -153,6 +153,59 @@ test('reviewed packs have crawlable locale URLs and hreflang metadata', async ({
   );
 });
 
+test('runtime localization covers title, attributes, dynamic text, and dialogs', async ({ page }) => {
+  const translations = {
+    'ডাইনামিক লেখা': 'Dynamic text',
+    'এখানে লিখুন': 'Type here',
+    'উদাহরণ ছবি': 'Example image',
+    'ডাইনামিক অংশ': 'Dynamic section',
+    'পরীক্ষার শিরোনাম': 'Localized page title',
+    'সতর্কতা বার্তা': 'Alert message'
+  };
+
+  await page.addInitScript(() => {
+    window.__APONAR_I18N_RUNTIME__ = true;
+    localStorage.setItem('aponarNihonLanguage', 'en');
+  });
+  await page.route('**/api/i18n/translate', async route => {
+    const body = route.request().postDataJSON();
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({
+        ok: true,
+        translations: body.items.map(item => ({
+          id: item.id,
+          text: translations[item.text] || `English text ${item.id}`
+        }))
+      })
+    });
+  });
+
+  await page.goto('/privacy-policy.html');
+  await expect(page.locator('html')).toHaveAttribute('data-i18n-ready', 'true');
+  await page.evaluate(() => {
+    document.title = 'পরীক্ষার শিরোনাম';
+    const section = document.createElement('section');
+    section.id = 'runtimeI18nFixture';
+    section.setAttribute('aria-label', 'ডাইনামিক অংশ');
+    section.innerHTML = '<h2>ডাইনামিক লেখা</h2><input placeholder="এখানে লিখুন"><img alt="উদাহরণ ছবি">';
+    document.body.appendChild(section);
+  });
+
+  const fixture = page.locator('#runtimeI18nFixture');
+  await expect(fixture.locator('h2')).toHaveText('Dynamic text');
+  await expect(fixture.locator('input')).toHaveAttribute('placeholder', 'Type here');
+  await expect(fixture.locator('img')).toHaveAttribute('alt', 'Example image');
+  await expect(fixture).toHaveAttribute('aria-label', 'Dynamic section');
+  await expect.poll(() => page.title()).toBe('Localized page title');
+
+  await page.evaluate(() => window.AponarI18nContent.alert('সতর্কতা বার্তা'));
+  await expect(page.locator('.aponar-i18n-dialog-card p')).toHaveText('Alert message');
+  await page.locator('.aponar-i18n-dialog [data-dialog-ok]').click();
+  await expect(page.locator('.aponar-i18n-dialog')).toHaveCount(0);
+});
+
 test('selecting a reviewed language opens its canonical locale route', async ({ page }) => {
   await page.goto('/');
   await page.locator(languageButton).click();
@@ -161,7 +214,7 @@ test('selecting a reviewed language opens its canonical locale route', async ({ 
   await page.goto('/n5.html');
 
   await page.waitForURL('**/fil/n5/');
-  await expect(page.locator(languageButton)).toHaveCount(0);
+  await expect(page.locator(languageButton)).toBeVisible();
   await expect(page.locator('html')).toHaveAttribute('lang', 'fil');
   await expect(page.locator('.lh-hero h1')).toContainText('Bumuo ng matibay na pundasyon sa Japanese');
   await expect(page.locator('.lh-brand-copy small')).toHaveText('BEGINNER · 日本語能力試験');

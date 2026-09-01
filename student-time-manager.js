@@ -90,8 +90,8 @@
   };
   $('ptmManualAdd').onclick=window.addShift;
 
-  window.delShift=function(id){
-    if(!confirm('এই shift মুছবেন?'))return;
+  window.delShift=async function(id){
+    if(!await window.AponarI18nContent.confirm('এই shift মুছবেন?'))return;
     setShifts(getShifts().filter(x=>x.id!==id));renderShifts();
   };
 

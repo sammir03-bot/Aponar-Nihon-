@@ -1891,9 +1891,9 @@ function randomKanji(){
 }
 
 // ===== RESET =====
-function resetProgress(){
+async function resetProgress(){
   hideMobileControls();
-  if(!confirm('Reset all learning progress?')) return;
+  if(!await window.AponarI18nContent.confirm('Reset all learning progress?')) return;
   learned.clear();
   saveLearned();
   renderGrid();

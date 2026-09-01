@@ -749,8 +749,8 @@
         els.form.requestSubmit();
       }
     });
-    $("#newChatButton").addEventListener("click", function () {
-      if (!state.messages.length || window.confirm("বর্তমান চ্যাট বন্ধ করে নতুন চ্যাট শুরু করবেন?")) clearConversation(false);
+    $("#newChatButton").addEventListener("click", async function () {
+      if (!state.messages.length || await window.AponarI18nContent.confirm("বর্তমান চ্যাট বন্ধ করে নতুন চ্যাট শুরু করবেন?")) clearConversation(false);
     });
     $("#settingsButton").addEventListener("click", openSettings);
     $("#saveSettingsButton").addEventListener("click", function () {
@@ -763,8 +763,8 @@
       closeSettings();
       showToast("Tutor সেটিংস সংরক্ষণ হয়েছে");
     });
-    $("#clearHistoryButton").addEventListener("click", function () {
-      if (!state.messages.length || window.confirm("এই browser থেকে AI Tutor-এর সম্পূর্ণ চ্যাট মুছবেন?")) {
+    $("#clearHistoryButton").addEventListener("click", async function () {
+      if (!state.messages.length || await window.AponarI18nContent.confirm("এই browser থেকে AI Tutor-এর সম্পূর্ণ চ্যাট মুছবেন?")) {
         clearConversation(true);
         closeSettings();
       }

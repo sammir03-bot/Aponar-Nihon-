@@ -22,6 +22,7 @@ def main() -> int:
         raise SystemExit("Missing multilingual runtime assets")
 
     source = runtime.read_text(encoding="utf-8")
+    content_source = content_runtime.read_text(encoding="utf-8")
     if 'DEFAULT_LANGUAGE = "bn"' not in source:
         raise SystemExit("Bangla must remain the default language")
     if "normalizeLanguage" not in source:
@@ -40,16 +41,51 @@ def main() -> int:
 
     if "mountProfileLanguageSelect" not in source:
         raise SystemExit("Profile language preference must use the shared language registry")
+    if 'if (!isHomeRoute()) return;' in source:
+        raise SystemExit("The language picker must be available on every page")
+
+    required_runtime_contracts = (
+        '"placeholder"',
+        '"aria-label"',
+        '"aria-description"',
+        '"alt"',
+        '"title"',
+        '"content"',
+        "document.documentElement",
+        "MutationObserver",
+        "characterData: true",
+        "attributeFilter: OBSERVED_ATTRIBUTES",
+        "window.alert",
+        "localizedDialog",
+        'API_PATH = "/api/i18n/translate"',
+        "translation_coverage_incomplete",
+        "data-aponar-i18n-pending",
+    )
+    missing_contracts = [value for value in required_runtime_contracts if value not in content_source]
+    if missing_contracts:
+        raise SystemExit("Incomplete full-page i18n runtime: " + ", ".join(missing_contracts))
+
+    worker_source = (ROOT / "workers" / "api" / "src" / "index.ts").read_text(encoding="utf-8")
+    for required_worker_value in (
+        'url.pathname === "/api/i18n/translate"',
+        "parseTranslationRequest",
+        "translationInstruction",
+        "MAX_TRANSLATION_ITEMS",
+        "I18N_RATE_LIMITER",
+        "defaultWorkerCache",
+    ):
+        if required_worker_value not in worker_source:
+            raise SystemExit(f"Missing translation API contract: {required_worker_value}")
 
     pages = list(site.rglob("*.html"))
     if not pages:
         raise SystemExit("No built HTML pages found")
 
     required = (
-        "/assets/css/i18n.css?v=20260831.3",
+        "/assets/css/i18n.css?v=20260901.1",
         "/assets/css/home-brand.css?v=20260831.1",
-        "/assets/js/i18n.js?v=20260831.3",
-        "/assets/js/i18n-content.js?v=20260831.3",
+        "/assets/js/i18n.js?v=20260901.1",
+        "/assets/js/i18n-content.js?v=20260901.1",
     )
     checked = 0
     missing: list[str] = []
@@ -93,7 +129,7 @@ def main() -> int:
 
     print(
         f"i18n OK: {len(SUPPORTED)} languages, Bangla default, "
-        f"content-pack loader enabled, {checked} HTML pages wired, "
+        f"reviewed packs plus full-page runtime enabled, {checked} HTML pages wired, "
         f"{localized_checked} localized core routes checked"
     )
     return 0

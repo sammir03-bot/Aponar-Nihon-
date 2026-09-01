@@ -385,7 +385,6 @@
   }
 
   function mountPicker() {
-    if (!isHomeRoute()) return;
     if (document.getElementById("aponarLanguageButton")) return;
 
     var button = document.createElement("button");
