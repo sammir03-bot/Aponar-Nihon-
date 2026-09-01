@@ -161,6 +161,15 @@ test('runtime localization covers title, attributes, dynamic text, and dialogs',
     'পরীক্ষার শিরোনাম': 'Localized page title',
     'সতর্কতা বার্তা': 'Alert message'
   };
+  const japaneseTranslations = {
+    'ডাইনামিক লেখা': '動的テキスト',
+    'এখানে লিখুন': 'ここに入力',
+    'উদাহরণ ছবি': 'サンプル画像',
+    'ডাইনামিক অংশ': '動的セクション',
+    'পরীক্ষার শিরোনাম': 'ローカライズされたページタイトル',
+    'সতর্কতা বার্তা': '警告メッセージ',
+    'ব্র্যান্ড সাবটাইটেল': 'ブランドのサブタイトル'
+  };
 
   await page.addInitScript(() => {
     window.__APONAR_I18N_RUNTIME__ = true;
@@ -175,7 +184,8 @@ test('runtime localization covers title, attributes, dynamic text, and dialogs',
         ok: true,
         translations: body.items.map(item => ({
           id: item.id,
-          text: translations[item.text] || `English text ${item.id}`
+          text: (body.targetLanguage === 'ja' ? japaneseTranslations : translations)[item.text]
+            || `${body.targetLanguage} text ${item.id}`
         }))
       })
     });
@@ -204,6 +214,12 @@ test('runtime localization covers title, attributes, dynamic text, and dialogs',
   await expect(page.locator('.aponar-i18n-dialog-card p')).toHaveText('Alert message');
   await page.locator('.aponar-i18n-dialog [data-dialog-ok]').click();
   await expect(page.locator('.aponar-i18n-dialog')).toHaveCount(0);
+
+  await page.locator(languageButton).click();
+  await page.locator('[data-language-option="ja"]').click();
+  await expect(page.locator('html')).toHaveAttribute('lang', 'ja');
+  await expect(fixture.locator('h2')).toHaveText('動的テキスト');
+  await expect(fixture.locator('input')).toHaveAttribute('placeholder', 'ここに入力');
 });
 
 test('selecting a reviewed language opens its canonical locale route', async ({ page }) => {

@@ -67,6 +67,8 @@ def main() -> int:
         raise SystemExit("Incomplete full-page i18n runtime: " + ", ".join(missing_contracts))
     if 'parent.closest("[data-i18n-no-content]")' in content_source:
         raise SystemExit("Full-page i18n must not exclude user-facing brand content")
+    if 'JAPANESE_SELECTOR = ["[lang=\'ja\']"' in content_source:
+        raise SystemExit("Japanese document locale must not preserve the whole page")
 
     worker_source = (ROOT / "workers" / "api" / "src" / "index.ts").read_text(encoding="utf-8")
     for required_worker_value in (
@@ -94,7 +96,7 @@ def main() -> int:
         "/assets/css/i18n.css?v=20260901.1",
         "/assets/css/home-brand.css?v=20260831.1",
         "/assets/js/i18n.js?v=20260901.1",
-        "/assets/js/i18n-content.js?v=20260901.3",
+        "/assets/js/i18n-content.js?v=20260901.4",
     )
     checked = 0
     missing: list[str] = []

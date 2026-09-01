@@ -3,7 +3,7 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260901.3";
+  var RUNTIME_VERSION = "20260901.4";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + RUNTIME_VERSION;
   var TRANSLATABLE_ATTRIBUTES = [
@@ -17,7 +17,7 @@
     ".user-message", "[data-message-role='user']", ".aponar-language-layer", "#aponarLanguageButton",
     ".app-menu-layer", "#aponarI18nStatus", ".aponar-i18n-dialog"
   ].join(",");
-  var JAPANESE_SELECTOR = ["[lang='ja']", "[lang^='ja-']", ".jp", ".japanese", ".kanji", ".kana"].join(",");
+  var JAPANESE_SELECTOR = ["body [lang='ja']", "body [lang^='ja-']", ".jp", ".japanese", ".kanji", ".kana"].join(",");
   var STATUS_MESSAGES = {
     bn: { loading: "পুরো পেজ বাংলায় প্রস্তুত করা হচ্ছে…", detail: "লেখা, বাটন, ফর্ম ও নতুন দেখানো তথ্য অনুবাদ হচ্ছে।", error: "এই পেজের সব লেখা এখন অনুবাদ করা যায়নি।", retry: "আবার চেষ্টা করুন", ok: "ঠিক আছে", cancel: "বাতিল" },
     en: { loading: "Preparing the entire page in English…", detail: "Translating content, buttons, forms, and dynamic messages.", error: "The complete page could not be translated yet.", retry: "Try again", ok: "OK", cancel: "Cancel" },
