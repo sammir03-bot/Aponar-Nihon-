@@ -91,6 +91,8 @@ def main() -> int:
         "translationHasLegacyProse",
         "same_language_cleanup_required",
         "incomplete_nmt_translation",
+        "callTranslationModelOnce",
+        "first.concat(second)",
     ):
         if required_worker_value not in worker_source:
             raise SystemExit(f"Missing translation API contract: {required_worker_value}")

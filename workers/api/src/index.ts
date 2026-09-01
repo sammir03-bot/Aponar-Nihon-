@@ -682,7 +682,7 @@ async function callNmtTranslation(env: Env, input: TranslationRequest): Promise<
   return translations;
 }
 
-async function callTranslationModel(
+async function callTranslationModelOnce(
   env: Env,
   input: TranslationRequest,
   model: WorkersAIModel
@@ -705,6 +705,24 @@ async function callTranslationModel(
   const translations = text ? parseTranslationModelOutput(text, input) : null;
   if (!translations) throw new HttpError(502, "invalid_translation_response", "The translation provider returned incomplete data.");
   return translations;
+}
+
+async function callTranslationModel(
+  env: Env,
+  input: TranslationRequest,
+  model: WorkersAIModel
+): Promise<TranslationItem[]> {
+  try {
+    return await callTranslationModelOnce(env, input, model);
+  } catch (error) {
+    if (!(error instanceof HttpError) || error.code !== "invalid_translation_response" || input.items.length < 2) throw error;
+    const middle = Math.ceil(input.items.length / 2);
+    const [first, second] = await Promise.all([
+      callTranslationModel(env, { ...input, items: input.items.slice(0, middle) }, model),
+      callTranslationModel(env, { ...input, items: input.items.slice(middle) }, model)
+    ]);
+    return first.concat(second);
+  }
 }
 
 async function callGeminiTranslation(
