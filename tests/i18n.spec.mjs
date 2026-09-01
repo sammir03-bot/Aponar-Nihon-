@@ -79,12 +79,10 @@ test('the language picker is available sitewide and the saved choice applies eve
   await expect(page.locator('html')).toHaveAttribute('lang', 'vi');
 });
 
-test('brand name and header layout stay stable when Urdu is selected', async ({ page }) => {
+test('header layout stays stable when Urdu is selected', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('aponarNihonLanguage', 'ur'));
   await page.goto('/');
 
-  await expect(page.locator('.app-brand-copy strong')).toHaveText('আপনার নিহোন');
-  await expect(page.locator('.app-brand-copy small')).toHaveText('JAPANESE LEARNING HUB');
   await expect(page.locator('.app-topbar-inner')).toHaveCSS('direction', 'ltr');
 });
 
@@ -159,6 +157,7 @@ test('runtime localization covers title, attributes, dynamic text, and dialogs',
     'এখানে লিখুন': 'Type here',
     'উদাহরণ ছবি': 'Example image',
     'ডাইনামিক অংশ': 'Dynamic section',
+    'ব্র্যান্ড সাবটাইটেল': 'Brand subtitle',
     'পরীক্ষার শিরোনাম': 'Localized page title',
     'সতর্কতা বার্তা': 'Alert message'
   };
@@ -189,12 +188,13 @@ test('runtime localization covers title, attributes, dynamic text, and dialogs',
     const section = document.createElement('section');
     section.id = 'runtimeI18nFixture';
     section.setAttribute('aria-label', 'ডাইনামিক অংশ');
-    section.innerHTML = '<h2>ডাইনামিক লেখা</h2><input placeholder="এখানে লিখুন"><img alt="উদাহরণ ছবি">';
+    section.innerHTML = '<h2>ডাইনামিক লেখা</h2><div data-i18n-no-content>ব্র্যান্ড সাবটাইটেল</div><input placeholder="এখানে লিখুন"><img alt="উদাহরণ ছবি">';
     document.body.appendChild(section);
   });
 
   const fixture = page.locator('#runtimeI18nFixture');
   await expect(fixture.locator('h2')).toHaveText('Dynamic text');
+  await expect(fixture.locator('[data-i18n-no-content]')).toHaveText('Brand subtitle');
   await expect(fixture.locator('input')).toHaveAttribute('placeholder', 'Type here');
   await expect(fixture.locator('img')).toHaveAttribute('alt', 'Example image');
   await expect(fixture).toHaveAttribute('aria-label', 'Dynamic section');
