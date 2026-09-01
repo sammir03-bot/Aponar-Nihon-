@@ -3,7 +3,7 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260901.7";
+  var RUNTIME_VERSION = "20260901.8";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + RUNTIME_VERSION;
   var TRANSLATABLE_ATTRIBUTES = [
@@ -286,7 +286,7 @@
   function makeChunks(sources) {
     var chunks = [], current = [], size = 0;
     sources.forEach(function (source) {
-      if (current.length && (current.length >= 8 || size + source.length > 18000)) { chunks.push(current); current = []; size = 0; }
+      if (current.length && (current.length >= 12 || size + source.length > 18000)) { chunks.push(current); current = []; size = 0; }
       current.push(source); size += source.length;
     });
     if (current.length) chunks.push(current);
