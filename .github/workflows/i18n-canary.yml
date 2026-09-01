@@ -50,26 +50,50 @@ jobs:
           python3 - <<'PY'
           import json
           import os
+          import time
+          import urllib.error
           import urllib.request
 
           token = os.environ["I18N_JOB_TOKEN"]
-          url = "https://aponar-nihon-i18n-job.aponar-nihon.workers.dev/single"
+          base_url = "https://aponar-nihon-i18n-job.aponar-nihon.workers.dev"
+
+          # Allow the workers.dev route and newly-written secret to propagate.
+          time.sleep(5)
+          health_request = urllib.request.Request(
+              f"{base_url}/health",
+              headers={"User-Agent": "Aponar-Nihon-i18n-canary/1.0"},
+          )
+          try:
+              with urllib.request.urlopen(health_request, timeout=30) as response:
+                  health_body = response.read().decode("utf-8", errors="replace")
+                  print(f"health status={response.status} body={health_body}")
+          except urllib.error.HTTPError as error:
+              health_body = error.read().decode("utf-8", errors="replace")
+              print(f"health status={error.code} headers={dict(error.headers)} body={health_body}")
+              raise
+
           body = json.dumps({
               "text": "পৃষ্ঠা খুঁজে পাওয়া যায়নি | ZXQBRANDZXQ",
               "target_lang": "en",
           }).encode("utf-8")
           request = urllib.request.Request(
-              url,
+              f"{base_url}/single",
               data=body,
               method="POST",
               headers={
                   "X-I18n-Job-Token": token,
                   "Content-Type": "application/json",
+                  "User-Agent": "Aponar-Nihon-i18n-canary/1.0",
               },
           )
-          with urllib.request.urlopen(request, timeout=120) as response:
-              payload = json.loads(response.read().decode("utf-8"))
-          print(json.dumps(payload, ensure_ascii=False))
+          try:
+              with urllib.request.urlopen(request, timeout=120) as response:
+                  payload = response.read().decode("utf-8", errors="replace")
+                  print(f"translation status={response.status} body={payload}")
+          except urllib.error.HTTPError as error:
+              payload = error.read().decode("utf-8", errors="replace")
+              print(f"translation status={error.code} headers={dict(error.headers)} body={payload}")
+              raise
           PY
 
       - name: Delete temporary translation Worker
