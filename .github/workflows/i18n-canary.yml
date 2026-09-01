@@ -18,7 +18,37 @@ jobs:
       - uses: actions/checkout@v7
         with:
           ref: feat/full-static-i18n
-      - name: Inspect one public-string response
+      - name: Test dedicated Cloudflare translation model
         env:
-          APONAR_I18N_RPM: "8"
-        run: python3 tools/i18n_ai_pipeline.py --language en --limit 1 --no-review --output /tmp/canary.json
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          token = os.environ["CLOUDFLARE_API_TOKEN"]
+          account = os.environ["CLOUDFLARE_ACCOUNT_ID"]
+          url = (
+              "https://api.cloudflare.com/client/v4/accounts/"
+              f"{account}/ai/run/@cf/meta/m2m100-1.2b"
+          )
+          body = json.dumps({
+              "text": "পৃষ্ঠা খুঁজে পাওয়া যায়নি | ZXQBRANDZXQ",
+              "source_lang": "bn",
+              "target_lang": "en",
+          }).encode("utf-8")
+          request = urllib.request.Request(
+              url,
+              data=body,
+              method="POST",
+              headers={
+                  "Authorization": f"Bearer {token}",
+                  "Content-Type": "application/json",
+              },
+          )
+          with urllib.request.urlopen(request, timeout=120) as response:
+              payload = json.loads(response.read().decode("utf-8"))
+          print(json.dumps(payload, ensure_ascii=False))
+          PY
