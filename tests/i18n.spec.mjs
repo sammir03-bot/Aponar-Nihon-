@@ -73,6 +73,7 @@ test('the language picker is available sitewide and the saved choice applies eve
   await expect(page.locator(languageButton)).toBeVisible();
   await expect(page.locator('html')).toHaveAttribute('lang', 'vi');
   await expect(page.locator('h1')).toHaveText('Về chúng tôi');
+  await expect(page.getByText('আপনার নিহোন', { exact: true }).first()).toBeVisible();
 
   await page.goto('/tutor-section.html');
   await expect(page.locator(languageButton)).toBeVisible();
@@ -200,12 +201,13 @@ test('runtime localization covers title, attributes, dynamic text, and dialogs',
     const section = document.createElement('section');
     section.id = 'runtimeI18nFixture';
     section.setAttribute('aria-label', 'ডাইনামিক অংশ');
-    section.innerHTML = '<h2>ডাইনামিক লেখা</h2><div data-i18n-no-content>ব্র্যান্ড সাবটাইটেল</div><span data-i18n="runtime.mock">Mock Test</span><button data-i18n-aria-label="runtime.tutor" aria-label="Open AI Tutor">AI</button><input placeholder="এখানে লিখুন"><img alt="উদাহরণ ছবি">';
+    section.innerHTML = '<h2>ডাইনামিক লেখা</h2><strong data-i18n="brand.name">আপনার নিহোন</strong><div data-i18n-no-content>ব্র্যান্ড সাবটাইটেল</div><span data-i18n="runtime.mock">Mock Test</span><button data-i18n-aria-label="runtime.tutor" aria-label="Open AI Tutor">AI</button><input placeholder="এখানে লিখুন"><img alt="উদাহরণ ছবি">';
     document.body.appendChild(section);
   });
 
   const fixture = page.locator('#runtimeI18nFixture');
   await expect(fixture.locator('h2')).toHaveText('Dynamic text');
+  await expect(fixture.locator('[data-i18n="brand.name"]')).toHaveText('আপনার নিহোন');
   await expect(fixture.locator('[data-i18n-no-content]')).toHaveText('Brand subtitle');
   await expect(fixture.locator('input')).toHaveAttribute('placeholder', 'Type here');
   await expect(fixture.locator('img')).toHaveAttribute('alt', 'Example image');
@@ -221,6 +223,7 @@ test('runtime localization covers title, attributes, dynamic text, and dialogs',
   await page.locator('[data-language-option="ja"]').click();
   await expect(page.locator('html')).toHaveAttribute('lang', 'ja');
   await expect(fixture.locator('h2')).toHaveText('動的テキスト');
+  await expect(fixture.locator('[data-i18n="brand.name"]')).toHaveText('আপনার নিহোন');
   await expect(fixture.locator('[data-i18n="runtime.mock"]')).toHaveText('模擬試験');
   await expect(fixture.locator('[data-i18n-aria-label="runtime.tutor"]')).toHaveAttribute('aria-label', 'AIチューターを開く');
   await expect(fixture.locator('input')).toHaveAttribute('placeholder', 'ここに入力');

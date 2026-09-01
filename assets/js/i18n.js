@@ -156,6 +156,12 @@
     }
   };
 
+  var BRAND_NAME = "আপনার নিহোন";
+  Object.keys(MESSAGES).forEach(function (language) {
+    MESSAGES[language]["brand.name"] = BRAND_NAME;
+    MESSAGES[language]["menu.title"] = BRAND_NAME;
+  });
+
   var currentLanguage = DEFAULT_LANGUAGE;
   var profileSyncInFlight = false;
 

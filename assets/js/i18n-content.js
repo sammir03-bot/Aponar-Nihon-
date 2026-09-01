@@ -3,9 +3,10 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260901.8";
+  var RUNTIME_VERSION = "20260901.9";
+  var CACHE_VERSION = "20260901.8";
   var API_PATH = "/api/i18n/translate";
-  var CACHE_NAME = "aponar-nihon-i18n-" + RUNTIME_VERSION;
+  var CACHE_NAME = "aponar-nihon-i18n-" + CACHE_VERSION;
   var TRANSLATABLE_ATTRIBUTES = [
     "title", "placeholder", "aria-label", "aria-description", "alt", "label",
     "data-label", "data-title", "data-empty", "data-message", "data-success", "data-error"
@@ -61,6 +62,17 @@
 
   function normalize(value) { return String(value || "").replace(/\s+/g, " ").trim(); }
   function languageMessages(language) { return STATUS_MESSAGES[language] || STATUS_MESSAGES.en; }
+  function brandNames(value) { return String(value || "").match(/আপনার নিহোন|Aponar Nihon|あなたの日本(?!語)/gi) || []; }
+  function isExactBrandName(value) { return /^(?:আপনার নিহোন|Aponar Nihon|あなたの日本)$/i.test(normalize(value)); }
+  function preserveBrandNames(source, target) {
+    var originals = brandNames(source), index = 0;
+    if (!originals.length) return String(target || "");
+    var translated = String(target || "");
+    var preserved = translated.replace(/আপনার নিহোন|Aponar Nihon|あなたの日本(?!語)/gi, function () {
+      var value = originals[Math.min(index, originals.length - 1)]; index += 1; return value;
+    });
+    return preserved === translated && isExactBrandName(source) ? originals[0] : preserved;
+  }
   function isJapaneseOnly(value) {
     var text = normalize(value);
     return /[\u3040-\u30ff\u3400-\u9fff]/.test(text) && !/[A-Za-z\u0980-\u09ff]/.test(text);
@@ -199,7 +211,8 @@
     disconnectObserver(); applying = true;
     try {
       items.forEach(function (item) {
-        var target = translationTable.get(item.source);
+        if (isExactBrandName(item.source)) return;
+        var target = preserveBrandNames(item.source, translationTable.get(item.source));
         if (typeof target !== "string" || !target.trim()) return;
         if (item.kind === "text") item.node.nodeValue = preserveWhitespace(item.raw, target);
         else item.node.setAttribute(item.attribute, target.trim());
@@ -245,8 +258,34 @@
     return (hash >>> 0).toString(36);
   }
   function snapshotRequest(language, sources) {
-    var key = [RUNTIME_VERSION, pageKey(), language, fingerprint(sources.slice().sort())].join("-");
+    var key = [CACHE_VERSION, pageKey(), language, fingerprint(sources.slice().sort())].join("-");
     return new Request(window.location.origin + "/__aponar_i18n_client__/" + encodeURIComponent(key));
+  }
+  function dictionaryRequest(language) {
+    return new Request(window.location.origin + "/__aponar_i18n_dictionary__/" + encodeURIComponent(CACHE_VERSION + "-" + language));
+  }
+  async function readDictionary(language) {
+    if (!("caches" in window)) return new Map();
+    try {
+      var cache = await caches.open(CACHE_NAME), response = await cache.match(dictionaryRequest(language));
+      if (!response) return new Map();
+      var payload = await response.json(), result = new Map();
+      if (payload && payload.version === CACHE_VERSION && Array.isArray(payload.translations)) {
+        payload.translations.forEach(function (entry) {
+          if (entry && typeof entry.source === "string" && typeof entry.target === "string") result.set(entry.source, preserveBrandNames(entry.source, entry.target));
+        });
+      }
+      return result;
+    } catch (_error) { return new Map(); }
+  }
+  async function writeDictionary(language) {
+    if (!("caches" in window) || !translationTable.size) return;
+    try {
+      var cache = await caches.open(CACHE_NAME), existing = await readDictionary(language);
+      translationTable.forEach(function (target, source) { existing.set(source, preserveBrandNames(source, target)); });
+      var entries = Array.from(existing, function (entry) { return { source: entry[0], target: entry[1] }; });
+      await cache.put(dictionaryRequest(language), new Response(JSON.stringify({ version: CACHE_VERSION, translations: entries }), { headers: { "content-type": "application/json; charset=utf-8" } }));
+    } catch (_error) { /* Shared cache is an optimization only. */ }
   }
   async function readSnapshot(language, sources) {
     if (!("caches" in window) || !sources.length) return new Map();
@@ -256,8 +295,8 @@
       if (!response) return new Map();
       var payload = await response.json();
       var result = new Map();
-      if (payload && payload.version === RUNTIME_VERSION && Array.isArray(payload.translations)) {
-        payload.translations.forEach(function (entry) { if (entry && typeof entry.source === "string" && typeof entry.target === "string") result.set(entry.source, entry.target); });
+      if (payload && payload.version === CACHE_VERSION && Array.isArray(payload.translations)) {
+        payload.translations.forEach(function (entry) { if (entry && typeof entry.source === "string" && typeof entry.target === "string") result.set(entry.source, preserveBrandNames(entry.source, entry.target)); });
       }
       return result;
     } catch (_error) { return new Map(); }
@@ -265,16 +304,16 @@
   async function writeSnapshot(language, sources) {
     if (!("caches" in window) || !sources.length) return;
     try {
-      var entries = sources.filter(function (source) { return translationTable.has(source); }).map(function (source) { return { source: source, target: translationTable.get(source) }; });
+      var entries = sources.filter(function (source) { return translationTable.has(source); }).map(function (source) { return { source: source, target: preserveBrandNames(source, translationTable.get(source)) }; });
       if (entries.length !== sources.length) return;
       var cache = await caches.open(CACHE_NAME);
-      await cache.put(snapshotRequest(language, sources), new Response(JSON.stringify({ version: RUNTIME_VERSION, translations: entries }), { headers: { "content-type": "application/json; charset=utf-8" } }));
+      await cache.put(snapshotRequest(language, sources), new Response(JSON.stringify({ version: CACHE_VERSION, translations: entries }), { headers: { "content-type": "application/json; charset=utf-8" } }));
     } catch (_error) { /* Cache is an optimization only. */ }
   }
 
   function protectPrivateText(value) {
     var values = [];
-    var text = value.replace(/(?:https?:\/\/|www\.)[^\s]+|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}|\+?\d[\d\s().-]{7,}\d/gi, function (match) {
+    var text = value.replace(/আপনার নিহোন|Aponar Nihon|あなたの日本(?!語)|(?:https?:\/\/|www\.)[^\s]+|[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}|\+?\d[\d\s().-]{7,}\d/gi, function (match) {
       var token = "⟦AN_PRIVATE_" + values.length + "⟧"; values.push(match); return token;
     });
     return { text: text, restore: function (translated) {
@@ -306,7 +345,7 @@
     var returned = new Map();
     payload.translations.forEach(function (entry) { if (entry && typeof entry.id === "string" && typeof entry.text === "string" && entry.text.trim()) returned.set(entry.id, entry.text); });
     if (returned.size !== protectedItems.length) throw new Error("translation_response_incomplete");
-    protectedItems.forEach(function (item) { translationTable.set(item.source, item.restore(returned.get(item.id))); });
+    protectedItems.forEach(function (item) { translationTable.set(item.source, preserveBrandNames(item.source, item.restore(returned.get(item.id)))); });
   }
   async function translateMissing(language, sources, onProgress) {
     var missing = sources.filter(function (source) { return !translationTable.has(source); });
@@ -319,7 +358,7 @@
         if (onProgress) onProgress(completed, chunks.length);
       }
     }
-    await Promise.all(Array.from({ length: Math.min(3, chunks.length) }, worker));
+    await Promise.all(Array.from({ length: Math.min(6, chunks.length) }, worker));
     if (missing.some(function (source) { return !translationTable.has(source); })) throw new Error("translation_coverage_incomplete");
   }
 
@@ -359,18 +398,20 @@
     if (!sources.length) { clearPending(); hideStatus(); return; }
     if (blocking !== false) showStatus(language, false);
     try {
-      var reviewed = await loadReviewedPack(language);
+      var loaded = await Promise.all([loadReviewedPack(language), readSnapshot(language, sources), readDictionary(language)]);
       if (serial !== requestSerial || language !== activeLanguage) return;
-      var cached = await readSnapshot(language, sources);
-      if (serial !== requestSerial || language !== activeLanguage) return;
-      cached.forEach(function (target, source) { translationTable.set(source, target); });
-      reviewed.forEach(function (target, source) { translationTable.set(source, target); });
+      loaded[2].forEach(function (target, source) { translationTable.set(source, preserveBrandNames(source, target)); });
+      loaded[1].forEach(function (target, source) { translationTable.set(source, preserveBrandNames(source, target)); });
+      loaded[0].forEach(function (target, source) { translationTable.set(source, preserveBrandNames(source, target)); });
+      sources.forEach(function (source) { if (isExactBrandName(source)) translationTable.set(source, source); });
       await translateMissing(language, sources, function (done, total) {
         if (blocking !== false && total > 1) showStatus(language, false, languageMessages(language).detail + " " + done + "/" + total);
       });
       if (serial !== requestSerial || language !== activeLanguage) return;
       if (runtimeEnabled && sources.some(function (source) { return !translationTable.has(source); })) throw new Error("translation_coverage_incomplete");
-      applyTranslations(items); await writeSnapshot(language, sources); if (serial === requestSerial) hideStatus();
+      applyTranslations(items);
+      if (serial === requestSerial) hideStatus();
+      Promise.all([writeSnapshot(language, sources), writeDictionary(language)]).catch(function () { /* Cache writes never block the UI. */ });
     } catch (error) {
       if (serial !== requestSerial) return;
       console.error("Aponar Nihon full-page translation failed:", error); showStatus(language, true);

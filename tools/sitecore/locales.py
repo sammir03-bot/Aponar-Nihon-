@@ -12,11 +12,29 @@ PRODUCTION_ORIGIN = "https://app.aponar-nihon.workers.dev"
 DEFAULT_LANGUAGE = "bn"
 SUPPORTED_LANGUAGES = ("ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil")
 RTL_LANGUAGES = {"ur"}
-BRAND_NAMES = {"ja": "あなたの日本"}
+BRAND_RE = re.compile(r"আপনার নিহোন|Aponar Nihon|あなたの日本(?!語)", re.IGNORECASE)
 
 LANGUAGE_PATTERN = "|".join(
     sorted((re.escape(code) for code in SUPPORTED_LANGUAGES), key=len, reverse=True)
 )
+
+
+def _preserve_brand_names(source: str, target: str) -> str:
+    originals = BRAND_RE.findall(source)
+    if not originals:
+        return target
+    cursor = 0
+
+    def replace(_match: re.Match[str]) -> str:
+        nonlocal cursor
+        value = originals[min(cursor, len(originals) - 1)]
+        cursor += 1
+        return value
+
+    preserved, count = BRAND_RE.subn(replace, target)
+    if count == 0 and BRAND_RE.fullmatch(_normalize(source)):
+        return originals[0]
+    return preserved
 PACK_NAME_RE = re.compile(
     rf"^(?P<page>.+)\.(?P<language>{LANGUAGE_PATTERN})\.json$"
 )
@@ -124,6 +142,7 @@ class _ReviewedTranslationParser(HTMLParser):
         if not source or target is None:
             self.parts.append(data)
             return
+        target = _preserve_brand_names(source, target)
         leading = re.match(r"^\s*", data).group(0)
         trailing = re.search(r"\s*$", data).group(0)
         self.parts.append(f"{leading}{target}{trailing}")
@@ -265,13 +284,12 @@ def _truncate_description(value: str, limit: int = 165) -> str:
 
 
 def _localize_metadata(document: str, language: str, entries: dict[str, str]) -> str:
-    brand = BRAND_NAMES.get(language, "Aponar Nihon")
-
     def replace_title(match: re.Match[str]) -> str:
-        title = match.group(2)
+        source_title = match.group(2)
+        title = source_title
         for source, target in sorted(entries.items(), key=lambda item: len(item[0]), reverse=True):
             title = title.replace(source, target)
-        title = title.replace("আপনার নিহোন", brand)
+        title = _preserve_brand_names(source_title, title)
         return f"{match.group(1)}{title}{match.group(3)}"
 
     document = TITLE_RE.sub(replace_title, document, count=1)

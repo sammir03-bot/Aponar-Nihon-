@@ -61,6 +61,10 @@ def main() -> int:
         'API_PATH = "/api/i18n/translate"',
         "translation_coverage_incomplete",
         "current.length >= 12",
+        "Math.min(6, chunks.length)",
+        'CACHE_VERSION = "20260901.8"',
+        "dictionaryRequest",
+        "preserveBrandNames",
         "data-aponar-i18n-pending",
     )
     missing_contracts = [value for value in required_runtime_contracts if value not in content_source]
@@ -106,8 +110,8 @@ def main() -> int:
     required = (
         "/assets/css/i18n.css?v=20260901.2",
         "/assets/css/home-brand.css?v=20260901.2",
-        "/assets/js/i18n.js?v=20260901.2",
-        "/assets/js/i18n-content.js?v=20260901.8",
+        "/assets/js/i18n.js?v=20260901.3",
+        "/assets/js/i18n-content.js?v=20260901.9",
     )
     checked = 0
     missing: list[str] = []
