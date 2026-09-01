@@ -50,8 +50,8 @@ type N3MatomeRule = [
 ];
 
 const DEFAULT_ORIGIN = "https://app.aponar-nihon.workers.dev";
-const DEFAULT_MODEL = "gemini-flash-latest";
-const GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions";
+const DEFAULT_MODEL = "gemini-3.1-flash-lite";
+const GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models";
 const PRIMARY_WORKERS_AI_MODEL = "@cf/openai/gpt-oss-120b";
 const SECONDARY_WORKERS_AI_MODEL = "@cf/zai-org/glm-4.7-flash";
 const TRANSLATION_WORKERS_AI_MODEL = "@cf/meta/m2m100-1.2b";
@@ -357,20 +357,38 @@ function extractInteractionText(value: unknown): string | null {
   return blocks.length ? blocks.join("\n\n") : null;
 }
 
+function extractGenerateContentText(value: unknown): string | null {
+  if (!isRecord(value) || !Array.isArray(value.candidates)) return null;
+  const blocks: string[] = [];
+  for (const candidate of value.candidates) {
+    if (!isRecord(candidate) || !isRecord(candidate.content) || !Array.isArray(candidate.content.parts)) continue;
+    for (const part of candidate.content.parts) {
+      if (!isRecord(part) || typeof part.text !== "string") continue;
+      const text = part.text.trim();
+      if (text) blocks.push(text);
+    }
+  }
+  return blocks.length ? blocks.join("\n\n") : null;
+}
+
+function configuredGeminiModel(env: Env): string {
+  const configured = env.GEMINI_MODEL?.trim() || DEFAULT_MODEL;
+  if (configured === "gemini-flash-latest") return DEFAULT_MODEL;
+  return /^[A-Za-z0-9._-]+$/.test(configured) ? configured : DEFAULT_MODEL;
+}
+
 async function callGemini(env: Env, tutorRequest: TutorRequest): Promise<string> {
-  const configuredModel = env.GEMINI_MODEL?.trim() || DEFAULT_MODEL;
-  const model = /^[A-Za-z0-9._-]+$/.test(configuredModel) ? configuredModel : DEFAULT_MODEL;
-  const response = await fetch(GEMINI_ENDPOINT, {
+  const model = configuredGeminiModel(env);
+  const response = await fetch(`${GEMINI_ENDPOINT}/${encodeURIComponent(model)}:generateContent`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
       "x-goog-api-key": env.GEMINI_API_KEY
     },
     body: JSON.stringify({
-      model,
-      input: interactionInput(tutorRequest)
+      contents: [{ role: "user", parts: [{ text: interactionInput(tutorRequest) }] }]
     }),
-    signal: AbortSignal.timeout(10_000)
+    signal: AbortSignal.timeout(30_000)
   });
 
   const rawResponse = await readBoundedStream(response.body, MAX_UPSTREAM_BYTES);
@@ -412,7 +430,7 @@ async function callGemini(env: Env, tutorRequest: TutorRequest): Promise<string>
     );
   }
 
-  const text = extractInteractionText(payload);
+  const text = extractGenerateContentText(payload);
   if (!text) {
     throw new HttpError(502, "empty_ai_response", "AI খালি উত্তর দিয়েছে। প্রশ্নটি অন্যভাবে লিখে আবার চেষ্টা করুন।");
   }
@@ -650,21 +668,20 @@ async function callGeminiTranslation(
   env: Env,
   input: TranslationRequest
 ): Promise<{ translations: TranslationItem[]; model: string }> {
-  const configuredModel = env.GEMINI_MODEL?.trim() || DEFAULT_MODEL;
-  const model = /^[A-Za-z0-9._-]+$/.test(configuredModel) ? configuredModel : DEFAULT_MODEL;
+  const model = configuredGeminiModel(env);
   if (!env.GEMINI_API_KEY?.trim()) {
     throw new HttpError(502, "translation_fallback_unavailable", "The translation fallback is not configured.");
   }
 
-  const response = await fetch(GEMINI_ENDPOINT, {
+  const response = await fetch(`${GEMINI_ENDPOINT}/${encodeURIComponent(model)}:generateContent`, {
     method: "POST",
     headers: {
       "content-type": "application/json",
       "x-goog-api-key": env.GEMINI_API_KEY
     },
     body: JSON.stringify({
-      model,
-      input: translationInstruction(input)
+      contents: [{ role: "user", parts: [{ text: translationInstruction(input) }] }],
+      generationConfig: { responseMimeType: "application/json" }
     }),
     signal: AbortSignal.timeout(75_000)
   });
@@ -690,7 +707,7 @@ async function callGeminiTranslation(
     throw new HttpError(502, "translation_fallback_failed", "The translation fallback did not respond.");
   }
 
-  const text = extractInteractionText(payload);
+  const text = extractGenerateContentText(payload);
   const translations = text ? parseTranslationModelOutput(text, input) : null;
   if (!translations) {
     throw new HttpError(502, "invalid_translation_fallback_response", "The translation fallback returned incomplete data.");
