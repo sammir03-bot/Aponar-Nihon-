@@ -1,10 +1,17 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import json
 import sys
 from pathlib import Path
 
-from sitecore.locales import localized_route_for_page
+from i18n_ai_pipeline import HtmlSourceParser
+from sitecore.locales import (
+    EXCLUDED_LOCALIZED_PAGES,
+    RTL_LANGUAGES,
+    localized_route_for_page,
+    localized_route_plan,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 SUPPORTED = ("bn", "ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil")
@@ -91,10 +98,60 @@ def main() -> int:
     if "BEGINNER · 日本語能力試験" not in english_n5:
         raise SystemExit("Japanese study text changed in the localized N5 page")
 
+    memory_states: dict[str, bool] = {}
+    memory_present = False
+    for code in SUPPORTED[1:]:
+        path = site / "translations" / f"{code}.json"
+        if not path.exists():
+            memory_states[code] = False
+            continue
+        memory_present = True
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        memory_states[code] = (
+            payload.get("reviewed") is True
+            and payload.get("sourceLanguage") == "bn"
+            and payload.get("targetLanguage") == code
+        )
+
+    full_route_count = 0
+    if memory_present:
+        missing_memories = [code for code, ready in memory_states.items() if not ready]
+        if missing_memories:
+            raise SystemExit("Partial global translation memories reached the build: " + ", ".join(missing_memories))
+
+        base_pages = [
+            page
+            for page in sorted(site.rglob("*.html"))
+            if page.relative_to(site).parts
+            and page.relative_to(site).parts[0] not in SUPPORTED[1:]
+            and page.name not in EXCLUDED_LOCALIZED_PAGES
+            and not page.name.startswith("google")
+        ]
+        route_plan = localized_route_plan(base_pages, site)
+        for code in SUPPORTED[1:]:
+            direction = "rtl" if code in RTL_LANGUAGES else "ltr"
+            for source_page, route in route_plan.items():
+                localized = site / code / route / "index.html"
+                if not localized.exists():
+                    raise SystemExit(f"Missing full localized route: {localized.relative_to(site)}")
+                document = localized.read_text(encoding="utf-8", errors="ignore")
+                if f'lang="{code}"' not in document or f'dir="{direction}"' not in document:
+                    raise SystemExit(f"Wrong full-route locale on {localized.relative_to(site)}")
+                parser = HtmlSourceParser()
+                parser.feed(document)
+                parser.close()
+                if parser.items:
+                    sample = " | ".join(parser.items[:3])
+                    raise SystemExit(
+                        f"Visible Bangla remains on {localized.relative_to(site)}: {sample[:300]}"
+                    )
+                full_route_count += 1
+
     print(
         f"i18n OK: {len(SUPPORTED)} languages, Bangla default, "
         f"content-pack loader enabled, {checked} HTML pages wired, "
-        f"{localized_checked} localized core routes checked"
+        f"{localized_checked} localized core routes checked, "
+        f"{full_route_count} full-memory routes checked"
     )
     return 0
 

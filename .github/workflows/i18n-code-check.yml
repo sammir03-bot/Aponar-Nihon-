@@ -9,6 +9,8 @@ on:
       - .github/workflows/i18n-generate.yml
       - tools/sitecore/locales.py
       - tools/i18n_ai_pipeline.py
+      - tools/i18n_coverage.py
+      - tools/check_i18n.py
       - tools/i18n-worker/**
       - tests/test_i18n_ai_pipeline.py
       - assets/js/i18n-content.js
@@ -25,7 +27,7 @@ jobs:
         with:
           ref: feat/full-static-i18n
       - name: Compile Python locale tooling
-        run: python3 -m py_compile tools/sitecore/locales.py tools/i18n_ai_pipeline.py
+        run: python3 -m py_compile tools/sitecore/locales.py tools/i18n_ai_pipeline.py tools/i18n_coverage.py tools/check_i18n.py
       - name: Test translation checkpoints and integrity guards
         run: python3 -m unittest tests/test_i18n_ai_pipeline.py -v
       - name: Bundle temporary translation Worker

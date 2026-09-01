@@ -374,7 +374,9 @@ def _load_reviewed_memories(root: Path) -> dict[str, dict[str, str]]:
     return memories
 
 
-def _route_plan(pages: list[Path], root: Path) -> dict[Path, Path]:
+def localized_route_plan(pages: list[Path], root: Path) -> dict[Path, Path]:
+    """Return the deterministic, collision-free locale route for every source page."""
+
     planned: dict[Path, Path] = {}
     used: dict[Path, Path] = {}
     for page in pages:
@@ -414,7 +416,7 @@ def build_localized_pages(root: Path) -> tuple[int, int, int]:
         missing = sorted(set(SUPPORTED_LANGUAGES) - set(memories))
         raise RuntimeError("Missing reviewed translation memories: " + ", ".join(missing))
 
-    route_by_page = _route_plan(list(page_by_key.values()), root)
+    route_by_page = localized_route_plan(list(page_by_key.values()), root)
     clusters: dict[Path, dict[str, Path]] = {}
     generated = translated_nodes = 0
 
