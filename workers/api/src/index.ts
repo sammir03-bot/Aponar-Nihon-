@@ -54,6 +54,7 @@ const DEFAULT_MODEL = "gemini-flash-latest";
 const GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/interactions";
 const PRIMARY_WORKERS_AI_MODEL = "@cf/openai/gpt-oss-120b";
 const SECONDARY_WORKERS_AI_MODEL = "@cf/zai-org/glm-4.7-flash";
+const TRANSLATION_WORKERS_AI_MODEL = "@cf/meta/m2m100-1.2b";
 const N3_MATOME_ASSET_URL = `${DEFAULT_ORIGIN}/assets/js/n3-matome-data.js`;
 const MAX_REQUEST_BYTES = 32_768;
 const MAX_MESSAGE_CHARS = 6_000;
@@ -537,6 +538,89 @@ function parseTranslationModelOutput(raw: string, expected: TranslationRequest):
   return seen.size === expectedIds.size ? translations : null;
 }
 
+const NMT_LANGUAGE_CODES: Record<TutorLanguage, string> = {
+  bn: "bn",
+  ja: "ja",
+  en: "en",
+  vi: "vi",
+  ne: "ne",
+  hi: "hi",
+  ur: "ur",
+  my: "my",
+  zh: "zh",
+  si: "si",
+  fil: "tl"
+};
+
+function detectTranslationSource(text: string): TutorLanguage {
+  if (/\p{Script=Bengali}/u.test(text)) return "bn";
+  if (/\p{Script=Hiragana}|\p{Script=Katakana}/u.test(text)) return "ja";
+  if (/\p{Script=Arabic}/u.test(text)) return "ur";
+  if (/\p{Script=Myanmar}/u.test(text)) return "my";
+  if (/\p{Script=Sinhala}/u.test(text)) return "si";
+  if (/\p{Script=Devanagari}/u.test(text)) return "hi";
+  if (/\p{Script=Han}/u.test(text)) return "ja";
+  if (/[ăâđêôơưĂÂĐÊÔƠƯ]/u.test(text)) return "vi";
+  return "en";
+}
+
+function protectNmtSegments(value: string): { text: string; restore: (translated: string) => string } {
+  const protectedValues: string[] = [];
+  const text = value.replace(
+    /⟦AN_PRIVATE_\d+⟧|Aponar Nihon|\b(?:JLPT|AI|CV|SSW|N[345])\b|[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}々〆ヵヶー]+/gu,
+    (match) => {
+      const token = `ZXQK${protectedValues.length}QXZ`;
+      protectedValues.push(match);
+      return token;
+    }
+  );
+  return {
+    text,
+    restore(translated: string): string {
+      let result = translated;
+      protectedValues.forEach((original, index) => {
+        result = result.replaceAll(`ZXQK${index}QXZ`, original);
+      });
+      return result;
+    }
+  };
+}
+
+async function callNmtTranslation(env: Env, input: TranslationRequest): Promise<TranslationItem[]> {
+  const translations = new Array<TranslationItem>(input.items.length);
+  let cursor = 0;
+
+  async function worker(): Promise<void> {
+    while (cursor < input.items.length) {
+      const index = cursor;
+      cursor += 1;
+      const item = input.items[index];
+      const sourceLanguage = detectTranslationSource(item.text);
+      if (sourceLanguage === input.targetLanguage) {
+        translations[index] = item;
+        continue;
+      }
+
+      const safe = protectNmtSegments(item.text);
+      const output = await env.AI.run(TRANSLATION_WORKERS_AI_MODEL, {
+        text: safe.text,
+        source_lang: NMT_LANGUAGE_CODES[sourceLanguage],
+        target_lang: NMT_LANGUAGE_CODES[input.targetLanguage]
+      }, { signal: AbortSignal.timeout(30_000) });
+      const translated = isRecord(output) && typeof output.translated_text === "string"
+        ? output.translated_text.trim()
+        : "";
+      if (!translated) {
+        throw new HttpError(502, "empty_nmt_response", "The translation model returned incomplete data.");
+      }
+      translations[index] = { id: item.id, text: safe.restore(translated) };
+    }
+  }
+
+  await Promise.all(Array.from({ length: Math.min(6, input.items.length) }, worker));
+  return translations;
+}
+
 async function callTranslationModel(
   env: Env,
   input: TranslationRequest,
@@ -650,7 +734,18 @@ async function handleTranslation(
 
   let translations: TranslationItem[] | null = null;
   let usedModel = "";
-  for (const model of [SECONDARY_WORKERS_AI_MODEL, PRIMARY_WORKERS_AI_MODEL] as const) {
+  try {
+    translations = await callNmtTranslation(env, input);
+    usedModel = TRANSLATION_WORKERS_AI_MODEL;
+  } catch (error) {
+    console.warn(JSON.stringify({
+      event: "i18n_nmt_failed",
+      request_id: rid,
+      model: TRANSLATION_WORKERS_AI_MODEL,
+      reason: error instanceof HttpError ? error.code : "request_failed"
+    }));
+  }
+  for (const model of translations ? [] : [SECONDARY_WORKERS_AI_MODEL, PRIMARY_WORKERS_AI_MODEL] as const) {
     try {
       translations = await callTranslationModel(env, input, model);
       usedModel = model;

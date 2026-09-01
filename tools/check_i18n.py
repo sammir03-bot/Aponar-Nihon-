@@ -74,6 +74,8 @@ def main() -> int:
         "I18N_RATE_LIMITER",
         "defaultWorkerCache",
         "callGeminiTranslation",
+        "callNmtTranslation",
+        'TRANSLATION_WORKERS_AI_MODEL = "@cf/meta/m2m100-1.2b"',
         "i18n_translation_fallback_failed",
     ):
         if required_worker_value not in worker_source:
