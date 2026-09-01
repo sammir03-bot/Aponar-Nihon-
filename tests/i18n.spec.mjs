@@ -212,7 +212,7 @@ test('runtime localization covers title, attributes, dynamic text, and dialogs',
   await expect(fixture).toHaveAttribute('aria-label', 'Dynamic section');
   await expect.poll(() => page.title()).toBe('Localized page title');
 
-  await page.evaluate(() => window.AponarI18nContent.alert('সতর্কতা বার্তা'));
+  await page.evaluate(() => { void window.AponarI18nContent.alert('সতর্কতা বার্তা'); });
   await expect(page.locator('.aponar-i18n-dialog-card p')).toHaveText('Alert message');
   await page.locator('.aponar-i18n-dialog [data-dialog-ok]').click();
   await expect(page.locator('.aponar-i18n-dialog')).toHaveCount(0);

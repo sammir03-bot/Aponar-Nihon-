@@ -398,7 +398,7 @@
       '<span class="aponar-language-chevron" aria-hidden="true">▾</span>';
     button.addEventListener("click", openPicker);
 
-    var actions = document.querySelector(".app-top-actions");
+    var actions = document.querySelector(".app-top-actions, .lh-top-actions, .tutor-top-actions");
     if (actions) actions.insertBefore(button, actions.firstChild);
     else {
       button.classList.add("aponar-language-floating");

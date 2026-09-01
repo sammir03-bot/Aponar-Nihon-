@@ -1,10 +1,5 @@
-/* Aponar Nihon home-brand priority layer.
-   The language choice is global, but its picker is intentionally shown only on Home. */
-
-body:not([data-page="home"]) .aponar-language-button,
-body:not([data-page="home"]) .aponar-language-layer {
-  display: none !important;
-}
+/* Aponar Nihon home-brand priority layer. The language picker remains visible
+   sitewide; the rules below only tune its layout on Home. */
 
 body[data-page="home"] .app-topbar-inner {
   gap: 10px;
