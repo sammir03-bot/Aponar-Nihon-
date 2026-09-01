@@ -3,7 +3,7 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260901.5";
+  var RUNTIME_VERSION = "20260901.6";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + RUNTIME_VERSION;
   var TRANSLATABLE_ATTRIBUTES = [
@@ -361,10 +361,10 @@
     try {
       var reviewed = await loadReviewedPack(language);
       if (serial !== requestSerial || language !== activeLanguage) return;
-      reviewed.forEach(function (target, source) { translationTable.set(source, target); });
       var cached = await readSnapshot(language, sources);
       if (serial !== requestSerial || language !== activeLanguage) return;
       cached.forEach(function (target, source) { translationTable.set(source, target); });
+      reviewed.forEach(function (target, source) { translationTable.set(source, target); });
       await translateMissing(language, sources, function (done, total) {
         if (blocking !== false && total > 1) showStatus(language, false, languageMessages(language).detail + " " + done + "/" + total);
       });
