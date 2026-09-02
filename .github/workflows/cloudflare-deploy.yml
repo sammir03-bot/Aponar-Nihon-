@@ -28,12 +28,37 @@ jobs:
         run: |
           python3 - <<'PY'
           from pathlib import Path
+
+          # Search Console verification HTML is a token file, not a user-facing page.
           p = Path('.github/scripts/force_native_bangla_site.py')
           s = p.read_text(encoding='utf-8')
           s = s.replace(
               '        if any(part in EXCLUDED_DIRS for part in rel.parts):',
               '        if path.name.startswith("google") or any(part in EXCLUDED_DIRS for part in rel.parts):'
           )
+          s = s.replace(
+              '    for page in pages:\n        rel_path = page.relative_to(site)\n        if rel_path.parts and rel_path.parts[0] in SUPPORTED[1:]:',
+              '    for page in pages:\n        if page.name.startswith("google"):\n            continue\n        rel_path = page.relative_to(site)\n        if rel_path.parts and rel_path.parts[0] in SUPPORTED[1:]:'
+          )
+          p.write_text(s, encoding='utf-8', newline='\n')
+
+          # Repair the guard already written by the previous normalization run.
+          p = Path('tools/check_i18n.py')
+          s = p.read_text(encoding='utf-8')
+          old = '''    native_locale_errors: list[str] = []
+          for page in pages:
+              rel_path = page.relative_to(site)
+              if rel_path.parts and rel_path.parts[0] in SUPPORTED[1:]:
+                  continue'''
+          new = '''    native_locale_errors: list[str] = []
+          for page in pages:
+              if page.name.startswith("google"):
+                  continue
+              rel_path = page.relative_to(site)
+              if rel_path.parts and rel_path.parts[0] in SUPPORTED[1:]:
+                  continue'''
+          if old in s:
+              s = s.replace(old, new, 1)
           p.write_text(s, encoding='utf-8', newline='\n')
           PY
           python3 .github/scripts/force_native_bangla_site.py
@@ -46,6 +71,7 @@ jobs:
           grep -F 'if (language === "bn") return false;' assets/js/i18n-content.js
           grep -F 'if (window.AponarI18n.getLanguage() === "bn")' assets/js/i18n-content.js
           grep -F 'data-language-preset="bn"' index.html
+          grep -A3 -F 'native_locale_errors' tools/check_i18n.py | grep -F 'page.name.startswith("google")'
 
       - name: Persist native Bangla normalization
         run: |
@@ -55,7 +81,7 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add -A
-            git commit -m "Make every native HTML page Bangla by default"
+            git commit -m "Keep verification token outside Bangla page checks"
             git push
           fi
 
