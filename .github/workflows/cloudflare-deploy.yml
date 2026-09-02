@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: cloudflare-production
@@ -21,6 +21,98 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Make Bangla the true default language
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          p = Path('assets/js/i18n.js')
+          s = p.read_text(encoding='utf-8')
+
+          old = '''  function readLanguage() {
+    return languageFromPath() || storedLanguage() || DEFAULT_LANGUAGE;
+  }'''
+          new = '''  function readLanguage() {
+    // Bangla is the source language. Saved preferences must not auto-translate the root site.
+    return languageFromPath() || DEFAULT_LANGUAGE;
+  }'''
+          if old in s:
+            s = s.replace(old, new, 1)
+
+          old = '''      var local = languageFromPath() || storedLanguage();
+      if (local && rawPreferred !== local && typeof window.AN.updateProfile === "function") {
+        await window.AN.updateProfile({ preferred_language: local });
+      } else if (!local && preferred) {
+        setLanguage(preferred, { persistProfile: false });
+        navigateToLanguage(preferred, true);
+      }'''
+          new = '''      // Profile preference is remembered, but it must never auto-translate the Bangla source route.
+      // Only an explicit locale URL such as /en/ or /ja/ may override Bangla on page load.
+      var local = languageFromPath();
+      if (local && rawPreferred !== local && typeof window.AN.updateProfile === "function") {
+        await window.AN.updateProfile({ preferred_language: local });
+      }'''
+          if old in s:
+            s = s.replace(old, new, 1)
+
+          s = s.replace(
+            '    translateAnnotated(document);\n    if (currentLanguage !== DEFAULT_LANGUAGE || languageFromPath()) {',
+            '    if (currentLanguage !== DEFAULT_LANGUAGE) translateAnnotated(document);\n    if (currentLanguage !== DEFAULT_LANGUAGE || languageFromPath()) {',
+            1
+          )
+          p.write_text(s, encoding='utf-8')
+
+          p = Path('assets/js/i18n-content.js')
+          s = p.read_text(encoding='utf-8')
+
+          s = re.sub(
+            r'''    if \(language === "bn"\) \{\n      if \(/\[A-Za-z\]/\.test\(text\)\) return true;\n      var nonBangla = text\.replace\(/\[[^\n]+?\]/g, ""\)\.replace\(/\[[^\n]+?\]/gu, ""\);\n      return containsLetters\(nonBangla\);\n    \}''',
+            '    // Bangla is the native/source language. Never translate it at runtime.\n    if (language === "bn") return false;',
+            s,
+            count=1
+          )
+
+          marker = '''  async function sync(blocking) {
+    var language = window.AponarI18n.getLanguage(), serial = ++requestSerial;
+    activeLanguage = language;
+    if (blocking !== false) restoreCaptured();
+    else captureOriginals(document.documentElement);'''
+          replacement = marker + '''
+    // Bangla is already the source HTML: no scan, loading overlay, cache lookup, or translation API.
+    if (language === "bn") {
+      clearPending();
+      hideStatus();
+      return;
+    }'''
+          if marker in s and 'Bangla is already the source HTML' not in s:
+            s = s.replace(marker, replacement, 1)
+
+          s = re.sub(r'var RUNTIME_VERSION = "[^"]+";', 'var RUNTIME_VERSION = "20260902.2";', s, count=1)
+          s = re.sub(r'var CACHE_VERSION = "[^"]+";', 'var CACHE_VERSION = "20260902.2";', s, count=1)
+          p.write_text(s, encoding='utf-8')
+          PY
+
+          node --check assets/js/i18n.js
+          node --check assets/js/i18n-content.js
+          grep -F 'return languageFromPath() || DEFAULT_LANGUAGE;' assets/js/i18n.js
+          grep -F 'if (language === "bn") return false;' assets/js/i18n-content.js
+          grep -F 'Bangla is already the source HTML' assets/js/i18n-content.js
+
+      - name: Persist Bangla default fix
+        run: |
+          if git diff --quiet -- assets/js/i18n.js assets/js/i18n-content.js; then
+            echo "Bangla default fix already present"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add assets/js/i18n.js assets/js/i18n-content.js
+            git commit -m "Make Bangla the instant default language"
+            git push
+          fi
 
       - name: Setup Node.js
         uses: actions/setup-node@v7
