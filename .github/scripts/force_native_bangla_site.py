@@ -152,6 +152,8 @@ def patch_build_and_checks() -> list[str]:
     native_guard = marker + '''
     native_locale_errors: list[str] = []
     for page in pages:
+        if page.name.startswith("google"):
+            continue
         rel_path = page.relative_to(site)
         if rel_path.parts and rel_path.parts[0] in SUPPORTED[1:]:
             continue
