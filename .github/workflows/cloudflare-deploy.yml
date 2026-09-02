@@ -25,7 +25,18 @@ jobs:
           fetch-depth: 0
 
       - name: Enforce native Bangla across the whole site
-        run: python3 .github/scripts/force_native_bangla_site.py
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p = Path('.github/scripts/force_native_bangla_site.py')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace(
+              '        if any(part in EXCLUDED_DIRS for part in rel.parts):',
+              '        if path.name.startswith("google") or any(part in EXCLUDED_DIRS for part in rel.parts):'
+          )
+          p.write_text(s, encoding='utf-8', newline='\n')
+          PY
+          python3 .github/scripts/force_native_bangla_site.py
 
       - name: Verify Bangla runtime guards
         run: |
