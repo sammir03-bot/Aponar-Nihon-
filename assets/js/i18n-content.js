@@ -3,8 +3,8 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260902.3";
-  var CACHE_VERSION = "20260902.3";
+  var RUNTIME_VERSION = "20260902.5";
+  var CACHE_VERSION = "20260902.5";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + CACHE_VERSION;
   var TRANSLATABLE_ATTRIBUTES = [
@@ -441,7 +441,7 @@
     refreshTimer = window.setTimeout(refreshWhenReady, 90);
   }
   function observeDynamicContent() {
-    if (typeof MutationObserver === "undefined" || !document.documentElement) return;
+    if (observer || typeof MutationObserver === "undefined" || !document.documentElement) return;
     observer = new MutationObserver(function (mutations) {
       if (applying) return;
       var meaningful = false;
@@ -488,13 +488,27 @@
     });
   }
 
-  captureOriginals(document.documentElement);
+  if (window.AponarI18n.getLanguage() !== "bn") captureOriginals(document.documentElement);
   window.AponarI18nContent = {
     pageKey: pageKey, reload: function () { return sync(true); }, restore: restoreCaptured, translateText: translateText,
     alert: function (message) { return localizedDialog(message, false); }, confirm: function (message) { return localizedDialog(message, true); },
     attributes: TRANSLATABLE_ATTRIBUTES.slice(), runtimeVersion: RUNTIME_VERSION
   };
   window.alert = function (message) { window.AponarI18nContent.alert(message); };
-  document.addEventListener("DOMContentLoaded", function () { captureOriginals(document.documentElement); observeDynamicContent(); sync(true); });
-  window.addEventListener("aponar:languagechange", function () { window.requestAnimationFrame(function () { sync(true); }); });
+
+  function startRuntime(blocking) {
+    if (window.AponarI18n.getLanguage() === "bn") {
+      clearPending();
+      hideStatus();
+      return;
+    }
+    captureOriginals(document.documentElement);
+    observeDynamicContent();
+    sync(blocking);
+  }
+
+  document.addEventListener("DOMContentLoaded", function () { startRuntime(true); });
+  window.addEventListener("aponar:languagechange", function () {
+    window.requestAnimationFrame(function () { startRuntime(true); });
+  });
 })();

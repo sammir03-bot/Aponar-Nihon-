@@ -43,7 +43,7 @@ def normalize_source_html() -> int:
     changed = 0
     for path in sorted(ROOT.rglob("*.html")):
         rel = path.relative_to(ROOT)
-        if any(part in EXCLUDED_DIRS for part in rel.parts):
+        if path.name.startswith("google") or any(part in EXCLUDED_DIRS for part in rel.parts):
             continue
         if rel.parts and rel.parts[0] in SUPPORTED_LOCALES:
             continue
@@ -220,7 +220,7 @@ def verify() -> None:
     total = 0
     for path in sorted(ROOT.rglob("*.html")):
         rel = path.relative_to(ROOT)
-        if any(part in EXCLUDED_DIRS for part in rel.parts):
+        if path.name.startswith("google") or any(part in EXCLUDED_DIRS for part in rel.parts):
             continue
         if rel.parts and rel.parts[0] in SUPPORTED_LOCALES:
             continue

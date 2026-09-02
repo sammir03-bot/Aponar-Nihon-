@@ -345,6 +345,11 @@ def build_localized_pages(root: Path) -> tuple[int, int, int]:
     page_by_key: dict[str, Path] = {}
     for page in base_pages:
         key = page_key(page, root)
+        # Every native/base document is explicitly Bangla. Locale copies override this below.
+        source_document = page.read_text(encoding="utf-8")
+        native_document = _set_document_locale(source_document, DEFAULT_LANGUAGE, key)
+        if native_document != source_document:
+            page.write_text(native_document, encoding="utf-8", newline="\n")
         if key in page_by_key:
             raise RuntimeError(f"Duplicate i18n page key: {key}")
         page_by_key[key] = page

@@ -62,7 +62,7 @@ def main() -> int:
         "translation_coverage_incomplete",
         "current.length >= 12",
         "Math.min(6, chunks.length)",
-        'CACHE_VERSION = "20260901.8"',
+        'CACHE_VERSION = "20260902.5"',
         "dictionaryRequest",
         "preserveBrandNames",
         "data-aponar-i18n-pending",
@@ -110,8 +110,8 @@ def main() -> int:
     required = (
         "/assets/css/i18n.css?v=20260901.2",
         "/assets/css/home-brand.css?v=20260901.2",
-        "/assets/js/i18n.js?v=20260901.3",
-        "/assets/js/i18n-content.js?v=20260901.9",
+        "/assets/js/i18n.js?v=20260902.5",
+        "/assets/js/i18n-content.js?v=20260902.5",
     )
     checked = 0
     missing: list[str] = []
@@ -127,6 +127,20 @@ def main() -> int:
     if missing:
         sample = ", ".join(missing[:12])
         raise SystemExit(f"Multilingual assets missing from {len(missing)} pages: {sample}")
+
+    native_locale_errors: list[str] = []
+    for page in pages:
+        rel_path = page.relative_to(site)
+        if rel_path.parts and rel_path.parts[0] in SUPPORTED[1:]:
+            continue
+        html = page.read_text(encoding="utf-8", errors="ignore")
+        if 'lang="bn"' not in html or 'data-language-preset="bn"' not in html:
+            native_locale_errors.append(rel_path.as_posix())
+    if native_locale_errors:
+        sample = ", ".join(native_locale_errors[:12])
+        raise SystemExit(
+            f"Native HTML must be Bangla by default; invalid pages: {sample}"
+        )
 
     if localized_route_for_page(site / "n3-grammar.html", site).as_posix() != "n3/grammar":
         raise SystemExit("Localized route contract is broken for /<language>/n3/grammar/")
