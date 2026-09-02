@@ -196,7 +196,8 @@
   }
 
   function readLanguage() {
-    return languageFromPath() || storedLanguage() || DEFAULT_LANGUAGE;
+    // Bangla is the source language. Only an explicit locale URL may override it.
+    return languageFromPath() || DEFAULT_LANGUAGE;
   }
 
   function rememberLanguage(language) {
@@ -287,12 +288,11 @@
       var rawPreferred = typeof profile.preferred_language === "string" ? profile.preferred_language.trim() : "";
       var preferred = normalizeLanguage(rawPreferred);
       mountProfileLanguageSelect(preferred);
-      var local = languageFromPath() || storedLanguage();
+      // Remember profile preferences, but never auto-translate the native Bangla root.
+      // Only /en/, /ja/, or another explicit locale path is authoritative on page load.
+      var local = languageFromPath();
       if (local && rawPreferred !== local && typeof window.AN.updateProfile === "function") {
         await window.AN.updateProfile({ preferred_language: local });
-      } else if (!local && preferred) {
-        setLanguage(preferred, { persistProfile: false });
-        navigateToLanguage(preferred, true);
       }
     } catch (_error) {
       // Authentication/profile access is optional; device persistence still works.
@@ -479,7 +479,7 @@
   document.addEventListener("DOMContentLoaded", function () {
     mountPicker();
     mountProfileLanguageSelect(storedLanguage() || currentLanguage);
-    translateAnnotated(document);
+    if (currentLanguage !== DEFAULT_LANGUAGE) translateAnnotated(document);
     if (currentLanguage !== DEFAULT_LANGUAGE || languageFromPath()) {
       window.setTimeout(function () { navigateToLanguage(currentLanguage, true); }, 0);
     }

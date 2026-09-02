@@ -3,8 +3,8 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260901.9";
-  var CACHE_VERSION = "20260901.8";
+  var RUNTIME_VERSION = "20260902.3";
+  var CACHE_VERSION = "20260902.3";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + CACHE_VERSION;
   var TRANSLATABLE_ATTRIBUTES = [
@@ -89,11 +89,8 @@
       var nonEnglish = text.replace(/[\u3040-\u30ff\u3400-\u9fff]/g, "").replace(/[A-Za-z\d\s\p{P}\p{S}]/gu, "");
       return containsLetters(nonEnglish);
     }
-    if (language === "bn") {
-      if (/[A-Za-z]/.test(text)) return true;
-      var nonBangla = text.replace(/[\u0980-\u09ff\u3040-\u30ff\u3400-\u9fff]/g, "").replace(/[\d\s\p{P}\p{S}]/gu, "");
-      return containsLetters(nonBangla);
-    }
+    // Bangla is the native/source language. Never translate it at runtime.
+    if (language === "bn") return false;
     if (language === "ja") return /[A-Za-z\u0980-\u09ff]/.test(text) || !isJapaneseOnly(text);
     return /[A-Za-z\u0980-\u09ff]/.test(text);
   }
@@ -392,6 +389,12 @@
     activeLanguage = language;
     if (blocking !== false) restoreCaptured();
     else captureOriginals(document.documentElement);
+    // Bangla is already the source HTML: no scan, loading overlay, cache lookup, or API request.
+    if (language === "bn") {
+      clearPending();
+      hideStatus();
+      return;
+    }
     var items = descriptors(language), sources = uniqueSources(items);
     if (!languageTables.has(language)) languageTables.set(language, new Map());
     translationTable = languageTables.get(language);
