@@ -213,8 +213,10 @@
   }
 
   function isHomeRoute() {
-    return normalizedRoute(window.location.pathname) === "/"
-      || !!(document.body && document.body.dataset.page === "home");
+    var route = normalizedRoute(window.location.pathname);
+    if (route === "/") return true;
+    var parts = route.replace(/^\/+|\/+$/g, "").split("/").filter(Boolean);
+    return parts.length === 1 && !!normalizeLanguage(parts[0]);
   }
 
   function alternatePath(language) {

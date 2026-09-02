@@ -115,8 +115,8 @@ def main() -> int:
     required = (
         "/assets/css/i18n.css?v=20260901.2",
         "/assets/css/home-brand.css?v=20260901.2",
-        "/assets/js/i18n.js?v=20260902.6",
-        "/assets/js/i18n-content.js?v=20260902.6",
+        "/assets/js/i18n.js?v=20260902.7",
+        "/assets/js/i18n-content.js?v=20260902.7",
     )
     checked = 0
     missing: list[str] = []

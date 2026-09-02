@@ -12,7 +12,7 @@ EXCLUDED_DIRS = {
     "playwright-report", "test-results",
 }
 HTML_TAG_RE = re.compile(r"<html\b([^>]*)>", re.IGNORECASE)
-VERSION = "20260902.6"
+VERSION = "20260902.7"
 CACHE_VERSION = "20260902.5"
 
 
