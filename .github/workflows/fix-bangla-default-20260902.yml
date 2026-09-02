@@ -1,0 +1,119 @@
+name: Fix Bangla default startup
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix-bangla-default-20260902.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Make Bangla the true no-translation default
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          # 1) Root/non-localized routes must always start in Bangla.
+          p = Path('assets/js/i18n.js')
+          s = p.read_text(encoding='utf-8')
+
+          old = '  function readLanguage() {\n    return languageFromPath() || storedLanguage() || DEFAULT_LANGUAGE;\n  }'
+          new = '  function readLanguage() {\n    // The source site is Bangla. Only an explicit locale URL may override it.\n    // A previously saved/profile language must never translate or redirect the Bangla root.\n    return languageFromPath() || DEFAULT_LANGUAGE;\n  }'
+          if old not in s:
+            raise SystemExit('readLanguage() pattern not found')
+          s = s.replace(old, new, 1)
+
+          old = '''      var local = languageFromPath() || storedLanguage();
+      if (local && rawPreferred !== local && typeof window.AN.updateProfile === "function") {
+        await window.AN.updateProfile({ preferred_language: local });
+      } else if (!local && preferred) {
+        setLanguage(preferred, { persistProfile: false });
+        navigateToLanguage(preferred, true);
+      }'''
+          new = '''      // Profile preference is remembered, but it must not auto-translate the Bangla source route.
+      // Only an explicit locale path (for example /en/ or /ja/) is authoritative on page load.
+      var local = languageFromPath();
+      if (local && rawPreferred !== local && typeof window.AN.updateProfile === "function") {
+        await window.AN.updateProfile({ preferred_language: local });
+      }'''
+          if old not in s:
+            raise SystemExit('profile auto-language block not found')
+          s = s.replace(old, new, 1)
+
+          old = '    translateAnnotated(document);\n    if (currentLanguage !== DEFAULT_LANGUAGE || languageFromPath()) {'
+          new = '    if (currentLanguage !== DEFAULT_LANGUAGE) translateAnnotated(document);\n    if (currentLanguage !== DEFAULT_LANGUAGE || languageFromPath()) {'
+          if old not in s:
+            raise SystemExit('DOMContentLoaded translation pattern not found')
+          s = s.replace(old, new, 1)
+          p.write_text(s, encoding='utf-8')
+
+          # 2) Full-page runtime translation must be completely bypassed for Bangla.
+          # Bangla is the source language, so scanning/fetching translations for it only adds delay.
+          p = Path('assets/js/i18n-content.js')
+          s = p.read_text(encoding='utf-8')
+
+          old = '''    if (language === "bn") {
+      if (/[A-Za-z]/.test(text)) return true;
+      var nonBangla = text.replace(/[\\u0980-\\u09ff\\u3040-\\u30ff\\u3400-\\u9fff]/g, "").replace(/[\\d\\s\\p{P}\\p{S}]/gu, "");
+      return containsLetters(nonBangla);
+    }'''
+          new = '''    // Bangla is the native/source language of the website. Never send it through
+    // the runtime translator; render the original page immediately.
+    if (language === "bn") return false;'''
+          if old not in s:
+            raise SystemExit('Bangla needsTranslation block not found')
+          s = s.replace(old, new, 1)
+
+          old = '''  async function sync(blocking) {
+    var language = window.AponarI18n.getLanguage(), serial = ++requestSerial;
+    activeLanguage = language;
+    if (blocking !== false) restoreCaptured();
+    else captureOriginals(document.documentElement);'''
+          new = '''  async function sync(blocking) {
+    var language = window.AponarI18n.getLanguage(), serial = ++requestSerial;
+    activeLanguage = language;
+    if (blocking !== false) restoreCaptured();
+    else captureOriginals(document.documentElement);
+    // Bangla is already the source HTML: no page scan, loading overlay, cache lookup or API request.
+    if (language === "bn") {
+      clearPending();
+      hideStatus();
+      return;
+    }'''
+          if old not in s:
+            raise SystemExit('sync() startup block not found')
+          s = s.replace(old, new, 1)
+
+          s = s.replace('var RUNTIME_VERSION = "20260901.9";', 'var RUNTIME_VERSION = "20260902.1";', 1)
+          s = s.replace('var CACHE_VERSION = "20260901.8";', 'var CACHE_VERSION = "20260902.1";', 1)
+          p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Verify JavaScript syntax and regression guards
+        run: |
+          node --check assets/js/i18n.js
+          node --check assets/js/i18n-content.js
+          grep -F 'return languageFromPath() || DEFAULT_LANGUAGE;' assets/js/i18n.js
+          grep -F 'if (language === "bn") return false;' assets/js/i18n-content.js
+          grep -F 'if (language === "bn") {' assets/js/i18n-content.js
+
+      - name: Commit fix
+        run: |
+          if git diff --quiet; then
+            echo "No changes needed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/js/i18n.js assets/js/i18n-content.js
+          git commit -m "Make Bangla the instant default language"
+          git push
