@@ -3,10 +3,11 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260902.5";
+  var RUNTIME_VERSION = "20260902.6";
   var CACHE_VERSION = "20260902.5";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + CACHE_VERSION;
+  var MAX_BLOCKING_MS = 1800;
   var TRANSLATABLE_ATTRIBUTES = [
     "title", "placeholder", "aria-label", "aria-description", "alt", "label",
     "data-label", "data-title", "data-empty", "data-message", "data-success", "data-error"
@@ -204,7 +205,7 @@
   function preserveWhitespace(raw, target) {
     return (raw.match(/^\s*/) || [""])[0] + String(target || "").trim() + (raw.match(/\s*$/) || [""])[0];
   }
-  function applyTranslations(items) {
+  function applyTranslations(items, complete) {
     disconnectObserver(); applying = true;
     try {
       items.forEach(function (item) {
@@ -214,7 +215,7 @@
         if (item.kind === "text") item.node.nodeValue = preserveWhitespace(item.raw, target);
         else item.node.setAttribute(item.attribute, target.trim());
       });
-      clearPending();
+      if (complete !== false) clearPending();
     } finally { applying = false; connectObserver(); }
   }
 
@@ -386,6 +387,8 @@
 
   async function sync(blocking) {
     var language = window.AponarI18n.getLanguage(), serial = ++requestSerial;
+    var released = blocking === false;
+    var releaseTimer = 0;
     activeLanguage = language;
     if (blocking !== false) restoreCaptured();
     else captureOriginals(document.documentElement);
@@ -399,7 +402,14 @@
     if (!languageTables.has(language)) languageTables.set(language, new Map());
     translationTable = languageTables.get(language);
     if (!sources.length) { clearPending(); hideStatus(); return; }
-    if (blocking !== false) showStatus(language, false);
+    if (blocking !== false) {
+      showStatus(language, false);
+      releaseTimer = window.setTimeout(function () {
+        if (serial !== requestSerial || language !== activeLanguage) return;
+        released = true;
+        hideStatus();
+      }, MAX_BLOCKING_MS);
+    }
     try {
       var loaded = await Promise.all([loadReviewedPack(language), readSnapshot(language, sources), readDictionary(language)]);
       if (serial !== requestSerial || language !== activeLanguage) return;
@@ -407,17 +417,23 @@
       loaded[1].forEach(function (target, source) { translationTable.set(source, preserveBrandNames(source, target)); });
       loaded[0].forEach(function (target, source) { translationTable.set(source, preserveBrandNames(source, target)); });
       sources.forEach(function (source) { if (isExactBrandName(source)) translationTable.set(source, source); });
+      applyTranslations(items, false);
       await translateMissing(language, sources, function (done, total) {
-        if (blocking !== false && total > 1) showStatus(language, false, languageMessages(language).detail + " " + done + "/" + total);
+        applyTranslations(items, false);
+        if (!released && blocking !== false && total > 1) showStatus(language, false, languageMessages(language).detail + " " + done + "/" + total);
       });
       if (serial !== requestSerial || language !== activeLanguage) return;
       if (runtimeEnabled && sources.some(function (source) { return !translationTable.has(source); })) throw new Error("translation_coverage_incomplete");
-      applyTranslations(items);
+      applyTranslations(items, true);
+      window.clearTimeout(releaseTimer);
       if (serial === requestSerial) hideStatus();
       Promise.all([writeSnapshot(language, sources), writeDictionary(language)]).catch(function () { /* Cache writes never block the UI. */ });
     } catch (error) {
       if (serial !== requestSerial) return;
-      console.error("Aponar Nihon full-page translation failed:", error); showStatus(language, true);
+      window.clearTimeout(releaseTimer);
+      console.error("Aponar Nihon full-page translation failed:", error);
+      if (!released) showStatus(language, true);
+      else hideStatus();
     }
   }
 
@@ -498,6 +514,7 @@
 
   function startRuntime(blocking) {
     if (window.AponarI18n.getLanguage() === "bn") {
+      restoreCaptured();
       clearPending();
       hideStatus();
       return;
@@ -509,6 +526,6 @@
 
   document.addEventListener("DOMContentLoaded", function () { startRuntime(true); });
   window.addEventListener("aponar:languagechange", function () {
-    window.requestAnimationFrame(function () { startRuntime(true); });
+    window.requestAnimationFrame(function () { startRuntime(false); });
   });
 })();

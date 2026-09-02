@@ -41,8 +41,10 @@ def main() -> int:
 
     if "mountProfileLanguageSelect" not in source:
         raise SystemExit("Profile language preference must use the shared language registry")
-    if 'if (!isHomeRoute()) return;' in source:
-        raise SystemExit("The language picker must be available on every page")
+    if 'if (!isHomeRoute()) return;' not in source:
+        raise SystemExit("The language picker must only be mounted on the home page")
+    if 'return languageFromPath() || storedLanguage() || DEFAULT_LANGUAGE;' not in source:
+        raise SystemExit("A saved language choice must persist across every page")
 
     required_runtime_contracts = (
         '"placeholder"',
@@ -66,6 +68,9 @@ def main() -> int:
         "dictionaryRequest",
         "preserveBrandNames",
         "data-aponar-i18n-pending",
+        'if (language === "bn") return false;',
+        "MAX_BLOCKING_MS = 1800",
+        "applyTranslations(items, false)",
     )
     missing_contracts = [value for value in required_runtime_contracts if value not in content_source]
     if missing_contracts:
@@ -88,11 +93,11 @@ def main() -> int:
         "I18N_RATE_LIMITER",
         "defaultWorkerCache",
         "callGeminiTranslation",
+        "i18n_gemini_fast_path_failed",
         "callNmtTranslation",
         'TRANSLATION_WORKERS_AI_MODEL = "@cf/meta/m2m100-1.2b"',
         'DEFAULT_MODEL = "gemini-3.1-flash-lite"',
         ":generateContent",
-        "i18n_translation_fallback_failed",
         "translationHasLegacyProse",
         "same_language_cleanup_required",
         "incomplete_nmt_translation",
@@ -110,8 +115,8 @@ def main() -> int:
     required = (
         "/assets/css/i18n.css?v=20260901.2",
         "/assets/css/home-brand.css?v=20260901.2",
-        "/assets/js/i18n.js?v=20260902.5",
-        "/assets/js/i18n-content.js?v=20260902.5",
+        "/assets/js/i18n.js?v=20260902.6",
+        "/assets/js/i18n-content.js?v=20260902.6",
     )
     checked = 0
     missing: list[str] = []

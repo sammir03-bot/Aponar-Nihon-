@@ -12,10 +12,12 @@ test('Bangla is default and language choice persists', async ({ page }) => {
   await expect(page.locator(`${languageButton} [data-language-code]`)).toHaveText('BN');
 
   await page.locator(languageButton).click();
+  const switchedAt = Date.now();
   await page.locator('[data-language-option="en"]').click();
 
   await expect(page.locator('html')).toHaveAttribute('lang', 'en');
   await expect(page.locator('#all-sections-title')).toHaveText('All important sections');
+  expect(Date.now() - switchedAt).toBeLessThan(2000);
   await expect(page.locator(`${languageButton} [data-language-code]`)).toHaveText('EN');
   await expect.poll(() => page.evaluate(() => localStorage.getItem('aponarNihonLanguage'))).toBe('en');
 
@@ -63,21 +65,43 @@ test('legacy profile language labels normalize to locale codes', async ({ page }
   await expect.poll(() => page.evaluate(() => localStorage.getItem('aponarNihonLanguage'))).toBe('vi');
 });
 
-test('the language picker is available sitewide and the saved choice applies everywhere', async ({ page }) => {
+test('the language picker stays on home while the saved choice applies everywhere', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator(languageButton)).toBeVisible();
   await page.locator(languageButton).click();
   await page.locator('[data-language-option="vi"]').click();
 
   await page.goto('/about.html');
-  await expect(page.locator(languageButton)).toBeVisible();
+  await expect(page.locator(languageButton)).toHaveCount(0);
   await expect(page.locator('html')).toHaveAttribute('lang', 'vi');
   await expect(page.locator('h1')).toHaveText('Về chúng tôi');
   await expect(page.getByText('আপনার নিহোন', { exact: true }).first()).toBeVisible();
 
   await page.goto('/tutor-section.html');
-  await expect(page.locator(languageButton)).toBeVisible();
+  await expect(page.locator(languageButton)).toHaveCount(0);
   await expect(page.locator('html')).toHaveAttribute('lang', 'vi');
+
+  await page.goto('/');
+  await expect(page.locator(languageButton)).toBeVisible();
+  await expect(page.locator(`${languageButton} [data-language-code]`)).toHaveText('VI');
+});
+
+test('Bangla leaves the original page copy untouched and makes no translation request', async ({ page }) => {
+  let translationRequests = 0;
+  await page.addInitScript(() => {
+    window.__APONAR_I18N_RUNTIME__ = true;
+    localStorage.setItem('aponarNihonLanguage', 'bn');
+  });
+  await page.route('**/api/i18n/translate', async route => {
+    translationRequests += 1;
+    await route.abort();
+  });
+
+  await page.goto('/privacy-policy.html');
+  await expect(page.locator('html')).toHaveAttribute('lang', 'bn');
+  await expect(page.locator('h1')).toHaveText('Privacy Policy / গোপনীয়তা নীতি');
+  await expect(page.locator(languageButton)).toHaveCount(0);
+  expect(translationRequests).toBe(0);
 });
 
 test('header layout stays stable when Urdu is selected', async ({ page }) => {
@@ -219,8 +243,7 @@ test('runtime localization covers title, attributes, dynamic text, and dialogs',
   await page.locator('.aponar-i18n-dialog [data-dialog-ok]').click();
   await expect(page.locator('.aponar-i18n-dialog')).toHaveCount(0);
 
-  await page.locator(languageButton).click();
-  await page.locator('[data-language-option="ja"]').click();
+  await page.evaluate(() => window.AponarI18n.setLanguage('ja'));
   await expect(page.locator('html')).toHaveAttribute('lang', 'ja');
   await expect(fixture.locator('h2')).toHaveText('動的テキスト');
   await expect(fixture.locator('[data-i18n="brand.name"]')).toHaveText('আপনার নিহোন');
@@ -237,7 +260,7 @@ test('selecting a reviewed language opens its canonical locale route', async ({ 
   await page.goto('/n5.html');
 
   await page.waitForURL('**/fil/n5/');
-  await expect(page.locator(languageButton)).toBeVisible();
+  await expect(page.locator(languageButton)).toHaveCount(0);
   await expect(page.locator('html')).toHaveAttribute('lang', 'fil');
   await expect(page.locator('.lh-hero h1')).toContainText('Bumuo ng matibay na pundasyon sa Japanese');
   await expect(page.locator('.lh-brand-copy small')).toHaveText('BEGINNER · 日本語能力試験');

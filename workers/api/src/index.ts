@@ -762,7 +762,7 @@ async function callGeminiTranslation(
       contents: [{ role: "user", parts: [{ text: translationInstruction(input) }] }],
       generationConfig: { responseMimeType: "application/json" }
     }),
-    signal: AbortSignal.timeout(75_000)
+    signal: AbortSignal.timeout(12_000)
   });
 
   const rawResponse = await readBoundedStream(response.body, MAX_UPSTREAM_BYTES);
@@ -831,15 +831,28 @@ async function handleTranslation(
   let translations: TranslationItem[] | null = null;
   let usedModel = "";
   try {
-    translations = await callNmtTranslation(env, input);
-    usedModel = TRANSLATION_WORKERS_AI_MODEL;
+    const fastPath = await callGeminiTranslation(env, input);
+    translations = fastPath.translations;
+    usedModel = `gemini:${fastPath.model}`;
   } catch (error) {
     console.warn(JSON.stringify({
-      event: "i18n_nmt_failed",
+      event: "i18n_gemini_fast_path_failed",
       request_id: rid,
-      model: TRANSLATION_WORKERS_AI_MODEL,
       reason: error instanceof HttpError ? error.code : "request_failed"
     }));
+  }
+  if (!translations) {
+    try {
+      translations = await callNmtTranslation(env, input);
+      usedModel = TRANSLATION_WORKERS_AI_MODEL;
+    } catch (error) {
+      console.warn(JSON.stringify({
+        event: "i18n_nmt_failed",
+        request_id: rid,
+        model: TRANSLATION_WORKERS_AI_MODEL,
+        reason: error instanceof HttpError ? error.code : "request_failed"
+      }));
+    }
   }
   for (const model of translations ? [] : [SECONDARY_WORKERS_AI_MODEL, PRIMARY_WORKERS_AI_MODEL] as const) {
     try {
@@ -851,19 +864,6 @@ async function handleTranslation(
         event: "i18n_model_failed",
         request_id: rid,
         model,
-        reason: error instanceof HttpError ? error.code : "request_failed"
-      }));
-    }
-  }
-  if (!translations) {
-    try {
-      const fallback = await callGeminiTranslation(env, input);
-      translations = fallback.translations;
-      usedModel = `gemini:${fallback.model}`;
-    } catch (error) {
-      console.warn(JSON.stringify({
-        event: "i18n_translation_fallback_failed",
-        request_id: rid,
         reason: error instanceof HttpError ? error.code : "request_failed"
       }));
     }

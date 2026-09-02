@@ -57,7 +57,8 @@ jobs:
         run: |
           node --check assets/js/i18n.js
           node --check assets/js/i18n-content.js
-          grep -F 'return languageFromPath() || DEFAULT_LANGUAGE;' assets/js/i18n.js
+          grep -F 'return languageFromPath() || storedLanguage() || DEFAULT_LANGUAGE;' assets/js/i18n.js
+          grep -F 'if (!isHomeRoute()) return;' assets/js/i18n.js
           grep -F 'if (language === "bn") return false;' assets/js/i18n-content.js
           grep -F 'if (window.AponarI18n.getLanguage() === "bn")' assets/js/i18n-content.js
           grep -F 'data-language-preset="bn"' index.html

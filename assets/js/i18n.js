@@ -180,7 +180,9 @@
 
   function languageFromPath() {
     var preset = document.documentElement.dataset.languagePreset || "";
-    if (LANGUAGES[preset]) return preset;
+    // Native HTML is tagged as Bangla, but an explicit saved choice still applies.
+    // Only a non-Bangla locale preset or an actual locale URL overrides storage.
+    if (preset !== DEFAULT_LANGUAGE && LANGUAGES[preset]) return preset;
     var first = (window.location.pathname || "/").split("/").filter(Boolean)[0] || "";
     try { first = decodeURIComponent(first); } catch (_error) { /* Keep the raw segment. */ }
     return LANGUAGES[first] ? first : "";
@@ -196,8 +198,7 @@
   }
 
   function readLanguage() {
-    // Bangla is the source language. Only an explicit locale URL may override it.
-    return languageFromPath() || DEFAULT_LANGUAGE;
+    return languageFromPath() || storedLanguage() || DEFAULT_LANGUAGE;
   }
 
   function rememberLanguage(language) {
@@ -212,7 +213,8 @@
   }
 
   function isHomeRoute() {
-    return normalizedRoute(window.location.pathname) === "/";
+    return normalizedRoute(window.location.pathname) === "/"
+      || !!(document.body && document.body.dataset.page === "home");
   }
 
   function alternatePath(language) {
@@ -288,11 +290,12 @@
       var rawPreferred = typeof profile.preferred_language === "string" ? profile.preferred_language.trim() : "";
       var preferred = normalizeLanguage(rawPreferred);
       mountProfileLanguageSelect(preferred);
-      // Remember profile preferences, but never auto-translate the native Bangla root.
-      // Only /en/, /ja/, or another explicit locale path is authoritative on page load.
-      var local = languageFromPath();
+      var local = languageFromPath() || storedLanguage();
       if (local && rawPreferred !== local && typeof window.AN.updateProfile === "function") {
         await window.AN.updateProfile({ preferred_language: local });
+      } else if (!local && preferred) {
+        setLanguage(preferred, { persistProfile: false });
+        navigateToLanguage(preferred, true);
       }
     } catch (_error) {
       // Authentication/profile access is optional; device persistence still works.
@@ -391,6 +394,7 @@
   }
 
   function mountPicker() {
+    if (!isHomeRoute()) return;
     if (document.getElementById("aponarLanguageButton")) return;
 
     var button = document.createElement("button");

@@ -10,37 +10,37 @@ def replace_once(text: str, old: str, new: str, label: str) -> str:
     return text.replace(old, new, 1)
 
 
-# Root/non-localized pages are native Bangla. Never let a saved/profile
-# preference translate or redirect them during startup.
+# Root/non-localized pages are native Bangla for first-time visitors. A language
+# explicitly selected on Home remains authoritative across later page loads.
 p = Path("assets/js/i18n.js")
 s = p.read_text(encoding="utf-8")
 
 s = replace_once(
     s,
     """  function readLanguage() {
-    return languageFromPath() || storedLanguage() || DEFAULT_LANGUAGE;
-  }""",
-    """  function readLanguage() {
     // Bangla is the source language. Only an explicit locale URL may override it.
     return languageFromPath() || DEFAULT_LANGUAGE;
+  }""",
+    """  function readLanguage() {
+    return languageFromPath() || storedLanguage() || DEFAULT_LANGUAGE;
   }""",
     "readLanguage",
 )
 
 s = replace_once(
     s,
+    """      // Remember profile preferences, but never auto-translate the native Bangla root.
+      // Only /en/, /ja/, or another explicit locale path is authoritative on page load.
+      var local = languageFromPath();
+      if (local && rawPreferred !== local && typeof window.AN.updateProfile === \"function\") {
+        await window.AN.updateProfile({ preferred_language: local });
+      }""",
     """      var local = languageFromPath() || storedLanguage();
       if (local && rawPreferred !== local && typeof window.AN.updateProfile === \"function\") {
         await window.AN.updateProfile({ preferred_language: local });
       } else if (!local && preferred) {
         setLanguage(preferred, { persistProfile: false });
         navigateToLanguage(preferred, true);
-      }""",
-    """      // Remember profile preferences, but never auto-translate the native Bangla root.
-      // Only /en/, /ja/, or another explicit locale path is authoritative on page load.
-      var local = languageFromPath();
-      if (local && rawPreferred !== local && typeof window.AN.updateProfile === \"function\") {
-        await window.AN.updateProfile({ preferred_language: local });
       }""",
     "profile startup language",
 )
@@ -99,9 +99,9 @@ if "Bangla is already the source HTML" not in s:
         raise SystemExit("sync startup pattern not found")
     s = s.replace(sync_marker, sync_replacement, 1)
 
-s = re.sub(r'var RUNTIME_VERSION = "[^"]+";', 'var RUNTIME_VERSION = "20260902.3";', s, count=1)
-s = re.sub(r'var CACHE_VERSION = "[^"]+";', 'var CACHE_VERSION = "20260902.3";', s, count=1)
+s = re.sub(r'var RUNTIME_VERSION = "[^"]+";', 'var RUNTIME_VERSION = "20260902.6";', s, count=1)
+s = re.sub(r'var CACHE_VERSION = "[^"]+";', 'var CACHE_VERSION = "20260902.5";', s, count=1)
 
 p.write_text(s, encoding="utf-8")
 
-print("Bangla default startup patch applied")
+print("Bangla default and saved language startup patch applied")
