@@ -45,18 +45,8 @@ jobs:
           # Repair the guard already written by the previous normalization run.
           p = Path('tools/check_i18n.py')
           s = p.read_text(encoding='utf-8')
-          old = '''    native_locale_errors: list[str] = []
-          for page in pages:
-              rel_path = page.relative_to(site)
-              if rel_path.parts and rel_path.parts[0] in SUPPORTED[1:]:
-                  continue'''
-          new = '''    native_locale_errors: list[str] = []
-          for page in pages:
-              if page.name.startswith("google"):
-                  continue
-              rel_path = page.relative_to(site)
-              if rel_path.parts and rel_path.parts[0] in SUPPORTED[1:]:
-                  continue'''
+          old = '    native_locale_errors: list[str] = []\n    for page in pages:\n        rel_path = page.relative_to(site)\n        if rel_path.parts and rel_path.parts[0] in SUPPORTED[1:]:\n            continue'
+          new = '    native_locale_errors: list[str] = []\n    for page in pages:\n        if page.name.startswith("google"):\n            continue\n        rel_path = page.relative_to(site)\n        if rel_path.parts and rel_path.parts[0] in SUPPORTED[1:]:\n            continue'
           if old in s:
               s = s.replace(old, new, 1)
           p.write_text(s, encoding='utf-8', newline='\n')
@@ -71,7 +61,13 @@ jobs:
           grep -F 'if (language === "bn") return false;' assets/js/i18n-content.js
           grep -F 'if (window.AponarI18n.getLanguage() === "bn")' assets/js/i18n-content.js
           grep -F 'data-language-preset="bn"' index.html
-          grep -A3 -F 'native_locale_errors' tools/check_i18n.py | grep -F 'page.name.startswith("google")'
+          python3 - <<'PY'
+          from pathlib import Path
+          text = Path('tools/check_i18n.py').read_text(encoding='utf-8')
+          assert 'native_locale_errors' in text
+          block = text.split('native_locale_errors', 1)[1][:300]
+          assert 'page.name.startswith("google")' in block
+          PY
 
       - name: Persist native Bangla normalization
         run: |
