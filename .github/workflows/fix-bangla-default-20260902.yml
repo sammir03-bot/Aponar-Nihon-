@@ -1,5 +1,6 @@
 name: Fix Bangla default startup
 
+# Triggered again after workflow exists on the default branch.
 on:
   push:
     paths:
@@ -57,7 +58,6 @@ jobs:
           p.write_text(s, encoding='utf-8')
 
           # 2) Full-page runtime translation must be completely bypassed for Bangla.
-          # Bangla is the source language, so scanning/fetching translations for it only adds delay.
           p = Path('assets/js/i18n-content.js')
           s = p.read_text(encoding='utf-8')
 
