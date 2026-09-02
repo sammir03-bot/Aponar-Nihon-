@@ -24,26 +24,27 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Apply native Bangla default fix
-        run: python .github/scripts/fix_bangla_default.py
+      - name: Enforce native Bangla across the whole site
+        run: python3 .github/scripts/force_native_bangla_site.py
 
-      - name: Verify language startup
+      - name: Verify Bangla runtime guards
         run: |
           node --check assets/js/i18n.js
           node --check assets/js/i18n-content.js
           grep -F 'return languageFromPath() || DEFAULT_LANGUAGE;' assets/js/i18n.js
           grep -F 'if (language === "bn") return false;' assets/js/i18n-content.js
-          grep -F 'Bangla is already the source HTML' assets/js/i18n-content.js
+          grep -F 'if (window.AponarI18n.getLanguage() === "bn")' assets/js/i18n-content.js
+          grep -F 'data-language-preset="bn"' index.html
 
-      - name: Persist Bangla default fix
+      - name: Persist native Bangla normalization
         run: |
-          if git diff --quiet -- assets/js/i18n.js assets/js/i18n-content.js; then
-            echo "Bangla default fix already present"
+          if git diff --quiet; then
+            echo "Native Bangla defaults already normalized"
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add assets/js/i18n.js assets/js/i18n-content.js
-            git commit -m "Make Bangla the instant default language"
+            git add -A
+            git commit -m "Make every native HTML page Bangla by default"
             git push
           fi
 
