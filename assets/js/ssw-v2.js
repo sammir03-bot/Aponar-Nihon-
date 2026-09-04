@@ -1,1 +1,101 @@
-(()=>{'use strict';const $=(s,r=document)=>r.querySelector(s);const $$=(s,r=document)=>Array.from(r.querySelectorAll(s));const norm=v=>(v||'').toString().trim().toLowerCase();function initFieldSearch(){const input=$('#field-search');const buttons=$$('[data-field-filter]');const cards=$$('[data-field]');if(!input||!cards.length)return;let active='all';const apply=()=>{const q=norm(input.value);cards.forEach(card=>{const type=card.dataset.field||'';const hay=norm(card.textContent);card.hidden=!((active==='all'||type===active)&&(!q||hay.includes(q)));});const count=cards.filter(c=>!c.hidden).length;const out=$('#field-result-count');if(out)out.textContent=`${count}টি ফলাফল`;};input.addEventListener('input',apply);buttons.forEach(btn=>btn.addEventListener('click',()=>{active=btn.dataset.fieldFilter||'all';buttons.forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));apply();}));apply();}function initFaq(){const filters=$$('[data-faq-filter]');const items=$$('[data-faq-category]');filters.forEach(btn=>btn.addEventListener('click',()=>{const active=btn.dataset.faqFilter||'all';filters.forEach(b=>b.setAttribute('aria-pressed',String(b===btn)));items.forEach(item=>{item.hidden=!(active==='all'||(item.dataset.faqCategory||'').split(' ').includes(active));});}));$$('.faq-question').forEach(btn=>btn.addEventListener('click',()=>{const answer=document.getElementById(btn.getAttribute('aria-controls'));if(!answer)return;const open=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!open));answer.hidden=open;}));}function initAnchorFocus(){window.addEventListener('hashchange',()=>{const el=document.getElementById(location.hash.slice(1));if(el){el.setAttribute('tabindex','-1');el.focus({preventScroll:true});setTimeout(()=>el.removeAttribute('tabindex'),700);}});}function initNav(){const nav=$('.site-nav');if(!nav)return;const set=()=>nav.classList.toggle('is-scrolled',scrollY>8);addEventListener('scroll',set,{passive:true});set();}document.addEventListener('DOMContentLoaded',()=>{initFieldSearch();initFaq();initAnchorFocus();initNav();});})();
+(()=>{
+  'use strict';
+
+  const $=(selector,root=document)=>root.querySelector(selector);
+  const $$=(selector,root=document)=>Array.from(root.querySelectorAll(selector));
+  const norm=value=>(value||'').toString().trim().toLowerCase();
+
+  function initFieldSearch(){
+    const input=$('#field-search');
+    const buttons=$$('[data-field-filter]');
+    const cards=$$('[data-field]');
+    if(!input||!cards.length)return;
+
+    let active='all';
+    const apply=()=>{
+      const query=norm(input.value);
+      cards.forEach(card=>{
+        const type=card.dataset.field||'';
+        const matchesType=active==='all'||type===active;
+        const matchesQuery=!query||norm(card.textContent).includes(query);
+        card.hidden=!(matchesType&&matchesQuery);
+      });
+      const count=cards.filter(card=>!card.hidden).length;
+      const output=$('#field-result-count');
+      if(output)output.textContent=`${count}টি ফলাফল`;
+    };
+
+    input.addEventListener('input',apply);
+    buttons.forEach(button=>button.addEventListener('click',()=>{
+      active=button.dataset.fieldFilter||'all';
+      buttons.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+      apply();
+    }));
+    apply();
+  }
+
+  function closeFaq(item){
+    const button=$('.faq-question',item);
+    if(!button)return;
+    const answer=document.getElementById(button.getAttribute('aria-controls'));
+    button.setAttribute('aria-expanded','false');
+    if(answer)answer.hidden=true;
+  }
+
+  function initFaq(){
+    const filters=$$('[data-faq-filter]');
+    const items=$$('[data-faq-category]');
+
+    // Progressive enhancement: answers remain readable when JavaScript is disabled.
+    items.forEach(closeFaq);
+
+    filters.forEach(button=>button.addEventListener('click',()=>{
+      const active=button.dataset.faqFilter||'all';
+      filters.forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
+      items.forEach(item=>{
+        const categories=(item.dataset.faqCategory||'').split(' ').filter(Boolean);
+        const visible=active==='all'||categories.includes(active);
+        item.hidden=!visible;
+        if(!visible)closeFaq(item);
+      });
+    }));
+
+    $$('.faq-question').forEach(button=>button.addEventListener('click',()=>{
+      const answer=document.getElementById(button.getAttribute('aria-controls'));
+      if(!answer)return;
+      const isOpen=button.getAttribute('aria-expanded')==='true';
+      button.setAttribute('aria-expanded',String(!isOpen));
+      answer.hidden=isOpen;
+    }));
+  }
+
+  function focusHashTarget(){
+    if(!location.hash)return;
+    const id=decodeURIComponent(location.hash.slice(1));
+    const element=document.getElementById(id);
+    if(!element)return;
+    element.setAttribute('tabindex','-1');
+    element.focus({preventScroll:true});
+    setTimeout(()=>element.removeAttribute('tabindex'),700);
+  }
+
+  function initAnchorFocus(){
+    window.addEventListener('hashchange',focusHashTarget);
+    if(location.hash)setTimeout(focusHashTarget,0);
+  }
+
+  function initNav(){
+    const nav=$('.site-nav');
+    if(!nav)return;
+    const update=()=>nav.classList.toggle('is-scrolled',window.scrollY>8);
+    window.addEventListener('scroll',update,{passive:true});
+    update();
+  }
+
+  document.addEventListener('DOMContentLoaded',()=>{
+    initFieldSearch();
+    initFaq();
+    initAnchorFocus();
+    initNav();
+  });
+})();
