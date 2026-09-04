@@ -30,6 +30,18 @@
     location.replace("https://app.aponar-nihon.workers.dev"+p+location.search+location.hash);
   })();
   </script>
+  <script>
+  (function(){
+    try{
+      var supported={bn:1,ja:1,en:1,vi:1,ne:1,hi:1,ur:1,my:1,zh:1,si:1,fil:1};
+      var language=(localStorage.getItem('aponarNihonLanguage')||'bn').toLowerCase();
+      if(!supported[language])language='bn';
+      document.documentElement.lang=language;
+      document.documentElement.dir=language==='ur'?'rtl':'ltr';
+      document.documentElement.dataset.language=language;
+    }catch(_){ }
+  })();
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -100,6 +112,7 @@
         </div>
 
         <form id="profileForm" novalidate>
+          <input id="email" type="hidden" aria-hidden="true">
           <fieldset class="profile-section">
             <legend class="sr-only">Personal information</legend>
             <div class="section-head"><span class="section-dot" aria-hidden="true">01</span><div><h3 data-t="personalTitle">ব্যক্তিগত তথ্য</h3><p data-t="personalSub">আপনার মূল পরিচিতি</p></div></div>
@@ -259,7 +272,6 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="/supabase-config.js"></script>
   <script src="/account.js?v=20260817-4"></script>
-  <script src="/assets/js/i18n.js?v=20260901-1"></script>
-  <script src="/assets/js/profile-premium.js?v=20260904-1"></script>
+  <script src="/assets/js/profile-premium.js?v=20260904-2"></script>
 </body>
 </html>
