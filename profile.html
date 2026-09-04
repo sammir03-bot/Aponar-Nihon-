@@ -4,92 +4,262 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#126eae">
+  <meta name="robots" content="noindex,nofollow">
   <title>My Profile | Aponar Nihon</title>
   <link rel="icon" href="/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <style>
-    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#eef7ff 0,#f7fbff 42%,#f4f8fc 100%);color:#173b5e;font-family:'Noto Sans Bengali','Inter',sans-serif;min-height:100vh}.container{width:min(1100px,calc(100% - 24px));margin:auto}
-    .top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(18px);border-bottom:1px solid rgba(45,98,139,.09)}.nav{min-height:72px;display:flex;align-items:center;gap:10px}.brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:#173b5e;min-width:0}.brand img{width:44px;height:44px;object-fit:contain}.brand strong{font:900 16px/1 'Inter',sans-serif;white-space:nowrap}.spacer{flex:1}.nav-btn{height:42px;padding:0 13px;border:1px solid #dce8f1;border-radius:13px;background:#fff;color:#1a557f;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;font:800 11px 'Noto Sans Bengali','Inter',sans-serif;cursor:pointer}.logout{color:#9f4750;background:#fff8f8;border-color:#f3dfe1}
-    .hero{padding:24px 0 14px}.hero-card{position:relative;overflow:hidden;border-radius:30px;background:linear-gradient(135deg,#126fb2 0%,#1c86c8 55%,#45a5d6 100%);color:#fff;padding:26px;box-shadow:0 24px 60px rgba(18,100,159,.22)}.hero-card:before{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-95px;top:-120px;background:rgba(255,255,255,.10)}.profile-head{position:relative;display:flex;align-items:center;gap:18px}.avatar-wrap{position:relative;flex:0 0 auto}.avatar{width:86px;height:86px;border-radius:26px;border:3px solid rgba(255,255,255,.75);background:rgba(255,255,255,.18);object-fit:cover;box-shadow:0 12px 30px rgba(0,0,0,.13)}.avatar-fallback{width:86px;height:86px;border-radius:26px;border:3px solid rgba(255,255,255,.75);background:rgba(255,255,255,.18);display:none;place-items:center;font:900 31px 'Inter',sans-serif}.hero-copy{min-width:0}.eyebrow{font:800 10px 'Inter',sans-serif;letter-spacing:.16em;text-transform:uppercase;opacity:.78}.hero h1{font-size:clamp(23px,5vw,34px);line-height:1.15;margin:5px 0 4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.hero-email{font:600 12px 'Inter',sans-serif;opacity:.83;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.badges{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}.badge{padding:6px 9px;border-radius:999px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.19);font:800 10px 'Inter','Noto Sans Bengali',sans-serif}.completion{position:relative;margin-top:20px}.completion-line{display:flex;justify-content:space-between;gap:10px;font-size:11px;font-weight:800;margin-bottom:7px}.track{height:8px;border-radius:999px;background:rgba(255,255,255,.18);overflow:hidden}.fill{height:100%;width:0;background:#fff;border-radius:999px;transition:width .5s ease}
-    .layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(300px,.75fr);gap:16px;padding:4px 0 38px}.card{background:rgba(255,255,255,.96);border:1px solid #e0ebf3;border-radius:24px;padding:20px;box-shadow:0 13px 38px rgba(22,66,101,.07)}.card-title{display:flex;align-items:center;gap:10px;margin-bottom:16px}.iconbox{width:40px;height:40px;border-radius:13px;display:grid;place-items:center;background:#eaf6ff;color:#1675b5;font-size:18px}.card h2{font-size:18px;margin:0;line-height:1.2}.card-sub{font-size:10px;color:#8495a4;margin-top:2px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{min-width:0}.field.full{grid-column:1/-1}.field label{display:block;margin:0 0 6px 2px;font-size:10px;font-weight:900;color:#627b90}.control{width:100%;height:48px;border:1px solid #d9e5ee;border-radius:14px;background:#fbfdff;padding:0 13px;color:#173b5e;font:600 13px 'Inter','Noto Sans Bengali',sans-serif;outline:none;transition:.18s}.control:focus{background:#fff;border-color:#4d9dd0;box-shadow:0 0 0 4px rgba(34,129,191,.08)}textarea.control{height:90px;padding-top:12px;resize:vertical;line-height:1.5}.readonly{background:#f1f5f8;color:#7c8d9c}.avatar-row{display:grid;grid-template-columns:1fr;gap:7px}.small-note{font-size:9px;color:#8b9ba8;line-height:1.5}.save-bar{display:flex;align-items:center;gap:10px;margin-top:17px}.save{height:50px;padding:0 22px;border:0;border-radius:15px;background:linear-gradient(135deg,#1685ca,#1768a3);color:#fff;font:900 13px 'Noto Sans Bengali','Inter',sans-serif;cursor:pointer;box-shadow:0 12px 28px rgba(23,111,168,.24);flex:1}.save:disabled{opacity:.6;box-shadow:none}.cancel{height:50px;padding:0 16px;border:1px solid #dde7ef;border-radius:15px;background:#fff;color:#5f768a;text-decoration:none;display:grid;place-items:center;font-size:11px;font-weight:900}
-    .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.stat{padding:15px 12px;border-radius:17px;background:linear-gradient(145deg,#f6fbff,#eef6fc);border:1px solid #e6eff6}.stat b{display:block;font:900 24px/1 'Inter',sans-serif;color:#176fa8}.stat span{font-size:9px;color:#7c8f9f;font-weight:800}.quick{display:grid;gap:8px;margin-top:15px}.quick a{min-height:52px;border:1px solid #e1ebf2;border-radius:15px;text-decoration:none;color:#234e70;display:flex;align-items:center;gap:11px;padding:9px 12px;font-size:11px;font-weight:900;background:#fff}.quick i{width:34px;height:34px;border-radius:11px;display:grid;place-items:center;font-style:normal;background:#eaf6ff;color:#176fa8;font-size:15px}.quick small{display:block;color:#8b9aa7;font-size:8px;font-weight:700;margin-top:2px}.arrow{margin-left:auto;color:#9aacb9}.activity-list{display:grid;gap:8px;max-height:350px;overflow:auto}.activity{padding:11px 12px;border:1px solid #e4ecf2;border-radius:14px;background:#fcfeff}.activity b{font-size:10px}.activity small{display:block;color:#8a9aa8;font-size:8.5px;margin-top:3px}.empty{font-size:11px;color:#8a9aa8;padding:12px;border:1px dashed #dce7ef;border-radius:14px;text-align:center}.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,18px);z-index:1000;background:#173b5e;color:#fff;border-radius:14px;padding:12px 16px;font-size:11px;font-weight:800;box-shadow:0 16px 40px rgba(17,55,86,.24);opacity:0;pointer-events:none;transition:.2s;max-width:calc(100% - 28px);text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.toast.bad{background:#a94850}
-    @media(max-width:820px){.layout{grid-template-columns:1fr}.side{display:grid;grid-template-columns:1fr 1fr;gap:16px}.side .card:last-child{grid-column:1/-1}}
-    @media(max-width:600px){.container{width:min(100% - 18px,1100px)}.nav{min-height:64px}.brand strong{font-size:14px}.brand img{width:39px;height:39px}.nav-btn{height:39px;padding:0 10px}.nav-btn .desktop{display:none}.hero{padding-top:14px}.hero-card{border-radius:25px;padding:20px 17px}.profile-head{gap:13px}.avatar,.avatar-fallback{width:72px;height:72px;border-radius:22px}.hero h1{font-size:23px}.hero-email{font-size:10px}.layout{gap:12px}.card{border-radius:21px;padding:17px 14px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.side{grid-template-columns:1fr}.side .card:last-child{grid-column:auto}.save-bar{position:sticky;bottom:8px;z-index:10;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);padding:8px;border-radius:18px;margin-left:-6px;margin-right:-6px;box-shadow:0 10px 30px rgba(20,62,95,.10)}}
-  </style>
-
-<meta name="robots" content="noindex,nofollow">
-
-<script id="legacy-origin-redirect">
-(function(){
-  var h = location.hostname;
-  if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
-  var p = location.pathname || "/";
-  if (h === "sammir03-bot.github.io") {
-    var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
-    for (var i = 0; i < bases.length; i++) {
-      var base = bases[i];
-      if (p === base || p === base + "/") { p = "/"; break; }
-      if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+  <link rel="stylesheet" href="/assets/css/profile-premium.css?v=20260904-1">
+  <script id="legacy-origin-redirect">
+  (function(){
+    var h=location.hostname;
+    if(h!=="sammir03-bot.github.io"&&h!=="aponar-nihon.eu.cc")return;
+    var p=location.pathname||"/";
+    if(h==="sammir03-bot.github.io"){
+      var bases=["/Aponar-Nihon-","/Aponar-Nihon"];
+      for(var i=0;i<bases.length;i++){
+        var base=bases[i];
+        if(p===base||p===base+"/"){p="/";break}
+        if(p.indexOf(base+"/")===0){p=p.slice(base.length)||"/";break}
+      }
     }
-  }
-  if (p === "/index.html") p = "/";
-  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
-  else if (p.endsWith(".html")) p = p.slice(0, -5);
-  location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
-})();
-</script>
+    if(p==="/index.html")p="/";
+    else if(p.endsWith("/index.html"))p=p.slice(0,-10);
+    else if(p.endsWith(".html"))p=p.slice(0,-5);
+    location.replace("https://app.aponar-nihon.workers.dev"+p+location.search+location.hash);
+  })();
+  </script>
 </head>
 <body>
-  <header class="top"><div class="container nav"><a class="brand" href="/"><img src="/logo.png" alt="Aponar Nihon"><strong>APONAR NIHON</strong></a><div class="spacer"></div><a class="nav-btn" href="/">⌂ <span class="desktop">হোম</span></a><a id="adminLink" class="nav-btn" href="/admin.html" style="display:none">Admin</a><button id="logoutBtn" class="nav-btn logout" type="button">Logout</button><a class="nav-btn logout" href="/delete-account.html" title="Delete account">Delete Account</a></div></header>
+  <header class="site-header">
+    <div class="shell nav">
+      <a class="brand" href="/" aria-label="Aponar Nihon home">
+        <img src="/logo.png" alt="Aponar Nihon">
+        <span class="brand-copy"><strong>APONAR NIHON</strong><small data-t="brandTag">জাপানি শেখার পূর্ণাঙ্গ প্ল্যাটফর্ম</small></span>
+      </a>
+      <div class="nav-spacer"></div>
+      <a class="nav-action desktop-home" href="/"><span aria-hidden="true">⌂</span><span data-t="home">হোম</span></a>
+      <a class="nav-action mobile-home" href="/" aria-label="Home"><span aria-hidden="true">⌂</span></a>
+      <button id="accountMenuButton" class="menu-trigger" type="button" aria-label="Account menu" aria-expanded="false" aria-controls="accountMenu">⋯</button>
+      <div id="accountMenu" class="account-menu" hidden>
+        <a href="/"><span aria-hidden="true">⌂</span><span data-t="home">হোম</span></a>
+        <a data-admin-link href="/admin.html" hidden><span aria-hidden="true">⚙</span><span data-t="admin">অ্যাডমিন</span></a>
+        <button type="button" data-logout><span aria-hidden="true">↪</span><span data-t="logout">লগআউট</span></button>
+        <div class="menu-divider"></div>
+        <a class="danger-item" href="/delete-account.html"><span aria-hidden="true">⚠</span><span data-t="deleteAccount">Delete Account</span></a>
+      </div>
+    </div>
+  </header>
 
-  <main class="container">
-    <section class="hero"><div class="hero-card"><div class="profile-head"><div class="avatar-wrap"><img id="avatarPreview" class="avatar" alt="Profile photo"><div id="avatarFallback" class="avatar-fallback">S</div></div><div class="hero-copy"><div class="eyebrow">STUDENT PROFILE</div><h1 id="heroName">আপনার Profile</h1><div id="heroEmail" class="hero-email"></div><div class="badges"><span id="levelBadge" class="badge">JLPT N5</span><span id="providerBadge" class="badge">Account</span></div></div></div><div class="completion"><div class="completion-line"><span>Profile completion</span><span id="completionText">0%</span></div><div class="track"><div id="completionFill" class="fill"></div></div></div></div></section>
-
-    <div class="layout">
-      <section class="card">
-        <div class="card-title"><div class="iconbox">👤</div><div><h2>Profile Update</h2><div class="card-sub">আপনার তথ্য আপডেট করে Save করুন</div></div></div>
-        <div class="form-grid">
-          <div class="field"><label for="name">পুরো নাম</label><input class="control" id="name" autocomplete="name"></div>
-          <div class="field"><label for="email">Email</label><input class="control readonly" id="email" type="email" readonly></div>
-          <div class="field"><label for="school">School / Institution</label><input class="control" id="school" placeholder="আপনার স্কুল / কলেজ"></div>
-          <div class="field"><label for="nationality">Nationality</label><input class="control" id="nationality" placeholder="Bangladeshi"></div>
-          <div class="field"><label for="city">বর্তমান City</label><input class="control" id="city" placeholder="Tokyo"></div>
-          <div class="field"><label for="phone">Phone (optional)</label><input class="control" id="phone" inputmode="tel" autocomplete="tel" placeholder="070-0000-0000"></div>
-          <div class="field"><label for="level">JLPT Target</label><select class="control" id="level"><option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option></select></div>
-          <div class="field"><label for="minutes">Daily Study Time</label><select class="control" id="minutes"><option value="15">15 মিনিট</option><option value="30">30 মিনিট</option><option value="45">45 মিনিট</option><option value="60">1 ঘণ্টা</option><option value="90">1.5 ঘণ্টা</option><option value="120">2 ঘণ্টা</option></select></div>
-          <div class="field"><label for="language">Preferred Language</label><select class="control" id="language"><option>বাংলা</option><option>English</option><option>日本語</option></select></div>
-          <div class="field"><label for="avatarUrl">Profile Photo URL (optional)</label><div class="avatar-row"><input class="control" id="avatarUrl" type="url" placeholder="Google photo auto ব্যবহার হবে"><div class="small-note">Google দিয়ে login করলে Google profile photo স্বয়ংক্রিয়ভাবে দেখানো হবে। চাইলে অন্য image URL দিতে পারেন।</div></div></div>
-          <div class="field full"><label for="goal">Study Goal</label><textarea class="control" id="goal" placeholder="যেমন: December JLPT N3 pass করতে চাই"></textarea></div>
-          <div class="field full"><label for="bio">নিজের সম্পর্কে (optional)</label><textarea class="control" id="bio" placeholder="আপনার learning journey বা লক্ষ্য"></textarea></div>
+  <main class="shell page">
+    <section class="hero-card" aria-labelledby="heroName">
+      <div class="hero-grid">
+        <div class="identity">
+          <div class="avatar-shell">
+            <img id="avatarPreview" class="avatar" alt="Profile photo">
+            <div id="avatarFallback" class="avatar-fallback" aria-hidden="true">S</div>
+            <button class="avatar-edit" type="button" data-choose-avatar aria-label="Change profile photo">✎</button>
+          </div>
+          <div class="identity-copy">
+            <div class="eyebrow" data-t="profileEyebrow">STUDENT PROFILE</div>
+            <h1 id="heroName" class="hero-name">Student</h1>
+            <div id="heroEmail" class="hero-email"></div>
+            <div class="badges">
+              <span id="levelBadge" class="badge">JLPT N5</span>
+              <span id="verifiedBadge" class="badge verified-badge" data-t="unverified">ইমেইল ভেরিফাই হয়নি</span>
+            </div>
+          </div>
         </div>
-        <div class="save-bar"><a class="cancel" href="/">Cancel</a><button class="save" id="saveBtn" type="button">Save & Home</button></div>
+
+        <div class="completion-box">
+          <div class="completion-top">
+            <div id="progressRing" class="progress-ring"><b id="completionText">0%</b></div>
+            <div class="completion-copy">
+              <strong data-t="completion">Profile completion</strong>
+              <span data-t="completionNote">প্রয়োজনীয় তথ্য পূরণ করলে 100% হবে</span>
+            </div>
+          </div>
+          <div class="completion-checks" aria-label="Profile completion checklist">
+            <div class="check-chip" data-check="name" data-t="checkName">নাম</div>
+            <div class="check-chip" data-check="school" data-t="checkSchool">স্কুল</div>
+            <div class="check-chip" data-check="location" data-t="checkLocation">লোকেশন</div>
+            <div class="check-chip" data-check="jlpt" data-t="checkJlpt">JLPT</div>
+            <div class="check-chip" data-check="goal" data-t="checkGoal">লক্ষ্য</div>
+            <div class="check-chip" data-check="dob" data-t="checkDob">জন্মতারিখ</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="content-grid">
+      <section class="card form-card">
+        <div class="card-head">
+          <div class="card-icon" aria-hidden="true">👤</div>
+          <div><h2 data-t="updateTitle">প্রোফাইল আপডেট</h2><p data-t="updateSub">তথ্যগুলো ঠিক করে নিরাপদভাবে Save করুন</p></div>
+        </div>
+
+        <form id="profileForm" novalidate>
+          <fieldset class="profile-section">
+            <legend class="sr-only">Personal information</legend>
+            <div class="section-head"><span class="section-dot" aria-hidden="true">01</span><div><h3 data-t="personalTitle">ব্যক্তিগত তথ্য</h3><p data-t="personalSub">আপনার মূল পরিচিতি</p></div></div>
+            <div class="form-grid">
+              <div class="field">
+                <label for="name"><span data-t="fullName">পুরো নাম</span><span class="required-mark">*</span></label>
+                <input id="name" class="control" type="text" autocomplete="name" maxlength="80" required>
+                <div class="field-error" data-error-for="name" aria-live="polite"></div>
+              </div>
+              <div class="field">
+                <label for="dateOfBirth" data-t="dob">জন্মতারিখ</label>
+                <input id="dateOfBirth" class="control" type="date" autocomplete="bday">
+                <div class="field-error" data-error-for="dateOfBirth" aria-live="polite"></div>
+              </div>
+              <div class="field">
+                <label for="gender" data-t="gender">লিঙ্গ</label>
+                <select id="gender" class="control">
+                  <option value="" data-t="select">নির্বাচন করুন</option>
+                  <option value="male" data-t="male">পুরুষ</option>
+                  <option value="female" data-t="female">নারী</option>
+                  <option value="prefer_not_to_say" data-t="preferNot">বলতে চাই না</option>
+                </select>
+                <div class="field-error" data-error-for="gender"></div>
+              </div>
+              <div class="field">
+                <label for="nationality" data-t="nationality">জাতীয়তা</label>
+                <input id="nationality" class="control" type="text" maxlength="60" placeholder="Bangladeshi">
+                <div class="field-error" data-error-for="nationality"></div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="profile-section">
+            <legend class="sr-only">Study and JLPT</legend>
+            <div class="section-head"><span class="section-dot" aria-hidden="true">02</span><div><h3 data-t="studyTitle">পড়াশোনা ও JLPT</h3><p data-t="studySub">আপনার স্কুল ও শেখার লক্ষ্য</p></div></div>
+            <div class="form-grid">
+              <div class="field full">
+                <label for="school" data-t="school">স্কুল / প্রতিষ্ঠান</label>
+                <input id="school" class="control" type="text" maxlength="120" autocomplete="organization" placeholder="School / College">
+                <div class="field-error" data-error-for="school"></div>
+              </div>
+              <div class="field">
+                <label for="level" data-t="jlpt">JLPT Target</label>
+                <select id="level" class="control"><option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option></select>
+                <div class="field-error" data-error-for="level"></div>
+              </div>
+              <div class="field">
+                <label for="minutes" data-t="dailyStudy">দৈনিক পড়ার সময়</label>
+                <select id="minutes" class="control">
+                  <option value="15" data-t="min15">15 মিনিট</option>
+                  <option value="30" data-t="min30">30 মিনিট</option>
+                  <option value="45" data-t="min45">45 মিনিট</option>
+                  <option value="60" data-t="min60">1 ঘণ্টা</option>
+                  <option value="90" data-t="min90">1.5 ঘণ্টা</option>
+                  <option value="120" data-t="min120">2 ঘণ্টা</option>
+                </select>
+                <div class="field-error" data-error-for="minutes"></div>
+              </div>
+              <div class="field full">
+                <label for="goal" data-t="studyGoal">Study Goal</label>
+                <textarea id="goal" class="control" maxlength="500" placeholder="যেমন: JLPT N3 pass করতে চাই"></textarea>
+                <div class="field-error" data-error-for="goal"></div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="profile-section">
+            <legend class="sr-only">Contact and location</legend>
+            <div class="section-head"><span class="section-dot" aria-hidden="true">03</span><div><h3 data-t="contactTitle">যোগাযোগ ও অবস্থান</h3><p data-t="contactSub">বর্তমান যোগাযোগের তথ্য</p></div></div>
+            <div class="form-grid">
+              <div class="field">
+                <label for="city" data-t="city">বর্তমান City</label>
+                <input id="city" class="control" type="text" maxlength="80" autocomplete="address-level2" placeholder="Tokyo">
+                <div class="field-error" data-error-for="city"></div>
+              </div>
+              <div class="field">
+                <label for="phone"><span data-t="phone">ফোন নম্বর</span><span class="hint" data-t="optional">ঐচ্ছিক</span></label>
+                <input id="phone" class="control" type="tel" inputmode="tel" autocomplete="tel" maxlength="24" placeholder="070-0000-0000">
+                <div class="field-error" data-error-for="phone" aria-live="polite"></div>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="profile-section">
+            <legend class="sr-only">About</legend>
+            <div class="section-head"><span class="section-dot" aria-hidden="true">04</span><div><h3 data-t="aboutTitle">নিজের সম্পর্কে</h3><p data-t="aboutSub">সংক্ষিপ্ত learning profile</p></div></div>
+            <div class="form-grid">
+              <div class="field full">
+                <label for="bio"><span data-t="bio">Bio / Learning journey</span><span class="hint" data-t="optional">ঐচ্ছিক</span></label>
+                <textarea id="bio" class="control" maxlength="800" placeholder="আপনার learning journey বা লক্ষ্য"></textarea>
+                <div class="field-error" data-error-for="bio"></div>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="actions">
+            <a class="btn cancel-action" href="/" data-t="cancel">বাতিল</a>
+            <button id="saveBtn" class="btn soft" type="button" data-t="save">Save</button>
+            <button id="saveHomeBtn" class="btn primary" type="button" data-t="saveHome">Save & Home</button>
+          </div>
+        </form>
       </section>
 
       <aside class="side">
-        <section class="card"><div class="card-title"><div class="iconbox">📊</div><div><h2>My Learning</h2><div class="card-sub">আপনার activity summary</div></div></div><div class="stats"><div class="stat"><b id="events">0</b><span>Activities</span></div><div class="stat"><b id="days">0</b><span>Active days</span></div><div class="stat"><b id="progressCount">0</b><span>Progress items</span></div><div class="stat"><b id="last">—</b><span>Last active</span></div></div><div class="quick"><a href="/cv-builder.html"><i>📄</i><span>CV Builder<small>জাপানি 履歴書 তৈরি</small></span><span class="arrow">›</span></a><a href="/mock-test.html"><i>✓</i><span>Mock Test<small>JLPT practice test</small></span><span class="arrow">›</span></a><a href="/tutor-section.html"><i>AI</i><span>AI Tutor<small>বাংলায় Japanese help</small></span><span class="arrow">›</span></a><a href="/ebook-library.html"><i>📚</i><span>E-Book Library<small>Study resources</small></span><span class="arrow">›</span></a></div></section>
-        <section class="card"><div class="card-title"><div class="iconbox">🕘</div><div><h2>Recent Activity</h2><div class="card-sub">সর্বশেষ learning activity</div></div></div><div id="activity" class="activity-list"><div class="empty">Loading...</div></div></section>
+        <section class="card side-card">
+          <div class="card-head"><div class="card-icon" aria-hidden="true">📷</div><div><h2 data-t="photoTitle">Profile Photo</h2><p data-t="photoSub">নিজের ছবি যোগ বা পরিবর্তন করুন</p></div></div>
+          <div class="photo-preview-row">
+            <img id="sideAvatarPreview" class="avatar" alt="Profile photo preview">
+            <div id="sideAvatarFallback" class="avatar-fallback" aria-hidden="true">S</div>
+            <div class="photo-actions">
+              <button class="btn primary" type="button" data-choose-avatar data-t="choosePhoto">ছবি বেছে নিন</button>
+              <button id="useAccountPhoto" class="btn" type="button" data-t="accountPhoto">Account photo ব্যবহার</button>
+            </div>
+          </div>
+          <p class="micro" data-t="photoNote">JPG, PNG বা WebP · সর্বোচ্চ 2 MB</p>
+          <input id="avatarFile" class="sr-only" type="file" accept="image/jpeg,image/png,image/webp">
+        </section>
+
+        <section class="card side-card">
+          <div class="card-head"><div class="card-icon" aria-hidden="true">🔐</div><div><h2 data-t="securityTitle">Account & Security</h2></div></div>
+          <div class="account-list">
+            <div class="account-row"><span class="mini-icon" aria-hidden="true">✉</span><div><strong data-t="email">ইমেইল</strong><span id="emailValue">—</span></div><span id="emailStatus" class="status-pill">—</span></div>
+            <div class="account-row"><span class="mini-icon" aria-hidden="true">↗</span><div><strong data-t="provider">Login provider</strong><span id="providerValue">—</span></div></div>
+            <div class="account-row"><span class="mini-icon" aria-hidden="true">🌐</span><div><strong data-t="language">Website language</strong><span id="languageValue">বাংলা</span></div></div>
+          </div>
+          <p class="micro" data-t="changeHome">ভাষা Home থেকে পরিবর্তন করা যায়</p>
+          <button class="btn" style="width:100%" type="button" data-logout data-t="logout">লগআউট</button>
+        </section>
+
+        <section class="card side-card">
+          <div class="card-head"><div class="card-icon" aria-hidden="true">📊</div><div><h2 data-t="learningTitle">My Learning</h2></div></div>
+          <div class="stats">
+            <div class="stat"><b id="events">0</b><span data-t="activities">Activities</span></div>
+            <div class="stat"><b id="days">0</b><span data-t="activeDays">Active days</span></div>
+            <div class="stat"><b id="progressCount">0</b><span data-t="progressItems">Progress items</span></div>
+            <div class="stat"><b id="last">—</b><span data-t="lastActive">Last active</span></div>
+          </div>
+        </section>
+
+        <section class="card side-card">
+          <div class="card-head"><div class="card-icon" aria-hidden="true">🕘</div><div><h2 data-t="recentTitle">Recent Activity</h2></div></div>
+          <div id="activity" class="activity-list"><div class="empty" data-t="loading">Profile load হচ্ছে…</div></div>
+        </section>
+
+        <section class="card side-card danger-card">
+          <div class="card-head"><div class="card-icon" aria-hidden="true">⚠</div><div><h2 class="danger-title" data-t="dangerTitle">Danger Zone</h2></div></div>
+          <p class="danger-note" data-t="dangerNote">অ্যাকাউন্ট মুছলে আপনার profile ও learning data স্থায়ীভাবে মুছে যেতে পারে।</p>
+          <a class="danger-btn" href="/delete-account.html" data-t="openDelete">Delete options খুলুন</a>
+        </section>
       </aside>
     </div>
   </main>
-  <div id="toast" class="toast"></div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="loadingLayer" class="loading-layer"><div class="loader-card"><span class="spinner" aria-hidden="true"></span><span data-t="loading">Profile load হচ্ছে…</span></div></div>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="/supabase-config.js"></script>
   <script src="/account.js?v=20260817-4"></script>
-  <script>
-    const $=id=>document.getElementById(id);let session=null,profile=null;
-    function toast(text,bad=false){const t=$('toast');t.textContent=text;t.className='toast show'+(bad?' bad':'');setTimeout(()=>t.className='toast',2400)}
-    function initials(name){return (name||'Student').trim().split(/\s+/).slice(0,2).map(x=>x[0]||'').join('').toUpperCase()||'S'}
-    function showAvatar(url,name){const img=$('avatarPreview'),fallback=$('avatarFallback');if(url){img.src=url;img.style.display='block';fallback.style.display='none';img.onerror=()=>{img.style.display='none';fallback.style.display='grid';fallback.textContent=initials(name)}}else{img.removeAttribute('src');img.style.display='none';fallback.style.display='grid';fallback.textContent=initials(name)}}
-    function completion(p){const keys=['full_name','school','nationality','city','jlpt_target','study_goal','preferred_language'];const n=keys.filter(k=>String(p?.[k]||'').trim()).length;return Math.round(n/keys.length*100)}
-    function updateHero(){const name=$('name').value.trim()||'Student';$('heroName').textContent=name;$('levelBadge').textContent='JLPT '+$('level').value;const meta=session?.user?.user_metadata||{};showAvatar($('avatarUrl').value.trim()||profile?.avatar_url||meta.avatar_url||meta.picture||'',name);const pseudo={full_name:$('name').value,school:$('school').value,nationality:$('nationality').value,city:$('city').value,jlpt_target:$('level').value,study_goal:$('goal').value,preferred_language:$('language').value};const c=completion(pseudo);$('completionText').textContent=c+'%';$('completionFill').style.width=c+'%'}
-    async function loadActivity(){try{const {data:a=[],error}=await AN.sb.from('activity_events').select('event_type,page,metadata,created_at').eq('user_id',session.user.id).order('created_at',{ascending:false}).limit(30);if(error)throw error;$('events').textContent=a.length;$('days').textContent=new Set(a.map(x=>x.created_at.slice(0,10))).size;$('last').textContent=a[0]?new Date(a[0].created_at).toLocaleDateString('en-GB',{day:'2-digit',month:'short'}):'—';$('activity').innerHTML=a.length?a.slice(0,12).map(x=>{const m=x.metadata||{};const title=String(x.event_type||'activity').replaceAll('_',' ');const where=[m.module,m.item_key].filter(Boolean).join(' · ')||x.page||'';return `<div class="activity"><b>${title}</b><small>${where} · ${new Date(x.created_at).toLocaleString()}</small></div>`}).join(''):'<div class="empty">এখনও activity নেই। শেখা শুরু করলে এখানে দেখা যাবে।</div>'}catch(e){$('activity').innerHTML='<div class="empty">Activity load করা যায়নি।</div>'}try{const {data:p=[]}=await AN.sb.from('student_progress').select('item_key').eq('user_id',session.user.id);$('progressCount').textContent=p?.length||0}catch(e){}}
-    async function boot(){try{session=await AN.session();if(!session)return location.replace('/auth.html');profile=await AN.ensureProfile();const meta=session.user.user_metadata||{};$('name').value=profile?.full_name||meta.full_name||meta.name||'';$('email').value=session.user.email||profile?.email||'';$('school').value=profile?.school||'';$('nationality').value=profile?.nationality||'';$('city').value=profile?.city||'';$('phone').value=profile?.phone||'';$('level').value=profile?.jlpt_target||'N5';$('goal').value=profile?.study_goal||'';$('minutes').value=String(profile?.daily_study_minutes||30);$('language').value=profile?.preferred_language||'বাংলা';$('avatarUrl').value=profile?.avatar_url||meta.avatar_url||meta.picture||'';$('bio').value=profile?.bio||'';$('heroEmail').textContent=session.user.email||'';$('providerBadge').textContent=(session.user.app_metadata?.provider==='google'?'Google Account':'Email Account');if(profile?.role==='admin')$('adminLink').style.display='inline-flex';updateHero();['name','school','nationality','city','level','goal','language','avatarUrl'].forEach(id=>$(id).addEventListener(id==='level'||id==='language'?'change':'input',updateHero));await loadActivity();AN.log('profile_view',{module:'profile'}).catch(()=>{})}catch(e){toast(e.message||'Profile load করা যায়নি',true)}}
-    $('saveBtn').onclick=async()=>{const btn=$('saveBtn');btn.disabled=true;btn.textContent='Saving...';try{profile=await AN.updateProfile({full_name:$('name').value,school:$('school').value,nationality:$('nationality').value,city:$('city').value,phone:$('phone').value,jlpt_target:$('level').value,study_goal:$('goal').value,daily_study_minutes:Number($('minutes').value)||30,preferred_language:$('language').value,avatar_url:$('avatarUrl').value,bio:$('bio').value});await AN.log('profile_update',{module:'profile'});toast('Profile save হয়েছে ✓ হোমে নিয়ে যাচ্ছি...');setTimeout(()=>location.replace('/'),700)}catch(e){toast(e.message||'Save করা যায়নি',true);btn.disabled=false;btn.textContent='Save & Home'}};
-    $('logoutBtn').onclick=async()=>{try{await AN.logout()}catch(e){toast('Logout করা যায়নি',true)}};
-    boot();
-  </script>
+  <script src="/assets/js/i18n.js?v=20260901-1"></script>
+  <script src="/assets/js/profile-premium.js?v=20260904-1"></script>
 </body>
 </html>
