@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="bn" dir="ltr" data-language-preset="bn" data-source-language="bn" data-furigana="on">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <script id="legacy-origin-redirect">
+  (function(){
+    var h = location.hostname;
+    if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
+    var p = location.pathname || "/";
+    if (h === "sammir03-bot.github.io") {
+      var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
+      for (var i = 0; i < bases.length; i++) {
+        var base = bases[i];
+        if (p === base || p === base + "/") { p = "/"; break; }
+        if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+      }
+    }
+    if (p === "/index.html") p = "/";
+    else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+    else if (p.endsWith(".html")) p = p.slice(0, -5);
+    location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
+  })();
+  </script>
+  <title>জাপানি নিউজ পড়ুন | আপনার নিহোন</title>
+  <meta name="description" content="সহজ জাপানি নিউজ পড়ুন—কানজি, ফুরিগানা ON/OFF, বাংলা বিস্তারিত ব্যাখ্যা ও গুরুত্বপূর্ণ শব্দসহ।">
+  <meta name="theme-color" content="#1677e8">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://app.aponar-nihon.workers.dev/daily-news-reader">
+  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/app-shell.css?v=20260829">
+  <link rel="stylesheet" href="/assets/css/daily-news.css?v=20260904.1">
+</head>
+<body class="app-page" data-page="daily-news-reader">
+  <header class="app-topbar">
+    <div class="app-shell app-topbar-inner">
+      <a class="app-brand" href="/daily-news.html" aria-label="নিউজ আর্কাইভে ফিরুন" data-i18n-no-content>
+        <img src="/logo.png" alt="আপনার নিহোন লোগো" width="44" height="44">
+        <span class="app-brand-copy" lang="bn"><strong>প্রতিদিনের জাপানি নিউজ</strong><small>READ · UNDERSTAND · LEARN</small></span>
+      </a>
+      <div class="app-top-actions">
+        <a class="app-icon-button" href="/daily-news.html" aria-label="নিউজ আর্কাইভ"><i class="fa-solid fa-box-archive" aria-hidden="true"></i></a>
+        <a class="app-icon-button" href="/" aria-label="হোম"><i class="fa-solid fa-house" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="news-page-main" data-news-reader>
+    <div class="news-reader-card">
+      <div class="daily-news-state">নিউজ লোড হচ্ছে…</div>
+    </div>
+  </main>
+
+  <footer class="app-shell app-footer">
+    <div class="app-footer-links"><a href="/daily-news.html">সব নিউজ</a><a href="/about.html">আমাদের সম্পর্কে</a><a href="/contact.html">যোগাযোগ</a><a href="/privacy-policy.html">Privacy</a></div>
+    <p>© ২০২৬ আপনার নিহোন · Created by SAMMIR</p>
+  </footer>
+
+  <div class="app-dock-wrap">
+    <nav class="app-dock" aria-label="প্রধান অ্যাপ নেভিগেশন">
+      <a class="app-dock-link" data-nav="home" href="/"><i class="fa-solid fa-house" aria-hidden="true"></i><span>হোম</span></a>
+      <a class="app-dock-link" data-nav="cv" href="/cv-builder.html"><i class="fa-solid fa-file-signature" aria-hidden="true"></i><span>CV Builder</span></a>
+      <a class="app-dock-link" data-nav="tutor" href="/tutor-section.html"><i class="fa-solid fa-robot" aria-hidden="true"></i><span>AI Tutor</span></a>
+      <a class="app-dock-link" data-nav="mock" href="/mock-test.html"><i class="fa-solid fa-clipboard-check" aria-hidden="true"></i><span>Mock Test</span></a>
+      <a class="app-dock-link" data-nav="profile" href="/profile.html"><i class="fa-solid fa-circle-user" aria-hidden="true"></i><span>Profile</span></a>
+    </nav>
+  </div>
+
+  <script defer src="/assets/js/app-shell.js?v=20260831.3"></script>
+  <script defer src="/assets/js/daily-news.js?v=20260904.1"></script>
+  <script defer src="/activity-tracker.js"></script>
+</body>
+</html>
