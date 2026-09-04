@@ -201,6 +201,37 @@
     greeting.textContent = hour < 12 ? list[0] : hour < 17 ? list[1] : list[2];
   }
 
+  function setupDailyNewsFeature() {
+    if (document.body.dataset.page !== "home") return;
+
+    if (!document.querySelector('link[data-daily-news-style]')) {
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "/assets/css/daily-news.css?v=20260904.1";
+      link.dataset.dailyNewsStyle = "true";
+      document.head.appendChild(link);
+    }
+
+    function mount() {
+      if (window.AponarDailyNews && typeof window.AponarDailyNews.mountHome === "function") {
+        window.AponarDailyNews.mountHome();
+      }
+    }
+
+    if (window.AponarDailyNews) {
+      mount();
+      return;
+    }
+
+    if (document.querySelector('script[data-daily-news-script]')) return;
+    var script = document.createElement("script");
+    script.src = "/assets/js/daily-news.js?v=20260904.1";
+    script.async = true;
+    script.dataset.dailyNewsScript = "true";
+    script.addEventListener("load", mount, { once: true });
+    document.head.appendChild(script);
+  }
+
   function setupPwaInstall() {
     var card = document.getElementById("pwaInstallCard");
     var install = document.getElementById("pwaInstallButton");
@@ -246,6 +277,7 @@
     setupDashboardSearch();
     setupGreeting();
     setupPwaInstall();
+    setupDailyNewsFeature();
     applyHomeLanguage();
   });
   window.addEventListener("aponar:languagechange", applyHomeLanguage);
