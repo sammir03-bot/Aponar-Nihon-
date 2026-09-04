@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#0f6fb5">
+  <meta name="robots" content="noindex,nofollow">
   <title>Login / Register | Aponar Nihon</title>
   <link rel="icon" href="/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,94 +12,86 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html,body{margin:0;min-height:100%;font-family:'Noto Sans Bengali','Inter',sans-serif;color:#173a5d}body{min-height:100vh;background:radial-gradient(circle at 12% 0%,rgba(66,153,225,.18),transparent 34%),radial-gradient(circle at 92% 92%,rgba(38,198,218,.13),transparent 32%),linear-gradient(160deg,#f7fbff 0%,#edf6ff 100%)}
-    .shell{min-height:100vh;display:grid;place-items:center;padding:24px 16px 34px}.auth-card{width:min(470px,100%);background:rgba(255,255,255,.94);border:1px solid rgba(137,178,211,.25);border-radius:30px;padding:24px;box-shadow:0 28px 80px rgba(22,69,108,.16);backdrop-filter:blur(16px)}
-    .brand{display:flex;align-items:center;gap:13px;margin-bottom:20px}.brand img{width:58px;height:58px;object-fit:contain;border-radius:18px;box-shadow:0 8px 24px rgba(31,102,158,.10)}.brand-title{font:900 22px/1.05 'Inter',sans-serif;letter-spacing:.01em;color:#163e64}.brand-sub{font-size:12px;color:#7a91a5;font-weight:700;margin-top:5px}
-    .intro{padding:15px 16px;border-radius:20px;background:linear-gradient(135deg,#edf7ff,#f8fcff);border:1px solid #e0edf6;margin-bottom:16px}.intro b{font-size:15px}.intro p{margin:5px 0 0;color:#73889a;font-size:12px;line-height:1.55}
-    .google-btn{width:100%;height:56px;border:1px solid #d7e4ee;background:#fff;border-radius:17px;display:flex;align-items:center;justify-content:center;gap:11px;color:#173b5e;font:800 14px/1 'Inter','Noto Sans Bengali',sans-serif;cursor:pointer;box-shadow:0 10px 28px rgba(26,75,113,.08);transition:.18s}.google-btn:active{transform:scale(.985)}.google-logo{width:22px;height:22px;display:grid;place-items:center;font:900 19px/1 Arial;color:#4285f4}.google-btn[disabled]{opacity:.55;cursor:not-allowed}
-    .or{display:flex;align-items:center;gap:10px;color:#9aabb8;font-size:11px;font-weight:800;margin:18px 0}.or:before,.or:after{content:"";height:1px;background:#e3ebf2;flex:1}
-    .tabs{display:grid;grid-template-columns:1fr 1fr;padding:4px;background:#edf4fa;border-radius:16px;margin-bottom:16px}.tabs button{height:44px;border:0;background:transparent;border-radius:13px;color:#738698;font:900 13px/1 'Noto Sans Bengali','Inter',sans-serif;cursor:pointer}.tabs button.active{background:#fff;color:#176fa8;box-shadow:0 5px 16px rgba(24,92,143,.10)}
-    .pane{display:none}.pane.active{display:block}.field{margin:12px 0}.field label{display:block;font-size:11px;font-weight:900;color:#526c83;margin:0 0 6px 2px}.control{width:100%;height:50px;border:1px solid #d7e3ec;border-radius:14px;background:#fbfdff;padding:0 14px;font:600 14px 'Inter','Noto Sans Bengali',sans-serif;color:#173b5e;outline:none;transition:.18s}.control:focus{border-color:#4c9bd0;box-shadow:0 0 0 4px rgba(42,135,197,.09);background:#fff}.primary{width:100%;height:52px;border:0;border-radius:15px;background:linear-gradient(135deg,#1685ca,#1768a3);color:#fff;font:900 14px/1 'Noto Sans Bengali','Inter',sans-serif;cursor:pointer;box-shadow:0 14px 30px rgba(23,111,168,.23);margin-top:5px}.primary:disabled{opacity:.6;box-shadow:none}.helper{margin:10px 2px 0;font-size:11px;line-height:1.55;color:#8294a3}
-    .msg{display:none;margin-top:14px;padding:12px 14px;border-radius:14px;font-size:12px;font-weight:700;line-height:1.55}.msg.good{display:block;background:#edfbf5;color:#197452;border:1px solid #d6f3e6}.msg.bad{display:block;background:#fff1f2;color:#a9434a;border:1px solid #ffdadd}.home{display:flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;color:#176fa8;font-weight:900;font-size:12px;margin-top:18px;padding:8px}
-    .security{display:flex;gap:8px;align-items:flex-start;margin-top:14px;padding:11px 12px;background:#f7fafc;border-radius:14px;color:#7b8d9d;font-size:10px;line-height:1.5}.lock{font-size:13px}
-    @media(max-width:420px){.shell{padding:14px 10px 24px;align-items:start}.auth-card{border-radius:26px;padding:20px 16px;margin-top:12px}.brand img{width:52px;height:52px}.brand-title{font-size:20px}.google-btn{height:54px}.control{height:49px}}
+    .shell{min-height:100vh;display:grid;place-items:center;padding:24px 16px 34px}.auth-card{width:min(470px,100%);background:rgba(255,255,255,.96);border:1px solid rgba(137,178,211,.25);border-radius:30px;padding:24px;box-shadow:0 28px 80px rgba(22,69,108,.16);backdrop-filter:blur(16px)}
+    .brand{display:flex;align-items:center;gap:13px;margin-bottom:20px}.brand img{width:58px;height:58px;object-fit:contain;border-radius:18px}.brand-title{font:900 22px/1.05 'Inter',sans-serif;color:#163e64}.brand-sub{font-size:12px;color:#7a91a5;font-weight:700;margin-top:5px}.intro{padding:15px 16px;border-radius:20px;background:linear-gradient(135deg,#edf7ff,#f8fcff);border:1px solid #e0edf6;margin-bottom:16px}.intro b{font-size:15px}.intro p{margin:5px 0 0;color:#73889a;font-size:12px;line-height:1.55}
+    .tabs{display:grid;grid-template-columns:1fr 1fr;padding:4px;background:#edf4fa;border-radius:16px;margin-bottom:16px}.tabs button{height:44px;border:0;background:transparent;border-radius:13px;color:#738698;font:900 13px/1 'Noto Sans Bengali','Inter',sans-serif;cursor:pointer}.tabs button.active{background:#fff;color:#176fa8;box-shadow:0 5px 16px rgba(24,92,143,.10)}.pane{display:none}.pane.active{display:block}.field{margin:12px 0}.field label{display:block;font-size:11px;font-weight:900;color:#526c83;margin:0 0 6px 2px}.control{width:100%;height:50px;border:1px solid #d7e3ec;border-radius:14px;background:#fbfdff;padding:0 14px;font:600 14px 'Inter','Noto Sans Bengali',sans-serif;color:#173b5e;outline:none;transition:.18s}.control:focus{border-color:#4c9bd0;box-shadow:0 0 0 4px rgba(42,135,197,.09);background:#fff}.primary{width:100%;height:52px;border:0;border-radius:15px;background:linear-gradient(135deg,#1685ca,#1768a3);color:#fff;font:900 14px/1 'Noto Sans Bengali','Inter',sans-serif;cursor:pointer;box-shadow:0 14px 30px rgba(23,111,168,.23);margin-top:5px}.primary:disabled,.secondary:disabled{opacity:.6;box-shadow:none;cursor:not-allowed}.helper{margin:10px 2px 0;font-size:11px;line-height:1.6;color:#8294a3}.row{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:8px}.link-btn{border:0;background:transparent;color:#176fa8;font:800 11px 'Noto Sans Bengali','Inter',sans-serif;padding:6px 2px;cursor:pointer}.msg{display:none;margin-top:14px;padding:12px 14px;border-radius:14px;font-size:12px;font-weight:700;line-height:1.6}.msg.good{display:block;background:#edfbf5;color:#197452;border:1px solid #d6f3e6}.msg.bad{display:block;background:#fff1f2;color:#a9434a;border:1px solid #ffdadd}.verify-tools{display:none;margin-top:10px;padding:12px;border:1px solid #dce9f3;border-radius:15px;background:#f8fbfe}.verify-tools.show{display:block}.verify-tools p{margin:0 0 9px;font-size:10px;color:#6f8497;line-height:1.55}.secondary{width:100%;height:43px;border:1px solid #cfe0ec;border-radius:12px;background:#fff;color:#176fa8;font:900 11px 'Noto Sans Bengali','Inter',sans-serif;cursor:pointer}.security{display:flex;gap:8px;align-items:flex-start;margin-top:14px;padding:11px 12px;background:#f7fafc;border-radius:14px;color:#7b8d9d;font-size:10px;line-height:1.5}.home{display:flex;align-items:center;justify-content:center;text-decoration:none;color:#176fa8;font-weight:900;font-size:12px;margin-top:18px;padding:8px}.status-dot{width:8px;height:8px;border-radius:999px;background:#2aa978;display:inline-block;margin-right:5px}
+    @media(max-width:420px){.shell{padding:14px 10px 24px;align-items:start}.auth-card{border-radius:26px;padding:20px 16px;margin-top:12px}.brand img{width:52px;height:52px}.brand-title{font-size:20px}.control{height:49px}}
   </style>
-
-<meta name="robots" content="noindex,nofollow">
-
-<script id="legacy-origin-redirect">
-(function(){
-  var h = location.hostname;
-  if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
-  var p = location.pathname || "/";
-  if (h === "sammir03-bot.github.io") {
-    var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
-    for (var i = 0; i < bases.length; i++) {
-      var base = bases[i];
-      if (p === base || p === base + "/") { p = "/"; break; }
-      if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+  <script id="legacy-origin-redirect">
+  (function(){
+    var h=location.hostname;
+    if(h!=="sammir03-bot.github.io"&&h!=="aponar-nihon.eu.cc")return;
+    var p=location.pathname||"/";
+    if(h==="sammir03-bot.github.io"){
+      var bases=["/Aponar-Nihon-","/Aponar-Nihon"];
+      for(var i=0;i<bases.length;i++){var base=bases[i];if(p===base||p===base+"/"){p="/";break}if(p.indexOf(base+"/")===0){p=p.slice(base.length)||"/";break}}
     }
-  }
-  if (p === "/index.html") p = "/";
-  else if (p.endsWith("/index.html")) p = p.slice(0, -10);
-  else if (p.endsWith(".html")) p = p.slice(0, -5);
-  location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
-})();
-</script>
+    if(p==="/index.html")p="/";else if(p.endsWith("/index.html"))p=p.slice(0,-10);else if(p.endsWith(".html"))p=p.slice(0,-5);
+    location.replace("https://app.aponar-nihon.workers.dev"+p+location.search+location.hash);
+  })();
+  </script>
 </head>
 <body>
   <main class="shell">
     <section class="auth-card" aria-label="Aponar Nihon account">
-      <div class="brand"><img src="/logo.png" alt="Aponar Nihon"><div><div class="brand-title">APONAR NIHON</div><div class="brand-sub">Student Account</div></div></div>
-      <div class="intro"><b>এক অ্যাকাউন্টে আপনার সব Learning</b><p>Profile, Mock Test, CV Builder ও learning progress একই অ্যাকাউন্টে রাখুন।</p></div>
-
-      <button class="google-btn" id="googleBtn" type="button"><span class="google-logo">G</span><span>Google / Gmail দিয়ে চালিয়ে যান</span></button>
-      <div class="or">অথবা Email দিয়ে</div>
+      <div class="brand"><img src="/logo.png" alt="Aponar Nihon"><div><div class="brand-title">APONAR NIHON</div><div class="brand-sub"><span class="status-dot"></span>Secure Student Account</div></div></div>
+      <div class="intro"><b>এক অ্যাকাউন্টে আপনার সব Learning</b><p>Profile, Mock Test, CV Builder ও learning progress নিরাপদভাবে একই account-এ রাখুন।</p></div>
 
       <div class="tabs" role="tablist"><button id="loginTab" class="active" type="button">Login</button><button id="regTab" type="button">Register</button></div>
 
       <div id="loginPane" class="pane active">
-        <div class="field"><label for="loginEmail">Gmail / Email</label><input class="control" id="loginEmail" type="email" autocomplete="email" placeholder="name@gmail.com"></div>
-        <div class="field"><label for="loginPass">Password</label><input class="control" id="loginPass" type="password" autocomplete="current-password" placeholder="আপনার password"></div>
-        <button class="primary" id="loginBtn" type="button">Login</button>
-        <p class="helper">আগে account তৈরি করে থাকলে Gmail/Email ও password দিয়ে login করুন।</p>
+        <form id="loginForm" novalidate>
+          <div class="field"><label for="loginEmail">Gmail / Email</label><input class="control" id="loginEmail" type="email" autocomplete="email" inputmode="email" required placeholder="name@gmail.com"></div>
+          <div class="field"><label for="loginPass">Password</label><input class="control" id="loginPass" type="password" autocomplete="current-password" required placeholder="আপনার password"></div>
+          <button class="primary" id="loginBtn" type="submit">Login</button>
+          <div class="row"><span class="helper">Verified account হলে login হবে।</span><button class="link-btn" id="forgotBtn" type="button">Password ভুলে গেছেন?</button></div>
+        </form>
       </div>
 
       <div id="regPane" class="pane">
-        <div class="field"><label for="regName">আপনার নাম</label><input class="control" id="regName" autocomplete="name" placeholder="যেমন: MD SAMMIR"></div>
-        <div class="field"><label for="regEmail">Gmail / Email</label><input class="control" id="regEmail" type="email" autocomplete="email" placeholder="name@gmail.com"></div>
-        <div class="field"><label for="regPass">Password</label><input class="control" id="regPass" type="password" minlength="6" autocomplete="new-password" placeholder="কমপক্ষে 6 অক্ষর"></div>
-        <div class="field"><label for="regLevel">JLPT Target</label><select class="control" id="regLevel"><option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option></select></div>
-        <button class="primary" id="regBtn" type="button">Account তৈরি করুন</button>
-        <p class="helper">Email verification দরকার হলে confirmation mail-এ tap করার পর Profile খুলবে।</p>
+        <form id="regForm" novalidate>
+          <div class="field"><label for="regName">আপনার নাম</label><input class="control" id="regName" autocomplete="name" required placeholder="যেমন: MD SAMMIR"></div>
+          <div class="field"><label for="regEmail">Gmail / Email</label><input class="control" id="regEmail" type="email" autocomplete="email" inputmode="email" required placeholder="name@gmail.com"></div>
+          <div class="field"><label for="regPass">Password</label><input class="control" id="regPass" type="password" minlength="8" autocomplete="new-password" required placeholder="কমপক্ষে 8 অক্ষর"></div>
+          <div class="field"><label for="regLevel">JLPT Target</label><select class="control" id="regLevel"><option>N5</option><option>N4</option><option>N3</option><option>N2</option><option>N1</option></select></div>
+          <button class="primary" id="regBtn" type="submit">Account তৈরি করুন</button>
+          <p class="helper">Account তৈরির পর Gmail-এ verification link যাবে। Link খুললে verification complete হয়ে Profile-এ যাবে।</p>
+        </form>
       </div>
 
       <div class="msg" id="msg" role="status" aria-live="polite"></div>
-      <div class="security"><span class="lock">🔒</span><span>আপনার password আমরা দেখতে বা সংরক্ষণ করি না। Authentication Supabase Auth দ্বারা নিরাপদভাবে পরিচালিত হয়।</span></div>
+      <div class="verify-tools" id="verifyTools"><p id="verifyHint">Verification mail না পেলে spam/junk folder দেখুন, তারপর আবার পাঠাতে পারেন।</p><button class="secondary" id="resendBtn" type="button">Verification email আবার পাঠান</button></div>
+      <div class="security"><span>🔒</span><span>Password কখনো আমাদের database-এ plain text হিসেবে রাখা হয় না। Authentication Supabase Auth দ্বারা পরিচালিত হয়।</span></div>
       <a class="home" href="/">← হোমে ফিরে যান</a>
     </section>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="/supabase-config.js"></script>
-  <script src="/account.js?v=20260817-4"></script>
+  <script src="/account.js?v=20260904-1"></script>
   <script>
     const $=id=>document.getElementById(id);
-    const els={loginTab:$('loginTab'),regTab:$('regTab'),loginPane:$('loginPane'),regPane:$('regPane'),msg:$('msg'),loginBtn:$('loginBtn'),regBtn:$('regBtn'),googleBtn:$('googleBtn')};
+    const els={loginTab:$('loginTab'),regTab:$('regTab'),loginPane:$('loginPane'),regPane:$('regPane'),msg:$('msg'),loginBtn:$('loginBtn'),regBtn:$('regBtn'),forgotBtn:$('forgotBtn'),verifyTools:$('verifyTools'),resendBtn:$('resendBtn')};
+    const emailOk=v=>/^\S+@\S+\.\S+$/.test(v);
     function show(which){const login=which==='login';els.loginTab.classList.toggle('active',login);els.regTab.classList.toggle('active',!login);els.loginPane.classList.toggle('active',login);els.regPane.classList.toggle('active',!login)}
     function message(text,bad=false){els.msg.className='msg '+(bad?'bad':'good');els.msg.textContent=text}
-    function busy(btn,on,label){btn.disabled=on;if(label)btn.dataset.normal=btn.dataset.normal||btn.textContent;btn.textContent=on?(label||'অপেক্ষা করুন...'):(btn.dataset.normal||btn.textContent)}
-    function friendly(err){const s=(err?.message||String(err||'')).toLowerCase();if(s.includes('provider is not enabled')||s.includes('unsupported provider'))return 'Google login এখনো server-এ enable করা নেই। নিচের Email option ব্যবহার করুন।';if(s.includes('invalid login credentials'))return 'Email অথবা password সঠিক নয়।';if(s.includes('already registered')||s.includes('already been registered'))return 'এই Email দিয়ে account আগে থেকেই আছে। Login tab ব্যবহার করুন।';if(s.includes('rate limit')||s.includes('security purposes'))return 'একটু অপেক্ষা করে আবার চেষ্টা করুন। একই request বারবার পাঠাবেন না।';return err?.message||'কিছু একটা সমস্যা হয়েছে। আবার চেষ্টা করুন।'}
+    function busy(btn,on,label){if(!btn)return;btn.disabled=on;btn.dataset.normal=btn.dataset.normal||btn.textContent;btn.textContent=on?(label||'অপেক্ষা করুন...'):btn.dataset.normal}
+    function revealResend(email=''){if(email){try{localStorage.setItem('an_pending_verify_email',email)}catch(_){}}els.verifyTools.classList.add('show')}
+    function friendly(err){const s=(err?.message||String(err||'')).toLowerCase();if(s.includes('email not confirmed'))return 'আপনার Email এখনো verify হয়নি। Gmail-এর verification link খুলুন অথবা নিচে Resend চাপুন।';if(s.includes('invalid login credentials'))return 'Email অথবা password সঠিক নয়।';if(s.includes('already registered')||s.includes('already been registered')||s.includes('user already registered'))return 'এই Email দিয়ে account আগে থেকেই আছে। Login tab ব্যবহার করুন।';if(s.includes('rate limit')||s.includes('security purposes'))return 'অনেকবার request হয়েছে। কিছুক্ষণ পরে আবার চেষ্টা করুন।';if(s.includes('network')||s.includes('fetch'))return 'ইন্টারনেট connection check করে আবার চেষ্টা করুন।';return err?.message||'কিছু একটা সমস্যা হয়েছে। আবার চেষ্টা করুন।'}
 
     els.loginTab.onclick=()=>show('login');els.regTab.onclick=()=>show('register');
 
-    els.googleBtn.onclick=async()=>{try{busy(els.googleBtn,true,'Google খুলছে...');await AN.signInGoogle()}catch(e){busy(els.googleBtn,false);message(friendly(e),true)}};
+    $('loginForm').addEventListener('submit',async e=>{e.preventDefault();const email=$('loginEmail').value.trim(),pass=$('loginPass').value;if(!emailOk(email)||!pass)return message('সঠিক Email এবং password দিন।',true);try{busy(els.loginBtn,true,'Login হচ্ছে...');const data=await AN.signInPassword(email,pass);if(!data?.user?.email_confirmed_at&&!data?.user?.confirmed_at){revealResend(email);throw new Error('Email not confirmed')}await AN.ensureProfile();await AN.log('login',{module:'auth'});message('Login সফল হয়েছে।');location.replace('/profile.html')}catch(err){if((err?.message||'').toLowerCase().includes('email not confirmed'))revealResend(email);message(friendly(err),true)}finally{busy(els.loginBtn,false)}});
 
-    els.loginBtn.onclick=async()=>{const email=$('loginEmail').value.trim(),pass=$('loginPass').value;if(!email||!pass)return message('Email এবং password দিন।',true);try{busy(els.loginBtn,true,'Login হচ্ছে...');await AN.signInPassword(email,pass);await AN.ensureProfile();await AN.log('login',{module:'auth'});location.replace('/profile.html')}catch(e){message(friendly(e),true)}finally{busy(els.loginBtn,false)}};
+    $('regForm').addEventListener('submit',async e=>{e.preventDefault();const full_name=$('regName').value.trim(),email=$('regEmail').value.trim(),password=$('regPass').value,jlpt_target=$('regLevel').value;if(!full_name||!emailOk(email)||password.length<8)return message('নাম, সঠিক Email এবং কমপক্ষে 8 অক্ষরের password দিন।',true);try{busy(els.regBtn,true,'Account তৈরি হচ্ছে...');const data=await AN.signUpEmail({email,password,full_name,jlpt_target});if(data.session){await AN.ensureProfile();location.replace('/profile.html')}else{revealResend(email);message('Account তৈরি হয়েছে। Gmail inbox-এ verification mail পাঠানো হয়েছে। Link খুলে verification complete করুন।')}}catch(err){message(friendly(err),true)}finally{busy(els.regBtn,false)}});
 
-    els.regBtn.onclick=async()=>{const full_name=$('regName').value.trim(),email=$('regEmail').value.trim(),password=$('regPass').value,jlpt_target=$('regLevel').value;if(!full_name||!email||password.length<6)return message('নাম, Email এবং কমপক্ষে 6 অক্ষরের password দিন।',true);try{busy(els.regBtn,true,'Account তৈরি হচ্ছে...');const data=await AN.signUpEmail({email,password,full_name,jlpt_target});if(data.session){await AN.ensureProfile();location.replace('/profile.html')}else{message('Account তৈরি হয়েছে। Gmail inbox-এ confirmation mail check করুন।')}}catch(e){message(friendly(e),true)}finally{busy(els.regBtn,false)}};
+    els.forgotBtn.onclick=async()=>{const email=$('loginEmail').value.trim();if(!emailOk(email))return message('আগে Login box-এ আপনার Email লিখুন।',true);try{busy(els.forgotBtn,true,'পাঠানো হচ্ছে...');await AN.requestPasswordReset(email);message('যদি এই Email-এর account থাকে, password reset link পাঠানো হয়েছে। Gmail ও Spam folder check করুন।')}catch(err){message(friendly(err),true)}finally{busy(els.forgotBtn,false)}};
+
+    els.resendBtn.onclick=async()=>{const email=$('regEmail').value.trim()||AN.pendingVerificationEmail();if(!emailOk(email))return message('Register tab-এ আপনার Email লিখে আবার চেষ্টা করুন।',true);const now=Date.now(),last=Number(sessionStorage.getItem('an_verify_resend_at')||0),wait=Math.ceil((60000-(now-last))/1000);if(now-last<60000)return message(`আর ${wait} সেকেন্ড পরে আবার পাঠাতে পারবেন।`,true);try{busy(els.resendBtn,true,'পাঠানো হচ্ছে...');await AN.resendSignupEmail(email);sessionStorage.setItem('an_verify_resend_at',String(Date.now()));message('নতুন verification email পাঠানো হয়েছে। আগের link ব্যবহার না করে নতুন link খুলুন।')}catch(err){message(friendly(err),true)}finally{busy(els.resendBtn,false)}};
 
     if(location.hash==='#register')show('register');
-    (async()=>{try{if(await AN.session())location.replace('/profile.html')}catch(e){}})();
+    if(AN.pendingVerificationEmail())revealResend();
+    (async()=>{try{if(await AN.session())location.replace('/profile.html')}catch(_){}})();
   </script>
 </body>
 </html>

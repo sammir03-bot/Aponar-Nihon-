@@ -9,13 +9,37 @@
     auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}
   });
 
-  const clean=v=>typeof v==='string'?v.trim():v;
   const PROD_ORIGIN='https://app.aponar-nihon.workers.dev';
+  const CALLBACK_PATH='/auth-callback.html';
+  const clean=v=>typeof v==='string'?v.trim():v;
+
   const appOrigin=()=>{
     const host=(location.hostname||'').toLowerCase();
-    if(host==='localhost'||host==='127.0.0.1'||host==='0.0.0.0'||host==='[::1]') return PROD_ORIGIN;
     if(location.protocol==='file:') return PROD_ORIGIN;
+    if(host==='localhost'||host==='127.0.0.1'||host==='0.0.0.0'||host==='[::1]') return location.origin;
     return location.origin||PROD_ORIGIN;
+  };
+
+  const safeNext=(value, fallback='/profile.html')=>{
+    try{
+      const raw=clean(value||'');
+      if(!raw||raw.startsWith('//')) return fallback;
+      const url=new URL(raw,appOrigin());
+      if(url.origin!==appOrigin()) return fallback;
+      return `${url.pathname}${url.search}${url.hash}`;
+    }catch(_){return fallback;}
+  };
+
+  const callbackUrl=(next='/profile.html')=>{
+    const url=new URL(CALLBACK_PATH,appOrigin());
+    url.searchParams.set('next',safeNext(next));
+    return url.toString();
+  };
+
+  const storage={
+    set(key,value){try{localStorage.setItem(key,value)}catch(_){ }},
+    get(key){try{return localStorage.getItem(key)||''}catch(_){return ''}},
+    remove(key){try{localStorage.removeItem(key)}catch(_){ }}
   };
 
   async function getSession(){
@@ -69,8 +93,10 @@
   }
 
   async function signInGoogle(){
-    const redirectTo=`${appOrigin()}/profile.html`;
-    const {data,error}=await sb.auth.signInWithOAuth({provider:'google',options:{redirectTo}});
+    const {data,error}=await sb.auth.signInWithOAuth({
+      provider:'google',
+      options:{redirectTo:callbackUrl('/profile.html')}
+    });
     if(error) throw error;
     return data;
   }
@@ -82,16 +108,103 @@
   }
 
   async function signUpEmail({email,password,full_name,jlpt_target='N5'}){
+    const normalizedEmail=clean(email);
     const {data,error}=await sb.auth.signUp({
-      email:clean(email),
+      email:normalizedEmail,
       password,
       options:{
-        emailRedirectTo:`${appOrigin()}/profile.html`,
+        emailRedirectTo:callbackUrl('/profile.html?verified=1'),
         data:{full_name:clean(full_name||''),jlpt_target:clean(jlpt_target||'N5')}
       }
     });
     if(error) throw error;
+    if(!data.session) storage.set('an_pending_verify_email',normalizedEmail);
     return data;
+  }
+
+  async function resendSignupEmail(email){
+    const normalizedEmail=clean(email||storage.get('an_pending_verify_email'));
+    if(!normalizedEmail) throw new Error('Verification email address পাওয়া যায়নি।');
+    const {data,error}=await sb.auth.resend({
+      type:'signup',
+      email:normalizedEmail,
+      options:{emailRedirectTo:callbackUrl('/profile.html?verified=1')}
+    });
+    if(error) throw error;
+    storage.set('an_pending_verify_email',normalizedEmail);
+    return data;
+  }
+
+  async function requestPasswordReset(email){
+    const normalizedEmail=clean(email);
+    if(!normalizedEmail) throw new Error('Email দিন।');
+    const {data,error}=await sb.auth.resetPasswordForEmail(normalizedEmail,{
+      redirectTo:callbackUrl('/reset-password.html')
+    });
+    if(error) throw error;
+    return data;
+  }
+
+  async function updatePassword(password){
+    const {data,error}=await sb.auth.updateUser({password});
+    if(error) throw error;
+    return data;
+  }
+
+  function authUrlError(){
+    const query=new URLSearchParams(location.search);
+    const hash=new URLSearchParams((location.hash||'').replace(/^#/,''));
+    const code=query.get('error_code')||hash.get('error_code')||query.get('error')||hash.get('error');
+    const description=query.get('error_description')||hash.get('error_description');
+    if(!code&&!description) return null;
+    const message=decodeURIComponent((description||code||'Authentication failed').replace(/\+/g,' '));
+    const err=new Error(message);
+    err.code=code||'auth_redirect_error';
+    return err;
+  }
+
+  async function waitForSession(timeoutMs=3000){
+    const existing=await getSession();
+    if(existing) return existing;
+    return await new Promise(resolve=>{
+      let done=false;
+      let timer=null;
+      let subscription=null;
+      const finish=session=>{if(done)return;done=true;if(timer)clearTimeout(timer);subscription?.unsubscribe?.();resolve(session||null)};
+      const authChange=sb.auth.onAuthStateChange((_event,session)=>{if(session) finish(session)});
+      subscription=authChange?.data?.subscription||null;
+      timer=setTimeout(async()=>{try{finish(await getSession())}catch(_){finish(null)}},timeoutMs);
+    });
+  }
+
+  async function completeAuthRedirect(){
+    const redirectError=authUrlError();
+    if(redirectError) throw redirectError;
+
+    let session=await waitForSession(1800);
+    const url=new URL(location.href);
+
+    if(!session&&url.searchParams.get('code')){
+      const {data,error}=await sb.auth.exchangeCodeForSession(url.searchParams.get('code'));
+      if(error) throw error;
+      session=data.session||null;
+    }
+
+    if(!session){
+      const hash=new URLSearchParams((location.hash||'').replace(/^#/,''));
+      const access_token=hash.get('access_token');
+      const refresh_token=hash.get('refresh_token');
+      if(access_token&&refresh_token){
+        const {data,error}=await sb.auth.setSession({access_token,refresh_token});
+        if(error) throw error;
+        session=data.session||null;
+      }
+    }
+
+    if(!session) throw new Error('Verification linkটি invalid বা expire হয়ে গেছে। নতুন verification email পাঠান।');
+    await ensureProfile();
+    storage.remove('an_pending_verify_email');
+    return {session,next:safeNext(url.searchParams.get('next'),'/profile.html')};
   }
 
   async function logout(){
@@ -137,6 +250,11 @@
     signInGoogle,
     signInPassword,
     signUpEmail,
+    resendSignupEmail,
+    requestPasswordReset,
+    updatePassword,
+    completeAuthRedirect,
+    pendingVerificationEmail:()=>storage.get('an_pending_verify_email'),
     logout,
     log,
     progress
