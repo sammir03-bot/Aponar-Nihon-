@@ -11,6 +11,7 @@
 
   const PROD_ORIGIN='https://app.aponar-nihon.workers.dev';
   const CALLBACK_PATH='/auth-callback.html';
+  const RESET_PATH='/reset-password.html';
   const clean=v=>typeof v==='string'?v.trim():v;
 
   const appOrigin=()=>{
@@ -20,7 +21,7 @@
     return location.origin||PROD_ORIGIN;
   };
 
-  const safeNext=(value, fallback='/profile.html')=>{
+  const safeNext=(value,fallback='/profile.html')=>{
     try{
       const raw=clean(value||'');
       if(!raw||raw.startsWith('//')) return fallback;
@@ -30,11 +31,10 @@
     }catch(_){return fallback;}
   };
 
-  const callbackUrl=(next='/profile.html')=>{
-    const url=new URL(CALLBACK_PATH,appOrigin());
-    url.searchParams.set('next',safeNext(next));
-    return url.toString();
-  };
+  // Auth emails/OAuth must always return to production.
+  // This prevents localhost previews from leaking into Supabase verification links.
+  const callbackUrl=()=>new URL(CALLBACK_PATH,PROD_ORIGIN).toString();
+  const resetUrl=()=>new URL(RESET_PATH,PROD_ORIGIN).toString();
 
   const storage={
     set(key,value){try{localStorage.setItem(key,value)}catch(_){ }},
@@ -82,7 +82,9 @@
     const allowed=['full_name','school','nationality','jlpt_target','study_goal','avatar_url','phone','city','preferred_language','daily_study_minutes','bio'];
     const row={};
     for(const key of allowed){
-      if(Object.prototype.hasOwnProperty.call(values,key)) row[key]=typeof values[key]==='string'?values[key].trim():values[key];
+      if(Object.prototype.hasOwnProperty.call(values,key)){
+        row[key]=typeof values[key]==='string'?values[key].trim():values[key];
+      }
     }
     row.updated_at=new Date().toISOString();
     row.last_active_at=new Date().toISOString();
@@ -95,7 +97,7 @@
   async function signInGoogle(){
     const {data,error}=await sb.auth.signInWithOAuth({
       provider:'google',
-      options:{redirectTo:callbackUrl('/profile.html')}
+      options:{redirectTo:callbackUrl()}
     });
     if(error) throw error;
     return data;
@@ -113,7 +115,7 @@
       email:normalizedEmail,
       password,
       options:{
-        emailRedirectTo:callbackUrl('/profile.html?verified=1'),
+        emailRedirectTo:callbackUrl(),
         data:{full_name:clean(full_name||''),jlpt_target:clean(jlpt_target||'N5')}
       }
     });
@@ -128,7 +130,7 @@
     const {data,error}=await sb.auth.resend({
       type:'signup',
       email:normalizedEmail,
-      options:{emailRedirectTo:callbackUrl('/profile.html?verified=1')}
+      options:{emailRedirectTo:callbackUrl()}
     });
     if(error) throw error;
     storage.set('an_pending_verify_email',normalizedEmail);
@@ -139,7 +141,7 @@
     const normalizedEmail=clean(email);
     if(!normalizedEmail) throw new Error('Email দিন।');
     const {data,error}=await sb.auth.resetPasswordForEmail(normalizedEmail,{
-      redirectTo:callbackUrl('/reset-password.html')
+      redirectTo:resetUrl()
     });
     if(error) throw error;
     return data;
@@ -170,10 +172,18 @@
       let done=false;
       let timer=null;
       let subscription=null;
-      const finish=session=>{if(done)return;done=true;if(timer)clearTimeout(timer);subscription?.unsubscribe?.();resolve(session||null)};
-      const authChange=sb.auth.onAuthStateChange((_event,session)=>{if(session) finish(session)});
+      const finish=session=>{
+        if(done) return;
+        done=true;
+        if(timer) clearTimeout(timer);
+        subscription?.unsubscribe?.();
+        resolve(session||null);
+      };
+      const authChange=sb.auth.onAuthStateChange((_event,session)=>{if(session) finish(session);});
       subscription=authChange?.data?.subscription||null;
-      timer=setTimeout(async()=>{try{finish(await getSession())}catch(_){finish(null)}},timeoutMs);
+      timer=setTimeout(async()=>{
+        try{finish(await getSession());}catch(_){finish(null);}
+      },timeoutMs);
     });
   }
 
@@ -204,7 +214,7 @@
     if(!session) throw new Error('Verification linkটি invalid বা expire হয়ে গেছে। নতুন verification email পাঠান।');
     await ensureProfile();
     storage.remove('an_pending_verify_email');
-    return {session,next:safeNext(url.searchParams.get('next'),'/profile.html')};
+    return {session,next:'/profile.html?verified=1'};
   }
 
   async function logout(){
@@ -226,7 +236,7 @@
         metadata:{...meta,module,item_key,url:location.pathname+location.search+location.hash}
       });
       await sb.rpc('touch_profile_activity');
-    }catch(e){console.debug('activity log',e)}
+    }catch(e){console.debug('activity log',e);}
   }
 
   async function progress(module,item_key,progressValue=0,score=null,metadata={}){
@@ -237,13 +247,13 @@
         user_id:s.user.id,module,item_key,progress:progressValue,score,metadata,updated_at:new Date().toISOString()
       },{onConflict:'user_id,module,item_key'});
       await log('progress_update',{module,item_key,progress:progressValue,score});
-    }catch(e){console.debug('progress',e)}
+    }catch(e){console.debug('progress',e);}
   }
 
   window.AN={
     sb,
     session:getSession,
-    user:async()=>{const s=await getSession();return s?.user||null},
+    user:async()=>{const s=await getSession();return s?.user||null;},
     profile:getProfile,
     ensureProfile,
     updateProfile,
