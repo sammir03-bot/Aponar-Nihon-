@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="bn" dir="ltr" data-language-preset="bn" data-source-language="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#08745b">
+  <meta name="description" content="জাপানে খাবারের barcode ও ingredient list পরীক্ষা করার zero-cost Halal Food Scanner — Aponar Nihon।">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <title>Halal Food Scanner | আপনার নিহোন</title>
+  <script id="legacy-origin-redirect">
+  (function(){
+    var h=location.hostname;if(h!=="sammir03-bot.github.io"&&h!=="aponar-nihon.eu.cc")return;var p=location.pathname||"/";
+    if(h==="sammir03-bot.github.io"){var bases=["/Aponar-Nihon-","/Aponar-Nihon"];for(var i=0;i<bases.length;i++){var base=bases[i];if(p===base||p===base+"/"){p="/";break}if(p.indexOf(base+"/")===0){p=p.slice(base.length)||"/";break}}}
+    if(p==="/index.html")p="/";else if(p.endsWith("/index.html"))p=p.slice(0,-10);else if(p.endsWith(".html"))p=p.slice(0,-5);
+    location.replace("https://app.aponar-nihon.workers.dev"+p+location.search+location.hash);
+  })();
+  </script>
+  <link rel="canonical" href="https://app.aponar-nihon.workers.dev/halal-scanner">
+  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="apple-touch-icon" href="/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://world.openfoodfacts.org" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="/assets/css/app-shell.css?v=20260829">
+  <link rel="stylesheet" href="/assets/css/halal-nav.css?v=20260904">
+  <link rel="stylesheet" href="/assets/css/halal-scanner.css?v=20260904">
+</head>
+<body class="app-page" data-page="halal">
+  <header class="app-topbar">
+    <div class="app-shell app-topbar-inner">
+      <a class="app-brand" href="/" aria-label="আপনার নিহোন হোম" data-i18n-no-content>
+        <img src="/logo.png" alt="আপনার নিহোন লোগো" width="44" height="44">
+        <span class="app-brand-copy" lang="bn"><strong>আপনার নিহোন</strong><small>JAPANESE LEARNING HUB</small></span>
+      </a>
+      <div class="app-top-actions">
+        <a class="app-icon-button" href="/muslim-japan.html" aria-label="Muslim Japan"><i class="fa-solid fa-mosque" aria-hidden="true"></i></a>
+        <a class="app-icon-button" href="/profile.html" aria-label="প্রোফাইল"><i class="fa-solid fa-user" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-shell app-main halal-main">
+    <section class="halal-hero">
+      <span class="halal-badge"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> ZERO-COST · PRIVACY-FIRST</span>
+      <h1>Halal Food Scanner</h1>
+      <p>জাপানের খাবারের barcode scan করুন অথবা প্যাকেটের <span lang="ja">原材料名</span> লিখে ingredient check করুন। সন্দেহজনক উপাদান থাকলে কারণসহ দেখাবে—তথ্য না থাকলে কখনোই অনুমান করে “Halal” বলবে না।</p>
+      <div class="trust-row">
+        <span class="trust-pill"><i class="fa-solid fa-camera" aria-hidden="true"></i> Camera scan</span>
+        <span class="trust-pill"><i class="fa-solid fa-yen-sign" aria-hidden="true"></i> Paid API নেই</span>
+        <span class="trust-pill"><i class="fa-solid fa-lock" aria-hidden="true"></i> History এই ডিভাইসেই</span>
+      </div>
+    </section>
+
+    <div class="halal-layout">
+      <section class="halal-card" aria-labelledby="barcode-title">
+        <div class="halal-card-head">
+          <span class="halal-card-icon"><i class="fa-solid fa-barcode" aria-hidden="true"></i></span>
+          <div><h2 id="barcode-title">Barcode Scanner</h2><div class="halal-card-sub">JAN / EAN / UPC barcode · Japan food lookup</div></div>
+        </div>
+
+        <div class="camera-shell" id="cameraShell">
+          <video id="scannerVideo" playsinline muted hidden></video>
+          <div class="camera-empty" id="cameraEmpty"><i class="fa-solid fa-camera"></i><b>ক্যামেরা চালু করে barcode সামনে ধরুন</b><span>ক্যামেরা permission শুধু scan করার সময় ব্যবহার হবে।</span></div>
+          <div class="scan-frame" aria-hidden="true"></div>
+          <div class="scan-status" id="scanStatus" role="status" aria-live="polite">স্ক্যান শুরু করতে নিচের button চাপুন</div>
+        </div>
+
+        <div class="scan-actions">
+          <button class="halal-btn primary" id="startScanBtn" type="button"><i class="fa-solid fa-camera"></i> ক্যামেরা দিয়ে স্ক্যান</button>
+          <button class="halal-btn secondary" id="imageScanBtn" type="button"><i class="fa-solid fa-image"></i> ছবি থেকে</button>
+          <input id="barcodeImageInput" type="file" accept="image/*" capture="environment" hidden>
+        </div>
+
+        <form class="manual-box" id="barcodeForm">
+          <label class="manual-label" for="barcodeInput">Barcode number লিখেও check করতে পারেন</label>
+          <div class="input-row">
+            <input class="halal-input" id="barcodeInput" inputmode="numeric" autocomplete="off" maxlength="18" placeholder="যেমন: 4901234567890" aria-label="Barcode number">
+            <button class="halal-btn dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Check</button>
+          </div>
+          <p class="lookup-note">Product data Open Food Facts-এর open database থেকে নেওয়া হয়। Database-এ product না থাকলে ingredient text দিয়ে check করুন।</p>
+        </form>
+
+        <article class="result-card" id="resultCard" hidden aria-live="polite">
+          <div class="result-top">
+            <img class="product-image" id="productImage" alt="" hidden>
+            <div class="result-meta"><h3 id="productName">Product</h3><div class="result-brand" id="productBrand"></div><div class="result-code" id="productCode"></div></div>
+          </div>
+          <div class="verdict" id="verdictBox" data-status="unknown">
+            <span class="verdict-icon" id="verdictIcon"><i class="fa-solid fa-circle-question"></i></span>
+            <div><h4 id="verdictTitle">তথ্য যাচাই হচ্ছে</h4><p id="verdictText"></p></div>
+          </div>
+          <div class="flag-list" id="flagList"></div>
+          <div class="ingredients-box" id="ingredientsBox" hidden><b>Database-এর ingredient list</b><p id="productIngredients"></p></div>
+        </article>
+      </section>
+
+      <aside>
+        <section class="halal-card ingredient-card" aria-labelledby="ingredient-title">
+          <div class="halal-card-head">
+            <span class="halal-card-icon"><i class="fa-solid fa-list-check" aria-hidden="true"></i></span>
+            <div><h2 id="ingredient-title">Ingredient Checker</h2><div class="halal-card-sub"><span lang="ja">原材料名</span> copy করে paste করুন</div></div>
+          </div>
+          <textarea class="halal-textarea" id="ingredientInput" placeholder="উদাহরণ: 小麦粉、砂糖、植物油脂、乳化剤…" aria-label="Ingredient list"></textarea>
+          <div class="ingredient-actions">
+            <button class="halal-btn primary" id="analyzeIngredientsBtn" type="button"><i class="fa-solid fa-magnifying-glass"></i> Ingredient check</button>
+            <button class="halal-btn secondary" id="clearIngredientsBtn" type="button">Clear</button>
+          </div>
+
+          <div class="guide-list" aria-label="Result guide">
+            <div class="guide-item"><span class="guide-color red"></span><div><b>Red — স্পষ্ট সমস্যা</b><span>Pork/pig-derived বা alcohol-related ingredient signal পাওয়া গেছে।</span></div></div>
+            <div class="guide-item"><span class="guide-color yellow"></span><div><b>Yellow — উৎস যাচাই দরকার</b><span>Gelatin, emulsifier, shortening-এর মতো source-dependent ingredient।</span></div></div>
+            <div class="guide-item"><span class="guide-color green"></span><div><b>Green — স্পষ্ট signal মেলেনি</b><span>এটা Halal certification নয়; package/certifier দিয়ে final check করুন।</span></div></div>
+          </div>
+        </section>
+
+        <section class="halal-card history-card" aria-labelledby="history-title">
+          <div class="halal-card-head">
+            <span class="halal-card-icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
+            <div style="flex:1"><h2 id="history-title">Recent Scan</h2><div class="halal-card-sub">শেষ ১০টি result · শুধু এই device-এ</div></div>
+            <button class="history-clear" id="clearHistoryBtn" type="button">সব মুছুন</button>
+          </div>
+          <div class="history-list" id="historyList"></div>
+        </section>
+      </aside>
+    </div>
+
+    <section class="halal-disclaimer">
+      <strong>গুরুত্বপূর্ণ:</strong> এই scanner ingredient text-এর rule-based screening করে; এটি কোনো মুফতি, halal certifier বা official certification-এর বিকল্প নয়। Recipe, supplier ও ingredient source বদলাতে পারে—সন্দেহ থাকলে প্যাকেটের certification এবং manufacturer-এর তথ্য যাচাই করুন। Product data community-maintained Open Food Facts থেকে আসে, তাই তথ্য অসম্পূর্ণ বা ভুল হতে পারে।
+      <a href="/contact.html?topic=halal-scanner" style="color:#08745b;font-weight:900"> ভুল result রিপোর্ট করুন</a>।
+    </section>
+  </main>
+
+  <footer class="app-shell app-footer">
+    <div class="app-footer-links"><a href="/muslim-japan.html">Muslim Japan</a><a href="/contact.html">যোগাযোগ</a><a href="/privacy-policy.html">Privacy</a><a href="/Disclaimer">Disclaimer</a></div>
+    <p>Product data: Open Food Facts · © ২০২৬ আপনার নিহোন</p>
+  </footer>
+
+  <div class="app-dock-wrap">
+    <nav class="app-dock" aria-label="প্রধান অ্যাপ নেভিগেশন">
+      <a class="app-dock-link" data-nav="home" href="/"><i class="fa-solid fa-house" aria-hidden="true"></i><span>হোম</span></a>
+      <a class="app-dock-link" data-nav="cv" href="/cv-builder.html"><i class="fa-solid fa-file-signature" aria-hidden="true"></i><span>CV Builder</span></a>
+      <a class="app-dock-link app-dock-link--halal" data-nav="halal" href="/halal-scanner.html"><i class="fa-solid fa-barcode" aria-hidden="true"></i><span>হালাল স্ক্যান</span></a>
+      <a class="app-dock-link" data-nav="tutor" href="/tutor-section.html"><i class="fa-solid fa-robot" aria-hidden="true"></i><span>AI Tutor</span></a>
+      <a class="app-dock-link" data-nav="profile" href="/profile.html"><i class="fa-solid fa-circle-user" aria-hidden="true"></i><span>Profile</span></a>
+    </nav>
+  </div>
+
+  <div class="scanner-toast" id="scannerToast" role="status" aria-live="polite"></div>
+  <script src="/assets/js/i18n.js?v=20260901"></script>
+  <script src="/assets/js/app-shell.js?v=20260904"></script>
+  <script src="/assets/js/halal-scanner.js?v=20260904"></script>
+</body>
+</html>
