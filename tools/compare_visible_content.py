@@ -31,6 +31,7 @@ MOVED_PAGE_ARCHIVES = {
     "ssw-job.html": "archive/ssw-job-v1.html",
     "ssw-salary.html": "archive/ssw-salary-v1.html",
     "ssw-faq.html": "archive/ssw-faq-v1.html",
+    "profile.html": "archive/profile-v1-pre-premium.html",
 }
 
 
