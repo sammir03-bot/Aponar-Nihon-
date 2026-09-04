@@ -10,7 +10,7 @@ test('home mounts daily Japanese news below daily challenge', async ({ page }) =
   await expect(dailyChallenge).toBeVisible();
   await expect(news).toBeVisible();
   await expect(news.locator('.daily-news-card')).toHaveCount(3);
-  await expect(news.locator('.daily-news-card').first()).toContainText('日本');
+  await expect(news.locator('.daily-news-card h3').first()).toContainText(/[\u3040-\u30ff\u3400-\u9fff]/);
 
   const orderIsCorrect = await page.evaluate(() => {
     const challenge = document.querySelector('.app-home-duo');
