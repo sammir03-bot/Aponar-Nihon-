@@ -22,7 +22,7 @@ MOVED_PAGE_ARCHIVES = {
     "n3.html": "archive/n3-hub-v1.html",
     "quiz.html": "archive/quiz-hub-v1.html",
     "interview.html": "archive/interview-hub-v1.html",
-    "ssw.html": "archive/ssw-hub-v1.html",
+    "ssw.html": "archive/ssw-hub-v2-pre-polish.html",
     "ssw-overview.html": "archive/ssw-overview-v1.html",
     "ssw-visa-process.html": "archive/ssw-visa-process-v1.html",
     "ssw-exam.html": "archive/ssw-exam-v1.html",
