@@ -11,6 +11,7 @@
     "#japan-start": "/japan-life.html",
     "#interviews": "/interview.html",
     "#essential-phrases": "/essential-phrases.html",
+    "#halal-scan": "/halal-scanner.html",
     "#guide": "/study-guide.html",
     "#about": "/about.html",
     "#contact": "/contact.html"
@@ -30,8 +31,27 @@
     fil: ["Magandang umaga", "Magandang hapon", "Magandang gabi"]
   };
 
+  var HALAL_COPY = {
+    bn: { nav: "হালাল স্ক্যান", title: "Halal Food Scanner", note: "বারকোড স্ক্যান · ingredient check" },
+    ja: { nav: "ハラール", title: "ハラール食品スキャナー", note: "バーコード · 原材料チェック" },
+    en: { nav: "Halal Scan", title: "Halal Food Scanner", note: "Barcode · ingredient check" },
+    vi: { nav: "Quét Halal", title: "Máy quét thực phẩm Halal", note: "Mã vạch · kiểm tra thành phần" },
+    ne: { nav: "हलाल स्क्यान", title: "हलाल फुड स्क्यानर", note: "बारकोड · सामग्री जाँच" },
+    hi: { nav: "हलाल स्कैन", title: "हलाल फ़ूड स्कैनर", note: "बारकोड · सामग्री जाँच" },
+    ur: { nav: "حلال اسکین", title: "حلال فوڈ اسکینر", note: "بارکوڈ · اجزاء کی جانچ" },
+    my: { nav: "ဟလာလ် စကင်", title: "Halal Food Scanner", note: "ဘားကုဒ် · ပါဝင်ပစ္စည်း စစ်ဆေး" },
+    zh: { nav: "清真扫描", title: "清真食品扫描器", note: "条码 · 配料检查" },
+    si: { nav: "හලාල් ස්කෑන්", title: "Halal Food Scanner", note: "Barcode · අමුද්‍රව්‍ය පරීක්ෂාව" },
+    fil: { nav: "Halal Scan", title: "Halal Food Scanner", note: "Barcode · ingredient check" }
+  };
+
   function tr(key, fallback) {
     return window.AponarI18n ? window.AponarI18n.t(key, fallback) : fallback;
+  }
+
+  function halalCopy() {
+    var language = window.AponarI18n ? window.AponarI18n.getLanguage() : "bn";
+    return HALAL_COPY[language] || HALAL_COPY.en;
   }
 
   function redirectLegacyHash() {
@@ -47,6 +67,73 @@
         // The website remains fully usable when service-worker registration is unavailable.
       });
     });
+  }
+
+  function ensureHalalAssets() {
+    if (document.querySelector('link[data-halal-nav-style]')) return;
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "/assets/css/halal-nav.css?v=20260904";
+    link.dataset.halalNavStyle = "true";
+    document.head.appendChild(link);
+  }
+
+  function upgradeHalalNavigation() {
+    var dock = document.querySelector(".app-dock");
+    if (!dock) return;
+
+    var halal = dock.querySelector('[data-nav="halal"]');
+    if (!halal) {
+      halal = dock.querySelector('[data-nav="mock"]');
+      if (halal) {
+        halal.dataset.nav = "halal";
+        halal.href = "/halal-scanner.html";
+        halal.classList.add("app-dock-link--halal");
+        halal.innerHTML = '<i class="fa-solid fa-barcode" aria-hidden="true"></i><span></span>';
+      } else {
+        halal = document.createElement("a");
+        halal.className = "app-dock-link app-dock-link--halal";
+        halal.dataset.nav = "halal";
+        halal.href = "/halal-scanner.html";
+        halal.innerHTML = '<i class="fa-solid fa-barcode" aria-hidden="true"></i><span></span>';
+        dock.appendChild(halal);
+      }
+    }
+
+    halal.classList.add("app-dock-link--halal");
+    var tutor = dock.querySelector('[data-nav="tutor"]');
+    if (tutor && halal.nextElementSibling !== tutor) dock.insertBefore(halal, tutor);
+    var label = halal.querySelector("span");
+    if (label) label.textContent = halalCopy().nav;
+  }
+
+  function ensureHalalScannerEntry() {
+    if (document.body.dataset.page !== "home") return;
+    var grid = document.querySelector(".app-tools-grid");
+    if (!grid) return;
+
+    var card = grid.querySelector('.app-tool[href="/halal-scanner.html"]');
+    if (!card) {
+      card = document.createElement("a");
+      card.className = "app-tool app-tool-halal";
+      card.href = "/halal-scanner.html";
+      card.dataset.label = "Halal Food Scanner";
+      card.dataset.search = "halal food scanner barcode ingredient japan muslim হালাল খাবার স্ক্যান বারকোড 原材料 ハラール";
+      card.dataset.searchIcon = "fa-barcode";
+      card.innerHTML = '<span class="app-tool-icon"><i class="fa-solid fa-barcode" aria-hidden="true"></i></span><b></b><small></small><em class="app-tool-halal-badge">NEW</em>';
+      grid.insertBefore(card, grid.firstElementChild);
+    }
+
+    var copy = halalCopy();
+    var title = card.querySelector("b");
+    var note = card.querySelector("small");
+    if (title) title.textContent = copy.title;
+    if (note) note.textContent = copy.note;
+  }
+
+  function applyHalalLanguage() {
+    upgradeHalalNavigation();
+    ensureHalalScannerEntry();
   }
 
   function setActiveDock() {
@@ -105,6 +192,7 @@
     setQuick("/n4.html", "home.n4.note");
     setQuick("/n3.html", "home.n3.note");
     setQuick("/essential-phrases.html", "home.phrases");
+    ensureHalalScannerEntry();
     setupGreeting();
   }
 
@@ -241,6 +329,9 @@
   redirectLegacyHash();
   registerServiceWorker();
   document.addEventListener("DOMContentLoaded", function () {
+    ensureHalalAssets();
+    upgradeHalalNavigation();
+    ensureHalalScannerEntry();
     setActiveDock();
     setupLanguageSwitch();
     setupDashboardSearch();
@@ -248,5 +339,9 @@
     setupPwaInstall();
     applyHomeLanguage();
   });
-  window.addEventListener("aponar:languagechange", applyHomeLanguage);
+  window.addEventListener("aponar:languagechange", function () {
+    applyHomeLanguage();
+    applyHalalLanguage();
+    setActiveDock();
+  });
 })();
