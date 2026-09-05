@@ -52,7 +52,7 @@ Aponar Nihon does not sell user data. Production processing may involve Supabase
 
 ## Account deletion
 - External deletion URL: `https://app.aponar-nihon.workers.dev/delete-account.html`
-- Privacy policy: `https://app.aponar-nihon.workers.dev/privacy-policy.html`
+- Native app privacy policy: `https://app.aponar-nihon.workers.dev/app-privacy-policy.html`
 - Deletion flow should remove the Auth user and app-owned profile/activity/progress records through the authenticated backend flow, subject to any legally required retention.
 
 ## Play Console answers to verify at submission
