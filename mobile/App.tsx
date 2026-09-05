@@ -81,7 +81,7 @@ export default function App() {
     }
   };
 
-  return <><StatusBar style="dark" backgroundColor="#FFFFFF" /><NavigationContainer theme={theme}>
+  return <><StatusBar style="dark" /><NavigationContainer theme={theme}>
     <Stack.Navigator screenOptions={{
       headerBackTitle: 'Back',
       headerTintColor: colors.text,
