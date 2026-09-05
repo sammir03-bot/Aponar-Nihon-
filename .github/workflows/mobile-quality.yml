@@ -1,0 +1,58 @@
+name: Native Mobile Quality
+
+on:
+  push:
+    branches: [main, native-mobile-app-v1]
+    paths:
+      - 'mobile/**'
+      - 'tools/build_mobile_content.py'
+      - 'assets/data/halal-certificates.json'
+      - 'package.json'
+      - '.github/workflows/mobile-quality.yml'
+  pull_request:
+    paths:
+      - 'mobile/**'
+      - 'tools/build_mobile_content.py'
+      - 'assets/data/halal-certificates.json'
+      - 'package.json'
+
+permissions:
+  contents: read
+
+jobs:
+  typecheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: mobile/package.json
+      - name: Install pinned mobile dependencies
+        working-directory: mobile
+        run: npm install --ignore-scripts --no-audit --no-fund
+      - name: TypeScript
+        working-directory: mobile
+        run: npm run typecheck
+      - name: Expo doctor
+        working-directory: mobile
+        run: npx expo-doctor
+      - name: Generate native Android project
+        working-directory: mobile
+        run: npx expo prebuild --clean --no-install --platform android
+      - name: Generate native iOS project
+        working-directory: mobile
+        run: npx expo prebuild --clean --no-install --platform ios
+
+  content-parity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Verify native content extraction sees website pages
+        run: python3 tools/build_mobile_content.py --site . --out /tmp/aponar-mobile-content --check
