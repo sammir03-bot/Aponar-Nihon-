@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Japan economy news illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eaf5ff"/><stop offset="1" stop-color="#bcdcff"/></linearGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#d9e1ea"/></linearGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#31557a" flood-opacity=".18"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <circle cx="1030" cy="130" r="76" fill="#fff" opacity=".6"/>
+  <g transform="translate(105 100)">
+    <rect x="0" y="0" width="280" height="190" rx="24" fill="#fff" opacity=".96" filter="url(#s)"/>
+    <circle cx="140" cy="95" r="56" fill="#e94444"/>
+  </g>
+  <g transform="translate(375 155)" filter="url(#s)">
+    <path d="M225 0l210 118H15z" fill="#f5f7fa"/>
+    <rect x="52" y="118" width="350" height="290" rx="8" fill="url(#stone)"/>
+    <rect x="0" y="390" width="455" height="60" rx="12" fill="#c9d4df"/>
+    <g fill="#9baaba"><rect x="88" y="158" width="42" height="206"/><rect x="159" y="158" width="42" height="206"/><rect x="230" y="158" width="42" height="206"/><rect x="301" y="158" width="42" height="206"/></g>
+    <rect x="185" y="260" width="85" height="130" rx="6" fill="#768ba2"/>
+  </g>
+  <g transform="translate(820 250)">
+    <rect width="260" height="270" rx="30" fill="#fff" opacity=".96" filter="url(#s)"/>
+    <rect x="52" y="62" width="34" height="148" rx="8" fill="#9fd1ff"/><rect x="107" y="98" width="34" height="112" rx="8" fill="#58acef"/><rect x="162" y="42" width="34" height="168" rx="8" fill="#1677e8"/>
+    <path d="M45 222h170" stroke="#cbd9e7" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
