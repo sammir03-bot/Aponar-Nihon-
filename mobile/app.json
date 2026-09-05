@@ -26,6 +26,16 @@
       "permissions": ["CAMERA", "POST_NOTIFICATIONS"]
     },
     "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true,
+            "buildArchs": ["arm64-v8a", "armeabi-v7a"]
+          }
+        }
+      ],
       ["expo-camera", {"cameraPermission": "Halal Scanner দিয়ে পণ্যের barcode স্ক্যান করতে camera ব্যবহার করা হবে।"}],
       ["expo-image-picker", {"photosPermission": "CV Builder-এ আপনার নিজের ছবি নির্বাচন করতে photo library ব্যবহার করা হবে।"}],
       "expo-secure-store",
