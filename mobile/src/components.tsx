@@ -55,8 +55,6 @@ export function NativeContent({ blocks, sourcePath }: { blocks: ContentBlock[]; 
   </View>;
 }
 
-export const commonStyles = styles;
-
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.bg },
   scroll: { paddingBottom: 44 },
@@ -86,3 +84,5 @@ const styles = StyleSheet.create({
   tableRow: { flexDirection: 'row', borderBottomWidth: 1, borderColor: colors.border, paddingVertical: 8, gap: 8 },
   tableCell: { flex: 1, color: colors.text, fontSize: 14 }
 });
+
+export const commonStyles = styles;
