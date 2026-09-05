@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
   subtitle: { marginTop: 1, color: colors.muted, fontSize: 10.5, fontWeight: '700' },
   webWrap: { flex: 1, backgroundColor: colors.bg },
   web: { flex: 1, backgroundColor: colors.bg },
-  webLoading: { ...StyleSheet.absoluteFillObject, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.bg },
+  webLoading: { position: 'absolute', left: 0, right: 0, top: 0, bottom: 0, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.bg },
   center: { flex: 1, alignItems: 'center', justifyContent: 'center', padding: 22, backgroundColor: colors.bg },
   loadingText: { marginTop: 10, color: colors.muted, fontSize: 13, fontWeight: '700' },
   errorCard: { width: '100%', maxWidth: 420, alignItems: 'center', padding: 22, borderRadius: radius.lg, backgroundColor: '#FFFFFF', borderWidth: 1, borderColor: colors.border },
