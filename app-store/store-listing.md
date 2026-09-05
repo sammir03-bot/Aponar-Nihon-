@@ -32,7 +32,7 @@ Japanese,JLPT,N5,N4,N3,Bangla,Japan,Kanji,Vocabulary,Grammar,CV
 `https://app.aponar-nihon.workers.dev/contact.html`
 
 ## Privacy Policy URL
-`https://app.aponar-nihon.workers.dev/privacy-policy.html`
+`https://app.aponar-nihon.workers.dev/app-privacy-policy.html`
 
 ## Marketing URL
 `https://app.aponar-nihon.workers.dev/`
