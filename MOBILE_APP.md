@@ -64,7 +64,8 @@ These steps require the owner's Supabase dashboard auth configuration and/or ext
 
 ## Store/privacy material
 
-- Public policy: `privacy-policy.html` includes native permissions, AI Tutor, product lookup and mobile data handling.
+- Website policy remains unchanged for source-preservation architecture rules.
+- Native public policy: `app-privacy-policy.html` includes camera, photo picker, notifications, AI Tutor, product lookup and mobile data handling.
 - Google Play disclosure guide: `play-store/data-safety.md`.
 - App Store privacy guide: `app-store/privacy-details.md`.
 - App Store listing draft: `app-store/store-listing.md`.
