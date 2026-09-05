@@ -1,0 +1,53 @@
+name: Native Android APK
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/native-apk-build.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install mobile dependencies
+        working-directory: mobile
+        run: npm install --ignore-scripts --no-audit --no-fund
+
+      - name: Generate Android native project
+        working-directory: mobile
+        run: npx expo prebuild --clean --no-install --platform android
+
+      - name: Build debug APK
+        working-directory: mobile/android
+        run: chmod +x gradlew && ./gradlew assembleDebug --no-daemon
+
+      - name: Rename APK
+        run: cp mobile/android/app/build/outputs/apk/debug/app-debug.apk Aponar-Nihon-Native-Android.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Aponar-Nihon-Native-Android
+          path: Aponar-Nihon-Native-Android.apk
+          if-no-files-found: error
+          retention-days: 7
