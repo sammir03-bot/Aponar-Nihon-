@@ -37,17 +37,17 @@ jobs:
         working-directory: mobile
         run: npx expo prebuild --clean --no-install --platform android
 
-      - name: Build debug APK
+      - name: Build ARM64 debug APK
         working-directory: mobile/android
-        run: chmod +x gradlew && ./gradlew assembleDebug --no-daemon
+        run: chmod +x gradlew && ./gradlew assembleDebug --no-daemon -PreactNativeArchitectures=arm64-v8a
 
       - name: Rename APK
-        run: cp mobile/android/app/build/outputs/apk/debug/app-debug.apk Aponar-Nihon-Native-Android.apk
+        run: cp mobile/android/app/build/outputs/apk/debug/app-debug.apk Aponar-Nihon-Native-Android-arm64.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Aponar-Nihon-Native-Android
-          path: Aponar-Nihon-Native-Android.apk
+          name: Aponar-Nihon-Native-Android-arm64
+          path: Aponar-Nihon-Native-Android-arm64.apk
           if-no-files-found: error
           retention-days: 7
