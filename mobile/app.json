@@ -13,7 +13,8 @@
       "bundleIdentifier": "com.aponarnihon.app",
       "buildNumber": "1",
       "infoPlist": {
-        "NSCameraUsageDescription": "Halal Scanner দিয়ে পণ্যের barcode স্ক্যান করতে camera প্রয়োজন।"
+        "NSCameraUsageDescription": "Halal Scanner দিয়ে পণ্যের barcode স্ক্যান করতে camera প্রয়োজন।",
+        "NSPhotoLibraryUsageDescription": "CV Builder-এ আপনার নিজের ছবি নির্বাচন করতে photo library ব্যবহার করা হবে।"
       }
     },
     "android": {
@@ -23,23 +24,14 @@
         "foregroundImage": "../store-assets/app-icon-512.png",
         "backgroundColor": "#F7FAFC"
       },
-      "permissions": [
-        "CAMERA",
-        "POST_NOTIFICATIONS"
-      ]
+      "permissions": ["CAMERA", "POST_NOTIFICATIONS"]
     },
     "plugins": [
-      [
-        "expo-camera",
-        {
-          "cameraPermission": "Halal Scanner দিয়ে পণ্যের barcode স্ক্যান করতে camera ব্যবহার করা হবে।"
-        }
-      ],
+      ["expo-camera", {"cameraPermission": "Halal Scanner দিয়ে পণ্যের barcode স্ক্যান করতে camera ব্যবহার করা হবে।"}],
+      ["expo-image-picker", {"photosPermission": "CV Builder-এ আপনার নিজের ছবি নির্বাচন করতে photo library ব্যবহার করা হবে।"}],
       "expo-secure-store",
       "expo-notifications"
     ],
-    "extra": {
-      "appOrigin": "https://app.aponar-nihon.workers.dev"
-    }
+    "extra": {"appOrigin": "https://app.aponar-nihon.workers.dev"}
   }
 }
