@@ -44,9 +44,9 @@ Aponar Nihon does not intentionally use collected data for cross-company adverti
 
 ## Store URLs
 
-- Privacy Policy: `https://app.aponar-nihon.workers.dev/privacy-policy.html`
+- Native App Privacy Policy: `https://app.aponar-nihon.workers.dev/app-privacy-policy.html`
 - Account deletion: `https://app.aponar-nihon.workers.dev/delete-account.html`
 
 ## Submission audit
 
-Before answering App Store Connect, inspect the final dependency list and production network behavior. If analytics, crash reporting, ads, attribution, social login, location, contacts, microphone, cloud CV sync, or another SDK is added later, update both this file and the public Privacy Policy before release.
+Before answering App Store Connect, inspect the final dependency list and production network behavior. If analytics, crash reporting, ads, attribution, social login, location, contacts, microphone, cloud CV sync, or another SDK is added later, update both this file and the public app privacy policy before release.
