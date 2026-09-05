@@ -10,6 +10,7 @@ const gradients: readonly (readonly [string, string])[] = [
   ['#27CDB3', '#0BA98E'], ['#2BC2DF', '#0C8FC3'], ['#6D6CF0', '#4B42D8'],
   ['#FBB62D', '#E89A05'], ['#2C63C7', '#17449E'], ['#91A0B5', '#5D6F86']
 ];
+const fallbackGradient = ['#1677E8', '#075FC5'] as const;
 
 export default function ExploreScreen({ navigation }: { navigation: any }) {
   return <Screen>
@@ -22,11 +23,14 @@ export default function ExploreScreen({ navigation }: { navigation: any }) {
     <View><Text style={styles.smallBlue}>▦  EXPLORE</Text><Text style={styles.sectionTitle}>গাইড ও টুলস</Text></View>
 
     <View style={styles.grid}>
-      {EXPLORE_FEATURES.map((feature, index) => <Pressable key={feature.id} onPress={() => openFeature(navigation, feature)} style={({ pressed }) => [styles.card, pressed && styles.pressed]}>
-        <LinearGradient colors={gradients[index % gradients.length]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.iconWrap}><Text style={styles.icon}>{feature.icon}</Text></LinearGradient>
-        <View style={{ flex: 1 }}><Text numberOfLines={1} style={styles.cardTitle}>{feature.title}</Text><Text numberOfLines={2} style={styles.cardCopy}>{feature.subtitle}</Text></View>
-        <Text style={styles.link}>দেখুন  →</Text>
-      </Pressable>)}
+      {EXPLORE_FEATURES.map((feature, index) => {
+        const gradient = gradients[index % gradients.length] ?? fallbackGradient;
+        return <Pressable key={feature.id} onPress={() => openFeature(navigation, feature)} style={({ pressed }) => [styles.card, pressed && styles.pressed]}>
+          <LinearGradient colors={gradient} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.iconWrap}><Text style={styles.icon}>{feature.icon}</Text></LinearGradient>
+          <View style={{ flex: 1 }}><Text numberOfLines={1} style={styles.cardTitle}>{feature.title}</Text><Text numberOfLines={2} style={styles.cardCopy}>{feature.subtitle}</Text></View>
+          <Text style={styles.link}>দেখুন  →</Text>
+        </Pressable>;
+      })}
     </View>
   </Screen>;
 }
