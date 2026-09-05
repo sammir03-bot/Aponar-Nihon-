@@ -7,6 +7,13 @@
     "preview": {
       "distribution": "internal"
     },
+    "standalone": {
+      "extends": "production",
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      }
+    },
     "production": {
       "autoIncrement": true
     }
