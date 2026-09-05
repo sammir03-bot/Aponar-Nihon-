@@ -1,5 +1,5 @@
 import * as SecureStore from 'expo-secure-store';
-import { createClient } from '@supabase/supabase-js';
+import { createClient, type EmailOtpType } from '@supabase/supabase-js';
 import { authConfigured, SUPABASE_PUBLISHABLE_KEY, SUPABASE_URL } from './config';
 
 const storage = {
@@ -20,13 +20,49 @@ export const supabase = authConfigured()
     })
   : null;
 
+function authParams(url: string): URLSearchParams {
+  const params = new URLSearchParams();
+  const queryStart = url.indexOf('?');
+  const hashStart = url.indexOf('#');
+  const queryEnd = hashStart >= 0 ? hashStart : url.length;
+
+  if (queryStart >= 0) {
+    const query = new URLSearchParams(url.slice(queryStart + 1, queryEnd));
+    query.forEach((value, key) => params.set(key, value));
+  }
+  if (hashStart >= 0) {
+    const hash = new URLSearchParams(url.slice(hashStart + 1));
+    hash.forEach((value, key) => params.set(key, value));
+  }
+  return params;
+}
+
 export async function handleAuthUrl(url: string): Promise<void> {
-  if (!supabase) return;
-  try {
-    const parsed = new URL(url);
-    const code = parsed.searchParams.get('code');
-    if (code) await supabase.auth.exchangeCodeForSession(code);
-  } catch {
-    // Invalid/unrelated app links are ignored.
+  if (!supabase || !url.startsWith('aponarnihon://')) return;
+
+  const params = authParams(url);
+  const errorDescription = params.get('error_description') || params.get('error');
+  if (errorDescription) throw new Error(decodeURIComponent(errorDescription.replace(/\+/g, ' ')));
+
+  const code = params.get('code');
+  if (code) {
+    const { error } = await supabase.auth.exchangeCodeForSession(code);
+    if (error) throw error;
+    return;
+  }
+
+  const accessToken = params.get('access_token');
+  const refreshToken = params.get('refresh_token');
+  if (accessToken && refreshToken) {
+    const { error } = await supabase.auth.setSession({ access_token: accessToken, refresh_token: refreshToken });
+    if (error) throw error;
+    return;
+  }
+
+  const tokenHash = params.get('token_hash');
+  const type = params.get('type') as EmailOtpType | null;
+  if (tokenHash && type) {
+    const { error } = await supabase.auth.verifyOtp({ token_hash: tokenHash, type });
+    if (error) throw error;
   }
 }
