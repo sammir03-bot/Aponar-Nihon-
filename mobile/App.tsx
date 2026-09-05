@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Linking, Text } from 'react-native';
-import { NavigationContainer, DefaultTheme, DarkTheme, useNavigationContainerRef } from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StatusBar } from 'expo-status-bar';
@@ -35,16 +35,22 @@ function MainTabs() {
   </Tabs.Navigator>;
 }
 
+function processAuthUrl(url: string | null) {
+  if (!url) return;
+  void handleAuthUrl(url).catch((error) => {
+    console.warn('Aponar Nihon auth callback failed', error instanceof Error ? error.message : error);
+  });
+}
+
 export default function App() {
   const scheme = useColorScheme();
-  const navRef = useNavigationContainerRef<RootStackParamList>();
   useEffect(() => {
-    Linking.getInitialURL().then((url) => { if (url) handleAuthUrl(url); });
-    const sub = Linking.addEventListener('url', ({ url }) => handleAuthUrl(url));
+    Linking.getInitialURL().then(processAuthUrl).catch(() => {});
+    const sub = Linking.addEventListener('url', ({ url }) => processAuthUrl(url));
     return () => sub.remove();
   }, []);
   const theme = scheme === 'dark' ? { ...DarkTheme, colors: { ...DarkTheme.colors, primary: colors.primary } } : { ...DefaultTheme, colors: { ...DefaultTheme.colors, primary: colors.primary, background: colors.bg, card: colors.surface, text: colors.text, border: colors.border } };
-  return <><StatusBar style={scheme === 'dark' ? 'light' : 'dark'} /><NavigationContainer ref={navRef} theme={theme}>
+  return <><StatusBar style={scheme === 'dark' ? 'light' : 'dark'} /><NavigationContainer theme={theme}>
     <Stack.Navigator screenOptions={{ headerBackTitle: 'Back', headerTintColor: colors.text, headerShadowVisible: false }}>
       <Stack.Screen name="Main" component={MainTabs} options={{ headerShown: false }} />
       <Stack.Screen name="Tutor" component={TutorScreen} options={{ title: 'AI Tutor' }} />
