@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="Japanese yen and banking news illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#12294a"/><stop offset="1" stop-color="#22659a"/></linearGradient>
+    <linearGradient id="coin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff7cf"/><stop offset="1" stop-color="#e9bd55"/></linearGradient>
+    <filter id="s" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#071629" flood-opacity=".28"/></filter>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <g stroke="#8bcdf8" stroke-opacity=".14"><path d="M0 120h1200M0 240h1200M0 360h1200M0 480h1200M0 600h1200"/><path d="M160 0v675M320 0v675M480 0v675M640 0v675M800 0v675M960 0v675"/></g>
+  <path d="M55 520L188 475l100 35 128-118 100 31 110-158 109 60 121-126 122 35" fill="none" stroke="#4fe1b1" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(150 145)" filter="url(#s)">
+    <circle cx="190" cy="190" r="165" fill="url(#coin)"/>
+    <circle cx="190" cy="190" r="137" fill="none" stroke="#d4a945" stroke-width="10" opacity=".7"/>
+    <text x="190" y="248" text-anchor="middle" font-family="Arial,sans-serif" font-size="180" font-weight="700" fill="#a97618">¥</text>
+  </g>
+  <g transform="translate(670 115)" filter="url(#s)">
+    <rect width="370" height="420" rx="34" fill="#fff" opacity=".95"/>
+    <rect x="45" y="52" width="280" height="58" rx="14" fill="#eaf5ff"/>
+    <g fill="#2f80c9"><rect x="58" y="157" width="38" height="155" rx="8"/><rect x="125" y="195" width="38" height="117" rx="8"/><rect x="192" y="125" width="38" height="187" rx="8"/><rect x="259" y="88" width="38" height="224" rx="8"/></g>
+    <path d="M56 346h248" stroke="#c8d7e7" stroke-width="9" stroke-linecap="round"/>
+  </g>
+</svg>
