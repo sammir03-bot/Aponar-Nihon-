@@ -10,6 +10,7 @@ const gradients: readonly (readonly [string, string])[] = [
   ['#9A45EF', '#6634D8'], ['#2BB7F1', '#1774E8'], ['#FF736C', '#EF443C'],
   ['#2DD487', '#0DAD63'], ['#F15BA4', '#DF2F86'], ['#6D6CF0', '#4B42D8']
 ];
+const fallbackGradient = ['#1677E8', '#075FC5'] as const;
 
 export default function LearnScreen({ navigation }: { navigation: any }) {
   return <Screen>
@@ -22,12 +23,15 @@ export default function LearnScreen({ navigation }: { navigation: any }) {
     <View style={styles.sectionHead}><View><Text style={styles.smallBlue}>▦  LEARNING HUB</Text><Text style={styles.sectionTitle}>শেখার সেকশন</Text></View></View>
 
     <View style={styles.grid}>
-      {LEARNING_FEATURES.map((feature, index) => <Pressable key={feature.id} onPress={() => openFeature(navigation, feature)} style={({ pressed }) => [styles.card, pressed && styles.pressed]}>
-        <LinearGradient colors={gradients[index % gradients.length]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.iconWrap}><Text style={styles.icon}>{feature.icon}</Text></LinearGradient>
-        <Text numberOfLines={1} style={styles.cardTitle}>{feature.title}</Text>
-        <Text numberOfLines={2} style={styles.cardCopy}>{feature.subtitle}</Text>
-        <Text style={styles.link}>খুলুন  →</Text>
-      </Pressable>)}
+      {LEARNING_FEATURES.map((feature, index) => {
+        const gradient = gradients[index % gradients.length] ?? fallbackGradient;
+        return <Pressable key={feature.id} onPress={() => openFeature(navigation, feature)} style={({ pressed }) => [styles.card, pressed && styles.pressed]}>
+          <LinearGradient colors={gradient} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={styles.iconWrap}><Text style={styles.icon}>{feature.icon}</Text></LinearGradient>
+          <Text numberOfLines={1} style={styles.cardTitle}>{feature.title}</Text>
+          <Text numberOfLines={2} style={styles.cardCopy}>{feature.subtitle}</Text>
+          <Text style={styles.link}>খুলুন  →</Text>
+        </Pressable>;
+      })}
     </View>
   </Screen>;
 }
