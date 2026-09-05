@@ -5,9 +5,8 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "scheme": "aponarnihon",
-    "icon": "../store-assets/app-icon-512.png",
+    "icon": "../play-store/assets/app-icon-512.png",
     "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.aponarnihon.app",
@@ -21,7 +20,7 @@
       "package": "com.aponarnihon.app",
       "versionCode": 1,
       "adaptiveIcon": {
-        "foregroundImage": "../store-assets/app-icon-512.png",
+        "foregroundImage": "../play-store/assets/app-icon-512.png",
         "backgroundColor": "#F7FAFC"
       },
       "permissions": ["CAMERA", "POST_NOTIFICATIONS"]
