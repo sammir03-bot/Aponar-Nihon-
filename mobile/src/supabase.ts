@@ -8,6 +8,8 @@ const storage = {
   removeItem: (key: string) => SecureStore.deleteItemAsync(key)
 };
 
+let passwordRecoveryPending = false;
+
 export const supabase = authConfigured()
   ? createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
       auth: {
@@ -37,10 +39,19 @@ function authParams(url: string): URLSearchParams {
   return params;
 }
 
+export function consumePasswordRecovery(): boolean {
+  const pending = passwordRecoveryPending;
+  passwordRecoveryPending = false;
+  return pending;
+}
+
 export async function handleAuthUrl(url: string): Promise<void> {
   if (!supabase || !url.startsWith('aponarnihon://')) return;
 
   const params = authParams(url);
+  const type = params.get('type') as EmailOtpType | null;
+  if (url.startsWith('aponarnihon://auth/reset') || type === 'recovery') passwordRecoveryPending = true;
+
   const errorDescription = params.get('error_description') || params.get('error');
   if (errorDescription) throw new Error(decodeURIComponent(errorDescription.replace(/\+/g, ' ')));
 
@@ -60,7 +71,6 @@ export async function handleAuthUrl(url: string): Promise<void> {
   }
 
   const tokenHash = params.get('token_hash');
-  const type = params.get('type') as EmailOtpType | null;
   if (tokenHash && type) {
     const { error } = await supabase.auth.verifyOtp({ token_hash: tokenHash, type });
     if (error) throw error;
