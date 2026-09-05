@@ -1,0 +1,262 @@
+/* Aponar Nihon — visual news cards + home polish (2026-09-05) */
+
+/* Give every news card a local, fast-loading editorial thumbnail. */
+.daily-news-card,
+.news-list-item {
+  --news-art: url('/assets/img/news/market.svg');
+}
+
+.daily-news-card:nth-of-type(3n + 2),
+.news-list-item:nth-of-type(3n + 2) {
+  --news-art: url('/assets/img/news/economy.svg');
+}
+
+.daily-news-card:nth-of-type(3n),
+.news-list-item:nth-of-type(3n) {
+  --news-art: url('/assets/img/news/yen.svg');
+}
+
+.daily-news-card[href*='budget'],
+.news-list-item[href*='budget'],
+.daily-news-card[href*='economy'],
+.news-list-item[href*='economy'] {
+  --news-art: url('/assets/img/news/economy.svg');
+}
+
+.daily-news-card[href*='yen'],
+.news-list-item[href*='yen'],
+.daily-news-card[href*='bank'],
+.news-list-item[href*='bank'] {
+  --news-art: url('/assets/img/news/yen.svg');
+}
+
+.daily-news-card[href*='nikkei'],
+.news-list-item[href*='nikkei'],
+.daily-news-card[href*='stock'],
+.news-list-item[href*='stock'],
+.daily-news-card[href*='market'],
+.news-list-item[href*='market'] {
+  --news-art: url('/assets/img/news/market.svg');
+}
+
+/* Home: image + headline + summary in one premium card. */
+.daily-news-card {
+  overflow: hidden;
+  align-content: stretch;
+  gap: 0;
+  padding: 0 !important;
+  background: #fff;
+}
+
+.daily-news-card::before {
+  content: '';
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  border-bottom: 1px solid #e6edf5;
+  background-color: #eaf4ff;
+  background-image: var(--news-art);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: transform 220ms ease, filter 220ms ease;
+}
+
+.daily-news-card:hover::before {
+  transform: scale(1.018);
+  filter: saturate(1.04) contrast(1.01);
+}
+
+.daily-news-card > div {
+  padding: 15px 17px 0;
+}
+
+.daily-news-card .daily-news-open {
+  margin: 12px 17px 17px;
+}
+
+.daily-news-meta span:last-child:not(.daily-news-badge) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #f3edff;
+  color: #7543c7;
+  font-weight: 900;
+}
+
+.daily-news-card h3 {
+  letter-spacing: -.015em;
+}
+
+/* Archive: keep the image beside the headline, matching a real news feed. */
+.news-list-item {
+  overflow: hidden;
+  grid-template-columns: minmax(154px, 190px) minmax(0, 1fr) 28px !important;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'newsart newsdate newsarrow'
+    'newsart newscopy newsarrow';
+  align-items: start;
+  gap: 8px 17px !important;
+  padding: 12px !important;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #fff 0%, #fbfdff 100%);
+}
+
+.news-list-item::before {
+  content: '';
+  grid-area: newsart;
+  width: 100%;
+  min-height: 138px;
+  height: 100%;
+  align-self: stretch;
+  border: 1px solid #e2eaf3;
+  border-radius: 15px;
+  background-color: #eaf4ff;
+  background-image: var(--news-art);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 5px 14px rgba(40, 75, 112, .08);
+  transition: transform 220ms ease;
+}
+
+.news-list-item:hover::before {
+  transform: scale(1.015);
+}
+
+.news-list-date {
+  grid-area: newsdate !important;
+  padding-top: 2px;
+  line-height: 1.55;
+}
+
+.news-list-copy {
+  grid-area: newscopy;
+  align-self: start;
+}
+
+.news-list-copy h2 {
+  color: #172033;
+  letter-spacing: -.012em;
+}
+
+.news-list-copy p {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.news-list-copy::after {
+  content: 'বিস্তারিত পড়ুন';
+  display: inline-flex;
+  margin-top: 9px;
+  color: #1677e8;
+  font-size: .73rem;
+  font-weight: 900;
+}
+
+.news-list-arrow {
+  grid-area: newsarrow;
+  align-self: center;
+  justify-self: center;
+}
+
+/* Make the news section feel more editorial and inviting. */
+.daily-news-home {
+  background:
+    radial-gradient(circle at 96% 3%, rgba(22,119,232,.07), transparent 15rem),
+    rgba(255,255,255,.98);
+}
+
+.daily-news-kicker {
+  color: #087edb;
+}
+
+@media (max-width: 760px) {
+  .daily-news-card::before {
+    aspect-ratio: 16 / 8.4;
+  }
+
+  .news-list-item {
+    grid-template-columns: 118px minmax(0, 1fr) 20px !important;
+    grid-template-areas:
+      'newsart newsdate newsarrow'
+      'newsart newscopy newsarrow' !important;
+    gap: 6px 11px !important;
+    padding: 10px !important;
+  }
+
+  .news-list-item::before {
+    min-height: 118px;
+    border-radius: 13px;
+  }
+
+  .news-list-date {
+    grid-column: auto !important;
+    font-size: .66rem;
+  }
+
+  .news-list-copy h2 {
+    font-size: .93rem;
+    line-height: 1.45;
+  }
+
+  .news-list-copy p {
+    margin-top: 3px;
+    font-size: .7rem;
+    line-height: 1.45;
+    -webkit-line-clamp: 2;
+  }
+
+  .news-list-copy::after {
+    margin-top: 6px;
+    font-size: .68rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .daily-news-home {
+    padding: 17px;
+  }
+
+  .daily-news-card > div {
+    padding: 13px 14px 0;
+  }
+
+  .daily-news-card .daily-news-open {
+    margin: 10px 14px 14px;
+  }
+
+  .news-list-item {
+    grid-template-columns: 104px minmax(0, 1fr) 16px !important;
+    gap: 5px 9px !important;
+  }
+
+  .news-list-item::before {
+    min-height: 106px;
+  }
+
+  .news-list-copy h2 {
+    font-size: .86rem;
+  }
+
+  .news-list-copy p {
+    -webkit-line-clamp: 1;
+    font-size: .66rem;
+  }
+
+  .news-list-copy::after {
+    font-size: .65rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .daily-news-card::before,
+  .news-list-item::before {
+    transition: none;
+  }
+}
