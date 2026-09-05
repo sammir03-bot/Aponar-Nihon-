@@ -13,7 +13,7 @@ permissions:
 jobs:
   build-apk:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 35
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,17 +37,23 @@ jobs:
         working-directory: mobile
         run: npx expo prebuild --clean --no-install --platform android
 
-      - name: Build ARM64 debug APK
+      - name: Build standalone ARM64 release APK
         working-directory: mobile/android
-        run: chmod +x gradlew && ./gradlew assembleDebug --no-daemon -PreactNativeArchitectures=arm64-v8a
+        env:
+          NODE_ENV: production
+        run: chmod +x gradlew && ./gradlew assembleRelease --no-daemon -PreactNativeArchitectures=arm64-v8a
+
+      - name: Verify standalone JS bundle exists
+        run: |
+          test -f mobile/android/app/build/generated/assets/createBundleReleaseJsAndAssets/index.android.bundle || test -f mobile/android/app/build/intermediates/assets/release/mergeReleaseAssets/index.android.bundle
 
       - name: Rename APK
-        run: cp mobile/android/app/build/outputs/apk/debug/app-debug.apk Aponar-Nihon-Native-Android-arm64.apk
+        run: cp mobile/android/app/build/outputs/apk/release/app-release.apk Aponar-Nihon-Standalone-Android-arm64.apk
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: Aponar-Nihon-Native-Android-arm64
-          path: Aponar-Nihon-Native-Android-arm64.apk
+          name: Aponar-Nihon-Standalone-Android-arm64
+          path: Aponar-Nihon-Standalone-Android-arm64.apk
           if-no-files-found: error
           retention-days: 7
