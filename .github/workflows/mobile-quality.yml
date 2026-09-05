@@ -39,6 +39,12 @@ jobs:
       - name: Expo doctor
         working-directory: mobile
         run: npx expo-doctor
+      - name: Generate native Android project
+        working-directory: mobile
+        run: npx expo prebuild --clean --no-install --platform android
+      - name: Generate native iOS project
+        working-directory: mobile
+        run: npx expo prebuild --clean --no-install --platform ios
 
   content-parity:
     runs-on: ubuntu-latest
