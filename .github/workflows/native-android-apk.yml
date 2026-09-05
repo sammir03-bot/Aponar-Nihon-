@@ -1,0 +1,76 @@
+name: Native Android Standalone APK
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'mobile/**'
+      - '.github/workflows/native-android-apk.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'mobile/**'
+      - '.github/workflows/native-android-apk.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  release-apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    defaults:
+      run:
+        working-directory: mobile
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install pinned mobile dependencies
+        run: npm install --ignore-scripts --no-audit --no-fund
+
+      - name: TypeScript check
+        run: npm run typecheck
+
+      - name: Expo doctor
+        run: npm run doctor
+
+      - name: Generate Android native project
+        run: npm run prebuild:android -- --no-install
+
+      - name: Build optimized release APK
+        working-directory: mobile/android
+        run: ./gradlew --no-daemon --stacktrace :app:assembleRelease
+
+      - name: Prepare standalone artifact
+        shell: bash
+        run: |
+          set -euo pipefail
+          APK="$(find android/app/build/outputs/apk/release -type f -name '*.apk' | head -n 1)"
+          test -n "$APK"
+          mkdir -p dist
+          cp "$APK" dist/Aponar-Nihon-standalone-release.apk
+          sha256sum dist/Aponar-Nihon-standalone-release.apk > dist/Aponar-Nihon-standalone-release.apk.sha256
+          ls -lh dist/Aponar-Nihon-standalone-release.apk
+
+      - name: Upload standalone release APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Aponar-Nihon-standalone-release-apk
+          path: |
+            mobile/dist/Aponar-Nihon-standalone-release.apk
+            mobile/dist/Aponar-Nihon-standalone-release.apk.sha256
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
