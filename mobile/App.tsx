@@ -76,7 +76,7 @@ export default function App() {
 
   return (
     <SafeAreaProvider>
-      <StatusBar style="dark" backgroundColor="#FFFFFF" translucent={false} />
+      <StatusBar style="dark" />
       <SafeAreaView style={styles.safeArea} edges={['top', 'bottom']}>
         <WebView
           key={webKey}
@@ -129,7 +129,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF'
   },
   loading: {
-    ...StyleSheet.absoluteFillObject,
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#FFFFFF'
