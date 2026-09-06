@@ -36,7 +36,7 @@ test('daily news archive keeps previous days and supports date filters', async (
   await previous.click();
   await expect(previous).toHaveAttribute('aria-pressed', 'true');
   expect(await items.count()).toBeGreaterThan(0);
-  await expect(archive).toContainText('日本のサービス業');
+  await expect(archive.locator('.news-date-group')).toHaveCount(1);
 });
 
 test('reader supports furigana, Bengali explanation and adjacent news navigation', async ({ page }) => {
@@ -67,10 +67,17 @@ test('reader shows a clear not-found state for an invalid news id', async ({ pag
   await expect(page).toHaveTitle(/নিউজ পাওয়া যায়নি/);
 });
 
-test('daily news data asset is available', async ({ request }) => {
+test('daily news data asset is available and has no future Japan dates', async ({ request }) => {
   const response = await request.get('/assets/data/daily-news.json');
   expect(response.status()).toBe(200);
   const data = await response.json();
   expect(Array.isArray(data.articles)).toBe(true);
   expect(data.articles.length).toBeGreaterThanOrEqual(4);
+
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Tokyo', year: 'numeric', month: '2-digit', day: '2-digit'
+  }).formatToParts(new Date());
+  const dateParts = Object.fromEntries(parts.filter(part => part.type !== 'literal').map(part => [part.type, part.value]));
+  const tokyoToday = `${dateParts.year}-${dateParts.month}-${dateParts.day}`;
+  for (const article of data.articles) expect(String(article.date || '') <= tokyoToday).toBe(true);
 });
