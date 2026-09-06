@@ -10,7 +10,7 @@
 /* Home grid: match every other tile and place Halal Scanner last. */
 .app-home .app-tool-halal,.app-tool-halal{order:999!important;grid-row:auto!important;grid-column:auto!important}
 .app-tool-halal .app-tool-icon{background:linear-gradient(145deg,#17b783,#08745b)!important;color:#fff!important;box-shadow:inset 0 1px 2px rgba(255,255,255,.35),0 9px 20px rgba(8,116,91,.2)!important}
-.app-tool-halal>b{color:#212937!important;font-size:inherit!important;line-height:inherit!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+.app-tool-halal>b{color:#212937!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
 .app-tool-halal-badge{display:none!important}
 
 @media(max-width:430px){
