@@ -1,0 +1,198 @@
+name: Temp Daily News 2026-09-07
+
+on:
+  push:
+    branches:
+      - automation/daily-news-2026-09-07
+
+permissions:
+  contents: write
+
+jobs:
+  update-daily-news:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Update and validate Daily Japanese News
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          path = Path('assets/data/daily-news.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          today = '2026-09-07'
+
+          new_articles = [
+            {
+              "id": "2026-09-07-mydocomo-maintenance",
+              "date": today,
+              "level": "N4",
+              "category_bn": "ডিজিটাল জীবন ও সেবা",
+              "headline": "My docomo、今夜から一部サービスを一時停止",
+              "headline_tokens": ["My docomo、", {"t":"今夜","r":"こんや"}, "から", {"t":"一部","r":"いちぶ"}, "サービスを", {"t":"一時停止","r":"いちじていし"}],
+              "teaser_bn": "NTTドコモ আজ রাত থেকে My docomo-এর কিছু সেবায় রক্ষণাবেক্ষণ করবে। পেমেন্ট, পেমেন্ট-স্ট্যাটাস দেখা এবং কিছু অ্যাকাউন্ট তথ্য নির্দিষ্ট সময়ে সাময়িকভাবে ব্যবহার করা যাবে না।",
+              "japanese": [
+                ["NTTドコモは、", {"t":"今日","r":"きょう"}, "7", {"t":"日","r":"にち"}, "の", {"t":"夜","r":"よる"}, "からMy docomoの", {"t":"一部","r":"いちぶ"}, "サービスでシステムメンテナンスを", {"t":"行","r":"おこな"}, "います。"],
+                [{"t":"午後","r":"ごご"}, "9", {"t":"時","r":"じ"}, "30", {"t":"分","r":"ぷん"}, "から、", {"t":"料金","r":"りょうきん"}, "の", {"t":"支払","r":"しはら"}, "いや", {"t":"支払状況","r":"しはらいじょうきょう"}, "の", {"t":"確認","r":"かくにん"}, "などが", {"t":"一時的","r":"いちじてき"}, "に", {"t":"使","r":"つか"}, "えなくなります。"],
+                [{"t":"多","r":"おお"}, "くの", {"t":"機能","r":"きのう"}, "は8", {"t":"日","r":"にち"}, "の", {"t":"午前","r":"ごぜん"}, "6", {"t":"時","r":"じ"}, "ごろまで", {"t":"停止","r":"ていし"}, "する", {"t":"予定","r":"よてい"}, "です。"]
+              ],
+              "explanation_bn": [
+                "৭ সেপ্টেম্বর রাতে NTTドコモ My docomo-এর একাধিক অংশে সিস্টেম মেইনটেন্যান্স করবে। রাত ৯:৩০ থেকে পিসিতে বিল পরিশোধ, পরিশোধের অবস্থা দেখা এবং Pay-easy ব্যবহার সাময়িকভাবে বন্ধ থাকবে।",
+                "রাত ১০:৩০ থেকে My docomo-এর টপ পেজে ব্যবহার-খরচ, পয়েন্ট, চুক্তির তথ্য ও ডেটা ব্যবহারের মতো কিছু তথ্যও দেখা যাবে না। সংশ্লিষ্ট বহু সেবা ৮ সেপ্টেম্বর সকাল ৬টার দিকে আবার চালু হওয়ার কথা।",
+                "শিক্ষার্থীদের জন্য 今夜, 一部, 一時停止, 支払, 確認, 機能, 予定—এসব দৈনন্দিন নোটিশ ও সেবা-সংক্রান্ত জাপানিতে খুব কাজে লাগে।"
+              ],
+              "vocabulary": [
+                {"word":"今夜","reading":"こんや","meaning_bn":"আজ রাত"},
+                {"word":"一部","reading":"いちぶ","meaning_bn":"একাংশ / কিছু অংশ"},
+                {"word":"一時停止","reading":"いちじていし","meaning_bn":"সাময়িক বন্ধ"},
+                {"word":"料金","reading":"りょうきん","meaning_bn":"ফি / বিল"},
+                {"word":"支払","reading":"しはらい","meaning_bn":"পরিশোধ"},
+                {"word":"確認","reading":"かくにん","meaning_bn":"যাচাই / নিশ্চিত করা"},
+                {"word":"機能","reading":"きのう","meaning_bn":"ফাংশন / সুবিধা"},
+                {"word":"予定","reading":"よてい","meaning_bn":"পরিকল্পনা / নির্ধারিত সময়সূচি"}
+              ],
+              "source": {"name":"NTTドコモ","url":"https://www.docomo.ne.jp/info/construction/mydocomo.html","published_at":"2026-09-07"}
+            },
+            {
+              "id": "2026-09-07-jins-osaka-myopia-astigmatism-study",
+              "date": today,
+              "level": "N3",
+              "category_bn": "বিজ্ঞান ও গবেষণা",
+              "headline": "JINSと大阪大学、近視・乱視を大規模データで研究",
+              "headline_tokens": ["JINSと", {"t":"大阪大学","r":"おおさかだいがく"}, "、", {"t":"近視","r":"きんし"}, "・", {"t":"乱視","r":"らんし"}, "を", {"t":"大規模","r":"だいきぼ"}, "データで", {"t":"研究","r":"けんきゅう"}],
+              "teaser_bn": "JINS ও Osaka University দেশজুড়ে চশমা বিক্রির বড় ডেটাসেট ব্যবহার করে নিকটদৃষ্টি ও অ্যাস্টিগম্যাটিজম নিয়ে গবেষণা করেছে; গবেষণাপত্র দুটি IOVS জার্নালে প্রকাশিত হয়েছে।",
+              "japanese": [
+                ["JINSと", {"t":"大阪大学","r":"おおさかだいがく"}, "の", {"t":"研究","r":"けんきゅう"}, "チームは、", {"t":"全国","r":"ぜんこく"}, "の", {"t":"眼鏡販売","r":"めがねはんばい"}, "データを", {"t":"使","r":"つか"}, "って", {"t":"近視","r":"きんし"}, "と", {"t":"乱視","r":"らんし"}, "を", {"t":"調","r":"しら"}, "べました。"],
+                [{"t":"近視","r":"きんし"}, "の", {"t":"研究","r":"けんきゅう"}, "では、6", {"t":"歳","r":"さい"}, "から35", {"t":"歳","r":"さい"}, "までの", {"t":"約","r":"やく"}, "452", {"t":"万人","r":"まんにん"}, "の", {"t":"匿名","r":"とくめい"}, "データを", {"t":"分析","r":"ぶんせき"}, "しました。"],
+                [{"t":"結果","r":"けっか"}, "は二つの", {"t":"論文","r":"ろんぶん"}, "として", {"t":"眼科学","r":"がんかがく"}, "の", {"t":"専門誌","r":"せんもんし"}, "IOVSに", {"t":"掲載","r":"けいさい"}, "されました。"]
+              ],
+              "explanation_bn": [
+                "JINS ও Osaka University Graduate School of Medicine চশমা বিক্রির বেনামী বিগ ডেটা ব্যবহার করে refractive status বা দৃষ্টির প্রতিসরণ-সংক্রান্ত অবস্থা নিয়ে যৌথ গবেষণা করেছে। এখানে নিকটদৃষ্টি ও অ্যাস্টিগম্যাটিজম নিয়ে দুটি গবেষণাপত্র IOVS-এ প্রকাশিত হয়েছে।",
+                "নিকটদৃষ্টির বিশ্লেষণে ৬–৩৫ বছর বয়সী প্রায় ৪৫.২ লাখ মানুষের বেনামী ডেটা ব্যবহার করা হয়েছে। কোম্পানির প্রকাশিত তথ্য অনুযায়ী অ্যাস্টিগম্যাটিজম গবেষণায় আরও বড় ডেটাসেট ব্যবহার হয়েছে। এটি JINS গ্রাহকদের ডেটাভিত্তিক গবেষণা, তাই পুরো জাপানি জনসংখ্যার সঙ্গে ফল একেবারে একই ধরে নেওয়া ঠিক নয়।",
+                "এই খবর থেকে 近視, 乱視, 大規模, 匿名, 分析, 論文, 掲載—গবেষণা ও স্বাস্থ্যবিজ্ঞানের সংবাদে ব্যবহৃত গুরুত্বপূর্ণ N3 শব্দ শেখা যায়।"
+              ],
+              "vocabulary": [
+                {"word":"近視","reading":"きんし","meaning_bn":"নিকটদৃষ্টি / মায়োপিয়া"},
+                {"word":"乱視","reading":"らんし","meaning_bn":"অ্যাস্টিগম্যাটিজম"},
+                {"word":"大規模","reading":"だいきぼ","meaning_bn":"বৃহৎ পরিসরের"},
+                {"word":"匿名","reading":"とくめい","meaning_bn":"বেনামী"},
+                {"word":"分析","reading":"ぶんせき","meaning_bn":"বিশ্লেষণ"},
+                {"word":"論文","reading":"ろんぶん","meaning_bn":"গবেষণাপত্র"},
+                {"word":"掲載","reading":"けいさい","meaning_bn":"প্রকাশ / ছাপা হওয়া"}
+              ],
+              "source": {"name":"株式会社ジンズホールディングス（PR TIMES）","url":"https://prtimes.jp/main/html/rd/p/000000399.000027384.html","published_at":"2026-09-03T14:00:00+09:00"}
+            },
+            {
+              "id": "2026-09-07-special-advisor-australia-new-caledonia",
+              "date": today,
+              "level": "N3",
+              "category_bn": "জাপান ও বিশ্ব",
+              "headline": "首相特別顧問、豪州とニューカレドニアを訪問へ",
+              "headline_tokens": [{"t":"首相特別顧問","r":"しゅしょうとくべつこもん"}, "、", {"t":"豪州","r":"ごうしゅう"}, "とニューカレドニアを", {"t":"訪問","r":"ほうもん"}, "へ"],
+              "teaser_bn": "জাপানের প্রধানমন্ত্রীর বিশেষ উপদেষ্টা ৭–১২ সেপ্টেম্বর অস্ট্রেলিয়া ও ফরাসি নিউ ক্যালেডোনিয়া সফর করবেন এবং দ্বিপাক্ষিক সম্পর্ক ও আঞ্চলিক পরিস্থিতি নিয়ে মতবিনিময় করবেন।",
+              "japanese": [
+                [{"t":"首相特別顧問","r":"しゅしょうとくべつこもん"}, "は、7", {"t":"日","r":"にち"}, "から12", {"t":"日","r":"にち"}, "までオーストラリアとフランス", {"t":"領","r":"りょう"}, "ニューカレドニアを", {"t":"訪問","r":"ほうもん"}, "する", {"t":"予定","r":"よてい"}, "です。"],
+                [{"t":"現地","r":"げんち"}, "では", {"t":"政府","r":"せいふ"}, "や", {"t":"軍","r":"ぐん"}, "の", {"t":"関係者","r":"かんけいしゃ"}, "などと", {"t":"会","r":"あ"}, "い、", {"t":"二国間関係","r":"にこくかんかんけい"}, "や", {"t":"地域","r":"ちいき"}, "の", {"t":"情勢","r":"じょうせい"}, "について", {"t":"意見","r":"いけん"}, "を", {"t":"交換","r":"こうかん"}, "します。"],
+                [{"t":"外務省","r":"がいむしょう"}, "は、この", {"t":"訪問","r":"ほうもん"}, "を", {"t":"通","r":"つう"}, "じて", {"t":"関係国","r":"かんけいこく"}, "との", {"t":"連携","r":"れんけい"}, "を", {"t":"深","r":"ふか"}, "める", {"t":"考","r":"かんが"}, "えです。"]
+              ],
+              "explanation_bn": [
+                "জাপানের পররাষ্ট্র মন্ত্রণালয় জানিয়েছে, প্রধানমন্ত্রীর বিশেষ উপদেষ্টা ৭ থেকে ১২ সেপ্টেম্বর পর্যন্ত অস্ট্রেলিয়া ও ফরাসি নিউ ক্যালেডোনিয়া সফর করবেন। অর্থাৎ সফরটি আজ থেকেই শুরু হওয়ার কথা।",
+                "সেখানে তিনি সরকার ও সামরিক বাহিনীর প্রতিনিধিসহ সংশ্লিষ্ট ব্যক্তিদের সঙ্গে দ্বিপাক্ষিক সম্পর্ক এবং আঞ্চলিক পরিস্থিতি নিয়ে মতবিনিময় করবেন। এটি ইন্দো-প্যাসিফিক অঞ্চলে জাপানের কূটনৈতিক যোগাযোগের একটি উদাহরণ।",
+                "শিক্ষার্থীদের জন্য 首相特別顧問, 訪問, 現地, 関係者, 二国間関係, 情勢, 意見交換, 連携—এগুলো N3 পর্যায়ের সংবাদ ও কূটনৈতিক জাপানিতে খুব দরকারি।"
+              ],
+              "vocabulary": [
+                {"word":"首相特別顧問","reading":"しゅしょうとくべつこもん","meaning_bn":"প্রধানমন্ত্রীর বিশেষ উপদেষ্টা"},
+                {"word":"豪州","reading":"ごうしゅう","meaning_bn":"অস্ট্রেলিয়া"},
+                {"word":"訪問","reading":"ほうもん","meaning_bn":"সফর / পরিদর্শন"},
+                {"word":"関係者","reading":"かんけいしゃ","meaning_bn":"সংশ্লিষ্ট ব্যক্তি / প্রতিনিধি"},
+                {"word":"二国間関係","reading":"にこくかんかんけい","meaning_bn":"দ্বিপাক্ষিক সম্পর্ক"},
+                {"word":"情勢","reading":"じょうせい","meaning_bn":"পরিস্থিতি / অবস্থা"},
+                {"word":"意見交換","reading":"いけんこうかん","meaning_bn":"মতবিনিময়"},
+                {"word":"連携","reading":"れんけい","meaning_bn":"সমন্বয় / সহযোগিতা"}
+              ],
+              "source": {"name":"外務省（Ministry of Foreign Affairs of Japan）","url":"https://www.mofa.go.jp/a_o/ocn/au/pageite_000001_01805.html","published_at":"2026-09-04"}
+            }
+          ]
+
+          articles = data.get('articles')
+          if not isinstance(articles, list):
+              raise SystemExit('articles must be an array')
+
+          existing_today = [a for a in articles if a.get('date') == today]
+          if existing_today:
+              if len(existing_today) == 3 and all(a.get('id') for a in existing_today):
+                  print('Today already has 3 entries; leaving them unchanged.')
+              else:
+                  raise SystemExit('Partial or incomplete entries already exist for today; refusing to duplicate them.')
+          else:
+              old_ids = {a.get('id') for a in articles}
+              old_urls = {a.get('source', {}).get('url') for a in articles if isinstance(a, dict)}
+              for article in new_articles:
+                  if article['id'] in old_ids:
+                      raise SystemExit(f"Duplicate id: {article['id']}")
+                  if article['source']['url'] in old_urls:
+                      raise SystemExit(f"Duplicate source URL: {article['source']['url']}")
+              data['articles'] = new_articles + articles
+              data['updated_at'] = '2026-09-07T08:45:00+09:00'
+
+          required = {'id','date','level','category_bn','headline','headline_tokens','teaser_bn','japanese','explanation_bn','vocabulary','source'}
+          seen_ids = set()
+          for idx, article in enumerate(data['articles']):
+              missing = required - set(article)
+              if missing:
+                  raise SystemExit(f'Article {idx} missing keys: {sorted(missing)}')
+              if article['id'] in seen_ids:
+                  raise SystemExit(f"Duplicate article id: {article['id']}")
+              seen_ids.add(article['id'])
+              if article['level'] not in {'N4','N3'}:
+                  raise SystemExit(f"Unexpected level in {article['id']}: {article['level']}")
+              if not isinstance(article['headline_tokens'], list) or not article['headline_tokens']:
+                  raise SystemExit(f"Bad headline_tokens: {article['id']}")
+              if not isinstance(article['japanese'], list) or not article['japanese']:
+                  raise SystemExit(f"Bad japanese content: {article['id']}")
+              if not isinstance(article['explanation_bn'], list) or not article['explanation_bn']:
+                  raise SystemExit(f"Bad Bengali explanation: {article['id']}")
+              if not isinstance(article['vocabulary'], list) or not article['vocabulary']:
+                  raise SystemExit(f"Bad vocabulary: {article['id']}")
+              source = article['source']
+              if not all(source.get(k) for k in ('name','url','published_at')):
+                  raise SystemExit(f"Bad source metadata: {article['id']}")
+              for token_list in [article['headline_tokens'], *article['japanese']]:
+                  if not isinstance(token_list, list):
+                      raise SystemExit(f"Token row is not a list: {article['id']}")
+                  for token in token_list:
+                      if isinstance(token, dict):
+                          if set(token) != {'t','r'} or not token['t'] or not token['r']:
+                              raise SystemExit(f"Invalid furigana token in {article['id']}: {token}")
+                      elif not isinstance(token, (str, int, float)):
+                          raise SystemExit(f"Invalid token type in {article['id']}")
+
+          latest_dates = [a['date'] for a in data['articles'][:3]]
+          if latest_dates != [today, today, today]:
+              raise SystemExit(f'Latest 3 articles are not today: {latest_dates}')
+
+          path.write_text(json.dumps(data, ensure_ascii=False, separators=(',', ':')) + '\n', encoding='utf-8')
+          json.loads(path.read_text(encoding='utf-8'))
+          print(f"Validated {len(data['articles'])} articles; today's count: {sum(a['date']==today for a in data['articles'])}")
+          PY
+      - name: Remove temporary workflow and commit Daily News
+        shell: bash
+        run: |
+          rm -f .github/workflows/temp-daily-news-2026-09-07.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/daily-news.json .github/workflows/temp-daily-news-2026-09-07.yml
+          if git diff --cached --quiet; then
+            echo "No change to commit"
+            exit 0
+          fi
+          git commit -m "Update Daily Japanese News for 2026-09-07"
+          git push origin HEAD:automation/daily-news-2026-09-07
