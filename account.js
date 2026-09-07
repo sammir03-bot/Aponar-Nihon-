@@ -12,6 +12,7 @@
   const PROD_ORIGIN='https://app.aponar-nihon.workers.dev';
   const CALLBACK_PATH='/auth-callback.html';
   const RESET_PATH='/reset-password.html';
+  const OTP_TYPES=new Set(['signup','invite','magiclink','recovery','email_change','email']);
   const clean=v=>typeof v==='string'?v.trim():v;
 
   const appOrigin=()=>{
@@ -31,8 +32,8 @@
     }catch(_){return fallback;}
   };
 
-  // Auth emails/OAuth must always return to production.
-  // This prevents localhost previews from leaking into Supabase verification links.
+  // Auth emails/OAuth always return to the canonical production origin.
+  // Supabase Auth > URL Configuration must allow this callback URL.
   const callbackUrl=()=>new URL(CALLBACK_PATH,PROD_ORIGIN).toString();
   const resetUrl=()=>new URL(RESET_PATH,PROD_ORIGIN).toString();
 
@@ -153,19 +154,23 @@
     return data;
   }
 
+  function safeDecode(value){
+    try{return decodeURIComponent(String(value||'').replace(/\+/g,' '));}
+    catch(_){return String(value||'Authentication failed');}
+  }
+
   function authUrlError(){
     const query=new URLSearchParams(location.search);
     const hash=new URLSearchParams((location.hash||'').replace(/^#/,''));
     const code=query.get('error_code')||hash.get('error_code')||query.get('error')||hash.get('error');
     const description=query.get('error_description')||hash.get('error_description');
     if(!code&&!description) return null;
-    const message=decodeURIComponent((description||code||'Authentication failed').replace(/\+/g,' '));
-    const err=new Error(message);
+    const err=new Error(safeDecode(description||code||'Authentication failed'));
     err.code=code||'auth_redirect_error';
     return err;
   }
 
-  async function waitForSession(timeoutMs=3000){
+  async function waitForSession(timeoutMs=4500){
     const existing=await getSession();
     if(existing) return existing;
     return await new Promise(resolve=>{
@@ -187,21 +192,50 @@
     });
   }
 
+  function cleanAuthUrl(){
+    try{
+      const url=new URL(location.href);
+      ['code','token_hash','type','error','error_code','error_description'].forEach(key=>url.searchParams.delete(key));
+      url.hash='';
+      const next=`${url.pathname}${url.search}`;
+      history.replaceState(null,'',next||CALLBACK_PATH);
+    }catch(_){ }
+  }
+
   async function completeAuthRedirect(){
     const redirectError=authUrlError();
     if(redirectError) throw redirectError;
 
-    let session=await waitForSession(1800);
     const url=new URL(location.href);
+    const query=url.searchParams;
+    const hash=new URLSearchParams((url.hash||'').replace(/^#/,''));
+    let session=await getSession();
 
-    if(!session&&url.searchParams.get('code')){
-      const {data,error}=await sb.auth.exchangeCodeForSession(url.searchParams.get('code'));
+    // Supports custom Supabase confirmation templates that send TokenHash directly.
+    const tokenHash=query.get('token_hash');
+    const rawType=(query.get('type')||'email').toLowerCase();
+    if(!session&&tokenHash){
+      const type=OTP_TYPES.has(rawType)?rawType:'email';
+      const {data,error}=await sb.auth.verifyOtp({token_hash:tokenHash,type});
       if(error) throw error;
       session=data.session||null;
     }
 
+    // Supports PKCE callbacks. detectSessionInUrl may already consume the code,
+    // so only exchange it when a session has not appeared yet.
+    const code=query.get('code');
+    if(!session&&code){
+      const {data,error}=await sb.auth.exchangeCodeForSession(code);
+      if(error){
+        session=await waitForSession(1800);
+        if(!session) throw error;
+      }else{
+        session=data.session||null;
+      }
+    }
+
+    // Supports the classic implicit-flow confirmation URL.
     if(!session){
-      const hash=new URLSearchParams((location.hash||'').replace(/^#/,''));
       const access_token=hash.get('access_token');
       const refresh_token=hash.get('refresh_token');
       if(access_token&&refresh_token){
@@ -211,9 +245,16 @@
       }
     }
 
+    if(!session) session=await waitForSession(4500);
     if(!session) throw new Error('Verification linkটি invalid বা expire হয়ে গেছে। নতুন verification email পাঠান।');
-    await ensureProfile();
+
+    // Email verification itself must not be reported as failed just because
+    // profile initialization is temporarily unavailable.
+    try{await ensureProfile();}
+    catch(error){console.warn('Aponar Nihon profile initialization deferred:',error);}
+
     storage.remove('an_pending_verify_email');
+    cleanAuthUrl();
     return {session,next:'/profile.html?verified=1'};
   }
 

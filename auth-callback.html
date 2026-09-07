@@ -20,7 +20,7 @@
   </script>
 </head>
 <body><main class="card"><img class="logo" src="/logo.png" alt="Aponar Nihon"><div id="icon" class="icon">✓</div><h1 id="title" class="title">Email verify করা হচ্ছে...</h1><div id="spinner" class="spinner"></div><p id="text" class="text">Verification link নিরাপদভাবে যাচাই করছি।</p><div id="actions" class="actions"><a class="btn" href="/auth.html#register">Login / Register-এ ফিরুন</a><a class="btn alt" href="/">হোমে যান</a></div></main>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="/supabase-config.js"></script><script src="/account.js?v=20260904-1"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script><script src="/supabase-config.js"></script><script src="/account.js?v=20260907-1"></script>
 <script>
 (async()=>{const title=document.getElementById('title'),text=document.getElementById('text'),spinner=document.getElementById('spinner'),icon=document.getElementById('icon'),actions=document.getElementById('actions');try{const result=await AN.completeAuthRedirect();title.textContent='Email verification সফল হয়েছে';text.textContent='আপনার account এখন ready। Profile খুলছে...';spinner.style.display='none';setTimeout(()=>location.replace(result.next||'/profile.html'),450)}catch(err){spinner.style.display='none';icon.classList.add('bad');icon.textContent='!';title.textContent='Verification link কাজ করেনি';const s=(err?.message||'').toLowerCase();text.textContent=(s.includes('expire')||s.includes('invalid')||s.includes('otp'))?'Linkটি invalid বা expire হয়ে গেছে। Register page থেকে নতুন verification email পাঠান।':(err?.message||'Verification complete করা যায়নি। নতুন link দিয়ে আবার চেষ্টা করুন।');actions.classList.add('show')}})();
 </script></body></html>
