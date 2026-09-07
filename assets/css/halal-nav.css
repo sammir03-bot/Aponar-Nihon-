@@ -1,19 +1,50 @@
-@import url('/assets/css/news-visual-fix.css?v=20260905.1');
+@import url('/assets/css/news-visual-fix.css?v=20260907.1');
 
-/* Bottom dock: keep Halal Scan as the useful center action. */
+/* Aponar Nihon — shared navigation + home/mobile polish */
+
+/* Bottom dock: Halal Scan remains a strong center action without breaking the dock rhythm. */
 .app-dock-link--halal{position:relative;color:#087f5b!important}
-.app-dock-link--halal>i{width:46px!important;height:46px!important;display:grid!important;place-items:center;border-radius:17px!important;margin-top:-16px!important;margin-bottom:1px!important;background:linear-gradient(145deg,#0f9f75,#08745b)!important;color:#fff!important;font-size:20px!important;box-shadow:0 10px 26px rgba(8,127,91,.3),0 0 0 5px rgba(255,255,255,.95)!important;transition:transform .2s ease,box-shadow .2s ease!important}
-.app-dock-link--halal:hover>i,.app-dock-link--halal:focus-visible>i{transform:translateY(-2px) scale(1.04)}
-.app-dock-link--halal.active>i{background:linear-gradient(145deg,#075f4b,#0a936c)!important;box-shadow:0 12px 30px rgba(8,127,91,.38),0 0 0 5px #eafaf4!important}
+.app-dock-link--halal>i{width:46px!important;height:46px!important;display:grid!important;place-items:center;border-radius:16px!important;margin-top:-15px!important;margin-bottom:1px!important;background:linear-gradient(145deg,#14a97b,#08745b)!important;color:#fff!important;font-size:19px!important;box-shadow:0 10px 24px rgba(8,127,91,.27),0 0 0 5px rgba(255,255,255,.96)!important;transition:transform .2s ease,box-shadow .2s ease!important}
+.app-dock-link--halal:hover>i,.app-dock-link--halal:focus-visible>i{transform:translateY(-2px) scale(1.035)}
+.app-dock-link--halal.active>i{background:linear-gradient(145deg,#075f4b,#0a936c)!important;box-shadow:0 12px 28px rgba(8,127,91,.34),0 0 0 5px #eafaf4!important}
 .app-dock-link--halal>span{font-weight:900!important;letter-spacing:-.02em}
 
-/* Home grid: match every other tile and place Halal Scanner last. */
-.app-home .app-tool-halal,.app-tool-halal{order:999!important;grid-row:auto!important;grid-column:auto!important}
-.app-tool-halal .app-tool-icon{background:linear-gradient(145deg,#17b783,#08745b)!important;color:#fff!important;box-shadow:inset 0 1px 2px rgba(255,255,255,.35),0 9px 20px rgba(8,116,91,.2)!important}
-.app-tool-halal>b{color:#212937!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+/* Home grid: first row stays N5/N4/N3/Quiz; Halal starts the second row. */
+body[data-page="home"] .app-tools-grid>.app-tool{order:2}
+body[data-page="home"] .app-tools-grid>.app-tool[href="/n5.html"],
+body[data-page="home"] .app-tools-grid>.app-tool[href="/n4.html"],
+body[data-page="home"] .app-tools-grid>.app-tool[href="/n3.html"],
+body[data-page="home"] .app-tools-grid>.app-tool[href="/quiz.html"]{order:0}
+body[data-page="home"] .app-tools-grid>.app-tool-halal{order:1!important;grid-row:auto!important;grid-column:auto!important}
+
+/* Halal tile now follows exactly the same card language as the other important sections. */
+.app-tool-halal{position:relative!important;min-width:0!important;overflow:hidden!important;align-self:stretch!important}
+.app-tool-halal .app-tool-icon{background:linear-gradient(145deg,#19b985,#08745b)!important;color:#fff!important;box-shadow:inset 0 1px 1px rgba(255,255,255,.34),0 8px 18px rgba(8,116,91,.16)!important}
+.app-tool-halal>b{color:inherit!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+.app-tool-halal>small{white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
 .app-tool-halal-badge{display:none!important}
 
-@media(max-width:430px){
+/* Consistent focus treatment for keyboard/touch accessibility. */
+.app-tool:focus-visible,.app-quick-item:focus-visible,.app-icon-button:focus-visible,.app-dock-link:focus-visible{outline:3px solid rgba(22,119,232,.22)!important;outline-offset:3px!important}
+
+/* Mobile rhythm: tighter but consistent cards, gaps and tap targets. */
+@media(max-width:600px){
+  .app-main{padding-inline:12px!important;gap:14px!important}
+  .app-search-card,.app-dashboard-card,.daily-news-home{border-radius:22px!important}
+  .app-tools-grid{gap:10px!important}
+  .app-tool{min-width:0!important}
+  .app-card-head{gap:10px!important}
+  .app-quick-row{gap:8px!important}
   .app-dock-link--halal>i{width:43px!important;height:43px!important;border-radius:15px!important;font-size:18px!important}
   .app-dock-link--halal>span{font-size:8px!important}
+}
+
+@media(max-width:390px){
+  .app-main{padding-inline:10px!important}
+  .app-tools-grid{gap:8px!important}
+  .app-search-card,.app-dashboard-card,.daily-news-home{border-radius:20px!important}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .app-dock-link--halal>i{transition:none!important}
 }
