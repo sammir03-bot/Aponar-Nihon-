@@ -3,8 +3,26 @@
     if(document.getElementById('an-mobile-layout-fix'))return;
     const s=document.createElement('style');
     s.id='an-mobile-layout-fix';
-    s.textContent=`html{scroll-padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}.app-tool-halal{position:relative!important;grid-column:auto!important;min-height:0!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;overflow:visible!important;align-items:initial!important;justify-items:center!important;align-content:start!important;gap:6px!important}.app-tool-halal:before{display:none!important}.app-tool-halal .app-tool-icon{margin:0!important;background:linear-gradient(145deg,#17b783,#08745b)!important;color:#fff!important;box-shadow:inset 0 1px 2px rgba(255,255,255,.35),0 9px 20px rgba(8,116,91,.2)!important}.app-tool-halal>b{color:#212937!important;font-size:.86rem!important}.app-tool-halal>small{color:#9aa3af!important}.app-tool-halal-badge{display:none!important}@media(max-width:620px){body.app-page{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))!important}.app-main,.hub-main{padding-bottom:54px!important}.app-tool b{display:-webkit-box!important;min-height:2.35em;overflow:hidden!important;white-space:normal!important;text-overflow:clip!important;line-height:1.18!important;-webkit-box-orient:vertical;-webkit-line-clamp:2}.app-dock-wrap{padding:5px 8px calc(5px + env(safe-area-inset-bottom,0px))!important;background:linear-gradient(180deg,rgba(243,247,251,0) 0,rgba(243,247,251,.92) 16px,rgba(243,247,251,.985) 100%)}.app-dock{min-height:60px!important;border-radius:20px!important}.app-dock-link{gap:1px!important;padding:4px 2px!important;font-size:.56rem!important;line-height:1.15!important}.app-dock-link i{width:32px!important;height:30px!important;border-radius:11px!important;font-size:1.03rem!important}.app-dock-link.active i{box-shadow:0 5px 12px rgba(22,119,232,.23)!important}}@media(max-width:370px){.app-dock-link{font-size:.52rem!important}}`;
+    s.textContent=`html{scroll-padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}.app-tool-halal{position:relative!important;grid-column:auto!important;min-height:0!important;padding:0!important;background:transparent!important;border:0!important;box-shadow:none!important;overflow:visible!important;align-items:initial!important;justify-items:center!important;align-content:start!important;gap:6px!important}.app-tool-halal:before{display:none!important}.app-tool-halal .app-tool-icon{margin:0!important;background:linear-gradient(145deg,#17b783,#08745b)!important;color:#fff!important;box-shadow:inset 0 1px 2px rgba(255,255,255,.35),0 9px 20px rgba(8,116,91,.2)!important}.app-tool-halal>b{color:#212937!important;font-size:.86rem!important}.app-tool-halal>small{color:#9aa3af!important}.app-tool-halal-badge{display:none!important}.app-tool-jobs .app-tool-icon{background:linear-gradient(145deg,#167c83,#154f73)!important;color:#fff!important;box-shadow:inset 0 1px 2px rgba(255,255,255,.32),0 9px 20px rgba(21,79,115,.18)!important}@media(max-width:620px){body.app-page{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))!important}.app-main,.hub-main{padding-bottom:54px!important}.app-tool b{display:-webkit-box!important;min-height:2.35em;overflow:hidden!important;white-space:normal!important;text-overflow:clip!important;line-height:1.18!important;-webkit-box-orient:vertical;-webkit-line-clamp:2}.app-dock-wrap{padding:5px 8px calc(5px + env(safe-area-inset-bottom,0px))!important;background:linear-gradient(180deg,rgba(243,247,251,0) 0,rgba(243,247,251,.92) 16px,rgba(243,247,251,.985) 100%)}.app-dock{min-height:60px!important;border-radius:20px!important}.app-dock-link{gap:1px!important;padding:4px 2px!important;font-size:.56rem!important;line-height:1.15!important}.app-dock-link i{width:32px!important;height:30px!important;border-radius:11px!important;font-size:1.03rem!important}.app-dock-link.active i{box-shadow:0 5px 12px rgba(22,119,232,.23)!important}}@media(max-width:370px){.app-dock-link{font-size:.52rem!important}}`;
     document.head.appendChild(s);
+  }
+
+  function mountJobsInJapanEntry(){
+    if(!document.body||document.body.dataset.page!=='home')return;
+    const grid=document.querySelector('.app-tools-grid');
+    if(!grid||grid.querySelector('[data-jobs-in-japan-entry]'))return;
+
+    const card=document.createElement('a');
+    card.className='app-tool app-tool-jobs';
+    card.href='/jobs-in-japan.html';
+    card.dataset.jobsInJapanEntry='1';
+    card.dataset.label='Jobs in Japan';
+    card.dataset.search='jobs japan baito part time townwork baitoru চাকরি কাজ আবেদন apply interview convenience restaurant';
+    card.dataset.searchIcon='fa-briefcase';
+    card.innerHTML='<span class="app-tool-icon tone-teal"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span><b>Jobs in Japan</b><small>কাজ খুঁজুন · আবেদন শিখুন</small>';
+
+    const japanLife=grid.querySelector('a[href="/japan-life.html"]');
+    if(japanLife&&japanLife.parentNode===grid)japanLife.insertAdjacentElement('afterend',card);else grid.prepend(card);
   }
 
   function ensureStylesheet(id,href){
@@ -48,6 +66,7 @@
 
   async function boot(){
     applyMobileLayoutFix();
+    mountJobsInJapanEntry();
     mountHomeDailyNews().catch(()=>{});
     if(!window.AN)return;
     const s=await AN.session();
