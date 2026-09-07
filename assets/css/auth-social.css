@@ -1,0 +1,14 @@
+/* Aponar Nihon social auth buttons */
+.social-auth{margin:0 0 16px}
+.social-auth-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.social-btn{min-height:48px;border:1px solid #d8e4ed;border-radius:14px;background:#fff;color:#27445f;display:flex;align-items:center;justify-content:center;gap:9px;padding:9px 12px;font:800 11px/1.25 'Noto Sans Bengali','Inter',sans-serif;cursor:pointer;box-shadow:0 5px 14px rgba(28,79,118,.055);transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease,background .18s ease}
+.social-btn:hover,.social-btn:focus-visible{transform:translateY(-1px);border-color:#b9d0e1;box-shadow:0 8px 18px rgba(28,79,118,.09);outline:none}
+.social-btn:focus-visible{box-shadow:0 0 0 4px rgba(23,111,168,.10),0 8px 18px rgba(28,79,118,.09)}
+.social-btn:disabled{opacity:.55;cursor:not-allowed;transform:none;box-shadow:none;background:#f7fafc}
+.social-icon{width:24px;height:24px;border-radius:999px;display:grid;place-items:center;flex:0 0 24px;font:900 14px/1 'Inter',sans-serif}
+.social-google .social-icon{background:#fff;border:1px solid #e3e8ec;color:#4285f4}
+.social-facebook .social-icon{background:#1877f2;color:#fff;font-size:16px}
+.social-divider{display:flex;align-items:center;gap:10px;margin:13px 2px 0;color:#93a2af;font-size:10px;font-weight:700;white-space:nowrap}
+.social-divider::before,.social-divider::after{content:'';height:1px;background:#e4edf4;flex:1}
+@media(max-width:420px){.social-auth-grid{grid-template-columns:1fr}.social-btn{min-height:46px}}
+@media(prefers-reduced-motion:reduce){.social-btn{transition:none}}
