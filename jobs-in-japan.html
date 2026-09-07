@@ -3,9 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <meta name="theme-color" content="#116a80">
-  <meta name="description" content="জাপানে পার্ট-টাইম কাজ খোঁজা, TownWork ও Baitoru ব্যবহার, dipID, Web আবেদন, ফোন ও interview—সবকিছুর বাংলা গাইড।">
+  <script id="legacy-origin-redirect">
+  (function(){
+    var h=location.hostname;
+    if(h!=="sammir03-bot.github.io"&&h!=="aponar-nihon.eu.cc") return;
+    var p=location.pathname||"/";
+    if(h==="sammir03-bot.github.io"){
+      var bases=["/Aponar-Nihon-","/Aponar-Nihon"];
+      for(var i=0;i<bases.length;i++){
+        var base=bases[i];
+        if(p===base||p===base+"/"){p="/";break;}
+        if(p.indexOf(base+"/")===0){p=p.slice(base.length)||"/";break;}
+      }
+    }
+    if(p==="/index.html") p="/";
+    else if(p.endsWith("/index.html")) p=p.slice(0,-10);
+    else if(p.endsWith(".html")) p=p.slice(0,-5);
+    location.replace("https://app.aponar-nihon.workers.dev"+p+location.search+location.hash);
+  })();
+  </script>
   <title>Jobs in Japan | TownWork + Baitoru বাংলা গাইড | আপনার নিহোন</title>
+  <meta name="description" content="Tokyo-তে পার্ট-টাইম কাজ খোঁজা, TownWork ও Baitoru ব্যবহার, dipID, Web আবেদন, ফোন ও interview—সবকিছুর বাংলা গাইড।">
+  <meta name="theme-color" content="#116a80">
   <link rel="canonical" href="https://app.aponar-nihon.workers.dev/jobs-in-japan">
   <link rel="icon" href="/logo.png">
   <link rel="manifest" href="/manifest.json">
@@ -15,187 +34,47 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="/assets/css/app-shell.css?v=20260829">
   <style>
-    :root{--job-ink:#16344b;--job-muted:#667a8a;--job-line:#dbe7ec;--job-bg:#f4f8fa;--job-teal:#117b83;--job-blue:#176fa8;--job-green:#1a8b69;--job-orange:#dc8b2c;--job-red:#c9505d;--job-card:#fff;--job-shadow:0 18px 50px rgba(21,61,78,.09)}
-    *{box-sizing:border-box}.job-main{padding-top:18px;padding-bottom:96px}.job-hero{position:relative;overflow:hidden;border-radius:30px;padding:clamp(26px,6vw,56px);background:linear-gradient(135deg,#123b56,#126f82 58%,#20a091);color:#fff;box-shadow:0 28px 70px rgba(18,59,86,.2)}.job-hero:after{content:'バイト';position:absolute;right:-12px;bottom:-42px;font:900 150px/1 'Noto Sans JP',sans-serif;color:rgba(255,255,255,.07)}.job-hero>*{position:relative;z-index:1}.job-kicker{display:inline-flex;align-items:center;gap:7px;padding:6px 10px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.1);border-radius:999px;font-size:11px;font-weight:900;letter-spacing:.03em}.job-hero h1{margin:10px 0 8px;max-width:760px;font-size:clamp(30px,7vw,54px);line-height:1.08}.job-hero p{margin:0;max-width:760px;color:rgba(255,255,255,.84);font-size:14px;line-height:1.75}.hero-actions{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.hero-actions a{display:inline-flex;align-items:center;gap:8px;text-decoration:none;padding:11px 15px;border-radius:13px;font-size:12px;font-weight:900;background:#fff;color:#153f55}.hero-actions a.secondary{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#fff}
-    .job-section{margin-top:18px;background:var(--job-card);border:1px solid var(--job-line);border-radius:24px;padding:20px;box-shadow:var(--job-shadow)}.job-section-head{display:flex;justify-content:space-between;gap:16px;align-items:end;margin-bottom:14px}.job-section-head h2{margin:0;color:var(--job-ink);font-size:clamp(22px,4vw,31px);line-height:1.2}.job-section-head p{margin:5px 0 0;color:var(--job-muted);font-size:12px}.eyebrow{font-size:10px;font-weight:900;color:var(--job-teal);letter-spacing:.1em}.source-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.source-card{border:1px solid var(--job-line);border-radius:20px;padding:18px;background:linear-gradient(180deg,#fff,#fbfdfd)}.source-card .source-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.source-brand{font-size:21px;font-weight:900;color:var(--job-ink)}.source-badge{font-size:9px;font-weight:900;padding:5px 8px;border-radius:999px;background:#eaf6f4;color:var(--job-green)}.source-card p{color:var(--job-muted);font-size:12px;line-height:1.65}.source-links{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}.source-links a,.link-btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;border:1px solid var(--job-line);background:#fff;color:var(--job-ink);border-radius:11px;padding:9px 11px;font-size:11px;font-weight:850}.source-links a.primary,.link-btn.primary{border-color:transparent;background:var(--job-teal);color:#fff}.source-note{margin-top:10px;padding:10px 11px;border-radius:12px;background:#f3f7f9;color:#647787;font-size:10px;line-height:1.6}
-    .finder{display:grid;grid-template-columns:1fr 1fr auto;gap:9px;padding:14px;border:1px solid var(--job-line);border-radius:18px;background:#f8fbfc}.finder label{display:grid;gap:5px;font-size:10px;font-weight:850;color:var(--job-muted)}.finder select{width:100%;border:1px solid var(--job-line);background:#fff;color:var(--job-ink);border-radius:11px;padding:11px}.finder button{align-self:end;border:0;border-radius:11px;background:var(--job-blue);color:#fff;padding:12px 15px;font-weight:900;white-space:nowrap}.finder-help{margin:9px 2px 0;color:var(--job-muted);font-size:10px}
-    .steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px}.step{border:1px solid var(--job-line);border-radius:16px;padding:13px;background:#fff}.step span{display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:#eaf5f7;color:var(--job-teal);font:900 12px/1 'Inter',sans-serif}.step b{display:block;margin-top:9px;font-size:12px;color:var(--job-ink)}.step small{display:block;margin-top:4px;color:var(--job-muted);font-size:10px;line-height:1.55}
-    .guide-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.guide-card{border:1px solid var(--job-line);border-radius:20px;padding:18px}.guide-card h3{display:flex;align-items:center;gap:9px;margin:0;color:var(--job-ink);font-size:19px}.guide-card h3 i{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:#edf7f8;color:var(--job-teal)}.guide-card ol{padding-left:23px;margin:14px 0 0}.guide-card li{padding:5px 0;color:#3e5667;font-size:12px;line-height:1.65}.guide-card li strong{color:var(--job-ink)}.guide-alert{margin-top:12px;padding:11px 12px;border-radius:13px;background:#fff8e9;border:1px solid #f1dfb2;color:#795c27;font-size:10px;line-height:1.65}.guide-alert.info{background:#eef8fb;border-color:#d5ebf2;color:#356575}
-    .field-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.field-item{border:1px solid var(--job-line);border-radius:14px;padding:12px;background:#fbfdfd}.field-item b{display:block;color:var(--job-ink);font-family:'Noto Sans JP','Noto Sans Bengali',sans-serif;font-size:13px}.field-item small{display:block;margin-top:3px;color:var(--job-muted);font-size:10px}.glossary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.word{border:1px solid var(--job-line);border-radius:14px;padding:12px}.word strong{font-family:'Noto Sans JP',sans-serif;color:var(--job-ink)}.word span{display:block;color:var(--job-muted);font-size:10px;margin-top:2px}.checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.check{display:flex;gap:9px;align-items:flex-start;padding:11px;border:1px solid var(--job-line);border-radius:14px;background:#fff}.check i{margin-top:2px;color:var(--job-green)}.check b{display:block;color:var(--job-ink);font-size:12px}.check small{display:block;margin-top:2px;color:var(--job-muted);font-size:10px}.after-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.after-card{border:1px solid var(--job-line);border-radius:18px;padding:16px}.after-card h3{margin:0;color:var(--job-ink);font-size:16px}.after-card p{margin:6px 0 12px;color:var(--job-muted);font-size:11px;line-height:1.7}.jp-script{padding:12px;border-radius:13px;background:#f5f8fa;font-family:'Noto Sans JP',sans-serif;font-size:13px;color:var(--job-ink);line-height:1.8}.safety{border-color:#f0d6d9;background:#fffafa}.safety h2{color:#7d303a}.safety-list{display:grid;gap:8px}.safety-item{display:flex;gap:9px;align-items:flex-start;font-size:11px;color:#6e4b50}.safety-item i{color:var(--job-red);margin-top:3px}.last-verified{font-size:9px;color:#8a9aa6;text-align:right;margin-top:12px}
-    @media(max-width:820px){.source-grid,.guide-grid,.after-grid{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}.field-list,.glossary{grid-template-columns:repeat(2,1fr)}.finder{grid-template-columns:1fr 1fr}.finder button{grid-column:1/-1}.job-section-head{display:block}}
-    @media(max-width:520px){.job-main{padding-top:10px}.job-hero{border-radius:23px;padding:26px 20px}.job-section{border-radius:20px;padding:15px}.steps,.field-list,.glossary,.checklist,.finder{grid-template-columns:1fr}.finder button{grid-column:auto}.hero-actions a{width:100%;justify-content:center}}
+    :root{--ink:#16344b;--muted:#667a8a;--line:#dce7ec;--teal:#117b83;--blue:#176fa8;--green:#168565;--red:#ba4d58;--shadow:0 18px 48px rgba(20,59,79,.09)}
+    *{box-sizing:border-box}.jobs-main{padding:16px 0 96px}.hero{position:relative;overflow:hidden;border-radius:29px;padding:clamp(25px,6vw,54px);background:linear-gradient(135deg,#123a56,#126f82 58%,#20a091);color:#fff;box-shadow:0 28px 70px rgba(18,59,86,.20)}.hero:after{content:'バイト';position:absolute;right:-10px;bottom:-42px;font:900 145px/1 'Noto Sans JP',sans-serif;color:rgba(255,255,255,.07)}.hero>*{position:relative;z-index:1}.kicker{display:inline-flex;gap:7px;align-items:center;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.10);padding:6px 10px;border-radius:999px;font-size:10px;font-weight:900}.hero h1{margin:10px 0 8px;max-width:760px;font-size:clamp(30px,7vw,54px);line-height:1.08}.hero p{max-width:780px;margin:0;color:rgba(255,255,255,.84);font-size:14px;line-height:1.75}.hero-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:19px}.hero-actions a,.btn{display:inline-flex;align-items:center;gap:7px;text-decoration:none;border:0;border-radius:12px;padding:10px 13px;font-size:11px;font-weight:900}.hero-actions a{background:#fff;color:#153f55}.hero-actions a.alt{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2)}
+    .section{margin-top:17px;background:#fff;border:1px solid var(--line);border-radius:23px;padding:19px;box-shadow:var(--shadow)}.head{margin-bottom:13px}.eyebrow{display:block;color:var(--teal);font-size:9px;font-weight:900;letter-spacing:.11em}.head h2{margin:3px 0 0;color:var(--ink);font-size:clamp(22px,4vw,31px);line-height:1.2}.head p{margin:5px 0 0;color:var(--muted);font-size:11px;line-height:1.65}.finder{display:grid;grid-template-columns:1fr 1fr auto;gap:9px;padding:13px;border:1px solid var(--line);border-radius:17px;background:#f7fafb}.finder label{display:grid;gap:5px;color:var(--muted);font-size:10px;font-weight:850}.finder select{width:100%;padding:10px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}.finder button{align-self:end;background:var(--blue);color:#fff;padding:11px 14px}.hint{margin:8px 2px 0;color:var(--muted);font-size:10px}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}.source{margin-top:12px;border:1px solid var(--line);border-radius:19px;padding:16px;background:linear-gradient(#fff,#fbfdfd)}.source-top{display:flex;justify-content:space-between;gap:8px;align-items:center}.source h3{margin:0;color:var(--ink);font-size:20px}.badge{font-size:9px;font-weight:900;border-radius:999px;padding:5px 8px;background:#e9f6f1;color:var(--green)}.source p{color:var(--muted);font-size:11px;line-height:1.65}.links{display:flex;gap:7px;flex-wrap:wrap}.links a,.link-btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:8px 10px;font-size:10px;font-weight:850}.links a.primary,.link-btn.primary{background:var(--teal);border-color:var(--teal);color:#fff}.note{margin-top:10px;padding:10px;border-radius:11px;background:#f2f7f9;color:#607685;font-size:10px;line-height:1.6}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.step{border:1px solid var(--line);border-radius:15px;padding:12px}.step span{display:grid;place-items:center;width:27px;height:27px;border-radius:8px;background:#e9f5f6;color:var(--teal);font:900 11px/1 Inter,sans-serif}.step b{display:block;margin-top:8px;color:var(--ink);font-size:11px}.step small{display:block;margin-top:3px;color:var(--muted);font-size:9px;line-height:1.55}.guide{border:1px solid var(--line);border-radius:18px;padding:16px}.guide h3{margin:0;color:var(--ink);font-size:18px}.guide ol{margin:11px 0 0;padding-left:22px}.guide li{padding:4px 0;color:#40596b;font-size:11px;line-height:1.65}.alert{margin-top:10px;border-radius:11px;padding:10px;background:#fff8e9;border:1px solid #f1dfb4;color:#765b2b;font-size:10px;line-height:1.6}.alert.info{background:#eef8fb;border-color:#d4eaf1;color:#356575}.fields,.words{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.box{border:1px solid var(--line);border-radius:13px;padding:11px}.box b,.box strong{display:block;color:var(--ink);font-family:'Noto Sans JP','Noto Sans Bengali',sans-serif;font-size:12px}.box small,.box span{display:block;color:var(--muted);font-size:9px;margin-top:2px}.checks{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}.check{display:flex;gap:8px;align-items:flex-start;border:1px solid var(--line);border-radius:13px;padding:10px}.check i{color:var(--green);margin-top:2px}.check b{display:block;color:var(--ink);font-size:11px}.check small{display:block;color:var(--muted);font-size:9px;margin-top:2px}.after{border:1px solid var(--line);border-radius:17px;padding:15px}.after h3{margin:0;color:var(--ink);font-size:15px}.after p{color:var(--muted);font-size:10px;line-height:1.65}.jp{padding:11px;border-radius:11px;background:#f4f7f9;font-family:'Noto Sans JP',sans-serif;color:var(--ink);font-size:12px;line-height:1.75}.safe{background:#fffafa;border-color:#efd7da}.safe h2{color:#7b3039}.safe-item{display:flex;gap:8px;align-items:flex-start;margin-top:8px;color:#684a4e;font-size:10px;line-height:1.6}.safe-item i{color:var(--red);margin-top:3px}.verified{text-align:right;color:#8b9ba6;font-size:8px;margin-top:10px}
+    @media(max-width:820px){.grid2{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}.fields,.words{grid-template-columns:repeat(2,1fr)}.finder{grid-template-columns:1fr 1fr}.finder button{grid-column:1/-1}.checks{grid-template-columns:1fr}}
+    @media(max-width:520px){.jobs-main{padding-top:9px}.hero{padding:25px 19px;border-radius:22px}.section{padding:14px;border-radius:19px}.finder,.fields,.words,.steps{grid-template-columns:1fr}.finder button{grid-column:auto}.hero-actions a{width:100%;justify-content:center}}
   </style>
 </head>
 <body class="app-page" data-page="home" data-hub="jobs">
-  <header class="app-topbar">
-    <div class="app-shell app-topbar-inner">
-      <span class="app-brand"><a class="app-back-button" href="/" aria-label="হোমে ফিরুন"><i class="fa-solid fa-arrow-left"></i></a><span class="app-brand-copy"><strong>Jobs in Japan</strong><small>PART-TIME JOB GUIDE</small></span></span>
-      <div class="app-top-actions"><a class="app-icon-button" href="/cv-builder.html" aria-label="CV Builder"><i class="fa-solid fa-file-signature"></i></a><a class="app-icon-button" href="/profile.html" aria-label="প্রোফাইল"><i class="fa-solid fa-user"></i></a></div>
-    </div>
-  </header>
+  <header class="app-topbar"><div class="app-shell app-topbar-inner"><span class="app-brand"><a class="app-back-button" href="/" aria-label="হোমে ফিরুন"><i class="fa-solid fa-arrow-left"></i></a><span class="app-brand-copy"><strong>Jobs in Japan</strong><small>PART-TIME JOB GUIDE</small></span></span><div class="app-top-actions"><a class="app-icon-button" href="/cv-builder.html" aria-label="CV Builder"><i class="fa-solid fa-file-signature"></i></a><a class="app-icon-button" href="/profile.html" aria-label="প্রোফাইল"><i class="fa-solid fa-user"></i></a></div></div></header>
 
-  <main class="app-shell job-main">
-    <section class="job-hero">
-      <span class="job-kicker"><i class="fa-solid fa-briefcase"></i> JAPAN BAITO STARTER</span>
-      <h1>কাজ খুঁজুন, বুঝুন, তারপর original site-এ আবেদন করুন</h1>
-      <p>TownWork ও Baitoru-তে Tokyo-এর পার্ট-টাইম কাজ কীভাবে খুঁজবেন, কোন Japanese button চাপবেন, কীভাবে registration/login করবেন, Web আবেদন পাঠাবেন এবং এরপর interview-এর জন্য প্রস্তুত হবেন—সবকিছু বাংলায়। আপনার নিহোন আবেদন গ্রহণ করে না; আবেদন সবসময় original job site-এ হবে।</p>
-      <div class="hero-actions"><a href="#find-jobs"><i class="fa-solid fa-magnifying-glass"></i> কাজ খুঁজুন</a><a class="secondary" href="#apply-guide"><i class="fa-solid fa-paper-plane"></i> আবেদন শেখুন</a></div>
+  <main class="app-shell jobs-main">
+    <section class="hero"><span class="kicker"><i class="fa-solid fa-briefcase"></i> JAPAN BAITO STARTER</span><h1>কাজ খুঁজুন, বুঝুন, তারপর original site-এ আবেদন করুন</h1><p>TownWork ও Baitoru-তে Tokyo-এর পার্ট-টাইম কাজ কীভাবে খুঁজবেন, কোন Japanese button চাপবেন, registration/login কীভাবে করবেন, Web আবেদন কীভাবে পাঠাবেন এবং এরপর interview-এর জন্য কী করবেন—সব বাংলায়। আপনার নিহোন আবেদন নেয় না; আবেদন original source-এই হবে।</p><div class="hero-actions"><a href="#find"><i class="fa-solid fa-magnifying-glass"></i> কাজ খুঁজুন</a><a class="alt" href="#apply"><i class="fa-solid fa-paper-plane"></i> আবেদন শেখুন</a></div></section>
+
+    <section class="section" id="find"><div class="head"><span class="eyebrow">OFFICIAL JOB SOURCES</span><h2>Tokyo-এর live job page খুলুন</h2><p>চাকরির বিজ্ঞাপন এখানে কপি করা হচ্ছে না। Button চাপলেই official TownWork/Baitoru page খুলবে।</p></div>
+      <div class="finder"><label>কোন সাইট?<select id="jobSource"><option value="townwork">TownWork</option><option value="baitoru">Baitoru</option></select></label><label>কোন কাজ?<select id="jobCategory"><option value="all">সব পার্ট-টাইম কাজ</option><option value="convenience">Convenience Store / コンビニ</option><option value="restaurant">Restaurant / 飲食</option></select></label><button class="btn" id="openJobs" type="button"><i class="fa-solid fa-arrow-up-right-from-square"></i> Original jobs খুলুন</button></div>
+      <p class="hint">Original site খুলে Area/Station-এ নিজের জায়গা লিখুন—যেমন 新小岩, 小岩, 平井—তারপর shift, wage ও অন্যান্য filter দিন।</p>
+      <div class="grid2"><article class="source"><div class="source-top"><h3>TownWork</h3><span class="badge">Official source</span></div><p>Tokyo-এর baito, コンビニ ও 飲食・フード search করুন। Job detail খুলে salary, shift, location ও application method আগে যাচাই করুন।</p><div class="links"><a class="primary" target="_blank" rel="noopener noreferrer" href="https://townwork.net/prefectures/tokyo/job_search/">Tokyo jobs</a><a target="_blank" rel="noopener noreferrer" href="https://townwork.net/prefectures/tokyo/job_search/kw/%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8B/">コンビニ</a><a target="_blank" rel="noopener noreferrer" href="https://townwork.net/prefectures/tokyo/job_search/oc-001/">飲食・フード</a></div><div class="note">অনেক TownWork Web application listing-এর form থেকেই করা যায়। কিছু job অন্য recruitment service-এ পাঠাতে পারে এবং সেখানে account/login লাগতে পারে।</div></article>
+      <article class="source"><div class="source-top"><h3>Baitoru</h3><span class="badge">Official source</span></div><p>Tokyo-এর live baito, コンビニ ও restaurant category খুলুন। Baitoru account system বর্তমানে dipID ব্যবহার করে।</p><div class="links"><a class="primary" target="_blank" rel="noopener noreferrer" href="https://www.baitoru.com/kanto/jlist/tokyo/">Tokyo jobs</a><a target="_blank" rel="noopener noreferrer" href="https://www.baitoru.com/kanto/jlist/tokyo/conveni/">コンビニ</a><a target="_blank" rel="noopener noreferrer" href="https://www.baitoru.com/kanto/jlist/tokyo/restaurant/">Restaurant</a><a target="_blank" rel="noopener noreferrer" href="https://id.baitoru.com/about">dipID কী?</a></div><div class="note">dipID email/password অথবা supported external account দিয়ে তৈরি করা যায়। আবেদন করার সময় login চাইলে official screen-এর নির্দেশনা অনুসরণ করুন।</div></article></div>
     </section>
 
-    <section class="job-section" id="find-jobs">
-      <div class="job-section-head"><div><span class="eyebrow">OFFICIAL JOB SOURCES</span><h2>Tokyo-এর live job page খুলুন</h2><p>এখানে চাকরির বিজ্ঞাপন কপি করা হয় না। Button চাপলে official TownWork/Baitoru page খুলবে।</p></div></div>
-      <div class="finder">
-        <label>কোন সাইট?<select id="jobSource"><option value="townwork">TownWork</option><option value="baitoru">Baitoru</option></select></label>
-        <label>কোন কাজ?<select id="jobCategory"><option value="all">সব পার্ট-টাইম কাজ</option><option value="convenience">Convenience Store / コンビニ</option><option value="restaurant">Restaurant / 飲食</option></select></label>
-        <button type="button" id="openJobs"><i class="fa-solid fa-arrow-up-right-from-square"></i> Original jobs খুলুন</button>
-      </div>
-      <p class="finder-help">Original site খুলে Area/Station-এ নিজের জায়গা লিখুন—যেমন 新小岩, 小岩, 平井—তারপর shift, wage ও অন্যান্য filter ব্যবহার করুন।</p>
-      <div class="source-grid" style="margin-top:13px">
-        <article class="source-card">
-          <div class="source-top"><div class="source-brand">TownWork</div><span class="source-badge">Official source</span></div>
-          <p>Tokyo-এর চাকরি, コンビニ, 飲食・フードসহ বিভিন্ন baito search করুন। Job detail খুলে salary, shift, location ও application method আগে যাচাই করুন।</p>
-          <div class="source-links"><a class="primary" target="_blank" rel="noopener noreferrer" href="https://townwork.net/prefectures/tokyo/job_search/">Tokyo jobs <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a target="_blank" rel="noopener noreferrer" href="https://townwork.net/prefectures/tokyo/job_search/kw/%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8B/">コンビニ</a><a target="_blank" rel="noopener noreferrer" href="https://townwork.net/prefectures/tokyo/job_search/oc-001/">飲食・フード</a></div>
-          <div class="source-note">TownWork-এর অনেক Web আবেদন listing-এর আবেদন form থেকেই করা যায়। কিছু job অন্য recruitment service-এ পাঠাতে পারে এবং সেখানে account/login লাগতে পারে।</div>
-        </article>
-        <article class="source-card">
-          <div class="source-top"><div class="source-brand">Baitoru</div><span class="source-badge">Official source</span></div>
-          <p>Tokyo-এর live baito listing, コンビニ ও restaurant category খুলুন। Baitoru account system বর্তমানে dipID ব্যবহার করে।</p>
-          <div class="source-links"><a class="primary" target="_blank" rel="noopener noreferrer" href="https://www.baitoru.com/kanto/jlist/tokyo/">Tokyo jobs <i class="fa-solid fa-arrow-up-right-from-square"></i></a><a target="_blank" rel="noopener noreferrer" href="https://www.baitoru.com/kanto/jlist/tokyo/conveni/">コンビニ</a><a target="_blank" rel="noopener noreferrer" href="https://www.baitoru.com/kanto/jlist/tokyo/restaurant/">Restaurant</a><a target="_blank" rel="noopener noreferrer" href="https://id.baitoru.com/about">dipID কী?</a></div>
-          <div class="source-note">dipID email/password অথবা supported external account (যেমন Google/Apple/LINE/Yahoo! JAPAN) দিয়ে তৈরি করা যায়। আবেদন করার সময় login চাইলে screen-এর নির্দেশনা অনুসরণ করুন।</div>
-        </article>
-      </div>
-    </section>
+    <section class="section"><div class="head"><span class="eyebrow">THE SIMPLE FLOW</span><h2>পুরো process ৫ ধাপে</h2></div><div class="steps"><div class="step"><span>01</span><b>কাজ খুঁজুন</b><small>Area/Station + job type দিয়ে search করুন।</small></div><div class="step"><span>02</span><b>শর্ত পড়ুন</b><small>時給, 勤務時間, 勤務地, 応募資格 দেখুন।</small></div><div class="step"><span>03</span><b>応募 চাপুন</b><small>応募する / 応募へ / Web応募 button খুলুন।</small></div><div class="step"><span>04</span><b>Form পাঠান</b><small>নাম, ফোন, email ও required তথ্য দিন।</small></div><div class="step"><span>05</span><b>Reply + Interview</b><small>Company-এর phone/email দেখে interview confirm করুন।</small></div></div></section>
 
-    <section class="job-section">
-      <div class="job-section-head"><div><span class="eyebrow">THE SIMPLE FLOW</span><h2>পুরো process ৫ ধাপে</h2><p>নতুনরা প্রথমে এই flow-টাই মনে রাখুন।</p></div></div>
-      <div class="steps">
-        <div class="step"><span>01</span><b>কাজ খুঁজুন</b><small>Area/Station + job type দিয়ে search করুন।</small></div>
-        <div class="step"><span>02</span><b>শর্ত পড়ুন</b><small>時給, 勤務時間, 勤務地, 応募資格 দেখুন।</small></div>
-        <div class="step"><span>03</span><b>応募 চাপুন</b><small>応募する / 応募へ / Web応募 button খুলুন।</small></div>
-        <div class="step"><span>04</span><b>Form পাঠান</b><small>নাম, ফোন, email ও প্রয়োজনীয় তথ্য ঠিকভাবে দিন।</small></div>
-        <div class="step"><span>05</span><b>Reply + Interview</b><small>Company-এর phone/email দেখে interview confirm করুন।</small></div>
-      </div>
-    </section>
+    <section class="section" id="apply"><div class="head"><span class="eyebrow">STEP-BY-STEP</span><h2>TownWork ও Baitoru-তে আবেদন</h2><p>Button-এর Japanese নামসহ beginner-friendly guide।</p></div><div class="grid2">
+      <article class="guide"><h3>TownWork</h3><ol><li><strong>Tokyo job page</strong> খুলে 勤務地/エリア-তে নিজের area বা station বাছুন।</li><li>Keyword-এ <strong>コンビニ</strong>, <strong>レストラン</strong>, <strong>飲食</strong> লিখে search করুন।</li><li>Job খুলে <strong>時給</strong>, <strong>勤務時間</strong>, <strong>勤務地</strong>, <strong>応募資格</strong> পড়ুন।</li><li><strong>応募へ</strong>, <strong>応募する</strong> বা Web application button চাপুন।</li><li>নাম, ふりがな, জন্মতারিখ, ফোন, occupation ও email-এর মতো required field পূরণ করুন।</li><li>Submit-এর আগে সবকিছু আবার check করুন।</li><li>Company-এর phone/email এলে interview time confirm করুন।</li></ol><div class="alert info"><strong>Registration:</strong> সব TownWork listing-এ আলাদা TownWork account বাধ্যতামূলক নয়। External recruitment service-এ গেলে সেখানে account/login লাগতে পারে।</div></article>
+      <article class="guide"><h3>Baitoru</h3><ol><li>Tokyo page খুলে <strong>エリア/駅</strong>, <strong>職種</strong> ও condition filter দিন।</li><li>Job খুলে salary, shift, station distance ও requirement পড়ুন।</li><li><strong>応募する</strong> button চাপুন।</li><li>Login চাইলে <strong>dipID</strong> দিয়ে login করুন; নতুন হলে screen থেকে account তৈরি করুন।</li><li>dipID email/password বা supported external account দিয়ে তৈরি করা যায়।</li><li>Application profile/form পূরণ করে confirmation screen check করুন।</li><li>Submit-এর পর logged-in থাকলে application history রাখা সহজ হয়।</li></ol><div class="alert"><strong>নিরাপত্তা:</strong> Login/application তথ্য শুধুমাত্র official <b>baitoru.com</b> / <b>id.baitoru.com</b> page-এ দিন। আপনার নিহোন কখনো password চায় না।</div></article>
+    </div></section>
 
-    <section class="job-section" id="apply-guide">
-      <div class="job-section-head"><div><span class="eyebrow">STEP-BY-STEP</span><h2>TownWork ও Baitoru-তে আবেদন</h2><p>Button-এর Japanese নামসহ beginner-friendly guide।</p></div></div>
-      <div class="guide-grid">
-        <article class="guide-card">
-          <h3><i class="fa-solid fa-t"></i> TownWork</h3>
-          <ol>
-            <li><strong>Tokyo job page</strong> খুলুন এবং 勤務地/エリア-তে নিজের area বা station বাছুন।</li>
-            <li>Keyword-এ <strong>コンビニ</strong>, <strong>レストラン</strong>, <strong>飲食</strong> ইত্যাদি লিখে search করুন।</li>
-            <li>Job খুলে <strong>時給</strong> (ঘণ্টার বেতন), <strong>勤務時間</strong> (shift), <strong>勤務地</strong> (কাজের জায়গা), <strong>応募資格</strong> (যোগ্যতা) পড়ুন।</li>
-            <li>পছন্দ হলে <strong>応募へ</strong>, <strong>応募する</strong> বা Web application button চাপুন।</li>
-            <li>Form-এ required তথ্য পূরণ করুন। TownWork-এর সাধারণ Web form-এ নাম, ふりがな, জন্মতারিখ, ফোন, বর্তমান occupation ও email-এর মতো field থাকে।</li>
-            <li>Submit করার আগে spelling ও phone/email আবার check করুন। Job অনুযায়ী submit-এর পরে edit/cancel সহজ নাও হতে পারে।</li>
-            <li>এরপর company-এর phone/email-এর অপেক্ষা করুন এবং interview time confirm করুন।</li>
-          </ol>
-          <div class="guide-alert info"><strong>Registration নিয়ে:</strong> সব TownWork listing-এ আলাদা TownWork account বাধ্যতামূলক নয়। কিছু listing সরাসরি Web application নেয়; কিছু external recruitment service-এ পাঠাতে পারে এবং সেখানে registration/login লাগতে পারে।</div>
-        </article>
-        <article class="guide-card">
-          <h3><i class="fa-solid fa-b"></i> Baitoru</h3>
-          <ol>
-            <li>Baitoru Tokyo page খুলে <strong>エリア/駅</strong>, <strong>職種</strong> ও condition filter দিন।</li>
-            <li>Job card খুলে salary, shift, station distance, employment type ও requirement পড়ুন।</li>
-            <li>পছন্দ হলে <strong>応募する</strong> button চাপুন।</li>
-            <li>Login চাইলে <strong>dipID</strong> দিয়ে login করুন। নতুন হলে screen থেকে account তৈরি করুন।</li>
-            <li>dipID email/password বা supported external account দিয়ে তৈরি করা যায়।</li>
-            <li>Application profile/form-এর required তথ্য পূরণ করে confirmation screen-এ সবকিছু check করুন।</li>
-            <li>Submit-এর পর logged-in থাকলে saved conditions/application history ব্যবহার করা সহজ হয়।</li>
-          </ol>
-          <div class="guide-alert"><strong>নিরাপত্তা:</strong> Login বা application তথ্য শুধুমাত্র official <b>baitoru.com</b> / <b>id.baitoru.com</b> page-এ দিন। আপনার নিহোন কখনো Baitoru/TownWork password চায় না।</div>
-        </article>
-      </div>
-    </section>
+    <section class="section"><div class="head"><span class="eyebrow">WEB APPLICATION FORM</span><h2>Common Japanese field</h2></div><div class="fields"><div class="box"><b>氏名（しめい）</b><small>আপনার নাম</small></div><div class="box"><b>ふりがな</b><small>নামের hiragana reading</small></div><div class="box"><b>生年月日</b><small>জন্মতারিখ</small></div><div class="box"><b>電話番号</b><small>ফোন নম্বর</small></div><div class="box"><b>メールアドレス</b><small>Email address</small></div><div class="box"><b>現在の職業</b><small>বর্তমান occupation</small></div><div class="box"><b>希望勤務日</b><small>কোন দিন কাজ করতে চান</small></div><div class="box"><b>希望勤務時間</b><small>কোন সময় কাজ করতে পারবেন</small></div><div class="box"><b>質問・備考</b><small>প্রশ্ন বা note</small></div></div></section>
 
-    <section class="job-section">
-      <div class="job-section-head"><div><span class="eyebrow">WEB APPLICATION FORM</span><h2>এই Japanese fieldগুলো চিনে রাখুন</h2><p>Form দেখলে ভয় পাওয়ার দরকার নেই—এগুলিই সবচেয়ে common।</p></div></div>
-      <div class="field-list">
-        <div class="field-item"><b>氏名（しめい）</b><small>আপনার নাম</small></div>
-        <div class="field-item"><b>ふりがな</b><small>নামের hiragana reading</small></div>
-        <div class="field-item"><b>生年月日</b><small>জন্মতারিখ</small></div>
-        <div class="field-item"><b>電話番号</b><small>ফোন নম্বর</small></div>
-        <div class="field-item"><b>メールアドレス</b><small>Email address</small></div>
-        <div class="field-item"><b>現在の職業</b><small>বর্তমান occupation / student ইত্যাদি</small></div>
-        <div class="field-item"><b>希望勤務日</b><small>কোন দিন কাজ করতে চান</small></div>
-        <div class="field-item"><b>希望勤務時間</b><small>কোন সময় কাজ করতে পারবেন</small></div>
-        <div class="field-item"><b>質問・備考</b><small>প্রশ্ন বা অতিরিক্ত note</small></div>
-      </div>
-    </section>
+    <section class="section"><div class="head"><span class="eyebrow">JOB AD JAPANESE</span><h2>দরকারি শব্দ</h2></div><div class="words"><div class="box"><strong>時給</strong><span>প্রতি ঘণ্টার বেতন</span></div><div class="box"><strong>勤務地</strong><span>কাজের স্থান</span></div><div class="box"><strong>勤務時間</strong><span>কাজের সময় / shift</span></div><div class="box"><strong>交通費支給</strong><span>যাতায়াত খরচ দেওয়া হবে</span></div><div class="box"><strong>未経験OK</strong><span>অভিজ্ঞতা না থাকলেও আবেদন করা যায়</span></div><div class="box"><strong>週2日〜</strong><span>সপ্তাহে ২ দিন থেকে</span></div><div class="box"><strong>シフト相談</strong><span>Shift আলোচনা করা যাবে</span></div><div class="box"><strong>履歴書</strong><span>Japanese CV / rirekisho</span></div><div class="box"><strong>面接</strong><span>Interview</span></div></div></section>
 
-    <section class="job-section">
-      <div class="job-section-head"><div><span class="eyebrow">JOB AD JAPANESE</span><h2>Job ad-এর দরকারি শব্দ</h2><p>এই শব্দগুলো বুঝলে বিজ্ঞাপনের বেশিরভাগ গুরুত্বপূর্ণ শর্ত ধরতে পারবেন।</p></div></div>
-      <div class="glossary">
-        <div class="word"><strong>時給</strong><span>প্রতি ঘণ্টার বেতন</span></div>
-        <div class="word"><strong>勤務地</strong><span>কাজের স্থান</span></div>
-        <div class="word"><strong>勤務時間</strong><span>কাজের সময় / shift</span></div>
-        <div class="word"><strong>交通費支給</strong><span>যাতায়াত খরচ দেওয়া হবে</span></div>
-        <div class="word"><strong>未経験OK</strong><span>অভিজ্ঞতা না থাকলেও আবেদন করা যায়</span></div>
-        <div class="word"><strong>週2日〜</strong><span>সপ্তাহে ২ দিন থেকে</span></div>
-        <div class="word"><strong>シフト相談</strong><span>Shift নিয়ে আলোচনা করা যাবে</span></div>
-        <div class="word"><strong>履歴書</strong><span>Japanese CV / rirekisho</span></div>
-        <div class="word"><strong>面接</strong><span>Interview</span></div>
-      </div>
-    </section>
+    <section class="section"><div class="head"><span class="eyebrow">BEFORE YOU SEND</span><h2>আবেদনের আগে checklist</h2></div><div class="checks"><div class="check"><i class="fa-solid fa-circle-check"></i><div><b>Station/commute ঠিক আছে?</b><small>বাসা/স্কুল থেকে যাতায়াত সম্ভব কি না দেখুন।</small></div></div><div class="check"><i class="fa-solid fa-circle-check"></i><div><b>Shift মিলছে?</b><small>School, age ও permitted work hours-এর সঙ্গে মিলিয়ে দেখুন।</small></div></div><div class="check"><i class="fa-solid fa-circle-check"></i><div><b>Salary + transport</b><small>時給 ও 交通費-এর শর্ত পড়ুন।</small></div></div><div class="check"><i class="fa-solid fa-circle-check"></i><div><b>Phone + email সঠিক?</b><small>Company এখানেই reply করবে।</small></div></div><div class="check"><i class="fa-solid fa-circle-check"></i><div><b>Japanese requirement</b><small>接客 job হলে communication requirement দেখুন।</small></div></div><div class="check"><i class="fa-solid fa-circle-check"></i><div><b>Official domain?</b><small>Personal data দেওয়ার আগে URL যাচাই করুন।</small></div></div></div></section>
 
-    <section class="job-section">
-      <div class="job-section-head"><div><span class="eyebrow">BEFORE YOU SEND</span><h2>আবেদনের আগে checklist</h2><p>এক মিনিট check করলে ভুল আবেদন অনেক কমে যায়।</p></div></div>
-      <div class="checklist">
-        <div class="check"><i class="fa-solid fa-circle-check"></i><div><b>Station/commute ঠিক আছে?</b><small>বাসা/স্কুল থেকে যাতায়াত বাস্তবে সম্ভব কি না দেখুন।</small></div></div>
-        <div class="check"><i class="fa-solid fa-circle-check"></i><div><b>Shift মিলছে?</b><small>School, age ও permitted work hours-এর সঙ্গে conflict হচ্ছে কি না দেখুন।</small></div></div>
-        <div class="check"><i class="fa-solid fa-circle-check"></i><div><b>Salary + transport</b><small>時給 এবং 交通費-এর শর্ত পড়ুন।</small></div></div>
-        <div class="check"><i class="fa-solid fa-circle-check"></i><div><b>Japanese requirement</b><small>接客 job হলে communication level-এর requirement দেখুন।</small></div></div>
-        <div class="check"><i class="fa-solid fa-circle-check"></i><div><b>Phone + email সঠিক?</b><small>Company এখানেই reply করবে।</small></div></div>
-        <div class="check"><i class="fa-solid fa-circle-check"></i><div><b>Official domain?</b><small>Application করার আগে URL দেখে source সত্যি কি না নিশ্চিত করুন।</small></div></div>
-      </div>
-    </section>
+    <section class="section"><div class="head"><span class="eyebrow">AFTER APPLY</span><h2>আবেদন পাঠানোর পর</h2></div><div class="grid2"><article class="after"><h3>📞 ফোন এলে</h3><p>Store/company name, interview date/time এবং location লিখে রাখুন। না বুঝলে ধীরে আবার বলার অনুরোধ করুন।</p><div class="jp">すみません、もう一度ゆっくりお願いいたします。<br><small>Sumimasen, mou ichido yukkuri onegai itashimasu.</small></div></article><article class="after"><h3>🎤 Interview প্রস্তুতি</h3><p>Self-introduction, availability, কেন কাজ করতে চান, Japanese level ও commute-এর answer practice করুন।</p><div class="links"><a class="primary" href="/japan-part-time-job-guide.html">Interview Guide</a><a href="/cv-builder.html">CV Builder</a></div></article></div></section>
 
-    <section class="job-section">
-      <div class="job-section-head"><div><span class="eyebrow">AFTER APPLY</span><h2>আবেদন পাঠানোর পর কী করবেন?</h2><p>Interview call/email এলে দ্রুত ও ভদ্রভাবে reply করুন।</p></div></div>
-      <div class="after-grid">
-        <article class="after-card"><h3>📞 ফোন এলে</h3><p>শান্ত জায়গায় গিয়ে store/company name, interview date/time এবং location লিখে রাখুন। না বুঝলে আবার বলার অনুরোধ করতে পারেন।</p><div class="jp-script">すみません、もう一度ゆっくりお願いいたします。<br><small>Sumimasen, mou ichido yukkuri onegai itashimasu.</small></div></article>
-        <article class="after-card"><h3>🎤 Interview প্রস্তুতি</h3><p>Self-introduction, availability, কেন এখানে কাজ করতে চান, Japanese level এবং commute-এর answer আগে practice করুন।</p><div style="display:flex;gap:8px;flex-wrap:wrap"><a class="link-btn primary" href="/japan-part-time-job-guide.html">Part-time Interview Guide</a><a class="link-btn" href="/cv-builder.html">CV Builder</a></div></article>
-      </div>
-    </section>
-
-    <section class="job-section safety">
-      <div class="job-section-head"><div><span class="eyebrow">WORK SAFELY & LEGALLY</span><h2>বয়স, residence status ও work permission আগে দেখুন</h2><p>Job পাওয়া গুরুত্বপূর্ণ, কিন্তু নিজের আইনগত সীমার মধ্যে কাজ করা আরও গুরুত্বপূর্ণ।</p></div></div>
-      <div class="safety-list">
-        <div class="safety-item"><i class="fa-solid fa-shield-halved"></i><span>আপনার residence status/資格外活動許可 অনুযায়ী কাজ করার অনুমতি আছে কি না নিশ্চিত করুন। Student হলে নিজের অনুমোদিত work-hour limit অনুসরণ করুন।</span></div>
-        <div class="safety-item"><i class="fa-solid fa-shield-halved"></i><span>১৮ বছরের কম হলে late-night work-এর আলাদা সীমাবদ্ধতা আছে; নিজের বয়স অনুযায়ী shift বাছুন।</span></div>
-        <div class="safety-item"><i class="fa-solid fa-shield-halved"></i><span>অস্বাভাবিকভাবে বেশি বেতন, upfront fee, password/OTP চাওয়া বা official domain-এর বাইরে personal data চাওয়া job এড়িয়ে চলুন।</span></div>
-      </div>
-      <div class="last-verified">Official source links & account notes checked: September 2026</div>
-    </section>
+    <section class="section safe"><div class="head"><span class="eyebrow">WORK SAFELY & LEGALLY</span><h2>বয়স, residence status ও work permission আগে দেখুন</h2></div><div class="safe-item"><i class="fa-solid fa-shield-halved"></i><span>আপনার residence status/資格外活動許可 অনুযায়ী কাজ করার অনুমতি আছে কি না নিশ্চিত করুন। Student হলে নিজের অনুমোদিত work-hour limit মানুন।</span></div><div class="safe-item"><i class="fa-solid fa-shield-halved"></i><span>১৮ বছরের কম হলে late-night work-এর আলাদা সীমাবদ্ধতা আছে; নিজের বয়স অনুযায়ী shift বাছুন।</span></div><div class="safe-item"><i class="fa-solid fa-shield-halved"></i><span>Upfront fee, password/OTP চাওয়া বা official domain-এর বাইরে sensitive personal data চাওয়া job এড়িয়ে চলুন।</span></div><div class="verified">Official source links & account notes checked: September 2026</div></section>
   </main>
 
-  <footer class="app-shell app-footer"><div class="app-footer-links"><a href="/japan-life.html">Japan Life</a><a href="/japan-part-time-job-guide.html">Interview</a><a href="/cv-builder.html">CV Builder</a><a href="/contact.html">সহায়তা</a></div><p>আপনার নিহোন · চাকরি খোঁজার বাংলা গাইড · আবেদন সবসময় original source-এ</p></footer>
+  <footer class="app-shell app-footer"><div class="app-footer-links"><a href="/japan-life.html">Japan Life</a><a href="/japan-part-time-job-guide.html">Interview</a><a href="/cv-builder.html">CV Builder</a><a href="/contact.html">সহায়তা</a></div><p>আপনার নিহোন · চাকরি খোঁজার বাংলা গাইড · আবেদন original source-এ</p></footer>
   <div class="app-dock-wrap"><nav class="app-dock" aria-label="প্রধান অ্যাপ নেভিগেশন"><a class="app-dock-link" data-nav="home" href="/"><i class="fa-solid fa-house"></i><span>হোম</span></a><a class="app-dock-link" data-nav="cv" href="/cv-builder.html"><i class="fa-solid fa-file-signature"></i><span>CV Builder</span></a><a class="app-dock-link" data-nav="tutor" href="/tutor-section.html"><i class="fa-solid fa-robot"></i><span>AI Tutor</span></a><a class="app-dock-link" data-nav="mock" href="/mock-test.html"><i class="fa-solid fa-clipboard-check"></i><span>Mock Test</span></a><a class="app-dock-link" data-nav="profile" href="/profile.html"><i class="fa-solid fa-circle-user"></i><span>Profile</span></a></nav></div>
-
-  <script>
-    (function(){
-      var source = document.getElementById('jobSource');
-      var category = document.getElementById('jobCategory');
-      var open = document.getElementById('openJobs');
-      var urls = {
-        townwork:{
-          all:'https://townwork.net/prefectures/tokyo/job_search/',
-          convenience:'https://townwork.net/prefectures/tokyo/job_search/kw/%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8B/',
-          restaurant:'https://townwork.net/prefectures/tokyo/job_search/oc-001/'
-        },
-        baitoru:{
-          all:'https://www.baitoru.com/kanto/jlist/tokyo/',
-          convenience:'https://www.baitoru.com/kanto/jlist/tokyo/conveni/',
-          restaurant:'https://www.baitoru.com/kanto/jlist/tokyo/restaurant/'
-        }
-      };
-      open.addEventListener('click',function(){
-        var url = urls[source.value] && urls[source.value][category.value];
-        if(url) window.open(url,'_blank','noopener,noreferrer');
-      });
-    })();
-  </script>
+  <script>(function(){var s=document.getElementById('jobSource'),c=document.getElementById('jobCategory'),b=document.getElementById('openJobs');var u={townwork:{all:'https://townwork.net/prefectures/tokyo/job_search/',convenience:'https://townwork.net/prefectures/tokyo/job_search/kw/%E3%82%B3%E3%83%B3%E3%83%93%E3%83%8B/',restaurant:'https://townwork.net/prefectures/tokyo/job_search/oc-001/'},baitoru:{all:'https://www.baitoru.com/kanto/jlist/tokyo/',convenience:'https://www.baitoru.com/kanto/jlist/tokyo/conveni/',restaurant:'https://www.baitoru.com/kanto/jlist/tokyo/restaurant/'}};b.addEventListener('click',function(){var x=u[s.value]&&u[s.value][c.value];if(x)window.open(x,'_blank','noopener,noreferrer');});})();</script>
   <script defer src="/assets/js/app-shell.js?v=20260831.3"></script>
   <script defer src="/activity-tracker.js"></script>
 </body>
