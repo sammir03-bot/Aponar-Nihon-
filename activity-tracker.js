@@ -1,4 +1,27 @@
 (()=>{
+  const HOME_CARD_EN={
+    '/n5.html':['JLPT N5','Basic Course'],
+    '/n4.html':['JLPT N4','Next Step'],
+    '/n3.html':['JLPT N3','Intermediate'],
+    '/quiz.html':['Quiz','Free Practice'],
+    '/tutor-section.html':['AI Tutor','Ask in Bengali'],
+    '/mock-test.html':['Mock Test','Exam Practice'],
+    '/interview.html':['Interview','Jobs & Embassy'],
+    '/ssw.html':['SSW','Complete Guide'],
+    '/essential-phrases.html':['Essential Phrases','Conversation'],
+    '/japan-life.html':['Japan Life','Beginner Guide'],
+    '/jobs-in-japan.html':['Jobs in Japan','Find Jobs · Learn to Apply'],
+    '/Hiragana-Katagana.html':['Hiragana-Katakana','Learn Kana'],
+    '/ebook-library.html':['E-Book','Study Library'],
+    '/student-tools.html':['Student Toolkit','28h + Practical Tools'],
+    '/cv-builder.html':['Japan CV Builder','Build a Rirekisho'],
+    '/grammar-vs.html':['Grammar VS','N5 · N4 · N3'],
+    '/muslim-japan.html':['Muslim Japan','Prayer · Halal'],
+    '/jpy-bdt-remittance.html':['JPY ↔ BDT','Rate · Remittance'],
+    '/study-guide.html':['Study Guide','Learning Roadmap'],
+    '/halal-scanner.html':['Halal Food Scanner','Barcode · Ingredient Check']
+  };
+
   function applyMobileLayoutFix(){
     if(document.getElementById('an-mobile-layout-fix'))return;
     const s=document.createElement('style');
@@ -20,6 +43,25 @@
     if(badge)badge.remove();
   }
 
+  function applyHomeCardEnglish(){
+    if(!document.body||document.body.dataset.page!=='home')return;
+    const lang=window.AponarI18n&&typeof window.AponarI18n.getLanguage==='function'
+      ?window.AponarI18n.getLanguage()
+      :(document.documentElement.lang||'bn');
+    if(lang!=='bn')return;
+    const grid=document.querySelector('.app-tools-grid');
+    if(!grid)return;
+    Object.entries(HOME_CARD_EN).forEach(([href,copy])=>{
+      const card=grid.querySelector(`.app-tool[href="${href}"]`);
+      if(!card)return;
+      const title=card.querySelector('b');
+      const note=card.querySelector('small');
+      if(title)title.textContent=copy[0];
+      if(note)note.textContent=copy[1];
+      card.dataset.label=copy[0];
+    });
+  }
+
   function mountJobsInJapanEntry(){
     if(!document.body||document.body.dataset.page!=='home')return;
     const grid=document.querySelector('.app-tools-grid');
@@ -32,7 +74,7 @@
     card.dataset.label='Jobs in Japan';
     card.dataset.search='jobs japan baito part time townwork baitoru চাকরি কাজ আবেদন apply interview convenience restaurant';
     card.dataset.searchIcon='fa-briefcase';
-    card.innerHTML='<span class="app-tool-icon tone-teal"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span><b>Jobs in Japan</b><small>কাজ খুঁজুন · আবেদন শিখুন</small>';
+    card.innerHTML='<span class="app-tool-icon tone-teal"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span><b>Jobs in Japan</b><small>Find Jobs · Learn to Apply</small>';
 
     const japanLife=grid.querySelector('a[href="/japan-life.html"]');
     if(japanLife&&japanLife.parentNode===grid)japanLife.insertAdjacentElement('afterend',card);else grid.prepend(card);
@@ -91,7 +133,8 @@
     applyMobileLayoutFix();
     mountJobsInJapanEntry();
     normalizeHalalScannerEntry();
-    setTimeout(normalizeHalalScannerEntry,0);
+    applyHomeCardEnglish();
+    setTimeout(()=>{normalizeHalalScannerEntry();applyHomeCardEnglish();},0);
     loadJobsEnhancer();
     mountHomeDailyNews().catch(()=>{});
     if(!window.AN)return;
@@ -112,6 +155,6 @@
     });
   }
 
-  window.addEventListener('aponar:languagechange',()=>setTimeout(normalizeHalalScannerEntry,0));
+  window.addEventListener('aponar:languagechange',()=>setTimeout(()=>{normalizeHalalScannerEntry();applyHomeCardEnglish();},0));
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
 })();
