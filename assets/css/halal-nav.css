@@ -10,10 +10,12 @@
 /* Home grid: match every other tile and place Halal Scanner last. */
 .app-home .app-tool-halal,.app-tool-halal{order:999!important;grid-row:auto!important;grid-column:auto!important}
 .app-tool-halal .app-tool-icon{background:linear-gradient(145deg,#17b783,#08745b)!important;color:#fff!important;box-shadow:inset 0 1px 2px rgba(255,255,255,.35),0 9px 20px rgba(8,116,91,.2)!important}
-.app-tool-halal>b{color:#212937!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+/* Keep this long English label visually equal to the other tool labels. */
+.app-tool-halal>b{color:#212937!important;font-size:12px!important;line-height:1.18!important;font-weight:800!important;letter-spacing:-.02em!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;max-width:100%!important}
 .app-tool-halal-badge{display:none!important}
 
 @media(max-width:430px){
   .app-dock-link--halal>i{width:43px!important;height:43px!important;border-radius:15px!important;font-size:18px!important}
   .app-dock-link--halal>span{font-size:8px!important}
+  .app-tool-halal>b{font-size:11px!important;line-height:1.16!important}
 }
