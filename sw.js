@@ -1,4 +1,4 @@
-/* Aponar Nihon service-worker wrapper — app shell v30.
+/* Aponar Nihon service-worker wrapper — app shell v35 — revalidate application assets.
    The dashboard, dedicated section hubs and AI Tutor assets are available
    offline after install, while updated learning pages stay network-first. */
 

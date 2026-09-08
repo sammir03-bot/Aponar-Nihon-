@@ -1,5 +1,5 @@
-const STATIC_CACHE = "aponar-nihon-static-v34";
-const DYNAMIC_CACHE = "aponar-nihon-dynamic-v34";
+const STATIC_CACHE = "aponar-nihon-static-v35";
+const DYNAMIC_CACHE = "aponar-nihon-dynamic-v35";
 
 const STATIC_ASSETS = [
   "/",
@@ -411,7 +411,7 @@ self.addEventListener('fetch',event=>{
 
   if(isSameOrigin && (url.pathname.endsWith('.css') || url.pathname.endsWith('.js'))){
     event.respondWith(
-      fetch(request).then(response=>{
+      fetch(request,{cache:'no-cache'}).then(response=>{
         if(response && response.ok){
           const copy=response.clone();
           caches.open(DYNAMIC_CACHE).then(cache=>{
