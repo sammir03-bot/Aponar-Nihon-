@@ -32,7 +32,7 @@
   };
 
   var HALAL_COPY = {
-    bn: { nav: "হালাল স্ক্যান", title: "Halal Food Scanner", note: "বারকোড স্ক্যান · ingredient check" },
+    bn: { nav: "হালাল স্ক্যান", title: "হালাল ফুড স্ক্যানার", note: "বারকোড ও উপাদান যাচাই" },
     ja: { nav: "ハラール", title: "ハラール食品スキャナー", note: "バーコード · 原材料チェック" },
     en: { nav: "Halal Scan", title: "Halal Food Scanner", note: "Barcode · ingredient check" },
     vi: { nav: "Quét Halal", title: "Máy quét thực phẩm Halal", note: "Mã vạch · kiểm tra thành phần" },
@@ -73,7 +73,7 @@
     if (document.querySelector('link[data-halal-nav-style]')) return;
     var link = document.createElement("link");
     link.rel = "stylesheet";
-    link.href = "/assets/css/halal-nav.css?v=20260904";
+    link.href = "/assets/css/halal-nav.css?v=20260908";
     link.dataset.halalNavStyle = "true";
     document.head.appendChild(link);
   }
@@ -162,7 +162,7 @@
 
   function setQuick(href, key) {
     var link = document.querySelector('.app-quick-item[href="' + href + '"] span');
-    if (link) link.textContent = tr(key, link.textContent);
+    if (link) link.textContent = key.indexOf("JLPT ") === 0 ? key : tr(key, link.textContent);
   }
 
   function applyHomeLanguage() {
@@ -188,9 +188,9 @@
     setCard("/japan-life.html", "home.japanlife", "home.japanlife.note");
     setCard("/Hiragana-Katagana.html", "home.kana", "home.kana.note");
 
-    setQuick("/n5.html", "home.kana");
-    setQuick("/n4.html", "home.n4.note");
-    setQuick("/n3.html", "home.n3.note");
+    setQuick("/n5.html", "JLPT N5");
+    setQuick("/n4.html", "JLPT N4");
+    setQuick("/n3.html", "JLPT N3");
     setQuick("/essential-phrases.html", "home.phrases");
     ensureHalalScannerEntry();
     setupGreeting();

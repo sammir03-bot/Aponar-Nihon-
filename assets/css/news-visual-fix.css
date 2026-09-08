@@ -65,3 +65,12 @@
 }
 
 @media(prefers-reduced-motion:reduce){.daily-news-card::before,.news-list-item::before{transition:none}}
+
+/* Article-owned images take precedence over decorative category illustrations. */
+.has-news-photo::before{display:none!important}
+.news-photo{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#eaf4ff}
+.news-list-item>.news-photo{grid-area:newsart;height:100%;min-height:106px;border-radius:13px}
+.news-art-label{padding:5px 14px;color:#53667a;font-size:.65rem;background:#f3f7fb}
+.news-reader-figure{margin:18px 0}
+.news-reader-figure .news-photo{max-height:380px;border-radius:16px}
+.news-reader-figure figcaption{margin-top:7px;font-size:.75rem;color:#53667a}

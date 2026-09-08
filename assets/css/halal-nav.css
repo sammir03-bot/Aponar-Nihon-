@@ -48,3 +48,6 @@ body[data-page="home"] .app-tools-grid>.app-tool-halal{order:1!important;grid-ro
 @media(prefers-reduced-motion:reduce){
   .app-dock-link--halal>i{transition:none!important}
 }
+
+/* Keep the scanner at the start of row two at every grid width. */
+body[data-page="home"] .app-tools-grid>.app-tool-halal{grid-row:2!important;grid-column:1!important}

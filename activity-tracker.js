@@ -1,25 +1,25 @@
 (()=>{
-  const HOME_CARD_EN={
-    '/n5.html':['JLPT N5','Basic Course'],
-    '/n4.html':['JLPT N4','Next Step'],
-    '/n3.html':['JLPT N3','Intermediate'],
-    '/quiz.html':['Quiz','Free Practice'],
-    '/tutor-section.html':['AI Tutor','Ask in Bengali'],
-    '/mock-test.html':['Mock Test','Exam Practice'],
-    '/interview.html':['Interview','Jobs & Embassy'],
-    '/ssw.html':['SSW','Complete Guide'],
-    '/essential-phrases.html':['Essential Phrases','Conversation'],
-    '/japan-life.html':['Japan Life','Beginner Guide'],
-    '/jobs-in-japan.html':['Jobs in Japan','Find Jobs · Learn to Apply'],
-    '/Hiragana-Katagana.html':['Hiragana-Katakana','Learn Kana'],
-    '/ebook-library.html':['E-Book','Study Library'],
-    '/student-tools.html':['Student Toolkit','28h + Practical Tools'],
-    '/cv-builder.html':['Japan CV Builder','Build a Rirekisho'],
+  const HOME_CARD_BN={
+    '/n5.html':['JLPT N5','বেসিক কোর্স'],
+    '/n4.html':['JLPT N4','পরবর্তী ধাপ'],
+    '/n3.html':['JLPT N3','মধ্যম স্তর'],
+    '/quiz.html':['কুইজ','বিনামূল্যে অনুশীলন'],
+    '/tutor-section.html':['AI Tutor','বাংলায় জিজ্ঞাসা করুন'],
+    '/mock-test.html':['Mock Test','পরীক্ষার অনুশীলন'],
+    '/interview.html':['ইন্টারভিউ','চাকরি ও দূতাবাস'],
+    '/ssw.html':['SSW','সম্পূর্ণ গাইড'],
+    '/essential-phrases.html':['দরকারি বাক্য','কথোপকথন'],
+    '/japan-life.html':['জাপান জীবন','নতুনদের গাইড'],
+    '/jobs-in-japan.html':['জাপানে চাকরি','কাজ খুঁজুন · আবেদন শিখুন'],
+    '/Hiragana-Katagana.html':['হিরাগানা-কাতাকানা','অক্ষর শিখুন'],
+    '/ebook-library.html':['E-Book','পড়ার লাইব্রেরি'],
+    '/student-tools.html':['Student Toolkit','২৮ ঘণ্টা ও দরকারি টুল'],
+    '/cv-builder.html':['Japan CV Builder','জাপানি জীবনবৃত্তান্ত তৈরি'],
     '/grammar-vs.html':['Grammar VS','N5 · N4 · N3'],
-    '/muslim-japan.html':['Muslim Japan','Prayer · Halal'],
-    '/jpy-bdt-remittance.html':['JPY ↔ BDT','Rate · Remittance'],
-    '/study-guide.html':['Study Guide','Learning Roadmap'],
-    '/halal-scanner.html':['Halal Food Scanner','Barcode · Ingredient Check']
+    '/muslim-japan.html':['Muslim Japan','নামাজ ও হালাল'],
+    '/jpy-bdt-remittance.html':['JPY ↔ BDT','রেট ও রেমিট্যান্স'],
+    '/study-guide.html':['স্টাডি গাইড','শেখার রোডম্যাপ'],
+    '/halal-scanner.html':['হালাল ফুড স্ক্যানার','বারকোড ও উপাদান যাচাই']
   };
 
   function applyMobileLayoutFix(){
@@ -34,7 +34,7 @@
     if(!document.body||document.body.dataset.page!=='home')return;
     const card=document.querySelector('.app-tools-grid .app-tool[href="/halal-scanner.html"]');
     if(!card)return;
-    card.className='app-tool';
+    card.classList.add('app-tool-halal');
     const icon=card.querySelector('.app-tool-icon');
     if(icon){
       icon.className='app-tool-icon tone-deepgreen';
@@ -43,7 +43,7 @@
     if(badge)badge.remove();
   }
 
-  function applyHomeCardEnglish(){
+  function applyHomeCardLanguage(){
     if(!document.body||document.body.dataset.page!=='home')return;
     const lang=window.AponarI18n&&typeof window.AponarI18n.getLanguage==='function'
       ?window.AponarI18n.getLanguage()
@@ -51,7 +51,7 @@
     if(lang!=='bn')return;
     const grid=document.querySelector('.app-tools-grid');
     if(!grid)return;
-    Object.entries(HOME_CARD_EN).forEach(([href,copy])=>{
+    Object.entries(HOME_CARD_BN).forEach(([href,copy])=>{
       const card=grid.querySelector(`.app-tool[href="${href}"]`);
       if(!card)return;
       const title=card.querySelector('b');
@@ -71,7 +71,7 @@
     card.className='app-tool app-tool-jobs';
     card.href='/jobs-in-japan.html';
     card.dataset.jobsInJapanEntry='1';
-    card.dataset.label='Jobs in Japan';
+    card.dataset.label='জাপানে চাকরি';
     card.dataset.search='jobs japan baito part time townwork baitoru চাকরি কাজ আবেদন apply interview convenience restaurant';
     card.dataset.searchIcon='fa-briefcase';
     card.innerHTML='<span class="app-tool-icon tone-teal"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span><b>Jobs in Japan</b><small>Find Jobs · Learn to Apply</small>';
@@ -133,8 +133,8 @@
     applyMobileLayoutFix();
     mountJobsInJapanEntry();
     normalizeHalalScannerEntry();
-    applyHomeCardEnglish();
-    setTimeout(()=>{normalizeHalalScannerEntry();applyHomeCardEnglish();},0);
+    applyHomeCardLanguage();
+    setTimeout(()=>{normalizeHalalScannerEntry();applyHomeCardLanguage();},0);
     loadJobsEnhancer();
     mountHomeDailyNews().catch(()=>{});
     if(!window.AN)return;
@@ -155,6 +155,6 @@
     });
   }
 
-  window.addEventListener('aponar:languagechange',()=>setTimeout(()=>{normalizeHalalScannerEntry();applyHomeCardEnglish();},0));
+  window.addEventListener('aponar:languagechange',()=>setTimeout(()=>{normalizeHalalScannerEntry();applyHomeCardLanguage();},0));
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
 })();

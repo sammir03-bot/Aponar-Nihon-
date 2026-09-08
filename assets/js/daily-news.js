@@ -139,10 +139,17 @@
     return dateString === tokyoToday() ? "আজকের নিউজ আপডেট হয়েছে" : "সর্বশেষ আপডেট: " + formatDate(dateString);
   }
 
+  function newsImage(article) {
+    var image = article.image || {};
+    if (!image.src || !/^\/assets\/img\/news\/[a-z0-9._-]+$/i.test(image.src)) return '';
+    return '<img class="news-photo" src="' + escapeHtml(image.src) + '" alt="' + escapeHtml(image.alt_bn || '') + '" width="960" height="638" loading="lazy" decoding="async">';
+  }
+
   function homeCard(article, index, latestDate) {
     var isFirst = index === 0;
     var badge = isFirst ? (latestDate === tokyoToday() ? "আজকের প্রধান" : "সর্বশেষ") : "";
-    return '<a class="daily-news-card" href="/daily-news-reader.html?id=' + encodeURIComponent(article.id) + '">' +
+    return '<a class="daily-news-card' + (newsImage(article) ? ' has-news-photo' : '') + '" href="/daily-news-reader.html?id=' + encodeURIComponent(article.id) + '">' +
+      newsImage(article) + '<span class="news-art-label">' + escapeHtml(article.image && article.image.caption_bn || 'প্রতীকী চিত্র') + '</span>' +
       '<div>' +
         '<div class="daily-news-meta">' +
           (badge ? '<span class="daily-news-badge">' + badge + '</span>' : '') +
@@ -208,7 +215,8 @@
   }
 
   function archiveItem(article) {
-    return '<a class="news-list-item" href="/daily-news-reader.html?id=' + encodeURIComponent(article.id) + '">' +
+    return '<a class="news-list-item' + (newsImage(article) ? ' has-news-photo' : '') + '" href="/daily-news-reader.html?id=' + encodeURIComponent(article.id) + '">' +
+      newsImage(article) +
       '<span class="news-list-date">' + escapeHtml(formatDate(article.date)) + '<br><span class="news-level">' + escapeHtml(article.level || "") + '</span></span>' +
       '<span class="news-list-copy"><h2 lang="ja">' + escapeHtml(article.headline || "") + '</h2><p>' + escapeHtml(article.teaser_bn || "") + '</p></span>' +
       '<i class="fa-solid fa-chevron-right news-list-arrow" aria-hidden="true"></i>' +
@@ -352,6 +360,7 @@
         '<button class="furigana-toggle" type="button" data-furigana-toggle aria-pressed="true"><span data-furigana-label>ফুরিগানা ON</span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button>' +
       '</div>' +
       '<h1 class="news-reader-title news-japanese" lang="ja" style="display:block">' + renderTokens(article.headline_tokens || []) + '</h1>' +
+      (article.image ? '<figure class="news-reader-figure">' + newsImage(article) + '<figcaption>' + escapeHtml(article.image.caption_bn || '') + ' · ' + escapeHtml(article.image.credit || '') + ' <a href="' + escapeHtml(safeSourceUrl(article.image.source_url)) + '" target="_blank" rel="noopener noreferrer">ছবির উৎস</a></figcaption></figure>' : '') +
       '<p class="news-reader-lead">' + escapeHtml(article.teaser_bn || "") + '</p>' +
       '<div class="news-divider"></div>' +
       '<section aria-labelledby="japanese-news-title"><h2 class="news-section-title" id="japanese-news-title"><i class="fa-solid fa-language" aria-hidden="true"></i> Japanese News</h2><div class="news-japanese" lang="ja">' + japanese + '</div></section>' +
