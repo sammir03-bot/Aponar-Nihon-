@@ -54,6 +54,7 @@
  [data-workspace-ui=cv] .row :is(input,textarea){font-size:14px;min-height:44px}
  [data-workspace-ui=cv] .remove{height:36px;width:32px;font-size:20px}
  [data-workspace-ui=cv] .preview-tools button{font-size:13px;min-height:44px}
+ [data-workspace-ui=cv] .page{transform-origin:top left}
  [data-workspace-ui=cv] .nav-actions{gap:10px;padding-top:20px}
  [data-workspace-ui=cv] .form-panel>.nav-actions{justify-content:space-between}
  [data-workspace-ui=cv] .status{font-size:12px}
@@ -100,6 +101,7 @@
  .ui-admin-tools label{font-size:13px;display:flex;align-items:center;gap:8px}
  /* Jobs: readable resource directory and a compact guide index. */
  [data-workspace-ui=jobs] .jobs-main{max-width:1180px}
+ [data-workspace-ui=jobs] .app-dock{grid-template-columns:repeat(6,minmax(0,1fr))}
  [data-workspace-ui=jobs] .hero{box-shadow:none;background:linear-gradient(115deg,#123a4a,#087d80);padding:40px}
  [data-workspace-ui=jobs] .hero h1{font-size:clamp(28px,4vw,44px);line-height:1.45;max-width:800px}
  [data-workspace-ui=jobs] .hero p{font-size:15px}

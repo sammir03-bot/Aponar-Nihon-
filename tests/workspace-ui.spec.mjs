@@ -22,6 +22,10 @@ test('CV review returns to a missing field and filled details survive reload',as
  await page.reload();
  await page.locator('[data-step="1"]').click();
  await expect(page.locator('#name')).toHaveValue('テスト');
+ const paper=page.locator('.page:visible').first();
+ const paperBox=await paper.boundingBox();
+ const previewBox=await page.locator('#paperArea').boundingBox();
+ expect(paperBox.width).toBeLessThanOrEqual(previewBox.width);
  await noOverflow(page);
 });
 
