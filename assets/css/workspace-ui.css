@@ -168,3 +168,4 @@
  @media(prefers-reduced-motion:reduce){[data-workspace-ui] *,[data-workspace-ui] *:before,[data-workspace-ui] *:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 }
 @media print{.ui-step-help,.ui-review,.ui-progress,.ui-tabs,.ui-jump,.ui-launch-grid,.ui-admin-tools{display:none!important}}
+@media print{[data-workspace-ui=cv] .page{margin:0!important;transform:none!important}}
