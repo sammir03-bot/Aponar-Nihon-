@@ -373,8 +373,9 @@
     table = table || languageTables.get(language) || new Map();
     languageTables.set(language, table);
     var missing = sources.filter(function (source) { return !table.has(source); });
-    if (!missing.length || !runtimeEnabled) return;
+    if (!missing.length || !runtimeEnabled) return 0;
     var chunks = makeChunks(missing), completed = 0, cursor = 0;
+    var failedChunks = 0;
     async function translateChunkResilient(chunk) {
       try {
         await translateChunk(language, chunk, table, signal);
@@ -382,7 +383,7 @@
         if (signal && signal.aborted) throw error;
         // Long news paragraphs can exceed a provider's practical context window.
         // Split only the failed batch so successful batches remain cached.
-        if (chunk.length < 2) throw error;
+        if (chunk.length < 2) { failedChunks += 1; return; }
         var middle = Math.ceil(chunk.length / 2);
         await Promise.all([
           translateChunkResilient(chunk.slice(0, middle)),
@@ -399,10 +400,12 @@
       }
     }
     // Let successful batches finish even if another batch fails; retry reuses them.
-    var outcomes = await Promise.allSettled(Array.from({ length: Math.min(6, chunks.length) }, worker));
+    // Keep large vocabulary/corpus pages below provider concurrency limits.
+    var outcomes = await Promise.allSettled(Array.from({ length: Math.min(3, chunks.length) }, worker));
     var failed = outcomes.find(function(outcome){return outcome.status === "rejected";});
     if (failed) throw failed.reason;
-    if (missing.some(function (source) { return !table.has(source); })) throw new Error("translation_coverage_incomplete");
+    if (missing.some(function (source) { return !table.has(source); }) && !failedChunks) throw new Error("translation_coverage_incomplete");
+    return failedChunks;
   }
 
   function statusLayer() {
@@ -473,12 +476,22 @@
       loaded[0].forEach(function (target, source) { translationTable.set(source, preserveBrandNames(source, target)); });
       sources.forEach(function (source) { if (isExactBrandName(source)) translationTable.set(source, source); });
       applyTranslations(items, false);
-      await translateMissing(language, sources, function (done, total) {
+      var failedChunks = await translateMissing(language, sources, function (done, total) {
         if (serial !== requestSerial || language !== activeLanguage) return;
         applyTranslations(items, false);
         if (total > 1) showStatus(language, false, languageMessages(language).detail + " " + done + "/" + total);
       }, table, controller.signal);
       if (serial !== requestSerial || language !== activeLanguage) return;
+      // A long corpus page can contain one provider-incompatible sentence. Keep
+      // every successful translation and leave only that sentence in Bangla;
+      // never cover the lesson with a blocking error card.
+      if (failedChunks && sources.length >= 80) {
+        applyTranslations(items, true);
+        document.documentElement.dataset.i18nPartial = "true";
+        window.clearTimeout(releaseTimer);
+        hideStatus();
+        return;
+      }
       if (runtimeEnabled && sources.some(function (source) { return !translationTable.has(source); })) throw new Error("translation_coverage_incomplete");
       applyTranslations(items, true);
       window.clearTimeout(releaseTimer);

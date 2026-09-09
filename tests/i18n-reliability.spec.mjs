@@ -128,6 +128,22 @@ test('a failed multi-item batch is retried in smaller batches', async ({ page })
   await expect(page.locator('html')).toHaveAttribute('data-i18n-ready', 'true');
 });
 
+test('large pages keep successful translations without a blocking error card', async ({ page }) => {
+  const markup = Array.from({ length: 81 }, (_, i) => `<p id="large${i}">বড় পেজের লেখা ${i}</p>`).join('');
+  await fixture(page, 'en', markup);
+  await page.route('**/api/i18n/translate', async route => {
+    const body = route.request().postDataJSON();
+    if (body.items.some(item => item.text === 'বড় পেজের লেখা 0')) {
+      await route.fulfill({ status: 502, json: { ok: false, error: 'translation_failed' } });
+    } else await route.fulfill({ json: response(body) });
+  });
+  await page.goto(fixturePath);
+  await expect(page.locator('#large1')).toHaveText('en translated 0');
+  await expect(page.locator('#large80')).toContainText('en translated');
+  await expect(page.locator('html')).toHaveAttribute('data-i18n-ready', 'true');
+  await expect(page.locator('#aponarI18nStatus')).toBeHidden();
+});
+
 test('slow and dynamic translations finish without hiding inputs or sending private values', async ({ page }) => {
   await fixture(page);
   let release;
