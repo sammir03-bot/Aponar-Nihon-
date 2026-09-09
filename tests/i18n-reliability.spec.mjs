@@ -4,6 +4,7 @@ const locales = ['bn', 'en', 'ja', 'vi', 'ne', 'hi', 'ur', 'my', 'zh', 'si', 'fi
 const fixturePath = '/i18n-reliability-fixture.html';
 const defaultMarkup = `<h1 id="ui">CV Builder</h1><p id="copy">মূল লেখা</p>
   <textarea id="notes" placeholder="এখানে লিখুন">নিজের ব্যক্তিগত তথ্য</textarea>
+  <input id="japaneseHint" placeholder="氏名を入力してください">
   <div id="paperArea">ব্যক্তিগত জীবনবৃত্তান্ত</div><p lang="ja">日本語を勉強します。</p>`;
 
 async function fixture(page, language = 'en', markup = defaultMarkup) {
@@ -23,7 +24,7 @@ async function fixture(page, language = 'en', markup = defaultMarkup) {
 
 function response(body) {
   const copy = {
-    en: { 'মূল লেখা': 'Original content', 'এখানে লিখুন': 'Type here', 'নতুন লেখা': 'New content' },
+    en: { 'মূল লেখা': 'Original content', 'এখানে লিখুন': 'Type here', 'নতুন লেখা': 'New content', '氏名を入力してください': 'Enter your full name' },
     ja: { 'মূল লেখা': '元の内容', 'এখানে লিখুন': 'ここに入力', 'নতুন লেখা': '新しい内容' }
   };
   return { ok: true, translations: body.items.map(item => ({
@@ -127,6 +128,7 @@ test('slow and dynamic translations finish without hiding inputs or sending priv
   await expect(page.locator('#dynamic')).toHaveText('New content');
   await expect(page.locator('#notes')).toHaveAttribute('placeholder', 'Type here');
   await expect(page.locator('#notes')).toHaveValue('আমার নিজের লেখা');
+  await expect(page.locator('#japaneseHint')).toHaveAttribute('placeholder', 'Enter your full name');
   await expect(page.locator('#paperArea')).toHaveText('ব্যক্তিগত জীবনবৃত্তান্ত');
   expect(requestedText.join(' ')).not.toMatch(/ব্যক্তিগত|আমার নিজের|日本語を/);
   await expect(page.locator('html')).toHaveAttribute('data-i18n-ready', 'true');

@@ -3,7 +3,7 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260909.1";
+  var RUNTIME_VERSION = "20260909.2";
   var CACHE_VERSION = "20260909.1";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + CACHE_VERSION;
@@ -217,7 +217,9 @@
       var map = originalAttributes.get(element);
       if (!map) return;
       map.forEach(function (raw, attribute) {
-        if (shouldTranslateAttribute(element, attribute) && needsTranslation(raw, language)) result.push({ kind: "attribute", node: element, attribute: attribute, source: normalize(raw), raw: raw });
+        // Public form hints and accessible names are UI, including Japanese-only instructions.
+        var japaneseHint = language !== "bn" && language !== "ja" && isJapaneseOnly(raw);
+        if (shouldTranslateAttribute(element, attribute) && (needsTranslation(raw, language) || japaneseHint)) result.push({ kind: "attribute", node: element, attribute: attribute, source: normalize(raw), raw: raw });
       });
     });
     return result;
