@@ -21,20 +21,24 @@ tail.on('error', error => console.log(JSON.stringify({ tail: error.code || 'unav
 try {
   await new Promise(resolve => setTimeout(resolve, 10000));
   const results = await Promise.all(['ja', 'my', 'si'].map(async targetLanguage => {
-    const started = Date.now();
-    try {
-      const reply = await fetch(`${origin}/api/i18n/translate`, {
-        method: 'POST', headers: { 'content-type': 'application/json', origin }, signal: AbortSignal.timeout(45000),
-        body: JSON.stringify({ page: 'language-quality-check', targetLanguage, items: [{ id: 'name', text: 'আপনার নাম লিখুন।' }, { id: 'date', text: '৯ সেপ্টেম্বর ২০২৬' }] })
-      });
-      const body = await reply.json();
-      const complete = reply.ok && body.ok === true && body.translations?.length === 2;
-      console.log(JSON.stringify({ language: targetLanguage, status: reply.status, complete, error: body.error || null, duration_ms: Date.now() - started }));
-      return complete;
-    } catch (error) {
-      console.log(JSON.stringify({ language: targetLanguage, complete: false, error: error.name, duration_ms: Date.now() - started }));
-      return false;
+    const payload = JSON.stringify({ page: 'language-quality-check', targetLanguage, items: [{ id: 'name', text: 'আপনার নাম লিখুন।' }, { id: 'date', text: '৯ সেপ্টেম্বর ২০২৬' }] });
+    const maxAttempts = 3;
+    for (let attempt = 1; attempt <= maxAttempts; attempt += 1) {
+      const started = Date.now();
+      try {
+        const reply = await fetch(`${origin}/api/i18n/translate`, {
+          method: 'POST', headers: { 'content-type': 'application/json', origin }, signal: AbortSignal.timeout(30000), body: payload
+        });
+        const body = await reply.json();
+        const complete = reply.ok && body.ok === true && body.translations?.length === 2;
+        console.log(JSON.stringify({ language: targetLanguage, attempt, status: reply.status, complete, error: body.error || null, duration_ms: Date.now() - started }));
+        if (complete) return true;
+      } catch (error) {
+        console.log(JSON.stringify({ language: targetLanguage, attempt, complete: false, error: error.name, duration_ms: Date.now() - started }));
+      }
+      if (attempt < maxAttempts) await new Promise(resolve => setTimeout(resolve, attempt * 1500));
     }
+    return false;
   }));
   if (results.some(complete => !complete)) process.exitCode = 1;
 } finally {
