@@ -525,7 +525,7 @@ Hard requirements:
 1. Return every ID exactly once and do not add IDs, commentary, Markdown, or code fences.
 2. Translate the complete UI/explanation sentence naturally. Do not leave Bangla or English prose behind when the target is another language.
 3. Japanese learning material is not the old interface language: preserve Japanese examples, kanji, kana, furigana, readings, grammar patterns, particles, and quoted Japanese answers exactly. Translate the explanation around them.
-4. Preserve Aponar Nihon, URLs, email placeholders, numbers, HTML-free punctuation, JLPT, N5/N4/N3, AI, CV, SSW, and tokens such as ⟦AN_PRIVATE_0⟧ exactly when they are identifiers, acronyms, or protected values.
+4. Preserve Aponar Nihon, URLs, email placeholders, numeric values, HTML-free punctuation, JLPT, N5/N4/N3, AI, CV, SSW, and tokens such as ⟦AN_PRIVATE_0⟧ exactly when they are identifiers, acronyms, or protected values. Write dates, units and numerals in the target language's usual form without changing their values.
 5. For Bangla, replace ordinary English UI prose with natural Bangla; for English, remove Bangla prose; for Japanese, render all explanatory/UI prose in natural Japanese.
 6. Generic product/navigation words are UI prose, not protected names. Translate terms such as Mock Test, Student Toolkit, CV Builder, Grammar, Profile, Privacy, Terms, Install, App, Daily Challenge, and Created by.
 7. Keep meaning, warnings, form labels, button intent, and success/error tone exact. Never invent educational facts.
@@ -536,6 +536,15 @@ ${JSON.stringify({ page: input.page, items: input.items })}`;
 }
 
 const ENGLISH_UI_WORDS = /\b(?:app|basic|builder|cancel|challenge|close|created|daily|disclaimer|e-?book|error|exam|grammar|home|install|learning|menu|mock|muslim|open|practice|privacy|profile|search|student|submit|success|terms|test|toolkit|tutor)\b/i;
+
+function formatTranslationDigits(value: string, language: TutorLanguage): string {
+  const scripts = ['০১২৩৪৫৬৭৮৯', '०१२३४५६७८९', '٠١٢٣٤٥٦٧٨٩', '۰۱۲۳۴۵۶۷۸۹', '၀၁၂၃၄၅၆၇၈၉'];
+  const formatter = new Intl.NumberFormat(language, { useGrouping: false });
+  return value.replace(/[০-৯०-९٠-٩۰-۹၀-၉]/g, digit => {
+    const script = scripts.find(alphabet => alphabet.includes(digit));
+    return script ? formatter.format(script.indexOf(digit)) : digit;
+  });
+}
 
 function translationResidue(value: string): string {
   return value
@@ -551,6 +560,11 @@ function translationHasLegacyProse(value: string, targetLanguage: TutorLanguage,
   for (const name of names) {
     if (!ENGLISH_UI_WORDS.test(name)) residue = residue.replaceAll(name, " ");
   }
+  // Product/model identifiers and digits are not prose in a legacy language.
+  for (const identifier of source.match(/\b[A-Z]{2,8}(?:-[A-Z0-9]+)+\b/g) || []) {
+    residue = residue.replaceAll(identifier, " ");
+  }
+  residue = residue.replace(/\p{N}/gu, " ");
   if (targetLanguage === "en") {
     return /[\p{Script=Bengali}\p{Script=Devanagari}\p{Script=Arabic}\p{Script=Myanmar}\p{Script=Sinhala}]/u.test(residue);
   }
@@ -591,7 +605,7 @@ function parseTranslationModelOutput(raw: string, expected: TranslationRequest):
   for (const entry of parsed.translations) {
     if (!isRecord(entry) || typeof entry.id !== "string" || typeof entry.text !== "string") return null;
     const id = entry.id.trim();
-    const text = entry.text.trim();
+    const text = formatTranslationDigits(entry.text.trim(), expected.targetLanguage);
     if (!expectedIds.has(id) || seen.has(id) || !text || translationHasLegacyProse(text, expected.targetLanguage, expected.items.find(item => item.id === id)?.text)) return null;
     seen.add(id);
     translations.push({ id, text });
@@ -677,7 +691,7 @@ async function callNmtTranslation(env: Env, input: TranslationRequest): Promise<
       if (!translated) {
         throw new HttpError(502, "empty_nmt_response", "The translation model returned incomplete data.");
       }
-      const restored = safe.restore(translated);
+      const restored = formatTranslationDigits(safe.restore(translated), input.targetLanguage);
       if (translationHasLegacyProse(restored, input.targetLanguage, item.text)) {
         throw new HttpError(502, "incomplete_nmt_translation", "The translation model left old interface prose behind.");
       }
@@ -803,7 +817,7 @@ async function callGeminiTranslation(
 
 async function translationDigest(input: TranslationRequest): Promise<string> {
   const canonical = JSON.stringify({
-    version: "20260909.1",
+    version: "20260909.2",
     targetLanguage: input.targetLanguage,
     items: input.items
   });

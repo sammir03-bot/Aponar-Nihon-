@@ -25,6 +25,8 @@ assert.ok(valid('vi', 'অ্যাপ খুলুন', 'Mở app'));
 assert.ok(valid('fil', 'অনুশীলন শুরু করুন', 'Simulan ang practice'));
 assert.equal(valid('ja', 'Student dashboard', 'Student dashboard'), null);
 assert.equal(valid('vi', 'অ্যাপ খুলুন', 'অ্যাপ খুলুন'), null);
+assert.equal(valid('ja', '৯ সেপ ২০২৬', '২০২৬年৯月৯日')[0].text, '2026年9月9日');
+assert.ok(valid('ja', 'CH-47 হেলিকপ্টার', 'CH-47ヘリコプター'));
 const ui = vm.createContext({ window: {}, Map });
 vm.runInContext(fs.readFileSync('assets/js/i18n-ui.js', 'utf8'), ui);
 for (const row of ui.window.AponarUIStrings.rows) {
