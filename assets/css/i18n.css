@@ -102,6 +102,9 @@ body.aponar-language-open {
 .aponar-i18n-status.compact button{font-size:13px;margin-top:10px;min-height:40px}
 [dir="rtl"] .aponar-i18n-status.compact{left:16px;right:auto}
 
+/* Native names must remain readable even in scripts with tall marks or long words. */
+html[lang] .app-tool > b{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere;line-height:1.5;display:block;-webkit-line-clamp:unset}
+
 .aponar-i18n-dialog {
   position: fixed;
   inset: 0;

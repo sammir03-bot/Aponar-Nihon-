@@ -40,6 +40,12 @@ test('all eleven language choices survive navigation and reload', async ({ page 
     await page.locator(`[data-language-option="${language}"]`).click();
     await expect(page.locator('html')).toHaveAttribute('lang', language);
     await expect(page.locator('#aponarLanguageButton [data-language-code]')).toHaveText(language.toUpperCase());
+    await expect(page.locator('.app-tool > b')).toHaveCount(20);
+    await expect.poll(() => page.locator('.app-tool > b').evaluateAll(labels => labels.every(label =>
+      label.textContent.trim() && getComputedStyle(label).opacity === '1' && getComputedStyle(label).visibility === 'visible'
+    ))).toBe(true);
+    if (language === 'my') await expect(page.locator('.app-tool[href="/quiz.html"] > b')).toHaveText('ဉာဏ်စမ်း');
+    if (language === 'si') await expect(page.locator('.app-tool[href="/ebook-library.html"] > b')).toHaveText('විද්‍යුත් පොත්');
     await page.goto('/privacy-policy.html');
     await expect(page.locator('html')).toHaveAttribute('lang', language);
     await expect(page.locator('html')).toHaveAttribute('dir', language === 'ur' ? 'rtl' : 'ltr');

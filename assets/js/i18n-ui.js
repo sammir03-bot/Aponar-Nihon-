@@ -4,6 +4,12 @@
  var languages=['bn','en','ja','vi','ne','hi','ur','my','zh','si','fil'];
  // Each row is one meaning, in the language order above. Aliases cover legacy UI.
  var rows=[
+  ['কুইজ','Quiz','クイズ','Trắc nghiệm','प्रश्नोत्तरी','प्रश्नोत्तरी','سوالات کی مشق','ဉာဏ်စမ်း','测验','ප්‍රශ්නාවලිය','Maikling pagsusulit'],
+  ['হালাল ফুড স্ক্যানার','Halal Food Scanner','ハラール食品確認','Kiểm tra thực phẩm Halal','हलाल खाना जाँच','हलाल भोजन जाँच','حلال خوراک کی جانچ','ဟာလာလ် အစားအစာ စစ်ဆေးရန်','清真食品扫描','හලාල් ආහාර පරීක්ෂාව','Suriin ang pagkaing Halal'],
+  ['হিরাগানা-কাতাকানা','Hiragana & Katakana','ひらがな・カタカナ','Hiragana và Katakana','हिरागाना र काताकाना','हिरागाना और काताकाना','ہیراگانا اور کاتاکانا','ဟီရာဂါနာနှင့် ကာတာကာနာ','平假名与片假名','හිරගනා සහ කතකනා','Hiragana at Katakana'],
+  ['ই-বুক','E-Book','電子書籍','Sách điện tử','ई-पुस्तक','ई-पुस्तक','برقی کتابیں','အီလက်ထရွန်နစ်စာအုပ်','电子书','විද්‍යුත් පොත්','Mga e-book'],
+  ['ব্যাকরণের তুলনা','Compare grammar','文法の比較','So sánh ngữ pháp','व्याकरण तुलना','व्याकरण की तुलना','قواعد کا موازنہ','သဒ္ဒါ နှိုင်းယှဉ်ရန်','语法比较','ව්‍යාකරණ සැසඳීම','Paghambingin ang gramatika'],
+  ['জাপানে মুসলিম জীবন','Muslim life in Japan','日本のムスリム生活','Đời sống Hồi giáo tại Nhật','जापानमा मुस्लिम जीवन','जापान में मुस्लिम जीवन','جاپان میں مسلم زندگی','ဂျပန်ရှိ မွတ်စလင်ဘဝ','日本穆斯林生活','ජපානයේ මුස්ලිම් ජීවිතය','Buhay Muslim sa Japan'],
   ['CV তৈরি','CV Builder','履歴書作成','Tạo sơ yếu lý lịch','बायोडाटा बनाउनुहोस्','बायोडाटा बनाएँ','سی وی بنائیں','ကိုယ်ရေးရာဇဝင် ပြုလုပ်ရန်','制作简历','ජීව දත්ත පත්‍රය සාදන්න','Gumawa ng résumé'],
   ['AI শিক্ষক','AI Tutor','AI日本語講師','Gia sư AI','AI शिक्षक','AI शिक्षक','AI استاد','AI ဆရာ','AI日语老师','AI ගුරුවරයා','AI na guro'],
   ['মডেল পরীক্ষা','Mock Test','模擬試験','Thi thử','नमुना परीक्षा','अभ्यास परीक्षा','آزمائشی امتحان','အစမ်းစာမေးပွဲ','模拟考试','ආදර්ශ විභාගය','Pagsasanay sa pagsusulit'],
@@ -59,7 +65,7 @@
   ['ফোন নম্বর','Phone','電話番号','Số điện thoại','फोन नम्बर','फ़ोन नंबर','فون نمبر','ဖုန်းနံပါတ်','电话号码','දුරකථන අංකය','Numero ng telepono'],
   ['বর্তমান ঠিকানা','Address','現住所','Địa chỉ hiện tại','हालको ठेगाना','वर्तमान पता','موجودہ پتہ','လက်ရှိလိပ်စာ','现住址','වර්තමාන ලිපිනය','Kasalukuyang tirahan']
  ];
- var aliases={'Japan CV Builder':'CV Builder','আমার CV তৈরি':'CV Builder','Build my CV':'CV Builder','My Learning':'My learning','জাপানে কাজ':'Jobs in Japan','Japan Jobs':'Jobs in Japan','হালনাগাদ':'Refresh Data','Activity':'Activities','Last active':'Last Active','Convenience Store':'Convenience stores','Restaurant':'Restaurants'};
+ var aliases={'Japan CV Builder':'CV Builder','আমার CV তৈরি':'CV Builder','Build my CV':'CV Builder','My Learning':'My learning','জাপানে কাজ':'Jobs in Japan','Japan Jobs':'Jobs in Japan','Grammar VS':'Compare grammar','Muslim Japan':'Muslim life in Japan','Activity':'Activities','Last active':'Last Active','Convenience Store':'Convenience stores','Restaurant':'Restaurants'};
  window.AponarUIStrings={languages:languages,rows:rows,dictionary:function(language){
   var i=languages.indexOf(language),result=new Map();if(i<0)return result;
   rows.forEach(function(row){row.forEach(function(source){result.set(source,row[i]);});});

@@ -783,7 +783,8 @@ async function callGeminiTranslation(
       contents: [{ role: "user", parts: [{ text: translationInstruction(input) }] }],
       generationConfig: { responseMimeType: "application/json" }
     }),
-    signal: AbortSignal.timeout(12_000)
+    // Myanmar and Sinhala completions can be substantially longer than Latin UI copy.
+    signal: AbortSignal.timeout(45_000)
   });
 
   const rawResponse = await readBoundedStream(response.body, MAX_UPSTREAM_BYTES);
