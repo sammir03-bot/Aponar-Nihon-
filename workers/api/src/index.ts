@@ -465,7 +465,7 @@ async function parseTranslationRequest(request: Request): Promise<TranslationReq
     throw new HttpError(415, "json_required", "Translation requests must use JSON.");
   }
 
-  const rawBody = await readBoundedStream(request.body, MAX_REQUEST_BYTES);
+  const rawBody = await readBoundedStream(request.body, MAX_TRANSLATION_REQUEST_BYTES);
   let parsed: unknown;
   try {
     parsed = JSON.parse(rawBody);
@@ -529,6 +529,7 @@ Hard requirements:
 5. For Bangla, replace ordinary English UI prose with natural Bangla; for English, remove Bangla prose; for Japanese, render all explanatory/UI prose in natural Japanese.
 6. Generic product/navigation words are UI prose, not protected names. Translate terms such as Mock Test, Student Toolkit, CV Builder, Grammar, Profile, Privacy, Terms, Install, App, Daily Challenge, and Created by.
 7. Keep meaning, warnings, form labels, button intent, and success/error tone exact. Never invent educational facts.
+8. Write for a native speaker with plain, familiar wording. Use established local interface terms; preserve employer/product names such as TownWork and Kura Sushi. Natural loanwords in Vietnamese and Filipino are allowed. Avoid literal Bangla word order.
 
 Input JSON:
 ${JSON.stringify({ page: input.page, items: input.items })}`;
@@ -543,16 +544,20 @@ function translationResidue(value: string): string {
     .replace(/[\p{Script=Hiragana}\p{Script=Katakana}\p{Script=Han}々〆ヵヶー]+/gu, " ");
 }
 
-function translationHasLegacyProse(value: string, targetLanguage: TutorLanguage): boolean {
-  const residue = translationResidue(value);
+function translationHasLegacyProse(value: string, targetLanguage: TutorLanguage, source = ""): boolean {
+  let residue = translationResidue(value);
+  // A foreign employer/product name is not untranslated interface prose.
+  const names = source.match(/\b(?:TownWork|Baitoru|dipID|dip|Kura Sushi|FamilyMart|Lawson|7-Eleven|Seven-Eleven|McDonald['’]?s|Sushiro|Saizeriya|Sukiya|Yoshinoya|Matsuya|MOS Burger|Gusto|KFC|AEON|MyNavi|YOLO Japan|Hello Work|HelloWork|Indeed|LinkedIn|GaijinPot|Daijob|Minna no Nihongo|Matome|NHK)\b/gi) || [];
+  for (const name of names) {
+    if (!ENGLISH_UI_WORDS.test(name)) residue = residue.replaceAll(name, " ");
+  }
   if (targetLanguage === "en") {
     return /[\p{Script=Bengali}\p{Script=Devanagari}\p{Script=Arabic}\p{Script=Myanmar}\p{Script=Sinhala}]/u.test(residue);
   }
   if (targetLanguage === "bn") return /[A-Za-z]/.test(residue);
   if (targetLanguage === "ja") return /[A-Za-z\p{Script=Bengali}]/u.test(residue);
   if (targetLanguage === "vi" || targetLanguage === "fil") {
-    return /[\p{Script=Bengali}\p{Script=Devanagari}\p{Script=Arabic}\p{Script=Myanmar}\p{Script=Sinhala}]/u.test(residue)
-      || ENGLISH_UI_WORDS.test(residue);
+    return /[\p{Script=Bengali}\p{Script=Devanagari}\p{Script=Arabic}\p{Script=Myanmar}\p{Script=Sinhala}]/u.test(residue);
   }
   if (targetLanguage === "hi" || targetLanguage === "ne") {
     return /[A-Za-z\p{Script=Bengali}\p{Script=Arabic}\p{Script=Myanmar}\p{Script=Sinhala}]/u.test(residue);
@@ -587,7 +592,7 @@ function parseTranslationModelOutput(raw: string, expected: TranslationRequest):
     if (!isRecord(entry) || typeof entry.id !== "string" || typeof entry.text !== "string") return null;
     const id = entry.id.trim();
     const text = entry.text.trim();
-    if (!expectedIds.has(id) || seen.has(id) || !text || translationHasLegacyProse(text, expected.targetLanguage)) return null;
+    if (!expectedIds.has(id) || seen.has(id) || !text || translationHasLegacyProse(text, expected.targetLanguage, expected.items.find(item => item.id === id)?.text)) return null;
     seen.add(id);
     translations.push({ id, text });
   }
@@ -653,7 +658,7 @@ async function callNmtTranslation(env: Env, input: TranslationRequest): Promise<
       const item = input.items[index];
       const sourceLanguage = detectTranslationSource(item.text);
       if (sourceLanguage === input.targetLanguage) {
-        if (translationHasLegacyProse(item.text, input.targetLanguage)) {
+        if (translationHasLegacyProse(item.text, input.targetLanguage, item.text)) {
           throw new HttpError(502, "same_language_cleanup_required", "Mixed-language UI text requires the full localization model.");
         }
         translations[index] = item;
@@ -673,7 +678,7 @@ async function callNmtTranslation(env: Env, input: TranslationRequest): Promise<
         throw new HttpError(502, "empty_nmt_response", "The translation model returned incomplete data.");
       }
       const restored = safe.restore(translated);
-      if (translationHasLegacyProse(restored, input.targetLanguage)) {
+      if (translationHasLegacyProse(restored, input.targetLanguage, item.text)) {
         throw new HttpError(502, "incomplete_nmt_translation", "The translation model left old interface prose behind.");
       }
       translations[index] = { id: item.id, text: restored };
@@ -798,7 +803,7 @@ async function callGeminiTranslation(
 
 async function translationDigest(input: TranslationRequest): Promise<string> {
   const canonical = JSON.stringify({
-    version: "20260901.2",
+    version: "20260909.1",
     targetLanguage: input.targetLanguage,
     items: input.items
   });

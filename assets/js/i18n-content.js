@@ -3,8 +3,8 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260902.7";
-  var CACHE_VERSION = "20260902.5";
+  var RUNTIME_VERSION = "20260908.3";
+  var CACHE_VERSION = "20260908.3";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + CACHE_VERSION;
   var MAX_BLOCKING_MS = 1800;
@@ -17,7 +17,9 @@
     "script", "style", "noscript", "template", "code", "pre", "textarea", "svg", "ruby", "rt",
     "[contenteditable]", "[data-i18n-preserve]", "[data-user-content]", ".tutor-message.user",
     ".user-message", "[data-message-role='user']", ".aponar-language-layer", "#aponarLanguageButton",
-    ".app-menu-layer", "#aponarI18nStatus", ".aponar-i18n-dialog"
+    ".app-menu-layer", "#aponarI18nStatus", ".aponar-i18n-dialog",
+    "#paperArea", "#photoPreview", "#heroName", "#heroEmail", "#emailValue", "#adminEmail",
+    ".student-copy", ".email", ".profile-copy", ".info b", ".feed-copy b", ".profile-avatar"
   ].join(",");
   var JAPANESE_SELECTOR = ["body [lang='ja']", "body [lang^='ja-']", ".jp", ".japanese", ".kanji", ".kana"].join(",");
   var STATUS_MESSAGES = {
@@ -40,12 +42,16 @@
   var knownAttributeElements = new Set();
   var translationTable = new Map();
   var languageTables = new Map();
+  var sharedDictionaries = new Map();
   var packCache = new Map();
   var observer = null;
   var observerConnected = false;
   var applying = false;
   var refreshTimer = 0;
   var requestSerial = 0;
+  var syncInFlight = null;
+  var refreshQueued = false;
+  var activeController = null;
   var activeLanguage = window.AponarI18n.getLanguage();
   var runtimeEnabled = !/^(?:localhost|127\.0\.0\.1|0\.0\.0\.0)$/i.test(window.location.hostname)
     || window.__APONAR_I18N_RUNTIME__ === true;
@@ -82,8 +88,21 @@
     try { return /\p{L}/u.test(value); } catch (_error) { return /[A-Za-z\u0980-\u09ff\u3040-\u30ff\u3400-\u9fff]/.test(value); }
   }
 
+  function sharedDictionary(language) {
+    if (!sharedDictionaries.has(language)) {
+      var dictionary = window.AponarI18n.sourceDictionary(language);
+      if (window.AponarUIStrings) window.AponarUIStrings.dictionary(language).forEach(function (target, source) { dictionary.set(source, target); });
+      sharedDictionaries.set(language, dictionary);
+    }
+    return sharedDictionaries.get(language);
+  }
+
   function needsTranslation(value, language) {
     var text = normalize(value);
+    if (language === "bn") return false;
+    // Known Japanese/Chinese interface labels are UI, even when they use only kanji.
+    var sharedTarget = sharedDictionary(language).get(text);
+    if (sharedTarget) return sharedTarget !== text;
     if (!text || !containsLetters(text) || isJapaneseOnly(text)) return false;
     if (language === "en") {
       if (/[\u0980-\u09ff]/.test(text)) return true;
@@ -93,7 +112,7 @@
     // Bangla is the native/source language. Never translate it at runtime.
     if (language === "bn") return false;
     if (language === "ja") return /[A-Za-z\u0980-\u09ff]/.test(text) || !isJapaneseOnly(text);
-    return /[A-Za-z\u0980-\u09ff]/.test(text);
+    return containsLetters(text);
   }
 
   function isPreservedTextNode(node) {
@@ -104,7 +123,10 @@
   }
 
   function shouldTranslateAttribute(element, attribute) {
-    if (!element || element.closest(PRESERVE_SELECTOR)) return false;
+    if (!element) return false;
+    // Textarea values are private; their public placeholder/title still localize.
+    var preserveRoot = element.tagName === "TEXTAREA" ? element.parentElement : element;
+    if (preserveRoot && preserveRoot.closest(PRESERVE_SELECTOR)) return false;
     if (element.closest(JAPANESE_SELECTOR) && attribute !== "aria-label" && attribute !== "title") return false;
     if (attribute === "content") {
       if (element.tagName !== "META") return false;
@@ -276,11 +298,11 @@
       return result;
     } catch (_error) { return new Map(); }
   }
-  async function writeDictionary(language) {
-    if (!("caches" in window) || !translationTable.size) return;
+  async function writeDictionary(language, table) {
+    if (!("caches" in window) || !table.size) return;
     try {
       var cache = await caches.open(CACHE_NAME), existing = await readDictionary(language);
-      translationTable.forEach(function (target, source) { existing.set(source, preserveBrandNames(source, target)); });
+      table.forEach(function (target, source) { existing.set(source, preserveBrandNames(source, target)); });
       var entries = Array.from(existing, function (entry) { return { source: entry[0], target: entry[1] }; });
       await cache.put(dictionaryRequest(language), new Response(JSON.stringify({ version: CACHE_VERSION, translations: entries }), { headers: { "content-type": "application/json; charset=utf-8" } }));
     } catch (_error) { /* Shared cache is an optimization only. */ }
@@ -299,10 +321,10 @@
       return result;
     } catch (_error) { return new Map(); }
   }
-  async function writeSnapshot(language, sources) {
+  async function writeSnapshot(language, sources, table) {
     if (!("caches" in window) || !sources.length) return;
     try {
-      var entries = sources.filter(function (source) { return translationTable.has(source); }).map(function (source) { return { source: source, target: preserveBrandNames(source, translationTable.get(source)) }; });
+      var entries = sources.filter(function (source) { return table.has(source); }).map(function (source) { return { source: source, target: preserveBrandNames(source, table.get(source)) }; });
       if (entries.length !== sources.length) return;
       var cache = await caches.open(CACHE_NAME);
       await cache.put(snapshotRequest(language, sources), new Response(JSON.stringify({ version: CACHE_VERSION, translations: entries }), { headers: { "content-type": "application/json; charset=utf-8" } }));
@@ -329,12 +351,12 @@
     if (current.length) chunks.push(current);
     return chunks;
   }
-  async function translateChunk(language, sources) {
+  async function translateChunk(language, sources, table, signal) {
     var protectedItems = sources.map(function (source, index) {
       var safe = protectPrivateText(source); return { id: String(index), source: source, text: safe.text, restore: safe.restore };
     });
     var response = await fetch(API_PATH, {
-      method: "POST", headers: { "content-type": "application/json", Accept: "application/json" },
+      method: "POST", signal: signal, headers: { "content-type": "application/json", Accept: "application/json" },
       body: JSON.stringify({ page: pageKey(), targetLanguage: language, items: protectedItems.map(function (item) { return { id: item.id, text: item.text }; }) })
     });
     var payload = null;
@@ -342,22 +364,28 @@
     if (!response.ok || !payload || payload.ok !== true || !Array.isArray(payload.translations)) throw new Error(payload && payload.error ? payload.error : "translation_request_failed");
     var returned = new Map();
     payload.translations.forEach(function (entry) { if (entry && typeof entry.id === "string" && typeof entry.text === "string" && entry.text.trim()) returned.set(entry.id, entry.text); });
-    if (returned.size !== protectedItems.length) throw new Error("translation_response_incomplete");
-    protectedItems.forEach(function (item) { translationTable.set(item.source, preserveBrandNames(item.source, item.restore(returned.get(item.id)))); });
+    if (returned.size !== protectedItems.length || protectedItems.some(function(item){return !returned.has(item.id);})) throw new Error("translation_response_incomplete");
+    protectedItems.forEach(function (item) { table.set(item.source, preserveBrandNames(item.source, item.restore(returned.get(item.id)))); });
   }
-  async function translateMissing(language, sources, onProgress) {
-    var missing = sources.filter(function (source) { return !translationTable.has(source); });
+  async function translateMissing(language, sources, onProgress, table, signal) {
+    table = table || languageTables.get(language) || new Map();
+    languageTables.set(language, table);
+    var missing = sources.filter(function (source) { return !table.has(source); });
     if (!missing.length || !runtimeEnabled) return;
     var chunks = makeChunks(missing), completed = 0, cursor = 0;
     async function worker() {
       while (cursor < chunks.length) {
         var index = cursor; cursor += 1;
-        await translateChunk(language, chunks[index]); completed += 1;
+        if (signal && signal.aborted) return;
+        await translateChunk(language, chunks[index], table, signal); completed += 1;
         if (onProgress) onProgress(completed, chunks.length);
       }
     }
-    await Promise.all(Array.from({ length: Math.min(6, chunks.length) }, worker));
-    if (missing.some(function (source) { return !translationTable.has(source); })) throw new Error("translation_coverage_incomplete");
+    // Let successful batches finish even if another batch fails; retry reuses them.
+    var outcomes = await Promise.allSettled(Array.from({ length: Math.min(6, chunks.length) }, worker));
+    var failed = outcomes.find(function(outcome){return outcome.status === "rejected";});
+    if (failed) throw failed.reason;
+    if (missing.some(function (source) { return !table.has(source); })) throw new Error("translation_coverage_incomplete");
   }
 
   function statusLayer() {
@@ -374,22 +402,25 @@
     if (!runtimeEnabled) return;
     var copy = languageMessages(language), layer = statusLayer();
     layer.hidden = false; layer.classList.toggle("error", !!isError);
+    document.documentElement.dataset.i18nReady = "false";
     layer.querySelector("[data-i18n-status-title]").textContent = isError ? copy.error : copy.loading;
     layer.querySelector("[data-i18n-status-detail]").textContent = progress || copy.detail;
     var retry = layer.querySelector("[data-i18n-retry]"); retry.hidden = !isError; retry.textContent = copy.retry;
     document.documentElement.classList.add("aponar-i18n-loading");
   }
-  function hideStatus() {
+  function hideStatus(complete) {
     var layer = document.getElementById("aponarI18nStatus");
     if (layer) layer.hidden = true;
-    document.documentElement.classList.remove("aponar-i18n-loading"); document.documentElement.dataset.i18nReady = "true";
+    document.documentElement.classList.remove("aponar-i18n-loading"); document.documentElement.dataset.i18nReady = complete === false ? "false" : "true";
   }
 
-  async function sync(blocking) {
+  async function runSync(blocking) {
     var language = window.AponarI18n.getLanguage(), serial = ++requestSerial;
-    var released = blocking === false;
     var releaseTimer = 0;
     activeLanguage = language;
+    activeController = new AbortController();
+    var controller = activeController;
+    document.documentElement.dataset.i18nReady = "false";
     if (blocking !== false) restoreCaptured();
     else captureOriginals(document.documentElement);
     // Bangla is already the source HTML: no scan, loading overlay, cache lookup, or API request.
@@ -401,59 +432,71 @@
     var items = descriptors(language), sources = uniqueSources(items);
     if (!languageTables.has(language)) languageTables.set(language, new Map());
     translationTable = languageTables.get(language);
+    var table = translationTable;
+    sharedDictionary(language).forEach(function (target, source) { table.set(source, target); });
+    applyTranslations(items, false);
     if (!sources.length) { clearPending(); hideStatus(); return; }
     if (blocking !== false) {
+      statusLayer().classList.remove("compact");
       showStatus(language, false);
       releaseTimer = window.setTimeout(function () {
         if (serial !== requestSerial || language !== activeLanguage) return;
-        released = true;
-        hideStatus();
+        showStatus(language, false);
+        statusLayer().classList.add("compact");
       }, MAX_BLOCKING_MS);
+    } else if (sources.some(function(source){return !table.has(source);})) {
+      showStatus(language, false); statusLayer().classList.add("compact");
     }
     try {
       var loaded = await Promise.all([loadReviewedPack(language), readSnapshot(language, sources), readDictionary(language)]);
       if (serial !== requestSerial || language !== activeLanguage) return;
       loaded[2].forEach(function (target, source) { translationTable.set(source, preserveBrandNames(source, target)); });
       loaded[1].forEach(function (target, source) { translationTable.set(source, preserveBrandNames(source, target)); });
+      sharedDictionary(language).forEach(function (target, source) { table.set(source, target); });
       loaded[0].forEach(function (target, source) { translationTable.set(source, preserveBrandNames(source, target)); });
       sources.forEach(function (source) { if (isExactBrandName(source)) translationTable.set(source, source); });
       applyTranslations(items, false);
       await translateMissing(language, sources, function (done, total) {
+        if (serial !== requestSerial || language !== activeLanguage) return;
         applyTranslations(items, false);
-        if (!released && blocking !== false && total > 1) showStatus(language, false, languageMessages(language).detail + " " + done + "/" + total);
-      });
+        if (total > 1) showStatus(language, false, languageMessages(language).detail + " " + done + "/" + total);
+      }, table, controller.signal);
       if (serial !== requestSerial || language !== activeLanguage) return;
       if (runtimeEnabled && sources.some(function (source) { return !translationTable.has(source); })) throw new Error("translation_coverage_incomplete");
       applyTranslations(items, true);
       window.clearTimeout(releaseTimer);
       if (serial === requestSerial) hideStatus();
-      Promise.all([writeSnapshot(language, sources), writeDictionary(language)]).catch(function () { /* Cache writes never block the UI. */ });
+      Promise.all([writeSnapshot(language, sources, table), writeDictionary(language, table)]).catch(function () { /* Cache writes never block the UI. */ });
     } catch (error) {
       if (serial !== requestSerial) return;
       window.clearTimeout(releaseTimer);
       console.error("Aponar Nihon full-page translation failed:", error);
-      if (!released) showStatus(language, true);
-      else hideStatus();
+      clearPending();
+      document.documentElement.dataset.i18nReady = "false";
+      showStatus(language, true);
+      statusLayer().classList.add("compact");
     }
   }
 
+  function sync(blocking) {
+    if (syncInFlight) { refreshQueued = true; return syncInFlight; }
+    var task = runSync(blocking);
+    syncInFlight = task;
+    return task.finally(function () {
+      if (syncInFlight !== task) return;
+      syncInFlight = null;
+      if (refreshQueued) { refreshQueued = false; scheduleRefresh(); }
+    });
+  }
+
   function markPending(node) {
-    if (!runtimeEnabled || !node) return;
+    if (!runtimeEnabled || !node || activeLanguage === "bn") return;
     var element = node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement;
     if (element && !element.closest(PRESERVE_SELECTOR)) element.setAttribute("data-aponar-i18n-pending", "true");
   }
   function scheduleRefresh() {
     window.clearTimeout(refreshTimer);
-    function refreshWhenReady() {
-      var layer = document.getElementById("aponarI18nStatus");
-      var blocking = document.documentElement.classList.contains("aponar-i18n-loading")
-        && layer && !layer.classList.contains("error");
-      if (blocking) {
-        refreshTimer = window.setTimeout(refreshWhenReady, 120);
-        return;
-      }
-      sync(false);
-    }
+    function refreshWhenReady() { sync(false); }
     refreshTimer = window.setTimeout(refreshWhenReady, 90);
   }
   function observeDynamicContent() {
@@ -486,8 +529,10 @@
   async function translateText(value) {
     var source = normalize(value), language = window.AponarI18n.getLanguage();
     if (!source || !needsTranslation(source, language)) return String(value || "");
-    if (translationTable.has(source)) return translationTable.get(source);
-    await translateMissing(language, [source]); return translationTable.get(source) || String(value || "");
+    var currentTable = languageTables.get(language);
+    if (currentTable && currentTable.has(source)) return currentTable.get(source);
+    var table = languageTables.get(language) || new Map();
+    await translateMissing(language, [source], null, table); return table.get(source) || String(value || "");
   }
   async function localizedDialog(message, confirmMode) {
     var language = window.AponarI18n.getLanguage(), copy = languageMessages(language), translated = await translateText(String(message || ""));
@@ -525,6 +570,14 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () { startRuntime(true); });
+  window.addEventListener("aponar:beforelanguagechange", function () {
+    requestSerial += 1;
+    if (activeController) activeController.abort();
+    syncInFlight = null; refreshQueued = false;
+    window.clearTimeout(refreshTimer);
+    restoreCaptured();
+    clearPending();
+  });
   window.addEventListener("aponar:languagechange", function () {
     window.requestAnimationFrame(function () { startRuntime(false); });
   });

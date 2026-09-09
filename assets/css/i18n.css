@@ -93,9 +93,14 @@ body.aponar-language-open {
   cursor: pointer;
 }
 
-html[data-i18n-ready="true"] [data-aponar-i18n-pending] {
-  opacity: 0 !important;
-}
+/* Keep the page usable while pending translations finish; never hide controls. */
+.aponar-i18n-status.compact{inset:auto 16px 105px auto;display:block;width:min(380px,calc(100% - 32px));padding:0;background:transparent;pointer-events:none}
+.aponar-i18n-status.compact .aponar-i18n-status-card{width:100%;padding:14px 18px;border-radius:16px;pointer-events:auto;text-align:start}
+.aponar-i18n-status.compact h2{font-size:14px;margin:0 0 5px;line-height:1.5}
+.aponar-i18n-status.compact p{font-size:12px;font-weight:500}
+.aponar-i18n-status.compact .aponar-i18n-spinner{display:none}
+.aponar-i18n-status.compact button{font-size:13px;margin-top:10px;min-height:40px}
+[dir="rtl"] .aponar-i18n-status.compact{left:16px;right:auto}
 
 .aponar-i18n-dialog {
   position: fixed;

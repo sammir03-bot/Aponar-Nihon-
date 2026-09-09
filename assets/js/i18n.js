@@ -362,6 +362,7 @@
 
   function setLanguage(language, options) {
     language = normalizeLanguage(language) || DEFAULT_LANGUAGE;
+    window.dispatchEvent(new CustomEvent("aponar:beforelanguagechange", { detail: { language: language } }));
     currentLanguage = language;
     if (!options || options.persist !== false) {
       rememberLanguage(currentLanguage);
@@ -471,6 +472,16 @@
     setLanguage: setLanguage,
     localizedPath: alternatePath,
     t: t,
+    sourceDictionary: function (language) {
+      var result = new Map(), target = MESSAGES[language] || {};
+      Object.keys(target).forEach(function (key) {
+        Object.keys(MESSAGES).forEach(function (sourceLanguage) {
+          var source = MESSAGES[sourceLanguage][key];
+          if (source && target[key]) result.set(String(source).replace(/\s+/g, " ").trim(), target[key]);
+        });
+      });
+      return result;
+    },
     translate: translateAnnotated,
     register: function (language, messages) {
       if (!LANGUAGES[language] || !messages || typeof messages !== "object") return;
@@ -493,6 +504,11 @@
     window.setTimeout(syncProfileLanguage, 1600);
   });
   window.addEventListener("an-auth-changed", syncProfileLanguage);
+  window.addEventListener("storage", function (event) {
+    if (event.key !== STORAGE_KEY) return;
+    var language = normalizeLanguage(event.newValue) || DEFAULT_LANGUAGE;
+    if (language !== currentLanguage) setLanguage(language, { persist: false, persistProfile: false });
+  });
   window.addEventListener("an-profile-updated", function (event) {
     var detail = event && event.detail ? event.detail : {};
     mountProfileLanguageSelect(detail.preferred_language || storedLanguage() || currentLanguage);

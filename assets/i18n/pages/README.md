@@ -50,7 +50,7 @@ A Vietnamese pack for the first example is:
 3. Do not invent grammar rules or alter formation tables to make a translation sound smoother.
 4. Preserve placeholders, numbers, JLPT level names and code-like tokens when they carry meaning.
 5. Urdu packs may use normal Urdu text; the runtime applies direction handling without changing Japanese source text.
-6. A missing pack is completed by the runtime translation service. The opaque localized loading surface stays in place until every collected string has a translation, so mixed-language content is not exposed.
+6. A missing pack is completed by the runtime translation service. A brief loading surface becomes a compact progress notice while longer translations finish. Readiness is reported only after every collected string has a translation; failures remain visible with a retry action.
 7. Prefer one reviewed pack per page/language. Do not use browser auto-translation as the source of truth for educational material.
 8. Reviewed packs are also rendered into crawlable locale routes at build time (for example `/en/n5/`). The Bangla source remains at the unprefixed URL.
 9. Runtime coverage includes visible text, document title and description metadata, `placeholder`, `title`, `alt`, `aria-label`, `aria-description`, button values, data-backed labels, dynamic DOM updates, alerts and confirmation dialogs. User-entered text and protected Japanese study elements are never sent for translation.
