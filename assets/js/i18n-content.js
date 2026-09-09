@@ -3,8 +3,8 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260909.2";
-  var CACHE_VERSION = "20260909.1";
+  var RUNTIME_VERSION = "20260909.3";
+  var CACHE_VERSION = "20260909.3";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + CACHE_VERSION;
   var MAX_BLOCKING_MS = 1800;
@@ -375,11 +375,26 @@
     var missing = sources.filter(function (source) { return !table.has(source); });
     if (!missing.length || !runtimeEnabled) return;
     var chunks = makeChunks(missing), completed = 0, cursor = 0;
+    async function translateChunkResilient(chunk) {
+      try {
+        await translateChunk(language, chunk, table, signal);
+      } catch (error) {
+        if (signal && signal.aborted) throw error;
+        // Long news paragraphs can exceed a provider's practical context window.
+        // Split only the failed batch so successful batches remain cached.
+        if (chunk.length < 2) throw error;
+        var middle = Math.ceil(chunk.length / 2);
+        await Promise.all([
+          translateChunkResilient(chunk.slice(0, middle)),
+          translateChunkResilient(chunk.slice(middle))
+        ]);
+      }
+    }
     async function worker() {
       while (cursor < chunks.length) {
         var index = cursor; cursor += 1;
         if (signal && signal.aborted) return;
-        await translateChunk(language, chunks[index], table, signal); completed += 1;
+        await translateChunkResilient(chunks[index]); completed += 1;
         if (onProgress) onProgress(completed, chunks.length);
       }
     }

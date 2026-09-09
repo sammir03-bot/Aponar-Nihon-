@@ -110,6 +110,23 @@ test('partial failure stays incomplete, keeps controls visible, and retries miss
   await expect(page.locator('#part0')).toContainText('en translated');
 });
 
+test('a failed multi-item batch is retried in smaller batches', async ({ page }) => {
+  await fixture(page, 'en', '<p id="one">প্রথম লেখা</p><p id="two">দ্বিতীয় লেখা</p><p id="three">তৃতীয় লেখা</p>');
+  const batches = [];
+  await page.route('**/api/i18n/translate', async route => {
+    const body = route.request().postDataJSON(); batches.push(body.items.length);
+    if (body.items.length > 1) await route.fulfill({ status: 502, json: { ok: false, error: 'translation_failed' } });
+    else await route.fulfill({ json: response(body) });
+  });
+  await page.goto(fixturePath);
+  await expect(page.locator('#one')).toHaveText('en translated 0');
+  await expect(page.locator('#two')).toHaveText('en translated 1');
+  await expect(page.locator('#three')).toHaveText('en translated 2');
+  expect(batches).toContain(3);
+  expect(batches.filter(size => size === 1).length).toBe(3);
+  await expect(page.locator('html')).toHaveAttribute('data-i18n-ready', 'true');
+});
+
 test('slow and dynamic translations finish without hiding inputs or sending private values', async ({ page }) => {
   await fixture(page);
   let release;
