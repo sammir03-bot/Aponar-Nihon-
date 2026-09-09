@@ -64,7 +64,7 @@ def main() -> int:
         "translation_coverage_incomplete",
         "current.length >= 12",
         "Math.min(3, chunks.length)",
-        'CACHE_VERSION = "20260909.3"',
+        'CACHE_VERSION = "20260909.4"',
         "dictionaryRequest",
         "aponar:beforelanguagechange",
         "AbortController",
@@ -121,7 +121,7 @@ def main() -> int:
         "/assets/css/home-brand.css?v=20260901.2",
         "/assets/js/i18n.js?v=20260909.3",
         "/assets/js/i18n-ui.js?v=20260909.4",
-        "/assets/js/i18n-content.js?v=20260909.3",
+        "/assets/js/i18n-content.js?v=20260909.4",
     )
     checked = 0
     missing: list[str] = []
