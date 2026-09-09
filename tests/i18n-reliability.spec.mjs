@@ -120,8 +120,9 @@ test('a failed multi-item batch is retried in smaller batches', async ({ page })
   });
   await page.goto(fixturePath);
   await expect(page.locator('#one')).toHaveText('en translated 0');
-  await expect(page.locator('#two')).toHaveText('en translated 1');
-  await expect(page.locator('#three')).toHaveText('en translated 2');
+  // Each recursively split request has its own local item IDs.
+  await expect(page.locator('#two')).toHaveText('en translated 0');
+  await expect(page.locator('#three')).toHaveText('en translated 0');
   expect(batches).toContain(3);
   expect(batches.filter(size => size === 1).length).toBe(3);
   await expect(page.locator('html')).toHaveAttribute('data-i18n-ready', 'true');
