@@ -3,8 +3,8 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260908.3";
-  var CACHE_VERSION = "20260908.3";
+  var RUNTIME_VERSION = "20260902.7";
+  var CACHE_VERSION = "20260902.5";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + CACHE_VERSION;
   var MAX_BLOCKING_MS = 1800;
