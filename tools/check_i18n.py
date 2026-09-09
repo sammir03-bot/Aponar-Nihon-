@@ -63,7 +63,7 @@ def main() -> int:
         'API_PATH = "/api/i18n/translate"',
         "translation_coverage_incomplete",
         "current.length >= 12",
-        "Math.min(6, chunks.length)",
+        "Math.min(3, chunks.length)",
         'CACHE_VERSION = "20260909.3"',
         "dictionaryRequest",
         "aponar:beforelanguagechange",
