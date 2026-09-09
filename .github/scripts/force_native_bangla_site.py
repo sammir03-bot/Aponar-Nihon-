@@ -12,8 +12,10 @@ EXCLUDED_DIRS = {
     "playwright-report", "test-results",
 }
 HTML_TAG_RE = re.compile(r"<html\b([^>]*)>", re.IGNORECASE)
-VERSION = "20260902.7"
-CACHE_VERSION = "20260902.5"
+# Follow the checked-in release; normalization must never downgrade its cache.
+_runtime = (ROOT / "assets/js/i18n-content.js").read_text(encoding="utf-8")
+VERSION = re.search(r'var RUNTIME_VERSION = "([^"]+)";', _runtime).group(1)
+CACHE_VERSION = re.search(r'var CACHE_VERSION = "([^"]+)";', _runtime).group(1)
 
 
 def write_if_changed(path: Path, text: str) -> bool:

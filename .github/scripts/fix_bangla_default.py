@@ -99,8 +99,7 @@ if "Bangla is already the source HTML" not in s:
         raise SystemExit("sync startup pattern not found")
     s = s.replace(sync_marker, sync_replacement, 1)
 
-s = re.sub(r'var RUNTIME_VERSION = "[^"]+";', 'var RUNTIME_VERSION = "20260902.7";', s, count=1)
-s = re.sub(r'var CACHE_VERSION = "[^"]+";', 'var CACHE_VERSION = "20260902.5";', s, count=1)
+# A Bangla startup repair must preserve the current release and translation cache.
 
 p.write_text(s, encoding="utf-8")
 

@@ -64,7 +64,7 @@ def main() -> int:
         "translation_coverage_incomplete",
         "current.length >= 12",
         "Math.min(6, chunks.length)",
-        'CACHE_VERSION = "20260908.3"',
+        'CACHE_VERSION = "20260909.1"',
         "dictionaryRequest",
         "aponar:beforelanguagechange",
         "AbortController",
