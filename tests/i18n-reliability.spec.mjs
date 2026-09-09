@@ -139,6 +139,6 @@ test('shared Japanese and Chinese UI labels translate while study examples stay 
   await page.goto(fixturePath);
   await expect(page.locator('h1')).toHaveText('Full name');
   await expect(page.locator('body > button')).toHaveText('CV Builder');
-  await expect(page.locator('p')).toHaveText('氏名');
+  await expect(page.locator('p[lang="ja"]')).toHaveText('氏名');
   expect(requests).toBe(0);
 });
