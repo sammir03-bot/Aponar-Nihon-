@@ -20,6 +20,7 @@ MOVED_PAGE_ARCHIVES = {
     "n5.html": "archive/n5-hub-v1.html",
     "n4.html": "archive/n4-hub-v1.html",
     "n3.html": "archive/n3-hub-v1.html",
+    "n3-matome-grammar.html": "archive/n3-matome-grammar-v1.html",
     "quiz.html": "archive/quiz-hub-v1.html",
     "interview.html": "archive/interview-hub-v1.html",
     "ssw.html": "archive/ssw-hub-v2-pre-polish.html",
