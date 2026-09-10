@@ -1,0 +1,171 @@
+name: Temporary Daily News 2026-09-11
+
+on:
+  push:
+    branches:
+      - news/2026-09-11-auto
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: news/2026-09-11-auto
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Build and validate Daily Japanese News
+        run: |
+          python - <<'PY'
+          import json
+          import urllib.request
+          from pathlib import Path
+
+          source_url = 'https://raw.githubusercontent.com/sammir03-bot/Aponar-Nihon-/news/2026-09-10/assets/data/daily-news.json'
+          with urllib.request.urlopen(source_url, timeout=30) as r:
+              data = json.load(r)
+
+          new_articles = [
+            {
+              "id":"2026-09-11-boj-masu-rate-hike-risks",
+              "date":"2026-09-11",
+              "level":"N3",
+              "category_bn":"অর্থনীতি ও ব্যাংক",
+              "headline":"日銀・増委員、物価上昇なら利上げ加速の可能性",
+              "headline_tokens":[{"t":"日銀","r":"にちぎん"},"・",{"t":"増委員","r":"ますいいん"},"、",{"t":"物価上昇","r":"ぶっかじょうしょう"},"なら",{"t":"利上げ","r":"りあげ"},{"t":"加速","r":"かそく"},"の",{"t":"可能性","r":"かのうせい"}],
+              "teaser_bn":"ব্যাংক অব জাপানের নীতিনির্ধারক মাসু কাজুইউকি বলেছেন, মূল্যস্ফীতি আরও জোরালো হলে সুদের হার দ্রুত বাড়ানোর প্রয়োজন হতে পারে।",
+              "japanese":[
+                [{"t":"日本銀行","r":"にっぽんぎんこう"},"の",{"t":"増一行","r":"ますかずゆき"},{"t":"審議委員","r":"しんぎいいん"},"は、",{"t":"物価","r":"ぶっか"},"の",{"t":"上昇","r":"じょうしょう"},"が",{"t":"強","r":"つよ"},"まる",{"t":"場合","r":"ばあい"},"、",{"t":"金利","r":"きんり"},"をより",{"t":"速","r":"はや"},"いペースで",{"t":"上","r":"あ"},"げる",{"t":"必要","r":"ひつよう"},"が",{"t":"出","r":"で"},"る",{"t":"可能性","r":"かのうせい"},"があると",{"t":"述","r":"の"},"べました。"],
+                [{"t":"基調的","r":"きちょうてき"},"な",{"t":"物価上昇率","r":"ぶっかじょうしょうりつ"},"は2%の",{"t":"目標","r":"もくひょう"},"に",{"t":"近","r":"ちか"},"づいており、",{"t":"現在","r":"げんざい"},"の",{"t":"金利","r":"きんり"},"はまだ",{"t":"経済","r":"けいざい"},"を",{"t":"支","r":"ささ"},"える",{"t":"水準","r":"すいじゅん"},"だと",{"t":"説明","r":"せつめい"},"しました。"],
+                [{"t":"来週","r":"らいしゅう"},"の",{"t":"金融政策決定会合","r":"きんゆうせいさくけっていかいごう"},"を",{"t":"前","r":"まえ"},"に、",{"t":"市場","r":"しじょう"},"では",{"t":"今後","r":"こんご"},"の",{"t":"利上","r":"りあ"},"げの",{"t":"時期","r":"じき"},"やペースに",{"t":"注目","r":"ちゅうもく"},"が",{"t":"集","r":"あつ"},"まっています。"]
+              ],
+              "explanation_bn":[
+                "১০ সেপ্টেম্বর ফুকুইয়ে দেওয়া বক্তব্যে ব্যাংক অব জাপানের নীতিনির্ধারক মাসু কাজুইউকি বলেন, মূল্যস্ফীতির চাপ প্রত্যাশার চেয়ে বেশি জোরালো হলে নীতিগত সুদ দ্রুত বাড়ানোর প্রয়োজন হতে পারে। রয়টার্সও একই বক্তব্যের মূল দিকগুলো রিপোর্ট করেছে।",
+                "তিনি বলেন, অন্তর্নিহিত বা基調的 মূল্যস্ফীতি ব্যাংকের ২% লক্ষ্যটির দিকে এগোচ্ছে এবং বর্তমান আর্থিক পরিবেশ এখনো তুলনামূলক সহায়ক। তাই প্রতিটি নীতি বৈঠকে মূল্যস্ফীতি, অর্থনীতি ও বাজারের অবস্থা দেখে সিদ্ধান্ত নেওয়া গুরুত্বপূর্ণ।",
+                "শিক্ষার্থীদের জন্য 物価上昇率, 金利, 利上げ, 金融政策決定会合, 水準, 注目—অর্থনীতি ও সংবাদে খুব গুরুত্বপূর্ণ N3 শব্দ।"
+              ],
+              "vocabulary":[
+                {"word":"物価上昇","reading":"ぶっかじょうしょう","meaning_bn":"দাম/মূল্যস্তর বৃদ্ধি"},
+                {"word":"審議委員","reading":"しんぎいいん","meaning_bn":"নীতিনির্ধারণী বোর্ডের সদস্য"},
+                {"word":"金利","reading":"きんり","meaning_bn":"সুদের হার"},
+                {"word":"利上げ","reading":"りあげ","meaning_bn":"সুদের হার বৃদ্ধি"},
+                {"word":"金融政策決定会合","reading":"きんゆうせいさくけっていかいごう","meaning_bn":"মুদ্রানীতি নির্ধারণী বৈঠক"},
+                {"word":"水準","reading":"すいじゅん","meaning_bn":"স্তর / পর্যায়"}
+              ],
+              "source":{"name":"日本銀行（Bank of Japan） / Reuters","url":"https://www.boj.or.jp/about/press/koen_2026/ko260910a.htm","published_at":"2026-09-10"}
+            },
+            {
+              "id":"2026-09-11-japan-north-korea-summit-abduction",
+              "date":"2026-09-11",
+              "level":"N3",
+              "category_bn":"সরকার ও আন্তর্জাতিক সম্পর্ক",
+              "headline":"政府、日朝首脳会談で拉致問題を重視",
+              "headline_tokens":[{"t":"政府","r":"せいふ"},"、",{"t":"日朝首脳会談","r":"にっちょうしゅのうかいだん"},"で",{"t":"拉致問題","r":"らちもんだい"},"を",{"t":"重視","r":"じゅうし"}],
+              "teaser_bn":"জাপান সরকার জানিয়েছে, উত্তর কোরিয়ার সঙ্গে পরিকল্পিত শীর্ষ বৈঠকে দীর্ঘদিনের জাপানি নাগরিক অপহরণ-সংক্রান্ত বিষয়টি গুরুত্বপূর্ণভাবে তুলবে।",
+              "japanese":[
+                [{"t":"木原官房長官","r":"きはらかんぼうちょうかん"},"は、",{"t":"北朝鮮","r":"きたちょうせん"},"との",{"t":"首脳会談","r":"しゅのうかいだん"},"で",{"t":"日本人","r":"にほんじん"},"の",{"t":"拉致問題","r":"らちもんだい"},"を",{"t":"重要","r":"じゅうよう"},"な",{"t":"課題","r":"かだい"},"として",{"t":"扱","r":"あつか"},"う",{"t":"考","r":"かんが"},"えを",{"t":"示","r":"しめ"},"しました。"],
+                [{"t":"政府","r":"せいふ"},"は、",{"t":"長年","r":"ながねん"},{"t":"解決","r":"かいけつ"},"していないこの",{"t":"問題","r":"もんだい"},"について、",{"t":"首脳","r":"しゅのう"},"どうしの",{"t":"対話","r":"たいわ"},"を",{"t":"通","r":"つう"},"じて",{"t":"前進","r":"ぜんしん"},"を",{"t":"目指","r":"めざ"},"しています。"],
+                [{"t":"日朝関係","r":"にっちょうかんけい"},"では、",{"t":"会談","r":"かいだん"},"の",{"t":"具体的","r":"ぐたいてき"},"な",{"t":"時期","r":"じき"},"や",{"t":"成果","r":"せいか"},"が",{"t":"注目","r":"ちゅうもく"},"されています。"]
+              ],
+              "explanation_bn":[
+                "রয়টার্সের ১০ সেপ্টেম্বরের প্রতিবেদনে জাপানের প্রধান মন্ত্রিপরিষদ সচিব কিহারা মিনোরুর বক্তব্য উদ্ধৃত করে বলা হয়েছে, উত্তর কোরিয়ার সঙ্গে পরিকল্পিত শীর্ষ বৈঠকে জাপানি নাগরিকদের অপহরণ-সংক্রান্ত দীর্ঘদিনের অমীমাংসিত বিষয়টি সরকার দৃঢ়ভাবে তুলতে চায়।",
+                "সরকারের লক্ষ্য হলো নেতৃপর্যায়ের আলোচনার মাধ্যমে অমীমাংসিত বিষয়গুলোতে অগ্রগতি আনা। প্রতিবেদনে বৈঠকের নির্দিষ্ট সময় বা নিশ্চিত ফলাফল জানানো হয়নি, তাই এটিকে চলমান কূটনৈতিক প্রক্রিয়া হিসেবে বোঝা উচিত।",
+                "শিক্ষার্থীদের জন্য 首脳会談, 拉致問題, 課題, 対話, 前進, 具体的, 成果—রাজনীতি ও আন্তর্জাতিক সংবাদে বহুল ব্যবহৃত N3 শব্দ।"
+              ],
+              "vocabulary":[
+                {"word":"首脳会談","reading":"しゅのうかいだん","meaning_bn":"শীর্ষ নেতাদের বৈঠক"},
+                {"word":"拉致問題","reading":"らちもんだい","meaning_bn":"অপহরণ-সংক্রান্ত সমস্যা"},
+                {"word":"課題","reading":"かだい","meaning_bn":"সমস্যা / করণীয় বিষয়"},
+                {"word":"対話","reading":"たいわ","meaning_bn":"সংলাপ"},
+                {"word":"前進","reading":"ぜんしん","meaning_bn":"অগ্রগতি"},
+                {"word":"成果","reading":"せいか","meaning_bn":"ফলাফল / অর্জন"}
+              ],
+              "source":{"name":"Reuters","url":"https://www.reuters.com/world/asia-pacific/japan-aims-address-abduction-issue-firmly-north-korea-summit-top-govt-2026-09-10/","published_at":"2026-09-10"}
+            },
+            {
+              "id":"2026-09-11-shimada-uk-france-visit-result",
+              "date":"2026-09-11",
+              "level":"N4",
+              "category_bn":"জাপান ও বিশ্ব",
+              "headline":"島田外務大臣政務官、英国・フランス訪問を終える",
+              "headline_tokens":[{"t":"島田外務大臣政務官","r":"しまだがいむだいじんせいむかん"},"、",{"t":"英国","r":"えいこく"},"・フランス",{"t":"訪問","r":"ほうもん"},"を",{"t":"終","r":"お"},"える"],
+              "teaser_bn":"জাপানের পররাষ্ট্র মন্ত্রণালয় জানিয়েছে, শিমাদা তোমোআকি ৬–৯ সেপ্টেম্বর যুক্তরাজ্য ও ফ্রান্স সফর করে সাংস্কৃতিক বিনিময় ও UNESCO সহযোগিতা নিয়ে আলোচনা করেছেন।",
+              "japanese":[
+                [{"t":"島田外務大臣政務官","r":"しまだがいむだいじんせいむかん"},"は、6",{"t":"日","r":"むいか"},"から9",{"t":"日","r":"ここのか"},"までイギリスとフランスを",{"t":"訪問","r":"ほうもん"},"しました。"],
+                ["ロンドンではJapan Houseや",{"t":"交流団体","r":"こうりゅうだんたい"},"を",{"t":"訪","r":"たず"},"れ、",{"t":"日本","r":"にほん"},"とイギリスの",{"t":"文化交流","r":"ぶんかこうりゅう"},"について",{"t":"意見交換","r":"いけんこうかん"},"しました。"],
+                ["パリではユネスコ",{"t":"本部","r":"ほんぶ"},"などを",{"t":"訪問","r":"ほうもん"},"し、",{"t":"世界遺産","r":"せかいいさん"},"や",{"t":"日本文化","r":"にほんぶんか"},"の",{"t":"発信","r":"はっしん"},"について",{"t":"協力","r":"きょうりょく"},"を",{"t":"深","r":"ふか"},"める",{"t":"考","r":"かんが"},"えを",{"t":"伝","r":"つた"},"えました。"]
+              ],
+              "explanation_bn":[
+                "জাপানের পররাষ্ট্র মন্ত্রণালয়ের ১০ সেপ্টেম্বরের ফলাফল-ঘোষণায় বলা হয়েছে, Parliamentary Vice-Minister শিমাদা তোমোআকি ৬ থেকে ৯ সেপ্টেম্বর যুক্তরাজ্য ও ফ্রান্স সফর করেছেন।",
+                "লন্ডনে তিনি Japan House London এবং জাপান-যুক্তরাজ্য বিনিময় সংশ্লিষ্ট প্রতিনিধিদের সঙ্গে সাংস্কৃতিক ও জনসম্পর্ক বাড়ানো নিয়ে মতবিনিময় করেন। প্যারিসে UNESCO সদর দপ্তরে গিয়ে জাপানের বিশ্ব ঐতিহ্য ও আন্তর্জাতিক সহযোগিতা নিয়েও আলোচনা করেন।",
+                "শিক্ষার্থীদের জন্য 訪問, 交流, 意見交換, 本部, 世界遺産, 発信, 協力—দৈনন্দিন সংবাদ ও N4/N3 রিডিংয়ে উপকারী শব্দ।"
+              ],
+              "vocabulary":[
+                {"word":"訪問","reading":"ほうもん","meaning_bn":"সফর / পরিদর্শন"},
+                {"word":"交流団体","reading":"こうりゅうだんたい","meaning_bn":"বিনিময়/সম্পর্ক উন্নয়নকারী সংগঠন"},
+                {"word":"文化交流","reading":"ぶんかこうりゅう","meaning_bn":"সাংস্কৃতিক বিনিময়"},
+                {"word":"意見交換","reading":"いけんこうかん","meaning_bn":"মতবিনিময়"},
+                {"word":"世界遺産","reading":"せかいいさん","meaning_bn":"বিশ্ব ঐতিহ্য"},
+                {"word":"発信","reading":"はっしん","meaning_bn":"তথ্য/বার্তা প্রচার করা"},
+                {"word":"協力","reading":"きょうりょく","meaning_bn":"সহযোগিতা"}
+              ],
+              "source":{"name":"外務省（Ministry of Foreign Affairs of Japan）","url":"https://www.mofa.go.jp/press/release/pressite_000001_02644.html","published_at":"2026-09-10"}
+            }
+          ]
+
+          existing_ids = {a.get('id') for a in data.get('articles', [])}
+          if any(a['id'] in existing_ids for a in new_articles) or any(a.get('date') == '2026-09-11' for a in data.get('articles', [])):
+              print('Today entries already exist; leaving file unchanged.')
+              raise SystemExit(0)
+
+          data['updated_at'] = '2026-09-11T08:12:00+09:00'
+          data['articles'] = new_articles + data.get('articles', [])
+
+          required = {'id','date','level','category_bn','headline','headline_tokens','teaser_bn','japanese','explanation_bn','vocabulary','source'}
+          ids = set()
+          for a in data['articles']:
+              missing = required - set(a)
+              assert not missing, (a.get('id'), missing)
+              assert a['id'] not in ids, f"duplicate id: {a['id']}"
+              ids.add(a['id'])
+              assert a['level'] in {'N4','N3'}
+              assert isinstance(a['headline_tokens'], list) and a['headline_tokens']
+              assert isinstance(a['japanese'], list) and a['japanese']
+              assert isinstance(a['explanation_bn'], list) and a['explanation_bn']
+              assert isinstance(a['vocabulary'], list) and a['vocabulary']
+              assert isinstance(a['source'], dict)
+              assert {'name','url','published_at'} <= set(a['source'])
+              for tok in a['headline_tokens']:
+                  if isinstance(tok, dict):
+                      assert isinstance(tok.get('t'), str) and isinstance(tok.get('r'), str)
+              for sentence in a['japanese']:
+                  assert isinstance(sentence, list)
+                  for tok in sentence:
+                      assert isinstance(tok, (str, int, float, dict))
+                      if isinstance(tok, dict):
+                          assert isinstance(tok.get('t'), str) and isinstance(tok.get('r'), str)
+              for v in a['vocabulary']:
+                  assert {'word','reading','meaning_bn'} <= set(v)
+
+          out = json.dumps(data, ensure_ascii=False, separators=(',', ':'))
+          json.loads(out)
+          Path('assets/data/daily-news.json').write_text(out, encoding='utf-8')
+          print(f"Validated {len(data['articles'])} archived articles; added {len(new_articles)} for 2026-09-11.")
+          PY
+      - name: Commit Daily News data
+        run: |
+          if git diff --quiet -- assets/data/daily-news.json; then
+            echo "No Daily News change needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/data/daily-news.json
+          git commit -m "Daily Japanese News 2026-09-11"
+          git push origin HEAD:news/2026-09-11-auto
