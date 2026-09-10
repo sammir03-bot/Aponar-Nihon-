@@ -5,6 +5,17 @@
   const deepNotes = window.N3_MATOME_DETAILS || {};
   const easyNotes = window.N3_MATOME_EASY || {};
   const extraExamples = window.N3_MATOME_EXTRA_EXAMPLES || {};
+  const readings = window.N3_MATOME_READINGS || {};
+  const focuses = window.N3_MATOME_FOCUS || [];
+  const walkthroughs = window.N3_MATOME_WALKTHROUGH || [];
+  const furiganaToggle = document.createElement('button');
+  furiganaToggle.id='furiganaToggle'; furiganaToggle.type='button';
+  document.getElementById('themeToggle')?.after(furiganaToggle);
+  let showFurigana=true;
+  try { localStorage.setItem('n3-matome-furigana','shown'); } catch (_) {}
+  function setFurigana(){document.body.classList.toggle('furigana-hidden',!showFurigana);furiganaToggle.setAttribute('aria-pressed',String(showFurigana));furiganaToggle.textContent=showFurigana?'ফুরিগানা: চালু':'ফুরিগানা: বন্ধ';}
+  furiganaToggle.onclick=()=>{showFurigana=!showFurigana;setFurigana();try{localStorage.setItem('n3-matome-furigana',showFurigana?'shown':'hidden');}catch(_){}};
+  setFurigana();
 
   const partInfo = {
     1: { title: 'কাজ, অনুমতি ও কথার ছোট রূপ', focus: 'কাজটি কে করেছে • অনুমতি চাওয়া • দেখে অনুমান • চেষ্টা ও পরিবর্তন' },
@@ -286,7 +297,17 @@
   }
 
   function learningCell(label, text, className = '') { const cell = node('section', `learning-cell ${className}`.trim()); cell.append(node('h4', '', label), node('p', '', text)); return cell; }
-  function exampleCard(label, japanese, bangla) { const example = node('article', 'real-example'); example.append(node('span', 'example-label', label), node('div', 'example-jp', japanese), node('div', 'example-bn', easyBangla(bangla))); return example; }
+  function japaneseText(text,className='example-jp',focus='') {
+    const host=node('div',className);host.lang='ja';host.translate=false;host.setAttribute('data-i18n-preserve','');
+    let offset=0;const at=focus?text.indexOf(focus):-1;
+    for(const [surface,reading] of readings[text]||[[text]]) {
+      let piece=document.createTextNode(surface);
+      if(reading){piece=node('ruby');piece.append(document.createTextNode(surface),node('rp','','('),node('rt','',reading),node('rp','',')'));}
+      if(at>=0&&offset<at+focus.length&&offset+surface.length>at){const mark=node('mark');mark.append(piece);host.append(mark);}else host.append(piece);
+      offset+=surface.length;
+    }return host;
+  }
+  function exampleCard(label,japanese,bangla,focus=''){const example=node('article','real-example');example.append(node('span','example-label',label),japaneseText(japanese,'example-jp',focus),node('div','example-bn',easyBangla(bangla)));return example;}
 
   function makeRuleCard(rule, indexInDay) {
     const [id, part, day, pattern, form, meaning, memory, japanese, bangla] = rule;
@@ -320,9 +341,13 @@
     const useGrid = node('div', 'learning-grid');
     useGrid.append(learningCell('৩ • কেন ব্যবহার করবেন?', easy.why, 'why-cell'), learningCell('৪ • কখন বলবেন?', easy.when, 'when-cell'));
     body.append(useGrid);
+    const teacher=node('section','teacher-walkthrough');
+    teacher.append(node('h4','','একসঙ্গে বাক্যটি ভেঙে বুঝি'),node('p','teacher-intro','আগে ধীরে পড়ুন। রঙ করা অংশে আজকের নিয়মটি কাজ করছে।'),exampleCard('উদাহরণ ১ • মূল বাক্য',japanese,bangla,focuses[id]));
+    const focus=node('div','teacher-focus');focus.append(node('span','','এই অংশটি খেয়াল করুন'),japaneseText(focuses[id]||pattern,'focus-jp'));
+    teacher.append(focus,node('p','teacher-explanation',walkthroughs[id]||easy.explain));body.append(teacher);
     const mastery = node('details', 'mastery-details');
     mastery.open = indexInDay === 0;
-    mastery.append(node('summary', '', 'ভুল, পার্থক্য, মনে রাখার উপায় ও ১০টি উদাহরণ'));
+    mastery.append(node('summary', '', 'আরও বুঝুন • ভুল, পার্থক্য ও বাকি ৯টি উদাহরণ'));
     const masteryBody = node('div', 'mastery-body');
     masteryBody.append(
       learningCell('৫ • সবচেয়ে সাধারণ ভুল', easy.mistake, 'mistake-cell'),
@@ -330,18 +355,18 @@
       learningCell('৭ • ঠান্ডা মাথায় মনে রাখুন', easy.tip, 'memory-cell')
     );
     const examples = node('section', 'examples-section');
-    examples.append(node('h4', '', '৮ • ১০টি জাপানি বাক্য ও সহজ বাংলা অর্থ'));
+    examples.append(node('h4', '', '৮ • আরও ৯টি বাক্যে নিয়মটি খুঁজুন'));
     const exampleList = node('div', 'example-list');
     examples.append(exampleList);
     const renderExamples = () => {
       if (exampleList.childElementCount) return;
-      const lessonExamples = [[japanese, bangla], ...(note.examples || []), ...(extraExamples[id] || [])];
-      lessonExamples.forEach((example, exampleIndex) => exampleList.append(exampleCard(`উদাহরণ ${exampleIndex + 1}`, example[0], example[1])));
+      const lessonExamples = [...(note.examples || []), ...(extraExamples[id] || [])];
+      lessonExamples.forEach((example, exampleIndex) => exampleList.append(exampleCard(`উদাহরণ ${exampleIndex + 2}`, example[0], example[1])));
     };
     mastery.addEventListener('toggle', () => { if (mastery.open) renderExamples(); });
     if (mastery.open) renderExamples();
     const recall = node('section', 'recall-box');
-    recall.append(node('b', '', '৯ • ১০ সেকেন্ডে মনে করুন'), node('p', '', `${pattern} দেখেই বলুন: “${easy.meaning}” এবার পাঠটি না দেখে নিজের আজকের জীবন নিয়ে একটি জাপানি বাক্য বলুন।`));
+    recall.append(node('b','','৯ • এবার আপনার পালা'),node('p','','মূল বাক্যের মানুষ, জায়গা বা সময় বদলে নিজের একটি বাক্য বানান। কেন এই নিয়মটি নিলেন, বাংলায় বুঝিয়ে বলুন।'),node('p','','আটকে গেলে রঙ করা অংশ ও গঠনটি আবার দেখুন। প্রস্তুত হলে “শেখা” ঘরে টিক দিন।'));
     masteryBody.append(examples, recall);
     mastery.append(masteryBody);
     body.append(mastery);
