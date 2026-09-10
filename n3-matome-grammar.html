@@ -27,6 +27,16 @@
   <meta name="theme-color" content="#5732a8">
   <link rel="canonical" href="https://app.aponar-nihon.workers.dev/n3-matome-grammar">
   <link rel="stylesheet" href="/assets/css/n3-matome.css?v=20260909.1">
+
+  <style>
+    .n3-section-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:0 0 10px;padding:10px;border:1px solid rgba(226,220,245,.9);border-radius:18px;background:rgba(255,255,255,.94);box-shadow:0 12px 32px rgba(48,31,92,.08);backdrop-filter:blur(16px)}
+    .n3-section-link{display:flex;align-items:center;justify-content:center;gap:9px;min-height:58px;padding:8px 10px;border:1px solid var(--line);border-radius:14px;background:var(--surface);color:var(--ink);text-decoration:none;transition:.18s ease}
+    .n3-section-link:hover,.n3-section-link:focus-visible{transform:translateY(-1px);border-color:#a88de5;box-shadow:0 8px 20px rgba(48,31,92,.08);outline:none}
+    .n3-section-icon{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border-radius:11px;color:#fff;background:linear-gradient(135deg,var(--purple),var(--purple-2));font-weight:900}
+    .n3-section-link>span:last-child{min-width:0;display:grid;line-height:1.25}.n3-section-link b{font-size:.82rem;white-space:nowrap}.n3-section-link small{margin-top:3px;color:var(--muted);font-size:.68rem;font-weight:750}
+    body[data-theme="dark"] .n3-section-nav{background:rgba(18,17,31,.94);border-color:#39334e}body[data-theme="dark"] .n3-section-link{background:#1d1a2d;border-color:#3a3450;color:#fff}body[data-theme="dark"] .n3-section-link small{color:#aaa4bc}
+    @media(max-width:560px){.n3-section-nav{gap:7px;padding:8px}.n3-section-link{min-height:56px;gap:6px;padding:7px 5px}.n3-section-icon{flex-basis:30px;width:30px;height:30px;border-radius:9px;font-size:.9rem}.n3-section-link b{font-size:.72rem}.n3-section-link small{font-size:.62rem}}
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#rules">Rule তালিকায় যান</a>
@@ -52,6 +62,11 @@
   </header>
 
   <div class="control-shell">
+    <nav class="n3-section-nav" aria-label="N3 section shortcuts">
+      <a class="n3-section-link" href="/n3-vocabulary"><span class="n3-section-icon">語</span><span><b>N3 Vocabulary</b><small>শব্দভাণ্ডার</small></span></a>
+      <a class="n3-section-link" href="/n3-kanji"><span class="n3-section-icon">漢</span><span><b>N3 Kanji</b><small>কানজি</small></span></a>
+      <a class="n3-section-link" href="/n3-grammar"><span class="n3-section-icon">文</span><span><b>TRY! N3</b><small>ব্যাকরণ</small></span></a>
+    </nav>
     <div class="controls" aria-label="Grammar filter">
       <input id="q" type="search" placeholder="Grammar, বাংলা অর্থ, form বা example খুঁজুন…" aria-label="Grammar search" autocomplete="off">
       <select id="weekSelect" aria-label="সপ্তাহ বাছাই করুন">
