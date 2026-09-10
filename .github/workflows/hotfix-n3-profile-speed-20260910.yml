@@ -1,0 +1,77 @@
+name: One-shot N3 and profile hotfix
+
+on:
+  push:
+    branches:
+      - fix/n3-furigana-vocab-profile-speed-20260910
+    paths:
+      - .github/hotfix-20260910-trigger
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/n3-furigana-vocab-profile-speed-20260910
+      - name: Patch furigana and performance
+        shell: python
+        run: |
+          from pathlib import Path
+
+          app = Path('assets/js/n3-matome-app.js')
+          text = app.read_text(encoding='utf-8')
+          old = "let showFurigana=true;\n  try { showFurigana=localStorage.getItem('n3-matome-furigana')!=='hidden'; } catch (_) {}"
+          new = "let showFurigana=true;\n  try { localStorage.setItem('n3-matome-furigana','shown'); } catch (_) {}"
+          if old not in text:
+              raise SystemExit('matome furigana target not found')
+          app.write_text(text.replace(old, new, 1), encoding='utf-8')
+
+          vocab = Path('n3-vocabulary.html')
+          text = vocab.read_text(encoding='utf-8')
+          old = "const response=await fetch('/n3-vocabulary-content.html?v=20260824',{cache:'no-store'});"
+          new = "const response=await fetch('/n3-vocabulary-content.html?v=20260824',{cache:'force-cache'});"
+          if old not in text:
+              raise SystemExit('vocabulary fetch target not found')
+          text = text.replace(old, new, 1)
+          preload = "<link rel=\"preload\" href=\"/n3-vocabulary-content.html?v=20260824\" as=\"fetch\" crossorigin=\"anonymous\">\n<link rel=\"preload\" href=\"/n3-vocabulary-all.js?v=5\" as=\"script\">\n<link rel=\"preload\" href=\"/n3-vocabulary-examples.js?v=1\" as=\"script\">"
+          marker = '<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n3-vocabulary">'
+          if preload not in text:
+              text = text.replace(marker, marker + '\n' + preload, 1)
+          vocab.write_text(text, encoding='utf-8')
+
+          profile = Path('assets/js/profile-premium.js')
+          text = profile.read_text(encoding='utf-8')
+          old = "bind();\n    applyTranslations();\n    try{"
+          new = "bind();\n    applyTranslations();\n    // Never block the whole profile UI on network/activity requests.\n    requestAnimationFrame(()=>{ const layer=$('loadingLayer'); if(layer) layer.hidden=true; });\n    try{"
+          if old not in text:
+              raise SystemExit('profile boot target not found')
+          text = text.replace(old, new, 1)
+          old2 = "populate();\n      await loadActivity();\n      AN.log('profile_view',{module:'profile'}).catch(()=>{});"
+          new2 = "populate();\n      loadActivity().catch(()=>{});\n      AN.log('profile_view',{module:'profile'}).catch(()=>{});"
+          if old2 not in text:
+              raise SystemExit('profile activity target not found')
+          text = text.replace(old2, new2, 1)
+          profile.write_text(text, encoding='utf-8')
+
+          html = Path('n3-matome-grammar.html')
+          text = html.read_text(encoding='utf-8')
+          text = text.replace('/assets/js/n3-matome-app.js?v=20260909.1', '/assets/js/n3-matome-app.js?v=20260910.2')
+          text = text.replace('/assets/js/n3-matome-readings.js?v=20260909.1', '/assets/js/n3-matome-readings.js?v=20260910.2')
+          html.write_text(text, encoding='utf-8')
+
+          phtml = Path('profile.html')
+          text = phtml.read_text(encoding='utf-8')
+          text = text.replace('/assets/js/profile-premium.js?v=20260904-2', '/assets/js/profile-premium.js?v=20260910-1')
+          phtml.write_text(text, encoding='utf-8')
+      - name: Commit hotfix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/js/n3-matome-app.js n3-matome-grammar.html n3-vocabulary.html assets/js/profile-premium.js profile.html
+          git diff --cached --quiet && exit 0
+          git commit -m "fix: restore N3 furigana and speed up vocabulary/profile"
+          git push origin HEAD:fix/n3-furigana-vocab-profile-speed-20260910
