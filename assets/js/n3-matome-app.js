@@ -12,7 +12,7 @@
   furiganaToggle.id='furiganaToggle'; furiganaToggle.type='button';
   document.getElementById('themeToggle')?.after(furiganaToggle);
   let showFurigana=true;
-  try { showFurigana=localStorage.getItem('n3-matome-furigana')!=='hidden'; } catch (_) {}
+  try { localStorage.setItem('n3-matome-furigana','shown'); } catch (_) {}
   function setFurigana(){document.body.classList.toggle('furigana-hidden',!showFurigana);furiganaToggle.setAttribute('aria-pressed',String(showFurigana));furiganaToggle.textContent=showFurigana?'ফুরিগানা: চালু':'ফুরিগানা: বন্ধ';}
   furiganaToggle.onclick=()=>{showFurigana=!showFurigana;setFurigana();try{localStorage.setItem('n3-matome-furigana',showFurigana?'shown':'hidden');}catch(_){}};
   setFurigana();

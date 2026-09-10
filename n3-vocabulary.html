@@ -32,13 +32,16 @@
 </script>
 
 <link rel="canonical" href="https://app.aponar-nihon.workers.dev/n3-vocabulary">
+<link rel="preload" href="/n3-vocabulary-content.html?v=20260824" as="fetch" crossorigin="anonymous">
+<link rel="preload" href="/n3-vocabulary-all.js?v=5" as="script">
+<link rel="preload" href="/n3-vocabulary-examples.js?v=1" as="script">
 </head>
 <body>
 <div class="loading" id="loader"><div class="mark">語</div><b>N3 Vocabulary লোড হচ্ছে…</b><p>পুরো ১,৩৪৫ শব্দ প্রস্তুত করা হচ্ছে।</p><div class="bar"></div></div>
 <script>
 (async()=>{
   try{
-    const response=await fetch('/n3-vocabulary-content.html?v=20260824',{cache:'no-store'});
+    const response=await fetch('/n3-vocabulary-content.html?v=20260824',{cache:'force-cache'});
     if(!response.ok) throw new Error('HTTP '+response.status);
     let html=await response.text();
     if(!html.includes('data-vocab-row')) throw new Error('Vocabulary source invalid');

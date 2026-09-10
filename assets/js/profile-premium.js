@@ -324,12 +324,14 @@
   async function boot(){
     bind();
     applyTranslations();
+    // Never block the whole profile UI on network/activity requests.
+    requestAnimationFrame(()=>{ const layer=$('loadingLayer'); if(layer) layer.hidden=true; });
     try{
       session=await AN.session();
       if(!session){location.replace('/auth.html');return}
       profile=await AN.ensureProfile();
       populate();
-      await loadActivity();
+      loadActivity().catch(()=>{});
       AN.log('profile_view',{module:'profile'}).catch(()=>{});
       const query=new URLSearchParams(location.search);
       if(query.get('verified')==='1')toast(t('verifiedToast'));
