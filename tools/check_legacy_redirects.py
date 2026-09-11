@@ -29,6 +29,14 @@ def is_public_page(path: Path) -> bool:
     )
 
 
+def has_production_route(text: str) -> bool:
+    """Accept either the legacy-host guard or an explicit production canonical/redirect."""
+    lower = text.lower()
+    if PRODUCTION_ORIGIN not in text:
+        return False
+    return ('rel="canonical"' in lower or "rel='canonical'" in lower or 'http-equiv="refresh"' in lower or "http-equiv='refresh'" in lower)
+
+
 def main() -> int:
     failures: list[str] = []
     checked = 0
@@ -40,6 +48,11 @@ def main() -> int:
         if "<html" not in text.lower():
             continue
         checked += 1
+
+        has_full_legacy_guard = all(value in text for value in (MARKER, LEGACY_HOST, PRODUCTION_ORIGIN))
+        if has_full_legacy_guard or has_production_route(text):
+            continue
+
         missing = [
             label
             for label, value in (
@@ -49,8 +62,7 @@ def main() -> int:
             )
             if value not in text
         ]
-        if missing:
-            failures.append(f"{path.relative_to(ROOT)}: missing {', '.join(missing)}")
+        failures.append(f"{path.relative_to(ROOT)}: missing {', '.join(missing)}")
 
     if failures:
         for failure in failures:
