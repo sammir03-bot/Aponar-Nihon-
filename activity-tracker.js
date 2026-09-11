@@ -3,6 +3,8 @@
     '/n5.html':['JLPT N5','বেসিক কোর্স'],
     '/n4.html':['JLPT N4','পরবর্তী ধাপ'],
     '/n3.html':['JLPT N3','মধ্যম স্তর'],
+    '/kanji-flashcards.html':['Kanji Flashcards','N5 · N4 · N3 স্মার্ট রিভিউ'],
+    '/revision.html':['Full Revision','পরীক্ষার আগে সব একসাথে'],
     '/quiz.html':['কুইজ','বিনামূল্যে অনুশীলন'],
     '/tutor-section.html':['AI Tutor','বাংলায় জিজ্ঞাসা করুন'],
     '/mock-test.html':['Mock Test','পরীক্ষার অনুশীলন'],
@@ -26,7 +28,7 @@
     if(document.getElementById('an-mobile-layout-fix'))return;
     const s=document.createElement('style');
     s.id='an-mobile-layout-fix';
-    s.textContent=`html{scroll-padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}.app-tool-jobs .app-tool-icon{background:linear-gradient(145deg,#167c83,#154f73)!important;color:#fff!important;box-shadow:inset 0 1px 2px rgba(255,255,255,.32),0 9px 20px rgba(21,79,115,.18)!important}@media(max-width:620px){body.app-page{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))!important}.app-main,.hub-main{padding-bottom:54px!important}.app-tool b{display:-webkit-box!important;min-height:2.35em;overflow:hidden!important;white-space:normal!important;text-overflow:clip!important;line-height:1.18!important;-webkit-box-orient:vertical;-webkit-line-clamp:2}.app-dock-wrap{padding:5px 8px calc(5px + env(safe-area-inset-bottom,0px))!important;background:linear-gradient(180deg,rgba(243,247,251,0) 0,rgba(243,247,251,.92) 16px,rgba(243,247,251,.985) 100%)}.app-dock{min-height:60px!important;border-radius:20px!important}.app-dock-link{gap:1px!important;padding:4px 2px!important;font-size:.56rem!important;line-height:1.15!important}.app-dock-link i{width:32px!important;height:30px!important;border-radius:11px!important;font-size:1.03rem!important}.app-dock-link.active i{box-shadow:0 5px 12px rgba(22,119,232,.23)!important}}@media(max-width:370px){.app-dock-link{font-size:.52rem!important}}`;
+    s.textContent=`html{scroll-padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))}.app-tool-jobs .app-tool-icon{background:linear-gradient(145deg,#167c83,#154f73)!important;color:#fff!important;box-shadow:inset 0 1px 2px rgba(255,255,255,.32),0 9px 20px rgba(21,79,115,.18)!important}.app-tool-revision{position:relative;overflow:hidden;border-color:rgba(79,70,229,.18)!important;background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(245,243,255,.96))!important}.app-tool-revision:after{content:'NEW';position:absolute;top:8px;right:8px;padding:3px 6px;border-radius:999px;background:#4f46e5;color:#fff;font-size:.48rem;font-weight:900;letter-spacing:.06em}.app-tool-revision .app-tool-icon{background:linear-gradient(145deg,#4f46e5,#7c3aed)!important;color:#fff!important;box-shadow:inset 0 1px 2px rgba(255,255,255,.3),0 9px 20px rgba(79,70,229,.22)!important}.app-tool-flashcards{position:relative;overflow:hidden;border-color:rgba(14,116,144,.18)!important;background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(236,254,255,.96))!important}.app-tool-flashcards:after{content:'NEW';position:absolute;top:8px;right:8px;padding:3px 6px;border-radius:999px;background:#0e7490;color:#fff;font-size:.48rem;font-weight:900;letter-spacing:.06em}.app-tool-flashcards .app-tool-icon{background:linear-gradient(145deg,#0891b2,#2563eb)!important;color:#fff!important;box-shadow:inset 0 1px 2px rgba(255,255,255,.3),0 9px 20px rgba(8,145,178,.22)!important}@media(max-width:620px){body.app-page{padding-bottom:calc(104px + env(safe-area-inset-bottom,0px))!important}.app-main,.hub-main{padding-bottom:54px!important}.app-tool b{display:-webkit-box!important;min-height:2.35em;overflow:hidden!important;white-space:normal!important;text-overflow:clip!important;line-height:1.18!important;-webkit-box-orient:vertical;-webkit-line-clamp:2}.app-dock-wrap{padding:5px 8px calc(5px + env(safe-area-inset-bottom,0px))!important;background:linear-gradient(180deg,rgba(243,247,251,0) 0,rgba(243,247,251,.92) 16px,rgba(243,247,251,.985) 100%)}.app-dock{min-height:60px!important;border-radius:20px!important}.app-dock-link{gap:1px!important;padding:4px 2px!important;font-size:.56rem!important;line-height:1.15!important}.app-dock-link i{width:32px!important;height:30px!important;border-radius:11px!important;font-size:1.03rem!important}.app-dock-link.active i{box-shadow:0 5px 12px rgba(22,119,232,.23)!important}}@media(max-width:370px){.app-dock-link{font-size:.52rem!important}}`;
     document.head.appendChild(s);
   }
 
@@ -60,6 +62,45 @@
       if(note)note.textContent=copy[1];
       card.dataset.label=copy[0];
     });
+  }
+
+  function mountRevisionCards(){
+    if(!document.body||document.body.dataset.page!=='home')return;
+    const grid=document.querySelector('.app-tools-grid');
+    if(!grid)return;
+
+    let flash=grid.querySelector('[data-kanji-flashcards-entry]');
+    if(!flash){
+      flash=document.createElement('a');
+      flash.className='app-tool app-tool-flashcards';
+      flash.href='/kanji-flashcards.html';
+      flash.dataset.kanjiFlashcardsEntry='1';
+      flash.dataset.label='Kanji Flashcards';
+      flash.dataset.search='kanji flashcards flash card n5 n4 n3 漢字 কাঞ্জি ফ্ল্যাশকার্ড review spaced repetition weak ভুল';
+      flash.dataset.searchIcon='fa-layer-group';
+      flash.innerHTML='<span class="app-tool-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><b>Kanji Flashcards</b><small>N5 · N4 · N3 স্মার্ট রিভিউ</small>';
+    }
+
+    let revision=grid.querySelector('[data-full-revision-entry]');
+    if(!revision){
+      revision=document.createElement('a');
+      revision.className='app-tool app-tool-revision';
+      revision.href='/revision.html';
+      revision.dataset.fullRevisionEntry='1';
+      revision.dataset.label='Full Revision';
+      revision.dataset.search='full revision jlpt n5 n4 n3 exam grammar vocabulary kanji reading listening mock quick weak রিভিশন পরীক্ষা';
+      revision.dataset.searchIcon='fa-rotate';
+      revision.innerHTML='<span class="app-tool-icon"><i class="fa-solid fa-rotate" aria-hidden="true"></i></span><b>Full Revision</b><small>পরীক্ষার আগে সব একসাথে</small>';
+    }
+
+    const n3=grid.querySelector('a[href="/n3.html"]');
+    if(n3&&n3.parentNode===grid){
+      n3.insertAdjacentElement('afterend',revision);
+      n3.insertAdjacentElement('afterend',flash);
+    }else{
+      grid.prepend(revision);
+      grid.prepend(flash);
+    }
   }
 
   function mountJobsInJapanEntry(){
@@ -131,10 +172,11 @@
 
   async function boot(){
     applyMobileLayoutFix();
+    mountRevisionCards();
     mountJobsInJapanEntry();
     normalizeHalalScannerEntry();
     applyHomeCardLanguage();
-    setTimeout(()=>{normalizeHalalScannerEntry();applyHomeCardLanguage();},0);
+    setTimeout(()=>{mountRevisionCards();normalizeHalalScannerEntry();applyHomeCardLanguage();},0);
     loadJobsEnhancer();
     mountHomeDailyNews().catch(()=>{});
     if(!window.AN)return;
@@ -155,6 +197,6 @@
     });
   }
 
-  window.addEventListener('aponar:languagechange',()=>setTimeout(()=>{normalizeHalalScannerEntry();applyHomeCardLanguage();},0));
+  window.addEventListener('aponar:languagechange',()=>setTimeout(()=>{mountRevisionCards();normalizeHalalScannerEntry();applyHomeCardLanguage();},0));
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot);else boot();
 })();
