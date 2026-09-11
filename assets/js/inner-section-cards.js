@@ -33,7 +33,7 @@
     '/n3-mock-tests.html':'N3 Mock Tests','/n3-mock-tests':'N3 Mock Tests'
   };
 
-  if(!PAGE_TITLES[path])return;
+  if(path==='/'||path==='/index.html'||path==='/index')return;
   document.body&&document.body.setAttribute('data-inner-card-page','1');
 
   const TONES=['blue','orange','green','purple','red','cyan','pink','gold'];
