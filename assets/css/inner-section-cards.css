@@ -16,7 +16,6 @@ body[data-inner-card-page="1"]{
   --an-inner-panel-2:#111014;
 }
 
-/* Shared overview panel injected on standalone section pages. */
 .an-section-overview{
   width:min(1180px,calc(100% - 28px));
   margin:20px auto 26px;
@@ -30,7 +29,9 @@ body[data-inner-card-page="1"]{
   color:#fff;
   box-shadow:0 22px 55px rgba(0,0,0,.18);
   overflow:hidden;
+  box-sizing:border-box;
 }
+.an-section-overview *{box-sizing:border-box}
 .an-section-overview-head{
   display:flex;
   align-items:flex-end;
@@ -76,7 +77,7 @@ body[data-inner-card-page="1"]{
 }
 
 .an-inner-section-grid,
-.learning-hub-page .lh-resource-grid,
+body[data-inner-card-page="1"].learning-hub-page .lh-resource-grid,
 body[data-inner-card-page="1"] .hub-resource-grid{
   display:grid!important;
   grid-template-columns:repeat(4,minmax(0,1fr))!important;
@@ -84,7 +85,6 @@ body[data-inner-card-page="1"] .hub-resource-grid{
   align-items:stretch;
 }
 
-/* Injected cards */
 .an-inner-card{
   --an-tone-a:#49bff5;
   --an-tone-b:#6974ff;
@@ -103,11 +103,9 @@ body[data-inner-card-page="1"] .hub-resource-grid{
   font:inherit;
   cursor:pointer;
   overflow:hidden;
-  box-shadow:
-    inset 0 -3px 0 rgba(255,59,31,.95),
-    inset 0 1px 0 rgba(255,255,255,.04),
-    0 15px 32px rgba(0,0,0,.2);
+  box-shadow:inset 0 -3px 0 rgba(255,59,31,.95),inset 0 1px 0 rgba(255,255,255,.04),0 15px 32px rgba(0,0,0,.2);
   transition:transform .18s ease,border-color .18s ease,box-shadow .18s ease;
+  box-sizing:border-box;
 }
 .an-inner-card::after{
   content:"";
@@ -119,21 +117,26 @@ body[data-inner-card-page="1"] .hub-resource-grid{
   filter:blur(24px);
   pointer-events:none;
 }
-.an-inner-card:hover,.an-inner-card:focus-visible{
-  transform:translateY(-4px);
-  border-color:#ffd567;
-  box-shadow:inset 0 -3px 0 #ff3b1f,0 20px 36px rgba(0,0,0,.28),0 0 0 2px rgba(255,196,68,.08);
+.an-inner-card:focus-visible{
+  outline:3px solid rgba(255,213,103,.78);
+  outline-offset:3px;
+}
+@media(hover:hover){
+  .an-inner-card:hover{
+    transform:translateY(-4px);
+    border-color:#ffd567;
+    box-shadow:inset 0 -3px 0 #ff3b1f,0 20px 36px rgba(0,0,0,.28),0 0 0 2px rgba(255,196,68,.08);
+  }
 }
 .an-inner-card-visual{
   position:relative;
   height:116px;
+  flex:0 0 116px;
   display:grid;
   place-items:center;
   overflow:hidden;
   border-radius:21px;
-  background:
-    radial-gradient(circle at 75% 10%,rgba(255,255,255,.24),transparent 32%),
-    linear-gradient(145deg,var(--an-tone-a),var(--an-tone-b));
+  background:radial-gradient(circle at 75% 10%,rgba(255,255,255,.24),transparent 32%),linear-gradient(145deg,var(--an-tone-a),var(--an-tone-b));
   color:#fff;
   box-shadow:inset 0 1px 0 rgba(255,255,255,.26),0 10px 18px rgba(0,0,0,.18);
 }
@@ -145,13 +148,20 @@ body[data-inner-card-page="1"] .hub-resource-grid{
   border-radius:50%;
   background:rgba(255,255,255,.1);
 }
-.an-inner-card-visual i{
+.an-inner-card-symbol{
   position:relative;
   z-index:1;
-  font-size:2.45rem;
+  font-weight:950;
+  line-height:1;
+  color:#fff;
   filter:drop-shadow(0 5px 9px rgba(0,0,0,.18));
 }
-.an-inner-card-copy{display:grid;gap:3px;padding:12px 5px 4px;min-width:0}
+.an-inner-card-copy{
+  display:grid;
+  gap:4px;
+  min-width:0;
+  padding:12px 36px 8px 5px;
+}
 .an-inner-card-copy strong{
   color:#fff;
   font-size:.98rem;
@@ -164,8 +174,9 @@ body[data-inner-card-page="1"] .hub-resource-grid{
   color:var(--an-card-muted);
   font-size:.72rem;
   font-weight:650;
-  line-height:1.35;
+  line-height:1.4;
   white-space:normal;
+  overflow-wrap:anywhere;
 }
 .an-inner-card-arrow{
   position:absolute;
@@ -189,8 +200,8 @@ body[data-inner-card-page="1"] .hub-resource-grid{
 .an-inner-card[data-tone="pink"]{--an-tone-a:#ff70b3;--an-tone-b:#c84df0}
 .an-inner-card[data-tone="gold"]{--an-tone-a:#ffd45a;--an-tone-b:#ef8b19}
 
-/* Existing N5/N4/N3 course cards: keep all content/functionality, change only visual system. */
-.learning-hub-page .lh-resource-card{
+/* Existing N5/N4/N3 course cards: visual restyle only; no extra navigation is injected. */
+body[data-inner-card-page="1"].learning-hub-page .lh-resource-card{
   min-width:0!important;
   min-height:260px!important;
   display:flex!important;
@@ -203,22 +214,22 @@ body[data-inner-card-page="1"] .hub-resource-grid{
   box-shadow:inset 0 -3px 0 #ff3b1f,0 16px 34px rgba(0,0,0,.22)!important;
   overflow:hidden!important;
 }
-.learning-hub-page .lh-resource-card:hover{transform:translateY(-4px)!important;border-color:#ffd15b!important}
-.learning-hub-page .lh-card-top{
+@media(hover:hover){body[data-inner-card-page="1"].learning-hub-page .lh-resource-card:hover{transform:translateY(-4px)!important;border-color:#ffd15b!important}}
+body[data-inner-card-page="1"].learning-hub-page .lh-card-top{
   min-height:108px!important;
   display:flex!important;
   align-items:flex-start!important;
   justify-content:space-between!important;
+  gap:10px!important;
   padding:16px!important;
   margin-bottom:11px!important;
   border-radius:21px!important;
-  background:
-    radial-gradient(circle at 80% 8%,rgba(255,255,255,.22),transparent 32%),
-    linear-gradient(145deg,var(--card-accent,#41bff3),color-mix(in srgb,var(--card-accent,#41bff3) 66%,#4b3fe1))!important;
+  background:radial-gradient(circle at 80% 8%,rgba(255,255,255,.22),transparent 32%),linear-gradient(145deg,var(--card-accent,#41bff3),#4b3fe1)!important;
   color:#fff!important;
 }
-.learning-hub-page .lh-resource-icon{
+body[data-inner-card-page="1"].learning-hub-page .lh-resource-icon{
   width:58px!important;height:58px!important;
+  flex:0 0 58px!important;
   display:grid!important;place-items:center!important;
   border:1px solid rgba(255,255,255,.22)!important;
   border-radius:18px!important;
@@ -227,23 +238,27 @@ body[data-inner-card-page="1"] .hub-resource-grid{
   font-size:1.8rem!important;
   box-shadow:0 8px 16px rgba(0,0,0,.13)!important;
 }
-.learning-hub-page .lh-card-status{
-  max-width:48%;
+body[data-inner-card-page="1"].learning-hub-page .lh-card-status{
+  max-width:52%;
   padding:6px 8px!important;
   border:1px solid rgba(255,255,255,.15)!important;
   border-radius:999px!important;
   background:rgba(0,0,0,.18)!important;
   color:#fff!important;
   font-size:.62rem!important;
+  line-height:1.25!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  text-align:center!important;
 }
-.learning-hub-page .lh-card-kicker{color:#ffc857!important;font-size:.66rem!important;font-weight:900!important;letter-spacing:.05em!important}
-.learning-hub-page .lh-resource-card h3{margin:5px 0 0!important;color:#fff!important;font-size:1.02rem!important;line-height:1.3!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
-.learning-hub-page .lh-resource-card p{color:#c6bdc0!important;font-size:.75rem!important;line-height:1.55!important}
-.learning-hub-page .lh-card-tags{margin-top:auto!important;padding-top:10px!important}
-.learning-hub-page .lh-card-tags span{border-color:rgba(255,255,255,.09)!important;background:rgba(255,255,255,.06)!important;color:#d7ced0!important}
-.learning-hub-page .lh-card-action{color:#fff!important;font-weight:850!important}
+body[data-inner-card-page="1"].learning-hub-page .lh-card-kicker{color:#ffc857!important;font-size:.66rem!important;font-weight:900!important;letter-spacing:.05em!important}
+body[data-inner-card-page="1"].learning-hub-page .lh-resource-card h3{margin:5px 0 0!important;color:#fff!important;font-size:1.02rem!important;line-height:1.3!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;overflow-wrap:anywhere!important}
+body[data-inner-card-page="1"].learning-hub-page .lh-resource-card p{color:#c6bdc0!important;font-size:.75rem!important;line-height:1.55!important;overflow-wrap:anywhere!important}
+body[data-inner-card-page="1"].learning-hub-page .lh-card-tags{margin-top:auto!important;padding-top:10px!important}
+body[data-inner-card-page="1"].learning-hub-page .lh-card-tags span{border-color:rgba(255,255,255,.09)!important;background:rgba(255,255,255,.06)!important;color:#d7ced0!important}
+body[data-inner-card-page="1"].learning-hub-page .lh-card-action{color:#fff!important;font-weight:850!important;overflow-wrap:anywhere!important}
 
-/* Existing generic hub cards (Japan Life, Study Guide and other app-shell hubs). */
+/* Existing generic hub cards. Keep their DOM/layout logic intact and only style the card shell + icon area. */
 body[data-inner-card-page="1"] .hub-resource-card{
   min-width:0!important;
   min-height:236px!important;
@@ -259,7 +274,6 @@ body[data-inner-card-page="1"] .hub-resource-card{
   box-shadow:inset 0 -3px 0 #ff3b1f,0 16px 32px rgba(0,0,0,.2)!important;
   overflow:hidden!important;
 }
-body[data-inner-card-page="1"] .hub-resource-card>div{display:flex!important;flex-direction:column!important;min-height:0!important}
 body[data-inner-card-page="1"] .hub-resource-icon{
   width:100%!important;
   height:108px!important;
@@ -268,51 +282,72 @@ body[data-inner-card-page="1"] .hub-resource-icon{
   margin:0 0 12px!important;
   border:1px solid rgba(255,255,255,.17)!important;
   border-radius:21px!important;
-  background:
-    radial-gradient(circle at 80% 8%,rgba(255,255,255,.22),transparent 32%),
-    linear-gradient(145deg,var(--card-accent,#47bdf0),color-mix(in srgb,var(--card-accent,#47bdf0) 68%,#5541df))!important;
+  background:radial-gradient(circle at 80% 8%,rgba(255,255,255,.22),transparent 32%),linear-gradient(145deg,var(--card-accent,#47bdf0),#5541df)!important;
   color:#fff!important;
   font-size:2.25rem!important;
   box-shadow:0 10px 18px rgba(0,0,0,.15)!important;
 }
-body[data-inner-card-page="1"] .hub-resource-card h3{margin:0 4px 4px!important;color:#fff!important;font-size:1rem!important;line-height:1.3!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
-body[data-inner-card-page="1"] .hub-resource-card p{margin:0 4px!important;color:#c6bdc0!important;font-size:.74rem!important;line-height:1.55!important}
-body[data-inner-card-page="1"] .hub-resource-link{margin-top:10px!important;padding:8px 5px 2px!important;color:#fff!important;font-size:.72rem!important;font-weight:850!important}
+body[data-inner-card-page="1"] .hub-resource-card h3{margin:0 4px 4px!important;color:#fff!important;font-size:1rem!important;line-height:1.3!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;overflow-wrap:anywhere!important}
+body[data-inner-card-page="1"] .hub-resource-card p{margin:0 4px!important;color:#c6bdc0!important;font-size:.74rem!important;line-height:1.55!important;overflow-wrap:anywhere!important}
+body[data-inner-card-page="1"] .hub-resource-link{margin-top:10px!important;padding:8px 5px 2px!important;color:#fff!important;font-size:.72rem!important;font-weight:850!important;overflow-wrap:anywhere!important}
 
 @media(max-width:1023px){
-  .an-inner-section-grid,.learning-hub-page .lh-resource-grid,body[data-inner-card-page="1"] .hub-resource-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+  .an-inner-section-grid,
+  body[data-inner-card-page="1"].learning-hub-page .lh-resource-grid,
+  body[data-inner-card-page="1"] .hub-resource-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
 }
 @media(max-width:700px){
   :root{--an-card-gap:11px;--an-card-radius:23px}
-  .an-section-overview{width:min(100% - 16px,1180px);margin:14px auto 20px;padding:14px;border-radius:25px}
+  .an-section-overview{width:min(calc(100% - 16px),1180px);margin:14px auto 20px;padding:14px;border-radius:25px}
   .an-section-overview-head{align-items:flex-start;margin-bottom:13px}
   .an-section-overview-badge{display:none}
   .an-section-overview h2{font-size:1.25rem}
   .an-section-overview p{font-size:.76rem}
-  .an-inner-section-grid,.learning-hub-page .lh-resource-grid,body[data-inner-card-page="1"] .hub-resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:11px!important}
-  .an-inner-card{min-height:205px;padding:9px;border-radius:23px}
-  .an-inner-card-visual{height:96px;border-radius:17px}
-  .an-inner-card-visual i{font-size:2rem}
-  .an-inner-card-copy{padding:10px 4px 3px}
+  .an-inner-section-grid,
+  body[data-inner-card-page="1"].learning-hub-page .lh-resource-grid,
+  body[data-inner-card-page="1"] .hub-resource-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:11px!important}
+  .an-inner-card{min-height:202px;padding:9px;border-radius:23px}
+  .an-inner-card-visual{height:94px;flex-basis:94px;border-radius:17px}
+  .an-inner-card-copy{padding:10px 30px 7px 4px}
   .an-inner-card-copy strong{font-size:.88rem;line-height:1.28}
-  .an-inner-card-copy small{font-size:.64rem}
+  .an-inner-card-copy small{font-size:.66rem;line-height:1.38}
   .an-inner-card-arrow{right:11px;bottom:10px;width:24px;height:24px}
-  .learning-hub-page .lh-resource-card,body[data-inner-card-page="1"] .hub-resource-card{min-height:220px!important;padding:9px!important;border-radius:23px!important}
-  .learning-hub-page .lh-card-top,body[data-inner-card-page="1"] .hub-resource-icon{height:92px!important;min-height:92px!important;border-radius:17px!important}
-  .learning-hub-page .lh-card-top{padding:11px!important}
-  .learning-hub-page .lh-resource-icon{width:48px!important;height:48px!important;border-radius:15px!important;font-size:1.45rem!important}
+
+  body[data-inner-card-page="1"].learning-hub-page .lh-resource-card,
+  body[data-inner-card-page="1"] .hub-resource-card{min-height:220px!important;padding:10px!important;border-radius:23px!important}
+  body[data-inner-card-page="1"].learning-hub-page .lh-card-top,
+  body[data-inner-card-page="1"] .hub-resource-icon{height:96px!important;min-height:96px!important;border-radius:17px!important}
+  body[data-inner-card-page="1"].learning-hub-page .lh-card-top{padding:11px!important}
+  body[data-inner-card-page="1"].learning-hub-page .lh-resource-icon{width:48px!important;height:48px!important;flex-basis:48px!important;border-radius:15px!important;font-size:1.45rem!important}
   body[data-inner-card-page="1"] .hub-resource-icon{font-size:1.85rem!important}
-  .learning-hub-page .lh-card-status{font-size:.52rem!important;padding:4px 6px!important}
-  .learning-hub-page .lh-card-kicker{font-size:.56rem!important}
-  .learning-hub-page .lh-resource-card h3,body[data-inner-card-page="1"] .hub-resource-card h3{font-size:.86rem!important}
-  .learning-hub-page .lh-resource-card p,body[data-inner-card-page="1"] .hub-resource-card p{font-size:.65rem!important;line-height:1.45!important}
-  .learning-hub-page .lh-card-tags{display:none!important}
-  .learning-hub-page .lh-card-action,body[data-inner-card-page="1"] .hub-resource-link{font-size:.63rem!important}
+  body[data-inner-card-page="1"].learning-hub-page .lh-card-status{font-size:.58rem!important;padding:5px 7px!important}
+  body[data-inner-card-page="1"].learning-hub-page .lh-card-kicker{font-size:.6rem!important}
+  body[data-inner-card-page="1"].learning-hub-page .lh-resource-card h3,
+  body[data-inner-card-page="1"] .hub-resource-card h3{font-size:.94rem!important}
+  body[data-inner-card-page="1"].learning-hub-page .lh-resource-card p,
+  body[data-inner-card-page="1"] .hub-resource-card p{font-size:.72rem!important;line-height:1.5!important}
+  body[data-inner-card-page="1"].learning-hub-page .lh-card-action,
+  body[data-inner-card-page="1"] .hub-resource-link{font-size:.7rem!important}
 }
+
+/* Rich content cards need one column on narrow phones; simple injected navigation stays 2-column. */
+@media(max-width:560px){
+  body[data-inner-card-page="1"].learning-hub-page .lh-resource-grid,
+  body[data-inner-card-page="1"] .hub-resource-grid{grid-template-columns:1fr!important}
+  body[data-inner-card-page="1"].learning-hub-page .lh-resource-card,
+  body[data-inner-card-page="1"] .hub-resource-card{min-height:0!important}
+  body[data-inner-card-page="1"].learning-hub-page .lh-card-tags{display:flex!important;flex-wrap:wrap!important}
+}
+
 @media(max-width:360px){
   :root{--an-card-gap:8px}
-  .an-inner-card{min-height:194px}
-  .an-inner-card-copy strong{font-size:.81rem}
-  .learning-hub-page .lh-resource-card,body[data-inner-card-page="1"] .hub-resource-card{min-height:210px!important}
+  .an-section-overview{width:calc(100% - 12px);padding:10px;border-radius:20px}
+  .an-inner-card{min-height:190px;padding:8px;border-radius:20px}
+  .an-inner-card-visual{height:88px;flex-basis:88px;border-radius:15px}
+  .an-inner-card-copy strong{font-size:.82rem}
+  .an-inner-card-copy small{font-size:.62rem}
 }
-@media(prefers-reduced-motion:reduce){.an-inner-card,.learning-hub-page .lh-resource-card,body[data-inner-card-page="1"] .hub-resource-card{transition:none!important}}
+@media(prefers-reduced-motion:reduce){
+  .an-inner-card,body[data-inner-card-page="1"].learning-hub-page .lh-resource-card,body[data-inner-card-page="1"] .hub-resource-card{transition:none!important}
+  html{scroll-behavior:auto!important}
+}
