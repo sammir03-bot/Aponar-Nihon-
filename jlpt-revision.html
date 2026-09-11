@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="bn" dir="ltr" data-language-preset="bn" data-source-language="bn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>JLPT Full Revision + Kanji Flashcards | আপনার নিহোন</title>
+  <meta name="description" content="N5, N4, N3 Kanji Flashcard, Full Revision, 30-minute Quick Revision, Weak Area practice, grammar, reading, listening and mock-test links in Bangla.">
+  <meta name="theme-color" content="#4f46e5">
+  <link rel="canonical" href="https://app.aponar-nihon.workers.dev/jlpt-revision">
+  <link rel="icon" href="/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/jlpt-revision.css?v=20260911.1">
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell">
+      <a class="brand" href="/"><img src="/logo.png" alt="আপনার নিহোন"><span>আপনার নিহোন</span></a>
+      <div class="top-actions"><a class="pill-btn" href="/mock-test"><span>Mock Test</span> ↗</a><a class="icon-btn" href="/" aria-label="হোম">⌂</a></div>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="eyebrow">JLPT N5 • N4 • N3 SMART REVISION</div>
+        <h1>এক জায়গায় Flashcard + Full Revision</h1>
+        <p>কাঞ্জি প্রতিদিন active recall-এ শিখুন, আর পরীক্ষার আগে Kanji–Vocabulary, Grammar, Reading, Listening, প্রশ্ন ধরার কৌশল ও Mock Test নির্দিষ্ট ক্রমে revise করুন। ভুল হলে সেটি আবার আপনার weak queue-তে ফিরে আসবে।</p>
+        <div class="hero-stats"><span class="hero-stat">N5 / N4 / N3</span><span class="hero-stat">Spaced Review</span><span class="hero-stat">Furigana + বাংলা</span><span class="hero-stat">Progress Save</span><span class="hero-stat">Mobile First</span></div>
+      </div>
+    </section>
+
+    <div id="resumeBanner" class="resume-banner"><span id="resumeText"></span><button id="resumeBtn" type="button">সেখান থেকে শুরু</button></div>
+
+    <nav class="section-tabs" aria-label="শেখার সেকশন">
+      <button class="section-tab active" data-tab="flash" type="button">漢 Kanji Flashcards</button>
+      <button class="section-tab" data-tab="revision" type="button">✓ Full Revision</button>
+    </nav>
+
+    <section id="flashPane" class="pane active" aria-labelledby="flashTitle">
+      <div class="controls card">
+        <strong id="flashTitle">Level:</strong>
+        <div class="level-switch" aria-label="JLPT level"><button class="level-btn active" data-level="N5">N5</button><button class="level-btn" data-level="N4">N4</button><button class="level-btn" data-level="N3">N3</button></div>
+        <label for="cardFilter">তালিকা:</label>
+        <select id="cardFilter"><option value="today">আজকের Review</option><option value="new">নতুন Kanji</option><option value="wrong">ভুল হওয়া</option><option value="book">বুকমার্ক</option><option value="all">সব Card</option></select>
+        <button class="pill-btn" id="nextCard" type="button">অন্য Card ↻</button>
+      </div>
+
+      <div class="study-grid">
+        <div class="flash-wrap card">
+          <div class="flash-meta"><span id="cardCounter">0টি card</span><span>Card চাপলে উত্তর দেখুন</span></div>
+          <div class="flashcard" id="flashcard" role="button" tabindex="0" aria-label="Kanji flashcard উল্টাতে চাপুন">
+            <div class="flash-inner">
+              <div class="flash-face flash-front"><div class="big-kanji" id="frontKanji">休</div><div class="tap-hint">অর্থ + উচ্চারণ মনে করুন → তারপর চাপুন</div></div>
+              <div class="flash-face flash-back"><div id="backBody"></div></div>
+            </div>
+          </div>
+          <div class="rating-row" aria-label="নিজের উত্তর মূল্যায়ন করুন">
+            <button class="rate again" data-rate="again" type="button">ভুলে গেছি</button>
+            <button class="rate hard" data-rate="hard" type="button">কঠিন</button>
+            <button class="rate good" data-rate="good" type="button">পেরেছি</button>
+          </div>
+        </div>
+
+        <aside class="side-stack">
+          <div class="stat-card card"><h3>আজকের অবস্থা</h3><div class="mini-stats"><div class="mini-stat"><b id="statToday">0</b><small>Review বাকি</small></div><div class="mini-stat"><b id="statLearned">0</b><small>দেখা হয়েছে</small></div><div class="mini-stat"><b id="statWrong">0</b><small>ভুল হয়েছে</small></div><div class="mini-stat"><b id="statBook">0</b><small>বুকমার্ক</small></div></div></div>
+          <div class="stat-card card"><h3>আমার Weak Kanji</h3><div class="queue-list" id="weakList"></div></div>
+          <div class="stat-card card"><h3>সম্পূর্ণ Kanji Library</h3><p style="color:var(--muted);line-height:1.6">Flashcard হলো active practice। Level-এর পুরো reference list খুলতে:</p><div class="module-actions" style="justify-content:start"><a href="/n5-kanji">N5</a><a href="/n4-kanji">N4</a><a href="/n3-kanji">N3</a></div></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="revisionPane" class="pane" aria-labelledby="revisionTitle">
+      <div class="controls card">
+        <strong>Level:</strong>
+        <div class="level-switch"><button class="level-btn active" data-level="N5">N5</button><button class="level-btn" data-level="N4">N4</button><button class="level-btn" data-level="N3">N3</button></div>
+        <button class="pill-btn" id="miniQuiz" type="button">৩-পদক্ষেপ Mini Quiz</button>
+        <button class="pill-btn" id="resetProgress" type="button">Progress Reset</button>
+      </div>
+
+      <div class="revision-head card" style="margin-top:16px"><h2 id="revisionTitle">N5 • পূর্ণ রিভিশন</h2><p>একবারে সব গুছিয়ে দেখার জন্য নির্দিষ্ট পড়ার ক্রম। Exam-এর আগে দ্রুত revision করতে Quick mode, আর নিজের ভুলে বেশি সময় দিতে Weak mode বেছে নিন।</p></div>
+
+      <div class="mode-grid" aria-label="Revision mode">
+        <button class="mode active" data-mode="full" type="button"><strong>📚 পূর্ণ রিভিশন</strong><small>Kanji/Vocab → Grammar → Reading → Exam technique → Listening → Mock test</small></button>
+        <button class="mode" data-mode="quick" type="button"><strong>⏱ ৩০ মিনিট দ্রুত</strong><small>আগে শেখা core rule, high-yield mistake এবং exam reminder দ্রুত ঝালাই।</small></button>
+        <button class="mode" data-mode="weak" type="button"><strong>🎯 আমার দুর্বল জায়গা</strong><small>ভুল হওয়া kanji, grammar এবং অসম্পূর্ণ module-এ focused practice।</small></button>
+      </div>
+
+      <div class="progress-shell card"><div class="progress-top"><span>Revision Progress</span><span id="revisionProgressText">0/6 সম্পন্ন • 0%</span></div><div class="progress-track"><div class="progress-bar" id="revisionProgress"></div></div></div>
+
+      <section class="teacher-card card" aria-labelledby="teacherTitle">
+        <h2 id="teacherTitle">একটি Grammar কীভাবে শেখানো হবে</h2>
+        <div class="teach-steps">
+          <div class="teach-step"><b>1. সহজ বাংলা</b><small>Rule আসলে কী কাজ করে—এক লাইনে পরিষ্কার অর্থ।</small></div>
+          <div class="teach-step"><b>2. Exact Form</b><small>Verb / Noun / い-adj / な-adj-এর কোন রূপে বসবে।</small></div>
+          <div class="teach-step"><b>3. Furigana Example</b><small><ruby>学校<rt>がっこう</rt></ruby>へ<ruby>行<rt>い</rt></ruby>きます。— স্কুলে যাই।</small></div>
+          <div class="teach-step"><b>4. কাছাকাছি Rule</b><small>একই বাংলা অর্থ হলেও situation ও nuance কোথায় আলাদা।</small></div>
+          <div class="teach-step"><b>5. ছোট প্রশ্ন</b><small>নিজে option বেছে দিয়ে active recall করুন।</small></div>
+          <div class="teach-step"><b>6. কেন?</b><small>সঠিক answer কেন ঠিক এবং অন্য option কেন ভুল—দুটোই দেখুন।</small></div>
+        </div>
+      </section>
+
+      <div class="module-list" id="moduleList"></div>
+
+      <section aria-labelledby="coverageTitle">
+        <div class="revision-head card"><h2 id="coverageTitle">Coverage Checklist • <span id="coverageLabel">N5 foundation</span></h2><p>এই checklist-এর উদ্দেশ্য হলো exam-এর আগে কোনো skill category বাদ না যাওয়া।</p></div>
+        <div class="coverage">
+          <div class="coverage-card card"><h3>Language Knowledge</h3><div class="check">Kanji reading</div><div class="check">Vocabulary meaning & usage</div><div class="check">Grammar form & context</div><div class="check">Similar grammar comparison</div></div>
+          <div class="coverage-card card"><h3>Reading & Technique</h3><div class="check">Question first বুঝে নেওয়া</div><div class="check">কারণ / contrast clue</div><div class="check">★ sentence ordering</div><div class="check">Option elimination + time split</div></div>
+          <div class="coverage-card card"><h3>Listening & Test</h3><div class="check">Who / what / when / where</div><div class="check">Plan change & final decision</div><div class="check">Appropriate response</div><div class="check">Timed mock + mistake review</div></div>
+        </div>
+      </section>
+
+      <div class="notice"><b>Coverage note:</b> JLPT কোনো level-এর জন্য একটি official exhaustive “এইগুলোই সব kanji/vocabulary/grammar” তালিকা প্রকাশ করে না। তাই এই revision system skill ও curriculum coverage পরিষ্কার রাখে, আর আপনার নিহোনের existing N5/N4/N3 lesson library-কে reference হিসেবে যুক্ত করে। একবার পূর্ণ revision করলে সব category গুছিয়ে দেখা যাবে; মনে রাখা ও দ্রুত answer করার জন্য পুনরাবৃত্ত practice প্রয়োজন।</div>
+    </section>
+  </main>
+
+  <footer class="footer shell">আপনার নিহোন • JLPT Smart Revision System<br>Progress এই browser-এ save হয়। ভুল Kanji Flashcard ও Weak Revision queue একে অপরের সঙ্গে যুক্ত।</footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/assets/js/jlpt-revision.js?v=20260911.1"></script>
+</body>
+</html>
