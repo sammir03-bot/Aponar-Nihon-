@@ -1,0 +1,1 @@
+(()=>{const d=window.AN_LISTENING_DATA||{};['N5','N4','N3'].forEach(level=>{if(Array.isArray(d[level])&&d[level].length>20)d[level]=d[level].slice(0,20)});})();
