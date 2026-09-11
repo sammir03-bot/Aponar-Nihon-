@@ -2,6 +2,8 @@
   'use strict';
 
   const path=(location.pathname||'/').replace(/\/$/,'')||'/';
+  if(path==='/'||path==='/index.html'||path==='/index')return;
+
   const PAGE_TITLES={
     '/n5.html':'JLPT N5','/n5':'JLPT N5',
     '/n4.html':'JLPT N4','/n4':'JLPT N4',
@@ -33,9 +35,6 @@
     '/n3-mock-tests.html':'N3 Mock Tests','/n3-mock-tests':'N3 Mock Tests'
   };
 
-  if(path==='/'||path==='/index.html'||path==='/index')return;
-  document.body&&document.body.setAttribute('data-inner-card-page','1');
-
   const TONES=['blue','orange','green','purple','red','cyan','pink','gold'];
   const SYMBOLS={
     grammar:'📖',vocabulary:'📚',kanji:'漢',reading:'📄',listening:'🎧',revision:'🔄',flash:'🃏',mock:'✅',quiz:'⚡',exam:'💡',progress:'📊',job:'💼',interview:'🗣️',cv:'📝',profile:'👤',study:'🎓',visa:'🛂',life:'🏠',train:'🚆',bank:'🏦',money:'💴',halal:'☪️',prayer:'🕌',book:'📚',tool:'🛠️',translate:'あ',conversation:'💬',default:'✦'
@@ -43,14 +42,13 @@
 
   const MANUAL={
     '/jlpt-revision.html':[
-      ['Kanji Flashcards','N5 · N4 · N3 active recall','#flashPane','漢','pink'],
-      ['Full Revision','পরীক্ষার আগে সব একসাথে','#revisionPane','🔄','green'],
+      ['Kanji Flashcards','N5 · N4 · N3 active recall','#flash','漢','pink'],
+      ['Full Revision','পরীক্ষার আগে সব একসাথে','#revision','🔄','green'],
       ['N5 Kanji','Beginner Kanji library','/n5-kanji.html','N5','blue'],
       ['N4 Kanji','Elementary Kanji library','/n4-kanji.html','N4','purple'],
       ['N3 Kanji','Intermediate Kanji library','/n3-kanji.html','N3','orange'],
       ['Mock Test','Timed exam practice','/mock-test.html','✅','red']
     ],
-    '/jlpt-revision':null,
     '/listening-lab.html':[
       ['N5 Listening','২০টি structured lesson','/listening-lab.html?level=n5','N5','blue'],
       ['N4 Listening','২০টি structured lesson','/listening-lab.html?level=n4','N4','purple'],
@@ -59,7 +57,6 @@
       ['Mock Listening','বাস্তব পরীক্ষার practice','/mock-test.html','🎧','red'],
       ['AI Listening Help','না বুঝলে বাংলায় জিজ্ঞাসা','/tutor-section.html?mode=learn&prompt=Listening%20practice%20বুঝিয়ে%20দিন','🤖','cyan']
     ],
-    '/listening-lab':null,
     '/quiz.html':[
       ['N5 Quiz','Vocabulary · Kanji · Grammar','/jlpt-quiz.html?level=n5&category=vocabulary&part=1','N5','blue'],
       ['N4 Quiz','Vocabulary · Kanji · Grammar','/jlpt-quiz.html?level=n4&category=vocabulary&part=1','N4','purple'],
@@ -68,7 +65,6 @@
       ['Kanji Quiz','Reading ও meaning practice','/jlpt-quiz.html?level=n5&category=kanji&part=1','漢','pink'],
       ['Grammar Quiz','Rule চিনে answer দিন','/jlpt-quiz.html?level=n5&category=grammar&part=1','📖','red']
     ],
-    '/quiz':null,
     '/mock-test.html':[
       ['N5 Full Mock','Timed N5 exam','/n5-mock-tests.html','N5','blue'],
       ['N4 Full Mock','Timed N4 exam','/n4-mock-tests.html','N4','purple'],
@@ -77,7 +73,6 @@
       ['Listening Lab','শোনার skill practice','/listening-lab.html','🎧','cyan'],
       ['Exam Tricks','Question ধরার কৌশল','/study-guide.html','💡','gold']
     ],
-    '/mock-test':null,
     '/tutor-section.html':[
       ['Grammar Explain','Rule বাংলায় বুঝুন','/tutor-section.html?mode=learn&fresh=1&prompt=একটি%20JLPT%20grammar%20বাংলায়%20শিক্ষকের%20মতো%20বুঝিয়ে%20দিন','📖','purple'],
       ['Sentence Correction','জাপানি বাক্য ঠিক করুন','/tutor-section.html?mode=learn&fresh=1&prompt=আমার%20Japanese%20sentence%20check%20ও%20correct%20করুন','✍️','blue'],
@@ -85,12 +80,23 @@
       ['Conversation','বাস্তব কথোপকথন practice','/tutor-section.html?mode=learn&fresh=1&prompt=আমার%20সাথে%20সহজ%20Japanese%20conversation%20practice%20করুন','💬','green'],
       ['Quiz Me','নিজেকে পরীক্ষা করুন','/tutor-section.html?mode=learn&fresh=1&prompt=আমাকে%20JLPT%20quiz%20দিন%20এবং%20উত্তর%20ব্যাখ্যা%20করুন','⚡','orange'],
       ['Interview Help','চাকরির Japanese practice','/tutor-section.html?mode=learn&fresh=1&prompt=Japan%20part-time%20job%20interview%20practice%20করান','💼','red']
-    ],
-    '/tutor-section':null
+    ]
   };
-  Object.keys(MANUAL).forEach(k=>{if(MANUAL[k]===null){const html=k+'.html';if(MANUAL[html])MANUAL[k]=MANUAL[html]}});
+  for(const base of ['/jlpt-revision','/listening-lab','/quiz','/mock-test','/tutor-section']){
+    const html=base+'.html';
+    if(MANUAL[html])MANUAL[base]=MANUAL[html];
+  }
+
+  const GUIDE_PATHS=new Set([
+    '/ssw','/ssw.html','/study-guide','/study-guide.html','/muslim-japan','/muslim-japan.html',
+    '/japan-arrival-guide','/japan-arrival-guide.html','/japan-emergency-guide','/japan-emergency-guide.html',
+    '/japan-google-maps-guide','/japan-google-maps-guide.html','/japan-home-life-guide','/japan-home-life-guide.html',
+    '/japan-newcomer-guide','/japan-newcomer-guide.html','/japan-part-time-job-guide','/japan-part-time-job-guide.html',
+    '/japan-student-visa','/japan-student-visa.html','/japan-train-platform-guide','/japan-train-platform-guide.html'
+  ]);
 
   function textOf(el){return (el&&el.textContent||'').replace(/\s+/g,' ').trim()}
+  function esc(value){return String(value??'').replace(/[&<>'"]/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[ch]))}
   function subtitleFrom(el){
     if(!el)return '';
     const p=el.querySelector&&el.querySelector('p,small,.subtitle,.desc,.description');
@@ -130,38 +136,45 @@
   function slug(s,i){return 'an-section-'+String(s||'part').toLowerCase().replace(/[^a-z0-9\u0980-\u09ff]+/g,'-').replace(/^-|-$/g,'').slice(0,42)+'-'+i}
   function cardMarkup(card,i){
     const [title,sub,target,symbol,tone]=card;
-    const isHash=String(target||'').startsWith('#');
-    const tag=isHash?'a':'a';
     const key=keyFor(title+' '+sub);
     const sym=symbol||SYMBOLS[key]||SYMBOLS.default;
-    return `<${tag} class="an-inner-card" data-tone="${tone||TONES[i%TONES.length]}" href="${target||'#'}"><span class="an-inner-card-visual"><span class="an-inner-card-symbol" style="position:relative;z-index:1;font-size:${String(sym).length<=3?'2.35rem':'1.55rem'};font-weight:950;line-height:1;color:#fff;filter:drop-shadow(0 5px 9px rgba(0,0,0,.18))">${sym}</span></span><span class="an-inner-card-copy"><strong>${title}</strong><small>${sub||'এই অংশ খুলুন'}</small></span><span class="an-inner-card-arrow" aria-hidden="true">›</span></${tag}>`;
-  }
-  function actionCardMarkup(title,sub,index){
-    const key=keyFor(title+' '+sub),sym=SYMBOLS[key]||SYMBOLS.default;
-    return `<button type="button" class="an-inner-card" data-an-action-index="${index}" data-tone="${TONES[index%TONES.length]}"><span class="an-inner-card-visual"><span class="an-inner-card-symbol" style="position:relative;z-index:1;font-size:2.25rem;font-weight:950;line-height:1;color:#fff">${sym}</span></span><span class="an-inner-card-copy"><strong>${title}</strong><small>${sub||'এই অংশ খুলুন'}</small></span><span class="an-inner-card-arrow" aria-hidden="true">›</span></button>`;
+    const size=String(sym).length<=3?'2.35rem':'1.55rem';
+    return `<a class="an-inner-card" data-tone="${esc(tone||TONES[i%TONES.length])}" href="${esc(target||'#')}"><span class="an-inner-card-visual"><span class="an-inner-card-symbol" style="font-size:${size}">${esc(sym)}</span></span><span class="an-inner-card-copy"><strong>${esc(title)}</strong><small>${esc(sub||'এই অংশ খুলুন')}</small></span><span class="an-inner-card-arrow" aria-hidden="true">›</span></a>`;
   }
 
-  function makePanel(cards,actions){
-    if(document.querySelector('.an-section-overview'))return null;
+  function activateRevisionHash(hash){
+    if(!/^#(?:flash|flashPane|revision|revisionPane)$/i.test(hash||''))return false;
+    const mode=/revision/i.test(hash)?'revision':'flash';
+    const tab=document.querySelector(`.section-tab[data-tab="${mode}"]`);
+    if(tab){tab.click();return true}
+    return false;
+  }
+  function focusHashTarget(hash){
+    if(!hash||hash==='#')return;
+    if(activateRevisionHash(hash)){
+      setTimeout(()=>document.querySelector('.section-tabs')?.scrollIntoView({behavior:'smooth',block:'start'}),50);
+      return;
+    }
+    let target=null;
+    try{target=document.querySelector(hash)}catch(_){target=null}
+    if(target)target.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  function makePanel(cards){
+    if(!cards||cards.length<3||document.querySelector('.an-section-overview'))return null;
     const panel=document.createElement('section');
     panel.className='an-section-overview';
     panel.setAttribute('aria-label','এই সেকশনের অংশসমূহ');
     const title=PAGE_TITLES[path]||document.title.split('|')[0].trim();
-    const body=cards?cards.map(cardMarkup).join(''):actions.map((a,i)=>actionCardMarkup(a.title,a.sub,i)).join('');
-    panel.innerHTML=`<div class="an-section-overview-head"><div class="an-section-overview-copy"><span class="an-section-overview-kicker">✦ এক নজরে সব অংশ</span><h2>${title} — যা যা আছে</h2><p>যে বিষয়টি দরকার, কার্ডে চাপুন। সব content আগের মতোই থাকবে—এটি শুধু দ্রুত ও পরিষ্কার navigation.</p></div><span class="an-section-overview-badge">Mobile • 2 columns</span></div><div class="an-inner-section-grid">${body}</div>`;
-    if(actions){
-      panel.addEventListener('click',e=>{
-        const btn=e.target.closest('[data-an-action-index]');
-        if(!btn)return;
-        const a=actions[Number(btn.dataset.anActionIndex)];
-        if(!a||!a.el)return;
-        a.el.click();
-        setTimeout(()=>{
-          const target=a.scrollEl||document.querySelector('.layout,.content,main')||a.el;
-          target&&target.scrollIntoView({behavior:'smooth',block:'start'});
-        },80);
-      });
-    }
+    panel.innerHTML=`<div class="an-section-overview-head"><div class="an-section-overview-copy"><span class="an-section-overview-kicker">✦ এক নজরে সব অংশ</span><h2>${esc(title)} — যা যা আছে</h2><p>যে বিষয়টি দরকার, কার্ডে চাপুন। মূল content এবং কাজ আগের মতোই থাকবে।</p></div><span class="an-section-overview-badge">দ্রুত নেভিগেশন</span></div><div class="an-inner-section-grid">${cards.map(cardMarkup).join('')}</div>`;
+    panel.addEventListener('click',e=>{
+      const link=e.target.closest('a[href^="#"]');
+      if(!link)return;
+      e.preventDefault();
+      const hash=link.getAttribute('href');
+      if(history.replaceState)history.replaceState(null,'',hash);
+      focusHashTarget(hash);
+    });
     return panel;
   }
 
@@ -173,63 +186,44 @@
     if(main){main.insertAdjacentElement('afterbegin',panel);return}
     const header=document.querySelector('header');
     if(header){header.insertAdjacentElement('afterend',panel);return}
-    document.body.insertAdjacentElement('afterbegin',panel);
   }
 
-  function autoActions(){
-    const wizard=[...document.querySelectorAll('.wizard .wiz')].filter(x=>textOf(x));
-    if(wizard.length>=3)return wizard.map((el,i)=>({el,title:textOf(el).replace(/^\d+\s*/,''),sub:'ধাপ '+(i+1)+' খুলুন',scrollEl:document.querySelector('.layout')||el}));
-    const tabs=[...document.querySelectorAll('[role="tab"],.section-tab,.tab-btn,.tabs button,.nav-tabs button')].filter(x=>textOf(x));
-    if(tabs.length>=3)return tabs.slice(0,16).map(el=>({el,title:textOf(el),sub:'এই অংশ দেখুন',scrollEl:el.closest('main,section,.content')||el}));
-    return [];
-  }
-
-  function autoSectionCards(){
+  function guideCards(){
     const root=document.querySelector('main')||document.body;
-    let sections=[...root.querySelectorAll(':scope > section, :scope > .section, :scope > .panel-section')];
-    if(sections.length<3)sections=[...root.querySelectorAll('section')].filter(s=>!s.closest('footer')&&!s.classList.contains('hero')&&!s.classList.contains('lh-hero')&&!s.classList.contains('hub-hero'));
+    const sections=[...root.querySelectorAll(':scope > section, :scope > .section')];
+    const pool=sections.length>=3?sections:[...root.querySelectorAll('section')].filter(s=>!s.closest('footer')&&!s.classList.contains('hero')&&!s.classList.contains('lh-hero')&&!s.classList.contains('hub-hero'));
     const seen=new Set(),cards=[];
-    sections.forEach((section,i)=>{
-      if(cards.length>=18)return;
+    pool.forEach((section,i)=>{
+      if(cards.length>=12)return;
       const heading=section.querySelector('h2,h3,[role="heading"],legend');
       let title=textOf(heading);
       if(!title||title.length>70)return;
       title=title.replace(/^[0-9０-９]+[.)\-:\s]+/,'').trim();
-      if(seen.has(title))return;seen.add(title);
+      if(seen.has(title))return;
+      seen.add(title);
       if(!section.id)section.id=slug(title,i+1);
       const sub=subtitleFrom(section)||'এই অংশে যান';
       const key=keyFor(title+' '+sub);
       cards.push([title,sub,'#'+section.id,SYMBOLS[key]||SYMBOLS.default,TONES[cards.length%TONES.length]]);
     });
-    if(cards.length>=3)return cards;
-
-    const headings=[...root.querySelectorAll('h2')].filter(h=>!h.closest('footer'));
-    headings.forEach((h,i)=>{
-      if(cards.length>=18)return;
-      const title=textOf(h);if(!title||seen.has(title))return;seen.add(title);
-      const target=h.closest('section,.panel,.card,.step')||h;
-      if(!target.id)target.id=slug(title,i+30);
-      cards.push([title,subtitleFrom(target)||'এই অংশে যান','#'+target.id,SYMBOLS[keyFor(title)]||SYMBOLS.default,TONES[cards.length%TONES.length]]);
-    });
     return cards;
-  }
-
-  function enhanceExistingGrids(){
-    document.querySelectorAll('.lh-resource-grid,.hub-resource-grid').forEach(g=>g.classList.add('an-inner-section-grid-existing'));
   }
 
   function boot(){
     document.body.setAttribute('data-inner-card-page','1');
-    enhanceExistingGrids();
-    /* N5/N4/N3 and generic hub pages already have accurate subsection cards; only restyle them. */
-    if(document.querySelector('.lh-resource-grid,.hub-resource-grid'))return;
+    const hasExistingGrid=!!document.querySelector('.lh-resource-grid,.hub-resource-grid');
+    if(hasExistingGrid){
+      document.querySelectorAll('.lh-resource-grid,.hub-resource-grid').forEach(g=>g.classList.add('an-inner-section-grid-existing'));
+      return;
+    }
 
     const manual=MANUAL[path];
-    if(manual&&manual.length){placePanel(makePanel(manual,null));return}
-    const actions=autoActions();
-    if(actions.length>=3){placePanel(makePanel(null,actions));return}
-    const cards=autoSectionCards();
-    if(cards.length>=3)placePanel(makePanel(cards,null));
+    if(manual){placePanel(makePanel(manual));}
+    else if(GUIDE_PATHS.has(path)){placePanel(makePanel(guideCards()));}
+
+    if((path==='/jlpt-revision'||path==='/jlpt-revision.html')&&location.hash){
+      setTimeout(()=>focusHashTarget(location.hash),0);
+    }
   }
 
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
