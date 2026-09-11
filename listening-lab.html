@@ -3,30 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-  <title>Listening Lab | JLPT N5 N4 N3 | আপনার নিহোন</title>
-  <meta name="description" content="JLPT N5, N4, N3 Listening Lab—audio শুনে উত্তর দিন, তারপর furigana script, বাংলা শব্দার্থ, grammar rule ও listening clue ধরে শিখুন।">
+  <title>Listening Lab | 60 JLPT N5 N4 N3 Lessons | আপনার নিহোন</title>
+  <meta name="description" content="৬০টি JLPT-style N5, N4, N3 Listening lesson—প্রথমে শুনে উত্তর দিন, তারপর furigana script, বাংলা শব্দার্থ, grammar rule, listening clue, exam trap ও weak practice দিয়ে শিখুন।">
   <meta name="theme-color" content="#392e89">
+  <link rel="canonical" href="https://app.aponar-nihon.workers.dev/listening-lab">
   <link rel="icon" href="/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700;800;900&family=Noto+Sans+Bengali:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link rel="stylesheet" href="/assets/css/listening-lab.css?v=20260911.2">
-  <script>
-  (function(){
-    var p=new URLSearchParams(location.search), level=(p.get('level')||'').toUpperCase(), mode=(p.get('mode')||'').toLowerCase();
-    if(!['N5','N4','N3'].includes(level) && !['learn','exam','weak'].includes(mode)) return;
-    try{
-      var key='an_listening_course_v2', s=JSON.parse(localStorage.getItem(key)||'{}');
-      if(['N5','N4','N3'].includes(level)) s.level=level;
-      if(['learn','exam','weak'].includes(mode)) s.mode=mode;
-      localStorage.setItem(key,JSON.stringify(s));
-    }catch(e){}
-  })();
-  </script>
+  <link rel="stylesheet" href="/assets/css/listening-lab.css?v=20260911.3">
+  <link rel="stylesheet" href="/assets/css/listening-lab-v3.css?v=20260911.3">
 </head>
 <body>
   <main id="listeningLab"></main>
-  <script defer src="/assets/js/listening-course-v2.js?v=20260911.2"></script>
+  <script defer src="/assets/js/listening-data-n5-v3.js?v=20260911.3"></script>
+  <script defer src="/assets/js/listening-data-n4-v3.js?v=20260911.3"></script>
+  <script defer src="/assets/js/listening-data-n3-v3.js?v=20260911.3"></script>
+  <script defer src="/assets/js/listening-course-v3.js?v=20260911.3"></script>
 </body>
 </html>
