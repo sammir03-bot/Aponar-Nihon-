@@ -1,0 +1,340 @@
+/* Aponar Nihon — approved dark premium Home theme (2026-09-12)
+   Keeps the current Home structure/order/functionality; changes only the visual skin. */
+
+html body.app-page[data-page="home"]{
+  color:#f7fbff!important;
+  background:
+    radial-gradient(circle at 14% 7%,rgba(45,108,255,.24),transparent 23rem),
+    radial-gradient(circle at 92% 12%,rgba(125,72,255,.20),transparent 21rem),
+    radial-gradient(circle at 90% 72%,rgba(213,62,181,.10),transparent 22rem),
+    radial-gradient(circle at 8% 87%,rgba(26,119,236,.12),transparent 22rem),
+    linear-gradient(180deg,#050b18 0%,#071126 38%,#050a15 100%)!important;
+  background-attachment:fixed!important;
+}
+
+html body.app-page[data-page="home"]::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  opacity:.68;
+  background:
+    radial-gradient(circle at 86% 10%,rgba(255,105,180,.14) 0 2px,transparent 3px),
+    radial-gradient(circle at 91% 16%,rgba(255,141,198,.10) 0 2px,transparent 3px),
+    radial-gradient(circle at 15% 74%,rgba(63,132,255,.11) 0 2px,transparent 3px),
+    linear-gradient(120deg,transparent 0 68%,rgba(92,54,166,.06) 78%,transparent 100%);
+}
+
+html body.app-page[data-page="home"] .app-topbar{
+  border-bottom:1px solid rgba(82,137,220,.22)!important;
+  background:rgba(4,10,23,.78)!important;
+  box-shadow:0 12px 36px rgba(0,0,0,.30),inset 0 -1px 0 rgba(73,133,255,.05)!important;
+  backdrop-filter:blur(24px) saturate(145%)!important;
+  -webkit-backdrop-filter:blur(24px) saturate(145%)!important;
+}
+
+html body.app-page[data-page="home"] .app-brand img{
+  border:1px solid rgba(109,160,255,.50)!important;
+  background:rgba(10,20,42,.86)!important;
+  box-shadow:0 0 0 3px rgba(55,112,255,.10),0 0 28px rgba(70,120,255,.28)!important;
+}
+
+html body.app-page[data-page="home"] .app-brand-copy strong{
+  color:#fff!important;
+  text-shadow:0 2px 16px rgba(50,117,255,.16)!important;
+}
+
+html body.app-page[data-page="home"] .app-brand-copy small,
+html body.app-page[data-page="home"] .app-brand-copy small::after{
+  color:#9fb2d6!important;
+}
+
+html body.app-page[data-page="home"] .app-icon-button,
+html body.app-page[data-page="home"] .aponar-language-button{
+  border-color:rgba(104,151,229,.30)!important;
+  background:linear-gradient(145deg,rgba(18,34,65,.86),rgba(8,18,39,.74))!important;
+  color:#d9e7ff!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.08),0 8px 24px rgba(0,0,0,.24),0 0 0 1px rgba(46,116,255,.04)!important;
+}
+
+html body.app-page[data-page="home"] .app-icon-button:hover,
+html body.app-page[data-page="home"] .aponar-language-button:hover{
+  border-color:rgba(87,151,255,.65)!important;
+  color:#fff!important;
+  box-shadow:0 0 24px rgba(45,112,255,.18)!important;
+}
+
+html body.app-page[data-page="home"] .app-main{
+  position:relative;
+}
+
+html body.app-page[data-page="home"] .app-search-card,
+html body.app-page[data-page="home"] .app-dashboard-card,
+html body.app-page[data-page="home"] .app-panel,
+html body.app-page[data-page="home"] .app-daily-card,
+html body.app-page[data-page="home"] .daily-news-home{
+  border:1px solid rgba(100,153,238,.28)!important;
+  background:
+    radial-gradient(circle at 4% 0%,rgba(58,114,227,.12),transparent 15rem),
+    linear-gradient(145deg,rgba(12,26,51,.90),rgba(6,16,35,.84))!important;
+  box-shadow:0 22px 52px rgba(0,0,0,.32),inset 0 1px 0 rgba(255,255,255,.05),0 0 28px rgba(51,103,232,.05)!important;
+  backdrop-filter:blur(22px) saturate(132%)!important;
+  -webkit-backdrop-filter:blur(22px) saturate(132%)!important;
+}
+
+html body.app-page[data-page="home"] .app-search-row{
+  border:1px solid rgba(92,149,244,.48)!important;
+  background:linear-gradient(145deg,rgba(13,28,56,.96),rgba(8,18,39,.92))!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.05),0 0 0 2px rgba(49,107,235,.05),0 10px 30px rgba(0,0,0,.22)!important;
+}
+
+html body.app-page[data-page="home"] .app-search-row:focus-within{
+  border-color:#4c9dff!important;
+  box-shadow:0 0 0 4px rgba(49,129,255,.12),0 0 26px rgba(45,121,255,.16)!important;
+}
+
+html body.app-page[data-page="home"] .app-search-symbol{
+  color:#f6fbff!important;
+}
+
+html body.app-page[data-page="home"] .app-search-input{
+  color:#f8fbff!important;
+}
+
+html body.app-page[data-page="home"] .app-search-input::placeholder{
+  color:#8798b8!important;
+}
+
+html body.app-page[data-page="home"] .app-language-switch{
+  border-color:rgba(86,128,198,.25)!important;
+  background:rgba(4,12,29,.72)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04)!important;
+}
+
+html body.app-page[data-page="home"] .app-language-switch button{
+  color:#aab8d1!important;
+}
+
+html body.app-page[data-page="home"] .app-language-switch button.active{
+  background:linear-gradient(145deg,#2498ff,#155de8)!important;
+  color:#fff!important;
+  box-shadow:0 8px 22px rgba(22,104,235,.38),inset 0 1px 0 rgba(255,255,255,.22)!important;
+}
+
+html body.app-page[data-page="home"] .app-search-results{
+  border-color:rgba(87,137,218,.28)!important;
+  background:rgba(7,18,39,.97)!important;
+  box-shadow:0 18px 34px rgba(0,0,0,.35)!important;
+}
+
+html body.app-page[data-page="home"] .app-search-result{
+  color:#dbe8fb!important;
+}
+
+html body.app-page[data-page="home"] .app-search-result:hover{
+  background:rgba(38,103,214,.18)!important;
+  color:#fff!important;
+}
+
+html body.app-page[data-page="home"] .app-quick-item{
+  color:#b2c2dc!important;
+  background:transparent!important;
+}
+
+html body.app-page[data-page="home"] .app-quick-item i{
+  color:#5ec6ff!important;
+  filter:drop-shadow(0 0 9px rgba(61,175,255,.28));
+}
+
+html body.app-page[data-page="home"] .app-quick-item:hover{
+  background:rgba(35,83,162,.12)!important;
+  box-shadow:none!important;
+}
+
+html body.app-page[data-page="home"] .app-eyebrow{
+  color:#46b7ff!important;
+}
+
+html body.app-page[data-page="home"] .app-card-head h1,
+html body.app-page[data-page="home"] .app-card-head h2,
+html body.app-page[data-page="home"] .app-section-head h2{
+  color:#f8fbff!important;
+  text-shadow:0 4px 18px rgba(0,0,0,.22)!important;
+}
+
+html body.app-page[data-page="home"] .app-card-arrow{
+  border:1px solid rgba(68,143,255,.42)!important;
+  background:linear-gradient(145deg,rgba(18,44,84,.92),rgba(7,20,44,.82))!important;
+  color:#52b8ff!important;
+  box-shadow:0 0 24px rgba(44,121,255,.13),inset 0 1px 0 rgba(255,255,255,.06)!important;
+}
+
+html body.app-page[data-page="home"] .app-dashboard-card .app-tool{
+  border:1px solid rgba(95,134,199,.28)!important;
+  background:
+    radial-gradient(circle at 50% -18%,rgba(70,126,238,.15),transparent 52%),
+    linear-gradient(155deg,rgba(18,35,65,.94),rgba(7,17,36,.94))!important;
+  color:#fff!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.045),0 8px 20px rgba(0,0,0,.24)!important;
+  backdrop-filter:blur(14px) saturate(130%)!important;
+  -webkit-backdrop-filter:blur(14px) saturate(130%)!important;
+}
+
+html body.app-page[data-page="home"] .app-dashboard-card .app-tool::before{
+  background:linear-gradient(130deg,rgba(255,255,255,.055),transparent 36%,rgba(57,111,211,.025) 74%,transparent)!important;
+}
+
+html body.app-page[data-page="home"] .app-dashboard-card .app-tool::after{
+  background:radial-gradient(circle,rgba(43,112,232,.10),transparent 68%)!important;
+}
+
+html body.app-page[data-page="home"] .app-dashboard-card .app-tool:hover,
+html body.app-page[data-page="home"] .app-dashboard-card .app-tool:active{
+  border-color:rgba(89,157,255,.64)!important;
+  background:linear-gradient(155deg,rgba(23,47,86,.98),rgba(9,22,47,.96))!important;
+  box-shadow:0 10px 26px rgba(0,0,0,.30),0 0 25px rgba(47,117,255,.11)!important;
+}
+
+html body.app-page[data-page="home"] .app-dashboard-card .app-tool b{
+  color:#f8fbff!important;
+  text-shadow:0 2px 8px rgba(0,0,0,.28)!important;
+}
+
+html body.app-page[data-page="home"] .app-dashboard-card .app-tool small{
+  color:#91a4c3!important;
+}
+
+html body.app-page[data-page="home"] .app-dashboard-card .app-tool .app-tool-icon{
+  border-color:rgba(255,255,255,.18)!important;
+  box-shadow:inset 0 1px 1px rgba(255,255,255,.24),inset 0 -7px 14px rgba(0,0,0,.09),0 8px 18px rgba(0,0,0,.28),0 0 14px rgba(64,134,255,.10)!important;
+}
+
+html body.app-page[data-page="home"] .app-spotlight{
+  border:1px solid rgba(103,98,255,.38)!important;
+  background:
+    radial-gradient(circle at 82% 14%,rgba(97,162,255,.20),transparent 11rem),
+    radial-gradient(circle at 14% 88%,rgba(132,67,255,.18),transparent 10rem),
+    linear-gradient(135deg,#11163d 0%,#272158 46%,#103563 100%)!important;
+  box-shadow:0 20px 48px rgba(0,0,0,.34),0 0 34px rgba(85,86,255,.10)!important;
+}
+
+html body.app-page[data-page="home"] .app-spotlight-cta{
+  background:rgba(255,255,255,.95)!important;
+  color:#24326d!important;
+}
+
+html body.app-page[data-page="home"] .app-daily-card .daily-top span{
+  color:#9d8bff!important;
+}
+
+html body.app-page[data-page="home"] .app-daily-card .daily-top b{
+  background:rgba(255,167,51,.12)!important;
+  color:#ffbd62!important;
+}
+
+html body.app-page[data-page="home"] .daily-pattern{
+  color:#fff!important;
+}
+
+html body.app-page[data-page="home"] .daily-meaning{
+  color:#a8b7cf!important;
+}
+
+html body.app-page[data-page="home"] .daily-action{
+  border-top-color:rgba(104,141,199,.20)!important;
+  color:#54b6ff!important;
+}
+
+html body.app-page[data-page="home"] .app-journey-step{
+  border-color:rgba(86,130,204,.26)!important;
+  background:linear-gradient(145deg,rgba(16,33,61,.92),rgba(8,20,42,.88))!important;
+  color:#eaf2ff!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04)!important;
+}
+
+html body.app-page[data-page="home"] .app-journey-step span{
+  background:rgba(38,111,228,.16)!important;
+  color:#68c2ff!important;
+}
+
+html body.app-page[data-page="home"] .app-journey-step small{
+  color:#8799b6!important;
+}
+
+html body.app-page[data-page="home"] .daily-news-home .daily-news-head h2,
+html body.app-page[data-page="home"] .daily-news-card h3{
+  color:#f8fbff!important;
+}
+
+html body.app-page[data-page="home"] .daily-news-home,
+html body.app-page[data-page="home"] .daily-news-card{
+  border-color:rgba(88,133,207,.24)!important;
+  background:linear-gradient(155deg,rgba(15,31,58,.94),rgba(8,19,39,.94))!important;
+}
+
+html body.app-page[data-page="home"] .daily-news-card p,
+html body.app-page[data-page="home"] .daily-news-meta{
+  color:#9fb0c9!important;
+}
+
+html body.app-page[data-page="home"] .daily-news-open{
+  color:#59b8ff!important;
+}
+
+html body.app-page[data-page="home"] .app-footer,
+html body.app-page[data-page="home"] .app-footer a{
+  color:#8496b5!important;
+}
+
+html body.app-page[data-page="home"] .app-dock{
+  border:1px solid rgba(95,145,225,.34)!important;
+  background:linear-gradient(145deg,rgba(10,23,46,.95),rgba(5,14,31,.92))!important;
+  box-shadow:0 18px 46px rgba(0,0,0,.48),0 0 26px rgba(45,104,225,.08),inset 0 1px 0 rgba(255,255,255,.045)!important;
+  backdrop-filter:blur(26px) saturate(140%)!important;
+  -webkit-backdrop-filter:blur(26px) saturate(140%)!important;
+}
+
+html body.app-page[data-page="home"] .app-dock-link{
+  color:#8ea0be!important;
+}
+
+html body.app-page[data-page="home"] .app-dock-link:hover{
+  color:#cfe4ff!important;
+}
+
+html body.app-page[data-page="home"] .app-dock-link.active{
+  color:#6bc3ff!important;
+}
+
+html body.app-page[data-page="home"] .app-dock-link.active i{
+  background:linear-gradient(145deg,#249cff,#155be8)!important;
+  color:#fff!important;
+  box-shadow:0 0 0 3px rgba(43,132,255,.10),0 8px 20px rgba(24,102,232,.38),0 0 22px rgba(43,132,255,.20)!important;
+}
+
+html body.app-page[data-page="home"] .pwa-install-card{
+  border-color:rgba(92,139,214,.30)!important;
+  background:rgba(7,18,38,.96)!important;
+  box-shadow:0 20px 50px rgba(0,0,0,.42)!important;
+}
+
+html body.app-page[data-page="home"] .pwa-install-card strong{color:#fff!important}
+html body.app-page[data-page="home"] .pwa-install-card small{color:#91a4c2!important}
+
+@media(max-width:600px){
+  html body.app-page[data-page="home"] .app-search-card,
+  html body.app-page[data-page="home"] .app-dashboard-card,
+  html body.app-page[data-page="home"] .app-panel,
+  html body.app-page[data-page="home"] .daily-news-home{border-radius:22px!important}
+
+  html body.app-page[data-page="home"] .app-dashboard-card .app-tool{
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 5px 14px rgba(0,0,0,.26)!important;
+  }
+
+  html body.app-page[data-page="home"] .app-card-head{margin-bottom:14px!important}
+}
+
+@media(max-width:390px){
+  html body.app-page[data-page="home"] .app-card-head{margin-bottom:12px!important}
+}
