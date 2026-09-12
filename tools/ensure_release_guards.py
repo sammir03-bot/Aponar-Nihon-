@@ -16,6 +16,9 @@ ACTIVITY_VERSION = "20260911.4"
 CV_ASSET_VERSION = "20260912.1"
 CV_CSS = f'<link rel="stylesheet" href="/assets/css/cv-builder-v6.css?v={CV_ASSET_VERSION}">'
 CV_JS = f'<script defer src="/assets/js/cv-builder-v6.js?v={CV_ASSET_VERSION}"></script>'
+REV_ASSET_VERSION = "20260912.1"
+REV_CSS = f'<link rel="stylesheet" href="/assets/css/full-revision-v2.css?v={REV_ASSET_VERSION}">'
+REV_JS = f'<script defer src="/assets/js/full-revision-v2.js?v={REV_ASSET_VERSION}"></script>'
 
 LEGACY_GUARD = '''
   <script id="legacy-origin-redirect">
@@ -124,6 +127,26 @@ def ensure_cv_builder_enhancer() -> bool:
     return True
 
 
+def ensure_full_revision_enhancer() -> bool:
+    path = ROOT / "jlpt-revision.html"
+    if not path.exists():
+        raise SystemExit("jlpt-revision.html is missing")
+    text = path.read_text(encoding="utf-8")
+    updated = text
+    if '/assets/css/full-revision-v2.css' not in updated:
+        if '</head>' not in updated.lower():
+            raise SystemExit("jlpt-revision.html has no </head>")
+        updated = re.sub(r'</head>', REV_CSS + '\n</head>', updated, count=1, flags=re.I)
+    if '/assets/js/full-revision-v2.js' not in updated:
+        if '</body>' not in updated.lower():
+            raise SystemExit("jlpt-revision.html has no </body>")
+        updated = re.sub(r'</body>', REV_JS + '\n</body>', updated, count=1, flags=re.I)
+    if updated == text:
+        return False
+    path.write_text(updated, encoding="utf-8", newline="\n")
+    return True
+
+
 def verify() -> None:
     failures: list[str] = []
     for path in sorted(ROOT.rglob("*.html")):
@@ -146,8 +169,9 @@ def verify() -> None:
         raise SystemExit("Home still contains legacy redirect-stub links")
     if f'/activity-tracker.js?v={ACTIVITY_VERSION}' not in home:
         raise SystemExit("Home activity tracker is not cache-busted")
-    if '/assets/css/cv-builder-v6.css' in home or '/assets/js/cv-builder-v6.js' in home:
-        raise SystemExit("CV-only enhancer leaked into Home")
+    for forbidden in ('/assets/css/cv-builder-v6.css','/assets/js/cv-builder-v6.js','/assets/css/full-revision-v2.css','/assets/js/full-revision-v2.js'):
+        if forbidden in home:
+            raise SystemExit(f"Section-only enhancer leaked into Home: {forbidden}")
 
     cv = (ROOT / "cv-builder.html").read_text(encoding="utf-8")
     for needle in (CV_CSS, CV_JS):
@@ -157,6 +181,14 @@ def verify() -> None:
         if not asset.exists() or asset.stat().st_size < 100:
             raise SystemExit(f"CV Builder asset missing or empty: {asset.relative_to(ROOT)}")
 
+    revision = (ROOT / "jlpt-revision.html").read_text(encoding="utf-8")
+    for needle in (REV_CSS, REV_JS):
+        if needle not in revision:
+            raise SystemExit(f"Full Revision enhancer missing: {needle}")
+    for asset in (ROOT / "assets/css/full-revision-v2.css", ROOT / "assets/js/full-revision-v2.js"):
+        if not asset.exists() or asset.stat().st_size < 1000:
+            raise SystemExit(f"Full Revision asset missing or empty: {asset.relative_to(ROOT)}")
+
 
 def main() -> int:
     guards = 0
@@ -165,8 +197,9 @@ def main() -> int:
             guards += 1
     home_changed = ensure_home_cards()
     cv_changed = ensure_cv_builder_enhancer()
+    revision_changed = ensure_full_revision_enhancer()
     verify()
-    print(f"Release repair complete: {guards} legacy guards injected; Home changed={home_changed}; CV enhanced={cv_changed}")
+    print(f"Release repair complete: {guards} legacy guards injected; Home changed={home_changed}; CV enhanced={cv_changed}; Full Revision enhanced={revision_changed}")
     return 0
 
 
