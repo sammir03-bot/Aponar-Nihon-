@@ -13,6 +13,9 @@ MARKER = 'id="legacy-origin-redirect"'
 LEGACY_HOST = "sammir03-bot.github.io"
 PRODUCTION_ORIGIN = "https://app.aponar-nihon.workers.dev"
 ACTIVITY_VERSION = "20260911.4"
+CV_ASSET_VERSION = "20260912.1"
+CV_CSS = f'<link rel="stylesheet" href="/assets/css/cv-builder-v6.css?v={CV_ASSET_VERSION}">'
+CV_JS = f'<script defer src="/assets/js/cv-builder-v6.js?v={CV_ASSET_VERSION}"></script>'
 
 LEGACY_GUARD = '''
   <script id="legacy-origin-redirect">
@@ -101,6 +104,26 @@ def ensure_home_cards() -> bool:
     return True
 
 
+def ensure_cv_builder_enhancer() -> bool:
+    path = ROOT / "cv-builder.html"
+    if not path.exists():
+        raise SystemExit("cv-builder.html is missing")
+    text = path.read_text(encoding="utf-8")
+    updated = text
+    if '/assets/css/cv-builder-v6.css' not in updated:
+        if '</head>' not in updated.lower():
+            raise SystemExit("cv-builder.html has no </head>")
+        updated = re.sub(r'</head>', CV_CSS + '\n</head>', updated, count=1, flags=re.I)
+    if '/assets/js/cv-builder-v6.js' not in updated:
+        if '</body>' not in updated.lower():
+            raise SystemExit("cv-builder.html has no </body>")
+        updated = re.sub(r'</body>', CV_JS + '\n</body>', updated, count=1, flags=re.I)
+    if updated == text:
+        return False
+    path.write_text(updated, encoding="utf-8", newline="\n")
+    return True
+
+
 def verify() -> None:
     failures: list[str] = []
     for path in sorted(ROOT.rglob("*.html")):
@@ -123,6 +146,16 @@ def verify() -> None:
         raise SystemExit("Home still contains legacy redirect-stub links")
     if f'/activity-tracker.js?v={ACTIVITY_VERSION}' not in home:
         raise SystemExit("Home activity tracker is not cache-busted")
+    if '/assets/css/cv-builder-v6.css' in home or '/assets/js/cv-builder-v6.js' in home:
+        raise SystemExit("CV-only enhancer leaked into Home")
+
+    cv = (ROOT / "cv-builder.html").read_text(encoding="utf-8")
+    for needle in (CV_CSS, CV_JS):
+        if needle not in cv:
+            raise SystemExit(f"CV Builder enhancer missing: {needle}")
+    for asset in (ROOT / "assets/css/cv-builder-v6.css", ROOT / "assets/js/cv-builder-v6.js"):
+        if not asset.exists() or asset.stat().st_size < 100:
+            raise SystemExit(f"CV Builder asset missing or empty: {asset.relative_to(ROOT)}")
 
 
 def main() -> int:
@@ -131,8 +164,9 @@ def main() -> int:
         if public_html(path) and ensure_legacy_guard(path):
             guards += 1
     home_changed = ensure_home_cards()
+    cv_changed = ensure_cv_builder_enhancer()
     verify()
-    print(f"Release repair complete: {guards} legacy guards injected; Home changed={home_changed}")
+    print(f"Release repair complete: {guards} legacy guards injected; Home changed={home_changed}; CV enhanced={cv_changed}")
     return 0
 
 
