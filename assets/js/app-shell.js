@@ -83,28 +83,43 @@
     if (!dock) return;
 
     var halal = dock.querySelector('[data-nav="halal"]');
-    if (!halal) {
-      halal = dock.querySelector('[data-nav="mock"]');
-      if (halal) {
-        halal.dataset.nav = "halal";
-        halal.href = "/halal-scanner.html";
-        halal.classList.add("app-dock-link--halal");
-        halal.innerHTML = '<i class="fa-solid fa-barcode" aria-hidden="true"></i><span></span>';
-      } else {
-        halal = document.createElement("a");
-        halal.className = "app-dock-link app-dock-link--halal";
-        halal.dataset.nav = "halal";
-        halal.href = "/halal-scanner.html";
-        halal.innerHTML = '<i class="fa-solid fa-barcode" aria-hidden="true"></i><span></span>';
-        dock.appendChild(halal);
-      }
+    var mock = dock.querySelector('[data-nav="mock"]');
+
+    // Halal Scanner stays available from the main sections, but is not part of the bottom dock.
+    if (halal && !mock) {
+      mock = halal;
+      mock.dataset.nav = "mock";
+      mock.href = "/mock-test.html";
+      mock.classList.remove("app-dock-link--halal");
+      mock.innerHTML = '<i class="fa-solid fa-clipboard-check" aria-hidden="true"></i><span>Mock Test</span>';
+    } else if (halal) {
+      halal.remove();
     }
 
-    halal.classList.add("app-dock-link--halal");
+    if (!mock) {
+      mock = document.createElement("a");
+      mock.className = "app-dock-link";
+      mock.dataset.nav = "mock";
+      mock.href = "/mock-test.html";
+      mock.innerHTML = '<i class="fa-solid fa-clipboard-check" aria-hidden="true"></i><span>Mock Test</span>';
+    }
+
     var tutor = dock.querySelector('[data-nav="tutor"]');
-    if (tutor && halal.nextElementSibling !== tutor) dock.insertBefore(halal, tutor);
-    var label = halal.querySelector("span");
-    if (label) label.textContent = halalCopy().nav;
+    if (!tutor) {
+      tutor = document.createElement("a");
+      tutor.className = "app-dock-link";
+      tutor.dataset.nav = "tutor";
+      tutor.href = "/tutor-section.html";
+      tutor.innerHTML = '<i class="fa-solid fa-robot" aria-hidden="true"></i><span>AI Tutor</span>';
+    }
+
+    var home = dock.querySelector('[data-nav="home"]');
+    var cv = dock.querySelector('[data-nav="cv"]');
+    var profile = dock.querySelector('[data-nav="profile"]');
+
+    [home, cv, tutor, mock, profile].forEach(function (item) {
+      if (item) dock.appendChild(item);
+    });
   }
 
   function ensureHalalScannerEntry() {
