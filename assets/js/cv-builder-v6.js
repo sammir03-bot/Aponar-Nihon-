@@ -53,7 +53,7 @@
     const step=document.querySelector('.step[data-form="0"]');
     if(!step||E('cvOutputPicker'))return;
     const grid=step.querySelector('.template-grid');
-    const html=`<div class="cv-v6-intro"><b>সহজভাবে করুন:</b> প্রথমে চাকরির ধরন বাছুন, তারপর নিচে CV-এর page format বাছুন। ২ পৃষ্ঠা সবচেয়ে নিরাপদ; Baito-এর জন্য সংক্ষিপ্ত ১ পৃষ্ঠাও ব্যবহার করা যাবে।</div>
+    const html=`<div class="cv-v6-intro"><b>সহজভাবে করুন:</b> চাকরির ধরন এবং CV-এর page format বেছে নিন। ২ পৃষ্ঠা সবচেয়ে নিরাপদ; Baito-এর জন্য সংক্ষিপ্ত ১ পৃষ্ঠাও ব্যবহার করা যাবে।</div>
       <div class="cv-output-title">PDF / Print format</div>
       <div class="cv-output-grid" id="cvOutputPicker">
         <button type="button" class="cv-output" data-output-format="a4-1"><span class="cv-output-icon"><i class="fa-solid fa-file"></i></span><strong>A4 · 1 Page</strong><small>アルバイト向け সহজ compact CV। তথ্য বেশি হলে 2 Page ব্যবহার করুন।</small></button>
@@ -122,7 +122,7 @@
     if(!['a4-1','a4-2','a3-1'].includes(format))format='a4-2';
     state.outputFormat=format;saveNow();
     document.querySelectorAll('[data-output-format]').forEach(b=>b.classList.toggle('active',b.dataset.outputFormat===format));
-    if(rerender){renderCompact();applyFormatPreview();}
+    if(rerender){renderCompact();preview(currentKind());}
   }
 
   function applyFormatPreview(kind=currentKind()){
