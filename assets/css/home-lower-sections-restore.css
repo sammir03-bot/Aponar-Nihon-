@@ -1,0 +1,76 @@
+/* Restore the original Home sections below the main tools grid while keeping the approved dark-neon visual language. */
+html body.app-page[data-page="home"] .app-home-duo{
+  display:grid!important;
+  grid-template-columns:1.12fr .88fr;
+  gap:16px!important;
+}
+
+html body.app-page[data-page="home"] .app-panel,
+html body.app-page[data-page="home"] .daily-news-home{
+  display:block!important;
+  border:1px solid rgba(87,144,236,.48)!important;
+  border-radius:24px!important;
+  background:linear-gradient(145deg,rgba(10,26,54,.97),rgba(4,15,33,.97))!important;
+  box-shadow:0 20px 48px rgba(0,0,0,.36),0 0 28px rgba(51,116,255,.09),inset 0 1px 0 rgba(255,255,255,.05)!important;
+  color:#f7fbff!important;
+  backdrop-filter:blur(18px) saturate(135%)!important;
+  -webkit-backdrop-filter:blur(18px) saturate(135%)!important;
+}
+
+html body.app-page[data-page="home"] .app-spotlight,
+html body.app-page[data-page="home"] .app-daily-card{
+  display:block!important;
+  border:1px solid rgba(87,144,236,.46)!important;
+  border-radius:24px!important;
+  box-shadow:0 18px 42px rgba(0,0,0,.34),0 0 24px rgba(53,116,255,.08)!important;
+}
+
+html body.app-page[data-page="home"] .app-daily-card{
+  background:linear-gradient(145deg,rgba(13,30,60,.98),rgba(5,17,38,.98))!important;
+  color:#f7fbff!important;
+}
+
+html body.app-page[data-page="home"] .app-panel h2,
+html body.app-page[data-page="home"] .app-panel h3,
+html body.app-page[data-page="home"] .daily-news-home h2,
+html body.app-page[data-page="home"] .daily-news-home h3{
+  color:#f8fbff!important;
+}
+
+html body.app-page[data-page="home"] .daily-news-card{
+  border:1px solid rgba(79,112,170,.42)!important;
+  background:linear-gradient(155deg,rgba(17,37,70,.96),rgba(5,17,37,.98))!important;
+  color:#f7fbff!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 8px 18px rgba(0,0,0,.24)!important;
+}
+
+html body.app-page[data-page="home"] .daily-news-card p,
+html body.app-page[data-page="home"] .daily-news-meta,
+html body.app-page[data-page="home"] .app-panel p,
+html body.app-page[data-page="home"] .app-panel small{
+  color:#9fb1ce!important;
+}
+
+html body.app-page[data-page="home"] .daily-news-open,
+html body.app-page[data-page="home"] .app-panel a{
+  color:#59c3ff!important;
+}
+
+html body.app-page[data-page="home"] .app-footer{
+  display:block!important;
+  color:#7f93b4!important;
+}
+html body.app-page[data-page="home"] .app-footer a{color:#91a7c8!important}
+
+@media(max-width:760px){
+  html body.app-page[data-page="home"] .app-home-duo{
+    grid-template-columns:1fr!important;
+    gap:14px!important;
+  }
+  html body.app-page[data-page="home"] .app-panel,
+  html body.app-page[data-page="home"] .daily-news-home,
+  html body.app-page[data-page="home"] .app-spotlight,
+  html body.app-page[data-page="home"] .app-daily-card{
+    border-radius:22px!important;
+  }
+}
