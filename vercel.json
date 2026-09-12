@@ -2,5 +2,27 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "buildCommand": "npm run build",
-  "outputDirectory": "_site"
+  "outputDirectory": "_site",
+  "redirects": [
+    {
+      "source": "/kanji-flashcards",
+      "destination": "/jlpt-revision",
+      "permanent": false
+    },
+    {
+      "source": "/kanji-flashcards.html",
+      "destination": "/jlpt-revision",
+      "permanent": false
+    },
+    {
+      "source": "/revision",
+      "destination": "/jlpt-revision?tab=revision",
+      "permanent": false
+    },
+    {
+      "source": "/revision.html",
+      "destination": "/jlpt-revision?tab=revision",
+      "permanent": false
+    }
+  ]
 }
