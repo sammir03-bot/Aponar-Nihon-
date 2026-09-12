@@ -1,0 +1,144 @@
+/* Final fidelity pass for the approved Home reference. 2026-09-12 */
+html body.app-page[data-page="home"]{
+  --ref-blue:#58a6ff;
+  --ref-blue-2:#1d73ff;
+  --ref-panel:rgba(8,22,48,.94);
+  --ref-card:rgba(10,26,52,.96);
+  background:
+    radial-gradient(circle at 93% 4%,rgba(106,74,255,.28),transparent 20rem),
+    radial-gradient(circle at 8% 12%,rgba(32,70,190,.25),transparent 26rem),
+    radial-gradient(circle at 7% 82%,rgba(79,42,187,.18),transparent 24rem),
+    linear-gradient(180deg,#020714 0%,#07132b 46%,#020714 100%)!important;
+}
+html body.app-page[data-page="home"]::before{
+  opacity:.9!important;
+  filter:saturate(1.25) contrast(1.03)!important;
+}
+html body.app-page[data-page="home"] .app-topbar{
+  background:linear-gradient(180deg,rgba(2,7,19,.98),rgba(4,10,25,.90))!important;
+  border-bottom:1px solid rgba(70,130,230,.10)!important;
+}
+html body.app-page[data-page="home"] .app-brand img{
+  border:2px solid rgba(89,151,255,.92)!important;
+  box-shadow:0 0 0 4px rgba(42,97,255,.15),0 0 32px rgba(52,123,255,.48)!important;
+}
+html body.app-page[data-page="home"] .app-brand-copy strong{
+  font-size:1.2rem!important;
+  letter-spacing:-.02em!important;
+}
+html body.app-page[data-page="home"] .app-brand-copy small::after{
+  color:#aebee0!important;
+  letter-spacing:.08em!important;
+}
+html body.app-page[data-page="home"] .app-search-row{
+  border-color:rgba(85,164,255,.92)!important;
+  background:linear-gradient(145deg,rgba(11,31,65,.98),rgba(4,16,38,.98))!important;
+  box-shadow:0 0 0 1px rgba(77,145,255,.18),0 0 34px rgba(38,113,255,.28),inset 0 1px 0 rgba(255,255,255,.08)!important;
+}
+html body.app-page[data-page="home"] .app-language-switch button.active{
+  background:linear-gradient(145deg,#2498ff,#1458e6)!important;
+  box-shadow:0 8px 22px rgba(24,99,232,.48),0 0 25px rgba(55,138,255,.34)!important;
+}
+html body.app-page[data-page="home"] .app-quick-row{
+  border-color:rgba(87,145,238,.58)!important;
+  background:linear-gradient(145deg,rgba(11,29,59,.97),rgba(5,17,38,.97))!important;
+  box-shadow:0 18px 40px rgba(0,0,0,.34),0 0 26px rgba(55,120,255,.10),inset 0 1px 0 rgba(255,255,255,.05)!important;
+}
+html body.app-page[data-page="home"] .app-dashboard-card{
+  border-color:rgba(87,144,236,.62)!important;
+  background:linear-gradient(145deg,rgba(10,26,54,.985),rgba(4,15,33,.985))!important;
+  box-shadow:0 24px 56px rgba(0,0,0,.42),0 0 34px rgba(51,116,255,.13),inset 0 1px 0 rgba(255,255,255,.055)!important;
+}
+html body.app-page[data-page="home"] .app-dashboard-card::before{
+  width:4px!important;
+  background:#47c8ff!important;
+  box-shadow:0 0 18px rgba(71,200,255,.9)!important;
+}
+html body.app-page[data-page="home"] .app-card-head h1{
+  font-size:1.38rem!important;
+  letter-spacing:-.02em!important;
+}
+html body.app-page[data-page="home"] .app-card-arrow{
+  border-color:rgba(63,153,255,.75)!important;
+  background:linear-gradient(145deg,rgba(11,43,88,.98),rgba(5,22,52,.98))!important;
+  box-shadow:0 0 26px rgba(42,129,255,.18),inset 0 1px 0 rgba(255,255,255,.05)!important;
+}
+html body.app-page[data-page="home"] .app-tools-grid{gap:10px!important}
+html body.app-page[data-page="home"] .app-dashboard-card .app-tool{
+  min-height:88px!important;
+  border-color:rgba(76,116,183,.48)!important;
+  background:linear-gradient(155deg,rgba(17,37,70,.98),rgba(5,17,37,.985))!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.04),0 8px 18px rgba(0,0,0,.30),0 0 12px rgba(44,105,224,.05)!important;
+}
+html body.app-page[data-page="home"] .app-dashboard-card .app-tool .app-tool-icon{
+  width:43px!important;height:43px!important;
+  border-radius:12px!important;
+  box-shadow:inset 0 1px 1px rgba(255,255,255,.28),0 7px 16px rgba(0,0,0,.34),0 0 18px rgba(70,137,255,.24)!important;
+}
+html body.app-page[data-page="home"] .app-dashboard-card .app-tool b{
+  color:#fff!important;
+  font-weight:950!important;
+  text-shadow:0 2px 8px rgba(0,0,0,.42)!important;
+}
+html body.app-page[data-page="home"] .app-dock{
+  border-color:rgba(82,151,255,.78)!important;
+  background:linear-gradient(145deg,rgba(9,27,60,.985),rgba(4,14,35,.985))!important;
+  box-shadow:0 18px 48px rgba(0,0,0,.55),0 0 36px rgba(49,112,255,.20),inset 0 1px 0 rgba(255,255,255,.06)!important;
+}
+html body.app-page[data-page="home"] .app-dock-link.active i{
+  background:linear-gradient(145deg,#28a4ff,#145be9)!important;
+  box-shadow:0 0 0 3px rgba(50,143,255,.16),0 8px 22px rgba(18,87,225,.52),0 0 30px rgba(50,143,255,.34)!important;
+}
+html body.app-page[data-page="home"] .app-main::before{
+  content:"A\A Brighter\A Future\A in Japan";
+  white-space:pre;
+  position:fixed;
+  right:9px;
+  top:178px;
+  z-index:-1;
+  color:rgba(205,220,255,.32);
+  font-family:cursive;
+  font-size:.72rem;
+  line-height:1.25;
+  transform:rotate(-5deg);
+  text-align:right;
+  text-shadow:0 0 18px rgba(82,132,255,.26);
+}
+html body.app-page[data-page="home"] .app-main::after{
+  content:"一歩ずつ\A夢へ";
+  white-space:pre;
+  position:fixed;
+  right:12px;
+  bottom:110px;
+  z-index:-1;
+  color:rgba(224,229,255,.38);
+  font-family:"Noto Sans JP",sans-serif;
+  font-size:.72rem;
+  line-height:1.25;
+  text-align:right;
+  text-shadow:0 0 18px rgba(92,115,255,.30);
+}
+@media(max-width:620px){
+  html body.app-page[data-page="home"] .app-topbar{height:78px!important}
+  html body.app-page[data-page="home"] .app-brand img{width:50px!important;height:50px!important;flex-basis:50px!important}
+  html body.app-page[data-page="home"] .app-brand-copy strong{font-size:1.06rem!important}
+  html body.app-page[data-page="home"] .app-main{width:min(100% - 16px,760px)!important;gap:14px!important;padding-top:13px!important}
+  html body.app-page[data-page="home"] .app-search-row{min-height:60px!important;border-radius:22px!important}
+  html body.app-page[data-page="home"] .app-quick-row{padding:13px 6px!important;border-radius:21px!important}
+  html body.app-page[data-page="home"] .app-dashboard-card{padding:18px 10px 16px!important;border-radius:24px!important}
+  html body.app-page[data-page="home"] .app-card-head{margin-bottom:13px!important}
+  html body.app-page[data-page="home"] .app-card-head h1{font-size:1.18rem!important}
+  html body.app-page[data-page="home"] .app-tools-grid{gap:6px!important}
+  html body.app-page[data-page="home"] .app-dashboard-card .app-tool{min-height:78px!important;padding:6px 2px!important;border-radius:14px!important}
+  html body.app-page[data-page="home"] .app-dashboard-card .app-tool .app-tool-icon{width:38px!important;height:38px!important}
+  html body.app-page[data-page="home"] .app-dashboard-card .app-tool b{font-size:.60rem!important}
+  html body.app-page[data-page="home"] .app-dock{min-height:76px!important;border-radius:25px!important}
+}
+@media(max-width:390px){
+  html body.app-page[data-page="home"] .app-main::before{display:none}
+  html body.app-page[data-page="home"] .app-dashboard-card{padding-inline:8px!important}
+  html body.app-page[data-page="home"] .app-tools-grid{gap:5px!important}
+  html body.app-page[data-page="home"] .app-dashboard-card .app-tool{min-height:74px!important}
+  html body.app-page[data-page="home"] .app-dashboard-card .app-tool .app-tool-icon{width:36px!important;height:36px!important}
+  html body.app-page[data-page="home"] .app-dashboard-card .app-tool b{font-size:.57rem!important}
+}
