@@ -36,10 +36,10 @@ LEGACY_GUARD = '''
   </script>'''
 
 HOME_CARDS = '''
-        <a class="app-tool app-tool-flashcards" href="/kanji-flashcards.html" data-kanji-flashcards-entry="1" data-label="Kanji Flashcards" data-search="kanji flashcards flash card n5 n4 n3 漢字 কাঞ্জি ফ্ল্যাশকার্ড review spaced repetition weak ভুল" data-search-icon="fa-layer-group">
+        <a class="app-tool app-tool-flashcards" href="/jlpt-revision#flash" data-kanji-flashcards-entry="1" data-label="Kanji Flashcards" data-search="kanji flashcards flash card n5 n4 n3 漢字 কাঞ্জি ফ্ল্যাশকার্ড review spaced repetition weak ভুল" data-search-icon="fa-layer-group">
           <span class="app-tool-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><b>Kanji Flashcards</b><small>N5 · N4 · N3 স্মার্ট রিভিউ</small>
         </a>
-        <a class="app-tool app-tool-revision" href="/revision.html" data-full-revision-entry="1" data-label="Full Revision" data-search="full revision jlpt n5 n4 n3 exam grammar vocabulary kanji reading listening mock quick weak রিভিশন পরীক্ষা" data-search-icon="fa-rotate">
+        <a class="app-tool app-tool-revision" href="/jlpt-revision#revision" data-full-revision-entry="1" data-label="Full Revision" data-search="full revision jlpt n5 n4 n3 exam grammar vocabulary kanji reading listening mock quick weak রিভিশন পরীক্ষা" data-search-icon="fa-rotate">
           <span class="app-tool-icon"><i class="fa-solid fa-rotate" aria-hidden="true"></i></span><b>Full Revision</b><small>পরীক্ষার আগে সব একসাথে</small>
         </a>
         <a class="app-tool app-tool-listening" href="/listening-lab.html" data-listening-lab-entry="1" data-label="Listening Lab" data-search="listening lab jlpt n5 n4 n3 audio listening শুনুন লিসিনিং furigana grammar weak exam" data-search-icon="fa-headphones">
@@ -70,11 +70,19 @@ def ensure_home_cards() -> bool:
     text = path.read_text(encoding="utf-8")
     updated = text
 
-    missing = all(href not in updated for href in (
-        'href="/kanji-flashcards.html"',
-        'href="/revision.html"',
+    old_to_new = {
+        'href="/kanji-flashcards.html"': 'href="/jlpt-revision#flash"',
+        'href="/revision.html"': 'href="/jlpt-revision#revision"',
+    }
+    for old, new in old_to_new.items():
+        updated = updated.replace(old, new)
+
+    required_hrefs = (
+        'href="/jlpt-revision#flash"',
+        'href="/jlpt-revision#revision"',
         'href="/listening-lab.html"',
-    ))
+    )
+    missing = all(href not in updated for href in required_hrefs)
     if missing:
         pattern = r'(<a class="app-tool" href="/n3\.html"[\s\S]*?</a>)'
         updated, count = re.subn(pattern, r"\1\n" + HOME_CARDS, updated, count=1)
@@ -108,9 +116,11 @@ def verify() -> None:
         raise SystemExit("Legacy guards still missing: " + ", ".join(failures[:20]))
 
     home = (ROOT / "index.html").read_text(encoding="utf-8")
-    for href in ("/kanji-flashcards.html", "/revision.html", "/listening-lab.html"):
+    for href in ("/jlpt-revision#flash", "/jlpt-revision#revision", "/listening-lab.html"):
         if f'href="{href}"' not in home:
             raise SystemExit(f"Home learning card missing: {href}")
+    if '/kanji-flashcards.html' in home or '/revision.html' in home:
+        raise SystemExit("Home still contains legacy redirect-stub links")
     if f'/activity-tracker.js?v={ACTIVITY_VERSION}' not in home:
         raise SystemExit("Home activity tracker is not cache-busted")
 
