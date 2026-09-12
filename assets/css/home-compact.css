@@ -1,0 +1,76 @@
+/* Aponar Nihon — compact Home section cards for mobile */
+
+@media (max-width:600px){
+  html body[data-page="home"] .app-tools-grid{
+    gap:7px!important;
+  }
+
+  html body[data-page="home"] .app-tool{
+    min-height:94px!important;
+    padding:7px 4px 7px!important;
+    border-radius:16px!important;
+    align-content:center!important;
+    justify-items:center!important;
+    row-gap:5px!important;
+  }
+
+  html body[data-page="home"] .app-tool-icon{
+    width:42px!important;
+    height:42px!important;
+    min-width:42px!important;
+    min-height:42px!important;
+    border-radius:13px!important;
+    font-size:.98rem!important;
+    margin:0 auto!important;
+    box-shadow:
+      inset 0 1px 1px rgba(255,255,255,.42),
+      0 6px 13px rgba(37,78,119,.14),
+      0 0 0 3px rgba(255,255,255,.30)!important;
+  }
+
+  html body[data-page="home"] .app-tool-icon strong{
+    font-size:1rem!important;
+    line-height:1!important;
+  }
+
+  html body[data-page="home"] .app-tool b{
+    margin-top:0!important;
+    font-size:.67rem!important;
+    line-height:1.12!important;
+  }
+
+  html body[data-page="home"] .app-tool small{
+    display:none!important;
+  }
+}
+
+@media (max-width:390px){
+  html body[data-page="home"] .app-tools-grid{
+    gap:6px!important;
+  }
+
+  html body[data-page="home"] .app-tool{
+    min-height:88px!important;
+    padding:6px 3px!important;
+    border-radius:15px!important;
+    row-gap:4px!important;
+  }
+
+  html body[data-page="home"] .app-tool-icon{
+    width:39px!important;
+    height:39px!important;
+    min-width:39px!important;
+    min-height:39px!important;
+    border-radius:12px!important;
+    font-size:.92rem!important;
+  }
+
+  html body[data-page="home"] .app-tool-icon strong{
+    font-size:.94rem!important;
+  }
+
+  html body[data-page="home"] .app-tool b{
+    font-size:.63rem!important;
+    line-height:1.1!important;
+  }
+}
