@@ -101,37 +101,37 @@
   }
 }
 
-/* Home section cards: shrink the empty glass area to match the smaller icons. */
+/* Home section cards: extra compact mobile height while keeping the same icons and 4-column structure. */
 @media(max-width:600px){
   body.app-page[data-page="home"] .app-dashboard-card .app-tools-grid{
-    gap:7px!important;
+    gap:5px!important;
   }
   body.app-page[data-page="home"] .app-dashboard-card .app-tool{
-    min-height:94px!important;
-    padding:7px 4px 7px!important;
-    border-radius:16px!important;
+    min-height:82px!important;
+    padding:5px 3px 5px!important;
+    border-radius:15px!important;
     align-content:center!important;
-    row-gap:5px!important;
+    row-gap:3px!important;
   }
   body.app-page[data-page="home"] .app-dashboard-card .app-tool b{
     margin-top:0!important;
-    font-size:.67rem!important;
-    line-height:1.12!important;
+    font-size:.66rem!important;
+    line-height:1.08!important;
   }
 }
 
 @media(max-width:390px){
   body.app-page[data-page="home"] .app-dashboard-card .app-tools-grid{
-    gap:6px!important;
+    gap:4px!important;
   }
   body.app-page[data-page="home"] .app-dashboard-card .app-tool{
-    min-height:88px!important;
-    padding:6px 3px!important;
-    border-radius:15px!important;
-    row-gap:4px!important;
+    min-height:76px!important;
+    padding:4px 2px!important;
+    border-radius:14px!important;
+    row-gap:2px!important;
   }
   body.app-page[data-page="home"] .app-dashboard-card .app-tool b{
-    font-size:.63rem!important;
-    line-height:1.1!important;
+    font-size:.62rem!important;
+    line-height:1.06!important;
   }
 }
