@@ -74,3 +74,29 @@
 .news-reader-figure{margin:18px 0}
 .news-reader-figure .news-photo{max-height:380px;border-radius:16px}
 .news-reader-figure figcaption{margin-top:7px;font-size:.75rem;color:#53667a}
+
+/* Home section icons: keep the glass cards unchanged, only make the colored icon square more compact. */
+@media(max-width:600px){
+  body.app-page[data-page="home"] .app-dashboard-card .app-tool .app-tool-icon{
+    width:44px!important;
+    height:44px!important;
+    border-radius:13px!important;
+    font-size:.98rem!important;
+    box-shadow:inset 0 1px 2px rgba(255,255,255,.42),inset 0 -5px 12px rgba(0,0,0,.06),0 7px 15px rgba(37,78,119,.15),0 0 0 3px rgba(255,255,255,.28)!important;
+  }
+  body.app-page[data-page="home"] .app-dashboard-card .app-tool .app-tool-icon strong{
+    font-size:1rem!important;
+  }
+}
+
+@media(max-width:390px){
+  body.app-page[data-page="home"] .app-dashboard-card .app-tool .app-tool-icon{
+    width:40px!important;
+    height:40px!important;
+    border-radius:12px!important;
+    font-size:.9rem!important;
+  }
+  body.app-page[data-page="home"] .app-dashboard-card .app-tool .app-tool-icon strong{
+    font-size:.92rem!important;
+  }
+}
