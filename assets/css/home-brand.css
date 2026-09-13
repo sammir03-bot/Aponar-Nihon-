@@ -104,6 +104,65 @@ html body.app-page[data-page="home"] .app-brand::after{
     height:38px!important;
     border-radius:12px!important;
   }
+
+  /* The two marked blocks: keep the same premium look, use less height. */
+  html body.app-page[data-page="home"] .app-search-card{
+    padding:0!important;
+  }
+  html body.app-page[data-page="home"] .app-search-row{
+    min-height:56px!important;
+    height:56px!important;
+    padding:5px 8px!important;
+    gap:7px!important;
+    border-radius:20px!important;
+  }
+  html body.app-page[data-page="home"] .app-search-symbol{
+    font-size:1.22rem!important;
+  }
+  html body.app-page[data-page="home"] .app-search-input-wrap{
+    height:44px!important;
+    min-height:44px!important;
+    padding:0 9px!important;
+    gap:8px!important;
+    border-radius:14px!important;
+  }
+  html body.app-page[data-page="home"] .app-search-input{
+    font-size:.84rem!important;
+  }
+  html body.app-page[data-page="home"] .app-language-switch{
+    margin-right:4px!important;
+    min-height:44px!important;
+    height:44px!important;
+    border-radius:13px!important;
+  }
+  html body.app-page[data-page="home"] .app-language-switch button,
+  html body.app-page[data-page="home"] .home-search-lang-toggle button,
+  html body.app-page[data-page="home"] .home-search-lang-toggle .aponar-language-button{
+    width:auto!important;
+    min-width:42px!important;
+    height:44px!important;
+    min-height:44px!important;
+    padding:0 9px!important;
+    border-radius:12px!important;
+  }
+  html body.app-page[data-page="home"] .app-quick-row{
+    min-height:0!important;
+    margin-top:9px!important;
+    padding:7px 5px!important;
+    border-radius:20px!important;
+  }
+  html body.app-page[data-page="home"] .app-quick-item{
+    min-height:60px!important;
+    padding:3px 2px!important;
+    gap:3px!important;
+  }
+  html body.app-page[data-page="home"] .app-quick-item i{
+    font-size:1.14rem!important;
+  }
+  html body.app-page[data-page="home"] .app-quick-item span::after{
+    font-size:.67rem!important;
+    line-height:1.14!important;
+  }
 }
 
 @media(max-width:370px){
@@ -116,4 +175,29 @@ html body.app-page[data-page="home"] .app-brand::after{
   html body.app-page[data-page="home"] .app-brand img{width:40px!important;height:40px!important;flex-basis:40px!important}
   html body.app-page[data-page="home"] .app-icon-button,
   html body.app-page[data-page="home"] .aponar-language-button{width:35px!important;min-width:35px!important;height:35px!important}
+
+  html body.app-page[data-page="home"] .app-search-row{
+    min-height:52px!important;
+    height:52px!important;
+    padding:4px 6px!important;
+  }
+  html body.app-page[data-page="home"] .app-search-input-wrap{
+    height:42px!important;
+    min-height:42px!important;
+    padding:0 8px!important;
+  }
+  html body.app-page[data-page="home"] .app-language-switch,
+  html body.app-page[data-page="home"] .app-language-switch button,
+  html body.app-page[data-page="home"] .home-search-lang-toggle button,
+  html body.app-page[data-page="home"] .home-search-lang-toggle .aponar-language-button{
+    height:42px!important;
+    min-height:42px!important;
+  }
+  html body.app-page[data-page="home"] .app-quick-row{
+    margin-top:7px!important;
+    padding:5px 4px!important;
+  }
+  html body.app-page[data-page="home"] .app-quick-item{
+    min-height:56px!important;
+  }
 }
