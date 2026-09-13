@@ -10,12 +10,15 @@
   dark-neon reference remains the final visual authority on Home.
 */
 
-/* Header brand readability fix: keep both the Bengali brand name and
-   JAPANESE LEARNING HUB visible on narrow mobile screens. */
+/* Compact Home header: keep the Bengali brand name + JAPANESE LEARNING HUB
+   visible while reducing the large empty dark area on phones. */
 html body.app-page[data-page="home"] .app-topbar{
-  height:86px!important;
+  height:76px!important;
+  min-height:76px!important;
 }
 html body.app-page[data-page="home"] .app-topbar-inner{
+  height:100%!important;
+  min-height:0!important;
   align-items:center!important;
   overflow:visible!important;
 }
@@ -25,7 +28,7 @@ html body.app-page[data-page="home"] .app-brand{
   position:relative!important;
   display:flex!important;
   align-items:center!important;
-  gap:9px!important;
+  gap:8px!important;
 }
 html body.app-page[data-page="home"] .app-brand-copy{
   min-width:0!important;
@@ -33,17 +36,17 @@ html body.app-page[data-page="home"] .app-brand-copy{
   display:flex!important;
   flex-direction:column!important;
   justify-content:center!important;
-  gap:2px!important;
-  line-height:1.05!important;
+  gap:1px!important;
+  line-height:1.02!important;
 }
 html body.app-page[data-page="home"] .app-brand-copy strong{
   display:block!important;
   overflow:visible!important;
   max-width:none!important;
   color:#fff!important;
-  font-size:1.08rem!important;
+  font-size:1.04rem!important;
   font-weight:950!important;
-  line-height:1.18!important;
+  line-height:1.12!important;
   letter-spacing:-.018em!important;
   text-overflow:clip!important;
   white-space:nowrap!important;
@@ -57,10 +60,10 @@ html body.app-page[data-page="home"] .app-brand-copy small{
   margin-top:1px!important;
   color:#9fb2d6!important;
   font-family:Inter,system-ui,sans-serif!important;
-  font-size:.50rem!important;
+  font-size:.47rem!important;
   font-weight:800!important;
-  line-height:1.1!important;
-  letter-spacing:.055em!important;
+  line-height:1.05!important;
+  letter-spacing:.045em!important;
   text-overflow:clip!important;
   white-space:nowrap!important;
 }
@@ -74,36 +77,43 @@ html body.app-page[data-page="home"] .app-brand::after{
 }
 
 @media(max-width:430px){
-  html body.app-page[data-page="home"] .app-topbar{height:82px!important}
+  html body.app-page[data-page="home"] .app-topbar{
+    height:70px!important;
+    min-height:70px!important;
+  }
   html body.app-page[data-page="home"] .app-brand{gap:7px!important}
   html body.app-page[data-page="home"] .app-brand img{
-    width:48px!important;
-    height:48px!important;
-    flex-basis:48px!important;
+    width:43px!important;
+    height:43px!important;
+    flex-basis:43px!important;
   }
   html body.app-page[data-page="home"] .app-brand-copy strong{
-    font-size:1rem!important;
+    font-size:.96rem!important;
   }
   html body.app-page[data-page="home"] .app-brand-copy small{
-    font-size:.44rem!important;
-    letter-spacing:.035em!important;
+    font-size:.40rem!important;
+    letter-spacing:.025em!important;
   }
   html body.app-page[data-page="home"] .app-top-actions{
-    gap:5px!important;
+    gap:4px!important;
   }
   html body.app-page[data-page="home"] .app-icon-button,
   html body.app-page[data-page="home"] .aponar-language-button{
-    width:40px!important;
-    min-width:40px!important;
-    height:40px!important;
-    border-radius:13px!important;
+    width:38px!important;
+    min-width:38px!important;
+    height:38px!important;
+    border-radius:12px!important;
   }
 }
 
 @media(max-width:370px){
-  html body.app-page[data-page="home"] .app-brand-copy strong{font-size:.92rem!important}
-  html body.app-page[data-page="home"] .app-brand-copy small{font-size:.40rem!important;letter-spacing:.02em!important}
-  html body.app-page[data-page="home"] .app-brand img{width:44px!important;height:44px!important;flex-basis:44px!important}
+  html body.app-page[data-page="home"] .app-topbar{
+    height:68px!important;
+    min-height:68px!important;
+  }
+  html body.app-page[data-page="home"] .app-brand-copy strong{font-size:.89rem!important}
+  html body.app-page[data-page="home"] .app-brand-copy small{font-size:.37rem!important;letter-spacing:.01em!important}
+  html body.app-page[data-page="home"] .app-brand img{width:40px!important;height:40px!important;flex-basis:40px!important}
   html body.app-page[data-page="home"] .app-icon-button,
-  html body.app-page[data-page="home"] .aponar-language-button{width:37px!important;min-width:37px!important;height:37px!important}
+  html body.app-page[data-page="home"] .aponar-language-button{width:35px!important;min-width:35px!important;height:35px!important}
 }
