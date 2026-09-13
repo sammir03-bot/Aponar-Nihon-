@@ -2,9 +2,10 @@
 @import url('/assets/css/home-reference-exact.css?v=20260912.2');
 @import url('/assets/css/home-reference-final.css?v=20260912.2');
 @import url('/assets/css/home-lower-sections-restore.css?v=20260912.2');
+@import url('/assets/css/home-dock-compact.css?v=20260913.1');
 
 /*
-  Home design is intentionally controlled by the four layers above.
+  Home design is intentionally controlled by the layers above.
   Keep this file free from light-theme fallback rules so the approved
   dark-neon reference remains the final visual authority on Home.
 */
