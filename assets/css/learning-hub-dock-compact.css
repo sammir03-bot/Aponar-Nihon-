@@ -1,0 +1,87 @@
+/* Compact dark bottom navigation for JLPT learning hub pages. */
+body.learning-hub-page{
+  padding-bottom:calc(82px + env(safe-area-inset-bottom,0px))!important;
+}
+body.learning-hub-page .app-dock-wrap{
+  left:0!important;
+  right:0!important;
+  bottom:0!important;
+  z-index:95!important;
+  padding:6px 12px calc(6px + env(safe-area-inset-bottom,0px))!important;
+  background:linear-gradient(180deg,rgba(5,9,22,0) 0%,rgba(5,9,22,.82) 34%,#050916 100%)!important;
+  pointer-events:none!important;
+}
+body.learning-hub-page .app-dock{
+  width:min(660px,100%)!important;
+  min-height:60px!important;
+  margin-inline:auto!important;
+  border:1px solid rgba(76,139,236,.58)!important;
+  border-radius:22px!important;
+  background:linear-gradient(145deg,rgba(8,24,50,.98),rgba(4,14,31,.98))!important;
+  box-shadow:0 14px 34px rgba(0,0,0,.44),0 0 22px rgba(47,111,246,.10),inset 0 1px 0 rgba(255,255,255,.04)!important;
+  backdrop-filter:blur(22px) saturate(145%)!important;
+  -webkit-backdrop-filter:blur(22px) saturate(145%)!important;
+  pointer-events:auto!important;
+}
+body.learning-hub-page .app-dock-link{
+  min-width:0!important;
+  min-height:54px!important;
+  display:grid!important;
+  place-items:center!important;
+  align-content:center!important;
+  gap:2px!important;
+  padding:4px 2px!important;
+  border-radius:16px!important;
+  background:transparent!important;
+  color:#91a4c5!important;
+  box-shadow:none!important;
+  font-size:.58rem!important;
+  font-weight:850!important;
+}
+body.learning-hub-page .app-dock-link i{
+  width:38px!important;
+  height:32px!important;
+  display:grid!important;
+  place-items:center!important;
+  border-radius:12px!important;
+  background:transparent!important;
+  color:#a9b9d3!important;
+  box-shadow:none!important;
+  font-size:1.08rem!important;
+}
+body.learning-hub-page .app-dock-link.active{
+  background:transparent!important;
+  color:#6bc7ff!important;
+  box-shadow:none!important;
+}
+body.learning-hub-page .app-dock-link.active i{
+  background:linear-gradient(145deg,#279cff,#1559e8)!important;
+  color:#fff!important;
+  box-shadow:0 7px 16px rgba(25,107,235,.34),0 0 18px rgba(44,136,255,.20)!important;
+}
+body.learning-hub-page .app-dock-link:hover{
+  background:transparent!important;
+  color:#d7e8ff!important;
+}
+@media(max-width:480px){
+  body.learning-hub-page{
+    padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))!important;
+  }
+  body.learning-hub-page .app-dock-wrap{
+    padding:5px 10px calc(5px + env(safe-area-inset-bottom,0px))!important;
+  }
+  body.learning-hub-page .app-dock{
+    min-height:56px!important;
+    border-radius:20px!important;
+  }
+  body.learning-hub-page .app-dock-link{
+    min-height:50px!important;
+    padding:3px 1px!important;
+    font-size:.54rem!important;
+  }
+  body.learning-hub-page .app-dock-link i{
+    width:35px!important;
+    height:30px!important;
+    font-size:1rem!important;
+  }
+}
