@@ -1,0 +1,79 @@
+name: Add N3 QUARTET eBook
+
+on:
+  push:
+    paths:
+      - '.github/workflows/add-n3-quartet-ebook.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Add QUARTET eBook card after Matome
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          p = Path('n3.html')
+          s = p.read_text(encoding='utf-8')
+
+          if 'data-track="quartet-ebook"' not in s:
+              needle = 'data-track="matome"'
+              pos = s.find(needle)
+              if pos < 0:
+                  raise SystemExit('Matome card not found')
+              end = s.find('</a>', pos)
+              if end < 0:
+                  raise SystemExit('Matome card closing tag not found')
+              end += len('</a>')
+
+              card = '''
+        <a class="lh-resource-card" data-track="quartet-ebook" href="/n3-quartet-ebook.html" style="--card-accent:#2dd4bf"><div class="lh-card-top"><span class="lh-resource-icon"><i class="fa-solid fa-book-open-reader"></i></span><span class="lh-card-status" id="quartetEbookStatus">১৩৫ পৃষ্ঠা</span></div><span class="lh-card-kicker">E-BOOK · QUARTET I</span><h3>QUARTET I বাংলা Interactive eBook</h3><p>ফুরিগানা, বাংলা ব্যাখ্যা, ১৩৫ reader page, menu, search, bookmark, page jump ও saved progress—N3 study companion।</p><div class="lh-card-tags"><span>135 Pages</span><span>Furigana</span><span>বাংলা</span></div><span class="lh-card-action" id="quartetEbookAction">eBook খুলুন <i class="fa-solid fa-arrow-right"></i></span></a>'''
+              s = s[:end] + card + s[end:]
+
+          if 'id="quartet-ebook-progress-sync"' not in s:
+              progress_script = '''
+  <script id="quartet-ebook-progress-sync">
+  (function(){
+    function syncQuartetEbook(){
+      try{
+        var status=document.getElementById('quartetEbookStatus');
+        var action=document.getElementById('quartetEbookAction');
+        if(!status)return;
+        var saved=Number(localStorage.getItem('quartetPage')||0);
+        var page=Math.max(1,Math.min(135,saved+1));
+        var pct=Math.round(page/135*100);
+        status.textContent='পৃষ্ঠা '+page+'/135 · '+pct+'%';
+        if(action&&page>1)action.innerHTML='পড়া চালিয়ে যান <i class="fa-solid fa-arrow-right"></i>';
+      }catch(_){ }
+    }
+    if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',syncQuartetEbook,{once:true});else syncQuartetEbook();
+    setTimeout(syncQuartetEbook,300);
+    window.addEventListener('storage',function(e){if(e.key==='quartetPage')syncQuartetEbook();});
+  })();
+  </script>
+'''
+              s = s.replace('</body>', progress_script + '</body>', 1)
+
+          p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Commit N3 integration
+        run: |
+          if git diff --quiet; then
+            echo "No changes needed"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add n3.html
+          git commit -m "Add QUARTET eBook under N3 Matome"
+          git push
