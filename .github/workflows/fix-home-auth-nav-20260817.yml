@@ -1,4 +1,5 @@
 name: Fix home auth menu
+# Keep this workflow as the deployment-safe repair for both current and legacy home shells.
 
 on:
   push:
