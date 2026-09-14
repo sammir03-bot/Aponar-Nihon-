@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="bn" dir="ltr" data-language-preset="bn" data-source-language="bn">
+<head>
+<meta charset="utf-8">
+  <script id="legacy-origin-redirect">
+  (function(){
+    var h = location.hostname;
+    if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
+    var p = location.pathname || "/";
+    if (h === "sammir03-bot.github.io") {
+      var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
+      for (var i = 0; i < bases.length; i++) {
+        var base = bases[i];
+        if (p === base || p === base + "/") { p = "/"; break; }
+        if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+      }
+    }
+    if (p === "/index.html") p = "/";
+    else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+    else if (p.endsWith(".html")) p = p.slice(0, -5);
+    location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
+  })();
+  </script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="QUARTET Ⅰ-এর মূল গ্রামার সূচির ৫৫টি বিষয়ে নিজস্ব বাংলা ব্যাখ্যা, ফুরিগানাসহ উদাহরণ ও অনুশীলন।">
+<title>QUARTET I · N3 Grammar | আপনার নিহোন</title>
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n3-quartet-grammar">
+<link rel="icon" href="/logo.png" type="image/png">
+<meta name="theme-color" content="#101521">
+<link rel="stylesheet" href="/assets/css/n3-quartet.css?v=20260914.1">
+</head>
+<body>
+<a class="skip-link" href="#panel">পাঠে যান</a>
+<div class="app" id="app">
+<nav class="site-nav" aria-label="পথ নির্দেশনা"><a href="/n3.html#course"><img src="/logo.png" alt="" width="32" height="32">আপনার নিহোন · N3</a><span aria-hidden="true">/</span><a href="/n3-grammar.html">Grammar</a></nav>
+ <header class="masthead"><div><div class="brand">আপনার নিহোন · N3 Grammar</div><h1>QUARTET Ⅰ</h1></div><div class="counter">৬ অধ্যায় · ৫৫টি বিষয় · ১১০টি উদাহরণ</div></header>
+ <p class="course-intro">৬ অধ্যায়ে ৫৫টি গ্রামার: বাংলা ব্যাখ্যা, Form, ফুরিগানাসহ ১১০টি নিজস্ব উদাহরণ ও ৫৫টি অনুশীলন।</p>
+ <div class="course-progress"><progress id="course-progress" max="55" value="0" aria-label="গ্রামার শেখার অগ্রগতি"></progress><span id="progress-text">০ / ৫৫টি শেখা</span><span class="small muted">অগ্রগতি ও অনুশীলনের উত্তর এই ব্রাউজারে মনে থাকবে।</span></div>
+ <div class="loading" id="loading" role="status"><p id="load-message">পাঠগুলো প্রস্তুত হচ্ছে…</p><button class="btn" id="load-retry" type="button" hidden>আবার চেষ্টা করুন</button></div>
+ <div class="workspace" id="study-workspace" hidden>
+  <aside class="sidebar" aria-label="পাঠ নির্বাচন">
+   <div><label for="chapter-select">অধ্যায় বেছে নিন</label><select id="chapter-select" class="select"></select></div>
+   <div class="mobile-topic"><label for="lesson-select">গ্রামার বেছে নিন</label><select id="lesson-select" class="select"></select></div>
+   <nav class="lesson-list" id="lesson-list" aria-label="এই অধ্যায়ের গ্রামার"></nav>
+  </aside>
+  <main class="main">
+   <div class="tabs" role="tablist" aria-label="পড়ার ধরন"><button class="tab" id="tab-lesson" role="tab" aria-controls="panel" aria-selected="true" tabindex="0" data-tab="lesson">পাঠ</button><button class="tab" id="tab-quiz" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-tab="quiz">অনুশীলন</button><button class="tab" id="tab-revision" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-tab="revision">রিভিশন</button></div>
+   <div id="announce" class="sr-only" role="status" aria-live="polite"></div>
+   <section id="panel" tabindex="0" role="tabpanel" aria-labelledby="tab-lesson"></section>
+   <details class="form-guide"><summary>Form বুঝতে অসুবিধা হচ্ছে? এখানে দেখুন</summary><div id="form-guide"></div></details>
+  </main>
+ </div>
+ <footer class="footer">স্বতন্ত্র বাংলা সহায়ক নোট। গ্রামারের বিষয় ও পৃষ্ঠা মূল বইয়ের সঙ্গে মিলিয়ে দেওয়া হয়েছে; ব্যাখ্যা, উদাহরণ ও অনুশীলন নতুনভাবে লেখা। <a href="https://quartet.japantimes.co.jp/about/" target="_blank" rel="noopener noreferrer">মূল বইয়ের তথ্য</a></footer>
+</div>
+<noscript><p class="fallback">পাঠ ও অনুশীলন খুলতে JavaScript চালু করুন। <a href="/n3-grammar.html">N3 Grammar পড়ুন</a></p></noscript>
+<script defer src="/assets/js/n3-quartet.js?v=20260914.1"></script>
+</body>
+</html>
