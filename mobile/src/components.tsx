@@ -8,7 +8,7 @@ import type { Feature } from './registry';
 
 export function Screen({ children, scroll = true }: { children: React.ReactNode; scroll?: boolean }) {
   const content = <View style={styles.screenInner}>{children}</View>;
-  return <SafeAreaView style={styles.safe}>{scroll ? <ScrollView contentContainerStyle={styles.scroll}>{content}</ScrollView> : content}</SafeAreaView>;
+  return <SafeAreaView style={styles.safe}>{scroll ? <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>{content}</ScrollView> : content}</SafeAreaView>;
 }
 
 export function SectionTitle({ title, subtitle }: { title: string; subtitle?: string }) {
@@ -57,7 +57,7 @@ export function NativeContent({ blocks, sourcePath }: { blocks: ContentBlock[]; 
 
 const styles = StyleSheet.create({
   safe: { flex: 1, backgroundColor: colors.bg },
-  scroll: { paddingBottom: 44 },
+  scroll: { paddingBottom: 112 },
   screenInner: { flex: 1, padding: space.md, gap: space.lg },
   sectionTitle: { color: colors.text, fontSize: 22, fontWeight: '800' },
   muted: { color: colors.muted, fontSize: 14, lineHeight: 20 },
