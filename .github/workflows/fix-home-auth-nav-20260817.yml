@@ -1,4 +1,4 @@
-name: Fix home auth and bottom nav
+name: Fix home auth menu
 
 on:
   push:
@@ -17,44 +17,22 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Patch homepage and service worker
+      - name: Enable auth-aware home menu
         run: |
           python - <<'PY'
           from pathlib import Path
 
           p = Path('index.html')
           s = p.read_text(encoding='utf-8')
+          script = '<script defer src="/home-auth-menu.js?v=20260914.1"></script>'
 
-          replacements = [
-            (
-              '<a href="#n5" class="app-nav-link" data-nav="jlpt" aria-label="লার্নিং">\n            <span class="app-nav-icon"><i class="fa-solid fa-book-open"></i></span>\n            <span class="app-nav-label">Learning</span>\n        </a>',
-              '<a href="/cv-builder.html" class="app-nav-link" data-nav="jlpt" aria-label="CV Builder">\n            <span class="app-nav-icon"><i class="fa-solid fa-file-signature"></i></span>\n            <span class="app-nav-label">CV BUILDER</span>\n        </a>'
-            ),
-            (
-              '<a href="#quiz" class="app-nav-link" data-nav="quiz" aria-label="টেস্ট">\n            <span class="app-nav-icon"><i class="fa-solid fa-clipboard-check"></i></span>\n            <span class="app-nav-label">Test</span>\n        </a>',
-              '<a href="/mock-test.html" class="app-nav-link" data-nav="quiz" aria-label="Mock Test">\n            <span class="app-nav-icon"><i class="fa-solid fa-clipboard-check"></i></span>\n            <span class="app-nav-label">Mock Test</span>\n        </a>'
-            ),
-            (
-              '<a href="#japan-start" class="app-nav-link" data-nav="japan" aria-label="জাপান গাইড">\n            <span class="app-nav-icon"><i class="fa-solid fa-torii-gate"></i></span>\n            <span class="app-nav-label">Japan</span>\n        </a>',
-              '<a href="/profile.html" class="app-nav-link" data-nav="japan" aria-label="Profile">\n            <span class="app-nav-icon"><i class="fa-solid fa-circle-user"></i></span>\n            <span class="app-nav-label">Profile</span>\n        </a>'
-            ),
-            ('<script src="/account-widget.js"></script>', '<script src="/account-widget.js?v=20260817-3"></script>'),
-          ]
-
-          changed = False
-          for old, new in replacements:
-            if old in s:
-              s = s.replace(old, new)
-              changed = True
-          if changed:
-            p.write_text(s, encoding='utf-8')
-
-          sw = Path('sw.js')
-          w = sw.read_text(encoding='utf-8')
-          w2 = w.replace('aponar-nihon-static-v19', 'aponar-nihon-static-v20')\
-                .replace('aponar-nihon-dynamic-v19', 'aponar-nihon-dynamic-v20')
-          if w2 != w:
-            sw.write_text(w2, encoding='utf-8')
+          if script not in s:
+              marker = '<script defer src="/assets/js/app-shell.js?v=20260831.3"></script>'
+              if marker in s:
+                  s = s.replace(marker, script + '\n  ' + marker, 1)
+              else:
+                  s = s.replace('</body>', '  ' + script + '\n</body>', 1)
+              p.write_text(s, encoding='utf-8')
           PY
 
       - name: Commit repair
@@ -65,6 +43,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html sw.js
-          git commit -m "Fix duplicated auth controls and bottom nav"
+          git add index.html
+          git commit -m "Show menu button after login on home"
           git push
