@@ -1,5 +1,5 @@
-const STATIC_CACHE = "aponar-nihon-static-v35";
-const DYNAMIC_CACHE = "aponar-nihon-dynamic-v35";
+const STATIC_CACHE = "aponar-nihon-static-v36";
+const DYNAMIC_CACHE = "aponar-nihon-dynamic-v36";
 
 const STATIC_ASSETS = [
   "/",
@@ -45,6 +45,7 @@ const STATIC_ASSETS = [
   "/supabase-config.js",
   "/account.js",
   "/account-widget.js",
+  "/home-auth-menu.js",
   "/activity-tracker.js",
   "/cv-jis-format.css",
   "/cv-jis-format.js",
