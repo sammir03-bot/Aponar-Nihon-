@@ -1,5 +1,6 @@
 name: Add N3 QUARTET eBook
 
+# Integrates the interactive QUARTET reader into the N3 grammar hub.
 on:
   push:
     paths:
