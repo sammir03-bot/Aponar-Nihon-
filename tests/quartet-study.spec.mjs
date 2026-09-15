@@ -15,7 +15,7 @@ test('QUARTET study guide opens from N3 with translated practice texts and mobil
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   }
   await page.getByLabel('অধ্যায় বেছে নিন').selectOption('3');
-  await page.locator('#guide-3').getByRole('link', { name: 'Reading Lab', exact: true }).click();
+  await page.locator('#guide-3').getByRole('link', { name: /^Reading Lab/ }).click();
   await expect(page).toHaveURL(/#guide-3-part-6$/);
   await expect(page.locator('#guide-3 .sentence-note')).toHaveCount(4);
   expect(await page.locator('#guide-3 .sentence .jp ruby rt').count()).toBeGreaterThan(0);
