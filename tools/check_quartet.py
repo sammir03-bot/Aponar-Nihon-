@@ -2,6 +2,8 @@
 """Check the original QUARTET companion and its additive site integration."""
 import json
 import re
+from collections import Counter
+from html.parser import HTMLParser
 from pathlib import Path
 
 from compare_visible_content import preserves_visible_text
@@ -45,4 +47,43 @@ assert not preserves_visible_text(base, base.replace('First lesson', 'Changed le
 assert not preserves_visible_text(base, base.replace('<p>First lesson</p>', ''))
 assert not preserves_visible_text(base, '<h1>Grammar</h1><p>Second lesson</p><p>First lesson</p>')
 assert not preserves_visible_text('<p>A</p><p>A</p>', '<p>A</p>')
+
+
+class StudyGuideAudit(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.stack = []
+        self.classes = Counter()
+        self.ids = set()
+        self.anchors = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        self.classes.update(attrs.get('class', '').split())
+        if 'id' in attrs:
+            assert attrs['id'] not in self.ids, attrs['id']
+            self.ids.add(attrs['id'])
+        if attrs.get('href', '').startswith('#'):
+            self.anchors.append(attrs['href'][1:])
+        if tag not in {'br', 'hr', 'img', 'input', 'link', 'meta', 'wbr'}:
+            self.stack.append(tag)
+
+    def handle_endtag(self, tag):
+        if tag in self.stack:
+            self.stack = self.stack[:len(self.stack) - 1 - self.stack[::-1].index(tag)]
+
+    def handle_data(self, value):
+        if not any(tag in self.stack for tag in {'ruby', 'script', 'style'}):
+            assert not re.search(r'[\u3400-\u9fff]', value), 'Missing furigana: ' + value
+
+
+guide = StudyGuideAudit()
+guide.feed((ROOT / 'n3-quartet-study-guide.html').read_text())
+for name, count in {'study-chapter': 8, 'lesson': 55, 'example': 110,
+                    'sentence': 51, 'sentence-note': 24, 'dialogue-meaning': 27}.items():
+    assert guide.classes[name] == count, (name, guide.classes[name])
+assert set(guide.anchors) <= guide.ids, set(guide.anchors) - guide.ids
+for name in ['n3.html', 'n3-grammar.html', 'n3-quartet-grammar.html']:
+    assert 'href="/n3-quartet-study-guide.html"' in (ROOT / name).read_text(), name
+print('Study guide passed: 6 chapters, 24 reading explanations, 27 writing sentences, 27 dialogue translations, complete furigana and navigation.')
 print('QUARTET passed: 6 chapters, 55 lessons, 110 examples, 55 quizzes, furigana and source preservation.')

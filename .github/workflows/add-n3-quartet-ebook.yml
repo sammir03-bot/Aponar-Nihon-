@@ -6,7 +6,7 @@ on:
       - '*quartet*'
       - 'n3.html'
       - 'n3-grammar.html'
-      - 'assets/**/n3-quartet.*'
+      - 'assets/**/n3-quartet*'
       - 'tools/check_quartet.py'
       - 'tools/compare_visible_content.py'
       - '.github/workflows/add-n3-quartet-ebook.yml'
@@ -29,3 +29,5 @@ jobs:
         run: python3 tools/check_quartet.py
       - name: Check interactive course script
         run: node --check assets/js/n3-quartet.js
+      - name: Check study guide navigation script
+        run: node --check assets/js/n3-quartet-study.js
