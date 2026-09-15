@@ -1,6 +1,25 @@
 <!doctype html>
 <html lang="bn" dir="ltr" data-language-preset="bn" data-source-language="bn">
 <head>
+  <script id="legacy-origin-redirect">
+  (function(){
+    var h = location.hostname;
+    if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
+    var p = location.pathname || "/";
+    if (h === "sammir03-bot.github.io") {
+      var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
+      for (var i = 0; i < bases.length; i++) {
+        var base = bases[i];
+        if (p === base || p === base + "/") { p = "/"; break; }
+        if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+      }
+    }
+    if (p === "/index.html") p = "/";
+    else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+    else if (p.endsWith(".html")) p = p.slice(0, -5);
+    location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
+  })();
+  </script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#071426">
@@ -16,7 +35,7 @@
 <h1>QUARTET I বাংলা eBook</h1>
 <p id="status">১৩৫ পৃষ্ঠার Interactive Reader প্রস্তুত হচ্ছে…</p>
 <div class="loader" id="loader"><div class="bar"></div></div>
-<div class="error" id="error"><p>Reader load করা যায়নি।</p><a class="back" href="/n3.html#course">← N3 Learning Center-এ ফিরুন</a></div>
+<div class="error" id="error"><p>Reader load করা যায়নি।</p><p>QUARTET I-এর গ্রামার সহায়িকা পড়তে পারেন।</p><a class="back" href="/n3-quartet-grammar.html">৫৫টি গ্রামার পাঠ খুলুন →</a><a class="back" href="/n3.html#course">← N3 Learning Center-এ ফিরুন</a></div>
 </div></div>
 <script>
 (async()=>{

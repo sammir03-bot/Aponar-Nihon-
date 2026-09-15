@@ -40,7 +40,7 @@ test('all eleven language choices survive navigation and reload', async ({ page 
     await page.locator(`[data-language-option="${language}"]`).click();
     await expect(page.locator('html')).toHaveAttribute('lang', language);
     await expect(page.locator('#aponarLanguageButton [data-language-code]')).toHaveText(language.toUpperCase());
-    await expect(page.locator('.app-tool > b')).toHaveCount(20);
+    await expect(page.locator('.app-tool > b')).toHaveCount(23);
     await expect.poll(() => page.locator('.app-tool > b').evaluateAll(labels => labels.every(label =>
       label.textContent.trim() && getComputedStyle(label).opacity === '1' && getComputedStyle(label).visibility === 'visible'
     ))).toBe(true);

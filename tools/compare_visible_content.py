@@ -5,10 +5,21 @@ import argparse
 import subprocess
 from pathlib import Path
 
-from sitecore.htmltools import visible_text_hash
+from sitecore.htmltools import visible_text, visible_text_hash
 
 
 ROOT = Path(__file__).resolve().parents[1]
+
+# QUARTET adds course navigation to these surfaces. Every existing visible text
+# node must still appear unchanged and in order; removal, rewriting, or moving
+# existing text is rejected. Other pages retain the exact-hash requirement.
+ADDITIVE_CONTENT_PAGES = {"n3.html", "n3-grammar.html", "n3-quartet-ebook.html"}
+
+
+def preserves_visible_text(base_html: str, current_html: str) -> bool:
+    remaining = iter(visible_text(current_html).splitlines())
+    return all(any(part == candidate for candidate in remaining)
+               for part in visible_text(base_html).splitlines())
 
 # These pages were deliberately rebuilt as lightweight app surfaces. Their
 # previous visible content is kept byte-for-byte in noindex archive pages so
@@ -73,6 +84,8 @@ def main() -> int:
 
         checked += 1
         if visible_text_hash(base_html) != visible_text_hash(current_html):
+            if rel in ADDITIVE_CONTENT_PAGES and preserves_visible_text(base_html, current_html):
+                continue
             archive_rel = MOVED_PAGE_ARCHIVES.get(rel)
             if archive_rel:
                 archive_path = ROOT / archive_rel
