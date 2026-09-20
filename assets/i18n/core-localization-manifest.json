@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "defaultLanguage": "bn",
+  "fallbackLanguage": "bn",
+  "supportedLanguages": ["bn", "ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil"],
+  "coreMode": "reviewed-static-with-bn-fallback",
+  "genericUiMode": "shared-dictionary-plus-runtime",
+  "preserveJapaneseStudyText": true,
+  "exactPages": [
+    "n5",
+    "n4",
+    "n3",
+    "jlpt-quiz",
+    "quiz",
+    "grammar-vs",
+    "jlpt-revision",
+    "revision",
+    "mock-test",
+    "jlpt-exam",
+    "student-tools",
+    "kanji-flashcards",
+    "cv-builder",
+    "part-time-cv-builder",
+    "interview",
+    "embassy-interview",
+    "part-time-interview",
+    "jobs-in-japan",
+    "japan-part-time-job-guide",
+    "part-time-job-in-japan",
+    "japan-life",
+    "daily-greetings",
+    "directions-emergency",
+    "shop-food-phrases",
+    "essential-phrases"
+  ],
+  "pagePrefixes": [
+    "n5-",
+    "n4-",
+    "n3-",
+    "japan-"
+  ]
+}
