@@ -17,24 +17,25 @@ const CORE_ECOSYSTEM_ROUTES = [
   '/japan-life.html'
 ];
 
-async function enableEnglishRuntime(page) {
-  await page.addInitScript(() => {
+async function enableRuntimeLanguage(page, language) {
+  await page.addInitScript(lang => {
     window.__APONAR_I18N_RUNTIME__ = true;
-    localStorage.setItem('aponarNihonLanguage', 'en');
-  });
+    localStorage.setItem('aponarNihonLanguage', lang);
+  }, language);
 }
 
-test('representative learning, job, and life routes are static-core protected', async ({ page }) => {
+test('representative learning, job, and life routes are protected from runtime body translation', async ({ page }) => {
   for (const route of CORE_ECOSYSTEM_ROUTES) {
     await page.goto(route, { waitUntil: 'domcontentloaded' });
     await expect(page.locator('html'), route).toHaveAttribute('data-i18n-mode', 'static-core');
-    await expect(page.locator('html'), route).toHaveAttribute('data-i18n-fallback', 'bn');
+    await expect(page.locator('html'), route).toHaveAttribute('data-i18n-source', 'bn');
     await expect(page.locator('html'), route).toHaveAttribute('data-i18n-preserve', '');
+    await expect(page.locator('html'), route).not.toHaveAttribute('data-i18n-fallback', /.+/);
   }
 });
 
-test('core learning pages never use full-page machine translation', async ({ page }) => {
-  await enableEnglishRuntime(page);
+test('core learning pages never call the full-page translation API', async ({ page }) => {
+  await enableRuntimeLanguage(page, 'bn');
   let runtimeRequests = 0;
   await page.route('**/api/i18n/translate', async route => {
     runtimeRequests += 1;
@@ -51,35 +52,38 @@ test('core learning pages never use full-page machine translation', async ({ pag
 
   await page.goto('/n4.html');
   await expect(page.locator('html')).toHaveAttribute('data-i18n-mode', 'static-core');
-  await expect(page.locator('html')).toHaveAttribute('data-i18n-fallback', 'bn');
-  await expect(page.locator('html')).toHaveAttribute('data-i18n-preserve', '');
   await page.waitForTimeout(300);
   expect(runtimeRequests).toBe(0);
   await expect(page.locator('body')).not.toContainText('MACHINE:');
 });
 
-test('reviewed localized core routes stay static after loading', async ({ page }) => {
-  await page.addInitScript(() => {
-    window.__APONAR_I18N_RUNTIME__ = true;
-    localStorage.setItem('aponarNihonLanguage', 'en');
-  });
+test('Nepali N5 is a direct static HTML page, not a runtime translation', async ({ page }) => {
+  await enableRuntimeLanguage(page, 'ne');
   let runtimeRequests = 0;
   await page.route('**/api/i18n/translate', async route => {
     runtimeRequests += 1;
     await route.fulfill({ status: 500, json: { ok: false, error: 'should_not_run' } });
   });
 
-  await page.goto('/en/n5/');
-  await expect(page.locator('html')).toHaveAttribute('lang', 'en');
+  await page.goto('/ne/n5/');
+  await expect(page).toHaveURL(/\/ne\/n5\/?$/);
+  await expect(page.locator('html')).toHaveAttribute('lang', 'ne');
+  await expect(page.locator('html')).toHaveAttribute('data-language-preset', 'ne');
   await expect(page.locator('html')).toHaveAttribute('data-i18n-mode', 'static-core');
-  await expect(page.locator('html')).toHaveAttribute('data-i18n-preserve', '');
-  await expect(page.locator('body')).toContainText('Your N5 progress');
+  await expect(page.locator('body')).toContainText('तपाईंको N5 प्रगति');
   await page.waitForTimeout(300);
   expect(runtimeRequests).toBe(0);
 });
 
+test('core language alternates point at separate HTML routes', async ({ page }) => {
+  await enableRuntimeLanguage(page, 'bn');
+  await page.goto('/n5.html');
+  const nepali = page.locator('link[rel~="alternate"][hreflang="ne"]');
+  await expect(nepali).toHaveAttribute('href', /\/ne\/n5\/?$/);
+});
+
 test('non-core pages retain runtime translation behavior', async ({ page }) => {
-  await enableEnglishRuntime(page);
+  await enableRuntimeLanguage(page, 'en');
   let translated = false;
   await page.route('**/api/i18n/translate', async route => {
     translated = true;
