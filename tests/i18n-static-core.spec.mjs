@@ -24,7 +24,7 @@ async function enableRuntimeLanguage(page, language) {
   }, language);
 }
 
-test('representative learning, job, and life routes are protected from runtime body translation', async ({ page }) => {
+test('representative learning, job, and life routes are direct-static core pages', async ({ page }) => {
   for (const route of CORE_ECOSYSTEM_ROUTES) {
     await page.goto(route, { waitUntil: 'domcontentloaded' });
     await expect(page.locator('html'), route).toHaveAttribute('data-i18n-mode', 'static-core');
@@ -57,7 +57,7 @@ test('core learning pages never call the full-page translation API', async ({ pa
   await expect(page.locator('body')).not.toContainText('MACHINE:');
 });
 
-test('Nepali N5 is a direct static HTML page, not a runtime translation', async ({ page }) => {
+test('Nepali N5 is direct static HTML and keeps nested navigation in Nepali', async ({ page }) => {
   await enableRuntimeLanguage(page, 'ne');
   let runtimeRequests = 0;
   await page.route('**/api/i18n/translate', async route => {
@@ -70,9 +70,27 @@ test('Nepali N5 is a direct static HTML page, not a runtime translation', async 
   await expect(page.locator('html')).toHaveAttribute('lang', 'ne');
   await expect(page.locator('html')).toHaveAttribute('data-language-preset', 'ne');
   await expect(page.locator('html')).toHaveAttribute('data-i18n-mode', 'static-core');
+  await expect(page.locator('html')).toHaveAttribute('data-i18n-source', 'bn');
   await expect(page.locator('body')).toContainText('तपाईंको N5 प्रगति');
+
+  const vocabularyLink = page.locator('a[href="/ne/n5/vocabulary/"]').first();
+  await expect(vocabularyLink).toBeVisible();
+  await vocabularyLink.click();
+
+  await expect(page).toHaveURL(/\/ne\/n5\/vocabulary\/?$/);
+  await expect(page.locator('html')).toHaveAttribute('lang', 'ne');
+  await expect(page.locator('html')).toHaveAttribute('data-language-preset', 'ne');
+  await expect(page.locator('body')).toContainText('आफ्नो Lesson छान्नुहोस्');
+  await expect(page.locator('body')).toContainText('शब्दबाट प्रवाहशीलतासम्म');
   await page.waitForTimeout(300);
   expect(runtimeRequests).toBe(0);
+});
+
+test('saved core language redirects to an alternate static HTML route when authored', async ({ page }) => {
+  await enableRuntimeLanguage(page, 'ne');
+  await page.goto('/n5.html');
+  await expect(page).toHaveURL(/\/ne\/n5\/?$/);
+  await expect(page.locator('html')).toHaveAttribute('lang', 'ne');
 });
 
 test('core language alternates point at separate HTML routes', async ({ page }) => {
