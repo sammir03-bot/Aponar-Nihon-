@@ -8,6 +8,7 @@ from pathlib import Path
 from sitecore.htmltools import inject_assets, visible_text_hash
 from sitecore.i18n_policy import mark_static_core_pages
 from sitecore.linkcheck import find_broken_page_links
+from sitecore.localized_literals import apply_reviewed_literal_replacements
 from sitecore.locales import build_localized_pages
 from sitecore.postprocess import postprocess_site
 from sitecore.search_index import build_search_index
@@ -30,7 +31,7 @@ EXCLUDED_FILES = {
 I18N_CSS = '<link rel="stylesheet" href="/assets/css/i18n.css?v=20260909.4">'
 HOME_BRAND_CSS = '<link rel="stylesheet" href="/assets/css/home-brand.css?v=20260901.2">'
 I18N_JS = '<script src="/assets/js/i18n.js?v=20260909.4"></script>'
-I18N_STATIC_CORE_JS = '<script defer src="/assets/js/i18n-static-core.js?v=20260920.1"></script>'
+I18N_STATIC_CORE_JS = '<script defer src="/assets/js/i18n-static-core.js?v=20260921.1"></script>'
 I18N_UI_JS = '<script defer src="/assets/js/i18n-ui.js?v=20260909.4"></script>'
 I18N_CONTENT_JS = '<script defer src="/assets/js/i18n-content.js?v=20260909.4"></script>'
 PRO_CSS = '<link rel="stylesheet" href="/assets/css/pro-core.css?v=20260825">'
@@ -129,6 +130,7 @@ def build(destination: Path, check_links: bool = False) -> int:
     injected, injection_checked = inject_professional_assets(destination)
     changed, post_checked, repaired, secured = postprocess_site(destination)
     localized_pages, localized_clusters, localized_nodes = build_localized_pages(destination)
+    literal_files, literal_replacements = apply_reviewed_literal_replacements(destination)
     static_core_changed, static_core_pages = mark_static_core_pages(destination)
     canonicals, noindex, seo_checked, verification, sitemap_urls = prepare_search_engine_files(destination)
     indexed = build_search_index(
@@ -150,6 +152,8 @@ def build(destination: Path, check_links: bool = False) -> int:
     print(f"Localized HTML pages: {localized_pages}")
     print(f"Localized hreflang clusters: {localized_clusters}")
     print(f"Reviewed text nodes localized at build time: {localized_nodes}")
+    print(f"Localized HTML files with reviewed literal replacements: {literal_files}")
+    print(f"Reviewed attribute/script literals localized at build time: {literal_replacements}")
     print(f"Static-core pages protected from runtime content translation: {static_core_pages}")
     print(f"Static-core HTML files newly marked: {static_core_changed}")
     print(f"SEO canonical pages: {canonicals}")
