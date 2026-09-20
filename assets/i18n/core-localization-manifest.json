@@ -1,9 +1,9 @@
 {
-  "version": 1,
+  "version": 2,
   "defaultLanguage": "bn",
-  "fallbackLanguage": "bn",
+  "sourceLanguage": "bn",
   "supportedLanguages": ["bn", "ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil"],
-  "coreMode": "reviewed-static-with-bn-fallback",
+  "coreMode": "direct-static-html",
   "genericUiMode": "shared-dictionary-plus-runtime",
   "preserveJapaneseStudyText": true,
   "exactPages": [
