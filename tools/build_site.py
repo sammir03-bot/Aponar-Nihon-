@@ -6,6 +6,7 @@ import shutil
 from pathlib import Path
 
 from sitecore.htmltools import inject_assets, visible_text_hash
+from sitecore.i18n_policy import mark_static_core_pages
 from sitecore.linkcheck import find_broken_page_links
 from sitecore.locales import build_localized_pages
 from sitecore.postprocess import postprocess_site
@@ -127,6 +128,7 @@ def build(destination: Path, check_links: bool = False) -> int:
     injected, injection_checked = inject_professional_assets(destination)
     changed, post_checked, repaired, secured = postprocess_site(destination)
     localized_pages, localized_clusters, localized_nodes = build_localized_pages(destination)
+    static_core_changed, static_core_pages = mark_static_core_pages(destination)
     canonicals, noindex, seo_checked, verification, sitemap_urls = prepare_search_engine_files(destination)
     indexed = build_search_index(
         destination,
@@ -147,6 +149,8 @@ def build(destination: Path, check_links: bool = False) -> int:
     print(f"Localized HTML pages: {localized_pages}")
     print(f"Localized hreflang clusters: {localized_clusters}")
     print(f"Reviewed text nodes localized at build time: {localized_nodes}")
+    print(f"Static-core pages protected from runtime content translation: {static_core_pages}")
+    print(f"Static-core HTML files newly marked: {static_core_changed}")
     print(f"SEO canonical pages: {canonicals}")
     print(f"SEO noindex pages: {noindex}")
     print(f"Search Console verification injected: {'yes' if verification else 'no'}")
