@@ -5,7 +5,13 @@ import re
 import sys
 from pathlib import Path
 
-from sitecore.i18n_policy import HTML_RE, PAGE_RE, is_static_core_page, load_core_policy
+from sitecore.i18n_policy import (
+    HTML_RE,
+    PAGE_RE,
+    is_static_core_page,
+    load_core_policy,
+    normalize_page_key,
+)
 from sitecore.locales import DEFAULT_LANGUAGE, SUPPORTED_LANGUAGES
 
 
@@ -32,7 +38,13 @@ def main() -> int:
             f"expected {expected_languages}, got {policy.get('supportedLanguages')}"
         )
 
+    required = {normalize_page_key(str(value)) for value in policy.get("requiredCorePages", [])}
+    for key in sorted(required):
+        if not is_static_core_page(key, policy):
+            fail(f"Required core page is outside static-core classification: {key}")
+
     core_pages = marked_pages = 0
+    seen_core_keys: set[str] = set()
     for page in sorted(SITE.rglob("*.html")):
         try:
             document = page.read_text(encoding="utf-8")
@@ -47,6 +59,7 @@ def main() -> int:
             continue
 
         core_pages += 1
+        seen_core_keys.add(normalize_page_key(page_match.group("page")))
         rel = page.relative_to(SITE)
         if not PRESERVE_RE.search(attrs):
             fail(f"Core page is not protected from full-page runtime translation: {rel}")
@@ -61,7 +74,15 @@ def main() -> int:
     if core_pages != marked_pages:
         fail(f"Static-core marker coverage mismatch: {marked_pages}/{core_pages}")
 
-    print(f"static i18n policy OK: {marked_pages} core HTML pages use reviewed-static content with bn fallback")
+    missing_required = sorted(required - seen_core_keys)
+    if missing_required:
+        fail("Required core pages were not found/protected in the built site: " + ", ".join(missing_required))
+
+    print(
+        "static i18n policy OK: "
+        f"{marked_pages} core HTML pages use reviewed-static content with bn fallback; "
+        f"{len(required)} required ecosystem routes verified"
+    )
     return 0
 
 
