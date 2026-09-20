@@ -12,7 +12,7 @@ PAGE_RE = re.compile(
 )
 PRESERVE_RE = re.compile(r"\bdata-i18n-preserve(?:\s*=|\s|$)", re.IGNORECASE)
 MODE_RE = re.compile(r"\bdata-i18n-mode\s*=", re.IGNORECASE)
-FALLBACK_RE = re.compile(r"\bdata-i18n-fallback\s*=", re.IGNORECASE)
+SOURCE_RE = re.compile(r"\bdata-i18n-source\s*=", re.IGNORECASE)
 
 
 def normalize_page_key(page_key: str) -> str:
@@ -31,10 +31,10 @@ def load_core_policy(root: Path) -> dict[str, object]:
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
         raise RuntimeError(f"Invalid core localization manifest: {exc}") from exc
 
-    if payload.get("defaultLanguage") != "bn" or payload.get("fallbackLanguage") != "bn":
-        raise RuntimeError("Core localization must use Bengali (bn) as both master and fallback")
-    if payload.get("coreMode") != "reviewed-static-with-bn-fallback":
-        raise RuntimeError("Unsupported core localization mode")
+    if payload.get("defaultLanguage") != "bn" or payload.get("sourceLanguage") != "bn":
+        raise RuntimeError("Core localization must keep Bengali (bn) as default/source language")
+    if payload.get("coreMode") != "direct-static-html":
+        raise RuntimeError("Core localization must use direct-static-html mode")
 
     exact = payload.get("exactPages")
     prefixes = payload.get("pagePrefixes")
@@ -58,15 +58,15 @@ def is_static_core_page(page_key: str, policy: dict[str, object]) -> bool:
     return key in exact or any(key.startswith(prefix) for prefix in prefixes)
 
 
-def _mark_html_tag(match: re.Match[str], fallback: str) -> str:
+def _mark_html_tag(match: re.Match[str], source_language: str) -> str:
     attrs = match.group("attrs")
     additions: list[str] = []
     if not PRESERVE_RE.search(attrs):
         additions.append("data-i18n-preserve")
     if not MODE_RE.search(attrs):
         additions.append('data-i18n-mode="static-core"')
-    if not FALLBACK_RE.search(attrs):
-        additions.append(f'data-i18n-fallback="{fallback}"')
+    if not SOURCE_RE.search(attrs):
+        additions.append(f'data-i18n-source="{source_language}"')
     if not additions:
         return match.group(0)
     spacer = " " if not attrs else ("" if attrs.endswith((" ", "\n", "\t")) else " ")
@@ -74,16 +74,15 @@ def _mark_html_tag(match: re.Match[str], fallback: str) -> str:
 
 
 def mark_static_core_pages(root: Path) -> tuple[int, int]:
-    """Prevent full-page runtime translation on reviewed/static core learning pages.
+    """Mark core pages as direct static HTML and disable full-page runtime translation.
 
-    Core content is rendered from Bengali source HTML plus reviewed locale packs at build
-    time. Missing reviewed text intentionally remains Bengali. The existing i18n runtime
-    still handles annotated/shared UI and explicit dynamic helpers because this marker is
-    consumed only by the full-page DOM content scanner.
+    Bengali source pages keep their existing design and content. Localized core pages are
+    separate HTML outputs generated from authored locale files. The generic UI translator
+    remains available to non-core pages and explicitly annotated shared UI.
     """
 
     policy = load_core_policy(root)
-    fallback = str(policy["fallbackLanguage"])
+    source_language = str(policy["sourceLanguage"])
     changed = core_pages = 0
 
     for page in sorted(root.rglob("*.html")):
@@ -102,7 +101,7 @@ def mark_static_core_pages(root: Path) -> tuple[int, int]:
             continue
 
         core_pages += 1
-        updated = HTML_RE.sub(lambda match: _mark_html_tag(match, fallback), document, count=1)
+        updated = HTML_RE.sub(lambda match: _mark_html_tag(match, source_language), document, count=1)
         if updated == document:
             continue
         page.write_text(updated, encoding="utf-8", newline="\n")
