@@ -59,7 +59,7 @@ def _mark_html_tag(match: re.Match[str], fallback: str) -> str:
         additions.append(f'data-i18n-fallback="{fallback}"')
     if not additions:
         return match.group(0)
-    spacer = "" if not attrs or attrs.endswith((" ", "\n", "\t")) else " "
+    spacer = " " if not attrs else ("" if attrs.endswith((" ", "\n", "\t")) else " ")
     return f"<html{attrs}{spacer}{' '.join(additions)}>"
 
 
