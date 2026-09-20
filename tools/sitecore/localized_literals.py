@@ -3,17 +3,24 @@ from __future__ import annotations
 import json
 import re
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit
 
 from sitecore.locales import (
     DEFAULT_LANGUAGE,
     PACK_NAME_RE,
     SUPPORTED_LANGUAGES,
+    _candidate_source_page,
+    _public_path,
     localized_route_for_page,
     page_key,
 )
 
 
 BRAND_RE = re.compile(r"আপনার নিহোন|Aponar Nihon|あなたの日本(?!語)", re.IGNORECASE)
+DATA_HREF_RE = re.compile(
+    r"(?P<prefix>\bdata-href\s*=\s*)(?P<quote>[\"'])(?P<value>.*?)(?P=quote)",
+    re.IGNORECASE | re.DOTALL,
+)
 
 
 def _preserve_brand(source: str, target: str) -> str:
@@ -146,8 +153,54 @@ def _apply_script_data(document: str, payload: dict[str, object], pack_name: str
     return updated, field_updates
 
 
+def _rewrite_data_hrefs(
+    document: str,
+    source_page: Path,
+    root: Path,
+    language: str,
+    source_pages: dict[Path, Path],
+    pack_languages: dict[str, set[str]],
+) -> tuple[str, int]:
+    """Make JS/card data-href routes agree with normal localized anchors.
+
+    `locales.py` already rewrites regular href attributes before generated HTML is written.
+    Interactive cards on some hubs navigate through `data-href`, so those values must be
+    localized too. When a target has no authored pack yet we make the source path absolute
+    to avoid a broken nested-relative URL; authored targets always stay in the selected
+    locale route.
+    """
+
+    changed = 0
+
+    def replace(match: re.Match[str]) -> str:
+        nonlocal changed
+        value = match.group("value").strip()
+        if not value or value.startswith(("#", "?", "//", "mailto:", "tel:", "javascript:")):
+            return match.group(0)
+        parsed = urlsplit(value)
+        candidate = _candidate_source_page(value, source_page, root)
+        if candidate is None:
+            return match.group(0)
+        target_page = source_pages.get(candidate)
+        if target_page is None:
+            return match.group(0)
+        target_key = page_key(target_page, root)
+        if language in pack_languages.get(target_key, set()):
+            output = root / language / localized_route_for_page(target_page, root) / "index.html"
+            target_path = _public_path(output, root)
+        else:
+            target_path = _public_path(target_page, root)
+        rewritten = urlunsplit(("", "", target_path, parsed.query, parsed.fragment))
+        if rewritten == value:
+            return match.group(0)
+        changed += 1
+        return f"{match.group('prefix')}{match.group('quote')}{rewritten}{match.group('quote')}"
+
+    return DATA_HREF_RE.sub(replace, document), changed
+
+
 def apply_reviewed_literal_replacements(root: Path) -> tuple[int, int]:
-    """Apply authored locale entries to literals and structured inline lesson data.
+    """Apply authored locale entries, dynamic routes and structured inline lesson data.
 
     The normal locale renderer translates reviewed visible text nodes. Static pages also
     contain user-facing strings in attributes, encoded URLs and inline JavaScript. Some
@@ -166,8 +219,10 @@ def apply_reviewed_literal_replacements(root: Path) -> tuple[int, int]:
         or page.relative_to(root).parts[0] not in SUPPORTED_LANGUAGES
     ]
     page_by_key = {page_key(page, root): page for page in base_pages}
+    source_pages = {page.resolve(): page for page in base_pages}
     pack_dir = root / "assets" / "i18n" / "pages"
-    changed_files = replacements = 0
+    reviewed_packs: list[tuple[Path, str, str, dict[str, object]]] = []
+    pack_languages: dict[str, set[str]] = {}
 
     for pack_path in sorted(pack_dir.glob("*.json")):
         match = PACK_NAME_RE.match(pack_path.name)
@@ -183,7 +238,11 @@ def apply_reviewed_literal_replacements(root: Path) -> tuple[int, int]:
             or payload.get("page") != key
         ):
             continue
+        reviewed_packs.append((pack_path, language, key, payload))
+        pack_languages.setdefault(key, set()).add(language)
 
+    changed_files = replacements = 0
+    for pack_path, language, key, payload in reviewed_packs:
         source_page = page_by_key.get(key)
         if source_page is None:
             continue
@@ -192,7 +251,16 @@ def apply_reviewed_literal_replacements(root: Path) -> tuple[int, int]:
             continue
 
         document = output.read_text(encoding="utf-8")
-        updated, script_updates = _apply_script_data(document, payload, pack_path.name)
+        updated, route_updates = _rewrite_data_hrefs(
+            document,
+            source_page,
+            root,
+            language,
+            source_pages,
+            pack_languages,
+        )
+        replacements += route_updates
+        updated, script_updates = _apply_script_data(updated, payload, pack_path.name)
         replacements += script_updates
 
         for entry in sorted(
