@@ -1,11 +1,37 @@
 import { expect, test } from '@playwright/test';
 
+const CORE_ECOSYSTEM_ROUTES = [
+  '/Hiragana-Katagana.html',
+  '/n5.html',
+  '/n4.html',
+  '/n3.html',
+  '/grammar-vs.html',
+  '/jlpt-quiz.html',
+  '/jlpt-revision.html',
+  '/mock-test.html',
+  '/student-tools.html',
+  '/kanji-flashcards.html',
+  '/cv-builder.html',
+  '/interview.html',
+  '/jobs-in-japan.html',
+  '/japan-life.html'
+];
+
 async function enableEnglishRuntime(page) {
   await page.addInitScript(() => {
     window.__APONAR_I18N_RUNTIME__ = true;
     localStorage.setItem('aponarNihonLanguage', 'en');
   });
 }
+
+test('representative learning, job, and life routes are static-core protected', async ({ page }) => {
+  for (const route of CORE_ECOSYSTEM_ROUTES) {
+    await page.goto(route, { waitUntil: 'domcontentloaded' });
+    await expect(page.locator('html'), route).toHaveAttribute('data-i18n-mode', 'static-core');
+    await expect(page.locator('html'), route).toHaveAttribute('data-i18n-fallback', 'bn');
+    await expect(page.locator('html'), route).toHaveAttribute('data-i18n-preserve', '');
+  }
+});
 
 test('core learning pages never use full-page machine translation', async ({ page }) => {
   await enableEnglishRuntime(page);
