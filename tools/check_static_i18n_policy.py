@@ -19,7 +19,8 @@ ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "_site"
 PRESERVE_RE = re.compile(r"\bdata-i18n-preserve(?:\s*=|\s|$)", re.IGNORECASE)
 MODE_RE = re.compile(r"\bdata-i18n-mode\s*=\s*([\"'])static-core\1", re.IGNORECASE)
-FALLBACK_RE = re.compile(r"\bdata-i18n-fallback\s*=\s*([\"'])bn\1", re.IGNORECASE)
+SOURCE_RE = re.compile(r"\bdata-i18n-source\s*=\s*([\"'])bn\1", re.IGNORECASE)
+FALLBACK_RE = re.compile(r"\bdata-i18n-fallback\s*=", re.IGNORECASE)
 
 
 def fail(message: str) -> None:
@@ -65,8 +66,10 @@ def main() -> int:
             fail(f"Core page is not protected from full-page runtime translation: {rel}")
         if not MODE_RE.search(attrs):
             fail(f"Core page is missing data-i18n-mode=static-core: {rel}")
-        if not FALLBACK_RE.search(attrs):
-            fail(f"Core page is missing Bengali fallback marker: {rel}")
+        if not SOURCE_RE.search(attrs):
+            fail(f"Core page is missing Bengali source marker: {rel}")
+        if FALLBACK_RE.search(attrs):
+            fail(f"Core page still contains obsolete runtime fallback marker: {rel}")
         marked_pages += 1
 
     if not core_pages:
@@ -80,7 +83,7 @@ def main() -> int:
 
     print(
         "static i18n policy OK: "
-        f"{marked_pages} core HTML pages use reviewed-static content with bn fallback; "
+        f"{marked_pages} core HTML pages use direct static localization with Bengali source; "
         f"{len(required)} required ecosystem routes verified"
     )
     return 0
