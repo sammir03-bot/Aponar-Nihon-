@@ -34,13 +34,31 @@ def _preserve_brand(source: str, target: str) -> str:
     return preserved
 
 
+def _literal_variants(source: str, target: str) -> list[tuple[str, str]]:
+    """Return authored raw and common URL-space encoded forms.
+
+    Several static links keep Bengali prompt text readable while only encoding spaces.
+    Replacing those forms at build time keeps locale-specific Tutor/search links in the
+    same authored language without introducing a runtime translation dependency.
+    """
+
+    variants = [(source, target)]
+    for marker in ("%20", "+"):
+        encoded_source = source.replace(" ", marker)
+        encoded_target = target.replace(" ", marker)
+        if encoded_source != source:
+            variants.append((encoded_source, encoded_target))
+    return variants
+
+
 def apply_reviewed_literal_replacements(root: Path) -> tuple[int, int]:
     """Apply authored locale entries to literals the HTML parser intentionally skips.
 
     The normal locale renderer translates reviewed visible text nodes. Static pages also
-    contain user-facing strings in attributes and inline JavaScript (for example search
-    labels and progress messages). Those strings must be authored in the selected language
-    too, otherwise interaction can re-introduce Bengali after page load.
+    contain user-facing strings in attributes, encoded URLs and inline JavaScript (for
+    example search labels, Tutor prompts and progress messages). Those strings must be
+    authored in the selected language too, otherwise interaction can re-introduce Bengali
+    after page load.
 
     This pass only uses entries from reviewed locale packs and only touches the generated
     locale HTML file for that pack. There is no machine translation or network fallback.
@@ -90,11 +108,12 @@ def apply_reviewed_literal_replacements(root: Path) -> tuple[int, int]:
             if not source or not target:
                 continue
             target = _preserve_brand(source, target)
-            count = updated.count(source)
-            if not count:
-                continue
-            updated = updated.replace(source, target)
-            replacements += count
+            for source_variant, target_variant in _literal_variants(source, target):
+                count = updated.count(source_variant)
+                if not count:
+                    continue
+                updated = updated.replace(source_variant, target_variant)
+                replacements += count
 
         if updated == document:
             continue
