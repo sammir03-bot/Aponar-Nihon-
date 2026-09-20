@@ -57,7 +57,7 @@ test('core learning pages never call the full-page translation API', async ({ pa
   await expect(page.locator('body')).not.toContainText('MACHINE:');
 });
 
-test('Nepali N5 is direct static HTML and keeps nested navigation in Nepali', async ({ page }) => {
+test('Nepali N5 stays direct-static through vocabulary lesson 1', async ({ page }) => {
   await enableRuntimeLanguage(page, 'ne');
   let runtimeRequests = 0;
   await page.route('**/api/i18n/translate', async route => {
@@ -82,6 +82,22 @@ test('Nepali N5 is direct static HTML and keeps nested navigation in Nepali', as
   await expect(page.locator('html')).toHaveAttribute('data-language-preset', 'ne');
   await expect(page.locator('body')).toContainText('आफ्नो Lesson छान्नुहोस्');
   await expect(page.locator('body')).toContainText('शब्दबाट प्रवाहशीलतासम्म');
+
+  const lessonOneCard = page.locator('article[data-lesson="1"]');
+  await expect(lessonOneCard).toHaveAttribute('data-href', '/ne/n5/vocabulary/lesson-01/');
+  const lessonOneLink = lessonOneCard.locator('a[href="/ne/n5/vocabulary/lesson-01/"]').first();
+  await expect(lessonOneLink).toBeVisible();
+  await lessonOneLink.click();
+
+  await expect(page).toHaveURL(/\/ne\/n5\/vocabulary\/lesson-01\/?$/);
+  await expect(page.locator('html')).toHaveAttribute('lang', 'ne');
+  await expect(page.locator('html')).toHaveAttribute('data-language-preset', 'ne');
+  await expect(page.locator('html')).toHaveAttribute('data-i18n-mode', 'static-core');
+  await expect(page.locator('body')).toContainText('आजको लक्ष्य');
+  await expect(page.locator('body')).toContainText('नेपाली उच्चारण');
+  await expect(page.locator('#wordGrid .word-card').first()).toContainText('वाताशी');
+  await expect(page.locator('#wordGrid .word-card').first()).toContainText('म');
+
   await page.waitForTimeout(300);
   expect(runtimeRequests).toBe(0);
 });
