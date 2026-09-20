@@ -13,17 +13,20 @@ from sitecore.locales import SUPPORTED_LANGUAGES, localized_route_for_page, page
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / "_site"
 BENGALI_RE = re.compile(r"[\u0980-\u09FF]")
+BENGALI_DIGITS_RE = re.compile(r"[০-৯]+")
 BRAND_RE = re.compile(r"আপনার নিহোন")
 HTML_LANG_RE = re.compile(r"<html\b[^>]*\blang=[\"'](?P<lang>[^\"']+)[\"']", re.IGNORECASE)
 PRESET_RE = re.compile(
     r"<html\b[^>]*\bdata-language-preset=[\"'](?P<lang>[^\"']+)[\"']",
     re.IGNORECASE,
 )
-SKIP_TAGS = {"script", "style", "noscript", "template", "code", "pre", "svg"}
+SKIP_TAGS = {"style", "noscript", "template", "code", "pre", "svg"}
 CHECK_ATTRIBUTES = {"alt", "aria-label", "data-search", "href", "placeholder", "title"}
 
 
 class LocalizedSurfaceParser(HTMLParser):
+    """Collect visible, accessibility, navigation and inline-script locale surfaces."""
+
     def __init__(self) -> None:
         super().__init__(convert_charrefs=True)
         self.parts: list[str] = []
@@ -72,7 +75,11 @@ def fail(message: str) -> None:
 def snippets(value: str, limit: int = 8) -> list[str]:
     results: list[str] = []
     for line in value.splitlines():
-        cleaned = BRAND_RE.sub("", line).strip()
+        # Keep the Aponar Nihon Bengali brand and Bengali digit lookup tables available;
+        # neither is fallback UI copy. All other Bengali script on a completed locale page
+        # is treated as a localization leak, including inline JavaScript messages.
+        cleaned = BRAND_RE.sub("", line)
+        cleaned = BENGALI_DIGITS_RE.sub("", cleaned).strip()
         if not cleaned or not BENGALI_RE.search(cleaned):
             continue
         compact = " ".join(cleaned.split())
@@ -143,7 +150,10 @@ def main() -> int:
                 )
             checked += 1
 
-    print(f"authored static locale quality OK: {checked} completed locale HTML routes have no Bengali UI leakage")
+    print(
+        f"authored static locale quality OK: {checked} completed locale HTML routes "
+        "have no Bengali UI or dynamic-script leakage"
+    )
     return 0
 
 
