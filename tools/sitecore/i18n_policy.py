@@ -15,6 +15,13 @@ MODE_RE = re.compile(r"\bdata-i18n-mode\s*=", re.IGNORECASE)
 FALLBACK_RE = re.compile(r"\bdata-i18n-fallback\s*=", re.IGNORECASE)
 
 
+def normalize_page_key(page_key: str) -> str:
+    key = (page_key or "").replace("\\", "/").strip()
+    while key.startswith("./"):
+        key = key[2:]
+    return key.strip("/").lower()
+
+
 def load_core_policy(root: Path) -> dict[str, object]:
     path = root / "assets" / "i18n" / "core-localization-manifest.json"
     if not path.exists():
@@ -31,20 +38,23 @@ def load_core_policy(root: Path) -> dict[str, object]:
 
     exact = payload.get("exactPages")
     prefixes = payload.get("pagePrefixes")
+    required = payload.get("requiredCorePages")
     languages = payload.get("supportedLanguages")
     if not isinstance(exact, list) or not all(isinstance(value, str) and value for value in exact):
         raise RuntimeError("core-localization-manifest exactPages must be a non-empty string list")
     if not isinstance(prefixes, list) or not all(isinstance(value, str) and value for value in prefixes):
         raise RuntimeError("core-localization-manifest pagePrefixes must be a non-empty string list")
+    if not isinstance(required, list) or not all(isinstance(value, str) and value for value in required):
+        raise RuntimeError("core-localization-manifest requiredCorePages must be a non-empty string list")
     if not isinstance(languages, list) or "bn" not in languages:
         raise RuntimeError("core-localization-manifest supportedLanguages must include bn")
     return payload
 
 
 def is_static_core_page(page_key: str, policy: dict[str, object]) -> bool:
-    key = page_key.strip().lower()
-    exact = {str(value).strip().lower() for value in policy.get("exactPages", [])}
-    prefixes = tuple(str(value).strip().lower() for value in policy.get("pagePrefixes", []))
+    key = normalize_page_key(page_key)
+    exact = {normalize_page_key(str(value)) for value in policy.get("exactPages", [])}
+    prefixes = tuple(normalize_page_key(str(value)) for value in policy.get("pagePrefixes", []))
     return key in exact or any(key.startswith(prefix) for prefix in prefixes)
 
 
