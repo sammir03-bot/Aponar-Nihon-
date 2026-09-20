@@ -43,3 +43,13 @@
 Listening-এর জন্য Android Chrome বা desktop Chrome ব্যবহার করলে সবচেয়ে ভালো ফল পাওয়া যায়।
 
 Question pattern ও difficulty বোঝার reference হিসেবে JLPT N5-এর প্রচলিত format এবং JapaneseTest4You-এর N5 vocabulary, kanji, grammar, reading ও listening category দেখা হয়েছে। সব question, dialogue, explanation ও TTS script এই project-এর জন্য নতুনভাবে লেখা।
+
+## লাইসেন্স ও কপিরাইট
+
+এই repository-র সব ফাইল একই license-এর অধীনে নয়।
+
+- Project-এর নিজস্ব **software source code** সাধারণভাবে [`LICENSE`](./LICENSE)-এ থাকা **MIT License**-এর অধীনে।
+- নিজস্ব lesson, explanation, translation, vocabulary note, study guide ও editorial/educational content-এর কপিরাইট সংরক্ষিত, যদি কোনো file-এ আলাদাভাবে অন্য license উল্লেখ না থাকে। বিস্তারিত [`COPYRIGHT.md`](./COPYRIGHT.md)-এ।
+- Third-party PDF, ebook/book-derived material, image, font, dataset, news/source material ইত্যাদি MIT License-এর আওতায় নয়। যেসব asset-এর provenance/license আলাদাভাবে যাচাই করা প্রয়োজন, সেগুলোর তালিকা ও policy [`THIRD_PARTY_NOTICES.md`](./THIRD_PARTY_NOTICES.md)-এ আছে।
+
+Publicly available কোনো third-party file-কে স্বয়ংক্রিয়ভাবে freely redistributable ধরে নেওয়া উচিত নয়। Release বা redistribution-এর আগে applicable license/permission যাচাই করুন।
