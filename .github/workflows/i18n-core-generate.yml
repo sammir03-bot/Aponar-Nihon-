@@ -1,0 +1,123 @@
+name: Core multilingual static generation
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirm_paid_usage:
+        description: I approve Cloudflare Workers AI usage for this bounded core translation job
+        required: true
+        type: boolean
+        default: false
+      target_branch:
+        description: Branch that receives reviewed translation memories
+        required: true
+        type: string
+        default: main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: core-static-i18n-generation
+  cancel-in-progress: false
+
+jobs:
+  translate:
+    if: ${{ inputs.confirm_paid_usage == true }}
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+    timeout-minutes: 360
+
+    steps:
+      - name: Checkout target branch
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ inputs.target_branch }}
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          package-manager-cache: false
+
+      - name: Load reviewed translation engine
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin feat/full-static-i18n:refs/remotes/origin/feat/full-static-i18n
+          git show origin/feat/full-static-i18n:tools/i18n_ai_pipeline.py > tools/i18n_ai_pipeline.py
+          mkdir -p tools/i18n-worker
+          git show origin/feat/full-static-i18n:tools/i18n-worker/index.ts > tools/i18n-worker/index.ts
+          git show origin/feat/full-static-i18n:tools/i18n-worker/wrangler.toml > tools/i18n-worker/wrangler.toml
+          python3 -m py_compile tools/i18n_ai_pipeline.py tools/i18n_core_pipeline.py
+
+      - name: Create temporary job credential
+        shell: bash
+        run: |
+          token="$(openssl rand -hex 32)"
+          echo "::add-mask::$token"
+          echo "APONAR_I18N_JOB_TOKEN=$token" >> "$GITHUB_ENV"
+          echo "APONAR_I18N_WORKER_URL=https://aponar-nihon-i18n-job.aponar-nihon.workers.dev" >> "$GITHUB_ENV"
+
+      - name: Validate temporary Worker bundle
+        run: npx --yes wrangler@4 deploy --dry-run --config tools/i18n-worker/wrangler.toml
+
+      - name: Deploy temporary translation Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 deploy --config tools/i18n-worker/wrangler.toml
+
+      - name: Protect temporary translation Worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: printf '%s' "$APONAR_I18N_JOB_TOKEN" | npx --yes wrangler@4 secret put I18N_JOB_TOKEN --config tools/i18n-worker/wrangler.toml
+
+      - name: Confirm temporary Worker health
+        run: |
+          sleep 5
+          curl --fail --silent --show-error "$APONAR_I18N_WORKER_URL/health"
+
+      - name: Generate and checkpoint reviewed core memories
+        shell: bash
+        run: |
+          set +e
+          final_status=0
+          for language in ja en vi ne hi ur my zh si fil; do
+            python3 tools/i18n_core_pipeline.py \
+              --language "$language" \
+              --output "translations/$language.json"
+            language_status=$?
+
+            if test -f "translations/$language.json"; then
+              git add "translations/$language.json"
+              if ! git diff --cached --quiet; then
+                git config user.name "Aponar Nihon Translation Bot"
+                git config user.email "actions@users.noreply.github.com"
+                git commit -m "i18n: checkpoint reviewed $language core memory"
+                git push origin "HEAD:${{ inputs.target_branch }}"
+              fi
+            fi
+
+            if test "$language_status" -ne 0; then
+              final_status="$language_status"
+              break
+            fi
+          done
+          exit "$final_status"
+
+      - name: Validate complete 10-language core catalog
+        run: python3 tools/i18n_core_pipeline.py --validate-dir translations
+
+      - name: Verify static build from reviewed memories
+        run: npm run verify
+
+      - name: Delete temporary translation Worker
+        if: always()
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx --yes wrangler@4 delete --config tools/i18n-worker/wrangler.toml --force
