@@ -1,5 +1,7 @@
 import { expect, test } from '@playwright/test';
 
+const TARGET_LANGUAGES = ['ja', 'en', 'vi', 'ne', 'hi', 'ur', 'my', 'zh', 'si', 'fil'];
+
 const CORE_ECOSYSTEM_ROUTES = [
   '/Hiragana-Katagana.html',
   '/n5.html',
@@ -57,6 +59,40 @@ test('core learning pages never call the full-page translation API', async ({ pa
   await expect(page.locator('body')).not.toContainText('MACHINE:');
 });
 
+test('all target languages serve direct-static N5 and grammar lesson 1 HTML', async ({ page }) => {
+  let runtimeRequests = 0;
+  await page.route('**/api/i18n/translate', async route => {
+    runtimeRequests += 1;
+    await route.fulfill({ status: 500, json: { ok: false, error: 'should_not_run' } });
+  });
+
+  for (const language of TARGET_LANGUAGES) {
+    await page.goto(`/${language}/n5/`, { waitUntil: 'domcontentloaded' });
+    await expect(page, `${language} N5`).toHaveURL(new RegExp(`/${language}/n5/?$`));
+    await expect(page.locator('html'), `${language} N5`).toHaveAttribute('lang', language);
+    await expect(page.locator('html'), `${language} N5`).toHaveAttribute('data-language-preset', language);
+    await expect(page.locator('html'), `${language} N5`).toHaveAttribute('data-i18n-mode', 'static-core');
+    await expect(page.locator('html'), `${language} N5`).toHaveAttribute('data-i18n-source', 'bn');
+
+    await page.goto(`/${language}/n5/grammar/lesson-01/`, { waitUntil: 'domcontentloaded' });
+    await expect(page, `${language} grammar lesson 1`).toHaveURL(
+      new RegExp(`/${language}/n5/grammar/lesson-01/?$`)
+    );
+    await expect(page.locator('html'), `${language} grammar lesson 1`).toHaveAttribute('lang', language);
+    await expect(page.locator('html'), `${language} grammar lesson 1`).toHaveAttribute(
+      'data-language-preset',
+      language
+    );
+    await expect(page.locator('html'), `${language} grammar lesson 1`).toHaveAttribute(
+      'data-i18n-mode',
+      'static-core'
+    );
+  }
+
+  await page.waitForTimeout(300);
+  expect(runtimeRequests).toBe(0);
+});
+
 test('Nepali N5 stays direct-static through vocabulary lesson 1', async ({ page }) => {
   await enableRuntimeLanguage(page, 'ne');
   let runtimeRequests = 0;
@@ -109,11 +145,13 @@ test('saved core language redirects to an alternate static HTML route when autho
   await expect(page.locator('html')).toHaveAttribute('lang', 'ne');
 });
 
-test('core language alternates point at separate HTML routes', async ({ page }) => {
+test('core language alternates expose every authored N5 locale route', async ({ page }) => {
   await enableRuntimeLanguage(page, 'bn');
   await page.goto('/n5.html');
-  const nepali = page.locator('link[rel~="alternate"][hreflang="ne"]');
-  await expect(nepali).toHaveAttribute('href', /\/ne\/n5\/?$/);
+  for (const language of TARGET_LANGUAGES) {
+    const alternate = page.locator(`link[rel~="alternate"][hreflang="${language}"]`);
+    await expect(alternate, language).toHaveAttribute('href', new RegExp(`/${language}/n5/?$`));
+  }
 });
 
 test('non-core pages retain runtime translation behavior', async ({ page }) => {
