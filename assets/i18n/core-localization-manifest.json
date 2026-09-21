@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "defaultLanguage": "bn",
   "sourceLanguage": "bn",
   "supportedLanguages": ["bn", "ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil"],
@@ -7,7 +7,16 @@
   "genericUiMode": "shared-dictionary-plus-runtime",
   "preserveJapaneseStudyText": true,
   "completeLocalizedPages": {
-    "ne": ["n5", "n5-vocabulary", "n5-vocab-lesson-01-real"]
+    "ja": ["n5"],
+    "en": ["n5"],
+    "vi": ["n5"],
+    "ne": ["n5", "n5-vocabulary", "n5-vocab-lesson-01-real"],
+    "hi": ["n5"],
+    "ur": ["n5"],
+    "my": ["n5"],
+    "zh": ["n5"],
+    "si": ["n5"],
+    "fil": ["n5"]
   },
   "exactPages": [
     "hiragana-katagana",
@@ -48,7 +57,7 @@
     "job__"
   ],
   "requiredCorePages": [
-    "hiragana-katagana",
+    "hiragana-katakana",
     "n5",
     "n5-vocabulary",
     "n5-grammar",
