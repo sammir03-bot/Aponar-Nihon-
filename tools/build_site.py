@@ -5,6 +5,7 @@ import argparse
 import shutil
 from pathlib import Path
 
+from sitecore.core_memory_locales import build_core_memory_pages
 from sitecore.htmltools import inject_assets, visible_text_hash
 from sitecore.i18n_policy import mark_static_core_pages
 from sitecore.linkcheck import find_broken_page_links
@@ -18,7 +19,7 @@ from sitecore.seo import prepare_search_engine_files
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_DIRS = {
     ".git", ".github", "_site", "android", "play-store", "node_modules",
-    "tools", "src", "tests", "workers", ".venv", "venv", "__pycache__",
+    "tools", "src", "tests", "workers", "translations", ".venv", "venv", "__pycache__",
     "playwright-report", "test-results",
 }
 EXCLUDED_FILES = {
@@ -130,6 +131,10 @@ def build(destination: Path, check_links: bool = False) -> int:
     injected, injection_checked = inject_professional_assets(destination)
     changed, post_checked, repaired, secured = postprocess_site(destination)
     localized_pages, localized_clusters, localized_nodes = build_localized_pages(destination)
+    memory_pages, memory_clusters, memory_nodes, memory_literals = build_core_memory_pages(
+        destination,
+        ROOT / "translations",
+    )
     literal_files, literal_replacements = apply_reviewed_literal_replacements(destination)
     static_core_changed, static_core_pages = mark_static_core_pages(destination)
     canonicals, noindex, seo_checked, verification, sitemap_urls = prepare_search_engine_files(destination)
@@ -152,6 +157,10 @@ def build(destination: Path, check_links: bool = False) -> int:
     print(f"Localized HTML pages: {localized_pages}")
     print(f"Localized hreflang clusters: {localized_clusters}")
     print(f"Reviewed text nodes localized at build time: {localized_nodes}")
+    print(f"Core-memory localized HTML pages: {memory_pages}")
+    print(f"Core-memory hreflang clusters: {memory_clusters}")
+    print(f"Core-memory text nodes localized at build time: {memory_nodes}")
+    print(f"Core-memory attribute/script literals localized at build time: {memory_literals}")
     print(f"Localized HTML files with reviewed literal replacements: {literal_files}")
     print(f"Reviewed attribute/script literals localized at build time: {literal_replacements}")
     print(f"Static-core pages protected from runtime content translation: {static_core_pages}")
