@@ -12,7 +12,7 @@ on:
         description: Branch that receives reviewed translation memories
         required: true
         type: string
-        default: main
+        default: feature/static-localized-core
 
 permissions:
   contents: write
@@ -42,16 +42,11 @@ jobs:
           node-version: "22"
           package-manager-cache: false
 
-      - name: Load reviewed translation engine
-        shell: bash
-        run: |
-          set -euo pipefail
-          git fetch origin feat/full-static-i18n:refs/remotes/origin/feat/full-static-i18n
-          git show origin/feat/full-static-i18n:tools/i18n_ai_pipeline.py > tools/i18n_ai_pipeline.py
-          mkdir -p tools/i18n-worker
-          git show origin/feat/full-static-i18n:tools/i18n-worker/index.ts > tools/i18n-worker/index.ts
-          git show origin/feat/full-static-i18n:tools/i18n-worker/wrangler.toml > tools/i18n-worker/wrangler.toml
-          python3 -m py_compile tools/i18n_ai_pipeline.py tools/i18n_core_pipeline.py
+      - name: Validate versioned translation engine
+        run: python3 -m py_compile tools/i18n_ai_pipeline.py tools/i18n_core_pipeline.py
+
+      - name: Check core translation guards
+        run: python3 -m unittest discover -s tests/python -v
 
       - name: Create temporary job credential
         shell: bash
@@ -92,16 +87,6 @@ jobs:
               --output "translations/$language.json"
             language_status=$?
 
-            if test -f "translations/$language.json"; then
-              git add "translations/$language.json"
-              if ! git diff --cached --quiet; then
-                git config user.name "Aponar Nihon Translation Bot"
-                git config user.email "actions@users.noreply.github.com"
-                git commit -m "i18n: checkpoint reviewed $language core memory"
-                git push origin "HEAD:${{ inputs.target_branch }}"
-              fi
-            fi
-
             if test "$language_status" -ne 0; then
               final_status="$language_status"
               break
@@ -114,6 +99,27 @@ jobs:
 
       - name: Verify static build from reviewed memories
         run: npm run verify
+
+      - name: Save resumable translation checkpoints
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: core-translation-checkpoints
+          path: translations/*.json
+          if-no-files-found: ignore
+
+      - name: Commit verified translation memories
+        env:
+          TARGET_BRANCH: ${{ inputs.target_branch }}
+        run: |
+          git check-ref-format --branch "$TARGET_BRANCH"
+          git add translations/*.json
+          if ! git diff --cached --quiet; then
+            git config user.name "Aponar Nihon Translation Bot"
+            git config user.email "actions@users.noreply.github.com"
+            git commit -m "i18n: publish verified core translation memories"
+            git push origin "HEAD:$TARGET_BRANCH"
+          fi
 
       - name: Delete temporary translation Worker
         if: always()

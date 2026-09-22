@@ -7,6 +7,8 @@ import sys
 from html.parser import HTMLParser
 from pathlib import Path
 
+from sitecore.core_memory_locales import load_reviewed_core_memories
+from sitecore.i18n_policy import is_static_core_page
 from sitecore.locales import SUPPORTED_LANGUAGES, localized_route_for_page, page_key
 
 
@@ -107,6 +109,14 @@ def main() -> int:
         or page.relative_to(SITE).parts[0] not in SUPPORTED_LANGUAGES
     ]
     page_by_key = {page_key(page, SITE): page for page in source_pages}
+    # Every memory-generated core route must pass the same checks as authored packs.
+    # Never trust a reviewed flag alone: a stale/partial memory can still leak source copy.
+    memories = load_reviewed_core_memories(ROOT / "translations")
+    completed = {language: list(keys) for language, keys in completed.items()}
+    for language in memories:
+        completed[language] = sorted(set(completed.get(language, [])) | {
+            key for key in page_by_key if is_static_core_page(key, manifest)
+        })
     checked = 0
 
     for language, keys in sorted(completed.items()):
@@ -122,7 +132,7 @@ def main() -> int:
                 fail(f"Completed locale page has no Bengali source page: {language}:{key}")
 
             pack = SITE / "assets" / "i18n" / "pages" / f"{key}.{language}.json"
-            if not pack.exists():
+            if not pack.exists() and language not in memories:
                 fail(f"Completed locale page is missing authored pack: {pack.relative_to(SITE)}")
 
             output = SITE / language / localized_route_for_page(source_page, SITE) / "index.html"

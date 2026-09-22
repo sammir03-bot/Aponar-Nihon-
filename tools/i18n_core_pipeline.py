@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """Run the reviewed AI translation pipeline against static-core pages only.
 
-The heavy translation/review engine is intentionally reused from the repository's
-`feat/full-static-i18n` implementation by the paid generation workflow. This wrapper
+The translation/review engine is versioned alongside this wrapper. This wrapper
 changes only source discovery: non-core/general pages keep the existing runtime i18n
 system and are never sent to the paid core translation job.
 """
@@ -34,7 +33,8 @@ def core_source_catalog(root: Path = ROOT) -> list[dict[str, object]]:
 
     for path in sorted(root.rglob("*.html")):
         rel = path.relative_to(root)
-        if not rel.parts or rel.parts[0] in SUPPORTED_LANGUAGES:
+        if (not rel.parts or rel.parts[0] in SUPPORTED_LANGUAGES
+                or any(part in pipeline.EXCLUDED_PARTS for part in rel.parts)):
             continue
         if path.name in EXCLUDED_HTML:
             continue
