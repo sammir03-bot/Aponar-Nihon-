@@ -73,6 +73,7 @@ test('all target languages serve direct-static N5 and grammar lesson 1 HTML', as
     await expect(page.locator('html'), `${language} N5`).toHaveAttribute('data-language-preset', language);
     await expect(page.locator('html'), `${language} N5`).toHaveAttribute('data-i18n-mode', 'static-core');
     await expect(page.locator('html'), `${language} N5`).toHaveAttribute('data-i18n-source', 'bn');
+    await expect(page.locator('main'), `${language} N5 copy`).not.toContainText(/[\u0980-\u09ff]/);
 
     await page.goto(`/${language}/n5/grammar/lesson-01/`, { waitUntil: 'domcontentloaded' });
     await expect(page, `${language} grammar lesson 1`).toHaveURL(
@@ -87,6 +88,23 @@ test('all target languages serve direct-static N5 and grammar lesson 1 HTML', as
       'data-i18n-mode',
       'static-core'
     );
+    await expect(page.locator('#ruleGrid .rule-card')).toHaveCount(6);
+    await expect(page.locator('#quizGrid .quiz-item')).toHaveCount(4);
+    await expect(page.locator('main'), `${language} grammar copy`).not.toContainText(/[\u0980-\u09ff]/);
+    const firstMark = page.locator('#ruleGrid .mark').first();
+    const wasLearned = await firstMark.evaluate(node => node.classList.contains('learned'));
+    await firstMark.click();
+    if (wasLearned) {
+      await expect(page.locator('#ruleGrid .mark').first()).not.toHaveClass(/learned/);
+    } else {
+      await expect(page.locator('#ruleGrid .mark').first()).toHaveClass(/learned/);
+    }
+    await page.locator('#quizGrid .quiz-item').first().locator('[data-correct="yes"]').click();
+    await expect(page.locator('#scoreText')).toHaveText('Score: 1 / 1');
+    await expect(page.locator('#toast')).not.toContainText(/[\u0980-\u09ff]/);
+    await page.locator('#searchInput').fill('じゃありません');
+    await expect(page.locator('#ruleGrid .rule-card:not(.hidden)')).toHaveCount(1);
+
   }
 
   await page.waitForTimeout(300);

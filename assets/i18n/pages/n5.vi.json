@@ -3,19 +3,319 @@
   "targetLanguage": "vi",
   "page": "n5",
   "reviewed": true,
+  "reviewStatus": "assistant-authored-pending-native-review",
   "entries": [
-    {"source":"হোম","target":"Trang chủ"},
-    {"source":"ZERO থেকে প্রথম JLPT ধাপ","target":"Bước JLPT đầu tiên từ con số 0"},
-    {"source":"জাপানির শক্ত ভিত","target":"Xây nền tảng tiếng Nhật thật vững"},
-    {"source":"N5 থেকেই তৈরি করুন","target":"Bắt đầu từ N5"},
-    {"source":"হিরাগানা-কাতাকানা থেকে Vocabulary, ১২০টি Kanji, Minna Grammar, Reading, Quiz ও ১০টি Full Mock—প্রতিটি বিষয়ের নিজস্ব learning page এবং আপনার সত্যিকারের saved progress এক জায়গায়।","target":"Từ Hiragana-Katakana đến Từ vựng, 120 Kanji, ngữ pháp Minna, Đọc hiểu, Quiz và 10 bài Full Mock—mỗi phần có trang học riêng, và tiến độ đã lưu thực tế của bạn được tập trung ở một nơi."},
-    {"source":"প্রথম Lesson শুরু করুন","target":"Bắt đầu bài học đầu tiên"},
-    {"source":"আপনার N5 অগ্রগতি","target":"Tiến độ N5 của bạn"},
-    {"source":"সংরক্ষিত lesson progress দেখা হচ্ছে…","target":"Đang kiểm tra tiến độ bài học đã lưu…"},
-    {"source":"যে skill দরকার, তার নিজস্ব page","target":"Mỗi kỹ năng có một trang riêng"},
-    {"source":"কার্ড খুললেই index-এর ভিড় নয়—সেই বিষয়ের full-screen lesson app আসবে। সম্পন্ন lesson-এর progress এই dashboard-এ ফিরে দেখা যাবে।","target":"Khi mở thẻ, bạn sẽ vào ứng dụng bài học toàn màn hình của đúng nội dung đó thay vì một trang index đông đúc. Tiến độ các bài đã hoàn thành sẽ được hiển thị lại trên dashboard này."},
-    {"source":"N5 শেখা আরও সহজ করুন","target":"Giúp việc học N5 dễ hơn nữa"},
-    {"source":"N5 শেষ করার সঠিক ক্রম","target":"Thứ tự đúng để hoàn thành N5"},
-    {"source":"একসঙ্গে সব নয়—এই চার ধাপে এগোলে শেখা, recall ও exam practice ভারসাম্য থাকবে।","target":"Không học tất cả cùng lúc—đi theo bốn bước này sẽ giúp cân bằng việc học, ghi nhớ và luyện thi."}
+    {
+      "source": "JLPT N5 বাংলা complete learning center—Vocabulary, ১২০ Kanji, Grammar, Reading, Quiz, Mock Test, real progress ও AI Tutor।",
+      "target": "Trung tâm học JLPT N5: từ vựng, 120 chữ kanji, ngữ pháp, đọc hiểu, câu hỏi luyện tập, thi thử, tiến độ đã lưu và gia sư AI."
+    },
+    {
+      "source": "কুইজ",
+      "target": "Câu hỏi luyện tập"
+    },
+    {
+      "source": "হোমে ফিরুন",
+      "target": "Về trang chủ"
+    },
+    {
+      "source": "সব সেকশনের মেনু খুলুন",
+      "target": "Mở menu tất cả các mục"
+    },
+    {
+      "source": "মেনু",
+      "target": "Menu"
+    },
+    {
+      "source": "হোম",
+      "target": "Trang chủ"
+    },
+    {
+      "source": "ZERO থেকে প্রথম JLPT ধাপ",
+      "target": "Bước JLPT đầu tiên từ con số 0"
+    },
+    {
+      "source": "জাপানির শক্ত ভিত",
+      "target": "Xây nền tảng tiếng Nhật thật vững"
+    },
+    {
+      "source": "N5 থেকেই তৈরি করুন",
+      "target": "Bắt đầu từ N5"
+    },
+    {
+      "source": "হিরাগানা-কাতাকানা থেকে Vocabulary, ১২০টি Kanji, Minna Grammar, Reading, Quiz ও ১০টি Full Mock—প্রতিটি বিষয়ের নিজস্ব learning page এবং আপনার সত্যিকারের saved progress এক জায়গায়।",
+      "target": "Từ Hiragana-Katakana đến Từ vựng, 120 Kanji, ngữ pháp Minna, Đọc hiểu, Quiz và 10 bài Full Mock—mỗi phần có trang học riêng, và tiến độ đã lưu thực tế của bạn được tập trung ở một nơi."
+    },
+    {
+      "source": "প্রথম Lesson শুরু করুন",
+      "target": "Bắt đầu bài học đầu tiên"
+    },
+    {
+      "source": "আমি N5 শুরু করছি। আজকের জন্য একটি ছোট lesson দিন",
+      "target": "Tôi mới bắt đầu học N5. Hãy cho tôi một bài học ngắn hôm nay."
+    },
+    {
+      "source": "N5 শেখার অগ্রগতি",
+      "target": "Tiến độ học N5"
+    },
+    {
+      "source": "আপনার N5 অগ্রগতি",
+      "target": "Tiến độ N5 của bạn"
+    },
+    {
+      "source": "সংরক্ষিত lesson progress দেখা হচ্ছে…",
+      "target": "Đang kiểm tra tiến độ bài học đã lưu…"
+    },
+    {
+      "source": "N5 কোর্স তথ্য",
+      "target": "Thông tin khóa học N5"
+    },
+    {
+      "source": "২৫ Lesson",
+      "target": "25 bài học"
+    },
+    {
+      "source": "১২০ Kanji",
+      "target": "120 chữ kanji"
+    },
+    {
+      "source": "২৫ Grammar",
+      "target": "25 bài ngữ pháp"
+    },
+    {
+      "source": "Minna ভিত্তিক path",
+      "target": "Lộ trình dựa trên Minna"
+    },
+    {
+      "source": "১০ Full Mock",
+      "target": "10 đề thi thử đầy đủ"
+    },
+    {
+      "source": "Timer + বাংলা review",
+      "target": "Đồng hồ đếm giờ + xem lại đáp án"
+    },
+    {
+      "source": "যে skill দরকার, তার নিজস্ব page",
+      "target": "Mỗi kỹ năng có một trang riêng"
+    },
+    {
+      "source": "কার্ড খুললেই index-এর ভিড় নয়—সেই বিষয়ের full-screen lesson app আসবে। সম্পন্ন lesson-এর progress এই dashboard-এ ফিরে দেখা যাবে।",
+      "target": "Khi mở thẻ, bạn sẽ vào ứng dụng bài học toàn màn hình của đúng nội dung đó thay vì một trang index đông đúc. Tiến độ các bài đã hoàn thành sẽ được hiển thị lại trên dashboard này."
+    },
+    {
+      "source": "বাংলা অর্থ, ব্যবহার, search, lesson filter এবং continue button-সহ ১–২৫ পর্যন্ত পূর্ণাঙ্গ শব্দভাণ্ডার।",
+      "target": "Từ vựng bài 1–25 với nghĩa, cách dùng, tìm kiếm, bộ lọc bài học và nút tiếp tục."
+    },
+    {
+      "source": "শব্দ শেখা শুরু করুন",
+      "target": "Bắt đầu học từ vựng"
+    },
+    {
+      "source": "১২০টি N5 Kanji",
+      "target": "120 chữ kanji N5"
+    },
+    {
+      "source": "Flip card, reading, শব্দ, writing trace, quiz ও learned tracker দিয়ে Kanji চোখে-হাতে মনে রাখুন।",
+      "target": "Ghi nhớ kanji qua thẻ lật, cách đọc, từ vựng, tập viết, câu hỏi luyện tập và theo dõi nội dung đã học."
+    },
+    {
+      "source": "Kanji Lab খুলুন",
+      "target": "Mở phòng luyện kanji"
+    },
+    {
+      "source": "Lesson 1–25, formula, বাংলা ব্যাখ্যা, real example, search ও lesson completion tracker।",
+      "target": "Bài 1–25, mẫu câu, giải thích, ví dụ thực tế, tìm kiếm và theo dõi hoàn thành bài học."
+    },
+    {
+      "source": "Grammar path খুলুন",
+      "target": "Mở lộ trình ngữ pháp"
+    },
+    {
+      "source": "১০টি আলাদা reading part—ছোট passage, শব্দের reading, comprehension ও বাংলা সহায়তা।",
+      "target": "10 phần đọc hiểu với đoạn văn ngắn, cách đọc từ và hỗ trợ hiểu nội dung."
+    },
+    {
+      "source": "Part 1 থেকে পড়ুন",
+      "target": "Đọc từ phần 1"
+    },
+    {
+      "source": "Vocabulary, Kanji, Grammar ও Reading—উত্তর দিলেই বাংলা explanation এবং progress auto-save।",
+      "target": "Từ vựng, kanji, ngữ pháp và đọc hiểu: xem giải thích sau khi trả lời, tiến độ được lưu tự động."
+    },
+    {
+      "source": "দ্রুত Quiz দিন",
+      "target": "Làm bài luyện tập nhanh"
+    },
+    {
+      "source": "বাস্তব timing, Listening, auto-save, ১৮০ নম্বরের marksheet ও ভুলের বাংলা review-সহ ১০টি exam।",
+      "target": "10 bài thi với thời gian thực tế, nghe hiểu, tự động lưu, bảng điểm trên thang 180 và xem lại lỗi sai."
+    },
+    {
+      "source": "Mock Test খুলুন",
+      "target": "Mở đề thi thử"
+    },
+    {
+      "source": "N5 শেখা আরও সহজ করুন",
+      "target": "Giúp việc học N5 dễ hơn nữa"
+    },
+    {
+      "source": "হিরাগানা-কাতাকানা",
+      "target": "Hiragana và katakana"
+    },
+    {
+      "source": "অক্ষর আগে শক্ত করুন",
+      "target": "Nắm chắc kana trước"
+    },
+    {
+      "source": "Confusing pattern তুলনা",
+      "target": "So sánh các mẫu dễ nhầm"
+    },
+    {
+      "source": "আজকের Challenge",
+      "target": "Thử thách hôm nay"
+    },
+    {
+      "source": "প্রতিদিন নতুন part",
+      "target": "Mỗi ngày một phần mới"
+    },
+    {
+      "source": "দরকারি বাক্য",
+      "target": "Cụm từ hữu ích"
+    },
+    {
+      "source": "বাস্তব জীবনের Japanese",
+      "target": "Tiếng Nhật trong đời sống"
+    },
+    {
+      "source": "N5 শেষ করার সঠিক ক্রম",
+      "target": "Thứ tự đúng để hoàn thành N5"
+    },
+    {
+      "source": "একসঙ্গে সব নয়—এই চার ধাপে এগোলে শেখা, recall ও exam practice ভারসাম্য থাকবে।",
+      "target": "Không học tất cả cùng lúc—đi theo bốn bước này sẽ giúp cân bằng việc học, ghi nhớ và luyện thi."
+    },
+    {
+      "source": "কানা + Vocabulary",
+      "target": "Kana + từ vựng"
+    },
+    {
+      "source": "প্রথমে Kana নিশ্চিত করুন; প্রতিদিন এক lesson-এর শব্দ জোরে পড়ুন।",
+      "target": "Nắm chắc kana trước, rồi mỗi ngày đọc to từ vựng của một bài."
+    },
+    {
+      "source": "সেই দিনের শব্দের Kanji এবং একটি sentence pattern একসঙ্গে নিন।",
+      "target": "Kết hợp kanji trong từ vựng hôm đó với một mẫu câu."
+    },
+    {
+      "source": "নোট না দেখে অর্থ বলুন, তারপর ছোট passage দিয়ে বোঝা যাচাই করুন।",
+      "target": "Nhớ lại nghĩa mà không nhìn ghi chú, rồi kiểm tra mức độ hiểu bằng một đoạn văn ngắn."
+    },
+    {
+      "source": "Category quiz-এর ভুল revise করে timed mock-এ বসুন।",
+      "target": "Ôn lỗi sai trong bài luyện tập theo chủ đề trước khi làm đề thi thử có giới hạn thời gian."
+    },
+    {
+      "source": "এই সপ্তাহের N5 plan",
+      "target": "Kế hoạch N5 tuần này"
+    },
+    {
+      "source": "নিজে tick দিন—এই device-এ checklist থাকবে।",
+      "target": "Tự đánh dấu mục đã làm. Danh sách được lưu trên thiết bị này."
+    },
+    {
+      "source": "0/6 শেষ",
+      "target": "0/6 hoàn thành"
+    },
+    {
+      "source": "২টি Vocabulary lesson",
+      "target": "2 bài từ vựng"
+    },
+    {
+      "source": "১৫টি Kanji recall",
+      "target": "Nhớ lại 15 chữ kanji"
+    },
+    {
+      "source": "২টি Grammar pattern",
+      "target": "2 mẫu ngữ pháp"
+    },
+    {
+      "source": "১টি Reading passage",
+      "target": "1 đoạn đọc hiểu"
+    },
+    {
+      "source": "১টি Category quiz",
+      "target": "1 bài luyện tập theo chủ đề"
+    },
+    {
+      "source": "ভুলের ১৫ মিনিট review",
+      "target": "Ôn lỗi sai trong 15 phút"
+    },
+    {
+      "source": "না বুঝলে N5 AI Coach",
+      "target": "Cần giúp đỡ? Hỏi huấn luyện viên AI N5"
+    },
+    {
+      "source": "আপনার level আগে থেকেই N5 থাকবে। Grammar, sentence correction বা ছোট quiz—যেটা চান লিখে পাঠান।",
+      "target": "Trình độ của bạn đã được đặt là N5. Hãy yêu cầu giải thích ngữ pháp, sửa câu hoặc bài luyện tập ngắn."
+    },
+    {
+      "source": "আজকের N5 lesson সহজ বাংলায় শেখান",
+      "target": "Hãy dạy bài N5 hôm nay bằng tiếng Việt đơn giản."
+    },
+    {
+      "source": "Tutor খুলুন",
+      "target": "Mở gia sư"
+    },
+    {
+      "source": "পরের ধাপ N4",
+      "target": "Bước tiếp theo: N4"
+    },
+    {
+      "source": "সব Quiz",
+      "target": "Tất cả bài luyện tập"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "Liên hệ"
+    },
+    {
+      "source": "আপনার নিহোন · বাংলায় জাপানি শেখার পূর্ণাঙ্গ পথ",
+      "target": "Aponar Nihon · Lộ trình đầy đủ học tiếng Nhật bằng tiếng Việt"
+    },
+    {
+      "source": "প্রধান অ্যাপ নেভিগেশন",
+      "target": "Điều hướng chính của ứng dụng"
+    },
+    {
+      "source": "✓ Progress সংরক্ষণ হয়েছে",
+      "target": "✓ Đã lưu tiến độ"
+    },
+    {
+      "source": "শুরু হয়নি",
+      "target": "Chưa bắt đầu"
+    },
+    {
+      "source": "বাংলায়",
+      "target": "bằng tiếng Việt"
+    },
+    {
+      "source": "বাংলা",
+      "target": "Tiếng Việt"
+    },
+    {
+      "source": "শব্দভাণ্ডার",
+      "target": "Từ vựng"
+    },
+    {
+      "source": "শব্দ",
+      "target": "Từ"
+    },
+    {
+      "source": "সম্পন্ন",
+      "target": "hoàn thành"
+    },
+    {
+      "source": "খুলুন",
+      "target": "Mở"
+    }
   ]
 }

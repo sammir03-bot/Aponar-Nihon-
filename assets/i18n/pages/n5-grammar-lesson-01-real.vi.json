@@ -3,26 +3,351 @@
   "targetLanguage": "vi",
   "page": "n5-grammar-lesson-01-real",
   "reviewed": true,
-  "reviewStatus": "ported-reviewed-pack",
+  "reviewStatus": "assistant-authored-pending-native-review",
   "entries": [
-    {"source":"নিজের পরিচয়, negative sentence, question, also/too, possession — Minna no Nihongo lesson mapping + online cross-check মিলিয়ে সহজ ভাষায় ব্যাখ্যা, নতুন উদাহরণ, mistake note ও quiz সহ সাজানো।","target":"Học cách tự giới thiệu, câu phủ định, câu hỏi, “cũng”, và sở hữu—được giải thích đơn giản dựa trên bài Minna no Nihongo và đối chiếu trực tuyến, kèm ví dụ mới, lưu ý lỗi và bài quiz."},
-    {"source":"Grammar শেখা শুরু","target":"Bắt đầu học ngữ pháp"},
-    {"source":"আজকের লক্ষ্য","target":"Mục tiêu hôm nay"},
-    {"source":"নিজের পরিচয় দিতে পারবে","target":"Có thể tự giới thiệu"},
-    {"source":"না-বাচক বাক্য বানাতে পারবে","target":"Có thể tạo câu phủ định"},
-    {"source":"প্রশ্ন করতে ও উত্তর দিতে পারবে","target":"Có thể hỏi và trả lời"},
-    {"source":"“ও/also” এবং “এর/র” ব্যবহার করতে পারবে","target":"Có thể dùng “cũng” và “của”"},
-    {"source":"Structure + বাংলা ব্যাখ্যা + Example","target":"Cấu trúc + giải thích dễ hiểu + ví dụ"},
-    {"source":"প্রতি card ভালো করে পড়ুন, example মুখে বলুন, mistake note দেখুন, তারপর ✓ চাপ দিয়ে learned mark করুন।","target":"Đọc kỹ từng thẻ, nói ví dụ thành tiếng, xem phần lỗi thường gặp rồi nhấn ✓ để đánh dấu đã học."},
-    {"source":"পরিচয়ের প্রয়োজনীয় pattern","target":"Mẫu câu cần thiết khi giới thiệu"},
-    {"source":"Blank পূরণ করে নিজের sentence বানান","target":"Điền vào chỗ trống và tạo câu của riêng bạn"},
-    {"source":"নিজেকে পরীক্ষা করুন","target":"Tự kiểm tra"},
-    {"source":"সঠিক উত্তর চাপুন। ভুল হলে সাথে সাথে correct answer দেখাবে।","target":"Chọn đáp án đúng. Nếu sai, đáp án chính xác sẽ hiện ngay."},
-    {"source":"N1 সম্পর্কে N2 বলা হয়। は লিখলেও উচ্চারণ “wa”। です বাক্যের শেষে polite “হয়/আছি/আছেন” অর্থে আসে।","target":"N2 cho biết thông tin về N1. Trợ từ は được viết là “ha” nhưng đọc là “wa”. です đứng cuối câu để làm câu nói lịch sự."},
-    {"source":"Noun/adjective sentence negative করতে です এর জায়গায় じゃありません বসে। ではありません একটু বেশি formal।","target":"Để phủ định câu danh từ hoặc tính từ na, thay です bằng じゃありません. ではありません trang trọng hơn một chút."},
-    {"source":"বয়স বলতে সংখ্যার পরে 歳（さい） বসে। বয়স জানতে 何歳ですか; আরও ভদ্রভাবে おいくつですか বলা হয়।","target":"Khi nói tuổi, đặt 歳（さい） sau con số. Hỏi tuổi bằng 何歳ですか; cách lịch sự hơn là おいくつですか."},
-    {"source":"বাক্যের শেষে か বসলে প্রশ্ন হয়। Japanese formal writing-এ সাধারণত ? না দিলেও চলে।","target":"Thêm か ở cuối câu sẽ biến câu thành câu hỏi. Trong tiếng Nhật trang trọng, thường không cần dấu hỏi."},
-    {"source":"একই তথ্য অন্য subject-এর ক্ষেত্রেও সত্য হলে は এর জায়গায় も বসে। বাংলা অর্থ “ও/also/too”।","target":"Khi cùng một thông tin cũng đúng với chủ thể khác, dùng も thay cho は. Nghĩa là “cũng”."},
-    {"source":"N1-এর N2, N1 সম্পর্কিত N2—বাংলার “এর/র” অর্থে の বসে।","target":"N1 の N2 diễn tả N2 thuộc về hoặc có liên quan đến N1, tức quan hệ sở hữu hoặc liên kết."}
+    {
+      "source": "নিজের পরিচয়, negative sentence, question, also/too, possession — Minna no Nihongo lesson mapping + online cross-check মিলিয়ে সহজ ভাষায় ব্যাখ্যা, নতুন উদাহরণ, mistake note ও quiz সহ সাজানো।",
+      "target": "Học cách tự giới thiệu, câu phủ định, câu hỏi, “cũng”, và sở hữu—được giải thích đơn giản dựa trên bài Minna no Nihongo và đối chiếu trực tuyến, kèm ví dụ mới, lưu ý lỗi và bài quiz."
+    },
+    {
+      "source": "Grammar শেখা শুরু",
+      "target": "Bắt đầu học ngữ pháp"
+    },
+    {
+      "source": "আজকের লক্ষ্য",
+      "target": "Mục tiêu hôm nay"
+    },
+    {
+      "source": "নিজের পরিচয় দিতে পারবে",
+      "target": "Có thể tự giới thiệu"
+    },
+    {
+      "source": "না-বাচক বাক্য বানাতে পারবে",
+      "target": "Có thể tạo câu phủ định"
+    },
+    {
+      "source": "প্রশ্ন করতে ও উত্তর দিতে পারবে",
+      "target": "Có thể hỏi và trả lời"
+    },
+    {
+      "source": "“ও/also” এবং “এর/র” ব্যবহার করতে পারবে",
+      "target": "Có thể dùng “cũng” và “của”"
+    },
+    {
+      "source": "Structure + বাংলা ব্যাখ্যা + Example",
+      "target": "Cấu trúc + giải thích dễ hiểu + ví dụ"
+    },
+    {
+      "source": "প্রতি card ভালো করে পড়ুন, example মুখে বলুন, mistake note দেখুন, তারপর ✓ চাপ দিয়ে learned mark করুন।",
+      "target": "Đọc kỹ từng thẻ, nói ví dụ thành tiếng, xem phần lỗi thường gặp rồi nhấn ✓ để đánh dấu đã học."
+    },
+    {
+      "source": "পরিচয়ের প্রয়োজনীয় pattern",
+      "target": "Mẫu câu cần thiết khi giới thiệu"
+    },
+    {
+      "source": "Blank পূরণ করে নিজের sentence বানান",
+      "target": "Điền vào chỗ trống và tạo câu của riêng bạn"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "সঠিক উত্তর চাপুন। ভুল হলে সাথে সাথে correct answer দেখাবে।",
+      "target": "Chọn đáp án đúng. Nếu sai, đáp án chính xác sẽ hiện ngay."
+    },
+    {
+      "source": "N1 সম্পর্কে N2 বলা হয়। は লিখলেও উচ্চারণ “wa”। です বাক্যের শেষে polite “হয়/আছি/আছেন” অর্থে আসে।",
+      "target": "N2 cho biết thông tin về N1. Trợ từ は được viết là “ha” nhưng đọc là “wa”. です đứng cuối câu để làm câu nói lịch sự."
+    },
+    {
+      "source": "Noun/adjective sentence negative করতে です এর জায়গায় じゃありません বসে। ではありません একটু বেশি formal।",
+      "target": "Để phủ định câu danh từ hoặc tính từ na, thay です bằng じゃありません. ではありません trang trọng hơn một chút."
+    },
+    {
+      "source": "বয়স বলতে সংখ্যার পরে 歳（さい） বসে। বয়স জানতে 何歳ですか; আরও ভদ্রভাবে おいくつですか বলা হয়।",
+      "target": "Khi nói tuổi, đặt 歳（さい） sau con số. Hỏi tuổi bằng 何歳ですか; cách lịch sự hơn là おいくつですか."
+    },
+    {
+      "source": "বাক্যের শেষে か বসলে প্রশ্ন হয়। Japanese formal writing-এ সাধারণত ? না দিলেও চলে।",
+      "target": "Thêm か ở cuối câu sẽ biến câu thành câu hỏi. Trong tiếng Nhật trang trọng, thường không cần dấu hỏi."
+    },
+    {
+      "source": "একই তথ্য অন্য subject-এর ক্ষেত্রেও সত্য হলে は এর জায়গায় も বসে। বাংলা অর্থ “ও/also/too”।",
+      "target": "Khi cùng một thông tin cũng đúng với chủ thể khác, dùng も thay cho は. Nghĩa là “cũng”."
+    },
+    {
+      "source": "N1-এর N2, N1 সম্পর্কিত N2—বাংলার “এর/র” অর্থে の বসে।",
+      "target": "N1 の N2 diễn tả N2 thuộc về hoặc có liên quan đến N1, tức quan hệ sở hữu hoặc liên kết."
+    },
+    {
+      "source": "বাংলা উচ্চারণ・ওয়াতাশি হা＿＿দেসু।",
+      "target": "Romaji · Watashi wa ＿＿ desu."
+    },
+    {
+      "source": "বাংলা উচ্চারণ・ওয়াতাশি হা＿＿ জা আরিমাসেন।",
+      "target": "Romaji · Watashi wa ＿＿ ja arimasen."
+    },
+    {
+      "source": "বাংলা উচ্চারণ・＿＿ সান মো গাকুসেইদেসু।",
+      "target": "Romaji · ＿＿ san mo gakusei desu."
+    },
+    {
+      "source": "বাংলা উচ্চারণ・কোরে হা＿＿ নো হোনদেসু।",
+      "target": "Romaji · Kore wa ＿＿ no hon desu."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া গাকুসেইদেসু।",
+      "target": "Watashi wa gakusei desu."
+    },
+    {
+      "source": "সামিরু সান ওয়া বানগুরাদেশু জিনদেসু।",
+      "target": "Samīru-san wa Banguradeshu-jin desu."
+    },
+    {
+      "source": "কারিনা সান ওয়া এনজিনিয়াদেসু।",
+      "target": "Karina-san wa enjinia desu."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া সেনসেই জা আরিমাসেন।",
+      "target": "Watashi wa sensei ja arimasen."
+    },
+    {
+      "source": "আনো হিতো ওয়া কাইশা ইন দে ওয়া আরিমাসেন।",
+      "target": "Ano hito wa kaishain de wa arimasen."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া নিহোনজিন জা আরিমাসেন।",
+      "target": "Watashi wa Nihonjin ja arimasen."
+    },
+    {
+      "source": "মিরা সান ওয়া নিজুহাস্সাই দেসু।",
+      "target": "Mirā-san wa nijūhassai desu."
+    },
+    {
+      "source": "সামিরু সান ওয়া নান সাইদেসু কা।",
+      "target": "Samīru-san wa nansai desu ka."
+    },
+    {
+      "source": "ও ইকুৎসুদেসু কা।",
+      "target": "Oikutsu desu ka."
+    },
+    {
+      "source": "আনাতা ওয়া গাকুসেইদেসু কা।",
+      "target": "Anata wa gakusei desu ka."
+    },
+    {
+      "source": "ও নামায়ে ওয়া নানিদেসু কা।",
+      "target": "Onamae wa nan desu ka."
+    },
+    {
+      "source": "নান সাইদেসু কা।",
+      "target": "Nansai desu ka."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া গাকুসেইদেসু। তানাকা সান মো গাকুসেইদেসু।",
+      "target": "Watashi wa gakusei desu. Tanaka-san mo gakusei desu."
+    },
+    {
+      "source": "কারিনা সান ওয়া ইশাদেসু। মিরা সান মো ইশাদেসু।",
+      "target": "Karina-san wa isha desu. Mirā-san mo isha desu."
+    },
+    {
+      "source": "ওয়াতাশি নো হোনদেসু।",
+      "target": "Watashi no hon desu."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া Axiom নো গাকুসেইদেসু।",
+      "target": "Watashi wa Axiom no gakusei desu."
+    },
+    {
+      "source": "তোয়োতা নো শাইনদেসু।",
+      "target": "Toyota no shain desu."
+    },
+    {
+      "source": "Minna no Nihongo N5 Grammar Lesson 1 — বাংলা explanation, structure, example, quiz এবং progress tracker সহ premium HTML।",
+      "target": "Ngữ pháp N5 Minna no Nihongo bài 1: giải thích, mẫu câu, ví dụ, câu hỏi luyện tập và theo dõi tiến độ."
+    },
+    {
+      "source": "Login ছাড়া progress save",
+      "target": "Lưu tiến độ mà không cần đăng nhập"
+    },
+    {
+      "source": "grammar / Japanese / বাংলা দিয়ে search করুন…",
+      "target": "Tìm theo ngữ pháp, tiếng Nhật hoặc tiếng Việt…"
+    },
+    {
+      "source": "কাজ",
+      "target": "Nghề nghiệp"
+    },
+    {
+      "source": "পরিচয়",
+      "target": "Giới thiệu bản thân"
+    },
+    {
+      "source": "বয়স",
+      "target": "Tuổi"
+    },
+    {
+      "source": "জাপানিতে প্রথমে topic বলা হয়, তারপর topic সম্পর্কে তথ্য দেওয়া হয়।",
+      "target": "Trong tiếng Nhật, chủ đề được nêu trước, sau đó là thông tin về chủ đề đó."
+    },
+    {
+      "source": "আমি ছাত্র/শিক্ষার্থী।",
+      "target": "Tôi là học sinh/sinh viên."
+    },
+    {
+      "source": "সামির-সান বাংলাদেশি।",
+      "target": "Samir là người Bangladesh."
+    },
+    {
+      "source": "কারিনা-সান ইঞ্জিনিয়ার।",
+      "target": "Karina là kỹ sư."
+    },
+    {
+      "source": "は-কে “ha” না পড়ে “wa” পড়বেন।",
+      "target": "Đọc trợ từ は là “wa”, không phải “ha”."
+    },
+    {
+      "source": "ইন্টারভিউ/স্কুলে formal বলতে চাইলে ではありません ব্যবহার করা নিরাপদ।",
+      "target": "Dùng ではありません để diễn đạt trang trọng hơn, chẳng hạn ở trường hoặc khi phỏng vấn."
+    },
+    {
+      "source": "আমি শিক্ষক নই।",
+      "target": "Tôi không phải là giáo viên."
+    },
+    {
+      "source": "ঐ ব্যক্তি কোম্পানি কর্মচারী নন।",
+      "target": "Người kia không phải là nhân viên công ty."
+    },
+    {
+      "source": "আমি জাপানি নই।",
+      "target": "Tôi không phải là người Nhật."
+    },
+    {
+      "source": "じゃありません এর আগে です বসাবেন না: ×ですじゃありません।",
+      "target": "Không đặt です trước じゃありません: ×ですじゃありません."
+    },
+    {
+      "source": "নিজের পরিচয়, স্কুলের form এবং প্রথম আলাপে বয়স বলা বা জিজ্ঞাসা করতে লাগে।",
+      "target": "Dùng để nói hoặc hỏi tuổi khi giới thiệu bản thân, điền biểu mẫu ở trường và trong lần đầu trò chuyện."
+    },
+    {
+      "source": "মিলারের বয়স ২৮ বছর।",
+      "target": "Miller 28 tuổi."
+    },
+    {
+      "source": "সামিরের বয়স কত?",
+      "target": "Samir bao nhiêu tuổi?"
+    },
+    {
+      "source": "আপনার বয়স কত? (ভদ্র)",
+      "target": "Anh/chị bao nhiêu tuổi? (lịch sự)"
+    },
+    {
+      "source": "何歳-এর উচ্চারণ なんさい; 何さい-কে なにさい পড়বেন না।",
+      "target": "Đọc 何歳 là なんさい, không phải なにさい."
+    },
+    {
+      "source": "Interview, classroom, দোকান—সব জায়গায় polite question করতে লাগবে।",
+      "target": "Dùng để hỏi lịch sự trong phỏng vấn, lớp học và cửa hàng."
+    },
+    {
+      "source": "আপনি কি ছাত্র?",
+      "target": "Bạn là học sinh/sinh viên phải không?"
+    },
+    {
+      "source": "আপনার নাম কী?",
+      "target": "Anh/chị tên là gì?"
+    },
+    {
+      "source": "বয়স কত?",
+      "target": "Bao nhiêu tuổi?"
+    },
+    {
+      "source": "か যোগ করলে intonation উঠলেও বাক্য polite থাকে।",
+      "target": "Thêm か để tạo câu hỏi; câu vẫn lịch sự dù ngữ điệu lên cao."
+    },
+    {
+      "source": "একই পেশা/জাতীয়তা/পরিচয় বলার সময় খুব useful।",
+      "target": "Hữu ích khi nói về những người có cùng nghề nghiệp, quốc tịch hoặc thân phận."
+    },
+    {
+      "source": "আমি ছাত্র। তানাকা-সানও ছাত্র।",
+      "target": "Tôi là sinh viên. Tanaka cũng là sinh viên."
+    },
+    {
+      "source": "কারিনা-সান ডাক্তার। মিলার-সানও ডাক্তার।",
+      "target": "Karina là bác sĩ. Miller cũng là bác sĩ."
+    },
+    {
+      "source": "も এবং は একসাথে বসাবেন না: ×私はも।",
+      "target": "Không dùng も và は cùng nhau: ×私はも."
+    },
+    {
+      "source": "নাম, দেশ, কোম্পানি, স্কুল, বই—সব সম্পর্ক বোঝাতে の দরকার।",
+      "target": "Dùng の để thể hiện quan hệ giữa người, quốc gia, công ty, trường học hoặc đồ vật."
+    },
+    {
+      "source": "আমার বই।",
+      "target": "Đây là sách của tôi."
+    },
+    {
+      "source": "আমি Axiom-এর ছাত্র।",
+      "target": "Tôi là học viên của Axiom."
+    },
+    {
+      "source": "টয়োটার কর্মচারী।",
+      "target": "Là nhân viên của Toyota."
+    },
+    {
+      "source": "বাংলার মতো শেষে “এর” নয়; Japanese-এ সম্পর্কের word আগে: 私の本।",
+      "target": "Trong tiếng Nhật, người sở hữu hoặc đơn vị liên quan đứng trước: 私の本 nghĩa là “sách của tôi”."
+    },
+    {
+      "source": "‘মিলারের বয়স ২৮ বছর’ কোনটি?",
+      "target": "Câu nào có nghĩa là “Miller 28 tuổi”?"
+    },
+    {
+      "source": "は particle কী বোঝায়?",
+      "target": "Trợ từ は biểu thị điều gì?"
+    },
+    {
+      "source": "“also/too” অর্থে কোন particle?",
+      "target": "Trợ từ nào có nghĩa là “cũng”?"
+    },
+    {
+      "source": "“আমার বই” কোনটি?",
+      "target": "Cụm nào có nghĩa là “sách của tôi”?"
+    },
+    {
+      "source": "Japanese শুনুন",
+      "target": "Nghe tiếng Nhật"
+    },
+    {
+      "source": "এই browser-এ Japanese voice নেই",
+      "target": "Trình duyệt này không có giọng đọc tiếng Nhật"
+    },
+    {
+      "source": "Audio চালু করা যায়নি",
+      "target": "Không thể phát âm thanh"
+    },
+    {
+      "source": "正解! সঠিক",
+      "target": "正解! Chính xác"
+    },
+    {
+      "source": "ভুল হয়েছে",
+      "target": "Chưa đúng"
+    },
+    {
+      "source": "কেন ব্যবহার করবেন:",
+      "target": "Khi nào sử dụng:"
+    },
+    {
+      "source": "বাংলা উচ্চারণ",
+      "target": "Romaji"
+    }
   ]
 }
