@@ -74,3 +74,5 @@ jobs:
           if-no-files-found: error
           compression-level: 0
           retention-days: 14
+
+# APKPure release build refresh: 2026-09-25
