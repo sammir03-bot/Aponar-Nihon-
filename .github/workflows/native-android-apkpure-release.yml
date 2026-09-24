@@ -1,0 +1,158 @@
+name: Aponar Nihon APKPure Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/native-android-apkpure-release.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build-sign-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    defaults:
+      run:
+        working-directory: mobile
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install mobile dependencies
+        run: npm install --ignore-scripts --no-audit --no-fund
+
+      - name: TypeScript check
+        run: npm run typecheck
+
+      - name: Expo doctor
+        run: npm run doctor
+
+      - name: Generate Android native project
+        run: npm run prebuild:android -- --no-install
+
+      - name: Build unsigned optimized release APK
+        working-directory: mobile/android
+        env:
+          NODE_ENV: production
+        run: ./gradlew --no-daemon --stacktrace :app:assembleRelease
+
+      - name: Create private release signing identity
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p dist/signing-private
+          SIGNING_PASSWORD="$(python3 -c 'import secrets; print(secrets.token_urlsafe(32))')"
+          printf 'SIGNING_PASSWORD=%s\n' "$SIGNING_PASSWORD" >> "$GITHUB_ENV"
+          keytool -genkeypair \
+            -keystore dist/signing-private/Aponar-Nihon-release-key.jks \
+            -storetype PKCS12 \
+            -alias aponarnihon \
+            -keyalg RSA \
+            -keysize 4096 \
+            -validity 10000 \
+            -storepass "$SIGNING_PASSWORD" \
+            -keypass "$SIGNING_PASSWORD" \
+            -dname 'CN=Aponar Nihon, OU=Android Release, O=Aponar Nihon, C=JP'
+          cat > dist/signing-private/Aponar-Nihon-signing-credentials.txt <<EOF
+          Aponar Nihon Android release signing credentials
+
+          Keystore file: Aponar-Nihon-release-key.jks
+          Alias: aponarnihon
+          Store password: $SIGNING_PASSWORD
+          Key password: $SIGNING_PASSWORD
+          Package: com.aponarnihon.app
+          Version: 1.0.0
+          Version code: 1
+
+          IMPORTANT: Keep this keystore and password permanently. Every future APKPure update must be signed with this same key. Never commit the keystore or password to a public repository.
+          EOF
+
+      - name: Zip-align, sign, and verify APK
+        shell: bash
+        run: |
+          set -euo pipefail
+          UNSIGNED_APK="$(find android/app/build/outputs/apk/release -type f -name '*.apk' | head -n 1)"
+          test -n "$UNSIGNED_APK"
+          BUILD_TOOLS="$(find "$ANDROID_HOME/build-tools" -mindepth 1 -maxdepth 1 -type d | sort -V | tail -n 1)"
+          test -x "$BUILD_TOOLS/zipalign"
+          test -x "$BUILD_TOOLS/apksigner"
+          mkdir -p dist
+          "$BUILD_TOOLS/zipalign" -f -p 4 "$UNSIGNED_APK" dist/Aponar-Nihon-v1.0.0-APKPure-aligned.apk
+          "$BUILD_TOOLS/apksigner" sign \
+            --ks dist/signing-private/Aponar-Nihon-release-key.jks \
+            --ks-key-alias aponarnihon \
+            --ks-pass env:SIGNING_PASSWORD \
+            --key-pass env:SIGNING_PASSWORD \
+            --out dist/Aponar-Nihon-v1.0.0-APKPure.apk \
+            dist/Aponar-Nihon-v1.0.0-APKPure-aligned.apk
+          "$BUILD_TOOLS/apksigner" verify --verbose --print-certs dist/Aponar-Nihon-v1.0.0-APKPure.apk | tee dist/signature-verification.txt
+          "$BUILD_TOOLS/zipalign" -c -v 4 dist/Aponar-Nihon-v1.0.0-APKPure.apk >/dev/null
+          sha256sum dist/Aponar-Nihon-v1.0.0-APKPure.apk > dist/Aponar-Nihon-v1.0.0-APKPure.apk.sha256
+          rm -f dist/Aponar-Nihon-v1.0.0-APKPure-aligned.apk
+
+      - name: Encrypt signing backup for secure handoff
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat > /tmp/aponar-nihon-transport-cert.pem <<'CERT'
+          -----BEGIN CERTIFICATE-----
+          MIIEQTCCAqmgAwIBAgIUf3+J9ACMQPEjXMWMpGOoOhcnmc0wDQYJKoZIhvcNAQEL
+          BQAwMDEuMCwGA1UEAwwlQXBvbmFyIE5paG9uIFJlbGVhc2UgQmFja3VwIFRyYW5z
+          cG9ydDAeFw0yNjA5MjQxNTU5MTBaFw0yNjA5MjYxNTU5MTBaMDAxLjAsBgNVBAMM
+          JUFwb25hciBOaWhvbiBSZWxlYXNlIEJhY2t1cCBUcmFuc3BvcnQwggGiMA0GCSqG
+          SIb3DQEBAQUAA4IBjwAwggGKAoIBgQCLUnN8tst+p+dw5qwi/972+kCKw5EeD2WQ
+          SO4FGKOmKuLjYRKfvGqaXWAz8ogQKKKvND07IdvcLgOKA+j2wkQimYuEu1DPNbED
+          52UJ4jT4r1qS2UEt1EzGAH4hQUuE7zu5LQlIKR6FgJTKN0iL6VQnR9Mu724g9Fx4
+          hrxLswlkS4wveK7k6eDAxo1HOTBI/4upOtUAl1rleQpUxLZaLi4CKw1fRbqYTFWr
+          /+C8fVaxPbN5GfkS7WOndZg4vyjyU0yrA2WG4ByAW30c2HKPsUVFpiCDfXdI6lkH
+          kai31kPoh2gD9IIDGMsfYmOGED9HhnviPDM+9ukTuzBjtCDVScfFd7Vk6fa8b+Dq
+          42E5U3WoiFD5P8QrQwYGVbE5ADN/M7wBydqbAlTEd/U5xzkbCaIEx9SPEERPDZcW
+          Ap38D1UY7fb1kdEjBCyB4bXFy18E8nhsyA+nc9JRInRn8xAEG/tg+QfPZ7cbie4l
+          lpuKdJ4PtBfgSF6Un+OXsb0ru8oUwbkCAwEAAaNTMFEwHQYDVR0OBBYEFC2kziJ9
+          14CfGylP64vgetI4fxV1MB8GA1UdIwQYMBaAFC2kziJ914CfGylP64vgetI4fxV1
+          MA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggGBAAfqkBAfrrZNpFoJ
+          rwCtT6fIWVuVDUSH6laLzO7BDH8xQtHHZ4AFauu9nZm7ER/uVTipqatUYKtyrfrm
+          Fvyw3azbBrpDsTAhId9JeNYaclOfJsN5H9xUi2wott5DRrmSBSbm4/H8rKl+6sT2
+          8iHdHQwGXh2gbcO3o/kUh7nydVqoMG8eqYtO3eG3fUDCfYQL2pvls4PuQt1+yFNU
+          yiuLNhuesU5MIHfThdHiHKGDDJ658IGEzdwJzQel/a4yxnYAOVys9qlKjqcDeZJ7
+          BsN4u/nob0aLNeyC+eadGbhZJ3oO3Hd5tFE2Oas2ZsSAIJsCwWbtcTVx3UgG7yTC
+          IgnUpzZMp9t9RixTw91/P//5F9MhkPjQyHq0BKnTISXklaYKCf+1v6M2t2wUhgSZ
+          JKKwhMrMz9tRKB/BW6Qm8fpGJiyEul2L4AnkjiPwiwuzMaCdEh3VaIOutsLlz4wa
+          4hFweU0eYL1vbvJyo3WTSNI8ei8GAMt/vQeVBSOQf8MD+K0YjA==
+          -----END CERTIFICATE-----
+          CERT
+          (cd dist/signing-private && zip -q ../Aponar-Nihon-release-signing-backup.zip Aponar-Nihon-release-key.jks Aponar-Nihon-signing-credentials.txt)
+          openssl cms -encrypt -binary -aes256 \
+            -in dist/Aponar-Nihon-release-signing-backup.zip \
+            -out dist/Aponar-Nihon-release-signing-backup.cms \
+            -outform DER \
+            /tmp/aponar-nihon-transport-cert.pem
+          rm -rf dist/signing-private dist/Aponar-Nihon-release-signing-backup.zip /tmp/aponar-nihon-transport-cert.pem
+
+      - name: Upload APKPure release bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: Aponar-Nihon-APKPure-v1.0.0
+          path: |
+            mobile/dist/Aponar-Nihon-v1.0.0-APKPure.apk
+            mobile/dist/Aponar-Nihon-v1.0.0-APKPure.apk.sha256
+            mobile/dist/signature-verification.txt
+            mobile/dist/Aponar-Nihon-release-signing-backup.cms
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 14
