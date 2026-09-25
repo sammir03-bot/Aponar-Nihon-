@@ -35,6 +35,8 @@ def _preserve_brand_names(source: str, target: str) -> str:
     if count == 0 and BRAND_RE.fullmatch(_normalize(source)):
         return originals[0]
     return preserved
+
+
 PACK_NAME_RE = re.compile(
     rf"^(?P<page>.+)\.(?P<language>{LANGUAGE_PATTERN})\.json$"
 )
@@ -51,6 +53,10 @@ TITLE_RE = re.compile(r"(<title\b[^>]*>)(.*?)(</title\s*>)", re.IGNORECASE | re.
 HTML_TAG_RE = re.compile(r"<html\b([^>]*)>", re.IGNORECASE)
 URL_ATTRIBUTE_RE = re.compile(
     r"(?P<prefix>\b(?:href|src|action)\s*=\s*)(?P<quote>[\"'])(?P<value>.*?)(?P=quote)",
+    flags=re.IGNORECASE | re.DOTALL,
+)
+HREF_ATTRIBUTE_RE = re.compile(
+    r"(?P<prefix>\bhref\s*=\s*)(?P<quote>[\"'])(?P<value>.*?)(?P=quote)",
     flags=re.IGNORECASE | re.DOTALL,
 )
 
@@ -252,6 +258,65 @@ def _set_document_locale(document: str, language: str, key: str) -> str:
     return HTML_TAG_RE.sub(replace, document, count=1)
 
 
+def _candidate_source_page(value: str, source_page: Path, root: Path) -> Path | None:
+    parsed = urlsplit(value)
+    if parsed.scheme or parsed.netloc or not parsed.path:
+        return None
+    root_resolved = root.resolve()
+    if parsed.path.startswith("/"):
+        candidate = root_resolved / unquote(parsed.path).lstrip("/")
+    else:
+        candidate = source_page.parent.resolve() / unquote(parsed.path)
+    candidate = candidate.resolve()
+    try:
+        candidate.relative_to(root_resolved)
+    except ValueError:
+        return None
+    if candidate.is_dir():
+        candidate = candidate / "index.html"
+    if not candidate.suffix:
+        html_candidate = candidate.with_suffix(".html")
+        if html_candidate.exists():
+            candidate = html_candidate
+    return candidate
+
+
+def _rewrite_localized_page_links(
+    document: str,
+    source_page: Path,
+    root: Path,
+    language: str,
+    source_pages: dict[Path, Path],
+    packs: dict[str, dict[str, dict[str, object]]],
+) -> str:
+    """Keep localized HTML navigation inside the selected language.
+
+    Only page links with an authored static pack for the same language are rewritten.
+    Assets, external URLs, anchors and pages without a language file stay untouched.
+    """
+
+    def replace(match: re.Match[str]) -> str:
+        value = match.group("value").strip()
+        if not value or value.startswith(("#", "?", "//", "mailto:", "tel:", "javascript:")):
+            return match.group(0)
+        parsed = urlsplit(value)
+        candidate = _candidate_source_page(value, source_page, root)
+        if candidate is None:
+            return match.group(0)
+        target_page = source_pages.get(candidate)
+        if target_page is None:
+            return match.group(0)
+        target_key = page_key(target_page, root)
+        if language not in packs.get(target_key, {}):
+            return match.group(0)
+
+        output = root / language / localized_route_for_page(target_page, root) / "index.html"
+        rewritten = urlunsplit(("", "", _public_path(output, root), parsed.query, parsed.fragment))
+        return f"{match.group('prefix')}{match.group('quote')}{rewritten}{match.group('quote')}"
+
+    return HREF_ATTRIBUTE_RE.sub(replace, document)
+
+
 def _rewrite_relative_urls(document: str, source_page: Path, root: Path) -> str:
     root_resolved = root.resolve()
 
@@ -335,7 +400,7 @@ def _load_reviewed_packs(root: Path) -> dict[str, dict[str, dict[str, object]]]:
 
 
 def build_localized_pages(root: Path) -> tuple[int, int, int]:
-    """Render reviewed packs into locale routes and add canonical hreflang clusters."""
+    """Render authored locale content into standalone HTML routes and hreflang clusters."""
     base_pages = [
         page
         for page in sorted(root.rglob("*.html"))
@@ -343,9 +408,9 @@ def build_localized_pages(root: Path) -> tuple[int, int, int]:
         or page.relative_to(root).parts[0] not in SUPPORTED_LANGUAGES
     ]
     page_by_key: dict[str, Path] = {}
+    source_pages: dict[Path, Path] = {}
     for page in base_pages:
         key = page_key(page, root)
-        # Every native/base document is explicitly Bangla. Locale copies override this below.
         source_document = page.read_text(encoding="utf-8")
         native_document = _set_document_locale(source_document, DEFAULT_LANGUAGE, key)
         if native_document != source_document:
@@ -353,6 +418,7 @@ def build_localized_pages(root: Path) -> tuple[int, int, int]:
         if key in page_by_key:
             raise RuntimeError(f"Duplicate i18n page key: {key}")
         page_by_key[key] = page
+        source_pages[page.resolve()] = page
 
     packs = _load_reviewed_packs(root)
     clusters: dict[Path, dict[str, Path]] = {}
@@ -379,6 +445,14 @@ def build_localized_pages(root: Path) -> tuple[int, int, int]:
             parser.close()
             localized = parser.document()
             localized = _set_document_locale(localized, language, key)
+            localized = _rewrite_localized_page_links(
+                localized,
+                source_page,
+                root,
+                language,
+                source_pages,
+                packs,
+            )
             localized = _rewrite_relative_urls(localized, source_page, root)
             localized = _localize_metadata(localized, language, entries)
 

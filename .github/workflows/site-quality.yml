@@ -39,6 +39,9 @@ jobs:
             python3 tools/compare_visible_content.py --base HEAD^
           fi
 
+      - name: Check core translation guards
+        run: python3 -m unittest discover -s tests/python -v
+
       - name: Build and verify with Python + Node.js
         run: npm run verify
 

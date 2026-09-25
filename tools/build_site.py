@@ -5,8 +5,11 @@ import argparse
 import shutil
 from pathlib import Path
 
+from sitecore.core_memory_locales import build_core_memory_pages
 from sitecore.htmltools import inject_assets, visible_text_hash
+from sitecore.i18n_policy import mark_static_core_pages
 from sitecore.linkcheck import find_broken_page_links
+from sitecore.localized_literals import apply_reviewed_literal_replacements
 from sitecore.locales import build_localized_pages
 from sitecore.postprocess import postprocess_site
 from sitecore.search_index import build_search_index
@@ -16,7 +19,7 @@ from sitecore.seo import prepare_search_engine_files
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_DIRS = {
     ".git", ".github", "_site", "android", "play-store", "node_modules",
-    "tools", "src", "tests", "workers", ".venv", "venv", "__pycache__",
+    "tools", "src", "tests", "workers", "translations", ".venv", "venv", "__pycache__",
     "playwright-report", "test-results",
 }
 EXCLUDED_FILES = {
@@ -29,6 +32,7 @@ EXCLUDED_FILES = {
 I18N_CSS = '<link rel="stylesheet" href="/assets/css/i18n.css?v=20260909.4">'
 HOME_BRAND_CSS = '<link rel="stylesheet" href="/assets/css/home-brand.css?v=20260901.2">'
 I18N_JS = '<script src="/assets/js/i18n.js?v=20260909.4"></script>'
+I18N_STATIC_CORE_JS = '<script defer src="/assets/js/i18n-static-core.js?v=20260921.1"></script>'
 I18N_UI_JS = '<script defer src="/assets/js/i18n-ui.js?v=20260909.4"></script>'
 I18N_CONTENT_JS = '<script defer src="/assets/js/i18n-content.js?v=20260909.4"></script>'
 PRO_CSS = '<link rel="stylesheet" href="/assets/css/pro-core.css?v=20260825">'
@@ -96,7 +100,7 @@ def inject_professional_assets(destination: Path) -> tuple[int, int]:
         before_hash = visible_text_hash(html)
         enhanced = inject_assets(
             html,
-            (I18N_CSS, HOME_BRAND_CSS, I18N_JS, I18N_UI_JS, I18N_CONTENT_JS, PRO_CSS, PRO_JS, PLATFORM_TS),
+            (I18N_CSS, HOME_BRAND_CSS, I18N_JS, I18N_STATIC_CORE_JS, I18N_UI_JS, I18N_CONTENT_JS, PRO_CSS, PRO_JS, PLATFORM_TS),
         )
         if enhanced == html:
             continue
@@ -127,6 +131,12 @@ def build(destination: Path, check_links: bool = False) -> int:
     injected, injection_checked = inject_professional_assets(destination)
     changed, post_checked, repaired, secured = postprocess_site(destination)
     localized_pages, localized_clusters, localized_nodes = build_localized_pages(destination)
+    memory_pages, memory_clusters, memory_nodes, memory_literals = build_core_memory_pages(
+        destination,
+        ROOT / "translations",
+    )
+    literal_files, literal_replacements = apply_reviewed_literal_replacements(destination)
+    static_core_changed, static_core_pages = mark_static_core_pages(destination)
     canonicals, noindex, seo_checked, verification, sitemap_urls = prepare_search_engine_files(destination)
     indexed = build_search_index(
         destination,
@@ -147,6 +157,14 @@ def build(destination: Path, check_links: bool = False) -> int:
     print(f"Localized HTML pages: {localized_pages}")
     print(f"Localized hreflang clusters: {localized_clusters}")
     print(f"Reviewed text nodes localized at build time: {localized_nodes}")
+    print(f"Core-memory localized HTML pages: {memory_pages}")
+    print(f"Core-memory hreflang clusters: {memory_clusters}")
+    print(f"Core-memory text nodes localized at build time: {memory_nodes}")
+    print(f"Core-memory attribute/script literals localized at build time: {memory_literals}")
+    print(f"Localized HTML files with reviewed literal replacements: {literal_files}")
+    print(f"Reviewed attribute/script literals localized at build time: {literal_replacements}")
+    print(f"Static-core pages protected from runtime content translation: {static_core_pages}")
+    print(f"Static-core HTML files newly marked: {static_core_changed}")
     print(f"SEO canonical pages: {canonicals}")
     print(f"SEO noindex pages: {noindex}")
     print(f"Search Console verification injected: {'yes' if verification else 'no'}")

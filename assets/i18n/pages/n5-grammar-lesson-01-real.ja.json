@@ -1,0 +1,353 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "n5-grammar-lesson-01-real",
+  "reviewed": true,
+  "reviewStatus": "assistant-authored-pending-native-review",
+  "entries": [
+    {
+      "source": "নিজের পরিচয়, negative sentence, question, also/too, possession — Minna no Nihongo lesson mapping + online cross-check মিলিয়ে সহজ ভাষায় ব্যাখ্যা, নতুন উদাহরণ, mistake note ও quiz সহ সাজানো।",
+      "target": "自己紹介、否定文、質問、「〜も」、所有表現を学びます。『みんなの日本語』のレッスン構成とオンライン確認をもとに、やさしい説明、新しい例文、間違いやすい点、クイズをまとめました。"
+    },
+    {
+      "source": "Grammar শেখা শুরু",
+      "target": "文法学習を始める"
+    },
+    {
+      "source": "আজকের লক্ষ্য",
+      "target": "今日の目標"
+    },
+    {
+      "source": "নিজের পরিচয় দিতে পারবে",
+      "target": "自己紹介ができる"
+    },
+    {
+      "source": "না-বাচক বাক্য বানাতে পারবে",
+      "target": "否定文が作れる"
+    },
+    {
+      "source": "প্রশ্ন করতে ও উত্তর দিতে পারবে",
+      "target": "質問して答えられる"
+    },
+    {
+      "source": "“ও/also” এবং “এর/র” ব্যবহার করতে পারবে",
+      "target": "「〜も」と「〜の」を使える"
+    },
+    {
+      "source": "Structure + বাংলা ব্যাখ্যা + Example",
+      "target": "文型＋やさしい説明＋例文"
+    },
+    {
+      "source": "প্রতি card ভালো করে পড়ুন, example মুখে বলুন, mistake note দেখুন, তারপর ✓ চাপ দিয়ে learned mark করুন।",
+      "target": "各カードをよく読み、例文を声に出し、間違いやすい点を確認してから✓を押して学習済みにしましょう。"
+    },
+    {
+      "source": "পরিচয়ের প্রয়োজনীয় pattern",
+      "target": "自己紹介に必要な文型"
+    },
+    {
+      "source": "Blank পূরণ করে নিজের sentence বানান",
+      "target": "空欄を埋めて自分の文を作りましょう"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "理解度チェック"
+    },
+    {
+      "source": "সঠিক উত্তর চাপুন। ভুল হলে সাথে সাথে correct answer দেখাবে।",
+      "target": "正しい答えを選んでください。間違えると、すぐに正解が表示されます。"
+    },
+    {
+      "source": "N1 সম্পর্কে N2 বলা হয়। は লিখলেও উচ্চারণ “wa”। です বাক্যের শেষে polite “হয়/আছি/আছেন” অর্থে আসে।",
+      "target": "N1についてN2で説明します。はは文字では「は」ですが、助詞では「wa」と読みます。ですは文末につき、丁寧な判断・状態を表します。"
+    },
+    {
+      "source": "Noun/adjective sentence negative করতে です এর জায়গায় じゃありません বসে। ではありません একটু বেশি formal।",
+      "target": "名詞文やナ形容詞文を否定するときは、ですの代わりにじゃありませんを使います。ではありませんはより丁寧で改まった表現です。"
+    },
+    {
+      "source": "বয়স বলতে সংখ্যার পরে 歳（さい） বসে। বয়স জানতে 何歳ですか; আরও ভদ্রভাবে おいくつですか বলা হয়।",
+      "target": "年齢は数字のあとに歳（さい）を付けます。年齢を聞くときは何歳ですか、より丁寧にはおいくつですかを使います。"
+    },
+    {
+      "source": "বাক্যের শেষে か বসলে প্রশ্ন হয়। Japanese formal writing-এ সাধারণত ? না দিলেও চলে।",
+      "target": "文末にかを付けると疑問文になります。丁寧な日本語では、通常「？」がなくても質問になります。"
+    },
+    {
+      "source": "একই তথ্য অন্য subject-এর ক্ষেত্রেও সত্য হলে は এর জায়গায় も বসে। বাংলা অর্থ “ও/also/too”।",
+      "target": "同じ内容が別の人や物にも当てはまるとき、はの代わりにもを使います。「also / too」の意味です。"
+    },
+    {
+      "source": "N1-এর N2, N1 সম্পর্কিত N2—বাংলার “এর/র” অর্থে の বসে।",
+      "target": "N1のN2は、N1のもの・N1に関係するN2を表します。所有や所属・関係を示す文型です。"
+    },
+    {
+      "source": "বাংলা উচ্চারণ・ওয়াতাশি হা＿＿দেসু।",
+      "target": "Romaji · Watashi wa ＿＿ desu."
+    },
+    {
+      "source": "বাংলা উচ্চারণ・ওয়াতাশি হা＿＿ জা আরিমাসেন।",
+      "target": "Romaji · Watashi wa ＿＿ ja arimasen."
+    },
+    {
+      "source": "বাংলা উচ্চারণ・＿＿ সান মো গাকুসেইদেসু।",
+      "target": "Romaji · ＿＿ san mo gakusei desu."
+    },
+    {
+      "source": "বাংলা উচ্চারণ・কোরে হা＿＿ নো হোনদেসু।",
+      "target": "Romaji · Kore wa ＿＿ no hon desu."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া গাকুসেইদেসু।",
+      "target": "Watashi wa gakusei desu."
+    },
+    {
+      "source": "সামিরু সান ওয়া বানগুরাদেশু জিনদেসু।",
+      "target": "Samīru-san wa Banguradeshu-jin desu."
+    },
+    {
+      "source": "কারিনা সান ওয়া এনজিনিয়াদেসু।",
+      "target": "Karina-san wa enjinia desu."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া সেনসেই জা আরিমাসেন।",
+      "target": "Watashi wa sensei ja arimasen."
+    },
+    {
+      "source": "আনো হিতো ওয়া কাইশা ইন দে ওয়া আরিমাসেন।",
+      "target": "Ano hito wa kaishain de wa arimasen."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া নিহোনজিন জা আরিমাসেন।",
+      "target": "Watashi wa Nihonjin ja arimasen."
+    },
+    {
+      "source": "মিরা সান ওয়া নিজুহাস্সাই দেসু।",
+      "target": "Mirā-san wa nijūhassai desu."
+    },
+    {
+      "source": "সামিরু সান ওয়া নান সাইদেসু কা।",
+      "target": "Samīru-san wa nansai desu ka."
+    },
+    {
+      "source": "ও ইকুৎসুদেসু কা।",
+      "target": "Oikutsu desu ka."
+    },
+    {
+      "source": "আনাতা ওয়া গাকুসেইদেসু কা।",
+      "target": "Anata wa gakusei desu ka."
+    },
+    {
+      "source": "ও নামায়ে ওয়া নানিদেসু কা।",
+      "target": "Onamae wa nan desu ka."
+    },
+    {
+      "source": "নান সাইদেসু কা।",
+      "target": "Nansai desu ka."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া গাকুসেইদেসু। তানাকা সান মো গাকুসেইদেসু।",
+      "target": "Watashi wa gakusei desu. Tanaka-san mo gakusei desu."
+    },
+    {
+      "source": "কারিনা সান ওয়া ইশাদেসু। মিরা সান মো ইশাদেসু।",
+      "target": "Karina-san wa isha desu. Mirā-san mo isha desu."
+    },
+    {
+      "source": "ওয়াতাশি নো হোনদেসু।",
+      "target": "Watashi no hon desu."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া Axiom নো গাকুসেইদেসু।",
+      "target": "Watashi wa Axiom no gakusei desu."
+    },
+    {
+      "source": "তোয়োতা নো শাইনদেসু।",
+      "target": "Toyota no shain desu."
+    },
+    {
+      "source": "Minna no Nihongo N5 Grammar Lesson 1 — বাংলা explanation, structure, example, quiz এবং progress tracker সহ premium HTML।",
+      "target": "みんなの日本語 N5文法第1課：解説、文型、例文、クイズ、学習進捗の記録。"
+    },
+    {
+      "source": "Login ছাড়া progress save",
+      "target": "ログインせずに進捗を保存"
+    },
+    {
+      "source": "grammar / Japanese / বাংলা দিয়ে search করুন…",
+      "target": "文法や日本語で検索…"
+    },
+    {
+      "source": "কাজ",
+      "target": "職業"
+    },
+    {
+      "source": "পরিচয়",
+      "target": "自己紹介"
+    },
+    {
+      "source": "বয়স",
+      "target": "年齢"
+    },
+    {
+      "source": "জাপানিতে প্রথমে topic বলা হয়, তারপর topic সম্পর্কে তথ্য দেওয়া হয়।",
+      "target": "日本語では、まず話題を示し、その話題について説明します。"
+    },
+    {
+      "source": "আমি ছাত্র/শিক্ষার্থী।",
+      "target": "私は学生です。"
+    },
+    {
+      "source": "সামির-সান বাংলাদেশি।",
+      "target": "サミールさんはバングラデシュ人です。"
+    },
+    {
+      "source": "কারিনা-সান ইঞ্জিনিয়ার।",
+      "target": "カリナさんはエンジニアです。"
+    },
+    {
+      "source": "は-কে “ha” না পড়ে “wa” পড়বেন।",
+      "target": "助詞のはは「ha」ではなく「wa」と発音します。"
+    },
+    {
+      "source": "ইন্টারভিউ/স্কুলে formal বলতে চাইলে ではありません ব্যবহার করা নিরাপদ।",
+      "target": "面接や学校などで、より丁寧に言うときはではありませんを使います。"
+    },
+    {
+      "source": "আমি শিক্ষক নই।",
+      "target": "私は先生ではありません。"
+    },
+    {
+      "source": "ঐ ব্যক্তি কোম্পানি কর্মচারী নন।",
+      "target": "あの人は会社員ではありません。"
+    },
+    {
+      "source": "আমি জাপানি নই।",
+      "target": "私は日本人ではありません。"
+    },
+    {
+      "source": "じゃありません এর আগে です বসাবেন না: ×ですじゃありません।",
+      "target": "じゃありませんの前にですを付けないでください：×ですじゃありません。"
+    },
+    {
+      "source": "নিজের পরিচয়, স্কুলের form এবং প্রথম আলাপে বয়স বলা বা জিজ্ঞাসা করতে লাগে।",
+      "target": "自己紹介、学校の書類、初対面の会話などで年齢を伝えたり尋ねたりするときに使います。"
+    },
+    {
+      "source": "মিলারের বয়স ২৮ বছর।",
+      "target": "ミラーさんは28歳です。"
+    },
+    {
+      "source": "সামিরের বয়স কত?",
+      "target": "サミールさんは何歳ですか。"
+    },
+    {
+      "source": "আপনার বয়স কত? (ভদ্র)",
+      "target": "おいくつですか。（丁寧な表現）"
+    },
+    {
+      "source": "何歳-এর উচ্চারণ なんさい; 何さい-কে なにさい পড়বেন না।",
+      "target": "何歳はなんさいと読みます。なにさいではありません。"
+    },
+    {
+      "source": "Interview, classroom, দোকান—সব জায়গায় polite question করতে লাগবে।",
+      "target": "面接、教室、お店などで丁寧に質問するときに使います。"
+    },
+    {
+      "source": "আপনি কি ছাত্র?",
+      "target": "あなたは学生ですか。"
+    },
+    {
+      "source": "আপনার নাম কী?",
+      "target": "お名前は何ですか。"
+    },
+    {
+      "source": "বয়স কত?",
+      "target": "何歳ですか。"
+    },
+    {
+      "source": "か যোগ করলে intonation উঠলেও বাক্য polite থাকে।",
+      "target": "かを付けると質問になります。語尾を上げても丁寧な文のままです。"
+    },
+    {
+      "source": "একই পেশা/জাতীয়তা/পরিচয় বলার সময় খুব useful।",
+      "target": "職業、国籍、身分などが同じであることを伝えるときに便利です。"
+    },
+    {
+      "source": "আমি ছাত্র। তানাকা-সানও ছাত্র।",
+      "target": "私は学生です。田中さんも学生です。"
+    },
+    {
+      "source": "কারিনা-সান ডাক্তার। মিলার-সানও ডাক্তার।",
+      "target": "カリナさんは医者です。ミラーさんも医者です。"
+    },
+    {
+      "source": "も এবং は একসাথে বসাবেন না: ×私はも।",
+      "target": "もとはを重ねて使わないでください：×私はも。"
+    },
+    {
+      "source": "নাম, দেশ, কোম্পানি, স্কুল, বই—সব সম্পর্ক বোঝাতে の দরকার।",
+      "target": "人、国、会社、学校、持ち物などの関係を示すときにのを使います。"
+    },
+    {
+      "source": "আমার বই।",
+      "target": "私の本です。"
+    },
+    {
+      "source": "আমি Axiom-এর ছাত্র।",
+      "target": "私はAxiomの学生です。"
+    },
+    {
+      "source": "টয়োটার কর্মচারী।",
+      "target": "トヨタの社員です。"
+    },
+    {
+      "source": "বাংলার মতো শেষে “এর” নয়; Japanese-এ সম্পর্কের word আগে: 私の本।",
+      "target": "持ち主や所属先を先に置きます：私の本。"
+    },
+    {
+      "source": "‘মিলারের বয়স ২৮ বছর’ কোনটি?",
+      "target": "「ミラーさんは28歳です」を表す文はどれですか。"
+    },
+    {
+      "source": "は particle কী বোঝায়?",
+      "target": "助詞のはは何を表しますか。"
+    },
+    {
+      "source": "“also/too” অর্থে কোন particle?",
+      "target": "「also/too」を表す助詞はどれですか。"
+    },
+    {
+      "source": "“আমার বই” কোনটি?",
+      "target": "「my book」を表すのはどれですか。"
+    },
+    {
+      "source": "Japanese শুনুন",
+      "target": "日本語の音声を聞く"
+    },
+    {
+      "source": "এই browser-এ Japanese voice নেই",
+      "target": "このブラウザーでは日本語の音声を利用できません"
+    },
+    {
+      "source": "Audio চালু করা যায়নি",
+      "target": "音声を再生できませんでした"
+    },
+    {
+      "source": "正解! সঠিক",
+      "target": "正解！"
+    },
+    {
+      "source": "ভুল হয়েছে",
+      "target": "不正解です"
+    },
+    {
+      "source": "কেন ব্যবহার করবেন:",
+      "target": "使う場面："
+    },
+    {
+      "source": "বাংলা উচ্চারণ",
+      "target": "Romaji"
+    }
+  ]
+}
