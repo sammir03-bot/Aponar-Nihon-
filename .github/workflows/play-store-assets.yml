@@ -51,7 +51,7 @@ jobs:
           npm install playwright@latest
           npx playwright install --with-deps chromium
 
-      - name: Capture phone screenshots
+      - name: Capture 10 real phone screenshots
         run: |
           mkdir -p play-store/assets/screenshots
           cat > shots.mjs <<'JS'
@@ -60,9 +60,15 @@ jobs:
           const context=await browser.newContext({viewport:{width:1080,height:1920},deviceScaleFactor:1,isMobile:true,hasTouch:true,locale:'bn-BD'});
           const pages=[
             ['01-home.png','https://app.aponar-nihon.workers.dev/'],
-            ['02-student-toolkit.png','https://app.aponar-nihon.workers.dev/student-tools.html#toolkit'],
-            ['03-cv-builder.png','https://app.aponar-nihon.workers.dev/cv-builder.html'],
-            ['04-ebook-library.png','https://app.aponar-nihon.workers.dev/ebook-library.html']
+            ['02-jlpt-n5.png','https://app.aponar-nihon.workers.dev/n5.html'],
+            ['03-jlpt-n4.png','https://app.aponar-nihon.workers.dev/n4.html'],
+            ['04-jlpt-n3.png','https://app.aponar-nihon.workers.dev/n3.html'],
+            ['05-ai-tutor.png','https://app.aponar-nihon.workers.dev/tutor-section.html'],
+            ['06-daily-news.png','https://app.aponar-nihon.workers.dev/daily-news.html'],
+            ['07-halal-scanner.png','https://app.aponar-nihon.workers.dev/halal-scanner.html'],
+            ['08-cv-builder.png','https://app.aponar-nihon.workers.dev/cv-builder.html'],
+            ['09-student-toolkit.png','https://app.aponar-nihon.workers.dev/student-tools.html#toolkit'],
+            ['10-ebook-library.png','https://app.aponar-nihon.workers.dev/ebook-library.html']
           ];
           for(const [file,url] of pages){
             const page=await context.newPage();
