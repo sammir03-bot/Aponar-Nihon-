@@ -83,6 +83,24 @@ jobs:
           rm -f shots.mjs package.json package-lock.json
           rm -rf node_modules
 
+      - name: Normalize screenshots for APKPure
+        run: |
+          python - <<'PY'
+          from PIL import Image
+          from pathlib import Path
+          for p in Path('play-store/assets/screenshots').glob('*.png'):
+              with Image.open(p) as im:
+                  rgb=im.convert('RGB')
+                  rgb.save(p, format='PNG', optimize=True)
+          PY
+
+      - name: Upload APKPure screenshot bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: Aponar-Nihon-APKPure-10-Real-Screenshots
+          path: play-store/assets/screenshots/*.png
+          if-no-files-found: error
+
       - name: Commit generated Play assets
         run: |
           git config user.name "Aponar Nihon Bot"
