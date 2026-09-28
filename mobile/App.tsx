@@ -51,7 +51,7 @@ export default function App() {
 
   return (
     <View style={styles.root}>
-      <StatusBar style="dark" backgroundColor="#FFFFFF" />
+      <StatusBar style="dark" />
       <WebView
         ref={webViewRef}
         source={{ uri: appOrigin }}
