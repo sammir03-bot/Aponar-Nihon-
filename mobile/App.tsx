@@ -1,122 +1,84 @@
-import React, { useEffect } from 'react';
-import { Linking, Text } from 'react-native';
-import { NavigationContainer, DefaultTheme, createNavigationContainerRef } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import React, { useEffect, useRef, useState } from 'react';
+import { BackHandler, Linking, Platform, StyleSheet, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
-import * as Notifications from 'expo-notifications';
-import HomeScreen from './src/screens/HomeScreen';
-import LearnScreen from './src/screens/LearnScreen';
-import ExploreScreen from './src/screens/ExploreScreen';
-import TutorScreen from './src/screens/TutorScreen';
-import ProfileScreen from './src/screens/ProfileScreen';
-import HalalScannerScreen from './src/screens/HalalScannerScreen';
-import DailyNewsScreen from './src/screens/DailyNewsScreen';
-import CVBuilderScreen from './src/screens/CVBuilderScreen';
-import AllSectionsScreen from './src/screens/AllSectionsScreen';
-import ContentScreen from './src/screens/ContentScreen';
-import { handleAuthUrl } from './src/supabase';
-import { colors } from './src/theme';
-import type { MainTabParamList, RootStackParamList } from './src/navigation';
+import { WebView, type WebViewNavigation } from 'react-native-webview';
+import { APP_ORIGIN } from './src/config';
 
-Notifications.setNotificationHandler({ handleNotification: async () => ({ shouldShowBanner: true, shouldShowList: true, shouldPlaySound: false, shouldSetBadge: false }) });
-const Stack = createNativeStackNavigator<RootStackParamList>();
-const Tabs = createBottomTabNavigator<MainTabParamList>();
-const navigationRef = createNavigationContainerRef<RootStackParamList>();
-let pendingAuthProfile = false;
-const tabIcons: Record<keyof MainTabParamList, string> = { Home: '⌂', Learn: '本', TutorTab: '✦', Explore: '⌘', ProfileTab: '●' };
+const appOrigin = APP_ORIGIN.replace(/\/$/, '');
 
-function MainTabs() {
-  return <Tabs.Navigator screenOptions={({ route }) => ({
-    headerShown: false,
-    tabBarActiveTintColor: colors.primary,
-    tabBarInactiveTintColor: '#8793A3',
-    tabBarHideOnKeyboard: true,
-    tabBarLabelStyle: { fontSize: 11, fontWeight: '800', marginTop: 1 },
-    tabBarItemStyle: { paddingTop: 7 },
-    tabBarStyle: {
-      height: 72,
-      paddingBottom: 8,
-      borderTopWidth: 1,
-      borderTopColor: colors.border,
-      backgroundColor: '#FFFFFF',
-      elevation: 12,
-      shadowColor: '#234367',
-      shadowOpacity: .08,
-      shadowRadius: 14,
-      shadowOffset: { width: 0, height: -4 }
-    },
-    tabBarIcon: ({ color }) => <Text style={{ color, fontSize: route.name === 'TutorTab' ? 24 : 22, fontWeight: '900' }}>{tabIcons[route.name]}</Text>
-  })}>
-    <Tabs.Screen name="Home" component={HomeScreen} options={{ title: 'হোম' }} />
-    <Tabs.Screen name="Learn" component={LearnScreen} options={{ title: 'শিখুন' }} />
-    <Tabs.Screen name="TutorTab" component={TutorScreen} options={{ title: 'AI Tutor' }} />
-    <Tabs.Screen name="Explore" component={ExploreScreen} options={{ title: 'Explore' }} />
-    <Tabs.Screen name="ProfileTab" component={ProfileScreen} options={{ title: 'Profile' }} />
-  </Tabs.Navigator>;
-}
+function isInternalUrl(url: string): boolean {
+  if (!url || url === 'about:blank') return true;
+  if (url.startsWith('blob:') || url.startsWith('data:')) return true;
 
-function openAuthProfile() {
-  if (navigationRef.isReady()) navigationRef.navigate('Profile');
-  else pendingAuthProfile = true;
-}
-
-function processAuthUrl(url: string | null) {
-  if (!url || !url.startsWith('aponarnihon://auth/')) return;
-  void handleAuthUrl(url)
-    .then(openAuthProfile)
-    .catch((error) => {
-      console.warn('Aponar Nihon auth callback failed', error instanceof Error ? error.message : error);
-      openAuthProfile();
-    });
+  try {
+    const target = new URL(url);
+    const app = new URL(appOrigin);
+    return target.origin === app.origin;
+  } catch {
+    return false;
+  }
 }
 
 export default function App() {
-  useEffect(() => {
-    Linking.getInitialURL().then(processAuthUrl).catch(() => {});
-    const sub = Linking.addEventListener('url', ({ url }) => processAuthUrl(url));
-    return () => sub.remove();
-  }, []);
+  const webViewRef = useRef<React.ElementRef<typeof WebView>>(null);
+  const [canGoBack, setCanGoBack] = useState(false);
 
-  const theme = {
-    ...DefaultTheme,
-    colors: {
-      ...DefaultTheme.colors,
-      primary: colors.primary,
-      background: colors.bg,
-      card: colors.surface,
-      text: colors.text,
-      border: colors.border,
-      notification: colors.primary
-    }
+  useEffect(() => {
+    if (Platform.OS !== 'android') return;
+
+    const subscription = BackHandler.addEventListener('hardwareBackPress', () => {
+      if (!canGoBack) return false;
+      webViewRef.current?.goBack();
+      return true;
+    });
+
+    return () => subscription.remove();
+  }, [canGoBack]);
+
+  const onNavigationStateChange = (navState: WebViewNavigation) => {
+    setCanGoBack(navState.canGoBack);
   };
 
-  return <><StatusBar style="dark" /><NavigationContainer
-    ref={navigationRef}
-    theme={theme}
-    onReady={() => {
-      if (pendingAuthProfile) {
-        pendingAuthProfile = false;
-        navigationRef.navigate('Profile');
-      }
-    }}
-  >
-    <Stack.Navigator screenOptions={{
-      headerBackTitle: 'Back',
-      headerTintColor: colors.text,
-      headerTitleStyle: { fontWeight: '800' },
-      headerStyle: { backgroundColor: '#FFFFFF' },
-      headerShadowVisible: false,
-      contentStyle: { backgroundColor: colors.bg }
-    }}>
-      <Stack.Screen name="Main" component={MainTabs} options={{ headerShown: false }} />
-      <Stack.Screen name="Tutor" component={TutorScreen} options={{ title: 'AI Tutor' }} />
-      <Stack.Screen name="HalalScanner" component={HalalScannerScreen} options={{ title: 'Halal Scanner' }} />
-      <Stack.Screen name="DailyNews" component={DailyNewsScreen} options={{ title: 'Japan Daily News' }} />
-      <Stack.Screen name="CVBuilder" component={CVBuilderScreen} options={{ title: 'CV Builder' }} />
-      <Stack.Screen name="Profile" component={ProfileScreen} options={{ title: 'Profile' }} />
-      <Stack.Screen name="AllSections" component={AllSectionsScreen} options={{ title: 'সব সেকশন' }} />
-      <Stack.Screen name="Content" component={ContentScreen} options={({ route }) => ({ title: route.params.title })} />
-    </Stack.Navigator>
-  </NavigationContainer></>;
+  const onShouldStartLoadWithRequest = (request: { url: string }) => {
+    const { url } = request;
+    if (isInternalUrl(url)) return true;
+
+    // Keep the Aponar Nihon website as the visible app UI. External links,
+    // telephone/email links and other app schemes open in the system handler.
+    void Linking.openURL(url).catch(() => {});
+    return false;
+  };
+
+  return (
+    <View style={styles.root}>
+      <StatusBar style="dark" backgroundColor="#FFFFFF" />
+      <WebView
+        ref={webViewRef}
+        source={{ uri: appOrigin }}
+        style={styles.webView}
+        javaScriptEnabled
+        domStorageEnabled
+        sharedCookiesEnabled
+        thirdPartyCookiesEnabled
+        setSupportMultipleWindows={false}
+        allowsBackForwardNavigationGestures
+        mediaPlaybackRequiresUserAction={false}
+        allowsInlineMediaPlayback
+        pullToRefreshEnabled
+        onNavigationStateChange={onNavigationStateChange}
+        onShouldStartLoadWithRequest={onShouldStartLoadWithRequest}
+      />
+    </View>
+  );
 }
+
+const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+    backgroundColor: '#FFFFFF'
+  },
+  webView: {
+    flex: 1,
+    backgroundColor: '#FFFFFF'
+  }
+});
