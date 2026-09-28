@@ -1,11 +1,48 @@
+import { AppState, Platform } from 'react-native';
 import * as SecureStore from 'expo-secure-store';
-import { createClient, type EmailOtpType } from '@supabase/supabase-js';
+import { createClient, processLock, type EmailOtpType } from '@supabase/supabase-js';
 import { authConfigured, SUPABASE_PUBLISHABLE_KEY, SUPABASE_URL } from './config';
 
+const SECURE_CHUNK_SIZE = 1800;
+
+function chunkKey(key: string, index: number) {
+  return `${key}.__chunk_${index}`;
+}
+
+function chunkCountKey(key: string) {
+  return `${key}.__chunks`;
+}
+
+async function storedChunkCount(key: string): Promise<number> {
+  const raw = await SecureStore.getItemAsync(chunkCountKey(key));
+  const count = Number(raw || 0);
+  return Number.isInteger(count) && count > 0 ? count : 0;
+}
+
 const storage = {
-  getItem: (key: string) => SecureStore.getItemAsync(key),
-  setItem: (key: string, value: string) => SecureStore.setItemAsync(key, value),
-  removeItem: (key: string) => SecureStore.deleteItemAsync(key)
+  async getItem(key: string): Promise<string | null> {
+    const count = await storedChunkCount(key);
+    if (!count) return SecureStore.getItemAsync(key);
+    const chunks = await Promise.all(Array.from({ length: count }, (_, index) => SecureStore.getItemAsync(chunkKey(key, index))));
+    if (chunks.some((value) => value === null)) return null;
+    return chunks.join('');
+  },
+  async setItem(key: string, value: string): Promise<void> {
+    const previousCount = await storedChunkCount(key);
+    const chunks = Array.from({ length: Math.ceil(value.length / SECURE_CHUNK_SIZE) }, (_, index) => value.slice(index * SECURE_CHUNK_SIZE, (index + 1) * SECURE_CHUNK_SIZE));
+    await Promise.all(chunks.map((chunk, index) => SecureStore.setItemAsync(chunkKey(key, index), chunk)));
+    await SecureStore.setItemAsync(chunkCountKey(key), String(chunks.length));
+    await SecureStore.deleteItemAsync(key).catch(() => {});
+    if (previousCount > chunks.length) {
+      await Promise.all(Array.from({ length: previousCount - chunks.length }, (_, offset) => SecureStore.deleteItemAsync(chunkKey(key, chunks.length + offset)).catch(() => {})));
+    }
+  },
+  async removeItem(key: string): Promise<void> {
+    const count = await storedChunkCount(key);
+    await Promise.all(Array.from({ length: count }, (_, index) => SecureStore.deleteItemAsync(chunkKey(key, index)).catch(() => {})));
+    await SecureStore.deleteItemAsync(chunkCountKey(key)).catch(() => {});
+    await SecureStore.deleteItemAsync(key).catch(() => {});
+  }
 };
 
 let passwordRecoveryPending = false;
@@ -17,10 +54,21 @@ export const supabase = authConfigured()
         autoRefreshToken: true,
         persistSession: true,
         detectSessionInUrl: false,
-        flowType: 'pkce'
+        flowType: 'pkce',
+        lock: processLock
       }
     })
   : null;
+
+if (supabase && Platform.OS !== 'web') {
+  if (AppState.currentState === 'active') void supabase.auth.startAutoRefresh();
+  else void supabase.auth.stopAutoRefresh();
+
+  AppState.addEventListener('change', (state) => {
+    if (state === 'active') void supabase.auth.startAutoRefresh();
+    else void supabase.auth.stopAutoRefresh();
+  });
+}
 
 function authParams(url: string): URLSearchParams {
   const params = new URLSearchParams();
