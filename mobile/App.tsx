@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Linking, Text } from 'react-native';
-import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme, createNavigationContainerRef } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { StatusBar } from 'expo-status-bar';
@@ -22,6 +22,8 @@ import type { MainTabParamList, RootStackParamList } from './src/navigation';
 Notifications.setNotificationHandler({ handleNotification: async () => ({ shouldShowBanner: true, shouldShowList: true, shouldPlaySound: false, shouldSetBadge: false }) });
 const Stack = createNativeStackNavigator<RootStackParamList>();
 const Tabs = createBottomTabNavigator<MainTabParamList>();
+const navigationRef = createNavigationContainerRef<RootStackParamList>();
+let pendingAuthProfile = false;
 const tabIcons: Record<keyof MainTabParamList, string> = { Home: '⌂', Learn: '本', TutorTab: '✦', Explore: '⌘', ProfileTab: '●' };
 
 function MainTabs() {
@@ -54,11 +56,19 @@ function MainTabs() {
   </Tabs.Navigator>;
 }
 
+function openAuthProfile() {
+  if (navigationRef.isReady()) navigationRef.navigate('Profile');
+  else pendingAuthProfile = true;
+}
+
 function processAuthUrl(url: string | null) {
-  if (!url) return;
-  void handleAuthUrl(url).catch((error) => {
-    console.warn('Aponar Nihon auth callback failed', error instanceof Error ? error.message : error);
-  });
+  if (!url || !url.startsWith('aponarnihon://auth/')) return;
+  void handleAuthUrl(url)
+    .then(openAuthProfile)
+    .catch((error) => {
+      console.warn('Aponar Nihon auth callback failed', error instanceof Error ? error.message : error);
+      openAuthProfile();
+    });
 }
 
 export default function App() {
@@ -81,7 +91,16 @@ export default function App() {
     }
   };
 
-  return <><StatusBar style="dark" /><NavigationContainer theme={theme}>
+  return <><StatusBar style="dark" /><NavigationContainer
+    ref={navigationRef}
+    theme={theme}
+    onReady={() => {
+      if (pendingAuthProfile) {
+        pendingAuthProfile = false;
+        navigationRef.navigate('Profile');
+      }
+    }}
+  >
     <Stack.Navigator screenOptions={{
       headerBackTitle: 'Back',
       headerTintColor: colors.text,
