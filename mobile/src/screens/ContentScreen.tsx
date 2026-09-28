@@ -3,7 +3,7 @@ import { ActivityIndicator, Linking, StyleSheet, Text, TouchableOpacity, View } 
 import { Ionicons } from '@expo/vector-icons';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { WebView, type WebViewNavigation } from 'react-native-webview';
-import { config, siteUrl } from '../config';
+import { APP_ORIGIN } from '../config';
 import { colors } from '../theme';
 
 const KNOWN_INTERNAL_HOSTS = new Set([
@@ -21,6 +21,11 @@ function hostOf(value: string) {
   }
 }
 
+function siteUrl(path: string) {
+  if (/^https?:\/\//i.test(path)) return path;
+  return `${APP_ORIGIN}/${path.replace(/^\//, '')}`;
+}
+
 export default function ContentScreen({ route, navigation }: { route: any; navigation: any }) {
   const webRef = useRef<WebView>(null);
   const [loading, setLoading] = useState(true);
@@ -31,7 +36,7 @@ export default function ContentScreen({ route, navigation }: { route: any; navig
   const initialUrl = useMemo(() => siteUrl(path), [path]);
   const internalHosts = useMemo(() => {
     const hosts = new Set(KNOWN_INTERNAL_HOSTS);
-    const configured = hostOf(config.siteBaseUrl);
+    const configured = hostOf(APP_ORIGIN);
     if (configured) hosts.add(configured);
     return hosts;
   }, []);
