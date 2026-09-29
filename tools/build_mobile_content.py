@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Build native-mobile JSON from the verified static site without changing visible content.
+"""Build the mobile page index plus native-readable JSON from the verified static site.
 
-The React Native app uses these files to render existing educational pages with native
-Text/Image/View components instead of a WebView. This keeps website content as the
-single source of truth and gives the app automatic feature/content parity.
+The website remains the single source of truth. The mobile app uses the generated index
+to discover every user-facing route, then opens those routes with their full interactive
+website behavior. Parsed blocks are retained for native/fallback consumers.
 """
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ from pathlib import Path
 from typing import Any
 
 SKIP_DIRS = {"admin", "node_modules", ".git", "_site", "mobile", "playwright-report", "test-results"}
-SKIP_FILES = {"404.html", "offline.html"}
+SKIP_FILES = {"404.html", "offline.html", "admin.html", "auth-callback.html", "refresh-site.html"}
 SKIP_TAGS = {"script", "style", "svg", "template", "noscript", "header", "nav", "footer", "aside"}
 BLOCK_TAGS = {"p", "h1", "h2", "h3", "h4", "h5", "h6", "li"}
 SPACE_RE = re.compile(r"\s+")
@@ -173,11 +173,8 @@ def parse_page(path: Path, root: Path) -> dict[str, Any] | None:
     except Exception:
         return None
     rel = path.relative_to(root).as_posix()
-    blocks = parser.blocks
-    if not blocks:
-        return None
     title = parser.document_title or path.stem.replace("-", " ").replace("_", " ").strip().title()
-    return {"id": content_id(rel), "path": rel, "title": title, "blocks": blocks}
+    return {"id": content_id(rel), "path": rel, "title": title, "blocks": parser.blocks}
 
 
 def main() -> int:

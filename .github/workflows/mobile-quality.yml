@@ -2,19 +2,24 @@ name: Native Mobile Quality
 
 on:
   push:
-    branches: [main, native-mobile-app-v1]
+    branches: [main, native-mobile-app-v1, chatgpt/full-app-parity-20260928]
     paths:
       - 'mobile/**'
+      - '**/*.html'
       - 'tools/build_mobile_content.py'
+      - 'tools/check_mobile_routes.py'
       - 'assets/data/halal-certificates.json'
       - 'package.json'
       - '.github/workflows/mobile-quality.yml'
   pull_request:
     paths:
       - 'mobile/**'
+      - '**/*.html'
       - 'tools/build_mobile_content.py'
+      - 'tools/check_mobile_routes.py'
       - 'assets/data/halal-certificates.json'
       - 'package.json'
+      - '.github/workflows/mobile-quality.yml'
 
 permissions:
   contents: read
@@ -54,5 +59,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
+      - name: Verify every registered App route exists in the website
+        run: python3 tools/check_mobile_routes.py
       - name: Verify native content extraction sees website pages
         run: python3 tools/build_mobile_content.py --site . --out /tmp/aponar-mobile-content --check
