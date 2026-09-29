@@ -19,7 +19,7 @@ jobs:
       run:
         working-directory: mobile
     env:
-      EXPECTED_APKPURE_CERT_SHA256: 2b06b9bab29e1a3fbde55ad4a81673ccc0c016b123e1e12c0a7c1802313269d5
+      EXPECTED_APKPURE_CERT_SHA256: 95b702984f1a22ed06cf465ffab5ae7b63034c91fc4b6090baf07eec79b4c720
       APKPURE_RELEASE_KEYSTORE_B64: ${{ secrets.APKPURE_RELEASE_KEYSTORE_B64 }}
       APKPURE_RELEASE_STORE_PASSWORD: ${{ secrets.APKPURE_RELEASE_STORE_PASSWORD }}
       APKPURE_RELEASE_KEY_PASSWORD: ${{ secrets.APKPURE_RELEASE_KEY_PASSWORD }}
@@ -93,7 +93,7 @@ jobs:
             2>/dev/null | awk -F': ' '/SHA256:/{print $2; exit}' | tr -d ':' | tr '[:upper:]' '[:lower:]')"
 
           if [ "$ACTUAL_SHA256" != "$EXPECTED_APKPURE_CERT_SHA256" ]; then
-            echo 'ERROR: Signing certificate does not match the APKPure v1.0.0 release identity.' >&2
+            echo 'ERROR: Signing certificate does not match the permanent APKPure release identity.' >&2
             echo "Expected SHA-256: $EXPECTED_APKPURE_CERT_SHA256" >&2
             echo "Actual SHA-256:   ${ACTUAL_SHA256:-unavailable}" >&2
             exit 1
@@ -126,9 +126,11 @@ jobs:
           "$BUILD_TOOLS/apksigner" verify --verbose --print-certs "$FINAL_APK" | tee dist/signature-verification.txt
           "$BUILD_TOOLS/zipalign" -c -v 4 "$FINAL_APK" >/dev/null
 
-          CERT_SHA256="$(sed -n 's/^Signer #1 certificate SHA-256 digest: //p' dist/signature-verification.txt | head -n1 | tr '[:upper:]' '[:lower:]')"
+          CERT_SHA256="$(awk -F': ' '/certificate SHA-256 digest:/{print $2; exit}' dist/signature-verification.txt | tr '[:upper:]' '[:lower:]')"
           if [ "$CERT_SHA256" != "$EXPECTED_APKPURE_CERT_SHA256" ]; then
             echo 'ERROR: Final APK signature fingerprint mismatch.' >&2
+            echo "Expected SHA-256: $EXPECTED_APKPURE_CERT_SHA256" >&2
+            echo "Actual SHA-256:   ${CERT_SHA256:-unavailable}" >&2
             exit 1
           fi
 
