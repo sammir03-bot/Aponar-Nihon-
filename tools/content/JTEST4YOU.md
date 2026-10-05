@@ -59,3 +59,15 @@ The validator checks every published set against every other set, not just
 uniqueness within one set. Browser tests cover the reported listening state,
 retakes, unavailable sets, official score ranges/sectional minimums, all levels,
 numbering, playback failure, retry, replay, migration and mobile layout.
+
+## Bunpro external practice tests
+
+The user supplied https://bunpro.jp/jlpt_practice_tests on 2026-10-05.
+Bunpro offers five tests per JLPT level, not fifteen per level. Metadata and
+links for its N5/N4/N3 tests are stored in `assets/data/jlpt-external-tests.json`
+and included in the generated catalog. Questions, recordings, explanations and
+results remain on Bunpro; no Bunpro question content or media is republished.
+Bunpro attempts never affect local saved attempts, scores or completion progress.
+Its displayed counts differ from the local bank for N4/N3 and remain explicitly
+provider counts. Cross-provider question uniqueness is not established. The
+requested fifteen local disjoint tests per level still require more content.

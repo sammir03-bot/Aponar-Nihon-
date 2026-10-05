@@ -4,6 +4,9 @@ import vm from 'node:vm';
 const context={window:{},fetch:async url=>({ok:true,json:async()=>JSON.parse(fs.readFileSync('.'+url.split('?')[0],'utf8'))})};
 vm.createContext(context);vm.runInContext(fs.readFileSync('jlpt-level-generators.js','utf8'),context);
 const catalog={version:6,levels:{},officialTimeSource:'https://www.jlpt.jp/e/guideline/testsections.html',officialCountSource:'https://www.jlpt.jp/e/topics/202009091599642827.html',officialScoreSource:'https://www.jlpt.jp/e/guideline/results.html',scoreMethod:'raw practice conversion; not official IRT scaled score'};
+const external=JSON.parse(fs.readFileSync('assets/data/jlpt-external-tests.json','utf8'));
+assert.equal(external.mode,'external-link');
+const externalUrls=new Set();
 let total=0;
 for(const level of ['n5','n4','n3']){
  await context.window.JLPT_LOAD_BANK(level);
@@ -39,7 +42,9 @@ for(const level of ['n5','n4','n3']){
   total+=all.length;
  }
  if(availability.availableSets<availability.limit)assert.throws(()=>context.window.JLPT_FULL_GENERATOR(level,availability.availableSets+1),e=>e.code==='NO_NEW_SET');
- catalog.levels[level]=JSON.parse(JSON.stringify({...availability,pass:context.window.JLPT_MOCK_CONFIG[level].pass,groups:context.window.JLPT_MOCK_CONFIG[level].groups}));
+ const externalTests=external.levels[level];assert.equal(externalTests.length,5);
+ for(const q of externalTests){assert.equal(q.provider,'Bunpro');assert.ok(Number.isInteger(q.test)&&q.test>=1&&q.test<=5);const u=new URL(q.url);assert.equal(u.origin,'https://bunpro.jp');assert.equal(u.pathname,'/jlpt_practice_tests');const offset={n5:0,n4:5,n3:10}[level];assert.equal(u.searchParams.get('details'),String(offset+q.test));assert.ok(!externalUrls.has(q.url));externalUrls.add(q.url);assert.deepEqual(q.times,Array.from(context.window.JLPT_MOCK_CONFIG[level].times));assert.ok(q.counts.every(n=>Number.isInteger(n)&&n>0));}
+ catalog.levels[level]=JSON.parse(JSON.stringify({...availability,externalTests,pass:context.window.JLPT_MOCK_CONFIG[level].pass,groups:context.window.JLPT_MOCK_CONFIG[level].groups}));
  console.log(level,data.questions.length,'source questions;',availability.availableSets,'disjoint sets validated');
 }
 assert.throws(()=>context.window.JLPT_FULL_GENERATOR('n4',0));assert.throws(()=>context.window.JLPT_FULL_GENERATOR('n3',1.2));

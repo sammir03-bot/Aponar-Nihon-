@@ -15,6 +15,83 @@
         40,
         30
       ],
+      "externalTests": [
+        {
+          "provider": "Bunpro",
+          "test": 1,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=1",
+          "counts": [
+            21,
+            22,
+            24
+          ],
+          "times": [
+            20,
+            40,
+            30
+          ]
+        },
+        {
+          "provider": "Bunpro",
+          "test": 2,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=2",
+          "counts": [
+            21,
+            22,
+            24
+          ],
+          "times": [
+            20,
+            40,
+            30
+          ]
+        },
+        {
+          "provider": "Bunpro",
+          "test": 3,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=3",
+          "counts": [
+            21,
+            22,
+            24
+          ],
+          "times": [
+            20,
+            40,
+            30
+          ]
+        },
+        {
+          "provider": "Bunpro",
+          "test": 4,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=4",
+          "counts": [
+            21,
+            22,
+            24
+          ],
+          "times": [
+            20,
+            40,
+            30
+          ]
+        },
+        {
+          "provider": "Bunpro",
+          "test": 5,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=5",
+          "counts": [
+            21,
+            22,
+            24
+          ],
+          "times": [
+            20,
+            40,
+            30
+          ]
+        }
+      ],
       "pass": 80,
       "groups": [
         {
@@ -45,6 +122,83 @@
         55,
         35
       ],
+      "externalTests": [
+        {
+          "provider": "Bunpro",
+          "test": 1,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=6",
+          "counts": [
+            38,
+            35,
+            26
+          ],
+          "times": [
+            25,
+            55,
+            35
+          ]
+        },
+        {
+          "provider": "Bunpro",
+          "test": 2,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=7",
+          "counts": [
+            38,
+            35,
+            26
+          ],
+          "times": [
+            25,
+            55,
+            35
+          ]
+        },
+        {
+          "provider": "Bunpro",
+          "test": 3,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=8",
+          "counts": [
+            38,
+            35,
+            26
+          ],
+          "times": [
+            25,
+            55,
+            35
+          ]
+        },
+        {
+          "provider": "Bunpro",
+          "test": 4,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=9",
+          "counts": [
+            38,
+            35,
+            26
+          ],
+          "times": [
+            25,
+            55,
+            35
+          ]
+        },
+        {
+          "provider": "Bunpro",
+          "test": 5,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=10",
+          "counts": [
+            38,
+            35,
+            26
+          ],
+          "times": [
+            25,
+            55,
+            35
+          ]
+        }
+      ],
       "pass": 90,
       "groups": [
         {
@@ -74,6 +228,83 @@
         30,
         70,
         40
+      ],
+      "externalTests": [
+        {
+          "provider": "Bunpro",
+          "test": 1,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=11",
+          "counts": [
+            36,
+            39,
+            28
+          ],
+          "times": [
+            30,
+            70,
+            40
+          ]
+        },
+        {
+          "provider": "Bunpro",
+          "test": 2,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=12",
+          "counts": [
+            36,
+            39,
+            28
+          ],
+          "times": [
+            30,
+            70,
+            40
+          ]
+        },
+        {
+          "provider": "Bunpro",
+          "test": 3,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=13",
+          "counts": [
+            36,
+            39,
+            28
+          ],
+          "times": [
+            30,
+            70,
+            40
+          ]
+        },
+        {
+          "provider": "Bunpro",
+          "test": 4,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=14",
+          "counts": [
+            36,
+            39,
+            28
+          ],
+          "times": [
+            30,
+            70,
+            40
+          ]
+        },
+        {
+          "provider": "Bunpro",
+          "test": 5,
+          "url": "https://bunpro.jp/jlpt_practice_tests?details=15",
+          "counts": [
+            36,
+            39,
+            28
+          ],
+          "times": [
+            30,
+            70,
+            40
+          ]
+        }
       ],
       "pass": 95,
       "groups": [
