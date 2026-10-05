@@ -67,7 +67,7 @@ test('practice audio can replay and historical v4 state is not resumed',async({p
  });
  page.on('dialog',dialog=>dialog.accept());
  await page.goto('/jlpt-exam.html?level=n4&test=1');await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
- await expect(page.locator('#resumeBtn')).toBeHidden();await page.locator('input[value="practice"]').check();await page.locator('#startBtn').click();
+ await expect(page.locator('#resumeBtn')).toBeHidden();await page.locator('label').filter({has:page.locator('input[value="practice"]')}).click();await page.locator('#startBtn').click();
  for(let i=0;i<2;i++){await page.locator('#submitPartBtn').click();await page.locator('#nextPartBtn').click()}
  const first=page.locator('[data-audio]').first();await first.click();await expect(first).toBeEnabled();await first.click();await expect(first).toBeEnabled();
 });
