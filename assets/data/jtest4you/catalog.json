@@ -1,0 +1,105 @@
+{
+  "version": 6,
+  "levels": {
+    "n5": {
+      "version": 6,
+      "availableSets": 1,
+      "limit": 10,
+      "counts": [
+        21,
+        22,
+        24
+      ],
+      "times": [
+        20,
+        40,
+        30
+      ],
+      "pass": 80,
+      "groups": [
+        {
+          "id": "knowledgeReading",
+          "label": "ভাষাজ্ঞান + রিডিং",
+          "max": 120,
+          "min": 38
+        },
+        {
+          "id": "listening",
+          "label": "লিসেনিং",
+          "max": 60,
+          "min": 19
+        }
+      ]
+    },
+    "n4": {
+      "version": 6,
+      "availableSets": 1,
+      "limit": 10,
+      "counts": [
+        28,
+        29,
+        28
+      ],
+      "times": [
+        25,
+        55,
+        35
+      ],
+      "pass": 90,
+      "groups": [
+        {
+          "id": "knowledgeReading",
+          "label": "ভাষাজ্ঞান + রিডিং",
+          "max": 120,
+          "min": 38
+        },
+        {
+          "id": "listening",
+          "label": "লিসেনিং",
+          "max": 60,
+          "min": 19
+        }
+      ]
+    },
+    "n3": {
+      "version": 6,
+      "availableSets": 1,
+      "limit": 10,
+      "counts": [
+        35,
+        39,
+        28
+      ],
+      "times": [
+        30,
+        70,
+        40
+      ],
+      "pass": 95,
+      "groups": [
+        {
+          "id": "language",
+          "label": "ভাষাজ্ঞান",
+          "max": 60,
+          "min": 19
+        },
+        {
+          "id": "reading",
+          "label": "রিডিং",
+          "max": 60,
+          "min": 19
+        },
+        {
+          "id": "listening",
+          "label": "লিসেনিং",
+          "max": 60,
+          "min": 19
+        }
+      ]
+    }
+  },
+  "officialTimeSource": "https://www.jlpt.jp/e/guideline/testsections.html",
+  "officialCountSource": "https://www.jlpt.jp/e/topics/202009091599642827.html",
+  "officialScoreSource": "https://www.jlpt.jp/e/guideline/results.html",
+  "scoreMethod": "raw practice conversion; not official IRT scaled score"
+}
