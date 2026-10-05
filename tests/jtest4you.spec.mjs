@@ -18,7 +18,7 @@ for(const level of ['n5','n4','n3']){
   await page.locator('#nextPartBtn').click();
   await expect(page.locator('.question-kind').filter({hasText:'文の組み立て'})).toHaveCount(level==='n3'?5:4);
   await expect(page.locator('.question-prompt').filter({hasText:/[★☆]/})).toHaveCount(level==='n3'?5:4);
-  await expect(page.locator('.passage-text').first()).toBeVisible();
+  await page.locator('#layoutToggle').click();await expect(page.locator('.passage-text').first()).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
   expect(errors).toEqual([]);
  });
@@ -227,4 +227,35 @@ test('Bengali review load failure offers retry and never opens incomplete exam',
  await expect(page.locator('#sourceText')).toContainText('বাংলা উত্তর ও ব্যাখ্যা লোড হয়নি');
  broken=false;await page.locator('#startBtn').click();
  await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
+});
+
+test("one-question navigation flags and cursor survive reload",async function navigationTest({page}){
+ await page.goto('/jlpt-exam.html?level=n4&test=1');await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');await page.locator('#startBtn').click();
+ await expect(page.locator('.question-card:visible')).toHaveCount(1);await expect(page.locator('#questionCounter')).toContainText('প্রশ্ন ১');await expect(page.locator('[data-check]')).toHaveCount(0);
+ await page.locator('.question-card:visible [data-answer]').nth(1).click();await page.locator('.question-card:visible [data-flag]').click();
+ await expect(page.locator('#questionMap [data-go-question="0"]')).toHaveClass(/answered.*flagged/);
+ await page.locator('#nextQuestion').click();await expect(page.locator('#questionCounter')).toContainText('প্রশ্ন ২');
+ await page.reload();await page.locator('#resumeBtn').click();await expect(page.locator('#questionCounter')).toContainText('প্রশ্ন ২');
+ await page.locator('#previousQuestion').click();await expect(page.locator('.question-card:visible .option.selected')).toHaveAttribute('data-option','1');await expect(page.locator('.question-card:visible [data-flag]')).toHaveAttribute('aria-pressed','true');
+ await page.locator('.question-overview summary').click();await page.locator('#questionMap [data-go-question="4"]').click();await expect(page.locator('#questionCounter')).toContainText('প্রশ্ন ৫');
+ await page.locator('#layoutToggle').click();await expect(page.locator('.question-card:visible')).toHaveCount(28);
+ await page.locator('#layoutToggle').click();await expect(page.locator('.question-card:visible')).toHaveCount(1);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
+});
+test("practice reveals Bengali meaning and rationale after checking",async function practiceTest({page}){
+ await page.goto('/jlpt-exam.html?level=n5&test=1');await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
+ await page.locator('label').filter({has:page.locator('input[value="practice"]')}).click();await page.locator('#startBtn').click();
+ const card=page.locator('.question-card:visible');await expect(card.locator('[data-feedback]')).toBeHidden();
+ await card.locator('[data-check]').click();await expect(page.locator('#toast')).toHaveText('আগে একটি উত্তর বেছে নিন');await expect(card.locator('[data-feedback]')).toBeHidden();
+ await card.locator('[data-answer]').first().click();await card.locator('[data-check]').click();
+ await expect(card.locator('[data-feedback]')).toContainText('মাস');await expect(card.locator('[data-feedback]')).toContainText('らいげつ');await expect(card.locator('[data-feedback]')).not.toContainText('উৎসের answer key অনুযায়ী');
+ await page.locator('#nextQuestion').click();await expect(page.locator('.question-card:visible [data-feedback]')).toBeHidden();
+});
+test("question navigation shows only its associated reading passage",async function passageNavigationTest({page}){
+ page.on('dialog',dialog=>dialog.accept());
+ await page.goto('/jlpt-exam.html?level=n3&test=1');await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');await page.locator('#startBtn').click();await page.locator('#submitPartBtn').click();await page.locator('#nextPartBtn').click();
+ await page.locator('.question-overview summary').click();
+ const passageIndex=await page.evaluate(()=>Number(document.querySelector('[data-passage-start]').getAttribute('data-passage-start')));
+ await page.locator(`[data-go-question="${passageIndex}"]`).click();await expect(page.locator('.passage-card:visible')).toHaveCount(1);await expect(page.locator('.question-card:visible')).toHaveCount(1);
+ await page.locator('#questionMap [data-go-question="0"]').click();await expect(page.locator('.passage-card:visible')).toHaveCount(0);
 });
