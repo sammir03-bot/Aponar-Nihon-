@@ -1,12 +1,29 @@
-(function(){'use strict';
-const cfg={
- n5:{title:'JLPT N5',sub:'বিগিনার',jp:'日本語能力試験 N5',time:90,parts:'২০ + ৪০ + ৩০',count:77,pass:80,hero:'linear-gradient(135deg,#173152 0%,#315f86 55%,#7194b2 100%)',grad:'linear-gradient(135deg,#2563eb,#06b6d4)',shadow:'rgba(37,99,235,.22)',note:'JapaneseTest4You-এর প্রশ্ন, answer key ও রেকর্ড করা অডিও। JLPT সময়ের অনুশীলন পরীক্ষা; অফিসিয়াল প্রশ্নপত্র নয়।'},
- n4:{title:'JLPT N4',sub:'এলিমেন্টারি',jp:'日本語能力試験 N4',time:115,parts:'২৫ + ৫৫ + ৩৫',count:85,pass:90,hero:'linear-gradient(135deg,#173152 0%,#6e4f3a 55%,#b87543 100%)',grad:'linear-gradient(135deg,#d85c4a,#e4a34a)',shadow:'rgba(216,92,74,.24)',note:'JapaneseTest4You-এর প্রশ্ন, answer key ও রেকর্ড করা অডিও। JLPT সময়ের অনুশীলন পরীক্ষা; অফিসিয়াল প্রশ্নপত্র নয়।'},
- n3:{title:'JLPT N3',sub:'ইন্টারমিডিয়েট',jp:'日本語能力試験 N3',time:140,parts:'৩০ + ৭০ + ৪০',count:102,pass:95,hero:'linear-gradient(135deg,#173152 0%,#493f91 55%,#6975b9 100%)',grad:'linear-gradient(135deg,#6c5ce7,#4f87ac)',shadow:'rgba(108,92,231,.24)',note:'JapaneseTest4You-এর প্রশ্ন, answer key ও রেকর্ড করা অডিও। JLPT সময়ের অনুশীলন পরীক্ষা; অফিসিয়াল প্রশ্নপত্র নয়।'}
+(async function(){'use strict';
+const themes={
+ n5:{sub:'বিগিনার',hero:'linear-gradient(135deg,#173152 0%,#315f86 55%,#7194b2 100%)',grad:'linear-gradient(135deg,#2563eb,#06b6d4)',shadow:'rgba(37,99,235,.22)'},
+ n4:{sub:'এলিমেন্টারি',hero:'linear-gradient(135deg,#173152 0%,#6e4f3a 55%,#b87543 100%)',grad:'linear-gradient(135deg,#d85c4a,#e4a34a)',shadow:'rgba(216,92,74,.24)'},
+ n3:{sub:'ইন্টারমিডিয়েট',hero:'linear-gradient(135deg,#173152 0%,#493f91 55%,#6975b9 100%)',grad:'linear-gradient(135deg,#6c5ce7,#4f87ac)',shadow:'rgba(108,92,231,.24)'}
 };
-const level=(document.body.dataset.level||'n5').toLowerCase(),c=cfg[level]||cfg.n5,$=s=>document.querySelector(s),bn=v=>String(v).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
-document.documentElement.style.setProperty('--hero',c.hero);document.documentElement.style.setProperty('--grad',c.grad);document.documentElement.style.setProperty('--shadow-color',c.shadow);document.title=`${c.title} — ১০টি Mock Test | আপনার নিহোন`;
-$('#levelName').textContent=c.title;$('#levelSub').textContent=c.sub;$('#levelJp').textContent=c.jp;$('#heroTitle').innerHTML=`${c.title} <span>১০টি Mock Test</span>`;$('#heroDesc').textContent=`শব্দভাণ্ডার · গ্রামার/রিডিং · লিসেনিং — ${c.parts} মিনিট। প্রতিটি test শেষে ১৮০ নম্বরের practice marksheet ও বাংলা review।`;$('#timePill').textContent=`মোট ${bn(c.time)} মিনিট`;$('#passPill').textContent=`পাস লক্ষ্য ${bn(c.pass)}/১৮০`;$('#sourceNote').textContent=c.note;$('#activeLevel').innerHTML=`<i class="fa-solid fa-file-lines"></i>${level.toUpperCase()}`;
-const grid=$('#examGrid');let html='';for(let i=1;i<=10;i++){const tag='JTEST4YOU';html+=`<article class="exam-card" data-test="${i}"><div class="exam-title-row"><div class="exam-no"><div class="exam-icon"><i class="fa-solid fa-file-pen"></i></div><h3>${level.toUpperCase()} Mock Test ${i}<small>পূর্ণ পরীক্ষা · সেট ${String(i).padStart(2,'0')}</small></h3></div><span class="tag ${level==='n5'&&i===1?'ref':''}">${tag}</span></div><div class="meta"><span><i class="fa-regular fa-clock"></i> ${bn(c.time)} মিনিট</span><span><i class="fa-solid fa-list-check"></i> ${bn(c.count)} প্রশ্ন</span><span><i class="fa-solid fa-headphones"></i> লিসেনিং</span></div><div class="score-mini" id="score-${i}">এখনও পরীক্ষা দেওয়া হয়নি</div><div class="exam-actions"><a class="start" id="start-${i}" href="jlpt-exam.html?level=${level}&test=${i}"><i class="fa-solid fa-play"></i> শুরু করুন</a><a class="result-link" id="result-${i}" href="jlpt-exam.html?level=${level}&test=${i}&result=1">ফলাফল</a></div></article>`}grid.innerHTML=html;
-let results={};try{results=JSON.parse(localStorage.getItem('aponarNihonMockResults')||'{}')}catch{}for(let i=1;i<=10;i++){const r=results[`${level}-${i}`];if(!r||r.bankVersion!==5)continue;const score=document.getElementById(`score-${i}`),start=document.getElementById(`start-${i}`),result=document.getElementById(`result-${i}`);score.innerHTML=`শেষ স্কোর: <strong>${bn(r.score)}/১৮০</strong> · ${r.passed?'পাস':'আরও প্র্যাকটিস দরকার'}`;start.innerHTML='<i class="fa-solid fa-rotate-right"></i> আবার দিন';result.classList.add('show')}
+const level=(document.body.dataset.level||'n5').toLowerCase(),theme=themes[level]||themes.n5,$=s=>document.querySelector(s),bn=v=>String(v).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
+document.documentElement.style.setProperty('--hero',theme.hero);document.documentElement.style.setProperty('--grad',theme.grad);document.documentElement.style.setProperty('--shadow-color',theme.shadow);
+$('#heroTitle').textContent=`JLPT ${level.toUpperCase()} Mock Test`;$('#examGrid').textContent='আলাদা প্রশ্নের সেট যাচাই হচ্ছে…';
+try{
+ const response=await fetch('/assets/data/jtest4you/catalog.json?v=20261005.6',{cache:'no-cache'});if(!response.ok)throw new Error('টেস্ট তালিকা লোড হয়নি');
+ const catalog=await response.json();if(catalog.version!==6)throw new Error('টেস্ট তালিকা আপডেট হচ্ছে');
+ const c=catalog.levels[level],count=c.counts.reduce((a,b)=>a+b,0),time=c.times.reduce((a,b)=>a+b,0);
+ document.title=`JLPT ${level.toUpperCase()} — ${bn(c.availableSets)}টি আলাদা Mock Test | আপনার নিহোন`;
+ $('#levelName').textContent=`JLPT ${level.toUpperCase()}`;$('#levelSub').textContent=theme.sub;$('#levelJp').textContent=`日本語能力試験 ${level.toUpperCase()}`;
+ $('#heroTitle').innerHTML=`JLPT ${level.toUpperCase()} <span>${bn(c.availableSets)}টি আলাদা Mock Test</span>`;
+ $('#heroDesc').textContent=`শব্দভাণ্ডার · গ্রামার/রিডিং · লিসেনিং — ${c.times.map(bn).join(' + ')} মিনিট। JLPT পাসসীমা অনুযায়ী practice result; অফিসিয়াল IRT স্কোর নয়।`;
+ $('#timePill').textContent=`মোট ${bn(time)} মিনিট`;$('#passPill').textContent=`JLPT পাসসীমা ${bn(c.pass)}/১৮০`;
+ $('.section-head h2').textContent='নতুন আলাদা প্রশ্নের সেট';
+ $('#sourceNote').textContent='JapaneseTest4You-এর মূল প্রশ্ন, উত্তর ও রেকর্ডিং। আলাদা সেটে একই প্রশ্ন বা অডিও ঘোরানো হয় না। পর্যাপ্ত নতুন যাচাইকৃত প্রশ্ন ছাড়া আরেকটি সেট চালু করা হবে না।'+(level==='n5'?' N5 উৎসে paraphrase প্রশ্ন নেই; ওই ৩টির জায়গায় context practice আছে।':'');
+ $('#activeLevel').innerHTML=`<i class="fa-solid fa-file-lines"></i>${level.toUpperCase()}`;
+ let results={};try{results=JSON.parse(localStorage.getItem('aponarNihonMockResults')||'{}')}catch{}
+ let html='';for(let i=1;i<=c.availableSets;i++){
+  const r=results[`${level}-${i}`],done=r?.bankVersion===6;
+  html+=`<article class="exam-card" data-test="${i}"><div class="exam-title-row"><div class="exam-no"><div class="exam-icon"><i class="fa-solid fa-file-pen"></i></div><h3>${level.toUpperCase()} Mock Test ${i}<small>আলাদা প্রশ্ন · সেট ${String(i).padStart(2,'0')}</small></h3></div><span class="tag">JTEST4YOU</span></div><div class="meta"><span><i class="fa-regular fa-clock"></i> ${bn(time)} মিনিট</span><span><i class="fa-solid fa-list-check"></i> ${bn(count)} প্রশ্ন</span><span><i class="fa-solid fa-headphones"></i> লিসেনিং</span></div><div class="score-mini" id="score-${i}">${done?`Practice score: <strong>${bn(r.score)}/১৮০</strong> · ${r.passed?'Practice pass':'আরও প্র্যাকটিস দরকার'}`:'এখনও পরীক্ষা দেওয়া হয়নি'}</div><div class="exam-actions"><a class="start" id="start-${i}" href="jlpt-exam.html?level=${level}&test=${i}"><i class="fa-solid ${done?'fa-rotate-right':'fa-play'}"></i> ${done?'একই সেট আবার দিন':'নতুন সেট শুরু করুন'}</a><a class="result-link ${done?'show':''}" id="result-${i}" href="jlpt-exam.html?level=${level}&test=${i}&result=1">ফলাফল</a></div></article>`;
+ }
+ $('#examGrid').innerHTML=html||'আরেকটি পূর্ণ সেটের জন্য নতুন যাচাইকৃত প্রশ্ন প্রয়োজন।';
+}catch(error){$('#examGrid').textContent=error.message+'। পেজ রিলোড করুন।';}
 })();

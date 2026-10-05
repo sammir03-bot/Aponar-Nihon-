@@ -157,10 +157,10 @@ def parse(url, level, category):
             if not prompt: prompt = f'問題 {num}：本文の問題に答えてください。'
             extra['passage'] = passage
             passage_text = BeautifulSoup(passage, 'html.parser').get_text(' ', strip=True)
-            if '<table' in passage or '<img' in passage or re.search('料金|会費|受付|休館|会場|応募|申込|募集|定員|日時', passage_text):
+            if '<table' in passage or re.search('皆さんへ|料金|営業時間|時刻表|お知らせ|入会|申し込み|申込|会費|休館|応募|募集|定員|日時|安く売|パン屋|受付時間|チケット|説明会|入場|利用案内|メニュー', passage_text):
                 extra['readingKind'] = 'information'
             else:
-                extra['readingKind'] = 'long' if len(passage_text) >= 600 else 'mid' if len(passage_text) >= 250 else 'short'
+                extra['readingKind'] = 'long' if level == 'n3' and len(passage_text) >= 600 else 'mid' if len(passage_text) >= 250 else 'short'
         elif category == 'kanji':
             option_texts = [BeautifulSoup(o, 'html.parser').get_text() for o in options]
             kind = '表記' if any(re.search('[一-龯]', o) for o in option_texts) else '漢字読み'
@@ -188,9 +188,9 @@ def parse(url, level, category):
             if images: extra['questionImage'] = images
             prompt = '音声を聞いて、正しい答えを一つ選んでください。'
         effective_category = category
-        # JTest4You files some N4 passage-cloze items under Reading. These are
+        # JTest4You files some passage-cloze items under Reading. These are
         # genuine source questions, not newly generated substitutions.
-        if level == 'n4' and category == 'reading' and re.search('入れ|入る', prompt):
+        if category == 'reading' and re.search(r'(?:には|に)(?:何を|なにを)?(?:入れ|入る)', BeautifulSoup(prompt, 'html.parser').get_text()):
             effective_category = 'grammar'
             kind = '文章文法'
         group = 'listening' if effective_category == 'listening' else ('reading' if effective_category == 'reading' and level == 'n3' else 'language' if level == 'n3' else 'knowledgeReading')
@@ -223,7 +223,7 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     for level, qs in banks.items():
         qs.sort(key=lambda q: (q['category'], q['sourceUrl'], q['sourceQuestion']))
-        (out / (level + '.json')).write_text(json.dumps({'version': 5, 'level': level, 'source': ORIGIN, 'questions': qs}, ensure_ascii=False, separators=(',', ':')) + '\n')
+        (out / (level + '.json')).write_text(json.dumps({'version': 6, 'level': level, 'source': ORIGIN, 'questions': qs}, ensure_ascii=False, separators=(',', ':')) + '\n')
         from collections import Counter
         print(level, len(qs), dict(Counter(q['category'] for q in qs)), dict(Counter(q['kind'] for q in qs)), flush=True)
     (CACHE / 'rejections.json').write_text(json.dumps(errors, ensure_ascii=False, indent=2))

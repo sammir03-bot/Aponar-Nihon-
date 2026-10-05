@@ -27,7 +27,7 @@ def preserves_visible_text(base_html: str, current_html: str) -> bool:
 # evolve. Add to this map only when a product change explicitly moves a page.
 MOVED_PAGE_ARCHIVES = {
     "jlpt-exam.html": "archive/jlpt-exam-v4-generated.html",
-    "mock-test.html": "archive/mock-test-v4-generated.html",
+    "mock-test.html": "archive/mock-test-v5-source.html",
     "index.html": "archive/home-full-legacy.html",
     "tutor-section.html": "archive/tutor-section-v2.html",
     "n5.html": "archive/n5-hub-v1.html",

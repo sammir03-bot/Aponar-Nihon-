@@ -15,8 +15,8 @@ for(const level of ['n5','n4','n3']){
   await page.locator('#submitPartBtn').click();
   await expect(page.locator('#partSheet')).toBeVisible();
   await page.locator('#nextPartBtn').click();
-  await expect(page.locator('.question-kind').filter({hasText:'文の組み立て'})).toHaveCount(5);
-  await expect(page.locator('.question-prompt').filter({hasText:/[★☆]/})).toHaveCount(5);
+  await expect(page.locator('.question-kind').filter({hasText:'文の組み立て'})).toHaveCount(level==='n3'?5:4);
+  await expect(page.locator('.question-prompt').filter({hasText:/[★☆]/})).toHaveCount(level==='n3'?5:4);
   await expect(page.locator('.passage-text').first()).toBeVisible();
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
   expect(errors).toEqual([]);
@@ -60,9 +60,9 @@ test('recorded listening retains image/number choices, retries errors and locks 
  await expect(page.locator('[data-audio]').first()).toBeDisabled();await expect(page.locator('[data-audio]').nth(1)).toBeEnabled();
 });
 
-test('practice audio can replay and historical v4 state is not resumed',async({page})=>{
+test('practice audio can replay and historical v5 state is not resumed',async({page})=>{
  await page.addInitScript(()=>{
-  localStorage.setItem('aponarNihonExam-v4-n4-1',JSON.stringify({version:4,level:'n4',test:1,sectionIndex:2}));
+  localStorage.setItem('aponarNihonExam-v5-n4-1',JSON.stringify({version:5,level:'n4',test:1,sectionIndex:2}));
   window.Audio=class{constructor(){this.duration=60;this.currentTime=0}pause(){}play(){this.onplaying?.();queueMicrotask(()=>this.onended?.());return Promise.resolve()}};
  });
  page.on('dialog',dialog=>dialog.accept());
@@ -71,3 +71,60 @@ test('practice audio can replay and historical v4 state is not resumed',async({p
  for(let i=0;i<2;i++){await page.locator('#submitPartBtn').click();await page.locator('#nextPartBtn').click()}
  const first=page.locator('[data-audio]').first();await first.click();await expect(first).toBeEnabled();await first.click();await expect(first).toBeEnabled();
 });
+
+test('answered listening explains remaining recordings and offers a working next-audio action',async({page})=>{
+ await page.addInitScript(()=>{
+  window.__audioInstances=[];
+  window.Audio=class{constructor(src){this.src=src;this.currentTime=0;this.duration=60;window.__audioInstances.push(this)}pause(){}play(){this.onplaying?.();return Promise.resolve()}};
+ });
+ await page.goto('/jlpt-exam.html?level=n4&test=1');await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
+ await page.evaluate(()=>{
+  const bank=window.JLPT_FULL_GENERATOR('n4',1),all=[...bank.vocab,...bank.grammarReading,...bank.listening];
+  localStorage.setItem('aponarNihonExam-v6-n4-1',JSON.stringify({version:6,level:'n4',test:1,mode:'full',sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+35*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m1',q.answer])),audioDone:[],audioProgress:{},audioPlays:{}}));
+ });
+ await page.reload();await page.locator('#resumeBtn').click();
+ await expect(page.locator('#submitPartBtn')).toBeDisabled();
+ await expect(page.locator('#endCardTitle')).toHaveText('আরও ২৮টি অডিও বাকি');
+ await expect(page.locator('#endCardText')).not.toContainText('এখন “পার্ট জমা দিন”');
+ await expect(page.locator('#unansweredJump')).toHaveText('বাকি অডিও শুনুন →');
+ await expect(page.locator('#dockStatus')).toContainText('০/২৮ অডিও শেষ');
+ await page.locator('#unansweredJump').click();
+ await expect(page.locator('[data-audio-status]').first()).toHaveText('অডিও চলছে…');
+ await page.evaluate(()=>window.__audioInstances.at(-1).onended());
+ await expect(page.locator('#dockStatus')).toContainText('১/২৮ অডিও শেষ');
+});
+
+test('unavailable set does not wrap back to previously used questions',async({page})=>{
+ await page.goto('/jlpt-exam.html?level=n4&test=10');
+ await expect(page.locator('#introTitle')).toHaveText('সেটটি এখনও প্রস্তুত নয়');
+ await expect(page.locator('#startBtn')).toBeDisabled();await expect(page.locator('.question-card')).toHaveCount(0);
+ await expect(page.locator('#introBack')).toHaveAttribute('href','n4-mock-tests.html');
+});
+
+test('hubs publish only disjoint sets and explicitly label a deliberate retake',async({page})=>{
+ const catalog=await (await page.request.get('/assets/data/jtest4you/catalog.json')).json();
+ await page.addInitScript(()=>localStorage.setItem('aponarNihonMockResults',JSON.stringify({'n4-1':{bankVersion:6,score:180,passed:true},'n5-1':{bankVersion:5,score:180,passed:true}})));
+ for(const level of ['n5','n4','n3']){
+  await page.goto(`/${level}-mock-tests.html`);await expect(page.locator('.exam-card')).toHaveCount(catalog.levels[level].availableSets);
+  await expect(page.locator('#heroTitle')).not.toContainText('১০টি');
+  if(level==='n4')await expect(page.locator('#start-1')).toContainText('একই সেট আবার দিন');
+  if(level==='n5')await expect(page.locator('#start-1')).toContainText('নতুন সেট শুরু করুন');
+ }
+ await page.goto('/mock-test.html');await expect(page.locator('.hero-meta')).toContainText('৩টি আলাদা সেট');
+ await expect(page.locator('[data-level="n5"] .facts')).toContainText('21 + 22 + 24 = 67');
+});
+
+for(const level of ['n4','n3']){
+ test(`${level}: practice scoring uses official section ranges and requires every sectional minimum`,async({page})=>{
+  await page.goto(`/jlpt-exam.html?level=${level}&test=1`);await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
+  await page.evaluate(level=>{
+   const bank=window.JLPT_FULL_GENERATOR(level,1),all=[...bank.vocab,...bank.grammarReading,...bank.listening];
+   localStorage.setItem(`aponarNihonExam-v6-${level}-1`,JSON.stringify({version:6,level,test:1,mode:'full',sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+40*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m1',q.category==='listening'?(q.answer+1)%q.options.length:q.answer])),audioDone:bank.listening.map(q=>q.id+'-m1')}));
+  },level);
+  await page.reload();await page.locator('#resumeBtn').click();await page.locator('#submitPartBtn').click();await page.locator('#nextPartBtn').click();
+  await expect(page.locator('.result-status')).toHaveText('আরও প্র্যাকটিস প্রয়োজন');
+  await expect(page.locator('.score-card').filter({hasText:'লিসেনিং'})).toContainText('০ / ৬০');
+  const result=await page.evaluate(level=>JSON.parse(localStorage.getItem('aponarNihonMockResults'))[`${level}-1`],level);
+  expect(result.score).toBe(120);expect(result.passed).toBe(false);expect(Object.values(result.groups).map(g=>g.max)).toEqual(level==='n3'?[60,60,60]:[120,60]);
+ });
+}
