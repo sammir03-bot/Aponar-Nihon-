@@ -8,13 +8,13 @@ const level=(document.body.dataset.level||'n5').toLowerCase(),theme=themes[level
 document.documentElement.style.setProperty('--hero',theme.hero);document.documentElement.style.setProperty('--grad',theme.grad);document.documentElement.style.setProperty('--shadow-color',theme.shadow);
 $('#heroTitle').textContent=`JLPT ${level.toUpperCase()} Mock Test`;$('#examGrid').textContent='আলাদা প্রশ্নের সেট যাচাই হচ্ছে…';
 try{
- const response=await fetch('/assets/data/jtest4you/catalog.json?v=20261005.6',{cache:'no-cache'});if(!response.ok)throw new Error('টেস্ট তালিকা লোড হয়নি');
+ const response=await fetch('/assets/data/jtest4you/catalog.json?v=20261005.15',{cache:'no-cache'});if(!response.ok)throw new Error('টেস্ট তালিকা লোড হয়নি');
  const catalog=await response.json();if(catalog.version!==6)throw new Error('টেস্ট তালিকা আপডেট হচ্ছে');
  const c=catalog.levels[level],count=c.counts.reduce((a,b)=>a+b,0),time=c.times.reduce((a,b)=>a+b,0);
  document.title=`JLPT ${level.toUpperCase()} — ${bn(c.availableSets)}টি আলাদা Mock Test | আপনার নিহোন`;
  $('#levelName').textContent=`JLPT ${level.toUpperCase()}`;$('#levelSub').textContent=theme.sub;$('#levelJp').textContent=`日本語能力試験 ${level.toUpperCase()}`;
  $('#heroTitle').innerHTML=`JLPT ${level.toUpperCase()} <span>${bn(c.availableSets)}টি আলাদা Mock Test</span>`;
- $('#heroDesc').textContent=`শব্দভাণ্ডার · গ্রামার/রিডিং · লিসেনিং — ${c.times.map(bn).join(' + ')} মিনিট। JLPT পাসসীমা অনুযায়ী practice result; অফিসিয়াল IRT স্কোর নয়।`;
+ $('#heroDesc').textContent=`লক্ষ্য ${bn(c.limit)}টি পূর্ণ সেট; এখন ${bn(c.availableSets)}টি চালু। শব্দভাণ্ডার · গ্রামার/রিডিং · লিসেনিং — ${c.times.map(bn).join(' + ')} মিনিট। JLPT পাসসীমা অনুযায়ী practice result; অফিসিয়াল IRT স্কোর নয়।`;
  $('#timePill').textContent=`মোট ${bn(time)} মিনিট`;$('#passPill').textContent=`JLPT পাসসীমা ${bn(c.pass)}/১৮০`;
  $('.section-head h2').textContent='নতুন আলাদা প্রশ্নের সেট';
  $('#sourceNote').textContent='JapaneseTest4You-এর মূল প্রশ্ন, উত্তর ও রেকর্ডিং। আলাদা সেটে একই প্রশ্ন বা অডিও ঘোরানো হয় না। পর্যাপ্ত নতুন যাচাইকৃত প্রশ্ন ছাড়া আরেকটি সেট চালু করা হবে না।'+(level==='n5'?' N5 উৎসে paraphrase প্রশ্ন নেই; ওই ৩টির জায়গায় context practice আছে।':'');

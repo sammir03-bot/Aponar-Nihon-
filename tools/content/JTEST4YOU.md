@@ -20,7 +20,10 @@ released papers or a verified complete reproduction of every listening item type
 The assembler allocates questions without wrapping offsets. Question IDs,
 normalized content, passages and recording URLs cannot recur in another published
 set at the same level. A partial next set is discarded. The catalog publishes only
-complete available sets, currently one per level. More sets require additional
+complete available sets, currently one per level. The requested target is fifteen
+full sets per level (45 total); the assembler, catalog and exam routes now support
+that limit. Extra sets stay unavailable until enough distinct verified source
+questions, passages, answer keys and listening recordings are supplied. More sets require additional
 verified source questions; a large total bank alone is insufficient when a required
 item type or passage pool runs out. There is no synthesized-question fallback.
 A deliberate retake uses the same set and is labeled "একই সেট আবার দিন". Version 5

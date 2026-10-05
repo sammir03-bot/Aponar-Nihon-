@@ -95,7 +95,7 @@ test('answered listening explains remaining recordings and offers a working next
 });
 
 test('unavailable set does not wrap back to previously used questions',async({page})=>{
- await page.goto('/jlpt-exam.html?level=n4&test=10');
+ await page.goto('/jlpt-exam.html?level=n4&test=15');
  await expect(page.locator('#introTitle')).toHaveText('সেটটি এখনও প্রস্তুত নয়');
  await expect(page.locator('#startBtn')).toBeDisabled();await expect(page.locator('.question-card')).toHaveCount(0);
  await expect(page.locator('#introBack')).toHaveAttribute('href','n4-mock-tests.html');
@@ -128,3 +128,18 @@ for(const level of ['n4','n3']){
   expect(result.score).toBe(120);expect(result.passed).toBe(false);expect(Object.values(result.groups).map(g=>g.max)).toEqual(level==='n3'?[60,60,60]:[120,60]);
  });
 }
+
+test('set fifteen keeps its own route, questions and saved attempt',async({page})=>{
+ await page.goto('/jlpt-exam.html?level=n4&test=1');await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
+ const first=await page.evaluate(()=>window.JLPT_FULL_GENERATOR('n4',1));
+ const base=[...first.vocab,...first.grammarReading,...first.listening];
+ const questions=Array.from({length:16},(_,i)=>base.map(q=>({...q,id:q.id+'-fixture-'+i,prompt:q.prompt+' fixture '+i,passage:q.passage?q.passage+' fixture '+i:undefined,audioUrl:q.audioUrl?q.audioUrl+'-fixture-'+i:undefined}))).flat();
+ await page.route('**/assets/data/jtest4you/n4.json*',route=>route.fulfill({json:{version:6,level:'n4',questions}}));
+ await page.goto('/jlpt-exam.html?level=n4&test=15');
+ await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
+ await expect(page.locator('#introTitle')).toHaveText('N4 Mock Test ১৫');
+ await page.locator('#startBtn').click();await expect(page.locator('.question-card')).toHaveCount(28);
+ await expect(page.locator('.question-prompt').first()).toContainText('fixture 14');
+ const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('aponarNihonExam-v6-n4-15')));
+ expect(saved.test).toBe(15);
+});

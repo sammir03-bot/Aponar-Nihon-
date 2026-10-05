@@ -16,6 +16,7 @@ for(const level of ['n5','n4','n3']){
   for(const value of [q.prompt,q.passage,q.questionImage,...q.options])if(value)assert.ok(!/<(?:script|iframe|input)|\son\w+=|javascript:/i.test(value));
  }
  const availability=context.window.JLPT_BANK_AVAILABILITY(level);
+ assert.equal(availability.limit,15);
  assert.ok(availability.availableSets>0);
  const crossSetIds=new Set(),crossSetContent=new Set(),crossSetPassages=new Set();
  const passageKey=q=>(q.passage||'').replace(/<[^>]*>/g,'').replace(/&(?:nbsp|#160);/g,' ').replace(/[\s　]+/g,'').normalize('NFKC');
@@ -37,7 +38,7 @@ for(const level of ['n5','n4','n3']){
   const clone=context.window.JLPT_FULL_GENERATOR(level,test);clone.vocab[0].options[0]='edited';assert.notEqual(context.window.JLPT_FULL_GENERATOR(level,test).vocab[0].options[0],'edited');
   total+=all.length;
  }
- if(availability.availableSets<10)assert.throws(()=>context.window.JLPT_FULL_GENERATOR(level,availability.availableSets+1),e=>e.code==='NO_NEW_SET');
+ if(availability.availableSets<availability.limit)assert.throws(()=>context.window.JLPT_FULL_GENERATOR(level,availability.availableSets+1),e=>e.code==='NO_NEW_SET');
  catalog.levels[level]=JSON.parse(JSON.stringify({...availability,pass:context.window.JLPT_MOCK_CONFIG[level].pass,groups:context.window.JLPT_MOCK_CONFIG[level].groups}));
  console.log(level,data.questions.length,'source questions;',availability.availableSets,'disjoint sets validated');
 }
@@ -54,3 +55,16 @@ for(const level of ['n5','n4','n3']){
  assert.equal(c.window.JLPT_BANK_AVAILABILITY(level).availableSets,catalog.levels[level].availableSets,'Duplicate content must not increase capacity');
 }
 console.log('Duplicate rows and reordered options cannot create fake new sets');
+
+// With sixteen complete independent fixture sets, publish exactly fifteen.
+for(const level of ['n5','n4','n3']){
+ const first=context.window.JLPT_FULL_GENERATOR(level,1);
+ const base=[...first.vocab,...first.grammarReading,...first.listening];
+ const questions=Array.from({length:16},(_,i)=>base.map(q=>({...q,id:q.id+'-fixture-'+i,prompt:q.prompt+' fixture '+i,passage:q.passage?q.passage+' fixture '+i:undefined,audioUrl:q.audioUrl?q.audioUrl+'-fixture-'+i:undefined}))).flat();
+ const c={window:{},fetch:async()=>({ok:true,json:async()=>({version:6,level,questions})})};
+ vm.createContext(c);vm.runInContext(fs.readFileSync('jlpt-level-generators.js','utf8'),c);await c.window.JLPT_LOAD_BANK(level);
+ assert.equal(c.window.JLPT_BANK_AVAILABILITY(level).availableSets,15);
+ assert.ok(c.window.JLPT_FULL_GENERATOR(level,15).vocab[0].id.endsWith('-fixture-14'));
+ assert.throws(()=>c.window.JLPT_FULL_GENERATOR(level,16),/Invalid mock selection/);
+}
+console.log('Fifteen independent sets per level supported; extra sets remain out of range');
