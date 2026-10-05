@@ -35,11 +35,14 @@ for(const level of ['n5','n4','n3']){
   for(let test=1;test<=availability.availableSets;test++){
     const bank=context.window.JLPT_FULL_GENERATOR(level,test),all=[...bank.vocab,...bank.grammarReading,...bank.listening];
     assert.deepEqual(Array.from([bank.vocab.length,bank.grammarReading.length,bank.listening.length]),Array.from(bank.meta.counts));
+    const vocabTypeCounts=['context','paraphrase','usage'].map(kind=>bank.vocab.filter(q=>q.vocabularyType===kind).length);
+    assert.deepEqual(vocabTypeCounts,level==='n5'?[6,3,0]:level==='n4'?[8,4,4]:[11,5,5],'Vocabulary must keep the JLPT question-type distribution');
+    if(level==='n5')assert.ok(bank.vocab.filter(q=>q.vocabularyType==='paraphrase').every(q=>q.prompt.includes('おなじいみ')),'Recognize N5 same-meaning instructions written in kana');
     const passages=new Set();
     for(const q of all){
       assert.ok(!crossIds.has(q.id),`Repeated ID ${q.id}`);crossIds.add(q.id);
       const key=context.window.JLPT_QUESTION_SIGNATURE(q);assert.ok(!crossContent.has(key),'Repeated content or recording');crossContent.add(key);
-      if(q.passage){const p=passageKey(q);assert.ok(!crossPassages.has(p),'Repeated passage');passages.add(p)}
+      if(q.passage&&q.kind!=='文の組み立て'){const p=passageKey(q);assert.ok(!crossPassages.has(p),'Repeated passage');passages.add(p)}
       assert.ok(q.answerBn&&/[অ-হ]/u.test(q.answerBn),`Missing Bengali answer ${q.id}`);
       assert.ok(q.explanationBn.length>=40&&/[অ-হ]/u.test(q.explanationBn),`Missing substantive explanation ${q.id}`);
       assert.ok(!q.explanationBn.startsWith('উৎসের answer key অনুযায়ী'));
@@ -70,7 +73,7 @@ for(const level of ['n5','n4','n3']){
   const first=context.window.JLPT_FULL_GENERATOR(level,1),base=[...first.vocab,...first.grammarReading,...first.listening];
   const fixtureReview={...reviews,levels:{...reviews.levels,[level]:{}}};
   const questions=Array.from({length:11},(_,i)=>base.map(q=>{
-    const copy={...q,id:q.id+'-fixture-'+i,prompt:q.prompt+' fixture '+i,passage:q.passage?q.passage+' fixture '+i:undefined,audioUrl:q.audioUrl?q.audioUrl+'-fixture-'+i:undefined};
+    const copy={...q,id:q.id+'-fixture-'+i,prompt:q.prompt+' fixture '+i,passage:q.passage?(q.kind==='文の組み立て'?q.passage:q.passage+' fixture '+i):undefined,audioUrl:q.audioUrl?q.audioUrl+'-fixture-'+i:undefined};
     fixtureReview.levels[level][copy.id]={...reviews.levels[level][q.id]};
     return copy;
   })).flat();
