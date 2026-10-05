@@ -22,6 +22,7 @@ for(const level of ['n5','n4','n3']){
   assert.equal(new Set(bank.listening.map(q=>q.audioUrl)).size,bank.listening.length,`${level} ${test} repeated audio`);
   assert.ok(bank.grammarReading.filter(q=>q.kind==='文の組み立て').every(q=>/[★☆]/.test(q.prompt)));
   assert.ok(bank.grammarReading.some(q=>q.kind==='文章文法'&&q.passage));
+  if(level==='n3')for(const kind of ['short','mid','long','information'])assert.ok(bank.grammarReading.some(q=>q.readingKind===kind));
   assert.ok(bank.listening.every(q=>q.fixedOptions&&q.audioUrl&&!q.audioText));
   total+=all.length;
  }

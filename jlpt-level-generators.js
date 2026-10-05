@@ -51,7 +51,9 @@ function build(level,test) {
   const grammar=cat('grammar'), order=grammar.filter(q=>q.kind==='文の組み立て'),text=grammar.filter(q=>q.kind==='文章文法'),form=grammar.filter(q=>q.kind==='文法形式');
   const readingCount=level==='n5'?6:level==='n4'?8:16;
   const grammarCount=cfg.counts[1]-readingCount;
-  const grammarReading=[...take(form,grammarCount-10,(test-1)*(grammarCount-10),seen,'গ্রামার'),...take(order,5,(test-1)*5,seen,'★ বাক্য সাজানো'),...take(text,5,(test-1)*5,seen,'প্যাসেজ গ্রামার'),...take(cat('reading'),readingCount,(test-1)*readingCount,seen,'রিডিং')];
+  const reading=cat('reading');
+  const selectedReading=level==='n3' ? [['short',4],['mid',6],['long',4],['information',2]].flatMap(([kind,count])=>take(reading.filter(q=>q.readingKind===kind),count,(test-1)*count,seen,'রিডিং '+kind)) : take(reading,readingCount,(test-1)*readingCount,seen,'রিডিং');
+  const grammarReading=[...take(form,grammarCount-10,(test-1)*(grammarCount-10),seen,'গ্রামার'),...take(order,5,(test-1)*5,seen,'★ বাক্য সাজানো'),...take(text,5,(test-1)*5,seen,'প্যাসেজ গ্রামার'),...selectedReading];
   const listening=take(cat('listening'),cfg.counts[2],(test-1)*cfg.counts[2],seen,'লিসেনিং');
   return {vocab,grammarReading,listening,meta:{...cfg,bankVersion:5,source:'JapaneseTest4You-এর প্রশ্ন ও answer key। JLPT সময় অনুযায়ী অনুশীলন পরীক্ষা; অফিসিয়াল প্রশ্নপত্র নয়। কিছু প্রশ্ন অন্য সেটেও আসতে পারে।'}};
 }
