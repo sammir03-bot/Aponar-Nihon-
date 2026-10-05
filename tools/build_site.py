@@ -5,6 +5,8 @@ import argparse
 import shutil
 from pathlib import Path
 
+from build_shin_bunka import build as build_shin_bunka
+
 from sitecore.htmltools import inject_assets, visible_text_hash
 from sitecore.linkcheck import find_broken_page_links
 from sitecore.locales import build_localized_pages
@@ -122,6 +124,7 @@ def build(destination: Path, check_links: bool = False) -> int:
             "TypeScript runtime missing. Run npm run build:ts before the Python site build."
         )
 
+    build_shin_bunka()
     copied = copy_static_tree(destination)
     origin_files, origin_replacements, origin_html_checks = rewrite_production_origin(destination)
     injected, injection_checked = inject_professional_assets(destination)
