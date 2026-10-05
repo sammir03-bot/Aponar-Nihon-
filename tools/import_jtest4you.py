@@ -55,7 +55,7 @@ def clean(fragment):
             src = urljoin(ORIGIN, el.get('src', '')).replace('http://', 'https://', 1)
             if urlparse(src).hostname != 'japanesetest4you.com':
                 el.decompose(); continue
-            attrs = {'src': src, 'alt': el.get('alt', '') or '問題の図', 'loading': 'lazy'}
+            attrs = {'src': src, 'alt': el.get('alt', '') or '問題の図', 'loading': 'lazy', 'referrerpolicy': 'no-referrer'}
         if el.name in {'td', 'th'}:
             attrs.update({k: el[k] for k in ['colspan', 'rowspan'] if k in el.attrs and str(el[k]).isdigit()})
         if underline: attrs['style'] = 'text-decoration:underline'

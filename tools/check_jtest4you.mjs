@@ -11,6 +11,7 @@ for(const level of ['n5','n4','n3']){
   assert.ok(q.sourceQuestion>0);
   assert.ok(q.options.every(o=>o.trim()));
   assert.ok(new Set(q.options).size===q.options.length,`Ambiguous repeated options ${q.id}`);
+  for(const html of [q.prompt,q.passage,q.questionImage,...q.options])if(html?.includes('<img'))assert.ok(!/<img(?![^>]*referrerpolicy="no-referrer")[^>]*>/i.test(html),'External diagrams must avoid hotlink-referrer rejection');
   for(const value of [q.prompt,q.passage,q.questionImage,...q.options])if(value)assert.ok(!/<(?:script|iframe|input)|\son\w+=|javascript:/i.test(value));
  }
  for(let test=1;test<=10;test++){
