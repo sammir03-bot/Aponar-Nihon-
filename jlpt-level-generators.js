@@ -9,6 +9,7 @@ const banks = new Map();
 const pending = new Map();
 const schedules = new Map();
 const VERSION = 6;
+const SET_LIMIT = 15;
 function textKey(value) {
   return (value||'').replace(/<[^>]*>/g,'').replace(/&(?:nbsp|#160);/g,' ').replace(/[\s　]+/g,'').normalize('NFKC');
 }
@@ -61,7 +62,7 @@ function vocabularyKind(q) {
 function assemble(level,qs) {
   const cfg=CONFIG[level],sets=[];let seen=new Set(),previousPassages=new Set();
   const cat=c=>qs.filter(q=>q.category===c),kanji=cat('kanji'),vocabulary=cat('vocabulary'),grammar=cat('grammar'),reading=cat('reading');
-  for(let index=0;index<10;index++) {
+  for(let index=0;index<SET_LIMIT;index++) {
     const trial=new Set(seen),pick=(pool,n,label)=>take(pool,n,trial,label,previousPassages);
     try {
       const kReading=level==='n3'?8:7,kSpelling=level==='n3'?6:5;
@@ -80,16 +81,17 @@ function assemble(level,qs) {
   return sets;
 }
 function build(level,test) {
-  if(!Number.isInteger(test)||test<1||test>10||!CONFIG[level])throw new Error('Invalid mock selection');
+  if(!Number.isInteger(test)||test<1||test>SET_LIMIT||!CONFIG[level])throw new Error('Invalid mock selection');
   const sets=schedules.get(level);if(!sets)throw new Error('প্রশ্নব্যাংক এখনো লোড হয়নি');
   const set=sets[test-1];if(!set){const error=new Error('এই সেটে পুনরাবৃত্তি ছাড়া যথেষ্ট যাচাইকৃত প্রশ্ন নেই। টেস্ট তালিকার চালু সেট বেছে নিন।');error.code='NO_NEW_SET';throw error;}
   return {...Object.fromEntries(Object.entries(set).map(([key,qs])=>[key,qs.map(q=>({...q,options:[...q.options]}))])),meta:{...CONFIG[level],bankVersion:VERSION,availableSets:sets.length,coverageNote:level==='n5'?'উৎসের N5 শব্দভাণ্ডারে paraphrase প্রশ্ন নেই; সেই ৩টির জায়গায় context practice আছে।':'' ,source:'JapaneseTest4You-এর প্রশ্ন ও answer key। JLPT-এর অফিসিয়াল সময় ও পাসসীমা; প্রশ্ন ও ১৮০ নম্বরের স্কোর অনুশীলনের। আলাদা সেটে প্রশ্ন ও রেকর্ডিং পুনরাবৃত্তি হয় না। প্রশ্নসংখ্যা অফিসিয়াল আনুমানিক তালিকা অনুযায়ী; প্রকৃত পরীক্ষায় কিছুটা পরিবর্তন হয়।'}};
 }
 function availability(level) {
   if(!schedules.has(level))throw new Error('Question bank not loaded');
-  return {version:VERSION,availableSets:schedules.get(level).length,limit:10,counts:[...CONFIG[level].counts],times:[...CONFIG[level].times]};
+  return {version:VERSION,availableSets:schedules.get(level).length,limit:SET_LIMIT,counts:[...CONFIG[level].counts],times:[...CONFIG[level].times]};
 }
 // No generated fallback: failed imports must be corrected before an exam opens.
+global.JLPT_MOCK_SET_LIMIT=SET_LIMIT;
 global.JLPT_MOCK_CONFIG=CONFIG;
 global.JLPT_LOAD_BANK=load;
 global.JLPT_FULL_GENERATOR=build;

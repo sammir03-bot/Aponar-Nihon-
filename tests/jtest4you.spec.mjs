@@ -95,7 +95,7 @@ test('answered listening explains remaining recordings and offers a working next
 });
 
 test('unavailable set does not wrap back to previously used questions',async({page})=>{
- await page.goto('/jlpt-exam.html?level=n4&test=10');
+ await page.goto('/jlpt-exam.html?level=n4&test=15');
  await expect(page.locator('#introTitle')).toHaveText('সেটটি এখনও প্রস্তুত নয়');
  await expect(page.locator('#startBtn')).toBeDisabled();await expect(page.locator('.question-card')).toHaveCount(0);
  await expect(page.locator('#introBack')).toHaveAttribute('href','n4-mock-tests.html');
@@ -105,7 +105,7 @@ test('hubs publish only disjoint sets and explicitly label a deliberate retake',
  const catalog=await (await page.request.get('/assets/data/jtest4you/catalog.json')).json();
  await page.addInitScript(()=>localStorage.setItem('aponarNihonMockResults',JSON.stringify({'n4-1':{bankVersion:6,score:180,passed:true},'n5-1':{bankVersion:5,score:180,passed:true}})));
  for(const level of ['n5','n4','n3']){
-  await page.goto(`/${level}-mock-tests.html`);await expect(page.locator('.exam-card')).toHaveCount(catalog.levels[level].availableSets);
+  await page.goto(`/${level}-mock-tests.html`);await expect(page.locator('.exam-card[data-test]')).toHaveCount(catalog.levels[level].availableSets);
   await expect(page.locator('#heroTitle')).not.toContainText('১০টি');
   if(level==='n4')await expect(page.locator('#start-1')).toContainText('একই সেট আবার দিন');
   if(level==='n5')await expect(page.locator('#start-1')).toContainText('নতুন সেট শুরু করুন');
@@ -128,3 +128,42 @@ for(const level of ['n4','n3']){
   expect(result.score).toBe(120);expect(result.passed).toBe(false);expect(Object.values(result.groups).map(g=>g.max)).toEqual(level==='n3'?[60,60,60]:[120,60]);
  });
 }
+
+test('set fifteen keeps its own route, questions and saved attempt',async({page})=>{
+ await page.goto('/jlpt-exam.html?level=n4&test=1');await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
+ const first=await page.evaluate(()=>window.JLPT_FULL_GENERATOR('n4',1));
+ const base=[...first.vocab,...first.grammarReading,...first.listening];
+ const questions=Array.from({length:16},(_,i)=>base.map(q=>({...q,id:q.id+'-fixture-'+i,prompt:q.prompt+' fixture '+i,passage:q.passage?q.passage+' fixture '+i:undefined,audioUrl:q.audioUrl?q.audioUrl+'-fixture-'+i:undefined}))).flat();
+ await page.route('**/assets/data/jtest4you/n4.json*',route=>route.fulfill({json:{version:6,level:'n4',questions}}));
+ await page.goto('/jlpt-exam.html?level=n4&test=15');
+ await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
+ await expect(page.locator('#introTitle')).toHaveText('N4 Mock Test ১৫');
+ await page.locator('#startBtn').click();await expect(page.locator('.question-card')).toHaveCount(28);
+ await expect(page.locator('.question-prompt').first()).toContainText('fixture 14');
+ const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('aponarNihonExam-v6-n4-15')));
+ expect(saved.test).toBe(15);
+});
+
+test('Bunpro links preserve provider counts and keep local progress separate',async({page})=>{
+ const catalog=await(await page.request.get('/assets/data/jtest4you/catalog.json')).json();
+ await page.addInitScript(()=>localStorage.setItem('aponarNihonMockResults',JSON.stringify({'n5-1':{bankVersion:6,score:180,passed:true}})));
+ for(const level of ['n5','n4','n3']){
+  await page.goto(`/${level}-mock-tests.html`);
+  await expect(page.locator('.exam-card[data-test]')).toHaveCount(catalog.levels[level].availableSets);
+  await expect(page.locator('[data-provider="bunpro"]')).toHaveCount(5);
+  await expect(page.locator('#externalTests')).toContainText('অগ্রগতি এখানে সেভ হবে না');
+  for(const e of catalog.levels[level].externalTests){
+   const card=page.locator(`[data-provider="bunpro"][data-provider-test="${e.test}"]`);
+   await expect(card.locator('h3')).toContainText(level.toUpperCase());
+   await expect(card.locator('a')).toHaveAttribute('href',e.url);
+   await expect(card.locator('a')).toHaveAttribute('target','_blank');
+   await expect(card.locator('a')).toHaveAttribute('rel','noopener noreferrer');
+   const bn=n=>String(n).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
+   await expect(card.locator('.meta')).toContainText(bn(e.counts.reduce((a,b)=>a+b,0))+' প্রশ্ন');
+  }
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
+ }
+ await page.goto('/mock-test.html');
+ await expect(page.locator('.hero-meta')).toContainText('Bunpro ১৫টি');
+ await expect(page.locator('#n5txt')).toHaveText('১ / ১');
+});
