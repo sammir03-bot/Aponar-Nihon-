@@ -1,75 +1,91 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
-const context={window:{},fetch:async url=>({ok:true,json:async()=>JSON.parse(fs.readFileSync('.'+url.split('?')[0],'utf8'))})};
-vm.createContext(context);vm.runInContext(fs.readFileSync('jlpt-level-generators.js','utf8'),context);
-const catalog={version:6,levels:{},officialTimeSource:'https://www.jlpt.jp/e/guideline/testsections.html',officialCountSource:'https://www.jlpt.jp/e/topics/202009091599642827.html',officialScoreSource:'https://www.jlpt.jp/e/guideline/results.html',scoreMethod:'raw practice conversion; not official IRT scaled score'};
-const external=JSON.parse(fs.readFileSync('assets/data/jlpt-external-tests.json','utf8'));
-assert.equal(external.mode,'external-link');
-const externalUrls=new Set();
+
+const code=fs.readFileSync('jlpt-level-generators.js','utf8');
+const reviews=JSON.parse(fs.readFileSync('assets/data/jtest4you/bn-review.json','utf8'));
+const makeContext=fetch=>{
+  const context={window:{},fetch};vm.createContext(context);vm.runInContext(code,context);return context;
+};
+const context=makeContext(async url=>({ok:true,json:async()=>JSON.parse(fs.readFileSync('.'+url.split('?')[0],'utf8'))}));
+const catalog={
+  version:7,levels:{},
+  officialTimeSource:'https://www.jlpt.jp/e/guideline/testsections.html',
+  officialCountSource:'https://www.jlpt.jp/e/topics/202009091599642827.html',
+  officialScoreSource:'https://www.jlpt.jp/e/guideline/results.html',
+  scoreMethod:'raw practice conversion; not official IRT scaled score'
+};
 let total=0;
 for(const level of ['n5','n4','n3']){
- await context.window.JLPT_LOAD_BANK(level);
- const data=JSON.parse(fs.readFileSync(`assets/data/jtest4you/${level}.json`,'utf8'));
- for(const q of data.questions){
-  if(q.prompt.includes('そういうふうに受け入れた'))assert.equal(q.category,'reading','Reading comprehension must not be classified as passage cloze');
-  assert.ok(q.sourceQuestion>0);assert.ok(q.options.every(o=>o.trim()));
-  assert.equal(new Set(q.options).size,q.options.length,`Ambiguous repeated options ${q.id}`);
-  for(const html of [q.prompt,q.passage,q.questionImage,...q.options])if(html?.includes('<img'))assert.ok(!/<img(?![^>]*referrerpolicy="no-referrer")[^>]*>/i.test(html));
-  for(const value of [q.prompt,q.passage,q.questionImage,...q.options])if(value)assert.ok(!/<(?:script|iframe|input)|\son\w+=|javascript:/i.test(value));
- }
- const availability=context.window.JLPT_BANK_AVAILABILITY(level);
- assert.equal(availability.limit,15);
- assert.ok(availability.availableSets>0);
- const crossSetIds=new Set(),crossSetContent=new Set(),crossSetPassages=new Set();
- const passageKey=q=>(q.passage||'').replace(/<[^>]*>/g,'').replace(/&(?:nbsp|#160);/g,' ').replace(/[\s　]+/g,'').normalize('NFKC');
- for(let test=1;test<=availability.availableSets;test++){
-  const bank=context.window.JLPT_FULL_GENERATOR(level,test),all=[...bank.vocab,...bank.grammarReading,...bank.listening];
-  assert.deepEqual(Array.from([bank.vocab.length,bank.grammarReading.length,bank.listening.length]),Array.from(bank.meta.counts));
-  const passages=new Set();
-  for(const q of all){
-   assert.ok(!crossSetIds.has(q.id),`${level}: repeated question across sets ${q.id}`);crossSetIds.add(q.id);
-   const key=context.window.JLPT_QUESTION_SIGNATURE(q);assert.ok(!crossSetContent.has(key),`${level}: repeated content or recording`);crossSetContent.add(key);
-   if(q.passage){const p=passageKey(q);assert.ok(!crossSetPassages.has(p),`${level}: reused passage across sets`);passages.add(p)}
+  await context.window.JLPT_LOAD_BANK(level);
+  const data=JSON.parse(fs.readFileSync(`assets/data/jtest4you/${level}.json`,'utf8'));
+  for(const q of data.questions){
+    if(q.prompt.includes('そういうふうに受け入れた'))assert.equal(q.category,'reading');
+    assert.ok(q.sourceQuestion>0);assert.ok(q.options.every(o=>o.trim()));
+    assert.equal(new Set(q.options).size,q.options.length,`Ambiguous options ${q.id}`);
+    for(const html of [q.prompt,q.passage,q.questionImage,...q.options]){
+      if(html?.includes('<img'))assert.ok(!/<img(?![^>]*referrerpolicy="no-referrer")[^>]*>/i.test(html));
+      if(html)assert.ok(!/<(?:script|iframe|input)|\son\w+=|javascript:/i.test(html));
+    }
   }
-  for(const p of passages)crossSetPassages.add(p);
-  assert.equal(new Set(bank.listening.map(q=>q.audioUrl)).size,bank.listening.length);
-  assert.ok(bank.grammarReading.filter(q=>q.kind==='文の組み立て').every(q=>/[★☆]/.test(q.prompt)));
-  assert.ok(bank.grammarReading.some(q=>q.kind==='文章文法'&&q.passage));
-  for(const kind of level==='n3'?['short','mid','long','information']:['short','mid','information'])assert.ok(bank.grammarReading.some(q=>q.category==='reading'&&q.readingKind===kind));
-  assert.ok(bank.listening.every(q=>q.fixedOptions&&q.audioUrl&&!q.audioText));
-  const clone=context.window.JLPT_FULL_GENERATOR(level,test);clone.vocab[0].options[0]='edited';assert.notEqual(context.window.JLPT_FULL_GENERATOR(level,test).vocab[0].options[0],'edited');
-  total+=all.length;
- }
- if(availability.availableSets<availability.limit)assert.throws(()=>context.window.JLPT_FULL_GENERATOR(level,availability.availableSets+1),e=>e.code==='NO_NEW_SET');
- const externalTests=external.levels[level];assert.equal(externalTests.length,5);
- for(const q of externalTests){assert.equal(q.provider,'Bunpro');assert.ok(Number.isInteger(q.test)&&q.test>=1&&q.test<=5);const u=new URL(q.url);assert.equal(u.origin,'https://bunpro.jp');assert.equal(u.pathname,'/jlpt_practice_tests');const offset={n5:0,n4:5,n3:10}[level];assert.equal(u.searchParams.get('details'),String(offset+q.test));assert.ok(!externalUrls.has(q.url));externalUrls.add(q.url);assert.deepEqual(q.times,Array.from(context.window.JLPT_MOCK_CONFIG[level].times));assert.ok(q.counts.every(n=>Number.isInteger(n)&&n>0));}
- catalog.levels[level]=JSON.parse(JSON.stringify({...availability,externalTests,pass:context.window.JLPT_MOCK_CONFIG[level].pass,groups:context.window.JLPT_MOCK_CONFIG[level].groups}));
- console.log(level,data.questions.length,'source questions;',availability.availableSets,'disjoint sets validated');
+  const availability=context.window.JLPT_BANK_AVAILABILITY(level);
+  assert.equal(availability.limit,10);assert.ok(availability.availableSets>0);
+  const crossIds=new Set(),crossContent=new Set(),crossPassages=new Set();
+  const passageKey=q=>(q.passage||'').replace(/<[^>]*>/g,'').replace(/&(?:nbsp|#160);/g,' ').replace(/[\s　]+/g,'').normalize('NFKC');
+  for(let test=1;test<=availability.availableSets;test++){
+    const bank=context.window.JLPT_FULL_GENERATOR(level,test),all=[...bank.vocab,...bank.grammarReading,...bank.listening];
+    assert.deepEqual(Array.from([bank.vocab.length,bank.grammarReading.length,bank.listening.length]),Array.from(bank.meta.counts));
+    const vocabTypeCounts=['context','paraphrase','usage'].map(kind=>bank.vocab.filter(q=>q.vocabularyType===kind).length);
+    assert.deepEqual(vocabTypeCounts,level==='n5'?[6,3,0]:level==='n4'?[8,4,4]:[11,5,5],'Vocabulary must keep the JLPT question-type distribution');
+    if(level==='n5')assert.ok(bank.vocab.filter(q=>q.vocabularyType==='paraphrase').every(q=>q.prompt.includes('おなじいみ')),'Recognize N5 same-meaning instructions written in kana');
+    const passages=new Set();
+    for(const q of all){
+      assert.ok(!crossIds.has(q.id),`Repeated ID ${q.id}`);crossIds.add(q.id);
+      const key=context.window.JLPT_QUESTION_SIGNATURE(q);assert.ok(!crossContent.has(key),'Repeated content or recording');crossContent.add(key);
+      if(q.passage&&q.kind!=='文の組み立て'){const p=passageKey(q);assert.ok(!crossPassages.has(p),'Repeated passage');passages.add(p)}
+      assert.ok(q.answerBn&&/[অ-হ]/u.test(q.answerBn),`Missing Bengali answer ${q.id}`);
+      assert.ok(q.explanationBn.length>=40&&/[অ-হ]/u.test(q.explanationBn),`Missing substantive explanation ${q.id}`);
+      assert.ok(!q.explanationBn.startsWith('উৎসের answer key অনুযায়ী'));
+      assert.ok(!(reviews.excludedQuestionIds[level]||[]).includes(q.id),'Quarantined question selected');
+      if(q.category==='listening'){
+        assert.ok(q.audioText&&/[ぁ-んァ-ン一-龯]/u.test(q.audioText),'Missing listening transcript');
+        assert.ok(!/正しい答えは|ただしいこたえは|The correct answer is/.test(q.audioText),'Answer-key boilerplate leaked into transcript');
+        assert.ok(q.transcriptSource.startsWith('https://japanesetest4you.com/pdf/'));
+      }
+    }
+    for(const p of passages)crossPassages.add(p);
+    assert.equal(new Set(bank.listening.map(q=>q.audioUrl)).size,bank.listening.length);
+    assert.ok(bank.grammarReading.filter(q=>q.kind==='文の組み立て').every(q=>/[★☆]/.test(q.prompt)));
+    assert.ok(bank.grammarReading.some(q=>q.kind==='文章文法'&&q.passage));
+    for(const kind of level==='n3'?['short','mid','long','information']:['short','mid','information'])assert.ok(bank.grammarReading.some(q=>q.category==='reading'&&q.readingKind===kind));
+    assert.ok(bank.listening.every(q=>q.fixedOptions&&q.audioUrl));
+    const clone=context.window.JLPT_FULL_GENERATOR(level,test);clone.vocab[0].options[0]='edited';assert.notEqual(context.window.JLPT_FULL_GENERATOR(level,test).vocab[0].options[0],'edited');
+    total+=all.length;
+  }
+  if(availability.availableSets<availability.limit)assert.throws(()=>context.window.JLPT_FULL_GENERATOR(level,availability.availableSets+1),e=>e.code==='NO_NEW_SET');
+  catalog.levels[level]=JSON.parse(JSON.stringify({...availability,pass:context.window.JLPT_MOCK_CONFIG[level].pass,groups:context.window.JLPT_MOCK_CONFIG[level].groups}));
+  console.log(level,availability.availableSets,'complete disjoint sets with Bengali review and transcripts');
+  const doubled={...data,questions:[...data.questions,...data.questions.map(q=>({...q,id:q.id+'-mirror',options:[...q.options].reverse(),answer:q.options.length-1-q.answer}))]};
+  const duplicateContext=makeContext(async url=>({ok:true,json:async()=>url.includes('bn-review')?reviews:doubled}));
+  await duplicateContext.window.JLPT_LOAD_BANK(level);
+  assert.equal(duplicateContext.window.JLPT_BANK_AVAILABILITY(level).availableSets,availability.availableSets,'Duplicate rows must not inflate capacity');
+
+  const first=context.window.JLPT_FULL_GENERATOR(level,1),base=[...first.vocab,...first.grammarReading,...first.listening];
+  const fixtureReview={...reviews,levels:{...reviews.levels,[level]:{}}};
+  const questions=Array.from({length:11},(_,i)=>base.map(q=>{
+    const copy={...q,id:q.id+'-fixture-'+i,prompt:q.prompt+' fixture '+i,passage:q.passage?(q.kind==='文の組み立て'?q.passage:q.passage+' fixture '+i):undefined,audioUrl:q.audioUrl?q.audioUrl+'-fixture-'+i:undefined};
+    fixtureReview.levels[level][copy.id]={...reviews.levels[level][q.id]};
+    return copy;
+  })).flat();
+  const fixtureContext=makeContext(async url=>({ok:true,json:async()=>url.includes('bn-review')?fixtureReview:{version:7,level,questions}}));
+  await fixtureContext.window.JLPT_LOAD_BANK(level);
+  assert.equal(fixtureContext.window.JLPT_BANK_AVAILABILITY(level).availableSets,10);
+  assert.ok(fixtureContext.window.JLPT_FULL_GENERATOR(level,10).vocab[0].id.endsWith('-fixture-9'));
+  assert.throws(()=>fixtureContext.window.JLPT_FULL_GENERATOR(level,11),/Invalid mock selection/);
 }
-assert.throws(()=>context.window.JLPT_FULL_GENERATOR('n4',0));assert.throws(()=>context.window.JLPT_FULL_GENERATOR('n3',1.2));
+assert.throws(()=>context.window.JLPT_FULL_GENERATOR('n4',0));
+assert.throws(()=>context.window.JLPT_FULL_GENERATOR('n3',1.2));
 const path='assets/data/jtest4you/catalog.json';
 if(process.argv.includes('--write-catalog'))fs.writeFileSync(path,JSON.stringify(catalog,null,2)+'\n');
-else assert.deepEqual(JSON.parse(fs.readFileSync(path,'utf8')),catalog,'Catalog must match assembled disjoint sets');
-console.log(total,'unique exam slots; no question, passage or recording recycled between sets');
-// More rows of already-used content must never manufacture additional sets.
-for(const level of ['n5','n4','n3']){
- const original=JSON.parse(fs.readFileSync(`assets/data/jtest4you/${level}.json`,'utf8'));
- const doubled={...original,questions:[...original.questions,...original.questions.map(q=>({...q,id:q.id+'-mirror',options:[...q.options].reverse(),answer:q.options.length-1-q.answer}))]};
- const c={window:{},fetch:async()=>({ok:true,json:async()=>doubled})};vm.createContext(c);vm.runInContext(fs.readFileSync('jlpt-level-generators.js','utf8'),c);await c.window.JLPT_LOAD_BANK(level);
- assert.equal(c.window.JLPT_BANK_AVAILABILITY(level).availableSets,catalog.levels[level].availableSets,'Duplicate content must not increase capacity');
-}
-console.log('Duplicate rows and reordered options cannot create fake new sets');
-
-// With sixteen complete independent fixture sets, publish exactly fifteen.
-for(const level of ['n5','n4','n3']){
- const first=context.window.JLPT_FULL_GENERATOR(level,1);
- const base=[...first.vocab,...first.grammarReading,...first.listening];
- const questions=Array.from({length:16},(_,i)=>base.map(q=>({...q,id:q.id+'-fixture-'+i,prompt:q.prompt+' fixture '+i,passage:q.passage?q.passage+' fixture '+i:undefined,audioUrl:q.audioUrl?q.audioUrl+'-fixture-'+i:undefined}))).flat();
- const c={window:{},fetch:async()=>({ok:true,json:async()=>({version:6,level,questions})})};
- vm.createContext(c);vm.runInContext(fs.readFileSync('jlpt-level-generators.js','utf8'),c);await c.window.JLPT_LOAD_BANK(level);
- assert.equal(c.window.JLPT_BANK_AVAILABILITY(level).availableSets,15);
- assert.ok(c.window.JLPT_FULL_GENERATOR(level,15).vocab[0].id.endsWith('-fixture-14'));
- assert.throws(()=>c.window.JLPT_FULL_GENERATOR(level,16),/Invalid mock selection/);
-}
-console.log('Fifteen independent sets per level supported; extra sets remain out of range');
+else assert.deepEqual(JSON.parse(fs.readFileSync(path,'utf8')),catalog,'Catalog must match complete reviewed sets');
+console.log(total,'question-specific Bengali answers/explanations validated; independent ten-set capacity guard passes');

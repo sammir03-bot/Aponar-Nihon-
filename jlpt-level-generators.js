@@ -8,8 +8,8 @@ const CONFIG = {
 const banks = new Map();
 const pending = new Map();
 const schedules = new Map();
-const VERSION = 6;
-const SET_LIMIT = 15;
+const VERSION = 7;
+const SET_LIMIT = 10;
 function textKey(value) {
   return (value||'').replace(/<[^>]*>/g,'').replace(/&(?:nbsp|#160);/g,' ').replace(/[\s　]+/g,'').normalize('NFKC');
 }
@@ -32,22 +32,38 @@ async function load(level) {
   if(banks.has(level)) return;
   if(pending.has(level)) return pending.get(level);
   const promise=(async()=>{
-    const response=await fetch(`/assets/data/jtest4you/${level}.json?v=20261005.6`,{cache:'no-cache'});
+    const [response,reviewResponse]=await Promise.all([
+      fetch(`/assets/data/jtest4you/${level}.json?v=20261005.own`,{cache:'no-cache'}),
+      fetch('/assets/data/jtest4you/bn-review.json?v=20261005.own',{cache:'no-cache'})
+    ]);
     if(!response.ok) throw new Error('প্রশ্নব্যাংক লোড হয়নি। আবার চেষ্টা করুন।');
-    const questions=validate(await response.json(), level);
-    const sets=assemble(level,questions);
+    if(!reviewResponse.ok) throw new Error('বাংলা উত্তর ও ব্যাখ্যা লোড হয়নি। আবার চেষ্টা করুন।');
+    const review=await reviewResponse.json();
+    if(review.bankVersion!==VERSION||review.version!==1||!review.levels?.[level])throw new Error('বাংলা ব্যাখ্যার সংস্করণ সঠিক নয়');
+    const excluded=new Set(review.excludedQuestionIds?.[level]||[]);
+    const questions=validate(await response.json(), level).filter(q=>!excluded.has(q.id)).map(q=>{
+      const r=review.levels[level][q.id];
+      return r?{...q,answerBn:r.answerBn,explanationBn:r.explanationBn,audioText:r.transcript,transcriptSource:r.transcriptSource}:q;
+    });
+    const candidates=assemble(level,questions),sets=[];
+    for(const set of candidates){
+      const all=[...set.vocab,...set.grammarReading,...set.listening];
+      if(all.some(q=>!q.answerBn||!q.explanationBn||q.category==='listening'&&!q.audioText))break;
+      sets.push(set);
+    }
     banks.set(level,questions);schedules.set(level,sets);
   })();
   pending.set(level,promise);
   try {await promise;} finally {pending.delete(level);}
 }
 class InsufficientQuestions extends Error {}
+function sharedPassage(q){return q.kind==='文の組み立て'?'':textKey(q.passage)}
 function take(pool, count, seen, label, previousPassages) {
   const out=[];
   for(const q of pool) {
     if(out.length===count)break;
     const key=signature(q);
-    if(seen.has(key)||(q.passage&&previousPassages.has(textKey(q.passage))))continue;
+    if(seen.has(key)||(sharedPassage(q)&&previousPassages.has(sharedPassage(q))))continue;
     seen.add(key);out.push({...q,options:[...q.options]});
   }
   if(out.length!==count)throw new InsufficientQuestions(`${label}: নতুন আলাদা প্রশ্ন শেষ হয়েছে`);
@@ -55,7 +71,8 @@ function take(pool, count, seen, label, previousPassages) {
 }
 function vocabularyKind(q) {
   const prompt=textKey(q.prompt);
-  if(/同じいみ|同じ意味|意味が最も近/.test(prompt))return 'paraphrase';
+  const question=q.prompt.replace(/<p><strong>[\s\S]*?<\/strong><\/p>/g,'');
+  if(/同じいみ|同じ意味|おなじいみ|おなじ意味|意味が最も近/.test(prompt)&&!/_{2,}|＿{2,}/.test(question))return 'paraphrase';
   if(/つかいかた|使い方|使いかた/.test(prompt))return 'usage';
   return 'context';
 }
@@ -67,15 +84,15 @@ function assemble(level,qs) {
     try {
       const kReading=level==='n3'?8:7,kSpelling=level==='n3'?6:5;
       const vocab=[...pick(kanji.filter(q=>q.kind==='漢字読み'),kReading,'কানজি reading'),...pick(kanji.filter(q=>q.kind==='表記'),kSpelling,'কানজি spelling')];
-      const vCounts=level==='n3'?[11,5,5]:level==='n4'?[8,4,4]:[9,0,0];
-      for(const [i,kind] of ['context','paraphrase','usage'].entries())vocab.push(...pick(vocabulary.filter(q=>vocabularyKind(q)===kind),vCounts[i],'শব্দভাণ্ডার '+kind));
+      const vCounts=level==='n3'?[11,5,5]:level==='n4'?[8,4,4]:[6,3,0];
+      for(const [i,kind] of ['context','paraphrase','usage'].entries())vocab.push(...pick(vocabulary.filter(q=>vocabularyKind(q)===kind),vCounts[i],'শব্দভাণ্ডার '+kind).map(q=>({...q,vocabularyType:kind})));
       const gCounts=level==='n5'?[9,4,4]:level==='n4'?[13,4,4]:[13,5,5];
       const grammarReading=[];
       for(const [i,kind] of ['文法形式','文の組み立て','文章文法'].entries())grammarReading.push(...pick(grammar.filter(q=>q.kind===kind),gCounts[i],kind));
       const rCounts=level==='n5'?[['short',2],['mid',2],['information',1]]:level==='n4'?[['short',3],['mid',3],['information',2]]:[['short',4],['mid',6],['long',4],['information',2]];
       for(const [kind,n] of rCounts)grammarReading.push(...pick(reading.filter(q=>q.readingKind===kind),n,'রিডিং '+kind));
       const listening=pick(cat('listening'),cfg.counts[2],'লিসেনিং');
-      sets.push({vocab,grammarReading,listening});seen=trial;for(const q of [...vocab,...grammarReading,...listening])if(q.passage)previousPassages.add(textKey(q.passage));
+      sets.push({vocab,grammarReading,listening});seen=trial;for(const q of [...vocab,...grammarReading,...listening])if(sharedPassage(q))previousPassages.add(sharedPassage(q));
     }catch(error){if(error instanceof InsufficientQuestions)break;throw error;}
   }
   return sets;
@@ -84,7 +101,7 @@ function build(level,test) {
   if(!Number.isInteger(test)||test<1||test>SET_LIMIT||!CONFIG[level])throw new Error('Invalid mock selection');
   const sets=schedules.get(level);if(!sets)throw new Error('প্রশ্নব্যাংক এখনো লোড হয়নি');
   const set=sets[test-1];if(!set){const error=new Error('এই সেটে পুনরাবৃত্তি ছাড়া যথেষ্ট যাচাইকৃত প্রশ্ন নেই। টেস্ট তালিকার চালু সেট বেছে নিন।');error.code='NO_NEW_SET';throw error;}
-  return {...Object.fromEntries(Object.entries(set).map(([key,qs])=>[key,qs.map(q=>({...q,options:[...q.options]}))])),meta:{...CONFIG[level],bankVersion:VERSION,availableSets:sets.length,coverageNote:level==='n5'?'উৎসের N5 শব্দভাণ্ডারে paraphrase প্রশ্ন নেই; সেই ৩টির জায়গায় context practice আছে।':'' ,source:'JapaneseTest4You-এর প্রশ্ন ও answer key। JLPT-এর অফিসিয়াল সময় ও পাসসীমা; প্রশ্ন ও ১৮০ নম্বরের স্কোর অনুশীলনের। আলাদা সেটে প্রশ্ন ও রেকর্ডিং পুনরাবৃত্তি হয় না। প্রশ্নসংখ্যা অফিসিয়াল আনুমানিক তালিকা অনুযায়ী; প্রকৃত পরীক্ষায় কিছুটা পরিবর্তন হয়।'}};
+  return {...Object.fromEntries(Object.entries(set).map(([key,qs])=>[key,qs.map(q=>({...q,options:[...q.options]}))])),meta:{...CONFIG[level],bankVersion:VERSION,availableSets:sets.length,coverageNote:'' ,source:'JapaneseTest4You-এর প্রশ্ন ও answer key। JLPT-এর অফিসিয়াল সময় ও পাসসীমা; প্রশ্ন ও ১৮০ নম্বরের স্কোর অনুশীলনের। আলাদা সেটে প্রশ্ন ও রেকর্ডিং পুনরাবৃত্তি হয় না। প্রশ্নসংখ্যা অফিসিয়াল আনুমানিক তালিকা অনুযায়ী; প্রকৃত পরীক্ষায় কিছুটা পরিবর্তন হয়।'}};
 }
 function availability(level) {
   if(!schedules.has(level))throw new Error('Question bank not loaded');
