@@ -26,7 +26,7 @@
     const intro=document.querySelector('.head p');
     if(intro)intro.textContent='লেভেল বেছে এখানেই পরীক্ষা শুরু করুন। প্রতিটি লেভেলে ১০টি সেটের লক্ষ্য; নতুন আলাদা প্রশ্ন ও বাংলা ব্যাখ্যা যাচাই হলে বাকি সেট খুলবে।';
     const note=document.querySelector('.note');
-    if(note)note.textContent='প্রশ্ন ও অডিও: JapaneseTest4You। JLPT সময়সীমা ও পাসসীমা অনুসরণ করা হয়েছে। ১৮০ নম্বরের স্কোর অনুশীলনের সরল conversion। সনদ আপনার নিহোনের মক পরীক্ষার ফলাফল। N5-এর উৎসে paraphrase প্রশ্ন না থাকায় context practice রয়েছে।';
+    if(note)note.textContent='প্রশ্ন ও অডিও: JapaneseTest4You। JLPT সময়সীমা ও পাসসীমা অনুসরণ করা হয়েছে। ১৮০ নম্বরের স্কোর অনুশীলনের সরল conversion। সনদ আপনার নিহোনের মক পরীক্ষার ফলাফল।';
   }catch(error){
     const note=document.querySelector('.note');if(note)note.textContent=error.message+'। পেজ রিলোড করে চালু সেট দেখুন।';
   }

@@ -27,7 +27,7 @@
     $('#timePill').textContent=`মোট ${bn(time)} মিনিট`;
     $('#passPill').textContent=`পাসসীমা ${bn(c.pass)}/১৮০`;
     $('.section-head h2').textContent='পূর্ণ পরীক্ষার সেট';
-    $('#sourceNote').textContent='প্রশ্ন ও মূল অডিও: JapaneseTest4You। প্রতিটি প্রশ্নের বাংলা অর্থ ও ব্যাখ্যা পরীক্ষার পরে দেখবেন। একই প্রশ্ন না ঘুরিয়ে পূর্ণ পরীক্ষা তৈরির জন্য নতুন উৎসের প্রশ্ন প্রয়োজন; প্রস্তুত হওয়ার পর বাকি সেট চালু হবে।'+(level==='n5'?' উৎসে N5 paraphrase প্রশ্ন নেই; ওই অংশে context practice আছে।':'');
+    $('#sourceNote').textContent='প্রশ্ন ও মূল অডিও: JapaneseTest4You। প্রতিটি প্রশ্নের বাংলা অর্থ ও ব্যাখ্যা পরীক্ষার পরে দেখবেন। একই প্রশ্ন না ঘুরিয়ে পূর্ণ পরীক্ষা তৈরির জন্য নতুন উৎসের প্রশ্ন প্রয়োজন; প্রস্তুত হওয়ার পর বাকি সেট চালু হবে।';
     $('#activeLevel').innerHTML=`<i class="fa-solid fa-file-lines"></i>${level.toUpperCase()}`;
     let results={};
     try {results=JSON.parse(localStorage.getItem('aponarNihonMockResults')||'{}')}catch{}
