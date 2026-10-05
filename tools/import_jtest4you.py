@@ -190,7 +190,7 @@ def parse(url, level, category):
         effective_category = category
         # JTest4You files some passage-cloze items under Reading. These are
         # genuine source questions, not newly generated substitutions.
-        if category == 'reading' and re.search('入れ|入る', prompt):
+        if category == 'reading' and re.search(r'(?:には|に)(?:何を|なにを)?(?:入れ|入る)', BeautifulSoup(prompt, 'html.parser').get_text()):
             effective_category = 'grammar'
             kind = '文章文法'
         group = 'listening' if effective_category == 'listening' else ('reading' if effective_category == 'reading' and level == 'n3' else 'language' if level == 'n3' else 'knowledgeReading')

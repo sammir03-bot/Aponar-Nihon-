@@ -9,6 +9,7 @@ for(const level of ['n5','n4','n3']){
  await context.window.JLPT_LOAD_BANK(level);
  const data=JSON.parse(fs.readFileSync(`assets/data/jtest4you/${level}.json`,'utf8'));
  for(const q of data.questions){
+  if(q.prompt.includes('そういうふうに受け入れた'))assert.equal(q.category,'reading','Reading comprehension must not be classified as passage cloze');
   assert.ok(q.sourceQuestion>0);assert.ok(q.options.every(o=>o.trim()));
   assert.equal(new Set(q.options).size,q.options.length,`Ambiguous repeated options ${q.id}`);
   for(const html of [q.prompt,q.passage,q.questionImage,...q.options])if(html?.includes('<img'))assert.ok(!/<img(?![^>]*referrerpolicy="no-referrer")[^>]*>/i.test(html));
