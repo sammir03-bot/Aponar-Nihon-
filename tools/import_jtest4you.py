@@ -223,7 +223,7 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     for level, qs in banks.items():
         qs.sort(key=lambda q: (q['category'], q['sourceUrl'], q['sourceQuestion']))
-        (out / (level + '.json')).write_text(json.dumps({'version': 6, 'level': level, 'source': ORIGIN, 'questions': qs}, ensure_ascii=False, separators=(',', ':')) + '\n')
+        (out / (level + '.json')).write_text(json.dumps({'version': 7, 'level': level, 'source': ORIGIN, 'questions': qs}, ensure_ascii=False, separators=(',', ':')) + '\n')
         from collections import Counter
         print(level, len(qs), dict(Counter(q['category'] for q in qs)), dict(Counter(q['kind'] for q in qs)), flush=True)
     (CACHE / 'rejections.json').write_text(json.dumps(errors, ensure_ascii=False, indent=2))

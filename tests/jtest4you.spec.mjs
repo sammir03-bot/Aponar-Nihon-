@@ -1,4 +1,5 @@
 import {test,expect} from '@playwright/test';
+import {readFile} from 'node:fs/promises';
 
 for(const level of ['n5','n4','n3']){
  test(`${level}: licensed bank opens with fixed source numbering`,async({page})=>{
@@ -80,7 +81,7 @@ test('answered listening explains remaining recordings and offers a working next
  await page.goto('/jlpt-exam.html?level=n4&test=1');await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
  await page.evaluate(()=>{
   const bank=window.JLPT_FULL_GENERATOR('n4',1),all=[...bank.vocab,...bank.grammarReading,...bank.listening];
-  localStorage.setItem('aponarNihonExam-v6-n4-1',JSON.stringify({version:6,level:'n4',test:1,mode:'full',sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+35*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m1',q.answer])),audioDone:[],audioProgress:{},audioPlays:{}}));
+  localStorage.setItem('aponarNihonExam-v7-n4-1',JSON.stringify({version:7,level:'n4',test:1,mode:'full',sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+35*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m1',q.answer])),audioDone:[],audioProgress:{},audioPlays:{}}));
  });
  await page.reload();await page.locator('#resumeBtn').click();
  await expect(page.locator('#submitPartBtn')).toBeDisabled();
@@ -95,7 +96,7 @@ test('answered listening explains remaining recordings and offers a working next
 });
 
 test('unavailable set does not wrap back to previously used questions',async({page})=>{
- await page.goto('/jlpt-exam.html?level=n4&test=15');
+ await page.goto('/jlpt-exam.html?level=n4&test=10');
  await expect(page.locator('#introTitle')).toHaveText('সেটটি এখনও প্রস্তুত নয়');
  await expect(page.locator('#startBtn')).toBeDisabled();await expect(page.locator('.question-card')).toHaveCount(0);
  await expect(page.locator('#introBack')).toHaveAttribute('href','n4-mock-tests.html');
@@ -103,14 +104,14 @@ test('unavailable set does not wrap back to previously used questions',async({pa
 
 test('hubs publish only disjoint sets and explicitly label a deliberate retake',async({page})=>{
  const catalog=await (await page.request.get('/assets/data/jtest4you/catalog.json')).json();
- await page.addInitScript(()=>localStorage.setItem('aponarNihonMockResults',JSON.stringify({'n4-1':{bankVersion:6,score:180,passed:true},'n5-1':{bankVersion:5,score:180,passed:true}})));
+ await page.addInitScript(()=>localStorage.setItem('aponarNihonMockResults',JSON.stringify({'n4-1':{bankVersion:7,score:180,passed:true},'n5-1':{bankVersion:5,score:180,passed:true}})));
  for(const level of ['n5','n4','n3']){
-  await page.goto(`/${level}-mock-tests.html`);await expect(page.locator('.exam-card[data-test]')).toHaveCount(catalog.levels[level].availableSets);
+  await page.goto(`/${level}-mock-tests.html`);await expect(page.locator('.exam-card[data-ready="true"]')).toHaveCount(catalog.levels[level].availableSets);
   await expect(page.locator('#heroTitle')).not.toContainText('১০টি');
   if(level==='n4')await expect(page.locator('#start-1')).toContainText('একই সেট আবার দিন');
-  if(level==='n5')await expect(page.locator('#start-1')).toContainText('নতুন সেট শুরু করুন');
+  if(level==='n5')await expect(page.locator('#start-1')).toContainText('পরীক্ষা শুরু করুন');
  }
- await page.goto('/mock-test.html');await expect(page.locator('.hero-meta')).toContainText('৩টি আলাদা সেট');
+ await page.goto('/mock-test.html');await expect(page.locator('.hero-meta')).toContainText('৩টি চালু পূর্ণ পরীক্ষা');
  await expect(page.locator('[data-level="n5"] .facts')).toContainText('21 + 22 + 24 = 67');
 });
 
@@ -119,7 +120,7 @@ for(const level of ['n4','n3']){
   await page.goto(`/jlpt-exam.html?level=${level}&test=1`);await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
   await page.evaluate(level=>{
    const bank=window.JLPT_FULL_GENERATOR(level,1),all=[...bank.vocab,...bank.grammarReading,...bank.listening];
-   localStorage.setItem(`aponarNihonExam-v6-${level}-1`,JSON.stringify({version:6,level,test:1,mode:'full',sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+40*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m1',q.category==='listening'?(q.answer+1)%q.options.length:q.answer])),audioDone:bank.listening.map(q=>q.id+'-m1')}));
+   localStorage.setItem(`aponarNihonExam-v7-${level}-1`,JSON.stringify({version:7,level,test:1,mode:'full',sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+40*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m1',q.category==='listening'?(q.answer+1)%q.options.length:q.answer])),audioDone:bank.listening.map(q=>q.id+'-m1')}));
   },level);
   await page.reload();await page.locator('#resumeBtn').click();await page.locator('#submitPartBtn').click();await page.locator('#nextPartBtn').click();
   await expect(page.locator('.result-status')).toHaveText('আরও প্র্যাকটিস প্রয়োজন');
@@ -129,41 +130,101 @@ for(const level of ['n4','n3']){
  });
 }
 
-test('set fifteen keeps its own route, questions and saved attempt',async({page})=>{
+test('set ten keeps its own route, questions and saved attempt',async({page})=>{
  await page.goto('/jlpt-exam.html?level=n4&test=1');await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
  const first=await page.evaluate(()=>window.JLPT_FULL_GENERATOR('n4',1));
  const base=[...first.vocab,...first.grammarReading,...first.listening];
- const questions=Array.from({length:16},(_,i)=>base.map(q=>({...q,id:q.id+'-fixture-'+i,prompt:q.prompt+' fixture '+i,passage:q.passage?q.passage+' fixture '+i:undefined,audioUrl:q.audioUrl?q.audioUrl+'-fixture-'+i:undefined}))).flat();
- await page.route('**/assets/data/jtest4you/n4.json*',route=>route.fulfill({json:{version:6,level:'n4',questions}}));
- await page.goto('/jlpt-exam.html?level=n4&test=15');
+ const questions=Array.from({length:11},(_,i)=>base.map(q=>({...q,id:q.id+'-fixture-'+i,prompt:q.prompt+' fixture '+i,passage:q.passage?q.passage+' fixture '+i:undefined,audioUrl:q.audioUrl?q.audioUrl+'-fixture-'+i:undefined}))).flat();
+ const review=await(await page.request.get('/assets/data/jtest4you/bn-review.json')).json();
+ const fixtureReview={...review,levels:{...review.levels,n4:{}}};
+ for(let i=0;i<11;i++)for(const q of base)fixtureReview.levels.n4[q.id+'-fixture-'+i]={...review.levels.n4[q.id]};
+ await page.route('**/assets/data/jtest4you/bn-review.json*',route=>route.fulfill({json:fixtureReview}));
+ await page.route('**/assets/data/jtest4you/n4.json*',route=>route.fulfill({json:{version:7,level:'n4',questions}}));
+ await page.goto('/jlpt-exam.html?level=n4&test=10');
  await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
- await expect(page.locator('#introTitle')).toHaveText('N4 Mock Test ১৫');
+ await expect(page.locator('#introTitle')).toHaveText('N4 Mock Test ১০');
  await page.locator('#startBtn').click();await expect(page.locator('.question-card')).toHaveCount(28);
- await expect(page.locator('.question-prompt').first()).toContainText('fixture 14');
- const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('aponarNihonExam-v6-n4-15')));
- expect(saved.test).toBe(15);
+ await expect(page.locator('.question-prompt').first()).toContainText('fixture 9');
+ const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('aponarNihonExam-v7-n4-10')));
+ expect(saved.test).toBe(10);
 });
-
-test('Bunpro links preserve provider counts and keep local progress separate',async({page})=>{
+test('mock center stays on Aponar Nihon and accurately labels ten planned sets',async({page})=>{
  const catalog=await(await page.request.get('/assets/data/jtest4you/catalog.json')).json();
- await page.addInitScript(()=>localStorage.setItem('aponarNihonMockResults',JSON.stringify({'n5-1':{bankVersion:6,score:180,passed:true}})));
  for(const level of ['n5','n4','n3']){
   await page.goto(`/${level}-mock-tests.html`);
-  await expect(page.locator('.exam-card[data-test]')).toHaveCount(catalog.levels[level].availableSets);
-  await expect(page.locator('[data-provider="bunpro"]')).toHaveCount(5);
-  await expect(page.locator('#externalTests')).toContainText('অগ্রগতি এখানে সেভ হবে না');
-  for(const e of catalog.levels[level].externalTests){
-   const card=page.locator(`[data-provider="bunpro"][data-provider-test="${e.test}"]`);
-   await expect(card.locator('h3')).toContainText(level.toUpperCase());
-   await expect(card.locator('a')).toHaveAttribute('href',e.url);
-   await expect(card.locator('a')).toHaveAttribute('target','_blank');
-   await expect(card.locator('a')).toHaveAttribute('rel','noopener noreferrer');
-   const bn=n=>String(n).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
-   await expect(card.locator('.meta')).toContainText(bn(e.counts.reduce((a,b)=>a+b,0))+' প্রশ্ন');
-  }
-  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
+  await expect(page.locator('.exam-card[data-test]')).toHaveCount(10);
+  await expect(page.locator('.exam-card[data-ready="true"]')).toHaveCount(catalog.levels[level].availableSets);
+  await expect(page.locator('.pending-set button')).toHaveCount(10-catalog.levels[level].availableSets);
+  await expect(page.locator('a[href*="bunpro.jp"]')).toHaveCount(0);
+  await expect(page.locator('#heroDesc')).toContainText('সব এখানেই');
  }
  await page.goto('/mock-test.html');
- await expect(page.locator('.hero-meta')).toContainText('Bunpro ১৫টি');
- await expect(page.locator('#n5txt')).toHaveText('১ / ১');
+ await expect(page.locator('a[href*="bunpro.jp"]')).toHaveCount(0);
+ await expect(page.locator('.hero-meta')).toContainText('লক্ষ্য ৩০টি');
+});
+
+for(const level of ['n5','n4','n3']){
+ test(`${level}: completed exam shows real Bengali review and downloads a named certificate`,async({page},testInfo)=>{
+  const errors=[];page.on('pageerror',e=>errors.push(e.message));
+  await page.goto(`/jlpt-exam.html?level=${level}&test=1`);
+  await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
+  await page.locator('#candidateName').fill('সামির উদ্দিন');
+  const bank=await page.evaluate(level=>window.JLPT_FULL_GENERATOR(level,1),level);
+  await page.locator('#startBtn').click();
+  await expect(page.locator('#reviewList .meaning-line')).toHaveCount(0);
+  expect(await page.evaluate(level=>JSON.parse(localStorage.getItem(`aponarNihonExam-v7-${level}-1`)).candidateName,level)).toBe('সামির উদ্দিন');
+  await page.goto('/mock-test.html');
+  await page.evaluate(({level,bank})=>{
+   const all=[...bank.vocab,...bank.grammarReading,...bank.listening];
+   localStorage.setItem(`aponarNihonExam-v7-${level}-1`,JSON.stringify({version:7,level,test:1,mode:'full',candidateName:'সামির উদ্দিন',startedAt:Date.now()-120000,sectionStartedAt:Date.now()-60000,sectionTimes:{0:30,1:30},sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+40*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m1',q.answer])),audioDone:bank.listening.map(q=>q.id+'-m1')}));
+  },{level,bank});
+  await page.goto(`/jlpt-exam.html?level=${level}&test=1`);await page.locator('#resumeBtn').click();await page.locator('#submitPartBtn').click();await page.locator('#nextPartBtn').click();
+  await expect(page.locator('.result-status')).toHaveText('✓ PRACTICE PASS');
+  const all=[...bank.vocab,...bank.grammarReading,...bank.listening];
+  await expect(page.locator('.meaning-line')).toHaveCount(all.length);
+  await expect(page.locator('.explanation')).toHaveCount(all.length);
+  await expect(page.locator('.meaning-line').first()).toContainText(bank.vocab[0].answerBn);
+  await expect(page.locator('.explanation').first()).toContainText(bank.vocab[0].explanationBn);
+  await expect(page.locator('.review-audio')).toHaveCount(bank.listening.length);
+  await expect(page.locator('#reviewList')).not.toContainText('উৎসের answer key অনুযায়ী');
+  await page.locator('#certificateBtn').click();
+  await expect(page.locator('#certificateDialog')).toBeVisible();
+  await expect(page.locator('#certificateName')).toHaveValue('সামির উদ্দিন');
+  await page.locator('#certificateName').fill('');
+  await expect(page.locator('#downloadCertificate')).toBeDisabled();
+  await page.locator('#certificateName').fill('সামির রহমান');
+  await expect(page.locator('#certificateCanvas')).toHaveAttribute('aria-label',/সামির রহমান/);
+  expect(await page.evaluate(()=>document.fonts.check('700 24px "Noto Sans Bengali"','বাংলা সনদ'))).toBe(true);
+  expect(await page.evaluate(()=>document.fonts.check('500 24px "Aponar Mock Japanese"','日本語模擬試験'))).toBe(true);
+  await page.locator('#certificateCanvas').screenshot({path:testInfo.outputPath('certificate-preview.png')});
+  const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#downloadCertificate').click()]);
+  expect(download.suggestedFilename()).toBe(`Aponar-Nihon-${level.toUpperCase()}-Mock-01-Certificate.pdf`);
+  const certificatePath=testInfo.outputPath('certificate.pdf');
+  await download.saveAs(certificatePath);
+  const pdf=await readFile(certificatePath);
+  expect(pdf.subarray(0,8).toString()).toBe('%PDF-1.4');
+  expect(pdf.length).toBeGreaterThan(10000);
+  expect(pdf.subarray(-6).toString()).toBe('%%EOF\n');
+  const result=await page.evaluate(level=>JSON.parse(localStorage.getItem('aponarNihonMockResults'))[level+'-1'],level);
+  expect(result.score).toBe(180);expect(result.certificateName).toBe('সামির রহমান');
+  expect(result.certificateId).toMatch(/^AN-N[345]-01-/);
+  expect(result.elapsedSeconds).toBeGreaterThanOrEqual(120);
+  await page.locator('.certificate-close').click();
+  await page.goto(`/jlpt-exam.html?level=${level}&test=1&result=1`);
+  await expect(page.locator('#resultView')).toBeVisible();
+  await page.locator('#certificateBtn').click();
+  await expect(page.locator('#certificateName')).toHaveValue('সামির রহমান');
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
+  expect(errors).toEqual([]);
+ });
+}
+
+test('Bengali review load failure offers retry and never opens incomplete exam',async({page})=>{
+ let broken=true;
+ await page.route('**/assets/data/jtest4you/bn-review.json*',route=>broken?route.fulfill({status:503,body:'Unavailable'}):route.continue());
+ await page.goto('/jlpt-exam.html?level=n5&test=1');
+ await expect(page.locator('#startBtn')).toHaveText('আবার লোড করুন →');
+ await expect(page.locator('#sourceText')).toContainText('বাংলা উত্তর ও ব্যাখ্যা লোড হয়নি');
+ broken=false;await page.locator('#startBtn').click();
+ await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
 });

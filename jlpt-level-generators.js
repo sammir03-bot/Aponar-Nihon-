@@ -8,8 +8,8 @@ const CONFIG = {
 const banks = new Map();
 const pending = new Map();
 const schedules = new Map();
-const VERSION = 6;
-const SET_LIMIT = 15;
+const VERSION = 7;
+const SET_LIMIT = 10;
 function textKey(value) {
   return (value||'').replace(/<[^>]*>/g,'').replace(/&(?:nbsp|#160);/g,' ').replace(/[\s　]+/g,'').normalize('NFKC');
 }
@@ -32,10 +32,25 @@ async function load(level) {
   if(banks.has(level)) return;
   if(pending.has(level)) return pending.get(level);
   const promise=(async()=>{
-    const response=await fetch(`/assets/data/jtest4you/${level}.json?v=20261005.6`,{cache:'no-cache'});
+    const [response,reviewResponse]=await Promise.all([
+      fetch(`/assets/data/jtest4you/${level}.json?v=20261005.own`,{cache:'no-cache'}),
+      fetch('/assets/data/jtest4you/bn-review.json?v=20261005.own',{cache:'no-cache'})
+    ]);
     if(!response.ok) throw new Error('প্রশ্নব্যাংক লোড হয়নি। আবার চেষ্টা করুন।');
-    const questions=validate(await response.json(), level);
-    const sets=assemble(level,questions);
+    if(!reviewResponse.ok) throw new Error('বাংলা উত্তর ও ব্যাখ্যা লোড হয়নি। আবার চেষ্টা করুন।');
+    const review=await reviewResponse.json();
+    if(review.bankVersion!==VERSION||review.version!==1||!review.levels?.[level])throw new Error('বাংলা ব্যাখ্যার সংস্করণ সঠিক নয়');
+    const excluded=new Set(review.excludedQuestionIds?.[level]||[]);
+    const questions=validate(await response.json(), level).filter(q=>!excluded.has(q.id)).map(q=>{
+      const r=review.levels[level][q.id];
+      return r?{...q,answerBn:r.answerBn,explanationBn:r.explanationBn,audioText:r.transcript,transcriptSource:r.transcriptSource}:q;
+    });
+    const candidates=assemble(level,questions),sets=[];
+    for(const set of candidates){
+      const all=[...set.vocab,...set.grammarReading,...set.listening];
+      if(all.some(q=>!q.answerBn||!q.explanationBn||q.category==='listening'&&!q.audioText))break;
+      sets.push(set);
+    }
     banks.set(level,questions);schedules.set(level,sets);
   })();
   pending.set(level,promise);
