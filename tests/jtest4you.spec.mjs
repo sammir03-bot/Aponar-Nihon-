@@ -81,7 +81,7 @@ test('answered listening explains remaining recordings and offers a working next
  await page.goto('/jlpt-exam.html?level=n4&test=1');await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
  await page.evaluate(()=>{
   const bank=window.JLPT_FULL_GENERATOR('n4',1),all=[...bank.vocab,...bank.grammarReading,...bank.listening];
-  localStorage.setItem('aponarNihonExam-v7-n4-1',JSON.stringify({version:7,level:'n4',test:1,mode:'full',sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+35*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m1',q.answer])),audioDone:[],audioProgress:{},audioPlays:{}}));
+  localStorage.setItem('aponarNihonExam-v8-n4-1',JSON.stringify({version:8,level:'n4',test:1,mode:'full',sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+35*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m1',q.answer])),audioDone:[],audioProgress:{},audioPlays:{}}));
  });
  await page.reload();await page.locator('#resumeBtn').click();
  await expect(page.locator('#submitPartBtn')).toBeDisabled();
@@ -104,14 +104,16 @@ test('unavailable set does not wrap back to previously used questions',async({pa
 
 test('hubs publish only disjoint sets and explicitly label a deliberate retake',async({page})=>{
  const catalog=await (await page.request.get('/assets/data/jtest4you/catalog.json')).json();
- await page.addInitScript(()=>localStorage.setItem('aponarNihonMockResults',JSON.stringify({'n4-1':{bankVersion:7,score:180,passed:true},'n5-1':{bankVersion:5,score:180,passed:true}})));
+ await page.addInitScript(()=>localStorage.setItem('aponarNihonMockResults',JSON.stringify({'n4-1':{bankVersion:8,score:180,passed:true},'n5-1':{bankVersion:5,score:180,passed:true}})));
  for(const level of ['n5','n4','n3']){
   await page.goto(`/${level}-mock-tests.html`);await expect(page.locator('.exam-card[data-ready="true"]')).toHaveCount(catalog.levels[level].availableSets);
   await expect(page.locator('#heroTitle')).not.toContainText('১০টি');
   if(level==='n4')await expect(page.locator('#start-1')).toContainText('একই সেট আবার দিন');
   if(level==='n5')await expect(page.locator('#start-1')).toContainText('পরীক্ষা শুরু করুন');
  }
- await page.goto('/mock-test.html');await expect(page.locator('.hero-meta')).toContainText('৩টি চালু পূর্ণ পরীক্ষা');
+ await page.goto('/mock-test.html');
+ const ready=Object.values(catalog.levels).reduce((sum,level)=>sum+level.availableSets,0);
+ await expect(page.locator('.hero-meta')).toContainText(ready.toLocaleString('bn-BD')+'টি চালু পূর্ণ পরীক্ষা');
  await expect(page.locator('[data-level="n5"] .facts')).toContainText('21 + 22 + 24 = 67');
 });
 
@@ -120,7 +122,7 @@ for(const level of ['n4','n3']){
   await page.goto(`/jlpt-exam.html?level=${level}&test=1`);await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
   await page.evaluate(level=>{
    const bank=window.JLPT_FULL_GENERATOR(level,1),all=[...bank.vocab,...bank.grammarReading,...bank.listening];
-   localStorage.setItem(`aponarNihonExam-v7-${level}-1`,JSON.stringify({version:7,level,test:1,mode:'full',sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+40*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m1',q.category==='listening'?(q.answer+1)%q.options.length:q.answer])),audioDone:bank.listening.map(q=>q.id+'-m1')}));
+   localStorage.setItem(`aponarNihonExam-v8-${level}-1`,JSON.stringify({version:8,level,test:1,mode:'full',sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+40*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m1',q.category==='listening'?(q.answer+1)%q.options.length:q.answer])),audioDone:bank.listening.map(q=>q.id+'-m1')}));
   },level);
   await page.reload();await page.locator('#resumeBtn').click();await page.locator('#submitPartBtn').click();await page.locator('#nextPartBtn').click();
   await expect(page.locator('.result-status')).toHaveText('আরও প্র্যাকটিস প্রয়োজন');
@@ -139,13 +141,13 @@ test('set ten keeps its own route, questions and saved attempt',async({page})=>{
  const fixtureReview={...review,levels:{...review.levels,n4:{}}};
  for(let i=0;i<11;i++)for(const q of base)fixtureReview.levels.n4[q.id+'-fixture-'+i]={...review.levels.n4[q.id]};
  await page.route('**/assets/data/jtest4you/bn-review.json*',route=>route.fulfill({json:fixtureReview}));
- await page.route('**/assets/data/jtest4you/n4.json*',route=>route.fulfill({json:{version:7,level:'n4',questions}}));
+ await page.route('**/assets/data/jtest4you/n4.json*',route=>route.fulfill({json:{version:8,level:'n4',questions}}));
  await page.goto('/jlpt-exam.html?level=n4&test=10');
  await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
  await expect(page.locator('#introTitle')).toHaveText('N4 Mock Test ১০');
  await page.locator('#startBtn').click();await expect(page.locator('.question-card')).toHaveCount(28);
  await expect(page.locator('.question-prompt').first()).toContainText('fixture 9');
- const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('aponarNihonExam-v7-n4-10')));
+ const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('aponarNihonExam-v8-n4-10')));
  expect(saved.test).toBe(10);
 });
 test('mock center stays on Aponar Nihon and accurately labels ten planned sets',async({page})=>{
@@ -163,22 +165,23 @@ test('mock center stays on Aponar Nihon and accurately labels ten planned sets',
  await expect(page.locator('.hero-meta')).toContainText('লক্ষ্য ৩০টি');
 });
 
-for(const level of ['n5','n4','n3']){
- test(`${level}: completed exam shows real Bengali review and downloads a named certificate`,async({page},testInfo)=>{
+for(const [level,mockNumber] of [['n5',1],['n5',2],['n5',3],['n5',4],['n4',1],['n4',2],['n3',1],['n3',2]]){
+ const mockId=String(mockNumber).padStart(2,'0');
+ test(`${level} mock ${mockNumber}: completed exam shows real Bengali review and downloads a named certificate`,async({page},testInfo)=>{
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
-  await page.goto(`/jlpt-exam.html?level=${level}&test=1`);
+  await page.goto(`/jlpt-exam.html?level=${level}&test=${mockNumber}`);
   await expect(page.locator('#startBtn')).toHaveText('পরীক্ষা শুরু করুন →');
   await page.locator('#candidateName').fill('সামির উদ্দিন');
-  const bank=await page.evaluate(level=>window.JLPT_FULL_GENERATOR(level,1),level);
+  const bank=await page.evaluate(({level,mockNumber})=>window.JLPT_FULL_GENERATOR(level,mockNumber),{level,mockNumber});
   await page.locator('#startBtn').click();
   await expect(page.locator('#reviewList .meaning-line')).toHaveCount(0);
-  expect(await page.evaluate(level=>JSON.parse(localStorage.getItem(`aponarNihonExam-v7-${level}-1`)).candidateName,level)).toBe('সামির উদ্দিন');
+  expect(await page.evaluate(({level,mockNumber})=>JSON.parse(localStorage.getItem(`aponarNihonExam-v8-${level}-${mockNumber}`)).candidateName,{level,mockNumber})).toBe('সামির উদ্দিন');
   await page.goto('/mock-test.html');
-  await page.evaluate(({level,bank})=>{
+  await page.evaluate(({level,mockNumber,bank})=>{
    const all=[...bank.vocab,...bank.grammarReading,...bank.listening];
-   localStorage.setItem(`aponarNihonExam-v7-${level}-1`,JSON.stringify({version:7,level,test:1,mode:'full',candidateName:'সামির উদ্দিন',startedAt:Date.now()-120000,sectionStartedAt:Date.now()-60000,sectionTimes:{0:30,1:30},sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+40*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m1',q.answer])),audioDone:bank.listening.map(q=>q.id+'-m1')}));
-  },{level,bank});
-  await page.goto(`/jlpt-exam.html?level=${level}&test=1`);await page.locator('#resumeBtn').click();await page.locator('#submitPartBtn').click();await page.locator('#nextPartBtn').click();
+   localStorage.setItem(`aponarNihonExam-v8-${level}-${mockNumber}`,JSON.stringify({version:8,level,test:mockNumber,mode:'full',candidateName:'সামির উদ্দিন',startedAt:Date.now()-120000,sectionStartedAt:Date.now()-60000,sectionTimes:{0:30,1:30},sectionIndex:2,completed:[0,1],sectionEnd:Date.now()+40*60000,answers:Object.fromEntries(all.map(q=>[q.id+'-m'+mockNumber,q.answer])),audioDone:bank.listening.map(q=>q.id+'-m'+mockNumber)}));
+  },{level,mockNumber,bank});
+  await page.goto(`/jlpt-exam.html?level=${level}&test=${mockNumber}`);await page.locator('#resumeBtn').click();await page.locator('#submitPartBtn').click();await page.locator('#nextPartBtn').click();
   await expect(page.locator('.result-status')).toHaveText('✓ PRACTICE PASS');
   const all=[...bank.vocab,...bank.grammarReading,...bank.listening];
   await expect(page.locator('.meaning-line')).toHaveCount(all.length);
@@ -196,21 +199,26 @@ for(const level of ['n5','n4','n3']){
   await expect(page.locator('#certificateCanvas')).toHaveAttribute('aria-label',/সামির রহমান/);
   expect(await page.evaluate(()=>document.fonts.check('700 24px "Noto Sans Bengali"','বাংলা সনদ'))).toBe(true);
   expect(await page.evaluate(()=>document.fonts.check('500 24px "Aponar Mock Japanese"','日本語模擬試験'))).toBe(true);
+  const previewFits=await page.evaluate(()=>{
+   const canvas=document.getElementById('certificateCanvas').getBoundingClientRect(),dialog=document.getElementById('certificateDialog').getBoundingClientRect();
+   return canvas.top>=dialog.top&&canvas.bottom<=dialog.bottom&&canvas.bottom<=innerHeight;
+  });
+  expect(previewFits).toBe(true);
   await page.locator('#certificateCanvas').screenshot({path:testInfo.outputPath('certificate-preview.png')});
   const [download]=await Promise.all([page.waitForEvent('download'),page.locator('#downloadCertificate').click()]);
-  expect(download.suggestedFilename()).toBe(`Aponar-Nihon-${level.toUpperCase()}-Mock-01-Certificate.pdf`);
+  expect(download.suggestedFilename()).toBe(`Aponar-Nihon-${level.toUpperCase()}-Mock-${mockId}-Certificate.pdf`);
   const certificatePath=testInfo.outputPath('certificate.pdf');
   await download.saveAs(certificatePath);
   const pdf=await readFile(certificatePath);
   expect(pdf.subarray(0,8).toString()).toBe('%PDF-1.4');
   expect(pdf.length).toBeGreaterThan(10000);
   expect(pdf.subarray(-6).toString()).toBe('%%EOF\n');
-  const result=await page.evaluate(level=>JSON.parse(localStorage.getItem('aponarNihonMockResults'))[level+'-1'],level);
+  const result=await page.evaluate(({level,mockNumber})=>JSON.parse(localStorage.getItem('aponarNihonMockResults'))[level+'-'+mockNumber],{level,mockNumber});
   expect(result.score).toBe(180);expect(result.certificateName).toBe('সামির রহমান');
-  expect(result.certificateId).toMatch(/^AN-N[345]-01-/);
+  expect(result.certificateId).toMatch(new RegExp('^AN-'+level.toUpperCase()+'-'+mockId+'-'));
   expect(result.elapsedSeconds).toBeGreaterThanOrEqual(120);
   await page.locator('.certificate-close').click();
-  await page.goto(`/jlpt-exam.html?level=${level}&test=1&result=1`);
+  await page.goto(`/jlpt-exam.html?level=${level}&test=${mockNumber}&result=1`);
   await expect(page.locator('#resultView')).toBeVisible();
   await page.locator('#certificateBtn').click();
   await expect(page.locator('#certificateName')).toHaveValue('সামির রহমান');
