@@ -1220,9 +1220,12 @@ export default {
         if (env.PUBLIC_DATA_RATE_LIMITER && !(await env.PUBLIC_DATA_RATE_LIMITER.limit({key: request.headers.get("cf-connecting-ip") || "local"})).success) {
           return json({ok: false, error: "rate_limited"}, 429, origin);
         }
-        const result = request.method === "GET" && url.pathname === "/api/public/news"
+        const upstream = request.method === "GET" && url.pathname === "/api/public/news"
           ? await newsFeed(env).fetch("https://daily-news.internal/feed")
           : await handlePublicData(request);
+        // fetch() responses have immutable headers, including Durable Object
+        // responses. Create our own response before adding browser CORS headers.
+        const result = new Response(upstream.body, upstream);
         result.headers.set("access-control-allow-origin", origin);
         result.headers.set("vary", "Origin");
         return result;
