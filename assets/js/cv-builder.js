@@ -15,7 +15,7 @@ function tokyoToday() {
 }
 function validDate(v) { return typeof v === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v) && !Number.isNaN(Date.parse(v)) && new Date(v).toISOString().slice(0,10) === v; }
 function jpDate(v) { if (!validDate(v)) return ''; const [y,m,d] = v.split('-'); return `${+y}年${+m}月${+d}日現在`; }
-function age(v) { if (!validDate(v)) return ''; const [y,m,d] = v.split('-').map(Number), [ty,tm,td] = tokyoToday().split('-').map(Number); return ty - y - (tm < m || (tm === m && td < d) ? 1 : 0); }
+function age(v) { if (!validDate(v)) return ''; const [y,m,d] = v.split('-').map(Number), [ty,tm,td] = (validDate(state?.created) ? state.created : tokyoToday()).split('-').map(Number); return ty - y - (tm < m || (tm === m && td < d) ? 1 : 0); }
 const emptyRow = () => ({year:'',month:'',text:''});
 function emptyState() { return {template:'standard',outputFormat:'a4-2',created:tokyoToday(),photo:'',edu:[emptyRow()],work:[emptyRow()],qual:[emptyRow()],cvV6Seeded:true}; }
 function normalizeCV(value) {

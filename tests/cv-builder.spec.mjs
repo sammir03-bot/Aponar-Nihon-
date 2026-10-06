@@ -29,8 +29,9 @@ test('CV is readable on mobile, supports all templates and does not prefill clai
   expect(errors).toEqual([]);
 });
 test('saved CV and manually chosen date survive reload and printing',async({page})=>{
-  await seed(page);await open(page);await step(page,1);await expect(page.locator('#created')).toHaveValue('2026-10-01');
+  await seed(page,draft({dob:'2000-10-02'}));await open(page);await step(page,1);await expect(page.locator('#created')).toHaveValue('2026-10-01');
   await page.locator('#created').fill('2026-09-30');await expect(page.locator('#jisDate1')).toContainText('9月');
+  await expect(page.locator('#jisDob')).toContainText('25');
   await page.reload();await expect(page.locator('#jisDate1')).toContainText('30日');
   await mockPrint(page);await step(page,4);await page.locator('#printRireki').click();
   await expect.poll(()=>page.evaluate(()=>window.cvPrintCalls)).toBe(1);await expect(page.locator('#created')).toHaveValue('2026-09-30');

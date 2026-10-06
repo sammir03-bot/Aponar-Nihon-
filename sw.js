@@ -1,4 +1,4 @@
-/* Aponar Nihon service-worker wrapper — app shell v40 — revalidate CV, quizzes and news.
+/* Aponar Nihon service-worker wrapper — app shell v41 — revalidate CV, quizzes and news.
    The dashboard, dedicated section hubs and AI Tutor assets are available
    offline after install, while updated learning pages stay network-first. */
 
