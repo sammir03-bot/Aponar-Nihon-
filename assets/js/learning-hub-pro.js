@@ -70,18 +70,14 @@
   }
 
   function quizProgress() {
-    var sets = 0;
-    try {
-      for (var index = 0; index < localStorage.length; index += 1) {
-        var key = localStorage.key(index) || "";
-        if (key.indexOf("aponarQuiz:") !== 0) continue;
-        var answers = readJson(key, {});
-        if (answers && Object.keys(answers).length) sets += 1;
-      }
-    } catch (_error) { /* Keep the progress available even in private mode. */ }
+    var saved = readJson("anQuizSetResultsV2", {});
+    var sets = Object.entries(saved).filter(function (entry) {
+      var result = entry[1];
+      return /^aponarQuizV2:n[345]:(vocabulary|kanji|grammar|reading):(10|[1-9])$/.test(entry[0]) && result && result.version === 2 && result.bankVersion === "20261007.quiz2" && result.completed === true && Number.isInteger(result.total) && result.total > 0 && result.answered === result.total;
+    }).length;
     var mockResults = readJson("aponarNihonMockResults", {});
     var mocks = mockResults && typeof mockResults === "object" ? Object.keys(mockResults).length : 0;
-    return { done: Math.min(sets, 90) + Math.min(mocks, 30), total: 120, label: sets + " quiz · " + mocks + " mock" };
+    return { done: Math.min(sets, 120) + Math.min(mocks, 30), total: 150, label: sets + " সম্পূর্ণ quiz · " + mocks + " mock" };
   }
 
   function setCardStatus(card) {
@@ -184,10 +180,10 @@
   }
 
   function setupDailyLinks() {
-    var day = Math.floor(Date.now() / 86400000);
+    var day = Math.floor((Date.now() + 9 * 3600000) / 86400000);
     document.querySelectorAll("[data-daily-link]").forEach(function (link) {
       var level = (link.dataset.dailyLevel || "n5").toLowerCase();
-      var categories = level === "n3" ? ["reading"] : ["vocabulary", "kanji", "grammar", "reading"];
+      var categories = ["vocabulary", "kanji", "grammar", "reading"];
       var category = categories[day % categories.length];
       var part = (day % 10) + 1;
       link.href = "/jlpt-quiz.html?level=" + level + "&category=" + category + "&part=" + part;

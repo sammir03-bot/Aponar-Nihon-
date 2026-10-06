@@ -13,21 +13,21 @@ test('Bangla home labels survive tracker initialization and scanner starts row t
  await expect(page.locator('.app-quick-item[href="/n5.html"]')).toHaveText('JLPT N5');
 });
 
-test('N4 inflected vocabulary gives a grammatical sentence and persists progress',async({page})=>{
+test('N4 vocabulary keeps the reviewed meaning and persists progress',async({page})=>{
  await page.goto('/jlpt-quiz.html?level=n4&category=vocabulary&part=1');
- const question=page.locator('.card[data-i="5"]');
- await question.getByRole('button',{name:'拾い',exact:true}).click();
- await expect(question.locator('.explain')).toContainText('拾いました');
+ const question=page.locator('.card[data-i="0"]');
+ await question.getByRole('button',{name:/きせつ/}).click();
+ await expect(question.locator('.explain')).toContainText('ঋতু');
  await expect(page.locator('#scoreText')).toContainText('1 / 8');
  await page.reload();
  await expect(page.locator('#scoreText')).toContainText('1 / 8');
- await expect(page.locator('.card[data-i="5"] .correct')).toHaveText('拾い');
+ await expect(page.locator('.card[data-i="0"] .correct')).toContainText('きせつ');
 });
 
 test('fractional quiz part cannot crash the reading page',async({page})=>{
  await page.goto('/jlpt-quiz.html?level=n3&category=reading&part=1.5');
- await expect(page.locator('#passageHost .passage')).toBeVisible();
- await expect(page.locator('#quizHost .card')).toHaveCount(3);
+ await expect(page.locator('#quizHost .passage').first()).toBeVisible();
+ await expect(page.locator('#quizHost .card')).toHaveCount(8);
 });
 
 test('CV wizard labels stay visible at the current screen width',async({page})=>{

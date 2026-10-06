@@ -26,3 +26,6 @@ __pycache__/
 
 # Reproducible mock authoring intermediates
 tools/content/generated-mock/
+
+# Quiz sets are derived from the committed, reviewed study bank during build.
+assets/data/quiz/*.json
