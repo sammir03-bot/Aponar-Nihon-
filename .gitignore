@@ -29,3 +29,6 @@ tools/content/generated-mock/
 
 # Quiz sets are derived from the committed, reviewed study bank during build.
 assets/data/quiz/*.json
+
+# Compact open reading data are pinned and generated during build.
+assets/data/news-readings.tsv.gz
