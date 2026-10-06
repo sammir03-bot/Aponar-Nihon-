@@ -51,6 +51,17 @@ try {
   assert.equal(failed.update_status,'source_unavailable');assert.equal(failed.articles.length,1,'Keep the last good news during outages');
   await next.fetch(new Request('https://internal/refresh',{method:'POST'}));assert.equal(sources,3,'Back off after upstream failures');
   assert.equal((await next.fetch(new Request('https://internal/feed',{method:'PUT'}))).status,405);
+  // Pending language cards retry independently of the three-hour source refresh.
+  values.set('article:'+parsed[0].id,structuredClone(parsed[0]));
+  meta=values.get('feed-meta-v1');meta.last_checked=Date.now();meta.learning_checked=Date.now()-16*60000;values.set('feed-meta-v1',meta);
+  globalThis.fetch=async (url,init)=>{
+    assert.ok(url.startsWith('https://generativelanguage.googleapis.com/'),'A language retry must not refetch RSS');
+    const config=JSON.parse(init.body).generationConfig;assert.equal(config.thinkingConfig.thinkingLevel,'minimal');assert.ok(config.responseJsonSchema);
+    models++;return Response.json({candidates:[{content:{parts:[{text:JSON.stringify({articles:[learning]})}]}}]});
+  };
+  await next.fetch(new Request('https://internal/feed'));await Promise.all(waits);
+  const retried=await (await next.fetch(new Request('https://internal/feed'))).json();
+  assert.equal(retried.articles[0].learning_status,'ready');assert.equal(retried.learning_error,null);assert.equal(sources,3);
   console.log('Daily news audit passed: trusted real dates, enrichment validation, persistent archive, concurrent deduplication, outages and backoff.');
 } finally {globalThis.fetch=nativeFetch;delete globalThis.NewsTestDurableObject;}
 

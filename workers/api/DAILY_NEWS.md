@@ -20,6 +20,12 @@ headlines remain available with an explicit Bengali pending notice, rather
 than invented details. Full stories always link to NHK. No credential reaches
 the browser, and old curated lessons remain available independently.
 
+Language generation uses a JSON schema, a low thinking budget and a separate
+15-minute retry window. Pending lessons retry without refetching the RSS or
+waiting for the three-hour source interval. The persistent `learning_checked`
+timestamp bounds retries across requests; `learning_error` exposes only a short
+non-secret status code for diagnostics.
+
 Public API responses bypass the service worker's asset cache. The browser
 keeps its last feed for offline reading, labels saved data, refreshes on
 returning to the page, and offers an archive refresh button.
