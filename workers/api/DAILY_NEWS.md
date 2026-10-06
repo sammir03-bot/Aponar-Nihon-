@@ -8,13 +8,16 @@ rejected. At most six stories per publication day and three per refresh enter
 an archive bounded to 300 cards. Source outages retain existing cards and back
 off for 15 minutes.
 
-New lessons use the actual source headline, its dictionary readings and a
-Bengali translation. They do not generate extra story facts or scrape full
-articles. `news-learning.ts` uses the existing Workers AI M2M100 translation
-binding, with four concurrent translation requests and per-refresh caching.
-Missing Bengali output, missing dictionary readings or fewer than three
-translated vocabulary items leave the source-backed card pending. Successful
-siblings remain available. Source IDs, links and dates never come from a model.
+New lessons use the exact source headline and open dictionary readings.
+`assets/data/news-source-lessons.json` contains reviewed Bengali vocabulary
+(including the existing archive's vocabulary) and source-matched headline
+summaries. The reader selects up to five non-overlapping compounds in source
+order. A reviewed summary is shown only when the complete headline matches;
+otherwise it explicitly provides a reading guide, not a full Bengali translation.
+No model or machine translation supplies names, quantities, meanings or facts.
+Missing dictionary readings or fewer than three reviewed vocabulary items leave
+the source-backed card pending. Successful siblings remain available. Source IDs,
+links and dates always come from RSS.
 
 `tools/content/build-news-readings.py` creates a 1.9 MB compressed lexicon with
 249,261 word forms from kuromoji 0.1.2's open IPADIC data. Both the upstream
@@ -34,5 +37,5 @@ provides a refresh button.
 
 Verify with `node tools/check_daily_news.mjs`, `npm run verify`, the news browser
 tests and `wrangler deploy --dry-run`. The audit includes trusted dates, dictionary
-integrity, the actual problematic readings, exact source text, language failures,
+integrity, the actual problematic readings, exact source text, insufficient reviewed meanings, Bengali quantities,
 independent cards, deduplication and immutable subresponse headers.

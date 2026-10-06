@@ -13,8 +13,8 @@ type Article = {
 type State = {articles: Article[]; last_checked: number; last_success: number; last_error: string; learning_checked?: number; learning_error?: string; learning_version?: string};
 const RSS = "https://www.nhk.or.jp/rss/news/cat0.xml";
 const INTERVAL = 3 * 60 * 60 * 1000;
-const LEARNING_VERSION = "20261007.news6";
-const NOTE = "NHK-এর শিরোনাম থেকে তৈরি পাঠ। ফুরিগানা উন্মুক্ত IPADIC অভিধান থেকে এবং বাংলা অনুবাদ স্বয়ংক্রিয়ভাবে প্রস্তুত। পুরো খবর ও সর্বশেষ তথ্য মূল উৎসে মিলিয়ে নিন।";
+const LEARNING_VERSION = "20261007.news7";
+const NOTE = "NHK-এর মূল শিরোনাম, উন্মুক্ত IPADIC অভিধানের ফুরিগানা ও যাচাই করা বাংলা শব্দার্থ দিয়ে তৈরি পাঠ। পর্যালোচিত বাংলা সারাংশ পাওয়া গেলে দেখানো হয়। পুরো খবর ও সর্বশেষ তথ্য মূল উৎসে পড়ুন।";
 const record = (v: unknown): Obj => v && typeof v === "object" && !Array.isArray(v) ? v as Obj : {};
 const plain = (v: unknown, max = 500): string => typeof v === "string" ? v.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim().slice(0, max) : "";
 const bn = (v: string): boolean => /[\u0980-\u09ff]/.test(v);
@@ -130,7 +130,7 @@ function pendingSource(article: Article): Article {
     vocabulary: [], learning_status: "pending", reading_version: ""};
 }
 
-// A single persistent feed deduplicates refreshes and model calls across visitors.
+// A single persistent feed deduplicates source refreshes across visitors.
 export class DailyNewsFeed extends DurableObject<Env> {
   private refreshing: Promise<State> | null = null;
   private async state(): Promise<State> {
