@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import assert from 'node:assert/strict';
+import vm from 'node:vm';
 import {stripTypeScriptTypes} from 'node:module';
 
 globalThis.NewsTestDurableObject = class {constructor(ctx, env) {this.ctx = ctx; this.env = env;}};
@@ -52,3 +53,19 @@ try {
   assert.equal((await next.fetch(new Request('https://internal/feed',{method:'PUT'}))).status,405);
   console.log('Daily news audit passed: trusted real dates, enrichment validation, persistent archive, concurrent deduplication, outages and backoff.');
 } finally {globalThis.fetch=nativeFetch;delete globalThis.NewsTestDurableObject;}
+
+// Use a real fetch response: its immutable headers match a DO subrequest.
+// In-memory Response.json fixtures hide this production-only failure.
+const workerCode = fs.readFileSync('workers/api/src/index.ts', 'utf8')
+  .replace(/^import \{ handlePublicData \} from "\.\/public-data";\s*/m, '')
+  .replace(/^import \{ newsFeed \} from "\.\/daily-news";\s*/m, '')
+  .replace(/^export \{ DailyNewsFeed \} from "\.\/daily-news";\s*/m, '')
+  .replace('export default {', 'this.worker = {');
+const workerContext = vm.createContext({Request, Response, URL, TextDecoder, TextEncoder, crypto, console,
+  newsFeed: () => ({fetch: () => nativeFetch('data:application/json,' + encodeURIComponent(JSON.stringify({ok: true, articles: []})))})});
+vm.runInContext(stripTypeScriptTypes(workerCode), workerContext);
+const publicResponse = await workerContext.worker.fetch(new Request('https://app.aponar-nihon.workers.dev/api/public/news'), {APP_ORIGIN:'https://app.aponar-nihon.workers.dev'});
+assert.equal(publicResponse.status, 200, 'Wrap immutable DO response headers before setting CORS');
+assert.equal(publicResponse.headers.get('access-control-allow-origin'), 'https://app.aponar-nihon.workers.dev');
+assert.equal((await publicResponse.json()).ok, true);
+console.log('Live news route audit passed with immutable upstream headers.');
