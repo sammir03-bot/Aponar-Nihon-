@@ -1,8 +1,6 @@
 (function () {
   "use strict";
 
-  var OFF_V3_RE = /^https:\/\/world\.openfoodfacts\.org\/api\/v3\.6\/product\/(\d+)\.json/i;
-  var nativeFetch = window.fetch.bind(window);
   var tesseractPromise = null;
   var ocrBusy = false;
 
@@ -16,109 +14,6 @@
     window.clearTimeout(toast.timer);
     toast.timer = window.setTimeout(function () { node.classList.remove("show"); }, 3600);
   }
-
-  function stripMarkup(value) {
-    var div = document.createElement("div");
-    div.innerHTML = String(value || "");
-    return (div.textContent || div.innerText || "").replace(/\s+/g, " ").trim();
-  }
-
-  function firstUsefulIngredientText(product) {
-    var p = product || {};
-    var candidates = [
-      p.ingredients_text_ja,
-      p.ingredients_text,
-      p.ingredients_text_en,
-      p.ingredients_text_with_allergens_ja,
-      p.ingredients_text_with_allergens,
-      p.ingredients_text_with_allergens_en,
-      p.ingredients_original
-    ];
-
-    Object.keys(p).forEach(function (key) {
-      if (/^ingredients_text_(?!with_allergens)/i.test(key)) candidates.push(p[key]);
-    });
-
-    for (var i = 0; i < candidates.length; i += 1) {
-      var value = stripMarkup(candidates[i]);
-      if (value.length >= 3) return value;
-    }
-
-    if (Array.isArray(p.ingredients)) {
-      var list = p.ingredients.map(function (item) {
-        if (!item) return "";
-        return stripMarkup(item.text || item.original_text || item.id || "");
-      }).filter(Boolean);
-      if (list.length) return list.join("、");
-    }
-
-    return "";
-  }
-
-  function mergeProduct(primary, fallback) {
-    var merged = Object.assign({}, fallback || {}, primary || {});
-    var text = firstUsefulIngredientText(primary) || firstUsefulIngredientText(fallback);
-    if (text) merged.ingredients_text = text;
-    return merged;
-  }
-
-  async function fetchOpenFoodFactsFallback(code) {
-    var endpoints = [
-      "https://world.openfoodfacts.org/api/v2/product/" + encodeURIComponent(code) + ".json",
-      "https://world.openfoodfacts.org/api/v0/product/" + encodeURIComponent(code) + ".json"
-    ];
-
-    for (var i = 0; i < endpoints.length; i += 1) {
-      try {
-        var response = await nativeFetch(endpoints[i], {
-          method: "GET",
-          mode: "cors",
-          credentials: "omit",
-          headers: { Accept: "application/json" }
-        });
-        if (!response.ok) continue;
-        var data = await response.json();
-        var product = data && data.product ? data.product : null;
-        if (product && (firstUsefulIngredientText(product) || product.product_name || product.product_name_ja || product.product_name_en)) {
-          return product;
-        }
-      } catch (_error) {
-        // Try the next compatible Open Food Facts endpoint.
-      }
-    }
-    return null;
-  }
-
-  // The main scanner performs a compact Open Food Facts lookup. If that compact
-  // response has no ingredient list, transparently do a second-pass lookup with
-  // the full product payload and feed the richer response back to the scanner.
-  window.fetch = async function (input, init) {
-    var url = typeof input === "string" ? input : (input && input.url ? input.url : "");
-    var match = url.match(OFF_V3_RE);
-    var response = await nativeFetch(input, init);
-    if (!match || !response.ok) return response;
-
-    try {
-      var snapshot = await response.clone().json();
-      var primary = snapshot && snapshot.product ? snapshot.product : snapshot;
-      if (firstUsefulIngredientText(primary)) return response;
-
-      var fallback = await fetchOpenFoodFactsFallback(match[1]);
-      if (!fallback) return response;
-
-      var mergedProduct = mergeProduct(primary, fallback);
-      if (snapshot && snapshot.product) snapshot.product = mergedProduct;
-      else snapshot = mergedProduct;
-
-      return new Response(JSON.stringify(snapshot), {
-        status: response.status,
-        statusText: response.statusText,
-        headers: { "Content-Type": "application/json; charset=utf-8" }
-      });
-    } catch (_error) {
-      return response;
-    }
-  };
 
   function loadTesseract() {
     if (window.Tesseract && typeof window.Tesseract.createWorker === "function") {

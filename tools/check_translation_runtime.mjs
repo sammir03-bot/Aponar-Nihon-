@@ -3,7 +3,9 @@ import vm from 'node:vm';
 import assert from 'node:assert/strict';
 import { stripTypeScriptTypes } from 'node:module';
 
-const worker = fs.readFileSync('workers/api/src/index.ts', 'utf8');
+// This VM exercises translation helpers, not the unrelated public-data routes.
+const worker = fs.readFileSync('workers/api/src/index.ts', 'utf8')
+  .replace(/^import \{ handlePublicData \} from "\.\/public-data";\s*/m, '');
 const context = vm.createContext({ Request, Response, TextDecoder, TextEncoder, URL, console });
 vm.runInContext(stripTypeScriptTypes(worker.slice(0, worker.indexOf('export default {')))
   + ';this.check={parseTranslationRequest,parseTranslationModelOutput};', context);

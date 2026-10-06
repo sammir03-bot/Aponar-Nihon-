@@ -1,3 +1,5 @@
+import { handlePublicData } from "./public-data";
+
 type JsonRecord = Record<string, unknown>;
 
 type TutorHistoryItem = {
@@ -1208,6 +1210,15 @@ export default {
     const rid = requestId(request);
 
     try {
+      if (url.pathname.startsWith("/api/public/")) {
+        if (env.PUBLIC_DATA_RATE_LIMITER && !(await env.PUBLIC_DATA_RATE_LIMITER.limit({key: request.headers.get("cf-connecting-ip") || "local"})).success) {
+          return json({ok: false, error: "rate_limited"}, 429, origin);
+        }
+        const result = await handlePublicData(request);
+        result.headers.set("access-control-allow-origin", origin);
+        result.headers.set("vary", "Origin");
+        return result;
+      }
       if (request.method === "GET" && url.pathname === "/api/health") {
         return json({
           ok: true,

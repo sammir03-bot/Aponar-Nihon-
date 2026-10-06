@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="/assets/css/halal-scanner.css?v=20260904">
   <link rel="stylesheet" href="/assets/css/inner-section-cards.css?v=20260912.1">
   <script defer src="/assets/js/inner-section-cards.js?v=20260912.1"></script>
+<meta name="robots" content="noindex,follow"><base href="/">
 </head>
 <body data-inner-card-page="1" class="app-page" data-page="halal">
   <header class="app-topbar">
@@ -80,7 +81,7 @@
           <label class="manual-label" for="barcodeInput">Barcode number লিখেও check করতে পারেন</label>
           <div class="input-row">
             <input class="halal-input" id="barcodeInput" inputmode="numeric" autocomplete="off" maxlength="18" placeholder="যেমন: 4901234567890" aria-label="Barcode number">
-            <button class="halal-btn dark" id="barcodeLookupBtn" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Check</button>
+            <button class="halal-btn dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i> Check</button>
           </div>
           <p class="lookup-note">Product data Open Food Facts-এর open database থেকে নেওয়া হয়। Database-এ product না থাকলে ingredient text দিয়ে check করুন।</p>
         </form>
@@ -90,7 +91,6 @@
             <img class="product-image" id="productImage" alt="" hidden>
             <div class="result-meta"><h3 id="productName">Product</h3><div class="result-brand" id="productBrand"></div><div class="result-code" id="productCode"></div></div>
           </div>
-          <p id="productSource" class="product-brand" aria-live="polite"></p>
           <div class="verdict" id="verdictBox" data-status="unknown">
             <span class="verdict-icon" id="verdictIcon"><i class="fa-solid fa-circle-question"></i></span>
             <div><h4 id="verdictTitle">তথ্য যাচাই হচ্ছে</h4><p id="verdictText"></p></div>
@@ -138,7 +138,7 @@
 
   <footer class="app-shell app-footer">
     <div class="app-footer-links"><a href="/muslim-japan.html">Muslim Japan</a><a href="/contact.html">যোগাযোগ</a><a href="/privacy-policy.html">Privacy</a><a href="/Disclaimer">Disclaimer</a></div>
-    <p>তথ্য: <a href="https://world.openfoodfacts.org/data" target="_blank" rel="noopener">Open Food Facts · ODbL</a> · Scanner: ZXing · © ২০২৬ আপনার নিহোন</p>
+    <p>Product data: Open Food Facts · © ২০২৬ আপনার নিহোন</p>
   </footer>
 
   <div class="app-dock-wrap">
@@ -154,8 +154,8 @@
   <div class="scanner-toast" id="scannerToast" role="status" aria-live="polite"></div>
   <script src="/assets/js/i18n.js?v=20260901"></script>
   <script src="/assets/js/app-shell.js?v=20260904"></script>
-  <script src="/assets/vendor/zxing/zxing-browser.min.js?v=0.1.5"></script>
-  <script src="/assets/js/halal-scanner.js?v=20261006.open1"></script>
-  <script src="/assets/js/halal-ingredient-fallback.js?v=20261006.open1"></script>
+  <script src="/assets/js/halal-scanner.js?v=20260904"></script>
+  <script src="/assets/js/halal-camera-fallback.js?v=20260904.1"></script>
+  <script src="/assets/js/halal-ingredient-fallback.js?v=20260907.1"></script>
 </body>
 </html>

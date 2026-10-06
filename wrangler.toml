@@ -38,6 +38,14 @@ namespace_id = "2026090101"
   limit = 45
   period = 60
 
+[[ratelimits]]
+name = "PUBLIC_DATA_RATE_LIMITER"
+namespace_id = "2026100601"
+
+  [ratelimits.simple]
+  limit = 12
+  period = 60
+
 [observability.logs]
 enabled = true
 head_sampling_rate = 1
