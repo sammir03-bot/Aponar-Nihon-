@@ -51,11 +51,14 @@
     return out;
   }
   function goToIssue(issue) {showStep(issue.step);const el=E(issue.id);let parent=el?.parentElement;while(parent){if(parent.tagName==='DETAILS')parent.open=true;parent=parent.parentElement;}const control=el?.matches('input,textarea,select')?el:el?.querySelector('input,textarea,select');control?.focus({preventScroll:true});el?.scrollIntoView({block:'center',behavior:'smooth'});}
+  let wasCareerMode=false;
   function updateReview() {
     const list=E('cvIssueList'),items=issues();list.replaceChildren();
     E('cvReviewSummary').textContent=items.length?`${items.length}টি বিষয় ঠিক করে Preview মিলিয়ে নিন।`:'মূল তথ্য পূরণ হয়েছে। বানান, নমুনা লেখা ও ছবিটি শেষবার মিলিয়ে নিন।';
     for(const issue of items){const li=document.createElement('li'),button=document.createElement('button');button.type='button';button.textContent=issue.text;button.onclick=()=>goToIssue(issue);li.append(button);list.append(li);}
-    E('cvCareerFields').open=state.template==='career'||currentKind()==='career';
+    const careerMode=state.template==='career'||currentKind()==='career';
+    if(careerMode&&!wasCareerMode)E('cvCareerFields').open=true;
+    wasCareerMode=careerMode;
   }
   window.updateCVReview=updateReview;
 

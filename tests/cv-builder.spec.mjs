@@ -24,6 +24,8 @@ test('CV is readable on mobile, supports all templates and does not prefill clai
   await page.locator('#name').fill('TEST USER');await expect(page.locator('#jisName')).toHaveText('TEST USER');
   await step(page,3);await expect(page.locator('#motive')).toHaveValue('');
   await page.locator('[data-motive="newgrad"]').click();await expect(page.locator('#motive')).toHaveValue(/学校/);await expect(page.locator('#cvMessage')).toContainText('নমুনার অর্থ');
+  await page.locator('#cvCareerFields').evaluate(el=>{el.open=true;});
+  await page.locator('#summary').fill('自分の経験をまとめます。');await expect(page.locator('#summary')).toBeVisible();
   expect(errors).toEqual([]);
 });
 test('saved CV and manually chosen date survive reload and printing',async({page})=>{
