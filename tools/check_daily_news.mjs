@@ -17,6 +17,7 @@ const learning = {id: parsed[0].id, headline_tokens: [{t:'学校',r:'がっこ�
 assert.equal(applyNewsLearning(parsed[0], learning).learning_status, 'ready');
 assert.equal(applyNewsLearning(parsed[0], {...learning, headline_tokens:[{t:'Invented replacement'}]}).learning_status, 'pending');
 assert.equal(applyNewsLearning(parsed[0], {...learning, teaser_bn:'Untranslated English'}).learning_status, 'pending');
+assert.equal(applyNewsLearning(parsed[0], {...learning, headline_tokens:[{t:title,r:'Latin reading'}]}).learning_status,'pending','Readings must use kana');
 
 const values = new Map(), waits = [];
 const ctx = {waitUntil:p=>waits.push(p), storage:{
@@ -65,7 +66,7 @@ try {
   values.set('article:'+parsed[0].id,structuredClone(parsed[0]));
   meta=values.get('feed-meta-v1');meta.learning_checked=Date.now();meta.learning_version='previous-generator';values.set('feed-meta-v1',meta);
   globalThis.fetch=async()=>new Response('',{status:400});let fallbackCalls=0;
-  const fallback=new DailyNewsFeed(ctx,{GEMINI_API_KEY:'test-only',AI:{async run(model,request){assert.equal(model,'@cf/openai/gpt-oss-120b');assert.equal(request.reasoning_effort,'low');assert.equal(request.max_tokens,10000);assert.equal(request.response_format.type,'json_object');fallbackCalls++;return {choices:[{message:{content:JSON.stringify({articles:[learning]})}}]};}}});
+  const fallback=new DailyNewsFeed(ctx,{GEMINI_API_KEY:'test-only',AI:{async run(model,request){assert.equal(model,'@cf/zai-org/glm-4.7-flash');assert.equal(request.reasoning_effort,'low');assert.equal(request.max_completion_tokens,4500);assert.equal(request.response_format.type,'json_object');fallbackCalls++;return {choices:[{message:{content:JSON.stringify({articles:[learning]})}}]};}}});
   await fallback.fetch(new Request('https://internal/feed'));await Promise.all(waits);
   const fallbackData=await (await fallback.fetch(new Request('https://internal/feed'))).json();
   assert.equal(fallbackData.articles[0].learning_status,'ready','Use the existing inference binding when the primary request fails');assert.equal(fallbackCalls,1);
@@ -75,6 +76,16 @@ try {
   await invalidFallback.fetch(new Request('https://internal/feed'));await Promise.all(waits);
   const invalidData=await (await invalidFallback.fetch(new Request('https://internal/feed'))).json();
   assert.equal(invalidData.articles[0].learning_status,'pending','Fallback content must pass the same Bengali validation');assert.equal(fallbackCalls,2,'Invalid fallback output must respect the retry backoff');
+  assert.equal(invalidData.learning_error,'news_learning_bengali_missing','Diagnostics contain a reason, never raw model text');
+  const siblings=[parsed[0],{...parsed[0],id:parsed[0].id+'-second'},{...parsed[0],id:parsed[0].id+'-third'}];
+  for(const article of siblings)values.set('article:'+article.id,structuredClone(article));
+  meta=values.get('feed-meta-v1');meta.last_checked=Date.now();meta.learning_checked=0;values.set('feed-meta-v1',meta);
+  let perCardCalls=0;
+  globalThis.fetch=async(url,init)=>{const body=JSON.parse(init.body),input=JSON.parse(body.contents[0].parts[0].text);assert.equal(input.length,1);assert.equal(body.generationConfig.responseJsonSchema.properties.articles.maxItems,1);assert.deepEqual(body.generationConfig.responseJsonSchema.properties.articles.items.properties.id.enum,[input[0].id]);return new Response('',{status:400});};
+  const separate=new DailyNewsFeed(ctx,{GEMINI_API_KEY:'test-only',AI:{async run(_model,request){perCardCalls++;const [{id}]=JSON.parse(request.messages[1].content);if(id===siblings[1].id)throw new Error('one-provider-outage');return {response:JSON.stringify({articles:[{...learning,id}]})};}}});
+  await separate.fetch(new Request('https://internal/feed'));await Promise.all(waits);
+  const separateData=await (await separate.fetch(new Request('https://internal/feed'))).json();
+  assert.equal(perCardCalls,3);assert.equal(separateData.articles.filter(a=>a.learning_status==='ready').length,2,'Successful siblings survive one failed card');assert.equal(separateData.learning_error,'news_learning_missing_card');
   console.log('Daily news audit passed: trusted real dates, enrichment validation, persistent archive, concurrent deduplication, outages and backoff.');
 } finally {globalThis.fetch=nativeFetch;delete globalThis.NewsTestDurableObject;}
 
