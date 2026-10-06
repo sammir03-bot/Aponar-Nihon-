@@ -132,6 +132,8 @@ def ensure_full_revision_enhancer() -> bool:
     if not path.exists():
         raise SystemExit("jlpt-revision.html is missing")
     text = path.read_text(encoding="utf-8")
+    if '/assets/js/revision-workspace.js' in text:
+        return False
     updated = text
     if '/assets/css/full-revision-v2.css' not in updated:
         if '</head>' not in updated.lower():
@@ -182,10 +184,13 @@ def verify() -> None:
             raise SystemExit(f"CV Builder asset missing or empty: {asset.relative_to(ROOT)}")
 
     revision = (ROOT / "jlpt-revision.html").read_text(encoding="utf-8")
-    for needle in (REV_CSS, REV_JS):
+    modern = '/assets/js/revision-workspace.js' in revision
+    required = ('/assets/css/study-workspace.css', '/assets/js/study-shared.js', '/assets/js/revision-workspace.js') if modern else (REV_CSS, REV_JS)
+    for needle in required:
         if needle not in revision:
-            raise SystemExit(f"Full Revision enhancer missing: {needle}")
-    for asset in (ROOT / "assets/css/full-revision-v2.css", ROOT / "assets/js/full-revision-v2.js"):
+            raise SystemExit(f"Full Revision asset missing: {needle}")
+    assets = (ROOT / 'assets/css/study-workspace.css', ROOT / 'assets/js/revision-workspace.js') if modern else (ROOT / "assets/css/full-revision-v2.css", ROOT / "assets/js/full-revision-v2.js")
+    for asset in assets:
         if not asset.exists() or asset.stat().st_size < 1000:
             raise SystemExit(f"Full Revision asset missing or empty: {asset.relative_to(ROOT)}")
 
