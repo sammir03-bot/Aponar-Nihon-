@@ -1,4 +1,4 @@
-/* Aponar Nihon service-worker wrapper — app shell v37 — revalidate study workspaces.
+/* Aponar Nihon service-worker wrapper — app shell v38 — revalidate study workspaces.
    The dashboard, dedicated section hubs and AI Tutor assets are available
    offline after install, while updated learning pages stay network-first. */
 
@@ -50,6 +50,14 @@ __anNativeAddEventListener('fetch', event => {
   const request = event.request;
   if(request.method === 'GET'){
     const url = new URL(request.url);
+    // Public API data has its own bounded edge cache. Never cache API errors or
+    // location-specific results as offline page assets.
+    if (url.origin === self.location.origin && url.pathname.startsWith('/api/public/')) {
+      event.respondWith(fetch(request).catch(() => new Response(JSON.stringify({ok:false,error:'offline'}), {
+        status:503, headers:{'content-type':'application/json','cache-control':'no-store'}
+      })));
+      return;
+    }
     const isN3Vocabulary = url.origin === self.location.origin &&
       (url.pathname === '/n3-vocabulary.html' || url.pathname === '/n3-vocabulary');
     const isN3Grammar = url.origin === self.location.origin &&
@@ -59,7 +67,7 @@ __anNativeAddEventListener('fetch', event => {
     const isHtml = request.mode === 'navigate' || (request.headers.get('accept') || '').includes('text/html');
     const studyPath = decodeURIComponent(url.pathname).replace(/\.html$/, '').replace(/\/$/, '');
     const isStudyPage = url.origin === self.location.origin &&
-      ['/interview', '/part-time-interview', '/skype sheet', '/embassy-interview', '/listening-lab', '/jlpt-revision'].includes(studyPath);
+      ['/interview', '/part-time-interview', '/skype sheet', '/embassy-interview', '/listening-lab', '/jlpt-revision', '/halal-scanner', '/muslim-japan'].includes(studyPath);
     if (isStudyPage && isHtml) {
       event.respondWith(
         fetch(request, {cache:'no-store'}).then(response => {
