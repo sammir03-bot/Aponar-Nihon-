@@ -1,4 +1,4 @@
-/* Aponar Nihon service-worker wrapper — app shell v36 — revalidate application assets.
+/* Aponar Nihon service-worker wrapper — app shell v37 — revalidate study workspaces.
    The dashboard, dedicated section hubs and AI Tutor assets are available
    offline after install, while updated learning pages stay network-first. */
 
@@ -57,6 +57,23 @@ __anNativeAddEventListener('fetch', event => {
     const isN3MatomeGrammar = url.origin === self.location.origin &&
       (url.pathname === '/n3-matome-grammar.html' || url.pathname === '/n3-matome-grammar');
     const isHtml = request.mode === 'navigate' || (request.headers.get('accept') || '').includes('text/html');
+    const studyPath = decodeURIComponent(url.pathname).replace(/\.html$/, '').replace(/\/$/, '');
+    const isStudyPage = url.origin === self.location.origin &&
+      ['/interview', '/part-time-interview', '/skype sheet', '/embassy-interview', '/listening-lab', '/jlpt-revision'].includes(studyPath);
+    if (isStudyPage && isHtml) {
+      event.respondWith(
+        fetch(request, {cache:'no-store'}).then(response => {
+          if (response.ok) {
+            event.waitUntil(caches.open('an-study-workspaces-v1').then(cache => cache.put(request, response.clone())));
+          }
+          return response;
+        }).catch(async () => {
+          const cached = await caches.match(request, {ignoreSearch:true});
+          return cached || caches.match('/index.html');
+        })
+      );
+      return;
+    }
     if(isN3Vocabulary && isHtml){
       event.respondWith(
         fetch(request, {cache:'no-store'})
