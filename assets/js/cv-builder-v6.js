@@ -20,7 +20,6 @@
   function saveNow(){try{save();}catch(_){}}
   function seedDefaults(){
     if(state.cvV6Seeded) return;
-    for(const [key,value] of Object.entries(DEFAULTS)) if(!String(state[key]||'').trim()) state[key]=value;
     state.outputFormat=state.outputFormat||'a4-2';
     state.cvV6Seeded=true;
     for(const key of Object.keys(DEFAULTS)){const el=E(key);if(el&&!el.value)el.value=state[key]||'';}
@@ -31,16 +30,16 @@
     const el=E(id);if(!el)return;
     const field=el.closest('.field');if(!field||field.querySelector(`.cv-v6-guide[data-guide="${id}"]`))return;
     const icon=type==='default'?'fa-wand-magic-sparkles':'fa-pen';
-    const reset=type==='default'?`<button type="button" class="cv-default-reset" data-reset-default="${id}">ডিফল্ট ফিরিয়ে আনুন</button>`:'';
+    const reset=type==='default'?`<button type="button" class="cv-default-reset" data-reset-default="${id}">নমুনা ব্যবহার করুন</button>`:'';
     el.insertAdjacentHTML('beforebegin',`<div class="cv-v6-guide ${type}" data-guide="${id}"><i class="fa-solid ${icon}"></i><span>${text}${reset}</span></div>`);
   }
 
   function mountGuides(){
     ['name','furigana','dob','nationality','phone','email','address','addressKana','visa','schoolTime','availability','summary','skills'].forEach(id=>addGuide(id,'user','এই তথ্যটি আপনার নিজের—নিজে লিখুন/যাচাই করুন।'));
-    addGuide('motive','default','ভালো একটি Japanese বাক্য ডিফল্ট রাখা আছে। আপনার সঙ্গে সত্যিই মিললে রাখুন, না হলে পরিবর্তন করুন।');
-    addGuide('strengths','default','“আপনার প্রধান শক্তি”র একটি ভালো ডিফল্ট উদাহরণ রাখা আছে। সত্যি হলে রাখুন, প্রয়োজনমতো সম্পাদনা করুন।');
-    addGuide('selfpr','default','自己PR-এর ভালো ডিফল্ট বাক্য রাখা আছে। নিজের বাস্তব অভিজ্ঞতা যোগ করলে আরও শক্তিশালী হবে।');
-    addGuide('request','default','বিশেষ অনুরোধ না থাকলে Japanese CV-তে ব্যবহৃত সাধারণ বাক্যটি ডিফল্ট রাখা আছে।');
+    addGuide('motive','default','Japanese নমুনা থেকে লিখতে পারেন। নিজের কাজ ও অভিজ্ঞতা অনুযায়ী সম্পাদনা করুন।');
+    addGuide('strengths','default','দক্ষতা ও শখ লিখুন। নমুনা নিজের সঙ্গে মিলিয়ে ব্যবহার করুন।');
+    addGuide('selfpr','default','নমুনার সঙ্গে নিজের বাস্তব অভিজ্ঞতার উদাহরণ যোগ করুন।');
+    addGuide('request','default','বিশেষ অনুরোধ না থাকলে সাধারণ Japanese বাক্যটি ব্যবহার করতে পারেন।');
     document.querySelectorAll('[data-reset-default]').forEach(btn=>btn.addEventListener('click',()=>{
       const id=btn.dataset.resetDefault;if(!DEFAULTS[id]||!E(id))return;
       E(id).value=DEFAULTS[id];state[id]=DEFAULTS[id];saveNow();render();
@@ -148,7 +147,7 @@
   const basePrintDoc=printDoc;
   printDoc=function(kind){
     if(kind==='career'){cleanupPrint();basePrintDoc(kind);return;}
-    state.created=tokyoToday();saveNow();render();
+    saveNow();render();
     const format=state.outputFormat||'a4-2';
     if(format==='a4-1'){
       if(compactTooLong()){alert('১ পৃষ্ঠায় সব তথ্য নিরাপদভাবে ধরছে না। কিছু তথ্য ছোট করুন অথবা A4 · 2 Pages বেছে নিন।');return;}
@@ -160,6 +159,7 @@
     cleanupPrint();basePrintDoc('rireki');
   };
   window.addEventListener('afterprint',cleanupPrint);
+  window.refreshCVFormat=()=>setFormat(state.outputFormat||'a4-2');
 
   seedDefaults();mountFormatPicker();mountGuides();mountPrintHub();buildCompact();
   document.querySelectorAll('[data-store]').forEach(a=>a.addEventListener('click',()=>{state.lastPrintProvider=a.dataset.store;saveNow();}));

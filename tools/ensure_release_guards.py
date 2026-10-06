@@ -13,7 +13,7 @@ MARKER = 'id="legacy-origin-redirect"'
 LEGACY_HOST = "sammir03-bot.github.io"
 PRODUCTION_ORIGIN = "https://app.aponar-nihon.workers.dev"
 ACTIVITY_VERSION = "20260911.4"
-CV_ASSET_VERSION = "20260912.1"
+CV_ASSET_VERSION = "20261007.cv7"
 CV_CSS = f'<link rel="stylesheet" href="/assets/css/cv-builder-v6.css?v={CV_ASSET_VERSION}">'
 CV_JS = f'<script defer src="/assets/js/cv-builder-v6.js?v={CV_ASSET_VERSION}"></script>'
 REV_ASSET_VERSION = "20260912.1"
