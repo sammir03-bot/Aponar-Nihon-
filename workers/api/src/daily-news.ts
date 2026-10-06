@@ -13,7 +13,7 @@ type Article = {
 type State = {articles: Article[]; last_checked: number; last_success: number; last_error: string; learning_checked?: number; learning_error?: string; learning_version?: string};
 const RSS = "https://www.nhk.or.jp/rss/news/cat0.xml";
 const INTERVAL = 3 * 60 * 60 * 1000;
-const LEARNING_VERSION = "20261007.news7";
+const LEARNING_VERSION = "20261007.news8";
 const NOTE = "NHK-এর মূল শিরোনাম, উন্মুক্ত IPADIC অভিধানের ফুরিগানা ও যাচাই করা বাংলা শব্দার্থ দিয়ে তৈরি পাঠ। পর্যালোচিত বাংলা সারাংশ পাওয়া গেলে দেখানো হয়। পুরো খবর ও সর্বশেষ তথ্য মূল উৎসে পড়ুন।";
 const record = (v: unknown): Obj => v && typeof v === "object" && !Array.isArray(v) ? v as Obj : {};
 const plain = (v: unknown, max = 500): string => typeof v === "string" ? v.replace(/<[^>]*>/g, "").replace(/\s+/g, " ").trim().slice(0, max) : "";
@@ -95,7 +95,7 @@ function validateNewsLearning(article: Article, value: unknown): {article: Artic
     const row = record(item);
     return {word: plain(row.word, 50), reading: plain(row.reading, 70), meaning_bn: plain(row.meaning_bn, 100)};
   }).filter(item => item.word && item.reading && bn(item.meaning_bn) && (article.headline + summary.map(t => t.t).join("")).includes(item.word)) : [];
-  const issue = !Object.keys(v).length ? "missing_card" : headline.map(t => t.t).join("") !== article.headline ? "headline_mismatch" : !summary.length ? "summary_missing" : !bn(teaser) || !explanation.length ? "bengali_missing" : vocabulary.length < 3 ? "vocabulary_missing" : [...headline, ...summary].some(t => /[\u3400-\u9fff]/.test(t.t) && !t.r) ? "reading_missing" : "";
+  const issue = !Object.keys(v).length ? "missing_card" : headline.map(t => t.t).join("") !== article.headline ? "headline_mismatch" : !summary.length ? "summary_missing" : !bn(teaser) || !explanation.length ? "bengali_missing" : vocabulary.length < 1 ? "vocabulary_missing" : [...headline, ...summary].some(t => /[\u3400-\u9fff]/.test(t.t) && !t.r) ? "reading_missing" : "";
   if (issue) return {article, issue};
   const result = {...article, headline_tokens: headline, teaser_bn: teaser, japanese: [summary], explanation_bn: explanation, vocabulary, learning_status: "ready" as const};
   delete result.source_excerpt;
@@ -159,7 +159,7 @@ export class DailyNewsFeed extends DurableObject<Env> {
     return this.refreshing;
   }
   private async enrich(saved: State): Promise<State> {
-    const pending = saved.articles.filter(a => a.learning_status !== "ready" || a.reading_version !== LEARNING_VERSION).slice(0, 3);
+    const pending = saved.articles.filter(a => a.learning_status !== "ready" || a.reading_version !== LEARNING_VERSION).slice(0, 6);
     if (!pending.length || (saved.learning_version === LEARNING_VERSION && Date.now() - (saved.learning_checked || 0) < 15 * 60000)) return saved;
     saved.learning_version = LEARNING_VERSION;
     saved.learning_checked = Date.now();

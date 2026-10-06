@@ -15,8 +15,8 @@ summaries. The reader selects up to five non-overlapping compounds in source
 order. A reviewed summary is shown only when the complete headline matches;
 otherwise it explicitly provides a reading guide, not a full Bengali translation.
 No model or machine translation supplies names, quantities, meanings or facts.
-Missing dictionary readings or fewer than three reviewed vocabulary items leave
-the source-backed card pending. Successful siblings remain available. Source IDs,
+Missing dictionary readings or no reviewed vocabulary items leave
+the source-backed card pending. Even one reviewed word permits a reading guide. Successful siblings remain available. Source IDs,
 links and dates always come from RSS.
 
 `tools/content/build-news-readings.py` creates a 1.9 MB compressed lexicon with
@@ -27,7 +27,7 @@ table checksum and limits decompressed data to 8 MiB. Visitors do not download
 the dictionary. Polyphonic names should still be checked against the source.
 
 `reading_version` retires earlier generated readings. A generator change permits
-one immediate retry; the persistent 15-minute language retry window then bounds
+one immediate retry for up to six cards; the persistent 15-minute language retry window then bounds
 requests independently of the three-hour source interval. Only short non-secret
 status codes appear in diagnostics. Older curated articles remain unchanged.
 
