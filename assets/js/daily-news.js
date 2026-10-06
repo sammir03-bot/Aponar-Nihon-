@@ -2,8 +2,11 @@
   "use strict";
 
   var DATA_URL = "/assets/data/daily-news.json";
+  var LIVE_URL = "/api/public/news";
+  var NEWS_CACHE_KEY = "aponarDailyNewsLiveV1";
   var FURIGANA_KEY = "aponarNihonFurigana";
   var dataPromise = null;
+  var loadedAt = 0;
 
   function escapeHtml(value) {
     return String(value == null ? "" : value)
@@ -16,22 +19,41 @@
 
   function loadData() {
     if (!dataPromise) {
-      dataPromise = fetch(DATA_URL, { cache: "no-store" })
-        .then(function (response) {
-          if (!response.ok) throw new Error("Daily news data could not be loaded");
-          return response.json();
-        })
-        .then(function (data) {
-          var safeData = data && typeof data === "object" ? data : {};
-          var articles = Array.isArray(safeData.articles) ? safeData.articles.slice() : [];
+      loadedAt = Date.now();
+      var controller = new AbortController();
+      var timer = setTimeout(function () { controller.abort(); }, 42000);
+      var archiveRequest = fetch(DATA_URL, {cache: "no-store"}).then(function (response) {
+        if (!response.ok) throw new Error("archive");
+        return response.json();
+      }).catch(function () { return {articles: []}; });
+      var liveRequest = fetch(LIVE_URL, {cache: "no-store", signal: controller.signal}).then(function (response) {
+        if (!response.ok) throw new Error("live");
+        return response.json();
+      }).then(function (data) {
+        if (!data || !data.ok || !Array.isArray(data.articles)) throw new Error("live");
+        try { localStorage.setItem(NEWS_CACHE_KEY, JSON.stringify(data)); } catch (_error) { /* Caching is optional. */ }
+        return data;
+      }).catch(function () {
+        var cached = {};
+        try { cached = JSON.parse(localStorage.getItem(NEWS_CACHE_KEY) || "{}"); } catch (_error) { /* Use the bundled archive. */ }
+        return Object.assign({}, cached, {update_status: "saved"});
+      }).finally(function () { clearTimeout(timer); });
+      dataPromise = Promise.all([archiveRequest, liveRequest]).then(function (responses) {
+          var archive = responses[0] || {}, live = responses[1] || {};
+          var safeData = Object.assign({}, archive, {update_status: live.update_status || "saved", checked_at: live.checked_at, refresh_interval_hours: live.refresh_interval_hours});
+          var byId = new Map();
+          (Array.isArray(archive.articles) ? archive.articles : []).forEach(function (a) { if (a && a.id) byId.set(a.id, a); });
+          (Array.isArray(live.articles) ? live.articles : []).forEach(function (a) { if (a && a.id) byId.set(a.id, Object.assign({}, a, {editorial_note_bn: live.editorial_note_bn})); });
+          var articles = Array.from(byId.values());
           articles.sort(function (a, b) {
             return String(b.date || "").localeCompare(String(a.date || "")) ||
               String(b.source && b.source.published_at || "").localeCompare(String(a.source && a.source.published_at || "")) ||
               String(b.id || "").localeCompare(String(a.id || ""));
           });
           safeData.articles = articles;
+          if (!articles.length) throw new Error("No news available");
           return safeData;
-        });
+        }).catch(function (error) { dataPromise = null; throw error; });
     }
     return dataPromise;
   }
@@ -139,6 +161,14 @@
     return dateString === tokyoToday() ? "আজকের নিউজ আপডেট হয়েছে" : "সর্বশেষ আপডেট: " + formatDate(dateString);
   }
 
+  function syncText(data) {
+    if (data.update_status === "saved") return "সরাসরি আপডেট পাওয়া যায়নি; সংরক্ষিত খবর দেখানো হচ্ছে।";
+    if (data.update_status === "source_unavailable") return "সংবাদ উৎসে এখন সমস্যা হচ্ছে; সর্বশেষ সংরক্ষিত খবর দেখানো হচ্ছে।";
+    var checked = "";
+    try { if (data.checked_at) checked = new Intl.DateTimeFormat("bn-BD", {timeZone: "Asia/Tokyo", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"}).format(new Date(data.checked_at)); } catch (_error) { /* No date label. */ }
+    return "স্বয়ংক্রিয় আপডেট · প্রতি ৩ ঘণ্টায় উৎস যাচাই" + (checked ? " · সর্বশেষ যাচাই: " + checked + " JST" : "");
+  }
+
   function newsImage(article) {
     var image = article.image || {};
     if (!image.src || !/^\/assets\/img\/news\/[a-z0-9._-]+$/i.test(image.src)) return '';
@@ -149,7 +179,7 @@
     var isFirst = index === 0;
     var badge = isFirst ? (latestDate === tokyoToday() ? "আজকের প্রধান" : "সর্বশেষ") : "";
     return '<a class="daily-news-card' + (newsImage(article) ? ' has-news-photo' : '') + '" href="/daily-news-reader.html?id=' + encodeURIComponent(article.id) + '">' +
-      newsImage(article) + '<span class="news-art-label">' + escapeHtml(article.image && article.image.caption_bn || 'প্রতীকী চিত্র') + '</span>' +
+      newsImage(article) + (article.image ? '<span class="news-art-label">' + escapeHtml(article.image.caption_bn || 'প্রতীকী চিত্র') + '</span>' : '') +
       '<div>' +
         '<div class="daily-news-meta">' +
           (badge ? '<span class="daily-news-badge">' + badge + '</span>' : '') +
@@ -207,7 +237,7 @@
       var latest = all.filter(function (article) { return article.date === latestDate; }).slice(0, 3);
       if (!latest.length) latest = all.slice(0, 3);
       list.innerHTML = latest.map(function (article, index) { return homeCard(article, index, latestDate); }).join("");
-      if (freshness) freshness.innerHTML = '<i class="fa-solid fa-circle" aria-hidden="true"></i> ' + escapeHtml(freshnessText(latestDate));
+      if (freshness) freshness.innerHTML = '<i class="fa-solid fa-circle" aria-hidden="true"></i> ' + escapeHtml(freshnessText(latestDate)) + ' · ' + escapeHtml(syncText(data));
     }).catch(function () {
       list.innerHTML = '<div class="daily-news-state">নিউজ লোড করা যায়নি। একটু পরে আবার চেষ্টা করুন।</div>';
       if (freshness) freshness.textContent = "আপডেট পাওয়া যায়নি";
@@ -266,7 +296,8 @@
     toolbar.innerHTML =
       '<button class="news-filter-chip" type="button" data-news-filter="all" aria-pressed="true">সব নিউজ</button>' +
       '<button class="news-filter-chip" type="button" data-news-filter="latest" aria-pressed="false">সর্বশেষ দিন</button>' +
-      '<button class="news-filter-chip" type="button" data-news-filter="previous" aria-pressed="false">আগের দিন</button>';
+      '<button class="news-filter-chip" type="button" data-news-filter="previous" aria-pressed="false">আগের দিন</button>' +
+      '<button class="news-filter-chip" type="button" data-news-refresh>↻ আপডেট দেখুন</button>';
     list.parentNode.insertBefore(toolbar, list);
     return toolbar;
   }
@@ -281,6 +312,16 @@
       var articles = data.articles || [];
       var dates = uniqueDates(articles);
       var toolbar = ensureArchiveToolbar(list);
+      var sync = document.querySelector("[data-news-sync]");
+      if (!sync) {
+        sync = document.createElement("p"); sync.className = "daily-news-freshness";
+        sync.setAttribute("data-news-sync", "");
+        toolbar.parentNode.insertBefore(sync, toolbar);
+      }
+      sync.textContent = syncText(data);
+      var refresh = toolbar.querySelector("[data-news-refresh]");
+      refresh.disabled = false;
+      refresh.onclick = function () { refresh.disabled = true; refreshNews(); };
 
       function applyFilter(filter) {
         var visible = articles;
@@ -302,9 +343,7 @@
 
       toolbar.hidden = false;
       toolbar.querySelectorAll("[data-news-filter]").forEach(function (button) {
-        if (button.dataset.bound === "1") return;
-        button.dataset.bound = "1";
-        button.addEventListener("click", function () { applyFilter(button.dataset.newsFilter || "all"); });
+        button.onclick = function () { applyFilter(button.dataset.newsFilter || "all"); };
       });
       applyFilter("all");
     }).catch(function () {
@@ -399,7 +438,7 @@
         newer: index > 0 ? articles[index - 1] : null,
         older: index < articles.length - 1 ? articles[index + 1] : null
       };
-      root.innerHTML = readerArticle(article, data.editorial_note_bn, navigation);
+      root.innerHTML = readerArticle(article, article.editorial_note_bn || data.editorial_note_bn, navigation);
       document.title = article.headline + " | আপনার নিহোন";
       var description = document.querySelector('meta[name="description"]');
       if (description && article.teaser_bn) description.setAttribute("content", article.teaser_bn);
@@ -416,12 +455,24 @@
     if (page === "daily-news-reader") renderReader();
   }
 
+  function refreshNews() {
+    dataPromise = null;
+    initPage();
+  }
+  document.addEventListener("visibilitychange", function () {
+    if (!document.hidden && Date.now() - loadedAt > 15 * 60000) refreshNews();
+  });
+  setInterval(function () {
+    if (!document.hidden && Date.now() - loadedAt > 15 * 60000) refreshNews();
+  }, 15 * 60000);
+
   window.AponarDailyNews = {
     mountHome: mountHome,
     renderHome: renderHome,
     renderArchive: renderArchive,
     renderReader: renderReader,
     initPage: initPage,
+    refresh: refreshNews,
     applyFuriganaPreference: applyFuriganaPreference
   };
 

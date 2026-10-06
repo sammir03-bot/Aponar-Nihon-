@@ -328,7 +328,7 @@
 
     if (document.querySelector('script[data-daily-news-script]')) return;
     var script = document.createElement("script");
-    script.src = "/assets/js/daily-news.js?v=20260904.1";
+    script.src = "/assets/js/daily-news.js?v=20261007.news2";
     script.async = true;
     script.dataset.dailyNewsScript = "true";
     script.addEventListener("load", mount, { once: true });

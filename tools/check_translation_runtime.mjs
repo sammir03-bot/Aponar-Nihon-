@@ -5,7 +5,9 @@ import { stripTypeScriptTypes } from 'node:module';
 
 // This VM exercises translation helpers, not the unrelated public-data routes.
 const worker = fs.readFileSync('workers/api/src/index.ts', 'utf8')
-  .replace(/^import \{ handlePublicData \} from "\.\/public-data";\s*/m, '');
+  .replace(/^import \{ handlePublicData \} from "\.\/public-data";\s*/m, '')
+  .replace(/^import \{ newsFeed \} from "\.\/daily-news";\s*/m, '')
+  .replace(/^export \{ DailyNewsFeed \} from "\.\/daily-news";\s*/m, '');
 const context = vm.createContext({ Request, Response, TextDecoder, TextEncoder, URL, console });
 vm.runInContext(stripTypeScriptTypes(worker.slice(0, worker.indexOf('export default {')))
   + ';this.check={parseTranslationRequest,parseTranslationModelOutput};', context);

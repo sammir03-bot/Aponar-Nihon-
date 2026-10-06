@@ -1,4 +1,6 @@
 import { handlePublicData } from "./public-data";
+import { newsFeed } from "./daily-news";
+export { DailyNewsFeed } from "./daily-news";
 
 type JsonRecord = Record<string, unknown>;
 
@@ -1195,6 +1197,10 @@ async function handleTutor(
 }
 
 export default {
+  async scheduled(_controller: ScheduledController, env: Env): Promise<void> {
+    const result = await newsFeed(env).fetch("https://daily-news.internal/refresh", {method: "POST"});
+    if (!result.ok) throw new Error("Daily news refresh failed");
+  },
   async fetch(request: Request, env: Env): Promise<Response> {
     const requestOrigin = new URL(request.url).origin;
     const origin = allowedOrigin(request, env);
@@ -1214,7 +1220,9 @@ export default {
         if (env.PUBLIC_DATA_RATE_LIMITER && !(await env.PUBLIC_DATA_RATE_LIMITER.limit({key: request.headers.get("cf-connecting-ip") || "local"})).success) {
           return json({ok: false, error: "rate_limited"}, 429, origin);
         }
-        const result = await handlePublicData(request);
+        const result = request.method === "GET" && url.pathname === "/api/public/news"
+          ? await newsFeed(env).fetch("https://daily-news.internal/feed")
+          : await handlePublicData(request);
         result.headers.set("access-control-allow-origin", origin);
         result.headers.set("vary", "Origin");
         return result;

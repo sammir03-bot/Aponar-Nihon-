@@ -1,4 +1,4 @@
-/* Aponar Nihon service-worker wrapper — app shell v38 — revalidate study workspaces.
+/* Aponar Nihon service-worker wrapper — app shell v39 — revalidate quizzes and news.
    The dashboard, dedicated section hubs and AI Tutor assets are available
    offline after install, while updated learning pages stay network-first. */
 
@@ -58,6 +58,15 @@ __anNativeAddEventListener('fetch', event => {
       })));
       return;
     }
+    if (url.origin === self.location.origin &&
+        (url.pathname === '/assets/data/daily-news.json' || url.pathname.startsWith('/assets/data/quiz/') ||
+         ['/assets/js/daily-news.js', '/assets/js/app-shell.js', '/assets/js/learning-hub-pro.js'].includes(url.pathname))) {
+      event.respondWith(fetch(request, {cache:'no-store'}).then(response => {
+        if (response.ok) event.waitUntil(caches.open('an-current-content-v1').then(cache => cache.put(request, response.clone())));
+        return response;
+      }).catch(async () => (await caches.match(request)) || new Response('', {status:503})));
+      return;
+    }
     const isN3Vocabulary = url.origin === self.location.origin &&
       (url.pathname === '/n3-vocabulary.html' || url.pathname === '/n3-vocabulary');
     const isN3Grammar = url.origin === self.location.origin &&
@@ -67,7 +76,7 @@ __anNativeAddEventListener('fetch', event => {
     const isHtml = request.mode === 'navigate' || (request.headers.get('accept') || '').includes('text/html');
     const studyPath = decodeURIComponent(url.pathname).replace(/\.html$/, '').replace(/\/$/, '');
     const isStudyPage = url.origin === self.location.origin &&
-      ['/interview', '/part-time-interview', '/skype sheet', '/embassy-interview', '/listening-lab', '/jlpt-revision', '/halal-scanner', '/muslim-japan'].includes(studyPath);
+      ['/quiz', '/jlpt-quiz', '/daily-news', '/daily-news-reader', '/interview', '/part-time-interview', '/skype sheet', '/embassy-interview', '/listening-lab', '/jlpt-revision', '/halal-scanner', '/muslim-japan'].includes(studyPath);
     if (isStudyPage && isHtml) {
       event.respondWith(
         fetch(request, {cache:'no-store'}).then(response => {

@@ -1,30 +1,29 @@
 import fs from 'node:fs';
-import vm from 'node:vm';
 import assert from 'node:assert/strict';
-const html = fs.readFileSync('jlpt-quiz.html', 'utf8');
-const source = html.slice(html.indexOf("const $=s=>"), html.indexOf('const stateKey='));
-const context = vm.createContext({URLSearchParams,location:{search:''},localStorage:{getItem:()=>null},document:{querySelector:()=>null}});
-vm.runInContext(source + ';this.inspect=(l,c,p)=>{level=l;category=c;part=p;return qs()};this.vocabulary=V;',context);
-let count = 0;
+
+let sets = 0, questions = 0;
 for (const level of ['n5','n4','n3']) {
- for (const category of level==='n3'?['reading']:['vocabulary','kanji','grammar','reading']) {
-  for (let part=1;part<=10;part++) {
-   for (const q of context.inspect(level,category,part)) {
-    assert.equal(q.opts.length,4,`${level}/${category}/${part}: four choices`);
-    assert.equal(new Set(q.opts).size,4,`${level}/${category}/${part}: unique choices`);
-    assert.ok(Number.isInteger(q.ans)&&q.ans>=0&&q.ans<4);
-    assert.ok(q.exp.trim());
-    count++;
-   }
+  const bank = JSON.parse(fs.readFileSync(`assets/data/quiz/${level}.json`, 'utf8'));
+  const source = new Map(JSON.parse(fs.readFileSync(`assets/data/study/questions-${level}.json`, 'utf8')).questions.map(q => [q.id, q]));
+  assert.equal(bank.version, '20261007.quiz2');
+  for (const category of ['vocabulary', 'kanji', 'grammar', 'reading']) {
+    assert.equal(bank.categories[category].length, 10);
+    const seen = new Set();
+    for (const rows of bank.categories[category]) {
+      assert.ok(rows.length >= 3 && rows.length <= 8); sets++;
+      for (const q of rows) {
+        assert.ok(!seen.has(q.id), `${level}/${category}: parts must not reuse questions`); seen.add(q.id);
+        assert.equal(q.options.length, 4); assert.equal(new Set(q.options).size, 4);
+        assert.ok(Number.isInteger(q.answer) && q.answer >= 0 && q.answer < 4);
+        assert.match(q.answerBn, /[\u0980-\u09ff]/); assert.match(q.explanationBn, /[\u0980-\u09ff]/);
+        assert.ok(q.promptHtml);
+        assert.deepEqual(q.options, source.get(q.id).options, 'Keep the reviewed source choices');
+        assert.equal(q.answer, source.get(q.id).answer); assert.equal(q.explanationBn, source.get(q.id).explanationBn);
+        if (category === 'reading') assert.ok(q.passageHtml);
+        questions++;
+      }
+    }
   }
- }
 }
-const expected = {'拾う':'拾い','迎える':'迎え','遅れる':'遅れ','急ぐ':'急いで'};
-for (const [lemma,form] of Object.entries(expected)) {
- const entry=context.vocabulary.n4.find(e=>e[0]===lemma);
- assert.equal(entry[4],form,`Inflection for ${lemma}`);
-}
-const pickup=context.inspect('n4','vocabulary',1)[5];
-assert.equal(pickup.opts[pickup.ans],'拾い');
-assert.match(pickup.exp,/拾いました/);
-console.log(`Quiz audit passed: ${count} generated questions across 90 sets; four inflection regressions.`);
+assert.equal(sets, 120);
+console.log(`Quiz audit passed: ${questions} reviewed questions across 120 distinct practice sets, all levels/categories, Bengali answers and source-key integrity.`);

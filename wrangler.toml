@@ -4,6 +4,17 @@ compatibility_date = "2026-08-28"
 compatibility_flags = [ "nodejs_compat" ]
 workers_dev = true
 
+[triggers]
+crons = [ "23 */3 * * *" ]
+
+[[durable_objects.bindings]]
+name = "DAILY_NEWS"
+class_name = "DailyNewsFeed"
+
+[exports.DailyNewsFeed]
+type = "durable-object"
+storage = "sqlite"
+
 [assets]
 directory = "./_site"
 binding = "ASSETS"
