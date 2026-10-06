@@ -1,21 +1,23 @@
 type Obj = Record<string, unknown>;
 type Token = {t: string; r?: string};
-type Translator = (text: string) => Promise<string>;
 type SourceArticle = {id: string; headline: string};
 type Lexicon = Map<string, string>;
+type Vocabulary = {word: string; reading: string; meaning_bn: string};
+type Lessons = {terms: Vocabulary[]; headlines: Map<string, string>};
 const KANJI = /[\u3400-\u9fff]/;
 const TABLE_SHA = '7985075cafbd7fbfc43808c7491787661a868312e96825b827f008acfa48b8d3';
 let dictionary: Promise<Lexicon> | undefined;
+let lessons: Promise<Lessons> | undefined;
 const record = (v: unknown): Obj => v && typeof v === 'object' && !Array.isArray(v) ? v as Obj : {};
 
-async function boundedBytes(stream: ReadableStream<Uint8Array>) {
+async function boundedBytes(stream: ReadableStream<Uint8Array>, max = 8 * 1024 * 1024) {
   const reader = stream.getReader(), chunks: Uint8Array[] = [];
   let size = 0;
   while (true) {
     const {done, value} = await reader.read();
     if (done) break;
     size += value.byteLength;
-    if (size > 8 * 1024 * 1024) {await reader.cancel(); throw new Error('news_learning_readings_too_large');}
+    if (size > max) {await reader.cancel(); throw new Error('news_learning_readings_too_large');}
     chunks.push(value);
   }
   const data = new Uint8Array(size);
@@ -77,39 +79,58 @@ export function headlineReadings(headline: string, table: Lexicon): Token[] {
   return result;
 }
 
-function bengaliTranslator(env: Env): Translator {
-  const cache = new Map<string, Promise<string>>(), waiting: (() => void)[] = [];
-  let active = 0;
-  return (text: string) => {
-    if (cache.has(text)) return cache.get(text)!;
-    const promise = (async () => {
-      if (active < 4) active++; else await new Promise<void>(resolve => waiting.push(resolve));
-      try {
-        const output = record(await env.AI.run('@cf/meta/m2m100-1.2b', {text, source_lang: 'ja', target_lang: 'bn'}, {signal: AbortSignal.timeout(15000)}));
-        const translated = typeof output.translated_text === 'string' ? output.translated_text.replace(/<[^>]*>/g, '').trim().slice(0, 500) : '';
-        return /[\u0980-\u09ff]/.test(translated) ? translated : '';
-      } catch {return '';}
-      finally {const next = waiting.shift(); if (next) next(); else active--;}
-    })();
-    cache.set(text, promise);
-    return promise;
-  };
+async function loadLessons(env: Env): Promise<Lessons> {
+  if (lessons) return lessons;
+  lessons = (async () => {
+    const response = await env.ASSETS.fetch(new Request('https://app.aponar-nihon.workers.dev/assets/data/news-source-lessons.json', {signal: AbortSignal.timeout(10000)}));
+    if (!response.ok || !response.body) throw new Error('news_learning_glossary_unavailable');
+    const data = record(JSON.parse(new TextDecoder().decode(await boundedBytes(response.body, 200000))));
+    if (data.version !== 1) throw new Error('news_learning_glossary_invalid');
+    const terms: Vocabulary[] = [];
+    for (const [word, value] of Object.entries(record(data.terms))) {
+      const row = record(value);
+      if (word.length > 1 && word.length <= 50 && typeof row.reading === 'string' && /^[\u3040-\u30ff\sー・]+$/.test(row.reading) && row.reading.length <= 70 &&
+        typeof row.meaning_bn === 'string' && /[\u0980-\u09ff]/.test(row.meaning_bn) && row.meaning_bn.length <= 100 && !/[<>]/.test(word + row.meaning_bn)) {
+        terms.push({word, reading: row.reading, meaning_bn: row.meaning_bn});
+      }
+    }
+    if (terms.length < 3) throw new Error('news_learning_glossary_invalid');
+    const headlines = new Map<string, string>();
+    for (const [headline, value] of Object.entries(record(data.headlines))) {
+      if (headline && headline.length <= 300 && typeof value === 'string' && value.length <= 280 && /[\u0980-\u09ff]/.test(value) && !/[<>]/.test(headline + value)) headlines.set(headline, value);
+    }
+    return {terms: terms.sort((a, b) => b.word.length - a.word.length), headlines};
+  })().catch(error => {lessons = undefined; throw error;});
+  return lessons;
+}
+
+function vocabularyIn(headline: string, terms: Vocabulary[]): Vocabulary[] {
+  const found: Vocabulary[] = [], seen = new Set<string>();
+  // Prefer a reviewed compound to overlapping fragments, then keep source order.
+  for (let cursor = 0; cursor < headline.length && found.length < 5;) {
+    const term = terms.find(row => headline.startsWith(row.word, cursor));
+    if (term) {
+      if (!seen.has(term.word)) {found.push(term); seen.add(term.word);}
+      cursor += term.word.length;
+    } else cursor += String.fromCodePoint(headline.codePointAt(cursor)!).length;
+  }
+  return found;
 }
 
 export async function sourceNewsLessons(env: Env, articles: SourceArticle[]): Promise<Map<string, unknown>> {
-  const table = await loadReadings(env), translate = bengaliTranslator(env);
-  const rows = await Promise.all(articles.map(async article => {
+  const [table, reviewed] = await Promise.all([loadReadings(env), loadLessons(env)]);
+  return new Map(articles.map(article => {
     const headline = headlineReadings(article.headline, table);
-    // Missing dictionary readings remain pending rather than guessing a name.
+    // Missing dictionary readings or reviewed meanings leave source cards pending.
     if (headline.some(token => KANJI.test(token.t) && !token.r)) return [article.id, {}] as const;
-    const words = [...new Map(headline.filter(token => token.r && token.t.length > 1).map(token => [token.t, token])).values()].slice(0, 5);
-    const [translation, meanings] = await Promise.all([translate(article.headline), Promise.all(words.map(token => translate(token.t)))]);
+    const summary = reviewed.headlines.get(article.headline);
+    const guide = 'এই পাঠে মূল জাপানি শিরোনাম, ফুরিগানা ও নির্বাচিত শব্দের বাংলা অর্থ দেওয়া আছে। বিস্তারিত ও সর্বশেষ খবর নিচের NHK লিংকে পড়ুন।';
     return [article.id, {
       id: article.id, headline_tokens: headline,
       summary_tokens: [{t: '「'}, ...headline, {t: '」というニュースです。'}],
-      teaser_bn: translation, explanation_bn: [translation, 'পাঠটি মূল সংবাদ শিরোনামের অনুবাদ। বিস্তারিত ও সর্বশেষ তথ্য নিচের NHK লিংকে পড়ুন।'],
-      vocabulary: words.map((token, index) => ({word: token.t, reading: token.r, meaning_bn: meanings[index]}))
+      teaser_bn: summary || 'নতুন NHK সংবাদ—ফুরিগানা ও বাংলা শব্দার্থসহ শিরোনাম পড়ুন।',
+      explanation_bn: summary ? [summary, guide] : [guide, 'খবরটির সম্পূর্ণ বাংলা অনুবাদ এখানে দেওয়া হয়নি।'],
+      vocabulary: vocabularyIn(article.headline, reviewed.terms)
     }] as const;
   }));
-  return new Map(rows);
 }
