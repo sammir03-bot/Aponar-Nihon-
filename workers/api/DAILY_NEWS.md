@@ -27,8 +27,8 @@ timestamp bounds retries across requests; `learning_error` exposes only a short
 non-secret status code for diagnostics.
 
 Gemini REST uses the uppercase `MINIMAL` thinking enum. If it fails or leaves
-invalid cards, one bounded fallback request uses the existing Workers AI
-`@cf/openai/gpt-oss-120b` binding with JSON output. The same content validation
+invalid cards, one bounded fallback request per card uses the existing Workers AI
+`@cf/zai-org/glm-4.7-flash` multilingual binding with JSON output. The same content validation
 applies to both providers. Valid primary cards survive a fallback outage.
 `learning_version` allows one immediate retry after a generator fix, then
 restores the shared 15-minute backoff. Each provider has a 25-second timeout.
@@ -40,3 +40,9 @@ returning to the page, and offers an archive refresh button.
 Verify with `node tools/check_daily_news.mjs`, `npm run verify`, the news browser
 tests and `wrangler deploy --dry-run`. For a source/model incident, filter
 Worker logs for `daily_news_refresh_failed` or `news_learning_unavailable`.
+
+Cards are generated independently, with at most three concurrent card jobs.
+Each JSON schema pins one exact article ID. Token instructions preserve spaces
+and separate digits/Latin names from kana readings. Validation diagnostics
+identify missing cards, headline mismatches, Bengali, vocabulary or readings
+without exposing raw model output. One failed card cannot block valid siblings.
