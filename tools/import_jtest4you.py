@@ -22,7 +22,7 @@ CACHE = Path('/tmp/aponar-jtest-cache')
 CACHE.mkdir(exist_ok=True)
 ORIGIN = 'https://japanesetest4you.com'
 ALLOWED_TAGS = {'p', 'br', 'b', 'strong', 'u', 'em', 'i', 'span', 'ruby', 'rt', 'table', 'tbody', 'tr', 'td', 'th', 'img', 'div', 'ul', 'li', 'ol', 'sup', 'sub'}
-VERSION = 8
+VERSION = 9
 READING_REVIEW = json.loads((ROOT / 'tools/content/jtest4you-reading-kinds.json').read_text())
 
 def fetch(url):

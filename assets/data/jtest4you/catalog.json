@@ -1,9 +1,9 @@
 {
-  "version": 8,
+  "version": 9,
   "levels": {
     "n5": {
-      "version": 8,
-      "availableSets": 4,
+      "version": 9,
+      "availableSets": 10,
       "limit": 10,
       "counts": [
         21,
@@ -32,8 +32,8 @@
       ]
     },
     "n4": {
-      "version": 8,
-      "availableSets": 2,
+      "version": 9,
+      "availableSets": 10,
       "limit": 10,
       "counts": [
         28,
@@ -62,8 +62,8 @@
       ]
     },
     "n3": {
-      "version": 8,
-      "availableSets": 2,
+      "version": 9,
+      "availableSets": 10,
       "limit": 10,
       "counts": [
         35,
