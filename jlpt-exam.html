@@ -41,9 +41,9 @@
 </script>
 
 <link rel="canonical" href="https://app.aponar-nihon.workers.dev/jlpt-exam">
-<link rel="stylesheet" href="assets/css/mock-certificate.css?v=20261005.own">
-<link rel="stylesheet" href="assets/css/mock-fonts.css?v=20261005.own">
-<link rel="stylesheet" href="assets/css/mock-navigation.css?v=20261005.nav">
+<link rel="stylesheet" href="assets/css/mock-certificate.css?v=20261006.expanded">
+<link rel="stylesheet" href="assets/css/mock-fonts.css?v=20261006.expanded">
+<link rel="stylesheet" href="assets/css/mock-navigation.css?v=20261006.expanded">
 </head>
 <body>
 <main class="start-view" id="startView"><div class="start-shell"><div class="start-top"><a class="back-link" id="introBack" href="mock-test.html" aria-label="টেস্ট তালিকায় ফিরুন">←</a><div class="mini-brand"><span>日</span> আপনার নিহোন</div><span style="width:44px"></span></div><section class="start-card"><div class="start-hero" id="startHero"><span class="level-pill" id="levelPill">JLPT</span><h1 id="introTitle">Mock Test</h1><p>একটি করে প্রশ্ন দেখুন, নম্বর থেকে সরাসরি যান ও পরে দেখার চিহ্ন দিন। পরীক্ষার পরে বাংলা উত্তর, ব্যাখ্যা ও আপনার নামে PDF সনদ পাবেন।</p></div><div class="start-body"><div class="part-preview" id="partPreview"></div><div class="source-note"><strong id="sourceLabel">Reference:</strong> <span id="sourceText">JLPT structure</span></div><label class="candidate-field" for="candidateName">পরীক্ষার্থীর নাম<input id="candidateName" type="text" maxlength="80" autocomplete="name" placeholder="সনদের জন্য আপনার পুরো নাম"><small>পরীক্ষা শেষে সনদের নাম পরিবর্তন করতে পারবেন।</small></label><span class="section-label">পরীক্ষার সময় নির্বাচন</span><div class="mode-row"><label class="mode-option"><input type="radio" name="mode" value="full" checked><span id="realTimeLabel">Real Time</span></label><label class="mode-option"><input type="radio" name="mode" value="practice"><span>Practice · দ্রুত</span></label></div><div class="sound-row"><button type="button" id="soundCheckBtn">🔊 Sound Check</button><div class="sound-copy"><strong>লিসেনিংয়ের আগে শব্দ পরীক্ষা করুন</strong><small id="soundStatus">রেকর্ড করা অডিও শোনা গেলে প্রস্তুত</small></div></div><div class="start-actions"><button class="primary-button" type="button" id="startBtn">পরীক্ষা শুরু করুন →</button><button class="secondary-button hidden" type="button" id="resumeBtn">আগের জায়গা থেকে চালিয়ে যান</button><button class="danger-button hidden" type="button" id="restartBtn">নতুন করে শুরু করুন</button></div></div></section></div></main>
@@ -53,7 +53,7 @@
 <div class="sheet hidden" id="partSheet"><section class="sheet-card"><div class="complete-icon">✓</div><h2 id="sheetTitle">পার্ট সম্পন্ন</h2><p id="sheetText">এই পার্ট জমা হয়েছে। এখন আগের উত্তরে ফিরে যাওয়া যাবে না।</p><div class="complete-stats"><div class="complete-stat"><strong id="sheetAnswered">০/০</strong><span>উত্তর দেওয়া</span></div><div class="complete-stat"><strong id="sheetPart">১/৩</strong><span>পার্ট সম্পন্ন</span></div></div><div class="next-preview" id="nextPreview"></div><button class="primary-button" id="nextPartBtn" type="button" style="width:100%">পরবর্তী পার্ট শুরু করুন →</button></section></div>
 <main class="result-view hidden" id="resultView"><div class="result-shell"><div class="result-nav"><a class="back-link" id="resultBack" href="mock-test.html">←</a><strong>আপনার নিহোন · ফলাফল</strong><span style="width:44px"></span></div><section id="resultHero"></section><div class="score-grid" id="scoreGrid"></div><div class="result-actions"><button id="certificateBtn" class="primary-button" type="button">সনদ / PDF ডাউনলোড</button><a class="secondary-button" id="allTestsLink" href="mock-test.html">সব Mock Test</a><button class="secondary-button" type="button" onclick="window.print()">ফলাফল প্রিন্ট</button><a class="danger-button" id="retryLink" href="#">আবার পরীক্ষা দিন</a></div><div class="review-headline"><div><h2>উত্তর রিভিউ</h2><p>সঠিক উত্তর, বাংলা ব্যাখ্যা ও Listening transcript</p></div><div class="review-filter" id="reviewFilter"><button class="active" data-filter="all">সব</button><button data-filter="wrong">ভুল</button><button data-filter="correct">সঠিক</button></div></div><section class="review-list" id="reviewList"></section></div></main>
 <div class="toast" id="toast"></div>
-<script src="jlpt-level-generators.js?v=20261005.own"></script>
-<script defer src="assets/js/mock-certificate.js?v=20261005.own"></script>
-<script defer src="assets/js/jlpt-exam.js?v=20261005.nav"></script>
+<script src="jlpt-level-generators.js?v=20261006.expanded"></script>
+<script defer src="assets/js/mock-certificate.js?v=20261006.expanded"></script>
+<script defer src="assets/js/jlpt-exam.js?v=20261006.expanded"></script>
 </body></html>

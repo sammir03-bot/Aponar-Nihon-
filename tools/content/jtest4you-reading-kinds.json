@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-10-06",
+  "levels": {
+    "n5": {
+      "https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-n5-reading-exercise-09/": {
+        "3": {
+          "kind": "information",
+          "reason": "Public building rules: retrieve permitted and prohibited actions."
+        }
+      },
+      "https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-n5-reading-exercise-14/": {
+        "6": {
+          "kind": "information",
+          "reason": "Party notice: retrieve the required contact day."
+        }
+      }
+    },
+    "n4": {
+      "https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-n4-reading-exercise-10/": {
+        "1": {
+          "kind": "information",
+          "reason": "Sports-class notice: retrieve available classes and opening times."
+        },
+        "2": {
+          "kind": "information",
+          "reason": "Sports-class notice: retrieve available classes and opening times."
+        }
+      },
+      "https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-n4-reading-exercise-2/": {
+        "5": {
+          "kind": "information",
+          "reason": "Meeting-room booking guide: retrieve reservation requirements."
+        }
+      },
+      "https://japanesetest4you.com/n4-reading-exercise-21/": {
+        "1": {
+          "kind": "information",
+          "reason": "Factory-visit notice: retrieve the assembly time."
+        }
+      }
+    },
+    "n3": {
+      "https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-n3-reading-exercise-09/": {
+        "1": {
+          "kind": "long",
+          "reason": "Long explanatory Shinkansen passage; incidental mention of a timetable does not make it an information-retrieval notice."
+        },
+        "2": {
+          "kind": "long",
+          "reason": "Long explanatory Shinkansen passage; incidental mention of a timetable does not make it an information-retrieval notice."
+        },
+        "3": {
+          "kind": "long",
+          "reason": "Long explanatory Shinkansen passage; incidental mention of a timetable does not make it an information-retrieval notice."
+        },
+        "4": {
+          "kind": "long",
+          "reason": "Long explanatory Shinkansen passage; incidental mention of a timetable does not make it an information-retrieval notice."
+        }
+      },
+      "https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-n3-reading-exercise-1/": {
+        "4": {
+          "kind": "short",
+          "reason": "Short business email: infer the sender’s intention, not consult a guide."
+        }
+      },
+      "https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-n3-reading-exercise-11/": {
+        "2": {
+          "kind": "short",
+          "reason": "Short restaurant email: infer its purpose; the word reservation is not sufficient for information retrieval."
+        }
+      },
+      "https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-n3-reading-exercise-08/": {
+        "5": {
+          "kind": "mid",
+          "reason": "Cover letter: infer why it was sent; recruitment keywords do not make it a timetable or notice."
+        }
+      },
+      "https://japanesetest4you.com/japanese-language-proficiency-test-jlpt-n3-reading-exercise-07/": {
+        "4": {
+          "kind": "short",
+          "reason": "Short opinion passage, already excluded for an inconsistent source key; job-fair keywords do not establish information retrieval."
+        }
+      }
+    }
+  }
+}

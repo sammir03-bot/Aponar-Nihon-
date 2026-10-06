@@ -2,10 +2,10 @@
   'use strict';
   const bn=v=>String(v).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
   try{
-    const response=await fetch('/assets/data/jtest4you/catalog.json?v=20261005.own',{cache:'no-cache'});
+    const response=await fetch('/assets/data/jtest4you/catalog.json?v=20261006.expanded',{cache:'no-cache'});
     if(!response.ok)throw new Error('টেস্ট তালিকা লোড হয়নি');
     const catalog=await response.json();
-    if(catalog.version!==7)throw new Error('টেস্ট তালিকা আপডেট হচ্ছে');
+    if(catalog.version!==8)throw new Error('টেস্ট তালিকা আপডেট হচ্ছে');
     let results={};try{results=JSON.parse(localStorage.getItem('aponarNihonMockResults')||'{}')}catch{}
     let totalSets=0,totalTarget=0;
     for(const [level,c] of Object.entries(catalog.levels)){
@@ -15,7 +15,7 @@
       const facts=card.querySelectorAll('.fact');
       facts[0].lastChild.textContent=`${c.times.join(' + ')} = ${c.times.reduce((a,b)=>a+b,0)} মিনিট`;
       facts[1].lastChild.textContent=`${c.counts.join(' + ')} = ${c.counts.reduce((a,b)=>a+b,0)} প্রশ্ন`;
-      let done=0;for(let i=1;i<=c.availableSets;i++)if(results[level+'-'+i]?.bankVersion===7)done++;
+      let done=0;for(let i=1;i<=c.availableSets;i++)if(results[level+'-'+i]?.bankVersion===8)done++;
       document.getElementById(level+'txt').textContent=`${bn(done)} / ${bn(c.availableSets)}`;
       document.getElementById(level+'bar').style.width=(c.availableSets?done/c.availableSets*100:0)+'%';
     }

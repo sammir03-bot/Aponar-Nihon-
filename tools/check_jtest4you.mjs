@@ -9,7 +9,7 @@ const makeContext=fetch=>{
 };
 const context=makeContext(async url=>({ok:true,json:async()=>JSON.parse(fs.readFileSync('.'+url.split('?')[0],'utf8'))}));
 const catalog={
-  version:7,levels:{},
+  version:8,levels:{},
   officialTimeSource:'https://www.jlpt.jp/e/guideline/testsections.html',
   officialCountSource:'https://www.jlpt.jp/e/topics/202009091599642827.html',
   officialScoreSource:'https://www.jlpt.jp/e/guideline/results.html',
@@ -31,7 +31,7 @@ for(const level of ['n5','n4','n3']){
   const availability=context.window.JLPT_BANK_AVAILABILITY(level);
   assert.equal(availability.limit,10);assert.ok(availability.availableSets>0);
   const crossIds=new Set(),crossContent=new Set(),crossPassages=new Set();
-  const passageKey=q=>(q.passage||'').replace(/<[^>]*>/g,'').replace(/&(?:nbsp|#160);/g,' ').replace(/[\s　]+/g,'').normalize('NFKC');
+  const passageKey=q=>(q.passage||'').replace(/<[^>]*>/g,'').replace(/&(?:nbsp|#160);/g,' ').replace(/[\s　]+/g,'').normalize('NFKC')||Array.from((q.passage||'').matchAll(/<img\b[^>]*\bsrc="([^"]+)"/gi),m=>m[1]).sort().join('|');
   for(let test=1;test<=availability.availableSets;test++){
     const bank=context.window.JLPT_FULL_GENERATOR(level,test),all=[...bank.vocab,...bank.grammarReading,...bank.listening];
     assert.deepEqual(Array.from([bank.vocab.length,bank.grammarReading.length,bank.listening.length]),Array.from(bank.meta.counts));
@@ -77,7 +77,7 @@ for(const level of ['n5','n4','n3']){
     fixtureReview.levels[level][copy.id]={...reviews.levels[level][q.id]};
     return copy;
   })).flat();
-  const fixtureContext=makeContext(async url=>({ok:true,json:async()=>url.includes('bn-review')?fixtureReview:{version:7,level,questions}}));
+  const fixtureContext=makeContext(async url=>({ok:true,json:async()=>url.includes('bn-review')?fixtureReview:{version:8,level,questions}}));
   await fixtureContext.window.JLPT_LOAD_BANK(level);
   assert.equal(fixtureContext.window.JLPT_BANK_AVAILABILITY(level).availableSets,10);
   assert.ok(fixtureContext.window.JLPT_FULL_GENERATOR(level,10).vocab[0].id.endsWith('-fixture-9'));

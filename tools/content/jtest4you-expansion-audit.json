@@ -1,0 +1,147 @@
+{
+  "version": 1,
+  "reviewedOn": "2026-10-06",
+  "source": "https://japanesetest4you.com/",
+  "republicationRightsConfirmedOn": "2026-10-05",
+  "sourcePages": 400,
+  "originalQuestionCount": 3222,
+  "recoveredSourceQuestionIds": [
+    "jtest-fa0edf425963eb40",
+    "jtest-9f0ec86018a9e512",
+    "jtest-51ae8a5ec4fe611f",
+    "jtest-27518ba22b65fee0",
+    "jtest-d9e473a4bf2c5b0e",
+    "jtest-3decffeceb31f831",
+    "jtest-094ff1d2436e3699",
+    "jtest-b88bfe2c6fbe3a51",
+    "jtest-09e33e7f477fdee3",
+    "jtest-46496d61700ed042",
+    "jtest-209f170a8a46c75b",
+    "jtest-522ad590021bdc41",
+    "jtest-7363a08996d842e7",
+    "jtest-6f9ed1f041301d9e",
+    "jtest-d11eb0f28063cc79",
+    "jtest-59bd60676107b325",
+    "jtest-315eda70430dc91c",
+    "jtest-a9e211b764bad751",
+    "jtest-076aaf1ad47f7873",
+    "jtest-7365f8962d598f7f",
+    "jtest-3d73e971a9dfe630",
+    "jtest-ab30d62c5119de2d",
+    "jtest-fbb9a684c9132152",
+    "jtest-402689730ca66f94",
+    "jtest-450a9dba4c5dbadc",
+    "jtest-bc0445483636c7ac",
+    "jtest-4576cf5e4cfbb7f7",
+    "jtest-d89e2ba1c36b2eb5",
+    "jtest-4c9660d1a78c6dcd",
+    "jtest-3fffe44a42d755d2",
+    "jtest-a28154fddb70ba11",
+    "jtest-04717d5f71621fb8",
+    "jtest-0eb195933c21e457",
+    "jtest-922fa44547fc887c",
+    "jtest-85df100117d923ee",
+    "jtest-e150290301c028eb",
+    "jtest-ee4e8334c47329be",
+    "jtest-4597cd1fd7a30b5a",
+    "jtest-8d76d19c0850e336",
+    "jtest-f59c0fa227595d22",
+    "jtest-5ee2ca340528ea9a",
+    "jtest-1dd7644f8baf29a7",
+    "jtest-271e3eea89dcebbc",
+    "jtest-74f23f6c4e5a6bbf",
+    "jtest-928b1fa4d9a652d5",
+    "jtest-1bf257541fbcb79c",
+    "jtest-9d516c7c00538e63",
+    "jtest-607d93de6410f403",
+    "jtest-130c468086a53e2b",
+    "jtest-96a17c2683a08cee",
+    "jtest-42ea983027a109ed",
+    "jtest-70b85b192a6b0b9d",
+    "jtest-8df322cc1a3684b9",
+    "jtest-f139d160d79fad4f",
+    "jtest-3c6b859c03e0a437",
+    "jtest-9938d18ea242cde1",
+    "jtest-2efc77d4a7971648",
+    "jtest-a8c9c0aaf09cfcbc"
+  ],
+  "levels": {
+    "n5": {
+      "sourcePages": 126,
+      "originalQuestions": 987,
+      "publishedSets": 4,
+      "targetSets": 10,
+      "readingQuestionsByKind": {
+        "information": 4,
+        "short": 32,
+        "mid": 12
+      },
+      "sentenceCompositionQuestions": 20,
+      "recordingsAfterQuarantine": 217,
+      "quarantinedQuestionIds": [
+        "jtest-789dfff92cfe4b82",
+        "jtest-dcc47f539fb280ed",
+        "jtest-2a07f135ab549505",
+        "jtest-77ec18cfad94741a"
+      ]
+    },
+    "n4": {
+      "sourcePages": 155,
+      "originalQuestions": 1204,
+      "publishedSets": 2,
+      "targetSets": 10,
+      "readingQuestionsByKind": {
+        "short": 28,
+        "mid": 44,
+        "information": 6
+      },
+      "sentenceCompositionQuestions": 10,
+      "recordingsAfterQuarantine": 274,
+      "quarantinedQuestionIds": [
+        "jtest-b5098700664e7977",
+        "jtest-359f8349da459b68",
+        "jtest-2a6b0aa91c74a077",
+        "jtest-142517ea2c98a425",
+        "jtest-e2da511a0fdadcce",
+        "jtest-584539da8b95ddcc"
+      ]
+    },
+    "n3": {
+      "sourcePages": 119,
+      "originalQuestions": 1031,
+      "publishedSets": 2,
+      "targetSets": 10,
+      "readingQuestionsByKind": {
+        "mid": 40,
+        "short": 9,
+        "long": 11,
+        "information": 10
+      },
+      "sentenceCompositionQuestions": 54,
+      "recordingsAfterQuarantine": 111,
+      "quarantinedQuestionIds": [
+        "jtest-4beafb5d8b3fc91f",
+        "jtest-3795f290faf9a3a3",
+        "jtest-b33af7daf2f6a08b"
+      ]
+    }
+  },
+  "note": "Original licensed questions only. No generated substitutes, wrapped sets or repeated dialogue substitutions. Ready sets contain Bengali answers, specific rationales and complete native-audio transcripts. Source timing/scoring references are in catalog.json.",
+  "bottlenecks": {
+    "n5": {
+      "type": "information retrieval",
+      "neededForTenSets": 10,
+      "sourceQuestions": 4
+    },
+    "n4": {
+      "type": "sentence composition",
+      "neededForTenSets": 40,
+      "sourceQuestions": 10
+    },
+    "n3": {
+      "type": "short reading",
+      "neededForTenSets": 40,
+      "sourceQuestions": 9
+    }
+  }
+}

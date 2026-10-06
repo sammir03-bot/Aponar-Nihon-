@@ -13,10 +13,10 @@
   $('#heroTitle').textContent=`JLPT ${level.toUpperCase()} Mock Test`;
   $('#examGrid').textContent='পরীক্ষার তালিকা লোড হচ্ছে…';
   try {
-    const response=await fetch('/assets/data/jtest4you/catalog.json?v=20261005.own',{cache:'no-cache'});
+    const response=await fetch('/assets/data/jtest4you/catalog.json?v=20261006.expanded',{cache:'no-cache'});
     if(!response.ok)throw new Error('টেস্ট তালিকা লোড হয়নি');
     const catalog=await response.json();
-    if(catalog.version!==7)throw new Error('টেস্ট তালিকা আপডেট হচ্ছে');
+    if(catalog.version!==8)throw new Error('টেস্ট তালিকা আপডেট হচ্ছে');
     const c=catalog.levels[level],count=c.counts.reduce((a,b)=>a+b,0),time=c.times.reduce((a,b)=>a+b,0);
     document.title=`JLPT ${level.toUpperCase()} Mock Test | আপনার নিহোন`;
     $('#levelName').textContent=`JLPT ${level.toUpperCase()}`;
@@ -33,7 +33,7 @@
     try {results=JSON.parse(localStorage.getItem('aponarNihonMockResults')||'{}')}catch{}
     let html='';
     for(let i=1;i<=c.limit;i++){
-      const ready=i<=c.availableSets,r=results[`${level}-${i}`],done=ready&&r?.bankVersion===7;
+      const ready=i<=c.availableSets,r=results[`${level}-${i}`],done=ready&&r?.bankVersion===8;
       html+=`<article class="exam-card ${ready?'':'pending-set'}" data-test="${i}" data-ready="${ready}"><div class="exam-title-row"><div class="exam-no"><div class="exam-icon"><i class="fa-solid ${ready?'fa-file-pen':'fa-lock'}"></i></div><h3>${level.toUpperCase()} Mock Test ${String(i).padStart(2,'0')}<small>${ready?'শব্দভাণ্ডার · গ্রামার/রিডিং · লিসেনিং':'নতুন আলাদা প্রশ্ন প্রয়োজন'}</small></h3></div><span class="tag">${ready?'প্রস্তুত':'প্রস্তুত হয়নি'}</span></div><div class="meta"><span><i class="fa-regular fa-clock"></i> ${bn(time)} মিনিট</span><span><i class="fa-solid fa-list-check"></i> ${bn(count)} প্রশ্ন</span><span><i class="fa-solid fa-award"></i> মক পরীক্ষার সনদ</span></div><div class="score-mini" id="score-${i}">${done?`স্কোর: <strong>${bn(r.score)}/১৮০</strong> · ${r.passed?'মক পরীক্ষায় উত্তীর্ণ':'আরও প্র্যাকটিস দরকার'}`:ready?'এখনও পরীক্ষা দেওয়া হয়নি':'পূর্ণ সেটের প্রশ্ন ও বাংলা ব্যাখ্যা যাচাই বাকি'}</div><div class="exam-actions">${ready?`<a class="start" id="start-${i}" href="jlpt-exam.html?level=${level}&test=${i}"><i class="fa-solid ${done?'fa-rotate-right':'fa-play'}"></i> ${done?'একই সেট আবার দিন':'পরীক্ষা শুরু করুন'}</a><a class="result-link ${done?'show':''}" id="result-${i}" href="jlpt-exam.html?level=${level}&test=${i}&result=1">ফলাফল ও সনদ</a>`:'<button class="start" type="button" disabled>প্রশ্ন প্রস্তুত হয়নি</button>'}</div></article>`;
     }
     $('#examGrid').innerHTML=html;

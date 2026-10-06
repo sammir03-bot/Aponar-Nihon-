@@ -8,7 +8,7 @@ const CONFIG = {
 const banks = new Map();
 const pending = new Map();
 const schedules = new Map();
-const VERSION = 7;
+const VERSION = 8;
 const SET_LIMIT = 10;
 function textKey(value) {
   return (value||'').replace(/<[^>]*>/g,'').replace(/&(?:nbsp|#160);/g,' ').replace(/[\s　]+/g,'').normalize('NFKC');
@@ -33,8 +33,8 @@ async function load(level) {
   if(pending.has(level)) return pending.get(level);
   const promise=(async()=>{
     const [response,reviewResponse]=await Promise.all([
-      fetch(`/assets/data/jtest4you/${level}.json?v=20261005.own`,{cache:'no-cache'}),
-      fetch('/assets/data/jtest4you/bn-review.json?v=20261005.own',{cache:'no-cache'})
+      fetch(`/assets/data/jtest4you/${level}.json?v=20261006.expanded`,{cache:'no-cache'}),
+      fetch('/assets/data/jtest4you/bn-review.json?v=20261006.expanded',{cache:'no-cache'})
     ]);
     if(!response.ok) throw new Error('প্রশ্নব্যাংক লোড হয়নি। আবার চেষ্টা করুন।');
     if(!reviewResponse.ok) throw new Error('বাংলা উত্তর ও ব্যাখ্যা লোড হয়নি। আবার চেষ্টা করুন।');
@@ -57,7 +57,11 @@ async function load(level) {
   try {await promise;} finally {pending.delete(level);}
 }
 class InsufficientQuestions extends Error {}
-function sharedPassage(q){return q.kind==='文の組み立て'?'':textKey(q.passage)}
+function sharedPassage(q){
+  if(q.kind==='文の組み立て')return '';
+  const text=textKey(q.passage);
+  return text||Array.from((q.passage||'').matchAll(/<img\b[^>]*\bsrc="([^"]+)"/gi),m=>m[1]).sort().join('|');
+}
 function take(pool, count, seen, label, previousPassages) {
   const out=[];
   for(const q of pool) {
