@@ -18,6 +18,12 @@ assert.equal(applyNewsLearning(parsed[0], learning).learning_status, 'ready');
 assert.equal(applyNewsLearning(parsed[0], {...learning, headline_tokens:[{t:'Invented replacement'}]}).learning_status, 'pending');
 assert.equal(applyNewsLearning(parsed[0], {...learning, teaser_bn:'Untranslated English'}).learning_status, 'pending');
 assert.equal(applyNewsLearning(parsed[0], {...learning, headline_tokens:[{t:title,r:'Latin reading'}]}).learning_status,'pending','Readings must use kana');
+const spaced={...parsed[0],headline:'学校で 日本語を 学びます'};
+const aligned=applyNewsLearning(spaced,learning);
+assert.equal(aligned.learning_status,'ready','Restore source spaces without changing its text');
+assert.equal(aligned.headline_tokens.map(t=>t.t).join(''),spaced.headline);
+const changed=applyNewsLearning({...parsed[0],headline:'学校で日本語を50人が学びます'}, {...learning,headline_tokens:[{t:'学校で日本語を55人が学びます',r:'がっこうでにほんごをごじゅうごにんがまなびます'}]});
+assert.equal(changed.learning_status,'pending','Never reconcile changed numbers as a formatting difference');
 
 const values = new Map(), waits = [];
 const ctx = {waitUntil:p=>waits.push(p), storage:{
