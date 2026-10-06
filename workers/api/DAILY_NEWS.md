@@ -46,3 +46,8 @@ Each JSON schema pins one exact article ID. Token instructions preserve spaces
 and separate digits/Latin names from kana readings. Validation diagnostics
 identify missing cards, headline mismatches, Bengali, vocabulary or readings
 without exposing raw model output. One failed card cannot block valid siblings.
+
+Headline tokens can omit or add whitespace without losing the lesson: the
+server restores the exact original source spacing. Every non-whitespace
+character must match, so changed names, numbers, words or punctuation remain
+invalid. Kana and vocabulary validation still applies after alignment.
