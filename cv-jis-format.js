@@ -45,13 +45,13 @@
         ${field('guardianFax','保護者 FAX','অভিভাবকের FAX','text','')}
       </div></div>`);
     }
-    extraKeys.forEach(k=>{const el=E(k);if(!el)return;el.value=state[k]??'';el.oninput=el.onchange=()=>{state[k]=el.value;save();renderJIS();};});
+    extraKeys.forEach(k=>{const el=E(k);if(!el)return;el.value=state[k]??'';el.oninput=el.onchange=()=>{state[k]=el.value;save();render();};});
   }
 
   function photoHtml(){return state.photo?`<img src="${state.photo}" alt="Portrait">`:`<div class="jis-photo-note"><b>Portrait</b><br>36～40 mm long,<br>24～30 mm wide,<br>Bust shot,<br>Write your name on<br>the back side</div>`;}
   function dateText(){const v=state.created||tokyoToday();if(!v)return'';const[y,m,d]=v.split('-');return `${+y}年　${+m}月　${+d}日現在 (date, as of)`;}
   function dobText(){if(!state.dob)return'';const[y,m,d]=state.dob.split('-');return `${+y}年　${+m}月　${+d}日生 （満 ${age(state.dob)} 歳）`;}
-  function genderHtml(){if(state.gender==='男')return `<span class="jis-circle">男</span> ・ 女`;if(state.gender==='女')return `男 ・ <span class="jis-circle">女</span>`;return `男 ・ 女`;}
+  function genderHtml(){if(state.gender==='男')return `<span class="jis-circle">男</span> ・ 女`;if(state.gender==='女')return `男 ・ <span class="jis-circle">女</span>`;if(state.gender==='その他')return 'その他';return `男 ・ 女`;}
   function historyRows(){
     const rows=[];
     rows.push({y:'',m:'',t:'学歴',c:'jis-section'});
@@ -122,7 +122,7 @@
   mountExtraFields();buildPages();
   const baseRender=render;render=function(){baseRender();renderJIS();const kind=document.querySelector('.preview-tools button.active')?.dataset.preview||'rireki';showPreview(kind);};
   preview=function(kind){showPreview(kind);};
-  printDoc=function(kind){state.created=tokyoToday();save();renderJIS();document.querySelectorAll('.page').forEach(p=>p.classList.remove('print-me'));if(kind==='career')document.querySelectorAll('.print-career').forEach(p=>p.classList.add('print-me'));else document.querySelectorAll('.print-jis').forEach(p=>p.classList.add('print-me'));setTimeout(()=>window.print(),80);};
+  printDoc=function(kind){save();render();document.querySelectorAll('.page').forEach(p=>p.classList.remove('print-me'));if(kind==='career')document.querySelectorAll('.print-career').forEach(p=>p.classList.add('print-me'));else document.querySelectorAll('.print-jis').forEach(p=>p.classList.add('print-me'));setTimeout(()=>window.print(),80);};
   document.querySelectorAll('[data-preview]').forEach(b=>b.onclick=()=>preview(b.dataset.preview));if(E('printRireki'))E('printRireki').onclick=()=>printDoc('rireki');if(E('printCareer'))E('printCareer').onclick=()=>printDoc('career');if(E('mobilePrint'))E('mobilePrint').onclick=()=>printDoc('rireki');if(E('mobilePreview'))E('mobilePreview').onclick=()=>{preview('rireki');E('paperArea').scrollIntoView({behavior:'smooth'})};
   const oldSync=syncTemplate;syncTemplate=function(){oldSync();showPreview(document.querySelector('.preview-tools button.active')?.dataset.preview||'rireki');};
   renderJIS();showPreview('rireki');save();

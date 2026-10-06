@@ -1,4 +1,4 @@
-/* Aponar Nihon service-worker wrapper — app shell v39 — revalidate quizzes and news.
+/* Aponar Nihon service-worker wrapper — app shell v40 — revalidate CV, quizzes and news.
    The dashboard, dedicated section hubs and AI Tutor assets are available
    offline after install, while updated learning pages stay network-first. */
 
@@ -60,7 +60,7 @@ __anNativeAddEventListener('fetch', event => {
     }
     if (url.origin === self.location.origin &&
         (url.pathname === '/assets/data/daily-news.json' || url.pathname.startsWith('/assets/data/quiz/') ||
-         ['/assets/js/daily-news.js', '/assets/js/app-shell.js', '/assets/js/learning-hub-pro.js'].includes(url.pathname))) {
+         ['/assets/js/daily-news.js', '/assets/js/app-shell.js', '/assets/js/learning-hub-pro.js', '/assets/js/cv-builder.js', '/assets/js/cv-workflow.js', '/assets/js/cv-builder-v6.js', '/cv-jis-format.js', '/cv-jis-format.css', '/assets/css/cv-builder.css', '/assets/css/cv-builder-v6.css'].includes(url.pathname))) {
       event.respondWith(fetch(request, {cache:'no-store'}).then(response => {
         if (response.ok) event.waitUntil(caches.open('an-current-content-v1').then(cache => cache.put(request, response.clone())));
         return response;
@@ -76,7 +76,7 @@ __anNativeAddEventListener('fetch', event => {
     const isHtml = request.mode === 'navigate' || (request.headers.get('accept') || '').includes('text/html');
     const studyPath = decodeURIComponent(url.pathname).replace(/\.html$/, '').replace(/\/$/, '');
     const isStudyPage = url.origin === self.location.origin &&
-      ['/quiz', '/jlpt-quiz', '/daily-news', '/daily-news-reader', '/interview', '/part-time-interview', '/skype sheet', '/embassy-interview', '/listening-lab', '/jlpt-revision', '/halal-scanner', '/muslim-japan'].includes(studyPath);
+      ['/cv-builder', '/part-time-cv-builder', '/quiz', '/jlpt-quiz', '/daily-news', '/daily-news-reader', '/interview', '/part-time-interview', '/skype sheet', '/embassy-interview', '/listening-lab', '/jlpt-revision', '/halal-scanner', '/muslim-japan'].includes(studyPath);
     if (isStudyPage && isHtml) {
       event.respondWith(
         fetch(request, {cache:'no-store'}).then(response => {

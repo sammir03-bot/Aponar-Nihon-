@@ -26,6 +26,7 @@ def preserves_visible_text(base_html: str, current_html: str) -> bool:
 # the zero-content-loss guarantee remains enforceable while the live routes can
 # evolve. Add to this map only when a product change explicitly moves a page.
 MOVED_PAGE_ARCHIVES = {
+    "cv-builder.html": "archive/cv-builder-pre-update-20261007.html",
     "halal-scanner.html": "archive/halal-scanner-pre-open-source-20261006.html",
     "muslim-japan.html": "archive/muslim-japan-pre-open-source-20261006.html",
     "jlpt-exam.html": "archive/jlpt-exam-v7-pre-navigation.html",
