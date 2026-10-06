@@ -26,6 +26,13 @@ waiting for the three-hour source interval. The persistent `learning_checked`
 timestamp bounds retries across requests; `learning_error` exposes only a short
 non-secret status code for diagnostics.
 
+Gemini REST uses the uppercase `MINIMAL` thinking enum. If it fails or leaves
+invalid cards, one bounded fallback request uses the existing Workers AI
+`@cf/openai/gpt-oss-120b` binding with JSON output. The same content validation
+applies to both providers. Valid primary cards survive a fallback outage.
+`learning_version` allows one immediate retry after a generator fix, then
+restores the shared 15-minute backoff. Each provider has a 25-second timeout.
+
 Public API responses bypass the service worker's asset cache. The browser
 keeps its last feed for offline reading, labels saved data, refreshes on
 returning to the page, and offers an archive refresh button.

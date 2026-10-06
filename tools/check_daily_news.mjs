@@ -56,12 +56,25 @@ try {
   meta=values.get('feed-meta-v1');meta.last_checked=Date.now();meta.learning_checked=Date.now()-16*60000;values.set('feed-meta-v1',meta);
   globalThis.fetch=async (url,init)=>{
     assert.ok(url.startsWith('https://generativelanguage.googleapis.com/'),'A language retry must not refetch RSS');
-    const config=JSON.parse(init.body).generationConfig;assert.equal(config.thinkingConfig.thinkingLevel,'minimal');assert.ok(config.responseJsonSchema);
+    const config=JSON.parse(init.body).generationConfig;assert.equal(config.thinkingConfig.thinkingLevel,'MINIMAL');assert.ok(config.responseJsonSchema);
     models++;return Response.json({candidates:[{content:{parts:[{text:JSON.stringify({articles:[learning]})}]}}]});
   };
   await next.fetch(new Request('https://internal/feed'));await Promise.all(waits);
   const retried=await (await next.fetch(new Request('https://internal/feed'))).json();
   assert.equal(retried.articles[0].learning_status,'ready');assert.equal(retried.learning_error,null);assert.equal(sources,3);
+  values.set('article:'+parsed[0].id,structuredClone(parsed[0]));
+  meta=values.get('feed-meta-v1');meta.learning_checked=Date.now();meta.learning_version='previous-generator';values.set('feed-meta-v1',meta);
+  globalThis.fetch=async()=>new Response('',{status:400});let fallbackCalls=0;
+  const fallback=new DailyNewsFeed(ctx,{GEMINI_API_KEY:'test-only',AI:{async run(model,request){assert.equal(model,'@cf/openai/gpt-oss-120b');assert.equal(request.reasoning_effort,'low');assert.equal(request.max_tokens,10000);assert.equal(request.response_format.type,'json_object');fallbackCalls++;return {choices:[{message:{content:JSON.stringify({articles:[learning]})}}]};}}});
+  await fallback.fetch(new Request('https://internal/feed'));await Promise.all(waits);
+  const fallbackData=await (await fallback.fetch(new Request('https://internal/feed'))).json();
+  assert.equal(fallbackData.articles[0].learning_status,'ready','Use the existing inference binding when the primary request fails');assert.equal(fallbackCalls,1);
+  values.set('article:'+parsed[0].id,structuredClone(parsed[0]));
+  meta=values.get('feed-meta-v1');meta.learning_checked=0;values.set('feed-meta-v1',meta);
+  const invalidFallback=new DailyNewsFeed(ctx,{AI:{async run(){fallbackCalls++;return {response:JSON.stringify({articles:[{...learning,teaser_bn:'English only'}]})};}}});
+  await invalidFallback.fetch(new Request('https://internal/feed'));await Promise.all(waits);
+  const invalidData=await (await invalidFallback.fetch(new Request('https://internal/feed'))).json();
+  assert.equal(invalidData.articles[0].learning_status,'pending','Fallback content must pass the same Bengali validation');assert.equal(fallbackCalls,2,'Invalid fallback output must respect the retry backoff');
   console.log('Daily news audit passed: trusted real dates, enrichment validation, persistent archive, concurrent deduplication, outages and backoff.');
 } finally {globalThis.fetch=nativeFetch;delete globalThis.NewsTestDurableObject;}
 
