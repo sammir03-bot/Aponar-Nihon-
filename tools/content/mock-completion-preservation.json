@@ -1,0 +1,56 @@
+{
+  "baseCommit": "2c650a442df7db1e85ca60ef1e09bbd5611b9f5c",
+  "sourceQuestionHashes": {
+    "n5": "d1fabbc4f889831b47da7890f0a372c8594c5ea55868d7f7e9e8c51e229744d2",
+    "n4": "a82683ef6f07fe0becf3ba7f57ab1a6f150ef9ce528abf303372f8b1ef874014",
+    "n3": "805e1d2e8e5b1e03afb242210767df7674c60b206092a07d3b79a8ffbfdfa0b6"
+  },
+  "preservedSets": {
+    "n5": [
+      {
+        "vocab": "dcea9267d173a0a774ebd35908c69fdb3efb5fa62b6c6b0579950ad86acc0043",
+        "grammarReading": "5c651c74fa967a90b3e890808c48be4490c2bba52e94e142ebfdecfa1edcf872",
+        "listening": "ccbe3cb9b36b9a97336178353775c5353fa1424b60ad07ce98bcf0116c5f6f04"
+      },
+      {
+        "vocab": "7eaa66f4832d6fe921df09b091549f3d41d2765fb84bd70367b147ea6a8219c2",
+        "grammarReading": "8ed4e898e39e8e56c7b04182fc356ac411a37252607edef0f95319bbc7707c5a",
+        "listening": "16b2746feb69eda3ac390da9f783efef7121483ee6fff2cf78e61fd20e55c100"
+      },
+      {
+        "vocab": "9421efa367fea44f03d2cff562126eadea33933045b97c855f037621259db654",
+        "grammarReading": "bfe47570c4ad4aa8eb90d035af3926b805ebe3c5871c7887db976b5ea3937cb4",
+        "listening": "4258aa74201bf1c791ed40afb951964086df74f15a166d8ff18799613ff28532"
+      },
+      {
+        "vocab": "205e325c9fa81164ffdfca38bec679fc9b3fd0f2ff0060a71429e92695b64eda",
+        "grammarReading": "7c9f3bd43bfcff164d46336ebd05d235a0aaf3d6bd38b2871a647db6858fb506",
+        "listening": "260722a2b4be23c1ab05c0908534511d53a555267fa35844304a75490c0fb600"
+      }
+    ],
+    "n4": [
+      {
+        "vocab": "c318bf7f360491699eb1d017572030f2f04805306e492337c72156b9dc9ae0e2",
+        "grammarReading": "12f9e35a0f0779eef4dfe68d1e0b2f1b1fc954e481acb0934a7a8a120465ac66",
+        "listening": "e9f0299afadc11ed64c0170802b39e57d60de702e920a7dca08bea67321d798b"
+      },
+      {
+        "vocab": "ee71b83e271d07a77fbcdf37daeac691b1cee99c77c6da17e45ee2d461c405ea",
+        "grammarReading": "4be09f025ee449dede1a87910a00beb1e90f551d63d0e176120547d02b4b8667",
+        "listening": "4c717ebe5946617951de43e24ba90b71c1e52e9773b54aa21f135029ed7bc54f"
+      }
+    ],
+    "n3": [
+      {
+        "vocab": "6611f3408a0de94e228a3175563b08fce10a82d47914d448b95933ace6f5b4c8",
+        "grammarReading": "8de24b42cc6c7e7a8869d990956a964ea16670ed93fcef4aecd800e9f5d1b5a7",
+        "listening": "5a62f98c16755378596a2cb23c1ff36ae589884fd481284ce5bdd22102a8e94b"
+      },
+      {
+        "vocab": "0ca5cb2746f57a9a04eefeed3b10af6bb0bc03d4c776d60c001dd9f0a26d5f0b",
+        "grammarReading": "cd31ee25c55000570b491ecf7f06722fa21b3e8f82fbf57bcf9e5740b55f8c28",
+        "listening": "60f9af9fb327f6c58ffbaf7a870f20832a0c26457b36be1bc3538a268a2dfcba"
+      }
+    ]
+  }
+}

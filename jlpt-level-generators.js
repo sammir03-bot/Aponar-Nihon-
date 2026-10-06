@@ -8,7 +8,7 @@ const CONFIG = {
 const banks = new Map();
 const pending = new Map();
 const schedules = new Map();
-const VERSION = 8;
+const VERSION = 9;
 const SET_LIMIT = 10;
 function textKey(value) {
   return (value||'').replace(/<[^>]*>/g,'').replace(/&(?:nbsp|#160);/g,' ').replace(/[\s　]+/g,'').normalize('NFKC');
@@ -21,8 +21,10 @@ function validate(data, level) {
   if(data.version!==VERSION || data.level!==level || !Array.isArray(data.questions)) throw new Error('প্রশ্নব্যাংকের সংস্করণ সঠিক নয়');
   const ids=new Set();
   for(const q of data.questions) {
-    if(!q.id || ids.has(q.id) || !q.prompt || !Array.isArray(q.options) || ![3,4].includes(q.options.length) || !Number.isInteger(q.answer) || q.answer<0 || q.answer>=q.options.length || !q.sourceUrl?.startsWith('https://japanesetest4you.com/')) throw new Error('প্রশ্ন বা answer key যাচাই হয়নি');
-    if(q.category==='listening' && !q.audioUrl?.startsWith('https://japanesetest4you.com/')) throw new Error('Recorded listening audio অনুপস্থিত');
+    const original=q.provenance==='aponar-original'&&q.id.startsWith('aponar-')&&q.sourceUrl==='/mock-content-notes.html';
+    const imported=q.id.startsWith('jtest-')&&q.sourceUrl?.startsWith('https://japanesetest4you.com/');
+    if(!q.id || ids.has(q.id) || !q.prompt || !Array.isArray(q.options) || ![3,4].includes(q.options.length) || !Number.isInteger(q.answer) || q.answer<0 || q.answer>=q.options.length || !(original||imported)) throw new Error('প্রশ্ন বা answer key যাচাই হয়নি');
+    if(q.category==='listening' && !(imported&&q.audioUrl?.startsWith('https://japanesetest4you.com/')||original&&/^\/assets\/audio\/mock\/aponar-[a-z0-9-]+\.mp3$/.test(q.audioUrl)&&q.audioCredit)) throw new Error('Recorded listening audio অনুপস্থিত');
     ids.add(q.id);
   }
   return data.questions;
@@ -32,20 +34,24 @@ async function load(level) {
   if(banks.has(level)) return;
   if(pending.has(level)) return pending.get(level);
   const promise=(async()=>{
-    const [response,reviewResponse]=await Promise.all([
-      fetch(`/assets/data/jtest4you/${level}.json?v=20261006.expanded`,{cache:'no-cache'}),
-      fetch('/assets/data/jtest4you/bn-review.json?v=20261006.expanded',{cache:'no-cache'})
+    const [response,reviewResponse,originalResponse]=await Promise.all([
+      fetch(`/assets/data/jtest4you/${level}.json?v=20261006.complete`,{cache:'no-cache'}),
+      fetch('/assets/data/jtest4you/bn-review.json?v=20261006.complete',{cache:'no-cache'}),
+      fetch(`/assets/data/mock-original/${level}.json?v=20261006.complete`,{cache:'no-cache'})
     ]);
     if(!response.ok) throw new Error('প্রশ্নব্যাংক লোড হয়নি। আবার চেষ্টা করুন।');
     if(!reviewResponse.ok) throw new Error('বাংলা উত্তর ও ব্যাখ্যা লোড হয়নি। আবার চেষ্টা করুন।');
+    if(!originalResponse.ok) throw new Error('নিজস্ব প্রশ্নগুলো লোড হয়নি। আবার চেষ্টা করুন।');
     const review=await reviewResponse.json();
     if(review.bankVersion!==VERSION||review.version!==1||!review.levels?.[level])throw new Error('বাংলা ব্যাখ্যার সংস্করণ সঠিক নয়');
     const excluded=new Set(review.excludedQuestionIds?.[level]||[]);
-    const questions=validate(await response.json(), level).filter(q=>!excluded.has(q.id)).map(q=>{
+    const source=validate(await response.json(), level),originals=validate(await originalResponse.json(),level);
+    const questions=[...source,...originals].filter(q=>!excluded.has(q.id)).map(q=>{
       const r=review.levels[level][q.id];
       return r?{...q,answerBn:r.answerBn,explanationBn:r.explanationBn,audioText:r.transcript,transcriptSource:r.transcriptSource}:q;
     });
-    const candidates=assemble(level,questions),sets=[];
+    const reviewed=questions.filter(q=>q.answerBn&&q.explanationBn&& (q.category!=='listening'||q.audioText));
+    const candidates=assemble(level,reviewed),sets=[];
     for(const set of candidates){
       const all=[...set.vocab,...set.grammarReading,...set.listening];
       if(all.some(q=>!q.answerBn||!q.explanationBn||q.category==='listening'&&!q.audioText))break;
@@ -105,13 +111,13 @@ function build(level,test) {
   if(!Number.isInteger(test)||test<1||test>SET_LIMIT||!CONFIG[level])throw new Error('Invalid mock selection');
   const sets=schedules.get(level);if(!sets)throw new Error('প্রশ্নব্যাংক এখনো লোড হয়নি');
   const set=sets[test-1];if(!set){const error=new Error('এই সেটে পুনরাবৃত্তি ছাড়া যথেষ্ট যাচাইকৃত প্রশ্ন নেই। টেস্ট তালিকার চালু সেট বেছে নিন।');error.code='NO_NEW_SET';throw error;}
-  return {...Object.fromEntries(Object.entries(set).map(([key,qs])=>[key,qs.map(q=>({...q,options:[...q.options]}))])),meta:{...CONFIG[level],bankVersion:VERSION,availableSets:sets.length,coverageNote:'' ,source:'JapaneseTest4You-এর প্রশ্ন ও answer key। JLPT-এর অফিসিয়াল সময় ও পাসসীমা; প্রশ্ন ও ১৮০ নম্বরের স্কোর অনুশীলনের। আলাদা সেটে প্রশ্ন ও রেকর্ডিং পুনরাবৃত্তি হয় না। প্রশ্নসংখ্যা অফিসিয়াল আনুমানিক তালিকা অনুযায়ী; প্রকৃত পরীক্ষায় কিছুটা পরিবর্তন হয়।'}};
+  return {...Object.fromEntries(Object.entries(set).map(([key,qs])=>[key,qs.map(q=>({...q,options:[...q.options]}))])),meta:{...CONFIG[level],bankVersion:VERSION,availableSets:sets.length,coverageNote:'' ,source:'JapaneseTest4You-এর প্রশ্ন ও আপনার নিহোনের নিজস্ব প্রশ্ন; প্রতিটির উৎস ব্যাখ্যার সঙ্গে দেওয়া আছে। নতুন নিজস্ব লিসেনিংয়ে জাপানি কৃত্রিম কণ্ঠ ব্যবহার করা হয়েছে। JLPT-এর সময় ও পাসসীমা অনুসরণ করা হয়েছে; প্রশ্ন এবং ১৮০ নম্বরের স্কোর অনুশীলনের। আলাদা সেটে প্রশ্ন ও রেকর্ডিং পুনরাবৃত্তি হয় না।'}};
 }
 function availability(level) {
   if(!schedules.has(level))throw new Error('Question bank not loaded');
   return {version:VERSION,availableSets:schedules.get(level).length,limit:SET_LIMIT,counts:[...CONFIG[level].counts],times:[...CONFIG[level].times]};
 }
-// No generated fallback: failed imports must be corrected before an exam opens.
+// Only reviewed, statically authored content can enter an exam. No runtime fallback.
 global.JLPT_MOCK_SET_LIMIT=SET_LIMIT;
 global.JLPT_MOCK_CONFIG=CONFIG;
 global.JLPT_LOAD_BANK=load;
