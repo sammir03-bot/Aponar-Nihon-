@@ -39,7 +39,7 @@ for (const [path, activeHref] of pages) {
       return parseFloat(getComputedStyle(document.body).paddingBottom) >= innerHeight - dock.top + 12;
     })).toBe(true);
     await page.locator('body').press('End');
-    expect(await page.evaluate(() => {
+    await expect.poll(() => page.evaluate(() => {
       const dock = document.querySelector('[data-an-bottom-nav]').getBoundingClientRect();
       const footer = document.querySelector('footer');
       return !footer || footer.getBoundingClientRect().bottom <= dock.top;
