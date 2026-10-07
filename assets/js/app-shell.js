@@ -152,7 +152,7 @@
   }
 
   function setActiveDock() {
-    var page = document.body.dataset.page || "home";
+    var page = document.body.dataset.hub || document.body.dataset.page || "";
     document.querySelectorAll(".app-dock-link").forEach(function (link) {
       var key = link.dataset.nav || "";
       link.classList.toggle("active", key === page);

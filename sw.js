@@ -1,4 +1,4 @@
-/* Aponar Nihon service-worker wrapper — app shell v41 — revalidate CV, quizzes and news.
+/* Aponar Nihon service-worker wrapper — app shell v42 — shared compact bottom navigation.
    The dashboard, dedicated section hubs and AI Tutor assets are available
    offline after install, while updated learning pages stay network-first. */
 
@@ -60,7 +60,7 @@ __anNativeAddEventListener('fetch', event => {
     }
     if (url.origin === self.location.origin &&
         (url.pathname === '/assets/data/daily-news.json' || url.pathname.startsWith('/assets/data/quiz/') ||
-         ['/assets/js/daily-news.js', '/assets/js/app-shell.js', '/assets/js/learning-hub-pro.js', '/assets/js/cv-builder.js', '/assets/js/cv-workflow.js', '/assets/js/cv-builder-v6.js', '/cv-jis-format.js', '/cv-jis-format.css', '/assets/css/cv-builder.css', '/assets/css/cv-builder-v6.css'].includes(url.pathname))) {
+         ['/assets/js/bottom-navigation.js', '/assets/css/bottom-navigation.css', '/assets/js/daily-news.js', '/assets/js/app-shell.js', '/assets/js/learning-hub-pro.js', '/assets/js/cv-builder.js', '/assets/js/cv-workflow.js', '/assets/js/cv-builder-v6.js', '/cv-jis-format.js', '/cv-jis-format.css', '/assets/css/cv-builder.css', '/assets/css/cv-builder-v6.css'].includes(url.pathname))) {
       event.respondWith(fetch(request, {cache:'no-store'}).then(response => {
         if (response.ok) event.waitUntil(caches.open('an-current-content-v1').then(cache => cache.put(request, response.clone())));
         return response;
