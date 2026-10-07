@@ -7,7 +7,7 @@ from pathlib import Path
 
 from build_shin_bunka import build as build_shin_bunka
 
-from sitecore.htmltools import inject_assets, visible_text_hash
+from sitecore.htmltools import inject_assets, mark_bottom_navigation, visible_text_hash
 from sitecore.linkcheck import find_broken_page_links
 from sitecore.locales import build_localized_pages
 from sitecore.postprocess import postprocess_site
@@ -36,6 +36,8 @@ I18N_CONTENT_JS = '<script defer src="/assets/js/i18n-content.js?v=20260909.4"><
 PRO_CSS = '<link rel="stylesheet" href="/assets/css/pro-core.css?v=20260825">'
 PRO_JS = '<script defer src="/assets/js/pro-core.js?v=20260825"></script>'
 PLATFORM_TS = '<script type="module" src="/assets/js/ts/platform.js?v=20260825"></script>'
+BOTTOM_NAV_CSS = '<link rel="stylesheet" href="/assets/css/bottom-navigation.css?v=20261007.1">'
+BOTTOM_NAV_JS = '<script defer src="/assets/js/bottom-navigation.js?v=20261007.1"></script>'
 LEGACY_ORIGIN = "https://aponar-nihon.eu.cc"
 PRODUCTION_ORIGIN = "https://app.aponar-nihon.workers.dev"
 ORIGIN_REWRITE_SUFFIXES = {".html", ".js", ".json", ".xml", ".txt", ".webmanifest"}
@@ -98,8 +100,9 @@ def inject_professional_assets(destination: Path) -> tuple[int, int]:
         before_hash = visible_text_hash(html)
         enhanced = inject_assets(
             html,
-            (I18N_CSS, HOME_BRAND_CSS, I18N_JS, I18N_UI_JS, I18N_CONTENT_JS, PRO_CSS, PRO_JS, PLATFORM_TS),
+            (I18N_CSS, HOME_BRAND_CSS, I18N_JS, I18N_UI_JS, I18N_CONTENT_JS, PRO_CSS, PRO_JS, PLATFORM_TS, BOTTOM_NAV_CSS, BOTTOM_NAV_JS),
         )
+        enhanced = mark_bottom_navigation(enhanced)
         if enhanced == html:
             continue
         after_hash = visible_text_hash(enhanced)

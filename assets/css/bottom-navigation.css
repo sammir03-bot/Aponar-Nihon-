@@ -1,0 +1,178 @@
+/* One navigation surface for the app shell, mock centers and older guides.
+   Scoped markers outrank the older page-specific !important rules. */
+:root {
+  --an-bottom-nav-clearance: calc(88px + env(safe-area-inset-bottom, 0px));
+}
+
+html:has(body.an-has-bottom-nav) {
+  scroll-padding-bottom: var(--an-bottom-nav-clearance);
+}
+
+html body.an-has-bottom-nav {
+  padding-bottom: var(--an-bottom-nav-clearance) !important;
+}
+
+html body.an-has-bottom-nav :is(.app-dock-wrap, .app-bottom-nav-wrap):has(> .an-bottom-nav[data-an-bottom-nav]) {
+  position: static !important;
+  inset: auto !important;
+  width: auto !important;
+  min-height: 0 !important;
+  height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  transform: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  pointer-events: none !important;
+}
+
+html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] {
+  position: fixed !important;
+  inset: auto max(8px, env(safe-area-inset-right, 0px)) calc(8px + env(safe-area-inset-bottom, 0px)) max(8px, env(safe-area-inset-left, 0px)) !important;
+  z-index: 95 !important;
+  width: auto !important;
+  max-width: 640px !important;
+  min-height: 64px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  padding: 4px !important;
+  display: grid !important;
+  grid-template-columns: none !important;
+  grid-auto-flow: column !important;
+  grid-auto-columns: minmax(52px, 1fr) !important;
+  align-items: stretch !important;
+  gap: 2px !important;
+  transform: none !important;
+  border: 1px solid #344866 !important;
+  border-radius: 18px !important;
+  background: #0b172b !important;
+  color: #c3d0e3 !important;
+  box-shadow: 0 6px 20px #02061740 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  pointer-events: auto !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  color-scheme: dark;
+}
+
+.an-bottom-nav::-webkit-scrollbar { display: none; }
+
+html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] > a {
+  position: relative !important;
+  min-width: 0 !important;
+  min-height: 54px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 3px 2px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 3px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: transparent !important;
+  color: #c3d0e3 !important;
+  font: 700 11px/1.4 "Noto Sans Bengali", "Noto Sans JP", Inter, system-ui, sans-serif !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  opacity: 1 !important;
+  box-shadow: none !important;
+  transform: none !important;
+  transition: background-color .15s ease !important;
+  touch-action: manipulation;
+}
+
+html body.an-has-bottom-nav .an-bottom-nav[data-an-bottom-nav] > a::before,
+html body.an-has-bottom-nav .an-bottom-nav[data-an-bottom-nav] > a::after {
+  content: none !important;
+}
+
+html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] > a > span:not(.app-nav-icon) {
+  margin: 0 !important;
+  color: inherit !important;
+  font: inherit !important;
+  white-space: normal !important;
+}
+
+html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] > a > :is(i, svg, .app-nav-icon) {
+  flex: 0 0 auto !important;
+  width: 34px !important;
+  height: 28px !important;
+  margin: 0 !important;
+  padding: 4px !important;
+  display: grid !important;
+  place-items: center !important;
+  border: 0 !important;
+  border-radius: 9px !important;
+  background: transparent !important;
+  color: inherit !important;
+  font-size: 19px !important;
+  line-height: 1 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+html body.an-has-bottom-nav .an-bottom-nav[data-an-bottom-nav] > a > svg {
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+}
+
+html body.an-has-bottom-nav .an-bottom-nav[data-an-bottom-nav] .app-nav-icon > i {
+  color: inherit !important;
+  font-size: 19px !important;
+}
+
+html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] > a:is(.active, [aria-current="page"]) {
+  background: #193559 !important;
+  color: #83d4ff !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] > a:is(.active, [aria-current="page"]) > :is(i, svg, .app-nav-icon) {
+  background: #2379e9 !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+html body.an-has-bottom-nav .an-bottom-nav[data-an-bottom-nav] > a:focus-visible {
+  outline: 2px solid #83d4ff !important;
+  outline-offset: -2px !important;
+}
+
+@media (hover: hover) {
+  html body.an-has-bottom-nav .an-bottom-nav[data-an-bottom-nav] > a:hover {
+    background: #193559 !important;
+    color: #e7f4ff !important;
+  }
+}
+
+html body.an-has-bottom-nav :is(.study-toast, .scroll-top, .pwa-install-box) {
+  bottom: var(--an-bottom-nav-clearance) !important;
+}
+
+html body.an-has-bottom-nav.tutor-keyboard-open .an-bottom-nav[data-an-bottom-nav] {
+  display: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html body.an-has-bottom-nav .an-bottom-nav[data-an-bottom-nav] > a {
+    transition: none !important;
+  }
+}
+
+@media print {
+  html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] {
+    display: none !important;
+  }
+  html body.an-has-bottom-nav { padding-bottom: 0 !important; }
+}

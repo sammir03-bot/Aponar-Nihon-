@@ -109,6 +109,42 @@ def extract_links(html: str) -> list[str]:
     return parser.hrefs
 
 
+def mark_bottom_navigation(html: str) -> str:
+    """Scope shared dock styling without rewriting links or visible content."""
+    names = {"app-dock", "bottom", "bottom-nav", "app-bottom-nav", "study-dock"}
+    marked = False
+
+    def mark_tag(match: re.Match[str]) -> str:
+        nonlocal marked
+        tag = match.group(0)
+        classes = re.search(r'\bclass\s*=\s*([\'"])(.*?)\1', tag, flags=re.I | re.S)
+        if not classes or not names.intersection(classes.group(2).split()):
+            return tag
+        # .bottom is used only on the Mock Center's nav, not arbitrary divs.
+        if tag.lower().startswith("<div") and classes.group(2).split() != ["bottom-nav"]:
+            return tag
+        marked = True
+        if "data-an-bottom-nav=" in tag:
+            return tag
+        tag = tag[:classes.start(2)] + classes.group(2) + " an-bottom-nav" + tag[classes.end(2):]
+        return tag[:-1] + ' data-an-bottom-nav="true">'
+
+    updated = re.sub(r'<(?:nav|div)\b[^>]*>', mark_tag, html, flags=re.I)
+    if not marked:
+        return html
+
+    def mark_body(match: re.Match[str]) -> str:
+        tag = match.group(0)
+        classes = re.search(r'\bclass\s*=\s*([\'"])(.*?)\1', tag, flags=re.I | re.S)
+        if classes:
+            if "an-has-bottom-nav" in classes.group(2).split():
+                return tag
+            return tag[:classes.start(2)] + classes.group(2) + " an-has-bottom-nav" + tag[classes.end(2):]
+        return tag[:-1] + ' class="an-has-bottom-nav">'
+
+    return re.sub(r'<body\b[^>]*>', mark_body, updated, count=1, flags=re.I)
+
+
 def inject_assets(html: str, snippets: Iterable[str]) -> str:
     """Insert external assets before </head> without touching visible text."""
     if "</head" not in html.lower():
