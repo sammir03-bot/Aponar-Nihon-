@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="bn" dir="ltr" data-language-preset="bn" data-source-language="bn">
+<head>
+  <script id="legacy-origin-redirect">
+  (function(){
+    var h = location.hostname;
+    if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
+    var p = location.pathname || "/";
+    if (h === "sammir03-bot.github.io") {
+      var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
+      for (var i = 0; i < bases.length; i++) {
+        var base = bases[i];
+        if (p === base || p === base + "/") { p = "/"; break; }
+        if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+      }
+    }
+    if (p === "/index.html") p = "/";
+    else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+    else if (p.endsWith(".html")) p = p.slice(0, -5);
+    location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
+  })();
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#121726">
+  <meta name="description" content="N5 ও N4 আলাদা রেখে Minna no Nihongo-এর ক্রমে কাঞ্জি শিখুন। বাংলা অর্থ, শব্দ, সঠিক stroke order, লেখার অনুশীলন ও মনে রাখার রিভিশন।">
+  <title>কাঞ্জি শেখার পথ · N5 ও N4 | আপনার নিহোন</title>
+  <link rel="canonical" href="https://app.aponar-nihon.workers.dev/kanji-lab">
+  <link rel="stylesheet" href="/assets/css/kanji-lab.css?v=20261012.2">
+  <script type="module" src="/assets/js/kanji-lab.js?v=20261012.2"></script>
+</head>
+<body class="kl-page" data-bottom-navigation="true">
+  <a class="kl-skip" href="#course">পাঠে যান</a>
+  <header class="kl-top">
+    <a href="/index.html" class="kl-brand"><span>字</span><strong>আপনার নিহোন<small>কাঞ্জি শেখার পথ</small></strong></a>
+    <nav class="kl-levels" aria-label="কাঞ্জির লেভেল">
+      <a href="?level=n5" data-level="n5">N5</a><a href="?level=n4" data-level="n4">N4</a>
+    </nav>
+  </header>
+  <main class="kl-wrap">
+    <section class="kl-hero">
+      <div><p class="kl-eyebrow">漢字を、ひとつずつ。 · একবারে একটি কাঞ্জি</p>
+        <h1><span id="levelName">N5</span> কাঞ্জি<br><em>দেখে বুঝুন। মনে রাখুন।</em></h1>
+        <p class="kl-intro">আগে Minna no Nihongo-এর কাঞ্জি ইউনিট ধরে শিখুন। তারপর এই লেভেলের বাকি কাঞ্জি। প্রতিটি ছোট পাঠে অর্থ, শব্দ, লেখা এবং নিজের মনে পড়ার পরীক্ষা।</p>
+        <div class="kl-hero-actions"><button class="kl-primary" id="continueButton" disabled>পড়া শুরু করুন <span>→</span></button><button id="reviewButton" disabled>আজকের রিভিশন <span id="dueCount">০</span></button></div>
+      </div>
+      <div class="kl-hero-art" aria-hidden="true"><span class="kl-art-caption">মনে রাখার ছোট একটি ছবি</span><div class="kl-art-glyph">休</div><div class="kl-art-parts">亻 মানুষ <span>+</span> 木 গাছ</div><p>গাছের পাশে একটু বিশ্রাম।</p></div>
+    </section>
+    <section class="kl-stats" aria-label="আপনার শেখার অগ্রগতি"><div><strong id="totalCount">—</strong><span>এই লেভেলের কাঞ্জি</span></div><div><strong id="seenCount">০</strong><span>পড়া হয়েছে</span></div><div><strong id="masterCount">০</strong><span>দুই দিনে মনে পড়েছে</span></div><div><strong id="streakCount">০</strong><span>দিনের ধারাবাহিকতা</span></div></section>
+    <p id="saveNote" class="kl-save-note">আপনার অগ্রগতি এই ব্রাউজারে রাখা হয়।</p>
+    <section id="course" class="kl-course">
+      <div class="kl-section-head"><div><p class="kl-eyebrow">আপনার শেখার মানচিত্র</p><h2>বইয়ের ক্রমে ছোট ছোট পাঠ</h2></div><div class="kl-filters" aria-label="শেখার ধরন"><button data-view="lessons" aria-pressed="true">পাঠ</button><button data-view="library" aria-pressed="false">সব কাঞ্জি</button><button data-view="mistakes" aria-pressed="false">ভুলের খাতা</button></div></div>
+      <label class="kl-search-label" for="kanjiSearch">কাঞ্জি, পড়ার ধরন, শব্দ বা বাংলা অর্থ খুঁজুন</label><input id="kanjiSearch" class="kl-search" placeholder="যেমন: 休, やすむ, বিশ্রাম" type="search" autocomplete="off">
+      <div id="courseContent" aria-live="polite"><div class="kl-loading">আপনার পাঠগুলো খুলছে…</div></div>
+    </section>
+    <details class="kl-guide"><summary>কাঞ্জি শেখার সহজ নিয়ম ও বইয়ের সঙ্গে মিল</summary><div>
+      <p><b>শুধু অর্থ মুখস্থ করলেই শেষ নয়।</b> কাঞ্জি দেখে অর্থ বলুন, তারপর পরিচিত শব্দে পড়ুন। 音読み সাধারণত কাতাকানায়, 訓読み হিরাগানায় দেখানো আছে। একই কাঞ্জি ভিন্ন শব্দে ভিন্নভাবে পড়তে পারে—পুরো শব্দটি শিখুন।</p>
+      <p><b>লেখা:</b> নম্বর ও অ্যানিমেশন দেখে দাগের ক্রম শিখুন। আঙুল দিয়ে পরের দাগটি লিখুন। শেষে গাইড লুকিয়ে আবার চেষ্টা করুন।</p>
+      <p><b>রিভিশন:</b> আজকের পরীক্ষা, পরে ১, ৩, ৭, ১৪ ও ৩০ দিনের ব্যবধানে মনে পড়ার পরীক্ষা। ভুল হলে ১০ মিনিট পর আবার পড়ার তালিকায় আসবে।</p>
+      <p><b>বইয়ের সঙ্গে মিল:</b> এটি Minna no Nihongo দ্বিতীয় সংস্করণের কাঞ্জি ইউনিটের ক্রমে সাজানো স্বতন্ত্র বাংলা সহায়ক কোর্স। একটি ইউনিটে যে লেভেলের কাঞ্জি আছে, কেবল সেগুলোই এই সেকশনে থাকবে। মূল বইয়ের অনুশীলন বা পূর্ণ পাঠ এখানে কপি করা হয়নি।</p>
+      <p><b>লেভেলের ভিত্তি:</b> <a href="https://github.com/davidluzgouveia/kanji-data" target="_blank" rel="noopener">পড়াশোনার JLPT শ্রেণিবিন্যাস</a> দিয়ে N5 ও N4 আলাদা করা হয়েছে। JLPT পরীক্ষক নতুন লেভেলের নির্দিষ্ট সরকারি কাঞ্জি তালিকা প্রকাশ করেন না।</p>
+      <p>বইয়ের ক্রম: <a href="https://www.3anet.co.jp/np/en/books/2358/" target="_blank" rel="noopener">Minna I</a> · <a href="https://www.3anet.co.jp/np/en/books/2458/" target="_blank" rel="noopener">Minna II</a>। পড়ার ধরন: <a href="https://www.edrdg.org/wiki/KANJIDIC_Project.html" target="_blank" rel="noopener">KANJIDIC2 / EDRDG</a>। দাগের তথ্য: <a href="https://kanjivg.tagaini.net/" target="_blank" rel="noopener">KanjiVG · Ulrich Apel</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>। মনে রাখার ছবিগুলো শেখার কৌশল, ঐতিহাসিক উৎপত্তির ব্যাখ্যা নয়।</p>
+    </div></details>
+    <p class="kl-old-links"><a href="/n5.html">N5 শেখার সব বিষয়</a> · <a href="/n4.html">N4 শেখার সব বিষয়</a> · <a href="/n3-kanji.html">N3 কাঞ্জি</a></p>
+  </main>
+  <dialog id="studyDialog" class="kl-dialog" aria-labelledby="studyTitle">
+    <div class="kl-dialog-top"><div><p id="studyCaption" class="kl-eyebrow"></p><h2 id="studyTitle">আপনার ছোট পাঠ</h2></div><button id="closeStudy" class="kl-close" aria-label="পাঠ বন্ধ করুন">✕</button></div>
+    <div id="sessionSteps" class="kl-steps" aria-label="পাঠের ধাপ"></div>
+    <div id="studyBody"></div>
+    <p id="sessionFeedback" class="kl-feedback" role="status" aria-live="polite"></p>
+    <div class="kl-dialog-footer"><span id="sessionProgress"></span><button id="nextStep" class="kl-primary">পরের ধাপ →</button></div>
+  </dialog>
+  <div id="klToast" class="kl-toast" role="status" aria-live="polite"></div>
+  <noscript><p>ইন্টারঅ্যাকটিভ পাঠের জন্য JavaScript চালু করুন। আগের N5 ও N4 কার্ডের লিংক উপরে রয়েছে।</p></noscript>
+</body>
+</html>

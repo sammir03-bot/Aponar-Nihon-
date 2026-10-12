@@ -1,0 +1,39 @@
+name: Kanji Lab Quality
+on:
+  push:
+    branches: [main]
+    paths: ['*kanji*', 'n5.html', 'n4.html', 'assets/**/kanji-lab*', 'assets/data/kanji-lab/**', 'tools/content/kanji-lab/**', 'tools/content/build-kanji-lab.py', 'tools/check_kanji_lab.mjs', 'tests/kanji-lab.spec.mjs', '.github/workflows/kanji-lab-quality.yml']
+  pull_request:
+    paths: ['*kanji*', 'n5.html', 'n4.html', 'assets/**/kanji-lab*', 'assets/data/kanji-lab/**', 'tools/content/kanji-lab/**', 'tools/content/build-kanji-lab.py', 'tools/check_kanji_lab.mjs', 'tests/kanji-lab.spec.mjs', '.github/workflows/kanji-lab-quality.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  course:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Validate exact level boundaries, review scheduling and preserved progress
+        run: node tools/check_kanji_lab.mjs
+      - name: Build and verify the site
+        run: npm run verify
+      - name: Install browser test runner
+        run: npm install --no-save @playwright/test@1.62.1
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Test N5 and N4 learning and writing on mobile and desktop
+        run: npx playwright test tests/kanji-lab.spec.mjs
+      - name: Save browser diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kanji-lab-diagnostics
+          path: |
+            test-results
+            playwright-report
+          if-no-files-found: ignore
