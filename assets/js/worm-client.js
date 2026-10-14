@@ -38,6 +38,8 @@
       var active = data.configured === true;
       var usage = document.querySelector(".tutor-usage");
       if (usage && active) usage.textContent = "WORM GPT";
+      var historyButton = document.getElementById("wormHistoryButton");
+      if (historyButton) historyButton.style.display = active ? "" : "none";
       return active;
     } catch (_error) {
       return false;
@@ -124,6 +126,11 @@
       try { localStorage.removeItem(PREFIX + lastUserId); } catch (_error) { /* ignore */ }
     }
   }
+  function selectConversation(id) {
+    if (!/^[a-f0-9-]{36}$/i.test(id) || !lastUserId) throw new Error("Invalid chat selection");
+    forceFresh = false;
+    localStorage.setItem(PREFIX + lastUserId, id);
+  }
   async function listChats() {
     var result = await request("list-chats");
     return result.json();
@@ -136,6 +143,7 @@
     ready: available,
     sendMessage: sendMessage,
     resetConversation: resetConversation,
+    selectConversation: selectConversation,
     listChats: listChats,
     getHistory: getHistory
   };
