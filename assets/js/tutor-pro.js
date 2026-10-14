@@ -826,9 +826,9 @@
                   if (role !== "user" && role !== "bot") return null;
                   var content = String(entry.content || "").trim();
                   if (role === "user") {
-                    var marker = "\\n\\nLearner's message:\\n";
-                    var boundary = content.lastIndexOf(marker.replace(/\\n/g, "\\n"));
-                    if (boundary >= 0) content = content.slice(boundary + marker.replace(/\\n/g, "\\n").length).trim();
+                    var marker = "\n\nLearner\'s message:\n";
+                    var boundary = content.lastIndexOf(marker);
+                    if (boundary >= 0) content = content.slice(boundary + marker.length).trim();
                   }
                   if (!content) return null;
                   var time = entry.created_at ? new Date(entry.created_at).toLocaleTimeString() : timeNow();
