@@ -66,6 +66,7 @@
       </div>
       <div class="tutor-top-actions">
         <button class="tutor-icon-btn primary" id="newChatButton" type="button" aria-label="নতুন চ্যাট" title="নতুন চ্যাট"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i></button>
+        <button class="tutor-icon-btn" id="wormHistoryButton" type="button" style="display:none" aria-label="আগের AI চ্যাট" title="চ্যাট হিস্ট্রি"><i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i></button>
         <button class="tutor-icon-btn" id="settingsButton" type="button" aria-label="টিউটর সেটিংস" title="সেটিংস"><i class="fa-solid fa-sliders" aria-hidden="true"></i></button>
         <button class="tutor-icon-btn" type="button" data-app-menu-open aria-label="সব সেকশনের মেনু খুলুন" title="মেনু"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
       </div>
@@ -195,6 +196,11 @@
       </div>
       <div class="tutor-dialog-actions"><button class="tutor-dialog-btn danger" id="clearHistoryButton" type="button">ইতিহাস মুছুন</button><button class="tutor-dialog-btn" value="cancel">বাতিল</button><button class="tutor-dialog-btn primary" id="saveSettingsButton" type="button">সংরক্ষণ করুন</button></div>
     </form>
+  </dialog>
+
+  <dialog class="tutor-dialog" id="wormHistoryDialog" aria-labelledby="wormHistoryTitle">
+    <div class="tutor-dialog-head"><h2 id="wormHistoryTitle">আগের AI চ্যাট</h2><button class="tutor-icon-btn" id="wormHistoryClose" type="button" aria-label="বন্ধ করুন"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
+    <div class="tutor-dialog-body" id="wormHistoryList">চ্যাট লোড হচ্ছে…</div>
   </dialog>
 
   <div class="tutor-toast" id="tutorToast" role="status" aria-live="polite"><i class="fa-solid fa-circle-check" aria-hidden="true"></i><span></span></div>
