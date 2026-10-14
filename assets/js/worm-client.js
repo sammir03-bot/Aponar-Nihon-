@@ -36,8 +36,7 @@
       if (!response.ok) return false;
       var data = await response.json();
       var active = data.configured === true;
-      var usage = document.querySelector(".tutor-usage");
-      if (usage && active) usage.textContent = "WORM GPT";
+      // Preserve the original tutor's daily question counter in dual-provider mode.
       var historyButton = document.getElementById("wormHistoryButton");
       if (historyButton) historyButton.style.display = active ? "" : "none";
       return active;
