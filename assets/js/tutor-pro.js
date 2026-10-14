@@ -301,7 +301,9 @@
       role: role,
       text: text,
       time: typeof item.time === "string" ? item.time : "",
-      error: Boolean(item.error || item.isError)
+      error: Boolean(item.error || item.isError || item.pending),
+      provider: item.role === "bot" && ["legacy", "worm"].includes(item.provider) ? item.provider : "",
+      pending: false
     };
   }
 
@@ -392,7 +394,9 @@
   function messageElement(message, index) {
     var isUser = message.role === "user";
     var article = document.createElement("article");
-    article.className = "tutor-message " + (isUser ? "user" : "assistant") + (message.error ? " error" : "");
+    article.className = "tutor-message " + (isUser ? "user" : "assistant") + (message.error ? " error" : "") + (message.pending ? " pending" : "");
+    if (message.provider === "worm") article.classList.add("provider-worm");
+    if (message.provider === "legacy") article.classList.add("provider-legacy");
     article.dataset.messageIndex = String(index);
 
     var avatar = document.createElement("span");
@@ -409,10 +413,11 @@
     var meta = document.createElement("div");
     meta.className = "tutor-message-meta";
     var label = document.createElement("span");
-    label.textContent = (isUser ? "আপনি" : "AI Tutor") + (message.time ? " · " + message.time : "");
+    var sourceLabel = isUser ? "আপনি" : message.provider === "worm" ? "WORM GPT" : message.provider === "legacy" ? "আগের AI Tutor" : "AI Tutor";
+    label.textContent = sourceLabel + (message.time ? " · " + message.time : "");
     meta.appendChild(label);
 
-    if (!isUser && !message.error) {
+    if (!isUser && !message.error && !message.pending) {
       var actions = document.createElement("span");
       actions.className = "tutor-message-actions";
       actions.innerHTML = '<button class="tutor-msg-action" type="button" data-action="copy" aria-label="উত্তর কপি করুন" title="কপি"><i class="fa-regular fa-copy" aria-hidden="true"></i></button>' +
@@ -542,6 +547,7 @@
     return answer;
   }
 
+  // Both providers run independently: one failing never hides the other result.
   async function sendMessage(rawMessage) {
     if (state.busy) {
       if (state.controller) state.controller.abort();
@@ -552,22 +558,21 @@
       els.input.focus();
       return;
     }
-    var useWorm = Boolean(window.WormTutor && await window.WormTutor.ready());
-    if (!useWorm && getUsage().count >= DAILY_LIMIT) {
-      showToast("আজকের ২০টি প্রশ্ন শেষ। আগামীকাল আবার চেষ্টা করুন।", true);
-      return;
-    }
-
-    var history = state.messages.filter(function (item) { return !item.error; }).slice(-8).map(function (item) {
+    var history = state.messages.filter(function (item) {
+      // Do not send WORM answers to the original tutor as its own previous answers.
+      return !item.error && !item.pending && (item.role === "user" || item.provider !== "worm");
+    }).slice(-8).map(function (item) {
       return { role: item.role, text: item.text };
     });
     state.messages.push({ role: "user", text: message, time: timeNow(), error: false });
+    var legacySlot = { role: "bot", provider: "legacy", text: "আগের AI উত্তর তৈরি করছে…", time: timeNow(), pending: true, error: false };
+    var wormSlot = { role: "bot", provider: "worm", text: "WORM GPT উত্তর তৈরি করছে…", time: timeNow(), pending: true, error: false };
+    state.messages.push(legacySlot, wormSlot);
     state.messages = state.messages.slice(-30);
     saveState();
     renderConversation(true);
     els.input.value = "";
     resizeInput();
-    addTyping();
     setBusy(true);
 
     var controller = new AbortController();
@@ -578,67 +583,76 @@
     }, 110000);
     state.controller = controller;
 
-    var streamingIndex = -1;
-    try {
-      var reply = "";
-      if (useWorm) {
-        try {
-          reply = await window.WormTutor.sendMessage({
-            message: message,
-            level: state.level,
-            mode: state.mode,
-            depth: state.depth
-          }, controller.signal, function (partial) {
-            if (streamingIndex < 0) {
-              removeTyping();
-              state.messages.push({ role: "bot", text: partial, time: timeNow(), error: false });
-              streamingIndex = state.messages.length - 1;
-              renderConversation(true);
-            } else {
-              state.messages[streamingIndex].text = partial;
-              var bubble = els.messages.querySelector('[data-message-index="' + streamingIndex + '"] .tutor-bubble');
-              if (bubble) bubble.innerHTML = renderMarkdown(partial);
-              scrollBottom();
-            }
-          });
-        } catch (wormError) {
-          if (controller.signal.aborted || getUsage().count >= DAILY_LIMIT) throw wormError;
-          reply = await requestLegacyTutor(message, history, controller.signal);
-          useWorm = false;
-          var usageLabel = document.querySelector(".tutor-usage");
-          if (usageLabel) usageLabel.textContent = "বিকল্প AI";
-          showToast("WORM GPT সাড়া দেয়নি, বিকল্প AI ব্যবহার হয়েছে");
-        }
+    function updateSlot(slot, text, isError, pending) {
+      if (!state.messages.includes(slot)) return;
+      slot.text = String(text || "");
+      slot.error = Boolean(isError);
+      slot.pending = Boolean(pending);
+      if (pending) {
+        var index = state.messages.indexOf(slot);
+        var bubble = els.messages.querySelector('[data-message-index="' + index + '"] .tutor-bubble');
+        if (bubble) bubble.innerHTML = renderMarkdown(slot.text);
       } else {
-        reply = await requestLegacyTutor(message, history, controller.signal);
+        saveState();
+        renderConversation(true);
       }
-      if (!reply) throw new Error("AI খালি উত্তর দিয়েছে। প্রশ্নটি অন্যভাবে লিখে আবার চেষ্টা করুন।");
+    }
 
-      removeTyping();
-      if (streamingIndex < 0) state.messages.push({ role: "bot", text: reply, time: timeNow(), error: false });
-      else state.messages[streamingIndex].text = reply;
-      state.messages = state.messages.slice(-30);
-      if (!useWorm) incrementUsage();
+    async function runOriginal() {
+      if (getUsage().count >= DAILY_LIMIT) {
+        updateSlot(legacySlot, "আজকের আগের AI Tutor-এর ২০টি প্রশ্ন শেষ। আগামীকাল আবার চেষ্টা করুন।", true, false);
+        return;
+      }
+      try {
+        var reply = await requestLegacyTutor(message, history, controller.signal);
+        if (controller.signal.aborted) return;
+        updateSlot(legacySlot, reply, false, false);
+        incrementUsage();
+      } catch (error) {
+        var reason = controller.signal.aborted ?
+          (timedOut ? "আগের AI Tutor-এর উত্তর পেতে বেশি সময় লেগেছে।" : "উত্তর থামানো হয়েছে।") :
+          (error && error.message ? error.message : "আগের AI Tutor এই মুহূর্তে উত্তর দিতে পারেনি।");
+        updateSlot(legacySlot, "⚠️ " + reason, true, false);
+      }
+    }
+
+    async function runWorm() {
+      try {
+        if (!window.WormTutor || !await window.WormTutor.ready()) {
+          updateSlot(wormSlot, "WORM GPT পাওয়া যাচ্ছে না। লগইন করে আবার চেষ্টা করুন।", true, false);
+          return;
+        }
+        var reply = await window.WormTutor.sendMessage({
+          message: message,
+          level: state.level,
+          mode: state.mode,
+          depth: state.depth
+        }, controller.signal, function (partial) {
+          if (controller.signal.aborted) return;
+          updateSlot(wormSlot, partial, false, true);
+          scrollBottom();
+        });
+        if (controller.signal.aborted) return;
+        updateSlot(wormSlot, reply, false, false);
+      } catch (error) {
+        var reason = controller.signal.aborted ?
+          (timedOut ? "WORM GPT-এর উত্তর পেতে বেশি সময় লেগেছে।" : "উত্তর থামানো হয়েছে।") :
+          "WORM GPT এই প্রশ্নের উত্তর দিতে পারেনি। আগের AI Tutor-এর উত্তর উপরে দেখুন।";
+        updateSlot(wormSlot, "⚠️ " + reason, true, false);
+      }
+    }
+
+    try {
+      await Promise.allSettled([runOriginal(), runWorm()]);
+      // A stopped response is not silently represented as complete.
+      if (controller.signal.aborted) {
+        if (legacySlot.pending) updateSlot(legacySlot, "উত্তর থামানো হয়েছে।", true, false);
+        if (wormSlot.pending) updateSlot(wormSlot, "উত্তর থামানো হয়েছে।", true, false);
+      }
       saveState();
       renderConversation(true);
       els.messages.insertAdjacentHTML("beforeend", followupMarkup());
       scrollBottom();
-    } catch (error) {
-      removeTyping();
-      if (streamingIndex >= 0) {
-        state.messages.splice(streamingIndex, 1);
-        saveState();
-        renderConversation(true);
-      }
-      if (error && error.name === "AbortError" && !timedOut) {
-        showToast("উত্তর থামানো হয়েছে");
-      } else {
-        var reason = timedOut ? "উত্তর পেতে বেশি সময় লাগছে। একটু পরে আবার চেষ্টা করুন।" : (error && error.message ? error.message : "সংযোগ সমস্যা হয়েছে। আবার চেষ্টা করুন।");
-        state.messages.push({ role: "bot", text: "⚠️ **AI সংযোগ সমস্যা**\n\n" + reason, time: timeNow(), error: true });
-        saveState();
-        renderConversation(true);
-        showToast("AI সংযোগে সমস্যা হয়েছে", true);
-      }
     } finally {
       window.clearTimeout(timeout);
       state.controller = null;
@@ -847,7 +861,7 @@
                   }
                   if (!content) return null;
                   var time = entry.created_at ? new Date(entry.created_at).toLocaleTimeString() : timeNow();
-                  return { role: role, text: content.slice(0, 12000), time: time, error: false };
+                  return { role: role, text: content.slice(0, 12000), time: time, error: false, provider: role === "bot" ? "worm" : "" };
                 }).filter(Boolean).slice(-30);
                 window.WormTutor.selectConversation(chat.id);
                 state.messages = messages;
@@ -909,15 +923,15 @@
     button.className = "tutor-icon-btn";
     button.type = "button";
     button.style.display = "none";
-    button.setAttribute("aria-label", "আগের AI চ্যাট");
-    button.title = "চ্যাট হিস্ট্রি";
+    button.setAttribute("aria-label", "আগের WORM GPT চ্যাট");
+    button.title = "WORM GPT চ্যাট হিস্ট্রি";
     button.innerHTML = '<i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>';
     newChat.insertAdjacentElement("afterend", button);
     var dialog = document.createElement("dialog");
     dialog.id = "wormHistoryDialog";
     dialog.className = "tutor-dialog";
     dialog.setAttribute("aria-labelledby", "wormHistoryTitle");
-    dialog.innerHTML = '<div class="tutor-dialog-head"><h2 id="wormHistoryTitle">আগের AI চ্যাট</h2><button class="tutor-icon-btn" id="wormHistoryClose" type="button" aria-label="বন্ধ করুন"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div><div class="tutor-dialog-body" id="wormHistoryList">চ্যাট লোড হচ্ছে…</div>';
+    dialog.innerHTML = '<div class="tutor-dialog-head"><h2 id="wormHistoryTitle">আগের WORM GPT চ্যাট</h2><button class="tutor-icon-btn" id="wormHistoryClose" type="button" aria-label="বন্ধ করুন"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div><div class="tutor-dialog-body" id="wormHistoryList">চ্যাট লোড হচ্ছে…</div>';
     document.body.appendChild(dialog);
   }
 
