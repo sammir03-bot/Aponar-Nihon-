@@ -788,6 +788,66 @@
       if (!state.messages.length || await window.AponarI18nContent.confirm("বর্তমান চ্যাট বন্ধ করে নতুন চ্যাট শুরু করবেন?")) clearConversation(false);
     });
     $("#settingsButton").addEventListener("click", openSettings);
+    var wormHistoryButton = $("#wormHistoryButton");
+    var wormHistoryDialog = $("#wormHistoryDialog");
+    var wormHistoryList = $("#wormHistoryList");
+    if (wormHistoryButton && wormHistoryDialog && wormHistoryList) {
+      $("#wormHistoryClose").addEventListener("click", function () {
+        if (typeof wormHistoryDialog.close === "function") wormHistoryDialog.close();
+        else wormHistoryDialog.removeAttribute("open");
+      });
+      wormHistoryButton.addEventListener("click", async function () {
+        if (!window.WormTutor) return;
+        wormHistoryList.textContent = "চ্যাট লোড হচ্ছে…";
+        if (typeof wormHistoryDialog.showModal === "function") wormHistoryDialog.showModal();
+        else wormHistoryDialog.setAttribute("open", "");
+        try {
+          var result = await window.WormTutor.listChats();
+          var chats = result && Array.isArray(result.chats) ? result.chats : [];
+          wormHistoryList.innerHTML = "";
+          if (!chats.length) {
+            wormHistoryList.textContent = "এখনো কোনো চ্যাট নেই।";
+            return;
+          }
+          chats.forEach(function (chat) {
+            if (!chat || !/^[a-f0-9-]{36}$/i.test(String(chat.id || ""))) return;
+            var item = document.createElement("button");
+            item.type = "button";
+            item.className = "tutor-dialog-btn";
+            item.style.cssText = "display:block;width:100%;text-align:left;margin-bottom:8px";
+            item.textContent = String(chat.title || "নতুন চ্যাট").slice(0, 100);
+            item.addEventListener("click", async function () {
+              item.disabled = true;
+              try {
+                var data = await window.WormTutor.getHistory(chat.id);
+                if (!data || !Array.isArray(data.messages)) throw new Error("চ্যাট হিস্ট্রি পাওয়া যায়নি");
+                var messages = data.messages.map(function (entry) {
+                  var role = entry.role === "assistant" ? "bot" : entry.role;
+                  if (role !== "user" && role !== "bot") return null;
+                  var content = String(entry.content || "").trim();
+                  if (!content) return null;
+                  var time = entry.created_at ? new Date(entry.created_at).toLocaleTimeString() : timeNow();
+                  return { role: role, text: content.slice(0, 12000), time: time, error: false };
+                }).filter(Boolean).slice(-30);
+                window.WormTutor.selectConversation(chat.id);
+                state.messages = messages;
+                saveState();
+                renderConversation(true);
+                if (typeof wormHistoryDialog.close === "function") wormHistoryDialog.close();
+                else wormHistoryDialog.removeAttribute("open");
+              } catch (error) {
+                showToast(error && error.message ? error.message : "হিস্ট্রি লোড হয়নি", true);
+              } finally {
+                item.disabled = false;
+              }
+            });
+            wormHistoryList.appendChild(item);
+          });
+        } catch (error) {
+          wormHistoryList.textContent = error && error.message ? error.message : "হিস্ট্রি লোড হয়নি";
+        }
+      });
+    }
     $("#saveSettingsButton").addEventListener("click", function () {
       var selectedLevel = $('input[name="settingsLevel"]:checked');
       var selectedDepth = $('input[name="settingsDepth"]:checked');
