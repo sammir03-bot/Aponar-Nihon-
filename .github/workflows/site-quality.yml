@@ -42,6 +42,9 @@ jobs:
       - name: Build and verify with Python + Node.js
         run: npm run verify
 
+      - name: Verify revised Bunka II syllabus and reading pages
+        run: python3 tools/check_bunka_revised.py --site _site
+
       - name: Verify generated professional and SEO assets
         run: |
           test -s _site/assets/css/pro-core.css
