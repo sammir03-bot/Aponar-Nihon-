@@ -57,6 +57,37 @@
     if (!response.ok) throw new Error(await errorMessage(response));
     return response;
   }
+  // The provider may complete a stream before exposing content to the browser.
+  // Read the saved assistant answer for the exact latest user message, never an older answer.
+  async function recoverFromHistory(conversationId, question, signal, s) {
+    for (var attempt = 0; attempt < 2; attempt++) {
+      if (signal && signal.aborted) throw new DOMException("Aborted", "AbortError");
+      var historyResponse = await request("get-history", {
+        conversation_id: conversationId
+      }, signal, s);
+      var history = await historyResponse.json();
+      var entries = Array.isArray(history.messages) ? history.messages : [];
+      var userIndex = -1;
+      for (var i = entries.length - 1; i >= 0; i--) {
+        var item = entries[i];
+        if (item && item.role === "user" && typeof item.content === "string" &&
+            item.content.trim().endsWith(question.trim())) {
+          userIndex = i;
+          break;
+        }
+      }
+      if (userIndex >= 0) {
+        for (var j = userIndex + 1; j < entries.length; j++) {
+          var next = entries[j];
+          if (next && next.role === "assistant" && typeof next.content === "string" &&
+              next.content.trim()) return next.content.trim();
+        }
+      }
+      if (attempt === 0) await new Promise(function (resolve) { setTimeout(resolve, 650); });
+    }
+    return "";
+  }
+
   async function sendMessage(payload, signal, onChunk) {
     var s = await session();
     if (!s) throw new Error("লগইন প্রয়োজন");
@@ -85,19 +116,42 @@
     var pending = "";
     var answer = "";
     var done = false;
+    var streamError = "";
     function processEvent(frame) {
-      var dataLines = frame.split(/\r?\n/).filter(function (line) { return line.indexOf("data:") === 0; });
+      var dataLines = frame.split(/\r?\n/).filter(function (line) {
+        return line.indexOf("data:") === 0;
+      });
       for (var i = 0; i < dataLines.length; i++) {
         var data = dataLines[i].slice(5).trim();
         if (data === "[DONE]") { done = true; break; }
         if (!data) continue;
         try {
           var obj = JSON.parse(data);
-          if (typeof obj.content === "string") {
-            answer += obj.content;
+          if (!obj || typeof obj !== "object") continue;
+          if (obj.error || obj.type === "error") {
+            streamError = "WORM GPT সেবা থেকে উত্তর পাওয়া যায়নি";
+            continue;
+          }
+          var delta = "";
+          if (typeof obj.content === "string") delta = obj.content;
+          else if (typeof obj.delta === "string") delta = obj.delta;
+          else if (typeof obj.text === "string") delta = obj.text;
+          else if (typeof obj.response === "string") delta = obj.response;
+          else if (obj.data && typeof obj.data.content === "string") delta = obj.data.content;
+          else if (obj.message && typeof obj.message.content === "string") delta = obj.message.content;
+          else if (obj.choices && obj.choices[0]) {
+            var choice = obj.choices[0];
+            if (choice.delta && typeof choice.delta.content === "string") delta = choice.delta.content;
+            else if (choice.message && typeof choice.message.content === "string") delta = choice.message.content;
+            else if (typeof choice.text === "string") delta = choice.text;
+          }
+          if (delta) {
+            answer += delta;
             if (typeof onChunk === "function") onChunk(answer);
           }
-        } catch (_error) { /* An incomplete/malformed SSE event is ignored. */ }
+        } catch (_error) {
+          // Ignore non-JSON heartbeat frames but do not discard later valid chunks.
+        }
       }
     }
     try {
@@ -117,7 +171,12 @@
     } finally {
       reader.releaseLock();
     }
-    if (!answer.trim()) throw new Error("WORM GPT খালি উত্তর দিয়েছে");
+    if (!answer.trim() && !streamError) {
+      answer = await recoverFromHistory(id, payload.message, signal, s);
+      if (answer && typeof onChunk === "function") onChunk(answer);
+    }
+    if (streamError) throw new Error(streamError);
+    if (!answer.trim()) throw new Error("WORM GPT উত্তর পাঠায়নি। একটু পরে আবার চেষ্টা করুন।");
     return answer.trim();
   }
   function resetConversation() {
