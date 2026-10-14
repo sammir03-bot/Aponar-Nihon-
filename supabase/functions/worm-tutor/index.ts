@@ -39,7 +39,7 @@ async function upstream(path: string, body: Record<string, unknown>, creds?: {up
       "x-api-key": WORM_KEY,
       ...(creds ? { "x-user-id": creds.upstream_user_id, "x-access-key": creds.upstream_access_key } : {}),
     },
-    body: JSON.stringify(body),
+    body: path === "create-user" ? undefined : JSON.stringify(body),
     signal,
   });
 }
