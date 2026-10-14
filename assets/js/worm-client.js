@@ -85,19 +85,67 @@
     var pending = "";
     var answer = "";
     var done = false;
+    var upstreamError = "";
+    function appendText(value) {
+      if (typeof value !== "string" || !value.length) return;
+      answer += value;
+      if (answer.trim() && typeof onChunk === "function") onChunk(answer);
+    }
+    function eventText(obj) {
+      if (!obj || typeof obj !== "object") return "";
+      var candidates = [
+        obj.content,
+        obj.delta && obj.delta.content,
+        obj.data && obj.data.content,
+        obj.message && obj.message.content,
+        obj.choices && obj.choices[0] && obj.choices[0].delta && obj.choices[0].delta.content,
+        obj.choices && obj.choices[0] && obj.choices[0].message && obj.choices[0].message.content,
+        obj.response,
+        obj.text
+      ];
+      for (var c = 0; c < candidates.length; c++) {
+        var value = candidates[c];
+        if (typeof value === "string") return value;
+        if (Array.isArray(value)) {
+          var segments = value.map(function (part) {
+            return typeof part === "string" ? part : part && typeof part.text === "string" ? part.text : "";
+          }).join("");
+          if (segments) return segments;
+        }
+      }
+      return "";
+    }
+    function parseData(raw) {
+      var data = raw.trim();
+      if (!data) return;
+      if (data === "[DONE]") { done = true; return; }
+      try {
+        var obj = JSON.parse(data);
+        if (typeof obj === "string") { appendText(obj); return; }
+        if (obj && obj.error) {
+          upstreamError = typeof obj.error === "string" ? obj.error : String(obj.error.message || "Provider error");
+        }
+        appendText(eventText(obj));
+      } catch (_error) {
+        // Some providers send advisory fields that are not valid JSON; do not display them as AI answers.
+      }
+    }
     function processEvent(frame) {
-      var dataLines = frame.split(/\r?\n/).filter(function (line) { return line.indexOf("data:") === 0; });
-      for (var i = 0; i < dataLines.length; i++) {
-        var data = dataLines[i].slice(5).trim();
-        if (data === "[DONE]") { done = true; break; }
-        if (!data) continue;
-        try {
-          var obj = JSON.parse(data);
-          if (typeof obj.content === "string") {
-            answer += obj.content;
-            if (typeof onChunk === "function") onChunk(answer);
-          }
-        } catch (_error) { /* An incomplete/malformed SSE event is ignored. */ }
+      var lines = frame.split(/\r?\n/);
+      var dataLines = lines.filter(function (line) { return line.indexOf("data:") === 0; }).map(function (line) {
+        return line.slice(5).trimStart();
+      });
+      if (dataLines.length) {
+        // SSE permits several data: lines per event. Most WORM responses contain one JSON object per event.
+        if (dataLines.length === 1) parseData(dataLines[0]);
+        else {
+          var combined = dataLines.join("\n");
+          try { JSON.parse(combined); parseData(combined); }
+          catch (_error) { dataLines.forEach(parseData); }
+        }
+      } else if (frame.trim()) {
+        // Gracefully accept an upstream JSON response mislabeled as an SSE stream.
+        parseData(frame);
       }
     }
     try {
@@ -117,7 +165,35 @@
     } finally {
       reader.releaseLock();
     }
-    if (!answer.trim()) throw new Error("WORM GPT খালি উত্তর দিয়েছে");
+    if (!answer.trim()) {
+      // The provider can persist its answer even when its SSE transport emits no text.
+      // Only recover an answer following the exact latest user turn; never return a stale response.
+      try {
+        var historyResult = await request("get-history", { conversation_id: id }, signal, s);
+        var historyData = await historyResult.json();
+        var messages = Array.isArray(historyData.messages) ? historyData.messages : [];
+        var lastUser = -1;
+        for (var i = 0; i < messages.length; i++) {
+          if (messages[i] && messages[i].role === "user") lastUser = i;
+        }
+        var currentQuestion = String(payload.message || "").trim();
+        if (lastUser >= 0 && currentQuestion &&
+            String(messages[lastUser].content || "").trim().endsWith(currentQuestion)) {
+          for (var j = lastUser + 1; j < messages.length; j++) {
+            var item = messages[j];
+            if (item && item.role === "assistant" && typeof item.content === "string" && item.content.trim()) {
+              answer = item.content.trim();
+              if (typeof onChunk === "function") onChunk(answer);
+            }
+          }
+        }
+      } catch (_historyError) { /* The existing AI fallback can handle an unrecoverable empty stream. */ }
+    }
+    if (!answer.trim()) {
+      var error = new Error(upstreamError ? "WORM GPT উত্তর পাঠাতে পারেনি। বিকল্প AI চেষ্টা হচ্ছে।" : "WORM GPT থেকে খালি response এসেছে।");
+      error.code = "WORM_EMPTY_RESPONSE";
+      throw error;
+    }
     return answer.trim();
   }
   function resetConversation() {
