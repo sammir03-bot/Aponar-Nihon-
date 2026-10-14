@@ -58,6 +58,16 @@ MOVED_PAGE_ARCHIVES = {
 }
 
 
+# The user studies the revised 19–34 edition. Preserve the previous 19–36
+# companion verbatim in noindex archives while correcting its public routes.
+MOVED_PAGE_ARCHIVES.update({
+    name: f"archive/shin-bunka-pre-revised-20261014/{name}"
+    for name in ["n4.html", "n4-shin-bunka-grammar.html"] + [
+        f"n4-shin-bunka-lesson-{n}.html" for n in range(19, 37)
+    ]
+})
+
+
 def git(*args: str) -> str:
     return subprocess.check_output(
         ["git", *args], cwd=ROOT, text=True, encoding="utf-8", errors="strict"

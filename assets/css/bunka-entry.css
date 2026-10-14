@@ -1,0 +1,19 @@
+/* Compact course entry, outside the generic decorative resource-card styles. */
+#n4-bunka-entry{grid-column:1/-1;display:flex;align-items:center;gap:18px;min-width:0;min-height:118px;padding:22px 25px;border:1px solid #bdd3c3;border-radius:16px;background:#edf4eb;color:#183f32;text-decoration:none;box-shadow:none}
+#n4-bunka-entry .bunka-entry-icon{width:56px;height:62px;flex:none;display:grid;place-items:center;border:1px solid #b4ceba;border-radius:10px;background:#dcebd9;color:#246044;font:600 29px/1 'Noto Sans JP',sans-serif}
+#n4-bunka-entry .bunka-entry-copy{display:grid;gap:5px;min-width:0;flex:1}
+#n4-bunka-entry small{color:#477256;font-size:10px;font-weight:600;line-height:1.6}
+#n4-bunka-entry strong{color:#183f32;font-size:20px;line-height:1.6;font-weight:800}
+#n4-bunka-entry .bunka-entry-copy>span{color:#566e5d;font-size:12px;line-height:1.8}
+#n4-bunka-entry .bunka-entry-open{flex:none;display:flex;align-items:center;gap:15px;color:#216342;font-size:13px;font-weight:700}
+#n4-bunka-entry:focus-visible{outline:3px solid #539565;outline-offset:4px}
+@media(hover:hover){#n4-bunka-entry:hover{background:#e5f0e1;border-color:#82ad8e;transform:none}}
+@media(max-width:640px){
+ #n4-bunka-entry{gap:12px;min-height:132px;padding:17px 15px;align-items:start;border-radius:14px;position:relative}
+ #n4-bunka-entry .bunka-entry-icon{width:39px;height:49px;font-size:24px;margin-top:4px}
+ #n4-bunka-entry .bunka-entry-copy{gap:6px;padding-bottom:22px}
+ #n4-bunka-entry small{font-size:9px}
+ #n4-bunka-entry strong{font-size:16px;line-height:1.65}
+ #n4-bunka-entry .bunka-entry-copy>span{font-size:11px}
+ #n4-bunka-entry .bunka-entry-open{position:absolute;bottom:13px;right:17px;font-size:11px;gap:10px}
+}
