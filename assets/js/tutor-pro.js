@@ -525,7 +525,8 @@
       els.input.focus();
       return;
     }
-    if (getUsage().count >= DAILY_LIMIT) {
+    var useWorm = Boolean(window.WormTutor && await window.WormTutor.ready());
+    if (!useWorm && getUsage().count >= DAILY_LIMIT) {
       showToast("আজকের ২০টি প্রশ্ন শেষ। আগামীকাল আবার চেষ্টা করুন।", true);
       return;
     }
@@ -550,41 +551,70 @@
     }, 110000);
     state.controller = controller;
 
+    var streamingIndex = -1;
     try {
-      var clientId = getClientId();
-      var response = await fetch(API_ENDPOINT, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json",
-          "X-Client-Id": clientId
-        },
-        body: JSON.stringify({
+      var reply = "";
+      if (useWorm) {
+        reply = await window.WormTutor.sendMessage({
           message: message,
-          history: history,
-          client_id: clientId,
           level: state.level,
           mode: state.mode,
-          depth: state.depth,
-          language: window.AponarI18n ? window.AponarI18n.getLanguage() : "bn"
-        }),
-        signal: controller.signal
-      });
-      var data = await response.json().catch(function () { return {}; });
-      if (!response.ok) throw new Error(data.message || "AI সেবা এখন পাওয়া যাচ্ছে না। একটু পরে আবার চেষ্টা করুন।");
-      var reply = typeof data.response === "string" ? data.response.trim() : "";
+          depth: state.depth
+        }, controller.signal, function (partial) {
+          if (streamingIndex < 0) {
+            removeTyping();
+            state.messages.push({ role: "bot", text: partial, time: timeNow(), error: false });
+            streamingIndex = state.messages.length - 1;
+            renderConversation(true);
+          } else {
+            state.messages[streamingIndex].text = partial;
+            var bubble = els.messages.querySelector('[data-message-index="' + streamingIndex + '"] .tutor-bubble');
+            if (bubble) bubble.innerHTML = renderMarkdown(partial);
+            scrollBottom();
+          }
+        });
+      } else {
+        var clientId = getClientId();
+        var response = await fetch(API_ENDPOINT, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "X-Client-Id": clientId
+          },
+          body: JSON.stringify({
+            message: message,
+            history: history,
+            client_id: clientId,
+            level: state.level,
+            mode: state.mode,
+            depth: state.depth,
+            language: window.AponarI18n ? window.AponarI18n.getLanguage() : "bn"
+          }),
+          signal: controller.signal
+        });
+        var data = await response.json().catch(function () { return {}; });
+        if (!response.ok) throw new Error(data.message || "AI সেবা এখন পাওয়া যাচ্ছে না। একটু পরে আবার চেষ্টা করুন।");
+        reply = typeof data.response === "string" ? data.response.trim() : "";
+      }
       if (!reply) throw new Error("AI খালি উত্তর দিয়েছে। প্রশ্নটি অন্যভাবে লিখে আবার চেষ্টা করুন।");
 
       removeTyping();
-      state.messages.push({ role: "bot", text: reply, time: timeNow(), error: false });
+      if (streamingIndex < 0) state.messages.push({ role: "bot", text: reply, time: timeNow(), error: false });
+      else state.messages[streamingIndex].text = reply;
       state.messages = state.messages.slice(-30);
-      incrementUsage();
+      if (!useWorm) incrementUsage();
       saveState();
       renderConversation(true);
       els.messages.insertAdjacentHTML("beforeend", followupMarkup());
       scrollBottom();
     } catch (error) {
       removeTyping();
+      if (streamingIndex >= 0) {
+        state.messages.splice(streamingIndex, 1);
+        saveState();
+        renderConversation(true);
+      }
       if (error && error.name === "AbortError" && !timedOut) {
         showToast("উত্তর থামানো হয়েছে");
       } else {
@@ -680,6 +710,10 @@
       return;
     }
     try {
+      if (window.WormTutor && await window.WormTutor.ready()) {
+        setStatus(true);
+        return;
+      }
       var response = await fetch(API_ENDPOINT, { method: "HEAD", cache: "no-store" });
       setStatus(response.ok);
     } catch (_error) {
@@ -703,6 +737,7 @@
 
   function clearConversation(notify) {
     if (state.controller) state.controller.abort();
+    if (window.WormTutor) window.WormTutor.resetConversation();
     state.messages = [];
     saveState();
     renderConversation(false);
@@ -753,6 +788,71 @@
       if (!state.messages.length || await window.AponarI18nContent.confirm("বর্তমান চ্যাট বন্ধ করে নতুন চ্যাট শুরু করবেন?")) clearConversation(false);
     });
     $("#settingsButton").addEventListener("click", openSettings);
+    var wormHistoryButton = $("#wormHistoryButton");
+    var wormHistoryDialog = $("#wormHistoryDialog");
+    var wormHistoryList = $("#wormHistoryList");
+    if (wormHistoryButton && wormHistoryDialog && wormHistoryList) {
+      $("#wormHistoryClose").addEventListener("click", function () {
+        if (typeof wormHistoryDialog.close === "function") wormHistoryDialog.close();
+        else wormHistoryDialog.removeAttribute("open");
+      });
+      wormHistoryButton.addEventListener("click", async function () {
+        if (!window.WormTutor) return;
+        wormHistoryList.textContent = "চ্যাট লোড হচ্ছে…";
+        if (typeof wormHistoryDialog.showModal === "function") wormHistoryDialog.showModal();
+        else wormHistoryDialog.setAttribute("open", "");
+        try {
+          var result = await window.WormTutor.listChats();
+          var chats = result && Array.isArray(result.chats) ? result.chats : [];
+          wormHistoryList.innerHTML = "";
+          if (!chats.length) {
+            wormHistoryList.textContent = "এখনো কোনো চ্যাট নেই।";
+            return;
+          }
+          chats.forEach(function (chat) {
+            if (!chat || !/^[a-f0-9-]{36}$/i.test(String(chat.id || ""))) return;
+            var item = document.createElement("button");
+            item.type = "button";
+            item.className = "tutor-dialog-btn";
+            item.style.cssText = "display:block;width:100%;text-align:left;margin-bottom:8px";
+            item.textContent = String(chat.title || "নতুন চ্যাট").slice(0, 100);
+            item.addEventListener("click", async function () {
+              item.disabled = true;
+              try {
+                var data = await window.WormTutor.getHistory(chat.id);
+                if (!data || !Array.isArray(data.messages)) throw new Error("চ্যাট হিস্ট্রি পাওয়া যায়নি");
+                var messages = data.messages.map(function (entry) {
+                  var role = entry.role === "assistant" ? "bot" : entry.role;
+                  if (role !== "user" && role !== "bot") return null;
+                  var content = String(entry.content || "").trim();
+                  if (role === "user") {
+                    var marker = "\n\nLearner\'s message:\n";
+                    var boundary = content.lastIndexOf(marker);
+                    if (boundary >= 0) content = content.slice(boundary + marker.length).trim();
+                  }
+                  if (!content) return null;
+                  var time = entry.created_at ? new Date(entry.created_at).toLocaleTimeString() : timeNow();
+                  return { role: role, text: content.slice(0, 12000), time: time, error: false };
+                }).filter(Boolean).slice(-30);
+                window.WormTutor.selectConversation(chat.id);
+                state.messages = messages;
+                saveState();
+                renderConversation(true);
+                if (typeof wormHistoryDialog.close === "function") wormHistoryDialog.close();
+                else wormHistoryDialog.removeAttribute("open");
+              } catch (error) {
+                showToast(error && error.message ? error.message : "হিস্ট্রি লোড হয়নি", true);
+              } finally {
+                item.disabled = false;
+              }
+            });
+            wormHistoryList.appendChild(item);
+          });
+        } catch (error) {
+          wormHistoryList.textContent = error && error.message ? error.message : "হিস্ট্রি লোড হয়নি";
+        }
+      });
+    }
     $("#saveSettingsButton").addEventListener("click", function () {
       var selectedLevel = $('input[name="settingsLevel"]:checked');
       var selectedDepth = $('input[name="settingsDepth"]:checked');
@@ -785,6 +885,27 @@
     updateViewport();
   }
 
+  function setupWormHistoryUi() {
+    if (document.getElementById("wormHistoryButton")) return;
+    var newChat = $("#newChatButton");
+    if (!newChat) return;
+    var button = document.createElement("button");
+    button.id = "wormHistoryButton";
+    button.className = "tutor-icon-btn";
+    button.type = "button";
+    button.style.display = "none";
+    button.setAttribute("aria-label", "আগের AI চ্যাট");
+    button.title = "চ্যাট হিস্ট্রি";
+    button.innerHTML = '<i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>';
+    newChat.insertAdjacentElement("afterend", button);
+    var dialog = document.createElement("dialog");
+    dialog.id = "wormHistoryDialog";
+    dialog.className = "tutor-dialog";
+    dialog.setAttribute("aria-labelledby", "wormHistoryTitle");
+    dialog.innerHTML = '<div class="tutor-dialog-head"><h2 id="wormHistoryTitle">আগের AI চ্যাট</h2><button class="tutor-icon-btn" id="wormHistoryClose" type="button" aria-label="বন্ধ করুন"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div><div class="tutor-dialog-body" id="wormHistoryList">চ্যাট লোড হচ্ছে…</div>';
+    document.body.appendChild(dialog);
+  }
+
   function initialize() {
     els.messages = $("#tutorMessages");
     els.chat = $("#tutorChat");
@@ -807,6 +928,7 @@
     applyUrlPreferences();
     renderConversation(false);
     updateInterface();
+    setupWormHistoryUi();
     bindEvents();
     setupVoice();
     checkStatus();
