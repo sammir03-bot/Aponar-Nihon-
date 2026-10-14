@@ -525,7 +525,8 @@
       els.input.focus();
       return;
     }
-    if (getUsage().count >= DAILY_LIMIT) {
+    var useWorm = Boolean(window.WormTutor && await window.WormTutor.ready());
+    if (!useWorm && getUsage().count >= DAILY_LIMIT) {
       showToast("আজকের ২০টি প্রশ্ন শেষ। আগামীকাল আবার চেষ্টা করুন।", true);
       return;
     }
@@ -550,41 +551,70 @@
     }, 110000);
     state.controller = controller;
 
+    var streamingIndex = -1;
     try {
-      var clientId = getClientId();
-      var response = await fetch(API_ENDPOINT, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Accept": "application/json",
-          "X-Client-Id": clientId
-        },
-        body: JSON.stringify({
+      var reply = "";
+      if (useWorm) {
+        reply = await window.WormTutor.sendMessage({
           message: message,
-          history: history,
-          client_id: clientId,
           level: state.level,
           mode: state.mode,
-          depth: state.depth,
-          language: window.AponarI18n ? window.AponarI18n.getLanguage() : "bn"
-        }),
-        signal: controller.signal
-      });
-      var data = await response.json().catch(function () { return {}; });
-      if (!response.ok) throw new Error(data.message || "AI সেবা এখন পাওয়া যাচ্ছে না। একটু পরে আবার চেষ্টা করুন।");
-      var reply = typeof data.response === "string" ? data.response.trim() : "";
+          depth: state.depth
+        }, controller.signal, function (partial) {
+          if (streamingIndex < 0) {
+            removeTyping();
+            state.messages.push({ role: "bot", text: partial, time: timeNow(), error: false });
+            streamingIndex = state.messages.length - 1;
+            renderConversation(true);
+          } else {
+            state.messages[streamingIndex].text = partial;
+            var bubble = els.messages.querySelector('[data-message-index="' + streamingIndex + '"] .tutor-bubble');
+            if (bubble) bubble.innerHTML = renderMarkdown(partial);
+            scrollBottom();
+          }
+        });
+      } else {
+        var clientId = getClientId();
+        var response = await fetch(API_ENDPOINT, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "X-Client-Id": clientId
+          },
+          body: JSON.stringify({
+            message: message,
+            history: history,
+            client_id: clientId,
+            level: state.level,
+            mode: state.mode,
+            depth: state.depth,
+            language: window.AponarI18n ? window.AponarI18n.getLanguage() : "bn"
+          }),
+          signal: controller.signal
+        });
+        var data = await response.json().catch(function () { return {}; });
+        if (!response.ok) throw new Error(data.message || "AI সেবা এখন পাওয়া যাচ্ছে না। একটু পরে আবার চেষ্টা করুন।");
+        reply = typeof data.response === "string" ? data.response.trim() : "";
+      }
       if (!reply) throw new Error("AI খালি উত্তর দিয়েছে। প্রশ্নটি অন্যভাবে লিখে আবার চেষ্টা করুন।");
 
       removeTyping();
-      state.messages.push({ role: "bot", text: reply, time: timeNow(), error: false });
+      if (streamingIndex < 0) state.messages.push({ role: "bot", text: reply, time: timeNow(), error: false });
+      else state.messages[streamingIndex].text = reply;
       state.messages = state.messages.slice(-30);
-      incrementUsage();
+      if (!useWorm) incrementUsage();
       saveState();
       renderConversation(true);
       els.messages.insertAdjacentHTML("beforeend", followupMarkup());
       scrollBottom();
     } catch (error) {
       removeTyping();
+      if (streamingIndex >= 0) {
+        state.messages.splice(streamingIndex, 1);
+        saveState();
+        renderConversation(true);
+      }
       if (error && error.name === "AbortError" && !timedOut) {
         showToast("উত্তর থামানো হয়েছে");
       } else {
@@ -680,6 +710,10 @@
       return;
     }
     try {
+      if (window.WormTutor && await window.WormTutor.ready()) {
+        setStatus(true);
+        return;
+      }
       var response = await fetch(API_ENDPOINT, { method: "HEAD", cache: "no-store" });
       setStatus(response.ok);
     } catch (_error) {
@@ -703,6 +737,7 @@
 
   function clearConversation(notify) {
     if (state.controller) state.controller.abort();
+    if (window.WormTutor) window.WormTutor.resetConversation();
     state.messages = [];
     saveState();
     renderConversation(false);
