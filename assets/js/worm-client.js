@@ -104,11 +104,11 @@
       while (!done) {
         var part = await reader.read();
         if (part.done) break;
-        pending += decoder.decode(part.value, { stream: true }).replace(/\r\n/g, "\n");
-        var index;
-        while ((index = pending.indexOf("\n\n")) >= 0) {
-          processEvent(pending.slice(0, index));
-          pending = pending.slice(index + 2);
+        pending += decoder.decode(part.value, { stream: true });
+        var separator;
+        while ((separator = /\r?\n\r?\n/.exec(pending))) {
+          processEvent(pending.slice(0, separator.index));
+          pending = pending.slice(separator.index + separator[0].length);
           if (done) break;
         }
       }
