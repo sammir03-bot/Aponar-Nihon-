@@ -57,7 +57,7 @@ def icon(name):
 
 def shell(title, description, body, number=''):
     return f'''<!doctype html>
-<html lang="bn" dir="ltr" data-source-language="bn" data-language-preset="bn">
+<html lang="bn" dir="ltr" data-language-preset="bn" data-source-language="bn">
 <head>{LEGACY_GUARD}
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#f6f7f5"><meta name="description" content="{esc(description)}">
