@@ -880,6 +880,27 @@
     updateViewport();
   }
 
+  function setupWormHistoryUi() {
+    if (document.getElementById("wormHistoryButton")) return;
+    var newChat = $("#newChatButton");
+    if (!newChat) return;
+    var button = document.createElement("button");
+    button.id = "wormHistoryButton";
+    button.className = "tutor-icon-btn";
+    button.type = "button";
+    button.style.display = "none";
+    button.setAttribute("aria-label", "আগের AI চ্যাট");
+    button.title = "চ্যাট হিস্ট্রি";
+    button.innerHTML = '<i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>';
+    newChat.insertAdjacentElement("afterend", button);
+    var dialog = document.createElement("dialog");
+    dialog.id = "wormHistoryDialog";
+    dialog.className = "tutor-dialog";
+    dialog.setAttribute("aria-labelledby", "wormHistoryTitle");
+    dialog.innerHTML = '<div class="tutor-dialog-head"><h2 id="wormHistoryTitle">আগের AI চ্যাট</h2><button class="tutor-icon-btn" id="wormHistoryClose" type="button" aria-label="বন্ধ করুন"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div><div class="tutor-dialog-body" id="wormHistoryList">চ্যাট লোড হচ্ছে…</div>';
+    document.body.appendChild(dialog);
+  }
+
   function initialize() {
     els.messages = $("#tutorMessages");
     els.chat = $("#tutorChat");
@@ -902,6 +923,7 @@
     applyUrlPreferences();
     renderConversation(false);
     updateInterface();
+    setupWormHistoryUi();
     bindEvents();
     setupVoice();
     checkStatus();
