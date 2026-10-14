@@ -515,6 +515,33 @@
     }).join("") + "</div>";
   }
 
+  async function requestLegacyTutor(message, history, controller) {
+    var clientId = getClientId();
+    var response = await fetch(API_ENDPOINT, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "X-Client-Id": clientId
+      },
+      body: JSON.stringify({
+        message: message,
+        history: history,
+        client_id: clientId,
+        level: state.level,
+        mode: state.mode,
+        depth: state.depth,
+        language: window.AponarI18n ? window.AponarI18n.getLanguage() : "bn"
+      }),
+      signal: controller.signal
+    });
+    var data = await response.json().catch(function () { return {}; });
+    if (!response.ok) throw new Error(data.message || "বিকল্প AI সেবা এখন পাওয়া যাচ্ছে না। একটু পরে চেষ্টা করুন।");
+    var reply = typeof data.response === "string" ? data.response.trim() : "";
+    if (!reply) throw new Error("বিকল্প AI খালি উত্তর দিয়েছে। আবার চেষ্টা করুন।");
+    return reply;
+  }
+
   async function sendMessage(rawMessage) {
     if (state.busy) {
       if (state.controller) state.controller.abort();
@@ -555,47 +582,35 @@
     try {
       var reply = "";
       if (useWorm) {
-        reply = await window.WormTutor.sendMessage({
-          message: message,
-          level: state.level,
-          mode: state.mode,
-          depth: state.depth
-        }, controller.signal, function (partial) {
-          if (streamingIndex < 0) {
-            removeTyping();
-            state.messages.push({ role: "bot", text: partial, time: timeNow(), error: false });
-            streamingIndex = state.messages.length - 1;
-            renderConversation(true);
-          } else {
-            state.messages[streamingIndex].text = partial;
-            var bubble = els.messages.querySelector('[data-message-index="' + streamingIndex + '"] .tutor-bubble');
-            if (bubble) bubble.innerHTML = renderMarkdown(partial);
-            scrollBottom();
-          }
-        });
-      } else {
-        var clientId = getClientId();
-        var response = await fetch(API_ENDPOINT, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-            "X-Client-Id": clientId
-          },
-          body: JSON.stringify({
+        try {
+          reply = await window.WormTutor.sendMessage({
             message: message,
-            history: history,
-            client_id: clientId,
             level: state.level,
             mode: state.mode,
-            depth: state.depth,
-            language: window.AponarI18n ? window.AponarI18n.getLanguage() : "bn"
-          }),
-          signal: controller.signal
-        });
-        var data = await response.json().catch(function () { return {}; });
-        if (!response.ok) throw new Error(data.message || "AI সেবা এখন পাওয়া যাচ্ছে না। একটু পরে আবার চেষ্টা করুন।");
-        reply = typeof data.response === "string" ? data.response.trim() : "";
+            depth: state.depth
+          }, controller.signal, function (partial) {
+            if (streamingIndex < 0) {
+              removeTyping();
+              state.messages.push({ role: "bot", text: partial, time: timeNow(), error: false });
+              streamingIndex = state.messages.length - 1;
+              renderConversation(true);
+            } else {
+              state.messages[streamingIndex].text = partial;
+              var bubble = els.messages.querySelector('[data-message-index="' + streamingIndex + '"] .tutor-bubble');
+              if (bubble) bubble.innerHTML = renderMarkdown(partial);
+              scrollBottom();
+            }
+          });
+        } catch (wormError) {
+          if (!wormError || wormError.code !== "WORM_EMPTY_RESPONSE" || controller.signal.aborted ||
+              getUsage().count >= DAILY_LIMIT) throw wormError;
+          // Avoid showing an "empty reply" error: use the existing, independently hosted tutor.
+          useWorm = false;
+          showToast("WORM GPT উত্তর দেয়নি—বিকল্প AI থেকে উত্তর নিচ্ছি");
+          reply = await requestLegacyTutor(message, history, controller);
+        }
+      } else {
+        reply = await requestLegacyTutor(message, history, controller);
       }
       if (!reply) throw new Error("AI খালি উত্তর দিয়েছে। প্রশ্নটি অন্যভাবে লিখে আবার চেষ্টা করুন।");
 
