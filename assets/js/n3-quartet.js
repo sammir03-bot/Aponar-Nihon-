@@ -4,12 +4,19 @@
  const storagePrefix = secondVolume ? 'quartetN2' : 'quartetN3';
  const volumeName = secondVolume ? 'Ⅱ' : 'Ⅰ';
  const expectedTotal = secondVolume ? 36 : 55;
- let course;
+ let course, deep, makeMasterclass;
  try {
   const response = await fetch('/assets/data/' + (secondVolume ? 'n2' : 'n3') + '-quartet.json?v=20261020.1');
   if (!response.ok) throw new Error('Course data unavailable');
   course = await response.json();
   if (course.lessons?.length !== expectedTotal || course.chapters?.length !== 6) throw new Error('Course data incomplete');
+  if (!secondVolume && document.body.classList.contains('quartet-masterclass')) {
+   const expanded = await fetch('/assets/data/n3-quartet-deep.json?v=20261020.2');
+   if (!expanded.ok) throw new Error('Expanded course data unavailable');
+   deep = await expanded.json();
+   if (Object.keys(deep.lessons || {}).length !== 55 || !course.lessons.every(item => deep.lessons[item.id]?.extra_examples?.length === 8)) throw new Error('Expanded course data incomplete');
+   makeMasterclass = (await import('/assets/js/quartet-one-reader.js?v=20261020.2')).createMasterclass;
+  }
  } catch (error) {
   document.getElementById('load-message').textContent = 'পাঠগুলো খোলা যায়নি। ইন্টারনেট সংযোগ দেখে আবার চেষ্টা করুন।';
   document.getElementById('load-retry').hidden = false;
@@ -53,6 +60,7 @@
  searchInput?.addEventListener('input', renderLessonList);
  const link=(id,mode='lesson')=>'#'+id+'/'+mode;
  const forms=i=>'<ul class="formula-list">'+i.forms.map(f=>'<li>'+ruby(f)+'</li>').join('')+'</ul>';
+ const masterclass = makeMasterclass?.({root, course, deep, ruby, esc, bn, plain, readSaved, save});
  function navigation(){
   document.getElementById('course-progress').value = learned.size;
   document.getElementById('progress-text').textContent = bn(learned.size) + ' / ' + bn(course.lessons.length) + 'টি শেখা';
@@ -66,6 +74,7 @@
  }
  function renderLesson(){
   const i=current,idx=course.lessons.indexOf(i);
+  if (masterclass) { panel.innerHTML=masterclass.renderLesson(i,idx,learned); return; }
   const pageInfo = Number.isInteger(i.book_page) ? ' · বই পৃ. '+bn(i.book_page)+(Number.isInteger(i.uploaded_pdf_page)?' / PDF পৃ. '+bn(i.uploaded_pdf_page):'') : ' · নির্বাচিত সহায়ক গ্রামার';
   panel.innerHTML='<div class="meta">অধ্যায় '+bn(i.chapter)+' · বিষয় '+bn(i.order)+pageInfo+'</div><h2 class="grammar-title">'+ruby(i.title)+'</h2><p class="meaning">'+ruby(i.meaning_bn)+'</p><p>'+ruby(i.explanation_bn)+'</p><div class="card"><h3>কোন Form লাগবে?</h3>'+forms(i)+'</div><div class="tip"><strong>মনে রাখুন</strong>'+ruby(i.tip_bn)+'</div><section aria-label="উদাহরণ"><h3>বাক্যে ব্যবহার</h3>'+i.examples.map((e,n)=>'<div class="example"><div class="example-label">উদাহরণ '+bn(n+1)+'</div><p class="jp" lang="ja">'+ruby(e.japanese)+'</p><p class="translation">'+ruby(e.bangla)+'</p></div>').join('')+'</section><div class="completion-row"><button class="btn" data-learned aria-pressed="'+learned.has(i.id)+'">'+(learned.has(i.id)?'✓ শেখা হয়েছে':'শেখা হয়েছে চিহ্ন দিন')+'</button></div><div class="nav-row"><button class="btn" data-prev'+(idx===0?' disabled':'')+'>আগের পাঠ</button><button class="btn primary" data-next'+(idx===course.lessons.length-1?' disabled':'')+'>পরের পাঠ</button></div>';
  }
@@ -87,13 +96,17 @@
  function renderRevision(){
   panel.innerHTML='<div class="meta">অধ্যায় '+bn(current.chapter)+' · '+bn(chapterItems().length)+'টি বিষয়</div><h2>এক নজরে রিভিশন</h2>'+chapterItems().map(i=>'<article class="revision-row"><a class="revision-title" href="'+link(i.id)+'">'+bn(i.order)+'. '+ruby(i.title)+'</a><p class="revision-meaning">'+ruby(i.meaning_bn)+'</p>'+forms(i)+'<p class="tip">'+ruby(i.tip_bn)+'</p></article>').join('');
  }
+ let hasRendered=false;
  function route(){
+  const previousId=current.id, previousMode=tab;
   const [id,mode]=location.hash.slice(1).split('/');
   current=byId.get(id)||course.lessons[0];tab=['lesson','quiz','revision'].includes(mode)?mode:'lesson';
   save(storagePrefix + 'LastV1', {id: current.id, mode: tab});
   navigation();if(tab==='lesson')renderLesson();else if(tab==='quiz')renderQuiz();else renderRevision();
   document.title=plain(current.title)+' · QUARTET '+volumeName+' বাংলা';
   announce.textContent='অধ্যায় '+bn(current.chapter)+' · '+(tab==='lesson'?readLabel(current.title):tab==='quiz'?'অনুশীলন':'রিভিশন');
+  masterclass?.afterRender(current, hasRendered && (previousId!==current.id || previousMode!==tab));
+  hasRendered=true;
  }
  function go(id,mode=tab){const target=link(id,mode);if(location.hash===target)route();else location.hash=target;}
  chapterSelect.innerHTML=course.chapters.map(c=>'<option value="'+c.id+'">'+c.title_bn+' · '+bn(c.lesson_count)+'টি</option>').join('');
