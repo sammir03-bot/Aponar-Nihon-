@@ -1,0 +1,135 @@
+@font-face{font-family:QuartetBangla;src:url('/assets/fonts/mock/noto-bengali-400.woff2') format('woff2');font-style:normal;font-weight:400;font-display:swap}
+@font-face{font-family:QuartetBangla;src:url('/assets/fonts/mock/noto-bengali-700.woff2') format('woff2');font-style:normal;font-weight:700;font-display:swap}
+:root{--qs-bg:#0c121b;--qs-paper:#16212e;--qs-line:#2b394b;--qs-text:#f0f2ed;--qs-muted:#b6c3d2;--qs-accent:#cedcae;--qs-ink:#233120;--bg:var(--qs-bg);--panel:var(--qs-paper);--paper:#1d2a3b;--line:var(--qs-line);--fg:var(--qs-text);--muted:var(--qs-muted);--accent:var(--qs-accent);--brand:#57704e;--guide-accent:var(--qs-accent);color-scheme:dark}
+body[data-quartet-volume="2"]{--qs-accent:#bfd2f1;--qs-ink:#1a2f50;--brand:#47668e}
+body.quartet-page{background:var(--qs-bg);color:var(--qs-text);font:17px/1.85 QuartetBangla,"Noto Sans CJK JP",system-ui,sans-serif;padding-bottom:25px}
+.quartet-page *{box-sizing:border-box}
+.quartet-page a{color:var(--qs-accent);text-underline-offset:4px}
+.quartet-page button,.quartet-page select,.quartet-page input{font:inherit}
+.quartet-page [hidden]{display:none!important}
+.quartet-page .app{max-width:1220px;padding:24px 26px 48px}
+.quartet-page .site-nav{font-size:14px;margin:0 0 15px;gap:12px;color:#718096}
+.quartet-hero{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 255px;align-items:center;gap:28px;padding:30px 34px;border:1px solid var(--qs-line);border-radius:22px;background:#17232c;overflow:hidden}
+.quartet-page[data-quartet-volume="2"] .quartet-hero{background:#18283e}
+.quartet-hero-copy{position:relative;z-index:1;min-width:0}
+.quartet-eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--qs-accent);font-size:12px;letter-spacing:.12em;font-weight:700;line-height:1.7}
+.quartet-eyebrow::before{content:"";display:block;width:7px;height:7px;background:var(--qs-accent);border-radius:50%}
+.quartet-page .masthead{display:block;border:0;margin:0;padding:0}
+.quartet-page .masthead h1,.quartet-guide .study-header h1{font-family:Georgia,QuartetBangla,serif;color:var(--qs-text);font-size:clamp(2.25rem,4.5vw,3.7rem);font-weight:400;line-height:1.4;margin:10px 0}
+.quartet-page .masthead h1 span{font-family:QuartetBangla,system-ui,sans-serif;font-size:.4em;display:block;color:var(--qs-muted);margin-top:5px}
+.quartet-page .counter{display:block;color:var(--qs-accent);white-space:normal;font-size:14px}
+.quartet-page .course-intro{margin:14px 0 0;max-width:650px;font-size:14px;color:var(--qs-muted)}
+.quartet-hero-art{width:300px;max-width:none;transform:rotate(5deg);border-radius:12px;box-shadow:0 20px 45px #0003}
+.quartet-series-nav{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:20px 0 16px;font-size:14px}
+.quartet-series-nav a{display:flex;align-items:center;gap:7px;min-height:44px;padding:8px 14px;border:1px solid var(--qs-line);border-radius:10px;color:var(--qs-muted);text-decoration:none}
+.quartet-series-nav a[aria-current="page"]{border-color:var(--qs-accent);background:var(--qs-accent);color:var(--qs-ink);font-weight:700}
+.quartet-page .course-progress{display:grid;grid-template-columns:minmax(80px,200px) auto 1fr;align-items:center;gap:14px;padding:16px 20px;margin:0 0 24px;border:1px solid var(--qs-line);border-radius:13px;background:#111c28;font-size:13px}
+.quartet-page .course-progress progress{width:100%;max-width:none;height:8px;border:0;border-radius:8px;appearance:none;background:#2b394b;overflow:hidden}
+.quartet-page progress::-webkit-progress-bar{background:#2b394b}.quartet-page progress::-webkit-progress-value{background:var(--qs-accent)}.quartet-page progress::-moz-progress-bar{background:var(--qs-accent)}
+.quartet-page .workspace{grid-template-columns:275px minmax(0,1fr);gap:24px;align-items:start}
+.quartet-page .workspace>.sidebar{position:sticky;top:20px;padding:18px;border:1px solid var(--qs-line);border-radius:17px;background:#111c28;gap:15px}
+.quartet-page .sidebar label{font-size:13px;color:var(--qs-muted)}
+.quartet-page .select{border-radius:10px;min-height:48px;font-size:14px;background:#1b293a;border-color:#3c4c60}
+.quartet-page .lesson-list{gap:4px;margin-top:3px;max-height:65vh;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#4a5e75 transparent}
+.quartet-page .lesson-link{padding:10px 9px;font-size:14px;line-height:1.9;border:1px solid transparent;border-radius:9px}
+.quartet-page .lesson-link.active{background:#27372d;border-color:#c9dca833;color:#eef4e3}
+.quartet-page[data-quartet-volume="2"] .lesson-link.active{background:#263b56;border-color:#bfd2f133}
+.quartet-page .lesson-link[data-done="true"]::after{content:"✓";color:#a4dfbf;float:right;margin-left:5px}
+.quartet-page .tabs{gap:5px;margin:0 0 19px;padding:5px;border:1px solid var(--qs-line);border-radius:12px;background:#111c28}
+.quartet-page .tab{flex:1;font-size:15px;border-radius:8px;padding:9px 10px}
+.quartet-page .tab[aria-selected="true"]{background:var(--qs-accent);color:var(--qs-ink);font-weight:700}
+.quartet-page #panel{padding:25px 28px;border:1px solid var(--qs-line);border-radius:18px;background:#141f2b;min-height:420px;overflow-wrap:anywhere}
+.quartet-page #panel:focus{outline:none}.quartet-page #panel:focus-visible{outline:3px solid var(--qs-accent);outline-offset:4px}
+.quartet-page h2,.quartet-page h3{color:var(--qs-text);font-weight:700}
+.quartet-page h3{font-size:17px;line-height:1.8}
+.quartet-page .grammar-title{font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:700;line-height:2.4;margin:8px 0}
+.quartet-page .meaning{color:var(--qs-accent);font-size:20px;font-weight:700}
+.quartet-page .meta{font-size:12px;line-height:1.8;color:#a7bad0;letter-spacing:.02em}
+.quartet-page .card{background:#1c2b3b;border-color:#34475c;border-radius:13px;padding:18px 21px}
+.quartet-page .formula-list{font-size:16px}
+.quartet-page .tip{background:#cedcae07;border-left-color:var(--qs-accent);padding:13px 17px;border-radius:0 10px 10px 0;color:#c5d0df;font-size:15px}
+.quartet-page .tip strong{font-size:13px;color:var(--qs-accent);margin-bottom:4px}
+.quartet-page .example{padding:17px 19px;border:1px solid var(--qs-line);background:#101a26;border-radius:12px;margin:12px 0}
+.quartet-page .example .jp{font-size:21px;line-height:2.5;margin:5px 0 12px}
+.quartet-page .example .translation{font-size:16px;color:#c9d4e2;line-height:1.9}
+.quartet-page rt{font-size:max(11px,.55em);color:#c0cee0}
+.quartet-page .btn{border-color:#42566d;background:#1c2b3b;border-radius:10px;font-size:14px;min-height:46px}
+.quartet-page .btn.primary{background:var(--qs-accent);border-color:var(--qs-accent);color:var(--qs-ink);font-weight:700}
+.quartet-page .completion-row .btn{width:100%;background:#192a24;border-color:#3b594a;color:#cce8d6}
+.quartet-page .form-guide{padding:16px 19px;border:1px solid var(--qs-line);border-radius:13px;background:#111c28}
+.quartet-page .form-guide summary{font-size:14px}
+.quartet-page .option{background:#1c2b3b;border-color:#3d5067;border-radius:11px;color:var(--qs-text);font-size:16px}
+.quartet-page .option[data-result="correct"]{background:#1b4234;border-color:#99d4b3}.quartet-page .option[data-result="wrong"]{background:#4b3032;border-color:#efb4ab}
+.quartet-page .quiz-item+.quiz-item{padding-top:24px;border-top:1px solid var(--qs-line)}
+.quartet-page .footer{font-size:12px;color:#a7b6c9;line-height:1.9}
+.quartet-search{display:block;margin-top:10px}.quartet-search input{width:100%;min-height:45px;border:1px solid #42566d;background:#172537;color:#f0f4ec;border-radius:10px;font-size:14px;padding:9px 11px}.quartet-search input::placeholder{color:#b5c3d5}
+.quartet-search-status{font-size:12px;color:var(--qs-muted);line-height:1.7;min-height:20px;margin:2px 0 0}
+.quartet-page .lesson-search-result{display:block;font-size:12px;line-height:1.8;margin-top:5px;color:#b7c7d6}
+.quartet-page a:focus-visible,.quartet-page button:focus-visible,.quartet-page input:focus-visible,.quartet-page select:focus-visible,.quartet-page summary:focus-visible{outline:3px solid var(--qs-accent);outline-offset:4px}
+.quartet-page .loading{border-radius:14px;padding:25px;text-align:center;background:#152233}
+/* Four-skill reading companion shares the same type, paper and navigation. */
+.quartet-guide .study-header{padding:25px max(20px,calc((100vw - 1168px)/2));background:transparent;color:var(--qs-text)}
+.quartet-guide .study-breadcrumb a{color:var(--qs-accent);font-size:14px}
+.quartet-guide .study-header .quartet-hero{padding:28px 30px}
+.quartet-guide .study-header h1{font-size:clamp(1.8rem,4vw,2.9rem)}
+.quartet-guide .study-header p{color:var(--qs-muted);font-size:14px;line-height:1.9}
+.quartet-guide .quartet-series-nav{max-width:1168px;margin:0 auto;padding:0 20px 10px}
+.quartet-guide .study-toolbar{max-width:1000px;padding:12px 20px 0}
+.quartet-guide .study-toolbar label{font-size:13px;color:var(--qs-muted)}
+.quartet-guide .study-toolbar select{background:#1c2b3b;color:var(--qs-text);border-color:#42566d;font-size:15px;min-height:48px}
+.quartet-guide #study-status{color:#b9c8d9;font-size:12px}
+.quartet-guide main{max-width:1000px;padding:12px 20px 45px}
+.quartet-guide .study-chapter{background:#141f2b;border-color:var(--qs-line);border-radius:18px;padding:26px 30px;color:var(--qs-text)}
+.quartet-guide h2{margin:10px 0 22px;padding-bottom:16px;border-color:var(--qs-line);font-size:1.5rem;line-height:1.8}
+.quartet-guide h3{color:var(--qs-accent);font-size:1.15rem;margin-top:32px;line-height:1.9;scroll-margin-top:20px}
+.quartet-guide .skill-nav{gap:7px;margin-bottom:22px}
+.quartet-guide .skill-nav a{background:#1a293b;color:#c4d3e4;border-color:#3b5069;border-radius:9px;font-size:12px;min-height:40px;display:inline-flex;align-items:center}
+.quartet-guide .notice{background:#263026;border-color:#53634b;color:#dce5cd;font-size:14px}
+.quartet-guide .example,.quartet-guide .card{background:#1c2b3b;border-color:#3b5069;color:var(--qs-text)}
+.quartet-guide .tip,.quartet-guide .sentence-note{background:#20352d;color:#d3e4d5;border-color:#91aa83}
+.quartet-guide .formula{background:#203149;border-color:#7295bc;color:#e1ebf7}
+.quartet-guide .answer{background:#19372c;border-color:#9ed3b3;color:#d8efdf}
+.quartet-guide .quiz{border-color:#62788e}
+.quartet-guide th{background:#203149;color:#e0e8f3}.quartet-guide td,.quartet-guide th{border-color:#415369}
+.quartet-guide .sentence,.quartet-guide .dialogue{border-color:var(--qs-line)}
+.quartet-guide .dialogue-meaning,.quartet-guide .small,.quartet-guide .sentence-label{color:#b8c6d8}
+.quartet-guide .jp{font-size:19px;line-height:2.6}
+.quartet-guide .table-scroll table{min-width:360px;font-size:15px}
+.quartet-guide .table-scroll td{overflow-wrap:anywhere}
+.quartet-guide .skill-action{display:inline-flex;align-items:center;min-height:44px;padding:9px 16px;background:#c9dca8;color:#1c2a1a;border-radius:10px;border:0;font-size:14px;cursor:pointer;margin:8px 8px 8px 0;text-decoration:none}
+.quartet-guide .listen-status{font-size:13px;color:#bdccdc}
+.quartet-guide details{border:1px solid #42566d;border-radius:11px;padding:13px 17px;margin:12px 0;background:#172637}
+.quartet-guide summary{cursor:pointer;min-height:32px;color:var(--qs-accent)}
+@media(max-width:800px){
+ .quartet-page .app{padding:16px 17px 40px}
+ .quartet-hero{grid-template-columns:minmax(0,1fr) 155px;padding:23px;gap:12px}.quartet-hero-art{width:210px}
+ .quartet-page .workspace{grid-template-columns:1fr;gap:15px}
+ .quartet-page .workspace>.sidebar{position:static;display:grid;grid-template-columns:1fr 1fr;padding:15px;gap:13px}
+ .quartet-page .lesson-list{grid-column:1/-1;max-height:220px;display:none}
+ .quartet-page .lesson-list.is-searching{display:flex}
+ .quartet-search-wrap{grid-column:1/-1}.quartet-search{margin-top:0}
+ .quartet-page .mobile-topic{display:block}
+ .quartet-page .course-progress{grid-template-columns:minmax(80px,1fr) auto;padding:13px 16px;gap:7px 12px}.quartet-page .course-progress .small{grid-column:1/-1;font-size:11px}
+ .quartet-page #panel{padding:21px 19px}
+ .quartet-guide .study-header{padding:15px 17px 7px}.quartet-guide .study-header .quartet-hero{padding:23px 21px}
+ .quartet-guide .quartet-series-nav{padding-inline:17px;margin-top:10px}
+}
+@media(max-width:520px){
+ .quartet-hero{display:block;padding:25px 20px}.quartet-hero-art{position:absolute;width:270px;right:-95px;top:0;opacity:.12;transform:rotate(13deg)}
+ .quartet-page .masthead h1{font-size:2.5rem}.quartet-page .masthead h1 span{font-size:16px}
+ .quartet-page .course-intro{font-size:13px}.quartet-page .counter{font-size:12px}
+ .quartet-page .site-nav{font-size:12px;gap:7px;margin-bottom:10px}.quartet-page .site-nav a{min-height:36px;gap:7px}
+ .quartet-series-nav{gap:6px}.quartet-series-nav a{padding:7px 9px;font-size:11px;min-height:42px}
+ .quartet-page .workspace>.sidebar{grid-template-columns:1fr}.quartet-search-wrap{grid-column:auto}
+ .quartet-page .sidebar label{margin-bottom:6px}.quartet-page .select{font-size:15px}
+ .quartet-page .example{padding:14px 15px}.quartet-page .example .jp{font-size:20px}.quartet-page .meaning{font-size:18px}
+ .quartet-guide main{padding:12px 14px 35px}.quartet-guide .study-chapter{padding:18px 17px}.quartet-guide .study-toolbar{padding:10px 17px 0}
+ .quartet-guide h2{font-size:1.25rem}.quartet-guide .skill-nav{gap:6px}.quartet-guide .skill-nav a{font-size:12px;padding:7px 9px}
+ .quartet-guide .jp{font-size:18px}.quartet-guide .dialogue{grid-template-columns:35px minmax(0,1fr)}
+}
+@media(prefers-reduced-motion:reduce){.quartet-page *{scroll-behavior:auto!important;transition:none!important}}
+@media print{
+ body.quartet-page{background:white;color:black}.quartet-hero{background:white!important;border:0;padding:0}.quartet-hero-art,.quartet-series-nav,.quartet-search-wrap,.quartet-guide .skill-action{display:none}
+ .quartet-page #panel,.quartet-page .card,.quartet-page .example,.quartet-guide .study-chapter,.quartet-guide details,.quartet-guide .formula,.quartet-guide .notice,.quartet-guide .sentence-note{background:white;color:black;border-color:#999}
+ .quartet-page h1,.quartet-page h2,.quartet-page h3,.quartet-page p,.quartet-page rt,.quartet-page .meaning,.quartet-page .meta,.quartet-page .tip,.quartet-page .example .translation,.quartet-guide td,.quartet-guide th{color:black!important;background:transparent}
+}

@@ -13,7 +13,10 @@ ROOT = Path(__file__).resolve().parents[1]
 # QUARTET adds course navigation to these surfaces. Every existing visible text
 # node must still appear unchanged and in order; removal, rewriting, or moving
 # existing text is rejected. Other pages retain the exact-hash requirement.
-ADDITIVE_CONTENT_PAGES = {"n3.html", "n3-grammar.html", "n3-quartet-ebook.html"}
+ADDITIVE_CONTENT_PAGES = {
+    "n3.html", "n3-grammar.html", "n3-quartet-ebook.html",
+    "n3-quartet-grammar.html", "n3-quartet-study-guide.html",
+}
 
 
 def preserves_visible_text(base_html: str, current_html: str) -> bool:

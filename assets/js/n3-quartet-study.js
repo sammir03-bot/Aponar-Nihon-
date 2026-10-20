@@ -5,7 +5,7 @@
   const toolbar = document.getElementById('study-toolbar');
   const status = document.getElementById('study-status');
   if (!chapters.length || !select || !toolbar || !status) return;
-  const storageKey = 'quartetStudyLastV1';
+  const storageKey = document.body.dataset.quartetVolume === '2' ? 'quartet2StudyLastV1' : 'quartetStudyLastV1';
   const resolve = hash => {
     const match = /^#guide-([0-7])(?:-part-\d+)?$/.exec(hash);
     const target = match && document.getElementById(hash.slice(1));
@@ -35,11 +35,56 @@
   toolbar.hidden = false;
   select.addEventListener('change', () => { location.hash = '#guide-' + select.value; });
   window.addEventListener('hashchange', () => {
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+    resetSpeech();
     if (location.hash === '#study-content') {
       document.getElementById('study-content').scrollIntoView();
       current.chapter.querySelector('h2')?.focus({ preventScroll: true });
       return;
     }
     show(location.hash, true);
+  });
+
+  let speakingButton = null;
+  const resetSpeech = () => {
+    if (speakingButton) speakingButton.setAttribute('aria-pressed', 'false');
+    speakingButton = null;
+  };
+  document.querySelectorAll('[data-listen-text]').forEach(button => {
+    button.setAttribute('aria-pressed', 'false');
+    button.addEventListener('click', () => {
+      const message = button.closest('.study-chapter').querySelector('.listen-status');
+      if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
+        message.textContent = 'এই ব্রাউজারে কণ্ঠ চালু নেই। transcript খুলে পড়তে পারেন।';
+        return;
+      }
+      window.speechSynthesis.cancel();
+      resetSpeech();
+      const voice = window.speechSynthesis.getVoices().find(item => item.lang.toLowerCase().startsWith('ja'));
+      if (!voice) {
+        message.textContent = 'এই ব্রাউজারে জাপানি কণ্ঠ পাওয়া যায়নি। transcript খুলে অনুশীলন করুন।';
+        return;
+      }
+      const utterance = new SpeechSynthesisUtterance(button.dataset.listenText);
+      utterance.lang = 'ja-JP';
+      utterance.voice = voice;
+      utterance.rate = 0.85;
+      speakingButton = button;
+      button.setAttribute('aria-pressed', 'true');
+      utterance.onend = () => { message.textContent = 'শোনা শেষ। প্রশ্নের উত্তর দিয়ে transcript মিলিয়ে নিন।'; resetSpeech(); };
+      utterance.onerror = () => { message.textContent = 'কণ্ঠ চালানো যায়নি। transcript খুলে পড়তে পারেন।'; resetSpeech(); };
+      message.textContent = 'জাপানি স্ক্রিপ্ট চলছে…';
+      window.speechSynthesis.speak(utterance);
+    });
+  });
+  document.querySelectorAll('[data-listen-stop]').forEach(button => {
+    button.addEventListener('click', () => {
+      if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      resetSpeech();
+      button.closest('.study-chapter').querySelector('.listen-status').textContent = 'শোনা থামানো হয়েছে।';
+    });
+  });
+  window.addEventListener('pagehide', () => {
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
   });
 })();
