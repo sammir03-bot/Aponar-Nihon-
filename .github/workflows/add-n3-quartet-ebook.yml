@@ -9,7 +9,7 @@ on:
       - 'assets/**/n3-quartet*'
       - 'assets/**/n2-quartet*'
       - 'assets/css/quartet-studio.css'
-      - 'assets/css/quartet-one-masterclass.css'
+      - 'assets/css/quartet-one-*.css'
       - 'assets/js/quartet-one-reader.js'
       - 'assets/css/learning-library.css'
       - 'assets/js/learning-library.js'
