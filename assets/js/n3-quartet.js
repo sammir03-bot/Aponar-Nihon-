@@ -10,7 +10,7 @@
   if (!response.ok) throw new Error('Course data unavailable');
   course = await response.json();
   if (course.lessons?.length !== expectedTotal || course.chapters?.length !== 6) throw new Error('Course data incomplete');
-  if (!secondVolume) {
+  if (!secondVolume && document.body.classList.contains('quartet-masterclass')) {
    const expanded = await fetch('/assets/data/n3-quartet-deep.json?v=20261020.2');
    if (!expanded.ok) throw new Error('Expanded course data unavailable');
    deep = await expanded.json();
