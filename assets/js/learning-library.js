@@ -29,7 +29,7 @@
     filter = button.dataset.libraryFilter;
     render();
   }));
-  if (location.hash === '#quartet') filter = 'quartet';
+  if (location.hash === '#quartet' && filters.some(button => button.dataset.libraryFilter === 'quartet')) filter = 'quartet';
   render();
   document.querySelector('[data-library-controls]').hidden = false;
 })();

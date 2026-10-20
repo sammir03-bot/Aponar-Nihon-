@@ -1,0 +1,63 @@
+name: Learning Library Quality
+
+on:
+  pull_request:
+    paths:
+      - 'n3.html'
+      - 'n4.html'
+      - 'n5.html'
+      - 'assets/css/learning-library.css'
+      - 'assets/js/learning-library.js'
+      - 'assets/images/learning/**'
+      - 'tests/learning-library.spec.mjs'
+      - '.github/workflows/learning-library-quality.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'n3.html'
+      - 'n4.html'
+      - 'n5.html'
+      - 'assets/css/learning-library.css'
+      - 'assets/js/learning-library.js'
+      - 'assets/images/learning/**'
+      - 'tests/learning-library.spec.mjs'
+      - '.github/workflows/learning-library-quality.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: learning-library-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Check shared library script
+        run: node --check assets/js/learning-library.js
+      - name: Build all course libraries
+        run: npm run build
+      - name: Install browser test runner
+        run: npm install --no-save @playwright/test@1.62.1
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify library search, saved progress, resource links and mobile navigation
+        run: npx playwright test tests/learning-library.spec.mjs tests/quartet-library.spec.mjs tests/bottom-navigation.spec.mjs
+      - name: Upload browser diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: learning-library-diagnostics
+          path: |
+            test-results
+            playwright-report
+          if-no-files-found: ignore
+          retention-days: 3
