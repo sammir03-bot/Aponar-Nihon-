@@ -7,7 +7,14 @@ on:
       - 'n3.html'
       - 'n3-grammar.html'
       - 'assets/**/n3-quartet*'
+      - 'assets/**/n2-quartet*'
+      - 'assets/css/quartet-studio.css'
+      - 'assets/css/learning-library.css'
+      - 'assets/js/learning-library.js'
+      - 'assets/images/learning/**'
+      - 'tests/quartet*.spec.mjs'
       - 'tools/check_quartet.py'
+      - 'tools/build_quartet_two.py'
       - 'tools/compare_visible_content.py'
       - '.github/workflows/add-n3-quartet-ebook.yml'
   pull_request:
@@ -31,3 +38,23 @@ jobs:
         run: node --check assets/js/n3-quartet.js
       - name: Check study guide navigation script
         run: node --check assets/js/n3-quartet-study.js
+      - name: Check library filtering script
+        run: node --check assets/js/learning-library.js
+      - name: Build learning pages
+        run: npm run build
+      - name: Install browser test runner
+        run: npm install --no-save @playwright/test@1.62.1
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify both QUARTET volumes on mobile and desktop
+        run: npx playwright test tests/quartet.spec.mjs tests/quartet-study.spec.mjs tests/quartet-library.spec.mjs
+      - name: Upload browser diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: quartet-browser-diagnostics
+          path: |
+            test-results
+            playwright-report
+          if-no-files-found: ignore
+          retention-days: 3

@@ -6,6 +6,7 @@ import shutil
 from pathlib import Path
 
 from build_shin_bunka import build as build_shin_bunka
+from build_quartet_two import build as build_quartet_two
 
 from sitecore.htmltools import inject_assets, mark_bottom_navigation, visible_text_hash
 from sitecore.linkcheck import find_broken_page_links
@@ -128,6 +129,7 @@ def build(destination: Path, check_links: bool = False) -> int:
         )
 
     build_shin_bunka()
+    build_quartet_two()
     copied = copy_static_tree(destination)
     origin_files, origin_replacements, origin_html_checks = rewrite_production_origin(destination)
     injected, injection_checked = inject_professional_assets(destination)

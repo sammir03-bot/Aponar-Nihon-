@@ -87,3 +87,32 @@ for name in ['n3.html', 'n3-grammar.html', 'n3-quartet-grammar.html']:
     assert 'href="/n3-quartet-study-guide.html"' in (ROOT / name).read_text(), name
 print('Study guide passed: 6 chapters, 24 reading explanations, 27 writing sentences, 27 dialogue translations, complete furigana and navigation.')
 print('QUARTET passed: 6 chapters, 55 lessons, 110 examples, 55 quizzes, furigana and source preservation.')
+
+# The second volume contains original thematic selections, explicitly scoped as such.
+second = json.loads((ROOT / 'assets/data/n2-quartet.json').read_text())
+assert [chapter['id'] for chapter in second['chapters']] == list(range(7, 13))
+assert len(second['lessons']) == 36
+assert len({item['id'] for item in second['lessons']}) == 36
+assert len({item['quiz']['id'] for item in second['lessons']}) == 36
+assert [sum(item['chapter'] == n for item in second['lessons']) for n in range(7, 13)] == [6] * 6
+assert len(second['study']) == 6
+assert sum(len(item['examples']) for item in second['lessons']) == 72
+check_readings(second['lessons'])
+check_readings(second['study'])
+for item in second['lessons']:
+    quiz = item['quiz']
+    assert 0 <= quiz['answer_index'] < len(quiz['options'])
+    assert len(quiz['options']) == len(set(quiz['options']))
+    assert len(item['explanation_bn']) > 70
+    assert len(item['examples']) == 2
+assert 'পূর্ণ গ্রামার সূচি নয়' in second['scope_bn']
+second_guide = StudyGuideAudit()
+second_guide.feed((ROOT / 'n2-quartet-study-guide.html').read_text())
+assert second_guide.classes['study-chapter'] == 8
+assert second_guide.classes['lesson'] == 36
+assert second_guide.classes['sentence-note'] == 30
+assert second_guide.classes['dialogue-meaning'] == 24
+assert set(second_guide.anchors) <= second_guide.ids
+for name in ['n3.html', 'n3-quartet-grammar.html', 'n3-quartet-study-guide.html']:
+    assert 'href="/n2-quartet-grammar.html"' in (ROOT / name).read_text(), name
+print('QUARTET II passed: chapters 7–12, 36 original lessons, 72 examples, six four-skill labs, complete furigana and working anchors.')

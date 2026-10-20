@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="bn" dir="ltr" data-language-preset="bn" data-source-language="bn">
+<head>
+<meta charset="utf-8">
+  <script id="legacy-origin-redirect">
+  (function(){
+    var h = location.hostname;
+    if (h !== "sammir03-bot.github.io" && h !== "aponar-nihon.eu.cc") return;
+    var p = location.pathname || "/";
+    if (h === "sammir03-bot.github.io") {
+      var bases = ["/Aponar-Nihon-", "/Aponar-Nihon"];
+      for (var i = 0; i < bases.length; i++) {
+        var base = bases[i];
+        if (p === base || p === base + "/") { p = "/"; break; }
+        if (p.indexOf(base + "/") === 0) { p = p.slice(base.length) || "/"; break; }
+      }
+    }
+    if (p === "/index.html") p = "/";
+    else if (p.endsWith("/index.html")) p = p.slice(0, -10);
+    else if (p.endsWith(".html")) p = p.slice(0, -5);
+    location.replace("https://app.aponar-nihon.workers.dev" + p + location.search + location.hash);
+  })();
+  </script>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="QUARTET Ⅱ-এর অধ্যায় ৭–১২-এর থিমে নির্বাচিত ৩৬টি বিষয়ে নিজস্ব বাংলা ব্যাখ্যা, ফুরিগানাসহ উদাহরণ ও অনুশীলন।">
+<title>QUARTET II · N2 Grammar | আপনার নিহোন</title>
+<link rel="canonical" href="https://app.aponar-nihon.workers.dev/n2-quartet-grammar">
+<link rel="icon" href="/logo.png" type="image/png">
+<meta name="theme-color" content="#101521">
+<link rel="stylesheet" href="/assets/css/n3-quartet.css?v=20260914.1">
+<link rel="stylesheet" href="/assets/css/quartet-studio.css?v=20261020.1">
+</head>
+<body class="quartet-page" data-quartet-volume="2">
+<a class="skip-link" href="#panel">পাঠে যান</a>
+<div class="app" id="app">
+<nav class="site-nav" aria-label="পথ নির্দেশনা"><a href="/n3.html#course"><img src="/logo.png" alt="" width="32" height="32">আপনার নিহোন · QUARTET</a><span aria-hidden="true">/</span><a href="/n3-grammar.html">Grammar</a><span aria-hidden="true">/</span><a href="/n2-quartet-study-guide.html">চার দক্ষতার গাইড</a></nav>
+<div class="quartet-hero"><div class="quartet-hero-copy"> <header class="masthead"><div><div class="brand quartet-eyebrow">আপনার নিহোন · N2 Grammar</div><h1>QUARTET II<span>বাংলা গ্রামার স্টুডিও</span></h1></div><div class="counter">অধ্যায় ৭–১২ · নির্বাচিত ৩৬টি বিষয় · ৭২টি উদাহরণ</div></header>
+ <p class="course-intro">৭–১২ অধ্যায়ের থিমে নির্বাচিত ৩৬টি গ্রামার: বাংলা ব্যাখ্যা, Form, ফুরিগানাসহ ৭২টি নিজস্ব উদাহরণ ও ৩৬টি অনুশীলন।</p>
+</div><img class="quartet-hero-art" src="/assets/images/learning/quartet-ii.svg" alt="" width="640" height="300"></div><nav class="quartet-series-nav" aria-label="QUARTET বই ও পড়ার ধরন"><a href="/n3-quartet-grammar.html">QUARTET I · N3</a><a href="/n2-quartet-grammar.html" aria-current="page">QUARTET II · N2</a><a href="/n2-quartet-study-guide.html">চার দক্ষতার গাইড</a></nav> <div class="course-progress"><progress id="course-progress" max="36" value="0" aria-label="গ্রামার শেখার অগ্রগতি"></progress><span id="progress-text">০ / ৩৬টি শেখা</span><span class="small muted">অগ্রগতি ও অনুশীলনের উত্তর এই ব্রাউজারে মনে থাকবে।</span></div>
+ <div class="loading" id="loading" role="status"><p id="load-message">পাঠগুলো প্রস্তুত হচ্ছে…</p><button class="btn" id="load-retry" type="button" hidden>আবার চেষ্টা করুন</button></div>
+ <div class="workspace" id="study-workspace" hidden>
+  <aside class="sidebar" aria-label="পাঠ নির্বাচন"><div class="quartet-search-wrap"><label class="quartet-search" for="grammar-search"><input id="grammar-search" type="search" placeholder="গ্রামার বা বাংলা অর্থ খুঁজুন…" aria-label="গ্রামার খুঁজুন" aria-controls="lesson-list"></label><p id="grammar-search-status" class="quartet-search-status" role="status" aria-live="polite"></p></div>
+   <div><label for="chapter-select">অধ্যায় বেছে নিন</label><select id="chapter-select" class="select"></select></div>
+   <div class="mobile-topic"><label for="lesson-select">গ্রামার বেছে নিন</label><select id="lesson-select" class="select"></select></div>
+   <nav class="lesson-list" id="lesson-list" aria-label="এই অধ্যায়ের গ্রামার"></nav>
+  </aside>
+  <main class="main">
+   <div class="tabs" role="tablist" aria-label="পড়ার ধরন"><button class="tab" id="tab-lesson" role="tab" aria-controls="panel" aria-selected="true" tabindex="0" data-tab="lesson">পাঠ</button><button class="tab" id="tab-quiz" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-tab="quiz">অনুশীলন</button><button class="tab" id="tab-revision" role="tab" aria-controls="panel" aria-selected="false" tabindex="-1" data-tab="revision">রিভিশন</button></div>
+   <div id="announce" class="sr-only" role="status" aria-live="polite"></div>
+   <section id="panel" tabindex="0" role="tabpanel" aria-labelledby="tab-lesson"></section>
+   <details class="form-guide"><summary>Form বুঝতে অসুবিধা হচ্ছে? এখানে দেখুন</summary><div id="form-guide"></div></details>
+  </main>
+ </div>
+ <footer class="footer">অধ্যায় ৭–১২-এর থিমে নিজস্ব বাংলা সহায়ক অনুশীলন। নির্বাচিত ৩৬টি বিষয় মূল বইয়ের পূর্ণ গ্রামার সূচি নয়। ব্যাখ্যা, উদাহরণ ও প্রশ্ন নতুনভাবে লেখা। <a href="https://quartet.japantimes.co.jp/about/" target="_blank" rel="noopener noreferrer">মূল বইয়ের তথ্য</a></footer>
+</div>
+<noscript><p class="fallback">পাঠ ও অনুশীলন খুলতে JavaScript চালু করুন। <a href="/n3-grammar.html">N2 Grammar পড়ুন</a></p></noscript>
+<script defer src="/assets/js/n3-quartet.js?v=20261020.1"></script>
+</body>
+</html>

@@ -28,17 +28,18 @@
 <link rel="icon" href="/logo.png" type="image/png">
 <meta name="theme-color" content="#101521">
 <link rel="stylesheet" href="/assets/css/n3-quartet.css?v=20260914.1">
+<link rel="stylesheet" href="/assets/css/quartet-studio.css?v=20261020.1">
 </head>
-<body>
+<body class="quartet-page" data-quartet-volume="1">
 <a class="skip-link" href="#panel">পাঠে যান</a>
 <div class="app" id="app">
 <nav class="site-nav" aria-label="পথ নির্দেশনা"><a href="/n3.html#course"><img src="/logo.png" alt="" width="32" height="32">আপনার নিহোন · N3</a><span aria-hidden="true">/</span><a href="/n3-grammar.html">Grammar</a><span aria-hidden="true">/</span><a href="/n3-quartet-study-guide.html">চার দক্ষতার গাইড</a></nav>
- <header class="masthead"><div><div class="brand">আপনার নিহোন · N3 Grammar</div><h1>QUARTET Ⅰ</h1></div><div class="counter">৬ অধ্যায় · ৫৫টি বিষয় · ১১০টি উদাহরণ</div></header>
+<div class="quartet-hero"><div class="quartet-hero-copy"> <header class="masthead"><div><div class="brand quartet-eyebrow">আপনার নিহোন · N3 Grammar</div><h1>QUARTET Ⅰ<span>বাংলা গ্রামার স্টুডিও</span></h1></div><div class="counter">৬ অধ্যায় · ৫৫টি বিষয় · ১১০টি উদাহরণ</div></header>
  <p class="course-intro">৬ অধ্যায়ে ৫৫টি গ্রামার: বাংলা ব্যাখ্যা, Form, ফুরিগানাসহ ১১০টি নিজস্ব উদাহরণ ও ৫৫টি অনুশীলন।</p>
- <div class="course-progress"><progress id="course-progress" max="55" value="0" aria-label="গ্রামার শেখার অগ্রগতি"></progress><span id="progress-text">০ / ৫৫টি শেখা</span><span class="small muted">অগ্রগতি ও অনুশীলনের উত্তর এই ব্রাউজারে মনে থাকবে।</span></div>
+</div><img class="quartet-hero-art" src="/assets/images/learning/quartet-study.svg" alt="" width="640" height="300"></div><nav class="quartet-series-nav" aria-label="QUARTET বই ও পড়ার ধরন"><a href="/n3-quartet-grammar.html" aria-current="page">QUARTET I · N3</a><a href="/n2-quartet-grammar.html">QUARTET II · N2</a><a href="/n3-quartet-study-guide.html">চার দক্ষতার গাইড</a></nav> <div class="course-progress"><progress id="course-progress" max="55" value="0" aria-label="গ্রামার শেখার অগ্রগতি"></progress><span id="progress-text">০ / ৫৫টি শেখা</span><span class="small muted">অগ্রগতি ও অনুশীলনের উত্তর এই ব্রাউজারে মনে থাকবে।</span></div>
  <div class="loading" id="loading" role="status"><p id="load-message">পাঠগুলো প্রস্তুত হচ্ছে…</p><button class="btn" id="load-retry" type="button" hidden>আবার চেষ্টা করুন</button></div>
  <div class="workspace" id="study-workspace" hidden>
-  <aside class="sidebar" aria-label="পাঠ নির্বাচন">
+  <aside class="sidebar" aria-label="পাঠ নির্বাচন"><div class="quartet-search-wrap"><label class="quartet-search" for="grammar-search"><input id="grammar-search" type="search" placeholder="গ্রামার বা বাংলা অর্থ খুঁজুন…" aria-label="গ্রামার খুঁজুন" aria-controls="lesson-list"></label><p id="grammar-search-status" class="quartet-search-status" role="status" aria-live="polite"></p></div>
    <div><label for="chapter-select">অধ্যায় বেছে নিন</label><select id="chapter-select" class="select"></select></div>
    <div class="mobile-topic"><label for="lesson-select">গ্রামার বেছে নিন</label><select id="lesson-select" class="select"></select></div>
    <nav class="lesson-list" id="lesson-list" aria-label="এই অধ্যায়ের গ্রামার"></nav>
@@ -53,6 +54,6 @@
  <footer class="footer">স্বতন্ত্র বাংলা সহায়ক নোট। গ্রামারের বিষয় ও পৃষ্ঠা মূল বইয়ের সঙ্গে মিলিয়ে দেওয়া হয়েছে; ব্যাখ্যা, উদাহরণ ও অনুশীলন নতুনভাবে লেখা। <a href="https://quartet.japantimes.co.jp/about/" target="_blank" rel="noopener noreferrer">মূল বইয়ের তথ্য</a></footer>
 </div>
 <noscript><p class="fallback">পাঠ ও অনুশীলন খুলতে JavaScript চালু করুন। <a href="/n3-grammar.html">N3 Grammar পড়ুন</a></p></noscript>
-<script defer src="/assets/js/n3-quartet.js?v=20260914.1"></script>
+<script defer src="/assets/js/n3-quartet.js?v=20261020.1"></script>
 </body>
 </html>
