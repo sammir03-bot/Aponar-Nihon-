@@ -1,5 +1,7 @@
 /* One navigation surface for the app shell, mock centers and older guides.
-   Scoped markers outrank the older page-specific !important rules. */
+   Share the professional layer so its older !important rules cannot outrank
+   the navigation markers just by belonging to a named cascade layer. */
+@layer an-professional {
 :root {
   --an-bottom-nav-clearance: calc(88px + env(safe-area-inset-bottom, 0px));
 }
@@ -8,7 +10,7 @@ html:has(body.an-has-bottom-nav) {
   scroll-padding-bottom: var(--an-bottom-nav-clearance);
 }
 
-html body.an-has-bottom-nav {
+html body.an-has-bottom-nav:has(.an-bottom-nav[data-an-bottom-nav]) {
   padding-bottom: var(--an-bottom-nav-clearance) !important;
 }
 
@@ -168,10 +170,6 @@ html body.an-has-bottom-nav.tutor-keyboard-open .an-bottom-nav[data-an-bottom-na
    Keep the five shortcuts in a compact edge bar; slide it out while reading.
    The content clearance remains reserved even while the bar is offscreen. */
 @media (max-width: 800px) {
-  :root {
-    --an-bottom-nav-clearance: calc(72px + env(safe-area-inset-bottom, 0px));
-  }
-
   html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] {
     inset: auto 0 0 0 !important;
     max-width: none !important;
@@ -222,5 +220,6 @@ html body.an-has-bottom-nav.tutor-keyboard-open .an-bottom-nav[data-an-bottom-na
   html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] {
     display: none !important;
   }
-  html body.an-has-bottom-nav { padding-bottom: 0 !important; }
+  html body.an-has-bottom-nav:has(.an-bottom-nav[data-an-bottom-nav]) { padding-bottom: 0 !important; }
+}
 }

@@ -123,9 +123,15 @@ test('a phone keyboard hides navigation and closing it restores navigation with 
 test('dark compact navigation is present before scripts run', async ({ browser }) => {
   const context = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 360, height: 720 } });
   const page = await context.newPage();
-  await page.goto('http://127.0.0.1:4173/n3.html');
-  const nav = page.locator('[data-an-bottom-nav]');
-  await expect(nav).toHaveCSS('background-color', 'rgb(11, 23, 43)');
-  expect((await nav.boundingBox()).height).toBeLessThan(90);
+  for (const path of ['/n3.html', '/shop-food-phrases.html']) {
+    await page.goto('http://127.0.0.1:4173' + path);
+    const nav = page.locator('[data-an-bottom-nav]');
+    await expect(nav).toHaveCSS('background-color', 'rgb(11, 23, 43)');
+    expect((await nav.boundingBox()).height).toBeLessThan(90);
+    expect(await page.evaluate(() => {
+      const dock = document.querySelector('[data-an-bottom-nav]').getBoundingClientRect();
+      return parseFloat(getComputedStyle(document.body).paddingBottom) >= innerHeight - dock.top + 12;
+    })).toBe(true);
+  }
   await context.close();
 });
