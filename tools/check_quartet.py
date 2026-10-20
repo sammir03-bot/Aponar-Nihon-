@@ -32,6 +32,31 @@ def check_readings(value):
 
 check_readings(lessons)
 check_readings(course['form_guide'])
+
+# Every original ID gets eight new examples in addition to its two retained
+# examples. Reject partial enrichment, repeated sentences, or missing readings.
+deep = json.loads((ROOT / 'assets/data/n3-quartet-deep.json').read_text())
+assert set(deep['lessons']) == {item['id'] for item in lessons}
+assert deep['examples_per_lesson'] == 10 and deep['total_lessons'] == 55
+check_readings(deep['lessons'])
+plain = lambda value: reading.sub(r'\1', value)
+for item in lessons:
+    note = deep['lessons'][item['id']]
+    assert len(note['extra_examples']) == 8, item['id']
+    assert len(note['steps_bn']) == 3 and len(note['model_bn']) == 3
+    assert note['form_builds'] and all(all(form.get(key) for key in ['before', 'pattern', 'after', 'note_bn']) for form in note['form_builds'])
+    assert all(note['comparison'].get(key) for key in ['left_jp', 'left_bn', 'right_jp', 'right_bn', 'explanation_bn'])
+    assert all(note.get(key) for key in ['scene_bn', 'pitfall_bn', 'memory_bn'])
+    assert all(note['practice'].get(key) for key in ['prompt_bn', 'answer_jp', 'explanation_bn'])
+    examples = note['extra_examples'] + item['examples']
+    assert len({plain(example['japanese']) for example in examples}) == 10, item['id']
+    for index, example in enumerate(note['extra_examples']):
+        assert example['japanese'] and example['bangla'] and example['why_bn']
+        if index < 2:
+            assert len(example['parts']) >= 2
+            assert plain(''.join(part['japanese'] for part in example['parts'])) == plain(example['japanese']), (item['id'], index)
+            assert all(part['meaning_bn'] for part in example['parts'])
+print('QUARTET I expanded course passed: 55 complete lessons, 550 distinct per-lesson examples, 110 worked sentences, 55 comparisons and self-checks.')
 for lesson in lessons:
     quiz = lesson['quiz']
     assert 0 <= quiz['answer_index'] < len(quiz['options'])
@@ -83,6 +108,7 @@ for name, count in {'study-chapter': 8, 'lesson': 55, 'example': 110,
                     'sentence': 51, 'sentence-note': 24, 'dialogue-meaning': 27}.items():
     assert guide.classes[name] == count, (name, guide.classes[name])
 assert set(guide.anchors) <= guide.ids, set(guide.anchors) - guide.ids
+assert guide.classes['expanded-lesson-link'] == 55
 for name in ['n3.html', 'n3-grammar.html', 'n3-quartet-grammar.html']:
     assert 'href="/n3-quartet-study-guide.html"' in (ROOT / name).read_text(), name
 print('Study guide passed: 6 chapters, 24 reading explanations, 27 writing sentences, 27 dialogue translations, complete furigana and navigation.')

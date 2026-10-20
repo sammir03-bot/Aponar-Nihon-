@@ -5,9 +5,11 @@ test('QUARTET opens from N3 Grammar with six chapters and furigana', async ({ pa
   await page.getByRole('link', { name: 'QUARTET I পড়ুন →' }).click();
   await expect(page.locator('#study-workspace')).toBeVisible();
   await expect(page.locator('#chapter-select option')).toHaveCount(6);
-  await expect(page.locator('#panel .example')).toHaveCount(2);
+  await expect(page.locator('#panel .example')).toHaveCount(10);
   expect(await page.locator('#panel .example ruby rt').count()).toBeGreaterThan(0);
   await expect(page.locator('#aponarLanguageButton')).toHaveCount(0);
+  const picker = page.locator('.course-picker');
+  if (await picker.getAttribute('open') === null) await picker.locator('summary').click();
   await page.locator('#chapter-select').selectOption('3');
   await page.getByRole('tab', { name: 'রিভিশন', exact: true }).click();
   await expect(page.locator('.revision-row')).toHaveCount(10);

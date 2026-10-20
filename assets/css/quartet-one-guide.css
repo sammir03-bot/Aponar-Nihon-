@@ -1,0 +1,22 @@
+/* Keep the four-skill companion visually aligned with the expanded I reader. */
+@font-face{font-family:QuartetJapanese;src:url('/assets/fonts/mock/aponar-japanese-500.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
+@font-face{font-family:QuartetJapaneseExtra;src:url('/assets/fonts/mock/aponar-japanese-extra-500.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
+body.quartet-guide[data-quartet-volume="1"]{--qs-bg:#f3f1ea;--qs-paper:#fffef9;--qs-line:#d8dfd5;--qs-text:#213b37;--qs-muted:#64716b;--qs-accent:#176558;--qs-ink:#fffef9;--guide-accent:#176558;background:var(--qs-bg);color:var(--qs-text);font:18px/2 QuartetBangla,QuartetJapanese,QuartetJapaneseExtra,sans-serif;color-scheme:light}
+.quartet-guide[data-quartet-volume="1"] :is(h1,h2,h3,h4,strong){color:var(--qs-text)}
+.quartet-guide[data-quartet-volume="1"] .study-header{background:transparent;color:var(--qs-text);padding-top:18px;padding-bottom:10px}
+.quartet-guide[data-quartet-volume="1"] .study-breadcrumb a{color:var(--qs-accent);font-size:12px}
+.quartet-guide[data-quartet-volume="1"] .quartet-hero{background:var(--qs-paper);padding:24px 28px;grid-template-columns:minmax(0,1fr) 150px;border-radius:16px}
+.quartet-guide[data-quartet-volume="1"] .study-header h1{font-family:QuartetBangla,serif;font-size:clamp(24px,3vw,35px);line-height:1.8;color:var(--qs-text);font-weight:700}
+.quartet-guide[data-quartet-volume="1"] .study-header p{color:var(--qs-muted);font-size:14px;line-height:1.95}
+.quartet-guide[data-quartet-volume="1"] .quartet-hero-art{width:170px;max-width:100%;box-shadow:none;transform:rotate(3deg)}
+.quartet-guide[data-quartet-volume="1"] .quartet-series-nav a{color:var(--qs-accent);border-color:var(--qs-line);background:var(--qs-paper)}
+.quartet-guide[data-quartet-volume="1"] .study-toolbar select{color:var(--qs-text);background:var(--qs-paper);border-color:var(--qs-line)}
+.quartet-guide[data-quartet-volume="1"] :is(.study-chapter,.card,.example,.quiz,.answer,.tip,.formula,.notice){color:var(--qs-text);border-color:var(--qs-line);background:var(--qs-paper)}
+.quartet-guide[data-quartet-volume="1"] :is(.formula,.answer,.tip,.sentence-note,.skill-nav a){background:#eaf0e8;color:var(--qs-text);border-color:var(--qs-line)}
+.quartet-guide[data-quartet-volume="1"] .notice{background:#f4ede0}.quartet-guide[data-quartet-volume="1"] th{background:#eaf0e8;color:var(--qs-text)}
+.quartet-guide[data-quartet-volume="1"] :is(td,th,.sentence,.dialogue){border-color:var(--qs-line)}
+.quartet-guide[data-quartet-volume="1"] :is(.meta,.small,.dialogue-meaning,.sentence-label){color:var(--qs-muted)}
+.quartet-guide[data-quartet-volume="1"] .jp{font-family:QuartetJapanese,QuartetJapaneseExtra,sans-serif;line-height:2.8;font-size:21px}
+.quartet-guide[data-quartet-volume="1"] rt{color:var(--qs-muted)}
+.expanded-lesson-link{margin:0 0 14px;padding:11px 14px;border:1px solid var(--qs-line);border-radius:8px;background:#eaf0e8;font-size:12px;line-height:1.9}.expanded-lesson-link a{display:block;text-decoration:none;min-height:24px;color:var(--qs-accent)}
+@media(max-width:640px){.quartet-guide[data-quartet-volume="1"] .quartet-hero{padding:19px;grid-template-columns:minmax(0,1fr) 75px;gap:10px}.quartet-guide[data-quartet-volume="1"] .study-header h1{font-size:24px}.quartet-guide[data-quartet-volume="1"] .study-header p{font-size:12px}.quartet-guide[data-quartet-volume="1"] .quartet-eyebrow{font-size:9px}.quartet-guide[data-quartet-volume="1"] .jp{font-size:20px}.quartet-guide[data-quartet-volume="1"] .study-chapter{padding:19px 16px}}

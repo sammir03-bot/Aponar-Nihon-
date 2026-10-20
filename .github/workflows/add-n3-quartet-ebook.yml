@@ -9,6 +9,8 @@ on:
       - 'assets/**/n3-quartet*'
       - 'assets/**/n2-quartet*'
       - 'assets/css/quartet-studio.css'
+      - 'assets/css/quartet-one-masterclass.css'
+      - 'assets/js/quartet-one-reader.js'
       - 'assets/css/learning-library.css'
       - 'assets/js/learning-library.js'
       - 'assets/images/learning/**'
@@ -35,7 +37,9 @@ jobs:
       - name: Check QUARTET lessons and preserved source content
         run: python3 tools/check_quartet.py
       - name: Check interactive course script
-        run: node --check assets/js/n3-quartet.js
+        run: |
+          node --check assets/js/n3-quartet.js
+          node --check assets/js/quartet-one-reader.js
       - name: Check study guide navigation script
         run: node --check assets/js/n3-quartet-study.js
       - name: Check library filtering script
@@ -47,7 +51,7 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
       - name: Verify both QUARTET volumes on mobile and desktop
-        run: npx playwright test tests/quartet.spec.mjs tests/quartet-study.spec.mjs tests/quartet-library.spec.mjs
+        run: npx playwright test tests/quartet.spec.mjs tests/quartet-study.spec.mjs tests/quartet-library.spec.mjs tests/quartet-masterclass.spec.mjs
       - name: Upload browser diagnostics
         if: failure()
         uses: actions/upload-artifact@v4
