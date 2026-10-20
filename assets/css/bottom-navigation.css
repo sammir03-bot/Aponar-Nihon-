@@ -1,5 +1,7 @@
 /* One navigation surface for the app shell, mock centers and older guides.
-   Scoped markers outrank the older page-specific !important rules. */
+   Share the professional layer so its older !important rules cannot outrank
+   the navigation markers just by belonging to a named cascade layer. */
+@layer an-professional {
 :root {
   --an-bottom-nav-clearance: calc(88px + env(safe-area-inset-bottom, 0px));
 }
@@ -8,7 +10,7 @@ html:has(body.an-has-bottom-nav) {
   scroll-padding-bottom: var(--an-bottom-nav-clearance);
 }
 
-html body.an-has-bottom-nav {
+html body.an-has-bottom-nav:has(.an-bottom-nav[data-an-bottom-nav]) {
   padding-bottom: var(--an-bottom-nav-clearance) !important;
 }
 
@@ -164,7 +166,51 @@ html body.an-has-bottom-nav.tutor-keyboard-open .an-bottom-nav[data-an-bottom-na
   display: none !important;
 }
 
+/* A phone's reading area is small enough without a floating 72px panel over it.
+   Keep the five shortcuts in a compact edge bar; slide it out while reading.
+   The content clearance remains reserved even while the bar is offscreen. */
+@media (max-width: 800px) {
+  html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] {
+    inset: auto 0 0 0 !important;
+    max-width: none !important;
+    min-height: calc(56px + env(safe-area-inset-bottom, 0px)) !important;
+    padding: 3px max(4px, env(safe-area-inset-right, 0px)) calc(3px + env(safe-area-inset-bottom, 0px)) max(4px, env(safe-area-inset-left, 0px)) !important;
+    border-width: 1px 0 0 !important;
+    border-radius: 0 !important;
+    box-shadow: 0 -3px 12px #0206171a !important;
+    transition: transform .16s ease !important;
+  }
+
+  html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] > a {
+    min-height: 46px !important;
+    padding: 3px 2px !important;
+    gap: 1px !important;
+    border-radius: 8px !important;
+    font-size: 10.5px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+  }
+
+  html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] > a > :is(i, svg, .app-nav-icon) {
+    width: 28px !important;
+    height: 22px !important;
+    padding: 2px !important;
+    border-radius: 6px !important;
+    font-size: 18px !important;
+  }
+
+  html body.an-has-bottom-nav .an-bottom-nav[data-an-bottom-nav] .app-nav-icon > i {
+    font-size: 18px !important;
+  }
+
+  html body.an-has-bottom-nav:is(.an-nav-reading, .an-nav-keyboard-open) :is(nav, div).an-bottom-nav[data-an-bottom-nav]:not(:focus-within) {
+    transform: translateY(calc(100% + 12px)) !important;
+    pointer-events: none !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
+  html body.an-has-bottom-nav .an-bottom-nav[data-an-bottom-nav],
   html body.an-has-bottom-nav .an-bottom-nav[data-an-bottom-nav] > a {
     transition: none !important;
   }
@@ -174,5 +220,6 @@ html body.an-has-bottom-nav.tutor-keyboard-open .an-bottom-nav[data-an-bottom-na
   html body.an-has-bottom-nav :is(nav, div).an-bottom-nav[data-an-bottom-nav] {
     display: none !important;
   }
-  html body.an-has-bottom-nav { padding-bottom: 0 !important; }
+  html body.an-has-bottom-nav:has(.an-bottom-nav[data-an-bottom-nav]) { padding-bottom: 0 !important; }
+}
 }

@@ -1,0 +1,59 @@
+name: Mobile Navigation Quality
+
+on:
+  pull_request:
+    paths:
+      - 'assets/css/bottom-navigation.css'
+      - 'assets/js/bottom-navigation.js'
+      - 'tools/build_site.py'
+      - 'tools/sitecore/htmltools.py'
+      - 'tests/bottom-navigation.spec.mjs'
+      - '.github/workflows/mobile-navigation-quality.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'assets/css/bottom-navigation.css'
+      - 'assets/js/bottom-navigation.js'
+      - 'tools/build_site.py'
+      - 'tools/sitecore/htmltools.py'
+      - 'tests/bottom-navigation.spec.mjs'
+      - '.github/workflows/mobile-navigation-quality.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: mobile-navigation-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '22'
+          package-manager-cache: false
+      - name: Check shared navigation script
+        run: node --check assets/js/bottom-navigation.js
+      - name: Build all navigation variants
+        run: npm run build
+      - name: Install browser test runner
+        run: npm install --no-save @playwright/test@1.62.1
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Verify compact layout, scrolling, keyboard and content clearance
+        run: npx playwright test tests/bottom-navigation.spec.mjs
+      - name: Upload browser diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mobile-navigation-diagnostics
+          path: |
+            test-results
+            playwright-report
+          if-no-files-found: ignore
+          retention-days: 3
