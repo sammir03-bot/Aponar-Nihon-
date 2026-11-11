@@ -1,0 +1,226 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "tutor-section",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "AI জাপানি টিউটর | আপনার নিহোন",
+      "target": "AI日语家教 | আপনার নিহোন"
+    },
+    {
+      "source": "AI জাপানি টিউটর",
+      "target": "AI日语家教"
+    },
+    {
+      "source": "সংযোগ যাচাই হচ্ছে",
+      "target": "正在检查连接"
+    },
+    {
+      "source": "আপনার ব্যক্তিগত শিক্ষক",
+      "target": "您的私人教师"
+    },
+    {
+      "source": "লক্ষ্য অনুযায়ী",
+      "target": "根据您的目标"
+    },
+    {
+      "source": "জাপানি শিখুন",
+      "target": "学习日语"
+    },
+    {
+      "source": "লেভেল ও মোড বেছে নিন—টিউটর সেই অনুযায়ী ভাষা, উদাহরণ ও অনুশীলন সাজাবে।",
+      "target": "选择等级与模式——家教将据此为您量身定制语言、例句与练习。"
+    },
+    {
+      "source": "আপনার JLPT লেভেল",
+      "target": "您的 JLPT 等级"
+    },
+    {
+      "source": "কীভাবে শিখবেন",
+      "target": "学习方式"
+    },
+    {
+      "source": "বুঝিয়ে শেখান",
+      "target": "详细讲解"
+    },
+    {
+      "source": "ব্যাকরণ · কানজি · শব্দ",
+      "target": "语法 · 汉字 · 词汇"
+    },
+    {
+      "source": "বাক্য ঠিক করুন",
+      "target": "纠正句子"
+    },
+    {
+      "source": "ভুল ও natural expression",
+      "target": "错误与自然表达"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "会话"
+    },
+    {
+      "source": "এক ধাপ করে role-play",
+      "target": "分步角色扮演"
+    },
+    {
+      "source": "ইন্টারভিউ কোচ",
+      "target": "面试教练"
+    },
+    {
+      "source": "কুইজ প্র্যাকটিস",
+      "target": "测验练习"
+    },
+    {
+      "source": "একবারে একটি প্রশ্ন",
+      "target": "每次一个问题"
+    },
+    {
+      "source": "অনুবাদ ও বিশ্লেষণ",
+      "target": "翻译与分析"
+    },
+    {
+      "source": "পাসওয়ার্ড, পাসপোর্ট নম্বর বা ব্যক্তিগত গোপন তথ্য চ্যাটে দেবেন না।",
+      "target": "请勿在聊天中输入密码、护照号码或个人隐私信息。"
+    },
+    {
+      "source": "আজ",
+      "target": "今天"
+    },
+    {
+      "source": "০",
+      "target": "0"
+    },
+    {
+      "source": "/২০",
+      "target": "/20"
+    },
+    {
+      "source": "লেভেল",
+      "target": "等级"
+    },
+    {
+      "source": "শেখান",
+      "target": "讲解"
+    },
+    {
+      "source": "বাক্য ঠিক",
+      "target": "纠错"
+    },
+    {
+      "source": "ইন্টারভিউ",
+      "target": "面试"
+    },
+    {
+      "source": "কুইজ",
+      "target": "测验"
+    },
+    {
+      "source": "অনুবাদ",
+      "target": "翻译"
+    },
+    {
+      "source": "আজ কী শিখতে চান?",
+      "target": "今天想学点什么？"
+    },
+    {
+      "source": "জাপানি ব্যাকরণ, শব্দ, কানজি বা যেকোনো বাক্য বাংলায় সহজ করে বুঝিয়ে নিন।",
+      "target": "用孟加拉语轻松搞懂日语语法、词汇、汉字或任何句子。"
+    },
+    {
+      "source": "বাংলায় ব্যাখ্যা",
+      "target": "孟加拉语解释"
+    },
+    {
+      "source": "সঠিক ふりがな",
+      "target": "正确的假名标注"
+    },
+    {
+      "source": "Grammar পার্থক্য",
+      "target": "语法差异"
+    },
+    {
+      "source": "は আর が কখন ব্যবহার করব?",
+      "target": "は 和 が 什么时候用？"
+    },
+    {
+      "source": "বাক্য ভেঙে শিখুন",
+      "target": "拆解句子学习"
+    },
+    {
+      "source": "Particle ও conjugation বুঝুন",
+      "target": "理解助词与词尾变化"
+    },
+    {
+      "source": "আজকের ৫টি শব্দ",
+      "target": "今天的 5 个词汇"
+    },
+    {
+      "source": "অর্থ, reading ও উদাহরণ",
+      "target": "词义、读音与例句"
+    },
+    {
+      "source": "বাস্তব জাপানি",
+      "target": "地道日语"
+    },
+    {
+      "source": "সহজ করে বলুন",
+      "target": "简单点说"
+    },
+    {
+      "source": "আরও example",
+      "target": "更多例句"
+    },
+    {
+      "source": "ছোট quiz দিন",
+      "target": "出个小测验"
+    },
+    {
+      "source": "AI ভুল করতে পারে—গুরুত্বপূর্ণ তথ্য যাচাই করুন",
+      "target": "AI 可能会出错——请核实重要信息"
+    },
+    {
+      "source": "Standard উত্তর",
+      "target": "标准回答"
+    },
+    {
+      "source": "হোম",
+      "target": "首页"
+    },
+    {
+      "source": "AI Tutor সেটিংস",
+      "target": "AI Tutor设置"
+    },
+    {
+      "source": "উত্তর কতটা বিস্তারিত হবে",
+      "target": "回答的详细程度"
+    },
+    {
+      "source": "সংক্ষিপ্ত",
+      "target": "简短"
+    },
+    {
+      "source": "বিস্তারিত",
+      "target": "详细"
+    },
+    {
+      "source": "কথোপকথন ও কুইজ মোডে AI একবারে একটি ধাপ দেবে। অন্য মোডে আপনার নির্বাচিত বিস্তারিত মাত্রা মানবে।",
+      "target": "在对话和测验模式下，AI每次只提供一个步骤。在其他模式下，将遵循您所选的详细程度。"
+    },
+    {
+      "source": "ইতিহাস মুছুন",
+      "target": "清除历史记录"
+    },
+    {
+      "source": "বাতিল",
+      "target": "取消"
+    },
+    {
+      "source": "সংরক্ষণ করুন",
+      "target": "保存"
+    }
+  ]
+}

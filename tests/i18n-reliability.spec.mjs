@@ -174,13 +174,58 @@ test('slow and dynamic translations finish without hiding inputs or sending priv
   await expect(page.locator('html')).toHaveAttribute('data-i18n-ready', 'true');
 });
 
+test('pure Bengali numerals convert locally without a translation request', async ({ page }) => {
+  const markup = '<p id="num">০/২০</p><p id="mixed">মোট ৩টি</p><div id="paperArea">০/২০</div>';
+  await fixture(page, 'en', markup);
+  const requestedText = [];
+  await page.route('**/api/i18n/translate', async route => {
+    const body = route.request().postDataJSON();
+    requestedText.push(...body.items.map(item => item.text));
+    await route.fulfill({ json: { ok: true, translations: body.items.map(item => ({ id: item.id, text: 'Total 3' })) } });
+  });
+  await page.goto(fixturePath);
+  await expect(page.locator('#num')).toHaveText('0/20');
+  await expect(page.locator('#mixed')).toHaveText('Total 3');
+  // The preserved CV paper area keeps its original digits.
+  await expect(page.locator('#paperArea')).toHaveText('০/২০');
+  expect(requestedText).not.toContain('০/২০');
+  await expect(page.locator('html')).toHaveAttribute('data-i18n-ready', 'true');
+});
+
+test('translation progress never covers the page with a full-screen overlay', async ({ page }) => {
+  await fixture(page);
+  let release;
+  const gate = new Promise(resolve => { release = resolve; });
+  await page.route('**/api/i18n/translate', async route => {
+    await gate;
+    await route.fulfill({ json: response(route.request().postDataJSON()) });
+  });
+  await page.goto(fixturePath);
+  const status = page.locator('#aponarI18nStatus');
+  await expect(status).toBeVisible();
+  await expect(status).toHaveClass(/compact/);
+  const box = await status.boundingBox();
+  const viewport = page.viewportSize();
+  expect(box.width).toBeLessThan(viewport.width);
+  expect(box.height).toBeLessThan(160);
+  // Content underneath stays visible and interactive while work is pending.
+  await expect(page.locator('#copy')).toBeVisible();
+  await page.locator('#notes').fill('এখনো লেখা যায়');
+  await expect(page.locator('#notes')).toHaveValue('এখনো লেখা যায়');
+  release();
+  await expect(page.locator('#copy')).toHaveText('Original content');
+  await expect(status).toBeHidden();
+});
+
 test('shared Japanese and Chinese UI labels translate while study examples stay intact', async ({ page }) => {
-  await fixture(page, 'en', '<h1>氏名</h1><button>制作简历</button><p lang="ja">氏名</p>');
+  await fixture(page, 'en', '<h1>氏名</h1><button id="sharedLabel">制作简历</button><p lang="ja">氏名</p>');
   let requests = 0;
   await page.route('**/api/i18n/translate', async route => { requests++; await route.abort(); });
   await page.goto(fixturePath);
   await expect(page.locator('h1')).toHaveText('Full name');
-  await expect(page.locator('body > button')).toHaveText('CV Builder');
+  // The fixture button needs its own selector: since the picker mounts
+  // site-wide, the floating picker button is also a direct body > button.
+  await expect(page.locator('#sharedLabel')).toHaveText('CV Builder');
   await expect(page.locator('p[lang="ja"]')).toHaveText('氏名');
   expect(requests).toBe(0);
 });

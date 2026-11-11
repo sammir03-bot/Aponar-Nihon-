@@ -1,0 +1,454 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "japan-arrival-guide",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "আগমনের পর A–Z | আপনার নিহোন",
+      "target": "到着後 A–Z | あなたのニホン"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "জাপান লাইফ গাইড",
+      "target": "日本生活ガイド"
+    },
+    {
+      "source": "সব গাইড",
+      "target": "すべてのガイド"
+    },
+    {
+      "source": "আগমনের পর",
+      "target": "到着後"
+    },
+    {
+      "source": "বাসা ও দৈনন্দিন জীবন",
+      "target": "住まいと日常生活"
+    },
+    {
+      "source": "ট্রেন ও Platform",
+      "target": "電車とプラットフォーム"
+    },
+    {
+      "source": "Google Maps ব্যবহার",
+      "target": "Googleマップの使い方"
+    },
+    {
+      "source": "পার্ট-টাইম চাকরি",
+      "target": "アルバイト"
+    },
+    {
+      "source": "জরুরি সহায়তা",
+      "target": "緊急サポート"
+    },
+    {
+      "source": "আগমনের পর A–Z",
+      "target": "到着後 A–Z"
+    },
+    {
+      "source": "জাপানে নামার মুহূর্ত থেকে address registration, insurance, bank ও phone পর্যন্ত—একজন নতুন শিক্ষার্থীর সম্পূর্ণ প্রথম সপ্তাহের গাইড।",
+      "target": "日本到着の瞬間から、住所登録、保険、銀行、携帯電話まで—新留学生のための最初の1週間の完全ガイド。"
+    },
+    {
+      "source": "বাংলা ব্যাখ্যা",
+      "target": "ベンガル語解説"
+    },
+    {
+      "source": "জাপানি বাক্য",
+      "target": "日本語の文"
+    },
+    {
+      "source": "বাস্তব ধাপ",
+      "target": "実際のステップ"
+    },
+    {
+      "source": "আপনার অগ্রগতি",
+      "target": "あなたの進捗"
+    },
+    {
+      "source": "0/0 সম্পন্ন",
+      "target": "0/0 完了"
+    },
+    {
+      "source": "এয়ারপোর্ট",
+      "target": "空港"
+    },
+    {
+      "source": "সিটি অফিস",
+      "target": "区役所 / 市役所"
+    },
+    {
+      "source": "বাক্য",
+      "target": "文"
+    },
+    {
+      "source": "এয়ারপোর্টে প্রথমে কী দেখবেন",
+      "target": "空港で最初に確認すること"
+    },
+    {
+      "source": "Residence card, passport ও অনুমতির তথ্য যাচাই",
+      "target": "在留カード、パスポート、および許可情報の確認"
+    },
+    {
+      "source": "ইমিগ্রেশন শেষ করার পর তাড়াহুড়া করে বের না হয়ে আপনার কাগজপত্র মিলিয়ে নিন। ভুল থাকলে এয়ারপোর্টেই জিজ্ঞেস করা সবচেয়ে সহজ।",
+      "target": "入国審査が終わった後、急いで出ることなく書類を確認してください。間違いがあれば空港で尋ねるのが一番簡単です。"
+    },
+    {
+      "source": "পাসপোর্টের নাম ও জন্মতারিখ মিলান",
+      "target": "パスポートの名前と生年月日を確認する"
+    },
+    {
+      "source": "পাসপোর্ট, ভিসা/landing permission এবং Residence Card-এর বানান একই কি না দেখুন।",
+      "target": "パスポート、ビザ/上陸許可、在留カードのスペルが同じかどうか確認します。"
+    },
+    {
+      "source": "在留資格 ও মেয়াদ দেখুন",
+      "target": "在留資格と有効期限を確認する"
+    },
+    {
+      "source": "মানে residence status এবং",
+      "target": "とは在留資格であり、"
+    },
+    {
+      "source": "মানে থাকার অনুমোদিত সময়।",
+      "target": "とは滞在できる許可期間です。"
+    },
+    {
+      "source": "কাজের অনুমতির stamp দেখুন",
+      "target": "就労許可のスタンプを確認する"
+    },
+    {
+      "source": "শিক্ষার্থী হিসেবে part-time করতে চাইলে 資格外活動許可 আছে কি না যাচাই করুন। অনুমতি ছাড়া কাজ শুরু করবেন না।",
+      "target": "留学生としてアルバイトをしたい場合は、資格外活動許可があるか確認してください。許可なく仕事を始めないでください。"
+    },
+    {
+      "source": "কার্ড না পেলে নির্দেশনা সংরক্ষণ করুন",
+      "target": "カードを受け取らなかった場合は指示を保管する"
+    },
+    {
+      "source": "প্রবেশ বন্দরে কার্ড দেওয়া না হলে, ঠিকানা নিবন্ধনের পর ডাকযোগে আসতে পারে। পাওয়া কাগজ হারাবেন না।",
+      "target": "入国港でカードが交付されなかった場合、住所登録後に郵送で届くことがあります。受け取った書類を紛失しないでください。"
+    },
+    {
+      "source": "ছবি তুলে রাখুন",
+      "target": "写真を撮っておく"
+    },
+    {
+      "source": "পাসপোর্টের পরিচয় পাতা, Residence Card-এর সামনে-পেছন এবং স্কুলের admission কাগজ নিরাপদ cloud folder-এ রাখুন।",
+      "target": "パスポートの身分事項ページ、在留カードの両面、学校の入学許可書を安全なクラウドフォルダに保存してください。"
+    },
+    {
+      "source": "প্রথম ২৪ ঘণ্টার পরিকল্পনা",
+      "target": "最初の24時間の計画"
+    },
+    {
+      "source": "SIM, যাতায়াত, নগদ টাকা ও নিরাপদে বাসায় পৌঁছানো",
+      "target": "SIM、交通手段、現金、そして安全に家に到着すること"
+    },
+    {
+      "source": "ইন্টারনেট",
+      "target": "インターネット"
+    },
+    {
+      "source": "Airport Wi‑Fi বা বৈধ SIM/eSIM",
+      "target": "空港Wi‑Fiまたは有効なSIM/eSIM"
+    },
+    {
+      "source": "যাতায়াত",
+      "target": "交通手段"
+    },
+    {
+      "source": "IC card বা ticket",
+      "target": "ICカードまたは切符"
+    },
+    {
+      "source": "নগদ",
+      "target": "現金"
+    },
+    {
+      "source": "কিছু cash সঙ্গে রাখুন",
+      "target": "現金を少し用意しましょう"
+    },
+    {
+      "source": "ঠিকানা",
+      "target": "住所"
+    },
+    {
+      "source": "বাসার ঠিকানা জাপানিতে রাখুন",
+      "target": "自宅の住所を日本語で用意する"
+    },
+    {
+      "source": "বিল্ডিং নাম, room number, postal code সহ screenshot নিন। শুধু English map pin যথেষ্ট নয়।",
+      "target": "建物名、部屋番号、郵便番号を含むスクリーンショットを保存しましょう。英語のマップピンだけでは不十分です。"
+    },
+    {
+      "source": "শেষ ট্রেনের সময় দেখুন",
+      "target": "終電の時間を確認する"
+    },
+    {
+      "source": "রাতে পৌঁছালে Google Maps-এর last train এবং taxi fare তুলনা করুন।",
+      "target": "夜間に到着する場合は、Google Mapsで終電とタクシー料金を比較しましょう。"
+    },
+    {
+      "source": "স্কুল/পরিচিত ব্যক্তিকে arrival message দিন",
+      "target": "学校や知人に到着メッセージを送る"
+    },
+    {
+      "source": "আপনি নিরাপদে পৌঁছেছেন এবং কোন সময় বাসায় যাবেন জানিয়ে দিন।",
+      "target": "無事に到着したことと、何時に家に入るかを伝えましょう。"
+    },
+    {
+      "source": "সিটি অফিসে Address Registration",
+      "target": "市役所・区役所で住所登録"
+    },
+    {
+      "source": "বাসা ঠিক করার পর ১৪ দিনের মধ্যে মূল কাজ",
+      "target": "住居が決まってから14日以内に行う主な手続き"
+    },
+    {
+      "source": "বাসার ঠিকানা স্থির হওয়ার পর স্থানীয় 市役所（しやくしょ）/区役所（くやくしょ）-এ গিয়ে 転入届（てんにゅうとどけ） বা residence registration করুন।",
+      "target": "住居の住所が決まったら、地域の市役所（しやくしょ）/区役所（くやくしょ）に行って転入届（てんにゅうとどけ）または住民登録をしてください。"
+    },
+    {
+      "source": "সঙ্গে নিন",
+      "target": "持ち物"
+    },
+    {
+      "source": "কেন লাগবে",
+      "target": "必要な理由"
+    },
+    {
+      "source": "নোট",
+      "target": "備考"
+    },
+    {
+      "source": "ঠিকানা কার্ডে লিখতে",
+      "target": "カードに住所を記載するため"
+    },
+    {
+      "source": "Original নিন",
+      "target": "原本を持参"
+    },
+    {
+      "source": "পরিচয়/entry যাচাই",
+      "target": "本人確認・入国確認"
+    },
+    {
+      "source": "সবসময় চাইবে না, তবু নিন",
+      "target": "毎回求められるとは限りませんが、持参してください"
+    },
+    {
+      "source": "বাসার পূর্ণ ঠিকানা",
+      "target": "住所の全称"
+    },
+    {
+      "source": "Room number ভুল করবেন না",
+      "target": "部屋番号を間違えないようにしてください"
+    },
+    {
+      "source": "Household তথ্য",
+      "target": "世帯情報"
+    },
+    {
+      "source": "একসঙ্গে কারা থাকেন",
+      "target": "同居人の情報"
+    },
+    {
+      "source": "পরিবার হলে relationship তথ্য",
+      "target": "家族の場合は続柄の情報"
+    },
+    {
+      "source": "আগের municipality-এর certificate",
+      "target": "前自治体の証明書"
+    },
+    {
+      "source": "Japan-এর ভিতরে move হলে",
+      "target": "日本国内で引っ越す場合"
+    },
+    {
+      "source": "নতুন আগমন হলে সাধারণত নেই",
+      "target": "新規来日の場合は通常不要"
+    },
+    {
+      "source": "কাউন্টারে বলুন",
+      "target": "窓口で話す内容"
+    },
+    {
+      "source": "“নতুন এসেছি, address registration করতে চাই।” নিচের বাক্য দেখান।",
+      "target": "「新しく来ました、住所登録をしたいです。」以下の文章を見せてください。"
+    },
+    {
+      "source": "আমি ঠিকানা নিবন্ধন করতে চাই।",
+      "target": "住所の登録をしたいです。"
+    },
+    {
+      "source": "আমি সদ্য জাপানে এসেছি। প্রয়োজনীয় প্রক্রিয়াগুলো বলবেন।",
+      "target": "日本に来たばかりです。必要な手続きを教えてください。"
+    },
+    {
+      "source": "Health Insurance, Pension ও My Number",
+      "target": "健康保険・年金・マイナンバー"
+    },
+    {
+      "source": "কাউন্টারে কোনগুলো জিজ্ঞেস করবেন",
+      "target": "窓口で確認すること"
+    },
+    {
+      "source": "National Health Insurance সম্পর্কে জিজ্ঞেস করুন",
+      "target": "国民健康保険について確認する"
+    },
+    {
+      "source": "আপনার অন্য employee insurance না থাকলে National Health Insurance-এর eligibility ও enrolment সম্পর্কে city office জানাবে।",
+      "target": "他の職場の健康保険に加入していない場合、市役所・区役所が国民健康保険の加入資格や手続きについて案内します。"
+    },
+    {
+      "source": "National Pension/Student exemption জিজ্ঞেস করুন",
+      "target": "国民年金／学生納付特例について確認する"
+    },
+    {
+      "source": "বয়স ও status অনুযায়ী pension procedure হতে পারে। শিক্ষার্থী হলে 学生納付特例 বা অন্য exemption প্রযোজ্য কি না জিজ্ঞেস করুন।",
+      "target": "年齢や在留資格に応じて年金手続きが必要になる場合があります。学生の場合は学生納付特例やその他の免除が適用されるか確認してください。"
+    },
+    {
+      "source": "My Number notice-এর ঠিকানা নিশ্চিত করুন",
+      "target": "マイナンバー通知の送付先を確認する"
+    },
+    {
+      "source": "通知書 ডাকযোগে আসতে পারে। Mailbox-এ নিজের নাম লিখুন এবং চিঠি নিয়মিত দেখুন।",
+      "target": "通知書が郵送で届く場合があります。郵便受けに自分の名前を書き、定期的に手紙を確認してください。"
+    },
+    {
+      "source": "সবাইয়ের অবস্থা এক নয়",
+      "target": "状況は人それぞれです"
+    },
+    {
+      "source": "স্কুল, চাকরি, পরিবারের insurance ও residence status অনুযায়ী ব্যবস্থা বদলাতে পারে। কাউন্টারের লিখিত নির্দেশনা অনুসরণ করুন।",
+      "target": "学校、仕事、家族の保険や在留資格によって手続きが異なる場合があります。窓口の案内に従ってください。"
+    },
+    {
+      "source": "Bank account, Mobile ও দৈনন্দিন পরিচয়",
+      "target": "銀行口座、携帯電話、日常の身元証明"
+    },
+    {
+      "source": "Registration শেষ হলে পরের বাস্তব কাজ",
+      "target": "登録完了後の次の実務的なステップ"
+    },
+    {
+      "source": "জাপানি ফোন নম্বর নিন",
+      "target": "日本の電話番号を取得する"
+    },
+    {
+      "source": "Job application, bank verification ও delivery-এর জন্য নিজের নামে সক্রিয় নম্বর দরকার হয়। Contract বুঝে sign করুন।",
+      "target": "求人応募、銀行の本人確認、配送のために、自分名義の有効な電話番号が必要です。契約内容を理解した上で署名してください。"
+    },
+    {
+      "source": "Bank account-এর কাগজ প্রস্তুত করুন",
+      "target": "銀行口座の書類を準備する"
+    },
+    {
+      "source": "Residence Card, student ID, phone number, address, hanko লাগতে পারে। ব্যাংকভেদে requirements আলাদা।",
+      "target": "在留カード、学生証、電話番号、住所、印鑑が必要になる場合があります。必要書類は銀行によって異なります。"
+    },
+    {
+      "source": "Mailbox ও nameplate ঠিক করুন",
+      "target": "郵便受けと表札を整える"
+    },
+    {
+      "source": "নাম না থাকলে Residence Card বা My Number-এর চিঠি ফেরত যেতে পারে।",
+      "target": "名前がないと、在留カードやマイナンバーに関する郵便物が返送される可能性があります。"
+    },
+    {
+      "source": "সব deadline calendar-এ রাখুন",
+      "target": "すべての締め切りをカレンダーに記載する"
+    },
+    {
+      "source": "Residence expiry, school payment, utility bill ও insurance notice-এর reminder দিন।",
+      "target": "在留期限、学費の支払い、公共料金、保険の通知のリマインダーを設定しましょう。"
+    },
+    {
+      "source": "কাজের জাপানি বাক্য",
+      "target": "実用的な日本語フレーズ"
+    },
+    {
+      "source": "কাউন্টারে ফোন দেখিয়ে ব্যবহার করতে পারবেন",
+      "target": "窓口でスマートフォンを見せて使用できます"
+    },
+    {
+      "source": "এই ফর্মটি কীভাবে লিখব, দেখিয়ে দিন।",
+      "target": "この書類の書き方を教えてください。"
+    },
+    {
+      "source": "আমার জাপানি এখনো ভালো নয়। আস্তে বলবেন।",
+      "target": "私の日本語はまだ上手ではありません。ゆっくり話してください。"
+    },
+    {
+      "source": "এরপর আমাকে কী করতে হবে?",
+      "target": "この後、私は何をすればいいですか？"
+    },
+    {
+      "source": "এই ঠিকানায় নিবন্ধন করা যাবে?",
+      "target": "この住所で登録できますか？"
+    },
+    {
+      "source": "আগমনের Checklist",
+      "target": "到着後のチェックリスト"
+    },
+    {
+      "source": "একটি শেষ হলে টিক দিন",
+      "target": "完了したらチェックを入れてください"
+    },
+    {
+      "source": "Passport, Residence Card ও permission তথ্য মিলিয়েছি",
+      "target": "パスポート、在留カード、許可情報を確認しました"
+    },
+    {
+      "source": "বাসার Japanese address screenshot করেছি",
+      "target": "自宅の日本語住所のスクリーンショットを保存しました"
+    },
+    {
+      "source": "Address registration-এর জন্য city/ward office গিয়েছি",
+      "target": "住所登録のため市区町村役所に行きました"
+    },
+    {
+      "source": "Insurance ও pension procedure জিজ্ঞেস করেছি",
+      "target": "保険と年金の手続きについて確認しました"
+    },
+    {
+      "source": "Mailbox-এ নাম দিয়েছি",
+      "target": "郵便受けに名前を表示しました"
+    },
+    {
+      "source": "Phone number ও জরুরি contact save করেছি",
+      "target": "電話番号と緊急連絡先を保存しました"
+    },
+    {
+      "source": "সব গুরুত্বপূর্ণ কাগজের backup রেখেছি",
+      "target": "すべての重要書類のバックアップを保存しました"
+    },
+    {
+      "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+      "target": "公式で信頼できる情報源"
+    },
+    {
+      "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+      "target": "規則は変更される可能性があります—最終決定の前に公式情報を確認してください"
+    },
+    {
+      "source": "বাসা ও জীবন",
+      "target": "住まいと生活"
+    },
+    {
+      "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+      "target": "このガイドは学習のサポートを目的としています。個人の法律的・医療的な判断については、関係機関や専門家の指示に従ってください。"
+    },
+    {
+      "source": "হোম",
+      "target": "ホーム"
+    }
+  ]
+}

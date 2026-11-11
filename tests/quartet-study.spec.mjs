@@ -7,7 +7,7 @@ test('QUARTET study guide opens from N3 with translated practice texts and mobil
   await expect(page.locator('.sentence-note')).toHaveCount(24);
   await expect(page.locator('.sentence')).toHaveCount(51);
   await expect(page.locator('.dialogue-meaning')).toHaveCount(27);
-  await expect(page.locator('#aponarLanguageButton')).toHaveCount(0);
+  await expect(page.locator('#aponarLanguageButton')).toBeVisible();
   for (let chapter = 0; chapter < 8; chapter++) {
     await page.getByLabel('অধ্যায় বেছে নিন').selectOption(String(chapter));
     await expect(page.locator('.study-chapter:visible')).toHaveCount(1);

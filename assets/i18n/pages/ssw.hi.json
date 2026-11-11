@@ -1,0 +1,502 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "hi",
+  "page": "ssw",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "SSW — Specified Skilled Worker সম্পূর্ণ গাইড | আপনার নিহোন",
+      "target": "SSW — Specified Skilled Worker संपूर्ण गाइड | আপনার নিহোন"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "मुख्य सामग्री पर जाएं"
+    },
+    {
+      "source": "SSW গাইড",
+      "target": "SSW गाइड"
+    },
+    {
+      "source": "হোম",
+      "target": "होम"
+    },
+    {
+      "source": "জাপানের SSW তথ্য — এক জায়গায়, সহজ ও যাচাইযোগ্য",
+      "target": "जापान की SSW जानकारी — एक ही जगह पर, आसान और सत्यापित"
+    },
+    {
+      "source": "SSW(i), SSW(ii), কাজের field, পরীক্ষা, চাকরি, ডকুমেন্টস ও ভিসা প্রক্রিয়া—সবকিছুর একটি আপডেটেড বাংলা গাইড।",
+      "target": "SSW(i), SSW(ii), काम के field, परीक्षा, नौकरी, दस्तावेज़ और वीज़ा प्रक्रिया—इन सबका एक अपडेटेड हिंदी गाइड।"
+    },
+    {
+      "source": "১৯টি field দেখুন",
+      "target": "19 fields देखें"
+    },
+    {
+      "source": "প্রক্রিয়া দেখুন",
+      "target": "प्रक्रिया देखें"
+    },
+    {
+      "source": "১৯টি",
+      "target": "19"
+    },
+    {
+      "source": "১১টি",
+      "target": "11"
+    },
+    {
+      "source": "৫ বছর",
+      "target": "5 वर्ष"
+    },
+    {
+      "source": "SSW(i)-এর মোট upper limit",
+      "target": "SSW(i) का कुल upper limit"
+    },
+    {
+      "source": "তথ্য যাচাই: ৪ সেপ্টেম্বর ২০২৬।",
+      "target": "तथ्य सत्यापन: 4 सितंबर 2026।"
+    },
+    {
+      "source": "Immigration Services Agency-এর বর্তমান overview SSW(i)-এর ১৯টি field এবং SSW(ii)-এর ১১টি field দেখায়। নতুন কিছু field-এর বিস্তারিত এখনো পর্যায়ক্রমে প্রকাশ হচ্ছে। আবেদন বা পরীক্ষা বুক করার আগে official source-এ latest status মিলিয়ে নিন।",
+      "target": "Immigration Services Agency की वर्तमान overview SSW(i) के 19 field और SSW(ii) के 11 field दिखाती है। कुछ नए field का विवरण अभी चरणबद्ध तरीके से प्रकाशित किया जा रहा है। आवेदन करने या परीक्षा बुक करने से पहले official source से latest status की जाँच कर लें।"
+    },
+    {
+      "source": "Food Service সতর্কতা:",
+      "target": "Food Service चेतावनी:"
+    },
+    {
+      "source": "বর্তমান official SSW page-এ Food Service field-এর জন্য “new applications” সাময়িকভাবে গ্রহণ করা হচ্ছে না বলে দেখানো হয়েছে। এই status পরিবর্তন হতে পারে, তাই আবেদন করার আগে official notice দেখুন।",
+      "target": "वर्तमान official SSW page पर Food Service field के लिए “new applications” अस्थायी रूप से स्वीकार नहीं किए जा रहे हैं ऐसा दिखाया गया है। यह status बदल सकता है, इसलिए आवेदन करने से पहले official notice देखें।"
+    },
+    {
+      "source": "SSW(i) এবং SSW(ii)",
+      "target": "SSW(i) और SSW(ii)"
+    },
+    {
+      "source": "দুই status-এর stay, family এবং skill requirement আলাদা।",
+      "target": "दोनों status के stay, family और skill requirement अलग हैं।"
+    },
+    {
+      "source": "নির্দিষ্ট field-এ skilled work",
+      "target": "निर्दिष्ट field-में skilled work"
+    },
+    {
+      "source": "জাপানে মোট থাকার upper limit সর্বোচ্চ ৫ বছর।",
+      "target": "जापान में कुल रहने की upper limit अधिकतम 5 वर्ष है।"
+    },
+    {
+      "source": "Family accompaniment অনুমোদিত নয়।",
+      "target": "परिवार के साथ आने (Family accompaniment) की अनुमति नहीं है।"
+    },
+    {
+      "source": "Japanese worker-এর সমপর্যায়ের remuneration-এর নিয়ম আছে।",
+      "target": "Japanese worker के समतुल्य remuneration का नियम है।"
+    },
+    {
+      "source": "নির্ধারিত support company বা registered support organization থেকে পাওয়া যায়।",
+      "target": "निर्धारित support company या registered support organization से प्राप्त होता है।"
+    },
+    {
+      "source": "উচ্চতর দক্ষতার status",
+      "target": "उच्चतर दक्षता का status"
+    },
+    {
+      "source": "থাকার মেয়াদে নির্দিষ্ট upper limit নেই; renewal করা যায়।",
+      "target": "रहने की अवधि की कोई निश्चित upper limit नहीं है; इसे renew किया जा सकता है।"
+    },
+    {
+      "source": "প্রযোজ্য immigration requirement পূরণ করলে family আনার সুযোগ আছে।",
+      "target": "लागू immigration requirement पूरा करने पर family लाने का अवसर है।"
+    },
+    {
+      "source": "বর্তমানে ১১টি field SSW(ii)-এর আওতায়।",
+      "target": "वर्तमान में 11 field SSW(ii) के अंतर्गत हैं।"
+    },
+    {
+      "source": "Advanced skill ও experience requirement field অনুযায়ী আলাদা।",
+      "target": "Advanced skill aur experience requirement field ke anusar alag hain."
+    },
+    {
+      "source": "বর্তমান ১১টি SSW(ii) field",
+      "target": "वर्तमान 11 SSW(ii) field"
+    },
+    {
+      "source": "Building Cleaning, Construction, Industrial Product Manufacturing, Shipbuilding & Ship Machinery, Automobile Repair & Maintenance, Aviation, Accommodation, Agriculture, Fishery & Aquaculture, Food & Beverage Manufacturing এবং Food Service।",
+      "target": "बिल्डिंग क्लीनिंग, कंस्ट्रक्शन, इंडस्ट्रियल प्रोडक्ट मैन्युफैक्चरिंग, शिपबिल्डिंग एंड शिप मशीनरी, ऑटोमोबाइल रिपेयर एंड मेंटेनेंस, एविएशन, अकोमोडेशन, एग्रीकल्चर, फिशरियों एंड एक्वाकल्चर, फूड एंड बेवरेज मैन्युफैक्चरिंग और फूड सर्विस।"
+    },
+    {
+      "source": "SSW যাওয়ার সাধারণ flow",
+      "target": "SSW जाने का सामान्य flow"
+    },
+    {
+      "source": "দেশ, field এবং আপনার বর্তমান residence status অনুযায়ী কিছু ধাপ বদলাতে পারে।",
+      "target": "देश, field और आपकी वर्तमान residence status के अनुसार कुछ चरण बदल सकते हैं।"
+    },
+    {
+      "source": "Field বেছে নিন",
+      "target": "फ़ील्ड चुनें"
+    },
+    {
+      "source": "কাজের ধরন, eligibility এবং current intake status দেখুন।",
+      "target": "काम का प्रकार, योग्यता और वर्तमान प्रवेश स्थिति देखें।"
+    },
+    {
+      "source": "Field অনুযায়ী প্রয়োজনীয় Japanese test ও skill test সম্পন্ন করুন।",
+      "target": "Field के अनुसार आवश्यक Japanese test और skill test पूरा करें।"
+    },
+    {
+      "source": "চাকরি/contract",
+      "target": "नौकरी/contract"
+    },
+    {
+      "source": "Company-এর সাথে employment contract final করুন।",
+      "target": "Company के साथ employment contract final करें।"
+    },
+    {
+      "source": "COE বা status-of-residence procedure সম্পন্ন করুন।",
+      "target": "COE ya status-of-residence procedure poora karein."
+    },
+    {
+      "source": "বিদেশ থেকে গেলে embassy/consulate-এর visa procedure অনুসরণ করুন।",
+      "target": "विदेश से जाने पर embassy/consulate की visa procedure का पालन करें।"
+    },
+    {
+      "source": "SSW(i)-এর ১৯টি কাজের field",
+      "target": "SSW(i)-के 19 काम के field"
+    },
+    {
+      "source": "Search বা filter ব্যবহার করে দ্রুত field খুঁজুন।",
+      "target": "खोज या फ़िल्टर का उपयोग करके तेज़ी से फ़ील्ड खोजें।"
+    },
+    {
+      "source": "সব",
+      "target": "सभी"
+    },
+    {
+      "source": "বিদ্যমান ১৬",
+      "target": "मौजूदा 16"
+    },
+    {
+      "source": "নতুন ৩",
+      "target": "नया 3"
+    },
+    {
+      "source": "নার্সিং কেয়ার · 介護",
+      "target": "नर्सिंग केयर · 介護"
+    },
+    {
+      "source": "শারীরিক সহায়তা ও দৈনন্দিন জীবন support।",
+      "target": "शारीरिक सहायता और दैनिक जीवन support।"
+    },
+    {
+      "source": "বিল্ডিং ক্লিনিং",
+      "target": "बिल्डिंग क्लीनिंग"
+    },
+    {
+      "source": "বিল্ডিংয়ের ভেতরের cleaning ও maintenance কাজ।",
+      "target": "बिल्डिंग के अंदर का cleaning और maintenance काम।"
+    },
+    {
+      "source": "কনস্ট্রাকশন · 建設",
+      "target": "कंस्ट्रक्शन · 建設"
+    },
+    {
+      "source": "বাড়ি, ভবন ও অবকাঠামো নির্মাণ।",
+      "target": "घर, भवन और बुनियादी ढांचे का निर्माण।"
+    },
+    {
+      "source": "শিল্পপণ্য, parts ও related manufacturing।",
+      "target": "औद्योगिक उत्पाद, parts और related manufacturing।"
+    },
+    {
+      "source": "জাহাজ নির্মাণ ও সংশ্লিষ্ট machinery।",
+      "target": "जहाज निर्माण और संबंधित machinery।"
+    },
+    {
+      "source": "গাড়ি inspection, repair ও maintenance।",
+      "target": "गाड़ी inspection, repair और maintenance।"
+    },
+    {
+      "source": "Airport ground handling ও aircraft maintenance-এর নির্দিষ্ট কাজ।",
+      "target": "Airport ground handling और aircraft maintenance के विशिष्ट कार्य।"
+    },
+    {
+      "source": "Hotel reception ও guest service।",
+      "target": "Hotel reception और guest service।"
+    },
+    {
+      "source": "নির্ধারিত শর্তে truck, taxi ও bus driving-related work।",
+      "target": "निर्धारित शर्तों पर truck, taxi और bus driving-related work।"
+    },
+    {
+      "source": "Railway maintenance ও operation-এর নির্দিষ্ট কাজ।",
+      "target": "Railway maintenance और operation के विशिष्ट कार्य।"
+    },
+    {
+      "source": "ফসল উৎপাদন, harvesting ও livestock-related কাজ।",
+      "target": "फसल उत्पादन, harvesting और livestock-related काम।"
+    },
+    {
+      "source": "মাছ ধরা ও aquaculture।",
+      "target": "मछली पकड़ना और aquaculture।"
+    },
+    {
+      "source": "খাদ্য প্রস্তুত ও processing।",
+      "target": "खाद्य तैयार करना और processing।"
+    },
+    {
+      "source": "Restaurant customer service ও food service।",
+      "target": "Restaurant customer service और food service।"
+    },
+    {
+      "source": "Current official notice অনুযায়ী নতুন আবেদন সাময়িকভাবে বন্ধ—latest status check করুন।",
+      "target": "Current official notice के अनुसार नए आवेदन अस्थायी रूप से बंद हैं—latest status check करें।"
+    },
+    {
+      "source": "Tree planting ও forest management।",
+      "target": "Tree planting और forest management।"
+    },
+    {
+      "source": "Lumber ও wood processing।",
+      "target": "Lumber और wood processing।"
+    },
+    {
+      "source": "Waste processing plant-এ recycling ও proper disposal। নতুন field; intake/details official notice-এ যাচাই করুন।",
+      "target": "Waste processing plant में recycling और proper disposal। नया field; intake/details official notice में जांचें।"
+    },
+    {
+      "source": "Hotel/হাসপাতালের linen collection, laundering ও related work। নতুন field; latest details official source-এ দেখুন।",
+      "target": "Hotel/अस्पताल का linen collection, laundering और related work। नया field; latest details official source में देखें।"
+    },
+    {
+      "source": "Warehouse receiving, shipping ও storage। নতুন field; intake/details official notice-এ যাচাই করুন।",
+      "target": "Warehouse receiving, shipping और storage। नया field; intake/details official notice में जांचें।"
+    },
+    {
+      "source": "Language ও skill test",
+      "target": "Language और skill test"
+    },
+    {
+      "source": "সব field-এর requirement এক নয়—নিজের field-এর official test page অবশ্যই দেখুন।",
+      "target": "सभी field के requirement एक जैसे नहीं होते—अपने field का official test page अवश्य देखें।"
+    },
+    {
+      "source": "সাধারণ requirement",
+      "target": "सामान्य requirement"
+    },
+    {
+      "source": "অনেক SSW(i) field-এ JFT-Basic বা JLPT N4-or-higher ব্যবহার করা হয়। তবে কিছু field/occupation-এ higher বা additional language requirement আছে।",
+      "target": "कई SSW(i) field में JFT-Basic या JLPT N4-or-higher का उपयोग किया जाता है। हालांकि कुछ field/occupation में higher या additional language requirement होते हैं।"
+    },
+    {
+      "source": "নির্বাচিত field-এর skill assessment সাধারণত প্রয়োজন হয়, যদি কোনো official exemption প্রযোজ্য না হয়।",
+      "target": "चयनित field का skill assessment आमतौर पर आवश्यक होता है, यदि कोई official exemption लागू न हो।"
+    },
+    {
+      "source": "অতিরিক্ত requirement",
+      "target": "अतिरिक्त requirement"
+    },
+    {
+      "source": "Nursing care-এ অতিরিক্ত Japanese test আছে; automobile transportation-এর কিছু occupation-এ language, driving licence ও training requirement আলাদা।",
+      "target": "Nursing care में अतिरिक्त Japanese test होता है; automobile transportation के कुछ occupation में language, driving licence और training requirement अलग होते हैं।"
+    },
+    {
+      "source": "schedule নিয়মিত বদলায়। তাই কোনো দেশ বা কেন্দ্রকে স্থায়ীভাবে “আছে/নেই” ধরে না নিয়ে official Test Information page থেকে live schedule দেখুন।",
+      "target": "schedule नियमित रूप से बदलता है। इसलिए किसी देश या केंद्र को स्थायी रूप से \"है/नहीं\" मानकर न बैठें, बल्कि official Test Information page से live schedule देखें।"
+    },
+    {
+      "source": "ডকুমেন্ট checklist",
+      "target": "डॉक्यूमेंट checklist"
+    },
+    {
+      "source": "এটি general checklist; exact documents field, company, country এবং application type অনুযায়ী বদলায়।",
+      "target": "यह general checklist है; exact documents field, company, country और application type के अनुसार बदलते हैं।"
+    },
+    {
+      "source": "Passport ও identity documents",
+      "target": "Passport और identity documents"
+    },
+    {
+      "source": "নাম, জন্মতারিখ ও validity মিলিয়ে নিন।",
+      "target": "नाम, जन्म तिथि और validity मिला लें।"
+    },
+    {
+      "source": "আপনার field-এর applicable Japanese qualification বা exemption proof।",
+      "target": "आपके field का applicable Japanese qualification या exemption proof।"
+    },
+    {
+      "source": "নির্বাচিত field-এর result/certificate বা applicable exemption proof।",
+      "target": "चयनित field का result/certificate या applicable exemption proof।"
+    },
+    {
+      "source": "Salary, hours, job content ও working conditions ভালোভাবে পড়ুন।",
+      "target": "Salary, hours, job content और working conditions को अच्छी तरह से पढ़ें।"
+    },
+    {
+      "source": "Company/representative-এর সাথে latest official format ব্যবহার করুন।",
+      "target": "Company/representative के साथ latest official format का उपयोग करें।"
+    },
+    {
+      "source": "Sending procedure, medical বা অন্য supporting documents প্রয়োজন হতে পারে।",
+      "target": "Sending procedure, medical या अन्य supporting documents की आवश्यकता हो सकती है।"
+    },
+    {
+      "source": "Job, salary ও company check",
+      "target": "Job, salary और company check"
+    },
+    {
+      "source": "একটি universal fixed salary নেই; contract এবং working conditions লিখিতভাবে যাচাই করুন।",
+      "target": "कोई universal fixed salary नहीं है; contract और working conditions को लिखित रूप में जांचें।"
+    },
+    {
+      "source": "SSW worker-এর remuneration comparable Japanese worker-এর সমপর্যায়ের হওয়া প্রয়োজন।",
+      "target": "SSW worker का remuneration comparable Japanese worker के समकक्ष होना आवश्यक है।"
+    },
+    {
+      "source": "Contract পড়ুন",
+      "target": "Contract पढ़ें"
+    },
+    {
+      "source": "Base wage, overtime rate, deductions, housing, transport, insurance, working hours ও holidays যাচাই করুন।",
+      "target": "Base wage, overtime rate, deductions, housing, transport, insurance, working hours और holidays जांचें।"
+    },
+    {
+      "source": "Employer change সম্ভব হতে পারে, তবে field/status procedure এবং Immigration notification ঠিকভাবে করতে হবে। নতুন field-এ গেলে নতুন requirement প্রযোজ্য হতে পারে।",
+      "target": "Employer change संभव हो सकता है, लेकिन field/status procedure और Immigration notification ठीक से करनी होगी। नए field में जाने पर नए requirement लागू हो सकते हैं।"
+    },
+    {
+      "source": "Interview প্রস্তুতি",
+      "target": "Interview की तैयारी"
+    },
+    {
+      "source": "নিজের Japanese level ও বাস্তব experience অনুযায়ী সংক্ষিপ্ত, পরিষ্কার উত্তর practice করুন।",
+      "target": "अपने Japanese level और वास्तविक experience के अनुसार संक्षिप्त, स्पष्ट उत्तर practice करें।"
+    },
+    {
+      "source": "নাম, background, Japanese level, skill এবং কেন এই field—সংক্ষেপে বলার practice করুন।",
+      "target": "नाम, background, Japanese level, skill और क्यों यह field—संक्षेप में कहने की practice करें।"
+    },
+    {
+      "source": "Job description আগে পড়ে দায়িত্ব, shift, safety এবং teamwork-এর basic vocabulary শিখুন।",
+      "target": "Job description पहले पढ़कर दायित्व, shift, safety और teamwork के basic vocabulary सीखें।"
+    },
+    {
+      "source": "Salary, shift, housing, support, workplace location ও deductions নিয়ে ভদ্রভাবে প্রশ্ন করুন।",
+      "target": "Salary, shift, housing, support, workplace location और deductions को लेकर विनम्रता से प्रश्न करें।"
+    },
+    {
+      "source": "সাধারণ প্রশ্ন ও উত্তর",
+      "target": "सामान्य प्रश्न और उत्तर"
+    },
+    {
+      "source": "Category বেছে নিয়ে প্রয়োজনীয় উত্তর দ্রুত দেখুন। JavaScript বন্ধ থাকলেও সব উত্তর দেখা যাবে।",
+      "target": "Category चुनकर आवश्यक उत्तर तुरंत देखें। JavaScript बंद होने पर भी सभी उत्तर देखे जा सकेंगे।"
+    },
+    {
+      "source": "ভিসা",
+      "target": "वीज़ा"
+    },
+    {
+      "source": "পরীক্ষা",
+      "target": "परीक्षा"
+    },
+    {
+      "source": "পরিবার",
+      "target": "परिवार"
+    },
+    {
+      "source": "কাজ",
+      "target": "काम"
+    },
+    {
+      "source": "২০২৬ আপডেট",
+      "target": "2026 अपडेट"
+    },
+    {
+      "source": "SSW(i)-এ পরিবার আনা যায়?",
+      "target": "SSW(i) में परिवार लाया जा सकता है?"
+    },
+    {
+      "source": "না। Official overview অনুযায়ী SSW(i)-এ family accompaniment অনুমোদিত নয়।",
+      "target": "नहीं। Official overview के अनुसार SSW(i) में family accompaniment अनुमति प्राप्त नहीं है।"
+    },
+    {
+      "source": "SSW(ii)-এ পরিবার আনা যায়?",
+      "target": "SSW(ii) में परिवार लाया जा सकता है?"
+    },
+    {
+      "source": "প্রযোজ্য immigration rules পূরণ করলে family আনার সুযোগ আছে। SSW(ii)-এর stay duration-এ নির্দিষ্ট upper limit নেই।",
+      "target": "लागू immigration rules को पूरा करने पर family लाने का अवसर है। SSW(ii) के stay duration में कोई निश्चित upper limit नहीं है।"
+    },
+    {
+      "source": "SSW(i)-এ এখন কয়টি field?",
+      "target": "SSW(i) में अब कितने field हैं?"
+    },
+    {
+      "source": "বর্তমান official overview ১৯টি field তালিকাভুক্ত করে। নতুন কয়েকটি field-এর implementation/details পর্যায়ক্রমে প্রকাশ হচ্ছে।",
+      "target": "वर्तमान official overview 19 fields की सूची देता है। नए कुछ fields के implementation/details क्रमिक रूप से प्रकाशित हो रहे हैं।"
+    },
+    {
+      "source": "সব field-এ JLPT N4 বা JFT-Basic হলেই হবে?",
+      "target": "क्या सभी fields में JLPT N4 या JFT-Basic होना ही काफी है?"
+    },
+    {
+      "source": "না। অনেক field-এ এটি সাধারণ language route হলেও কিছু field/occupation-এ higher বা additional requirement আছে। নিজের field-এর official requirement দেখুন।",
+      "target": "नहीं। कई fields में यह सामान्य language route होने के बावजूद कुछ fields/occupation में higher या additional requirement होती है। अपने field के official requirement को देखें।"
+    },
+    {
+      "source": "বাংলাদেশে কোন SSW exam এখন আছে?",
+      "target": "बांग्लादेश में अभी कौन सा SSW exam है?"
+    },
+    {
+      "source": "Schedule দ্রুত বদলায়। Official Test Information page-এ country এবং date অনুযায়ী current schedule দেখুন।",
+      "target": "Schedule तेजी से बदलता है। Official Test Information page पर country और date के अनुसार current schedule देखें।"
+    },
+    {
+      "source": "SSW(ii)-এ যেতে আগে ঠিক ৫ বছর SSW(i) করতেই হবে?",
+      "target": "SSW(ii) में जाने के लिए क्या पहले ठीक 5 साल SSW(i) करना ही होगा?"
+    },
+    {
+      "source": "একটি universal “ঠিক ৫ বছর” rule ধরে নেওয়া ঠিক নয়। SSW(ii)-এর advanced skill/experience requirement field অনুযায়ী আলাদা।",
+      "target": "किसी universal “ठीक 5 साल” rule को मान लेना सही नहीं है। SSW(ii) के advanced skill/experience requirement field के अनुसार अलग होते हैं।"
+    },
+    {
+      "source": "Fixed মাসিক salary কত?",
+      "target": "Fixed मासिक salary कितनी है?"
+    },
+    {
+      "source": "Universal fixed salary নেই। Region, employer, occupation, experience ও overtime অনুযায়ী আয় বদলায়; remuneration comparable Japanese worker-এর সমপর্যায়ের হওয়া প্রয়োজন।",
+      "target": "कोई universal fixed salary नहीं है। Region, employer, occupation, experience और overtime के अनुसार आय बदलती है; remuneration comparable Japanese worker के समकक्ष होना आवश्यक है।"
+    },
+    {
+      "source": "SSC/JSC পাস কি universal SSW requirement?",
+      "target": "क्या SSC/JSC पास करना universal SSW requirement है?"
+    },
+    {
+      "source": "General official overview-এ universal “SSC/JSC minimum” হিসেবে এমন blanket requirement নেই। Field, test, employment এবং country-specific procedure আলাদা হতে পারে।",
+      "target": "General official overview में universal “SSC/JSC minimum” के रूप में ऐसा कोई blanket requirement नहीं है। Field, test, employment और country-specific procedure अलग हो सकते हैं।"
+    },
+    {
+      "source": "SSW rules ও test schedule পরিবর্তিত হতে পারে। আবেদন করার আগে Immigration Services Agency-এর latest information মিলিয়ে নিন।",
+      "target": "SSW rules और test schedule बदल सकते हैं। आवेदन करने से पहले Immigration Services Agency की latest information की जांच कर लें।"
+    },
+    {
+      "source": "SSW(i)/(ii) ও field list ↗",
+      "target": "SSW(i)/(ii) और field list ↗"
+    },
+    {
+      "source": "আপনার নিহোন · SSW",
+      "target": "আপনার নিহোন · SSW"
+    },
+    {
+      "source": "এটি তথ্যভিত্তিক গাইড; চূড়ান্ত সিদ্ধান্ত ও latest requirement সংশ্লিষ্ট কর্তৃপক্ষের official source অনুযায়ী হবে।",
+      "target": "यह एक सूचनात्मक मार्गदर्शिका है; अंतिम निर्णय और latest requirement संबंधित प्राधिकरण के official source के अनुसार होंगे।"
+    },
+    {
+      "source": "হোমে ফিরুন",
+      "target": "होम पर लौटें"
+    }
+  ]
+}

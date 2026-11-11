@@ -3,19 +3,292 @@
   "targetLanguage": "hi",
   "page": "n5",
   "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
   "entries": [
-    {"source":"হোম","target":"होम"},
-    {"source":"ZERO থেকে প্রথম JLPT ধাপ","target":"ZERO से पहला JLPT कदम"},
-    {"source":"জাপানির শক্ত ভিত","target":"जापानी की मजबूत नींव बनाइए"},
-    {"source":"N5 থেকেই তৈরি করুন","target":"N5 से ही शुरुआत कीजिए"},
-    {"source":"হিরাগানা-কাতাকানা থেকে Vocabulary, ১২০টি Kanji, Minna Grammar, Reading, Quiz ও ১০টি Full Mock—প্রতিটি বিষয়ের নিজস্ব learning page এবং আপনার সত্যিকারের saved progress এক জায়গায়।","target":"हिरागाना-काताकाना से Vocabulary, 120 Kanji, Minna Grammar, Reading, Quiz और 10 Full Mock तक—हर विषय का अपना learning page है और आपका वास्तविक saved progress एक ही जगह दिखता है।"},
-    {"source":"প্রথম Lesson শুরু করুন","target":"पहला Lesson शुरू करें"},
-    {"source":"আপনার N5 অগ্রগতি","target":"आपकी N5 प्रगति"},
-    {"source":"সংরক্ষিত lesson progress দেখা হচ্ছে…","target":"सहेजा हुआ lesson progress देखा जा रहा है…"},
-    {"source":"যে skill দরকার, তার নিজস্ব page","target":"हर skill के लिए अपना अलग page"},
-    {"source":"কার্ড খুললেই index-এর ভিড় নয়—সেই বিষয়ের full-screen lesson app আসবে। সম্পন্ন lesson-এর progress এই dashboard-এ ফিরে দেখা যাবে।","target":"कार्ड खोलने पर भीड़भाड़ वाला index नहीं, बल्कि उसी विषय का full-screen lesson app खुलेगा। पूरे किए गए lesson का progress इस dashboard पर फिर देखा जा सकेगा।"},
-    {"source":"N5 শেখা আরও সহজ করুন","target":"N5 की पढ़ाई और आसान बनाएं"},
-    {"source":"N5 শেষ করার সঠিক ক্রম","target":"N5 पूरा करने का सही क्रम"},
-    {"source":"একসঙ্গে সব নয়—এই চার ধাপে এগোলে শেখা, recall ও exam practice ভারসাম্য থাকবে।","target":"सब कुछ एक साथ नहीं—इन चार चरणों में आगे बढ़ने से learning, recall और exam practice का संतुलन बना रहता है।"}
+    {
+      "source": "JLPT N5 Complete Learning Center | আপনার নিহোন",
+      "target": "JLPT N5 Complete Learning Center | আপনার নিহোন"
+    },
+    {
+      "source": "হোম",
+      "target": "होम"
+    },
+    {
+      "source": "ZERO থেকে প্রথম JLPT ধাপ",
+      "target": "ZERO से पहला JLPT कदम"
+    },
+    {
+      "source": "জাপানির শক্ত ভিত",
+      "target": "जापानी की मजबूत नींव बनाइए"
+    },
+    {
+      "source": "N5 থেকেই তৈরি করুন",
+      "target": "N5 से ही शुरुआत कीजिए"
+    },
+    {
+      "source": "হিরাগানা-কাতাকানা থেকে Vocabulary, ১২০টি Kanji, Minna Grammar, Reading, Quiz ও ১০টি Full Mock—প্রতিটি বিষয়ের নিজস্ব learning page এবং আপনার সত্যিকারের saved progress এক জায়গায়।",
+      "target": "हिरागाना-काताकाना से Vocabulary, 120 Kanji, Minna Grammar, Reading, Quiz और 10 Full Mock तक—हर विषय का अपना learning page है और आपका वास्तविक saved progress एक ही जगह दिखता है।"
+    },
+    {
+      "source": "প্রথম Lesson শুরু করুন",
+      "target": "पहला Lesson शुरू करें"
+    },
+    {
+      "source": "আপনার N5 অগ্রগতি",
+      "target": "आपकी N5 प्रगति"
+    },
+    {
+      "source": "সংরক্ষিত lesson progress দেখা হচ্ছে…",
+      "target": "सहेजा हुआ lesson progress देखा जा रहा है…"
+    },
+    {
+      "source": "২৫ Lesson",
+      "target": "25 Lesson"
+    },
+    {
+      "source": "১২০ Kanji",
+      "target": "120 Kanji"
+    },
+    {
+      "source": "২৫ Grammar",
+      "target": "25 Grammar"
+    },
+    {
+      "source": "Minna ভিত্তিক path",
+      "target": "Minna आधारित path"
+    },
+    {
+      "source": "১০ Full Mock",
+      "target": "10 Full Mock"
+    },
+    {
+      "source": "Timer + বাংলা review",
+      "target": "Timer + हिंदी review"
+    },
+    {
+      "source": "যে skill দরকার, তার নিজস্ব page",
+      "target": "हर skill के लिए अपना अलग page"
+    },
+    {
+      "source": "কার্ড খুললেই index-এর ভিড় নয়—সেই বিষয়ের full-screen lesson app আসবে। সম্পন্ন lesson-এর progress এই dashboard-এ ফিরে দেখা যাবে।",
+      "target": "कार्ड खोलने पर भीड़भाड़ वाला index नहीं, बल्कि उसी विषय का full-screen lesson app खुलेगा। पूरे किए गए lesson का progress इस dashboard पर फिर देखा जा सकेगा।"
+    },
+    {
+      "source": "সব রিসোর্স",
+      "target": "सभी संसाधन"
+    },
+    {
+      "source": "শব্দ ও কানজি",
+      "target": "शब्द और कांजी"
+    },
+    {
+      "source": "গ্রামার",
+      "target": "व्याकरण (Grammar)"
+    },
+    {
+      "source": "অনুশীলন",
+      "target": "अभ्यास"
+    },
+    {
+      "source": "কোনো রিসোর্স পাওয়া যায়নি। অন্য শব্দ লিখুন বা সব রিসোর্স বেছে নিন।",
+      "target": "कोई संसाधन नहीं मिला। दूसरा शब्द लिखें या सभी संसाधन चुनें।"
+    },
+    {
+      "source": "0/25 সম্পন্ন",
+      "target": "0/25 पूर्ण"
+    },
+    {
+      "source": "বাংলা অর্থ, ব্যবহার, search, lesson filter এবং continue button-সহ ১–২৫ পর্যন্ত পূর্ণাঙ্গ শব্দভাণ্ডার।",
+      "target": "हिंदी अर्थ, उपयोग, search, lesson filter और continue button सहित 1-25 तक संपूर्ण शब्दावली।"
+    },
+    {
+      "source": "বাংলা",
+      "target": "हिंदी"
+    },
+    {
+      "source": "শব্দ শেখা শুরু করুন",
+      "target": "शब्द सीखना शुरू करें"
+    },
+    {
+      "source": "0/120 সম্পন্ন",
+      "target": "0/120 पूर्ण"
+    },
+    {
+      "source": "১২০টি N5 Kanji",
+      "target": "120 N5 Kanji"
+    },
+    {
+      "source": "Flip card, reading, শব্দ, writing trace, quiz ও learned tracker দিয়ে Kanji চোখে-হাতে মনে রাখুন।",
+      "target": "Flip card, reading, शब्द, writing trace, quiz और learned tracker से Kanji को आँख, हाथ और मन से याद रखें।"
+    },
+    {
+      "source": "Kanji Lab খুলুন",
+      "target": "Kanji Lab खोलें"
+    },
+    {
+      "source": "Lesson 1–25, formula, বাংলা ব্যাখ্যা, real example, search ও lesson completion tracker।",
+      "target": "Lesson 1-25, formula, हिंदी स्पष्टीकरण, real example, search और lesson completion tracker।"
+    },
+    {
+      "source": "Grammar path খুলুন",
+      "target": "Grammar path खोलें"
+    },
+    {
+      "source": "শুরু হয়নি",
+      "target": "शुरू नहीं"
+    },
+    {
+      "source": "১০টি আলাদা reading part—ছোট passage, শব্দের reading, comprehension ও বাংলা সহায়তা।",
+      "target": "10 अलग-अलग reading part—छोटा passage, शब्दों की reading, comprehension और हिंदी सहायता।"
+    },
+    {
+      "source": "Part 1 থেকে পড়ুন",
+      "target": "Part 1 से पढ़ें"
+    },
+    {
+      "source": "Vocabulary, Kanji, Grammar ও Reading—উত্তর দিলেই বাংলা explanation এবং progress auto-save।",
+      "target": "Vocabulary, Kanji, Grammar और Reading—उत्तर देते ही हिंदी explanation और progress auto-save।"
+    },
+    {
+      "source": "দ্রুত Quiz দিন",
+      "target": "त्वरित Quiz दें"
+    },
+    {
+      "source": "বাস্তব timing, Listening, auto-save, ১৮০ নম্বরের marksheet ও ভুলের বাংলা review-সহ ১০টি exam।",
+      "target": "वास्तविक timing, Listening, auto-save, 180 अंकों की marksheet और गलतियों के हिंदी review सहित 10 exam।"
+    },
+    {
+      "source": "Mock Test খুলুন",
+      "target": "Mock Test खोलें"
+    },
+    {
+      "source": "N5 শেখা আরও সহজ করুন",
+      "target": "N5 की पढ़ाई और आसान बनाएं"
+    },
+    {
+      "source": "হিরাগানা-কাতাকানা",
+      "target": "हिरागाना और काताकाना"
+    },
+    {
+      "source": "অক্ষর আগে শক্ত করুন",
+      "target": "अक्षर पहले मजबूत करें"
+    },
+    {
+      "source": "Confusing pattern তুলনা",
+      "target": "Confusing pattern की तुलना"
+    },
+    {
+      "source": "আজকের Challenge",
+      "target": "आज की Challenge"
+    },
+    {
+      "source": "প্রতিদিন নতুন part",
+      "target": "प्रतिदिन नया part"
+    },
+    {
+      "source": "দরকারি বাক্য",
+      "target": "उपयोगी वाक्य"
+    },
+    {
+      "source": "বাস্তব জীবনের Japanese",
+      "target": "वास्तविक जीवन की Japanese"
+    },
+    {
+      "source": "N5 শেষ করার সঠিক ক্রম",
+      "target": "N5 पूरा करने का सही क्रम"
+    },
+    {
+      "source": "একসঙ্গে সব নয়—এই চার ধাপে এগোলে শেখা, recall ও exam practice ভারসাম্য থাকবে।",
+      "target": "सब कुछ एक साथ नहीं—इन चार चरणों में आगे बढ़ने से learning, recall और exam practice का संतुलन बना रहता है।"
+    },
+    {
+      "source": "কানা + Vocabulary",
+      "target": "काना + Vocabulary"
+    },
+    {
+      "source": "প্রথমে Kana নিশ্চিত করুন; প্রতিদিন এক lesson-এর শব্দ জোরে পড়ুন।",
+      "target": "पहले Kana सुनिश्चित करें; प्रतिदिन एक lesson के शब्द जोर से पढ़ें।"
+    },
+    {
+      "source": "সেই দিনের শব্দের Kanji এবং একটি sentence pattern একসঙ্গে নিন।",
+      "target": "उस दिन के शब्दों की Kanji और एक sentence pattern एक साथ लें।"
+    },
+    {
+      "source": "নোট না দেখে অর্থ বলুন, তারপর ছোট passage দিয়ে বোঝা যাচাই করুন।",
+      "target": "नोट देखे बिना अर्थ बताएं, फिर छोटे passage से समझ की जाँच करें।"
+    },
+    {
+      "source": "Category quiz-এর ভুল revise করে timed mock-এ বসুন।",
+      "target": "Category quiz की गलतियों को revise करके timed mock में बैठें।"
+    },
+    {
+      "source": "এই সপ্তাহের N5 plan",
+      "target": "इस सप्ताह का N5 plan"
+    },
+    {
+      "source": "নিজে tick দিন—এই device-এ checklist থাকবে।",
+      "target": "खुद tick दें—इस device में checklist रहेगी।"
+    },
+    {
+      "source": "0/6 শেষ",
+      "target": "0/6 समाप्त"
+    },
+    {
+      "source": "২টি Vocabulary lesson",
+      "target": "2 Vocabulary lesson"
+    },
+    {
+      "source": "১৫টি Kanji recall",
+      "target": "15 Kanji recall"
+    },
+    {
+      "source": "২টি Grammar pattern",
+      "target": "2 Grammar pattern"
+    },
+    {
+      "source": "১টি Reading passage",
+      "target": "1 Reading passage"
+    },
+    {
+      "source": "১টি Category quiz",
+      "target": "1 Category quiz"
+    },
+    {
+      "source": "ভুলের ১৫ মিনিট review",
+      "target": "भूलों का 15 मिनट review"
+    },
+    {
+      "source": "না বুঝলে N5 AI Coach",
+      "target": "न समझने पर N5 AI Coach"
+    },
+    {
+      "source": "আপনার level আগে থেকেই N5 থাকবে। Grammar, sentence correction বা ছোট quiz—যেটা চান লিখে পাঠান।",
+      "target": "आपका level पहले से ही N5 रहेगा। Grammar, sentence correction या छोटा quiz—जो चाहें लिखकर भेजें।"
+    },
+    {
+      "source": "Tutor খুলুন",
+      "target": "Tutor खोलें"
+    },
+    {
+      "source": "পরের ধাপ N4",
+      "target": "अगला चरण N4"
+    },
+    {
+      "source": "সব Quiz",
+      "target": "सभी Quiz"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "संपर्क"
+    },
+    {
+      "source": "আপনার নিহোন · বাংলায় জাপানি শেখার পূর্ণাঙ্গ পথ",
+      "target": "आपकी निहोन · बंगाली में जापानी सीखने का संपूर्ण मार्ग"
+    },
+    {
+      "source": "✓ Progress সংরক্ষণ হয়েছে",
+      "target": "✓ Progress सहेज लिया गया है"
+    }
   ]
 }

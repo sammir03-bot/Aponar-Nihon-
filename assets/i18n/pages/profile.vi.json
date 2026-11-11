@@ -1,0 +1,210 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "profile",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "জাপানি শেখার পূর্ণাঙ্গ প্ল্যাটফর্ম",
+      "target": "Nền tảng học tiếng Nhật cho mọi người"
+    },
+    {
+      "source": "হোম",
+      "target": "Trang chủ"
+    },
+    {
+      "source": "অ্যাডমিন",
+      "target": "Quản trị viên"
+    },
+    {
+      "source": "লগআউট",
+      "target": "Đăng xuất"
+    },
+    {
+      "source": "ইমেইল ভেরিফাই হয়নি",
+      "target": "Email chưa được xác thực"
+    },
+    {
+      "source": "প্রয়োজনীয় তথ্য পূরণ করলে 100% হবে",
+      "target": "Hoàn thành các thông tin cần thiết để đạt 100%"
+    },
+    {
+      "source": "নাম",
+      "target": "Tên"
+    },
+    {
+      "source": "স্কুল",
+      "target": "Trường học"
+    },
+    {
+      "source": "লোকেশন",
+      "target": "Địa điểm"
+    },
+    {
+      "source": "লক্ষ্য",
+      "target": "Mục tiêu"
+    },
+    {
+      "source": "জন্মতারিখ",
+      "target": "Ngày sinh"
+    },
+    {
+      "source": "প্রোফাইল আপডেট",
+      "target": "Cập nhật hồ sơ"
+    },
+    {
+      "source": "তথ্যগুলো ঠিক করে নিরাপদভাবে Save করুন",
+      "target": "Kiểm tra lại thông tin và Lưu an toàn"
+    },
+    {
+      "source": "ব্যক্তিগত তথ্য",
+      "target": "Thông tin cá nhân"
+    },
+    {
+      "source": "আপনার মূল পরিচিতি",
+      "target": "Giới thiệu cơ bản của bạn"
+    },
+    {
+      "source": "পুরো নাম",
+      "target": "Họ và tên"
+    },
+    {
+      "source": "লিঙ্গ",
+      "target": "Giới tính"
+    },
+    {
+      "source": "নির্বাচন করুন",
+      "target": "Chọn"
+    },
+    {
+      "source": "পুরুষ",
+      "target": "Nam"
+    },
+    {
+      "source": "নারী",
+      "target": "Nữ"
+    },
+    {
+      "source": "বলতে চাই না",
+      "target": "Không muốn nói"
+    },
+    {
+      "source": "জাতীয়তা",
+      "target": "Quốc tịch"
+    },
+    {
+      "source": "পড়াশোনা ও JLPT",
+      "target": "Học tập & JLPT"
+    },
+    {
+      "source": "আপনার স্কুল ও শেখার লক্ষ্য",
+      "target": "Trường học và mục tiêu học tập của bạn"
+    },
+    {
+      "source": "স্কুল / প্রতিষ্ঠান",
+      "target": "Trường / Tổ chức"
+    },
+    {
+      "source": "দৈনিক পড়ার সময়",
+      "target": "Thời gian học mỗi ngày"
+    },
+    {
+      "source": "15 মিনিট",
+      "target": "15 phút"
+    },
+    {
+      "source": "30 মিনিট",
+      "target": "30 phút"
+    },
+    {
+      "source": "45 মিনিট",
+      "target": "45 phút"
+    },
+    {
+      "source": "1 ঘণ্টা",
+      "target": "1 giờ"
+    },
+    {
+      "source": "1.5 ঘণ্টা",
+      "target": "1.5 giờ"
+    },
+    {
+      "source": "2 ঘণ্টা",
+      "target": "2 giờ"
+    },
+    {
+      "source": "যোগাযোগ ও অবস্থান",
+      "target": "Liên hệ & Vị trí"
+    },
+    {
+      "source": "বর্তমান যোগাযোগের তথ্য",
+      "target": "Thông tin liên hệ hiện tại"
+    },
+    {
+      "source": "বর্তমান City",
+      "target": "Thành phố hiện tại"
+    },
+    {
+      "source": "ফোন নম্বর",
+      "target": "Số điện thoại"
+    },
+    {
+      "source": "ঐচ্ছিক",
+      "target": "Tùy chọn"
+    },
+    {
+      "source": "নিজের সম্পর্কে",
+      "target": "Về bản thân"
+    },
+    {
+      "source": "সংক্ষিপ্ত learning profile",
+      "target": "Hồ sơ học tập ngắn gọn"
+    },
+    {
+      "source": "বাতিল",
+      "target": "Hủy"
+    },
+    {
+      "source": "নিজের ছবি যোগ বা পরিবর্তন করুন",
+      "target": "Thêm hoặc thay đổi ảnh của bạn"
+    },
+    {
+      "source": "ছবি বেছে নিন",
+      "target": "Chọn ảnh"
+    },
+    {
+      "source": "Account photo ব্যবহার",
+      "target": "Sử dụng ảnh tài khoản"
+    },
+    {
+      "source": "JPG, PNG বা WebP · সর্বোচ্চ 2 MB",
+      "target": "JPG, PNG hoặc WebP · Tối đa 2 MB"
+    },
+    {
+      "source": "ইমেইল",
+      "target": "Địa chỉ email"
+    },
+    {
+      "source": "বাংলা",
+      "target": "Tiếng Bengali"
+    },
+    {
+      "source": "ভাষা Home থেকে পরিবর্তন করা যায়",
+      "target": "Có thể thay đổi ngôn ngữ từ Trang chủ"
+    },
+    {
+      "source": "Profile load হচ্ছে…",
+      "target": "Đang tải hồ sơ…"
+    },
+    {
+      "source": "অ্যাকাউন্ট মুছলে আপনার profile ও learning data স্থায়ীভাবে মুছে যেতে পারে।",
+      "target": "Xóa tài khoản có thể làm mất vĩnh viễn hồ sơ và dữ liệu học tập của bạn."
+    },
+    {
+      "source": "Delete options খুলুন",
+      "target": "Mở Delete options"
+    }
+  ]
+}

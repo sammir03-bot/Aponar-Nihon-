@@ -1,0 +1,254 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "cv-builder",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "হোম",
+      "target": "首页"
+    },
+    {
+      "source": "ও",
+      "target": "噢"
+    },
+    {
+      "source": "বাংলায় বুঝে পূরণ করুন। বাংলা নির্দেশনা দেখে নিজের তথ্য লিখুন, Preview মিলিয়ে PDF হিসেবে সংরক্ষণ করুন।",
+      "target": "请结合日语对照理解并填写。请参考中文提示输入您自己的信息，核对预览后保存为 PDF。"
+    },
+    {
+      "source": "এই ডিভাইসে draft সংরক্ষিত হয়",
+      "target": "草稿已保存在此设备中"
+    },
+    {
+      "source": "আপনার তথ্য ও ছবি এই browser-এ থাকে",
+      "target": "您的信息和照片仅保留在此浏览器中"
+    },
+    {
+      "source": "ব্যক্তিগত",
+      "target": "个人信息"
+    },
+    {
+      "source": "ইতিহাস",
+      "target": "教育与工作经历"
+    },
+    {
+      "source": "আবেদন",
+      "target": "申请"
+    },
+    {
+      "source": "Template নির্বাচন",
+      "target": "选择模板"
+    },
+    {
+      "source": "কাজ অনুযায়ী CV type বেছে নিন",
+      "target": "根据工作需求选择简历类型"
+    },
+    {
+      "source": "কোনটা নেবেন?",
+      "target": "该选哪一个？"
+    },
+    {
+      "source": "Baito/コンビニ/restaurant হলে",
+      "target": "若是打工 / 便利店 / 餐厅"
+    },
+    {
+      "source": ", সাধারণ চাকরিতে",
+      "target": ", 普通工作"
+    },
+    {
+      "source": ", school/college শেষে first job হলে",
+      "target": ", 毕业后的第一份工作（学校/学院毕业后）"
+    },
+    {
+      "source": ", experience-based full-time job হলে",
+      "target": ", 经验类全职工作"
+    },
+    {
+      "source": "সাধারণ Japanese চাকরির CV",
+      "target": "普通日本求职简历"
+    },
+    {
+      "source": "Student, convenience store, restaurant ইত্যাদি",
+      "target": "适用于学生、便利店、餐厅等"
+    },
+    {
+      "source": "Education ও potential-কে গুরুত্ব",
+      "target": "重视教育背景与潜力"
+    },
+    {
+      "source": "写真 — ছবি যোগ করুন",
+      "target": "写真 — 添加照片"
+    },
+    {
+      "source": "ছবি সরান",
+      "target": "移除照片"
+    },
+    {
+      "source": "JPG / PNG / WebP · ৩:৪ ছবি · এই ডিভাইসেই থাকে",
+      "target": "JPG / PNG / WebP · 3:4 照片 · 仅保存在本机"
+    },
+    {
+      "source": "ছবির মাপ",
+      "target": "照片尺寸"
+    },
+    {
+      "source": "ডানে–বামে",
+      "target": "左右"
+    },
+    {
+      "source": "উপরে–নিচে",
+      "target": "上下"
+    },
+    {
+      "source": "CV-এর তারিখ — প্রয়োজনমতো বেছে নিন",
+      "target": "简历日期 — 按需选择"
+    },
+    {
+      "source": "পুরো নাম",
+      "target": "姓名"
+    },
+    {
+      "source": "নামের কাতাকানা",
+      "target": "姓名的片假名"
+    },
+    {
+      "source": "জন্মতারিখ",
+      "target": "出生日期"
+    },
+    {
+      "source": "未記載 / না লিখব",
+      "target": "未记载 / 不填写"
+    },
+    {
+      "source": "男 / পুরুষ",
+      "target": "男 / 男性"
+    },
+    {
+      "source": "女 / নারী",
+      "target": "女 / 女性"
+    },
+    {
+      "source": "その他 / অন্যান্য",
+      "target": "その他 / 其他"
+    },
+    {
+      "source": "জাতীয়তা",
+      "target": "国籍"
+    },
+    {
+      "source": "মোবাইল নম্বর",
+      "target": "手机号码"
+    },
+    {
+      "source": "ইমেইল",
+      "target": "电子邮箱"
+    },
+    {
+      "source": "বর্তমান ঠিকানা + postal code",
+      "target": "现居住址 + 邮政编码"
+    },
+    {
+      "source": "ঠিকানার কাতাকানা reading",
+      "target": "地址的片假名读音"
+    },
+    {
+      "source": "Residence status / ভিসা",
+      "target": "Residence status / 签证"
+    },
+    {
+      "source": "তারিখ অনুযায়ী লিখুন। 入学/卒業, 入社/退職 উল্লেখ করলে final CV সুন্দর হবে।",
+      "target": "请按时间顺序列出。注明 入学/卒業、入社/退职 会让最终的简历更完美。"
+    },
+    {
+      "source": "— শিক্ষাগত ইতিহাস",
+      "target": "— 教育经历"
+    },
+    {
+      "source": "学歴 যোগ করুন",
+      "target": "添加 学歴"
+    },
+    {
+      "source": "— কাজের ইতিহাস",
+      "target": "— 工作经历"
+    },
+    {
+      "source": "職歴 যোগ করুন",
+      "target": "添加 職歴"
+    },
+    {
+      "source": "— যোগ্যতা/লাইসেন্স",
+      "target": "— 资格证书/执照"
+    },
+    {
+      "source": "資格 যোগ করুন",
+      "target": "添加 資格"
+    },
+    {
+      "source": "— Part-time তথ্য",
+      "target": "— 打工经历信息"
+    },
+    {
+      "source": "স্কুলের ক্লাসের সময়",
+      "target": "学校上课时间"
+    },
+    {
+      "source": "কোন দিন ও সময়ে কাজ করতে পারবেন",
+      "target": "可以工作的日期和时间"
+    },
+    {
+      "source": "কেন এই job চান + আপনার শক্তি · নিচের নমুনা সম্পাদনা করুন",
+      "target": "为什么想要这份工作 + 您的优势 · 请编辑以下示例"
+    },
+    {
+      "source": "অন্য কোনো বিশেষ অনুরোধ",
+      "target": "其他特殊要求"
+    },
+    {
+      "source": "আপনার কাজের অভিজ্ঞতার সংক্ষিপ্ত summary",
+      "target": "您的工作经验简短总结"
+    },
+    {
+      "source": "Skills — প্রতি লাইনে একটি করে লিখতে পারেন",
+      "target": "Skills — 每行可写一个"
+    },
+    {
+      "source": "নিজের শক্তি ও কাজের উদাহরণ",
+      "target": "自身的优势与工作示例"
+    },
+    {
+      "source": "শেষ ধাপ:",
+      "target": "最后一步："
+    },
+    {
+      "source": "নাম, তারিখ, ছবি ও লেখার বানান Preview-তে মিলিয়ে নিন। PDF / Print চাপলে browser-এর Print খুলবে; Destination থেকে",
+      "target": "请在预览中核对姓名、日期、照片和文字拼写。点击 PDF / Print 将打开浏览器的打印功能；请在目标位置（Destination）"
+    },
+    {
+      "source": "বেছে নিন।",
+      "target": "进行选择。"
+    },
+    {
+      "source": "Backup ফেরত আনুন",
+      "target": "恢复备份"
+    },
+    {
+      "source": "আগের ধাপ",
+      "target": "上一步"
+    },
+    {
+      "source": "পরের ধাপ",
+      "target": "下一步"
+    },
+    {
+      "source": "নথির Preview",
+      "target": "文档预览"
+    },
+    {
+      "source": "বড় করে দেখুন",
+      "target": "放大查看"
+    }
+  ]
+}

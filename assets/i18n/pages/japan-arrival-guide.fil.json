@@ -1,0 +1,454 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "japan-arrival-guide",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "আগমনের পর A–Z | আপনার নিহোন",
+      "target": "Pagdating A–Z | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "জাপান লাইফ গাইড",
+      "target": "Gabay sa Buhay sa Japan"
+    },
+    {
+      "source": "সব গাইড",
+      "target": "Lahat ng Gabay"
+    },
+    {
+      "source": "আগমনের পর",
+      "target": "Pagkatapos Dumating"
+    },
+    {
+      "source": "বাসা ও দৈনন্দিন জীবন",
+      "target": "Tirahan at Araw-araw na Buhay"
+    },
+    {
+      "source": "ট্রেন ও Platform",
+      "target": "Tren at Platform"
+    },
+    {
+      "source": "Google Maps ব্যবহার",
+      "target": "Paggamit ng Google Maps"
+    },
+    {
+      "source": "পার্ট-টাইম চাকরি",
+      "target": "Part-time na Trabaho"
+    },
+    {
+      "source": "জরুরি সহায়তা",
+      "target": "Emergency na Tulong"
+    },
+    {
+      "source": "আগমনের পর A–Z",
+      "target": "Pagdating A–Z"
+    },
+    {
+      "source": "জাপানে নামার মুহূর্ত থেকে address registration, insurance, bank ও phone পর্যন্ত—একজন নতুন শিক্ষার্থীর সম্পূর্ণ প্রথম সপ্তাহের গাইড।",
+      "target": "Mula sa sandali ng pagbaba sa Japan hanggang sa pagpaparehistro ng tirahan, seguro, bangko, at telepono—ang kumpletong gabay sa unang linggo para sa isang bagong estudyante."
+    },
+    {
+      "source": "বাংলা ব্যাখ্যা",
+      "target": "Paliwanag sa Bengali"
+    },
+    {
+      "source": "জাপানি বাক্য",
+      "target": "Pangungusap na Hapon"
+    },
+    {
+      "source": "বাস্তব ধাপ",
+      "target": "Aktwal na Hakbang"
+    },
+    {
+      "source": "আপনার অগ্রগতি",
+      "target": "Ang iyong progreso"
+    },
+    {
+      "source": "0/0 সম্পন্ন",
+      "target": "0/0 tapos na"
+    },
+    {
+      "source": "এয়ারপোর্ট",
+      "target": "Paliparan"
+    },
+    {
+      "source": "সিটি অফিস",
+      "target": "Opisina ng Lungsod"
+    },
+    {
+      "source": "বাক্য",
+      "target": "Pangungusap"
+    },
+    {
+      "source": "এয়ারপোর্টে প্রথমে কী দেখবেন",
+      "target": "Ano ang unang dapat tingnan sa paliparan"
+    },
+    {
+      "source": "Residence card, passport ও অনুমতির তথ্য যাচাই",
+      "target": "Suriin ang impormasyon ng Residence card, pasaporte at permiso"
+    },
+    {
+      "source": "ইমিগ্রেশন শেষ করার পর তাড়াহুড়া করে বের না হয়ে আপনার কাগজপত্র মিলিয়ে নিন। ভুল থাকলে এয়ারপোর্টেই জিজ্ঞেস করা সবচেয়ে সহজ।",
+      "target": "Pagkatapos tapusin ang immigration, huwag magmadaling lumabas at i-double check ang iyong mga dokumento. Kung may mali, mas madaling magtanong agad sa paliparan."
+    },
+    {
+      "source": "পাসপোর্টের নাম ও জন্মতারিখ মিলান",
+      "target": "Itugma ang pangalan at petsa ng kapanganakan sa pasaporte"
+    },
+    {
+      "source": "পাসপোর্ট, ভিসা/landing permission এবং Residence Card-এর বানান একই কি না দেখুন।",
+      "target": "Tingnan kung pareho ang baybay sa pasaporte, visa/landing permission at Residence Card."
+    },
+    {
+      "source": "在留資格 ও মেয়াদ দেখুন",
+      "target": "Tingnan ang 在留資格 at bisa"
+    },
+    {
+      "source": "মানে residence status এবং",
+      "target": "Nangangahulugang residence status at"
+    },
+    {
+      "source": "মানে থাকার অনুমোদিত সময়।",
+      "target": "Nangangahulugang ang pinahintulutang oras ng pananatili."
+    },
+    {
+      "source": "কাজের অনুমতির stamp দেখুন",
+      "target": "Tingnan ang stamp ng permit sa pagtatrabaho"
+    },
+    {
+      "source": "শিক্ষার্থী হিসেবে part-time করতে চাইলে 資格外活動許可 আছে কি না যাচাই করুন। অনুমতি ছাড়া কাজ শুরু করবেন না।",
+      "target": "Kung nais mong mag-part-time bilang isang estudyante, suriin kung mayroon kang 資格外活動許可 (Permiso para sa mga Aktibidad sa Labas ng Kwalipikasyon). Huwag magsimulang magtrabaho nang walang permiso."
+    },
+    {
+      "source": "কার্ড না পেলে নির্দেশনা সংরক্ষণ করুন",
+      "target": "I-save ang mga tagubilin kung hindi nakuha ang card"
+    },
+    {
+      "source": "প্রবেশ বন্দরে কার্ড দেওয়া না হলে, ঠিকানা নিবন্ধনের পর ডাকযোগে আসতে পারে। পাওয়া কাগজ হারাবেন না।",
+      "target": "Kung hindi ibinigay ang card sa port of entry, maaari itong dumating sa pamamagitan ng koreo pagkatapos Irehistro ang tirahan. Huwag mawalan ng natanggap na papel."
+    },
+    {
+      "source": "ছবি তুলে রাখুন",
+      "target": "Kumuha ng litrato"
+    },
+    {
+      "source": "পাসপোর্টের পরিচয় পাতা, Residence Card-এর সামনে-পেছন এবং স্কুলের admission কাগজ নিরাপদ cloud folder-এ রাখুন।",
+      "target": "I-save ang pahina ng pagkakakilanlan ng pasaporte, harap at likod ng Residence Card, at mga dokumento ng admission sa paaralan sa isang ligtas na cloud folder."
+    },
+    {
+      "source": "প্রথম ২৪ ঘণ্টার পরিকল্পনা",
+      "target": "Plano para sa unang 24 oras"
+    },
+    {
+      "source": "SIM, যাতায়াত, নগদ টাকা ও নিরাপদে বাসায় পৌঁছানো",
+      "target": "SIM, transportasyon, cash, at ligtas na pagdating sa bahay"
+    },
+    {
+      "source": "ইন্টারনেট",
+      "target": "Internet"
+    },
+    {
+      "source": "Airport Wi‑Fi বা বৈধ SIM/eSIM",
+      "target": "Airport Wi‑Fi o wastong SIM/eSIM"
+    },
+    {
+      "source": "যাতায়াত",
+      "target": "Transportasyon"
+    },
+    {
+      "source": "IC card বা ticket",
+      "target": "IC card o tiket"
+    },
+    {
+      "source": "নগদ",
+      "target": "Cash"
+    },
+    {
+      "source": "কিছু cash সঙ্গে রাখুন",
+      "target": "Magdala ng ilang cash"
+    },
+    {
+      "source": "ঠিকানা",
+      "target": "Address"
+    },
+    {
+      "source": "বাসার ঠিকানা জাপানিতে রাখুন",
+      "target": "Ilagay ang address ng bahay sa Japanese"
+    },
+    {
+      "source": "বিল্ডিং নাম, room number, postal code সহ screenshot নিন। শুধু English map pin যথেষ্ট নয়।",
+      "target": "Kumuha ng screenshot kasama ang pangalan ng building, room number, at postal code. Ang English map pin lang ay hindi sapat."
+    },
+    {
+      "source": "শেষ ট্রেনের সময় দেখুন",
+      "target": "Tingnan ang oras ng huling tren"
+    },
+    {
+      "source": "রাতে পৌঁছালে Google Maps-এর last train এবং taxi fare তুলনা করুন।",
+      "target": "Kung dadating sa gabi, ihambing ang huling tren at pamasahe ng taxi sa Google Maps."
+    },
+    {
+      "source": "স্কুল/পরিচিত ব্যক্তিকে arrival message দিন",
+      "target": "Magpadala ng arrival message sa paaralan o kakilala"
+    },
+    {
+      "source": "আপনি নিরাপদে পৌঁছেছেন এবং কোন সময় বাসায় যাবেন জানিয়ে দিন।",
+      "target": "Ipaalam na ikaw ay ligtas na nakarating at anong oras ka uuwi."
+    },
+    {
+      "source": "সিটি অফিসে Address Registration",
+      "target": "Address Registration sa City Office"
+    },
+    {
+      "source": "বাসা ঠিক করার পর ১৪ দিনের মধ্যে মূল কাজ",
+      "target": "Ang pangunahing gawain sa loob ng 14 araw pagkatapos ayusin ang tirahan"
+    },
+    {
+      "source": "বাসার ঠিকানা স্থির হওয়ার পর স্থানীয় 市役所（しやくしょ）/区役所（くやくしょ）-এ গিয়ে 転入届（てんにゅうとどけ） বা residence registration করুন।",
+      "target": "Pagkatapos matukoy ang address ng bahay, pumunta sa lokal na 市役所（しやくしょ）/区役所（くやくしょ） at gawin ang 転入届（てんにゅうとどけ） o residence registration."
+    },
+    {
+      "source": "সঙ্গে নিন",
+      "target": "Dalhin"
+    },
+    {
+      "source": "কেন লাগবে",
+      "target": "Bakit kailangan"
+    },
+    {
+      "source": "নোট",
+      "target": "Tala"
+    },
+    {
+      "source": "ঠিকানা কার্ডে লিখতে",
+      "target": "Para isulat sa address card"
+    },
+    {
+      "source": "Original নিন",
+      "target": "Dalhin ang Original"
+    },
+    {
+      "source": "পরিচয়/entry যাচাই",
+      "target": "Beripikasyon ng pagkakakilanlan/pagpasok"
+    },
+    {
+      "source": "সবসময় চাইবে না, তবু নিন",
+      "target": "Maaaring hindi palaging hingin, pero dalhin pa rin"
+    },
+    {
+      "source": "বাসার পূর্ণ ঠিকানা",
+      "target": "Buong address ng bahay"
+    },
+    {
+      "source": "Room number ভুল করবেন না",
+      "target": "Huwag magkamali sa room number"
+    },
+    {
+      "source": "Household তথ্য",
+      "target": "Impormasyon ng Household"
+    },
+    {
+      "source": "একসঙ্গে কারা থাকেন",
+      "target": "Sino ang magkakasama"
+    },
+    {
+      "source": "পরিবার হলে relationship তথ্য",
+      "target": "Kung pamilya, impormasyon ng relasyon"
+    },
+    {
+      "source": "আগের municipality-এর certificate",
+      "target": "Sertipiko mula sa dating municipality"
+    },
+    {
+      "source": "Japan-এর ভিতরে move হলে",
+      "target": "Kung lumipat sa loob ng Japan"
+    },
+    {
+      "source": "নতুন আগমন হলে সাধারণত নেই",
+      "target": "Kung bagong dating, kadalasang wala"
+    },
+    {
+      "source": "কাউন্টারে বলুন",
+      "target": "Sabihin sa counter"
+    },
+    {
+      "source": "“নতুন এসেছি, address registration করতে চাই।” নিচের বাক্য দেখান।",
+      "target": "\"Bago pa lang ako dumating, gusto kong mag-rehistro ng address.\" Ipakita ang pangungusap sa ibaba."
+    },
+    {
+      "source": "আমি ঠিকানা নিবন্ধন করতে চাই।",
+      "target": "Gusto kong magrehistro ng address."
+    },
+    {
+      "source": "আমি সদ্য জাপানে এসেছি। প্রয়োজনীয় প্রক্রিয়াগুলো বলবেন।",
+      "target": "Kamakailan lamang ako dumating sa Japan. Mangyaring sabihin ang mga kinakailangang proseso."
+    },
+    {
+      "source": "Health Insurance, Pension ও My Number",
+      "target": "Health Insurance, Pension at My Number"
+    },
+    {
+      "source": "কাউন্টারে কোনগুলো জিজ্ঞেস করবেন",
+      "target": "Ano ang mga itatanong sa counter"
+    },
+    {
+      "source": "National Health Insurance সম্পর্কে জিজ্ঞেস করুন",
+      "target": "Magtanong tungkol sa National Health Insurance"
+    },
+    {
+      "source": "আপনার অন্য employee insurance না থাকলে National Health Insurance-এর eligibility ও enrolment সম্পর্কে city office জানাবে।",
+      "target": "Kung wala kang ibang employee insurance, ipapaalam sa iyo ng city office ang eligibility at enrolment para sa National Health Insurance."
+    },
+    {
+      "source": "National Pension/Student exemption জিজ্ঞেস করুন",
+      "target": "Magtanong tungkol sa National Pension/Student exemption"
+    },
+    {
+      "source": "বয়স ও status অনুযায়ী pension procedure হতে পারে। শিক্ষার্থী হলে 学生納付特例 বা অন্য exemption প্রযোজ্য কি না জিজ্ঞেস করুন।",
+      "target": "Maaaring mag-iba ang proseso ng pension ayon sa edad at status. Kung ikaw ay estudyante, itanong kung naaangkop ang 学生納付特例 o iba pang exemption."
+    },
+    {
+      "source": "My Number notice-এর ঠিকানা নিশ্চিত করুন",
+      "target": "Kumpirmahin ang address sa My Number notice"
+    },
+    {
+      "source": "通知書 ডাকযোগে আসতে পারে। Mailbox-এ নিজের নাম লিখুন এবং চিঠি নিয়মিত দেখুন।",
+      "target": "Maaaring dumating sa pamamagitan ng koreo ang 通知書. Isulat ang iyong pangalan sa mailbox at regular na suriin ang mga liham."
+    },
+    {
+      "source": "সবাইয়ের অবস্থা এক নয়",
+      "target": "Hindi pare-pareho ang sitwasyon ng lahat"
+    },
+    {
+      "source": "স্কুল, চাকরি, পরিবারের insurance ও residence status অনুযায়ী ব্যবস্থা বদলাতে পারে। কাউন্টারের লিখিত নির্দেশনা অনুসরণ করুন।",
+      "target": "Maaaring magbago ang mga hakbang depende sa paaralan, trabaho, insurance ng pamilya, at residence status. Sundin ang mga nakasulat na tagubilin sa counter."
+    },
+    {
+      "source": "Bank account, Mobile ও দৈনন্দিন পরিচয়",
+      "target": "Bank account, Mobile at pang-araw-araw na pagkakakilanlan"
+    },
+    {
+      "source": "Registration শেষ হলে পরের বাস্তব কাজ",
+      "target": "Ang susunod na praktikal na gawain pagkatapos ng Registration"
+    },
+    {
+      "source": "জাপানি ফোন নম্বর নিন",
+      "target": "Kumuha ng Japanese phone number"
+    },
+    {
+      "source": "Job application, bank verification ও delivery-এর জন্য নিজের নামে সক্রিয় নম্বর দরকার হয়। Contract বুঝে sign করুন।",
+      "target": "Kailangan ang aktibong numero sa sariling pangalan para sa Job application, bank verification at delivery. Unawain ang contract bago pumirma."
+    },
+    {
+      "source": "Bank account-এর কাগজ প্রস্তুত করুন",
+      "target": "Ihanda ang mga dokumento para sa Bank account"
+    },
+    {
+      "source": "Residence Card, student ID, phone number, address, hanko লাগতে পারে। ব্যাংকভেদে requirements আলাদা।",
+      "target": "Maaaring kailanganin ang Residence Card, student ID, phone number, address, at hanko. Nagkakaiba ang mga requirements depende sa bangko."
+    },
+    {
+      "source": "Mailbox ও nameplate ঠিক করুন",
+      "target": "Ayusin ang Mailbox at nameplate"
+    },
+    {
+      "source": "নাম না থাকলে Residence Card বা My Number-এর চিঠি ফেরত যেতে পারে।",
+      "target": "Kung walang pangalan, maaaring maibalik ang mga liham ng Residence Card o My Number."
+    },
+    {
+      "source": "সব deadline calendar-এ রাখুন",
+      "target": "Ilagay ang lahat ng deadline sa calendar"
+    },
+    {
+      "source": "Residence expiry, school payment, utility bill ও insurance notice-এর reminder দিন।",
+      "target": "Maglagay ng reminder para sa Residence expiry, school payment, utility bill at insurance notice."
+    },
+    {
+      "source": "কাজের জাপানি বাক্য",
+      "target": "Mga pang-araw-araw na pangungusap sa Japanese"
+    },
+    {
+      "source": "কাউন্টারে ফোন দেখিয়ে ব্যবহার করতে পারবেন",
+      "target": "Maaari mong ipakita at gamitin ito sa pamamagitan ng pagpapakita ng telepono sa counter"
+    },
+    {
+      "source": "এই ফর্মটি কীভাবে লিখব, দেখিয়ে দিন।",
+      "target": "Mangyaring ituro sa akin kung paano isulat ang form na ito."
+    },
+    {
+      "source": "আমার জাপানি এখনো ভালো নয়। আস্তে বলবেন।",
+      "target": "Hindi pa magaling ang aking Japanese. Mangyaring magsalita nang dahan-dahan."
+    },
+    {
+      "source": "এরপর আমাকে কী করতে হবে?",
+      "target": "Ano ang kailangan kong gawin pagkatapos nito?"
+    },
+    {
+      "source": "এই ঠিকানায় নিবন্ধন করা যাবে?",
+      "target": "Maaari bang magparehistro sa address na ito?"
+    },
+    {
+      "source": "আগমনের Checklist",
+      "target": "Checklist sa Pagdating"
+    },
+    {
+      "source": "একটি শেষ হলে টিক দিন",
+      "target": "Lagyan ng tsek kapag natapos na ang isa"
+    },
+    {
+      "source": "Passport, Residence Card ও permission তথ্য মিলিয়েছি",
+      "target": "Pinag-ugnay ko ang impormasyon ng Passport, Residence Card at permission"
+    },
+    {
+      "source": "বাসার Japanese address screenshot করেছি",
+      "target": "Nag-screenshot ako ng Japanese address ng tirahan"
+    },
+    {
+      "source": "Address registration-এর জন্য city/ward office গিয়েছি",
+      "target": "Pumunta ako sa city/ward office para sa Address registration"
+    },
+    {
+      "source": "Insurance ও pension procedure জিজ্ঞেস করেছি",
+      "target": "Nagtanong ako tungkol sa pamamaraan ng Insurance at pension"
+    },
+    {
+      "source": "Mailbox-এ নাম দিয়েছি",
+      "target": "Naglagay ako ng pangalan sa Mailbox"
+    },
+    {
+      "source": "Phone number ও জরুরি contact save করেছি",
+      "target": "Na-save ko ang Phone number at emergency contact"
+    },
+    {
+      "source": "সব গুরুত্বপূর্ণ কাগজের backup রেখেছি",
+      "target": "Nag-iwan ako ng backup ng lahat ng mahalagang dokumento"
+    },
+    {
+      "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+      "target": "Mga opisyal at maaasahang mapagkukunan"
+    },
+    {
+      "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+      "target": "Maaaring magbago ang mga panuntunan—tingnan ang opisyal na impormasyon bago gumawa ng huling desisyon"
+    },
+    {
+      "source": "বাসা ও জীবন",
+      "target": "Bahay at Buhay"
+    },
+    {
+      "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+      "target": "Ang gabay na ito ay para sa pag-aaral. Sundin ang mga tagubilin ng nauugnay na opisina o propesyonal para sa mga personal na desisyong legal o medikal."
+    },
+    {
+      "source": "হোম",
+      "target": "Home"
+    }
+  ]
+}

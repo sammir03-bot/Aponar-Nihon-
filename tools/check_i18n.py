@@ -41,8 +41,8 @@ def main() -> int:
 
     if "mountProfileLanguageSelect" not in source:
         raise SystemExit("Profile language preference must use the shared language registry")
-    if 'if (!isHomeRoute()) return;' not in source:
-        raise SystemExit("The language picker must only be mounted on the home page")
+    if 'if (!isHomeRoute()) return;' in source or "isHomeRoute" in source:
+        raise SystemExit("The language picker must be mounted on every page, not only the home page")
     if 'return languageFromPath() || storedLanguage() || DEFAULT_LANGUAGE;' not in source:
         raise SystemExit("A saved language choice must persist across every page")
 

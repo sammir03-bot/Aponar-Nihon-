@@ -1,0 +1,334 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n3",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "JLPT N3 Complete Learning Center | আপনার নিহোন",
+      "target": "JLPT N3 完整学习中心 | আপনার নিহোন"
+    },
+    {
+      "source": "হোম",
+      "target": "首页"
+    },
+    {
+      "source": "Rule মুখস্থ নয়,",
+      "target": "不背死规则，"
+    },
+    {
+      "source": "Nuance বুঝে ব্যবহার করুন",
+      "target": "通过理解微小语感（Nuance）来使用"
+    },
+    {
+      "source": "TRY! N3-এর ১১৩টি গভীর Grammar, Matome revision, ৪২-item Vocabulary path, ২৯৩ Kanji, Reading এবং ১০টি Full Mock—real progress ও AI comparison coach-সহ একটি focused learning system।",
+      "target": "TRY! N3 的 113 个深入语法、Matome 复习、42 项词汇路径、293 个汉字、阅读理解以及 10 套全真模拟——这是一个配备真实进步与 AI 对比教练的专注学习系统。"
+    },
+    {
+      "source": "TRY! N3 শুরু করুন",
+      "target": "开始学习 TRY! N3"
+    },
+    {
+      "source": "আপনার N3 অগ্রগতি",
+      "target": "您的 N3 进度"
+    },
+    {
+      "source": "সংরক্ষিত learning progress দেখা হচ্ছে…",
+      "target": "正在加载保存的学习进度…"
+    },
+    {
+      "source": "১১৩ Grammar",
+      "target": "113 个语法"
+    },
+    {
+      "source": "TRY! গভীর guide",
+      "target": "TRY! 深入指南"
+    },
+    {
+      "source": "২৯৩ Kanji",
+      "target": "293 个汉字"
+    },
+    {
+      "source": "৪২ Vocab item",
+      "target": "42 个词汇项"
+    },
+    {
+      "source": "১০ Full Mock",
+      "target": "10 套全真模拟"
+    },
+    {
+      "source": "N3 subpage-গুলো আলাদা কাজ করে—গভীর শেখার জন্য TRY!, দ্রুত revision-এর জন্য Matome, recall-এর জন্য quiz ও exam readiness-এর জন্য Mock।",
+      "target": "N3 各子页面承担不同的任务——用于深入学习的 TRY!、用于快速复习的 Matome、用于回忆的测验以及用于备考检查的 Mock。"
+    },
+    {
+      "source": "QUARTET, দুই খণ্ড এক জায়গায়।",
+      "target": "QUARTET，两册合一。"
+    },
+    {
+      "source": "I: অধ্যায় ১–৬ · N3 / II: অধ্যায় ৭–১২ · N2-এর পথে",
+      "target": "I: 第 1–6 课 · N3 / II: 第 7–12 课 · 迈向 N2"
+    },
+    {
+      "source": "II-এর স্টাডি গাইড →",
+      "target": "II 的学习指南 →"
+    },
+    {
+      "source": "সব রিসোর্স",
+      "target": "所有资源"
+    },
+    {
+      "source": "N3 কোর্স",
+      "target": "N3 课程"
+    },
+    {
+      "source": "অনুশীলন",
+      "target": "练习"
+    },
+    {
+      "source": "কোনো রিসোর্স পাওয়া যায়নি। অন্য শব্দ লিখুন বা সব রিসোর্স বেছে নিন।",
+      "target": "未找到相关资源。请尝试其他关键词或选择所有资源。"
+    },
+    {
+      "source": "0/42 সম্পন্ন",
+      "target": "0/42 已完成"
+    },
+    {
+      "source": "থিমভিত্তিক lesson, শব্দের natural ব্যবহার, Furigana, বাংলা অর্থ, part exam ও completion tracker।",
+      "target": "主题式课程、单词的自然用法、假名（Furigana）、孟加拉语释义、分课测验及完成度追踪器。"
+    },
+    {
+      "source": "Vocabulary খুলুন",
+      "target": "打开词汇"
+    },
+    {
+      "source": "২৯৩ Kanji ও ৭৪০ শব্দ—real signage, form, workplace context, ৬টি exam এবং lesson tracker।",
+      "target": "293 个汉字与 740 个单词——真实标识、表格、职场语境、6 次考试及课程追踪器。"
+    },
+    {
+      "source": "Kanji Lab খুলুন",
+      "target": "打开汉字实验室"
+    },
+    {
+      "source": "0/113 সম্পন্ন",
+      "target": "0/113 已完成"
+    },
+    {
+      "source": "১১৩টি Deep Grammar",
+      "target": "113 个深入语法"
+    },
+    {
+      "source": "কখন ব্যবহার করবেন, formation, nuance, memory trick, common mistake ও rule-পিছু ১০টি example।",
+      "target": "使用时机、接续（formation）、语感、记忆技巧、常见错误以及每个规则对应 10 个例句。"
+    },
+    {
+      "source": "TRY! N3 খুলুন",
+      "target": "打开 TRY! N3"
+    },
+    {
+      "source": "শুরু হয়নি",
+      "target": "未开始"
+    },
+    {
+      "source": "৭ সপ্তাহের compact roadmap, pattern compare, search ও দ্রুত recall—পরীক্ষার আগের smart revision desk।",
+      "target": "7 周紧凑路线图、句型对比、搜索与快速回忆——考前智能复习桌。"
+    },
+    {
+      "source": "Matome খুলুন",
+      "target": "打开 Matome"
+    },
+    {
+      "source": "০/৫৫ সম্পন্ন",
+      "target": "0/55 已完成"
+    },
+    {
+      "source": "QUARTET I বাংলা গ্রামার",
+      "target": "QUARTET I 孟加拉语语法"
+    },
+    {
+      "source": "৬ অধ্যায়ে ৫৫টি গ্রামার, Form, ফুরিগানাসহ নিজস্ব উদাহরণ, অনুশীলন ও রিভিশন।",
+      "target": "6 个章节中的 55 个语法、接续、带假名的专属例句、练习及复习。"
+    },
+    {
+      "source": "৬ অধ্যায়",
+      "target": "6 个章节"
+    },
+    {
+      "source": "৫৫০ উদাহরণ",
+      "target": "550 个例句"
+    },
+    {
+      "source": "৫৫ অনুশীলন",
+      "target": "55 个练习"
+    },
+    {
+      "source": "QUARTET পড়ুন",
+      "target": "阅读 QUARTET"
+    },
+    {
+      "source": "চার দক্ষতা · QUARTET I",
+      "target": "四大技能 · QUARTET I"
+    },
+    {
+      "source": "QUARTET I বাংলা স্টাডি সহায়িকা",
+      "target": "QUARTET I 孟加拉语学习指南"
+    },
+    {
+      "source": "৬ অধ্যায়ের নিজস্ব প্যাসেজের বাক্যভিত্তিক বাংলা ব্যাখ্যা, শব্দ, কানজি, Writing, Speaking ও Listening অনুশীলন।",
+      "target": "第6课的原创文章逐句孟加拉语解析、单词、汉字、Writing、Speaking和Listening练习。"
+    },
+    {
+      "source": "৫৫ গ্রামার",
+      "target": "55个语法"
+    },
+    {
+      "source": "বাক্য ধরে ব্যাখ্যা",
+      "target": "逐句解析"
+    },
+    {
+      "source": "চার দক্ষতা",
+      "target": "四项技能"
+    },
+    {
+      "source": "স্টাডি সহায়িকা খুলুন",
+      "target": "打开学习指南"
+    },
+    {
+      "source": "০/৩৬ সম্পন্ন",
+      "target": "0/36 已完成"
+    },
+    {
+      "source": "QUARTET II · N2-এর পথে",
+      "target": "QUARTET II · 迈向N2"
+    },
+    {
+      "source": "QUARTET II বাংলা সহায়িকা",
+      "target": "QUARTET II 孟加拉语指南"
+    },
+    {
+      "source": "৭–১২ অধ্যায়ের থিমে নির্বাচিত ৩৬টি গ্রামার, বাংলা ব্যাখ্যা, ৭২টি উদাহরণ ও চার দক্ষতার নিজস্ব অনুশীলন।",
+      "target": "第7-12课主题精选的36个语法、孟加拉语解析、72个例句及四项技能原创练习。"
+    },
+    {
+      "source": "অধ্যায় ৭–১২",
+      "target": "第7-12课"
+    },
+    {
+      "source": "৩৬ গ্রামার",
+      "target": "36个语法"
+    },
+    {
+      "source": "QUARTET II শুরু করুন",
+      "target": "开始 QUARTET II"
+    },
+    {
+      "source": "Passage, প্রশ্ন, মূল বক্তব্য, clue এবং বাংলা explanation দিয়ে speed ও inference একসঙ্গে উন্নত করুন।",
+      "target": "通过 Passage、问题、核心观点、clue及孟加拉语 explanation，同时提升 speed与 inference。"
+    },
+    {
+      "source": "Reading শুরু করুন",
+      "target": "开始 Reading"
+    },
+    {
+      "source": "Vocabulary, Grammar/Reading ও Listening—real timer, resume, marksheet ও বাংলা error review-সহ ১০টি exam।",
+      "target": "包含Vocabulary、Grammar/Reading及Listening——带有real timer、resume、marksheet及孟加拉语 error review的10场exam。"
+    },
+    {
+      "source": "Mock Test খুলুন",
+      "target": "打开 Mock Test"
+    },
+    {
+      "source": "Nuance ও recall-এর shortcut",
+      "target": "语感与提取的快捷方式"
+    },
+    {
+      "source": "১০টি original part",
+      "target": "10个original part"
+    },
+    {
+      "source": "আজকের reading part",
+      "target": "今天的 reading part"
+    },
+    {
+      "source": "দুর্বল base revise",
+      "target": "巩固薄弱基础"
+    },
+    {
+      "source": "একবার পড়ে মনে রাখার flow",
+      "target": "看一遍就能记住的flow"
+    },
+    {
+      "source": "N3-এ meaning জানা শুরু; সঠিক context, contrast ও active recall-ই আসল mastery।",
+      "target": "N3开始了解词义；正确的 context、contrast与 active recall才是真正的 mastery。"
+    },
+    {
+      "source": "Rule-এর বাংলা অর্থের আগে তার core scene বা intention ধরুন।",
+      "target": "在理解 Rule的孟加拉语意思之前，先把握其 core scene或 intention。"
+    },
+    {
+      "source": "Form লিখে কাছাকাছি দুই pattern-এর পার্থক্য এক লাইনে বলুন।",
+      "target": "写出 Form，用一句话说明两个相近 pattern的区别。"
+    },
+    {
+      "source": "নিজের ৩টি বাক্য",
+      "target": "自己的3个句子"
+    },
+    {
+      "source": "কাজ, স্কুল ও দৈনন্দিন জীবন নিয়ে natural example তৈরি করুন।",
+      "target": "围绕工作、学校和日常生活创作 natural example。"
+    },
+    {
+      "source": "Matome দিয়ে recall করে reading ও mock-এ সত্যিকারের প্রয়োগ দেখুন।",
+      "target": "通过 Matome进行提取，在 reading和 mock中见证真正的运用。"
+    },
+    {
+      "source": "এই সপ্তাহের N3 mastery plan",
+      "target": "本周的 N3 mastery plan"
+    },
+    {
+      "source": "Deep lesson ও exam practice-এর ভারসাম্য রাখুন।",
+      "target": "保持 Deep lesson与 exam practice的平衡。"
+    },
+    {
+      "source": "0/6 শেষ",
+      "target": "0/6 已完成"
+    },
+    {
+      "source": "২টি Vocabulary item",
+      "target": "2个 Vocabulary item"
+    },
+    {
+      "source": "১টি Kanji lesson",
+      "target": "1个 Kanji lesson"
+    },
+    {
+      "source": "৫টি TRY! Grammar",
+      "target": "5个 TRY! Grammar"
+    },
+    {
+      "source": "১টি Matome review",
+      "target": "1个 Matome review"
+    },
+    {
+      "source": "২টি timed reading",
+      "target": "2个 timed reading"
+    },
+    {
+      "source": "Confusing দুই grammar লিখুন—formation, nuance, natural example ও common mistake বাংলায় compare করবে।",
+      "target": "写下容易混淆的两个 grammar——将以孟加拉语对比其formation、nuance、natural example和 common mistake。"
+    },
+    {
+      "source": "Deep Tutor খুলুন",
+      "target": "打开 Deep Tutor"
+    },
+    {
+      "source": "আপনার নিহোন · N3 nuance বাংলায় গভীরভাবে শেখা",
+      "target": "您的日语 · 用孟加拉语深入学习 N3语感"
+    },
+    {
+      "source": "✓ Progress সংরক্ষণ হয়েছে",
+      "target": "✓ 进度已保存"
+    }
+  ]
+}

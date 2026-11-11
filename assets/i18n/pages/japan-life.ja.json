@@ -1,0 +1,170 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "japan-life",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "জাপান লাইফ গাইড বাংলায় | আপনার নিহোন",
+      "target": "日本生活ガイド ベンガル語版 | あなたのニホン"
+    },
+    {
+      "source": "জাপান লাইফ",
+      "target": "日本生活"
+    },
+    {
+      "source": "হোম",
+      "target": "ホーム"
+    },
+    {
+      "source": "জাপানে নতুন? প্রথম দিন থেকে নিজের পায়ে দাঁড়ান",
+      "target": "日本での新生活？初日から自分の足で歩み始めよう"
+    },
+    {
+      "source": "বাসা, সিটি অফিস, ট্রেন, Google Maps-এর platform, IC card, পার্ট-টাইম চাকরি, ইন্টারভিউ ও দৈনন্দিন নিয়ম—সবকিছু ধাপে ধাপে বাংলায়।",
+      "target": "住まい、区役所、電車、Google Mapsのプラットフォーム、ICカード、アルバイト、面接、そして日々のルールまで—すべてをベンガル語でステップバイステップで解説します。"
+    },
+    {
+      "source": "১০ ধাপের A–Z গাইড",
+      "target": "10ステップのA〜Zガイド"
+    },
+    {
+      "source": "জরুরি সহায়তা",
+      "target": "緊急サポート"
+    },
+    {
+      "source": "আপনার প্রয়োজন অনুযায়ী গাইড খুলুন",
+      "target": "あなたのニーズに合わせてガイドを開く"
+    },
+    {
+      "source": "আগমনের পর",
+      "target": "来日後"
+    },
+    {
+      "source": "Residence Card, address, City Office, insurance ও প্রথম সপ্তাহের কাজ।",
+      "target": "在留カード、住所、区役所、保険、そして最初の1週間の作業。"
+    },
+    {
+      "source": "গাইড খুলুন",
+      "target": "ガイドを開く"
+    },
+    {
+      "source": "বাসা ও দৈনন্দিন জীবন",
+      "target": "住まいと日常生活"
+    },
+    {
+      "source": "গ্যাস, বিদ্যুৎ, পানি, ময়লা, কেনাকাটা ও apartment rules।",
+      "target": "ガス、電気、水道、ゴミ出し、買い物、そしてアパートのルール。"
+    },
+    {
+      "source": "বাসার গাইড",
+      "target": "住まいガイド"
+    },
+    {
+      "source": "ট্রেন ও Platform",
+      "target": "電車とプラットフォーム"
+    },
+    {
+      "source": "লাইন, রঙ, direction, transfer, gate ও exit বোঝার সহজ নিয়ম।",
+      "target": "路線、色、方向、乗り換え、改札、出口を理解するための簡単なルール。"
+    },
+    {
+      "source": "ট্রেন গাইড",
+      "target": "電車ガイド"
+    },
+    {
+      "source": "Google Maps ব্যবহার",
+      "target": "Google Mapsの使い方"
+    },
+    {
+      "source": "সময়, platform, train type, exit, fare ও transfer পড়া।",
+      "target": "時間、プラットフォーム、電車の種類、出口、運賃、乗り換えの確認方法。"
+    },
+    {
+      "source": "Maps শিখুন",
+      "target": "マップを学ぶ"
+    },
+    {
+      "source": "পার্ট-টাইম চাকরি",
+      "target": "アルバイト"
+    },
+    {
+      "source": "Job site, আবেদন, ফোন, interview ও workplace Japanese।",
+      "target": "求人サイト、応募、電話、面接、そして職場の日本語。"
+    },
+    {
+      "source": "Job গাইড",
+      "target": "仕事ガイド"
+    },
+    {
+      "source": "পুলিশ, Ambulance, disaster, হারানো জিনিস ও দরকারি নম্বর।",
+      "target": "警察、救急車、災害、落とし物、そして必要な番号。"
+    },
+    {
+      "source": "Emergency খুলুন",
+      "target": "緊急ガイドを開く"
+    },
+    {
+      "source": "留学 status, work permission ও প্রয়োজনীয় নিয়মের সহজ গাইড।",
+      "target": "留学ステータス、資格外活動許可、および必要なルールの簡単なガイド。"
+    },
+    {
+      "source": "Visa গাইড",
+      "target": "ビザガイド"
+    },
+    {
+      "source": "২৮ ঘণ্টা, সময়, কাজ ও দৈনন্দিন হিসাবের বাস্তব tools।",
+      "target": "28時間、時間、仕事、そして日常の計算のための実践的なツール。"
+    },
+    {
+      "source": "Toolkit খুলুন",
+      "target": "ツールキットを開く"
+    },
+    {
+      "source": "নামাজ, halal food এবং জাপানে Muslim life-এর গাইড।",
+      "target": "お祈り、ハラルフード、そして日本でのムスリム生活のガイド。"
+    },
+    {
+      "source": "প্রথম সপ্তাহে আগে যা করবেন",
+      "target": "最初の週に優先すべきこと"
+    },
+    {
+      "source": "Residence Card নিয়ে City Office-এ address register করুন।",
+      "target": "在留カードを持って区役所で住所登録をしましょう。"
+    },
+    {
+      "source": "ফোন ও যাতায়াত",
+      "target": "電話と交通"
+    },
+    {
+      "source": "SIM, IC card এবং নিয়মিত route আগে বুঝে নিন।",
+      "target": "SIMカード、ICカード、そして普段のルートを事前に把握しましょう。"
+    },
+    {
+      "source": "জরুরি প্রস্তুতি",
+      "target": "緊急時の準備"
+    },
+    {
+      "source": "নিজের address, school contact ও emergency number সংরক্ষণ করুন।",
+      "target": "自分の住所、学校の連絡先、緊急連絡先を保存しておきましょう。"
+    },
+    {
+      "source": "দরকারি বাক্য",
+      "target": "便利なフレーズ"
+    },
+    {
+      "source": "ইন্টারভিউ",
+      "target": "面接"
+    },
+    {
+      "source": "সহায়তা",
+      "target": "サポート"
+    },
+    {
+      "source": "আপনার নিহোন · জাপানে নতুনদের বাংলা গাইড",
+      "target": "あなたのニホン · 日本の初心者のためのベンガル語ガイド"
+    }
+  ]
+}

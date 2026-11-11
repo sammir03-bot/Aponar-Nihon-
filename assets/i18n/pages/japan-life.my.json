@@ -1,0 +1,170 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "my",
+  "page": "japan-life",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "জাপান লাইফ গাইড বাংলায় | আপনার নিহোন",
+      "target": "ဂျပန်ဘဝလမ်းညွှန် (ဘင်္ဂါလီဘာသာ) | သင့်ရဲ့နီဟွန်း (আপনার নিহোন)"
+    },
+    {
+      "source": "জাপান লাইফ",
+      "target": "ဂျပန်ဘဝ"
+    },
+    {
+      "source": "হোম",
+      "target": "ပင်မစာမျက်နှာ"
+    },
+    {
+      "source": "জাপানে নতুন? প্রথম দিন থেকে নিজের পায়ে দাঁড়ান",
+      "target": "ဂျပန်ကို အသစ်ရောက်လာတာလား။ ပထမနေ့ကတည်းက ကိုယ့်ခြေထောက်ပေါ်ကိုယ် ရပ်တည်ပါ"
+    },
+    {
+      "source": "বাসা, সিটি অফিস, ট্রেন, Google Maps-এর platform, IC card, পার্ট-টাইম চাকরি, ইন্টারভিউ ও দৈনন্দিন নিয়ম—সবকিছু ধাপে ধাপে বাংলায়।",
+      "target": "တိုက်ခန်း၊ မြို့တော်ခန်းမ၊ ရထား၊ Google Maps ရဲ့ ပလက်ဖောင်း၊ IC ကတ်၊ အချိန်ပိုင်းအလုပ်၊ အင်တာဗิวနဲ့ နေ့စဉ်စည်းမျဉ်းများ— အားလုံးကို အဆင့်ချင်းအလိုက် (ဘင်္ဂါလီဘာသာဖြင့်)။"
+    },
+    {
+      "source": "১০ ধাপের A–Z গাইড",
+      "target": "အဆင့် ၁၀ ဆင့်ပါ A–Z လမ်းညွှန်"
+    },
+    {
+      "source": "জরুরি সহায়তা",
+      "target": "အရေးပေါ်အကူအညီ"
+    },
+    {
+      "source": "আপনার প্রয়োজন অনুযায়ী গাইড খুলুন",
+      "target": "သင်လိုအပ်ချက်နှင့်အညီ လမ်းညွှန်ကို ဖွင့်ပါ"
+    },
+    {
+      "source": "আগমনের পর",
+      "target": "ရောက်ရှိပြီးနောက်"
+    },
+    {
+      "source": "Residence Card, address, City Office, insurance ও প্রথম সপ্তাহের কাজ।",
+      "target": "နေထိုင်ခွင့်ကတ် (Residence Card)၊ လိပ်စာ၊ မြို့တော်ခန်းမ (City Office)၊ အာမခံနဲ့ ပထမပတ်အတွက် လုပ်ဆောင်စရာများ။"
+    },
+    {
+      "source": "গাইড খুলুন",
+      "target": "လမ်းညွှန်ဖွင့်ရန်"
+    },
+    {
+      "source": "বাসা ও দৈনন্দিন জীবন",
+      "target": "တိုက်ခန်းနှင့် နေ့စဉ်ဘဝ"
+    },
+    {
+      "source": "গ্যাস, বিদ্যুৎ, পানি, ময়লা, কেনাকাটা ও apartment rules।",
+      "target": "ဓာတ်ငွေ့၊ လျှပ်စစ်၊ ရေ၊ အမှိုက်၊ ဈေးဝယ်ခြင်းနှင့် တိုက်ခန်းစည်းကမ်းများ။"
+    },
+    {
+      "source": "বাসার গাইড",
+      "target": "တိုက်ခန်းလမ်းညွှန်"
+    },
+    {
+      "source": "ট্রেন ও Platform",
+      "target": "ရထားနှင့် ပလက်ဖောင်း"
+    },
+    {
+      "source": "লাইন, রঙ, direction, transfer, gate ও exit বোঝার সহজ নিয়ম।",
+      "target": "လိုင်းများ၊ အရောင်များ၊ ဦးတည်ချက် (direction)၊ ကူးပြောင်းစီးနင်းခြင်း၊ ဂိတ်နှင့် ထွက်ပေါက်များကို နားလည်ရန် လွယ်ကူသော စည်းမျဉ်းများ။"
+    },
+    {
+      "source": "ট্রেন গাইড",
+      "target": "ရထားလမ်းညွှန်"
+    },
+    {
+      "source": "Google Maps ব্যবহার",
+      "target": "Google Maps အသုံးပြုခြင်း"
+    },
+    {
+      "source": "সময়, platform, train type, exit, fare ও transfer পড়া।",
+      "target": "အချိန်၊ ပလက်ဖောင်း၊ ရထားအမျိုးအစား၊ ထွက်ပေါက်၊ ခရီးစရိတ်နှင့် ကူးပြောင်းစီးနင်းမှုများကို ဖတ်ရှုခြင်း။"
+    },
+    {
+      "source": "Maps শিখুন",
+      "target": "မြေပုံလေ့လာရန်"
+    },
+    {
+      "source": "পার্ট-টাইম চাকরি",
+      "target": "အချိန်ပိုင်းအလုပ်"
+    },
+    {
+      "source": "Job site, আবেদন, ফোন, interview ও workplace Japanese।",
+      "target": "အလုပ်ရှာဖွေရေးဆိုက်၊ လျှောက်လွှာ၊ ဖုန်းခေါ်ဆိုမှု၊ အင်တာဗิวနှင့် လုပ်ငန်းခွင်သုံး ဂျပန်ဘာသာ။"
+    },
+    {
+      "source": "Job গাইড",
+      "target": "အလုပ်လမ်းညွှန်"
+    },
+    {
+      "source": "পুলিশ, Ambulance, disaster, হারানো জিনিস ও দরকারি নম্বর।",
+      "target": "ရဲ၊ လူနာတင်ယာဉ်၊ သဘာဝဘေးအန္တရာယ်၊ ပစ္စည်းပျောက်ဆုံးမှုနှင့် လိုအပ်သော ဖုန်းနံပါတ်များ။"
+    },
+    {
+      "source": "Emergency খুলুন",
+      "target": "အရေးပေါ်ကို ဖွင့်ရန်"
+    },
+    {
+      "source": "留学 status, work permission ও প্রয়োজনীয় নিয়মের সহজ গাইড।",
+      "target": "留学 (နိုင်ငံတကာကျောင်းသား) အခြေအနေ၊ အလုပ်လုပ်ခွင့်နှင့် လိုအပ်သော စည်းမျဉ်းများအတွက် လွယ်ကူသောလမ်းညွှန်။"
+    },
+    {
+      "source": "Visa গাইড",
+      "target": "ဗီဇာလမ်းညွှန်"
+    },
+    {
+      "source": "২৮ ঘণ্টা, সময়, কাজ ও দৈনন্দিন হিসাবের বাস্তব tools।",
+      "target": "၂၈ နာရီ၊ အချိန်၊ အလုပ်နှင့် နေ့စဉ်တွက်ချက်မှုများအတွက် လက်တွေ့ကျသော ကိရိယာများ (tools)။"
+    },
+    {
+      "source": "Toolkit খুলুন",
+      "target": "တူးလ်ကစ် (Toolkit) ဖွင့်ရန်"
+    },
+    {
+      "source": "নামাজ, halal food এবং জাপানে Muslim life-এর গাইড।",
+      "target": "ဝတ်ပြုဆုတောင်းခြင်း၊ ဟာလာል (halal) အစားအစာနှင့် ဂျပန်နိုင်ငံရှိ မွတ်စလင်ဘဝလမ်းညွှန်။"
+    },
+    {
+      "source": "প্রথম সপ্তাহে আগে যা করবেন",
+      "target": "ပထမပတ်တွင် ဦးစွာလုပ်ဆောင်ရမည့်အရာများ"
+    },
+    {
+      "source": "Residence Card নিয়ে City Office-এ address register করুন।",
+      "target": "နေထိုင်ခွင့်ကတ် (Residence Card) ယူဆောင်ပြီး မြို့တော်ခန်းမ (City Office) တွင် လိပ်စာမှတ်ပုံတင်ပါ။"
+    },
+    {
+      "source": "ফোন ও যাতায়াত",
+      "target": "ဖုန်းနှင့် သွားလာရေး"
+    },
+    {
+      "source": "SIM, IC card এবং নিয়মিত route আগে বুঝে নিন।",
+      "target": "ဆင်းမ်ကတ် (SIM)၊ IC ကတ်နှင့် ပုံမှန်သွားလာမည့်လမ်းကြောင်းကို ကြိုတင်နားလည်ထားပါ။"
+    },
+    {
+      "source": "জরুরি প্রস্তুতি",
+      "target": "အရေးပေါ်ကြိုတင်ပြင်ဆင်မှု"
+    },
+    {
+      "source": "নিজের address, school contact ও emergency number সংরক্ষণ করুন।",
+      "target": "ကိုယ့်လိပ်စာ၊ ကျောင်းဆက်သွယ်ရန်နှင့် အရေးပေါ်ဖုန်းနံပါတ်များကို သိမ်းဆည်းထားပါ။"
+    },
+    {
+      "source": "দরকারি বাক্য",
+      "target": "အသုံးဝင်သောစကားစုများ"
+    },
+    {
+      "source": "ইন্টারভিউ",
+      "target": "အင်တာဗျူး"
+    },
+    {
+      "source": "সহায়তা",
+      "target": "အကူအညီ"
+    },
+    {
+      "source": "আপনার নিহোন · জাপানে নতুনদের বাংলা গাইড",
+      "target": "သင့်ရဲ့ နီဟွန် · ဂျပန်နိုင်ငံသို့ အသစ်ရောက်ရှိလာသူများအတွက် လမ်းညွှန်"
+    }
+  ]
+}

@@ -1,0 +1,454 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "japan-arrival-guide",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "আগমনের পর A–Z | আপনার নিহোন",
+      "target": "Sau khi đến A–Z | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "জাপান লাইফ গাইড",
+      "target": "Cẩm nang Cuộc sống Nhật Bản"
+    },
+    {
+      "source": "সব গাইড",
+      "target": "Tất cả cẩm nang"
+    },
+    {
+      "source": "আগমনের পর",
+      "target": "Sau khi đến"
+    },
+    {
+      "source": "বাসা ও দৈনন্দিন জীবন",
+      "target": "Nhà ở và Đời sống hàng ngày"
+    },
+    {
+      "source": "ট্রেন ও Platform",
+      "target": "Tàu điện và Sân ga"
+    },
+    {
+      "source": "Google Maps ব্যবহার",
+      "target": "Sử dụng Google Maps"
+    },
+    {
+      "source": "পার্ট-টাইম চাকরি",
+      "target": "Việc làm thêm"
+    },
+    {
+      "source": "জরুরি সহায়তা",
+      "target": "Hỗ trợ khẩn cấp"
+    },
+    {
+      "source": "আগমনের পর A–Z",
+      "target": "A–Z sau khi đến"
+    },
+    {
+      "source": "জাপানে নামার মুহূর্ত থেকে address registration, insurance, bank ও phone পর্যন্ত—একজন নতুন শিক্ষার্থীর সম্পূর্ণ প্রথম সপ্তাহের গাইড।",
+      "target": "Từ khoảnh khắc đặt chân đến Nhật Bản cho đến việc đăng ký địa chỉ, bảo hiểm, ngân hàng và điện thoại—cẩm nang toàn diện cho tuần đầu tiên của một học viên mới."
+    },
+    {
+      "source": "বাংলা ব্যাখ্যা",
+      "target": "Giải thích bằng tiếng Bengali"
+    },
+    {
+      "source": "জাপানি বাক্য",
+      "target": "Câu tiếng Nhật"
+    },
+    {
+      "source": "বাস্তব ধাপ",
+      "target": "Các bước thực tế"
+    },
+    {
+      "source": "আপনার অগ্রগতি",
+      "target": "Tiến độ của bạn"
+    },
+    {
+      "source": "0/0 সম্পন্ন",
+      "target": "Hoàn thành 0/0"
+    },
+    {
+      "source": "এয়ারপোর্ট",
+      "target": "Sân bay"
+    },
+    {
+      "source": "সিটি অফিস",
+      "target": "Văn phòng Thành phố"
+    },
+    {
+      "source": "বাক্য",
+      "target": "Câu"
+    },
+    {
+      "source": "এয়ারপোর্টে প্রথমে কী দেখবেন",
+      "target": "Điều đầu tiên cần xem tại sân bay"
+    },
+    {
+      "source": "Residence card, passport ও অনুমতির তথ্য যাচাই",
+      "target": "Kiểm tra thông tin Thẻ cư trú, hộ chiếu và giấy phép"
+    },
+    {
+      "source": "ইমিগ্রেশন শেষ করার পর তাড়াহুড়া করে বের না হয়ে আপনার কাগজপত্র মিলিয়ে নিন। ভুল থাকলে এয়ারপোর্টেই জিজ্ঞেস করা সবচেয়ে সহজ।",
+      "target": "Sau khi hoàn thành thủ tục nhập cảnh, đừng vội vàng rời đi mà hãy kiểm tra lại các giấy tờ của bạn. Nếu có sai sót, việc hỏi ngay tại sân bay là dễ dàng nhất."
+    },
+    {
+      "source": "পাসপোর্টের নাম ও জন্মতারিখ মিলান",
+      "target": "Kiểm tra tên và ngày sinh trên hộ chiếu"
+    },
+    {
+      "source": "পাসপোর্ট, ভিসা/landing permission এবং Residence Card-এর বানান একই কি না দেখুন।",
+      "target": "Kiểm tra xem cách đánh vần trên hộ chiếu, thị thực/giấy phép lưu trú và Thẻ cư trú có giống nhau không."
+    },
+    {
+      "source": "在留資格 ও মেয়াদ দেখুন",
+      "target": "Xem 在留資格 và thời hạn"
+    },
+    {
+      "source": "মানে residence status এবং",
+      "target": "có nghĩa là tư cách cư trú và"
+    },
+    {
+      "source": "মানে থাকার অনুমোদিত সময়।",
+      "target": "có nghĩa là thời gian lưu trú được phép."
+    },
+    {
+      "source": "কাজের অনুমতির stamp দেখুন",
+      "target": "Xem con dấu cho phép làm việc"
+    },
+    {
+      "source": "শিক্ষার্থী হিসেবে part-time করতে চাইলে 資格外活動許可 আছে কি না যাচাই করুন। অনুমতি ছাড়া কাজ শুরু করবেন না।",
+      "target": "Nếu bạn muốn làm việc bán thời gian với tư cách là học sinh, hãy kiểm tra xem có dấu 資格外活動許可 (Giấy phép hoạt động ngoài tư cách lưu trú) hay không. Không bắt đầu làm việc khi chưa có phép."
+    },
+    {
+      "source": "কার্ড না পেলে নির্দেশনা সংরক্ষণ করুন",
+      "target": "Lưu giữ hướng dẫn nếu chưa nhận được thẻ"
+    },
+    {
+      "source": "প্রবেশ বন্দরে কার্ড দেওয়া না হলে, ঠিকানা নিবন্ধনের পর ডাকযোগে আসতে পারে। পাওয়া কাগজ হারাবেন না।",
+      "target": "Nếu thẻ không được cấp tại cửa khẩu, nó có thể được gửi qua đường bưu điện sau khi đăng ký địa chỉ. Đừng làm mất các giấy tờ đã nhận."
+    },
+    {
+      "source": "ছবি তুলে রাখুন",
+      "target": "Chụp ảnh lại"
+    },
+    {
+      "source": "পাসপোর্টের পরিচয় পাতা, Residence Card-এর সামনে-পেছন এবং স্কুলের admission কাগজ নিরাপদ cloud folder-এ রাখুন।",
+      "target": "Lưu trang thông tin cá nhân của hộ chiếu, mặt trước và mặt sau của Thẻ cư trú và giấy nhập học của trường vào một thư mục đám mây an toàn."
+    },
+    {
+      "source": "প্রথম ২৪ ঘণ্টার পরিকল্পনা",
+      "target": "Kế hoạch cho 24 giờ đầu tiên"
+    },
+    {
+      "source": "SIM, যাতায়াত, নগদ টাকা ও নিরাপদে বাসায় পৌঁছানো",
+      "target": "SIM, di chuyển, tiền mặt và về nhà an toàn"
+    },
+    {
+      "source": "ইন্টারনেট",
+      "target": "Internet"
+    },
+    {
+      "source": "Airport Wi‑Fi বা বৈধ SIM/eSIM",
+      "target": "Wi-Fi sân bay hoặc SIM/eSIM hợp lệ"
+    },
+    {
+      "source": "যাতায়াত",
+      "target": "Di chuyển"
+    },
+    {
+      "source": "IC card বা ticket",
+      "target": "Thẻ IC hoặc vé"
+    },
+    {
+      "source": "নগদ",
+      "target": "Tiền mặt"
+    },
+    {
+      "source": "কিছু cash সঙ্গে রাখুন",
+      "target": "Mang theo một ít tiền mặt"
+    },
+    {
+      "source": "ঠিকানা",
+      "target": "Địa chỉ"
+    },
+    {
+      "source": "বাসার ঠিকানা জাপানিতে রাখুন",
+      "target": "Hãy lưu địa chỉ nhà bằng tiếng Nhật"
+    },
+    {
+      "source": "বিল্ডিং নাম, room number, postal code সহ screenshot নিন। শুধু English map pin যথেষ্ট নয়।",
+      "target": "Hãy chụp ảnh màn hình bao gồm tên tòa nhà, số phòng, mã bưu điện. Chỉ dùng pin bản đồ tiếng Anh là chưa đủ."
+    },
+    {
+      "source": "শেষ ট্রেনের সময় দেখুন",
+      "target": "Kiểm tra giờ chuyến tàu cuối cùng"
+    },
+    {
+      "source": "রাতে পৌঁছালে Google Maps-এর last train এবং taxi fare তুলনা করুন।",
+      "target": "Nếu đến nơi vào ban đêm, hãy so sánh thời gian chuyến tàu cuối cùng và cước taxi trên Google Maps."
+    },
+    {
+      "source": "স্কুল/পরিচিত ব্যক্তিকে arrival message দিন",
+      "target": "Gửi tin nhắn thông báo đã đến nơi cho trường học/người quen"
+    },
+    {
+      "source": "আপনি নিরাপদে পৌঁছেছেন এবং কোন সময় বাসায় যাবেন জানিয়ে দিন।",
+      "target": "Hãy thông báo rằng bạn đã đến nơi an toàn và thời gian dự kiến về đến nhà."
+    },
+    {
+      "source": "সিটি অফিসে Address Registration",
+      "target": "Đăng ký địa chỉ tại Văn phòng Thành phố"
+    },
+    {
+      "source": "বাসা ঠিক করার পর ১৪ দিনের মধ্যে মূল কাজ",
+      "target": "Công việc quan trọng nhất trong vòng 14 ngày sau khi ổn định chỗ ở"
+    },
+    {
+      "source": "বাসার ঠিকানা স্থির হওয়ার পর স্থানীয় 市役所（しやくしょ）/区役所（くやくしょ）-এ গিয়ে 転入届（てんにゅうとどけ） বা residence registration করুন।",
+      "target": "Sau khi quyết định được nhà ở, hãy đến 市役所（しやくしょ）/区役所（くやくしょ） (Văn phòng thành phố/quận) địa phương và tiến hành thủ tục 転入届（てんにゅうとどけ） hoặc đăng ký cư trú."
+    },
+    {
+      "source": "সঙ্গে নিন",
+      "target": "Mang theo"
+    },
+    {
+      "source": "কেন লাগবে",
+      "target": "Lý do cần thiết"
+    },
+    {
+      "source": "নোট",
+      "target": "Ghi chú"
+    },
+    {
+      "source": "ঠিকানা কার্ডে লিখতে",
+      "target": "Để viết lên thẻ địa chỉ"
+    },
+    {
+      "source": "Original নিন",
+      "target": "Hãy mang bản gốc"
+    },
+    {
+      "source": "পরিচয়/entry যাচাই",
+      "target": "Xác minh danh tính/nhập cảnh"
+    },
+    {
+      "source": "সবসময় চাইবে না, তবু নিন",
+      "target": "Không phải lúc nào cũng yêu cầu, nhưng hãy cứ mang theo"
+    },
+    {
+      "source": "বাসার পূর্ণ ঠিকানা",
+      "target": "Địa chỉ đầy đủ của nhà"
+    },
+    {
+      "source": "Room number ভুল করবেন না",
+      "target": "Đừng nhầm số phòng"
+    },
+    {
+      "source": "Household তথ্য",
+      "target": "Thông tin hộ gia đình"
+    },
+    {
+      "source": "একসঙ্গে কারা থাকেন",
+      "target": "Những ai sống cùng"
+    },
+    {
+      "source": "পরিবার হলে relationship তথ্য",
+      "target": "Nếu là gia đình thì cần thông tin quan hệ"
+    },
+    {
+      "source": "আগের municipality-এর certificate",
+      "target": "Giấy chứng nhận từ cơ quan hành chính trước đó"
+    },
+    {
+      "source": "Japan-এর ভিতরে move হলে",
+      "target": "Nếu chuyển nhà bên trong Nhật Bản"
+    },
+    {
+      "source": "নতুন আগমন হলে সাধারণত নেই",
+      "target": "Nếu mới đến thì thường không có"
+    },
+    {
+      "source": "কাউন্টারে বলুন",
+      "target": "Nói tại quầy"
+    },
+    {
+      "source": "“নতুন এসেছি, address registration করতে চাই।” নিচের বাক্য দেখান।",
+      "target": "“Tôi mới đến và muốn đăng ký địa chỉ.” Hãy cho xem câu dưới đây."
+    },
+    {
+      "source": "আমি ঠিকানা নিবন্ধন করতে চাই।",
+      "target": "Tôi muốn đăng ký địa chỉ."
+    },
+    {
+      "source": "আমি সদ্য জাপানে এসেছি। প্রয়োজনীয় প্রক্রিয়াগুলো বলবেন।",
+      "target": "Tôi mới đến Nhật Bản. Xin vui lòng hướng dẫn các thủ tục cần thiết."
+    },
+    {
+      "source": "Health Insurance, Pension ও My Number",
+      "target": "Bảo hiểm Y tế, Lương hưu và My Number"
+    },
+    {
+      "source": "কাউন্টারে কোনগুলো জিজ্ঞেস করবেন",
+      "target": "Những điều cần hỏi tại quầy"
+    },
+    {
+      "source": "National Health Insurance সম্পর্কে জিজ্ঞেস করুন",
+      "target": "Hãy hỏi về Bảo hiểm Y tế Quốc gia"
+    },
+    {
+      "source": "আপনার অন্য employee insurance না থাকলে National Health Insurance-এর eligibility ও enrolment সম্পর্কে city office জানাবে।",
+      "target": "Nếu bạn không có bảo hiểm nhân viên khác, văn phòng thành phố sẽ thông báo về tính đủ điều kiện và thủ tục tham gia Bảo hiểm Y tế Quốc gia."
+    },
+    {
+      "source": "National Pension/Student exemption জিজ্ঞেস করুন",
+      "target": "Hãy hỏi về Lương hưu quốc gia/Miễn giảm cho học sinh sinh viên"
+    },
+    {
+      "source": "বয়স ও status অনুযায়ী pension procedure হতে পারে। শিক্ষার্থী হলে 学生納付特例 বা অন্য exemption প্রযোজ্য কি না জিজ্ঞেস করুন।",
+      "target": "Thủ tục lương hưu có thể thay đổi tùy theo độ tuổi và tư cách lưu trú. Nếu là học sinh sinh viên, hãy hỏi xem có được áp dụng 学生納付特例 (Chế độ đặc biệt nộp tiền bảo hiểm cho học sinh sinh viên) hay các hình thức miễn giảm khác không."
+    },
+    {
+      "source": "My Number notice-এর ঠিকানা নিশ্চিত করুন",
+      "target": "Xác nhận địa chỉ trên thông báo My Number"
+    },
+    {
+      "source": "通知書 ডাকযোগে আসতে পারে। Mailbox-এ নিজের নাম লিখুন এবং চিঠি নিয়মিত দেখুন।",
+      "target": "Thông báo có thể được gửi qua đường bưu điện. Hãy viết tên của bạn lên hộp thư và kiểm tra thư từ thường xuyên."
+    },
+    {
+      "source": "সবাইয়ের অবস্থা এক নয়",
+      "target": "Tình huống của mỗi người không giống nhau"
+    },
+    {
+      "source": "স্কুল, চাকরি, পরিবারের insurance ও residence status অনুযায়ী ব্যবস্থা বদলাতে পারে। কাউন্টারের লিখিত নির্দেশনা অনুসরণ করুন।",
+      "target": "Các thủ tục có thể thay đổi tùy thuộc vào trường học, công việc, bảo hiểm của gia đình và tư cách lưu trú. Hãy làm theo hướng dẫn bằng văn bản tại quầy."
+    },
+    {
+      "source": "Bank account, Mobile ও দৈনন্দিন পরিচয়",
+      "target": "Tài khoản ngân hàng, di động và thông tin cá nhân hàng ngày"
+    },
+    {
+      "source": "Registration শেষ হলে পরের বাস্তব কাজ",
+      "target": "Các việc thực tế tiếp theo sau khi hoàn tất đăng ký"
+    },
+    {
+      "source": "জাপানি ফোন নম্বর নিন",
+      "target": "Lấy số điện thoại Nhật Bản"
+    },
+    {
+      "source": "Job application, bank verification ও delivery-এর জন্য নিজের নামে সক্রিয় নম্বর দরকার হয়। Contract বুঝে sign করুন।",
+      "target": "Cần có số điện thoại chính chủ đang hoạt động để nộp đơn xin việc, xác minh ngân hàng và giao hàng. Hãy đọc kỹ hợp đồng trước khi ký."
+    },
+    {
+      "source": "Bank account-এর কাগজ প্রস্তুত করুন",
+      "target": "Chuẩn bị giấy tờ mở tài khoản ngân hàng"
+    },
+    {
+      "source": "Residence Card, student ID, phone number, address, hanko লাগতে পারে। ব্যাংকভেদে requirements আলাদা।",
+      "target": "Có thể cần Thẻ cư trú, thẻ học sinh, số điện thoại, địa chỉ, con dấu (hanko). Yêu cầu có thể khác nhau tùy theo ngân hàng."
+    },
+    {
+      "source": "Mailbox ও nameplate ঠিক করুন",
+      "target": "Chuẩn bị hộp thư và bảng tên"
+    },
+    {
+      "source": "নাম না থাকলে Residence Card বা My Number-এর চিঠি ফেরত যেতে পারে।",
+      "target": "Nếu không có tên, thư từ Thẻ cư trú hoặc My Number có thể bị trả lại."
+    },
+    {
+      "source": "সব deadline calendar-এ রাখুন",
+      "target": "Đưa tất cả hạn chót vào lịch"
+    },
+    {
+      "source": "Residence expiry, school payment, utility bill ও insurance notice-এর reminder দিন।",
+      "target": "Đặt lời nhắc cho hạn chót cư trú, học phí, hóa đơn tiện ích và thông báo bảo hiểm."
+    },
+    {
+      "source": "কাজের জাপানি বাক্য",
+      "target": "Câu tiếng Nhật trong công việc"
+    },
+    {
+      "source": "কাউন্টারে ফোন দেখিয়ে ব্যবহার করতে পারবেন",
+      "target": "Bạn có thể đưa điện thoại ra quầy để sử dụng"
+    },
+    {
+      "source": "এই ফর্মটি কীভাবে লিখব, দেখিয়ে দিন।",
+      "target": "Vui lòng chỉ cho tôi cách điền mẫu đơn này."
+    },
+    {
+      "source": "আমার জাপানি এখনো ভালো নয়। আস্তে বলবেন।",
+      "target": "Tiếng Nhật của tôi vẫn chưa giỏi. Xin hãy nói chậm lại."
+    },
+    {
+      "source": "এরপর আমাকে কী করতে হবে?",
+      "target": "Tôi phải làm gì tiếp theo?"
+    },
+    {
+      "source": "এই ঠিকানায় নিবন্ধন করা যাবে?",
+      "target": "Có thể đăng ký ở địa chỉ này không?"
+    },
+    {
+      "source": "আগমনের Checklist",
+      "target": "Danh sách kiểm tra khi mới đến"
+    },
+    {
+      "source": "একটি শেষ হলে টিক দিন",
+      "target": "Đánh dấu tích khi hoàn thành một mục"
+    },
+    {
+      "source": "Passport, Residence Card ও permission তথ্য মিলিয়েছি",
+      "target": "Đã đối chiếu thông tin Hộ chiếu, Thẻ cư trú và giấy phép"
+    },
+    {
+      "source": "বাসার Japanese address screenshot করেছি",
+      "target": "Đã chụp ảnh màn hình địa chỉ tiếng Nhật của nhà"
+    },
+    {
+      "source": "Address registration-এর জন্য city/ward office গিয়েছি",
+      "target": "Đã đến văn phòng thành phố/quận để đăng ký địa chỉ"
+    },
+    {
+      "source": "Insurance ও pension procedure জিজ্ঞেস করেছি",
+      "target": "Đã hỏi về thủ tục bảo hiểm và lương hưu"
+    },
+    {
+      "source": "Mailbox-এ নাম দিয়েছি",
+      "target": "Đã dán tên lên hộp thư"
+    },
+    {
+      "source": "Phone number ও জরুরি contact save করেছি",
+      "target": "Đã lưu số điện thoại và liên hệ khẩn cấp"
+    },
+    {
+      "source": "সব গুরুত্বপূর্ণ কাগজের backup রেখেছি",
+      "target": "Đã sao lưu tất cả giấy tờ quan trọng"
+    },
+    {
+      "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+      "target": "Nguồn chính thức và đáng tin cậy"
+    },
+    {
+      "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+      "target": "Quy định có thể thay đổi—vui lòng kiểm tra thông tin chính thức trước khi quyết định cuối cùng"
+    },
+    {
+      "source": "বাসা ও জীবন",
+      "target": "Nhà ở và Đời sống"
+    },
+    {
+      "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+      "target": "Hướng dẫn này mang tính chất tham khảo học tập. Đối với các quyết định pháp lý/y tế cá nhân, vui lòng tuân theo hướng dẫn của cơ quan hoặc chuyên gia liên quan."
+    },
+    {
+      "source": "হোম",
+      "target": "Trang chủ"
+    }
+  ]
+}

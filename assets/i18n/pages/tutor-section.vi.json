@@ -1,0 +1,226 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "tutor-section",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "AI জাপানি টিউটর | আপনার নিহোন",
+      "target": "Gia sư tiếng Nhật AI | আপনার নিহোন"
+    },
+    {
+      "source": "AI জাপানি টিউটর",
+      "target": "Gia sư tiếng Nhật AI"
+    },
+    {
+      "source": "সংযোগ যাচাই হচ্ছে",
+      "target": "Đang kiểm tra kết nối"
+    },
+    {
+      "source": "আপনার ব্যক্তিগত শিক্ষক",
+      "target": "Giáo viên cá nhân của bạn"
+    },
+    {
+      "source": "লক্ষ্য অনুযায়ী",
+      "target": "Học tiếng Nhật"
+    },
+    {
+      "source": "জাপানি শিখুন",
+      "target": "theo mục tiêu của bạn"
+    },
+    {
+      "source": "লেভেল ও মোড বেছে নিন—টিউটর সেই অনুযায়ী ভাষা, উদাহরণ ও অনুশীলন সাজাবে।",
+      "target": "Chọn cấp độ và chế độ—gia sư sẽ sắp xếp ngôn ngữ, ví dụ và luyện tập cho phù hợp."
+    },
+    {
+      "source": "আপনার JLPT লেভেল",
+      "target": "Cấp độ JLPT của bạn"
+    },
+    {
+      "source": "কীভাবে শিখবেন",
+      "target": "Cách bạn muốn học"
+    },
+    {
+      "source": "বুঝিয়ে শেখান",
+      "target": "Giải thích"
+    },
+    {
+      "source": "ব্যাকরণ · কানজি · শব্দ",
+      "target": "Ngữ pháp · Kanji · Từ vựng"
+    },
+    {
+      "source": "বাক্য ঠিক করুন",
+      "target": "Sửa câu"
+    },
+    {
+      "source": "ভুল ও natural expression",
+      "target": "Lỗi & biểu cảm tự nhiên"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Hội thoại"
+    },
+    {
+      "source": "এক ধাপ করে role-play",
+      "target": "Nhập vai từng bước"
+    },
+    {
+      "source": "ইন্টারভিউ কোচ",
+      "target": "Huấn luyện viên phỏng vấn"
+    },
+    {
+      "source": "কুইজ প্র্যাকটিস",
+      "target": "Luyện tập trắc nghiệm"
+    },
+    {
+      "source": "একবারে একটি প্রশ্ন",
+      "target": "Một câu hỏi tại một thời điểm"
+    },
+    {
+      "source": "অনুবাদ ও বিশ্লেষণ",
+      "target": "Dịch & Phân tích"
+    },
+    {
+      "source": "পাসওয়ার্ড, পাসপোর্ট নম্বর বা ব্যক্তিগত গোপন তথ্য চ্যাটে দেবেন না।",
+      "target": "Không chia sẻ mật khẩu, số hộ chiếu hoặc thông tin cá nhân nhạy cảm trong khung chat."
+    },
+    {
+      "source": "আজ",
+      "target": "Hôm nay"
+    },
+    {
+      "source": "০",
+      "target": "0"
+    },
+    {
+      "source": "/২০",
+      "target": "/20"
+    },
+    {
+      "source": "লেভেল",
+      "target": "Cấp độ"
+    },
+    {
+      "source": "শেখান",
+      "target": "Dạy"
+    },
+    {
+      "source": "বাক্য ঠিক",
+      "target": "Sửa câu"
+    },
+    {
+      "source": "ইন্টারভিউ",
+      "target": "Phỏng vấn"
+    },
+    {
+      "source": "কুইজ",
+      "target": "Quiz"
+    },
+    {
+      "source": "অনুবাদ",
+      "target": "Dịch"
+    },
+    {
+      "source": "আজ কী শিখতে চান?",
+      "target": "Hôm nay bạn muốn học gì?"
+    },
+    {
+      "source": "জাপানি ব্যাকরণ, শব্দ, কানজি বা যেকোনো বাক্য বাংলায় সহজ করে বুঝিয়ে নিন।",
+      "target": "Nhận giải thích dễ hiểu bằng tiếng Bengal về ngữ pháp, từ vựng, kanji hoặc bất kỳ câu tiếng Nhật nào."
+    },
+    {
+      "source": "বাংলায় ব্যাখ্যা",
+      "target": "Giải thích bằng tiếng Bengal"
+    },
+    {
+      "source": "সঠিক ふりがな",
+      "target": "ふりがな chính xác"
+    },
+    {
+      "source": "Grammar পার্থক্য",
+      "target": "Sự khác biệt ngữ pháp"
+    },
+    {
+      "source": "は আর が কখন ব্যবহার করব?",
+      "target": "Khi nào nên dùng は và が?"
+    },
+    {
+      "source": "বাক্য ভেঙে শিখুন",
+      "target": "Học từng phần câu"
+    },
+    {
+      "source": "Particle ও conjugation বুঝুন",
+      "target": "Hiểu về trợ từ và cách chia động từ"
+    },
+    {
+      "source": "আজকের ৫টি শব্দ",
+      "target": "5 từ vựng của ngày hôm nay"
+    },
+    {
+      "source": "অর্থ, reading ও উদাহরণ",
+      "target": "Ý nghĩa, cách đọc và ví dụ"
+    },
+    {
+      "source": "বাস্তব জাপানি",
+      "target": "Tiếng Nhật thực tế"
+    },
+    {
+      "source": "সহজ করে বলুন",
+      "target": "Nói một cách đơn giản"
+    },
+    {
+      "source": "আরও example",
+      "target": "Thêm ví dụ"
+    },
+    {
+      "source": "ছোট quiz দিন",
+      "target": "Đưa ra bài quiz ngắn"
+    },
+    {
+      "source": "AI ভুল করতে পারে—গুরুত্বপূর্ণ তথ্য যাচাই করুন",
+      "target": "AI có thể mắc lỗi—vui lòng kiểm tra lại thông tin quan trọng"
+    },
+    {
+      "source": "Standard উত্তর",
+      "target": "Câu trả lời chuẩn"
+    },
+    {
+      "source": "হোম",
+      "target": "Trang chủ"
+    },
+    {
+      "source": "AI Tutor সেটিংস",
+      "target": "Cài đặt AI Tutor"
+    },
+    {
+      "source": "উত্তর কতটা বিস্তারিত হবে",
+      "target": "Mức độ chi tiết của câu trả lời"
+    },
+    {
+      "source": "সংক্ষিপ্ত",
+      "target": "Ngắn gọn"
+    },
+    {
+      "source": "বিস্তারিত",
+      "target": "Chi tiết"
+    },
+    {
+      "source": "কথোপকথন ও কুইজ মোডে AI একবারে একটি ধাপ দেবে। অন্য মোডে আপনার নির্বাচিত বিস্তারিত মাত্রা মানবে।",
+      "target": "Ở chế độ hội thoại và đố vui, AI sẽ đưa ra từng bước một. Ở các chế độ khác, mức độ chi tiết bạn chọn sẽ được áp dụng."
+    },
+    {
+      "source": "ইতিহাস মুছুন",
+      "target": "Xóa lịch sử"
+    },
+    {
+      "source": "বাতিল",
+      "target": "Hủy"
+    },
+    {
+      "source": "সংরক্ষণ করুন",
+      "target": "Lưu"
+    }
+  ]
+}

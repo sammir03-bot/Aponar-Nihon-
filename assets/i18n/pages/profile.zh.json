@@ -1,0 +1,210 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "profile",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "জাপানি শেখার পূর্ণাঙ্গ প্ল্যাটফর্ম",
+      "target": "面向所有人的日语学习平台"
+    },
+    {
+      "source": "হোম",
+      "target": "首页"
+    },
+    {
+      "source": "অ্যাডমিন",
+      "target": "管理员"
+    },
+    {
+      "source": "লগআউট",
+      "target": "退出登录"
+    },
+    {
+      "source": "ইমেইল ভেরিফাই হয়নি",
+      "target": "电子邮件未验证"
+    },
+    {
+      "source": "প্রয়োজনীয় তথ্য পূরণ করলে 100% হবে",
+      "target": "填写必要信息后将达到 100%"
+    },
+    {
+      "source": "নাম",
+      "target": "姓名"
+    },
+    {
+      "source": "স্কুল",
+      "target": "学校"
+    },
+    {
+      "source": "লোকেশন",
+      "target": "所在地"
+    },
+    {
+      "source": "লক্ষ্য",
+      "target": "目标"
+    },
+    {
+      "source": "জন্মতারিখ",
+      "target": "出生日期"
+    },
+    {
+      "source": "প্রোফাইল আপডেট",
+      "target": "更新个人资料"
+    },
+    {
+      "source": "তথ্যগুলো ঠিক করে নিরাপদভাবে Save করুন",
+      "target": "请核对信息并安全保存"
+    },
+    {
+      "source": "ব্যক্তিগত তথ্য",
+      "target": "个人信息"
+    },
+    {
+      "source": "আপনার মূল পরিচিতি",
+      "target": "您的基本简介"
+    },
+    {
+      "source": "পুরো নাম",
+      "target": "姓名"
+    },
+    {
+      "source": "লিঙ্গ",
+      "target": "性别"
+    },
+    {
+      "source": "নির্বাচন করুন",
+      "target": "请选择"
+    },
+    {
+      "source": "পুরুষ",
+      "target": "男"
+    },
+    {
+      "source": "নারী",
+      "target": "女"
+    },
+    {
+      "source": "বলতে চাই না",
+      "target": "不愿透露"
+    },
+    {
+      "source": "জাতীয়তা",
+      "target": "国籍"
+    },
+    {
+      "source": "পড়াশোনা ও JLPT",
+      "target": "学习与 JLPT"
+    },
+    {
+      "source": "আপনার স্কুল ও শেখার লক্ষ্য",
+      "target": "您的学校与学习目标"
+    },
+    {
+      "source": "স্কুল / প্রতিষ্ঠান",
+      "target": "学校 / 机构"
+    },
+    {
+      "source": "দৈনিক পড়ার সময়",
+      "target": "每日学习时间"
+    },
+    {
+      "source": "15 মিনিট",
+      "target": "15分钟"
+    },
+    {
+      "source": "30 মিনিট",
+      "target": "30分钟"
+    },
+    {
+      "source": "45 মিনিট",
+      "target": "45分钟"
+    },
+    {
+      "source": "1 ঘণ্টা",
+      "target": "1小时"
+    },
+    {
+      "source": "1.5 ঘণ্টা",
+      "target": "1.5小时"
+    },
+    {
+      "source": "2 ঘণ্টা",
+      "target": "2小时"
+    },
+    {
+      "source": "যোগাযোগ ও অবস্থান",
+      "target": "联系与位置"
+    },
+    {
+      "source": "বর্তমান যোগাযোগের তথ্য",
+      "target": "当前联系信息"
+    },
+    {
+      "source": "বর্তমান City",
+      "target": "当前城市"
+    },
+    {
+      "source": "ফোন নম্বর",
+      "target": "电话号码"
+    },
+    {
+      "source": "ঐচ্ছিক",
+      "target": "可选"
+    },
+    {
+      "source": "নিজের সম্পর্কে",
+      "target": "关于自己"
+    },
+    {
+      "source": "সংক্ষিপ্ত learning profile",
+      "target": "简短的学习简介"
+    },
+    {
+      "source": "বাতিল",
+      "target": "取消"
+    },
+    {
+      "source": "নিজের ছবি যোগ বা পরিবর্তন করুন",
+      "target": "添加或更改个人照片"
+    },
+    {
+      "source": "ছবি বেছে নিন",
+      "target": "选择照片"
+    },
+    {
+      "source": "Account photo ব্যবহার",
+      "target": "使用账号头像"
+    },
+    {
+      "source": "JPG, PNG বা WebP · সর্বোচ্চ 2 MB",
+      "target": "JPG、PNG 或 WebP · 最大 2 MB"
+    },
+    {
+      "source": "ইমেইল",
+      "target": "电子邮箱"
+    },
+    {
+      "source": "বাংলা",
+      "target": "孟加拉语"
+    },
+    {
+      "source": "ভাষা Home থেকে পরিবর্তন করা যায়",
+      "target": "可从主页更改语言"
+    },
+    {
+      "source": "Profile load হচ্ছে…",
+      "target": "个人资料加载中…"
+    },
+    {
+      "source": "অ্যাকাউন্ট মুছলে আপনার profile ও learning data স্থায়ীভাবে মুছে যেতে পারে।",
+      "target": "删除账号可能会永久删除您的个人资料和学习数据。"
+    },
+    {
+      "source": "Delete options খুলুন",
+      "target": "打开 Delete options"
+    }
+  ]
+}

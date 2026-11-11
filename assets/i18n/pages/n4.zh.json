@@ -1,0 +1,282 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n4",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "JLPT N4 Complete Learning Center | আপনার নিহোন",
+      "target": "JLPT N4 完整学习中心 | আপনার নিহোন"
+    },
+    {
+      "source": "হোম",
+      "target": "首页"
+    },
+    {
+      "source": "N5 ভিত থেকে real-life Japanese",
+      "target": "从 N5 基础迈向真实的日语 (real-life Japanese)"
+    },
+    {
+      "source": "বাক্য বড় করুন,",
+      "target": "扩充句子，"
+    },
+    {
+      "source": "বোঝার ক্ষমতা বাড়ান",
+      "target": "提升理解能力"
+    },
+    {
+      "source": "Vocabulary Lesson 26–50, ২১০টি Kanji, conditional, passive, causative, keigo, Reading, category Quiz ও ১০টি Full Mock—প্রতিটি skill-এর আলাদা app এবং বাস্তব saved progress।",
+      "target": "词汇课 26–50、210 个 Kanji、条件形、被动形、使役形、敬语、阅读、分类测验及 10 套完整模拟考试——每个技能拥有独立的 App 并可保存实时进度。"
+    },
+    {
+      "source": "N4 Lesson শুরু করুন",
+      "target": "开始 N4 课程"
+    },
+    {
+      "source": "আপনার N4 অগ্রগতি",
+      "target": "您的 N4 进度"
+    },
+    {
+      "source": "সংরক্ষিত lesson progress দেখা হচ্ছে…",
+      "target": "正在加载已保存的课程进度…"
+    },
+    {
+      "source": "২৫ Lesson",
+      "target": "25 节课"
+    },
+    {
+      "source": "২১০ Kanji",
+      "target": "210 个汉字"
+    },
+    {
+      "source": "২৫ Grammar",
+      "target": "25 个语法"
+    },
+    {
+      "source": "১০ Full Mock",
+      "target": "10 套完整模拟考"
+    },
+    {
+      "source": "Lesson থেকে exam—একটি পরিষ্কার path",
+      "target": "从课程到考试——清晰的学习路径"
+    },
+    {
+      "source": "প্রতিটি card তার নিজস্ব full learning page খুলবে। Vocabulary, Grammar ও Kanji subpage-এ যা complete করবেন, এই dashboard সেটিই গণনা করবে।",
+      "target": "每个卡片都会打开其专属的完整学习页面。您在词汇、语法和汉字子页面中完成的内容，此仪表盘都会进行统计。"
+    },
+    {
+      "source": "সব রিসোর্স",
+      "target": "全部资源"
+    },
+    {
+      "source": "শব্দ ও কানজি",
+      "target": "词汇与汉字"
+    },
+    {
+      "source": "গ্রামার",
+      "target": "语法"
+    },
+    {
+      "source": "অনুশীলন",
+      "target": "练习"
+    },
+    {
+      "source": "কোনো রিসোর্স পাওয়া যায়নি। অন্য শব্দ লিখুন বা সব রিসোর্স বেছে নিন।",
+      "target": "未找到相关资源。请输入其他关键词或选择全部资源。"
+    },
+    {
+      "source": "0/25 সম্পন্ন",
+      "target": "0/25 已完成"
+    },
+    {
+      "source": "বাংলা অর্থ, natural usage, দ্রুত search, lesson filter এবং continue learning-সহ পূর্ণাঙ্গ directory।",
+      "target": "包含中文释义、自然用法、快速搜索、课程筛选和继续学习功能的完整目录。"
+    },
+    {
+      "source": "Vocabulary খুলুন",
+      "target": "打开词汇表"
+    },
+    {
+      "source": "0/210 সম্পন্ন",
+      "target": "0/210 已完成"
+    },
+    {
+      "source": "২১০টি N4 Kanji",
+      "target": "210 个 N4 汉字"
+    },
+    {
+      "source": "Flip card, contextual reading, writing trace, quiz ও learned tracker দিয়ে পরীক্ষা এবং বাস্তব ব্যবহার একসঙ্গে।",
+      "target": "通过翻转卡片、语境阅读、书写轨迹、测验和已学追踪器，将考试与实际应用完美结合。"
+    },
+    {
+      "source": "Kanji Lab খুলুন",
+      "target": "打开汉字实验室 (Kanji Lab)"
+    },
+    {
+      "source": "Conditional থেকে keigo—formula, nuance, বাংলা ব্যাখ্যা, lesson search ও completion tracker।",
+      "target": "从条件形到敬语——公式、语境、中文解析、课程搜索和完成度追踪器。"
+    },
+    {
+      "source": "Grammar path খুলুন",
+      "target": "打开语法路径"
+    },
+    {
+      "source": "শুরু হয়নি",
+      "target": "未开始"
+    },
+    {
+      "source": "Bunka II · বইয়ের ক্রমে গ্রামার",
+      "target": "Bunka II · 按课本顺序的语法"
+    },
+    {
+      "source": "লেসন ১৯–৩৪ · ৮০ বিষয় · বাংলা ব্যাখ্যা ও ফুরিগানা",
+      "target": "第 19–34 课 · 80 个主题 · 中文解析与假名注音"
+    },
+    {
+      "source": "১৬ লেসন",
+      "target": "16 节课"
+    },
+    {
+      "source": "৮০ বিষয়",
+      "target": "80 个主题"
+    },
+    {
+      "source": "ফুরিগানা",
+      "target": "假名注音"
+    },
+    {
+      "source": "পড়ুন",
+      "target": "阅读"
+    },
+    {
+      "source": "Lesson 25–50 PDF, reading method, timed routine এবং মূল বক্তব্য ধরার checklist—একটি dedicated page-এ।",
+      "target": "第 25–50 课 PDF、阅读方法、定时常规练习以及抓取核心要点的检查清单——尽在专属页面。"
+    },
+    {
+      "source": "Reading Center খুলুন",
+      "target": "打开阅读中心 (Reading Center)"
+    },
+    {
+      "source": "Vocabulary, Kanji, Grammar ও Reading-এর ১০টি করে part; উত্তরেই বাংলা explanation ও auto-save।",
+      "target": "词汇、汉字、语法和阅读各 10 个部分；答案附带中文解析并自动保存。"
+    },
+    {
+      "source": "বাংলা Review",
+      "target": "中文复习"
+    },
+    {
+      "source": "N4 Quiz দিন",
+      "target": "参加 N4 测验"
+    },
+    {
+      "source": "Vocabulary, Grammar/Reading ও Listening—timer, resume, marksheet এবং ভুলের বাংলা review-সহ ১০টি test।",
+      "target": "词汇、语法/阅读和听力——包含计时器、断点续考、成绩单以及错题中文解析的 10 套测试。"
+    },
+    {
+      "source": "Mock Test খুলুন",
+      "target": "打开模拟测试"
+    },
+    {
+      "source": "দুর্বল জায়গায় সরাসরি যান",
+      "target": "直接前往薄弱环节"
+    },
+    {
+      "source": "আজকের N4 Quiz",
+      "target": "今日 N4 测验"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "实际对话"
+    },
+    {
+      "source": "জাপানে কাজে লাগবে",
+      "target": "在日本工作时派上用场"
+    },
+    {
+      "source": "দুর্বল base revise",
+      "target": "复习薄弱基础"
+    },
+    {
+      "source": "Sentence থেকে comprehension",
+      "target": "从句子到阅读理解"
+    },
+    {
+      "source": "N4-এ শুধু rule জানা যথেষ্ট নয়—connected sentence, register ও reading speed একসঙ্গে গড়ুন।",
+      "target": "在 N4 阶段，仅掌握语法规则是不够的——请同时培养长句连接能力、语体意识和阅读速度。"
+    },
+    {
+      "source": "Particles, basic conjugation ও N5 vocabulary দুর্বল হলে আগে দ্রুত revise করুন।",
+      "target": "如果助词、基本变形和 N5 词汇较弱，请先快速复习。"
+    },
+    {
+      "source": "একই দিনে একটি Vocabulary এবং একটি Grammar lesson complete করুন।",
+      "target": "同一天内完成一个词汇课和一个语法课。"
+    },
+    {
+      "source": "একক Kanji নয়—তার common শব্দ দিয়ে reading ও অর্থ recall করুন।",
+      "target": "不要只记单个汉字——通过常用词来回忆其读音和意思。"
+    },
+    {
+      "source": "Category quiz-এর ভুল ঠিক করে weekly N4 mock-এ বসুন।",
+      "target": "纠正分类测验中的错题，然后参加每周的 N4 模拟测试。"
+    },
+    {
+      "source": "এই সপ্তাহের N4 plan",
+      "target": "本周的 N4 学习计划"
+    },
+    {
+      "source": "ছোট লক্ষ্য tick করলে continuity রাখা সহজ হবে।",
+      "target": "打勾小目标更容易保持连惯性。"
+    },
+    {
+      "source": "0/6 শেষ",
+      "target": "已完成 0/6"
+    },
+    {
+      "source": "২টি Vocabulary lesson",
+      "target": "2 个词汇课"
+    },
+    {
+      "source": "২০টি Kanji recall",
+      "target": "回忆 20 个汉字"
+    },
+    {
+      "source": "২টি Grammar pattern",
+      "target": "2 个语法句型"
+    },
+    {
+      "source": "২টি timed reading",
+      "target": "2 次限时阅读"
+    },
+    {
+      "source": "২টি Category quiz",
+      "target": "2 个分类测验"
+    },
+    {
+      "source": "Similar grammar, sentence correction বা role-play—N4 level সেট করেই Tutor খুলবে।",
+      "target": "相似语法、病句修正或角色扮演——家教将直接针对 N4 水平进行设置。"
+    },
+    {
+      "source": "N4 Coach খুলুন",
+      "target": "打开 N4 教练"
+    },
+    {
+      "source": "পরের ধাপ N3",
+      "target": "下一步：N3"
+    },
+    {
+      "source": "সব Quiz",
+      "target": "所有测验"
+    },
+    {
+      "source": "আপনার নিহোন · বাংলায় জাপানি শেখার পূর্ণাঙ্গ পথ",
+      "target": "আপনার নিহোন · 用孟加拉语系统学习日语的完整路径"
+    },
+    {
+      "source": "✓ Progress সংরক্ষণ হয়েছে",
+      "target": "✓ 进度已保存"
+    }
+  ]
+}

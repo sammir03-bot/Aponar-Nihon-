@@ -1,0 +1,502 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "my",
+  "page": "ssw",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "SSW — Specified Skilled Worker সম্পূর্ণ গাইড | আপনার নিহোন",
+      "target": "SSW (သတ်မှတ်ထားသော ကျွမ်းကျင်လုပ်သား) အပြည့်အစုံ လမ်းညွှန် | আপনার নিহোন"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "ပင်မ အကြောင်းအရာသို့ သွားရန်"
+    },
+    {
+      "source": "SSW গাইড",
+      "target": "SSW လမ်းညွှန်"
+    },
+    {
+      "source": "হোম",
+      "target": "ပင်မစာမျက်နှာ"
+    },
+    {
+      "source": "জাপানের SSW তথ্য — এক জায়গায়, সহজ ও যাচাইযোগ্য",
+      "target": "ဂျပန်နိုင်ငံ၏ SSW အချက်အလက်များ — တစ်နေရာတည်းတွင်၊ ရိုးရှင်းပြီး စစ်ဆေးနိုင်သော"
+    },
+    {
+      "source": "SSW(i), SSW(ii), কাজের field, পরীক্ষা, চাকরি, ডকুমেন্টস ও ভিসা প্রক্রিয়া—সবকিছুর একটি আপডেটেড বাংলা গাইড।",
+      "target": "SSW(i)၊ SSW(ii)၊ လုပ်ငန်းနယ်ပယ်၊ စာမေးပွဲ၊ အလုပ်အကိုင်၊ စာရွက်စာတမ်းနှင့် ဗီဇာလုပ်ထုံးလုပ်နည်းများ — အားလုံးပါဝင်သည့် နောက်ဆုံးရ ဘင်္ဂါလီဘာသာ လမ်းညွှန်။"
+    },
+    {
+      "source": "১৯টি field দেখুন",
+      "target": "နယ်ပယ် 19 ခုကို ကြည့်ရန်"
+    },
+    {
+      "source": "প্রক্রিয়া দেখুন",
+      "target": "လုပ်ထုံးလုပ်နည်းကို ကြည့်ရန်"
+    },
+    {
+      "source": "১৯টি",
+      "target": "19 ခု"
+    },
+    {
+      "source": "১১টি",
+      "target": "11 ခု"
+    },
+    {
+      "source": "৫ বছর",
+      "target": "၅ နှစ်"
+    },
+    {
+      "source": "SSW(i)-এর মোট upper limit",
+      "target": "SSW(i) ၏ စုစုပေါင်း အပေါ်ပိုင်း ကန့်သတ်ချက် (upper limit)"
+    },
+    {
+      "source": "তথ্য যাচাই: ৪ সেপ্টেম্বর ২০২৬।",
+      "target": "အချက်အလက် စစ်ဆေးသည့်ရက် - 2026 ခုနှစ် စက်တင်ဘာလ 4 ရက်။"
+    },
+    {
+      "source": "Immigration Services Agency-এর বর্তমান overview SSW(i)-এর ১৯টি field এবং SSW(ii)-এর ১১টি field দেখায়। নতুন কিছু field-এর বিস্তারিত এখনো পর্যায়ক্রমে প্রকাশ হচ্ছে। আবেদন বা পরীক্ষা বুক করার আগে official source-এ latest status মিলিয়ে নিন।",
+      "target": "Immigration Services Agency ၏ လက်ရှိ ခြုံငုံသုံးသပ်ချက်အရ SSW(i) ၏ နེယ်ပယ် 19 ခုနှင့် SSW(ii) ၏ နယ်ပယ် 11 ခုကို ပြသထားသည်။ အချို့သော နယ်ပယ်အသစ်များ၏ အသေးစိတ်အချက်အလက်များကို အဆင့်လိုက် ဆက်လက်ထုတ်ပြန်နေဆဲ ဖြစ်သည်။ လျှောက်ထားရန် သို့မဟုတ် စာမေးပွဲစာရင်းပေးရန်အတွက် တရားဝင်ရင်းမြစ် (official source) တွင် နောက်ဆုံးပေါ်အခြေအနေကို ဦးစွာစစ်ဆေးပါ။"
+    },
+    {
+      "source": "Food Service সতর্কতা:",
+      "target": "Food Service သတိပေးချက် -"
+    },
+    {
+      "source": "বর্তমান official SSW page-এ Food Service field-এর জন্য “new applications” সাময়িকভাবে গ্রহণ করা হচ্ছে না বলে দেখানো হয়েছে। এই status পরিবর্তন হতে পারে, তাই আবেদন করার আগে official notice দেখুন।",
+      "target": "လက်ရှိ တရားဝင် SSW စာမျက်နှာတွင် Food Service နယ်ပယ်အတွက် “new applications” (လျှောက်လွှာအသစ်များ) ကို ယာယီလက်မခံကြောင်း ပြသထားသည်။ ဤအခြေအနေသည် ပြောင်းလဲနိုင်သဖြင့် လျှောက်ထားမည့်မတိုင်မီ တရားဝင်အသိပေးချက်ကို ကြည့်ရှုပါ။"
+    },
+    {
+      "source": "SSW(i) এবং SSW(ii)",
+      "target": "SSW(i) နှင့် SSW(ii)"
+    },
+    {
+      "source": "দুই status-এর stay, family এবং skill requirement আলাদা।",
+      "target": "အဆင့်အတန်း (status) နှစ်ခု၏ နေထိုင်ခွင့်၊ မိသားစုနှင့် ကျွမ်းကျင်မှု လိုအပ်ချက်များ ကွာခြားပါသည်။"
+    },
+    {
+      "source": "নির্দিষ্ট field-এ skilled work",
+      "target": "သတ်မှတ်ထားသော နယ်ပယ်တွင် ကျွမ်းကျင်လုပ်ကိုင်ခြင်း"
+    },
+    {
+      "source": "জাপানে মোট থাকার upper limit সর্বোচ্চ ৫ বছর।",
+      "target": "ဂျပန်နိုင်ငံတွင် စုစုပေါင်း နေထိုင်နိုင်သည့် အမြင့်ဆုံးကန့်သတ်ချက်မှာ အများဆုံး ၅ နှစ် ဖြစ်သည်။"
+    },
+    {
+      "source": "Family accompaniment অনুমোদিত নয়।",
+      "target": "မိသားစု ခေါ်ဆောင်ခွင့် မရှိပါ။"
+    },
+    {
+      "source": "Japanese worker-এর সমপর্যায়ের remuneration-এর নিয়ম আছে।",
+      "target": "ဂျပန်လုပ်သားများနှင့် တန်းတူ လုပ်ခလစာရရှိရန် စည်းမျဉ်းများ ရှိသည်။"
+    },
+    {
+      "source": "নির্ধারিত support company বা registered support organization থেকে পাওয়া যায়।",
+      "target": "သတ်မှတ်ထားသော ပံ့ပိုးကူညီရေး ကုမ္ပဏီ သို့မဟုတ် မှတ်ပုံတင်ထားသော ပံ့ပိုးကူညီရေး အဖွဲ့အစည်းထံမှ ရရှိနိုင်ပါသည်။"
+    },
+    {
+      "source": "উচ্চতর দক্ষতার status",
+      "target": "ပိုမိုမြင့်မားသော ကျွမ်းကျင်မှု အဆင့်အတန်း"
+    },
+    {
+      "source": "থাকার মেয়াদে নির্দিষ্ট upper limit নেই; renewal করা যায়।",
+      "target": "နေထိုင်ခွင့်ကာလအတွက် တိကျသော အမြင့်ဆုံးကန့်သတ်ချက်မရှိပါ၊ သက်တမ်းတိုးနိုင်သည်။"
+    },
+    {
+      "source": "প্রযোজ্য immigration requirement পূরণ করলে family আনার সুযোগ আছে।",
+      "target": "သက်ဆိုင်ရာ လူဝင်မှုကြီးကြပ်ရေး လိုအပ်ချက်များကို ဖြည့်ဆည်းပါက မိသားစုခေါ်ဆောင်လာနိုင်သည့် အခွင့်အလမ်းရှိသည်။"
+    },
+    {
+      "source": "বর্তমানে ১১টি field SSW(ii)-এর আওতায়।",
+      "target": "လက်ရှိတွင် နယ်ပယ် 11 ခုသည် SSW(ii) ၏ အធုံးအောက်တွင် ရှိသည်။"
+    },
+    {
+      "source": "Advanced skill ও experience requirement field অনুযায়ী আলাদা।",
+      "target": "အဆင့်မြင့် ကျွမ်းကျင်မှုနှင့် အတွေ့အကြုံ လိုအပ်ချက်များသည် နယ်ပယ်အလိုက် ကွာခြားပါသည်။"
+    },
+    {
+      "source": "বর্তমান ১১টি SSW(ii) field",
+      "target": "လက်ရှိ SSW(ii) နယ်ပယ် 11 ခု"
+    },
+    {
+      "source": "Building Cleaning, Construction, Industrial Product Manufacturing, Shipbuilding & Ship Machinery, Automobile Repair & Maintenance, Aviation, Accommodation, Agriculture, Fishery & Aquaculture, Food & Beverage Manufacturing এবং Food Service।",
+      "target": "Building Cleaning, Construction, Industrial Product Manufacturing, Shipbuilding & Ship Machinery, Automobile Repair & Maintenance, Aviation, Accommodation, Agriculture, Fishery & Aquaculture, Food & Beverage Manufacturing နှင့် Food Service။"
+    },
+    {
+      "source": "SSW যাওয়ার সাধারণ flow",
+      "target": "SSW ဖြင့် သွားရောက်ရန် အထွေထွေ အဆင့်ဆင့် လုပ်ဆောင်ပုံ"
+    },
+    {
+      "source": "দেশ, field এবং আপনার বর্তমান residence status অনুযায়ী কিছু ধাপ বদলাতে পারে।",
+      "target": "နိုင်ငံ၊ နယ်ပယ်နှင့် သင်၏ လက်ရှိ နေထိုင်ခွင့်အခြေအနေပေါ် မူတည်၍ အချို့သောအဆင့်များ ကွာခြားနိုင်ပါသည်။"
+    },
+    {
+      "source": "Field বেছে নিন",
+      "target": "နယ်ပယ်ကို ရွေးချယ်ပါ"
+    },
+    {
+      "source": "কাজের ধরন, eligibility এবং current intake status দেখুন।",
+      "target": "အလုပ်အကိုင်အမျိုးအစား၊ အရည်အချင်းပြည့်မီမှုနှင့် လက်ရှိ လူခေါ်ယူမှု အခြေအနေများကို ကြည့်ရှုပါ။"
+    },
+    {
+      "source": "Field অনুযায়ী প্রয়োজনীয় Japanese test ও skill test সম্পন্ন করুন।",
+      "target": "နယ်ပယ်အလိုက် လိုအပ်သော ဂျပန်စာမေးပွဲနှင့် ကျွမ်းကျင်မှု စာမေးပွဲများကို ဖြေဆိုအောင်မြင်ပါ။"
+    },
+    {
+      "source": "চাকরি/contract",
+      "target": "အလုပ်အကိုင် / စာချုပ်ချုပ်ဆိုခြင်း"
+    },
+    {
+      "source": "Company-এর সাথে employment contract final করুন।",
+      "target": "ကုမ္ပဏီနှင့် အလုပ်ခန့်မှုစာချုပ် (employment contract) ကို အပြီးသတ်ပါ။"
+    },
+    {
+      "source": "COE বা status-of-residence procedure সম্পন্ন করুন।",
+      "target": "COE သို့မဟုတ် နေထိုင်ခွင့်အဆင့်အတန်း လုပ်ထုံးလုပ်နည်းကို ပြီးမြောက်အောင် လုပ်ဆောင်ပါ။"
+    },
+    {
+      "source": "বিদেশ থেকে গেলে embassy/consulate-এর visa procedure অনুসরণ করুন।",
+      "target": "နိုင်ငံရပ်ခြားမှ သွားရောက်မည်ဆိုပါက သံရုံး/ကောင်סစ်ဝန်ရုံး၏ ဗီဇာလုပ်ထုံးလုပ်နည်းများကို လိုက်နာပါ။"
+    },
+    {
+      "source": "SSW(i)-এর ১৯টি কাজের field",
+      "target": "SSW(i) ၏ လုပ်ငန်းနယ်ပယ် 19 ခု"
+    },
+    {
+      "source": "Search বা filter ব্যবহার করে দ্রুত field খুঁজুন।",
+      "target": "Search သို့မဟုတ် filter ကို အသုံးပြု၍ နယ်ပယ်များကို အမြန်ရှာဖွေပါ။"
+    },
+    {
+      "source": "সব",
+      "target": "အားလုံး"
+    },
+    {
+      "source": "বিদ্যমান ১৬",
+      "target": "ရှိပြီးသား 16"
+    },
+    {
+      "source": "নতুন ৩",
+      "target": "အသစ် 3"
+    },
+    {
+      "source": "নার্সিং কেয়ার · 介護",
+      "target": "သူနာပြုစောင့်ရှောက်မှု · 介護"
+    },
+    {
+      "source": "শারীরিক সহায়তা ও দৈনন্দিন জীবন support।",
+      "target": "ကိုယ်လက်လှုပ်ရှားမှု အကူအညီနှင့် နေ့စဉ်လူနေမှုဘဝ support။"
+    },
+    {
+      "source": "বিল্ডিং ক্লিনিং",
+      "target": "အဆောက်အဦ သန့်ရှင်းရေး"
+    },
+    {
+      "source": "বিল্ডিংয়ের ভেতরের cleaning ও maintenance কাজ।",
+      "target": "အဆောက်အဦအတွင်းပိုင်း cleaning နှင့် maintenance လုပ်ငန်းများ။"
+    },
+    {
+      "source": "কনস্ট্রাকশন · 建設",
+      "target": "ဆောက်လုပ်ရေး · 建設"
+    },
+    {
+      "source": "বাড়ি, ভবন ও অবকাঠামো নির্মাণ।",
+      "target": "အိမ်၊ အဆောက်အအုံနှင့် အခြေခံအဆောက်အအုံ ဆောက်လုပ်ခြင်း။"
+    },
+    {
+      "source": "শিল্পপণ্য, parts ও related manufacturing।",
+      "target": "စက်မှုကုန်ပစ္စည်းများ၊ parts နှင့် related manufacturing။"
+    },
+    {
+      "source": "জাহাজ নির্মাণ ও সংশ্লিষ্ট machinery।",
+      "target": "သင်္ဘောတည်ဆောက်ရေးနှင့် သက်ဆိုင်ရာ machinery။"
+    },
+    {
+      "source": "গাড়ি inspection, repair ও maintenance।",
+      "target": "မော်တော်ကား inspection၊ repair နှင့် maintenance။"
+    },
+    {
+      "source": "Airport ground handling ও aircraft maintenance-এর নির্দিষ্ট কাজ।",
+      "target": "Airport ground handling နှင့် aircraft maintenance ၏ သတ်မှတ်ထားသော လုပ်ငန်းများ။"
+    },
+    {
+      "source": "Hotel reception ও guest service।",
+      "target": "Hotel reception နှင့် guest service။"
+    },
+    {
+      "source": "নির্ধারিত শর্তে truck, taxi ও bus driving-related work।",
+      "target": "သတ်မှတ်ထားသော စည်းကမ်းချက်များနှင့်အညီ truck၊ taxi နှင့် bus driving-related work။"
+    },
+    {
+      "source": "Railway maintenance ও operation-এর নির্দিষ্ট কাজ।",
+      "target": "Railway maintenance နှင့် operation ၏ သတ်မှတ်ထားသော လုပ်ငန်းများ။"
+    },
+    {
+      "source": "ফসল উৎপাদন, harvesting ও livestock-related কাজ।",
+      "target": "သီးနှံထုတ်လုပ်မှု၊ harvesting နှင့် livestock-related လုပ်ငန်းများ။"
+    },
+    {
+      "source": "মাছ ধরা ও aquaculture।",
+      "target": "ငါးဖမ်းခြင်းနှင့် aquaculture။"
+    },
+    {
+      "source": "খাদ্য প্রস্তুত ও processing।",
+      "target": "အစားအစာ ထုတ်လုပ်ခြင်းနှင့် processing။"
+    },
+    {
+      "source": "Restaurant customer service ও food service।",
+      "target": "Restaurant customer service နှင့် food service။"
+    },
+    {
+      "source": "Current official notice অনুযায়ী নতুন আবেদন সাময়িকভাবে বন্ধ—latest status check করুন।",
+      "target": "Current official notice အရ အသစ်လျှောက်ထားမှုများကို ယာယီပိတ်ထားပါသည်—latest status ကို စစ်ဆေးပါ။"
+    },
+    {
+      "source": "Tree planting ও forest management।",
+      "target": "သစ်ပင်စိုက်ပျိုးခြင်းနှင့် forest management။"
+    },
+    {
+      "source": "Lumber ও wood processing।",
+      "target": "သစ်နှင့် wood processing။"
+    },
+    {
+      "source": "Waste processing plant-এ recycling ও proper disposal। নতুন field; intake/details official notice-এ যাচাই করুন।",
+      "target": "Waste processing plant တွင် recycling နှင့် proper disposal။ field အသစ်ဖြစ်သည်၊ intake/details ကို official notice တွင် စစ်ဆေးပါ။"
+    },
+    {
+      "source": "Hotel/হাসপাতালের linen collection, laundering ও related work। নতুন field; latest details official source-এ দেখুন।",
+      "target": "Hotel/ဆေးရုံ linen collection၊ laundering နှင့် related work။ field အသစ်ဖြစ်သည်၊ latest details ကို official source တွင် ကြည့်ပါ။"
+    },
+    {
+      "source": "Warehouse receiving, shipping ও storage। নতুন field; intake/details official notice-এ যাচাই করুন।",
+      "target": "Warehouse receiving၊ shipping နှင့် storage။ field အသစ်ဖြစ်သည်၊ intake/details ကို official notice တွင် စစ်ဆေးပါ။"
+    },
+    {
+      "source": "Language ও skill test",
+      "target": "ဘာသာစကားနှင့် ကျွမ်းကျင်မှု စာမေးပွဲ"
+    },
+    {
+      "source": "সব field-এর requirement এক নয়—নিজের field-এর official test page অবশ্যই দেখুন।",
+      "target": "field အားလုံး၏ requirement သည် တူညီသည်မဟုတ်ပါ—သင့် field ၏ official test page ကို မဖြစ်မနေ ကြည့်ရှုပါ။"
+    },
+    {
+      "source": "সাধারণ requirement",
+      "target": "အထွေထွေ requirement"
+    },
+    {
+      "source": "অনেক SSW(i) field-এ JFT-Basic বা JLPT N4-or-higher ব্যবহার করা হয়। তবে কিছু field/occupation-এ higher বা additional language requirement আছে।",
+      "target": "SSW(i) field များစွာတွင် JFT-Basic သို့မဟုတ် JLPT N4-or-higher ကို အသုံးပြုကြသည်။ သို့သော် အချို့သော field/occupation များတွင် higher သို့မဟုတ် additional language requirement ရှိသည်။"
+    },
+    {
+      "source": "নির্বাচিত field-এর skill assessment সাধারণত প্রয়োজন হয়, যদি কোনো official exemption প্রযোজ্য না হয়।",
+      "target": "ኦဖစ်ရှယ် အထူးကင်းလွတ်ခွင့် (exemption) တစ်စုံတစ်ရာ အကျုံးဝင်ခြင်းမရှိပါက ရွေးချယ်ထားသော field ၏ skill assessment သည် များသောအားဖြင့် လိုအပ်ပါသည်။"
+    },
+    {
+      "source": "অতিরিক্ত requirement",
+      "target": "ထပ်ဆောင်း requirement"
+    },
+    {
+      "source": "Nursing care-এ অতিরিক্ত Japanese test আছে; automobile transportation-এর কিছু occupation-এ language, driving licence ও training requirement আলাদা।",
+      "target": "Nursing care တွင် ထပ်ဆောင်း Japanese test ရှိသည်၊ automobile transportation ၏ အချို့ occupation များတွင် language၊ driving licence နှင့် training requirement များ ကွာခြားပါသည်။"
+    },
+    {
+      "source": "schedule নিয়মিত বদলায়। তাই কোনো দেশ বা কেন্দ্রকে স্থায়ীভাবে “আছে/নেই” ধরে না নিয়ে official Test Information page থেকে live schedule দেখুন।",
+      "target": "schedule သည် ပုံမှန်ပြောင်းလဲနေပါသည်။ ထို့ကြောင့် မည်သည့်နိုင်ငံ သို့မဟုတ် စင်တာကိုမဆို အမြဲတမ်း “ရှိသည်/မရှိသည်” ဟု ယူဆမနေဘဲ official Test Information page မှ live schedule ကို ကြည့်ရှုပါ။"
+    },
+    {
+      "source": "ডকুমেন্ট checklist",
+      "target": "စာရွက်စာတမ်း checklist"
+    },
+    {
+      "source": "এটি general checklist; exact documents field, company, country এবং application type অনুযায়ী বদলায়।",
+      "target": "ဤသည်မှာ general checklist ဖြစ်သည်၊ exact documents သည် field၊ company၊ country နှင့် application type အပေါ်မူတည်၍ ပြောင်းလဲတတ်ပါသည်။"
+    },
+    {
+      "source": "Passport ও identity documents",
+      "target": "Passport နှင့် identity documents"
+    },
+    {
+      "source": "নাম, জন্মতারিখ ও validity মিলিয়ে নিন।",
+      "target": "အမည်၊ မွေးသက္ကရာဇ်နှင့် validity ကို စစ်ဆေးပါ။"
+    },
+    {
+      "source": "আপনার field-এর applicable Japanese qualification বা exemption proof।",
+      "target": "သင့် field နှင့် သက်ဆိုင်သော Japanese qualification သို့မဟုတ် exemption proof။"
+    },
+    {
+      "source": "নির্বাচিত field-এর result/certificate বা applicable exemption proof।",
+      "target": "ရွေးချယ်ထားသော field ၏ result/certificate သို့မဟုတ် applicable exemption proof။"
+    },
+    {
+      "source": "Salary, hours, job content ও working conditions ভালোভাবে পড়ুন।",
+      "target": "လစာ၊ အချိန်နာရီ၊ အလုပ်အကိုင်အကြောင်းအရာနှင့် အလုပ်လုပ်ကိုင်မည့်အခြေအနေများကို သေချာစွာဖတ်ပါ။"
+    },
+    {
+      "source": "Company/representative-এর সাথে latest official format ব্যবহার করুন।",
+      "target": "Company/representative နှင့်အတူ နောက်ဆုံးပေါ် official format ကို အသုံးပြုပါ။"
+    },
+    {
+      "source": "Sending procedure, medical বা অন্য supporting documents প্রয়োজন হতে পারে।",
+      "target": "ပေးပို့သည့်လုပ်ထုံးလုပ်နည်း၊ ဆေးစစ်ချက် သို့မဟုတ် အခြား supporting documents များ လိုအပ်နိုင်ပါသည်။"
+    },
+    {
+      "source": "Job, salary ও company check",
+      "target": "အလုပ်၊ လစာနှင့် ကုမ္ပဏီကို စစ်ဆေးခြင်း"
+    },
+    {
+      "source": "একটি universal fixed salary নেই; contract এবং working conditions লিখিতভাবে যাচাই করুন।",
+      "target": "Universal fixed salary တစ်ခုတည်း မရှိပါ။ contract နှင့် working conditions များကို စာဖြင့် အတည်ပြုပါ။"
+    },
+    {
+      "source": "SSW worker-এর remuneration comparable Japanese worker-এর সমপর্যায়ের হওয়া প্রয়োজন।",
+      "target": "SSW worker ၏ remuneration သည် comparable Japanese worker နှင့် တန်းတူဖြစ်ရန် လိုအပ်ပါသည်။"
+    },
+    {
+      "source": "Contract পড়ুন",
+      "target": "Contract ကို ဖတ်ပါ"
+    },
+    {
+      "source": "Base wage, overtime rate, deductions, housing, transport, insurance, working hours ও holidays যাচাই করুন।",
+      "target": "Base wage, overtime rate, deductions, housing, transport, insurance, working hours နှင့် holidays များကို စစ်ဆေးပါ။"
+    },
+    {
+      "source": "Employer change সম্ভব হতে পারে, তবে field/status procedure এবং Immigration notification ঠিকভাবে করতে হবে। নতুন field-এ গেলে নতুন requirement প্রযোজ্য হতে পারে।",
+      "target": "Employer change သည် ဖြစ်နိုင်ချေရှိသော်လည်း field/status procedure နှင့် Immigration notification ကို မှန်ကန်စွာ လုပ်ဆောင်ရပါမည်။ field အသစ်သို့ ပြောင်းပါက requirement အသစ်များ အធုံးခံရနိုင်ပါသည်။"
+    },
+    {
+      "source": "Interview প্রস্তুতি",
+      "target": "Interview ပြင်ဆင်မှု"
+    },
+    {
+      "source": "নিজের Japanese level ও বাস্তব experience অনুযায়ী সংক্ষিপ্ত, পরিষ্কার উত্তর practice করুন।",
+      "target": "မိမိ၏ Japanese level နှင့် လက်တွေ့ experience အပေါ်မူတည်၍ အတိုချုပ်၊ ရှင်းလင်းသော အဖြေများကို practice လုပ်ပါ။"
+    },
+    {
+      "source": "নাম, background, Japanese level, skill এবং কেন এই field—সংক্ষেপে বলার practice করুন।",
+      "target": "နာမည်၊ background, Japanese level, skill နှင့် ဤ field ကို ဘကြောင့် ရွေးချယ်ရသလဲ— အတိုချုပ်ပြောဆိုရန် practice လုပ်ပါ။"
+    },
+    {
+      "source": "Job description আগে পড়ে দায়িত্ব, shift, safety এবং teamwork-এর basic vocabulary শিখুন।",
+      "target": "Job description ကို အစကတည်းကဖတ်ပြီး တာဝန်၊ shift, safety နှင့် teamwork ၏ basic vocabulary များကို လေ့လာပါ။"
+    },
+    {
+      "source": "Salary, shift, housing, support, workplace location ও deductions নিয়ে ভদ্রভাবে প্রশ্ন করুন।",
+      "target": "Salary, shift, housing, support, workplace location နှင့် deductions တို့နှင့်ပတ်သက်၍ ယဉ်ကျေးစွာ မေးခွန်းများမေးပါ။"
+    },
+    {
+      "source": "সাধারণ প্রশ্ন ও উত্তর",
+      "target": "သာမန်မေးခွန်းနှင့် အဖြေများ"
+    },
+    {
+      "source": "Category বেছে নিয়ে প্রয়োজনীয় উত্তর দ্রুত দেখুন। JavaScript বন্ধ থাকলেও সব উত্তর দেখা যাবে।",
+      "target": "Category ကို ရွေးချယ်ပြီး လိုအပ်သော အဖြေများကို အမြန်ကြည့်ရှုပါ။ JavaScript ပိတ်ထားလျှင်လည်း အဖြေအားလုံးကို ကြည့်ရှုနိုင်ပါသည်။"
+    },
+    {
+      "source": "ভিসা",
+      "target": "ဗီဇာ"
+    },
+    {
+      "source": "পরীক্ষা",
+      "target": "စာမေးပွဲ"
+    },
+    {
+      "source": "পরিবার",
+      "target": "မိသားစု"
+    },
+    {
+      "source": "কাজ",
+      "target": "အလုပ်"
+    },
+    {
+      "source": "২০২৬ আপডেট",
+      "target": "2026 အပ်ဒိတ်"
+    },
+    {
+      "source": "SSW(i)-এ পরিবার আনা যায়?",
+      "target": "SSW (i) တွင် မိသားစုကို ခေါ်လာနိုင်ပါသလား။"
+    },
+    {
+      "source": "না। Official overview অনুযায়ী SSW(i)-এ family accompaniment অনুমোদিত নয়।",
+      "target": "မရပါ။ Official overview အရ SSW (i) တွင် family accompaniment ကို ခွင့်မပြုပါ။"
+    },
+    {
+      "source": "SSW(ii)-এ পরিবার আনা যায়?",
+      "target": "SSW (ii) တွင် မိသားစုကို ခေါ်လာနိုင်ပါသလား။"
+    },
+    {
+      "source": "প্রযোজ্য immigration rules পূরণ করলে family আনার সুযোগ আছে। SSW(ii)-এর stay duration-এ নির্দিষ্ট upper limit নেই।",
+      "target": "သက်ဆိုင်ရာ immigration rules များကို ဖြည့်ဆည်းပါက family ကို ခေါ်လာရန် အခွင့်အလမ်းရှိပါသည်။ SSW (ii) ၏ stay duration တွင် သတ်မှတ်ထားသော upper limit မရှိပါ။"
+    },
+    {
+      "source": "SSW(i)-এ এখন কয়টি field?",
+      "target": "SSW (i) တွင် ယခု field ဘယ်နှစ်ခုရှိပါသလဲ။"
+    },
+    {
+      "source": "বর্তমান official overview ১৯টি field তালিকাভুক্ত করে। নতুন কয়েকটি field-এর implementation/details পর্যায়ক্রমে প্রকাশ হচ্ছে।",
+      "target": "လက်ရှိ official overview တွင် field ၁၉ ခုကို စာရင်းသွင်းထားပါသည်။ field အသစ်အချို့၏ implementation/details များကို အဆင့်လိုက် ထုတ်ပြန်လျက်ရှိသည်။"
+    },
+    {
+      "source": "সব field-এ JLPT N4 বা JFT-Basic হলেই হবে?",
+      "target": "field အားလုံးတွင် JLPT N4 သို့မဟုတ် JFT-Basic ရလျှင် လုံလောက်ပါပြီလား။"
+    },
+    {
+      "source": "না। অনেক field-এ এটি সাধারণ language route হলেও কিছু field/occupation-এ higher বা additional requirement আছে। নিজের field-এর official requirement দেখুন।",
+      "target": "မလုံလောက်ပါ။ field အများစုတွင် ၎င်းသည် သာမန် language route ဖြစ်သော်လည်း field/occupation အချို့တွင် higher သို့မဟုတ် additional requirement ရှိပါသည်။ မိမိ field ၏ official requirement ကို ကြည့်ပါ။"
+    },
+    {
+      "source": "বাংলাদেশে কোন SSW exam এখন আছে?",
+      "target": "ဘင်္ဂလားဒေ့ရှ်တွင် မည်သည့် SSW exam က လက်ရှိရှိနေပါသလဲ။"
+    },
+    {
+      "source": "Schedule দ্রুত বদলায়। Official Test Information page-এ country এবং date অনুযায়ী current schedule দেখুন।",
+      "target": "Schedule သည် အမြန်ပြောင်းလဲတတ်ပါသည်။ Official Test Information page တွင် country နှင့် date အပေါ်မူတည်၍ current schedule ကို ကြည့်ပါ။"
+    },
+    {
+      "source": "SSW(ii)-এ যেতে আগে ঠিক ৫ বছর SSW(i) করতেই হবে?",
+      "target": "SSW (ii) သို့ သွားရန် ပထမဦးစွာ တိကျသော SSW (i) ၅ နှစ် လုပ်ကိုင်ရမည်လား။"
+    },
+    {
+      "source": "একটি universal “ঠিক ৫ বছর” rule ধরে নেওয়া ঠিক নয়। SSW(ii)-এর advanced skill/experience requirement field অনুযায়ী আলাদা।",
+      "target": "Universal “တိကျသော ၅ နှစ်” rule ကို ယူဆရန် မသင့်ပါ။ SSW (ii) ၏ advanced skill/experience requirement သည် field အလိုက် ကွာခြားပါသည်။"
+    },
+    {
+      "source": "Fixed মাসিক salary কত?",
+      "target": "လစဉ် Fixed salary ဘယ်လောက်လဲ။"
+    },
+    {
+      "source": "Universal fixed salary নেই। Region, employer, occupation, experience ও overtime অনুযায়ী আয় বদলায়; remuneration comparable Japanese worker-এর সমপর্যায়ের হওয়া প্রয়োজন।",
+      "target": "Universal fixed salary မရှိပါ။ Region, employer, occupation, experience နှင့် overtime အပေါ်မူတည်၍ ဝင်ငွေ ပြောင်းလဲတတ်ပါသည်။ remuneration သည် comparable Japanese worker နှင့် တန်းတူဖြစ်ရန် လိုအပ်ပါသည်။"
+    },
+    {
+      "source": "SSC/JSC পাস কি universal SSW requirement?",
+      "target": "SSC/JSC အောင်မြင်မှုသည် universal SSW requirement လား။"
+    },
+    {
+      "source": "General official overview-এ universal “SSC/JSC minimum” হিসেবে এমন blanket requirement নেই। Field, test, employment এবং country-specific procedure আলাদা হতে পারে।",
+      "target": "General official overview တွင် universal “SSC/JSC minimum” ဟူ၍ ထိုသို့သော blanket requirement မရှိပါ။ Field, test, employment နှင့် country-specific procedure များ ကွာခြားနိုင်ပါသည်။"
+    },
+    {
+      "source": "SSW rules ও test schedule পরিবর্তিত হতে পারে। আবেদন করার আগে Immigration Services Agency-এর latest information মিলিয়ে নিন।",
+      "target": "SSW rules နှင့် test schedule များ ပြောင်းလဲနိုင်ပါသည်။ လျှောက်ထားမတိုင်မီ Immigration Services Agency ၏ latest information ကို တိုက်ဆိုင်စစ်ဆေးပါ။"
+    },
+    {
+      "source": "SSW(i)/(ii) ও field list ↗",
+      "target": "SSW (i)/(ii) နှင့် field list ↗"
+    },
+    {
+      "source": "আপনার নিহোন · SSW",
+      "target": "আপনার নিহোন · SSW"
+    },
+    {
+      "source": "এটি তথ্যভিত্তিক গাইড; চূড়ান্ত সিদ্ধান্ত ও latest requirement সংশ্লিষ্ট কর্তৃপক্ষের official source অনুযায়ী হবে।",
+      "target": "ဤသည်မှာ သတင်းအချက်အလက်ဆိုင်ရာ လမ်းညွှန်ချက်ဖြစ်ပြီး နောက်ဆုံး ဆုံးဖြတ်ချက်နှင့် နောက်ဆုံးပေါ် လိုအပ်ချက်များမှာ သက်ဆိုင်ရာ အာဏာပိုင်များ၏ တရားဝင် ရင်းမြစ် (official source) အတိုင်း ဖြစ်ပါမည်။"
+    },
+    {
+      "source": "হোমে ফিরুন",
+      "target": "ပင်မစာမျက်နှာသို့ ပြန်ရန်"
+    }
+  ]
+}

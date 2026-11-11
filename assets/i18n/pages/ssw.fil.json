@@ -1,0 +1,502 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "ssw",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "SSW — Specified Skilled Worker সম্পূর্ণ গাইড | আপনার নিহোন",
+      "target": "SSW — Gabay sa Specified Skilled Worker | আপনার নিহোন"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Pumunta sa pangunahing nilalaman"
+    },
+    {
+      "source": "SSW গাইড",
+      "target": "Gabay sa SSW"
+    },
+    {
+      "source": "হোম",
+      "target": "Home"
+    },
+    {
+      "source": "জাপানের SSW তথ্য — এক জায়গায়, সহজ ও যাচাইযোগ্য",
+      "target": "Impormasyon tungkol sa SSW ng Hapon — Nasa isang lugar, madali at mapagkakatiwalaan"
+    },
+    {
+      "source": "SSW(i), SSW(ii), কাজের field, পরীক্ষা, চাকরি, ডকুমেন্টস ও ভিসা প্রক্রিয়া—সবকিছুর একটি আপডেটেড বাংলা গাইড।",
+      "target": "Isang updated na gabay sa wikang Tagalog para sa SSW(i), SSW(ii), mga larangan ng trabaho, mga pagsusulit, trabaho, mga dokumento, at proseso ng visa—lahat."
+    },
+    {
+      "source": "১৯টি field দেখুন",
+      "target": "Tingnan ang 19 na larangan"
+    },
+    {
+      "source": "প্রক্রিয়া দেখুন",
+      "target": "Tingnan ang proseso"
+    },
+    {
+      "source": "১৯টি",
+      "target": "19"
+    },
+    {
+      "source": "১১টি",
+      "target": "11"
+    },
+    {
+      "source": "৫ বছর",
+      "target": "5 taon"
+    },
+    {
+      "source": "SSW(i)-এর মোট upper limit",
+      "target": "Kabuuang upper limit ng SSW(i)"
+    },
+    {
+      "source": "তথ্য যাচাই: ৪ সেপ্টেম্বর ২০২৬।",
+      "target": "Pagsusuri ng impormasyon: Setyembre 4, 2026."
+    },
+    {
+      "source": "Immigration Services Agency-এর বর্তমান overview SSW(i)-এর ১৯টি field এবং SSW(ii)-এর ১১টি field দেখায়। নতুন কিছু field-এর বিস্তারিত এখনো পর্যায়ক্রমে প্রকাশ হচ্ছে। আবেদন বা পরীক্ষা বুক করার আগে official source-এ latest status মিলিয়ে নিন।",
+      "target": "Ipinapakita ng kasalukuyang pangkalahatang-ideya ng Immigration Services Agency ang 19 na larangan para sa SSW(i) at 11 na larangan para sa SSW(ii). Ang mga detalye ng ilang bagong larangan ay unti-unti pang inilalabas. Bago mag-apply o mag-book ng pagsusulit, mangyaring suriin ang pinakabagong katayuan sa opisyal na pinagmulan."
+    },
+    {
+      "source": "Food Service সতর্কতা:",
+      "target": "Babala sa Food Service:"
+    },
+    {
+      "source": "বর্তমান official SSW page-এ Food Service field-এর জন্য “new applications” সাময়িকভাবে গ্রহণ করা হচ্ছে না বলে দেখানো হয়েছে। এই status পরিবর্তন হতে পারে, তাই আবেদন করার আগে official notice দেখুন।",
+      "target": "Ipinapakita sa kasalukuyang opisyal na pahina ng SSW na ang mga “new applications” para sa larangan ng Food Service ay pansamantalang hindi tinatanggap. Ang katayuang ito ay maaaring magbago, kaya mangyaring suriin ang opisyal na abiso bago mag-apply."
+    },
+    {
+      "source": "SSW(i) এবং SSW(ii)",
+      "target": "SSW(i) at SSW(ii)"
+    },
+    {
+      "source": "দুই status-এর stay, family এবং skill requirement আলাদা।",
+      "target": "Magkaiba ang tagal ng pananatili, pamilya, at kinakailangang kasanayan para sa dalawang katayuang ito."
+    },
+    {
+      "source": "নির্দিষ্ট field-এ skilled work",
+      "target": "May kasanayang trabaho sa isang tiyak na larangan"
+    },
+    {
+      "source": "জাপানে মোট থাকার upper limit সর্বোচ্চ ৫ বছর।",
+      "target": "Ang pinakamataas na limitasyon ng pananatili sa Hapon ay maximum na 5 taon."
+    },
+    {
+      "source": "Family accompaniment অনুমোদিত নয়।",
+      "target": "Hindi pinapayagan ang pagsama ng pamilya."
+    },
+    {
+      "source": "Japanese worker-এর সমপর্যায়ের remuneration-এর নিয়ম আছে।",
+      "target": "May patakaran para sa sahod na katumbas ng sa isang Japanese worker."
+    },
+    {
+      "source": "নির্ধারিত support company বা registered support organization থেকে পাওয়া যায়।",
+      "target": "Makukuha mula sa itinalagang support company o registered support organization."
+    },
+    {
+      "source": "উচ্চতর দক্ষতার status",
+      "target": "Katayuan para sa mas mataas na kasanayan"
+    },
+    {
+      "source": "থাকার মেয়াদে নির্দিষ্ট upper limit নেই; renewal করা যায়।",
+      "target": "Walang tiyak na upper limit sa tagal ng pananatili; maaaring i-renew."
+    },
+    {
+      "source": "প্রযোজ্য immigration requirement পূরণ করলে family আনার সুযোগ আছে।",
+      "target": "May pagkakataong magdala ng pamilya kung matutugunan ang naaangkop na kinakailangan sa imigrasyon."
+    },
+    {
+      "source": "বর্তমানে ১১টি field SSW(ii)-এর আওতায়।",
+      "target": "Sa kasalukuyan, 11 na larangan ang nasa ilalim ng SSW(ii)."
+    },
+    {
+      "source": "Advanced skill ও experience requirement field অনুযায়ী আলাদা।",
+      "target": "Magkaiba ang mga kinakailangan para sa advanced skill at karanasan depende sa larangan."
+    },
+    {
+      "source": "বর্তমান ১১টি SSW(ii) field",
+      "target": "Ang kasalukuyang 11 na larangan ng SSW(ii)"
+    },
+    {
+      "source": "Building Cleaning, Construction, Industrial Product Manufacturing, Shipbuilding & Ship Machinery, Automobile Repair & Maintenance, Aviation, Accommodation, Agriculture, Fishery & Aquaculture, Food & Beverage Manufacturing এবং Food Service।",
+      "target": "Building Cleaning, Construction, Industrial Product Manufacturing, Shipbuilding & Ship Machinery, Automobile Repair & Maintenance, Aviation, Accommodation, Agriculture, Fishery & Aquaculture, Food & Beverage Manufacturing, at Food Service."
+    },
+    {
+      "source": "SSW যাওয়ার সাধারণ flow",
+      "target": "Karaniwang daloy ng pagpunta sa pamamagitan ng SSW"
+    },
+    {
+      "source": "দেশ, field এবং আপনার বর্তমান residence status অনুযায়ী কিছু ধাপ বদলাতে পারে।",
+      "target": "Maaaring magbago ang ilang hakbang depende sa bansa, larangan, at sa iyong kasalukuyang katayuan ng paninirahan."
+    },
+    {
+      "source": "Field বেছে নিন",
+      "target": "Pumili ng larangan"
+    },
+    {
+      "source": "কাজের ধরন, eligibility এবং current intake status দেখুন।",
+      "target": "Tingnan ang uri ng trabaho, pagiging angkop (eligibility), at kasalukuyang katayuan ng pagtanggap."
+    },
+    {
+      "source": "Field অনুযায়ী প্রয়োজনীয় Japanese test ও skill test সম্পন্ন করুন।",
+      "target": "Tapusin ang kinakailangang Japanese test at skill test ayon sa larangan."
+    },
+    {
+      "source": "চাকরি/contract",
+      "target": "Trabaho/Kontrata"
+    },
+    {
+      "source": "Company-এর সাথে employment contract final করুন।",
+      "target": "Tapusin ang employment contract sa kumpanya."
+    },
+    {
+      "source": "COE বা status-of-residence procedure সম্পন্ন করুন।",
+      "target": "Tapusin ang proseso para sa COE o status-of-residence."
+    },
+    {
+      "source": "বিদেশ থেকে গেলে embassy/consulate-এর visa procedure অনুসরণ করুন।",
+      "target": "Kung manggagaling sa ibang bansa, sundin ang proseso ng visa sa embahada/konsulado."
+    },
+    {
+      "source": "SSW(i)-এর ১৯টি কাজের field",
+      "target": "Ang 19 na larangan ng trabaho sa SSW(i)"
+    },
+    {
+      "source": "Search বা filter ব্যবহার করে দ্রুত field খুঁজুন।",
+      "target": "Gumamit ng search o filter upang mabilis na mahanap ang larangan."
+    },
+    {
+      "source": "সব",
+      "target": "Lahat"
+    },
+    {
+      "source": "বিদ্যমান ১৬",
+      "target": "Umiiral ang 16"
+    },
+    {
+      "source": "নতুন ৩",
+      "target": "Bagong 3"
+    },
+    {
+      "source": "নার্সিং কেয়ার · 介護",
+      "target": "Nursing Care · 介護"
+    },
+    {
+      "source": "শারীরিক সহায়তা ও দৈনন্দিন জীবন support।",
+      "target": "Pisikal na tulong at suporta sa pang-araw-araw na buhay."
+    },
+    {
+      "source": "বিল্ডিং ক্লিনিং",
+      "target": "Paglilinis ng Gusali"
+    },
+    {
+      "source": "বিল্ডিংয়ের ভেতরের cleaning ও maintenance কাজ।",
+      "target": "Mga gawaing paglilinis at pagpapanatili sa loob ng gusali."
+    },
+    {
+      "source": "কনস্ট্রাকশন · 建設",
+      "target": "Konstruksyon · 建設"
+    },
+    {
+      "source": "বাড়ি, ভবন ও অবকাঠামো নির্মাণ।",
+      "target": "Pagtatayo ng mga bahay, gusali, at imprastruktura."
+    },
+    {
+      "source": "শিল্পপণ্য, parts ও related manufacturing।",
+      "target": "Paggawa ng mga produktong industriyal, piyesa, at mga kaugnay na pagmamanupaktura."
+    },
+    {
+      "source": "জাহাজ নির্মাণ ও সংশ্লিষ্ট machinery।",
+      "target": "Paggawa ng barko at mga kaugnay na makinarya."
+    },
+    {
+      "source": "গাড়ি inspection, repair ও maintenance।",
+      "target": "Inspeksyon, pagkukumpuni, at pagpapanatili ng sasakyan."
+    },
+    {
+      "source": "Airport ground handling ও aircraft maintenance-এর নির্দিষ্ট কাজ।",
+      "target": "Mga tiyak na gawain sa airport ground handling at pagpapanatili ng sasakyang panghimpapawid."
+    },
+    {
+      "source": "Hotel reception ও guest service।",
+      "target": "Reception sa hotel at serbisyo sa bisista."
+    },
+    {
+      "source": "নির্ধারিত শর্তে truck, taxi ও bus driving-related work।",
+      "target": "Mga gawaing may kinalaman sa pagmamaneho ng trak, taksi, at bus sa ilalim ng itinakdang kundisyon."
+    },
+    {
+      "source": "Railway maintenance ও operation-এর নির্দিষ্ট কাজ।",
+      "target": "Mga tiyak na gawain sa pagpapanatili at operasyon ng riles."
+    },
+    {
+      "source": "ফসল উৎপাদন, harvesting ও livestock-related কাজ।",
+      "target": "Produksyon ng pananim, pag-ani, at mga gawaing may kinalaman sa pag-aalaga ng hayop."
+    },
+    {
+      "source": "মাছ ধরা ও aquaculture।",
+      "target": "Pangingisda at aquaculture."
+    },
+    {
+      "source": "খাদ্য প্রস্তুত ও processing।",
+      "target": "Paghahanda at pagproseso ng pagkain."
+    },
+    {
+      "source": "Restaurant customer service ও food service।",
+      "target": "Serbisyo sa kustomer sa restawran at serbisyo sa pagkain."
+    },
+    {
+      "source": "Current official notice অনুযায়ী নতুন আবেদন সাময়িকভাবে বন্ধ—latest status check করুন।",
+      "target": "Ayon sa kasalukuyang opisyal na abiso, ang mga bagong aplikasyon ay pansamantalang sarado—pakitingnan ang pinakabagong katayuan."
+    },
+    {
+      "source": "Tree planting ও forest management।",
+      "target": "Pagtatanim ng puno at pamamahala ng gubat."
+    },
+    {
+      "source": "Lumber ও wood processing।",
+      "target": "Lumber at pagproseso ng kahoy."
+    },
+    {
+      "source": "Waste processing plant-এ recycling ও proper disposal। নতুন field; intake/details official notice-এ যাচাই করুন।",
+      "target": "Pag-recycle at tamang pagtatapon sa waste processing plant. Bagong larangan; suriin ang pagtanggap/mga detalye sa opisyal na abiso."
+    },
+    {
+      "source": "Hotel/হাসপাতালের linen collection, laundering ও related work। নতুন field; latest details official source-এ দেখুন।",
+      "target": "Koleksyon ng linen sa hotel/ospital, paglalaba, at mga kaugnay na gawain. Bagong larangan; tingnan ang pinakabagong mga detalye sa opisyal na pinagmulan."
+    },
+    {
+      "source": "Warehouse receiving, shipping ও storage। নতুন field; intake/details official notice-এ যাচাই করুন।",
+      "target": "Pagtanggap, pagpapadala, at pag-iimbak sa bodega (warehouse). Bagong larangan; suriin ang pagtanggap/mga detalye sa opisyal na abiso."
+    },
+    {
+      "source": "Language ও skill test",
+      "target": "Pagsusulit sa Wika at Kasanayan"
+    },
+    {
+      "source": "সব field-এর requirement এক নয়—নিজের field-এর official test page অবশ্যই দেখুন।",
+      "target": "Hindi pare-pareho ang mga kinakailangan sa lahat ng larangan—siguraduhing tingnan ang opisyal na pahina ng pagsusulit para sa iyong larangan."
+    },
+    {
+      "source": "সাধারণ requirement",
+      "target": "Pangkalahatang kinakailangan"
+    },
+    {
+      "source": "অনেক SSW(i) field-এ JFT-Basic বা JLPT N4-or-higher ব্যবহার করা হয়। তবে কিছু field/occupation-এ higher বা additional language requirement আছে।",
+      "target": "Maraming larangan ng SSW(i) ang gumagamit ng JFT-Basic o JLPT N4 pataas. Gayunpaman, may mga mas mataas o karagdagang kinakailangan sa wika para sa ilang partikular na larangan o trabaho."
+    },
+    {
+      "source": "নির্বাচিত field-এর skill assessment সাধারণত প্রয়োজন হয়, যদি কোনো official exemption প্রযোজ্য না হয়।",
+      "target": "Kadalasan ay kinakailangan ang pagtatasa ng kasanayan para sa napiling larangan, maliban kung may nalalapat na opisyal na eksepsiyon."
+    },
+    {
+      "source": "অতিরিক্ত requirement",
+      "target": "Karagdagang kinakailangan"
+    },
+    {
+      "source": "Nursing care-এ অতিরিক্ত Japanese test আছে; automobile transportation-এর কিছু occupation-এ language, driving licence ও training requirement আলাদা।",
+      "target": "May karagdagang pagsusulit sa Hapon para sa Nursing care; sa ilang trabaho sa transportasyon ng sasakyan, magkakaiba ang mga kinakailangan sa wika, lisensya sa pagmamaneho, at pagsasanay."
+    },
+    {
+      "source": "schedule নিয়মিত বদলায়। তাই কোনো দেশ বা কেন্দ্রকে স্থায়ীভাবে “আছে/নেই” ধরে না নিয়ে official Test Information page থেকে live schedule দেখুন।",
+      "target": "Regular na nagbabago ang iskedyul. Kaya huwag ipalagay na ang isang bansa o sentro ay \"mayroon/wala\" nang permanente, sa halip ay tingnan ang live na iskedyul mula sa opisyal na pahina ng Impormasyon sa Pagsusulit."
+    },
+    {
+      "source": "ডকুমেন্ট checklist",
+      "target": "Listahan ng mga dokumento"
+    },
+    {
+      "source": "এটি general checklist; exact documents field, company, country এবং application type অনুযায়ী বদলায়।",
+      "target": "Ito ay pangkalahatang listahan ng mga dokumento; ang eksaktong mga dokumento ay nagbabago ayon sa larangan, kumpanya, bansa, at uri ng aplikasyon."
+    },
+    {
+      "source": "Passport ও identity documents",
+      "target": "Pasaporte at mga dokumento ng pagkakakilanlan"
+    },
+    {
+      "source": "নাম, জন্মতারিখ ও validity মিলিয়ে নিন।",
+      "target": "I-check ang pangalan, petsa ng kapanganakan, at bisa (validity)."
+    },
+    {
+      "source": "আপনার field-এর applicable Japanese qualification বা exemption proof।",
+      "target": "Ang naaangkop na kwalipikasyon sa wikang Hapon o patunay ng eksepsiyon para sa iyong larangan."
+    },
+    {
+      "source": "নির্বাচিত field-এর result/certificate বা applicable exemption proof।",
+      "target": "Resulta/sertipiko ng napiling larangan o naaangkop na patunay ng eksepsiyon."
+    },
+    {
+      "source": "Salary, hours, job content ও working conditions ভালোভাবে পড়ুন।",
+      "target": "Basahing mabuti ang suweldo, oras, nilalaman ng trabaho, at mga kondisyon sa pagtattrabaho."
+    },
+    {
+      "source": "Company/representative-এর সাথে latest official format ব্যবহার করুন।",
+      "target": "Gamitin ang pinakabagong opisyal na format sa kompanya/kinatawan."
+    },
+    {
+      "source": "Sending procedure, medical বা অন্য supporting documents প্রয়োজন হতে পারে।",
+      "target": "Maaaring kailanganin ang proseso ng pagpapadala, medikal, o iba pang sumusuportang dokumento."
+    },
+    {
+      "source": "Job, salary ও company check",
+      "target": "Suriin ang trabaho, suweldo, at kompanya"
+    },
+    {
+      "source": "একটি universal fixed salary নেই; contract এবং working conditions লিখিতভাবে যাচাই করুন।",
+      "target": "Walang unibersal na nakapirming suweldo; suriin nang nakasulat ang kontrata at mga kondisyon sa pagtattrabaho."
+    },
+    {
+      "source": "SSW worker-এর remuneration comparable Japanese worker-এর সমপর্যায়ের হওয়া প্রয়োজন।",
+      "target": "Ang bayad para sa manggagawang SSW ay kailangang katumbas ng sa isang Hapones na manggagawa."
+    },
+    {
+      "source": "Contract পড়ুন",
+      "target": "Basahin ang kontrata"
+    },
+    {
+      "source": "Base wage, overtime rate, deductions, housing, transport, insurance, working hours ও holidays যাচাই করুন।",
+      "target": "Suriin ang base wage, rate ng overtime, mga bawas, pabahay, transportasyon, seguro, oras ng trabaho, at mga pista reserba/holiday."
+    },
+    {
+      "source": "Employer change সম্ভব হতে পারে, তবে field/status procedure এবং Immigration notification ঠিকভাবে করতে হবে। নতুন field-এ গেলে নতুন requirement প্রযোজ্য হতে পারে।",
+      "target": "Maaaring posibleng lumipat ng employer, ngunit kailangang gawin nang tama ang proseso ng field/status at abiso sa Imigrasyon. Kapag lumipat sa bagong field, maaaring malapat ang mga bagong kinakailangan."
+    },
+    {
+      "source": "Interview প্রস্তুতি",
+      "target": "Paghahanda sa Panayam"
+    },
+    {
+      "source": "নিজের Japanese level ও বাস্তব experience অনুযায়ী সংক্ষিপ্ত, পরিষ্কার উত্তর practice করুন।",
+      "target": "Magsanay ng maikli at malinaw na mga sagot ayon sa iyong antas sa Japanese at totoong karanasan."
+    },
+    {
+      "source": "নাম, background, Japanese level, skill এবং কেন এই field—সংক্ষেপে বলার practice করুন।",
+      "target": "Magsanay na sabihin nang maikli ang pangalan, background, antas sa Japanese, kasanayan, at kung bakit ang field na ito."
+    },
+    {
+      "source": "Job description আগে পড়ে দায়িত্ব, shift, safety এবং teamwork-এর basic vocabulary শিখুন।",
+      "target": "Basahin muna ang paglalarawan ng trabaho at matutunan ang mga pangunahing bokabularyo para sa mga responsibilidad, shift, kaligtasan, at pagtutulungan ng magkakasama."
+    },
+    {
+      "source": "Salary, shift, housing, support, workplace location ও deductions নিয়ে ভদ্রভাবে প্রশ্ন করুন।",
+      "target": "Magtanong nang magalang tungkol sa suweldo, shift, pabahay, suporta, lokasyon ng pinagtatrabahuhan, at mga bawas."
+    },
+    {
+      "source": "সাধারণ প্রশ্ন ও উত্তর",
+      "target": "Mga Karaniwang Tanong at Sagot"
+    },
+    {
+      "source": "Category বেছে নিয়ে প্রয়োজনীয় উত্তর দ্রুত দেখুন। JavaScript বন্ধ থাকলেও সব উত্তর দেখা যাবে।",
+      "target": "Pumili ng kategorya para mabilis na makita ang mga kinakailangang sagot. Makikita pa rin ang lahat ng sagot kahit naka-off ang JavaScript."
+    },
+    {
+      "source": "ভিসা",
+      "target": "Visa"
+    },
+    {
+      "source": "পরীক্ষা",
+      "target": "Pagsusulit"
+    },
+    {
+      "source": "পরিবার",
+      "target": "Pamilya"
+    },
+    {
+      "source": "কাজ",
+      "target": "Trabaho"
+    },
+    {
+      "source": "২০২৬ আপডেট",
+      "target": "Update sa 2026"
+    },
+    {
+      "source": "SSW(i)-এ পরিবার আনা যায়?",
+      "target": "Maaari bang magdala ng pamilya sa SSW(i)?"
+    },
+    {
+      "source": "না। Official overview অনুযায়ী SSW(i)-এ family accompaniment অনুমোদিত নয়।",
+      "target": "Hindi. Ayon sa opisyal na pangkalahatang-ideya, hindi pinapayagan ang pagsasama ng pamilya sa SSW(i)."
+    },
+    {
+      "source": "SSW(ii)-এ পরিবার আনা যায়?",
+      "target": "Maaari bang magdala ng pamilya sa SSW(ii)?"
+    },
+    {
+      "source": "প্রযোজ্য immigration rules পূরণ করলে family আনার সুযোগ আছে। SSW(ii)-এর stay duration-এ নির্দিষ্ট upper limit নেই।",
+      "target": "May pagkakataong magdala ng pamilya kung matutugunan ang naaangkop na mga panuntunan sa imigrasyon. Walang partikular na itaas na limitasyon (upper limit) ang tagal ng pananatili sa SSW(ii)."
+    },
+    {
+      "source": "SSW(i)-এ এখন কয়টি field?",
+      "target": "Ilan na ang mga field sa SSW(i) ngayon?"
+    },
+    {
+      "source": "বর্তমান official overview ১৯টি field তালিকাভুক্ত করে। নতুন কয়েকটি field-এর implementation/details পর্যায়ক্রমে প্রকাশ হচ্ছে।",
+      "target": "Nakalista sa kasalukuyang opisyal na pangkalahatang-ideya ang 19 na field. Ang pagpapatupad/mga detalye ng ilang bagong field ay sunod-sunod na inilalabas."
+    },
+    {
+      "source": "সব field-এ JLPT N4 বা JFT-Basic হলেই হবে?",
+      "target": "Sapat na ba ang JLPT N4 o JFT-Basic sa lahat ng field?"
+    },
+    {
+      "source": "না। অনেক field-এ এটি সাধারণ language route হলেও কিছু field/occupation-এ higher বা additional requirement আছে। নিজের field-এর official requirement দেখুন।",
+      "target": "Hindi. Bagaman ito ang karaniwang ruta sa wika sa maraming field, ang ilang field/trabaho ay may mas mataas o karagdagang kinakailangan. Tingnan ang opisyal na kinakailangan ng iyong field."
+    },
+    {
+      "source": "বাংলাদেশে কোন SSW exam এখন আছে?",
+      "target": "Anong SSW exam ang mayroon sa Bangladesh ngayon?"
+    },
+    {
+      "source": "Schedule দ্রুত বদলায়। Official Test Information page-এ country এবং date অনুযায়ী current schedule দেখুন।",
+      "target": "Mabilis magbago ang iskedyul. Tingnan ang kasalukuyang iskedyul ayon sa bansa at petsa sa opisyal na Pahina ng Impormasyon sa Pagsusulit."
+    },
+    {
+      "source": "SSW(ii)-এ যেতে আগে ঠিক ৫ বছর SSW(i) করতেই হবে?",
+      "target": "Kailangan ba munang mag-SSW(i) ng eksaktong 5 taon bago lumipat sa SSW(ii)?"
+    },
+    {
+      "source": "একটি universal “ঠিক ৫ বছর” rule ধরে নেওয়া ঠিক নয়। SSW(ii)-এর advanced skill/experience requirement field অনুযায়ী আলাদা।",
+      "target": "Hindi tama na ipalagay na mayroong unibersal na patakaran na “eksaktong 5 taon”. Ang kinakailangan para sa advanced skill/experience sa SSW(ii) ay nag-iiba depende sa field."
+    },
+    {
+      "source": "Fixed মাসিক salary কত?",
+      "target": "Magkano ang nakapirming buwanang suweldo?"
+    },
+    {
+      "source": "Universal fixed salary নেই। Region, employer, occupation, experience ও overtime অনুযায়ী আয় বদলায়; remuneration comparable Japanese worker-এর সমপর্যায়ের হওয়া প্রয়োজন।",
+      "target": "Walang unibersal na nakapirming suweldo. Nag-iiba ang kita ayon sa rehiyon, employer, trabaho, karanasan, at overtime; ang suweldo ay dapat katumbas ng sa isang Hapones na manggagawa."
+    },
+    {
+      "source": "SSC/JSC পাস কি universal SSW requirement?",
+      "target": "Ang pagtatapos ba ng SSC/JSC ay isang unibersal na kinakailangan sa SSW?"
+    },
+    {
+      "source": "General official overview-এ universal “SSC/JSC minimum” হিসেবে এমন blanket requirement নেই। Field, test, employment এবং country-specific procedure আলাদা হতে পারে।",
+      "target": "Sa pangkalahatang opisyal na pangkalahatang-ideya, walang ganoong pangkalahatang kinakailangan bilang “minimum na SSC/JSC”. Maaaring mag-iba ang field, pagsusulit, trabaho, at prosesong partikular sa bansa."
+    },
+    {
+      "source": "SSW rules ও test schedule পরিবর্তিত হতে পারে। আবেদন করার আগে Immigration Services Agency-এর latest information মিলিয়ে নিন।",
+      "target": "Ang mga patakaran sa SSW at iskedyul ng pagsusulit ay maaaring magbago. Bago mag-apply, pakitingnan ang pinakabagong impormasyon mula sa Immigration Services Agency."
+    },
+    {
+      "source": "SSW(i)/(ii) ও field list ↗",
+      "target": "SSW(i)/(ii) at listahan ng field ↗"
+    },
+    {
+      "source": "আপনার নিহোন · SSW",
+      "target": "আপনার নিহোন · SSW"
+    },
+    {
+      "source": "এটি তথ্যভিত্তিক গাইড; চূড়ান্ত সিদ্ধান্ত ও latest requirement সংশ্লিষ্ট কর্তৃপক্ষের official source অনুযায়ী হবে।",
+      "target": "Ito ay isang gabay na nagbibigay ng impormasyon; ang huling desisyon at ang pinakabagong kinakailangan ay ayon sa opisyal na pinagmulan ng kinauukulang awtoridad."
+    },
+    {
+      "source": "হোমে ফিরুন",
+      "target": "Bumalik sa Home"
+    }
+  ]
+}

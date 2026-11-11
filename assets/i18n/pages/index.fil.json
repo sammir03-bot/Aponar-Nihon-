@@ -1,0 +1,246 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "index",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "আপনার নিহোন | JLPT N5 N4 N3 ও জাপান লাইফ গাইড",
+      "target": "আপনার নিহোন | Gabay sa JLPT N5 N4 N3 at Buhay sa Hapon"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "বাং",
+      "target": "Bng"
+    },
+    {
+      "source": "কানজি",
+      "target": "Kanji"
+    },
+    {
+      "source": "ভোকাব",
+      "target": "Bokabularyo"
+    },
+    {
+      "source": "গ্রামার",
+      "target": "Gramatika"
+    },
+    {
+      "source": "কথা বলা",
+      "target": "Pagsasalita"
+    },
+    {
+      "source": "এক জায়গায় সবকিছু",
+      "target": "Lahat sa iisang lugar"
+    },
+    {
+      "source": "সব গুরুত্বপূর্ণ সেকশন",
+      "target": "Lahat ng mahalagang seksyon"
+    },
+    {
+      "source": "বেসিক কোর্স",
+      "target": "Basic course"
+    },
+    {
+      "source": "পরবর্তী ধাপ",
+      "target": "Susunod na hakbang"
+    },
+    {
+      "source": "ইন্টারমিডিয়েট",
+      "target": "Intermediate"
+    },
+    {
+      "source": "N5 · N4 · N3 স্মার্ট রিভিউ",
+      "target": "N5 · N4 · N3 Smart Review"
+    },
+    {
+      "source": "পরীক্ষার আগে সব একসাথে",
+      "target": "Lahat sa isang lugar bago ang pagsusulit"
+    },
+    {
+      "source": "শুনুন · উত্তর দিন · ভেঙে শিখুন",
+      "target": "Makinig · Sumagot · Matuto nang paisa-isa"
+    },
+    {
+      "source": "কুইজ",
+      "target": "Quiz"
+    },
+    {
+      "source": "ফ্রি প্র্যাকটিস",
+      "target": "Libreng pagsasanay"
+    },
+    {
+      "source": "AI টিউটর",
+      "target": "AI Tutor"
+    },
+    {
+      "source": "বাংলায় জিজ্ঞাসা",
+      "target": "Magtanong sa Bengali"
+    },
+    {
+      "source": "পরীক্ষা প্র্যাকটিস",
+      "target": "Pagsasanay para sa exam"
+    },
+    {
+      "source": "ইন্টারভিউ",
+      "target": "Interview"
+    },
+    {
+      "source": "চাকরি ও এম্বাসি",
+      "target": "Trabaho at embahada"
+    },
+    {
+      "source": "সম্পূর্ণ গাইড",
+      "target": "Kumpletong gabay"
+    },
+    {
+      "source": "দরকারি বাক্য",
+      "target": "Mahahalagang parirala"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "জাপান লাইফ",
+      "target": "Buhay sa Japan"
+    },
+    {
+      "source": "নতুনদের গাইড",
+      "target": "Gabay para sa bagong dating"
+    },
+    {
+      "source": "হিরাগানা-কানা",
+      "target": "Hiragana at Katakana"
+    },
+    {
+      "source": "অক্ষর শেখা",
+      "target": "Aralin ang mga character"
+    },
+    {
+      "source": "স্টাডি লাইব্রেরি",
+      "target": "Study Library"
+    },
+    {
+      "source": "২৮h + বাস্তব টুল",
+      "target": "28h + Mga Praktikal na Tool"
+    },
+    {
+      "source": "履歴書 তৈরি",
+      "target": "Gumawa ng 履歴書 (Resume)"
+    },
+    {
+      "source": "নামাজ · হালাল",
+      "target": "Panalangin · Halal"
+    },
+    {
+      "source": "রেট · রেমিট্যান্স",
+      "target": "Rate · Remittance"
+    },
+    {
+      "source": "স্টাডি গাইড",
+      "target": "Gabay sa pag-aaral"
+    },
+    {
+      "source": "শেখার রোডম্যাপ",
+      "target": "Roadmap sa Pag-aaral"
+    },
+    {
+      "source": "নতুন AI শেখার অভিজ্ঞতা",
+      "target": "Bagong Karanasan sa Pag-aaral gamit ang AI"
+    },
+    {
+      "source": "শুধু উত্তর নয়—আপনাকে বুঝিয়ে শেখাবে",
+      "target": "Hindi lang sagot—ipapaliwanag ito sa iyo"
+    },
+    {
+      "source": "JLPT ব্যাকরণ, বাক্য সংশোধন, কথোপকথন, কুইজ ও অনুবাদ—N5, N4 বা N3 লেভেল বেছে নিয়ে বাংলায় শিখুন।",
+      "target": "JLPT Gramatika, Pagwawasto ng Pangungusap, Usapan, Pagsusulit at Pagsasalin—Pumili ng N5, N4 o N3 level at matuto."
+    },
+    {
+      "source": "AI Tutor খুলুন",
+      "target": "Buksan ang AI Tutor"
+    },
+    {
+      "source": "৫ প্রশ্ন",
+      "target": "5 Tanong"
+    },
+    {
+      "source": "অবশ্যই করতে হবে",
+      "target": "Kailangang gawin"
+    },
+    {
+      "source": "আজকের প্র্যাকটিস",
+      "target": "Pagsasanay Ngayon"
+    },
+    {
+      "source": "কুইজ শুরু করুন",
+      "target": "Simulan ang Pagsusulit"
+    },
+    {
+      "source": "শেখার যাত্রা",
+      "target": "Paglalakbay sa Pag-aaral"
+    },
+    {
+      "source": "স্বাগতম",
+      "target": "Maligayang pagdating"
+    },
+    {
+      "source": "—আজ কোথা থেকে শুরু করবেন?",
+      "target": "—Saan mo gustong magsimula ngayon?"
+    },
+    {
+      "source": "N5 দিয়ে ভিত্তি তৈরি",
+      "target": "Buuin ang pundasyon gamit ang N5"
+    },
+    {
+      "source": "কানা, শব্দ, কানজি ও basic grammar",
+      "target": "Kana, mga salita, kanji at basic grammar"
+    },
+    {
+      "source": "N4 দিয়ে বাক্য বাড়ান",
+      "target": "Palawakin ang mga pangungusap gamit ang N4"
+    },
+    {
+      "source": "দৈনন্দিন Japanese ও reading",
+      "target": "Pang-araw-araw na Hapon at pagbabasa"
+    },
+    {
+      "source": "N3 দিয়ে বাস্তব দক্ষতা",
+      "target": "Tunay na kasanayan gamit ang N3"
+    },
+    {
+      "source": "TRY! N3, Matome ও exam practice",
+      "target": "TRY! N3, Matome at pagsasanay sa eksamen"
+    },
+    {
+      "source": "আমাদের সম্পর্কে",
+      "target": "Tungkol sa Amin"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "Makipag-ugnayan"
+    },
+    {
+      "source": "© ২০২৬ আপনার নিহোন · Created by SAMMIR",
+      "target": "© 2026 আপনার নিহোন · Created by SAMMIR"
+    },
+    {
+      "source": "হোম",
+      "target": "Home"
+    },
+    {
+      "source": "আপনার নিহোন App",
+      "target": "আপনার নিহোন App"
+    },
+    {
+      "source": "ফোনে install করে দ্রুত খুলুন",
+      "target": "I-install sa telepono at buksan nang mabilis"
+    }
+  ]
+}

@@ -7,6 +7,9 @@
   var CACHE_VERSION = "20260909.4";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + CACHE_VERSION;
+  // Retained for compatibility with existing checks/callers. The runtime no
+  // longer stages a blocking overlay, so nothing waits on this value; the
+  // compact progress indicator is shown only while API work is outstanding.
   var MAX_BLOCKING_MS = 1800;
   var TRANSLATABLE_ATTRIBUTES = [
     "title", "placeholder", "aria-label", "aria-description", "alt", "label",
@@ -86,6 +89,23 @@
   }
   function containsLetters(value) {
     try { return /\p{L}/u.test(value); } catch (_error) { return /[A-Za-z\u0980-\u09ff\u3040-\u30ff\u3400-\u9fff]/.test(value); }
+  }
+
+  var BENGALI_DIGIT_MAP = { "০": "0", "১": "1", "২": "2", "৩": "3", "৪": "4", "৫": "5", "৬": "6", "৭": "7", "৮": "8", "৯": "9" };
+  // Every non-Bengali locale on this site uses Latin digits in its reviewed
+  // packs and shared UI strings (Japanese included), so Bengali digits are
+  // normalized to Latin digits client-side. The server already converts
+  // digits inside API translations; this covers dictionary/pack values and
+  // strings that never reach the API. Preserved nodes (Japanese study text,
+  // user content, the CV paper area) are never captured, so they are never
+  // rewritten. Bengali itself keeps its own digits.
+  function convertDigits(value, language) {
+    if (language === "bn" || value === null || value === undefined) return value;
+    return String(value).replace(/[০-৯]/g, function (digit) { return BENGALI_DIGIT_MAP[digit]; });
+  }
+  function isPureNumeral(value) {
+    var text = normalize(value);
+    return !!text && !containsLetters(text) && /[0-9০-৯]/.test(text);
   }
 
   function sharedDictionary(language) {
@@ -210,7 +230,9 @@
     knownTextNodes.forEach(function (node) {
       if (!node.isConnected || isPreservedTextNode(node)) return;
       var raw = originalText.get(node) || "";
-      if (needsTranslation(raw, language)) result.push({ kind: "text", node: node, source: normalize(raw), raw: raw });
+      // Pure-numeral strings are never sent to the translation API (they
+      // contain no letters), but they still need digit conversion.
+      if (needsTranslation(raw, language) || isPureNumeral(raw)) result.push({ kind: "text", node: node, source: normalize(raw), raw: raw });
     });
     knownAttributeElements.forEach(function (element) {
       if (!element.isConnected) return;
@@ -219,7 +241,7 @@
       map.forEach(function (raw, attribute) {
         // Public form hints and accessible names are UI, including Japanese-only instructions.
         var japaneseHint = language !== "bn" && language !== "ja" && isJapaneseOnly(raw);
-        if (shouldTranslateAttribute(element, attribute) && (needsTranslation(raw, language) || japaneseHint)) result.push({ kind: "attribute", node: element, attribute: attribute, source: normalize(raw), raw: raw });
+        if (shouldTranslateAttribute(element, attribute) && (needsTranslation(raw, language) || japaneseHint || isPureNumeral(raw))) result.push({ kind: "attribute", node: element, attribute: attribute, source: normalize(raw), raw: raw });
       });
     });
     return result;
@@ -234,7 +256,7 @@
     try {
       items.forEach(function (item) {
         if (isExactBrandName(item.source)) return;
-        var target = preserveBrandNames(item.source, translationTable.get(item.source));
+        var target = convertDigits(preserveBrandNames(item.source, translationTable.get(item.source)), activeLanguage);
         if (typeof target !== "string" || !target.trim()) return;
         if (item.kind === "text") item.node.nodeValue = preserveWhitespace(item.raw, target);
         else item.node.setAttribute(item.attribute, target.trim());
@@ -327,7 +349,10 @@
     if (!("caches" in window) || !sources.length) return;
     try {
       var entries = sources.filter(function (source) { return table.has(source); }).map(function (source) { return { source: source, target: preserveBrandNames(source, table.get(source)) }; });
-      if (entries.length !== sources.length) return;
+      // Partial snapshots are worth keeping: the reader merges them per
+      // string, so a page that only finished some chunks still reuses those
+      // translations on the next load instead of starting from zero.
+      if (!entries.length) return;
       var cache = await caches.open(CACHE_NAME);
       await cache.put(snapshotRequest(language, sources), new Response(JSON.stringify({ version: CACHE_VERSION, translations: entries }), { headers: { "content-type": "application/json; charset=utf-8" } }));
     } catch (_error) { /* Cache is an optimization only. */ }
@@ -421,6 +446,10 @@
   function showStatus(language, isError, progress) {
     if (!runtimeEnabled) return;
     var copy = languageMessages(language), layer = statusLayer();
+    // The status is only ever a small compact indicator in a corner of the
+    // screen. It never covers the page: the page stays visible and usable
+    // while translations stream in.
+    layer.classList.add("compact");
     layer.hidden = false; layer.classList.toggle("error", !!isError);
     document.documentElement.dataset.i18nReady = "false";
     layer.querySelector("[data-i18n-status-title]").textContent = isError ? copy.error : copy.loading;
@@ -435,8 +464,11 @@
   }
 
   async function runSync(blocking) {
+    // `blocking` is accepted for API compatibility with earlier callers, but
+    // a sync never blocks the page any more: cached and dictionary
+    // translations are applied first, the page stays visible and usable,
+    // and only a small compact indicator reports API progress.
     var language = window.AponarI18n.getLanguage(), serial = ++requestSerial;
-    var releaseTimer = 0;
     activeLanguage = language;
     activeController = new AbortController();
     var controller = activeController;
@@ -456,26 +488,26 @@
     sharedDictionary(language).forEach(function (target, source) { table.set(source, target); });
     applyTranslations(items, false);
     if (!sources.length) { clearPending(); hideStatus(); return; }
-    if (blocking !== false) {
-      statusLayer().classList.remove("compact");
-      showStatus(language, false);
-      releaseTimer = window.setTimeout(function () {
-        if (serial !== requestSerial || language !== activeLanguage) return;
-        showStatus(language, false);
-        statusLayer().classList.add("compact");
-      }, MAX_BLOCKING_MS);
-    } else if (sources.some(function(source){return !table.has(source);})) {
-      showStatus(language, false); statusLayer().classList.add("compact");
-    }
     try {
+      // Caches and reviewed packs are consulted BEFORE any progress
+      // indicator is shown, so a fully cached page never flashes one.
       var loaded = await Promise.all([loadReviewedPack(language), readSnapshot(language, sources), readDictionary(language)]);
       if (serial !== requestSerial || language !== activeLanguage) return;
       loaded[2].forEach(function (target, source) { translationTable.set(source, preserveBrandNames(source, target)); });
       loaded[1].forEach(function (target, source) { translationTable.set(source, preserveBrandNames(source, target)); });
       sharedDictionary(language).forEach(function (target, source) { table.set(source, target); });
       loaded[0].forEach(function (target, source) { translationTable.set(source, preserveBrandNames(source, target)); });
-      sources.forEach(function (source) { if (isExactBrandName(source)) translationTable.set(source, source); });
+      sources.forEach(function (source) {
+        if (isExactBrandName(source)) translationTable.set(source, source);
+        else if (isPureNumeral(source)) translationTable.set(source, convertDigits(source, language));
+      });
       applyTranslations(items, false);
+      if (!sources.some(function (source) { return !translationTable.has(source); })) {
+        applyTranslations(items, true);
+        hideStatus();
+        return;
+      }
+      showStatus(language, false);
       var failedChunks = await translateMissing(language, sources, function (done, total) {
         if (serial !== requestSerial || language !== activeLanguage) return;
         applyTranslations(items, false);
@@ -488,23 +520,20 @@
       if (failedChunks && sources.length >= 80) {
         applyTranslations(items, true);
         document.documentElement.dataset.i18nPartial = "true";
-        window.clearTimeout(releaseTimer);
         hideStatus();
+        Promise.all([writeSnapshot(language, sources, table), writeDictionary(language, table)]).catch(function () { /* Cache writes never block the UI. */ });
         return;
       }
       if (runtimeEnabled && sources.some(function (source) { return !translationTable.has(source); })) throw new Error("translation_coverage_incomplete");
       applyTranslations(items, true);
-      window.clearTimeout(releaseTimer);
       if (serial === requestSerial) hideStatus();
       Promise.all([writeSnapshot(language, sources, table), writeDictionary(language, table)]).catch(function () { /* Cache writes never block the UI. */ });
     } catch (error) {
       if (serial !== requestSerial) return;
-      window.clearTimeout(releaseTimer);
       console.error("Aponar Nihon full-page translation failed:", error);
       clearPending();
       document.documentElement.dataset.i18nReady = "false";
       showStatus(language, true);
-      statusLayer().classList.add("compact");
     }
   }
 

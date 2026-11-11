@@ -1,0 +1,238 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "quiz",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "JLPT কুইজ ও Practice Arena | আপনার নিহোন",
+      "target": "Đấu trường luyện tập & Trắc nghiệm JLPT | আপনার নিহোন"
+    },
+    {
+      "source": "JLPT কুইজ Arena",
+      "target": "Đấu trường trắc nghiệm JLPT"
+    },
+    {
+      "source": "হোম",
+      "target": "Trang chủ"
+    },
+    {
+      "source": "কুইজ",
+      "target": "Quiz"
+    },
+    {
+      "source": "ভুলকে score নয়,",
+      "target": "Biến lỗi sai thành điểm số,"
+    },
+    {
+      "source": "পরের lesson বানান",
+      "target": "Tạo bài học tiếp theo"
+    },
+    {
+      "source": "N5, N4 ও N3—level বেছে এক tap-এ quiz শুরু করুন। প্রতিটি উত্তরের সঙ্গে বাংলা explanation, part-by-part auto-save, daily challenge, AI quiz coach এবং ৩০টি full mock exam।",
+      "target": "Chọn cấp độ N5, N4 hoặc N3 và bắt đầu trắc nghiệm chỉ bằng một cú chạm. Đi kèm giải thích chi tiết bằng tiếng Việt cho từng đáp án, tự động lưu theo từng phần, thử thách hằng ngày, huấn luyện viên trắc nghiệm AI và 30 đề thi thử đầy đủ."
+    },
+    {
+      "source": "আজকের Challenge",
+      "target": "Thử thách hôm nay"
+    },
+    {
+      "source": "আপনার Practice Record",
+      "target": "Hồ sơ luyện tập của bạn"
+    },
+    {
+      "source": "Saved quiz ও mock result দেখা হচ্ছে…",
+      "target": "Đang tải kết quả trắc nghiệm và thi thử đã lưu…"
+    },
+    {
+      "source": "৩টি Level",
+      "target": "3 Cấp độ"
+    },
+    {
+      "source": "৪ Category",
+      "target": "4 Danh mục"
+    },
+    {
+      "source": "১২০ Quiz Set",
+      "target": "120 Bộ trắc nghiệm"
+    },
+    {
+      "source": "৩০ Full Mock",
+      "target": "30 Đề thi thử"
+    },
+    {
+      "source": "আপনার level-এ সরাসরি শুরু করুন",
+      "target": "Bắt đầu ngay với cấp độ của bạn"
+    },
+    {
+      "source": "Level card vocabulary দিয়ে শুরু করবে; quiz-এর ভেতরেই category ও Part 1–10 বদলাতে পারবেন।",
+      "target": "Thẻ cấp độ sẽ bắt đầu với từ vựng; bạn có thể thay đổi danh mục và Phần 1-10 ngay bên trong bài trắc nghiệm."
+    },
+    {
+      "source": "Basic Vocabulary, ১২০ Kanji, particle, conjugation ও ছোট Reading passage।",
+      "target": "Từ vựng cơ bản, 120 chữ Hán (Kanji), trợ từ, thể chia động từ và đoạn đọc hiểu ngắn."
+    },
+    {
+      "source": "বাংলা Explanation",
+      "target": "Giải thích bằng tiếng Việt"
+    },
+    {
+      "source": "N5 Quiz শুরু করুন",
+      "target": "Bắt đầu trắc nghiệm N5"
+    },
+    {
+      "source": "Lesson 26–50 vocabulary, contextual Kanji, Grammar usage ও longer Reading।",
+      "target": "Từ v ngữ bài 26-50, Kanji theo ngữ cảnh, cách dùng ngữ pháp và bài đọc dài hơn."
+    },
+    {
+      "source": "N4 Quiz শুরু করুন",
+      "target": "Bắt đầu trắc nghiệm N4"
+    },
+    {
+      "source": "Vocabulary, Kanji, Grammar ও Reading—প্রতিটি উত্তরের বাংলা অর্থ ও কারণ।",
+      "target": "Từ vựng, Kanji, Ngữ pháp và Đọc hiểu — ý nghĩa tiếng Việt và lý do cho từng đáp án."
+    },
+    {
+      "source": "N3 Quiz শুরু করুন",
+      "target": "Bắt đầu bài kiểm tra N3"
+    },
+    {
+      "source": "আজ কোন skill যাচাই করবেন?",
+      "target": "Hôm nay bạn muốn kiểm tra kỹ năng nào?"
+    },
+    {
+      "source": "অর্থ + context",
+      "target": "Ý nghĩa + bối cảnh"
+    },
+    {
+      "source": "সঠিক pattern",
+      "target": "Mẫu câu chính xác"
+    },
+    {
+      "source": "Practice থেকে full exam",
+      "target": "Từ luyện tập đến thi thử đầy đủ"
+    },
+    {
+      "source": "দ্রুত quiz দিয়ে দুর্বলতা বের করুন, AI দিয়ে কারণ বুঝুন, তারপর timer-সহ full mock দিন।",
+      "target": "Làm trắc nghiệm nhanh để tìm ra điểm yếu, hiểu nguyên nhân nhờ AI, sau đó thi thử đầy đủ có bấm giờ."
+    },
+    {
+      "source": "শুরু হয়নি",
+      "target": "Chưa bắt đầu"
+    },
+    {
+      "source": "N5, N4, N3—প্রতি level-এ ১০টি exam, real timing, Listening, resume ও ১৮০ নম্বরের marksheet।",
+      "target": "N5, N4, N3 — 10 bài thi mỗi cấp độ, thời gian thực, phần Nghe, tiếp tục làm bài và bảng điểm 180 điểm."
+    },
+    {
+      "source": "Mock Center খুলুন",
+      "target": "Mở Trung tâm thi thử"
+    },
+    {
+      "source": "একটানা timed question flow—notes ছাড়া নিজের concentration ও speed যাচাই করুন।",
+      "target": "Chuỗi câu hỏi tính giờ liên tục — kiểm tra sự tập trung và tốc độ của bản thân mà không cần ghi chú."
+    },
+    {
+      "source": "Exam Mode খুলুন",
+      "target": "Mở Chế độ thi"
+    },
+    {
+      "source": "একবারে একটি প্রশ্ন, আপনার attempt-এর পর marking, ছোট বাংলা explanation এবং পরের প্রশ্ন।",
+      "target": "Mỗi lần một câu hỏi, chấm điểm sau khi bạn làm bài, giải thích ngắn gọn bằng tiếng Việt và chuyển sang câu tiếp theo."
+    },
+    {
+      "source": "AI Coach খুলুন",
+      "target": "Mở Huấn luyện viên AI"
+    },
+    {
+      "source": "একটি ভুলকে চার ধাপে ঠিক করুন",
+      "target": "Khắc phục một lỗi sai qua bốn bước"
+    },
+    {
+      "source": "প্রথমবার notes ছাড়া উত্তর দিন—বর্তমান অবস্থাটা সত্যি করে জানুন।",
+      "target": "Trả lời lần đầu không cần ghi chú — biết rõ tình trạng thực tế của bạn."
+    },
+    {
+      "source": "Reason পড়ুন",
+      "target": "Đọc lý do"
+    },
+    {
+      "source": "সঠিক option নয়, কেন অন্যগুলো ভুল সেটিও এক লাইনে বলুন।",
+      "target": "Không chỉ đáp án đúng, hãy giải thích bằng một dòng lý do tại sao các lựa chọn khác lại sai."
+    },
+    {
+      "source": "Lesson-এ ফিরুন",
+      "target": "Quay lại bài học"
+    },
+    {
+      "source": "যে category দুর্বল, তার N5/N4/N3 full lesson page-এ revise করুন।",
+      "target": "Ôn tập lại trên trang bài học đầy đủ N5/N4/N3 của danh mục mà bạn còn yếu."
+    },
+    {
+      "source": "৭ দিন পরে retest",
+      "target": "Kiểm tra lại sau 7 ngày"
+    },
+    {
+      "source": "নতুন part বা full mock দিয়ে একই skill আবার যাচাই করুন।",
+      "target": "Kiểm tra lại cùng kỹ năng đó thông qua phần mới hoặc đề thi thử đầy đủ."
+    },
+    {
+      "source": "আজকের Test Routine",
+      "target": "Lịch trình Kiểm tra hôm nay"
+    },
+    {
+      "source": "ছোট checklist—exam habit ধীরে ধীরে শক্ত হবে।",
+      "target": "Checklist nhỏ—thói quen thi cử sẽ dần được củng cố."
+    },
+    {
+      "source": "0/6 শেষ",
+      "target": "Hoàn thành 0/6"
+    },
+    {
+      "source": "৮ প্রশ্নের warm-up",
+      "target": "Khởi động với 8 câu hỏi"
+    },
+    {
+      "source": "Notes ছাড়া attempt",
+      "target": "Làm bài không cần ghi chú"
+    },
+    {
+      "source": "সব explanation পড়া",
+      "target": "Đọc tất cả phần giải thích"
+    },
+    {
+      "source": "৩টি ভুল লিখে রাখা",
+      "target": "Ghi lại 3 lỗi sai"
+    },
+    {
+      "source": "দুর্বল lesson revise",
+      "target": "Ôn tập lại bài học còn yếu"
+    },
+    {
+      "source": "Retest date ঠিক করা",
+      "target": "Xác định ngày thi lại"
+    },
+    {
+      "source": "এক প্রশ্ন করে AI Quiz",
+      "target": "AI Quiz từng câu một"
+    },
+    {
+      "source": "Answer আগে দেখাবে না। আপনি চেষ্টা করলে mark, explain ও next question দেবে।",
+      "target": "Không hiển thị đáp án trước. Khi bạn thử làm, hệ thống sẽ chấm điểm, giải thích và chuyển sang câu hỏi tiếp theo."
+    },
+    {
+      "source": "AI Quiz শুরু করুন",
+      "target": "Bắt đầu AI Quiz"
+    },
+    {
+      "source": "আপনার নিহোন · Practice করুন, বুঝুন, আবার চেষ্টা করুন",
+      "target": "আপনার নিহোন · Luyện tập, thấu hiểu và thử lại"
+    },
+    {
+      "source": "✓ Practice plan সংরক্ষণ হয়েছে",
+      "target": "✓ Đã lưu kế hoạch luyện tập"
+    }
+  ]
+}

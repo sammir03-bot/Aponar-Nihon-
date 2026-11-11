@@ -1,0 +1,238 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "my",
+  "page": "quiz",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "JLPT কুইজ ও Practice Arena | আপনার নিহোন",
+      "target": "JLPT Quiz & Practice Arena | আপনার নিহোন"
+    },
+    {
+      "source": "JLPT কুইজ Arena",
+      "target": "JLPT Quiz Arena"
+    },
+    {
+      "source": "হোম",
+      "target": "ပင်မစာမျက်နှာ"
+    },
+    {
+      "source": "কুইজ",
+      "target": "Quiz"
+    },
+    {
+      "source": "ভুলকে score নয়,",
+      "target": "အမှللས་ကို score မဟုတ်ဘဲ၊"
+    },
+    {
+      "source": "পরের lesson বানান",
+      "target": "နောက် lesson ကို ဖန်တီးပါ"
+    },
+    {
+      "source": "N5, N4 ও N3—level বেছে এক tap-এ quiz শুরু করুন। প্রতিটি উত্তরের সঙ্গে বাংলা explanation, part-by-part auto-save, daily challenge, AI quiz coach এবং ৩০টি full mock exam।",
+      "target": "N5၊ N4 နှင့် N3 level ကို ရွေးချယ်ပြီး တစ်ချက်နှိပ်ရုံဖြင့် quiz ကို စတင်ပါ။ အဖြေတစ်ခုချင်းစီအတွက် မြန်မာလို ရှင်းလင်းချက်၊ အပိုင်းလိုက် auto-save၊ နေ့စဉ် challenge၊ AI quiz coach နှင့် 30 ခုသော full mock exam တို့ ပါဝင်ပါသည်။"
+    },
+    {
+      "source": "আজকের Challenge",
+      "target": "ယနေ့ Challenge"
+    },
+    {
+      "source": "আপনার Practice Record",
+      "target": "သင်၏ Practice Record"
+    },
+    {
+      "source": "Saved quiz ও mock result দেখা হচ্ছে…",
+      "target": "သိမ်းဆည်းထားသော quiz နှင့် mock result ကို ကြည့်ရှုနေသည်…"
+    },
+    {
+      "source": "৩টি Level",
+      "target": "Level 3 ခု"
+    },
+    {
+      "source": "৪ Category",
+      "target": "Category 4 ခု"
+    },
+    {
+      "source": "১২০ Quiz Set",
+      "target": "Quiz Set 120 ခု"
+    },
+    {
+      "source": "৩০ Full Mock",
+      "target": "Full Mock 30 ခု"
+    },
+    {
+      "source": "আপনার level-এ সরাসরি শুরু করুন",
+      "target": "သင့် level ဖြင့် တိုက်ရိုက် စတင်ပါ"
+    },
+    {
+      "source": "Level card vocabulary দিয়ে শুরু করবে; quiz-এর ভেতরেই category ও Part 1–10 বদলাতে পারবেন।",
+      "target": "Level card သည် vocabulary ဖြင့် စတင်မည်ဖြစ်ပြီး၊ quiz အတွင်းတွင်ပင် category နှင့် Part 1-10 ကို ပြောင်းလဲနိုင်ပါသည်။"
+    },
+    {
+      "source": "Basic Vocabulary, ১২০ Kanji, particle, conjugation ও ছোট Reading passage।",
+      "target": "Basic Vocabulary၊ Kanji 120 လုံး၊ particle၊ conjugation နှင့် Short Reading passage။"
+    },
+    {
+      "source": "বাংলা Explanation",
+      "target": "မြန်မာလို ရှင်းလင်းချက်"
+    },
+    {
+      "source": "N5 Quiz শুরু করুন",
+      "target": "N5 Quiz ကို စတင်ပါ"
+    },
+    {
+      "source": "Lesson 26–50 vocabulary, contextual Kanji, Grammar usage ও longer Reading।",
+      "target": "Lesson 26-50 vocabulary၊ contextual Kanji၊ Grammar usage နှင့် Longer Reading။"
+    },
+    {
+      "source": "N4 Quiz শুরু করুন",
+      "target": "N4 Quiz ကို စတင်ပါ"
+    },
+    {
+      "source": "Vocabulary, Kanji, Grammar ও Reading—প্রতিটি উত্তরের বাংলা অর্থ ও কারণ।",
+      "target": "Vocabulary၊ Kanji၊ Grammar နှင့် Reading—အဖြေတစ်ခုချင်းစီ၏ မြန်မာလို အဓိပ္ပာယ်နှင့် အကြောင်းရင်း။"
+    },
+    {
+      "source": "N3 Quiz শুরু করুন",
+      "target": "N3 Quiz ကို စတင်ပါ"
+    },
+    {
+      "source": "আজ কোন skill যাচাই করবেন?",
+      "target": "ယနေ့ မည်သည့် skill ကို စစ်ဆေးမည်နည်း။"
+    },
+    {
+      "source": "অর্থ + context",
+      "target": "အဓိပ္ပာယ် + context"
+    },
+    {
+      "source": "সঠিক pattern",
+      "target": "မှန်ကန်သော pattern"
+    },
+    {
+      "source": "Practice থেকে full exam",
+      "target": "Practice မှ full exam အထိ"
+    },
+    {
+      "source": "দ্রুত quiz দিয়ে দুর্বলতা বের করুন, AI দিয়ে কারণ বুঝুন, তারপর timer-সহ full mock দিন।",
+      "target": "Quiz ကို အမြန်ဖြေဆို၍ အားနည်းချက်ကို ရှာဖွေပါ၊ AI ဖြင့် အကြောင်းရင်းကို နားလည်ပါ၊ ထို့နောက် timer ဖြင့် full mock ကို ဖြေဆိုပါ။"
+    },
+    {
+      "source": "শুরু হয়নি",
+      "target": "မစရသေး"
+    },
+    {
+      "source": "N5, N4, N3—প্রতি level-এ ১০টি exam, real timing, Listening, resume ও ১৮০ নম্বরের marksheet।",
+      "target": "N5, N4, N3—level တစ်ခုချင်းစီတွင် exam 10 ခု၊ real timing၊ Listening၊ resume နှင့် မှတ်ဉာဏ်ရမှတ် 180 မှတ်ပါဝင်သော marksheet။"
+    },
+    {
+      "source": "Mock Center খুলুন",
+      "target": "Mock Center ကို ဖွင့်ပါ"
+    },
+    {
+      "source": "একটানা timed question flow—notes ছাড়া নিজের concentration ও speed যাচাই করুন।",
+      "target": "အချိန်သတ်မှတ်ထားသော question flow—notes မပါဘဲ မိမိ၏ concentration နှင့် speed ကို စစ်ဆေးပါ။"
+    },
+    {
+      "source": "Exam Mode খুলুন",
+      "target": "Exam Mode ကို ဖွင့်ပါ"
+    },
+    {
+      "source": "একবারে একটি প্রশ্ন, আপনার attempt-এর পর marking, ছোট বাংলা explanation এবং পরের প্রশ্ন।",
+      "target": "တစ်ကြိမ်လျှင် မေးခွန်းတစ်ခု၊ သင် ဖြေဆိုပြီးနောက် marking၊ မြန်မာလို အတိုစား ရှင်းလင်းချက်နှင့် နောက်မေးခွန်း။"
+    },
+    {
+      "source": "AI Coach খুলুন",
+      "target": "AI Coach ကို ဖွင့်ပါ"
+    },
+    {
+      "source": "একটি ভুলকে চার ধাপে ঠিক করুন",
+      "target": "အမှားတစ်ခုကို အဆင့်လေးဆင့်ဖြင့် ပြုပြင်ပါ"
+    },
+    {
+      "source": "প্রথমবার notes ছাড়া উত্তর দিন—বর্তমান অবস্থাটা সত্যি করে জানুন।",
+      "target": "ပထမအကြိမ်တွင် notes မပါဘဲ ဖြေဆိုပါ—လက်ရှိအခြေအနေကို အမှန်အတိုင်း သိရှိရမည်။"
+    },
+    {
+      "source": "Reason পড়ুন",
+      "target": "Reason ကို ဖတ်ပါ"
+    },
+    {
+      "source": "সঠিক option নয়, কেন অন্যগুলো ভুল সেটিও এক লাইনে বলুন।",
+      "target": "မှန်ကန်သော option သာမက၊ အခြားအရာများ 왜 မမှန်သည်ကိုလည်း တစ်ကြောင်းတည်းဖြင့် ဖော်ပြပေးပါသည်။"
+    },
+    {
+      "source": "Lesson-এ ফিরুন",
+      "target": "Lesson သို့ ပြန်သွားပါ"
+    },
+    {
+      "source": "যে category দুর্বল, তার N5/N4/N3 full lesson page-এ revise করুন।",
+      "target": "အားနည်းသော category ၏ N5/N4/N3 full lesson page တွင် ပြန်လည် revise လုပ်ပါ။"
+    },
+    {
+      "source": "৭ দিন পরে retest",
+      "target": "7 ရက်အကြာတွင် retest"
+    },
+    {
+      "source": "নতুন part বা full mock দিয়ে একই skill আবার যাচাই করুন।",
+      "target": "part အသစ် သို့မဟုတ် full mock ဖြင့် တူညီသော skill ကို ထပ်မံစစ်ဆေးပါ။"
+    },
+    {
+      "source": "আজকের Test Routine",
+      "target": "ယနေ့ Test Routine"
+    },
+    {
+      "source": "ছোট checklist—exam habit ধীরে ধীরে শক্ত হবে।",
+      "target": "သေးငယ်သော checklist—exam habit သည် ဖြည်းဖြည်းချင်း ခိုင်မာလာပါမည်။"
+    },
+    {
+      "source": "0/6 শেষ",
+      "target": "0/6 ပြီးဆုံး"
+    },
+    {
+      "source": "৮ প্রশ্নের warm-up",
+      "target": "မေးခွန်း 8 ခုပါသော warm-up"
+    },
+    {
+      "source": "Notes ছাড়া attempt",
+      "target": "Notes မပါဘဲ attempt လုပ်ရန်"
+    },
+    {
+      "source": "সব explanation পড়া",
+      "target": "explanation အားလုံးကို ဖတ်ရန်"
+    },
+    {
+      "source": "৩টি ভুল লিখে রাখা",
+      "target": "အမှား 3 ခုကို ရေးမှတ်ထားရန်"
+    },
+    {
+      "source": "দুর্বল lesson revise",
+      "target": "အားနည်းသော lesson ကို revise လုပ်ရန်"
+    },
+    {
+      "source": "Retest date ঠিক করা",
+      "target": "Retest date ကို သတ်မှတ်ရန်"
+    },
+    {
+      "source": "এক প্রশ্ন করে AI Quiz",
+      "target": "မေးခွန်းတစ်ပုဒ်စီဖြင့် AI Quiz"
+    },
+    {
+      "source": "Answer আগে দেখাবে না। আপনি চেষ্টা করলে mark, explain ও next question দেবে।",
+      "target": "အဖြေကို ဦးစွာမပြပါ။ သင်ကြိုးစားမှသာ mark, explanation နှင့် next question ကို ပေးပါလိမ့်မည်။"
+    },
+    {
+      "source": "AI Quiz শুরু করুন",
+      "target": "AI Quiz ကို စတင်ပါ"
+    },
+    {
+      "source": "আপনার নিহোন · Practice করুন, বুঝুন, আবার চেষ্টা করুন",
+      "target": "আপনার নিহোন · Practice လုပ်ပါ၊ နားလည်ပါ၊ ထပ်ကြိုးစားပါ"
+    },
+    {
+      "source": "✓ Practice plan সংরক্ষণ হয়েছে",
+      "target": "✓ Practice plan ကို သိမ်းဆည်းပြီးပါပြီ"
+    }
+  ]
+}
