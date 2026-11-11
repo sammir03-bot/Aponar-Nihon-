@@ -1,0 +1,170 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "japan-life",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "জাপান লাইফ গাইড বাংলায় | আপনার নিহোন",
+      "target": "Gabay sa Buhay sa Hapon sa Bengali | আপনার নিহোন"
+    },
+    {
+      "source": "জাপান লাইফ",
+      "target": "Buhay sa Japan"
+    },
+    {
+      "source": "হোম",
+      "target": "Home"
+    },
+    {
+      "source": "জাপানে নতুন? প্রথম দিন থেকে নিজের পায়ে দাঁড়ান",
+      "target": "Bago sa Hapon? Tumayo sa sarili mong mga paa mula sa unang araw"
+    },
+    {
+      "source": "বাসা, সিটি অফিস, ট্রেন, Google Maps-এর platform, IC card, পার্ট-টাইম চাকরি, ইন্টারভিউ ও দৈনন্দিন নিয়ম—সবকিছু ধাপে ধাপে বাংলায়।",
+      "target": "Pabahay, City Office, tren, platform ng Google Maps, IC card, part-time na trabaho, panayam, at pang-araw-araw na tuntunin—lahat ay sunud-sunod sa Bengali."
+    },
+    {
+      "source": "১০ ধাপের A–Z গাইড",
+      "target": "10-hakbang na gabay mula A hanggang Z"
+    },
+    {
+      "source": "জরুরি সহায়তা",
+      "target": "Tulong pang-emergency"
+    },
+    {
+      "source": "আপনার প্রয়োজন অনুযায়ী গাইড খুলুন",
+      "target": "Buksan ang gabay ayon sa iyong pangangailangan"
+    },
+    {
+      "source": "আগমনের পর",
+      "target": "Pagdating"
+    },
+    {
+      "source": "Residence Card, address, City Office, insurance ও প্রথম সপ্তাহের কাজ।",
+      "target": "Residence Card, address, City Office, insurance, at mga gawain sa unang linggo."
+    },
+    {
+      "source": "গাইড খুলুন",
+      "target": "Buksan ang gabay"
+    },
+    {
+      "source": "বাসা ও দৈনন্দিন জীবন",
+      "target": "Pabahay at Pang-araw-araw na Buhay"
+    },
+    {
+      "source": "গ্যাস, বিদ্যুৎ, পানি, ময়লা, কেনাকাটা ও apartment rules।",
+      "target": "Gas, kuryente, tubig, basura, pamimili, at mga patakaran sa apartment."
+    },
+    {
+      "source": "বাসার গাইড",
+      "target": "Gabay sa Pabahay"
+    },
+    {
+      "source": "ট্রেন ও Platform",
+      "target": "Tren at Platform"
+    },
+    {
+      "source": "লাইন, রঙ, direction, transfer, gate ও exit বোঝার সহজ নিয়ম।",
+      "target": "Mga madaling patakaran para maunawaan ang mga linya, kulay, direksyon, paglipat, gate, at exit."
+    },
+    {
+      "source": "ট্রেন গাইড",
+      "target": "Gabay sa Tren"
+    },
+    {
+      "source": "Google Maps ব্যবহার",
+      "target": "Paggamit ng Google Maps"
+    },
+    {
+      "source": "সময়, platform, train type, exit, fare ও transfer পড়া।",
+      "target": "Pag-unawa sa oras, platform, uri ng tren, exit, pamasahe, at paglipat."
+    },
+    {
+      "source": "Maps শিখুন",
+      "target": "Matuto ng Maps"
+    },
+    {
+      "source": "পার্ট-টাইম চাকরি",
+      "target": "Part-time na Trabaho"
+    },
+    {
+      "source": "Job site, আবেদন, ফোন, interview ও workplace Japanese।",
+      "target": "Job site, aplikasyon, tawag sa telepono, panayam, at Hapon sa lugar ng trabaho."
+    },
+    {
+      "source": "Job গাইড",
+      "target": "Gabay sa Trabaho"
+    },
+    {
+      "source": "পুলিশ, Ambulance, disaster, হারানো জিনিস ও দরকারি নম্বর।",
+      "target": "Pulis, ambulansya, sakuna, nawawalang gamit, at mga mahahalagang numero."
+    },
+    {
+      "source": "Emergency খুলুন",
+      "target": "Buksan ang Emergency"
+    },
+    {
+      "source": "留学 status, work permission ও প্রয়োজনীয় নিয়মের সহজ গাইড।",
+      "target": "Madaling gabay para sa status ng 留学 (pag-aaral), pahintulot sa trabaho, at mga kinakailangang tuntunin."
+    },
+    {
+      "source": "Visa গাইড",
+      "target": "Gabay sa Visa"
+    },
+    {
+      "source": "২৮ ঘণ্টা, সময়, কাজ ও দৈনন্দিন হিসাবের বাস্তব tools।",
+      "target": "28 na oras, oras, trabaho, at mga praktikal na tool para sa pang-araw-araw na kalkulasyon."
+    },
+    {
+      "source": "Toolkit খুলুন",
+      "target": "Buksan ang Toolkit"
+    },
+    {
+      "source": "নামাজ, halal food এবং জাপানে Muslim life-এর গাইড।",
+      "target": "Gabay para sa Namaz, halal na pagkain, at buhay Muslim sa Hapon."
+    },
+    {
+      "source": "প্রথম সপ্তাহে আগে যা করবেন",
+      "target": "Mga dapat gawin bago ang unang linggo"
+    },
+    {
+      "source": "Residence Card নিয়ে City Office-এ address register করুন।",
+      "target": "I-rehistro ang iyong address sa City Office gamit ang iyong Residence Card."
+    },
+    {
+      "source": "ফোন ও যাতায়াত",
+      "target": "Telepono at Transportasyon"
+    },
+    {
+      "source": "SIM, IC card এবং নিয়মিত route আগে বুঝে নিন।",
+      "target": "Alamin muna ang SIM, IC card, at ang regular na ruta."
+    },
+    {
+      "source": "জরুরি প্রস্তুতি",
+      "target": "Paghahanda sa Emergency"
+    },
+    {
+      "source": "নিজের address, school contact ও emergency number সংরক্ষণ করুন।",
+      "target": "I-save ang iyong address, contact sa paaralan, at emergency number."
+    },
+    {
+      "source": "দরকারি বাক্য",
+      "target": "Mahahalagang parirala"
+    },
+    {
+      "source": "ইন্টারভিউ",
+      "target": "Interview"
+    },
+    {
+      "source": "সহায়তা",
+      "target": "Tulong"
+    },
+    {
+      "source": "আপনার নিহোন · জাপানে নতুনদের বাংলা গাইড",
+      "target": "আপনার নিহোন · Gabay sa Bengali para sa mga bagong dumating sa Hapon"
+    }
+  ]
+}

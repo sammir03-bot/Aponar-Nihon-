@@ -1,0 +1,118 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "mock-test",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "JLPT N5 N4 N3 Mock Test Center | আপনার নিহোন",
+      "target": "Trung tâm thi thử JLPT N5 N4 N3 | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "হোমে ফিরুন",
+      "target": "Trang chủ"
+    },
+    {
+      "source": "N5, N4 ও N3-এ ১০টি করে ৩০টি পূর্ণ মক পরীক্ষা। বাংলা উত্তর ও ব্যাখ্যা, জাপানি অডিও, টাইমার এবং নিজের নামে মক সনদ।",
+      "target": "30 bài thi thử hoàn chỉnh với mỗi cấp độ N5, N4 và N3 gồm 10 đề. Có đáp án và giải thích tiếng Việt, âm thanh tiếng Nhật, đồng thời có bộ đếm thời gian và chứng chỉ thi thử mang tên bạn."
+    },
+    {
+      "source": "আলাদা প্রশ্নের সেট",
+      "target": "Bộ câu hỏi riêng biệt"
+    },
+    {
+      "source": "৩টি Level",
+      "target": "3 cấp độ"
+    },
+    {
+      "source": "উত্তর রিভিউ",
+      "target": "Xem lại đáp án"
+    },
+    {
+      "source": "আপনার লেভেল বাছাই করুন",
+      "target": "Chọn cấp độ của bạn"
+    },
+    {
+      "source": "প্রতিটি লেভেলে ১০টি পূর্ণ সেট। লেভেল বেছে এখানেই পরীক্ষা শুরু করুন।",
+      "target": "Mỗi cấp độ có 10 bộ đề hoàn chỉnh. Chọn cấp độ và bắt đầu làm bài thi tại đây."
+    },
+    {
+      "source": "20 + 40 + 30 = 90 মিনিট",
+      "target": "20 + 40 + 30 = 90 phút"
+    },
+    {
+      "source": "21 + 22 + 24 = 67 প্রশ্ন",
+      "target": "21 + 22 + 24 = 67 câu hỏi"
+    },
+    {
+      "source": "সোর্স ও নিজস্ব প্রশ্ন · জাপানি অডিও",
+      "target": "Nguồn và câu hỏi độc quyền · Âm thanh tiếng Nhật"
+    },
+    {
+      "source": "N5 Mock Test খুলুন",
+      "target": "Mở Bài thi thử N5"
+    },
+    {
+      "source": "25 + 55 + 35 = 115 মিনিট",
+      "target": "25 + 55 + 35 = 115 phút"
+    },
+    {
+      "source": "28 + 29 + 28 = 85 প্রশ্ন",
+      "target": "28 + 29 + 28 = 85 câu hỏi"
+    },
+    {
+      "source": "N4 Mock Test খুলুন",
+      "target": "Mở Bài thi thử N4"
+    },
+    {
+      "source": "30 + 70 + 40 = 140 মিনিট",
+      "target": "30 + 70 + 40 = 140 phút"
+    },
+    {
+      "source": "35 + 39 + 28 = 102 প্রশ্ন",
+      "target": "35 + 39 + 28 = 102 câu hỏi"
+    },
+    {
+      "source": "N3 Mock Test খুলুন",
+      "target": "Mở Bài thi thử N3"
+    },
+    {
+      "source": "প্রশ্ন ও অডিও:",
+      "target": "Câu hỏi và âm thanh:"
+    },
+    {
+      "source": "JapaneseTest4You এবং আপনার নিহোনের নিজস্ব প্রশ্ন। নতুন নিজস্ব লিসেনিংয়ে জাপানি কৃত্রিম কণ্ঠ। JLPT-এর সময় ও পাসসীমা অনুসরণ করা হয়েছে; ১৮০ নম্বরের স্কোর অনুশীলনের।",
+      "target": "JapaneseTest4You và các câu hỏi độc quyền của আপনার নিহোন. Phần nghe độc quyền mới sử dụng giọng đọc tổng hợp tiếng Nhật. Tuân theo thời gian và điểm đậu của JLPT; thực hành trên thang điểm 180 điểm."
+    },
+    {
+      "source": "উৎস ও ক্রেডিট",
+      "target": "Nguồn và ghi công"
+    },
+    {
+      "source": "© ২০২৬ আপনার নিহোন · JLPT Mock Test Center",
+      "target": "© 2026 আপনার নিহোন · Trung tâm thi thử JLPT"
+    },
+    {
+      "source": "হোম",
+      "target": "Trang chủ"
+    },
+    {
+      "source": "কুইজ",
+      "target": "Quiz"
+    },
+    {
+      "source": "গাইড",
+      "target": "Hướng dẫn"
+    },
+    {
+      "source": "মক টেস্ট",
+      "target": "Bài thi thử"
+    }
+  ]
+}

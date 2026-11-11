@@ -1,0 +1,254 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ur",
+  "page": "cv-builder",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "হোম",
+      "target": "ہوم"
+    },
+    {
+      "source": "ও",
+      "target": "یا"
+    },
+    {
+      "source": "বাংলায় বুঝে পূরণ করুন। বাংলা নির্দেশনা দেখে নিজের তথ্য লিখুন, Preview মিলিয়ে PDF হিসেবে সংরক্ষণ করুন।",
+      "target": "بنگالی میں سمجھ کر پُر کریں۔ بنگالی ہدایات دیکھ کر اپنی معلومات لکھیں، پریویو ملا کر بطور PDF محفوظ کریں۔"
+    },
+    {
+      "source": "এই ডিভাইসে draft সংরক্ষিত হয়",
+      "target": "اس ڈیوائس میں ڈرافٹ محفوظ ہوتا ہے"
+    },
+    {
+      "source": "আপনার তথ্য ও ছবি এই browser-এ থাকে",
+      "target": "آپ کی معلومات اور تصویر اس براؤزر میں رہتی ہیں"
+    },
+    {
+      "source": "ব্যক্তিগত",
+      "target": "ذاتی معلومات"
+    },
+    {
+      "source": "ইতিহাস",
+      "target": "تعلیم اور کام کا تجربہ"
+    },
+    {
+      "source": "আবেদন",
+      "target": "درخواست"
+    },
+    {
+      "source": "Template নির্বাচন",
+      "target": "ٹیمپلیٹ کا انتخاب"
+    },
+    {
+      "source": "কাজ অনুযায়ী CV type বেছে নিন",
+      "target": "کام کے لحاظ سے CV کی قسم چنیں"
+    },
+    {
+      "source": "কোনটা নেবেন?",
+      "target": "کون سا لیں گے؟"
+    },
+    {
+      "source": "Baito/コンビニ/restaurant হলে",
+      "target": "Baito/コンビニ/restaurant ہو تو"
+    },
+    {
+      "source": ", সাধারণ চাকরিতে",
+      "target": "، عام ملازمت میں"
+    },
+    {
+      "source": ", school/college শেষে first job হলে",
+      "target": ", اسکول/کالج کے بعد پہلی جاب ہو تو"
+    },
+    {
+      "source": ", experience-based full-time job হলে",
+      "target": ", تجربے پر مبنی فل ٹائم جاب ہو تو"
+    },
+    {
+      "source": "সাধারণ Japanese চাকরির CV",
+      "target": "عام جاپانی جاب کی CV"
+    },
+    {
+      "source": "Student, convenience store, restaurant ইত্যাদি",
+      "target": "طالب علم، کنوینینس اسٹور، ریسٹورانٹ وغیرہ"
+    },
+    {
+      "source": "Education ও potential-কে গুরুত্ব",
+      "target": "تعلیم اور صلاحیت کو اہمیت"
+    },
+    {
+      "source": "写真 — ছবি যোগ করুন",
+      "target": "写真 — تصویر شامل کریں"
+    },
+    {
+      "source": "ছবি সরান",
+      "target": "تصویر ہٹائیں"
+    },
+    {
+      "source": "JPG / PNG / WebP · ৩:৪ ছবি · এই ডিভাইসেই থাকে",
+      "target": "JPG / PNG / WebP · ۳:۴ تصویر · اسی ڈیوائس میں رہتی ہے"
+    },
+    {
+      "source": "ছবির মাপ",
+      "target": "تصویر کا سائز"
+    },
+    {
+      "source": "ডানে–বামে",
+      "target": "دائیں–بائیں"
+    },
+    {
+      "source": "উপরে–নিচে",
+      "target": "اوپر–نیچے"
+    },
+    {
+      "source": "CV-এর তারিখ — প্রয়োজনমতো বেছে নিন",
+      "target": "CV کی تاریخ — ضرورت کے مطابق چنیں"
+    },
+    {
+      "source": "পুরো নাম",
+      "target": "پورا نام"
+    },
+    {
+      "source": "নামের কাতাকানা",
+      "target": "نام کا کاتاکانا"
+    },
+    {
+      "source": "জন্মতারিখ",
+      "target": "تاریخ پیدائش"
+    },
+    {
+      "source": "未記載 / না লিখব",
+      "target": "未記載 / نہیں لکھیں گے"
+    },
+    {
+      "source": "男 / পুরুষ",
+      "target": "男 / مرد"
+    },
+    {
+      "source": "女 / নারী",
+      "target": "女 / عورت"
+    },
+    {
+      "source": "その他 / অন্যান্য",
+      "target": "その他 / دیگر"
+    },
+    {
+      "source": "জাতীয়তা",
+      "target": "قومیت"
+    },
+    {
+      "source": "মোবাইল নম্বর",
+      "target": "موبائل نمبر"
+    },
+    {
+      "source": "ইমেইল",
+      "target": "ای میل"
+    },
+    {
+      "source": "বর্তমান ঠিকানা + postal code",
+      "target": "موجودہ پتہ + پوسٹل کوڈ"
+    },
+    {
+      "source": "ঠিকানার কাতাকানা reading",
+      "target": "پتے کی کاتاکانا ریڈنگ"
+    },
+    {
+      "source": "Residence status / ভিসা",
+      "target": "Residence status / ویزا"
+    },
+    {
+      "source": "তারিখ অনুযায়ী লিখুন। 入学/卒業, 入社/退職 উল্লেখ করলে final CV সুন্দর হবে।",
+      "target": "تاریخ کے مطابق لکھیں۔ 入学/卒業, 入社/退職 کا ذکر کرنے سے فائنل CV بہتر بنے گی۔"
+    },
+    {
+      "source": "— শিক্ষাগত ইতিহাস",
+      "target": "— تعلیمی پس منظر"
+    },
+    {
+      "source": "学歴 যোগ করুন",
+      "target": "学歴 شامل کریں"
+    },
+    {
+      "source": "— কাজের ইতিহাস",
+      "target": "— کام کا پس منظر"
+    },
+    {
+      "source": "職歴 যোগ করুন",
+      "target": "職歴 شامل کریں"
+    },
+    {
+      "source": "— যোগ্যতা/লাইসেন্স",
+      "target": "— قابلیت/لائسنس"
+    },
+    {
+      "source": "資格 যোগ করুন",
+      "target": "資格 شامل کریں"
+    },
+    {
+      "source": "— Part-time তথ্য",
+      "target": "— پارٹ ٹائم معلومات"
+    },
+    {
+      "source": "স্কুলের ক্লাসের সময়",
+      "target": "اسکول کی کلاس کا وقت"
+    },
+    {
+      "source": "কোন দিন ও সময়ে কাজ করতে পারবেন",
+      "target": "آپ کس دن اور وقت پر کام کر سکتے ہیں"
+    },
+    {
+      "source": "কেন এই job চান + আপনার শক্তি · নিচের নমুনা সম্পাদনা করুন",
+      "target": "آپ کو یہ job کیوں چاہیے + آپ کی طاقت · نیچے دیے گئے نمونے میں ترمیم کریں"
+    },
+    {
+      "source": "অন্য কোনো বিশেষ অনুরোধ",
+      "target": "کوئی دوسری خاص درخواست"
+    },
+    {
+      "source": "আপনার কাজের অভিজ্ঞতার সংক্ষিপ্ত summary",
+      "target": "آپ کے کام کے تجربے کا مختصر summary"
+    },
+    {
+      "source": "Skills — প্রতি লাইনে একটি করে লিখতে পারেন",
+      "target": "Skills — ہر لائن میں ایک لکھ سکتے ہیں"
+    },
+    {
+      "source": "নিজের শক্তি ও কাজের উদাহরণ",
+      "target": "اپنی طاقت اور کام کی مثال"
+    },
+    {
+      "source": "শেষ ধাপ:",
+      "target": "آخری مرحلہ:"
+    },
+    {
+      "source": "নাম, তারিখ, ছবি ও লেখার বানান Preview-তে মিলিয়ে নিন। PDF / Print চাপলে browser-এর Print খুলবে; Destination থেকে",
+      "target": "Preview میں نام، تاریخ، تصویر اور لکھائی کی ہجے ملا لیں۔ PDF / Print دبانے پر browser کا Print کھل جائے گا؛ Destination سے"
+    },
+    {
+      "source": "বেছে নিন।",
+      "target": "منتخب کریں۔"
+    },
+    {
+      "source": "Backup ফেরত আনুন",
+      "target": "Backup واپس لائیں"
+    },
+    {
+      "source": "আগের ধাপ",
+      "target": "پچھلا مرحلہ"
+    },
+    {
+      "source": "পরের ধাপ",
+      "target": "اگلا مرحلہ"
+    },
+    {
+      "source": "নথির Preview",
+      "target": "دستاویز کا Preview"
+    },
+    {
+      "source": "বড় করে দেখুন",
+      "target": "بڑا کر کے دیکھیں"
+    }
+  ]
+}

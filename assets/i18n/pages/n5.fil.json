@@ -3,19 +3,292 @@
   "targetLanguage": "fil",
   "page": "n5",
   "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
   "entries": [
-    {"source": "হোম", "target": "Home"},
-    {"source": "ZERO থেকে প্রথম JLPT ধাপ", "target": "Ang una mong hakbang sa JLPT mula ZERO"},
-    {"source": "জাপানির শক্ত ভিত", "target": "Bumuo ng matibay na pundasyon sa Japanese"},
-    {"source": "N5 থেকেই তৈরি করুন", "target": "Magsimula sa N5"},
-    {"source": "হিরাগানা-কাতাকানা থেকে Vocabulary, ১২০টি Kanji, Minna Grammar, Reading, Quiz ও ১০টি Full Mock—প্রতিটি বিষয়ের নিজস্ব learning page এবং আপনার সত্যিকারের saved progress এক জায়গায়।", "target": "Mula Hiragana at Katakana hanggang Vocabulary, 120 Kanji, Minna Grammar, Reading, Quiz at 10 Full Mock—may sariling learning page ang bawat paksa at makikita sa iisang lugar ang tunay mong naka-save na progress."},
-    {"source": "প্রথম Lesson শুরু করুন", "target": "Simulan ang unang lesson"},
-    {"source": "আপনার N5 অগ্রগতি", "target": "Ang iyong N5 progress"},
-    {"source": "সংরক্ষিত lesson progress দেখা হচ্ছে…", "target": "Sinusuri ang naka-save mong lesson progress…"},
-    {"source": "যে skill দরকার, তার নিজস্ব page", "target": "May sariling page ang bawat skill"},
-    {"source": "কার্ড খুললেই index-এর ভিড় নয়—সেই বিষয়ের full-screen lesson app আসবে। সম্পন্ন lesson-এর progress এই dashboard-এ ফিরে দেখা যাবে।", "target": "Kapag nagbukas ka ng card, isang full-screen lesson app para sa paksang iyon ang lalabas sa halip na masikip na index. Babalik sa dashboard na ito ang progress ng mga natapos mong lesson."},
-    {"source": "N5 শেখা আরও সহজ করুন", "target": "Gawing mas madali ang pag-aaral ng N5"},
-    {"source": "N5 শেষ করার সঠিক ক্রম", "target": "Tamang pagkakasunod-sunod para matapos ang N5"},
-    {"source": "একসঙ্গে সব নয়—এই চার ধাপে এগোলে শেখা, recall ও exam practice ভারসাম্য থাকবে।", "target": "Huwag gawin nang sabay-sabay ang lahat—sa apat na hakbang na ito, magiging balanse ang pag-aaral, recall at exam practice."}
+    {
+      "source": "JLPT N5 Complete Learning Center | আপনার নিহোন",
+      "target": "JLPT N5 Complete Learning Center | আপনার নিহোন"
+    },
+    {
+      "source": "হোম",
+      "target": "Home"
+    },
+    {
+      "source": "ZERO থেকে প্রথম JLPT ধাপ",
+      "target": "Ang una mong hakbang sa JLPT mula ZERO"
+    },
+    {
+      "source": "জাপানির শক্ত ভিত",
+      "target": "Bumuo ng matibay na pundasyon sa Japanese"
+    },
+    {
+      "source": "N5 থেকেই তৈরি করুন",
+      "target": "Magsimula sa N5"
+    },
+    {
+      "source": "হিরাগানা-কাতাকানা থেকে Vocabulary, ১২০টি Kanji, Minna Grammar, Reading, Quiz ও ১০টি Full Mock—প্রতিটি বিষয়ের নিজস্ব learning page এবং আপনার সত্যিকারের saved progress এক জায়গায়।",
+      "target": "Mula Hiragana at Katakana hanggang Vocabulary, 120 Kanji, Minna Grammar, Reading, Quiz at 10 Full Mock—may sariling learning page ang bawat paksa at makikita sa iisang lugar ang tunay mong naka-save na progress."
+    },
+    {
+      "source": "প্রথম Lesson শুরু করুন",
+      "target": "Simulan ang unang lesson"
+    },
+    {
+      "source": "আপনার N5 অগ্রগতি",
+      "target": "Ang iyong N5 progress"
+    },
+    {
+      "source": "সংরক্ষিত lesson progress দেখা হচ্ছে…",
+      "target": "Sinusuri ang naka-save mong lesson progress…"
+    },
+    {
+      "source": "২৫ Lesson",
+      "target": "25 Lesson"
+    },
+    {
+      "source": "১২০ Kanji",
+      "target": "120 Kanji"
+    },
+    {
+      "source": "২৫ Grammar",
+      "target": "25 Grammar"
+    },
+    {
+      "source": "Minna ভিত্তিক path",
+      "target": "Batay sa Minna na landas"
+    },
+    {
+      "source": "১০ Full Mock",
+      "target": "10 Full Mock"
+    },
+    {
+      "source": "Timer + বাংলা review",
+      "target": "Timer + Bengali review"
+    },
+    {
+      "source": "যে skill দরকার, তার নিজস্ব page",
+      "target": "May sariling page ang bawat skill"
+    },
+    {
+      "source": "কার্ড খুললেই index-এর ভিড় নয়—সেই বিষয়ের full-screen lesson app আসবে। সম্পন্ন lesson-এর progress এই dashboard-এ ফিরে দেখা যাবে।",
+      "target": "Kapag nagbukas ka ng card, isang full-screen lesson app para sa paksang iyon ang lalabas sa halip na masikip na index. Babalik sa dashboard na ito ang progress ng mga natapos mong lesson."
+    },
+    {
+      "source": "সব রিসোর্স",
+      "target": "Lahat ng mga mapagkukunan"
+    },
+    {
+      "source": "শব্দ ও কানজি",
+      "target": "Mga Salita at Kanji"
+    },
+    {
+      "source": "গ্রামার",
+      "target": "Gramatika"
+    },
+    {
+      "source": "অনুশীলন",
+      "target": "Pagsasanay"
+    },
+    {
+      "source": "কোনো রিসোর্স পাওয়া যায়নি। অন্য শব্দ লিখুন বা সব রিসোর্স বেছে নিন।",
+      "target": "Walang nahanap na mapagkukunan. Mangyaring mag-type ng ibang salita o piliin ang lahat ng mga mapagkukunan."
+    },
+    {
+      "source": "0/25 সম্পন্ন",
+      "target": "0/25 nakumpleto"
+    },
+    {
+      "source": "বাংলা অর্থ, ব্যবহার, search, lesson filter এবং continue button-সহ ১–২৫ পর্যন্ত পূর্ণাঙ্গ শব্দভাণ্ডার।",
+      "target": "Kumpletong bokabularyo mula 1 hanggang 25 kasama ang kahulugan sa Bengali, paggamit, paghahanap, filter ng lesson, at pindutan ng pagpapatuloy."
+    },
+    {
+      "source": "বাংলা",
+      "target": "Bengali"
+    },
+    {
+      "source": "শব্দ শেখা শুরু করুন",
+      "target": "Simulang matuto ng mga salita"
+    },
+    {
+      "source": "0/120 সম্পন্ন",
+      "target": "0/120 nakumpleto"
+    },
+    {
+      "source": "১২০টি N5 Kanji",
+      "target": "120 N5 Kanji"
+    },
+    {
+      "source": "Flip card, reading, শব্দ, writing trace, quiz ও learned tracker দিয়ে Kanji চোখে-হাতে মনে রাখুন।",
+      "target": "Tandaan ang Kanji sa pamamagitan ng paghipo at kamay gamit ang flip card, pagbabasa, mga salita, pag-trace ng pagsulat, pagsusulit, at natutunang tracker."
+    },
+    {
+      "source": "Kanji Lab খুলুন",
+      "target": "Buksan ang Kanji Lab"
+    },
+    {
+      "source": "Lesson 1–25, formula, বাংলা ব্যাখ্যা, real example, search ও lesson completion tracker।",
+      "target": "Lesson 1–25, pormula, paliwanag sa Bengali, tunay na halimbawa, paghahanap, at tracker ng pagkumpleto ng lesson."
+    },
+    {
+      "source": "Grammar path খুলুন",
+      "target": "Buksan ang landas ng Gramatika"
+    },
+    {
+      "source": "শুরু হয়নি",
+      "target": "Hindi pa nasisimulan"
+    },
+    {
+      "source": "১০টি আলাদা reading part—ছোট passage, শব্দের reading, comprehension ও বাংলা সহায়তা।",
+      "target": "10 magkakaibang bahagi ng pagbabasa—maikling passage, pagbabasa ng mga salita, pag-unawa, at tulong sa Bengali."
+    },
+    {
+      "source": "Part 1 থেকে পড়ুন",
+      "target": "Magbasa mula sa Part 1"
+    },
+    {
+      "source": "Vocabulary, Kanji, Grammar ও Reading—উত্তর দিলেই বাংলা explanation এবং progress auto-save।",
+      "target": "Bokabularyo, Kanji, Gramatika, at Pagbabasa—may kasamang paliwanag sa Bengali pagkatapos sumagot at awtomatikong pag-save ng progreso."
+    },
+    {
+      "source": "দ্রুত Quiz দিন",
+      "target": "Mabilis na kumuha ng Quiz"
+    },
+    {
+      "source": "বাস্তব timing, Listening, auto-save, ১৮০ নম্বরের marksheet ও ভুলের বাংলা review-সহ ১০টি exam।",
+      "target": "10 pagsusulit na may totoong timing, Pakikinig, awtomatikong pag-save, 180-puntos na marksheet, at pagsusuri ng mga pagkakamali sa Bengali."
+    },
+    {
+      "source": "Mock Test খুলুন",
+      "target": "Buksan ang Mock Test"
+    },
+    {
+      "source": "N5 শেখা আরও সহজ করুন",
+      "target": "Gawing mas madali ang pag-aaral ng N5"
+    },
+    {
+      "source": "হিরাগানা-কাতাকানা",
+      "target": "Hiragana at Katakana"
+    },
+    {
+      "source": "অক্ষর আগে শক্ত করুন",
+      "target": "Palakasin muna ang mga titik"
+    },
+    {
+      "source": "Confusing pattern তুলনা",
+      "target": "Paghambingin ang mga nakalilitong pattern"
+    },
+    {
+      "source": "আজকের Challenge",
+      "target": "Hamon ngayon"
+    },
+    {
+      "source": "প্রতিদিন নতুন part",
+      "target": "Bagong bahagi araw-araw"
+    },
+    {
+      "source": "দরকারি বাক্য",
+      "target": "Mahahalagang parirala"
+    },
+    {
+      "source": "বাস্তব জীবনের Japanese",
+      "target": "Hapon sa totoong buhay"
+    },
+    {
+      "source": "N5 শেষ করার সঠিক ক্রম",
+      "target": "Tamang pagkakasunod-sunod para matapos ang N5"
+    },
+    {
+      "source": "একসঙ্গে সব নয়—এই চার ধাপে এগোলে শেখা, recall ও exam practice ভারসাম্য থাকবে।",
+      "target": "Huwag gawin nang sabay-sabay ang lahat—sa apat na hakbang na ito, magiging balanse ang pag-aaral, recall at exam practice."
+    },
+    {
+      "source": "কানা + Vocabulary",
+      "target": "Kana + Bokabularyo"
+    },
+    {
+      "source": "প্রথমে Kana নিশ্চিত করুন; প্রতিদিন এক lesson-এর শব্দ জোরে পড়ুন।",
+      "target": "Siguraduhin muna ang Kana; basahin nang malakas ang mga salita ng isang aralin araw-araw."
+    },
+    {
+      "source": "সেই দিনের শব্দের Kanji এবং একটি sentence pattern একসঙ্গে নিন।",
+      "target": "Kunin nang magkasama ang Kanji ng mga salita para sa araw na iyon at ang isang pattern ng pangungusap."
+    },
+    {
+      "source": "নোট না দেখে অর্থ বলুন, তারপর ছোট passage দিয়ে বোঝা যাচাই করুন।",
+      "target": "Sabihin ang kahulugan nang hindi tumitingin sa mga tala, pagkatapos ay suriin ang pag-unawa gamit ang isang maikling passage."
+    },
+    {
+      "source": "Category quiz-এর ভুল revise করে timed mock-এ বসুন।",
+      "target": "Rebyuhin ang mga pagkakamali sa pagsusulit ay thuộc sa kategorya at umupo para sa timed mock."
+    },
+    {
+      "source": "এই সপ্তাহের N5 plan",
+      "target": "Planong N5 para sa linggong ito"
+    },
+    {
+      "source": "নিজে tick দিন—এই device-এ checklist থাকবে।",
+      "target": "Lagyan ng tsek ang iyong sarili—magkakaroon ng checklist sa device na ito."
+    },
+    {
+      "source": "0/6 শেষ",
+      "target": "0/6 tapos na"
+    },
+    {
+      "source": "২টি Vocabulary lesson",
+      "target": "2 Vocabulary lesson"
+    },
+    {
+      "source": "১৫টি Kanji recall",
+      "target": "15 Kanji recall"
+    },
+    {
+      "source": "২টি Grammar pattern",
+      "target": "2 Grammar pattern"
+    },
+    {
+      "source": "১টি Reading passage",
+      "target": "1 Reading passage"
+    },
+    {
+      "source": "১টি Category quiz",
+      "target": "1 Category quiz"
+    },
+    {
+      "source": "ভুলের ১৫ মিনিট review",
+      "target": "15 minutong review ng mga pagkakamali"
+    },
+    {
+      "source": "না বুঝলে N5 AI Coach",
+      "target": "Kung hindi maintindihan, nandito ang N5 AI Coach"
+    },
+    {
+      "source": "আপনার level আগে থেকেই N5 থাকবে। Grammar, sentence correction বা ছোট quiz—যেটা চান লিখে পাঠান।",
+      "target": "Ang level mo ay N5 na simula pa lang. I-type at ipadala ang gusto mo—grammar, sentence correction, o maliit na quiz."
+    },
+    {
+      "source": "Tutor খুলুন",
+      "target": "Buksan ang Tutor"
+    },
+    {
+      "source": "পরের ধাপ N4",
+      "target": "Susunod na hakbang N4"
+    },
+    {
+      "source": "সব Quiz",
+      "target": "Lahat ng Quiz"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "Makipag-ugnayan"
+    },
+    {
+      "source": "আপনার নিহোন · বাংলায় জাপানি শেখার পূর্ণাঙ্গ পথ",
+      "target": "আপনার নিহোন · Ang kumpletong daan sa pag-aaral ng Hapon sa Tagalog"
+    },
+    {
+      "source": "✓ Progress সংরক্ষণ হয়েছে",
+      "target": "✓ Na-save ang Progress"
+    }
   ]
 }

@@ -1,0 +1,254 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "cv-builder",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "হোম",
+      "target": "Home"
+    },
+    {
+      "source": "ও",
+      "target": "o"
+    },
+    {
+      "source": "বাংলায় বুঝে পূরণ করুন। বাংলা নির্দেশনা দেখে নিজের তথ্য লিখুন, Preview মিলিয়ে PDF হিসেবে সংরক্ষণ করুন।",
+      "target": "Unawain at punan sa Tagalog. Isulat ang iyong sariling impormasyon ayon sa mga tagubilin sa Tagalog, i-tsek ang Preview at i-save bilang PDF."
+    },
+    {
+      "source": "এই ডিভাইসে draft সংরক্ষিত হয়",
+      "target": "Ang draft ay naka-save sa device na ito"
+    },
+    {
+      "source": "আপনার তথ্য ও ছবি এই browser-এ থাকে",
+      "target": "Ang iyong impormasyon at larawan ay nananatili sa browser na ito"
+    },
+    {
+      "source": "ব্যক্তিগত",
+      "target": "Personal na impormasyon"
+    },
+    {
+      "source": "ইতিহাস",
+      "target": "Edukasyon at karanasan sa trabaho"
+    },
+    {
+      "source": "আবেদন",
+      "target": "Aplikasyon"
+    },
+    {
+      "source": "Template নির্বাচন",
+      "target": "Piliin ang Template"
+    },
+    {
+      "source": "কাজ অনুযায়ী CV type বেছে নিন",
+      "target": "Piliin ang uri ng CV ayon sa iyong layunin"
+    },
+    {
+      "source": "কোনটা নেবেন?",
+      "target": "Alin ang pipiliin mo?"
+    },
+    {
+      "source": "Baito/コンビニ/restaurant হলে",
+      "target": "Para sa Baito/コンビニ/restaurant,"
+    },
+    {
+      "source": ", সাধারণ চাকরিতে",
+      "target": ", para sa pangkalahatang trabaho,"
+    },
+    {
+      "source": ", school/college শেষে first job হলে",
+      "target": ", kung ito ang iyong unang trabaho pagkatapos ng school/college,"
+    },
+    {
+      "source": ", experience-based full-time job হলে",
+      "target": ", para sa full-time job na nakabatay sa karanasan,"
+    },
+    {
+      "source": "সাধারণ Japanese চাকরির CV",
+      "target": "Karaniwang CV para sa trabaho sa Japan"
+    },
+    {
+      "source": "Student, convenience store, restaurant ইত্যাদি",
+      "target": "Para sa mga estudyante, convenience store, restaurant, atbp."
+    },
+    {
+      "source": "Education ও potential-কে গুরুত্ব",
+      "target": "Binibigyang-diin ang edukasyon at potensyal"
+    },
+    {
+      "source": "写真 — ছবি যোগ করুন",
+      "target": "写真 — Magdagdag ng larawan"
+    },
+    {
+      "source": "ছবি সরান",
+      "target": "Alisin ang larawan"
+    },
+    {
+      "source": "JPG / PNG / WebP · ৩:৪ ছবি · এই ডিভাইসেই থাকে",
+      "target": "JPG / PNG / WebP · 3:4 na larawan · Nananatili sa device na ito"
+    },
+    {
+      "source": "ছবির মাপ",
+      "target": "Laki ng larawan"
+    },
+    {
+      "source": "ডানে–বামে",
+      "target": "Kaliwa–kanan"
+    },
+    {
+      "source": "উপরে–নিচে",
+      "target": "Taas–baba"
+    },
+    {
+      "source": "CV-এর তারিখ — প্রয়োজনমতো বেছে নিন",
+      "target": "Petsa ng CV — Piliin kung kinakailangan"
+    },
+    {
+      "source": "পুরো নাম",
+      "target": "Buong pangalan"
+    },
+    {
+      "source": "নামের কাতাকানা",
+      "target": "Katakana ng pangalan"
+    },
+    {
+      "source": "জন্মতারিখ",
+      "target": "Petsa ng kapanganakan"
+    },
+    {
+      "source": "未記載 / না লিখব",
+      "target": "未記載 / Huwag nang isulat"
+    },
+    {
+      "source": "男 / পুরুষ",
+      "target": "男 / Lalaki"
+    },
+    {
+      "source": "女 / নারী",
+      "target": "女 / Babae"
+    },
+    {
+      "source": "その他 / অন্যান্য",
+      "target": "その他 / Iba pa"
+    },
+    {
+      "source": "জাতীয়তা",
+      "target": "Nasyonalidad"
+    },
+    {
+      "source": "মোবাইল নম্বর",
+      "target": "Numero ng mobile"
+    },
+    {
+      "source": "ইমেইল",
+      "target": "Email"
+    },
+    {
+      "source": "বর্তমান ঠিকানা + postal code",
+      "target": "Kasalukuyang address + postal code"
+    },
+    {
+      "source": "ঠিকানার কাতাকানা reading",
+      "target": "Pagbasa ng address sa katakana"
+    },
+    {
+      "source": "Residence status / ভিসা",
+      "target": "Residence status / Visa"
+    },
+    {
+      "source": "তারিখ অনুযায়ী লিখুন। 入学/卒業, 入社/退職 উল্লেখ করলে final CV সুন্দর হবে।",
+      "target": "Isulat ayon sa petsa. Mas magiging maganda ang final CV kung babanggitin ang 入学/卒業 (Pagpasok/Pagtapos) at 入社/退職 (Pagpasok/Pag-alis sa kumpanya)."
+    },
+    {
+      "source": "— শিক্ষাগত ইতিহাস",
+      "target": "— Kasaysayan ng Edukasyon"
+    },
+    {
+      "source": "学歴 যোগ করুন",
+      "target": "Magdagdag ng 学歴"
+    },
+    {
+      "source": "— কাজের ইতিহাস",
+      "target": "— Kasaysayan ng Trabaho"
+    },
+    {
+      "source": "職歴 যোগ করুন",
+      "target": "Magdagdag ng 職歴"
+    },
+    {
+      "source": "— যোগ্যতা/লাইসেন্স",
+      "target": "— Mga Kwalipikasyon/Lisensya"
+    },
+    {
+      "source": "資格 যোগ করুন",
+      "target": "Magdagdag ng 資格"
+    },
+    {
+      "source": "— Part-time তথ্য",
+      "target": "— Impormasyon sa Part-time"
+    },
+    {
+      "source": "স্কুলের ক্লাসের সময়",
+      "target": "Oras ng klase sa eskuwelahan"
+    },
+    {
+      "source": "কোন দিন ও সময়ে কাজ করতে পারবেন",
+      "target": "Aling araw at oras ka maaaring magtrabaho"
+    },
+    {
+      "source": "কেন এই job চান + আপনার শক্তি · নিচের নমুনা সম্পাদনা করুন",
+      "target": "Bakit mo gusto ang trabahong ito + Ang iyong mga kalakasan · Mangyaring i-edit ang halimbawa sa ibaba"
+    },
+    {
+      "source": "অন্য কোনো বিশেষ অনুরোধ",
+      "target": "Anumang iba pang espesyal na kahilingan"
+    },
+    {
+      "source": "আপনার কাজের অভিজ্ঞতার সংক্ষিপ্ত summary",
+      "target": "Maikling buod ng iyong karanasan sa trabaho"
+    },
+    {
+      "source": "Skills — প্রতি লাইনে একটি করে লিখতে পারেন",
+      "target": "Skills — Maaari kang magsulit ng isa sa bawat linya"
+    },
+    {
+      "source": "নিজের শক্তি ও কাজের উদাহরণ",
+      "target": "Sariling mga kalakasan at mga halimbawa ng trabaho"
+    },
+    {
+      "source": "শেষ ধাপ:",
+      "target": "Huling hakbang:"
+    },
+    {
+      "source": "নাম, তারিখ, ছবি ও লেখার বানান Preview-তে মিলিয়ে নিন। PDF / Print চাপলে browser-এর Print খুলবে; Destination থেকে",
+      "target": "Suriin ang pangalan, petsa, larawan at baybay ng teksto sa Preview. Ang pagpindot sa PDF / Print ay magbubukas ng Print ng browser; mula sa Destination"
+    },
+    {
+      "source": "বেছে নিন।",
+      "target": "Piliin."
+    },
+    {
+      "source": "Backup ফেরত আনুন",
+      "target": "Ibalik ang Backup"
+    },
+    {
+      "source": "আগের ধাপ",
+      "target": "Nakaraang hakbang"
+    },
+    {
+      "source": "পরের ধাপ",
+      "target": "Susunod na hakbang"
+    },
+    {
+      "source": "নথির Preview",
+      "target": "Preview ng dokumento"
+    },
+    {
+      "source": "বড় করে দেখুন",
+      "target": "Tingnan nang malaki"
+    }
+  ]
+}

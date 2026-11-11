@@ -1,0 +1,246 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ur",
+  "page": "index",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "আপনার নিহোন | JLPT N5 N4 N3 ও জাপান লাইফ গাইড",
+      "target": "آپ کا نہون | JLPT N5 N4 N3 اور جاپان لائف گائیڈ"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "বাং",
+      "target": "بنگلہ"
+    },
+    {
+      "source": "কানজি",
+      "target": "کانجی"
+    },
+    {
+      "source": "ভোকাব",
+      "target": "ووکب"
+    },
+    {
+      "source": "গ্রামার",
+      "target": "گرامر"
+    },
+    {
+      "source": "কথা বলা",
+      "target": "بات چیت"
+    },
+    {
+      "source": "এক জায়গায় সবকিছু",
+      "target": "سب کچھ ایک جگہ"
+    },
+    {
+      "source": "সব গুরুত্বপূর্ণ সেকশন",
+      "target": "تمام اہم حصے"
+    },
+    {
+      "source": "বেসিক কোর্স",
+      "target": "بنیادی کورس"
+    },
+    {
+      "source": "পরবর্তী ধাপ",
+      "target": "اگلا مرحلہ"
+    },
+    {
+      "source": "ইন্টারমিডিয়েট",
+      "target": "درمیانی"
+    },
+    {
+      "source": "N5 · N4 · N3 স্মার্ট রিভিউ",
+      "target": "N5 · N4 · N3 اسمارٹ ریویو"
+    },
+    {
+      "source": "পরীক্ষার আগে সব একসাথে",
+      "target": "امتحان سے پہلے سب ایک ساتھ"
+    },
+    {
+      "source": "শুনুন · উত্তর দিন · ভেঙে শিখুন",
+      "target": "سنیے · جواب دیجیے · توڑ کر سیکھیے"
+    },
+    {
+      "source": "কুইজ",
+      "target": "کوئز"
+    },
+    {
+      "source": "ফ্রি প্র্যাকটিস",
+      "target": "مفت مشق"
+    },
+    {
+      "source": "AI টিউটর",
+      "target": "AI Tutor"
+    },
+    {
+      "source": "বাংলায় জিজ্ঞাসা",
+      "target": "بنگلہ میں پوچھیں"
+    },
+    {
+      "source": "পরীক্ষা প্র্যাকটিস",
+      "target": "امتحان کی مشق"
+    },
+    {
+      "source": "ইন্টারভিউ",
+      "target": "انٹرویو"
+    },
+    {
+      "source": "চাকরি ও এম্বাসি",
+      "target": "ملازمت اور سفارت خانہ"
+    },
+    {
+      "source": "সম্পূর্ণ গাইড",
+      "target": "مکمل گائیڈ"
+    },
+    {
+      "source": "দরকারি বাক্য",
+      "target": "ضروری جملے"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "گفتگو"
+    },
+    {
+      "source": "জাপান লাইফ",
+      "target": "جاپان لائف"
+    },
+    {
+      "source": "নতুনদের গাইড",
+      "target": "نئے لوگوں کی گائیڈ"
+    },
+    {
+      "source": "হিরাগানা-কানা",
+      "target": "ہیراگانا اور کاتاکانا"
+    },
+    {
+      "source": "অক্ষর শেখা",
+      "target": "حروف سیکھیں"
+    },
+    {
+      "source": "স্টাডি লাইব্রেরি",
+      "target": "اسٹڈی لائبریری"
+    },
+    {
+      "source": "২৮h + বাস্তব টুল",
+      "target": "28h + حقیقی ٹولز"
+    },
+    {
+      "source": "履歴書 তৈরি",
+      "target": "履歴書 تیار کریں"
+    },
+    {
+      "source": "নামাজ · হালাল",
+      "target": "نماز · حلال"
+    },
+    {
+      "source": "রেট · রেমিট্যান্স",
+      "target": "ریٹ · ترسیلات زر"
+    },
+    {
+      "source": "স্টাডি গাইড",
+      "target": "مطالعے کی رہنمائی"
+    },
+    {
+      "source": "শেখার রোডম্যাপ",
+      "target": "سیکھنے کا روڈ میپ"
+    },
+    {
+      "source": "নতুন AI শেখার অভিজ্ঞতা",
+      "target": "نیا AI سیکھنے کا تجربہ"
+    },
+    {
+      "source": "শুধু উত্তর নয়—আপনাকে বুঝিয়ে শেখাবে",
+      "target": "صرف جواب نہیں—آپ کو سمجھا کر سکھائے گا"
+    },
+    {
+      "source": "JLPT ব্যাকরণ, বাক্য সংশোধন, কথোপকথন, কুইজ ও অনুবাদ—N5, N4 বা N3 লেভেল বেছে নিয়ে বাংলায় শিখুন।",
+      "target": "JLPT گرامر, جملے کی درستگی, بات چیت, کوئز اور ترجمہ—N5, N4 یا N3 لیول منتخب کر کے بنگلہ میں سیکھیے۔"
+    },
+    {
+      "source": "AI Tutor খুলুন",
+      "target": "AI Tutor کھولیں"
+    },
+    {
+      "source": "৫ প্রশ্ন",
+      "target": "5 سوالات"
+    },
+    {
+      "source": "অবশ্যই করতে হবে",
+      "target": "لازمي کرنا ہے"
+    },
+    {
+      "source": "আজকের প্র্যাকটিস",
+      "target": "آج کی پریکٹس"
+    },
+    {
+      "source": "কুইজ শুরু করুন",
+      "target": "کوئز شروع کریں"
+    },
+    {
+      "source": "শেখার যাত্রা",
+      "target": "سیکھنے کا سفر"
+    },
+    {
+      "source": "স্বাগতম",
+      "target": "خوش آمدید"
+    },
+    {
+      "source": "—আজ কোথা থেকে শুরু করবেন?",
+      "target": "—آج کہاں سے شروع کریں گے؟"
+    },
+    {
+      "source": "N5 দিয়ে ভিত্তি তৈরি",
+      "target": "N5 سے بنیاد بنائیں"
+    },
+    {
+      "source": "কানা, শব্দ, কানজি ও basic grammar",
+      "target": "کانا, الفاظ, کانجی اور basic grammar"
+    },
+    {
+      "source": "N4 দিয়ে বাক্য বাড়ান",
+      "target": "N4 سے جملے بڑھائیں"
+    },
+    {
+      "source": "দৈনন্দিন Japanese ও reading",
+      "target": "روزمرہ کی Japanese اور reading"
+    },
+    {
+      "source": "N3 দিয়ে বাস্তব দক্ষতা",
+      "target": "N3 سے حقیقی مہارت"
+    },
+    {
+      "source": "TRY! N3, Matome ও exam practice",
+      "target": "TRY! N3, Matome اور exam practice"
+    },
+    {
+      "source": "আমাদের সম্পর্কে",
+      "target": "ہمارے بارے میں"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "رابطہ"
+    },
+    {
+      "source": "© ২০২৬ আপনার নিহোন · Created by SAMMIR",
+      "target": "© 2026 آپ کا نیہون · Created by SAMMIR"
+    },
+    {
+      "source": "হোম",
+      "target": "ہوم"
+    },
+    {
+      "source": "আপনার নিহোন App",
+      "target": "آپ کا نیہون App"
+    },
+    {
+      "source": "ফোনে install করে দ্রুত খুলুন",
+      "target": "فون میں install کر کے جلدی کھولیں"
+    }
+  ]
+}

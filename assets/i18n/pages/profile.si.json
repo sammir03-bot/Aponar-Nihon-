@@ -1,0 +1,210 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "profile",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "জাপানি শেখার পূর্ণাঙ্গ প্ল্যাটফর্ম",
+      "target": "සියලු දෙනා සඳහා ජපන් භාෂා ඉගෙනීම"
+    },
+    {
+      "source": "হোম",
+      "target": "මුල් පිටුව"
+    },
+    {
+      "source": "অ্যাডমিন",
+      "target": "පරිපාලක"
+    },
+    {
+      "source": "লগআউট",
+      "target": "ඉවත් වන්න"
+    },
+    {
+      "source": "ইমেইল ভেরিফাই হয়নি",
+      "target": "විද්‍යුත් තැපෑල තහවුරු කර නොමැත"
+    },
+    {
+      "source": "প্রয়োজনীয় তথ্য পূরণ করলে 100% হবে",
+      "target": "අවශ්‍ය තොරතුරු සම්පූර්ණ කළ විට 100% ක් වනු ඇත"
+    },
+    {
+      "source": "নাম",
+      "target": "නම"
+    },
+    {
+      "source": "স্কুল",
+      "target": "පාසල"
+    },
+    {
+      "source": "লোকেশন",
+      "target": "ස්ථානය"
+    },
+    {
+      "source": "লক্ষ্য",
+      "target": "ඉලක්කය"
+    },
+    {
+      "source": "জন্মতারিখ",
+      "target": "උපන් දිනය"
+    },
+    {
+      "source": "প্রোফাইল আপডেট",
+      "target": "פרופילה යාවත්කාලීන කරන්න"
+    },
+    {
+      "source": "তথ্যগুলো ঠিক করে নিরাপদভাবে Save করুন",
+      "target": "තොරතුරු නිවැරදි කර ආරක්ෂිතව සුරකින්න (Save කරන්න)"
+    },
+    {
+      "source": "ব্যক্তিগত তথ্য",
+      "target": "පෞද්ගලික තොරතුරු"
+    },
+    {
+      "source": "আপনার মূল পরিচিতি",
+      "target": "ඔබේ මූලික හැඳින්වීම"
+    },
+    {
+      "source": "পুরো নাম",
+      "target": "සම්පූර්ණ නම"
+    },
+    {
+      "source": "লিঙ্গ",
+      "target": "ලිංගභේදය"
+    },
+    {
+      "source": "নির্বাচন করুন",
+      "target": "තෝරන්න"
+    },
+    {
+      "source": "পুরুষ",
+      "target": "පිරිමි"
+    },
+    {
+      "source": "নারী",
+      "target": "ගැහැණු"
+    },
+    {
+      "source": "বলতে চাই না",
+      "target": "ප්‍රකාශ කිරීමට අවශ්‍ය නැත"
+    },
+    {
+      "source": "জাতীয়তা",
+      "target": "ජාතිකත්වය"
+    },
+    {
+      "source": "পড়াশোনা ও JLPT",
+      "target": "අධ්‍යාපනය සහ JLPT"
+    },
+    {
+      "source": "আপনার স্কুল ও শেখার লক্ষ্য",
+      "target": "ඔබේ පාසල සහ ඉගෙනීමේ ඉලක්කය"
+    },
+    {
+      "source": "স্কুল / প্রতিষ্ঠান",
+      "target": "පාසල / ආයතනය"
+    },
+    {
+      "source": "দৈনিক পড়ার সময়",
+      "target": "දෛනික කියවීමේ කාලය"
+    },
+    {
+      "source": "15 মিনিট",
+      "target": "မိနစ် 15"
+    },
+    {
+      "source": "30 মিনিট",
+      "target": "မိနစ် 30"
+    },
+    {
+      "source": "45 মিনিট",
+      "target": "မိနစ် 45"
+    },
+    {
+      "source": "1 ঘণ্টা",
+      "target": "පැය 1"
+    },
+    {
+      "source": "1.5 ঘণ্টা",
+      "target": "පැය 1.5"
+    },
+    {
+      "source": "2 ঘণ্টা",
+      "target": "පැය 2"
+    },
+    {
+      "source": "যোগাযোগ ও অবস্থান",
+      "target": "සම්බන්ධතා සහ පිහිටීම"
+    },
+    {
+      "source": "বর্তমান যোগাযোগের তথ্য",
+      "target": "වත්මන් සම්බන්ධතා තොරතුරු"
+    },
+    {
+      "source": "বর্তমান City",
+      "target": "වත්මන් නගරය (City)"
+    },
+    {
+      "source": "ফোন নম্বর",
+      "target": "දුරකථන අංකය"
+    },
+    {
+      "source": "ঐচ্ছিক",
+      "target": "විකල්ප"
+    },
+    {
+      "source": "নিজের সম্পর্কে",
+      "target": "ම' පිළිබඳව"
+    },
+    {
+      "source": "সংক্ষিপ্ত learning profile",
+      "target": "කෙටි ඉගෙනුම් පැතිකඩ (learning profile)"
+    },
+    {
+      "source": "বাতিল",
+      "target": "අවලංගු කරන්න"
+    },
+    {
+      "source": "নিজের ছবি যোগ বা পরিবর্তন করুন",
+      "target": "ඔබේ පින්තූරය එක් කරන්න හෝ වෙනස් කරන්න"
+    },
+    {
+      "source": "ছবি বেছে নিন",
+      "target": "පින්තූරයක් තෝරන්න"
+    },
+    {
+      "source": "Account photo ব্যবহার",
+      "target": "ගිණුමේ පින්තූරය (Account photo) භාවිතා කරන්න"
+    },
+    {
+      "source": "JPG, PNG বা WebP · সর্বোচ্চ 2 MB",
+      "target": "JPG, PNG හෝ WebP · උපරිම 2 MB"
+    },
+    {
+      "source": "ইমেইল",
+      "target": "විද්‍යුත් තැපෑල"
+    },
+    {
+      "source": "বাংলা",
+      "target": "බෙงගාලි"
+    },
+    {
+      "source": "ভাষা Home থেকে পরিবর্তন করা যায়",
+      "target": "මුල් පිටුවෙන් (Home) භාෂාව වෙනස් කළ හැක"
+    },
+    {
+      "source": "Profile load হচ্ছে…",
+      "target": "පැතිකඩ (Profile) පූරණය වෙමින් පවතී…"
+    },
+    {
+      "source": "অ্যাকাউন্ট মুছলে আপনার profile ও learning data স্থায়ীভাবে মুছে যেতে পারে।",
+      "target": "ගිණුම මැකුවහොත් ඔබේ පැතිකඩ සහ ඉගෙනුම් දත්ත ස්ථිරවම මකා දැමිය හැක."
+    },
+    {
+      "source": "Delete options খুলুন",
+      "target": "Delete options විවෘත කරන්න"
+    }
+  ]
+}

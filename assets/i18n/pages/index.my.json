@@ -1,0 +1,246 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "my",
+  "page": "index",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "আপনার নিহোন | JLPT N5 N4 N3 ও জাপান লাইফ গাইড",
+      "target": "আপনার নিহোন | JLPT N5 N4 N3 နှင့် ဂျပန်ဘဝလမ်းညွှန်"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "বাং",
+      "target": "ဘန်"
+    },
+    {
+      "source": "কানজি",
+      "target": "ကန်ဂျီ"
+    },
+    {
+      "source": "ভোকাব",
+      "target": "ဝေါဟာရ"
+    },
+    {
+      "source": "গ্রামার",
+      "target": "သဒ္ဒါ"
+    },
+    {
+      "source": "কথা বলা",
+      "target": "စကားပြော"
+    },
+    {
+      "source": "এক জায়গায় সবকিছু",
+      "target": "အားလုံးတစ်နေရာတည်း"
+    },
+    {
+      "source": "সব গুরুত্বপূর্ণ সেকশন",
+      "target": "အရေးကြီးသောအပိုင်းများ"
+    },
+    {
+      "source": "বেসিক কোর্স",
+      "target": "အခြေခံသင်တန်း"
+    },
+    {
+      "source": "পরবর্তী ধাপ",
+      "target": "နောက်တစ်ဆင့်"
+    },
+    {
+      "source": "ইন্টারমিডিয়েট",
+      "target": "အလယ်အလတ်"
+    },
+    {
+      "source": "N5 · N4 · N3 স্মার্ট রিভিউ",
+      "target": "N5 · N4 · N3 စမတ်သုံးသပ်ချက်"
+    },
+    {
+      "source": "পরীক্ষার আগে সব একসাথে",
+      "target": "စာမေးပွဲမတိုင်မီ အားလုံးပေါင်းစပ်"
+    },
+    {
+      "source": "শুনুন · উত্তর দিন · ভেঙে শিখুন",
+      "target": "နားထောင်ပါ · ဖြေပါ · ခွဲခြမ်းစိတ်ဖြာ လေ့လာပါ"
+    },
+    {
+      "source": "কুইজ",
+      "target": "Quiz"
+    },
+    {
+      "source": "ফ্রি প্র্যাকটিস",
+      "target": "အခမဲ့လေ့ကျင့်ရန်"
+    },
+    {
+      "source": "AI টিউটর",
+      "target": "AI Tutor"
+    },
+    {
+      "source": "বাংলায় জিজ্ঞাসা",
+      "target": "ဗမာလို မေးမြန်းရန်"
+    },
+    {
+      "source": "পরীক্ষা প্র্যাকটিস",
+      "target": "စာမေးပွဲလေ့ကျင့်မှု"
+    },
+    {
+      "source": "ইন্টারভিউ",
+      "target": "အင်တာဗျူး"
+    },
+    {
+      "source": "চাকরি ও এম্বাসি",
+      "target": "အလုပ်နှင့် သံရုံး"
+    },
+    {
+      "source": "সম্পূর্ণ গাইড",
+      "target": "လမ်းညွှန်အပြည့်အစုံ"
+    },
+    {
+      "source": "দরকারি বাক্য",
+      "target": "အသုံးဝင်သောစကားစုများ"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "စကားပြော"
+    },
+    {
+      "source": "জাপান লাইফ",
+      "target": "ဂျပန်ဘဝ"
+    },
+    {
+      "source": "নতুনদের গাইড",
+      "target": "အသစ်ရောက်သူလမ်းညွှန်"
+    },
+    {
+      "source": "হিরাগানা-কানা",
+      "target": "Hiragana & Katakana"
+    },
+    {
+      "source": "অক্ষর শেখা",
+      "target": "အက္ခရာလေ့လာရန်"
+    },
+    {
+      "source": "স্টাডি লাইব্রেরি",
+      "target": "လေ့လာရေးစာကြည့်တိုက်"
+    },
+    {
+      "source": "২৮h + বাস্তব টুল",
+      "target": "28h + လက်တွေ့ကျသော ကိရိယာများ"
+    },
+    {
+      "source": "履歴書 তৈরি",
+      "target": "履歴書 ရေးဆွဲခြင်း"
+    },
+    {
+      "source": "নামাজ · হালাল",
+      "target": "ဝတ်ပြုရန် · ဟာလာလ်"
+    },
+    {
+      "source": "রেট · রেমিট্যান্স",
+      "target": "ငွေလဲနှုန်း · ငွေလွှဲပို့ခြင်း"
+    },
+    {
+      "source": "স্টাডি গাইড",
+      "target": "လေ့လာမှု လမ်းညွှန်"
+    },
+    {
+      "source": "শেখার রোডম্যাপ",
+      "target": "လေ့လာရေးလမ်းပြမြေပုံ"
+    },
+    {
+      "source": "নতুন AI শেখার অভিজ্ঞতা",
+      "target": "AI ဖြင့် အသစ်ဆန်းဆုံး သင်ယူမှုအတွေ့အကြုံ"
+    },
+    {
+      "source": "শুধু উত্তর নয়—আপনাকে বুঝিয়ে শেখাবে",
+      "target": "အဖြေသက်သက်မဟုတ်ဘဲ—သင့်ကို နားလည်အောင် သင်ကြားပေးပါမည်"
+    },
+    {
+      "source": "JLPT ব্যাকরণ, বাক্য সংশোধন, কথোপকথন, কুইজ ও অনুবাদ—N5, N4 বা N3 লেভেল বেছে নিয়ে বাংলায় শিখুন।",
+      "target": "JLPT သဒ္ဒါ၊ வாக்கிய ပြင်ဆင်မှု၊ စကားပြောဆိုမှု၊ ပဟေဠိနှင့် ဘာသာပြန်ဆိုမှု— N5၊ N4 သို့မဟုတ် N3 အဆင့်ကို ရွေးချယ်ပြီး မြန်မာလို လေ့လာပါ။"
+    },
+    {
+      "source": "AI Tutor খুলুন",
+      "target": "AI Tutor ကို ဖွင့်ရန်"
+    },
+    {
+      "source": "৫ প্রশ্ন",
+      "target": "5 မေးခွန်း"
+    },
+    {
+      "source": "অবশ্যই করতে হবে",
+      "target": "မဖြစ်မနေ လုပ်ဆောင်ရမည့်"
+    },
+    {
+      "source": "আজকের প্র্যাকটিস",
+      "target": "ယနေ့အတွက် လေ့ကျင့်ခန်း"
+    },
+    {
+      "source": "কুইজ শুরু করুন",
+      "target": "ပဟေဠိ စတင်ရန်"
+    },
+    {
+      "source": "শেখার যাত্রা",
+      "target": "သင်ယူမှုခရီးစဉ်"
+    },
+    {
+      "source": "স্বাগতম",
+      "target": "ကြိုဆိုပါတယ်"
+    },
+    {
+      "source": "—আজ কোথা থেকে শুরু করবেন?",
+      "target": "—ယနေ့ ဘယ်ကနေ စတင်မလဲ?"
+    },
+    {
+      "source": "N5 দিয়ে ভিত্তি তৈরি",
+      "target": "N5 ဖြင့် အခြေခံတည်ဆောက်ရန်"
+    },
+    {
+      "source": "কানা, শব্দ, কানজি ও basic grammar",
+      "target": "ခနား၊ စကားလုံး၊ ကန်ဂျီနှင့် အခြေခံသဒ္ဒါ"
+    },
+    {
+      "source": "N4 দিয়ে বাক্য বাড়ান",
+      "target": "N4 ဖြင့် ဝကျ တိုးချဲ့ရန်"
+    },
+    {
+      "source": "দৈনন্দিন Japanese ও reading",
+      "target": "နေ့စဉ်သုံး Japanese နှင့် ဖတ်ရှုခြင်း"
+    },
+    {
+      "source": "N3 দিয়ে বাস্তব দক্ষতা",
+      "target": "N3 ဖြင့် လက်တွေ့ကျွမ်းကျင်မှု"
+    },
+    {
+      "source": "TRY! N3, Matome ও exam practice",
+      "target": "TRY! N3, Matome နှင့် စာမေးပွဲလေ့ကျင့်ခန်း"
+    },
+    {
+      "source": "আমাদের সম্পর্কে",
+      "target": "ကျွန်ုပ်တို့အကြောင်း"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "ဆက်သွယ်ရန်"
+    },
+    {
+      "source": "© ২০২৬ আপনার নিহোন · Created by SAMMIR",
+      "target": "© 2026 আপনার নিহোন · Created by SAMMIR"
+    },
+    {
+      "source": "হোম",
+      "target": "ပင်မစာမျက်နှာ"
+    },
+    {
+      "source": "আপনার নিহোন App",
+      "target": "আপনার নিহোন App"
+    },
+    {
+      "source": "ফোনে install করে দ্রুত খুলুন",
+      "target": "ဖုန်းတွင် install လုပ်ပြီး အမြန်ဖွင့်ပါ"
+    }
+  ]
+}

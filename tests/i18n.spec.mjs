@@ -65,20 +65,24 @@ test('legacy profile language labels normalize to locale codes', async ({ page }
   await expect.poll(() => page.evaluate(() => localStorage.getItem('aponarNihonLanguage'))).toBe('vi');
 });
 
-test('the language picker stays on home while the saved choice applies everywhere', async ({ page }) => {
+test('the language picker is available on every page and the saved choice applies everywhere', async ({ page }) => {
   await page.goto('/');
   await expect(page.locator(languageButton)).toBeVisible();
   await page.locator(languageButton).click();
   await page.locator('[data-language-option="vi"]').click();
 
   await page.goto('/about.html');
-  await expect(page.locator(languageButton)).toHaveCount(0);
+  await expect(page.locator(languageButton)).toBeVisible();
   await expect(page.locator('html')).toHaveAttribute('lang', 'vi');
   await expect(page.locator('h1')).toHaveText('Về chúng tôi');
   await expect(page.getByText('আপনার নিহোন', { exact: true }).first()).toBeVisible();
 
   await page.goto('/tutor-section.html');
-  await expect(page.locator(languageButton)).toHaveCount(0);
+  await expect(page.locator(languageButton)).toBeVisible();
+  await expect(page.locator('html')).toHaveAttribute('lang', 'vi');
+
+  await page.goto('/n5-grammar.html');
+  await expect(page.locator(languageButton)).toBeVisible();
   await expect(page.locator('html')).toHaveAttribute('lang', 'vi');
 
   await page.goto('/');
@@ -100,7 +104,7 @@ test('Bangla leaves the original page copy untouched and makes no translation re
   await page.goto('/privacy-policy.html');
   await expect(page.locator('html')).toHaveAttribute('lang', 'bn');
   await expect(page.locator('h1')).toHaveText('Privacy Policy / গোপনীয়তা নীতি');
-  await expect(page.locator(languageButton)).toHaveCount(0);
+  await expect(page.locator(languageButton)).toBeVisible();
   expect(translationRequests).toBe(0);
 });
 
@@ -260,7 +264,7 @@ test('selecting a reviewed language opens its canonical locale route', async ({ 
   await page.goto('/n5.html');
 
   await page.waitForURL('**/fil/n5/');
-  await expect(page.locator(languageButton)).toHaveCount(0);
+  await expect(page.locator(languageButton)).toBeVisible();
   await expect(page.locator('html')).toHaveAttribute('lang', 'fil');
   await expect(page.locator('.lh-hero h1')).toContainText('Bumuo ng matibay na pundasyon sa Japanese');
   await expect(page.locator('.lh-brand-copy small')).toHaveText('BEGINNER · 日本語能力試験');

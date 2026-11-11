@@ -1,0 +1,210 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "profile",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "জাপানি শেখার পূর্ণাঙ্গ প্ল্যাটফর্ম",
+      "target": "みんなの日本語学習プラットフォーム"
+    },
+    {
+      "source": "হোম",
+      "target": "ホーム"
+    },
+    {
+      "source": "অ্যাডমিন",
+      "target": "管理者"
+    },
+    {
+      "source": "লগআউট",
+      "target": "ログアウト"
+    },
+    {
+      "source": "ইমেইল ভেরিফাই হয়নি",
+      "target": "メールアドレスが認証されていません"
+    },
+    {
+      "source": "প্রয়োজনীয় তথ্য পূরণ করলে 100% হবে",
+      "target": "必要な情報を入力すると100%になります"
+    },
+    {
+      "source": "নাম",
+      "target": "名前"
+    },
+    {
+      "source": "স্কুল",
+      "target": "学校"
+    },
+    {
+      "source": "লোকেশন",
+      "target": "地域"
+    },
+    {
+      "source": "লক্ষ্য",
+      "target": "目標"
+    },
+    {
+      "source": "জন্মতারিখ",
+      "target": "生年月日"
+    },
+    {
+      "source": "প্রোফাইল আপডেট",
+      "target": "プロフィール更新"
+    },
+    {
+      "source": "তথ্যগুলো ঠিক করে নিরাপদভাবে Save করুন",
+      "target": "情報を確認して安全に保存してください"
+    },
+    {
+      "source": "ব্যক্তিগত তথ্য",
+      "target": "個人情報"
+    },
+    {
+      "source": "আপনার মূল পরিচিতি",
+      "target": "基本情報"
+    },
+    {
+      "source": "পুরো নাম",
+      "target": "氏名"
+    },
+    {
+      "source": "লিঙ্গ",
+      "target": "性別"
+    },
+    {
+      "source": "নির্বাচন করুন",
+      "target": "選択してください"
+    },
+    {
+      "source": "পুরুষ",
+      "target": "男性"
+    },
+    {
+      "source": "নারী",
+      "target": "女性"
+    },
+    {
+      "source": "বলতে চাই না",
+      "target": "回答しない"
+    },
+    {
+      "source": "জাতীয়তা",
+      "target": "国籍"
+    },
+    {
+      "source": "পড়াশোনা ও JLPT",
+      "target": "学習とJLPT"
+    },
+    {
+      "source": "আপনার স্কুল ও শেখার লক্ষ্য",
+      "target": "学校と学習目標"
+    },
+    {
+      "source": "স্কুল / প্রতিষ্ঠান",
+      "target": "学校 / 所属機関"
+    },
+    {
+      "source": "দৈনিক পড়ার সময়",
+      "target": "1日の学習時間"
+    },
+    {
+      "source": "15 মিনিট",
+      "target": "15分"
+    },
+    {
+      "source": "30 মিনিট",
+      "target": "30分"
+    },
+    {
+      "source": "45 মিনিট",
+      "target": "45分"
+    },
+    {
+      "source": "1 ঘণ্টা",
+      "target": "1時間"
+    },
+    {
+      "source": "1.5 ঘণ্টা",
+      "target": "1.5時間"
+    },
+    {
+      "source": "2 ঘণ্টা",
+      "target": "2時間"
+    },
+    {
+      "source": "যোগাযোগ ও অবস্থান",
+      "target": "連絡先と居住地"
+    },
+    {
+      "source": "বর্তমান যোগাযোগের তথ্য",
+      "target": "現在の連絡先情報"
+    },
+    {
+      "source": "বর্তমান City",
+      "target": "現在の都市"
+    },
+    {
+      "source": "ফোন নম্বর",
+      "target": "電話番号"
+    },
+    {
+      "source": "ঐচ্ছিক",
+      "target": "任意"
+    },
+    {
+      "source": "নিজের সম্পর্কে",
+      "target": "自己紹介"
+    },
+    {
+      "source": "সংক্ষিপ্ত learning profile",
+      "target": "簡単な学習プロフィール"
+    },
+    {
+      "source": "বাতিল",
+      "target": "キャンセル"
+    },
+    {
+      "source": "নিজের ছবি যোগ বা পরিবর্তন করুন",
+      "target": "写真を追加または変更"
+    },
+    {
+      "source": "ছবি বেছে নিন",
+      "target": "写真を選択"
+    },
+    {
+      "source": "Account photo ব্যবহার",
+      "target": "アカウント写真を使用"
+    },
+    {
+      "source": "JPG, PNG বা WebP · সর্বোচ্চ 2 MB",
+      "target": "JPG、PNG、または WebP · 最大 2 MB"
+    },
+    {
+      "source": "ইমেইল",
+      "target": "メールアドレス"
+    },
+    {
+      "source": "বাংলা",
+      "target": "ベンガル語"
+    },
+    {
+      "source": "ভাষা Home থেকে পরিবর্তন করা যায়",
+      "target": "言語はホームから変更できます"
+    },
+    {
+      "source": "Profile load হচ্ছে…",
+      "target": "プロフィールを読み込み中…"
+    },
+    {
+      "source": "অ্যাকাউন্ট মুছলে আপনার profile ও learning data স্থায়ীভাবে মুছে যেতে পারে।",
+      "target": "アカウントを削除すると、プロフィールと学習データが完全に削除される可能性があります。"
+    },
+    {
+      "source": "Delete options খুলুন",
+      "target": "削除オプションを開く"
+    }
+  ]
+}

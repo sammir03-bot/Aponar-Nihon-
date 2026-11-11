@@ -1,0 +1,254 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "cv-builder",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "হোম",
+      "target": "Trang chủ"
+    },
+    {
+      "source": "ও",
+      "target": "Hoặc"
+    },
+    {
+      "source": "বাংলায় বুঝে পূরণ করুন। বাংলা নির্দেশনা দেখে নিজের তথ্য লিখুন, Preview মিলিয়ে PDF হিসেবে সংরক্ষণ করুন।",
+      "target": "Hiểu bằng tiếng Bengal và điền vào. Nhớ xem hướng dẫn tiếng Bengal để viết thông tin của bạn, kiểm tra bản xem trước (Preview) và lưu lại dưới dạng PDF."
+    },
+    {
+      "source": "এই ডিভাইসে draft সংরক্ষিত হয়",
+      "target": "Bản nháp được lưu trên thiết bị này"
+    },
+    {
+      "source": "আপনার তথ্য ও ছবি এই browser-এ থাকে",
+      "target": "Thông tin và ảnh của bạn được lưu trong trình duyệt này"
+    },
+    {
+      "source": "ব্যক্তিগত",
+      "target": "Thông tin cá nhân"
+    },
+    {
+      "source": "ইতিহাস",
+      "target": "Học vấn và kinh nghiệm"
+    },
+    {
+      "source": "আবেদন",
+      "target": "Ứng tuyển"
+    },
+    {
+      "source": "Template নির্বাচন",
+      "target": "Chọn mẫu (Template)"
+    },
+    {
+      "source": "কাজ অনুযায়ী CV type বেছে নিন",
+      "target": "Chọn loại CV phù hợp với công việc"
+    },
+    {
+      "source": "কোনটা নেবেন?",
+      "target": "Nên chọn cái nào?"
+    },
+    {
+      "source": "Baito/コンビニ/restaurant হলে",
+      "target": "Dành cho Baito / cửa hàng tiện lợi / nhà hàng"
+    },
+    {
+      "source": ", সাধারণ চাকরিতে",
+      "target": ", cho công việc thông thường"
+    },
+    {
+      "source": ", school/college শেষে first job হলে",
+      "target": ", cho công việc đầu tiên sau khi tốt nghiệp trường học"
+    },
+    {
+      "source": ", experience-based full-time job হলে",
+      "target": ", cho công việc toàn thời gian dựa trên kinh nghiệm"
+    },
+    {
+      "source": "সাধারণ Japanese চাকরির CV",
+      "target": "CV xin việc kiểu Nhật thông thường"
+    },
+    {
+      "source": "Student, convenience store, restaurant ইত্যাদি",
+      "target": "Học sinh/sinh viên, cửa hàng tiện lợi, nhà hàng, v.v."
+    },
+    {
+      "source": "Education ও potential-কে গুরুত্ব",
+      "target": "Đề cao học vấn và tiềm năng"
+    },
+    {
+      "source": "写真 — ছবি যোগ করুন",
+      "target": "写真 — Thêm ảnh"
+    },
+    {
+      "source": "ছবি সরান",
+      "target": "Xóa ảnh"
+    },
+    {
+      "source": "JPG / PNG / WebP · ৩:৪ ছবি · এই ডিভাইসেই থাকে",
+      "target": "JPG / PNG / WebP · Ảnh tỷ lệ 3:4 · Được lưu trên thiết bị này"
+    },
+    {
+      "source": "ছবির মাপ",
+      "target": "Kích thước ảnh"
+    },
+    {
+      "source": "ডানে–বামে",
+      "target": "Trái–Phải"
+    },
+    {
+      "source": "উপরে–নিচে",
+      "target": "Trên–Dưới"
+    },
+    {
+      "source": "CV-এর তারিখ — প্রয়োজনমতো বেছে নিন",
+      "target": "Ngày tháng trên CV — Chọn theo nhu cầu"
+    },
+    {
+      "source": "পুরো নাম",
+      "target": "Họ và tên"
+    },
+    {
+      "source": "নামের কাতাকানা",
+      "target": "Katakana của tên"
+    },
+    {
+      "source": "জন্মতারিখ",
+      "target": "Ngày sinh"
+    },
+    {
+      "source": "未記載 / না লিখব",
+      "target": "未記載 / Không ghi"
+    },
+    {
+      "source": "男 / পুরুষ",
+      "target": "男 / Nam"
+    },
+    {
+      "source": "女 / নারী",
+      "target": "女 / Nữ"
+    },
+    {
+      "source": "その他 / অন্যান্য",
+      "target": "その他 / Khác"
+    },
+    {
+      "source": "জাতীয়তা",
+      "target": "Quốc tịch"
+    },
+    {
+      "source": "মোবাইল নম্বর",
+      "target": "Số điện thoại"
+    },
+    {
+      "source": "ইমেইল",
+      "target": "Địa chỉ email"
+    },
+    {
+      "source": "বর্তমান ঠিকানা + postal code",
+      "target": "Địa chỉ hiện tại + mã bưu điện"
+    },
+    {
+      "source": "ঠিকানার কাতাকানা reading",
+      "target": "Cách đọc địa chỉ bằng Katakana"
+    },
+    {
+      "source": "Residence status / ভিসা",
+      "target": "Tư cách lưu trú / Visa"
+    },
+    {
+      "source": "তারিখ অনুযায়ী লিখুন। 入学/卒業, 入社/退職 উল্লেখ করলে final CV সুন্দর হবে।",
+      "target": "Hãy viết theo thứ tự thời gian. CV của bạn sẽ đẹp hơn nếu ghi rõ 入学 (Nhập học)/卒業 (Tốt nghiệp), 入社 (Vào công ty)/退職 (Nghỉ việc)."
+    },
+    {
+      "source": "— শিক্ষাগত ইতিহাস",
+      "target": "— Lịch sử học tập"
+    },
+    {
+      "source": "学歴 যোগ করুন",
+      "target": "Thêm 学歴 (Học vấn)"
+    },
+    {
+      "source": "— কাজের ইতিহাস",
+      "target": "— Lịch sử làm việc"
+    },
+    {
+      "source": "職歴 যোগ করুন",
+      "target": "Thêm 職歴 (Kinh nghiệm làm việc)"
+    },
+    {
+      "source": "— যোগ্যতা/লাইসেন্স",
+      "target": "— Bằng cấp / Chứng chỉ"
+    },
+    {
+      "source": "資格 যোগ করুন",
+      "target": "Thêm 資格 (Chứng chỉ)"
+    },
+    {
+      "source": "— Part-time তথ্য",
+      "target": "— Thông tin việc làm bán thời gian"
+    },
+    {
+      "source": "স্কুলের ক্লাসের সময়",
+      "target": "Thời gian học trên lớp"
+    },
+    {
+      "source": "কোন দিন ও সময়ে কাজ করতে পারবেন",
+      "target": "Bạn có thể làm việc vào ngày và giờ nào"
+    },
+    {
+      "source": "কেন এই job চান + আপনার শক্তি · নিচের নমুনা সম্পাদনা করুন",
+      "target": "Lý do bạn muốn làm công việc này + Điểm mạnh của bạn · Vui lòng chỉnh sửa mẫu dưới đây"
+    },
+    {
+      "source": "অন্য কোনো বিশেষ অনুরোধ",
+      "target": "Bất kỳ yêu cầu đặc biệt nào khác"
+    },
+    {
+      "source": "আপনার কাজের অভিজ্ঞতার সংক্ষিপ্ত summary",
+      "target": "Tóm tắt ngắn gọn về kinh nghiệm làm việc của bạn"
+    },
+    {
+      "source": "Skills — প্রতি লাইনে একটি করে লিখতে পারেন",
+      "target": "Kỹ năng — Bạn có thể viết mỗi kỹ năng trên một dòng"
+    },
+    {
+      "source": "নিজের শক্তি ও কাজের উদাহরণ",
+      "target": "Điểm mạnh và ví dụ làm việc của bản thân"
+    },
+    {
+      "source": "শেষ ধাপ:",
+      "target": "Bước cuối cùng:"
+    },
+    {
+      "source": "নাম, তারিখ, ছবি ও লেখার বানান Preview-তে মিলিয়ে নিন। PDF / Print চাপলে browser-এর Print খুলবে; Destination থেকে",
+      "target": "Hãy kiểm tra lại tên, ngày tháng, ảnh và lỗi chính tả phần văn bản ở mục Xem trước (Preview). Khi bấm PDF / Print, trình duyệt sẽ mở bảng In; tại mục Destination, hãy"
+    },
+    {
+      "source": "বেছে নিন।",
+      "target": "chọn."
+    },
+    {
+      "source": "Backup ফেরত আনুন",
+      "target": "Khôi phục bản sao lưu"
+    },
+    {
+      "source": "আগের ধাপ",
+      "target": "Bước trước"
+    },
+    {
+      "source": "পরের ধাপ",
+      "target": "Bước tiếp theo"
+    },
+    {
+      "source": "নথির Preview",
+      "target": "Xem trước tài liệu"
+    },
+    {
+      "source": "বড় করে দেখুন",
+      "target": "Xem kích thước lớn"
+    }
+  ]
+}

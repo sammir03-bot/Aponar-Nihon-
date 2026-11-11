@@ -1,0 +1,238 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "quiz",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Gemini gemini-3-flash-preview via the site owner's Gemini connector, seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "JLPT কুইজ ও Practice Arena | আপনার নিহোন",
+      "target": "JLPT Quiz & Practice Arena | আপনার নিহোন"
+    },
+    {
+      "source": "JLPT কুইজ Arena",
+      "target": "JLPT Quiz Arena"
+    },
+    {
+      "source": "হোম",
+      "target": "Home"
+    },
+    {
+      "source": "কুইজ",
+      "target": "Quiz"
+    },
+    {
+      "source": "ভুলকে score নয়,",
+      "target": "Don't treat a mistake as a score,"
+    },
+    {
+      "source": "পরের lesson বানান",
+      "target": "make it your next lesson"
+    },
+    {
+      "source": "N5, N4 ও N3—level বেছে এক tap-এ quiz শুরু করুন। প্রতিটি উত্তরের সঙ্গে বাংলা explanation, part-by-part auto-save, daily challenge, AI quiz coach এবং ৩০টি full mock exam।",
+      "target": "Select N5, N4, or N3 level and start the quiz in one tap. Bengali explanations for every answer, part-by-part auto-save, daily challenge, AI quiz coach, and 30 full mock exams."
+    },
+    {
+      "source": "আজকের Challenge",
+      "target": "Today's Challenge"
+    },
+    {
+      "source": "আপনার Practice Record",
+      "target": "Your Practice Record"
+    },
+    {
+      "source": "Saved quiz ও mock result দেখা হচ্ছে…",
+      "target": "Viewing saved quiz and mock results…"
+    },
+    {
+      "source": "৩টি Level",
+      "target": "3 Levels"
+    },
+    {
+      "source": "৪ Category",
+      "target": "4 Categories"
+    },
+    {
+      "source": "১২০ Quiz Set",
+      "target": "120 Quiz Sets"
+    },
+    {
+      "source": "৩০ Full Mock",
+      "target": "30 Full Mocks"
+    },
+    {
+      "source": "আপনার level-এ সরাসরি শুরু করুন",
+      "target": "Start directly at your level"
+    },
+    {
+      "source": "Level card vocabulary দিয়ে শুরু করবে; quiz-এর ভেতরেই category ও Part 1–10 বদলাতে পারবেন।",
+      "target": "The level card will start with vocabulary; you can change the category and Part 1–10 within the quiz."
+    },
+    {
+      "source": "Basic Vocabulary, ১২০ Kanji, particle, conjugation ও ছোট Reading passage।",
+      "target": "Basic Vocabulary, 120 Kanji, particles, conjugation, and short Reading passages."
+    },
+    {
+      "source": "বাংলা Explanation",
+      "target": "Bengali Explanation"
+    },
+    {
+      "source": "N5 Quiz শুরু করুন",
+      "target": "Start N5 Quiz"
+    },
+    {
+      "source": "Lesson 26–50 vocabulary, contextual Kanji, Grammar usage ও longer Reading।",
+      "target": "Lesson 26–50 vocabulary, contextual Kanji, Grammar usage, and longer Reading."
+    },
+    {
+      "source": "N4 Quiz শুরু করুন",
+      "target": "Start N4 Quiz"
+    },
+    {
+      "source": "Vocabulary, Kanji, Grammar ও Reading—প্রতিটি উত্তরের বাংলা অর্থ ও কারণ।",
+      "target": "Vocabulary, Kanji, Grammar, and Reading—Bengali meanings and reasons for every answer."
+    },
+    {
+      "source": "N3 Quiz শুরু করুন",
+      "target": "Start N3 Quiz"
+    },
+    {
+      "source": "আজ কোন skill যাচাই করবেন?",
+      "target": "Which skill will you test today?"
+    },
+    {
+      "source": "অর্থ + context",
+      "target": "Meaning + context"
+    },
+    {
+      "source": "সঠিক pattern",
+      "target": "Correct pattern"
+    },
+    {
+      "source": "Practice থেকে full exam",
+      "target": "From practice to full exam"
+    },
+    {
+      "source": "দ্রুত quiz দিয়ে দুর্বলতা বের করুন, AI দিয়ে কারণ বুঝুন, তারপর timer-সহ full mock দিন।",
+      "target": "Identify weaknesses with quick quizzes, understand reasons with AI, then take a full mock with a timer."
+    },
+    {
+      "source": "শুরু হয়নি",
+      "target": "Not started"
+    },
+    {
+      "source": "N5, N4, N3—প্রতি level-এ ১০টি exam, real timing, Listening, resume ও ১৮০ নম্বরের marksheet।",
+      "target": "N5, N4, N3—10 exams per level, real timing, Listening, resume, and 180-mark marksheets."
+    },
+    {
+      "source": "Mock Center খুলুন",
+      "target": "Open Mock Center"
+    },
+    {
+      "source": "একটানা timed question flow—notes ছাড়া নিজের concentration ও speed যাচাই করুন।",
+      "target": "Continuous timed question flow—test your concentration and speed without notes."
+    },
+    {
+      "source": "Exam Mode খুলুন",
+      "target": "Open Exam Mode"
+    },
+    {
+      "source": "একবারে একটি প্রশ্ন, আপনার attempt-এর পর marking, ছোট বাংলা explanation এবং পরের প্রশ্ন।",
+      "target": "One question at a time, marking after your attempt, a short Bengali explanation, and then the next question."
+    },
+    {
+      "source": "AI Coach খুলুন",
+      "target": "Open AI Coach"
+    },
+    {
+      "source": "একটি ভুলকে চার ধাপে ঠিক করুন",
+      "target": "Fix one mistake in four steps"
+    },
+    {
+      "source": "প্রথমবার notes ছাড়া উত্তর দিন—বর্তমান অবস্থাটা সত্যি করে জানুন।",
+      "target": "Answer without notes for the first time—know your true current status."
+    },
+    {
+      "source": "Reason পড়ুন",
+      "target": "Read the Reason"
+    },
+    {
+      "source": "সঠিক option নয়, কেন অন্যগুলো ভুল সেটিও এক লাইনে বলুন।",
+      "target": "Don't just give the correct option, explain why others are wrong in one line as well."
+    },
+    {
+      "source": "Lesson-এ ফিরুন",
+      "target": "Return to Lesson"
+    },
+    {
+      "source": "যে category দুর্বল, তার N5/N4/N3 full lesson page-এ revise করুন।",
+      "target": "Revise the weak category on the N5/N4/N3 full lesson page."
+    },
+    {
+      "source": "৭ দিন পরে retest",
+      "target": "Retest after 7 days"
+    },
+    {
+      "source": "নতুন part বা full mock দিয়ে একই skill আবার যাচাই করুন।",
+      "target": "Test the same skill again with a new part or full mock."
+    },
+    {
+      "source": "আজকের Test Routine",
+      "target": "Today's Test Routine"
+    },
+    {
+      "source": "ছোট checklist—exam habit ধীরে ধীরে শক্ত হবে।",
+      "target": "Short checklist—exam habit will gradually get stronger."
+    },
+    {
+      "source": "0/6 শেষ",
+      "target": "0/6 finished"
+    },
+    {
+      "source": "৮ প্রশ্নের warm-up",
+      "target": "8-question warm-up"
+    },
+    {
+      "source": "Notes ছাড়া attempt",
+      "target": "Attempt without notes"
+    },
+    {
+      "source": "সব explanation পড়া",
+      "target": "Read all explanations"
+    },
+    {
+      "source": "৩টি ভুল লিখে রাখা",
+      "target": "Write down 3 mistakes"
+    },
+    {
+      "source": "দুর্বল lesson revise",
+      "target": "Revise weak lessons"
+    },
+    {
+      "source": "Retest date ঠিক করা",
+      "target": "Set retest date"
+    },
+    {
+      "source": "এক প্রশ্ন করে AI Quiz",
+      "target": "One question at a time AI Quiz"
+    },
+    {
+      "source": "Answer আগে দেখাবে না। আপনি চেষ্টা করলে mark, explain ও next question দেবে।",
+      "target": "Won't show the answer first. If you try, it will mark, explain, and give the next question."
+    },
+    {
+      "source": "AI Quiz শুরু করুন",
+      "target": "Start AI Quiz"
+    },
+    {
+      "source": "আপনার নিহোন · Practice করুন, বুঝুন, আবার চেষ্টা করুন",
+      "target": "আপনার নিহোন · Practice, understand, try again"
+    },
+    {
+      "source": "✓ Practice plan সংরক্ষণ হয়েছে",
+      "target": "✓ Practice plan saved"
+    }
+  ]
+}

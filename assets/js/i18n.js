@@ -212,13 +212,6 @@
     return path || "/";
   }
 
-  function isHomeRoute() {
-    var route = normalizedRoute(window.location.pathname);
-    if (route === "/") return true;
-    var parts = route.replace(/^\/+|\/+$/g, "").split("/").filter(Boolean);
-    return parts.length === 1 && !!normalizeLanguage(parts[0]);
-  }
-
   function alternatePath(language) {
     var link = document.querySelector('link[rel~="alternate"][hreflang="' + language + '"]');
     if (!link || !link.href) return "";
@@ -397,7 +390,10 @@
   }
 
   function mountPicker() {
-    if (!isHomeRoute()) return;
+    // The picker is available on every page, not only the home route: the
+    // saved choice applies site-wide, so the control to change it must also
+    // be reachable site-wide. Pages whose header has no actions container
+    // get the floating-button fallback below.
     if (document.getElementById("aponarLanguageButton")) return;
 
     var button = document.createElement("button");

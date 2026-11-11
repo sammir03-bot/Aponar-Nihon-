@@ -1,0 +1,210 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "profile",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "জাপানি শেখার পূর্ণাঙ্গ প্ল্যাটফর্ম",
+      "target": "Pag-aaral ng Japanese para sa lahat"
+    },
+    {
+      "source": "হোম",
+      "target": "Home"
+    },
+    {
+      "source": "অ্যাডমিন",
+      "target": "Tagapangasiwa"
+    },
+    {
+      "source": "লগআউট",
+      "target": "Mag-sign out"
+    },
+    {
+      "source": "ইমেইল ভেরিফাই হয়নি",
+      "target": "Hindi pa beripikado ang email"
+    },
+    {
+      "source": "প্রয়োজনীয় তথ্য পূরণ করলে 100% হবে",
+      "target": "Magiging 100% ito kapag kinumpleto ang kinakailangang impormasyon"
+    },
+    {
+      "source": "নাম",
+      "target": "Pangalan"
+    },
+    {
+      "source": "স্কুল",
+      "target": "Paaralan"
+    },
+    {
+      "source": "লোকেশন",
+      "target": "Lokasyon"
+    },
+    {
+      "source": "লক্ষ্য",
+      "target": "Layunin"
+    },
+    {
+      "source": "জন্মতারিখ",
+      "target": "Petsa ng kapanganakan"
+    },
+    {
+      "source": "প্রোফাইল আপডেট",
+      "target": "I-update ang profile"
+    },
+    {
+      "source": "তথ্যগুলো ঠিক করে নিরাপদভাবে Save করুন",
+      "target": "I-save nang ligtas ang tamang impormasyon"
+    },
+    {
+      "source": "ব্যক্তিগত তথ্য",
+      "target": "Personal na impormasyon"
+    },
+    {
+      "source": "আপনার মূল পরিচিতি",
+      "target": "Ang iyong pangunahing pagkakakilanlan"
+    },
+    {
+      "source": "পুরো নাম",
+      "target": "Buong pangalan"
+    },
+    {
+      "source": "লিঙ্গ",
+      "target": "Kasarian"
+    },
+    {
+      "source": "নির্বাচন করুন",
+      "target": "Pumili"
+    },
+    {
+      "source": "পুরুষ",
+      "target": "Lalaki"
+    },
+    {
+      "source": "নারী",
+      "target": "Babae"
+    },
+    {
+      "source": "বলতে চাই না",
+      "target": "Ayaw nang sabihin"
+    },
+    {
+      "source": "জাতীয়তা",
+      "target": "Nasyonalidad"
+    },
+    {
+      "source": "পড়াশোনা ও JLPT",
+      "target": "Pag-aaral at JLPT"
+    },
+    {
+      "source": "আপনার স্কুল ও শেখার লক্ষ্য",
+      "target": "Ang iyong paaralan at layunin sa pag-aaral"
+    },
+    {
+      "source": "স্কুল / প্রতিষ্ঠান",
+      "target": "Paaralan / Institusyon"
+    },
+    {
+      "source": "দৈনিক পড়ার সময়",
+      "target": "Araw-araw na oras ng pag-aaral"
+    },
+    {
+      "source": "15 মিনিট",
+      "target": "15 minuto"
+    },
+    {
+      "source": "30 মিনিট",
+      "target": "30 minuto"
+    },
+    {
+      "source": "45 মিনিট",
+      "target": "45 minuto"
+    },
+    {
+      "source": "1 ঘণ্টা",
+      "target": "1 oras"
+    },
+    {
+      "source": "1.5 ঘণ্টা",
+      "target": "1.5 oras"
+    },
+    {
+      "source": "2 ঘণ্টা",
+      "target": "2 oras"
+    },
+    {
+      "source": "যোগাযোগ ও অবস্থান",
+      "target": "Pakikipag-ugnayan at lokasyon"
+    },
+    {
+      "source": "বর্তমান যোগাযোগের তথ্য",
+      "target": "Kasalukuyang impormasyon sa pakikipag-ugnayan"
+    },
+    {
+      "source": "বর্তমান City",
+      "target": "Kasalukuyang Lungsod"
+    },
+    {
+      "source": "ফোন নম্বর",
+      "target": "Numero ng telepono"
+    },
+    {
+      "source": "ঐচ্ছিক",
+      "target": "Opsyonal"
+    },
+    {
+      "source": "নিজের সম্পর্কে",
+      "target": "Tungkol sa sarili"
+    },
+    {
+      "source": "সংক্ষিপ্ত learning profile",
+      "target": "Maikling learning profile"
+    },
+    {
+      "source": "বাতিল",
+      "target": "Kanselahin"
+    },
+    {
+      "source": "নিজের ছবি যোগ বা পরিবর্তন করুন",
+      "target": "Magdagdag o baguhin ang iyong larawan"
+    },
+    {
+      "source": "ছবি বেছে নিন",
+      "target": "Pumili ng larawan"
+    },
+    {
+      "source": "Account photo ব্যবহার",
+      "target": "Gamitin ang Account photo"
+    },
+    {
+      "source": "JPG, PNG বা WebP · সর্বোচ্চ 2 MB",
+      "target": "JPG, PNG o WebP · Pinakamataas na 2 MB"
+    },
+    {
+      "source": "ইমেইল",
+      "target": "Email"
+    },
+    {
+      "source": "বাংলা",
+      "target": "Bengali"
+    },
+    {
+      "source": "ভাষা Home থেকে পরিবর্তন করা যায়",
+      "target": "Maaaring baguhin ang wika mula sa Home"
+    },
+    {
+      "source": "Profile load হচ্ছে…",
+      "target": "Naglo-load ang profile…"
+    },
+    {
+      "source": "অ্যাকাউন্ট মুছলে আপনার profile ও learning data স্থায়ীভাবে মুছে যেতে পারে।",
+      "target": "Ang pagdelete ng account ay maaaring permanenteng mag-alis ng iyong profile at learning data."
+    },
+    {
+      "source": "Delete options খুলুন",
+      "target": "Buksan ang Delete options"
+    }
+  ]
+}

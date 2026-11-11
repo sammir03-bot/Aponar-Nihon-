@@ -1,0 +1,210 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "my",
+  "page": "profile",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "জাপানি শেখার পূর্ণাঙ্গ প্ল্যাটফর্ম",
+      "target": "လူတိုင်းအတွက် ဂျပန်စာလေ့လာရေး"
+    },
+    {
+      "source": "হোম",
+      "target": "ပင်မစာမျက်နှာ"
+    },
+    {
+      "source": "অ্যাডমিন",
+      "target": "စီမံခန့်ခွဲသူ"
+    },
+    {
+      "source": "লগআউট",
+      "target": "အကောင့်မှ ထွက်ရန်"
+    },
+    {
+      "source": "ইমেইল ভেরিফাই হয়নি",
+      "target": "အီးမေးလ် အတည်မပြုရသေးပါ"
+    },
+    {
+      "source": "প্রয়োজনীয় তথ্য পূরণ করলে 100% হবে",
+      "target": "လိုအပ်သော အချက်အလက်များကို ဖြည့်စွက်ပါက 100% ဖြစ်သွားပါမည်"
+    },
+    {
+      "source": "নাম",
+      "target": "အမည်"
+    },
+    {
+      "source": "স্কুল",
+      "target": "ကျောင်း"
+    },
+    {
+      "source": "লোকেশন",
+      "target": "တည်နေရာ"
+    },
+    {
+      "source": "লক্ষ্য",
+      "target": "ရည်မှန်းချက်"
+    },
+    {
+      "source": "জন্মতারিখ",
+      "target": "မွေးသက္ကရာဇ်"
+    },
+    {
+      "source": "প্রোফাইল আপডেট",
+      "target": "ပရိုဖိုင်း အပ်ဒိတ်လုပ်ရန်"
+    },
+    {
+      "source": "তথ্যগুলো ঠিক করে নিরাপদভাবে Save করুন",
+      "target": "အချက်အလက်များကို ပြင်ဆင်ပြီး လုံခြုံစွာ Save လုပ်ပါ"
+    },
+    {
+      "source": "ব্যক্তিগত তথ্য",
+      "target": "ကိုယ်ရေးကိုယ်တာ အချက်အလက်"
+    },
+    {
+      "source": "আপনার মূল পরিচিতি",
+      "target": "သင်၏ မူလ မိတ်ဆက်"
+    },
+    {
+      "source": "পুরো নাম",
+      "target": "အမည်အပြည့်အစုံ"
+    },
+    {
+      "source": "লিঙ্গ",
+      "target": "ကျား/မ"
+    },
+    {
+      "source": "নির্বাচন করুন",
+      "target": "ရွေးချယ်ပါ"
+    },
+    {
+      "source": "পুরুষ",
+      "target": "ကျား"
+    },
+    {
+      "source": "নারী",
+      "target": "မ"
+    },
+    {
+      "source": "বলতে চাই না",
+      "target": "မပြောလိုပါ"
+    },
+    {
+      "source": "জাতীয়তা",
+      "target": "နိုင်ငံသား"
+    },
+    {
+      "source": "পড়াশোনা ও JLPT",
+      "target": "ပညာရေးနှင့် JLPT"
+    },
+    {
+      "source": "আপনার স্কুল ও শেখার লক্ষ্য",
+      "target": "သင်၏ကျောင်းနှင့် သင်ယူမှုရည်မှန်းချက်"
+    },
+    {
+      "source": "স্কুল / প্রতিষ্ঠান",
+      "target": "ကျောင်း / အဖွဲ့အစည်း"
+    },
+    {
+      "source": "দৈনিক পড়ার সময়",
+      "target": "နေ့စဉ် ဖတ်ရှုချိန်"
+    },
+    {
+      "source": "15 মিনিট",
+      "target": "15 မိနစ်"
+    },
+    {
+      "source": "30 মিনিট",
+      "target": "30 မိနစ်"
+    },
+    {
+      "source": "45 মিনিট",
+      "target": "45 မိနစ်"
+    },
+    {
+      "source": "1 ঘণ্টা",
+      "target": "1 နာရီ"
+    },
+    {
+      "source": "1.5 ঘণ্টা",
+      "target": "1.5 နာရီ"
+    },
+    {
+      "source": "2 ঘণ্টা",
+      "target": "2 နာရီ"
+    },
+    {
+      "source": "যোগাযোগ ও অবস্থান",
+      "target": "ဆက်သွယ်ရန်နှင့် တည်နေရာ"
+    },
+    {
+      "source": "বর্তমান যোগাযোগের তথ্য",
+      "target": "လက်ရှိ ဆက်သွယ်ရန် အချက်အလက်"
+    },
+    {
+      "source": "বর্তমান City",
+      "target": "လက်ရှိ City"
+    },
+    {
+      "source": "ফোন নম্বর",
+      "target": "ဖုန်းနံပါတ်"
+    },
+    {
+      "source": "ঐচ্ছিক",
+      "target": "விருப்ப (ဆန္ဒအလျောက်)"
+    },
+    {
+      "source": "নিজের সম্পর্কে",
+      "target": "ကိုယ်ናကိုယ် အကြောင်း"
+    },
+    {
+      "source": "সংক্ষিপ্ত learning profile",
+      "target": "အကျဉ်းချုပ် learning profile"
+    },
+    {
+      "source": "বাতিল",
+      "target": "ပယ်ဖျက်ရန်"
+    },
+    {
+      "source": "নিজের ছবি যোগ বা পরিবর্তন করুন",
+      "target": "သင့်ဓာတ်ပုံကို ထည့်ပါ သို့မဟုတ် ပြောင်းလဲပါ"
+    },
+    {
+      "source": "ছবি বেছে নিন",
+      "target": "ဓာတ်ပုံ ရွေးချယ်ပါ"
+    },
+    {
+      "source": "Account photo ব্যবহার",
+      "target": "Account photo ကို အသုံးပြုရန်"
+    },
+    {
+      "source": "JPG, PNG বা WebP · সর্বোচ্চ 2 MB",
+      "target": "JPG, PNG သို့မဟုတ် WebP · အများဆုံး 2 MB"
+    },
+    {
+      "source": "ইমেইল",
+      "target": "အီးမေးလ်"
+    },
+    {
+      "source": "বাংলা",
+      "target": "ဘင်္ဂါလီ"
+    },
+    {
+      "source": "ভাষা Home থেকে পরিবর্তন করা যায়",
+      "target": "ဘာသာစကားကို Home မှ ပြောင်းလဲနိုင်ပါသည်"
+    },
+    {
+      "source": "Profile load হচ্ছে…",
+      "target": "Profile load ဖြစ်နေပါပြီ…"
+    },
+    {
+      "source": "অ্যাকাউন্ট মুছলে আপনার profile ও learning data স্থায়ীভাবে মুছে যেতে পারে।",
+      "target": "အကောင့်ကို ဖျက်လိုက်ပါက သင့် profile နှင့် learning data များ အပြီးအပိုင် ပျက်စီးသွားနိုင်ပါသည်။"
+    },
+    {
+      "source": "Delete options খুলুন",
+      "target": "Delete options ကို ဖွင့်ပါ"
+    }
+  ]
+}

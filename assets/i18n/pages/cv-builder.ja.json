@@ -1,0 +1,254 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "cv-builder",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "হোম",
+      "target": "ホーム"
+    },
+    {
+      "source": "ও",
+      "target": "および"
+    },
+    {
+      "source": "বাংলায় বুঝে পূরণ করুন। বাংলা নির্দেশনা দেখে নিজের তথ্য লিখুন, Preview মিলিয়ে PDF হিসেবে সংরক্ষণ করুন।",
+      "target": "ベンガル語で確認しながら記入してください。ベンガル語の案内に沿ってご自身の情報を入力し、プレビューを確認してPDFとして保存してください。"
+    },
+    {
+      "source": "এই ডিভাইসে draft সংরক্ষিত হয়",
+      "target": "この端末に下書きが保存されます"
+    },
+    {
+      "source": "আপনার তথ্য ও ছবি এই browser-এ থাকে",
+      "target": "入力情報や写真は、このブラウザ内に保存されます"
+    },
+    {
+      "source": "ব্যক্তিগত",
+      "target": "個人情報"
+    },
+    {
+      "source": "ইতিহাস",
+      "target": "学歴・職歴"
+    },
+    {
+      "source": "আবেদন",
+      "target": "応募"
+    },
+    {
+      "source": "Template নির্বাচন",
+      "target": "テンプレート選択"
+    },
+    {
+      "source": "কাজ অনুযায়ী CV type বেছে নিন",
+      "target": "職種・用途に合わせて履歴書の形式を選択"
+    },
+    {
+      "source": "কোনটা নেবেন?",
+      "target": "どれを選びますか？"
+    },
+    {
+      "source": "Baito/コンビニ/restaurant হলে",
+      "target": "Baito/コンビニ/restaurantの場合"
+    },
+    {
+      "source": ", সাধারণ চাকরিতে",
+      "target": "、一般的な就業の場合"
+    },
+    {
+      "source": ", school/college শেষে first job হলে",
+      "target": "、学校卒業後の初就職の場合"
+    },
+    {
+      "source": ", experience-based full-time job হলে",
+      "target": "、経験重視の正社員採用の場合"
+    },
+    {
+      "source": "সাধারণ Japanese চাকরির CV",
+      "target": "一般的な日本の就活・就職用履歴書"
+    },
+    {
+      "source": "Student, convenience store, restaurant ইত্যাদি",
+      "target": "学生、コンビニ、飲食店など"
+    },
+    {
+      "source": "Education ও potential-কে গুরুত্ব",
+      "target": "学歴やポテンシャルを重視"
+    },
+    {
+      "source": "写真 — ছবি যোগ করুন",
+      "target": "写真 — 写真を追加"
+    },
+    {
+      "source": "ছবি সরান",
+      "target": "写真を削除"
+    },
+    {
+      "source": "JPG / PNG / WebP · ৩:৪ ছবি · এই ডিভাইসেই থাকে",
+      "target": "JPG / PNG / WebP · 3:4の写真 · この端末内に保存"
+    },
+    {
+      "source": "ছবির মাপ",
+      "target": "写真のサイズ"
+    },
+    {
+      "source": "ডানে–বামে",
+      "target": "左右"
+    },
+    {
+      "source": "উপরে–নিচে",
+      "target": "上下"
+    },
+    {
+      "source": "CV-এর তারিখ — প্রয়োজনমতো বেছে নিন",
+      "target": "履歴書の日付 — 必要に応じて選択"
+    },
+    {
+      "source": "পুরো নাম",
+      "target": "氏名"
+    },
+    {
+      "source": "নামের কাতাকানা",
+      "target": "名前のカタカナ"
+    },
+    {
+      "source": "জন্মতারিখ",
+      "target": "生年月日"
+    },
+    {
+      "source": "未記載 / না লিখব",
+      "target": "未記載 / 記入しない"
+    },
+    {
+      "source": "男 / পুরুষ",
+      "target": "男 / 男性"
+    },
+    {
+      "source": "女 / নারী",
+      "target": "女 / 女性"
+    },
+    {
+      "source": "その他 / অন্যান্য",
+      "target": "その他 / その他"
+    },
+    {
+      "source": "জাতীয়তা",
+      "target": "国籍"
+    },
+    {
+      "source": "মোবাইল নম্বর",
+      "target": "携帯電話番号"
+    },
+    {
+      "source": "ইমেইল",
+      "target": "メールアドレス"
+    },
+    {
+      "source": "বর্তমান ঠিকানা + postal code",
+      "target": "現住所 + 郵便番号"
+    },
+    {
+      "source": "ঠিকানার কাতাকানা reading",
+      "target": "住所のカタカナ表記"
+    },
+    {
+      "source": "Residence status / ভিসা",
+      "target": "在留資格 / ビザ"
+    },
+    {
+      "source": "তারিখ অনুযায়ী লিখুন। 入学/卒業, 入社/退職 উল্লেখ করলে final CV সুন্দর হবে।",
+      "target": "日付順に記入してください。入学/卒業、入社/退職を明記すると、完成した履歴書が綺麗に仕上がります。"
+    },
+    {
+      "source": "— শিক্ষাগত ইতিহাস",
+      "target": "— 学歴"
+    },
+    {
+      "source": "学歴 যোগ করুন",
+      "target": "学歴を追加"
+    },
+    {
+      "source": "— কাজের ইতিহাস",
+      "target": "— 職歴"
+    },
+    {
+      "source": "職歴 যোগ করুন",
+      "target": "職歴を追加"
+    },
+    {
+      "source": "— যোগ্যতা/লাইসেন্স",
+      "target": "— 資格・免許"
+    },
+    {
+      "source": "資格 যোগ করুন",
+      "target": "資格を追加"
+    },
+    {
+      "source": "— Part-time তথ্য",
+      "target": "— アルバイト情報"
+    },
+    {
+      "source": "স্কুলের ক্লাসের সময়",
+      "target": "学校の授業時間"
+    },
+    {
+      "source": "কোন দিন ও সময়ে কাজ করতে পারবেন",
+      "target": "勤務可能な曜日と時間帯"
+    },
+    {
+      "source": "কেন এই job চান + আপনার শক্তি · নিচের নমুনা সম্পাদনা করুন",
+      "target": "志望動機＋自己PR（強み） · 下の例文を編集してください"
+    },
+    {
+      "source": "অন্য কোনো বিশেষ অনুরোধ",
+      "target": "その他特別なご要望"
+    },
+    {
+      "source": "আপনার কাজের অভিজ্ঞতার সংক্ষিপ্ত summary",
+      "target": "職歴の簡単な要約"
+    },
+    {
+      "source": "Skills — প্রতি লাইনে একটি করে লিখতে পারেন",
+      "target": "スキル — 1行に1つずつ入力できます"
+    },
+    {
+      "source": "নিজের শক্তি ও কাজের উদাহরণ",
+      "target": "自分の強みと仕事の具体例"
+    },
+    {
+      "source": "শেষ ধাপ:",
+      "target": "最後のステップ："
+    },
+    {
+      "source": "নাম, তারিখ, ছবি ও লেখার বানান Preview-তে মিলিয়ে নিন। PDF / Print চাপলে browser-এর Print খুলবে; Destination থেকে",
+      "target": "プレビューで氏名、日付、写真、誤字脱字を確認してください。「PDF / Print」を押すとブラウザの印刷画面が開きます。「送信先」から"
+    },
+    {
+      "source": "বেছে নিন।",
+      "target": "選択してください。"
+    },
+    {
+      "source": "Backup ফেরত আনুন",
+      "target": "バックアップを復元"
+    },
+    {
+      "source": "আগের ধাপ",
+      "target": "戻る"
+    },
+    {
+      "source": "পরের ধাপ",
+      "target": "次へ"
+    },
+    {
+      "source": "নথির Preview",
+      "target": "書類のプレビュー"
+    },
+    {
+      "source": "বড় করে দেখুন",
+      "target": "拡大して見る"
+    }
+  ]
+}

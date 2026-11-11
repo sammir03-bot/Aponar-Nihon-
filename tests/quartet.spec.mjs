@@ -7,7 +7,7 @@ test('QUARTET opens from N3 Grammar with six chapters and furigana', async ({ pa
   await expect(page.locator('#chapter-select option')).toHaveCount(6);
   await expect(page.locator('#panel .example')).toHaveCount(10);
   expect(await page.locator('#panel .example ruby rt').count()).toBeGreaterThan(0);
-  await expect(page.locator('#aponarLanguageButton')).toHaveCount(0);
+  await expect(page.locator('#aponarLanguageButton')).toBeVisible();
   const picker = page.locator('.course-picker');
   if (await picker.getAttribute('open') === null) await picker.locator('summary').click();
   await page.locator('#chapter-select').selectOption('3');

@@ -1,0 +1,210 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "profile",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Gemini gemini-3-flash-preview via the site owner's Gemini connector, seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "জাপানি শেখার পূর্ণাঙ্গ প্ল্যাটফর্ম",
+      "target": "Japanese learning for everyone"
+    },
+    {
+      "source": "হোম",
+      "target": "Home"
+    },
+    {
+      "source": "অ্যাডমিন",
+      "target": "Admin"
+    },
+    {
+      "source": "লগআউট",
+      "target": "Logout"
+    },
+    {
+      "source": "ইমেইল ভেরিফাই হয়নি",
+      "target": "Email not verified"
+    },
+    {
+      "source": "প্রয়োজনীয় তথ্য পূরণ করলে 100% হবে",
+      "target": "Filling required information will reach 100%"
+    },
+    {
+      "source": "নাম",
+      "target": "Name"
+    },
+    {
+      "source": "স্কুল",
+      "target": "School"
+    },
+    {
+      "source": "লোকেশন",
+      "target": "Location"
+    },
+    {
+      "source": "লক্ষ্য",
+      "target": "Goal"
+    },
+    {
+      "source": "জন্মতারিখ",
+      "target": "Date of birth"
+    },
+    {
+      "source": "প্রোফাইল আপডেট",
+      "target": "Profile Update"
+    },
+    {
+      "source": "তথ্যগুলো ঠিক করে নিরাপদভাবে Save করুন",
+      "target": "Correct the information and Save securely"
+    },
+    {
+      "source": "ব্যক্তিগত তথ্য",
+      "target": "Personal Information"
+    },
+    {
+      "source": "আপনার মূল পরিচিতি",
+      "target": "Your primary identity"
+    },
+    {
+      "source": "পুরো নাম",
+      "target": "Full name"
+    },
+    {
+      "source": "লিঙ্গ",
+      "target": "Gender"
+    },
+    {
+      "source": "নির্বাচন করুন",
+      "target": "Select"
+    },
+    {
+      "source": "পুরুষ",
+      "target": "Male"
+    },
+    {
+      "source": "নারী",
+      "target": "Female"
+    },
+    {
+      "source": "বলতে চাই না",
+      "target": "Prefer not to say"
+    },
+    {
+      "source": "জাতীয়তা",
+      "target": "Nationality"
+    },
+    {
+      "source": "পড়াশোনা ও JLPT",
+      "target": "Education & JLPT"
+    },
+    {
+      "source": "আপনার স্কুল ও শেখার লক্ষ্য",
+      "target": "Your school and learning goals"
+    },
+    {
+      "source": "স্কুল / প্রতিষ্ঠান",
+      "target": "School / Institution"
+    },
+    {
+      "source": "দৈনিক পড়ার সময়",
+      "target": "Daily study time"
+    },
+    {
+      "source": "15 মিনিট",
+      "target": "15 minutes"
+    },
+    {
+      "source": "30 মিনিট",
+      "target": "30 minutes"
+    },
+    {
+      "source": "45 মিনিট",
+      "target": "45 minutes"
+    },
+    {
+      "source": "1 ঘণ্টা",
+      "target": "1 hour"
+    },
+    {
+      "source": "1.5 ঘণ্টা",
+      "target": "1.5 hours"
+    },
+    {
+      "source": "2 ঘণ্টা",
+      "target": "2 hours"
+    },
+    {
+      "source": "যোগাযোগ ও অবস্থান",
+      "target": "Contact & Location"
+    },
+    {
+      "source": "বর্তমান যোগাযোগের তথ্য",
+      "target": "Current contact information"
+    },
+    {
+      "source": "বর্তমান City",
+      "target": "Current City"
+    },
+    {
+      "source": "ফোন নম্বর",
+      "target": "Phone"
+    },
+    {
+      "source": "ঐচ্ছিক",
+      "target": "Optional"
+    },
+    {
+      "source": "নিজের সম্পর্কে",
+      "target": "About yourself"
+    },
+    {
+      "source": "সংক্ষিপ্ত learning profile",
+      "target": "Short learning profile"
+    },
+    {
+      "source": "বাতিল",
+      "target": "Cancel"
+    },
+    {
+      "source": "নিজের ছবি যোগ বা পরিবর্তন করুন",
+      "target": "Add or change your photo"
+    },
+    {
+      "source": "ছবি বেছে নিন",
+      "target": "Choose photo"
+    },
+    {
+      "source": "Account photo ব্যবহার",
+      "target": "Use account photo"
+    },
+    {
+      "source": "JPG, PNG বা WebP · সর্বোচ্চ 2 MB",
+      "target": "JPG, PNG or WebP · Max 2 MB"
+    },
+    {
+      "source": "ইমেইল",
+      "target": "Email"
+    },
+    {
+      "source": "বাংলা",
+      "target": "Bengali"
+    },
+    {
+      "source": "ভাষা Home থেকে পরিবর্তন করা যায়",
+      "target": "Language can be changed from Home"
+    },
+    {
+      "source": "Profile load হচ্ছে…",
+      "target": "Profile is loading…"
+    },
+    {
+      "source": "অ্যাকাউন্ট মুছলে আপনার profile ও learning data স্থায়ীভাবে মুছে যেতে পারে।",
+      "target": "Deleting the account may permanently delete your profile and learning data."
+    },
+    {
+      "source": "Delete options খুলুন",
+      "target": "Open delete options"
+    }
+  ]
+}

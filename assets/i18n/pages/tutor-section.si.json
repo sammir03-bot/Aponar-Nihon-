@@ -1,0 +1,226 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "tutor-section",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "AI জাপানি টিউটর | আপনার নিহোন",
+      "target": "AI ජපන් ගුරුවරුන් | আপনার নিহোন"
+    },
+    {
+      "source": "AI জাপানি টিউটর",
+      "target": "AI ජපන් ගුරුවරුන්"
+    },
+    {
+      "source": "সংযোগ যাচাই হচ্ছে",
+      "target": "සම්බන්ධතාවය පරීක්ෂා කරමින් පවතී"
+    },
+    {
+      "source": "আপনার ব্যক্তিগত শিক্ষক",
+      "target": "ඔබේ පෞද්ගලික ගුරුවරයා"
+    },
+    {
+      "source": "লক্ষ্য অনুযায়ী",
+      "target": "ඔබේ ඉලක්කයට අනුව"
+    },
+    {
+      "source": "জাপানি শিখুন",
+      "target": "ජපන් ඉගෙන ගන්න"
+    },
+    {
+      "source": "লেভেল ও মোড বেছে নিন—টিউটর সেই অনুযায়ী ভাষা, উদাহরণ ও অনুশীলন সাজাবে।",
+      "target": "මට්ටම සහ ක්‍රමය තෝරන්න—ගුරුවරයා ඒ අනුව භාෂාව, උදාහරණ සහ අභ්‍යාස සකස් කරනු ඇත."
+    },
+    {
+      "source": "আপনার JLPT লেভেল",
+      "target": "ඔබේ JLPT මට්ටම"
+    },
+    {
+      "source": "কীভাবে শিখবেন",
+      "target": "ඉගෙන ගන්නා ආකාරය"
+    },
+    {
+      "source": "বুঝিয়ে শেখান",
+      "target": "විස්තර කර උගන්වන්න"
+    },
+    {
+      "source": "ব্যাকরণ · কানজি · শব্দ",
+      "target": "व्याकरण · kanji · වචන"
+    },
+    {
+      "source": "বাক্য ঠিক করুন",
+      "target": "වාක්‍ය නිවැරදි කරන්න"
+    },
+    {
+      "source": "ভুল ও natural expression",
+      "target": "වැරදි සහ ස්වභාවික ප්‍රකාශන (natural expression)"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "සංවාද"
+    },
+    {
+      "source": "এক ধাপ করে role-play",
+      "target": "පියවරෙන් පියවර role-play"
+    },
+    {
+      "source": "ইন্টারভিউ কোচ",
+      "target": "සංවාද (interview) පුහුණුකරු"
+    },
+    {
+      "source": "কুইজ প্র্যাকটিস",
+      "target": "ප්‍රශ්න විචාරක (Quiz) පුහුණුව"
+    },
+    {
+      "source": "একবারে একটি প্রশ্ন",
+      "target": "එකපාරක් එක ප් රශ්නයක්."
+    },
+    {
+      "source": "অনুবাদ ও বিশ্লেষণ",
+      "target": "תרجمה וניתוח"
+    },
+    {
+      "source": "পাসওয়ার্ড, পাসপোর্ট নম্বর বা ব্যক্তিগত গোপন তথ্য চ্যাটে দেবেন না।",
+      "target": "මුරපද, ගමන් බලපත්‍ර අංක හෝ පුද්ගලික රහස් තොරතුරු කතාබහට (chat) ඇතුළත් නොකරන්න."
+    },
+    {
+      "source": "আজ",
+      "target": "අද"
+    },
+    {
+      "source": "০",
+      "target": "0"
+    },
+    {
+      "source": "/২০",
+      "target": "/20"
+    },
+    {
+      "source": "লেভেল",
+      "target": "මට්ටම"
+    },
+    {
+      "source": "শেখান",
+      "target": "උගන්වන්න"
+    },
+    {
+      "source": "বাক্য ঠিক",
+      "target": "වාක්‍ය නිවැරදි"
+    },
+    {
+      "source": "ইন্টারভিউ",
+      "target": "සම්මුඛ පරීක්ෂණ"
+    },
+    {
+      "source": "কুইজ",
+      "target": "ප්‍රශ්නාවලිය"
+    },
+    {
+      "source": "অনুবাদ",
+      "target": "පරිවර්තනය"
+    },
+    {
+      "source": "আজ কী শিখতে চান?",
+      "target": "අද ඔබ ඉගෙන ගැනීමට කැත්තේ කුමක්ද?"
+    },
+    {
+      "source": "জাপানি ব্যাকরণ, শব্দ, কানজি বা যেকোনো বাক্য বাংলায় সহজ করে বুঝিয়ে নিন।",
+      "target": "ජපන් ව්‍යාಕರಣ, වචන, კანಜಿ හෝ ඕනෑම වාක්‍යයක් සිංහලෙන් පහසුවෙන් තේරුම් ගන්න."
+    },
+    {
+      "source": "বাংলায় ব্যাখ্যা",
+      "target": "සිංහලෙන් පැහැදිලි කිරීම"
+    },
+    {
+      "source": "সঠিক ふりがな",
+      "target": "సరైన ふりがな"
+    },
+    {
+      "source": "Grammar পার্থক্য",
+      "target": "ව්‍යාකරණ වෙනස්කම්"
+    },
+    {
+      "source": "は আর が কখন ব্যবহার করব?",
+      "target": "は සහ が භාවිතා කරන්නේ කවදාද?"
+    },
+    {
+      "source": "বাক্য ভেঙে শিখুন",
+      "target": "වාක්‍ය කඩා ඉගෙන ගන්න"
+    },
+    {
+      "source": "Particle ও conjugation বুঝুন",
+      "target": "Particle සහ conjugation තේරුම් ගන්න"
+    },
+    {
+      "source": "আজকের ৫টি শব্দ",
+      "target": "අද වචන 5"
+    },
+    {
+      "source": "অর্থ, reading ও উদাহরণ",
+      "target": "ትርጉම, කියවීම (reading) සහ උදාහරණ"
+    },
+    {
+      "source": "বাস্তব জাপানি",
+      "target": "සැබෑ ජපන්"
+    },
+    {
+      "source": "সহজ করে বলুন",
+      "target": "පහසුවෙන් පවසන්න"
+    },
+    {
+      "source": "আরও example",
+      "target": "තවත් උදාහරණ"
+    },
+    {
+      "source": "ছোট quiz দিন",
+      "target": "කුඩා ප්‍රශ්න විචාරකයක් (quiz) දෙන්න"
+    },
+    {
+      "source": "AI ভুল করতে পারে—গুরুত্বপূর্ণ তথ্য যাচাই করুন",
+      "target": "AI හට වැරදි සිදු විය හැක—වැදගත් තොරතුරු පරීක්ෂා කරන්න"
+    },
+    {
+      "source": "Standard উত্তর",
+      "target": "සම්මත පිළිතුර"
+    },
+    {
+      "source": "হোম",
+      "target": "මුල් පිටුව"
+    },
+    {
+      "source": "AI Tutor সেটিংস",
+      "target": "AI ටියුටර් සැකසුම්"
+    },
+    {
+      "source": "উত্তর কতটা বিস্তারিত হবে",
+      "target": "පිළිතුර කොතරම් විස්තරාත්මක විය යුතුද"
+    },
+    {
+      "source": "সংক্ষিপ্ত",
+      "target": "කෙටි"
+    },
+    {
+      "source": "বিস্তারিত",
+      "target": "විස්තරාත්මක"
+    },
+    {
+      "source": "কথোপকথন ও কুইজ মোডে AI একবারে একটি ধাপ দেবে। অন্য মোডে আপনার নির্বাচিত বিস্তারিত মাত্রা মানবে।",
+      "target": "സംഭാഷണ සහ ප්‍රශ්න විචාරණ ක්‍රමයේදී AI වරකට එක් පියවරක් ලබා දෙනු ඇත. අනෙකුත් ක්‍රමවලදී ඔබ විසින් තෝරා ගන්නා ලද විස්තරාත්මක මට්ටම අනුගමනය කරනු ඇත."
+    },
+    {
+      "source": "ইতিহাস মুছুন",
+      "target": "ඉතිහාසය මකන්න"
+    },
+    {
+      "source": "বাতিল",
+      "target": "අවලංගු කරන්න"
+    },
+    {
+      "source": "সংরক্ষণ করুন",
+      "target": "සුරකින්න"
+    }
+  ]
+}
