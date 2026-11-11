@@ -212,7 +212,7 @@ def verify() -> None:
 
     assert 'return languageFromPath() || storedLanguage() || DEFAULT_LANGUAGE;' in i18n
     assert 'preset !== DEFAULT_LANGUAGE' in i18n
-    assert 'if (!isHomeRoute()) return;' in i18n
+    assert 'if (!isHomeRoute()) return;' not in i18n
     assert 'if (language === "bn") return false;' in content
     assert 'if (window.AponarI18n.getLanguage() === "bn")' in content
     assert 'if (observer || typeof MutationObserver' in content
