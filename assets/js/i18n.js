@@ -842,6 +842,21 @@
     "দরকারি জাপানি বাক্য": {"bn":"দরকারি জাপানি বাক্য","en":"Useful Japanese phrases","ja":"便利な日本語フレーズ","vi":"Câu Japanese hữu ích","ne":"उपयोगी Japanese वाक्य","hi":"उपयोगी Japanese वाक्य","ur":"مفید Japanese جملے","my":"အသုံးဝင်သော Japanese စာကြောင်းများ","zh":"实用日语句子","si":"ප්‍රයෝජනවත් ජපන් වාක්‍ය","fil":"Mahahalagang pangungusap na Japanese"},
     "স্টাডি গাইড": {"bn":"স্টাডি গাইড","en":"Study Guide","ja":"学習ガイド","vi":"Hướng dẫn học tập","ne":"अध्ययन मार्गदर्शन","hi":"अध्ययन मार्गदर्शिका","ur":"مطالعے کی رہنمائی","my":"လေ့လာမှု လမ်းညွှန်","zh":"学习指南","si":"අධ්‍යයන මාර්ගෝපදේශය","fil":"Gabay sa pag-aaral"},
   };
+  /* Run 12: Bengali য় has two canonically-equivalent spellings — the
+     precomposed U+09DF used throughout the HTML pages vs the decomposed
+     U+09AF U+09BC used in the dictionaries above — so the exact-match
+     lookups in applyDynAttributes silently missed (e.g. the n3-kanji
+     search placeholder stayed Bengali on localized routes). Compare
+     NFC-normalized forms on both sides; the rows handed back are the
+     untouched dictionary values, and bn pages still return early. */
+  function dynNorm(s) { return typeof s === "string" && s.normalize ? s.normalize("NFC") : s; }
+  function dynNormMap(map) {
+    var out = {};
+    Object.keys(map).forEach(function (k) { out[dynNorm(k)] = map[k]; });
+    return out;
+  }
+  var DYN_PLACEHOLDERS_NFC = dynNormMap(DYN_PLACEHOLDERS);
+  var DYN_DATA_LABELS_NFC = dynNormMap(DYN_DATA_LABELS);
   var DYN_LANGS = { bn: 1, en: 1, ja: 1, vi: 1, ne: 1, hi: 1, ur: 1, my: 1, zh: 1, si: 1, fil: 1 };
   function dynLang() {
     var preset = document.documentElement.getAttribute("data-language-preset");
@@ -873,12 +888,12 @@
       if (lang === "bn") return;
       var inputs = document.querySelectorAll("[placeholder]");
       for (var i = 0; i < inputs.length; i++) {
-        var row = DYN_PLACEHOLDERS[inputs[i].getAttribute("placeholder")];
+        var row = DYN_PLACEHOLDERS_NFC[dynNorm(inputs[i].getAttribute("placeholder"))];
         if (row && row[lang]) inputs[i].setAttribute("placeholder", row[lang]);
       }
       var labelled = document.querySelectorAll("[data-label]");
       for (var j = 0; j < labelled.length; j++) {
-        var lrow = DYN_DATA_LABELS[labelled[j].getAttribute("data-label")];
+        var lrow = DYN_DATA_LABELS_NFC[dynNorm(labelled[j].getAttribute("data-label"))];
         if (lrow && lrow[lang]) labelled[j].setAttribute("data-label", lrow[lang]);
       }
     } catch (e) { /* attribute localization must never break a page */ }
