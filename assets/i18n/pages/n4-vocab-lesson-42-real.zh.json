@@ -1,0 +1,610 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n4-vocab-lesson-42-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N4 Vocabulary Lesson 42 | আপনার নিহোন",
+      "target": "N4 Vocabulary Lesson 42 | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "সব লেসন",
+      "target": "所有 Lesson"
+    },
+    {
+      "source": "জাপানিজ শব্দভাণ্ডার",
+      "target": "日语词汇"
+    },
+    {
+      "source": "প্রথমবার পড়া শিক্ষার্থীর জন্য—জাপানিজ, ふりがな, বাংলা উচ্চারণ ও সহজ বাংলা অর্থ একই কার্ডে। সার্চ, অডিও, শেখা মার্ক ও কুইজও আছে।",
+      "target": "第一次读的学生——日语、ふりがな、中文发音和简单中文意思在同一张 card。还有 search、audio、学习标记和 quiz。"
+    },
+    {
+      "source": "শব্দ শেখা শুরু",
+      "target": "开始学单词"
+    },
+    {
+      "source": "কুইজ দিন",
+      "target": "参加 Quiz"
+    },
+    {
+      "source": "55টি শব্দ",
+      "target": "55 个词"
+    },
+    {
+      "source": "১ম সংস্করণ অনুযায়ী সাজানো",
+      "target": "按 1st 版编排"
+    },
+    {
+      "source": "জাপানিজ অডিও",
+      "target": "日语音频"
+    },
+    {
+      "source": "ডিভাইসের Japanese voice ব্যবহার করে",
+      "target": "使用设备的 Japanese voice"
+    },
+    {
+      "source": "০ / 55 শেখা",
+      "target": "0 / 55 已学"
+    },
+    {
+      "source": "এই browser-এ progress সংরক্ষিত থাকবে",
+      "target": "progress 保存在此 browser"
+    },
+    {
+      "source": "সব",
+      "target": "全部"
+    },
+    {
+      "source": "শেখা হয়েছে",
+      "target": "已学"
+    },
+    {
+      "source": "বাকি",
+      "target": "剩余"
+    },
+    {
+      "source": "55টি দেখানো হচ্ছে",
+      "target": "显示 55 个"
+    },
+    {
+      "source": "Lesson 42-এর শব্দ",
+      "target": "Lesson 42 的词"
+    },
+    {
+      "source": "「—」 চিহ্ন মানে আগের স্বরটি একটু লম্বা করে পড়বেন।",
+      "target": "「—」符号表示前面的元音读长一点。"
+    },
+    {
+      "source": "↻ একটি random শব্দ",
+      "target": "↻ 一个 random 词"
+    },
+    {
+      "source": "১ম সংস্করণ",
+      "target": "1st 版"
+    },
+    {
+      "source": "উচ্চারণ",
+      "target": "发音"
+    },
+    {
+      "source": "ৎসুৎসুমিমাসু",
+      "target": "tsutsumimasu"
+    },
+    {
+      "source": "মোড়াই; প্যাকেট করি",
+      "target": "包；打包"
+    },
+    {
+      "source": "🔊 শুনুন",
+      "target": "🔊 听"
+    },
+    {
+      "source": "⧉ কপি",
+      "target": "⧉ Copy"
+    },
+    {
+      "source": "○ শেখা বাকি",
+      "target": "○ 还没学"
+    },
+    {
+      "source": "ওয়াকাশিমাসু",
+      "target": "wakashimasu"
+    },
+    {
+      "source": "ফোটাই; গরম করি",
+      "target": "烧开；加热"
+    },
+    {
+      "source": "মাজেমাসু",
+      "target": "mazemasu"
+    },
+    {
+      "source": "মেশাই; মিশ্রণ করি",
+      "target": "混合"
+    },
+    {
+      "source": "কে—সানশিমাসু",
+      "target": "keesanshimasu"
+    },
+    {
+      "source": "হিসাব করি; গণনা করি",
+      "target": "计算"
+    },
+    {
+      "source": "আৎসুই",
+      "target": "atsui"
+    },
+    {
+      "source": "পুরু; মোটা",
+      "target": "厚"
+    },
+    {
+      "source": "উসুই",
+      "target": "usui"
+    },
+    {
+      "source": "পাতলা; হালকা",
+      "target": "薄；淡"
+    },
+    {
+      "source": "বেনগোশি",
+      "target": "bengoshi"
+    },
+    {
+      "source": "আইনজীবী; উকিল",
+      "target": "律师"
+    },
+    {
+      "source": "ওনগাকুকা",
+      "target": "ongakuka"
+    },
+    {
+      "source": "সঙ্গীতশিল্পী",
+      "target": "音乐家"
+    },
+    {
+      "source": "কোদোমোতাচি",
+      "target": "kodomotachi"
+    },
+    {
+      "source": "শিশুরা; বাচ্চারা",
+      "target": "孩子们"
+    },
+    {
+      "source": "ফুতারি",
+      "target": "futari"
+    },
+    {
+      "source": "দুজন",
+      "target": "两个人"
+    },
+    {
+      "source": "ক্যো—ইকু",
+      "target": "kyooiku"
+    },
+    {
+      "source": "শিক্ষা",
+      "target": "教育"
+    },
+    {
+      "source": "রেকিশি",
+      "target": "rekishi"
+    },
+    {
+      "source": "ইতিহাস",
+      "target": "教育与工作经历"
+    },
+    {
+      "source": "বুনকা",
+      "target": "bunka"
+    },
+    {
+      "source": "সংস্কৃতি",
+      "target": "文化"
+    },
+    {
+      "source": "শাকাই",
+      "target": "shakai"
+    },
+    {
+      "source": "সমাজ",
+      "target": "社会"
+    },
+    {
+      "source": "হো—রিৎসু",
+      "target": "hooritsu"
+    },
+    {
+      "source": "আইন",
+      "target": "法律"
+    },
+    {
+      "source": "সেনসো—",
+      "target": "sensoo"
+    },
+    {
+      "source": "যুদ্ধ",
+      "target": "战争"
+    },
+    {
+      "source": "হে—ওয়া",
+      "target": "heewa"
+    },
+    {
+      "source": "শান্তি",
+      "target": "和平"
+    },
+    {
+      "source": "মোকুতেকি",
+      "target": "mokuteki"
+    },
+    {
+      "source": "উদ্দেশ্য; লক্ষ্য",
+      "target": "目的；目标"
+    },
+    {
+      "source": "আনজেন",
+      "target": "anzen"
+    },
+    {
+      "source": "নিরাপদ; নিরাপত্তা",
+      "target": "安全"
+    },
+    {
+      "source": "রোনবুন",
+      "target": "ronbun"
+    },
+    {
+      "source": "গবেষণাপত্র; থিসিস",
+      "target": "论文"
+    },
+    {
+      "source": "কানকে—",
+      "target": "kankee"
+    },
+    {
+      "source": "সম্পর্ক",
+      "target": "关系"
+    },
+    {
+      "source": "মিকিসা—",
+      "target": "mikisaa"
+    },
+    {
+      "source": "মিক্সার",
+      "target": "搅拌机"
+    },
+    {
+      "source": "ইয়াকান",
+      "target": "yakan"
+    },
+    {
+      "source": "কেটলি",
+      "target": "水壶"
+    },
+    {
+      "source": "সেননুকি",
+      "target": "sennuki"
+    },
+    {
+      "source": "বোতলের ছিপি খোলার যন্ত্র",
+      "target": "开瓶器"
+    },
+    {
+      "source": "কানকিরি",
+      "target": "kankiri"
+    },
+    {
+      "source": "ক্যান ওপেনার",
+      "target": "开罐器"
+    },
+    {
+      "source": "কানজুমে",
+      "target": "kanzume"
+    },
+    {
+      "source": "ক্যানজাত খাবার",
+      "target": "罐头食品"
+    },
+    {
+      "source": "ফুরোশিকি",
+      "target": "furoshiki"
+    },
+    {
+      "source": "জিনিস মোড়ানোর কাপড়",
+      "target": "包袱布"
+    },
+    {
+      "source": "সোরোবান",
+      "target": "soroban"
+    },
+    {
+      "source": "আবাকাস; জাপানি গণনার যন্ত্র",
+      "target": "算盘"
+    },
+    {
+      "source": "তাইওনকে—",
+      "target": "taionkee"
+    },
+    {
+      "source": "থার্মোমিটার; শরীরের তাপমাত্রা মাপার যন্ত্র",
+      "target": "体温计"
+    },
+    {
+      "source": "জাইর্যো—",
+      "target": "zairyoo"
+    },
+    {
+      "source": "উপাদান; কাঁচামাল",
+      "target": "材料；原料"
+    },
+    {
+      "source": "ইশি",
+      "target": "ishi"
+    },
+    {
+      "source": "পাথর",
+      "target": "石头"
+    },
+    {
+      "source": "পিরামিদ্দো",
+      "target": "piramiddo"
+    },
+    {
+      "source": "পিরামিড",
+      "target": "金字塔"
+    },
+    {
+      "source": "দে—তা",
+      "target": "deeta"
+    },
+    {
+      "source": "ডেটা",
+      "target": "数据"
+    },
+    {
+      "source": "ফাইরু",
+      "target": "fairu"
+    },
+    {
+      "source": "ফাইল",
+      "target": "文件"
+    },
+    {
+      "source": "আরু ～",
+      "target": "aru ~"
+    },
+    {
+      "source": "কোনো এক ~; একটি নির্দিষ্ট ~",
+      "target": "某个 ~；某一个 ~"
+    },
+    {
+      "source": "ইশ্শো—কেনমে—",
+      "target": "isshookenmee"
+    },
+    {
+      "source": "সর্বশক্তি দিয়ে; প্রাণপণে",
+      "target": "全力；拼命"
+    },
+    {
+      "source": "নাজে",
+      "target": "naze"
+    },
+    {
+      "source": "কেন?",
+      "target": "为什么？"
+    },
+    {
+      "source": "কোকুরেন",
+      "target": "kokuren"
+    },
+    {
+      "source": "জাতিসংঘ",
+      "target": "联合国"
+    },
+    {
+      "source": "এরি—জেনো তামেনি",
+      "target": "eriize no tame ni"
+    },
+    {
+      "source": "এলিসের জন্য (সঙ্গীতের নাম)",
+      "target": "致爱丽丝（乐曲名）"
+    },
+    {
+      "source": "বে—তো—বেন",
+      "target": "beetooben"
+    },
+    {
+      "source": "বেটোফেন (ব্যক্তির নাম)",
+      "target": "贝多芬（人名）"
+    },
+    {
+      "source": "পো—রানদো",
+      "target": "poorando"
+    },
+    {
+      "source": "পোল্যান্ড",
+      "target": "波兰"
+    },
+    {
+      "source": "রো—ন",
+      "target": "roon"
+    },
+    {
+      "source": "ঋণ; কিস্তি",
+      "target": "贷款；分期"
+    },
+    {
+      "source": "সেত্তো",
+      "target": "setto"
+    },
+    {
+      "source": "সেট; জোড়া",
+      "target": "套；组"
+    },
+    {
+      "source": "আতো",
+      "target": "ato"
+    },
+    {
+      "source": "আরও; বাকি",
+      "target": "还；剩余"
+    },
+    {
+      "source": "কাপ্পুরা—মেন",
+      "target": "kappuraamen"
+    },
+    {
+      "source": "কাপ রামেন; কাপ নুডলস",
+      "target": "杯面"
+    },
+    {
+      "source": "ইনসুতানতোরা—মেন",
+      "target": "insutanto raamen"
+    },
+    {
+      "source": "ইনস্ট্যান্ট রামেন",
+      "target": "方便拉面"
+    },
+    {
+      "source": "নাবে",
+      "target": "nabe"
+    },
+    {
+      "source": "হাঁড়ি; পাত্র",
+      "target": "锅；容器"
+    },
+    {
+      "source": "দোনবুরি",
+      "target": "donburi"
+    },
+    {
+      "source": "বড় বাটি; ডনবুরি বাটি",
+      "target": "大碗；丼碗"
+    },
+    {
+      "source": "শোকুহিন",
+      "target": "shokuhin"
+    },
+    {
+      "source": "খাদ্যদ্রব্য",
+      "target": "食品"
+    },
+    {
+      "source": "চো—সা",
+      "target": "choosa"
+    },
+    {
+      "source": "তদন্ত; জরিপ",
+      "target": "调查"
+    },
+    {
+      "source": "কাপ্পু",
+      "target": "kappu"
+    },
+    {
+      "source": "কাপ",
+      "target": "杯子"
+    },
+    {
+      "source": "মাতা",
+      "target": "mata"
+    },
+    {
+      "source": "আবার; এছাড়াও",
+      "target": "再；而且"
+    },
+    {
+      "source": "～নো কাওয়ারিনি",
+      "target": "～no kawari ni"
+    },
+    {
+      "source": "~ এর পরিবর্তে",
+      "target": "代替 ~"
+    },
+    {
+      "source": "দোকোদেদেমো",
+      "target": "dokodemo"
+    },
+    {
+      "source": "যেকোনো জায়গায়",
+      "target": "任何地方"
+    },
+    {
+      "source": "ইমাদেহা",
+      "target": "ima dewa"
+    },
+    {
+      "source": "এখন; বর্তমানে",
+      "target": "现在；目前"
+    },
+    {
+      "source": "কোনো শব্দ পাওয়া যায়নি।",
+      "target": "找不到词。"
+    },
+    {
+      "source": "অন্য বানান বা বাংলা অর্থ দিয়ে চেষ্টা করুন।",
+      "target": "请用其他拼写或中文意思试试。"
+    },
+    {
+      "source": "১০ প্রশ্ন • দুই ধরনের অনুশীলন",
+      "target": "10 个问题 • 两种练习"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "自我测试"
+    },
+    {
+      "source": "কখনো জাপানিজ দেখে বাংলা অর্থ, আবার কখনো বাংলা দেখে সঠিক জাপানিজ বেছে নিন। প্রতিবার নতুন random প্রশ্ন আসবে।",
+      "target": "有时看日语选中文意思，有时看中文选正确的日语。每次都会出新的 random 问题。"
+    },
+    {
+      "source": "নতুন কুইজ শুরু",
+      "target": "开始新 Quiz"
+    },
+    {
+      "source": "প্রশ্ন ১ / ১০",
+      "target": "问题 1 / 10"
+    },
+    {
+      "source": "স্কোর ০",
+      "target": "分数 0"
+    },
+    {
+      "source": "পরের প্রশ্ন",
+      "target": "下一个问题"
+    },
+    {
+      "source": "তালিকা নোট:",
+      "target": "列表备注："
+    },
+    {
+      "source": "আপনার দেওয়া পুরোনো ফাইলের সঙ্গে মিল রেখে Minna no Nihongo Shokyu II-এর ১ম সংস্করণের lesson order ব্যবহার করা হয়েছে। OCR-এ ভাঙা কানা, duplicate example এবং ভুল বাংলা অর্থ বাদ দিয়ে entry-গুলো নতুন করে তৈরি করা হয়েছে। এটি শিক্ষার্থীর সহায়ক free resource; মূল বইয়ের বিকল্প নয়।",
+      "target": "与您给的旧文件一致，使用了 Minna no Nihongo Shokyu II 1st 版的 lesson order。去掉 OCR 中破碎的 kana、duplicate example 和错误的中文意思，entries 重新制作。这是帮助学生的 free resource；不是原书的替代品。"
+    },
+    {
+      "source": "আগের লেসন",
+      "target": "上一个 Lesson"
+    },
+    {
+      "source": "সব N4 লেসন",
+      "target": "所有 N4 Lesson"
+    },
+    {
+      "source": "পরের লেসন",
+      "target": "下一个 Lesson"
+    },
+    {
+      "source": "আপনার নিহোন • শিক্ষার্থীদের জন্য সহজ বাংলা জাপানিজ শিক্ষা",
+      "target": "আপনার নিহোন • 为学生提供简单中文日语学习"
+    }
+  ]
+}

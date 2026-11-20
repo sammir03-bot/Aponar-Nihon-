@@ -1,0 +1,242 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n5-grammar-lesson-22-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 22 | Noun Modification / Relative Clauses | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 22 | Noun Modification / Relative Clauses | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "যে মানুষ, যে জিনিস, যে জায়গা — noun-এর আগে বাক্য বসানো",
+      "target": "……的人、……的东西、……的地方——在 noun 前放句子"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar 开始"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "今天的 Learning Goal"
+    },
+    {
+      "source": "Noun modify করা",
+      "target": "修饰 Noun"
+    },
+    {
+      "source": "মানুষ বর্ণনা",
+      "target": "描述人"
+    },
+    {
+      "source": "আরও natural sentence",
+      "target": "更 natural 的 sentence"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "简单讲解 + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "每个 pattern 先看 structure，然后大声说 example。按 Audio button 可以听 Japanese sentence。"
+    },
+    {
+      "source": "noun-এর আগে plain sentence বসিয়ে “যে/যা/যেখানে” অর্থ তৈরি হয়।",
+      "target": "在 noun 前放 plain sentence，形成“……的”的意思。"
+    },
+    {
+      "source": "Japanese-এ relative clause noun-এর আগে আসে; বাংলা/ইংরেজিতে পরে আসতে পারে।",
+      "target": "日语中 relative clause 在 noun 前；中文/英语中可以在后。"
+    },
+    {
+      "source": "কোরে ওয়া কিনো কাত্তা হোনদেসু।",
+      "target": "これは昨日買った本です。"
+    },
+    {
+      "source": "এটা গতকাল কেনা বই।",
+      "target": "这是昨天买的书。"
+    },
+    {
+      "source": "আসোকো নি ইরু হিতো ওয়া তানাকা সানদেসু।",
+      "target": "あそこにいる人は田中さんです。"
+    },
+    {
+      "source": "ওখানে থাকা ব্যক্তি তানাকা-সান।",
+      "target": "在那里的人是田中先生。"
+    },
+    {
+      "source": "noun modifying clause-এর ভিতরের subject সাধারণত が দিয়ে আসে।",
+      "target": "noun modifying clause 内部的 subject 通常用 が。"
+    },
+    {
+      "source": "母は作った料理 নয়; 母が作った料理।",
+      "target": "不是 母は作った料理；是 母が作った料理。"
+    },
+    {
+      "source": "কোরে ওয়া হাহা গা ৎসুকুত্তা রিয়োরিদেসু।",
+      "target": "これは母が作った料理です。"
+    },
+    {
+      "source": "এটা মায়ের বানানো খাবার।",
+      "target": "这是妈妈做的菜。"
+    },
+    {
+      "source": "ওয়াতাশি গা ইয়োমিতাই হোন ওয়া কোরেদেসু।",
+      "target": "私が読みたい本はこれです。"
+    },
+    {
+      "source": "আমি যে বই পড়তে চাই, সেটা এটা।",
+      "target": "我想读的书是这本。"
+    },
+    {
+      "source": "যে ব্যক্তি এখন/habitually কিছু করছে, তাকে describe করতে।",
+      "target": "描述现在/habitually 正在做某事的人。"
+    },
+    {
+      "source": "মেগানে ও কাকেতেইরু হিতো ওয়া ইয়ামাদা সানদেসু।",
+      "target": "眼鏡をかけている人は山田さんです。"
+    },
+    {
+      "source": "চশমা পরা ব্যক্তি ইয়ামাদা-সান।",
+      "target": "戴眼镜的人是山田先生。"
+    },
+    {
+      "source": "দেনওয়া ও শিতেইরু হিতো ওয়া দারেদেসু কা।",
+      "target": "電話をしている人はだれですか。"
+    },
+    {
+      "source": "ফোন করছে যে ব্যক্তি, সে কে?",
+      "target": "正在打电话的人是谁？"
+    },
+    {
+      "source": "যে জায়গায়/যে সময় কিছু করি তা noun modification দিয়ে বলা যায়।",
+      "target": "做某事的地方/时间可以用 noun modification 表达。"
+    },
+    {
+      "source": "場所/時間 noun-কে আগের clause modify করে।",
+      "target": "前面的 clause 修饰 場所/時間 noun。"
+    },
+    {
+      "source": "ওয়াতাশি গা বেনকিয়ো সুরু বাশো ওয়া তোশোকানদেসু।",
+      "target": "私が勉強する場所は図書館です。"
+    },
+    {
+      "source": "আমি যে জায়গায় পড়ি, তা লাইব্রেরি।",
+      "target": "我学习的地方是图书馆。"
+    },
+    {
+      "source": "গোহান ও তাবেরু জিকান গা আরিমাসেন।",
+      "target": "ご飯を食べる時間がありません。"
+    },
+    {
+      "source": "খাওয়ার সময় নেই।",
+      "target": "没有吃饭的时间。"
+    },
+    {
+      "source": "বর্ণনা দিয়ে কোন ব্যক্তি/জিনিস তা জিজ্ঞাসা করা যায়।",
+      "target": "可以用描述询问是哪个人/东西。"
+    },
+    {
+      "source": "Noun modification conversation-এ খুব useful।",
+      "target": "Noun modification 在 conversation 中非常 useful。"
+    },
+    {
+      "source": "মিরা সান গা সুনদেইরু ইয়ে ওয়া দোকোদেসু কা।",
+      "target": "ミラーさんが住んでいる家はどこですか。"
+    },
+    {
+      "source": "মিলার-সান যে বাড়িতে থাকেন, সেটা কোথায়?",
+      "target": "米勒先生住的房子在哪里？"
+    },
+    {
+      "source": "কিনো আত্তা হিতো ওয়া দারেদেসু কা।",
+      "target": "昨日会った人はだれですか。"
+    },
+    {
+      "source": "গতকাল যে ব্যক্তির সাথে দেখা হয়েছিল, তিনি কে?",
+      "target": "昨天见过的人是谁？"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "口头 Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "把这些句子像 conversation 一样读 3 遍。"
+    },
+    {
+      "source": "কোরে ওয়া নানিদেসু কা।",
+      "target": "これは何ですか。"
+    },
+    {
+      "source": "এটা কী?",
+      "target": "这是什么？"
+    },
+    {
+      "source": "কিনো কাত্তা হোনদেসু।",
+      "target": "昨日買った本です。"
+    },
+    {
+      "source": "গতকাল কেনা বই।",
+      "target": "昨天买的书。"
+    },
+    {
+      "source": "আসোকো নি ইরু হিতো ওয়া দারেদেসু কা।",
+      "target": "あそこにいる人はだれですか。"
+    },
+    {
+      "source": "ওখানে থাকা ব্যক্তি কে?",
+      "target": "在那里的人是谁？"
+    },
+    {
+      "source": "তানাকা সানদেসু।",
+      "target": "田中さんです。"
+    },
+    {
+      "source": "তানাকা-সান।",
+      "target": "田中先生。"
+    },
+    {
+      "source": "আনাতা গা সুনদেইরু মাচি ওয়া দোকোদেসু কা।",
+      "target": "あなたが住んでいる町はどこですか。"
+    },
+    {
+      "source": "আপনি যে শহরে থাকেন সেটা কোথায়?",
+      "target": "你住的城市在哪里？"
+    },
+    {
+      "source": "✅ 母が作った料理 — modifying clause-এর subject が।",
+      "target": "✅ 母が作った料理 — modifying clause 的 subject 用 が。"
+    },
+    {
+      "source": "✅ 昨日買った本 — noun modify করতে plain form।",
+      "target": "✅ 昨日買った本 — 修饰 noun 用 plain form。"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "自我测试"
+    },
+    {
+      "source": "গতকাল কেনা বই = ?",
+      "target": "昨天买的书 = ?"
+    },
+    {
+      "source": "মায়ের বানানো খাবার = ?",
+      "target": "妈妈做的菜 = ?"
+    },
+    {
+      "source": "চশমা পরা ব্যক্তি = ?",
+      "target": "戴眼镜的人 = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 22 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 22 • Verified Premium Detailed Version"
+    }
+  ]
+}
