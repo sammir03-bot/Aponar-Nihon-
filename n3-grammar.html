@@ -1476,6 +1476,7 @@ body[data-theme="dark"] .memory-trick{background:#2b2412;border-color:#53451d;co
 <div class="section danger"><h3>৩. সাধারণ ভুল</h3><p>ইচ্ছাকৃত কাজ নয়; অনুভূতি ও শারীরিক অবস্থা বেশি।</p><p><b>আরও মনে রাখো:</b> নিজের অনিয়ন্ত্রিত অনুভূতিতে বেশি।</p></div>
 </article></section><div class="empty-state" id="emptyState" role="status"><b>কোন Grammar পাওয়া যায়নি</b><p>অন্য বাংলা অর্থ, Japanese form বা Part দিয়ে আবার খুঁজুন।</p></div></section></main>
 <footer>অগ্রগতি browser-এ save হবে। মোবাইলে Chrome দিয়ে খুললে search, chapter filter ও “শেখা” checkbox ব্যবহার করা যাবে। • সব Japanese example-এ furigana • <a href="https://app.aponar-nihon.workers.dev/">আপনার নিহোনে ফিরুন</a></footer><script src="/assets/js/n3-grammar-deep.js?v=20260828"></script><script id="aponar-nihon-learning-script">
+function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"g3.partMeta": "{n}টি Grammar • {done} শেখা", "g3.prevPart": "← আগের Part", "g3.allParts": "সব Part-এর তালিকা", "g3.nextPart": "পরের Part →", "g3.startPart1": "Part 01 শুরু →", "g3.partOfAll": "Part {cur} / {total} • সব Part", "g3.backToList": "{n}টি Part • তালিকায় ফিরুন", "g3.progress": "{done} / {total} শেখা", "g3.partStat": "{done} শেখা • {left} বাকি", "g3.grammarFound": "{n}টি Grammar পাওয়া গেছে", "g3.dirTitle": "N3 Grammar-এর সব ১১টি Part", "g3.dirIntro": "নিচের Part-গুলো ১ থেকে ১১ পর্যন্ত সম্পূর্ণ আছে। যেটি পড়বেন, সেটিতে tap করুন—শেষে আগের/পরের Part-এ যাওয়ার button-ও পাবেন।", "g3.viewAll": "সব ১১৩টি Grammar দেখুন"};
 (() => {
   const cards = [...document.querySelectorAll('.card')];
   const sections = [...document.querySelectorAll('.part-section')];
@@ -1508,8 +1509,8 @@ body[data-theme="dark"] .memory-trick{background:#2b2412;border-color:#53451d;co
     directory.setAttribute('aria-labelledby', 'grammar-directory-title');
     directory.innerHTML = `
       <div class="grammar-directory-head">
-        <div><h2 id="grammar-directory-title">N3 Grammar-এর সব ১১টি Part</h2><p>নিচের Part-গুলো ১ থেকে ১১ পর্যন্ত সম্পূর্ণ আছে। যেটি পড়বেন, সেটিতে tap করুন—শেষে আগের/পরের Part-এ যাওয়ার button-ও পাবেন।</p></div>
-        <button class="grammar-directory-all is-active" type="button">সব ১১৩টি Grammar দেখুন</button>
+        <div><h2 id="grammar-directory-title">${dynT('g3.dirTitle')}</h2><p>${dynT('g3.dirIntro')}</p></div>
+        <button class="grammar-directory-all is-active" type="button">${dynT('g3.viewAll')}</button>
       </div>
       <div class="grammar-part-grid"></div>`;
     const grid = directory.querySelector('.grammar-part-grid');
@@ -1524,7 +1525,7 @@ body[data-theme="dark"] .memory-trick{background:#2b2412;border-color:#53451d;co
       button.className = 'grammar-part-card';
       button.dataset.partTarget = number;
       button.setAttribute('aria-label', `Part ${number}: ${title}`);
-      button.innerHTML = `<span class="grammar-part-number">P${String(number).padStart(2, '0')}</span><span class="grammar-part-copy"><b>${escapeHtmlForNav(title)}</b><small>${count}টি Grammar • 0 শেখা</small></span><span class="grammar-part-arrow">›</span>`;
+      button.innerHTML = `<span class="grammar-part-number">P${String(number).padStart(2, '0')}</span><span class="grammar-part-copy"><b>${escapeHtmlForNav(title)}</b><small>${dynT('g3.partMeta', {n: count, done: 0})}</small></span><span class="grammar-part-arrow">›</span>`;
       button.addEventListener('click', () => setPart(number, true));
       grid.appendChild(button);
     });
@@ -1535,7 +1536,7 @@ body[data-theme="dark"] .memory-trick{background:#2b2412;border-color:#53451d;co
     const pager = document.createElement('nav');
     pager.className = 'grammar-part-pager';
     pager.setAttribute('aria-label', 'আগের বা পরের Grammar Part');
-    pager.innerHTML = '<button type="button" class="pager-previous">← আগের Part</button><button type="button" class="pager-index">সব Part-এর তালিকা</button><button type="button" class="pager-next">পরের Part →</button>';
+    pager.innerHTML = '<button type="button" class="pager-previous">' + dynT('g3.prevPart') + '</button><button type="button" class="pager-index">' + dynT('g3.allParts') + '</button><button type="button" class="pager-next">' + dynT('g3.nextPart') + '</button>';
     pagerPrevious = pager.querySelector('.pager-previous');
     pagerIndex = pager.querySelector('.pager-index');
     pagerNext = pager.querySelector('.pager-next');
@@ -1567,10 +1568,10 @@ body[data-theme="dark"] .memory-trick{background:#2b2412;border-color:#53451d;co
     if (!pagerPrevious || !pagerNext || !pagerIndex) return;
     const current = part === 'all' ? 0 : Number(part);
     pagerPrevious.disabled = current <= 1;
-    pagerPrevious.textContent = current > 1 ? `← Part ${String(current - 1).padStart(2, '0')}` : '← আগের Part';
+    pagerPrevious.textContent = current > 1 ? `← Part ${String(current - 1).padStart(2, '0')}` : dynT('g3.prevPart');
     pagerNext.disabled = current >= sections.length;
-    pagerNext.textContent = current === 0 ? 'Part 01 শুরু →' : current < sections.length ? `Part ${String(current + 1).padStart(2, '0')} →` : 'পরের Part →';
-    pagerIndex.textContent = current ? `Part ${String(current).padStart(2, '0')} / ${sections.length} • সব Part` : `${sections.length}টি Part • তালিকায় ফিরুন`;
+    pagerNext.textContent = current === 0 ? dynT('g3.startPart1') : current < sections.length ? `Part ${String(current + 1).padStart(2, '0')} →` : dynT('g3.nextPart');
+    pagerIndex.textContent = current ? dynT('g3.partOfAll', {cur: String(current).padStart(2, '0'), total: sections.length}) : dynT('g3.backToList', {n: sections.length});
   }
 
   function loadDone() {
@@ -1596,16 +1597,16 @@ body[data-theme="dark"] .memory-trick{background:#2b2412;border-color:#53451d;co
     const progress = document.getElementById('prog');
     const progressText = document.getElementById('ptxt');
     progress.value = totalDone;
-    progressText.textContent = `${totalDone} / ${cards.length} শেখা`;
+    progressText.textContent = dynT('g3.progress', {done: totalDone, total: cards.length});
 
     sections.forEach(section => {
       const partCards = [...section.querySelectorAll('.card')];
       const partDone = section.querySelectorAll('.done:checked').length;
       const stat = section.querySelector('.part-stats');
-      if (stat) stat.textContent = `${partDone} শেখা • ${partCards.length - partDone} বাকি`;
+      if (stat) stat.textContent = dynT('g3.partStat', {done: partDone, left: partCards.length - partDone});
       const directoryCard = directoryCards.find(card => card.dataset.partTarget === section.dataset.part);
       const directoryStat = directoryCard?.querySelector('small');
-      if (directoryStat) directoryStat.textContent = `${partCards.length}টি Grammar • ${partDone} শেখা`;
+      if (directoryStat) directoryStat.textContent = dynT('g3.partMeta', {n: partCards.length, done: partDone});
     });
   }
 
@@ -1635,7 +1636,7 @@ body[data-theme="dark"] .memory-trick{background:#2b2412;border-color:#53451d;co
     sections.forEach(section => {
       section.classList.toggle('hidden', !section.querySelector('.card:not(.hidden)'));
     });
-    resultCount.textContent = `${visible}টি Grammar পাওয়া গেছে`;
+    resultCount.textContent = dynT('g3.grammarFound', {n: visible});
     emptyState.classList.toggle('show', visible === 0);
     clearButton.classList.toggle('is-visible', Boolean(term));
     undoneButton.classList.toggle('active', onlyUndone);
