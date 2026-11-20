@@ -1,0 +1,478 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n4-grammar-lesson-26-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 26: 〜んです：কারণ, ব্যাখ্যা ও ভদ্র অনুরোধ | N4 Grammar",
+      "target": "Bài 26: 〜んです: lý do, giải thích và yêu cầu lịch sự | Ngữ pháp N4"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Chuyển đến nội dung chính"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 26 · ভিত্তি বিস্তার",
+      "target": "Bài 26 · Mở rộng nền tảng"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Tất cả bài học"
+    },
+    {
+      "source": "ভিত্তি বিস্তার",
+      "target": "Xây dựng nền tảng"
+    },
+    {
+      "source": "ধাপ ১ · 26–30",
+      "target": "Bước 1 · 26–30"
+    },
+    {
+      "source": "〜んです：কারণ, ব্যাখ্যা ও ভদ্র অনুরোধ",
+      "target": "〜んです: lý do, giải thích và yêu cầu lịch sự"
+    },
+    {
+      "source": "কথার পেছনের পরিস্থিতি ব্যাখ্যা করা, কারণ জানতে চাওয়া, অনুরোধের ভূমিকা তৈরি করা এবং পরামর্শ চাওয়ার পূর্ণ পদ্ধতি।",
+      "target": "Phương pháp đầy đủ để giải thích tình huống đằng sau lời nói, hỏi lý do, tạo lời mở đầu cho yêu cầu và xin lời khuyên."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 khối ngữ pháp chi tiết"
+    },
+    {
+      "source": "9টি Japanese example",
+      "target": "9 ví dụ tiếng Nhật"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 bài luyện tập kèm giải thích"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Thân thiện ngoại tuyến, di động và in ấn"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Ẩn あ phần đọc"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Chưa hoàn thành"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Đánh dấu hoàn thành"
+    },
+    {
+      "source": "Lesson 26 · লক্ষ্য",
+      "target": "Bài 26 · Mục tiêu"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Sau bài này bạn sẽ có thể"
+    },
+    {
+      "source": "〜んです শুধু ‘কারণ’ নয়। বক্তা যখন মনে করেন শ্রোতার একটি ব্যাখ্যা দরকার, অথবা দৃশ্যমান কোনো পরিস্থিতির পেছনের তথ্য জানতে চান, তখন এই রূপ ব্যবহার করেন। তাই এটি শিখতে হলে গঠন মুখস্থ করার পাশাপাশি ‘কোন পরিস্থিতিতে ব্যাখ্যা প্রত্যাশিত’—এটি বুঝতে হবে।",
+      "target": "〜んです không chỉ là ‘lý do’. Khi người nói nghĩ người nghe cần một lời giải thích, hoặc muốn biết thông tin đằng sau một tình huống có thể thấy được, họ dùng dạng này. Vì vậy để học nó, ngoài việc ghi nhớ cấu trúc cần hiểu ‘trong tình huống nào lời giải thích được kỳ vọng’."
+    },
+    {
+      "source": "ক্রিয়া, い-বিশেষণ, な-বিশেষণ ও বিশেষ্যের সঙ্গে んです সঠিকভাবে জুড়তে পারবেন",
+      "target": "Nối đúng んです với động từ, tính từ い, tính từ な và danh từ"
+    },
+    {
+      "source": "সাধারণ প্রশ্ন এবং ব্যাখ্যা-চাওয়া んですか-এর সূক্ষ্ম পার্থক্য বুঝবেন",
+      "target": "Hiểu sự khác biệt tinh tế giữa câu hỏi thông thường và んですか xin giải thích"
+    },
+    {
+      "source": "〜んですが দিয়ে নরমভাবে প্রসঙ্গ তুলে ভদ্র অনুরোধ করতে পারবেন",
+      "target": "Dùng 〜んですが để nêu vấn đề nhẹ nhàng và yêu cầu lịch sự"
+    },
+    {
+      "source": "疑問詞＋Vたらいいですか দিয়ে নির্দেশ বা পরামর্শ চাইতে পারবেন",
+      "target": "Dùng 疑問詞＋Vたらいいですか để xin chỉ dẫn hoặc lời khuyên"
+    },
+    {
+      "source": "পেছনের কারণ, ব্যাখ্যা বা প্রাসঙ্গিক তথ্য জানানো/জানতে চাওয়া",
+      "target": "Cho biết/hỏi lý do đằng sau, lời giải thích hoặc thông tin liên quan"
+    },
+    {
+      "source": "গঠন",
+      "target": "Cấu trúc"
+    },
+    {
+      "source": "ধরন",
+      "target": "Loại"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Ví dụ"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "Động từ"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-tính từ"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-tính từ"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Danh từ"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Giải thích chi tiết"
+    },
+    {
+      "source": "কথ্য ভাষায় 〜んです সবচেয়ে স্বাভাবিক; তুলনামূলক আনুষ্ঠানিক লেখা বা বক্তব্যে 〜のです ব্যবহৃত হয়। দুটির অর্থ একই।",
+      "target": "Trong ngôn ngữ nói 〜んです là tự nhiên nhất; trong văn viết hoặc phát biểu tương đối trang trọng dùng 〜のです. Ý nghĩa của cả hai giống nhau."
+    },
+    {
+      "source": "〜んですか বললে বক্তা শুধু তথ্য চান না—দেখা/শোনা কোনো সংকেত থেকে তার ব্যাখ্যা চান। ভেজা ছাতা দেখে 雨が降っているんですか বললে অর্থ দাঁড়ায় ‘বৃষ্টি হচ্ছে নাকি—এই ভেজা ছাতার কারণ সেটাই?’",
+      "target": "Khi nói 〜んですか người nói không chỉ muốn thông tin — họ muốn lời giải thích từ một dấu hiệu đã thấy/nghe. Nhìn chiếc ô ướt và nói 雨が降っているんですか có nghĩa là ‘trời đang mưa à — đó có phải là lý do chiếc ô ướt không?’"
+    },
+    {
+      "source": "উত্তরে 〜んです ব্যবহার করলে আগের প্রশ্ন বা পরিস্থিতির ব্যাখ্যা পাওয়া যায়। সরাসরি কোনো নিরপেক্ষ তথ্য ঘোষণা করতে অকারণে এটি বসালে অস্বাভাবিক শোনাতে পারে।",
+      "target": "Khi trả lời bằng 〜んです sẽ nhận được lời giải thích cho câu hỏi hoặc tình huống trước đó. Nếu đặt nó không cần thiết để tuyên bố một thông tin trung lập trực tiếp có thể nghe không tự nhiên."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Điều cần nhớ"
+    },
+    {
+      "source": "な-বিশেষণ ও বিশেষ্যের affirmative present-এ な বাদ যাবে না: 静かなんです, 休みなんです।",
+      "target": "Ở khẳng định hiện tại của tính từ な và danh từ, な không bị bỏ: 静かなんです, 休みなんです."
+    },
+    {
+      "source": "どうして〜んですか-এর উত্তরে কারণটি 〜んです দিয়ে বললে সংযোগটি স্বাভাবিক হয়।",
+      "target": "Khi trả lời どうして〜んですか, nói lý do bằng 〜んです thì sự nối kết sẽ tự nhiên."
+    },
+    {
+      "source": "পরিচয়মাত্র দিলে 私はラナです স্বাভাবিক; বিশেষ ব্যাখ্যার প্রেক্ষাপট না থাকলে 私はラナなんです বলবেন না।",
+      "target": "Nếu chỉ giới thiệu thì 私はラナです là tự nhiên; nếu không có bối cảnh giải thích đặc biệt đừng nói 私はラナなんです."
+    },
+    {
+      "source": "কেন দেরি হলো? বাস আসেনি—তাই।",
+      "target": "Sao bạn đến muộn? Vì xe buýt không đến."
+    },
+    {
+      "source": "আপনাকে ফ্যাকাশে দেখাচ্ছে। কী হয়েছে?",
+      "target": "Trông bạn nhợt nhạt. Có chuyện gì vậy?"
+    },
+    {
+      "source": "আমি জাপানি কোম্পানিতে কাজ করতে চাই—এই হলো আমার কথা/পরিকল্পনা।",
+      "target": "Tôi muốn làm việc ở công ty Nhật — đó là lời nói/kế hoạch của tôi."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Sai"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Đúng"
+    },
+    {
+      "source": "কেন:",
+      "target": "Vì sao:"
+    },
+    {
+      "source": "静か হলো な-বিশেষণ; তাই んです-এর আগে な প্রয়োজন।",
+      "target": "静か là tính từ な; vì vậy trước んです cần な."
+    },
+    {
+      "source": "অনুরোধ, অনুমতি, আমন্ত্রণ বা প্রশ্নের আগে নরম ভূমিকা",
+      "target": "Lời mở đầu nhẹ nhàng trước yêu cầu, xin phép, lời mời hoặc câu hỏi"
+    },
+    {
+      "source": "পটভূমি",
+      "target": "Bối cảnh"
+    },
+    {
+      "source": "অসম্পূর্ণ বাক্য",
+      "target": "Câu chưa hoàn chỉnh"
+    },
+    {
+      "source": "এখানে が প্রকৃত বিরোধ বোঝায় না। এটি ‘একটা কথা ছিল…’ ধরনের নরম বিরতি তৈরি করে। শ্রোতা পরিস্থিতি বুঝে পরের অনুরোধ অনুমান করতে পারলে বাক্য অসম্পূর্ণ রেখেও বলা যায়।",
+      "target": "Ở đây が không chỉ sự đối lập thực sự. Nó tạo ra một khoảng dừng nhẹ nhàng kiểu ‘có một chuyện là…’. Nếu người nghe có thể đoán yêu cầu tiếp theo từ tình huống, có thể nói để câu chưa hoàn chỉnh."
+    },
+    {
+      "source": "সেবা-কেন্দ্র, অফিস, শিক্ষক বা অপরিচিত মানুষের কাছে সরাসরি দাবি না করে প্রেক্ষাপট দিলে কথা অনেক বেশি ভদ্র ও স্বাভাবিক শোনায়।",
+      "target": "Ở trung tâm dịch vụ, văn phòng, với giáo viên hoặc người lạ, nếu đưa bối cảnh thay vì yêu cầu trực tiếp, lời nói sẽ nghe lịch sự và tự nhiên hơn nhiều."
+    },
+    {
+      "source": "が-এর পরে অনুরোধ, প্রশ্ন, অনুমতি বা আমন্ত্রণ আসা স্বাভাবিক।",
+      "target": "Sau が, yêu cầu, câu hỏi, xin phép hoặc lời mời đến là tự nhiên."
+    },
+    {
+      "source": "কণ্ঠস্বর নিচে নামিয়ে 〜んですが… বললে শ্রোতাকে সাহায্যের সুযোগ দেওয়া হয়।",
+      "target": "Hạ giọng và nói 〜んですが… sẽ cho người nghe cơ hội giúp đỡ."
+    },
+    {
+      "source": "কপিয়ারটি চলছে না; একটু দেখে দেবেন কি?",
+      "target": "Máy photocopy không chạy; bạn có thể xem giúp một chút không?"
+    },
+    {
+      "source": "আগামী সপ্তাহে কিয়োতো যাচ্ছি; সুপারিশ করার মতো জায়গা আছে কি?",
+      "target": "Tuần sau tôi đi Kyoto; có nơi nào bạn gợi ý không?"
+    },
+    {
+      "source": "প্রথমটি ব্যাকরণগতভাবে ঠিক, কিন্তু অপরিচিত/উচ্চপদস্থ ব্যক্তির কাছে দ্বিতীয়টি অনেক নরম।",
+      "target": "Câu đầu tiên đúng ngữ pháp, nhưng với người lạ/cấp trên câu thứ hai nhẹ nhàng hơn nhiều."
+    },
+    {
+      "source": "‘আপনি কি দয়া করে… করে দিতে পারবেন না?’—অত্যন্ত ভদ্র অনুরোধ",
+      "target": "‘Bạn có thể vui lòng làm… cho tôi không?’ — yêu cầu rất lịch sự"
+    },
+    {
+      "source": "কথ্য সংক্ষিপ্ত",
+      "target": "Dạng nói rút gọn"
+    },
+    {
+      "source": "いただく হলো もらう-এর humble রূপ। Negative question いただけませんか সরাসরি ‘করুন’ না বলে শ্রোতার সামর্থ্য/সম্মতি জানতে চায়; ফলে অনুরোধটি খুব ভদ্র হয়।",
+      "target": "いただく là dạng khiêm nhường của もらう. Câu hỏi phủ định いただけませんか không nói trực tiếp ‘hãy làm’, mà hỏi khả năng/sự đồng ý của người nghe; vì vậy yêu cầu rất lịch sự."
+    },
+    {
+      "source": "বন্ধুর সঙ্গে সাধারণত Vてくれない？ বা Vてもらえる？ বেশি মানানসই। ভদ্রতা যত বাড়ে, মানসিক দূরত্বও বাড়তে পারে—তাই সম্পর্ক অনুযায়ী রূপ বেছে নিন।",
+      "target": "Với bạn bè, Vてくれない？ hoặc Vてもらえる？ thường phù hợp hơn. Lịch sự càng tăng, khoảng cách tâm lý cũng có thể tăng — vì vậy hãy chọn dạng theo mối quan hệ."
+    },
+    {
+      "source": "অনুরোধকারী নিজের উপকারের জন্য অন্যের কাজ চান।",
+      "target": "Người yêu cầu muốn hành động của người khác vì lợi ích của mình."
+    },
+    {
+      "source": "ください-এর চেয়ে いただけませんか বেশি নম্র; জরুরি আদেশের জন্য এটি নয়।",
+      "target": "いただけませんか khiêm tốn hơn ください; nó không dùng cho mệnh lệnh khẩn cấp."
+    },
+    {
+      "source": "এই কানজিটির পড়া দয়া করে শিখিয়ে দেবেন কি?",
+      "target": "Bạn có thể vui lòng dạy tôi cách đọc kanji này không?"
+    },
+    {
+      "source": "আরেকটু ধীরে কথা বলবেন কি?",
+      "target": "Bạn có thể nói chậm hơn một chút không?"
+    },
+    {
+      "source": "〜てもいいですか বললে ‘আমি কি করতে পারি?’ হয়; অন্যকে করতে বললে 〜ていただけませんか।",
+      "target": "〜てもいいですか là ‘tôi có thể làm không?’; khi bảo người khác làm thì 〜ていただけませんか."
+    },
+    {
+      "source": "কী/কোথায়/কখন/কীভাবে করলে ভালো হবে—পরামর্শ বা নির্দেশ চাওয়া",
+      "target": "Xin lời khuyên hoặc chỉ dẫn làm gì/ở đâu/khi nào/như thế nào thì tốt"
+    },
+    {
+      "source": "প্রশ্ন",
+      "target": "Câu hỏi"
+    },
+    {
+      "source": "পরামর্শ",
+      "target": "Tư vấn, gợi ý"
+    },
+    {
+      "source": "সিদ্ধান্ত নিতে না পারলে বা সঠিক পদ্ধতি জানতে চাইলে এই রূপ ব্যবহার হয়। どうしたらいいですか হলো বহুল ব্যবহৃত ‘আমি কী করব?’।",
+      "target": "Dạng này dùng khi không thể quyết định hoặc muốn biết phương pháp đúng. どうしたらいいですか là ‘tôi nên làm gì?’ rất thông dụng."
+    },
+    {
+      "source": "উত্তরে Vたらいいですよ দিয়ে একটি উপযোগী পদক্ষেপ বলা যায়। এটি কঠোর আদেশ নয়; ব্যবহারযোগ্য পরামর্শ।",
+      "target": "Khi trả lời có thể nói một bước hữu ích bằng Vたらいいですよ. Đây không phải mệnh lệnh cứng rắn; đó là lời khuyên có thể dùng được."
+    },
+    {
+      "source": "たら-এর আগে た-form: 行く→行ったら, する→したら, 来る→来たら।",
+      "target": "Trước たら là thể た: 行く→行ったら, する→したら, 来る→来たら."
+    },
+    {
+      "source": "সিটি অফিসে কীভাবে গেলে ভালো হবে?",
+      "target": "Đi đến văn phòng thành phố như thế nào thì tốt?"
+    },
+    {
+      "source": "জ্বর থাকলে আজ বিশ্রাম নিলে ভালো।",
+      "target": "Nếu bị sốt, hôm nay nghỉ ngơi thì tốt."
+    },
+    {
+      "source": "দুটিই সম্ভব; এই lesson-এ たらいい রূপটি শেখানো হচ্ছে। た-form বানাতে ভুল করবেন না।",
+      "target": "Cả hai đều có thể; trong bài này dạng たらいい được dạy. Đừng nhầm khi tạo thể た."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Sự khác biệt trong nháy mắt"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Cái nào trong tình huống nào?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Dạng"
+    },
+    {
+      "source": "মূল কাজ",
+      "target": "Chức năng chính"
+    },
+    {
+      "source": "ভদ্রতার অনুভূতি",
+      "target": "Cảm giác lịch sự"
+    },
+    {
+      "source": "ব্যাখ্যা/পটভূমি",
+      "target": "Giải thích/bối cảnh"
+    },
+    {
+      "source": "নিরপেক্ষ–ভদ্র",
+      "target": "Trung lập–lịch sự"
+    },
+    {
+      "source": "নরমভাবে প্রসঙ্গ তোলা",
+      "target": "Nêu vấn đề nhẹ nhàng"
+    },
+    {
+      "source": "ভদ্র",
+      "target": "Lịch sự"
+    },
+    {
+      "source": "সরাসরি অনুরোধ",
+      "target": "Yêu cầu trực tiếp"
+    },
+    {
+      "source": "ভদ্র, তবে সরাসরি",
+      "target": "Lịch sự, nhưng trực tiếp"
+    },
+    {
+      "source": "শ্রোতার অনুগ্রহ চাওয়া",
+      "target": "Xin ân huệ của người nghe"
+    },
+    {
+      "source": "খুব ভদ্র",
+      "target": "Rất lịch sự"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Hội thoại thực tế"
+    },
+    {
+      "source": "স্টেশনে পথ জিজ্ঞেস করা",
+      "target": "Hỏi đường ở ga"
+    },
+    {
+      "source": "মাফ করবেন। জাতীয় জাদুঘরে যেতে চাই; কোন ট্রেনে উঠলে ভালো হবে?",
+      "target": "Xin lỗi. Tôi muốn đi bảo tàng quốc gia; nên lên tàu nào thì tốt?"
+    },
+    {
+      "source": "তিন নম্বর প্ল্যাটফর্মের ট্রেনে উঠুন।",
+      "target": "Hãy lên tàu ở sân ga số 3."
+    },
+    {
+      "source": "এই মানচিত্রে দাগ দিয়ে দেবেন কি?",
+      "target": "Bạn có thể đánh dấu vào bản đồ này cho tôi không?"
+    },
+    {
+      "source": "জি, অবশ্যই।",
+      "target": "Vâng, tất nhiên."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Luyện tập và đáp án kèm giải thích"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Trước tiên viết đáp án vào vở, sau đó nhấn vào câu hỏi để đối chiếu đáp án và lý do."
+    },
+    {
+      "source": "1. ‘কেন গতকাল আসেননি?’—んですか ব্যবহার করে বলুন।",
+      "target": "1. ‘Sao hôm qua bạn không đến?’ — nói bằng んですか."
+    },
+    {
+      "source": "来る-এর negative past plain form 来なかった＋んですか।",
+      "target": "Dạng thường quá khứ phủ định của 来る là 来なかった＋んですか."
+    },
+    {
+      "source": "2. 静か＋んです দিয়ে ‘এই ঘরটি শান্ত’—ব্যাখ্যার ভঙ্গিতে বলুন।",
+      "target": "2. 静か＋んです để nói ‘căn phòng này yên tĩnh’ — theo phong cách giải thích."
+    },
+    {
+      "source": "な-বিশেষণের পরে な লাগবে।",
+      "target": "Sau tính từ な cần な."
+    },
+    {
+      "source": "3. শিক্ষককে ‘এই বাক্যটি ঠিক করে দেবেন কি?’ বলুন।",
+      "target": "3. Nói với giáo viên ‘bạn có thể sửa câu này cho tôi không?’."
+    },
+    {
+      "source": "4. ‘কোথায় আবেদন করলে ভালো হবে?’ বলুন।",
+      "target": "4. Nói ‘nên nộp đơn ở đâu thì tốt?’."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Chìa khóa chính trong một câu"
+    },
+    {
+      "source": "প্রথমে পরিস্থিতি 〜んですが দিয়ে দিন, তারপর প্রয়োজন অনুযায়ী 〜ていただけませんか বা 疑問詞＋たらいいですか বলুন—এটাই বাস্তব কথোপকথনের সবচেয়ে নিরাপদ কাঠামো।",
+      "target": "Trước tiên đưa tình huống bằng 〜んですが, sau đó tùy nhu cầu nói 〜ていただけませんか hoặc 疑問詞＋たらいいですか — đó là cấu trúc an toàn nhất trong hội thoại thực tế."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Tài liệu tham khảo đáng tin cậy"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Chương trình và kiểm chứng"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Bài học tiếng Việt độc lập này được tạo bằng cách kết hợp trình tự bài học của Minna no Nihongo II, phạm vi JLPT N4 chính thức và tài nguyên học tập của Japan Foundation. Ví dụ và giải thích tiếng Việt được viết mới."
+    },
+    {
+      "source": "সব Lesson দেখুন",
+      "target": "Xem tất cả bài học"
+    },
+    {
+      "source": "পরের Lesson 27 →",
+      "target": "Bài tiếp theo 27 →"
+    },
+    {
+      "source": "Potential Form：পারা, সুযোগ ও স্বতঃস্ফূর্ত অনুভব",
+      "target": "Potential Form: khả năng, cơ hội và cảm nhận tự phát"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Mục lục bài học"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Mục tiêu học tập"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Bảng so sánh"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Hội thoại"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Đang tải tiến độ khóa học…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · Ngữ pháp N4 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Phiên bản tự học tiếng Việt chi tiết, miễn phí cho học sinh."
+    }
+  ]
+}

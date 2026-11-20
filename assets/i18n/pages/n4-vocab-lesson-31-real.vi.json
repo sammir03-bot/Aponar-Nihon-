@@ -1,0 +1,514 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n4-vocab-lesson-31-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N4 Vocabulary Lesson 31 | আপনার নিহোন",
+      "target": "Bài 31 Từ vựng N4 | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "সব লেসন",
+      "target": "Tất cả các bài"
+    },
+    {
+      "source": "জাপানিজ শব্দভাণ্ডার",
+      "target": "Từ vựng tiếng Nhật"
+    },
+    {
+      "source": "প্রথমবার পড়া শিক্ষার্থীর জন্য—জাপানিজ, ふりがな, বাংলা উচ্চারণ ও সহজ বাংলা অর্থ একই কার্ডে। সার্চ, অডিও, শেখা মার্ক ও কুইজও আছে।",
+      "target": "Cho học viên đọc lần đầu — tiếng Nhật, ふりがな, phát âm và nghĩa tiếng Việt dễ hiểu trên cùng một thẻ. Cũng có tìm kiếm, âm thanh, dấu đã học và quiz."
+    },
+    {
+      "source": "শব্দ শেখা শুরু",
+      "target": "Bắt đầu học từ"
+    },
+    {
+      "source": "কুইজ দিন",
+      "target": "Làm quiz"
+    },
+    {
+      "source": "44টি শব্দ",
+      "target": "44 từ"
+    },
+    {
+      "source": "১ম সংস্করণ অনুযায়ী সাজানো",
+      "target": "Sắp xếp theo ấn bản đầu tiên"
+    },
+    {
+      "source": "জাপানিজ অডিও",
+      "target": "Âm thanh tiếng Nhật"
+    },
+    {
+      "source": "ডিভাইসের Japanese voice ব্যবহার করে",
+      "target": "Dùng giọng tiếng Nhật của thiết bị"
+    },
+    {
+      "source": "০ / 44 শেখা",
+      "target": "0 / 44 đã học"
+    },
+    {
+      "source": "এই browser-এ progress সংরক্ষিত থাকবে",
+      "target": "Tiến độ sẽ được lưu trong trình duyệt này"
+    },
+    {
+      "source": "সব",
+      "target": "Tất cả"
+    },
+    {
+      "source": "শেখা হয়েছে",
+      "target": "Đã học"
+    },
+    {
+      "source": "বাকি",
+      "target": "Còn lại"
+    },
+    {
+      "source": "44টি দেখানো হচ্ছে",
+      "target": "Đang hiển thị 44"
+    },
+    {
+      "source": "Lesson 31-এর শব্দ",
+      "target": "Từ của Bài 31"
+    },
+    {
+      "source": "「—」 চিহ্ন মানে আগের স্বরটি একটু লম্বা করে পড়বেন।",
+      "target": "Dấu 「—」 nghĩa là đọc nguyên âm trước hơi dài hơn."
+    },
+    {
+      "source": "↻ একটি random শব্দ",
+      "target": "↻ Một từ ngẫu nhiên"
+    },
+    {
+      "source": "১ম সংস্করণ",
+      "target": "Ấn bản đầu tiên"
+    },
+    {
+      "source": "উচ্চারণ",
+      "target": "Phát âm"
+    },
+    {
+      "source": "হাজিমারিমাসু",
+      "target": "hajimarimasu"
+    },
+    {
+      "source": "অনুষ্ঠান শুরু হবে",
+      "target": "Sự kiện sẽ bắt đầu"
+    },
+    {
+      "source": "🔊 শুনুন",
+      "target": "🔊 Nghe"
+    },
+    {
+      "source": "⧉ কপি",
+      "target": "⧉ Sao chép"
+    },
+    {
+      "source": "○ শেখা বাকি",
+      "target": "○ Chưa học"
+    },
+    {
+      "source": "ৎসুজুকেমাসু",
+      "target": "tsuzukemasu"
+    },
+    {
+      "source": "চালিয়ে যাব",
+      "target": "Sẽ tiếp tục"
+    },
+    {
+      "source": "মিৎসুকেমাসু",
+      "target": "mitsukemasu"
+    },
+    {
+      "source": "খুঁজে পাব",
+      "target": "Sẽ tìm thấy"
+    },
+    {
+      "source": "উকেমাসু",
+      "target": "ukemasu"
+    },
+    {
+      "source": "পরীক্ষা দেব",
+      "target": "Sẽ thi"
+    },
+    {
+      "source": "ন্যু—গাকুশিমাসু",
+      "target": "nyuugakushimasu"
+    },
+    {
+      "source": "ভর্তি হব",
+      "target": "Sẽ nhập học"
+    },
+    {
+      "source": "সোৎসুগ্যো—শিমাসু",
+      "target": "sotsugyoushimasu"
+    },
+    {
+      "source": "স্নাতক হব, শেষ করব",
+      "target": "Sẽ tốt nghiệp, hoàn thành"
+    },
+    {
+      "source": "শুস্সেকিশিমাসু",
+      "target": "shussekishimasu"
+    },
+    {
+      "source": "উপস্থিত থাকব",
+      "target": "Sẽ tham dự"
+    },
+    {
+      "source": "ক্যু—কে—শিমাসু",
+      "target": "kyuukeishimasu"
+    },
+    {
+      "source": "বিশ্রাম নেব",
+      "target": "Sẽ nghỉ ngơi"
+    },
+    {
+      "source": "রেনক্যু—",
+      "target": "renkyuu"
+    },
+    {
+      "source": "টানা ছুটি",
+      "target": "Kỳ nghỉ liên tiếp"
+    },
+    {
+      "source": "সাকুবুন",
+      "target": "sakubun"
+    },
+    {
+      "source": "রচনা",
+      "target": "Bài văn"
+    },
+    {
+      "source": "তেনরানকাই",
+      "target": "tenrankai"
+    },
+    {
+      "source": "প্রদর্শনী",
+      "target": "Triển lãm"
+    },
+    {
+      "source": "কেক্কোনশিকি",
+      "target": "kekkonshiki"
+    },
+    {
+      "source": "বিয়ের অনুষ্ঠান",
+      "target": "Lễ cưới"
+    },
+    {
+      "source": "অন্ত্যেষ্টিক্রিয়া",
+      "target": "Lễ tang"
+    },
+    {
+      "source": "শিকি",
+      "target": "shiki"
+    },
+    {
+      "source": "অনুষ্ঠান",
+      "target": "Buổi lễ"
+    },
+    {
+      "source": "হোনশা",
+      "target": "honsha"
+    },
+    {
+      "source": "প্রধান কার্যালয়",
+      "target": "Trụ sở chính"
+    },
+    {
+      "source": "শিতেন",
+      "target": "shiten"
+    },
+    {
+      "source": "শাখা অফিস",
+      "target": "Văn phòng chi nhánh"
+    },
+    {
+      "source": "ক্যো—কাই",
+      "target": "kyoukai"
+    },
+    {
+      "source": "গির্জা",
+      "target": "Nhà thờ"
+    },
+    {
+      "source": "দাইগাকুইন",
+      "target": "daigakuin"
+    },
+    {
+      "source": "গ্র্যাজুয়েট স্কুল",
+      "target": "Trường sau đại học"
+    },
+    {
+      "source": "দো—বুৎসুএন",
+      "target": "doubutsuen"
+    },
+    {
+      "source": "চিড়িয়াখানা",
+      "target": "Vườn thú"
+    },
+    {
+      "source": "ওনসেন",
+      "target": "onsen"
+    },
+    {
+      "source": "উষ্ণ প্রস্রবণ",
+      "target": "Suối nước nóng"
+    },
+    {
+      "source": "ওক্যাকু",
+      "target": "okyaku"
+    },
+    {
+      "source": "অতিথি, গ্রাহক",
+      "target": "Khách, khách hàng"
+    },
+    {
+      "source": "দারেকা",
+      "target": "dareka"
+    },
+    {
+      "source": "কেউ একজন",
+      "target": "Ai đó"
+    },
+    {
+      "source": "～নো হো—",
+      "target": "~no hou"
+    },
+    {
+      "source": "~ দিক",
+      "target": "~ phía"
+    },
+    {
+      "source": "জুত্তো",
+      "target": "zutto"
+    },
+    {
+      "source": "অনেক বেশি, পুরো সময়",
+      "target": "Nhiều hơn hẳn, suốt thời gian"
+    },
+    {
+      "source": "নোকোরিমাসু",
+      "target": "nokorimasu"
+    },
+    {
+      "source": "থাকবে, বাকি থাকবে",
+      "target": "Sẽ còn lại"
+    },
+    {
+      "source": "ৎসুকিনি",
+      "target": "tsukini"
+    },
+    {
+      "source": "প্রতি মাসে",
+      "target": "Mỗi tháng"
+    },
+    {
+      "source": "ফুৎসু—নো",
+      "target": "futsuu no"
+    },
+    {
+      "source": "সাধারণ",
+      "target": "Thông thường"
+    },
+    {
+      "source": "ইনতা—নেত্তো",
+      "target": "intaanetto"
+    },
+    {
+      "source": "ইন্টারনেট",
+      "target": "Internet"
+    },
+    {
+      "source": "মুরা",
+      "target": "mura"
+    },
+    {
+      "source": "গ্রাম",
+      "target": "Gram"
+    },
+    {
+      "source": "এ—গাকান",
+      "target": "eegakan"
+    },
+    {
+      "source": "সিনেমা হল",
+      "target": "Rạp chiếu phim"
+    },
+    {
+      "source": "ইইয়া",
+      "target": "iya"
+    },
+    {
+      "source": "অপছন্দনীয়",
+      "target": "Không thích, khó chịu"
+    },
+    {
+      "source": "সোরা",
+      "target": "sora"
+    },
+    {
+      "source": "আকাশ",
+      "target": "Bầu trời"
+    },
+    {
+      "source": "তোজিমাসু",
+      "target": "tojimasu"
+    },
+    {
+      "source": "বন্ধ করব",
+      "target": "Sẽ đóng"
+    },
+    {
+      "source": "তোকাই",
+      "target": "tokai"
+    },
+    {
+      "source": "শহর, নগর",
+      "target": "Thành phố, đô thị"
+    },
+    {
+      "source": "কোদোমোতাচি",
+      "target": "kodomotachi"
+    },
+    {
+      "source": "শিশুরা",
+      "target": "Trẻ em"
+    },
+    {
+      "source": "জিইউ—নি",
+      "target": "jiyuu ni"
+    },
+    {
+      "source": "স্বাধীনভাবে",
+      "target": "Tự do"
+    },
+    {
+      "source": "সেকাইজু—",
+      "target": "sekaijuu"
+    },
+    {
+      "source": "সারা বিশ্ব",
+      "target": "Khắp thế giới"
+    },
+    {
+      "source": "আৎসুমারিমাসু",
+      "target": "atsumarimasu"
+    },
+    {
+      "source": "জড়ো হবে",
+      "target": "Sẽ tập trung"
+    },
+    {
+      "source": "উৎসুকুশিই",
+      "target": "utsukushii"
+    },
+    {
+      "source": "সুন্দর",
+      "target": "Đẹp"
+    },
+    {
+      "source": "শিজেন",
+      "target": "shizen"
+    },
+    {
+      "source": "প্রকৃতি",
+      "target": "Tự nhiên"
+    },
+    {
+      "source": "সুবারাশিসা",
+      "target": "subarashisa"
+    },
+    {
+      "source": "অসাধারণত্ব, চমৎকার দিক",
+      "target": "Sự phi thường, điểm tuyệt vời"
+    },
+    {
+      "source": "কিগা ৎসুকিমাসু",
+      "target": "ki ga tsukimasu"
+    },
+    {
+      "source": "লক্ষ্য করব, খেয়াল করব",
+      "target": "Sẽ chú ý, sẽ nhận ra"
+    },
+    {
+      "source": "পিকাসো",
+      "target": "Pikaso"
+    },
+    {
+      "source": "পাবলো পিকাসো",
+      "target": "Pablo Picasso"
+    },
+    {
+      "source": "উএনোকো—এন",
+      "target": "Ueno kouen"
+    },
+    {
+      "source": "কোনো শব্দ পাওয়া যায়নি।",
+      "target": "Không tìm thấy từ nào."
+    },
+    {
+      "source": "অন্য বানান বা বাংলা অর্থ দিয়ে চেষ্টা করুন।",
+      "target": "Hãy thử với cách viết khác hoặc nghĩa tiếng Việt."
+    },
+    {
+      "source": "১০ প্রশ্ন • দুই ধরনের অনুশীলন",
+      "target": "10 câu hỏi • hai loại bài tập"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "কখনো জাপানিজ দেখে বাংলা অর্থ, আবার কখনো বাংলা দেখে সঠিক জাপানিজ বেছে নিন। প্রতিবার নতুন random প্রশ্ন আসবে।",
+      "target": "Đôi khi nhìn tiếng Nhật chọn nghĩa tiếng Việt, đôi khi nhìn tiếng Việt chọn tiếng Nhật đúng. Mỗi lần sẽ có câu hỏi ngẫu nhiên mới."
+    },
+    {
+      "source": "নতুন কুইজ শুরু",
+      "target": "Bắt đầu quiz mới"
+    },
+    {
+      "source": "প্রশ্ন ১ / ১০",
+      "target": "Câu hỏi 1 / 10"
+    },
+    {
+      "source": "স্কোর ০",
+      "target": "Điểm 0"
+    },
+    {
+      "source": "পরের প্রশ্ন",
+      "target": "Câu hỏi tiếp theo"
+    },
+    {
+      "source": "তালিকা নোট:",
+      "target": "Ghi chú danh sách:"
+    },
+    {
+      "source": "আপনার দেওয়া পুরোনো ফাইলের সঙ্গে মিল রেখে Minna no Nihongo Shokyu II-এর ১ম সংস্করণের lesson order ব্যবহার করা হয়েছে। OCR-এ ভাঙা কানা, duplicate example এবং ভুল বাংলা অর্থ বাদ দিয়ে entry-গুলো নতুন করে তৈরি করা হয়েছে। এটি শিক্ষার্থীর সহায়ক free resource; মূল বইয়ের বিকল্প নয়।",
+      "target": "Phù hợp với tệp cũ bạn đã cung cấp, thứ tự bài của ấn bản đầu tiên của Minna no Nihongo Shokyu II đã được sử dụng. Các mục đã được tạo lại, loại bỏ kana bị vỡ trong OCR, ví dụ trùng lặp và nghĩa tiếng Việt sai. Đây là tài nguyên miễn phí hỗ trợ học viên; không thay thế cuốn sách gốc."
+    },
+    {
+      "source": "আগের লেসন",
+      "target": "Bài trước"
+    },
+    {
+      "source": "সব N4 লেসন",
+      "target": "Tất cả các bài N4"
+    },
+    {
+      "source": "পরের লেসন",
+      "target": "Bài tiếp theo"
+    },
+    {
+      "source": "আপনার নিহোন • শিক্ষার্থীদের জন্য সহজ বাংলা জাপানিজ শিক্ষা",
+      "target": "আপনার নিহোন • Học tiếng Nhật tiếng Việt dễ dàng cho học viên"
+    }
+  ]
+}

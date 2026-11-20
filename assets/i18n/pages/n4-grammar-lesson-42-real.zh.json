@@ -1,0 +1,450 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n4-grammar-lesson-42-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 42: Purpose & Use：ために・のに・পরিমাণের は／も | N4 Grammar",
+      "target": "Lesson 42: Purpose & Use：ために・のに・量的 は／も | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "跳转至主要内容"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 42 · প্রয়োগ ও সূক্ষ্মতা",
+      "target": "Lesson 42 · 应用与细微差别"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "所有 Lesson"
+    },
+    {
+      "source": "প্রয়োগ ও সূক্ষ্মতা",
+      "target": "应用与细腻表达"
+    },
+    {
+      "source": "ধাপ ৪ · 41–45",
+      "target": "步骤 4 · 41–45"
+    },
+    {
+      "source": "Purpose & Use：ために・のに・পরিমাণের は／も",
+      "target": "Purpose & Use：ために・のに・量的 は／も"
+    },
+    {
+      "source": "সচেতন উদ্দেশ্য, কারো উপকার, কোনো বস্তু/সময়/টাকার ব্যবহার এবং আনুমানিক সর্বনিম্ন বা আশ্চর্যজনক বেশি পরিমাণ।",
+      "target": "有意识的目的、某人的利益、某物/时间/金钱的使用，以及估计的最低量或惊人的多量。"
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 个详细 grammar block"
+    },
+    {
+      "source": "13টি Japanese example",
+      "target": "13 个 Japanese example"
+    },
+    {
+      "source": "5টি ব্যাখ্যাসহ practice",
+      "target": "5 个带讲解的 practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline、mobile 和 print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "隐藏 あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "尚未完成"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ 标记完成"
+    },
+    {
+      "source": "Lesson 42 · লক্ষ্য",
+      "target": "Lesson 42 · 目标"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "学完本 Lesson 后能做到"
+    },
+    {
+      "source": "ために বলে লক্ষ্য অর্জনের জন্য ইচ্ছাকৃত action; のに বলে কোনো জিনিস বা সম্পদ কী কাজে ব্যবহৃত/প্রয়োজন। একই のに Lesson 45-এ ‘যদিও’ অর্থে আসবে—predicate দেখে অর্থ আলাদা করতে হবে।",
+      "target": "ために 说为达成目标的有意 action；のに 说某物或资源用于/需要什么工作。同一个 のに 在 Lesson 45 是“虽然”的意思——要看 predicate 区分意思。"
+    },
+    {
+      "source": "controllable purpose-এ V辞書形＋ために ব্যবহার করবেন",
+      "target": "能对 controllable purpose 用 V辞書形＋ために"
+    },
+    {
+      "source": "Nのために দিয়ে লক্ষ্য/ব্যক্তির উপকার বলবেন",
+      "target": "能用 Nのために 说目标/人的利益"
+    },
+    {
+      "source": "utility/cost/time context-এ V辞書形＋のに ব্যবহার করবেন",
+      "target": "能在 utility/cost/time context 用 V辞書形＋のに"
+    },
+    {
+      "source": "quantity＋は এবং quantity＋も-এর speaker expectation বুঝবেন",
+      "target": "能理解 quantity＋は 和 quantity＋も 的 speaker expectation"
+    },
+    {
+      "source": "সচেতনভাবে কোনো লক্ষ্য অর্জনের উদ্দেশ্যে",
+      "target": "有意识地为达成某目标的目的"
+    },
+    {
+      "source": "গঠন",
+      "target": "构成"
+    },
+    {
+      "source": "ধরন",
+      "target": "类型"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "例句"
+    },
+    {
+      "source": "ক্রিয়ার উদ্দেশ্য",
+      "target": "动词的目的"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "详细解释"
+    },
+    {
+      "source": "V1 হলো controllable goal, V2 সেই goal-এর জন্য action। Subject সাধারণত একই: 私は日本へ留学するために、お金をためています।",
+      "target": "V1 是 controllable goal，V2 是为那个 goal 的 action。Subject 通常相同：私は日本へ留学するために、お金をためています。"
+    },
+    {
+      "source": "Potential/non-volitional বা negative goal-এ ように বেশি স্বাভাবিক: 日本語が話せるように練習します; 忘れないようにメモします।",
+      "target": "Potential/non-volitional 或 negative goal 用 ように 更自然：日本語が話せるように練習します；忘れないようにメモします。"
+    },
+    {
+      "source": "ために কখনো cause-ও বোঝায় (事故のために… formal), কিন্তু এই lesson-এর মূল হলো purpose। Context-এ intentional V2 থাকলে purpose reading।",
+      "target": "ために 有时也表示 cause（事故のために… formal），但本课核心是 purpose。Context 有 intentional V2 时是 purpose reading。"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "要记住的"
+    },
+    {
+      "source": "Goal ও means/step-এর logical connection স্পষ্ট রাখুন।",
+      "target": "保持 Goal 与 means/step 的 logical connection 清楚。"
+    },
+    {
+      "source": "জাপানি বিশ্ববিদ্যালয়ে ঢোকার জন্য প্রতিদিন পড়ছি।",
+      "target": "为进日本大学每天学习。"
+    },
+    {
+      "source": "স্বাস্থ্য রক্ষার জন্য প্রতিদিন সকালে হাঁটি।",
+      "target": "为保持健康每天早上走路。"
+    },
+    {
+      "source": "নতুন কম্পিউটার কেনার জন্য টাকা জমাচ্ছি।",
+      "target": "为买新电脑存钱。"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ 错误"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ 正确"
+    },
+    {
+      "source": "কেন:",
+      "target": "为什么："
+    },
+    {
+      "source": "সক্ষমতার ফল potential হওয়ায় ように; সরাসরি controllable goal হলে ために।",
+      "target": "能力结果是 potential 用 ように；直接 controllable goal 用 ために。"
+    },
+    {
+      "source": "কোনো লক্ষ্য, ব্যক্তি/গোষ্ঠীর উপকার বা প্রয়োজনের জন্য",
+      "target": "为某目标、人/团体的利益或需要"
+    },
+    {
+      "source": "লক্ষ্য",
+      "target": "目标"
+    },
+    {
+      "source": "ব্যক্তির উপকার",
+      "target": "人的利益"
+    },
+    {
+      "source": "Noun-এর পরে の আবশ্যক। 健康のために, 将来のために, 子どものために।",
+      "target": "Noun 后必须 の。健康のために、将来のために、子どものために。"
+    },
+    {
+      "source": "Personのために সাধারণত ‘তার মঙ্গল/উপকারের জন্য’। কিন্তু প্রসঙ্গভেদে ‘তার কারণে’ reading হতে পারে; predicate ও tone দেখে ধরুন।",
+      "target": "Personのために 通常是“为他的福祉/利益”。但依语境可有“因为他”的 reading；看 predicate 和 tone 判断。"
+    },
+    {
+      "source": "自分のために = নিজের জন্য; あなたのために = আপনার মঙ্গলের জন্য—কখনো paternalistic শোনাতে পারে, তাই বাস্তব সম্পর্ক বিবেচনা করুন।",
+      "target": "自分のために = 为自己；あなたのために = 为您的福祉——有时可能听 paternalistic，所以考虑实际关系。"
+    },
+    {
+      "source": "পরিবারের জন্য কঠোর পরিশ্রম করি।",
+      "target": "为家人努力工作。"
+    },
+    {
+      "source": "পরীক্ষার জন্য এই ব্যাকরণ রিভিশন করি।",
+      "target": "为考试复习这个语法。"
+    },
+    {
+      "source": "পরিবেশের জন্য প্লাস্টিক কমাই।",
+      "target": "为环境减少塑料。"
+    },
+    {
+      "source": "কাজটি করতে কোনো জিনিস ব্যবহার/উপযোগী/প্রয়োজন, অথবা সময়/টাকা লাগে",
+      "target": "做工作需要使用/适合/需要某物，或者花时间/金钱"
+    },
+    {
+      "source": "এখানে প্রথম の nominalizer, に purpose/use particle—মিলে のに। Predicate সাধারণত 使います, 便利です, 必要です, 役に立ちます, かかります।",
+      "target": "这里第一个 の 是 nominalizer，に 是 purpose/use particle——合为 のに。Predicate 通常 使います、便利です、必要です、役に立ちます、かかります。"
+    },
+    {
+      "source": "このはさみは紙を切るのに使います = কাঁচিটি কাগজ কাটার কাজে ব্যবহৃত। Purpose-এর subject-doer relation নয়; tool/resource suitability।",
+      "target": "このはさみは紙を切るのに使います = 这把剪刀用于剪纸。不是 Purpose 的 subject-doer relation；是 tool/resource suitability。"
+    },
+    {
+      "source": "Lesson 45-এর concessive のに-এর পরে unexpected full result আসে: 勉強したのに、分かりません। Lesson 42-এর utility のに-এর পরে usefulness/cost predicate আসে।",
+      "target": "Lesson 45 的 concessive のに 后是 unexpected full result：勉強したのに、分かりません。Lesson 42 的 utility のに 后是 usefulness/cost predicate。"
+    },
+    {
+      "source": "Verb dictionary＋のに; nominalizer の বাদ দেবেন না।",
+      "target": "Verb dictionary＋のに；不要省略 nominalizer の。"
+    },
+    {
+      "source": "Cost/time: কাজ＋のに＋quantity＋かかる।",
+      "target": "Cost/time：工作＋のに＋quantity＋かかる。"
+    },
+    {
+      "source": "এই ছুরিটি রুটি কাটতে ব্যবহৃত হয়।",
+      "target": "这把刀用于切面包。"
+    },
+    {
+      "source": "কানজি শেখার জন্য অ্যাপটি সুবিধাজনক।",
+      "target": "学汉字这个 app 很方便。"
+    },
+    {
+      "source": "রিপোর্টটি লিখতে তিন ঘণ্টা লেগেছে।",
+      "target": "写报告花了三个小时。"
+    },
+    {
+      "source": "জাপানে থাকতে কত টাকা প্রয়োজন?",
+      "target": "在日本生活需要多少钱？"
+    },
+    {
+      "source": "‘কাজের জন্য উপযোগী’ predicate 便利です হলে utility のに বেশি স্বাভাবিক।",
+      "target": "“对工作有用”的 predicate 是 便利です 时 utility のに 更自然。"
+    },
+    {
+      "source": "は = অন্তত/কমপক্ষে আনুমানিক; も = এত বেশি/পুরো—বক্তার বিস্ময়",
+      "target": "は = 至少/最低估计；も = 这么多/整整——说话人的惊讶"
+    },
+    {
+      "source": "Quantity＋は সাধারণ topic নয়; lower bound: 駅まで三十分はかかります = অন্তত প্রায় ৩০ মিনিট লাগবে (এর কম নয়)।",
+      "target": "Quantity＋は 不是普通 topic；是 lower bound：駅まで三十分はかかります = 至少约 30 分钟（不少于）。"
+    },
+    {
+      "source": "Quantity＋も speaker-এর expectation-এর তুলনায় বেশি: 十人も来ました = পুরো দশজন এসেছে! Context ছাড়া দশ বড় না ছোট জানা যায় না; も subjective reaction।",
+      "target": "Quantity＋も 比 speaker 的 expectation 多：十人も来ました = 整整来了十个人！没有 Context 不知十是大是小；も 是 subjective reaction。"
+    },
+    {
+      "source": "মাত্র কম দেখাতে しか〜ない (Lesson 27): 千円しかない; এত বেশি দেখাতে 千円もある।",
+      "target": "显示只有少量用 しか〜ない（Lesson 27）：千円しかない；显示这么多用 千円もある。"
+    },
+    {
+      "source": "সংখ্যা objective; は/も speaker-এর estimate/reaction যোগ করে।",
+      "target": "数字 objective；は/も 加 speaker 的 estimate/reaction。"
+    },
+    {
+      "source": "স্টেশন পর্যন্ত হাঁটতে অন্তত ২০ মিনিট লাগে।",
+      "target": "走到车站至少要 20 分钟。"
+    },
+    {
+      "source": "বইটি পড়তে পুরো এক সপ্তাহ লেগেছে!",
+      "target": "读这本书花了整整一周！"
+    },
+    {
+      "source": "অনুষ্ঠানে ৫০০ জন পর্যন্ত জড়ো হয়েছিল!",
+      "target": "活动聚集了多达 500 人！"
+    },
+    {
+      "source": "সময় duration direct を নেয় না; estimate-এ は।",
+      "target": "时间 duration 不直接用 を；estimate 用 は。"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "一目了然的差别"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "什么情况用哪个？"
+    },
+    {
+      "source": "রূপ",
+      "target": "形式"
+    },
+    {
+      "source": "প্রশ্ন",
+      "target": "问题"
+    },
+    {
+      "source": "কোন লক্ষ্য অর্জন করতে?",
+      "target": "为达成哪个目标？"
+    },
+    {
+      "source": "জাপানে কাজ করতে পড়ি",
+      "target": "为在日本工作学习"
+    },
+    {
+      "source": "যাতে সক্ষম/যাতে না হয়?",
+      "target": "以便能/以便不？"
+    },
+    {
+      "source": "বলতে পারি বলে অনুশীলন",
+      "target": "练习为了能说"
+    },
+    {
+      "source": "কোন কাজে উপযোগী/কত লাগে?",
+      "target": "对哪个工作有用/要多少？"
+    },
+    {
+      "source": "কাটতে ব্যবহার, লিখতে সময়",
+      "target": "切用、写要时间"
+    },
+    {
+      "source": "কার/কোন লক্ষ্যর মঙ্গল?",
+      "target": "为谁/哪个目标的福祉？"
+    },
+    {
+      "source": "পরিবার/পরীক্ষার জন্য",
+      "target": "为家人/考试"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "实际对话"
+    },
+    {
+      "source": "নতুন ল্যাপটপ কেনা",
+      "target": "买新笔记本电脑"
+    },
+    {
+      "source": "এই কম্পিউটার কী কাজে ব্যবহার করবেন?",
+      "target": "这个电脑用于什么工作？"
+    },
+    {
+      "source": "জাপানি ভিডিও বানানোর জন্য কিনব।",
+      "target": "为做日语视频买。"
+    },
+    {
+      "source": "ভিডিও edit করতে কত memory দরকার?",
+      "target": "编辑视频需要多少 memory？"
+    },
+    {
+      "source": "কমপক্ষে ১৬ GB দরকার।",
+      "target": "至少需要 16 GB。"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "自我检查"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice 和带解释的答案"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "先在笔记本上写答案，然后点击问题核对答案和原因。"
+    },
+    {
+      "source": "1. ‘জাপানে কাজ করার জন্য জাপানি পড়ি’ বলুন।",
+      "target": "1. 说“为在日本工作学日语”。"
+    },
+    {
+      "source": "2. ‘পরিবারের জন্য রান্না করি’ বলুন।",
+      "target": "2. 说“为家人做饭”。"
+    },
+    {
+      "source": "3. ‘এই app কানজি খুঁজতে সুবিধাজনক’ বলুন।",
+      "target": "3. 说“这个 app 查汉字方便”。"
+    },
+    {
+      "source": "4. ‘অন্তত দুই ঘণ্টা লাগবে’ বলুন।",
+      "target": "4. 说“至少要两个小时”。"
+    },
+    {
+      "source": "5. ‘পুরো দশ হাজার ইয়েন লেগেছে!’ বলুন।",
+      "target": "5. 说“花了整整一万日元！”。"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "一句话 Master Key"
+    },
+    {
+      "source": "নিজের লক্ষ্য অর্জনের action → ために; tool/সময়/টাকা কোন কাজে লাগে → のに; পরিমাণের lower bound → は; প্রত্যাশার চেয়ে বেশি → も।",
+      "target": "达成自己目标的 action → ために；tool/时间/金钱用于哪个工作 → のに；量的 lower bound → は；比预期多 → も。"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "可信参考"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "大纲与核对"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "这个独立的中文 lesson 结合 Minna no Nihongo II 的 lesson sequence、official JLPT N4 scope 和 Japan Foundation 的 learner resources 制作。例句和中文解释均为新写。"
+    },
+    {
+      "source": "← আগের Lesson 41",
+      "target": "← 上一个 Lesson 41"
+    },
+    {
+      "source": "পরের Lesson 43 →",
+      "target": "下一个 Lesson 43 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson 索引"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "学习目标"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "差别表"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "会话"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress 加载中…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "为学习者免费提供的详细中文 self-study edition。"
+    }
+  ]
+}

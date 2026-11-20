@@ -1,0 +1,166 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "n3-matome-grammar",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N3 Matome Grammar বাংলা — ৬ সপ্তাহে ১৩২টি Rule | আপনার নিহোন",
+      "target": "N3 Matome Grammar Bangla — 132 Rules sa loob ng 6 na Linggo | আপনার নিহোন"
+    },
+    {
+      "source": "Rule তালিকায় যান",
+      "target": "Pumunta sa listahan ng Rule"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "জাপানি শেখা, বাংলায় সহজ",
+      "target": "Matuto ng Hapones, madali sa Bengali"
+    },
+    {
+      "source": "TRY! N3 খুলুন ↗",
+      "target": "Buksan ang TRY! N3 ↗"
+    },
+    {
+      "source": "N3 Matome Grammar — ৬ সপ্তাহে পুরো Revision",
+      "target": "N3 Matome Grammar — Buong Rebisyon sa loob ng 6 na Linggo"
+    },
+    {
+      "source": "TRY! N3-এর copy নয়। Matome-এর ৬-সপ্তাহের ধারায় ১৩২টি grammar point—একই পরিবারের rule পাশাপাশি, ছোট বাংলা অর্থ, exact গঠন, মনে রাখার ছবি এবং নিজস্ব উদাহরণ।",
+      "target": "Hindi kopya ng TRY! N3. Sundan ang 6-na-linggong daloy ng Matome na may 132 grammar points—magkakatabi ang mga rule na magkakapamilya, maikling kahulugan sa Bengali, eksaktong anyo, larawang pantanda, at mga sariling halimbawa."
+    },
+    {
+      "source": "৬ সপ্তাহ",
+      "target": "6 na Linggo"
+    },
+    {
+      "source": "৩৬ Study Day",
+      "target": "36 Araw ng Pag-aaral"
+    },
+    {
+      "source": "১৩২টি Rule",
+      "target": "132 na Rule"
+    },
+    {
+      "source": "১২টি আলাদা VS Comparison",
+      "target": "12 natatanging Paghahambing (VS)"
+    },
+    {
+      "source": "শব্দভাণ্ডার",
+      "target": "Bokabularyo"
+    },
+    {
+      "source": "কানজি",
+      "target": "Kanji"
+    },
+    {
+      "source": "ব্যাকরণ",
+      "target": "Gramatika"
+    },
+    {
+      "source": "সব ৬ সপ্তাহ",
+      "target": "Lahat ng 6 na Linggo"
+    },
+    {
+      "source": "শুধু বাকি",
+      "target": "Ang Natitira Lamang"
+    },
+    {
+      "source": "Filter মুছুন",
+      "target": "Alisin ang Filter"
+    },
+    {
+      "source": "0 / 132 শেখা",
+      "target": "0 / 132 Natutunan"
+    },
+    {
+      "source": "একটি Rule মনে রাখার ৪-ধাপ Code",
+      "target": "4-Hakbang na Code para Tandaan ang Isang Rule"
+    },
+    {
+      "source": "শুধু বাংলা অর্থ মুখস্থ নয়। Form → কাজ → পার্থক্য → নিজের বাক্য—এই ক্রমে পড়লে grammar দীর্ঘদিন মনে থাকে।",
+      "target": "Huwag lang isaulo ang kahulugan sa Bengali. Anyo → Gamit → Pagkakaiba → Sariling pangungusap—sa ganitong pagkakasunud-sunod, mas matagal na matatandaan ang gramatika."
+    },
+    {
+      "source": "প্রতি দিন ৩–৪টি rule। আগের দিনের rule না দেখে বলার পর নতুন দিন শুরু করুন।",
+      "target": "3–4 na rule araw-araw. Bago simulan ang bagong araw, subukang alalahanin ang mga rule kahapon nang hindi tumitingin."
+    },
+    {
+      "source": "Form দেখুন",
+      "target": "Tingnan ang Anyo"
+    },
+    {
+      "source": "Verb, noun বা adjective—কোন শরীর দরকার?",
+      "target": "Verb, noun o adjective—anong anyo ang kailangan?"
+    },
+    {
+      "source": "এক লাইনের কাজ",
+      "target": "Gamit sa isang linya"
+    },
+    {
+      "source": "Ruleটি আসলে সময়, কারণ, মত নাকি তুলনা?",
+      "target": "Ang rule ba ay tungkol sa oras, dahilan, opinyon, o paghahambing?"
+    },
+    {
+      "source": "শব্দ নয়—মাথায় একটি চলমান ছবি রাখুন।",
+      "target": "Huwag salita—panatilihin ang gumagalaw na larawan sa iyong isip."
+    },
+    {
+      "source": "নিজের জীবন",
+      "target": "Sariling Buhay"
+    },
+    {
+      "source": "Example বন্ধ করে নিজের school/work sentence বলুন।",
+      "target": "Isara ang mga halimbawa at gumawa ng sariling pangungusap tungkol sa paaralan o trabaho."
+    },
+    {
+      "source": "৬-সপ্তাহের Matome Map",
+      "target": "6-na-Linggong Mapa ng Matome"
+    },
+    {
+      "source": "একই কাজের grammar পাশাপাশি রাখা হয়েছে। একটি সপ্তাহ চাপলে শুধু সেই সপ্তাহের rule খুলবে।",
+      "target": "Magkakatabi ang mga gramatika na may magkatulad na gamit. Ang pagpindot sa isang linggo ay magbubukas lamang ng mga rule para sa linggong iyon."
+    },
+    {
+      "source": "Confusing Grammar — আলাদা “VS” Section",
+      "target": "Nakakalito na Gramatika — Hiwalay na Seksyon ng “VS”"
+    },
+    {
+      "source": "একই বাংলা অর্থ দেখে ভুল হয় এমন rule-গুলোকে side-by-side রাখা হয়েছে। প্রতিটি comparison আলাদা খুলে পড়ুন।",
+      "target": "Magkakatabi ang mga rule na madalas mapagkamalan dahil magkatulad ang kahulugan sa Bengali. Basahin nang hiwalay ang bawat paghahambing."
+    },
+    {
+      "source": "N3 Matome-এর ১৩২টি Rule",
+      "target": "132 na Rule ng N3 Matome"
+    },
+    {
+      "source": "প্রতিটি card-এ গঠন, আসল কাজ, মনে রাখার ছবি এবং Japanese–Bangla example আছে। “শেখা” চাপলে অগ্রগতি এই device-এ save থাকবে।",
+      "target": "Ang bawat card ay may anyo, tunay na gamit, larawang pantanda, at mga halimbawang Hapones–Bengali. Ang pagpindot sa “Natutunan” ay magse-save ng iyong progreso sa device na ito."
+    },
+    {
+      "source": "১৩২টি Rule দেখা যাচ্ছে",
+      "target": "Nagpapakita ng 132 na Rule"
+    },
+    {
+      "source": "কোনো Rule পাওয়া যায়নি।",
+      "target": "Walang nahanap na Rule."
+    },
+    {
+      "source": "অন্য spelling, বাংলা অর্থ বা সপ্তাহ দিয়ে আবার খুঁজুন।",
+      "target": "Maghanap muli gamit ang ibang baybay, kahulugan sa Bengali, o linggo."
+    },
+    {
+      "source": "এই page-এর ব্যাখ্যা, memory clue ও example আপনার নিহোনের জন্য নতুনভাবে লেখা। অগ্রগতি শুধু আপনার browser-এ থাকে। •",
+      "target": "Ang mga paliwanag, memory clue, at halimbawa sa pahinang ito ay bagong isinulat para sa আপনার নিহোন. Ang progreso ay nananatili lamang sa iyong browser. •"
+    },
+    {
+      "source": "TRY! N3-এর বিশদ ১১৩টি Rule দেখুন",
+      "target": "Tingnan ang detalyadong 113 na Rule ng TRY! N3"
+    }
+  ]
+}

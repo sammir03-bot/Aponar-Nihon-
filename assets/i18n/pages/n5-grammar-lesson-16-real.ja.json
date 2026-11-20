@@ -1,0 +1,214 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "n5-grammar-lesson-16-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 16 | て-form Connection・てから・Adjective Connection | আপনার নিহোন",
+      "target": "N5 文法レッスン16 | て形の接続・てから・形容詞の接続 | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "একাধিক কাজ/বর্ণনা একসাথে বলা — তারপর/কারণ/গুণ যুক্ত করা",
+      "target": "複数の動作・描写を一緒に言う — 順序・理由・性質をつなぐ"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "文法を始める"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "今日の学習目標"
+    },
+    {
+      "source": "কাজগুলো ক্রমানুসারে বলা",
+      "target": "動作を順番に言う"
+    },
+    {
+      "source": "এক কাজের পরে আরেক কাজ",
+      "target": "一つの動作の後でもう一つ"
+    },
+    {
+      "source": "Adjective যুক্ত করা",
+      "target": "形容詞をつなぐ"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "やさしい解説 + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "各パターンはまず structure を見て、それから例文を声に出して言いましょう。Audio ボタンを押すと日本語の文が聞けます。"
+    },
+    {
+      "source": "একাধিক কাজ ক্রমানুসারে বা ধারাবাহিকভাবে বলতে te-form দিয়ে verbগুলো যুক্ত করা হয়।",
+      "target": "複数の動作を順番に、または続けて言うときは、て形で動詞をつなぎます。"
+    },
+    {
+      "source": "শেষ verb-এ tense/polite form থাকে; আগের verbগুলো te-form।",
+      "target": "最後の動詞に時制・丁寧形が付き、前の動詞はて形になります。"
+    },
+    {
+      "source": "আসা রোকুজি নি ওকিতে, কাও ও আরাত্তে, আসাগোহান ও তাবেমাসু।",
+      "target": "朝6時に起きて、顔を洗って、朝ご飯を食べます。"
+    },
+    {
+      "source": "সকাল ৬টায় উঠে, মুখ ধুয়ে, নাস্তা খাই।",
+      "target": "朝6時に起きて、顔を洗って、朝ご飯を食べます。"
+    },
+    {
+      "source": "গিনকো এ ইত্তে, ওকানে ও দাশিমাসু।",
+      "target": "銀行へ行って、お金を出します。"
+    },
+    {
+      "source": "ব্যাংকে গিয়ে টাকা তুলি।",
+      "target": "銀行へ行って、お金を出します。"
+    },
+    {
+      "source": "এক কাজ শেষ করার পরে আরেক কাজ করব — এই order জোর দিয়ে বোঝাতে।",
+      "target": "一つの動作を終えた後でもう一つをする — この順序を強調して表します。"
+    },
+    {
+      "source": "てから = করার পরে। একই বাক্যে একবার ব্যবহার করলেই natural।",
+      "target": "てから = 〜した後。一つの文で一度使うだけで自然です。"
+    },
+    {
+      "source": "শুকুদাই ও শিতে কারা, তেরেবি ও মিমাসু।",
+      "target": "宿題をしてから、テレビを見ます。"
+    },
+    {
+      "source": "হোমওয়ার্ক করার পরে টিভি দেখি।",
+      "target": "宿題をしてから、テレビを見ます。"
+    },
+    {
+      "source": "শাওয়া ও আবিতে কারা, নেমাসু।",
+      "target": "シャワーを浴びてから、寝ます。"
+    },
+    {
+      "source": "গোসল করার পরে ঘুমাই।",
+      "target": "シャワーを浴びてから、寝ます。"
+    },
+    {
+      "source": "দুই い-adjective একসাথে যুক্ত করতে শেষের い বাদ দিয়ে くて।",
+      "target": "2つの い形容詞をつなぐには、最後の い を取って くて を付けます。"
+    },
+    {
+      "source": "কোনো রিয়োরি ওয়া ইয়াসুকুতে, ওইশিইদেসু।",
+      "target": "この料理は安くて、おいしいです。"
+    },
+    {
+      "source": "এই খাবার সস্তা এবং সুস্বাদু।",
+      "target": "この料理は安くて、おいしいです。"
+    },
+    {
+      "source": "কোনো হেয়া ওয়া হিরোকুতে, আকারুইদেসু।",
+      "target": "この部屋は広くて、明るいです。"
+    },
+    {
+      "source": "এই ঘর প্রশস্ত এবং উজ্জ্বল।",
+      "target": "この部屋は広くて、明るいです。"
+    },
+    {
+      "source": "な-adjective বা noun যুক্ত করতে で ব্যবহৃত হয়।",
+      "target": "な形容詞や名詞をつなぐには で を使います。"
+    },
+    {
+      "source": "কানোজো ওয়া শিনসেৎসুদে, কিরেইদেসু।",
+      "target": "彼女は親切で、きれいです。"
+    },
+    {
+      "source": "তিনি দয়ালু এবং সুন্দর।",
+      "target": "彼女は親切で、きれいです。"
+    },
+    {
+      "source": "চিচি ওয়া ইশা দে, হাহা ওয়া সেনসেইদেসু।",
+      "target": "父は医者で、母は先生です。"
+    },
+    {
+      "source": "বাবা ডাক্তার, মা শিক্ষক।",
+      "target": "父は医者で、母は先生です。"
+    },
+    {
+      "source": "কারো/কিছুর বিশেষ অংশের বৈশিষ্ট্য বলতে は + が structure।",
+      "target": "人・物の特定の部分の特徴を言うときは は + が の構造を使います。"
+    },
+    {
+      "source": "জো ওয়া হানা গা নাগাইদেসু।",
+      "target": "象は鼻が長いです。"
+    },
+    {
+      "source": "হাতির শুঁড় লম্বা।",
+      "target": "象は鼻が長いです。"
+    },
+    {
+      "source": "ইয়ামাদা সান ওয়া কামি গা কুরোইদেসু।",
+      "target": "山田さんは髪が黒いです。"
+    },
+    {
+      "source": "ইয়ামাদা-সানের চুল কালো।",
+      "target": "山田さんは髪が黒いです。"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "スピーキング練習"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "この文を面接・教室の会話のようにして、3回ずつ読みましょう。"
+    },
+    {
+      "source": "মাইয়াসা, নানি ও শিমাসু কা।",
+      "target": "毎朝、何をしますか。"
+    },
+    {
+      "source": "প্রতিদিন সকালে কী করেন?",
+      "target": "毎朝、何をしますか。"
+    },
+    {
+      "source": "ওকিতে, শাওয়া ও আবিতে, আসা গোহান ও তাবেমাসু।",
+      "target": "起きて、シャワーを浴びて、朝ご飯を食べます。"
+    },
+    {
+      "source": "উঠে, গোসল করে, নাস্তা খাই।",
+      "target": "起きて、シャワーを浴びて、朝ご飯を食べます。"
+    },
+    {
+      "source": "বেনকিয়ো শিতে কারা, নানি ও শিমাসু কা।",
+      "target": "勉強してから、何をしますか。"
+    },
+    {
+      "source": "পড়ার পরে কী করেন?",
+      "target": "勉強してから、何をしますか。"
+    },
+    {
+      "source": "নেমাসু।",
+      "target": "寝ます。"
+    },
+    {
+      "source": "ঘুমাই।",
+      "target": "寝ます。"
+    },
+    {
+      "source": "আনাতা নো মাচি ওয়া দোদেসু কা।",
+      "target": "あなたの町はどうですか。"
+    },
+    {
+      "source": "আপনার শহর কেমন?",
+      "target": "あなたの町はどうですか。"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "自分でテストしてみましょう"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 16 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 文法レッスン16 • Verified Premium Detailed Version"
+    }
+  ]
+}

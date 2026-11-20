@@ -1,0 +1,498 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n4-grammar-lesson-49-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 49: 尊敬語：অন্যকে সম্মান দিয়ে বলা | N4 Grammar",
+      "target": "Bài 49: 尊敬語: nói tôn trọng người khác | Ngữ pháp N4"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Chuyển đến nội dung chính"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 49 · সময় ও Keigo",
+      "target": "Bài 49 · Thời gian và Keigo"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Tất cả bài học"
+    },
+    {
+      "source": "সময় ও Keigo",
+      "target": "Thời gian và Keigo"
+    },
+    {
+      "source": "ধাপ ৫ · 46–50",
+      "target": "Bước 5 · 46–50"
+    },
+    {
+      "source": "尊敬語：অন্যকে সম্মান দিয়ে বলা",
+      "target": "尊敬語: nói tôn trọng người khác"
+    },
+    {
+      "source": "Customer, senior ও out-group-এর কাজকে উঁচু করা; সম্মানসূচক passive, お〜になります, special honorific verbs এবং respectful request।",
+      "target": "Nâng hành động của khách hàng, cấp trên và nhóm ngoài; passive tôn kính, お〜になります, động từ tôn kính đặc biệt và yêu cầu tôn trọng."
+    },
+    {
+      "source": "5টি বিস্তারিত grammar block",
+      "target": "5 khối ngữ pháp chi tiết"
+    },
+    {
+      "source": "16টি Japanese example",
+      "target": "16 ví dụ tiếng Nhật"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 bài luyện tập kèm giải thích"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Thân thiện ngoại tuyến, di động và in ấn"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Ẩn あ phần đọc"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Chưa hoàn thành"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Đánh dấu hoàn thành"
+    },
+    {
+      "source": "Lesson 49 · লক্ষ্য",
+      "target": "Bài 49 · Mục tiêu"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Sau bài này bạn sẽ có thể"
+    },
+    {
+      "source": "Keigo-তে সবচেয়ে জরুরি প্রশ্ন ‘কোন শব্দটি কঠিন?’ নয়—‘কার action উঁচু করছি?’ 尊敬語 সম্মানিত ব্যক্তির action/অবস্থা উঁচু করে। নিজের বা নিজের in-group-এর action-এ এটি দিলে ভুল perspective হয়।",
+      "target": "Trong Keigo câu hỏi quan trọng nhất không phải ‘từ nào khó?’ — mà là ‘tôi đang nâng hành động của ai?’ 尊敬語 nâng hành động/trạng thái của người được tôn trọng. Nếu đặt vào hành động của bản thân hoặc nhóm trong của mình sẽ sai quan điểm."
+    },
+    {
+      "source": "সম্মানিত subject চিহ্নিত করে 尊敬語 ব্যবহার করবেন",
+      "target": "Dùng 尊敬語 nhận ra chủ ngữ được tôn trọng"
+    },
+    {
+      "source": "honorific passive এবং ordinary passive context দিয়ে আলাদা করবেন",
+      "target": "Phân biệt passive tôn kính và passive thông thường theo ngữ cảnh"
+    },
+    {
+      "source": "おVます-stemになります pattern গঠন করবেন",
+      "target": "Tạo mẫu おVます-stemになります"
+    },
+    {
+      "source": "প্রধান special honorific verb ও respectful request আয়ত্ত করবেন",
+      "target": "Nắm động từ tôn kính đặc biệt chính và yêu cầu tôn trọng"
+    },
+    {
+      "source": "尊敬語র perspective",
+      "target": "Quan điểm của 尊敬語"
+    },
+    {
+      "source": "শ্রোতা/তৃতীয় সম্মানিত ব্যক্তির কাজকে linguisticভাবে উঁচু করা",
+      "target": "Nâng hành động của người nghe/người thứ ba được tôn trọng bằng ngôn ngữ"
+    },
+    {
+      "source": "গঠন",
+      "target": "Cấu trúc"
+    },
+    {
+      "source": "ধরন",
+      "target": "Loại"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Ví dụ"
+    },
+    {
+      "source": "সম্মানিত subject",
+      "target": "Chủ ngữ được tôn trọng"
+    },
+    {
+      "source": "নিজের in-group বাইরে বললে",
+      "target": "Nếu nói nhóm trong của mình ra ngoài"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Giải thích chi tiết"
+    },
+    {
+      "source": "Customer, teacher, senior, client/company outsider—context অনুযায়ী সম্মানিত। পরিবার/নিজের কোম্পানির boss-কে outsider client-এর সামনে 尊敬語 দিয়ে উঁচু করা Japanese uchi-soto নীতিতে সাধারণত ভুল; নিজের group নিচু রাখা হয়।",
+      "target": "Khách hàng, giáo viên, cấp trên, khách hàng/người ngoài công ty — được tôn trọng theo ngữ cảnh. Nâng sếp của gia đình/công ty mình bằng 尊敬語 trước khách hàng ngoài theo nguyên tắc uchi-soto của tiếng Nhật thường là sai; nhóm của mình được giữ thấp."
+    },
+    {
+      "source": "Person-এর নামের সঙ্গে さん/様 এবং verb honorific আলাদা স্তর; দুটো একসঙ্গে স্বাভাবিক। তবে double keigo overdo করবেন না।",
+      "target": "さん/様 với tên người và tôn kính động từ là các tầng riêng; cả hai cùng nhau là tự nhiên. Nhưng đừng làm double keigo quá mức."
+    },
+    {
+      "source": "尊敬語 subject-এর action বদলায়; নিজের ‘আমি যাই’ কখনো いらっしゃいます নয়—参ります (Lesson 50)।",
+      "target": "尊敬語 thay đổi hành động của chủ ngữ; ‘tôi đi’ của bản thân không bao giờ là いらっしゃいます — 参ります (Bài 50)."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Điều cần nhớ"
+    },
+    {
+      "source": "প্রথমে subject/actor mark করুন; সম্মানিত actor হলে 尊敬語।",
+      "target": "Trước tiên đánh dấu chủ ngữ/diễn viên; nếu diễn viên được tôn trọng thì 尊敬語."
+    },
+    {
+      "source": "নিজের action উঁচু করবেন না।",
+      "target": "Đừng nâng hành động của bản thân."
+    },
+    {
+      "source": "শিক্ষক এখন গবেষণাকক্ষে আছেন।",
+      "target": "Giáo viên bây giờ đang ở phòng nghiên cứu."
+    },
+    {
+      "source": "অতিথি কখন আসবেন?",
+      "target": "Khách sẽ đến khi nào?"
+    },
+    {
+      "source": "কোম্পানির সভাপতি নথিটি দেখেছেন।",
+      "target": "Chủ tịch công ty đã xem tài liệu."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Sai"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Đúng"
+    },
+    {
+      "source": "কেন:",
+      "target": "Vì sao:"
+    },
+    {
+      "source": "নিজের 行く-কে尊敬語 いらっしゃる নয়; humble 参る বা neutral 行く।",
+      "target": "行く của bản thân không phải 尊敬語 いらっしゃる; khiêm tốn 参る hoặc trung lập 行く."
+    },
+    {
+      "source": "Passive-এর একই form দিয়ে সম্মানিত ব্যক্তির active action বলা",
+      "target": "Nói hành động active của người được tôn trọng bằng cùng dạng passive"
+    },
+    {
+      "source": "Form passive হলেও meaning active: 先生はもう帰られました = শিক্ষক ইতিমধ্যে ফিরেছেন (তাঁকে সম্মান)। Agent に নেই এবং সম্মানিত ব্যক্তি action করেন—এগুলো clue।",
+      "target": "Dù dạng là passive, nghĩa là active: 先生はもう帰られました = giáo viên đã về rồi (tôn trọng ông ấy). Không có tác nhân に và người được tôn trọng tự làm hành động — đó là manh mối."
+    },
+    {
+      "source": "Special honorific বা おVになります-এর তুলনায় এটি তুলনামূলক সহজ/কম marked respectful form। Business speech-এ বহুল।",
+      "target": "So với tôn kính đặc biệt hoặc おVになります đây là dạng tôn trọng tương đối dễ/ít đánh dấu. Thông dụng trong lời nói kinh doanh."
+    },
+    {
+      "source": "Context ছাড়া 先生は呼ばれました ambiguous: ‘শিক্ষককে ডাকা হয়েছে’ passive, অথবা rare honorific ‘শিক্ষক ডাকলেন’। Particle ও situation দেখে ধরুন।",
+      "target": "Không có ngữ cảnh 先生は呼ばれました mơ hồ: passive ‘giáo viên đã được gọi’, hoặc tôn kính hiếm ‘giáo viên đã gọi’. Hãy xem trợ từ và tình huống."
+    },
+    {
+      "source": "Passive meaning হলে agent に; honorific meaning-এ subject নিজেই action করেন।",
+      "target": "Nếu nghĩa passive tác nhân に; nếu nghĩa tôn kính chủ ngữ tự làm hành động."
+    },
+    {
+      "source": "শিক্ষক কখন আসবেন?",
+      "target": "Giáo viên sẽ đến khi nào?"
+    },
+    {
+      "source": "বিভাগীয় প্রধান ইতিমধ্যে নথি পড়েছেন।",
+      "target": "Trưởng bộ phận đã đọc tài liệu rồi."
+    },
+    {
+      "source": "সভাপতি একটু আগে ফিরেছেন।",
+      "target": "Chủ tịch vừa về cách đây ít."
+    },
+    {
+      "source": "先生は学生にほめられました。（‘শিক্ষক প্রশংসা করলেন’ বলতে）",
+      "target": "先生は学生にほめられました. (để nói ‘giáo viên đã khen’)"
+    },
+    {
+      "source": "Agent に থাকলে ‘শিক্ষক ছাত্রের দ্বারা প্রশংসিত’ passive। Honorific active-এ original object を।",
+      "target": "Nếu có tác nhân に là passive ‘giáo viên được học sinh khen’. Trong active tôn kính tân ngữ gốc を."
+    },
+    {
+      "source": "সাধারণ verb-কে সম্মানসূচক করা",
+      "target": "Biến động từ thông thường thành tôn kính"
+    },
+    {
+      "source": "お + stem + になる পুরো unit। 先生は手紙をお書きになりました।",
+      "target": "お + gốc + になる là toàn bộ đơn vị. 先生は手紙をお書きになりました."
+    },
+    {
+      "source": "Sino-Japanese する noun-এ সাধারণত ご: ご説明になります, ご利用になります। কিন্তু common exceptions/lexical preference আছে; dictionary/fixed phrase অনুসরণ করুন।",
+      "target": "Trong danh từ する Hán-Nhật thường là ご: ご説明になります, ご利用になります. Nhưng có ngoại lệ thông thường/ưu tiên từ vựng; hãy theo từ điển/cụm cố định."
+    },
+    {
+      "source": "Stem এক mora হলে সাধারণত pattern চলে না: 見る→お見になります ✕; special ご覧になります। いる→いらっしゃる। する→なさる।",
+      "target": "Nếu gốc một mora thường mẫu không chạy: 見る→お見になります ✕; đặc biệt ご覧になります. いる→いらっしゃる. する→なさる."
+    },
+    {
+      "source": "おVします হলো humble (Lesson 50); おVになります হলো honorific।",
+      "target": "おVします là khiêm tốn (Bài 50); おVになります là tôn kính."
+    },
+    {
+      "source": "Special honorific থাকলে সেটিই সাধারণত বেশি স্বাভাবিক।",
+      "target": "Nếu có tôn kính đặc biệt thì đó thường tự nhiên hơn."
+    },
+    {
+      "source": "শিক্ষক ইতিমধ্যে ফিরে গেছেন।",
+      "target": "Giáo viên đã về rồi."
+    },
+    {
+      "source": "এখানে কি আপনার নাম লিখবেন?",
+      "target": "Bạn sẽ viết tên ở đây chứ?"
+    },
+    {
+      "source": "এই সেবা ব্যবহার করবেন কি?",
+      "target": "Bạn sẽ dùng dịch vụ này chứ?"
+    },
+    {
+      "source": "সম্মানিত teacher subject: おVになります; おVします humble।",
+      "target": "Chủ ngữ giáo viên được tôn trọng: おVになります; おVします là khiêm tốn."
+    },
+    {
+      "source": "প্রধান special honorific verbs",
+      "target": "Động từ tôn kính đặc biệt chính"
+    },
+    {
+      "source": "সাধারণ pattern-এর বদলে নির্দিষ্ট 尊敬語",
+      "target": "尊敬語 xác định thay vì mẫu thông thường"
+    },
+    {
+      "source": "いらっしゃる, おっしゃる, なさる, くださる-এর polite ます form-এ り নয়, い: いらっしゃいます, おっしゃいます, なさいます, くださいます।",
+      "target": "いらっしゃる, おっしゃる, なさる, くださる trong dạng lịch sự ます không phải り, mà い: いらっしゃいます, おっしゃいます, なさいます, くださいます."
+    },
+    {
+      "source": "ご存じです negative ご存じではありません। 知りません-এর মতো ご存じません না বলাই standard।",
+      "target": "ご存じです phủ định ご存じではありません. Không nói ご存じません như 知りません là chuẩn."
+    },
+    {
+      "source": "召し上がる food/drink উভয়; ご覧になる visual ‘দেখা’।",
+      "target": "召し上がる cả ăn/uống; ご覧になる ‘nhìn’ trực quan."
+    },
+    {
+      "source": "Special form আগে বাছুন; double お召し上がりになる ✕ (over-keigo)।",
+      "target": "Chọn dạng đặc biệt trước; double お召し上がりになる ✕ (over-keigo)."
+    },
+    {
+      "source": "অতিথি কী খাবেন/পান করবেন?",
+      "target": "Khách sẽ ăn/uống gì?"
+    },
+    {
+      "source": "শিক্ষক যা বলেছেন মনে আছে।",
+      "target": "Tôi nhớ giáo viên đã nói gì."
+    },
+    {
+      "source": "এই জায়গাটি কি জানেন?",
+      "target": "Bạn có biết nơi này không?"
+    },
+    {
+      "source": "সভাপতি গলফ খেলেন।",
+      "target": "Chủ tịch chơi golf."
+    },
+    {
+      "source": "なさる-এর irregular polite form なさいます।",
+      "target": "Dạng lịch sự bất quy tắc của なさる là なさいます."
+    },
+    {
+      "source": "সম্মান রেখে ‘দয়া করে করুন/গ্রহণ করুন’",
+      "target": "‘Hãy vui lòng làm/nhận’ giữ tôn trọng"
+    },
+    {
+      "source": "Vてください-এর respectful formal alternative; announcement, customer service, signage-এ প্রচলিত। お入りください, お座りください, ご記入ください।",
+      "target": "Lựa chọn thay thế trang trọng tôn trọng của Vてください; thông dụng trong thông báo, dịch vụ khách hàng, biển hiệu. お入りください, お座りください, ご記入ください."
+    },
+    {
+      "source": "সব verb mechanicalভাবে নয়; special/fixed form শিখুন: 見てください→ご覧ください, 食べてください→お召し上がりください।",
+      "target": "Không phải mọi động từ đều máy móc; học dạng đặc biệt/cố định: 見てください→ご覧ください, 食べてください→お召し上がりください."
+    },
+    {
+      "source": "কাজটি সম্মানিত শ্রোতা করবেন—তাই尊敬語। নিজের action নয়।",
+      "target": "Người nghe được tôn trọng sẽ làm việc — vì vậy 尊敬語. Không phải hành động của bản thân."
+    },
+    {
+      "source": "お/ご prefix-এর lexical convention আছে; する-noun সাধারণত ご।",
+      "target": "Tiền tố お/ご có quy ước từ vựng; danh từ する thường là ご."
+    },
+    {
+      "source": "এখানে একটু অপেক্ষা করুন।",
+      "target": "Hãy đợi một chút ở đây."
+    },
+    {
+      "source": "এই বিষয়বস্তু যাচাই করুন।",
+      "target": "Hãy kiểm tra nội dung này."
+    },
+    {
+      "source": "নির্দ্বিধায় ব্যবহার করুন।",
+      "target": "Hãy dùng thoải mái."
+    },
+    {
+      "source": "見る-এর fixed respectful request ご覧ください।",
+      "target": "Yêu cầu tôn trọng cố định của 見る là ご覧ください."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Sự khác biệt trong nháy mắt"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Cái nào trong tình huống nào?"
+    },
+    {
+      "source": "সাধারণ",
+      "target": "Thông thường"
+    },
+    {
+      "source": "মূল context",
+      "target": "Ngữ cảnh gốc"
+    },
+    {
+      "source": "সম্মানিত ব্যক্তি",
+      "target": "Người được tôn trọng"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Hội thoại thực tế"
+    },
+    {
+      "source": "কোম্পানির reception",
+      "target": "Lễ tân công ty"
+    },
+    {
+      "source": "বিভাগীয় প্রধান ইয়ামাদা আছেন কি?",
+      "target": "Trưởng bộ phận Yamada có ở đây không?"
+    },
+    {
+      "source": "জি। এখন মিটিং রুমে অতিথির সঙ্গে কথা বলছেন।",
+      "target": "Vâng. Bây giờ đang nói chuyện với khách trong phòng họp."
+    },
+    {
+      "source": "তাহলে এই নথিটি তাঁকে দিন।",
+      "target": "Vậy hãy đưa tài liệu này cho ông ấy."
+    },
+    {
+      "source": "বুঝেছি। এখানে একটু অপেক্ষা করুন।",
+      "target": "Đã hiểu. Hãy đợi một chút ở đây."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Luyện tập và đáp án kèm giải thích"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Trước tiên viết đáp án vào vở, sau đó nhấn vào câu hỏi để đối chiếu đáp án và lý do."
+    },
+    {
+      "source": "1. ‘শিক্ষক এসেছেন’—special honorific বলুন।",
+      "target": "1. ‘Giáo viên đã đến’ — hãy nói tôn kính đặc biệt."
+    },
+    {
+      "source": "来る-এর尊敬語 いらっしゃる।",
+      "target": "尊敬語 của 来る là いらっしゃる."
+    },
+    {
+      "source": "2. ‘সভাপতি নথি পড়েছেন’—おVになります বলুন।",
+      "target": "2. ‘Chủ tịch đã đọc tài liệu’ — hãy nói おVになります."
+    },
+    {
+      "source": "3. ‘অতিথি কী খাবেন?’ বলুন।",
+      "target": "3. Nói ‘khách sẽ ăn gì?’."
+    },
+    {
+      "source": "食べる/飲む-এর尊敬語 召し上がる।",
+      "target": "尊敬語 của 食べる/飲む là 召し上がる."
+    },
+    {
+      "source": "4. ‘এখানে নাম লিখুন’—respectful request বলুন।",
+      "target": "4. ‘Hãy viết tên ở đây’ — hãy nói yêu cầu tôn trọng."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Chìa khóa chính trong một câu"
+    },
+    {
+      "source": "সম্মানিত ব্যক্তি নিজে action করলে尊敬語। Special verb থাকলে সেটি, না থাকলে Vられる বা おVになります; formal request-এ おVください। নিজের action-এ এগুলো নয়।",
+      "target": "Nếu người được tôn trọng tự làm hành động thì 尊敬語. Nếu có động từ đặc biệt thì đó, nếu không Vられる hoặc おVになります; trong yêu cầu trang trọng おVください. Không dùng cho hành động của bản thân."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Tài liệu tham khảo đáng tin cậy"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Chương trình và kiểm chứng"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Bài học tiếng Việt độc lập này được tạo bằng cách kết hợp trình tự bài học của Minna no Nihongo II, phạm vi JLPT N4 chính thức và tài nguyên học tập của Japan Foundation. Ví dụ và giải thích tiếng Việt được viết mới."
+    },
+    {
+      "source": "← আগের Lesson 48",
+      "target": "← Bài trước 48"
+    },
+    {
+      "source": "Causative Form：করানো, বাধ্য করা ও অনুমতি দেওয়া",
+      "target": "Causative Form: bắt làm, ép buộc và cho phép"
+    },
+    {
+      "source": "পরের Lesson 50 →",
+      "target": "Bài tiếp theo 50 →"
+    },
+    {
+      "source": "謙譲語：নিজেকে নম্র করে সম্মান দেখানো",
+      "target": "謙譲語: cho thấy tôn trọng bằng cách hạ bản thân"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Mục lục bài học"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Mục tiêu học tập"
+    },
+    {
+      "source": "1. 尊敬語র perspective",
+      "target": "1. Quan điểm của 尊敬語"
+    },
+    {
+      "source": "4. প্রধান special honorific verbs",
+      "target": "4. Động từ tôn kính đặc biệt chính"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Bảng so sánh"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Hội thoại"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Đang tải tiến độ khóa học…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · Ngữ pháp N4 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Phiên bản tự học tiếng Việt chi tiết, miễn phí cho học sinh."
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "n4-vocab-lesson-30-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N4 Vocabulary Lesson 30 | আপনার নিহোন",
+      "target": "N4 語彙レッスン30 | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "সব লেসন",
+      "target": "すべてのレッスン"
+    },
+    {
+      "source": "জাপানিজ শব্দভাণ্ডার",
+      "target": "日本語の語彙"
+    },
+    {
+      "source": "প্রথমবার পড়া শিক্ষার্থীর জন্য—জাপানিজ, ふりがな, বাংলা উচ্চারণ ও সহজ বাংলা অর্থ একই কার্ডে। সার্চ, অডিও, শেখা মার্ক ও কুইজও আছে।",
+      "target": "初めて読む学習者のために—日本語、ふりがな、発音、簡単な意味が同じカードにあります。検索、音声、学習済みマーク、クイズもあります。"
+    },
+    {
+      "source": "শব্দ শেখা শুরু",
+      "target": "単語学習を始める"
+    },
+    {
+      "source": "কুইজ দিন",
+      "target": "クイズを受ける"
+    },
+    {
+      "source": "55টি শব্দ",
+      "target": "55語"
+    },
+    {
+      "source": "১ম সংস্করণ অনুযায়ী সাজানো",
+      "target": "第1版に沿って並べた"
+    },
+    {
+      "source": "জাপানিজ অডিও",
+      "target": "日本語の音声"
+    },
+    {
+      "source": "ডিভাইসের Japanese voice ব্যবহার করে",
+      "target": "デバイスの日本語音声を使う"
+    },
+    {
+      "source": "০ / 55 শেখা",
+      "target": "0 / 55 学習済み"
+    },
+    {
+      "source": "এই browser-এ progress সংরক্ষিত থাকবে",
+      "target": "このブラウザに進捗が保存されます"
+    },
+    {
+      "source": "সব",
+      "target": "すべて"
+    },
+    {
+      "source": "শেখা হয়েছে",
+      "target": "学習済み"
+    },
+    {
+      "source": "বাকি",
+      "target": "残り"
+    },
+    {
+      "source": "55টি দেখানো হচ্ছে",
+      "target": "55語を表示中"
+    },
+    {
+      "source": "Lesson 30-এর শব্দ",
+      "target": "レッスン30の単語"
+    },
+    {
+      "source": "「—」 চিহ্ন মানে আগের স্বরটি একটু লম্বা করে পড়বেন।",
+      "target": "「ー」の印は前の音を少し長く読むという意味です。"
+    },
+    {
+      "source": "↻ একটি random শব্দ",
+      "target": "↻ ランダムな単語1つ"
+    },
+    {
+      "source": "১ম সংস্করণ",
+      "target": "第1版"
+    },
+    {
+      "source": "উচ্চারণ",
+      "target": "発音"
+    },
+    {
+      "source": "হারিমাসু",
+      "target": "はります"
+    },
+    {
+      "source": "লাগাব, সাঁটাব",
+      "target": "貼る"
+    },
+    {
+      "source": "🔊 শুনুন",
+      "target": "🔊 聞く"
+    },
+    {
+      "source": "⧉ কপি",
+      "target": "⧉ コピー"
+    },
+    {
+      "source": "○ শেখা বাকি",
+      "target": "○ 未学習"
+    },
+    {
+      "source": "কাকেমাসু",
+      "target": "かけます"
+    },
+    {
+      "source": "ঝুলাব, লাগাব",
+      "target": "掛ける"
+    },
+    {
+      "source": "কাজারিমাসু",
+      "target": "かざります"
+    },
+    {
+      "source": "সাজাব, প্রদর্শন করব",
+      "target": "飾る"
+    },
+    {
+      "source": "নারাবেমাসু",
+      "target": "ならべます"
+    },
+    {
+      "source": "সারিবদ্ধভাবে সাজাব",
+      "target": "並べる"
+    },
+    {
+      "source": "উএমাসু",
+      "target": "うえます"
+    },
+    {
+      "source": "রোপণ করব, লাগাব",
+      "target": "植える"
+    },
+    {
+      "source": "মোদোশিমাসু",
+      "target": "もどします"
+    },
+    {
+      "source": "ফেরত দেব, আগের জায়গায় রাখব",
+      "target": "戻す"
+    },
+    {
+      "source": "মাতোমেমাসু",
+      "target": "まとめます"
+    },
+    {
+      "source": "একসাথে করব, সংক্ষেপে গুছাব",
+      "target": "まとめる"
+    },
+    {
+      "source": "কাতাজুকেমাসু",
+      "target": "かたづけます"
+    },
+    {
+      "source": "গুছাব, পরিষ্কার করব",
+      "target": "片付ける"
+    },
+    {
+      "source": "শিমাইমাসু",
+      "target": "しまいます"
+    },
+    {
+      "source": "সঠিক জায়গায় গুছিয়ে রাখব",
+      "target": "しまう"
+    },
+    {
+      "source": "কিমেমাসু",
+      "target": "きめます"
+    },
+    {
+      "source": "সিদ্ধান্ত নেব",
+      "target": "決める"
+    },
+    {
+      "source": "শিরাসেমাসু",
+      "target": "しらせます"
+    },
+    {
+      "source": "জানাব",
+      "target": "知らせる"
+    },
+    {
+      "source": "সো—দানশিমাসু",
+      "target": "そうだんします"
+    },
+    {
+      "source": "পরামর্শ করব, আলোচনা করব",
+      "target": "相談する"
+    },
+    {
+      "source": "ইয়োশু—শিমাসু",
+      "target": "よしゅうします"
+    },
+    {
+      "source": "আগে থেকে পড়ব/প্রস্তুতি নেব",
+      "target": "予習する"
+    },
+    {
+      "source": "ফুকুশু—শিমাসু",
+      "target": "ふくしゅうします"
+    },
+    {
+      "source": "পুনরাবৃত্তি করব, রিভিউ করব",
+      "target": "復習する"
+    },
+    {
+      "source": "সোনোমামানি শিমাসু",
+      "target": "そのままにします"
+    },
+    {
+      "source": "যেমন আছে তেমনই রাখব",
+      "target": "そのままにする"
+    },
+    {
+      "source": "ওকোসান",
+      "target": "おこさん"
+    },
+    {
+      "source": "অন্যের সন্তান",
+      "target": "お子さん"
+    },
+    {
+      "source": "জুগ্যো—",
+      "target": "じゅぎょう"
+    },
+    {
+      "source": "ক্লাস, পাঠ",
+      "target": "授業"
+    },
+    {
+      "source": "কো—গি",
+      "target": "こうぎ"
+    },
+    {
+      "source": "লেকচার, বক্তৃতা",
+      "target": "講義"
+    },
+    {
+      "source": "মি—তিনগু",
+      "target": "ミーティング"
+    },
+    {
+      "source": "মিটিং, সভা",
+      "target": "ミーティング"
+    },
+    {
+      "source": "ইয়োতে—",
+      "target": "よてい"
+    },
+    {
+      "source": "পরিকল্পনা, সূচি",
+      "target": "予定"
+    },
+    {
+      "source": "ওশিরাসে",
+      "target": "おしらせ"
+    },
+    {
+      "source": "নোটিশ, বিজ্ঞপ্তি",
+      "target": "お知らせ"
+    },
+    {
+      "source": "আননাইশো",
+      "target": "あんないしょ"
+    },
+    {
+      "source": "গাইডবুক, নির্দেশিকা",
+      "target": "案内書"
+    },
+    {
+      "source": "কারেনদা—",
+      "target": "カレンダー"
+    },
+    {
+      "source": "ক্যালেন্ডার",
+      "target": "カレンダー"
+    },
+    {
+      "source": "পোসুতা—",
+      "target": "ポスター"
+    },
+    {
+      "source": "পোস্টার",
+      "target": "ポスター"
+    },
+    {
+      "source": "গোমিবাকো",
+      "target": "ごみばこ"
+    },
+    {
+      "source": "ময়লার ঝুড়ি",
+      "target": "ごみ箱"
+    },
+    {
+      "source": "নিনগ্যো—",
+      "target": "にんぎょう"
+    },
+    {
+      "source": "পুতুল",
+      "target": "人形"
+    },
+    {
+      "source": "কাবিন",
+      "target": "かびん"
+    },
+    {
+      "source": "ফুলদানি",
+      "target": "花瓶"
+    },
+    {
+      "source": "কাগামি",
+      "target": "かがみ"
+    },
+    {
+      "source": "আয়না",
+      "target": "鏡"
+    },
+    {
+      "source": "হিকিদাশি",
+      "target": "ひきだし"
+    },
+    {
+      "source": "ড্রয়ার",
+      "target": "引き出し"
+    },
+    {
+      "source": "গেনকান",
+      "target": "げんかん"
+    },
+    {
+      "source": "বাড়ির প্রবেশদ্বার",
+      "target": "玄関"
+    },
+    {
+      "source": "রো—কা",
+      "target": "ろうか"
+    },
+    {
+      "source": "করিডর",
+      "target": "廊下"
+    },
+    {
+      "source": "কাবে",
+      "target": "かべ"
+    },
+    {
+      "source": "দেয়াল",
+      "target": "壁"
+    },
+    {
+      "source": "ইকে",
+      "target": "いけ"
+    },
+    {
+      "source": "পুকুর",
+      "target": "池"
+    },
+    {
+      "source": "কো—বান",
+      "target": "こうばん"
+    },
+    {
+      "source": "পুলিশ বক্স",
+      "target": "交番"
+    },
+    {
+      "source": "মোতোনো তোকোরো",
+      "target": "もとのところ"
+    },
+    {
+      "source": "মূল জায়গা",
+      "target": "元の所"
+    },
+    {
+      "source": "মাওয়ারি",
+      "target": "まわり"
+    },
+    {
+      "source": "চারপাশ",
+      "target": "周り"
+    },
+    {
+      "source": "মাননাকা",
+      "target": "まんなか"
+    },
+    {
+      "source": "মাঝখান",
+      "target": "真ん中"
+    },
+    {
+      "source": "সুমি",
+      "target": "すみ"
+    },
+    {
+      "source": "কোণা",
+      "target": "角"
+    },
+    {
+      "source": "মাদা",
+      "target": "まだ"
+    },
+    {
+      "source": "এখনো",
+      "target": "まだ"
+    },
+    {
+      "source": "～হোদো",
+      "target": "〜ほど"
+    },
+    {
+      "source": "প্রায় ~",
+      "target": "〜ほど"
+    },
+    {
+      "source": "ইয়োতে—হ্যো—",
+      "target": "よていひょう"
+    },
+    {
+      "source": "সময়সূচি",
+      "target": "時刻表"
+    },
+    {
+      "source": "গোকুরো—সামা",
+      "target": "ごくろうさま"
+    },
+    {
+      "source": "কষ্ট করার জন্য ধন্যবাদ",
+      "target": "ご苦労様"
+    },
+    {
+      "source": "কিবো—",
+      "target": "きぼう"
+    },
+    {
+      "source": "ইচ্ছা, আশা",
+      "target": "希望"
+    },
+    {
+      "source": "নানিকা গোকিবো—গা আরিমাসুকা",
+      "target": "なにかごきぼうがありますか"
+    },
+    {
+      "source": "আপনার কোনো ইচ্ছা/চাহিদা আছে কি?",
+      "target": "何かご希望がありますか"
+    },
+    {
+      "source": "ম্যু—জিকারু",
+      "target": "ミュージカル"
+    },
+    {
+      "source": "মিউজিক্যাল",
+      "target": "ミュージカル"
+    },
+    {
+      "source": "সোরেহা ইইদেসুনে",
+      "target": "それはいいですね"
+    },
+    {
+      "source": "এটা ভালো, তাই না?",
+      "target": "それはいいですね"
+    },
+    {
+      "source": "বুরো—দো—য়ে—",
+      "target": "ブロードウェー"
+    },
+    {
+      "source": "ব্রডওয়ে",
+      "target": "ブロードウェー"
+    },
+    {
+      "source": "মারুই",
+      "target": "まるい"
+    },
+    {
+      "source": "গোলাকার",
+      "target": "丸い"
+    },
+    {
+      "source": "ৎসুকি",
+      "target": "つき"
+    },
+    {
+      "source": "চাঁদ",
+      "target": "月"
+    },
+    {
+      "source": "আরু ～",
+      "target": "ある〜"
+    },
+    {
+      "source": "একটি নির্দিষ্ট ~",
+      "target": "ある〜"
+    },
+    {
+      "source": "চিক্যু—",
+      "target": "ちきゅう"
+    },
+    {
+      "source": "পৃথিবী",
+      "target": "地球"
+    },
+    {
+      "source": "উরেশিই",
+      "target": "うれしい"
+    },
+    {
+      "source": "খুশি",
+      "target": "うれしい"
+    },
+    {
+      "source": "ইইয়া",
+      "target": "いや"
+    },
+    {
+      "source": "অপছন্দনীয়",
+      "target": "嫌な"
+    },
+    {
+      "source": "সুরুতো",
+      "target": "すると"
+    },
+    {
+      "source": "তখন, এরপর",
+      "target": "すると"
+    },
+    {
+      "source": "মেগা সামেমাসু",
+      "target": "めがさめます"
+    },
+    {
+      "source": "ঘুম ভাঙবে",
+      "target": "目が覚める"
+    },
+    {
+      "source": "কোনো শব্দ পাওয়া যায়নি।",
+      "target": "単語が見つかりませんでした。"
+    },
+    {
+      "source": "অন্য বানান বা বাংলা অর্থ দিয়ে চেষ্টা করুন।",
+      "target": "別のつづりや意味で試してください。"
+    },
+    {
+      "source": "১০ প্রশ্ন • দুই ধরনের অনুশীলন",
+      "target": "10問 • 2種類の練習"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "自分でテストしてみましょう"
+    },
+    {
+      "source": "কখনো জাপানিজ দেখে বাংলা অর্থ, আবার কখনো বাংলা দেখে সঠিক জাপানিজ বেছে নিন। প্রতিবার নতুন random প্রশ্ন আসবে।",
+      "target": "日本語を見て意味を選ぶことも、意味を見て正しい日本語を選ぶこともあります。毎回新しいランダムな問題が出ます。"
+    },
+    {
+      "source": "নতুন কুইজ শুরু",
+      "target": "新しいクイズを始める"
+    },
+    {
+      "source": "প্রশ্ন ১ / ১০",
+      "target": "問題 1 / 10"
+    },
+    {
+      "source": "স্কোর ০",
+      "target": "スコア 0"
+    },
+    {
+      "source": "পরের প্রশ্ন",
+      "target": "次の問題"
+    },
+    {
+      "source": "তালিকা নোট:",
+      "target": "リストの注:"
+    },
+    {
+      "source": "আপনার দেওয়া পুরোনো ফাইলের সঙ্গে মিল রেখে Minna no Nihongo Shokyu II-এর ১ম সংস্করণের lesson order ব্যবহার করা হয়েছে। OCR-এ ভাঙা কানা, duplicate example এবং ভুল বাংলা অর্থ বাদ দিয়ে entry-গুলো নতুন করে তৈরি করা হয়েছে। এটি শিক্ষার্থীর সহায়ক free resource; মূল বইয়ের বিকল্প নয়।",
+      "target": "あなたが提供した古いファイルに合わせて、Minna no Nihongo Shokyu II の第1版のレッスン順序を使いました。OCR で壊れたかな、重複した例、間違った意味を除いて、項目を作り直しました。これは学習者の補助的な無料リソースで、元の本の代わりではありません。"
+    },
+    {
+      "source": "আগের লেসন",
+      "target": "前のレッスン"
+    },
+    {
+      "source": "সব N4 লেসন",
+      "target": "すべての N4 レッスン"
+    },
+    {
+      "source": "পরের লেসন",
+      "target": "次のレッスン"
+    },
+    {
+      "source": "আপনার নিহোন • শিক্ষার্থীদের জন্য সহজ বাংলা জাপানিজ শিক্ষা",
+      "target": "আপনার নিহোন • 学習者のための簡単な日本語学習"
+    }
+  ]
+}

@@ -1,0 +1,462 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ne",
+  "page": "n4-grammar-lesson-38-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 38: Nominalizer の：কাজকে বিশেষ্য বানানো | N4 Grammar",
+      "target": "Lesson 38: Nominalizer の：कामलाई संज्ञा बनाउनु | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "मुख्य कन्टेन्टमा जानुहोस्"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 38 · জটিল বাক্য",
+      "target": "Lesson 38 · जटिल वाक्य"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "सबै Lesson"
+    },
+    {
+      "source": "জটিল বাক্য",
+      "target": "जटिल वाक्य"
+    },
+    {
+      "source": "ধাপ ৩ · 36–40",
+      "target": "चरण 3 · 36–40"
+    },
+    {
+      "source": "Nominalizer の：কাজকে বিশেষ্য বানানো",
+      "target": "Nominalizer の：कामलाई संज्ञा बनाउनु"
+    },
+    {
+      "source": "একটি সম্পূর্ণ কাজ/ঘটনাকে noun-এর জায়গায় বসিয়ে topic, subject, object বা focus হিসেবে ব্যবহার।",
+      "target": "एउटा पूर्ण काम/घटनालाई noun को ठाउँमा राखेर topic, subject, object वा focus को रूपमा प्रयोग।"
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 विस्तृत grammar block"
+    },
+    {
+      "source": "12টি Japanese example",
+      "target": "12 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 व्याख्यासहित practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile र print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "あ Reading लुकाउनुहोस्"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "अझै सम्पन्न भएको छैन"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ सम्पन्न गर्नुहोस्"
+    },
+    {
+      "source": "Lesson 38 · লক্ষ্য",
+      "target": "Lesson 38 · लक्ष्य"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "यो Lesson सकिएपछि के सक्नुहुनेछ"
+    },
+    {
+      "source": "泳ぐ মানে ‘সাঁতার কাটা’; 泳ぐの মানে ‘সাঁতার কাটার কাজটি’। の একটি clause-কে noun-এর মতো বানায়। তারপর は, が, を—যে particle লাগবে সেটি বসে। এই lesson-এর আসল কৌশল হলো の নয়, nominalized clause বাক্যে কোন ভূমিকা নিচ্ছে তা চেনা।",
+      "target": "泳ぐ को अर्थ ‘पौडी खेल्नु’; 泳ぐの को अर्थ ‘पौडी खेल्ने काम’। の ले एउटा clause लाई noun जस्तै बनाउँछ। त्यसपछि は, が, を—जुन particle चाहिन्छ त्यो बस्छ। यो lesson को असली कौशल の होइन, nominalized clause वाक्यमा कुन भूमिका लिइरहेको छ त्यो चिन्नु हो।"
+    },
+    {
+      "source": "V普通形＋の দিয়ে action/event nominalize করবেন",
+      "target": "V普通形＋の ले action/event nominalize गर्नुहुनेछ"
+    },
+    {
+      "source": "のは, のが ও のを particle-ভূমিকা অনুযায়ী বাছবেন",
+      "target": "のは, のが र のを particle-भूमिका अनुसार छान्नुहुनेछ"
+    },
+    {
+      "source": "好き/上手/早い/遅い-এর সঙ্গে স্বাভাবিক pattern বানাবেন",
+      "target": "好き/上手/早い/遅い सँग स्वाभाविक pattern बनाउनुहुनेछ"
+    },
+    {
+      "source": "〜のは…です দিয়ে focus/পরিচয় স্পষ্ট করবেন",
+      "target": "〜のは…です ले focus/परिचय स्पष्ट गर्नुहुनेछ"
+    },
+    {
+      "source": "কাজ/ঘটনাটিকে topic করে মূল্যায়ন বা সাধারণ মন্তব্য",
+      "target": "काम/घटनालाई topic गरेर मूल्याङ्कन वा सामान्य टिप्पणी"
+    },
+    {
+      "source": "গঠন",
+      "target": "संरचना"
+    },
+    {
+      "source": "ধরন",
+      "target": "प्रकार"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "उदाहरण"
+    },
+    {
+      "source": "বর্তমান",
+      "target": "वर्तमान"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "विस्तृत व्याख्या"
+    },
+    {
+      "source": "Nominalized clause-এর পরে は topic marker। পুরো ‘একাই ভ্রমণ করা’ বিষয়টি নিয়ে ‘মজার’ মন্তব্য করা হয়।",
+      "target": "Nominalized clause पछि は topic marker। पूरा ‘एक्लै यात्रा गर्नु’ विषयलाई लिएर ‘रमाइलो’ टिप्पणी गरिन्छ।"
+    },
+    {
+      "source": "難しい, 大変, 危険, 必要, 楽しい-এর মতো general evaluation-এ のは বহুল। specific ability/liking-এ のが বেশি—পরের pattern দেখুন।",
+      "target": "難しい, 大変, 危険, 必要, 楽しい जस्ता general evaluation मा のは बहुल। specific ability/liking मा のが बढी—अर्को pattern हेर्नुहोस्।"
+    },
+    {
+      "source": "Clause plain form নেয়; polite ます নয়: 日本語を勉強するのは…。",
+      "target": "Clause plain form लिन्छ; polite ます होइन: 日本語を勉強するのは…।"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "के सम्झनुपर्छ"
+    },
+    {
+      "source": "প্রতিদিন কানজি শেখা কঠিন।",
+      "target": "दैनिक कान्जी सिक्नु कठिन।"
+    },
+    {
+      "source": "অচেনা শহরে হাঁটা মজার।",
+      "target": "अपरिचित शहरमा हिँड्नु रमाइलो।"
+    },
+    {
+      "source": "মানুষের নাম মনে রাখা কঠিন।",
+      "target": "मानिसको नाम सम्झनु कठिन।"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ गलत"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ सही"
+    },
+    {
+      "source": "কেন:",
+      "target": "किन:"
+    },
+    {
+      "source": "Nominalizer-এর আগে plain form 話す।",
+      "target": "Nominalizer अगाडि plain form 話す।"
+    },
+    {
+      "source": "কাজটি পছন্দ/অপছন্দ, দক্ষ/অদক্ষ বা দ্রুত/ধীর হওয়া",
+      "target": "काम मन पर्नु/नपर्नु, दक्ष/अदक्ष वा छिटो/ढिलो हुनु"
+    },
+    {
+      "source": "পছন্দ",
+      "target": "मनपर्ने"
+    },
+    {
+      "source": "দক্ষতা",
+      "target": "दक्षता"
+    },
+    {
+      "source": "গতি",
+      "target": "गति"
+    },
+    {
+      "source": "好き, 嫌い, 上手, 下手, 得意, 苦手, 速い, 遅い-এর target/subject সাধারণত が নেয়; তাই action nominalize করে のが।",
+      "target": "好き, 嫌い, 上手, 下手, 得意, 苦手, 速い, 遅い को target/subject सामान्यतया が लिन्छ; त्यसैले action nominalize गरेर のが।"
+    },
+    {
+      "source": "私は本を読むのが好きです-তে 私は overall topic; 本を読むのが ‘পছন্দের বস্তু/কাজ’।",
+      "target": "私は本を読むのが好きです मा 私は overall topic; 本を読むのが ‘मन पर्ने वस्तु/काम’।"
+    },
+    {
+      "source": "上手 নিজের সম্পর্কে সরাসরি বললে আত্মপ্রশংসার মতো হতে পারে; 得意です বা まあまあできます পরিস্থিতি অনুযায়ী নরম।",
+      "target": "上手 आफ्नोबारे सीधा भने आत्मप्रशंसा जस्तो हुन सक्छ; 得意です वा まあまあできます परिस्थिति अनुसार नरम।"
+    },
+    {
+      "source": "好きです-এর আগে を নয়: 読むのを好きです ✕; 読むのが好きです ✓।",
+      "target": "好きです को अगाडि を होइन: 読むのを好きです ✕; 読むのが好きです ✓।"
+    },
+    {
+      "source": "আমি ছবি তুলতে পছন্দ করি।",
+      "target": "म फोटो खिच्न मन पराउँछु।"
+    },
+    {
+      "source": "আমার ছোট বোন গান গাইতে দক্ষ।",
+      "target": "मेरी सानी बहिनी गीत गाउन दक्ष छिन्।"
+    },
+    {
+      "source": "তানাকা সকালে দেরিতে ওঠেন।",
+      "target": "तानाका बिहान ढिलो उठ्छन्।"
+    },
+    {
+      "source": "好き-এর target が।",
+      "target": "好き को target が।"
+    },
+    {
+      "source": "কাজ/ঘটনাটিকে অন্য verb-এর object করা",
+      "target": "काम/घटनालाई अर्को verb को object बनाउनु"
+    },
+    {
+      "source": "ভুলে যাওয়া",
+      "target": "बिर्सनु"
+    },
+    {
+      "source": "জানা",
+      "target": "जान्नु"
+    },
+    {
+      "source": "দেখা/শোনা",
+      "target": "देख्नु/सुन्नु"
+    },
+    {
+      "source": "Nominalized event-টি object হওয়ায় を। ‘দরজা বন্ধ করার কাজটি ভুলেছি’ → ドアを閉めるのを忘れました।",
+      "target": "Nominalized event object भएकाले を। ‘ढोका बन्द गर्ने काम बिर्सें’ → ドアを閉めるのを忘れました।"
+    },
+    {
+      "source": "知っていますか-এর embedded fact-এ subordinate subject が: 田中さんが会社を辞めたのを知っていますか।",
+      "target": "知っていますか को embedded fact मा subordinate subject が: 田中さんが会社を辞めたのを知っていますか।"
+    },
+    {
+      "source": "知りません ছিল ‘জানি না’; নতুন তথ্য জানলাম বলতে 分かりました বা 初めて知りました প্রসঙ্গ অনুযায়ী।",
+      "target": "知りません थियो ‘थाहा छैन’; नयाँ जानकारी थाहा पाएँ भन्न 分かりました वा 初めて知りました प्रसङ्ग अनुसार।"
+    },
+    {
+      "source": "কাজটি object হলে のを; পছন্দ/দক্ষতা হলে のが।",
+      "target": "काम object भए のを; मन/दक्षता भए のが।"
+    },
+    {
+      "source": "আলো নিভাতে ভুলেছি।",
+      "target": "बत्ती निभाउन बिर्सें।"
+    },
+    {
+      "source": "ইয়ামাদা হাসপাতালে ভর্তি হয়েছেন—জানেন?",
+      "target": "यामादा अस्पतालमा भर्ना भएका छन्—थाहा छ?"
+    },
+    {
+      "source": "পার্কে শিশুদের খেলতে দেখেছি।",
+      "target": "पार्कमा बच्चाहरू खेलिरहेको देखेको छु।"
+    },
+    {
+      "source": "忘れる-এর object を।",
+      "target": "忘れる को object を।"
+    },
+    {
+      "source": "বাক্যের একটি অংশকে বিশেষভাবে চিহ্নিত/সংশোধন করা—‘যে/যেটা… সেটি হলো…’",
+      "target": "वाक्यको एउटा भागलाई विशेष रूपमा चिन्हित/सुधार गर्नु—‘जो/जुन… त्यो हो…’"
+    },
+    {
+      "source": "সময় focus",
+      "target": "समय focus"
+    },
+    {
+      "source": "ব্যক্তি focus",
+      "target": "व्यक्ति focus"
+    },
+    {
+      "source": "স্থান/কারণ focus",
+      "target": "स्थान/कारण focus"
+    },
+    {
+      "source": "সাধারণ বাক্য 私は去年日本へ来ました। সময়টিকে contrast/focus করলে 私が日本へ来たのは去年です = আমি জাপানে এসেছি যে সময়, সেটি গত বছর।",
+      "target": "सामान्य वाक्य 私は去年日本へ来ました। समयलाई contrast/focus गरे 私が日本へ来たのは去年です = म जापान आएको समय, त्यो गत वर्ष।"
+    },
+    {
+      "source": "Subordinate clause-এর subject সাধারণত が: 私が日本へ来たのは…。 Main topic は-ও প্রসঙ্গভেদে হতে পারে, কিন্তু N4-এ が pattern লক্ষ্য করুন।",
+      "target": "Subordinate clause को subject सामान्यतया が: 私が日本へ来たのは…। Main topic は पनि प्रसङ्गभेदमा हुन सक्छ, तर N4 मा が pattern लक्ष्य गर्नुहोस्।"
+    },
+    {
+      "source": "প্রশ্নের focus-এর সঙ্গে উত্তর মিলবে: いつ日本へ来ましたか → 日本へ来たのは去年です।",
+      "target": "प्रश्नको focus सँग उत्तर मिल्नेछ: いつ日本へ来ましたか → 日本へ来たのは去年です।"
+    },
+    {
+      "source": "Clause＋のは topic; শেষে focused information＋です।",
+      "target": "Clause＋のは topic; अन्तमा focused information＋です।"
+    },
+    {
+      "source": "আমি জাপানি শেখা শুরু করেছি তিন বছর আগে।",
+      "target": "मैले जापानी सिक्न सुरु गरेको तीन वर्षअघि।"
+    },
+    {
+      "source": "এই খাবারটি বানিয়েছেন আমার মা।",
+      "target": "यो खाना बनाउनुभएको मेरी आमा।"
+    },
+    {
+      "source": "পরের মিটিং সোমবার।",
+      "target": "अर्को बैठक सोमबार।"
+    },
+    {
+      "source": "Focus/cleft topic-এ のは; のが সাধারণ subject/liking pattern।",
+      "target": "Focus/cleft topic मा のは; のが सामान्य subject/liking pattern।"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "एक नजरमा भिन्नता"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "कुन परिस्थितिमा कुन?"
+    },
+    {
+      "source": "Nominalized clause-এর ভূমিকা",
+      "target": "Nominalized clause को भूमिका"
+    },
+    {
+      "source": "সাধারণ predicate",
+      "target": "सामान्य predicate"
+    },
+    {
+      "source": "Topic/evaluation বা focus",
+      "target": "Topic/evaluation वा focus"
+    },
+    {
+      "source": "আরও formal/abstract nominalizer",
+      "target": "बढी formal/abstract nominalizer"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "वास्तविक कुराकानी"
+    },
+    {
+      "source": "শখ নিয়ে পরিচয়",
+      "target": "शौकबारे परिचय"
+    },
+    {
+      "source": "আপনার শখ কী?",
+      "target": "तपाईंको शौक के हो?"
+    },
+    {
+      "source": "শহরের ছবি তুলতে ভালোবাসি।",
+      "target": "शहरको फोटो खिच्न मन पराउँछु।"
+    },
+    {
+      "source": "কখন শুরু করেছেন?",
+      "target": "कहिले सुरु गर्नुभएको?"
+    },
+    {
+      "source": "বিশ্ববিদ্যালয়ে পড়ার সময় শুরু করেছি।",
+      "target": "विश्वविद्यालयमा पढ्ने समयमा सुरु गरेको छु।"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "आफै जाँच्नुहोस्"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice र व्याख्यासहित उत्तर"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "पहिले कापीमा उत्तर लेख्नुहोस्, त्यसपछि प्रश्नमा थिचेर उत्तर र कारण मिलाउनुहोस्।"
+    },
+    {
+      "source": "1. ‘প্রতিদিন ব্যায়াম করা কঠিন’ বলুন।",
+      "target": "1. ‘दैनिक व्यायाम गर्नु कठिन’ भन्नुहोस्।"
+    },
+    {
+      "source": "সাধারণ evaluation topic: のは。",
+      "target": "सामान्य evaluation topic: のは।"
+    },
+    {
+      "source": "2. ‘আমি রান্না করতে ভালোবাসি’ বলুন।",
+      "target": "2. ‘म खाना पकाउन मन पराउँछु’ भन्नुहोस्।"
+    },
+    {
+      "source": "好き-এর target: のが。",
+      "target": "好き को target: のが।"
+    },
+    {
+      "source": "3. ‘দরজা বন্ধ করতে ভুলেছি’ বলুন।",
+      "target": "3. ‘ढोका बन्द गर्न बिर्सें’ भन्नुहोस्।"
+    },
+    {
+      "source": "忘れる-এর object: のを。",
+      "target": "忘れる को object: のを।"
+    },
+    {
+      "source": "4. ‘যিনি আমাকে শেখালেন তিনি সাতো’—focus sentence করুন।",
+      "target": "4. ‘जसले मलाई सिकाए उनी सातो’—focus sentence बनाउनुहोस्।"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "एक वाक्यमा Master Key"
+    },
+    {
+      "source": "প্রথমে action-কে V plain＋の দিয়ে noun বানান; তারপর বাক্যে topic হলে は, পছন্দ/দক্ষতার target হলে が, object হলে を বসান।",
+      "target": "पहिले action लाई V plain＋の ले noun बनाउनुहोस्; त्यसपछि वाक्यमा topic भए は, मन/दक्षताको target भए が, object भए を राख्नुहोस्।"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "विश्वसनीय सन्दर्भ"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "पाठ्यक्रम र प्रमाणीकरण"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "यो स्वतन्त्र नेपाली lesson Minna no Nihongo II को lesson sequence, official JLPT N4 scope र Japan Foundation का learner resources मिलाएर बनाइएको हो। उदाहरण र नेपाली व्याख्या नयाँ रूपमा रचित।"
+    },
+    {
+      "source": "← আগের Lesson 37",
+      "target": "← अघिल्लो Lesson 37"
+    },
+    {
+      "source": "Passive Form：受け身形 পুরোপুরি পরিষ্কার",
+      "target": "Passive Form：受け身形 पूर्ण रूपमा स्पष्ट"
+    },
+    {
+      "source": "পরের Lesson 39 →",
+      "target": "अर्को Lesson 39 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson सूची"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "सिक्ने लक्ष्य"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "भिन्नता तालिका"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "कुराकानी"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress लोड हुँदैछ…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "विद्यार्थीहरूका लागि निःशुल्क, विस्तृत नेपाली self-study edition।"
+    }
+  ]
+}

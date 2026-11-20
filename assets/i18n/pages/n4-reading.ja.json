@@ -1,0 +1,150 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "n4-reading",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "JLPT N4 Reading Center বাংলা | আপনার নিহোন",
+      "target": "JLPT N4リーディングセンター バンガル語 | あなたのニホンス"
+    },
+    {
+      "source": "সব শব্দ নয়,",
+      "target": "すべての単語ではなく、"
+    },
+    {
+      "source": "লেখকের message ধরুন",
+      "target": "作者のメッセージをつかむ"
+    },
+    {
+      "source": "N4 Lesson 25–50 reading PDF-কে focused routine-এ পড়ুন: প্রথমে time-bound scan, তারপর clue mark, answer, এবং শেষে unknown vocabulary review। Quiz ও AI coach দিয়ে বোঝা যাচাই করুন।",
+      "target": "N4レッスン25〜50のリーディングPDFを集中ルーティンで学習：まず時間制限付きスキャン、次に手がかりのマーク、解答、そして最後に未知語の復習。クイズとAIコーチで理解度を確認しましょう。"
+    },
+    {
+      "source": "Reading PDF খুলুন",
+      "target": "リーディングPDFを開く"
+    },
+    {
+      "source": "Practice checklist দেখা হচ্ছে…",
+      "target": "練習チェックリストを確認中…"
+    },
+    {
+      "source": "বাংলা explanation",
+      "target": "バンガル語の説明"
+    },
+    {
+      "source": "পড়ুন, test দিন, না বুঝলে breakdown নিন",
+      "target": "読んで、テストを受け、分からない場合は内訳を確認"
+    },
+    {
+      "source": "শুরু হয়নি",
+      "target": "未開始"
+    },
+    {
+      "source": "মূল reading material নতুন tab-এ খুলবে—mobile-এ zoom করে বা download করে পড়তে পারবেন।",
+      "target": "元のリーディング教材が新しいタブで開きます。モバイルでは拡大またはダウンロードして読むことができます。"
+    },
+    {
+      "source": "PDF খুলুন",
+      "target": "PDFを開く"
+    },
+    {
+      "source": "Original passage ও comprehension question; answer-এর সঙ্গে বাংলা explanation এবং auto-save।",
+      "target": "元の文章と読解問題、解答付きのバンガル語解説、自動保存機能。"
+    },
+    {
+      "source": "Part 1 শুরু করুন",
+      "target": "パート1を開始"
+    },
+    {
+      "source": "একটি level-appropriate passage, এক প্রশ্ন, তারপর আপনার attempt-এর ভিত্তিতে clue ও sentence breakdown।",
+      "target": "レベルに適した文章、1つの質問、そしてあなたの回答に基づく手がかりと文の解説。"
+    },
+    {
+      "source": "Coach খুলুন",
+      "target": "コーチを開く"
+    },
+    {
+      "source": "N4 passage পড়ার নিয়ম",
+      "target": "N4の文章を読むルール"
+    },
+    {
+      "source": "Question আগে দেখুন",
+      "target": "先に質問を確認する"
+    },
+    {
+      "source": "কী খুঁজবেন—কারণ, সময়, main idea নাকি detail—আগে বুঝুন।",
+      "target": "何を探すべきか（理由、時間、メインアイディア、詳細など）を事前に把握する。"
+    },
+    {
+      "source": "একবার দ্রুত পড়ুন",
+      "target": "一度ざっと読む"
+    },
+    {
+      "source": "প্রতি শব্দ translate না করে topic ও paragraph flow ধরুন।",
+      "target": "すべての単語を翻訳するのではなく、トピックと段落の流れをつかむ。"
+    },
+    {
+      "source": "Clue mark করুন",
+      "target": "手がかりをマークする"
+    },
+    {
+      "source": "でも, しかし, だから, つまり-এর পরে message বদলাচ্ছে কি দেখুন।",
+      "target": "「でも」「しかし」「だから」「つまり」の後でメッセージが変わるか確認する。"
+    },
+    {
+      "source": "শেষে শব্দ দেখুন",
+      "target": "最後に単語を確認する"
+    },
+    {
+      "source": "Answer করার পরে unknown শব্দ নোট করে দ্বিতীয়বার passage পড়ুন।",
+      "target": "回答後、未知の単語をメモして2回目の文章読みを行う。"
+    },
+    {
+      "source": "আজকের Reading Session",
+      "target": "今日のリーディングセッション"
+    },
+    {
+      "source": "একটি passage-এর complete routine tick করুন।",
+      "target": "1つの文章の完全なルーティンにチェックを入れる。"
+    },
+    {
+      "source": "0/6 শেষ",
+      "target": "0/6 完了"
+    },
+    {
+      "source": "Question আগে পড়া",
+      "target": "質問を先に読む"
+    },
+    {
+      "source": "Dictionary ছাড়া first pass",
+      "target": "辞書なしでの初回パス"
+    },
+    {
+      "source": "Evidence দিয়ে answer",
+      "target": "証拠に基づいて解答する"
+    },
+    {
+      "source": "Tutor একবারে passage ও একটি প্রশ্ন দেবে; আগে answer প্রকাশ করবে না।",
+      "target": "チューターは一度に文章と1つの質問を提示し、先に答えを明かすことはありません。"
+    },
+    {
+      "source": "Practice শুরু করুন",
+      "target": "練習を開始する"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Reading বাংলায় সহজ practice",
+      "target": "あなたのニホンス · N4リーディング バンガル語で簡単練習"
+    },
+    {
+      "source": "হোম",
+      "target": "ホーム"
+    },
+    {
+      "source": "✓ Reading routine সংরক্ষণ হয়েছে",
+      "target": "✓ リーディングのルーティンが保存されました"
+    }
+  ]
+}

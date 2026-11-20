@@ -1,0 +1,494 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ur",
+  "page": "n4-grammar-lesson-35-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "اصل مواد پر جائیں"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 35 · ইচ্ছা ও শর্ত",
+      "target": "Lesson 35 · ارادہ اور شرط"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "تمام Lesson"
+    },
+    {
+      "source": "ইচ্ছা ও শর্ত",
+      "target": "خواہش اور شرط"
+    },
+    {
+      "source": "ধাপ ২ · 31–35",
+      "target": "مرحلہ 2 · 31–35"
+    },
+    {
+      "source": "শর্ত সত্য হলে ফল, কথোপকথনের topic ধরে recommendation, সঠিক উপায় জানতে প্রশ্ন এবং উন্মুক্ত পছন্দ।",
+      "target": "شرط سچ ہونے پر نتیجہ، گفتگو کے topic کو پکڑ کر recommendation، صحیح طریقہ جاننے کا سوال اور کھلی پسند۔"
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 تفصیلی grammar block"
+    },
+    {
+      "source": "12টি Japanese example",
+      "target": "12 Japanese example"
+    },
+    {
+      "source": "5টি ব্যাখ্যাসহ practice",
+      "target": "5 وضاحت سمیت practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline، mobile اور print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "あ Reading چھپائیں"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "ابھی مکمل نہیں"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ مکمل کریں"
+    },
+    {
+      "source": "Lesson 35 · লক্ষ্য",
+      "target": "Lesson 35 · ہدف"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "اس Lesson کے اختتام پر جو کر سکیں گے"
+    },
+    {
+      "source": "জাপানির conditional চারটি বড় রূপের একটি হলো 〜ば। এটি শর্ত ও ফলের যৌক্তিক সম্পর্ক দেখায়। なら আবার আগের তথ্যকে ধরে ‘যদি সেটাই হয়’ বলে পরামর্শ দেয়। Lesson 35-এ form বানানোর পাশাপাশি たら/と-এর সঙ্গে ব্যবহারগত সীমা বুঝতে হবে।",
+      "target": "جاپانی conditional کی چار بڑی صورتوں میں سے ایک 〜ば ہے۔ یہ شرط اور نتیجے کا منطقی تعلق دکھاتا ہے۔ なら پھر پچھلی معلومات کو پکڑ کر 'اگر وہی ہو' کہہ کر مشورہ دیتا ہے۔ Lesson 35 میں form بنانے کے ساتھ たら/と کے ساتھ استعمال کی حد سمجھنی ہوگی۔"
+    },
+    {
+      "source": "ক্রিয়া ও い-বিশেষণের ば-form বানাবেন",
+      "target": "فعل اور い-صفت کی ば-form بنائیں گے"
+    },
+    {
+      "source": "な-বিশেষণ/বিশেষ্যের なら condition ব্যবহার করবেন",
+      "target": "な-صفت/اسم کی なら condition استعمال کریں گے"
+    },
+    {
+      "source": "controllable condition-এর পরে request/intention-এ ば-এর সীমাবদ্ধতা বুঝবেন",
+      "target": "controllable condition کے بعد request/intention میں ば کی حد سمجھیں گے"
+    },
+    {
+      "source": "疑問詞＋ばいい এবং 疑問詞＋でも ব্যবহার করবেন",
+      "target": "疑問詞＋ばいい اور 疑問詞＋でも استعمال کریں گے"
+    },
+    {
+      "source": "শর্ত পূরণ হলে যৌক্তিক/স্বাভাবিকভাবে ফল ঘটবে",
+      "target": "شرط پوری ہونے پر منطقی/فطری طور پر نتیجہ ہوگا"
+    },
+    {
+      "source": "গঠন",
+      "target": "ساخت"
+    },
+    {
+      "source": "ধরন",
+      "target": "قسم"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "مثال"
+    },
+    {
+      "source": "শেষ う-row → え-row＋ば",
+      "target": "آخری う-row → え-row＋ば"
+    },
+    {
+      "source": "る বাদ＋れば",
+      "target": "る حذف＋れば"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-صفت"
+    },
+    {
+      "source": "শেষ い বাদ＋ければ",
+      "target": "آخری い حذف＋ければ"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "تفصیلی وضاحت"
+    },
+    {
+      "source": "〜ば condition-এর ওপর focus করে: শর্ত পূরণ হলেই ফল সম্ভব/সত্য। 春になれば桜が咲きます = বসন্ত হলে চেরি ফুল ফোটে।",
+      "target": "〜ば condition پر focus کرتا ہے: شرط پوری ہوتے ہی نتیجہ ممکن/سچ ہے۔ 春になれば桜が咲きます = بہار ہونے پر چیری کے پھول کھلتے ہیں۔"
+    },
+    {
+      "source": "পরামর্শ, নিয়ম, সাধারণ সত্য, প্রয়োজনীয় শর্তে খুব স্বাভাবিক। ボタンを押せば、ドアが開きます।",
+      "target": "مشورہ، قاعدہ، عام سچائی، ضروری شرط میں بہت فطری ہے۔ ボタンを押せば、ドアが開きます۔"
+    },
+    {
+      "source": "সতর্কতা: condition যদি বক্তার ইচ্ছাকৃত action হয়, main clause-এ সরাসরি command/request/intention সাধারণত ば-এর সঙ্গে অস্বাভাবিক: 東京へ来れば、電話してください ✕। এখানে 来たら、電話してください স্বাভাবিক। তবে condition stative/non-volitional হলে よければ、来てください ঠিক।",
+      "target": "تنبیہ: condition اگر بولنے والے کا ارادی action ہو، تو main clause میں براہ راست command/request/intention عام طور پر ば کے ساتھ غیر فطری ہے: 東京へ来れば、電話してください ✕۔ یہاں 来たら、電話してください فطری ہے۔ لیکن condition stative/non-volitional ہونے پر よければ、来てください ٹھیک ہے۔"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "جو یاد رکھیں"
+    },
+    {
+      "source": "いい-এর ば-form অনিয়মিতভাবে よければ।",
+      "target": "いい کی ば-form بے قاعدہ طور پر よければ ہے۔"
+    },
+    {
+      "source": "না হলে: Vなければ; 食べない→食べなければ।",
+      "target": "نہ ہونے پر: Vなければ; 食べない→食べなければ۔"
+    },
+    {
+      "source": "শুধু form নয়—main clause-এর ইচ্ছা/command পরীক্ষা করুন।",
+      "target": "صرف form نہیں—main clause کی مرضی/command جانچیں۔"
+    },
+    {
+      "source": "এই বোতাম চাপলে দরজা খুলবে।",
+      "target": "یہ بٹن دبانے پر دروازہ کھلے گا۔"
+    },
+    {
+      "source": "প্রতিদিন অনুশীলন করলে দক্ষ হবেন।",
+      "target": "ہر روز مشق کرنے پر ماہر ہوں گے۔"
+    },
+    {
+      "source": "আবহাওয়া ভালো হলে পাহাড় দেখা যায়।",
+      "target": "موسم اچھا ہونے پر پہاڑ دکھائی دیتا ہے۔"
+    },
+    {
+      "source": "তাড়াতাড়ি না করলে ট্রেন ধরতে পারবেন না।",
+      "target": "جلدی نہ کرنے پر ٹرین نہیں پکڑ سکیں گے۔"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ غلط"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ صحیح"
+    },
+    {
+      "source": "কেন:",
+      "target": "کیوں:"
+    },
+    {
+      "source": "い-বিশেষণ: শেষ い→ければ।",
+      "target": "い-صفت: آخری い→ければ۔"
+    },
+    {
+      "source": "‘যদি ওই বিষয়/পরিস্থিতিই হয়’—শোনা তথ্য ধরে শর্ত বা recommendation",
+      "target": "'اگر وہی موضوع/صورتحال ہو'—سنی معلومات پکڑ کر شرط یا recommendation"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "اسم"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-صفت"
+    },
+    {
+      "source": "ক্রিয়া/い-A plain",
+      "target": "فعل/い-A plain"
+    },
+    {
+      "source": "なら প্রায়ই interlocutor-এর বলা topic তুলে নেয়: A: 日本へ行きたいです。 B: 日本へ行くなら、京都もおすすめです。 অর্থ ‘যদি জাপান যাওয়ার কথাই হয়…’।",
+      "target": "なら اکثر interlocutor کے کہے topic کو اٹھا لیتا ہے: A: 日本へ行きたいです。 B: 日本へ行くなら、京都もおすすめです。 مطلب 'اگر جاپان جانے کی بات ہی ہو…'۔"
+    },
+    {
+      "source": "ば-এর মতো condition ঘটার chronological অপেক্ষা সবসময় নেই। 日本へ行くなら、カメラを買います—ক্যামেরা কেনা জাপানে যাওয়ার আগেও হতে পারে। たら হলে সাধারণত condition সম্পন্ন হওয়ার পরে main event।",
+      "target": "ば کی طرح condition کے واقع ہونے کا chronological انتظار ہمیشہ نہیں۔ 日本へ行くなら、カメラを買います—کیمرہ خریدنا جاپان جانے سے پہلے بھی ہو سکتا ہے۔ たら ہونے پر عام طور پر condition مکمل ہونے کے بعد main event ہوتا ہے۔"
+    },
+    {
+      "source": "N/な-A-এর だ বাদ: 学生なら, 暇なら।",
+      "target": "N/な-A کا だ حذف: 学生なら، 暇なら۔"
+    },
+    {
+      "source": "কথোপকথনে recommendation দেওয়ার শক্তিশালী রূপ: Nなら、Xがいいです。",
+      "target": "گفتگو میں recommendation دینے کی مضبوط صورت: Nなら、Xがいいです۔"
+    },
+    {
+      "source": "জাপানি খাবার হলে/চাইলে এই দোকান সুপারিশ করব।",
+      "target": "جاپانی کھانا ہونے/چاہنے پر اس دکان کی تجویز کروں گا۔"
+    },
+    {
+      "source": "কাল ফ্রি হলে একসঙ্গে সিনেমা দেখবেন?",
+      "target": "کل فارغ ہونے پر ایک ساتھ فلم دیکھیں گے؟"
+    },
+    {
+      "source": "স্টেশনে গেলে এই পথ কাছের।",
+      "target": "اسٹیشن جانے پر یہ راستہ قریب ہے۔"
+    },
+    {
+      "source": "な-বিশেষণের だ বাদ দিয়ে なら।",
+      "target": "な-صفت کا だ حذف کر کے なら۔"
+    },
+    {
+      "source": "কী/কোথায়/কীভাবে করলে সঠিক হবে—উপায় বা পরামর্শ চাওয়া",
+      "target": "کیا/کہاں/کیسے کرنے پر صحیح ہوگا—طریقہ یا مشورہ مانگنا"
+    },
+    {
+      "source": "প্রশ্ন",
+      "target": "سوال"
+    },
+    {
+      "source": "Lesson 26-এর 疑問詞＋たらいいですか-এর খুব কাছাকাছি। ばいい শর্তকে ‘কোন কাজ করলে ভালো ফল পাওয়া যাবে’ হিসেবে ফ্রেম করে।",
+      "target": "Lesson 26 کے 疑問詞＋たらいいですか کے بہت قریب ہے۔ ばいい شرط کو 'کون سا کام کرنے پر اچھا نتیجہ ملے گا' کے طور پر فریم کرتا ہے۔"
+    },
+    {
+      "source": "উত্তরে Vばいいです বা Vたらいいです—দুটিই সম্ভব: 駅員に聞けばいいですよ।",
+      "target": "جواب میں Vばいいです یا Vたらいいです—دونوں ممکن ہیں: 駅員に聞けばいいですよ۔"
+    },
+    {
+      "source": "Question word এবং ば-form দুটোই লাগবে: どうすればいいですか।",
+      "target": "Question word اور ば-form دونوں چاہئیں: どうすればいいですか۔"
+    },
+    {
+      "source": "এই নথি কোথায় জমা দিলে হবে?",
+      "target": "یہ دستاویز کہاں جمع کرانے پر ہوگا؟"
+    },
+    {
+      "source": "পাসওয়ার্ড ভুললে কী করলে হবে?",
+      "target": "پاس ورڈ بھولنے پر کیا کرنے پر ہوگا؟"
+    },
+    {
+      "source": "ば হলে する→すれば; たら হলে したら। দুই form মেশাবেন না।",
+      "target": "ば ہونے پر する→すれば; たら ہونے پر したら۔ دونوں form نہ ملائیں۔"
+    },
+    {
+      "source": "যে-কেউ/যে-কোনো কিছু/যে-কোনো জায়গা—খোলা বা unrestricted choice",
+      "target": "جو کوئی/جو کچھ/جو جگہ—کھلی یا unrestricted پسند"
+    },
+    {
+      "source": "ব্যক্তি",
+      "target": "شخص"
+    },
+    {
+      "source": "বস্তু",
+      "target": "چیز"
+    },
+    {
+      "source": "স্থান/সময়",
+      "target": "جگہ/وقت"
+    },
+    {
+      "source": "পছন্দ",
+      "target": "پسند"
+    },
+    {
+      "source": "Question word-এর পরে でも বসে restriction তুলে দেয়: いつでも = যেকোনো সময়, 何でも = যেকোনো কিছু।",
+      "target": "Question word کے بعد でも بیٹھ کر restriction اٹھا دیتا ہے: いつでも = کسی بھی وقت، 何でも = کچھ بھی۔"
+    },
+    {
+      "source": "Negative predicate-এর সঙ্গে অর্থ প্রসঙ্গসাপেক্ষ: だれでもできません অস্পষ্ট/অস্বাভাবিক হতে পারে। ‘কেউ পারে না’ বলতে だれもできません; ‘সবাই পারে না’ বলতে だれでもできるわけではありません (উচ্চতর)। N4-এ affirmative usage আগে আয়ত্ত করুন।",
+      "target": "Negative predicate کے ساتھ معنی پس منظر پر منحصر ہے: だれでもできません مبہم/غیر فطری ہو سکتا ہے۔ 'کوئی نہیں کر سکتا' کہنے کے لیے だれもできません; 'سب نہیں کر سکتے' کہنے کے لیے だれでもできるわけではありません (اعلیٰ سطح)۔ N4 میں affirmative usage پہلے حاصل کریں۔"
+    },
+    {
+      "source": "Suggestion-এর Nでも (চা-টা) আলাদা usage: コーヒーでも飲みませんか। এখানে interrogative নয়।",
+      "target": "Suggestion کا Nでも (چائے وغیرہ) الگ usage ہے: コーヒーでも飲みませんか۔ یہاں interrogative نہیں۔"
+    },
+    {
+      "source": "Question word＋も＋negative = কেউ/কিছুই নয়; question word＋でも＋affirmative = যে-কেউ/যে-কোনো।",
+      "target": "Question word＋も＋negative = کوئی/کچھ نہیں; question word＋でも＋affirmative = جو کوئی/جو کچھ۔"
+    },
+    {
+      "source": "এই অনুষ্ঠানে যে-কেউ অংশ নিতে পারে।",
+      "target": "اس پروگرام میں جو کوئی حصہ لے سکتا ہے۔"
+    },
+    {
+      "source": "না-বোঝা যেকোনো বিষয় জিজ্ঞেস করুন।",
+      "target": "نہ سمجھا کوئی بھی موضوع پوچھیں۔"
+    },
+    {
+      "source": "আমি যেকোনো জায়গায় ঘুমাতে পারি।",
+      "target": "میں کسی بھی جگہ سو سکتا ہوں۔"
+    },
+    {
+      "source": "Affirmative ‘যে-কেউ’ = だれでも; だれも সাধারণত negative-এর সঙ্গে ‘কেউই নয়’।",
+      "target": "Affirmative 'جو کوئی' = だれでも; だれも عام طور پر negative کے ساتھ 'کوئی نہیں'۔"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "ایک نظر میں فرق"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "کس صورتحال میں کون سا؟"
+    },
+    {
+      "source": "মূল দৃষ্টি",
+      "target": "اصل نظر"
+    },
+    {
+      "source": "স্বাভাবিক ক্ষেত্র",
+      "target": "فطری صورت"
+    },
+    {
+      "source": "শর্ত পূরণ → যৌক্তিক ফল",
+      "target": "شرط پوری → منطقی نتیجہ"
+    },
+    {
+      "source": "নিয়ম, উপায়, প্রয়োজনীয় শর্ত",
+      "target": "قاعدہ، طریقہ، ضروری شرط"
+    },
+    {
+      "source": "উল্লেখিত topic/assumption",
+      "target": "مذکور topic/assumption"
+    },
+    {
+      "source": "পরামর্শ, topic-based response",
+      "target": "مشورہ، topic-based response"
+    },
+    {
+      "source": "condition সম্পন্ন হওয়ার পরে",
+      "target": "condition مکمل ہونے کے بعد"
+    },
+    {
+      "source": "এককালীন ঘটনা, request/intention",
+      "target": "ایک وقتی واقعہ، request/intention"
+    },
+    {
+      "source": "স্বয়ংক্রিয়/নিয়মিত ফল",
+      "target": "خودکار/باقاعدہ نتیجہ"
+    },
+    {
+      "source": "machine, nature; ইচ্ছা নয়",
+      "target": "machine، nature; مرضی نہیں"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "حقیقی بات چیت"
+    },
+    {
+      "source": "কিয়োতো ভ্রমণের পরামর্শ",
+      "target": "کیوتو سفر کا مشورہ"
+    },
+    {
+      "source": "আগামী মাসে কিয়োতো যাব।",
+      "target": "اگلے مہینے کیوتو جاؤں گا۔"
+    },
+    {
+      "source": "কিয়োতো হলে আরাশিয়ামা সুপারিশ করব।",
+      "target": "کیوتو ہونے پر اراشییاما کی تجویز کروں گا۔"
+    },
+    {
+      "source": "কীভাবে গেলে হবে?",
+      "target": "کیسے جانے پر ہوگا؟"
+    },
+    {
+      "source": "কিয়োতো স্টেশনে জিজ্ঞেস করলে জানতে পারবেন। যে-কেউ বলে দেবে।",
+      "target": "کیوتو اسٹیشن پر پوچھنے پر جان سکیں گے۔ جو کوئی بتا دے گا۔"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "خود جانچیں"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice اور وضاحت سمیت جواب"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "پہلے کاپی میں جواب لکھیں، پھر سوال دبا کر جواب اور وجہ ملا لیں۔"
+    },
+    {
+      "source": "1. 行く-এর ば-form বানান।",
+      "target": "1. 行く کی ば-form بنائیں۔"
+    },
+    {
+      "source": "2. 安い-এর ば-form বানান।",
+      "target": "2. 安い کی ば-form بنائیں۔"
+    },
+    {
+      "source": "শেষ い→ければ।",
+      "target": "آخری い→ければ۔"
+    },
+    {
+      "source": "3. ‘জাপানি খাবার হলে সুশি ভালো’—なら ব্যবহার করুন।",
+      "target": "3. 'جاپانی کھانا ہونے پر سوشی اچھی ہے'—なら استعمال کریں۔"
+    },
+    {
+      "source": "উল্লেখিত category/topic＋なら recommendation।",
+      "target": "مذکور category/topic＋なら recommendation۔"
+    },
+    {
+      "source": "4. ‘কীভাবে আবেদন করলে হবে?’ বলুন।",
+      "target": "4. 'کیسے درخواست دینے پر ہوگا؟' کہیں۔"
+    },
+    {
+      "source": "5. ‘যে-কেউ ব্যবহার করতে পারে’ বলুন।",
+      "target": "5. 'جو کوئی استعمال کر سکتا ہے' کہیں۔"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "ایک جملے میں Master Key"
+    },
+    {
+      "source": "যৌক্তিক শর্তে ば, কথায় ওঠা topic ধরে পরামর্শে なら, সঠিক উপায় জানতে 疑問詞＋ばいい, আর restriction না থাকলে 疑問詞＋でも।",
+      "target": "منطقی شرط میں ば، بات میں اٹھا topic پکڑ کر مشورے میں なら، صحیح طریقہ جاننے کے لیے 疑問詞＋ばいい، اور restriction نہ ہونے پر 疑問詞＋でも۔"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "قابل اعتماد حوالہ"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "نصاب اور تصدیق"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "یہ آزاد اردو lesson Minna no Nihongo II کی lesson sequence، official JLPT N4 scope اور Japan Foundation کے learner resources ملا کر بنایا گیا۔ مثالیں اور اردو وضاحت نئے سرے سے لکھی گئی۔"
+    },
+    {
+      "source": "← আগের Lesson 34",
+      "target": "← پچھلا Lesson 34"
+    },
+    {
+      "source": "পরের Lesson 36 →",
+      "target": "اگلا Lesson 36 →"
+    },
+    {
+      "source": "〜ように：লক্ষ্য, পরিবর্তন ও নিয়মিত চেষ্টা",
+      "target": "〜ように：ہدف، تبدیلی اور باقاعدہ کوشش"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson فہرست"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "سیکھنے کا ہدف"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "فرق کی جدول"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "گفتگو"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress لوڈ ہو رہا ہے…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "طلبہ کے لیے مفت، تفصیلی اردو self-study edition۔"
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n4-vocab-lesson-42-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N4 Vocabulary Lesson 42 | আপনার নিহোন",
+      "target": "N4 Vocabulary Lesson 42 | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "সব লেসন",
+      "target": "සියලු Lesson"
+    },
+    {
+      "source": "জাপানিজ শব্দভাণ্ডার",
+      "target": "ජපන් වචන මාලාව"
+    },
+    {
+      "source": "প্রথমবার পড়া শিক্ষার্থীর জন্য—জাপানিজ, ふりがな, বাংলা উচ্চারণ ও সহজ বাংলা অর্থ একই কার্ডে। সার্চ, অডিও, শেখা মার্ক ও কুইজও আছে।",
+      "target": "පළමු වරට කියවන සිසුන් සඳහා—ජපන්, ふりがな, සිංහල උච්චාරණය සහ සරල සිංහල අර්ථය එකම card එකේ. Search, audio, learned mark එක සහ quiz එකත් ඇත."
+    },
+    {
+      "source": "শব্দ শেখা শুরু",
+      "target": "වචන ඉගෙනීම අරඹන්න"
+    },
+    {
+      "source": "কুইজ দিন",
+      "target": "Quiz එක දෙන්න"
+    },
+    {
+      "source": "55টি শব্দ",
+      "target": "වචන 55 ක්"
+    },
+    {
+      "source": "১ম সংস্করণ অনুযায়ী সাজানো",
+      "target": "1st සංස්කරණය අනුව සකස් කර ඇත"
+    },
+    {
+      "source": "জাপানিজ অডিও",
+      "target": "ජපන් audio"
+    },
+    {
+      "source": "ডিভাইসের Japanese voice ব্যবহার করে",
+      "target": "උපාංගයේ Japanese voice එක භාවිතා කර"
+    },
+    {
+      "source": "০ / 55 শেখা",
+      "target": "0 / 55 ඉගෙන ගෙන ඇත"
+    },
+    {
+      "source": "এই browser-এ progress সংরক্ষিত থাকবে",
+      "target": "මෙම browser එකේ progress එක save වේ"
+    },
+    {
+      "source": "সব",
+      "target": "සියල්ල"
+    },
+    {
+      "source": "শেখা হয়েছে",
+      "target": "ඉගෙන ගෙන ඇත"
+    },
+    {
+      "source": "বাকি",
+      "target": "ඉතිරිය"
+    },
+    {
+      "source": "55টি দেখানো হচ্ছে",
+      "target": "55 ක් පෙන්වනු ලැබේ"
+    },
+    {
+      "source": "Lesson 42-এর শব্দ",
+      "target": "Lesson 42 එකේ වචන"
+    },
+    {
+      "source": "「—」 চিহ্ন মানে আগের স্বরটি একটু লম্বা করে পড়বেন।",
+      "target": "「—」 ලකුණ යනු පෙර ස්වරය ටිකක් දිගු කර කියවීමයි."
+    },
+    {
+      "source": "↻ একটি random শব্দ",
+      "target": "↻ එක් random වචනයක්"
+    },
+    {
+      "source": "১ম সংস্করণ",
+      "target": "1st සංස්කරණය"
+    },
+    {
+      "source": "উচ্চারণ",
+      "target": "උච්චාරණය"
+    },
+    {
+      "source": "ৎসুৎসুমিমাসু",
+      "target": "tsutsumimasu"
+    },
+    {
+      "source": "মোড়াই; প্যাকেট করি",
+      "target": "ඔතනවා; packet කරනවා"
+    },
+    {
+      "source": "🔊 শুনুন",
+      "target": "🔊 අසන්න"
+    },
+    {
+      "source": "⧉ কপি",
+      "target": "⧉ Copy"
+    },
+    {
+      "source": "○ শেখা বাকি",
+      "target": "○ ඉගෙනීමට ඉතිරිය"
+    },
+    {
+      "source": "ওয়াকাশিমাসু",
+      "target": "wakashimasu"
+    },
+    {
+      "source": "ফোটাই; গরম করি",
+      "target": "උතුරවනවා; රත් කරනවා"
+    },
+    {
+      "source": "মাজেমাসু",
+      "target": "mazemasu"
+    },
+    {
+      "source": "মেশাই; মিশ্রণ করি",
+      "target": "මිශ්‍ර කරනවා"
+    },
+    {
+      "source": "কে—সানশিমাসু",
+      "target": "keesanshimasu"
+    },
+    {
+      "source": "হিসাব করি; গণনা করি",
+      "target": "ගණන් කරනවා; ගණනය කරනවා"
+    },
+    {
+      "source": "আৎসুই",
+      "target": "atsui"
+    },
+    {
+      "source": "পুরু; মোটা",
+      "target": "ඝන; මහත"
+    },
+    {
+      "source": "উসুই",
+      "target": "usui"
+    },
+    {
+      "source": "পাতলা; হালকা",
+      "target": "තුනී; සැහැල්ලු"
+    },
+    {
+      "source": "বেনগোশি",
+      "target": "bengoshi"
+    },
+    {
+      "source": "আইনজীবী; উকিল",
+      "target": "නීතිඥයා; අධිනීතිඥයා"
+    },
+    {
+      "source": "ওনগাকুকা",
+      "target": "ongakuka"
+    },
+    {
+      "source": "সঙ্গীতশিল্পী",
+      "target": "සංගීත ශිල්පියා"
+    },
+    {
+      "source": "কোদোমোতাচি",
+      "target": "kodomotachi"
+    },
+    {
+      "source": "শিশুরা; বাচ্চারা",
+      "target": "ළමයින්; බිළිඳුන්"
+    },
+    {
+      "source": "ফুতারি",
+      "target": "futari"
+    },
+    {
+      "source": "দুজন",
+      "target": "දෙදෙනා"
+    },
+    {
+      "source": "ক্যো—ইকু",
+      "target": "kyooiku"
+    },
+    {
+      "source": "শিক্ষা",
+      "target": "අධ්‍යාපනය"
+    },
+    {
+      "source": "রেকিশি",
+      "target": "rekishi"
+    },
+    {
+      "source": "ইতিহাস",
+      "target": "අධ්‍යාපන හා රැකියා ඉතිහාසය"
+    },
+    {
+      "source": "বুনকা",
+      "target": "bunka"
+    },
+    {
+      "source": "সংস্কৃতি",
+      "target": "සංස්කෘතිය"
+    },
+    {
+      "source": "শাকাই",
+      "target": "shakai"
+    },
+    {
+      "source": "সমাজ",
+      "target": "සමාජය"
+    },
+    {
+      "source": "হো—রিৎসু",
+      "target": "hooritsu"
+    },
+    {
+      "source": "আইন",
+      "target": "නීතිය"
+    },
+    {
+      "source": "সেনসো—",
+      "target": "sensoo"
+    },
+    {
+      "source": "যুদ্ধ",
+      "target": "යුද්ධය"
+    },
+    {
+      "source": "হে—ওয়া",
+      "target": "heewa"
+    },
+    {
+      "source": "শান্তি",
+      "target": "සාමය"
+    },
+    {
+      "source": "মোকুতেকি",
+      "target": "mokuteki"
+    },
+    {
+      "source": "উদ্দেশ্য; লক্ষ্য",
+      "target": "අරමුණ; ඉලක්කය"
+    },
+    {
+      "source": "আনজেন",
+      "target": "anzen"
+    },
+    {
+      "source": "নিরাপদ; নিরাপত্তা",
+      "target": "ආරක්ෂිත; ආරක්ෂාව"
+    },
+    {
+      "source": "রোনবুন",
+      "target": "ronbun"
+    },
+    {
+      "source": "গবেষণাপত্র; থিসিস",
+      "target": "පර්යේෂණ පත්‍රිකාව; thesis"
+    },
+    {
+      "source": "কানকে—",
+      "target": "kankee"
+    },
+    {
+      "source": "সম্পর্ক",
+      "target": "සම්බන්ධය"
+    },
+    {
+      "source": "মিকিসা—",
+      "target": "mikisaa"
+    },
+    {
+      "source": "মিক্সার",
+      "target": "mixer"
+    },
+    {
+      "source": "ইয়াকান",
+      "target": "yakan"
+    },
+    {
+      "source": "কেটলি",
+      "target": "කේතලය"
+    },
+    {
+      "source": "সেননুকি",
+      "target": "sennuki"
+    },
+    {
+      "source": "বোতলের ছিপি খোলার যন্ত্র",
+      "target": "බෝතල් විවෘත කිරීමේ උපකරණය"
+    },
+    {
+      "source": "কানকিরি",
+      "target": "kankiri"
+    },
+    {
+      "source": "ক্যান ওপেনার",
+      "target": "can opener"
+    },
+    {
+      "source": "কানজুমে",
+      "target": "kanzume"
+    },
+    {
+      "source": "ক্যানজাত খাবার",
+      "target": "කෑන් කළ ආහාර"
+    },
+    {
+      "source": "ফুরোশিকি",
+      "target": "furoshiki"
+    },
+    {
+      "source": "জিনিস মোড়ানোর কাপড়",
+      "target": "දේවල් ඔතන රෙද්ද"
+    },
+    {
+      "source": "সোরোবান",
+      "target": "soroban"
+    },
+    {
+      "source": "আবাকাস; জাপানি গণনার যন্ত্র",
+      "target": "abacus; ජපන් ගණන් උපකරණය"
+    },
+    {
+      "source": "তাইওনকে—",
+      "target": "taionkee"
+    },
+    {
+      "source": "থার্মোমিটার; শরীরের তাপমাত্রা মাপার যন্ত্র",
+      "target": "thermometer; ශරීර උෂ්ණත්වය මනින උපකරණය"
+    },
+    {
+      "source": "জাইর্যো—",
+      "target": "zairyoo"
+    },
+    {
+      "source": "উপাদান; কাঁচামাল",
+      "target": "සංඝටකය; අමුද්‍රව්‍ය"
+    },
+    {
+      "source": "ইশি",
+      "target": "ishi"
+    },
+    {
+      "source": "পাথর",
+      "target": "ගල"
+    },
+    {
+      "source": "পিরামিদ্দো",
+      "target": "piramiddo"
+    },
+    {
+      "source": "পিরামিড",
+      "target": "පිරමීඩය"
+    },
+    {
+      "source": "দে—তা",
+      "target": "deeta"
+    },
+    {
+      "source": "ডেটা",
+      "target": "data"
+    },
+    {
+      "source": "ফাইরু",
+      "target": "fairu"
+    },
+    {
+      "source": "ফাইল",
+      "target": "file"
+    },
+    {
+      "source": "আরু ～",
+      "target": "aru ～"
+    },
+    {
+      "source": "কোনো এক ~; একটি নির্দিষ্ট ~",
+      "target": "යම් ~; යම් නිශ්චිත ~"
+    },
+    {
+      "source": "ইশ্শো—কেনমে—",
+      "target": "isshoo kenmee"
+    },
+    {
+      "source": "সর্বশক্তি দিয়ে; প্রাণপণে",
+      "target": "මුළු ශක්තියෙන්; ජීවිතය පරදුවට තබා"
+    },
+    {
+      "source": "নাজে",
+      "target": "naze"
+    },
+    {
+      "source": "কেন?",
+      "target": "ඇයි?"
+    },
+    {
+      "source": "কোকুরেন",
+      "target": "kokuren"
+    },
+    {
+      "source": "জাতিসংঘ",
+      "target": "එක්සත් ජාතීන්ගේ සංවිධානය"
+    },
+    {
+      "source": "এরি—জেনো তামেনি",
+      "target": "eriize no tame ni"
+    },
+    {
+      "source": "এলিসের জন্য (সঙ্গীতের নাম)",
+      "target": "Elise සඳහා (සංගීතයේ නම)"
+    },
+    {
+      "source": "বে—তো—বেন",
+      "target": "beetoben"
+    },
+    {
+      "source": "বেটোফেন (ব্যক্তির নাম)",
+      "target": "Beethoven (පුද්ගල නම)"
+    },
+    {
+      "source": "পো—রানদো",
+      "target": "poorando"
+    },
+    {
+      "source": "পোল্যান্ড",
+      "target": "Poland"
+    },
+    {
+      "source": "রো—ন",
+      "target": "roon"
+    },
+    {
+      "source": "ঋণ; কিস্তি",
+      "target": "ණය; වාරිකය"
+    },
+    {
+      "source": "সেত্তো",
+      "target": "setto"
+    },
+    {
+      "source": "সেট; জোড়া",
+      "target": "set; යුගලය"
+    },
+    {
+      "source": "আতো",
+      "target": "ato"
+    },
+    {
+      "source": "আরও; বাকি",
+      "target": "තවත්; ඉතිරිය"
+    },
+    {
+      "source": "কাপ্পুরা—মেন",
+      "target": "kappuraamen"
+    },
+    {
+      "source": "কাপ রামেন; কাপ নুডলস",
+      "target": "cup ramen; cup noodles"
+    },
+    {
+      "source": "ইনসুতানতোরা—মেন",
+      "target": "insutanto raamen"
+    },
+    {
+      "source": "ইনস্ট্যান্ট রামেন",
+      "target": "instant ramen"
+    },
+    {
+      "source": "নাবে",
+      "target": "nabe"
+    },
+    {
+      "source": "হাঁড়ি; পাত্র",
+      "target": "බඳුන; භාජනය"
+    },
+    {
+      "source": "দোনবুরি",
+      "target": "donburi"
+    },
+    {
+      "source": "বড় বাটি; ডনবুরি বাটি",
+      "target": "විශාල බඳුන; donburi බඳුන"
+    },
+    {
+      "source": "শোকুহিন",
+      "target": "shokuhin"
+    },
+    {
+      "source": "খাদ্যদ্রব্য",
+      "target": "ආහාර ද්‍රව්‍ය"
+    },
+    {
+      "source": "চো—সা",
+      "target": "choosa"
+    },
+    {
+      "source": "তদন্ত; জরিপ",
+      "target": "විමර්ශනය; සමීක්ෂණය"
+    },
+    {
+      "source": "কাপ্পু",
+      "target": "kappu"
+    },
+    {
+      "source": "কাপ",
+      "target": "කෝප්පය"
+    },
+    {
+      "source": "মাতা",
+      "target": "mata"
+    },
+    {
+      "source": "আবার; এছাড়াও",
+      "target": "නැවත; ඊට අමතරව"
+    },
+    {
+      "source": "～নো কাওয়ারিনি",
+      "target": "～no kawari ni"
+    },
+    {
+      "source": "~ এর পরিবর্তে",
+      "target": "~ වෙනුවට"
+    },
+    {
+      "source": "দোকোদেদেমো",
+      "target": "doko de demo"
+    },
+    {
+      "source": "যেকোনো জায়গায়",
+      "target": "ඕනෑම තැනක"
+    },
+    {
+      "source": "ইমাদেহা",
+      "target": "ima dewa"
+    },
+    {
+      "source": "এখন; বর্তমানে",
+      "target": "දැන්; වර්තමානයේ"
+    },
+    {
+      "source": "কোনো শব্দ পাওয়া যায়নি।",
+      "target": "කිසිම වචනයක් හමු නොවීය."
+    },
+    {
+      "source": "অন্য বানান বা বাংলা অর্থ দিয়ে চেষ্টা করুন।",
+      "target": "වෙනත් අක්ෂර වින්‍යාසයකින් හෝ සිංහල අර්ථයකින් උත්සාහ කරන්න."
+    },
+    {
+      "source": "১০ প্রশ্ন • দুই ধরনের অনুশীলন",
+      "target": "ප්‍රශ්න 10 ක් • අභ්‍යාස වර්ග දෙකක්"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "ඔබම පරීක්ෂා කරන්න"
+    },
+    {
+      "source": "কখনো জাপানিজ দেখে বাংলা অর্থ, আবার কখনো বাংলা দেখে সঠিক জাপানিজ বেছে নিন। প্রতিবার নতুন random প্রশ্ন আসবে।",
+      "target": "සමහර විට ජපන් බලා සිංහල අර්ථය, තවත් විට සිංහල බලා නිවැරදි ජපන් එක තෝරන්න. සෑම වරම නව random ප්‍රශ්නයක් ඒවි."
+    },
+    {
+      "source": "নতুন কুইজ শুরু",
+      "target": "නව Quiz එකක් අරඹන්න"
+    },
+    {
+      "source": "প্রশ্ন ১ / ১০",
+      "target": "ප්‍රශ්නය 1 / 10"
+    },
+    {
+      "source": "স্কোর ০",
+      "target": "ලකුණු 0"
+    },
+    {
+      "source": "পরের প্রশ্ন",
+      "target": "ඊළඟ ප්‍රශ්නය"
+    },
+    {
+      "source": "তালিকা নোট:",
+      "target": "ලැයිස්තු සටහන:"
+    },
+    {
+      "source": "আপনার দেওয়া পুরোনো ফাইলের সঙ্গে মিল রেখে Minna no Nihongo Shokyu II-এর ১ম সংস্করণের lesson order ব্যবহার করা হয়েছে। OCR-এ ভাঙা কানা, duplicate example এবং ভুল বাংলা অর্থ বাদ দিয়ে entry-গুলো নতুন করে তৈরি করা হয়েছে। এটি শিক্ষার্থীর সহায়ক free resource; মূল বইয়ের বিকল্প নয়।",
+      "target": "ඔබ දුන් පැරණි ගොනුව සමඟ ගැළපෙන පරිදි Minna no Nihongo Shokyu II එකේ 1st සංස්කරණයේ lesson order එක භාවිතා කර ඇත. OCR එකේ කැඩුණු kana, duplicate example සහ වැරදි සිංහල අර්ථ ඉවත් කර entry නැවත සාදා ඇත. මෙය සිසුන් සඳහා උපකාරක free resource එකකි; මුල් පොතේ විකල්පයක් නොවේ."
+    },
+    {
+      "source": "আগের লেসন",
+      "target": "පෙර Lesson එක"
+    },
+    {
+      "source": "সব N4 লেসন",
+      "target": "සියලු N4 Lesson"
+    },
+    {
+      "source": "পরের লেসন",
+      "target": "ඊළඟ Lesson එක"
+    },
+    {
+      "source": "আপনার নিহোন • শিক্ষার্থীদের জন্য সহজ বাংলা জাপানিজ শিক্ষা",
+      "target": "আপনার নিহোন • සිසුන් සඳහා සරල සිංහල ජපන් අධ්‍යාපනය"
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ne",
+  "page": "n5-grammar-lesson-12-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 12 | Past Adjectives・Noun Past・Comparisons | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 12 | Past Adjectives・Noun Past・Comparisons | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "আগে কেমন ছিল, কোনটা ভালো/বড়/মজার — compare করা",
+      "target": "पहिले कस्तो थियो, कुन राम्रो/ठूलो/रमाइलो — compare गर्नु"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar सुरु"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "आजको Learning Goal"
+    },
+    {
+      "source": "Past adjective বলা",
+      "target": "Past adjective भन्नु"
+    },
+    {
+      "source": "Comparison করা",
+      "target": "Comparison गर्नु"
+    },
+    {
+      "source": "সবচেয়ে বলা",
+      "target": "सबैभन्दा भन्नु"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "सजिलो व्याख्या + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "प्रत्येक pattern पहिले structure हेरेर, त्यसपछि example मुखले भन्नुहोस्। Audio button थिच्दा Japanese sentence सुन्न सक्नुहुनेछ।"
+    },
+    {
+      "source": "noun ও な-adjective-এর past affirmative でした, past negative じゃありませんでした।",
+      "target": "noun र な-adjective को past affirmative でした, past negative じゃありませんでした।"
+    },
+    {
+      "source": "কিনো ওয়া আমেদেশিতা।",
+      "target": "昨日は雨でした।"
+    },
+    {
+      "source": "গতকাল বৃষ্টি ছিল।",
+      "target": "हिजो पानी परेको थियो।"
+    },
+    {
+      "source": "কোনো মাচি ওয়া শিজুকাদেশিতা।",
+      "target": "この町は静かでした।"
+    },
+    {
+      "source": "এই শহর শান্ত ছিল।",
+      "target": "यो शहर शान्त थियो।"
+    },
+    {
+      "source": "কিনো ওয়া ইয়াসুমি জা আরিমাসেনদেশিতা।",
+      "target": "昨日は休みじゃありませんでした।"
+    },
+    {
+      "source": "গতকাল ছুটি ছিল না।",
+      "target": "हिजो बिदा थिएन।"
+    },
+    {
+      "source": "い-adjective past করতে শেষের い বাদ দিয়ে かったです; negative past = くなかったです।",
+      "target": "い-adjective past गर्न अन्त्यको い हटाएर かったです; negative past = くなかったです।"
+    },
+    {
+      "source": "কিনো ওয়া আৎসুকাত্তাদেসু।",
+      "target": "昨日は暑かったです।"
+    },
+    {
+      "source": "গতকাল গরম ছিল।",
+      "target": "हिजो गर्मी थियो।"
+    },
+    {
+      "source": "শিকেন ওয়া মুজুকাশিকুনাকাত্তাদেসু।",
+      "target": "試験は難しくなかったです।"
+    },
+    {
+      "source": "পরীক্ষা কঠিন ছিল না।",
+      "target": "परीक्षा गाह्रो थिएन।"
+    },
+    {
+      "source": "এইগা ওয়া ইয়োকাত্তাদেসু।",
+      "target": "映画はよかったです।"
+    },
+    {
+      "source": "সিনেমা ভালো ছিল।",
+      "target": "फिल्म राम्रो थियो।"
+    },
+    {
+      "source": "N1, N2-এর চেয়ে বেশি adjective — comparison।",
+      "target": "N1, N2 भन्दा बढी adjective — comparison।"
+    },
+    {
+      "source": "より = than / চেয়ে।",
+      "target": "より = than / भन्दा।"
+    },
+    {
+      "source": "তোকিয়ো ওয়া ওওসাকা ইয়োরি ওওকিইদেসু।",
+      "target": "東京は大阪より大きいです।"
+    },
+    {
+      "source": "টোকিও ওসাকার চেয়ে বড়।",
+      "target": "टोकियो ओसाका भन्दा ठूलो छ।"
+    },
+    {
+      "source": "দেনশা ওয়া বাসু ইয়োরি হায়াইদেসু।",
+      "target": "電車はバスより速いです।"
+    },
+    {
+      "source": "ট্রেন বাসের চেয়ে দ্রুত।",
+      "target": "रेल बस भन्दा छिटो छ।"
+    },
+    {
+      "source": "দুই জিনিসের মধ্যে কোনটা বেশি adjective — জিজ্ঞাসা করতে।",
+      "target": "दुई वस्तुमध्ये कुन बढी adjective — सोध्न।"
+    },
+    {
+      "source": "উত্তরে Nのほうが〜です।",
+      "target": "उत्तरमा Nのほうが〜です।"
+    },
+    {
+      "source": "নিহোনগো তো এইগো তো দোচিরা গা মুজুকাশিইদেসু কা।",
+      "target": "日本語と英語とどちらが難しいですか।"
+    },
+    {
+      "source": "জাপানি আর ইংরেজি কোনটা কঠিন?",
+      "target": "जापानी र अंग्रेजी कुन गाह्रो छ?"
+    },
+    {
+      "source": "নিহোনগো নো হো গা মুজুকাশিইদেসু।",
+      "target": "日本語のほうが難しいです।"
+    },
+    {
+      "source": "জাপানির দিকটাই বেশি কঠিন।",
+      "target": "जापानी नै बढी गाह्रो छ।"
+    },
+    {
+      "source": "কোন group-এর মধ্যে সবচেয়ে adjective বলতে 一番।",
+      "target": "कुन group मध्ये सबैभन्दा adjective भन्न 一番।"
+    },
+    {
+      "source": "で এখানে scope/group বোঝায়।",
+      "target": "で यहाँ scope/group बुझाउँछ।"
+    },
+    {
+      "source": "কুদামোনো দে মানগো গা ইচিবান সুকিদেসু।",
+      "target": "果物でマンゴーが一番好きです।"
+    },
+    {
+      "source": "ফলের মধ্যে আম সবচেয়ে পছন্দ।",
+      "target": "फलफूलमध्ये आँप सबैभन्दा मनपर्छ।"
+    },
+    {
+      "source": "নিহোন দে ফুজিসান গা ইচিবান তাকাইদেসু।",
+      "target": "日本で富士山が一番高いです।"
+    },
+    {
+      "source": "জাপানে ফুজি পাহাড় সবচেয়ে উঁচু।",
+      "target": "जापानमा फुजी पर्वत सबैभन्दा अग्लो छ।"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "मुखले भन्ने Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "यी वाक्यहरू interview/classroom conversation जस्तो गरेर 3 पटक पढ्नुहोस्।"
+    },
+    {
+      "source": "কিনো ওয়া দোদেশিতা কা।",
+      "target": "昨日はどうでしたか।"
+    },
+    {
+      "source": "গতকাল কেমন ছিল?",
+      "target": "हिजो कस्तो थियो?"
+    },
+    {
+      "source": "তোতেমো ইসোগাশিকাত্তাদেসু।",
+      "target": "とても忙しかったです।"
+    },
+    {
+      "source": "খুব ব্যস্ত ছিলাম।",
+      "target": "धेरै व्यस्त थिएँ।"
+    },
+    {
+      "source": "জাপানিই বেশি কঠিন।",
+      "target": "जापानी नै बढी गाह्रो छ।"
+    },
+    {
+      "source": "নিহোন রিয়োরি দে নানি গা ইচিবান সুকিদেসু কা।",
+      "target": "日本料理で何が一番好きですか।"
+    },
+    {
+      "source": "জাপানি খাবারের মধ্যে কোনটা সবচেয়ে পছন্দ?",
+      "target": "जापानी खानामध्ये कुन सबैभन्दा मनपर्छ?"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "आफैलाई जाँच्नुहोस्"
+    },
+    {
+      "source": "সবচেয়ে = ?",
+      "target": "सबैभन्दा = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 12 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 12 • Verified Premium Detailed Version"
+    }
+  ]
+}

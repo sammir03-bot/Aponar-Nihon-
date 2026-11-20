@@ -1,0 +1,234 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ne",
+  "page": "n5-grammar-lesson-21-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 21 | Plain Form + と思います・と言います・でしょう？ | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 21 | Plain Form + と思います・と言います・でしょう？ | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "মতামত বলা, quote করা, confirmation নেওয়া",
+      "target": "मत भन्नु, quote गर्नु, confirmation लिनु"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar सुरु"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "आजको Learning Goal"
+    },
+    {
+      "source": "মতামত বলা",
+      "target": "मत भन्नु"
+    },
+    {
+      "source": "কেউ কী বলেছে বলা",
+      "target": "कसले के भन्यो भन्नु"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "सजिलो व्याख्या + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "प्रत्येक pattern पहिले structure हेरेर, त्यसपछि example मुखले भन्नुहोस्। Audio button थिच्दा Japanese sentence सुन्न सक्नुहुनेछ।"
+    },
+    {
+      "source": "আমি মনে করি / আমার ধারণা — নিজের মতামত বা অনুমান বলতে।",
+      "target": "मलाई लाग्छ / मेरो धारणा — आफ्नो मत वा अनुमान भन्न।"
+    },
+    {
+      "source": "と思います-এর আগে polite form নয়, plain form লাগে।",
+      "target": "と思います को अगाडि polite form होइन, plain form चाहिन्छ।"
+    },
+    {
+      "source": "আশিতা আমে গা ফুরু তো ওমোইমাসু।",
+      "target": "明日雨が降ると思います।"
+    },
+    {
+      "source": "আমার মনে হয় কাল বৃষ্টি হবে।",
+      "target": "मलाई लाग्छ भोलि पानी पर्नेछ।"
+    },
+    {
+      "source": "নিহোনগো ওয়া ওমোশিরোই তো ওমোইমাসু।",
+      "target": "日本語は面白いと思います।"
+    },
+    {
+      "source": "আমার মনে হয় জাপানি মজার।",
+      "target": "मलाई लाग्छ जापानी रमाइलो छ।"
+    },
+    {
+      "source": "তানাকা সান ওয়া কোনাই তো ওমোইমাসু।",
+      "target": "田中さんは来ないと思います।"
+    },
+    {
+      "source": "আমার মনে হয় তানাকা-সান আসবেন না।",
+      "target": "मलाई लाग्छ तानाका-सान आउनुहुन्न।"
+    },
+    {
+      "source": "কেউ কী বলে/বলেছে তা quote করতে と言います।",
+      "target": "कसले के भन्छ/भन्यो त्यो quote गर्न と言います।"
+    },
+    {
+      "source": "Direct quote হলে 「 」 ব্যবহার করলে পরিষ্কার হয়।",
+      "target": "Direct quote भए 「 」 प्रयोग गरे स्पष्ट हुन्छ।"
+    },
+    {
+      "source": "সেনসেই হা「 শুকুদাই গা আরিমাসু」 তো ইইমাশিতা।",
+      "target": "先生は「宿題があります」と言いました।"
+    },
+    {
+      "source": "শিক্ষক বলেছেন, “হোমওয়ার্ক আছে।”",
+      "target": "शिक्षकले भने, “गृहकार्य छ।”"
+    },
+    {
+      "source": "হাহা ওয়া আশিতা কুরু তো ইইমাশিতা।",
+      "target": "母は明日来ると言いました।"
+    },
+    {
+      "source": "মা বলেছেন কাল আসবেন।",
+      "target": "आमाले भनिन् भोलि आउनेछिन्।"
+    },
+    {
+      "source": "নাম/শব্দকে কী বলা হয় তা বলতে।",
+      "target": "नाम/शब्दलाई के भनिन्छ त्यो भन्न।"
+    },
+    {
+      "source": "私はサミールと言います = আমার নাম সামির।",
+      "target": "私はサミールと言います = मेरो नाम सामिर हो।"
+    },
+    {
+      "source": "ওয়াতাশি ওয়া সামিরু তো ইইমাসু।",
+      "target": "私はサミールと言います।"
+    },
+    {
+      "source": "আমার নাম সামির।",
+      "target": "मेरो नाम सामिर हो।"
+    },
+    {
+      "source": "কোরে ওয়া নিহোনগো দে নানি তো ইইমাসু কা।",
+      "target": "これは日本語で何と言いますか।"
+    },
+    {
+      "source": "এটা জাপানিতে কী বলে?",
+      "target": "यो जापानीमा के भनिन्छ?"
+    },
+    {
+      "source": "তাই না? / ঠিক না? — listener-এর confirmation চাইতে।",
+      "target": "होइन र? / ठीक होइन र? — listener को confirmation माग्न।"
+    },
+    {
+      "source": "Rising intonation হলে confirmation question।",
+      "target": "Rising intonation भए confirmation question।"
+    },
+    {
+      "source": "আশিতা ইয়াসুমিদেশো？",
+      "target": "明日休みでしょう？"
+    },
+    {
+      "source": "কাল ছুটি, তাই না?",
+      "target": "भोलि बिदा, होइन र?"
+    },
+    {
+      "source": "কোনো মিসে ওয়া ইউমেইদেশো？",
+      "target": "この店は有名でしょう？"
+    },
+    {
+      "source": "এই দোকান বিখ্যাত, তাই না?",
+      "target": "यो पसल प्रसिद्ध, होइन र?"
+    },
+    {
+      "source": "adjective/noun opinion-এ plain form ঠিক রাখতে হবে।",
+      "target": "adjective/noun opinion मा plain form ठीक राख्नुपर्छ।"
+    },
+    {
+      "source": "な-adj/noun present affirmative হলে だ লাগে।",
+      "target": "な-adj/noun present affirmative भए だ चाहिन्छ।"
+    },
+    {
+      "source": "কোনো আপুরি ওয়া বেনরিদা তো ওমোইমাসু।",
+      "target": "このアプリは便利だと思います।"
+    },
+    {
+      "source": "আমার মনে হয় এই অ্যাপ সুবিধাজনক।",
+      "target": "मलाई लाग्छ यो एप सुविधाजनक छ।"
+    },
+    {
+      "source": "আনো হিতো ওয়া গাকুসেইদা তো ওমোইমাসু।",
+      "target": "あの人は学生だと思います।"
+    },
+    {
+      "source": "আমার মনে হয় উনি শিক্ষার্থী।",
+      "target": "मलाई लाग्छ उनी विद्यार्थी हुन्।"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "मुखले भन्ने Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "यी वाक्यहरू conversation जस्तो गरेर 3 पटक पढ्नुहोस्।"
+    },
+    {
+      "source": "নিহোনগো ওয়া দোদেসু কা।",
+      "target": "日本語はどうですか।"
+    },
+    {
+      "source": "জাপানি কেমন?",
+      "target": "जापानी कस्तो छ?"
+    },
+    {
+      "source": "ওমোশিরোই তো ওমোইমাসু।",
+      "target": "面白いと思います।"
+    },
+    {
+      "source": "মনে হয় মজার।",
+      "target": "लाग्छ रमाइलो छ।"
+    },
+    {
+      "source": "আশিতা, আমে গা ফুরু তো ওমোইমাসু কা।",
+      "target": "明日、雨が降ると思いますか।"
+    },
+    {
+      "source": "মনে হয় কাল বৃষ্টি হবে?",
+      "target": "लाग्छ भोलि पानी पर्नेछ?"
+    },
+    {
+      "source": "ইইয়ে, ফুরানাই তো ওমোইমাসু।",
+      "target": "いいえ、降らないと思います।"
+    },
+    {
+      "source": "না, মনে হয় হবে না।",
+      "target": "होइन, लाग्छ पर्दैन।"
+    },
+    {
+      "source": "✅ 雨が降ると思います。 — と思います-এর আগে plain form।",
+      "target": "✅ 雨が降ると思います。 — と思います को अगाडि plain form।"
+    },
+    {
+      "source": "✅ 便利だと思います। — な-adj/noun affirmative present হলে だ।",
+      "target": "✅ 便利だと思います। — な-adj/noun affirmative present भए だ।"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "आफैलाई जाँच्नुहोस्"
+    },
+    {
+      "source": "“এটা কী বলে?” = ?",
+      "target": "“यो के भनिन्छ?” = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 21 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 21 • Verified Premium Detailed Version"
+    }
+  ]
+}

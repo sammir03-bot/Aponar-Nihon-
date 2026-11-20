@@ -1,0 +1,442 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n4-grammar-lesson-30-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 30: Preparation：Vてあります ও Vておきます | N4 Grammar",
+      "target": "Lesson 30: Preparation：Vてあります 与 Vておきます | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "跳转至主要内容"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 30 · ভিত্তি বিস্তার",
+      "target": "Lesson 30 · 基础扩展"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "所有 Lesson"
+    },
+    {
+      "source": "ভিত্তি বিস্তার",
+      "target": "夯实基础"
+    },
+    {
+      "source": "ধাপ ১ · 26–30",
+      "target": "步骤 1 · 26–30"
+    },
+    {
+      "source": "Preparation：Vてあります ও Vておきます",
+      "target": "Preparation：Vてあります 与 Vておきます"
+    },
+    {
+      "source": "কোনো উদ্দেশ্যে করে রাখা ফল, ভবিষ্যতের জন্য প্রস্তুতি, সাময়িক ব্যবস্থা এবং ‘এখনো করিনি’ প্রকাশ।",
+      "target": "表达为某目的做好的结果、为将来的准备、临时安排和“还没做”。"
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 个详细 grammar block"
+    },
+    {
+      "source": "9টি Japanese example",
+      "target": "9 个 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 个带解释的 practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline、mobile 和 print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "隐藏 あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "尚未完成"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ 标记完成"
+    },
+    {
+      "source": "Lesson 30 · লক্ষ্য",
+      "target": "Lesson 30 · 目标"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "学完本 Lesson 后能做到"
+    },
+    {
+      "source": "Lesson 29-এ ফলের অবস্থা agent-কে বাদ দিয়ে বলা হয়েছিল। Lesson 30-এ ফলের পেছনে মানুষের উদ্দেশ্য যোগ হয়: 会議のために資料がコピーしてあります—মিটিংয়ের জন্য কেউ কপি করে রেখেছে। আর কাজটি এখন/ভবিষ্যতে প্রস্তুতি হিসেবে করলে ておきます।",
+      "target": "Lesson 29 中结果状态不提 agent。Lesson 30 中结果背后加上人的目的：会議のために資料がコピーしてあります——有人为会议复印好了。而把工作作为现在/将来的准备来做用 ておきます。"
+    },
+    {
+      "source": "てあります-এর intentional result state চিনবেন",
+      "target": "能认出 てあります 的 intentional result state"
+    },
+    {
+      "source": "intransitive ています এবং transitive てあります তুলনা করবেন",
+      "target": "能比较 intransitive ています 和 transitive てあります"
+    },
+    {
+      "source": "প্রস্তুতি ও ‘যেমন আছে তেমন রাখা’—ておきます-এর দুই কাজ বুঝবেন",
+      "target": "能理解 ておきます 的两个作用：准备和“保持原样”"
+    },
+    {
+      "source": "まだVていません দিয়ে অসম্পন্ন কাজ স্বাভাবিকভাবে বলবেন",
+      "target": "能用 まだVていません 自然地说未完成的工作"
+    },
+    {
+      "source": "কেউ উদ্দেশ্য নিয়ে কাজ করেছে; তার ফল এখন প্রস্তুত অবস্থায় আছে",
+      "target": "有人带着目的做了工作；其结果现在处于准备好的状态"
+    },
+    {
+      "source": "গঠন",
+      "target": "构成"
+    },
+    {
+      "source": "ধরন",
+      "target": "类型"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "例句"
+    },
+    {
+      "source": "ফলের বস্তু",
+      "target": "结果的物品"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "详细解释"
+    },
+    {
+      "source": "てあります-এ verb transitive হলেও মূল object を থেকে が/は হয়, কারণ বাক্যের focus কাজকারী নয়—প্রস্তুত ফল। 会議室にいすが並べてあります = কেউ চেয়ার সাজিয়ে রেখেছে।",
+      "target": "てあります 中 verb 虽是 transitive，原 object 从 を 变 が/は，因为句子的 focus 不是做事者——是准备好的结果。会議室にいすが並べてあります = 有人把椅子排好了。"
+    },
+    {
+      "source": "তে-আছে ফলটি সাধারণত কোনো উদ্দেশ্যে: 旅行の前にホテルが予約してあります। Agent সাধারণত বলা হয় না, কারণ প্রস্তুতি-অবস্থাই গুরুত্বপূর্ণ।",
+      "target": "结果通常为某个目的：旅行の前にホテルが予約してあります。Agent 通常不说，因为准备状态才重要。"
+    },
+    {
+      "source": "自動詞＋ています শুধু অবস্থা বলে; 他動詞＋てあります intentional preparation বোঝায়: 窓が開いています (খোলা আছে) বনাম 窓が開けてあります (কেউ উদ্দেশ্য করে খুলে রেখেছে)।",
+      "target": "自動詞＋ています 只说状态；他動詞＋てあります 表示 intentional preparation：窓が開いています（开着）对比 窓が開けてあります（有人有目的地打开着）。"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "要记住的"
+    },
+    {
+      "source": "Transitive verb ব্যবহার করুন: 並べる, 置く, 書く, 予約する, 開ける।",
+      "target": "使用 Transitive verb：並べる、置く、書く、予約する、開ける。"
+    },
+    {
+      "source": "Object marker সাধারণত が/は: 料理が作ってあります।",
+      "target": "Object marker 通常 が/は：料理が作ってあります。"
+    },
+    {
+      "source": "টেবিলের ওপর নথিগুলো রাখা আছে (কেউ প্রস্তুত করে রেখেছে)।",
+      "target": "桌子上放着文件（有人准备好了）。"
+    },
+    {
+      "source": "হোটেল ইতিমধ্যে বুক করে রাখা হয়েছে।",
+      "target": "酒店已经订好了。"
+    },
+    {
+      "source": "বোর্ডে আজকের সূচি লেখা আছে।",
+      "target": "板上写着今天的日程。"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ 错误"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ 正确"
+    },
+    {
+      "source": "কেন:",
+      "target": "为什么："
+    },
+    {
+      "source": "てあります-এর আগে transitive 開ける; 開く intransitive।",
+      "target": "てあります 前用 transitive 開ける；開く 是 intransitive。"
+    },
+    {
+      "source": "Vておきます：আগাম প্রস্তুতি",
+      "target": "Vておきます：提前准备"
+    },
+    {
+      "source": "ভবিষ্যতের কোনো কাজ/পরিস্থিতির জন্য আগে থেকে করে রাখা",
+      "target": "为将来的工作/情况提前做好"
+    },
+    {
+      "source": "প্রস্তুতি",
+      "target": "准备"
+    },
+    {
+      "source": "ておきます কাজ করার সিদ্ধান্ত বা পদক্ষেপকে focus করে; てあります তার তৈরি ফলের অবস্থাকে focus করে। 会議の前に資料をコピーしておきます = মিটিংয়ের আগে কপি করে রাখব। 資料がコピーしてあります = কপি করা অবস্থায় প্রস্তুত আছে।",
+      "target": "ておきます focus 做工作的决定或步骤；てあります focus 其做好的结果状态。会議の前に資料をコピーしておきます = 会议前复印好。資料がコピーしてあります = 处于复印好的准备状态。"
+    },
+    {
+      "source": "প্রস্তুতির উদ্দেশ্য কথায় স্পষ্ট বা অনুমেয় থাকে: 試験の前に復習しておきます।",
+      "target": "准备的目的在话中明确或可推测：試験の前に復習しておきます。"
+    },
+    {
+      "source": "এখানে normal object を থাকে: 資料をコピーしておきます।",
+      "target": "这里有 normal object を：資料をコピーしておきます。"
+    },
+    {
+      "source": "কথ্য ভাষায় ておきます→ときます: 買っておく→買っとく; পরীক্ষায় পূর্ণ রূপ চিনুন।",
+      "target": "口语中 ておきます→ときます：買っておく→買っとく；考试认出完整形式。"
+    },
+    {
+      "source": "ভ্রমণের আগে মানচিত্র ডাউনলোড করে রাখব।",
+      "target": "旅行前下载好地图。"
+    },
+    {
+      "source": "অতিথি আসবেন বলে ঘর আগেই পরিষ্কার করে রেখেছি।",
+      "target": "因为客人要来，提前把房间打扫好了。"
+    },
+    {
+      "source": "ておく-এর কাজের object を; が＋てある হলো ফলের অবস্থা।",
+      "target": "ておく 的工作 object 用 を；が＋てある 是结果的状态。"
+    },
+    {
+      "source": "Vておきます：যেমন আছে তেমন রাখা",
+      "target": "Vておきます：保持原样"
+    },
+    {
+      "source": "পরে প্রয়োজন/সুবিধার জন্য বর্তমান অবস্থা বদল না করা",
+      "target": "为了以后需要/方便，不改变现在状态"
+    },
+    {
+      "source": "অবস্থা বজায়",
+      "target": "保持状态"
+    },
+    {
+      "source": "সবসময় ‘আগে কাজ করা’ নয়। দরজা খোলা রেখে দেওয়া, জিনিস সরিয়ে না রাখা, আলো জ্বালিয়ে রাখা—বর্তমান অবস্থা বজায় রাখতেও ておきます।",
+      "target": "不总是“提前做工作”。让门开着、东西不收起来、灯亮着——保持现在状态也用 ておきます。"
+    },
+    {
+      "source": "このままにしておいてください = এভাবেই রেখে দিন। そのまま／このまま প্রায়ই clue।",
+      "target": "このままにしておいてください = 就这样放着。そのまま／このまま 常是 clue。"
+    },
+    {
+      "source": "Vておいてください মানে ‘করে/রেখে দিন’; context অনুযায়ী preparation বা unchanged state।",
+      "target": "Vておいてください 是“请做好/放着”；根据 context 是 preparation 或 unchanged state。"
+    },
+    {
+      "source": "গরম বলে জানালাটি খোলা রাখুন।",
+      "target": "因为热，把窗户开着。"
+    },
+    {
+      "source": "বাক্সটি লাগবে, তাই ওখানেই রেখে দিন।",
+      "target": "箱子要用，所以就放在那里。"
+    },
+    {
+      "source": "পরে ব্যবহার করতে বর্তমান অবস্থায় রাখতে চাইলে そのまま＋ておく।",
+      "target": "想保持现在状态以后用时 そのまま＋ておく。"
+    },
+    {
+      "source": "এখন পর্যন্ত কাজটি হয়নি, তবে হওয়ার সম্ভাবনা/প্রত্যাশা আছে",
+      "target": "到现在工作还没做，但有做的可能性/期待"
+    },
+    {
+      "source": "অসম্পন্ন",
+      "target": "未完成"
+    },
+    {
+      "source": "まだ＋negative simple form-ও হতে পারে, কিন্তু まだVていません বিশেষভাবে ‘এখনো সম্পন্ন হয়নি’ বোঝায়। もうVました? প্রশ্নের স্বাভাবিক negative answer: いいえ、まだVていません。",
+      "target": "まだ＋negative simple form 也可以，但 まだVていません 特别表示“还没完成”。もうVましたか 的自然 negative answer：いいえ、まだVていません。"
+    },
+    {
+      "source": "いいえ、Vませんでした বললে নির্দিষ্ট অতীতে করিনি; まだVていません বললে বর্তমান মুহূর্ত পর্যন্ত অসম্পন্ন।",
+      "target": "いいえ、Vませんでした 是在特定过去没做；まだVていません 是到现在这一刻未完成。"
+    },
+    {
+      "source": "রিপোর্টটি এখনো লিখিনি।",
+      "target": "报告还没写。"
+    },
+    {
+      "source": "দুপুরের খাবার এখনো খাইনি।",
+      "target": "午饭还没吃。"
+    },
+    {
+      "source": "もう = ইতিমধ্যে; ‘এখনো নয়’ negative-এর সঙ্গে まだ।",
+      "target": "もう = 已经；“还没”与 negative 连用 まだ。"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "一目了然的差别"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "什么情况用哪个？"
+    },
+    {
+      "source": "রূপ",
+      "target": "形式"
+    },
+    {
+      "source": "Particle/উদাহরণ",
+      "target": "Particle/例句"
+    },
+    {
+      "source": "স্বাভাবিক result state",
+      "target": "自然的 result state"
+    },
+    {
+      "source": "উদ্দেশ্য করে তৈরি result",
+      "target": "有目的地做好的 result"
+    },
+    {
+      "source": "এখন/আগে করা প্রস্তুতিমূলক কাজ",
+      "target": "现在/提前做的准备工作"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "实际对话"
+    },
+    {
+      "source": "মিটিংয়ের প্রস্তুতি",
+      "target": "会议准备"
+    },
+    {
+      "source": "মিটিংয়ের প্রস্তুতি হয়েছে?",
+      "target": "会议准备好了吗？"
+    },
+    {
+      "source": "হ্যাঁ। নথি টেবিলের ওপর রাখা আছে।",
+      "target": "好了。文件放在桌子上。"
+    },
+    {
+      "source": "পানীয়?",
+      "target": "饮料呢？"
+    },
+    {
+      "source": "এখনো কিনিনি। এখন আগেভাগে কিনে রাখছি।",
+      "target": "还没买。现在提前买好。"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "自我检查"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice 和带解释的答案"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "先在笔记本上写答案，然后点击问题核对答案和原因。"
+    },
+    {
+      "source": "1. ‘দেয়ালে মানচিত্র টাঙানো আছে (কেউ টাঙিয়ে রেখেছে)’ বলুন।",
+      "target": "1. 说“墙上挂着地图（有人挂好了）”。"
+    },
+    {
+      "source": "2. ‘ভ্রমণের আগে টিকিট কিনে রাখব’ বলুন।",
+      "target": "2. 说“旅行前买好票”。"
+    },
+    {
+      "source": "প্রস্তুতির কাজ: object を＋Vておきます।",
+      "target": "准备工作：object を＋Vておきます。"
+    },
+    {
+      "source": "3. শূন্যস্থান: 窓が（開いて／開けて）あります。",
+      "target": "3. 填空：窓が（開いて／開けて）あります。"
+    },
+    {
+      "source": "てあります-এর আগে transitive 開ける।",
+      "target": "てあります 前用 transitive 開ける。"
+    },
+    {
+      "source": "4. ‘হোমওয়ার্ক এখনো করিনি’ বলুন।",
+      "target": "4. 说“作业还没做”。"
+    },
+    {
+      "source": "বর্তমান পর্যন্ত অসম্পন্ন: まだVていません।",
+      "target": "到现在未完成：まだVていません。"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "一句话 Master Key"
+    },
+    {
+      "source": "ফল প্রস্তুত অবস্থায় আছে → NがVてあります; ভবিষ্যতের জন্য কাজটি করে রাখব → NをVておきます; এখন পর্যন্ত হয়নি → まだVていません।",
+      "target": "结果处于准备好的状态 → NがVてあります；为将来把工作做好 → NをVておきます；到现在还没做 → まだVていません。"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "可信参考"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "大纲与核对"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "这个独立的中文 lesson 结合 Minna no Nihongo II 的 lesson sequence、official JLPT N4 scope 和 Japan Foundation 的 learner resources 制作。例句和中文解释均为新写。"
+    },
+    {
+      "source": "← আগের Lesson 29",
+      "target": "← 上一个 Lesson 29"
+    },
+    {
+      "source": "Result State：Vています ও Vてしまいます",
+      "target": "Result State：Vています 与 Vてしまいます"
+    },
+    {
+      "source": "পরের Lesson 31 →",
+      "target": "下一个 Lesson 31 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson 索引"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "学习目标"
+    },
+    {
+      "source": "2. Vておきます：আগাম প্রস্তুতি",
+      "target": "2. Vておきます：提前准备"
+    },
+    {
+      "source": "3. Vておきます：যেমন আছে তেমন রাখা",
+      "target": "3. Vておきます：保持原样"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "差别表"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "会话"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress 加载中…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "为学习者免费提供的详细中文 self-study edition。"
+    }
+  ]
+}

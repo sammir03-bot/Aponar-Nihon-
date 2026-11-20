@@ -1,0 +1,254 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "my",
+  "page": "n5-grammar-lesson-14-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 14 | て-form・てください・ています・ましょうか | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 14 | て-form・てください・ています・ましょうか | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "অনুরোধ করা, এখন কী চলছে বলা, সাহায্য প্রস্তাব করা",
+      "target": "တောင်းဆိုခြင်း, အခု ဘာ ဖြစ်နေသည် ပြောခြင်း, အကူအညီ ကမ်းလှမ်းခြင်း"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar စတင်"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "ယနေ့၏ Learning Goal"
+    },
+    {
+      "source": "て-form বানানো",
+      "target": "て-form ဖွဲ့ခြင်း"
+    },
+    {
+      "source": "অনুরোধ করা",
+      "target": "တောင်းဆိုခြင်း"
+    },
+    {
+      "source": "চলমান কাজ বলা",
+      "target": "ဖြစ်နေသော အလုပ် ပြောခြင်း"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "လွယ်ကူသော ရှင်းပြချက် + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "pattern တိုင်းကို အရင် structure ကြည့်၍၊ ထို့နောက် example ကို နှုတ်ဖြင့် ပြောပါ။ Audio button နှိပ်လျှင် Japanese sentence ကြားနိုင်မည်။"
+    },
+    {
+      "source": "て-form জাপানির সবচেয়ে গুরুত্বপূর্ণ verb form; request, connection, ongoing action—সব জায়গায় লাগে।",
+      "target": "て-form မှာ ဂျပန်၏ အရေးကြီးဆုံး verb form; request, connection, ongoing action—နေရာတိုင်းမှာ လိုသည်။"
+    },
+    {
+      "source": "Group 1/2/3 অনুযায়ী form বদলায়: 書きます→書いて, 飲みます→飲んで, 来ます→来て।",
+      "target": "Group 1/2/3 အရ form ပြောင်းသည်: 書きます→書いて, 飲みます→飲んで, 来ます→来て။"
+    },
+    {
+      "source": "কাকিমাসু → কাইতে",
+      "target": "書きます → 書いて"
+    },
+    {
+      "source": "লিখি → লিখে",
+      "target": "ရေးသည် → ရေးပြီး"
+    },
+    {
+      "source": "নোমিমাসু → নোনদে",
+      "target": "飲みます → 飲んで"
+    },
+    {
+      "source": "পান করি → পান করে",
+      "target": "သောက်သည် → သောက်ပြီး"
+    },
+    {
+      "source": "কিমাসু → কিতে",
+      "target": "来ます → 来て"
+    },
+    {
+      "source": "আসি → এসে",
+      "target": "လာသည် → လာပြီး"
+    },
+    {
+      "source": "ভদ্রভাবে “করুন/দয়া করে করুন” বলতে।",
+      "target": "ယဉ်ကျေးစွာ “လုပ်ပါ/ကျေးဇူးပြု၍ လုပ်ပါ” ပြောရန်။"
+    },
+    {
+      "source": "instructions, request, classroom, shop—সব জায়গায় খুব দরকার।",
+      "target": "instructions, request, classroom, shop—နေရာတိုင်းမှာ အလွန် လိုသည်။"
+    },
+    {
+      "source": "কোকো নি নামায়ে ও কাইতেকুদাসাই।",
+      "target": "ここに名前を書いてください။"
+    },
+    {
+      "source": "এখানে নাম লিখুন।",
+      "target": "ဤနေရာမှာ အမည် ရေးပါ။"
+    },
+    {
+      "source": "চোত্তো মাত্তেকুদাসাই।",
+      "target": "ちょっと待ってください။"
+    },
+    {
+      "source": "একটু অপেক্ষা করুন।",
+      "target": "နည်းနည်း စောင့်ပါ။"
+    },
+    {
+      "source": "মোইচিদো ইত্তেকুদাসাই।",
+      "target": "もう一度言ってください။"
+    },
+    {
+      "source": "আরেকবার বলুন।",
+      "target": "နောက်တစ်ကြိမ် ပြောပါ။"
+    },
+    {
+      "source": "এখন কাজ চলছে বোঝাতে।",
+      "target": "အခု အလုပ် ဖြစ်နေသည် နားလည်ရန်။"
+    },
+    {
+      "source": "今 + Vています = এখন করছি।",
+      "target": "今 + Vています = အခု လုပ်နေသည်။"
+    },
+    {
+      "source": "ইমা, নিহোনগো ও বেনকিয়ো শিতেইমাসু।",
+      "target": "今、日本語を勉強しています။"
+    },
+    {
+      "source": "এখন জাপানি পড়ছি।",
+      "target": "အခု ဂျပန်စာ လေ့လာနေသည်။"
+    },
+    {
+      "source": "মিরা সান ওয়া দেনওয়া ও কাকেতেইমাসু।",
+      "target": "ミラーさんは電話をかけています။"
+    },
+    {
+      "source": "মিলার-সান ফোন করছেন।",
+      "target": "မီလာ-ဆန် ဖုန်း ခေါ်နေသည်။"
+    },
+    {
+      "source": "“আমি কি করে দেব?” — সাহায্য offer করতে।",
+      "target": "“ကျွန်တော် လုပ်ပေးရမလား?” — အကူအညီ offer လုပ်ရန်။"
+    },
+    {
+      "source": "শুনতে ভদ্র ও helpful লাগে।",
+      "target": "ကြားရသည်မှာ ယဉ်ကျေးပြီး helpful ဖြစ်သည်။"
+    },
+    {
+      "source": "মাদো ও আকেমাশো কা।",
+      "target": "窓を開けましょうか။"
+    },
+    {
+      "source": "জানালা খুলে দেব?",
+      "target": "ပြတင်းပေါက် ဖွင့်ပေးရမလား?"
+    },
+    {
+      "source": "নিমোৎসু ও মোচিমাশো কা।",
+      "target": "荷物を持ちましょうか။"
+    },
+    {
+      "source": "ব্যাগ/মালপত্র ধরে দেব?",
+      "target": "အိတ်/ပစ္စည်း ကိုင်ပေးရမလား?"
+    },
+    {
+      "source": "বৃষ্টি, বাতাসের মতো প্রাকৃতিক ঘটনা বা চোখের সামনে চলমান অবস্থা বললে subject-কে が দিয়ে চিহ্নিত করা হয়।",
+      "target": "မိုး, လေ ကဲ့သို့ သဘာဝ ဖြစ်ရပ် သို့မဟုတ် မျက်စိရှေ့ ဖြစ်နေသော အခြေအနေ ပြောလျှင် subject ကို が ဖြင့် မှတ်သားသည်။"
+    },
+    {
+      "source": "এখানে が হলো ঘটনার subject marker; action এখন চলছে বলে Vています।",
+      "target": "ဤနေရာမှာ が မှာ ဖြစ်ရပ်၏ subject marker; action အခု ဖြစ်နေသောကြောင့် Vています။"
+    },
+    {
+      "source": "আমে গা ফুত্তেইমাসু।",
+      "target": "雨が降っています။"
+    },
+    {
+      "source": "বৃষ্টি হচ্ছে।",
+      "target": "မိုး ရွာနေပါတယ်။"
+    },
+    {
+      "source": "কাজে গা ফুইতেইমাসু।",
+      "target": "風が吹いています။"
+    },
+    {
+      "source": "বাতাস বইছে।",
+      "target": "လေ တိုက်နေသည်။"
+    },
+    {
+      "source": "ইউকি গা ফুত্তেইমাসু।",
+      "target": "雪が降っています။"
+    },
+    {
+      "source": "তুষার পড়ছে।",
+      "target": "နှင်း ကျနေသည်။"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "နှုတ်ဖြင့် ပြောသော Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "ဤဝါကျများကို interview/classroom conversation လိုမျိုး 3 ကြိမ် ဖတ်ပါ။"
+    },
+    {
+      "source": "সুমিমাসেন, মোইচিদো ইত্তেকুদাসাই।",
+      "target": "すみません、もう一度言ってください။"
+    },
+    {
+      "source": "মাফ করবেন, আরেকবার বলুন।",
+      "target": "ခွင့်လွှတ်ပါ, နောက်တစ်ကြိမ် ပြောပါ။"
+    },
+    {
+      "source": "ইমা, নানি ও শিতেইমাসু কা।",
+      "target": "今、何をしていますか။"
+    },
+    {
+      "source": "এখন কী করছেন?",
+      "target": "အခု ဘာ လုပ်နေသလဲ?"
+    },
+    {
+      "source": "নিহোনগো ও বেনকিয়ো শিতেইমাসু।",
+      "target": "日本語を勉強しています။"
+    },
+    {
+      "source": "জাপানি পড়ছি।",
+      "target": "ဂျပန်စာ ဖတ်နေပါတယ်။"
+    },
+    {
+      "source": "তেৎসুদাইমাশো কা।",
+      "target": "手伝いましょうか။"
+    },
+    {
+      "source": "সাহায্য করে দেব?",
+      "target": "ကူညီပေးရမလား?"
+    },
+    {
+      "source": "✅ 勉強していますか。 — polite form practice করুন।",
+      "target": "✅ 勉強していますか。 — polite form practice လုပ်ပါ။"
+    },
+    {
+      "source": "❌ 荷物を持ちますか (offer হিসেবে awkward)",
+      "target": "❌ 荷物を持ちますか (offer အနေဖြင့် awkward)"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "ကိုယ့်ကိုယ်ကို စစ်ဆေးပါ"
+    },
+    {
+      "source": "আমি কি জানালা খুলে দেব? = ?",
+      "target": "ကျွန်တော် ပြတင်းပေါက် ဖွင့်ပေးရမလား? = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 14 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 14 • Verified Premium Detailed Version"
+    }
+  ]
+}

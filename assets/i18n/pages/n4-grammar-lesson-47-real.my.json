@@ -1,0 +1,426 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "my",
+  "page": "n4-grammar-lesson-47-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "ပင်မ အကြောင်းအရာသို့ သွားရန်"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 47 · সময় ও Keigo",
+      "target": "Lesson 47 · အချိန်နှင့် Keigo"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Lesson အားလုံး"
+    },
+    {
+      "source": "সময় ও Keigo",
+      "target": "အချိန်နှင့် Keigo"
+    },
+    {
+      "source": "ধাপ ৫ · 46–50",
+      "target": "အဆင့် 5 · 46–50"
+    },
+    {
+      "source": "শোনা তথ্য report করা, প্রমাণ দেখে inference করা এবং শব্দ/গন্ধ/স্বাদ/শারীরিক অনুভূতি ভাষায় ধরা।",
+      "target": "ကြားသော အချက်အလက် report လုပ်ခြင်း, အထောက်အထား မြင်၍ inference လုပ်ခြင်းနှင့် အသံ/အနံ့/အရသာ/ကိုယ်ခန္ဓာ ခံစားမှုကို စကားဖြင့် ဖမ်းယူခြင်း။"
+    },
+    {
+      "source": "3টি বিস্তারিত grammar block",
+      "target": "အသေးစိတ် grammar block 3 ခု"
+    },
+    {
+      "source": "12টি Japanese example",
+      "target": "Japanese example 12 ခု"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "ရှင်းပြချက်ပါသော practice 4 ခု"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile နှင့် print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "あ Reading ဖျောက်ပါ"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "မပြီးသေးပါ"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ ပြီးဆုံးအောင် လုပ်ပါ"
+    },
+    {
+      "source": "Lesson 47 · লক্ষ্য",
+      "target": "Lesson 47 · ရည်မှန်းချက်"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "ဤ Lesson အဆုံးမှာ လုပ်နိုင်မည့်အရာများ"
+    },
+    {
+      "source": "Lesson 43-এর そう ‘দেখে মনে হয়’; Lesson 47-এর そう ‘শুনেছি’। Form-ই সবচেয়ে নির্ভরযোগ্য clue: 降りそう = আকাশ দেখে হবে; 降るそう = কারো কাছে শুনেছি হবে। ようです-এ speaker একাধিক evidence থেকে নিজের inference করেন।",
+      "target": "Lesson 43 ၏ そう က ‘မြင်၍ ထင်ရသည်’; Lesson 47 ၏ そう က ‘ကြားခဲ့သည်’ ဖြစ်သည်။ Form ကိုယ်တိုင်က အယုံကြည်ရဆုံး clue: 降りそう = ကောင်းကင် မြင်၍ ဖြစ်မည်; 降るそう = တစ်စုံတစ်ယောက်ထံမှ ကြား၍ ဖြစ်မည်။ ようです မှာ speaker က evidence များစွာမှ ကိုယ့် inference လုပ်သည်။"
+    },
+    {
+      "source": "plain form অক্ষত রেখে hearsay そうです তৈরি করবেন",
+      "target": "plain form မပြောင်းဘဲ ထား၍ hearsay そうです ဖန်တီးနိုင်မည်"
+    },
+    {
+      "source": "source＋によると দিয়ে তথ্যের উৎস জানাবেন",
+      "target": "source＋によると ဖြင့် အချက်အလက်၏ အရင်းအမြစ် အသိပေးနိုင်မည်"
+    },
+    {
+      "source": "ようです-এর verb/adjective/noun সংযোগ আয়ত্ত করবেন",
+      "target": "ようです ၏ verb/adjective/noun ချိတ်ဆက်မှုကို ကျွမ်းကျင်နိုင်မည်"
+    },
+    {
+      "source": "〜がします দিয়ে ইন্দ্রিয়গত অনুভূতি বলবেন",
+      "target": "〜がします ဖြင့် အာရုံခံစားမှု ပြောနိုင်မည်"
+    },
+    {
+      "source": "অন্যের কথা, খবর, ঘোষণা বা পড়া source অনুযায়ী ‘শুনেছি/জানা গেছে’",
+      "target": "အခြားသူ၏ စကား, သတင်း, ကြေညာချက် သို့မဟုတ် ဖတ်သော source အရ ‘ကြားခဲ့သည်/သိရသည်’"
+    },
+    {
+      "source": "গঠন",
+      "target": "ဖွဲ့စည်းပုံ"
+    },
+    {
+      "source": "ধরন",
+      "target": "အမျိုးအစား"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "ဥပမာ"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "ကြိယာ/い-A"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-နာမဝိသေသန"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "နာမ်"
+    },
+    {
+      "source": "普通形 অক্ষত＋そう",
+      "target": "普通形 မပြောင်းဘဲ＋そう"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "အသေးစိတ် ရှင်းပြချက်"
+    },
+    {
+      "source": "Speaker তথ্যটির source নন; শুধু report করেন। Source দিলে Nによると/の話では: 天気予報によると、明日は雨だそうです।",
+      "target": "Speaker က အချက်အလက်၏ source မဟုတ်ပါ; report သာလျှင် လုပ်သည်။ Source ပေးလျှင် Nによると/の話では: 天気予報によると、明日は雨だそうです。"
+    },
+    {
+      "source": "Hearsay そう নিজে past হয় না; reported content-এর tense বদলায়: 来たそうです = শুনেছি এসেছে। そうでした বললে সাধারণত অন্য grammar/প্রসঙ্গ হয়।",
+      "target": "Hearsay そう ကိုယ်တိုင် past မဖြစ်ပါ; reported content ၏ tense ပြောင်းသည်: 来たそうです = လာခဲ့သည်ဟု ကြားခဲ့သည်။ そうでした ပြောလျှင် အများအားဖြင့် အခြား grammar/နောက်ခံ ဖြစ်သည်။"
+    },
+    {
+      "source": "Appearance-এর মতো stem কাটবেন না। おいしいそうです = শুনেছি সুস্বাদু; おいしそうです = দেখে সুস্বাদু।",
+      "target": "Appearance ကဲ့သို့ stem မဖြတ်ပါနှင့်။ おいしいそうです = အရသာရှိဟု ကြားခဲ့သည်; おいしそうです = မြင်၍ အရသာရှိ ထင်ရသည်။"
+    },
+    {
+      "source": "な-A/N-এ だ থাকে—Lesson 32/40-এর かもしれない/かどうか-এর বিপরীত নিয়ম।",
+      "target": "な-A/N မှာ だ ရှိသည်—Lesson 32/40 ၏ かもしれない/かどうか ၏ ဆန့်ကျင်ဘက် စည်းမျဉ်း ဖြစ်သည်။"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "မှတ်ထားရမည့်အရာ"
+    },
+    {
+      "source": "Hearsay-এ negative: おいしくないそうです; appearance negative: おいしくなさそうです।",
+      "target": "Hearsay မှာ negative: おいしくないそうです; appearance negative: おいしくなさそうです。"
+    },
+    {
+      "source": "আবহাওয়ার পূর্বাভাস অনুযায়ী কাল তুষার পড়বে শুনেছি।",
+      "target": "ရာသီဥတု ခန့်မှန်းချက်အရ မနက်ဖြန် နှင်း ကျမည်ဟု ကြားခဲ့သည်။"
+    },
+    {
+      "source": "শুনেছি তানাকা আগামী মাসে বিয়ে করবেন।",
+      "target": "Tanaka က လာမည့်လမှာ လက်ထပ်မည်ဟု ကြားခဲ့သည်။"
+    },
+    {
+      "source": "শুনেছি ওই দোকানের খাবার সুস্বাদু নয়।",
+      "target": "ထို ဆိုင်၏ အစားအစာ အရသာမရှိဟု ကြားခဲ့သည်။"
+    },
+    {
+      "source": "শুনেছি আগামী সোমবার ছুটি।",
+      "target": "လာမည့် တနင်္လာ ပိတ်ရက်ဟု ကြားခဲ့သည်။"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ အမှား"
+    },
+    {
+      "source": "ニュースによると、社長は元気そうです。（শোনা তথ্য report করতে）",
+      "target": "ニュースによると、社長は元気そうです。（ကြားသော အချက်အလက် report လုပ်ရန်)"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ အမှန်"
+    },
+    {
+      "source": "কেন:",
+      "target": "ဘာကြောင့်လဲ:"
+    },
+    {
+      "source": "Source report + な-A: 元気だ＋そう। 元気そう = দেখে সুস্থ মনে হয়।",
+      "target": "Source report + な-A: 元気だ＋そう。 元気そう = မြင်၍ ကျန်းမာ ထင်ရသည်။"
+    },
+    {
+      "source": "দেখা/শোনা/চিহ্ন/তথ্য মিলিয়ে speaker-এর inference—‘মনে হচ্ছে/যেন’",
+      "target": "မြင်/ကြား/လက္ခဏာ/အချက်အလက် ပေါင်းစပ်၍ speaker ၏ inference—‘ထင်ရသည်/ကဲ့သို့’"
+    },
+    {
+      "source": "Speaker evidence থেকে conclusion করেন, source-এর বাক্য report করেন না। 電気が消えています。田中さんはもう帰ったようです = আলো নিভে আছে; মনে হয় তানাকা চলে গেছেন।",
+      "target": "Speaker က evidence မှ conclusion လုပ်သည်, source ၏ စကားကို report မလုပ်ပါ။ 電気が消えています。田中さんはもう帰ったようです = မီး ငြိမ်းနေသည်; Tanaka ပြန်သွားပြီ ထင်ရသည်။"
+    },
+    {
+      "source": "Appearance そう সাধারণত সরাসরি বাহ্যিক impression; よう একাধিক clue/indirect evidence এবং noun comparison-ও পারে। 学生のようです = ছাত্র মনে হচ্ছে; noun-এর সঙ্গে appearance そう সরাসরি হয় না।",
+      "target": "Appearance そう က အများအားဖြင့် တိုက်ရိုက် အပြင် impression; よう က clue များစွာ/indirect evidence နှင့် noun comparison လည်း ဖြစ်နိုင်သည်။ 学生のようです = ကျောင်းသား ထင်ရသည်; noun နှင့် appearance そう က တိုက်ရိုက် မဖြစ်ပါ။"
+    },
+    {
+      "source": "নিজের নিশ্চিত সরাসরি অনুভূতিতে plain statement; uncertainty থাকলে ようです।",
+      "target": "ကိုယ့် သေချာသော တိုက်ရိုက် ခံစားမှုမှာ plain statement; uncertainty ရှိလျှင် ようです。"
+    },
+    {
+      "source": "আলো নিভে আছে। মনে হয় কেউ নেই।",
+      "target": "မီး ငြိမ်းနေသည်။ ဘယ်သူမှ မရှိဘူး ထင်ရသည်။"
+    },
+    {
+      "source": "বাইরে ভেজা। মনে হয় গত রাতে বৃষ্টি হয়েছে।",
+      "target": "အပြင်ဘက် စိုနေသည်။ မနေ့ညက မိုး ရွာခဲ့ပုံ ရသည်။"
+    },
+    {
+      "source": "লোকটি এই কোম্পানির কর্মী মনে হচ্ছে।",
+      "target": "လူက ဤ ကုမ္ပဏီ၏ ဝန်ထမ်း ထင်ရသည်။"
+    },
+    {
+      "source": "তিনি জাপানির মতো জাপানি বলেন।",
+      "target": "သူက ဂျပန်လူမျိုး ကဲ့သို့ ဂျပန်စကား ပြောသည်။"
+    },
+    {
+      "source": "শব্দ, কণ্ঠ, স্বাদ বা গন্ধ অনুভূত হচ্ছে",
+      "target": "အသံ, အသံချို, အရသာ သို့မဟုတ် အနံ့ ခံစားရသည်"
+    },
+    {
+      "source": "শব্দ/কণ্ঠ",
+      "target": "အသံ/အသံချို"
+    },
+    {
+      "source": "গন্ধ",
+      "target": "အနံ့"
+    },
+    {
+      "source": "স্বাদ",
+      "target": "အရသာ"
+    },
+    {
+      "source": "শরীর/ধারণা",
+      "target": "ကိုယ်ခန္ဓာ/အယူအဆ"
+    },
+    {
+      "source": "する এখানে ‘করা’ নয়; sensory impression ‘আসা/লাগা’। উৎস/ধরন が subject: いいにおいがします।",
+      "target": "する က ဤနေရာမှာ ‘လုပ်ခြင်း’ မဟုတ်; sensory impression ‘လာခြင်း/ခံစားရခြင်း’ ဖြစ်သည်။ အရင်းအမြစ်/အမျိုးအစား က が subject: いいにおいがします。"
+    },
+    {
+      "source": "聞こえます নির্দিষ্ট শব্দ শ্রবণসীমায় আসে; 音がします speaker একটি sound impression লক্ষ্য করছেন। দুটিই অনেক ক্ষেত্রে সম্ভব, nuance ভিন্ন।",
+      "target": "聞こえます က သတ်မှတ်ထားသော အသံ ကြားနိုင်သော အတိုင်းအတာမှာ လာသည်; 音がします က speaker က sound impression တစ်ခုကို သတိပြုနေသည်။ နှစ်မျိုးလုံး အခြေအနေများစွာမှာ ဖြစ်နိုင်သော်လည်း nuance ကွဲပြားသည်။"
+    },
+    {
+      "source": "Taste/smell source Nの: このお茶は果物の味がします। Adjective সরাসরি predicate-ও সম্ভব: このスープはしょっぱいです (নিশ্চিত স্বাদ)।",
+      "target": "Taste/smell source က Nの: このお茶は果物の味がします。 Adjective တိုက်ရိုက် predicate လည်း ဖြစ်နိုင်သည်: このスープはしょっぱいです (သေချာသော အရသာ)။"
+    },
+    {
+      "source": "Nをします নয়; অনুভূতি subject がします।",
+      "target": "Nをします မဟုတ်ပါ; ခံစားမှု subject က がします。"
+    },
+    {
+      "source": "পাশের ঘর থেকে অদ্ভুত শব্দ আসছে।",
+      "target": "ဘေးအခန်းမှ ထူးဆန်းသော အသံ လာနေသည်။"
+    },
+    {
+      "source": "এই সাবানে ফুলের গন্ধ।",
+      "target": "ဤ ဆပ်ပြာမှာ ပန်း အနံ့ ရှိသည်။"
+    },
+    {
+      "source": "এই ক্যান্ডিতে স্ট্রবেরির স্বাদ।",
+      "target": "ဤ သကြားလုံးမှာ စတော်ဘယ်ရီ အရသာ ရှိသည်။"
+    },
+    {
+      "source": "মনে হচ্ছে সামান্য জ্বর আছে।",
+      "target": "အနည်းငယ် အဖျား ရှိပုံ ရသည်။"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "တစ်ချက်ကြည့် ကွာခြားချက်"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "ဘယ်အခြေအနေမှာ ဘယ်ဟာလဲ?"
+    },
+    {
+      "source": "রূপ",
+      "target": "ပုံစံ"
+    },
+    {
+      "source": "সরাসরি আকাশ দেখে",
+      "target": "တိုက်ရိုက် ကောင်းကင် မြင်၍"
+    },
+    {
+      "source": "শোনা/report",
+      "target": "ကြားခြင်း/report"
+    },
+    {
+      "source": "plain form অক্ষত",
+      "target": "plain form မပြောင်းဘဲ"
+    },
+    {
+      "source": "ভেজা মাটি ইত্যাদি evidence",
+      "target": "စိုသော မြေ စသည့် evidence"
+    },
+    {
+      "source": "সরাসরি sensory impression",
+      "target": "တိုက်ရိုက် sensory impression"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "လက်တွေ့ပြောဆိုဆက်ဆံမှု"
+    },
+    {
+      "source": "বন্ধ দোকানের সামনে",
+      "target": "ပိတ်ထားသော ဆိုင်၏ ရှေ့မှာ"
+    },
+    {
+      "source": "দোকানের আলো নিভে আছে।",
+      "target": "ဆိုင်၏ မီး ငြိမ်းနေသည်။"
+    },
+    {
+      "source": "মনে হয় আজ বন্ধ।",
+      "target": "ယနေ့ ပိတ်သည် ထင်ရသည်။"
+    },
+    {
+      "source": "কিন্তু বিজ্ঞপ্তিতে খোলা লেখা।",
+      "target": "သို့သော် ကြေညာချက်မှာ ဖွင့်သည် ရေးထားသည်။"
+    },
+    {
+      "source": "পাশের লোকের কথায়, হঠাৎ ছুটি হয়েছে শুনেছি।",
+      "target": "ဘေးလူ၏ စကားအရ ရုတ်တရက် ပိတ်ရက် ဖြစ်သွားသည်ဟု ကြားခဲ့သည်။"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "ကိုယ်တိုင် စစ်ဆေးပါ"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice နှင့် ရှင်းပြချက်ပါသော အဖြေ"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "ပထမ မှတ်စုစာအုပ်မှာ အဖြေ ရေးပါ, ထို့နောက် မေးခွန်းကို နှိပ်၍ အဖြေ နှင့် အကြောင်းအရင်း တိုက်ဆိုင်ပါ။"
+    },
+    {
+      "source": "1. ‘খবরে বলেছে কাল বৃষ্টি হবে’—hearsay বলুন।",
+      "target": "1. ‘သတင်းမှာ မနက်ဖြန် မိုး ရွာမည်ဟု ပြောခဲ့သည်’—hearsay ပြောပါ။"
+    },
+    {
+      "source": "2. ‘মনে হয় কেউ ঘরে ঢুকেছে’—evidence inference বলুন।",
+      "target": "2. ‘တစ်စုံတစ်ယောက် အခန်းထဲ ဝင်ခဲ့ပုံ ရသည်’—evidence inference ပြောပါ။"
+    },
+    {
+      "source": "3. ‘এই ফুলে মিষ্টি গন্ধ’ বলুন।",
+      "target": "3. ‘ဤ ပန်းမှာ ချိုသော အနံ့ ရှိသည်’ ဟု ပြောပါ။"
+    },
+    {
+      "source": "4. পার্থক্য লিখুন: おいしそう / おいしいそう。",
+      "target": "4. ကွဲပြားမှု ရေးပါ: おいしそう / おいしいそう。"
+    },
+    {
+      "source": "おいしそう = দেখে সুস্বাদু; おいしいそう = শুনেছি সুস্বাদু।",
+      "target": "おいしそう = မြင်၍ အရသာရှိ; おいしいそう = အရသာရှိဟု ကြားခဲ့သည်။"
+    },
+    {
+      "source": "Appearance-এ い বাদ; hearsay-এ plain form অক্ষত।",
+      "target": "Appearance မှာ い ဖယ်; hearsay မှာ plain form မပြောင်းဘဲ ထားသည်။"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "စကားတစ်ခွန်းဖြင့် Master Key"
+    },
+    {
+      "source": "শোনা বাক্য হুবহু plain＋そう; নিজে evidence মিলিয়ে অনুমান plain＋よう; ইন্দ্রিয়ের impression Nがします। Stem＋そう হলো Lesson 43-এর চোখে-দেখা appearance।",
+      "target": "ကြားသော စကားကို တိကျစွာ plain＋そう; ကိုယ်တိုင် evidence ပေါင်းစပ်၍ ခန့်မှန်း plain＋よう; အာရုံ၏ impression က Nがします。 Stem＋そう က Lesson 43 ၏ မျက်စိဖြင့် မြင်သော appearance ဖြစ်သည်။"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "ယုံကြည်စိတ်ချရသော reference"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "syllabus နှင့် စစ်ဆေးမှု"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "ဤ သီးခြား မြန်မာ lesson ကို Minna no Nihongo II ၏ lesson sequence, official JLPT N4 scope နှင့် Japan Foundation ၏ learner resources တို့ ပေါင်းစပ်၍ ဖန်တီးထားသည်။ ဥပမာ နှင့် မြန်မာ ရှင်းပြချက်များ အသစ် ရေးသားထားသည်။"
+    },
+    {
+      "source": "← আগের Lesson 46",
+      "target": "← အရင် Lesson 46"
+    },
+    {
+      "source": "পরের Lesson 48 →",
+      "target": "နောက် Lesson 48 →"
+    },
+    {
+      "source": "Causative Form：করানো, বাধ্য করা ও অনুমতি দেওয়া",
+      "target": "Causative Form：လုပ်ခိုင်းခြင်း, အတင်းအကျပ် လုပ်ခိုင်းခြင်းနှင့် ခွင့်ပြုခြင်း"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson အညွှန်း"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "သင်ယူမှု ပစ်မှတ်"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "ကွာခြားချက် table"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "စကားပြော"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress load ဖြစ်နေသည်…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "ကျောင်းသားများအတွက် အခမဲ့, အသေးစိတ် မြန်မာ self-study edition။"
+    }
+  ]
+}

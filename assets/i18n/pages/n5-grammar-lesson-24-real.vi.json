@@ -1,0 +1,258 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n5-grammar-lesson-24-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 24 | くれます・てあげます・てもらいます・てくれます | আপনার নিহোন",
+      "target": "Bài 24 Ngữ pháp N5 | くれます・てあげます・てもらいます・てくれます | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "কারো জন্য কিছু করা/করিয়ে নেওয়া/আমার জন্য করে দেওয়া",
+      "target": "Làm gì cho ai/nhận được làm cho/một người làm cho tôi"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Bắt đầu ngữ pháp"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "Mục tiêu học tập hôm nay"
+    },
+    {
+      "source": "আমি করে দিই",
+      "target": "Tôi làm cho"
+    },
+    {
+      "source": "আমি করিয়ে পাই",
+      "target": "Tôi nhận được làm cho"
+    },
+    {
+      "source": "আমার জন্য করে দেয়",
+      "target": "Làm cho tôi"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "Giải thích đơn giản + cấu trúc + ví dụ"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "Với mỗi mẫu câu, xem cấu trúc trước, sau đó nói to ví dụ. Nhấn nút Audio để nghe câu tiếng Nhật."
+    },
+    {
+      "source": "কেউ আমাকে বা আমার ঘনিষ্ঠ কাউকে কোনো জিনিস দিলে くれます ব্যবহার হয়। わたしに জানা থাকলে বাদ দেওয়া যায়।",
+      "target": "Khi ai đó cho tôi hoặc người thân của tôi cái gì thì dùng くれます. Nếu わたしに đã rõ thì có thể bỏ."
+    },
+    {
+      "source": "আমার দিকে gift এলে あげます নয়, くれます। কে দিয়েছে জিজ্ঞাসা/জোর করলে person + が হয়।",
+      "target": "Nếu quà đến phía tôi thì không phải あげます, mà là くれます. Khi hỏi/nhấn mạnh ai đã cho thì người + が."
+    },
+    {
+      "source": "তোমোদাচি গা ওয়াতাশি নি হানা ও কুরেমাশিতা।",
+      "target": "友達が私に花をくれました。"
+    },
+    {
+      "source": "বন্ধু আমাকে ফুল দিয়েছে।",
+      "target": "Bạn đã tặng hoa cho tôi."
+    },
+    {
+      "source": "চিচি গা জিতেনশা ও কুরেমাশিতা।",
+      "target": "父が自転車をくれました。"
+    },
+    {
+      "source": "বাবা আমাকে সাইকেল দিয়েছেন।",
+      "target": "Bố đã tặng xe đạp cho tôi."
+    },
+    {
+      "source": "আমি/কেউ অন্য কারও উপকারের জন্য কিছু করে দিলে Vてあげます।",
+      "target": "Khi tôi/ai đó làm gì vì lợi ích của người khác thì Vてあげます."
+    },
+    {
+      "source": "উচ্চপদস্থ বা অপরিচিত listener-কে সরাসরি বললে patronizing শোনাতে পারে; offer-এ Vましょうか নিরাপদ।",
+      "target": "Nếu nói trực tiếp với cấp trên hoặc người nghe xa lạ có thể nghe kẻ cả; khi đề nghị thì Vましょうか an toàn hơn."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া তোমোদাচি নি নিহোনগো ও ওশিয়েতেআগেমাশিতা।",
+      "target": "私は友達に日本語を教えてあげました。"
+    },
+    {
+      "source": "আমি বন্ধুকে জাপানি শিখিয়ে দিয়েছি।",
+      "target": "Tôi đã dạy tiếng Nhật cho bạn."
+    },
+    {
+      "source": "কোদোমো নি হোন ও ইয়োনদেআগেমাসু।",
+      "target": "子供に本を読んであげます。"
+    },
+    {
+      "source": "শিশুকে বই পড়ে দেব।",
+      "target": "Tôi sẽ đọc sách cho trẻ."
+    },
+    {
+      "source": "কারও কাছ থেকে কাজ/সাহায্য করিয়ে তার সুবিধা গ্রহণ করলে Vてもらいます।",
+      "target": "Khi nhận lợi ích từ việc ai đó làm việc/giúp đỡ thì Vてもらいます."
+    },
+    {
+      "source": "যিনি কাজটি করেন তিনি に (কখনো から), সুবিধা গ্রহণকারী は।",
+      "target": "Người làm việc là に (đôi khi から), người nhận lợi ích là は."
+    },
+    {
+      "source": "সেনসেই নি নিহোনগো ও ওশিয়েতেমোরাইমাশিতা।",
+      "target": "先生に日本語を教えてもらいました。"
+    },
+    {
+      "source": "শিক্ষকের কাছ থেকে জাপানি শিখেছি।",
+      "target": "Tôi đã được giáo viên dạy tiếng Nhật."
+    },
+    {
+      "source": "তোমোদাচি নি তেৎসুদাত্তেমোরাইমাশিতা।",
+      "target": "友達に手伝ってもらいました。"
+    },
+    {
+      "source": "বন্ধুর কাছ থেকে সাহায্য পেয়েছি।",
+      "target": "Tôi đã được bạn giúp đỡ."
+    },
+    {
+      "source": "কেউ স্বেচ্ছায় আমার/আমাদের উপকারের জন্য কাজ করে দিলে Vてくれます।",
+      "target": "Khi ai đó tự nguyện làm việc vì lợi ích của tôi/chúng ta thì Vてくれます."
+    },
+    {
+      "source": "কাজের কর্তা が/は; সুবিধা আমার দিকে আসে। わたしに অনেক সময় বাদ যায়।",
+      "target": "Người làm việc là が/は; lợi ích đến phía tôi. わたしに nhiều khi bị bỏ."
+    },
+    {
+      "source": "তোমোদাচি গা তেৎসুদাত্তেকুরেমাশিতা।",
+      "target": "友達が手伝ってくれました。"
+    },
+    {
+      "source": "বন্ধু আমাকে সাহায্য করেছে।",
+      "target": "Bạn đã giúp tôi."
+    },
+    {
+      "source": "হাহা গা রিয়োরি ও ৎসুকুত্তেকুরেমাশিতা।",
+      "target": "母が料理を作ってくれました。"
+    },
+    {
+      "source": "মা আমার জন্য রান্না করেছেন।",
+      "target": "Mẹ đã nấu ăn cho tôi."
+    },
+    {
+      "source": "কে আমার জন্য কাজটি করেছে জানতে だれが ব্যবহার হয়; উত্তরের নতুন subject-ও が নেয়।",
+      "target": "Để biết ai đã làm việc cho tôi dùng だれが; chủ ngữ mới trong câu trả lời cũng lấy が."
+    },
+    {
+      "source": "প্রশ্নে だれは নয়—unknown subject হওয়ায় だれが।",
+      "target": "Trong câu hỏi không phải だれは — vì chủ ngữ chưa biết nên だれが."
+    },
+    {
+      "source": "দারে গা নিমোৎসু ও মোত্তেকুরেমাশিতা কা।",
+      "target": "だれが荷物を持ってくれましたか。"
+    },
+    {
+      "source": "কে আপনার মালপত্র বহন করে দিয়েছে?",
+      "target": "Ai đã mang hành lý cho bạn?"
+    },
+    {
+      "source": "তানাকা সান গা মোত্তেকুরেমাশিতা।",
+      "target": "田中さんが持ってくれました。"
+    },
+    {
+      "source": "তানাকা বহন করে দিয়েছেন।",
+      "target": "Anh Tanaka đã mang cho."
+    },
+    {
+      "source": "あげる = আমার/subject থেকে বাইরে; もらう = আমি/subject সুবিধা গ্রহণ করি; くれる = অন্যের কাছ থেকে আমার দিকে সুবিধা আসে।",
+      "target": "あげる = từ tôi/chủ ngữ ra ngoài; もらう = tôi/chủ ngữ nhận lợi ích; くれる = lợi ích đến phía tôi từ người khác."
+    },
+    {
+      "source": "কাজ একই হলেও viewpoint বদলালে verb বদলায়। আগে কে benefit পাচ্ছে তা নির্ধারণ করুন।",
+      "target": "Dù việc giống nhau, nếu quan điểm thay đổi thì động từ thay đổi. Trước tiên hãy xác định ai nhận lợi ích."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া ইমোতো নি শাশিন ও তোত্তেআগেমাশিতা।",
+      "target": "私は妹に写真を撮ってあげました。"
+    },
+    {
+      "source": "আমি বোনের ছবি তুলে দিয়েছি।",
+      "target": "Tôi đã chụp ảnh cho em gái."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া তোমোদাচি নি শাশিন ও তোত্তেমোরাইমাশিতা।",
+      "target": "私は友達に写真を撮ってもらいました。"
+    },
+    {
+      "source": "বন্ধুকে দিয়ে ছবি তুলিয়েছি।",
+      "target": "Tôi đã nhờ bạn chụp ảnh."
+    },
+    {
+      "source": "তোমোদাচি গা শাশিন ও তোত্তেকুরেমাশিতা।",
+      "target": "友達が写真を撮ってくれました。"
+    },
+    {
+      "source": "বন্ধু আমার জন্য ছবি তুলেছে।",
+      "target": "Bạn đã chụp ảnh cho tôi."
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "Luyện nói"
+    },
+    {
+      "source": "এই বাক্যগুলো conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "Đọc các câu này 3 lần như hội thoại."
+    },
+    {
+      "source": "তোমোদাচি নি নানি ও শিতেআগেমাশিতা কা।",
+      "target": "友達に何をしてあげましたか。"
+    },
+    {
+      "source": "বন্ধুর জন্য কী করেছেন?",
+      "target": "Bạn đã làm gì cho bạn?"
+    },
+    {
+      "source": "নিহোনগো ও ওশিয়েতেআগেমাশিতা।",
+      "target": "日本語を教えてあげました。"
+    },
+    {
+      "source": "জাপানি শিখিয়ে দিয়েছি।",
+      "target": "Tôi đã dạy tiếng Nhật."
+    },
+    {
+      "source": "দারে নি তেৎসুদাত্তেমোরাইমাশিতা কা।",
+      "target": "だれに手伝ってもらいましたか。"
+    },
+    {
+      "source": "কার কাছ থেকে সাহায্য পেয়েছেন?",
+      "target": "Bạn đã được ai giúp đỡ?"
+    },
+    {
+      "source": "✅ 友達が私を手伝ってくれました。 — আমার জন্য করলে くれます।",
+      "target": "✅ 友達が私を手伝ってくれました。 — nếu làm cho tôi thì くれます."
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "বন্ধু আমাকে সাহায্য করে দিয়েছে = ?",
+      "target": "Bạn đã giúp tôi = ?"
+    },
+    {
+      "source": "আমি শিক্ষকের কাছ থেকে শিখেছি = ?",
+      "target": "Tôi đã được giáo viên dạy = ?"
+    },
+    {
+      "source": "কারো জন্য করে দিই = ?",
+      "target": "Làm cho ai đó = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 24 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • Bài 24 Ngữ pháp N5 • Verified Premium Detailed Version"
+    }
+  ]
+}

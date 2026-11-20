@@ -1,0 +1,290 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "n5-vocabulary",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N5 Vocabulary | আপনার নিহোন",
+      "target": "N5 Vocabulary | আপনার নিহোন"
+    },
+    {
+      "source": "Lesson তালিকায় যান",
+      "target": "Pumunta sa listahan ng Lesson"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "হোম",
+      "target": "Home"
+    },
+    {
+      "source": "শব্দ থেকে সাবলীলতা",
+      "target": "Mula sa mga salita patungo sa katatasan"
+    },
+    {
+      "source": "Minna no Nihongo I-এর ২৫টি lesson-এর দরকারি শব্দ বিষয়ভিত্তিকভাবে খুঁজুন, শিখুন এবং নিজের অগ্রগতি ধরে রাখুন।",
+      "target": "Hanapin, alagaan, at subaybayan ang iyong pag-unlad sa 25 mahahalagang lesson ng Minna no Nihongo I ayon sa kategorya."
+    },
+    {
+      "source": "প্রথম Lesson শুরু করুন",
+      "target": "Simulan ang Unang Lesson"
+    },
+    {
+      "source": "Lesson খুঁজুন",
+      "target": "Maghanap ng Lesson"
+    },
+    {
+      "source": "আমার অগ্রগতি",
+      "target": "Aking Pag-unlad"
+    },
+    {
+      "source": "সম্পন্ন",
+      "target": "tapos"
+    },
+    {
+      "source": "0/25 lesson সম্পন্ন",
+      "target": "0/25 lesson ang natapos"
+    },
+    {
+      "source": "শেষ করা lesson-এ ✓ দিন। এই device-এ আপনার progress স্বয়ংক্রিয়ভাবে সংরক্ষিত থাকবে।",
+      "target": "Lagyan ng ✓ ang mga natapos na lesson. Awtomatikong mase-save ang iyong progress sa device na ito."
+    },
+    {
+      "source": "মোট LESSON",
+      "target": "Kabuuang LESSON"
+    },
+    {
+      "source": "বাকি",
+      "target": "Natitira"
+    },
+    {
+      "source": "Lesson নম্বর বেছে নিন",
+      "target": "Pumili ng numero ng Lesson"
+    },
+    {
+      "source": "দেখুন",
+      "target": "Tingnan"
+    },
+    {
+      "source": "সব",
+      "target": "Lahat"
+    },
+    {
+      "source": "পুরো কোর্স",
+      "target": "Buong kurso"
+    },
+    {
+      "source": "পরিচয় ও পরিবেশ",
+      "target": "Pagpapakilala at Kapaligiran"
+    },
+    {
+      "source": "দৈনন্দিন জীবন",
+      "target": "Pang-araw-araw na Buhay"
+    },
+    {
+      "source": "বর্ণনা ও প্রয়োজন",
+      "target": "Paglalarawan at Pangangailangan"
+    },
+    {
+      "source": "কাজ ও অভিজ্ঞতা",
+      "target": "Trabaho at Karanasan"
+    },
+    {
+      "source": "মতামত ও রিভিশন",
+      "target": "Mga Opinyon at Rebisyon"
+    },
+    {
+      "source": "আপনার Lesson বেছে নিন",
+      "target": "Piliin ang iyong Lesson"
+    },
+    {
+      "source": "নম্বর, Japanese pattern অথবা বাংলা বিষয় দিয়ে search করুন। Range ও progress filter ব্যবহার করে প্রয়োজনীয় lesson দ্রুত খুলুন।",
+      "target": "Maghanap gamit ang numero, Japanese pattern, o paksang Bengali. Gamitin ang range at progress filter upang mabilis na mabuksan ang kinakailangang lesson."
+    },
+    {
+      "source": "টি lesson দেখানো হচ্ছে",
+      "target": "Ipinapakita ang mga lesson"
+    },
+    {
+      "source": "ধাপ 1 · পরিচয় ও পরিবেশ",
+      "target": "Hakbang 1 · Pagpapakilala at Kapaligiran"
+    },
+    {
+      "source": "পরিচয়, পেশা, দেশ ও মানুষের মৌলিক শব্দ।",
+      "target": "Mga pangunahing salita para sa pagpapakilala, propesyon, bansa, at mga tao."
+    },
+    {
+      "source": "ことば · শব্দভান্ডার",
+      "target": "ことば · Talasalitaan"
+    },
+    {
+      "source": "Lesson খুলুন",
+      "target": "Buksan ang Lesson"
+    },
+    {
+      "source": "ক্লাসরুম ও দৈনন্দিন জিনিস চেনানোর শব্দ।",
+      "target": "Mga salita sa pagkilala ng mga gamit sa silid-aralan at pang-araw-araw."
+    },
+    {
+      "source": "স্থান, ভবন, তলা, কাউন্টার ও দাম জিজ্ঞাসা।",
+      "target": "Mga lugar, gusali, palapag, counter, at pagtanong ng presyo."
+    },
+    {
+      "source": "সময়, দিন, কাজের সময়সূচি ও ক্রিয়া।",
+      "target": "Oras, araw, iskedyul ng trabaho, at mga kilos."
+    },
+    {
+      "source": "যাতায়াত, গন্তব্য, যানবাহন ও সঙ্গী।",
+      "target": "Transportasyon, destinasyon, sasakyan, at kasama."
+    },
+    {
+      "source": "ধাপ 2 · দৈনন্দিন জীবন",
+      "target": "Hakbang 2 · Pang-araw-araw na Buhay"
+    },
+    {
+      "source": "খাওয়া, দেখা, পড়া ও দৈনন্দিন কাজের শব্দ।",
+      "target": "Mga salita para sa pagkain, panonood, pagbabasa, at mga pang-araw-araw na gawain."
+    },
+    {
+      "source": "উপকরণ, ভাষা, উপহার ও যোগাযোগের শব্দ।",
+      "target": "Mga kagamitan, wika, regalo, at komunikasyon."
+    },
+    {
+      "source": "মানুষ, শহর, খাবার ও জিনিস বর্ণনার শব্দ।",
+      "target": "Mga salita sa paglalarawan ng tao, lungsod, pagkain, at mga bagay."
+    },
+    {
+      "source": "পছন্দ, দক্ষতা, বোঝা, কারণ ও অনুভূতি।",
+      "target": "Kagustuhan, kasanayan, pag-unawa, dahilan, at emosyon."
+    },
+    {
+      "source": "কোথায় কী আছে—অবস্থান ও ঘরের শব্দ।",
+      "target": "Kung nasaan ang mga bagay—mga salita para sa lokasyon at bahay."
+    },
+    {
+      "source": "ধাপ 3 · বর্ণনা ও প্রয়োজন",
+      "target": "Hakbang 3 · Paglalarawan at Pangangailangan"
+    },
+    {
+      "source": "সংখ্যা, কাউন্টার, পরিমাণ ও ঘনত্ব।",
+      "target": "Mga numero, counter, dami, at densidad."
+    },
+    {
+      "source": "অতীত, ঋতু, আবহাওয়া ও তুলনার শব্দ।",
+      "target": "Nakaraan, mga panahon sa taon, panahon (weather), at mga paghahambing."
+    },
+    {
+      "source": "ইচ্ছা, উদ্দেশ্য, কেনাকাটা ও ঘোরার শব্দ।",
+      "target": "Mga salita para sa pagnanais, layunin, pamimili at pamamasyal."
+    },
+    {
+      "source": "অনুরোধ, কাজের নির্দেশ ও চলমান কাজ।",
+      "target": "Mga kahilingan, tagubilin sa trabaho at kasalukuyang ginagawa."
+    },
+    {
+      "source": "অনুমতি, নিষেধ, পেশা ও বাসস্থানের শব্দ।",
+      "target": "Mga salita para sa pahintulot, pagbabawal, propesyon at tirahan."
+    },
+    {
+      "source": "ধাপ 4 · কাজ ও অভিজ্ঞতা",
+      "target": "Yugto 4 · Trabaho at Karanasan"
+    },
+    {
+      "source": "পরপর কাজ, যাতায়াত ও দৈনন্দিন রুটিন।",
+      "target": "Magkakasunod na gawain, pagbiyahe at araw-araw na rutina."
+    },
+    {
+      "source": "স্বাস্থ্য, নিয়ম, করণীয় ও না-করার শব্দ।",
+      "target": "Mga salita para sa kalusugan, mga panuntunan, dapat gawin at hindi dapat gawin."
+    },
+    {
+      "source": "সক্ষমতা, শখ, খেলাধুলা ও শেখার শব্দ।",
+      "target": "Mga salita para sa kakayahan, libangan, palakasan at pag-aaral."
+    },
+    {
+      "source": "অভিজ্ঞতা, পরিবর্তন, কাজ ও অনুভূতির শব্দ।",
+      "target": "Mga salita para sa karanasan, pagbabago, trabaho at damdamin."
+    },
+    {
+      "source": "বন্ধুত্বপূর্ণ কথোপকথন ও casual শব্দ।",
+      "target": "Magiliw na pag-uusap at mga kaswal na salita."
+    },
+    {
+      "source": "ধাপ 5 · মতামত ও রিভিশন",
+      "target": "Yugto 5 · Mga Opinyon at Rebisyon"
+    },
+    {
+      "source": "মতামত, খবর, বক্তৃতা ও চিন্তার শব্দ।",
+      "target": "Mga salita para sa opinyon, balita, talumpati at kaisipan."
+    },
+    {
+      "source": "মানুষ/জিনিস বর্ণনা করা এবং modifier শব্দ।",
+      "target": "Paglalarawan ng mga tao/bagay at mga salitang modifier."
+    },
+    {
+      "source": "সময়, শর্ত, মেশিন ও ব্যবহারবিধি।",
+      "target": "Oras, kondisyon, makina at gabay sa paggamit."
+    },
+    {
+      "source": "সাহায্য, উপকার, সম্পর্ক ও কাজ করে দেওয়া।",
+      "target": "Tulong, pabor, relasyon at paggawa ng pabor para sa iba."
+    },
+    {
+      "source": "শর্ত, বিপরীত পরিস্থিতি ও সম্পূর্ণ রিভিশন।",
+      "target": "Kondisyon, magkasalungat na sitwasyon at buong rebisyon."
+    },
+    {
+      "source": "কোনো Lesson পাওয়া যায়নি",
+      "target": "Walang natagpuang Aralin"
+    },
+    {
+      "source": "অন্য শব্দ লিখুন অথবা filter মুছে আবার চেষ্টা করুন।",
+      "target": "Mag-type ng ibang salita o i-clear ang filter at subukang muli."
+    },
+    {
+      "source": "সব Lesson দেখুন",
+      "target": "Tingnan ang lahat ng Aralin"
+    },
+    {
+      "source": "প্রতিটি Lesson থেকে সর্বোচ্চ ফল নিন",
+      "target": "Sulitin ang bawat Aralin"
+    },
+    {
+      "source": "বিষয় দেখে Lesson খুলুন",
+      "target": "Magbukas ng Aralin ayon sa paksa"
+    },
+    {
+      "source": "কার্ডের Japanese pattern ও বাংলা সারাংশ দেখে প্রয়োজনীয় lesson বেছে নিন।",
+      "target": "Piliin ang kinakailangang aralin sa pamamagitan ng pagtingin sa pattern ng Hapon at buod sa card."
+    },
+    {
+      "source": "উদাহরণসহ অনুশীলন করুন",
+      "target": "Magsanay gamit ang mga halimbawa"
+    },
+    {
+      "source": "ব্যাখ্যা পড়ুন, audio শুনুন এবং quiz দিয়ে নিজের বোঝাপড়া যাচাই করুন।",
+      "target": "Basahin ang paliwanag, makinig sa audio at subukan ang iyong pag-unawa gamit ang pagsusulit."
+    },
+    {
+      "source": "শেষ হলে ✓ দিন",
+      "target": "Markahan ng ✓ kapag tapos na"
+    },
+    {
+      "source": "সম্পন্ন lesson আলাদা থাকবে এবং Continue button পরের lesson দেখাবে।",
+      "target": "Hiwalay na mamarkahan ang natapos na aralin at ipapakita ng pindutang Magpatuloy (Continue) ang susunod na aralin."
+    },
+    {
+      "source": "· বাংলা ভাষাভাষীদের জন্য জাপানি শেখার প্ল্যাটফর্ম",
+      "target": "· Platform sa pag-aaral ng Hapon para sa mga nagsasalita ng Bengali"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "Makipag-ugnayan"
+    }
+  ]
+}

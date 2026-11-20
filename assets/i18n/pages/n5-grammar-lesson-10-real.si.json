@@ -1,0 +1,250 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n5-grammar-lesson-10-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 10 | あります・います + Location + Position Words | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 10 | あります・います + Location + Position Words | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "কোথায় কী আছে / কে আছে — ঘর, শহর, ক্লাসরুম বর্ণনা করা",
+      "target": "කොහෙද මොනවද තිබෙන්නේ / කවුද ඉන්නේ — කාමරය, නගරය, පන්ති කාමරය විස්තර කිරීම"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar අරඹන්න"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "අද Learning Goal"
+    },
+    {
+      "source": "জিনিস আছে বলা",
+      "target": "දේවල් තිබෙනවා කීම"
+    },
+    {
+      "source": "মানুষ/প্রাণী আছে বলা",
+      "target": "මිනිසුන්/සතුන් ඉන්නවා කීම"
+    },
+    {
+      "source": "location বলা",
+      "target": "location කීම"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "සරල පැහැදිලි කිරීම + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "සෑම pattern එකකම පළමුව structure එක බලන්න, ඉන්පසු example එක කටින් කියන්න. Audio button එක එබුවොත් Japanese sentence එක ඇසිය හැක."
+    },
+    {
+      "source": "জড় বস্তু/গাছপালা/ঘটনা আছে বোঝাতে あります।",
+      "target": "අජීවී වස්තු/ගස්/සිදුවීම් තිබෙනවා පෙන්වීමට あります."
+    },
+    {
+      "source": "book, desk, tree, event — এগুলোতে あります।",
+      "target": "book, desk, tree, event — මේවාට あります."
+    },
+    {
+      "source": "ৎসুকুয়ে গা আরিমাসু।",
+      "target": "机があります."
+    },
+    {
+      "source": "ডেস্ক আছে।",
+      "target": "ලියන මේසයක් තිබෙනවා."
+    },
+    {
+      "source": "কোয়েন নি কি গা আরিমাসু।",
+      "target": "公園に木があります."
+    },
+    {
+      "source": "পার্কে গাছ আছে।",
+      "target": "උද්‍යානයේ ගසක් තිබෙනවා."
+    },
+    {
+      "source": "মানুষ/প্রাণী আছে বোঝাতে います。",
+      "target": "මිනිසුන්/සතුන් ඉන්නවා පෙන්වීමට います."
+    },
+    {
+      "source": "student, teacher, dog, cat — এগুলোতে います।",
+      "target": "student, teacher, dog, cat — මේවාට います."
+    },
+    {
+      "source": "কিয়োশিৎসু নি গাকুসেই গা ইমাসু।",
+      "target": "教室に学生がいます."
+    },
+    {
+      "source": "ক্লাসরুমে ছাত্র আছে।",
+      "target": "පන්ති කාමරයේ සිසුවෙක් ඉන්නවා."
+    },
+    {
+      "source": "নিওয়া নি ইনু গা ইমাসু।",
+      "target": "庭に犬がいます."
+    },
+    {
+      "source": "বাগানে কুকুর আছে।",
+      "target": "වත්තේ බල්ලෙක් ඉන්නවා."
+    },
+    {
+      "source": "কোন জায়গায় কী/কে আছে — জায়গা আগে বললে に লাগে।",
+      "target": "කිනම් ස්ථානයේ මොනවද/කවුද ඉන්නේ — ස්ථානය පළමුව කීවොත් に අවශ්‍යයි."
+    },
+    {
+      "source": "হেয়া নি তেরেবি গা আরিমাসু।",
+      "target": "部屋にテレビがあります."
+    },
+    {
+      "source": "ঘরে টিভি আছে।",
+      "target": "කාමරයේ TV එකක් තිබෙනවා."
+    },
+    {
+      "source": "জিমুশো নি মিরা সান গা ইমাসু।",
+      "target": "事務所にミラーさんがいます."
+    },
+    {
+      "source": "অফিসে মিলার-সান আছেন।",
+      "target": "කාර්යාලයේ Miller-san ඉන්නවා."
+    },
+    {
+      "source": "কোন জিনিস/ব্যক্তি কোথায় আছে — N কে topic করলে は。",
+      "target": "කිනම් දෙයක්/මනුෂ්‍යයෙක් කොහෙද ඉන්නේ — N එක topic කළොත් は."
+    },
+    {
+      "source": "প্রশ্ন: Nはどこですか। উত্তর: Placeにあります/います।",
+      "target": "ප්‍රශ්නය: Nはどこですか. පිළිතුර: Placeにあります/います."
+    },
+    {
+      "source": "হোন ওয়া ৎসুকুয়ে নো উয়ে নি আরিমাসু।",
+      "target": "本は机の上にあります."
+    },
+    {
+      "source": "বইটি ডেস্কের ওপর আছে।",
+      "target": "පොත ලියන මේසය උඩ තිබෙනවා."
+    },
+    {
+      "source": "সেনসেই ওয়া জিমুশো নি ইমাসু।",
+      "target": "先生は事務所にいます."
+    },
+    {
+      "source": "শিক্ষক অফিসে আছেন।",
+      "target": "ගුරුවරයා කාර්යාලයේ ඉන්නවා."
+    },
+    {
+      "source": "কিছুর উপর/নিচ/সামনে/পেছনে/ভিতরে/পাশে বোঝাতে の + position word।",
+      "target": "යමක උඩ/යට/ඉදිරියේ/පිටුපස/ඇතුළේ/අසල පෙන්වීමට の + position word."
+    },
+    {
+      "source": "ৎসুকুয়ে নো উয়ে নি হোন গা আরিমাসু।",
+      "target": "机の上に本があります."
+    },
+    {
+      "source": "ডেস্কের ওপর বই আছে।",
+      "target": "ලියන මේසය උඩ පොතක් තිබෙනවා."
+    },
+    {
+      "source": "ইসু নো শিতা নি নেকো গা ইমাসু।",
+      "target": "椅子の下に猫がいます."
+    },
+    {
+      "source": "চেয়ারের নিচে বিড়াল আছে।",
+      "target": "පුටුව යට බළලෙක් ඉන්නවා."
+    },
+    {
+      "source": "একি নো মায়ে নি গিনকো গা আরিমাসু।",
+      "target": "駅の前に銀行があります."
+    },
+    {
+      "source": "স্টেশনের সামনে ব্যাংক আছে।",
+      "target": "දුම්රිය ස්ථානය ඉදිරියේ බැංකුවක් තිබෙනවා."
+    },
+    {
+      "source": "Question word + も-এর সঙ্গে negative existence verb বসলে ‘কেউ নেই/কিছু নেই’ বোঝায়।",
+      "target": "Question word + も සමඟ negative existence verb තැබුවොත් ‘කවුරුත් නැහැ/මොකුත් නැහැ’ යන්න අදහස් වේ."
+    },
+    {
+      "source": "মানুষ/প্রাণী: だれもいません; বস্তু: 何もありません। Affirmative verb ব্যবহার করবেন না।",
+      "target": "මිනිසුන්/සතුන්: だれもいません; වස්තු: 何もありません. Affirmative verb භාවිතා නොකරන්න."
+    },
+    {
+      "source": "কিয়োশিৎসু নি দারে মো ইমাসেন।",
+      "target": "教室にだれもいません."
+    },
+    {
+      "source": "ক্লাসরুমে কেউ নেই।",
+      "target": "පන්ති කාමරයේ කවුරුත් නැහැ."
+    },
+    {
+      "source": "কাবান নো নাকা নি নানি মো আরিমাসেন।",
+      "target": "かばんの中に何もありません."
+    },
+    {
+      "source": "ব্যাগের ভেতরে কিছু নেই।",
+      "target": "බෑගය ඇතුළේ මොකුත් නැහැ."
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "කටින් කීමේ Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "මෙම වාක්‍ය interview/classroom conversation එකක් වගේ 3 වරක් කියවන්න."
+    },
+    {
+      "source": "হেয়া নি নানি গা আরিমাসু কা।",
+      "target": "部屋に何がありますか."
+    },
+    {
+      "source": "ঘরে কী আছে?",
+      "target": "කාමරයේ මොනවද තිබෙන්නේ?"
+    },
+    {
+      "source": "ৎসুকুয়ে তো বেদ্দো গা আরিমাসু।",
+      "target": "机とベッドがあります."
+    },
+    {
+      "source": "ডেস্ক ও বিছানা আছে।",
+      "target": "ලියන මේසය සහ ඇඳ තිබෙනවා."
+    },
+    {
+      "source": "সেনসেই ওয়া দোকো নি ইমাসু কা।",
+      "target": "先生はどこにいますか."
+    },
+    {
+      "source": "শিক্ষক কোথায় আছেন?",
+      "target": "ගුරුවරයා කොහෙද ඉන්නේ?"
+    },
+    {
+      "source": "হোন ওয়া দোকো নি আরিমাসু কা।",
+      "target": "本はどこにありますか."
+    },
+    {
+      "source": "বই কোথায় আছে?",
+      "target": "පොත කොහෙද තිබෙන්නේ?"
+    },
+    {
+      "source": "✅ 犬がいます。 — প্রাণী হলে います।",
+      "target": "✅ 犬がいます。 — සතෙක් නම් います."
+    },
+    {
+      "source": "✅ 机の上に本があります। — position word আগে の লাগে।",
+      "target": "✅ 机の上に本があります。 — position word එකට පෙර の අවශ්‍යයි."
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "ඔබම පරීක්ෂා කරන්න"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 10 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 10 • Verified Premium Detailed Version"
+    }
+  ]
+}

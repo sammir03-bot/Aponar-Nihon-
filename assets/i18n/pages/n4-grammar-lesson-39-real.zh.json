@@ -1,0 +1,490 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n4-grammar-lesson-39-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "跳转至主要内容"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 39 · জটিল বাক্য",
+      "target": "Lesson 39 · 复杂句"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "所有 Lesson"
+    },
+    {
+      "source": "জটিল বাক্য",
+      "target": "复杂句型"
+    },
+    {
+      "source": "ধাপ ৩ · 36–40",
+      "target": "步骤 3 · 36–40"
+    },
+    {
+      "source": "ঘটনার স্বাভাবিক কারণ, আবেগ বা ফল, নেতিবাচক কারণ এবং নরম/বস্তুনিষ্ঠ ব্যাখ্যা প্রকাশ।",
+      "target": "表达事件的自然原因、情感或结果、否定原因和柔和/客观解释。"
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 个详细 grammar block"
+    },
+    {
+      "source": "14টি Japanese example",
+      "target": "14 个 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 个带解释的 practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline、mobile 和 print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "隐藏 あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "尚未完成"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ 标记完成"
+    },
+    {
+      "source": "Lesson 39 · লক্ষ্য",
+      "target": "Lesson 39 · 目标"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "学完本 Lesson 后能做到"
+    },
+    {
+      "source": "কারণ বলার から আগেই জানা। Lesson 39 দেখায় কারণ কখন সংক্ষিপ্ত て-form-এ আসে এবং কখন ので কথাকে নরম করে। বিশেষ করে ないで ও なくて আলাদা: ‘না করে’ বনাম ‘না হওয়ার কারণে’।",
+      "target": "说原因的 から 已经知道。Lesson 39 显示原因何时用简短 て-form、何时 ので 让话柔和。特别是 ないで 和 なくて 分开：“不做”与“因没发生”。"
+    },
+    {
+      "source": "ক্রিয়া ও adjective/noun-এর কারণ-সংযোগ form বানাবেন",
+      "target": "能造动词和 adjective/noun 的原因连接 form"
+    },
+    {
+      "source": "ないで (না করে) এবং なくて (না হওয়ার কারণে) আলাদা করবেন",
+      "target": "能区分 ないで（不做）和 なくて（因没发生）"
+    },
+    {
+      "source": "ঘটনা/দুর্যোগের কারণ Nで দিয়ে বলবেন",
+      "target": "能用 Nで 说事件/灾害的原因"
+    },
+    {
+      "source": "ので এবং から-এর tone ও objectivity বুঝবেন",
+      "target": "能理解 ので 和 から 的 tone 和 objectivity"
+    },
+    {
+      "source": "Vて・いAくて・なA／Nで（কারণ）",
+      "target": "Vて・いAくて・なA／Nで（原因）"
+    },
+    {
+      "source": "প্রথম অবস্থা/ঘটনার কারণে পরের স্বাভাবিক ফল বা আবেগ",
+      "target": "因第一个状态/事件，后来的自然结果或情感"
+    },
+    {
+      "source": "গঠন",
+      "target": "构成"
+    },
+    {
+      "source": "ধরন",
+      "target": "类型"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "例句"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "动词"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-形容词"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-形容词"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "名词"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "详细解释"
+    },
+    {
+      "source": "এখানে প্রথম clause reason, দ্বিতীয়টি natural result, অনুভূতি, অক্ষমতা বা completed outcome। 会えて、うれしいです = দেখা হওয়ায় খুশি।",
+      "target": "这里第一个 clause 是 reason，第二个是 natural result、感受、无力或 completed outcome。会えて、うれしいです = 能见面很高兴。"
+    },
+    {
+      "source": "এই কারণ-て-এর পরে শক্ত command, invitation বা deliberate intention সাধারণত মানানসই নয়। 雨が降って、傘を持って行ってください ✕; 雨が降っていますから、傘を… বেশি পরিষ্কার।",
+      "target": "这个原因-て 后强 command、invitation 或 deliberate intention 通常不合适。雨が降って、傘を持って行ってください ✕；雨が降っていますから、傘を… 更清楚。"
+    },
+    {
+      "source": "Form একই হলেও sequence বা reason context থেকে বোঝা যায়: 朝起きて、顔を洗いました হলো sequence; 頭が痛くて、起きられません হলো reason।",
+      "target": "Form 相同但从 sequence 或 reason context 理解：朝起きて、顔を洗いました 是 sequence；頭が痛くて、起きられません 是 reason。"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "要记住的"
+    },
+    {
+      "source": "Result-এ emotion/ability/state খুব স্বাভাবিক: うれしい, 困る, できない, 遅れる।",
+      "target": "Result 中 emotion/ability/state 很自然：うれしい、困る、できない、遅れる。"
+    },
+    {
+      "source": "পরিবারের সঙ্গে দেখা করতে না পারায় মন খারাপ।",
+      "target": "没能和家人见面很难过。"
+    },
+    {
+      "source": "ব্যাখ্যা জটিল বলে ভালো বুঝতে পারছি না।",
+      "target": "讲解复杂所以没太懂。"
+    },
+    {
+      "source": "রাস্তায় ভিড় থাকায় মিটিংয়ে দেরি হয়েছে।",
+      "target": "路上拥挤所以会议迟到了。"
+    },
+    {
+      "source": "উপহার পেয়ে খুশি হয়েছিলাম।",
+      "target": "收到礼物很开心。"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ 错误"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ 正确"
+    },
+    {
+      "source": "কেন:",
+      "target": "为什么："
+    },
+    {
+      "source": "便利 হলো な-বিশেষণ; connective で।",
+      "target": "便利 是 な-形容词；connective 用 で。"
+    },
+    {
+      "source": "Vなくて（নেতিবাচক কারণ）",
+      "target": "Vなくて（否定原因）"
+    },
+    {
+      "source": "কাজ/অবস্থা না হওয়ায় পরের ফল",
+      "target": "因工作/状态没发生，后来的结果"
+    },
+    {
+      "source": "Vない形-এর い→くて",
+      "target": "Vない形 的 い→くて"
+    },
+    {
+      "source": "Vなくて = কারণটি ঘটেনি/নেই বলে ফল হয়েছে। バスが来なくて、困りました = বাস না আসায় সমস্যায় পড়েছি।",
+      "target": "Vなくて = 因原因没发生/不存在而有结果。バスが来なくて、困りました = 巴士没来很困扰。"
+    },
+    {
+      "source": "Vないで = V1 না করেই V2 করা: 朝ご飯を食べないで学校へ行きました। Vなくて = খেতে না পারা/না হওয়ার কারণে ফল: 朝ご飯が食べられなくて、おなかがすきました।",
+      "target": "Vないで = 不做 V1 做 V2：朝ご飯を食べないで学校へ行きました。Vなくて = 因不能吃/没发生的果：朝ご飯が食べられなくて、おなかがすきました。"
+    },
+    {
+      "source": "なくて-এর পরে emotion, difficulty, unintended result খুব স্বাভাবিক; conscious command সাধারণত নয়।",
+      "target": "なくて 后 emotion、difficulty、unintended result 很自然；conscious command 通常不。"
+    },
+    {
+      "source": "জাপানি বুঝিনি বলে সমস্যায় পড়েছি।",
+      "target": "没懂日语所以很困扰。"
+    },
+    {
+      "source": "গত রাতে ঘুমাতে পারিনি বলে আজ খুব ঘুম পাচ্ছে।",
+      "target": "昨晚没睡着所以今天很困。"
+    },
+    {
+      "source": "বন্ধু না আসায় খারাপ লেগেছে।",
+      "target": "朋友没来感觉不好。"
+    },
+    {
+      "source": "宿題をしなくて学校へ行きました。（‘না করে গেলাম’)",
+      "target": "宿題をしなくて学校へ行きました。（说“没做就去了”）"
+    },
+    {
+      "source": "ইচ্ছাকৃতভাবে না করে অন্য কাজ = ないで; না হওয়া কারণ = なくて।",
+      "target": "有意不做做别的 = ないで；没发生的原因 = なくて。"
+    },
+    {
+      "source": "Nで（ঘটনা/কারণ）",
+      "target": "Nで（事件/原因）"
+    },
+    {
+      "source": "দুর্ঘটনা, রোগ, দুর্যোগ বা ঘটনার কারণে ফল",
+      "target": "因事故、疾病、灾害或事件的结果"
+    },
+    {
+      "source": "কারণ ঘটনা",
+      "target": "原因事件"
+    },
+    {
+      "source": "Particle で এখানে action-এর স্থান/যন্ত্র নয়; cause। 事故で, 病気で, 地震で, 大雨で-এর মতো noun cause-এর পরে অনিচ্ছাকৃত ফল আসে।",
+      "target": "Particle で 这里不是 action 的场所/工具；是 cause。事故で、病気で、地震で、大雨で 等 noun cause 后是非自愿结果。"
+    },
+    {
+      "source": "কারণ ব্যক্তি হলে 人で সাধারণত নয়; 人のせいで (দোষ), 人のおかげで (উপকার), 人が〜ので ইত্যাদি প্রয়োজন।",
+      "target": "原因是人时通常不用 人で；需要 人のせいで（过错）、人のおかげで（帮助）、人が〜ので 等。"
+    },
+    {
+      "source": "Cause Nで এবং location Nで একই particle; predicate/context দিয়ে ভূমিকা বুঝুন।",
+      "target": "Cause Nで 和 location Nで 是同一 particle；从 predicate/context 理解作用。"
+    },
+    {
+      "source": "ভারী তুষারে বিমান উড়েনি।",
+      "target": "大雪飞机没飞。"
+    },
+    {
+      "source": "দুর্ঘটনার কারণে রাস্তা দিয়ে যাওয়া যাচ্ছে না।",
+      "target": "因事故路不能走。"
+    },
+    {
+      "source": "অসুস্থতার কারণে তিন দিন অফিস করিনি।",
+      "target": "因病三天没去办公室。"
+    },
+    {
+      "source": "ঘটনা/দুর্যোগ noun-এর কারণ particle で।",
+      "target": "事件/灾害 noun 的原因 particle で。"
+    },
+    {
+      "source": "নরম, তুলনামূলক বস্তুনিষ্ঠ কারণ—‘যেহেতু/কারণ’",
+      "target": "柔和、相对客观的原因——“因为”"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "动词/い-A"
+    },
+    {
+      "source": "ভদ্র কথন",
+      "target": "礼貌说法"
+    },
+    {
+      "source": "ので কারণকে পরিস্থিতি/স্বাভাবিক ব্যাখ্যা হিসেবে দেয়; から বক্তার ব্যক্তিগত যুক্তি বা সরাসরি assertion বেশি শোনাতে পারে। তাই ক্ষমা, অনুমতি ও বিনীত অনুরোধে ので নরম: 用事があるので、先に帰ってもいいですか。",
+      "target": "ので 把原因作情况/自然解释；から 更像说话人个人理由或直接 assertion。所以道歉、许可和礼貌请求 ので 柔和：用事があるので、先に帰ってもいいですか。"
+    },
+    {
+      "source": "な-বিশেষণ/বিশেষ্যের present affirmative-এ な প্রয়োজন: 暇なので, 学生なので। Past: 暇だったので, 学生だったので।",
+      "target": "な-形容词/名词 present affirmative 需要 な：暇なので、学生なので。Past：暇だったので、学生だったので。"
+    },
+    {
+      "source": "から ভুল নয়; tone নির্বাচন। জরুরি/জোরালো subjective reason-এ から স্বাভাবিক, formal customer-facing ব্যাখ্যায় ので/ですので বহুল।",
+      "target": "から 不错；选 tone。紧急/强 subjective reason から 自然，formal customer-facing 解释 ので/ですので 常用。"
+    },
+    {
+      "source": "মাথা ব্যথা বলে আজ আগে ফিরব।",
+      "target": "头痛所以今天先回去。"
+    },
+    {
+      "source": "ঘরটি শান্ত বলে ভালো পড়া যায়।",
+      "target": "房间安静所以能好好学习。"
+    },
+    {
+      "source": "ট্রেন দেরি করায় ক্লাসে সময়মতো পৌঁছাতে পারিনি।",
+      "target": "因为火车晚点，没能按时到教室。"
+    },
+    {
+      "source": "কাল ছুটি বলে ব্যাংক খোলা নেই।",
+      "target": "明天放假所以银行不开。"
+    },
+    {
+      "source": "な-বিশেষণ＋な＋ので।",
+      "target": "な-形容词＋な＋ので。"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "一目了然的差别"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "什么情况用哪个？"
+    },
+    {
+      "source": "রূপ",
+      "target": "形式"
+    },
+    {
+      "source": "মূল অর্থ",
+      "target": "核心意思"
+    },
+    {
+      "source": "পরের clause",
+      "target": "后面的 clause"
+    },
+    {
+      "source": "V1 না করেই V2",
+      "target": "不做 V1 做 V2"
+    },
+    {
+      "source": "ইচ্ছাকৃত/সহগামী action",
+      "target": "有意/伴随 action"
+    },
+    {
+      "source": "V1 না হওয়ায় V2",
+      "target": "V1 没发生所以 V2"
+    },
+    {
+      "source": "সংক্ষিপ্ত natural cause",
+      "target": "简短 natural cause"
+    },
+    {
+      "source": "শক্ত command এড়ানো",
+      "target": "避免强 command"
+    },
+    {
+      "source": "নরম/বস্তুনিষ্ঠ কারণ",
+      "target": "柔和/客观原因"
+    },
+    {
+      "source": "ক্ষমা, অনুরোধ, সিদ্ধান্তও সম্ভব",
+      "target": "道歉、请求、决定也可能"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "实际对话"
+    },
+    {
+      "source": "দেরির কারণ জানানো",
+      "target": "告知迟到原因"
+    },
+    {
+      "source": "কেন দেরি হয়েছে?",
+      "target": "为什么迟到了？"
+    },
+    {
+      "source": "দুর্ঘটনায় ট্রেন থেমেছিল বলে দেরি হয়েছে।",
+      "target": "事故电车停了所以迟到了。"
+    },
+    {
+      "source": "খবর না পেয়ে চিন্তা করেছি।",
+      "target": "没收到消息很担心。"
+    },
+    {
+      "source": "দুঃখিত। ফোন ব্যবহার করা যাচ্ছিল না বলে যোগাযোগ করতে পারিনি।",
+      "target": "对不起。手机不能用所以没能联系。"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "自我检查"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice 和带解释的答案"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "先在笔记本上写答案，然后点击问题核对答案和原因。"
+    },
+    {
+      "source": "1. ‘ব্যস্ত বলে যেতে পারি না’—忙しい-এর সঠিক কারণরূপে বলুন।",
+      "target": "1. “因为忙不能去”——用 忙しい 的正确原因形说。"
+    },
+    {
+      "source": "忙しい হলো い-বিশেষণ: い→くて。",
+      "target": "忙しい 是 い-形容词：い→くて。"
+    },
+    {
+      "source": "2. ‘বাস না আসায় সমস্যায় পড়েছি’ বলুন।",
+      "target": "2. 说“巴士没来很困扰”。"
+    },
+    {
+      "source": "3. ‘বৃষ্টির কারণে ম্যাচ বাতিল’—Nで ব্যবহার করুন।",
+      "target": "3. “因雨比赛取消”——用 Nで。"
+    },
+    {
+      "source": "4. ‘কাল ছুটি বলে স্কুল বন্ধ’—ので ব্যবহার করুন।",
+      "target": "4. “明天放假所以学校关门”——用 ので。"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "一句话 Master Key"
+    },
+    {
+      "source": "না করেই অন্য কাজ → ないで; না হওয়ার কারণে ফল → なくて; event noun-এর কারণ → Nで; নরম পূর্ণ কারণ → 普通形＋ので।",
+      "target": "不做做别的 → ないで；因没发生的结果 → なくて；event noun 的原因 → Nで；柔和完整原因 → 普通形＋ので。"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "可信参考"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "大纲与核对"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "这个独立的中文 lesson 结合 Minna no Nihongo II 的 lesson sequence、official JLPT N4 scope 和 Japan Foundation 的 learner resources 制作。例句和中文解释均为新写。"
+    },
+    {
+      "source": "← আগের Lesson 38",
+      "target": "← 上一个 Lesson 38"
+    },
+    {
+      "source": "Nominalizer の：কাজকে বিশেষ্য বানানো",
+      "target": "Nominalizer の：把工作变名词"
+    },
+    {
+      "source": "পরের Lesson 40 →",
+      "target": "下一个 Lesson 40 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson 索引"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "学习目标"
+    },
+    {
+      "source": "1. Vて・いAくて・なA／Nで（কারণ）",
+      "target": "1. Vて・いAくて・なA／Nで（原因）"
+    },
+    {
+      "source": "2. Vなくて（নেতিবাচক কারণ）",
+      "target": "2. Vなくて（否定原因）"
+    },
+    {
+      "source": "3. Nで（ঘটনা/কারণ）",
+      "target": "3. Nで（事件/原因）"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "差别表"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "会话"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress 加载中…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "为学习者免费提供的详细中文 self-study edition。"
+    }
+  ]
+}

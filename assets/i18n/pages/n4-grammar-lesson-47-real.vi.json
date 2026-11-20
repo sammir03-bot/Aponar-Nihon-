@@ -1,0 +1,426 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n4-grammar-lesson-47-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Chuyển đến nội dung chính"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 47 · সময় ও Keigo",
+      "target": "Bài 47 · Thời gian và Keigo"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Tất cả bài học"
+    },
+    {
+      "source": "সময় ও Keigo",
+      "target": "Thời gian và Keigo"
+    },
+    {
+      "source": "ধাপ ৫ · 46–50",
+      "target": "Bước 5 · 46–50"
+    },
+    {
+      "source": "শোনা তথ্য report করা, প্রমাণ দেখে inference করা এবং শব্দ/গন্ধ/স্বাদ/শারীরিক অনুভূতি ভাষায় ধরা।",
+      "target": "Báo cáo thông tin nghe được, suy luận từ bằng chứng và nắm bắt âm thanh/mùi/vị/cảm giác cơ thể bằng ngôn ngữ."
+    },
+    {
+      "source": "3টি বিস্তারিত grammar block",
+      "target": "3 khối ngữ pháp chi tiết"
+    },
+    {
+      "source": "12টি Japanese example",
+      "target": "12 ví dụ tiếng Nhật"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 bài luyện tập kèm giải thích"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Thân thiện ngoại tuyến, di động và in ấn"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Ẩn あ phần đọc"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Chưa hoàn thành"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Đánh dấu hoàn thành"
+    },
+    {
+      "source": "Lesson 47 · লক্ষ্য",
+      "target": "Bài 47 · Mục tiêu"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Sau bài này bạn sẽ có thể"
+    },
+    {
+      "source": "Lesson 43-এর そう ‘দেখে মনে হয়’; Lesson 47-এর そう ‘শুনেছি’। Form-ই সবচেয়ে নির্ভরযোগ্য clue: 降りそう = আকাশ দেখে হবে; 降るそう = কারো কাছে শুনেছি হবে। ようです-এ speaker একাধিক evidence থেকে নিজের inference করেন।",
+      "target": "そう của Bài 43 ‘nhìn có vẻ’; そう của Bài 47 ‘nghe nói’. Dạng là manh mối đáng tin cậy nhất: 降りそう = nhìn bầu trời sẽ; 降るそう = nghe ai đó nói sẽ. Trong ようです người nói tự suy luận từ nhiều bằng chứng."
+    },
+    {
+      "source": "plain form অক্ষত রেখে hearsay そうです তৈরি করবেন",
+      "target": "Tạo そうです tin đồn giữ nguyên dạng thường"
+    },
+    {
+      "source": "source＋によると দিয়ে তথ্যের উৎস জানাবেন",
+      "target": "Cho biết nguồn thông tin bằng nguồn＋によると"
+    },
+    {
+      "source": "ようです-এর verb/adjective/noun সংযোগ আয়ত্ত করবেন",
+      "target": "Nắm kết nối động từ/tính từ/danh từ của ようです"
+    },
+    {
+      "source": "〜がします দিয়ে ইন্দ্রিয়গত অনুভূতি বলবেন",
+      "target": "Nói cảm giác giác quan bằng 〜がします"
+    },
+    {
+      "source": "অন্যের কথা, খবর, ঘোষণা বা পড়া source অনুযায়ী ‘শুনেছি/জানা গেছে’",
+      "target": "Theo lời người khác, tin tức, thông báo hoặc nguồn đã đọc ‘nghe nói/được biết’"
+    },
+    {
+      "source": "গঠন",
+      "target": "Cấu trúc"
+    },
+    {
+      "source": "ধরন",
+      "target": "Loại"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Ví dụ"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "Động từ/tính từ い-A"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-tính từ"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Danh từ"
+    },
+    {
+      "source": "普通形 অক্ষত＋そう",
+      "target": "普通形 nguyên vẹn＋そう"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Giải thích chi tiết"
+    },
+    {
+      "source": "Speaker তথ্যটির source নন; শুধু report করেন। Source দিলে Nによると/の話では: 天気予報によると、明日は雨だそうです।",
+      "target": "Người nói không phải nguồn của thông tin; chỉ báo cáo. Nếu đưa nguồn Nによると/の話では: 天気予報によると、明日は雨だそうです."
+    },
+    {
+      "source": "Hearsay そう নিজে past হয় না; reported content-এর tense বদলায়: 来たそうです = শুনেছি এসেছে। そうでした বললে সাধারণত অন্য grammar/প্রসঙ্গ হয়।",
+      "target": "そう tin đồn tự nó không thành quá khứ; thì của nội dung được báo cáo thay đổi: 来たそうです = nghe nói đã đến. Nếu nói そうでした thường là ngữ pháp/ngữ cảnh khác."
+    },
+    {
+      "source": "Appearance-এর মতো stem কাটবেন না। おいしいそうです = শুনেছি সুস্বাদু; おいしそうです = দেখে সুস্বাদু।",
+      "target": "Đừng cắt gốc như vẻ ngoài. おいしいそうです = nghe nói ngon; おいしそうです = nhìn ngon."
+    },
+    {
+      "source": "な-A/N-এ だ থাকে—Lesson 32/40-এর かもしれない/かどうか-এর বিপরীত নিয়ম।",
+      "target": "Trong tính từ な/danh từ だ vẫn còn — quy tắc ngược với かもしれない/かどうか của Bài 32/40."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Điều cần nhớ"
+    },
+    {
+      "source": "Hearsay-এ negative: おいしくないそうです; appearance negative: おいしくなさそうです।",
+      "target": "Phủ định tin đồn: おいしくないそうです; phủ định vẻ ngoài: おいしくなさそうです."
+    },
+    {
+      "source": "আবহাওয়ার পূর্বাভাস অনুযায়ী কাল তুষার পড়বে শুনেছি।",
+      "target": "Theo dự báo thời tiết nghe nói ngày mai sẽ có tuyết."
+    },
+    {
+      "source": "শুনেছি তানাকা আগামী মাসে বিয়ে করবেন।",
+      "target": "Nghe nói Tanaka sẽ kết hôn tháng sau."
+    },
+    {
+      "source": "শুনেছি ওই দোকানের খাবার সুস্বাদু নয়।",
+      "target": "Nghe nói thức ăn của cửa hàng đó không ngon."
+    },
+    {
+      "source": "শুনেছি আগামী সোমবার ছুটি।",
+      "target": "Nghe nói thứ Hai tới là ngày nghỉ."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Sai"
+    },
+    {
+      "source": "ニュースによると、社長は元気そうです。（শোনা তথ্য report করতে）",
+      "target": "ニュースによると、社長は元気そうです. (để báo cáo thông tin nghe được)"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Đúng"
+    },
+    {
+      "source": "কেন:",
+      "target": "Vì sao:"
+    },
+    {
+      "source": "Source report + な-A: 元気だ＋そう। 元気そう = দেখে সুস্থ মনে হয়।",
+      "target": "Báo cáo nguồn + tính từ な: 元気だ＋そう. 元気そう = nhìn khỏe."
+    },
+    {
+      "source": "দেখা/শোনা/চিহ্ন/তথ্য মিলিয়ে speaker-এর inference—‘মনে হচ্ছে/যেন’",
+      "target": "Suy luận của người nói kết hợp nhìn/nghe/dấu hiệu/thông tin — ‘có vẻ/dường như’"
+    },
+    {
+      "source": "Speaker evidence থেকে conclusion করেন, source-এর বাক্য report করেন না। 電気が消えています。田中さんはもう帰ったようです = আলো নিভে আছে; মনে হয় তানাকা চলে গেছেন।",
+      "target": "Người nói kết luận từ bằng chứng, không báo cáo câu của nguồn. 電気が消えています。田中さんはもう帰ったようです = đèn đã tắt; có vẻ Tanaka đã về."
+    },
+    {
+      "source": "Appearance そう সাধারণত সরাসরি বাহ্যিক impression; よう একাধিক clue/indirect evidence এবং noun comparison-ও পারে। 学生のようです = ছাত্র মনে হচ্ছে; noun-এর সঙ্গে appearance そう সরাসরি হয় না।",
+      "target": "そう vẻ ngoài thường là ấn tượng bên ngoài trực tiếp; よう cũng có thể là nhiều manh mối/bằng chứng gián tiếp và so sánh danh từ. 学生のようです = có vẻ là học sinh; với danh từ そう vẻ ngoài không trực tiếp."
+    },
+    {
+      "source": "নিজের নিশ্চিত সরাসরি অনুভূতিতে plain statement; uncertainty থাকলে ようです।",
+      "target": "Trong cảm giác trực tiếp chắc chắn của bản thân là câu thường; nếu không chắc chắn thì ようです."
+    },
+    {
+      "source": "আলো নিভে আছে। মনে হয় কেউ নেই।",
+      "target": "Đèn đã tắt. Có vẻ không có ai."
+    },
+    {
+      "source": "বাইরে ভেজা। মনে হয় গত রাতে বৃষ্টি হয়েছে।",
+      "target": "Bên ngoài ướt. Có vẻ đêm qua đã mưa."
+    },
+    {
+      "source": "লোকটি এই কোম্পানির কর্মী মনে হচ্ছে।",
+      "target": "Người đó có vẻ là nhân viên của công ty này."
+    },
+    {
+      "source": "তিনি জাপানির মতো জাপানি বলেন।",
+      "target": "Ông ấy nói tiếng Nhật như người Nhật."
+    },
+    {
+      "source": "শব্দ, কণ্ঠ, স্বাদ বা গন্ধ অনুভূত হচ্ছে",
+      "target": "Âm thanh, giọng, vị hoặc mùi đang được cảm nhận"
+    },
+    {
+      "source": "শব্দ/কণ্ঠ",
+      "target": "Âm thanh/giọng"
+    },
+    {
+      "source": "গন্ধ",
+      "target": "Mùi"
+    },
+    {
+      "source": "স্বাদ",
+      "target": "Hương vị"
+    },
+    {
+      "source": "শরীর/ধারণা",
+      "target": "Cơ thể/ý tưởng"
+    },
+    {
+      "source": "する এখানে ‘করা’ নয়; sensory impression ‘আসা/লাগা’। উৎস/ধরন が subject: いいにおいがします।",
+      "target": "する ở đây không phải ‘làm’; là ấn tượng giác quan ‘đến/cảm thấy’. Nguồn/loại là chủ ngữ が: いいにおいがします."
+    },
+    {
+      "source": "聞こえます নির্দিষ্ট শব্দ শ্রবণসীমায় আসে; 音がします speaker একটি sound impression লক্ষ্য করছেন। দুটিই অনেক ক্ষেত্রে সম্ভব, nuance ভিন্ন।",
+      "target": "聞こえます âm thanh cụ thể đến trong tầm nghe; 音がします người nói đang chú ý một ấn tượng âm thanh. Cả hai đều có thể trong nhiều trường hợp, sắc thái khác."
+    },
+    {
+      "source": "Taste/smell source Nの: このお茶は果物の味がします। Adjective সরাসরি predicate-ও সম্ভব: このスープはしょっぱいです (নিশ্চিত স্বাদ)।",
+      "target": "Nguồn vị/mùi Nの: このお茶は果物の味がします. Tính từ trực tiếp làm vị ngữ cũng có thể: このスープはしょっぱいです (vị chắc chắn)."
+    },
+    {
+      "source": "Nをします নয়; অনুভূতি subject がします।",
+      "target": "Không phải Nをします; cảm giác là chủ ngữ がします."
+    },
+    {
+      "source": "পাশের ঘর থেকে অদ্ভুত শব্দ আসছে।",
+      "target": "Từ phòng bên cạnh có âm thanh lạ."
+    },
+    {
+      "source": "এই সাবানে ফুলের গন্ধ।",
+      "target": "Xà phòng này có mùi hoa."
+    },
+    {
+      "source": "এই ক্যান্ডিতে স্ট্রবেরির স্বাদ।",
+      "target": "Kẹo này có vị dâu."
+    },
+    {
+      "source": "মনে হচ্ছে সামান্য জ্বর আছে।",
+      "target": "Có vẻ hơi sốt."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Sự khác biệt trong nháy mắt"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Cái nào trong tình huống nào?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Dạng"
+    },
+    {
+      "source": "সরাসরি আকাশ দেখে",
+      "target": "Nhìn bầu trời trực tiếp"
+    },
+    {
+      "source": "শোনা/report",
+      "target": "Nghe/báo cáo"
+    },
+    {
+      "source": "plain form অক্ষত",
+      "target": "Dạng thường nguyên vẹn"
+    },
+    {
+      "source": "ভেজা মাটি ইত্যাদি evidence",
+      "target": "Bằng chứng như đất ướt"
+    },
+    {
+      "source": "সরাসরি sensory impression",
+      "target": "Ấn tượng giác quan trực tiếp"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Hội thoại thực tế"
+    },
+    {
+      "source": "বন্ধ দোকানের সামনে",
+      "target": "Trước cửa hàng đóng"
+    },
+    {
+      "source": "দোকানের আলো নিভে আছে।",
+      "target": "Đèn cửa hàng đã tắt."
+    },
+    {
+      "source": "মনে হয় আজ বন্ধ।",
+      "target": "Có vẻ hôm nay đóng cửa."
+    },
+    {
+      "source": "কিন্তু বিজ্ঞপ্তিতে খোলা লেখা।",
+      "target": "Nhưng thông báo viết là mở."
+    },
+    {
+      "source": "পাশের লোকের কথায়, হঠাৎ ছুটি হয়েছে শুনেছি।",
+      "target": "Theo lời người bên cạnh, nghe nói đột nhiên nghỉ."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Luyện tập và đáp án kèm giải thích"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Trước tiên viết đáp án vào vở, sau đó nhấn vào câu hỏi để đối chiếu đáp án và lý do."
+    },
+    {
+      "source": "1. ‘খবরে বলেছে কাল বৃষ্টি হবে’—hearsay বলুন।",
+      "target": "1. ‘Tin tức nói ngày mai sẽ mưa’ — hãy nói tin đồn."
+    },
+    {
+      "source": "2. ‘মনে হয় কেউ ঘরে ঢুকেছে’—evidence inference বলুন।",
+      "target": "2. ‘Có vẻ ai đó đã vào phòng’ — hãy nói suy luận bằng chứng."
+    },
+    {
+      "source": "3. ‘এই ফুলে মিষ্টি গন্ধ’ বলুন।",
+      "target": "3. Nói ‘hoa này có mùi ngọt’."
+    },
+    {
+      "source": "4. পার্থক্য লিখুন: おいしそう / おいしいそう。",
+      "target": "4. Viết sự khác biệt: おいしそう / おいしいそう."
+    },
+    {
+      "source": "おいしそう = দেখে সুস্বাদু; おいしいそう = শুনেছি সুস্বাদু।",
+      "target": "おいしそう = nhìn ngon; おいしいそう = nghe nói ngon."
+    },
+    {
+      "source": "Appearance-এ い বাদ; hearsay-এ plain form অক্ষত।",
+      "target": "Trong vẻ ngoài bỏ い; trong tin đồn dạng thường nguyên vẹn."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Chìa khóa chính trong một câu"
+    },
+    {
+      "source": "শোনা বাক্য হুবহু plain＋そう; নিজে evidence মিলিয়ে অনুমান plain＋よう; ইন্দ্রিয়ের impression Nがします। Stem＋そう হলো Lesson 43-এর চোখে-দেখা appearance।",
+      "target": "Câu nghe được nguyên văn thường＋そう; tự kết hợp bằng chứng suy đoán thường＋よう; ấn tượng giác quan Nがします. Gốc＋そう là vẻ ngoài nhìn bằng mắt của Bài 43."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Tài liệu tham khảo đáng tin cậy"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Chương trình và kiểm chứng"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Bài học tiếng Việt độc lập này được tạo bằng cách kết hợp trình tự bài học của Minna no Nihongo II, phạm vi JLPT N4 chính thức và tài nguyên học tập của Japan Foundation. Ví dụ và giải thích tiếng Việt được viết mới."
+    },
+    {
+      "source": "← আগের Lesson 46",
+      "target": "← Bài trước 46"
+    },
+    {
+      "source": "পরের Lesson 48 →",
+      "target": "Bài tiếp theo 48 →"
+    },
+    {
+      "source": "Causative Form：করানো, বাধ্য করা ও অনুমতি দেওয়া",
+      "target": "Causative Form: bắt làm, ép buộc và cho phép"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Mục lục bài học"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Mục tiêu học tập"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Bảng so sánh"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Hội thoại"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Đang tải tiến độ khóa học…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · Ngữ pháp N4 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Phiên bản tự học tiếng Việt chi tiết, miễn phí cho học sinh."
+    }
+  ]
+}

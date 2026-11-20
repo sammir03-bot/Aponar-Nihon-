@@ -1,0 +1,510 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n4-vocab-lesson-39-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N4 Vocabulary Lesson 39 | আপনার নিহোন",
+      "target": "Bài 39 Từ vựng N4 | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "সব লেসন",
+      "target": "Tất cả các bài"
+    },
+    {
+      "source": "জাপানিজ শব্দভাণ্ডার",
+      "target": "Từ vựng tiếng Nhật"
+    },
+    {
+      "source": "প্রথমবার পড়া শিক্ষার্থীর জন্য—জাপানিজ, ふりがな, বাংলা উচ্চারণ ও সহজ বাংলা অর্থ একই কার্ডে। সার্চ, অডিও, শেখা মার্ক ও কুইজও আছে।",
+      "target": "Cho học viên đọc lần đầu — tiếng Nhật, ふりがな, phát âm và nghĩa tiếng Việt dễ hiểu trên cùng một thẻ. Cũng có tìm kiếm, âm thanh, dấu đã học và quiz."
+    },
+    {
+      "source": "শব্দ শেখা শুরু",
+      "target": "Bắt đầu học từ"
+    },
+    {
+      "source": "কুইজ দিন",
+      "target": "Làm quiz"
+    },
+    {
+      "source": "44টি শব্দ",
+      "target": "44 từ"
+    },
+    {
+      "source": "১ম সংস্করণ অনুযায়ী সাজানো",
+      "target": "Sắp xếp theo ấn bản đầu tiên"
+    },
+    {
+      "source": "জাপানিজ অডিও",
+      "target": "Âm thanh tiếng Nhật"
+    },
+    {
+      "source": "ডিভাইসের Japanese voice ব্যবহার করে",
+      "target": "Dùng giọng tiếng Nhật của thiết bị"
+    },
+    {
+      "source": "০ / 44 শেখা",
+      "target": "0 / 44 đã học"
+    },
+    {
+      "source": "এই browser-এ progress সংরক্ষিত থাকবে",
+      "target": "Tiến độ sẽ được lưu trong trình duyệt này"
+    },
+    {
+      "source": "সব",
+      "target": "Tất cả"
+    },
+    {
+      "source": "শেখা হয়েছে",
+      "target": "Đã học"
+    },
+    {
+      "source": "বাকি",
+      "target": "Còn lại"
+    },
+    {
+      "source": "44টি দেখানো হচ্ছে",
+      "target": "Đang hiển thị 44"
+    },
+    {
+      "source": "Lesson 39-এর শব্দ",
+      "target": "Từ của Bài 39"
+    },
+    {
+      "source": "「—」 চিহ্ন মানে আগের স্বরটি একটু লম্বা করে পড়বেন।",
+      "target": "Dấu 「—」 nghĩa là đọc nguyên âm trước hơi dài hơn."
+    },
+    {
+      "source": "↻ একটি random শব্দ",
+      "target": "↻ Một từ ngẫu nhiên"
+    },
+    {
+      "source": "১ম সংস্করণ",
+      "target": "Ấn bản đầu tiên"
+    },
+    {
+      "source": "উচ্চারণ",
+      "target": "Phát âm"
+    },
+    {
+      "source": "কোতাএমাসু",
+      "target": "kotaemasu"
+    },
+    {
+      "source": "[প্রশ্নের] উত্তর দেওয়া",
+      "target": "[Câu hỏi] trả lời"
+    },
+    {
+      "source": "🔊 শুনুন",
+      "target": "🔊 Nghe"
+    },
+    {
+      "source": "⧉ কপি",
+      "target": "⧉ Sao chép"
+    },
+    {
+      "source": "○ শেখা বাকি",
+      "target": "○ Chưa học"
+    },
+    {
+      "source": "তাওরেমাসু",
+      "target": "taoremasu"
+    },
+    {
+      "source": "[ভবন] ধসে পড়া",
+      "target": "[Tòa nhà] sụp đổ"
+    },
+    {
+      "source": "ইয়াকেমাসু",
+      "target": "yakemasu"
+    },
+    {
+      "source": "[বাড়ি] পুড়ে যাওয়া",
+      "target": "[Nhà] cháy"
+    },
+    {
+      "source": "[পাউরুটি] বেক হওয়া",
+      "target": "[Bánh mì] được nướng"
+    },
+    {
+      "source": "[মাংস] ভাজা বা গ্রিল হওয়া",
+      "target": "[Thịt] được chiên hoặc nướng"
+    },
+    {
+      "source": "তো—রিমাসু",
+      "target": "toorimasu"
+    },
+    {
+      "source": "[রাস্তা দিয়ে] যাওয়া; অতিক্রম করা",
+      "target": "[Qua đường] đi; đi qua"
+    },
+    {
+      "source": "শিনিমাসু",
+      "target": "shinimasu"
+    },
+    {
+      "source": "মারা যাওয়া",
+      "target": "Chết"
+    },
+    {
+      "source": "বিক্কুরিশিমাসু",
+      "target": "bikkurishimasu"
+    },
+    {
+      "source": "অবাক হওয়া; চমকে ওঠা",
+      "target": "Ngạc nhiên; giật mình"
+    },
+    {
+      "source": "গাক্কারিশিমাসু",
+      "target": "gakkarishimasu"
+    },
+    {
+      "source": "হতাশ হওয়া",
+      "target": "Thất vọng"
+    },
+    {
+      "source": "আনশিনশিমাসু",
+      "target": "anshinshimasu"
+    },
+    {
+      "source": "নিশ্চিন্ত হওয়া; স্বস্তি পাওয়া",
+      "target": "Yên tâm; nhẹ nhõm"
+    },
+    {
+      "source": "চিকোকুশিমাসু",
+      "target": "chikokushimasu"
+    },
+    {
+      "source": "দেরি করা; দেরিতে পৌঁছানো",
+      "target": "Muộn; đến muộn"
+    },
+    {
+      "source": "সো—তাইশিমাসু",
+      "target": "soutaishimasu"
+    },
+    {
+      "source": "কাজ বা স্কুল থেকে আগে চলে যাওয়া",
+      "target": "Rời công việc hoặc trường sớm"
+    },
+    {
+      "source": "রিকোনশিমাসু",
+      "target": "rikonshimasu"
+    },
+    {
+      "source": "বিবাহবিচ্ছেদ করা",
+      "target": "Ly hôn"
+    },
+    {
+      "source": "ফুকুজাৎসু",
+      "target": "fukuzatsu"
+    },
+    {
+      "source": "জটিল",
+      "target": "Phức tạp"
+    },
+    {
+      "source": "জামা",
+      "target": "jama"
+    },
+    {
+      "source": "বাধাস্বরূপ; পথে বাধা",
+      "target": "Trở ngại; cản đường"
+    },
+    {
+      "source": "কিতানাই",
+      "target": "kitanai"
+    },
+    {
+      "source": "নোংরা",
+      "target": "Bẩn"
+    },
+    {
+      "source": "উরেশিই",
+      "target": "ureshii"
+    },
+    {
+      "source": "আনন্দিত; খুশি",
+      "target": "Vui mừng; hạnh phúc"
+    },
+    {
+      "source": "কানাশিই",
+      "target": "kanashii"
+    },
+    {
+      "source": "দুঃখিত; বিষণ্ণ",
+      "target": "Buồn; buồn bã"
+    },
+    {
+      "source": "হাজুকাশিই",
+      "target": "hazukashii"
+    },
+    {
+      "source": "লজ্জিত; বিব্রত",
+      "target": "Xấu hổ; ngượng"
+    },
+    {
+      "source": "জিশিন",
+      "target": "jishin"
+    },
+    {
+      "source": "ভূমিকম্প",
+      "target": "Động đất"
+    },
+    {
+      "source": "তাইফু—",
+      "target": "taifuu"
+    },
+    {
+      "source": "টাইফুন; ঘূর্ণিঝড়",
+      "target": "Bão; cơn bão"
+    },
+    {
+      "source": "কাজি",
+      "target": "kaji"
+    },
+    {
+      "source": "আগুন; অগ্নিকাণ্ড",
+      "target": "Lửa; hỏa hoạn"
+    },
+    {
+      "source": "বিয়ের উদ্দেশ্যে পাত্র-পাত্রীর আনুষ্ঠানিক সাক্ষাৎ",
+      "target": "Cuộc gặp chính thức của cô dâu chú rể vì mục đích hôn nhân"
+    },
+    {
+      "source": "দেনওয়াদাই",
+      "target": "denwadai"
+    },
+    {
+      "source": "টেলিফোনের খরচ",
+      "target": "Chi phí điện thoại"
+    },
+    {
+      "source": "～দাই",
+      "target": "~dai"
+    },
+    {
+      "source": "～ খরচ; ভাড়া; ফি",
+      "target": "~ chi phí; tiền thuê; phí"
+    },
+    {
+      "source": "ফুরোনতো",
+      "target": "furonto"
+    },
+    {
+      "source": "হোটেলের ফ্রন্ট ডেস্ক; অভ্যর্থনা",
+      "target": "Quầy lễ tân khách sạn; tiếp tân"
+    },
+    {
+      "source": "～গো—শিৎসু",
+      "target": "~goushitsu"
+    },
+    {
+      "source": "～ নম্বর কক্ষ",
+      "target": "~ phòng số"
+    },
+    {
+      "source": "আসে",
+      "target": "ase"
+    },
+    {
+      "source": "ঘাম",
+      "target": "Mồ hôi"
+    },
+    {
+      "source": "তাওরু",
+      "target": "taoru"
+    },
+    {
+      "source": "তোয়ালে",
+      "target": "Khăn"
+    },
+    {
+      "source": "সেক্কেন",
+      "target": "sekken"
+    },
+    {
+      "source": "সাবান",
+      "target": "Xà phòng"
+    },
+    {
+      "source": "ও—জে—",
+      "target": "oozei"
+    },
+    {
+      "source": "অনেক লোক; বহু মানুষ",
+      "target": "Nhiều người; nhiều người ~"
+    },
+    {
+      "source": "ওৎসুকারেসামাদেশিতা",
+      "target": "otsukaresama deshita"
+    },
+    {
+      "source": "আপনার পরিশ্রমের জন্য ধন্যবাদ",
+      "target": "Cảm ơn vì công việc vất vả của bạn"
+    },
+    {
+      "source": "উকাগাইমাসু",
+      "target": "ukagaimasu"
+    },
+    {
+      "source": "আমি আসছি/যাচ্ছি (いきます-এর বিনয়ী রূপ)",
+      "target": "Tôi đến/đi (dạng khiêm tốn của いきます)"
+    },
+    {
+      "source": "তোচু—দে",
+      "target": "tochuu de"
+    },
+    {
+      "source": "পথে; মাঝপথে; চলাকালে",
+      "target": "Trên đường; giữa đường; trong khi"
+    },
+    {
+      "source": "তোরাক্কু",
+      "target": "torakku"
+    },
+    {
+      "source": "ট্রাক; লরি",
+      "target": "Xe tải; xe lorry"
+    },
+    {
+      "source": "বুৎসুকারিমাসু",
+      "target": "butsukarimasu"
+    },
+    {
+      "source": "ধাক্কা লাগা; সংঘর্ষ হওয়া",
+      "target": "Va chạm; đâm"
+    },
+    {
+      "source": "নারাবিমাসু",
+      "target": "narabimasu"
+    },
+    {
+      "source": "সারিতে দাঁড়ানো; লাইন দেওয়া",
+      "target": "Xếp hàng; đứng thành hàng"
+    },
+    {
+      "source": "ওতোনা",
+      "target": "otona"
+    },
+    {
+      "source": "প্রাপ্তবয়স্ক",
+      "target": "Người lớn"
+    },
+    {
+      "source": "ইয়ো—ফুকু",
+      "target": "youfuku"
+    },
+    {
+      "source": "পাশ্চাত্য পোশাক",
+      "target": "Quần áo phương Tây"
+    },
+    {
+      "source": "সে—ইয়ো—কাশিমাসু",
+      "target": "seiyoukashimasu"
+    },
+    {
+      "source": "পাশ্চাত্য রূপ নেওয়া",
+      "target": "Lấy dạng phương Tây"
+    },
+    {
+      "source": "আইমাসু",
+      "target": "aimasu"
+    },
+    {
+      "source": "মাপসই হওয়া; মানানো",
+      "target": "Vừa; phù hợp"
+    },
+    {
+      "source": "ইমাদেহা",
+      "target": "ima de wa"
+    },
+    {
+      "source": "এখনকার দিনে; বর্তমানে",
+      "target": "Ngày nay; hiện tại"
+    },
+    {
+      "source": "সে—জিনশিকি",
+      "target": "seejinshiki"
+    },
+    {
+      "source": "সাবালকত্ব উদ্‌যাপন অনুষ্ঠান",
+      "target": "Lễ trưởng thành"
+    },
+    {
+      "source": "জিকো",
+      "target": "jiko"
+    },
+    {
+      "source": "দুর্ঘটনা",
+      "target": "Tai nạn"
+    },
+    {
+      "source": "কোনো শব্দ পাওয়া যায়নি।",
+      "target": "Không tìm thấy từ nào."
+    },
+    {
+      "source": "অন্য বানান বা বাংলা অর্থ দিয়ে চেষ্টা করুন।",
+      "target": "Hãy thử với cách viết khác hoặc nghĩa tiếng Việt."
+    },
+    {
+      "source": "১০ প্রশ্ন • দুই ধরনের অনুশীলন",
+      "target": "10 câu hỏi • hai loại bài tập"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "কখনো জাপানিজ দেখে বাংলা অর্থ, আবার কখনো বাংলা দেখে সঠিক জাপানিজ বেছে নিন। প্রতিবার নতুন random প্রশ্ন আসবে।",
+      "target": "Đôi khi nhìn tiếng Nhật chọn nghĩa tiếng Việt, đôi khi nhìn tiếng Việt chọn tiếng Nhật đúng. Mỗi lần sẽ có câu hỏi ngẫu nhiên mới."
+    },
+    {
+      "source": "নতুন কুইজ শুরু",
+      "target": "Bắt đầu quiz mới"
+    },
+    {
+      "source": "প্রশ্ন ১ / ১০",
+      "target": "Câu hỏi 1 / 10"
+    },
+    {
+      "source": "স্কোর ০",
+      "target": "Điểm 0"
+    },
+    {
+      "source": "পরের প্রশ্ন",
+      "target": "Câu hỏi tiếp theo"
+    },
+    {
+      "source": "তালিকা নোট:",
+      "target": "Ghi chú danh sách:"
+    },
+    {
+      "source": "আপনার দেওয়া পুরোনো ফাইলের সঙ্গে মিল রেখে Minna no Nihongo Shokyu II-এর ১ম সংস্করণের lesson order ব্যবহার করা হয়েছে। OCR-এ ভাঙা কানা, duplicate example এবং ভুল বাংলা অর্থ বাদ দিয়ে entry-গুলো নতুন করে তৈরি করা হয়েছে। এটি শিক্ষার্থীর সহায়ক free resource; মূল বইয়ের বিকল্প নয়।",
+      "target": "Phù hợp với tệp cũ bạn đã cung cấp, thứ tự bài của ấn bản đầu tiên của Minna no Nihongo Shokyu II đã được sử dụng. Các mục đã được tạo lại, loại bỏ kana bị vỡ trong OCR, ví dụ trùng lặp và nghĩa tiếng Việt sai. Đây là tài nguyên miễn phí hỗ trợ học viên; không thay thế cuốn sách gốc."
+    },
+    {
+      "source": "আগের লেসন",
+      "target": "Bài trước"
+    },
+    {
+      "source": "সব N4 লেসন",
+      "target": "Tất cả các bài N4"
+    },
+    {
+      "source": "পরের লেসন",
+      "target": "Bài tiếp theo"
+    },
+    {
+      "source": "আপনার নিহোন • শিক্ষার্থীদের জন্য সহজ বাংলা জাপানিজ শিক্ষা",
+      "target": "আপনার নিহোন • Học tiếng Nhật tiếng Việt dễ dàng cho học viên"
+    }
+  ]
+}

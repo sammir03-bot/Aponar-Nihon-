@@ -1,0 +1,486 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "n4-grammar-lesson-46-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Pumunta sa pangunahing nilalaman"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 46 · সময় ও Keigo",
+      "target": "Lesson 46 · Oras at Keigo"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Lahat ng Lesson"
+    },
+    {
+      "source": "সময় ও Keigo",
+      "target": "Oras at Keigo"
+    },
+    {
+      "source": "ধাপ ৫ · 46–50",
+      "target": "Hakbang 5 · 46–50"
+    },
+    {
+      "source": "কাজ শুরু হওয়ার ঠিক আগে, চলার ঠিক সময়, শেষ হওয়ার ঠিক পরে, বক্তার কাছে সাম্প্রতিক অতীত এবং প্রমাণভিত্তিক প্রত্যাশা।",
+      "target": "Bago magsimula ang gawain, sa tamang oras ng pagtakbo nito, pagkatapos itong matapos, ang kamakailang nakaraan para sa tagapagsalita at inaasahang batay sa ebidensya."
+    },
+    {
+      "source": "5টি বিস্তারিত grammar block",
+      "target": "5 detalyadong grammar block"
+    },
+    {
+      "source": "16টি Japanese example",
+      "target": "16 Japanese example"
+    },
+    {
+      "source": "5টি ব্যাখ্যাসহ practice",
+      "target": "5 practice na may paliwanag"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile at print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Itago ang あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Hindi pa tapos"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Markahan bilang tapos"
+    },
+    {
+      "source": "Lesson 46 · লক্ষ্য",
+      "target": "Lesson 46 · Layunin"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Ang magagawa mo pagkatapos ng Lesson na ito"
+    },
+    {
+      "source": "বাংলার ‘এইমাত্র’ বা ‘এখন’ Japanese-এ event-এর boundary অনুযায়ী বদলায়। 食べるところ = এখন শুরু করব, 食べているところ = মাঝখানে, 食べたところ = এইমাত্র শেষ। たばかり clock-এর exact মুহূর্ত নয়—বক্তার অনুভূতিতে ‘সাম্প্রতিক’। はず আবার জানা তথ্য থেকে expected conclusion।",
+      "target": "Ang Filipino na 'kanina lang' o 'ngayon' ay nagbabago sa Hapon ayon sa boundary ng event. 食べるところ = magsisimula na ako ngayon, 食べているところ = nasa gitna, 食べたところ = katatapos lang. Ang たばかり ay hindi eksaktong sandali ng orasan—ito ay 'kamakailan' sa pakiramdam ng tagapagsalita. Ang はず naman ay expected conclusion mula sa kilalang impormasyon."
+    },
+    {
+      "source": "তিনটি ところ form দিয়ে event timeline নির্ভুলভাবে বলবেন",
+      "target": "Sasabihin mo nang wasto ang event timeline gamit ang tatlong ところ form"
+    },
+    {
+      "source": "たところ ও たばかり-এর objective immediacy বনাম subjective recency আলাদা করবেন",
+      "target": "Mapag-iiba mo ang objective immediacy ng たところ at subjective recency ng たばかり"
+    },
+    {
+      "source": "はずです দিয়ে evidence-based expectation বলবেন",
+      "target": "Sasabihin mo ang evidence-based expectation gamit ang はずです"
+    },
+    {
+      "source": "はずがない/ないはず-এর সম্পূর্ণ ভিন্ন অর্থ বুঝবেন",
+      "target": "Maiintindihan mo ang ganap na magkaibang kahulugan ng はずがない/ないはず"
+    },
+    {
+      "source": "ঠিক এখন কাজটি শুরু করতে যাচ্ছি—just about to",
+      "target": "Magsisimula na ako ng gawain ngayon—just about to"
+    },
+    {
+      "source": "গঠন",
+      "target": "Istruktura"
+    },
+    {
+      "source": "ধরন",
+      "target": "Uri"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Halimbawa"
+    },
+    {
+      "source": "শুরু-পূর্ব",
+      "target": "Bago magsimula"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detalyadong paliwanag"
+    },
+    {
+      "source": "কাজ এখনো শুরু হয়নি, boundary-এর ঠিক আগে। これから, 今から, ちょうど-এর সঙ্গে স্বাভাবিক।",
+      "target": "Hindi pa nagsisimula ang gawain, bago ang boundary. Natural ito kasama ng これから, 今から, ちょうど."
+    },
+    {
+      "source": "Simple future これから食べます কেবল ‘এখন খাব’; 食べるところです ‘খেতে বসেছি/শুরু করার ঠিক মুহূর্তে’—তাৎক্ষণিকতা বেশি।",
+      "target": "Ang simple future na これから食べます ay 'kakain ako ngayon' lang; ang 食べるところです ay 'umupo na ako upang kumain/nasa tamang sandali ng pagsisimula'—mas mataas ang immediacy."
+    },
+    {
+      "source": "ところ মূলত ‘স্থান’, কিন্তু এখানে সময়ের position—event timeline-এর কোন জায়গায় আছি।",
+      "target": "Ang ところ ay orihinal na 'lugar', ngunit dito ito ay position ng oras—kung saang lugar ako sa event timeline."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Ang dapat tandaan"
+    },
+    {
+      "source": "এখনই মিটিং শুরু করতে যাচ্ছি।",
+      "target": "Magsisimula na ako ng meeting ngayon."
+    },
+    {
+      "source": "ঠিক এখন বাড়ি থেকে বের হওয়ার মুহূর্ত।",
+      "target": "Ito ang tamang sandali ng paglabas ng bahay ngayon."
+    },
+    {
+      "source": "এখন দুপুরের খাবার বানাতে যাচ্ছি।",
+      "target": "Gagawa na ako ng tanghalian ngayon."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Mali"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Tama"
+    },
+    {
+      "source": "কেন:",
+      "target": "Bakit:"
+    },
+    {
+      "source": "ところ-এর আগে plain dictionary form।",
+      "target": "Bago ang ところ, plain dictionary form."
+    },
+    {
+      "source": "ঠিক এই মুহূর্তে কাজের মাঝখানে—right in the middle of",
+      "target": "Sa tamang sandaling ito, nasa gitna ng gawain—right in the middle of"
+    },
+    {
+      "source": "মধ্যবর্তী",
+      "target": "Nasa gitna"
+    },
+    {
+      "source": "Vています-এর চলমান অর্থের চেয়ে focus বেশি: ‘এই মুহূর্তেই কাজটি চলছে, এখনও শেষ হয়নি’। ফোনে status update-এ বহুল।",
+      "target": "Mas mataas ang focus kaysa sa patuloy na kahulugan ng Vています: 'sa sandaling ito mismo, nagpapatuloy ang gawain, hindi pa ito tapos'. Madalas ito sa status update sa telepono."
+    },
+    {
+      "source": "Habitual ています-এর সঙ্গে সাধারণত নয়; 毎日勉強しているところです অস্বাভাবিক, যদি নির্দিষ্ট current phase বোঝানো না হয়।",
+      "target": "Karaniwang hindi ito kasama ng habitual na ています; ang 毎日勉強しているところです ay hindi natural, maliban kung tinutukoy ang isang tiyak na current phase."
+    },
+    {
+      "source": "ている-এর casual contraction てるところ কথায় শোনা যায়; formal content-এ পূর্ণ form রাখুন।",
+      "target": "Ang casual contraction ng ている na てるところ ay maririnig sa pananalita; sa formal content, panatilihin ang buong form."
+    },
+    {
+      "source": "Process-এর ভিতর: Vているところ。",
+      "target": "Sa loob ng process: Vているところ."
+    },
+    {
+      "source": "এখন ঠিক ওই বিষয়টি খতিয়ে দেখছি।",
+      "target": "Sinusuri ko mismo ang bagay na iyon ngayon."
+    },
+    {
+      "source": "এখন রান্নার মাঝখানে, পরে ফোন করব।",
+      "target": "Nasa gitna ako ng pagluluto ngayon, tatawag ako mamaya."
+    },
+    {
+      "source": "বিভাগীয় প্রধান এখন অতিথির সঙ্গে কথার মাঝখানে আছেন।",
+      "target": "Nasa gitna ng pakikipag-usap ang department head sa bisita ngayon."
+    },
+    {
+      "source": "今、調べたところです。（এখনো খুঁজছি বলতে）",
+      "target": "今、調べたところです. (para sabihing naghahanap pa rin ako)"
+    },
+    {
+      "source": "চলমান phase-এ ている; たところ হলে এইমাত্র শেষ।",
+      "target": "Sa patuloy na phase, ている; kung たところ, katatapos lang."
+    },
+    {
+      "source": "ঠিক এইমাত্র কাজ শেষ হয়েছে—just finished",
+      "target": "Katatapos lang ng gawain sa sandaling ito—just finished"
+    },
+    {
+      "source": "শেষ-পরবর্তী",
+      "target": "Pagkatapos matapos"
+    },
+    {
+      "source": "Event boundary-এর ঠিক পরে; সময়গতভাবে খুব কাছাকাছি। 今, たった今, ちょうど clue।",
+      "target": "Pagkatapos mismo ng event boundary; napakalapit sa oras. Ang 今, たった今, ちょうど ay clue."
+    },
+    {
+      "source": "নতুন ফল/তথ্যও বোঝাতে পারে: 今確認したところ、間違いがありました (যাচাই করে দেখলাম…)—এটি উচ্চতর extension। N4-এ immediate completion আগে ধরুন।",
+      "target": "Maaari rin itong mangahulugan ng bagong resulta/impormasyon: 今確認したところ、間違いがありました (sinuri ko at nakita ko…)—ito ay mas mataas na extension. Sa N4, unawain muna ang immediate completion."
+    },
+    {
+      "source": "এক ঘণ্টা/এক বছর আগে হলে সাধারণত たところ নয়, যদি relative context-এ ‘ঠিক পরে’ বোঝানো না হয়।",
+      "target": "Kung isang oras/isang taon na ang nakalipas, karaniwang hindi ito たところ, maliban kung ang ibig sabihin sa relative context ay 'pagkatapos mismo'."
+    },
+    {
+      "source": "Immediate completion; clock-এ ‘খুব সাম্প্রতিক’।",
+      "target": "Immediate completion; sa orasan, 'napaka-kamakailan'."
+    },
+    {
+      "source": "এইমাত্র স্টেশনে পৌঁছেছি।",
+      "target": "Kakarating ko lang sa istasyon."
+    },
+    {
+      "source": "মিটিং এইমাত্র শেষ হয়েছে।",
+      "target": "Katatapos lang ng meeting."
+    },
+    {
+      "source": "এইমাত্র ইমেইল পাঠিয়েছি।",
+      "target": "Kakapadala ko lang ng email."
+    },
+    {
+      "source": "এক বছর সাধারণত immediate নয়; বক্তার subjective ‘সাম্প্রতিক’ হলে ばかり সম্ভব।",
+      "target": "Ang isang taon ay karaniwang hindi immediate; kung ito ay subjective na 'kamakailan' ng tagapagsalita, posible ang ばかり."
+    },
+    {
+      "source": "বক্তার অনুভূতিতে অল্প আগে কাজ হয়েছে—just/recently",
+      "target": "Sa pakiramdam ng tagapagsalita, ang gawain ay nangyari kamakailan lang—just/recently"
+    },
+    {
+      "source": "সাম্প্রতিক",
+      "target": "Kamakailan"
+    },
+    {
+      "source": "Exact সময়ের সীমা নেই। পাঁচ মিনিট, এক সপ্তাহ, এমনকি জীবনপর্ব অনুযায়ী এক বছরও speaker-এর কাছে ‘এই তো সেদিন’ হতে পারে।",
+      "target": "Walang eksaktong limitasyon ng oras. Limang minuto, isang linggo, kahit isang taon ayon sa yugto ng buhay ay maaaring maging 'kanina lang' para sa speaker."
+    },
+    {
+      "source": "たところ objective immediate boundary; たばかり subjective recency। 今食べたところです = এইমাত্র শেষ; 先週食べたばかりです = গত সপ্তাহেই তো খেয়েছি।",
+      "target": "Ang たところ ay objective immediate boundary; ang たばかり ay subjective recency. 今食べたところです = katatapos lang; 先週食べたばかりです = kumain na ako noong nakaraang linggo lang."
+    },
+    {
+      "source": "ばかり-এর অন্য অর্থ ‘শুধুই’ (遊んでばかり) আছে; এখানে た-form＋ばかり = recently completed।",
+      "target": "May ibang kahulugan ang ばかり na 'lang' (遊んでばかり); dito, ang た-form＋ばかり = recently completed."
+    },
+    {
+      "source": "Time expression থাকলেও speaker judgement: 三か月前に始めたばかりです।",
+      "target": "Kahit may time expression, ito ay speaker judgement: 三か月前に始めたばかりです."
+    },
+    {
+      "source": "আমি গত মাসেই এই কোম্পানিতে যোগ দিয়েছি।",
+      "target": "Sumali ako sa kompanyang ito noong nakaraang buwan lang."
+    },
+    {
+      "source": "ফোনটি সবে কিনেছি, অথচ নষ্ট হয়ে গেছে।",
+      "target": "Kakabili ko lang ng telepono, pero nasira na ito."
+    },
+    {
+      "source": "সবে দুপুরের খাবার খেয়েছি, তাই এখনো পেট ভরা।",
+      "target": "Kakakain ko lang ng tanghalian, kaya busog pa rin ako."
+    },
+    {
+      "source": "সাম্প্রতিক completion-এ Vた＋ばかり।",
+      "target": "Sa kamakailang completion, Vた＋ばかり."
+    },
+    {
+      "source": "জানা তথ্য/যুক্তি অনুযায়ী এমন হওয়ার কথা—strong expectation",
+      "target": "Dapat itong mangyari ayon sa kilalang impormasyon/logika—strong expectation"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "Verb/い-A"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-adjective"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Pangngalan"
+    },
+    {
+      "source": "でしょう অনুমান; はず evidence/plan/logic থেকে stronger ‘হওয়ার কথা’। 時刻表によると、電車は十時に来るはずです।",
+      "target": "Ang でしょう ay hula; ang はず ay mas malakas na 'dapat mangyari' mula sa evidence/plan/logic. 時刻表によると、電車は十時に来るはずです."
+    },
+    {
+      "source": "Vないはず = না হওয়ার কথা। Vるはずがない = হওয়ার কোনো কথাই নেই/অসম্ভব। অবস্থান বদলালে অর্থ উল্টে যায়।",
+      "target": "Ang Vないはず = hindi dapat mangyari. Ang Vるはずがない = walang paraan na mangyari ito/imposible. Kung magbago ang posisyon, mababaligtad ang kahulugan."
+    },
+    {
+      "source": "নিজের simple intention-এ はず নয়: 私は明日行くはずです অস্বাভাবিক, কারণ নিজের plan নিশ্চিত জানি—行く予定です/つもりです। তবে নিজের ওপর বাহ্যিক schedule হলে 私も参加するはずになっています ইত্যাদি সম্ভব।",
+      "target": "Hindi はず sa sariling simple intention: ang 私は明日行くはずです ay hindi natural, dahil tiyak kong alam ang sarili kong plano—行く予定です/つもりです. Ngunit kung may panlabas na schedule sa sarili, posible ang 私も参加するはずになっています at iba pa."
+    },
+    {
+      "source": "Expectation ভুল হলে: 来るはずでしたが、来ませんでした।",
+      "target": "Kung mali ang expectation: 来るはずでしたが、来ませんでした."
+    },
+    {
+      "source": "তানাকা কথা দিয়েছেন, তাই আসার কথা।",
+      "target": "Nangako si Tanaka, kaya dapat siyang dumating."
+    },
+    {
+      "source": "আজ রবিবার, তাই ব্যাংক বন্ধ থাকার কথা।",
+      "target": "Linggo ngayon, kaya dapat sarado ang bangko."
+    },
+    {
+      "source": "চাবি টেবিলে রেখেছি, তাই সেখানেই থাকার কথা।",
+      "target": "Inilagay ko ang susi sa mesa, kaya dapat nandoon ito."
+    },
+    {
+      "source": "এত সহজ সমস্যা ভুল করার কথা নয়।",
+      "target": "Hindi dapat magkamali sa ganoon kadaling problema."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Pagkakaiba sa isang sulyap"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Alin sa anong sitwasyon?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Form"
+    },
+    {
+      "source": "Timeline/মানসিকতা",
+      "target": "Timeline/kaisipan"
+    },
+    {
+      "source": "শুরু হওয়ার ঠিক আগে",
+      "target": "Bago magsimula"
+    },
+    {
+      "source": "ঠিক মাঝখানে",
+      "target": "Sa tamang gitna"
+    },
+    {
+      "source": "শেষের ঠিক পরে",
+      "target": "Pagkatapos mismo matapos"
+    },
+    {
+      "source": "speaker-এর কাছে সাম্প্রতিক",
+      "target": "Kamakailan para sa speaker"
+    },
+    {
+      "source": "先週/先月-ও সম্ভব",
+      "target": "Posible rin ang 先週/先月"
+    },
+    {
+      "source": "তথ্য থেকে expected",
+      "target": "Inaasahan mula sa impormasyon"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Tunay na Pag-uusap"
+    },
+    {
+      "source": "ফোনে কাজের status",
+      "target": "Status ng trabaho sa telepono"
+    },
+    {
+      "source": "রিপোর্ট হয়ে গেছে?",
+      "target": "Tapos na ba ang ulat?"
+    },
+    {
+      "source": "এখন শেষ পৃষ্ঠাটি লিখছি।",
+      "target": "Isinusulat ko ang huling pahina ngayon."
+    },
+    {
+      "source": "মিটিং তিনটা থেকে। সময়মতো হবে?",
+      "target": "Ang meeting ay mula alas-tres. Matatapos ba ito sa oras?"
+    },
+    {
+      "source": "জি। আর দশ মিনিটে শেষ হওয়ার কথা।",
+      "target": "Oo. Dapat itong matapos sa loob ng sampung minuto."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Suriin ang sarili mo"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice at sagot na may paliwanag"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Isulat muna ang sagot sa kuwaderno, pagkatapos ay pindutin ang tanong at itugma ang sagot at dahilan."
+    },
+    {
+      "source": "1. ‘এখনই বের হতে যাচ্ছি’ বলুন।",
+      "target": "1. Sabihin ang 'lalabas na ako ngayon'."
+    },
+    {
+      "source": "2. ‘এখন ঠিক খাবার খাচ্ছি’ বলুন।",
+      "target": "2. Sabihin ang 'kumakain ako mismo ngayon'."
+    },
+    {
+      "source": "3. ‘এইমাত্র পৌঁছেছি’ বলুন।",
+      "target": "3. Sabihin ang 'kakarating ko lang'."
+    },
+    {
+      "source": "4. ‘সবে চাকরি শুরু করেছি’ বলুন।",
+      "target": "4. Sabihin ang 'kakasimula ko lang ng trabaho'."
+    },
+    {
+      "source": "5. ‘আজ দোকান খোলা থাকার কথা’ বলুন।",
+      "target": "5. Sabihin ang 'dapat bukas ang tindahan ngayon'."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Master Key sa isang pangungusap"
+    },
+    {
+      "source": "Event-এর আগে/মাঝে/ঠিক পরে = る／ている／た＋ところ; subjective ‘সবে’ = たばかり; জানা তথ্য থেকে ‘হওয়ার কথা’ = はず。",
+      "target": "Bago/nasa gitna/pagkatapos mismo ng event = る／ている／た＋ところ; subjective na 'kaka' = たばかり; 'dapat mangyari' mula sa kilalang impormasyon = はず."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Pinagkakatiwalaang reference"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus at pag-verify"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Ang independiyenteng Filipino lesson na ito ay ginawa sa pamamagitan ng pagsasama ng lesson sequence ng Minna no Nihongo II, official JLPT N4 scope at learner resources ng Japan Foundation. Ang mga halimbawa at Filipino na paliwanag ay bagong isinulat."
+    },
+    {
+      "source": "← আগের Lesson 45",
+      "target": "← Nakaraang Lesson 45"
+    },
+    {
+      "source": "পরের Lesson 47 →",
+      "target": "Susunod na Lesson 47 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Index ng Lesson"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Layunin sa pagkatuto"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Talahanayan ng pagkakaiba"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Naglo-load ang Course progress…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Para sa mga mag-aaral, libre at detalyadong Filipino self-study edition."
+    }
+  ]
+}

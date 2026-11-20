@@ -1,0 +1,426 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "n4-grammar-lesson-45-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Pumunta sa pangunahing nilalaman"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 45 · প্রয়োগ ও সূক্ষ্মতা",
+      "target": "Lesson 45 · Aplikasyon at nuance"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Lahat ng Lesson"
+    },
+    {
+      "source": "প্রয়োগ ও সূক্ষ্মতা",
+      "target": "Paggamit at mga detalye"
+    },
+    {
+      "source": "ধাপ ৪ · 41–45",
+      "target": "Hakbang 4 · 41–45"
+    },
+    {
+      "source": "সম্ভাব্য বিশেষ পরিস্থিতিতে করণীয়, অনাকাঙ্ক্ষিত ঘটনা সামলানো এবং প্রত্যাশার বিপরীত ফল/আফসোস প্রকাশ।",
+      "target": "Kung ano ang gagawin sa posibleng espesyal na sitwasyon, paghawak ng hindi inaasahang pangyayari at pagpapahayag ng resultang laban sa inaasahan/pagsisisi."
+    },
+    {
+      "source": "3টি বিস্তারিত grammar block",
+      "target": "3 detalyadong grammar block"
+    },
+    {
+      "source": "11টি Japanese example",
+      "target": "11 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice na may paliwanag"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile at print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Itago ang あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Hindi pa tapos"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Markahan bilang tapos"
+    },
+    {
+      "source": "Lesson 45 · লক্ষ্য",
+      "target": "Lesson 45 · Layunin"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Ang magagawa mo pagkatapos ng Lesson na ito"
+    },
+    {
+      "source": "場合は এবং のに দুটোই দুই clause যুক্ত করে, কিন্তু মানসিক দিক উল্টো। 場合は বলে ‘এই case ঘটলে কী করব’; のに বলে ‘এত কিছুর পরও প্রত্যাশার বিপরীত কেন হলো’।",
+      "target": "Ang 場合は at のに ay parehong nag-uugnay ng dalawang clause, ngunit magkasalungat ang mental na direksyon. Ang 場合は ay nagsasabing 'kung mangyari ang case na ito, ano ang gagawin ko'; ang のに ay nagsasabing 'kahit pagkatapos ng lahat ng ito, bakit ito naging laban sa inaasahan'."
+    },
+    {
+      "source": "verb, い-A, な-A ও noun-এর সঙ্গে 場合は সঠিক form বসাবেন",
+      "target": "Ilalagay mo ang tamang form ng 場合は kasama ng verb, い-A, な-A at noun"
+    },
+    {
+      "source": "manual, rule ও emergency instruction-এ 場合は ব্যবহার করবেন",
+      "target": "Gagamitin mo ang 場合は sa manual, rule at emergency instruction"
+    },
+    {
+      "source": "のに দিয়ে unexpected contrast ও আবেগ প্রকাশ করবেন",
+      "target": "Ihahayag mo ang unexpected contrast at emosyon gamit ang のに"
+    },
+    {
+      "source": "のに, ても, けど-এর nuance আলাদা করবেন",
+      "target": "Mapag-iiba mo ang nuance ng のに, ても, けど"
+    },
+    {
+      "source": "নির্দিষ্ট situation/case ঘটলে—বিশেষ করে সম্ভাব্য, সমস্যা বা আনুষ্ঠানিক পরিস্থিতি",
+      "target": "Kung mangyari ang isang tiyak na situation/case—lalo na posibleng, problema o pormal na sitwasyon"
+    },
+    {
+      "source": "গঠন",
+      "target": "Istruktura"
+    },
+    {
+      "source": "ধরন",
+      "target": "Uri"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Halimbawa"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "Verb"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-adjective"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-adjective"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Pangngalan"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detalyadong paliwanag"
+    },
+    {
+      "source": "場合（ばあい） একটি noun ‘case/situation’; তাই な-A＋な, N＋の। Verb tense situation-এর সময়/সম্পন্নতা দেখায়: 故障した場合は = নষ্ট হয়ে গেলে/নষ্ট হওয়ার case; 故障する場合は = নষ্ট হওয়ার সম্ভাব্য case।",
+      "target": "Ang 場合（ばあい）ay isang noun na 'case/situation'; kaya な-A＋な, N＋の. Ipinapakita ng verb tense ang oras/pagkakumpleto ng situation: 故障した場合は = kung masira/ang case ng pagkasira; 故障する場合は = posibleng case ng pagkasira."
+    },
+    {
+      "source": "নির্দেশিকা, নিয়ম, application, emergency, customer service-এ বহুল: 分からない場合は、担当者に聞いてください।",
+      "target": "Madalas ito sa manual, panuntunan, application, emergency, customer service: 分からない場合は、担当者に聞いてください."
+    },
+    {
+      "source": "খুব সাধারণ recurring condition-এ と/ば সহজ; 場合は scenario-কে আলাদা case হিসেবে তুলে ধরে এবং formal শোনায়।",
+      "target": "Sa napaka-karaniwang recurring condition, madali ang と/ば; inihaharap ng 場合は ang scenario bilang hiwalay na case at nagtunog pormal."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Ang dapat tandaan"
+    },
+    {
+      "source": "Main clause-এ instruction/request স্বাভাবিক: 問題がある場合は、連絡してください。",
+      "target": "Natural ang instruction/request sa main clause: 問題がある場合は、連絡してください."
+    },
+    {
+      "source": "ট্রেন দেরি করলে অফিসে যোগাযোগ করুন।",
+      "target": "Kung mahuli ang tren, makipag-ugnayan sa opisina."
+    },
+    {
+      "source": "পাসওয়ার্ড ভুলে গেলে এখানে চাপুন।",
+      "target": "Kung makalimutan mo ang password, pindutin dito."
+    },
+    {
+      "source": "ভূমিকম্পের ক্ষেত্রে লিফট ব্যবহার করবেন না।",
+      "target": "Sa kaso ng lindol, huwag gumamit ng elevator."
+    },
+    {
+      "source": "বুকিং প্রয়োজন হলে আগের দিনের মধ্যে ফোন করব।",
+      "target": "Kung kailangan ng booking, tatawag ako bago ang araw na iyon."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Mali"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Tama"
+    },
+    {
+      "source": "কেন:",
+      "target": "Bakit:"
+    },
+    {
+      "source": "Noun 雨＋の＋場合; な নয়。",
+      "target": "Noun na 雨＋の＋場合; hindi な."
+    },
+    {
+      "source": "যদিও/সত্ত্বেও—প্রত্যাশার বিপরীত ফল, প্রায়ই বিস্ময়/অসন্তোষ/আফসোস",
+      "target": "Kahit na/sa kabila ng—resultang laban sa inaasahan, madalas pagkamangha/kawalang-kasiyahan/pagsisisi"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "Verb/い-A"
+    },
+    {
+      "source": "Speaker-এর প্রত্যাশা: ‘পড়েছি → পাস করার কথা’; বাস্তব: ফেল। 勉強したのに、試験に落ちました—এই mismatch-ই のに।",
+      "target": "Expectation ng speaker: 'nag-aral ako → dapat pumasa ako'; realidad: bumagsak. 勉強したのに、試験に落ちました—ang mismatch na ito ang のに."
+    },
+    {
+      "source": "কেবল neutral contrast নয়; আবেগ/অপ্রত্যাশিত ফল থাকে। তাই main clause-এ বক্তার command/intention সাধারণত অস্বাভাবিক: 雨なのに、出かけましょう ✕ (শুধু neutral contrast হলে けど/ても)।",
+      "target": "Hindi lang ito neutral contrast; may emosyon/hindi inaasahang resulta. Kaya sa main clause, karaniwang hindi natural ang command/intention ng tagapagsalita: 雨なのに、出かけましょう ✕ (kung neutral contrast lang, けど/ても)."
+    },
+    {
+      "source": "Sentence শেষে のに…/のに。 রেখে complaint/অসম্পূর্ণ আফসোস: 何度も電話したのに…。 = এতবার ফোন করলাম, তবু…",
+      "target": "Sa dulo ng sentence, iiwan ang のに…/のに。 bilang reklamo/hindi kumpletong pagsisisi: 何度も電話したのに…. = tumawag ako nang maraming beses, pero…"
+    },
+    {
+      "source": "Lesson 42-এর utility のに আলাদা: 料理するのに便利です (রান্নায় সুবিধাজনক)—এখানে পরের predicate utility/cost।",
+      "target": "Hiwalay ang utility na のに ng Lesson 42: 料理するのに便利です (maginhawa sa pagluluto)—dito, ang susunod na predicate ay utility/cost."
+    },
+    {
+      "source": "Expected result নয়, actual surprising result main clause-এ।",
+      "target": "Hindi expected result, kundi actual surprising result ang nasa main clause."
+    },
+    {
+      "source": "ওষুধ খেয়েছি, তবু জ্বর আছে।",
+      "target": "Uminom na ako ng gamot, pero may lagnat pa rin ako."
+    },
+    {
+      "source": "ঘরটি ছোট, অথচ ভাড়া বেশি।",
+      "target": "Maliit ang kuwarto, ngunit mataas ang upa."
+    },
+    {
+      "source": "তানাকা জাপানি হওয়া সত্ত্বেও সুশি অপছন্দ করেন।",
+      "target": "Kahit Hapon si Tanaka, ayaw niya ng sushi."
+    },
+    {
+      "source": "রবিবার হলেও অফিসে যেতে হবে।",
+      "target": "Kahit Linggo, kailangan kong pumunta sa opisina."
+    },
+    {
+      "source": "な-বিশেষণ＋な＋のに।",
+      "target": "な-adjective＋な＋のに."
+    },
+    {
+      "source": "のに বনাম ても বনাম けど",
+      "target": "のに laban sa ても laban sa けど"
+    },
+    {
+      "source": "unexpected result, hypothetical concession এবং সাধারণ contrast",
+      "target": "unexpected result, hypothetical concession at karaniwang contrast"
+    },
+    {
+      "source": "のに actual fact + violated expectation + emotion। ても actual বা hypothetical concession: 雨が降っても行きます = বৃষ্টি হলেও যাব (speaker intention সম্ভব)।",
+      "target": "Ang のに ay actual fact + violated expectation + emotion. Ang ても ay actual o hypothetical concession: 雨が降っても行きます = pupunta ako kahit umulan (posible ang speaker intention)."
+    },
+    {
+      "source": "けど/が neutral contrast বা soft introduction; আবেগ বাধ্যতামূলক নয়: 小さいけど便利です।",
+      "target": "Ang けど/が ay neutral contrast o soft introduction; hindi sapilitan ang emosyon: 小さいけど便利です."
+    },
+    {
+      "source": "Main clause intention/command হলে ても/けど বেছে নিন: 雨でも行きましょう। のに বললে ‘বৃষ্টি হচ্ছে অথচ চল যাই’ logic অস্বাভাবিক, বিশেষ context ছাড়া।",
+      "target": "Kung ang main clause ay intention/command, piliin ang ても/けど: 雨でも行きましょう. Kung sasabihin ang のに, ang logic na 'umuulan pero tara na' ay hindi natural, maliban sa espesyal na context."
+    },
+    {
+      "source": "নিজের future decision ‘তবুও করব’ → ても; ঘটে যাওয়া হতাশা → のに।",
+      "target": "Sariling future decision na 'gagawin ko pa rin' → ても; nangyaring pagkadismaya → のに."
+    },
+    {
+      "source": "বৃষ্টি হলেও ম্যাচ করব।",
+      "target": "Gagawin ko ang laban kahit umulan."
+    },
+    {
+      "source": "বৃষ্টি হয়েছিল, তবুও (অপ্রত্যাশিতভাবে) ম্যাচ হয়েছে।",
+      "target": "Umuulan, pero (hindi inaasahan) natuloy ang laban."
+    },
+    {
+      "source": "দোকানটি ছোট, কিন্তু খাবার ভালো।",
+      "target": "Maliit ang tindahan, ngunit masarap ang pagkain."
+    },
+    {
+      "source": "雨が降るのに、明日出かけます。（নিজের plan)",
+      "target": "雨が降るのに、明日出かけます. (sariling plano)"
+    },
+    {
+      "source": "নিজের ‘বৃষ্টি হলেও যাব’ decision-এ ても।",
+      "target": "Sa sariling desisyon na 'pupunta ako kahit umulan', ても."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Pagkakaiba sa isang sulyap"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Alin sa anong sitwasyon?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Form"
+    },
+    {
+      "source": "বিশেষ case ঘটলে",
+      "target": "Kung mangyari ang espesyal na case"
+    },
+    {
+      "source": "করণীয়/নির্দেশ",
+      "target": "Kung ano ang gagawin/tagubilin"
+    },
+    {
+      "source": "fact থাকা সত্ত্বেও unexpected",
+      "target": "unexpected sa kabila ng pagkakaroon ng fact"
+    },
+    {
+      "source": "ফল/আবেগ; intention নয়",
+      "target": "Resulta/emosyon; hindi intention"
+    },
+    {
+      "source": "speaker intention/command সম্ভব",
+      "target": "Posible ang speaker intention/command"
+    },
+    {
+      "source": "সাধারণ contrast/soft lead-in",
+      "target": "Karaniwang contrast/soft lead-in"
+    },
+    {
+      "source": "neutral ও flexible",
+      "target": "neutral at flexible"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Tunay na Pag-uusap"
+    },
+    {
+      "source": "অনলাইন ফর্মের সমস্যা",
+      "target": "Problema sa online form"
+    },
+    {
+      "source": "যতবারই লিখি, error হয়।",
+      "target": "Gaano man karaming beses akong magsulat, nagkakaroon ng error."
+    },
+    {
+      "source": "error হলে screen save করুন।",
+      "target": "Kung magkaroon ng error, i-save ang screen."
+    },
+    {
+      "source": "নির্দেশ অনুযায়ী করেও হয়নি।",
+      "target": "Hindi ito gumana kahit ginawa ko ayon sa tagubilin."
+    },
+    {
+      "source": "তাহলে support-এ যোগাযোগ করি।",
+      "target": "Kung gayon, makikipag-ugnayan ako sa support."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Suriin ang sarili mo"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice at sagot na may paliwanag"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Isulat muna ang sagot sa kuwaderno, pagkatapos ay pindutin ang tanong at itugma ang sagot at dahilan."
+    },
+    {
+      "source": "1. ‘আগুন লাগলে এই দরজা ব্যবহার করুন’ বলুন।",
+      "target": "1. Sabihin ang 'kung magkasunog, gamitin ang pintong ito'."
+    },
+    {
+      "source": "2. ‘সুবিধাজনক হওয়া সত্ত্বেও ব্যবহার করি না’ বলুন।",
+      "target": "2. Sabihin ang 'kahit maginhawa ito, hindi ko ito ginagamit'."
+    },
+    {
+      "source": "3. ‘পড়েছি, তবু বুঝিনি’ বলুন।",
+      "target": "3. Sabihin ang 'nag-aral ako, pero hindi ko naintindihan'."
+    },
+    {
+      "source": "4. ‘বৃষ্টি হলেও যাব’—নিজের intention বলুন।",
+      "target": "4. 'Pupunta ako kahit umulan'—sabihin ang sariling intention."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Master Key sa isang pangungusap"
+    },
+    {
+      "source": "সম্ভাব্য special case ও করণীয় → 場合は; সত্য ঘটেও expectation ভাঙলে → のに; hypothetical ‘হলেও করব’ → ても; নিরপেক্ষ contrast → けど।",
+      "target": "Posibleng special case at kung ano ang gagawin → 場合は; kung masira ang expectation kahit nangyari ang katotohanan → のに; hypothetical na 'gagawin ko kahit' → ても; neutral contrast → けど."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Pinagkakatiwalaang reference"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus at pag-verify"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Ang independiyenteng Filipino lesson na ito ay ginawa sa pamamagitan ng pagsasama ng lesson sequence ng Minna no Nihongo II, official JLPT N4 scope at learner resources ng Japan Foundation. Ang mga halimbawa at Filipino na paliwanag ay bagong isinulat."
+    },
+    {
+      "source": "← আগের Lesson 44",
+      "target": "← Nakaraang Lesson 44"
+    },
+    {
+      "source": "পরের Lesson 46 →",
+      "target": "Susunod na Lesson 46 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Index ng Lesson"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Layunin sa pagkatuto"
+    },
+    {
+      "source": "3. のに বনাম ても বনাম けど",
+      "target": "3. のに laban sa ても laban sa けど"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Talahanayan ng pagkakaiba"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Naglo-load ang Course progress…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Para sa mga mag-aaral, libre at detalyadong Filipino self-study edition."
+    }
+  ]
+}

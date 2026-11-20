@@ -1,0 +1,270 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n5-grammar-lesson-08-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 8 | い-Adjective / な-Adjective + とても / あまり | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 8 | い-Adjective / な-Adjective + とても / あまり | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "মানুষ/জিনিস/জায়গা কেমন — সুন্দর, নতুন, ব্যস্ত, ভালো ইত্যাদি বলা",
+      "target": "人/物/地方怎么样——说漂亮、新、忙、好等"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar 开始"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "今天的 Learning Goal"
+    },
+    {
+      "source": "Adjective আলাদা করা",
+      "target": "区分 Adjective"
+    },
+    {
+      "source": "বর্ণনা দেওয়া",
+      "target": "描述"
+    },
+    {
+      "source": "Degree বলা",
+      "target": "说程度"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "简单讲解 + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "每个 pattern 先看 structure，然后大声说 example。按 Audio button 可以听 Japanese sentence。"
+    },
+    {
+      "source": "い-adjective সাধারণত い দিয়ে শেষ হয় এবং noun/person/place-এর quality বলে।",
+      "target": "い-adjective 通常以 い 结尾，表示 noun/person/place 的 quality。"
+    },
+    {
+      "source": "কোনো কুরুমা ওয়া আতারাশিইদেসু।",
+      "target": "この車は新しいです。"
+    },
+    {
+      "source": "এই গাড়িটি নতুন।",
+      "target": "这辆车是新的。"
+    },
+    {
+      "source": "কিয়ো ওয়া আৎসুইদেসু।",
+      "target": "今日は暑いです。"
+    },
+    {
+      "source": "আজ গরম।",
+      "target": "今天很热。"
+    },
+    {
+      "source": "কোনো হেয়া ওয়া ওওকিইদেসু।",
+      "target": "この部屋は大きいです。"
+    },
+    {
+      "source": "এই ঘরটি বড়।",
+      "target": "这个房间很大。"
+    },
+    {
+      "source": "な-adjective sentence শেষে です-এর আগে সরাসরি আসে; noun modify করলে な লাগে।",
+      "target": "な-adjective 在 sentence 末尾直接放在 です 前；修饰 noun 时要加 な。"
+    },
+    {
+      "source": "কোনো মাচি ওয়া শিজুকাদেসু।",
+      "target": "この町は静かです。"
+    },
+    {
+      "source": "এই শহর শান্ত।",
+      "target": "这座城市很安静。"
+    },
+    {
+      "source": "কিরেইনা হিতোদেসু।",
+      "target": "きれいな人です。"
+    },
+    {
+      "source": "সুন্দর মানুষ।",
+      "target": "漂亮的人。"
+    },
+    {
+      "source": "বেনরিনা আপুরিদেসু।",
+      "target": "便利なアプリです。"
+    },
+    {
+      "source": "সুবিধাজনক অ্যাপ।",
+      "target": "方便的 app。"
+    },
+    {
+      "source": "い-adjective negative করতে শেষের い বাদ দিয়ে くないです।",
+      "target": "い-adjective 变 negative 时去掉末尾的 い 加 くないです。"
+    },
+    {
+      "source": "কোনো হোন ওয়া তাকাকুনাইদেসু।",
+      "target": "この本は高くないです。"
+    },
+    {
+      "source": "এই বই দামি নয়।",
+      "target": "这本书不贵。"
+    },
+    {
+      "source": "কিয়ো ওয়া সামুকুনাইদেসু।",
+      "target": "今日は寒くないです。"
+    },
+    {
+      "source": "আজ ঠান্ডা নয়।",
+      "target": "今天不冷。"
+    },
+    {
+      "source": "な-adjective ও noun negative করতে じゃありません/ではありません।",
+      "target": "な-adjective 和 noun 变 negative 用 じゃありません/ではありません。"
+    },
+    {
+      "source": "polite formal হলে ではありません।",
+      "target": "polite formal 时用 ではありません。"
+    },
+    {
+      "source": "কোনো মাচি ওয়া শিজুকা জা আরিমাসেন।",
+      "target": "この町は静かじゃありません。"
+    },
+    {
+      "source": "এই শহর শান্ত নয়।",
+      "target": "这座城市不安静。"
+    },
+    {
+      "source": "আনো হিতো ওয়া গেনকি জা আরিমাসেন।",
+      "target": "あの人は元気じゃありません。"
+    },
+    {
+      "source": "ওই ব্যক্তি সুস্থ/উদ্যমী নয়।",
+      "target": "那个人不健康/没有精神。"
+    },
+    {
+      "source": "とても = খুব; あまり = খুব একটা না (negative এর সাথে)।",
+      "target": "とても = 很；あまり = 不太（与 negative 连用）。"
+    },
+    {
+      "source": "তোকিয়ো ওয়া তোতেমো বেনরিদেসু।",
+      "target": "東京はとても便利です。"
+    },
+    {
+      "source": "টোকিও খুব সুবিধাজনক।",
+      "target": "东京非常方便。"
+    },
+    {
+      "source": "কোনো এইগা ওয়া আমারি ওমোশিরোকুনাইদেসু।",
+      "target": "この映画はあまり面白くないです。"
+    },
+    {
+      "source": "এই সিনেমা খুব একটা মজার নয়।",
+      "target": "这部电影不太有趣。"
+    },
+    {
+      "source": "どうですか দিয়ে কোনো জানা বিষয় কেমন তা জানতে চাওয়া হয়। どんな + noun দিয়ে কী ধরনের ব্যক্তি/স্থান/বস্তু জানতে চাওয়া হয়।",
+      "target": "用 どうですか 询问已知事物怎么样。用 どんな + noun 询问是什么样的人/地方/物品。"
+    },
+    {
+      "source": "どんな সবসময় noun-এর আগে বসে; どう-এর পরে সরাসরি ですか আসে।",
+      "target": "どんな 永远放在 noun 前；どう 后面直接接 ですか。"
+    },
+    {
+      "source": "নিহোন নো সেইকাৎসু ওয়া দোদেসু কা।",
+      "target": "日本の生活はどうですか。"
+    },
+    {
+      "source": "জাপানের জীবন কেমন?",
+      "target": "日本的生活怎么样？"
+    },
+    {
+      "source": "নারা ওয়া দোন্না মাচিদেসু কা।",
+      "target": "奈良はどんな町ですか。"
+    },
+    {
+      "source": "নারা কী ধরনের শহর?",
+      "target": "奈良是什么样的城市？"
+    },
+    {
+      "source": "ফুরুই মাচিদেসু।",
+      "target": "古い町です。"
+    },
+    {
+      "source": "পুরোনো শহর।",
+      "target": "古老的城市。"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "口头 Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "把这些句子像 interview/classroom conversation 一样读 3 遍。"
+    },
+    {
+      "source": "নিহোনগো ওয়া দোদেসু কা।",
+      "target": "日本語はどうですか。"
+    },
+    {
+      "source": "জাপানি কেমন?",
+      "target": "日语怎么样？"
+    },
+    {
+      "source": "ওমোশিরোইদেসু গা, মুজুকাশিইদেসু।",
+      "target": "面白いですが、難しいです。"
+    },
+    {
+      "source": "মজার, কিন্তু কঠিন।",
+      "target": "有趣，但是很难。"
+    },
+    {
+      "source": "আনাতা নো মাচি ওয়া শিজুকাদেসু কা।",
+      "target": "あなたの町は静かですか。"
+    },
+    {
+      "source": "আপনার শহর শান্ত?",
+      "target": "你的城市安静吗？"
+    },
+    {
+      "source": "হাই, তোতেমো শিজুকাদেসু।",
+      "target": "はい、とても静かです。"
+    },
+    {
+      "source": "হ্যাঁ, খুব শান্ত।",
+      "target": "是的，非常安静。"
+    },
+    {
+      "source": "কোনো রিয়োরি ওয়া দোদেসু কা।",
+      "target": "この料理はどうですか。"
+    },
+    {
+      "source": "এই রান্না কেমন?",
+      "target": "这道菜怎么样？"
+    },
+    {
+      "source": "✅ きれいな人 — な-adj noun-এর আগে হলে な লাগে।",
+      "target": "✅ きれいな人 — な-adj 在 noun 前时要加 な。"
+    },
+    {
+      "source": "✅ あまりおいしくないです — あまり সাধারণত negative।",
+      "target": "✅ あまりおいしくないです — あまり 通常与 negative 连用。"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "自我测试"
+    },
+    {
+      "source": "“খুব একটা ভালো নয়” কোনটি?",
+      "target": "“不太好”是哪个？"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 8 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 8 • Verified Premium Detailed Version"
+    }
+  ]
+}

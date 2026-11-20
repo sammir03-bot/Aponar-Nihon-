@@ -1,0 +1,6622 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "n3-vocabulary-content",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "JLPT N3 Vocabulary বাংলা | আপনার নিহোন",
+      "target": "JLPT N3 Vocabulary Filipino | আপনার নিহোন"
+    },
+    {
+      "source": "Lesson-এ যান",
+      "target": "Pumunta sa Lesson"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "জাপানি শেখা, বাংলায় সহজ",
+      "target": "Pag-aaral ng Japanese, simple sa Filipino"
+    },
+    {
+      "source": "মূল সাইট ↗",
+      "target": "Pangunahing site ↗"
+    },
+    {
+      "source": "JLPT N3 · বাংলা VOCABULARY",
+      "target": "JLPT N3 · VOCABULARY sa Filipino"
+    },
+    {
+      "source": "Lesson ধরে শব্দ শিখুন—Furigana, বাংলা অর্থ ও Exam সহ",
+      "target": "Matuto ng mga salita ayon sa Lesson—Furigana, kahulugan sa Filipino at Exam"
+    },
+    {
+      "source": "Nihongo Sou Matome N3-এর বইয়ের ক্রমে Lesson 1–36। প্রতি Part-এ ৬টি lesson এবং শেষে ২৫ প্রশ্নের আসল pattern-এর Exam।",
+      "target": "Lesson 1–36 sa pagkakasunud-sunod ng libro ng Nihongo Sou Matome N3. 6 na lesson sa bawat Part at Exam ng 25 tanong sa orihinal na pattern sa huli."
+    },
+    {
+      "source": "প্রশ্ন",
+      "target": "tanong"
+    },
+    {
+      "source": "সব Lesson ও Exam",
+      "target": "Lahat ng Lesson at Exam"
+    },
+    {
+      "source": "Lesson 01 · キッチンで、リビングで · রান্নাঘর ও বসার ঘরে",
+      "target": "Lesson 01 · キッチンで、リビングで · Sa kusina, sa sala"
+    },
+    {
+      "source": "Lesson 02 · 料理をしましょう① · চলুন রান্না করি ①",
+      "target": "Lesson 02 · 料理をしましょう① · Magluto tayo ①"
+    },
+    {
+      "source": "Lesson 03 · 料理をしましょう② · চলুন রান্না করি ②",
+      "target": "Lesson 03 · 料理をしましょう② · Magluto tayo ②"
+    },
+    {
+      "source": "Lesson 04 · 掃除をしましょう · চলুন পরিষ্কার করি",
+      "target": "Lesson 04 · 掃除をしましょう · Maglinis tayo"
+    },
+    {
+      "source": "Lesson 05 · 洗濯をしましょう · চলুন কাপড় ধুই",
+      "target": "Lesson 05 · 洗濯をしましょう · Maglaba tayo"
+    },
+    {
+      "source": "Lesson 06 · 子供やペットの世話をしましょう · শিশু ও পোষা প্রাণীর যত্ন নিই",
+      "target": "Lesson 06 · 子供やペットの世話をしましょう · Alagaan ang bata at alagang hayop"
+    },
+    {
+      "source": "Part 1 Exam · ২৫ প্রশ্ন",
+      "target": "Part 1 Exam · 25 tanong"
+    },
+    {
+      "source": "Lesson 07 · 計画を立てましょう · পরিকল্পনা করি",
+      "target": "Lesson 07 · 計画を立てましょう · Gumawa tayo ng plano"
+    },
+    {
+      "source": "Lesson 08 · 電車に乗りましょう① · ট্রেনে চড়ি ①",
+      "target": "Lesson 08 · 電車に乗りましょう① · Sumakay tayo ng tren ①"
+    },
+    {
+      "source": "Lesson 09 · 電車に乗りましょう② · ট্রেনে চড়ি ②",
+      "target": "Lesson 09 · 電車に乗りましょう② · Sumakay tayo ng tren ②"
+    },
+    {
+      "source": "Lesson 10 · 車に乗りましょう① · গাড়িতে চড়ি ①",
+      "target": "Lesson 10 · 車に乗りましょう① · Sumakay tayo ng kotse ①"
+    },
+    {
+      "source": "Lesson 11 · 車に乗りましょう② · গাড়িতে চড়ি ②",
+      "target": "Lesson 11 · 車に乗りましょう② · Sumakay tayo ng kotse ②"
+    },
+    {
+      "source": "Lesson 12 · 用事を済ませましょう · প্রয়োজনীয় কাজ সেরে নিই",
+      "target": "Lesson 12 · 用事を済ませましょう · Tapusin ang kinakailangang gawain"
+    },
+    {
+      "source": "Part 2 Exam · ২৫ প্রশ্ন",
+      "target": "Part 2 Exam · 25 tanong"
+    },
+    {
+      "source": "Lesson 13 · デートにさそいましょう · ডেটে আমন্ত্রণ জানাই",
+      "target": "Lesson 13 · デートにさそいましょう · Mag-imbita sa date"
+    },
+    {
+      "source": "Lesson 14 · したくをしましょう · প্রস্তুত হই",
+      "target": "Lesson 14 · したくをしましょう · Maghanda tayo"
+    },
+    {
+      "source": "Lesson 15 · 買い物をしましょう · কেনাকাটা করি",
+      "target": "Lesson 15 · 買い物をしましょう · Mamili tayo"
+    },
+    {
+      "source": "Lesson 16 · 食事に行きましょう · খাবার খেতে যাই",
+      "target": "Lesson 16 · 食事に行きましょう · Kumain tayo sa labas"
+    },
+    {
+      "source": "Lesson 17 · お酒を飲みましょう · পানীয় পান করি",
+      "target": "Lesson 17 · お酒を飲みましょう · Uminom tayo ng inumin"
+    },
+    {
+      "source": "Lesson 18 · お金を払いましょう · টাকা পরিশোধ করি",
+      "target": "Lesson 18 · お金を払いましょう · Magbayad tayo"
+    },
+    {
+      "source": "Part 3 Exam · ২৫ প্রশ্ন",
+      "target": "Part 3 Exam · 25 tanong"
+    },
+    {
+      "source": "Lesson 19 · 学校へ行きましょう① · স্কুলে যাই ①",
+      "target": "Lesson 19 · 学校へ行きましょう① · Pumunta tayo sa paaralan ①"
+    },
+    {
+      "source": "Lesson 20 · 学校へ行きましょう② · স্কুলে যাই ②",
+      "target": "Lesson 20 · 学校へ行きましょう② · Pumunta tayo sa paaralan ②"
+    },
+    {
+      "source": "Lesson 21 · 学校へ行きましょう③ · স্কুলে যাই ③",
+      "target": "Lesson 21 · 学校へ行きましょう③ · Pumunta tayo sa paaralan ③"
+    },
+    {
+      "source": "Lesson 22 · 仕事をしましょう · কাজ করি",
+      "target": "Lesson 22 · 仕事をしましょう · Magtrabaho tayo"
+    },
+    {
+      "source": "Lesson 23 · パソコンを使いましょう · কম্পিউটার ব্যবহার করি",
+      "target": "Lesson 23 · パソコンを使いましょう · Gumamit tayo ng computer"
+    },
+    {
+      "source": "Lesson 24 · メールをしましょう · ইমেইল করি",
+      "target": "Lesson 24 · メールをしましょう · Mag-email tayo"
+    },
+    {
+      "source": "Part 4 Exam · ২৫ প্রশ্ন",
+      "target": "Part 4 Exam · 25 tanong"
+    },
+    {
+      "source": "Lesson 25 · どういう関係ですか · কী ধরনের সম্পর্ক?",
+      "target": "Lesson 25 · どういう関係ですか · Anong uri ng relasyon?"
+    },
+    {
+      "source": "Lesson 26 · あいさつをしましょう · শুভেচ্ছা জানাই",
+      "target": "Lesson 26 · あいさつをしましょう · Bumati tayo"
+    },
+    {
+      "source": "Lesson 27 · どんな人が好き？ · কেমন মানুষ পছন্দ?",
+      "target": "Lesson 27 · どんな人が好き？ · Anong uri ng tao ang gusto mo?"
+    },
+    {
+      "source": "Lesson 28 · 体の調子はどうですか · শরীর কেমন?",
+      "target": "Lesson 28 · 体の調子はどうですか · Kumusta ang katawan mo?"
+    },
+    {
+      "source": "Lesson 29 · どんなようすですか① · কী অবস্থা? ①",
+      "target": "Lesson 29 · どんなようすですか① · Anong kalagayan? ①"
+    },
+    {
+      "source": "Lesson 30 · どんなようすですか② · কী অবস্থা? ②",
+      "target": "Lesson 30 · どんなようすですか② · Anong kalagayan? ②"
+    },
+    {
+      "source": "Part 5 Exam · ২৫ প্রশ্ন",
+      "target": "Part 5 Exam · 25 tanong"
+    },
+    {
+      "source": "Lesson 31 · かなり頑張っています · বেশ পরিশ্রম করছি",
+      "target": "Lesson 31 · かなり頑張っています · Medyo nagsisikap ako"
+    },
+    {
+      "source": "Lesson 32 · ちゃんと頑張っています · ঠিকমতো চেষ্টা করছি",
+      "target": "Lesson 32 · ちゃんと頑張っています · Nagsisikap ako nang maayos"
+    },
+    {
+      "source": "Lesson 33 · ますます頑張ります · আরও বেশি চেষ্টা করব",
+      "target": "Lesson 33 · ますます頑張ります · Mas magsisikap pa ako"
+    },
+    {
+      "source": "Lesson 34 · 組み合わせの言葉 · মিলিয়ে তৈরি শব্দ",
+      "target": "Lesson 34 · 組み合わせの言葉 · Mga salitang pinagsama"
+    },
+    {
+      "source": "Lesson 35 · 意味がたくさんある動詞① · বহু অর্থের ক্রিয়া ①",
+      "target": "Lesson 35 · 意味がたくさんある動詞① · Mga verb na maraming kahulugan ①"
+    },
+    {
+      "source": "Lesson 36 · 意味がたくさんある動詞② · বহু অর্থের ক্রিয়া ②",
+      "target": "Lesson 36 · 意味がたくさんある動詞② · Mga verb na maraming kahulugan ②"
+    },
+    {
+      "source": "Part 6 Exam · ২৫ প্রশ্ন",
+      "target": "Part 6 Exam · 25 tanong"
+    },
+    {
+      "source": "সব Part",
+      "target": "Lahat ng Part"
+    },
+    {
+      "source": "Part 1 · ঘরের কাজ করি",
+      "target": "Part 1 · Gumagawa ng gawaing bahay"
+    },
+    {
+      "source": "Part 2 · বাইরে যাই",
+      "target": "Part 2 · Lumalabas"
+    },
+    {
+      "source": "Part 3 · ছুটির দিন উপভোগ করি",
+      "target": "Part 3 · Nag-e-enjoy sa araw ng pahinga"
+    },
+    {
+      "source": "Part 4 · পড়াশোনা ও কাজ করি",
+      "target": "Part 4 · Nag-aaral at nagtatrabaho"
+    },
+    {
+      "source": "Part 5 · নানা অভিব্যক্তি শিখি",
+      "target": "Part 5 · Natututo ng iba't ibang ekspresyon"
+    },
+    {
+      "source": "Part 6 · একসঙ্গে মনে রাখি",
+      "target": "Part 6 · Naaalala nang magkasama"
+    },
+    {
+      "source": "0 / 42 শেষ",
+      "target": "0 / 42 tapos"
+    },
+    {
+      "source": "42টি item",
+      "target": "42 item"
+    },
+    {
+      "source": "Boss method · ১৫ মিনিটে ১ Lesson",
+      "target": "Boss method · 1 Lesson sa 15 minuto"
+    },
+    {
+      "source": "শব্দ দেখুন → furigana জোরে বলুন → বাংলা অর্থ মনে করুন → “শেষ” টিক দিন।",
+      "target": "Tingnan ang salita → sabihin nang malakas ang furigana → alalahanin ang kahulugan sa Filipino → lagyan ng tsek ang \"tapos\"."
+    },
+    {
+      "source": "প্রথম ৩টি শব্দ ৩ বার",
+      "target": "Unang 3 salita ng 3 beses"
+    },
+    {
+      "source": "বাংলা দেখে জাপানি বলুন",
+      "target": "Tumingin sa Filipino at magsalita ng Japanese"
+    },
+    {
+      "source": "৬ lesson শেষে ২৫ প্রশ্ন",
+      "target": "25 tanong pagkatapos ng 6 lesson"
+    },
+    {
+      "source": "PART 1 · ৬ LESSON + EXAM",
+      "target": "PART 1 · 6 LESSON + EXAM"
+    },
+    {
+      "source": "ঘরের কাজ করি",
+      "target": "Gumagawa ng gawaing bahay"
+    },
+    {
+      "source": "Part 1 · Day 1 · 47 শব্দ",
+      "target": "Part 1 · Day 1 · 47 salita"
+    },
+    {
+      "source": "রান্নাঘর ও বসার ঘরে",
+      "target": "Sa kusina at sa sala"
+    },
+    {
+      "source": "শেষ",
+      "target": "tapos"
+    },
+    {
+      "source": "🧠 ছোট ট্রিক",
+      "target": "🧠 Maliit na trick"
+    },
+    {
+      "source": "প্রথমে এই ৩টি anchor জোরে ৩ বার বলুন, তারপর নিচের তালিকায় যান।",
+      "target": "Sabihin muna nang malakas ng 3 beses ang 3 anchor na ito, pagkatapos pumunta sa listahan sa ibaba."
+    },
+    {
+      "source": "রান্নাঘর",
+      "target": "Kusina"
+    },
+    {
+      "source": "মাইক্রোওয়েভ ওভেন",
+      "target": "Microwave oven"
+    },
+    {
+      "source": "মূল শব্দ",
+      "target": "Pangunahing salita"
+    },
+    {
+      "source": "26 শব্দ",
+      "target": "26 salita"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Pangngalan"
+    },
+    {
+      "source": "ওয়াইন গ্লাস",
+      "target": "Basong pang-alak"
+    },
+    {
+      "source": "কফি কাপ",
+      "target": "Tasa ng kape"
+    },
+    {
+      "source": "চালের বাটি",
+      "target": "Mangkok ng kanin"
+    },
+    {
+      "source": "চায়ের কাপ",
+      "target": "Tasa ng tsaa"
+    },
+    {
+      "source": "রেফ্রিজারেটর / ফ্রিজ",
+      "target": "Refrigerator / fridge"
+    },
+    {
+      "source": "গ্যাসের চুলা / গ্যাস পরিসীমা",
+      "target": "Gas stove / gas range"
+    },
+    {
+      "source": "গ্লাস পানীয় গ্লাস",
+      "target": "Basong inumin baso"
+    },
+    {
+      "source": "লিভার হ্যান্ডেল",
+      "target": "Lever handle"
+    },
+    {
+      "source": "রান্নাঘর সিঙ্ক / ডুব",
+      "target": "Lababo sa kusina / lababo"
+    },
+    {
+      "source": "বসার ঘর",
+      "target": "Sala"
+    },
+    {
+      "source": "জানালার কাচ / জানালা",
+      "target": "Salamin ng bintana / bintana"
+    },
+    {
+      "source": "ঝড় শাটার / স্লাইডিং শাটার",
+      "target": "Storm shutter / sliding shutter"
+    },
+    {
+      "source": "পর্দা দরজা / জানালার পর্দা",
+      "target": "Kurtina pinto / kurtina ng bintana"
+    },
+    {
+      "source": "সিলিং",
+      "target": "Kisame"
+    },
+    {
+      "source": "মেঝে",
+      "target": "Sahig"
+    },
+    {
+      "source": "বৈদ্যুতিক আউটলেট / পাওয়ার আউটলেট",
+      "target": "Electrical outlet / power outlet"
+    },
+    {
+      "source": "বিদ্যুতের তার / কর্ড",
+      "target": "Kawad ng kuryente / cord"
+    },
+    {
+      "source": "এয়ার কন্ডিশনার / এসি ইউনিট",
+      "target": "Air conditioner / AC unit"
+    },
+    {
+      "source": "হিটার / স্পেস হিটার",
+      "target": "Heater / space heater"
+    },
+    {
+      "source": "কার্পেট / পাটি",
+      "target": "Carpet / banig"
+    },
+    {
+      "source": "আরও মনে রাখুন",
+      "target": "Tandaan din"
+    },
+    {
+      "source": "21 শব্দ",
+      "target": "21 salita"
+    },
+    {
+      "source": "জল সরবরাহ / টোকা",
+      "target": "Supply ng tubig / gripo"
+    },
+    {
+      "source": "কল টোকা",
+      "target": "Gripo gripo"
+    },
+    {
+      "source": "কল চালু / টোকা ঘুরিয়ে দিন",
+      "target": "Pagbubukas ng gripo / pagpihit ng gripo"
+    },
+    {
+      "source": "জল জমে যায়",
+      "target": "Naiipon ang tubig"
+    },
+    {
+      "source": "বরফে পরিণত করা / জমা",
+      "target": "Pagpi-freeze / pagyeyelo"
+    },
+    {
+      "source": "হিমায়িত এবং সংরক্ষণ করুন / হিমায়িত করে সংরক্ষণ করুন",
+      "target": "I-freeze at iimbak / i-freeze upang iimbak"
+    },
+    {
+      "source": "অবশিষ্টাংশ",
+      "target": "Natira"
+    },
+    {
+      "source": "অবশিষ্টাংশ গরম করুন",
+      "target": "Painitin ang natira"
+    },
+    {
+      "source": "একটি বিয়ার ঠান্ডা করা / শীতল বিয়ার",
+      "target": "Pagpapalamig ng beer / malamig na beer"
+    },
+    {
+      "source": "বিয়ার ঠান্ডা / বিয়ার ঠান্ডা হয়",
+      "target": "Malamig ang beer / lumalamig ang beer"
+    },
+    {
+      "source": "এয়ার-কন্ডিশনার রিমোট / এসি রিমোট",
+      "target": "Remote ng air conditioner / AC remote"
+    },
+    {
+      "source": "সুইচ",
+      "target": "Switch"
+    },
+    {
+      "source": "শক্তি চালু করুন / সুইচ অন",
+      "target": "Pagbubukas ng kuryente / switch on"
+    },
+    {
+      "source": "শক্তি বন্ধ করুন / সুইচ অফ",
+      "target": "Pagpatay ng kuryente / switch off"
+    },
+    {
+      "source": "একটি কার্পেট রাখা / একটি পাটি ছড়িয়ে",
+      "target": "Paglalagay ng carpet / paglalatag ng banig"
+    },
+    {
+      "source": "ঘর গরম করা / ঘর গরম করুন",
+      "target": "Pagpapainit ng silid / painitin ang silid"
+    },
+    {
+      "source": "হিটিং চালু করুন / হিটার চালু করুন",
+      "target": "Pagbubukas ng heating / pagbubukas ng heater"
+    },
+    {
+      "source": "এয়ার কন্ডিশনার কাজ করছে / এসি চালু আছে",
+      "target": "Gumagana ang air conditioner / bukas ang AC"
+    },
+    {
+      "source": "রোদ সূর্যালোক দ্বারা ভালভাবে আলোকিত",
+      "target": "Naaarawan nang mabuti ng sikat ng araw"
+    },
+    {
+      "source": "রৌদ্রোজ্জ্বল নয় / সূর্যালোক দ্বারা খারাপভাবে আলোকিত",
+      "target": "Hindi naarawan / hindi maganda ang sikat ng araw"
+    },
+    {
+      "source": "↑ Part-এর উপরে",
+      "target": "↑ Itaas ng Part"
+    },
+    {
+      "source": "Part 1 · Day 2 · 50 শব্দ",
+      "target": "Part 1 · Day 2 · 50 salita"
+    },
+    {
+      "source": "চলুন রান্না করি ①",
+      "target": "Magluto tayo ①"
+    },
+    {
+      "source": "মাংস এবং আলু স্টু",
+      "target": "Nilagang karne at patatas"
+    },
+    {
+      "source": "উপাদান / উপকরণ",
+      "target": "Sangkap / materyales"
+    },
+    {
+      "source": "চারটি পরিবেশন করে",
+      "target": "Apat na servings"
+    },
+    {
+      "source": "গরুর মাংস",
+      "target": "Karne ng baka"
+    },
+    {
+      "source": "গ্রাম",
+      "target": "Gramo"
+    },
+    {
+      "source": "প্রত্যয়",
+      "target": "Suffix"
+    },
+    {
+      "source": "আলু",
+      "target": "Patatas"
+    },
+    {
+      "source": "পেঁয়াজ",
+      "target": "Sibuyas"
+    },
+    {
+      "source": "সিজনিং",
+      "target": "Seasoning"
+    },
+    {
+      "source": "জল",
+      "target": "Tubig"
+    },
+    {
+      "source": "কাপ(গুলি)",
+      "target": "Tasa (mga)"
+    },
+    {
+      "source": "খাতির চাল ওয়াইন",
+      "target": "Sake rice wine"
+    },
+    {
+      "source": "সয়া সস",
+      "target": "Toyo"
+    },
+    {
+      "source": "চিনি",
+      "target": "Asukal"
+    },
+    {
+      "source": "টেবিল চামচ",
+      "target": "Kutsara"
+    },
+    {
+      "source": "রান্নার তেল",
+      "target": "Langis sa pagluluto"
+    },
+    {
+      "source": "একটু একটি চিমটি",
+      "target": "Kaunti isang kurot"
+    },
+    {
+      "source": "ক্রিয়া-বিশেষণ",
+      "target": "Adverb"
+    },
+    {
+      "source": "সেমি-প্রশস্ত",
+      "target": "Semi-wide"
+    },
+    {
+      "source": "খোসা",
+      "target": "Balat"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "Verb"
+    },
+    {
+      "source": "রাতের খাবার",
+      "target": "Hapunan"
+    },
+    {
+      "source": "সাইড ডিশ",
+      "target": "Side dish"
+    },
+    {
+      "source": "লিটার",
+      "target": "Litro"
+    },
+    {
+      "source": "চা চামচ",
+      "target": "Kutsarita"
+    },
+    {
+      "source": "রান্নাঘরের ছুরি",
+      "target": "Kutsilyo sa kusina"
+    },
+    {
+      "source": "কাটিং বোর্ড",
+      "target": "Cutting board"
+    },
+    {
+      "source": "স্কেল",
+      "target": "Timbangan"
+    },
+    {
+      "source": "24 শব্দ",
+      "target": "24 salita"
+    },
+    {
+      "source": "রাতের খাবার সাইড ডিশ",
+      "target": "Side dish ng hapunan"
+    },
+    {
+      "source": "পুষ্টি",
+      "target": "Nutrisyon"
+    },
+    {
+      "source": "ভারসাম্য",
+      "target": "Balanse"
+    },
+    {
+      "source": "পুষ্টির ভারসাম্য বিবেচনা করুন",
+      "target": "Isaalang-alang ang balanse ng nutrisyon"
+    },
+    {
+      "source": "ক্যালোরি",
+      "target": "Kaloriya"
+    },
+    {
+      "source": "খাদ্য",
+      "target": "Pagkain"
+    },
+    {
+      "source": "উচ্চ-ক্যালোরি খাবার",
+      "target": "Mataas na kaloriyang pagkain"
+    },
+    {
+      "source": "একটি স্কেলে ওজন",
+      "target": "Pagtimbang sa timbangan"
+    },
+    {
+      "source": "লবণ",
+      "target": "Asin"
+    },
+    {
+      "source": "এক চিমটি লবণ যোগ করুন",
+      "target": "Magdagdag ng isang kurot ng asin"
+    },
+    {
+      "source": "ভিনেগার",
+      "target": "Suka"
+    },
+    {
+      "source": "ভাজার তেল",
+      "target": "Langis sa pagprito"
+    },
+    {
+      "source": "চামড়া খোসা",
+      "target": "Balat balat"
+    },
+    {
+      "source": "ত্বকের খোসা ছাড়িয়ে নিন",
+      "target": "Balatan ang balat"
+    },
+    {
+      "source": "উপাদান কাটা",
+      "target": "Paghiwa ng sangkap"
+    },
+    {
+      "source": "বড় টুকরা মধ্যে",
+      "target": "Sa malalaking piraso"
+    },
+    {
+      "source": "3 সেমি-চওড়া টুকরা মধ্যে কাটা",
+      "target": "Hiwain sa 3 cm-wide na piraso"
+    },
+    {
+      "source": "মিসো স্যুপ",
+      "target": "Miso soup"
+    },
+    {
+      "source": "মিসো স্যুপ উষ্ণ হয়ে যায়",
+      "target": "Umiinit ang miso soup"
+    },
+    {
+      "source": "প্লাস্টিকের মোড়ানো",
+      "target": "Plastic wrap"
+    },
+    {
+      "source": "প্লাস্টিকের মোড়ানো সঙ্গে আবরণ",
+      "target": "Pagbalot gamit ang plastic wrap"
+    },
+    {
+      "source": "প্লাস্টিকের মোড়ক দিয়ে মোড়ানো",
+      "target": "Pagbabalot gamit ang plastic wrap"
+    },
+    {
+      "source": "অ্যালুমিনিয়াম ফয়েল",
+      "target": "Aluminum foil"
+    },
+    {
+      "source": "Part 1 · Day 3 · 36 শব্দ",
+      "target": "Part 1 · Day 3 · 36 salita"
+    },
+    {
+      "source": "চলুন রান্না করি ②",
+      "target": "Magluto tayo ②"
+    },
+    {
+      "source": "ঢাকনা / আবরণ",
+      "target": "Takip / takip"
+    },
+    {
+      "source": "পাত্র প্যান",
+      "target": "Palayok kawali"
+    },
+    {
+      "source": "মই",
+      "target": "Hagdan"
+    },
+    {
+      "source": "7 শব্দ",
+      "target": "7 salita"
+    },
+    {
+      "source": "ফ্রাইং প্যান / স্কিললেট",
+      "target": "Frying pan / kawali"
+    },
+    {
+      "source": "স্প্যাটুলা / টার্নার",
+      "target": "Spatula / turner"
+    },
+    {
+      "source": "রাইস কুকার",
+      "target": "Rice cooker"
+    },
+    {
+      "source": "চালের প্যাডেল / চালের টুকরো",
+      "target": "Sandok ng kanin / piraso ng kanin"
+    },
+    {
+      "source": "29 শব্দ",
+      "target": "29 salita"
+    },
+    {
+      "source": "জল ফুটান",
+      "target": "Pagpapakulo ng tubig"
+    },
+    {
+      "source": "জল ফুটেছে / একটি ফোঁড়া আসা",
+      "target": "Kumukulo ang tubig / kumukulo"
+    },
+    {
+      "source": "ঠান্ডা জল",
+      "target": "Malamig na tubig"
+    },
+    {
+      "source": "জল ঠান্ডা হয় / ঠান্ডা হয়",
+      "target": "Lumalamig ang tubig / lumalamig"
+    },
+    {
+      "source": "চুলায় পাত্র রাখুন",
+      "target": "Ilagay ang palayok sa kalan"
+    },
+    {
+      "source": "ভাত রান্না করা",
+      "target": "Pagluluto ng kanin"
+    },
+    {
+      "source": "তেল গরম করুন",
+      "target": "Painitin ang langis"
+    },
+    {
+      "source": "গভীর ভাজা / ভাজা",
+      "target": "Deep fry / pagprito"
+    },
+    {
+      "source": "সিদ্ধ করা ফোঁড়া",
+      "target": "Pagpapakulo pagpapakulo"
+    },
+    {
+      "source": "ফোঁড়া ফুটন্ত জলে রান্না করুন",
+      "target": "Pagluluto sa kumukulong tubig"
+    },
+    {
+      "source": "ভেজে নেওয়া / সাঁতলানো",
+      "target": "Pagprito / paggisa"
+    },
+    {
+      "source": "বাষ্প",
+      "target": "Singaw"
+    },
+    {
+      "source": "ড্রেন (জল)",
+      "target": "Pagpapatuyo (tubig)"
+    },
+    {
+      "source": "মিশ্রণ নাড়া",
+      "target": "Paghahalo paghalo"
+    },
+    {
+      "source": "ঝলসে যাওয়া / পোড়া",
+      "target": "Pagkapaso / pagkasunog"
+    },
+    {
+      "source": "ঘুরিয়ে দেওয়া উল্টানো",
+      "target": "Pagpihit pagbaligtad"
+    },
+    {
+      "source": "ঋতু",
+      "target": "Sangkap (seasoning)"
+    },
+    {
+      "source": "লবণ যোগ করুন",
+      "target": "Magdagdag ng asin"
+    },
+    {
+      "source": "মরিচ ছিটিয়ে দিন",
+      "target": "Budburan ng paminta"
+    },
+    {
+      "source": "স্বাদ নমুনা",
+      "target": "Sample ng lasa"
+    },
+    {
+      "source": "স্বাদে শক্তিশালী হতে",
+      "target": "Pagiging malakas ang lasa"
+    },
+    {
+      "source": "নরম দুর্বল স্বাদযুক্ত",
+      "target": "Malambot mahinang lasa"
+    },
+    {
+      "source": "মশলাদার গরম",
+      "target": "Maanghang mainit"
+    },
+    {
+      "source": "লবণাক্ত",
+      "target": "Maalat"
+    },
+    {
+      "source": "টক",
+      "target": "Maasim"
+    },
+    {
+      "source": "শেষ করা / প্রস্তুত হও",
+      "target": "Pagtatapos / pagiging handa"
+    },
+    {
+      "source": "সমাপ্ত / প্রস্তুত",
+      "target": "Tapos / handa"
+    },
+    {
+      "source": "Part 1 · Day 4 · 39 শব্দ",
+      "target": "Part 1 · Day 4 · 39 salita"
+    },
+    {
+      "source": "চলুন পরিষ্কার করি",
+      "target": "Maglinis tayo"
+    },
+    {
+      "source": "এপ্রোন",
+      "target": "Apron"
+    },
+    {
+      "source": "ঝাড়ু",
+      "target": "Walis"
+    },
+    {
+      "source": "ডাস্টপ্যান",
+      "target": "Dustpan"
+    },
+    {
+      "source": "5 শব্দ",
+      "target": "5 salita"
+    },
+    {
+      "source": "পরিষ্কার কাপড় / রাগ",
+      "target": "Malinis na tela / basahan"
+    },
+    {
+      "source": "বালতি",
+      "target": "Balde"
+    },
+    {
+      "source": "34 শব্দ",
+      "target": "34 salita"
+    },
+    {
+      "source": "একটি এপ্রোন পরুন",
+      "target": "Magsuot ng apron"
+    },
+    {
+      "source": "সোফা / পালঙ্ক",
+      "target": "Sofa / sopa"
+    },
+    {
+      "source": "সোফা সরান",
+      "target": "Paglipat ng sofa"
+    },
+    {
+      "source": "পথের বাইরে সরানো",
+      "target": "Pag-alis sa daan"
+    },
+    {
+      "source": "রুম এলোমেলো",
+      "target": "Magulo ang silid"
+    },
+    {
+      "source": "ঘর গোছানো",
+      "target": "Pag-aayos ng silid"
+    },
+    {
+      "source": "রুম পরিপাটি হয়ে যায়",
+      "target": "Nagiging maayos ang silid"
+    },
+    {
+      "source": "রস ছড়ানো",
+      "target": "Pagtatapon ng juice"
+    },
+    {
+      "source": "রস ছড়িয়ে পড়ে",
+      "target": "Kumakalat ang juice"
+    },
+    {
+      "source": "ধুলো জমে",
+      "target": "Naiipon ang alikabok"
+    },
+    {
+      "source": "ধুলো জমা হয়",
+      "target": "Naiipon ang alikabok"
+    },
+    {
+      "source": "তুষার স্তূপ",
+      "target": "Tambak ng niyebe"
+    },
+    {
+      "source": "ধুলো অপসারণ",
+      "target": "Pag-alis ng alikabok"
+    },
+    {
+      "source": "ভ্যাকুয়াম",
+      "target": "Vacuum"
+    },
+    {
+      "source": "মেঝে মুছা",
+      "target": "Pagpunas ng sahig"
+    },
+    {
+      "source": "ঝাড়ু দিয়ে ঝাড়ু দাও",
+      "target": "Pagwawalis gamit ang walis"
+    },
+    {
+      "source": "একটি কাপড় দিয়ে বাসন মুছা",
+      "target": "Pagpunas ng pinggan gamit ang tela"
+    },
+    {
+      "source": "জল আঁকা",
+      "target": "Pag-igib ng tubig"
+    },
+    {
+      "source": "একটি ডিশক্লথ দিয়ে টেবিল মুছুন",
+      "target": "Pagpunas ng mesa gamit ang dishcloth"
+    },
+    {
+      "source": "একটি কাপড় ভিজা",
+      "target": "Pagbasa ng tela"
+    },
+    {
+      "source": "পোলিশ আসবাবপত্র",
+      "target": "Pagpapakintab ng muwebles"
+    },
+    {
+      "source": "কাপড় নিংড়ানো",
+      "target": "Pagpiga ng tela"
+    },
+    {
+      "source": "একটি ব্রাশ দিয়ে স্ক্রাব করুন",
+      "target": "Pagkuskos gamit ang brush"
+    },
+    {
+      "source": "রান্নাঘরের বর্জ্য",
+      "target": "Basura sa kusina"
+    },
+    {
+      "source": "পোড়ানো যোগ্য আবর্জনা",
+      "target": "Nasusunog na basura"
+    },
+    {
+      "source": "পোড়ানো যায় না এমন আবর্জনা",
+      "target": "Hindi nasusunog na basura"
+    },
+    {
+      "source": "আবর্জনা বাছাই করা একটি ঝামেলা",
+      "target": "Mahirap ang paghihiwalay ng basura"
+    },
+    {
+      "source": "চপ্পল ব্যবস্থা",
+      "target": "Pagsasaayos ng tsinelas"
+    },
+    {
+      "source": "সঞ্চয়স্থানে রাখা",
+      "target": "Paglalagay sa imbakan"
+    },
+    {
+      "source": "Part 1 · Day 5 · 23 শব্দ",
+      "target": "Part 1 · Day 5 · 23 salita"
+    },
+    {
+      "source": "চলুন কাপড় ধুই",
+      "target": "Maglaba tayo"
+    },
+    {
+      "source": "লন্ড্রি স্তূপ",
+      "target": "Tambak ng labada"
+    },
+    {
+      "source": "লন্ড্রি ভিজে গেছে",
+      "target": "Basa ang labada"
+    },
+    {
+      "source": "লন্ড্রি স্যাঁতসেঁতে",
+      "target": "Mamasa-masa ang labada"
+    },
+    {
+      "source": "10 শব্দ",
+      "target": "10 salita"
+    },
+    {
+      "source": "লন্ড্রি শুকিয়ে যায়",
+      "target": "Natutuyo ang labada"
+    },
+    {
+      "source": "লন্ড্রি বিশুদ্ধ সাদা আসে",
+      "target": "Nagiging dalisay na puti ang labada"
+    },
+    {
+      "source": "লন্ড্রি করা যাক",
+      "target": "Maglaba tayo"
+    },
+    {
+      "source": "লন্ড্রি ভেজা",
+      "target": "Pagbabad ng labada"
+    },
+    {
+      "source": "লন্ড্রি আউট",
+      "target": "Paglalabas ng labada"
+    },
+    {
+      "source": "একটি ড্রায়ারে শুকনো লন্ড্রি",
+      "target": "Pagpapatuyo ng labada sa dryer"
+    },
+    {
+      "source": "ভাঁজ লন্ড্রি",
+      "target": "Pagtupi ng labada"
+    },
+    {
+      "source": "13 শব্দ",
+      "target": "13 salita"
+    },
+    {
+      "source": "কাপড়ে দাগ",
+      "target": "Mantsa sa damit"
+    },
+    {
+      "source": "হাতা খুব নোংরা হয়",
+      "target": "Napakarumi ng manggas"
+    },
+    {
+      "source": "লন্ড্রি ডিটারজেন্ট যোগ করুন",
+      "target": "Magdagdag ng laundry detergent"
+    },
+    {
+      "source": "ডিশ ডিটারজেন্ট",
+      "target": "Dish detergent"
+    },
+    {
+      "source": "ক্লিনারদের স্যুট নিন",
+      "target": "Pagdala ng suit sa cleaners"
+    },
+    {
+      "source": "একটি লন্ড্রোম্যাটে লন্ড্রি করুন",
+      "target": "Paglalaba sa laundromat"
+    },
+    {
+      "source": "শুকানোর জন্য তোয়ালে ঝুলিয়ে রাখুন",
+      "target": "Pagsasampay ng tuwalya upang matuyo"
+    },
+    {
+      "source": "কাপড় ঝুলানো",
+      "target": "Pagsasampay ng damit"
+    },
+    {
+      "source": "একটি পোষাক শার্ট ইস্ত্রি",
+      "target": "Pagplantsa ng dress shirt"
+    },
+    {
+      "source": "বলি অপসারণ",
+      "target": "Pag-alis ng gusot"
+    },
+    {
+      "source": "বলিরেখা মসৃণ হয়",
+      "target": "Nagiging makinis ang gusot"
+    },
+    {
+      "source": "উলের সোয়েটার সঙ্কুচিত হয়",
+      "target": "Umurong ang wool sweater"
+    },
+    {
+      "source": "জিন্স বিবর্ণ",
+      "target": "Kumupas ang jeans"
+    },
+    {
+      "source": "Part 1 · Day 6 · 46 শব্দ",
+      "target": "Part 1 · Day 6 · 46 salita"
+    },
+    {
+      "source": "শিশু ও পোষা প্রাণীর যত্ন নিই",
+      "target": "Alagaan ang bata at alagang hayop"
+    },
+    {
+      "source": "আরাধ্য শিশু",
+      "target": "Cute na bata"
+    },
+    {
+      "source": "করুণ শিশু",
+      "target": "Nakakaawang bata"
+    },
+    {
+      "source": "ভাল আচরণ করা শিশু",
+      "target": "Mabait na bata"
+    },
+    {
+      "source": "ভাল আচরণ করা শিশু / বুদ্ধিমান শিশু",
+      "target": "Mabait na bata / matalinong bata"
+    },
+    {
+      "source": "চতুর শিশু / বুদ্ধিমান শিশু",
+      "target": "Matalinong bata / matalinong bata"
+    },
+    {
+      "source": "বন্ধুত্বপূর্ণ শিশু / মিলনশীল শিশু",
+      "target": "Friendly na bata / palakaibigang bata"
+    },
+    {
+      "source": "আরাধ্য কুকুর",
+      "target": "Cute na aso"
+    },
+    {
+      "source": "করুণাময় কুকুর / দরিদ্র কুকুর",
+      "target": "Nakakaawang aso / kawawang aso"
+    },
+    {
+      "source": "ভাল আচরণ কুকুর",
+      "target": "Mabait na aso"
+    },
+    {
+      "source": "চালাক কুকুর / বাধ্য কুকুর",
+      "target": "Matalinong aso / masunuring aso"
+    },
+    {
+      "source": "চালাক কুকুর / স্মার্ট কুকুর",
+      "target": "Matalinong aso / smart na aso"
+    },
+    {
+      "source": "বন্ধুত্বপূর্ণ কুকুর / মিলনশীল কুকুর",
+      "target": "Friendly na aso / palakaibigang aso"
+    },
+    {
+      "source": "স্বার্থপর শিশু / নষ্ট শিশু",
+      "target": "Makasariling bata / spoiled na bata"
+    },
+    {
+      "source": "গোলগাল শিশু / নির্বোধ শিশু",
+      "target": "Pilosopong bata / hangal na bata"
+    },
+    {
+      "source": "গালভরা মনোভাব / নির্বোধ মনোভাব",
+      "target": "Pilosopong ugali / hangal na ugali"
+    },
+    {
+      "source": "একটি শিশু নষ্ট করতে",
+      "target": "Pag-spoil sa bata"
+    },
+    {
+      "source": "একটি শিশুর উপর ভ্রুক্ষেপ করা / একটি শিশুকে লালন পালন করতে",
+      "target": "Pag-aalaga sa bata / pagpapalaki sa bata"
+    },
+    {
+      "source": "একজনের পিঠে শিশু বহন করা / একটি পিগিব্যাক রাইড দিতে",
+      "target": "Pagkarga ng bata sa likod / pagbibigay ng piggyback ride"
+    },
+    {
+      "source": "একটি শিশুর যত্ন নিতে",
+      "target": "Pag-aalaga sa bata"
+    },
+    {
+      "source": "ঘেউ ঘেউ করা",
+      "target": "Pagtahol"
+    },
+    {
+      "source": "লেজ নাড়ানো",
+      "target": "Pagwagayway ng buntot"
+    },
+    {
+      "source": "মানুষের সঙ্গে অভ্যস্ত / পোষ মানা",
+      "target": "Pagiging sanay sa tao / pagiging maamo"
+    },
+    {
+      "source": "গর্জন করা",
+      "target": "Pag-ungol"
+    },
+    {
+      "source": "একটি গর্ত খনন করা",
+      "target": "Paghuhukay ng butas"
+    },
+    {
+      "source": "একটি গর্ত পূরণ করতে",
+      "target": "Pagpuno ng butas"
+    },
+    {
+      "source": "20 শব্দ",
+      "target": "20 salita"
+    },
+    {
+      "source": "শিশু যত্ন / শিশু-পালন",
+      "target": "Pag-aalaga ng bata / pagpapalaki ng bata"
+    },
+    {
+      "source": "ছোট শিশু / বাচ্চা",
+      "target": "Maliit na bata / sanggol"
+    },
+    {
+      "source": "বড় হতে",
+      "target": "Paglaki"
+    },
+    {
+      "source": "স্বার্থপর বড় হতে",
+      "target": "Paglaki nang makasarili"
+    },
+    {
+      "source": "প্রশংসনীয় চমৎকার",
+      "target": "Kahanga-hanga mahusay"
+    },
+    {
+      "source": "কারও মাথায় আদর করে হাত বুলানো",
+      "target": "Paghaplos sa ulo ng isang tao"
+    },
+    {
+      "source": "নিতম্বের উপর থাপ্পর মারা",
+      "target": "Pagpalo sa puwitan"
+    },
+    {
+      "source": "ঠাট্টা খেলা / দুষ্টু হতে",
+      "target": "Paglalaro ng biro / pagiging pasaway"
+    },
+    {
+      "source": "দুষ্টু / দুরন্ত",
+      "target": "Pasaway / makulit"
+    },
+    {
+      "source": "হাত রাখা",
+      "target": "Paghawak ng kamay"
+    },
+    {
+      "source": "কারো হাত ছেড়ে দেওয়া",
+      "target": "Pagbitaw sa kamay ng isang tao"
+    },
+    {
+      "source": "একটি শিশু হারিয়ে যায়",
+      "target": "Nawawala ang isang bata"
+    },
+    {
+      "source": "একটি শিশু তার মাকে অনুসরণ করে",
+      "target": "Sumusunod ang isang bata sa kanyang ina"
+    },
+    {
+      "source": "একটি কুকুর রাখা / একটি কুকুর আছে",
+      "target": "Pagkakaroon ng aso / pagkakaroon ng aso"
+    },
+    {
+      "source": "হাঁটার জন্য (কেউ / কিছু) নিতে",
+      "target": "Pagdala (sa isang tao / bagay) sa paglalakad"
+    },
+    {
+      "source": "একটি কুকুর খাওয়ানো",
+      "target": "Pagpapakain ng aso"
+    },
+    {
+      "source": "বইয়ের ধাঁচে ২৫টি প্রশ্ন · Submit-এর আগে উত্তর গোপন",
+      "target": "25 tanong sa estilo ng libro · Ang mga sagot ay nakatago hanggang sa Submit"
+    },
+    {
+      "source": "পরীক্ষার নিয়ম:",
+      "target": "Mga patakaran sa pagsusulit:"
+    },
+    {
+      "source": "৪টি ভাগ শেষ করে নিচের “উত্তর মিলিয়ে দেখুন” চাপুন।",
+      "target": "Tapusin ang 4 na bahagi at pindutin ang \"Ihambing ang mga sagot\" sa ibaba."
+    },
+    {
+      "source": "শূন্যস্থানের জন্য সবচেয়ে উপযুক্ত শব্দ · 10 প্রশ্ন",
+      "target": "Pinakaangkop na salita para sa patlang · 10 tanong"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · たいた",
+      "target": "Tamang sagot: 3 · たいた"
+    },
+    {
+      "source": "যেহেতু আমার কাছে রাইস কুকার ছিল না, আমি একটি পাত্রে ভাত (রান্না) করেছিলাম।",
+      "target": "Dahil wala akong rice cooker, nagluto ako ng kanin sa isang palayok."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · ほえたり",
+      "target": "Tamang sagot: 2 · ほえたり"
+    },
+    {
+      "source": "\"এই কুকুরটি কামড়ায় না বা (ঘেলা) করে না, তাই এটি পোষা ঠিক আছে।\"",
+      "target": "\"Ang asong ito ay hindi nangangagat o (tumatahol), kaya ayos lang itong alagaan.\""
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · みがき",
+      "target": "Tamang sagot: 2 · みがき"
+    },
+    {
+      "source": "বাইরে যাওয়ার আগে জুতা পালিশ করুন।",
+      "target": "Pakintabin ang sapatos bago lumabas."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · あたえては",
+      "target": "Tamang sagot: 1 · あたえては"
+    },
+    {
+      "source": "আপনার বাচ্চাদের খুব বেশি দেওয়া উচিত নয়।",
+      "target": "Hindi mo dapat bigyan nang sobra ang iyong mga anak."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · なでて",
+      "target": "Tamang sagot: 4 · なでて"
+    },
+    {
+      "source": "আমি কাঁদলে মা আলতো করে আমার মাথায় হাত দিতেন।",
+      "target": "Kapag umiiyak ako, hinahaplos ni nanay nang marahan ang ulo ko."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · きざんで",
+      "target": "Tamang sagot: 4 · きざんで"
+    },
+    {
+      "source": "\"সবজিগুলোকে সূক্ষ্মভাবে কেটে নিন, তারপর ভালো করে ভাজুন।\"",
+      "target": "\"Hiwain nang pino ang mga gulay, pagkatapos iprito nang mabuti.\""
+    },
+    {
+      "source": "সঠিক উত্তর: 2 ·",
+      "target": "Tamang sagot: 2 ·"
+    },
+    {
+      "source": "এই ঘরে দক্ষিণ দিকে একটি বড় জানালা রয়েছে, তাই এটি খুব (রৌদ্রোজ্জ্বল)।",
+      "target": "Ang silid na ito ay may malaking bintana sa timog, kaya ito ay napaka (naarawan)."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · カロリー",
+      "target": "Tamang sagot: 3 · カロリー"
+    },
+    {
+      "source": "আমি ওজন কমাতে চাই, তাই আমি (ক্যালোরি) বেশি থাকে এমন খাবার এড়াতে চেষ্টা করি।",
+      "target": "Gusto kong magbawas ng timbang, kaya sinisikap kong iwasan ang pagkaing maraming (kaloriya)."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · こげてる",
+      "target": "Tamang sagot: 1 · こげてる"
+    },
+    {
+      "source": "A: \"ওহ, পাত্রটি (জ্বলন্ত)।\"",
+      "target": "A: \"Oh, ang palayok ay (nasusunog).\""
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · コンセント",
+      "target": "Tamang sagot: 2 · コンセント"
+    },
+    {
+      "source": "যদি (আউটলেট) ধুলো জমা হয়, তবে এটি বিপজ্জনক হতে পারে।",
+      "target": "Kung naiipon ang alikabok sa (outlet), maaari itong maging mapanganib."
+    },
+    {
+      "source": "ব্যাখ্যার সঙ্গে সবচেয়ে মিল আছে যে শব্দ · 5 প্রশ্ন",
+      "target": "Salitang pinakakatulad ng paliwanag · 5 tanong"
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · ひっくり",
+      "target": "Tamang sagot: 2 · ひっくり"
+    },
+    {
+      "source": "উপরে এবং নীচে বা সামনে এবং পিছনে উল্টে কিছু উল্টে দিন।",
+      "target": "Baligtarin ang isang bagay sa itaas at ibaba o harap at likod."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · はかり",
+      "target": "Tamang sagot: 1 · はかり"
+    },
+    {
+      "source": "ওজন পরিমাপের জন্য একটি হাতিয়ার।",
+      "target": "Isang kasangkapan para sa pagsukat ng timbang."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · ほす",
+      "target": "Tamang sagot: 4 · ほす"
+    },
+    {
+      "source": "রোদে শুকিয়ে নিন।",
+      "target": "Patuyuin sa araw."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · だっこする",
+      "target": "Tamang sagot: 1 · だっこする"
+    },
+    {
+      "source": "একটি শিশু বা ছোট শিশুকে আপনার বাহুতে ধরুন।",
+      "target": "Kargahin ang isang bata o maliit na bata sa iyong mga bisig."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · あげる",
+      "target": "Tamang sagot: 3 · あげる"
+    },
+    {
+      "source": "একটি রান্নার পদ্ধতি যাতে প্রচুর পরিমাণে গরম তেলে খাবার রান্না করা হয়।",
+      "target": "Isang paraan ng pagluluto kung saan niluluto ang pagkain sa maraming mainit na langis."
+    },
+    {
+      "source": "দাগ দেওয়া শব্দের কাছাকাছি অর্থ · 5 প্রশ্ন",
+      "target": "Salitang malapit ang kahulugan sa salitang may guhit · 5 tanong"
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · まわす",
+      "target": "Tamang sagot: 2 · まわす"
+    },
+    {
+      "source": "কল চালু করুন।",
+      "target": "Buksan ang gripo."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 ·",
+      "target": "Tamang sagot: 1 ·"
+    },
+    {
+      "source": "পরিষ্কার করার জন্য চেয়ারটি পথের বাইরে সরান।",
+      "target": "Ilipat ang upuan sa labas ng daan para sa paglilinis."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · かける",
+      "target": "Tamang sagot: 1 · かける"
+    },
+    {
+      "source": "রামেনে মরিচ ছিটিয়ে দিন।",
+      "target": "Budburan ng paminta ang ramen."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 ·",
+      "target": "Tamang sagot: 4 ·"
+    },
+    {
+      "source": "উলের সোয়েটার সঙ্কুচিত হয়ে গেল।",
+      "target": "Umurong ang wool sweater."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · なく",
+      "target": "Tamang sagot: 1 · なく"
+    },
+    {
+      "source": "পাশের কুকুরটা প্রায়ই ঘেউ ঘেউ করে।",
+      "target": "Madalas tumahol ang aso sa tabi."
+    },
+    {
+      "source": "শব্দটির সঠিক ব্যবহার · 5 প্রশ্ন",
+      "target": "Tamang paggamit ng salita · 5 tanong"
+    },
+    {
+      "source": "পাড়া",
+      "target": "Kapitbahayan"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 ·",
+      "target": "Tamang sagot: 3 ·"
+    },
+    {
+      "source": "সংরক্ষণ",
+      "target": "Pag-iimbak"
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · ジュースをこぼして、スカートを",
+      "target": "Tamang sagot: 4 · ジュースをこぼして、スカートを"
+    },
+    {
+      "source": "নোংরা করতে",
+      "target": "Pagdudumi"
+    },
+    {
+      "source": "স্বার্থপর",
+      "target": "Makasarili"
+    },
+    {
+      "source": "উত্তর মিলিয়ে দেখুন",
+      "target": "Ihambing ang mga sagot"
+    },
+    {
+      "source": "আবার শুরু",
+      "target": "Simulan ulit"
+    },
+    {
+      "source": "স্কোর এখনো হয়নি",
+      "target": "Wala pang score"
+    },
+    {
+      "source": "PART 2 · ৬ LESSON + EXAM",
+      "target": "PART 2 · 6 LESSON + EXAM"
+    },
+    {
+      "source": "বাইরে যাই",
+      "target": "Lumalabas"
+    },
+    {
+      "source": "Part 2 · Day 1 · 48 শব্দ",
+      "target": "Part 2 · Day 1 · 48 salita"
+    },
+    {
+      "source": "পরিকল্পনা করি",
+      "target": "Gumawa tayo ng plano"
+    },
+    {
+      "source": "গতকালের আগের দিন",
+      "target": "Isang araw bago kahapon"
+    },
+    {
+      "source": "গতকাল",
+      "target": "Kahapon"
+    },
+    {
+      "source": "আগামীকাল",
+      "target": "Bukas"
+    },
+    {
+      "source": "তিন দিন আগে",
+      "target": "Tatlong araw ang nakalipas"
+    },
+    {
+      "source": "এখন থেকে তিন দিন",
+      "target": "Tatlong araw mula ngayon"
+    },
+    {
+      "source": "পরশু",
+      "target": "Isang araw pagkatapos ng bukas"
+    },
+    {
+      "source": "নববর্ষের দিন",
+      "target": "Araw ng Bagong Taon"
+    },
+    {
+      "source": "মাসের প্রথম দশ দিন / মাসের প্রথম দিকে",
+      "target": "Unang sampung araw ng buwan / simula ng buwan"
+    },
+    {
+      "source": "মাসের মাঝামাঝি",
+      "target": "Gitna ng buwan"
+    },
+    {
+      "source": "মাসের শেষের দিকে",
+      "target": "Huling bahagi ng buwan"
+    },
+    {
+      "source": "মাসের শেষ",
+      "target": "Katapusan ng buwan"
+    },
+    {
+      "source": "35 শব্দ",
+      "target": "35 salita"
+    },
+    {
+      "source": "সপ্তাহের দিন",
+      "target": "Araw ng linggo"
+    },
+    {
+      "source": "সরকারী ছুটি",
+      "target": "Opisyal na pahinga"
+    },
+    {
+      "source": "গত বছর",
+      "target": "Noong nakaraang taon"
+    },
+    {
+      "source": "দুই বছর আগে",
+      "target": "Dalawang taon ang nakalipas"
+    },
+    {
+      "source": "দুই বছর পর",
+      "target": "Pagkatapos ng dalawang taon"
+    },
+    {
+      "source": "দুই মাস আগে",
+      "target": "Dalawang buwan ang nakalipas"
+    },
+    {
+      "source": "দুই সপ্তাহ আগে",
+      "target": "Dalawang linggo ang nakalipas"
+    },
+    {
+      "source": "দুই মাস পর",
+      "target": "Pagkatapos ng dalawang buwan"
+    },
+    {
+      "source": "দুই সপ্তাহ পর",
+      "target": "Pagkatapos ng dalawang linggo"
+    },
+    {
+      "source": "অন্য দিন",
+      "target": "Ibang araw"
+    },
+    {
+      "source": "বছরের শেষ এবং নববর্ষের সময়কাল",
+      "target": "Panahon ng katapusan ng taon at Bagong Taon"
+    },
+    {
+      "source": "বছরের শেষে / সন্ধ্যা",
+      "target": "Katapusan ng taon / gabi"
+    },
+    {
+      "source": "একটি ছুটি নিতে / সময় নাও",
+      "target": "Pagkuha ng pahinga / pagkuha ng oras"
+    },
+    {
+      "source": "পরিকল্পনা সামঞ্জস্য করুন",
+      "target": "Pagsasaayos ng plano"
+    },
+    {
+      "source": "পরিকল্পনা পরিবর্তন",
+      "target": "Pagbabago ng plano"
+    },
+    {
+      "source": "স্থগিত করা / পরিকল্পনা পরিবর্তন",
+      "target": "Pagpapaliban / pagbabago ng plano"
+    },
+    {
+      "source": "তারিখ সামঞ্জস্য করুন",
+      "target": "Pagsasaayos ng petsa"
+    },
+    {
+      "source": "তারিখ পরিবর্তন",
+      "target": "Pagbabago ng petsa"
+    },
+    {
+      "source": "তারিখ পিছিয়ে দিন",
+      "target": "Pagpapaliban ng petsa"
+    },
+    {
+      "source": "সময়সূচী সামঞ্জস্য করুন",
+      "target": "Pagsasaayos ng iskedyul"
+    },
+    {
+      "source": "সময়সূচী পরিবর্তন",
+      "target": "Pagbabago ng iskedyul"
+    },
+    {
+      "source": "সময়সূচী স্থগিত করুন",
+      "target": "Pagpapaliban ng iskedyul"
+    },
+    {
+      "source": "একটি ট্রাভেল এজেন্সির সাথে বুক করুন",
+      "target": "Pag-book sa travel agency"
+    },
+    {
+      "source": "একটি রিজার্ভেশন বাতিল করুন",
+      "target": "Pagkansela ng reserbasyon"
+    },
+    {
+      "source": "লাগেজ প্যাক",
+      "target": "Pag-iimpake ng bagahe"
+    },
+    {
+      "source": "বিদেশ ভ্রমণ",
+      "target": "Paglalakbay sa ibang bansa"
+    },
+    {
+      "source": "গার্হস্থ্য ভ্রমণ",
+      "target": "Domestic na paglalakbay"
+    },
+    {
+      "source": "একটি দুই রাত, তিন দিনের হট-স্প্রিং ট্রিপে যান",
+      "target": "Pagpunta sa dalawang gabi, tatlong araw na hot-spring trip"
+    },
+    {
+      "source": "একটি গরম ঝরনা একটি দিনের ট্রিপে যান",
+      "target": "Pagpunta sa hot spring sa day trip"
+    },
+    {
+      "source": "জাপানি সরাইখানা রিয়োকানে থাকা",
+      "target": "Pananatili sa Japanese inn ryokan"
+    },
+    {
+      "source": "Part 2 · Day 2 · 28 শব্দ",
+      "target": "Part 2 · Day 2 · 28 salita"
+    },
+    {
+      "source": "ট্রেনে চড়ি ①",
+      "target": "Sumakay tayo ng tren ①"
+    },
+    {
+      "source": "সিঁড়ি উপরে যান",
+      "target": "Pag-akyat sa hagdan"
+    },
+    {
+      "source": "সিঁড়ি নিচে যান",
+      "target": "Pagbaba sa hagdan"
+    },
+    {
+      "source": "8 শব্দ",
+      "target": "8 salita"
+    },
+    {
+      "source": "ডাউনগাউন্ড ট্রেন",
+      "target": "Pababang tren"
+    },
+    {
+      "source": "আপগামী ট্রেন",
+      "target": "Paakyat na tren"
+    },
+    {
+      "source": "ঊর্ধ্বগামী এসকেলেটর",
+      "target": "Paakyat na escalator"
+    },
+    {
+      "source": "নিচে এসকেলেটর",
+      "target": "Pababang escalator"
+    },
+    {
+      "source": "ট্রেনের সময় পরীক্ষা করুন",
+      "target": "Pagsuri ng oras ng tren"
+    },
+    {
+      "source": "সময়সূচী",
+      "target": "Iskedyul"
+    },
+    {
+      "source": "টোকিও থেকে ইয়োকোহামা",
+      "target": "Mula Tokyo hanggang Yokohama"
+    },
+    {
+      "source": "ব্যক্তিগত রেলপথ",
+      "target": "Pribadong riles"
+    },
+    {
+      "source": "বুলেট ট্রেন / উচ্চ গতির ট্রেন",
+      "target": "Bullet train / high-speed train"
+    },
+    {
+      "source": "একটি আসন সংরক্ষণ করুন / একটি আসন নির্বাচন করুন",
+      "target": "Pagreserba ng upuan / pagpili ng upuan"
+    },
+    {
+      "source": "সংরক্ষিত আসন",
+      "target": "Nakareserbang upuan"
+    },
+    {
+      "source": "অসংরক্ষিত আসন / অ-সংরক্ষিত আসন",
+      "target": "Hindi nakareserbang upuan / non-reserved seat"
+    },
+    {
+      "source": "জানালার পাশে / জানালার সিট",
+      "target": "Tabi ng bintana / upuan sa bintana"
+    },
+    {
+      "source": "আইল পাশ / করিডোর আসন",
+      "target": "Tabi ng aisle / upuan sa pasilyo"
+    },
+    {
+      "source": "ট্রেনের টিকিট / বোর্ডিং টিকেট",
+      "target": "Tiket ng tren / boarding ticket"
+    },
+    {
+      "source": "একমুখী টিকিট",
+      "target": "One-way ticket"
+    },
+    {
+      "source": "রাউন্ড ট্রিপ টিকিট / ফিরতি টিকিট",
+      "target": "Round trip ticket / return ticket"
+    },
+    {
+      "source": "সীমিত এক্সপ্রেস টিকিট / এক্সপ্রেস সারচার্জ টিকিট",
+      "target": "Limited express ticket / express surcharge ticket"
+    },
+    {
+      "source": "সীমিত এক্সপ্রেস ভাড়া / এক্সপ্রেস সারচার্জ",
+      "target": "Limited express fare / express surcharge"
+    },
+    {
+      "source": "টিকিটের বই / মাল্টি রাইড টিকেট",
+      "target": "Libro ng tiket / multi-ride ticket"
+    },
+    {
+      "source": "কমিউটার পাস / সিজন টিকেট",
+      "target": "Commuter pass / season ticket"
+    },
+    {
+      "source": "টিকিট গেট দিয়ে যান",
+      "target": "Pagdaan sa ticket gate"
+    },
+    {
+      "source": "একটি টিকিট ফেরত",
+      "target": "Pagbabalik ng tiket"
+    },
+    {
+      "source": "ফেরত",
+      "target": "Pagbabalik"
+    },
+    {
+      "source": "Part 2 · Day 3 · 31 শব্দ",
+      "target": "Part 2 · Day 3 · 31 salita"
+    },
+    {
+      "source": "ট্রেনে চড়ি ②",
+      "target": "Sumakay tayo ng tren ②"
+    },
+    {
+      "source": "প্ল্যাটফর্মে ভিড়",
+      "target": "Siksikan sa platform"
+    },
+    {
+      "source": "সাদা লাইনের পিছনে দাঁড়ানো",
+      "target": "Pagtayo sa likod ng puting linya"
+    },
+    {
+      "source": "হলুদ লাইনের পিছনে দাঁড়ানো",
+      "target": "Pagtayo sa likod ng dilaw na linya"
+    },
+    {
+      "source": "31 শব্দ",
+      "target": "31 salita"
+    },
+    {
+      "source": "বাইরে বাইরের দিক",
+      "target": "Labas panlabas na bahagi"
+    },
+    {
+      "source": "সীমিত এক্সপ্রেস এর মধ্য দিয়ে যায়",
+      "target": "Dumadaan ang limited express"
+    },
+    {
+      "source": "বোর্ড / পেতে",
+      "target": "Pagsakay / pagkuha"
+    },
+    {
+      "source": "নেমে যাওয়া",
+      "target": "Pagbaba"
+    },
+    {
+      "source": "প্রস্থান",
+      "target": "Paglabas"
+    },
+    {
+      "source": "ট্রেন খালি",
+      "target": "Walang laman ang tren"
+    },
+    {
+      "source": "খালি",
+      "target": "Walang laman"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-adjective"
+    },
+    {
+      "source": "একটি ভিড় ট্রেনে যাতায়াত",
+      "target": "Pagbibiyahe sa siksikang tren"
+    },
+    {
+      "source": "ট্রেন দোলনা / ট্রেন কাঁপছে",
+      "target": "Pag-uga ng tren / pagyanig ng tren"
+    },
+    {
+      "source": "প্রথম ট্রেন",
+      "target": "Unang tren"
+    },
+    {
+      "source": "শেষ ট্রেন",
+      "target": "Huling tren"
+    },
+    {
+      "source": "মূল স্টেশনে বোর্ড",
+      "target": "Pagsakay sa orihinal na istasyon"
+    },
+    {
+      "source": "টার্মিনালে নামা",
+      "target": "Pagbaba sa terminal"
+    },
+    {
+      "source": "একটি এক্সপ্রেস থেকে একটি লোকাল ট্রেনে স্থানান্তর",
+      "target": "Paglilipat mula sa express patungo sa lokal na tren"
+    },
+    {
+      "source": "স্থানান্তর ট্রেন পরিবর্তন",
+      "target": "Paglilipat pagpapalit ng tren"
+    },
+    {
+      "source": "ট্রেন মিস",
+      "target": "Pagka-miss ng tren"
+    },
+    {
+      "source": "একজনের স্টপ মিস করা",
+      "target": "Pagka-miss ng sariling stop"
+    },
+    {
+      "source": "ভাড়া নিষ্পত্তি",
+      "target": "Pagsasaayos ng pamasahe"
+    },
+    {
+      "source": "কন্ডাক্টর গাড়ির মধ্যে ঘোষণা করে",
+      "target": "Nag-aanunsyo ang konduktor sa loob ng bagon"
+    },
+    {
+      "source": "মোবাইল ফোন ব্যবহার থেকে বিরত থাকুন",
+      "target": "Pag-iwas sa paggamit ng mobile phone"
+    },
+    {
+      "source": "একজন বয়স্কদের আসন ছেড়ে দেওয়া",
+      "target": "Pagbibigay ng upuan sa matanda"
+    },
+    {
+      "source": "একজন বয়স্ক ব্যক্তিকে নিজের আসন ছেড়ে দেওয়া",
+      "target": "Pagbibigay ng sariling upuan sa matandang tao"
+    },
+    {
+      "source": "অগ্রাধিকার আসন",
+      "target": "Priority seat"
+    },
+    {
+      "source": "শারীরিক প্রতিবন্ধী ব্যক্তি",
+      "target": "Taong may kapansanan sa katawan"
+    },
+    {
+      "source": "ধাক্কা দেওয়া",
+      "target": "Pagtulak"
+    },
+    {
+      "source": "স্টেশন কিয়স্ক",
+      "target": "Kiosk ng istasyon"
+    },
+    {
+      "source": "Part 2 · Day 4 · 30 শব্দ",
+      "target": "Part 2 · Day 4 · 30 salita"
+    },
+    {
+      "source": "গাড়িতে চড়ি ①",
+      "target": "Sumakay tayo ng kotse ①"
+    },
+    {
+      "source": "উইন্ডশীল্ড / উইন্ডস্ক্রিন",
+      "target": "Windshield / windscreen"
+    },
+    {
+      "source": "উইন্ডশীল্ড ওয়াইপার",
+      "target": "Windshield wiper"
+    },
+    {
+      "source": "ফণা / বনেট",
+      "target": "Hood / bonnet"
+    },
+    {
+      "source": "গাড়ির বনেট",
+      "target": "Bonnet ng kotse"
+    },
+    {
+      "source": "আলো হেডলাইট",
+      "target": "Ilaw headlight"
+    },
+    {
+      "source": "রিয়ারভিউ আয়না",
+      "target": "Rearview mirror"
+    },
+    {
+      "source": "ট্রাঙ্ক বুট",
+      "target": "Trunk boot"
+    },
+    {
+      "source": "সাইড মিরর / উইং আয়না",
+      "target": "Side mirror / wing mirror"
+    },
+    {
+      "source": "যাত্রী আসন",
+      "target": "Upuan ng pasahero"
+    },
+    {
+      "source": "টায়ার টায়ার",
+      "target": "Gulong gulong"
+    },
+    {
+      "source": "গাড়ী নেভিগেশন সিস্টেম / জিপিএস",
+      "target": "Car navigation system / GPS"
+    },
+    {
+      "source": "স্টিয়ারিং হুইল",
+      "target": "Manibela"
+    },
+    {
+      "source": "চালকের আসন",
+      "target": "Upuan ng driver"
+    },
+    {
+      "source": "চাবি",
+      "target": "Susi"
+    },
+    {
+      "source": "17 শব্দ",
+      "target": "17 salita"
+    },
+    {
+      "source": "চালকের লাইসেন্স",
+      "target": "Lisensya ng driver"
+    },
+    {
+      "source": "চালাতে",
+      "target": "Pagmamaneho"
+    },
+    {
+      "source": "একটি গাড়ী ভাড়া",
+      "target": "Pagrenta ng kotse"
+    },
+    {
+      "source": "ট্রাঙ্কে লাগেজ লোড করুন",
+      "target": "Pagkarga ng bagahe sa trunk"
+    },
+    {
+      "source": "কাউকে যাত্রা দিন / কাউকে নিয়ে যান (বাহন)",
+      "target": "Pagbibigay ng sakay sa isang tao / pagsakay sa isang tao (sasakyan)"
+    },
+    {
+      "source": "সিটবেল্ট বেঁধে রাখুন / ফিতে সিটবেল্ট",
+      "target": "Pagkakabit ng seatbelt / pagkakabit ng seatbelt"
+    },
+    {
+      "source": "ইঞ্জিন চালু করুন",
+      "target": "Pagpapaandar ng makina"
+    },
+    {
+      "source": "রিয়ারভিউ মিরর পরীক্ষা করুন",
+      "target": "Pagsuri ng rearview mirror"
+    },
+    {
+      "source": "স্টিয়ারিং হুইল ধরুন / চাকা ধরে রাখুন",
+      "target": "Paghawak ng manibela / paghawak ng gulong"
+    },
+    {
+      "source": "এক্সিলারেটর টিপুন / এক্সিলারেটরে পা বাড়ান",
+      "target": "Pag-apak ng accelerator / pagtapak sa accelerator"
+    },
+    {
+      "source": "ব্রেক প্রয়োগ করুন",
+      "target": "Pag-apak ng preno"
+    },
+    {
+      "source": "আকস্মিক ব্রেকিং / জরুরী স্টপ",
+      "target": "Biglaang pagpreno / emergency stop"
+    },
+    {
+      "source": "লাইট অন করুন",
+      "target": "Pagbubukas ng ilaw"
+    },
+    {
+      "source": "ওয়াইপার চালান",
+      "target": "Pagpapatakbo ng wiper"
+    },
+    {
+      "source": "একটি গ্যাস স্টেশনে থামুন",
+      "target": "Paghinto sa gas station"
+    },
+    {
+      "source": "হাইওয়ে পেতে / এক্সপ্রেসওয়ে প্রবেশ করুন",
+      "target": "Pagpasok sa highway / pagpasok sa expressway"
+    },
+    {
+      "source": "একটি ফ্ল্যাট টায়ার পান / একটি খোঁচা আছে",
+      "target": "Pagkakaroon ng flat tire / pagkakaroon ng butas"
+    },
+    {
+      "source": "Part 2 · Day 5 · 35 শব্দ",
+      "target": "Part 2 · Day 5 · 35 salita"
+    },
+    {
+      "source": "গাড়িতে চড়ি ②",
+      "target": "Sumakay tayo ng kotse ②"
+    },
+    {
+      "source": "রাস্তা বন্ধ",
+      "target": "Saradong kalsada"
+    },
+    {
+      "source": "ট্রাফিক সিগন্যাল",
+      "target": "Signal ng trapiko"
+    },
+    {
+      "source": "চার-পথ ছেদ / রাস্তার কোণে",
+      "target": "Apat na daang interseksyon / kanto ng kalsada"
+    },
+    {
+      "source": "12 শব্দ",
+      "target": "12 salita"
+    },
+    {
+      "source": "রাস্তার মোড়",
+      "target": "Kanto ng kalsada"
+    },
+    {
+      "source": "নির্মাণাধীন",
+      "target": "Ginagawa"
+    },
+    {
+      "source": "রেলপথ ক্রসিং / লেভেল ক্রসিং",
+      "target": "Railroad crossing / level crossing"
+    },
+    {
+      "source": "পথচারী ক্রসিং / ক্রসওয়াক",
+      "target": "Pedestrian crossing / crosswalk"
+    },
+    {
+      "source": "বাস স্টপ",
+      "target": "Hintuan ng bus"
+    },
+    {
+      "source": "একমুখী রাস্তা / একমুখী ট্রাফিক",
+      "target": "One-way na kalsada / one-way na trapiko"
+    },
+    {
+      "source": "রেলপথ / রেলপথ ট্র্যাক",
+      "target": "Riles / track ng riles"
+    },
+    {
+      "source": "ট্রাফিক জ্যাম",
+      "target": "Traffic jam"
+    },
+    {
+      "source": "23 শব্দ",
+      "target": "23 salita"
+    },
+    {
+      "source": "রাস্তা ভিড়",
+      "target": "Siksikan ang kalsada"
+    },
+    {
+      "source": "রাস্তা যানজট হয়",
+      "target": "Nagkaka-traffic ang kalsada"
+    },
+    {
+      "source": "রাস্তা পরিষ্কার / ট্রাফিক হালকা",
+      "target": "Malinaw ang kalsada / magaan ang trapiko"
+    },
+    {
+      "source": "একটি চক্কর নিন",
+      "target": "Pag-iikot"
+    },
+    {
+      "source": "একটি দীর্ঘ চক্কর নিন / একটি বৃত্তাকার পথ দিয়ে যান",
+      "target": "Mahabang pag-iikot / pagdaan sa paikot na daan"
+    },
+    {
+      "source": "একটি শর্টকাট নিন",
+      "target": "Pagkuha ng shortcut"
+    },
+    {
+      "source": "রাস্তার শেষে বাম দিকে ঘুরুন",
+      "target": "Pagliko sa kaliwa sa dulo ng kalsada"
+    },
+    {
+      "source": "বাস থামে",
+      "target": "Humihinto ang bus"
+    },
+    {
+      "source": "ট্র্যাক অতিক্রম",
+      "target": "Pagtawid sa track"
+    },
+    {
+      "source": "একটি ট্রাক ওভারটেক করা / একটি ট্রাক পাস",
+      "target": "Pag-overtake ng trak / paglampas ng trak"
+    },
+    {
+      "source": "100 কিমি / ঘন্টা বেগে গাড়ি চালান",
+      "target": "Pagmamaneho sa bilis na 100 km/oras"
+    },
+    {
+      "source": "দ্রুতগতিতে ধরা পড়ে",
+      "target": "Pagkahuli sa speeding"
+    },
+    {
+      "source": "পার্কিং লঙ্ঘন করা / অবৈধভাবে পার্ক করা",
+      "target": "Paglabag sa paradahan / ilegal na pagparada"
+    },
+    {
+      "source": "একটি ট্রাফিক সংকেত উপেক্ষা / একটি লাল আলো চালান",
+      "target": "Pagbalewala ng signal ng trapiko / pagdaan sa pulang ilaw"
+    },
+    {
+      "source": "একটি গাড়ী আঘাত / একটি গাড়ী দুর্ঘটনা",
+      "target": "Pagbangga ng kotse / aksidente ng kotse"
+    },
+    {
+      "source": "একটি গাড়ী সংঘর্ষ / একটি গাড়ি বিধ্বস্ত হয়",
+      "target": "Pagbangga ng kotse / pagbagsak ng kotse"
+    },
+    {
+      "source": "একটি বিড়ালের উপর দৌড়ানো",
+      "target": "Pagsagasa ng pusa"
+    },
+    {
+      "source": "একটি বিড়াল একটি গাড়ী দ্বারা চালানো হয় / একটি বিড়াল একটি গাড়ী দ্বারা আঘাত করা হয়",
+      "target": "Nasagasaan ng kotse ang pusa / natamaan ng kotse ang pusa"
+    },
+    {
+      "source": "একটি (ট্রাফিক) দুর্ঘটনায় জড়িত হওয়া / একটি দুর্ঘটনা আছে",
+      "target": "Pagkasangkot sa (trapiko) aksidente / pagkakaroon ng aksidente"
+    },
+    {
+      "source": "গাড়ির জন্য সতর্ক থাকুন / যানবাহন থেকে সতর্ক থাকুন",
+      "target": "Mag-ingat sa mga kotse / mag-ingat sa mga sasakyan"
+    },
+    {
+      "source": "তির্যকভাবে ক্রস / একটি কোণে ক্রস",
+      "target": "Pagtawid nang pahilis / pagtawid sa isang kanto"
+    },
+    {
+      "source": "রাস্তা পার হওয়া / একটি রাস্তা পার",
+      "target": "Pagtawid ng kalsada / pagtawid ng kalsada"
+    },
+    {
+      "source": "Part 2 · Day 6 · 36 শব্দ",
+      "target": "Part 2 · Day 6 · 36 salita"
+    },
+    {
+      "source": "প্রয়োজনীয় কাজ সেরে নিই",
+      "target": "Tapusin ang kinakailangang gawain"
+    },
+    {
+      "source": "ব্যাংকবুক / পাসবুক",
+      "target": "Bankbook / passbook"
+    },
+    {
+      "source": "নগদ কার্ড / এটিএম কার্ড",
+      "target": "Cash card / ATM card"
+    },
+    {
+      "source": "সীলমোহর স্ট্যাম্প",
+      "target": "Seal stamp"
+    },
+    {
+      "source": "স্বাক্ষর",
+      "target": "Lagda"
+    },
+    {
+      "source": "1,000-ইয়েন বিল",
+      "target": "1,000-yen bill"
+    },
+    {
+      "source": "নোট / বিল",
+      "target": "Note / bill"
+    },
+    {
+      "source": "100-ইয়েন মুদ্রা",
+      "target": "100-yen coin"
+    },
+    {
+      "source": "মুদ্রা",
+      "target": "Barya"
+    },
+    {
+      "source": "টাকা বাঁচান",
+      "target": "Pag-iipon ng pera"
+    },
+    {
+      "source": "জমা টাকা / একটি আমানত করা",
+      "target": "Pagdedeposito ng pera / paggawa ng deposito"
+    },
+    {
+      "source": "একটি ব্যাংকে টাকা জমা করা",
+      "target": "Pagdedeposito ng pera sa bangko"
+    },
+    {
+      "source": "বেতন উত্তোলন / বেতন প্রত্যাহার",
+      "target": "Pag-withdraw ng sahod / pag-withdraw ng sahod"
+    },
+    {
+      "source": "পাসবুক আপডেট করা আছে / একটি ব্যাংকবুকে লেনদেন রেকর্ড করুন",
+      "target": "Pag-update ng passbook / pagtatala ng transaksyon sa bankbook"
+    },
+    {
+      "source": "পিন / ব্যক্তিগত শনাক্তকরণ নম্বর",
+      "target": "PIN / personal identification number"
+    },
+    {
+      "source": "ব্যাংক সদর দপ্তর / প্রধান কার্যালয়",
+      "target": "Punong tanggapan ng bangko / headquarters"
+    },
+    {
+      "source": "ব্যাংক শাখা",
+      "target": "Sangay ng bangko"
+    },
+    {
+      "source": "একটি অ্যাকাউন্ট খুলুন",
+      "target": "Pagbubukas ng account"
+    },
+    {
+      "source": "ভাড়া স্থানান্তর / ব্যাংক স্থানান্তর দ্বারা ভাড়া পরিশোধ করুন",
+      "target": "Paglilipat ng upa / pagbabayad ng upa sa pamamagitan ng bank transfer"
+    },
+    {
+      "source": "ব্যাংক স্থানান্তর / রেমিটেন্স",
+      "target": "Bank transfer / remittance"
+    },
+    {
+      "source": "ইউটিলিটি বিল প্রদান / পাবলিক ইউটিলিটি প্রদান করুন",
+      "target": "Pagbabayad ng utility bill / pagbabayad ng public utility"
+    },
+    {
+      "source": "পেমেন্ট / মূল্য পরিশোধ",
+      "target": "Pagbabayad / pagbabayad ng halaga"
+    },
+    {
+      "source": "পণ্যের জন্য অর্থ প্রদান / মূল্য পরিশোধ করুন",
+      "target": "Pagbabayad para sa produkto / pagbabayad ng halaga"
+    },
+    {
+      "source": "প্রাপকের নাম / ঠিকানা",
+      "target": "Pangalan / address ng tatanggap"
+    },
+    {
+      "source": "কাউন্টারে টাকা বিনিময় / কাউন্টারে টাকা পরিবর্তন করুন",
+      "target": "Pagpapalit ng pera sa counter / pagpapalit ng pera sa counter"
+    },
+    {
+      "source": "প্রেরকের নাম",
+      "target": "Pangalan ng nagpadala"
+    },
+    {
+      "source": "এক্সপ্রেস মেল দ্বারা একটি চিঠি পাঠান / এক্সপ্রেস পোস্ট দ্বারা পাঠান",
+      "target": "Pagpapadala ng liham sa pamamagitan ng express mail / pagpapadala sa pamamagitan ng express post"
+    },
+    {
+      "source": "রেমিট্যান্স পাঠান / প্রেরণ",
+      "target": "Pagpapadala ng remittance / pagpapadala"
+    },
+    {
+      "source": "প্যাকেজ / পার্সেল",
+      "target": "Pakete / parcel"
+    },
+    {
+      "source": "একটি ফি বহন করা / একটি ফি চার্জ করা হবে",
+      "target": "Pagkakaroon ng bayad / pagsingil ng bayad"
+    },
+    {
+      "source": "ডাক খরচ / ডাক চার্জ করা হয়",
+      "target": "Sisingilin ang postage / postage charge"
+    },
+    {
+      "source": "আমি প্রতি বছর (বিদেশ) ভ্রমণ করি, কিন্তু এই বছর আমার কাছে টাকা নেই, তাই আমি অভ্যন্তরীণভাবে ভ্রমণ করব।",
+      "target": "Naglalakbay ako (sa ibang bansa) bawat taon, ngunit ngayong taon wala akong pera, kaya maglalakbay ako sa loob ng bansa."
+    },
+    {
+      "source": "পরের মাসের পরের মাস হল (পরবর্তী মাস)।",
+      "target": "Ang buwan pagkatapos ng susunod na buwan ay (susunod na buwan)."
+    },
+    {
+      "source": "আমি সবসময় বিমানে একটি (আইল) আসন সংরক্ষণ করি।",
+      "target": "Palagi akong nagre-reserba ng (aisle) seat sa eroplano."
+    },
+    {
+      "source": "টোকিও স্টেশনের সময়সূচি অনুযায়ী ট্রেন (ছাড়ছে)।",
+      "target": "Ayon sa iskedyul ng Tokyo Station, ang tren ay (aalis)."
+    },
+    {
+      "source": "যখন আপনার গাড়িতে একটি শিশু থাকে, জানালা খোলার এবং বন্ধ করার সময় সতর্কতা অবলম্বন করুন।",
+      "target": "Kapag may bata sa iyong kotse, mag-ingat kapag binubuksan at isinasara ang bintana."
+    },
+    {
+      "source": "আমি (স্থানান্তরিত) বিশ্ববিদ্যালয় টিউশন মনোনীত অ্যাকাউন্টে।",
+      "target": "(Inilipat) ko ang tuition ng unibersidad sa itinalagang account."
+    },
+    {
+      "source": "গাড়ি পার্ক করার সময় চাবি (ঢোকানো) রেখে দিলে তা চুরি হয়ে যাবে।",
+      "target": "Kung iiwan ang susi na (nakapasok) kapag ipinarada ang kotse, mananakaw ito."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · あって",
+      "target": "Tamang sagot: 1 · あって"
+    },
+    {
+      "source": "আমার বড় ভাই একটি ট্রাফিক দুর্ঘটনায় জড়িত ছিলেন এবং তাকে হাসপাতালে ভর্তি হতে হয়েছিল।",
+      "target": "Ang kuya ko ay nasangkot sa aksidente sa trapiko at kinailangang maospital."
+    },
+    {
+      "source": "আমি যখন একটি ব্যাঙ্ক অ্যাকাউন্ট খুলি, তারা আমাকে একটি (পাসবুক) এবং একটি নগদ কার্ড দেয়।",
+      "target": "Kapag nagbubukas ako ng bank account, binibigyan nila ako ng (passbook) at cash card."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · キャンセル",
+      "target": "Tamang sagot: 4 · キャンセル"
+    },
+    {
+      "source": "যখন আমি (বাতিল) আমার ভ্রমণ রিজার্ভেশন আগের দিন, একটি ইয়েন ফেরত দেওয়া হয়নি.",
+      "target": "Nang (kinansela) ko ang aking reserbasyon sa paglalakbay noong nakaraang araw, walang yen na ibinalik."
+    },
+    {
+      "source": "স্টেশন বা স্টপেজ যেখানে ট্রেন বা বাস শেষ আসে।",
+      "target": "Istasyon o hintuan kung saan nagtatapos ang tren o bus."
+    },
+    {
+      "source": "একটি টিকিট যা একটি নির্দিষ্ট সময়ের মধ্যে নির্দিষ্ট স্টেশনগুলির মধ্যে সীমাহীন যাত্রার অনুমতি দেয়৷",
+      "target": "Isang tiket na nagpapahintulot ng walang limitasyong biyahe sa pagitan ng mga tinukoy na istasyon sa loob ng tinukoy na panahon."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · ゆずる",
+      "target": "Tamang sagot: 1 · ゆずる"
+    },
+    {
+      "source": "আপনার নিজের কিছু অন্য ব্যক্তিকে দেওয়ার জন্য।",
+      "target": "Pagbibigay ng sarili mong bagay sa ibang tao."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · ハンドル",
+      "target": "Tamang sagot: 4 · ハンドル"
+    },
+    {
+      "source": "গাড়ি চালানো বা চলার সময় আপনি আপনার হাত দিয়ে যে অংশটি ধরে রাখেন।",
+      "target": "Ang bahagi na hinahawakan mo gamit ang iyong mga kamay kapag nagmamaneho o gumagalaw ang kotse."
+    },
+    {
+      "source": "দূরে কোথাও যাওয়া এবং একই দিনে ফিরে আসা।",
+      "target": "Pagpunta sa malayong lugar at pagbabalik sa parehong araw."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · とてもすいていた",
+      "target": "Tamang sagot: 2 · とてもすいていた"
+    },
+    {
+      "source": "গতকাল ট্রেনটি অস্বাভাবিকভাবে খালি ছিল।",
+      "target": "Kahapon ay hindi pangkaraniwang walang laman ang tren."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · おろす",
+      "target": "Tamang sagot: 2 · おろす"
+    },
+    {
+      "source": "কাউন্টারে তহবিল প্রত্যাহার করতে, আপনার একটি ব্যক্তিগত সীল প্রয়োজন।",
+      "target": "Upang mag-withdraw ng pondo sa counter, kailangan mo ng personal na selyo."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · ずらした",
+      "target": "Tamang sagot: 1 · ずらした"
+    },
+    {
+      "source": "একটি জরুরী কাজ এসেছে, তাই আমি আমার ভ্রমণ পরিকল্পনা পরিবর্তন করেছি।",
+      "target": "May dumating na agarang trabaho, kaya binago ko ang aking plano sa paglalakbay."
+    },
+    {
+      "source": "তির্যকভাবে রাস্তা পার হলাম।",
+      "target": "Tumawid ako ng kalsada nang pahilis."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · しないようにする",
+      "target": "Tamang sagot: 3 · しないようにする"
+    },
+    {
+      "source": "মোবাইল ফোন ব্যবহার থেকে বিরত থাকুন।",
+      "target": "Iwasan ang paggamit ng mobile phone."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · １",
+      "target": "Tamang sagot: 4 · １"
+    },
+    {
+      "source": "শিপিং ফি",
+      "target": "Bayad sa shipping"
+    },
+    {
+      "source": "দিতে",
+      "target": "Pagbibigay"
+    },
+    {
+      "source": "দিক",
+      "target": "Direksyon"
+    },
+    {
+      "source": "আপনার স্টপ মিস",
+      "target": "Pagka-miss ng iyong stop"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · ぶつかりそうになって、",
+      "target": "Tamang sagot: 3 · ぶつかりそうになって、"
+    },
+    {
+      "source": "ব্রেক",
+      "target": "Preno"
+    },
+    {
+      "source": "PART 3 · ৬ LESSON + EXAM",
+      "target": "PART 3 · 6 LESSON + EXAM"
+    },
+    {
+      "source": "ছুটির দিন উপভোগ করি",
+      "target": "Nag-e-enjoy sa araw ng pahinga"
+    },
+    {
+      "source": "Part 3 · Day 1 · 36 শব্দ",
+      "target": "Part 3 · Day 1 · 36 salita"
+    },
+    {
+      "source": "ডেটে আমন্ত্রণ জানাই",
+      "target": "Mag-imbita sa date"
+    },
+    {
+      "source": "তানাকার সঙ্গে প্রেমের সম্পর্কে থাকা",
+      "target": "Pagiging nasa romantikong relasyon kay Tanaka"
+    },
+    {
+      "source": "তানাকার সঙ্গে ডেট করা",
+      "target": "Pagde-date kay Tanaka"
+    },
+    {
+      "source": "তানাকার সঙ্গে ঝগড়া করা",
+      "target": "Pag-aaway kay Tanaka"
+    },
+    {
+      "source": "22 শব্দ",
+      "target": "22 salita"
+    },
+    {
+      "source": "তানাকার সঙ্গে মিটমাট করা",
+      "target": "Pagkakasundo kay Tanaka"
+    },
+    {
+      "source": "তানাকার সঙ্গে ভালো সম্পর্ক থাকা",
+      "target": "Pagkakaroon ng magandang relasyon kay Tanaka"
+    },
+    {
+      "source": "তানাকার ঘনিষ্ঠ বন্ধু হওয়া",
+      "target": "Pagiging malapit na kaibigan ni Tanaka"
+    },
+    {
+      "source": "তানাকাকে কনসার্টে আমন্ত্রণ জানানো",
+      "target": "Pag-imbita kay Tanaka sa konsiyerto"
+    },
+    {
+      "source": "তানাকাকে অপছন্দ করা",
+      "target": "Pag-ayaw kay Tanaka"
+    },
+    {
+      "source": "তানাকার সঙ্গে সম্পর্ক ভেঙে দেওয়া",
+      "target": "Pagputol ng relasyon kay Tanaka"
+    },
+    {
+      "source": "তানাকার প্রতি আগ্রহী হওয়া",
+      "target": "Pagiging interesado kay Tanaka"
+    },
+    {
+      "source": "তানাকাকে ভালো লাগতে শুরু করা",
+      "target": "Pagsisimulang magustuhan si Tanaka"
+    },
+    {
+      "source": "তানাকাকে অপছন্দ হতে শুরু করা",
+      "target": "Pagsisimulang maayawan si Tanaka"
+    },
+    {
+      "source": "তানাকাকে ঈর্ষা করা",
+      "target": "Pagkainggit kay Tanaka"
+    },
+    {
+      "source": "তানাকার পছন্দের হওয়া",
+      "target": "Pagiging gusto ni Tanaka"
+    },
+    {
+      "source": "তানাকার অপছন্দের হওয়া",
+      "target": "Pagiging ayaw ni Tanaka"
+    },
+    {
+      "source": "তানাকার কাছ থেকে প্রত্যাখ্যাত হওয়া",
+      "target": "Pagtanggi ni Tanaka"
+    },
+    {
+      "source": "তানাকার প্রশংসা / শ্রদ্ধা করা",
+      "target": "Paghanga / paggalang kay Tanaka"
+    },
+    {
+      "source": "তানাকার প্রতি মোহিত হওয়া",
+      "target": "Pagkakahumaling kay Tanaka"
+    },
+    {
+      "source": "তানাকার প্রেমে পড়া",
+      "target": "Pagkahulog kay Tanaka"
+    },
+    {
+      "source": "14 শব্দ",
+      "target": "14 salita"
+    },
+    {
+      "source": "মহিলাদের কাছে জনপ্রিয় হন",
+      "target": "Pagiging sikat sa mga babae"
+    },
+    {
+      "source": "একে অপরের সাথে পেতে",
+      "target": "Pagkakasundo sa isa't isa"
+    },
+    {
+      "source": "অন্যের পরিকল্পনা সম্পর্কে জিজ্ঞাসা করুন",
+      "target": "Pagtatanong tungkol sa plano ng iba"
+    },
+    {
+      "source": "একজনের সময়সূচী সামঞ্জস্য করা",
+      "target": "Pagsasaayos ng sariling iskedyul"
+    },
+    {
+      "source": "উপলব্ধ হতে",
+      "target": "Pagiging available"
+    },
+    {
+      "source": "সামাজিকীকরণ",
+      "target": "Pakikisalamuha"
+    },
+    {
+      "source": "কেনাকাটা করতে যান",
+      "target": "Pagpunta sa pamimili"
+    },
+    {
+      "source": "প্রেমিক",
+      "target": "Kasintahan"
+    },
+    {
+      "source": "তানাকার প্রেমিক",
+      "target": "Kasintahan ni Tanaka"
+    },
+    {
+      "source": "বান্ধবী",
+      "target": "Kasintahan"
+    },
+    {
+      "source": "বিয়ের প্রস্তাব",
+      "target": "Proposisyon ng kasal"
+    },
+    {
+      "source": "একটি বিয়ের প্রস্তাব ফিরিয়ে দিন",
+      "target": "Pagtanggi sa proposisyon ng kasal"
+    },
+    {
+      "source": "একটি অস্পষ্ট উত্তর দিন",
+      "target": "Pagbibigay ng malabong sagot"
+    },
+    {
+      "source": "Part 3 · Day 2 · 38 শব্দ",
+      "target": "Part 3 · Day 2 · 38 salita"
+    },
+    {
+      "source": "প্রস্তুত হই",
+      "target": "Maghanda tayo"
+    },
+    {
+      "source": "কপাল",
+      "target": "Noo"
+    },
+    {
+      "source": "চোখের দোররা",
+      "target": "Pilikmata"
+    },
+    {
+      "source": "গাল",
+      "target": "Pisngi"
+    },
+    {
+      "source": "নেকলেস",
+      "target": "Kuwintas"
+    },
+    {
+      "source": "ঠোঁট",
+      "target": "Labi"
+    },
+    {
+      "source": "ভ্রু",
+      "target": "Kilay"
+    },
+    {
+      "source": "চোখের পাতা",
+      "target": "Talukap ng mata"
+    },
+    {
+      "source": "কানের দুল",
+      "target": "Hikaw"
+    },
+    {
+      "source": "বেল্ট",
+      "target": "Sinturon"
+    },
+    {
+      "source": "অন্তর্বাস",
+      "target": "Damit panloob"
+    },
+    {
+      "source": "সকালে প্রস্তুত হন",
+      "target": "Paghahanda sa umaga"
+    },
+    {
+      "source": "একটি গোসল করা",
+      "target": "Pagligo"
+    },
+    {
+      "source": "জ্যাকেট",
+      "target": "Jacket"
+    },
+    {
+      "source": "দাঁত ব্রাশ",
+      "target": "Pagsisipilyo ng ngipin"
+    },
+    {
+      "source": "টুথপেস্ট লাগান",
+      "target": "Paglalagay ng toothpaste"
+    },
+    {
+      "source": "একজনের দাড়ি কামানো",
+      "target": "Pag-ahit ng sariling balbas"
+    },
+    {
+      "source": "হেয়ার ড্রায়ার দিয়ে শুষ্ক চুল",
+      "target": "Pagpapatuyo ng buhok gamit ang hair dryer"
+    },
+    {
+      "source": "চিরুনি চুল",
+      "target": "Pagsuklay ng buhok"
+    },
+    {
+      "source": "মেকআপ করা",
+      "target": "Pagme-makeup"
+    },
+    {
+      "source": "লিপস্টিক লাগান",
+      "target": "Paglalagay ng lipstick"
+    },
+    {
+      "source": "কাপড় পরিবর্তন",
+      "target": "Pagpapalit ng damit"
+    },
+    {
+      "source": "পোশাক পরিবর্তন",
+      "target": "Pagpapalit ng kasuotan"
+    },
+    {
+      "source": "আড়ম্বরপূর্ণ পোশাক",
+      "target": "Magarbong damit"
+    },
+    {
+      "source": "ফ্যাশনেবল ব্যক্তি",
+      "target": "Fashionable na tao"
+    },
+    {
+      "source": "একটি স্ট্রিং বাঁধা",
+      "target": "Pagtali ng string"
+    },
+    {
+      "source": "একটি স্ট্রিং খুলুন",
+      "target": "Pagkalas ng string"
+    },
+    {
+      "source": "একটি স্কার্ফ মোড়ানো",
+      "target": "Pagbalot ng scarf"
+    },
+    {
+      "source": "গ্লাভস পরুন",
+      "target": "Pagsusuot ng guwantes"
+    },
+    {
+      "source": "একটি রিং উপর করা",
+      "target": "Paglalagay ng singsing"
+    },
+    {
+      "source": "Part 3 · Day 3 · 38 শব্দ",
+      "target": "Part 3 · Day 3 · 38 salita"
+    },
+    {
+      "source": "কেনাকাটা করি",
+      "target": "Mamili tayo"
+    },
+    {
+      "source": "হাতাবিহীন",
+      "target": "Walang manggas"
+    },
+    {
+      "source": "ছোট হাতা",
+      "target": "Maikling manggas"
+    },
+    {
+      "source": "দীর্ঘ-হাতা",
+      "target": "Mahabang manggas"
+    },
+    {
+      "source": "9 শব্দ",
+      "target": "9 salita"
+    },
+    {
+      "source": "সমতল কঠিন রঙ",
+      "target": "Patag na solid na kulay"
+    },
+    {
+      "source": "প্যাটার্ন / নকশা",
+      "target": "Pattern / disenyo"
+    },
+    {
+      "source": "ফিতে",
+      "target": "Laso"
+    },
+    {
+      "source": "পোলকা বিন্দু",
+      "target": "Polka dot"
+    },
+    {
+      "source": "ফুলের প্যাটার্ন",
+      "target": "Pattern ng bulaklak"
+    },
+    {
+      "source": "স্যুট ভাল দেখতে",
+      "target": "Mukhang maganda ang suit"
+    },
+    {
+      "source": "সন্তুষ্ট হতে পছন্দ",
+      "target": "Pagiging nasisiyahan pagkagusto"
+    },
+    {
+      "source": "পছন্দ করা পছন্দ",
+      "target": "Pagkagusto pagkagusto"
+    },
+    {
+      "source": "চোখ ধাঁধানো রঙ",
+      "target": "Nakasisilaw na kulay"
+    },
+    {
+      "source": "চটকদার / কৌতুকপূর্ণ",
+      "target": "Magara / nakakatawa"
+    },
+    {
+      "source": "সমতল বশীভূত",
+      "target": "Patag na masunurin"
+    },
+    {
+      "source": "জনপ্রিয় নকশা",
+      "target": "Sikat na disenyo"
+    },
+    {
+      "source": "ফ্যাশনে থাকা / জনপ্রিয় হতে",
+      "target": "Pagiging nasa fashion / pagiging sikat"
+    },
+    {
+      "source": "প্রবণতা উন্মাদনা",
+      "target": "Trend kabaliwan"
+    },
+    {
+      "source": "আকার পরীক্ষা করুন",
+      "target": "Pagsuri ng sukat"
+    },
+    {
+      "source": "ফিট সঠিক আকার হতে",
+      "target": "Pagiging fit tamang sukat"
+    },
+    {
+      "source": "আলগা",
+      "target": "Maluwag"
+    },
+    {
+      "source": "টাইট",
+      "target": "Masikip"
+    },
+    {
+      "source": "একটি ঝুড়ি আইটেম রাখুন",
+      "target": "Paglalagay ng item sa basket"
+    },
+    {
+      "source": "বিক্রয়ের উপর কিনুন",
+      "target": "Pagbili sa sale"
+    },
+    {
+      "source": "ডিপার্টমেন্ট-স্টোর বিক্রয় আইটেম",
+      "target": "Item sa sale ng department store"
+    },
+    {
+      "source": "30% ছাড় / 30 শতাংশ ছাড়",
+      "target": "30% diskwento / 30 porsyentong diskwento"
+    },
+    {
+      "source": "বিক্রি করা বিক্রি করা",
+      "target": "Pagbebenta pagbebenta"
+    },
+    {
+      "source": "আসল হীরা",
+      "target": "Tunay na diyamante"
+    },
+    {
+      "source": "জাল নকল",
+      "target": "Peke peke"
+    },
+    {
+      "source": "একটি ভাল চুক্তি পেতে / লাভ",
+      "target": "Pagkuha ng magandang deal / kita"
+    },
+    {
+      "source": "ক্ষতি ভোগ করা / হারান",
+      "target": "Pagkalugi / pagkawala"
+    },
+    {
+      "source": "Part 3 · Day 4 · 35 শব্দ",
+      "target": "Part 3 · Day 4 · 35 salita"
+    },
+    {
+      "source": "খাবার খেতে যাই",
+      "target": "Kumain tayo sa labas"
+    },
+    {
+      "source": "পুরো পরিবারের সাথে",
+      "target": "Kasama ang buong pamilya"
+    },
+    {
+      "source": "একটি শিশু আনুন / একটি শিশু নিন",
+      "target": "Pagdala ng bata / pagkuha ng bata"
+    },
+    {
+      "source": "ক্ষুধার্ত ক্ষুধার্ত হতে",
+      "target": "Pagiging gutom pagiging gutom"
+    },
+    {
+      "source": "খাওয়া আউট খাওয়া",
+      "target": "Pagkain sa labas pagkain"
+    },
+    {
+      "source": "দুপুরের খাবার খাওয়া / লাঞ্চ করা",
+      "target": "Pagkain ng tanghalian / pagla-lunch"
+    },
+    {
+      "source": "দুপুরের খাবার",
+      "target": "Tanghalian"
+    },
+    {
+      "source": "একটি ভাল বায়ুমণ্ডল সঙ্গে স্থান / মনোরম রেস্টুরেন্ট",
+      "target": "Lugar na may magandang atmospera / kaaya-ayang restaurant"
+    },
+    {
+      "source": "পূর্ণ / কোনো আসন খালি নেই",
+      "target": "Puno / walang bakanteng upuan"
+    },
+    {
+      "source": "ভিড় নয় / খালি",
+      "target": "Hindi siksikan / walang laman"
+    },
+    {
+      "source": "লাইনে দাঁড়ানো / সারি",
+      "target": "Pagtayo sa linya / pila"
+    },
+    {
+      "source": "একটি লাইন গঠন / সারি ফর্ম",
+      "target": "Pagbuo ng linya / pagbuo ng pila"
+    },
+    {
+      "source": "অ ধূমপান আসন / অ ধূমপান বিভাগ",
+      "target": "Non-smoking seat / non-smoking section"
+    },
+    {
+      "source": "ধূমপান আসন / ধূমপান বিভাগ",
+      "target": "Smoking seat / smoking section"
+    },
+    {
+      "source": "একটি সুপারিশের জন্য পরিচারিকাকে জিজ্ঞাসা করুন / একটি পরামর্শ জন্য সার্ভার জিজ্ঞাসা করুন",
+      "target": "Pagtatanong sa waitress para sa rekomendasyon / pagtatanong sa server para sa mungkahi"
+    },
+    {
+      "source": "বড় অংশ / প্রচুর",
+      "target": "Malaking bahagi / marami"
+    },
+    {
+      "source": "ছোট অংশ / স্বল্প",
+      "target": "Maliit na bahagi / kaunti"
+    },
+    {
+      "source": "একটি আদেশ সম্পর্কে সিদ্ধান্ত / আদেশ সিদ্ধান্ত হয়",
+      "target": "Pagpapasya tungkol sa order / pagpapasya ng order"
+    },
+    {
+      "source": "আদেশ একটি আদেশ রাখুন",
+      "target": "Paglalagay ng order paglalagay ng order"
+    },
+    {
+      "source": "আদেশ গ্রহণ / গ্রাহকদের আদেশ নিন",
+      "target": "Pagtanggap ng order / pagkuha ng order ng customer"
+    },
+    {
+      "source": "ডেজার্ট যোগ করুন / একটি অতিরিক্ত ডেজার্ট অর্ডার করুন",
+      "target": "Pagdaragdag ng dessert / pag-order ng karagdagang dessert"
+    },
+    {
+      "source": "কফি রিফিল / আরেক কাপ কফি",
+      "target": "Refill ng kape / isa pang tasa ng kape"
+    },
+    {
+      "source": "বিনামূল্যে বিনামূল্যে",
+      "target": "Libre libre"
+    },
+    {
+      "source": "থালা বাসন পরিষ্কার করুন / থালাবাসন সরান",
+      "target": "Paglilinis ng pinggan / pag-aalis ng pinggan"
+    },
+    {
+      "source": "খাবার না খাওয়া ছেড়ে দিন / খাবারগুলি অসমাপ্ত রেখে দিন",
+      "target": "Pag-iwan ng pagkain na hindi nakain / pag-iwan ng pagkain na hindi tapos"
+    },
+    {
+      "source": "অপচয়কারী কি একটি অপচয়",
+      "target": "Sayang pag-aaksaya"
+    },
+    {
+      "source": "কতজন মানুষ? / কতজন অতিথি?",
+      "target": "Ilang tao? / Ilang bisita?"
+    },
+    {
+      "source": "দুই ব্যক্তি / দুই জন্য",
+      "target": "Dalawang tao / para sa dalawa"
+    },
+    {
+      "source": "আমি দুঃখিত / আমি ক্ষমাপ্রার্থী",
+      "target": "Paumanhin / humihingi ako ng paumanhin"
+    },
+    {
+      "source": "দয়া করে একটু অপেক্ষা করুন / অনুগ্রহ করে আরও কিছুক্ষণ অপেক্ষা করুন",
+      "target": "Mangyaring maghintay nang kaunti / mangyaring maghintay pa nang kaunti"
+    },
+    {
+      "source": "আপনাকে অপেক্ষায় রাখার জন্য দুঃখিত / অপেক্ষা করার জন্য আপনাকে ধন্যবাদ",
+      "target": "Paumanhin sa pagpapahintay sa iyo / salamat sa paghihintay"
+    },
+    {
+      "source": "Part 3 · Day 5 · 36 শব্দ",
+      "target": "Part 3 · Day 5 · 36 salita"
+    },
+    {
+      "source": "পানীয় পান করি",
+      "target": "Uminom tayo ng inumin"
+    },
+    {
+      "source": "একটি ভোজ রাখা / একটি পার্টি নিক্ষেপ",
+      "target": "Pagdaraos ng salu-salo / paghahagis ng party"
+    },
+    {
+      "source": "মদ্যপান পার্টি",
+      "target": "Parting inuman"
+    },
+    {
+      "source": "বিদায়ী পার্টি / বিদায় পার্টি",
+      "target": "Paalam na party / farewell party"
+    },
+    {
+      "source": "36 শব্দ",
+      "target": "36 salita"
+    },
+    {
+      "source": "স্বাগত পার্টি",
+      "target": "Welcome party"
+    },
+    {
+      "source": "সব-আপনি-পান করতে পারেন / সীমাহীন পানীয়",
+      "target": "All-you-can-drink / walang limitasyong inumin"
+    },
+    {
+      "source": "সব-আপনি-খাতে পারেন",
+      "target": "All-you-can-eat"
+    },
+    {
+      "source": "ঢালা (অ্যালকোহল)",
+      "target": "Pagbuhos (alak)"
+    },
+    {
+      "source": "গরম জল ঢালা",
+      "target": "Pagbuhos ng mainit na tubig"
+    },
+    {
+      "source": "টোস্ট",
+      "target": "Toast"
+    },
+    {
+      "source": "জীবিত হওয়া / উত্তেজিত হন",
+      "target": "Pagiging masigla / pagiging excited"
+    },
+    {
+      "source": "মাটি উঠে",
+      "target": "Pagtaas ng lupa"
+    },
+    {
+      "source": "বিয়ার ফেনা",
+      "target": "Bula ng beer"
+    },
+    {
+      "source": "উপচে পড়া কানায় কানায়",
+      "target": "Pag-apaw umaapaw"
+    },
+    {
+      "source": "ছড়ানো",
+      "target": "Pagkalat"
+    },
+    {
+      "source": "ছড়িয়ে পড়া উপচে পড়া",
+      "target": "Pagkalat pag-apaw"
+    },
+    {
+      "source": "একটি বিয়ার চুগ",
+      "target": "Paglagok ng beer"
+    },
+    {
+      "source": "জল দিয়ে হুইস্কি",
+      "target": "Whisky na may tubig"
+    },
+    {
+      "source": "পনির (খাবার)",
+      "target": "Keso (pagkain)"
+    },
+    {
+      "source": "মাতাল পেতে",
+      "target": "Paglalasing"
+    },
+    {
+      "source": "তাণ্ডব হিংস্র আচরণ করা",
+      "target": "Pagwawala marahas na pag-uugali"
+    },
+    {
+      "source": "প্রাণবন্ত হৈচৈ",
+      "target": "Masiglang kaguluhan"
+    },
+    {
+      "source": "কোলাহলপূর্ণ / জোরে",
+      "target": "Maingay / malakas"
+    },
+    {
+      "source": "হইচইপূর্ণ / কোলাহলপূর্ণ",
+      "target": "Maingay / maingay"
+    },
+    {
+      "source": "একটি হৈচৈ করা / কোলাহলপূর্ণ হতে",
+      "target": "Paggawa ng kaguluhan / pagiging maingay"
+    },
+    {
+      "source": "সিগারেটের ধোঁয়া",
+      "target": "Usok ng sigarilyo"
+    },
+    {
+      "source": "ধোঁয়াটে / ধোঁয়ায় পূর্ণ",
+      "target": "Mausok / puno ng usok"
+    },
+    {
+      "source": "ধোঁয়াটে / দম বন্ধ করা",
+      "target": "Mausok / nakakasakal"
+    },
+    {
+      "source": "একটি গ্লাস ভাঙ্গা",
+      "target": "Pagbasag ng baso"
+    },
+    {
+      "source": "একটি গ্লাস ভেঙে যায়",
+      "target": "Nababasag ang baso"
+    },
+    {
+      "source": "একটি বিয়ার বোতল উপর ঠক্ঠক্ শব্দ",
+      "target": "Pagkatok ng bote ng beer"
+    },
+    {
+      "source": "একটি বিয়ার বোতল পড়ে",
+      "target": "Nahulog ang bote ng beer"
+    },
+    {
+      "source": "অন্যান্য গ্রাহকদের বিরক্ত করা",
+      "target": "Pag-abala sa ibang customer"
+    },
+    {
+      "source": "অসুবিধার কারণ",
+      "target": "Pagdudulot ng abala"
+    },
+    {
+      "source": "Part 3 · Day 6 · 30 শব্দ",
+      "target": "Part 3 · Day 6 · 30 salita"
+    },
+    {
+      "source": "টাকা পরিশোধ করি",
+      "target": "Magbayad tayo"
+    },
+    {
+      "source": "নগদ নিবন্ধন / চেকআউট",
+      "target": "Cash register / checkout"
+    },
+    {
+      "source": "বিল পরিশোধ করুন",
+      "target": "Pagbabayad ng bill"
+    },
+    {
+      "source": "চেক করুন, অনুগ্রহ করে",
+      "target": "Check po, mangyaring"
+    },
+    {
+      "source": "30 শব্দ",
+      "target": "30 salita"
+    },
+    {
+      "source": "আলাদাভাবে অর্থ প্রদান করুন",
+      "target": "Pagbabayad nang hiwalay"
+    },
+    {
+      "source": "আলাদাভাবে, অনুগ্রহ করে",
+      "target": "Hiwalay po, mangyaring"
+    },
+    {
+      "source": "বিল বিভক্ত",
+      "target": "Paghahati ng bill"
+    },
+    {
+      "source": "আচরণ (কারো জন্য অর্থ প্রদান)",
+      "target": "Pagtrato (pagbabayad para sa isang tao)"
+    },
+    {
+      "source": "নগদ অর্থ প্রদান",
+      "target": "Pagbabayad ng cash"
+    },
+    {
+      "source": "(ক্রেডিট) কার্ড দ্বারা অর্থ প্রদান",
+      "target": "Pagbabayad gamit ang (credit) card"
+    },
+    {
+      "source": "কার্ডের মেয়াদ শেষ হওয়ার তারিখ চেক করুন",
+      "target": "Pagsuri ng petsa ng pag-expire ng card"
+    },
+    {
+      "source": "একটি বিল ভাঙ্গা",
+      "target": "Pagpapalit ng bill"
+    },
+    {
+      "source": "পরিবর্তন গ্রহণ করুন",
+      "target": "Pagtanggap ng sukli"
+    },
+    {
+      "source": "একটি রসিদ পান",
+      "target": "Pagkuha ng resibo"
+    },
+    {
+      "source": "স্প্লার্জ",
+      "target": "Pagwawaldas"
+    },
+    {
+      "source": "অর্থ অপচয়",
+      "target": "Pag-aaksaya ng pera"
+    },
+    {
+      "source": "একটি বিল গ্রহণ",
+      "target": "Pagtanggap ng bill"
+    },
+    {
+      "source": "খরচ খরচ বহন",
+      "target": "Pagsagot ng gastos gastos"
+    },
+    {
+      "source": "এই মাসে জীবনযাত্রার খরচ কম হতে পারে",
+      "target": "Maaaring mababa ang gastos sa pamumuhay ngayong buwan"
+    },
+    {
+      "source": "পরিবহন খরচ / ভাড়া",
+      "target": "Gastos sa transportasyon / pamasahe"
+    },
+    {
+      "source": "টাকা",
+      "target": "Pera"
+    },
+    {
+      "source": "অপর্যাপ্ত হওয়া / অভাব হতে",
+      "target": "Pagiging kulang / pagkukulang"
+    },
+    {
+      "source": "খাদ্য খরচ সংরক্ষণ / খাদ্যে সাশ্রয়ী করুন",
+      "target": "Pagtitipid sa gastos sa pagkain / pagiging matipid sa pagkain"
+    },
+    {
+      "source": "বর্জ্য অপসারণ",
+      "target": "Pag-aalis ng basura"
+    },
+    {
+      "source": "দরিদ্র হয়ে",
+      "target": "Pagiging mahirap"
+    },
+    {
+      "source": "ধনী হত্তয়া / ধনী হয়ে",
+      "target": "Pagiging mayaman / pagiging mayaman"
+    },
+    {
+      "source": "দরিদ্র জীবন / দরিদ্র জীবনযাপন",
+      "target": "Mahirap na buhay / mahirap na pamumuhay"
+    },
+    {
+      "source": "ঋণ বহন করা / টাকা ধার",
+      "target": "Pagkakaroon ng utang / paghiram ng pera"
+    },
+    {
+      "source": "এই ঘড়িটি পুরানো, কিন্তু আমি (সত্যিই পছন্দ করি)।",
+      "target": "Luma ang relong ito, ngunit (talagang gusto ko ito)."
+    },
+    {
+      "source": "'আজ ঠাণ্ডা, তাই একটা (দীর্ঘ হাতা) শার্ট পরলে ভালো হবে।'",
+      "target": "'Malamig ngayon, kaya mas mabuting magsuot ng (mahabang manggas) na shirt.'"
+    },
+    {
+      "source": "'আমি এই রেস্তোরাঁর (বিল) পরিশোধ করব।'",
+      "target": "'Ako ang magbabayad ng (bill) ng restaurant na ito.'"
+    },
+    {
+      "source": "'আসুন সবাই (বিল ভাগ করে) আজকের পার্টির জন্য।'",
+      "target": "'Mag-ambagan tayong lahat (paghahati ng bill) para sa party ngayon.'"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · ひげ",
+      "target": "Tamang sagot: 3 · ひげ"
+    },
+    {
+      "source": "'আমার (দাড়ি) লম্বা হচ্ছে। আমার শেভ করা দরকার।'",
+      "target": "'Humahaba ang aking (balbas). Kailangan kong mag-ahit.'"
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · はめている",
+      "target": "Tamang sagot: 1 · はめている"
+    },
+    {
+      "source": "'ওহ, আপনি (পরেছেন) একটি সুন্দর আংটি।'",
+      "target": "'Oh, (nakasuot) ka ng magandang singsing.'"
+    },
+    {
+      "source": "কার্ডের (মেয়াদ শেষ হওয়ার তারিখ) শেষ হতে চলেছে৷",
+      "target": "Malapit nang matapos ang (petsa ng pag-expire) ng card."
+    },
+    {
+      "source": "(ওয়েট্রেসকে) 'উম, আমি আমাদের অর্ডারে কিছু (যোগ) করতে চাই...'",
+      "target": "(Sa waitress) 'Um, gusto kong (magdagdag) ng isang bagay sa aming order...'"
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · つかない",
+      "target": "Tamang sagot: 2 · つかない"
+    },
+    {
+      "source": "'দুঃখিত, আমি পরের সপ্তাহে (উপলভ্য) নই।'",
+      "target": "'Paumanhin, hindi ako (available) sa susunod na linggo.'"
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · ぜいたく",
+      "target": "Tamang sagot: 4 · ぜいたく"
+    },
+    {
+      "source": "'আমাদের শুধু একটি গাড়ি দরকার—আপনি কি মনে করেন না আরেকটি নতুন কেনা (অতিরিক্ত)?'",
+      "target": "'Isang kotse lang ang kailangan natin—hindi mo ba iniisip na (luho) ang pagbili ng isa pang bago?'"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · ふられる",
+      "target": "Tamang sagot: 3 · ふられる"
+    },
+    {
+      "source": "আপনার পছন্দের ব্যক্তির দ্বারা প্রত্যাখ্যান করা বা বলা হচ্ছে যে তারা বিচ্ছেদ করতে চায়।",
+      "target": "Pagtanggi ng taong gusto mo o pagsasabi na gusto nilang makipaghiwalay."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · やかましい",
+      "target": "Tamang sagot: 1 · やかましい"
+    },
+    {
+      "source": "একটি পরিস্থিতি যেখানে ভয়েস বা শব্দগুলি খুব জোরে এবং বিরক্তিকর।",
+      "target": "Isang sitwasyon kung saan napakalakas at nakakainis ang mga boses o tunog."
+    },
+    {
+      "source": "কিছু করার জন্য টাকা দরকার।",
+      "target": "Kailangan ng pera upang gumawa ng isang bagay."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · くずす",
+      "target": "Tamang sagot: 2 · くずす"
+    },
+    {
+      "source": "ছোট পরিবর্তন একটি বিল ভাঙ্গা.",
+      "target": "Pagpapalit ng bill sa maliliit na barya."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · さそう",
+      "target": "Tamang sagot: 2 · さそう"
+    },
+    {
+      "source": "\"চলো একসাথে কোথাও যাই\" বা \"চলো একসাথে কিছু করি\" এর মত কথা বলতে।",
+      "target": "\"Pagsasabi ng tulad ng 'pumunta tayo sa isang lugar nang magkasama' o 'gumawa tayo ng isang bagay nang magkasama'.\""
+    },
+    {
+      "source": "মনে হচ্ছে তানাকা নাকামুরার সাথে ডেটিং করছে।",
+      "target": "Mukhang nakikipag-date si Tanaka kay Nakamura."
+    },
+    {
+      "source": "বর্জ্য অপসারণ এবং যতটা সম্ভব সংরক্ষণ করুন.",
+      "target": "Pag-aalis ng basura at pagtitipid hangga't maaari."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · うるさくしている",
+      "target": "Tamang sagot: 3 · うるさくしている"
+    },
+    {
+      "source": "মাতালরা উচ্চস্বরে চিৎকার করছে এবং হট্টগোল করছে।",
+      "target": "Sumisigaw nang malakas ang mga lasing at gumagawa ng kaguluhan."
+    },
+    {
+      "source": "ফুলের স্কার্ট এই বছর ফ্যাশন হয়.",
+      "target": "Nasa fashion ngayong taon ang palda na may bulaklak."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · すかれる",
+      "target": "Tamang sagot: 4 · すかれる"
+    },
+    {
+      "source": "সেকশন চিফ তানাকা দয়ালু এবং সুদর্শন, তাই তিনি মহিলাদের কাছে খুব জনপ্রিয়।",
+      "target": "Mabait at gwapo si Section Chief Tanaka, kaya napakasikat niya sa mga babae."
+    },
+    {
+      "source": "অস্পষ্ট।",
+      "target": "Malabo."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · ひもが",
+      "target": "Tamang sagot: 1 · ひもが"
+    },
+    {
+      "source": "খুলে ফেলুন।",
+      "target": "Kalasın."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 「",
+      "target": "Tamang sagot: 3 · 「"
+    },
+    {
+      "source": "আলাদাভাবে",
+      "target": "Nang hiwalay"
+    },
+    {
+      "source": "কি অপচয়",
+      "target": "Napakalaking sayang"
+    },
+    {
+      "source": "এটা পছন্দ.",
+      "target": "Gusto ito."
+    },
+    {
+      "source": "PART 4 · ৬ LESSON + EXAM",
+      "target": "PART 4 · 6 LESSON + EXAM"
+    },
+    {
+      "source": "পড়াশোনা ও কাজ করি",
+      "target": "Nag-aaral at nagtatrabaho"
+    },
+    {
+      "source": "Part 4 · Day 1 · 41 শব্দ",
+      "target": "Part 4 · Day 1 · 41 salita"
+    },
+    {
+      "source": "স্কুলে যাই ①",
+      "target": "Pumunta tayo sa paaralan ①"
+    },
+    {
+      "source": "বিষয় (একাডেমিক)",
+      "target": "Paksa (akademiko)"
+    },
+    {
+      "source": "স্কুল বিষয়",
+      "target": "Paksa sa paaralan"
+    },
+    {
+      "source": "ভালো থাকা দক্ষ হতে",
+      "target": "Pagiging magaling pagiging mahusay"
+    },
+    {
+      "source": "15 শব্দ",
+      "target": "15 salita"
+    },
+    {
+      "source": "ভাল না / দুর্বল হও (এ)",
+      "target": "Hindi magaling / mahina (sa)"
+    },
+    {
+      "source": "জাপানি (ভাষা)",
+      "target": "Japanese (wika)"
+    },
+    {
+      "source": "পাটিগণিত / প্রাথমিক গণিত",
+      "target": "Arithmetic / elementaryang matematika"
+    },
+    {
+      "source": "বিজ্ঞান",
+      "target": "Agham"
+    },
+    {
+      "source": "সামাজিক অধ্যয়ন",
+      "target": "Araling panlipunan"
+    },
+    {
+      "source": "শারীরিক শিক্ষা / পিই",
+      "target": "Physical education / PE"
+    },
+    {
+      "source": "একটি বেসরকারী উচ্চ বিদ্যালয়ে প্রবেশ করুন",
+      "target": "Pagpasok sa pribadong high school"
+    },
+    {
+      "source": "একটি পাবলিক হাই স্কুলে প্রবেশ করুন",
+      "target": "Pagpasok sa pampublikong high school"
+    },
+    {
+      "source": "একটি জাতীয় বিশ্ববিদ্যালয়ে প্রবেশ করুন",
+      "target": "Pagpasok sa pambansang unibersidad"
+    },
+    {
+      "source": "লাঞ্চ বিরতি",
+      "target": "Pahinga sa tanghalian"
+    },
+    {
+      "source": "বক্সড লাঞ্চ / প্যাকড লাঞ্চ",
+      "target": "Boxed lunch / packed lunch"
+    },
+    {
+      "source": "স্কুল দুপুরের খাবার",
+      "target": "Tanghalian sa paaralan"
+    },
+    {
+      "source": "প্রবেশ অনুষ্ঠান",
+      "target": "Seremonya ng pagpasok"
+    },
+    {
+      "source": "স্নাতক অনুষ্ঠান",
+      "target": "Seremonya ng pagtatapos"
+    },
+    {
+      "source": "অংশগ্রহণ উপস্থিত থাকা",
+      "target": "Pakikilahok pagdalo"
+    },
+    {
+      "source": "অনুপস্থিত থাকা / মিস",
+      "target": "Pagiging wala / pagka-miss"
+    },
+    {
+      "source": "বাসে করে স্কুলে যাওয়া",
+      "target": "Pagpunta sa paaralan sakay ng bus"
+    },
+    {
+      "source": "কাজে যাতায়াত",
+      "target": "Pagbibiyahe papunta sa trabaho"
+    },
+    {
+      "source": "প্রথম / দ্বিতীয় / তৃতীয় মেয়াদ",
+      "target": "Una / ikalawa / ikatlong termino"
+    },
+    {
+      "source": "এই শব্দটি",
+      "target": "Ang terminong ito"
+    },
+    {
+      "source": "প্রথম সেমিস্টার / প্রথম মেয়াদ",
+      "target": "Unang semestre / unang termino"
+    },
+    {
+      "source": "দ্বিতীয় সেমিস্টার / পরবর্তী মেয়াদ",
+      "target": "Ikalawang semestre / susunod na termino"
+    },
+    {
+      "source": "একই গ্রেড / একই স্কুল বছর",
+      "target": "Parehong grado / parehong taon ng paaralan"
+    },
+    {
+      "source": "নিজের উপর অধ্যয়ন করা / স্ব-অধ্যয়ন",
+      "target": "Pag-aaral nang mag-isa / self-study"
+    },
+    {
+      "source": "একটি পেন্সিল তীক্ষ্ণ করুন",
+      "target": "Pagtatasa ng lapis"
+    },
+    {
+      "source": "শাসক",
+      "target": "Ruler"
+    },
+    {
+      "source": "একটি শাসক দিয়ে পরিমাপ করুন",
+      "target": "Pagsukat gamit ang ruler"
+    },
+    {
+      "source": "মোট গণনা / মোট আপ",
+      "target": "Kabuuang bilang / kabuuan"
+    },
+    {
+      "source": "সংযোজন",
+      "target": "Pagdaragdag"
+    },
+    {
+      "source": "যোগ করুন",
+      "target": "Pagdaragdag"
+    },
+    {
+      "source": "বিয়োগ",
+      "target": "Pagbabawas"
+    },
+    {
+      "source": "গুণ",
+      "target": "Pagpaparami"
+    },
+    {
+      "source": "বিভাগ",
+      "target": "Paghahati"
+    },
+    {
+      "source": "ভাগ করা / বিভক্ত করা",
+      "target": "Paghahati / paghahati"
+    },
+    {
+      "source": "Part 4 · Day 2 · 41 শব্দ",
+      "target": "Part 4 · Day 2 · 41 salita"
+    },
+    {
+      "source": "স্কুলে যাই ②",
+      "target": "Pumunta tayo sa paaralan ②"
+    },
+    {
+      "source": "অনুষদ / বিভাগ",
+      "target": "Fakultad / departamento"
+    },
+    {
+      "source": "একটি প্রবেশিকা পরীক্ষা নিতে / পরীক্ষায় বসতে",
+      "target": "Pagkuha ng entrance exam / pag-upo sa pagsusulit"
+    },
+    {
+      "source": "সাহিত্য অনুষদ",
+      "target": "Fakultad ng panitikan"
+    },
+    {
+      "source": "19 শব্দ",
+      "target": "19 salita"
+    },
+    {
+      "source": "অর্থনীতি অনুষদ",
+      "target": "Fakultad ng ekonomiya"
+    },
+    {
+      "source": "আইন অনুষদ",
+      "target": "Fakultad ng batas"
+    },
+    {
+      "source": "বিজ্ঞান এবং প্রকৌশল অনুষদ",
+      "target": "Fakultad ng agham at inhinyeriya"
+    },
+    {
+      "source": "মেডিসিন অনুষদ",
+      "target": "Fakultad ng medisina"
+    },
+    {
+      "source": "বিভাগ বিষয়",
+      "target": "Paksa ng departamento"
+    },
+    {
+      "source": "প্রধান বিষয় হিসেবে পড়া / বিশেষজ্ঞ হওয়া",
+      "target": "Pag-aaral bilang major / pagiging espesyalista"
+    },
+    {
+      "source": "অর্থনীতি",
+      "target": "Ekonomiya"
+    },
+    {
+      "source": "রাষ্ট্রবিজ্ঞান",
+      "target": "Agham pampulitika"
+    },
+    {
+      "source": "মনোবিজ্ঞান",
+      "target": "Sikolohiya"
+    },
+    {
+      "source": "ভাষাতত্ত্ব",
+      "target": "Lingguwistika"
+    },
+    {
+      "source": "পদার্থবিদ্যা",
+      "target": "Pisika"
+    },
+    {
+      "source": "একটি সেমিনার নিতে",
+      "target": "Pagkuha ng seminar"
+    },
+    {
+      "source": "ক্রেডিট অর্জন করতে",
+      "target": "Pagkuha ng credit"
+    },
+    {
+      "source": "একটি বক্তৃতায় অংশগ্রহণের জন্য",
+      "target": "Pagdalo sa lektura"
+    },
+    {
+      "source": "প্রতিকারমূলক ক্লাস নিতে",
+      "target": "Pagkuha ng remedial class"
+    },
+    {
+      "source": "একটি মেক-আপ লেকচারে যোগ দিতে",
+      "target": "Pagdalo sa make-up lecture"
+    },
+    {
+      "source": "উচ্চ শিক্ষায় এগিয়ে যাওয়ার আশায়",
+      "target": "Sa pag-asang umusad sa mas mataas na edukasyon"
+    },
+    {
+      "source": "পরীক্ষার ফলাফল দেখতে যান",
+      "target": "Pagpunta upang tingnan ang resulta ng pagsusulit"
+    },
+    {
+      "source": "পাস করা (একটি পরীক্ষা)",
+      "target": "Pagpasa (sa pagsusulit)"
+    },
+    {
+      "source": "ব্যর্থ হওয়া (একটি পরীক্ষা)",
+      "target": "Pagkabigo (sa pagsusulit)"
+    },
+    {
+      "source": "টিউশন দিতে",
+      "target": "Pagbabayad ng tuition"
+    },
+    {
+      "source": "একটি বৃত্তি পেতে",
+      "target": "Pagkuha ng scholarship"
+    },
+    {
+      "source": "বিশ্ববিদ্যালয়ের অধ্যাপক",
+      "target": "Propesor ng unibersidad"
+    },
+    {
+      "source": "পণ্ডিত",
+      "target": "Iskolar"
+    },
+    {
+      "source": "একটি বক্তৃতা জন্য সময় হতে",
+      "target": "Pagiging oras para sa lektura"
+    },
+    {
+      "source": "একটি বক্তৃতার জন্য দেরী হতে",
+      "target": "Pagiging huli para sa lektura"
+    },
+    {
+      "source": "ভাল গ্রেড আছে",
+      "target": "Pagkakaroon ng magandang grado"
+    },
+    {
+      "source": "দরিদ্র গ্রেড আছে",
+      "target": "Pagkakaroon ng mahinang grado"
+    },
+    {
+      "source": "ক্লাস চলাকালীন ঘুমিয়ে পড়া",
+      "target": "Pagkakatulog habang nasa klase"
+    },
+    {
+      "source": "ক্লাস বাদ দিতে",
+      "target": "Pagliban sa klase"
+    },
+    {
+      "source": "একটি কোর্স ব্যর্থ করা",
+      "target": "Pagkabigo sa kurso"
+    },
+    {
+      "source": "অনুপস্থিতির ছুটি নিতে (স্কুল থেকে)",
+      "target": "Pagkuha ng leave of absence (mula sa paaralan)"
+    },
+    {
+      "source": "বিদেশে পড়াশোনা করতে",
+      "target": "Pag-aaral sa ibang bansa"
+    },
+    {
+      "source": "Part 4 · Day 3 · 31 শব্দ",
+      "target": "Part 4 · Day 3 · 31 salita"
+    },
+    {
+      "source": "স্কুলে যাই ③",
+      "target": "Pumunta tayo sa paaralan ③"
+    },
+    {
+      "source": "উত্তর পূরণ করতে",
+      "target": "Pagpuno ng sagot"
+    },
+    {
+      "source": "উত্তর পর্যালোচনা করতে",
+      "target": "Pagrerepaso ng sagot"
+    },
+    {
+      "source": "পর্যালোচনা পুনর্বিবেচনা",
+      "target": "Pagrerepaso muling pagsasaalang-alang"
+    },
+    {
+      "source": "ভুল উত্তর পেতে",
+      "target": "Pagkuha ng maling sagot"
+    },
+    {
+      "source": "পুনরায় লিখতে",
+      "target": "Muling pagsulat"
+    },
+    {
+      "source": "একটি প্রতিবেদন কম্পাইল করতে",
+      "target": "Pag-compile ng ulat"
+    },
+    {
+      "source": "একটি প্রতিবেদন শেষ করতে",
+      "target": "Pagtatapos ng ulat"
+    },
+    {
+      "source": "একটি প্রতিবেদন জমা দিন",
+      "target": "Pagsusumite ng ulat"
+    },
+    {
+      "source": "দায়িত্বে থাকা শিক্ষক / উপদেষ্টা",
+      "target": "Gurong tagapayo / tagapayo"
+    },
+    {
+      "source": "একজন শিক্ষক দ্বারা শেখানো হবে",
+      "target": "Pagtuturo ng isang guro"
+    },
+    {
+      "source": "অনেক বার পুনরাবৃত্তি করুন",
+      "target": "Pag-uulit nang maraming beses"
+    },
+    {
+      "source": "পুনরাবৃত্তি / বারবার",
+      "target": "Pag-uulit / paulit-ulit"
+    },
+    {
+      "source": "মুখস্থ করা",
+      "target": "Pagkabisa"
+    },
+    {
+      "source": "একটি পরীক্ষায় জিজ্ঞাসা করা হবে / উপর পরীক্ষা করা হবে",
+      "target": "Pagkakasama sa pagsusulit / pagiging nasusulit"
+    },
+    {
+      "source": "প্রশ্ন সমস্যা",
+      "target": "Tanong problema"
+    },
+    {
+      "source": "শান্তভাবে চিন্তা করুন",
+      "target": "Pag-iisip nang mahinahon"
+    },
+    {
+      "source": "পুনরাবৃত্তি করতে বলুন / আবার জিজ্ঞাসা",
+      "target": "Pagpapakiusap na ulitin / pagtatanong ulit"
+    },
+    {
+      "source": "পুনরায় বর্ণনা করা আবার বলুন",
+      "target": "Muling pagsasabi pagsasabi ulit"
+    },
+    {
+      "source": "কথা শুনে বুঝতে পারা",
+      "target": "Pag-unawa sa pakikinig"
+    },
+    {
+      "source": "লিখুন (যেমন শুনেছি) / ডিক্টেশন নিতে",
+      "target": "Pagsulat (tulad ng narinig) / pagkuha ng dictation"
+    },
+    {
+      "source": "ভাগ্যবান সংযুক্ত করা",
+      "target": "Masuwerteng pagkakabit"
+    },
+    {
+      "source": "দুর্ভাগ্য",
+      "target": "Kamalsan"
+    },
+    {
+      "source": "পরীক্ষা শেষ",
+      "target": "Pagtatapos ng pagsusulit"
+    },
+    {
+      "source": "পরীক্ষার ফলাফল",
+      "target": "Resulta ng pagsusulit"
+    },
+    {
+      "source": "পরীক্ষায় প্রতারণা করা",
+      "target": "Pandadaya sa pagsusulit"
+    },
+    {
+      "source": "একটি রিপোর্ট খসড়া",
+      "target": "Draft ng ulat"
+    },
+    {
+      "source": "একটি পরিষ্কার অনুলিপি তৈরি করুন",
+      "target": "Paggawa ng malinis na kopya"
+    },
+    {
+      "source": "সময়সীমা পূরণ করুন",
+      "target": "Pagtugon sa deadline"
+    },
+    {
+      "source": "Part 4 · Day 4 · 34 শব্দ",
+      "target": "Part 4 · Day 4 · 34 salita"
+    },
+    {
+      "source": "কাজ করি",
+      "target": "Magtrabaho tayo"
+    },
+    {
+      "source": "একটি রেস্টুরেন্টে খণ্ডকালীন কাজ করুন",
+      "target": "Part-time na trabaho sa restaurant"
+    },
+    {
+      "source": "একটি কারখানায় খণ্ডকালীন কাজ",
+      "target": "Part-time na trabaho sa pabrika"
+    },
+    {
+      "source": "11 শব্দ",
+      "target": "11 salita"
+    },
+    {
+      "source": "একটি সুবিধার দোকান ক্লার্ক হিসাবে কাজ",
+      "target": "Pagtatrabaho bilang clerk sa convenience store"
+    },
+    {
+      "source": "একটি ইংরেজি কথোপকথন প্রশিক্ষক হিসাবে কাজ",
+      "target": "Pagtatrabaho bilang English conversation instructor"
+    },
+    {
+      "source": "অনুবাদের কাজ করুন",
+      "target": "Paggawa ng pagsasalin"
+    },
+    {
+      "source": "অনুবাদ",
+      "target": "Pagsasalin"
+    },
+    {
+      "source": "দোভাষী হিসাবে কাজ করুন",
+      "target": "Pagtatrabaho bilang interpreter"
+    },
+    {
+      "source": "ব্যাখ্যা",
+      "target": "Interpretasyon"
+    },
+    {
+      "source": "কেরানিমূলক কাজে সহায়তা করুন",
+      "target": "Pagtulong sa clerical work"
+    },
+    {
+      "source": "বাড়ির সাহায্যকারী হিসাবে কাজ করুন",
+      "target": "Pagtatrabaho bilang home helper"
+    },
+    {
+      "source": "একটি কাজ সন্ধান করুন / চাকরী খোঁজা",
+      "target": "Paghahanap ng trabaho / paghahanap ng trabaho"
+    },
+    {
+      "source": "বেতন / মজুরি",
+      "target": "Sahod / suweldo"
+    },
+    {
+      "source": "একটি জীবনবৃত্তান্ত লিখুন",
+      "target": "Pagsulat ng resume"
+    },
+    {
+      "source": "প্রতি ঘন্টায় 1200 ইয়েন",
+      "target": "1200 yen bawat oras"
+    },
+    {
+      "source": "একটি সাক্ষাৎকার আছে / সাক্ষাৎকার (কেউ)",
+      "target": "Pagkakaroon ng interview / interview (sa isang tao)"
+    },
+    {
+      "source": "বোনাস",
+      "target": "Bonus"
+    },
+    {
+      "source": "হোটেল কর্মচারী",
+      "target": "Empleyado ng hotel"
+    },
+    {
+      "source": "পরিবহন খরচ প্রদান করা হয় / ভ্রমণ খরচ আচ্ছাদিত",
+      "target": "Binabayaran ang gastos sa transportasyon / sakop ang gastos sa paglalakbay"
+    },
+    {
+      "source": "কাজের সহকর্মী / সহকর্মী",
+      "target": "Katrabaho / kasamahan"
+    },
+    {
+      "source": "কাজের সময় / ডিউটির ঘন্টা",
+      "target": "Oras ng trabaho / oras ng duty"
+    },
+    {
+      "source": "ভাড়া নিয়োগ",
+      "target": "Pagkuha pagkuha"
+    },
+    {
+      "source": "ভাড়া করা নিযুক্ত করা",
+      "target": "Pagkuha pag-empleyo"
+    },
+    {
+      "source": "কঠিন কাজ / চাকরির দাবি",
+      "target": "Mahirap na trabaho / demanding na trabaho"
+    },
+    {
+      "source": "অর্থ উপার্জন",
+      "target": "Pagkakakitaan ng pera"
+    },
+    {
+      "source": "অর্থ উপার্জন একটি মুনাফা অর্জন",
+      "target": "Pagkakakitaan ng pera pagkakaroon ng kita"
+    },
+    {
+      "source": "লাভজনক হতে একটি লাভ করা",
+      "target": "Pagiging kumikita pagkakaroon ng kita"
+    },
+    {
+      "source": "কাজ শেষ করা / একটি কাজ সম্পূর্ণ করুন",
+      "target": "Pagtatapos ng trabaho / pagkumpleto ng trabaho"
+    },
+    {
+      "source": "অলস ব্যক্তি / অলস",
+      "target": "Tamad na tao / tamad"
+    },
+    {
+      "source": "পরিশ্রমী ব্যক্তি / পরিশ্রমী কর্মী",
+      "target": "Masipag na tao / masipag na manggagawa"
+    },
+    {
+      "source": "বহিস্কার করা / ছাঁটাই করা",
+      "target": "Pagtanggal / pagpapaalis"
+    },
+    {
+      "source": "প্রস্থান করা / পদত্যাগ করতে বাধ্য হন",
+      "target": "Pag-alis / pagiging napilitang magbitiw"
+    },
+    {
+      "source": "Part 4 · Day 5 · 25 শব্দ",
+      "target": "Part 4 · Day 5 · 25 salita"
+    },
+    {
+      "source": "কম্পিউটার ব্যবহার করি",
+      "target": "Gumamit tayo ng computer"
+    },
+    {
+      "source": "ল্যাপটপ / নোটবুক কম্পিউটার",
+      "target": "Laptop / notebook computer"
+    },
+    {
+      "source": "কীবোর্ড",
+      "target": "Keyboard"
+    },
+    {
+      "source": "মাউস",
+      "target": "Mouse"
+    },
+    {
+      "source": "25 শব্দ",
+      "target": "25 salita"
+    },
+    {
+      "source": "ডেস্কটপ কম্পিউটার",
+      "target": "Desktop computer"
+    },
+    {
+      "source": "প্রথমবারের জন্য একটি কম্পিউটার ব্যবহার করুন / প্রথমবারের মতো কম্পিউটার ব্যবহারকারী হন",
+      "target": "Paggamit ng computer sa unang pagkakataon / pagiging baguhang user ng computer"
+    },
+    {
+      "source": "শিক্ষানবিস নবীন",
+      "target": "Baguhan baguhan"
+    },
+    {
+      "source": "একটি পরিচায়ক কোর্স নিন / একটি শিক্ষানবিস কোর্সে যোগদান করুন",
+      "target": "Pagkuha ng panimulang kurso / pagdalo sa kursong baguhan"
+    },
+    {
+      "source": "কম্পিউটার ব্যবহারে অভ্যস্ত হওয়া / কম্পিউটারের সাথে পরিচিত হন",
+      "target": "Pagiging sanay sa paggamit ng computer / pagiging pamilyar sa computer"
+    },
+    {
+      "source": "নতুন পণ্য",
+      "target": "Bagong produkto"
+    },
+    {
+      "source": "একদম নতুন / নতুন আইটেম",
+      "target": "Bagong-bago / bagong item"
+    },
+    {
+      "source": "ব্যবহৃত / সেকেন্ডহ্যান্ড",
+      "target": "Gamit na / secondhand"
+    },
+    {
+      "source": "পর্দার দিকে তাকান / প্রদর্শন দেখুন",
+      "target": "Pagtingin sa screen / pagtingin sa display"
+    },
+    {
+      "source": "সফ্টওয়্যার ইনস্টল করুন",
+      "target": "Pag-install ng software"
+    },
+    {
+      "source": "স্টার্ট বোতামে ক্লিক করুন",
+      "target": "Pag-click sa start button"
+    },
+    {
+      "source": "একটি ফাইল খুলুন",
+      "target": "Pagbubukas ng file"
+    },
+    {
+      "source": "একটি ফাইল বন্ধ করুন",
+      "target": "Pagsasara ng file"
+    },
+    {
+      "source": "নতুন বছরের কার্ড তৈরি করুন / নববর্ষের শুভেচ্ছা কার্ড তৈরি করুন",
+      "target": "Paggawa ng New Year card / paggawa ng greeting card ng Bagong Taon"
+    },
+    {
+      "source": "ইন্টারনেটের সাথে সংযোগ করুন",
+      "target": "Pagkonekta sa internet"
+    },
+    {
+      "source": "বিশ্বের সাথে সংযোগ স্থাপন / বিশ্বব্যাপী সংযুক্ত করা",
+      "target": "Pagkonekta sa mundo / pagiging konektado sa buong mundo"
+    },
+    {
+      "source": "তথ্য প্রাপ্ত / তথ্য পান",
+      "target": "Pagkuha ng impormasyon / pagkuha ng impormasyon"
+    },
+    {
+      "source": "একটি নিলামে অংশগ্রহণ / একটি নিলামে অংশ নিন",
+      "target": "Pakikilahok sa auction / pagsali sa auction"
+    },
+    {
+      "source": "নিলামের জন্য আইটেম আপ করা / একটি নিলাম আইটেম তালিকা",
+      "target": "Paglalagay ng item para sa auction / paglilista ng auction item"
+    },
+    {
+      "source": "বিক্রয়ের জন্য রাখা / তালিকা (নিলামের জন্য)",
+      "target": "Paglalagay para ibenta / paglilista (para sa auction)"
+    },
+    {
+      "source": "একটি হোমপেজ তৈরি করুন / একটি ওয়েবসাইট তৈরি করুন",
+      "target": "Paggawa ng homepage / paggawa ng website"
+    },
+    {
+      "source": "একটি ব্লগ শুরু করুন",
+      "target": "Pagsisimula ng blog"
+    },
+    {
+      "source": "Part 4 · Day 6 · 22 শব্দ",
+      "target": "Part 4 · Day 6 · 22 salita"
+    },
+    {
+      "source": "ইমেইল করি",
+      "target": "Mag-email tayo"
+    },
+    {
+      "source": "একটি ইমেল পান",
+      "target": "Pagkuha ng email"
+    },
+    {
+      "source": "ইমেইল পাঠানো",
+      "target": "Pagpapadala ng email"
+    },
+    {
+      "source": "একটি ইমেলের উত্তর",
+      "target": "Sagot sa email"
+    },
+    {
+      "source": "একটি ইমেইল ফরওয়ার্ড করুন",
+      "target": "Pag-forward ng email"
+    },
+    {
+      "source": "একটি নতুন ইমেল রচনা করুন / একটি নতুন বার্তা তৈরি করুন",
+      "target": "Paggawa ng bagong email / paggawa ng bagong mensahe"
+    },
+    {
+      "source": "বাল্ক ইমেল পাঠান / ইমেইল একটি ব্যাচ পাঠান",
+      "target": "Pagpapadala ng bulk email / pagpapadala ng email nang batch"
+    },
+    {
+      "source": "ইমেল সংগঠিত করা / ইমেল সাজান",
+      "target": "Pag-oorganisa ng email / pagsasaayos ng email"
+    },
+    {
+      "source": "ইমেইল চেক করুন",
+      "target": "Pagsuri ng email"
+    },
+    {
+      "source": "পাঠ্য লিখুন / ইনপুট অক্ষর",
+      "target": "Pagsulat ng teksto / pag-input ng mga karakter"
+    },
+    {
+      "source": "রোমাজিতে টাইপ করুন / রোমান অক্ষরে ইনপুট পাঠ্য",
+      "target": "Pag-type sa romaji / pag-input ng teksto sa Romanong titik"
+    },
+    {
+      "source": "পাঠ্যকে কাঞ্জিতে রূপান্তর করুন / অক্ষর কাঞ্জিতে পরিবর্তন করুন",
+      "target": "Pag-convert ng teksto sa kanji / pagpapalit ng karakter sa kanji"
+    },
+    {
+      "source": "পাঠ্য সন্নিবেশ করান / অক্ষর সন্নিবেশ করান",
+      "target": "Pagpasok ng teksto / pagpasok ng karakter"
+    },
+    {
+      "source": "পাঠ্য মুছে ফেলুন / অক্ষর সরান",
+      "target": "Pagbura ng teksto / pag-alis ng karakter"
+    },
+    {
+      "source": "ঠিকানা প্রাপক",
+      "target": "Addressee tatanggap"
+    },
+    {
+      "source": "প্রেরক প্রেরকের নাম",
+      "target": "Nagpadala pangalan ng nagpadala"
+    },
+    {
+      "source": "বিষয় (একটি বার্তার)",
+      "target": "Paksa (ng mensahe)"
+    },
+    {
+      "source": "ইমেইল বিনিময় / ইমেল দ্বারা অনুরূপ",
+      "target": "Palitan ng email / pakikipag-ugnayan sa pamamagitan ng email"
+    },
+    {
+      "source": "একটি ছবি সংযুক্ত করুন",
+      "target": "Pag-attach ng larawan"
+    },
+    {
+      "source": "একটি নতুন লাইন শুরু করুন / একটি লাইন বিরতি সন্নিবেশ",
+      "target": "Pagsisimula ng bagong linya / pagpasok ng line break"
+    },
+    {
+      "source": "প্রেরকের ইমেল ঠিকানা নিবন্ধন করুন / প্রেরকের ঠিকানা যোগ করুন",
+      "target": "Pagrehistro ng email address ng nagpadala / pagdaragdag ng address ng nagpadala"
+    },
+    {
+      "source": "ঠিকানা বই / পরিচিতি",
+      "target": "Address book / mga contact"
+    },
+    {
+      "source": "পাঠানো সম্পূর্ণ / সংক্রমণ সম্পন্ন হয়",
+      "target": "Kumpleto ang pagpapadala / kumpleto ang transmission"
+    },
+    {
+      "source": "এটি ছয় জনের জন্য 6,000 ইয়েন, তাই আপনি যদি এটিকে ভাগ করেন তবে এটি প্রতি ব্যক্তি প্রতি 1,000 ইয়েন।",
+      "target": "Ito ay 6,000 yen para sa anim na tao, kaya kung hahatiin mo ito ay 1,000 yen bawat tao."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · ８かける３",
+      "target": "Tamang sagot: 2 · ８かける３"
+    },
+    {
+      "source": "8 × 3 'আট বার তিন' হিসাবে পড়া হয়।",
+      "target": "Ang 8 × 3 ay binabasa bilang 'walong beses tatlo'."
+    },
+    {
+      "source": "স্নাতক হতে, আপনাকে মোট 150টি ক্রেডিট অর্জন করতে হবে।",
+      "target": "Upang makapagtapos, kailangan mong makakuha ng kabuuang 150 credit."
+    },
+    {
+      "source": "আমি পরীক্ষায় জিজ্ঞাসা করা প্রশ্নের অর্থ বুঝতে পারিনি।",
+      "target": "Hindi ko maintindihan ang kahulugan ng tanong sa pagsusulit."
+    },
+    {
+      "source": "আমি ইমেলের সাথে আমার জীবনবৃত্তান্ত সংযুক্ত করে পাঠাব।",
+      "target": "I-a-attach ko ang aking resume sa email at ipapadala."
+    },
+    {
+      "source": "আপনি যখন মোট গণনা করেন, এটি 20,000 ইয়েনে আসে।",
+      "target": "Kapag binilang mo ang kabuuan, aabot ito sa 20,000 yen."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · けずり",
+      "target": "Tamang sagot: 4 · けずり"
+    },
+    {
+      "source": "পেন্সিলটি ভোঁতা হয়ে গেছে, তাই এর ধারালো করা যাক।",
+      "target": "Naging mapurol ang lapis, kaya tasahan natin ito."
+    },
+    {
+      "source": "কম্পিউটারে, 'hana' টাইপ করুন এবং '花' এ রূপান্তর করুন।",
+      "target": "Sa computer, i-type ang 'hana' at i-convert sa '花'."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · やりとり",
+      "target": "Tamang sagot: 2 · やりとり"
+    },
+    {
+      "source": "আমি তার সাথে ইমেল বিনিময় করছি.",
+      "target": "Nagpapalitan kami ng email."
+    },
+    {
+      "source": "আমি ক্লান্ত ছিলাম, তাই ক্লাস চলাকালীন ঘুমিয়ে পড়ি।",
+      "target": "Pagod ako, kaya nakatulog ako habang nasa klase."
+    },
+    {
+      "source": "এটি শিখুন যাতে আপনি না দেখেই লিখতে বা বলতে পারেন।",
+      "target": "Alamin ito upang makapagsulat o makapagsalita nang hindi tumitingin."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · ついている",
+      "target": "Tamang sagot: 4 · ついている"
+    },
+    {
+      "source": "ভাগ্যবান হচ্ছে",
+      "target": "Pagiging masuwere"
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · なれる",
+      "target": "Tamang sagot: 2 · なれる"
+    },
+    {
+      "source": "অনেকবার কিছু অনুভব করার পরে, আপনি এটি বিশেষ অনুভব করা বন্ধ করেন।",
+      "target": "Pagkatapos maranasan ang isang bagay nang maraming beses, tumitigil ka nang maramdaman itong espesyal."
+    },
+    {
+      "source": "উচ্চ বিদ্যালয় বা বিশ্ববিদ্যালয়ে স্নাতকের জন্য প্রয়োজনীয় প্রয়োজনীয়তা।",
+      "target": "Kinakailangang requirement para sa pagtatapos sa high school o unibersidad."
+    },
+    {
+      "source": "অন্য কাউকে একটি প্রাপ্ত ইমেল ফরওয়ার্ড করতে.",
+      "target": "Pag-forward ng natanggap na email sa ibang tao."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · ものさし",
+      "target": "Tamang sagot: 2 · ものさし"
+    },
+    {
+      "source": "একটি শাসক দিয়ে কাগজের আকার পরিমাপ করুন।",
+      "target": "Sukatin ang laki ng papel gamit ang ruler."
+    },
+    {
+      "source": "বিশ্ববিদ্যালয়ের টিউশন প্রতি বছর বৃদ্ধি পায়।",
+      "target": "Tumataas ang tuition ng unibersidad bawat taon."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · とりのぞいた",
+      "target": "Tamang sagot: 2 · とりのぞいた"
+    },
+    {
+      "source": "আমি অবাঞ্ছিত ইমেল মুছে ফেলেছি।",
+      "target": "Binura ko ang mga hindi gustong email."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · つらい",
+      "target": "Tamang sagot: 1 · つらい"
+    },
+    {
+      "source": "একটি নির্মাণ সাইটে কাজ কঠিন.",
+      "target": "Mahirap ang trabaho sa construction site."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · なまけて",
+      "target": "Tamang sagot: 2 · なまけて"
+    },
+    {
+      "source": "কারণ আমি ক্লাস বাদ দিয়েছিলাম, আমি উপাদান বুঝতে পারি না।",
+      "target": "Dahil lumiban ako sa klase, hindi ko maintindihan ang materyales."
+    },
+    {
+      "source": "প্রধান",
+      "target": "Pangunahin"
+    },
+    {
+      "source": "ভালো",
+      "target": "Mabuti"
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · この",
+      "target": "Tamang sagot: 2 · この"
+    },
+    {
+      "source": "বসবাস করছে",
+      "target": "Naninirahan"
+    },
+    {
+      "source": "বদল / বিনিময়",
+      "target": "Pagpapalit / palitan"
+    },
+    {
+      "source": "লাভজনক হতে",
+      "target": "Pagiging kumikita"
+    },
+    {
+      "source": "PART 5 · ৬ LESSON + EXAM",
+      "target": "PART 5 · 6 LESSON + EXAM"
+    },
+    {
+      "source": "নানা অভিব্যক্তি শিখি",
+      "target": "Natututo ng iba't ibang ekspresyon"
+    },
+    {
+      "source": "Part 5 · Day 1 · 34 শব্দ",
+      "target": "Part 5 · Day 1 · 34 salita"
+    },
+    {
+      "source": "কী ধরনের সম্পর্ক?",
+      "target": "Anong uri ng relasyon?"
+    },
+    {
+      "source": "বড় ছেলে",
+      "target": "Panganay na anak na lalaki"
+    },
+    {
+      "source": "বড় মেয়ে",
+      "target": "Panganay na anak na babae"
+    },
+    {
+      "source": "দ্বিতীয় পুত্র",
+      "target": "Ikalawang anak na lalaki"
+    },
+    {
+      "source": "দ্বিতীয় কন্যা",
+      "target": "Ikalawang anak na babae"
+    },
+    {
+      "source": "তৃতীয় পুত্র",
+      "target": "Ikatlong anak na lalaki"
+    },
+    {
+      "source": "সবচেয়ে ছোট শিশু",
+      "target": "Pinakabatang bata"
+    },
+    {
+      "source": "চাচা",
+      "target": "Tiyuhin"
+    },
+    {
+      "source": "খালা",
+      "target": "Tiyahin"
+    },
+    {
+      "source": "সহকর্মী সহকর্মী",
+      "target": "Katrabaho kasamahan"
+    },
+    {
+      "source": "বস সুপারভাইজার",
+      "target": "Boss superbisor"
+    },
+    {
+      "source": "অধীনস্থ জুনিয়র",
+      "target": "Subordinate junior"
+    },
+    {
+      "source": "সিনিয়র সহকর্মী / সিনিয়র",
+      "target": "Senior na kasamahan / senior"
+    },
+    {
+      "source": "জুনিয়র সহকর্মী / জুনিয়র",
+      "target": "Junior na kasamahan / junior"
+    },
+    {
+      "source": "বিভাগ ব্যবস্থাপক / বিভাগের প্রধান",
+      "target": "Manager ng departamento / pinuno ng departamento"
+    },
+    {
+      "source": "বিশ্ববিদ্যালয়ের ছাত্র / কলেজ ছাত্র",
+      "target": "Estudyante ng unibersidad / estudyante ng kolehiyo"
+    },
+    {
+      "source": "উচ্চ বিদ্যালয়ের ছাত্র",
+      "target": "Estudyante ng high school"
+    },
+    {
+      "source": "জুনিয়র হাই স্কুলের ছাত্র / মাধ্যমিক বিদ্যালয়ের ছাত্র",
+      "target": "Estudyante ng junior high school / estudyante ng sekondarya"
+    },
+    {
+      "source": "প্রাথমিক বিদ্যালয়ের ছাত্র",
+      "target": "Estudyante ng elementarya"
+    },
+    {
+      "source": "কোম্পানির কর্মচারী / অফিস কর্মী",
+      "target": "Empleyado ng kumpanya / manggagawa sa opisina"
+    },
+    {
+      "source": "বেতনভোগী কর্মচারী / ব্যবসায়ী",
+      "target": "Empleyadong sumasahod / negosyante"
+    },
+    {
+      "source": "গৃহিণী গৃহকর্মী",
+      "target": "Maybahay maybahay"
+    },
+    {
+      "source": "শিক্ষক",
+      "target": "Guro"
+    },
+    {
+      "source": "ছয় ভাইবোনের মধ্যে ছোট",
+      "target": "Pinakabata sa anim na magkakapatid"
+    },
+    {
+      "source": "তিন বোনের মধ্যে বড়",
+      "target": "Pinakamatanda sa tatlong magkapatid na babae"
+    },
+    {
+      "source": "আপেক্ষিক সম্পর্ক",
+      "target": "Relatibong relasyon"
+    },
+    {
+      "source": "নাতি",
+      "target": "Apo"
+    },
+    {
+      "source": "ভাতিজা",
+      "target": "Pamangkin na lalaki"
+    },
+    {
+      "source": "ভাতিজি",
+      "target": "Pamangkin na babae"
+    },
+    {
+      "source": "কাজিন",
+      "target": "Pinsan"
+    },
+    {
+      "source": "একমাত্র সন্তান",
+      "target": "Nag-iisang anak"
+    },
+    {
+      "source": "একমাত্র ছেলে",
+      "target": "Nag-iisang anak na lalaki"
+    },
+    {
+      "source": "একমাত্র কন্যা",
+      "target": "Nag-iisang anak na babae"
+    },
+    {
+      "source": "Part 5 · Day 2 · 26 শব্দ",
+      "target": "Part 5 · Day 2 · 26 salita"
+    },
+    {
+      "source": "শুভেচ্ছা জানাই",
+      "target": "Bumati tayo"
+    },
+    {
+      "source": "আপনি কোন দেশের?",
+      "target": "Anong bansa ka galing?"
+    },
+    {
+      "source": "আমি যুক্তরাজ্য থেকে এসেছি / আমি ব্রিটিশ",
+      "target": "Galing ako sa United Kingdom / British ako"
+    },
+    {
+      "source": "আপনি কোথায় থাকেন?",
+      "target": "Saan ka nakatira?"
+    },
+    {
+      "source": "এখানে কাছাকাছি / কাছাকাছি",
+      "target": "Malapit dito / malapit"
+    },
+    {
+      "source": "অন্য দিনের জন্য আপনাকে ধন্যবাদ",
+      "target": "Salamat sa ibang araw"
+    },
+    {
+      "source": "মোটেই না / একইভাবে",
+      "target": "Hindi naman / ganoon din"
+    },
+    {
+      "source": "অনুগ্রহ করে ভিতরে আসুন",
+      "target": "Mangyaring pumasok"
+    },
+    {
+      "source": "অনুপ্রবেশের জন্য আমাকে ক্ষমা করুন",
+      "target": "Paumanhin sa pagpasok"
+    },
+    {
+      "source": "এখানে বসুন এবং অপেক্ষা করুন",
+      "target": "Umupo dito at maghintay"
+    },
+    {
+      "source": "আমি চা নিয়ে আসছি।",
+      "target": "Magdadala ako ng tsaa."
+    },
+    {
+      "source": "দয়া করে বিরক্ত করবেন না (নিজেকে) / ঝগড়া করার দরকার নেই",
+      "target": "Mangyaring huwag mag-abala (sa sarili) / hindi kailangang mag-abala"
+    },
+    {
+      "source": "নিজেকে সাহায্য করুন / আপনার খাবার উপভোগ করুন",
+      "target": "Magpakasaya ka / enjoyin ang iyong pagkain"
+    },
+    {
+      "source": "আমি বিনা দ্বিধায় মেনে নেব / ধন্যবাদ, আমি এটা উপভোগ করব",
+      "target": "Tatanggapin ko nang walang pag-aatubili / salamat, i-e-enjoy ko ito"
+    },
+    {
+      "source": "বেশ কিছুদিন হলো / কেমন আছেন?",
+      "target": "Matagal na / kumusta ka?"
+    },
+    {
+      "source": "হ্যাঁ, আমি ভালো আছি, ধন্যবাদ",
+      "target": "Oo, mabuti ako, salamat"
+    },
+    {
+      "source": "আমি শুনেছি মিঃ তানাকার স্বামী মারা গেছেন",
+      "target": "Narinig kong namatay ang asawa ni G. Tanaka"
+    },
+    {
+      "source": "আমি দেখছি। আমার সমবেদনা",
+      "target": "Nakikita ko. Ang aking pakikiramay"
+    },
+    {
+      "source": "আমি আপনার সাথে দেখা করার জন্য উন্মুখ",
+      "target": "Inaasahan kong makilala ka"
+    },
+    {
+      "source": "মাফ করবেন, আমি এখন চলে যাব",
+      "target": "Paumanhin, aalis na ako ngayon"
+    },
+    {
+      "source": "আপনার কঠোর পরিশ্রমের জন্য আপনাকে ধন্যবাদ / ভালো হয়েছে",
+      "target": "Salamat sa iyong pagsisikap / magandang trabaho"
+    },
+    {
+      "source": "আমি এগিয়ে যাব / আমি এখন চলে যাচ্ছি",
+      "target": "Uuna na ako / aalis na ako ngayon"
+    },
+    {
+      "source": "আপনার কঠোর পরিশ্রমের জন্য আপনাকে ধন্যবাদ",
+      "target": "Salamat sa iyong pagsisikap"
+    },
+    {
+      "source": "Part 5 · Day 3 · 36 শব্দ",
+      "target": "Part 5 · Day 3 · 36 salita"
+    },
+    {
+      "source": "কেমন মানুষ পছন্দ?",
+      "target": "Anong uri ng tao ang gusto mo?"
+    },
+    {
+      "source": "চতুর স্মার্ট",
+      "target": "Matalino smart"
+    },
+    {
+      "source": "ভদ্র ভাল আচরণ",
+      "target": "Magalang mabuting asal"
+    },
+    {
+      "source": "সৎ ফ্র্যাঙ্ক",
+      "target": "Tapat prangka"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-adjective"
+    },
+    {
+      "source": "সৎ হতে / অকপটে বলছি",
+      "target": "Pagiging tapat / pagsasabi nang prangka"
+    },
+    {
+      "source": "সৎ বাধ্য",
+      "target": "Tapat masunurin"
+    },
+    {
+      "source": "বিশুদ্ধ প্রকৃত",
+      "target": "Dalisay tunay"
+    },
+    {
+      "source": "বিশুদ্ধ অনুভূতি / আন্তরিক অনুভূতি",
+      "target": "Dalisay na damdamin / taos-pusong damdamin"
+    },
+    {
+      "source": "কুল / দেখতে সুন্দর",
+      "target": "Cool / magandang tingnan"
+    },
+    {
+      "source": "আকর্ষণহীন / দেখতে ভালো নয়",
+      "target": "Hindi kaakit-akit / hindi magandang tingnan"
+    },
+    {
+      "source": "সাহসী সাহসী",
+      "target": "Matapang matapang"
+    },
+    {
+      "source": "হাস্যকর মজার",
+      "target": "Nakakatawa nakakatawa"
+    },
+    {
+      "source": "সক্রিয় / ইতিবাচক",
+      "target": "Aktibo / positibo"
+    },
+    {
+      "source": "নিষ্ক্রিয় / উদ্যোগহীন",
+      "target": "Pasibo / walang inisyatiba"
+    },
+    {
+      "source": "শান্ত রচিত",
+      "target": "Kalmado maayos"
+    },
+    {
+      "source": "শান্ত মৃদু",
+      "target": "Kalmado banayad"
+    },
+    {
+      "source": "গুরুতর আন্তরিক",
+      "target": "Seryoso taos-puso"
+    },
+    {
+      "source": "সহজগামী চিন্তামুক্ত",
+      "target": "Madaling pakisamahan walang alalahanin"
+    },
+    {
+      "source": "সুদর্শন",
+      "target": "Gwapo"
+    },
+    {
+      "source": "সুন্দরী মহিলা",
+      "target": "Magandang babae"
+    },
+    {
+      "source": "পাতলা আড়ম্বরপূর্ণ",
+      "target": "Payat naka-istilo"
+    },
+    {
+      "source": "মানে বিদ্বেষপূর্ণ",
+      "target": "Masama malisyoso"
+    },
+    {
+      "source": "খারাপ ব্যবহার করা / উত্যক্ত করা",
+      "target": "Pang-aapi / pang-iinis"
+    },
+    {
+      "source": "মিথ্যা বলতে",
+      "target": "Pagsisinungaling"
+    },
+    {
+      "source": "মিথ্যাবাদী",
+      "target": "Sinungaling"
+    },
+    {
+      "source": "চালাক অন্যায়",
+      "target": "Makaloko hindi patas"
+    },
+    {
+      "source": "এটা অন্যায়!",
+      "target": "Hindi iyon patas!"
+    },
+    {
+      "source": "নির্বোধ নির্লজ্জ",
+      "target": "Hangal walang hiya"
+    },
+    {
+      "source": "অবিরাম বিরক্তিকর",
+      "target": "Patuloy na nakakainis"
+    },
+    {
+      "source": "বারবার বকা / সতর্ক করা",
+      "target": "Paulit-ulit na pagsaway / babala"
+    },
+    {
+      "source": "ঢালু / অপরিচ্ছন্ন",
+      "target": "Magulo / hindi maayos"
+    },
+    {
+      "source": "কৃপণ কৃপণভাবে",
+      "target": "Kuripot kuripot"
+    },
+    {
+      "source": "দায়িত্বহীন অসাবধান",
+      "target": "Iresponsable pabaya"
+    },
+    {
+      "source": "দায়িত্বহীন কিছু বলা / অসতর্কভাবে কথা বলা",
+      "target": "Pagsasabi ng iresponsableng bagay / pagsasalita nang pabaya"
+    },
+    {
+      "source": "এটা কাটা আউট / ইতিমধ্যে যথেষ্ট",
+      "target": "Itigil mo na iyan / sapat na"
+    },
+    {
+      "source": "Part 5 · Day 4 · 37 শব্দ",
+      "target": "Part 5 · Day 4 · 37 salita"
+    },
+    {
+      "source": "শরীর কেমন?",
+      "target": "Kumusta ang katawan mo?"
+    },
+    {
+      "source": "ভালো লাগছে না / অসুস্থ",
+      "target": "Hindi maganda ang pakiramdam / may sakit"
+    },
+    {
+      "source": "মাথা ঘোরা অনুভব করা",
+      "target": "Pagkahilo"
+    },
+    {
+      "source": "মাথা ব্যাথা করা",
+      "target": "Pagsakit ng ulo"
+    },
+    {
+      "source": "একটি পেট ব্যাথা আছে",
+      "target": "Pagkakaroon ng sakit ng tiyan"
+    },
+    {
+      "source": "একটি পিঠে ব্যথা আছে / পিঠের নিচের অংশে ব্যথা হওয়া",
+      "target": "Pagkakaroon ng sakit ng likod / pagkakaroon ng sakit sa ibabang likod"
+    },
+    {
+      "source": "শ্বাস নিতে অসুবিধা হওয়া / শ্বাসকষ্ট হওয়া",
+      "target": "Hirap sa paghinga / hirap sa paghinga"
+    },
+    {
+      "source": "কষ্ট করা / ব্যথা হতে",
+      "target": "Paghihirap / pagsakit"
+    },
+    {
+      "source": "নাক বন্ধ থাকা",
+      "target": "Barado ang ilong"
+    },
+    {
+      "source": "নাক ঝাড়া",
+      "target": "Pag-ihip ng ilong"
+    },
+    {
+      "source": "বমি বমি ভাব",
+      "target": "Pagduduwal"
+    },
+    {
+      "source": "অসুস্থ বোধ করতে",
+      "target": "Pagkaramdam ng sakit"
+    },
+    {
+      "source": "বমি করা",
+      "target": "Pagsusuka"
+    },
+    {
+      "source": "চোখ চুলকায় / চুলকানি চোখ",
+      "target": "Makating mata / makating mata"
+    },
+    {
+      "source": "একজনের চোখ ঘষা",
+      "target": "Pagkuskos ng sariling mata"
+    },
+    {
+      "source": "ঠান্ডায় ভুগছেন / ঠান্ডা থেকে ভয়ানক বোধ",
+      "target": "Paghihirap sa sipon / pagkaramdam ng kahila-hilakbot mula sa sipon"
+    },
+    {
+      "source": "একটি এলার্জি আছে",
+      "target": "Pagkakaroon ng allergy"
+    },
+    {
+      "source": "18 শব্দ",
+      "target": "18 salita"
+    },
+    {
+      "source": "\"আপনার যত্নের জন্য আপনাকে ধন্যবাদ\"",
+      "target": "\"Salamat sa iyong pag-aalaga\""
+    },
+    {
+      "source": "যত্ন নিন / ভালো হয়ে যাও",
+      "target": "Mag-ingat / gumaling ka"
+    },
+    {
+      "source": "একটি বিশেষজ্ঞ দেখতে / একজন বিশেষজ্ঞের সাথে পরামর্শ করুন",
+      "target": "Pagpapatingin sa espesyalista / pagkonsulta sa espesyalista"
+    },
+    {
+      "source": "খড় জ্বর পেতে",
+      "target": "Pagkakaroon ng hay fever"
+    },
+    {
+      "source": "ডাক্তার দেখাতে / একটি মেডিকেল পরীক্ষা আছে",
+      "target": "Pagpapatingin sa doktor / pagkakaroon ng medical exam"
+    },
+    {
+      "source": "গার্গল করা",
+      "target": "Pagmumog"
+    },
+    {
+      "source": "একটি ডেন্টিস্ট দেখতে",
+      "target": "Pagpapatingin sa dentista"
+    },
+    {
+      "source": "আঘাতের চিকিৎসা করা / একটি ক্ষত নিরাময় করতে",
+      "target": "Paggamot ng pinsala / pagpapagaling ng sugat"
+    },
+    {
+      "source": "ফ্লু ধরার জন্য",
+      "target": "Pagkakaroon ng trangkaso"
+    },
+    {
+      "source": "হাতের ক্ষত",
+      "target": "Sugat sa kamay"
+    },
+    {
+      "source": "একটি অসুস্থতার লক্ষণ",
+      "target": "Sintomas ng sakit"
+    },
+    {
+      "source": "একটি পোড়া পেতে",
+      "target": "Pagkapaso"
+    },
+    {
+      "source": "একটি ইনজেকশন পেতে",
+      "target": "Pagpapaturok"
+    },
+    {
+      "source": "গুরুতর না",
+      "target": "Hindi malubha"
+    },
+    {
+      "source": "অস্ত্রোপচার করা",
+      "target": "Pagpapaopera"
+    },
+    {
+      "source": "ভাল পেতে / উন্নতি করতে",
+      "target": "Paggaling / pagbuti"
+    },
+    {
+      "source": "ব্যথা সহ্য করা",
+      "target": "Pagtiis ng sakit"
+    },
+    {
+      "source": "অসুস্থ ব্যক্তির সাথে দেখা করতে / একটি ভাল পরিদর্শন হিসাবে",
+      "target": "Pagdalaw sa maysakit / bilang pagdalaw sa maysakit"
+    },
+    {
+      "source": "Part 5 · Day 5 · 40 শব্দ",
+      "target": "Part 5 · Day 5 · 40 salita"
+    },
+    {
+      "source": "কী অবস্থা? ①",
+      "target": "Anong kalagayan? ①"
+    },
+    {
+      "source": "একটি সর্দি আছে",
+      "target": "Pagkakaroon ng sipon"
+    },
+    {
+      "source": "দীর্ঘশ্বাস",
+      "target": "Buntong-hininga"
+    },
+    {
+      "source": "চোখের জল ফেলতে",
+      "target": "Pagluha"
+    },
+    {
+      "source": "চোখের পানি ফেলা / কাঁদা",
+      "target": "Pagluha / pag-iyak"
+    },
+    {
+      "source": "ঘাম",
+      "target": "Pawis"
+    },
+    {
+      "source": "বিশেষণ",
+      "target": "Adjective"
+    },
+    {
+      "source": "লালা / মুখের পানি",
+      "target": "Laway / laway sa bibig"
+    },
+    {
+      "source": "কাশি",
+      "target": "Ubo"
+    },
+    {
+      "source": "হেঁচকি",
+      "target": "Sinok"
+    },
+    {
+      "source": "হাঁচি",
+      "target": "Pagbahing"
+    },
+    {
+      "source": "হাই তোলা",
+      "target": "Paghikab"
+    },
+    {
+      "source": "ঢেঁকুর তোলা",
+      "target": "Pagdighay"
+    },
+    {
+      "source": "ফার্ট",
+      "target": "Utot"
+    },
+    {
+      "source": "ওজন বাড়াতে",
+      "target": "Pagtaas ng timbang"
+    },
+    {
+      "source": "ওজন বৃদ্ধি করা",
+      "target": "Pagpapataas ng timbang"
+    },
+    {
+      "source": "ওজন কমাতে",
+      "target": "Pagbaba ng timbang"
+    },
+    {
+      "source": "ওজন হ্রাস করা",
+      "target": "Pagbabawas ng timbang"
+    },
+    {
+      "source": "একটি ডায়েটে যেতে / ডায়েট করতে",
+      "target": "Pagda-diet / pagda-diet"
+    },
+    {
+      "source": "নাক ডাকা",
+      "target": "Paghilik"
+    },
+    {
+      "source": "পা অবশ হয়ে যাওয়া",
+      "target": "Pamamanhid ng paa"
+    },
+    {
+      "source": "কাঁপা",
+      "target": "Panginginig"
+    },
+    {
+      "source": "শক্ত কাঁধ আছে",
+      "target": "Pagkakaroon ng matigas na balikat"
+    },
+    {
+      "source": "একটি অভ্যাস গড়ে তুলতে",
+      "target": "Pagbuo ng ugali"
+    },
+    {
+      "source": "চাপ জমা করতে",
+      "target": "Pag-iipon ng stress"
+    },
+    {
+      "source": "বয়স বাড়া / বুড়িয়ে যাওয়া",
+      "target": "Pagtanda / pagiging matanda"
+    },
+    {
+      "source": "একজনের নখ বড় হওয়া",
+      "target": "Paglaki ng kuko"
+    },
+    {
+      "source": "দাড়ি বৃদ্ধি করা / মুখের চুল বিকাশ করতে",
+      "target": "Pagtubo ng balbas / pagbuo ng buhok sa mukha"
+    },
+    {
+      "source": "দাঁত বাড়াতে",
+      "target": "Pagtubo ng ngipin"
+    },
+    {
+      "source": "চুল হারাতে",
+      "target": "Pagkalagas ng buhok"
+    },
+    {
+      "source": "টাক যেতে",
+      "target": "Pagkakalbo"
+    },
+    {
+      "source": "চুল রং করা",
+      "target": "Pagkulay ng buhok"
+    },
+    {
+      "source": "Part 5 · Day 6 · 33 শব্দ",
+      "target": "Part 5 · Day 6 · 33 salita"
+    },
+    {
+      "source": "কী অবস্থা? ②",
+      "target": "Anong kalagayan? ②"
+    },
+    {
+      "source": "পুষ্প",
+      "target": "Bulaklak"
+    },
+    {
+      "source": "পড়ে যাওয়া (ফুল)",
+      "target": "Pagbagsak (bulaklak)"
+    },
+    {
+      "source": "শুকিয়ে যাওয়া / মারা যাওয়া (উদ্ভিদ)",
+      "target": "Pagkalanta / pagkamatay (halaman)"
+    },
+    {
+      "source": "33 শব্দ",
+      "target": "33 salita"
+    },
+    {
+      "source": "ধসে পড়া / (একটি পাহাড়ের) মধ্যে গুহা করা",
+      "target": "Pagguho / pagguho (ng bundok)"
+    },
+    {
+      "source": "খাড়া পাহাড়",
+      "target": "Matatarik na bangin"
+    },
+    {
+      "source": "মৃদু ঢাল",
+      "target": "Banayad na dalisdis"
+    },
+    {
+      "source": "চূর্ণ করা",
+      "target": "Pagdurog"
+    },
+    {
+      "source": "চূর্ণ করা / টুকরো টুকরো করা",
+      "target": "Pagdurog / pagpira-piraso"
+    },
+    {
+      "source": "ভাসানো / প্রফুল্ল হতে",
+      "target": "Paglutang / pagiging masaya"
+    },
+    {
+      "source": "ডুবতে",
+      "target": "Paglubog"
+    },
+    {
+      "source": "গরম এবং আর্দ্র",
+      "target": "Mainit at mahalumigmig"
+    },
+    {
+      "source": "পচে যাওয়া / ক্ষয় হওয়া",
+      "target": "Pagkabulok / pagkasira"
+    },
+    {
+      "source": "ছাঁচ বৃদ্ধি করা / ছাঁচে পরিণত হওয়া",
+      "target": "Pagkakaroon ng amag / pagiging amag"
+    },
+    {
+      "source": "অদ্ভুত গন্ধ পাওয়া",
+      "target": "Pagkakaroon ng kakaibang amoy"
+    },
+    {
+      "source": "গন্ধ পাওয়া / একটি গন্ধ বন্ধ দিতে",
+      "target": "Pag-amoy / pagbibigay ng amoy"
+    },
+    {
+      "source": "ভয়ঙ্কর জিনিস",
+      "target": "Nakakatakot na bagay"
+    },
+    {
+      "source": "ঘনিষ্ঠ বন্ধু",
+      "target": "Malapit na kaibigan"
+    },
+    {
+      "source": "সন্দেহজনক মানুষ",
+      "target": "Kahina-hinalang tao"
+    },
+    {
+      "source": "ভয়ঙ্কর ঘটনা",
+      "target": "Nakakatakot na pangyayari"
+    },
+    {
+      "source": "মরিচা ছুরি",
+      "target": "Kinakalawang na kutsilyo"
+    },
+    {
+      "source": "মরিচা",
+      "target": "Kalawang"
+    },
+    {
+      "source": "তীক্ষ্ণ",
+      "target": "Matalim"
+    },
+    {
+      "source": "নিস্তেজ / ভোঁতা",
+      "target": "Mapurol / mapurol"
+    },
+    {
+      "source": "ধীর গাড়ী",
+      "target": "Mabagal na kotse"
+    },
+    {
+      "source": "নিরাপদ জায়গা",
+      "target": "Ligtas na lugar"
+    },
+    {
+      "source": "আবছা ঘর",
+      "target": "Madilim na silid"
+    },
+    {
+      "source": "চকচকে আলো",
+      "target": "Maliwanag na ilaw"
+    },
+    {
+      "source": "বিস্তারিত ম্যানুয়াল",
+      "target": "Detalyadong manual"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা করুন",
+      "target": "Detalyadong pagpapaliwanag"
+    },
+    {
+      "source": "তুচ্ছ উপন্যাস",
+      "target": "Mababaw na nobela"
+    },
+    {
+      "source": "এলোমেলোভাবে উত্তর দিন",
+      "target": "Pagsagot nang random"
+    },
+    {
+      "source": "আমার মা (তৃতীয় কন্যা), কিন্তু তার বড় বোন উভয়ই ইতিমধ্যে মারা গেছে।",
+      "target": "Ang aking ina ay (ikatlong anak na babae), ngunit ang kanyang dalawang nakatatandang kapatid na babae ay parehong namatay na."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · ぬける",
+      "target": "Tamang sagot: 3 · ぬける"
+    },
+    {
+      "source": "আপনার বয়স বাড়ার সাথে সাথে আপনার চুল ধীরে ধীরে (পড়ে যায়)।",
+      "target": "Habang tumatanda ka, unti-unting (nalalagas) ang iyong buhok."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · おかまいなく",
+      "target": "Tamang sagot: 1 · おかまいなく"
+    },
+    {
+      "source": "\"আমি শীঘ্রই চলে যাব, তাই দয়া করে (আমাকে কিছু মনে করবেন না)।\"",
+      "target": "\"Aalis na ako sa lalong madaling panahon, kaya mangyaring (huwag mo akong intindihin).\""
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · すなおに",
+      "target": "Tamang sagot: 2 · すなおに"
+    },
+    {
+      "source": "যখন সে ছোট ছিল, আমার ছেলে ছিল একটি মিষ্টি শিশু যে তার পিতামাতার কথা শুনত (আনুগত্যের সাথে)।",
+      "target": "Noong bata pa siya, ang anak ko ay isang matamis na bata na nakikinig sa kanyang mga magulang (nang masunurin)."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · やけど",
+      "target": "Tamang sagot: 4 · やけど"
+    },
+    {
+      "source": "আমি গরম জল ছিটিয়েছি এবং আমার পায়ে (একটি পোড়া) পেয়েছি।",
+      "target": "Nagbuhos ako ng mainit na tubig at (napaso) ang aking paa."
+    },
+    {
+      "source": "আমি খুব বেশি খেয়েছি এবং আমার (পেট) ব্যাথা করছে।",
+      "target": "Kumain ako nang sobra at sumasakit ang aking (tiyan)."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · はえて",
+      "target": "Tamang sagot: 1 · はえて"
+    },
+    {
+      "source": "আমার মাধ্যমিক বিদ্যালয়ের ছেলে দাড়ি বাড়তে শুরু করেছে।",
+      "target": "Nagsisimula nang tubuan ng balbas ang aking anak na nasa sekondarya."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · けちだ",
+      "target": "Tamang sagot: 1 · けちだ"
+    },
+    {
+      "source": "সে (কৃপণ), তাই সে কখনো কারো সাথে আচরণ করেনি।",
+      "target": "(Kuripot) siya, kaya hindi siya kailanman nanlibre ng kahit sino."
+    },
+    {
+      "source": "আমি যখন পুরানো ফটোগুলি দেখি, তখন আমি ছোটবেলায় আমার (বিশুদ্ধ) অনুভূতিগুলি মনে করি।",
+      "target": "Kapag tinitingnan ko ang mga lumang larawan, naaalala ko ang aking (dalisay) na damdamin noong bata pa ako."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · ごくろうさまです",
+      "target": "Tamang sagot: 1 · ごくろうさまです"
+    },
+    {
+      "source": "আপনি দেরিতে কাজ করছেন—(আপনার কঠোর পরিশ্রমের জন্য আপনাকে ধন্যবাদ)।",
+      "target": "Nagtatrabaho ka nang huli—(salamat sa iyong pagsisikap)."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · まぶしい",
+      "target": "Tamang sagot: 2 · まぶしい"
+    },
+    {
+      "source": "আলো এত শক্তিশালী যে আপনি এটির দিকে তাকিয়ে থাকতে পারবেন না।",
+      "target": "Napakalakas ng ilaw kaya hindi mo ito matitigan."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · いじわるな",
+      "target": "Tamang sagot: 1 · いじわるな"
+    },
+    {
+      "source": "একজন ব্যক্তি যে ইচ্ছাকৃতভাবে অন্যদের জন্য সমস্যা সৃষ্টি করে বা এমন কিছু করে যা অন্যরা অপ্রীতিকর বলে মনে করে।",
+      "target": "Isang tao na sadyang nagdudulot ng problema sa iba o gumagawa ng mga bagay na hindi kasiya-siya sa iba."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · ごぶさた",
+      "target": "Tamang sagot: 3 · ごぶさた"
+    },
+    {
+      "source": "দীর্ঘদিন যোগাযোগ না থাকার অবস্থা।",
+      "target": "Kalagayan ng hindi pakikipag-ugnayan nang matagal."
+    },
+    {
+      "source": "একজন ব্যক্তি যিনি উদ্যোগ নেন এবং নিজেরাই কাজ করেন।",
+      "target": "Isang tao na kumukuha ng inisyatiba at gumagawa ng mga bagay nang mag-isa."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · くさる",
+      "target": "Tamang sagot: 1 · くさる"
+    },
+    {
+      "source": "খাদ্য বা অনুরূপ অবস্থা খারাপ বা নষ্ট হয়ে গেছে।",
+      "target": "Kalagayan ng pagkain o katulad na nasisira o nasisira."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · おそい",
+      "target": "Tamang sagot: 3 · おそい"
+    },
+    {
+      "source": "আমি সামনের গাড়িটিকে ওভারটেক করলাম কারণ এটি ধীরগতির ছিল।",
+      "target": "Inunahan ko ang kotse sa unahan dahil mabagal ito."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · かいちゃ",
+      "target": "Tamang sagot: 4 · かいちゃ"
+    },
+    {
+      "source": "''নোংরা হাতে চোখ ঘষবেন না।''",
+      "target": "''Huwag kuskusin ang iyong mga mata gamit ang maruming kamay.''"
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · すわって",
+      "target": "Tamang sagot: 1 · すわって"
+    },
+    {
+      "source": "''দয়া করে বসুন।''",
+      "target": "''Mangyaring maupo.''"
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · いいかげんな",
+      "target": "Tamang sagot: 1 · いいかげんな"
+    },
+    {
+      "source": "আমি পরীক্ষায় আজেবাজে উত্তর লিখে শেষ করেছি।",
+      "target": "Tinapos ko ang pagsusulit sa pagsulat ng walang kabuluhang sagot."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · たいしたことがない",
+      "target": "Tamang sagot: 3 · たいしたことがない"
+    },
+    {
+      "source": "আমার ঠাণ্ডা খারাপ নয়, তাই আমি পরিকল্পনা মতো বাইরে যাব।",
+      "target": "Hindi malubha ang aking sipon, kaya lalabas ako ayon sa plano."
+    },
+    {
+      "source": "দায়িত্বজ্ঞানহীন",
+      "target": "Iresponsable"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · お",
+      "target": "Tamang sagot: 3 · お"
+    },
+    {
+      "source": "অন্যায়",
+      "target": "Hindi patas"
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · この",
+      "target": "Tamang sagot: 1 · この"
+    },
+    {
+      "source": "পাতলা",
+      "target": "Payat"
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · お",
+      "target": "Tamang sagot: 4 · お"
+    },
+    {
+      "source": "অভ্যাস",
+      "target": "Ugali"
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · うちの",
+      "target": "Tamang sagot: 4 · うちの"
+    },
+    {
+      "source": "হাস্যকর",
+      "target": "Nakakatawa"
+    },
+    {
+      "source": "PART 6 · ৬ LESSON + EXAM",
+      "target": "PART 6 · 6 LESSON + EXAM"
+    },
+    {
+      "source": "একসঙ্গে মনে রাখি",
+      "target": "Tandaan natin nang magkasama"
+    },
+    {
+      "source": "Part 6 · Day 1 · 53 শব্দ",
+      "target": "Part 6 · Day 1 · 53 salita"
+    },
+    {
+      "source": "বেশ পরিশ্রম করছি",
+      "target": "Nagsisikap nang husto"
+    },
+    {
+      "source": "হঠাৎ",
+      "target": "Biglaan"
+    },
+    {
+      "source": "হঠাৎ ফোন বেজে উঠল",
+      "target": "Biglang tumunog ang telepono"
+    },
+    {
+      "source": "হঠাৎ আকস্মিকভাবে",
+      "target": "Biglaan biglaan"
+    },
+    {
+      "source": "53 শব্দ",
+      "target": "53 salita"
+    },
+    {
+      "source": "হঠাৎ কান্নায় ফেটে পড়ল",
+      "target": "Biglang umiyak nang malakas"
+    },
+    {
+      "source": "ঠিক তখনই / অবিলম্বে",
+      "target": "Sa mismong oras na iyon / kaagad"
+    },
+    {
+      "source": "অবশেষে / শেষ পর্যন্ত",
+      "target": "Sa wakas / sa huli"
+    },
+    {
+      "source": "অবশেষে ইনজুরি থেকে সেরে উঠেছেন",
+      "target": "Sa wakas ay gumaling mula sa pinsala"
+    },
+    {
+      "source": "আমাদের বিড়াল অবশেষে মারা গেল",
+      "target": "Sa wakas ay namatay ang aming pusa"
+    },
+    {
+      "source": "শেষে সব পরে",
+      "target": "Sa huli pagkatapos ng lahat"
+    },
+    {
+      "source": "আমি চেষ্টা করেছি, কিন্তু শেষ পর্যন্ত এটি অকেজো ছিল",
+      "target": "Sinubukan ko, ngunit sa huli ay walang silbi ito"
+    },
+    {
+      "source": "অবশেষে",
+      "target": "Sa wakas"
+    },
+    {
+      "source": "পেইন্টিং শেষ পর্যন্ত সম্পন্ন হয়",
+      "target": "Natapos din ang painting sa wakas"
+    },
+    {
+      "source": "প্রায়ই ভাল",
+      "target": "Madalas mabuti"
+    },
+    {
+      "source": "আমি প্রায়ই এই রেস্টুরেন্টে আসি",
+      "target": "Madalas akong pumupunta sa restaurant na ito"
+    },
+    {
+      "source": "আমি গতকাল ভালো ঘুমিয়েছি",
+      "target": "Nakatulog ako nang mahimbing kagabi"
+    },
+    {
+      "source": "ভাল কাজ!",
+      "target": "Magandang trabaho!"
+    },
+    {
+      "source": "সাধারণত",
+      "target": "Karaniwan"
+    },
+    {
+      "source": "আমি সাধারণত বাইরে খাই",
+      "target": "Karaniwan akong kumakain sa labas"
+    },
+    {
+      "source": "সাধারণত স্বাভাবিকভাবে",
+      "target": "Karaniwan nang natural"
+    },
+    {
+      "source": "আমি সাধারণত অ্যালকোহল পান করি না",
+      "target": "Karaniwan hindi ako umiinom ng alak"
+    },
+    {
+      "source": "সাধারণত বর্ষাকালে বৃষ্টি হয়",
+      "target": "Karaniwan umuulan sa panahon ng tag-ulan"
+    },
+    {
+      "source": "মাঝে মাঝে",
+      "target": "Paminsan-minsan"
+    },
+    {
+      "source": "আমি মাঝে মাঝে সিনেমা দেখতে যাই",
+      "target": "Paminsan-minsan akong pumupunta upang manood ng pelikula"
+    },
+    {
+      "source": "যথেষ্ট পরিমাণে / মোটামুটি",
+      "target": "Sapat na dami / medyo"
+    },
+    {
+      "source": "বেশ বড় বাড়ি",
+      "target": "Medyo malaking bahay"
+    },
+    {
+      "source": "বেশ কিছু মানুষ আছে",
+      "target": "Medyo maraming tao"
+    },
+    {
+      "source": "বেশ / মোটামুটি",
+      "target": "Medyo / medyo"
+    },
+    {
+      "source": "আমি আমার বর্তমান বাড়িটি বেশ পছন্দ করি",
+      "target": "Medyo gusto ko ang kasalukuyang bahay ko"
+    },
+    {
+      "source": "অত্যন্ত",
+      "target": "Labis"
+    },
+    {
+      "source": "আমার পা ভয়ানক ব্যাথা করছে",
+      "target": "Labis na sumasakit ang aking paa"
+    },
+    {
+      "source": "অত্যন্ত অগোছালো",
+      "target": "Labis na magulo"
+    },
+    {
+      "source": "অত্যন্ত বিশৃঙ্খল",
+      "target": "Labis na magulo"
+    },
+    {
+      "source": "অত্যন্ত সস্তা",
+      "target": "Labis na mura"
+    },
+    {
+      "source": "আদেশ বিশৃঙ্খল",
+      "target": "Magulong kaayusan"
+    },
+    {
+      "source": "দুর্ঘটনায় গাড়িটি মারাত্মকভাবে ক্ষতিগ্রস্ত হয়েছে",
+      "target": "Malubhang nasira ang kotse sa aksidente"
+    },
+    {
+      "source": "সব উপায়ে / অবশ্যই",
+      "target": "Sa lahat ng paraan / tiyak"
+    },
+    {
+      "source": "দয়া করে আসুন",
+      "target": "Mangyaring pumunta"
+    },
+    {
+      "source": "দয়া করে",
+      "target": "Mangyaring"
+    },
+    {
+      "source": "অনুগ্রহ করে, আমি আপনাকে অনুরোধ করছি",
+      "target": "Mangyaring, hinihiling ko sa iyo"
+    },
+    {
+      "source": "প্রথম শুরু করতে",
+      "target": "Upang magsimula muna"
+    },
+    {
+      "source": "যখন (আমি) বাড়ি ফিরে, (আমি) প্রথমে গোসল করি",
+      "target": "Kapag (ako) umuuwi, (ako) naliligo muna"
+    },
+    {
+      "source": "যাই হোক / যে কোন ক্ষেত্রে",
+      "target": "Anuman / sa anumang kaso"
+    },
+    {
+      "source": "অজুহাত তৈরি করবেন না / শুধু অধ্যয়ন",
+      "target": "Huwag gumawa ng mga dahilan / mag-aral ka na lang"
+    },
+    {
+      "source": "একবারে / একই সাথে",
+      "target": "Nang sabay-sabay / nang sabay"
+    },
+    {
+      "source": "ফুল ফোটে একবারে",
+      "target": "Namumukadkad ang mga bulaklak nang sabay-sabay"
+    },
+    {
+      "source": "সব একযোগে / এক সময়ে",
+      "target": "Lahat nang sabay-sabay / nang sabay"
+    },
+    {
+      "source": "জমে থাকা হোমওয়ার্ক একবারে শেষ করুন",
+      "target": "Tapusin ang naipong homework nang sabay-sabay"
+    },
+    {
+      "source": "একবারেই ক্লান্ত লাগছিল",
+      "target": "Nakaramdam ng pagod nang sabay-sabay"
+    },
+    {
+      "source": "Part 6 · Day 2 · 51 শব্দ",
+      "target": "Part 6 · Day 2 · 51 salita"
+    },
+    {
+      "source": "ঠিকমতো চেষ্টা করছি",
+      "target": "Nagsisikap nang maayos"
+    },
+    {
+      "source": "যত্নহীনভাবে অসাবধানতাবশত",
+      "target": "Nang walang ingat nang hindi sinasadya"
+    },
+    {
+      "source": "দুর্ঘটনাক্রমে (একজনের) বাড়ির কাজ ভুলে যাওয়া",
+      "target": "Hindi sinasadyang nakalimutan ang (sariling) homework"
+    },
+    {
+      "source": "51 শব্দ",
+      "target": "51 salita"
+    },
+    {
+      "source": "সম্পূর্ণরূপে",
+      "target": "Ganap"
+    },
+    {
+      "source": "পুরোপুরি ভুলে গেছি",
+      "target": "Ganap na nakalimutan"
+    },
+    {
+      "source": "হতাশ হতে",
+      "target": "Pagkabigo"
+    },
+    {
+      "source": "পরীক্ষায় ব্যর্থ হলে হতাশ হন",
+      "target": "Pagkabigo kapag nabigo sa pagsusulit"
+    },
+    {
+      "source": "প্রত্যাশিত হিসাবে / সব পরে",
+      "target": "Tulad ng inaasahan / pagkatapos ng lahat"
+    },
+    {
+      "source": "ঠিক যেমনটা ভেবেছিলাম",
+      "target": "Eksakto tulad ng inisip ko"
+    },
+    {
+      "source": "এমনকি 18 বছর বয়সে, এখনও একটি শিশু",
+      "target": "Kahit sa edad na 18, bata pa rin"
+    },
+    {
+      "source": "নির্ভরযোগ্য হতে দৃঢ় হতে",
+      "target": "Pagiging maaasahan pagiging matatag"
+    },
+    {
+      "source": "একটি নির্ভরযোগ্য শিশু",
+      "target": "Isang maaasahang bata"
+    },
+    {
+      "source": "নিজেকে একসাথে টানুন",
+      "target": "Pagkukusa sa sarili"
+    },
+    {
+      "source": "সতেজ অনুভব করা / পরিপাটি করা",
+      "target": "Pagkaramdam ng sariwa / pagiging maayos"
+    },
+    {
+      "source": "সতেজ অনুভব করুন",
+      "target": "Pagkaramdam ng sariwa"
+    },
+    {
+      "source": "সতেজ অনুভব করা / মোটেও না (বুঝে)",
+      "target": "Pagkaramdam ng sariwa / hindi talaga (naiintindihan)"
+    },
+    {
+      "source": "স্নান করুন এবং সতেজ অনুভব করুন",
+      "target": "Maligo at makaramdam ng sariwa"
+    },
+    {
+      "source": "এই সমস্যাটি একেবারেই বুঝবেন না",
+      "target": "Hindi talaga maintindihan ang problemang ito"
+    },
+    {
+      "source": "সুরেলা",
+      "target": "Maayos"
+    },
+    {
+      "source": "নিশ্চিন্তে ঘুমাও",
+      "target": "Matulog nang mahimbing"
+    },
+    {
+      "source": "আনন্দিতভাবে হাসুন",
+      "target": "Tumawa nang masaya"
+    },
+    {
+      "source": "ঠিক একই রকম / সম্পূর্ণরূপে",
+      "target": "Eksaktong pareho / ganap"
+    },
+    {
+      "source": "যে পিতামাতা এবং সন্তানের দেখতে হুবহু একই রকম",
+      "target": "Magulang at anak na eksaktong magkamukha"
+    },
+    {
+      "source": "স্পষ্ট হওয়া স্বতন্ত্র হতে",
+      "target": "Pagiging malinaw pagiging kakaiba"
+    },
+    {
+      "source": "পাহাড়টা স্পষ্ট দেখা যাচ্ছে",
+      "target": "Malinaw na nakikita ang bundok"
+    },
+    {
+      "source": "অন্যমনস্কভাবে / অস্পষ্টভাবে",
+      "target": "Nang wala sa sarili / nang malabo"
+    },
+    {
+      "source": "আরামে / ধীরে-সুস্থে",
+      "target": "Nang komportable / nang dahan-dahan"
+    },
+    {
+      "source": "অবসরে সময় কাটান",
+      "target": "Paggugol ng oras nang maluwag"
+    },
+    {
+      "source": "শিথিল করা",
+      "target": "Pagrerelaks"
+    },
+    {
+      "source": "সঠিকভাবে সুন্দরভাবে",
+      "target": "Nang maayos nang maganda"
+    },
+    {
+      "source": "সঠিকভাবে নির্ভরযোগ্যভাবে",
+      "target": "Nang maayos nang maaasahan"
+    },
+    {
+      "source": "সুন্দরভাবে কাপড় ভাঁজ করুন",
+      "target": "Magandang pagtiklop ng damit"
+    },
+    {
+      "source": "সঠিক আচরণ করুন",
+      "target": "Kumilos nang maayos"
+    },
+    {
+      "source": "হঠাৎ মনে পড়ে",
+      "target": "Biglang naalala"
+    },
+    {
+      "source": "ইচ্ছাকৃতভাবে",
+      "target": "Nang sadya"
+    },
+    {
+      "source": "উদ্দেশ্য হারান / একটি খেলা নিক্ষেপ",
+      "target": "Pagkawala ng layunin / pagtapon ng laro"
+    },
+    {
+      "source": "স্বস্তি বোধ",
+      "target": "Pagkaramdam ng ginhawa"
+    },
+    {
+      "source": "একজনের মা সুস্থ হয়ে উঠলেন",
+      "target": "Gumaling ang ina ng isang tao"
+    },
+    {
+      "source": "স্থির থাকা / গতিহীনভাবে",
+      "target": "Pagiging tahimik / walang galaw"
+    },
+    {
+      "source": "ধৈর্য সহ্য করা",
+      "target": "Pagtitiis pagtitiis"
+    },
+    {
+      "source": "তাকান স্থিরভাবে তাকান",
+      "target": "Pagtingin pagtitig nang matatag"
+    },
+    {
+      "source": "মোটামুটি সংক্ষেপে",
+      "target": "Medyo sa madaling salita"
+    },
+    {
+      "source": "মোটামুটি পরিষ্কার / দ্রুত পরিপাটি করা",
+      "target": "Medyo malinaw / mabilis na pag-aayos"
+    },
+    {
+      "source": "শান্তভাবে আলতো করে",
+      "target": "Nang tahimik nang marahan"
+    },
+    {
+      "source": "শান্তভাবে কাছে যাওয়া / হামাগুড়ি দেওয়া",
+      "target": "Paglapit nang tahimik / paggagapang"
+    },
+    {
+      "source": "Part 6 · Day 3 · 46 শব্দ",
+      "target": "Part 6 · Day 3 · 46 salita"
+    },
+    {
+      "source": "আরও বেশি চেষ্টা করব",
+      "target": "Magsisikap pa nang husto"
+    },
+    {
+      "source": "নার্ভাস বোধ করা / হৃদস্পন্দন",
+      "target": "Pagkaramdam ng kaba / pagtibok ng puso"
+    },
+    {
+      "source": "একটি সাক্ষাত্কারে নার্ভাস হতে",
+      "target": "Pagiging kabado sa interview"
+    },
+    {
+      "source": "46 শব্দ",
+      "target": "46 salita"
+    },
+    {
+      "source": "বিরক্ত হওয়া / বিরক্ত বোধ",
+      "target": "Pagkainis / pagkaramdam ng inis"
+    },
+    {
+      "source": "যানজটে বিরক্ত হন",
+      "target": "Pagkainis sa traffic"
+    },
+    {
+      "source": "দ্রুত হত্তয়া স্পষ্টভাবে কথা বলুন",
+      "target": "Pagiging mabilis pagsasalita nang malinaw"
+    },
+    {
+      "source": "দ্রুত এবং পরিষ্কারভাবে উত্তর দিন",
+      "target": "Pagsagot nang mabilis at malinaw"
+    },
+    {
+      "source": "দ্রুত এবং আনন্দদায়ক হতে",
+      "target": "Pagiging mabilis at kaaya-aya"
+    },
+    {
+      "source": "বিড়বিড় অভিযোগ",
+      "target": "Pagbulong ng reklamo"
+    },
+    {
+      "source": "বকবক করা অভিযোগ",
+      "target": "Pagdadaldal ng reklamo"
+    },
+    {
+      "source": "কিছু বিড়বিড় করা",
+      "target": "Pagbulong ng isang bagay"
+    },
+    {
+      "source": "উদ্দেশ্যহীনভাবে ঘুরে বেড়ান / ঘোরাঘুরি",
+      "target": "Paggala nang walang layunin / paglalagalag"
+    },
+    {
+      "source": "চারপাশে ঘুরাঘুরি",
+      "target": "Paglalagalag sa paligid"
+    },
+    {
+      "source": "অলসভাবে হাঁটা / প্রায় স্তব্ধ",
+      "target": "Paglalakad nang tamad / halos tumigil"
+    },
+    {
+      "source": "শহরের চারপাশে ঘুরে বেড়ান",
+      "target": "Paglalagalag sa paligid ng lungsod"
+    },
+    {
+      "source": "ঢিলেঢালাভাবে দোল / ঝুলানো",
+      "target": "Pag-ugoy nang maluwag / pagbitin"
+    },
+    {
+      "source": "সবে ঠিক সময়ে",
+      "target": "Sakto lang sa oras"
+    },
+    {
+      "source": "সবেমাত্র শেষ ট্রেন করেছি",
+      "target": "Saktong nakahabol sa huling tren"
+    },
+    {
+      "source": "শেষ মুহূর্তে আবেদন জমা দিয়েছেন",
+      "target": "Pagsusumite ng aplikasyon sa huling sandali"
+    },
+    {
+      "source": "চকচকে ঝকঝকে",
+      "target": "Makintab kumikinang"
+    },
+    {
+      "source": "চকচকে হওয়া পর্যন্ত জুতা পালিশ করুন",
+      "target": "Pagpapakintab ng sapatos hanggang sa kumintab"
+    },
+    {
+      "source": "ধীরে ধীরে অলসভাবে",
+      "target": "Nang dahan-dahan nang tamad"
+    },
+    {
+      "source": "ট্রেন ধীর গতিতে চলছে",
+      "target": "Tumatakbo ang tren nang mabagal"
+    },
+    {
+      "source": "সাবলীলভাবে পাতলা (উপাদান)",
+      "target": "Nang matatas manipis (materyal)"
+    },
+    {
+      "source": "ব্ল্যাব সিক্রেটস",
+      "target": "Pagbubunyag ng mga sikreto"
+    },
+    {
+      "source": "সাবলীলভাবে ইংরেজি বলুন",
+      "target": "Pagsasalita ng Ingles nang matatas"
+    },
+    {
+      "source": "পাতলা কাগজ",
+      "target": "Manipis na papel"
+    },
+    {
+      "source": "খুব ক্ষুধার্ত / বারবার নত হওয়া",
+      "target": "Napakagutom / paulit-ulit na pagyuko"
+    },
+    {
+      "source": "খুব ক্ষুধার্ত",
+      "target": "Napakagutom"
+    },
+    {
+      "source": "ক্রমবর্ধমান আরো এবং আরো",
+      "target": "Palakas nang palakas"
+    },
+    {
+      "source": "দাম বাড়তে থাকবে",
+      "target": "Patuloy na tataas ang presyo"
+    },
+    {
+      "source": "ধীরে ধীরে",
+      "target": "Nang dahan-dahan"
+    },
+    {
+      "source": "ধীরে ধীরে ঠান্ডা হচ্ছে",
+      "target": "Unti-unting lumalamig"
+    },
+    {
+      "source": "দ্রুত অবিচলিতভাবে",
+      "target": "Nang mabilis nang tuluy-tuloy"
+    },
+    {
+      "source": "তার জাপানিদের দ্রুত উন্নতি হচ্ছে",
+      "target": "Mabilis na gumaganda ang kanyang Japanese"
+    },
+    {
+      "source": "শীঘ্রই এটা সময় সম্পর্কে",
+      "target": "Malapit na oras na"
+    },
+    {
+      "source": "শীঘ্রই শুরু করা যাক",
+      "target": "Magsimula na tayo sa lalong madaling panahon"
+    },
+    {
+      "source": "মূলত / সহজাতভাবে",
+      "target": "Sa orihinal / sa likas"
+    },
+    {
+      "source": "মূলত ভীতু ছিল",
+      "target": "Sa orihinal ay mahiyain"
+    },
+    {
+      "source": "শুরুতে সস্তা ছিল, তাই এটি ভাঙলে অনিবার্য",
+      "target": "Mura sa simula, kaya hindi maiiwasan kung masira"
+    },
+    {
+      "source": "সুযোগ দ্বারা / ঘটনাক্রমে",
+      "target": "Sa pagkakataon / nang nagkataon"
+    },
+    {
+      "source": "একটি উচ্চ বিদ্যালয়ের বন্ধুর সাথে দেখা হয়েছিল",
+      "target": "Nakilala ang isang kaibigan mula sa high school"
+    },
+    {
+      "source": "মোটামুটি",
+      "target": "Medyo"
+    },
+    {
+      "source": "পরীক্ষার ফলাফল তাই তাই ছিল",
+      "target": "Ang resulta ng pagsusulit ay ganoon-ganoon lang"
+    },
+    {
+      "source": "বিভিন্ন বিভিন্ন",
+      "target": "Iba't ibang iba't ibang"
+    },
+    {
+      "source": "বিভিন্ন পণ্য",
+      "target": "Iba't ibang produkto"
+    },
+    {
+      "source": "Part 6 · Day 4 · 35 শব্দ",
+      "target": "Part 6 · Day 4 · 35 salita"
+    },
+    {
+      "source": "মিলিয়ে তৈরি শব্দ",
+      "target": "Mga salitang binuo sa pamamagitan ng pagsasama"
+    },
+    {
+      "source": "একজন আদর্শ ব্যক্তির সাথে দেখা করুন",
+      "target": "Pagkilala sa isang ideal na tao"
+    },
+    {
+      "source": "মিটিং সম্মুখীন",
+      "target": "Pagkikita pagtatagpo"
+    },
+    {
+      "source": "অতিথিদের স্বাগত জানাই",
+      "target": "Pagsalubong sa mga bisita"
+    },
+    {
+      "source": "সাক্ষাৎ / পরিচয় হওয়া",
+      "target": "Pagkikita / pagkakilala"
+    },
+    {
+      "source": "স্বাগত জানানো / অভ্যর্থনা",
+      "target": "Pagsalubong / pagtanggap"
+    },
+    {
+      "source": "বিদায় জানানো / এগিয়ে দেওয়া",
+      "target": "Paghatid / pagsama palabas"
+    },
+    {
+      "source": "বিদায় জানানো",
+      "target": "Paghatid"
+    },
+    {
+      "source": "আকাশের দিকে তাকাও",
+      "target": "Pagtingin sa langit"
+    },
+    {
+      "source": "রাস্তায় নিচে তাকান",
+      "target": "Pagtingin pababa sa kalsada"
+    },
+    {
+      "source": "হঠাৎ বন্ধ",
+      "target": "Biglang pagtigil"
+    },
+    {
+      "source": "সোফা থেকে উঠে দাঁড়াও",
+      "target": "Pagbangon mula sa sofa"
+    },
+    {
+      "source": "একটি মন্দিরের পাশ দিয়ে যেতে হবে",
+      "target": "Pagdaan sa tabi ng templo"
+    },
+    {
+      "source": "পোস্ট অফিসের পাশ দিয়ে যান",
+      "target": "Pagdaan sa tabi ng post office"
+    },
+    {
+      "source": "আপনার পাশের ব্যক্তির সাথে কথা বলুন",
+      "target": "Pakikipag-usap sa taong nasa tabi mo"
+    },
+    {
+      "source": "মিঃ তানাকার সাথে আলোচনা করুন",
+      "target": "Pagkonsulta kay G. Tanaka"
+    },
+    {
+      "source": "আলোচনা",
+      "target": "Pagkonsulta"
+    },
+    {
+      "source": "মিঃ নাকামুরার সাথে পরিচিত হন",
+      "target": "Pagkilala kay G. Nakamura"
+    },
+    {
+      "source": "পরিচিতি",
+      "target": "Pagkakilala"
+    },
+    {
+      "source": "স্টেশনে দেখা",
+      "target": "Pagkikita sa istasyon"
+    },
+    {
+      "source": "দেখা করার ঠিক করা সময় / স্থান",
+      "target": "Itinakdang oras / lugar ng pagkikita"
+    },
+    {
+      "source": "ফোনে জিজ্ঞাসা করুন",
+      "target": "Pagtatanong sa telepono"
+    },
+    {
+      "source": "তদন্ত",
+      "target": "Pagsisiyasat"
+    },
+    {
+      "source": "একটি ট্রাভেল এজেন্সিতে আবেদন করুন",
+      "target": "Pag-apply sa travel agency"
+    },
+    {
+      "source": "আবেদন সাইন আপ",
+      "target": "Pag-apply pag-sign up"
+    },
+    {
+      "source": "অ্যাপ্লিকেশন বন্ধ করুন",
+      "target": "Pagsasara ng aplikasyon"
+    },
+    {
+      "source": "সময়সীমা",
+      "target": "Deadline"
+    },
+    {
+      "source": "আবেদন গ্রহণ করুন",
+      "target": "Pagtanggap ng aplikasyon"
+    },
+    {
+      "source": "অভ্যর্থনা / নিবন্ধন",
+      "target": "Pagtanggap / rehistrasyon"
+    },
+    {
+      "source": "লাগেজ গ্রহণ",
+      "target": "Pagtanggap ng bagahe"
+    },
+    {
+      "source": "প্রাপ্তি গ্রহণ",
+      "target": "Pagtanggap ng resibo"
+    },
+    {
+      "source": "ব্যাটারি প্রতিস্থাপন",
+      "target": "Pagpapalit ng baterya"
+    },
+    {
+      "source": "বাতিলকরণ",
+      "target": "Pagkansela"
+    },
+    {
+      "source": "একটি সিডি বের করুন",
+      "target": "Paglalabas ng CD"
+    },
+    {
+      "source": "একটি শিশু হঠাৎ ফুরিয়ে যায় / একটি শিশু ডার্ট আউট",
+      "target": "Biglang pagtakbo ng bata palabas / pag-dart out ng bata"
+    },
+    {
+      "source": "পুল মধ্যে ডুব",
+      "target": "Pagsisid sa pool"
+    },
+    {
+      "source": "Part 6 · Day 5 · 54 শব্দ",
+      "target": "Part 6 · Day 5 · 54 salita"
+    },
+    {
+      "source": "বহু অর্থের ক্রিয়া ①",
+      "target": "Mga pandiwang maraming kahulugan ①"
+    },
+    {
+      "source": "বিশ্ববিদ্যালয় থেকে স্নাতক",
+      "target": "Pagtatapos mula sa unibersidad"
+    },
+    {
+      "source": "স্নাতক",
+      "target": "Pagtatapos"
+    },
+    {
+      "source": "একটি সভায় যোগদান",
+      "target": "Pagdalo sa pagpupulong"
+    },
+    {
+      "source": "54 শব্দ",
+      "target": "54 salita"
+    },
+    {
+      "source": "একটি খাবার পরিবেশন করা হয়",
+      "target": "Paghahain ng pagkain"
+    },
+    {
+      "source": "একটি খাবার পরিবেশন করুন",
+      "target": "Paghahain ng pagkain"
+    },
+    {
+      "source": "একটি উপসংহারে পৌঁছেছে",
+      "target": "Pag-abot sa konklusyon"
+    },
+    {
+      "source": "একটি উপসংহারে পৌঁছান / উপসংহার",
+      "target": "Pag-abot sa konklusyon / konklusyon"
+    },
+    {
+      "source": "শক্তি অনুভব করা / প্রফুল্ল করা",
+      "target": "Pagkaramdam ng lakas / pagiging masigla"
+    },
+    {
+      "source": "উল্লাস করা / শক্তি যোগান",
+      "target": "Pagpapasaya / pagbibigay ng lakas"
+    },
+    {
+      "source": "একটি নতুন পণ্য প্রকাশিত হয় / চালু করা",
+      "target": "Paglabas ng bagong produkto / paglulunsad"
+    },
+    {
+      "source": "মুক্তি বিক্রয় করা",
+      "target": "Paglabas pagbebenta"
+    },
+    {
+      "source": "একটি নতুন পণ্য প্রকাশ করুন / লঞ্চ",
+      "target": "Paglabas ng bagong produkto / paglulunsad"
+    },
+    {
+      "source": "অঙ্কুর প্রতিশ্রুতি দেখান",
+      "target": "Pagpapakita ng pangako ng usbong"
+    },
+    {
+      "source": "অঙ্কুর গজানো / সম্ভাবনা দেখা দেওয়া",
+      "target": "Pag-usbong / pagpapakita ng posibilidad"
+    },
+    {
+      "source": "একটি বোনাস প্রদান করা হয়",
+      "target": "Pagbibigay ng bonus"
+    },
+    {
+      "source": "একটি বোনাস প্রদান",
+      "target": "Pagbibigay ng bonus"
+    },
+    {
+      "source": "তেলাপোকা দেখা দেয়",
+      "target": "Paglitaw ng ipis"
+    },
+    {
+      "source": "প্রদর্শিত আবির্ভূত",
+      "target": "Paglitaw paglitaw"
+    },
+    {
+      "source": "একটি সংবাদপত্রে একজনের নাম উপস্থিত হওয়া / কাগজে নাম দেওয়া হবে",
+      "target": "Paglitaw ng pangalan sa pahayagan / paglalagay ng pangalan sa papel"
+    },
+    {
+      "source": "প্রকাশিত হওয়া / উপস্থিত (মুদ্রিত)",
+      "target": "Paglalathala / paglitaw (nakalimbag)"
+    },
+    {
+      "source": "কোণা ঘুরিয়ে স্টেশনে বেরিয়ে আসুন",
+      "target": "Pagliko sa kanto at paglabas sa istasyon"
+    },
+    {
+      "source": "একটি মানিব্যাগ নিন",
+      "target": "Pagkuha ng pitaka"
+    },
+    {
+      "source": "চুরি",
+      "target": "Pagnanakaw"
+    },
+    {
+      "source": "একটি মানিব্যাগ পেতে ফিরে যান",
+      "target": "Pagbabalik upang kunin ang pitaka"
+    },
+    {
+      "source": "ড্রাইভিং লাইসেন্স পান",
+      "target": "Pagkuha ng lisensya sa pagmamaneho"
+    },
+    {
+      "source": "একটি অনুলিপি তৈরি করুন",
+      "target": "Paggawa ng kopya"
+    },
+    {
+      "source": "একটি সংবাদপত্র পান / একটি সংবাদপত্র সদস্যতা",
+      "target": "Pagkuha ng pahayagan / subscription ng pahayagan"
+    },
+    {
+      "source": "কিছু ঘুম পান",
+      "target": "Pagkakaroon ng kaunting tulog"
+    },
+    {
+      "source": "হাজিরা নেওয়া",
+      "target": "Pagkuha ng attendance"
+    },
+    {
+      "source": "যোগাযোগ যোগাযোগ করা",
+      "target": "Pakikipag-ugnayan pakikipag-ugnayan"
+    },
+    {
+      "source": "যোগাযোগ করতে সক্ষম হবেন / যোগাযোগ করা",
+      "target": "Pagiging makontak / pakikipag-ugnayan"
+    },
+    {
+      "source": "ব্যথা উপশম",
+      "target": "Pag-alis ng sakit"
+    },
+    {
+      "source": "ব্যথা উপশম করা / ব্যথা চলে যায়",
+      "target": "Pag-alis ng sakit / paglaho ng sakit"
+    },
+    {
+      "source": "একটি বোতাম বন্ধ আসে",
+      "target": "Pagkatanggal ng butones"
+    },
+    {
+      "source": "নতুন কর্মচারী নিয়োগ / নতুন কর্মী নিয়োগ",
+      "target": "Pagkuha ng bagong empleyado / pagkuha ng bagong tauhan"
+    },
+    {
+      "source": "নিয়োগ করা / গ্রহণ করা",
+      "target": "Pagkuha / pagtanggap"
+    },
+    {
+      "source": "লক করা",
+      "target": "Pagla-lock"
+    },
+    {
+      "source": "তালা",
+      "target": "Lock"
+    },
+    {
+      "source": "অসুস্থ হওয়া / রোগে আক্রান্ত হওয়া",
+      "target": "Pagkakasakit / pagkahawa ng sakit"
+    },
+    {
+      "source": "একজন ডাক্তারের সাথে পরামর্শ করুন / একজন ডাক্তার দেখুন",
+      "target": "Pagkonsulta sa doktor / pagpapatingin sa doktor"
+    },
+    {
+      "source": "ডাক্তারের কাছে পরীক্ষা করানো",
+      "target": "Pagpapatingin sa doktor"
+    },
+    {
+      "source": "একটি বোতাম বেঁধে দিন",
+      "target": "Pagkakabit ng butones"
+    },
+    {
+      "source": "অপসারণ বন্ধন",
+      "target": "Pag-alis ng tali"
+    },
+    {
+      "source": "একটা সিডি চালাও",
+      "target": "Pag-play ng CD"
+    },
+    {
+      "source": "একটি কম্বল রাখা / একটি কম্বল সঙ্গে আবরণ",
+      "target": "Paglalagay ng kumot / pagtatakip ng kumot"
+    },
+    {
+      "source": "কল করা কথা বলতে",
+      "target": "Pagtawag pagsasalita"
+    },
+    {
+      "source": "ডাকা হবে সাথে কথা বলা",
+      "target": "Pagkatawag pagsasalita"
+    },
+    {
+      "source": "কারো উদ্বেগের কারণ",
+      "target": "Pagiging sanhi ng pag-aalala ng isang tao"
+    },
+    {
+      "source": "Part 6 · Day 6 · 44 শব্দ",
+      "target": "Part 6 · Day 6 · 44 salita"
+    },
+    {
+      "source": "বহু অর্থের ক্রিয়া ②",
+      "target": "Mga pandiwang maraming kahulugan ②"
+    },
+    {
+      "source": "দাঁড়ানো",
+      "target": "Pagtayo"
+    },
+    {
+      "source": "বসা",
+      "target": "Pag-upo"
+    },
+    {
+      "source": "সময় চলে যায়",
+      "target": "Paglipas ng oras"
+    },
+    {
+      "source": "44 শব্দ",
+      "target": "44 salita"
+    },
+    {
+      "source": "গুজব ছড়ায়",
+      "target": "Pagkalat ng tsismis"
+    },
+    {
+      "source": "পরিকল্পনা করা / সময়সূচী",
+      "target": "Pagpaplano / pag-iiskedyul"
+    },
+    {
+      "source": "একটি শব্দ করা",
+      "target": "Paglikha ng tunog"
+    },
+    {
+      "source": "বৃষ্টি থামে",
+      "target": "Pagtigil ng ulan"
+    },
+    {
+      "source": "গোসল থেকে বের হও",
+      "target": "Paglabas mula sa paliguan"
+    },
+    {
+      "source": "দাম বৃদ্ধি",
+      "target": "Pagtaas ng presyo"
+    },
+    {
+      "source": "কার্যকারিতা বৃদ্ধি পায়",
+      "target": "Pagtaas ng epekto"
+    },
+    {
+      "source": "কার্যকারিতা বৃদ্ধি",
+      "target": "Pagtaas ng epekto"
+    },
+    {
+      "source": "একজনের প্রথম বক্তৃতার সময় নার্ভাস হওয়া",
+      "target": "Pagiging kabado sa unang talumpati"
+    },
+    {
+      "source": "নার্ভাস হও",
+      "target": "Pagiging kabado"
+    },
+    {
+      "source": "একটি উদাহরণ দিন",
+      "target": "Pagbibigay ng halimbawa"
+    },
+    {
+      "source": "একটি বিবাহ রাখা",
+      "target": "Pagdaraos ng kasal"
+    },
+    {
+      "source": "জ্বর কমে যায়",
+      "target": "Pagbaba ng lagnat"
+    },
+    {
+      "source": "হলুদ লাইনের পিছনে ফিরে যান",
+      "target": "Pag-atras sa likod ng dilaw na linya"
+    },
+    {
+      "source": "খ্যাতি পড়ে",
+      "target": "Pagbagsak ng reputasyon"
+    },
+    {
+      "source": "কারো খ্যাতি নষ্ট করা",
+      "target": "Pagsira ng reputasyon ng isang tao"
+    },
+    {
+      "source": "পর্দা নামানো হয়",
+      "target": "Pagbaba ng kurtina"
+    },
+    {
+      "source": "পর্দা নামিয়ে দাও",
+      "target": "Pagbaba ng kurtina"
+    },
+    {
+      "source": "কেনাকাটার ঝুড়ি ঝুলিয়ে রাখুন",
+      "target": "Pagbitin ng shopping basket"
+    },
+    {
+      "source": "একটি অক্ষর ইন্ডেন্ট করুন",
+      "target": "Pag-indent ng karakter"
+    },
+    {
+      "source": "টিভি ভলিউম বন্ধ করুন",
+      "target": "Pagbaba ng volume ng TV"
+    },
+    {
+      "source": "কাদা পেতে",
+      "target": "Pagkakaroon ng putik"
+    },
+    {
+      "source": "স্ক্র্যাচ করা",
+      "target": "Pagkalmot"
+    },
+    {
+      "source": "একটি স্ক্র্যাচ কারণ",
+      "target": "Pagdudulot ng gasgas"
+    },
+    {
+      "source": "যোগাযোগ করা",
+      "target": "Pakikipag-ugnayan"
+    },
+    {
+      "source": "একটি বিনামূল্যে উপহার সঙ্গে আসা",
+      "target": "Pagdating na may libreng regalo"
+    },
+    {
+      "source": "একটি বিনামূল্যে উপহার অন্তর্ভুক্ত",
+      "target": "Kasamang libreng regalo"
+    },
+    {
+      "source": "চিহ্ন",
+      "target": "Tanda"
+    },
+    {
+      "source": "একটি সিগারেট জ্বালান",
+      "target": "Pagsindi ng sigarilyo"
+    },
+    {
+      "source": "আগুন ধরা / জ্বালানো",
+      "target": "Pagkakakabit ng apoy / pagkasunog"
+    },
+    {
+      "source": "একটি ডায়েরি রাখুন",
+      "target": "Pag-iingat ng diary"
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · ついに",
+      "target": "Tamang sagot: 2 · ついに"
+    },
+    {
+      "source": "এটি একটি দীর্ঘ সময় নিয়েছে, কিন্তু রিপোর্ট (অবশেষে) শেষ হয়েছে.",
+      "target": "Matagal itong inabot, ngunit natapos din (sa wakas) ang ulat."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · とつぜん",
+      "target": "Tamang sagot: 3 · とつぜん"
+    },
+    {
+      "source": "টিভি (হঠাৎ) একটা ছবি দেখানো বন্ধ করে দিল।",
+      "target": "(Biglang) tumigil ang TV sa pagpapakita ng larawan."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · かえた",
+      "target": "Tamang sagot: 2 · かえた"
+    },
+    {
+      "source": "যদিও আমি নতুন দিয়ে ব্যাটারি প্রতিস্থাপন করেছি, আমি রেডিও ভালোভাবে শুনতে পারি না।",
+      "target": "Bagama't pinalitan ko ng bago ang baterya, hindi ko marinig nang maayos ang radyo."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · うろうろ",
+      "target": "Tamang sagot: 1 · うろうろ"
+    },
+    {
+      "source": "একটি বিড়াল বাড়ির চারপাশে ঘুরে বেড়াচ্ছে।",
+      "target": "Gumagala ang isang pusa sa paligid ng bahay."
+    },
+    {
+      "source": "মনে হচ্ছে আমার ঠান্ডা লেগেছে। আমার খুব একটা কাশি নেই, কিন্তু আমার গলা ব্যাথা করছে।",
+      "target": "Mukhang sinipon ako. Wala akong gaanong ubo, ngunit sumasakit ang aking lalamunan."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · まず",
+      "target": "Tamang sagot: 3 · まず"
+    },
+    {
+      "source": "আমি যখন বাড়িতে যাই, আমি প্রথমে আমার কম্পিউটার চালু করি।",
+      "target": "Kapag umuuwi ako, binubuksan ko muna ang aking computer."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · すっきり",
+      "target": "Tamang sagot: 3 · すっきり"
+    },
+    {
+      "source": "আমি ভালোভাবে ঘুমিয়েছিলাম, তাই আজ সকালে আমি সতেজ বোধ করতে পেরেছি।",
+      "target": "Nakatulog ako nang mahimbing, kaya nakaramdam ako ng sariwa ngayong umaga."
+    },
+    {
+      "source": "আমি কোম্পানির সাথে যোগাযোগ করলে আমাকে বলা হয় যে দায়িত্বে থাকা ব্যক্তি ছুটিতে আছেন, তাই তারা জানেন না।",
+      "target": "Nang makipag-ugnayan ako sa kumpanya, sinabi sa akin na ang taong namamahala ay nasa bakasyon, kaya hindi nila alam."
+    },
+    {
+      "source": "পকেট থেকে মানিব্যাগ বের করলাম।",
+      "target": "Kinuha ko ang pitaka mula sa aking bulsa."
+    },
+    {
+      "source": "একটা বাচ্চা গাড়ির সামনে দিয়ে চলে গেল।",
+      "target": "Tumakbo ang isang bata sa harap ng kotse."
+    },
+    {
+      "source": "কোন বাধা নেই; এটা আনন্দদায়ক বোধ.",
+      "target": "Walang hadlang; kaaya-aya ang pakiramdam."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · のんびり",
+      "target": "Tamang sagot: 4 · のんびり"
+    },
+    {
+      "source": "এটা সহজভাবে নিচ্ছে বলে মনে হচ্ছে।",
+      "target": "Mukhang dinadahan-dahan lang niya ito."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · わざと",
+      "target": "Tamang sagot: 3 · わざと"
+    },
+    {
+      "source": "\"চলো এটা করি\" ভেবে একটি পদক্ষেপ নেওয়া হয়েছে।",
+      "target": "Pagkilos nang may pag-iisip na \"gawin natin ito\"."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · いらいら",
+      "target": "Tamang sagot: 2 · いらいら"
+    },
+    {
+      "source": "যা চায় তা না পাওয়া এবং অস্থির বোধ করা।",
+      "target": "Hindi nakukuha ang gusto at nakakaramdam ng pagkabalisa."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · いきなり",
+      "target": "Tamang sagot: 1 · いきなり"
+    },
+    {
+      "source": "হঠাৎ করে ঘটে যাওয়া কিছু।",
+      "target": "Isang bagay na biglang nangyayari."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · たまに",
+      "target": "Tamang sagot: 1 · たまに"
+    },
+    {
+      "source": "'আপনি কি কখনো রান্না করেন?'",
+      "target": "'Nag luluto ka ba paminsan-minsan?'"
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · ほっとした",
+      "target": "Tamang sagot: 2 · ほっとした"
+    },
+    {
+      "source": "আমার মেয়েকে বিশ্ববিদ্যালয়ে ভর্তি করা হলে আমি স্বস্তি পেয়েছিলাম।",
+      "target": "Nakahinga ako nang maluwag nang matanggap ang aking anak na babae sa unibersidad."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · あがって",
+      "target": "Tamang sagot: 4 · あがって"
+    },
+    {
+      "source": "সাক্ষাৎকারের সময় আমি নার্ভাস হয়ে গিয়েছিলাম এবং ভালোভাবে উত্তর দিতে পারিনি।",
+      "target": "Naging kabado ako sa interview at hindi nakasagot nang maayos."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · つけて",
+      "target": "Tamang sagot: 4 · つけて"
+    },
+    {
+      "source": "আসুন আপনি যে প্রশ্নগুলি ভুল করেছেন তা চিহ্নিত করি।",
+      "target": "Markahan natin ang mga tanong na nagkamali ka."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · たちます",
+      "target": "Tamang sagot: 1 · たちます"
+    },
+    {
+      "source": "কাল সকালেই চলে যাবো।",
+      "target": "Aalis ako bukas ng umaga."
+    },
+    {
+      "source": "সাবলীলভাবে",
+      "target": "Nang matatas"
+    },
+    {
+      "source": "ঝকঝকে",
+      "target": "Kumikinang"
+    },
+    {
+      "source": "দ্বারা পাস",
+      "target": "Pagdaan"
+    },
+    {
+      "source": "জিজ্ঞাসা করা",
+      "target": "Pagtatanong"
+    },
+    {
+      "source": "কিছু পাওয়া যায়নি। Search spelling বদলে আবার চেষ্টা করুন।",
+      "target": "Walang nahanap. Baguhin ang spelling ng Search at subukan ulit."
+    },
+    {
+      "source": "Progress এই browser-এ save হবে। Exam-এর উত্তর Submit-এর আগে লুকানো থাকে। ·",
+      "target": "Mase-save ang Progress sa browser na ito. Nakatago ang mga sagot sa Exam bago ang Submit. ·"
+    }
+  ]
+}

@@ -1,0 +1,294 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n4-grammar",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N4 Grammar | আপনার নিহোন",
+      "target": "N4 Grammar | আপনার নিহোন"
+    },
+    {
+      "source": "Lesson তালিকায় যান",
+      "target": "前往 Lesson 列表"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "হোম",
+      "target": "首页"
+    },
+    {
+      "source": "জটিল বাক্য সহজভাবে",
+      "target": "轻松掌握复杂句型"
+    },
+    {
+      "source": "Lesson 26–50 পর্যন্ত conditional, passive, causative ও keigo-সহ N4 grammar একটি পরিষ্কার শেখার পথে আয়ত্ত করুন।",
+      "target": "按照清晰的学习路径，掌握 N4 语法（包含 26–50 课的条件形、被动态、使役态和敬语）。"
+    },
+    {
+      "source": "Shin Bunka II · লেসন ১৯–৩৬ →",
+      "target": "Shin Bunka II · 第 19–36 课 →"
+    },
+    {
+      "source": "প্রথম Lesson শুরু করুন",
+      "target": "开始第一课"
+    },
+    {
+      "source": "Lesson খুঁজুন",
+      "target": "搜索 Lesson"
+    },
+    {
+      "source": "আমার অগ্রগতি",
+      "target": "我的进度"
+    },
+    {
+      "source": "সম্পন্ন",
+      "target": "已完成"
+    },
+    {
+      "source": "0/25 lesson সম্পন্ন",
+      "target": "已完成 0/25 课"
+    },
+    {
+      "source": "শেষ করা lesson-এ ✓ দিন। এই device-এ আপনার progress স্বয়ংক্রিয়ভাবে সংরক্ষিত থাকবে।",
+      "target": "在学完的 lesson 上打 ✓。您的进度将自动保存在此设备上。"
+    },
+    {
+      "source": "মোট LESSON",
+      "target": "总 LESSON"
+    },
+    {
+      "source": "বাকি",
+      "target": "剩余"
+    },
+    {
+      "source": "Lesson নম্বর বেছে নিন",
+      "target": "选择 Lesson 编号"
+    },
+    {
+      "source": "দেখুন",
+      "target": "查看"
+    },
+    {
+      "source": "সব",
+      "target": "全部"
+    },
+    {
+      "source": "পুরো কোর্স",
+      "target": "完整课程"
+    },
+    {
+      "source": "ভিত্তি বিস্তার",
+      "target": "夯实基础"
+    },
+    {
+      "source": "ইচ্ছা ও শর্ত",
+      "target": "意愿与条件"
+    },
+    {
+      "source": "জটিল বাক্য",
+      "target": "复杂句型"
+    },
+    {
+      "source": "প্রয়োগ ও সূক্ষ্মতা",
+      "target": "应用与细腻表达"
+    },
+    {
+      "source": "সময় ও Keigo",
+      "target": "时间与敬语"
+    },
+    {
+      "source": "আপনার Lesson বেছে নিন",
+      "target": "选择您的 Lesson"
+    },
+    {
+      "source": "নম্বর, Japanese pattern অথবা বাংলা বিষয় দিয়ে search করুন। Range ও progress filter ব্যবহার করে প্রয়োজনীয় lesson দ্রুত খুলুন।",
+      "target": "通过编号、日语句型或中文主题进行搜索。使用范围和进度筛选器快速打开所需的 lesson。"
+    },
+    {
+      "source": "টি lesson দেখানো হচ্ছে",
+      "target": "正在显示 0 个 lesson"
+    },
+    {
+      "source": "ধাপ 1 · ভিত্তি বিস্তার",
+      "target": "阶段 1 · 夯实基础"
+    },
+    {
+      "source": "কারণ/ব্যাখ্যা দেওয়া, সাহায্য চাওয়া ও advice।",
+      "target": "给出原因/解释、寻求帮助以及建议。"
+    },
+    {
+      "source": "文法 · ব্যাকরণ",
+      "target": "文法 · 语法"
+    },
+    {
+      "source": "Lesson খুলুন",
+      "target": "打开 Lesson"
+    },
+    {
+      "source": "পারার ক্ষমতা, দেখা/শোনা ও new possibilities।",
+      "target": "能力、看/听以及新的可能性。"
+    },
+    {
+      "source": "একসাথে কাজ, কারণ যুক্ত করা ও habit।",
+      "target": "共同作业、连接原因以及习惯。"
+    },
+    {
+      "source": "দরজা খোলা আছে, কাজ শেষ/দুঃখজনকভাবে হয়েছে।",
+      "target": "门开着、动作完成/令人遗憾地发生了。"
+    },
+    {
+      "source": "আগে থেকে করা, প্রস্তুত রাখা ও ব্যবস্থা করা।",
+      "target": "事先做好、准备好以及做出安排。"
+    },
+    {
+      "source": "ধাপ 2 · ইচ্ছা ও শর্ত",
+      "target": "阶段 2 · 意愿与条件"
+    },
+    {
+      "source": "ইচ্ছা, পরিকল্পনা ও future schedule।",
+      "target": "意愿、计划以及未来日程。"
+    },
+    {
+      "source": "পরামর্শ, অনুমান ও সম্ভাবনা।",
+      "target": "建议、推测以及可能性。"
+    },
+    {
+      "source": "নির্দেশ, নিষেধ, message/report reading।",
+      "target": "指示、禁止、阅读信息/报告。"
+    },
+    {
+      "source": "কাজের ক্রম ও নির্দেশনা অনুসরণ।",
+      "target": "工作顺序以及遵循指示。"
+    },
+    {
+      "source": "condition, recommendation ও open choice।",
+      "target": "条件、推荐以及开放选择。"
+    },
+    {
+      "source": "ধাপ 3 · জটিল বাক্য",
+      "target": "阶段 3 · 复杂句型"
+    },
+    {
+      "source": "ক্ষমতা/অভ্যাসে পরিবর্তন ও চেষ্টা।",
+      "target": "能力/习惯的改变以及尝试。"
+    },
+    {
+      "source": "কারো দ্বারা প্রভাবিত হওয়া ও ঘটনাকে passive করা।",
+      "target": "受他人影响及使事件被动化。"
+    },
+    {
+      "source": "কাজ/ঘটনাকে noun হিসেবে ব্যবহার।",
+      "target": "将动作/事件用作名词。"
+    },
+    {
+      "source": "কারণ, ক্ষমা, কৃতজ্ঞতা ও soft explanation।",
+      "target": "原因、道歉、感谢及婉转解释。"
+    },
+    {
+      "source": "ভিতরের প্রশ্ন ও চেষ্টা করে দেখা।",
+      "target": "内心的疑问与尝试去做。"
+    },
+    {
+      "source": "ধাপ 4 · প্রয়োগ ও সূক্ষ্মতা",
+      "target": "第4阶段 · 应用与微妙语感"
+    },
+    {
+      "source": "উচ্চ/নিম্ন সম্পর্ক ও favor expressions।",
+      "target": "上下级关系与恩惠表达。"
+    },
+    {
+      "source": "উদ্দেশ্য ও কোনো জিনিসের ব্যবহার বোঝানো।",
+      "target": "目的与事物的用途表达。"
+    },
+    {
+      "source": "দেখে মনে হওয়া ও gradual change।",
+      "target": "看起来与渐进变化。"
+    },
+    {
+      "source": "অতিরিক্ত, সহজ/কঠিন ও choose/make।",
+      "target": "额外、容易/困难及选择/制造。"
+    },
+    {
+      "source": "পরিস্থিতি হলে কী হবে এবং despite structure।",
+      "target": "假设情况及“尽管”句型。"
+    },
+    {
+      "source": "ধাপ 5 · সময় ও Keigo",
+      "target": "第5阶段 · 时间与敬语"
+    },
+    {
+      "source": "just doing, just did এবং expected result।",
+      "target": "刚刚做、刚做过及预期结果。"
+    },
+    {
+      "source": "শোনা কথা ও evidence-based guess।",
+      "target": "听说与基于证据的推测。"
+    },
+    {
+      "source": "কাউকে করানো, অনুমতি দেওয়া বা বাধ্য করা।",
+      "target": "让人做、允许或强迫。"
+    },
+    {
+      "source": "অন্যকে সম্মান দিয়ে বলার grammar।",
+      "target": "对他人表示尊敬的语法。"
+    },
+    {
+      "source": "নিজেকে নম্র করে বলা, formal business Japanese।",
+      "target": "谦逊的表达、正式商务日语。"
+    },
+    {
+      "source": "কোনো Lesson পাওয়া যায়নি",
+      "target": "未找到课程"
+    },
+    {
+      "source": "অন্য শব্দ লিখুন অথবা filter মুছে আবার চেষ্টা করুন।",
+      "target": "请输入其他关键词或清除筛选后重试。"
+    },
+    {
+      "source": "সব Lesson দেখুন",
+      "target": "查看所有课程"
+    },
+    {
+      "source": "প্রতিটি Lesson থেকে সর্বোচ্চ ফল নিন",
+      "target": "从每节课中获得最大收益"
+    },
+    {
+      "source": "বিষয় দেখে Lesson খুলুন",
+      "target": "按主题浏览课程"
+    },
+    {
+      "source": "কার্ডের Japanese pattern ও বাংলা সারাংশ দেখে প্রয়োজনীয় lesson বেছে নিন।",
+      "target": "通过卡片的日语句型和孟加拉语摘要选择需要的课程。"
+    },
+    {
+      "source": "উদাহরণসহ অনুশীলন করুন",
+      "target": "结合例句进行练习"
+    },
+    {
+      "source": "ব্যাখ্যা পড়ুন, audio শুনুন এবং quiz দিয়ে নিজের বোঝাপড়া যাচাই করুন।",
+      "target": "阅读解释、听音频并通过测验检验自己的理解。"
+    },
+    {
+      "source": "শেষ হলে ✓ দিন",
+      "target": "完成后打勾"
+    },
+    {
+      "source": "সম্পন্ন lesson আলাদা থাকবে এবং Continue button পরের lesson দেখাবে।",
+      "target": "已完成的课程将被单独记录，“继续”按钮将显示下一课。"
+    },
+    {
+      "source": "· বাংলা ভাষাভাষীদের জন্য জাপানি শেখার প্ল্যাটফর্ম",
+      "target": "· 专为孟加拉语使用者打造的日语学习平台"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "联系我们"
+    }
+  ]
+}

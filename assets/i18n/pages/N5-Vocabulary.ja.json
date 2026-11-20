@@ -1,0 +1,58 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "N5-Vocabulary",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N5 Vocabulary | আপনার নিহোন",
+      "target": "N5 語彙 | あなたのニホン"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "N5 Vocabulary এর serial lesson list. প্রতিটি page SEO-friendly, mobile-friendly, and PDF-free.",
+      "target": "N5 語彙の連載レッスンリスト。各ページはSEO対応、モバイル対応、PDFフリーです。"
+    },
+    {
+      "source": "মোবাইল-ফ্রেন্ডলি",
+      "target": "モバイル対応"
+    },
+    {
+      "source": "সার্চ রেডি",
+      "target": "検索対応"
+    },
+    {
+      "source": "প্রগ্রেস ট্র্যাকিং",
+      "target": "進捗トラッキング"
+    },
+    {
+      "source": "N5 Vocabulary এর সব lessons/entries এখানে serial order-এ সাজানো আছে। Homepage design language বজায় রেখে PDF-based system থেকে HTML-based learning page-এ migrate করা হয়েছে।",
+      "target": "N5 語彙のすべてのレッスン／エントリーがここに順番に並んでいます。ホームページのデザイン言語を維持しつつ、PDFベースのシステムからHTMLベースの学習ページへと移行しました。"
+    },
+    {
+      "source": "Lesson number বা topic লিখে দ্রুত filter করুন।",
+      "target": "レッスン番号やトピックを入力して素早く絞り込みます。"
+    },
+    {
+      "source": "একটি lesson/card এ ক্লিক করলে detail page খুলবে।",
+      "target": "レッスン／カードをクリックすると詳細ページが開きます。"
+    },
+    {
+      "source": "N5 Vocabulary এর structured lesson page. PDF এর বদলে student-friendly HTML format.",
+      "target": "N5 語彙の構造化されたレッスンページ。PDFではなく学生に優しいHTMLフォーマット。"
+    },
+    {
+      "source": "১২+ শব্দ",
+      "target": "12+ 語"
+    },
+    {
+      "source": "বাংলা ভাষায় জাপানি শেখার HTML learning system",
+      "target": "日本語をバングラデシュ語で学ぶためのHTML学習システム"
+    }
+  ]
+}

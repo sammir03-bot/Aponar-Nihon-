@@ -1,0 +1,554 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n4-grammar-lesson-50-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 50: 謙譲語：নিজেকে নম্র করে সম্মান দেখানো | N4 Grammar",
+      "target": "Lesson 50: 謙譲語：谦逊地表示尊敬 | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "跳转至主要内容"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 50 · সময় ও Keigo",
+      "target": "Lesson 50 · 时间与 Keigo"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "所有 Lesson"
+    },
+    {
+      "source": "সময় ও Keigo",
+      "target": "时间与敬语"
+    },
+    {
+      "source": "ধাপ ৫ · 46–50",
+      "target": "步骤 5 · 46–50"
+    },
+    {
+      "source": "謙譲語：নিজেকে নম্র করে সম্মান দেখানো",
+      "target": "謙譲語：谦逊地表示尊敬"
+    },
+    {
+      "source": "নিজের বা in-group-এর action নিচু করে customer/senior-কে সম্মান, special humble verbs এবং formal polite business Japanese।",
+      "target": "放低自己或 in-group 的 action 尊敬 customer/senior、special humble verbs 和 formal polite business Japanese。"
+    },
+    {
+      "source": "5টি বিস্তারিত grammar block",
+      "target": "5 个详细 grammar block"
+    },
+    {
+      "source": "18টি Japanese example",
+      "target": "18 个 Japanese example"
+    },
+    {
+      "source": "5টি ব্যাখ্যাসহ practice",
+      "target": "5 个带讲解的 practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline、mobile 和 print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "隐藏 あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "尚未完成"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ 标记完成"
+    },
+    {
+      "source": "Lesson 50 · লক্ষ্য",
+      "target": "Lesson 50 · 目标"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "学完本 Lesson 后能做到"
+    },
+    {
+      "source": "尊敬語 অন্যের action উঁচু করে; 謙譲語 নিজের/নিজের group-এর action নিচু করে—লক্ষ্য একই: সম্মানিত ব্যক্তির অবস্থান উঁচু রাখা। তাই verb মুখস্থের আগে actor এবং action কাদের মধ্যে যাচ্ছে তা চিহ্নিত করুন।",
+      "target": "尊敬語 抬高别人的 action；謙譲語 放低自己/自己 group 的 action——目标相同：保持受尊敬人的位置高。所以背 verb 前先标 actor 和 action 在谁之间去。"
+    },
+    {
+      "source": "おVます-stemします ও ごNします pattern বানাবেন",
+      "target": "能造 おVます-stemします 和 ごNします pattern"
+    },
+    {
+      "source": "প্রধান special humble verb ব্যবহার করবেন",
+      "target": "能用主要 special humble verb"
+    },
+    {
+      "source": "নিজের in-group/out-group perspective সঠিক রাখবেন",
+      "target": "能保持自己 in-group/out-group perspective 正确"
+    },
+    {
+      "source": "ございます/でございます দিয়ে formal polite statement করবেন",
+      "target": "能用 ございます/でございます 作 formal polite statement"
+    },
+    {
+      "source": "謙譲語র perspective",
+      "target": "謙譲語 的 perspective"
+    },
+    {
+      "source": "নিজে বা নিজের group-এর action নিচু করে action-এর recipient/সম্পর্কিত সম্মানিত ব্যক্তিকে সম্মান",
+      "target": "放低自己或自己 group 的 action，尊敬 action 的 recipient/相关受尊敬人"
+    },
+    {
+      "source": "গঠন",
+      "target": "构成"
+    },
+    {
+      "source": "ধরন",
+      "target": "类型"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "例句"
+    },
+    {
+      "source": "আমি → সম্মানিত ব্যক্তি",
+      "target": "我 → 受尊敬人"
+    },
+    {
+      "source": "আমার in-group → outsider",
+      "target": "我的 in-group → outsider"
+    },
+    {
+      "source": "আমাদের কর্মী আপনার কাছে যাবেন",
+      "target": "我们员工会去您那里"
+    },
+    {
+      "source": "সম্মানিত ব্যক্তির action",
+      "target": "受尊敬人的 action"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "详细解释"
+    },
+    {
+      "source": "Humble action সাধারণত সম্মানিত ব্যক্তির দিকে যায় বা তার সঙ্গে সম্পর্কিত: お客様をご案内します, 先生に伺います। একা ঘরে 私はテレビを拝見します বললে relation না থাকায় অতিরিক্ত/অস্বাভাবিক হতে পারে।",
+      "target": "Humble action 通常朝受尊敬人或与他相关：お客様をご案内します、先生に伺います。独自在家 私はテレビを拝見します 没有 relation 可能过度/不自然。"
+    },
+    {
+      "source": "Outsider-এর সঙ্গে কথা বললে নিজের boss/company in-group; তার action-ও humble/neutral: 部長の田中が伺います। নিজের boss-কে outsider-এর সামনে いらっしゃる দিয়ে উঁচু করবেন না।",
+      "target": "对 Outsider 说话时自己 boss/company 是 in-group；他的 action 也 humble/neutral：部長の田中が伺います。不要对 outsider 用 いらっしゃる 抬高自己 boss。"
+    },
+    {
+      "source": "謙譲語 নিজের মূল্য কমানো নয়; social positioning ও respect management।",
+      "target": "謙譲語 不是降低自己的价值；是 social positioning 和 respect management。"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "要记住的"
+    },
+    {
+      "source": "Actor আমি/in-group? Action সম্মানিত ব্যক্তির দিকে?—হলে humble candidate।",
+      "target": "Actor 是我/in-group？Action 朝受尊敬人？——是则 humble candidate。"
+    },
+    {
+      "source": "অন্য সম্মানিত ব্যক্তির নিজের action-এ尊敬語।",
+      "target": "另一个受尊敬人自己的 action 用尊敬語。"
+    },
+    {
+      "source": "আমি আপনাকে মিটিং রুম পর্যন্ত নিয়ে যাচ্ছি।",
+      "target": "我带您去会议室。"
+    },
+    {
+      "source": "কাল আমাদের কোম্পানির তানাকা আপনার কাছে যাবেন।",
+      "target": "明天我们公司的田中去您那里。"
+    },
+    {
+      "source": "শিক্ষককে এই নথি পাঠাচ্ছি।",
+      "target": "把这份文件发给老师。"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ 错误"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ 正确"
+    },
+    {
+      "source": "কেন:",
+      "target": "为什么："
+    },
+    {
+      "source": "ご案内します হলো আমার humble action; customer subject হলে尊敬語/neutral structure।",
+      "target": "ご案内します 是我的 humble action；customer 作 subject 时尊敬語/neutral structure。"
+    },
+    {
+      "source": "নিজের action বিনয় করে বলা",
+      "target": "谦逊地说自己的 action"
+    },
+    {
+      "source": "আরও formal",
+      "target": "更 formal"
+    },
+    {
+      "source": "আমি সম্মানিত ব্যক্তির জন্য/দিকে action করি: 荷物をお持ちします = আপনার মালপত্র আমি বহন করছি।",
+      "target": "我为/朝受尊敬人做 action：荷物をお持ちします = 我帮您拿行李。"
+    },
+    {
+      "source": "いたす হলো する-এর humble special verb; おVいたします/ごNいたします আরও formal। একই বাক্যে প্রয়োজনহীন prefix stacking এড়ান।",
+      "target": "いたす 是 する 的 humble special verb；おVいたします/ごNいたします 更 formal。避免同一句无谓 prefix stacking。"
+    },
+    {
+      "source": "এক mora stem বা special humble verb-এ mechanical pattern নয়: 見る→お見します ✕, 拝見します; 来る→お来します ✕, 参ります/伺います。",
+      "target": "一个 mora stem 或 special humble verb 不用 mechanical pattern：見る→お見します ✕，拝見します；来る→お来します ✕，参ります/伺います。"
+    },
+    {
+      "source": "おVになります = অন্যের honorific; おVします = নিজের humble।",
+      "target": "おVになります = 别人的 honorific；おVします = 自己的 humble。"
+    },
+    {
+      "source": "する-noun সাধারণত ご: ご説明します; exceptions যেমন お電話します fixed usage।",
+      "target": "する-noun 通常 ご：ご説明します；exceptions 如 お電話します 是 fixed usage。"
+    },
+    {
+      "source": "আমি আপনার মালপত্র বহন করছি।",
+      "target": "我帮您拿行李。"
+    },
+    {
+      "source": "আপনাকে স্টেশন পর্যন্ত পৌঁছে দিচ্ছি।",
+      "target": "送您到车站。"
+    },
+    {
+      "source": "পরে ইমেইলে যোগাযোগ করব।",
+      "target": "之后邮件联系。"
+    },
+    {
+      "source": "আমি বিস্তারিত ব্যাখ্যা করছি।",
+      "target": "我详细讲解。"
+    },
+    {
+      "source": "おVになります尊敬語; নিজের ‘দেখা/পড়া’ formal হলে special 拝見します।",
+      "target": "おVになります尊敬語；自己的“看/读” formal 时 special 拝見します。"
+    },
+    {
+      "source": "প্রধান special humble verbs",
+      "target": "主要 special humble verbs"
+    },
+    {
+      "source": "নিজের action-এর নির্দিষ্ট 謙譲語",
+      "target": "自己 action 的特定 謙譲語"
+    },
+    {
+      "source": "参る হলো 行く/来る-এর humble-politeness; 伺う destination/person-এর কাছে যাওয়া, জিজ্ঞেস/শোনা—সম্মানিত counterpart স্পষ্ট।",
+      "target": "参る 是 行く/来る 的 humble-politeness；伺う 是去 destination/person 处、问/听——受尊敬 counterpart 明确。"
+    },
+    {
+      "source": "申す self-introduction/name: 田中と申します। 申し上げる recipient-directed ‘বলছি/জানাচ্ছি’ আরও humble: 心よりお礼申し上げます।",
+      "target": "申す self-introduction/name：田中と申します。申し上げる recipient-directed “说/告知”更 humble：心よりお礼申し上げます。"
+    },
+    {
+      "source": "存じています = তথ্য জানি; 存じ上げています = ব্যক্তিকে চিনি (আরও respectful)। N4 core-এ 存じています চিনুন।",
+      "target": "存じています = 知道信息；存じ上げています = 认识人（更 respectful）。N4 core 认 存じています。"
+    },
+    {
+      "source": "いただく তিন অর্থে দেখা যায়: গ্রহণ করা (humble もらう), খাওয়া/পান করা (humble), favor গ্রহণ (Vていただく)।",
+      "target": "いただく 三个意思可见：接受（humble もらう）、吃/喝（humble）、接受 favor（Vていただく）。"
+    },
+    {
+      "source": "伺う = visit/ask/hear—object/destination context দেখুন।",
+      "target": "伺う = visit/ask/hear——看 object/destination context。"
+    },
+    {
+      "source": "おる-এর polite progressive おります: 田中は席を外しております।",
+      "target": "おる 的 polite progressive おります：田中は席を外しております。"
+    },
+    {
+      "source": "পরিচিত হয়ে আনন্দিত। আমি রহমান।",
+      "target": "认识您很高兴。我是拉赫曼。"
+    },
+    {
+      "source": "কাল বিকেলে শিক্ষকের গবেষণাকক্ষে যাব।",
+      "target": "明天下午去老师的研究室。"
+    },
+    {
+      "source": "প্রাপ্ত নথিটি দেখেছি।",
+      "target": "看了收到的文件。"
+    },
+    {
+      "source": "বিষয়টি নিয়ে একটু জিজ্ঞেস করতে পারি কি?",
+      "target": "能问一下这个事吗？"
+    },
+    {
+      "source": "আগামী সপ্তাহে আবার আপনার সঙ্গে দেখা হবে।",
+      "target": "下周再见您。"
+    },
+    {
+      "source": "私は先生にお目にかかります。／先生を拝見します（ছবি/দূর থেকে দেখা context)।",
+      "target": "私は先生にお目にかかります。／先生を拝見します（照片/远处看的 context）。"
+    },
+    {
+      "source": "ご覧になる অন্যের ‘দেখা’; নিজের সাক্ষাৎ করা お目にかかる।",
+      "target": "ご覧になる 是别人的“看”；自己见面 お目にかかる。"
+    },
+    {
+      "source": "あります/です-এর অত্যন্ত formal polite রূপ",
+      "target": "あります/です 的非常 formal polite 形式"
+    },
+    {
+      "source": "ございます = あります-এর 丁寧語: 在庫がございます, お時間はございますか। এটি necessarily humble নয়; খুব formal polite।",
+      "target": "ございます = あります 的 丁寧語：在庫がございます、お時間はございますか。它不一定 humble；是很 formal polite。"
+    },
+    {
+      "source": "でございます = です-এর formal রূপ: 私は田中でございます, 会場はこちらでございます। Customer service/announcement-এ বহুল।",
+      "target": "でございます = です 的 formal 形式：私は田中でございます、会場はこちらでございます。Customer service/announcement 常用。"
+    },
+    {
+      "source": "মানুষ/প্রাণীর existence-এ সাধারণত いらっしゃいます (সম্মানিত) বা おります (নিজে/in-group), ございます নয়।",
+      "target": "人/动物 existence 通常 いらっしゃいます（受尊敬）或 おります（自己/in-group），不用 ございます。"
+    },
+    {
+      "source": "বস্তু/বিষয় আছে → ございます; পরিচয়/সমতুল্য → でございます।",
+      "target": "物品/事情存在 → ございます；身份/等价 → でございます。"
+    },
+    {
+      "source": "আপনার কোনো প্রশ্ন আছে কি?",
+      "target": "您有问题吗？"
+    },
+    {
+      "source": "রিসেপশন প্রথম তলায়।",
+      "target": "接待处在一楼。"
+    },
+    {
+      "source": "এটি আজকের নথি।",
+      "target": "这是今天的文件。"
+    },
+    {
+      "source": "সম্মানিত মানুষ ‘আছেন’ = いらっしゃいます; ございます বস্তু/abstract existence।",
+      "target": "受尊敬人“在” = いらっしゃいます；ございます 是物品/abstract existence。"
+    },
+    {
+      "source": "Keigo তিন স্তর একসঙ্গে",
+      "target": "Keigo 三层一起"
+    },
+    {
+      "source": "尊敬語, 謙譲語 ও 丁寧語-এর ভূমিকা আলাদা রেখে বাক্য বানানো",
+      "target": "保持 尊敬語、謙譲語 和 丁寧語 作用分开造句"
+    },
+    {
+      "source": "অন্যের action উঁচু",
+      "target": "抬高别人的 action"
+    },
+    {
+      "source": "নিজের action নিচু",
+      "target": "放低自己的 action"
+    },
+    {
+      "source": "বাক্য ভদ্র",
+      "target": "句子礼貌"
+    },
+    {
+      "source": "এক বাক্যে humble verb + polite ending হয়: 私がご案内いたします। 尊敬語 ও 謙譲語 একই actor-এর জন্য এলোমেলো করবেন না।",
+      "target": "一句中可 humble verb + polite ending：私がご案内いたします。不要对同一 actor 混 尊敬語 和 謙譲語。"
+    },
+    {
+      "source": "Double keigo এড়ান: おっしゃられる (おっしゃる＋passive honorific) prescriptively redundant; おっしゃる যথেষ্ট। お召し上がりになる-ও over-keigo; 召し上がる।",
+      "target": "避免 Double keigo：おっしゃられる（おっしゃる＋passive honorific）prescriptively redundant；おっしゃる 足够。お召し上がりになる 也 over-keigo；召し上がる。"
+    },
+    {
+      "source": "বাস্তব business Japanese-এ variation আছে, কিন্তু learner-এর নিরাপদ নীতি: একটি সঠিক special form + ます।",
+      "target": "实际 business Japanese 有 variation，但 learner 安全原则：一个正确 special form + ます。"
+    },
+    {
+      "source": "Actor circle করুন; arrow দেখুন; তারপর honorific বা humble—একটি বাছুন।",
+      "target": "圈 Actor；看 arrow；然后选 honorific 或 humble 一个。"
+    },
+    {
+      "source": "শিক্ষক এই বইটি দেখবেন।",
+      "target": "老师会看这本书。"
+    },
+    {
+      "source": "আমি (আপনার/সম্মানিত বইটি) দেখব।",
+      "target": "我看（您的/受尊敬的书）。"
+    },
+    {
+      "source": "আমি অতিথিকে মিটিং রুমে নিয়ে যাচ্ছি।",
+      "target": "我带客人去会议室。"
+    },
+    {
+      "source": "সম্মানিত teacher-এর action-এ humble 拝見 নয়; honorific ご覧になる।",
+      "target": "受尊敬 teacher 的 action 不用 humble 拝見；honorific ご覧になる。"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "一目了然的差别"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "什么情况用哪个？"
+    },
+    {
+      "source": "সাধারণ",
+      "target": "普通"
+    },
+    {
+      "source": "尊敬語 (অন্য)",
+      "target": "尊敬語（别人）"
+    },
+    {
+      "source": "謙譲語 (আমি/in-group)",
+      "target": "謙譲語（我/in-group）"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "实际对话"
+    },
+    {
+      "source": "পরিচিত হয়ে আনন্দিত। আমি ABC কোম্পানির রহমান।",
+      "target": "认识您很高兴。我是 ABC 公司的拉赫曼。"
+    },
+    {
+      "source": "পরিচিত হয়ে আনন্দিত। আমি ইয়ামাদা।",
+      "target": "认识您很高兴。我是山田。"
+    },
+    {
+      "source": "আজ সময় দেওয়ার জন্য ধন্যবাদ।",
+      "target": "谢谢您今天给时间。"
+    },
+    {
+      "source": "আমিও কৃতজ্ঞ। তাহলে আপনাকে মিটিং রুমে নিয়ে যাচ্ছি।",
+      "target": "我也感激。那我带您去会议室。"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "自我检查"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice 和带解释的答案"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "先在笔记本上写答案，然后点击问题核对答案和原因。"
+    },
+    {
+      "source": "1. ‘আমি আপনার মালপত্র বহন করব’—humble pattern বলুন।",
+      "target": "1. “我帮您拿行李”——用 humble pattern 说。"
+    },
+    {
+      "source": "お＋持ち＋します; actor আমি।",
+      "target": "お＋持ち＋します；actor 是我。"
+    },
+    {
+      "source": "2. ‘আমি শিক্ষককে জিজ্ঞেস করব’—special humble বলুন।",
+      "target": "2. “我问老师”——用 special humble 说。"
+    },
+    {
+      "source": "聞く/尋ねる-এর humble 伺う।",
+      "target": "聞く/尋ねる 的 humble 伺う。"
+    },
+    {
+      "source": "3. ‘আমি নথি দেখেছি’—recipient-related formal context-এ বলুন।",
+      "target": "3. “我看了文件”——在 recipient-related formal context 说。"
+    },
+    {
+      "source": "見る-এর humble 拝見する।",
+      "target": "見る 的 humble 拝見する。"
+    },
+    {
+      "source": "4. ‘আমি তানাকা’—formal self-introduction বলুন।",
+      "target": "4. “我是田中”——用 formal self-introduction 说。"
+    },
+    {
+      "source": "言う-এর humble self-name 申す।",
+      "target": "言う 的 humble self-name 申す。"
+    },
+    {
+      "source": "5. ‘রিসেপশন দ্বিতীয় তলায়’—formal বলুন।",
+      "target": "5. “接待处在二楼”——用 formal 说。"
+    },
+    {
+      "source": "です-এর formal でございます।",
+      "target": "です 的 formal でございます。"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "一句话 Master Key"
+    },
+    {
+      "source": "অন্য সম্মানিত actor → 尊敬語; আমি/আমার group সম্মানিত ব্যক্তির দিকে action করি → 謙譲語; শুধু বাক্যের formal politeness → 丁寧語। Actor ভুল হলে পুরো Keigo ভুল।",
+      "target": "另一个受尊敬 actor → 尊敬語；我/我的 group 朝受尊敬人 action → 謙譲語；只是句子 formal politeness → 丁寧語。Actor 错整个 Keigo 错。"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "可信参考"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "大纲与核对"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "这个独立的中文 lesson 结合 Minna no Nihongo II 的 lesson sequence、official JLPT N4 scope 和 Japan Foundation 的 learner resources 制作。例句和中文解释均为新写。"
+    },
+    {
+      "source": "← আগের Lesson 49",
+      "target": "← 上一个 Lesson 49"
+    },
+    {
+      "source": "尊敬語：অন্যকে সম্মান দিয়ে বলা",
+      "target": "尊敬語：尊敬地说别人"
+    },
+    {
+      "source": "সব Lesson-এ ফিরুন",
+      "target": "返回所有 Lesson"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson 索引"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "学习目标"
+    },
+    {
+      "source": "1. 謙譲語র perspective",
+      "target": "1. 謙譲語 的 perspective"
+    },
+    {
+      "source": "3. প্রধান special humble verbs",
+      "target": "3. 主要 special humble verbs"
+    },
+    {
+      "source": "5. Keigo তিন স্তর একসঙ্গে",
+      "target": "5. Keigo 三层一起"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "差别表"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "会话"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress 加载中…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "为学习者免费提供的详细中文 self-study edition。"
+    }
+  ]
+}

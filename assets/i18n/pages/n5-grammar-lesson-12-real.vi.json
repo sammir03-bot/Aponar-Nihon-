@@ -1,0 +1,226 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n5-grammar-lesson-12-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 12 | Past Adjectives・Noun Past・Comparisons | আপনার নিহোন",
+      "target": "Bài 12 Ngữ pháp N5 | Tính từ quá khứ・Danh từ quá khứ・So sánh | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "আগে কেমন ছিল, কোনটা ভালো/বড়/মজার — compare করা",
+      "target": "Trước đây như thế nào, cái nào tốt/lớn/thú vị hơn — so sánh"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Bắt đầu ngữ pháp"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "Mục tiêu học tập hôm nay"
+    },
+    {
+      "source": "Past adjective বলা",
+      "target": "Nói tính từ quá khứ"
+    },
+    {
+      "source": "Comparison করা",
+      "target": "So sánh"
+    },
+    {
+      "source": "সবচেয়ে বলা",
+      "target": "Nói nhất"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "Giải thích đơn giản + cấu trúc + ví dụ"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "Với mỗi mẫu câu, xem cấu trúc trước, sau đó nói to ví dụ. Nhấn nút Audio để nghe câu tiếng Nhật."
+    },
+    {
+      "source": "noun ও な-adjective-এর past affirmative でした, past negative じゃありませんでした।",
+      "target": "Quá khứ khẳng định của danh từ và tính từ な là でした, quá khứ phủ định là じゃありませんでした."
+    },
+    {
+      "source": "কিনো ওয়া আমেদেশিতা।",
+      "target": "昨日は雨でした。"
+    },
+    {
+      "source": "গতকাল বৃষ্টি ছিল।",
+      "target": "Hôm qua trời mưa."
+    },
+    {
+      "source": "কোনো মাচি ওয়া শিজুকাদেশিতা।",
+      "target": "この町は静かでした。"
+    },
+    {
+      "source": "এই শহর শান্ত ছিল।",
+      "target": "Thành phố này đã yên tĩnh."
+    },
+    {
+      "source": "কিনো ওয়া ইয়াসুমি জা আরিমাসেনদেশিতা।",
+      "target": "昨日は休みじゃありませんでした。"
+    },
+    {
+      "source": "গতকাল ছুটি ছিল না।",
+      "target": "Hôm qua không phải ngày nghỉ."
+    },
+    {
+      "source": "い-adjective past করতে শেষের い বাদ দিয়ে かったです; negative past = くなかったです।",
+      "target": "Để tạo quá khứ của tính từ い, bỏ い ở cuối và thêm かったです; quá khứ phủ định = くなかったです."
+    },
+    {
+      "source": "কিনো ওয়া আৎসুকাত্তাদেসু।",
+      "target": "昨日は暑かったです。"
+    },
+    {
+      "source": "গতকাল গরম ছিল।",
+      "target": "Hôm qua nóng."
+    },
+    {
+      "source": "শিকেন ওয়া মুজুকাশিকুনাকাত্তাদেসু।",
+      "target": "試験は難しくなかったです。"
+    },
+    {
+      "source": "পরীক্ষা কঠিন ছিল না।",
+      "target": "Kỳ thi không khó."
+    },
+    {
+      "source": "এইগা ওয়া ইয়োকাত্তাদেসু।",
+      "target": "映画はよかったです。"
+    },
+    {
+      "source": "সিনেমা ভালো ছিল।",
+      "target": "Bộ phim hay."
+    },
+    {
+      "source": "N1, N2-এর চেয়ে বেশি adjective — comparison।",
+      "target": "N1 tính từ hơn N2 — so sánh."
+    },
+    {
+      "source": "より = than / চেয়ে।",
+      "target": "より = hơn / so với."
+    },
+    {
+      "source": "তোকিয়ো ওয়া ওওসাকা ইয়োরি ওওকিইদেসু।",
+      "target": "東京は大阪より大きいです。"
+    },
+    {
+      "source": "টোকিও ওসাকার চেয়ে বড়।",
+      "target": "Tokyo lớn hơn Osaka."
+    },
+    {
+      "source": "দেনশা ওয়া বাসু ইয়োরি হায়াইদেসু।",
+      "target": "電車はバスより速いです。"
+    },
+    {
+      "source": "ট্রেন বাসের চেয়ে দ্রুত।",
+      "target": "Tàu nhanh hơn xe buýt."
+    },
+    {
+      "source": "দুই জিনিসের মধ্যে কোনটা বেশি adjective — জিজ্ঞাসা করতে।",
+      "target": "Để hỏi trong hai vật cái nào tính từ hơn."
+    },
+    {
+      "source": "উত্তরে Nのほうが〜です।",
+      "target": "Trả lời bằng Nのほうが〜です."
+    },
+    {
+      "source": "নিহোনগো তো এইগো তো দোচিরা গা মুজুকাশিইদেসু কা।",
+      "target": "日本語と英語とどちらが難しいですか。"
+    },
+    {
+      "source": "জাপানি আর ইংরেজি কোনটা কঠিন?",
+      "target": "Tiếng Nhật và tiếng Anh, cái nào khó hơn?"
+    },
+    {
+      "source": "নিহোনগো নো হো গা মুজুকাশিইদেসু।",
+      "target": "日本語のほうが難しいです。"
+    },
+    {
+      "source": "জাপানির দিকটাই বেশি কঠিন।",
+      "target": "Tiếng Nhật khó hơn."
+    },
+    {
+      "source": "কোন group-এর মধ্যে সবচেয়ে adjective বলতে 一番।",
+      "target": "Để nói tính từ nhất trong một nhóm dùng 一番."
+    },
+    {
+      "source": "で এখানে scope/group বোঝায়।",
+      "target": "で ở đây chỉ phạm vi/nhóm."
+    },
+    {
+      "source": "কুদামোনো দে মানগো গা ইচিবান সুকিদেসু।",
+      "target": "果物でマンゴーが一番好きです。"
+    },
+    {
+      "source": "ফলের মধ্যে আম সবচেয়ে পছন্দ।",
+      "target": "Trong các loại trái cây, tôi thích xoài nhất."
+    },
+    {
+      "source": "নিহোন দে ফুজিসান গা ইচিবান তাকাইদেসু।",
+      "target": "日本で富士山が一番高いです。"
+    },
+    {
+      "source": "জাপানে ফুজি পাহাড় সবচেয়ে উঁচু।",
+      "target": "Ở Nhật, núi Phú Sĩ cao nhất."
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "Luyện nói"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "Đọc các câu này 3 lần như trong phỏng vấn/hội thoại lớp học."
+    },
+    {
+      "source": "কিনো ওয়া দোদেশিতা কা।",
+      "target": "昨日はどうでしたか。"
+    },
+    {
+      "source": "গতকাল কেমন ছিল?",
+      "target": "Hôm qua như thế nào?"
+    },
+    {
+      "source": "তোতেমো ইসোগাশিকাত্তাদেসু।",
+      "target": "とても忙しかったです。"
+    },
+    {
+      "source": "খুব ব্যস্ত ছিলাম।",
+      "target": "Rất bận."
+    },
+    {
+      "source": "জাপানিই বেশি কঠিন।",
+      "target": "Tiếng Nhật khó hơn."
+    },
+    {
+      "source": "নিহোন রিয়োরি দে নানি গা ইচিবান সুকিদেসু কা।",
+      "target": "日本料理で何が一番好きですか。"
+    },
+    {
+      "source": "জাপানি খাবারের মধ্যে কোনটা সবচেয়ে পছন্দ?",
+      "target": "Trong món ăn Nhật, bạn thích món nào nhất?"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "সবচেয়ে = ?",
+      "target": "Nhất = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 12 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • Bài 12 Ngữ pháp N5 • Verified Premium Detailed Version"
+    }
+  ]
+}

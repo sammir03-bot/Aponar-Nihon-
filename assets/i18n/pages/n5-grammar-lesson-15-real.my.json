@@ -1,0 +1,222 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "my",
+  "page": "n5-grammar-lesson-15-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 15 | てもいいです・てはいけません・ています・知っています | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 15 | てもいいです・てはいけません・ています・知っています | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "অনুমতি, নিষেধ, পেশা/অবস্থা, জানা/না জানা",
+      "target": "ခွင့်ပြုချက်, တားမြစ်ချက်, အလုပ်/အခြေအနေ, သိခြင်း/မသိခြင်း"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar စတင်"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "ယနေ့၏ Learning Goal"
+    },
+    {
+      "source": "অনুমতি চাওয়া",
+      "target": "ခွင့်ပြုချက် တောင်းခြင်း"
+    },
+    {
+      "source": "নিষেধ করা",
+      "target": "တားမြစ်ခြင်း"
+    },
+    {
+      "source": "জানি/চিনি বলা",
+      "target": "သိသည်/မှတ်မိသည် ပြောခြင်း"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "လွယ်ကူသော ရှင်းပြချက် + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "pattern တိုင်းကို အရင် structure ကြည့်၍၊ ထို့နောက် example ကို နှုတ်ဖြင့် ပြောပါ။ Audio button နှိပ်လျှင် Japanese sentence ကြားနိုင်မည်။"
+    },
+    {
+      "source": "কিছু করা ঠিক/অনুমতি আছে বোঝাতে। Question করলে “May I…?” হয়।",
+      "target": "တစ်ခုခု လုပ်ရန် မှန်/ခွင့်ပြုချက် ရှိသည် နားလည်ရန်။ Question လုပ်လျှင် “May I…?” ဖြစ်သည်။"
+    },
+    {
+      "source": "কোকো দে শাশিন ও তোত্তে মো ইইদেসু কা।",
+      "target": "ここで写真を撮ってもいいですか။"
+    },
+    {
+      "source": "এখানে ছবি তুলতে পারি?",
+      "target": "ဤနေရာမှာ ဓာတ်ပုံ ရိုက်နိုင်သလား?"
+    },
+    {
+      "source": "হাই, তোত্তে মো ইইদেসু।",
+      "target": "はい、撮ってもいいです။"
+    },
+    {
+      "source": "হ্যাঁ, তুলতে পারেন।",
+      "target": "ဟုတ်ကဲ့, ရိုက်နိုင်သည်။"
+    },
+    {
+      "source": "হাইত্তে মো ইইদেসু কা।",
+      "target": "入ってもいいですか။"
+    },
+    {
+      "source": "ভিতরে ঢুকতে পারি?",
+      "target": "အတွင်း ဝင်နိုင်သလား?"
+    },
+    {
+      "source": "কিছু করা যাবে না / নিষেধ বোঝাতে।",
+      "target": "တစ်ခုခု မလုပ်နိုင်ပါ / တားမြစ်ချက် နားလည်ရန်။"
+    },
+    {
+      "source": "public rules, classroom rules, hospital rules—সব জায়গায় ব্যবহৃত।",
+      "target": "public rules, classroom rules, hospital rules—နေရာတိုင်းမှာ သုံးသည်။"
+    },
+    {
+      "source": "কোকো দে তাবাকো ও সুত্তে ওয়া ইকেমাসেন।",
+      "target": "ここでタバコを吸ってはいけません။"
+    },
+    {
+      "source": "এখানে সিগারেট খাওয়া যাবে না।",
+      "target": "ဤနေရာမှာ ဆေးလိပ် မသောက်ရပါ။"
+    },
+    {
+      "source": "কোনো হেয়া নি হাইত্তে ওয়া ইকেমাসেন।",
+      "target": "この部屋に入ってはいけません။"
+    },
+    {
+      "source": "এই ঘরে ঢোকা যাবে না।",
+      "target": "ဤအခန်းသို့ မဝင်ရပါ။"
+    },
+    {
+      "source": "চলমান কাজ ছাড়াও পেশা/অবস্থা/habitual status বোঝাতে পারে।",
+      "target": "ဖြစ်နေသော အလုပ်အပြင် အလုပ်/အခြေအနေ/habitual status နားလည်နိုင်သည်။"
+    },
+    {
+      "source": "ওয়াতাশি ওয়া নিহোন দেহাতারাইতেইমাসু।",
+      "target": "私は日本で働いています။"
+    },
+    {
+      "source": "আমি জাপানে কাজ করছি/কাজ করি।",
+      "target": "ကျွန်တော် ဂျပန်မှာ အလုပ် လုပ်နေသည်/လုပ်သည်။"
+    },
+    {
+      "source": "আনি ওয়া কেক্কোন শিতেইমাসু।",
+      "target": "兄は結婚しています။"
+    },
+    {
+      "source": "আমার বড় ভাই বিবাহিত।",
+      "target": "ကျွန်တော့် အစ်ကိုမှာ အိမ်ထောင်ပြုပြီးဖြစ်သည်။"
+    },
+    {
+      "source": "কাউকে/কিছু জানি বলতে 知っています; জানি না বলতে 知りません।",
+      "target": "တစ်စုံတစ်ယောက်/တစ်ခုခု သိသည် ပြောရန် 知っています; မသိပါ ပြောရန် 知りません။"
+    },
+    {
+      "source": "Negative: 知っていません সাধারণ conversation-এ কম; 知りません বলাই natural।",
+      "target": "Negative: 知っていません မှာ ပုံမှန် conversation မှာ နည်း; 知りません ပြောခြင်းပဲ natural။"
+    },
+    {
+      "source": "তানাকা সান ও শিত্তেইমাসু কা।",
+      "target": "田中さんを知っていますか။"
+    },
+    {
+      "source": "তানাকা-সানকে চেনেন?",
+      "target": "တာနာကာ-ဆန်ကို မှတ်မိသလား?"
+    },
+    {
+      "source": "হাই, শিত্তেইমাসু।",
+      "target": "はい、知っています။"
+    },
+    {
+      "source": "হ্যাঁ, চিনি।",
+      "target": "ဟုတ်ကဲ့, မှတ်မိသည်။"
+    },
+    {
+      "source": "ইইয়ে, শিরিমাসেন।",
+      "target": "いいえ、知りません။"
+    },
+    {
+      "source": "না, চিনি না।",
+      "target": "မဟုတ်ပါ, မမှတ်မိပါ။"
+    },
+    {
+      "source": "অনুমতি চাইলে উত্তর politely দিতে হয়।",
+      "target": "ခွင့်ပြုချက် တောင်းလျှင် အဖြေကို politely ပေးရသည်။"
+    },
+    {
+      "source": "না বলতে শুধু いいえ নয়; すみません、ちょっと… natural।",
+      "target": "မဟုတ်ပါ ပြောရန် いいえ သာ မဟုတ်; すみません、ちょっと… natural။"
+    },
+    {
+      "source": "কোকো নি সুওয়াত্তে মো ইইদেসু কা।",
+      "target": "ここに座ってもいいですか။"
+    },
+    {
+      "source": "এখানে বসতে পারি?",
+      "target": "ဤနေရာမှာ ထိုင်နိုင်သလား?"
+    },
+    {
+      "source": "হাই, দোজো।",
+      "target": "はい、どうぞ။"
+    },
+    {
+      "source": "হ্যাঁ, অবশ্যই।",
+      "target": "ဟုတ်ကဲ့, ရပါတယ်။"
+    },
+    {
+      "source": "সুমিমাসেন, চোত্তো…।",
+      "target": "すみません、ちょっと…။"
+    },
+    {
+      "source": "দুঃখিত, একটু…",
+      "target": "ဝမ်းနည်းပါတယ်, နည်းနည်း…"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "နှုတ်ဖြင့် ပြောသော Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "ဤဝါကျများကို interview/classroom conversation လိုမျိုး 3 ကြိမ် ဖတ်ပါ။"
+    },
+    {
+      "source": "হাই, ইইদেসু ইয়ো।",
+      "target": "はい、いいですよ။"
+    },
+    {
+      "source": "হ্যাঁ, পারেন।",
+      "target": "ဟုတ်ကဲ့, ရသည်။"
+    },
+    {
+      "source": "এখানে ধূমপান করা যাবে না।",
+      "target": "ဤနေရာမှာ ဆေးလိပ် မသောက်ရပါ။"
+    },
+    {
+      "source": "✅ 知りません। — না জানলে natural form।",
+      "target": "✅ 知りません。 — မသိလျှင် natural form။"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "ကိုယ့်ကိုယ်ကို စစ်ဆေးပါ"
+    },
+    {
+      "source": "“চিনি না” natural কোনটি?",
+      "target": "“မမှတ်မိပါ” natural ဘယ်ဟာလဲ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 15 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 15 • Verified Premium Detailed Version"
+    }
+  ]
+}

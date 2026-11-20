@@ -1,0 +1,86 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n4-kanji",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N4 Kanji Master Dark — 漢字マスター | আপনার নিহোন",
+      "target": "N4 Kanji Master Dark — 漢字マスター | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "☰ অপশন",
+      "target": "☰ විකල්ප"
+    },
+    {
+      "source": "২১০টি Kanji ফ্লিপ কার্ড, লেখার প্র্যাকটিস, কুইজ ও প্রোগ্রেস ট্র্যাকার — একসাথে।",
+      "target": "Kanji ෆ්ලිප් කාඩ් 210ක්, ලිවීමේ පුහුණුව, ප්‍රශ්නාවලිය සහ ප්‍රගති ට්‍රැකර් — එකම තැනක."
+    },
+    {
+      "source": "শেখা শুরু করুন ↓",
+      "target": "ඉගෙනීම අරඹන්න ↓"
+    },
+    {
+      "source": "✍ লেখার প্র্যাকটিস",
+      "target": "✍ ලිවීමේ පුහුණුව"
+    },
+    {
+      "source": "সব",
+      "target": "සියල්ල"
+    },
+    {
+      "source": "কমন",
+      "target": "පොදු"
+    },
+    {
+      "source": "সময়",
+      "target": "වේලාව"
+    },
+    {
+      "source": "স্থান",
+      "target": "ස්ථානය"
+    },
+    {
+      "source": "শিক্ষা",
+      "target": "අධ්‍යාපනය"
+    },
+    {
+      "source": "খাবার",
+      "target": "ආහාර"
+    },
+    {
+      "source": "প্রকৃতি",
+      "target": "ස්වභාවධර්මය"
+    },
+    {
+      "source": "মানুষ",
+      "target": "මිනිසුන්"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "ක්‍රියාපද"
+    },
+    {
+      "source": "বিশেষণ",
+      "target": "විශේෂණ පද"
+    },
+    {
+      "source": "অনুভূতি",
+      "target": "හැඟීම්"
+    },
+    {
+      "source": "অন্যান্য",
+      "target": "වෙනත්"
+    },
+    {
+      "source": "© 2025 আপনার নিহোন",
+      "target": "© 2025 আপনার নিহোন"
+    }
+  ]
+}

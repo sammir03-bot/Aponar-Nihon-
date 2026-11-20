@@ -1,0 +1,474 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "n4-grammar-lesson-28-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 28: 〜ながら・〜し：একসঙ্গে কাজ ও একাধিক কারণ | N4 Grammar",
+      "target": "Lesson 28: 〜ながら・〜し：sabay na gawain at maraming dahilan | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Pumunta sa pangunahing nilalaman"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 28 · ভিত্তি বিস্তার",
+      "target": "Lesson 28 · Pagpapalawak ng pundasyon"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Lahat ng Lesson"
+    },
+    {
+      "source": "ভিত্তি বিস্তার",
+      "target": "Pagpapalawak ng pundasyon"
+    },
+    {
+      "source": "ধাপ ১ · 26–30",
+      "target": "Hakbang 1 · 26–30"
+    },
+    {
+      "source": "〜ながら・〜し：একসঙ্গে কাজ ও একাধিক কারণ",
+      "target": "〜ながら・〜し：sabay na gawain at maraming dahilan"
+    },
+    {
+      "source": "একই ব্যক্তি একই সময়ে দুই কাজ করা, অভ্যাস/পেশা বোঝানো এবং একাধিক বৈশিষ্ট্য বা কারণ সুন্দরভাবে যুক্ত করা।",
+      "target": "Isang tao na gumagawa ng dalawang gawain nang sabay, pagpapahiwatig ng ugali/propesyon at magandang pagdurugtong ng maraming katangian o dahilan."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 detalyadong grammar block"
+    },
+    {
+      "source": "10টি Japanese example",
+      "target": "10 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice na may paliwanag"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile at print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Itago ang あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Hindi pa tapos"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Markahan bilang tapos"
+    },
+    {
+      "source": "Lesson 28 · লক্ষ্য",
+      "target": "Lesson 28 · Layunin"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Ang magagawa mo pagkatapos ng Lesson na ito"
+    },
+    {
+      "source": "এই lesson বাক্যের তথ্যকে যুক্ত করতে শেখায়। ながら সময়ের ওপর দুই কাজ বসায়; し একাধিক কারণ বা বৈশিষ্ট্যকে একই দিকে জমা করে। দুটিকে গুলিয়ে না ফেলে subject, সময় এবং ফলের সম্পর্ক ধরাই মূল লক্ষ্য।",
+      "target": "Itinuturo ng lesson na ito kung paano pagdugtungin ang impormasyon ng pangungusap. Ang ながら ay naglalagay ng dalawang gawain sa iisang oras; ang し ay nagtitipon ng maraming dahilan o katangian sa iisang direksyon. Ang pangunahing layunin ay hulihin ang relasyon ng subject, oras at resulta nang hindi pinaghahalo ang dalawa."
+    },
+    {
+      "source": "Vます-stem＋ながら দিয়ে একই subject-এর দুই সমকালীন কাজ বলবেন",
+      "target": "Sasabihin mo ang dalawang sabay na gawain ng iisang subject gamit ang Vます-stem＋ながら"
+    },
+    {
+      "source": "Vています-এর চলমান কাজ, অভ্যাস ও পেশাগত ব্যবহারের পার্থক্য বুঝবেন",
+      "target": "Maiintindihan mo ang pagkakaiba ng patuloy na gawain, ugali at propesyonal na paggamit ng Vています"
+    },
+    {
+      "source": "〜し、〜し দিয়ে একাধিক কারণ/বৈশিষ্ট্য তালিকাবদ্ধ করবেন",
+      "target": "Maglilista ka ng maraming dahilan/katangian gamit ang 〜し、〜し"
+    },
+    {
+      "source": "それに এবং それで দিয়ে অতিরিক্ত তথ্য ও ফল আলাদা করবেন",
+      "target": "Mapag-iiba mo ang karagdagang impormasyon at resulta gamit ang それに at それで"
+    },
+    {
+      "source": "একই ব্যক্তি একটি কাজ করতে করতে আরেকটি কাজ করে",
+      "target": "Isang tao ang gumagawa ng isa pang gawain habang ginagawa ang isa"
+    },
+    {
+      "source": "গঠন",
+      "target": "Istruktura"
+    },
+    {
+      "source": "ধরন",
+      "target": "Uri"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Halimbawa"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "Verb"
+    },
+    {
+      "source": "Vます থেকে ます বাদ＋ながら",
+      "target": "Tanggalin ang ます mula sa Vます＋ながら"
+    },
+    {
+      "source": "বাক্য",
+      "target": "Pangungusap"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detalyadong paliwanag"
+    },
+    {
+      "source": "V1 হলো সহায়ক/পটভূমির কাজ, V2 হলো মূল কাজ; tense ও ভদ্রতা V2-তে প্রকাশ পায়। 音楽を聞きながら勉強しました—দুই কাজই অতীতে, কারণ শেষ predicate past।",
+      "target": "Ang V1 ay pantulong/background na gawain, ang V2 ay pangunahing gawain; ang tense at paggalang ay lumilitaw sa V2. 音楽を聞きながら勉強しました—parehong nakaraan ang dalawang gawain, dahil past ang huling predicate."
+    },
+    {
+      "source": "দুই clause-এর subject একই হওয়া জরুরি। ‘আমি পড়ি, ভাই গান শোনে’—এখানে ながら নয়; 普通に 〜て/〜が লাগবে।",
+      "target": "Kailangang iisa ang subject ng dalawang clause. 'Nag-aaral ako, nakikinig ng kanta ang kapatid ko'—dito hindi ながら; 普通に 〜て/〜が ang kailangan."
+    },
+    {
+      "source": "দুই কাজ মোটামুটি একই সময়জুড়ে চলবে। প্রথম কাজ শেষ করে দ্বিতীয় কাজ হলে 〜てから বা 〜たあとで ব্যবহার করুন।",
+      "target": "Ang dalawang gawain ay magpapatuloy sa halos parehong oras. Kung pagkatapos tapusin ang unang gawain ay gagawin ang pangalawa, gamitin ang 〜てから o 〜たあとで."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Ang dapat tandaan"
+    },
+    {
+      "source": "ながら-এর আগে て-form নয়: 聞いてながら ✕, 聞きながら ✓।",
+      "target": "Bago ang ながら, hindi て-form: 聞いてながら ✕, 聞きながら ✓."
+    },
+    {
+      "source": "কফি খেতে খেতে সংবাদপত্র পড়ি।",
+      "target": "Nagbabasa ako ng pahayagan habang umiinom ng kape."
+    },
+    {
+      "source": "হাঁটতে হাঁটতে ফোন দেখবেন না।",
+      "target": "Huwag tumingin sa telepono habang naglalakad."
+    },
+    {
+      "source": "ভাই বিশ্ববিদ্যালয়ে পড়ার পাশাপাশি কোম্পানিতে কাজ করে।",
+      "target": "Ang kapatid ko ay nagtatrabaho sa kumpanya habang nag-aaral sa unibersidad."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Mali"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Tama"
+    },
+    {
+      "source": "কেন:",
+      "target": "Bakit:"
+    },
+    {
+      "source": "聞きます-এর stem 聞き＋ながら।",
+      "target": "Stem ng 聞きます: 聞き＋ながら."
+    },
+    {
+      "source": "নিয়মিত অভ্যাস, পুনরাবৃত্তি, পেশা বা দীর্ঘস্থায়ী অবস্থা",
+      "target": "Regular na ugali, pag-uulit, propesyon o pangmatagalang kalagayan"
+    },
+    {
+      "source": "Vています শুধু ‘এখন করছি’ নয়। 毎日, いつも, 毎週-এর সঙ্গে এলে নিয়মিত অভ্যাস বোঝায়। 会社で働いています পেশাগত/স্থিতিশীল অবস্থা।",
+      "target": "Ang Vています ay hindi lang 'ginagawa ko ngayon'. Kapag kasama ng 毎日, いつも, 毎週, nagpapahiwatig ito ng regular na ugali. Ang 会社で働いています ay propesyonal/matatag na kalagayan."
+    },
+    {
+      "source": "ঘটনার প্রকৃতি দেখে অর্থ বুঝুন: 今本を読んでいます = এখন পড়ছি; 毎晩本を読んでいます = প্রতি রাতে পড়ি।",
+      "target": "Unawain ang kahulugan ayon sa kalikasan ng pangyayari: 今本を読んでいます = nagbabasa ako ngayon; 毎晩本を読んでいます = nagbabasa ako tuwing gabi."
+    },
+    {
+      "source": "সময়-সূচক শব্দটি অর্থ স্পষ্ট করে; 毎朝／毎週／いつも ইত্যাদি লক্ষ্য করুন।",
+      "target": "Nililinaw ng salitang nagpapahiwatig ng oras ang kahulugan; pansinin ang 毎朝／毎週／いつも atbp."
+    },
+    {
+      "source": "আমি প্রতিদিন সকাল ছয়টায় উঠি।",
+      "target": "Gumigising ako ng alas-6 tuwing umaga."
+    },
+    {
+      "source": "আমার বাবা হাসপাতালে কাজ করেন।",
+      "target": "Nagtatrabaho ang tatay ko sa ospital."
+    },
+    {
+      "source": "বর্তমান নিয়মিত অভ্যাস হলে ています; 勉強しました একটি সম্পন্ন অতীত ঘটনা।",
+      "target": "Kung kasalukuyang regular na ugali, ています; ang 勉強しました ay isang kumpletong nakaraang pangyayari."
+    },
+    {
+      "source": "একাধিক কারণ, গুণ বা তথ্য যোগ করা; তালিকা অসম্পূর্ণও হতে পারে",
+      "target": "Pagdaragdag ng maraming dahilan, katangian o impormasyon; maaaring hindi kumpleto ang listahan"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-adjective"
+    },
+    {
+      "source": "な-বিশেষণ/বিশেষ্য",
+      "target": "な-pang-uri/pangngalan"
+    },
+    {
+      "source": "ভদ্র কথন",
+      "target": "Magalang na pananalita"
+    },
+    {
+      "source": "し বক্তাকে বলে ‘এটিও একটি কারণ/বৈশিষ্ট্য, আরও থাকতে পারে’। কারণের তালিকা শেষে সিদ্ধান্ত আসতে পারে: 安いし、おいしいし、この店が好きです।",
+      "target": "Sinasabi ng し sa tagapagsalita na 'isa rin itong dahilan/katangian, maaaring mayroon pa'. Sa dulo ng listahan ng mga dahilan ay maaaring dumating ang desisyon: 安いし、おいしいし、この店が好きです."
+    },
+    {
+      "source": "একটি মাত্র কারণেও し ব্যবহার সম্ভব; তখন অন্য অউচ্চারিত কারণ আছে—এমন ইঙ্গিত থাকে। 今日は雨だし、出かけません = বৃষ্টিও হচ্ছে (আরও কারণ আছে), তাই বের হব না।",
+      "target": "Posible ring gamitin ang し sa iisang dahilan lang; noon ay may pahiwatig na may iba pang hindi binanggit na dahilan. 今日は雨だし、出かけません = umuulan din (may iba pang dahilan), kaya hindi ako lalabas."
+    },
+    {
+      "source": "が/けど বিপরীত তথ্য যুক্ত করে; し একই দিকের তথ্য জমা করে।",
+      "target": "Ang が/けど ay nagdurugtong ng salungat na impormasyon; ang し ay nagtitipon ng impormasyon sa iisang direksyon."
+    },
+    {
+      "source": "Plain affirmative な-adjective/noun-এর পরে だし; ভদ্র ধারায় ですし-ও ঠিক।",
+      "target": "Pagkatapos ng plain affirmative な-adjective/noun, だし; sa magalang na daloy, tama rin ang ですし."
+    },
+    {
+      "source": "ঘরটি বড়, উজ্জ্বল, আবার ভাড়াও কম।",
+      "target": "Malaki ang kuwarto, maliwanag, at mura pa ang upa."
+    },
+    {
+      "source": "তানাকা দয়ালু, আর জাপানিও ভালো পারেন।",
+      "target": "Mabait si Tanaka, at magaling din siya sa Hapon."
+    },
+    {
+      "source": "সময়ও নেই, তাই আজ ট্যাক্সিতে যাই।",
+      "target": "Wala rin akong oras, kaya magta-taxi ako ngayon."
+    },
+    {
+      "source": "静か হলো な-বিশেষণ; plain affirmative-এ だし।",
+      "target": "Ang 静か ay な-pang-uri; sa plain affirmative, だし."
+    },
+    {
+      "source": "それに = তার ওপর/আরও; それで = তাই/ফলে",
+      "target": "それに = bukod pa roon/mas lalo; それで = kaya/bilang resulta"
+    },
+    {
+      "source": "সংযোগ",
+      "target": "Koneksyon"
+    },
+    {
+      "source": "それに একই দিকের অতিরিক্ত তথ্য যোগ করে—ইংরেজির ‘moreover’। それで আগের কারণ বা পরিস্থিতির ফল জানায়—‘therefore/so’।",
+      "target": "Ang それに ay nagdaragdag ng karagdagang impormasyon sa iisang direksyon—'moreover' sa Ingles. Ang それで ay nagsasabi ng resulta ng naunang dahilan o sitwasyon—'therefore/so'."
+    },
+    {
+      "source": "কারণ ও ফল উল্টো করলে অর্থ ভাঙবে। 電車が止まりました。それで、遅れました = ট্রেন বন্ধ ছিল, তাই দেরি হয়েছে।",
+      "target": "Kung babaligtarin ang dahilan at resulta, masisira ang kahulugan. 電車が止まりました。それで、遅れました = huminto ang tren, kaya nahuli ako."
+    },
+    {
+      "source": "অতিরিক্ত গুণ → それに; স্বাভাবিক ফল → それで।",
+      "target": "Karagdagang katangian → それに; natural na resulta → それで."
+    },
+    {
+      "source": "দোকানটি সস্তা। তার ওপর সেবাও ভালো।",
+      "target": "Mura ang tindahan. Bukod pa roon, maganda rin ang serbisyo."
+    },
+    {
+      "source": "রাস্তায় যানজট ছিল। তাই মিটিংয়ে দেরি হয়েছে।",
+      "target": "May trapiko sa daan. Kaya nahuli ako sa meeting."
+    },
+    {
+      "source": "ম্যাচ বাতিল হওয়া বৃষ্টির ফল; তাই それで।",
+      "target": "Ang pagkakansela ng match ay resulta ng ulan; kaya それで."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Pagkakaiba sa isang sulyap"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Alin sa anong sitwasyon?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Form"
+    },
+    {
+      "source": "সম্পর্ক",
+      "target": "Relasyon"
+    },
+    {
+      "source": "Subject/দিক",
+      "target": "Subject/direksyon"
+    },
+    {
+      "source": "একই সময়ে দুই কাজ",
+      "target": "Dalawang gawain sa iisang oras"
+    },
+    {
+      "source": "একই subject",
+      "target": "Iisang subject"
+    },
+    {
+      "source": "প্রথমটি শেষ, পরে দ্বিতীয়টি",
+      "target": "Tapos ang una, pagkatapos ang pangalawa"
+    },
+    {
+      "source": "সময়ক্রম",
+      "target": "Pagkakasunod ng oras"
+    },
+    {
+      "source": "একই দিকে কারণ/গুণ জমা",
+      "target": "Pagtitipon ng dahilan/katangian sa iisang direksyon"
+    },
+    {
+      "source": "আরও কারণের ইঙ্গিত",
+      "target": "Pahiwatig ng iba pang dahilan"
+    },
+    {
+      "source": "কারণ → ফল",
+      "target": "Dahilan → resulta"
+    },
+    {
+      "source": "ফলাফলের সংযোগ",
+      "target": "Koneksyon ng resulta"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Tunay na Pag-uusap"
+    },
+    {
+      "source": "বাসা বাছাই",
+      "target": "Pagpili ng bahay"
+    },
+    {
+      "source": "এই অ্যাপার্টমেন্ট কেমন?",
+      "target": "Kumusta ang apartment na ito?"
+    },
+    {
+      "source": "স্টেশনের কাছে, ঘরও বড়। তার ওপর ভাড়াও কম।",
+      "target": "Malapit sa istasyon, malaki rin ang kuwarto. Bukod pa roon, mura rin ang upa."
+    },
+    {
+      "source": "ভালো তো।",
+      "target": "Mabuti naman."
+    },
+    {
+      "source": "হ্যাঁ। গান শুনতে শুনতে রান্নাও করা যাবে।",
+      "target": "Oo. Maaari ring magluto habang nakikinig ng kanta."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Suriin ang sarili mo"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice at sagot na may paliwanag"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Isulat muna ang sagot sa kuwaderno, pagkatapos ay pindutin ang tanong at itugma ang sagot at dahilan."
+    },
+    {
+      "source": "1. ‘গান শুনতে শুনতে পড়ি’ বলুন।",
+      "target": "1. Sabihin ang 'nagbabasa ako habang nakikinig ng kanta'."
+    },
+    {
+      "source": "聞きます→聞き＋ながら; মূল কাজ 勉強します।",
+      "target": "聞きます→聞き＋ながら; pangunahing gawain: 勉強します."
+    },
+    {
+      "source": "2. 静か／便利—দুটি গুণ し দিয়ে যুক্ত করুন।",
+      "target": "2. Pagdugtungin ang 静か／便利—dalawang katangian gamit ang し."
+    },
+    {
+      "source": "な-বিশেষণের plain affirmative: だし।",
+      "target": "Plain affirmative ng な-pang-uri: だし."
+    },
+    {
+      "source": "3. শূন্যস্থান: 電車が止まりました。____、遅れました。",
+      "target": "3. Punan ang patlang: 電車が止まりました。____、遅れました."
+    },
+    {
+      "source": "আগের ঘটনা দেরির কারণ; পরেরটি ফল।",
+      "target": "Ang naunang pangyayari ay dahilan ng pagkahuli; ang susunod ay resulta."
+    },
+    {
+      "source": "4. ‘আমি প্রতি সপ্তাহে সাঁতার কাটি’—ています ব্যবহার করুন।",
+      "target": "4. 'Lumalalangoy ako bawat linggo'—gamitin ang ています."
+    },
+    {
+      "source": "পুনরাবৃত্ত অভ্যাসে Vています।",
+      "target": "Sa paulit-ulit na ugali, Vています."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Master Key sa isang pangungusap"
+    },
+    {
+      "source": "ながら-তে সময় এক, subject এক; し-তে তথ্য একদিকে জমে; それで-তে আগের ঘটনা পরের ফল তৈরি করে। এই তিনটি সম্পর্ক আলাদা করে দেখলেই ভুল কমবে।",
+      "target": "Sa ながら, iisa ang oras, iisa ang subject; sa し, nagtitipon ang impormasyon sa iisang direksyon; sa それで, ang naunang pangyayari ay lumilikha ng susunod na resulta. Kung titingnan nang magkahiwalay ang tatlong relasyong ito, mababawasan ang mga pagkakamali."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Pinagkakatiwalaang reference"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus at pag-verify"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Ang independiyenteng Filipino lesson na ito ay ginawa sa pamamagitan ng pagsasama ng lesson sequence ng Minna no Nihongo II, official JLPT N4 scope at learner resources ng Japan Foundation. Ang mga halimbawa at Filipino na paliwanag ay bagong isinulat."
+    },
+    {
+      "source": "← আগের Lesson 27",
+      "target": "← Nakaraang Lesson 27"
+    },
+    {
+      "source": "Potential Form：পারা, সুযোগ ও স্বতঃস্ফূর্ত অনুভব",
+      "target": "Potential Form：kakayahan, pagkakataon at kusang pakiramdam"
+    },
+    {
+      "source": "পরের Lesson 29 →",
+      "target": "Susunod na Lesson 29 →"
+    },
+    {
+      "source": "Result State：Vています ও Vてしまいます",
+      "target": "Result State：Vています at Vてしまいます"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Index ng Lesson"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Layunin sa pagkatuto"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Talahanayan ng pagkakaiba"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Naglo-load ang Course progress…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Para sa mga mag-aaral, libre at detalyadong Filipino self-study edition."
+    }
+  ]
+}

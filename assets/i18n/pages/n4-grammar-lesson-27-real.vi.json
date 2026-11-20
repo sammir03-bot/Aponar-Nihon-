@@ -1,0 +1,498 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n4-grammar-lesson-27-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 27: Potential Form：পারা, সুযোগ ও স্বতঃস্ফূর্ত অনুভব | N4 Grammar",
+      "target": "Bài 27: Potential Form: khả năng, cơ hội và cảm nhận tự phát | Ngữ pháp N4"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Chuyển đến nội dung chính"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 27 · ভিত্তি বিস্তার",
+      "target": "Bài 27 · Mở rộng nền tảng"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Tất cả bài học"
+    },
+    {
+      "source": "ভিত্তি বিস্তার",
+      "target": "Xây dựng nền tảng"
+    },
+    {
+      "source": "ধাপ ১ · 26–30",
+      "target": "Bước 1 · 26–30"
+    },
+    {
+      "source": "Potential Form：পারা, সুযোগ ও স্বতঃস্ফূর্ত অনুভব",
+      "target": "Potential Form: khả năng, cơ hội và cảm nhận tự phát"
+    },
+    {
+      "source": "কোনো কাজ করার ক্ষমতা/সুযোগ, চোখে দেখা বা কানে শোনা এবং ‘শুধু এটুকুই’ সীমাবদ্ধতা প্রকাশ।",
+      "target": "Khả năng/cơ hội làm việc gì, thấy bằng mắt hoặc nghe bằng tai và giới hạn ‘chỉ chừng này’."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 khối ngữ pháp chi tiết"
+    },
+    {
+      "source": "10টি Japanese example",
+      "target": "10 ví dụ tiếng Nhật"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 bài luyện tập kèm giải thích"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Thân thiện ngoại tuyến, di động và in ấn"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Ẩn あ phần đọc"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Chưa hoàn thành"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Đánh dấu hoàn thành"
+    },
+    {
+      "source": "Lesson 27 · লক্ষ্য",
+      "target": "Bài 27 · Mục tiêu"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Sau bài này bạn sẽ có thể"
+    },
+    {
+      "source": "বাংলার ‘পারি’ জাপানিতে সবসময় একই রূপে আসে না। নিজের সক্ষমতা হলে potential verb, কোনো সুবিধা/সম্ভাবনা হলে できます, আর চেষ্টা ছাড়াই চোখে বা কানে ধরা পড়লে 見えます／聞こえます লাগে। এই lesson-এ পার্থক্যগুলো particle-সহ পরিষ্কার হবে।",
+      "target": "‘Có thể’ trong tiếng Việt không luôn đến cùng một dạng trong tiếng Nhật. Nếu là khả năng của bản thân thì động từ potential, nếu là tiện ích/khả năng tình huống thì できます, còn nếu bắt được bằng mắt hoặc tai mà không cần cố gắng thì cần 見えます／聞こえます. Trong bài này các khác biệt sẽ rõ ràng cùng với trợ từ."
+    },
+    {
+      "source": "তিন verb group-এর potential form নির্ভুলভাবে বানাতে পারবেন",
+      "target": "Tạo chính xác thể potential của ba nhóm động từ"
+    },
+    {
+      "source": "を থেকে が পরিবর্তনের নিয়ম ও は-এর ব্যবহার বুঝবেন",
+      "target": "Hiểu quy tắc đổi từ を sang が và cách dùng は"
+    },
+    {
+      "source": "見えます/聞こえます এবং 見られます/聞けます আলাদা করবেন",
+      "target": "Phân biệt 見えます/聞こえます và 見られます/聞けます"
+    },
+    {
+      "source": "しか〜ません দিয়ে কঠোর সীমাবদ্ধতা প্রকাশ করবেন",
+      "target": "Diễn đạt giới hạn cứng bằng しか〜ません"
+    },
+    {
+      "source": "কোনো কাজ করার সামর্থ্য, পরিস্থিতিগত সুযোগ বা অনুমোদন থাকা",
+      "target": "Có khả năng, cơ hội tình huống hoặc sự cho phép để làm việc gì"
+    },
+    {
+      "source": "গঠন",
+      "target": "Cấu trúc"
+    },
+    {
+      "source": "ধরন",
+      "target": "Loại"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Ví dụ"
+    },
+    {
+      "source": "শেষ う-row → একই え-row＋る",
+      "target": "Hàng う cuối → cùng hàng え＋る"
+    },
+    {
+      "source": "る বাদ＋られる",
+      "target": "Bỏ る＋られる"
+    },
+    {
+      "source": "অনিয়মিত",
+      "target": "Bất quy tắc"
+    },
+    {
+      "source": "ভদ্র রূপ",
+      "target": "Dạng lịch sự"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Giải thích chi tiết"
+    },
+    {
+      "source": "Potential verb নিজেই ‘পারা’ অর্থ বহন করে; তাই আলাদা ことができます না দিলেও চলে। 日本語を話すことができます এবং 日本語が話せます—দুটিই ‘জাপানি বলতে পারি’। দ্বিতীয়টি কথায় সংক্ষিপ্ত ও স্বাভাবিক।",
+      "target": "Động từ potential tự nó mang nghĩa ‘có thể’; vì vậy không cần thêm ことができます. 日本語を話すことができます và 日本語が話せます — cả hai đều là ‘tôi có thể nói tiếng Nhật’. Dạng thứ hai ngắn gọn và tự nhiên trong lời nói."
+    },
+    {
+      "source": "Potential বাক্যে কাজের object সাধারণত が নেয়: 漢字が読めます। বিষয়টি contrast করলে は হতে পারে: 漢字は読めますが、書けません। কথ্য ভাষায় を-ও শোনা যায়, কিন্তু N4-এ が নিরাপদ।",
+      "target": "Trong câu potential, tân ngữ của hành động thường lấy が: 漢字が読めます. Nếu đối chiếu chủ đề thì có thể là は: 漢字は読めますが、書けません. Trong ngôn ngữ nói を cũng nghe thấy, nhưng ở N4 が là an toàn."
+    },
+    {
+      "source": "ক্ষমতা না শুধু বাস্তব সুযোগও বোঝায়: この図書館では夜九時まで勉強できます = এই লাইব্রেরিতে রাত নয়টা পর্যন্ত পড়ার সুযোগ আছে।",
+      "target": "Không chỉ khả năng mà còn chỉ cơ hội thực tế: この図書館では夜九時まで勉強できます = ở thư viện này có cơ hội học đến 9 giờ tối."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Điều cần nhớ"
+    },
+    {
+      "source": "Group 1-এ る যোগ করতে ভুলবেন না: 書け নয়, 書ける।",
+      "target": "Ở Nhóm 1 đừng quên thêm る: không phải 書け, mà là 書ける."
+    },
+    {
+      "source": "Group 2-এর পূর্ণ standard form 食べられる; কথ্য ら抜き 食べれる পরীক্ষায় এড়িয়ে চলুন।",
+      "target": "Dạng chuẩn đầy đủ của Nhóm 2 là 食べられる; dạng nói ら抜き 食べれる hãy tránh trong kỳ thi."
+    },
+    {
+      "source": "Potential verb সাধারণত volitional নয়; ‘চেষ্টা করে পারলাম’ প্রসঙ্গে できました ব্যবহারও স্বাভাবিক।",
+      "target": "Động từ potential thường không có ý chí; trong bối cảnh ‘đã cố gắng và làm được’ dùng できました cũng tự nhiên."
+    },
+    {
+      "source": "আমি হিরাগানা পড়তে পারি।",
+      "target": "Tôi có thể đọc hiragana."
+    },
+    {
+      "source": "এই দোকানে কার্ড ব্যবহার করা যায় না।",
+      "target": "Ở cửa hàng này không thể dùng thẻ."
+    },
+    {
+      "source": "অনুশীলন করায় ১০০ মিটার সাঁতার কাটতে পারি এখন।",
+      "target": "Nhờ luyện tập, bây giờ tôi có thể bơi 100 mét."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Sai"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Đúng"
+    },
+    {
+      "source": "কেন:",
+      "target": "Vì sao:"
+    },
+    {
+      "source": "ことができます কাঠামোয় মূল verb plain form ও object を; potential verb হলে が। দুই কাঠামো মেশাবেন না।",
+      "target": "Trong cấu trúc ことができます, động từ chính ở dạng thường và tân ngữ を; nếu là động từ potential thì が. Đừng trộn hai cấu trúc."
+    },
+    {
+      "source": "কিছু তৈরি/সম্পন্ন হওয়া, নতুন সুবিধা হওয়া, অথবা noun-রূপ কাজ পারা",
+      "target": "Cái gì được làm/hoàn thành, có tiện ích mới, hoặc có thể làm hành động dạng danh từ"
+    },
+    {
+      "source": "সক্ষমতা",
+      "target": "Khả năng"
+    },
+    {
+      "source": "N（কাজ/খেলা/ভাষা）ができます",
+      "target": "N (việc/thể thao/ngôn ngữ) ができます"
+    },
+    {
+      "source": "সম্পন্ন/নির্মাণ",
+      "target": "Hoàn thành/xây dựng"
+    },
+    {
+      "source": "N（নতুন জিনিস）ができます",
+      "target": "N (thứ mới) ができます"
+    },
+    {
+      "source": "スポーツができます বললে খেলাধুলা করতে পারা বোঝায়। আবার 橋ができました বললে সেতু তৈরি/সম্পন্ন হয়েছে। অর্থ নির্ধারণ করে noun ও প্রসঙ্গ।",
+      "target": "スポーツができます là có thể chơi thể thao. Còn 橋ができました là cầu đã được làm/hoàn thành. Danh từ và bối cảnh quyết định ý nghĩa."
+    },
+    {
+      "source": "場所でNができます বললে সেখানে নতুন কিছু তৈরি হবে: 来年、ここに病院ができます।",
+      "target": "場所でNができます là ở đó sẽ có thứ mới được làm: 来年、ここに病院ができます."
+    },
+    {
+      "source": "する-verb হলে Nができます বা Nをすることができます—দুটিই সম্ভব।",
+      "target": "Nếu là động từ する thì Nができます hoặc Nをすることができます — cả hai đều có thể."
+    },
+    {
+      "source": "আমার ছোট বোন স্কি করতে পারে।",
+      "target": "Em gái tôi có thể trượt tuyết."
+    },
+    {
+      "source": "স্টেশনের কাছে নতুন লাইব্রেরি হয়েছে।",
+      "target": "Gần ga đã có thư viện mới."
+    },
+    {
+      "source": "‘দোকান তৈরি হবে’—দোকানটি subject, তাই が; অবস্থান/গন্তব্যে に।",
+      "target": "‘Cửa hàng sẽ được làm’ — cửa hàng là chủ ngữ nên が; vị trí/đích đến là に."
+    },
+    {
+      "source": "চেষ্টা না করেও চোখে দেখা যায় / কানে শোনা যায়",
+      "target": "Thấy bằng mắt / nghe bằng tai mà không cần cố gắng"
+    },
+    {
+      "source": "দৃশ্য",
+      "target": "Cảnh"
+    },
+    {
+      "source": "শব্দ",
+      "target": "Từ vựng"
+    },
+    {
+      "source": "ইচ্ছাকৃত সক্ষমতা",
+      "target": "Khả năng có chủ ý"
+    },
+    {
+      "source": "見えます/聞こえます হলো perception: চোখ খুললেই দৃশ্য ধরা পড়ছে, কানে নিজে থেকেই শব্দ আসছে। 見られます/聞けます হলো সুযোগ বা ব্যবস্থা থাকার কারণে ইচ্ছা করে দেখা/শোনা সম্ভব।",
+      "target": "見えます/聞こえます là tri giác: mở mắt ra là cảnh vật bắt vào, âm thanh tự đến tai. 見られます/聞けます là có thể xem/nghe có chủ ý vì có cơ hội hoặc sự sắp xếp."
+    },
+    {
+      "source": "窓から海が見えます—জানালা দিয়ে সমুদ্র দৃশ্যমান। このアプリで日本のニュースが見られます—অ্যাপটি ব্যবহার করে ইচ্ছা করলে খবর দেখা যায়।",
+      "target": "窓から海が見えます — biển có thể thấy qua cửa sổ. このアプリで日本のニュースが見られます — dùng ứng dụng này nếu muốn có thể xem tin tức Nhật."
+    },
+    {
+      "source": "দৃশ্য/শব্দ が; উৎসের পরে から: 部屋から声が聞こえます。",
+      "target": "Cảnh vật/âm thanh が; sau nguồn là から: 部屋から声が聞こえます."
+    },
+    {
+      "source": "এখান থেকে ফুজি পর্বত দেখা যায়।",
+      "target": "Từ đây có thể thấy núi Phú Sĩ."
+    },
+    {
+      "source": "বাইরে থেকে শিশুদের কণ্ঠ শোনা যাচ্ছে।",
+      "target": "Từ bên ngoài nghe thấy tiếng trẻ em."
+    },
+    {
+      "source": "এই জাদুঘরে বিখ্যাত ছবি দেখা যায়/দেখার সুযোগ আছে।",
+      "target": "Ở bảo tàng này có thể xem/có cơ hội xem tranh nổi tiếng."
+    },
+    {
+      "source": "শব্দ কানে পৌঁছাচ্ছে না—তাই 聞こえません; শোনার সুযোগ/ক্ষমতা না হলে 聞けません।",
+      "target": "Âm thanh không đến tai — nên 聞こえません; nếu không có cơ hội/khả năng nghe thì 聞けません."
+    },
+    {
+      "source": "শুধু N-ই; প্রত্যাশার চেয়ে কম/সীমিত",
+      "target": "Chỉ N mà thôi; ít hơn kỳ vọng/giới hạn"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Danh từ"
+    },
+    {
+      "source": "সংখ্যা/সময়",
+      "target": "Số lượng/thời gian"
+    },
+    {
+      "source": "しか সবসময় negative predicate চায়, কিন্তু পুরো বাক্যের অর্থ affirmative ‘শুধু’। 一人しか来ませんでした = মাত্র একজন এসেছিল।",
+      "target": "しか luôn cần vị ngữ phủ định, nhưng ý nghĩa của cả câu là khẳng định ‘chỉ’. 一人しか来ませんでした = chỉ có một người đến."
+    },
+    {
+      "source": "だけ নিরপেক্ষ সীমা; しか〜ない প্রায়ই ‘এতটুকুই’ বা অপর্যাপ্ততার অনুভূতি আনে। 水だけ飲みました নিরপেক্ষ; 水しか飲みませんでした অন্য কিছু একেবারেই নয়—এই জোর দেয়।",
+      "target": "だけ là giới hạn trung lập; しか〜ない thường mang cảm giác ‘chỉ chừng này’ hoặc không đủ. 水だけ飲みました là trung lập; 水しか飲みませんでした nhấn mạnh không có gì khác hoàn toàn."
+    },
+    {
+      "source": "しか থাকলে ありません／できません／食べません ইত্যাদি negative আবশ্যক।",
+      "target": "Nếu có しか thì phủ định ありません／できません／食べません là bắt buộc."
+    },
+    {
+      "source": "মানিব্যাগে মাত্র ৫০০ ইয়েন আছে।",
+      "target": "Trong ví chỉ có 500 yên."
+    },
+    {
+      "source": "আজ মাত্র এক ঘণ্টা পড়তে পারব।",
+      "target": "Hôm nay chỉ có thể học một giờ."
+    },
+    {
+      "source": "しか-এর পরে negative; অতীত হলে 来ませんでした।",
+      "target": "Sau しか là phủ định; nếu quá khứ thì 来ませんでした."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Sự khác biệt trong nháy mắt"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Cái nào trong tình huống nào?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Dạng"
+    },
+    {
+      "source": "অর্থ",
+      "target": "Ý nghĩa"
+    },
+    {
+      "source": "উদাহরণের অনুভূতি",
+      "target": "Cảm giác của ví dụ"
+    },
+    {
+      "source": "নিজে থেকেই দৃশ্যমান",
+      "target": "Tự nó có thể thấy"
+    },
+    {
+      "source": "জানালা দিয়ে পাহাড় দেখা যায়",
+      "target": "Qua cửa sổ thấy núi"
+    },
+    {
+      "source": "দেখার সক্ষমতা/সুযোগ",
+      "target": "Khả năng/cơ hội xem"
+    },
+    {
+      "source": "অনলাইনে সিনেমা দেখা যায়",
+      "target": "Có thể xem phim trực tuyến"
+    },
+    {
+      "source": "নিরপেক্ষ ‘শুধু’",
+      "target": "‘Chỉ’ trung lập"
+    },
+    {
+      "source": "শুধু পানি নিলাম",
+      "target": "Chỉ lấy nước"
+    },
+    {
+      "source": "কঠোর সীমা/কম হওয়ার ইঙ্গিত",
+      "target": "Giới hạn cứng/gợi ý ít"
+    },
+    {
+      "source": "পানি ছাড়া কিছুই নেই",
+      "target": "Ngoài nước ra không có gì"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Hội thoại thực tế"
+    },
+    {
+      "source": "নতুন অ্যাপের সুবিধা নিয়ে কথা",
+      "target": "Nói về tiện ích của ứng dụng mới"
+    },
+    {
+      "source": "এই অ্যাপ দিয়ে কী করা যায়?",
+      "target": "Dùng ứng dụng này làm được gì?"
+    },
+    {
+      "source": "জাপানি টিভি দেখা এবং রেডিও শোনা যায়।",
+      "target": "Có thể xem TV Nhật và nghe radio."
+    },
+    {
+      "source": "ফ্রি কি?",
+      "target": "Có miễn phí không?"
+    },
+    {
+      "source": "না, বিনামূল্যের অনুষ্ঠান মাত্র তিনটি।",
+      "target": "Không, chương trình miễn phí chỉ có ba."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Luyện tập và đáp án kèm giải thích"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Trước tiên viết đáp án vào vở, sau đó nhấn vào câu hỏi để đối chiếu đáp án và lý do."
+    },
+    {
+      "source": "1. 書く-এর potential plain form বানান।",
+      "target": "1. Tạo thể potential thường của 書く."
+    },
+    {
+      "source": "2. ‘এই জানালা দিয়ে নদী দেখা যায়’—見えます ব্যবহার করুন।",
+      "target": "2. ‘Qua cửa sổ này thấy sông’ — dùng 見えます."
+    },
+    {
+      "source": "স্বতঃস্ফূর্ত দৃশ্য: 川が見えます; উৎস: 窓から।",
+      "target": "Cảnh tự phát: 川が見えます; nguồn: 窓から."
+    },
+    {
+      "source": "3. ‘আমার কাছে মাত্র ১০০০ ইয়েন আছে’ বলুন।",
+      "target": "3. Nói ‘tôi chỉ có 1000 yên’."
+    },
+    {
+      "source": "しか-এর পরে negative ありません।",
+      "target": "Sau しか là phủ định ありません."
+    },
+    {
+      "source": "4. সঠিকটি বাছুন: 日本語（を／が）話せます。",
+      "target": "4. Chọn cái đúng: 日本語（を／が）話せます."
+    },
+    {
+      "source": "Potential verb-এর object N4 standard-এ が।",
+      "target": "Tân ngữ của động từ potential theo chuẩn N4 là が."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Chìa khóa chính trong một câu"
+    },
+    {
+      "source": "‘আমি পারি’ হলে potential, ‘দৃশ্য/শব্দ নিজে আসে’ হলে 見えます／聞こえます, আর ‘এটুকু ছাড়া নয়’ হলে しか＋negative—এই তিনটি আলাদা বাক্সে ভাবুন।",
+      "target": "Nếu là ‘tôi có thể’ thì potential, nếu là ‘cảnh/âm thanh tự đến’ thì 見えます／聞こえます, còn nếu là ‘ngoài chừng này ra không’ thì しか＋phủ định — hãy nghĩ ba hộp riêng biệt này."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Tài liệu tham khảo đáng tin cậy"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Chương trình và kiểm chứng"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Bài học tiếng Việt độc lập này được tạo bằng cách kết hợp trình tự bài học của Minna no Nihongo II, phạm vi JLPT N4 chính thức và tài nguyên học tập của Japan Foundation. Ví dụ và giải thích tiếng Việt được viết mới."
+    },
+    {
+      "source": "← আগের Lesson 26",
+      "target": "← Bài trước 26"
+    },
+    {
+      "source": "〜んです：কারণ, ব্যাখ্যা ও ভদ্র অনুরোধ",
+      "target": "〜んです: lý do, giải thích và yêu cầu lịch sự"
+    },
+    {
+      "source": "পরের Lesson 28 →",
+      "target": "Bài tiếp theo 28 →"
+    },
+    {
+      "source": "〜ながら・〜し：একসঙ্গে কাজ ও একাধিক কারণ",
+      "target": "〜ながら・〜し: việc đồng thời và nhiều lý do"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Mục lục bài học"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Mục tiêu học tập"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Bảng so sánh"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Hội thoại"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Đang tải tiến độ khóa học…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · Ngữ pháp N4 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Phiên bản tự học tiếng Việt chi tiết, miễn phí cho học sinh."
+    }
+  ]
+}

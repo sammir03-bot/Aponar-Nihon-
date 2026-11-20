@@ -1,0 +1,486 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n4-grammar-lesson-46-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "跳转至主要内容"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 46 · সময় ও Keigo",
+      "target": "Lesson 46 · 时间与 Keigo"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "所有 Lesson"
+    },
+    {
+      "source": "সময় ও Keigo",
+      "target": "时间与敬语"
+    },
+    {
+      "source": "ধাপ ৫ · 46–50",
+      "target": "步骤 5 · 46–50"
+    },
+    {
+      "source": "কাজ শুরু হওয়ার ঠিক আগে, চলার ঠিক সময়, শেষ হওয়ার ঠিক পরে, বক্তার কাছে সাম্প্রতিক অতীত এবং প্রমাণভিত্তিক প্রত্যাশা।",
+      "target": "工作开始的正好之前、进行的正好时候、结束的正好之后、说话人眼中的最近过去和基于证据的预期。"
+    },
+    {
+      "source": "5টি বিস্তারিত grammar block",
+      "target": "5 个详细 grammar block"
+    },
+    {
+      "source": "16টি Japanese example",
+      "target": "16 个 Japanese example"
+    },
+    {
+      "source": "5টি ব্যাখ্যাসহ practice",
+      "target": "5 个带讲解的 practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline、mobile 和 print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "隐藏 あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "尚未完成"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ 标记完成"
+    },
+    {
+      "source": "Lesson 46 · লক্ষ্য",
+      "target": "Lesson 46 · 目标"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "学完本 Lesson 后能做到"
+    },
+    {
+      "source": "বাংলার ‘এইমাত্র’ বা ‘এখন’ Japanese-এ event-এর boundary অনুযায়ী বদলায়। 食べるところ = এখন শুরু করব, 食べているところ = মাঝখানে, 食べたところ = এইমাত্র শেষ। たばかり clock-এর exact মুহূর্ত নয়—বক্তার অনুভূতিতে ‘সাম্প্রতিক’। はず আবার জানা তথ্য থেকে expected conclusion।",
+      "target": "中文“刚刚”或“现在”在日语按 event 的 boundary 变。食べるところ = 现在要开始，食べているところ = 中间，食べたところ = 刚刚结束。たばかり 不是 clock 的 exact 时刻——是说话人感觉的“最近”。はず 则从已知信息得 expected conclusion。"
+    },
+    {
+      "source": "তিনটি ところ form দিয়ে event timeline নির্ভুলভাবে বলবেন",
+      "target": "能用三个 ところ form 准确说 event timeline"
+    },
+    {
+      "source": "たところ ও たばかり-এর objective immediacy বনাম subjective recency আলাদা করবেন",
+      "target": "能区分 たところ 和 たばかり 的 objective immediacy 与 subjective recency"
+    },
+    {
+      "source": "はずです দিয়ে evidence-based expectation বলবেন",
+      "target": "能用 はずです 说 evidence-based expectation"
+    },
+    {
+      "source": "はずがない/ないはず-এর সম্পূর্ণ ভিন্ন অর্থ বুঝবেন",
+      "target": "能理解 はずがない/ないはず 的完全不同意思"
+    },
+    {
+      "source": "ঠিক এখন কাজটি শুরু করতে যাচ্ছি—just about to",
+      "target": "正好现在要开始工作——just about to"
+    },
+    {
+      "source": "গঠন",
+      "target": "构成"
+    },
+    {
+      "source": "ধরন",
+      "target": "类型"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "例句"
+    },
+    {
+      "source": "শুরু-পূর্ব",
+      "target": "开始之前"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "详细解释"
+    },
+    {
+      "source": "কাজ এখনো শুরু হয়নি, boundary-এর ঠিক আগে। これから, 今から, ちょうど-এর সঙ্গে স্বাভাবিক।",
+      "target": "工作还没开始，在 boundary 正好之前。与 これから、今から、ちょうど 自然。"
+    },
+    {
+      "source": "Simple future これから食べます কেবল ‘এখন খাব’; 食べるところです ‘খেতে বসেছি/শুরু করার ঠিক মুহূর্তে’—তাৎক্ষণিকতা বেশি।",
+      "target": "Simple future これから食べます 只是“现在吃”；食べるところです 是“正要吃/开始的正好时刻”——即时性更强。"
+    },
+    {
+      "source": "ところ মূলত ‘স্থান’, কিন্তু এখানে সময়ের position—event timeline-এর কোন জায়গায় আছি।",
+      "target": "ところ 本是“场所”，但这里是时间的 position——在 event timeline 的哪个位置。"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "要记住的"
+    },
+    {
+      "source": "এখনই মিটিং শুরু করতে যাচ্ছি।",
+      "target": "现在正要开始会议。"
+    },
+    {
+      "source": "ঠিক এখন বাড়ি থেকে বের হওয়ার মুহূর্ত।",
+      "target": "正好现在出门的时刻。"
+    },
+    {
+      "source": "এখন দুপুরের খাবার বানাতে যাচ্ছি।",
+      "target": "现在要做午饭。"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ 错误"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ 正确"
+    },
+    {
+      "source": "কেন:",
+      "target": "为什么："
+    },
+    {
+      "source": "ところ-এর আগে plain dictionary form।",
+      "target": "ところ 前 plain dictionary form。"
+    },
+    {
+      "source": "ঠিক এই মুহূর্তে কাজের মাঝখানে—right in the middle of",
+      "target": "正好这一刻在工作中——right in the middle of"
+    },
+    {
+      "source": "মধ্যবর্তী",
+      "target": "中间"
+    },
+    {
+      "source": "Vています-এর চলমান অর্থের চেয়ে focus বেশি: ‘এই মুহূর্তেই কাজটি চলছে, এখনও শেষ হয়নি’। ফোনে status update-এ বহুল।",
+      "target": "比 Vています 的持续意思 focus 更强：“这一刻工作在进行、还没结束”。电话 status update 常用。"
+    },
+    {
+      "source": "Habitual ています-এর সঙ্গে সাধারণত নয়; 毎日勉強しているところです অস্বাভাবিক, যদি নির্দিষ্ট current phase বোঝানো না হয়।",
+      "target": "通常不与 Habitual ています 连用；毎日勉強しているところです 不自然，除非指特定 current phase。"
+    },
+    {
+      "source": "ている-এর casual contraction てるところ কথায় শোনা যায়; formal content-এ পূর্ণ form রাখুন।",
+      "target": "ている 的 casual contraction てるところ 口语可听；formal content 保留完整 form。"
+    },
+    {
+      "source": "Process-এর ভিতর: Vているところ。",
+      "target": "Process 内部：Vているところ。"
+    },
+    {
+      "source": "এখন ঠিক ওই বিষয়টি খতিয়ে দেখছি।",
+      "target": "现在正好在调查那个问题。"
+    },
+    {
+      "source": "এখন রান্নার মাঝখানে, পরে ফোন করব।",
+      "target": "现在在做饭中间，之后打电话。"
+    },
+    {
+      "source": "বিভাগীয় প্রধান এখন অতিথির সঙ্গে কথার মাঝখানে আছেন।",
+      "target": "部长现在正在和客人谈话中间。"
+    },
+    {
+      "source": "今、調べたところです。（এখনো খুঁজছি বলতে）",
+      "target": "今、調べたところです。（说还在找时）"
+    },
+    {
+      "source": "চলমান phase-এ ている; たところ হলে এইমাত্র শেষ।",
+      "target": "持续 phase 用 ている；たところ 是刚刚结束。"
+    },
+    {
+      "source": "ঠিক এইমাত্র কাজ শেষ হয়েছে—just finished",
+      "target": "正好刚刚工作结束——just finished"
+    },
+    {
+      "source": "শেষ-পরবর্তী",
+      "target": "结束之后"
+    },
+    {
+      "source": "Event boundary-এর ঠিক পরে; সময়গতভাবে খুব কাছাকাছি। 今, たった今, ちょうど clue।",
+      "target": "Event boundary 正好之后；时间上非常近。今、たった今、ちょうど 是 clue。"
+    },
+    {
+      "source": "নতুন ফল/তথ্যও বোঝাতে পারে: 今確認したところ、間違いがありました (যাচাই করে দেখলাম…)—এটি উচ্চতর extension। N4-এ immediate completion আগে ধরুন।",
+      "target": "也可表示新结果/信息：今確認したところ、間違いがありました（核实发现…）——这是更高 extension。N4 先抓 immediate completion。"
+    },
+    {
+      "source": "এক ঘণ্টা/এক বছর আগে হলে সাধারণত たところ নয়, যদি relative context-এ ‘ঠিক পরে’ বোঝানো না হয়।",
+      "target": "一小时/一年前通常不用 たところ，除非 relative context 表示“正好之后”。"
+    },
+    {
+      "source": "Immediate completion; clock-এ ‘খুব সাম্প্রতিক’।",
+      "target": "Immediate completion；clock 上“非常最近”。"
+    },
+    {
+      "source": "এইমাত্র স্টেশনে পৌঁছেছি।",
+      "target": "刚刚到车站。"
+    },
+    {
+      "source": "মিটিং এইমাত্র শেষ হয়েছে।",
+      "target": "会议刚刚结束。"
+    },
+    {
+      "source": "এইমাত্র ইমেইল পাঠিয়েছি।",
+      "target": "刚刚发了邮件。"
+    },
+    {
+      "source": "এক বছর সাধারণত immediate নয়; বক্তার subjective ‘সাম্প্রতিক’ হলে ばかり সম্ভব।",
+      "target": "一年通常不是 immediate；说话人 subjective “最近”时 ばかり 可能。"
+    },
+    {
+      "source": "বক্তার অনুভূতিতে অল্প আগে কাজ হয়েছে—just/recently",
+      "target": "说话人感觉不久前做了工作——just/recently"
+    },
+    {
+      "source": "সাম্প্রতিক",
+      "target": "最近"
+    },
+    {
+      "source": "Exact সময়ের সীমা নেই। পাঁচ মিনিট, এক সপ্তাহ, এমনকি জীবনপর্ব অনুযায়ী এক বছরও speaker-এর কাছে ‘এই তো সেদিন’ হতে পারে।",
+      "target": "没有 Exact 时间界限。五分钟、一周、甚至按人生阶段一年对 speaker 也可是“就前几天”。"
+    },
+    {
+      "source": "たところ objective immediate boundary; たばかり subjective recency। 今食べたところです = এইমাত্র শেষ; 先週食べたばかりです = গত সপ্তাহেই তো খেয়েছি।",
+      "target": "たところ 是 objective immediate boundary；たばかり 是 subjective recency。今食べたところです = 刚刚结束；先週食べたばかりです = 上周才吃的。"
+    },
+    {
+      "source": "ばかり-এর অন্য অর্থ ‘শুধুই’ (遊んでばかり) আছে; এখানে た-form＋ばかり = recently completed।",
+      "target": "ばかり 的另一意思“只”（遊んでばかり）也有；这里 た-form＋ばかり = recently completed。"
+    },
+    {
+      "source": "Time expression থাকলেও speaker judgement: 三か月前に始めたばかりです।",
+      "target": "即使有 Time expression 也是 speaker judgement：三か月前に始めたばかりです。"
+    },
+    {
+      "source": "আমি গত মাসেই এই কোম্পানিতে যোগ দিয়েছি।",
+      "target": "我上个月才加入这家公司。"
+    },
+    {
+      "source": "ফোনটি সবে কিনেছি, অথচ নষ্ট হয়ে গেছে।",
+      "target": "手机刚买，却坏了。"
+    },
+    {
+      "source": "সবে দুপুরের খাবার খেয়েছি, তাই এখনো পেট ভরা।",
+      "target": "刚吃午饭，所以还饱。"
+    },
+    {
+      "source": "সাম্প্রতিক completion-এ Vた＋ばかり।",
+      "target": "最近 completion 用 Vた＋ばかり。"
+    },
+    {
+      "source": "জানা তথ্য/যুক্তি অনুযায়ী এমন হওয়ার কথা—strong expectation",
+      "target": "按已知信息/逻辑应该这样——strong expectation"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "动词/い-A"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-形容词"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "名词"
+    },
+    {
+      "source": "でしょう অনুমান; はず evidence/plan/logic থেকে stronger ‘হওয়ার কথা’। 時刻表によると、電車は十時に来るはずです।",
+      "target": "でしょう 是推测；はず 从 evidence/plan/logic 更强“应该”。時刻表によると、電車は十時に来るはずです。"
+    },
+    {
+      "source": "Vないはず = না হওয়ার কথা। Vるはずがない = হওয়ার কোনো কথাই নেই/অসম্ভব। অবস্থান বদলালে অর্থ উল্টে যায়।",
+      "target": "Vないはず = 应该不。Vるはずがない = 根本不应该/不可能。位置变意思反。"
+    },
+    {
+      "source": "নিজের simple intention-এ はず নয়: 私は明日行くはずです অস্বাভাবিক, কারণ নিজের plan নিশ্চিত জানি—行く予定です/つもりです। তবে নিজের ওপর বাহ্যিক schedule হলে 私も参加するはずになっています ইত্যাদি সম্ভব।",
+      "target": "自己 simple intention 不用 はず：私は明日行くはずです 不自然，因为自己的 plan 确定知道——行く予定です/つもりです。但自己有外部 schedule 时 私も参加するはずになっています 等可能。"
+    },
+    {
+      "source": "Expectation ভুল হলে: 来るはずでしたが、来ませんでした।",
+      "target": "Expectation 错时：来るはずでしたが、来ませんでした。"
+    },
+    {
+      "source": "তানাকা কথা দিয়েছেন, তাই আসার কথা।",
+      "target": "田中答应了，所以应该来。"
+    },
+    {
+      "source": "আজ রবিবার, তাই ব্যাংক বন্ধ থাকার কথা।",
+      "target": "今天星期日，所以银行应该关门。"
+    },
+    {
+      "source": "চাবি টেবিলে রেখেছি, তাই সেখানেই থাকার কথা।",
+      "target": "钥匙放在桌上，所以应该在那里。"
+    },
+    {
+      "source": "এত সহজ সমস্যা ভুল করার কথা নয়।",
+      "target": "这么简单的问题不应该错。"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "一目了然的差别"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "什么情况用哪个？"
+    },
+    {
+      "source": "রূপ",
+      "target": "形式"
+    },
+    {
+      "source": "Timeline/মানসিকতা",
+      "target": "Timeline/心态"
+    },
+    {
+      "source": "শুরু হওয়ার ঠিক আগে",
+      "target": "开始正好之前"
+    },
+    {
+      "source": "ঠিক মাঝখানে",
+      "target": "正好中间"
+    },
+    {
+      "source": "শেষের ঠিক পরে",
+      "target": "结束正好之后"
+    },
+    {
+      "source": "speaker-এর কাছে সাম্প্রতিক",
+      "target": "对 speaker 最近"
+    },
+    {
+      "source": "先週/先月-ও সম্ভব",
+      "target": "先週/先月 也可能"
+    },
+    {
+      "source": "তথ্য থেকে expected",
+      "target": "从信息 expected"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "实际对话"
+    },
+    {
+      "source": "ফোনে কাজের status",
+      "target": "电话工作 status"
+    },
+    {
+      "source": "রিপোর্ট হয়ে গেছে?",
+      "target": "报告做好了吗？"
+    },
+    {
+      "source": "এখন শেষ পৃষ্ঠাটি লিখছি।",
+      "target": "现在在写最后一页。"
+    },
+    {
+      "source": "মিটিং তিনটা থেকে। সময়মতো হবে?",
+      "target": "会议从三点开始。来得及吗？"
+    },
+    {
+      "source": "জি। আর দশ মিনিটে শেষ হওয়ার কথা।",
+      "target": "来得及。还有十分钟应该结束。"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "自我检查"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice 和带解释的答案"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "先在笔记本上写答案，然后点击问题核对答案和原因。"
+    },
+    {
+      "source": "1. ‘এখনই বের হতে যাচ্ছি’ বলুন।",
+      "target": "1. 说“现在正要出门”。"
+    },
+    {
+      "source": "2. ‘এখন ঠিক খাবার খাচ্ছি’ বলুন।",
+      "target": "2. 说“现在正好在吃饭”。"
+    },
+    {
+      "source": "3. ‘এইমাত্র পৌঁছেছি’ বলুন।",
+      "target": "3. 说“刚刚到”。"
+    },
+    {
+      "source": "4. ‘সবে চাকরি শুরু করেছি’ বলুন।",
+      "target": "4. 说“刚开始工作”。"
+    },
+    {
+      "source": "5. ‘আজ দোকান খোলা থাকার কথা’ বলুন।",
+      "target": "5. 说“今天店应该开着”。"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "一句话 Master Key"
+    },
+    {
+      "source": "Event-এর আগে/মাঝে/ঠিক পরে = る／ている／た＋ところ; subjective ‘সবে’ = たばかり; জানা তথ্য থেকে ‘হওয়ার কথা’ = はず。",
+      "target": "Event 之前/中间/正好之后 = る／ている／た＋ところ；subjective “刚” = たばかり；从已知信息“应该” = はず。"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "可信参考"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "大纲与核对"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "这个独立的中文 lesson 结合 Minna no Nihongo II 的 lesson sequence、official JLPT N4 scope 和 Japan Foundation 的 learner resources 制作。例句和中文解释均为新写。"
+    },
+    {
+      "source": "← আগের Lesson 45",
+      "target": "← 上一个 Lesson 45"
+    },
+    {
+      "source": "পরের Lesson 47 →",
+      "target": "下一个 Lesson 47 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson 索引"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "学习目标"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "差别表"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "会话"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress 加载中…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "为学习者免费提供的详细中文 self-study edition。"
+    }
+  ]
+}

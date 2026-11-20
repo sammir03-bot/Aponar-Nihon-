@@ -1,0 +1,474 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ur",
+  "page": "n4-grammar-lesson-44-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "اصل مواد پر جائیں"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 44 · প্রয়োগ ও সূক্ষ্মতা",
+      "target": "Lesson 44 · اطلاق اور باریکی"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "تمام Lesson"
+    },
+    {
+      "source": "প্রয়োগ ও সূক্ষ্মতা",
+      "target": "استعمال اور نزاکت"
+    },
+    {
+      "source": "ধাপ ৪ · 41–45",
+      "target": "مرحلہ 4 · 41–45"
+    },
+    {
+      "source": "মাত্রা ছাড়ানো, কাজের গঠনগত সহজ/কঠিনতা, ইচ্ছাকৃতভাবে অবস্থা বদলানো এবং বিকল্প থেকে বেছে নেওয়া।",
+      "target": "حد سے بڑھنا، کام کی ساختی آسانی/مشکل، ارادے سے حالت بدلنا اور متبادل میں سے چننا۔"
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 تفصیلی grammar block"
+    },
+    {
+      "source": "13টি Japanese example",
+      "target": "13 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 وضاحت سمیت practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline، mobile اور print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "あ Reading چھپائیں"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "ابھی مکمل نہیں"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ مکمل کریں"
+    },
+    {
+      "source": "Lesson 44 · লক্ষ্য",
+      "target": "Lesson 44 · ہدف"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "اس Lesson کے اختتام پر جو کر سکیں گے"
+    },
+    {
+      "source": "Lesson 44 চারটি দৈনন্দিন judgement শেখায়: ‘বেশি হয়ে গেছে’, ‘করা সহজ/কঠিন’, ‘এটাকে এমন করি’, এবং ‘এটাই নেব’। সবগুলোর আগে stem ঠিক করতে পারলেই conjugation সহজ।",
+      "target": "Lesson 44 چار روزمرہ judgement سکھاتا ہے: 'زیادہ ہو گیا ہے'، 'کرنا آسان/مشکل ہے'، 'اسے ایسا کرتا ہوں'، اور 'یہی لوں گا'۔ سب سے پہلے stem ٹھیک کر سکنے پر conjugation آسان ہے۔"
+    },
+    {
+      "source": "verb/い-A/な-A stem-এর সঙ্গে すぎます জুড়বেন",
+      "target": "verb/い-A/な-A stem کے ساتھ すぎます جوڑیں گے"
+    },
+    {
+      "source": "やすい/にくい দিয়ে action-এর সহজতা/কঠিনতা বলবেন",
+      "target": "やすい/にくい سے action کی آسانی/مشکل کہیں گے"
+    },
+    {
+      "source": "する দিয়ে agent-caused state change প্রকাশ করবেন",
+      "target": "する سے agent-caused state change ظاہر کریں گے"
+    },
+    {
+      "source": "Nにします দিয়ে menu/option নির্বাচন করবেন",
+      "target": "Nにします سے menu/option کا انتخاب کریں گے"
+    },
+    {
+      "source": "স্বাভাবিক/কাম্য সীমার চেয়ে অতিরিক্ত",
+      "target": "فطری/مطلوب حد سے زیادہ"
+    },
+    {
+      "source": "গঠন",
+      "target": "ساخت"
+    },
+    {
+      "source": "ধরন",
+      "target": "قسم"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "مثال"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "فعل"
+    },
+    {
+      "source": "Vます থেকে ます বাদ＋すぎる",
+      "target": "Vます سے ます حذف＋すぎる"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-صفت"
+    },
+    {
+      "source": "শেষ い বাদ＋すぎる",
+      "target": "آخری い حذف＋すぎる"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-صفت"
+    },
+    {
+      "source": "食べなさすぎます／簡単ではなさすぎる (কম ব্যবহৃত)",
+      "target": "食べなさすぎます／簡単ではなさすぎる (کم استعمال)"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "تفصیلی وضاحت"
+    },
+    {
+      "source": "すぎる নিজে Group 2 verb; tense/negative শেষে: 食べすぎました, 高すぎません, 静かすぎて…。",
+      "target": "すぎる خود Group 2 verb ہے; tense/negative آخر میں: 食べすぎました، 高すぎません، 静かすぎて…۔"
+    },
+    {
+      "source": "সাধারণত negative evaluation—মাত্রা সমস্যা করছে। কিন্তু きれいすぎる ‘অবিশ্বাস্য সুন্দর’ প্রশংসামূলক hyperbole-ও হতে পারে।",
+      "target": "عام طور پر negative evaluation—حد مسئلہ کر رہی ہے۔ لیکن きれいすぎる 'ناقابل یقین خوبصورت' تعریفی hyperbole بھی ہو سکتا ہے۔"
+    },
+    {
+      "source": "すぎて consequence যুক্ত হয়: 飲みすぎて、頭が痛いです।",
+      "target": "すぎて consequence جوڑتا ہے: 飲みすぎて、頭が痛いです۔"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "جو یاد رکھیں"
+    },
+    {
+      "source": "Verb て-form নয়: 食べてすぎる ✕; 食べすぎる ✓।",
+      "target": "Verb て-form نہیں: 食べてすぎる ✕; 食べすぎる ✓۔"
+    },
+    {
+      "source": "গতকাল বেশি কফি খেয়েছি।",
+      "target": "کل زیادہ کافی پی ہے۔"
+    },
+    {
+      "source": "ব্যাগটি অতিরিক্ত ভারী, তাই নিতে পারছি না।",
+      "target": "بیگ حد سے بھاری ہے، اس لیے نہیں لے پا رہا۔"
+    },
+    {
+      "source": "শহরটি রাতে অতিরিক্ত নীরব।",
+      "target": "شہر رات کو حد سے خاموش ہے۔"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ غلط"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ صحیح"
+    },
+    {
+      "source": "কেন:",
+      "target": "کیوں:"
+    },
+    {
+      "source": "い-বিশেষণের শেষ い বাদ＋すぎます।",
+      "target": "い-صفت کا آخری い حذف＋すぎます۔"
+    },
+    {
+      "source": "কাজটি করা সহজ / করা কঠিন—বস্তু বা পরিস্থিতির বৈশিষ্ট্য",
+      "target": "کام کرنا آسان / کرنا مشکل—چیز یا صورتحال کی خصوصیت"
+    },
+    {
+      "source": "সহজ",
+      "target": "آسان"
+    },
+    {
+      "source": "কঠিন",
+      "target": "مشکل"
+    },
+    {
+      "source": "い-বিশেষণের মতো",
+      "target": "い-صفت جیسا"
+    },
+    {
+      "source": "やすい/にくい সাধারণত action-এর objective ease/difficulty বা tendency। このペンは書きやすい = কলমটির design/feel লিখতে সহজ। 私は漢字が書けません = আমার ability সমস্যা—আলাদা।",
+      "target": "やすい/にくい عام طور پر action کی objective ease/difficulty یا tendency ہے۔ このペンは書きやすい = قلم کا design/feel لکھنے میں آسان ہے۔ 私は漢字が書けません = میری ability کا مسئلہ ہے—الگ ہے۔"
+    },
+    {
+      "source": "ভুল/পরিবর্তনের প্রবণতাও: このコップは割れやすい = সহজে ভেঙে যায়। 忘れやすい = সহজে ভুলে যাওয়ার tendency।",
+      "target": "غلطی/تبدیلی کا رجحان بھی: このコップは割れやすい = آسانی سے ٹوٹ جاتا ہے۔ 忘れやすい = آسانی سے بھول جانے کی tendency۔"
+    },
+    {
+      "source": "Mental unwillingness-এর にくい nuance থাকতে পারে (言いにくい = বলা awkward), কিন্তু impossible নয়।",
+      "target": "Mental unwillingness کا にくい nuance ہو سکتا ہے (言いにくい = کہنا awkward)، لیکن impossible نہیں۔"
+    },
+    {
+      "source": "এই পাঠ্যবইয়ের ব্যাখ্যা বোঝা সহজ।",
+      "target": "اس درسی کتاب کی وضاحت سمجھنا آسان ہے۔"
+    },
+    {
+      "source": "জুতাটি হালকা, তাই হাঁটা সহজ।",
+      "target": "جوتا ہلکا ہے، اس لیے چلنا آسان ہے۔"
+    },
+    {
+      "source": "কানজিটির আকার মিল বলে মনে রাখা কঠিন।",
+      "target": "کانجی کی شکل ملتی ہے اس لیے یاد رکھنا مشکل ہے۔"
+    },
+    {
+      "source": "জরুরি বিষয় সহজে ভুলে যাই, তাই নোট করি।",
+      "target": "ضروری بات آسانی سے بھول جاتا ہوں، اس لیے نوٹ کرتا ہوں۔"
+    },
+    {
+      "source": "読みます-এর stem 読み＋やすい।",
+      "target": "読みます کا stem 読み＋やすい۔"
+    },
+    {
+      "source": "কেউ ইচ্ছাকৃতভাবে জিনিসের অবস্থা/গুণ বদলায়",
+      "target": "کوئی ارادے سے چیز کی حالت/خوبی بدلتا ہے"
+    },
+    {
+      "source": "শেষ い→く＋します",
+      "target": "آخری い→く＋します"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "اسم"
+    },
+    {
+      "source": "なる-তে অবস্থা নিজে/স্বাভাবিকভাবে বদলায়: 部屋が明るくなりました। する-তে agent বদলায়: 電気をつけて、部屋を明るくしました।",
+      "target": "なる میں حالت خود/فطری طور پر بدلتی ہے: 部屋が明るくなりました۔ する میں agent بدلتا ہے: 電気をつけて、部屋を明るくしました۔"
+    },
+    {
+      "source": "Object を: 音を小さくしてください = শব্দ ছোট/কম করুন। な-A/N-এ に: 部屋をきれいにします, 会議室を禁煙にします।",
+      "target": "Object を: 音を小さくしてください = آواز چھوٹی/کم کریں۔ な-A/N میں に: 部屋をきれいにします، 会議室を禁煙にします۔"
+    },
+    {
+      "source": "Adverbial く/に＋する structure; する-এর tense শেষে।",
+      "target": "Adverbial く/に＋する structure; する کا tense آخر میں۔"
+    },
+    {
+      "source": "নিজে বদলায় が＋なる; কেউ বদলায় を＋する।",
+      "target": "خود بدلے تو が＋なる; کوئی بدلے تو を＋する۔"
+    },
+    {
+      "source": "অক্ষর আরেকটু বড় করুন।",
+      "target": "حروف ذرا اور بڑے کریں۔"
+    },
+    {
+      "source": "ঘরটি পরিষ্কার করেছি।",
+      "target": "کمرہ صاف کیا ہے۔"
+    },
+    {
+      "source": "এই বাক্সটিকে বইয়ের তাক বানাব।",
+      "target": "اس باکس کو کتابوں کی الماری بناؤں گا۔"
+    },
+    {
+      "source": "い-বিশেষণ 小さい→小さく＋する।",
+      "target": "い-صفت 小さい→小さく＋する۔"
+    },
+    {
+      "source": "Nにします（পছন্দ নির্বাচন）",
+      "target": "Nにします（پسند کا انتخاب）"
+    },
+    {
+      "source": "একাধিক option থেকে N বেছে নেওয়া—‘আমি N নেব/ঠিক করলাম’",
+      "target": "متعدد option میں سے N چننا—'میں N لوں گا/طے کر لیا'"
+    },
+    {
+      "source": "রেস্তোরাঁ, কেনাকাটা, রং/তারিখ/পথ—option বেছে নেওয়ার বহুল রূপ। コーヒーにします = কফিই নেব।",
+      "target": "ریسٹورنٹ، خریداری، رنگ/تاریخ/راستہ—option چننے کی کثرت والی صورت۔ コーヒーにします = کافی ہی لوں گا۔"
+    },
+    {
+      "source": "決めます স্পষ্ট ‘সিদ্ধান্ত নিই’; Nにします কথোপকথনে selection-এর ফল সহজে বলে। Question: 何にしますか = কী নেবেন/কোনটি ঠিক করবেন?",
+      "target": "決めます واضح 'فیصلہ کرتا ہوں'; Nにします گفتگو میں selection کا نتیجہ آسانی سے کہتا ہے۔ Question: 何にしますか = کیا لیں گے/کون سا طے کریں گے؟"
+    },
+    {
+      "source": "Nにします state-change অর্থও হতে পারে; context object/option দেখে ধরুন: 部屋を教室にします = ঘরকে শ্রেণিকক্ষ বানাই; 飲み物はお茶にします = পানীয় হিসেবে চা নেব।",
+      "target": "Nにします state-change معنی بھی ہو سکتا ہے; context object/option دیکھ کر پکڑیں: 部屋を教室にします = کمرے کو کلاس روم بناتا ہوں; 飲み物はお茶にします = مشروب کے طور پر چائے لوں گا۔"
+    },
+    {
+      "source": "আমি কারি নেব।",
+      "target": "میں کری لوں گا۔"
+    },
+    {
+      "source": "মিটিং শুক্রবার ঠিক করি।",
+      "target": "میٹنگ جمعے کو طے کرتا ہوں۔"
+    },
+    {
+      "source": "রং হিসেবে নীল বেছে নিয়েছি।",
+      "target": "رنگ کے طور پر نیلا چن لیا ہے۔"
+    },
+    {
+      "source": "Option নির্বাচন particle に; を＋する অন্য action বোঝাবে।",
+      "target": "Option انتخاب کا particle に; を＋する دوسرا action سمجھائے گا۔"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "ایک نظر میں فرق"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "کس صورتحال میں کون سا؟"
+    },
+    {
+      "source": "রূপ",
+      "target": "صورت"
+    },
+    {
+      "source": "কেন্দ্র",
+      "target": "مرکز"
+    },
+    {
+      "source": "সীমা ছাড়ানো",
+      "target": "حد سے بڑھنا"
+    },
+    {
+      "source": "অতিরিক্ত দামি",
+      "target": "حد سے مہنگا"
+    },
+    {
+      "source": "কাজের সহজতা",
+      "target": "کام کی آسانی"
+    },
+    {
+      "source": "পড়া সহজ",
+      "target": "پڑھنا آسان"
+    },
+    {
+      "source": "agent অবস্থা বদলায়",
+      "target": "agent حالت بدلتا ہے"
+    },
+    {
+      "source": "ঘর উজ্জ্বল করি",
+      "target": "کمرہ روشن کرتا ہوں"
+    },
+    {
+      "source": "option নির্বাচন",
+      "target": "option انتخاب"
+    },
+    {
+      "source": "কফি নিই",
+      "target": "کافی لیتا ہوں"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "حقیقی بات چیت"
+    },
+    {
+      "source": "রেস্তোরাঁয় অর্ডার",
+      "target": "ریسٹورنٹ میں آرڈر"
+    },
+    {
+      "source": "কী নেবেন?",
+      "target": "کیا لیں گے؟"
+    },
+    {
+      "source": "এই কারি অতিরিক্ত ঝাল কি?",
+      "target": "یہ کری حد سے مرچ والی ہے کیا؟"
+    },
+    {
+      "source": "না। খেতে সহজ/হালকা।",
+      "target": "نہیں۔ کھانے میں آسان/ہلکی ہے۔"
+    },
+    {
+      "source": "তাহলে কারি নেব। ভাত কম দিন।",
+      "target": "تو کری لوں گا۔ چاول کم دیں۔"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "خود جانچیں"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice اور وضاحت سمیت جواب"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "پہلے کاپی میں جواب لکھیں، پھر سوال دبا کر جواب اور وجہ ملا لیں۔"
+    },
+    {
+      "source": "1. ‘গতকাল বেশি খেয়েছি’ বলুন।",
+      "target": "1. 'کل زیادہ کھایا ہے' کہیں۔"
+    },
+    {
+      "source": "2. ‘এই কলম দিয়ে লেখা সহজ’ বলুন।",
+      "target": "2. 'اس قلم سے لکھنا آسان ہے' کہیں۔"
+    },
+    {
+      "source": "3. ‘শব্দ একটু কম করুন’ বলুন।",
+      "target": "3. 'آواز ذرا کم کریں' کہیں۔"
+    },
+    {
+      "source": "4. ‘আমি চা নেব’ বলুন।",
+      "target": "4. 'میں چائے لوں گا' کہیں۔"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "ایک جملے میں Master Key"
+    },
+    {
+      "source": "মাত্রা বিচার → すぎる; action-এর designগত ease → やすい/にくい; agent বদলালে Aく/N・なAにする; option বাছলে Nにする।",
+      "target": "حد کا جائزہ → すぎる; action کی design والی ease → やすい/にくい; agent بدلے تو Aく/N・なAにする; option چننے پر Nにする۔"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "قابل اعتماد حوالہ"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "نصاب اور تصدیق"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "یہ آزاد اردو lesson Minna no Nihongo II کی lesson sequence، official JLPT N4 scope اور Japan Foundation کے learner resources ملا کر بنایا گیا۔ مثالیں اور اردو وضاحت نئے سرے سے لکھی گئی۔"
+    },
+    {
+      "source": "← আগের Lesson 43",
+      "target": "← پچھلا Lesson 43"
+    },
+    {
+      "source": "পরের Lesson 45 →",
+      "target": "اگلا Lesson 45 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson فہرست"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "سیکھنے کا ہدف"
+    },
+    {
+      "source": "4. Nにします（পছন্দ নির্বাচন）",
+      "target": "4. Nにします（پسند کا انتخاب）"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "فرق کی جدول"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "گفتگو"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress لوڈ ہو رہا ہے…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "طلبہ کے لیے مفت، تفصیلی اردو self-study edition۔"
+    }
+  ]
+}

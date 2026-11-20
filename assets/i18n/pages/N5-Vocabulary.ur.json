@@ -1,0 +1,58 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ur",
+  "page": "N5-Vocabulary",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback. Local NLLB-200 recovery on 2026-11-19 for strings Gemini repeatedly failed validation on; NLLB output passed the same residue/digit validation.",
+  "entries": [
+    {
+      "source": "N5 Vocabulary | আপনার নিহোন",
+      "target": "N5 Vocabulary | آپکا نیہون"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "N5 Vocabulary এর serial lesson list. প্রতিটি page SEO-friendly, mobile-friendly, and PDF-free.",
+      "target": "N5 Vocabulary کی سیریل لیسن لسٹ۔ ہر page SEO-friendly, mobile-friendly اور PDF-free ہے۔"
+    },
+    {
+      "source": "মোবাইল-ফ্রেন্ডলি",
+      "target": "موبائل دوستانہ"
+    },
+    {
+      "source": "সার্চ রেডি",
+      "target": "سرچ ریڈی"
+    },
+    {
+      "source": "প্রগ্রেস ট্র্যাকিং",
+      "target": "پروگریس ٹریکنگ"
+    },
+    {
+      "source": "N5 Vocabulary এর সব lessons/entries এখানে serial order-এ সাজানো আছে। Homepage design language বজায় রেখে PDF-based system থেকে HTML-based learning page-এ migrate করা হয়েছে।",
+      "target": "N5 Vocabulary کے تمام lessons/entries یہاں serial order میں ترتیب دیے گئے ہیں۔ Homepage design language کو برقرار رکھتے ہوئے PDF-based system سے HTML-based learning page پر migrate کیا گیا ہے۔"
+    },
+    {
+      "source": "Lesson number বা topic লিখে দ্রুত filter করুন।",
+      "target": "Lesson number یا topic لکھ کر تیزی سے filter کریں۔"
+    },
+    {
+      "source": "একটি lesson/card এ ক্লিক করলে detail page খুলবে।",
+      "target": "کسی lesson/card پر کلک کرنے سے detail page کھل جائے گا۔"
+    },
+    {
+      "source": "N5 Vocabulary এর structured lesson page. PDF এর বদলে student-friendly HTML format.",
+      "target": "N5 Vocabulary کا structured lesson page۔ PDF کے بجائے student-friendly HTML format۔"
+    },
+    {
+      "source": "১২+ শব্দ",
+      "target": "12+ الفاظ"
+    },
+    {
+      "source": "বাংলা ভাষায় জাপানি শেখার HTML learning system",
+      "target": "بنگالی زبان میں جاپانی سیکھنے کا HTML learning system"
+    }
+  ]
+}

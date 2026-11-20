@@ -1,0 +1,490 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n4-grammar-lesson-37-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 37: Passive Form：受け身形 পুরোপুরি পরিষ্কার | N4 Grammar",
+      "target": "Lesson 37: Passive Form：受け身形 完全清晰 | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "跳转至主要内容"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 37 · জটিল বাক্য",
+      "target": "Lesson 37 · 复杂句"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "所有 Lesson"
+    },
+    {
+      "source": "জটিল বাক্য",
+      "target": "复杂句型"
+    },
+    {
+      "source": "ধাপ ৩ · 36–40",
+      "target": "步骤 3 · 36–40"
+    },
+    {
+      "source": "Passive Form：受け身形 পুরোপুরি পরিষ্কার",
+      "target": "Passive Form：受け身形 完全清晰"
+    },
+    {
+      "source": "কাজ-গ্রহণকারীকে topic করা, ক্ষতি/বিরক্তির passive, possession বজায় রাখা এবং ঐতিহাসিক/বস্তুনিষ্ঠ passive।",
+      "target": "把动作接受者作 topic、损害/困扰的 passive、保持 possession 和历史/客观 passive。"
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 个详细 grammar block"
+    },
+    {
+      "source": "12টি Japanese example",
+      "target": "12 个 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 个带解释的 practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline、mobile 和 print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "隐藏 あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "尚未完成"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ 标记完成"
+    },
+    {
+      "source": "Lesson 37 · লক্ষ্য",
+      "target": "Lesson 37 · 目标"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "学完本 Lesson 后能做到"
+    },
+    {
+      "source": "Passive শুধু active বাক্য উল্টানো নয়। জাপানিতে বক্তা কার দৃষ্টিকোণকে সামনে আনছেন এবং ঘটনাটি তার ওপর কী প্রভাব ফেলেছে—এটাই মূল। 私は先生にほめられました-তে ‘আমি’ প্রশংসার প্রাপক; 私は雨に降られました-তে বৃষ্টি আমার জন্য বিরক্তিকর ঘটনা।",
+      "target": "Passive 不只是把 active 句倒过来。日语中说话人把谁的视角放前面、事件对他有什么影响——这是核心。私は先生にほめられました 中“我”是表扬的接受者；私は雨に降られました 中雨对我是困扰事件。"
+    },
+    {
+      "source": "তিন verb group-এর passive form তৈরি করবেন",
+      "target": "能造三个 verb group 的 passive form"
+    },
+    {
+      "source": "agent に এবং recipient/topic は-এর ভূমিকা বুঝবেন",
+      "target": "能理解 agent に 和 recipient/topic は 的作用"
+    },
+    {
+      "source": "direct passive ও adversity passive আলাদা করবেন",
+      "target": "能区分 direct passive 和 adversity passive"
+    },
+    {
+      "source": "সৃষ্টি/আবিষ্কারের agent-এ によって ব্যবহার করবেন",
+      "target": "能对创造/发明的 agent 用 によって"
+    },
+    {
+      "source": "受け身形ের গঠন",
+      "target": "受け身形 的构成"
+    },
+    {
+      "source": "‘করা হয়/কারো দ্বারা প্রভাবিত হওয়া’ verb form",
+      "target": "“被做/受某人影响”的 verb form"
+    },
+    {
+      "source": "গঠন",
+      "target": "构成"
+    },
+    {
+      "source": "ধরন",
+      "target": "类型"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "例句"
+    },
+    {
+      "source": "শেষ う-row → あ-row＋れる",
+      "target": "末尾 う-row → あ-row＋れる"
+    },
+    {
+      "source": "る বাদ＋られる",
+      "target": "去掉 る＋られる"
+    },
+    {
+      "source": "অনিয়মিত",
+      "target": "不规则"
+    },
+    {
+      "source": "ভদ্র",
+      "target": "礼貌"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "详细解释"
+    },
+    {
+      "source": "Group 2 passive ও potential একই রূপ: 食べられる। Context/particle অর্থ নির্ধারণ করে: 魚が食べられます = মাছ খেতে পারি; 魚は猫に食べられました = মাছটি বিড়াল খেয়েছে।",
+      "target": "Group 2 passive 和 potential 同形：食べられる。Context/particle 决定意思：魚が食べられます = 能吃鱼；魚は猫に食べられました = 鱼被猫吃了。"
+    },
+    {
+      "source": "Passive verb Group 2-এর মতো conjugate হয়: 書かれない, 書かれた, 書かれて。",
+      "target": "Passive verb 像 Group 2 一样 conjugate：書かれない、書かれた、書かれて。"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "要记住的"
+    },
+    {
+      "source": "買う→買あれる নয়; う→わ: 買われる।",
+      "target": "買う→買あれる 不对；う→わ：買われる。"
+    },
+    {
+      "source": "প্রশংসা করা → প্রশংসিত হওয়া",
+      "target": "表扬 → 被表扬"
+    },
+    {
+      "source": "ডাকা → ডাকা হওয়া",
+      "target": "叫 → 被叫"
+    },
+    {
+      "source": "সতর্ক করা → সতর্ক করা হওয়া",
+      "target": "警告 → 被警告"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ 错误"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ 正确"
+    },
+    {
+      "source": "কেন:",
+      "target": "为什么："
+    },
+    {
+      "source": "Group 1: dictionary ending く→か＋れる; ます-stem নয়।",
+      "target": "Group 1：dictionary ending く→か＋れる；不是 ます-stem。"
+    },
+    {
+      "source": "কাজের সরাসরি প্রাপককে topic/subject করা",
+      "target": "把工作的直接接受者作 topic/subject"
+    },
+    {
+      "source": "Active-এর object B passive-এ は/が হয়ে সামনে আসে; agent A সাধারণত に। বক্তা B-এর দৃষ্টিকোণ থেকে ঘটনা বলেন।",
+      "target": "Active 的 object B 在 passive 变 は/が 到前面；agent A 通常 に。说话人从 B 的视角说事件。"
+    },
+    {
+      "source": "ইতিবাচক ঘটনাও passive হয়: 私は先生にほめられました = শিক্ষক আমাকে প্রশংসা করেছেন। তাই passive মানেই দুঃখ নয়।",
+      "target": "积极事件也用 passive：私は先生にほめられました = 老师表扬了我。所以 passive 不等于悲伤。"
+    },
+    {
+      "source": "Agent সাধারণ/অজানা হলে বাদ: この歌は世界中で歌われています = গানটি বিশ্বজুড়ে গাওয়া হয়।",
+      "target": "Agent 一般/未知时省略：この歌は世界中で歌われています = 这首歌在全世界被唱。"
+    },
+    {
+      "source": "কাজকারী に, কাজের প্রাপক は/が।",
+      "target": "做事者 に，工作的接受者 は/が。"
+    },
+    {
+      "source": "বিভাগীয় প্রধান আমাকে মিটিংয়ে আমন্ত্রণ করেছেন।",
+      "target": "部长邀请我参加会议。"
+    },
+    {
+      "source": "ছোট ভাই মায়ের বকা খেয়েছে।",
+      "target": "弟弟被妈妈骂了。"
+    },
+    {
+      "source": "এই গানটি অনেক মানুষের ভালোবাসা পায়।",
+      "target": "这首歌受到很多人喜爱。"
+    },
+    {
+      "source": "Passive agent সাধারণত に; を নয়।",
+      "target": "Passive agent 通常 に；不用 を。"
+    },
+    {
+      "source": "অন্যের কাজ/ঘটনায় বক্তা ক্ষতি, বিরক্তি বা অসুবিধা ভোগ করেন",
+      "target": "因别人的工作/事件说话人遭受损害、困扰或不便"
+    },
+    {
+      "source": "অন্যের কাজ",
+      "target": "别人的工作"
+    },
+    {
+      "source": "প্রাকৃতিক ঘটনা",
+      "target": "自然事件"
+    },
+    {
+      "source": "Japanese adversity passive-এ active object-এর মালিক topic হয়, কিন্তু body-part/possessed object を রেখেই বলা হয়: 私は犬に手をかまれました। 手は犬に… বললে ব্যক্তিগত ক্ষতির perspective কমে।",
+      "target": "Japanese adversity passive 中 active object 的所有者作 topic，但保留 body-part/possessed object を 说：私は犬に手をかまれました。说 手は犬に… 个人损害的 perspective 减弱。"
+    },
+    {
+      "source": "Intransitive verb-ও adversity passive হয়: 友達に来られて、勉強できませんでした = বন্ধু এসে পড়ায় পড়তে পারিনি। বাংলায় সরাসরি passive না হলেও জাপানিতে ভুক্তভোগীর দৃষ্টিভঙ্গি।",
+      "target": "Intransitive verb 也可 adversity passive：友達に来られて、勉強できませんでした = 朋友来了没法学习。中文虽不直接 passive，日语是受害者的视角。"
+    },
+    {
+      "source": "সবসময় নাটকীয় ক্ষতি নয়; context অসুবিধা বা অপ্রত্যাশিত প্রভাব দেখায়।",
+      "target": "不总是戏剧性损害；context 显示不便或意外影响。"
+    },
+    {
+      "source": "Possession আলাদা করবেন না: 私は弟にケーキを食べられました।",
+      "target": "不要分开 Possession：私は弟にケーキを食べられました。"
+    },
+    {
+      "source": "Natural event: 雨に降られる একটি fixed, বহুল ব্যবহৃত pattern।",
+      "target": "Natural event：雨に降られる 是 fixed、常用 pattern。"
+    },
+    {
+      "source": "ট্রেনে পাশের লোক আমার পায়ে পা দিয়েছেন।",
+      "target": "电车里旁边的人踩了我的脚。"
+    },
+    {
+      "source": "ছোট ভাই আমার জরুরি/প্রিয় কেকটি খেয়ে ফেলেছে।",
+      "target": "弟弟把我重要/心爱的蛋糕吃掉了。"
+    },
+    {
+      "source": "ফেরার পথে বৃষ্টিতে পড়েছিলাম।",
+      "target": "回去路上淋了雨。"
+    },
+    {
+      "source": "ক্ষতিগ্রস্ত ব্যক্তি topic 私は; নিজের body part を।",
+      "target": "受害者 topic 私は；自己的 body part を。"
+    },
+    {
+      "source": "বস্তুনিষ্ঠ passive ও Nによって",
+      "target": "客观 passive 和 Nによって"
+    },
+    {
+      "source": "নির্মাণ, আবিষ্কার, রচনা বা ইতিহাসে কাজ/ফলকে সামনে আনা",
+      "target": "在建造、发明、创作或历史中把工作/结果放前面"
+    },
+    {
+      "source": "নির্মাণ",
+      "target": "建造"
+    },
+    {
+      "source": "স্রষ্টা/আবিষ্কারক",
+      "target": "创造者/发明者"
+    },
+    {
+      "source": "বস্তু, ভবন, বই বা ধারণা topic হলে passive স্বাভাবিক; কে করেছেন তা গৌণ বা ঐতিহাসিক তথ্য।",
+      "target": "物品、建筑、书或想法作 topic 时 passive 自然；谁做的次要或是历史信息。"
+    },
+    {
+      "source": "সৃষ্টি/আবিষ্কার/রচনা/নকশায় agent-এর পরে によって বেশি formal ও উপযুক্ত: 書かれる, 発明される, 建てられる, 設計される। সাধারণ interpersonal action-এ に যথেষ্ট।",
+      "target": "创造/发明/创作/设计时 agent 后 によって 更 formal 合适：書かれる、発明される、建てられる、設計される。一般 interpersonal action 用 に 足够。"
+    },
+    {
+      "source": "উপাদান/উৎস বোঝাতে から/で আলাদা; agent ব্যক্তি/গোষ্ঠী হলে によって।",
+      "target": "材料/来源用 から/で 另分；agent 是人/团体用 によって。"
+    },
+    {
+      "source": "Personによって = by; time-এর に-এর সঙ্গে গুলাবেন না।",
+      "target": "Personによって = by；不要与时间的 に 混淆。"
+    },
+    {
+      "source": "এই সেতু একশ বছর আগে নির্মিত হয়েছিল।",
+      "target": "这座桥一百年前建成了。"
+    },
+    {
+      "source": "গেঞ্জির কাহিনি মুরাসাকি শিকিবু রচনা করেছেন।",
+      "target": "源氏物语是紫式部创作的。"
+    },
+    {
+      "source": "এই পণ্য জাপানে তৈরি হয়।",
+      "target": "这个产品在日本制造。"
+    },
+    {
+      "source": "ঐতিহাসিক/রচনার agent-এ によって অধিক স্বাভাবিক।",
+      "target": "历史/创作的 agent 用 によって 更自然。"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "一目了然的差别"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "什么情况用哪个？"
+    },
+    {
+      "source": "Agent/বাকি অংশ",
+      "target": "Agent/剩余部分"
+    },
+    {
+      "source": "কাজের সরাসরি প্রাপক",
+      "target": "工作的直接接受者"
+    },
+    {
+      "source": "ক্ষতিগ্রস্ত ব্যক্তি",
+      "target": "受害者"
+    },
+    {
+      "source": "Agent に＋নিজের বস্তু を",
+      "target": "Agent に＋自己的物品 を"
+    },
+    {
+      "source": "বস্তু/কাজ/ইতিহাস",
+      "target": "物品/工作/历史"
+    },
+    {
+      "source": "স্রষ্টা によって বা agent বাদ",
+      "target": "创造者 によって 或省略 agent"
+    },
+    {
+      "source": "সক্ষম ব্যক্তি/বস্তু",
+      "target": "能做到的人/物"
+    },
+    {
+      "source": "Object が; agent নেই",
+      "target": "Object が；没有 agent"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "实际对话"
+    },
+    {
+      "source": "হারানো ছাতা",
+      "target": "丢失的伞"
+    },
+    {
+      "source": "কী হয়েছে?",
+      "target": "怎么了？"
+    },
+    {
+      "source": "স্টেশনে কেউ আমার ছাতা নিয়ে গেছে।",
+      "target": "在车站有人拿走了我的伞。"
+    },
+    {
+      "source": "খারাপ হয়েছে। বৃষ্টিতেও পড়েননি তো?",
+      "target": "太糟了。没淋雨吧？"
+    },
+    {
+      "source": "হ্যাঁ। বন্ধু গাড়িতে পৌঁছে দিয়েছে বলে সমস্যা হয়নি।",
+      "target": "没有。朋友开车送我所以没问题。"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "自我检查"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice 和带解释的答案"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "先在笔记本上写答案，然后点击问题核对答案和原因。"
+    },
+    {
+      "source": "1. 書く-এর passive form বানান।",
+      "target": "1. 造 書く 的 passive form。"
+    },
+    {
+      "source": "2. Active: 先生が私をほめました—passive করুন।",
+      "target": "2. Active：先生が私をほめました——改 passive。"
+    },
+    {
+      "source": "3. ‘কুকুর আমার হাতে কামড়েছে’—adversity passive বলুন।",
+      "target": "3. “狗咬了我的手”——说 adversity passive。"
+    },
+    {
+      "source": "ভুক্তভোগী は, agent に, body part を।",
+      "target": "受害者 は，agent に，body part を。"
+    },
+    {
+      "source": "4. ‘এই ভবন বিখ্যাত স্থপতি দ্বারা নকশা করা’ বলুন।",
+      "target": "4. 说“这座建筑由著名建筑师设计”。"
+    },
+    {
+      "source": "স্রষ্টা/নকশাকারী＋によって＋passive।",
+      "target": "创造者/设计者＋によって＋passive。"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "一句话 Master Key"
+    },
+    {
+      "source": "Passive form বানানোর আগে perspective ঠিক করুন: সরাসরি প্রাপক, ক্ষতিগ্রস্ত মালিক, না কাজ/বস্তু? তারপর agent に/によって এবং নিজের বস্তু を বসান।",
+      "target": "造 Passive form 前先定 perspective：直接接受者、受害所有者，还是工作/物品？然后放 agent に/によって 和自己的物品 を。"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "可信参考"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "大纲与核对"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "这个独立的中文 lesson 结合 Minna no Nihongo II 的 lesson sequence、official JLPT N4 scope 和 Japan Foundation 的 learner resources 制作。例句和中文解释均为新写。"
+    },
+    {
+      "source": "← আগের Lesson 36",
+      "target": "← 上一个 Lesson 36"
+    },
+    {
+      "source": "〜ように：লক্ষ্য, পরিবর্তন ও নিয়মিত চেষ্টা",
+      "target": "〜ように：目标、变化与日常努力"
+    },
+    {
+      "source": "পরের Lesson 38 →",
+      "target": "下一个 Lesson 38 →"
+    },
+    {
+      "source": "Nominalizer の：কাজকে বিশেষ্য বানানো",
+      "target": "Nominalizer の：把工作变名词"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson 索引"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "学习目标"
+    },
+    {
+      "source": "1. 受け身形ের গঠন",
+      "target": "1. 受け身形 的构成"
+    },
+    {
+      "source": "4. বস্তুনিষ্ঠ passive ও Nによって",
+      "target": "4. 客观 passive 和 Nによって"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "差别表"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "会话"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress 加载中…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "为学习者免费提供的详细中文 self-study edition。"
+    }
+  ]
+}

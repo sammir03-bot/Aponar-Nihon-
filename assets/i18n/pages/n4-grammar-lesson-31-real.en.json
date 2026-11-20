@@ -1,0 +1,482 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "n4-grammar-lesson-31-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Skip to main content"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 31 · ইচ্ছা ও শর্ত",
+      "target": "Lesson 31 · Intention and Plans"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "All Lessons"
+    },
+    {
+      "source": "ইচ্ছা ও শর্ত",
+      "target": "Desires & Conditions"
+    },
+    {
+      "source": "ধাপ ২ · 31–35",
+      "target": "Stage 2 · 31–35"
+    },
+    {
+      "source": "হঠাৎ প্রস্তাব, আগে থেকে থাকা ইচ্ছা, দৃঢ় ব্যক্তিগত সংকল্প এবং নির্ধারিত সূচি—চার স্তরের ভবিষ্যৎ পরিকল্পনা।",
+      "target": "A sudden suggestion, an intention held from before, a firm personal resolve and a fixed schedule — four levels of future plans."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 detailed grammar blocks"
+    },
+    {
+      "source": "10টি Japanese example",
+      "target": "10 Japanese examples"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice questions with explanations"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile and print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Hide あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Not completed yet"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Mark Complete"
+    },
+    {
+      "source": "Lesson 31 · লক্ষ্য",
+      "target": "Lesson 31 · Goal"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "What you will be able to do after this lesson"
+    },
+    {
+      "source": "জাপানিতে ‘করব’ বলার একটিমাত্র future tense নেই। বক্তা এখন প্রস্তাব করছেন, আগে থেকেই ভাবছেন, দৃঢ়ভাবে ইচ্ছা করেছেন, নাকি সময়সূচি নির্ধারিত—এই পার্থক্য অনুযায়ী রূপ বদলায়। Lesson 31 সেই সিদ্ধান্তের মানচিত্র।",
+      "target": "Japanese has no single future tense for “I will do it”. The form changes according to whether the speaker is suggesting it now, has been thinking about it from before, has firmly intended it, or it is fixed in a schedule. Lesson 31 is the map of that decision."
+    },
+    {
+      "source": "তিন group-এর volitional form বানাতে পারবেন",
+      "target": "You will be able to make the volitional form in all three groups"
+    },
+    {
+      "source": "〜ようと思っています দিয়ে আগে থেকে থাকা ইচ্ছা বলবেন",
+      "target": "You will be able to express an intention held from before with 〜ようと思っています"
+    },
+    {
+      "source": "つもり এবং 予定-এর ব্যক্তিগত ইচ্ছা বনাম নির্ধারিত সূচি আলাদা করবেন",
+      "target": "You will be able to distinguish つもり, a personal intention, from 予定, a fixed schedule"
+    },
+    {
+      "source": "affirmative ও negative plan সঠিক plain form-এ প্রকাশ করবেন",
+      "target": "You will be able to express affirmative and negative plans in the correct plain form"
+    },
+    {
+      "source": "‘চল করি/করব’—plain-style প্রস্তাব বা নিজের দৃঢ় সংকল্প",
+      "target": "“Let's do it / I will do it” — a plain-style suggestion or one's own firm resolve"
+    },
+    {
+      "source": "গঠন",
+      "target": "Formation"
+    },
+    {
+      "source": "ধরন",
+      "target": "Type"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Example"
+    },
+    {
+      "source": "শেষ う-row → お-row＋う",
+      "target": "Final う-row → お-row + う"
+    },
+    {
+      "source": "る বাদ＋よう",
+      "target": "Drop る + よう"
+    },
+    {
+      "source": "অনিয়মিত",
+      "target": "Irregular"
+    },
+    {
+      "source": "ভদ্র সমতুল্য",
+      "target": "Polite equivalent"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detailed Explanation"
+    },
+    {
+      "source": "বন্ধু/পরিবারের সঙ্গে 行こう বললে 行きましょう-এর casual রূপ—‘চল যাই’। নিজেকে বললেও সংকল্প বোঝায়: よし、勉強しよう = ঠিক আছে, পড়তে বসি।",
+      "target": "With friends and family, 行こう is the casual form of 行きましょう — “let's go”. Said to yourself it also expresses resolve: よし、勉強しよう = right, let me sit down and study."
+    },
+    {
+      "source": "শুধু future fact জানানোর সাধারণ রূপ নয়। 明日雨が降ろう বলা যায় না; অনিচ্ছাকৃত ঘটনা volitional নেয় না। নিজের controllable action-এর ইচ্ছা লাগে।",
+      "target": "It is not the ordinary form for simply stating a future fact. You cannot say 明日雨が降ろう; an involuntary event does not take the volitional. It needs the will behind an action you can control."
+    },
+    {
+      "source": "Invitation question casual-এ 行こうか = চল যাব?; ভদ্রভাবে 行きましょうか।",
+      "target": "Invitation question in casual style: 行こうか = shall we go?; politely: 行きましょうか."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "What to Remember"
+    },
+    {
+      "source": "Group 1-এ দুই ধাপ: 書く→書こ＋う = 書こう।",
+      "target": "Group 1 has two steps: 書く→書こ＋う = 書こう."
+    },
+    {
+      "source": "来よう-এর reading こよう; きよう নয়।",
+      "target": "The reading of 来よう is こよう; not きよう."
+    },
+    {
+      "source": "ক্লান্ত, তাই না? চল একটু বিশ্রাম নিই।",
+      "target": "You are tired, aren't you? Let's rest a little."
+    },
+    {
+      "source": "এই বছরই JLPT পাস করব—এই সংকল্প।",
+      "target": "I will pass the JLPT this year — that is my resolve."
+    },
+    {
+      "source": "একসঙ্গে দুপুরের খাবার খাব?",
+      "target": "Shall we eat lunch together?"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Wrong"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Correct"
+    },
+    {
+      "source": "কেন:",
+      "target": "Why:"
+    },
+    {
+      "source": "Volitional সরাসরি です নেয় না; পরিকল্পনা জানাতে 思っています বা つもりです লাগবে।",
+      "target": "The volitional does not take です directly; to state a plan you need 思っています or つもりです."
+    },
+    {
+      "source": "আগে থেকে ভেবে রাখা ব্যক্তিগত ইচ্ছা/পরিকল্পনা",
+      "target": "A personal intention / plan thought out beforehand"
+    },
+    {
+      "source": "ইচ্ছা",
+      "target": "Intention"
+    },
+    {
+      "source": "এই মুহূর্তের ভাবনা",
+      "target": "A thought of this moment"
+    },
+    {
+      "source": "〜ようと思っています বললে চিন্তাটি আগে শুরু হয়েছে এবং এখনো মনের মধ্যে আছে। 〜ようと思います অনেক সময় এই মুহূর্তের সিদ্ধান্ত বা তুলনামূলক হালকা intention।",
+      "target": "〜ようと思っています means the thought began earlier and is still in your mind. 〜ようと思います is often a decision of this moment, or a comparatively light intention."
+    },
+    {
+      "source": "অন্য ব্যক্তির অন্তরের ইচ্ছা নিশ্চিতভাবে বলা কঠিন; 田中さんは行こうと思っています বলতে তার কথায় জানা দরকার। অনুমান হলে 〜と思っているようです ইত্যাদি লাগে।",
+      "target": "It is hard to state another person's inner intention with certainty; to say 田中さんは行こうと思っています you need to know it from what they said. For a guess, something like 〜と思っているようです is needed."
+    },
+    {
+      "source": "Negative intention সাধারণত Vないつもりです বেশি সরল; 〜まいと思っています উচ্চতর স্তর, N4-এ দরকার নেই।",
+      "target": "For a negative intention, Vないつもりです is usually simpler; 〜まいと思っています is a higher level and is not needed at N4."
+    },
+    {
+      "source": "উদ্ধৃতি particle と বাদ যাবে না: 行こうと思っています।",
+      "target": "The quotation particle と must not be dropped: 行こうと思っています."
+    },
+    {
+      "source": "আগামী বছর জাপানে পড়তে যাওয়ার কথা ভাবছি।",
+      "target": "I am thinking of going to study in Japan next year."
+    },
+    {
+      "source": "সপ্তাহান্তে ঘর গুছাব বলে ভাবছি।",
+      "target": "I am thinking of tidying the house at the weekend."
+    },
+    {
+      "source": "日本へ行くと思っています。（নিজের intention বলতে）",
+      "target": "日本へ行くと思っています。(to express your own intention)"
+    },
+    {
+      "source": "Plain 行くと思う সাধারণত ‘মনে করি যাবে/যাব’—prediction; volitional＋と思う intention।",
+      "target": "Plain 行くと思う is usually “I think I/he will go” — a prediction; volitional + と思う is an intention."
+    },
+    {
+      "source": "দৃঢ় ব্যক্তিগত ইচ্ছা বা সিদ্ধান্ত",
+      "target": "A firm personal intention or decision"
+    },
+    {
+      "source": "করার ইচ্ছা",
+      "target": "Intention to do"
+    },
+    {
+      "source": "না করার ইচ্ছা",
+      "target": "Intention not to do"
+    },
+    {
+      "source": "অতীতের intention",
+      "target": "Intention in the past"
+    },
+    {
+      "source": "つもり বক্তার মনে স্থির করা intention। এটি timetable নয়; পরিকল্পনা বাস্তবায়নের সম্ভাবনা থাকলেও এখনো বাহ্যিকভাবে নির্ধারিত নাও হতে পারে।",
+      "target": "つもり is an intention settled in the speaker's mind. It is not a timetable; even if the plan is likely to be carried out, it may not yet be fixed externally."
+    },
+    {
+      "source": "つもりでした বললে ইচ্ছা ছিল—প্রসঙ্গ প্রায়ই দেখায় পরিকল্পনা বদলেছে: 行くつもりでしたが、病気で行けませんでした।",
+      "target": "つもりでした says the intention existed — the context often shows the plan changed: 行くつもりでしたが、病気で行けませんでした."
+    },
+    {
+      "source": "অন্যকে ‘আপনি কি করবেন?’ জিজ্ঞেস করতে つもりですか সরাসরি/চাপের মতো শোনাতে পারে; 予定ですか বা どうする予定ですか অনেক ক্ষেত্রে নরম।",
+      "target": "Asking someone “what will you do?” with つもりですか can sound direct / pressuring; 予定ですか or どうする予定ですか is softer in many cases."
+    },
+    {
+      "source": "Negative-এ 辞書形＋ない নয়; সঠিক ない-form: 行かないつもりです।",
+      "target": "For the negative it is not 辞書形＋ない; the correct ない-form: 行かないつもりです."
+    },
+    {
+      "source": "স্নাতক শেষে দেশে ফেরার সিদ্ধান্ত নিয়েছি।",
+      "target": "I have decided to return to my country after graduation."
+    },
+    {
+      "source": "আজ রাতে টিভি না দেখার সিদ্ধান্ত নিয়েছি।",
+      "target": "I have decided not to watch TV tonight."
+    },
+    {
+      "source": "ভ্রমণের ইচ্ছা ছিল, কিন্তু পরিকল্পনা বদলেছি।",
+      "target": "I intended to travel, but I changed the plan."
+    },
+    {
+      "source": "つもり-এর আগে polite ます নয়, dictionary/plain form।",
+      "target": "Before つもり comes not polite ます but the dictionary / plain form."
+    },
+    {
+      "source": "সূচি, আয়োজন বা তুলনামূলকভাবে নির্ধারিত পরিকল্পনা",
+      "target": "A schedule, an arrangement, or a comparatively fixed plan"
+    },
+    {
+      "source": "কাজ",
+      "target": "Tasks"
+    },
+    {
+      "source": "না হওয়ার সূচি",
+      "target": "A schedule for not happening"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Noun"
+    },
+    {
+      "source": "予定 বাহ্যিক schedule/arrangement-এর অনুভূতি দেয়—সময়, বুকিং বা সংশ্লিষ্ট পক্ষের ব্যবস্থা থাকতে পারে। つもり ব্যক্তির মনের সিদ্ধান্ত; 予定 ক্যালেন্ডারে বসানো plan।",
+      "target": "予定 gives the feel of an external schedule / arrangement — there may be a time, a booking, or arrangements by the people concerned. つもり is a decision in a person's mind; 予定 is a plan set on the calendar."
+    },
+    {
+      "source": "ট্রেন/ইভেন্টের নির্ধারিত পরিকল্পনাতেও ব্যবহৃত হয়: 電車は十時に到着する予定です। ব্যক্তিগত ইচ্ছা না থাকলেও schedule হতে পারে।",
+      "target": "It is also used for the fixed plans of trains and events: 電車は十時に到着する予定です. There can be a schedule even without a personal intention."
+    },
+    {
+      "source": "N＋予定 নয়; Nの予定: 来週は出張の予定です।",
+      "target": "Not N + 予定 but Nの予定: 来週は出張の予定です."
+    },
+    {
+      "source": "মিটিং বিকেল তিনটায় শুরু হওয়ার কথা/সূচি।",
+      "target": "The meeting is scheduled to start at three in the afternoon."
+    },
+    {
+      "source": "আগামী মাসে ওসাকায় ব্যবসায়িক সফরের সূচি আছে।",
+      "target": "Next month there is a business trip to Osaka in the schedule."
+    },
+    {
+      "source": "Noun-এর পরে の প্রয়োজন।",
+      "target": "After a noun, の is needed."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Differences at a Glance"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Which one in which situation?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Form"
+    },
+    {
+      "source": "সিদ্ধান্তের ধরন",
+      "target": "Type of decision"
+    },
+    {
+      "source": "স্বাভাবিক উদাহরণ",
+      "target": "Natural example"
+    },
+    {
+      "source": "এখনকার প্রস্তাব/সংকল্প",
+      "target": "A suggestion / resolve of the moment"
+    },
+    {
+      "source": "চল যাই",
+      "target": "Let's go"
+    },
+    {
+      "source": "আগে থেকে ভাবছি",
+      "target": "Thinking about it from before"
+    },
+    {
+      "source": "বিদেশে পড়তে যাব ভাবছি",
+      "target": "Thinking of going to study abroad"
+    },
+    {
+      "source": "ব্যক্তিগত দৃঢ় সিদ্ধান্ত",
+      "target": "A firm personal decision"
+    },
+    {
+      "source": "প্রতিদিন পড়ব",
+      "target": "I will study every day"
+    },
+    {
+      "source": "নির্ধারিত schedule",
+      "target": "A fixed schedule"
+    },
+    {
+      "source": "মিটিং তিনটায়",
+      "target": "The meeting is at three"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Real-life conversations"
+    },
+    {
+      "source": "ছুটির পরিকল্পনা",
+      "target": "Holiday Plans"
+    },
+    {
+      "source": "গ্রীষ্মের ছুটিতে কী করার পরিকল্পনা?",
+      "target": "What are you planning to do in the summer holidays?"
+    },
+    {
+      "source": "হোক্কাইদো যাওয়ার কথা ভাবছি।",
+      "target": "I am thinking of going to Hokkaido."
+    },
+    {
+      "source": "কখন যাবেন?",
+      "target": "When will you go?"
+    },
+    {
+      "source": "১০ আগস্ট রওনা হওয়ার সূচি। এবার বিমানে না যাওয়ার সিদ্ধান্ত নিয়েছি।",
+      "target": "The schedule is to leave on 10 August. This time I have decided not to go by plane."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Check Yourself"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice with answers and explanations"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "First write the answers in your notebook, then tap a question to check the answer and the reason."
+    },
+    {
+      "source": "1. 読む-এর volitional form বানান।",
+      "target": "1. Make the volitional form of 読む."
+    },
+    {
+      "source": "2. ‘আগামী বছর চাকরি বদলানোর কথা ভাবছি’ বলুন।",
+      "target": "2. Say: “I am thinking of changing my job next year.”"
+    },
+    {
+      "source": "আগে থেকে থাকা intention: volitional＋と思っています।",
+      "target": "An intention held from before: volitional + と思っています."
+    },
+    {
+      "source": "3. ‘আমি গাড়ি না কেনার সিদ্ধান্ত নিয়েছি’ বলুন।",
+      "target": "3. Say: “I have decided not to buy a car.”"
+    },
+    {
+      "source": "4. ‘আগামীকাল মিটিংয়ের সূচি আছে’ বলুন।",
+      "target": "4. Say: “There is a meeting scheduled for tomorrow.”"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "The Master Key in One Sentence"
+    },
+    {
+      "source": "মনের দৃঢ় সিদ্ধান্তে つもり, ক্যালেন্ডারের নির্ধারিত পরিকল্পনায় 予定, আগে থেকে ভাবা intention-এ ようと思っています, আর তাৎক্ষণিক ‘চল করি’-তে volitional।",
+      "target": "For a firm decision in the mind, つもり; for a fixed plan on the calendar, 予定; for an intention thought about from before, ようと思っています; and for an immediate “let's do it”, the volitional."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Trusted References"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus and Verification"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "This independent lesson in English was created by aligning the lesson sequence of Minna no Nihongo II, the official JLPT N4 scope and the Japan Foundation's learner resources. The examples and explanations in English are newly written."
+    },
+    {
+      "source": "← আগের Lesson 30",
+      "target": "← Previous Lesson 30"
+    },
+    {
+      "source": "Preparation：Vてあります ও Vておきます",
+      "target": "Preparation: Vてあります and Vておきます"
+    },
+    {
+      "source": "পরের Lesson 32 →",
+      "target": "Next Lesson 32 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson Index"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Learning goal"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Comparison Table"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress is loading…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "A free, detailed self-study edition in English for learners."
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ne",
+  "page": "n3-quartet-grammar",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "QUARTET I বাংলা · ৫৫ গ্রামার, ৫৫০ উদাহরণ | আপনার নিহোন",
+      "target": "QUARTET I नेपाली · ५५ व्याकरण, ५५० उदाहरण | আপনার নিহোন"
+    },
+    {
+      "source": "পাঠে যান",
+      "target": "पाठमा जानुहोस्"
+    },
+    {
+      "source": "আপনার নিহোন · N3",
+      "target": "আপনার নিহোন · N3"
+    },
+    {
+      "source": "চার দক্ষতার গাইড",
+      "target": "चार सीपको गाइड"
+    },
+    {
+      "source": "আপনার নিহোন / বাংলা গ্রামার",
+      "target": "আপনার নিহোন / नेपाली व्याकरण"
+    },
+    {
+      "source": "বুঝে শিখুন, বাক্যে ব্যবহার করুন।",
+      "target": "बुझेर सिक्नुहोस्, वाक्यमा प्रयोग गर्नुहोस्।"
+    },
+    {
+      "source": "সহজ বাংলা, ধাপে ধাপে Form আর প্রতিটি নিয়মের ১০টি উদাহরণ। আগে পরিস্থিতি বুঝুন, তারপর বাক্য ভেঙে শিখুন।",
+      "target": "सजिलो नेपाली, चरण-चरणमा Form र प्रत्येक नियमको १० वटा उदाहरण। पहिले परिस्थिति बुझ्नुहोस्, त्यसपछि वाक्य तोडेर सिक्नुहोस्।"
+    },
+    {
+      "source": "বাংলা নোটের আপডেট ·",
+      "target": "नेपाली नोटको अपडेट ·"
+    },
+    {
+      "source": "২০ অক্টোবর ২০২৬",
+      "target": "२० अक्टोबर २०२६"
+    },
+    {
+      "source": "৫৫",
+      "target": "55"
+    },
+    {
+      "source": "গ্রামার",
+      "target": "व्याकरण"
+    },
+    {
+      "source": "৫৫০",
+      "target": "550"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "उदाहरण"
+    },
+    {
+      "source": "৬",
+      "target": "6"
+    },
+    {
+      "source": "অধ্যায়",
+      "target": "अध्याय"
+    },
+    {
+      "source": "০ / ৫৫টি শেখা",
+      "target": "० / ५५ वटा सिकियो"
+    },
+    {
+      "source": "আপনার শেখা ও অনুশীলনের উত্তর এই ব্রাউজারে মনে থাকবে।",
+      "target": "तपाईँको सिकाइ र अभ्यासको उत्तर यो ब्राउजरमा सेभ रहनेछ।"
+    },
+    {
+      "source": "পাঠগুলো প্রস্তুত হচ্ছে…",
+      "target": "पाठहरू तयार हुँदैछन्…"
+    },
+    {
+      "source": "আবার চেষ্টা করুন",
+      "target": "फेरी प्रयास गर्नुहोस्"
+    },
+    {
+      "source": "সূচি ও গ্রামার খুঁজুন",
+      "target": "सूची र व्याकरण खोज्नुहोस्"
+    },
+    {
+      "source": "অধ্যায় বেছে নিন",
+      "target": "अध्याय छान्नुहोस्"
+    },
+    {
+      "source": "কোন নিয়মটি খুঁজছেন?",
+      "target": "कुन नियम खोज्दै हुनुहुन्छ?"
+    },
+    {
+      "source": "গ্রামার বেছে নিন",
+      "target": "व्याकरण छान्नुहोस्"
+    },
+    {
+      "source": "চার দক্ষতার স্টাডি সহায়িকা ↗",
+      "target": "चार सीपको अध्ययन सहयोगी ↗"
+    },
+    {
+      "source": "সব শেখার রিসোর্স ↗",
+      "target": "सबै सिकाइ स्रोतहरू ↗"
+    },
+    {
+      "source": "স্বাভাবিক",
+      "target": "सामान्य"
+    },
+    {
+      "source": "ফুরিগানা",
+      "target": "फुरिगाना"
+    },
+    {
+      "source": "ডার্ক মোড",
+      "target": "डार्क मोड"
+    },
+    {
+      "source": "পাঠ",
+      "target": "पाठ"
+    },
+    {
+      "source": "অনুশীলন",
+      "target": "अभ्यास"
+    },
+    {
+      "source": "রিভিশন",
+      "target": "रिभिजन"
+    },
+    {
+      "source": "Form বুঝতে অসুবিধা হচ্ছে? এখানে দেখুন",
+      "target": "Form बुझ्न गाह्रो भइरहेको छ? यहाँ हेर्नुहोस्"
+    },
+    {
+      "source": "QUARTET I-এর স্বতন্ত্র বাংলা সহায়ক নোট। মূল বইয়ের ৫৫টি বিষয় ধরে ব্যাখ্যা, উদাহরণ ও অনুশীলন নতুনভাবে লেখা। উপরের তারিখটি আমাদের নোটের আপডেটের; প্রকাশকের নতুন সংস্করণের দাবি নয়।",
+      "target": "QUARTET I को स्वतन्त्र नेपाली सहायक नोट। मूल पुस्तकका ५५ वटा विषयहरू समेटेर व्याख्या, उदाहरण र अभ्यास नयाँ ढङ्गले लेखिएको। माथिल्लो मिति हाम्रो नोटको अपडेट हो; प्रकाशकको नयाँ संस्करणको दाबी होइन।"
+    },
+    {
+      "source": "মূল বইয়ের তথ্য ↗",
+      "target": "मूल पुस्तकको जानकारी ↗"
+    }
+  ]
+}

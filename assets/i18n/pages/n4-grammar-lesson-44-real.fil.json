@@ -1,0 +1,474 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "n4-grammar-lesson-44-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Pumunta sa pangunahing nilalaman"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 44 · প্রয়োগ ও সূক্ষ্মতা",
+      "target": "Lesson 44 · Aplikasyon at nuance"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Lahat ng Lesson"
+    },
+    {
+      "source": "প্রয়োগ ও সূক্ষ্মতা",
+      "target": "Paggamit at mga detalye"
+    },
+    {
+      "source": "ধাপ ৪ · 41–45",
+      "target": "Hakbang 4 · 41–45"
+    },
+    {
+      "source": "মাত্রা ছাড়ানো, কাজের গঠনগত সহজ/কঠিনতা, ইচ্ছাকৃতভাবে অবস্থা বদলানো এবং বিকল্প থেকে বেছে নেওয়া।",
+      "target": "Paglampas sa limitasyon, istruktural na kadalian/kahirapan ng gawain, sinasadyang pagbabago ng kalagayan at pagpili mula sa mga alternatibo."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 detalyadong grammar block"
+    },
+    {
+      "source": "13টি Japanese example",
+      "target": "13 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice na may paliwanag"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile at print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Itago ang あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Hindi pa tapos"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Markahan bilang tapos"
+    },
+    {
+      "source": "Lesson 44 · লক্ষ্য",
+      "target": "Lesson 44 · Layunin"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Ang magagawa mo pagkatapos ng Lesson na ito"
+    },
+    {
+      "source": "Lesson 44 চারটি দৈনন্দিন judgement শেখায়: ‘বেশি হয়ে গেছে’, ‘করা সহজ/কঠিন’, ‘এটাকে এমন করি’, এবং ‘এটাই নেব’। সবগুলোর আগে stem ঠিক করতে পারলেই conjugation সহজ।",
+      "target": "Ang Lesson 44 ay nagtuturo ng apat na pang-araw-araw na judgement: 'naging sobra', 'madali/mahirap gawin', 'gagawin ko itong ganito', at 'ito na lang ang kukunin ko'. Kung maaayos mo muna ang stem ng lahat, madali ang conjugation."
+    },
+    {
+      "source": "verb/い-A/な-A stem-এর সঙ্গে すぎます জুড়বেন",
+      "target": "Ikakabit mo ang すぎます sa stem ng verb/い-A/な-A"
+    },
+    {
+      "source": "やすい/にくい দিয়ে action-এর সহজতা/কঠিনতা বলবেন",
+      "target": "Sasabihin mo ang kadalian/kahirapan ng action gamit ang やすい/にくい"
+    },
+    {
+      "source": "する দিয়ে agent-caused state change প্রকাশ করবেন",
+      "target": "Ihahayag mo ang agent-caused state change gamit ang する"
+    },
+    {
+      "source": "Nにします দিয়ে menu/option নির্বাচন করবেন",
+      "target": "Pipiliin mo ang menu/option gamit ang Nにします"
+    },
+    {
+      "source": "স্বাভাবিক/কাম্য সীমার চেয়ে অতিরিক্ত",
+      "target": "Higit pa sa normal/ninanais na limitasyon"
+    },
+    {
+      "source": "গঠন",
+      "target": "Istruktura"
+    },
+    {
+      "source": "ধরন",
+      "target": "Uri"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Halimbawa"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "Verb"
+    },
+    {
+      "source": "Vます থেকে ます বাদ＋すぎる",
+      "target": "Tanggalin ang ます mula sa Vます＋すぎる"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-adjective"
+    },
+    {
+      "source": "শেষ い বাদ＋すぎる",
+      "target": "Tanggalin ang huling い＋すぎる"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-adjective"
+    },
+    {
+      "source": "食べなさすぎます／簡単ではなさすぎる (কম ব্যবহৃত)",
+      "target": "食べなさすぎます／簡単ではなさすぎる (hindi gaanong ginagamit)"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detalyadong paliwanag"
+    },
+    {
+      "source": "すぎる নিজে Group 2 verb; tense/negative শেষে: 食べすぎました, 高すぎません, 静かすぎて…。",
+      "target": "Ang すぎる mismo ay Group 2 verb; ang tense/negative ay nasa dulo: 食べすぎました, 高すぎません, 静かすぎて…."
+    },
+    {
+      "source": "সাধারণত negative evaluation—মাত্রা সমস্যা করছে। কিন্তু きれいすぎる ‘অবিশ্বাস্য সুন্দর’ প্রশংসামূলক hyperbole-ও হতে পারে।",
+      "target": "Karaniwang negative evaluation—ang antas ay nagdudulot ng problema. Ngunit ang きれいすぎる ay maaari ring maging papuring hyperbole na 'hindi kapani-paniwalang maganda'."
+    },
+    {
+      "source": "すぎて consequence যুক্ত হয়: 飲みすぎて、頭が痛いです।",
+      "target": "Ang すぎて ay nag-uugnay ng consequence: 飲みすぎて、頭が痛いです."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Ang dapat tandaan"
+    },
+    {
+      "source": "Verb て-form নয়: 食べてすぎる ✕; 食べすぎる ✓।",
+      "target": "Hindi verb て-form: 食べてすぎる ✕; 食べすぎる ✓."
+    },
+    {
+      "source": "গতকাল বেশি কফি খেয়েছি।",
+      "target": "Uminom ako ng sobrang kape kahapon."
+    },
+    {
+      "source": "ব্যাগটি অতিরিক্ত ভারী, তাই নিতে পারছি না।",
+      "target": "Masyadong mabigat ang bag, kaya hindi ko ito madala."
+    },
+    {
+      "source": "শহরটি রাতে অতিরিক্ত নীরব।",
+      "target": "Masyadong tahimik ang lungsod sa gabi."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Mali"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Tama"
+    },
+    {
+      "source": "কেন:",
+      "target": "Bakit:"
+    },
+    {
+      "source": "い-বিশেষণের শেষ い বাদ＋すぎます।",
+      "target": "Tanggalin ang huling い ng い-adjective＋すぎます."
+    },
+    {
+      "source": "কাজটি করা সহজ / করা কঠিন—বস্তু বা পরিস্থিতির বৈশিষ্ট্য",
+      "target": "Madaling gawin ang gawain / mahirap gawin—katangian ng bagay o sitwasyon"
+    },
+    {
+      "source": "সহজ",
+      "target": "Madali"
+    },
+    {
+      "source": "কঠিন",
+      "target": "Mahirap"
+    },
+    {
+      "source": "い-বিশেষণের মতো",
+      "target": "Tulad ng い-adjective"
+    },
+    {
+      "source": "やすい/にくい সাধারণত action-এর objective ease/difficulty বা tendency। このペンは書きやすい = কলমটির design/feel লিখতে সহজ। 私は漢字が書けません = আমার ability সমস্যা—আলাদা।",
+      "target": "Ang やすい/にくい ay karaniwang objective ease/difficulty o tendency ng action. このペンは書きやすい = madaling isulat ang disenyo/pakiramdam ng panulat na ito. Ang 私は漢字が書けません = problema sa aking ability—hiwalay."
+    },
+    {
+      "source": "ভুল/পরিবর্তনের প্রবণতাও: このコップは割れやすい = সহজে ভেঙে যায়। 忘れやすい = সহজে ভুলে যাওয়ার tendency।",
+      "target": "May tendency rin ng pagkakamali/pagbabago: このコップは割れやすい = madaling mabasag. Ang 忘れやすい = tendency na madaling makalimutan."
+    },
+    {
+      "source": "Mental unwillingness-এর にくい nuance থাকতে পারে (言いにくい = বলা awkward), কিন্তু impossible নয়।",
+      "target": "Maaaring may nuance ng mental unwillingness ang にくい (言いにくい = awkward sabihin), ngunit hindi ito impossible."
+    },
+    {
+      "source": "এই পাঠ্যবইয়ের ব্যাখ্যা বোঝা সহজ।",
+      "target": "Madaling maintindihan ang paliwanag ng textbook na ito."
+    },
+    {
+      "source": "জুতাটি হালকা, তাই হাঁটা সহজ।",
+      "target": "Magaan ang sapatos, kaya madaling maglakad."
+    },
+    {
+      "source": "কানজিটির আকার মিল বলে মনে রাখা কঠিন।",
+      "target": "Mahirap matandaan dahil magkapareho ang hugis ng kanji."
+    },
+    {
+      "source": "জরুরি বিষয় সহজে ভুলে যাই, তাই নোট করি।",
+      "target": "Madali kong makalimutan ang mahahalagang bagay, kaya nagno-note ako."
+    },
+    {
+      "source": "読みます-এর stem 読み＋やすい।",
+      "target": "Ang stem ng 読みます ay 読み＋やすい."
+    },
+    {
+      "source": "কেউ ইচ্ছাকৃতভাবে জিনিসের অবস্থা/গুণ বদলায়",
+      "target": "May sinasadyang nagbabago ng kalagayan/kalidad ng bagay"
+    },
+    {
+      "source": "শেষ い→く＋します",
+      "target": "Ang huling い→く＋します"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Pangngalan"
+    },
+    {
+      "source": "なる-তে অবস্থা নিজে/স্বাভাবিকভাবে বদলায়: 部屋が明るくなりました। する-তে agent বদলায়: 電気をつけて、部屋を明るくしました।",
+      "target": "Sa なる, ang kalagayan ay nagbabago mismo/natural: 部屋が明るくなりました. Sa する, binabago ito ng agent: 電気をつけて、部屋を明るくしました."
+    },
+    {
+      "source": "Object を: 音を小さくしてください = শব্দ ছোট/কম করুন। な-A/N-এ に: 部屋をきれいにします, 会議室を禁煙にします।",
+      "target": "Object を: 音を小さくしてください = pakihinaan ang tunog. Sa な-A/N, に: 部屋をきれいにします, 会議室を禁煙にします."
+    },
+    {
+      "source": "Adverbial く/に＋する structure; する-এর tense শেষে।",
+      "target": "Adverbial na く/に＋する structure; ang tense ng する ay nasa dulo."
+    },
+    {
+      "source": "নিজে বদলায় が＋なる; কেউ বদলায় を＋する।",
+      "target": "Nagbabago mismo が＋なる; may nagbabago を＋する."
+    },
+    {
+      "source": "অক্ষর আরেকটু বড় করুন।",
+      "target": "Pakilakihan pa nang kaunti ang mga letra."
+    },
+    {
+      "source": "ঘরটি পরিষ্কার করেছি।",
+      "target": "Nilinis ko ang kuwarto."
+    },
+    {
+      "source": "এই বাক্সটিকে বইয়ের তাক বানাব।",
+      "target": "Gagawin kong bookshelf ang kahon na ito."
+    },
+    {
+      "source": "い-বিশেষণ 小さい→小さく＋する।",
+      "target": "Ang い-adjective na 小さい→小さく＋する."
+    },
+    {
+      "source": "Nにします（পছন্দ নির্বাচন）",
+      "target": "Nにします (pagpili ng gusto)"
+    },
+    {
+      "source": "একাধিক option থেকে N বেছে নেওয়া—‘আমি N নেব/ঠিক করলাম’",
+      "target": "Pagpili ng N mula sa maraming option—'kukunin ko ang N/nagpasya ako sa N'"
+    },
+    {
+      "source": "রেস্তোরাঁ, কেনাকাটা, রং/তারিখ/পথ—option বেছে নেওয়ার বহুল রূপ। コーヒーにします = কফিই নেব।",
+      "target": "Restaurant, pamimili, kulay/petsa/daan—madalas na anyo ng pagpili ng option. コーヒーにします = kape na lang ang kukunin ko."
+    },
+    {
+      "source": "決めます স্পষ্ট ‘সিদ্ধান্ত নিই’; Nにします কথোপকথনে selection-এর ফল সহজে বলে। Question: 何にしますか = কী নেবেন/কোনটি ঠিক করবেন?",
+      "target": "Ang 決めます ay malinaw na 'nagpapasya ako'; ang Nにします ay madaling nagsasabi ng resulta ng selection sa usapan. Question: 何にしますか = ano ang kukunin mo/alín ang pipiliin mo?"
+    },
+    {
+      "source": "Nにします state-change অর্থও হতে পারে; context object/option দেখে ধরুন: 部屋を教室にします = ঘরকে শ্রেণিকক্ষ বানাই; 飲み物はお茶にします = পানীয় হিসেবে চা নেব।",
+      "target": "Ang Nにします ay maaari ring mangahulugan ng state-change; unawain ito mula sa context object/option: 部屋を教室にします = ginagawa kong classroom ang kuwarto; 飲み物はお茶にします = tsaa ang kukunin ko bilang inumin."
+    },
+    {
+      "source": "আমি কারি নেব।",
+      "target": "Kukunin ko ang curry."
+    },
+    {
+      "source": "মিটিং শুক্রবার ঠিক করি।",
+      "target": "Itatakda ko ang meeting sa Biyernes."
+    },
+    {
+      "source": "রং হিসেবে নীল বেছে নিয়েছি।",
+      "target": "Pinili ko ang asul bilang kulay."
+    },
+    {
+      "source": "Option নির্বাচন particle に; を＋する অন্য action বোঝাবে।",
+      "target": "Ang particle ng pagpili ng option ay に; ang を＋する ay mangangahulugan ng ibang action."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Pagkakaiba sa isang sulyap"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Alin sa anong sitwasyon?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Form"
+    },
+    {
+      "source": "কেন্দ্র",
+      "target": "Sentro"
+    },
+    {
+      "source": "সীমা ছাড়ানো",
+      "target": "Paglampas sa limitasyon"
+    },
+    {
+      "source": "অতিরিক্ত দামি",
+      "target": "Masyadong mahal"
+    },
+    {
+      "source": "কাজের সহজতা",
+      "target": "Kadalian ng gawain"
+    },
+    {
+      "source": "পড়া সহজ",
+      "target": "Madaling basahin"
+    },
+    {
+      "source": "agent অবস্থা বদলায়",
+      "target": "Binabago ng agent ang kalagayan"
+    },
+    {
+      "source": "ঘর উজ্জ্বল করি",
+      "target": "Pinapaliwanag ko ang kuwarto"
+    },
+    {
+      "source": "option নির্বাচন",
+      "target": "Pagpili ng option"
+    },
+    {
+      "source": "কফি নিই",
+      "target": "Kukunin ko ang kape"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Tunay na Pag-uusap"
+    },
+    {
+      "source": "রেস্তোরাঁয় অর্ডার",
+      "target": "Order sa restaurant"
+    },
+    {
+      "source": "কী নেবেন?",
+      "target": "Ano ang kukunin mo?"
+    },
+    {
+      "source": "এই কারি অতিরিক্ত ঝাল কি?",
+      "target": "Masyado bang maanghang ang curry na ito?"
+    },
+    {
+      "source": "না। খেতে সহজ/হালকা।",
+      "target": "Hindi. Madali/magaan itong kainin."
+    },
+    {
+      "source": "তাহলে কারি নেব। ভাত কম দিন।",
+      "target": "Kung gayon, kukunin ko ang curry. Pakibawasan ang kanin."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Suriin ang sarili mo"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice at sagot na may paliwanag"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Isulat muna ang sagot sa kuwaderno, pagkatapos ay pindutin ang tanong at itugma ang sagot at dahilan."
+    },
+    {
+      "source": "1. ‘গতকাল বেশি খেয়েছি’ বলুন।",
+      "target": "1. Sabihin ang 'kumain ako nang sobra kahapon'."
+    },
+    {
+      "source": "2. ‘এই কলম দিয়ে লেখা সহজ’ বলুন।",
+      "target": "2. Sabihin ang 'madaling magsulat gamit ang panulat na ito'."
+    },
+    {
+      "source": "3. ‘শব্দ একটু কম করুন’ বলুন।",
+      "target": "3. Sabihin ang 'pakihinaan nang kaunti ang tunog'."
+    },
+    {
+      "source": "4. ‘আমি চা নেব’ বলুন।",
+      "target": "4. Sabihin ang 'kukunin ko ang tsaa'."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Master Key sa isang pangungusap"
+    },
+    {
+      "source": "মাত্রা বিচার → すぎる; action-এর designগত ease → やすい/にくい; agent বদলালে Aく/N・なAにする; option বাছলে Nにする।",
+      "target": "Judgement ng antas → すぎる; design ease ng action → やすい/にくい; kung binabago ng agent, Aく/N・なAにする; kung pipili ng option, Nにする."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Pinagkakatiwalaang reference"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus at pag-verify"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Ang independiyenteng Filipino lesson na ito ay ginawa sa pamamagitan ng pagsasama ng lesson sequence ng Minna no Nihongo II, official JLPT N4 scope at learner resources ng Japan Foundation. Ang mga halimbawa at Filipino na paliwanag ay bagong isinulat."
+    },
+    {
+      "source": "← আগের Lesson 43",
+      "target": "← Nakaraang Lesson 43"
+    },
+    {
+      "source": "পরের Lesson 45 →",
+      "target": "Susunod na Lesson 45 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Index ng Lesson"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Layunin sa pagkatuto"
+    },
+    {
+      "source": "4. Nにします（পছন্দ নির্বাচন）",
+      "target": "4. Nにします (pagpili ng gusto)"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Talahanayan ng pagkakaiba"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Naglo-load ang Course progress…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Para sa mga mag-aaral, libre at detalyadong Filipino self-study edition."
+    }
+  ]
+}

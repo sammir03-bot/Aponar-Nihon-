@@ -1,0 +1,238 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n5-grammar-lesson-20-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 20 | Plain Form・普通形 Conversation | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 20 | Plain Form・普通形 Conversation | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "বন্ধুদের সাথে casual কথা, diary style, short answer — polite থেকে plain form",
+      "target": "යාළුවන් සමඟ casual කතාව, diary style, short answer — polite එකෙන් plain form එකට"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar අරඹන්න"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "අද Learning Goal"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "සරල පැහැදිලි කිරීම + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "සෑම pattern එකකම පළමුව structure එක බලන්න, ඉන්පසු example එක කටින් කියන්න. Audio button එක එබුවොත් Japanese sentence එක ඇසිය හැක."
+    },
+    {
+      "source": "ます-form নয়, dictionary/ない/た/なかった form দিয়ে casual/plain style।",
+      "target": "ます-form නොවේ, dictionary/ない/た/なかった form වලින් casual/plain style එක."
+    },
+    {
+      "source": "বন্ধু, পরিবার, diary, grammar connection-এ plain form লাগে।",
+      "target": "යාළුවන්, පවුල, diary, grammar connection වලට plain form අවශ්‍යයි."
+    },
+    {
+      "source": "আশিতা, গাক্কো এ ইকু।",
+      "target": "明日、学校へ行く."
+    },
+    {
+      "source": "কাল স্কুলে যাব।",
+      "target": "හෙට පාසලට යනවා."
+    },
+    {
+      "source": "কিয়ো ওয়া ইকানাই।",
+      "target": "今日は行かない."
+    },
+    {
+      "source": "আজ যাব না।",
+      "target": "අද යන්නේ නැහැ."
+    },
+    {
+      "source": "কিনো, ইত্তা।",
+      "target": "昨日、行った."
+    },
+    {
+      "source": "গতকাল গিয়েছিলাম।",
+      "target": "ඊයේ ගියා."
+    },
+    {
+      "source": "い-adjective plain form-এ です বাদ যায়।",
+      "target": "い-adjective plain form එකේ です ඉවත් වේ."
+    },
+    {
+      "source": "কোনো মিসে ওয়া ইয়াসুই।",
+      "target": "この店は安い."
+    },
+    {
+      "source": "এই দোকান সস্তা।",
+      "target": "මේ කඩය ලාභයි."
+    },
+    {
+      "source": "কিনো ওয়া সামুকাত্তা।",
+      "target": "昨日は寒かった."
+    },
+    {
+      "source": "গতকাল ঠান্ডা ছিল।",
+      "target": "ඊයේ සීතල තිබුණා."
+    },
+    {
+      "source": "কোনো এইগা ওয়া ওমোশিরোকুনাই।",
+      "target": "この映画はおもしろくない."
+    },
+    {
+      "source": "এই সিনেমা মজার নয়।",
+      "target": "මේ චිත්‍රපටය විනෝදජනක නැහැ."
+    },
+    {
+      "source": "な-adjective ও noun plain affirmative present-এ だ লাগে; negative じゃない।",
+      "target": "な-adjective සහ noun plain affirmative present එකේ だ අවශ්‍යයි; negative じゃない."
+    },
+    {
+      "source": "Question/casual conversation-এ だ বাদও হতে পারে, কিন্তু basic pattern শিখুন।",
+      "target": "Question/casual conversation එකේ だ ඉවත් වෙන්නත් පුළුවන්, නමුත් basic pattern එක ඉගෙන ගන්න."
+    },
+    {
+      "source": "কোনো মাচি ওয়া শিজুকাদা।",
+      "target": "この町は静かだ."
+    },
+    {
+      "source": "এই শহর শান্ত।",
+      "target": "මේ නගරය නිහඬයි."
+    },
+    {
+      "source": "কারে ওয়া গাকুসেই জানাই।",
+      "target": "彼は学生じゃない."
+    },
+    {
+      "source": "সে ছাত্র নয়।",
+      "target": "ඔහු සිසුවෙක් නොවේ."
+    },
+    {
+      "source": "কিনো ওয়া ইয়াসুমিদাত্তা।",
+      "target": "昨日は休みだった."
+    },
+    {
+      "source": "গতকাল ছুটি ছিল।",
+      "target": "ඊයේ නිවාඩු තිබුණා."
+    },
+    {
+      "source": "আশিতা ইকু？",
+      "target": "明日行く？"
+    },
+    {
+      "source": "কাল যাবে?",
+      "target": "හෙට යනවද?"
+    },
+    {
+      "source": "উন, ইকু।",
+      "target": "うん、行く."
+    },
+    {
+      "source": "হ্যাঁ, যাব।",
+      "target": "ඔව්, යනවා."
+    },
+    {
+      "source": "উন, ইকানাই।",
+      "target": "ううん、行かない."
+    },
+    {
+      "source": "না, যাব না।",
+      "target": "නැහැ, යන්නේ නැහැ."
+    },
+    {
+      "source": "কাকে বলছেন তার উপর style বদলাতে হবে।",
+      "target": "කාටද කියන්නේ යන්න අනුව style එක වෙනස් කළ යුතුයි."
+    },
+    {
+      "source": "শিক্ষক/বস/ইন্টারভিউতে polite; বন্ধু/পরিবারে plain।",
+      "target": "ගුරුවරයා/ලොක්කා/interview එකේ polite; යාළුවන්/පවුලේ plain."
+    },
+    {
+      "source": "সেনসেই নি： আশিতা, গাক্কো এ ইকিমাসু।",
+      "target": "先生に：明日、学校へ行きます."
+    },
+    {
+      "source": "শিক্ষককে: কাল স্কুলে যাব।",
+      "target": "ගුරුවරයාට: හෙට පාසලට යනවා."
+    },
+    {
+      "source": "তোমোদাচি নি： আশিতা, গাক্কো এ ইকু।",
+      "target": "友達に：明日、学校へ行く."
+    },
+    {
+      "source": "বন্ধুকে: কাল স্কুলে যাব।",
+      "target": "යාළුවාට: හෙට පාසලට යනවා."
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "කටින් කීමේ Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "මෙම වාක්‍ය interview/classroom conversation එකක් වගේ 3 වරක් කියවන්න."
+    },
+    {
+      "source": "আশিতা, গাক্কো এ ইকু？",
+      "target": "明日、学校へ行く？"
+    },
+    {
+      "source": "কাল স্কুলে যাবে?",
+      "target": "හෙට පාසලට යනවද?"
+    },
+    {
+      "source": "কিনো, নানি ও শিতা？",
+      "target": "昨日、何をした？"
+    },
+    {
+      "source": "গতকাল কী করেছিলে?",
+      "target": "ඊයේ මොනවද කළේ?"
+    },
+    {
+      "source": "এইগা ও মিতা।",
+      "target": "映画を見た."
+    },
+    {
+      "source": "সিনেমা দেখেছি।",
+      "target": "චිත්‍රපටය බැලුවා."
+    },
+    {
+      "source": "কোনো মাচি ওয়া শিজুকা？",
+      "target": "この町は静か？"
+    },
+    {
+      "source": "এই শহর শান্ত?",
+      "target": "මේ නගරය නිහඬද?"
+    },
+    {
+      "source": "✅ বন্ধু হলে plain: 明日行く。 কিন্তু polite বললেও ভুল নয়, শুধু দূরত্ব/ভদ্রতা বেশি।",
+      "target": "✅ යාළුවෙක් නම් plain: 明日行く。 නමුත් polite කීවත් වරදක් නැහැ, දුරස්ථභාවය/ආචාරශීලීත්වය වැඩියි."
+    },
+    {
+      "source": "✅ 高い。 — い-adj-এর সাথে だ নয়।",
+      "target": "✅ 高い。 — い-adj සමඟ だ නොවේ."
+    },
+    {
+      "source": "✅ 学生だ。 — noun plain affirmative present-এ だ।",
+      "target": "✅ 学生だ。 — noun plain affirmative present එකේ だ."
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "ඔබම පරීක්ෂා කරන්න"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 20 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 20 • Verified Premium Detailed Version"
+    }
+  ]
+}

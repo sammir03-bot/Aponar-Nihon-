@@ -1,0 +1,286 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n5-grammar",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N5 Grammar | আপনার নিহোন",
+      "target": "N5 语法 | আপনার নিহোন"
+    },
+    {
+      "source": "Lesson তালিকায় যান",
+      "target": "前往课程列表"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "হোম",
+      "target": "首页"
+    },
+    {
+      "source": "ভিত্তি থেকে আত্মবিশ্বাস",
+      "target": "从基础建立自信"
+    },
+    {
+      "source": "২৫টি ধাপে জাপানি বাক্য গঠন, particle, verb form ও প্রয়োজনীয় grammar বাংলা ব্যাখ্যায় আয়ত্ত করুন।",
+      "target": "通过 25 个步骤，在孟加拉语解释下掌握日语造句、助词、动词形态及必备语法。"
+    },
+    {
+      "source": "প্রথম Lesson শুরু করুন",
+      "target": "开始第一课"
+    },
+    {
+      "source": "Lesson খুঁজুন",
+      "target": "搜索课程"
+    },
+    {
+      "source": "আমার অগ্রগতি",
+      "target": "我的进度"
+    },
+    {
+      "source": "সম্পন্ন",
+      "target": "已完成"
+    },
+    {
+      "source": "0/25 lesson সম্পন্ন",
+      "target": "已完成 0/25 课"
+    },
+    {
+      "source": "শেষ করা lesson-এ ✓ দিন। এই device-এ আপনার progress স্বয়ংক্রিয়ভাবে সংরক্ষিত থাকবে।",
+      "target": "在已完成的课程上打勾 ✓。您的进度将自动保存在此设备上。"
+    },
+    {
+      "source": "মোট LESSON",
+      "target": "总课程数"
+    },
+    {
+      "source": "বাকি",
+      "target": "剩余"
+    },
+    {
+      "source": "Lesson নম্বর বেছে নিন",
+      "target": "选择课程编号"
+    },
+    {
+      "source": "দেখুন",
+      "target": "查看"
+    },
+    {
+      "source": "সব",
+      "target": "全部"
+    },
+    {
+      "source": "পুরো কোর্স",
+      "target": "完整课程"
+    },
+    {
+      "source": "পরিচয় ও ভিত্তি",
+      "target": "介绍与基础"
+    },
+    {
+      "source": "দৈনন্দিন বাক্য",
+      "target": "日常用语"
+    },
+    {
+      "source": "রূপ ও নিয়ম",
+      "target": "形态与规则"
+    },
+    {
+      "source": "প্রয়োগ ও সংযোগ",
+      "target": "应用与连接"
+    },
+    {
+      "source": "আপনার Lesson বেছে নিন",
+      "target": "请选择您的课程"
+    },
+    {
+      "source": "নম্বর, Japanese pattern অথবা বাংলা বিষয় দিয়ে search করুন। Range ও progress filter ব্যবহার করে প্রয়োজনীয় lesson দ্রুত খুলুন।",
+      "target": "通过编号、日语句型或孟加拉语主题进行搜索。使用范围和进度筛选器快速打开所需的课程。"
+    },
+    {
+      "source": "টি lesson দেখানো হচ্ছে",
+      "target": "正在显示个课程"
+    },
+    {
+      "source": "ধাপ 1 · পরিচয় ও ভিত্তি",
+      "target": "第 1 阶段 · 介绍与基础"
+    },
+    {
+      "source": "নিজের পরিচয় ও basic statement/question তৈরি।",
+      "target": "自我介绍及构建基础陈述句/疑问句。"
+    },
+    {
+      "source": "文法 · ব্যাকরণ",
+      "target": "文法 · 语法"
+    },
+    {
+      "source": "Lesson খুলুন",
+      "target": "打开课程"
+    },
+    {
+      "source": "জিনিস দেখিয়ে বলা, জিজ্ঞাসা করা ও ownership।",
+      "target": "展示物品、提问及所有权。"
+    },
+    {
+      "source": "স্থান, দিক, ভবন ও দাম নিয়ে বাক্য।",
+      "target": "关于地点、方向、建筑物和价格的句子。"
+    },
+    {
+      "source": "সময়, তারিখ ও polite verb present/past।",
+      "target": "时间、日期及礼貌体动词的现在/过去时。"
+    },
+    {
+      "source": "যাওয়া/আসা/ফেরা, যানবাহন ও সঙ্গী।",
+      "target": "去/来/回、交通工具及同伴。"
+    },
+    {
+      "source": "ধাপ 2 · দৈনন্দিন বাক্য",
+      "target": "第 2 阶段 · 日常用语"
+    },
+    {
+      "source": "কাজ করা, invitation ও suggestion।",
+      "target": "做事、邀请与建议。"
+    },
+    {
+      "source": "উপকরণ/ভাষা দিয়ে কাজ ও দেওয়া-নেওয়া।",
+      "target": "使用工具/语言做事以及给予和接受。"
+    },
+    {
+      "source": "adjective দিয়ে মানুষ/জিনিস বর্ণনা।",
+      "target": "用形容词描述人/物。"
+    },
+    {
+      "source": "পছন্দ, দক্ষতা, বোঝা ও কারণ বলা।",
+      "target": "表达喜好、技能、理解及原因。"
+    },
+    {
+      "source": "কোথায় কী আছে—existence sentence।",
+      "target": "某处有什么——存在句。"
+    },
+    {
+      "source": "ধাপ 3 · রূপ ও নিয়ম",
+      "target": "第 3 阶段 · 形态与规则"
+    },
+    {
+      "source": "গণনা, সময়কাল ও frequency।",
+      "target": "计数、时间段与频率。"
+    },
+    {
+      "source": "past tense adjective/noun এবং comparison।",
+      "target": "形容词/名词的过去时以及比较。"
+    },
+    {
+      "source": "ইচ্ছা ও উদ্দেশ্য নিয়ে বাক্য।",
+      "target": "表达愿望和目的的句子。"
+    },
+    {
+      "source": "অনুরোধ, চলমান কাজ ও offer।",
+      "target": "请求、进行中的动作与offer。"
+    },
+    {
+      "source": "অনুমতি, নিষেধ ও ongoing state।",
+      "target": "许可、禁止与ongoing state。"
+    },
+    {
+      "source": "ধাপ 4 · Verb forms",
+      "target": "阶段 4 · 动词形"
+    },
+    {
+      "source": "পরপর কাজ ও adjective/noun সংযোগ।",
+      "target": "连续动作与形容词/名词连接。"
+    },
+    {
+      "source": "নিষেধ, বাধ্যতা ও না করলেও চলে।",
+      "target": "禁止、义务与不做也行。"
+    },
+    {
+      "source": "ability, hobby এবং before structure।",
+      "target": "能力、爱好以及before结构。"
+    },
+    {
+      "source": "অভিজ্ঞতা, multiple actions ও change।",
+      "target": "经验、多个动作与变化。"
+    },
+    {
+      "source": "formal থেকে casual speech-এর foundation।",
+      "target": "从formal到casual speech的基础。"
+    },
+    {
+      "source": "ধাপ 5 · প্রয়োগ ও সংযোগ",
+      "target": "阶段 5 · 应用与连接"
+    },
+    {
+      "source": "মতামত, quote ও confirmation।",
+      "target": "意见、引语与确认。"
+    },
+    {
+      "source": "clause দিয়ে noun বর্ণনা।",
+      "target": "用clause修饰名词。"
+    },
+    {
+      "source": "সময় ও automatic condition।",
+      "target": "时间与automatic condition。"
+    },
+    {
+      "source": "কারো জন্য কিছু করা/পাওয়া।",
+      "target": "为某人做某事/得到。"
+    },
+    {
+      "source": "if/when এবং even if structure।",
+      "target": "if/when以及even if结构。"
+    },
+    {
+      "source": "কোনো Lesson পাওয়া যায়নি",
+      "target": "未找到相关Lesson"
+    },
+    {
+      "source": "অন্য শব্দ লিখুন অথবা filter মুছে আবার চেষ্টা করুন।",
+      "target": "请尝试更换关键词或清除筛选后重试。"
+    },
+    {
+      "source": "সব Lesson দেখুন",
+      "target": "查看所有Lesson"
+    },
+    {
+      "source": "প্রতিটি Lesson থেকে সর্বোচ্চ ফল নিন",
+      "target": "从每个Lesson中获取最大收益"
+    },
+    {
+      "source": "বিষয় দেখে Lesson খুলুন",
+      "target": "按主题浏览Lesson"
+    },
+    {
+      "source": "কার্ডের Japanese pattern ও বাংলা সারাংশ দেখে প্রয়োজনীয় lesson বেছে নিন।",
+      "target": "查看卡片上的Japanese pattern与孟加拉语总结，选择所需的lesson。"
+    },
+    {
+      "source": "উদাহরণসহ অনুশীলন করুন",
+      "target": "结合例句进行练习"
+    },
+    {
+      "source": "ব্যাখ্যা পড়ুন, audio শুনুন এবং quiz দিয়ে নিজের বোঝাপড়া যাচাই করুন।",
+      "target": "阅读解释、聆听音频并通过quiz验证你的理解。"
+    },
+    {
+      "source": "শেষ হলে ✓ দিন",
+      "target": "完成后打勾 ✓"
+    },
+    {
+      "source": "সম্পন্ন lesson আলাদা থাকবে এবং Continue button পরের lesson দেখাবে।",
+      "target": "已完成的lesson将单独列出，Continue button将显示下一lesson。"
+    },
+    {
+      "source": "· বাংলা ভাষাভাষীদের জন্য জাপানি শেখার প্ল্যাটফর্ম",
+      "target": "· 面向孟加拉语使用者的日语学习平台"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "联系我们"
+    }
+  ]
+}

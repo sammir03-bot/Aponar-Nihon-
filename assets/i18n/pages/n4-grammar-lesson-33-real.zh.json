@@ -1,0 +1,458 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n4-grammar-lesson-33-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "跳转至主要内容"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 33 · ইচ্ছা ও শর্ত",
+      "target": "Lesson 33 · 意愿与条件"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "所有 Lesson"
+    },
+    {
+      "source": "ইচ্ছা ও শর্ত",
+      "target": "意愿与条件"
+    },
+    {
+      "source": "ধাপ ২ · 31–35",
+      "target": "步骤 2 · 31–35"
+    },
+    {
+      "source": "কঠোর নির্দেশ/নিষেধ চিনে নেওয়া, সাইনবোর্ডের লেখা ব্যাখ্যা করা এবং কারো বার্তা নির্ভুলভাবে পৌঁছে দেওয়া।",
+      "target": "识别强硬命令/禁止、解释告示牌的文字、准确传达别人的消息。"
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 个详细 grammar block"
+    },
+    {
+      "source": "11টি Japanese example",
+      "target": "11 个 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 个带解释的 practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline、mobile 和 print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "隐藏 あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "尚未完成"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ 标记完成"
+    },
+    {
+      "source": "Lesson 33 · লক্ষ্য",
+      "target": "Lesson 33 · 目标"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "学完本 Lesson 后能做到"
+    },
+    {
+      "source": "命令形 ও 禁止形 দৈনন্দিন ভদ্র অনুরোধ নয়; জরুরি অবস্থা, সাইন, ক্রীড়া, সামরিক/কঠোর ভাষা বা উদ্ধৃত নির্দেশে বেশি আসে। Lesson 33-এর বড় অংশ হলো—নিজে অকারণে কঠোর না হয়ে এই রূপ চিনতে শেখা এবং と দিয়ে লেখা/বার্তা উদ্ধৃত করা।",
+      "target": "命令形 和 禁止形 不是日常礼貌请求；多出现在紧急情况、告示、体育、军事/强硬语言或引用的指示中。Lesson 33 的大部分是——学会识别这些形式，自己不无故强硬，并用 と 引用文字/消息。"
+    },
+    {
+      "source": "তিন group-এর imperative ও prohibitive form তৈরি করবেন",
+      "target": "能造出三个 group 的 imperative 和 prohibitive form"
+    },
+    {
+      "source": "কখন command form ব্যবহার অনুচিত তা বুঝবেন",
+      "target": "能理解何时不宜用 command form"
+    },
+    {
+      "source": "সাইন বা শব্দ 〜と書いてあります／〜と読みます দিয়ে ব্যাখ্যা করবেন",
+      "target": "能用 〜と書いてあります／〜と読みます 解释告示或词"
+    },
+    {
+      "source": "〜と言っていました ও 〜と伝えていただけませんか দিয়ে বার্তা জানাবেন",
+      "target": "能用 〜と言っていました 和 〜と伝えていただけませんか 传达消息"
+    },
+    {
+      "source": "খুব শক্ত ‘কর!’ নির্দেশ",
+      "target": "很强的“做！”命令"
+    },
+    {
+      "source": "গঠন",
+      "target": "构成"
+    },
+    {
+      "source": "ধরন",
+      "target": "类型"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "例句"
+    },
+    {
+      "source": "শেষ う-row → え-row",
+      "target": "末尾 う-row → え-row"
+    },
+    {
+      "source": "る বাদ＋ろ",
+      "target": "去掉 る＋ろ"
+    },
+    {
+      "source": "অনিয়মিত",
+      "target": "不规则"
+    },
+    {
+      "source": "লিখিত/কঠোর বিকল্প",
+      "target": "书面/强硬替代形"
+    },
+    {
+      "source": "座りなさい（উর্ধ্বতন→অধস্তন）",
+      "target": "座りなさい（上级→下级）"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "详细解释"
+    },
+    {
+      "source": "命令形 status-neutral নয়—শ্রোতার ওপর কর্তৃত্ব বা জরুরি বিপদ বোঝায়। আগুনে 逃げろ！, খেলায় 頑張れ！, স্লোগান বা quoted instruction-এ স্বাভাবিক।",
+      "target": "命令形 不是 status-neutral——表示对听者的权威或紧急危险。火灾时 逃げろ！、比赛中 頑張れ！、口号或 quoted instruction 中自然。"
+    },
+    {
+      "source": "দোকান, অফিস, অপরিচিত বা শিক্ষককে নিজের থেকে ব্যবহার করবেন না। ভদ্র নির্দেশে Vてください, নরম অনুরোধে Vていただけませんか।",
+      "target": "不要主动对商店、办公室、陌生人或老师使用。礼貌指示用 Vてください，柔和请求用 Vていただけませんか。"
+    },
+    {
+      "source": "নারী/পুরুষ উভয়ই command বুঝতে পারেন; textbook-এর পুরনো ‘পুরুষের ভাষা’ সরলীকরণে আটকে যাবেন না—মূল বিষয় register ও power relation।",
+      "target": "女性/男性都能理解 command；不要被教材旧的“男性语言”简化困住——关键是 register 和 power relation。"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "要记住的"
+    },
+    {
+      "source": "する→しろ; せよ-ও আনুষ্ঠানিক লিখিত নির্দেশে দেখা যায়।",
+      "target": "する→しろ；せよ 也见于正式书面指示。"
+    },
+    {
+      "source": "頑張れ একটি উৎসাহমূলক fixed use; সব imperative রাগ বোঝায় না।",
+      "target": "頑張れ 是鼓励的 fixed use；并非所有 imperative 都表示愤怒。"
+    },
+    {
+      "source": "বিপদ! থামো!",
+      "target": "危险！停下！"
+    },
+    {
+      "source": "শেষ পর্যন্ত চেষ্টা চালাও!",
+      "target": "坚持努力到最后！"
+    },
+    {
+      "source": "শিক্ষক শিক্ষার্থীদের ‘তাড়াতাড়ি করো’ বলেছেন।",
+      "target": "老师对学生说了“快点做”。"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ 错误"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ 正确"
+    },
+    {
+      "source": "কেন:",
+      "target": "为什么："
+    },
+    {
+      "source": "সেবা-কর্মীকে imperative অপমানজনক; Vてください ব্যবহার করুন।",
+      "target": "对服务人员用 imperative 是侮辱；请用 Vてください。"
+    },
+    {
+      "source": "খুব শক্ত ‘করো না!’ নিষেধ",
+      "target": "很强的“不要做！”禁止"
+    },
+    {
+      "source": "সব group",
+      "target": "所有 group"
+    },
+    {
+      "source": "Dictionary form-এর পরে な বসে। এখানে な sentence-ending prohibition; な-বিশেষণের な নয়।",
+      "target": "Dictionary form 后加 な。这里的 な 是 sentence-ending prohibition；不是 な-形容词的 な。"
+    },
+    {
+      "source": "সাইন, জরুরি সতর্কতা, কঠোর কর্তৃত্ব বা quoted speech-এ আসে। দৈনন্দিন ভদ্র নিষেধে Vないでください বা Vてはいけません ব্যবহার করুন।",
+      "target": "出现在告示、紧急警告、强硬权威或 quoted speech 中。日常礼貌禁止用 Vないでください 或 Vてはいけません。"
+    },
+    {
+      "source": "ます-stem নয়: 入りな ✕ (এটি অন্য রূপের সঙ্গে গুলিয়ে যায়); 入るな ✓।",
+      "target": "不是 ます-stem：入りな ✕（会与另一种形式混淆）；入るな ✓。"
+    },
+    {
+      "source": "এখানে ঢুকবে না।",
+      "target": "不许进这里。"
+    },
+    {
+      "source": "হাল ছেড়ো না!",
+      "target": "不要放弃！"
+    },
+    {
+      "source": "সাইনবোর্ডে ‘ছবি তুলবে না’ লেখা আছে।",
+      "target": "告示牌上写着“禁止拍照”。"
+    },
+    {
+      "source": "লেখা উদ্ধৃত করা, পড়ার ধরণ ও শব্দের অর্থ ব্যাখ্যা করা",
+      "target": "引用文字、解释读音和词义"
+    },
+    {
+      "source": "লেখা",
+      "target": "书写"
+    },
+    {
+      "source": "পড়া",
+      "target": "阅读"
+    },
+    {
+      "source": "অর্থ",
+      "target": "意思"
+    },
+    {
+      "source": "Quotation particle と-এর আগে লেখা/শব্দটি হুবহু আসে। と書いてあります result state—কোথাও সেই লেখা দেওয়া আছে।",
+      "target": "Quotation particle と 前文字/词原样出现。と書いてあります 是 result state——某处写着那文字。"
+    },
+    {
+      "source": "〜と読みます pronunciation/reading জানায়। 〜という意味です পুরো শব্দ বা বাক্যের অর্থ ব্যাখ্যা করে; という-এর আগে plain content।",
+      "target": "〜と読みます 表示 pronunciation/reading。〜という意味です 解释整个词或句子的意思；という 前是 plain content。"
+    },
+    {
+      "source": "সাইন উদ্ধৃত করলে command নিজে শ্রোতাকে দেওয়া হচ্ছে না; কেবল লেখা report করা হচ্ছে।",
+      "target": "引用告示时 command 不是说给听者本人的；只是 report 文字。"
+    },
+    {
+      "source": "স্থান に: ドアに「押す」と書いてあります。 উদ্ধৃতি と।",
+      "target": "场所 に：ドアに「押す」と書いてあります。引用 と。"
+    },
+    {
+      "source": "দরজায় ‘ঠেলুন’ লেখা আছে।",
+      "target": "门上写着“推”。"
+    },
+    {
+      "source": "এই কানজিটি ‘কিনএন’ পড়ে।",
+      "target": "这个汉字读“kin'en”。"
+    },
+    {
+      "source": "立入禁止 মানে প্রবেশ করা নিষেধ।",
+      "target": "立入禁止 的意思是禁止进入。"
+    },
+    {
+      "source": "লেখার content quotation と নেয়; を নয়।",
+      "target": "文字的 content 用 quotation と；不用 を。"
+    },
+    {
+      "source": "কারো আগের কথা report করা এবং বার্তা পৌঁছাতে অনুরোধ",
+      "target": "Report 别人以前的话并请求传达消息"
+    },
+    {
+      "source": "বার্তার অনুরোধ",
+      "target": "传达消息的请求"
+    },
+    {
+      "source": "言いました একটি নির্দিষ্ট utterance বলেছে; 言っていました আগের বলা বার্তা/তথ্য এখন report করছি—এমন অনুভূতি।",
+      "target": "言いました 表示说了某个 utterance；言っていました 有“现在 report 以前说的消息/信息”的感觉。"
+    },
+    {
+      "source": "伝える মানে খবর পৌঁছে দেওয়া। Xさんに〜と伝えていただけませんか = X-কে কি দয়া করে … জানাবেন? Person-এর পরে に, message-এর পরে と।",
+      "target": "伝える 是传达消息。Xさんに〜と伝えていただけませんか = 能否请您告诉 X…？Person 后 に，message 后 と。"
+    },
+    {
+      "source": "Quoted clause plain style নেয়; polite কথাকে report করলেও quote paraphrase করলে 明日は休むと言っていました। হুবহু quote হলে 「明日は休みます」と…。",
+      "target": "Quoted clause 用 plain style；即使 report 礼貌的话，paraphrase 时 明日は休むと言っていました。原样 quote 时「明日は休みます」と…。"
+    },
+    {
+      "source": "যাকে বলবেন: 人に; কী বলবেন: 内容と।",
+      "target": "对谁说：人に；说什么：内容と。"
+    },
+    {
+      "source": "ইয়ামাদা বলেছেন তিনি মিটিংয়ে থাকতে পারবেন না।",
+      "target": "山田说他不能参加会议。"
+    },
+    {
+      "source": "বিভাগীয় প্রধানকে ট্রেন দেরি করছে—এ কথা জানাবেন কি?",
+      "target": "能否告诉部长电车晚点了？"
+    },
+    {
+      "source": "বার্তার recipient に নেয়, を নয়।",
+      "target": "消息的 recipient 用 に，不用 を。"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "一目了然的差别"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "什么情况用哪个？"
+    },
+    {
+      "source": "রূপ",
+      "target": "形式"
+    },
+    {
+      "source": "ব্যবহার",
+      "target": "用法"
+    },
+    {
+      "source": "ভদ্র বিকল্প",
+      "target": "礼貌替代"
+    },
+    {
+      "source": "জরুরি/কঠোর ‘যাও!’",
+      "target": "紧急/强硬“去！”"
+    },
+    {
+      "source": "কঠোর ‘যেও না!’",
+      "target": "强硬“不要去！”"
+    },
+    {
+      "source": "লেখা report",
+      "target": "report 文字"
+    },
+    {
+      "source": "কঠোরতা বক্তার নয়",
+      "target": "强硬不是说话人的"
+    },
+    {
+      "source": "বার্তা পৌঁছাতে অনুরোধ",
+      "target": "请求传达消息"
+    },
+    {
+      "source": "খুব ভদ্র",
+      "target": "非常礼貌"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "实际对话"
+    },
+    {
+      "source": "অফিসে ফোনের বার্তা",
+      "target": "办公室电话留言"
+    },
+    {
+      "source": "সাতো আছেন কি?",
+      "target": "佐藤在吗？"
+    },
+    {
+      "source": "এখন বাইরে গেছেন।",
+      "target": "现在出去了。"
+    },
+    {
+      "source": "তাহলে মিটিং তিনটা থেকে—এ কথা জানাবেন কি?",
+      "target": "那能否告诉他会议从三点开始？"
+    },
+    {
+      "source": "জি। ফিরলে জানাব।",
+      "target": "好的。他回来就告诉他。"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "自我检查"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice 和带解释的答案"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "先在笔记本上写答案，然后点击问题核对答案和原因。"
+    },
+    {
+      "source": "1. 話す-এর imperative form বানান।",
+      "target": "1. 造 話す 的 imperative form。"
+    },
+    {
+      "source": "2. ‘এখানে গাড়ি থামিও না!’—prohibitive বলুন।",
+      "target": "2. “这里不许停车！”——说 prohibitive。"
+    },
+    {
+      "source": "3. ‘সাইনবোর্ডে “প্রবেশদ্বার” লেখা আছে’ বলুন।",
+      "target": "3. 说“告示牌上写着‘入口’”。"
+    },
+    {
+      "source": "লেখার content＋と書いてあります।",
+      "target": "文字的 content＋と書いてあります。"
+    },
+    {
+      "source": "4. ‘ম্যানেজারকে আমি দেরি করব বলে জানাবেন কি?’ বলুন।",
+      "target": "4. 说“能否告诉经理我会迟到？”。"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "一句话 Master Key"
+    },
+    {
+      "source": "命令形/禁止形 আগে চিনুন, পরে ব্যবহার করুন—এগুলো শক্ত register। লেখা/পড়া/অর্থ/বার্তা সবকিছুর content-কে quotation particle と দিয়ে বেঁধে দিন।",
+      "target": "命令形/禁止形 先识别，后使用——它们是强硬 register。把文字/读音/意思/消息所有内容的 content 用 quotation particle と 连接。"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "可信参考"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "大纲与核对"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "这个独立的中文 lesson 结合 Minna no Nihongo II 的 lesson sequence、official JLPT N4 scope 和 Japan Foundation 的 learner resources 制作。例句和中文解释均为新写。"
+    },
+    {
+      "source": "← আগের Lesson 32",
+      "target": "← 上一个 Lesson 32"
+    },
+    {
+      "source": "পরের Lesson 34 →",
+      "target": "下一个 Lesson 34 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson 索引"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "学习目标"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "差别表"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "会话"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress 加载中…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "为学习者免费提供的详细中文 self-study edition。"
+    }
+  ]
+}

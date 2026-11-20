@@ -1,0 +1,246 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n5-grammar-lesson-11-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 11 | Counters・Quantity・Duration・だけ | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 11 | Counters・Quantity・Duration・だけ | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "কতজন, কতটা, কত সময় লাগে, কতবার — সংখ্যা দিয়ে কথা বলা",
+      "target": "多少人、多少量、需要多少时间、多少次——用数字说话"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar 开始"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "今天的 Learning Goal"
+    },
+    {
+      "source": "Counter ব্যবহার",
+      "target": "使用 Counter"
+    },
+    {
+      "source": "সময় লাগে বলা",
+      "target": "说需要时间"
+    },
+    {
+      "source": "frequency/only বলা",
+      "target": "说 frequency/only"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "简单讲解 + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "每个 pattern 先看 structure，然后大声说 example。按 Audio button 可以听 Japanese sentence。"
+    },
+    {
+      "source": "কোন জিনিস কতটা/কতটি তা verb-এর আগে counter দিয়ে বলা হয়।",
+      "target": "某物有多少，用 counter 放在 verb 前表示。"
+    },
+    {
+      "source": "Japanese counter noun-এর পরে না, verb-এর আগে বসে।",
+      "target": "Japanese counter 不放在 noun 后，而是放在 verb 前。"
+    },
+    {
+      "source": "রিনগো ও মিত্ৎসু কাইমাশিতা।",
+      "target": "りんごを3つ買いました。"
+    },
+    {
+      "source": "আমি ৩টা আপেল কিনেছি।",
+      "target": "我买了 3 个苹果。"
+    },
+    {
+      "source": "কিত্তে ও গোমাই কুদাসাই।",
+      "target": "切手を5枚ください。"
+    },
+    {
+      "source": "৫টা স্ট্যাম্প দিন।",
+      "target": "请给我 5 张邮票。"
+    },
+    {
+      "source": "গাকুসেই গা ফুতারি ইমাসু।",
+      "target": "学生が2人います。"
+    },
+    {
+      "source": "২ জন ছাত্র আছে।",
+      "target": "有 2 名学生。"
+    },
+    {
+      "source": "কোন কাজ কত সময় ধরে হয়/করেছি তা period দিয়ে বলা হয়।",
+      "target": "某个动作持续多久/做了多久，用 period 表示。"
+    },
+    {
+      "source": "ঘণ্টা/দিন/বছর duration সরাসরি verb-এর আগে আসতে পারে।",
+      "target": "小时/天/年 duration 可以直接放在 verb 前。"
+    },
+    {
+      "source": "মাইনিচি নিজিকান বেনকিয়োশিমাসু।",
+      "target": "毎日2時間勉強します。"
+    },
+    {
+      "source": "প্রতিদিন ২ ঘণ্টা পড়ি।",
+      "target": "每天学习 2 小时。"
+    },
+    {
+      "source": "নিহোন নি সান্নেন ইমাশিতা।",
+      "target": "日本に3年いました。"
+    },
+    {
+      "source": "জাপানে ৩ বছর ছিলাম।",
+      "target": "我在日本待了 3 年。"
+    },
+    {
+      "source": "কোথাও যেতে/কাজ শেষ করতে কত সময় লাগে তা かかります দিয়ে বলা হয়।",
+      "target": "去某地/完成工作需要多少时间，用 かかります 表示。"
+    },
+    {
+      "source": "どのくらいかかりますか = কত সময় লাগে?",
+      "target": "どのくらいかかりますか = 需要多少时间？"
+    },
+    {
+      "source": "একি মাদে জুপ্পুন কাকারিমাসু।",
+      "target": "駅まで10分かかります。"
+    },
+    {
+      "source": "স্টেশন পর্যন্ত ১০ মিনিট লাগে।",
+      "target": "到车站需要 10 分钟。"
+    },
+    {
+      "source": "তোকিয়ো কারা ওওসাকা মাদে সানজিকান গুরাই কাকারিমাসু।",
+      "target": "東京から大阪まで3時間ぐらいかかります。"
+    },
+    {
+      "source": "টোকিও থেকে ওসাকা প্রায় ৩ ঘণ্টা লাগে।",
+      "target": "从东京到大阪大约需要 3 小时。"
+    },
+    {
+      "source": "এক নির্দিষ্ট সময়ের মধ্যে কতবার কাজ করি তা に〜回 দিয়ে বলা হয়।",
+      "target": "在一定时间内做多少次，用 に〜回 表示。"
+    },
+    {
+      "source": "1週間に2回 = সপ্তাহে ২ বার।",
+      "target": "1週間に2回 = 一周 2 次。"
+    },
+    {
+      "source": "ইশ্শুকান নি নিকাই নিহোনগো ও বেনকিয়োশিমাসু।",
+      "target": "1週間に2回日本語を勉強します。"
+    },
+    {
+      "source": "সপ্তাহে ২ বার জাপানি পড়ি।",
+      "target": "一周学 2 次日语。"
+    },
+    {
+      "source": "ইক্কাগেৎসু নি ইক্কাই এইগা ও মিমাসু।",
+      "target": "1か月に1回映画を見ます。"
+    },
+    {
+      "source": "মাসে ১ বার সিনেমা দেখি।",
+      "target": "一个月看 1 次电影。"
+    },
+    {
+      "source": "শুধু/মাত্র বোঝাতে だけ ব্যবহার হয়।",
+      "target": "表示只有/仅用 だけ。"
+    },
+    {
+      "source": "だけ অনেক সময় を/が এর জায়গায় বসতে পারে।",
+      "target": "だけ 很多时候可以代替 を/が。"
+    },
+    {
+      "source": "মিজু দাকে নোমিমাসু।",
+      "target": "水だけ飲みます。"
+    },
+    {
+      "source": "শুধু পানি পান করি।",
+      "target": "只喝水。"
+    },
+    {
+      "source": "জুপ্পুন দাকে ইয়াসুমিমাসু।",
+      "target": "10分だけ休みます。"
+    },
+    {
+      "source": "শুধু ১০ মিনিট বিশ্রাম নিই।",
+      "target": "只休息 10 分钟。"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "口头 Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "把这些句子像 interview/classroom conversation 一样读 3 遍。"
+    },
+    {
+      "source": "রিনগো ও ইকুৎসু কাইমাশিতা কা।",
+      "target": "りんごをいくつ買いましたか。"
+    },
+    {
+      "source": "আপেল কয়টা কিনেছেন?",
+      "target": "买了几个苹果？"
+    },
+    {
+      "source": "মিত্ৎসু কাইমাশিতা।",
+      "target": "3つ買いました。"
+    },
+    {
+      "source": "৩টা কিনেছি।",
+      "target": "买了 3 个。"
+    },
+    {
+      "source": "গাক্কো মাদে দোনো কুরাই কাকারিমাসু কা।",
+      "target": "学校までどのくらいかかりますか。"
+    },
+    {
+      "source": "স্কুল পর্যন্ত কত সময় লাগে?",
+      "target": "到学校需要多少时间？"
+    },
+    {
+      "source": "সানজুপ্পুন গুরাই কাকারিমাসু।",
+      "target": "30分ぐらいかかります。"
+    },
+    {
+      "source": "প্রায় ৩০ মিনিট লাগে।",
+      "target": "大约需要 30 分钟。"
+    },
+    {
+      "source": "ইশ্শুকান নি নানকাই বেনকিয়োশিমাসু কা।",
+      "target": "1週間に何回勉強しますか。"
+    },
+    {
+      "source": "সপ্তাহে কয়বার পড়েন?",
+      "target": "一周学习几次？"
+    },
+    {
+      "source": "✅ りんごを3つ買いました。 — counter সাধারণত verb-এর আগে।",
+      "target": "✅ りんごを3つ買いました。 — counter 通常在 verb 前。"
+    },
+    {
+      "source": "✅ 1週間に2回勉強します。 — frequency হলে に।",
+      "target": "✅ 1週間に2回勉強します。 — 是 frequency 时用 に。"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "自我测试"
+    },
+    {
+      "source": "সপ্তাহে ২ বার = ?",
+      "target": "一周 2 次 = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 11 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 11 • Verified Premium Detailed Version"
+    }
+  ]
+}

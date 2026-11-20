@@ -1,0 +1,2350 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "n2-quartet-study-guide",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "QUARTET II বাংলা স্টাডি সহায়িকা | আপনার নিহোন",
+      "target": "QUARTET II Bengali Study Guide | আপনার নিহোন"
+    },
+    {
+      "source": "পাঠে যান",
+      "target": "Go to lesson"
+    },
+    {
+      "source": "আপনার নিহোন · শেখার লাইব্রেরি",
+      "target": "আপনার নিহোন · Learning Library"
+    },
+    {
+      "source": "গ্রামার অনুশীলন",
+      "target": "Grammar practice"
+    },
+    {
+      "source": "বাংলা স্টাডি সহায়িকা",
+      "target": "Bengali Study Guide"
+    },
+    {
+      "source": "অধ্যায় ৭–১২ · নির্বাচিত ৩৬ গ্রামার · ৬টি নিজস্ব Reading passage · চার দক্ষতার অনুশীলন",
+      "target": "Chapters 7–12 · 36 Selected Grammar Points · 6 Original Reading Passages · 4-Skills Practice"
+    },
+    {
+      "source": "QUARTET II-এর ৭–১২ অধ্যায়ের থিম অনুসরণে নির্বাচিত ৩৬টি গ্রামারের নিজস্ব সহায়ক অনুশীলন। এটি মূল বইয়ের সম্পূর্ণ গ্রামার সূচি নয়।",
+      "target": "Original auxiliary practice for 36 grammar points selected based on the themes of Chapters 7–12 of QUARTET II. This is not the complete grammar index of the main textbook."
+    },
+    {
+      "source": "চার দক্ষতার গাইড",
+      "target": "4-Skills Guide"
+    },
+    {
+      "source": "অধ্যায় বেছে নিন",
+      "target": "Select chapter"
+    },
+    {
+      "source": "শুরু ও Form Guide",
+      "target": "Introduction & Form Guide"
+    },
+    {
+      "source": "অধ্যায় ৭ · ভিন্ন সংস্কৃতি, নতুন উপলব্ধি",
+      "target": "Chapter 7 · Different Cultures, New Realizations"
+    },
+    {
+      "source": "অধ্যায় ৮ · পেশাদারিত্ব ও সাক্ষাৎকার",
+      "target": "Chapter 8 · Professionalism and Interviews"
+    },
+    {
+      "source": "অধ্যায় ৯ · গল্প, অনুভূতি ও পর্যালোচনা",
+      "target": "Chapter 9 · Stories, Feelings, and Reviews"
+    },
+    {
+      "source": "অধ্যায় ১০ · তথ্য দিয়ে সমাজ বোঝা",
+      "target": "Chapter 10 · Understanding Society Through Data"
+    },
+    {
+      "source": "অধ্যায় ১১ · শব্দের আড়ালের অর্থ",
+      "target": "Chapter 11 · The Hidden Meanings Behind Words"
+    },
+    {
+      "source": "অধ্যায় ১২ · চিন্তার পরিবর্তন ও সমাজ",
+      "target": "Chapter 12 · Changing Thoughts and Society"
+    },
+    {
+      "source": "শেষ রিভিশন",
+      "target": "Final Revision"
+    },
+    {
+      "source": "আপনার পরের ধাপ: QUARTET II",
+      "target": "Your Next Step: QUARTET II"
+    },
+    {
+      "source": "I-এ অধ্যায় ১–৬ ও N3-এর ভিত্তি; II-এ অধ্যায় ৭–১২ ও মূলত N2-স্তরের কাজ। এই সহায়িকার সব প্যাসেজ, ব্যাখ্যা, উদাহরণ ও প্রশ্ন নিজস্বভাবে লেখা।",
+      "target": "Part I covers Chapters 1–6 and the N3 foundation; Part II covers Chapters 7–12 and primarily N2-level work. All passages, explanations, examples, and questions in this guide are independently written."
+    },
+    {
+      "source": "একটি অধ্যায় যেভাবে পড়বেন",
+      "target": "How to study a chapter"
+    },
+    {
+      "source": "শব্দ ও কানজি দেখে নিন।",
+      "target": "Check the vocabulary and kanji."
+    },
+    {
+      "source": "নির্বাচিত গ্রামারের Form ও উদাহরণ বুঝুন।",
+      "target": "Understand the form and examples of the selected grammar."
+    },
+    {
+      "source": "Reading Lab পড়ে আগে নিজে প্রশ্নের উত্তর দিন।",
+      "target": "Read the Reading Lab and try answering the questions yourself first."
+    },
+    {
+      "source": "Writing model নিজের তথ্য দিয়ে বদলান।",
+      "target": "Modify the Writing model with your own information."
+    },
+    {
+      "source": "Speaking dialogue জোড়ায় বা নিজে অনুশীলন করুন।",
+      "target": "Practice the Speaking dialogue in pairs or by yourself."
+    },
+    {
+      "source": "Listening Lab দুবার শুনে নোট নিন; তারপর transcript মিলিয়ে দেখুন।",
+      "target": "Listen to the Listening Lab twice and take notes; then check the transcript."
+    },
+    {
+      "source": "বিশেষ্য: ব্যক্তি, বস্তু বা বিষয়ের নাম।",
+      "target": "Noun: Name of a person, object, or subject."
+    },
+    {
+      "source": "ক্রিয়ার dictionary form; এর মানে সব ক্রিয়া る দিয়ে শেষ হবে না।",
+      "target": "Dictionary form of verbs; this means not all verbs end with る."
+    },
+    {
+      "source": "বর্তমান বা ভবিষ্যতের সাধারণ নেতিবাচক রূপ।",
+      "target": "General negative form of the present or future."
+    },
+    {
+      "source": "সাধারণ অতীত রূপ।",
+      "target": "General past form."
+    },
+    {
+      "source": "ক্রিয়ার সংযোগের て-form; কোথাও で হয়।",
+      "target": "て-form of verb conjugation; sometimes it becomes で."
+    },
+    {
+      "source": "ます-রূপ থেকে শুধু ます বাদ দিন।",
+      "target": "Simply drop ます from the ます-form."
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-adjective"
+    },
+    {
+      "source": "い-বিশেষণ, যেমন বড়, দামি। নেতিবাচক ও অতীতে রূপ বদলায়।",
+      "target": "い-adjective, such as big, expensive. Changes form in negative and past tenses."
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-adjective"
+    },
+    {
+      "source": "বিশেষ্যকে বর্ণনা করলে な লাগে। সব গঠনে な থাকবে না; পাঠের সংযোগ দেখুন।",
+      "target": "Requires な when describing a noun. な is not present in all structures; check the lesson connections."
+    },
+    {
+      "source": "ます・です ছাড়া সাধারণ রূপ: বর্তমান, অতীত, ইতিবাচক ও নেতিবাচক। N ও な-বিশেষণের だ কখন বাদ/な/の হবে তা প্রতিটি নিয়মে দেওয়া আছে।",
+      "target": "Plain forms other than ます/です: present, past, affirmative, and negative. When to omit だ or use な/の for Nouns and な-adjectives is explained in each rule."
+    },
+    {
+      "source": "সম্ভাব্য রূপ",
+      "target": "Potential form"
+    },
+    {
+      "source": "কোনো কাজ করতে পারা বোঝায়।",
+      "target": "Expresses the ability to do something."
+    },
+    {
+      "source": "ইচ্ছার রূপ",
+      "target": "Volitional form"
+    },
+    {
+      "source": "“করি/করব” ধরনের volitional form।",
+      "target": "\"Do/Will\" type volitional form."
+    },
+    {
+      "source": "শর্তের ば-form।",
+      "target": "Conditional ba-form."
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Learning goal"
+    },
+    {
+      "source": "অভিজ্ঞতা থেকে শেখা ও ভদ্রভাবে মতের পার্থক্য বলা",
+      "target": "Learning from experience and politely expressing differences of opinion"
+    },
+    {
+      "source": "পড়ার কৌশল",
+      "target": "Reading strategy"
+    },
+    {
+      "source": "বাক্যে কর্তা বাদ গেলে আগের বাক্য ও কথোপকথনের প্রবাহ দেখুন। অনুমান আর স্পষ্টভাবে বলা তথ্য আলাদা রাখুন।",
+      "target": "If the subject is missing in a sentence, look at the flow of the previous sentence and conversation. Keep assumptions and explicitly stated information separate."
+    },
+    {
+      "source": "শব্দ ও ফুরিগানা",
+      "target": "Vocabulary and furigana"
+    },
+    {
+      "source": "বাংলা অর্থ",
+      "target": "Bengali meaning"
+    },
+    {
+      "source": "ভিন্ন সংস্কৃতি",
+      "target": "Different culture"
+    },
+    {
+      "source": "ভুল বোঝাবুঝি",
+      "target": "Misunderstanding"
+    },
+    {
+      "source": "অভ্যাস বা রীতি",
+      "target": "Habit or custom"
+    },
+    {
+      "source": "সংকোচ বা সংযম",
+      "target": "Hesitation or restraint"
+    },
+    {
+      "source": "যাচাই করা",
+      "target": "Verification"
+    },
+    {
+      "source": "পারস্পরিক আদানপ্রদান",
+      "target": "Mutual exchange"
+    },
+    {
+      "source": "কানজি",
+      "target": "Kanji"
+    },
+    {
+      "source": "ইঙ্গিত",
+      "target": "Hint"
+    },
+    {
+      "source": "উদাহরণ শব্দ",
+      "target": "Example word"
+    },
+    {
+      "source": "ভিন্ন",
+      "target": "Different"
+    },
+    {
+      "source": "বোঝা বা সমাধান",
+      "target": "Understanding or resolution"
+    },
+    {
+      "source": "অভ্যস্ত",
+      "target": "Accustomed"
+    },
+    {
+      "source": "Grammar Core · নির্বাচিত ৬টি বিষয়",
+      "target": "Grammar Core · Selected 6 topics"
+    },
+    {
+      "source": "১. N に",
+      "target": "1. N ni"
+    },
+    {
+      "source": "শুধু … নয়, অন্যদের ক্ষেত্রেও",
+      "target": "Not only ..., but also for others"
+    },
+    {
+      "source": "একটি শ্রেণির বাইরে একই কথা আরও বিস্তৃত শ্রেণিতেও প্রযোজ্য হলে ব্যবহার করুন। পরে も বা",
+      "target": "Use when something applicable to a specific category also applies to a broader category. Later, mo or"
+    },
+    {
+      "source": "く-এর মতো বিস্তারের ইঙ্গিত থাকতে পারে।",
+      "target": "There may be an indication of expansion like ku."
+    },
+    {
+      "source": "だけでなく-এর মতো বিস্তার বোঝায়; “এই সময়ের মধ্যে সীমাবদ্ধ” অর্থের に",
+      "target": "Indicates expansion like dake de nai; ni meaning \"limited to this time\""
+    },
+    {
+      "source": "り আলাদা।",
+      "target": "Ri is different."
+    },
+    {
+      "source": "শুধু বিদেশি শিক্ষার্থী নয়, এলাকার মানুষও অংশ নিতে পারেন।",
+      "target": "Not only foreign students, but local people can also participate."
+    },
+    {
+      "source": "এই সমস্যা শুধু জাপানে নয়, অন্য দেশেও আছে।",
+      "target": "This problem is not only in Japan, but also in other countries."
+    },
+    {
+      "source": "অনুশীলন ও উত্তর ব্যাখ্যা →",
+      "target": "Practice and answer explanation →"
+    },
+    {
+      "source": "২. ～",
+      "target": "2. ~"
+    },
+    {
+      "source": "একদিকে …, অন্যদিকে …",
+      "target": "On the one hand ..., on the other hand ..."
+    },
+    {
+      "source": "একই বিষয় বা পরিস্থিতির দুটি ভিন্ন দিক পাশাপাশি তুলে ধরে। ভালো-মন্দ, সুবিধা-অসুবিধা বা পরস্পর ভিন্ন প্রবণতা তুলনা করা যায়।",
+      "target": "Presents two different aspects of the same issue or situation side by side. Good and bad, pros and cons, or mutually different trends can be compared."
+    },
+    {
+      "source": "V・い-বিশেষণ plain +",
+      "target": "V・i-adjective plain +"
+    },
+    {
+      "source": "で / な-বিশেষণ + な",
+      "target": "de / na-adjective + na"
+    },
+    {
+      "source": "だ শুধু পরিবর্তন এক দিকেই এগোনো বোঝাতে পারে; এই পাঠে শেষে で আছে।",
+      "target": "Da alone can imply that change is progressing in only one direction; this lesson ends with de."
+    },
+    {
+      "source": "শহর একদিকে সুবিধাজনক, অন্যদিকে জীবনযাত্রার খরচ বেশি।",
+      "target": "The city is convenient on the one hand, but the cost of living is high on the other."
+    },
+    {
+      "source": "বিদেশের জীবন আনন্দের, আবার পরিবারের জন্য মনও খারাপ হয়।",
+      "target": "Life abroad is fun, but I also miss my family."
+    },
+    {
+      "source": "৩. ～ものの",
+      "target": "3. ~ monono"
+    },
+    {
+      "source": "যদিও …, তবু …",
+      "target": "Although ..., still ..."
+    },
+    {
+      "source": "আগের তথ্য সত্য মেনে নিয়ে পরের অংশে তার প্রত্যাশিত ফল না হওয়ার কথা বলুন। লিখিত বা কিছুটা আনুষ্ঠানিক ব্যাখ্যায় বেশি মানায়।",
+      "target": "Accepting the previous information as true, state that the expected result does not follow in the subsequent part. It suits written or somewhat formal explanations better."
+    },
+    {
+      "source": "V・い-বিশেষণ plain + ものの / な-বিশেষণ + なものの / N + であるものの",
+      "target": "V・i-adjective plain + ものの / na-adjective + なものの / N + であるものの"
+    },
+    {
+      "source": "ものの-এর পরে বাস্তব ফল বা অবস্থা দিন। শুধু দুটি কাজের ক্রম বোঝাতে ব্যবহার করবেন না।",
+      "target": "Provide the actual result or situation after ものの. Do not use it just to show the chronological order of two actions."
+    },
+    {
+      "source": "ব্যাখ্যা পড়েছি ঠিকই, কিন্তু ব্যবহারের পদ্ধতি এখনো বুঝিনি।",
+      "target": "I read the explanation, but I still don't understand how to use it."
+    },
+    {
+      "source": "জাপানি বলতে পারলেও সম্মানসূচক ভাষায় আত্মবিশ্বাস নেই।",
+      "target": "Even though I can speak Japanese, I lack confidence in honorific language."
+    },
+    {
+      "source": "৪. ～からこそ",
+      "target": "4. ～からこそ"
+    },
+    {
+      "source": "ঠিক … বলেই",
+      "target": "Precisely because …"
+    },
+    {
+      "source": "একটি কারণকে বিশেষ গুরুত্ব দিয়ে ফলের সঙ্গে জুড়ে দেয়। কারণটি দুর্বল নয়; বক্তা সেটিকেই মূল প্রেরণা হিসেবে সামনে আনছেন।",
+      "target": "Connects a special emphasis on a reason to the result. The reason is not weak; the speaker brings it forward as the primary motivation."
+    },
+    {
+      "source": "Plain form + からこそ（N・な-বিশেষণ: だ + からこそ）",
+      "target": "Plain form + からこそ（N・na-adjective: だ + からこそ）"
+    },
+    {
+      "source": "から সাধারণ কারণ, からこそ সেই কারণকে জোর দেয়। পরে ইতিবাচক উপদেশ বা মূল্যায়ন প্রায়ই আসে।",
+      "target": "から is a general reason, while からこそ emphasizes that reason. A positive advice or evaluation often follows."
+    },
+    {
+      "source": "সংস্কৃতি আলাদা বলেই আলোচনা করা জরুরি।",
+      "target": "Precisely because cultures are different, discussion is necessary."
+    },
+    {
+      "source": "প্রিয় বন্ধু বলেই সৎভাবে জানাতে চাই।",
+      "target": "Precisely because you are a dear friend, I want to tell you honestly."
+    },
+    {
+      "source": "৫. N を",
+      "target": "5. N を"
+    },
+    {
+      "source": "…এর মাধ্যমে / …জুড়ে",
+      "target": "Through … / Throughout …"
+    },
+    {
+      "source": "কোনো অভিজ্ঞতা, মাধ্যম বা ব্যক্তির সাহায্যে ফল পাওয়া বোঝায়। সময়ের বিশেষ্যের সঙ্গে পুরো সময়জুড়েও বোঝাতে পারে।",
+      "target": "Indicates that a result is obtained with the help of an experience, medium, or person. With time nouns, it can also indicate the entire duration."
+    },
+    {
+      "source": "অভিজ্ঞতার মাধ্যমে শেখা এবং সারা বছরজুড়ে—এই দুই ব্যবহার প্রসঙ্গ দেখে আলাদা করুন।",
+      "target": "Distinguish between these two uses—learning through experience and throughout the whole year—based on the context."
+    },
+    {
+      "source": "মতবিনিময় অনুষ্ঠানের মাধ্যমে নতুন বন্ধু হয়েছে।",
+      "target": "I made new friends through the exchange program."
+    },
+    {
+      "source": "দোকানটি সারা বছর খোলা থাকে।",
+      "target": "The shop is open all year round."
+    },
+    {
+      "source": "৬. ～わけにはいかない",
+      "target": "6. ～わけにはいかない"
+    },
+    {
+      "source": "পরিস্থিতিগত কারণে … করা চলে না",
+      "target": "Cannot … due to circumstances"
+    },
+    {
+      "source": "কাজটি করতে সক্ষম হলেও দায়িত্ব, প্রতিশ্রুতি বা সামাজিক কারণে তা করা গ্রহণযোগ্য নয়। নেতিবাচক ক্রিয়ার সঙ্গে “না করে থাকা চলে না”, অর্থাৎ করতেই হবে।",
+      "target": "Even if one is capable of doing the action, it is not acceptable to do it due to responsibility, promise, or social reasons. With negative verbs, it means \"cannot afford not to do it,\" i.e., it must be done."
+    },
+    {
+      "source": "সরাসরি অক্ষমতা できない থেকে আলাদা।",
+      "target": "Different from direct inability できない."
+    },
+    {
+      "source": "まないわけにはいかない মানে বিশ্রাম নিতেই হবে।",
+      "target": "まないわけにはいかない means one must rest."
+    },
+    {
+      "source": "কথা দিয়েছি বলে এখন আর না করা চলে না।",
+      "target": "Since I made a promise, I cannot back out now."
+    },
+    {
+      "source": "জ্বর আছে বলে বিশ্রাম না নিয়ে থাকা চলে না।",
+      "target": "Having a fever, I cannot afford not to rest."
+    },
+    {
+      "source": "Reading Lab · একটি আমন্ত্রণ, দুই রকম ধারণা",
+      "target": "Reading Lab · One Invitation, Two Interpretations"
+    },
+    {
+      "source": "নিজস্ব অনুশীলনের প্যাসেজ · আগে পুরো জাপানি অংশ পড়ুন, তারপর বাংলা মিলিয়ে নিন।",
+      "target": "Personal Practice Passage · Read the entire Japanese section first, then check the translation."
+    },
+    {
+      "source": "বাক্য ১",
+      "target": "Sentence 1"
+    },
+    {
+      "source": "মিনাকে এক বন্ধু বলল, “আবার বেড়াতে এসো।”",
+      "target": "A friend said to Mina, \"Come visit again.\""
+    },
+    {
+      "source": "প্রথম বাক্যে বলা তথ্যটি আমন্ত্রণের ভাষা; এখনো সময় নির্দিষ্ট হয়নি।",
+      "target": "The information stated in the first sentence is the language of invitation; the time has not been specified yet."
+    },
+    {
+      "source": "বাক্য ২",
+      "target": "Sentence 2"
+    },
+    {
+      "source": "পরদিন সে কোনো যোগাযোগ না করেই বন্ধুর বাসায় গেল।",
+      "target": "The next day, she went to her friend's house without making any contact."
+    },
+    {
+      "source": "ことなく মানে না করে; মিনার আগেই খবর না দেওয়া এখানে গুরুত্বপূর্ণ।",
+      "target": "ことなく means without doing; Mina's failure to notify beforehand is important here."
+    },
+    {
+      "source": "বাক্য ৩",
+      "target": "Sentence 3"
+    },
+    {
+      "source": "কিন্তু বন্ধু তখন কাজে বের হওয়ার ঠিক আগের অবস্থায় ছিল।",
+      "target": "However, the friend was just about to leave for work at that time."
+    },
+    {
+      "source": "しかし আগের প্রত্যাশার সঙ্গে বাস্তব অবস্থার অমিল আনে।",
+      "target": "しかし introduces a mismatch between the previous expectation and the actual situation."
+    },
+    {
+      "source": "বাক্য ৪",
+      "target": "Sentence 4"
+    },
+    {
+      "source": "দুজন সময়সূচি নিশ্চিত করার গুরুত্ব নিয়ে আলোচনা করল।",
+      "target": "The two discussed the importance of confirming schedules."
+    },
+    {
+      "source": "সমাধান হিসেবে আলোচনা এসেছে; কোনো দেশের সব মানুষকে নিয়ে নিয়ম বলা হয়নি।",
+      "target": "Discussion came up as a solution; no rule was stated about all people of a certain country."
+    },
+    {
+      "source": "বাক্য ৫",
+      "target": "Sentence 5"
+    },
+    {
+      "source": "এই অভিজ্ঞতার মাধ্যমে মিনা কথার পাশাপাশি পরিস্থিতিও যাচাই করতে শুরু করল।",
+      "target": "Through this experience, Mina started checking the situation alongside the conversation."
+    },
+    {
+      "source": "して অভিজ্ঞতার মাধ্যমে শেখা; ようになった আচরণের পরিবর্তন।",
+      "target": "Learning through the experience of して; behavioral changes through ようになった."
+    },
+    {
+      "source": "প্রশ্ন ১.",
+      "target": "Question 1."
+    },
+    {
+      "source": "মিনা যাওয়ার আগে কী করেনি?",
+      "target": "What did Mina NOT do before leaving?"
+    },
+    {
+      "source": "উত্তর ও কারণ দেখুন",
+      "target": "See answer and reason"
+    },
+    {
+      "source": "বন্ধুর সময় আছে কি না যোগাযোগ করে নিশ্চিত করেনি। দ্বিতীয় ও তৃতীয় বাক্য মিলিয়ে বুঝবেন।",
+      "target": "She did not contact her friend to confirm if they had time. You can understand this by combining the second and third sentences."
+    },
+    {
+      "source": "প্রশ্ন ২.",
+      "target": "Question 2."
+    },
+    {
+      "source": "লেখাটির মূল শিক্ষা কী?",
+      "target": "What is the main lesson of the text?"
+    },
+    {
+      "source": "আমন্ত্রণের ভাষা শুনে সময় ধরে না নিয়ে পরিস্থিতি যাচাই ও আলোচনা করা দরকার।",
+      "target": "Instead of assuming based on the invitation language, it is necessary to check the situation and discuss."
+    },
+    {
+      "source": "নিজের একটি ভুল বোঝাবুঝির অভিজ্ঞতা লিখুন: ঘটনা → নিজের ধারণা → অন্য পক্ষের অবস্থা → পরেরবার কী করবেন।",
+      "target": "Write about an experience of your own misunderstanding: Event → Your assumption → The other party's situation → What you will do next time."
+    },
+    {
+      "source": "নিজস্ব নমুনা · বাক্য ধরে বাংলা",
+      "target": "Own Sample · Sentence-by-sentence Bengali"
+    },
+    {
+      "source": "জাপানে নতুন আসার সময় এক বন্ধুর সঙ্গে কথা দেওয়া নিয়ে সমস্যায় পড়েছিলাম।",
+      "target": "When I first came to Japan, I had trouble with making a promise with a friend."
+    },
+    {
+      "source": "আমি ভেবেছিলাম সময় ঠিক হয়ে গেছে।",
+      "target": "I thought the time was settled."
+    },
+    {
+      "source": "কিন্তু বন্ধু ভেবেছিল এখনো আলোচনা দরকার।",
+      "target": "But the friend thought discussion was still needed."
+    },
+    {
+      "source": "এই অভিজ্ঞতার পর গুরুত্বপূর্ণ বিষয় স্পষ্টভাবে বলে নিশ্চিত করার চেষ্টা করি।",
+      "target": "After this experience, I try to clearly state important matters and confirm."
+    },
+    {
+      "source": "নিজে যাচাই করুন: মূল বক্তব্য আছে? কারণ দিয়েছেন? সংযোগ ঠিক? শেষে একই সিদ্ধান্ত রেখেছেন?",
+      "target": "Check yourself: Is the main point there? Did you give reasons? Are the connections correct? Did you keep the same decision at the end?"
+    },
+    {
+      "source": "আজ আপনার বাসায় আসতে পারি?",
+      "target": "Can I come to your house today?"
+    },
+    {
+      "source": "দুঃখিত, আজ আমার অন্য কাজ আছে।",
+      "target": "Sorry, I have other things to do today."
+    },
+    {
+      "source": "আচ্ছা। তাহলে সুবিধামতো একটি দিন জানাবেন?",
+      "target": "I see. Then could you let me know a convenient day?"
+    },
+    {
+      "source": "শনিবার বিকেল হলে ঠিক আছে।",
+      "target": "Saturday afternoon would be fine."
+    },
+    {
+      "source": "প্রথমবার দেখে বলুন। দ্বিতীয়বার নিজের তথ্য বসান। তৃতীয়বার না দেখে দুই পক্ষের কথা বলুন।",
+      "target": "Say it after seeing it the first time. Insert your own information the second time. Speak for both sides without looking the third time."
+    },
+    {
+      "source": "নিজস্ব স্ক্রিপ্ট · ব্রাউজারের জাপানি কৃত্রিম কণ্ঠ। মূল বইয়ের অডিও নয়। কণ্ঠ না থাকলে transcript দেখে অনুশীলন করুন।",
+      "target": "Own Script · Browser's Japanese artificial voice. Not the main book's audio. If there is no voice, practice by looking at the transcript."
+    },
+    {
+      "source": "জাপানি স্ক্রিপ্ট শুনুন",
+      "target": "Listen to the Japanese script"
+    },
+    {
+      "source": "থামান",
+      "target": "Stop"
+    },
+    {
+      "source": "কখন, কোথায় এবং কত দিনের মধ্যে জানাতে হবে?",
+      "target": "When, where, and by when should I reply?"
+    },
+    {
+      "source": "জাপানি transcript দেখুন",
+      "target": "View Japanese transcript"
+    },
+    {
+      "source": "শোনার উত্তর দেখুন",
+      "target": "View listening answers"
+    },
+    {
+      "source": "শনিবার বেলা ২টা; স্টেশনের সামনের লাইব্রেরি; শুক্রবারের মধ্যে জানাতে হবে।",
+      "target": "Saturday at 2:00 PM; The library in front of the station; Must reply by Friday."
+    },
+    {
+      "source": "কাজের মূল্যবোধ, সাক্ষাৎকার নেওয়া ও তথ্য সাজানো",
+      "target": "Work values, interviewing, and organizing information"
+    },
+    {
+      "source": "প্রশ্নের উত্তরে বক্তা প্রথমে সিদ্ধান্ত বলেছেন, না উদাহরণ দিয়েছেন, তা ধরুন। উদাহরণ কোন মূল কথাকে বোঝাচ্ছে সেটি খুঁজুন।",
+      "target": "Catch whether the speaker stated their decision first or gave examples in response to questions. Find which main point the examples illustrate."
+    },
+    {
+      "source": "গ্রাহকসেবা",
+      "target": "Customer service"
+    },
+    {
+      "source": "চাহিদা বা আশা",
+      "target": "Demand or expectation"
+    },
+    {
+      "source": "কৌশল বা বুদ্ধিদীপ্ত চেষ্টা",
+      "target": "Strategy or clever effort"
+    },
+    {
+      "source": "প্রস্তাব",
+      "target": "Proposal"
+    },
+    {
+      "source": "অভিজ্ঞতা",
+      "target": "Experience"
+    },
+    {
+      "source": "আস্থা",
+      "target": "Trust"
+    },
+    {
+      "source": "অতিথি বা ক্রেতা",
+      "target": "Guest or customer"
+    },
+    {
+      "source": "প্রত্যাশা",
+      "target": "Expectation"
+    },
+    {
+      "source": "ভরসা",
+      "target": "Reliance"
+    },
+    {
+      "source": "…অনুযায়ী মানিয়ে",
+      "target": "...according to"
+    },
+    {
+      "source": "চাহিদা, ক্ষমতা, পরিস্থিতি বা পরিবর্তনের সঙ্গে সামঞ্জস্য রেখে কাজ বা ব্যবস্থা বদলায়। সবার জন্য একই ব্যবস্থা বোঝায় না।",
+      "target": "Actions or arrangements change to adapt to demands, abilities, situations, or changes. It does not mean the same arrangement for everyone."
+    },
+    {
+      "source": "বাক্যের পরের অংশে আগের শর্ত অনুযায়ী মানিয়ে নেওয়ার সম্পর্ক খুঁজুন।",
+      "target": "Look for the relationship in the latter part of the sentence where it adapts according to the condition in the earlier part."
+    },
+    {
+      "source": "অতিথির চাহিদা অনুযায়ী কক্ষের ব্যবস্থা করব।",
+      "target": "We will arrange the room according to the guest's requests."
+    },
+    {
+      "source": "অভিজ্ঞতার সঙ্গে মানানসই কাজের দায়িত্ব দেব।",
+      "target": "I will assign job responsibilities that match their experience."
+    },
+    {
+      "source": "২. N にわたって",
+      "target": "2. N にわたって"
+    },
+    {
+      "source": "…জুড়ে বিস্তৃতভাবে",
+      "target": "…extending across / over …"
+    },
+    {
+      "source": "কাজ বা অবস্থা দীর্ঘ সময়, বিস্তৃত এলাকা বা বহু বিষয়ের পরিসরজুড়ে চলেছে বোঝায়। পরিসরের বিস্তারকে গুরুত্ব দেয়।",
+      "target": "Indicates that an action or state continues over a long period, a vast area, or across a wide range of subjects. Emphasizes the extent of the scope."
+    },
+    {
+      "source": "সময়・এলাকা・পরিসর N + にわたって / N + にわたる + N",
+      "target": "Time・Area・Scope N + にわたって / N + にわたる + N"
+    },
+    {
+      "source": "একটি নির্দিষ্ট মুহূর্তের জন্য নয়।",
+      "target": "It is not for a single specific moment."
+    },
+    {
+      "source": "মানে এক ঘণ্টাজুড়ে ব্যাখ্যা।",
+      "target": "Meaning an explanation spanning one hour."
+    },
+    {
+      "source": "তিন দিনজুড়ে প্রশিক্ষণ অনুষ্ঠিত হয়েছে।",
+      "target": "The training was held over three days."
+    },
+    {
+      "source": "বিস্তৃত এলাকাজুড়ে জরিপ প্রয়োজন।",
+      "target": "A survey is needed across a wide area."
+    },
+    {
+      "source": "৩. N に",
+      "target": "3. N に"
+    },
+    {
+      "source": "…কে ভিত্তি করে",
+      "target": "…based on / according to …"
+    },
+    {
+      "source": "নিয়ম, তথ্য, গবেষণা বা অভিজ্ঞতাকে সিদ্ধান্তের ভিত্তি হিসেবে ব্যবহার করা হয়। অনুমানের বদলে কী ভিত্তির ওপর কাজ হয়েছে তা বলুন।",
+      "target": "Rules, information, research, or experience are used as the basis for a decision. Instead of a guess, state what foundation the work was based on."
+    },
+    {
+      "source": "に “অনুযায়ী” নয়; সিদ্ধান্তের ভিত্তির সঙ্গে দৃঢ় সম্পর্ক আছে।",
+      "target": "に is not just \"according to\"; it has a strong connection to the basis of the decision."
+    },
+    {
+      "source": "জরিপের ফলকে ভিত্তি করে পরিকল্পনা করেছি।",
+      "target": "We made the plan based on the survey results."
+    },
+    {
+      "source": "এটি বাস্তব অভিজ্ঞতার ভিত্তিতে লেখা প্রতিবেদন।",
+      "target": "This is a report written based on real experience."
+    },
+    {
+      "source": "৪. ～ことなく",
+      "target": "4. ～ことなく"
+    },
+    {
+      "source": "… না করেই",
+      "target": "…without doing …"
+    },
+    {
+      "source": "একটি কাজ বা অবস্থা ঘটানো ছাড়া পরের কাজ ঘটে। লিখিত বা আনুষ্ঠানিক ভাষায় Vないで-এর কাছাকাছি অর্থ।",
+      "target": "The next action happens without a certain action or state occurring. Close in meaning to Vないで in written or formal language."
+    },
+    {
+      "source": "সরাসরি dictionary form লাগে:",
+      "target": "Directly uses the dictionary form:"
+    },
+    {
+      "source": "まないことなく লিখবেন না।",
+      "target": "Do not write without learning."
+    },
+    {
+      "source": "তিনি হাল না ছেড়ে অনুশীলন চালিয়েছেন।",
+      "target": "He continued practicing without giving up."
+    },
+    {
+      "source": "কারণ না জেনে বিচার করা উচিত নয়।",
+      "target": "You should not judge without knowing the reason."
+    },
+    {
+      "source": "৫. ～にほかならない",
+      "target": "5. ～にほかならない"
+    },
+    {
+      "source": "অন্য কিছু নয়, ঠিক …ই",
+      "target": "Nothing other than … / It is none other than …"
+    },
+    {
+      "source": "পরিচয় বা আসল কারণকে জোর দিয়ে নির্দিষ্ট করে। বক্তা দৃঢ়ভাবে বলেন, এটিই আসল ব্যাখ্যা। আনুষ্ঠানিক যুক্তি বা মূল্যায়নে উপযোগী।",
+      "target": "Emphatically specifies an identity or the true reason. The speaker firmly asserts that this is the real explanation. Useful in formal reasoning or evaluation."
+    },
+    {
+      "source": "কারণ জানাতে からにほかならない; শুধু বিশেষ্যের পরিচয় জোর দিতে にほかならない।",
+      "target": "To state a reason use からにほかならない; to simply emphasize the identity of a noun, use にほかならない."
+    },
+    {
+      "source": "এবারের সাফল্য আপনাদের পরিশ্রমের ফলই।",
+      "target": "This success is nothing other than the result of your hard work."
+    },
+    {
+      "source": "চালিয়ে যেতে পেরেছি ঠিক সহকর্মীরা পাশে ছিলেন বলেই।",
+      "target": "I was able to keep going precisely because my colleagues stood by me."
+    },
+    {
+      "source": "৬. ～",
+      "target": "6. ～"
+    },
+    {
+      "source": "… করার পরে / … করার ক্ষেত্রে",
+      "target": "After doing … / In the case of doing …"
+    },
+    {
+      "source": "Vた-এর সঙ্গে প্রথম কাজ ভালোভাবে করে তারপর সিদ্ধান্ত বা কাজ করুন। Vる-এর সঙ্গে কোনো কাজের ক্ষেত্রে কী গুরুত্বপূর্ণ তা ব্যাখ্যা করুন।",
+      "target": "With Vた, complete the first action properly before deciding or acting. With Vる, explain what is important when doing a certain action."
+    },
+    {
+      "source": "で（ক্রম） / Vる・Nの +",
+      "target": "で (sequence) / Vる・Nの +"
+    },
+    {
+      "source": "で（ক্ষেত্র）",
+      "target": "で (context/case)"
+    },
+    {
+      "source": "রূপ বদলালে অর্থ বদলায়:",
+      "target": "Changing the form changes the meaning:"
+    },
+    {
+      "source": "で = যাচাইয়ের পরে;",
+      "target": "で = after checking;"
+    },
+    {
+      "source": "で = কাজ করার ক্ষেত্রে।",
+      "target": "で = in the case of doing work."
+    },
+    {
+      "source": "বিষয়বস্তু যাচাই করার পরে স্বাক্ষর করুন।",
+      "target": "Please sign after verifying the contents."
+    },
+    {
+      "source": "গ্রাহকসেবার ক্ষেত্রে অন্যের কথা শোনা জরুরি।",
+      "target": "In customer service, listening to others is essential."
+    },
+    {
+      "source": "Reading Lab · ভালো সেবা মানে একই উত্তর নয়",
+      "target": "Reading Lab · Good service doesn't mean the same answer for everyone"
+    },
+    {
+      "source": "একটি ছোট দোকানের ম্যানেজারকে জিজ্ঞেস করলাম, কাজের কোন বিষয়টিকে গুরুত্ব দেন।",
+      "target": "I asked the manager of a small shop what they consider important in their work."
+    },
+    {
+      "source": "きました-র প্রশ্নবিষয় দিয়ে পরের উত্তরের কেন্দ্র নির্ধারিত হয়।",
+      "target": "The focus of the next answer is determined by the question topic in きました."
+    },
+    {
+      "source": "ম্যানেজার বললেন, “একই ব্যাখ্যা বারবার বলাই যথেষ্ট নয়।”",
+      "target": "The manager said, \"Explaining the same thing over and over is not enough.\""
+    },
+    {
+      "source": "ではない সীমা দেখাচ্ছে; কোনো ব্যাখ্যাই প্রয়োজন নেই বলা হয়নি।",
+      "target": "It shows a limit of ではない; it is not saying that no explanation is needed."
+    },
+    {
+      "source": "গ্রাহকের চাহিদা অনুযায়ী তিনি ব্যাখ্যার ক্রম ও ভাষা বদলান।",
+      "target": "He changes the order of explanations and language according to the customer's needs."
+    },
+    {
+      "source": "じて মানিয়ে নেওয়া; そうです বক্তার কাছ থেকে শোনা তথ্য।",
+      "target": "Adapting according to じて; そうです is information heard from the speaker."
+    },
+    {
+      "source": "যেমন, প্রথমবার আসা ব্যক্তিকে ব্যবহারের পদ্ধতি দিয়ে বোঝানো শুরু করেন।",
+      "target": "For example, for a first-time visitor, he starts explaining by showing how to use it."
+    },
+    {
+      "source": "たとえば-এর উদাহরণ আগের মানিয়ে নেওয়ার বক্তব্যকে স্পষ্ট করে।",
+      "target": "The example of たとえば clarifies the previous statement about adaptation."
+    },
+    {
+      "source": "মনে হলো, মন দিয়ে অন্যের কথা শোনাই আস্থার শুরু।",
+      "target": "It felt like listening attentively to others is the beginning of trust."
+    },
+    {
+      "source": "শেষ বাক্য প্রতিবেদকের উপলব্ধি; ম্যানেজারের সরাসরি উদ্ধৃতি নয়।",
+      "target": "The final sentence is the reporter's realization, not a direct quote from the manager."
+    },
+    {
+      "source": "সবার কাছে একই ব্যাখ্যা যথেষ্ট নয় কেন?",
+      "target": "Why isn't the same explanation enough for everyone?"
+    },
+    {
+      "source": "গ্রাহকের অভিজ্ঞতা ও চাহিদা আলাদা; সে অনুযায়ী ক্রম ও ভাষা বদলাতে হয়।",
+      "target": "Customers' experiences and needs vary; the order and language must be adjusted accordingly."
+    },
+    {
+      "source": "প্রথমবার আসা ব্যক্তির উদাহরণটি কী বোঝায়?",
+      "target": "What does the example of a first-time visitor illustrate?"
+    },
+    {
+      "source": "গ্রাহকের প্রয়োজন অনুযায়ী ব্যাখ্যা মানিয়ে নেওয়া।",
+      "target": "Adapting explanations to suit the customer's needs."
+    },
+    {
+      "source": "কোনো পরিচিত ব্যক্তির কাজ সম্পর্কে তিনটি প্রশ্ন করুন। সরাসরি উক্তি এবং নিজের উপলব্ধি আলাদা করে একটি ছোট প্রতিবেদন লিখুন।",
+      "target": "Ask three questions about the work of someone you know. Write a short report separating direct quotes from your own realizations."
+    },
+    {
+      "source": "আমি পাশের দোকানের ম্যানেজারের সাক্ষাৎকার নিয়েছি।",
+      "target": "I interviewed the manager of the neighboring shop."
+    },
+    {
+      "source": "তাঁর মতে সবচেয়ে গুরুত্বপূর্ণ হলো গ্রাহকের কথা শোনা।",
+      "target": "According to him, the most important thing is listening to the customer."
+    },
+    {
+      "source": "দীর্ঘ অভিজ্ঞতার ভিত্তিতে তিনি বোঝানোর ধরনে কৌশল ব্যবহার করেন।",
+      "target": "Based on his long experience, he uses strategic techniques in his way of explaining."
+    },
+    {
+      "source": "আমিও অন্যের অবস্থান বিবেচনা করে কাজ করতে চাই বলে মনে হয়েছে।",
+      "target": "I felt that I too want to act while considering other people's perspectives."
+    },
+    {
+      "source": "কিছু কথা জিজ্ঞেস করতে পারি?",
+      "target": "May I ask you a few things?"
+    },
+    {
+      "source": "জি, বলুন।",
+      "target": "Yes, please go ahead."
+    },
+    {
+      "source": "গ্রাহকসেবার ক্ষেত্রে কোন বিষয়কে গুরুত্ব দেন?",
+      "target": "What do you consider important in customer service?"
+    },
+    {
+      "source": "প্রথমে গ্রাহকের চাহিদা নিশ্চিত করি।",
+      "target": "First, I confirm the customer's needs."
+    },
+    {
+      "source": "কী আনতে হবে, কখন আসতে হবে, পরিবর্তন চাইলে কী করবেন?",
+      "target": "What to bring, when to come, what to do if you want to make changes?"
+    },
+    {
+      "source": "জীবনবৃত্তান্ত আনতে হবে; আগামী মঙ্গলবার বেলা ৩টার মধ্যে অফিসে আসতে হবে; পরিবর্তন চাইলে আগের দিনের মধ্যে ফোন করতে হবে।",
+      "target": "You need to bring a resume; you must arrive at the office by 3:00 PM next Tuesday; if you want to make changes, you must call by the previous day."
+    },
+    {
+      "source": "ঘটনার মোড়, উপমা ও অনুভূতির পরিবর্তন পড়া",
+      "target": "Reading turning points, metaphors, and emotional shifts"
+    },
+    {
+      "source": "চরিত্রের অনুভূতি কোন ঘটনা বা শব্দে বদলেছে তা দেখুন। উপমাকে বাস্তব ঘটনা হিসেবে নেবেন না। পর্যালোচনায় নিজের মূল্যায়নের কারণ দিন।",
+      "target": "Look at which events or words changed the characters' feelings. Do not take metaphors as actual events. Provide reasons for your evaluations in the review."
+    },
+    {
+      "source": "গল্প বা আখ্যান",
+      "target": "Story or narrative"
+    },
+    {
+      "source": "দৃশ্য বা পরিস্থিতি",
+      "target": "Scene or situation"
+    },
+    {
+      "source": "অনুভূতি",
+      "target": "Feeling"
+    },
+    {
+      "source": "উদ্বেগ",
+      "target": "Anxiety"
+    },
+    {
+      "source": "স্বস্তি",
+      "target": "Relief"
+    },
+    {
+      "source": "মনের ওপর ছাপ",
+      "target": "Impression on the mind"
+    },
+    {
+      "source": "অনুভূতি বা অবস্থা",
+      "target": "Feeling or state"
+    },
+    {
+      "source": "দৃশ্য",
+      "target": "Scene"
+    },
+    {
+      "source": "রূপ বা ছাপ",
+      "target": "Form or impression"
+    },
+    {
+      "source": "১. ～かのようだ",
+      "target": "1. ～かのようだ"
+    },
+    {
+      "source": "মনে হয় যেন …",
+      "target": "It feels as if..."
+    },
+    {
+      "source": "বাস্তবে ঠিক সেই অবস্থা না হলেও তেমন দেখায় বা অনুভূত হয়। কল্পনা ও উপমা তৈরি করতে ব্যবহার করুন।",
+      "target": "Even if it's not quite like that in reality, it looks or feels that way. Use it to create imagination and analogies."
+    },
+    {
+      "source": "V・い-বিশেষণ plain + かのようだ / N・な-বিশেষণ + であるかのようだ",
+      "target": "V / i-adjective plain + かのようだ / N / na-adjective + であるかのようだ"
+    },
+    {
+      "source": "পরের বিশেষ্যকে বর্ণনা করলে かのようなN; ক্রিয়াকে বর্ণনা করলে かのようにV।",
+      "target": "When modifying a following noun, use かのようなN; when modifying a verb, use かのようにV."
+    },
+    {
+      "source": "তিনি এমনভাবে কথা বললেন যেন কিছুই জানেন না।",
+      "target": "He spoke as if he knew nothing about it."
+    },
+    {
+      "source": "মনে হচ্ছিল যেন স্বপ্ন দেখছি।",
+      "target": "It felt as if I were dreaming."
+    },
+    {
+      "source": "২. ～ずにはいられない",
+      "target": "2. ～ずにはいられない"
+    },
+    {
+      "source": "… না করে থাকতে পারি না",
+      "target": "Cannot help doing..."
+    },
+    {
+      "source": "আবেগ বা প্রবল স্বাভাবিক তাড়নায় কাজটি না করে থাকা যায় না। নিজের অনুভূতি বা সহজে বোঝা প্রতিক্রিয়া প্রকাশে মানায়।",
+      "target": "Driven by strong natural emotions or urges, you cannot help doing something. Suitable for expressing one's feelings or easily understandable reactions."
+    },
+    {
+      "source": "Vない-এর ない বাদ + ずにはいられない（する → せずにはいられない）",
+      "target": "Remove ない from Vない + ずにはいられない (する → せずにはいられない)"
+    },
+    {
+      "source": "জোরপূর্বক বাইরের বাধ্যবাধকতা নয়; হাসি, চিন্তা, কান্নার মতো ভেতরের তাড়না প্রধান।",
+      "target": "Not an external forced obligation; internal urges like laughter, thoughts, and crying are primary."
+    },
+    {
+      "source": "ঘটনাটি শুনলে না হেসে থাকতে পারি না।",
+      "target": "When I heard the story, I couldn't help laughing."
+    },
+    {
+      "source": "বন্ধুর জন্য চিন্তায় যোগাযোগ না করে থাকতে পারিনি।",
+      "target": "Worried about my friend, I couldn't help contacting them."
+    },
+    {
+      "source": "৩. ～たとたん（に）",
+      "target": "3. ～たとたん（に）"
+    },
+    {
+      "source": "… করা মাত্রই হঠাৎ",
+      "target": "As soon as... suddenly"
+    },
+    {
+      "source": "আগের কাজ ঘটার সঙ্গে সঙ্গেই অপ্রত্যাশিত পরিবর্তন বা ঘটনা ঘটে। পরের অংশে সাধারণত পরিকল্পিত নির্দেশ বা ইচ্ছা থাকে না।",
+      "target": "An unexpected change or event occurs immediately after the previous action. The second half usually does not contain intentional commands or desires."
+    },
+    {
+      "source": "নিয়মিত “এর পরে” বলার জন্য てから যথেষ্ট; とたん হঠাৎ ঘটার অনুভূতি দেয়।",
+      "target": "For regular \"after that\", てから is sufficient; とたん gives the feeling of something happening suddenly."
+    },
+    {
+      "source": "বাইরে বের হওয়া মাত্রই বৃষ্টি শুরু হলো।",
+      "target": "As soon as I went outside, it started raining."
+    },
+    {
+      "source": "কণ্ঠস্বর শোনা মাত্রই স্বস্তি পেলাম।",
+      "target": "The moment I heard that voice, I felt relieved."
+    },
+    {
+      "source": "৪. ～かと",
+      "target": "4. ～かと"
+    },
+    {
+      "source": "… হলো মনে হতেই আবার …",
+      "target": "...thinking it is, right away..."
+    },
+    {
+      "source": "বক্তার দেখা দুটি ঘটনা খুব দ্রুত বদলে যায়। প্রথম অবস্থা বুঝে ওঠার আগেই পরের অবস্থা আসে—এই পরিবর্তনকে তুলে ধরে।",
+      "target": "The two events observed by the speaker change very quickly. It highlights the rapid change where the next state arrives before the first state can be fully understood."
+    },
+    {
+      "source": "সাধারণ “ভাবছি” অর্থ নয়। দ্রুত পালাবদল; নিজের ইচ্ছাকৃত ধারাবাহিক কাজ বোঝাতে কম মানায়।",
+      "target": "Not the ordinary meaning of \"thinking\". Rapid alternation; less suitable for expressing one's own intentional sequential actions."
+    },
+    {
+      "source": "শিশুটি কাঁদল মনে হতেই সঙ্গে সঙ্গে হাসল।",
+      "target": "The moment I thought the child was crying, they smiled right away."
+    },
+    {
+      "source": "আকাশ অন্ধকার হলো মনে হতেই প্রবল বৃষ্টি নামল।",
+      "target": "The moment I thought the sky grew dark, heavy rain started pouring down."
+    },
+    {
+      "source": "৫. ～たものだ",
+      "target": "5. ～たものだ"
+    },
+    {
+      "source": "একসময় প্রায়ই … করতাম",
+      "target": "Used to... often in the past"
+    },
+    {
+      "source": "আগেকার অভ্যাস বা বারবার ঘটত এমন অভিজ্ঞতা স্মরণ করে বলুন। এতে স্মৃতিকাতর ভাব থাকতে পারে।",
+      "target": "Use this to recall past habits or experiences that used to happen repeatedly. This may carry a nostalgic feeling."
+    },
+    {
+      "source": "Vた + ものだ（অতীতের স্মৃতি）",
+      "target": "Vた + ものだ (Past memories)"
+    },
+    {
+      "source": "একবারের সাম্প্রতিক ঘটনা নয়। ものだ-এর সাধারণ সত্য বা উপদেশের ব্যবহার থেকে এটি আলাদা।",
+      "target": "Not a one-time recent event. This is distinct from the general truth or advisory usage of ものだ."
+    },
+    {
+      "source": "ছোটবেলায় নদীতে প্রায়ই খেলতাম।",
+      "target": "When I was little, I used to play in the river often."
+    },
+    {
+      "source": "আগে বন্ধুদের সঙ্গে প্রায়ই দীর্ঘ চিঠি লিখতাম।",
+      "target": "In the past, I used to write long letters to my friends often."
+    },
+    {
+      "source": "৬. ～おそれがある",
+      "target": "6. ～おそれがある"
+    },
+    {
+      "source": "খারাপ কিছু ঘটার আশঙ্কা আছে",
+      "target": "There is a fear that something bad will happen"
+    },
+    {
+      "source": "ভবিষ্যতে অনাকাঙ্ক্ষিত ফলের সম্ভাবনা বোঝায়। সংবাদ, সতর্কতা ও আনুষ্ঠানিক ব্যাখ্যায় ব্যবহার হয়।",
+      "target": "Indicates the possibility of an undesirable outcome in the future. Used in news, warnings, and formal explanations."
+    },
+    {
+      "source": "ভালো ফলের সম্ভাবনায় সাধারণত",
+      "target": "Usually used for possibilities of good outcomes"
+    },
+    {
+      "source": "বা ক্ষতির পূর্বাভাসে মানায়।",
+      "target": "or suited for forecasts of damage."
+    },
+    {
+      "source": "টাইফুনের কারণে ট্রেন বন্ধ হওয়ার আশঙ্কা আছে।",
+      "target": "There is a fear that trains may be suspended due to the typhoon."
+    },
+    {
+      "source": "এভাবে চললে দুর্ঘটনার আশঙ্কা আছে।",
+      "target": "If things continue this way, there is a risk of an accident."
+    },
+    {
+      "source": "Reading Lab · হারানো খাতার ছোট গল্প",
+      "target": "Reading Lab · Short Story of the Lost Notebook"
+    },
+    {
+      "source": "ইউ প্রতিদিন ব্যবহার করা খাতাটি ট্রেনে ফেলে এল।",
+      "target": "Yui left her daily-use notebook on the train."
+    },
+    {
+      "source": "প্রথম বাক্যে সমস্যাটি এসেছে; খাতাটির দৈনন্দিন গুরুত্বও জানা গেল।",
+      "target": "The problem came up in the first sentence; the daily importance of the notebook was also revealed."
+    },
+    {
+      "source": "বাসায় পৌঁছানো মাত্র সে বিষয়টি টের পেল।",
+      "target": "As soon as he arrived home, he realized the matter."
+    },
+    {
+      "source": "たとたん পৌঁছানোর সঙ্গে হঠাৎ উপলব্ধি বোঝায়।",
+      "target": "たとたん implies a sudden realization upon arriving."
+    },
+    {
+      "source": "তার মনে হলো, যেন গুরুত্বপূর্ণ কথাগুলোও হারিয়ে গেছে।",
+      "target": "It felt to him as if even the important words had been lost."
+    },
+    {
+      "source": "かのように উপমা; বাস্তবে সব কথা মুছে গেছে এমন তথ্য নয়।",
+      "target": "かのように is a simile; it is not the fact that all words were actually erased."
+    },
+    {
+      "source": "পরদিন স্টেশন থেকে জানানো হলো খাতাটি পাওয়া গেছে।",
+      "target": "The next day, the station informed that the notebook had been found."
+    },
+    {
+      "source": "এই বাক্য গল্পের মোড় বদলায়; আগের উদ্বেগের বিপরীতে ভালো খবর।",
+      "target": "This sentence turns the plot of the story; good news against the backdrop of previous anxiety."
+    },
+    {
+      "source": "খাতাটি হাতে পেয়ে ইউ না হেসে থাকতে পারল না।",
+      "target": "Upon receiving the notebook in hand, Yu couldn't help but smile."
+    },
+    {
+      "source": "শেষ প্রতিক্রিয়া থেকে স্বস্তি ও আনন্দ বোঝা যায়।",
+      "target": "The final reaction conveys relief and joy."
+    },
+    {
+      "source": "কোন ঘটনায় ইউয়ের অনুভূতি বদলাল?",
+      "target": "Which event changed Yu's feelings?"
+    },
+    {
+      "source": "খাতা পাওয়া গেছে বলে স্টেশনের খবর আসার পর।",
+      "target": "After the news came from the station that the notebook was found."
+    },
+    {
+      "source": "কথাগুলো মুছে যাওয়ার বর্ণনাটি কি বাস্তব ঘটনা?",
+      "target": "Is the description of the words erasing a real event?"
+    },
+    {
+      "source": "না; খাতা হারিয়ে ইউয়ের অনুভূতির উপমা। かのように সূত্রটি দেখুন।",
+      "target": "No; it is a simile for Yu's feelings upon losing the notebook. See the かのように rule."
+    },
+    {
+      "source": "একটি গল্প বা সিনেমার সংক্ষিপ্ত রিভিউ লিখুন: পরিচয় → একটি দৃশ্য → নিজের অনুভূতি → সুপারিশের কারণ। সমাপ্তির সব তথ্য বলে দেবেন না।",
+      "target": "Write a short review of a story or movie: Introduction → A scene → Own feelings → Reason for recommendation. Do not give away all the ending information."
+    },
+    {
+      "source": "আমি খাতা হারানো একজনের ছোট গল্প পড়েছি।",
+      "target": "I read a short story about someone losing their notebook."
+    },
+    {
+      "source": "মূল চরিত্রের উদ্বেগ পরিচিত ভাষায় তুলে ধরা হয়েছে।",
+      "target": "The main character's anxiety is expressed in familiar language."
+    },
+    {
+      "source": "আমারও প্রিয় জিনিস হারানোর অভিজ্ঞতা আছে বলে অনুভূতিটি বুঝেছি।",
+      "target": "I understood the feeling because I also have the experience of losing a favorite item."
+    },
+    {
+      "source": "এটি এমন গল্প যা দৈনন্দিন ছোট ঘটনাকেও গুরুত্ব দিতে শেখায়।",
+      "target": "This is a story that teaches us to value even small everyday occurrences."
+    },
+    {
+      "source": "কিছু হয়েছে?",
+      "target": "Is something wrong?"
+    },
+    {
+      "source": "একটি গুরুত্বপূর্ণ খাতা হারিয়ে ফেলেছি।",
+      "target": "I have lost an important notebook."
+    },
+    {
+      "source": "স্টেশনে খোঁজ নিয়ে দেখলে কেমন হয়?",
+      "target": "How about checking at the station?"
+    },
+    {
+      "source": "ঠিক বলেছেন। এখনই যোগাযোগ করে দেখব।",
+      "target": "You're right. I'll contact them right away."
+    },
+    {
+      "source": "ব্যাগ কোথায় পাওয়া গেছে? বক্তা কখন নিতে যাবেন?",
+      "target": "Where was the bag found? When will the speaker go to pick it up?"
+    },
+    {
+      "source": "গতকাল দোকানে যে আসনে বসেছিলেন সেখানে; আজ সন্ধ্যায় নিতে যাবেন।",
+      "target": "At the seat where you sat in the shop yesterday; you will go to pick it up this evening."
+    },
+    {
+      "source": "তুলনা, পরিবর্তনের প্রবণতা ও সীমিত সিদ্ধান্ত",
+      "target": "Comparison, trend of change, and limited decision"
+    },
+    {
+      "source": "জরিপের লক্ষ্যগোষ্ঠী, মোট উত্তরদাতা, সময় ও শতাংশের ভিত্তি আগে পড়ুন। উদাহরণের সংখ্যাকে বাস্তব জরিপের ফল হিসেবে ব্যবহার করবেন না।",
+      "target": "Read the target group of the survey, total respondents, time, and percentage basis first. Do not use example numbers as real survey results."
+    },
+    {
+      "source": "জরিপ বা অনুসন্ধান",
+      "target": "Survey or research"
+    },
+    {
+      "source": "অনুপাত",
+      "target": "Ratio"
+    },
+    {
+      "source": "বৃদ্ধি",
+      "target": "Increase"
+    },
+    {
+      "source": "হ্রাস",
+      "target": "Decrease"
+    },
+    {
+      "source": "তুলনা",
+      "target": "Comparison"
+    },
+    {
+      "source": "লক্ষ্যগোষ্ঠী বা বিষয়",
+      "target": "Target group or subject"
+    },
+    {
+      "source": "১. ～に",
+      "target": "1. ～に"
+    },
+    {
+      "source": "…এর সঙ্গে সংশ্লিষ্ট পরিবর্তনে",
+      "target": "…In connection with changes related to"
+    },
+    {
+      "source": "একটি বড় পরিবর্তন বা ঘটনার সঙ্গে সম্পর্কিত আরেকটি পরিবর্তন ঘটে। সামাজিক প্রবণতা, নীতি ও সংখ্যা ব্যাখ্যায় উপযোগী।",
+      "target": "Another change occurs related to a major change or event. Useful for explaining social trends, policies, and numbers."
+    },
+    {
+      "source": "দুটি ঘটনা শুধু পাশাপাশি নয়; সম্পর্কিত পরিবর্তন দেখাতে হবে।",
+      "target": "It must show that two events are not just side-by-side; they are related changes."
+    },
+    {
+      "source": "জনসংখ্যা বৃদ্ধির সঙ্গে আবাসনের প্রয়োজন বেড়েছে।",
+      "target": "With the increase in population, the need for housing has increased."
+    },
+    {
+      "source": "ব্যবস্থার পরিবর্তনের সঙ্গে প্রক্রিয়াও বদলেছে।",
+      "target": "With the change in the system, the process has also changed."
+    },
+    {
+      "source": "২. ～につれて",
+      "target": "2. ～につれて"
+    },
+    {
+      "source": "যত …, তত পরিবর্তন",
+      "target": "The more ..., the more it changes"
+    },
+    {
+      "source": "একটি পরিবর্তন অগ্রসর হওয়ার সঙ্গে অন্য একটি অবস্থাও ধীরে বদলায়। বয়স, সময় বা অভিজ্ঞতার বৃদ্ধি বোঝাতে সুবিধাজনক।",
+      "target": "As one change progresses, another condition also changes gradually. Useful for expressing an increase in age, time, or experience."
+    },
+    {
+      "source": "পরের অংশে পরিবর্তন দিন; একটি নির্দিষ্ট মুহূর্তের সিদ্ধান্ত বা সরাসরি আদেশ মানায় না।",
+      "target": "In the next part, give a change; it does not fit a single moment's decision or a direct order."
+    },
+    {
+      "source": "জাপানিতে অভ্যস্ত হওয়ার সঙ্গে কথা বলা আনন্দদায়ক হয়েছে।",
+      "target": "As I got used to Japanese, speaking it became enjoyable."
+    },
+    {
+      "source": "বয়স বাড়ার সঙ্গে চিন্তার ধরনও বদলায়।",
+      "target": "As age increases, the way of thinking also changes."
+    },
+    {
+      "source": "…এর প্রতি / এর বিপরীতে",
+      "target": "...toward / as opposed to"
+    },
+    {
+      "source": "কাজ বা অনুভূতির লক্ষ্য বোঝায়। দুটি পক্ষের বিপরীত বৈশিষ্ট্য তুলনা করতেও ব্যবহার হয়; কোন ব্যবহার তা প্রসঙ্গ দেখে ধরুন।",
+      "target": "Indicates the target of an action or feeling. Also used to compare opposing characteristics of two parties; determine which usage applies based on the context."
+    },
+    {
+      "source": "する + N（লক্ষ্য）",
+      "target": "する + N (Target)"
+    },
+    {
+      "source": "বিশেষ্যের আগে に",
+      "target": "に before a noun"
+    },
+    {
+      "source": "এই প্রস্তাব সম্পর্কে আমার প্রশ্ন আছে।",
+      "target": "I have a question about this proposal."
+    },
+    {
+      "source": "বড় ভাই সকালে স্বচ্ছন্দ, এর বিপরীতে ছোট ভাই রাতে স্বচ্ছন্দ।",
+      "target": "The older brother is comfortable in the morning, whereas the younger brother is comfortable at night."
+    },
+    {
+      "source": "৪. N に",
+      "target": "4. N に"
+    },
+    {
+      "source": "…এর তুলনায়",
+      "target": "...compared to"
+    },
+    {
+      "source": "একটি তুলনার মানদণ্ড নির্দিষ্ট করে পরের তথ্যের পার্থক্য দেখায়। হার, দাম, অতীত ও বর্তমান তুলনায় কাজে আসে।",
+      "target": "Specifies a benchmark for comparison and shows the difference in the subsequent information. Useful for comparing rates, prices, past and present."
+    },
+    {
+      "source": "কিসের সঙ্গে তুলনা করছেন তা পরিষ্কার রাখুন; শুধু সংখ্যা বললেই তুলনা সম্পূর্ণ হয় না।",
+      "target": "Keep it clear what you are comparing against; just stating numbers does not complete a comparison."
+    },
+    {
+      "source": "গত বছরের তুলনায় ব্যবহারকারী বেড়েছে।",
+      "target": "Users have increased compared to last year."
+    },
+    {
+      "source": "টোকিওর তুলনায় এই শহরে ভাড়া কম।",
+      "target": "Rent is cheaper in this city compared to Tokyo."
+    },
+    {
+      "source": "৫. ～とはいえ",
+      "target": "5. ～とはいえ"
+    },
+    {
+      "source": "এমন বলা গেলেও",
+      "target": "Even though it can be said that..."
+    },
+    {
+      "source": "আগের তথ্য স্বীকার করেও সীমাবদ্ধতা, ব্যতিক্রম বা সতর্কতা জানান। প্রথম কথাটি মিথ্যা না বলে তাকে শর্তসাপেক্ষ করেন।",
+      "target": "Acknowledging the previous information while stating a limitation, exception, or caution. Makes the first statement conditional without calling it false."
+    },
+    {
+      "source": "Plain form + とはいえ（N・な-বিশেষণে だ-ও বাদ যায়）",
+      "target": "Plain form + とはいえ (だ is also dropped for N/na-adjectives)"
+    },
+    {
+      "source": "যদিও গ্রীষ্ম, তবু পাহাড়ে ঠান্ডা—এই ধরনের স্বীকারের পর সীমা দেখায়।",
+      "target": "Even though it's summer, it's cold in the mountains—shows limits after such an admission."
+    },
+    {
+      "source": "বসন্ত হলেও সকালে এখনো ঠান্ডা।",
+      "target": "Even though it's spring, it's still cold in the morning."
+    },
+    {
+      "source": "সুবিধা বেড়েছে ঠিকই, তবু সমস্যা রয়ে গেছে।",
+      "target": "Convenience has increased, true, but problems remain."
+    },
+    {
+      "source": "৬. ～にすぎない",
+      "target": "6. ～にすぎない"
+    },
+    {
+      "source": "মাত্র …, এর বেশি নয়",
+      "target": "Merely ..., nothing more than"
+    },
+    {
+      "source": "পরিমাণ, ভূমিকা বা গুরুত্বকে সীমিত করে বোঝায়। বক্তা মনে করেন বিষয়টিকে তার চেয়ে বড় করে দেখা ঠিক নয়।",
+      "target": "Limits the amount, role, or importance. The speaker feels it is not right to view the matter as larger than that."
+    },
+    {
+      "source": "মাত্র তিনজন =",
+      "target": "Only three people ="
+    },
+    {
+      "source": "にすぎない; প্রায় তিনজন =",
+      "target": "にすぎない; About three people ="
+    },
+    {
+      "source": "ぐらい—অর্থ আলাদা।",
+      "target": "ぐらい—has a different meaning."
+    },
+    {
+      "source": "এটি কেবল একটি উদাহরণ।",
+      "target": "This is merely an example."
+    },
+    {
+      "source": "আমি শুধু মতামত জানিয়েছি।",
+      "target": "I merely stated my opinion."
+    },
+    {
+      "source": "Reading Lab · জরিপের সংখ্যা থেকে কতটুকু বলা যায়",
+      "target": "Reading Lab · How much can be said from survey numbers"
+    },
+    {
+      "source": "ক্লাসের অনুশীলনের জন্য ধরে নিই, ২০ শিক্ষার্থীকে যাতায়াতের উপায় জিজ্ঞেস করা হলো।",
+      "target": "For class practice, let's assume 20 students were asked about their means of transportation."
+    },
+    {
+      "source": "এটি অনুশীলনের কাল্পনিক জরিপ; বাস্তব গবেষণা নয়।",
+      "target": "This is a hypothetical survey for practice; not actual research."
+    },
+    {
+      "source": "১২ জন ট্রেন, ৫ জন সাইকেল এবং ৩ জন হেঁটে যাওয়ার কথা বলল।",
+      "target": "12 people said train, 5 said bicycle, and 3 said walking."
+    },
+    {
+      "source": "মোট ১২+৫+৩=২০; গণনার ভিত্তি একই আছে।",
+      "target": "Total 12+5+3=20; the basis of calculation remains the same."
+    },
+    {
+      "source": "ট্রেন ব্যবহারকারীর অনুপাত ৬০ শতাংশ।",
+      "target": "The proportion of train users is 60 percent."
+    },
+    {
+      "source": "১২÷২০×১০০=৬০; শুধু সংখ্যা নয়, মোটের ভিত্তি দেখুন।",
+      "target": "12÷20×100=60; look at the basis of the total, not just the numbers."
+    },
+    {
+      "source": "তবে শুধু এই ফল দিয়ে জাপানের সব শিক্ষার্থী সম্পর্কে বলা যায় না।",
+      "target": "However, just from this result, it cannot be said about all students in Japan."
+    },
+    {
+      "source": "しかし উপসংহারের সীমা নির্দেশ করে।",
+      "target": "しかし indicates the limit of the conclusion."
+    },
+    {
+      "source": "কারণ লক্ষ্যগোষ্ঠী কেবল একটি ক্লাস।",
+      "target": "Because the target audience is only a single class."
+    },
+    {
+      "source": "にすぎない পরিসরের সীমাবদ্ধতা দেখায়।",
+      "target": "にすぎない shows the limitation of the scope."
+    },
+    {
+      "source": "ট্রেন ব্যবহারকারীর অনুপাত কত এবং কীভাবে পেলেন?",
+      "target": "What is the ratio of train users and how did you get it?"
+    },
+    {
+      "source": "১২÷২০×১০০ = ৬০ শতাংশ।",
+      "target": "12÷20×100 = 60 percent."
+    },
+    {
+      "source": "কেন সারা জাপানের বিষয়ে সিদ্ধান্ত নেওয়া যায় না?",
+      "target": "Why can decisions not be made regarding the whole of Japan?"
+    },
+    {
+      "source": "উত্তরদাতা কেবল একটি ক্লাসের ২০ জন; নমুনা জাতীয় প্রতিনিধিত্ব নিশ্চিত করে না।",
+      "target": "The respondents are only 20 people in a single class; the sample does not ensure national representation."
+    },
+    {
+      "source": "এই কাল্পনিক সংখ্যাগুলো ব্যবহার করে চার বাক্যের প্রতিবেদন লিখুন। লক্ষ্যগোষ্ঠী → সবচেয়ে বড় অংশ → তুলনা → সিদ্ধান্তের সীমা।",
+      "target": "Write a four-sentence report using these hypothetical numbers. Target audience → Largest segment → Comparison → Limitation of conclusion."
+    },
+    {
+      "source": "অনুশীলনের জরিপে একটি ক্লাসের ২০ শিক্ষার্থীকে প্রশ্ন করা হয়েছে।",
+      "target": "In the practice survey, 20 students of a single class were asked."
+    },
+    {
+      "source": "ট্রেন ব্যবহারকারী ১২ জন, যা সবচেয়ে বড় অংশ।",
+      "target": "Train users are 12 people, which is the largest segment."
+    },
+    {
+      "source": "সাইকেল ব্যবহারকারীর তুলনায় ৭ জন বেশি।",
+      "target": "7 people more compared to bicycle users."
+    },
+    {
+      "source": "তবে অল্পসংখ্যক ব্যক্তির ফল বলে এটি সামগ্রিক প্রবণতা নাও হতে পারে।",
+      "target": "However, since the results are of a small number of people, this may not be an overall trend."
+    },
+    {
+      "source": "এই গ্রাফ থেকে কী বোঝা যায়?",
+      "target": "What can be understood from this graph?"
+    },
+    {
+      "source": "ট্রেন ব্যবহারকারী সবচেয়ে বেশি।",
+      "target": "Train users are the highest."
+    },
+    {
+      "source": "অন্য স্কুলেও কি একই রকম হবে?",
+      "target": "Will it be the same in other schools?"
+    },
+    {
+      "source": "শুধু এই জরিপ থেকে তা বিচার করা যায় না।",
+      "target": "That cannot be judged from this survey alone."
+    },
+    {
+      "source": "সকালে পড়ার অনুপাত কত? নির্দিষ্ট সময় নেই কতজনের?",
+      "target": "What is the ratio of studying in the morning? How many people have no specific time?"
+    },
+    {
+      "source": "সকালে ৬÷১০ = ৬০ শতাংশ; নির্দিষ্ট সময় নেই একজনের। এগুলো অনুশীলনের সংখ্যা।",
+      "target": "In the morning 6÷10 = 60 percent; one person has no specific time. These are practice numbers."
+    },
+    {
+      "source": "প্রসঙ্গ, পরোক্ষ কথা ও ভাষার সূক্ষ্ম পার্থক্য",
+      "target": "Context, indirect speech, and subtle nuances of language"
+    },
+    {
+      "source": "শব্দের আক্ষরিক অর্থের পাশাপাশি কে, কাকে, কোন অনুরোধে বলছে তা দেখুন। পরোক্ষ কথাকে সবার জন্য স্থির নিয়ম হিসেবে ধরবেন না।",
+      "target": "Along with the literal meaning of words, look at who is speaking, to whom, and with what request. Do not treat indirect speech as a fixed rule for everyone."
+    },
+    {
+      "source": "প্রকাশভঙ্গি",
+      "target": "Expression"
+    },
+    {
+      "source": "প্রসঙ্গ",
+      "target": "Context"
+    },
+    {
+      "source": "অন্যের কথা বিবেচনা",
+      "target": "Consideration for others"
+    },
+    {
+      "source": "প্রত্যাখ্যান করা",
+      "target": "Declining"
+    },
+    {
+      "source": "জানানো",
+      "target": "Informing"
+    },
+    {
+      "source": "উদ্দেশ্য",
+      "target": "Purpose"
+    },
+    {
+      "source": "বাহিরে প্রকাশ",
+      "target": "External expression"
+    },
+    {
+      "source": "বিবেচনা",
+      "target": "Consideration"
+    },
+    {
+      "source": "মনের ভাব",
+      "target": "State of mind"
+    },
+    {
+      "source": "১. ～というより",
+      "target": "1. ～というより"
+    },
+    {
+      "source": "… বলার চেয়ে বরং …",
+      "target": "Rather than saying …"
+    },
+    {
+      "source": "প্রথম বর্ণনাটি পুরো ঠিক নয় মনে করে তার চেয়ে মানানসই দ্বিতীয় বর্ণনা দিন। বিরোধিতা নয়, আরও যথাযথ ভাষায় সংশোধন।",
+      "target": "Thinking the first description is not entirely correct, provide a more fitting second description. Not an opposition, but a correction in more appropriate language."
+    },
+    {
+      "source": "দুটি বিকল্পের মধ্যে দ্বিতীয়টি বেশি সঠিক—এই দিকটি খেয়াল রাখুন।",
+      "target": "Keep in mind that between two alternatives, the second one is more accurate."
+    },
+    {
+      "source": "কক্ষটি শান্ত বলার চেয়ে বরং নির্জন লাগে।",
+      "target": "Rather than saying the room is quiet, it feels deserted."
+    },
+    {
+      "source": "তিনি শিক্ষক বলার চেয়ে বরং বন্ধুর মতো।",
+      "target": "Rather than saying he is a teacher, he is like a friend."
+    },
+    {
+      "source": "২. N とは",
+      "target": "2. N とは"
+    },
+    {
+      "source": "… বলতে কী বোঝায়",
+      "target": "What is meant by …"
+    },
+    {
+      "source": "কোনো শব্দ বা ধারণাকে সামনে এনে তার অর্থ, সংজ্ঞা বা মূল বৈশিষ্ট্য ব্যাখ্যা করুন। প্রবন্ধ ও ব্যাখ্যামূলক লেখায় মানায়।",
+      "target": "Bring forward a word or concept and explain its meaning, definition, or main characteristics. Suitable for essays and explanatory writings."
+    },
+    {
+      "source": "N + とは + সংজ্ঞা・ব্যাখ্যা",
+      "target": "N + ととは + definition/explanation"
+    },
+    {
+      "source": "এই পাঠে সংজ্ঞার ব্যবহার; とは",
+      "target": "Use of definition in this lesson; とは"
+    },
+    {
+      "source": "わなかった-তে বিস্ময়ের ব্যবহার আলাদা।",
+      "target": "The use of surprise in わなかった is different."
+    },
+    {
+      "source": "কেইগো বলতে অন্যের প্রতি সম্মান প্রকাশের ভাষা বোঝায়।",
+      "target": "Keigo refers to the language used to express respect to others."
+    },
+    {
+      "source": "সহযোগিতা হলো একই লক্ষ্যে একসঙ্গে কাজ করা।",
+      "target": "Cooperation means working together towards the same goal."
+    },
+    {
+      "source": "৩. ～にしても",
+      "target": "3. ～にしても"
+    },
+    {
+      "source": "… হলেও / এমনকি … ক্ষেত্রেও",
+      "target": "… even if / even in the case of …"
+    },
+    {
+      "source": "একটি পরিস্থিতি সত্য ধরে নিয়েও পরের মতামত বা সীমা বলুন। জোড়ায় AにしてもBにしても হলে উভয় ক্ষেত্রেই একই কথা প্রযোজ্য।",
+      "target": "State a following opinion or limit even while assuming a situation is true. When paired as AにしてもBにしても, the same thing applies to both cases."
+    },
+    {
+      "source": "れるにしても মানে দেরি হলেও; দেরি করার অনুমতি দেওয়া নয়।",
+      "target": "れるにしても means even if it's late; it is not permission to be late."
+    },
+    {
+      "source": "না করলেও ভদ্রভাবে জানানো ভালো।",
+      "target": "Even if you don't do it, it is polite to let them know."
+    },
+    {
+      "source": "যান বা না যান, জানাবেন।",
+      "target": "Whether you go or not, please let us know."
+    },
+    {
+      "source": "৪.",
+      "target": "4."
+    },
+    {
+      "source": "সবসময় বা সবার ক্ষেত্রে … নয়",
+      "target": "Not always or not in all cases …"
+    },
+    {
+      "source": "একটি সাধারণ অনুমান সবার ক্ষেত্রে ঠিক নয়—এই আংশিক নাকচ প্রকাশ করে। কিছু ক্ষেত্রে সত্য হতে পারে, কিন্তু নিশ্চিত নয়।",
+      "target": "This expresses a partial rejection that a general assumption is not true for everyone. It may be true in some cases, but it is not certain."
+    },
+    {
+      "source": "ずしも + ইতিবাচক ধারণা + নেতিবাচক predicate",
+      "target": "ずしも + positive concept + negative predicate"
+    },
+    {
+      "source": "পুরোপুরি অসম্ভব অর্থ নয়।",
+      "target": "It does not mean completely impossible."
+    },
+    {
+      "source": "ずしも-এর সঙ্গে শেষে নেতিবাচক অর্থ রাখুন।",
+      "target": "Keep a negative meaning at the end with ずしも."
+    },
+    {
+      "source": "দামি জিনিস সবসময় ভালো হবে এমন নয়।",
+      "target": "Expensive things are not always good."
+    },
+    {
+      "source": "জাপানি হলেও সবাই যে কানজিতে দক্ষ তা নয়।",
+      "target": "Just because someone is Japanese doesn't mean they are good at kanji."
+    },
+    {
+      "source": "৫. ～わけがない",
+      "target": "5. ～わけがない"
+    },
+    {
+      "source": "… হওয়ার কোনো কথাই নয়",
+      "target": "There is no way that … / It is out of the question that …"
+    },
+    {
+      "source": "কারণ বা পরিস্থিতি বিবেচনা করে বক্তা প্রবলভাবে সম্ভাবনা অস্বীকার করেন। এটি বক্তার দৃঢ় বিচার; বৈজ্ঞানিক নিশ্চয়তা দাবি নয়।",
+      "target": "Considering the reason or situation, the speaker strongly denies the possibility. This is the speaker's firm judgment; it does not claim scientific certainty."
+    },
+    {
+      "source": "V・い-বিশেষণ plain + わけがない / な-বিশেষণ + なわけがない / N + のわけがない",
+      "target": "V・い-adjective plain + わけがない / な-adjective + なわけがない / N + のわけがない"
+    },
+    {
+      "source": "わけではない = পুরোপুরি এমন নয়; わけがない = কোনোভাবেই এমন হওয়ার কথা নয়।",
+      "target": "わけではない = not necessarily so; わけがない = there is no way it could be like that."
+    },
+    {
+      "source": "এইমাত্র বেরিয়েছে, তাই ইতিমধ্যে পৌঁছে যাওয়ার কথা নয়।",
+      "target": "He just left, so there is no way he has arrived already."
+    },
+    {
+      "source": "এত সহজ উপায়ে সব মনে রাখা যাবে, এমন নয় মোটেও।",
+      "target": "It is by no means the case that you can remember everything in such an easy way."
+    },
+    {
+      "source": "৬. ～ないことはない",
+      "target": "6. ～ないことはない"
+    },
+    {
+      "source": "একেবারে … নয়, তা নয় / কিছুটা সম্ভব",
+      "target": "It's not that … at all / Somewhat possible"
+    },
+    {
+      "source": "নেতিবাচক কথাটিকে পুরোপুরি মানতে চান না। সীমিত সক্ষমতা, আংশিক সত্য বা শর্তসাপেক্ষ সম্মতি প্রকাশ করেন।",
+      "target": "You do not want to completely accept the negative statement. It expresses limited capability, partial truth, or conditional agreement."
+    },
+    {
+      "source": "Vない・い-বিশেষণくない + ことはない / N・な-বিশেষণでない + ことはない",
+      "target": "Vない・い-adjectiveくない + ことはない / N・な-adjectiveでない + ことはない"
+    },
+    {
+      "source": "べられないことはない = খাওয়া একেবারে অসম্ভব নয়; স্বচ্ছন্দে খেতে পারি এমন জোর নেই।",
+      "target": "食べられないことはない = eating it is not completely impossible; it doesn't mean I can eat it comfortably with ease."
+    },
+    {
+      "source": "খাবারটি যে খেতে পারি না তা নয়, তবে একটু ঝাল।",
+      "target": "It's not that I can't eat the food, but it's a bit spicy."
+    },
+    {
+      "source": "আগামীকাল হলে সাহায্য করা একেবারে অসম্ভব নয়।",
+      "target": "If it's tomorrow, helping is not completely out of the question."
+    },
+    {
+      "source": "Reading Lab · “একটু কঠিন” কথাটির পর কী হলো",
+      "target": "Reading Lab · What happened after the word \"a bit difficult\""
+    },
+    {
+      "source": "কেন এক বন্ধুকে পরদিন বাসা বদলে সাহায্য করতে বলল।",
+      "target": "Why one friend asked another to help move houses the next day."
+    },
+    {
+      "source": "অনুরোধের বিষয় ও সময় আগে দেওয়া হয়েছে।",
+      "target": "The subject and timing of the request were given beforehand."
+    },
+    {
+      "source": "বন্ধু বলল, “আগামীকাল একটু কঠিন হবে।”",
+      "target": "The friend said, \"Tomorrow would be a bit difficult.\""
+    },
+    {
+      "source": "এখানে",
+      "target": "Here"
+    },
+    {
+      "source": "しい কেবল কাজের জটিলতা নাও বোঝাতে পারে।",
+      "target": "しい might not just indicate the complexity of the work."
+    },
+    {
+      "source": "তারপর বলল, “কাজ আছে, তবে রবিবার হলে সাহায্য করতে পারব।”",
+      "target": "Then he said, \"I have work, but if it's Sunday, I can help.\""
+    },
+    {
+      "source": "পরের কারণ ও বিকল্প দিন থেকে আগের কথার উদ্দেশ্য পরিষ্কার হয়।",
+      "target": "The purpose of the previous remark becomes clear from the subsequent reason and alternative day."
+    },
+    {
+      "source": "এই পরিস্থিতিতে “কঠিন” কথাটি পরদিনের অনুরোধ প্রত্যাখ্যান করছে।",
+      "target": "In this situation, the word \"difficult\" is a refusal of the next day's request."
+    },
+    {
+      "source": "এই দৃশ্যে কী বোঝায় বলা হয়েছে; সব ক্ষেত্রে একই অর্থ দাবি করা হয়নি।",
+      "target": "It is explained what this scene implies; the same meaning is not claimed for all cases."
+    },
+    {
+      "source": "অর্থ বুঝতে শব্দের পাশাপাশি প্রসঙ্গও জরুরি।",
+      "target": "To understand the meaning, context is just as important as words."
+    },
+    {
+      "source": "শেষ বাক্য লেখার মূল শিক্ষা।",
+      "target": "The core lesson of writing the final sentence."
+    },
+    {
+      "source": "এই কথোপকথনে বন্ধু কি সাহায্য একেবারে অস্বীকার করেছে?",
+      "target": "Did the friend completely refuse help in this conversation?"
+    },
+    {
+      "source": "না; আগামীকাল পারবে না, রবিবার পারবে বলে বিকল্প দিয়েছে।",
+      "target": "No; they cannot do it tomorrow, but they offered an alternative by saying they can do it on Sunday."
+    },
+    {
+      "source": "しい-এর উদ্দেশ্য কোন তথ্য থেকে নিশ্চিত হলেন?",
+      "target": "From which information did you confirm the intention of しい?"
+    },
+    {
+      "source": "পরের বাক্যে কাজ থাকার কারণ ও রবিবারের বিকল্প দেওয়ার তথ্য থেকে।",
+      "target": "From the information about having work in the next sentence and offering a Sunday alternative."
+    },
+    {
+      "source": "বাংলা ও জাপানিতে কোনো অনুরোধ ফিরিয়ে দেওয়ার একটি করে উদাহরণ দিন। শব্দের অর্থ, সম্পর্ক ও পরিস্থিতি আলাদা করে লিখুন; জাতিগত সাধারণীকরণ এড়িয়ে চলুন।",
+      "target": "Give one example each of declining a request in Bengali and in Japanese. Write the word meanings, relationships, and situations separately; avoid ethnic generalizations."
+    },
+    {
+      "source": "জাপানিতে কোনো সময় না করার আগে কারণ বলা হয়।",
+      "target": "In Japanese, a reason is stated before refusing."
+    },
+    {
+      "source": "তবে সবসময় একই প্রকাশ ব্যবহার হয় না।",
+      "target": "However, the exact same expression is not always used."
+    },
+    {
+      "source": "সম্পর্ক ও পরিস্থিতি অনুযায়ী তা বদলায়।",
+      "target": "It changes according to the relationship and situation."
+    },
+    {
+      "source": "না বুঝলে আমি ভদ্রভাবে নিশ্চিত হতে চাই।",
+      "target": "If I don't understand, I want to politely make sure."
+    },
+    {
+      "source": "আগামীকাল একটু সাহায্য করবেন?",
+      "target": "Could you help me a bit tomorrow?"
+    },
+    {
+      "source": "আগামীকাল কাজ আছে বলে পারব না।",
+      "target": "I have work tomorrow, so I won't be able to."
+    },
+    {
+      "source": "তাহলে রবিবার হলে কেমন হয়?",
+      "target": "Then how about Sunday?"
+    },
+    {
+      "source": "রবিবার হলে পারব।",
+      "target": "If it's Sunday, I can do it."
+    },
+    {
+      "source": "বক্তা কোন দিন পারবেন? শ্রোতার কাছে কী অনুরোধ করছেন?",
+      "target": "Which day can the speaker do it? What are they requesting from the listener?"
+    },
+    {
+      "source": "মঙ্গলবার বিকেলে পারবেন; সময়সূচি বদলানো যাবে কি না যাচাই করতে বলছেন।",
+      "target": "They can do it on Tuesday afternoon; they are asking to check if the schedule can be changed."
+    },
+    {
+      "source": "যুক্তি, বিকল্প দৃষ্টিকোণ ও মতামত গঠন",
+      "target": "Logic, alternative perspective, and opinion formation"
+    },
+    {
+      "source": "শিরোনাম ও ছোট উপশিরোনাম দেখে যুক্তির ধাপ ধরুন। দাবি, কারণ, উদাহরণ ও বিকল্পকে আলাদা করুন। মতের বিরোধিতা করলে কারণসহ বিকল্প দিন।",
+      "target": "Trace the steps of the argument by looking at the title and subheadings. Separate claims, reasons, examples, and alternatives. If opposing an opinion, provide an alternative with reasons."
+    },
+    {
+      "source": "চিন্তার সূচনা বা ধারণা",
+      "target": "Thought initiation or concept"
+    },
+    {
+      "source": "দৃষ্টিকোণ",
+      "target": "Perspective"
+    },
+    {
+      "source": "উন্নতি",
+      "target": "Improvement"
+    },
+    {
+      "source": "ভূমিকা",
+      "target": "Introduction"
+    },
+    {
+      "source": "সহযোগিতা",
+      "target": "Cooperation"
+    },
+    {
+      "source": "ধারণা বা চিন্তা",
+      "target": "Concept or thought"
+    },
+    {
+      "source": "বদলানো",
+      "target": "Changing"
+    },
+    {
+      "source": "মিলিত সহযোগিতা",
+      "target": "Joint cooperation"
+    },
+    {
+      "source": "১. N にかかわらず",
+      "target": "1. N にかかわらず"
+    },
+    {
+      "source": "… নির্বিশেষে",
+      "target": "… regardless of"
+    },
+    {
+      "source": "আগের বিষয়টি যাই হোক, পরের ফল বা নিয়ম বদলায় না। বয়স, অভিজ্ঞতা, আবহাওয়া বা অংশগ্রহণের সিদ্ধান্তে ব্যবহার করা যায়।",
+      "target": "Regardless of the previous matter, the subsequent result or rule does not change. Can be used for age, experience, weather, or decision to participate."
+    },
+    {
+      "source": "じて শর্ত অনুযায়ী বদলায়; にかかわらず শর্তে বদলায় না।",
+      "target": "じて changes according to conditions; にかかわらず does not change regardless of conditions."
+    },
+    {
+      "source": "বয়স নির্বিশেষে যে কেউ অংশ নিতে পারেন।",
+      "target": "Anyone can participate regardless of age."
+    },
+    {
+      "source": "অংশ নিন বা না নিন, উত্তর দিন।",
+      "target": "Whether you participate or not, please answer."
+    },
+    {
+      "source": "২. N をきっかけに",
+      "target": "2. N をきっかけに"
+    },
+    {
+      "source": "…কে সূচনা বা উপলক্ষ করে",
+      "target": "… taking as a trigger or occasion"
+    },
+    {
+      "source": "একটি ঘটনা বড় পরিবর্তন, নতুন অভ্যাস বা সম্পর্কের সূচনা করে। শুধু যেকোনো কারণ নয়, শুরু হওয়ার উপলক্ষকে জোর দেয়।",
+      "target": "An event initiates a major change, new habit, or relationship. It emphasizes the starting occasion, not just any reason."
+    },
+    {
+      "source": "আগের ঘটনাটি পরের পরিবর্তনের শুরু; দৈনন্দিন ছোট কারণেও সবসময় ব্যবহার করবেন না।",
+      "target": "The previous event is the beginning of the subsequent change; do not use it for every small everyday reason."
+    },
+    {
+      "source": "মতবিনিময় অনুষ্ঠানকে উপলক্ষ করে স্থানীয় কাজে যুক্ত হয়েছি।",
+      "target": "Taking the opinion exchange meeting as an occasion, I got involved in local work."
+    },
+    {
+      "source": "বন্ধুর সঙ্গে দেখা হওয়ার সূত্রে আমার চিন্তা বদলেছে।",
+      "target": "My thoughts changed on the occasion of meeting my friend."
+    },
+    {
+      "source": "৩. ～",
+      "target": "3. ～"
+    },
+    {
+      "source": "… হলেই সঙ্গে সঙ্গে / …এর ওপর নির্ভর",
+      "target": "… as soon as / depending on …"
+    },
+    {
+      "source": "ক্রিয়ার ます বাদ দেওয়া রূপে কোনো কাজ শেষ হলে দ্রুত পরের কাজ করার পরিকল্পনা জানায়। বিশেষ্যের সঙ্গে ফল নির্ভর করার অর্থ হয়।",
+      "target": "It indicates a plan to quickly do the next action after finishing an action by dropping ます from the verb. When used with a noun, it means depending on the result."
+    },
+    {
+      "source": "（সঙ্গে সঙ্গে） / N +",
+      "target": "（Immediately） / N +"
+    },
+    {
+      "source": "だ（নির্ভর）",
+      "target": "だ（Depend on）"
+    },
+    {
+      "source": "= শেষ হলেই;",
+      "target": "= As soon as it finishes;"
+    },
+    {
+      "source": "= আবহাওয়ার ওপর নির্ভর।",
+      "target": "= Depending on the weather."
+    },
+    {
+      "source": "সূচি ঠিক হওয়া মাত্র জানাব।",
+      "target": "I will let you know as soon as the schedule is finalized."
+    },
+    {
+      "source": "সফল হব কি না তা প্রস্তুতির ওপর নির্ভর করে।",
+      "target": "Whether I succeed or not depends on my preparation."
+    },
+    {
+      "source": "৪. ～",
+      "target": "4. ～"
+    },
+    {
+      "source": "যতক্ষণ … শর্ত বজায় থাকে",
+      "target": "As long as … the condition is maintained"
+    },
+    {
+      "source": "আগের অবস্থা বা শর্ত বজায় থাকা পর্যন্ত পরের কথা সত্য।",
+      "target": "The subsequent statement remains true as long as the previous state or condition is maintained."
+    },
+    {
+      "source": "り বলতে নিজের জানার সীমার মধ্যেও বোঝায়।",
+      "target": "り can also refer to within the limits of one's own knowledge."
+    },
+    {
+      "source": "り / N・な-বিশেষণである +",
+      "target": "り / N・な-adjective である +"
+    },
+    {
+      "source": "এই পাঠে শর্তের ব্যবহার।",
+      "target": "Usage of conditions in this lesson."
+    },
+    {
+      "source": "り মানে সময়ের শেষ সীমা পর্যন্ত—প্রসঙ্গ আলাদা।",
+      "target": "り means up to the time limit—the context is different."
+    },
+    {
+      "source": "সুস্থ থাকা পর্যন্ত কাজ চালিয়ে যেতে চাই।",
+      "target": "I want to keep working as long as I am healthy."
+    },
+    {
+      "source": "আমার জানা মতে দোকানটি রবিবারও খোলা থাকে।",
+      "target": "To the best of my knowledge, the shop is open on Sundays too."
+    },
+    {
+      "source": "৫. ～に",
+      "target": "5. ～に"
+    },
+    {
+      "source": "নিশ্চয়ই … হবে, আমার দৃঢ় ধারণা",
+      "target": "Surely … will happen, I am firmly convinced"
+    },
+    {
+      "source": "লক্ষণ, পরিস্থিতি বা জানা তথ্য থেকে বক্তা শক্ত অনুমান করেন। সরাসরি দেখা প্রমাণিত ঘটনা বলার বদলে নিজের বিচার প্রকাশ পায়।",
+      "target": "The speaker makes a strong guess based on signs, situations, or known information. Instead of stating directly observed proven facts, it expresses one's own judgment."
+    },
+    {
+      "source": "V・い-বিশেষণ plain + に",
+      "target": "V・い-adjective plain + に"
+    },
+    {
+      "source": "いない / N・な-বিশেষণ + に",
+      "target": "いない / N・な-adjective + に"
+    },
+    {
+      "source": "নিশ্চয়তা অনুভব করলেও এটি অনুমান; হুবহু “প্রমাণিত সত্য” নয়।",
+      "target": "Even though a strong certainty is felt, this is a guess; it is not an exact \"proven truth\"."
+    },
+    {
+      "source": "প্রতিদিন অনুশীলন করছে, নিশ্চয়ই দক্ষ হবে বলে মনে করি।",
+      "target": "They are practicing every day, so I think they will surely become skilled."
+    },
+    {
+      "source": "তিনি পথঘাট ভালো জানেন, নিশ্চয়ই স্থানীয় বলে মনে হয়।",
+      "target": "He knows the roads well, so he seems to surely be a local."
+    },
+    {
+      "source": "৬. ～ざるを",
+      "target": "6. ～ざるを"
+    },
+    {
+      "source": "… না করে উপায় নেই",
+      "target": "Have no choice but to …"
+    },
+    {
+      "source": "অন্য বিকল্প না থাকায় অনিচ্ছা সত্ত্বেও কাজটি করতে হয়। বাইরের পরিস্থিতি বা বাস্তব সীমাবদ্ধতা বক্তাকে বাধ্য করে।",
+      "target": "Since there are no other alternatives, one has to do the task despite reluctance. External circumstances or practical limitations force the speaker."
+    },
+    {
+      "source": "Vない-এর ない বাদ + ざるを",
+      "target": "Drop ない from Vない + ざるを"
+    },
+    {
+      "source": "する-এর রূপ せざる; しざる নয়। নিজের আগ্রহে পছন্দ করা কাজের জন্য নয়।",
+      "target": "The form for する is せざる; not しざる. This is not for tasks chosen by one's own interest."
+    },
+    {
+      "source": "ট্রেন বন্ধ হওয়ায় ট্যাক্সি নেওয়া ছাড়া উপায় ছিল না।",
+      "target": "Since the trains were suspended, I had no choice but to take a taxi."
+    },
+    {
+      "source": "প্রবল বৃষ্টিতে পরিকল্পনা বদলানো ছাড়া উপায় নেই।",
+      "target": "With the heavy rain, we have no choice but to change our plans."
+    },
+    {
+      "source": "Reading Lab · সমস্যার বদলে প্রয়োজন থেকে ভাবা",
+      "target": "Reading Lab · Thinking from Needs Instead of Problems"
+    },
+    {
+      "source": "একটি লাইব্রেরিতে বই খুঁজতে বেশি সময় লাগে বলে মতামত এসেছিল।",
+      "target": "Feedback was received that it takes too much time to find books in a library."
+    },
+    {
+      "source": "শুরুতে ব্যবহারকারীর সমস্যা তুলে ধরা হয়েছে।",
+      "target": "At the beginning, the user's problem is highlighted."
+    },
+    {
+      "source": "প্রথমে নির্দেশনার কাগজ বাড়ানোর কথা ভাবা হলো।",
+      "target": "At first, they thought about increasing the instruction papers."
+    },
+    {
+      "source": "は প্রথম প্রস্তাব চিহ্নিত করছে; এটি চূড়ান্ত সমাধান নয়।",
+      "target": "は marks the first proposal; this is not the final solution."
+    },
+    {
+      "source": "কিন্তু ব্যবহারকারীদের সঙ্গে কথা বলে জানা গেল, শ্রেণিবিভাগের নাম বোঝা কঠিন।",
+      "target": "However, after talking with users, it was found that the classification names were hard to understand."
+    },
+    {
+      "source": "কাগজ কম থাকা নয়, নামের অর্থ না বোঝা—সমস্যার ব্যাখ্যা বদলাল।",
+      "target": "It's not about having fewer papers, but not understanding the meaning of the names—the explanation of the problem changed."
+    },
+    {
+      "source": "তাই কর্মীরা পরিচিত ভাষায় লেখা নির্দেশনা ব্যবহার করলেন।",
+      "target": "Therefore, the staff used instructions written in familiar language."
+    },
+    {
+      "source": "そこで আগের তথ্যের ভিত্তিতে করা পদক্ষেপকে যুক্ত করছে।",
+      "target": "そこで connects the action taken based on the previous information."
+    },
+    {
+      "source": "অন্য দৃষ্টিকোণ থেকে ভাবাই উন্নতির সূচনা হলো।",
+      "target": "Thinking from another perspective is the beginning of improvement."
+    },
+    {
+      "source": "শেষ বাক্য ঘটনাটির সাধারণ শিক্ষা; উদাহরণের বাইরে অতিরিক্ত ফল দাবি করা হয়নি।",
+      "target": "The final sentence is the general lesson of the event; no extra results are claimed beyond the example."
+    },
+    {
+      "source": "প্রথম প্রস্তাব ও শেষ পদক্ষেপ কীভাবে আলাদা?",
+      "target": "How are the first proposal and the final step different?"
+    },
+    {
+      "source": "প্রথমে কাগজ বাড়াতে চেয়েছিল; পরে ব্যবহারকারীর প্রয়োজন বুঝে ভাষা সহজ করেছে।",
+      "target": "First, they wanted to increase the paper; later, understanding the user's needs, they simplified the language."
+    },
+    {
+      "source": "দৃষ্টিকোণ বদলানোর কারণ কী ছিল?",
+      "target": "What was the reason for changing the perspective?"
+    },
+    {
+      "source": "ব্যবহারকারীদের সঙ্গে কথা বলে সমস্যাটি শ্রেণিবিভাগের নাম বুঝতে অসুবিধা বলে জানা যায়।",
+      "target": "By talking with users, it was learned that the problem was the difficulty in understanding the category names."
+    },
+    {
+      "source": "একটি ছোট সমস্যা বেছে ১৮০–২৫০ জাপানি অক্ষরে মতামত লিখুন: দাবি → কারণ → উদাহরণ → সম্ভাব্য আপত্তি → বাস্তব প্রস্তাব।",
+      "target": "Choose a small problem and write an opinion in 180–250 Japanese characters: Claim → Reason → Example → Potential objection → Practical proposal."
+    },
+    {
+      "source": "আমার মতে নির্দেশনা তৈরির সময় ব্যবহারকারীর দৃষ্টিকোণ জরুরি।",
+      "target": "In my opinion, the user's perspective is essential when creating instructions."
+    },
+    {
+      "source": "কারণ তথ্য বেশি হলেই অর্থ পরিষ্কার হয় এমন নয়।",
+      "target": "Because more information does not necessarily mean the meaning is clearer."
+    },
+    {
+      "source": "যেমন কঠিন শব্দ পরিচিত প্রকাশে বদলে দেওয়া যায়।",
+      "target": "For example, difficult words can be changed into familiar expressions."
+    },
+    {
+      "source": "তাই যারা ব্যবহার করবেন তাঁদের মতামত শোনা উচিত বলে মনে করি।",
+      "target": "Therefore, I think we should listen to the opinions of those who will use it."
+    },
+    {
+      "source": "নির্দেশনার কাগজ বাড়ালে কেমন হয়?",
+      "target": "How about increasing the instruction paper?"
+    },
+    {
+      "source": "এটিও একটি উপায়, তবে ভাষা বদলানোর প্রয়োজনও আছে বলে মনে করি।",
+      "target": "This is also a way, but I think there is also a need to change the language."
+    },
+    {
+      "source": "আগে ব্যবহারকারীদের জিজ্ঞেস করে দেখব?",
+      "target": "Shall I ask the users beforehand?"
+    },
+    {
+      "source": "হ্যাঁ। যাচাই করার পরে সিদ্ধান্ত নিই।",
+      "target": "Yes. Let's make a decision after verifying."
+    },
+    {
+      "source": "এ সপ্তাহে কী হবে? জরিপ কোথায় এবং কখন হবে?",
+      "target": "What will happen this week? Where and when will the survey take place?"
+    },
+    {
+      "source": "এ সপ্তাহে প্রশ্ন তৈরি হবে; আগামী সপ্তাহে লাইব্রেরির প্রবেশপথে জরিপ হবে।",
+      "target": "Questions will be created this week; the survey will take place at the library entrance next week."
+    },
+    {
+      "source": "শেষ রিভিশন · ৩৬টি নির্বাচিত গ্রামার",
+      "target": "Final Revision · 36 Selected Grammar"
+    },
+    {
+      "source": "অর্থ পড়ার পরে Form না দেখে নিজের একটি বাক্য বলুন। যে বিষয় আটকে যায়, তার অনুশীলনে ফিরে যান।",
+      "target": "After reading the meaning, say a sentence of your own without looking at the Form. Return to practicing the points where you get stuck."
+    },
+    {
+      "source": "— শুধু … নয়, অন্যদের ক্ষেত্রেও",
+      "target": "— Not only …, but also for others"
+    },
+    {
+      "source": "— একদিকে …, অন্যদিকে …",
+      "target": "— On the one hand …, on the other hand …"
+    },
+    {
+      "source": "— যদিও …, তবু …",
+      "target": "— Although …, still …"
+    },
+    {
+      "source": "— ঠিক … বলেই",
+      "target": "— Precisely because …"
+    },
+    {
+      "source": "— …এর মাধ্যমে / …জুড়ে",
+      "target": "— Through / Throughout …"
+    },
+    {
+      "source": "— পরিস্থিতিগত কারণে … করা চলে না",
+      "target": "— Cannot do … due to situational reasons"
+    },
+    {
+      "source": "— …অনুযায়ী মানিয়ে",
+      "target": "— Adapting according to …"
+    },
+    {
+      "source": "— …জুড়ে বিস্তৃতভাবে",
+      "target": "— Extensively throughout …"
+    },
+    {
+      "source": "— …কে ভিত্তি করে",
+      "target": "— Based on …"
+    },
+    {
+      "source": "— … না করেই",
+      "target": "— Without doing …"
+    },
+    {
+      "source": "— অন্য কিছু নয়, ঠিক …ই",
+      "target": "— Nothing else, exactly …"
+    },
+    {
+      "source": "— … করার পরে / … করার ক্ষেত্রে",
+      "target": "— After doing / In the case of doing …"
+    },
+    {
+      "source": "— মনে হয় যেন …",
+      "target": "— It feels like …"
+    },
+    {
+      "source": "— … না করে থাকতে পারি না",
+      "target": "— Cannot help but do …"
+    },
+    {
+      "source": "— … করা মাত্রই হঠাৎ",
+      "target": "— Suddenly as soon as …"
+    },
+    {
+      "source": "— … হলো মনে হতেই আবার …",
+      "target": "— As soon as I thought it was …, it happened again …"
+    },
+    {
+      "source": "— একসময় প্রায়ই … করতাম",
+      "target": "— I used to often do … at one time"
+    },
+    {
+      "source": "— খারাপ কিছু ঘটার আশঙ্কা আছে",
+      "target": "— There is a risk of something bad happening"
+    },
+    {
+      "source": "— …এর সঙ্গে সংশ্লিষ্ট পরিবর্তনে",
+      "target": "— In changes related to …"
+    },
+    {
+      "source": "— যত …, তত পরিবর্তন",
+      "target": "— The more …, the more change"
+    },
+    {
+      "source": "— …এর প্রতি / এর বিপরীতে",
+      "target": "— Toward / In contrast to …"
+    },
+    {
+      "source": "— …এর তুলনায়",
+      "target": "— Compared to ..."
+    },
+    {
+      "source": "— এমন বলা গেলেও",
+      "target": "— Even if you could say that"
+    },
+    {
+      "source": "— মাত্র …, এর বেশি নয়",
+      "target": "— Only ..., no more than that"
+    },
+    {
+      "source": "— … বলার চেয়ে বরং …",
+      "target": "— Rather than saying ..., it's more like ..."
+    },
+    {
+      "source": "— … বলতে কী বোঝায়",
+      "target": "— What does it mean to say ...?"
+    },
+    {
+      "source": "— … হলেও / এমনকি … ক্ষেত্রেও",
+      "target": "— Even if ... / Even in the case of ..."
+    },
+    {
+      "source": "— সবসময় বা সবার ক্ষেত্রে … নয়",
+      "target": "— Not always or for everyone ..."
+    },
+    {
+      "source": "— … হওয়ার কোনো কথাই নয়",
+      "target": "— There is no way ... could happen"
+    },
+    {
+      "source": "— একেবারে … নয়, তা নয় / কিছুটা সম্ভব",
+      "target": "— It's not that it's completely ... / It's somewhat possible"
+    },
+    {
+      "source": "— … নির্বিশেষে",
+      "target": "— Regardless of ..."
+    },
+    {
+      "source": "— …কে সূচনা বা উপলক্ষ করে",
+      "target": "— Using ... as a starting point or occasion"
+    },
+    {
+      "source": "— … হলেই সঙ্গে সঙ্গে / …এর ওপর নির্ভর",
+      "target": "— As soon as ... / Depending on ..."
+    },
+    {
+      "source": "— যতক্ষণ … শর্ত বজায় থাকে",
+      "target": "— As long as the ... condition is maintained"
+    },
+    {
+      "source": "— নিশ্চয়ই … হবে, আমার দৃঢ় ধারণা",
+      "target": "— Surely it will ..., I am strongly convinced"
+    },
+    {
+      "source": "— … না করে উপায় নেই",
+      "target": "— Have no choice but to ..."
+    },
+    {
+      "source": "নিজের প্রস্তুতি যাচাই",
+      "target": "Check your preparation"
+    },
+    {
+      "source": "৬টি Reading-এর মূল কথা এক বাক্যে বলুন।",
+      "target": "Summarize the main point of 6 Readings in one sentence."
+    },
+    {
+      "source": "দুটি কাছাকাছি গ্রামারের পার্থক্য নিজের উদাহরণ দিয়ে বোঝান।",
+      "target": "Explain the difference between two similar grammar points using your own examples."
+    },
+    {
+      "source": "একটি Writing model নিজের অভিজ্ঞতায় লিখুন।",
+      "target": "Write a Writing model based on your own experience."
+    },
+    {
+      "source": "একটি Speaking dialogue না দেখে বলুন।",
+      "target": "Speak a Speaking dialogue without looking."
+    },
+    {
+      "source": "Listening-এ সময়, স্থান, কারণ ও পরের কাজ লিখুন।",
+      "target": "In Listening, write the time, place, reason, and next action."
+    },
+    {
+      "source": "৩৬টি ইন্টারঅ্যাকটিভ গ্রামার →",
+      "target": "36 Interactive Grammars →"
+    },
+    {
+      "source": "প্রকাশকের বই ও রিসোর্স",
+      "target": "Publisher's Books & Resources"
+    },
+    {
+      "source": "শেখার লাইব্রেরি",
+      "target": "Learning Library"
+    }
+  ]
+}
