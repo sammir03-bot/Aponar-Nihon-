@@ -1,0 +1,230 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ne",
+  "page": "n5-grammar-lesson-09-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 9 | 好き・嫌い・上手・下手 + が / わかります / あります / から | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 9 | 好き・嫌い・上手・下手 + が / わかります / あります / から | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "পছন্দ-অপছন্দ, দক্ষতা, বোঝা, থাকা এবং কারণ বলা",
+      "target": "मनपर्ने-मन नपर्ने, दक्षता, बुझ्नु, हुनु र कारण भन्नु"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar सुरु"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "आजको Learning Goal"
+    },
+    {
+      "source": "পছন্দ বলা",
+      "target": "मनपर्ने भन्नु"
+    },
+    {
+      "source": "দক্ষতা বলা",
+      "target": "दक्षता भन्नु"
+    },
+    {
+      "source": "কারণ দেওয়া",
+      "target": "कारण दिनु"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "सजिलो व्याख्या + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "प्रत्येक pattern पहिले structure हेरेर, त्यसपछि example मुखले भन्नुहोस्। Audio button थिच्दा Japanese sentence सुन्न सक्नुहुनेछ।"
+    },
+    {
+      "source": "কী পছন্দ/অপছন্দ তা が দিয়ে চিহ্নিত হয়।",
+      "target": "के मनपर्छ/मन पर्दैन त्यो が ले चिन्ह लगाइन्छ।"
+    },
+    {
+      "source": "好き/嫌い দেখতে adjective, কিন্তু ব্যবহার হয় “N が” দিয়ে।",
+      "target": "好き/嫌い हेर्दा adjective, तर प्रयोग हुन्छ “N が” ले।"
+    },
+    {
+      "source": "ওয়াতাশি ওয়া ওনগাকু গা সুকিদেসু।",
+      "target": "私は音楽が好きです।"
+    },
+    {
+      "source": "আমি গান/সঙ্গীত পছন্দ করি।",
+      "target": "म गीत/संगीत मन पराउँछु।"
+    },
+    {
+      "source": "সাকানা গা কিরাইদেসু।",
+      "target": "魚が嫌いです।"
+    },
+    {
+      "source": "মাছ অপছন্দ করি।",
+      "target": "माछा मन पर्दैन।"
+    },
+    {
+      "source": "কোন বিষয়ে দক্ষ/দুর্বল তা が দিয়ে বলা হয়।",
+      "target": "कुन विषयमा दक्ष/कमजोर त्यो が ले भनिन्छ।"
+    },
+    {
+      "source": "নিজের ব্যাপারে 上手です বলা জাপানিতে অহংকারী শোনাতে পারে; 得意です বেশি natural হতে পারে।",
+      "target": "आफ्नो बारेमा 上手です भन्नु जापानीमा अहंकारी सुनिन सक्छ; 得意です बढी natural हुन सक्छ।"
+    },
+    {
+      "source": "তানাকা সান ওয়া রিয়োরি গা জোজুদেসু।",
+      "target": "田中さんは料理が上手です।"
+    },
+    {
+      "source": "তানাকা-সান রান্নায় দক্ষ।",
+      "target": "तानाका-सान खाना पकाउनमा दक्ष छन्।"
+    },
+    {
+      "source": "ওয়াতাশি ওয়া কানজি গা হেতাদেসু।",
+      "target": "私は漢字が下手です।"
+    },
+    {
+      "source": "আমি কানজিতে দুর্বল।",
+      "target": "म कान्जीमा कमजोर छु।"
+    },
+    {
+      "source": "কিছু বোঝা/জানা যায় বলতে わかります。",
+      "target": "केही बुझिन्छ/जानिन्छ भन्न わかります。"
+    },
+    {
+      "source": "日本語をわかります নয়; সাধারণভাবে 日本語がわかります।",
+      "target": "日本語をわかります होइन; सामान्यतया 日本語がわかります।"
+    },
+    {
+      "source": "নিহোনগো গা সুকোশি ওয়াকারিমাসু।",
+      "target": "日本語が少し分かります।"
+    },
+    {
+      "source": "জাপানি একটু বুঝি।",
+      "target": "जापानी अलि बुझ्छु।"
+    },
+    {
+      "source": "এইগো গা ওয়াকারিমাসু কা।",
+      "target": "英語が分かりますか।"
+    },
+    {
+      "source": "ইংরেজি বোঝেন?",
+      "target": "अंग्रेजी बुझ्नुहुन्छ?"
+    },
+    {
+      "source": "সময়/কাজ/appointment/জিনিস আছে বলতে あります।",
+      "target": "समय/काम/appointment/वस्तु छ भन्न あります।"
+    },
+    {
+      "source": "মানুষ/প্রাণীর existence হলে います, কিন্তু possession/schedule হলে あります।",
+      "target": "मानिस/प्राणीको existence भए います, तर possession/schedule भए あります।"
+    },
+    {
+      "source": "কিয়ো ওয়া জিকান গা আরিমাসু।",
+      "target": "今日は時間があります।"
+    },
+    {
+      "source": "আজ সময় আছে।",
+      "target": "आज समय छ।"
+    },
+    {
+      "source": "আশিতা, ইয়াকুসোকু গা আরিমাসু।",
+      "target": "明日、約束があります।"
+    },
+    {
+      "source": "কাল appointment আছে।",
+      "target": "भोलि appointment छ।"
+    },
+    {
+      "source": "কারণ বলতে sentence শেষে から বসে: “কারণ…”।",
+      "target": "कारण भन्न sentence को अन्त्यमा から बस्छ: “किनभने…”।"
+    },
+    {
+      "source": "কারণ আগে, ফলাফল পরে হতে পারে।",
+      "target": "कारण पहिले, परिणाम पछि हुन सक्छ।"
+    },
+    {
+      "source": "ইসোগাশিইদেসু কারা, ইকিমাসেন।",
+      "target": "忙しいですから、行きません।"
+    },
+    {
+      "source": "ব্যস্ত বলে যাব না।",
+      "target": "व्यस्त भएकाले जान्नँ।"
+    },
+    {
+      "source": "নিহোনগো গা সুকিদেসু কারা, বেনকিয়ো শিমাসু।",
+      "target": "日本語が好きですから、勉強します।"
+    },
+    {
+      "source": "জাপানি পছন্দ বলে পড়ি।",
+      "target": "जापानी मन परेकाले पढ्छु।"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "मुखले भन्ने Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "यी वाक्यहरू interview/classroom conversation जस्तो गरेर 3 पटक पढ्नुहोस्।"
+    },
+    {
+      "source": "দোন্না সুপোৎসু গা সুকিদেসু কা।",
+      "target": "どんなスポーツが好きですか।"
+    },
+    {
+      "source": "কোন খেলাধুলা পছন্দ?",
+      "target": "कुन खेलकुद मनपर्छ?"
+    },
+    {
+      "source": "সাক্কা গা সুকিদেসু।",
+      "target": "サッカーが好きです।"
+    },
+    {
+      "source": "ফুটবল পছন্দ।",
+      "target": "फुटबल मनपर्छ।"
+    },
+    {
+      "source": "নিহোনগো গা ওয়াকারিমাসু কা।",
+      "target": "日本語が分かりますか।"
+    },
+    {
+      "source": "জাপানি বোঝেন?",
+      "target": "जापानी बुझ्नुहुन्छ?"
+    },
+    {
+      "source": "হাই, সুকোশি ওয়াকারিমাসু।",
+      "target": "はい、少し分かります।"
+    },
+    {
+      "source": "হ্যাঁ, একটু বুঝি।",
+      "target": "हो, अलि बुझ्छु।"
+    },
+    {
+      "source": "দোশিতে বেনকিয়ো শিমাসু কা।",
+      "target": "どうして勉強しますか।"
+    },
+    {
+      "source": "কেন পড়েন?",
+      "target": "किन पढ्नुहुन्छ?"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "आफैलाई जाँच्नुहोस्"
+    },
+    {
+      "source": "কারণ বোঝাতে কোনটি?",
+      "target": "कारण बुझाउन कुन?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 9 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 9 • Verified Premium Detailed Version"
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ne",
+  "page": "n5-grammar-lesson-22-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 22 | Noun Modification / Relative Clauses | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 22 | Noun Modification / Relative Clauses | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "যে মানুষ, যে জিনিস, যে জায়গা — noun-এর আগে বাক্য বসানো",
+      "target": "जुन मानिस, जुन वस्तु, जुन ठाउँ — noun को अगाडि वाक्य राख्नु"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar सुरु"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "आजको Learning Goal"
+    },
+    {
+      "source": "Noun modify করা",
+      "target": "Noun modify गर्नु"
+    },
+    {
+      "source": "মানুষ বর্ণনা",
+      "target": "मानिस वर्णन"
+    },
+    {
+      "source": "আরও natural sentence",
+      "target": "थप natural sentence"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "सजिलो व्याख्या + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "प्रत्येक pattern पहिले structure हेरेर, त्यसपछि example मुखले भन्नुहोस्। Audio button थिच्दा Japanese sentence सुन्न सक्नुहुनेछ।"
+    },
+    {
+      "source": "noun-এর আগে plain sentence বসিয়ে “যে/যা/যেখানে” অর্থ তৈরি হয়।",
+      "target": "noun को अगाडि plain sentence राखेर “जुन/जो/जहाँ” अर्थ बन्छ।"
+    },
+    {
+      "source": "Japanese-এ relative clause noun-এর আগে আসে; বাংলা/ইংরেজিতে পরে আসতে পারে।",
+      "target": "Japanese मा relative clause noun को अगाडि आउँछ; नेपाली/अंग्रेजीमा पछि आउन सक्छ।"
+    },
+    {
+      "source": "কোরে ওয়া কিনো কাত্তা হোনদেসু।",
+      "target": "これは昨日買った本です।"
+    },
+    {
+      "source": "এটা গতকাল কেনা বই।",
+      "target": "यो हिजो किनेको किताब हो।"
+    },
+    {
+      "source": "আসোকো নি ইরু হিতো ওয়া তানাকা সানদেসু।",
+      "target": "あそこにいる人は田中さんです।"
+    },
+    {
+      "source": "ওখানে থাকা ব্যক্তি তানাকা-সান।",
+      "target": "त्यहाँ भएको व्यक्ति तानाका-सान हुन्।"
+    },
+    {
+      "source": "noun modifying clause-এর ভিতরের subject সাধারণত が দিয়ে আসে।",
+      "target": "noun modifying clause भित्रको subject सामान्यतया が ले आउँछ।"
+    },
+    {
+      "source": "母は作った料理 নয়; 母が作った料理।",
+      "target": "母は作った料理 होइन; 母が作った料理।"
+    },
+    {
+      "source": "কোরে ওয়া হাহা গা ৎসুকুত্তা রিয়োরিদেসু।",
+      "target": "これは母が作った料理です।"
+    },
+    {
+      "source": "এটা মায়ের বানানো খাবার।",
+      "target": "यो आमाले बनाएको खाना हो।"
+    },
+    {
+      "source": "ওয়াতাশি গা ইয়োমিতাই হোন ওয়া কোরেদেসু।",
+      "target": "私が読みたい本はこれです।"
+    },
+    {
+      "source": "আমি যে বই পড়তে চাই, সেটা এটা।",
+      "target": "मैले पढ्न चाहेको किताब, त्यो यो हो।"
+    },
+    {
+      "source": "যে ব্যক্তি এখন/habitually কিছু করছে, তাকে describe করতে।",
+      "target": "जुन व्यक्ति अहिले/habitually केही गरिरहेको छ, उसलाई describe गर्न।"
+    },
+    {
+      "source": "মেগানে ও কাকেতেইরু হিতো ওয়া ইয়ামাদা সানদেসু।",
+      "target": "眼鏡をかけている人は山田さんです।"
+    },
+    {
+      "source": "চশমা পরা ব্যক্তি ইয়ামাদা-সান।",
+      "target": "चस्मा लगाएको व्यक्ति यामादा-सान हुन्।"
+    },
+    {
+      "source": "দেনওয়া ও শিতেইরু হিতো ওয়া দারেদেসু কা।",
+      "target": "電話をしている人はだれですか।"
+    },
+    {
+      "source": "ফোন করছে যে ব্যক্তি, সে কে?",
+      "target": "फोन गरिरहेको व्यक्ति, उनी को हुन्?"
+    },
+    {
+      "source": "যে জায়গায়/যে সময় কিছু করি তা noun modification দিয়ে বলা যায়।",
+      "target": "जुन ठाउँमा/जुन समयमा केही गर्छु त्यो noun modification ले भन्न सकिन्छ।"
+    },
+    {
+      "source": "場所/時間 noun-কে আগের clause modify করে।",
+      "target": "場所/時間 noun लाई अगाडिको clause modify गर्छ।"
+    },
+    {
+      "source": "ওয়াতাশি গা বেনকিয়ো সুরু বাশো ওয়া তোশোকানদেসু।",
+      "target": "私が勉強する場所は図書館です।"
+    },
+    {
+      "source": "আমি যে জায়গায় পড়ি, তা লাইব্রেরি।",
+      "target": "मैले पढ्ने ठाउँ, त्यो पुस्तकालय हो।"
+    },
+    {
+      "source": "গোহান ও তাবেরু জিকান গা আরিমাসেন।",
+      "target": "ご飯を食べる時間がありません।"
+    },
+    {
+      "source": "খাওয়ার সময় নেই।",
+      "target": "खाने समय छैन।"
+    },
+    {
+      "source": "বর্ণনা দিয়ে কোন ব্যক্তি/জিনিস তা জিজ্ঞাসা করা যায়।",
+      "target": "वर्णन दिएर कुन व्यक्ति/वस्तु त्यो सोध्न सकिन्छ।"
+    },
+    {
+      "source": "Noun modification conversation-এ খুব useful।",
+      "target": "Noun modification conversation मा धेरै useful।"
+    },
+    {
+      "source": "মিরা সান গা সুনদেইরু ইয়ে ওয়া দোকোদেসু কা।",
+      "target": "ミラーさんが住んでいる家はどこですか।"
+    },
+    {
+      "source": "মিলার-সান যে বাড়িতে থাকেন, সেটা কোথায়?",
+      "target": "मिलर-सान बस्ने घर, त्यो कहाँ छ?"
+    },
+    {
+      "source": "কিনো আত্তা হিতো ওয়া দারেদেসু কা।",
+      "target": "昨日会った人はだれですか।"
+    },
+    {
+      "source": "গতকাল যে ব্যক্তির সাথে দেখা হয়েছিল, তিনি কে?",
+      "target": "हिजो भेट भएको व्यक्ति, उनी को हुन्?"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "मुखले भन्ने Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "यी वाक्यहरू conversation जस्तो गरेर 3 पटक पढ्नुहोस्।"
+    },
+    {
+      "source": "কোরে ওয়া নানিদেসু কা।",
+      "target": "これは何ですか।"
+    },
+    {
+      "source": "এটা কী?",
+      "target": "यो के हो?"
+    },
+    {
+      "source": "কিনো কাত্তা হোনদেসু।",
+      "target": "昨日買った本です।"
+    },
+    {
+      "source": "গতকাল কেনা বই।",
+      "target": "हिजो किनेको किताब।"
+    },
+    {
+      "source": "আসোকো নি ইরু হিতো ওয়া দারেদেসু কা।",
+      "target": "あそこにいる人はだれですか।"
+    },
+    {
+      "source": "ওখানে থাকা ব্যক্তি কে?",
+      "target": "त्यहाँ भएको व्यक्ति को हुन्?"
+    },
+    {
+      "source": "তানাকা সানদেসু।",
+      "target": "田中さんです।"
+    },
+    {
+      "source": "তানাকা-সান।",
+      "target": "तानाका-सान।"
+    },
+    {
+      "source": "আনাতা গা সুনদেইরু মাচি ওয়া দোকোদেসু কা।",
+      "target": "あなたが住んでいる町はどこですか।"
+    },
+    {
+      "source": "আপনি যে শহরে থাকেন সেটা কোথায়?",
+      "target": "तपाईं बस्ने शहर त्यो कहाँ छ?"
+    },
+    {
+      "source": "✅ 母が作った料理 — modifying clause-এর subject が।",
+      "target": "✅ 母が作った料理 — modifying clause को subject が।"
+    },
+    {
+      "source": "✅ 昨日買った本 — noun modify করতে plain form।",
+      "target": "✅ 昨日買った本 — noun modify गर्न plain form।"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "आफैलाई जाँच्नुहोस्"
+    },
+    {
+      "source": "গতকাল কেনা বই = ?",
+      "target": "हिजो किनेको किताब = ?"
+    },
+    {
+      "source": "মায়ের বানানো খাবার = ?",
+      "target": "आमाले बनाएको खाना = ?"
+    },
+    {
+      "source": "চশমা পরা ব্যক্তি = ?",
+      "target": "चस्मा लगाएको व्यक्ति = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 22 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 22 • Verified Premium Detailed Version"
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ne",
+  "page": "n5-grammar-lesson-23-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 23 | とき・と・Place を | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 23 | とき・と・Place を | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "যখন… / যদি… নিয়মিত ফল হয় — সময় ও natural result",
+      "target": "जब… / यदि… नियमित परिणाम हुन्छ — समय र natural result"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar सुरु"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "आजको Learning Goal"
+    },
+    {
+      "source": "যখন বলা",
+      "target": "जब भन्नु"
+    },
+    {
+      "source": "আগে/পরে nuance",
+      "target": "अघि/पछि nuance"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "सजिलो व्याख्या + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "प्रत्येक pattern पहिले structure हेरेर, त्यसपछि example मुखले भन्नुहोस्। Audio button थिच्दा Japanese sentence सुन्न सक्नुहुनेछ।"
+    },
+    {
+      "source": "কোনো কাজের সময়/যখন বলতে verb-এর plain form-এর পরে とき বসে। Present affirmative-এ dictionary form, negative-এ ない-form, past-এ た-form লাগে।",
+      "target": "कुन कामको समय/जब भन्न verb को plain form पछि とき बस्छ। Present affirmative मा dictionary form, negative मा ない-form, past मा た-form चाहिन्छ।"
+    },
+    {
+      "source": "とき-এর আগে ます-form বসে না। বাক্যের সময় অনুযায়ী plain form বেছে নিন।",
+      "target": "とき को अगाडि ます-form बस्दैन। वाक्यको समय अनुसार plain form छान्नुहोस्।"
+    },
+    {
+      "source": "গাক্কো এ ইকু তোকি, বাসু নি নোরিমাসু।",
+      "target": "学校へ行くとき、バスに乗ります।"
+    },
+    {
+      "source": "স্কুলে যাওয়ার সময় বাসে উঠি।",
+      "target": "विद्यालय जाने समयमा बस चढ्छु।"
+    },
+    {
+      "source": "কানজি গা ওয়াকারানাই তোকি, সেনসেই নি কিকিমাসু।",
+      "target": "漢字が分からないとき、先生に聞きます।"
+    },
+    {
+      "source": "কাঞ্জি না বুঝলে শিক্ষককে জিজ্ঞাসা করি।",
+      "target": "कान्जी नबुझे शिक्षकलाई सोध्छु।"
+    },
+    {
+      "source": "い-adjective সরাসরি とき নেয়; な-adjective-এর পরে なとき; noun-এর পরে のとき বসে।",
+      "target": "い-adjective सिधै とき लिन्छ; な-adjective पछि なとき; noun पछि のとき बस्छ।"
+    },
+    {
+      "source": "暇 হলো な-adjective—তাই 暇なとき। 子ども হলো noun—তাই 子どものとき।",
+      "target": "暇 な-adjective हो—त्यसैले 暇なとき। 子ども noun हो—त्यसैले 子どものとき।"
+    },
+    {
+      "source": "আৎসুই তোকি, মিজু ও নোমিমাসু।",
+      "target": "暑いとき、水を飲みます।"
+    },
+    {
+      "source": "গরমের সময় পানি পান করি।",
+      "target": "गर्मीको समयमा पानी पिउँछु।"
+    },
+    {
+      "source": "হিমানা তোকি, হোন ও ইয়োমিমাসু।",
+      "target": "暇なとき、本を読みます।"
+    },
+    {
+      "source": "অবসরে বই পড়ি।",
+      "target": "फुर्सदमा किताब पढ्छु।"
+    },
+    {
+      "source": "কোদোমো নো তোকি, ইয়োকু ওয়োগিমাশিতা।",
+      "target": "子どものとき、よく泳ぎました।"
+    },
+    {
+      "source": "শিশু বয়সে অনেক সাঁতার কাটতাম।",
+      "target": "बाल्यकालमा धेरै पौडी खेल्थेँ।"
+    },
+    {
+      "source": "Dictionary form হলে とき-clause-এর action এখনো শেষ হয়নি; た-form হলে সেই action শেষ হওয়ার পর/সময় main action ঘটে।",
+      "target": "Dictionary form भए とき-clause को action अझै सकिएको छैन; た-form भए त्यो action सकिएपछि/समयमा main action हुन्छ।"
+    },
+    {
+      "source": "行くとき = যাওয়ার পথে/আগে; 行ったとき = গিয়ে পৌঁছানোর পর/যখন গিয়েছিলাম।",
+      "target": "行くとき = जाने बाटोमा/अघि; 行ったとき = गएर पुगेपछि/जब गएको थिएँ।"
+    },
+    {
+      "source": "তোকিয়ো এ ইকু তোকি, কোনো কাবান ও কাইমাশিতা।",
+      "target": "東京へ行くとき、この鞄を買いました।"
+    },
+    {
+      "source": "টোকিও যাওয়ার পথে এই ব্যাগ কিনেছিলাম।",
+      "target": "टोकियो जाने बाटोमा यो झोला किनेको थिएँ।"
+    },
+    {
+      "source": "তোকিয়ো এ ইত্তা তোকি, কোনো কাবান ও কাইমাশিতা।",
+      "target": "東京へ行ったとき、この鞄を買いました।"
+    },
+    {
+      "source": "টোকিও গিয়ে এই ব্যাগ কিনেছিলাম।",
+      "target": "टोकियो गएर यो झोला किनेको थिएँ।"
+    },
+    {
+      "source": "একটি কাজ করলে স্বাভাবিক, অবশ্যম্ভাবী বা নিয়মিত ফল ঘটে—এমন ক্ষেত্রে と ব্যবহার হয়।",
+      "target": "एक काम गरे स्वाभाविक, अनिवार्य वा नियमित परिणाम हुन्छ—यस्तो अवस्थामा と प्रयोग हुन्छ।"
+    },
+    {
+      "source": "と-এর পর ইচ্ছা, অনুরোধ, আমন্ত্রণ বা command বসে না; সেসব ক্ষেত্রে Lesson 25-এর たら ব্যবহার করুন।",
+      "target": "と पछि इच्छा, अनुरोध, निमन्त्रणा वा command बस्दैन; ती अवस्थामा Lesson 25 को たら प्रयोग गर्नुहोस्।"
+    },
+    {
+      "source": "কোনো বোতান ও ওসু তো, দোআ গা হিরাকিমাসু।",
+      "target": "このボタンを押すと、ドアが開きます।"
+    },
+    {
+      "source": "এই বোতাম চাপলে দরজা খুলে যায়।",
+      "target": "यो बटन थिचे ढोका खुल्छ।"
+    },
+    {
+      "source": "মিগি এ মাগারু তো, ইউবিন কিয়োকু গা আরিমাসু।",
+      "target": "右へ曲がると、郵便局があります।"
+    },
+    {
+      "source": "ডানে ঘুরলে পোস্ট অফিস আছে।",
+      "target": "दायाँ मोडे हुलाक कार्यालय छ।"
+    },
+    {
+      "source": "যে জায়গা দিয়ে চলাচল, পার হওয়া বা হাঁটা হয়—সেই পথ/এলাকাকে を দিয়ে চিহ্নিত করা হয়।",
+      "target": "जुन ठाउँ भएर हिँडडुल, पार वा हिँडिन्छ—त्यो बाटो/क्षेत्रलाई を ले चिन्ह लगाइन्छ।"
+    },
+    {
+      "source": "এখানে を direct object নয়; movement-এর পথ বোঝায়।",
+      "target": "यहाँ を direct object होइन; movement को बाटो बुझाउँछ।"
+    },
+    {
+      "source": "কোয়েন ও সানপো শিমাসু।",
+      "target": "公園を散歩します।"
+    },
+    {
+      "source": "পার্কে হাঁটাহাঁটি করি।",
+      "target": "पार्कमा हिँडडुल गर्छु।"
+    },
+    {
+      "source": "মিচি ও ওয়াতারিমাসু।",
+      "target": "道を渡ります।"
+    },
+    {
+      "source": "রাস্তা পার হই।",
+      "target": "बाटो पार गर्छु।"
+    },
+    {
+      "source": "কোসাতেন ও মিগি এ মাগারিমাসু।",
+      "target": "交差点を右へ曲がります।"
+    },
+    {
+      "source": "মোড়ে ডানে ঘুরি।",
+      "target": "चोकमा दायाँ मोड्छु।"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "मुखले भन्ने Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "यी वाक्यहरू conversation जस्तो गरेर 3 पटक पढ्नुहोस्।"
+    },
+    {
+      "source": "হিমানা তোকি, নানি ও শিমাসু কা।",
+      "target": "暇なとき、何をしますか।"
+    },
+    {
+      "source": "ফ্রি সময়ে কী করেন?",
+      "target": "फुर्सदको समयमा के गर्नुहुन्छ?"
+    },
+    {
+      "source": "হোন ও ইয়োন দারি, ওনগাকু ও কিই তারি শিমাসু।",
+      "target": "本を読んだり、音楽を聞いたりします।"
+    },
+    {
+      "source": "বই পড়ি, গান শুনি ইত্যাদি।",
+      "target": "किताब पढ्छु, गीत सुन्छु आदि।"
+    },
+    {
+      "source": "নিহোন এ ইকু তোকি, নানি ও মোত্তেইকিমাসু কা।",
+      "target": "日本へ行くとき、何を持って行きますか।"
+    },
+    {
+      "source": "জাপানে যাওয়ার সময় কী নিয়ে যাবেন?",
+      "target": "जापान जाने समयमा के लिएर जानुहुनेछ?"
+    },
+    {
+      "source": "কোনো বোতান ও ওসু তো, দো নারিমাসু কা।",
+      "target": "このボタンを押すと、どうなりますか।"
+    },
+    {
+      "source": "এই বোতাম চাপলে কী হয়?",
+      "target": "यो बटन थिचे के हुन्छ?"
+    },
+    {
+      "source": "দোআ গা হিরাকিমাসু।",
+      "target": "ドアが開きます।"
+    },
+    {
+      "source": "দরজা খুলে যায়।",
+      "target": "ढोका खुल्छ।"
+    },
+    {
+      "source": "✅ と-এর পরে command/request natural নয়।",
+      "target": "✅ と पछि command/request natural होइन।"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "आफैलाई जाँच्नुहोस्"
+    },
+    {
+      "source": "জাপানে গিয়েছিলাম যখন = ?",
+      "target": "जापान गएको थिएँ जब = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 23 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 23 • Verified Premium Detailed Version"
+    }
+  ]
+}

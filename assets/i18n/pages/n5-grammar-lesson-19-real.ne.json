@@ -1,0 +1,242 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ne",
+  "page": "n5-grammar-lesson-19-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 19 | た-form・たことがあります・たり〜たりします・なります | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 19 | た-form・たことがあります・たり〜たりします・なります | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "অভিজ্ঞতা, মাঝে মাঝে কাজ, পরিবর্তন — past form দিয়ে natural conversation",
+      "target": "अनुभव, कहिलेकाहीं काम, परिवर्तन — past form ले natural conversation"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar सुरु"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "आजको Learning Goal"
+    },
+    {
+      "source": "た-form বানানো",
+      "target": "た-form बनाउनु"
+    },
+    {
+      "source": "অভিজ্ঞতা বলা",
+      "target": "अनुभव भन्नु"
+    },
+    {
+      "source": "পরিবর্তন বলা",
+      "target": "परिवर्तन भन्नु"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "सजिलो व्याख्या + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "प्रत्येक pattern पहिले structure हेरेर, त्यसपछि example मुखले भन्नुहोस्। Audio button थिच्दा Japanese sentence सुन्न सक्नुहुनेछ।"
+    },
+    {
+      "source": "verb-এর past plain form। て-form-এর মতোই pattern, শুধু て/で → た/だ।",
+      "target": "verb को past plain form। て-form जस्तै pattern, मात्र て/で → た/だ।"
+    },
+    {
+      "source": "ইকিমাসু → ওকোনাত্তা",
+      "target": "行きます → 行った"
+    },
+    {
+      "source": "গিয়েছি/গিয়েছিলাম",
+      "target": "गएको छु/गएको थिएँ"
+    },
+    {
+      "source": "নোমিমাসু → নোনদা",
+      "target": "飲みます → 飲んだ"
+    },
+    {
+      "source": "পান করেছি",
+      "target": "पिएको छु"
+    },
+    {
+      "source": "তাবেমাসু → তাবেতা",
+      "target": "食べます → 食べた"
+    },
+    {
+      "source": "খেয়েছি",
+      "target": "खाएको छु"
+    },
+    {
+      "source": "কোনো কাজ করার অভিজ্ঞতা আছে।",
+      "target": "कुनै काम गरेको अनुभव छ।"
+    },
+    {
+      "source": "একবার/কখনো করেছি — experience sense।",
+      "target": "एक पटक/कहिल्यै गरेको छु — experience sense।"
+    },
+    {
+      "source": "নিহোন এ ইত্তা কোতো গা আরিমাসু।",
+      "target": "日本へ行ったことがあります।"
+    },
+    {
+      "source": "জাপানে যাওয়ার অভিজ্ঞতা আছে।",
+      "target": "जापान गएको अनुभव छ।"
+    },
+    {
+      "source": "সুশি ও তাবেতা কোতো গা আরিমাসু।",
+      "target": "寿司を食べたことがあります।"
+    },
+    {
+      "source": "সুশি খাওয়ার অভিজ্ঞতা আছে।",
+      "target": "सुशी खाएको अनुभव छ।"
+    },
+    {
+      "source": "কোনো কাজ করার অভিজ্ঞতা নেই।",
+      "target": "कुनै काम गरेको अनुभव छैन।"
+    },
+    {
+      "source": "まだ + Vたことがありません = এখনো করিনি।",
+      "target": "まだ + Vたことがありません = अझै गरेको छैन।"
+    },
+    {
+      "source": "ফুজিসান নি নোবোত্তা কোতো গা আরিমাসেন।",
+      "target": "富士山に登ったことがありません।"
+    },
+    {
+      "source": "ফুজি পাহাড়ে ওঠার অভিজ্ঞতা নেই।",
+      "target": "फुजी पर्वत चढेको अनुभव छैन।"
+    },
+    {
+      "source": "মাদা হোক্কাইদো এ ইত্তা কোতো গা আরিমাসেন।",
+      "target": "まだ北海道へ行ったことがありません।"
+    },
+    {
+      "source": "এখনো হোক্কাইদো যাইনি।",
+      "target": "अझै होक्काइदो गएको छैन।"
+    },
+    {
+      "source": "উদাহরণ হিসেবে কয়েকটি কাজ বলি — “কখনো এটা করি, কখনো ওটা করি”।",
+      "target": "उदाहरणको रूपमा केही काम भन्छु — “कहिले यो गर्छु, कहिले त्यो गर्छु”।"
+    },
+    {
+      "source": "সব কাজের সম্পূর্ণ list নয়, sample list।",
+      "target": "सबै कामको पूर्ण list होइन, sample list।"
+    },
+    {
+      "source": "নিচিয়োবি ওয়া এইগা ও মি তারি, কাইমোনো শি তারি শিমাসু।",
+      "target": "日曜日は映画を見たり、買い物したりします।"
+    },
+    {
+      "source": "রবিবার সিনেমা দেখি, কেনাকাটা করি ইত্যাদি।",
+      "target": "आइतबार फिल्म हेर्छु, किनमेल गर्छु आदि।"
+    },
+    {
+      "source": "তোমোদাচি তো হানাশি তারি, গেমু ও শি তারি শিমাসু।",
+      "target": "友達と話したり、ゲームをしたりします।"
+    },
+    {
+      "source": "বন্ধুর সাথে কথা বলি, গেম খেলি ইত্যাদি।",
+      "target": "साथीसँग कुरा गर्छु, गेम खेल्छु आदि।"
+    },
+    {
+      "source": "অবস্থা পরিবর্তন হয়ে গেছে/হচ্ছে — become।",
+      "target": "अवस्था परिवर्तन भइसक्यो/भइरहेको छ — become।"
+    },
+    {
+      "source": "সামুকু নারিমাশিতা।",
+      "target": "寒くなりました।"
+    },
+    {
+      "source": "ঠান্ডা হয়ে গেছে।",
+      "target": "चिसो भइसक्यो।"
+    },
+    {
+      "source": "নিহোনগো গা জোজু নি নারিমাশিতা।",
+      "target": "日本語が上手になりました।"
+    },
+    {
+      "source": "জাপানিতে দক্ষ হয়ে গেছি।",
+      "target": "जापानीमा दक्ष भइसकेँ।"
+    },
+    {
+      "source": "শোরাই, ইশা নি নারিমাসু।",
+      "target": "将来、医者になります।"
+    },
+    {
+      "source": "ভবিষ্যতে ডাক্তার হব।",
+      "target": "भविष्यमा डाक्टर हुनेछु।"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "मुखले भन्ने Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "यी वाक्यहरू interview/classroom conversation जस्तो गरेर 3 पटक पढ्नुहोस्।"
+    },
+    {
+      "source": "নিহোন এ ইত্তা কোতো গা আরিমাসু কা।",
+      "target": "日本へ行ったことがありますか।"
+    },
+    {
+      "source": "জাপানে যাওয়ার অভিজ্ঞতা আছে?",
+      "target": "जापान गएको अनुभव छ?"
+    },
+    {
+      "source": "হাই, আরিমাসু।",
+      "target": "はい、あります।"
+    },
+    {
+      "source": "হ্যাঁ, আছে।",
+      "target": "हो, छ।"
+    },
+    {
+      "source": "শুমাৎসু, নানি ও শিমাসু কা।",
+      "target": "週末、何をしますか।"
+    },
+    {
+      "source": "উইকেন্ডে কী করেন?",
+      "target": "सप्ताहन्तमा के गर्नुहुन्छ?"
+    },
+    {
+      "source": "এইগা ও মি তারি, কাইমোনো শি তারি শিমাসু।",
+      "target": "映画を見たり、買い物したりします।"
+    },
+    {
+      "source": "সিনেমা দেখি, কেনাকাটা করি ইত্যাদি।",
+      "target": "फिल्म हेर्छु, किनमेल गर्छु आदि।"
+    },
+    {
+      "source": "সাইকিন, সামুকু নারিমাশিতা নে।",
+      "target": "最近、寒くなりましたね।"
+    },
+    {
+      "source": "সম্প্রতি ঠান্ডা হয়ে গেছে, তাই না?",
+      "target": "हालै चिसो भइसक्यो, होइन र?"
+    },
+    {
+      "source": "✅ 日本へ行ったことがあります。 — た-form দরকার।",
+      "target": "✅ 日本へ行ったことがあります。 — た-form चाहिन्छ।"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "आफैलाई जाँच्नुहोस्"
+    },
+    {
+      "source": "অভিজ্ঞতা আছে = ?",
+      "target": "अनुभव छ = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 19 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 19 • Verified Premium Detailed Version"
+    }
+  ]
+}
