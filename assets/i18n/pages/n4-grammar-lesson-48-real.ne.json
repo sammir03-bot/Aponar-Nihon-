@@ -1,0 +1,462 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ne",
+  "page": "n4-grammar-lesson-48-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 48: Causative Form：করানো, বাধ্য করা ও অনুমতি দেওয়া | N4 Grammar",
+      "target": "Lesson 48: Causative Form：गराउनु, बाध्य गर्नु र अनुमति दिनु | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "मुख्य कन्टेन्टमा जानुहोस्"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 48 · সময় ও Keigo",
+      "target": "Lesson 48 · समय र Keigo"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "सबै Lesson"
+    },
+    {
+      "source": "সময় ও Keigo",
+      "target": "समय र Keigo"
+    },
+    {
+      "source": "ধাপ ৫ · 46–50",
+      "target": "चरण 5 · 46–50"
+    },
+    {
+      "source": "Causative Form：করানো, বাধ্য করা ও অনুমতি দেওয়া",
+      "target": "Causative Form：गराउनु, बाध्य गर्नु र अनुमति दिनु"
+    },
+    {
+      "source": "একজন অন্যজনকে কাজ করান/করতে দেন, intransitive ও transitive verb-এ person particle বাছাই এবং নিজের কাজের অনুমতি ভদ্রভাবে চাওয়া।",
+      "target": "एकजनाले अर्कोलाई काम गराउनु/गर्न दिनु, intransitive र transitive verb मा person particle छान्नु र आफ्नो कामको अनुमति विनम्र भएर माग्नु।"
+    },
+    {
+      "source": "5টি বিস্তারিত grammar block",
+      "target": "5 विस्तृत grammar block"
+    },
+    {
+      "source": "15টি Japanese example",
+      "target": "15 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 व्याख्यासहित practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile र print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "あ Reading लुकाउनुहोस्"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "अझै सम्पन्न भएको छैन"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ सम्पन्न गर्नुहोस्"
+    },
+    {
+      "source": "Lesson 48 · লক্ষ্য",
+      "target": "Lesson 48 · लक्ष्य"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "यो Lesson सकिएपछि के सक्नुहुनेछ"
+    },
+    {
+      "source": "Causative form একাই ‘make’ না ‘let’ ঠিক করে না। Authority, context, ইচ্ছা, 〜てもいい এবং কথোপকথনের পরিস্থিতি বলে বোঝায় বাধ্য করা নাকি অনুমতি। প্রথমে form ও particle শিখে, তারপর সম্পর্কের nuance পড়তে হবে।",
+      "target": "Causative form एक्लै ‘make’ वा ‘let’ ठीक गर्दैन। Authority, context, इच्छा, 〜てもいい र कुराकानीको परिस्थितिले बाध्य गर्नु वा अनुमति बुझाउँछ। पहिले form र particle सिकेर, त्यसपछि सम्बन्धको nuance पढ्नुपर्छ।"
+    },
+    {
+      "source": "তিন group-এর causative form বানাবেন",
+      "target": "तीन group को causative form बनाउनुहुनेछ"
+    },
+    {
+      "source": "intransitive-এ person を এবং transitive-এ person に—basic rule প্রয়োগ করবেন",
+      "target": "intransitive मा person を र transitive मा person に—basic rule प्रयोग गर्नुहुनेछ"
+    },
+    {
+      "source": "make ও let অর্থ context থেকে শনাক্ত করবেন",
+      "target": "make र let अर्थ context बाट चिन्नुहुनेछ"
+    },
+    {
+      "source": "Vさせていただけませんか দিয়ে খুব ভদ্র permission চাইবেন",
+      "target": "Vさせていただけませんか ले धेरै विनम्र permission माग्नुहुनेछ"
+    },
+    {
+      "source": "使役形ের গঠন",
+      "target": "使役形 को गठन"
+    },
+    {
+      "source": "কাউকে কিছু করানো/করতে দেওয়া—causative verb",
+      "target": "कसैलाई केही गराउनु/गर्न दिनु—causative verb"
+    },
+    {
+      "source": "গঠন",
+      "target": "संरचना"
+    },
+    {
+      "source": "ধরন",
+      "target": "प्रकार"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "उदाहरण"
+    },
+    {
+      "source": "শেষ う-row → あ-row＋せる",
+      "target": "अन्तिम う-row → あ-row＋せる"
+    },
+    {
+      "source": "る বাদ＋させる",
+      "target": "る हटाएर＋させる"
+    },
+    {
+      "source": "অনিয়মিত",
+      "target": "अनियमित"
+    },
+    {
+      "source": "ভদ্র",
+      "target": "विनम्र"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "विस्तृत व्याख्या"
+    },
+    {
+      "source": "Causative verb Group 2-এর মতো conjugate হয়: 行かせない, 行かせた, 行かせて।",
+      "target": "Causative verb Group 2 जस्तै conjugate हुन्छ: 行かせない, 行かせた, 行かせて।"
+    },
+    {
+      "source": "কথ্য short causative যেমন 行かす শোনা যায়, কিন্তু standard N4 form 行かせる ব্যবহার করুন।",
+      "target": "बोलचालको short causative जस्तै 行かす सुनिन्छ, तर standard N4 form 行かせる प्रयोग गर्नुहोस्।"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "के सम्झनुपर्छ"
+    },
+    {
+      "source": "読む→読ませる; passive 読まれる-এর সঙ্গে গুলাবেন না।",
+      "target": "読む→読ませる; passive 読まれる सँग नतुल्याउनुहोस्।"
+    },
+    {
+      "source": "কাজ করা → কাজ করানো/করতে দেওয়া",
+      "target": "काम गर्नु → काम गराउनु/गर्न दिनु"
+    },
+    {
+      "source": "উঠা → উঠানো/উঠতে বাধ্য করা",
+      "target": "उठ्नु → उठाउनु/उठ्न बाध्य गर्नु"
+    },
+    {
+      "source": "আসা → আসতে বলা/আনানো",
+      "target": "आउनु → आउन भन्नु/ल्याउनु"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ गलत"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ सही"
+    },
+    {
+      "source": "কেন:",
+      "target": "किन:"
+    },
+    {
+      "source": "Group 1 dictionary ending く→か＋せる; ます-stem নয়।",
+      "target": "Group 1 dictionary ending く→か＋せる; ます-stem होइन।"
+    },
+    {
+      "source": "কাউকে intransitive action করানো/করতে দেওয়া",
+      "target": "कसैलाई intransitive action गराउनु/गर्न दिनु"
+    },
+    {
+      "source": "Original intransitive action-এ direct object নেই: 子どもが行く। Causative-এ causer মা topic, actor শিশুকে を: 母は子どもを行かせる।",
+      "target": "Original intransitive action मा direct object छैन: 子どもが行く। Causative मा causer आमा topic, actor बच्चालाई を: 母は子どもを行かせる।"
+    },
+    {
+      "source": "Movement/location particles থাকে: 子どもを公園で遊ばせます; 弟を日本へ行かせます।",
+      "target": "Movement/location particles रहन्छन्: 子どもを公園で遊ばせます; 弟を日本へ行かせます।"
+    },
+    {
+      "source": "Modern Japanese-এ permission/actor agency জোর দিলে intransitive-এর actor に-ও পাওয়া যায়, বিশেষ করে 行かせてあげる। কিন্তু Minna/N4 basic transformation-এ Personを প্রথমে আয়ত্ত করুন; প্রশ্নের context দেখুন।",
+      "target": "Modern Japanese मा permission/actor agency जोड दिए intransitive को actor に पनि पाइन्छ, विशेष गरी 行かせてあげる। तर Minna/N4 basic transformation मा Personを पहिले महारत हासिल गर्नुहोस्; प्रश्नको context हेर्नुहोस्।"
+    },
+    {
+      "source": "শিক্ষক শিক্ষার্থীকে দাঁড় করিয়েছেন।",
+      "target": "शिक्षकले विद्यार्थीलाई उभ्याउनुभयो।"
+    },
+    {
+      "source": "মা শিশুকে বাইরে খেলতে দিয়েছেন।",
+      "target": "आमाले बच्चालाई बाहिर खेल्न दिनुभयो।"
+    },
+    {
+      "source": "কোম্পানি আমাকে ওসাকা পাঠিয়েছে/যেতে বাধ্য করেছে।",
+      "target": "कम्पनीले मलाई ओसाका पठायो/जान बाध्य गर्यो।"
+    },
+    {
+      "source": "কাউকে একটি object-এর ওপর কাজ করানো/করতে দেওয়া",
+      "target": "कसैलाई एउटा object माथि काम गराउनु/गर्न दिनु"
+    },
+    {
+      "source": "Original: 学生が作文を書く। Causative-এ actor 学生に, original object 作文を অপরিবর্তিত। Actor-কে を করলে একই clause-এ দুই を conflict হয়; তাই に।",
+      "target": "Original: 学生が作文を書く। Causative मा actor 学生に, original object 作文を अपरिवर्तित। Actor लाई を गरे एउटै clause मा दुई を conflict हुन्छ; त्यसैले に।"
+    },
+    {
+      "source": "Make/let context: 母は子どもに野菜を食べさせました—মা সবজি খাইয়েছেন/খেতে বাধ্য করেছেন। 医者は患者を休ませました—ডাক্তার রোগীকে বিশ্রাম নিতে দিয়েছেন।",
+      "target": "Make/let context: 母は子どもに野菜を食べさせました—आमाले तरकारी खुवाइन्/खान बाध्य गरिन्। 医者は患者を休ませました—डाक्टरले बिरामीलाई आराम गर्न दिनुभयो।"
+    },
+    {
+      "source": "Permission স্পষ্ট করতে 好きな本を読ませてあげました; compulsion স্পষ্ট করতে 無理に, 命令して ইত্যাদি যোগ করা যায়।",
+      "target": "Permission स्पष्ट गर्न 好きな本を読ませてあげました; compulsion स्पष्ट गर्न 無理に, 命令して आदि जोड्न सकिन्छ।"
+    },
+    {
+      "source": "শিক্ষক শিক্ষার্থীদের কানজি লিখিয়েছেন।",
+      "target": "शिक्षकले विद्यार्थीहरूलाई कान्जी लेखाउनुभयो।"
+    },
+    {
+      "source": "মা ছোট ভাইকে ঘর পরিষ্কার করিয়েছেন।",
+      "target": "आमाले सानो भाइलाई घर सफा गराइन्।"
+    },
+    {
+      "source": "বিভাগীয় প্রধান আমাকে রিপোর্ট বানিয়েছেন/বানাতে বলেছেন।",
+      "target": "विभागीय प्रमुखले मलाई रिपोर्ट बनाउनुभयो/बनाउन भन्नुभयो।"
+    },
+    {
+      "source": "Original object 作文を থাকায় actor に।",
+      "target": "Original object 作文を भएकाले actor に।"
+    },
+    {
+      "source": "Make বনাম Let：context কী বলে",
+      "target": "Make बनाम Let：context के भन्छ"
+    },
+    {
+      "source": "একই causative form বাধ্য করা বা অনুমতি—দুই অর্থ নিতে পারে",
+      "target": "एउटै causative form बाध्य गर्नु वा अनुमति—दुवै अर्थ लिन सक्छ"
+    },
+    {
+      "source": "Authority relation default inference দেয়। Boss→employee task প্রায়ই ‘করানো’; parent allowing child’s wish ‘করতে দেওয়া’।",
+      "target": "Authority relation default inference दिन्छ। Boss→employee task प्रायः ‘गराउनु’; parent ले बच्चाको इच्छा अनुमति दिनु ‘गर्न दिनु’।"
+    },
+    {
+      "source": "স্পষ্টতা চাইলে permission-এ Vさせてあげる/許す, compulsion-এ 無理に/命令する। শুধু বাংলা translation মুখস্থ করলে ambiguity হারাবেন।",
+      "target": "स्पष्टता चाहिए permission मा Vさせてあげる/許す, compulsion मा 無理に/命令する। मात्र नेपाली translation कण्ठ गरे ambiguity हराउनुहुनेछ।"
+    },
+    {
+      "source": "Causative নিজের benefit-এর permission request-এ させてください = আমাকে করতে দিন। আরও ভদ্র রূপ পরের pattern।",
+      "target": "Causative आफ्नो benefit को permission request मा させてください = मलाई गर्न दिनुहोस्। बढी विनम्र रूप अर्को pattern।"
+    },
+    {
+      "source": "Causative = cause action; force/permission হলো context-level meaning।",
+      "target": "Causative = cause action; force/permission हो context-level meaning।"
+    },
+    {
+      "source": "শিশু যেতে চেয়েছিল, তাই একা যেতে দিয়েছি।",
+      "target": "बच्चा जान चाहेको थियो, त्यसैले एक्लै जान दिएँ।"
+    },
+    {
+      "source": "শিক্ষক একই বাক্য দশবার লিখিয়েছেন।",
+      "target": "शिक्षकले एउटै वाक्य दस पटक लेखाउनुभयो।"
+    },
+    {
+      "source": "আজ আমাকে একটু আগে ফিরতে দিন।",
+      "target": "आज मलाई अलि पहिले फर्कन दिनुहोस्।"
+    },
+    {
+      "source": "帰ってください。（নিজের early-leave permission)",
+      "target": "帰ってください।（आफ्नो early-leave permission)"
+    },
+    {
+      "source": "帰ってください অন্যকে ফিরতে বলে; নিজের permission = causative させてください।",
+      "target": "帰ってください अरूलाई फर्कन भन्छ; आफ्नो permission = causative させてください।"
+    },
+    {
+      "source": "নিজেকে কাজটি করার অনুমতি/সুযোগ খুব ভদ্রভাবে চাওয়া",
+      "target": "आफूलाई काम गर्ने अनुमति/अवसर धेरै विनम्र भएर माग्नु"
+    },
+    {
+      "source": "使役て-form: 話させる→話させて; 帰らせる→帰らせて। তারপর いただけませんか—‘আমাকে করার অনুগ্রহটি গ্রহণ করতে দেবেন কি?’",
+      "target": "使役て-form: 話させる→話させて; 帰らせる→帰らせて। त्यसपछि いただけませんか—‘मलाई गर्ने अनुग्रह ग्रहण गर्न दिनुहुन्छ कि?’"
+    },
+    {
+      "source": "Business, interview, meeting, formal permission-এ বহুল: ここで自己紹介させていただきます (অনুমতি/সুযোগ পেয়ে পরিচয় দিচ্ছি)। অতিরিক্ত ব্যবহার bureaucratic শোনাতে পারে; সাধারণ permission-এ Vてもいいですか যথেষ্ট।",
+      "target": "Business, interview, meeting, formal permission मा बहुल: ここで自己紹介させていただきます (अनुमति/अवसर पाएर परिचय दिन्छु)। अत्यधिक प्रयोग bureaucratic सुनिन सक्छ; सामान्य permission मा Vてもいいですか पर्याप्त।"
+    },
+    {
+      "source": "শ্রোতার অনুমতি/সুবিধা বাস্তবে relevant হওয়া উচিত। নিজের স্বাধীন কাজেও অকারণে させていただく over-keigo।",
+      "target": "श्रोताको अनुमति/सुविधा वास्तविक रूपमा relevant हुनुपर्छ। आफ्नो स्वतन्त्र काममा पनि अकारण させていただく over-keigo।"
+    },
+    {
+      "source": "কাল আমাকে একটু আগে ফিরতে দেবেন কি?",
+      "target": "भोलि मलाई अलि पहिले फर्कन दिनुहुन्छ कि?"
+    },
+    {
+      "source": "প্রথমে আমাকে আত্মপরিচয় দিতে দেবেন কি?",
+      "target": "पहिले मलाई आत्मपरिचय दिन दिनुहुन्छ कि?"
+    },
+    {
+      "source": "এই নথিটি আমাকে কপি করতে দেবেন কি?",
+      "target": "यो कागजात मलाई कपी गर्न दिनुहुन्छ कि?"
+    },
+    {
+      "source": "説明していただけませんか。（আমি ব্যাখ্যা করার permission চাইলে）",
+      "target": "説明していただけませんか।（म व्याख्या गर्ने permission मागे)"
+    },
+    {
+      "source": "Vていただけませんか অন্যকে করতে বলে; Vさせていただけませんか নিজেকে করতে দেওয়ার অনুমতি চায়।",
+      "target": "Vていただけませんか अरूलाई गर्न भन्छ; Vさせていただけませんか आफूलाई गर्न दिने अनुमति माग्छ।"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "एक नजरमा भिन्नता"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "कुन परिस्थितिमा कुन?"
+    },
+    {
+      "source": "নিজের permission",
+      "target": "आफ्नो permission"
+    },
+    {
+      "source": "আমি implicit",
+      "target": "म implicit"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "वास्तविक कुराकानी"
+    },
+    {
+      "source": "অফিসে আগেভাগে ছুটি চাওয়া",
+      "target": "कार्यालयमा अघिल्लै बिदा माग्नु"
+    },
+    {
+      "source": "স্যার, একটি অনুরোধ ছিল।",
+      "target": "सर, एउटा अनुरोध थियो।"
+    },
+    {
+      "source": "কী?",
+      "target": "के?"
+    },
+    {
+      "source": "কাল হাসপাতালে যাব বলে আমাকে চারটায় ফিরতে দেবেন কি?",
+      "target": "भोलि अस्पताल जानेछु भनेर मलाई चार बजे फर्कन दिनुहुन्छ कि?"
+    },
+    {
+      "source": "ঠিক আছে। আজকের মধ্যে কাজ শেষ করুন।",
+      "target": "ठीक छ। आजभित्र काम सक्नुहोस्।"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "आफै जाँच्नुहोस्"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice र व्याख्यासहित उत्तर"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "पहिले कापीमा उत्तर लेख्नुहोस्, त्यसपछि प्रश्नमा थिचेर उत्तर र कारण मिलाउनुहोस्।"
+    },
+    {
+      "source": "1. 読む-এর causative form বানান।",
+      "target": "1. 読む को causative form बनाउनुहोस्।"
+    },
+    {
+      "source": "2. ‘মা শিশুকে স্কুলে পাঠান’—intransitive causative বলুন।",
+      "target": "2. ‘आमाले बच्चालाई विद्यालय पठाउनुहुन्छ’—intransitive causative भन्नुहोस्।"
+    },
+    {
+      "source": "3. ‘শিক্ষক শিক্ষার্থীকে বই পড়ান’ বলুন।",
+      "target": "3. ‘शिक्षकले विद्यार्थीलाई पुस्तक पढाउनुहुन्छ’ भन्नुहोस्।"
+    },
+    {
+      "source": "4. ‘আমাকে প্রশ্ন করতে দেবেন কি?’ বলুন।",
+      "target": "4. ‘मलाई प्रश्न गर्न दिनुहुन्छ कि?’ भन्नुहोस्।"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "एक वाक्यमा Master Key"
+    },
+    {
+      "source": "Causative form action ঘটায়; ‘force’ না ‘allow’ context ঠিক করে। Intransitive actor を, transitive actor に＋object を; নিজের formal permission-এ Vさせていただけませんか।",
+      "target": "Causative form action घटाउँछ; ‘force’ वा ‘allow’ context ठीक गर्छ। Intransitive actor を, transitive actor に＋object を; आफ्नो formal permission मा Vさせていただけませんか।"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "विश्वसनीय सन्दर्भ"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "पाठ्यक्रम र प्रमाणीकरण"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "यो स्वतन्त्र नेपाली lesson Minna no Nihongo II को lesson sequence, official JLPT N4 scope र Japan Foundation का learner resources मिलाएर बनाइएको हो। उदाहरण र नेपाली व्याख्या नयाँ रूपमा रचित।"
+    },
+    {
+      "source": "← আগের Lesson 47",
+      "target": "← अघिल्लो Lesson 47"
+    },
+    {
+      "source": "পরের Lesson 49 →",
+      "target": "अर्को Lesson 49 →"
+    },
+    {
+      "source": "尊敬語：অন্যকে সম্মান দিয়ে বলা",
+      "target": "尊敬語：अरूलाई सम्मान दिएर भन्नु"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson सूची"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "सिक्ने लक्ष्य"
+    },
+    {
+      "source": "1. 使役形ের গঠন",
+      "target": "1. 使役形 को गठन"
+    },
+    {
+      "source": "4. Make বনাম Let：context কী বলে",
+      "target": "4. Make बनाम Let：context के भन्छ"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "भिन्नता तालिका"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "कुराकानी"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress लोड हुँदैछ…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "विद्यार्थीहरूका लागि निःशुल्क, विस्तृत नेपाली self-study edition।"
+    }
+  ]
+}
