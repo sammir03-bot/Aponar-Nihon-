@@ -194,7 +194,15 @@ def localized_route_for_page(page: Path, root: Path) -> Path:
         flags=re.IGNORECASE,
     )
     if hub_section:
-        section = hub_section.group("section").lower().replace("vocab", "vocabulary")
+        # Phase-1 fix (2026-11-19): "vocabulary".replace("vocab", "vocabulary")
+        # produced "vocabularyulary", and the capitalised legacy page
+        # N5-Vocabulary.html collided with n5-vocabulary.html on the same
+        # route. Keep the legacy capitalised page on its own stem route;
+        # map "vocab" -> "vocabulary" only when the section is exactly "vocab".
+        if basename != basename.lower():
+            return Path(stem)
+        section_raw = hub_section.group("section").lower()
+        section = "vocabulary" if section_raw == "vocab" else section_raw
         return parent / hub_section.group("level").lower() / section
 
     lesson = re.fullmatch(
