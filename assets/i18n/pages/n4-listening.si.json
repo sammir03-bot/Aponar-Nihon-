@@ -1,0 +1,18 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n4-listening",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N4 Listening Lab | আপনার নিহোন",
+      "target": "N4 Listening Lab | আপনার নিহোন"
+    },
+    {
+      "source": "N4 Listening Lab খুলুন",
+      "target": "N4 Listening Lab විවෘත කරන්න"
+    }
+  ]
+}

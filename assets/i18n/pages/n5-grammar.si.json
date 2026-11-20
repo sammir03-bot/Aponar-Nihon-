@@ -1,0 +1,286 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n5-grammar",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N5 Grammar | আপনার নিহোন",
+      "target": "N5 ව්‍යාකරණ | আপনার নিহোন"
+    },
+    {
+      "source": "Lesson তালিকায় যান",
+      "target": "පාඩම් ලැයිස්තුවට යන්න"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "হোম",
+      "target": "මුල් පිටුව"
+    },
+    {
+      "source": "ভিত্তি থেকে আত্মবিশ্বাস",
+      "target": "මූලිකත්වයේ සිට ස්වයං විශ්වාසය දක්වා"
+    },
+    {
+      "source": "২৫টি ধাপে জাপানি বাক্য গঠন, particle, verb form ও প্রয়োজনীয় grammar বাংলা ব্যাখ্যায় আয়ত্ত করুন।",
+      "target": "පියවර 25 කින් ජපන් වාక్య සැකසීම, නිපාත (particles), ක්‍රියා පද ආකෘති (verb forms) සහ අවශ්‍ය ව්‍යාකරණ සිංහල පැහැදිලි කිරීම් සමඟ ප්‍රගුණ කරන්න."
+    },
+    {
+      "source": "প্রথম Lesson শুরু করুন",
+      "target": "පළමු පාඩම අරඹන්න"
+    },
+    {
+      "source": "Lesson খুঁজুন",
+      "target": "පාඩම් සොයන්න"
+    },
+    {
+      "source": "আমার অগ্রগতি",
+      "target": "මගේ ප්‍රගතිය"
+    },
+    {
+      "source": "সম্পন্ন",
+      "target": "සම්පූර්ණයි"
+    },
+    {
+      "source": "0/25 lesson সম্পন্ন",
+      "target": "0/25 පාඩම් අවසන්"
+    },
+    {
+      "source": "শেষ করা lesson-এ ✓ দিন। এই device-এ আপনার progress স্বয়ংক্রিয়ভাবে সংরক্ষিত থাকবে।",
+      "target": "අවසන් කළ පාඩම් සඳහා ✓ ලකුණක් යොදන්න. මෙම උපාංගය තුළ ඔබේ ප්‍රගතිය ස්වයංක්‍රීයව සුරැකේ."
+    },
+    {
+      "source": "মোট LESSON",
+      "target": "මුළු පාඩම්"
+    },
+    {
+      "source": "বাকি",
+      "target": "ඉතිරි"
+    },
+    {
+      "source": "Lesson নম্বর বেছে নিন",
+      "target": "පාඩම් අංකය තෝරන්න"
+    },
+    {
+      "source": "দেখুন",
+      "target": "බොන්න"
+    },
+    {
+      "source": "সব",
+      "target": "සියල්ල"
+    },
+    {
+      "source": "পুরো কোর্স",
+      "target": "මුළු පාඨමාලාව"
+    },
+    {
+      "source": "পরিচয় ও ভিত্তি",
+      "target": "හැඳින්වීම සහ මූලිකත්වය"
+    },
+    {
+      "source": "দৈনন্দিন বাক্য",
+      "target": "දෛනික වාక్య"
+    },
+    {
+      "source": "রূপ ও নিয়ম",
+      "target": "ආකෘති සහ නීති"
+    },
+    {
+      "source": "প্রয়োগ ও সংযোগ",
+      "target": "භාවිතය සහ සම්බන්ධතාව"
+    },
+    {
+      "source": "আপনার Lesson বেছে নিন",
+      "target": "ඔබේ පාඩම තෝරන්න"
+    },
+    {
+      "source": "নম্বর, Japanese pattern অথবা বাংলা বিষয় দিয়ে search করুন। Range ও progress filter ব্যবহার করে প্রয়োজনীয় lesson দ্রুত খুলুন।",
+      "target": "අංක, ජපන් රටා හෝ සිංහල මාතෘකා මඟින් සොයන්න. පරාස සහ ප්‍රගති පෙරහන් (filters) භාවිතයෙන් අවශ්‍ය පාඩම ඉක්මනින් විවෘත කරගන්න."
+    },
+    {
+      "source": "টি lesson দেখানো হচ্ছে",
+      "target": "පාඩම් පෙන්වමින් පවතී"
+    },
+    {
+      "source": "ধাপ 1 · পরিচয় ও ভিত্তি",
+      "target": "පියවර 1 · හැඳින්වීම සහ මූලිකත්වය"
+    },
+    {
+      "source": "নিজের পরিচয় ও basic statement/question তৈরি।",
+      "target": "ස්වයං හැඳින්වීම සහ මූලික ප්‍රකාශ/ප්‍රශ්න සකස් කිරීම."
+    },
+    {
+      "source": "文法 · ব্যাকরণ",
+      "target": "文法 · ව්‍යාකරණ"
+    },
+    {
+      "source": "Lesson খুলুন",
+      "target": "පාඩම විවෘත කරන්න"
+    },
+    {
+      "source": "জিনিস দেখিয়ে বলা, জিজ্ঞাসা করা ও ownership।",
+      "target": "දෙයක් පෙන්වා පැවසීම, විමසීම සහ හිමිකාරීත්වය."
+    },
+    {
+      "source": "স্থান, দিক, ভবন ও দাম নিয়ে বাক্য।",
+      "target": "ස්ථාන, දිශා, ගොඩනැඟිලි සහ මිල ගණන් පිළිබඳ වාකිය."
+    },
+    {
+      "source": "সময়, তারিখ ও polite verb present/past।",
+      "target": "කාලය, දිනය සහ ආචාරශීලී ක්‍රියා පද වර්තමාන/අතීත."
+    },
+    {
+      "source": "যাওয়া/আসা/ফেরা, যানবাহন ও সঙ্গী।",
+      "target": "යෑම/ඒම/පැමිණීම, වාහන සහ සහචරයන්."
+    },
+    {
+      "source": "ধাপ 2 · দৈনন্দিন বাক্য",
+      "target": "පියවර 2 · දෛනික වාකිය"
+    },
+    {
+      "source": "কাজ করা, invitation ও suggestion।",
+      "target": "කර්තව්‍යයන් සිදු කිරීම, ආරාධනා සහ යෝජනා."
+    },
+    {
+      "source": "উপকরণ/ভাষা দিয়ে কাজ ও দেওয়া-নেওয়া।",
+      "target": "උපකරණ/භාෂාව භාවිතයෙන් වැඩ කිරීම සහ දීම-ගැනීම."
+    },
+    {
+      "source": "adjective দিয়ে মানুষ/জিনিস বর্ণনা।",
+      "target": "විශේෂණ පද (adjectives) මඟින් මිනිසුන්/දැ වැහැරීම."
+    },
+    {
+      "source": "পছন্দ, দক্ষতা, বোঝা ও কারণ বলা।",
+      "target": "කැමැත්ත, දක්ෂතාව, අවබෝධය සහ හේතු දැක්වීම."
+    },
+    {
+      "source": "কোথায় কী আছে—existence sentence।",
+      "target": "කොහි කුමක් තිබේද යන්න දැක්වීම — පැවැත්මේ වාක්‍ය (existence sentences)."
+    },
+    {
+      "source": "ধাপ 3 · রূপ ও নিয়ম",
+      "target": "පියවර 3 · ආකෘති සහ නීති"
+    },
+    {
+      "source": "গণনা, সময়কাল ও frequency।",
+      "target": "ගණන් කිරීම, කාල පරාස සහ සංඛ්‍යාතය (frequency)."
+    },
+    {
+      "source": "past tense adjective/noun এবং comparison।",
+      "target": "අතීත කාල විශේෂණ/නාම පද සහ සංසන්දනය."
+    },
+    {
+      "source": "ইচ্ছা ও উদ্দেশ্য নিয়ে বাক্য।",
+      "target": "කැමැත්ත සහ අරමුණ පිළිබඳ වාක්‍ය."
+    },
+    {
+      "source": "অনুরোধ, চলমান কাজ ও offer।",
+      "target": "ඉල්ලීම්, ක්‍රියාත්මක වෙමින් පවතින වැඩ සහ දීමනා."
+    },
+    {
+      "source": "অনুমতি, নিষেধ ও ongoing state।",
+      "target": "අනුමැතිය, තහනම් කිරීම් සහ අඛණ්ඩ තත්ත්වය."
+    },
+    {
+      "source": "ধাপ 4 · Verb forms",
+      "target": "පියවර 4 · ක්‍රියාපද ආකෘති"
+    },
+    {
+      "source": "পরপর কাজ ও adjective/noun সংযোগ।",
+      "target": "අනුක්‍රමික ක්‍රියා සහ විශේෂණ/නාම පද සම්බන්ධ කිරීම."
+    },
+    {
+      "source": "নিষেধ, বাধ্যতা ও না করলেও চলে।",
+      "target": "තහනම් කිරීම්, බැඳියාවන් සහ නොකළත් ගැටළුවක් නොවීම."
+    },
+    {
+      "source": "ability, hobby এবং before structure।",
+      "target": "ability, hobby සහ before structure."
+    },
+    {
+      "source": "অভিজ্ঞতা, multiple actions ও change।",
+      "target": "අත්දැකීම්, බහු ක්‍රියා සහ වෙනස්වීම්."
+    },
+    {
+      "source": "formal থেকে casual speech-এর foundation।",
+      "target": "විධිමත් සිට අනියම් කථනය දක්වා පදනම."
+    },
+    {
+      "source": "ধাপ 5 · প্রয়োগ ও সংযোগ",
+      "target": "පියවර 5 · භාවිතය සහ සම්බන්ධතා"
+    },
+    {
+      "source": "মতামত, quote ও confirmation।",
+      "target": "අදහස්, උපුටා දැක්වීම් සහ තහවුරු කිරීම්."
+    },
+    {
+      "source": "clause দিয়ে noun বর্ণনা।",
+      "target": "उपवाक्य (උප වාක්‍ය) මඟින් නාම පද විස්තර කිරීම."
+    },
+    {
+      "source": "সময় ও automatic condition।",
+      "target": "කාලය සහ ස්වයංක්‍රීය කොන්දේසිය."
+    },
+    {
+      "source": "কারো জন্য কিছু করা/পাওয়া।",
+      "target": "කෙනෙකු වෙනුවෙන් යම් දෙයක් කිරීම/ලැබීම."
+    },
+    {
+      "source": "if/when এবং even if structure।",
+      "target": "නම්/කල් සහ එසේ වුවද ව්‍යුහය."
+    },
+    {
+      "source": "কোনো Lesson পাওয়া যায়নি",
+      "target": "පාඩමක් හමු නොවීය"
+    },
+    {
+      "source": "অন্য শব্দ লিখুন অথবা filter মুছে আবার চেষ্টা করুন।",
+      "target": "වෙනත් වචනයක් ලියන්න හෝ පෙරහන මකා නැවත උත්සාහ කරන්න."
+    },
+    {
+      "source": "সব Lesson দেখুন",
+      "target": "සියලුම පාඩම් බලන්න"
+    },
+    {
+      "source": "প্রতিটি Lesson থেকে সর্বোচ্চ ফল নিন",
+      "target": "සෑම පාඩමකින්ම උපරිම ප්‍රතිඵල ලබා ගන්න"
+    },
+    {
+      "source": "বিষয় দেখে Lesson খুলুন",
+      "target": "විෂය බලා පාඩම විවෘත කරන්න"
+    },
+    {
+      "source": "কার্ডের Japanese pattern ও বাংলা সারাংশ দেখে প্রয়োজনীয় lesson বেছে নিন।",
+      "target": "කාඩ්පතේ ජපන් ආකෘතිය සහ සාරාංශය බලා අවශ්‍ය පාඩම තෝරා ගන්න."
+    },
+    {
+      "source": "উদাহরণসহ অনুশীলন করুন",
+      "target": "උදාහරණ සමඟ පුහුණු වන්න"
+    },
+    {
+      "source": "ব্যাখ্যা পড়ুন, audio শুনুন এবং quiz দিয়ে নিজের বোঝাপড়া যাচাই করুন।",
+      "target": "විස්තරය කියවන්න, ශ්‍රව්‍යයට සවන් දී ප්‍රශ්නාවලියක් මඟින් ඔබේ අවබෝධය පරීක්ෂා කර ගන්න."
+    },
+    {
+      "source": "শেষ হলে ✓ দিন",
+      "target": "අවසන් වූ විට ✓ කරන්න"
+    },
+    {
+      "source": "সম্পন্ন lesson আলাদা থাকবে এবং Continue button পরের lesson দেখাবে।",
+      "target": "සම්පූර්ණ කළ පාඩම වෙනම පවතිනු ඇති අතර Continue බොත්තම මඟින් මීළඟ පාඩම පෙන්වනු ඇත."
+    },
+    {
+      "source": "· বাংলা ভাষাভাষীদের জন্য জাপানি শেখার প্ল্যাটফর্ম",
+      "target": "· බෙංගාලි භාෂාව කතා කරන්නන් සඳහා ජපන් භාෂාව ඉගෙනීමේ වේදිකාව"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "සම්බන්ධ වන්න"
+    }
+  ]
+}

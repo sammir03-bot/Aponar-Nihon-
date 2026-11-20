@@ -1,0 +1,246 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n5-grammar-lesson-13-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 13 | ほしいです・たいです・に行きます | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 13 | ほしいです・たいです・に行きます | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "কি চাই, কী করতে চাই, কোথায় কী করতে যাব — ইচ্ছা প্রকাশ",
+      "target": "මොනවද ඕනේ, මොනවද කිරීමට ඕනේ, කොහෙද මොනවද කිරීමට යන්නේ — ආශාව ප්‍රකාශ කිරීම"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar අරඹන්න"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "අද Learning Goal"
+    },
+    {
+      "source": "জিনিস চাই বলা",
+      "target": "දෙයක් ඕනේ කීම"
+    },
+    {
+      "source": "কাজ করতে চাই",
+      "target": "වැඩක් කිරීමට ඕනේ"
+    },
+    {
+      "source": "purpose নিয়ে যাওয়া",
+      "target": "purpose එකක් ඇතිව යාම"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "සරල පැහැදිලි කිරීම + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "සෑම pattern එකකම පළමුව structure එක බලන්න, ඉන්පසු example එක කටින් කියන්න. Audio button එක එබුවොත් Japanese sentence එක ඇසිය හැක."
+    },
+    {
+      "source": "কোন জিনিস চাই তা が দিয়ে বলা হয়।",
+      "target": "කිනම් දෙයක් ඕනේද යන්න が යොදා කියයි."
+    },
+    {
+      "source": "নিজের ইচ্ছা বা listener-এর ইচ্ছা জিজ্ঞাসা করতে ব্যবহার করুন।",
+      "target": "තමාගේ ආශාව හෝ listener ගේ ආශාව ඇසීමට භාවිතා කරන්න."
+    },
+    {
+      "source": "আতারাশিই সুমা হো গা হোশিইদেসু।",
+      "target": "新しいスマホがほしいです."
+    },
+    {
+      "source": "নতুন স্মার্টফোন চাই।",
+      "target": "අලුත් smartphone එකක් ඕනේ."
+    },
+    {
+      "source": "ওয়াতাশি ওয়া জিকান গা হোশিইদেসু।",
+      "target": "私は時間がほしいです."
+    },
+    {
+      "source": "আমার সময় চাই।",
+      "target": "මට වේලාව ඕනේ."
+    },
+    {
+      "source": "নানি গা হোশিইদেসু কা।",
+      "target": "何がほしいですか."
+    },
+    {
+      "source": "কী চান?",
+      "target": "මොනවද ඕනේ?"
+    },
+    {
+      "source": "কোন কাজ করতে চাই তা たいです দিয়ে বলা হয়।",
+      "target": "කිනම් වැඩයක් කිරීමට ඕනේද යන්න たいです යොදා කියයි."
+    },
+    {
+      "source": "Vます থেকে ます বাদ + たいです",
+      "target": "Vます එකෙන් ます ඉවත් කර + たいです"
+    },
+    {
+      "source": "নিহোন এ ইকিতাইদেসু।",
+      "target": "日本へ行きたいです."
+    },
+    {
+      "source": "জাপানে যেতে চাই।",
+      "target": "මට ජපානයට යාමට ඕනේ."
+    },
+    {
+      "source": "সুশি ও তাবেতাইদেসু।",
+      "target": "寿司を食べたいです."
+    },
+    {
+      "source": "সুশি খেতে চাই।",
+      "target": "මට sushi කෑමට ඕනේ."
+    },
+    {
+      "source": "এইগা ও মিতাইদেসু।",
+      "target": "映画を見たいです."
+    },
+    {
+      "source": "সিনেমা দেখতে চাই।",
+      "target": "මට චිත්‍රපටය බලන්නට ඕනේ."
+    },
+    {
+      "source": "কোন কাজ করতে চাই না বোঝাতে たくないです।",
+      "target": "කිනම් වැඩයක් කිරීමට අකැමතිද යන්න පෙන්වීමට たくないです."
+    },
+    {
+      "source": "কিয়ো ওয়া দেকাকেতাকুনাইদেসু।",
+      "target": "今日は出かけたくないです."
+    },
+    {
+      "source": "আজ বাইরে যেতে চাই না।",
+      "target": "අද එළියට යාමට අකැමතියි."
+    },
+    {
+      "source": "নানি মো তাবেতাকুনাইদেসু।",
+      "target": "何も食べたくないです."
+    },
+    {
+      "source": "কিছুই খেতে চাই না।",
+      "target": "මොකුත් කෑමට අකැමතියි."
+    },
+    {
+      "source": "কোথাও কোনো কাজ করতে যাওয়া বোঝাতে に।",
+      "target": "කොහෙට හරි වැඩයක් කිරීමට යාම පෙන්වීමට に."
+    },
+    {
+      "source": "খেতে, কিনতে, দেখতে, শিখতে — purpose + に行きます।",
+      "target": "කෑමට, ගැනීමට, බලන්නට, ඉගෙන ගැනීමට — purpose + に行きます."
+    },
+    {
+      "source": "দেপাতো এ কাইমোনো নি ইকিমাসু।",
+      "target": "デパートへ買い物に行きます."
+    },
+    {
+      "source": "ডিপার্টমেন্ট স্টোরে কেনাকাটা করতে যাই।",
+      "target": "මම department store එකට බඩු ගැනීමට යනවා."
+    },
+    {
+      "source": "এইগা কান এ এইগা ও মি নি ইকিমাসু।",
+      "target": "映画館へ映画を見に行きます."
+    },
+    {
+      "source": "সিনেমা হলে সিনেমা দেখতে যাই।",
+      "target": "මම සිනමා ශාලාවට චිත්‍රපටය බලන්නට යනවා."
+    },
+    {
+      "source": "কিছু/কোথাও বলতে か যোগ হয়।",
+      "target": "යමක්/කොහෙට හරි කීමට か එකතු වේ."
+    },
+    {
+      "source": "何か食べたいですか = কিছু খেতে চান?",
+      "target": "何か食べたいですか = යමක් කෑමට ඕනේද?"
+    },
+    {
+      "source": "নানি কা নোমিতাইদেসু কা।",
+      "target": "何か飲みたいですか."
+    },
+    {
+      "source": "কিছু পান করতে চান?",
+      "target": "යමක් බොන්නට ඕනේද?"
+    },
+    {
+      "source": "দোকো কা এ ইকিতাইদেসু।",
+      "target": "どこかへ行きたいです."
+    },
+    {
+      "source": "কোথাও যেতে চাই।",
+      "target": "මට කොහෙට හරි යාමට ඕනේ."
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "කටින් කීමේ Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "මෙම වාක්‍ය interview/classroom conversation එකක් වගේ 3 වරක් කියවන්න."
+    },
+    {
+      "source": "ইমা, নানি গা হোশিইদেসু কা।",
+      "target": "今、何がほしいですか."
+    },
+    {
+      "source": "এখন কী চান?",
+      "target": "දැන් මොනවද ඕනේ?"
+    },
+    {
+      "source": "আতারাশিই কাবান গা হোশিইদেসু।",
+      "target": "新しいかばんがほしいです."
+    },
+    {
+      "source": "নতুন ব্যাগ চাই।",
+      "target": "අලුත් බෑගයක් ඕනේ."
+    },
+    {
+      "source": "শুমাৎসু, নানি ও শিতাইদেসু কা।",
+      "target": "週末、何をしたいですか."
+    },
+    {
+      "source": "উইকেন্ডে কী করতে চান?",
+      "target": "සති අන්තයේ මොනවද කිරීමට ඕනේ?"
+    },
+    {
+      "source": "দোকো এ ইকিতাইদেসু কা।",
+      "target": "どこへ行きたいですか."
+    },
+    {
+      "source": "কোথায় যেতে চান?",
+      "target": "කොහෙද යාමට ඕනේ?"
+    },
+    {
+      "source": "✅ スマホがほしいです। — ほしい এর আগে が।",
+      "target": "✅ スマホがほしいです. — ほしい එකට පෙර が."
+    },
+    {
+      "source": "✅ 食べたいです। — ます বাদ দিয়ে たいです।",
+      "target": "✅ 食べたいです. — ます ඉවත් කර たいです."
+    },
+    {
+      "source": "✅ 映画を見に行きます। — purpose হলে Vます-stem + に。",
+      "target": "✅ 映画を見に行きます. — purpose නම් Vます-stem + に."
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "ඔබම පරීක්ෂා කරන්න"
+    },
+    {
+      "source": "কিছু = ?",
+      "target": "යමක් = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 13 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 13 • Verified Premium Detailed Version"
+    }
+  ]
+}

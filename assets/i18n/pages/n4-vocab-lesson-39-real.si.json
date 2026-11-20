@@ -1,0 +1,510 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n4-vocab-lesson-39-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N4 Vocabulary Lesson 39 | আপনার নিহোন",
+      "target": "N4 Vocabulary Lesson 39 | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "সব লেসন",
+      "target": "සියලු Lesson"
+    },
+    {
+      "source": "জাপানিজ শব্দভাণ্ডার",
+      "target": "ජපන් වචන මාලාව"
+    },
+    {
+      "source": "প্রথমবার পড়া শিক্ষার্থীর জন্য—জাপানিজ, ふりがな, বাংলা উচ্চারণ ও সহজ বাংলা অর্থ একই কার্ডে। সার্চ, অডিও, শেখা মার্ক ও কুইজও আছে।",
+      "target": "පළමු වරට කියවන සිසුන් සඳහා—ජපන්, ふりがな, සිංහල උච්චාරණය සහ සරල සිංහල අර්ථය එකම card එකේ. Search, audio, learned mark එක සහ quiz එකත් ඇත."
+    },
+    {
+      "source": "শব্দ শেখা শুরু",
+      "target": "වචන ඉගෙනීම අරඹන්න"
+    },
+    {
+      "source": "কুইজ দিন",
+      "target": "Quiz එක දෙන්න"
+    },
+    {
+      "source": "44টি শব্দ",
+      "target": "වචන 44 ක්"
+    },
+    {
+      "source": "১ম সংস্করণ অনুযায়ী সাজানো",
+      "target": "1st සංස්කරණය අනුව සකස් කර ඇත"
+    },
+    {
+      "source": "জাপানিজ অডিও",
+      "target": "ජපන් audio"
+    },
+    {
+      "source": "ডিভাইসের Japanese voice ব্যবহার করে",
+      "target": "උපාංගයේ Japanese voice එක භාවිතා කර"
+    },
+    {
+      "source": "০ / 44 শেখা",
+      "target": "0 / 44 ඉගෙන ගෙන ඇත"
+    },
+    {
+      "source": "এই browser-এ progress সংরক্ষিত থাকবে",
+      "target": "මෙම browser එකේ progress එක save වේ"
+    },
+    {
+      "source": "সব",
+      "target": "සියල්ල"
+    },
+    {
+      "source": "শেখা হয়েছে",
+      "target": "ඉගෙන ගෙන ඇත"
+    },
+    {
+      "source": "বাকি",
+      "target": "ඉතිරිය"
+    },
+    {
+      "source": "44টি দেখানো হচ্ছে",
+      "target": "44 ක් පෙන්වනු ලැබේ"
+    },
+    {
+      "source": "Lesson 39-এর শব্দ",
+      "target": "Lesson 39 එකේ වචන"
+    },
+    {
+      "source": "「—」 চিহ্ন মানে আগের স্বরটি একটু লম্বা করে পড়বেন।",
+      "target": "「—」 ලකුණ යනු පෙර ස්වරය ටිකක් දිගු කර කියවීමයි."
+    },
+    {
+      "source": "↻ একটি random শব্দ",
+      "target": "↻ එක් random වචනයක්"
+    },
+    {
+      "source": "১ম সংস্করণ",
+      "target": "1st සංස්කරණය"
+    },
+    {
+      "source": "উচ্চারণ",
+      "target": "උච්චාරණය"
+    },
+    {
+      "source": "কোতাএমাসু",
+      "target": "kotaemasu"
+    },
+    {
+      "source": "[প্রশ্নের] উত্তর দেওয়া",
+      "target": "[ප්‍රශ්නයට] පිළිතුරු දීම"
+    },
+    {
+      "source": "🔊 শুনুন",
+      "target": "🔊 අසන්න"
+    },
+    {
+      "source": "⧉ কপি",
+      "target": "⧉ Copy"
+    },
+    {
+      "source": "○ শেখা বাকি",
+      "target": "○ ඉගෙනීමට ඉතිරිය"
+    },
+    {
+      "source": "তাওরেমাসু",
+      "target": "taoremasu"
+    },
+    {
+      "source": "[ভবন] ধসে পড়া",
+      "target": "[ගොඩනැගිල්ල] කඩා වැටීම"
+    },
+    {
+      "source": "ইয়াকেমাসু",
+      "target": "yakemasu"
+    },
+    {
+      "source": "[বাড়ি] পুড়ে যাওয়া",
+      "target": "[නිවස] ගිනි ගැනීම"
+    },
+    {
+      "source": "[পাউরুটি] বেক হওয়া",
+      "target": "[පාන්] බේක් වීම"
+    },
+    {
+      "source": "[মাংস] ভাজা বা গ্রিল হওয়া",
+      "target": "[මස්] බැදීම හෝ grill වීම"
+    },
+    {
+      "source": "তো—রিমাসু",
+      "target": "toorimasu"
+    },
+    {
+      "source": "[রাস্তা দিয়ে] যাওয়া; অতিক্রম করা",
+      "target": "[මාර්ගයෙන්] යාම; පසු කිරීම"
+    },
+    {
+      "source": "শিনিমাসু",
+      "target": "shinimasu"
+    },
+    {
+      "source": "মারা যাওয়া",
+      "target": "මිය යාම"
+    },
+    {
+      "source": "বিক্কুরিশিমাসু",
+      "target": "bikkurishimasu"
+    },
+    {
+      "source": "অবাক হওয়া; চমকে ওঠা",
+      "target": "පුදුම වීම; තිගැස්සීම"
+    },
+    {
+      "source": "গাক্কারিশিমাসু",
+      "target": "gakkarishimasu"
+    },
+    {
+      "source": "হতাশ হওয়া",
+      "target": "කලකිරීම"
+    },
+    {
+      "source": "আনশিনশিমাসু",
+      "target": "anshinshimasu"
+    },
+    {
+      "source": "নিশ্চিন্ত হওয়া; স্বস্তি পাওয়া",
+      "target": "සැනසීම; සහනය ලැබීම"
+    },
+    {
+      "source": "চিকোকুশিমাসু",
+      "target": "chikokushimasu"
+    },
+    {
+      "source": "দেরি করা; দেরিতে পৌঁছানো",
+      "target": "ප්‍රමාද වීම; ප්‍රමාද වී ළඟා වීම"
+    },
+    {
+      "source": "সো—তাইশিমাসু",
+      "target": "sootaishimasu"
+    },
+    {
+      "source": "কাজ বা স্কুল থেকে আগে চলে যাওয়া",
+      "target": "වැඩයෙන් හෝ පාසලෙන් කලින් පිටත් වීම"
+    },
+    {
+      "source": "রিকোনশিমাসু",
+      "target": "rikonshimasu"
+    },
+    {
+      "source": "বিবাহবিচ্ছেদ করা",
+      "target": "දික්කසාද වීම"
+    },
+    {
+      "source": "ফুকুজাৎসু",
+      "target": "fukuzatsu"
+    },
+    {
+      "source": "জটিল",
+      "target": "සංකීර්ණ"
+    },
+    {
+      "source": "জামা",
+      "target": "jama"
+    },
+    {
+      "source": "বাধাস্বরূপ; পথে বাধা",
+      "target": "බාධාව; මාර්ගයේ බාධකය"
+    },
+    {
+      "source": "কিতানাই",
+      "target": "kitanai"
+    },
+    {
+      "source": "নোংরা",
+      "target": "අපිරිසිදු"
+    },
+    {
+      "source": "উরেশিই",
+      "target": "ureshii"
+    },
+    {
+      "source": "আনন্দিত; খুশি",
+      "target": "සතුටු; ප්‍රීතිමත්"
+    },
+    {
+      "source": "কানাশিই",
+      "target": "kanashii"
+    },
+    {
+      "source": "দুঃখিত; বিষণ্ণ",
+      "target": "දුක්බර; ශෝකී"
+    },
+    {
+      "source": "হাজুকাশিই",
+      "target": "hazukashii"
+    },
+    {
+      "source": "লজ্জিত; বিব্রত",
+      "target": "ලැජ්ජා; අපහසු"
+    },
+    {
+      "source": "জিশিন",
+      "target": "jishin"
+    },
+    {
+      "source": "ভূমিকম্প",
+      "target": "භූමිකම්පාව"
+    },
+    {
+      "source": "তাইফু—",
+      "target": "taifuu"
+    },
+    {
+      "source": "টাইফুন; ঘূর্ণিঝড়",
+      "target": "ටයිෆූන්; සුළි කුණාටුව"
+    },
+    {
+      "source": "কাজি",
+      "target": "kaji"
+    },
+    {
+      "source": "আগুন; অগ্নিকাণ্ড",
+      "target": "ගින්දර; ගිනි අනතුර"
+    },
+    {
+      "source": "বিয়ের উদ্দেশ্যে পাত্র-পাত্রীর আনুষ্ঠানিক সাক্ষাৎ",
+      "target": "විවාහය සඳහා මනාලයා-මනාලියගේ විධිමත් හමුව"
+    },
+    {
+      "source": "দেনওয়াদাই",
+      "target": "denwadai"
+    },
+    {
+      "source": "টেলিফোনের খরচ",
+      "target": "දුරකථන වියදම"
+    },
+    {
+      "source": "～দাই",
+      "target": "～dai"
+    },
+    {
+      "source": "～ খরচ; ভাড়া; ফি",
+      "target": "～ වියදම; කුලිය; ගාස්තුව"
+    },
+    {
+      "source": "ফুরোনতো",
+      "target": "furonto"
+    },
+    {
+      "source": "হোটেলের ফ্রন্ট ডেস্ক; অভ্যর্থনা",
+      "target": "හෝටලයේ front desk එක; පිළිගැනීම"
+    },
+    {
+      "source": "～গো—শিৎসু",
+      "target": "～gooshitsu"
+    },
+    {
+      "source": "～ নম্বর কক্ষ",
+      "target": "～ අංක කාමරය"
+    },
+    {
+      "source": "আসে",
+      "target": "ase"
+    },
+    {
+      "source": "ঘাম",
+      "target": "දාඩිය"
+    },
+    {
+      "source": "তাওরু",
+      "target": "taoru"
+    },
+    {
+      "source": "তোয়ালে",
+      "target": "තුවාය"
+    },
+    {
+      "source": "সেক্কেন",
+      "target": "sekken"
+    },
+    {
+      "source": "সাবান",
+      "target": "සබන්"
+    },
+    {
+      "source": "ও—জে—",
+      "target": "oozee"
+    },
+    {
+      "source": "অনেক লোক; বহু মানুষ",
+      "target": "බොහෝ මිනිසුන්; ජනකායක්"
+    },
+    {
+      "source": "ওৎসুকারেসামাদেশিতা",
+      "target": "otsukaresama deshita"
+    },
+    {
+      "source": "আপনার পরিশ্রমের জন্য ধন্যবাদ",
+      "target": "ඔබේ වෙහෙසීම සඳහා ස්තුතියි"
+    },
+    {
+      "source": "উকাগাইমাসু",
+      "target": "ukagaimasu"
+    },
+    {
+      "source": "আমি আসছি/যাচ্ছি (いきます-এর বিনয়ী রূপ)",
+      "target": "මම එනවා/යනවා (いきます හි නිහතමානී රූපය)"
+    },
+    {
+      "source": "তোচু—দে",
+      "target": "tochuu de"
+    },
+    {
+      "source": "পথে; মাঝপথে; চলাকালে",
+      "target": "මාර්ගයේ; අතරමඟ; සිදුවෙමින් පවතින විට"
+    },
+    {
+      "source": "তোরাক্কু",
+      "target": "torakku"
+    },
+    {
+      "source": "ট্রাক; লরি",
+      "target": "ට්‍රක්; ලොරිය"
+    },
+    {
+      "source": "বুৎসুকারিমাসু",
+      "target": "butsukarimasu"
+    },
+    {
+      "source": "ধাক্কা লাগা; সংঘর্ষ হওয়া",
+      "target": "හැපීම; ගැටීම"
+    },
+    {
+      "source": "নারাবিমাসু",
+      "target": "narabimasu"
+    },
+    {
+      "source": "সারিতে দাঁড়ানো; লাইন দেওয়া",
+      "target": "පේළියේ සිටීම; පෝලිමේ සිටීම"
+    },
+    {
+      "source": "ওতোনা",
+      "target": "otona"
+    },
+    {
+      "source": "প্রাপ্তবয়স্ক",
+      "target": "වැඩිහිටියා"
+    },
+    {
+      "source": "ইয়ো—ফুকু",
+      "target": "yoofuku"
+    },
+    {
+      "source": "পাশ্চাত্য পোশাক",
+      "target": "බටහිර ඇඳුම්"
+    },
+    {
+      "source": "সে—ইয়ো—কাশিমাসু",
+      "target": "seeyookashimasu"
+    },
+    {
+      "source": "পাশ্চাত্য রূপ নেওয়া",
+      "target": "බටහිර රූපය ගැනීම"
+    },
+    {
+      "source": "আইমাসু",
+      "target": "aimasu"
+    },
+    {
+      "source": "মাপসই হওয়া; মানানো",
+      "target": "ගැළපීම; ගැළපෙන බව"
+    },
+    {
+      "source": "ইমাদেহা",
+      "target": "ima dewa"
+    },
+    {
+      "source": "এখনকার দিনে; বর্তমানে",
+      "target": "අද කාලයේ; වර්තමානයේ"
+    },
+    {
+      "source": "সে—জিনশিকি",
+      "target": "seejinshiki"
+    },
+    {
+      "source": "সাবালকত্ব উদ্‌যাপন অনুষ্ঠান",
+      "target": "වැඩිහිටිභාවය සැමරීමේ උත්සවය"
+    },
+    {
+      "source": "জিকো",
+      "target": "jiko"
+    },
+    {
+      "source": "দুর্ঘটনা",
+      "target": "අනතුර"
+    },
+    {
+      "source": "কোনো শব্দ পাওয়া যায়নি।",
+      "target": "කිසිම වචනයක් හමු නොවීය."
+    },
+    {
+      "source": "অন্য বানান বা বাংলা অর্থ দিয়ে চেষ্টা করুন।",
+      "target": "වෙනත් අක්ෂර වින්‍යාසයකින් හෝ සිංහල අර්ථයකින් උත්සාහ කරන්න."
+    },
+    {
+      "source": "১০ প্রশ্ন • দুই ধরনের অনুশীলন",
+      "target": "ප්‍රශ්න 10 ක් • අභ්‍යාස වර්ග දෙකක්"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "ඔබම පරීක්ෂා කරන්න"
+    },
+    {
+      "source": "কখনো জাপানিজ দেখে বাংলা অর্থ, আবার কখনো বাংলা দেখে সঠিক জাপানিজ বেছে নিন। প্রতিবার নতুন random প্রশ্ন আসবে।",
+      "target": "සමහර විට ජපන් බලා සිංහල අර්ථය, තවත් විට සිංහල බලා නිවැරදි ජපන් එක තෝරන්න. සෑම වරම නව random ප්‍රශ්නයක් ඒවි."
+    },
+    {
+      "source": "নতুন কুইজ শুরু",
+      "target": "නව Quiz එකක් අරඹන්න"
+    },
+    {
+      "source": "প্রশ্ন ১ / ১০",
+      "target": "ප්‍රශ්නය 1 / 10"
+    },
+    {
+      "source": "স্কোর ০",
+      "target": "ලකුණු 0"
+    },
+    {
+      "source": "পরের প্রশ্ন",
+      "target": "ඊළඟ ප්‍රශ්නය"
+    },
+    {
+      "source": "তালিকা নোট:",
+      "target": "ලැයිස්තු සටහන:"
+    },
+    {
+      "source": "আপনার দেওয়া পুরোনো ফাইলের সঙ্গে মিল রেখে Minna no Nihongo Shokyu II-এর ১ম সংস্করণের lesson order ব্যবহার করা হয়েছে। OCR-এ ভাঙা কানা, duplicate example এবং ভুল বাংলা অর্থ বাদ দিয়ে entry-গুলো নতুন করে তৈরি করা হয়েছে। এটি শিক্ষার্থীর সহায়ক free resource; মূল বইয়ের বিকল্প নয়।",
+      "target": "ඔබ දුන් පැරණි ගොනුව සමඟ ගැළපෙන පරිදි Minna no Nihongo Shokyu II එකේ 1st සංස්කරණයේ lesson order එක භාවිතා කර ඇත. OCR එකේ කැඩුණු kana, duplicate example සහ වැරදි සිංහල අර්ථ ඉවත් කර entry නැවත සාදා ඇත. මෙය සිසුන් සඳහා උපකාරක free resource එකකි; මුල් පොතේ විකල්පයක් නොවේ."
+    },
+    {
+      "source": "আগের লেসন",
+      "target": "පෙර Lesson එක"
+    },
+    {
+      "source": "সব N4 লেসন",
+      "target": "සියලු N4 Lesson"
+    },
+    {
+      "source": "পরের লেসন",
+      "target": "ඊළඟ Lesson එක"
+    },
+    {
+      "source": "আপনার নিহোন • শিক্ষার্থীদের জন্য সহজ বাংলা জাপানিজ শিক্ষা",
+      "target": "আপনার নিহোন • සිසුන් සඳහා සරල සිංහල ජපන් අධ්‍යාපනය"
+    }
+  ]
+}

@@ -1,0 +1,214 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n5-grammar-lesson-16-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 16 | て-form Connection・てから・Adjective Connection | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 16 | て-form Connection・てから・Adjective Connection | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "একাধিক কাজ/বর্ণনা একসাথে বলা — তারপর/কারণ/গুণ যুক্ত করা",
+      "target": "වැඩ/විස්තර කිහිපයක් එකට කීම — ඉන්පසු/හේතුව/ගුණය සම්බන්ධ කිරීම"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Grammar අරඹන්න"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "අද Learning Goal"
+    },
+    {
+      "source": "কাজগুলো ক্রমানুসারে বলা",
+      "target": "වැඩ පිළිවෙළින් කීම"
+    },
+    {
+      "source": "এক কাজের পরে আরেক কাজ",
+      "target": "එක් වැඩයකට පසු තවත් වැඩයක්"
+    },
+    {
+      "source": "Adjective যুক্ত করা",
+      "target": "Adjective සම්බන්ධ කිරීම"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "සරල පැහැදිලි කිරීම + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "සෑම pattern එකකම පළමුව structure එක බලන්න, ඉන්පසු example එක කටින් කියන්න. Audio button එක එබුවොත් Japanese sentence එක ඇසිය හැක."
+    },
+    {
+      "source": "একাধিক কাজ ক্রমানুসারে বা ধারাবাহিকভাবে বলতে te-form দিয়ে verbগুলো যুক্ত করা হয়।",
+      "target": "වැඩ කිහිපයක් පිළිවෙළින් හෝ අඛණ්ඩව කීමට te-form යොදා verb සම්බන්ධ කරයි."
+    },
+    {
+      "source": "শেষ verb-এ tense/polite form থাকে; আগের verbগুলো te-form।",
+      "target": "අවසන් verb එකේ tense/polite form තිබේ; පෙර verb te-form."
+    },
+    {
+      "source": "আসা রোকুজি নি ওকিতে, কাও ও আরাত্তে, আসাগোহান ও তাবেমাসু।",
+      "target": "朝6時に起きて、顔を洗って、朝ご飯を食べます."
+    },
+    {
+      "source": "সকাল ৬টায় উঠে, মুখ ধুয়ে, নাস্তা খাই।",
+      "target": "උදේ 6 ට නැගිට, මුහුණ සෝදා, උදේ කෑම කනවා."
+    },
+    {
+      "source": "গিনকো এ ইত্তে, ওকানে ও দাশিমাসু।",
+      "target": "銀行へ行って、お金を出します."
+    },
+    {
+      "source": "ব্যাংকে গিয়ে টাকা তুলি।",
+      "target": "බැංකුවට ගොස් මුදල් ගන්නවා."
+    },
+    {
+      "source": "এক কাজ শেষ করার পরে আরেক কাজ করব — এই order জোর দিয়ে বোঝাতে।",
+      "target": "එක් වැඩයක් අවසන් කළ පසු තවත් වැඩයක් කරමි — මෙම order එක අවධාරණය කිරීමට."
+    },
+    {
+      "source": "てから = করার পরে। একই বাক্যে একবার ব্যবহার করলেই natural।",
+      "target": "てから = කළ පසු. එකම වාක්‍යයේ එක් වරක් භාවිතා කිරීම natural."
+    },
+    {
+      "source": "শুকুদাই ও শিতে কারা, তেরেবি ও মিমাসু।",
+      "target": "宿題をしてから、テレビを見ます."
+    },
+    {
+      "source": "হোমওয়ার্ক করার পরে টিভি দেখি।",
+      "target": "ගෙදර වැඩ කළ පසු TV බලනවා."
+    },
+    {
+      "source": "শাওয়া ও আবিতে কারা, নেমাসু।",
+      "target": "シャワーを浴びてから、寝ます."
+    },
+    {
+      "source": "গোসল করার পরে ঘুমাই।",
+      "target": "ෂාවර් එක ගත් පසු නිදාගන්නවා."
+    },
+    {
+      "source": "দুই い-adjective একসাথে যুক্ত করতে শেষের い বাদ দিয়ে くて।",
+      "target": "い-adjective දෙකක් එකට සම්බන්ධ කිරීමට අවසන් い ඉවත් කර くて."
+    },
+    {
+      "source": "কোনো রিয়োরি ওয়া ইয়াসুকুতে, ওইশিইদেসু।",
+      "target": "この料理は安くて、おいしいです."
+    },
+    {
+      "source": "এই খাবার সস্তা এবং সুস্বাদু।",
+      "target": "මේ කෑම ලාභදායී සහ රසවත්."
+    },
+    {
+      "source": "কোনো হেয়া ওয়া হিরোকুতে, আকারুইদেসু।",
+      "target": "この部屋は広くて、明るいです."
+    },
+    {
+      "source": "এই ঘর প্রশস্ত এবং উজ্জ্বল।",
+      "target": "මේ කාමරය ඉඩකඩ සහ දීප්තිමත්."
+    },
+    {
+      "source": "な-adjective বা noun যুক্ত করতে で ব্যবহৃত হয়।",
+      "target": "な-adjective හෝ noun සම්බන්ධ කිරීමට で භාවිතා වේ."
+    },
+    {
+      "source": "কানোজো ওয়া শিনসেৎসুদে, কিরেইদেসু।",
+      "target": "彼女は親切で、きれいです."
+    },
+    {
+      "source": "তিনি দয়ালু এবং সুন্দর।",
+      "target": "ඇය කරුණාවන්ත සහ ලස්සනයි."
+    },
+    {
+      "source": "চিচি ওয়া ইশা দে, হাহা ওয়া সেনসেইদেসু।",
+      "target": "父は医者で、母は先生です."
+    },
+    {
+      "source": "বাবা ডাক্তার, মা শিক্ষক।",
+      "target": "තාත්තා වෛද්‍යවරයෙක්, අම්මා ගුරුවරයෙක්."
+    },
+    {
+      "source": "কারো/কিছুর বিশেষ অংশের বৈশিষ্ট্য বলতে は + が structure।",
+      "target": "කෙනෙකුගේ/යමක විශේෂ කොටසක ලක්ෂණය කීමට は + が structure එක."
+    },
+    {
+      "source": "জো ওয়া হানা গা নাগাইদেসু।",
+      "target": "象は鼻が長いです."
+    },
+    {
+      "source": "হাতির শুঁড় লম্বা।",
+      "target": "අලියාගේ හොඬය දිගයි."
+    },
+    {
+      "source": "ইয়ামাদা সান ওয়া কামি গা কুরোইদেসু।",
+      "target": "山田さんは髪が黒いです."
+    },
+    {
+      "source": "ইয়ামাদা-সানের চুল কালো।",
+      "target": "Yamada-san ගේ කොණ්ඩය කළුයි."
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "කටින් කීමේ Practice"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "මෙම වාක්‍ය interview/classroom conversation එකක් වගේ 3 වරක් කියවන්න."
+    },
+    {
+      "source": "মাইয়াসা, নানি ও শিমাসু কা।",
+      "target": "毎朝、何をしますか."
+    },
+    {
+      "source": "প্রতিদিন সকালে কী করেন?",
+      "target": "හැම උදේම මොනවද කරන්නේ?"
+    },
+    {
+      "source": "ওকিতে, শাওয়া ও আবিতে, আসা গোহান ও তাবেমাসু।",
+      "target": "起きて、シャワーを浴びて、朝ご飯を食べます."
+    },
+    {
+      "source": "উঠে, গোসল করে, নাস্তা খাই।",
+      "target": "නැගිට, ෂාවර් එක ගෙන, උදේ කෑම කනවා."
+    },
+    {
+      "source": "বেনকিয়ো শিতে কারা, নানি ও শিমাসু কা।",
+      "target": "勉強してから、何をしますか."
+    },
+    {
+      "source": "পড়ার পরে কী করেন?",
+      "target": "ඉගෙන ගත් පසු මොනවද කරන්නේ?"
+    },
+    {
+      "source": "নেমাসু।",
+      "target": "寝ます."
+    },
+    {
+      "source": "ঘুমাই।",
+      "target": "නිදාගන්නවා."
+    },
+    {
+      "source": "আনাতা নো মাচি ওয়া দোদেসু কা।",
+      "target": "あなたの町はどうですか."
+    },
+    {
+      "source": "আপনার শহর কেমন?",
+      "target": "ඔබේ නගරය කොහොමද?"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "ඔබම පරීක්ෂා කරන්න"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 16 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 16 • Verified Premium Detailed Version"
+    }
+  ]
+}

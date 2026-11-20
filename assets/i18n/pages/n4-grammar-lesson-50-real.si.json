@@ -1,0 +1,554 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n4-grammar-lesson-50-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 50: 謙譲語：নিজেকে নম্র করে সম্মান দেখানো | N4 Grammar",
+      "target": "Lesson 50: 謙譲語：තමා නිහතමානී කර ගෞරවය පෙන්වීම | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "ප්‍රධාන අන්තර්ගතයට යන්න"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 50 · সময় ও Keigo",
+      "target": "Lesson 50 · කාලය සහ Keigo"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "සියලු Lesson"
+    },
+    {
+      "source": "সময় ও Keigo",
+      "target": "කාලය සහ Keigo"
+    },
+    {
+      "source": "ধাপ ৫ · 46–50",
+      "target": "පියවර 5 · 46–50"
+    },
+    {
+      "source": "謙譲語：নিজেকে নম্র করে সম্মান দেখানো",
+      "target": "謙譲語：තමා නිහතමානී කර ගෞරවය පෙන්වීම"
+    },
+    {
+      "source": "নিজের বা in-group-এর action নিচু করে customer/senior-কে সম্মান, special humble verbs এবং formal polite business Japanese।",
+      "target": "තමාගේ හෝ in-group එකේ action එක පහත දමා customer/senior කෙනෙකුට ගෞරවය, special humble verbs සහ formal polite business Japanese එක."
+    },
+    {
+      "source": "5টি বিস্তারিত grammar block",
+      "target": "grammar block 5 ක් විස්තරාත්මකව"
+    },
+    {
+      "source": "18টি Japanese example",
+      "target": "Japanese example 18 ක්"
+    },
+    {
+      "source": "5টি ব্যাখ্যাসহ practice",
+      "target": "පැහැදිලි කිරීම් සහිත practice 5 ක්"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile සහ print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "あ Reading සඟවන්න"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "තවම සම්පූර්ණ නැහැ"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ සම්පූර්ණ ලෙස සලකුණු කරන්න"
+    },
+    {
+      "source": "Lesson 50 · লক্ষ্য",
+      "target": "Lesson 50 · ඉලක්කය"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "මෙම Lesson එක අවසානයේ ඔබට හැකි දේ"
+    },
+    {
+      "source": "尊敬語 অন্যের action উঁচু করে; 謙譲語 নিজের/নিজের group-এর action নিচু করে—লক্ষ্য একই: সম্মানিত ব্যক্তির অবস্থান উঁচু রাখা। তাই verb মুখস্থের আগে actor এবং action কাদের মধ্যে যাচ্ছে তা চিহ্নিত করুন।",
+      "target": "尊敬語 වෙනත් අයෙකුගේ action එක උසස් කරයි; 謙譲語 තමාගේ/තමාගේ group එකේ action එක පහත දමයි—ඉලක්කය එකමයි: ගෞරවනීය පුද්ගලයාගේ තත්ත්වය උසස්ව තබා ගැනීම. එබැවින් verb එක කටපාඩම් කිරීමට පෙර actor එක සහ action එක කා අතරද යනවාද යන්න හඳුනා ගන්න."
+    },
+    {
+      "source": "おVます-stemします ও ごNします pattern বানাবেন",
+      "target": "おVます-stemします සහ ごNします pattern එක සෑදීමට හැකි වේ"
+    },
+    {
+      "source": "প্রধান special humble verb ব্যবহার করবেন",
+      "target": "ප්‍රධාන special humble verb එක භාවිතා කිරීමට හැකි වේ"
+    },
+    {
+      "source": "নিজের in-group/out-group perspective সঠিক রাখবেন",
+      "target": "තමාගේ in-group/out-group perspective එක නිවැරදිව තබා ගැනීමට හැකි වේ"
+    },
+    {
+      "source": "ございます/でございます দিয়ে formal polite statement করবেন",
+      "target": "ございます/でございます යොදා formal polite statement එකක් කිරීමට හැකි වේ"
+    },
+    {
+      "source": "謙譲語র perspective",
+      "target": "謙譲語 හි perspective එක"
+    },
+    {
+      "source": "নিজে বা নিজের group-এর action নিচু করে action-এর recipient/সম্পর্কিত সম্মানিত ব্যক্তিকে সম্মান",
+      "target": "තමා හෝ තමාගේ group එකේ action එක පහත දමා action එකේ recipient එක/ආශ්‍රිත ගෞරවනීය පුද්ගලයාට ගෞරවය"
+    },
+    {
+      "source": "গঠন",
+      "target": "ව්‍යුහය"
+    },
+    {
+      "source": "ধরন",
+      "target": "වර්ගය"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "උදාහරණය"
+    },
+    {
+      "source": "আমি → সম্মানিত ব্যক্তি",
+      "target": "මම → ගෞරවනීය පුද්ගලයා"
+    },
+    {
+      "source": "আমার in-group → outsider",
+      "target": "මගේ in-group එක → outsider එක"
+    },
+    {
+      "source": "আমাদের কর্মী আপনার কাছে যাবেন",
+      "target": "අපගේ සේවකයා ඔබ වෙත යනු ඇත"
+    },
+    {
+      "source": "সম্মানিত ব্যক্তির action",
+      "target": "ගෞරවනීය පුද්ගලයාගේ action එක"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "විස්තරාත්මක පැහැදිලි කිරීම"
+    },
+    {
+      "source": "Humble action সাধারণত সম্মানিত ব্যক্তির দিকে যায় বা তার সঙ্গে সম্পর্কিত: お客様をご案内します, 先生に伺います। একা ঘরে 私はテレビを拝見します বললে relation না থাকায় অতিরিক্ত/অস্বাভাবিক হতে পারে।",
+      "target": "Humble action එක සාමාන්‍යයෙන් ගෞරවනීය පුද්ගලයා දෙසට යයි හෝ ඔහු සමඟ සම්බන්ධයි: お客様をご案内します, 先生に伺います. තනිවම කාමරයේ 私はテレビを拝見します කීවොත් සම්බන්ධතාවක් නැති බැවින් අධික/අසාමාන්‍ය වෙන්න පුළුවන්."
+    },
+    {
+      "source": "Outsider-এর সঙ্গে কথা বললে নিজের boss/company in-group; তার action-ও humble/neutral: 部長の田中が伺います। নিজের boss-কে outsider-এর সামনে いらっしゃる দিয়ে উঁচু করবেন না।",
+      "target": "Outsider කෙනෙකු සමඟ කතා කරන විට තමාගේ boss/company එක in-group එකයි; ඔහුගේ action එකත් humble/neutral: 部長の田中が伺います. තමාගේ boss ව outsider කෙනෙකු ඉදිරියේ いらっしゃる යොදා උසස් නොකරන්න."
+    },
+    {
+      "source": "謙譲語 নিজের মূল্য কমানো নয়; social positioning ও respect management।",
+      "target": "謙譲語 යනු තමාගේ වටිනාකම අඩු කිරීම නොවේ; social positioning එක සහ respect management එකයි."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "මතක තබා ගත යුතු දේ"
+    },
+    {
+      "source": "Actor আমি/in-group? Action সম্মানিত ব্যক্তির দিকে?—হলে humble candidate।",
+      "target": "Actor එක මම/in-group එකද? Action එක ගෞරවනීය පුද්ගලයා දෙසටද?—එසේ නම් humble candidate එකක්."
+    },
+    {
+      "source": "অন্য সম্মানিত ব্যক্তির নিজের action-এ尊敬語।",
+      "target": "වෙනත් ගෞරවනීය පුද්ගලයෙකුගේ තමාගේම action එකේ 尊敬語."
+    },
+    {
+      "source": "আমি আপনাকে মিটিং রুম পর্যন্ত নিয়ে যাচ্ছি।",
+      "target": "මම ඔබව රැස්වීම් කාමරය දක්වා ගෙන යනවා."
+    },
+    {
+      "source": "কাল আমাদের কোম্পানির তানাকা আপনার কাছে যাবেন।",
+      "target": "හෙට අපගේ සමාගමේ තනකා ඔබ වෙත යනු ඇත."
+    },
+    {
+      "source": "শিক্ষককে এই নথি পাঠাচ্ছি।",
+      "target": "ගුරුවරයාට මෙම ලේඛනය යවනවා."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ වැරදි"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ නිවැරදි"
+    },
+    {
+      "source": "কেন:",
+      "target": "ඇයි:"
+    },
+    {
+      "source": "ご案内します হলো আমার humble action; customer subject হলে尊敬語/neutral structure।",
+      "target": "ご案内します යනු මගේ humble action එකයි; customer එක subject එක වූ විට 尊敬語/neutral structure එක."
+    },
+    {
+      "source": "নিজের action বিনয় করে বলা",
+      "target": "තමාගේ action එක නිහතමානීව කීම"
+    },
+    {
+      "source": "আরও formal",
+      "target": "වඩා formal"
+    },
+    {
+      "source": "আমি সম্মানিত ব্যক্তির জন্য/দিকে action করি: 荷物をお持ちします = আপনার মালপত্র আমি বহন করছি।",
+      "target": "මම ගෞරවනීය පුද්ගලයා වෙනුවෙන්/දෙසට action එක කරනවා: 荷物をお持ちします = ඔබේ බඩු බාහිරාදිය මම රැගෙන යනවා."
+    },
+    {
+      "source": "いたす হলো する-এর humble special verb; おVいたします/ごNいたします আরও formal। একই বাক্যে প্রয়োজনহীন prefix stacking এড়ান।",
+      "target": "いたす යනු する හි humble special verb එකයි; おVいたします/ごNいたします වඩා formal. එකම වාක්‍යයේ අනවශ්‍ය prefix stacking එක වළකින්න."
+    },
+    {
+      "source": "এক mora stem বা special humble verb-এ mechanical pattern নয়: 見る→お見します ✕, 拝見します; 来る→お来します ✕, 参ります/伺います。",
+      "target": "එක් mora stem එකක හෝ special humble verb එකක mechanical pattern එක නොවේ: 見る→お見します ✕, 拝見します; 来る→お来します ✕, 参ります/伺います."
+    },
+    {
+      "source": "おVになります = অন্যের honorific; おVします = নিজের humble।",
+      "target": "おVになります = වෙනත් අයෙකුගේ honorific එක; おVします = තමාගේ humble එක."
+    },
+    {
+      "source": "する-noun সাধারণত ご: ご説明します; exceptions যেমন お電話します fixed usage।",
+      "target": "する-noun එක සාමාන්‍යයෙන් ご: ご説明します; exceptions වන お電話します වැනි fixed usage එක."
+    },
+    {
+      "source": "আমি আপনার মালপত্র বহন করছি।",
+      "target": "මම ඔබේ බඩු බාහිරාදිය රැගෙන යනවා."
+    },
+    {
+      "source": "আপনাকে স্টেশন পর্যন্ত পৌঁছে দিচ্ছি।",
+      "target": "ඔබව දුම්රිය ස්ථානය දක්වා ගෙන යනවා."
+    },
+    {
+      "source": "পরে ইমেইলে যোগাযোগ করব।",
+      "target": "පසුව email එකෙන් සම්බන්ධ වෙනවා."
+    },
+    {
+      "source": "আমি বিস্তারিত ব্যাখ্যা করছি।",
+      "target": "මම විස්තරාත්මකව පැහැදිලි කරනවා."
+    },
+    {
+      "source": "おVになります尊敬語; নিজের ‘দেখা/পড়া’ formal হলে special 拝見します।",
+      "target": "おVになります尊敬語 එකයි; තමාගේ ‘බැලීම/කියවීම’ formal නම් special එක 拝見します."
+    },
+    {
+      "source": "প্রধান special humble verbs",
+      "target": "ප්‍රධාන special humble verbs"
+    },
+    {
+      "source": "নিজের action-এর নির্দিষ্ট 謙譲語",
+      "target": "තමාගේ action එකේ නිශ්චිත 謙譲語"
+    },
+    {
+      "source": "参る হলো 行く/来る-এর humble-politeness; 伺う destination/person-এর কাছে যাওয়া, জিজ্ঞেস/শোনা—সম্মানিত counterpart স্পষ্ট।",
+      "target": "参る යනු 行く/来る හි humble-politeness එකයි; 伺う destination/person එක වෙත යාම, ඇසීම/ඇසීම—ගෞරවනීය counterpart එක පැහැදිලියි."
+    },
+    {
+      "source": "申す self-introduction/name: 田中と申します। 申し上げる recipient-directed ‘বলছি/জানাচ্ছি’ আরও humble: 心よりお礼申し上げます।",
+      "target": "申す self-introduction/name එක: 田中と申します. 申し上げる recipient-directed ‘කියනවා/දැනුම් දෙනවා’ වඩා humble: 心よりお礼申し上げます."
+    },
+    {
+      "source": "存じています = তথ্য জানি; 存じ上げています = ব্যক্তিকে চিনি (আরও respectful)। N4 core-এ 存じています চিনুন।",
+      "target": "存じています = තොරතුරු දනියි; 存じ上げています = පුද්ගලයා හඳුනයි (වඩා respectful). N4 core එකේ 存じています හඳුනා ගන්න."
+    },
+    {
+      "source": "いただく তিন অর্থে দেখা যায়: গ্রহণ করা (humble もらう), খাওয়া/পান করা (humble), favor গ্রহণ (Vていただく)।",
+      "target": "いただく අර්ථ තුනකින් දැකිය හැකිය: ලැබීම (humble එක もらう), කෑම/බීම (humble), favor එක ලැබීම (Vていただく)."
+    },
+    {
+      "source": "伺う = visit/ask/hear—object/destination context দেখুন।",
+      "target": "伺う = visit/ask/hear—object/destination context එක බලන්න."
+    },
+    {
+      "source": "おる-এর polite progressive おります: 田中は席を外しております।",
+      "target": "おる හි polite progressive එක おります: 田中は席を外しております."
+    },
+    {
+      "source": "পরিচিত হয়ে আনন্দিত। আমি রহমান।",
+      "target": "හඳුනා ගැනීම සතුටකි. මම රහ්මාන්."
+    },
+    {
+      "source": "কাল বিকেলে শিক্ষকের গবেষণাকক্ষে যাব।",
+      "target": "හෙට සවස ගුරුවරයාගේ පර්යේෂණාගාරයට යනවා."
+    },
+    {
+      "source": "প্রাপ্ত নথিটি দেখেছি।",
+      "target": "ලැබුණු ලේඛනය බැලුවා."
+    },
+    {
+      "source": "বিষয়টি নিয়ে একটু জিজ্ঞেস করতে পারি কি?",
+      "target": "විෂයය ගැන ටිකක් ඇසීමට හැකිද?"
+    },
+    {
+      "source": "আগামী সপ্তাহে আবার আপনার সঙ্গে দেখা হবে।",
+      "target": "ලබන සතියේ නැවත ඔබ හමු වේවි."
+    },
+    {
+      "source": "私は先生にお目にかかります。／先生を拝見します（ছবি/দূর থেকে দেখা context)।",
+      "target": "私は先生にお目にかかります。／先生を拝見します (ඡායාරූපය/දුර සිට බැලීමේ context එක)."
+    },
+    {
+      "source": "ご覧になる অন্যের ‘দেখা’; নিজের সাক্ষাৎ করা お目にかかる।",
+      "target": "ご覧になる වෙනත් අයෙකුගේ ‘බැලීම’; තමා හමු වීම お目にかかる."
+    },
+    {
+      "source": "あります/です-এর অত্যন্ত formal polite রূপ",
+      "target": "あります/です හි අතිශය formal polite රූපය"
+    },
+    {
+      "source": "ございます = あります-এর 丁寧語: 在庫がございます, お時間はございますか। এটি necessarily humble নয়; খুব formal polite।",
+      "target": "ございます = あります හි 丁寧語 එක: 在庫がございます, お時間はございますか. මෙය අනිවාර්යයෙන්ම humble නොවේ; ඉතා formal polite එකකි."
+    },
+    {
+      "source": "でございます = です-এর formal রূপ: 私は田中でございます, 会場はこちらでございます। Customer service/announcement-এ বহুল।",
+      "target": "でございます = です හි formal රූපය: 私は田中でございます, 会場はこちらでございます. Customer service/announcement එකේ බහුලයි."
+    },
+    {
+      "source": "মানুষ/প্রাণীর existence-এ সাধারণত いらっしゃいます (সম্মানিত) বা おります (নিজে/in-group), ございます নয়।",
+      "target": "මිනිසුන්/සතුන්ගේ existence එකේ සාමාන්‍යයෙන් いらっしゃいます (ගෞරවනීය) හෝ おります (තමා/in-group එක), ございます නොවේ."
+    },
+    {
+      "source": "বস্তু/বিষয় আছে → ございます; পরিচয়/সমতুল্য → でございます।",
+      "target": "වස්තුව/විෂයය ඇත → ございます; හැඳින්වීම/සමානත්වය → でございます."
+    },
+    {
+      "source": "আপনার কোনো প্রশ্ন আছে কি?",
+      "target": "ඔබට ප්‍රශ්නයක් තිබේද?"
+    },
+    {
+      "source": "রিসেপশন প্রথম তলায়।",
+      "target": "reception එක පළමු මහලේයි."
+    },
+    {
+      "source": "এটি আজকের নথি।",
+      "target": "මෙය අද ලේඛනයයි."
+    },
+    {
+      "source": "সম্মানিত মানুষ ‘আছেন’ = いらっしゃいます; ございます বস্তু/abstract existence।",
+      "target": "ගෞරවනීය පුද්ගලයා ‘සිටියි’ = いらっしゃいます; ございます වස්තු/abstract existence එක."
+    },
+    {
+      "source": "Keigo তিন স্তর একসঙ্গে",
+      "target": "Keigo මට්ටම් තුන එකට"
+    },
+    {
+      "source": "尊敬語, 謙譲語 ও 丁寧語-এর ভূমিকা আলাদা রেখে বাক্য বানানো",
+      "target": "尊敬語, 謙譲語 සහ 丁寧語 හි භූමිකාව වෙන වෙනම තබා වාක්‍ය සෑදීම"
+    },
+    {
+      "source": "অন্যের action উঁচু",
+      "target": "වෙනත් අයෙකුගේ action එක උසස් කිරීම"
+    },
+    {
+      "source": "নিজের action নিচু",
+      "target": "තමාගේ action එක පහත දැමීම"
+    },
+    {
+      "source": "বাক্য ভদ্র",
+      "target": "වාක්‍යය ආචාරශීලී කිරීම"
+    },
+    {
+      "source": "এক বাক্যে humble verb + polite ending হয়: 私がご案内いたします। 尊敬語 ও 謙譲語 একই actor-এর জন্য এলোমেলো করবেন না।",
+      "target": "එක් වාක්‍යයේ humble verb එක + polite ending එක වේ: 私がご案内いたします. 尊敬語 සහ 謙譲語 එකම actor එක වෙනුවෙන් අහඹු ලෙස නොකරන්න."
+    },
+    {
+      "source": "Double keigo এড়ান: おっしゃられる (おっしゃる＋passive honorific) prescriptively redundant; おっしゃる যথেষ্ট। お召し上がりになる-ও over-keigo; 召し上がる।",
+      "target": "Double keigo එක වළකින්න: おっしゃられる (おっしゃる＋passive honorific) prescriptive වශයෙන් redundant; おっしゃる ප්‍රමාණවත්. お召し上がりになる එකත් over-keigo; 召し上がる."
+    },
+    {
+      "source": "বাস্তব business Japanese-এ variation আছে, কিন্তু learner-এর নিরাপদ নীতি: একটি সঠিক special form + ます।",
+      "target": "සැබෑ business Japanese එකේ variation එක ඇත, නමුත් learner කෙනෙකුගේ ආරක්ෂිත මූලධර්මය: එක් නිවැරදි special form එකක් + ます."
+    },
+    {
+      "source": "Actor circle করুন; arrow দেখুন; তারপর honorific বা humble—একটি বাছুন।",
+      "target": "Actor එක වට කරන්න; arrow එක බලන්න; ඉන්පසු honorific එක හෝ humble එක—එකක් තෝරන්න."
+    },
+    {
+      "source": "শিক্ষক এই বইটি দেখবেন।",
+      "target": "ගුරුවරයා මෙම පොත බලනු ඇත."
+    },
+    {
+      "source": "আমি (আপনার/সম্মানিত বইটি) দেখব।",
+      "target": "මම (ඔබේ/ගෞරවනීය පොත) බලනවා."
+    },
+    {
+      "source": "আমি অতিথিকে মিটিং রুমে নিয়ে যাচ্ছি।",
+      "target": "මම අමුත්තා රැස්වීම් කාමරයට ගෙන යනවා."
+    },
+    {
+      "source": "সম্মানিত teacher-এর action-এ humble 拝見 নয়; honorific ご覧になる।",
+      "target": "ගෞරවනීය teacher කෙනෙකුගේ action එකේ humble එක 拝見 නොවේ; honorific එක ご覧になる."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "එක් බැල්මකින් වෙනස"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "කිනම් තත්ත්වයකදී කුමක්ද?"
+    },
+    {
+      "source": "সাধারণ",
+      "target": "සාමාන්‍ය"
+    },
+    {
+      "source": "尊敬語 (অন্য)",
+      "target": "尊敬語 (වෙනත් අය)"
+    },
+    {
+      "source": "謙譲語 (আমি/in-group)",
+      "target": "謙譲語 (මම/in-group එක)"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "සැබෑ සංවාදය"
+    },
+    {
+      "source": "পরিচিত হয়ে আনন্দিত। আমি ABC কোম্পানির রহমান।",
+      "target": "හඳුනා ගැනීම සතුටකි. මම ABC සමාගමේ රහ්මාන්."
+    },
+    {
+      "source": "পরিচিত হয়ে আনন্দিত। আমি ইয়ামাদা।",
+      "target": "හඳුනා ගැනීම සතුටකි. මම යමදා."
+    },
+    {
+      "source": "আজ সময় দেওয়ার জন্য ধন্যবাদ।",
+      "target": "අද කාලය දීම සඳහා ස්තුතියි."
+    },
+    {
+      "source": "আমিও কৃতজ্ঞ। তাহলে আপনাকে মিটিং রুমে নিয়ে যাচ্ছি।",
+      "target": "මටත් කෘතඥයි. එහෙනම් ඔබව රැස්වීම් කාමරයට ගෙන යනවා."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "ඔබම පරීක්ෂා කරන්න"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice සහ පැහැදිලි කිරීම් සහිත පිළිතුරු"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "පළමුව පොතේ පිළිතුර ලියන්න, ඉන්පසු ප්‍රශ්නය ඔබා පිළිතුර සහ හේතුව ගළපා බලන්න."
+    },
+    {
+      "source": "1. ‘আমি আপনার মালপত্র বহন করব’—humble pattern বলুন।",
+      "target": "1. ‘මම ඔබේ බඩු බාහිරාදිය රැගෙන යනවා’—humble pattern එකෙන් කියන්න."
+    },
+    {
+      "source": "お＋持ち＋します; actor আমি।",
+      "target": "お＋持ち＋します; actor එක මමයි."
+    },
+    {
+      "source": "2. ‘আমি শিক্ষককে জিজ্ঞেস করব’—special humble বলুন।",
+      "target": "2. ‘මම ගුරුවරයාගෙන් අසනවා’—special humble එකෙන් කියන්න."
+    },
+    {
+      "source": "聞く/尋ねる-এর humble 伺う।",
+      "target": "聞く/尋ねる හි humble එක 伺う."
+    },
+    {
+      "source": "3. ‘আমি নথি দেখেছি’—recipient-related formal context-এ বলুন।",
+      "target": "3. ‘මම ලේඛනය බැලුවා’—recipient-related formal context එකේ කියන්න."
+    },
+    {
+      "source": "見る-এর humble 拝見する।",
+      "target": "見る හි humble එක 拝見する."
+    },
+    {
+      "source": "4. ‘আমি তানাকা’—formal self-introduction বলুন।",
+      "target": "4. ‘මම තනකා’—formal self-introduction එකෙන් කියන්න."
+    },
+    {
+      "source": "言う-এর humble self-name 申す।",
+      "target": "言う හි humble self-name එක 申す."
+    },
+    {
+      "source": "5. ‘রিসেপশন দ্বিতীয় তলায়’—formal বলুন।",
+      "target": "5. ‘reception එක දෙවන මහලේ’—formal එකෙන් කියන්න."
+    },
+    {
+      "source": "です-এর formal でございます।",
+      "target": "です හි formal එක でございます."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "එක් වාක්‍යයෙන් Master Key"
+    },
+    {
+      "source": "অন্য সম্মানিত actor → 尊敬語; আমি/আমার group সম্মানিত ব্যক্তির দিকে action করি → 謙譲語; শুধু বাক্যের formal politeness → 丁寧語। Actor ভুল হলে পুরো Keigo ভুল।",
+      "target": "වෙනත් ගෞරවනීය actor එකක් → 尊敬語; මම/මගේ group එක ගෞරවනීය පුද්ගලයා දෙසට action එක කරන්නේ නම් → 謙譲語; වාක්‍යයේ formal politeness එක පමණක් නම් → 丁寧語. Actor එක වැරදුණහොත් සම්පූර්ණ Keigo එකම වැරදේ."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "විශ්වාසදායක reference"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus සහ සත්‍යාපනය"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "මෙම ස්වාධීන සිංහල lesson එක Minna no Nihongo II එකේ lesson sequence, official JLPT N4 scope සහ Japan Foundation එකේ learner resources ඒකාබද්ධ කර සාදා ඇත. උදාහරණ සහ සිංහල පැහැදිලි කිරීම් අලුතින් රචනා කර ඇත."
+    },
+    {
+      "source": "← আগের Lesson 49",
+      "target": "← පෙර Lesson 49"
+    },
+    {
+      "source": "尊敬語：অন্যকে সম্মান দিয়ে বলা",
+      "target": "尊敬語：වෙනත් අයෙකුට ගෞරවය දී කීම"
+    },
+    {
+      "source": "সব Lesson-এ ফিরুন",
+      "target": "සියලු Lesson වෙත ආපසු යන්න"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson දර්ශකය"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "ඉගෙනුම් ඉලක්කය"
+    },
+    {
+      "source": "1. 謙譲語র perspective",
+      "target": "1. 謙譲語 හි perspective එක"
+    },
+    {
+      "source": "3. প্রধান special humble verbs",
+      "target": "3. ප්‍රධාන special humble verbs"
+    },
+    {
+      "source": "5. Keigo তিন স্তর একসঙ্গে",
+      "target": "5. Keigo මට්ටම් තුන එකට"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "වෙනස්කම් වගුව"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "සංවාද"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress පූරණය වෙමින්…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "සිසුන් සඳහා නොමිලේ, විස්තරාත්මක සිංහල self-study edition."
+    }
+  ]
+}
