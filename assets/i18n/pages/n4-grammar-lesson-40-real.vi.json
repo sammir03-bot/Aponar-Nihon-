@@ -1,0 +1,414 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n4-grammar-lesson-40-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Chuyển đến nội dung chính"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 40 · জটিল বাক্য",
+      "target": "Bài 40 · Câu phức tạp"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Tất cả bài học"
+    },
+    {
+      "source": "জটিল বাক্য",
+      "target": "Câu phức"
+    },
+    {
+      "source": "ধাপ ৩ · 36–40",
+      "target": "Bước 3 · 36–40"
+    },
+    {
+      "source": "একটি প্রশ্নকে বড় বাক্যের ভেতর বসানো, yes/no অনিশ্চয়তা প্রকাশ এবং উত্তর জানতে বাস্তবে চেষ্টা করে দেখা।",
+      "target": "Đặt một câu hỏi vào trong câu lớn, diễn đạt sự không chắc chắn yes/no và thực sự thử làm để biết kết quả."
+    },
+    {
+      "source": "3টি বিস্তারিত grammar block",
+      "target": "3 khối ngữ pháp chi tiết"
+    },
+    {
+      "source": "10টি Japanese example",
+      "target": "10 ví dụ tiếng Nhật"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 bài luyện tập kèm giải thích"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Thân thiện ngoại tuyến, di động và in ấn"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Ẩn あ phần đọc"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Chưa hoàn thành"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Đánh dấu hoàn thành"
+    },
+    {
+      "source": "Lesson 40 · লক্ষ্য",
+      "target": "Bài 40 · Mục tiêu"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Sau bài này bạn sẽ có thể"
+    },
+    {
+      "source": "‘স্টেশন কোথায়?’ একটি সরাসরি প্রশ্ন। ‘স্টেশন কোথায় আছে জানেন?’—এখানে প্রশ্নটি বড় বাক্যের object। Japanese embedded question-এ ভেতরের か রেখে বাইরের 知っていますか／調べます／教えてください যোগ হয়; polite ですか সরাসরি বসে না।",
+      "target": "‘Ga ở đâu?’ là một câu hỏi trực tiếp. ‘Bạn có biết ga ở đâu không?’ — ở đây câu hỏi là tân ngữ của câu lớn. Trong câu hỏi nhúng tiếng Nhật, giữ か bên trong và thêm 知っていますか／調べます／教えてください bên ngoài; dạng lịch sự ですか không đặt trực tiếp."
+    },
+    {
+      "source": "疑問詞-সহ প্রশ্নকে plain clause＋か দিয়ে embed করবেন",
+      "target": "Nhúng câu hỏi có 疑問詞 bằng mệnh đề thường＋か"
+    },
+    {
+      "source": "yes/no প্রশ্নে かどうか ব্যবহার করবেন",
+      "target": "Dùng かどうか trong câu hỏi yes/no"
+    },
+    {
+      "source": "embedded noun/な-adjective-এর だ বাদ দেওয়ার নিয়ম জানবেন",
+      "target": "Biết quy tắc bỏ だ của danh từ/tính từ な nhúng"
+    },
+    {
+      "source": "Vてみます দিয়ে ‘চেষ্টা করে দেখে ফল জানা’ বলবেন",
+      "target": "Nói ‘thử làm và biết kết quả’ bằng Vてみます"
+    },
+    {
+      "source": "কী/কে/কোথায়/কখন—এমন প্রশ্নকে বড় বাক্যের অংশ করা",
+      "target": "Biến câu hỏi như cái gì/ai/ở đâu/khi nào thành một phần của câu lớn"
+    },
+    {
+      "source": "গঠন",
+      "target": "Cấu trúc"
+    },
+    {
+      "source": "ধরন",
+      "target": "Loại"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Ví dụ"
+    },
+    {
+      "source": "ভেতরের প্রশ্ন",
+      "target": "Câu hỏi bên trong"
+    },
+    {
+      "source": "জানানো",
+      "target": "Thông báo"
+    },
+    {
+      "source": "তদন্ত",
+      "target": "Điều tra, tìm hiểu"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Giải thích chi tiết"
+    },
+    {
+      "source": "ভেতরের প্রশ্নের word order সাধারণ Japanese clause-এর মতো; question word নিজের জায়গায় থাকে। どこに駅がありますか → 駅がどこにあるか知っていますか।",
+      "target": "Thứ tự từ của câu hỏi bên trong giống mệnh đề tiếng Nhật thông thường; từ hỏi ở vị trí của nó. どこに駅がありますか → 駅がどこにあるか知っていますか."
+    },
+    {
+      "source": "Embedded clause plain style নেয়; どこですか知っていますか ✕। ভেতরের か প্রশ্নের boundary, বাইরের か পুরো বাক্যকে প্রশ্ন করে—তাই শেষে দুই ভিন্ন か আসতে পারে।",
+      "target": "Mệnh đề nhúng lấy phong cách thường; どこですか知っていますか ✕. か bên trong là ranh giới của câu hỏi, か bên ngoài biến toàn bộ câu thành câu hỏi — vì vậy cuối cùng có thể có hai か khác nhau."
+    },
+    {
+      "source": "Subordinate subject অনেক সময় が: だれが来るか分かりません。",
+      "target": "Chủ ngữ phụ nhiều khi là が: だれが来るか分かりません."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Điều cần nhớ"
+    },
+    {
+      "source": "Question word থাকলে かどうか নয়; শুধু か।",
+      "target": "Nếu có từ hỏi thì không phải かどうか; chỉ か."
+    },
+    {
+      "source": "পরের ট্রেন কখন আসে জানেন?",
+      "target": "Bạn có biết chuyến tàu tiếp theo đến khi nào không?"
+    },
+    {
+      "source": "এই কানজি কীভাবে পড়ে বলুন।",
+      "target": "Hãy nói kanji này đọc như thế nào."
+    },
+    {
+      "source": "মিটিংয়ে কে থাকবেন যাচাই করছি।",
+      "target": "Tôi đang kiểm tra ai sẽ có mặt trong cuộc họp."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Sai"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Đúng"
+    },
+    {
+      "source": "কেন:",
+      "target": "Vì sao:"
+    },
+    {
+      "source": "Direct polite question-কে plain embedded clause-এ বদলান।",
+      "target": "Biến câu hỏi lịch sự trực tiếp thành mệnh đề nhúng thường."
+    },
+    {
+      "source": "হবে কি হবে না / সত্য কি না—yes-no প্রশ্নকে embed করা",
+      "target": "Nhúng câu hỏi yes-no — sẽ hay không / đúng hay không"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "Động từ/tính từ い-A"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-tính từ"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Danh từ"
+    },
+    {
+      "source": "Original question-এর উত্তর はい/いいえ হলে かどうか: 店が開いていますか → 店が開いているかどうか調べます।",
+      "target": "Nếu câu trả lời của câu hỏi gốc là はい/いいえ thì かどうか: 店が開いていますか → 店が開いているかどうか調べます."
+    },
+    {
+      "source": "Question word থাকলে かどうか ব্যবহার করবেন না: いつ来るか ✓, いつ来るかどうか ✕।",
+      "target": "Nếu có từ hỏi thì không dùng かどうか: いつ来るか ✓, いつ来るかどうか ✕."
+    },
+    {
+      "source": "N/な-A present affirmative-এর だ বাদ: 学生かどうか, 必要かどうか। Negative option আলাদা না লিখলেও どうか-তে ‘না কি’ অন্তর্ভুক্ত।",
+      "target": "Bỏ だ trong khẳng định hiện tại của N/tính từ な: 学生かどうか, 必要かどうか. Dù không viết lựa chọn phủ định riêng, どうか bao gồm ‘hay không’."
+    },
+    {
+      "source": "কখন/কোথায়/কে → か; হ্যাঁ কি না → かどうか।",
+      "target": "Khi nào/ở đâu/ai → か; có hay không → かどうか."
+    },
+    {
+      "source": "এই বাস স্টেশনে যায় কি না চালককে জিজ্ঞেস করব।",
+      "target": "Tôi sẽ hỏi tài xế xe buýt này có đi đến ga không."
+    },
+    {
+      "source": "কথাটি সত্য কি না জানি না।",
+      "target": "Tôi không biết lời nói đó có đúng không."
+    },
+    {
+      "source": "ওষুধটি নিরাপদ কি না যাচাই করুন।",
+      "target": "Hãy kiểm tra thuốc này có an toàn không."
+    },
+    {
+      "source": "Noun-এর だ বাদ।",
+      "target": "Bỏ だ của danh từ."
+    },
+    {
+      "source": "ফল কী হয় জানতে বাস্তবে চেষ্টা করে দেখা",
+      "target": "Thực sự thử làm để biết kết quả là gì"
+    },
+    {
+      "source": "চেষ্টা",
+      "target": "Thử"
+    },
+    {
+      "source": "ইচ্ছা",
+      "target": "Ý định"
+    },
+    {
+      "source": "পরামর্শ",
+      "target": "Tư vấn, gợi ý"
+    },
+    {
+      "source": "অতীত",
+      "target": "Quá khứ"
+    },
+    {
+      "source": "এখানে みる ‘দেখা’ নয়; auxiliary হয়ে ‘try doing’। তাই objectকে 見る নয়, আগের verb-এর て-form: この料理を食べてみます।",
+      "target": "Ở đây みる không phải ‘nhìn’; là trợ động từ ‘thử làm’. Vì vậy tân ngữ không phải 見る, mà là dạng て của động từ trước: この料理を食べてみます."
+    },
+    {
+      "source": "অজানা ফল/অভিজ্ঞতা যাচাই করতে ব্যবহার হয়। প্রতিদিনের নিশ্চিত কাজ ‘চেষ্টা’ নয়: 毎朝歯を磨いてみます অস্বাভাবিক, যদি নতুন পদ্ধতি পরীক্ষা না হয়।",
+      "target": "Dùng để kiểm tra kết quả/trải nghiệm chưa biết. Việc chắc chắn hàng ngày không phải ‘thử’: 毎朝歯を磨いてみます bất thường, trừ khi thử phương pháp mới."
+    },
+    {
+      "source": "Vようとする (চেষ্টা করা/ঠিক মুহূর্ত) উচ্চতর ভিন্ন pattern; N4-এ てみるকে experiential try হিসেবে ধরুন।",
+      "target": "Vようとする (cố gắng làm/khoảnh khắc sắp) là mẫu khác cao hơn; ở N4 hãy nắm てみる là thử trải nghiệm."
+    },
+    {
+      "source": "見る kanji সাধারণত auxiliary てみる-তে kana-তে লেখা হয়, তবে দুটোই দেখা যায়।",
+      "target": "Kanji 見る thường viết bằng kana trong trợ động てみる, nhưng cả hai đều thấy."
+    },
+    {
+      "source": "খাবারটি সুস্বাদু মনে হচ্ছে। খেয়ে দেখি।",
+      "target": "Món ăn có vẻ ngon. Tôi ăn thử."
+    },
+    {
+      "source": "বুঝিনি বলে শিক্ষককে জিজ্ঞেস করে দেখেছি।",
+      "target": "Vì không hiểu nên tôi đã hỏi thử giáo viên."
+    },
+    {
+      "source": "অ্যাপটি ব্যবহার করে দেখুন।",
+      "target": "Hãy dùng thử ứng dụng."
+    },
+    {
+      "source": "জাপানে গেলে কিমোনো পরে দেখতে চাই।",
+      "target": "Nếu đến Nhật tôi muốn mặc thử kimono."
+    },
+    {
+      "source": "মূল verb-এর て-form＋みます।",
+      "target": "Dạng て của động từ chính＋みます."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Sự khác biệt trong nháy mắt"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Cái nào trong tình huống nào?"
+    },
+    {
+      "source": "মূল প্রশ্ন",
+      "target": "Câu hỏi gốc"
+    },
+    {
+      "source": "Embedded রূপ",
+      "target": "Dạng nhúng"
+    },
+    {
+      "source": "ব্যবহার",
+      "target": "Cách dùng"
+    },
+    {
+      "source": "な-A-এর だ বাদ",
+      "target": "Bỏ だ của tính từ な"
+    },
+    {
+      "source": "বাস্তবে চেষ্টা করে দেখা",
+      "target": "Thực sự thử làm"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Hội thoại thực tế"
+    },
+    {
+      "source": "নতুন রেস্তোরাঁ যাচাই",
+      "target": "Kiểm tra nhà hàng mới"
+    },
+    {
+      "source": "স্টেশনের সামনে নতুন দোকান হয়েছে।",
+      "target": "Trước ga đã có cửa hàng mới."
+    },
+    {
+      "source": "হ্যাঁ। কতটা পর্যন্ত খোলা জানেন?",
+      "target": "Vâng. Bạn có biết mở đến mấy giờ không?"
+    },
+    {
+      "source": "না। বুকিং দরকার কি না তাও জানি না।",
+      "target": "Không. Tôi cũng không biết có cần đặt chỗ không."
+    },
+    {
+      "source": "তাহলে ফোন করে জিজ্ঞেস করে দেখি।",
+      "target": "Vậy tôi gọi điện hỏi thử."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Luyện tập và đáp án kèm giải thích"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Trước tiên viết đáp án vào vở, sau đó nhấn vào câu hỏi để đối chiếu đáp án và lý do."
+    },
+    {
+      "source": "1. Direct: どこで買いましたか—‘কোথায় কিনেছে জানি না’ করুন।",
+      "target": "1. Trực tiếp: どこで買いましたか — hãy làm ‘tôi không biết đã mua ở đâu’."
+    },
+    {
+      "source": "2. ‘কাল বৃষ্টি হবে কি না পরীক্ষা/চেক করি’ বলুন।",
+      "target": "2. Nói ‘tôi kiểm tra xem ngày mai có mưa không’."
+    },
+    {
+      "source": "3. ‘এই শব্দের অর্থ কী বলুন’—embedded question করুন।",
+      "target": "3. ‘Hãy nói ý nghĩa của từ này là gì’ — hãy làm câu hỏi nhúng."
+    },
+    {
+      "source": "4. ‘জাপানি খাবার বানিয়ে দেখতে চাই’ বলুন।",
+      "target": "4. Nói ‘tôi muốn thử làm món ăn Nhật’."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Chìa khóa chính trong một câu"
+    },
+    {
+      "source": "Question word থাকলে plain＋か; yes/no হলে plain＋かどうか; উত্তর শুধু মাথায় নয়, কাজ করে যাচাই করলে Vてみます।",
+      "target": "Nếu có từ hỏi thì thường＋か; nếu yes/no thì thường＋かどうか; nếu kiểm tra kết quả không chỉ trong đầu mà bằng hành động thì Vてみます."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Tài liệu tham khảo đáng tin cậy"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Chương trình và kiểm chứng"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Bài học tiếng Việt độc lập này được tạo bằng cách kết hợp trình tự bài học của Minna no Nihongo II, phạm vi JLPT N4 chính thức và tài nguyên học tập của Japan Foundation. Ví dụ và giải thích tiếng Việt được viết mới."
+    },
+    {
+      "source": "← আগের Lesson 39",
+      "target": "← Bài trước 39"
+    },
+    {
+      "source": "পরের Lesson 41 →",
+      "target": "Bài tiếp theo 41 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Mục lục bài học"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Mục tiêu học tập"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Bảng so sánh"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Hội thoại"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Đang tải tiến độ khóa học…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · Ngữ pháp N4 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Phiên bản tự học tiếng Việt chi tiết, miễn phí cho học sinh."
+    }
+  ]
+}

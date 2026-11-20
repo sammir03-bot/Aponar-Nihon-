@@ -1,0 +1,498 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n4-grammar-lesson-36-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 36: 〜ように：লক্ষ্য, পরিবর্তন ও নিয়মিত চেষ্টা | N4 Grammar",
+      "target": "Bài 36: 〜ように: mục tiêu, thay đổi và cố gắng thường xuyên | Ngữ pháp N4"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Chuyển đến nội dung chính"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 36 · জটিল বাক্য",
+      "target": "Bài 36 · Câu phức tạp"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Tất cả bài học"
+    },
+    {
+      "source": "জটিল বাক্য",
+      "target": "Câu phức"
+    },
+    {
+      "source": "ধাপ ৩ · 36–40",
+      "target": "Bước 3 · 36–40"
+    },
+    {
+      "source": "〜ように：লক্ষ্য, পরিবর্তন ও নিয়মিত চেষ্টা",
+      "target": "〜ように: mục tiêu, thay đổi và cố gắng thường xuyên"
+    },
+    {
+      "source": "ক্ষমতা বা অনিচ্ছাকৃত ফলকে লক্ষ্য করা, ধীরে ধীরে সক্ষমতা/অভ্যাস বদলানো এবং সচেতনভাবে নিয়ম বজায় রাখা।",
+      "target": "Nhắm khả năng hoặc kết quả không chủ ý làm mục tiêu, thay đổi dần khả năng/thói quen và có ý thức duy trì quy tắc."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 khối ngữ pháp chi tiết"
+    },
+    {
+      "source": "11টি Japanese example",
+      "target": "11 ví dụ tiếng Nhật"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 bài luyện tập kèm giải thích"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Thân thiện ngoại tuyến, di động và in ấn"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Ẩn あ phần đọc"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Chưa hoàn thành"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Đánh dấu hoàn thành"
+    },
+    {
+      "source": "Lesson 36 · লক্ষ্য",
+      "target": "Bài 36 · Mục tiêu"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Sau bài này bạn sẽ có thể"
+    },
+    {
+      "source": "ために এবং ように দুটিই বাংলায় ‘যাতে/জন্য’ হতে পারে, কিন্তু control-এর পার্থক্য আছে। নিজের ইচ্ছায় সরাসরি করা action-এর লক্ষ্য হলে ために; ‘যেন পারি’, ‘যেন ভুল না হয়’, ‘যাতে দেখা যায়’—এমন ফল/ক্ষমতার লক্ষ্য হলে ように। একই ように পরে পরিবর্তন ও অভ্যাসের তিনটি গুরুত্বপূর্ণ pattern তৈরি করে।",
+      "target": "ために và ように cả hai đều có thể là ‘để/cho’ trong tiếng Việt, nhưng có sự khác biệt về kiểm soát. Nếu là mục tiêu của hành động làm trực tiếp bằng ý chí của bản thân thì ために; nếu là mục tiêu kết quả/khả năng như ‘để có thể’, ‘để không sai’, ‘để có thể thấy’ thì ように. Cùng một ように sau đó tạo ra ba mẫu quan trọng về thay đổi và thói quen."
+    },
+    {
+      "source": "potential, non-volitional ও negative goal-এর সঙ্গে ように ব্যবহার করবেন",
+      "target": "Dùng ように với mục tiêu potential, không chủ ý và phủ định"
+    },
+    {
+      "source": "ために বনাম ように control-ভিত্তিকভাবে আলাদা করবেন",
+      "target": "Phân biệt ために và ように dựa trên kiểm soát"
+    },
+    {
+      "source": "ようになります দিয়ে নতুন সক্ষমতা বা অভ্যাসগত পরিবর্তন বলবেন",
+      "target": "Nói khả năng mới hoặc thay đổi thói quen bằng ようになります"
+    },
+    {
+      "source": "ようにします/してください দিয়ে সচেতন চেষ্টা ও নরম নির্দেশ দেবেন",
+      "target": "Đưa cố gắng có ý thức và chỉ thị nhẹ nhàng bằng ようにします/してください"
+    },
+    {
+      "source": "যাতে কোনো ফল ঘটে/না ঘটে, বা যাতে সক্ষম হওয়া যায়",
+      "target": "Để một kết quả xảy ra/không xảy ra, hoặc để có thể trở nên có khả năng"
+    },
+    {
+      "source": "গঠন",
+      "target": "Cấu trúc"
+    },
+    {
+      "source": "ধরন",
+      "target": "Loại"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Ví dụ"
+    },
+    {
+      "source": "সক্ষমতার লক্ষ্য",
+      "target": "Mục tiêu khả năng"
+    },
+    {
+      "source": "non-volitional ফল",
+      "target": "Kết quả không chủ ý"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Giải thích chi tiết"
+    },
+    {
+      "source": "ように-এর আগের ফলটি সরাসরি ‘করে ফেলি’ ধরনের controllable action না-ও হতে পারে। 見える, 聞こえる, 分かる, できる, potential verbs এবং negative goal-এর সঙ্গে খুব স্বাভাবিক।",
+      "target": "Kết quả trước ように có thể không phải hành động có thể kiểm soát kiểu ‘làm xong ngay’. Rất tự nhiên với 見える, 聞こえる, 分かる, できる, động từ potential và mục tiêu phủ định."
+    },
+    {
+      "source": "দুই clause-এর subject একই বা আলাদা হতে পারে: 子どもが読めるように、先生はふりがなを付けました—শিশু যেন পড়তে পারে, শিক্ষক furigana দিয়েছেন।",
+      "target": "Chủ ngữ của hai mệnh đề có thể giống hoặc khác: 子どもが読めるように、先生はふりがなを付けました — để trẻ có thể đọc, giáo viên đã thêm furigana."
+    },
+    {
+      "source": "Negative goal-এ বাংলার ‘যাতে না’ সরাসরি Vないように: 忘れないように, 遅れないように।",
+      "target": "Ở mục tiêu phủ định, ‘để không’ trong tiếng Việt trực tiếp là Vないように: 忘れないように, 遅れないように."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Điều cần nhớ"
+    },
+    {
+      "source": "Controllable action-এর উদ্দেশ্য: 日本へ行くためにお金をためます। সক্ষম ফল: 日本語が話せるように練習します।",
+      "target": "Mục đích của hành động có thể kiểm soát: 日本へ行くためにお金をためます. Kết quả có khả năng: 日本語が話せるように練習します."
+    },
+    {
+      "source": "ように-এর আগে polite form নয়: 分かりますように ✕ (প্রার্থনার আলাদা pattern ছাড়া); 分かるように ✓।",
+      "target": "Trước ように không phải dạng lịch sự: 分かりますように ✕ (trừ mẫu cầu nguyện riêng); 分かるように ✓."
+    },
+    {
+      "source": "জাপানি খবর বুঝতে পারি—এ জন্য প্রতিদিন শুনি।",
+      "target": "Để có thể hiểu tin tức Nhật, tôi nghe mỗi ngày."
+    },
+    {
+      "source": "যাতে ভুলে না যাই, সূচি ক্যালেন্ডারে লিখেছি।",
+      "target": "Để không quên, tôi đã viết lịch trình vào lịch."
+    },
+    {
+      "source": "পেছনের লোকও যেন দেখতে পারে, বড় করে লিখুন।",
+      "target": "Hãy viết to để người phía sau cũng có thể thấy."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Sai"
+    },
+    {
+      "source": "日本語を話すように、日本へ行きます。（‘শিখতে/বলতে পারার জন্য’)",
+      "target": "日本語を話すように、日本へ行きます. (‘để học/có thể nói’)"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Đúng"
+    },
+    {
+      "source": "কেন:",
+      "target": "Vì sao:"
+    },
+    {
+      "source": "লক্ষ্য হলো সক্ষম হওয়া; potential 話せる＋ように এবং object が।",
+      "target": "Mục tiêu là trở nên có khả năng; potential 話せる＋ように và tân ngữ が."
+    },
+    {
+      "source": "আগে সম্ভব/অভ্যাস ছিল না, এখন ধীরে বা প্রক্রিয়ায় বদলেছে",
+      "target": "Trước đây không thể/không có thói quen, bây giờ đã thay đổi dần hoặc qua quá trình"
+    },
+    {
+      "source": "নতুন সক্ষমতা",
+      "target": "Khả năng mới"
+    },
+    {
+      "source": "নতুন অভ্যাস",
+      "target": "Thói quen mới"
+    },
+    {
+      "source": "বন্ধ হওয়া অভ্যাস",
+      "target": "Thói quen đã dừng"
+    },
+    {
+      "source": "なる পরিবর্তন দেখায়; বক্তা সরাসরি সিদ্ধান্তকে নয়, পরিবর্তিত ফলকে দেখে। 漢字が読めるようになりました = এখন কানজি পড়তে সক্ষম হয়েছি।",
+      "target": "なる cho thấy sự thay đổi; người nói không nhìn quyết định trực tiếp, mà nhìn kết quả đã thay đổi. 漢字が読めるようになりました = bây giờ tôi đã có thể đọc kanji."
+    },
+    {
+      "source": "Habit change-এ dictionary/ない form: 日本へ来てから、箸を使うようになりました। একবারের কাজ নয়; নিয়মিত আচরণ বদলেছে।",
+      "target": "Trong thay đổi thói quen dùng dạng từ điển/ない: 日本へ来てから、箸を使うようになりました. Không phải việc một lần; hành vi thường xuyên đã thay đổi."
+    },
+    {
+      "source": "Potential ability-এর negative loss: 年を取って、小さい字が見えないようになりました = এখন ছোট অক্ষর আর দেখা যায় না।",
+      "target": "Mất khả năng potential phủ định: 年を取って、小さい字が見えないようになりました = bây giờ chữ nhỏ không còn thấy được."
+    },
+    {
+      "source": "なりました past বললে পরিবর্তন ইতিমধ্যে ঘটেছে; なります ভবিষ্যৎ/সাধারণ পরিবর্তন।",
+      "target": "なりました quá khứ là thay đổi đã xảy ra; なります là thay đổi tương lai/chung."
+    },
+    {
+      "source": "প্রতিদিন অনুশীলনে দ্রুত পড়তে শিখেছি।",
+      "target": "Nhờ luyện tập mỗi ngày tôi đã học đọc nhanh."
+    },
+    {
+      "source": "জাপানে আসার পর সাইকেলে অফিস যাওয়া অভ্যাস হয়েছে।",
+      "target": "Sau khi đến Nhật, việc đi văn phòng bằng xe đạp đã thành thói quen."
+    },
+    {
+      "source": "স্বাস্থ্যের জন্য রাতে দেরিতে আর খাই না—এই অভ্যাস হয়েছে।",
+      "target": "Vì sức khỏe, tôi không còn ăn muộn vào ban đêm — thói quen này đã hình thành."
+    },
+    {
+      "source": "সক্ষমতার পরিবর্তনে potential 弾ける＋ようになりました।",
+      "target": "Trong thay đổi khả năng là potential 弾ける＋ようになりました."
+    },
+    {
+      "source": "সচেতনভাবে অভ্যাস করার/এড়ানোর চেষ্টা রাখা",
+      "target": "Giữ cố gắng có ý thức để làm thói quen/tránh"
+    },
+    {
+      "source": "ইতিবাচক অভ্যাস",
+      "target": "Thói quen tích cực"
+    },
+    {
+      "source": "নেতিবাচক অভ্যাস",
+      "target": "Thói quen tiêu cực"
+    },
+    {
+      "source": "চলমান চেষ্টা",
+      "target": "Cố gắng đang tiếp diễn"
+    },
+    {
+      "source": "します এখানে নিজের সচেতন নিয়ন্ত্রণ। 一回の決定-এর চেয়ে নিয়ম/প্রচেষ্টা: これから野菜を食べるようにします = এখন থেকে সবজি খাওয়ার চেষ্টা/নিয়ম করব।",
+      "target": "します ở đây là sự kiểm soát có ý thức của bản thân. Hơn 一回の決定 là quy tắc/nỗ lực: これから野菜を食べるようにします = từ nay tôi sẽ cố gắng/quy tắc ăn rau."
+    },
+    {
+      "source": "〜ようにしています বললে প্রচেষ্টাটি চলমান অভ্যাস: 毎日日本語を話すようにしています। সবদিন সফল না হলেও নিয়ম মানার চেষ্টা আছে।",
+      "target": "〜ようにしています là nỗ lực là thói quen đang tiếp diễn: 毎日日本語を話すようにしています. Dù không thành công mọi ngày, vẫn có cố gắng tuân theo quy tắc."
+    },
+    {
+      "source": "একটি তাৎক্ষণিক কাজের promise-এ সরাসরি Vます ভালো হতে পারে; habitual policy-তে ようにします।",
+      "target": "Trong lời hứa về một việc tức thì, Vます trực tiếp có thể tốt hơn; trong chính sách thói quen thì ようにします."
+    },
+    {
+      "source": "পরিবর্তন নিজে হয়েছে → ようになりました; আমি চেষ্টা করছি → ようにしています।",
+      "target": "Thay đổi tự nó xảy ra → ようになりました; tôi đang cố gắng → ようにしています."
+    },
+    {
+      "source": "এখন থেকে প্রতিদিন দশটি কানজি শেখার নিয়ম করব।",
+      "target": "Từ nay tôi sẽ đặt quy tắc học mười kanji mỗi ngày."
+    },
+    {
+      "source": "জরুরি ইমেইলে দ্রুত উত্তর দেওয়ার চেষ্টা রাখি।",
+      "target": "Tôi giữ cố gắng trả lời email khẩn cấp nhanh chóng."
+    },
+    {
+      "source": "রাতে ফোন বেশি না দেখার চেষ্টা করি।",
+      "target": "Tôi cố gắng không xem điện thoại nhiều vào ban đêm."
+    },
+    {
+      "source": "日本語が話せるようにしています。（সক্ষম হয়ে গেছি বলতে）",
+      "target": "日本語が話せるようにしています. (để nói đã trở nên có khả năng)"
+    },
+    {
+      "source": "অর্জিত পরিবর্তন なる; নিয়মিত চেষ্টা হলে 話すようにしています।",
+      "target": "Thay đổi đã đạt được là なる; nếu là cố gắng thường xuyên thì 話すようにしています."
+    },
+    {
+      "source": "নির্দিষ্ট নিয়ম/সতর্কতা মেনে চলার নরম নির্দেশ",
+      "target": "Chỉ thị nhẹ nhàng để tuân theo quy tắc/cảnh báo xác định"
+    },
+    {
+      "source": "করার নিয়ম",
+      "target": "Quy tắc làm"
+    },
+    {
+      "source": "না করার নিয়ম",
+      "target": "Quy tắc không làm"
+    },
+    {
+      "source": "Vてください একবারের সরাসরি কাজ চায়: ドアを閉めてください। Vようにしてください নিয়মিত আচরণ, সতর্কতা বা ফল নিশ্চিত করার চেষ্টা চায়: ドアを閉めるようにしてください = দরজা বন্ধ রাখার নিয়ম করুন।",
+      "target": "Vてください muốn hành động trực tiếp một lần: ドアを閉めてください. Vようにしてください muốn hành vi thường xuyên, cảnh báo hoặc cố gắng đảm bảo kết quả: ドアを閉めるようにしてください = hãy đặt quy tắc giữ cửa đóng."
+    },
+    {
+      "source": "স্কুল, অফিস, নির্দেশিকা ও স্বাস্থ্য-পরামর্শে প্রচলিত। খুব ব্যক্তিগত আদেশে tone এখনও গুরুত্বপূর্ণ।",
+      "target": "Thông dụng ở trường học, văn phòng, hướng dẫn và lời khuyên sức khỏe. Trong mệnh lệnh rất cá nhân, giọng điệu vẫn quan trọng."
+    },
+    {
+      "source": "একবার এখনই করুন → Vてください; ভবিষ্যতে নিয়ম মেনে করুন → Vようにしてください।",
+      "target": "Làm một lần bây giờ → Vてください; làm theo quy tắc trong tương lai → Vようにしてください."
+    },
+    {
+      "source": "পরীক্ষার সময় মোবাইল ব্যবহার করবেন না—এই নিয়ম মানুন।",
+      "target": "Không dùng điện thoại trong giờ thi — hãy tuân theo quy tắc này."
+    },
+    {
+      "source": "ওষুধ খাবারের পরে খাওয়ার নিয়ম রাখুন।",
+      "target": "Hãy giữ quy tắc uống thuốc sau bữa ăn."
+    },
+    {
+      "source": "এখন একবার লিখতে বললে direct Vてください; ability/habit নয়।",
+      "target": "Nếu bảo viết một lần bây giờ thì Vてください trực tiếp; không phải khả năng/thói quen."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Sự khác biệt trong nháy mắt"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Cái nào trong tình huống nào?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Dạng"
+    },
+    {
+      "source": "কেন্দ্র",
+      "target": "Trung tâm"
+    },
+    {
+      "source": "বাংলা ধারণা",
+      "target": "Khái niệm tiếng Việt"
+    },
+    {
+      "source": "লক্ষ্য/ফল",
+      "target": "Mục tiêu/kết quả"
+    },
+    {
+      "source": "যাতে পারি/যাতে না হয়",
+      "target": "Để có thể/để không xảy ra"
+    },
+    {
+      "source": "স্বাভাবিক/অর্জিত পরিবর্তন",
+      "target": "Thay đổi tự nhiên/đã đạt được"
+    },
+    {
+      "source": "এখন থেকে হতে/পারতে শুরু",
+      "target": "Bắt đầu trở nên/có thể từ nay"
+    },
+    {
+      "source": "নিজের সচেতন চেষ্টা",
+      "target": "Cố gắng có ý thức của bản thân"
+    },
+    {
+      "source": "নিয়ম করার চেষ্টা",
+      "target": "Cố gắng đặt quy tắc"
+    },
+    {
+      "source": "অন্যকে নিয়ম মানতে বলা",
+      "target": "Bảo người khác tuân theo quy tắc"
+    },
+    {
+      "source": "চেষ্টা/খেয়াল রাখুন",
+      "target": "Hãy cố gắng/chú ý"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Hội thoại thực tế"
+    },
+    {
+      "source": "পড়ার অভ্যাস নিয়ে শিক্ষক-শিক্ষার্থী",
+      "target": "Giáo viên-học sinh về thói quen đọc"
+    },
+    {
+      "source": "কানজি কিছুতেই মনে রাখতে পারছি না।",
+      "target": "Tôi không thể nào nhớ kanji được."
+    },
+    {
+      "source": "প্রতিদিন অল্প অল্প রিভিশন করার নিয়ম করুন।",
+      "target": "Hãy đặt quy tắc ôn tập từng chút mỗi ngày."
+    },
+    {
+      "source": "জি। যাতে ভুলে না যাই, ফোনে সূচি দেব।",
+      "target": "Vâng. Để không quên, tôi sẽ đưa lịch trình vào điện thoại."
+    },
+    {
+      "source": "চালিয়ে গেলে পড়তে সক্ষম হবেন।",
+      "target": "Tiếp tục thì sẽ có thể đọc được."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Luyện tập và đáp án kèm giải thích"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Trước tiên viết đáp án vào vở, sau đó nhấn vào câu hỏi để đối chiếu đáp án và lý do."
+    },
+    {
+      "source": "1. ‘ভুলে না যাই বলে নোট করি’ বলুন।",
+      "target": "1. Nói ‘để không quên, tôi ghi chú’."
+    },
+    {
+      "source": "2. ‘এখন জাপানি সংবাদ বুঝতে পারি’—পরিবর্তন বলুন।",
+      "target": "2. ‘Bây giờ tôi có thể hiểu tin tức Nhật’ — nói sự thay đổi."
+    },
+    {
+      "source": "অর্জিত ability/change: ようになりました।",
+      "target": "Khả năng/thay đổi đã đạt được: ようになりました."
+    },
+    {
+      "source": "3. ‘প্রতিদিন হাঁটার চেষ্টা করি’ বলুন।",
+      "target": "3. Nói ‘tôi cố gắng đi bộ mỗi ngày’."
+    },
+    {
+      "source": "চলমান habit effort: ようにしています।",
+      "target": "Nỗ lực thói quen đang tiếp diễn: ようにしています."
+    },
+    {
+      "source": "4. ‘দেরি না করার খেয়াল রাখুন’ বলুন।",
+      "target": "4. Nói ‘hãy chú ý không đến muộn’."
+    },
+    {
+      "source": "নিয়ম/সতর্কতা: ようにしてください。",
+      "target": "Quy tắc/cảnh báo: ようにしてください."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Chìa khóa chính trong một câu"
+    },
+    {
+      "source": "ফল/ক্ষমতার লক্ষ্য → ように; পরিবর্তন হয়ে গেছে → ようになりました; নিজের নিয়মিত চেষ্টা → ようにしています; অন্যকে নিয়ম মানতে বলা → ようにしてください।",
+      "target": "Mục tiêu kết quả/khả năng → ように; thay đổi đã xảy ra → ようになりました; cố gắng thường xuyên của bản thân → ようにしています; bảo người khác tuân theo quy tắc → ようにしてください."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Tài liệu tham khảo đáng tin cậy"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Chương trình và kiểm chứng"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Bài học tiếng Việt độc lập này được tạo bằng cách kết hợp trình tự bài học của Minna no Nihongo II, phạm vi JLPT N4 chính thức và tài nguyên học tập của Japan Foundation. Ví dụ và giải thích tiếng Việt được viết mới."
+    },
+    {
+      "source": "← আগের Lesson 35",
+      "target": "← Bài trước 35"
+    },
+    {
+      "source": "পরের Lesson 37 →",
+      "target": "Bài tiếp theo 37 →"
+    },
+    {
+      "source": "Passive Form：受け身形 পুরোপুরি পরিষ্কার",
+      "target": "Passive Form: 受け身形 làm rõ hoàn toàn"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Mục lục bài học"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Mục tiêu học tập"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Bảng so sánh"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Hội thoại"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Đang tải tiến độ khóa học…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · Ngữ pháp N4 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Phiên bản tự học tiếng Việt chi tiết, miễn phí cho học sinh."
+    }
+  ]
+}

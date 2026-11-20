@@ -1,0 +1,486 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n4-grammar-lesson-46-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Chuyển đến nội dung chính"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 46 · সময় ও Keigo",
+      "target": "Bài 46 · Thời gian và Keigo"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Tất cả bài học"
+    },
+    {
+      "source": "সময় ও Keigo",
+      "target": "Thời gian và Keigo"
+    },
+    {
+      "source": "ধাপ ৫ · 46–50",
+      "target": "Bước 5 · 46–50"
+    },
+    {
+      "source": "কাজ শুরু হওয়ার ঠিক আগে, চলার ঠিক সময়, শেষ হওয়ার ঠিক পরে, বক্তার কাছে সাম্প্রতিক অতীত এবং প্রমাণভিত্তিক প্রত্যাশা।",
+      "target": "Ngay trước khi việc bắt đầu, đúng lúc đang làm, ngay sau khi kết thúc, quá khứ gần đối với người nói và kỳ vọng dựa trên bằng chứng."
+    },
+    {
+      "source": "5টি বিস্তারিত grammar block",
+      "target": "5 khối ngữ pháp chi tiết"
+    },
+    {
+      "source": "16টি Japanese example",
+      "target": "16 ví dụ tiếng Nhật"
+    },
+    {
+      "source": "5টি ব্যাখ্যাসহ practice",
+      "target": "5 bài luyện tập kèm giải thích"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Thân thiện ngoại tuyến, di động và in ấn"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Ẩn あ phần đọc"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Chưa hoàn thành"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Đánh dấu hoàn thành"
+    },
+    {
+      "source": "Lesson 46 · লক্ষ্য",
+      "target": "Bài 46 · Mục tiêu"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Sau bài này bạn sẽ có thể"
+    },
+    {
+      "source": "বাংলার ‘এইমাত্র’ বা ‘এখন’ Japanese-এ event-এর boundary অনুযায়ী বদলায়। 食べるところ = এখন শুরু করব, 食べているところ = মাঝখানে, 食べたところ = এইমাত্র শেষ। たばかり clock-এর exact মুহূর্ত নয়—বক্তার অনুভূতিতে ‘সাম্প্রতিক’। はず আবার জানা তথ্য থেকে expected conclusion।",
+      "target": "‘Vừa mới’ hoặc ‘bây giờ’ trong tiếng Việt thay đổi theo ranh giới sự kiện trong tiếng Nhật. 食べるところ = bây giờ sẽ bắt đầu, 食べているところ = đang giữa, 食べたところ = vừa mới kết thúc. たばかり không phải khoảnh khắc chính xác của đồng hồ — là ‘gần đây’ trong cảm nhận của người nói. はず lại là kết luận kỳ vọng từ thông tin đã biết."
+    },
+    {
+      "source": "তিনটি ところ form দিয়ে event timeline নির্ভুলভাবে বলবেন",
+      "target": "Nói chính xác dòng thời gian sự kiện bằng ba dạng ところ"
+    },
+    {
+      "source": "たところ ও たばかり-এর objective immediacy বনাম subjective recency আলাদা করবেন",
+      "target": "Phân biệt tính tức thì khách quan của たところ và tính gần đây chủ quan của たばかり"
+    },
+    {
+      "source": "はずです দিয়ে evidence-based expectation বলবেন",
+      "target": "Nói kỳ vọng dựa trên bằng chứng bằng はずです"
+    },
+    {
+      "source": "はずがない/ないはず-এর সম্পূর্ণ ভিন্ন অর্থ বুঝবেন",
+      "target": "Hiểu nghĩa hoàn toàn khác của はずがない/ないはず"
+    },
+    {
+      "source": "ঠিক এখন কাজটি শুরু করতে যাচ্ছি—just about to",
+      "target": "Đúng bây giờ sắp bắt đầu việc — just about to"
+    },
+    {
+      "source": "গঠন",
+      "target": "Cấu trúc"
+    },
+    {
+      "source": "ধরন",
+      "target": "Loại"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Ví dụ"
+    },
+    {
+      "source": "শুরু-পূর্ব",
+      "target": "Trước bắt đầu"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Giải thích chi tiết"
+    },
+    {
+      "source": "কাজ এখনো শুরু হয়নি, boundary-এর ঠিক আগে। これから, 今から, ちょうど-এর সঙ্গে স্বাভাবিক।",
+      "target": "Việc chưa bắt đầu, ngay trước ranh giới. Tự nhiên với これから, 今から, ちょうど."
+    },
+    {
+      "source": "Simple future これから食べます কেবল ‘এখন খাব’; 食べるところです ‘খেতে বসেছি/শুরু করার ঠিক মুহূর্তে’—তাৎক্ষণিকতা বেশি।",
+      "target": "Tương lai đơn giản これから食べます chỉ là ‘bây giờ sẽ ăn’; 食べるところです ‘sắp ngồi ăn/khoảnh khắc sắp bắt đầu’ — tính tức thì cao hơn."
+    },
+    {
+      "source": "ところ মূলত ‘স্থান’, কিন্তু এখানে সময়ের position—event timeline-এর কোন জায়গায় আছি।",
+      "target": "ところ vốn là ‘nơi’, nhưng ở đây là vị trí thời gian — đang ở chỗ nào trên dòng thời gian sự kiện."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Điều cần nhớ"
+    },
+    {
+      "source": "এখনই মিটিং শুরু করতে যাচ্ছি।",
+      "target": "Bây giờ tôi sắp bắt đầu cuộc họp."
+    },
+    {
+      "source": "ঠিক এখন বাড়ি থেকে বের হওয়ার মুহূর্ত।",
+      "target": "Đúng bây giờ là khoảnh khắc ra khỏi nhà."
+    },
+    {
+      "source": "এখন দুপুরের খাবার বানাতে যাচ্ছি।",
+      "target": "Bây giờ tôi sắp làm bữa trưa."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Sai"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Đúng"
+    },
+    {
+      "source": "কেন:",
+      "target": "Vì sao:"
+    },
+    {
+      "source": "ところ-এর আগে plain dictionary form।",
+      "target": "Trước ところ là dạng từ điển thường."
+    },
+    {
+      "source": "ঠিক এই মুহূর্তে কাজের মাঝখানে—right in the middle of",
+      "target": "Đúng khoảnh khắc này đang giữa việc — right in the middle of"
+    },
+    {
+      "source": "মধ্যবর্তী",
+      "target": "Giữa"
+    },
+    {
+      "source": "Vています-এর চলমান অর্থের চেয়ে focus বেশি: ‘এই মুহূর্তেই কাজটি চলছে, এখনও শেষ হয়নি’। ফোনে status update-এ বহুল।",
+      "target": "Tiêu điểm cao hơn nghĩa đang tiếp diễn của Vています: ‘đúng khoảnh khắc này việc đang diễn ra, chưa kết thúc’. Thông dụng trong cập nhật trạng thái qua điện thoại."
+    },
+    {
+      "source": "Habitual ています-এর সঙ্গে সাধারণত নয়; 毎日勉強しているところです অস্বাভাবিক, যদি নির্দিষ্ট current phase বোঝানো না হয়।",
+      "target": "Thường không với ています thói quen; 毎日勉強しているところです bất thường, trừ khi chỉ giai đoạn hiện tại cụ thể."
+    },
+    {
+      "source": "ている-এর casual contraction てるところ কথায় শোনা যায়; formal content-এ পূর্ণ form রাখুন।",
+      "target": "Dạng rút gọn thân mật てるところ của ている nghe trong lời nói; trong nội dung trang trọng giữ dạng đầy đủ."
+    },
+    {
+      "source": "Process-এর ভিতর: Vているところ。",
+      "target": "Bên trong quá trình: Vているところ."
+    },
+    {
+      "source": "এখন ঠিক ওই বিষয়টি খতিয়ে দেখছি।",
+      "target": "Bây giờ tôi đang đúng lúc xem xét vấn đề đó."
+    },
+    {
+      "source": "এখন রান্নার মাঝখানে, পরে ফোন করব।",
+      "target": "Bây giờ đang giữa nấu ăn, tôi sẽ gọi sau."
+    },
+    {
+      "source": "বিভাগীয় প্রধান এখন অতিথির সঙ্গে কথার মাঝখানে আছেন।",
+      "target": "Trưởng bộ phận bây giờ đang giữa cuộc nói chuyện với khách."
+    },
+    {
+      "source": "今、調べたところです。（এখনো খুঁজছি বলতে）",
+      "target": "今、調べたところです. (để nói vẫn đang tìm)"
+    },
+    {
+      "source": "চলমান phase-এ ている; たところ হলে এইমাত্র শেষ।",
+      "target": "Trong giai đoạn đang tiếp diễn ている; nếu たところ là vừa mới kết thúc."
+    },
+    {
+      "source": "ঠিক এইমাত্র কাজ শেষ হয়েছে—just finished",
+      "target": "Đúng vừa mới việc kết thúc — just finished"
+    },
+    {
+      "source": "শেষ-পরবর্তী",
+      "target": "Sau kết thúc"
+    },
+    {
+      "source": "Event boundary-এর ঠিক পরে; সময়গতভাবে খুব কাছাকাছি। 今, たった今, ちょうど clue।",
+      "target": "Ngay sau ranh giới sự kiện; rất gần về thời gian. 今, たった今, ちょうど là manh mối."
+    },
+    {
+      "source": "নতুন ফল/তথ্যও বোঝাতে পারে: 今確認したところ、間違いがありました (যাচাই করে দেখলাম…)—এটি উচ্চতর extension। N4-এ immediate completion আগে ধরুন।",
+      "target": "Cũng có thể chỉ kết quả/thông tin mới: 今確認したところ、間違いがありました (kiểm tra thì thấy…) — đây là phần mở rộng cao hơn. Ở N4 hãy nắm hoàn thành tức thì trước."
+    },
+    {
+      "source": "এক ঘণ্টা/এক বছর আগে হলে সাধারণত たところ নয়, যদি relative context-এ ‘ঠিক পরে’ বোঝানো না হয়।",
+      "target": "Nếu một giờ/một năm trước thường không phải たところ, trừ khi trong ngữ cảnh tương đối chỉ ‘ngay sau’."
+    },
+    {
+      "source": "Immediate completion; clock-এ ‘খুব সাম্প্রতিক’।",
+      "target": "Hoàn thành tức thì; ‘rất gần đây’ trên đồng hồ."
+    },
+    {
+      "source": "এইমাত্র স্টেশনে পৌঁছেছি।",
+      "target": "Tôi vừa mới đến ga."
+    },
+    {
+      "source": "মিটিং এইমাত্র শেষ হয়েছে।",
+      "target": "Cuộc họp vừa mới kết thúc."
+    },
+    {
+      "source": "এইমাত্র ইমেইল পাঠিয়েছি।",
+      "target": "Tôi vừa mới gửi email."
+    },
+    {
+      "source": "এক বছর সাধারণত immediate নয়; বক্তার subjective ‘সাম্প্রতিক’ হলে ばかり সম্ভব।",
+      "target": "Một năm thường không tức thì; nếu là ‘gần đây’ chủ quan của người nói thì ばかり có thể."
+    },
+    {
+      "source": "বক্তার অনুভূতিতে অল্প আগে কাজ হয়েছে—just/recently",
+      "target": "Việc đã xảy ra cách đây ít trong cảm nhận của người nói — just/recently"
+    },
+    {
+      "source": "সাম্প্রতিক",
+      "target": "Gần đây"
+    },
+    {
+      "source": "Exact সময়ের সীমা নেই। পাঁচ মিনিট, এক সপ্তাহ, এমনকি জীবনপর্ব অনুযায়ী এক বছরও speaker-এর কাছে ‘এই তো সেদিন’ হতে পারে।",
+      "target": "Không có giới hạn thời gian chính xác. Năm phút, một tuần, thậm chí theo giai đoạn cuộc đời một năm cũng có thể là ‘mới hôm nào’ đối với người nói."
+    },
+    {
+      "source": "たところ objective immediate boundary; たばかり subjective recency। 今食べたところです = এইমাত্র শেষ; 先週食べたばかりです = গত সপ্তাহেই তো খেয়েছি।",
+      "target": "たところ ranh giới tức thì khách quan; たばかり tính gần đây chủ quan. 今食べたところです = vừa mới kết thúc; 先週食べたばかりです = mới tuần trước đã ăn."
+    },
+    {
+      "source": "ばかり-এর অন্য অর্থ ‘শুধুই’ (遊んでばかり) আছে; এখানে た-form＋ばかり = recently completed।",
+      "target": "ばかり có nghĩa khác ‘chỉ’ (遊んでばかり); ở đây dạng た＋ばかり = vừa mới hoàn thành."
+    },
+    {
+      "source": "Time expression থাকলেও speaker judgement: 三か月前に始めたばかりです।",
+      "target": "Dù có biểu thức thời gian vẫn là phán đoán của người nói: 三か月前に始めたばかりです."
+    },
+    {
+      "source": "আমি গত মাসেই এই কোম্পানিতে যোগ দিয়েছি।",
+      "target": "Tôi mới vào công ty này tháng trước."
+    },
+    {
+      "source": "ফোনটি সবে কিনেছি, অথচ নষ্ট হয়ে গেছে।",
+      "target": "Điện thoại mới mua, vậy mà đã hỏng."
+    },
+    {
+      "source": "সবে দুপুরের খাবার খেয়েছি, তাই এখনো পেট ভরা।",
+      "target": "Mới ăn trưa, nên bụng vẫn no."
+    },
+    {
+      "source": "সাম্প্রতিক completion-এ Vた＋ばかり।",
+      "target": "Trong hoàn thành gần đây Vた＋ばかり."
+    },
+    {
+      "source": "জানা তথ্য/যুক্তি অনুযায়ী এমন হওয়ার কথা—strong expectation",
+      "target": "Theo thông tin/lý luận đã biết phải như vậy — kỳ vọng mạnh"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "Động từ/tính từ い-A"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-tính từ"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Danh từ"
+    },
+    {
+      "source": "でしょう অনুমান; はず evidence/plan/logic থেকে stronger ‘হওয়ার কথা’। 時刻表によると、電車は十時に来るはずです।",
+      "target": "でしょう suy đoán; はず mạnh hơn ‘phải’ từ bằng chứng/kế hoạch/logic. 時刻表によると、電車は十時に来るはずです."
+    },
+    {
+      "source": "Vないはず = না হওয়ার কথা। Vるはずがない = হওয়ার কোনো কথাই নেই/অসম্ভব। অবস্থান বদলালে অর্থ উল্টে যায়।",
+      "target": "Vないはず = phải không xảy ra. Vるはずがない = không đời nào xảy ra/không thể. Nếu vị trí thay đổi nghĩa đảo ngược."
+    },
+    {
+      "source": "নিজের simple intention-এ はず নয়: 私は明日行くはずです অস্বাভাবিক, কারণ নিজের plan নিশ্চিত জানি—行く予定です/つもりです। তবে নিজের ওপর বাহ্যিক schedule হলে 私も参加するはずになっています ইত্যাদি সম্ভব।",
+      "target": "Không phải はず trong ý định đơn giản của bản thân: 私は明日行くはずです bất thường, vì biết chắc kế hoạch của mình — 行く予定です/つもりです. Nhưng nếu lịch trình bên ngoài đối với bản thân thì 私も参加するはずになっています v.v. có thể."
+    },
+    {
+      "source": "Expectation ভুল হলে: 来るはずでしたが、来ませんでした।",
+      "target": "Nếu kỳ vọng sai: 来るはずでしたが、来ませんでした."
+    },
+    {
+      "source": "তানাকা কথা দিয়েছেন, তাই আসার কথা।",
+      "target": "Tanaka đã hứa, nên phải đến."
+    },
+    {
+      "source": "আজ রবিবার, তাই ব্যাংক বন্ধ থাকার কথা।",
+      "target": "Hôm nay là Chủ nhật, nên ngân hàng phải đóng cửa."
+    },
+    {
+      "source": "চাবি টেবিলে রেখেছি, তাই সেখানেই থাকার কথা।",
+      "target": "Tôi đã để chìa khóa trên bàn, nên phải ở đó."
+    },
+    {
+      "source": "এত সহজ সমস্যা ভুল করার কথা নয়।",
+      "target": "Vấn đề dễ thế này không thể sai được."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Sự khác biệt trong nháy mắt"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Cái nào trong tình huống nào?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Dạng"
+    },
+    {
+      "source": "Timeline/মানসিকতা",
+      "target": "Dòng thời gian/tâm lý"
+    },
+    {
+      "source": "শুরু হওয়ার ঠিক আগে",
+      "target": "Ngay trước khi bắt đầu"
+    },
+    {
+      "source": "ঠিক মাঝখানে",
+      "target": "Đúng giữa"
+    },
+    {
+      "source": "শেষের ঠিক পরে",
+      "target": "Ngay sau khi kết thúc"
+    },
+    {
+      "source": "speaker-এর কাছে সাম্প্রতিক",
+      "target": "Gần đây đối với người nói"
+    },
+    {
+      "source": "先週/先月-ও সম্ভব",
+      "target": "先週/先月 cũng có thể"
+    },
+    {
+      "source": "তথ্য থেকে expected",
+      "target": "Kỳ vọng từ thông tin"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Hội thoại thực tế"
+    },
+    {
+      "source": "ফোনে কাজের status",
+      "target": "Trạng thái công việc qua điện thoại"
+    },
+    {
+      "source": "রিপোর্ট হয়ে গেছে?",
+      "target": "Báo cáo xong chưa?"
+    },
+    {
+      "source": "এখন শেষ পৃষ্ঠাটি লিখছি।",
+      "target": "Bây giờ tôi đang viết trang cuối."
+    },
+    {
+      "source": "মিটিং তিনটা থেকে। সময়মতো হবে?",
+      "target": "Cuộc họp từ ba giờ. Có kịp không?"
+    },
+    {
+      "source": "জি। আর দশ মিনিটে শেষ হওয়ার কথা।",
+      "target": "Vâng. Phải kết thúc trong mười phút nữa."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Luyện tập và đáp án kèm giải thích"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Trước tiên viết đáp án vào vở, sau đó nhấn vào câu hỏi để đối chiếu đáp án và lý do."
+    },
+    {
+      "source": "1. ‘এখনই বের হতে যাচ্ছি’ বলুন।",
+      "target": "1. Nói ‘bây giờ tôi sắp ra ngoài’."
+    },
+    {
+      "source": "2. ‘এখন ঠিক খাবার খাচ্ছি’ বলুন।",
+      "target": "2. Nói ‘bây giờ tôi đang đúng lúc ăn’."
+    },
+    {
+      "source": "3. ‘এইমাত্র পৌঁছেছি’ বলুন।",
+      "target": "3. Nói ‘tôi vừa mới đến’."
+    },
+    {
+      "source": "4. ‘সবে চাকরি শুরু করেছি’ বলুন।",
+      "target": "4. Nói ‘tôi mới bắt đầu công việc’."
+    },
+    {
+      "source": "5. ‘আজ দোকান খোলা থাকার কথা’ বলুন।",
+      "target": "5. Nói ‘hôm nay cửa hàng phải mở’."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Chìa khóa chính trong một câu"
+    },
+    {
+      "source": "Event-এর আগে/মাঝে/ঠিক পরে = る／ている／た＋ところ; subjective ‘সবে’ = たばかり; জানা তথ্য থেকে ‘হওয়ার কথা’ = はず。",
+      "target": "Trước/giữa/ngay sau sự kiện = る／ている／た＋ところ; ‘mới’ chủ quan = たばかり; ‘phải’ từ thông tin đã biết = はず."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Tài liệu tham khảo đáng tin cậy"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Chương trình và kiểm chứng"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Bài học tiếng Việt độc lập này được tạo bằng cách kết hợp trình tự bài học của Minna no Nihongo II, phạm vi JLPT N4 chính thức và tài nguyên học tập của Japan Foundation. Ví dụ và giải thích tiếng Việt được viết mới."
+    },
+    {
+      "source": "← আগের Lesson 45",
+      "target": "← Bài trước 45"
+    },
+    {
+      "source": "পরের Lesson 47 →",
+      "target": "Bài tiếp theo 47 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Mục lục bài học"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Mục tiêu học tập"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Bảng so sánh"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Hội thoại"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Đang tải tiến độ khóa học…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · Ngữ pháp N4 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Phiên bản tự học tiếng Việt chi tiết, miễn phí cho học sinh."
+    }
+  ]
+}

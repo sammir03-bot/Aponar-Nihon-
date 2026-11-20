@@ -1,0 +1,58 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "N5-Vocabulary",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N5 Vocabulary | আপনার নিহোন",
+      "target": "Từ vựng N5 | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "N5 Vocabulary এর serial lesson list. প্রতিটি page SEO-friendly, mobile-friendly, and PDF-free.",
+      "target": "Danh sách bài học theo thứ tự của Từ vựng N5. Mỗi trang đều thân thiện với SEO, thân thiện với di động và không cần PDF."
+    },
+    {
+      "source": "মোবাইল-ফ্রেন্ডলি",
+      "target": "Thân thiện với di động"
+    },
+    {
+      "source": "সার্চ রেডি",
+      "target": "Sẵn sàng tìm kiếm"
+    },
+    {
+      "source": "প্রগ্রেস ট্র্যাকিং",
+      "target": "Theo dõi tiến độ"
+    },
+    {
+      "source": "N5 Vocabulary এর সব lessons/entries এখানে serial order-এ সাজানো আছে। Homepage design language বজায় রেখে PDF-based system থেকে HTML-based learning page-এ migrate করা হয়েছে।",
+      "target": "Tất cả các bài học/mục của Từ vựng N5 được sắp xếp theo thứ tự tại đây. Giữ nguyên ngôn ngữ thiết kế của trang chủ, hệ thống dựa trên PDF đã được chuyển đổi sang trang học tập dựa trên HTML."
+    },
+    {
+      "source": "Lesson number বা topic লিখে দ্রুত filter করুন।",
+      "target": "Lọc nhanh bằng cách nhập số bài học hoặc chủ đề."
+    },
+    {
+      "source": "একটি lesson/card এ ক্লিক করলে detail page খুলবে।",
+      "target": "Nhấp vào một bài học/thẻ để mở trang chi tiết."
+    },
+    {
+      "source": "N5 Vocabulary এর structured lesson page. PDF এর বদলে student-friendly HTML format.",
+      "target": "Trang bài học có cấu trúc của Từ vựng N5. Định dạng HTML thân thiện với học viên thay vì PDF."
+    },
+    {
+      "source": "১২+ শব্দ",
+      "target": "12+ từ"
+    },
+    {
+      "source": "বাংলা ভাষায় জাপানি শেখার HTML learning system",
+      "target": "Hệ thống học HTML học tiếng Nhật bằng tiếng Việt"
+    }
+  ]
+}

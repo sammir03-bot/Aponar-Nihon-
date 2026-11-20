@@ -1,0 +1,474 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n4-grammar-lesson-44-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Chuyển đến nội dung chính"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 44 · প্রয়োগ ও সূক্ষ্মতা",
+      "target": "Bài 44 · Ứng dụng và tinh tế"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Tất cả bài học"
+    },
+    {
+      "source": "প্রয়োগ ও সূক্ষ্মতা",
+      "target": "Ứng dụng và sự tinh tế"
+    },
+    {
+      "source": "ধাপ ৪ · 41–45",
+      "target": "Bước 4 · 41–45"
+    },
+    {
+      "source": "মাত্রা ছাড়ানো, কাজের গঠনগত সহজ/কঠিনতা, ইচ্ছাকৃতভাবে অবস্থা বদলানো এবং বিকল্প থেকে বেছে নেওয়া।",
+      "target": "Vượt mức độ, tính dễ/khó cấu trúc của việc, cố ý thay đổi trạng thái và chọn từ các lựa chọn."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 khối ngữ pháp chi tiết"
+    },
+    {
+      "source": "13টি Japanese example",
+      "target": "13 ví dụ tiếng Nhật"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 bài luyện tập kèm giải thích"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Thân thiện ngoại tuyến, di động và in ấn"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Ẩn あ phần đọc"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Chưa hoàn thành"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Đánh dấu hoàn thành"
+    },
+    {
+      "source": "Lesson 44 · লক্ষ্য",
+      "target": "Bài 44 · Mục tiêu"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Sau bài này bạn sẽ có thể"
+    },
+    {
+      "source": "Lesson 44 চারটি দৈনন্দিন judgement শেখায়: ‘বেশি হয়ে গেছে’, ‘করা সহজ/কঠিন’, ‘এটাকে এমন করি’, এবং ‘এটাই নেব’। সবগুলোর আগে stem ঠিক করতে পারলেই conjugation সহজ।",
+      "target": "Bài 44 dạy bốn phán đoán hàng ngày: ‘đã quá mức’, ‘dễ/khó làm’, ‘tôi làm cái này thành như vậy’, và ‘tôi sẽ lấy cái này’. Nếu quyết định gốc trước tất cả, chia động từ sẽ dễ."
+    },
+    {
+      "source": "verb/い-A/な-A stem-এর সঙ্গে すぎます জুড়বেন",
+      "target": "Gắn すぎます với gốc động từ/tính từ い/tính từ な"
+    },
+    {
+      "source": "やすい/にくい দিয়ে action-এর সহজতা/কঠিনতা বলবেন",
+      "target": "Nói tính dễ/khó của hành động bằng やすい/にくい"
+    },
+    {
+      "source": "する দিয়ে agent-caused state change প্রকাশ করবেন",
+      "target": "Diễn đạt thay đổi trạng thái do tác nhân bằng する"
+    },
+    {
+      "source": "Nにします দিয়ে menu/option নির্বাচন করবেন",
+      "target": "Chọn menu/lựa chọn bằng Nにします"
+    },
+    {
+      "source": "স্বাভাবিক/কাম্য সীমার চেয়ে অতিরিক্ত",
+      "target": "Quá mức so với giới hạn bình thường/mong muốn"
+    },
+    {
+      "source": "গঠন",
+      "target": "Cấu trúc"
+    },
+    {
+      "source": "ধরন",
+      "target": "Loại"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Ví dụ"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "Động từ"
+    },
+    {
+      "source": "Vます থেকে ます বাদ＋すぎる",
+      "target": "Từ Vます bỏ ます＋すぎる"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-tính từ"
+    },
+    {
+      "source": "শেষ い বাদ＋すぎる",
+      "target": "Bỏ い cuối＋すぎる"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-tính từ"
+    },
+    {
+      "source": "食べなさすぎます／簡単ではなさすぎる (কম ব্যবহৃত)",
+      "target": "食べなさすぎます／簡単ではなさすぎる (ít dùng)"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Giải thích chi tiết"
+    },
+    {
+      "source": "すぎる নিজে Group 2 verb; tense/negative শেষে: 食べすぎました, 高すぎません, 静かすぎて…。",
+      "target": "すぎる tự nó là động từ Nhóm 2; thì/phủ định ở cuối: 食べすぎました, 高すぎません, 静かすぎて…."
+    },
+    {
+      "source": "সাধারণত negative evaluation—মাত্রা সমস্যা করছে। কিন্তু きれいすぎる ‘অবিশ্বাস্য সুন্দর’ প্রশংসামূলক hyperbole-ও হতে পারে।",
+      "target": "Thường là đánh giá tiêu cực — mức độ gây vấn đề. Nhưng きれいすぎる ‘đẹp không thể tin’ cũng có thể là hyperbol khen ngợi."
+    },
+    {
+      "source": "すぎて consequence যুক্ত হয়: 飲みすぎて、頭が痛いです।",
+      "target": "すぎて nối hậu quả: 飲みすぎて、頭が痛いです."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Điều cần nhớ"
+    },
+    {
+      "source": "Verb て-form নয়: 食べてすぎる ✕; 食べすぎる ✓।",
+      "target": "Không phải dạng て của động từ: 食べてすぎる ✕; 食べすぎる ✓."
+    },
+    {
+      "source": "গতকাল বেশি কফি খেয়েছি।",
+      "target": "Hôm qua tôi uống quá nhiều cà phê."
+    },
+    {
+      "source": "ব্যাগটি অতিরিক্ত ভারী, তাই নিতে পারছি না।",
+      "target": "Túi quá nặng, nên tôi không mang được."
+    },
+    {
+      "source": "শহরটি রাতে অতিরিক্ত নীরব।",
+      "target": "Thành phố quá yên tĩnh vào ban đêm."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Sai"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Đúng"
+    },
+    {
+      "source": "কেন:",
+      "target": "Vì sao:"
+    },
+    {
+      "source": "い-বিশেষণের শেষ い বাদ＋すぎます।",
+      "target": "Bỏ い cuối của tính từ い＋すぎます."
+    },
+    {
+      "source": "কাজটি করা সহজ / করা কঠিন—বস্তু বা পরিস্থিতির বৈশিষ্ট্য",
+      "target": "Việc đó dễ làm / khó làm — đặc tính của vật hoặc tình huống"
+    },
+    {
+      "source": "সহজ",
+      "target": "Dễ"
+    },
+    {
+      "source": "কঠিন",
+      "target": "Khó"
+    },
+    {
+      "source": "い-বিশেষণের মতো",
+      "target": "Giống tính từ い"
+    },
+    {
+      "source": "やすい/にくい সাধারণত action-এর objective ease/difficulty বা tendency। このペンは書きやすい = কলমটির design/feel লিখতে সহজ। 私は漢字が書けません = আমার ability সমস্যা—আলাদা।",
+      "target": "やすい/にくい thường là tính dễ/khó khách quan hoặc xu hướng của hành động. このペンは書きやすい = thiết kế/cảm giác của cây bút dễ viết. 私は漢字が書けません = vấn đề khả năng của tôi — khác nhau."
+    },
+    {
+      "source": "ভুল/পরিবর্তনের প্রবণতাও: このコップは割れやすい = সহজে ভেঙে যায়। 忘れやすい = সহজে ভুলে যাওয়ার tendency।",
+      "target": "Cũng là xu hướng sai/thay đổi: このコップは割れやすい = dễ vỡ. 忘れやすい = xu hướng dễ quên."
+    },
+    {
+      "source": "Mental unwillingness-এর にくい nuance থাকতে পারে (言いにくい = বলা awkward), কিন্তু impossible নয়।",
+      "target": "Có thể có sắc thái にくい của sự không muốn trong tâm trí (言いにくい = khó nói/ngại), nhưng không phải không thể."
+    },
+    {
+      "source": "এই পাঠ্যবইয়ের ব্যাখ্যা বোঝা সহজ।",
+      "target": "Giải thích của sách giáo khoa này dễ hiểu."
+    },
+    {
+      "source": "জুতাটি হালকা, তাই হাঁটা সহজ।",
+      "target": "Đôi giày nhẹ, nên đi dễ."
+    },
+    {
+      "source": "কানজিটির আকার মিল বলে মনে রাখা কঠিন।",
+      "target": "Hình dạng của kanji giống nhau nên khó nhớ."
+    },
+    {
+      "source": "জরুরি বিষয় সহজে ভুলে যাই, তাই নোট করি।",
+      "target": "Tôi dễ quên việc quan trọng, nên ghi chú."
+    },
+    {
+      "source": "読みます-এর stem 読み＋やすい।",
+      "target": "Gốc 読み của 読みます＋やすい."
+    },
+    {
+      "source": "কেউ ইচ্ছাকৃতভাবে জিনিসের অবস্থা/গুণ বদলায়",
+      "target": "Ai đó cố ý thay đổi trạng thái/chất lượng của vật"
+    },
+    {
+      "source": "শেষ い→く＋します",
+      "target": "い cuối→く＋します"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Danh từ"
+    },
+    {
+      "source": "なる-তে অবস্থা নিজে/স্বাভাবিকভাবে বদলায়: 部屋が明るくなりました। する-তে agent বদলায়: 電気をつけて、部屋を明るくしました।",
+      "target": "Trong なる trạng thái tự/thay đổi tự nhiên: 部屋が明るくなりました. Trong する tác nhân thay đổi: 電気をつけて、部屋を明るくしました."
+    },
+    {
+      "source": "Object を: 音を小さくしてください = শব্দ ছোট/কম করুন। な-A/N-এ に: 部屋をきれいにします, 会議室を禁煙にします।",
+      "target": "Tân ngữ を: 音を小さくしてください = hãy giảm âm thanh. Trong tính từ な/danh từ là に: 部屋をきれいにします, 会議室を禁煙にします."
+    },
+    {
+      "source": "Adverbial く/に＋する structure; する-এর tense শেষে।",
+      "target": "Cấu trúc trạng từ く/に＋する; thì của する ở cuối."
+    },
+    {
+      "source": "নিজে বদলায় が＋なる; কেউ বদলায় を＋する।",
+      "target": "Tự thay đổi が＋なる; ai đó thay đổi を＋する."
+    },
+    {
+      "source": "অক্ষর আরেকটু বড় করুন।",
+      "target": "Hãy làm chữ lớn hơn một chút."
+    },
+    {
+      "source": "ঘরটি পরিষ্কার করেছি।",
+      "target": "Tôi đã làm sạch phòng."
+    },
+    {
+      "source": "এই বাক্সটিকে বইয়ের তাক বানাব।",
+      "target": "Tôi sẽ biến hộp này thành kệ sách."
+    },
+    {
+      "source": "い-বিশেষণ 小さい→小さく＋する।",
+      "target": "Tính từ い 小さい→小さく＋する."
+    },
+    {
+      "source": "Nにします（পছন্দ নির্বাচন）",
+      "target": "Nにします (chọn lựa chọn)"
+    },
+    {
+      "source": "একাধিক option থেকে N বেছে নেওয়া—‘আমি N নেব/ঠিক করলাম’",
+      "target": "Chọn N từ nhiều lựa chọn — ‘tôi sẽ lấy N/quyết định’"
+    },
+    {
+      "source": "রেস্তোরাঁ, কেনাকাটা, রং/তারিখ/পথ—option বেছে নেওয়ার বহুল রূপ। コーヒーにします = কফিই নেব।",
+      "target": "Dạng thông dụng để chọn lựa chọn — nhà hàng, mua sắm, màu/ngày/đường. コーヒーにします = tôi sẽ lấy cà phê."
+    },
+    {
+      "source": "決めます স্পষ্ট ‘সিদ্ধান্ত নিই’; Nにします কথোপকথনে selection-এর ফল সহজে বলে। Question: 何にしますか = কী নেবেন/কোনটি ঠিক করবেন?",
+      "target": "決めます rõ ràng là ‘quyết định’; Nにします dễ dàng nói kết quả lựa chọn trong hội thoại. Câu hỏi: 何にしますか = bạn sẽ lấy gì/chọn cái nào?"
+    },
+    {
+      "source": "Nにします state-change অর্থও হতে পারে; context object/option দেখে ধরুন: 部屋を教室にします = ঘরকে শ্রেণিকক্ষ বানাই; 飲み物はお茶にします = পানীয় হিসেবে চা নেব।",
+      "target": "Nにします cũng có thể có nghĩa thay đổi trạng thái; hãy xem tân ngữ/lựa chọn trong ngữ cảnh: 部屋を教室にします = biến phòng thành lớp học; 飲み物はお茶にします = lấy trà làm đồ uống."
+    },
+    {
+      "source": "আমি কারি নেব।",
+      "target": "Tôi sẽ lấy cà ri."
+    },
+    {
+      "source": "মিটিং শুক্রবার ঠিক করি।",
+      "target": "Tôi quyết định cuộc họp vào thứ Sáu."
+    },
+    {
+      "source": "রং হিসেবে নীল বেছে নিয়েছি।",
+      "target": "Tôi đã chọn màu xanh làm màu."
+    },
+    {
+      "source": "Option নির্বাচন particle に; を＋する অন্য action বোঝাবে।",
+      "target": "Trợ từ chọn lựa chọn là に; を＋する sẽ chỉ hành động khác."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Sự khác biệt trong nháy mắt"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Cái nào trong tình huống nào?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Dạng"
+    },
+    {
+      "source": "কেন্দ্র",
+      "target": "Trung tâm"
+    },
+    {
+      "source": "সীমা ছাড়ানো",
+      "target": "Vượt giới hạn"
+    },
+    {
+      "source": "অতিরিক্ত দামি",
+      "target": "Quá đắt"
+    },
+    {
+      "source": "কাজের সহজতা",
+      "target": "Tính dễ của việc"
+    },
+    {
+      "source": "পড়া সহজ",
+      "target": "Dễ đọc"
+    },
+    {
+      "source": "agent অবস্থা বদলায়",
+      "target": "Tác nhân thay đổi trạng thái"
+    },
+    {
+      "source": "ঘর উজ্জ্বল করি",
+      "target": "Làm phòng sáng"
+    },
+    {
+      "source": "option নির্বাচন",
+      "target": "Chọn lựa chọn"
+    },
+    {
+      "source": "কফি নিই",
+      "target": "Lấy cà phê"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Hội thoại thực tế"
+    },
+    {
+      "source": "রেস্তোরাঁয় অর্ডার",
+      "target": "Đặt món ở nhà hàng"
+    },
+    {
+      "source": "কী নেবেন?",
+      "target": "Bạn sẽ lấy gì?"
+    },
+    {
+      "source": "এই কারি অতিরিক্ত ঝাল কি?",
+      "target": "Cà ri này có quá cay không?"
+    },
+    {
+      "source": "না। খেতে সহজ/হালকা।",
+      "target": "Không. Dễ ăn/nhẹ."
+    },
+    {
+      "source": "তাহলে কারি নেব। ভাত কম দিন।",
+      "target": "Vậy tôi lấy cà ri. Cho ít cơm."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Luyện tập và đáp án kèm giải thích"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Trước tiên viết đáp án vào vở, sau đó nhấn vào câu hỏi để đối chiếu đáp án và lý do."
+    },
+    {
+      "source": "1. ‘গতকাল বেশি খেয়েছি’ বলুন।",
+      "target": "1. Nói ‘hôm qua tôi ăn quá nhiều’."
+    },
+    {
+      "source": "2. ‘এই কলম দিয়ে লেখা সহজ’ বলুন।",
+      "target": "2. Nói ‘cây bút này dễ viết’."
+    },
+    {
+      "source": "3. ‘শব্দ একটু কম করুন’ বলুন।",
+      "target": "3. Nói ‘hãy giảm âm thanh một chút’."
+    },
+    {
+      "source": "4. ‘আমি চা নেব’ বলুন।",
+      "target": "4. Nói ‘tôi sẽ lấy trà’."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Chìa khóa chính trong một câu"
+    },
+    {
+      "source": "মাত্রা বিচার → すぎる; action-এর designগত ease → やすい/にくい; agent বদলালে Aく/N・なAにする; option বাছলে Nにする।",
+      "target": "Phán đoán mức độ → すぎる; tính dễ thiết kế của hành động → やすい/にくい; nếu tác nhân thay đổi Aく/N・なAにする; nếu chọn lựa chọn Nにする."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Tài liệu tham khảo đáng tin cậy"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Chương trình và kiểm chứng"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Bài học tiếng Việt độc lập này được tạo bằng cách kết hợp trình tự bài học của Minna no Nihongo II, phạm vi JLPT N4 chính thức và tài nguyên học tập của Japan Foundation. Ví dụ và giải thích tiếng Việt được viết mới."
+    },
+    {
+      "source": "← আগের Lesson 43",
+      "target": "← Bài trước 43"
+    },
+    {
+      "source": "পরের Lesson 45 →",
+      "target": "Bài tiếp theo 45 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Mục lục bài học"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Mục tiêu học tập"
+    },
+    {
+      "source": "4. Nにします（পছন্দ নির্বাচন）",
+      "target": "4. Nにします (chọn lựa chọn)"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Bảng so sánh"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Hội thoại"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Đang tải tiến độ khóa học…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · Ngữ pháp N4 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Phiên bản tự học tiếng Việt chi tiết, miễn phí cho học sinh."
+    }
+  ]
+}

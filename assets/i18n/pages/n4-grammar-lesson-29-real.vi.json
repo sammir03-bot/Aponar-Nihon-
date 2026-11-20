@@ -1,0 +1,478 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n4-grammar-lesson-29-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 29: Result State：Vています ও Vてしまいます | N4 Grammar",
+      "target": "Bài 29: Result State: Vています và Vてしまいます | Ngữ pháp N4"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Chuyển đến nội dung chính"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 29 · ভিত্তি বিস্তার",
+      "target": "Bài 29 · Mở rộng nền tảng"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Tất cả bài học"
+    },
+    {
+      "source": "ভিত্তি বিস্তার",
+      "target": "Xây dựng nền tảng"
+    },
+    {
+      "source": "ধাপ ১ · 26–30",
+      "target": "Bước 1 · 26–30"
+    },
+    {
+      "source": "Result State：Vています ও Vてしまいます",
+      "target": "Result State: Vています và Vてしまいます"
+    },
+    {
+      "source": "কোনো পরিবর্তনের পরে বর্তমান অবস্থা, কাজ সম্পূর্ণ শেষ হওয়া এবং অনিচ্ছাকৃত/দুঃখজনক ফল প্রকাশ।",
+      "target": "Trạng thái hiện tại sau một thay đổi, việc hoàn thành hoàn toàn và kết quả không chủ ý/đáng tiếc."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 khối ngữ pháp chi tiết"
+    },
+    {
+      "source": "9টি Japanese example",
+      "target": "9 ví dụ tiếng Nhật"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 bài luyện tập kèm giải thích"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Thân thiện ngoại tuyến, di động và in ấn"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Ẩn あ phần đọc"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Chưa hoàn thành"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Đánh dấu hoàn thành"
+    },
+    {
+      "source": "Lesson 29 · লক্ষ্য",
+      "target": "Bài 29 · Mục tiêu"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Sau bài này bạn sẽ có thể"
+    },
+    {
+      "source": "窓が開いています মানে কেউ এখন জানালা খুলছে না; জানালাটি খোলার পরিবর্তন ঘটেছে এবং ফলটি এখনো আছে। এই ‘result state’ বুঝলে ています-এর বড় একটি রহস্য পরিষ্কার হয়। এরপর てしまいます দেখায় কাজটি পুরো শেষ, অথবা ফলটি বক্তার ইচ্ছার বিরুদ্ধে গেছে।",
+      "target": "窓が開いています không có nghĩa ai đó đang mở cửa sổ bây giờ; thay đổi mở đã xảy ra và kết quả vẫn còn. Hiểu ‘trạng thái kết quả’ này sẽ làm rõ một bí mật lớn của ています. Sau đó てしまいます cho thấy việc đã hoàn toàn kết thúc, hoặc kết quả đi ngược ý muốn của người nói."
+    },
+    {
+      "source": "চলমান কাজ ও result state-এর ています আলাদা করবেন",
+      "target": "Phân biệt ています của hành động đang tiếp diễn và trạng thái kết quả"
+    },
+    {
+      "source": "intransitive verb-এর সঙ্গে が ব্যবহার করে বস্তুর অবস্থা বলবেন",
+      "target": "Nói trạng thái của vật bằng が với động từ nội động"
+    },
+    {
+      "source": "Vてしまいます-এর completion ও regret—দুই অর্থ প্রসঙ্গ থেকে ধরবেন",
+      "target": "Nắm hai nghĩa hoàn thành và hối tiếc của Vてしまいます từ bối cảnh"
+    },
+    {
+      "source": "transitive/intransitive জোড়া দেখে সঠিক verb বাছবেন",
+      "target": "Nhìn cặp transitive/intransitive để chọn động từ đúng"
+    },
+    {
+      "source": "পরিবর্তন ইতিমধ্যে ঘটেছে; তার ফল এখনো রয়েছে",
+      "target": "Thay đổi đã xảy ra; kết quả của nó vẫn còn"
+    },
+    {
+      "source": "গঠন",
+      "target": "Cấu trúc"
+    },
+    {
+      "source": "ধরন",
+      "target": "Loại"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Ví dụ"
+    },
+    {
+      "source": "বস্তু/অবস্থা",
+      "target": "Vật/trạng thái"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Giải thích chi tiết"
+    },
+    {
+      "source": "開く, 閉まる, 壊れる, 消える, 落ちる-এর মতো intransitive verb বস্তু নিজে যে অবস্থায় পৌঁছেছে তা দেখায়। কে কাজটি করেছে, তা গুরুত্বপূর্ণ নয়।",
+      "target": "Các động từ nội động như 開く, 閉まる, 壊れる, 消える, 落ちる cho thấy trạng thái mà vật tự nó đạt đến. Ai đã làm việc đó không quan trọng."
+    },
+    {
+      "source": "今ドアが閉まっています = দরজাটি এখন বন্ধ অবস্থায়। কিন্তু 今、田中さんがドアを閉めています = তানাকা এখন দরজা বন্ধ করছেন—চলমান transitive action।",
+      "target": "今ドアが閉まっています = cửa hiện ở trạng thái đóng. Nhưng 今、田中さんがドアを閉めています = anh Tanaka đang đóng cửa bây giờ — hành động transitive đang tiếp diễn."
+    },
+    {
+      "source": "が নতুন/নিরপেক্ষ অবস্থা উপস্থাপন করে; は contrast বা আলোচ্য বিষয়: 窓は開いていますが、ドアは閉まっています।",
+      "target": "が trình bày trạng thái mới/trung lập; は là đối chiếu hoặc chủ đề đang bàn: 窓は開いていますが、ドアは閉まっています."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Điều cần nhớ"
+    },
+    {
+      "source": "সব ています result state নয়; activity verb 読む/食べる-তে সাধারণত চলমান কাজ।",
+      "target": "Không phải mọi ています đều là trạng thái kết quả; với động từ hoạt động 読む/食べる thường là hành động đang tiếp diễn."
+    },
+    {
+      "source": "ক্লাসরুমের বাতি জ্বালানো/জ্বলে আছে।",
+      "target": "Đèn lớp học đã bật/đang sáng."
+    },
+    {
+      "source": "এই ঘড়িটি নষ্ট অবস্থায় আছে।",
+      "target": "Chiếc đồng hồ này ở trạng thái hỏng."
+    },
+    {
+      "source": "রাস্তায় একটি মানিব্যাগ পড়ে আছে।",
+      "target": "Trên đường có một chiếc ví rơi."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Sai"
+    },
+    {
+      "source": "窓を開いています。（জানালাটি খোলা আছে বলতে）",
+      "target": "窓を開いています. (để nói cửa sổ đang mở)"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Đúng"
+    },
+    {
+      "source": "কেন:",
+      "target": "Vì sao:"
+    },
+    {
+      "source": "বস্তুর result state-এ intransitive 開く এবং particle が। を＋開けています বললে কেউ এখন খুলছে।",
+      "target": "Ở trạng thái kết quả của vật là nội động 開く và trợ từ が. Nếu nói を＋開けています thì ai đó đang mở bây giờ."
+    },
+    {
+      "source": "Transitive বনাম intransitive focus",
+      "target": "Transitive so với intransitive focus"
+    },
+    {
+      "source": "কাজকারীকে দেখাবেন, না ফলের অবস্থাকে—তার ওপর verb ও particle নির্ভর করে",
+      "target": "Động từ và trợ từ phụ thuộc vào việc bạn cho thấy người làm việc, hay trạng thái của kết quả"
+    },
+    {
+      "source": "কাজ",
+      "target": "Công việc"
+    },
+    {
+      "source": "ফল",
+      "target": "Quả / kết quả"
+    },
+    {
+      "source": "Transitive sentence-এ agent ইচ্ছাকৃতভাবে object বদলায়। Intransitive sentence-এ পরিবর্তিত জিনিসটি subject; agent অনুল্লেখিত।",
+      "target": "Trong câu transitive, tác nhân cố ý thay đổi vật. Trong câu intransitive, thứ thay đổi là chủ ngữ; tác nhân không được nhắc."
+    },
+    {
+      "source": "N4-এ বহুল জোড়া: 開ける/開く, 閉める/閉まる, つける/つく, 消す/消える, 壊す/壊れる, 汚す/汚れる, 落とす/落ちる।",
+      "target": "Các cặp thông dụng ở N4: 開ける/開く, 閉める/閉まる, つける/つく, 消す/消える, 壊す/壊れる, 汚す/汚れる, 落とす/落ちる."
+    },
+    {
+      "source": "を দেখলে transitive, が দেখলে intransitive—এটি শক্তিশালী clue, তবে verb-জোড়াও মুখস্থ করুন।",
+      "target": "Thấy を thì transitive, thấy が thì intransitive — đó là manh mối mạnh, nhưng hãy ghi nhớ cả cặp động từ."
+    },
+    {
+      "source": "কেউ প্লেটটি ভেঙেছে। প্লেটটি ভাঙা অবস্থায় আছে।",
+      "target": "Ai đó đã làm vỡ chiếc đĩa. Chiếc đĩa ở trạng thái vỡ."
+    },
+    {
+      "source": "মা আলো নিভিয়েছেন। আলো নিভে আছে।",
+      "target": "Mẹ đã tắt đèn. Đèn đã tắt."
+    },
+    {
+      "source": "閉める transitive; agent দরজা বন্ধ করলে を। দরজার অবস্থা হলে 閉まる＋が।",
+      "target": "閉める là transitive; nếu tác nhân đóng cửa thì を. Nếu là trạng thái của cửa thì 閉まる＋が."
+    },
+    {
+      "source": "Vてしまいます：সম্পূর্ণতা",
+      "target": "Vてしまいます: hoàn thành"
+    },
+    {
+      "source": "কাজটি পুরোপুরি শেষ করে ফেলা/শেষ হয়ে যাওয়া",
+      "target": "Làm xong hoàn toàn việc / việc kết thúc"
+    },
+    {
+      "source": "বর্তমান/ভবিষ্যৎ",
+      "target": "Hiện tại/tương lai"
+    },
+    {
+      "source": "অতীত",
+      "target": "Quá khứ"
+    },
+    {
+      "source": "Completion অর্থে আবেগ থাকা বাধ্যতামূলক নয়। 宿題をしてしまいます বললে ‘হোমওয়ার্কটি একেবারে শেষ করে ফেলব’—শেষ করার দিকটিতে জোর।",
+      "target": "Ở nghĩa hoàn thành, cảm xúc không bắt buộc. 宿題をしてしまいます là ‘tôi sẽ làm xong hoàn toàn bài tập’ — nhấn mạnh phía hoàn thành."
+    },
+    {
+      "source": "よく, 全部, 今日中に-এর মতো শব্দ completion reading-কে শক্ত করে। কাজটি পরিকল্পিত হলেও ব্যবহার করা যায়।",
+      "target": "Các từ như よく, 全部, 今日中に làm mạnh cách đọc hoàn thành. Dù việc đã được lên kế hoạch vẫn có thể dùng."
+    },
+    {
+      "source": "て-form＋しまう conjugate হয়: しまいます／しまいました／しまって。",
+      "target": "Thể て＋しまう chia như sau: しまいます／しまいました／しまって."
+    },
+    {
+      "source": "বইটি আজকের মধ্যেই পুরো পড়ে ফেলব।",
+      "target": "Tôi sẽ đọc xong hoàn toàn cuốn sách trong hôm nay."
+    },
+    {
+      "source": "কেকটি পুরো খেয়ে ফেলেছি।",
+      "target": "Tôi đã ăn hết hoàn toàn chiếc bánh."
+    },
+    {
+      "source": "ব্যাকরণ সম্ভব, তবে completion-এর প্রাসঙ্গিক সীমা/তাগিদ দিলে অর্থ পরিষ্কার হয়।",
+      "target": "Ngữ pháp có thể, nhưng nếu cho giới hạn/hạn chót liên quan đến hoàn thành thì ý nghĩa sẽ rõ."
+    },
+    {
+      "source": "Vてしまいます：অনিচ্ছা/আফসোস",
+      "target": "Vてしまいます: không chủ ý/hối tiếc"
+    },
+    {
+      "source": "ভুল করে, অনিচ্ছায় বা দুঃখজনকভাবে কিছু ঘটে যাওয়া",
+      "target": "Cái gì xảy ra do nhầm lẫn, không chủ ý hoặc đáng tiếc"
+    },
+    {
+      "source": "দুঃখজনক ফল",
+      "target": "Kết quả đáng tiếc"
+    },
+    {
+      "source": "ফলটি বক্তার নিয়ন্ত্রণের বাইরে, ভুলবশত বা অপছন্দনীয় হলে てしまう regret প্রকাশ করে। কণ্ঠস্বর ও প্রসঙ্গ অর্থ স্পষ্ট করে।",
+      "target": "Nếu kết quả ngoài tầm kiểm soát của người nói, do nhầm lẫn hoặc không thích, てしまう diễn đạt sự hối tiếc. Giọng nói và bối cảnh làm rõ ý nghĩa."
+    },
+    {
+      "source": "কথ্য ভাষায় 〜ちゃう／〜じゃう শোনা যায়: 食べてしまう→食べちゃう, 飲んでしまう→飲んじゃう। JLPT form চিনুন; আনুষ্ঠানিক লেখায় পূর্ণ রূপ ব্যবহার করুন।",
+      "target": "Trong ngôn ngữ nói nghe thấy 〜ちゃう／〜じゃう: 食べてしまう→食べちゃう, 飲んでしまう→飲んじゃう. Hãy nhận ra dạng JLPT; trong văn viết trang trọng dùng dạng đầy đủ."
+    },
+    {
+      "source": "কেবল past নয়: また忘れてしまうかもしれません = আবার ভুলে যেতে পারি।",
+      "target": "Không chỉ quá khứ: また忘れてしまうかもしれません = tôi có thể lại quên mất."
+    },
+    {
+      "source": "দুর্ভাগ্যবশত ট্রেনে ব্যাগ ফেলে এসেছি।",
+      "target": "Thật không may tôi đã để quên cặp trên tàu."
+    },
+    {
+      "source": "ভুল করে জরুরি ফাইল মুছে ফেলেছি।",
+      "target": "Tôi đã nhầm xóa mất tập tin quan trọng."
+    },
+    {
+      "source": "নিরপেক্ষ অভ্যাসে しまう লাগে না; অনিচ্ছা বোঝালে 早く起きてしまいます-এর মতো প্রসঙ্গ দরকার।",
+      "target": "Trong thói quen trung lập không cần しまう; để chỉ không chủ ý cần bối cảnh như 早く起きてしまいます."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Sự khác biệt trong nháy mắt"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Cái nào trong tình huống nào?"
+    },
+    {
+      "source": "বাক্য",
+      "target": "Câu"
+    },
+    {
+      "source": "ফোকাস",
+      "target": "Tiêu điểm"
+    },
+    {
+      "source": "অর্থ",
+      "target": "Ý nghĩa"
+    },
+    {
+      "source": "agent-এর চলমান কাজ",
+      "target": "Hành động đang tiếp diễn của tác nhân"
+    },
+    {
+      "source": "তানাকা জানালা খুলছেন",
+      "target": "Anh Tanaka đang mở cửa sổ"
+    },
+    {
+      "source": "ফলের বর্তমান অবস্থা",
+      "target": "Trạng thái hiện tại của kết quả"
+    },
+    {
+      "source": "জানালাটি খোলা আছে",
+      "target": "Cửa sổ đang mở"
+    },
+    {
+      "source": "কাজ সম্পূর্ণ/অনিচ্ছাকৃত",
+      "target": "Việc hoàn thành/không chủ ý"
+    },
+    {
+      "source": "জানালাটি খুলে ফেলেছি",
+      "target": "Tôi đã mở mất cửa sổ"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Hội thoại thực tế"
+    },
+    {
+      "source": "অফিস বন্ধ করার আগে",
+      "target": "Trước khi đóng văn phòng"
+    },
+    {
+      "source": "জানালাটি খোলা আছে।",
+      "target": "Cửa sổ đang mở."
+    },
+    {
+      "source": "সত্যি। বন্ধ করছি।",
+      "target": "Thật vậy. Tôi đang đóng."
+    },
+    {
+      "source": "আলোও জ্বলে আছে।",
+      "target": "Đèn cũng đang sáng."
+    },
+    {
+      "source": "দুঃখিত, নিভাতে ভুলে গিয়েছিলাম।",
+      "target": "Xin lỗi, tôi đã quên tắt."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Luyện tập và đáp án kèm giải thích"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Trước tiên viết đáp án vào vở, sau đó nhấn vào câu hỏi để đối chiếu đáp án và lý do."
+    },
+    {
+      "source": "1. ‘দরজাটি বন্ধ আছে’—閉まる ব্যবহার করুন।",
+      "target": "1. ‘Cửa đang đóng’ — dùng 閉まる."
+    },
+    {
+      "source": "2. ‘কেউ গ্লাসটি ভেঙেছে’—transitive বলুন।",
+      "target": "2. ‘Ai đó đã làm vỡ ly’ — nói transitive."
+    },
+    {
+      "source": "কাজকারী が, object を, transitive 割る।",
+      "target": "Tác nhân が, tân ngữ を, transitive 割る."
+    },
+    {
+      "source": "3. ‘ভুল করে চাবি হারিয়েছি’ বলুন।",
+      "target": "3. Nói ‘tôi đã nhầm làm mất chìa khóa’."
+    },
+    {
+      "source": "অপছন্দনীয় ফল: Vてしまいました।",
+      "target": "Kết quả không thích: Vてしまいました."
+    },
+    {
+      "source": "4. ‘আজ রিপোর্টটি পুরো লিখে ফেলব’ বলুন।",
+      "target": "4. Nói ‘hôm nay tôi sẽ viết xong hoàn toàn báo cáo’."
+    },
+    {
+      "source": "Completion meaning; প্রয়োজনে 今日中に যোগ করা যায়।",
+      "target": "Nghĩa hoàn thành; nếu cần có thể thêm 今日中に."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Chìa khóa chính trong một câu"
+    },
+    {
+      "source": "কে কাজ করছে তা নয়, ‘কোন জিনিস এখন কোন অবস্থায়’—এই প্রশ্ন হলে Nが＋intransitive ています। কাজ পুরো শেষ বা ফল অপছন্দনীয় হলে Vてしまいます।",
+      "target": "Không phải ai đang làm việc, mà là câu hỏi ‘thứ gì hiện ở trạng thái nào’ thì Nが＋nội động ています. Nếu việc hoàn toàn kết thúc hoặc kết quả không thích thì Vてしまいます."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Tài liệu tham khảo đáng tin cậy"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Chương trình và kiểm chứng"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Bài học tiếng Việt độc lập này được tạo bằng cách kết hợp trình tự bài học của Minna no Nihongo II, phạm vi JLPT N4 chính thức và tài nguyên học tập của Japan Foundation. Ví dụ và giải thích tiếng Việt được viết mới."
+    },
+    {
+      "source": "← আগের Lesson 28",
+      "target": "← Bài trước 28"
+    },
+    {
+      "source": "〜ながら・〜し：একসঙ্গে কাজ ও একাধিক কারণ",
+      "target": "〜ながら・〜し: việc đồng thời và nhiều lý do"
+    },
+    {
+      "source": "পরের Lesson 30 →",
+      "target": "Bài tiếp theo 30 →"
+    },
+    {
+      "source": "Preparation：Vてあります ও Vておきます",
+      "target": "Preparation: Vてあります và Vておきます"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Mục lục bài học"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Mục tiêu học tập"
+    },
+    {
+      "source": "2. Transitive বনাম intransitive focus",
+      "target": "2. Transitive so với intransitive focus"
+    },
+    {
+      "source": "3. Vてしまいます：সম্পূর্ণতা",
+      "target": "3. Vてしまいます: hoàn thành"
+    },
+    {
+      "source": "4. Vてしまいます：অনিচ্ছা/আফসোস",
+      "target": "4. Vてしまいます: không chủ ý/hối tiếc"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Bảng so sánh"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Hội thoại"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Đang tải tiến độ khóa học…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · Ngữ pháp N4 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Phiên bản tự học tiếng Việt chi tiết, miễn phí cho học sinh."
+    }
+  ]
+}

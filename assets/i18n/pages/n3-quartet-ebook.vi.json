@@ -1,0 +1,38 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n3-quartet-ebook",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "QUARTET I বাংলা Interactive eBook | আপনার নিহোন",
+      "target": "QUARTET I Sách điện tử tương tác tiếng Bengal | আপনার নিহোন"
+    },
+    {
+      "source": "QUARTET I বাংলা eBook",
+      "target": "QUARTET I Sách điện tử tiếng Bengal"
+    },
+    {
+      "source": "১৩৫ পৃষ্ঠার Interactive Reader প্রস্তুত হচ্ছে…",
+      "target": "Đang chuẩn bị Trình đọc tương tác 135 trang…"
+    },
+    {
+      "source": "Reader load করা যায়নি।",
+      "target": "Không thể tải Trình đọc."
+    },
+    {
+      "source": "QUARTET I-এর গ্রামার সহায়িকা পড়তে পারেন।",
+      "target": "Bạn có thể đọc hướng dẫn ngữ pháp của QUARTET I."
+    },
+    {
+      "source": "৫৫টি গ্রামার পাঠ খুলুন →",
+      "target": "Mở 55 bài học ngữ pháp →"
+    },
+    {
+      "source": "← N3 Learning Center-এ ফিরুন",
+      "target": "← Quay lại Trung tâm học tập N3"
+    }
+  ]
+}
