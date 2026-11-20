@@ -1,0 +1,610 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "my",
+  "page": "n4-vocab-lesson-42-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N4 Vocabulary Lesson 42 | আপনার নিহোন",
+      "target": "N4 Vocabulary Lesson 42 | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "সব লেসন",
+      "target": "Lesson အားလုံး"
+    },
+    {
+      "source": "জাপানিজ শব্দভাণ্ডার",
+      "target": "ဂျပန် ဝေါဟာရ"
+    },
+    {
+      "source": "প্রথমবার পড়া শিক্ষার্থীর জন্য—জাপানিজ, ふりがな, বাংলা উচ্চারণ ও সহজ বাংলা অর্থ একই কার্ডে। সার্চ, অডিও, শেখা মার্ক ও কুইজও আছে।",
+      "target": "ပထမဆုံး ဖတ်သော ကျောင်းသား အတွက်—ဂျပန်, ふりがな, မြန်မာ အသံထွက်နှင့် လွယ်သော မြန်မာ အဓိပ္ပာယ်ကို တူညီသော card မှာ ဖြစ်သည်။ ရှာဖွေခြင်း, အသံ, သင်ယူပြီး အမှတ်နှင့် quiz လည်း ရှိသည်။"
+    },
+    {
+      "source": "শব্দ শেখা শুরু",
+      "target": "စကားလုံး သင်ယူခြင်း စတင်ပါ"
+    },
+    {
+      "source": "কুইজ দিন",
+      "target": "Quiz ဖြေပါ"
+    },
+    {
+      "source": "55টি শব্দ",
+      "target": "55 လုံး"
+    },
+    {
+      "source": "১ম সংস্করণ অনুযায়ী সাজানো",
+      "target": "1st ထုတ်ဝေမှုအရ စီစဉ်ထားသည်"
+    },
+    {
+      "source": "জাপানিজ অডিও",
+      "target": "ဂျပန် အသံ"
+    },
+    {
+      "source": "ডিভাইসের Japanese voice ব্যবহার করে",
+      "target": "device ၏ Japanese voice ကို သုံး၍"
+    },
+    {
+      "source": "০ / 55 শেখা",
+      "target": "0 / 55 သင်ယူပြီး"
+    },
+    {
+      "source": "এই browser-এ progress সংরক্ষিত থাকবে",
+      "target": "ဤ browser မှာ progress သိမ်းဆည်းထားမည်"
+    },
+    {
+      "source": "সব",
+      "target": "အားလုံး"
+    },
+    {
+      "source": "শেখা হয়েছে",
+      "target": "သင်ယူပြီး"
+    },
+    {
+      "source": "বাকি",
+      "target": "ကျန်"
+    },
+    {
+      "source": "55টি দেখানো হচ্ছে",
+      "target": "55 ပြနေသည်"
+    },
+    {
+      "source": "Lesson 42-এর শব্দ",
+      "target": "Lesson 42 ၏ စကားလုံးများ"
+    },
+    {
+      "source": "「—」 চিহ্ন মানে আগের স্বরটি একটু লম্বা করে পড়বেন।",
+      "target": "「—」 အမှတ်က ရှေ့ အသံကို အနည်းငယ် ရှည်လျားစွာ ဖတ်ရမည် ဆိုလိုသည်။"
+    },
+    {
+      "source": "↻ একটি random শব্দ",
+      "target": "↻ random စကားလုံး တစ်လုံး"
+    },
+    {
+      "source": "১ম সংস্করণ",
+      "target": "1st ထုတ်ဝေမှု"
+    },
+    {
+      "source": "উচ্চারণ",
+      "target": "အသံထွက်"
+    },
+    {
+      "source": "ৎসুৎসুমিমাসু",
+      "target": "tsutsumimasu"
+    },
+    {
+      "source": "মোড়াই; প্যাকেট করি",
+      "target": "ထုပ်သည်; packet လုပ်သည်"
+    },
+    {
+      "source": "🔊 শুনুন",
+      "target": "🔊 နားထောင်ပါ"
+    },
+    {
+      "source": "⧉ কপি",
+      "target": "⧉ Copy"
+    },
+    {
+      "source": "○ শেখা বাকি",
+      "target": "○ သင်ယူရန် ကျန်သည်"
+    },
+    {
+      "source": "ওয়াকাশিমাসু",
+      "target": "wakashimasu"
+    },
+    {
+      "source": "ফোটাই; গরম করি",
+      "target": "ပြုတ်သည်; ပူအောင် လုပ်သည်"
+    },
+    {
+      "source": "মাজেমাসু",
+      "target": "mazemasu"
+    },
+    {
+      "source": "মেশাই; মিশ্রণ করি",
+      "target": "ရောသည်; ရောစပ်သည်"
+    },
+    {
+      "source": "কে—সানশিমাসু",
+      "target": "keesanshimasu"
+    },
+    {
+      "source": "হিসাব করি; গণনা করি",
+      "target": "တွက်ချက်သည်; ရေတွက်သည်"
+    },
+    {
+      "source": "আৎসুই",
+      "target": "atsui"
+    },
+    {
+      "source": "পুরু; মোটা",
+      "target": "ထူ; ထူထဲ"
+    },
+    {
+      "source": "উসুই",
+      "target": "usui"
+    },
+    {
+      "source": "পাতলা; হালকা",
+      "target": "ပါး; ပေါ့"
+    },
+    {
+      "source": "বেনগোশি",
+      "target": "bengoshi"
+    },
+    {
+      "source": "আইনজীবী; উকিল",
+      "target": "ရှေ့နေ; ဥပဒေပညာရှင်"
+    },
+    {
+      "source": "ওনগাকুকা",
+      "target": "ongakuka"
+    },
+    {
+      "source": "সঙ্গীতশিল্পী",
+      "target": "ဂီတပညာရှင်"
+    },
+    {
+      "source": "কোদোমোতাচি",
+      "target": "kodomotachi"
+    },
+    {
+      "source": "শিশুরা; বাচ্চারা",
+      "target": "ကလေးများ; မွေးကင်းစများ"
+    },
+    {
+      "source": "ফুতারি",
+      "target": "futari"
+    },
+    {
+      "source": "দুজন",
+      "target": "နှစ်ယောက်"
+    },
+    {
+      "source": "ক্যো—ইকু",
+      "target": "kyooiku"
+    },
+    {
+      "source": "শিক্ষা",
+      "target": "ပညာရေး"
+    },
+    {
+      "source": "রেকিশি",
+      "target": "rekishi"
+    },
+    {
+      "source": "ইতিহাস",
+      "target": "ပညာရေးနှင့် အလုပ်အတွေ့အကြုံ"
+    },
+    {
+      "source": "বুনকা",
+      "target": "bunka"
+    },
+    {
+      "source": "সংস্কৃতি",
+      "target": "ယဉ်ကျေးမှု"
+    },
+    {
+      "source": "শাকাই",
+      "target": "shakai"
+    },
+    {
+      "source": "সমাজ",
+      "target": "လူ့အဖွဲ့အစည်း"
+    },
+    {
+      "source": "হো—রিৎসু",
+      "target": "hooritsu"
+    },
+    {
+      "source": "আইন",
+      "target": "ဥပဒေ"
+    },
+    {
+      "source": "সেনসো—",
+      "target": "sensoo"
+    },
+    {
+      "source": "যুদ্ধ",
+      "target": "စစ်ပွဲ"
+    },
+    {
+      "source": "হে—ওয়া",
+      "target": "heewa"
+    },
+    {
+      "source": "শান্তি",
+      "target": "ငြိမ်းချမ်းရေး"
+    },
+    {
+      "source": "মোকুতেকি",
+      "target": "mokuteki"
+    },
+    {
+      "source": "উদ্দেশ্য; লক্ষ্য",
+      "target": "ရည်ရွယ်ချက်; ပန်းတိုင်"
+    },
+    {
+      "source": "আনজেন",
+      "target": "anzen"
+    },
+    {
+      "source": "নিরাপদ; নিরাপত্তা",
+      "target": "ဘေးကင်း; လုံခြုံရေး"
+    },
+    {
+      "source": "রোনবুন",
+      "target": "ronbun"
+    },
+    {
+      "source": "গবেষণাপত্র; থিসিস",
+      "target": "သုတေသန စာတမ်း; thesis"
+    },
+    {
+      "source": "কানকে—",
+      "target": "kankee"
+    },
+    {
+      "source": "সম্পর্ক",
+      "target": "ဆက်စပ်မှု"
+    },
+    {
+      "source": "মিকিসা—",
+      "target": "mikisaa"
+    },
+    {
+      "source": "মিক্সার",
+      "target": "mixer"
+    },
+    {
+      "source": "ইয়াকান",
+      "target": "yakan"
+    },
+    {
+      "source": "কেটলি",
+      "target": "kettle"
+    },
+    {
+      "source": "সেননুকি",
+      "target": "sennuki"
+    },
+    {
+      "source": "বোতলের ছিপি খোলার যন্ত্র",
+      "target": "ပုလင်း အဖုံး ဖွင့်စက်"
+    },
+    {
+      "source": "কানকিরি",
+      "target": "kankiri"
+    },
+    {
+      "source": "ক্যান ওপেনার",
+      "target": "can opener"
+    },
+    {
+      "source": "কানজুমে",
+      "target": "kanzume"
+    },
+    {
+      "source": "ক্যানজাত খাবার",
+      "target": "သံဘူး အစားအစာ"
+    },
+    {
+      "source": "ফুরোশিকি",
+      "target": "furoshiki"
+    },
+    {
+      "source": "জিনিস মোড়ানোর কাপড়",
+      "target": "ပစ္စည်း ထုပ်ရန် အဝတ်"
+    },
+    {
+      "source": "সোরোবান",
+      "target": "soroban"
+    },
+    {
+      "source": "আবাকাস; জাপানি গণনার যন্ত্র",
+      "target": "abacus; ဂျပန် ရေတွက်စက်"
+    },
+    {
+      "source": "তাইওনকে—",
+      "target": "taionkee"
+    },
+    {
+      "source": "থার্মোমিটার; শরীরের তাপমাত্রা মাপার যন্ত্র",
+      "target": "thermometer; ကိုယ်အပူချိန် တိုင်းစက်"
+    },
+    {
+      "source": "জাইর্যো—",
+      "target": "zairyoo"
+    },
+    {
+      "source": "উপাদান; কাঁচামাল",
+      "target": "ပါဝင်ပစ္စည်း; ကုန်ကြမ်း"
+    },
+    {
+      "source": "ইশি",
+      "target": "ishi"
+    },
+    {
+      "source": "পাথর",
+      "target": "ကျောက်"
+    },
+    {
+      "source": "পিরামিদ্দো",
+      "target": "piramiddo"
+    },
+    {
+      "source": "পিরামিড",
+      "target": "ပိရမစ်"
+    },
+    {
+      "source": "দে—তা",
+      "target": "deeta"
+    },
+    {
+      "source": "ডেটা",
+      "target": "data"
+    },
+    {
+      "source": "ফাইরু",
+      "target": "fairu"
+    },
+    {
+      "source": "ফাইল",
+      "target": "file"
+    },
+    {
+      "source": "আরু ～",
+      "target": "aru ～"
+    },
+    {
+      "source": "কোনো এক ~; একটি নির্দিষ্ট ~",
+      "target": "တစ်စုံတစ်ခု ~; သတ်မှတ်ထားသော ~ တစ်ခု"
+    },
+    {
+      "source": "ইশ্শো—কেনমে—",
+      "target": "isshookenmee"
+    },
+    {
+      "source": "সর্বশক্তি দিয়ে; প্রাণপণে",
+      "target": "အားလုံး သုံး၍; အစွမ်းကုန်"
+    },
+    {
+      "source": "নাজে",
+      "target": "naze"
+    },
+    {
+      "source": "কেন?",
+      "target": "ဘာကြောင့်?"
+    },
+    {
+      "source": "কোকুরেন",
+      "target": "kokuren"
+    },
+    {
+      "source": "জাতিসংঘ",
+      "target": "ကုလသမဂ္ဂ"
+    },
+    {
+      "source": "এরি—জেনো তামেনি",
+      "target": "eriize no tame ni"
+    },
+    {
+      "source": "এলিসের জন্য (সঙ্গীতের নাম)",
+      "target": "Elise အတွက် (ဂီတ၏ အမည်)"
+    },
+    {
+      "source": "বে—তো—বেন",
+      "target": "beetooben"
+    },
+    {
+      "source": "বেটোফেন (ব্যক্তির নাম)",
+      "target": "Beethoven (လူ၏ အမည်)"
+    },
+    {
+      "source": "পো—রানদো",
+      "target": "poorando"
+    },
+    {
+      "source": "পোল্যান্ড",
+      "target": "Poland"
+    },
+    {
+      "source": "রো—ন",
+      "target": "roon"
+    },
+    {
+      "source": "ঋণ; কিস্তি",
+      "target": "ချေးငွေ; အရစ်ကျ"
+    },
+    {
+      "source": "সেত্তো",
+      "target": "setto"
+    },
+    {
+      "source": "সেট; জোড়া",
+      "target": "set; အစုံ"
+    },
+    {
+      "source": "আতো",
+      "target": "ato"
+    },
+    {
+      "source": "আরও; বাকি",
+      "target": "နောက်ထပ်; ကျန်ရှိ"
+    },
+    {
+      "source": "কাপ্পুরা—মেন",
+      "target": "kappu raamen"
+    },
+    {
+      "source": "কাপ রামেন; কাপ নুডলস",
+      "target": "cup ramen; cup noodles"
+    },
+    {
+      "source": "ইনসুতানতোরা—মেন",
+      "target": "insutanto raamen"
+    },
+    {
+      "source": "ইনস্ট্যান্ট রামেন",
+      "target": "instant ramen"
+    },
+    {
+      "source": "নাবে",
+      "target": "nabe"
+    },
+    {
+      "source": "হাঁড়ি; পাত্র",
+      "target": "အိုး; ခွက်"
+    },
+    {
+      "source": "দোনবুরি",
+      "target": "donburi"
+    },
+    {
+      "source": "বড় বাটি; ডনবুরি বাটি",
+      "target": "ပန်းကန် ကြီး; donburi ပန်းကန်"
+    },
+    {
+      "source": "শোকুহিন",
+      "target": "shokuhin"
+    },
+    {
+      "source": "খাদ্যদ্রব্য",
+      "target": "အစားအစာ"
+    },
+    {
+      "source": "চো—সা",
+      "target": "choosa"
+    },
+    {
+      "source": "তদন্ত; জরিপ",
+      "target": "စုံစမ်းခြင်း; စစ်တမ်း"
+    },
+    {
+      "source": "কাপ্পু",
+      "target": "kappu"
+    },
+    {
+      "source": "কাপ",
+      "target": "ခွက်"
+    },
+    {
+      "source": "মাতা",
+      "target": "mata"
+    },
+    {
+      "source": "আবার; এছাড়াও",
+      "target": "ထပ်မံ; ထို့အပြင်"
+    },
+    {
+      "source": "～নো কাওয়ারিনি",
+      "target": "～no kawari ni"
+    },
+    {
+      "source": "~ এর পরিবর্তে",
+      "target": "~ အစား"
+    },
+    {
+      "source": "দোকোদেদেমো",
+      "target": "doko de demo"
+    },
+    {
+      "source": "যেকোনো জায়গায়",
+      "target": "နေရာတိုင်း"
+    },
+    {
+      "source": "ইমাদেহা",
+      "target": "ima dewa"
+    },
+    {
+      "source": "এখন; বর্তমানে",
+      "target": "ယခု; လက်ရှိ"
+    },
+    {
+      "source": "কোনো শব্দ পাওয়া যায়নি।",
+      "target": "စကားလုံး မတွေ့ပါ။"
+    },
+    {
+      "source": "অন্য বানান বা বাংলা অর্থ দিয়ে চেষ্টা করুন।",
+      "target": "အခြား စာလုံးပေါင်း သို့မဟုတ် မြန်မာ အဓိပ္ပာယ်ဖြင့် ကြိုးစားပါ။"
+    },
+    {
+      "source": "১০ প্রশ্ন • দুই ধরনের অনুশীলন",
+      "target": "10 မေးခွန်း • လေ့ကျင့်ခန်း နှစ်မျိုး"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "ကိုယ့်ကိုယ်ကို စစ်ဆေးပါ"
+    },
+    {
+      "source": "কখনো জাপানিজ দেখে বাংলা অর্থ, আবার কখনো বাংলা দেখে সঠিক জাপানিজ বেছে নিন। প্রতিবার নতুন random প্রশ্ন আসবে।",
+      "target": "တစ်ခါတစ်ရံ ဂျပန် မြင်၍ မြန်မာ အဓိပ္ပာယ်, တစ်ခါတစ်ရံ မြန်မာ မြင်၍ မှန်ကန်သော ဂျပန်ကို ရွေးပါ။ အကြိမ်တိုင်း random မေးခွန်း အသစ် လာမည်။"
+    },
+    {
+      "source": "নতুন কুইজ শুরু",
+      "target": "Quiz အသစ် စတင်ပါ"
+    },
+    {
+      "source": "প্রশ্ন ১ / ১০",
+      "target": "မေးခွန်း 1 / 10"
+    },
+    {
+      "source": "স্কোর ০",
+      "target": "ရမှတ် 0"
+    },
+    {
+      "source": "পরের প্রশ্ন",
+      "target": "နောက် မေးခွန်း"
+    },
+    {
+      "source": "তালিকা নোট:",
+      "target": "စာရင်း မှတ်စု:"
+    },
+    {
+      "source": "আপনার দেওয়া পুরোনো ফাইলের সঙ্গে মিল রেখে Minna no Nihongo Shokyu II-এর ১ম সংস্করণের lesson order ব্যবহার করা হয়েছে। OCR-এ ভাঙা কানা, duplicate example এবং ভুল বাংলা অর্থ বাদ দিয়ে entry-গুলো নতুন করে তৈরি করা হয়েছে। এটি শিক্ষার্থীর সহায়ক free resource; মূল বইয়ের বিকল্প নয়।",
+      "target": "သင် ပေးသော ဖိုင် အဟောင်းနှင့် တိုက်ဆိုင်၍ Minna no Nihongo Shokyu II ၏ 1st ထုတ်ဝေမှု၏ lesson order ကို သုံးထားသည်။ OCR မှာ ပျက်သော kana, duplicate example နှင့် မှားသော မြန်မာ အဓိပ္ပာယ်ကို ဖယ်၍ entry များကို အသစ် ဖန်တီးထားသည်။ ၎င်းက ကျောင်းသား၏ အထောက်အကူ free resource; မူရင်း စာအုပ်၏ အစားထိုး မဟုတ်ပါ။"
+    },
+    {
+      "source": "আগের লেসন",
+      "target": "အရင် Lesson"
+    },
+    {
+      "source": "সব N4 লেসন",
+      "target": "N4 Lesson အားလုံး"
+    },
+    {
+      "source": "পরের লেসন",
+      "target": "နောက် Lesson"
+    },
+    {
+      "source": "আপনার নিহোন • শিক্ষার্থীদের জন্য সহজ বাংলা জাপানিজ শিক্ষা",
+      "target": "আপনার নিহোন • ကျောင်းသားများ အတွက် လွယ်သော မြန်မာ ဂျပန် ပညာရေး"
+    }
+  ]
+}
