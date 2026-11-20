@@ -59,6 +59,22 @@
   var runtimeEnabled = !/^(?:localhost|127\.0\.0\.1|0\.0\.0\.0)$/i.test(window.location.hostname)
     || window.__APONAR_I18N_RUNTIME__ === true;
 
+  // Pages the builder rendered from reviewed packs are already fully
+  // translated: their locale is the URL's first segment and/or the
+  // document's non-Bengali language preset (the same signals i18n.js
+  // languageFromPath uses). On such a page the runtime translator stands
+  // down completely — no full-page pass and no progress toast — while
+  // Bengali master pages keep the runtime fallback for pages that have
+  // no static version yet.
+  function staticRouteLanguage() {
+    var preset = document.documentElement.dataset.languagePreset || "";
+    if (preset && preset !== "bn" && window.AponarI18n.languages[preset]) return preset;
+    var first = (window.location.pathname || "/").split("/").filter(Boolean)[0] || "";
+    try { first = decodeURIComponent(first); } catch (_error) { /* Keep the raw segment. */ }
+    return first && first !== "bn" && window.AponarI18n.languages[first] ? first : "";
+  }
+  var staticLocalized = staticRouteLanguage() !== "";
+
   function pageKey() {
     var path = window.location.pathname || "/";
     var explicit = document.documentElement.dataset.i18nPage || "";
@@ -464,6 +480,14 @@
   }
 
   async function runSync(blocking) {
+    if (staticLocalized) {
+      // Static localized page: the builder already rendered every string
+      // from the reviewed pack, so there is nothing to sync and the
+      // progress indicator must never appear.
+      document.documentElement.dataset.i18nReady = "true";
+      hideStatus();
+      return;
+    }
     // `blocking` is accepted for API compatibility with earlier callers, but
     // a sync never blocks the page any more: cached and dictionary
     // translations are applied first, the page stays visible and usable,
@@ -608,7 +632,7 @@
     });
   }
 
-  if (window.AponarI18n.getLanguage() !== "bn") captureOriginals(document.documentElement);
+  if (!staticLocalized && window.AponarI18n.getLanguage() !== "bn") captureOriginals(document.documentElement);
   window.AponarI18nContent = {
     pageKey: pageKey, reload: function () { return sync(true); }, restore: restoreCaptured, translateText: translateText,
     alert: function (message) { return localizedDialog(message, false); }, confirm: function (message) { return localizedDialog(message, true); },
@@ -617,6 +641,13 @@
   window.alert = function (message) { window.AponarI18nContent.alert(message); };
 
   function startRuntime(blocking) {
+    if (staticLocalized) {
+      // Static localized page: open ready, exactly as the builder
+      // rendered it. No capture, no observer, no sync, no toast.
+      document.documentElement.dataset.i18nReady = "true";
+      hideStatus();
+      return;
+    }
     if (window.AponarI18n.getLanguage() === "bn") {
       restoreCaptured();
       clearPending();
