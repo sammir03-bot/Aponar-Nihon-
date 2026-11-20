@@ -927,6 +927,7 @@
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script>
+function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"v4.progressLine": "{a} / {b} শেখা", "v4.learned": "✓ শেখা হয়েছে", "v4.notLearned": "○ শেখা বাকি", "v4.showing": "{n}টি দেখানো হচ্ছে", "v4.noAudio": "এই browser-এ Japanese audio নেই", "v4.noWords": "দেখানোর মতো কোনো শব্দ নেই", "v4.quizDoneScore": "কুইজ শেষ! আপনার স্কোর {s} / {t}", "v4.mastered": "দারুণ! এই লেসনটি ভালোভাবে আয়ত্ত হয়েছে।", "v4.retryAdvice": "আরেকবার শব্দগুলো দেখে নতুন কুইজ দিন।", "v4.completed": "সম্পন্ন", "v4.whichJpTail": " — সঠিক জাপানিজ কোনটি?", "v4.meaningTail": " এর বাংলা অর্থ কী?", "v4.correctPron": "সঠিক ✓  উচ্চারণ: ", "v4.correctAnswer": "সঠিক উত্তর: ", "v4.pronSuffix": " • উচ্চারণ: ", "v4.score": "স্কোর {n}", "v4.copied": "শব্দটি copy হয়েছে", "qn.step": "প্রশ্ন {a} / {b}"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}function nfmt(x){return dynLang()==='bn'?(+x).toLocaleString('bn-BD'):String(x);}
   (() => {
     'use strict';
     const LESSON = 29;
@@ -966,14 +967,14 @@
     }
     function updateProgress() {
       const count = learned.size;
-      progressText.textContent = count.toLocaleString('bn-BD') + ' / ' + words.length.toLocaleString('bn-BD') + ' শেখা';
+      progressText.textContent = dynT('v4.progressLine', {a: nfmt(count), b: nfmt(words.length)});
       progressFill.style.width = (words.length ? (count / words.length) * 100 : 0) + '%';
       words.forEach((word) => {
         const isLearned = learned.has(word.id);
         word.card.classList.toggle('is-learned', isLearned);
         const button = word.card.querySelector('.learn-btn');
         button.setAttribute('aria-pressed', String(isLearned));
-        button.textContent = isLearned ? '✓ শেখা হয়েছে' : '○ শেখা বাকি';
+        button.textContent = isLearned ? dynT('v4.learned') : dynT('v4.notLearned');
       });
     }
     function applyFilters() {
@@ -987,11 +988,11 @@
         word.card.hidden = !show;
         if (show) visible += 1;
       });
-      resultCount.textContent = visible.toLocaleString('bn-BD') + 'টি দেখানো হচ্ছে';
+      resultCount.textContent = dynT('v4.showing', {n: nfmt(visible)});
       emptyState.classList.toggle('show', visible === 0);
     }
     function speakJapanese(text) {
-      if (!('speechSynthesis' in window) || !text) { showToast('এই browser-এ Japanese audio নেই'); return; }
+      if (!('speechSynthesis' in window) || !text) { showToast(dynT('v4.noAudio')); return; }
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.lang = 'ja-JP'; utterance.rate = 0.78; utterance.pitch = 1;
@@ -1001,10 +1002,10 @@
       const text = word.japanese + '（' + word.reading + '） — ' + word.pronunciation + ' — ' + word.meaning;
       try {
         await navigator.clipboard.writeText(text);
-        showToast('শব্দটি copy হয়েছে');
+        showToast(dynT('v4.copied'));
       } catch (_) {
         const area = document.createElement('textarea'); area.value = text; area.style.position = 'fixed'; area.style.opacity = '0';
-        document.body.appendChild(area); area.select(); document.execCommand('copy'); area.remove(); showToast('শব্দটি copy হয়েছে');
+        document.body.appendChild(area); area.select(); document.execCommand('copy'); area.remove(); showToast(dynT('v4.copied'));
       }
     }
 
@@ -1028,7 +1029,7 @@
     }));
     document.getElementById('randomWord').addEventListener('click', () => {
       const visible = words.filter((word) => !word.card.hidden);
-      if (!visible.length) { showToast('দেখানোর মতো কোনো শব্দ নেই'); return; }
+      if (!visible.length) { showToast(dynT('v4.noWords')); return; }
       const word = visible[Math.floor(Math.random() * visible.length)];
       word.card.scrollIntoView({behavior:'smooth',block:'center'});
       if (word.card.animate) word.card.animate([{outline:'4px solid rgba(245,158,11,.8)'},{outline:'0 solid transparent'}],{duration:1200});
@@ -1062,14 +1063,14 @@
     }
     function renderQuestion() {
       if (quizIndex >= quizWords.length) {
-        quizQuestion.textContent = 'কুইজ শেষ! আপনার স্কোর ' + score.toLocaleString('bn-BD') + ' / ' + quizWords.length.toLocaleString('bn-BD');
-        quizOptions.replaceChildren(); quizFeedback.textContent = score >= 8 ? 'দারুণ! এই লেসনটি ভালোভাবে আয়ত্ত হয়েছে।' : 'আরেকবার শব্দগুলো দেখে নতুন কুইজ দিন।';
-        quizStep.textContent = 'সম্পন্ন'; nextQuestion.hidden = true; return;
+        quizQuestion.textContent = dynT('v4.quizDoneScore', {s: nfmt(score), t: nfmt(quizWords.length)});
+        quizOptions.replaceChildren(); quizFeedback.textContent = score >= 8 ? dynT('v4.mastered') : dynT('v4.retryAdvice');
+        quizStep.textContent = dynT('v4.completed'); nextQuestion.hidden = true; return;
       }
       answered = false; nextQuestion.hidden = true; quizFeedback.textContent = ''; quizOptions.replaceChildren();
       const current = quizWords[quizIndex]; const reverse = quizIndex % 2 === 1;
       const answer = reverse ? current.japanese : current.meaning;
-      quizQuestion.textContent = reverse ? '“' + current.meaning + '” — সঠিক জাপানিজ কোনটি?' : '「' + current.japanese + '（' + current.reading + '）」 এর বাংলা অর্থ কী?';
+      quizQuestion.textContent = reverse ? '“' + current.meaning + '”' + dynT('v4.whichJpTail') : '「' + current.japanese + '（' + current.reading + '）」' + dynT('v4.meaningTail');
       const pool = shuffle(words.filter((word) => word.id !== current.id));
       const choices = [answer];
       for (const word of pool) {
@@ -1082,14 +1083,14 @@
         button.addEventListener('click', () => {
           if (answered) return; answered = true;
           quizOptions.querySelectorAll('button').forEach((item) => { item.disabled = true; if (item.textContent === answer) item.classList.add('correct'); });
-          if (choice === answer) { score += 1; button.classList.add('correct'); quizFeedback.textContent = 'সঠিক ✓  উচ্চারণ: ' + current.pronunciation; }
-          else { button.classList.add('wrong'); quizFeedback.textContent = 'সঠিক উত্তর: ' + answer + ' • উচ্চারণ: ' + current.pronunciation; }
-          quizScore.textContent = 'স্কোর ' + score.toLocaleString('bn-BD'); nextQuestion.hidden = false;
+          if (choice === answer) { score += 1; button.classList.add('correct'); quizFeedback.textContent = dynT('v4.correctPron') + current.pronunciation; }
+          else { button.classList.add('wrong'); quizFeedback.textContent = dynT('v4.correctAnswer') + answer + dynT('v4.pronSuffix') + current.pronunciation; }
+          quizScore.textContent = dynT('v4.score', {n: nfmt(score)}); nextQuestion.hidden = false;
         });
         quizOptions.appendChild(button);
       });
-      quizStep.textContent = 'প্রশ্ন ' + (quizIndex + 1).toLocaleString('bn-BD') + ' / ' + quizWords.length.toLocaleString('bn-BD');
-      quizScore.textContent = 'স্কোর ' + score.toLocaleString('bn-BD');
+      quizStep.textContent = dynT('qn.step', {a: nfmt(quizIndex + 1), b: nfmt(quizWords.length)});
+      quizScore.textContent = dynT('v4.score', {n: nfmt(score)});
     }
     nextQuestion.addEventListener('click', () => { quizIndex += 1; renderQuestion(); });
     document.getElementById('restartQuiz').addEventListener('click', startQuiz);

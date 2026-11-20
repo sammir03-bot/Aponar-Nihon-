@@ -1097,6 +1097,7 @@ button{color:inherit}
     </div>
   </footer>
   <script>
+function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"hb.lessonsDone": "{done}/{total} lesson সম্পন্ন", "hb.continue": "শেখা চালিয়ে যান", "hb.startFirst": "প্রথম Lesson শুরু করুন", "hb.foundSuffix": "টি lesson পাওয়া গেছে", "hb.showingSuffix": "টি lesson দেখানো হচ্ছে"};
 (function(){
   'use strict';
   var body = document.body;
@@ -1155,7 +1156,7 @@ button{color:inherit}
     var percent = total ? Math.round(done / total * 100) : 0;
     progressRing.style.setProperty('--progress',percent);
     ringNumber.textContent = percent + '%';
-    progressCopy.textContent = done + '/' + total + ' lesson সম্পন্ন';
+    progressCopy.textContent = dynT('hb.lessonsDone', {done: done, total: total});
     completeStat.textContent = done;
     remainingStat.textContent = remaining;
     cards.forEach(function(card){card.classList.toggle('is-complete',isDone(card));});
@@ -1166,7 +1167,7 @@ button{color:inherit}
     if(target){
       continueButton.href = target.dataset.href;
       continueButton.dataset.lesson = target.dataset.lesson;
-      continueButton.querySelector('.continue-copy').textContent = done ? 'শেখা চালিয়ে যান' : 'প্রথম Lesson শুরু করুন';
+      continueButton.querySelector('.continue-copy').textContent = done ? dynT('hb.continue') : dynT('hb.startFirst');
     }
   }
   function applyFilters(){
@@ -1182,7 +1183,7 @@ button{color:inherit}
       if(visible){shown += 1;}
     });
     resultNumber.textContent = shown;
-    resultText.textContent = shown === 1 ? 'টি lesson পাওয়া গেছে' : 'টি lesson দেখানো হচ্ছে';
+    resultText.textContent = shown === 1 ? dynT('hb.foundSuffix') : dynT('hb.showingSuffix');
     emptyState.classList.toggle('show',shown === 0);
     clearSearch.classList.toggle('show',Boolean(query));
   }
