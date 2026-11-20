@@ -1,0 +1,38 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "hi",
+  "page": "n3-quartet-ebook",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "QUARTET I বাংলা Interactive eBook | আপনার নিহোন",
+      "target": "QUARTET I हिंदी Interactive eBook | আপনার নিহোন"
+    },
+    {
+      "source": "QUARTET I বাংলা eBook",
+      "target": "QUARTET I हिंदी eBook"
+    },
+    {
+      "source": "১৩৫ পৃষ্ঠার Interactive Reader প্রস্তুত হচ্ছে…",
+      "target": "135 पृष्ठों का Interactive Reader तैयार हो रहा है…"
+    },
+    {
+      "source": "Reader load করা যায়নি।",
+      "target": "Reader load नहीं किया जा सका।"
+    },
+    {
+      "source": "QUARTET I-এর গ্রামার সহায়িকা পড়তে পারেন।",
+      "target": "QUARTET I की ग्रामर सहायिका पढ़ सकते हैं।"
+    },
+    {
+      "source": "৫৫টি গ্রামার পাঠ খুলুন →",
+      "target": "55 ग्रामर पाठ खोलें →"
+    },
+    {
+      "source": "← N3 Learning Center-এ ফিরুন",
+      "target": "← N3 Learning Center पर लौटें"
+    }
+  ]
+}
