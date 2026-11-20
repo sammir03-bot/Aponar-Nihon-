@@ -1,0 +1,286 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n5-grammar",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N5 Grammar | আপনার নিহোন",
+      "target": "N5 Grammar | আপনার নিহোন"
+    },
+    {
+      "source": "Lesson তালিকায় যান",
+      "target": "Đến danh sách bài học"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "হোম",
+      "target": "Trang chủ"
+    },
+    {
+      "source": "ভিত্তি থেকে আত্মবিশ্বাস",
+      "target": "Tự tin từ nền tảng cơ bản"
+    },
+    {
+      "source": "২৫টি ধাপে জাপানি বাক্য গঠন, particle, verb form ও প্রয়োজনীয় grammar বাংলা ব্যাখ্যায় আয়ত্ত করুন।",
+      "target": "Làm chủ 25 bước cấu trúc câu tiếng Nhật, trợ từ, thể động từ và ngữ pháp cần thiết qua giải thích tiếng Việt."
+    },
+    {
+      "source": "প্রথম Lesson শুরু করুন",
+      "target": "Bắt đầu bài học đầu tiên"
+    },
+    {
+      "source": "Lesson খুঁজুন",
+      "target": "Tìm kiếm bài học"
+    },
+    {
+      "source": "আমার অগ্রগতি",
+      "target": "Tiến độ của tôi"
+    },
+    {
+      "source": "সম্পন্ন",
+      "target": "hoàn thành"
+    },
+    {
+      "source": "0/25 lesson সম্পন্ন",
+      "target": "0/25 bài học hoàn thành"
+    },
+    {
+      "source": "শেষ করা lesson-এ ✓ দিন। এই device-এ আপনার progress স্বয়ংক্রিয়ভাবে সংরক্ষিত থাকবে।",
+      "target": "Đánh dấu ✓ vào bài học đã hoàn thành. Tiến độ của bạn sẽ được tự động lưu trên thiết bị này."
+    },
+    {
+      "source": "মোট LESSON",
+      "target": "TỔNG SỐ BÀI HỌC"
+    },
+    {
+      "source": "বাকি",
+      "target": "Còn lại"
+    },
+    {
+      "source": "Lesson নম্বর বেছে নিন",
+      "target": "Chọn số bài học"
+    },
+    {
+      "source": "দেখুন",
+      "target": "Xem"
+    },
+    {
+      "source": "সব",
+      "target": "Tất cả"
+    },
+    {
+      "source": "পুরো কোর্স",
+      "target": "Toàn bộ khóa học"
+    },
+    {
+      "source": "পরিচয় ও ভিত্তি",
+      "target": "Giới thiệu & Nền tảng"
+    },
+    {
+      "source": "দৈনন্দিন বাক্য",
+      "target": "Câu nói hàng ngày"
+    },
+    {
+      "source": "রূপ ও নিয়ম",
+      "target": "Hình thức & Quy tắc"
+    },
+    {
+      "source": "প্রয়োগ ও সংযোগ",
+      "target": "Ứng dụng & Kết nối"
+    },
+    {
+      "source": "আপনার Lesson বেছে নিন",
+      "target": "Chọn bài học của bạn"
+    },
+    {
+      "source": "নম্বর, Japanese pattern অথবা বাংলা বিষয় দিয়ে search করুন। Range ও progress filter ব্যবহার করে প্রয়োজনীয় lesson দ্রুত খুলুন।",
+      "target": "Tìm kiếm bằng số, mẫu câu tiếng Nhật hoặc chủ đề. Sử dụng bộ lọc khoảng và tiến độ để nhanh chóng mở bài học cần thiết."
+    },
+    {
+      "source": "টি lesson দেখানো হচ্ছে",
+      "target": "Hiển thị bài học"
+    },
+    {
+      "source": "ধাপ 1 · পরিচয় ও ভিত্তি",
+      "target": "Bước 1 · Giới thiệu & Nền tảng"
+    },
+    {
+      "source": "নিজের পরিচয় ও basic statement/question তৈরি।",
+      "target": "Tự giới thiệu bản thân và tạo câu/câu hỏi cơ bản."
+    },
+    {
+      "source": "文法 · ব্যাকরণ",
+      "target": "文法 · Ngữ pháp"
+    },
+    {
+      "source": "Lesson খুলুন",
+      "target": "Mở bài học"
+    },
+    {
+      "source": "জিনিস দেখিয়ে বলা, জিজ্ঞাসা করা ও ownership।",
+      "target": "Chỉ vật để nói, đặt câu hỏi và quyền sở hữu."
+    },
+    {
+      "source": "স্থান, দিক, ভবন ও দাম নিয়ে বাক্য।",
+      "target": "Câu về địa điểm, hướng, tòa nhà và giá cả."
+    },
+    {
+      "source": "সময়, তারিখ ও polite verb present/past।",
+      "target": "Thời gian, ngày tháng và thể lịch sự của động từ (hiện tại/quá khứ)."
+    },
+    {
+      "source": "যাওয়া/আসা/ফেরা, যানবাহন ও সঙ্গী।",
+      "target": "Đi/Đến/Về, phương tiện giao thông và người đồng hành."
+    },
+    {
+      "source": "ধাপ 2 · দৈনন্দিন বাক্য",
+      "target": "Bước 2 · Câu nói hàng ngày"
+    },
+    {
+      "source": "কাজ করা, invitation ও suggestion।",
+      "target": "Làm việc, lời mời và gợi ý."
+    },
+    {
+      "source": "উপকরণ/ভাষা দিয়ে কাজ ও দেওয়া-নেওয়া।",
+      "target": "Làm việc bằng công cụ/ngôn ngữ và cho-nhận."
+    },
+    {
+      "source": "adjective দিয়ে মানুষ/জিনিস বর্ণনা।",
+      "target": "Miêu tả người/vật bằng tính từ."
+    },
+    {
+      "source": "পছন্দ, দক্ষতা, বোঝা ও কারণ বলা।",
+      "target": "Nói về sở thích, kỹ năng, sự hiểu biết và lý do."
+    },
+    {
+      "source": "কোথায় কী আছে—existence sentence।",
+      "target": "Cái gì ở đâu—câu chỉ sự tồn tại."
+    },
+    {
+      "source": "ধাপ 3 · রূপ ও নিয়ম",
+      "target": "Bước 3 · Hình thức & Quy tắc"
+    },
+    {
+      "source": "গণনা, সময়কাল ও frequency।",
+      "target": "Đếm số, khoảng thời gian và tần suất."
+    },
+    {
+      "source": "past tense adjective/noun এবং comparison।",
+      "target": "Tính từ/danh từ thì quá khứ và so sánh."
+    },
+    {
+      "source": "ইচ্ছা ও উদ্দেশ্য নিয়ে বাক্য।",
+      "target": "Câu nói về mong muốn và mục đích."
+    },
+    {
+      "source": "অনুরোধ, চলমান কাজ ও offer।",
+      "target": "Yêu cầu, hành động đang diễn ra và lời đề nghị."
+    },
+    {
+      "source": "অনুমতি, নিষেধ ও ongoing state।",
+      "target": "Sự cho phép, điều cấm kỵ và trạng thái đang diễn ra."
+    },
+    {
+      "source": "ধাপ 4 · Verb forms",
+      "target": "Bước 4 · Thể của động từ"
+    },
+    {
+      "source": "পরপর কাজ ও adjective/noun সংযোগ।",
+      "target": "Hành động liên tiếp và kết nối tính từ/danh từ."
+    },
+    {
+      "source": "নিষেধ, বাধ্যতা ও না করলেও চলে।",
+      "target": "Sự cấm đoán, nghĩa vụ và không làm cũng không sao."
+    },
+    {
+      "source": "ability, hobby এবং before structure।",
+      "target": "Khả năng, sở thích và cấu trúc trước khi làm gì đó."
+    },
+    {
+      "source": "অভিজ্ঞতা, multiple actions ও change।",
+      "target": "Kinh nghiệm, nhiều hành động và sự thay đổi."
+    },
+    {
+      "source": "formal থেকে casual speech-এর foundation।",
+      "target": "Nền tảng từ văn phong trang trọng (formal) sang thông thường (casual)."
+    },
+    {
+      "source": "ধাপ 5 · প্রয়োগ ও সংযোগ",
+      "target": "Bước 5 · Ứng dụng và kết nối"
+    },
+    {
+      "source": "মতামত, quote ও confirmation।",
+      "target": "Ý kiến, trích dẫn và sự xác nhận."
+    },
+    {
+      "source": "clause দিয়ে noun বর্ণনা।",
+      "target": "Mô tả danh từ bằng mệnh đề."
+    },
+    {
+      "source": "সময় ও automatic condition।",
+      "target": "Thời gian và điều kiện tự nhiên/tự động."
+    },
+    {
+      "source": "কারো জন্য কিছু করা/পাওয়া।",
+      "target": "Làm gì cho ai đó / Nhận được gì từ ai đó."
+    },
+    {
+      "source": "if/when এবং even if structure।",
+      "target": "Cấu trúc nếu/khi và ngay cả khi."
+    },
+    {
+      "source": "কোনো Lesson পাওয়া যায়নি",
+      "target": "Không tìm thấy bài học nào"
+    },
+    {
+      "source": "অন্য শব্দ লিখুন অথবা filter মুছে আবার চেষ্টা করুন।",
+      "target": "Vui lòng nhập từ khóa khác hoặc xóa bộ lọc và thử lại."
+    },
+    {
+      "source": "সব Lesson দেখুন",
+      "target": "Xem tất cả bài học"
+    },
+    {
+      "source": "প্রতিটি Lesson থেকে সর্বোচ্চ ফল নিন",
+      "target": "Đạt kết quả tối đa từ mỗi bài học"
+    },
+    {
+      "source": "বিষয় দেখে Lesson খুলুন",
+      "target": "Mở bài học theo chủ đề"
+    },
+    {
+      "source": "কার্ডের Japanese pattern ও বাংলা সারাংশ দেখে প্রয়োজনীয় lesson বেছে নিন।",
+      "target": "Chọn bài học cần thiết bằng cách xem mẫu tiếng Nhật và tóm tắt trên thẻ."
+    },
+    {
+      "source": "উদাহরণসহ অনুশীলন করুন",
+      "target": "Luyện tập kèm ví dụ"
+    },
+    {
+      "source": "ব্যাখ্যা পড়ুন, audio শুনুন এবং quiz দিয়ে নিজের বোঝাপড়া যাচাই করুন।",
+      "target": "Đọc giải thích, nghe audio và làm bài kiểm tra để kiểm tra mức độ hiểu của bạn."
+    },
+    {
+      "source": "শেষ হলে ✓ দিন",
+      "target": "Đánh dấu ✓ khi hoàn thành"
+    },
+    {
+      "source": "সম্পন্ন lesson আলাদা থাকবে এবং Continue button পরের lesson দেখাবে।",
+      "target": "Bài học đã hoàn thành sẽ được phân loại riêng và nút Tiếp tục sẽ hiển thị bài học tiếp theo."
+    },
+    {
+      "source": "· বাংলা ভাষাভাষীদের জন্য জাপানি শেখার প্ল্যাটফর্ম",
+      "target": "· Nền tảng học tiếng Nhật dành cho người nói tiếng Bengal"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "Liên hệ"
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n5-grammar-lesson-20-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 20 | Plain Form・普通形 Conversation | আপনার নিহোন",
+      "target": "Bài 20 Ngữ pháp N5 | Thể thường・普通形 Hội thoại | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "বন্ধুদের সাথে casual কথা, diary style, short answer — polite থেকে plain form",
+      "target": "Nói thân mật với bạn bè, kiểu nhật ký, trả lời ngắn — từ lịch sự sang thể thường"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Bắt đầu ngữ pháp"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "Mục tiêu học tập hôm nay"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "Giải thích đơn giản + cấu trúc + ví dụ"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "Với mỗi mẫu câu, xem cấu trúc trước, sau đó nói to ví dụ. Nhấn nút Audio để nghe câu tiếng Nhật."
+    },
+    {
+      "source": "ます-form নয়, dictionary/ない/た/なかった form দিয়ে casual/plain style।",
+      "target": "Không phải thể ます, mà là kiểu thân mật/thường bằng thể từ điển/ない/た/なかった."
+    },
+    {
+      "source": "বন্ধু, পরিবার, diary, grammar connection-এ plain form লাগে।",
+      "target": "Thể thường cần khi nói với bạn bè, gia đình, viết nhật ký, nối ngữ pháp."
+    },
+    {
+      "source": "আশিতা, গাক্কো এ ইকু।",
+      "target": "明日、学校へ行く。"
+    },
+    {
+      "source": "কাল স্কুলে যাব।",
+      "target": "Ngày mai tôi đi học."
+    },
+    {
+      "source": "কিয়ো ওয়া ইকানাই।",
+      "target": "今日は行かない。"
+    },
+    {
+      "source": "আজ যাব না।",
+      "target": "Hôm nay tôi không đi."
+    },
+    {
+      "source": "কিনো, ইত্তা।",
+      "target": "昨日、行った。"
+    },
+    {
+      "source": "গতকাল গিয়েছিলাম।",
+      "target": "Hôm qua tôi đã đi."
+    },
+    {
+      "source": "い-adjective plain form-এ です বাদ যায়।",
+      "target": "Ở thể thường của tính từ い, です bị bỏ."
+    },
+    {
+      "source": "কোনো মিসে ওয়া ইয়াসুই।",
+      "target": "この店は安い。"
+    },
+    {
+      "source": "এই দোকান সস্তা।",
+      "target": "Cửa hàng này rẻ."
+    },
+    {
+      "source": "কিনো ওয়া সামুকাত্তা।",
+      "target": "昨日は寒かった。"
+    },
+    {
+      "source": "গতকাল ঠান্ডা ছিল।",
+      "target": "Hôm qua lạnh."
+    },
+    {
+      "source": "কোনো এইগা ওয়া ওমোশিরোকুনাই।",
+      "target": "この映画は面白くない。"
+    },
+    {
+      "source": "এই সিনেমা মজার নয়।",
+      "target": "Bộ phim này không thú vị."
+    },
+    {
+      "source": "な-adjective ও noun plain affirmative present-এ だ লাগে; negative じゃない।",
+      "target": "Tính từ な và danh từ ở thể thường khẳng định hiện tại cần だ; phủ định là じゃない."
+    },
+    {
+      "source": "Question/casual conversation-এ だ বাদও হতে পারে, কিন্তু basic pattern শিখুন।",
+      "target": "Trong câu hỏi/hội thoại thân mật だ cũng có thể bị bỏ, nhưng hãy học mẫu cơ bản."
+    },
+    {
+      "source": "কোনো মাচি ওয়া শিজুকাদা।",
+      "target": "この町は静かだ。"
+    },
+    {
+      "source": "এই শহর শান্ত।",
+      "target": "Thành phố này yên tĩnh."
+    },
+    {
+      "source": "কারে ওয়া গাকুসেই জানাই।",
+      "target": "彼は学生じゃない。"
+    },
+    {
+      "source": "সে ছাত্র নয়।",
+      "target": "Anh ấy không phải học sinh."
+    },
+    {
+      "source": "কিনো ওয়া ইয়াসুমিদাত্তা।",
+      "target": "昨日は休みだった。"
+    },
+    {
+      "source": "গতকাল ছুটি ছিল।",
+      "target": "Hôm qua là ngày nghỉ."
+    },
+    {
+      "source": "আশিতা ইকু？",
+      "target": "明日行く？"
+    },
+    {
+      "source": "কাল যাবে?",
+      "target": "Ngày mai bạn đi không?"
+    },
+    {
+      "source": "উন, ইকু।",
+      "target": "うん、行く。"
+    },
+    {
+      "source": "হ্যাঁ, যাব।",
+      "target": "Ừ, đi."
+    },
+    {
+      "source": "উন, ইকানাই।",
+      "target": "うん、行かない。"
+    },
+    {
+      "source": "না, যাব না।",
+      "target": "Không, không đi."
+    },
+    {
+      "source": "কাকে বলছেন তার উপর style বদলাতে হবে।",
+      "target": "Kiểu nói phải thay đổi tùy theo người bạn đang nói chuyện."
+    },
+    {
+      "source": "শিক্ষক/বস/ইন্টারভিউতে polite; বন্ধু/পরিবারে plain।",
+      "target": "Với giáo viên/sếp/phỏng vấn thì lịch sự; với bạn bè/gia đình thì thể thường."
+    },
+    {
+      "source": "সেনসেই নি： আশিতা, গাক্কো এ ইকিমাসু।",
+      "target": "先生に：明日、学校へ行きます。"
+    },
+    {
+      "source": "শিক্ষককে: কাল স্কুলে যাব।",
+      "target": "Với giáo viên: ngày mai tôi đi học."
+    },
+    {
+      "source": "তোমোদাচি নি： আশিতা, গাক্কো এ ইকু।",
+      "target": "友達に：明日、学校へ行く。"
+    },
+    {
+      "source": "বন্ধুকে: কাল স্কুলে যাব।",
+      "target": "Với bạn: ngày mai tôi đi học."
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "Luyện nói"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "Đọc các câu này 3 lần như trong phỏng vấn/hội thoại lớp học."
+    },
+    {
+      "source": "আশিতা, গাক্কো এ ইকু？",
+      "target": "明日、学校へ行く？"
+    },
+    {
+      "source": "কাল স্কুলে যাবে?",
+      "target": "Ngày mai bạn đi học không?"
+    },
+    {
+      "source": "কিনো, নানি ও শিতা？",
+      "target": "昨日、何をした？"
+    },
+    {
+      "source": "গতকাল কী করেছিলে?",
+      "target": "Hôm qua bạn đã làm gì?"
+    },
+    {
+      "source": "এইগা ও মিতা।",
+      "target": "映画を見た。"
+    },
+    {
+      "source": "সিনেমা দেখেছি।",
+      "target": "Tôi đã xem phim."
+    },
+    {
+      "source": "কোনো মাচি ওয়া শিজুকা？",
+      "target": "この町は静か？"
+    },
+    {
+      "source": "এই শহর শান্ত?",
+      "target": "Thành phố này yên tĩnh không?"
+    },
+    {
+      "source": "✅ বন্ধু হলে plain: 明日行く。 কিন্তু polite বললেও ভুল নয়, শুধু দূরত্ব/ভদ্রতা বেশি।",
+      "target": "✅ Nếu là bạn bè thì thể thường: 明日行く。 Nhưng nói lịch sự cũng không sai, chỉ là khoảng cách/lịch sự nhiều hơn."
+    },
+    {
+      "source": "✅ 高い。 — い-adj-এর সাথে だ নয়।",
+      "target": "✅ 高い。 — với tính từ い thì không dùng だ."
+    },
+    {
+      "source": "✅ 学生だ。 — noun plain affirmative present-এ だ।",
+      "target": "✅ 学生だ。 — danh từ thể thường khẳng định hiện tại thì だ."
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 20 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • Bài 20 Ngữ pháp N5 • Verified Premium Detailed Version"
+    }
+  ]
+}

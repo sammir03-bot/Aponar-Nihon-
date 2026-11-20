@@ -1,0 +1,246 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n5-grammar-lesson-23-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 23 | とき・と・Place を | আপনার নিহোন",
+      "target": "Bài 23 Ngữ pháp N5 | とき・と・Địa điểm を | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "যখন… / যদি… নিয়মিত ফল হয় — সময় ও natural result",
+      "target": "Khi… / nếu… thì kết quả tự nhiên — thời gian và kết quả tự nhiên"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Bắt đầu ngữ pháp"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "Mục tiêu học tập hôm nay"
+    },
+    {
+      "source": "যখন বলা",
+      "target": "Nói khi"
+    },
+    {
+      "source": "আগে/পরে nuance",
+      "target": "Sắc thái trước/sau"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "Giải thích đơn giản + cấu trúc + ví dụ"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "Với mỗi mẫu câu, xem cấu trúc trước, sau đó nói to ví dụ. Nhấn nút Audio để nghe câu tiếng Nhật."
+    },
+    {
+      "source": "কোনো কাজের সময়/যখন বলতে verb-এর plain form-এর পরে とき বসে। Present affirmative-এ dictionary form, negative-এ ない-form, past-এ た-form লাগে।",
+      "target": "Để nói thời gian/khi làm việc gì, とき đứng sau thể thường của động từ. Khẳng định hiện tại dùng thể từ điển, phủ định dùng thể ない, quá khứ dùng thể た."
+    },
+    {
+      "source": "とき-এর আগে ます-form বসে না। বাক্যের সময় অনুযায়ী plain form বেছে নিন।",
+      "target": "Trước とき không đặt thể ます. Hãy chọn thể thường theo thời gian của câu."
+    },
+    {
+      "source": "গাক্কো এ ইকু তোকি, বাসু নি নোরিমাসু।",
+      "target": "学校へ行くとき、バスに乗ります。"
+    },
+    {
+      "source": "স্কুলে যাওয়ার সময় বাসে উঠি।",
+      "target": "Khi đi học, tôi đi xe buýt."
+    },
+    {
+      "source": "কানজি গা ওয়াকারানাই তোকি, সেনসেই নি কিকিমাসু।",
+      "target": "漢字が分からないとき、先生に聞きます。"
+    },
+    {
+      "source": "কাঞ্জি না বুঝলে শিক্ষককে জিজ্ঞাসা করি।",
+      "target": "Khi không hiểu kanji, tôi hỏi giáo viên."
+    },
+    {
+      "source": "い-adjective সরাসরি とき নেয়; な-adjective-এর পরে なとき; noun-এর পরে のとき বসে।",
+      "target": "Tính từ い lấy trực tiếp とき; sau tính từ な là なとき; sau danh từ là のとき."
+    },
+    {
+      "source": "暇 হলো な-adjective—তাই 暇なとき। 子ども হলো noun—তাই 子どものとき।",
+      "target": "暇 là tính từ な — nên 暇なとき. 子ども là danh từ — nên 子どものとき."
+    },
+    {
+      "source": "আৎসুই তোকি, মিজু ও নোমিমাসু।",
+      "target": "暑いとき、水を飲みます。"
+    },
+    {
+      "source": "গরমের সময় পানি পান করি।",
+      "target": "Khi nóng, tôi uống nước."
+    },
+    {
+      "source": "হিমানা তোকি, হোন ও ইয়োমিমাসু।",
+      "target": "暇なとき、本を読みます。"
+    },
+    {
+      "source": "অবসরে বই পড়ি।",
+      "target": "Khi rảnh, tôi đọc sách."
+    },
+    {
+      "source": "কোদোমো নো তোকি, ইয়োকু ওয়োগিমাশিতা।",
+      "target": "子どものとき、よく泳ぎました。"
+    },
+    {
+      "source": "শিশু বয়সে অনেক সাঁতার কাটতাম।",
+      "target": "Khi còn nhỏ, tôi thường bơi nhiều."
+    },
+    {
+      "source": "Dictionary form হলে とき-clause-এর action এখনো শেষ হয়নি; た-form হলে সেই action শেষ হওয়ার পর/সময় main action ঘটে।",
+      "target": "Nếu là thể từ điển thì hành động của mệnh đề とき vẫn chưa kết thúc; nếu là thể た thì hành động chính xảy ra sau khi/khi hành động đó kết thúc."
+    },
+    {
+      "source": "行くとき = যাওয়ার পথে/আগে; 行ったとき = গিয়ে পৌঁছানোর পর/যখন গিয়েছিলাম।",
+      "target": "行くとき = trên đường đi/trước khi đi; 行ったとき = sau khi đến/khi đã đi."
+    },
+    {
+      "source": "তোকিয়ো এ ইকু তোকি, কোনো কাবান ও কাইমাশিতা।",
+      "target": "東京へ行くとき、このかばんを買いました。"
+    },
+    {
+      "source": "টোকিও যাওয়ার পথে এই ব্যাগ কিনেছিলাম।",
+      "target": "Trên đường đi Tokyo, tôi đã mua chiếc cặp này."
+    },
+    {
+      "source": "তোকিয়ো এ ইত্তা তোকি, কোনো কাবান ও কাইমাশিতা।",
+      "target": "東京へ行ったとき、このかばんを買いました。"
+    },
+    {
+      "source": "টোকিও গিয়ে এই ব্যাগ কিনেছিলাম।",
+      "target": "Khi đến Tokyo, tôi đã mua chiếc cặp này."
+    },
+    {
+      "source": "একটি কাজ করলে স্বাভাবিক, অবশ্যম্ভাবী বা নিয়মিত ফল ঘটে—এমন ক্ষেত্রে と ব্যবহার হয়।",
+      "target": "Khi làm một việc thì kết quả tự nhiên, tất yếu hoặc thường xuyên xảy ra — trong trường hợp như vậy dùng と."
+    },
+    {
+      "source": "と-এর পর ইচ্ছা, অনুরোধ, আমন্ত্রণ বা command বসে না; সেসব ক্ষেত্রে Lesson 25-এর たら ব্যবহার করুন।",
+      "target": "Sau と không đặt ý chí, yêu cầu, lời mời hoặc mệnh lệnh; trong những trường hợp đó hãy dùng たら của Bài 25."
+    },
+    {
+      "source": "কোনো বোতান ও ওসু তো, দোআ গা হিরাকিমাসু।",
+      "target": "このボタンを押すと、ドアが開きます。"
+    },
+    {
+      "source": "এই বোতাম চাপলে দরজা খুলে যায়।",
+      "target": "Nhấn nút này thì cửa mở."
+    },
+    {
+      "source": "মিগি এ মাগারু তো, ইউবিন কিয়োকু গা আরিমাসু।",
+      "target": "右へ曲がると、郵便局があります。"
+    },
+    {
+      "source": "ডানে ঘুরলে পোস্ট অফিস আছে।",
+      "target": "Rẽ phải thì có bưu điện."
+    },
+    {
+      "source": "যে জায়গা দিয়ে চলাচল, পার হওয়া বা হাঁটা হয়—সেই পথ/এলাকাকে を দিয়ে চিহ্নিত করা হয়।",
+      "target": "Nơi di chuyển qua, băng qua hoặc đi bộ — con đường/khu vực đó được đánh dấu bằng を."
+    },
+    {
+      "source": "এখানে を direct object নয়; movement-এর পথ বোঝায়।",
+      "target": "Ở đây を không phải tân ngữ trực tiếp; nó chỉ đường di chuyển."
+    },
+    {
+      "source": "কোয়েন ও সানপো শিমাসু।",
+      "target": "公園を散歩します。"
+    },
+    {
+      "source": "পার্কে হাঁটাহাঁটি করি।",
+      "target": "Tôi đi dạo trong công viên."
+    },
+    {
+      "source": "মিচি ও ওয়াতারিমাসু।",
+      "target": "道を渡ります。"
+    },
+    {
+      "source": "রাস্তা পার হই।",
+      "target": "Tôi băng qua đường."
+    },
+    {
+      "source": "কোসাতেন ও মিগি এ মাগারিমাসু।",
+      "target": "交差点を右へ曲がります。"
+    },
+    {
+      "source": "মোড়ে ডানে ঘুরি।",
+      "target": "Tôi rẽ phải ở ngã tư."
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "Luyện nói"
+    },
+    {
+      "source": "এই বাক্যগুলো conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "Đọc các câu này 3 lần như hội thoại."
+    },
+    {
+      "source": "হিমানা তোকি, নানি ও শিমাসু কা।",
+      "target": "暇なとき、何をしますか。"
+    },
+    {
+      "source": "ফ্রি সময়ে কী করেন?",
+      "target": "Khi rảnh bạn làm gì?"
+    },
+    {
+      "source": "হোন ও ইয়োন দারি, ওনগাকু ও কিই তারি শিমাসু।",
+      "target": "本を読んだり、音楽を聞いたりします。"
+    },
+    {
+      "source": "বই পড়ি, গান শুনি ইত্যাদি।",
+      "target": "Đọc sách, nghe nhạc, v.v."
+    },
+    {
+      "source": "নিহোন এ ইকু তোকি, নানি ও মোত্তেইকিমাসু কা।",
+      "target": "日本へ行くとき、何を持って行きますか。"
+    },
+    {
+      "source": "জাপানে যাওয়ার সময় কী নিয়ে যাবেন?",
+      "target": "Khi đi Nhật bạn mang theo gì?"
+    },
+    {
+      "source": "কোনো বোতান ও ওসু তো, দো নারিমাসু কা।",
+      "target": "このボタンを押すと、どうなりますか。"
+    },
+    {
+      "source": "এই বোতাম চাপলে কী হয়?",
+      "target": "Nhấn nút này thì điều gì xảy ra?"
+    },
+    {
+      "source": "দোআ গা হিরাকিমাসু।",
+      "target": "ドアが開きます。"
+    },
+    {
+      "source": "দরজা খুলে যায়।",
+      "target": "Cửa mở."
+    },
+    {
+      "source": "✅ と-এর পরে command/request natural নয়।",
+      "target": "✅ Sau と, mệnh lệnh/yêu cầu không tự nhiên."
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "জাপানে গিয়েছিলাম যখন = ?",
+      "target": "Khi đã đi Nhật = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 23 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • Bài 23 Ngữ pháp N5 • Verified Premium Detailed Version"
+    }
+  ]
+}

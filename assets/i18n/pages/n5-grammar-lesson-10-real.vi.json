@@ -1,0 +1,250 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "vi",
+  "page": "n5-grammar-lesson-10-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 10 | あります・います + Location + Position Words | আপনার নিহোন",
+      "target": "Bài 10 Ngữ pháp N5 | あります・います + Vị trí + Từ chỉ vị trí | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "কোথায় কী আছে / কে আছে — ঘর, শহর, ক্লাসরুম বর্ণনা করা",
+      "target": "Cái gì ở đâu / ai ở đâu — miêu tả phòng, thành phố, lớp học"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Bắt đầu ngữ pháp"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "Mục tiêu học tập hôm nay"
+    },
+    {
+      "source": "জিনিস আছে বলা",
+      "target": "Nói có đồ vật"
+    },
+    {
+      "source": "মানুষ/প্রাণী আছে বলা",
+      "target": "Nói có người/động vật"
+    },
+    {
+      "source": "location বলা",
+      "target": "Nói vị trí"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "Giải thích đơn giản + cấu trúc + ví dụ"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "Với mỗi mẫu câu, xem cấu trúc trước, sau đó nói to ví dụ. Nhấn nút Audio để nghe câu tiếng Nhật."
+    },
+    {
+      "source": "জড় বস্তু/গাছপালা/ঘটনা আছে বোঝাতে あります।",
+      "target": "あります dùng để nói có vật vô tri/cây cối/sự kiện."
+    },
+    {
+      "source": "book, desk, tree, event — এগুলোতে あります।",
+      "target": "Sách, bàn, cây, sự kiện — những thứ này dùng あります."
+    },
+    {
+      "source": "ৎসুকুয়ে গা আরিমাসু।",
+      "target": "机があります。"
+    },
+    {
+      "source": "ডেস্ক আছে।",
+      "target": "Có bàn."
+    },
+    {
+      "source": "কোয়েন নি কি গা আরিমাসু।",
+      "target": "公園に木があります。"
+    },
+    {
+      "source": "পার্কে গাছ আছে।",
+      "target": "Trong công viên có cây."
+    },
+    {
+      "source": "মানুষ/প্রাণী আছে বোঝাতে います。",
+      "target": "います dùng để nói có người/động vật."
+    },
+    {
+      "source": "student, teacher, dog, cat — এগুলোতে います।",
+      "target": "Học sinh, giáo viên, chó, mèo — những thứ này dùng います."
+    },
+    {
+      "source": "কিয়োশিৎসু নি গাকুসেই গা ইমাসু।",
+      "target": "教室に学生がいます。"
+    },
+    {
+      "source": "ক্লাসরুমে ছাত্র আছে।",
+      "target": "Trong lớp học có học sinh."
+    },
+    {
+      "source": "নিওয়া নি ইনু গা ইমাসু।",
+      "target": "庭に犬がいます。"
+    },
+    {
+      "source": "বাগানে কুকুর আছে।",
+      "target": "Trong vườn có chó."
+    },
+    {
+      "source": "কোন জায়গায় কী/কে আছে — জায়গা আগে বললে に লাগে।",
+      "target": "Cái gì/ai ở nơi nào — nếu nói nơi chốn trước thì cần に."
+    },
+    {
+      "source": "হেয়া নি তেরেবি গা আরিমাসু।",
+      "target": "部屋にテレビがあります。"
+    },
+    {
+      "source": "ঘরে টিভি আছে।",
+      "target": "Trong phòng có tivi."
+    },
+    {
+      "source": "জিমুশো নি মিরা সান গা ইমাসু।",
+      "target": "事務所にミラーさんがいます。"
+    },
+    {
+      "source": "অফিসে মিলার-সান আছেন।",
+      "target": "Anh Miller ở văn phòng."
+    },
+    {
+      "source": "কোন জিনিস/ব্যক্তি কোথায় আছে — N কে topic করলে は。",
+      "target": "Vật/người nào ở đâu — nếu lấy N làm chủ đề thì は."
+    },
+    {
+      "source": "প্রশ্ন: Nはどこですか। উত্তর: Placeにあります/います।",
+      "target": "Câu hỏi: Nはどこですか. Trả lời: Placeにあります/います."
+    },
+    {
+      "source": "হোন ওয়া ৎসুকুয়ে নো উয়ে নি আরিমাসু।",
+      "target": "本は机の上にあります。"
+    },
+    {
+      "source": "বইটি ডেস্কের ওপর আছে।",
+      "target": "Cuốn sách ở trên bàn."
+    },
+    {
+      "source": "সেনসেই ওয়া জিমুশো নি ইমাসু।",
+      "target": "先生は事務所にいます。"
+    },
+    {
+      "source": "শিক্ষক অফিসে আছেন।",
+      "target": "Giáo viên ở văn phòng."
+    },
+    {
+      "source": "কিছুর উপর/নিচ/সামনে/পেছনে/ভিতরে/পাশে বোঝাতে の + position word।",
+      "target": "Để nói trên/dưới/trước/sau/trong/bên cạnh của vật gì dùng の + từ chỉ vị trí."
+    },
+    {
+      "source": "ৎসুকুয়ে নো উয়ে নি হোন গা আরিমাসু।",
+      "target": "机の上に本があります。"
+    },
+    {
+      "source": "ডেস্কের ওপর বই আছে।",
+      "target": "Trên bàn có sách."
+    },
+    {
+      "source": "ইসু নো শিতা নি নেকো গা ইমাসু।",
+      "target": "椅子の下に猫がいます。"
+    },
+    {
+      "source": "চেয়ারের নিচে বিড়াল আছে।",
+      "target": "Dưới ghế có mèo."
+    },
+    {
+      "source": "একি নো মায়ে নি গিনকো গা আরিমাসু।",
+      "target": "駅の前に銀行があります。"
+    },
+    {
+      "source": "স্টেশনের সামনে ব্যাংক আছে।",
+      "target": "Trước ga có ngân hàng."
+    },
+    {
+      "source": "Question word + も-এর সঙ্গে negative existence verb বসলে ‘কেউ নেই/কিছু নেই’ বোঝায়।",
+      "target": "Khi từ để hỏi + も đi với động từ tồn tại phủ định thì có nghĩa là ‘không có ai/không có gì’."
+    },
+    {
+      "source": "মানুষ/প্রাণী: だれもいません; বস্তু: 何もありません। Affirmative verb ব্যবহার করবেন না।",
+      "target": "Người/động vật: だれもいません; vật: 何もありません. Không dùng động từ khẳng định."
+    },
+    {
+      "source": "কিয়োশিৎসু নি দারে মো ইমাসেন।",
+      "target": "教室にだれもいません。"
+    },
+    {
+      "source": "ক্লাসরুমে কেউ নেই।",
+      "target": "Trong lớp học không có ai."
+    },
+    {
+      "source": "কাবান নো নাকা নি নানি মো আরিমাসেন।",
+      "target": "かばんの中に何もありません。"
+    },
+    {
+      "source": "ব্যাগের ভেতরে কিছু নেই।",
+      "target": "Trong cặp không có gì."
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "Luyện nói"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "Đọc các câu này 3 lần như trong phỏng vấn/hội thoại lớp học."
+    },
+    {
+      "source": "হেয়া নি নানি গা আরিমাসু কা।",
+      "target": "部屋に何がありますか。"
+    },
+    {
+      "source": "ঘরে কী আছে?",
+      "target": "Trong phòng có gì?"
+    },
+    {
+      "source": "ৎসুকুয়ে তো বেদ্দো গা আরিমাসু।",
+      "target": "机とベッドがあります。"
+    },
+    {
+      "source": "ডেস্ক ও বিছানা আছে।",
+      "target": "Có bàn và giường."
+    },
+    {
+      "source": "সেনসেই ওয়া দোকো নি ইমাসু কা।",
+      "target": "先生はどこにいますか。"
+    },
+    {
+      "source": "শিক্ষক কোথায় আছেন?",
+      "target": "Giáo viên ở đâu?"
+    },
+    {
+      "source": "হোন ওয়া দোকো নি আরিমাসু কা।",
+      "target": "本はどこにありますか。"
+    },
+    {
+      "source": "বই কোথায় আছে?",
+      "target": "Sách ở đâu?"
+    },
+    {
+      "source": "✅ 犬がいます。 — প্রাণী হলে います।",
+      "target": "✅ 犬がいます。 — nếu là động vật thì います."
+    },
+    {
+      "source": "✅ 机の上に本があります। — position word আগে の লাগে।",
+      "target": "✅ 机の上に本があります。 — trước từ chỉ vị trí cần の."
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "Tự kiểm tra"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 10 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • Bài 10 Ngữ pháp N5 • Verified Premium Detailed Version"
+    }
+  ]
+}
