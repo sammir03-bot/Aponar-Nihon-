@@ -13,6 +13,8 @@
     return window.AponarI18n ? window.AponarI18n.t(key, fallback) : fallback;
   }
 
+  function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"hp.quizLabel": "{a} সম্পূর্ণ quiz · {b} mock"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}
+
   function readJson(key, fallback) {
     try {
       var value = JSON.parse(localStorage.getItem(key) || "null");
@@ -77,7 +79,7 @@
     }).length;
     var mockResults = readJson("aponarNihonMockResults", {});
     var mocks = mockResults && typeof mockResults === "object" ? Object.keys(mockResults).length : 0;
-    return { done: Math.min(sets, 120) + Math.min(mocks, 30), total: 150, label: sets + " সম্পূর্ণ quiz · " + mocks + " mock" };
+    return { done: Math.min(sets, 120) + Math.min(mocks, 30), total: 150, label: dynT('hp.quizLabel', {a: sets, b: mocks}) };
   }
 
   function setCardStatus(card) {

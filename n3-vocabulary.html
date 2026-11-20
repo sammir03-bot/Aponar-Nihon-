@@ -46,7 +46,8 @@
     let html=await response.text();
     if(!html.includes('data-vocab-row')) throw new Error('Vocabulary source invalid');
     html=html.replace('</head>','<link rel="stylesheet" href="/n3-vocabulary-all.css?v=5">\n</head>');
-    const enhancement='<script src="/n3-vocabulary-examples.js?v=1"></scr'+'ipt>\n<script src="/n3-vocabulary-all.js?v=5"></scr'+'ipt>\n</body>';
+    const enhancement='<script src="/n3-vocabulary-examples.js?v=1"></scr'+'ipt>\n<script src="/n3-vocabulary-all.js?v=5">
+function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"ms.vocabLoadErrorTitle": "Vocabulary load করা যায়নি", "ms.vocabLoadErrorBody": "Internet connection check করে আবার reload করুন।"};</scr'+'ipt>\n</body>';
     html=html.replace('</body>',enhancement);
     document.open();
     document.write(html);
@@ -54,7 +55,7 @@
   }catch(error){
     console.error(error);
     const el=document.getElementById('loader');
-    if(el) el.innerHTML='<div class="mark">!</div><b class="error">Vocabulary load করা যায়নি</b><p>Internet connection check করে আবার reload করুন।</p>';
+    if(el) el.innerHTML='<div class="mark">!</div><b class="error">' + dynT('ms.vocabLoadErrorTitle') + '</b><p>' + dynT('ms.vocabLoadErrorBody') + '</p>';
   }
 })();
 </script>

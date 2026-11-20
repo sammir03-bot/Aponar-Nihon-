@@ -1,5 +1,6 @@
 (()=>{
   'use strict';
+  function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"ha.menu": "মেনু", "ha.profile": "প্রোফাইল"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}
 
   // Header auth/menu bridge. Keep the existing header design, but when a
   // Supabase session exists turn the visible top Profile action into Menu.
@@ -74,7 +75,7 @@
     el.innerHTML=el.dataset.anAuthOriginalHtml || '<i class="fa-solid fa-user" aria-hidden="true"></i>';
     if(el.tagName==='A') el.setAttribute('href',el.dataset.anAuthOriginalHref || '/profile.html');
 
-    const aria=el.dataset.anAuthOriginalAria || 'প্রোফাইল';
+    const aria=el.dataset.anAuthOriginalAria || dynT('ha.profile');
     el.setAttribute('aria-label',aria);
     if(el.dataset.anAuthOriginalTitle) el.setAttribute('title',el.dataset.anAuthOriginalTitle);
     else el.removeAttribute('title');
@@ -140,8 +141,8 @@
     if(el.dataset.anAuthMenuState!=='menu'){
       el.dataset.anAuthMenuState='menu';
       if(el.tagName==='A') el.setAttribute('href','#');
-      el.setAttribute('aria-label','মেনু');
-      el.setAttribute('title','মেনু');
+      el.setAttribute('aria-label',dynT('ha.menu'));
+      el.setAttribute('title',dynT('ha.menu'));
       el.innerHTML='<i class="fa-solid fa-bars" aria-hidden="true"></i>';
     }
 

@@ -1,5 +1,6 @@
 (()=>{
   'use strict';
+  function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"is.usefulJapanese": "দরকারি জাপানি", "is.kana": "হিরাগানা ও কাতাকানা", "is.allTogether": "পরীক্ষার আগে সব একসাথে", "is.structuredLessons": "{n}টি structured lesson", "is.quickReview": "Exam-এর আগে দ্রুত ঝালাই", "is.realPractice": "বাস্তব পরীক্ষার practice", "is.askInLang": "না বুঝলে বাংলায় জিজ্ঞাসা", "is.meaningUsage": "শব্দের meaning ও usage", "is.readingMeaning": "Reading ও meaning practice", "is.ruleAnswer": "Rule চিনে answer দিন", "is.weakSpots": "দুর্বল জায়গা ঝালাই করুন", "is.listeningSkill": "শোনার skill practice", "is.questionTechnique": "Question ধরার কৌশল", "is.ruleInLang": "Rule বাংলায় বুঝুন", "is.fixSentence": "জাপানি বাক্য ঠিক করুন", "is.langPair": "বাংলা ↔ Japanese", "is.realConversation": "বাস্তব কথোপকথন practice", "is.testYourself": "নিজেকে পরীক্ষা করুন", "is.jobJapanese": "চাকরির Japanese practice", "is.openPart": "এই অংশ খুলুন", "is.panelTitle": "এই সেকশনের অংশসমূহ", "is.kicker": "✦ এক নজরে সব অংশ", "is.whatsInside": "যা যা আছে", "is.tapCard": "যে বিষয়টি দরকার, কার্ডে চাপুন। মূল content এবং কাজ আগের মতোই থাকবে।", "is.quickNav": "দ্রুত নেভিগেশন", "is.goSection": "এই অংশে যান"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}function numD(x){if(dynLang()==='bn')return String(x).replace(/\d/g,function(d){return '০১২৩৪৫৬৭৮৯'[+d]});return String(x);}
 
   const path=(location.pathname||'/').replace(/\/$/,'')||'/';
   if(path==='/'||path==='/index.html'||path==='/index')return;
@@ -15,10 +16,10 @@
     '/mock-test.html':'Mock Test','/mock-test':'Mock Test',
     '/interview.html':'Interview','/interview':'Interview',
     '/ssw.html':'SSW Guide','/ssw':'SSW Guide',
-    '/essential-phrases.html':'দরকারি জাপানি','/essential-phrases':'দরকারি জাপানি',
+    '/essential-phrases.html':dynT('is.usefulJapanese'),'/essential-phrases':dynT('is.usefulJapanese'),
     '/japan-life.html':'Japan Life','/japan-life':'Japan Life',
     '/jobs-in-japan.html':'Jobs in Japan','/jobs-in-japan':'Jobs in Japan',
-    '/Hiragana-Katagana.html':'হিরাগানা ও কাতাকানা','/Hiragana-Katagana':'হিরাগানা ও কাতাকানা',
+    '/Hiragana-Katagana.html':dynT('is.kana'),'/Hiragana-Katagana':dynT('is.kana'),
     '/ebook-library.html':'E-Book Library','/ebook-library':'E-Book Library',
     '/student-tools.html':'Student Toolkit','/student-tools':'Student Toolkit',
     '/cv-builder.html':'Japan CV Builder','/cv-builder':'Japan CV Builder',
@@ -43,43 +44,43 @@
   const MANUAL={
     '/jlpt-revision.html':[
       ['Kanji Flashcards','N5 · N4 · N3 active recall','#flash','漢','pink'],
-      ['Full Revision','পরীক্ষার আগে সব একসাথে','#revision','🔄','green'],
+      ['Full Revision',dynT('is.allTogether'),'#revision','🔄','green'],
       ['N5 Kanji','Beginner Kanji library','/n5-kanji.html','N5','blue'],
       ['N4 Kanji','Elementary Kanji library','/n4-kanji.html','N4','purple'],
       ['N3 Kanji','Intermediate Kanji library','/n3-kanji.html','N3','orange'],
       ['Mock Test','Timed exam practice','/mock-test.html','✅','red']
     ],
     '/listening-lab.html':[
-      ['N5 Listening','২০টি structured lesson','/listening-lab.html?level=n5','N5','blue'],
-      ['N4 Listening','২০টি structured lesson','/listening-lab.html?level=n4','N4','purple'],
-      ['N3 Listening','২০টি structured lesson','/listening-lab.html?level=n3','N3','orange'],
-      ['Listening Revision','Exam-এর আগে দ্রুত ঝালাই','/jlpt-revision.html#revision','🔄','green'],
-      ['Mock Listening','বাস্তব পরীক্ষার practice','/mock-test.html','🎧','red'],
-      ['AI Listening Help','না বুঝলে বাংলায় জিজ্ঞাসা','/tutor-section.html?mode=learn&prompt=Listening%20practice%20বুঝিয়ে%20দিন','🤖','cyan']
+      ['N5 Listening',dynT('is.structuredLessons', {n: numD(20)}),'/listening-lab.html?level=n5','N5','blue'],
+      ['N4 Listening',dynT('is.structuredLessons', {n: numD(20)}),'/listening-lab.html?level=n4','N4','purple'],
+      ['N3 Listening',dynT('is.structuredLessons', {n: numD(20)}),'/listening-lab.html?level=n3','N3','orange'],
+      ['Listening Revision',dynT('is.quickReview'),'/jlpt-revision.html#revision','🔄','green'],
+      ['Mock Listening',dynT('is.realPractice'),'/mock-test.html','🎧','red'],
+      ['AI Listening Help',dynT('is.askInLang'),'/tutor-section.html?mode=learn&prompt=Listening%20practice%20বুঝিয়ে%20দিন','🤖','cyan']
     ],
     '/quiz.html':[
       ['N5 Quiz','Vocabulary · Kanji · Grammar','/jlpt-quiz.html?level=n5&category=vocabulary&part=1','N5','blue'],
       ['N4 Quiz','Vocabulary · Kanji · Grammar','/jlpt-quiz.html?level=n4&category=vocabulary&part=1','N4','purple'],
       ['N3 Quiz','Vocabulary · Kanji · Grammar','/jlpt-quiz.html?level=n3&category=vocabulary&part=1','N3','orange'],
-      ['Vocabulary Quiz','শব্দের meaning ও usage','/jlpt-quiz.html?level=n5&category=vocabulary&part=1','📚','green'],
-      ['Kanji Quiz','Reading ও meaning practice','/jlpt-quiz.html?level=n5&category=kanji&part=1','漢','pink'],
-      ['Grammar Quiz','Rule চিনে answer দিন','/jlpt-quiz.html?level=n5&category=grammar&part=1','📖','red']
+      ['Vocabulary Quiz',dynT('is.meaningUsage'),'/jlpt-quiz.html?level=n5&category=vocabulary&part=1','📚','green'],
+      ['Kanji Quiz',dynT('is.readingMeaning'),'/jlpt-quiz.html?level=n5&category=kanji&part=1','漢','pink'],
+      ['Grammar Quiz',dynT('is.ruleAnswer'),'/jlpt-quiz.html?level=n5&category=grammar&part=1','📖','red']
     ],
     '/mock-test.html':[
       ['N5 Full Mock','Timed N5 exam','/n5-mock-tests.html','N5','blue'],
       ['N4 Full Mock','Timed N4 exam','/n4-mock-tests.html','N4','purple'],
       ['N3 Full Mock','Timed N3 exam','/n3-mock-tests.html','N3','orange'],
-      ['Revision First','দুর্বল জায়গা ঝালাই করুন','/jlpt-revision.html#revision','🔄','green'],
-      ['Listening Lab','শোনার skill practice','/listening-lab.html','🎧','cyan'],
-      ['Exam Tricks','Question ধরার কৌশল','/study-guide.html','💡','gold']
+      ['Revision First',dynT('is.weakSpots'),'/jlpt-revision.html#revision','🔄','green'],
+      ['Listening Lab',dynT('is.listeningSkill'),'/listening-lab.html','🎧','cyan'],
+      ['Exam Tricks',dynT('is.questionTechnique'),'/study-guide.html','💡','gold']
     ],
     '/tutor-section.html':[
-      ['Grammar Explain','Rule বাংলায় বুঝুন','/tutor-section.html?mode=learn&fresh=1&prompt=একটি%20JLPT%20grammar%20বাংলায়%20শিক্ষকের%20মতো%20বুঝিয়ে%20দিন','📖','purple'],
-      ['Sentence Correction','জাপানি বাক্য ঠিক করুন','/tutor-section.html?mode=learn&fresh=1&prompt=আমার%20Japanese%20sentence%20check%20ও%20correct%20করুন','✍️','blue'],
-      ['Translation','বাংলা ↔ Japanese','/tutor-section.html?mode=learn&fresh=1&prompt=বাংলা%20থেকে%20স্বাভাবিক%20Japanese%20অনুবাদ%20শেখান','あ','cyan'],
-      ['Conversation','বাস্তব কথোপকথন practice','/tutor-section.html?mode=learn&fresh=1&prompt=আমার%20সাথে%20সহজ%20Japanese%20conversation%20practice%20করুন','💬','green'],
-      ['Quiz Me','নিজেকে পরীক্ষা করুন','/tutor-section.html?mode=learn&fresh=1&prompt=আমাকে%20JLPT%20quiz%20দিন%20এবং%20উত্তর%20ব্যাখ্যা%20করুন','⚡','orange'],
-      ['Interview Help','চাকরির Japanese practice','/tutor-section.html?mode=learn&fresh=1&prompt=Japan%20part-time%20job%20interview%20practice%20করান','💼','red']
+      ['Grammar Explain',dynT('is.ruleInLang'),'/tutor-section.html?mode=learn&fresh=1&prompt=একটি%20JLPT%20grammar%20বাংলায়%20শিক্ষকের%20মতো%20বুঝিয়ে%20দিন','📖','purple'],
+      ['Sentence Correction',dynT('is.fixSentence'),'/tutor-section.html?mode=learn&fresh=1&prompt=আমার%20Japanese%20sentence%20check%20ও%20correct%20করুন','✍️','blue'],
+      ['Translation',dynT('is.langPair'),'/tutor-section.html?mode=learn&fresh=1&prompt=বাংলা%20থেকে%20স্বাভাবিক%20Japanese%20অনুবাদ%20শেখান','あ','cyan'],
+      ['Conversation',dynT('is.realConversation'),'/tutor-section.html?mode=learn&fresh=1&prompt=আমার%20সাথে%20সহজ%20Japanese%20conversation%20practice%20করুন','💬','green'],
+      ['Quiz Me',dynT('is.testYourself'),'/tutor-section.html?mode=learn&fresh=1&prompt=আমাকে%20JLPT%20quiz%20দিন%20এবং%20উত্তর%20ব্যাখ্যা%20করুন','⚡','orange'],
+      ['Interview Help',dynT('is.jobJapanese'),'/tutor-section.html?mode=learn&fresh=1&prompt=Japan%20part-time%20job%20interview%20practice%20করান','💼','red']
     ]
   };
   for(const base of ['/jlpt-revision','/listening-lab','/quiz','/mock-test','/tutor-section']){
@@ -139,7 +140,7 @@
     const key=keyFor(title+' '+sub);
     const sym=symbol||SYMBOLS[key]||SYMBOLS.default;
     const size=String(sym).length<=3?'2.35rem':'1.55rem';
-    return `<a class="an-inner-card" data-tone="${esc(tone||TONES[i%TONES.length])}" href="${esc(target||'#')}"><span class="an-inner-card-visual"><span class="an-inner-card-symbol" style="font-size:${size}">${esc(sym)}</span></span><span class="an-inner-card-copy"><strong>${esc(title)}</strong><small>${esc(sub||'এই অংশ খুলুন')}</small></span><span class="an-inner-card-arrow" aria-hidden="true">›</span></a>`;
+    return `<a class="an-inner-card" data-tone="${esc(tone||TONES[i%TONES.length])}" href="${esc(target||'#')}"><span class="an-inner-card-visual"><span class="an-inner-card-symbol" style="font-size:${size}">${esc(sym)}</span></span><span class="an-inner-card-copy"><strong>${esc(title)}</strong><small>${esc(sub||dynT('is.openPart'))}</small></span><span class="an-inner-card-arrow" aria-hidden="true">›</span></a>`;
   }
 
   function activateRevisionHash(hash){
@@ -164,9 +165,9 @@
     if(!cards||cards.length<3||document.querySelector('.an-section-overview'))return null;
     const panel=document.createElement('section');
     panel.className='an-section-overview';
-    panel.setAttribute('aria-label','এই সেকশনের অংশসমূহ');
+    panel.setAttribute('aria-label',dynT('is.panelTitle'));
     const title=PAGE_TITLES[path]||document.title.split('|')[0].trim();
-    panel.innerHTML=`<div class="an-section-overview-head"><div class="an-section-overview-copy"><span class="an-section-overview-kicker">✦ এক নজরে সব অংশ</span><h2>${esc(title)} — যা যা আছে</h2><p>যে বিষয়টি দরকার, কার্ডে চাপুন। মূল content এবং কাজ আগের মতোই থাকবে।</p></div><span class="an-section-overview-badge">দ্রুত নেভিগেশন</span></div><div class="an-inner-section-grid">${cards.map(cardMarkup).join('')}</div>`;
+    panel.innerHTML=`<div class="an-section-overview-head"><div class="an-section-overview-copy"><span class="an-section-overview-kicker">${dynT('is.kicker')}</span><h2>${esc(title)} — ${dynT('is.whatsInside')}</h2><p>${dynT('is.tapCard')}</p></div><span class="an-section-overview-badge">${dynT('is.quickNav')}</span></div><div class="an-inner-section-grid">${cards.map(cardMarkup).join('')}</div>`;
     panel.addEventListener('click',e=>{
       const link=e.target.closest('a[href^="#"]');
       if(!link)return;
@@ -202,7 +203,7 @@
       if(seen.has(title))return;
       seen.add(title);
       if(!section.id)section.id=slug(title,i+1);
-      const sub=subtitleFrom(section)||'এই অংশে যান';
+      const sub=subtitleFrom(section)||dynT('is.goSection');
       const key=keyFor(title+' '+sub);
       cards.push([title,sub,'#'+section.id,SYMBOLS[key]||SYMBOLS.default,TONES[cards.length%TONES.length]]);
     });

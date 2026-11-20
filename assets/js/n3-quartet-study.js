@@ -1,5 +1,6 @@
 (() => {
   'use strict';
+  function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"qs.noSpeech": "এই ব্রাউজারে কণ্ঠ চালু নেই। transcript খুলে পড়তে পারেন।", "qs.noJapaneseVoice": "এই ব্রাউজারে জাপানি কণ্ঠ পাওয়া যায়নি। transcript খুলে অনুশীলন করুন।", "qs.listenDone": "শোনা শেষ। প্রশ্নের উত্তর দিয়ে transcript মিলিয়ে নিন।", "qs.speechFail": "কণ্ঠ চালানো যায়নি। transcript খুলে পড়তে পারেন।", "qs.playing": "জাপানি স্ক্রিপ্ট চলছে…", "qs.stopped": "শোনা থামানো হয়েছে।"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}
   const chapters = [...document.querySelectorAll('[data-study-chapter]')];
   const select = document.getElementById('study-chapter-select');
   const toolbar = document.getElementById('study-toolbar');
@@ -55,14 +56,14 @@
     button.addEventListener('click', () => {
       const message = button.closest('.study-chapter').querySelector('.listen-status');
       if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
-        message.textContent = 'এই ব্রাউজারে কণ্ঠ চালু নেই। transcript খুলে পড়তে পারেন।';
+        message.textContent = dynT('qs.noSpeech');
         return;
       }
       window.speechSynthesis.cancel();
       resetSpeech();
       const voice = window.speechSynthesis.getVoices().find(item => item.lang.toLowerCase().startsWith('ja'));
       if (!voice) {
-        message.textContent = 'এই ব্রাউজারে জাপানি কণ্ঠ পাওয়া যায়নি। transcript খুলে অনুশীলন করুন।';
+        message.textContent = dynT('qs.noJapaneseVoice');
         return;
       }
       const utterance = new SpeechSynthesisUtterance(button.dataset.listenText);
@@ -71,9 +72,9 @@
       utterance.rate = 0.85;
       speakingButton = button;
       button.setAttribute('aria-pressed', 'true');
-      utterance.onend = () => { message.textContent = 'শোনা শেষ। প্রশ্নের উত্তর দিয়ে transcript মিলিয়ে নিন।'; resetSpeech(); };
-      utterance.onerror = () => { message.textContent = 'কণ্ঠ চালানো যায়নি। transcript খুলে পড়তে পারেন।'; resetSpeech(); };
-      message.textContent = 'জাপানি স্ক্রিপ্ট চলছে…';
+      utterance.onend = () => { message.textContent = dynT('qs.listenDone'); resetSpeech(); };
+      utterance.onerror = () => { message.textContent = dynT('qs.speechFail'); resetSpeech(); };
+      message.textContent = dynT('qs.playing');
       window.speechSynthesis.speak(utterance);
     });
   });
@@ -81,7 +82,7 @@
     button.addEventListener('click', () => {
       if ('speechSynthesis' in window) window.speechSynthesis.cancel();
       resetSpeech();
-      button.closest('.study-chapter').querySelector('.listen-status').textContent = 'শোনা থামানো হয়েছে।';
+      button.closest('.study-chapter').querySelector('.listen-status').textContent = dynT('qs.stopped');
     });
   });
   window.addEventListener('pagehide', () => {

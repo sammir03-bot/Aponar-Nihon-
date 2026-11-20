@@ -1,5 +1,6 @@
 (()=>{
   'use strict';
+  function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"sw.results": "{n}টি ফলাফল"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}
 
   const $=(selector,root=document)=>root.querySelector(selector);
   const $$=(selector,root=document)=>Array.from(root.querySelectorAll(selector));
@@ -22,7 +23,7 @@
       });
       const count=cards.filter(card=>!card.hidden).length;
       const output=$('#field-result-count');
-      if(output)output.textContent=`${count}টি ফলাফল`;
+      if(output)output.textContent=dynT('sw.results',{n:count});
     };
 
     input.addEventListener('input',apply);

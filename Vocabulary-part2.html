@@ -227,6 +227,7 @@
     </div>
 
     <script>
+function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"qn.label": "প্রশ্ন {n}"};
         (function() {
             const questions = [
                 { q: "（　）、こんにちは।", opt: ["ひる", "あさ", "よる", "こんばん"], correct: "A", exp: "こんにちは দুপুর/বিকেল থেকে ব্যবহার হয়।" },
@@ -262,7 +263,7 @@
                 // question number
                 const numSpan = document.createElement('span');
                 numSpan.className = 'q-num';
-                numSpan.innerText = `প্রশ্ন ${number}`;
+                numSpan.innerText = dynT('qn.label', {n: number});
                 card.appendChild(numSpan);
 
                 // question text
