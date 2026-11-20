@@ -1,0 +1,54 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "n5-mock-tests",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "সব লেভেল",
+      "target": "All levels"
+    },
+    {
+      "source": "অটো-সেভ + Resume",
+      "target": "Auto-save + Resume"
+    },
+    {
+      "source": "টেস্ট নির্বাচন",
+      "target": "Select Test"
+    },
+    {
+      "source": "· বর্তমান JLPT timing অনুযায়ী full practice।",
+      "target": "· Full practice according to current JLPT timing."
+    },
+    {
+      "source": "এই level-এর reference",
+      "target": "Reference for this level"
+    },
+    {
+      "source": "© ২০২৬ আপনার নিহোন · JLPT Mock Center",
+      "target": "© 2026 আপনার নিহোন · JLPT Mock Center"
+    },
+    {
+      "source": "হোম",
+      "target": "Home"
+    },
+    {
+      "source": "লেভেল",
+      "target": "Level"
+    },
+    {
+      "source": "কুইজ",
+      "target": "Quiz"
+    },
+    {
+      "source": "গাইড",
+      "target": "Guide"
+    }
+  ]
+}

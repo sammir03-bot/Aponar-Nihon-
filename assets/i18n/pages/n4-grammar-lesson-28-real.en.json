@@ -1,0 +1,474 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "n4-grammar-lesson-28-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 28: 〜ながら・〜し：একসঙ্গে কাজ ও একাধিক কারণ | N4 Grammar",
+      "target": "Lesson 28: 〜ながら・〜し — Doing Two Things at Once and Listing Reasons | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Skip to main content"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 28 · ভিত্তি বিস্তার",
+      "target": "Lesson 28 · Building on the Basics"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "All Lessons"
+    },
+    {
+      "source": "ভিত্তি বিস্তার",
+      "target": "Building Foundations"
+    },
+    {
+      "source": "ধাপ ১ · 26–30",
+      "target": "Stage 1 · 26–30"
+    },
+    {
+      "source": "〜ながら・〜し：একসঙ্গে কাজ ও একাধিক কারণ",
+      "target": "〜ながら・〜し: Doing things at the same time and listing reasons"
+    },
+    {
+      "source": "একই ব্যক্তি একই সময়ে দুই কাজ করা, অভ্যাস/পেশা বোঝানো এবং একাধিক বৈশিষ্ট্য বা কারণ সুন্দরভাবে যুক্ত করা।",
+      "target": "The same person doing two actions at the same time, expressing habits and jobs, and neatly joining several features or reasons."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 detailed grammar blocks"
+    },
+    {
+      "source": "10টি Japanese example",
+      "target": "10 Japanese examples"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice questions with explanations"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile and print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Hide あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Not completed yet"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Mark Complete"
+    },
+    {
+      "source": "Lesson 28 · লক্ষ্য",
+      "target": "Lesson 28 · Goal"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "What you will be able to do after this lesson"
+    },
+    {
+      "source": "এই lesson বাক্যের তথ্যকে যুক্ত করতে শেখায়। ながら সময়ের ওপর দুই কাজ বসায়; し একাধিক কারণ বা বৈশিষ্ট্যকে একই দিকে জমা করে। দুটিকে গুলিয়ে না ফেলে subject, সময় এবং ফলের সম্পর্ক ধরাই মূল লক্ষ্য।",
+      "target": "This lesson teaches how to join information in a sentence. ながら lays two actions over the same time; し stacks several reasons or features in the same direction. The main goal is to grasp the relation of subject, time and result without mixing the two up."
+    },
+    {
+      "source": "Vます-stem＋ながら দিয়ে একই subject-এর দুই সমকালীন কাজ বলবেন",
+      "target": "You will be able to say two simultaneous actions of the same subject with Vます-stem + ながら"
+    },
+    {
+      "source": "Vています-এর চলমান কাজ, অভ্যাস ও পেশাগত ব্যবহারের পার্থক্য বুঝবেন",
+      "target": "You will understand the difference between the ongoing-action, habit and professional uses of Vています"
+    },
+    {
+      "source": "〜し、〜し দিয়ে একাধিক কারণ/বৈশিষ্ট্য তালিকাবদ্ধ করবেন",
+      "target": "You will be able to list several reasons / features with 〜し、〜し"
+    },
+    {
+      "source": "それに এবং それで দিয়ে অতিরিক্ত তথ্য ও ফল আলাদা করবেন",
+      "target": "You will be able to distinguish extra information and results with それに and それで"
+    },
+    {
+      "source": "একই ব্যক্তি একটি কাজ করতে করতে আরেকটি কাজ করে",
+      "target": "The same person does one action while doing another"
+    },
+    {
+      "source": "গঠন",
+      "target": "Formation"
+    },
+    {
+      "source": "ধরন",
+      "target": "Type"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Example"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "Verb"
+    },
+    {
+      "source": "Vます থেকে ます বাদ＋ながら",
+      "target": "From Vます, drop ます + ながら"
+    },
+    {
+      "source": "বাক্য",
+      "target": "Sentence"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detailed Explanation"
+    },
+    {
+      "source": "V1 হলো সহায়ক/পটভূমির কাজ, V2 হলো মূল কাজ; tense ও ভদ্রতা V2-তে প্রকাশ পায়। 音楽を聞きながら勉強しました—দুই কাজই অতীতে, কারণ শেষ predicate past।",
+      "target": "V1 is the supporting / background action and V2 is the main action; tense and politeness are shown on V2. 音楽を聞きながら勉強しました — both actions are in the past, because the final predicate is past."
+    },
+    {
+      "source": "দুই clause-এর subject একই হওয়া জরুরি। ‘আমি পড়ি, ভাই গান শোনে’—এখানে ながら নয়; 普通に 〜て/〜が লাগবে।",
+      "target": "The subjects of the two clauses must be the same. In “I study, my brother listens to music”, ながら cannot be used; an ordinary (普通に) 〜て / 〜が is needed."
+    },
+    {
+      "source": "দুই কাজ মোটামুটি একই সময়জুড়ে চলবে। প্রথম কাজ শেষ করে দ্বিতীয় কাজ হলে 〜てから বা 〜たあとで ব্যবহার করুন।",
+      "target": "The two actions run over roughly the same period. If the second action happens after the first one finishes, use 〜てから or 〜たあとで."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "What to Remember"
+    },
+    {
+      "source": "ながら-এর আগে て-form নয়: 聞いてながら ✕, 聞きながら ✓।",
+      "target": "Before ながら, not the て-form: 聞いてながら ✕, 聞きながら ✓."
+    },
+    {
+      "source": "কফি খেতে খেতে সংবাদপত্র পড়ি।",
+      "target": "I read the newspaper while drinking coffee."
+    },
+    {
+      "source": "হাঁটতে হাঁটতে ফোন দেখবেন না।",
+      "target": "Do not look at your phone while walking."
+    },
+    {
+      "source": "ভাই বিশ্ববিদ্যালয়ে পড়ার পাশাপাশি কোম্পানিতে কাজ করে।",
+      "target": "My older brother works at a company alongside his university studies."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Wrong"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Correct"
+    },
+    {
+      "source": "কেন:",
+      "target": "Why:"
+    },
+    {
+      "source": "聞きます-এর stem 聞き＋ながら।",
+      "target": "The stem of 聞きます: 聞き＋ながら."
+    },
+    {
+      "source": "নিয়মিত অভ্যাস, পুনরাবৃত্তি, পেশা বা দীর্ঘস্থায়ী অবস্থা",
+      "target": "Regular habits, repetition, a job, or a long-lasting state"
+    },
+    {
+      "source": "Vています শুধু ‘এখন করছি’ নয়। 毎日, いつも, 毎週-এর সঙ্গে এলে নিয়মিত অভ্যাস বোঝায়। 会社で働いています পেশাগত/স্থিতিশীল অবস্থা।",
+      "target": "Vています is not only “doing now”. With 毎日, いつも, 毎週 it expresses a regular habit. 会社で働いています is a professional / stable state."
+    },
+    {
+      "source": "ঘটনার প্রকৃতি দেখে অর্থ বুঝুন: 今本を読んでいます = এখন পড়ছি; 毎晩本を読んでいます = প্রতি রাতে পড়ি।",
+      "target": "Understand the meaning from the nature of the event: 今本を読んでいます = I am reading now; 毎晩本を読んでいます = I read every night."
+    },
+    {
+      "source": "সময়-সূচক শব্দটি অর্থ স্পষ্ট করে; 毎朝／毎週／いつも ইত্যাদি লক্ষ্য করুন।",
+      "target": "The time word makes the meaning clear; watch for 毎朝／毎週／いつも and so on."
+    },
+    {
+      "source": "আমি প্রতিদিন সকাল ছয়টায় উঠি।",
+      "target": "I get up at six every morning."
+    },
+    {
+      "source": "আমার বাবা হাসপাতালে কাজ করেন।",
+      "target": "My father works at a hospital."
+    },
+    {
+      "source": "বর্তমান নিয়মিত অভ্যাস হলে ています; 勉強しました একটি সম্পন্ন অতীত ঘটনা।",
+      "target": "For a present regular habit, ています; 勉強しました is one completed past event."
+    },
+    {
+      "source": "একাধিক কারণ, গুণ বা তথ্য যোগ করা; তালিকা অসম্পূর্ণও হতে পারে",
+      "target": "Adding several reasons, qualities or facts; the list may be incomplete"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-adjective"
+    },
+    {
+      "source": "な-বিশেষণ/বিশেষ্য",
+      "target": "な-adjectives / nouns"
+    },
+    {
+      "source": "ভদ্র কথন",
+      "target": "Polite speech"
+    },
+    {
+      "source": "し বক্তাকে বলে ‘এটিও একটি কারণ/বৈশিষ্ট্য, আরও থাকতে পারে’। কারণের তালিকা শেষে সিদ্ধান্ত আসতে পারে: 安いし、おいしいし、この店が好きです।",
+      "target": "し tells the listener “this too is a reason / feature; there may be more”. A conclusion can come at the end of the list of reasons: 安いし、おいしいし、この店が好きです।"
+    },
+    {
+      "source": "একটি মাত্র কারণেও し ব্যবহার সম্ভব; তখন অন্য অউচ্চারিত কারণ আছে—এমন ইঙ্গিত থাকে। 今日は雨だし、出かけません = বৃষ্টিও হচ্ছে (আরও কারণ আছে), তাই বের হব না।",
+      "target": "し can be used with only one reason too; then it hints that there are other, unspoken reasons. 今日は雨だし、出かけません = it is raining (and there are other reasons), so I will not go out."
+    },
+    {
+      "source": "が/けど বিপরীত তথ্য যুক্ত করে; し একই দিকের তথ্য জমা করে।",
+      "target": "が/けど add contrasting information; し stacks information in the same direction."
+    },
+    {
+      "source": "Plain affirmative な-adjective/noun-এর পরে だし; ভদ্র ধারায় ですし-ও ঠিক।",
+      "target": "After a plain affirmative な-adjective / noun comes だし; in polite style ですし is also fine."
+    },
+    {
+      "source": "ঘরটি বড়, উজ্জ্বল, আবার ভাড়াও কম।",
+      "target": "The room is big and bright, and the rent is low too."
+    },
+    {
+      "source": "তানাকা দয়ালু, আর জাপানিও ভালো পারেন।",
+      "target": "Tanaka is kind, and is also good at Japanese."
+    },
+    {
+      "source": "সময়ও নেই, তাই আজ ট্যাক্সিতে যাই।",
+      "target": "I have no time either, so today I will go by taxi."
+    },
+    {
+      "source": "静か হলো な-বিশেষণ; plain affirmative-এ だし।",
+      "target": "静か is a な-adjective; in the plain affirmative, だし."
+    },
+    {
+      "source": "それに = তার ওপর/আরও; それで = তাই/ফলে",
+      "target": "それに = on top of that / moreover; それで = so / as a result"
+    },
+    {
+      "source": "সংযোগ",
+      "target": "Connector"
+    },
+    {
+      "source": "それに একই দিকের অতিরিক্ত তথ্য যোগ করে—ইংরেজির ‘moreover’। それで আগের কারণ বা পরিস্থিতির ফল জানায়—‘therefore/so’।",
+      "target": "それに adds extra information in the same direction — “moreover” in English. それで states the result of the previous reason or situation — “therefore / so”."
+    },
+    {
+      "source": "কারণ ও ফল উল্টো করলে অর্থ ভাঙবে। 電車が止まりました。それで、遅れました = ট্রেন বন্ধ ছিল, তাই দেরি হয়েছে।",
+      "target": "If you reverse cause and result, the meaning breaks. 電車が止まりました。それで、遅れました = the train had stopped, so I was late."
+    },
+    {
+      "source": "অতিরিক্ত গুণ → それに; স্বাভাবিক ফল → それで।",
+      "target": "An extra quality → それに; a natural result → それで."
+    },
+    {
+      "source": "দোকানটি সস্তা। তার ওপর সেবাও ভালো।",
+      "target": "The shop is cheap. On top of that, the service is good too."
+    },
+    {
+      "source": "রাস্তায় যানজট ছিল। তাই মিটিংয়ে দেরি হয়েছে।",
+      "target": "There was a traffic jam on the road. So I was late for the meeting."
+    },
+    {
+      "source": "ম্যাচ বাতিল হওয়া বৃষ্টির ফল; তাই それで।",
+      "target": "The match being cancelled is a result of the rain; so それで."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Differences at a Glance"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Which one in which situation?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Form"
+    },
+    {
+      "source": "সম্পর্ক",
+      "target": "Relationship"
+    },
+    {
+      "source": "Subject/দিক",
+      "target": "Subject / direction"
+    },
+    {
+      "source": "একই সময়ে দুই কাজ",
+      "target": "Two actions at the same time"
+    },
+    {
+      "source": "একই subject",
+      "target": "The same subject"
+    },
+    {
+      "source": "প্রথমটি শেষ, পরে দ্বিতীয়টি",
+      "target": "The first finishes, then the second"
+    },
+    {
+      "source": "সময়ক্রম",
+      "target": "Sequence in time"
+    },
+    {
+      "source": "একই দিকে কারণ/গুণ জমা",
+      "target": "Reasons / qualities stacking in the same direction"
+    },
+    {
+      "source": "আরও কারণের ইঙ্গিত",
+      "target": "A hint of more reasons"
+    },
+    {
+      "source": "কারণ → ফল",
+      "target": "Cause → result"
+    },
+    {
+      "source": "ফলাফলের সংযোগ",
+      "target": "Result connector"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Real-life conversations"
+    },
+    {
+      "source": "বাসা বাছাই",
+      "target": "Choosing a Home"
+    },
+    {
+      "source": "এই অ্যাপার্টমেন্ট কেমন?",
+      "target": "How is this apartment?"
+    },
+    {
+      "source": "স্টেশনের কাছে, ঘরও বড়। তার ওপর ভাড়াও কম।",
+      "target": "It is near the station, and the rooms are big. On top of that, the rent is low."
+    },
+    {
+      "source": "ভালো তো।",
+      "target": "That sounds good."
+    },
+    {
+      "source": "হ্যাঁ। গান শুনতে শুনতে রান্নাও করা যাবে।",
+      "target": "Yes. You can even cook while listening to music."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Check Yourself"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice with answers and explanations"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "First write the answers in your notebook, then tap a question to check the answer and the reason."
+    },
+    {
+      "source": "1. ‘গান শুনতে শুনতে পড়ি’ বলুন।",
+      "target": "1. Say: “I study while listening to music.”"
+    },
+    {
+      "source": "聞きます→聞き＋ながら; মূল কাজ 勉強します।",
+      "target": "聞きます→聞き＋ながら; the main action is 勉強します."
+    },
+    {
+      "source": "2. 静か／便利—দুটি গুণ し দিয়ে যুক্ত করুন।",
+      "target": "2. 静か／便利 — Join the two qualities with し."
+    },
+    {
+      "source": "な-বিশেষণের plain affirmative: だし।",
+      "target": "Plain affirmative of a な-adjective: だし."
+    },
+    {
+      "source": "3. শূন্যস্থান: 電車が止まりました。____、遅れました。",
+      "target": "3. Fill in the blank: 電車が止まりました。____、遅れました."
+    },
+    {
+      "source": "আগের ঘটনা দেরির কারণ; পরেরটি ফল।",
+      "target": "The earlier event is the cause of the delay; the later one is the result."
+    },
+    {
+      "source": "4. ‘আমি প্রতি সপ্তাহে সাঁতার কাটি’—ています ব্যবহার করুন।",
+      "target": "4. “I swim every week” — use ています."
+    },
+    {
+      "source": "পুনরাবৃত্ত অভ্যাসে Vています।",
+      "target": "For a repeated habit, Vています."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "The Master Key in One Sentence"
+    },
+    {
+      "source": "ながら-তে সময় এক, subject এক; し-তে তথ্য একদিকে জমে; それで-তে আগের ঘটনা পরের ফল তৈরি করে। এই তিনটি সম্পর্ক আলাদা করে দেখলেই ভুল কমবে।",
+      "target": "With ながら the time is the same and the subject is the same; with し, information stacks in one direction; with それで, the earlier event produces the later result. Keeping these three relations apart will reduce mistakes."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Trusted References"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus and Verification"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "This independent lesson in English was created by aligning the lesson sequence of Minna no Nihongo II, the official JLPT N4 scope and the Japan Foundation's learner resources. The examples and explanations in English are newly written."
+    },
+    {
+      "source": "← আগের Lesson 27",
+      "target": "← Previous Lesson 27"
+    },
+    {
+      "source": "Potential Form：পারা, সুযোগ ও স্বতঃস্ফূর্ত অনুভব",
+      "target": "Potential Form: Ability, Opportunity and Spontaneous Feelings"
+    },
+    {
+      "source": "পরের Lesson 29 →",
+      "target": "Next Lesson 29 →"
+    },
+    {
+      "source": "Result State：Vています ও Vてしまいます",
+      "target": "Result State: Vています and Vてしまいます"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson Index"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Learning goal"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Comparison Table"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress is loading…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "A free, detailed self-study edition in English for learners."
+    }
+  ]
+}

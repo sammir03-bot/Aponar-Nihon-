@@ -1,0 +1,4338 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "n3-kanji",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "JLPT N3 Kanji Lab বাংলা | আপনার নিহোন",
+      "target": "JLPT N3 Kanji Lab English | আপনার নিহোন"
+    },
+    {
+      "source": "Lesson-এ যান",
+      "target": "Go to Lesson"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "জাপানি শেখা, বাংলায় সহজ",
+      "target": "Learn Japanese, easy in Bengali"
+    },
+    {
+      "source": "মূল সাইট ↗",
+      "target": "Main Site ↗"
+    },
+    {
+      "source": "Kanji দেখুন।",
+      "target": "View Kanji."
+    },
+    {
+      "source": "শব্দে ব্যবহার করুন।",
+      "target": "Use in words."
+    },
+    {
+      "source": "মনে রাখুন।",
+      "target": "Remember."
+    },
+    {
+      "source": "Nihongo Sou Matome N3-এর বইয়ের ক্রমে",
+      "target": "In the order of Nihongo Sou Matome N3 books"
+    },
+    {
+      "source": "৩৬টি Lesson",
+      "target": "36 Lessons"
+    },
+    {
+      "source": "—বড় Kanji tile, furigana, সহজ বাংলা অর্থ এবং প্রতি Part শেষে Exam।",
+      "target": "—Large Kanji tiles, furigana, easy English meanings, and an Exam at the end of each Part."
+    },
+    {
+      "source": "শব্দ",
+      "target": "Words"
+    },
+    {
+      "source": "Exam · 120 প্রশ্ন",
+      "target": "Exam · 120 questions"
+    },
+    {
+      "source": "まなぶ · শেখা",
+      "target": "まなぶ · Learning"
+    },
+    {
+      "source": "সব Lesson ও Exam",
+      "target": "All Lessons & Exams"
+    },
+    {
+      "source": "Lesson 01 · 駐車場 · পার্কিং এলাকা",
+      "target": "Lesson 01 · 駐車場 · Parking area"
+    },
+    {
+      "source": "Lesson 02 · 横断歩道 · পথচারী পারাপার",
+      "target": "Lesson 02 · 横断歩道 · Pedestrian crossing"
+    },
+    {
+      "source": "Lesson 03 · サイン · বিভিন্ন সাইন ও চিহ্ন",
+      "target": "Lesson 03 · サイン · Various signs and symbols"
+    },
+    {
+      "source": "Lesson 04 · 駅のホーム · স্টেশনের প্ল্যাটফর্ম",
+      "target": "Lesson 04 · 駅のホーム · Station platform"
+    },
+    {
+      "source": "Lesson 05 · 特急電車 · লিমিটেড এক্সপ্রেস ট্রেন",
+      "target": "Lesson 05 · 特急電車 · Limited express train"
+    },
+    {
+      "source": "Lesson 06 · バス · বাস",
+      "target": "Lesson 06 · バス · Bus"
+    },
+    {
+      "source": "Lesson 07 · レストラン · রেস্তোরাঁ",
+      "target": "Lesson 07 · レストラン · Restaurant"
+    },
+    {
+      "source": "Lesson 08 · 禁煙 · ধূমপান নিষেধ",
+      "target": "Lesson 08 · 禁煙 · No smoking"
+    },
+    {
+      "source": "Lesson 09 · 観光地図 · পর্যটন মানচিত্র",
+      "target": "Lesson 09 · 観光地図 · Tourist map"
+    },
+    {
+      "source": "Lesson 10 · 町の地図 · শহরের মানচিত্র",
+      "target": "Lesson 10 · 町の地図 · City map"
+    },
+    {
+      "source": "Lesson 11 · 病院 · হাসপাতাল",
+      "target": "Lesson 11 · 病院 · Hospital"
+    },
+    {
+      "source": "Lesson 12 · 困ったときは · সমস্যায় পড়লে",
+      "target": "Lesson 12 · 困ったときは · When in trouble"
+    },
+    {
+      "source": "Lesson 13 · 要冷蔵 · ফ্রিজে সংরক্ষণ",
+      "target": "Lesson 13 · 要冷蔵 · Keep refrigerated"
+    },
+    {
+      "source": "Lesson 14 · 賞味期限 · ভালো থাকার শেষ তারিখ",
+      "target": "Lesson 14 · 賞味期限 · Best-before date"
+    },
+    {
+      "source": "Lesson 15 · 自動販売機 · ভেন্ডিং মেশিন",
+      "target": "Lesson 15 · 自動販売機 · Vending machine"
+    },
+    {
+      "source": "Lesson 16 · レシピ · রেসিপি",
+      "target": "Lesson 16 · レシピ · Recipe"
+    },
+    {
+      "source": "Lesson 17 · コピー機・留守番電話 · কপিয়ার ও অ্যানসারিং মেশিন",
+      "target": "Lesson 17 · コピー機・留守番電話 · Copier & Answering machine"
+    },
+    {
+      "source": "Lesson 18 · 携帯電話 · মোবাইল ফোন",
+      "target": "Lesson 18 · 携帯電話 · Mobile phone"
+    },
+    {
+      "source": "Lesson 19 · 日用品 · দৈনন্দিন প্রয়োজনীয় জিনিস",
+      "target": "Lesson 19 · 日用品 · Daily necessities"
+    },
+    {
+      "source": "Lesson 20 · 広告メール · বিজ্ঞাপনী ইমেইল",
+      "target": "Lesson 20 · 広告メール · Promotional email"
+    },
+    {
+      "source": "Lesson 21 · 通信販売 · ডাক/অনলাইনে কেনাকাটা",
+      "target": "Lesson 21 · 通信販売 · Mail-order / Online shopping"
+    },
+    {
+      "source": "Lesson 22 · 申込書 · আবেদনপত্র",
+      "target": "Lesson 22 · 申込書 · Application form"
+    },
+    {
+      "source": "Lesson 23 · 注文 · অর্ডার",
+      "target": "Lesson 23 · 注文 · Order"
+    },
+    {
+      "source": "Lesson 24 · 不在通知 · অনুপস্থিতির ডেলিভারি নোটিশ",
+      "target": "Lesson 24 · 不在通知 · Delivery absence notice"
+    },
+    {
+      "source": "Lesson 25 · メールを送る · ইমেইল পাঠানো",
+      "target": "Lesson 25 · メールを送る · Send email"
+    },
+    {
+      "source": "Lesson 26 · アンケート · জরিপ ও প্রশ্নপত্র",
+      "target": "Lesson 26 · アンケート · Survey & Questionnaire"
+    },
+    {
+      "source": "Lesson 27 · 日本語クラス · জাপানি ভাষার ক্লাস",
+      "target": "Lesson 27 · 日本語クラス · Japanese Language Class"
+    },
+    {
+      "source": "Lesson 28 · 作文 · রচনা লেখা",
+      "target": "Lesson 28 · 作文 · Essay Writing"
+    },
+    {
+      "source": "Lesson 29 · 問診票・歯科で · ডেন্টাল রোগীর ফর্ম",
+      "target": "Lesson 29 · 問診票・歯科で · Dental Patient Form"
+    },
+    {
+      "source": "Lesson 30 · 問診票・健康診断 · স্বাস্থ্য পরীক্ষার ফর্ম",
+      "target": "Lesson 30 · 問診票・健康診断 · Health Checkup Form"
+    },
+    {
+      "source": "Lesson 31 · 天気情報 · আবহাওয়ার তথ্য",
+      "target": "Lesson 31 · 天気情報 · Weather Information"
+    },
+    {
+      "source": "Lesson 32 · 求人広告 · চাকরির বিজ্ঞাপন",
+      "target": "Lesson 32 · 求人広告 · Job Advertisement"
+    },
+    {
+      "source": "Lesson 33 · スポーツ記事 · খেলাধুলার সংবাদ",
+      "target": "Lesson 33 · スポーツ記事 · Sports Article"
+    },
+    {
+      "source": "Lesson 34 · 経済 · অর্থনীতি",
+      "target": "Lesson 34 · 経済 · Economy"
+    },
+    {
+      "source": "Lesson 35 · 地球温暖化 · বিশ্ব উষ্ণায়ন",
+      "target": "Lesson 35 · 地球温暖化 · Global Warming"
+    },
+    {
+      "source": "Lesson 36 · 政治 · রাজনীতি",
+      "target": "Lesson 36 · 政治 · Politics"
+    },
+    {
+      "source": "শুধু বাকি",
+      "target": "Remaining only"
+    },
+    {
+      "source": "সব Part",
+      "target": "All Parts"
+    },
+    {
+      "source": "Part 1 · বাইরে যাওয়া ১",
+      "target": "Part 1 · Going Out 1"
+    },
+    {
+      "source": "Part 2 · বাইরে যাওয়া ২",
+      "target": "Part 2 · Going Out 2"
+    },
+    {
+      "source": "Part 3 · ব্যবহার করা",
+      "target": "Part 3 · Usage"
+    },
+    {
+      "source": "Part 4 · কেনাকাটা",
+      "target": "Part 4 · Shopping"
+    },
+    {
+      "source": "Part 5 · লেখা",
+      "target": "Part 5 · Writing"
+    },
+    {
+      "source": "Part 6 · পড়া",
+      "target": "Part 6 · Reading"
+    },
+    {
+      "source": "0 / 42 শেষ",
+      "target": "0 / 42 completed"
+    },
+    {
+      "source": "42টি item",
+      "target": "42 items"
+    },
+    {
+      "source": "এক Lesson, তিন ধাপ",
+      "target": "One Lesson, Three Steps"
+    },
+    {
+      "source": "Kanji → শব্দ → বাংলা recall; তারপর “পড়া শেষ” দিন।",
+      "target": "Kanji → Word → Bengali recall; then click \"Finish Reading\"."
+    },
+    {
+      "source": "বড় অক্ষরটি ৫ সেকেন্ড দেখুন",
+      "target": "Look at the large character for 5 seconds"
+    },
+    {
+      "source": "Furigana জোরে ৩ বার পড়ুন",
+      "target": "Read the furigana aloud 3 times"
+    },
+    {
+      "source": "বাংলা দেখে Japanese বলুন",
+      "target": "Say the Japanese while looking at the Bengali"
+    },
+    {
+      "source": "PART 1 · ৬ LESSON + EXAM",
+      "target": "PART 1 · 6 LESSONS + EXAM"
+    },
+    {
+      "source": "বাইরে যাওয়া ১",
+      "target": "Going Out 1"
+    },
+    {
+      "source": "পার্কিং এলাকা · 21টি শব্দ",
+      "target": "Parking Area · 21 words"
+    },
+    {
+      "source": "পড়া শেষ",
+      "target": "Finish Reading"
+    },
+    {
+      "source": "প্রথমে এই ৩টি শব্দ",
+      "target": "First, these 3 words"
+    },
+    {
+      "source": "জোরে তিনবার পড়ুন, তারপর বাংলা না দেখে অর্থ বলুন।",
+      "target": "Read aloud three times, then state the meaning without looking at the Bengali."
+    },
+    {
+      "source": "গাড়ি পার্ক করা",
+      "target": "Parking a car"
+    },
+    {
+      "source": "পার্কিং এলাকা",
+      "target": "Parking area"
+    },
+    {
+      "source": "ছুটি ছাড়া খোলা",
+      "target": "Open without holidays"
+    },
+    {
+      "source": "2টি শব্দ",
+      "target": "2 words"
+    },
+    {
+      "source": "4টি শব্দ",
+      "target": "4 words"
+    },
+    {
+      "source": "বিনামূল্যে",
+      "target": "Free of charge"
+    },
+    {
+      "source": "অসম্ভব / অযৌক্তিক",
+      "target": "Impossible / Unreasonable"
+    },
+    {
+      "source": "নেই / অস্তিত্ব নেই",
+      "target": "Does not exist / Non-existent"
+    },
+    {
+      "source": "3টি শব্দ",
+      "target": "3 words"
+    },
+    {
+      "source": "পার্কিং পূর্ণ",
+      "target": "Parking full"
+    },
+    {
+      "source": "আসন পূর্ণ",
+      "target": "Seats full"
+    },
+    {
+      "source": "অসন্তুষ্ট",
+      "target": "Dissatisfied"
+    },
+    {
+      "source": "দিক",
+      "target": "Direction"
+    },
+    {
+      "source": "ওপারে / ওই দিকে",
+      "target": "Over there / in that direction"
+    },
+    {
+      "source": "দিকে যাওয়া / মুখ করা",
+      "target": "Heading towards / facing"
+    },
+    {
+      "source": "~ এর জন্য উপযুক্ত",
+      "target": "~ Suitable for"
+    },
+    {
+      "source": "1টি শব্দ",
+      "target": "1 word"
+    },
+    {
+      "source": "নিষেধাজ্ঞা",
+      "target": "Prohibition"
+    },
+    {
+      "source": "আগ্রহ উদ্বেগ",
+      "target": "Interest / concern"
+    },
+    {
+      "source": "সম্পর্কিত / উদ্বেগ",
+      "target": "Related to / concern"
+    },
+    {
+      "source": "সম্পর্ক",
+      "target": "Relationship"
+    },
+    {
+      "source": "দায়িত্বপ্রাপ্ত ব্যক্তি / দায়িত্ব",
+      "target": "Person in charge / responsibility"
+    },
+    {
+      "source": "অনুমতি ছাড়া",
+      "target": "Without permission"
+    },
+    {
+      "source": "পানি সরবরাহ বন্ধ",
+      "target": "Water supply shut off"
+    },
+    {
+      "source": "প্রত্যাখ্যান করা / না বলা",
+      "target": "Reject / say no"
+    },
+    {
+      "source": "↑ Part-এর শুরুতে ফিরুন",
+      "target": "↑ Return to the beginning of the part"
+    },
+    {
+      "source": "পথচারী পারাপার · 22টি শব্দ",
+      "target": "Pedestrian crossing · 22 words"
+    },
+    {
+      "source": "ক্রসিং অতিক্রম করা",
+      "target": "Crossing an intersection"
+    },
+    {
+      "source": "ক্রসওয়াক পথচারী পারাপার",
+      "target": "Crosswalk / pedestrian crossing"
+    },
+    {
+      "source": "পার্শ্ব অনুভূমিক",
+      "target": "Side / horizontal"
+    },
+    {
+      "source": "চাপ দেওয়া",
+      "target": "Push"
+    },
+    {
+      "source": "চেপে ধরা",
+      "target": "Hold down"
+    },
+    {
+      "source": "দেয়ালের আলমারি / স্টোরেজ ক্লোজেট",
+      "target": "Wall cupboard / storage closet"
+    },
+    {
+      "source": "পুশ-বোতামের ধরন / পুশ-বোতাম-চালিত",
+      "target": "Push-button type / push-button operated"
+    },
+    {
+      "source": "প্রবেশ অনুষ্ঠান",
+      "target": "Entrance hall"
+    },
+    {
+      "source": "সূত্র গাণিতিক অভিব্যক্তি",
+      "target": "Formula / mathematical expression"
+    },
+    {
+      "source": "পাঠানো / প্রেরণ",
+      "target": "Send / dispatch"
+    },
+    {
+      "source": "বিশ্বাস করা বিশ্বাস",
+      "target": "Believe / trust"
+    },
+    {
+      "source": "আত্মবিশ্বাস",
+      "target": "Self-confidence"
+    },
+    {
+      "source": "বিশ্বাস / আস্থা",
+      "target": "Trust / confidence"
+    },
+    {
+      "source": "সংকেত ট্রাফিক সিগন্যাল",
+      "target": "Signal / traffic signal"
+    },
+    {
+      "source": "ট্রেনের বগি নম্বর",
+      "target": "Train car number"
+    },
+    {
+      "source": "নির্ভুল / সঠিক",
+      "target": "Accurate / correct"
+    },
+    {
+      "source": "নিশ্চিত করা যাচাই",
+      "target": "Confirm / verify"
+    },
+    {
+      "source": "নির্দিষ্ট নিশ্চিত",
+      "target": "Specific / confirmed"
+    },
+    {
+      "source": "স্বীকৃতি স্বীকার করা",
+      "target": "Acknowledgment / admit"
+    },
+    {
+      "source": "বিমানবন্দর",
+      "target": "Airport"
+    },
+    {
+      "source": "উড়া / লাফ দেওয়া",
+      "target": "Fly / jump"
+    },
+    {
+      "source": "বিভিন্ন সাইন ও চিহ্ন · 13টি শব্দ",
+      "target": "Various signs and symbols · 13 words"
+    },
+    {
+      "source": "জরুরি অবস্থা অসাধারণ",
+      "target": "emergency extraordinary"
+    },
+    {
+      "source": "অত্যন্ত খুব",
+      "target": "extremely very"
+    },
+    {
+      "source": "জরুরি নির্গমনপথ",
+      "target": "emergency exit"
+    },
+    {
+      "source": "দৈনিক প্রতিদিন",
+      "target": "daily every day"
+    },
+    {
+      "source": "স্বাভাবিক নিয়মিত",
+      "target": "normal regular"
+    },
+    {
+      "source": "মেঝে / গল্প",
+      "target": "floor / story"
+    },
+    {
+      "source": "সিঁড়ি",
+      "target": "stairs"
+    },
+    {
+      "source": "বাক্স / মামলা",
+      "target": "box / case"
+    },
+    {
+      "source": "আবর্জনা ক্যান / আবর্জনা বিন",
+      "target": "garbage can / trash bin"
+    },
+    {
+      "source": "বিপদ বিপজ্জনক",
+      "target": "danger dangerous"
+    },
+    {
+      "source": "ফেলে দেওয়া বাতিল",
+      "target": "discard cancel"
+    },
+    {
+      "source": "স্টেশনের প্ল্যাটফর্ম · 22টি শব্দ",
+      "target": "station platform · 22 words"
+    },
+    {
+      "source": "লাইন ট্র্যাক",
+      "target": "line track"
+    },
+    {
+      "source": "প্ল্যাটফর্ম নম্বর / ট্র্যাক নম্বর",
+      "target": "platform number / track number"
+    },
+    {
+      "source": "সমগ্র সম্পূর্ণ",
+      "target": "entire complete"
+    },
+    {
+      "source": "পর্দা / প্রদর্শন",
+      "target": "screen / display"
+    },
+    {
+      "source": "নির্দেশ জন্য আবদ্ধ",
+      "target": "bound for direction"
+    },
+    {
+      "source": "সাধারণ স্বাভাবিক",
+      "target": "general normal"
+    },
+    {
+      "source": "প্রতিটি স্টেশন",
+      "target": "every station"
+    },
+    {
+      "source": "প্রতিটি দেশ",
+      "target": "every country"
+    },
+    {
+      "source": "প্রতিটি ব্যক্তি",
+      "target": "every person"
+    },
+    {
+      "source": "বিষয়বস্তুর সারণী",
+      "target": "table of contents"
+    },
+    {
+      "source": "পরের বার",
+      "target": "next time"
+    },
+    {
+      "source": "পরবর্তী",
+      "target": "next"
+    },
+    {
+      "source": "দ্রুত প্রকাশ",
+      "target": "rapid express"
+    },
+    {
+      "source": "এক্সপ্রেসওয়ে / মহাসড়ক",
+      "target": "expressway / highway"
+    },
+    {
+      "source": "গতি",
+      "target": "speed"
+    },
+    {
+      "source": "দ্রুত দ্রুত",
+      "target": "fast quickly"
+    },
+    {
+      "source": "পাস করা পাস",
+      "target": "pass pass"
+    },
+    {
+      "source": "অতীত",
+      "target": "past"
+    },
+    {
+      "source": "পাস করা / অতিক্রম করা",
+      "target": "passing / overtaking"
+    },
+    {
+      "source": "পাতাল রেল ভূগর্ভস্থ",
+      "target": "subway underground"
+    },
+    {
+      "source": "রেলপথ",
+      "target": "railway"
+    },
+    {
+      "source": "লোহা",
+      "target": "iron"
+    },
+    {
+      "source": "লিমিটেড এক্সপ্রেস ট্রেন · 24টি শব্দ",
+      "target": "limited express train · 24 words"
+    },
+    {
+      "source": "পদবী স্পেসিফিকেশন",
+      "target": "title specification"
+    },
+    {
+      "source": "সংরক্ষিত আসন",
+      "target": "reserved seat"
+    },
+    {
+      "source": "আঙুল",
+      "target": "finger"
+    },
+    {
+      "source": "রিং",
+      "target": "ring"
+    },
+    {
+      "source": "নিয়মিত ছুটি / বন্ধ দিন",
+      "target": "regular holiday / closed day"
+    },
+    {
+      "source": "স্থিতিশীলতা / স্থিতিশীল",
+      "target": "stability / stable"
+    },
+    {
+      "source": "অস্থির অস্থিরতা",
+      "target": "unstable instability"
+    },
+    {
+      "source": "আসন",
+      "target": "seat"
+    },
+    {
+      "source": "উপস্থিতি উপস্থিতি",
+      "target": "presence attendance"
+    },
+    {
+      "source": "অনুপস্থিতি",
+      "target": "absence"
+    },
+    {
+      "source": "স্বাধীনতা স্বাধীনতা",
+      "target": "freedom independence"
+    },
+    {
+      "source": "অসংরক্ষিত আসন",
+      "target": "unreserved seat"
+    },
+    {
+      "source": "কারণ",
+      "target": "reason"
+    },
+    {
+      "source": "সংখ্যা",
+      "target": "number"
+    },
+    {
+      "source": "জানালা",
+      "target": "window"
+    },
+    {
+      "source": "টিকিট জানালা / পরিষেবা কাউন্টার",
+      "target": "ticket window / service counter"
+    },
+    {
+      "source": "উভয় পক্ষ",
+      "target": "both parties"
+    },
+    {
+      "source": "জানালার পাশে / জানালার সিট",
+      "target": "window side / window seat"
+    },
+    {
+      "source": "ডান দিকে",
+      "target": "on the right side"
+    },
+    {
+      "source": "করিডোর পথ",
+      "target": "aisle path"
+    },
+    {
+      "source": "রাস্তা",
+      "target": "road"
+    },
+    {
+      "source": "রেলপথ / রেলপথ ট্র্যাক",
+      "target": "railroad / railway track"
+    },
+    {
+      "source": "বাস · 25টি শব্দ",
+      "target": "bus · 25 words"
+    },
+    {
+      "source": "থামা থামা",
+      "target": "stop stop"
+    },
+    {
+      "source": "বাস স্টপ",
+      "target": "bus stop"
+    },
+    {
+      "source": "বাছাই / ব্যবস্থা",
+      "target": "sorting / arrangement"
+    },
+    {
+      "source": "সংখ্যাযুক্ত টিকিট",
+      "target": "numbered ticket"
+    },
+    {
+      "source": "পার্কিং টিকিট",
+      "target": "parking ticket"
+    },
+    {
+      "source": "বোর্ডিং টিকেট",
+      "target": "boarding ticket"
+    },
+    {
+      "source": "টিকিটের বই / মাল্টি রাইড টিকেট",
+      "target": "ticket book / multi-ride ticket"
+    },
+    {
+      "source": "নগদ",
+      "target": "cash"
+    },
+    {
+      "source": "অভিব্যক্তি",
+      "target": "expression"
+    },
+    {
+      "source": "প্রদর্শিত",
+      "target": "displayed"
+    },
+    {
+      "source": "পিতামাতা",
+      "target": "parents"
+    },
+    {
+      "source": "ট্রেন গাড়ির জন্য কাউন্টার",
+      "target": "counter for train cars"
+    },
+    {
+      "source": "প্রতিস্থাপন বিনিময়",
+      "target": "replacement exchange"
+    },
+    {
+      "source": "অর্থ বিনিময়",
+      "target": "money exchange"
+    },
+    {
+      "source": "কাপড় পরিবর্তন",
+      "target": "change of clothes"
+    },
+    {
+      "source": "অগ্রাধিকার আসন",
+      "target": "priority seat"
+    },
+    {
+      "source": "অভিনেত্রী",
+      "target": "actress"
+    },
+    {
+      "source": "ধরনের মৃদু",
+      "target": "gentle type"
+    },
+    {
+      "source": "আনুষ্ঠানিক নতজানু",
+      "target": "formal bow"
+    },
+    {
+      "source": "বসা",
+      "target": "sitting"
+    },
+    {
+      "source": "নামানো প্রস্থান",
+      "target": "drop-off exit"
+    },
+    {
+      "source": "পরে / তারপর",
+      "target": "after / then"
+    },
+    {
+      "source": "নেমে যাওয়া",
+      "target": "Get off / descend"
+    },
+    {
+      "source": "পতন (বৃষ্টি / তুষার)",
+      "target": "Fall (rain / snow)"
+    },
+    {
+      "source": "20 প্রশ্ন · উত্তর Submit-এর আগে গোপন থাকবে",
+      "target": "20 questions · Answers will remain hidden before submit"
+    },
+    {
+      "source": "Exam শেষ",
+      "target": "Exam finished"
+    },
+    {
+      "source": "প্রশ্নে furigana লুকানো—কারণ reading-টাই উত্তর। সবগুলো করে শেষে একসঙ্গে মিলিয়ে দেখুন।",
+      "target": "Furigana is hidden in questions—because the reading itself is the answer. Do them all and check them together at the end."
+    },
+    {
+      "source": "দাগ দেওয়া শব্দের সঠিক পড়া বেছে নাও",
+      "target": "Choose the correct reading for the underlined word"
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · とびだしちゅうい",
+      "target": "Correct answer: 2 · とびだしちゅうい"
+    },
+    {
+      "source": "এখানে ‘হঠাৎ বেরিয়ে আসা থেকে সাবধান’ লেখা আছে।",
+      "target": "It says 'Beware of sudden exits/running out'."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · せいかく",
+      "target": "Correct answer: 1 · せいかく"
+    },
+    {
+      "source": "এই ঘড়িটি সঠিক।",
+      "target": "This clock is accurate."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · おうだん",
+      "target": "Correct answer: 2 · おうだん"
+    },
+    {
+      "source": "চলো ক্রসওয়াকে পার হই।",
+      "target": "Let's cross at the crosswalk."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · てつ",
+      "target": "Correct answer: 4 · てつ"
+    },
+    {
+      "source": "এই পাত্রটি লোহা দিয়ে তৈরি।",
+      "target": "This container is made of iron."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · ゆうせん",
+      "target": "Correct answer: 3 · ゆうせん"
+    },
+    {
+      "source": "অনুগ্রহ করে অগ্রাধিকারের আসনে মোবাইল ফোন ব্যবহার করবেন না।",
+      "target": "Please do not use mobile phones in priority seating."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · おりる",
+      "target": "Correct answer: 4 · おりる"
+    },
+    {
+      "source": "নামার সময় ভাড়া পরিশোধ করুন।",
+      "target": "Please pay the fare when getting off."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · かんけいしゃ",
+      "target": "Correct answer: 1 · かんけいしゃ"
+    },
+    {
+      "source": "আপনি অনুমোদিত না হলে অনুগ্রহ করে প্রবেশ করবেন না।",
+      "target": "Please do not enter unless authorized."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · かくにん",
+      "target": "Correct answer: 2 · かくにん"
+    },
+    {
+      "source": "নিশ্চিত বোতাম টিপুন।",
+      "target": "Press the confirm button."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · よこ",
+      "target": "Correct answer: 2 · よこ"
+    },
+    {
+      "source": "দরজার পাশে একটি সুইচ আছে।",
+      "target": "There is a switch beside the door."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · ひこうじょう",
+      "target": "Correct answer: 4 · ひこうじょう"
+    },
+    {
+      "source": "হাইওয়ে থেকে এয়ারপোর্ট দেখা যায়।",
+      "target": "The airport can be seen from the highway."
+    },
+    {
+      "source": "হিরাগানার সঠিক কানজি বেছে নাও",
+      "target": "Choose the correct kanji for the hiragana"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 何番",
+      "target": "Correct answer: 3 · 何番"
+    },
+    {
+      "source": "আসন সংখ্যা কত?",
+      "target": "What is the seat number?"
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · 線",
+      "target": "Correct answer: 1 · 線"
+    },
+    {
+      "source": "অনুগ্রহ করে পিছনে যান এবং হলুদ লাইনের পিছনে অপেক্ষা করুন।",
+      "target": "Please step back and wait behind the yellow line."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 表現",
+      "target": "Correct answer: 4 · 表現"
+    },
+    {
+      "source": "সেই অভিনেত্রী খুবই ভাবপ্রবণ।",
+      "target": "That actress is very expressive."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 認めた",
+      "target": "Correct answer: 2 · 認めた"
+    },
+    {
+      "source": "প্রেসিডেন্ট ভুল স্বীকার করেছেন।",
+      "target": "The president admitted the mistake."
+    },
+    {
+      "source": "শূন্যস্থানে সবচেয়ে উপযুক্ত কানজি বসাও",
+      "target": "Fill in the blank with the most appropriate kanji"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 各",
+      "target": "Correct answer: 3 · 各"
+    },
+    {
+      "source": "এই ট্রেনটি প্রতিটি স্টেশনে থামে।",
+      "target": "This train stops at every station."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 式",
+      "target": "Correct answer: 4 · 式"
+    },
+    {
+      "source": "সেই সংকেতটি পুশ-বোতাম দ্বারা চালিত হয়।",
+      "target": "That signal is operated by a push-button."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 満",
+      "target": "Correct answer: 2 · 満"
+    },
+    {
+      "source": "পার্কিং লট বর্তমানে পূর্ণ।",
+      "target": "The parking lot is currently full."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 無",
+      "target": "Correct answer: 3 · 無"
+    },
+    {
+      "source": "10,000 ইয়েন বা তার বেশি অর্ডারের জন্য শিপিং বিনামূল্যে।",
+      "target": "Shipping is free for orders of 10,000 yen or more."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 券",
+      "target": "Correct answer: 4 · 券"
+    },
+    {
+      "source": "অনুগ্রহ করে একটি নম্বরযুক্ত টিকিট নিন এবং অপেক্ষা করুন।",
+      "target": "Please take a numbered ticket and wait."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · 箱",
+      "target": "Correct answer: 1 · 箱"
+    },
+    {
+      "source": "ভাড়া বাক্সে টাকা রাখুন.",
+      "target": "Put the money in the fare box."
+    },
+    {
+      "source": "উত্তর মিলিয়ে দেখুন",
+      "target": "Check answer"
+    },
+    {
+      "source": "আবার চেষ্টা",
+      "target": "Try again"
+    },
+    {
+      "source": "স্কোর এখনো হয়নি",
+      "target": "No score yet"
+    },
+    {
+      "source": "PART 2 · ৬ LESSON + EXAM",
+      "target": "PART 2 · 6 LESSON + EXAM"
+    },
+    {
+      "source": "বাইরে যাওয়া ২",
+      "target": "Going out 2"
+    },
+    {
+      "source": "রেস্তোরাঁ · 17টি শব্দ",
+      "target": "Restaurant · 17 words"
+    },
+    {
+      "source": "প্রস্তুতি / ব্যবস্থা",
+      "target": "Preparation / arrangement"
+    },
+    {
+      "source": "ব্যবসা বিক্রয়",
+      "target": "Business sale"
+    },
+    {
+      "source": "খোলা এবং বন্ধ",
+      "target": "Open and closed"
+    },
+    {
+      "source": "বন্ধ করা / বন্ধ (অকার্যকর)",
+      "target": "Closed / out of service"
+    },
+    {
+      "source": "বন্ধ করা / বন্ধ (সক্রিয়)",
+      "target": "Closed / switched off"
+    },
+    {
+      "source": "নির্দেশনা তথ্য",
+      "target": "Guidance information"
+    },
+    {
+      "source": "ধারণা প্রস্তাব",
+      "target": "Concept proposal"
+    },
+    {
+      "source": "বাড়ির ভিতরে / স্ত্রী",
+      "target": "Inside the house / wife"
+    },
+    {
+      "source": "ভিতরে অতিক্রম না",
+      "target": "Do not cross inside"
+    },
+    {
+      "source": "ভিতরে ভিতরের দিক",
+      "target": "Inside / inner side"
+    },
+    {
+      "source": "ঘরোয়া দেশের মধ্যে",
+      "target": "Domestic / within the country"
+    },
+    {
+      "source": "পরিকল্পনা সময়সূচী",
+      "target": "Plan / schedule"
+    },
+    {
+      "source": "প্রস্তুতি (একটি পাঠের জন্য) / পূর্বরূপ",
+      "target": "Preparation (for a lesson) / preview"
+    },
+    {
+      "source": "সংরক্ষণ বুকিং",
+      "target": "Reservation / booking"
+    },
+    {
+      "source": "সম্পর্কে প্রায়",
+      "target": "About / approximately"
+    },
+    {
+      "source": "ধূমপান নিষেধ · 18টি শব্দ",
+      "target": "No smoking · 18 words"
+    },
+    {
+      "source": "ধূমপান নেই / ধূমপান নিষিদ্ধ",
+      "target": "No smoking / smoking prohibited"
+    },
+    {
+      "source": "ধোঁয়া ধোঁয়া",
+      "target": "Smoke"
+    },
+    {
+      "source": "সত্য বাস্তবতা",
+      "target": "Truth / reality"
+    },
+    {
+      "source": "আঘাত করা / সঠিক হতে",
+      "target": "To hit / to be correct"
+    },
+    {
+      "source": "স্পষ্ট প্রাকৃতিক",
+      "target": "Clear / natural"
+    },
+    {
+      "source": "সব সম্পূর্ণ",
+      "target": "All / complete"
+    },
+    {
+      "source": "সব আসন",
+      "target": "All seats"
+    },
+    {
+      "source": "নিরাপদ নিরাপদ",
+      "target": "Safe / secure"
+    },
+    {
+      "source": "অতিথি / গ্রাহক",
+      "target": "Guest / customer"
+    },
+    {
+      "source": "গ্রাহক / অতিথি",
+      "target": "Customer / guest"
+    },
+    {
+      "source": "চেহারা রাষ্ট্র",
+      "target": "Appearance state"
+    },
+    {
+      "source": "জনাব / সুশ্রী ○○",
+      "target": "Mr. / Ms. ○○"
+    },
+    {
+      "source": "বোঝা অনুধাবন",
+      "target": "Understanding comprehension"
+    },
+    {
+      "source": "ব্যাখ্যা ভাষ্য",
+      "target": "Explanation commentary"
+    },
+    {
+      "source": "উত্তর সমাধান",
+      "target": "Answer solution"
+    },
+    {
+      "source": "খুলে ফেলা / বিচ্ছিন্নকরণ",
+      "target": "Unfastening / disassembly"
+    },
+    {
+      "source": "সহযোগিতা সহযোগিতা",
+      "target": "Cooperation cooperation"
+    },
+    {
+      "source": "ইচ্ছা করা / অনুরোধ করতে",
+      "target": "To wish / to request"
+    },
+    {
+      "source": "পর্যটন মানচিত্র · 19টি শব্দ",
+      "target": "Tourist map · 19 words"
+    },
+    {
+      "source": "দর্শনীয় স্থান পর্যটন",
+      "target": "Sightseeing tourism"
+    },
+    {
+      "source": "দর্শক",
+      "target": "Visitor"
+    },
+    {
+      "source": "চিড়িয়াখানা",
+      "target": "Zoo"
+    },
+    {
+      "source": "পোর্ট (স্থানের নামের অংশ হিসাবে)",
+      "target": "Port (as part of a place name)"
+    },
+    {
+      "source": "বন্দর বন্দর",
+      "target": "Port port"
+    },
+    {
+      "source": "বিনোদন পার্ক",
+      "target": "Amusement park"
+    },
+    {
+      "source": "খেলতে নিজেকে উপভোগ করতে",
+      "target": "To play to enjoy oneself"
+    },
+    {
+      "source": "শিল্প যাদুঘর / আর্ট গ্যালারি",
+      "target": "Art museum / art gallery"
+    },
+    {
+      "source": "সুন্দরী মহিলা / সৌন্দর্য",
+      "target": "Beautiful woman / beauty"
+    },
+    {
+      "source": "সুন্দর",
+      "target": "Beautiful"
+    },
+    {
+      "source": "শিল্প",
+      "target": "Art"
+    },
+    {
+      "source": "কৌশল প্রযুক্তি",
+      "target": "Technique technology"
+    },
+    {
+      "source": "অস্ত্রোপচার অপারেশন",
+      "target": "Surgery operation"
+    },
+    {
+      "source": "শিন্টো মাজার",
+      "target": "Shinto shrine"
+    },
+    {
+      "source": "নার্ভাস উচ্চ স্ট্রং",
+      "target": "Nervous high strong"
+    },
+    {
+      "source": "ঈশ্বর দেবতা",
+      "target": "God deity"
+    },
+    {
+      "source": "মন্দির (একটি জায়গার নামের অংশ হিসাবে)",
+      "target": "Temple (as part of a place name)"
+    },
+    {
+      "source": "বৌদ্ধ মন্দির",
+      "target": "Buddhist temple"
+    },
+    {
+      "source": "শহরের মানচিত্র · 18টি শব্দ",
+      "target": "City map · 18 words"
+    },
+    {
+      "source": "সিটি হল / পৌরসভা অফিস",
+      "target": "City hall / municipal office"
+    },
+    {
+      "source": "দরকারী হতে / সহায়ক হতে",
+      "target": "To be useful / to be helpful"
+    },
+    {
+      "source": "অফিসার নির্বাহী বোর্ড সদস্য",
+      "target": "Officer executive board member"
+    },
+    {
+      "source": "মেইল ডাক পরিষেবা",
+      "target": "Mail postal service"
+    },
+    {
+      "source": "ডাকঘর",
+      "target": "Post office"
+    },
+    {
+      "source": "ফার্মেসী / ওষুধের দোকান",
+      "target": "Pharmacy / drug store"
+    },
+    {
+      "source": "পুলিশ বক্স",
+      "target": "Police box"
+    },
+    {
+      "source": "ট্রাফিক পরিবহন",
+      "target": "Traffic transportation"
+    },
+    {
+      "source": "বিনিময় অদলবদল",
+      "target": "Exchange swap"
+    },
+    {
+      "source": "পার্থক্য ফাঁক",
+      "target": "Difference gap"
+    },
+    {
+      "source": "হাতে দেওয়া / জমা দিতে",
+      "target": "To hand over / to submit"
+    },
+    {
+      "source": "প্রেরক প্রেরক",
+      "target": "Sender sender"
+    },
+    {
+      "source": "ছেদ জংশন",
+      "target": "Intersection"
+    },
+    {
+      "source": "পয়েন্ট / স্কোর",
+      "target": "Point / Score"
+    },
+    {
+      "source": "পয়েন্ট",
+      "target": "Points"
+    },
+    {
+      "source": "পথচারী ওভারপাস / ফুটব্রিজ",
+      "target": "Pedestrian overpass / Footbridge"
+    },
+    {
+      "source": "সেতু",
+      "target": "Bridge"
+    },
+    {
+      "source": "পার্ক",
+      "target": "Park"
+    },
+    {
+      "source": "হাসপাতাল · 28টি শব্দ",
+      "target": "Hospital · 28 words"
+    },
+    {
+      "source": "অভ্যর্থনা / রসিদ",
+      "target": "Reception / Receipt"
+    },
+    {
+      "source": "একটি পরীক্ষা নেওয়া / প্রবেশিকা পরীক্ষা",
+      "target": "Take an exam / Entrance exam"
+    },
+    {
+      "source": "গ্রহণ করা / নিতে",
+      "target": "Take / To take"
+    },
+    {
+      "source": "সংযুক্ত করা / চালু",
+      "target": "Connect / Turn on"
+    },
+    {
+      "source": "পরিপাটি / দূরে রাখা",
+      "target": "Tidy / Put away"
+    },
+    {
+      "source": "অভ্যর্থনা / অভ্যর্থনা ডেস্ক",
+      "target": "Reception / Reception desk"
+    },
+    {
+      "source": "সংযুক্ত করা / চালু করা",
+      "target": "Connect / Turn on"
+    },
+    {
+      "source": "বিজ্ঞান",
+      "target": "Science"
+    },
+    {
+      "source": "অস্ত্রোপচার",
+      "target": "Surgery"
+    },
+    {
+      "source": "অভ্যন্তরীণ ঔষধ",
+      "target": "Internal medicine"
+    },
+    {
+      "source": "পাঠ্যপুস্তক",
+      "target": "Textbook"
+    },
+    {
+      "source": "অটোল্যারিঙ্গোলজি / ইএনটি",
+      "target": "Otolaryngology / ENT"
+    },
+    {
+      "source": "নাক",
+      "target": "Nose"
+    },
+    {
+      "source": "মহিলা",
+      "target": "Woman"
+    },
+    {
+      "source": "প্রসূতি এবং স্ত্রীরোগবিদ্যা",
+      "target": "Obstetrics and gynecology"
+    },
+    {
+      "source": "গৃহিণী",
+      "target": "Housewife"
+    },
+    {
+      "source": "5টি শব্দ",
+      "target": "5 words"
+    },
+    {
+      "source": "ফর্ম বিন্যাস",
+      "target": "Form layout"
+    },
+    {
+      "source": "চিত্র / আকৃতি",
+      "target": "Picture / Shape"
+    },
+    {
+      "source": "অর্থোপেডিকস",
+      "target": "Orthopedics"
+    },
+    {
+      "source": "পুতুল",
+      "target": "Doll"
+    },
+    {
+      "source": "আকৃতি / ফর্ম",
+      "target": "Shape / Form"
+    },
+    {
+      "source": "ফ্র্যাকচার",
+      "target": "Fracture"
+    },
+    {
+      "source": "হাড়",
+      "target": "Bone"
+    },
+    {
+      "source": "ডান মোড়",
+      "target": "Right turn"
+    },
+    {
+      "source": "বাম মোড়",
+      "target": "Left turn"
+    },
+    {
+      "source": "বিরতি ভাঁজ",
+      "target": "Break fold"
+    },
+    {
+      "source": "অরিগামি",
+      "target": "Origami"
+    },
+    {
+      "source": "বিরতি ভাঁজ করা",
+      "target": "Break fold"
+    },
+    {
+      "source": "সমস্যায় পড়লে · 18টি শব্দ",
+      "target": "In trouble · 18 words"
+    },
+    {
+      "source": "বিরক্ত করা",
+      "target": "Bother"
+    },
+    {
+      "source": "মুছে ফেলা বন্ধ",
+      "target": "Delete / Turn off"
+    },
+    {
+      "source": "অগ্নিনির্বাপণ / ফায়ার ডিপার্টমেন্ট",
+      "target": "Firefighting / Fire department"
+    },
+    {
+      "source": "অদৃশ্য হওয়া বাইরে যান",
+      "target": "Disappear, go out"
+    },
+    {
+      "source": "ইরেজার",
+      "target": "Eraser"
+    },
+    {
+      "source": "প্রতিরোধ",
+      "target": "Prevention"
+    },
+    {
+      "source": "প্রতিরোধ করা বিরুদ্ধে রক্ষা",
+      "target": "Prevent, protect against"
+    },
+    {
+      "source": "অ্যাম্বুলেন্স",
+      "target": "Ambulance"
+    },
+    {
+      "source": "সংরক্ষণ করা উদ্ধার",
+      "target": "Save, rescue"
+    },
+    {
+      "source": "পুলিশ অফিসার",
+      "target": "Police officer"
+    },
+    {
+      "source": "পুলিশ",
+      "target": "Police"
+    },
+    {
+      "source": "থানা",
+      "target": "Police station"
+    },
+    {
+      "source": "দুর্ঘটনা",
+      "target": "Accident"
+    },
+    {
+      "source": "ভাঙ্গন ত্রুটি",
+      "target": "Breakdown, fault"
+    },
+    {
+      "source": "প্রয়াত (মৃত)",
+      "target": "Deceased (dead)"
+    },
+    {
+      "source": "বার্তা",
+      "target": "Message"
+    },
+    {
+      "source": "জানাতে বোঝাতে",
+      "target": "Inform, convey"
+    },
+    {
+      "source": "সাহায্য করা",
+      "target": "Help"
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · きょうりょく",
+      "target": "Correct answer: 2 · きょうりょく"
+    },
+    {
+      "source": "আপনার সহযোগিতার জন্য আপনাকে ধন্যবাদ.",
+      "target": "Thank you for your cooperation."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · こまって",
+      "target": "Correct answer: 2 · こまって"
+    },
+    {
+      "source": "আমার সমস্যা হচ্ছে কারণ আমি জাপানি বুঝি না।",
+      "target": "I am having trouble because I don't understand Japanese."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · てつだって",
+      "target": "Correct answer: 2 · てつだって"
+    },
+    {
+      "source": "আপনি কি আমাকে সাহায্য করতে পারেন?",
+      "target": "Can you help me?"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · びじゅつかん",
+      "target": "Correct answer: 3 · びじゅつかん"
+    },
+    {
+      "source": "আর্ট মিউজিয়ামে গিয়েছিলাম পেইন্টিং দেখতে।",
+      "target": "I went to an art museum to see paintings."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · くうこう",
+      "target": "Correct answer: 1 · くうこう"
+    },
+    {
+      "source": "বিমানবন্দর হল আকাশের একটি বন্দর।",
+      "target": "An airport is a port in the sky."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · じ",
+      "target": "Correct answer: 1 · じ"
+    },
+    {
+      "source": "কিয়োটোতে কিনকাকু-জি নামে একটি বিখ্যাত মন্দির রয়েছে।",
+      "target": "There is a famous temple called Kinkaku-ji in Kyoto."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · そなえて",
+      "target": "Correct answer: 4 · そなえて"
+    },
+    {
+      "source": "ভূমিকম্পের প্রস্তুতির জন্য আমরা বিভিন্ন কাজ করছি।",
+      "target": "We are doing various things to prepare for earthquakes."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · よぼう",
+      "target": "Correct answer: 4 · よぼう"
+    },
+    {
+      "source": "ফ্লু প্রতিরোধ করুন।",
+      "target": "Prevent the flu."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · かして",
+      "target": "Correct answer: 3 · かして"
+    },
+    {
+      "source": "আপনি কি আমাকে একটি ইরেজার ধার দিতে পারেন?",
+      "target": "Can you lend me an eraser?"
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · うちがわ",
+      "target": "Correct answer: 1 · うちがわ"
+    },
+    {
+      "source": "এটা বিপজ্জনক, তাই অনুগ্রহ করে পিছিয়ে যান এবং হলুদ লাইনের পিছনে অপেক্ষা করুন।",
+      "target": "It's dangerous, so please step back and wait behind the yellow line."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 当たり前",
+      "target": "Correct answer: 2 · 当たり前"
+    },
+    {
+      "source": "একজন বন্ধুকে সাহায্য করা সঠিক কাজ।",
+      "target": "Helping a friend is the natural thing to do."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · 形",
+      "target": "Correct answer: 1 · 形"
+    },
+    {
+      "source": "মাউন্ট ফুজির আকৃতি সুন্দর।",
+      "target": "The shape of Mount Fuji is beautiful."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 準備中",
+      "target": "Correct answer: 4 · 準備中"
+    },
+    {
+      "source": "আমরা এখন প্রস্তুতি নিচ্ছি।",
+      "target": "We are now preparing."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 警察",
+      "target": "Correct answer: 3 · 警察"
+    },
+    {
+      "source": "আমি একটি মানিব্যাগ খুঁজে পেয়েছি, তাই আমি এটি পুলিশের কাছে ফিরিয়ে দেব।",
+      "target": "I found a wallet, so I will return it to the police."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 当",
+      "target": "Correct answer: 4 · 当"
+    },
+    {
+      "source": "এই স্টেশনে ধূমপান নিষিদ্ধ।",
+      "target": "Smoking is prohibited at this station."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 全",
+      "target": "Correct answer: 3 · 全"
+    },
+    {
+      "source": "এই ট্রেনের সমস্ত আসন সংরক্ষিত।",
+      "target": "All seats on this train are reserved."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 内",
+      "target": "Correct answer: 4 · 内"
+    },
+    {
+      "source": "মোড়ের কাছে গাড়ি থামাবেন না।",
+      "target": "Do not stop the car near the corner."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · 科",
+      "target": "Correct answer: 1 · 科"
+    },
+    {
+      "source": "প্রসূতি এবং স্ত্রীরোগ অভ্যর্থনা ডেস্ক এ চেক ইন করুন.",
+      "target": "Please check in at the obstetrics and gynecology reception desk."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 案",
+      "target": "Correct answer: 3 · 案"
+    },
+    {
+      "source": "আমি প্ল্যান A এর সাথে একমত",
+      "target": "I agree with Plan A."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 約",
+      "target": "Correct answer: 4 · 約"
+    },
+    {
+      "source": "এই শহরের জনসংখ্যা প্রায় 200,000।",
+      "target": "The population of this city is about 200,000."
+    },
+    {
+      "source": "PART 3 · ৬ LESSON + EXAM",
+      "target": "PART 3 · 6 LESSON + EXAM"
+    },
+    {
+      "source": "ব্যবহার করা",
+      "target": "To use"
+    },
+    {
+      "source": "ফ্রিজে সংরক্ষণ · 21টি শব্দ",
+      "target": "Storage in the fridge · 21 words"
+    },
+    {
+      "source": "প্রয়োজনীয় প্রয়োজনীয়তা",
+      "target": "Essential requirements"
+    },
+    {
+      "source": "প্রয়োজন",
+      "target": "Need"
+    },
+    {
+      "source": "গুরুত্বপূর্ণ",
+      "target": "Important"
+    },
+    {
+      "source": "6টি শব্দ",
+      "target": "6 words"
+    },
+    {
+      "source": "এয়ার কন্ডিশনার",
+      "target": "Air conditioner"
+    },
+    {
+      "source": "ঠান্ডা",
+      "target": "Cold"
+    },
+    {
+      "source": "ঠান্ডা করা / ঠান্ডা করতে",
+      "target": "To cool / to chill"
+    },
+    {
+      "source": "ঠান্ডা হয়ে যেতে",
+      "target": "To become cold"
+    },
+    {
+      "source": "ঠান্ডা করা / উদ্যম হারাতে",
+      "target": "To cool down / to lose enthusiasm"
+    },
+    {
+      "source": "ফ্রিজার",
+      "target": "Freezer"
+    },
+    {
+      "source": "হিমায়িত করা",
+      "target": "To freeze"
+    },
+    {
+      "source": "নিরাপদ খিলান",
+      "target": "Safe vault"
+    },
+    {
+      "source": "গ্যারেজ",
+      "target": "Garage"
+    },
+    {
+      "source": "খাওয়া / পান করা (সম্মানসূচক)",
+      "target": "To eat / to drink (polite)"
+    },
+    {
+      "source": "সংরক্ষণ করা / সংরক্ষণ করতে",
+      "target": "To store / to preserve"
+    },
+    {
+      "source": "জানতে (সম্মানজনক)",
+      "target": "To know (polite)"
+    },
+    {
+      "source": "না জানা (নম্র)",
+      "target": "Not to know (humble)"
+    },
+    {
+      "source": "মরিয়া / ব্যাকুল",
+      "target": "Desperate"
+    },
+    {
+      "source": "অবশ্যই ব্যর্থ ছাড়া",
+      "target": "Without fail"
+    },
+    {
+      "source": "রেফ্রিজারেটর",
+      "target": "Refrigerator"
+    },
+    {
+      "source": "ভালো থাকার শেষ তারিখ · 26টি শব্দ",
+      "target": "Expiration date · 26 words"
+    },
+    {
+      "source": "খরচ খরচ",
+      "target": "Expenses and costs"
+    },
+    {
+      "source": "ভোক্তা",
+      "target": "Consumer"
+    },
+    {
+      "source": "ভ্রমণ খরচ",
+      "target": "Travel expenses"
+    },
+    {
+      "source": "সদস্যতা ফি / বকেয়া",
+      "target": "Membership fee / Dues"
+    },
+    {
+      "source": "সময়কাল / মেয়াদ",
+      "target": "Period / Term"
+    },
+    {
+      "source": "কমিউটার পাস / সিজন টিকেট",
+      "target": "Commuter pass / Season ticket"
+    },
+    {
+      "source": "দীর্ঘমেয়াদী",
+      "target": "Long-term"
+    },
+    {
+      "source": "স্বল্পমেয়াদী",
+      "target": "Short-term"
+    },
+    {
+      "source": "সময়সীমা সময় সীমা",
+      "target": "Time limit / Time frame"
+    },
+    {
+      "source": "সীমা সীমাবদ্ধতা",
+      "target": "Limit / Restriction"
+    },
+    {
+      "source": "সীমাবদ্ধতা সীমাবদ্ধতা",
+      "target": "Restriction / Limitation"
+    },
+    {
+      "source": "তৈরি (প্রত্যয়)",
+      "target": "Made (suffix)"
+    },
+    {
+      "source": "পণ্য",
+      "target": "Product"
+    },
+    {
+      "source": "উত্পাদন উত্পাদন",
+      "target": "Production / Manufacture"
+    },
+    {
+      "source": "পুরস্কার",
+      "target": "Award / Prize"
+    },
+    {
+      "source": "সেরা-আগের তারিখ",
+      "target": "Best-before date"
+    },
+    {
+      "source": "পুরস্কারের টাকা",
+      "target": "Prize money / Reward"
+    },
+    {
+      "source": "পদ্ধতি উপায়",
+      "target": "Method / Way"
+    },
+    {
+      "source": "ব্যাকরণ",
+      "target": "Grammar"
+    },
+    {
+      "source": "তাপমাত্রা",
+      "target": "Temperature"
+    },
+    {
+      "source": "উষ্ণ / উষ্ণ হৃদয়",
+      "target": "Warm / Heartwarming"
+    },
+    {
+      "source": "ঘরের তাপমাত্রা",
+      "target": "Room temperature"
+    },
+    {
+      "source": "ভেন্ডিং মেশিন · 20টি শব্দ",
+      "target": "Vending machine · 20 words"
+    },
+    {
+      "source": "বিক্রয় বিক্রি",
+      "target": "Sales / Selling"
+    },
+    {
+      "source": "ভেন্ডিং মেশিন",
+      "target": "Vending machine"
+    },
+    {
+      "source": "বিমান",
+      "target": "Airplane"
+    },
+    {
+      "source": "মেশিন",
+      "target": "Machine"
+    },
+    {
+      "source": "সুযোগ সুযোগ",
+      "target": "Opportunity / Chance"
+    },
+    {
+      "source": "বৃদ্ধি উঠা",
+      "target": "Rise / Go up"
+    },
+    {
+      "source": "বৃদ্ধি করা / হত্তয়া",
+      "target": "Increase / Grow"
+    },
+    {
+      "source": "বৃদ্ধি করা / যোগ করতে",
+      "target": "Increase / Add to"
+    },
+    {
+      "source": "হ্রাস / কমে যাওয়া",
+      "target": "Decrease / Drop"
+    },
+    {
+      "source": "কমে যাওয়া",
+      "target": "Decrease"
+    },
+    {
+      "source": "কমাতে",
+      "target": "Reduce"
+    },
+    {
+      "source": "পরিমাণ পরিমাণ",
+      "target": "Amount / Quantity"
+    },
+    {
+      "source": "সংখ্যা পরিমাণ",
+      "target": "Number / Quantity"
+    },
+    {
+      "source": "বর্ধিত পরিমাণ / বৃদ্ধি (পরিমাণে)",
+      "target": "Increased amount / Growth (in quantity)"
+    },
+    {
+      "source": "পরিমাণ কমানো / ওজন কমানো",
+      "target": "Decrease amount / Lose weight"
+    },
+    {
+      "source": "বরফ",
+      "target": "Ice"
+    },
+    {
+      "source": "উত্তর উত্তর",
+      "target": "Answer / Reply"
+    },
+    {
+      "source": "প্রত্যাবর্তন ফেরত দিতে",
+      "target": "Return / Give back"
+    },
+    {
+      "source": "ফিরে আসা / ফেরত দিতে",
+      "target": "Return / To give back"
+    },
+    {
+      "source": "গরম জল",
+      "target": "Hot water"
+    },
+    {
+      "source": "রেসিপি · 23টি শব্দ",
+      "target": "Recipe · 23 words"
+    },
+    {
+      "source": "উপাদান / উপকরণ",
+      "target": "Ingredients / Materials"
+    },
+    {
+      "source": "শিক্ষার উপকরণ",
+      "target": "Learning materials"
+    },
+    {
+      "source": "ডিম",
+      "target": "Egg"
+    },
+    {
+      "source": "ঘূর্ণিত অমলেট",
+      "target": "Rolled omelet"
+    },
+    {
+      "source": "দুধ",
+      "target": "Milk"
+    },
+    {
+      "source": "পাউডার / ময়দা",
+      "target": "Powder / Flour"
+    },
+    {
+      "source": "গমের আটা",
+      "target": "Wheat flour"
+    },
+    {
+      "source": "ব্যাগ / বস্তা",
+      "target": "Bag / Sack"
+    },
+    {
+      "source": "কাগজের ব্যাগ",
+      "target": "Paper bag"
+    },
+    {
+      "source": "আবর্জনা ব্যাগ / ট্র্যাশ ব্যাগ",
+      "target": "Garbage bag / Trash bag"
+    },
+    {
+      "source": "গ্লাভস",
+      "target": "Gloves"
+    },
+    {
+      "source": "বিভক্ত পায়ের মোজা",
+      "target": "Split-toe socks"
+    },
+    {
+      "source": "ভিড় যানজট",
+      "target": "Traffic congestion"
+    },
+    {
+      "source": "মিশ্রণ নাড়া",
+      "target": "Stir the mixture"
+    },
+    {
+      "source": "গ্রিল বেক রোস্ট",
+      "target": "Grill bake roast"
+    },
+    {
+      "source": "রান্না করা / পুড়িয়ে ফেলা",
+      "target": "Cook / Burn"
+    },
+    {
+      "source": "পৃষ্ঠ টেবিল সামনে",
+      "target": "Surface table front"
+    },
+    {
+      "source": "পৃষ্ঠ মুখ",
+      "target": "Surface face"
+    },
+    {
+      "source": "ঘোষণা উপস্থাপনা",
+      "target": "Announcement presentation"
+    },
+    {
+      "source": "প্রতিনিধি / প্রতিনিধিত্ব",
+      "target": "Representative / Representation"
+    },
+    {
+      "source": "প্রকাশ করা প্রতিনিধিত্ব",
+      "target": "Express representation"
+    },
+    {
+      "source": "পেছন / উল্টো দিক / নিচের পিঠ",
+      "target": "Back / Reverse side / Lower back"
+    },
+    {
+      "source": "ঘুরিয়ে দেওয়া উল্টানো",
+      "target": "Turned over / Inverted"
+    },
+    {
+      "source": "কপিয়ার ও অ্যানসারিং মেশিন · 24টি শব্দ",
+      "target": "Copier & Answering machine · 24 words"
+    },
+    {
+      "source": "বিদেশে পড়াশোনা",
+      "target": "Study abroad"
+    },
+    {
+      "source": "ঘর-বসা",
+      "target": "Staying at home"
+    },
+    {
+      "source": "আটকে রাখা / সংরক্ষণ",
+      "target": "Stuck / Preservation"
+    },
+    {
+      "source": "নিবন্ধিত মেইল",
+      "target": "Registered mail"
+    },
+    {
+      "source": "প্রতিরক্ষা পাহারা দেওয়া",
+      "target": "Defense guarding"
+    },
+    {
+      "source": "অনুপস্থিতি / বাড়ি থেকে দূরে থাকা",
+      "target": "Absence / Away from home"
+    },
+    {
+      "source": "রক্ষা করা আনুগত্য করা",
+      "target": "Protect loyalty"
+    },
+    {
+      "source": "পুরু / শক্তিশালী",
+      "target": "Thick / Strong"
+    },
+    {
+      "source": "পাতলা দুর্বল",
+      "target": "Thin / Weak"
+    },
+    {
+      "source": "অংশ অংশ",
+      "target": "Part / Portion"
+    },
+    {
+      "source": "অনুষদ / বিভাগ",
+      "target": "Faculty / Department"
+    },
+    {
+      "source": "বিভাগের প্রধান",
+      "target": "Head of department"
+    },
+    {
+      "source": "রুম",
+      "target": "Room"
+    },
+    {
+      "source": "সংখ্যা সংখ্যা",
+      "target": "Number quantity"
+    },
+    {
+      "source": "গণিত",
+      "target": "Mathematics"
+    },
+    {
+      "source": "সংখ্যা গণনা",
+      "target": "Counting numbers"
+    },
+    {
+      "source": "গণনা গণনা করা",
+      "target": "Count calculate"
+    },
+    {
+      "source": "বিষয় শিরোনাম",
+      "target": "Subject title"
+    },
+    {
+      "source": "ঘটনা মামলা",
+      "target": "Event case"
+    },
+    {
+      "source": "ব্যবসা ব্যাপার",
+      "target": "Business matter"
+    },
+    {
+      "source": "পুনরায় প্রবেশ",
+      "target": "Re-entry"
+    },
+    {
+      "source": "পুনরায় ডায়াল",
+      "target": "Redial"
+    },
+    {
+      "source": "প্লেব্যাক পুনর্জন্ম",
+      "target": "Playback rebirth"
+    },
+    {
+      "source": "পরের সপ্তাহ পর",
+      "target": "Next week after"
+    },
+    {
+      "source": "মোবাইল ফোন · 20টি শব্দ",
+      "target": "Mobile phone · 20 words"
+    },
+    {
+      "source": "সংযোগ / লিঙ্ক করা",
+      "target": "Connection / linking"
+    },
+    {
+      "source": "সাক্ষাৎকার",
+      "target": "Interview"
+    },
+    {
+      "source": "চালিয়ে যাওয়া শেষ",
+      "target": "Continue end"
+    },
+    {
+      "source": "চালিয়ে যাওয়া রাখা",
+      "target": "Continue keep"
+    },
+    {
+      "source": "প্রদর্শন / ইঙ্গিত",
+      "target": "Display / indication"
+    },
+    {
+      "source": "নির্দেশ ইঙ্গিত",
+      "target": "Instruction hint"
+    },
+    {
+      "source": "প্রদর্শন নির্দেশ করে",
+      "target": "Display indicates"
+    },
+    {
+      "source": "ফিরে যাওয়া",
+      "target": "Go back"
+    },
+    {
+      "source": "পিছনে রাখা ফিরে",
+      "target": "Keep back return"
+    },
+    {
+      "source": "সমাপ্তি / শেষ",
+      "target": "End / finish"
+    },
+    {
+      "source": "সম্পূর্ণ নিখুঁত",
+      "target": "Complete perfect"
+    },
+    {
+      "source": "বোঝা সম্মতি",
+      "target": "Understanding consent"
+    },
+    {
+      "source": "শেষ সমাপ্তি",
+      "target": "End conclusion"
+    },
+    {
+      "source": "নিবন্ধন তালিকাভুক্তি",
+      "target": "Registration enrollment"
+    },
+    {
+      "source": "পর্বত আরোহণ / পর্বতারোহণ",
+      "target": "Mountain climbing / alpinism"
+    },
+    {
+      "source": "আরোহণ আরোহন",
+      "target": "Climbing ascent"
+    },
+    {
+      "source": "রেকর্ড / নথি",
+      "target": "Record / document"
+    },
+    {
+      "source": "অডিও রেকর্ডিং / শব্দ রেকর্ডিং",
+      "target": "Audio recording / sound recording"
+    },
+    {
+      "source": "ভিডিও রেকর্ডিং / রেকর্ডিং",
+      "target": "Video recording / recording"
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · はんばい",
+      "target": "Correct answer: 1 · はんばい"
+    },
+    {
+      "source": "একটি ভেন্ডিং মেশিন থেকে একটি পানীয় কিনুন.",
+      "target": "Buy a drink from a vending machine."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · おめしあがり",
+      "target": "Correct answer: 3 · おめしあがり"
+    },
+    {
+      "source": "দয়া করে যত তাড়াতাড়ি সম্ভব খেয়ে নিন।",
+      "target": "Please eat as soon as possible."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · きょうざい",
+      "target": "Correct answer: 1 · きょうざい"
+    },
+    {
+      "source": "জাপানি শেখার উপকরণ সন্ধান করুন।",
+      "target": "Find Japanese learning materials."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · こな",
+      "target": "Correct answer: 4 · こな"
+    },
+    {
+      "source": "সেখানে গুঁড়ো দিয়ে মেশান।",
+      "target": "Mix with the powder there."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · たまごやき",
+      "target": "Correct answer: 4 · たまごやき"
+    },
+    {
+      "source": "বেন্টোতে একটি রোলড অমলেট রয়েছে।",
+      "target": "There is a rolled omelet in the bento."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · まもりましょう",
+      "target": "Correct Answer: 2 · まもりましょう"
+    },
+    {
+      "source": "আসুন ট্রাফিক নিয়ম মেনে চলি।",
+      "target": "Let's obey traffic rules."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · かず",
+      "target": "Correct Answer: 3 · かず"
+    },
+    {
+      "source": "সংখ্যা গণনা করুন.",
+      "target": "Count the numbers."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · ゆ",
+      "target": "Correct Answer: 1 · ゆ"
+    },
+    {
+      "source": "গরম জলে ঢালা, তিন মিনিট অপেক্ষা করুন, এবং এটি প্রস্তুত।",
+      "target": "Pour in hot water, wait three minutes, and it is ready."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · さいせい",
+      "target": "Correct Answer: 2 · さいせい"
+    },
+    {
+      "source": "রেকর্ড করা বার্তাটি প্লে ব্যাক করুন।",
+      "target": "Play back the recorded message."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · れいぼう",
+      "target": "Correct Answer: 1 · れいぼう"
+    },
+    {
+      "source": "এয়ার কন্ডিশনার খুব শক্তিশালী।",
+      "target": "The air conditioner is very strong."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 返す",
+      "target": "Correct Answer: 4 · 返す"
+    },
+    {
+      "source": "বইটি লাইব্রেরিতে ফেরত দিন।",
+      "target": "Return the book to the library."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · 減量",
+      "target": "Correct Answer: 1 · 減量"
+    },
+    {
+      "source": "বক্সাররা ম্যাচের আগে ওজন কমিয়ে দেন।",
+      "target": "Boxers lose weight before the match."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 戻して",
+      "target": "Correct Answer: 4 · 戻して"
+    },
+    {
+      "source": "এটি ব্যবহার করার পরে, দয়া করে এটিকে তার আসল জায়গায় ফিরিয়ে দিন।",
+      "target": "After using it, please return it to its original place."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 続き",
+      "target": "Correct Answer: 2 · 続き"
+    },
+    {
+      "source": "আজকের জন্য এতটুকুই। আমরা পরের সপ্তাহে চালিয়ে যাব।",
+      "target": "That's all for today. We will continue next week."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 費",
+      "target": "Correct Answer: 4 · 費"
+    },
+    {
+      "source": "পরিবহন ফি কত?",
+      "target": "How much is the transportation fee?"
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 部",
+      "target": "Correct Answer: 2 · 部"
+    },
+    {
+      "source": "এই নথির 30 কপি করুন.",
+      "target": "Make 30 copies of this document."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · 袋",
+      "target": "Correct Answer: 1 · 袋"
+    },
+    {
+      "source": "আমি কি এটা একটা কাগজের ব্যাগে রাখব?",
+      "target": "Shall I put this in a paper bag?"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 要",
+      "target": "Correct Answer: 3 · 要"
+    },
+    {
+      "source": "এটা বলে 'কিপ ফ্রোজেন'।",
+      "target": "It says 'Keep Frozen'."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 再",
+      "target": "Correct Answer: 2 · 再"
+    },
+    {
+      "source": "স্পিড-ডায়াল বোতাম টিপুন।",
+      "target": "Press the speed-dial button."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 期",
+      "target": "Correct Answer: 3 · 期"
+    },
+    {
+      "source": "অল্প সময়ের জন্য দূরে থাকুন।",
+      "target": "Be away for a short time."
+    },
+    {
+      "source": "PART 4 · ৬ LESSON + EXAM",
+      "target": "PART 4 · 6 LESSON + EXAM"
+    },
+    {
+      "source": "কেনাকাটা",
+      "target": "Shopping"
+    },
+    {
+      "source": "দৈনন্দিন প্রয়োজনীয় জিনিস · 19টি শব্দ",
+      "target": "Daily Necessities · 19 words"
+    },
+    {
+      "source": "চিনি",
+      "target": "Sugar"
+    },
+    {
+      "source": "বালি",
+      "target": "Sand"
+    },
+    {
+      "source": "টেবিল লবণ / লবণ",
+      "target": "Table salt / Salt"
+    },
+    {
+      "source": "লবণ",
+      "target": "Salt"
+    },
+    {
+      "source": "সয়া সস",
+      "target": "Soy sauce"
+    },
+    {
+      "source": "পেট্রোলিয়াম / তেল",
+      "target": "Petroleum / Oil"
+    },
+    {
+      "source": "কেরোসিন",
+      "target": "kerosene"
+    },
+    {
+      "source": "তেল গ্রীস",
+      "target": "oil, grease"
+    },
+    {
+      "source": "গ্রিন টি",
+      "target": "green tea"
+    },
+    {
+      "source": "সবুজ (রঙ)",
+      "target": "green (color)"
+    },
+    {
+      "source": "কালো চা",
+      "target": "black tea"
+    },
+    {
+      "source": "লিপস্টিক",
+      "target": "lipstick"
+    },
+    {
+      "source": "বই গণনার কাউন্টার",
+      "target": "counter for books"
+    },
+    {
+      "source": "বই সংখ্যা",
+      "target": "number of books"
+    },
+    {
+      "source": "ছোট জিনিস গণনার কাউন্টার",
+      "target": "counter for small items"
+    },
+    {
+      "source": "আইটেম সংখ্যা",
+      "target": "number of items"
+    },
+    {
+      "source": "স্বতন্ত্র / ব্যক্তি",
+      "target": "individual / person"
+    },
+    {
+      "source": "চ্যাপ্টা জিনিস গণনার কাউন্টার",
+      "target": "counter for flat objects"
+    },
+    {
+      "source": "শীট সংখ্যা",
+      "target": "number of sheets"
+    },
+    {
+      "source": "বিজ্ঞাপনী ইমেইল · 20টি শব্দ",
+      "target": "promotional email · 20 words"
+    },
+    {
+      "source": "বিজ্ঞাপন বিজ্ঞাপন",
+      "target": "advertisement, commercial"
+    },
+    {
+      "source": "সুবিধাজনক সহজ",
+      "target": "convenient, easy"
+    },
+    {
+      "source": "ব্যবহার ব্যবহার",
+      "target": "use, usage"
+    },
+    {
+      "source": "ভাগ করা বিরতি",
+      "target": "shared, break"
+    },
+    {
+      "source": "অনুপাত অনুপাত",
+      "target": "ratio, proportion"
+    },
+    {
+      "source": "বিরতি বিভক্ত",
+      "target": "break, divide"
+    },
+    {
+      "source": "ছাড় / মূল্য হ্রাস",
+      "target": "discount / price reduction"
+    },
+    {
+      "source": "বার -ভাঁজ",
+      "target": "counter- (folds/turns)"
+    },
+    {
+      "source": "মূল্য খরচ",
+      "target": "price, cost"
+    },
+    {
+      "source": "দাম বাড়ানো",
+      "target": "price increase"
+    },
+    {
+      "source": "দাম কমানো / ছাড় দেওয়া",
+      "target": "price reduction / discount"
+    },
+    {
+      "source": "দোকান দোকান",
+      "target": "shop, store"
+    },
+    {
+      "source": "শাখা শাখা অফিস",
+      "target": "branch, branch office"
+    },
+    {
+      "source": "প্রধান দোকান / প্রধান কার্যালয়",
+      "target": "main shop / headquarters"
+    },
+    {
+      "source": "শাখা অফিস / শাখা কোম্পানি",
+      "target": "branch office / branch company"
+    },
+    {
+      "source": "প্রধান কার্যালয় / সদর দপ্তর",
+      "target": "headquarters"
+    },
+    {
+      "source": "বেতন",
+      "target": "salary"
+    },
+    {
+      "source": "অর্থ প্রদান নিষ্পত্তি",
+      "target": "payment, settlement"
+    },
+    {
+      "source": "ডাক/অনলাইনে কেনাকাটা · 21টি শব্দ",
+      "target": "mail/online shopping · 21 words"
+    },
+    {
+      "source": "মার্কিন যুক্তরাষ্ট্র",
+      "target": "United States"
+    },
+    {
+      "source": "চাল আমেরিকা (ইউ.এস.)",
+      "target": "rice, America (U.S.)"
+    },
+    {
+      "source": "উচ্চ শ্রেণীর / বিলাসিতা",
+      "target": "high class / luxury"
+    },
+    {
+      "source": "মধ্যবর্তী / মধ্য স্তরের",
+      "target": "intermediate / middle level"
+    },
+    {
+      "source": "উন্নত উপরের স্তর",
+      "target": "advanced, upper tier"
+    },
+    {
+      "source": "অতিরিক্ত সময় ওভারটাইম কাজ",
+      "target": "overtime work"
+    },
+    {
+      "source": "অবশিষ্ট অবশিষ্ট অংশ",
+      "target": "remaining, remainder"
+    },
+    {
+      "source": "থাকা বাকি থাকা",
+      "target": "Remaining / left over"
+    },
+    {
+      "source": "পিছনে ছেড়ে সংরক্ষণ",
+      "target": "Leave behind / save"
+    },
+    {
+      "source": "বড় বড় মাপের",
+      "target": "Large-scale / large size"
+    },
+    {
+      "source": "ছোট কম্প্যাক্ট",
+      "target": "Small / compact"
+    },
+    {
+      "source": "নতুন মডেল / নতুন ধরনের",
+      "target": "New model / new type"
+    },
+    {
+      "source": "ভোগ কর / বিক্রয় কর",
+      "target": "Consumption tax / sales tax"
+    },
+    {
+      "source": "ট্যাক্স",
+      "target": "Tax"
+    },
+    {
+      "source": "ভিড় করা / প্যাক করা",
+      "target": "Crowded / packed"
+    },
+    {
+      "source": "স্থানান্তর (টাকা) / আমানত (ব্যাংক স্থানান্তর দ্বারা)",
+      "target": "Transfer (money) / deposit (by bank transfer)"
+    },
+    {
+      "source": "ট্যাক্স অন্তর্ভুক্ত / ট্যাক্স সহ",
+      "target": "Tax included / inclusive of tax"
+    },
+    {
+      "source": "তালিকা মূল্য / নির্দিষ্ট মূল্য",
+      "target": "List price / fixed price"
+    },
+    {
+      "source": "পাস সাফল্য",
+      "target": "Pass / success"
+    },
+    {
+      "source": "সস্তা দর কষাকষি",
+      "target": "Cheap / bargain"
+    },
+    {
+      "source": "আবেদনপত্র · 24টি শব্দ",
+      "target": "Application form · 24 words"
+    },
+    {
+      "source": "প্রয়োগ সাইন আপ",
+      "target": "Apply / sign up"
+    },
+    {
+      "source": "আবেদনপত্র / প্রবেশপত্র",
+      "target": "Application form / entry form"
+    },
+    {
+      "source": "ঘোষণা রিপোর্ট",
+      "target": "Announcement / report"
+    },
+    {
+      "source": "আবেদন অনুরোধ",
+      "target": "Application / request"
+    },
+    {
+      "source": "'বলো' এর বিনীত রূপ",
+      "target": "Humble form of 'to say'"
+    },
+    {
+      "source": "বিনীতভাবে বলতে",
+      "target": "To speak politely"
+    },
+    {
+      "source": "পূরণ করতে / প্রবেশ",
+      "target": "To fill in / to enter"
+    },
+    {
+      "source": "ডায়েরি জার্নাল",
+      "target": "Diary / journal"
+    },
+    {
+      "source": "প্রতীক / চিহ্ন",
+      "target": "Symbol / sign"
+    },
+    {
+      "source": "নিবন্ধ / খবর গল্প",
+      "target": "Article / news story"
+    },
+    {
+      "source": "উদাহরণ উদাহরণ",
+      "target": "Example / illustration"
+    },
+    {
+      "source": "বয়স",
+      "target": "Age"
+    },
+    {
+      "source": "বয়স্ক / উন্নত বয়স",
+      "target": "Elderly / advanced age"
+    },
+    {
+      "source": "বছর বয়সী",
+      "target": "Years old"
+    },
+    {
+      "source": "বিশ বছর বয়সী",
+      "target": "Twenty years old"
+    },
+    {
+      "source": "যৌনতা লিঙ্গ",
+      "target": "Sex / gender"
+    },
+    {
+      "source": "চরিত্র ব্যক্তিত্ব",
+      "target": "Character / personality"
+    },
+    {
+      "source": "নারী / মহিলা",
+      "target": "Woman / female"
+    },
+    {
+      "source": "পুরুষ মানুষ",
+      "target": "Man / male"
+    },
+    {
+      "source": "একটানা ছুটি",
+      "target": "Consecutive holidays"
+    },
+    {
+      "source": "নিতে (কাউকে)",
+      "target": "To take (someone)"
+    },
+    {
+      "source": "আনতে (কাউকে)",
+      "target": "To bring (someone)"
+    },
+    {
+      "source": "যোগাযোগ যোগাযোগ",
+      "target": "Contact / communication"
+    },
+    {
+      "source": "অর্ডার · 21টি শব্দ",
+      "target": "Order · 21 words"
+    },
+    {
+      "source": "বিতরণ করা / রিপোর্ট করতে",
+      "target": "To deliver / to report"
+    },
+    {
+      "source": "পৌঁছাতে পৌঁছাতে",
+      "target": "To reach / to arrive"
+    },
+    {
+      "source": "একজনের বাড়ি বাড়ি",
+      "target": "Door-to-door"
+    },
+    {
+      "source": "আপনার বাড়ি / বাসস্থান (ভদ্র)",
+      "target": "Your home / residence (polite)"
+    },
+    {
+      "source": "হোম ডেলিভারি",
+      "target": "Home delivery"
+    },
+    {
+      "source": "ডেলিভারি",
+      "target": "Delivery"
+    },
+    {
+      "source": "শিপিং ফি / ডেলিভারি চার্জ",
+      "target": "Shipping fee / Delivery charge"
+    },
+    {
+      "source": "চিন্তা উদ্বেগ",
+      "target": "Worry / anxiety"
+    },
+    {
+      "source": "বিতরণ করা / হস্তান্তর করা",
+      "target": "To deliver / to hand over"
+    },
+    {
+      "source": "আশা ইচ্ছা",
+      "target": "Hope / desire"
+    },
+    {
+      "source": "হতাশা",
+      "target": "Disappointment"
+    },
+    {
+      "source": "আশা করা / ইচ্ছা করতে",
+      "target": "To hope / to wish"
+    },
+    {
+      "source": "পণ্যের আগমন / রিস্টকিং",
+      "target": "Product arrival / restoking"
+    },
+    {
+      "source": "চালান শিপিং",
+      "target": "Invoice / shipping"
+    },
+    {
+      "source": "লাগেজ প্যাকেজ",
+      "target": "Luggage / package"
+    },
+    {
+      "source": "হাতের লাগেজ / বহন করা লাগেজ",
+      "target": "Hand luggage / carry-on luggage"
+    },
+    {
+      "source": "বিনিময় প্রতিস্থাপন",
+      "target": "Exchange / replacement"
+    },
+    {
+      "source": "ক্যাশ অন ডেলিভারি",
+      "target": "Cash on delivery"
+    },
+    {
+      "source": "স্থানান্তর ট্রেন পরিবর্তন",
+      "target": "Transfer / changing trains"
+    },
+    {
+      "source": "পরিমাণ যোগফল",
+      "target": "Total amount"
+    },
+    {
+      "source": "অর্ধেক দাম",
+      "target": "Half price"
+    },
+    {
+      "source": "অনুপস্থিতির ডেলিভারি নোটিশ · 20টি শব্দ",
+      "target": "Absentee delivery notice · 20 words"
+    },
+    {
+      "source": "অনুপস্থিতি / উপস্থিত না",
+      "target": "Absence / not being present"
+    },
+    {
+      "source": "এখন / বর্তমান",
+      "target": "Now / present"
+    },
+    {
+      "source": "গ্রহণ কুড়ান",
+      "target": "To receive / to pick up"
+    },
+    {
+      "source": "গ্রহণ গ্রহণ",
+      "target": "Acceptance / receiving"
+    },
+    {
+      "source": "প্রাপক প্রাপক",
+      "target": "Recipient"
+    },
+    {
+      "source": "আমানত সঞ্চয়",
+      "target": "Deposit / savings"
+    },
+    {
+      "source": "অর্পণ আমানত",
+      "target": "Entrusting / deposit"
+    },
+    {
+      "source": "পোশাক",
+      "target": "Clothing"
+    },
+    {
+      "source": "পোশাক / জামাকাপড়",
+      "target": "Clothes / apparel"
+    },
+    {
+      "source": "অংশগ্রহণ যোগদান",
+      "target": "Participation / joining"
+    },
+    {
+      "source": "রেফারেন্স বই / পাঠ্যপুস্তক",
+      "target": "Reference book / textbook"
+    },
+    {
+      "source": "যাওয়া/আসা (বিনয়ী রূপ) / হার মানা",
+      "target": "To go and come (polite) / to give up"
+    },
+    {
+      "source": "উন্নতি অগ্রগতি",
+      "target": "Improvement / progress"
+    },
+    {
+      "source": "দ্রুত ডাক / এক্সপ্রেস ডেলিভারি",
+      "target": "Express mail / express delivery"
+    },
+    {
+      "source": "বন্ধু",
+      "target": "Friend"
+    },
+    {
+      "source": "যাতায়াত যাতায়াত",
+      "target": "Commute / commuting"
+    },
+    {
+      "source": "চাকরি করা / কর্মরত থাকা",
+      "target": "To work / being employed"
+    },
+    {
+      "source": "মোবাইল ফোন / সেল ফোন",
+      "target": "Mobile phone / cell phone"
+    },
+    {
+      "source": "সময় স্লট / সময়কাল",
+      "target": "Time slot / time period"
+    },
+    {
+      "source": "বেল্ট স্যাশ",
+      "target": "Belt / sash"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · ごうかく",
+      "target": "Correct answer: 3 · ごうかく"
+    },
+    {
+      "source": "পাস করার খবর পেয়ে সে আনন্দিত হয়েছে।",
+      "target": "He is happy to have received the news that he passed."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · ふりこみ",
+      "target": "Correct answer: 3 · ふりこみ"
+    },
+    {
+      "source": "আমি ব্যাঙ্ক ট্রান্সফারের মাধ্যমে পেমেন্ট করব।",
+      "target": "I will pay by bank transfer."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · もうします",
+      "target": "Correct answer: 4 · もうします"
+    },
+    {
+      "source": "আমার নাম তানাকা।",
+      "target": "My name is Tanaka."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · ちゅうきゅう",
+      "target": "Correct answer: 1 · ちゅうきゅう"
+    },
+    {
+      "source": "আমি একটি মধ্যবর্তী-স্তরের জাপানি বই খুঁজছি।",
+      "target": "I am looking for an intermediate-level Japanese book."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · べいこく",
+      "target": "Correct answer: 3 · べいこく"
+    },
+    {
+      "source": "আমি যুক্তরাষ্ট্রে বিদেশে পড়াশোনা করব।",
+      "target": "I will study abroad in the United States."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · べんり",
+      "target": "Correct answer: 2 · べんり"
+    },
+    {
+      "source": "মোবাইল ফোন সুবিধাজনক।",
+      "target": "Mobile phones are convenient."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · にゅうか",
+      "target": "Correct answer: 4 · にゅうか"
+    },
+    {
+      "source": "যখন আইটেম আসে আমি আপনাকে জানাতে হবে.",
+      "target": "I will let you know when the item arrives."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · すな",
+      "target": "Correct answer: 4 · すな"
+    },
+    {
+      "source": "সাদা বালির ওপর দিয়ে হেঁটেছি।",
+      "target": "I walked on the white sand."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · こうちゃ",
+      "target": "Correct answer: 3 · こうちゃ"
+    },
+    {
+      "source": "আমি দুধ দিয়ে চা খাই।",
+      "target": "I drink black tea with milk."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · ししゃ",
+      "target": "Correct answer: 1 · ししゃ"
+    },
+    {
+      "source": "আমি শাখা অফিসে নথি মেইল ​​করব.",
+      "target": "I will mail the documents to the branch office."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 払う",
+      "target": "Correct answer: 4 · 払う"
+    },
+    {
+      "source": "বাসের ভাড়া আমি দেব।",
+      "target": "I will pay the bus fare."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 宅配",
+      "target": "Correct answer: 2 · 宅配"
+    },
+    {
+      "source": "হোম ডেলিভারির মাধ্যমে পাঠান।",
+      "target": "Please send it by home delivery."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 預ける",
+      "target": "Correct answer: 3 · 預ける"
+    },
+    {
+      "source": "সন্তানকে তাদের পিতামাতার কাছে রেখে দিন।",
+      "target": "Leave the child with their parents."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 緑",
+      "target": "Correct answer: 3 · 緑"
+    },
+    {
+      "source": "চারপাশে তেমন সবুজ নেই।",
+      "target": "There is not much greenery around."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · 連",
+      "target": "Correct answer: 1 · 連"
+    },
+    {
+      "source": "আমি লম্বা ছুটিতে বেড়াতে যাওয়ার পরিকল্পনা করছি।",
+      "target": "I am planning to go on a trip during the long holidays."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · 告",
+      "target": "Correct answer: 1 · 告"
+    },
+    {
+      "source": "বিজ্ঞাপন থেকে বিক্রয় সম্পর্কে জানুন.",
+      "target": "Learn about sales from advertisements."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 価",
+      "target": "Correct answer: 3 · 価"
+    },
+    {
+      "source": "আমি তালিকার অর্ধেকেরও কম দামে এটি কিনেছি।",
+      "target": "I bought it for less than half the listed price."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · 税",
+      "target": "Correct answer: 1 · 税"
+    },
+    {
+      "source": "ভোগ কর কত শতাংশ?",
+      "target": "What is the consumption tax percentage?"
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 枚",
+      "target": "Correct answer: 2 · 枚"
+    },
+    {
+      "source": "আপনার কাছে কয়টি CD আছে?",
+      "target": "How many CDs do you have?"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 型",
+      "target": "Correct answer: 3 · 型"
+    },
+    {
+      "source": "একটি বড় ট্রাক দুর্ঘটনা ঘটায়।",
+      "target": "A large truck caused an accident."
+    },
+    {
+      "source": "PART 5 · ৬ LESSON + EXAM",
+      "target": "PART 5 · 6 LESSON + EXAM"
+    },
+    {
+      "source": "লেখা",
+      "target": "Writing"
+    },
+    {
+      "source": "ইমেইল পাঠানো · 17টি শব্দ",
+      "target": "Sending an email · 17 words"
+    },
+    {
+      "source": "ধন্যবাদ কৃতজ্ঞতা",
+      "target": "Thank you, gratitude"
+    },
+    {
+      "source": "জিজ্ঞাসা করা / পরিদর্শন করা (নম্র)",
+      "target": "Asking / Visiting (polite)"
+    },
+    {
+      "source": "দেরি বিলম্ব",
+      "target": "Delay, lateness"
+    },
+    {
+      "source": "ধীরে দেরী",
+      "target": "Slow, late"
+    },
+    {
+      "source": "দেরী হওয়া / পিছিয়ে পড়া",
+      "target": "Being late / Falling behind"
+    },
+    {
+      "source": "অসভ্য অসভ্য",
+      "target": "Rude, impolite"
+    },
+    {
+      "source": "নিজেকে ক্ষমা করা / ছুটি নেওয়া",
+      "target": "Excusing oneself / Taking leave"
+    },
+    {
+      "source": "ব্যর্থতা ভুল",
+      "target": "Failure, mistake"
+    },
+    {
+      "source": "ঘাম ঘাম",
+      "target": "Sweat, perspiration"
+    },
+    {
+      "source": "ঘাম হওয়া / ঘাম",
+      "target": "Sweating / Sweat"
+    },
+    {
+      "source": "দুঃখজনক হতাশাজনক",
+      "target": "Sad, disappointing"
+    },
+    {
+      "source": "স্মৃতিচারণ / স্মারক",
+      "target": "Reminiscence / Memento"
+    },
+    {
+      "source": "অশ্রু",
+      "target": "Tears"
+    },
+    {
+      "source": "চোখের পানি ফেলা / কাঁদা",
+      "target": "Shedding tears / Crying"
+    },
+    {
+      "source": "হাসতে হাসতে হাসতে",
+      "target": "Laughing, laughing, laughing"
+    },
+    {
+      "source": "হাসি",
+      "target": "Smile, laugh"
+    },
+    {
+      "source": "হাসিমুখ / হাসি",
+      "target": "Smiling face / Smile"
+    },
+    {
+      "source": "জরিপ ও প্রশ্নপত্র · 17টি শব্দ",
+      "target": "Survey and questionnaire · 17 words"
+    },
+    {
+      "source": "অবস্থা রাষ্ট্র",
+      "target": "State, condition"
+    },
+    {
+      "source": "জোর চাপ",
+      "target": "Pressure, stress"
+    },
+    {
+      "source": "তদন্ত করা / দেখতে",
+      "target": "Investigating / To see"
+    },
+    {
+      "source": "তদন্ত জরিপ",
+      "target": "Investigation, survey"
+    },
+    {
+      "source": "আন্দোলন স্থানান্তর",
+      "target": "Movement, transfer"
+    },
+    {
+      "source": "সরানো স্থানান্তর করা",
+      "target": "Moving, transferring"
+    },
+    {
+      "source": "স্থানান্তর করা",
+      "target": "To transfer"
+    },
+    {
+      "source": "কঠিন",
+      "target": "Difficult"
+    },
+    {
+      "source": "কঠিন সমস্যা",
+      "target": "Difficult problem"
+    },
+    {
+      "source": "সহজ সহজ",
+      "target": "Easy, simple"
+    },
+    {
+      "source": "ইউনিট ক্রেডিট",
+      "target": "Unit, credit"
+    },
+    {
+      "source": "অনুভূতি অনুভূতি",
+      "target": "Feeling, emotion"
+    },
+    {
+      "source": "গভীর আবেগ / সরানো হচ্ছে",
+      "target": "Deep emotion / Being moved"
+    },
+    {
+      "source": "ছাপ / চিন্তা",
+      "target": "Impression / Thought"
+    },
+    {
+      "source": "প্রত্যাশা ভবিষ্যদ্বাণী",
+      "target": "Expectation, prediction"
+    },
+    {
+      "source": "জাপানি ভাষার ক্লাস · 26টি শব্দ",
+      "target": "Japanese language class · 26 words"
+    },
+    {
+      "source": "অনুশীলন",
+      "target": "Practice"
+    },
+    {
+      "source": "সাম্প্রতিক ইদানীং",
+      "target": "Recent, lately"
+    },
+    {
+      "source": "শুরু প্রথম",
+      "target": "Beginning, first"
+    },
+    {
+      "source": "শেষ শেষ",
+      "target": "finally"
+    },
+    {
+      "source": "সবচেয়ে",
+      "target": "most"
+    },
+    {
+      "source": "উপযুক্ত উপযুক্ত",
+      "target": "suitable / appropriate"
+    },
+    {
+      "source": "আরামদায়ক",
+      "target": "comfortable"
+    },
+    {
+      "source": "নির্বাচন",
+      "target": "choice / selection"
+    },
+    {
+      "source": "ক্রীড়াবিদ / খেলোয়াড়",
+      "target": "athlete / player"
+    },
+    {
+      "source": "চয়ন নির্বাচন করুন",
+      "target": "choose / select"
+    },
+    {
+      "source": "ভিন্ন হতে পার্থক্য",
+      "target": "differ / distinction"
+    },
+    {
+      "source": "ভুল ত্রুটি",
+      "target": "mistake / error"
+    },
+    {
+      "source": "ভুল করা ভুল",
+      "target": "make a mistake / wrong"
+    },
+    {
+      "source": "সরলরেখা",
+      "target": "straight line"
+    },
+    {
+      "source": "সরাসরি সরাসরি",
+      "target": "directly / straight"
+    },
+    {
+      "source": "মেরামত করা / পুনরুদ্ধার",
+      "target": "repair / restore"
+    },
+    {
+      "source": "ঠিক করা সঠিক",
+      "target": "fix / correct"
+    },
+    {
+      "source": "পুনরাবৃত্তি",
+      "target": "repetition"
+    },
+    {
+      "source": "রাউন্ড ট্রিপ",
+      "target": "round trip"
+    },
+    {
+      "source": "পুনরুদ্ধার",
+      "target": "recovery / restoration"
+    },
+    {
+      "source": "অভিধান",
+      "target": "dictionary"
+    },
+    {
+      "source": "ছেড়ে দেওয়া পদত্যাগ",
+      "target": "resign / give up"
+    },
+    {
+      "source": "বাড়ির কাজ",
+      "target": "homework"
+    },
+    {
+      "source": "বোর্ডিং হাউস / বাসস্থান",
+      "target": "boarding house / lodging"
+    },
+    {
+      "source": "সরাইখানা / বাসস্থান",
+      "target": "inn / lodging"
+    },
+    {
+      "source": "রচনা লেখা · 23টি শব্দ",
+      "target": "essay writing · 23 words"
+    },
+    {
+      "source": "গতকাল",
+      "target": "yesterday"
+    },
+    {
+      "source": "গত রাতে",
+      "target": "last night"
+    },
+    {
+      "source": "গত বছর",
+      "target": "last year"
+    },
+    {
+      "source": "জনাব ___",
+      "target": "Mr./Ms. ___"
+    },
+    {
+      "source": "তুমি / যুবক",
+      "target": "you / young man"
+    },
+    {
+      "source": "চমৎকার / যথেষ্ট",
+      "target": "wonderful / quite"
+    },
+    {
+      "source": "শেষে সব পরে",
+      "target": "after all / in the end"
+    },
+    {
+      "source": "বাঁধা / যুক্ত করা",
+      "target": "bind / connect"
+    },
+    {
+      "source": "বিয়ে",
+      "target": "marriage / wedding"
+    },
+    {
+      "source": "মধুচন্দ্রিমা",
+      "target": "honeymoon"
+    },
+    {
+      "source": "ব্যস্ততা",
+      "target": "engagement / busyness"
+    },
+    {
+      "source": "সরকারী ছুটি",
+      "target": "public holiday"
+    },
+    {
+      "source": "উদযাপন করতে",
+      "target": "to celebrate"
+    },
+    {
+      "source": "উদযাপন অভিনন্দন উপহার",
+      "target": "celebration / congratulatory gift"
+    },
+    {
+      "source": "গান / সুর",
+      "target": "song / tune"
+    },
+    {
+      "source": "বক্ররেখা",
+      "target": "curve"
+    },
+    {
+      "source": "বাঁক নেওয়া / ঘোরা",
+      "target": "turn / bend"
+    },
+    {
+      "source": "বাঁকানো / মোচড়ানো",
+      "target": "bent / twisted"
+    },
+    {
+      "source": "স্ত্রী / ম্যাডাম",
+      "target": "wife / madam"
+    },
+    {
+      "source": "অভ্যন্তর / ভিতরের অংশ",
+      "target": "inside / interior"
+    },
+    {
+      "source": "ঘুমাতে / শুয়ে থাকা",
+      "target": "to sleep / to lie down"
+    },
+    {
+      "source": "দেরি করে ঘুম থেকে ওঠা",
+      "target": "to wake up late"
+    },
+    {
+      "source": "ঘুম",
+      "target": "sleep"
+    },
+    {
+      "source": "ডেন্টাল রোগীর ফর্ম · 21টি শব্দ",
+      "target": "dental patient form · 21 words"
+    },
+    {
+      "source": "মাথাব্যথা",
+      "target": "headache"
+    },
+    {
+      "source": "পেট ব্যাথা",
+      "target": "stomachache"
+    },
+    {
+      "source": "বেদনাদায়ক কালশিটে",
+      "target": "painful bruise"
+    },
+    {
+      "source": "জ্বর / তাপ",
+      "target": "fever / temperature"
+    },
+    {
+      "source": "উত্সাহী উদ্যোগী",
+      "target": "enthusiastic / enterprising"
+    },
+    {
+      "source": "গরম অনুরাগী",
+      "target": "hot fan / passionate"
+    },
+    {
+      "source": "পোকা বাগ",
+      "target": "insect / bug"
+    },
+    {
+      "source": "দন্তচিকিৎসা",
+      "target": "dentistry"
+    },
+    {
+      "source": "দাঁত",
+      "target": "tooth"
+    },
+    {
+      "source": "গহ্বর / দাঁতের ক্ষয়",
+      "target": "cavity / tooth decay"
+    },
+    {
+      "source": "প্রতিকার করা / নিরাময় করতে",
+      "target": "to remedy / to cure"
+    },
+    {
+      "source": "রাজনীতি",
+      "target": "politics"
+    },
+    {
+      "source": "চিকিৎসা",
+      "target": "medical treatment"
+    },
+    {
+      "source": "সুস্থ করা / নিরাময় করা",
+      "target": "to heal / to cure"
+    },
+    {
+      "source": "নোংরা নোংরা",
+      "target": "dirty / filthy"
+    },
+    {
+      "source": "ময়লা হওয়া / দূষিত হওয়া",
+      "target": "to get dirty / to be polluted"
+    },
+    {
+      "source": "লাইন আপ করা / লাইনে দাঁড়াতে",
+      "target": "to line up / to stand in line"
+    },
+    {
+      "source": "ব্যবস্থা করা লাইন আপ",
+      "target": "to arrange / to line up"
+    },
+    {
+      "source": "দাঁত প্রান্তিককরণ",
+      "target": "tooth alignment"
+    },
+    {
+      "source": "অন্যান্য অন্য",
+      "target": "other / another"
+    },
+    {
+      "source": "স্বাস্থ্য পরীক্ষার ফর্ম · 22টি শব্দ",
+      "target": "health checkup form · 22 words"
+    },
+    {
+      "source": "উচ্চতা",
+      "target": "height"
+    },
+    {
+      "source": "একক অবিবাহিত",
+      "target": "single / unmarried"
+    },
+    {
+      "source": "সামাজিক অবস্থা / পদমর্যাদা",
+      "target": "social status / rank"
+    },
+    {
+      "source": "সাশিমি",
+      "target": "sashimi"
+    },
+    {
+      "source": "খাতির",
+      "target": "sake"
+    },
+    {
+      "source": "রান্নার খাতির / রান্নার ওয়াইন",
+      "target": "cooking sake / cooking wine"
+    },
+    {
+      "source": "অ্যালকোহল / খাতির",
+      "target": "alcohol / sake"
+    },
+    {
+      "source": "মদের দোকান / খাতির দোকান",
+      "target": "liquor store / sake shop"
+    },
+    {
+      "source": "শ্বাস / শ্বসন",
+      "target": "breath / respiration"
+    },
+    {
+      "source": "শ্বাস নেওয়া ধোঁয়া",
+      "target": "to inhale smoke"
+    },
+    {
+      "source": "ক্ষুধা",
+      "target": "appetite"
+    },
+    {
+      "source": "প্রেরণা ইচ্ছা",
+      "target": "motivation / desire"
+    },
+    {
+      "source": "চাই ইচ্ছা",
+      "target": "want, wish"
+    },
+    {
+      "source": "ঘুমঘুম",
+      "target": "sleepy"
+    },
+    {
+      "source": "ক্লান্ত হওয়া / ক্লান্ত হয়ে",
+      "target": "to get tired / getting tired"
+    },
+    {
+      "source": "শ্বাস",
+      "target": "breath"
+    },
+    {
+      "source": "শ্বাসকষ্ট",
+      "target": "shortness of breath"
+    },
+    {
+      "source": "পুত্র",
+      "target": "son"
+    },
+    {
+      "source": "কল তলব",
+      "target": "summons, call"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · ざんねん",
+      "target": "Correct answer: 3 · ざんねん"
+    },
+    {
+      "source": "আমি দুঃখিত আমি বিয়েতে যোগ দিতে পারিনি।",
+      "target": "I am sorry I could not attend the wedding."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · わらって",
+      "target": "Correct answer: 4 · わらって"
+    },
+    {
+      "source": "আমি ছবি তুলব। হাসি.",
+      "target": "I will take a picture. Smile."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · いどう",
+      "target": "Correct answer: 3 · いどう"
+    },
+    {
+      "source": "অনুগ্রহ করে গাড়িটি ওখানে সরান।",
+      "target": "Please move the car over there."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · おくれて",
+      "target": "Correct answer: 1 · おくれて"
+    },
+    {
+      "source": "আমি দেরী উত্তর জন্য দুঃখিত.",
+      "target": "I am sorry for the late reply."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · やめた",
+      "target": "Correct answer: 4 · やめた"
+    },
+    {
+      "source": "শুনেছি ইয়ামাদা কোম্পানি ছেড়ে দিয়েছে।",
+      "target": "I heard that Yamada left the company."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · むすぶ",
+      "target": "Correct answer: 1 · むすぶ"
+    },
+    {
+      "source": "জুতার ফিতা বাঁধুন।",
+      "target": "Tie your shoelaces."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · おく",
+      "target": "Correct answer: 3 · おく"
+    },
+    {
+      "source": "এক বৃদ্ধ পাহাড়ের গভীরে থাকেন।",
+      "target": "An old man lives deep in the mountains."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · せいじ",
+      "target": "Correct answer: 1 · せいじ"
+    },
+    {
+      "source": "রাজনীতি নিয়ে কথা বলা কঠিন।",
+      "target": "It is difficult to talk about politics."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · むすこ",
+      "target": "Correct answer: 3 · むすこ"
+    },
+    {
+      "source": "আমি আমার ছেলের কাছ থেকে একটি চিঠি পেয়েছি।",
+      "target": "I received a letter from my son."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · にほんしゅ",
+      "target": "Correct answer: 4 · にほんしゅ"
+    },
+    {
+      "source": "চাল থেকে তৈরি হয় সাক।",
+      "target": "Sake is made from rice."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · お礼",
+      "target": "Correct answer: 1 · お礼"
+    },
+    {
+      "source": "আমি একটি ধন্যবাদ পোস্টকার্ড লিখেছি।",
+      "target": "Я wrote a thank-you postcard."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 伺えば",
+      "target": "Correct answer: 2 · 伺えば"
+    },
+    {
+      "source": "আমার দেখার জন্য কখন ভাল সময় হবে?",
+      "target": "When would be a good time for me to visit?"
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 調べる",
+      "target": "Correct answer: 4 · 調べる"
+    },
+    {
+      "source": "একটি শব্দের অর্থ দেখুন।",
+      "target": "Look up the meaning of a word."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 汗",
+      "target": "Correct answer: 2 · 汗"
+    },
+    {
+      "source": "তোয়ালে দিয়ে ঘাম মুছুন।",
+      "target": "Wipe away the sweat with a towel."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 最",
+      "target": "Correct answer: 4 · 最"
+    },
+    {
+      "source": "প্রথমে উপাদানগুলো ভালো করে কেটে নিন।",
+      "target": "First, cut the ingredients well."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 復",
+      "target": "Correct answer: 2 · 復"
+    },
+    {
+      "source": "আবহাওয়ার উন্নতি হচ্ছে।",
+      "target": "The weather is improving."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 昨",
+      "target": "Correct answer: 4 · 昨"
+    },
+    {
+      "source": "এই বছর আপনার সব সাহায্যের জন্য আপনাকে অনেক ধন্যবাদ.",
+      "target": "Thank you very much for all your help this year."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · 直",
+      "target": "Correct answer: 1 · 直"
+    },
+    {
+      "source": "অফিসে না ফিরে সোজা বাসায় চলে যাব।",
+      "target": "I will go straight home without returning to the office."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 痛",
+      "target": "Correct answer: 2 · 痛"
+    },
+    {
+      "source": "কিছু মাথাব্যথার ওষুধ কিনুন।",
+      "target": "Buy some headache medicine."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 欲",
+      "target": "Correct answer: 4 · 欲"
+    },
+    {
+      "source": "আমার ক্ষুধা নেই।",
+      "target": "I have no appetite."
+    },
+    {
+      "source": "PART 6 · ৬ LESSON + EXAM",
+      "target": "PART 6 · 6 LESSON + EXAM"
+    },
+    {
+      "source": "পড়া",
+      "target": "Reading"
+    },
+    {
+      "source": "আবহাওয়ার তথ্য · 14টি শব্দ",
+      "target": "Weather Information · 14 words"
+    },
+    {
+      "source": "পূর্বাভাস",
+      "target": "Forecast"
+    },
+    {
+      "source": "রিপোর্ট",
+      "target": "Report"
+    },
+    {
+      "source": "পরিষ্কার করা রৌদ্রোজ্জ্বল হয়ে",
+      "target": "Clearing up to become sunny"
+    },
+    {
+      "source": "রৌদ্রোজ্জ্বল আবহাওয়া",
+      "target": "Sunny weather"
+    },
+    {
+      "source": "মেঘ",
+      "target": "Cloud"
+    },
+    {
+      "source": "গরম করা",
+      "target": "Heating"
+    },
+    {
+      "source": "উষ্ণ",
+      "target": "Warm"
+    },
+    {
+      "source": "তুষার",
+      "target": "Snow"
+    },
+    {
+      "source": "ভূমিকম্প",
+      "target": "Earthquake"
+    },
+    {
+      "source": "ভূমিকম্পের তীব্রতা",
+      "target": "Earthquake intensity"
+    },
+    {
+      "source": "রেডিও তরঙ্গ / সংকেত",
+      "target": "Radio wave / Signal"
+    },
+    {
+      "source": "ঢেউ",
+      "target": "Wave"
+    },
+    {
+      "source": "সুনামি",
+      "target": "Tsunami"
+    },
+    {
+      "source": "বওয়া / ফুঁ দেওয়া",
+      "target": "Blowing / To blow"
+    },
+    {
+      "source": "চাকরির বিজ্ঞাপন · 21টি শব্দ",
+      "target": "Job Advertisements · 21 words"
+    },
+    {
+      "source": "চাহিদা অনুরোধ",
+      "target": "Demand request"
+    },
+    {
+      "source": "কাজের প্রস্তাব / নিয়োগ",
+      "target": "Job offer / Employment"
+    },
+    {
+      "source": "চালান বিল",
+      "target": "Invoice bill"
+    },
+    {
+      "source": "সন্ধান করা / অনুরোধ করতে",
+      "target": "To search / To request"
+    },
+    {
+      "source": "নিয়োগ / অনুরোধ",
+      "target": "Employment / Request"
+    },
+    {
+      "source": "কর্মক্ষেত্র",
+      "target": "Workplace"
+    },
+    {
+      "source": "পেশা",
+      "target": "Occupation"
+    },
+    {
+      "source": "চাকরি পরিবর্তন / কর্মজীবন পরিবর্তন",
+      "target": "Job change / Career change"
+    },
+    {
+      "source": "কর্মী সদস্য / কর্মচারী",
+      "target": "Staff member / Employee"
+    },
+    {
+      "source": "বিউটি সেলুন / চুলের সেলুন",
+      "target": "Beauty salon / Hair salon"
+    },
+    {
+      "source": "বিষয়বস্তু / বিস্তারিত",
+      "target": "Content / Details"
+    },
+    {
+      "source": "কৌশল প্রযুক্তি / দক্ষতা",
+      "target": "Technique technology / Skill"
+    },
+    {
+      "source": "প্রকৌশলী প্রযুক্তিবিদ",
+      "target": "Engineer technician"
+    },
+    {
+      "source": "অফিসের কাজ / কেরানি কাজ",
+      "target": "Office work / Clerical work"
+    },
+    {
+      "source": "সরকারি কর্মচারী",
+      "target": "Government employee"
+    },
+    {
+      "source": "অফিস সংস্থা",
+      "target": "Office organization"
+    },
+    {
+      "source": "ট্যাক্স অফিস / ট্যাক্স ব্যুরো",
+      "target": "Tax office / Tax bureau"
+    },
+    {
+      "source": "ধারা 1",
+      "target": "Section 1"
+    },
+    {
+      "source": "বিভাগ প্রধান / ম্যানেজার",
+      "target": "Department head / Manager"
+    },
+    {
+      "source": "সাধারণ সাধারণ",
+      "target": "General public"
+    },
+    {
+      "source": "সাধারণভাবে সাধারণভাবে",
+      "target": "Generally"
+    },
+    {
+      "source": "খেলাধুলার সংবাদ · 20টি শব্দ",
+      "target": "Sports news · 20 words"
+    },
+    {
+      "source": "পৃথিবী / গ্লোব",
+      "target": "Earth / Globe"
+    },
+    {
+      "source": "বেসবল",
+      "target": "Baseball"
+    },
+    {
+      "source": "আলো বাল্ব / বৈদ্যুতিক বাল্ব",
+      "target": "Light bulb / Electric bulb"
+    },
+    {
+      "source": "কখনই কোনোভাবেই",
+      "target": "Never / By no means"
+    },
+    {
+      "source": "সিদ্ধান্ত সংকল্প",
+      "target": "Decision / Determination"
+    },
+    {
+      "source": "সিদ্ধান্ত নেওয়া / নির্ধারণ করতে",
+      "target": "To make a decision / To determine"
+    },
+    {
+      "source": "সিদ্ধান্ত নেওয়া / নিষ্পত্তি করা",
+      "target": "To decide / To settle"
+    },
+    {
+      "source": "চ্যাম্পিয়নশিপ / বিজয়",
+      "target": "Championship / Victory"
+    },
+    {
+      "source": "চূড়ান্ত ম্যাচের সিদ্ধান্ত",
+      "target": "Decision of the final match"
+    },
+    {
+      "source": "1 থেকে 2 / 1-2",
+      "target": "1 to 2 / 1-2"
+    },
+    {
+      "source": "বিপরীত বিরোধী",
+      "target": "Opposite / Opposition"
+    },
+    {
+      "source": "প্রবাহিত হওয়া / প্রবাহিত হতে",
+      "target": "To flow / To stream"
+    },
+    {
+      "source": "প্রবাহিত হতে দেওয়া / দূরে ধোয়া",
+      "target": "To let flow / To wash away"
+    },
+    {
+      "source": "ম্যাচ প্রতিযোগিতা",
+      "target": "Match / Competition"
+    },
+    {
+      "source": "হারাতে",
+      "target": "To lose"
+    },
+    {
+      "source": "কলস",
+      "target": "Pitcher"
+    },
+    {
+      "source": "নিক্ষেপ",
+      "target": "To throw"
+    },
+    {
+      "source": "ফলাফল ফলাফল",
+      "target": "Result"
+    },
+    {
+      "source": "ফল",
+      "target": "Fruit"
+    },
+    {
+      "source": "অর্থনীতি · 18টি শব্দ",
+      "target": "Economy · 18 words"
+    },
+    {
+      "source": "যুদ্ধোত্তর যুদ্ধের পরে",
+      "target": "Post-war / After the war"
+    },
+    {
+      "source": "যুদ্ধ",
+      "target": "War"
+    },
+    {
+      "source": "লড়াই করা / যুদ্ধ করতে",
+      "target": "To fight / To make war"
+    },
+    {
+      "source": "অভিজ্ঞতা অভিজ্ঞতা করতে",
+      "target": "To experience"
+    },
+    {
+      "source": "ব্যবস্থাপনা একটি ব্যবসা চালানো",
+      "target": "Management / To run a business"
+    },
+    {
+      "source": "বৃদ্ধি হত্তয়া",
+      "target": "To grow"
+    },
+    {
+      "source": "সমাপ্তি / সম্পূর্ণ করতে",
+      "target": "Completion / To complete"
+    },
+    {
+      "source": "ব্যবসা বৈদেশিক বাণিজ্য",
+      "target": "Foreign trade / Business"
+    },
+    {
+      "source": "রপ্তানি রপ্তানি করতে",
+      "target": "Export / To export"
+    },
+    {
+      "source": "পরিবহন পরিবহন",
+      "target": "Transportation / To transport"
+    },
+    {
+      "source": "আমদানি আমদানি করতে",
+      "target": "Import / To import"
+    },
+    {
+      "source": "পরামর্শ পরামর্শ করতে",
+      "target": "Consultation / To consult"
+    },
+    {
+      "source": "প্রধানমন্ত্রী",
+      "target": "Prime Minister"
+    },
+    {
+      "source": "অংশীদার প্রতিপক্ষ",
+      "target": "Partner opponent"
+    },
+    {
+      "source": "অর্থনীতি অর্থনীতি",
+      "target": "Economy economy"
+    },
+    {
+      "source": "শেষ করা / যথেষ্ট হতে",
+      "target": "To finish / to be enough"
+    },
+    {
+      "source": "বিশ্ব উষ্ণায়ন · 17টি শব্দ",
+      "target": "Global warming · 17 words"
+    },
+    {
+      "source": "সংস্কৃতি",
+      "target": "Culture"
+    },
+    {
+      "source": "-করণ",
+      "target": "-ization"
+    },
+    {
+      "source": "রসায়ন",
+      "target": "Chemistry"
+    },
+    {
+      "source": "মেকআপ প্রসাধনী",
+      "target": "Makeup cosmetics"
+    },
+    {
+      "source": "তুলনা করতে",
+      "target": "To compare"
+    },
+    {
+      "source": "কাঁচামাল / উপাদান",
+      "target": "Raw materials / ingredients"
+    },
+    {
+      "source": "কারণ কারণ",
+      "target": "Reason cause"
+    },
+    {
+      "source": "আন্তর্জাতিক",
+      "target": "International"
+    },
+    {
+      "source": "সংঘ সম্পর্ক",
+      "target": "Association relationship"
+    },
+    {
+      "source": "মিটিং সম্মেলন",
+      "target": "Meeting conference"
+    },
+    {
+      "source": "বিধায়ক সমাবেশের সদস্য",
+      "target": "Legislator assembly member"
+    },
+    {
+      "source": "জীবন জীবিকা",
+      "target": "Life livelihood"
+    },
+    {
+      "source": "কার্যকলাপ / কর্ম",
+      "target": "Activity / work"
+    },
+    {
+      "source": "কঠিন গুরুতর",
+      "target": "Difficult serious"
+    },
+    {
+      "source": "পরিবর্তন প্রকরণ",
+      "target": "Change variation"
+    },
+    {
+      "source": "পরিবর্তন করা / পরিবর্তিত হতে",
+      "target": "To change / to be altered"
+    },
+    {
+      "source": "পরিবর্তন করা / পরিবর্তন করতে",
+      "target": "To change / to modify"
+    },
+    {
+      "source": "রাজনীতি · 20টি শব্দ",
+      "target": "Politics · 20 words"
+    },
+    {
+      "source": "রাজনীতিবিদ",
+      "target": "Politician"
+    },
+    {
+      "source": "সরকার",
+      "target": "Government"
+    },
+    {
+      "source": "প্রিফেকচার",
+      "target": "Prefecture"
+    },
+    {
+      "source": "পুনর্বিবেচনা / সংশোধন",
+      "target": "Reconsideration / revision"
+    },
+    {
+      "source": "টিকিট গেট / টিকিট বাধা",
+      "target": "Ticket gate / ticket barrier"
+    },
+    {
+      "source": "পরিবর্তন করা / সংশোধন করতে",
+      "target": "To change / to revise"
+    },
+    {
+      "source": "অস্বীকার অস্বীকার",
+      "target": "Denial denial"
+    },
+    {
+      "source": "নেতিবাচক",
+      "target": "Negative"
+    },
+    {
+      "source": "উদ্দেশ্য লক্ষ্য",
+      "target": "Objective goal"
+    },
+    {
+      "source": "ব্যক্তিগত",
+      "target": "Personal details"
+    },
+    {
+      "source": "আসলে / অনুশীলনে",
+      "target": "Actually / in practice"
+    },
+    {
+      "source": "আসলে",
+      "target": "Actually"
+    },
+    {
+      "source": "পরীক্ষা পরীক্ষা",
+      "target": "Exam test"
+    },
+    {
+      "source": "অভাব ত্রুটি",
+      "target": "Lack defect"
+    },
+    {
+      "source": "অভাব থাকা / অনুপস্থিত হতে",
+      "target": "To lack / to be absent"
+    },
+    {
+      "source": "বিশেষত্ব দক্ষতা",
+      "target": "Specialty skill"
+    },
+    {
+      "source": "বিশেষজ্ঞ বিশেষজ্ঞ",
+      "target": "Expert expert"
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · はれる",
+      "target": "Correct answer: 3 · はれる"
+    },
+    {
+      "source": "এই সপ্তাহান্তে সারা দেশে রোদ থাকবে।",
+      "target": "It will be sunny nationwide this weekend."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · いっぱん",
+      "target": "Correct answer: 4 · いっぱん"
+    },
+    {
+      "source": "এটি একটি খাবার যা সাধারণত জাপানে বিক্রি হয়।",
+      "target": "This is a food that is commonly sold in Japan."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · くだもの",
+      "target": "Correct answer: 2 · くだもの"
+    },
+    {
+      "source": "এটা কি ধরনের ফল?",
+      "target": "What kind of fruit is this?"
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · たたかって",
+      "target": "Correct answer: 4 · たたかって"
+    },
+    {
+      "source": "আমাদের দল একটি শক্তিশালী দলের সাথে লড়াই করেছে এবং জিতেছে।",
+      "target": "Our team fought against a strong team and won."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · こくさいかいぎ",
+      "target": "Correct answer: 2 · こくさいかいぎ"
+    },
+    {
+      "source": "একটি আন্তর্জাতিক সম্মেলনে যোগদান.",
+      "target": "Attend an international conference."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · せいじけいざい",
+      "target": "Correct answer: 2 · せいじけいざい"
+    },
+    {
+      "source": "বিশ্ববিদ্যালয়ে রাজনৈতিক অর্থনীতি অধ্যয়ন করুন।",
+      "target": "Study political economy at university."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · まけないで",
+      "target": "Correct answer: 4 · まけないで"
+    },
+    {
+      "source": "আসুন ঠান্ডা আমাদের ভাল হতে না দিন.",
+      "target": "Let's not let the cold get the better of us."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · げんりょう",
+      "target": "Correct answer: 3 · げんりょう"
+    },
+    {
+      "source": "কাঁচামাল আমদানি করা।",
+      "target": "Import raw materials."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · なげすて",
+      "target": "Correct answer: 1 · なげすて"
+    },
+    {
+      "source": "দয়া করে গাড়ির জানালা দিয়ে আবর্জনা ফেলবেন না।",
+      "target": "Please do not throw garbage out of the car window."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · すませて",
+      "target": "Correct answer: 4 · すませて"
+    },
+    {
+      "source": "আমি আমার বাড়ির কাজ শেষ করে টিভি দেখব।",
+      "target": "I will finish my homework and watch TV."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 実験",
+      "target": "Correct answer: 2 · 実験"
+    },
+    {
+      "source": "পরীক্ষামূলক ফলাফল রিপোর্ট.",
+      "target": "Report the experimental results."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · 専門家",
+      "target": "Correct answer: 1 · 専門家"
+    },
+    {
+      "source": "তাদের মতামতের জন্য একজন বিশেষজ্ঞকে জিজ্ঞাসা করুন।",
+      "target": "Ask an expert for their opinion."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 温暖化",
+      "target": "Correct answer: 3 · 温暖化"
+    },
+    {
+      "source": "বৈশ্বিক উষ্ণতা নিয়ে আলোচনা কর।",
+      "target": "Discuss global warming."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 吹いて",
+      "target": "Correct answer: 2 · 吹いて"
+    },
+    {
+      "source": "আগামীকাল একটি উত্তর বাতাস বইবে, তাই এটি ঠান্ডা হয়ে যাবে।",
+      "target": "Tomorrow a north wind will blow, so it will get cold."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 課",
+      "target": "Correct answer: 2 · 課"
+    },
+    {
+      "source": "পরবর্তী পরীক্ষা পাঠ 10 পর্যন্ত কভার করে।",
+      "target": "The upcoming test covers up to Lesson 10."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 化",
+      "target": "Correct answer: 4 · 化"
+    },
+    {
+      "source": "কারখানাটি যান্ত্রিকীকরণ করা হয়েছিল।",
+      "target": "The factory was mechanized."
+    },
+    {
+      "source": "সঠিক উত্তর: 3 · 的",
+      "target": "Correct answer: 3 · 的"
+    },
+    {
+      "source": "আমি ব্যক্তিগত কারণে কোম্পানি ত্যাগ করেছি।",
+      "target": "I left the company for personal reasons."
+    },
+    {
+      "source": "সঠিক উত্তর: 2 · 報",
+      "target": "Correct answer: 2 · 報"
+    },
+    {
+      "source": "আমি রেডিওতে আবহাওয়ার পূর্বাভাস শুনি।",
+      "target": "I listen to the weather forecast on the radio."
+    },
+    {
+      "source": "সঠিক উত্তর: 1 · 否",
+      "target": "Correct answer: 1 · 否"
+    },
+    {
+      "source": "প্রধানমন্ত্রী সংবাদের বিষয়বস্তু অস্বীকার করেছেন।",
+      "target": "The Prime Minister denied the contents of the news."
+    },
+    {
+      "source": "সঠিক উত্তর: 4 · 波",
+      "target": "Correct answer: 4 · 波"
+    },
+    {
+      "source": "ফোনে থাকা ব্যক্তিটি এমন একটি এলাকায় রয়েছে বলে মনে হচ্ছে যেখানে কোনও অভ্যর্থনা নেই৷",
+      "target": "The person on the phone seems to be in an area with no reception."
+    },
+    {
+      "source": "কিছু পাওয়া যায়নি। Search spelling বা Part বদলে আবার চেষ্টা করুন।",
+      "target": "Nothing found. Please try again by changing the search spelling or part."
+    },
+    {
+      "source": "Progress এই browser-এ save হবে। ·",
+      "target": "Progress will be saved in this browser. ·"
+    }
+  ]
+}

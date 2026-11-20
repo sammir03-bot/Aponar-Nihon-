@@ -1,0 +1,498 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "n4-grammar-lesson-27-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 27: Potential Form：পারা, সুযোগ ও স্বতঃস্ফূর্ত অনুভব | N4 Grammar",
+      "target": "Lesson 27: Potential Form — Ability, Opportunity and Spontaneous Senses | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Skip to main content"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 27 · ভিত্তি বিস্তার",
+      "target": "Lesson 27 · Building on the Basics"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "All Lessons"
+    },
+    {
+      "source": "ভিত্তি বিস্তার",
+      "target": "Building Foundations"
+    },
+    {
+      "source": "ধাপ ১ · 26–30",
+      "target": "Stage 1 · 26–30"
+    },
+    {
+      "source": "Potential Form：পারা, সুযোগ ও স্বতঃস্ফূর্ত অনুভব",
+      "target": "Potential Form: Ability, Opportunity and Spontaneous Feelings"
+    },
+    {
+      "source": "কোনো কাজ করার ক্ষমতা/সুযোগ, চোখে দেখা বা কানে শোনা এবং ‘শুধু এটুকুই’ সীমাবদ্ধতা প্রকাশ।",
+      "target": "Expressing the ability / opportunity to do something, seeing with the eyes or hearing with the ears, and the limit of “only this much”."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 detailed grammar blocks"
+    },
+    {
+      "source": "10টি Japanese example",
+      "target": "10 Japanese examples"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice questions with explanations"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile and print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Hide あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Not completed yet"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Mark Complete"
+    },
+    {
+      "source": "Lesson 27 · লক্ষ্য",
+      "target": "Lesson 27 · Goal"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "What you will be able to do after this lesson"
+    },
+    {
+      "source": "বাংলার ‘পারি’ জাপানিতে সবসময় একই রূপে আসে না। নিজের সক্ষমতা হলে potential verb, কোনো সুবিধা/সম্ভাবনা হলে できます, আর চেষ্টা ছাড়াই চোখে বা কানে ধরা পড়লে 見えます／聞こえます লাগে। এই lesson-এ পার্থক্যগুলো particle-সহ পরিষ্কার হবে।",
+      "target": "The English “can” does not always take the same form in Japanese. For your own ability it is a potential verb; for a facility or possibility it is できます; and when something is caught by the eyes or ears without trying, you need 見えます／聞こえます. In this lesson, these differences, particles included, will become clear."
+    },
+    {
+      "source": "তিন verb group-এর potential form নির্ভুলভাবে বানাতে পারবেন",
+      "target": "You will be able to make the potential form of all three verb groups without mistakes"
+    },
+    {
+      "source": "を থেকে が পরিবর্তনের নিয়ম ও は-এর ব্যবহার বুঝবেন",
+      "target": "You will understand the rule for changing を to が and the use of は"
+    },
+    {
+      "source": "見えます/聞こえます এবং 見られます/聞けます আলাদা করবেন",
+      "target": "You will be able to tell 見えます/聞こえます apart from 見られます/聞けます"
+    },
+    {
+      "source": "しか〜ません দিয়ে কঠোর সীমাবদ্ধতা প্রকাশ করবেন",
+      "target": "You will be able to express a strict limit with しか〜ません"
+    },
+    {
+      "source": "কোনো কাজ করার সামর্থ্য, পরিস্থিতিগত সুযোগ বা অনুমোদন থাকা",
+      "target": "Having the ability to do something, a situational opportunity, or permission"
+    },
+    {
+      "source": "গঠন",
+      "target": "Formation"
+    },
+    {
+      "source": "ধরন",
+      "target": "Type"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Example"
+    },
+    {
+      "source": "শেষ う-row → একই え-row＋る",
+      "target": "The last う-row → the same え-row + る"
+    },
+    {
+      "source": "る বাদ＋られる",
+      "target": "Drop る + られる"
+    },
+    {
+      "source": "অনিয়মিত",
+      "target": "Irregular"
+    },
+    {
+      "source": "ভদ্র রূপ",
+      "target": "Polite form"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detailed Explanation"
+    },
+    {
+      "source": "Potential verb নিজেই ‘পারা’ অর্থ বহন করে; তাই আলাদা ことができます না দিলেও চলে। 日本語を話すことができます এবং 日本語が話せます—দুটিই ‘জাপানি বলতে পারি’। দ্বিতীয়টি কথায় সংক্ষিপ্ত ও স্বাভাবিক।",
+      "target": "A potential verb itself carries the meaning “can”, so there is no need to add ことができます separately. 日本語を話すことができます and 日本語が話せます both mean “I can speak Japanese”. The second is shorter and more natural in speech."
+    },
+    {
+      "source": "Potential বাক্যে কাজের object সাধারণত が নেয়: 漢字が読めます। বিষয়টি contrast করলে は হতে পারে: 漢字は読めますが、書けません। কথ্য ভাষায় を-ও শোনা যায়, কিন্তু N4-এ が নিরাপদ।",
+      "target": "In a potential sentence, the object of the action usually takes が: 漢字が読めます. For contrast, は is possible: 漢字は読めますが、書けません. を is also heard in speech, but at N4 が is the safe choice."
+    },
+    {
+      "source": "ক্ষমতা না শুধু বাস্তব সুযোগও বোঝায়: この図書館では夜九時まで勉強できます = এই লাইব্রেরিতে রাত নয়টা পর্যন্ত পড়ার সুযোগ আছে।",
+      "target": "It expresses not only ability but also a real opportunity: この図書館では夜九時まで勉強できます = you can study in this library until nine at night."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "What to Remember"
+    },
+    {
+      "source": "Group 1-এ る যোগ করতে ভুলবেন না: 書け নয়, 書ける।",
+      "target": "In Group 1, do not forget to add る: not 書け, but 書ける."
+    },
+    {
+      "source": "Group 2-এর পূর্ণ standard form 食べられる; কথ্য ら抜き 食べれる পরীক্ষায় এড়িয়ে চলুন।",
+      "target": "The full standard form for Group 2 is 食べられる; avoid the colloquial ら抜き form 食べれる in exams."
+    },
+    {
+      "source": "Potential verb সাধারণত volitional নয়; ‘চেষ্টা করে পারলাম’ প্রসঙ্গে できました ব্যবহারও স্বাভাবিক।",
+      "target": "A potential verb is usually not volitional; in the sense of “I tried and managed to do it”, using できました is also natural."
+    },
+    {
+      "source": "আমি হিরাগানা পড়তে পারি।",
+      "target": "I can read hiragana."
+    },
+    {
+      "source": "এই দোকানে কার্ড ব্যবহার করা যায় না।",
+      "target": "You cannot use a card in this shop."
+    },
+    {
+      "source": "অনুশীলন করায় ১০০ মিটার সাঁতার কাটতে পারি এখন।",
+      "target": "Because I practised, I can now swim 100 metres."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Wrong"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Correct"
+    },
+    {
+      "source": "কেন:",
+      "target": "Why:"
+    },
+    {
+      "source": "ことができます কাঠামোয় মূল verb plain form ও object を; potential verb হলে が। দুই কাঠামো মেশাবেন না।",
+      "target": "In the ことができます structure, the main verb is in the plain form and the object takes を; with a potential verb, it takes が. Do not mix the two structures."
+    },
+    {
+      "source": "কিছু তৈরি/সম্পন্ন হওয়া, নতুন সুবিধা হওয়া, অথবা noun-রূপ কাজ পারা",
+      "target": "Something being made / completed, a new facility appearing, or being able to do a noun-type action"
+    },
+    {
+      "source": "সক্ষমতা",
+      "target": "Ability"
+    },
+    {
+      "source": "N（কাজ/খেলা/ভাষা）ができます",
+      "target": "N (work / sport / language) ができます"
+    },
+    {
+      "source": "সম্পন্ন/নির্মাণ",
+      "target": "Completed / construction"
+    },
+    {
+      "source": "N（নতুন জিনিস）ができます",
+      "target": "N (new thing) ができます"
+    },
+    {
+      "source": "スポーツができます বললে খেলাধুলা করতে পারা বোঝায়। আবার 橋ができました বললে সেতু তৈরি/সম্পন্ন হয়েছে। অর্থ নির্ধারণ করে noun ও প্রসঙ্গ।",
+      "target": "スポーツができます means being able to play sports. 橋ができました, on the other hand, means the bridge has been built / completed. The noun and the context decide the meaning."
+    },
+    {
+      "source": "場所でNができます বললে সেখানে নতুন কিছু তৈরি হবে: 来年、ここに病院ができます।",
+      "target": "場所でNができます means something new will be built there: 来年、ここに病院ができます."
+    },
+    {
+      "source": "する-verb হলে Nができます বা Nをすることができます—দুটিই সম্ভব।",
+      "target": "With a する-verb, both Nができます and Nをすることができます are possible."
+    },
+    {
+      "source": "আমার ছোট বোন স্কি করতে পারে।",
+      "target": "My younger sister can ski."
+    },
+    {
+      "source": "স্টেশনের কাছে নতুন লাইব্রেরি হয়েছে।",
+      "target": "A new library has been built near the station."
+    },
+    {
+      "source": "‘দোকান তৈরি হবে’—দোকানটি subject, তাই が; অবস্থান/গন্তব্যে に।",
+      "target": "In “the shop will be built”, the shop is the subject, so が; for place / destination, に."
+    },
+    {
+      "source": "চেষ্টা না করেও চোখে দেখা যায় / কানে শোনা যায়",
+      "target": "Can be seen with the eyes / heard with the ears without trying"
+    },
+    {
+      "source": "দৃশ্য",
+      "target": "Scene"
+    },
+    {
+      "source": "শব্দ",
+      "target": "Words"
+    },
+    {
+      "source": "ইচ্ছাকৃত সক্ষমতা",
+      "target": "Deliberate ability"
+    },
+    {
+      "source": "見えます/聞こえます হলো perception: চোখ খুললেই দৃশ্য ধরা পড়ছে, কানে নিজে থেকেই শব্দ আসছে। 見られます/聞けます হলো সুযোগ বা ব্যবস্থা থাকার কারণে ইচ্ছা করে দেখা/শোনা সম্ভব।",
+      "target": "見えます/聞こえます are perception: as soon as you open your eyes the view is there, and sounds reach the ears by themselves. 見られます/聞けます mean you can deliberately watch / listen because the opportunity or the means exist."
+    },
+    {
+      "source": "窓から海が見えます—জানালা দিয়ে সমুদ্র দৃশ্যমান। このアプリで日本のニュースが見られます—অ্যাপটি ব্যবহার করে ইচ্ছা করলে খবর দেখা যায়।",
+      "target": "窓から海が見えます — the sea is visible from the window. このアプリで日本のニュースが見られます — using this app, you can watch the Japanese news whenever you wish."
+    },
+    {
+      "source": "দৃশ্য/শব্দ が; উৎসের পরে から: 部屋から声が聞こえます。",
+      "target": "Sight / sound take が; after the source comes から: 部屋から声が聞こえます."
+    },
+    {
+      "source": "এখান থেকে ফুজি পর্বত দেখা যায়।",
+      "target": "Mount Fuji can be seen from here."
+    },
+    {
+      "source": "বাইরে থেকে শিশুদের কণ্ঠ শোনা যাচ্ছে।",
+      "target": "Children's voices can be heard from outside."
+    },
+    {
+      "source": "এই জাদুঘরে বিখ্যাত ছবি দেখা যায়/দেখার সুযোগ আছে।",
+      "target": "In this museum you can see famous paintings / there is a chance to see them."
+    },
+    {
+      "source": "শব্দ কানে পৌঁছাচ্ছে না—তাই 聞こえません; শোনার সুযোগ/ক্ষমতা না হলে 聞けません।",
+      "target": "If the sound does not reach the ear, it is 聞こえません; if there is no opportunity or ability to hear, it is 聞けません."
+    },
+    {
+      "source": "শুধু N-ই; প্রত্যাশার চেয়ে কম/সীমিত",
+      "target": "Only N; less than expected / limited"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Noun"
+    },
+    {
+      "source": "সংখ্যা/সময়",
+      "target": "Number / time"
+    },
+    {
+      "source": "しか সবসময় negative predicate চায়, কিন্তু পুরো বাক্যের অর্থ affirmative ‘শুধু’। 一人しか来ませんでした = মাত্র একজন এসেছিল।",
+      "target": "しか always takes a negative predicate, but the meaning of the whole sentence is an affirmative “only”. 一人しか来ませんでした = only one person came."
+    },
+    {
+      "source": "だけ নিরপেক্ষ সীমা; しか〜ない প্রায়ই ‘এতটুকুই’ বা অপর্যাপ্ততার অনুভূতি আনে। 水だけ飲みました নিরপেক্ষ; 水しか飲みませんでした অন্য কিছু একেবারেই নয়—এই জোর দেয়।",
+      "target": "だけ is a neutral limit; しか〜ない often brings a feeling of “only this much” or insufficiency. 水だけ飲みました is neutral; 水しか飲みませんでした emphasises that there was absolutely nothing else."
+    },
+    {
+      "source": "しか থাকলে ありません／できません／食べません ইত্যাদি negative আবশ্যক।",
+      "target": "With しか, a negative such as ありません／できません／食べません is essential."
+    },
+    {
+      "source": "মানিব্যাগে মাত্র ৫০০ ইয়েন আছে।",
+      "target": "There are only 500 yen in my wallet."
+    },
+    {
+      "source": "আজ মাত্র এক ঘণ্টা পড়তে পারব।",
+      "target": "Today I will only be able to study for one hour."
+    },
+    {
+      "source": "しか-এর পরে negative; অতীত হলে 来ませんでした।",
+      "target": "After しか comes a negative; for the past, 来ませんでした."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Differences at a Glance"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Which one in which situation?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Form"
+    },
+    {
+      "source": "অর্থ",
+      "target": "Meaning"
+    },
+    {
+      "source": "উদাহরণের অনুভূতি",
+      "target": "The feel of the examples"
+    },
+    {
+      "source": "নিজে থেকেই দৃশ্যমান",
+      "target": "Visible by itself"
+    },
+    {
+      "source": "জানালা দিয়ে পাহাড় দেখা যায়",
+      "target": "Mountains can be seen through the window"
+    },
+    {
+      "source": "দেখার সক্ষমতা/সুযোগ",
+      "target": "Ability / opportunity to see"
+    },
+    {
+      "source": "অনলাইনে সিনেমা দেখা যায়",
+      "target": "You can watch films online"
+    },
+    {
+      "source": "নিরপেক্ষ ‘শুধু’",
+      "target": "Neutral “only”"
+    },
+    {
+      "source": "শুধু পানি নিলাম",
+      "target": "I took only water"
+    },
+    {
+      "source": "কঠোর সীমা/কম হওয়ার ইঙ্গিত",
+      "target": "A strict limit / a hint of insufficiency"
+    },
+    {
+      "source": "পানি ছাড়া কিছুই নেই",
+      "target": "There is nothing except water"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Real-life conversations"
+    },
+    {
+      "source": "নতুন অ্যাপের সুবিধা নিয়ে কথা",
+      "target": "Talking about the benefits of a new app"
+    },
+    {
+      "source": "এই অ্যাপ দিয়ে কী করা যায়?",
+      "target": "What can you do with this app?"
+    },
+    {
+      "source": "জাপানি টিভি দেখা এবং রেডিও শোনা যায়।",
+      "target": "You can watch Japanese TV and listen to the radio."
+    },
+    {
+      "source": "ফ্রি কি?",
+      "target": "Is it free?"
+    },
+    {
+      "source": "না, বিনামূল্যের অনুষ্ঠান মাত্র তিনটি।",
+      "target": "No, there are only three free programmes."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Check Yourself"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice with answers and explanations"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "First write the answers in your notebook, then tap a question to check the answer and the reason."
+    },
+    {
+      "source": "1. 書く-এর potential plain form বানান।",
+      "target": "1. Make the potential plain form of 書く."
+    },
+    {
+      "source": "2. ‘এই জানালা দিয়ে নদী দেখা যায়’—見えます ব্যবহার করুন।",
+      "target": "2. “The river can be seen from this window” — use 見えます."
+    },
+    {
+      "source": "স্বতঃস্ফূর্ত দৃশ্য: 川が見えます; উৎস: 窓から।",
+      "target": "Spontaneous view: 川が見えます; source: 窓から."
+    },
+    {
+      "source": "3. ‘আমার কাছে মাত্র ১০০০ ইয়েন আছে’ বলুন।",
+      "target": "3. Say: “I have only 1,000 yen.”"
+    },
+    {
+      "source": "しか-এর পরে negative ありません।",
+      "target": "After しか, the negative ありません."
+    },
+    {
+      "source": "4. সঠিকটি বাছুন: 日本語（を／が）話せます。",
+      "target": "4. Choose the correct one: 日本語（を／が）話せます。"
+    },
+    {
+      "source": "Potential verb-এর object N4 standard-এ が।",
+      "target": "With a potential verb, the object takes が in the N4 standard."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "The Master Key in One Sentence"
+    },
+    {
+      "source": "‘আমি পারি’ হলে potential, ‘দৃশ্য/শব্দ নিজে আসে’ হলে 見えます／聞こえます, আর ‘এটুকু ছাড়া নয়’ হলে しか＋negative—এই তিনটি আলাদা বাক্সে ভাবুন।",
+      "target": "Think of them in three separate boxes: if it is “I can do it”, use the potential; if a sight / sound comes by itself, 見えます／聞こえます; if it is “nothing but this much”, しか + a negative."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Trusted References"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus and Verification"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "This independent lesson in English was created by aligning the lesson sequence of Minna no Nihongo II, the official JLPT N4 scope and the Japan Foundation's learner resources. The examples and explanations in English are newly written."
+    },
+    {
+      "source": "← আগের Lesson 26",
+      "target": "← Previous Lesson 26"
+    },
+    {
+      "source": "〜んです：কারণ, ব্যাখ্যা ও ভদ্র অনুরোধ",
+      "target": "〜んです — Reasons, Explanations and Polite Requests"
+    },
+    {
+      "source": "পরের Lesson 28 →",
+      "target": "Next Lesson 28 →"
+    },
+    {
+      "source": "〜ながら・〜し：একসঙ্গে কাজ ও একাধিক কারণ",
+      "target": "〜ながら・〜し: Doing things at the same time and listing reasons"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson Index"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Learning goal"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Comparison Table"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress is loading…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "A free, detailed self-study edition in English for learners."
+    }
+  ]
+}

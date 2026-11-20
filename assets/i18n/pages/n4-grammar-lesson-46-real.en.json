@@ -1,0 +1,486 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "n4-grammar-lesson-46-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Skip to main content"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 46 · সময় ও Keigo",
+      "target": "Lesson 46 · Time and Keigo"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "All Lessons"
+    },
+    {
+      "source": "সময় ও Keigo",
+      "target": "Time & Keigo"
+    },
+    {
+      "source": "ধাপ ৫ · 46–50",
+      "target": "Stage 5 · 46–50"
+    },
+    {
+      "source": "কাজ শুরু হওয়ার ঠিক আগে, চলার ঠিক সময়, শেষ হওয়ার ঠিক পরে, বক্তার কাছে সাম্প্রতিক অতীত এবং প্রমাণভিত্তিক প্রত্যাশা।",
+      "target": "Just before an action begins, the exact moment it is in progress, just after it ends, the recent past as the speaker feels it, and an expectation based on evidence."
+    },
+    {
+      "source": "5টি বিস্তারিত grammar block",
+      "target": "5 detailed grammar blocks"
+    },
+    {
+      "source": "16টি Japanese example",
+      "target": "16 Japanese examples"
+    },
+    {
+      "source": "5টি ব্যাখ্যাসহ practice",
+      "target": "5 practice questions with explanations"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile and print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Hide あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Not completed yet"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Mark Complete"
+    },
+    {
+      "source": "Lesson 46 · লক্ষ্য",
+      "target": "Lesson 46 · Goal"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "What you will be able to do after this lesson"
+    },
+    {
+      "source": "বাংলার ‘এইমাত্র’ বা ‘এখন’ Japanese-এ event-এর boundary অনুযায়ী বদলায়। 食べるところ = এখন শুরু করব, 食べているところ = মাঝখানে, 食べたところ = এইমাত্র শেষ। たばかり clock-এর exact মুহূর্ত নয়—বক্তার অনুভূতিতে ‘সাম্প্রতিক’। はず আবার জানা তথ্য থেকে expected conclusion।",
+      "target": "The Bengali “just now” or “now” changes in Japanese according to the boundary of the event. 食べるところ = about to start now; 食べているところ = in the middle; 食べたところ = just finished. たばかり is not an exact moment on the clock — it is “recent” as the speaker feels it. はず, again, is a conclusion expected from information you know."
+    },
+    {
+      "source": "তিনটি ところ form দিয়ে event timeline নির্ভুলভাবে বলবেন",
+      "target": "You will be able to state the timeline of an event precisely with the three ところ forms"
+    },
+    {
+      "source": "たところ ও たばかり-এর objective immediacy বনাম subjective recency আলাদা করবেন",
+      "target": "You will be able to distinguish the objective immediacy of たところ from the subjective recency of たばかり"
+    },
+    {
+      "source": "はずです দিয়ে evidence-based expectation বলবেন",
+      "target": "You will be able to express an expectation based on evidence with はずです"
+    },
+    {
+      "source": "はずがない/ないはず-এর সম্পূর্ণ ভিন্ন অর্থ বুঝবেন",
+      "target": "You will understand the completely different meanings of はずがない／ないはず"
+    },
+    {
+      "source": "ঠিক এখন কাজটি শুরু করতে যাচ্ছি—just about to",
+      "target": "I am just about to begin the action right now — just about to"
+    },
+    {
+      "source": "গঠন",
+      "target": "Formation"
+    },
+    {
+      "source": "ধরন",
+      "target": "Type"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Example"
+    },
+    {
+      "source": "শুরু-পূর্ব",
+      "target": "Before the beginning"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detailed Explanation"
+    },
+    {
+      "source": "কাজ এখনো শুরু হয়নি, boundary-এর ঠিক আগে। これから, 今から, ちょうど-এর সঙ্গে স্বাভাবিক।",
+      "target": "The action has not yet begun; it is just before the boundary. Natural with これから, 今から, ちょうど."
+    },
+    {
+      "source": "Simple future これから食べます কেবল ‘এখন খাব’; 食べるところです ‘খেতে বসেছি/শুরু করার ঠিক মুহূর্তে’—তাৎক্ষণিকতা বেশি।",
+      "target": "The simple future これから食べます only says “I will eat now”; 食べるところです says “I am about to eat / at the very moment of beginning” — the immediacy is stronger."
+    },
+    {
+      "source": "ところ মূলত ‘স্থান’, কিন্তু এখানে সময়ের position—event timeline-এর কোন জায়গায় আছি।",
+      "target": "ところ originally means “place”, but here it is a position in time — where I am on the timeline of the event."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "What to Remember"
+    },
+    {
+      "source": "এখনই মিটিং শুরু করতে যাচ্ছি।",
+      "target": "I am just about to start the meeting."
+    },
+    {
+      "source": "ঠিক এখন বাড়ি থেকে বের হওয়ার মুহূর্ত।",
+      "target": "This is the very moment of leaving the house."
+    },
+    {
+      "source": "এখন দুপুরের খাবার বানাতে যাচ্ছি।",
+      "target": "I am just about to make lunch."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Wrong"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Correct"
+    },
+    {
+      "source": "কেন:",
+      "target": "Why:"
+    },
+    {
+      "source": "ところ-এর আগে plain dictionary form।",
+      "target": "Before ところ, the plain dictionary form."
+    },
+    {
+      "source": "ঠিক এই মুহূর্তে কাজের মাঝখানে—right in the middle of",
+      "target": "Right in the middle of the action at this very moment — right in the middle of"
+    },
+    {
+      "source": "মধ্যবর্তী",
+      "target": "In the middle"
+    },
+    {
+      "source": "Vています-এর চলমান অর্থের চেয়ে focus বেশি: ‘এই মুহূর্তেই কাজটি চলছে, এখনও শেষ হয়নি’। ফোনে status update-এ বহুল।",
+      "target": "The focus is stronger than the continuing meaning of Vています: “the action is in progress at this very moment, and is not yet finished”. Very common in status updates on the phone."
+    },
+    {
+      "source": "Habitual ています-এর সঙ্গে সাধারণত নয়; 毎日勉強しているところです অস্বাভাবিক, যদি নির্দিষ্ট current phase বোঝানো না হয়।",
+      "target": "It is not usually used with the habitual ています; 毎日勉強しているところです is unnatural, unless a specific current phase is meant."
+    },
+    {
+      "source": "ている-এর casual contraction てるところ কথায় শোনা যায়; formal content-এ পূর্ণ form রাখুন।",
+      "target": "The casual contraction of ている, てるところ, is heard in speech; keep the full form in formal content."
+    },
+    {
+      "source": "Process-এর ভিতর: Vているところ。",
+      "target": "Inside the process: Vているところ."
+    },
+    {
+      "source": "এখন ঠিক ওই বিষয়টি খতিয়ে দেখছি।",
+      "target": "Right now I am looking into that very matter."
+    },
+    {
+      "source": "এখন রান্নার মাঝখানে, পরে ফোন করব।",
+      "target": "I am in the middle of cooking now; I will phone later."
+    },
+    {
+      "source": "বিভাগীয় প্রধান এখন অতিথির সঙ্গে কথার মাঝখানে আছেন।",
+      "target": "The head of the department is in the middle of talking with a guest now."
+    },
+    {
+      "source": "今、調べたところです。（এখনো খুঁজছি বলতে）",
+      "target": "今、調べたところです。(intending to say that I am still looking into it)"
+    },
+    {
+      "source": "চলমান phase-এ ている; たところ হলে এইমাত্র শেষ।",
+      "target": "In a continuing phase, ている; if it were たところ, it would mean just finished."
+    },
+    {
+      "source": "ঠিক এইমাত্র কাজ শেষ হয়েছে—just finished",
+      "target": "The action has just finished at this very moment — just finished"
+    },
+    {
+      "source": "শেষ-পরবর্তী",
+      "target": "After the end"
+    },
+    {
+      "source": "Event boundary-এর ঠিক পরে; সময়গতভাবে খুব কাছাকাছি। 今, たった今, ちょうど clue।",
+      "target": "Just after the boundary of the event; very close in time. 今, たった今, ちょうど are the clues."
+    },
+    {
+      "source": "নতুন ফল/তথ্যও বোঝাতে পারে: 今確認したところ、間違いがありました (যাচাই করে দেখলাম…)—এটি উচ্চতর extension। N4-এ immediate completion আগে ধরুন।",
+      "target": "It can also indicate a new result or piece of information: 今確認したところ、間違いがありました (I checked and found…) — this is a higher-level extension. At N4, grasp the immediate completion first."
+    },
+    {
+      "source": "এক ঘণ্টা/এক বছর আগে হলে সাধারণত たところ নয়, যদি relative context-এ ‘ঠিক পরে’ বোঝানো না হয়।",
+      "target": "An hour ago or a year ago is usually not たところ, unless “just after” is meant in a relative context."
+    },
+    {
+      "source": "Immediate completion; clock-এ ‘খুব সাম্প্রতিক’।",
+      "target": "Immediate completion; “very recent” on the clock."
+    },
+    {
+      "source": "এইমাত্র স্টেশনে পৌঁছেছি।",
+      "target": "I have just arrived at the station."
+    },
+    {
+      "source": "মিটিং এইমাত্র শেষ হয়েছে।",
+      "target": "The meeting has just ended."
+    },
+    {
+      "source": "এইমাত্র ইমেইল পাঠিয়েছি।",
+      "target": "I have just sent the email."
+    },
+    {
+      "source": "এক বছর সাধারণত immediate নয়; বক্তার subjective ‘সাম্প্রতিক’ হলে ばかり সম্ভব।",
+      "target": "A year is not usually immediate; if it is “recent” in the speaker's subjective feeling, ばかり is possible."
+    },
+    {
+      "source": "বক্তার অনুভূতিতে অল্প আগে কাজ হয়েছে—just/recently",
+      "target": "The action happened a short time ago in the speaker's feeling — just / recently"
+    },
+    {
+      "source": "সাম্প্রতিক",
+      "target": "Recent"
+    },
+    {
+      "source": "Exact সময়ের সীমা নেই। পাঁচ মিনিট, এক সপ্তাহ, এমনকি জীবনপর্ব অনুযায়ী এক বছরও speaker-এর কাছে ‘এই তো সেদিন’ হতে পারে।",
+      "target": "There is no exact limit of time. Five minutes, a week, even a year, depending on the stage of life, can be “just the other day” for the speaker."
+    },
+    {
+      "source": "たところ objective immediate boundary; たばかり subjective recency। 今食べたところです = এইমাত্র শেষ; 先週食べたばかりです = গত সপ্তাহেই তো খেয়েছি।",
+      "target": "たところ is the objective immediate boundary; たばかり is subjective recency. 今食べたところです = I have just finished eating; 先週食べたばかりです = I only ate it last week."
+    },
+    {
+      "source": "ばかり-এর অন্য অর্থ ‘শুধুই’ (遊んでばかり) আছে; এখানে た-form＋ばかり = recently completed।",
+      "target": "ばかり has another meaning, “only” (遊んでばかり); here た-form + ばかり = recently completed."
+    },
+    {
+      "source": "Time expression থাকলেও speaker judgement: 三か月前に始めたばかりです।",
+      "target": "Even when there is a time expression, it is the speaker's judgement: 三か月前に始めたばかりです."
+    },
+    {
+      "source": "আমি গত মাসেই এই কোম্পানিতে যোগ দিয়েছি।",
+      "target": "I joined this company only last month."
+    },
+    {
+      "source": "ফোনটি সবে কিনেছি, অথচ নষ্ট হয়ে গেছে।",
+      "target": "I have only just bought the phone, and yet it has broken."
+    },
+    {
+      "source": "সবে দুপুরের খাবার খেয়েছি, তাই এখনো পেট ভরা।",
+      "target": "I have just eaten lunch, so I am still full."
+    },
+    {
+      "source": "সাম্প্রতিক completion-এ Vた＋ばかり।",
+      "target": "For a recent completion, Vた + ばかり."
+    },
+    {
+      "source": "জানা তথ্য/যুক্তি অনুযায়ী এমন হওয়ার কথা—strong expectation",
+      "target": "According to information or logic that I know, it should be so — a strong expectation"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "Verbs / い-adjectives"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-adjective"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Noun"
+    },
+    {
+      "source": "でしょう অনুমান; はず evidence/plan/logic থেকে stronger ‘হওয়ার কথা’। 時刻表によると、電車は十時に来るはずです।",
+      "target": "でしょう is a conjecture; はず is a stronger “it should be so”, from evidence, a plan or logic. 時刻表によると、電車は十時に来るはずです."
+    },
+    {
+      "source": "Vないはず = না হওয়ার কথা। Vるはずがない = হওয়ার কোনো কথাই নেই/অসম্ভব। অবস্থান বদলালে অর্থ উল্টে যায়।",
+      "target": "Vないはず = it should not happen. Vるはずがない = there is no way it can happen / it is impossible. If the position changes, the meaning reverses."
+    },
+    {
+      "source": "নিজের simple intention-এ はず নয়: 私は明日行くはずです অস্বাভাবিক, কারণ নিজের plan নিশ্চিত জানি—行く予定です/つもりです। তবে নিজের ওপর বাহ্যিক schedule হলে 私も参加するはずになっています ইত্যাদি সম্ভব।",
+      "target": "はず is not used for your own simple intention: 私は明日行くはずです is unnatural, because you know your own plan for certain — 行く予定です／つもりです. But if an external schedule applies to you, 私も参加するはずになっています and so on are possible."
+    },
+    {
+      "source": "Expectation ভুল হলে: 来るはずでしたが、来ませんでした।",
+      "target": "If the expectation proves wrong: 来るはずでしたが、来ませんでした."
+    },
+    {
+      "source": "তানাকা কথা দিয়েছেন, তাই আসার কথা।",
+      "target": "Tanaka promised, so he should come."
+    },
+    {
+      "source": "আজ রবিবার, তাই ব্যাংক বন্ধ থাকার কথা।",
+      "target": "Today is Sunday, so the bank should be closed."
+    },
+    {
+      "source": "চাবি টেবিলে রেখেছি, তাই সেখানেই থাকার কথা।",
+      "target": "I left the key on the table, so it should be there."
+    },
+    {
+      "source": "এত সহজ সমস্যা ভুল করার কথা নয়।",
+      "target": "There is no way I should make a mistake on such an easy problem."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Differences at a Glance"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Which one in which situation?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Form"
+    },
+    {
+      "source": "Timeline/মানসিকতা",
+      "target": "Timeline / Mentality"
+    },
+    {
+      "source": "শুরু হওয়ার ঠিক আগে",
+      "target": "Just before it begins"
+    },
+    {
+      "source": "ঠিক মাঝখানে",
+      "target": "Right in the middle"
+    },
+    {
+      "source": "শেষের ঠিক পরে",
+      "target": "Just after it ends"
+    },
+    {
+      "source": "speaker-এর কাছে সাম্প্রতিক",
+      "target": "Recent for the speaker"
+    },
+    {
+      "source": "先週/先月-ও সম্ভব",
+      "target": "先週／先月 are also possible"
+    },
+    {
+      "source": "তথ্য থেকে expected",
+      "target": "Expected from the information"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Real-life conversations"
+    },
+    {
+      "source": "ফোনে কাজের status",
+      "target": "The Status of the Work, on the Phone"
+    },
+    {
+      "source": "রিপোর্ট হয়ে গেছে?",
+      "target": "Is the report finished?"
+    },
+    {
+      "source": "এখন শেষ পৃষ্ঠাটি লিখছি।",
+      "target": "Now I am writing the last page."
+    },
+    {
+      "source": "মিটিং তিনটা থেকে। সময়মতো হবে?",
+      "target": "The meeting is from three o'clock. Will it be on time?"
+    },
+    {
+      "source": "জি। আর দশ মিনিটে শেষ হওয়ার কথা।",
+      "target": "Yes. It should finish in another ten minutes."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Check Yourself"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice with answers and explanations"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "First write the answers in your notebook, then tap a question to check the answer and the reason."
+    },
+    {
+      "source": "1. ‘এখনই বের হতে যাচ্ছি’ বলুন।",
+      "target": "1. Say: “I am just about to go out.”"
+    },
+    {
+      "source": "2. ‘এখন ঠিক খাবার খাচ্ছি’ বলুন।",
+      "target": "2. Say: “Right now I am in the middle of eating.”"
+    },
+    {
+      "source": "3. ‘এইমাত্র পৌঁছেছি’ বলুন।",
+      "target": "3. Say: “I have just arrived.”"
+    },
+    {
+      "source": "4. ‘সবে চাকরি শুরু করেছি’ বলুন।",
+      "target": "4. Say: “I have just started my job.”"
+    },
+    {
+      "source": "5. ‘আজ দোকান খোলা থাকার কথা’ বলুন।",
+      "target": "5. Say: “The shop should be open today.”"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "The Master Key in One Sentence"
+    },
+    {
+      "source": "Event-এর আগে/মাঝে/ঠিক পরে = る／ている／た＋ところ; subjective ‘সবে’ = たばかり; জানা তথ্য থেকে ‘হওয়ার কথা’ = はず。",
+      "target": "Before / in the middle of / just after an event = る／ている／た + ところ; the subjective “just” = たばかり; “it should be so” from information you know = はず."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Trusted References"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus and Verification"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "This independent lesson in English was created by aligning the lesson sequence of Minna no Nihongo II, the official JLPT N4 scope and the Japan Foundation's learner resources. The examples and explanations in English are newly written."
+    },
+    {
+      "source": "← আগের Lesson 45",
+      "target": "← Previous Lesson 45"
+    },
+    {
+      "source": "পরের Lesson 47 →",
+      "target": "Next Lesson 47 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson Index"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Learning goal"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Comparison Table"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress is loading…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "A free, detailed self-study edition in English for learners."
+    }
+  ]
+}

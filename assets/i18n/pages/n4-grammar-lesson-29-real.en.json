@@ -1,0 +1,478 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "n4-grammar-lesson-29-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 29: Result State：Vています ও Vてしまいます | N4 Grammar",
+      "target": "Lesson 29: Result State — Vています and Vてしまいます | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Skip to main content"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 29 · ভিত্তি বিস্তার",
+      "target": "Lesson 29 · Building on the Basics"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "All Lessons"
+    },
+    {
+      "source": "ভিত্তি বিস্তার",
+      "target": "Building Foundations"
+    },
+    {
+      "source": "ধাপ ১ · 26–30",
+      "target": "Stage 1 · 26–30"
+    },
+    {
+      "source": "Result State：Vています ও Vてしまいます",
+      "target": "Result State: Vています and Vてしまいます"
+    },
+    {
+      "source": "কোনো পরিবর্তনের পরে বর্তমান অবস্থা, কাজ সম্পূর্ণ শেষ হওয়া এবং অনিচ্ছাকৃত/দুঃখজনক ফল প্রকাশ।",
+      "target": "Expressing the present state after a change, an action being completely finished, and an unintentional or regrettable result."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 detailed grammar blocks"
+    },
+    {
+      "source": "9টি Japanese example",
+      "target": "9 Japanese examples"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice questions with explanations"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile and print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Hide あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Not completed yet"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Mark Complete"
+    },
+    {
+      "source": "Lesson 29 · লক্ষ্য",
+      "target": "Lesson 29 · Goal"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "What you will be able to do after this lesson"
+    },
+    {
+      "source": "窓が開いています মানে কেউ এখন জানালা খুলছে না; জানালাটি খোলার পরিবর্তন ঘটেছে এবং ফলটি এখনো আছে। এই ‘result state’ বুঝলে ています-এর বড় একটি রহস্য পরিষ্কার হয়। এরপর てしまいます দেখায় কাজটি পুরো শেষ, অথবা ফলটি বক্তার ইচ্ছার বিরুদ্ধে গেছে।",
+      "target": "窓が開いています does not mean someone is opening the window now; the change of opening has happened and its result still remains. Once you understand this “result state”, a big mystery of ています becomes clear. Then てしまいます shows that the action is completely finished, or that the result has gone against the speaker's will."
+    },
+    {
+      "source": "চলমান কাজ ও result state-এর ています আলাদা করবেন",
+      "target": "You will be able to distinguish ています for an ongoing action from ています for a result state"
+    },
+    {
+      "source": "intransitive verb-এর সঙ্গে が ব্যবহার করে বস্তুর অবস্থা বলবেন",
+      "target": "You will be able to describe the state of a thing using が with an intransitive verb"
+    },
+    {
+      "source": "Vてしまいます-এর completion ও regret—দুই অর্থ প্রসঙ্গ থেকে ধরবেন",
+      "target": "You will be able to grasp both meanings of Vてしまいます — completion and regret — from the context"
+    },
+    {
+      "source": "transitive/intransitive জোড়া দেখে সঠিক verb বাছবেন",
+      "target": "You will be able to choose the right verb by looking at transitive / intransitive pairs"
+    },
+    {
+      "source": "পরিবর্তন ইতিমধ্যে ঘটেছে; তার ফল এখনো রয়েছে",
+      "target": "The change has already happened; its result still remains"
+    },
+    {
+      "source": "গঠন",
+      "target": "Formation"
+    },
+    {
+      "source": "ধরন",
+      "target": "Type"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Example"
+    },
+    {
+      "source": "বস্তু/অবস্থা",
+      "target": "Thing / state"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detailed Explanation"
+    },
+    {
+      "source": "開く, 閉まる, 壊れる, 消える, 落ちる-এর মতো intransitive verb বস্তু নিজে যে অবস্থায় পৌঁছেছে তা দেখায়। কে কাজটি করেছে, তা গুরুত্বপূর্ণ নয়।",
+      "target": "Intransitive verbs like 開く, 閉まる, 壊れる, 消える, 落ちる show the state that the thing itself has reached. Who did the action does not matter."
+    },
+    {
+      "source": "今ドアが閉まっています = দরজাটি এখন বন্ধ অবস্থায়। কিন্তু 今、田中さんがドアを閉めています = তানাকা এখন দরজা বন্ধ করছেন—চলমান transitive action।",
+      "target": "今ドアが閉まっています = the door is in a closed state now. But 今、田中さんがドアを閉めています = Tanaka is closing the door now — an ongoing transitive action."
+    },
+    {
+      "source": "が নতুন/নিরপেক্ষ অবস্থা উপস্থাপন করে; は contrast বা আলোচ্য বিষয়: 窓は開いていますが、ドアは閉まっています।",
+      "target": "が presents a new / neutral state; は is contrast or the topic under discussion: 窓は開いていますが、ドアは閉まっています।"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "What to Remember"
+    },
+    {
+      "source": "সব ています result state নয়; activity verb 読む/食べる-তে সাধারণত চলমান কাজ।",
+      "target": "Not all ています are result states; with activity verbs 読む/食べる, it is usually an ongoing action."
+    },
+    {
+      "source": "ক্লাসরুমের বাতি জ্বালানো/জ্বলে আছে।",
+      "target": "The classroom light is switched on / lit."
+    },
+    {
+      "source": "এই ঘড়িটি নষ্ট অবস্থায় আছে।",
+      "target": "This watch is in a broken state."
+    },
+    {
+      "source": "রাস্তায় একটি মানিব্যাগ পড়ে আছে।",
+      "target": "A wallet is lying on the street."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Wrong"
+    },
+    {
+      "source": "窓を開いています。（জানালাটি খোলা আছে বলতে）",
+      "target": "窓を開いています。(meant for saying the window is open)"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Correct"
+    },
+    {
+      "source": "কেন:",
+      "target": "Why:"
+    },
+    {
+      "source": "বস্তুর result state-এ intransitive 開く এবং particle が। を＋開けています বললে কেউ এখন খুলছে।",
+      "target": "For the result state of a thing, the intransitive 開く and the particle が. With を+開けています, someone is opening it now."
+    },
+    {
+      "source": "Transitive বনাম intransitive focus",
+      "target": "Transitive vs Intransitive Focus"
+    },
+    {
+      "source": "কাজকারীকে দেখাবেন, না ফলের অবস্থাকে—তার ওপর verb ও particle নির্ভর করে",
+      "target": "Whether you show the doer or the state of the result — the verb and the particle depend on that"
+    },
+    {
+      "source": "কাজ",
+      "target": "Tasks"
+    },
+    {
+      "source": "ফল",
+      "target": "Fruit"
+    },
+    {
+      "source": "Transitive sentence-এ agent ইচ্ছাকৃতভাবে object বদলায়। Intransitive sentence-এ পরিবর্তিত জিনিসটি subject; agent অনুল্লেখিত।",
+      "target": "In a transitive sentence, the agent deliberately changes the object. In an intransitive sentence, the thing that changed is the subject; the agent is not mentioned."
+    },
+    {
+      "source": "N4-এ বহুল জোড়া: 開ける/開く, 閉める/閉まる, つける/つく, 消す/消える, 壊す/壊れる, 汚す/汚れる, 落とす/落ちる।",
+      "target": "Common pairs in N4: 開ける/開く, 閉める/閉まる, つける/つく, 消す/消える, 壊す/壊れる, 汚す/汚れる, 落とす/落ちる."
+    },
+    {
+      "source": "を দেখলে transitive, が দেখলে intransitive—এটি শক্তিশালী clue, তবে verb-জোড়াও মুখস্থ করুন।",
+      "target": "Seeing を suggests transitive, seeing が suggests intransitive — a strong clue, but memorise the verb pairs too."
+    },
+    {
+      "source": "কেউ প্লেটটি ভেঙেছে। প্লেটটি ভাঙা অবস্থায় আছে।",
+      "target": "Someone has broken the plate. The plate is in a broken state."
+    },
+    {
+      "source": "মা আলো নিভিয়েছেন। আলো নিভে আছে।",
+      "target": "Mother switched off the light. The light is off."
+    },
+    {
+      "source": "閉める transitive; agent দরজা বন্ধ করলে を। দরজার অবস্থা হলে 閉まる＋が।",
+      "target": "閉める is transitive; when an agent closes the door, を. When it is the state of the door, 閉まる + が."
+    },
+    {
+      "source": "Vてしまいます：সম্পূর্ণতা",
+      "target": "Vてしまいます: Completion"
+    },
+    {
+      "source": "কাজটি পুরোপুরি শেষ করে ফেলা/শেষ হয়ে যাওয়া",
+      "target": "Finishing an action completely / it coming to an end"
+    },
+    {
+      "source": "বর্তমান/ভবিষ্যৎ",
+      "target": "Present / future"
+    },
+    {
+      "source": "অতীত",
+      "target": "past"
+    },
+    {
+      "source": "Completion অর্থে আবেগ থাকা বাধ্যতামূলক নয়। 宿題をしてしまいます বললে ‘হোমওয়ার্কটি একেবারে শেষ করে ফেলব’—শেষ করার দিকটিতে জোর।",
+      "target": "In the completion sense, emotion is not required. 宿題をしてしまいます means “I will finish the homework completely” — the emphasis is on getting it finished."
+    },
+    {
+      "source": "よく, 全部, 今日中に-এর মতো শব্দ completion reading-কে শক্ত করে। কাজটি পরিকল্পিত হলেও ব্যবহার করা যায়।",
+      "target": "Words like よく, 全部, 今日中に strengthen the completion reading. It can be used even when the action is planned."
+    },
+    {
+      "source": "て-form＋しまう conjugate হয়: しまいます／しまいました／しまって。",
+      "target": "The て-form + しまう conjugates: しまいます／しまいました／しまって。"
+    },
+    {
+      "source": "বইটি আজকের মধ্যেই পুরো পড়ে ফেলব।",
+      "target": "I will read the whole book within today."
+    },
+    {
+      "source": "কেকটি পুরো খেয়ে ফেলেছি।",
+      "target": "I ate up the whole cake."
+    },
+    {
+      "source": "ব্যাকরণ সম্ভব, তবে completion-এর প্রাসঙ্গিক সীমা/তাগিদ দিলে অর্থ পরিষ্কার হয়।",
+      "target": "The grammar is possible, but giving a relevant limit or urgency for the completion makes the meaning clear."
+    },
+    {
+      "source": "Vてしまいます：অনিচ্ছা/আফসোস",
+      "target": "Vてしまいます: Unwillingness / Regret"
+    },
+    {
+      "source": "ভুল করে, অনিচ্ছায় বা দুঃখজনকভাবে কিছু ঘটে যাওয়া",
+      "target": "Something happening by mistake, unwillingly, or regrettably"
+    },
+    {
+      "source": "দুঃখজনক ফল",
+      "target": "A regrettable result"
+    },
+    {
+      "source": "ফলটি বক্তার নিয়ন্ত্রণের বাইরে, ভুলবশত বা অপছন্দনীয় হলে てしまう regret প্রকাশ করে। কণ্ঠস্বর ও প্রসঙ্গ অর্থ স্পষ্ট করে।",
+      "target": "When the result is beyond the speaker's control, happens by mistake, or is unwelcome, てしまう expresses regret. Tone of voice and context make the meaning clear."
+    },
+    {
+      "source": "কথ্য ভাষায় 〜ちゃう／〜じゃう শোনা যায়: 食べてしまう→食べちゃう, 飲んでしまう→飲んじゃう। JLPT form চিনুন; আনুষ্ঠানিক লেখায় পূর্ণ রূপ ব্যবহার করুন।",
+      "target": "In spoken language you hear 〜ちゃう／〜じゃう: 食べてしまう→食べちゃう, 飲んでしまう→飲んじゃう. Learn to recognise the JLPT forms; use the full forms in formal writing."
+    },
+    {
+      "source": "কেবল past নয়: また忘れてしまうかもしれません = আবার ভুলে যেতে পারি।",
+      "target": "Not only the past: また忘れてしまうかもしれません = I might forget again."
+    },
+    {
+      "source": "দুর্ভাগ্যবশত ট্রেনে ব্যাগ ফেলে এসেছি।",
+      "target": "Unfortunately, I left my bag on the train."
+    },
+    {
+      "source": "ভুল করে জরুরি ফাইল মুছে ফেলেছি।",
+      "target": "I deleted an important file by mistake."
+    },
+    {
+      "source": "নিরপেক্ষ অভ্যাসে しまう লাগে না; অনিচ্ছা বোঝালে 早く起きてしまいます-এর মতো প্রসঙ্গ দরকার।",
+      "target": "しまう is not used for a neutral habit; to express unwillingness, a context like 早く起きてしまいます is needed."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Differences at a Glance"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Which one in which situation?"
+    },
+    {
+      "source": "বাক্য",
+      "target": "Sentence"
+    },
+    {
+      "source": "ফোকাস",
+      "target": "Focus"
+    },
+    {
+      "source": "অর্থ",
+      "target": "Meaning"
+    },
+    {
+      "source": "agent-এর চলমান কাজ",
+      "target": "The agent's ongoing action"
+    },
+    {
+      "source": "তানাকা জানালা খুলছেন",
+      "target": "Tanaka is opening the window"
+    },
+    {
+      "source": "ফলের বর্তমান অবস্থা",
+      "target": "The present state of the result"
+    },
+    {
+      "source": "জানালাটি খোলা আছে",
+      "target": "The window is open"
+    },
+    {
+      "source": "কাজ সম্পূর্ণ/অনিচ্ছাকৃত",
+      "target": "Action completed / unintentional"
+    },
+    {
+      "source": "জানালাটি খুলে ফেলেছি",
+      "target": "I have opened the window (completely)"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Real-life conversations"
+    },
+    {
+      "source": "অফিস বন্ধ করার আগে",
+      "target": "Before Closing the Office"
+    },
+    {
+      "source": "জানালাটি খোলা আছে।",
+      "target": "The window is open."
+    },
+    {
+      "source": "সত্যি। বন্ধ করছি।",
+      "target": "True. I am closing it now."
+    },
+    {
+      "source": "আলোও জ্বলে আছে।",
+      "target": "The light is on too."
+    },
+    {
+      "source": "দুঃখিত, নিভাতে ভুলে গিয়েছিলাম।",
+      "target": "Sorry, I forgot to switch it off."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Check Yourself"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice with answers and explanations"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "First write the answers in your notebook, then tap a question to check the answer and the reason."
+    },
+    {
+      "source": "1. ‘দরজাটি বন্ধ আছে’—閉まる ব্যবহার করুন।",
+      "target": "1. “The door is closed” — use 閉まる."
+    },
+    {
+      "source": "2. ‘কেউ গ্লাসটি ভেঙেছে’—transitive বলুন।",
+      "target": "2. “Someone broke the glass” — say it transitively."
+    },
+    {
+      "source": "কাজকারী が, object を, transitive 割る।",
+      "target": "The doer takes が, the object を, and the verb is the transitive 割る."
+    },
+    {
+      "source": "3. ‘ভুল করে চাবি হারিয়েছি’ বলুন।",
+      "target": "3. Say: “I lost my key by mistake.”"
+    },
+    {
+      "source": "অপছন্দনীয় ফল: Vてしまいました।",
+      "target": "An unwelcome result: Vてしまいました."
+    },
+    {
+      "source": "4. ‘আজ রিপোর্টটি পুরো লিখে ফেলব’ বলুন।",
+      "target": "4. Say: “I will finish writing the whole report today.”"
+    },
+    {
+      "source": "Completion meaning; প্রয়োজনে 今日中に যোগ করা যায়।",
+      "target": "Completion meaning; 今日中に can be added if needed."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "The Master Key in One Sentence"
+    },
+    {
+      "source": "কে কাজ করছে তা নয়, ‘কোন জিনিস এখন কোন অবস্থায়’—এই প্রশ্ন হলে Nが＋intransitive ています। কাজ পুরো শেষ বা ফল অপছন্দনীয় হলে Vてしまいます।",
+      "target": "It is not about who is doing the action; if the question is “which thing is in what state now”, use Nが + an intransitive verb with ています. If the action is completely finished or the result is unwelcome, use Vてしまいます."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Trusted References"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus and Verification"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "This independent lesson in English was created by aligning the lesson sequence of Minna no Nihongo II, the official JLPT N4 scope and the Japan Foundation's learner resources. The examples and explanations in English are newly written."
+    },
+    {
+      "source": "← আগের Lesson 28",
+      "target": "← Previous Lesson 28"
+    },
+    {
+      "source": "〜ながら・〜し：একসঙ্গে কাজ ও একাধিক কারণ",
+      "target": "〜ながら・〜し: Doing things at the same time and listing reasons"
+    },
+    {
+      "source": "পরের Lesson 30 →",
+      "target": "Next Lesson 30 →"
+    },
+    {
+      "source": "Preparation：Vてあります ও Vておきます",
+      "target": "Preparation: Vてあります and Vておきます"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson Index"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Learning goal"
+    },
+    {
+      "source": "2. Transitive বনাম intransitive focus",
+      "target": "2. Transitive vs Intransitive Focus"
+    },
+    {
+      "source": "3. Vてしまいます：সম্পূর্ণতা",
+      "target": "3. Vてしまいます: Completion"
+    },
+    {
+      "source": "4. Vてしまいます：অনিচ্ছা/আফসোস",
+      "target": "4. Vてしまいます: Unwillingness / Regret"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Comparison Table"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress is loading…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "A free, detailed self-study edition in English for learners."
+    }
+  ]
+}

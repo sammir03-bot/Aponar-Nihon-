@@ -1,0 +1,286 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "n5-grammar",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N5 Grammar | আপনার নিহোন",
+      "target": "N5 Grammar | আপনার নিহোন"
+    },
+    {
+      "source": "Lesson তালিকায় যান",
+      "target": "Go to lesson list"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "হোম",
+      "target": "Home"
+    },
+    {
+      "source": "ভিত্তি থেকে আত্মবিশ্বাস",
+      "target": "Confidence from the basics"
+    },
+    {
+      "source": "২৫টি ধাপে জাপানি বাক্য গঠন, particle, verb form ও প্রয়োজনীয় grammar বাংলা ব্যাখ্যায় আয়ত্ত করুন।",
+      "target": "Master Japanese sentence structure, particles, verb forms, and essential grammar through 25 steps with Bengali explanations."
+    },
+    {
+      "source": "প্রথম Lesson শুরু করুন",
+      "target": "Start First Lesson"
+    },
+    {
+      "source": "Lesson খুঁজুন",
+      "target": "Search Lessons"
+    },
+    {
+      "source": "আমার অগ্রগতি",
+      "target": "My Progress"
+    },
+    {
+      "source": "সম্পন্ন",
+      "target": "completed"
+    },
+    {
+      "source": "0/25 lesson সম্পন্ন",
+      "target": "0/25 lessons completed"
+    },
+    {
+      "source": "শেষ করা lesson-এ ✓ দিন। এই device-এ আপনার progress স্বয়ংক্রিয়ভাবে সংরক্ষিত থাকবে।",
+      "target": "Check ✓ on finished lessons. Your progress will be automatically saved on this device."
+    },
+    {
+      "source": "মোট LESSON",
+      "target": "TOTAL LESSONS"
+    },
+    {
+      "source": "বাকি",
+      "target": "Remaining"
+    },
+    {
+      "source": "Lesson নম্বর বেছে নিন",
+      "target": "Choose lesson number"
+    },
+    {
+      "source": "দেখুন",
+      "target": "View"
+    },
+    {
+      "source": "সব",
+      "target": "All"
+    },
+    {
+      "source": "পুরো কোর্স",
+      "target": "Full Course"
+    },
+    {
+      "source": "পরিচয় ও ভিত্তি",
+      "target": "Introduction & Basics"
+    },
+    {
+      "source": "দৈনন্দিন বাক্য",
+      "target": "Daily Sentences"
+    },
+    {
+      "source": "রূপ ও নিয়ম",
+      "target": "Forms & Rules"
+    },
+    {
+      "source": "প্রয়োগ ও সংযোগ",
+      "target": "Application & Connection"
+    },
+    {
+      "source": "আপনার Lesson বেছে নিন",
+      "target": "Choose Your Lesson"
+    },
+    {
+      "source": "নম্বর, Japanese pattern অথবা বাংলা বিষয় দিয়ে search করুন। Range ও progress filter ব্যবহার করে প্রয়োজনীয় lesson দ্রুত খুলুন।",
+      "target": "Search by number, Japanese pattern, or Bengali topic. Quickly open necessary lessons using range and progress filters."
+    },
+    {
+      "source": "টি lesson দেখানো হচ্ছে",
+      "target": "lessons are shown"
+    },
+    {
+      "source": "ধাপ 1 · পরিচয় ও ভিত্তি",
+      "target": "Step 1 · Introduction & Basics"
+    },
+    {
+      "source": "নিজের পরিচয় ও basic statement/question তৈরি।",
+      "target": "Making self-introductions and basic statements/questions."
+    },
+    {
+      "source": "文法 · ব্যাকরণ",
+      "target": "文法 · Grammar"
+    },
+    {
+      "source": "Lesson খুলুন",
+      "target": "Open Lesson"
+    },
+    {
+      "source": "জিনিস দেখিয়ে বলা, জিজ্ঞাসা করা ও ownership।",
+      "target": "Showing and naming things, asking questions, and ownership."
+    },
+    {
+      "source": "স্থান, দিক, ভবন ও দাম নিয়ে বাক্য।",
+      "target": "Sentences about locations, directions, buildings, and prices."
+    },
+    {
+      "source": "সময়, তারিখ ও polite verb present/past।",
+      "target": "Time, dates, and polite verb present/past."
+    },
+    {
+      "source": "যাওয়া/আসা/ফেরা, যানবাহন ও সঙ্গী।",
+      "target": "Going/coming/returning, vehicles, and companions."
+    },
+    {
+      "source": "ধাপ 2 · দৈনন্দিন বাক্য",
+      "target": "Step 2 · Daily Sentences"
+    },
+    {
+      "source": "কাজ করা, invitation ও suggestion।",
+      "target": "Doing actions, invitations, and suggestions."
+    },
+    {
+      "source": "উপকরণ/ভাষা দিয়ে কাজ ও দেওয়া-নেওয়া।",
+      "target": "Working with tools/language and giving/receiving."
+    },
+    {
+      "source": "adjective দিয়ে মানুষ/জিনিস বর্ণনা।",
+      "target": "Describing people/things with adjectives."
+    },
+    {
+      "source": "পছন্দ, দক্ষতা, বোঝা ও কারণ বলা।",
+      "target": "Expressing preferences, skills, understanding, and reasons."
+    },
+    {
+      "source": "কোথায় কী আছে—existence sentence।",
+      "target": "Where things are—existence sentences."
+    },
+    {
+      "source": "ধাপ 3 · রূপ ও নিয়ম",
+      "target": "Step 3 · Forms & Rules"
+    },
+    {
+      "source": "গণনা, সময়কাল ও frequency।",
+      "target": "Counting, time periods, and frequency."
+    },
+    {
+      "source": "past tense adjective/noun এবং comparison।",
+      "target": "Past tense of adjectives/nouns and comparison."
+    },
+    {
+      "source": "ইচ্ছা ও উদ্দেশ্য নিয়ে বাক্য।",
+      "target": "Sentences about desires and purposes."
+    },
+    {
+      "source": "অনুরোধ, চলমান কাজ ও offer।",
+      "target": "Requests, ongoing actions, and offers."
+    },
+    {
+      "source": "অনুমতি, নিষেধ ও ongoing state।",
+      "target": "Permission, prohibition, and ongoing state."
+    },
+    {
+      "source": "ধাপ 4 · Verb forms",
+      "target": "Step 4 · Verb forms"
+    },
+    {
+      "source": "পরপর কাজ ও adjective/noun সংযোগ।",
+      "target": "Sequential actions and adjective/noun connection."
+    },
+    {
+      "source": "নিষেধ, বাধ্যতা ও না করলেও চলে।",
+      "target": "Prohibition, obligation, and unnecessary actions."
+    },
+    {
+      "source": "ability, hobby এবং before structure।",
+      "target": "Ability, hobbies, and before structures."
+    },
+    {
+      "source": "অভিজ্ঞতা, multiple actions ও change।",
+      "target": "Experience, multiple actions, and change."
+    },
+    {
+      "source": "formal থেকে casual speech-এর foundation।",
+      "target": "The foundation from formal to casual speech."
+    },
+    {
+      "source": "ধাপ 5 · প্রয়োগ ও সংযোগ",
+      "target": "Step 5 · Application and connection"
+    },
+    {
+      "source": "মতামত, quote ও confirmation।",
+      "target": "Opinions, quotes, and confirmation."
+    },
+    {
+      "source": "clause দিয়ে noun বর্ণনা।",
+      "target": "Modifying nouns using clauses."
+    },
+    {
+      "source": "সময় ও automatic condition।",
+      "target": "Time and automatic conditions."
+    },
+    {
+      "source": "কারো জন্য কিছু করা/পাওয়া।",
+      "target": "Doing something for someone / receiving a favor."
+    },
+    {
+      "source": "if/when এবং even if structure।",
+      "target": "If/when and even if structures."
+    },
+    {
+      "source": "কোনো Lesson পাওয়া যায়নি",
+      "target": "No lessons found"
+    },
+    {
+      "source": "অন্য শব্দ লিখুন অথবা filter মুছে আবার চেষ্টা করুন।",
+      "target": "Try typing a different word or clearing the filters."
+    },
+    {
+      "source": "সব Lesson দেখুন",
+      "target": "View all lessons"
+    },
+    {
+      "source": "প্রতিটি Lesson থেকে সর্বোচ্চ ফল নিন",
+      "target": "Get the maximum result from every lesson"
+    },
+    {
+      "source": "বিষয় দেখে Lesson খুলুন",
+      "target": "Browse lessons by topic"
+    },
+    {
+      "source": "কার্ডের Japanese pattern ও বাংলা সারাংশ দেখে প্রয়োজনীয় lesson বেছে নিন।",
+      "target": "Choose the necessary lesson by looking at the Japanese pattern on the card and the English summary."
+    },
+    {
+      "source": "উদাহরণসহ অনুশীলন করুন",
+      "target": "Practice with examples"
+    },
+    {
+      "source": "ব্যাখ্যা পড়ুন, audio শুনুন এবং quiz দিয়ে নিজের বোঝাপড়া যাচাই করুন।",
+      "target": "Read explanations, listen to audio, and check your understanding with quizzes."
+    },
+    {
+      "source": "শেষ হলে ✓ দিন",
+      "target": "Mark as ✓ when finished"
+    },
+    {
+      "source": "সম্পন্ন lesson আলাদা থাকবে এবং Continue button পরের lesson দেখাবে।",
+      "target": "Completed lessons will be separated, and the Continue button will show the next lesson."
+    },
+    {
+      "source": "· বাংলা ভাষাভাষীদের জন্য জাপানি শেখার প্ল্যাটফর্ম",
+      "target": "· A Japanese learning platform for Bengali speakers"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "Contact"
+    }
+  ]
+}

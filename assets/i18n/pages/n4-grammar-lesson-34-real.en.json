@@ -1,0 +1,478 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "n4-grammar-lesson-34-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Skip to main content"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 34 · ইচ্ছা ও শর্ত",
+      "target": "Lesson 34 · Intention and Conditions"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "All Lessons"
+    },
+    {
+      "source": "ইচ্ছা ও শর্ত",
+      "target": "Desires & Conditions"
+    },
+    {
+      "source": "ধাপ ২ · 31–35",
+      "target": "Stage 2 · 31–35"
+    },
+    {
+      "source": "নমুনা বা নির্দেশ হুবহু অনুসরণ করা, কাজের সঠিক সময়ক্রম এবং একটি কাজ না করেই অন্যটি করা।",
+      "target": "Following a model or an instruction exactly, the correct sequence of actions, and doing one action without doing another."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 detailed grammar blocks"
+    },
+    {
+      "source": "11টি Japanese example",
+      "target": "11 Japanese examples"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice questions with explanations"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile and print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Hide あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Not completed yet"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Mark Complete"
+    },
+    {
+      "source": "Lesson 34 · লক্ষ্য",
+      "target": "Lesson 34 · Goal"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "What you will be able to do after this lesson"
+    },
+    {
+      "source": "রান্নার রেসিপি, অ্যাপ সেটআপ, অফিসের নির্দেশ—প্রক্রিয়া বোঝাতে ‘যেভাবে বলা হয়েছে’, ‘শেষ করার পরে’ এবং ‘না করেই’ সম্পর্ক দরকার। Lesson 34 এই তিনটি relation-কে verb form ও particle-সহ সাজায়।",
+      "target": "A cooking recipe, an app setup, office instructions — to explain a process you need the relations “as it was said”, “after finishing”, and “without doing”. Lesson 34 organises these three relations, with their verb forms and particles."
+    },
+    {
+      "source": "তথ্য জানা/দেখা/শোনার আগে 辞書形 এবং সম্পন্ন নমুনায় た-form＋とおりに বাছবেন",
+      "target": "You will be able to choose the 辞書形 before information is known / seen / heard, and the た-form + とおりに for a completed model"
+    },
+    {
+      "source": "Vたあとで ও Nのあとで দিয়ে সময়ক্রম বলবেন",
+      "target": "You will be able to state a sequence with Vたあとで and Nのあとで"
+    },
+    {
+      "source": "Vないで দিয়ে ‘না করে’ এবং ‘এর বদলে’—দুই অর্থ বুঝবেন",
+      "target": "You will understand the two meanings of Vないで: “without doing” and “instead of”"
+    },
+    {
+      "source": "Vて ও Vないで দিয়ে কাজের manner/সহগামী অবস্থা প্রকাশ করবেন",
+      "target": "You will be able to express the manner or accompanying state of an action with Vて and Vないで"
+    },
+    {
+      "source": "যেভাবে বলা/দেখানো/লেখা/ভাবা হয়েছে, ঠিক সেভাবে",
+      "target": "Exactly as it was said / shown / written / thought"
+    },
+    {
+      "source": "গঠন",
+      "target": "Formation"
+    },
+    {
+      "source": "ধরন",
+      "target": "Type"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Example"
+    },
+    {
+      "source": "আগে নির্দেশ, পরে কাজ",
+      "target": "Instruction first, action afterwards"
+    },
+    {
+      "source": "নমুনা ইতিমধ্যে পাওয়া",
+      "target": "The model has already been received"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Noun"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detailed Explanation"
+    },
+    {
+      "source": "তথ্যের সময় relation গুরুত্বপূর্ণ। 私が言うとおりに書いてください = এখন/পরের নির্দেশ অনুযায়ী লিখুন। 私が言ったとおりに… = ইতিমধ্যে যা বলেছি, সেই অনুযায়ী।",
+      "target": "The time relation of the information is important. 私が言うとおりに書いてください = write according to the instruction I give now / next. 私が言ったとおりに… = according to what I have already said."
+    },
+    {
+      "source": "地図のとおりに (মানচিত্র অনুসারে) এবং 予定どおりに (সূচিমতো)—কোন noun-এ の বাদ যায় তা fixed usage; beginner হিসেবে Nのとおりに নিরাপদ, তবে 予定どおり/思いどおり চিনুন।",
+      "target": "地図のとおりに (following the map) and 予定どおりに (according to the schedule) — whether の drops with a given noun is fixed usage; as a beginner, Nのとおりに is safe, but recognise 予定どおり and 思いどおり."
+    },
+    {
+      "source": "একই ফল হলে 〜と同じভাবে নয়; কোনো model/instruction অনুসরণ করে কাজ করাই মূল।",
+      "target": "If the result is the same, it is not 〜と同じ; the point is doing the work by following a model or instruction."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "What to Remember"
+    },
+    {
+      "source": "N＋とおり নয় সাধারণত Nのとおり; তবে 予定どおり, 計画どおり fixed compound।",
+      "target": "Usually not N + とおり but Nのとおり; however, 予定どおり and 計画どおり are fixed compounds."
+    },
+    {
+      "source": "আমি যেভাবে করছি, সেভাবে ভাঁজ করুন।",
+      "target": "Fold it the way I am folding it."
+    },
+    {
+      "source": "নির্দেশিকায় যেভাবে লেখা, সেভাবে সেট করেছি।",
+      "target": "I set it up as it is written in the manual."
+    },
+    {
+      "source": "ট্রেন সময়সূচি অনুযায়ী ছেড়েছে।",
+      "target": "The train departed according to the timetable."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Wrong"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Correct"
+    },
+    {
+      "source": "কেন:",
+      "target": "Why:"
+    },
+    {
+      "source": "সম্পন্ন বলা/নমুনা: 言う-এর た-form 言った।",
+      "target": "For a completed statement / model: the た-form of 言う is 言った."
+    },
+    {
+      "source": "প্রথম কাজ বা সময় শেষ হওয়ার পরে দ্বিতীয় কাজ",
+      "target": "The second action after the first action or time ends"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "Verb"
+    },
+    {
+      "source": "V1 শেষ হওয়ার পরে V2; তাই V1 সর্বদা た-form, পুরো বাক্য future হলেও: 家へ帰ったあとで電話します।",
+      "target": "V2 comes after V1 has finished; so V1 is always in the た-form, even if the whole sentence is about the future: 家へ帰ったあとで電話します."
+    },
+    {
+      "source": "〜てから-এর অর্থ কাছাকাছি। てから পরপর sequence-এ বেশি জোর দিতে পারে; あとで মাঝখানে সময়ের ব্যবধান থাকতে পারে এবং noun-এর সঙ্গেও সহজে যায়।",
+      "target": "The meaning of 〜てから is close. てから can put more emphasis on an immediate sequence; あとで can allow a gap of time in between, and it also goes easily with nouns."
+    },
+    {
+      "source": "あとで একাই ‘পরে’: あとで連絡します।",
+      "target": "あとで by itself means “later”: あとで連絡します."
+    },
+    {
+      "source": "Future context হলেও 帰るあとで ✕, 帰ったあとで ✓।",
+      "target": "Even in a future context, 帰るあとで ✕, 帰ったあとで ✓."
+    },
+    {
+      "source": "হোমওয়ার্ক করার পরে গেম খেলব।",
+      "target": "After doing my homework, I will play a game."
+    },
+    {
+      "source": "মিটিংয়ের পরে বিভাগীয় প্রধানকে প্রশ্ন করেছি।",
+      "target": "After the meeting, I asked the section chief a question."
+    },
+    {
+      "source": "জাপানে আসার পর জাপানি শেখা শুরু করেছি।",
+      "target": "After coming to Japan, I began learning Japanese."
+    },
+    {
+      "source": "あとで-এর আগে verb た-form।",
+      "target": "Before あとで, the verb is in the た-form."
+    },
+    {
+      "source": "Vて／Vないで：সহগামী অবস্থা বা manner",
+      "target": "Vて／Vないで: Accompanying State or Manner"
+    },
+    {
+      "source": "কাজটি করে/অবস্থাটি নিয়ে, অথবা না করে আরেকটি কাজ",
+      "target": "Doing the action / carrying the state, or doing another action without it"
+    },
+    {
+      "source": "করে",
+      "target": "Doing"
+    },
+    {
+      "source": "না করে",
+      "target": "Without doing"
+    },
+    {
+      "source": "এখানে V1 অনেক সময় V2 করার manner বা সহগামী অবস্থা: 眼鏡をかけて読む = চশমা পরে পড়া। সাধারণ sequence-এর て-form-এর সঙ্গে context দিয়ে পার্থক্য ধরুন।",
+      "target": "Here V1 is often the manner of V2, or its accompanying state: 眼鏡をかけて読む = reading while wearing glasses. Tell it apart from the ordinary sequence て-form by the context."
+    },
+    {
+      "source": "Vないで দেখায় V1 প্রত্যাশিত/সম্ভব ছিল, কিন্তু সেটি না করেই V2 হয়েছে: 朝ご飯を食べないで学校へ行きました।",
+      "target": "Vないで shows that V1 was expected or possible, but V2 happened without it: 朝ご飯を食べないで学校へ行きました."
+    },
+    {
+      "source": "Subject সাধারণত একই। দুই স্বাধীন subject হলে আলাদা clause বেশি পরিষ্কার।",
+      "target": "The subject is usually the same. If there are two independent subjects, separate clauses are clearer."
+    },
+    {
+      "source": "ない-form＋で: 食べないで; 食べなくて নয়। なくて সাধারণত কারণ/সংযোগ—Lesson 39।",
+      "target": "ない-form + で: 食べないで; not 食べなくて. なくて is usually a reason or a connection — Lesson 39."
+    },
+    {
+      "source": "চিনি দিয়ে কফি খাই।",
+      "target": "I take coffee with sugar."
+    },
+    {
+      "source": "অভিধান ব্যবহার না করে বাক্যটি পড়েছি।",
+      "target": "I read the sentence without using a dictionary."
+    },
+    {
+      "source": "টুপি পরে বাইরে গিয়েছি।",
+      "target": "I went out wearing a hat."
+    },
+    {
+      "source": "朝ご飯を食べなくて学校へ行きました。（‘না খেয়ে’ manner বলতে）",
+      "target": "朝ご飯を食べなくて学校へ行きました。(to express the “without eating” manner)"
+    },
+    {
+      "source": "ইচ্ছাকৃত/সহগামী ‘না করে’ = ないで; なくて কারণ হিসেবে ব্যাখ্যা হতে পারে।",
+      "target": "A deliberate / accompanying “without doing” is ないで; なくて can be explained as a reason."
+    },
+    {
+      "source": "Vないで：‘এর বদলে না করে’",
+      "target": "Vないで: “Without Doing, Instead”"
+    },
+    {
+      "source": "একটি সম্ভাব্য কাজ বাদ দিয়ে অন্য বিকল্প করা",
+      "target": "Leaving out one possible action and doing another instead"
+    },
+    {
+      "source": "বিকল্প",
+      "target": "Alternative"
+    },
+    {
+      "source": "V1 না করে V2 করা কেবল absence নয়, বিকল্প নির্বাচনও হতে পারে। 日曜日は出かけないで、家で休みます = বাইরে না গিয়ে ঘরে বিশ্রাম নেব।",
+      "target": "Doing V2 without V1 is not just an absence; it can also be the choice of an alternative. 日曜日は出かけないで、家で休みます = on Sunday, instead of going out, I rest at home."
+    },
+    {
+      "source": "Vないでください আলাদা fixed request—‘করবেন না’। V2 না থাকলেও ください predicate পূরণ করে।",
+      "target": "Vないでください is a separate fixed request — “please do not”. Even without a V2, ください completes the predicate."
+    },
+    {
+      "source": "না করে অন্যটি: VないでV2; নিষেধ: Vないでください।",
+      "target": "Without doing one, do the other: VないでV2; prohibition: Vないでください."
+    },
+    {
+      "source": "লিফট ব্যবহার না করে সিঁড়ি দিয়ে উঠেছি।",
+      "target": "I went up by the stairs without using the lift."
+    },
+    {
+      "source": "আজ রান্না না করে বাইরে খাই।",
+      "target": "Today, instead of cooking, I will eat out."
+    },
+    {
+      "source": "যাতায়াতের মাধ্যম で; 電車を নয়।",
+      "target": "The means of transport takes で; not 電車を."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Differences at a Glance"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Which one in which situation?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Form"
+    },
+    {
+      "source": "সময়/সম্পর্ক",
+      "target": "Time / relation"
+    },
+    {
+      "source": "পূর্বের model অনুসরণ",
+      "target": "Following an earlier model"
+    },
+    {
+      "source": "যেমন বলেছিল, তেমন",
+      "target": "As he said it would be"
+    },
+    {
+      "source": "V1 সম্পন্ন → পরে V2",
+      "target": "V1 completed → then V2"
+    },
+    {
+      "source": "খাওয়ার পরে",
+      "target": "After eating"
+    },
+    {
+      "source": "করে/অবস্থা নিয়ে V2",
+      "target": "V2 while doing / in a state"
+    },
+    {
+      "source": "টুপি পরে বের হওয়া",
+      "target": "Going out wearing a hat"
+    },
+    {
+      "source": "V1 বাদ দিয়ে V2",
+      "target": "Leaving out V1, doing V2"
+    },
+    {
+      "source": "না খেয়ে বের হওয়া",
+      "target": "Going out without eating"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Real-life conversations"
+    },
+    {
+      "source": "রেসিপি অনুসরণ",
+      "target": "Following a Recipe"
+    },
+    {
+      "source": "এই খাবার কীভাবে বানাই?",
+      "target": "How do I make this dish?"
+    },
+    {
+      "source": "প্রথমে নির্দেশিকা অনুযায়ী সবজি কাটুন।",
+      "target": "First, cut the vegetables following the instructions."
+    },
+    {
+      "source": "কাটার পরে কী করব?",
+      "target": "What should I do after cutting them?"
+    },
+    {
+      "source": "তেল ব্যবহার না করে কম আঁচে ভাজবেন।",
+      "target": "Fry them on a low heat without using oil."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Check Yourself"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice with answers and explanations"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "First write the answers in your notebook, then tap a question to check the answer and the reason."
+    },
+    {
+      "source": "1. ‘শিক্ষক যেভাবে দেখিয়েছেন, সেভাবে করুন’ বলুন।",
+      "target": "1. Say: “Do it the way the teacher showed you.”"
+    },
+    {
+      "source": "ইতিমধ্যে দেখানো model: Vた＋とおりに।",
+      "target": "A model already shown: Vた + とおりに."
+    },
+    {
+      "source": "2. ‘খাওয়ার পরে দাঁত মাজি’ বলুন।",
+      "target": "2. Say: “I brush my teeth after eating.”"
+    },
+    {
+      "source": "3. ‘ছাতা না নিয়ে বের হয়েছি’ বলুন।",
+      "target": "3. Say: “I went out without taking an umbrella.”"
+    },
+    {
+      "source": "না করে V2: Vないで।",
+      "target": "Without doing, then V2: Vないで."
+    },
+    {
+      "source": "4. শূন্যস্থান: 予定（のとおり／どおり）に始まりました。",
+      "target": "4. Fill in the blank: 予定（のとおり／どおり）に始まりました."
+    },
+    {
+      "source": "予定どおり একটি প্রচলিত compound।",
+      "target": "予定どおり is a common compound."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "The Master Key in One Sentence"
+    },
+    {
+      "source": "Model অনুসরণে とおりに, প্রথম কাজ শেষের পরে あとで, আর একটি কাজ না করেই/বিকল্পভাবে অন্যটি করলে ないで—form-এর আগে সম্পর্ক চিনুন।",
+      "target": "For following a model, とおりに; after the first action is finished, あとで; and for doing another action without one action, or instead of it, ないで — recognise the relation before the form."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Trusted References"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus and Verification"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "This independent lesson in English was created by aligning the lesson sequence of Minna no Nihongo II, the official JLPT N4 scope and the Japan Foundation's learner resources. The examples and explanations in English are newly written."
+    },
+    {
+      "source": "← আগের Lesson 33",
+      "target": "← Previous Lesson 33"
+    },
+    {
+      "source": "পরের Lesson 35 →",
+      "target": "Next Lesson 35 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson Index"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Learning goal"
+    },
+    {
+      "source": "3. Vて／Vないで：সহগামী অবস্থা বা manner",
+      "target": "3. Vて／Vないで: Accompanying State or Manner"
+    },
+    {
+      "source": "4. Vないで：‘এর বদলে না করে’",
+      "target": "4. Vないで: “Without Doing, Instead”"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Comparison Table"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress is loading…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "A free, detailed self-study edition in English for learners."
+    }
+  ]
+}

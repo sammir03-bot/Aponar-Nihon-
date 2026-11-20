@@ -1,0 +1,474 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "n4-grammar-lesson-44-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Skip to main content"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 44 · প্রয়োগ ও সূক্ষ্মতা",
+      "target": "Lesson 44 · Application and Nuance"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "All Lessons"
+    },
+    {
+      "source": "প্রয়োগ ও সূক্ষ্মতা",
+      "target": "Application & Nuance"
+    },
+    {
+      "source": "ধাপ ৪ · 41–45",
+      "target": "Stage 4 · 41–45"
+    },
+    {
+      "source": "মাত্রা ছাড়ানো, কাজের গঠনগত সহজ/কঠিনতা, ইচ্ছাকৃতভাবে অবস্থা বদলানো এবং বিকল্প থেকে বেছে নেওয়া।",
+      "target": "Exceeding a degree, how easy or difficult the structure of an action makes it, deliberately changing a state, and choosing from alternatives."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 detailed grammar blocks"
+    },
+    {
+      "source": "13টি Japanese example",
+      "target": "13 Japanese examples"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice questions with explanations"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile and print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Hide あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Not completed yet"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Mark Complete"
+    },
+    {
+      "source": "Lesson 44 · লক্ষ্য",
+      "target": "Lesson 44 · Goal"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "What you will be able to do after this lesson"
+    },
+    {
+      "source": "Lesson 44 চারটি দৈনন্দিন judgement শেখায়: ‘বেশি হয়ে গেছে’, ‘করা সহজ/কঠিন’, ‘এটাকে এমন করি’, এবং ‘এটাই নেব’। সবগুলোর আগে stem ঠিক করতে পারলেই conjugation সহজ।",
+      "target": "Lesson 44 teaches four everyday judgements: “it has become too much”, “easy / difficult to do”, “I will make it like this”, and “I will take this one”. If you can fix the stem before each of them, the conjugation is easy."
+    },
+    {
+      "source": "verb/い-A/な-A stem-এর সঙ্গে すぎます জুড়বেন",
+      "target": "You will be able to attach すぎます to the stems of verbs, い-adjectives and な-adjectives"
+    },
+    {
+      "source": "やすい/にくい দিয়ে action-এর সহজতা/কঠিনতা বলবেন",
+      "target": "You will be able to express how easy or difficult an action is with やすい／にくい"
+    },
+    {
+      "source": "する দিয়ে agent-caused state change প্রকাশ করবেন",
+      "target": "You will be able to express a state change caused by an agent with する"
+    },
+    {
+      "source": "Nにします দিয়ে menu/option নির্বাচন করবেন",
+      "target": "You will be able to choose a menu item or an option with Nにします"
+    },
+    {
+      "source": "স্বাভাবিক/কাম্য সীমার চেয়ে অতিরিক্ত",
+      "target": "Beyond the normal or desirable limit"
+    },
+    {
+      "source": "গঠন",
+      "target": "Formation"
+    },
+    {
+      "source": "ধরন",
+      "target": "Type"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Example"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "Verb"
+    },
+    {
+      "source": "Vます থেকে ます বাদ＋すぎる",
+      "target": "From Vます, drop ます + すぎる"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-adjective"
+    },
+    {
+      "source": "শেষ い বাদ＋すぎる",
+      "target": "Drop the final い + すぎる"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-adjective"
+    },
+    {
+      "source": "食べなさすぎます／簡単ではなさすぎる (কম ব্যবহৃত)",
+      "target": "食べなさすぎます／簡単ではなさすぎる (less commonly used)"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detailed Explanation"
+    },
+    {
+      "source": "すぎる নিজে Group 2 verb; tense/negative শেষে: 食べすぎました, 高すぎません, 静かすぎて…。",
+      "target": "すぎる is itself a Group 2 verb; the tense and negative come at the end: 食べすぎました, 高すぎません, 静かすぎて…."
+    },
+    {
+      "source": "সাধারণত negative evaluation—মাত্রা সমস্যা করছে। কিন্তু きれいすぎる ‘অবিশ্বাস্য সুন্দর’ প্রশংসামূলক hyperbole-ও হতে পারে।",
+      "target": "Usually it is a negative evaluation — the degree is causing a problem. But きれいすぎる, “unbelievably beautiful”, can also be a hyperbolical compliment."
+    },
+    {
+      "source": "すぎて consequence যুক্ত হয়: 飲みすぎて、頭が痛いです।",
+      "target": "すぎて adds a consequence: 飲みすぎて、頭が痛いです."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "What to Remember"
+    },
+    {
+      "source": "Verb て-form নয়: 食べてすぎる ✕; 食べすぎる ✓।",
+      "target": "Not the verb て-form: 食べてすぎる ✕; 食べすぎる ✓."
+    },
+    {
+      "source": "গতকাল বেশি কফি খেয়েছি।",
+      "target": "Yesterday I drank too much coffee."
+    },
+    {
+      "source": "ব্যাগটি অতিরিক্ত ভারী, তাই নিতে পারছি না।",
+      "target": "The bag is too heavy, so I cannot carry it."
+    },
+    {
+      "source": "শহরটি রাতে অতিরিক্ত নীরব।",
+      "target": "The town is too quiet at night."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Wrong"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Correct"
+    },
+    {
+      "source": "কেন:",
+      "target": "Why:"
+    },
+    {
+      "source": "い-বিশেষণের শেষ い বাদ＋すぎます।",
+      "target": "Drop the final い of the い-adjective + すぎます."
+    },
+    {
+      "source": "কাজটি করা সহজ / করা কঠিন—বস্তু বা পরিস্থিতির বৈশিষ্ট্য",
+      "target": "Doing the action is easy / doing it is difficult — a property of the thing or the situation"
+    },
+    {
+      "source": "সহজ",
+      "target": "Easy"
+    },
+    {
+      "source": "কঠিন",
+      "target": "Difficult"
+    },
+    {
+      "source": "い-বিশেষণের মতো",
+      "target": "Like an い-adjective"
+    },
+    {
+      "source": "やすい/にくい সাধারণত action-এর objective ease/difficulty বা tendency। このペンは書きやすい = কলমটির design/feel লিখতে সহজ। 私は漢字が書けません = আমার ability সমস্যা—আলাদা।",
+      "target": "やすい／にくい usually express the objective ease or difficulty of an action, or a tendency. このペンは書きやすい = the design and feel of the pen make it easy to write with. 私は漢字が書けません = my ability is the problem — that is different."
+    },
+    {
+      "source": "ভুল/পরিবর্তনের প্রবণতাও: このコップは割れやすい = সহজে ভেঙে যায়। 忘れやすい = সহজে ভুলে যাওয়ার tendency।",
+      "target": "There is also a tendency to make mistakes or to change: このコップは割れやすい = it breaks easily. 忘れやすい = a tendency to forget easily."
+    },
+    {
+      "source": "Mental unwillingness-এর にくい nuance থাকতে পারে (言いにくい = বলা awkward), কিন্তু impossible নয়।",
+      "target": "にくい can carry the nuance of mental unwillingness (言いにくい = awkward to say), but it does not mean impossible."
+    },
+    {
+      "source": "এই পাঠ্যবইয়ের ব্যাখ্যা বোঝা সহজ।",
+      "target": "This textbook's explanations are easy to understand."
+    },
+    {
+      "source": "জুতাটি হালকা, তাই হাঁটা সহজ।",
+      "target": "The shoes are light, so they are easy to walk in."
+    },
+    {
+      "source": "কানজিটির আকার মিল বলে মনে রাখা কঠিন।",
+      "target": "The shapes of the kanji are similar, so they are hard to remember."
+    },
+    {
+      "source": "জরুরি বিষয় সহজে ভুলে যাই, তাই নোট করি।",
+      "target": "I easily forget important things, so I take notes."
+    },
+    {
+      "source": "読みます-এর stem 読み＋やすい।",
+      "target": "The stem of 読みます, 読み + やすい."
+    },
+    {
+      "source": "কেউ ইচ্ছাকৃতভাবে জিনিসের অবস্থা/গুণ বদলায়",
+      "target": "Someone deliberately changes the state or quality of a thing"
+    },
+    {
+      "source": "শেষ い→く＋します",
+      "target": "Final い → く + します"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Noun"
+    },
+    {
+      "source": "なる-তে অবস্থা নিজে/স্বাভাবিকভাবে বদলায়: 部屋が明るくなりました। する-তে agent বদলায়: 電気をつけて、部屋を明るくしました।",
+      "target": "With なる the state changes by itself, naturally: 部屋が明るくなりました. With する an agent changes it: 電気をつけて、部屋を明るくしました."
+    },
+    {
+      "source": "Object を: 音を小さくしてください = শব্দ ছোট/কম করুন। な-A/N-এ に: 部屋をきれいにします, 会議室を禁煙にします।",
+      "target": "Object を: 音を小さくしてください = please make the sound smaller / lower. With な-adjectives and nouns, に: 部屋をきれいにします, 会議室を禁煙にします."
+    },
+    {
+      "source": "Adverbial く/に＋する structure; する-এর tense শেষে।",
+      "target": "The structure is adverbial く／に + する; the tense of する comes at the end."
+    },
+    {
+      "source": "নিজে বদলায় が＋なる; কেউ বদলায় を＋する।",
+      "target": "It changes by itself: が + なる; someone changes it: を + する."
+    },
+    {
+      "source": "অক্ষর আরেকটু বড় করুন।",
+      "target": "Please make the letters a little bigger."
+    },
+    {
+      "source": "ঘরটি পরিষ্কার করেছি।",
+      "target": "I cleaned the room."
+    },
+    {
+      "source": "এই বাক্সটিকে বইয়ের তাক বানাব।",
+      "target": "I will make this box into a bookshelf."
+    },
+    {
+      "source": "い-বিশেষণ 小さい→小さく＋する।",
+      "target": "い-adjective 小さい→小さく + する."
+    },
+    {
+      "source": "Nにします（পছন্দ নির্বাচন）",
+      "target": "Nにします (Choosing a Preference)"
+    },
+    {
+      "source": "একাধিক option থেকে N বেছে নেওয়া—‘আমি N নেব/ঠিক করলাম’",
+      "target": "Choosing N from several options — “I will take N / I have decided on N”"
+    },
+    {
+      "source": "রেস্তোরাঁ, কেনাকাটা, রং/তারিখ/পথ—option বেছে নেওয়ার বহুল রূপ। コーヒーにします = কফিই নেব।",
+      "target": "Restaurants, shopping, colours, dates, routes — a very common form for choosing an option. コーヒーにします = I will have the coffee."
+    },
+    {
+      "source": "決めます স্পষ্ট ‘সিদ্ধান্ত নিই’; Nにします কথোপকথনে selection-এর ফল সহজে বলে। Question: 何にしますか = কী নেবেন/কোনটি ঠিক করবেন?",
+      "target": "決めます clearly means “I decide”; Nにします easily states the result of a selection in conversation. Question: 何にしますか = what will you have / which one will you decide on?"
+    },
+    {
+      "source": "Nにします state-change অর্থও হতে পারে; context object/option দেখে ধরুন: 部屋を教室にします = ঘরকে শ্রেণিকক্ষ বানাই; 飲み物はお茶にします = পানীয় হিসেবে চা নেব।",
+      "target": "Nにします can also mean a state change; judge it by the object or option in the context: 部屋を教室にします = I will make the room into a classroom; 飲み物はお茶にします = for the drink, I will have tea."
+    },
+    {
+      "source": "আমি কারি নেব।",
+      "target": "I will have the curry."
+    },
+    {
+      "source": "মিটিং শুক্রবার ঠিক করি।",
+      "target": "Let us fix the meeting for Friday."
+    },
+    {
+      "source": "রং হিসেবে নীল বেছে নিয়েছি।",
+      "target": "I chose blue as the colour."
+    },
+    {
+      "source": "Option নির্বাচন particle に; を＋する অন্য action বোঝাবে।",
+      "target": "The particle for choosing an option is に; を + する would indicate a different action."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Differences at a Glance"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Which one in which situation?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Form"
+    },
+    {
+      "source": "কেন্দ্র",
+      "target": "Centre"
+    },
+    {
+      "source": "সীমা ছাড়ানো",
+      "target": "Exceeding the limit"
+    },
+    {
+      "source": "অতিরিক্ত দামি",
+      "target": "Too expensive"
+    },
+    {
+      "source": "কাজের সহজতা",
+      "target": "The ease of an action"
+    },
+    {
+      "source": "পড়া সহজ",
+      "target": "Easy to read"
+    },
+    {
+      "source": "agent অবস্থা বদলায়",
+      "target": "An agent changes the state"
+    },
+    {
+      "source": "ঘর উজ্জ্বল করি",
+      "target": "I make the room bright"
+    },
+    {
+      "source": "option নির্বাচন",
+      "target": "Choosing an option"
+    },
+    {
+      "source": "কফি নিই",
+      "target": "I will have the coffee"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Real-life conversations"
+    },
+    {
+      "source": "রেস্তোরাঁয় অর্ডার",
+      "target": "Ordering at a Restaurant"
+    },
+    {
+      "source": "কী নেবেন?",
+      "target": "What will you have?"
+    },
+    {
+      "source": "এই কারি অতিরিক্ত ঝাল কি?",
+      "target": "Is this curry too spicy?"
+    },
+    {
+      "source": "না। খেতে সহজ/হালকা।",
+      "target": "No. It is easy to eat / mild."
+    },
+    {
+      "source": "তাহলে কারি নেব। ভাত কম দিন।",
+      "target": "Then I will have the curry. Please give me less rice."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Check Yourself"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice with answers and explanations"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "First write the answers in your notebook, then tap a question to check the answer and the reason."
+    },
+    {
+      "source": "1. ‘গতকাল বেশি খেয়েছি’ বলুন।",
+      "target": "1. Say: “Yesterday I ate too much.”"
+    },
+    {
+      "source": "2. ‘এই কলম দিয়ে লেখা সহজ’ বলুন।",
+      "target": "2. Say: “This pen is easy to write with.”"
+    },
+    {
+      "source": "3. ‘শব্দ একটু কম করুন’ বলুন।",
+      "target": "3. Say: “Please turn the sound down a little.”"
+    },
+    {
+      "source": "4. ‘আমি চা নেব’ বলুন।",
+      "target": "4. Say: “I will have tea.”"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "The Master Key in One Sentence"
+    },
+    {
+      "source": "মাত্রা বিচার → すぎる; action-এর designগত ease → やすい/にくい; agent বদলালে Aく/N・なAにする; option বাছলে Nにする।",
+      "target": "Judging a degree → すぎる; the design-based ease of an action → やすい／にくい; if an agent changes it, Aく / N・なAにする; if you are choosing an option, Nにする."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Trusted References"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus and Verification"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "This independent lesson in English was created by aligning the lesson sequence of Minna no Nihongo II, the official JLPT N4 scope and the Japan Foundation's learner resources. The examples and explanations in English are newly written."
+    },
+    {
+      "source": "← আগের Lesson 43",
+      "target": "← Previous Lesson 43"
+    },
+    {
+      "source": "পরের Lesson 45 →",
+      "target": "Next Lesson 45 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson Index"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Learning goal"
+    },
+    {
+      "source": "4. Nにします（পছন্দ নির্বাচন）",
+      "target": "4. Nにします (Choosing a Preference)"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Comparison Table"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress is loading…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "A free, detailed self-study edition in English for learners."
+    }
+  ]
+}

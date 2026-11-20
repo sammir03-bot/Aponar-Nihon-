@@ -1,0 +1,426 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "en",
+  "page": "n4-grammar-lesson-32-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Skip to main content"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 32 · ইচ্ছা ও শর্ত",
+      "target": "Lesson 32 · Intention and Conditions"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "All Lessons"
+    },
+    {
+      "source": "ইচ্ছা ও শর্ত",
+      "target": "Desires & Conditions"
+    },
+    {
+      "source": "ধাপ ২ · 31–35",
+      "target": "Stage 2 · 31–35"
+    },
+    {
+      "source": "পরামর্শ দেওয়া, প্রমাণভিত্তিক সম্ভাব্য অনুমান এবং অনিশ্চিত সম্ভাবনা প্রকাশের সঠিক শক্তিমাত্রা।",
+      "target": "The right level of strength for giving advice, making a likely guess from evidence, and expressing an uncertain possibility."
+    },
+    {
+      "source": "3টি বিস্তারিত grammar block",
+      "target": "3 detailed grammar blocks"
+    },
+    {
+      "source": "9টি Japanese example",
+      "target": "9 Japanese examples"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice questions with explanations"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile and print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Hide あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Not completed yet"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Mark Complete"
+    },
+    {
+      "source": "Lesson 32 · লক্ষ্য",
+      "target": "Lesson 32 · Goal"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "What you will be able to do after this lesson"
+    },
+    {
+      "source": "‘এটা করুন’, ‘সম্ভবত হবে’, ‘হয়তো হতে পারে’—তিনটির certainty এক নয়। Lesson 32-এ পরামর্শের ほうがいい, তুলনামূলক শক্ত অনুমানের でしょう এবং অনিশ্চিত かもしれません-কে একটি certainty scale-এ বসানো হবে।",
+      "target": "“Do this”, “it will probably happen”, “it might happen” — the certainty of the three is not the same. In Lesson 32, advice with ほうがいい, the comparatively strong guess でしょう, and the uncertain かもしれません are placed on a single certainty scale."
+    },
+    {
+      "source": "affirmative advice-এ Vた এবং negative advice-এ Vない ব্যবহার করবেন",
+      "target": "You will be able to use Vた in affirmative advice and Vない in negative advice"
+    },
+    {
+      "source": "でしょう দিয়ে যুক্তিযুক্ত অনুমান ও confirmation আলাদা করবেন",
+      "target": "You will be able to tell apart でしょう for a reasoned guess and でしょう for confirmation"
+    },
+    {
+      "source": "かもしれません দিয়ে বাস্তব সম্ভাবনা নরমভাবে বলবেন",
+      "target": "You will be able to state a real possibility softly with かもしれません"
+    },
+    {
+      "source": "な-বিশেষণ/বিশেষ্যের plain-form সংযোগে だ বাদ দেওয়ার নিয়ম আয়ত্ত করবেন",
+      "target": "You will master the rule of dropping だ when joining the plain form of な-adjectives and nouns"
+    },
+    {
+      "source": "কাজটি করাই ভালো—পরামর্শ/সতর্কতা",
+      "target": "Doing the action is better — advice / warning"
+    },
+    {
+      "source": "গঠন",
+      "target": "Formation"
+    },
+    {
+      "source": "ধরন",
+      "target": "Type"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Example"
+    },
+    {
+      "source": "করার পরামর্শ",
+      "target": "Advice to do it"
+    },
+    {
+      "source": "না করার পরামর্শ",
+      "target": "Advice not to do it"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detailed Explanation"
+    },
+    {
+      "source": "Affirmative advice-এ past form হলেও সময় অতীত নয়। Vた＋ほうがいい পুরো pattern-টি ‘এটি করাই ভালো’। Negative-এ Vない＋ほうがいい; Vなかった নয়।",
+      "target": "In affirmative advice, although it is the past form, the time is not the past. The whole pattern Vた＋ほうがいい means “it is better to do it”. In the negative, Vない＋ほうがいい; not Vなかった."
+    },
+    {
+      "source": "এই advice বেশ সরাসরি; গুরুতর স্বাস্থ্য/নিরাপত্তা বা কাছের সম্পর্কের জন্য স্বাভাবিক। অপরিচিত বা সংবেদনশীল বিষয়ে 〜たらどうですか／〜てもいいと思います নরম হতে পারে।",
+      "target": "This advice is quite direct; it is natural for serious health or safety matters, or in close relationships. With strangers or on a sensitive topic, 〜たらどうですか／〜てもいいと思います can be softer."
+    },
+    {
+      "source": "নিজের সিদ্ধান্ত তুলনা করতেও ব্যবহার হয়: 電車で行ったほうがいいと思います।",
+      "target": "It is also used when comparing your own decisions: 電車で行ったほうがいいと思います."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "What to Remember"
+    },
+    {
+      "source": "অযাচিত ব্যক্তিগত পরামর্শে কণ্ঠস্বর নরম রাখুন।",
+      "target": "Keep your voice soft with unsolicited personal advice."
+    },
+    {
+      "source": "জ্বর থাকলে হাসপাতালে যাওয়া ভালো।",
+      "target": "If you have a fever, it is better to go to the hospital."
+    },
+    {
+      "source": "রাতে দেরিতে কফি না খাওয়াই ভালো।",
+      "target": "It is better not to drink coffee late at night."
+    },
+    {
+      "source": "জরুরি ডেটার কপি রেখে দেওয়া ভালো।",
+      "target": "It is better to keep a copy of important data."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Wrong"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Correct"
+    },
+    {
+      "source": "কেন:",
+      "target": "Why:"
+    },
+    {
+      "source": "নির্দিষ্ট advice pattern-এ affirmative verb た-form।",
+      "target": "In the fixed advice pattern, the affirmative verb is in the た-form."
+    },
+    {
+      "source": "উপলভ্য তথ্য অনুযায়ী ‘সম্ভবত/নিশ্চয়ই’—তুলনামূলক শক্ত অনুমান",
+      "target": "“Probably / surely” from the available information — a comparatively strong guess"
+    },
+    {
+      "source": "ক্রিয়া/い-বিশেষণ",
+      "target": "Verbs / い-adjectives"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-adjective"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Noun"
+    },
+    {
+      "source": "でしょう সাধারণত যুক্তিসঙ্গত তথ্য/অভিজ্ঞতার ভিত্তিতে মাঝারি থেকে উচ্চ সম্ভাবনা দেখায়। আবহাওয়ার পূর্বাভাসে বহুল: 明日は晴れるでしょう।",
+      "target": "でしょう generally shows a medium-to-high probability based on reasonable information or experience. It is common in weather forecasts: 明日は晴れるでしょう."
+    },
+    {
+      "source": "উর্ধ্বমুখী intonation-এ でしょう？ শ্রোতার সম্মতি/confirmation চায়: この料理、おいしいでしょう？ = খাবারটি সুস্বাদু, তাই না? লিখিত বাক্যে প্রসঙ্গ দেখে ধরতে হবে।",
+      "target": "With rising intonation, でしょう？ seeks the listener's agreement / confirmation: この料理、おいしいでしょう？ = this dish is tasty, isn't it? In written sentences, judge it from the context."
+    },
+    {
+      "source": "な-বিশেষণ ও noun-এর present affirmative plain だ, কিন্তু でしょう-এর আগে だ বাদ: 静かでしょう, 学生でしょう।",
+      "target": "な-adjectives and nouns have だ in the present affirmative plain form, but before でしょう the だ is dropped: 静かでしょう, 学生でしょう."
+    },
+    {
+      "source": "だでしょう ✕; N/な-A＋でしょう ✓। Past হলে だったでしょう।",
+      "target": "だでしょう ✕; N / な-A + でしょう ✓. For the past, だったでしょう."
+    },
+    {
+      "source": "আকাশ অন্ধকার; শিগগিরই বৃষ্টি হবে সম্ভবত।",
+      "target": "The sky is dark; it will probably rain soon."
+    },
+    {
+      "source": "রবিবার রাস্তা সম্ভবত ভিড় হবে।",
+      "target": "The roads will probably be crowded on Sunday."
+    },
+    {
+      "source": "এই সমস্যাটি কঠিন, তাই না?",
+      "target": "This problem is hard, isn't it?"
+    },
+    {
+      "source": "な-বিশেষণের だ বাদ দিয়ে でしょう।",
+      "target": "Drop the だ of the な-adjective and add でしょう."
+    },
+    {
+      "source": "হয়তো; সম্ভাবনা আছে কিন্তু বক্তা নিশ্চিত নন",
+      "target": "Perhaps; there is a possibility, but the speaker is not certain"
+    },
+    {
+      "source": "でしょう-এর তুলনায় certainty কম। প্রমাণ অসম্পূর্ণ, বিপরীত ফলও বাস্তবভাবে সম্ভব—তখন かもしれません। সংখ্যা নির্দিষ্ট না হলেও mental scale-এ ‘maybe’।",
+      "target": "Its certainty is lower than でしょう's. When the evidence is incomplete and the opposite result is also realistically possible, use かもしれません. Even if no number is fixed, on the mental scale it is “maybe”."
+    },
+    {
+      "source": "Negative possibility-ও হয়: 間に合わないかもしれません = হয়তো সময়মতো পৌঁছাব না। Past: 忘れたかもしれません = হয়তো ভুলে গেছি।",
+      "target": "A negative possibility is also possible: 間に合わないかもしれません = perhaps I will not make it in time. Past: 忘れたかもしれません = perhaps I have forgotten."
+    },
+    {
+      "source": "কথ্য casual: かもしれない／かも। Formal শিক্ষা ও পরীক্ষায় かもしれません নিরাপদ।",
+      "target": "Casual speech: かもしれない／かも. In formal study and exams, かもしれません is safe."
+    },
+    {
+      "source": "N/な-A present affirmative-এ だ বাদ: 休みかもしれません।",
+      "target": "For N / な-A in the present affirmative, drop だ: 休みかもしれません."
+    },
+    {
+      "source": "ট্রেন দেরি করছে, তাই হয়তো সময়মতো পৌঁছাতে পারব না।",
+      "target": "The train is late, so perhaps I will not arrive in time."
+    },
+    {
+      "source": "এই ব্যাগটি হয়তো তানাকার।",
+      "target": "This bag might be Tanaka's."
+    },
+    {
+      "source": "চাবিটি হয়তো অফিসে ফেলে এসেছি।",
+      "target": "I may have left the key at the office."
+    },
+    {
+      "source": "Noun-এর present だ বাদ যাবে।",
+      "target": "The だ of a noun in the present is dropped."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Differences at a Glance"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Which one in which situation?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Form"
+    },
+    {
+      "source": "কাজ",
+      "target": "Tasks"
+    },
+    {
+      "source": "certainty/শক্তি",
+      "target": "Certainty / strength"
+    },
+    {
+      "source": "পরামর্শ",
+      "target": "Advice"
+    },
+    {
+      "source": "সরাসরি ও উপকারী হওয়া উচিত",
+      "target": "Should be direct and beneficial"
+    },
+    {
+      "source": "প্রমাণভিত্তিক অনুমান",
+      "target": "A guess based on evidence"
+    },
+    {
+      "source": "তুলনামূলক বেশি",
+      "target": "Comparatively higher"
+    },
+    {
+      "source": "অনিশ্চিত সম্ভাবনা",
+      "target": "Uncertain possibility"
+    },
+    {
+      "source": "কম; উল্টোও সম্ভব",
+      "target": "Low; the opposite is also possible"
+    },
+    {
+      "source": "শ্রোতার সম্মতি চাওয়া",
+      "target": "Seeking the listener's agreement"
+    },
+    {
+      "source": "‘তাই না?’",
+      "target": "“Isn't it?”"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Real-life conversations"
+    },
+    {
+      "source": "ভ্রমণের আগে আবহাওয়া",
+      "target": "The Weather before a Trip"
+    },
+    {
+      "source": "কাল পাহাড়ে ঠান্ডা হবে কি?",
+      "target": "Will it be cold in the mountains tomorrow?"
+    },
+    {
+      "source": "হ্যাঁ। তুষারও পড়তে পারে।",
+      "target": "Yes. It may snow as well."
+    },
+    {
+      "source": "কী সঙ্গে নিলে ভালো?",
+      "target": "What is it better to take along?"
+    },
+    {
+      "source": "মোটা কোট নিয়ে যাওয়া ভালো।",
+      "target": "It is better to take a thick coat."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Check Yourself"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice with answers and explanations"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "First write the answers in your notebook, then tap a question to check the answer and the reason."
+    },
+    {
+      "source": "1. ‘আরও ঘুমানো ভালো’—পরামর্শ দিন।",
+      "target": "1. Give the advice “it is better to sleep more”."
+    },
+    {
+      "source": "2. ‘এত লবণ না খাওয়াই ভালো’ বলুন।",
+      "target": "2. Say: “It is better not to eat so much salt.”"
+    },
+    {
+      "source": "3. শূন্যস্থান: 彼は先生（だ／—）かもしれません。",
+      "target": "3. Fill in the blank: 彼は先生（だ／—）かもしれません."
+    },
+    {
+      "source": "だ বাদ: 彼は先生かもしれません。",
+      "target": "Drop だ: 彼は先生かもしれません."
+    },
+    {
+      "source": "Noun present affirmative-এর だ বাদ।",
+      "target": "The だ of a noun in the present affirmative is dropped."
+    },
+    {
+      "source": "4. আকাশ পরিষ্কার—‘কাল সম্ভবত ভালো আবহাওয়া হবে’ বলুন।",
+      "target": "4. The sky is clear — say: “The weather will probably be fine tomorrow.”"
+    },
+    {
+      "source": "প্রমাণভিত্তিক তুলনামূলক শক্ত prediction: でしょう।",
+      "target": "An evidence-based, comparatively strong prediction: でしょう."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "The Master Key in One Sentence"
+    },
+    {
+      "source": "কাজের উপকার/ক্ষতি বিচার করে পরামর্শে ほうがいい; প্রমাণ বেশ শক্ত হলে でしょう; শুধু বাস্তব সম্ভাবনা থাকলে かもしれません।",
+      "target": "Judging the benefit or harm of an action, use ほうがいい for advice; when the evidence is fairly strong, でしょう; when there is only a real possibility, かもしれません."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Trusted References"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus and Verification"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "This independent lesson in English was created by aligning the lesson sequence of Minna no Nihongo II, the official JLPT N4 scope and the Japan Foundation's learner resources. The examples and explanations in English are newly written."
+    },
+    {
+      "source": "← আগের Lesson 31",
+      "target": "← Previous Lesson 31"
+    },
+    {
+      "source": "পরের Lesson 33 →",
+      "target": "Next Lesson 33 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson Index"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Learning goal"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Comparison Table"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress is loading…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "A free, detailed self-study edition in English for learners."
+    }
+  ]
+}
