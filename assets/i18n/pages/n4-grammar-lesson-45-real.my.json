@@ -1,0 +1,426 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "my",
+  "page": "n4-grammar-lesson-45-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "ပင်မ အကြောင်းအရာသို့ သွားရန်"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 45 · প্রয়োগ ও সূক্ষ্মতা",
+      "target": "Lesson 45 · အသုံးချနှင့် သိမ်မွေ့မှု"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Lesson အားလုံး"
+    },
+    {
+      "source": "প্রয়োগ ও সূক্ষ্মতা",
+      "target": "အသုံးပြုမှုနှင့် သိမ်မွေ့မှု"
+    },
+    {
+      "source": "ধাপ ৪ · 41–45",
+      "target": "အဆင့် 4 · 41–45"
+    },
+    {
+      "source": "সম্ভাব্য বিশেষ পরিস্থিতিতে করণীয়, অনাকাঙ্ক্ষিত ঘটনা সামলানো এবং প্রত্যাশার বিপরীত ফল/আফসোস প্রকাশ।",
+      "target": "ဖြစ်နိုင်သော အထူး အခြေအနေမှာ လုပ်ဆောင်ရန်, မလိုလားသော အဖြစ်အပျက် ကိုင်တွယ်ခြင်းနှင့် မျှော်လင့်ချက်၏ ဆန့်ကျင်ဘက် ရလဒ်/နှမြောမှု ဖော်ပြခြင်း။"
+    },
+    {
+      "source": "3টি বিস্তারিত grammar block",
+      "target": "အသေးစိတ် grammar block 3 ခု"
+    },
+    {
+      "source": "11টি Japanese example",
+      "target": "Japanese example 11 ခု"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "ရှင်းပြချက်ပါသော practice 4 ခု"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile နှင့် print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "あ Reading ဖျောက်ပါ"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "မပြီးသေးပါ"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ ပြီးဆုံးအောင် လုပ်ပါ"
+    },
+    {
+      "source": "Lesson 45 · লক্ষ্য",
+      "target": "Lesson 45 · ရည်မှန်းချက်"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "ဤ Lesson အဆုံးမှာ လုပ်နိုင်မည့်အရာများ"
+    },
+    {
+      "source": "場合は এবং のに দুটোই দুই clause যুক্ত করে, কিন্তু মানসিক দিক উল্টো। 場合は বলে ‘এই case ঘটলে কী করব’; のに বলে ‘এত কিছুর পরও প্রত্যাশার বিপরীত কেন হলো’।",
+      "target": "場合は နှင့် のに နှစ်ခုလုံးက clause နှစ်ခု ချိတ်သော်လည်း စိတ်ပိုင်းဆိုင်ရာ ဦးတည်ရာ ဆန့်ကျင်ဘက် ဖြစ်သည်။ 場合は က ‘ဤ case ဖြစ်လျှင် ဘာ လုပ်မလဲ’ ပြောသည်; のに က ‘ဒီလောက်ပြီးနောက် မျှော်လင့်ချက်၏ ဆန့်ကျင်ဘက် ဘာကြောင့် ဖြစ်ခဲ့သလဲ’ ပြောသည်။"
+    },
+    {
+      "source": "verb, い-A, な-A ও noun-এর সঙ্গে 場合は সঠিক form বসাবেন",
+      "target": "verb, い-A, な-A နှင့် noun တို့နှင့်အတူ 場合は ၏ မှန်ကန်သော form တင်နိုင်မည်"
+    },
+    {
+      "source": "manual, rule ও emergency instruction-এ 場合は ব্যবহার করবেন",
+      "target": "manual, rule နှင့် emergency instruction မှာ 場合は သုံးနိုင်မည်"
+    },
+    {
+      "source": "のに দিয়ে unexpected contrast ও আবেগ প্রকাশ করবেন",
+      "target": "のに ဖြင့် unexpected contrast နှင့် စိတ်ခံစားမှု ဖော်ပြနိုင်မည်"
+    },
+    {
+      "source": "のに, ても, けど-এর nuance আলাদা করবেন",
+      "target": "のに, ても, けど ၏ nuance ကို ခွဲခြားနိုင်မည်"
+    },
+    {
+      "source": "নির্দিষ্ট situation/case ঘটলে—বিশেষ করে সম্ভাব্য, সমস্যা বা আনুষ্ঠানিক পরিস্থিতি",
+      "target": "သတ်မှတ်ထားသော situation/case ဖြစ်လျှင်—အထူးသဖြင့် ဖြစ်နိုင်ခြေ, ပြဿနာ သို့မဟုတ် တရားဝင် အခြေအနေ"
+    },
+    {
+      "source": "গঠন",
+      "target": "ဖွဲ့စည်းပုံ"
+    },
+    {
+      "source": "ধরন",
+      "target": "အမျိုးအစား"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "ဥပမာ"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "ကြိယာ"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-နာမဝိသေသန"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-နာမဝိသေသန"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "နာမ်"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "အသေးစိတ် ရှင်းပြချက်"
+    },
+    {
+      "source": "場合（ばあい） একটি noun ‘case/situation’; তাই な-A＋な, N＋の। Verb tense situation-এর সময়/সম্পন্নতা দেখায়: 故障した場合は = নষ্ট হয়ে গেলে/নষ্ট হওয়ার case; 故障する場合は = নষ্ট হওয়ার সম্ভাব্য case।",
+      "target": "場合（ばあい） က noun ‘case/situation’ တစ်ခုဖြစ်သည်; ထို့ကြောင့် な-A＋な, N＋の ဖြစ်သည်။ Verb tense က situation ၏ အချိန်/ပြီးစီးမှုကို ပြသည်: 故障した場合は = ပျက်သွားလျှင်/ပျက်ခြင်း case; 故障する場合は = ပျက်နိုင်သော case ဖြစ်သည်။"
+    },
+    {
+      "source": "নির্দেশিকা, নিয়ম, application, emergency, customer service-এ বহুল: 分からない場合は、担当者に聞いてください।",
+      "target": "ညွှန်ကြားချက်, စည်းမျဉ်း, application, emergency, customer service မှာ အသုံးများသည်: 分からない場合は、担当者に聞いてください。"
+    },
+    {
+      "source": "খুব সাধারণ recurring condition-এ と/ば সহজ; 場合は scenario-কে আলাদা case হিসেবে তুলে ধরে এবং formal শোনায়।",
+      "target": "အလွန် သာမန် recurring condition မှာ と/ば က လွယ်သည်; 場合は က scenario ကို သီးခြား case အဖြစ် ထင်ရှားစေပြီး formal ကြားရသည်။"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "မှတ်ထားရမည့်အရာ"
+    },
+    {
+      "source": "Main clause-এ instruction/request স্বাভাবিক: 問題がある場合は、連絡してください。",
+      "target": "Main clause မှာ instruction/request က သဘာဝကျသည်: 問題がある場合は、連絡してください。"
+    },
+    {
+      "source": "ট্রেন দেরি করলে অফিসে যোগাযোগ করুন।",
+      "target": "ရထား နောက်ကျလျှင် ရုံးသို့ ဆက်သွယ်ပါ။"
+    },
+    {
+      "source": "পাসওয়ার্ড ভুলে গেলে এখানে চাপুন।",
+      "target": "password မေ့သွားလျှင် ဤနေရာမှာ နှိပ်ပါ။"
+    },
+    {
+      "source": "ভূমিকম্পের ক্ষেত্রে লিফট ব্যবহার করবেন না।",
+      "target": "ငလျင် အခြေအနေမှာ ဓာတ်လှေကား မသုံးပါနှင့်။"
+    },
+    {
+      "source": "বুকিং প্রয়োজন হলে আগের দিনের মধ্যে ফোন করব।",
+      "target": "booking လိုအပ်လျှင် ရှေ့နေ့ အတွင်း ဖုန်း ဆက်မည်။"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ အမှား"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ အမှန်"
+    },
+    {
+      "source": "কেন:",
+      "target": "ဘာကြောင့်လဲ:"
+    },
+    {
+      "source": "Noun 雨＋の＋場合; な নয়。",
+      "target": "Noun 雨＋の＋場合; な မဟုတ်ပါ။"
+    },
+    {
+      "source": "যদিও/সত্ত্বেও—প্রত্যাশার বিপরীত ফল, প্রায়ই বিস্ময়/অসন্তোষ/আফসোস",
+      "target": "သော်လည်း/ပင်သော်လည်း—မျှော်လင့်ချက်၏ ဆန့်ကျင်ဘက် ရလဒ်, မကြာခဏ အံ့ဩမှု/မကျေနပ်မှု/နှမြောမှု"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "ကြိယာ/い-A"
+    },
+    {
+      "source": "Speaker-এর প্রত্যাশা: ‘পড়েছি → পাস করার কথা’; বাস্তব: ফেল। 勉強したのに、試験に落ちました—এই mismatch-ই のに।",
+      "target": "Speaker ၏ မျှော်လင့်ချက်: ‘လေ့လာခဲ့သည် → အောင်ရမည်’; လက်တွေ့: ကျရှုံး။ 勉強したのに、試験に落ちました—ဤ mismatch ကိုယ်တိုင်က のに ဖြစ်သည်။"
+    },
+    {
+      "source": "কেবল neutral contrast নয়; আবেগ/অপ্রত্যাশিত ফল থাকে। তাই main clause-এ বক্তার command/intention সাধারণত অস্বাভাবিক: 雨なのに、出かけましょう ✕ (শুধু neutral contrast হলে けど/ても)।",
+      "target": "neutral contrast သာလျှင် မဟုတ်; စိတ်ခံစားမှု/မမျှော်လင့်သော ရလဒ် ရှိသည်။ ထို့ကြောင့် main clause မှာ ပြောသူ၏ command/intention က အများအားဖြင့် မသဘာဝကျပါ: 雨なのに、出かけましょう ✕ (neutral contrast သာလျှင် けど/ても)။"
+    },
+    {
+      "source": "Sentence শেষে のに…/のに。 রেখে complaint/অসম্পূর্ণ আফসোস: 何度も電話したのに…。 = এতবার ফোন করলাম, তবু…",
+      "target": "Sentence အဆုံးမှာ のに…/のに。 ထား၍ complaint/မပြည့်စုံသော နှမြောမှု: 何度も電話したのに…。 = ဒီလောက်အကြိမ် ဖုန်း ဆက်ခဲ့သော်လည်း…"
+    },
+    {
+      "source": "Lesson 42-এর utility のに আলাদা: 料理するのに便利です (রান্নায় সুবিধাজনক)—এখানে পরের predicate utility/cost।",
+      "target": "Lesson 42 ၏ utility のに က ကွဲပြားသည်: 料理するのに便利です (ချက်ပြုတ်ရာမှာ အဆင်ပြေ)—ဤနေရာမှာ နောက် predicate က utility/cost ဖြစ်သည်။"
+    },
+    {
+      "source": "Expected result নয়, actual surprising result main clause-এ।",
+      "target": "Expected result မဟုတ်, actual surprising result က main clause မှာ ဖြစ်သည်။"
+    },
+    {
+      "source": "ওষুধ খেয়েছি, তবু জ্বর আছে।",
+      "target": "ဆေး သောက်ခဲ့သော်လည်း အဖျား ရှိသေးသည်။"
+    },
+    {
+      "source": "ঘরটি ছোট, অথচ ভাড়া বেশি।",
+      "target": "အခန်းက သေးသော်လည်း ငှားခ များသည်။"
+    },
+    {
+      "source": "তানাকা জাপানি হওয়া সত্ত্বেও সুশি অপছন্দ করেন।",
+      "target": "Tanaka က ဂျပန်လူမျိုး ဖြစ်ပင် သော်လည်း sushi မကြိုက်ပါ။"
+    },
+    {
+      "source": "রবিবার হলেও অফিসে যেতে হবে।",
+      "target": "တနင်္ဂနွေ ဖြစ်ပင် သော်လည်း ရုံးသို့ သွားရမည်။"
+    },
+    {
+      "source": "な-বিশেষণ＋な＋のに।",
+      "target": "な-adjective＋な＋のに。"
+    },
+    {
+      "source": "のに বনাম ても বনাম けど",
+      "target": "のに နှင့် ても နှင့် けど"
+    },
+    {
+      "source": "unexpected result, hypothetical concession এবং সাধারণ contrast",
+      "target": "unexpected result, hypothetical concession နှင့် သာမန် contrast"
+    },
+    {
+      "source": "のに actual fact + violated expectation + emotion। ても actual বা hypothetical concession: 雨が降っても行きます = বৃষ্টি হলেও যাব (speaker intention সম্ভব)।",
+      "target": "のに က actual fact + violated expectation + emotion ဖြစ်သည်။ ても က actual သို့မဟုတ် hypothetical concession: 雨が降っても行きます = မိုး ရွာပင် သော်လည်း သွားမည် (speaker intention ဖြစ်နိုင်)။"
+    },
+    {
+      "source": "けど/が neutral contrast বা soft introduction; আবেগ বাধ্যতামূলক নয়: 小さいけど便利です।",
+      "target": "けど/が က neutral contrast သို့မဟုတ် soft introduction; စိတ်ခံစားမှု မဖြစ်မနေ မလိုပါ: 小さいけど便利です。"
+    },
+    {
+      "source": "Main clause intention/command হলে ても/けど বেছে নিন: 雨でも行きましょう। のに বললে ‘বৃষ্টি হচ্ছে অথচ চল যাই’ logic অস্বাভাবিক, বিশেষ context ছাড়া।",
+      "target": "Main clause က intention/command ဖြစ်လျှင် ても/けど ရွေးပါ: 雨でも行きましょう。 のに ပြောလျှင် ‘မိုး ရွာနေပင် သော်လည်း သွားကြစို့’ logic က မသဘာဝကျ, အထူး context မရှိဘဲ။"
+    },
+    {
+      "source": "নিজের future decision ‘তবুও করব’ → ても; ঘটে যাওয়া হতাশা → のに।",
+      "target": "ကိုယ့် future decision ‘သော်လည်း လုပ်မည်’ → ても; ဖြစ်သွားသော စိတ်ပျက်မှု → のに。"
+    },
+    {
+      "source": "বৃষ্টি হলেও ম্যাচ করব।",
+      "target": "မိုး ရွာပင် သော်လည်း match လုပ်မည်။"
+    },
+    {
+      "source": "বৃষ্টি হয়েছিল, তবুও (অপ্রত্যাশিতভাবে) ম্যাচ হয়েছে।",
+      "target": "မိုး ရွာခဲ့သော်လည်း (မမျှော်လင့်ဘဲ) match ဖြစ်ခဲ့သည်။"
+    },
+    {
+      "source": "দোকানটি ছোট, কিন্তু খাবার ভালো।",
+      "target": "ဆိုင်က သေးသော်လည်း အစားအစာ ကောင်းသည်။"
+    },
+    {
+      "source": "雨が降るのに、明日出かけます。（নিজের plan)",
+      "target": "雨が降るのに、明日出かけます。（ကိုယ့် plan)"
+    },
+    {
+      "source": "নিজের ‘বৃষ্টি হলেও যাব’ decision-এ ても।",
+      "target": "ကိုယ့် ‘မိုး ရွာပင် သော်လည်း သွားမည်’ decision မှာ ても。"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "တစ်ချက်ကြည့် ကွာခြားချက်"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "ဘယ်အခြေအနေမှာ ဘယ်ဟာလဲ?"
+    },
+    {
+      "source": "রূপ",
+      "target": "ပုံစံ"
+    },
+    {
+      "source": "বিশেষ case ঘটলে",
+      "target": "အထူး case ဖြစ်လျှင်"
+    },
+    {
+      "source": "করণীয়/নির্দেশ",
+      "target": "လုပ်ဆောင်ရန်/ညွှန်ကြားချက်"
+    },
+    {
+      "source": "fact থাকা সত্ত্বেও unexpected",
+      "target": "fact ရှိပင် သော်လည်း unexpected"
+    },
+    {
+      "source": "ফল/আবেগ; intention নয়",
+      "target": "ရလဒ်/စိတ်ခံစားမှု; intention မဟုတ်ပါ"
+    },
+    {
+      "source": "speaker intention/command সম্ভব",
+      "target": "speaker intention/command ဖြစ်နိုင်"
+    },
+    {
+      "source": "সাধারণ contrast/soft lead-in",
+      "target": "သာမန် contrast/soft lead-in"
+    },
+    {
+      "source": "neutral ও flexible",
+      "target": "neutral နှင့် flexible"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "လက်တွေ့ပြောဆိုဆက်ဆံမှု"
+    },
+    {
+      "source": "অনলাইন ফর্মের সমস্যা",
+      "target": "online form ၏ ပြဿနာ"
+    },
+    {
+      "source": "যতবারই লিখি, error হয়।",
+      "target": "ဘယ်နှစ်ကြိမ် ရေးရေး error ဖြစ်သည်။"
+    },
+    {
+      "source": "error হলে screen save করুন।",
+      "target": "error ဖြစ်လျှင် screen ကို save လုပ်ပါ။"
+    },
+    {
+      "source": "নির্দেশ অনুযায়ী করেও হয়নি।",
+      "target": "ညွှန်ကြားချက်အတိုင်း လုပ်ပင် သော်လည်း မဖြစ်ခဲ့ပါ။"
+    },
+    {
+      "source": "তাহলে support-এ যোগাযোগ করি।",
+      "target": "ထိုအခါ support သို့ ဆက်သွယ်မည်။"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "ကိုယ်တိုင် စစ်ဆေးပါ"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice နှင့် ရှင်းပြချက်ပါသော အဖြေ"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "ပထမ မှတ်စုစာအုပ်မှာ အဖြေ ရေးပါ, ထို့နောက် မေးခွန်းကို နှိပ်၍ အဖြေ နှင့် အကြောင်းအရင်း တိုက်ဆိုင်ပါ။"
+    },
+    {
+      "source": "1. ‘আগুন লাগলে এই দরজা ব্যবহার করুন’ বলুন।",
+      "target": "1. ‘မီး လောင်လျှင် ဤ တံခါး သုံးပါ’ ဟု ပြောပါ။"
+    },
+    {
+      "source": "2. ‘সুবিধাজনক হওয়া সত্ত্বেও ব্যবহার করি না’ বলুন।",
+      "target": "2. ‘အဆင်ပြေ ဖြစ်ပင် သော်လည်း မသုံးပါ’ ဟု ပြောပါ။"
+    },
+    {
+      "source": "3. ‘পড়েছি, তবু বুঝিনি’ বলুন।",
+      "target": "3. ‘လေ့လာခဲ့သော်လည်း နားမလည်ခဲ့ပါ’ ဟု ပြောပါ။"
+    },
+    {
+      "source": "4. ‘বৃষ্টি হলেও যাব’—নিজের intention বলুন।",
+      "target": "4. ‘မိုး ရွာပင် သော်လည်း သွားမည်’—ကိုယ့် intention ပြောပါ။"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "စကားတစ်ခွန်းဖြင့် Master Key"
+    },
+    {
+      "source": "সম্ভাব্য special case ও করণীয় → 場合は; সত্য ঘটেও expectation ভাঙলে → のに; hypothetical ‘হলেও করব’ → ても; নিরপেক্ষ contrast → けど।",
+      "target": "ဖြစ်နိုင်သော special case နှင့် လုပ်ဆောင်ရန် → 場合は; အမှန်တကယ် ဖြစ်ပင် သော်လည်း expectation ပျက်လျှင် → のに; hypothetical ‘သော်လည်း လုပ်မည်’ → ても; ကြားနေ contrast → けど。"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "ယုံကြည်စိတ်ချရသော reference"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "syllabus နှင့် စစ်ဆေးမှု"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "ဤ သီးခြား မြန်မာ lesson ကို Minna no Nihongo II ၏ lesson sequence, official JLPT N4 scope နှင့် Japan Foundation ၏ learner resources တို့ ပေါင်းစပ်၍ ဖန်တီးထားသည်။ ဥပမာ နှင့် မြန်မာ ရှင်းပြချက်များ အသစ် ရေးသားထားသည်။"
+    },
+    {
+      "source": "← আগের Lesson 44",
+      "target": "← အရင် Lesson 44"
+    },
+    {
+      "source": "পরের Lesson 46 →",
+      "target": "နောက် Lesson 46 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson အညွှန်း"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "သင်ယူမှု ပစ်မှတ်"
+    },
+    {
+      "source": "3. のに বনাম ても বনাম けど",
+      "target": "3. のに နှင့် ても နှင့် けど"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "ကွာခြားချက် table"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "စကားပြော"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress load ဖြစ်နေသည်…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "ကျောင်းသားများအတွက် အခမဲ့, အသေးစိတ် မြန်မာ self-study edition။"
+    }
+  ]
+}
