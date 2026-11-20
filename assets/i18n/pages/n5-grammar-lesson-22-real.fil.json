@@ -1,0 +1,242 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "n5-grammar-lesson-22-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 22 | Noun Modification / Relative Clauses | আপনার নিহোন",
+      "target": "N5 Grammar Lesson 22 | Noun Modification / Relative Clauses | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "যে মানুষ, যে জিনিস, যে জায়গা — noun-এর আগে বাক্য বসানো",
+      "target": "Ang taong, ang bagay na, ang lugar na — paglalagay ng pangungusap bago ang noun"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "Simulan ang Grammar"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "Learning Goal ngayon"
+    },
+    {
+      "source": "Noun modify করা",
+      "target": "Pagmo-modify ng Noun"
+    },
+    {
+      "source": "মানুষ বর্ণনা",
+      "target": "Paglalarawan ng tao"
+    },
+    {
+      "source": "আরও natural sentence",
+      "target": "Mas natural na sentence"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "Simpleng paliwanag + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "Para sa bawat pattern, tingnan muna ang structure, pagkatapos ay bigkasin ang example. Kapag pinindot mo ang Audio button, maririnig mo ang Japanese sentence."
+    },
+    {
+      "source": "noun-এর আগে plain sentence বসিয়ে “যে/যা/যেখানে” অর্থ তৈরি হয়।",
+      "target": "Sa paglalagay ng plain sentence bago ang noun, nabubuo ang kahulugang \"ang/na/kung saan\"."
+    },
+    {
+      "source": "Japanese-এ relative clause noun-এর আগে আসে; বাংলা/ইংরেজিতে পরে আসতে পারে।",
+      "target": "Sa Japanese, ang relative clause ay nauuna sa noun; sa Filipino/Ingles, maaari itong sumunod."
+    },
+    {
+      "source": "কোরে ওয়া কিনো কাত্তা হোনদেসু।",
+      "target": "これは昨日買った本です."
+    },
+    {
+      "source": "এটা গতকাল কেনা বই।",
+      "target": "Ito ang librong binili ko kahapon."
+    },
+    {
+      "source": "আসোকো নি ইরু হিতো ওয়া তানাকা সানদেসু।",
+      "target": "あそこにいる人は田中さんです."
+    },
+    {
+      "source": "ওখানে থাকা ব্যক্তি তানাকা-সান।",
+      "target": "Ang taong nandoon ay si Tanaka-san."
+    },
+    {
+      "source": "noun modifying clause-এর ভিতরের subject সাধারণত が দিয়ে আসে।",
+      "target": "Ang subject sa loob ng noun modifying clause ay karaniwang may が."
+    },
+    {
+      "source": "母は作った料理 নয়; 母が作った料理।",
+      "target": "母は作った料理 hindi; 母が作った料理."
+    },
+    {
+      "source": "কোরে ওয়া হাহা গা ৎসুকুত্তা রিয়োরিদেসু।",
+      "target": "これは母が作った料理です."
+    },
+    {
+      "source": "এটা মায়ের বানানো খাবার।",
+      "target": "Ito ang pagkaing ginawa ni nanay."
+    },
+    {
+      "source": "ওয়াতাশি গা ইয়োমিতাই হোন ওয়া কোরেদেসু।",
+      "target": "私が読みたい本はこれです."
+    },
+    {
+      "source": "আমি যে বই পড়তে চাই, সেটা এটা।",
+      "target": "Ang librong gusto kong basahin ay ito."
+    },
+    {
+      "source": "যে ব্যক্তি এখন/habitually কিছু করছে, তাকে describe করতে।",
+      "target": "Para ilarawan ang taong gumagawa ngayon/habitually ng isang bagay."
+    },
+    {
+      "source": "মেগানে ও কাকেতেইরু হিতো ওয়া ইয়ামাদা সানদেসু।",
+      "target": "眼鏡をかけている人は山田さんです."
+    },
+    {
+      "source": "চশমা পরা ব্যক্তি ইয়ামাদা-সান।",
+      "target": "Ang taong may suot na salamin ay si Yamada-san."
+    },
+    {
+      "source": "দেনওয়া ও শিতেইরু হিতো ওয়া দারেদেসু কা।",
+      "target": "電話をしている人は誰ですか."
+    },
+    {
+      "source": "ফোন করছে যে ব্যক্তি, সে কে?",
+      "target": "Sino ang taong tumatawag?"
+    },
+    {
+      "source": "যে জায়গায়/যে সময় কিছু করি তা noun modification দিয়ে বলা যায়।",
+      "target": "Ang lugar/oras kung saan ginagawa ko ang isang bagay ay masasabi gamit ang noun modification."
+    },
+    {
+      "source": "場所/時間 noun-কে আগের clause modify করে।",
+      "target": "Ang naunang clause ang nagmo-modify sa 場所/時間 noun."
+    },
+    {
+      "source": "ওয়াতাশি গা বেনকিয়ো সুরু বাশো ওয়া তোশোকানদেসু।",
+      "target": "私が勉強する場所は図書館です."
+    },
+    {
+      "source": "আমি যে জায়গায় পড়ি, তা লাইব্রেরি।",
+      "target": "Ang lugar kung saan ako nag-aaral ay ang aklatan."
+    },
+    {
+      "source": "গোহান ও তাবেরু জিকান গা আরিমাসেন।",
+      "target": "ご飯を食べる時間がありません."
+    },
+    {
+      "source": "খাওয়ার সময় নেই।",
+      "target": "Walang oras para kumain."
+    },
+    {
+      "source": "বর্ণনা দিয়ে কোন ব্যক্তি/জিনিস তা জিজ্ঞাসা করা যায়।",
+      "target": "Maaaring itanong kung aling tao/bagay ito gamit ang paglalarawan."
+    },
+    {
+      "source": "Noun modification conversation-এ খুব useful।",
+      "target": "Napakauseful ng Noun modification sa conversation."
+    },
+    {
+      "source": "মিরা সান গা সুনদেইরু ইয়ে ওয়া দোকোদেসু কা।",
+      "target": "ミラーさんが住んでいる家はどこですか."
+    },
+    {
+      "source": "মিলার-সান যে বাড়িতে থাকেন, সেটা কোথায়?",
+      "target": "Saan ang bahay na tinitirhan ni Miller-san?"
+    },
+    {
+      "source": "কিনো আত্তা হিতো ওয়া দারেদেসু কা।",
+      "target": "昨日会った人は誰ですか."
+    },
+    {
+      "source": "গতকাল যে ব্যক্তির সাথে দেখা হয়েছিল, তিনি কে?",
+      "target": "Sino ang taong nakita mo kahapon?"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "Practice sa pagbigkas"
+    },
+    {
+      "source": "এই বাক্যগুলো conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "Basahin ang mga pangungusap na ito nang 3 beses bawat isa na parang conversation."
+    },
+    {
+      "source": "কোরে ওয়া নানিদেসু কা।",
+      "target": "これは何ですか."
+    },
+    {
+      "source": "এটা কী?",
+      "target": "Ano ito?"
+    },
+    {
+      "source": "কিনো কাত্তা হোনদেসু।",
+      "target": "昨日買った本です."
+    },
+    {
+      "source": "গতকাল কেনা বই।",
+      "target": "Librong binili kahapon."
+    },
+    {
+      "source": "আসোকো নি ইরু হিতো ওয়া দারেদেসু কা।",
+      "target": "あそこにいる人は誰ですか."
+    },
+    {
+      "source": "ওখানে থাকা ব্যক্তি কে?",
+      "target": "Sino ang taong nandoon?"
+    },
+    {
+      "source": "তানাকা সানদেসু।",
+      "target": "田中さんです."
+    },
+    {
+      "source": "তানাকা-সান।",
+      "target": "Si Tanaka-san."
+    },
+    {
+      "source": "আনাতা গা সুনদেইরু মাচি ওয়া দোকোদেসু কা।",
+      "target": "あなたが住んでいる町はどこですか."
+    },
+    {
+      "source": "আপনি যে শহরে থাকেন সেটা কোথায়?",
+      "target": "Saan ang bayan na tinitirhan mo?"
+    },
+    {
+      "source": "✅ 母が作った料理 — modifying clause-এর subject が।",
+      "target": "✅ 母が作った料理 — subject ng modifying clause ay が."
+    },
+    {
+      "source": "✅ 昨日買った本 — noun modify করতে plain form।",
+      "target": "✅ 昨日買った本 — plain form para i-modify ang noun."
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "Subukan ang sarili mo"
+    },
+    {
+      "source": "গতকাল কেনা বই = ?",
+      "target": "librong binili kahapon = ?"
+    },
+    {
+      "source": "মায়ের বানানো খাবার = ?",
+      "target": "pagkaing ginawa ni nanay = ?"
+    },
+    {
+      "source": "চশমা পরা ব্যক্তি = ?",
+      "target": "taong may suot na salamin = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 22 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 22 • Verified Premium Detailed Version"
+    }
+  ]
+}
