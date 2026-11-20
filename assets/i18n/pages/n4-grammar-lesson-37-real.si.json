@@ -1,0 +1,490 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n4-grammar-lesson-37-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 37: Passive Form：受け身形 পুরোপুরি পরিষ্কার | N4 Grammar",
+      "target": "Lesson 37: Passive Form：受け身形 සම්පූර්ණයෙන්ම පැහැදිලි | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "ප්‍රධාන අන්තර්ගතයට යන්න"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 37 · জটিল বাক্য",
+      "target": "Lesson 37 · සංකීර්ණ වාක්‍යය"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "සියලු Lesson"
+    },
+    {
+      "source": "জটিল বাক্য",
+      "target": "සංකීර්ණ වැකි"
+    },
+    {
+      "source": "ধাপ ৩ · 36–40",
+      "target": "පියවර 3 · 36–40"
+    },
+    {
+      "source": "Passive Form：受け身形 পুরোপুরি পরিষ্কার",
+      "target": "Passive Form：受け身形 සම්පූර්ණයෙන්ම පැහැදිලි"
+    },
+    {
+      "source": "কাজ-গ্রহণকারীকে topic করা, ক্ষতি/বিরক্তির passive, possession বজায় রাখা এবং ঐতিহাসিক/বস্তুনিষ্ঠ passive।",
+      "target": "වැඩය ලබන්නා topic එක කිරීම, හානිය/කරදරයේ passive එක, possession එක පවත්වා ගැනීම සහ ඓතිහාසික/වෛෂයික passive එක."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "විස්තරාත්මක grammar block 4 ක්"
+    },
+    {
+      "source": "12টি Japanese example",
+      "target": "Japanese example 12 ක්"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "පැහැදිලි කිරීම් සහිත practice 4 ක්"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile සහ print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "あ Reading සඟවන්න"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "තවම සම්පූර්ණ නැහැ"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ සම්පූර්ණ ලෙස සලකුණු කරන්න"
+    },
+    {
+      "source": "Lesson 37 · লক্ষ্য",
+      "target": "Lesson 37 · ඉලක්කය"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "මෙම Lesson එක අවසානයේ ඔබට හැකි දේ"
+    },
+    {
+      "source": "Passive শুধু active বাক্য উল্টানো নয়। জাপানিতে বক্তা কার দৃষ্টিকোণকে সামনে আনছেন এবং ঘটনাটি তার ওপর কী প্রভাব ফেলেছে—এটাই মূল। 私は先生にほめられました-তে ‘আমি’ প্রশংসার প্রাপক; 私は雨に降られました-তে বৃষ্টি আমার জন্য বিরক্তিকর ঘটনা।",
+      "target": "Passive එක active වාක්‍යය පෙරළීම පමණක් නොවේ. ජපන් භාෂාවේ කථිකයා කාගේ දෘෂ්ටිකෝණය ඉදිරියට ගෙන එනවාද සහ සිද්ධිය ඔහු මත කුමන බලපෑමක් ඇති කළාද—එයයි ප්‍රධානය. 私は先生にほめられました එකේ ‘මම’ ප්‍රශංසාව ලබන්නාය; 私は雨に降られました එකේ වැස්ස මට කරදරකාරී සිද්ධියකි."
+    },
+    {
+      "source": "তিন verb group-এর passive form তৈরি করবেন",
+      "target": "verb group තුනේම passive form එක සෑදීමට හැකි වේ"
+    },
+    {
+      "source": "agent に এবং recipient/topic は-এর ভূমিকা বুঝবেন",
+      "target": "agent එක に සහ recipient/topic එක は හි භූමිකාව තේරුම් ගැනීමට හැකි වේ"
+    },
+    {
+      "source": "direct passive ও adversity passive আলাদা করবেন",
+      "target": "direct passive එක සහ adversity passive එක වෙන් කිරීමට හැකි වේ"
+    },
+    {
+      "source": "সৃষ্টি/আবিষ্কারের agent-এ によって ব্যবহার করবেন",
+      "target": "නිර්මාණය/සොයාගැනීමේ agent එකේ によって භාවිතා කිරීමට හැකි වේ"
+    },
+    {
+      "source": "受け身形ের গঠন",
+      "target": "受け身形 හි ව්‍යුහය"
+    },
+    {
+      "source": "‘করা হয়/কারো দ্বারা প্রভাবিত হওয়া’ verb form",
+      "target": "‘කරනු ලැබේ/යමෙකු විසින් බලපෑමට ලක් වේ’ යන verb form එක"
+    },
+    {
+      "source": "গঠন",
+      "target": "ව්‍යුහය"
+    },
+    {
+      "source": "ধরন",
+      "target": "වර්ගය"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "උදාහරණය"
+    },
+    {
+      "source": "শেষ う-row → あ-row＋れる",
+      "target": "අවසාන う-row → あ-row＋れる"
+    },
+    {
+      "source": "る বাদ＋られる",
+      "target": "る ඉවත් කර＋られる"
+    },
+    {
+      "source": "অনিয়মিত",
+      "target": "අවිධිමත්"
+    },
+    {
+      "source": "ভদ্র",
+      "target": "ආචාරශීලී"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "විස්තරාත්මක පැහැදිලි කිරීම"
+    },
+    {
+      "source": "Group 2 passive ও potential একই রূপ: 食べられる। Context/particle অর্থ নির্ধারণ করে: 魚が食べられます = মাছ খেতে পারি; 魚は猫に食べられました = মাছটি বিড়াল খেয়েছে।",
+      "target": "Group 2 passive එක සහ potential එක එකම රූපයයි: 食べられる. Context/particle එක අර්ථය තීරණය කරයි: 魚が食べられます = මාළුවා කෑමට හැකිය; 魚は猫に食べられました = මාළුවා බළලා කෑවා."
+    },
+    {
+      "source": "Passive verb Group 2-এর মতো conjugate হয়: 書かれない, 書かれた, 書かれて。",
+      "target": "Passive verb එක Group 2 එක මෙන් conjugate වේ: 書かれない, 書かれた, 書かれて."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "මතක තබා ගත යුතු දේ"
+    },
+    {
+      "source": "買う→買あれる নয়; う→わ: 買われる।",
+      "target": "買う→買あれる නොවේ; う→わ: 買われる."
+    },
+    {
+      "source": "প্রশংসা করা → প্রশংসিত হওয়া",
+      "target": "ප්‍රශංසා කිරීම → ප්‍රශංසා ලැබීම"
+    },
+    {
+      "source": "ডাকা → ডাকা হওয়া",
+      "target": "කැඳවීම → කැඳවනු ලැබීම"
+    },
+    {
+      "source": "সতর্ক করা → সতর্ক করা হওয়া",
+      "target": "අවවාද කිරීම → අවවාද ලැබීම"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ වැරදි"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ නිවැරදි"
+    },
+    {
+      "source": "কেন:",
+      "target": "ඇයි:"
+    },
+    {
+      "source": "Group 1: dictionary ending く→か＋れる; ます-stem নয়।",
+      "target": "Group 1: dictionary ending එක く→か＋れる; ます-stem එක නොවේ."
+    },
+    {
+      "source": "কাজের সরাসরি প্রাপককে topic/subject করা",
+      "target": "වැඩයේ කෙලින්ම ලබන්නා topic/subject එක කිරීම"
+    },
+    {
+      "source": "Active-এর object B passive-এ は/が হয়ে সামনে আসে; agent A সাধারণত に। বক্তা B-এর দৃষ্টিকোণ থেকে ঘটনা বলেন।",
+      "target": "Active එකේ object එක B passive එකේ は/が වී ඉදිරියට එයි; agent එක A සාමාන්‍යයෙන් に. කථිකයා B ගේ දෘෂ්ටිකෝණයෙන් සිද්ධිය කියයි."
+    },
+    {
+      "source": "ইতিবাচক ঘটনাও passive হয়: 私は先生にほめられました = শিক্ষক আমাকে প্রশংসা করেছেন। তাই passive মানেই দুঃখ নয়।",
+      "target": "ධනාත්මක සිද්ධිත් passive වේ: 私は先生にほめられました = ගුරුවරයා මට ප්‍රශංසා කළා. එබැවින් passive එක යනු දුකම නොවේ."
+    },
+    {
+      "source": "Agent সাধারণ/অজানা হলে বাদ: この歌は世界中で歌われています = গানটি বিশ্বজুড়ে গাওয়া হয়।",
+      "target": "Agent එක සාමාන්‍ය/නොදන්නා විට අතහරින්න: この歌は世界中で歌われています = ගීතය ලොව පුරා ගායනා කෙරේ."
+    },
+    {
+      "source": "কাজকারী に, কাজের প্রাপক は/が।",
+      "target": "වැඩ කරන්නා に, වැඩය ලබන්නා は/が."
+    },
+    {
+      "source": "বিভাগীয় প্রধান আমাকে মিটিংয়ে আমন্ত্রণ করেছেন।",
+      "target": "අංශ ප්‍රධානියා මාව රැස්වීමට ආරාධනා කළා."
+    },
+    {
+      "source": "ছোট ভাই মায়ের বকা খেয়েছে।",
+      "target": "බාල සොහොයුරා අම්මාගෙන් බැණුම් ඇසුවා."
+    },
+    {
+      "source": "এই গানটি অনেক মানুষের ভালোবাসা পায়।",
+      "target": "මෙම ගීතය බොහෝ දෙනාගේ ආදරය ලබයි."
+    },
+    {
+      "source": "Passive agent সাধারণত に; を নয়।",
+      "target": "Passive agent එක සාමාන්‍යයෙන් に; を නොවේ."
+    },
+    {
+      "source": "অন্যের কাজ/ঘটনায় বক্তা ক্ষতি, বিরক্তি বা অসুবিধা ভোগ করেন",
+      "target": "වෙනත් අයගේ වැඩ/සිද්ධි නිසා කථිකයා හානිය, කරදරය හෝ අපහසුව විඳියි"
+    },
+    {
+      "source": "অন্যের কাজ",
+      "target": "වෙනත් අයගේ වැඩ"
+    },
+    {
+      "source": "প্রাকৃতিক ঘটনা",
+      "target": "ස්වභාවික සිද්ධිය"
+    },
+    {
+      "source": "Japanese adversity passive-এ active object-এর মালিক topic হয়, কিন্তু body-part/possessed object を রেখেই বলা হয়: 私は犬に手をかまれました। 手は犬に… বললে ব্যক্তিগত ক্ষতির perspective কমে।",
+      "target": "Japanese adversity passive එකේ active object එකේ අයිතිකරු topic එක වේ, නමුත් body-part/possessed object එක を තබාගෙනම කියනු ලැබේ: 私は犬に手をかまれました. 手は犬に… කීවොත් පෞද්ගලික හානියේ perspective එක අඩු වේ."
+    },
+    {
+      "source": "Intransitive verb-ও adversity passive হয়: 友達に来られて、勉強できませんでした = বন্ধু এসে পড়ায় পড়তে পারিনি। বাংলায় সরাসরি passive না হলেও জাপানিতে ভুক্তভোগীর দৃষ্টিভঙ্গি।",
+      "target": "Intransitive verb එකත් adversity passive වේ: 友達に来られて、勉強できませんでした = මිතුරා පැමිණි නිසා ඉගෙනීමට නොහැකි වුණා. සිංහලෙන් කෙලින්ම passive එකක් නොවුවත් ජපන් භාෂාවේ පීඩිතයාගේ දෘෂ්ටිභාවයයි."
+    },
+    {
+      "source": "সবসময় নাটকীয় ক্ষতি নয়; context অসুবিধা বা অপ্রত্যাশিত প্রভাব দেখায়।",
+      "target": "සැමවිටම නාට්‍යමය හානියක් නොවේ; context එක අපහසුව හෝ අනපේක්ෂිත බලපෑම පෙන්වයි."
+    },
+    {
+      "source": "Possession আলাদা করবেন না: 私は弟にケーキを食べられました।",
+      "target": "Possession එක වෙන් නොකරන්න: 私は弟にケーキを食べられました."
+    },
+    {
+      "source": "Natural event: 雨に降られる একটি fixed, বহুল ব্যবহৃত pattern।",
+      "target": "Natural event: 雨に降られる යනු fixed, බහුලව භාවිතා වන pattern එකකි."
+    },
+    {
+      "source": "ট্রেনে পাশের লোক আমার পায়ে পা দিয়েছেন।",
+      "target": "දුම්රියේ අසල සිටි පුද්ගලයා මගේ පාදය පෑගුවා."
+    },
+    {
+      "source": "ছোট ভাই আমার জরুরি/প্রিয় কেকটি খেয়ে ফেলেছে।",
+      "target": "බාල සොහොයුරා මගේ හදිසි/ප්‍රිය කේක් එක කා දමා ඇත."
+    },
+    {
+      "source": "ফেরার পথে বৃষ্টিতে পড়েছিলাম।",
+      "target": "ආපසු එන ගමනේ වැස්සට අසු වී සිටියා."
+    },
+    {
+      "source": "ক্ষতিগ্রস্ত ব্যক্তি topic 私は; নিজের body part を।",
+      "target": "හානියට පත් පුද්ගලයා topic එක 私は; තමාගේ body part එක を."
+    },
+    {
+      "source": "বস্তুনিষ্ঠ passive ও Nによって",
+      "target": "වෛෂයික passive එක සහ Nによって"
+    },
+    {
+      "source": "নির্মাণ, আবিষ্কার, রচনা বা ইতিহাসে কাজ/ফলকে সামনে আনা",
+      "target": "ඉදිකිරීම, සොයාගැනීම, රචනය හෝ ඉතිහාසයේ වැඩය/ප්‍රතිඵලය ඉදිරියට ගෙන ඒම"
+    },
+    {
+      "source": "নির্মাণ",
+      "target": "ඉදිකිරීම"
+    },
+    {
+      "source": "স্রষ্টা/আবিষ্কারক",
+      "target": "නිර්මාතෘ/සොයාගත් තැනැත්තා"
+    },
+    {
+      "source": "বস্তু, ভবন, বই বা ধারণা topic হলে passive স্বাভাবিক; কে করেছেন তা গৌণ বা ঐতিহাসিক তথ্য।",
+      "target": "වස්තුව, ගොඩනැගිල්ල, පොත හෝ සංකල්පය topic එක වූ විට passive එක natural; කවුද කළේ යන්න ද්විතීයික හෝ ඓතිහාසික තොරතුරකි."
+    },
+    {
+      "source": "সৃষ্টি/আবিষ্কার/রচনা/নকশায় agent-এর পরে によって বেশি formal ও উপযুক্ত: 書かれる, 発明される, 建てられる, 設計される। সাধারণ interpersonal action-এ に যথেষ্ট।",
+      "target": "නිර්මාණය/සොයාගැනීම/රචනය/නිර්මාණයේ agent එකට පසු によって වඩා formal සහ සුදුසුය: 書かれる, 発明される, 建てられる, 設計される. සාමාන්‍ය interpersonal action එකේ に ප්‍රමාණවත්."
+    },
+    {
+      "source": "উপাদান/উৎস বোঝাতে から/で আলাদা; agent ব্যক্তি/গোষ্ঠী হলে によって।",
+      "target": "ද්‍රව්‍ය/මූලය දැක්වීමට から/で වෙනම; agent එක පුද්ගලයා/කණ්ඩායම නම් によって."
+    },
+    {
+      "source": "Personによって = by; time-এর に-এর সঙ্গে গুলাবেন না।",
+      "target": "Person එක によって = විසින්; time එකේ に සමඟ පටලවන්න එපා."
+    },
+    {
+      "source": "এই সেতু একশ বছর আগে নির্মিত হয়েছিল।",
+      "target": "මෙම පාලම වසර සියයකට පෙර ඉදි කරනු ලැබුවා."
+    },
+    {
+      "source": "গেঞ্জির কাহিনি মুরাসাকি শিকিবু রচনা করেছেন।",
+      "target": "ගෙන්ජි කතාව මුරසකි ෂිකිබු රචනා කළා."
+    },
+    {
+      "source": "এই পণ্য জাপানে তৈরি হয়।",
+      "target": "මෙම නිෂ්පාදනය ජපානයේ සාදනු ලැබේ."
+    },
+    {
+      "source": "ঐতিহাসিক/রচনার agent-এ によって অধিক স্বাভাবিক।",
+      "target": "ඓතිහාසික/රචනා agent එකේ によって වඩා natural."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "එක් බැල්මකින් වෙනස"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "කිනම් තත්ත්වයකදී කුමක්ද?"
+    },
+    {
+      "source": "Agent/বাকি অংশ",
+      "target": "Agent එක/ඉතිරි කොටස"
+    },
+    {
+      "source": "কাজের সরাসরি প্রাপক",
+      "target": "වැඩයේ කෙලින්ම ලබන්නා"
+    },
+    {
+      "source": "ক্ষতিগ্রস্ত ব্যক্তি",
+      "target": "හානියට පත් පුද්ගලයා"
+    },
+    {
+      "source": "Agent に＋নিজের বস্তু を",
+      "target": "Agent එක に＋තමාගේ වස්තුව を"
+    },
+    {
+      "source": "বস্তু/কাজ/ইতিহাস",
+      "target": "වස්තුව/වැඩය/ඉතිහාසය"
+    },
+    {
+      "source": "স্রষ্টা によって বা agent বাদ",
+      "target": "නිර්මාතෘ によって හෝ agent එක අතහැරීම"
+    },
+    {
+      "source": "সক্ষম ব্যক্তি/বস্তু",
+      "target": "හැකි පුද්ගලයා/වස්තුව"
+    },
+    {
+      "source": "Object が; agent নেই",
+      "target": "Object එක が; agent එකක් නැත"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "සැබෑ සංවාදය"
+    },
+    {
+      "source": "হারানো ছাতা",
+      "target": "නැති වූ කුඩය"
+    },
+    {
+      "source": "কী হয়েছে?",
+      "target": "මොකද වුණේ?"
+    },
+    {
+      "source": "স্টেশনে কেউ আমার ছাতা নিয়ে গেছে।",
+      "target": "දුම්රිය ස්ථානයේ කවුරුහරි මගේ කුඩය ගෙන ගියා."
+    },
+    {
+      "source": "খারাপ হয়েছে। বৃষ্টিতেও পড়েননি তো?",
+      "target": "අයහපත් වී ඇත. වැස්සටත් අසු වුණේ නැහැ නේද?"
+    },
+    {
+      "source": "হ্যাঁ। বন্ধু গাড়িতে পৌঁছে দিয়েছে বলে সমস্যা হয়নি।",
+      "target": "ඔව්. මිතුරා මෝටර් රථයෙන් ගෙනැවිත් දුන් නිසා ගැටලුවක් වුණේ නැහැ."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "ඔබම පරීක්ෂා කරන්න"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice සහ පැහැදිලි කිරීම් සහිත පිළිතුරු"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "පළමුව පොතේ පිළිතුර ලියන්න, ඉන්පසු ප්‍රශ්නය ඔබා පිළිතුර සහ හේතුව ගළපා බලන්න."
+    },
+    {
+      "source": "1. 書く-এর passive form বানান।",
+      "target": "1. 書く එකේ passive form එක සාදන්න."
+    },
+    {
+      "source": "2. Active: 先生が私をほめました—passive করুন।",
+      "target": "2. Active: 先生が私をほめました—passive එක කරන්න."
+    },
+    {
+      "source": "3. ‘কুকুর আমার হাতে কামড়েছে’—adversity passive বলুন।",
+      "target": "3. ‘බල්ලා මගේ අත හැපුවා’—adversity passive එක කියන්න."
+    },
+    {
+      "source": "ভুক্তভোগী は, agent に, body part を।",
+      "target": "පීඩිතයා は, agent එක に, body part එක を."
+    },
+    {
+      "source": "4. ‘এই ভবন বিখ্যাত স্থপতি দ্বারা নকশা করা’ বলুন।",
+      "target": "4. ‘මෙම ගොඩනැගිල්ල ප්‍රසිද්ධ ගෘහ නිර්මාණ ශිල්පියෙකු විසින් නිර්මාණය කරන ලදී’ කියන්න."
+    },
+    {
+      "source": "স্রষ্টা/নকশাকারী＋によって＋passive।",
+      "target": "නිර්මාතෘ/නිර්මාණකරු＋によって＋passive එක."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "එක් වාක්‍යයෙන් Master Key"
+    },
+    {
+      "source": "Passive form বানানোর আগে perspective ঠিক করুন: সরাসরি প্রাপক, ক্ষতিগ্রস্ত মালিক, না কাজ/বস্তু? তারপর agent に/によって এবং নিজের বস্তু を বসান।",
+      "target": "Passive form එක සෑදීමට පෙර perspective එක තීරණය කරන්න: කෙලින්ම ලබන්නාද, හානියට පත් අයිතිකරුද, නැතහොත් වැඩය/වස්තුවද? ඉන්පසු agent එක に/によって සහ තමාගේ වස්තුව を යොදන්න."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "විශ්වාසදායක reference"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus සහ සත්‍යාපනය"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "මෙම ස්වාධීන සිංහල lesson එක Minna no Nihongo II එකේ lesson sequence, official JLPT N4 scope සහ Japan Foundation එකේ learner resources ඒකාබද්ධ කර සාදා ඇත. උදාහරණ සහ සිංහල පැහැදිලි කිරීම් අලුතින් රචනා කර ඇත."
+    },
+    {
+      "source": "← আগের Lesson 36",
+      "target": "← පෙර Lesson 36"
+    },
+    {
+      "source": "〜ように：লক্ষ্য, পরিবর্তন ও নিয়মিত চেষ্টা",
+      "target": "〜ように：ඉලක්කය, වෙනස්වීම සහ නිතිපතා උත්සාහය"
+    },
+    {
+      "source": "পরের Lesson 38 →",
+      "target": "ඊළඟ Lesson 38 →"
+    },
+    {
+      "source": "Nominalizer の：কাজকে বিশেষ্য বানানো",
+      "target": "Nominalizer の：වැඩය නාමපදයක් බවට පත් කිරීම"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson දර්ශකය"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "ඉගෙනුම් ඉලක්කය"
+    },
+    {
+      "source": "1. 受け身形ের গঠন",
+      "target": "1. 受け身形 හි ව්‍යුහය"
+    },
+    {
+      "source": "4. বস্তুনিষ্ঠ passive ও Nによって",
+      "target": "4. වෛෂයික passive එක සහ Nによって"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "වෙනස්කම් වගුව"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "සංවාද"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress පූරණය වෙමින්…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "සිසුන් සඳහා නොමිලේ, විස්තරාත්මක සිංහල self-study edition."
+    }
+  ]
+}

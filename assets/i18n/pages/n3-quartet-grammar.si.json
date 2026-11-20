@@ -1,0 +1,146 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n3-quartet-grammar",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "QUARTET I বাংলা · ৫৫ গ্রামার, ৫৫০ উদাহরণ | আপনার নিহোন",
+      "target": "QUARTET I සිංහල · ව්‍යාකරණ 55, උදාහරණ 550 | আপনার নিহোন"
+    },
+    {
+      "source": "পাঠে যান",
+      "target": "පාඩමට යන්න"
+    },
+    {
+      "source": "আপনার নিহোন · N3",
+      "target": "আপনার নিহোন · N3"
+    },
+    {
+      "source": "চার দক্ষতার গাইড",
+      "target": "නිපුණතා හතරේ මාර්ගෝපදේශය"
+    },
+    {
+      "source": "আপনার নিহোন / বাংলা গ্রামার",
+      "target": "আপনার নিহোন / සිංහල ව්‍යාකරණ"
+    },
+    {
+      "source": "বুঝে শিখুন, বাক্যে ব্যবহার করুন।",
+      "target": "වටහාගෙන ඉගෙන ගන්න, වැකියක භාවිතා කරන්න."
+    },
+    {
+      "source": "সহজ বাংলা, ধাপে ধাপে Form আর প্রতিটি নিয়মের ১০টি উদাহরণ। আগে পরিস্থিতি বুঝুন, তারপর বাক্য ভেঙে শিখুন।",
+      "target": "સરળ සිංහල, පියවරෙන් පියවර Form සහ සෑම නීතියකටම උදාහරණ 10 බැගින්. පළමුව තත්වයක් තේරුම් ගන්න, පසුව වැකිය කඩා ඉගෙන ගන්න."
+    },
+    {
+      "source": "বাংলা নোটের আপডেট ·",
+      "target": "සිංහල සටහන් යාවත්කාලීන කිරීම ·"
+    },
+    {
+      "source": "২০ অক্টোবর ২০২৬",
+      "target": "20 ඔක්තෝබර් 2026"
+    },
+    {
+      "source": "৫৫",
+      "target": "55"
+    },
+    {
+      "source": "গ্রামার",
+      "target": "ව්‍යාකරණ"
+    },
+    {
+      "source": "৫৫০",
+      "target": "550"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "උදාහරණ"
+    },
+    {
+      "source": "৬",
+      "target": "6"
+    },
+    {
+      "source": "অধ্যায়",
+      "target": "පාඩම"
+    },
+    {
+      "source": "০ / ৫৫টি শেখা",
+      "target": "0 / 55ක් ඉගෙන ගත්තා"
+    },
+    {
+      "source": "আপনার শেখা ও অনুশীলনের উত্তর এই ব্রাউজারে মনে থাকবে।",
+      "target": "ඔබේ ඉගෙනීමේ සහ අභ්‍යාසවල පිළිතුරු මෙම බ්‍රවුසරයේ සුරැකෙනු ඇත."
+    },
+    {
+      "source": "পাঠগুলো প্রস্তুত হচ্ছে…",
+      "target": "පාඩම් සූදානම් වෙමින් පවතී…"
+    },
+    {
+      "source": "আবার চেষ্টা করুন",
+      "target": "නැවත උත්සාහ කරන්න"
+    },
+    {
+      "source": "সূচি ও গ্রামার খুঁজুন",
+      "target": "අනුචිතය සහ ව්‍යාකරණ සොයන්න"
+    },
+    {
+      "source": "অধ্যায় বেছে নিন",
+      "target": "පාඩම තෝරන්න"
+    },
+    {
+      "source": "কোন নিয়মটি খুঁজছেন?",
+      "target": "ඔබ සොයන නීතිය කුමක්ද?"
+    },
+    {
+      "source": "গ্রামার বেছে নিন",
+      "target": "ව්‍යාකරණ තෝරන්න"
+    },
+    {
+      "source": "চার দক্ষতার স্টাডি সহায়িকা ↗",
+      "target": "නිපුණතා හතරේ අධ්‍යයන සහායකය ↗"
+    },
+    {
+      "source": "সব শেখার রিসোর্স ↗",
+      "target": "සියලුම ඉගෙනුම් සම්පත් ↗"
+    },
+    {
+      "source": "স্বাভাবিক",
+      "target": "ස්වාභාවික"
+    },
+    {
+      "source": "ফুরিগানা",
+      "target": "ෆුරිගානා"
+    },
+    {
+      "source": "ডার্ক মোড",
+      "target": "අඳුරු ප්‍රකාරය"
+    },
+    {
+      "source": "পাঠ",
+      "target": "පාඩම"
+    },
+    {
+      "source": "অনুশীলন",
+      "target": "අභ්‍යාසය"
+    },
+    {
+      "source": "রিভিশন",
+      "target": "පුනරීක්ෂණය"
+    },
+    {
+      "source": "Form বুঝতে অসুবিধা হচ্ছে? এখানে দেখুন",
+      "target": "Form තේරුම් ගැනීමට අපහසුද? මෙහි බලන්න"
+    },
+    {
+      "source": "QUARTET I-এর স্বতন্ত্র বাংলা সহায়ক নোট। মূল বইয়ের ৫৫টি বিষয় ধরে ব্যাখ্যা, উদাহরণ ও অনুশীলন নতুনভাবে লেখা। উপরের তারিখটি আমাদের নোটের আপডেটের; প্রকাশকের নতুন সংস্করণের দাবি নয়।",
+      "target": "QUARTET I හි ස්වාධීන සිංහල සහායක සටහන්. මුල් පොතේ කරුණු 55 ක් ආවරණය කරමින් පැහැදිලි කිරීම්, උදාහරණ සහ අභ්‍යාස අලුතින් ලියා ඇත. ඉහත දිනය අපගේ සටහන් යාවත්කාලීන කළ දිනය වන අතර, ප්‍රකාශකයාගේ නව සංස්කරණයේ හිමිකම් පෑමක් නොවේ."
+    },
+    {
+      "source": "মূল বইয়ের তথ্য ↗",
+      "target": "පොතේ තොරතුරු ↗"
+    }
+  ]
+}

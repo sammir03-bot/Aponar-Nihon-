@@ -1,0 +1,414 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "si",
+  "page": "n4-grammar-lesson-40-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "ප්‍රධාන අන්තර්ගතයට යන්න"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 40 · জটিল বাক্য",
+      "target": "Lesson 40 · සංකීර්ණ වාක්‍යය"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "සියලු Lesson"
+    },
+    {
+      "source": "জটিল বাক্য",
+      "target": "සංකීර්ණ වැකි"
+    },
+    {
+      "source": "ধাপ ৩ · 36–40",
+      "target": "පියවර 3 · 36–40"
+    },
+    {
+      "source": "একটি প্রশ্নকে বড় বাক্যের ভেতর বসানো, yes/no অনিশ্চয়তা প্রকাশ এবং উত্তর জানতে বাস্তবে চেষ্টা করে দেখা।",
+      "target": "ප්‍රශ්නයක් විශාල වාක්‍යයක් තුළ තැබීම, yes/no අවිනිශ්චිතතාව ප්‍රකාශ කිරීම සහ පිළිතුර දැන ගැනීමට ඇත්තටම උත්සාහ කර බැලීම."
+    },
+    {
+      "source": "3টি বিস্তারিত grammar block",
+      "target": "විස්තරාත්මක grammar block 3 ක්"
+    },
+    {
+      "source": "10টি Japanese example",
+      "target": "Japanese example 10 ක්"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "පැහැදිලි කිරීම් සහිත practice 4 ක්"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile සහ print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "あ Reading සඟවන්න"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "තවම සම්පූර්ණ නැහැ"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ සම්පූර්ණ ලෙස සලකුණු කරන්න"
+    },
+    {
+      "source": "Lesson 40 · লক্ষ্য",
+      "target": "Lesson 40 · ඉලක්කය"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "මෙම Lesson එක අවසානයේ ඔබට හැකි දේ"
+    },
+    {
+      "source": "‘স্টেশন কোথায়?’ একটি সরাসরি প্রশ্ন। ‘স্টেশন কোথায় আছে জানেন?’—এখানে প্রশ্নটি বড় বাক্যের object। Japanese embedded question-এ ভেতরের か রেখে বাইরের 知っていますか／調べます／教えてください যোগ হয়; polite ですか সরাসরি বসে না।",
+      "target": "‘දුම්රිය ස්ථානය කොහෙද?’ යනු කෙලින්ම ප්‍රශ්නයකි. ‘දුම්රිය ස්ථානය කොහෙද කියා දන්නවාද?’—මෙහි ප්‍රශ්නය විශාල වාක්‍යයේ object එකයි. Japanese embedded question එකේ ඇතුළත か තබා පිටත 知っていますか／調べます／教えてください එකතු වේ; polite ですか කෙලින්ම නොයෙදේ."
+    },
+    {
+      "source": "疑問詞-সহ প্রশ্নকে plain clause＋か দিয়ে embed করবেন",
+      "target": "疑問詞 එකක් සමඟ ප්‍රශ්නය plain clause එක＋か යොදා embed කිරීමට හැකි වේ"
+    },
+    {
+      "source": "yes/no প্রশ্নে かどうか ব্যবহার করবেন",
+      "target": "yes/no ප්‍රශ්නයේ かどうか භාවිතා කිරීමට හැකි වේ"
+    },
+    {
+      "source": "embedded noun/な-adjective-এর だ বাদ দেওয়ার নিয়ম জানবেন",
+      "target": "embedded noun/な-adjective එකේ だ ඉවත් කිරීමේ නියමය දැන ගැනීමට හැකි වේ"
+    },
+    {
+      "source": "Vてみます দিয়ে ‘চেষ্টা করে দেখে ফল জানা’ বলবেন",
+      "target": "Vてみます යොදා ‘උත්සාහ කර බලා ප්‍රතිඵලය දැන ගැනීම’ කීමට හැකි වේ"
+    },
+    {
+      "source": "কী/কে/কোথায়/কখন—এমন প্রশ্নকে বড় বাক্যের অংশ করা",
+      "target": "මොනවාද/කවුද/කොහෙද/කවදාද—එවැනි ප්‍රශ්නය විශාල වාක්‍යයේ කොටසක් කිරීම"
+    },
+    {
+      "source": "গঠন",
+      "target": "ව්‍යුහය"
+    },
+    {
+      "source": "ধরন",
+      "target": "වර්ගය"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "උදාහරණය"
+    },
+    {
+      "source": "ভেতরের প্রশ্ন",
+      "target": "ඇතුළත ප්‍රශ්නය"
+    },
+    {
+      "source": "জানানো",
+      "target": "දැන්වීම"
+    },
+    {
+      "source": "তদন্ত",
+      "target": "පරීක්ෂණය"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "විස්තරාත්මක පැහැදිලි කිරීම"
+    },
+    {
+      "source": "ভেতরের প্রশ্নের word order সাধারণ Japanese clause-এর মতো; question word নিজের জায়গায় থাকে। どこに駅がありますか → 駅がどこにあるか知っていますか।",
+      "target": "ඇතුළත ප්‍රශ්නයේ word order එක සාමාන්‍ය Japanese clause එකක් මෙන්මය; question word එක තමාගේ ස්ථානයේම පවතී. どこに駅がありますか → 駅がどこにあるか知っていますか."
+    },
+    {
+      "source": "Embedded clause plain style নেয়; どこですか知っていますか ✕। ভেতরের か প্রশ্নের boundary, বাইরের か পুরো বাক্যকে প্রশ্ন করে—তাই শেষে দুই ভিন্ন か আসতে পারে।",
+      "target": "Embedded clause එක plain style එක ගනියි; どこですか知っていますか ✕. ඇතුළත か ප්‍රශ්නයේ boundary එකයි, පිටත か මුළු වාක්‍යයම ප්‍රශ්නයක් කරයි—එබැවින් අවසානයේ වෙනස් か දෙකක් එන්න පුළුවන්."
+    },
+    {
+      "source": "Subordinate subject অনেক সময় が: だれが来るか分かりません。",
+      "target": "Subordinate subject එක බොහෝ විට が: だれが来るか分かりません."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "මතක තබා ගත යුතු දේ"
+    },
+    {
+      "source": "Question word থাকলে かどうか নয়; শুধু か।",
+      "target": "Question word එකක් තිබේ නම් かどうか නොවේ; か පමණයි."
+    },
+    {
+      "source": "পরের ট্রেন কখন আসে জানেন?",
+      "target": "ඊළඟ දුම්රිය කවදා එනවාද කියා දන්නවාද?"
+    },
+    {
+      "source": "এই কানজি কীভাবে পড়ে বলুন।",
+      "target": "මෙම kanji එක කියවන්නේ කෙසේද කියා කියන්න."
+    },
+    {
+      "source": "মিটিংয়ে কে থাকবেন যাচাই করছি।",
+      "target": "රැස්වීමට කවුද සිටිනවාද කියා පරීක්ෂා කරනවා."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ වැරදි"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ නිවැරදි"
+    },
+    {
+      "source": "কেন:",
+      "target": "ඇයි:"
+    },
+    {
+      "source": "Direct polite question-কে plain embedded clause-এ বদলান।",
+      "target": "Direct polite question එක plain embedded clause එකක් බවට වෙනස් කරන්න."
+    },
+    {
+      "source": "হবে কি হবে না / সত্য কি না—yes-no প্রশ্নকে embed করা",
+      "target": "වේවිද නැද්ද / ඇත්තද නැද්ද—yes-no ප්‍රශ්නය embed කිරීම"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "verb/い-A"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-විශේෂණ පද"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "නාම පදය"
+    },
+    {
+      "source": "Original question-এর উত্তর はい/いいえ হলে かどうか: 店が開いていますか → 店が開いているかどうか調べます।",
+      "target": "Original question එකේ පිළිතුර はい/いいえ නම් かどうか: 店が開いていますか → 店が開いているかどうか調べます."
+    },
+    {
+      "source": "Question word থাকলে かどうか ব্যবহার করবেন না: いつ来るか ✓, いつ来るかどうか ✕।",
+      "target": "Question word එකක් තිබේ නම් かどうか භාවිතා නොකරන්න: いつ来るか ✓, いつ来るかどうか ✕."
+    },
+    {
+      "source": "N/な-A present affirmative-এর だ বাদ: 学生かどうか, 必要かどうか। Negative option আলাদা না লিখলেও どうか-তে ‘না কি’ অন্তর্ভুক্ত।",
+      "target": "N/な-A present affirmative එකේ だ ඉවත් කරන්න: 学生かどうか, 必要かどうか. Negative option එක වෙනම නොලියුවත් どうか එකේ ‘නැද්ද’ අන්තර්ගතයි."
+    },
+    {
+      "source": "কখন/কোথায়/কে → か; হ্যাঁ কি না → かどうか।",
+      "target": "කවදාද/කොහෙද/කවුද → か; ඔව්ද නැද්ද → かどうか."
+    },
+    {
+      "source": "এই বাস স্টেশনে যায় কি না চালককে জিজ্ঞেস করব।",
+      "target": "මෙම බස් එක දුම්රිය ස්ථානයට යනවාද නැද්ද රියදුරුගෙන් අසනවා."
+    },
+    {
+      "source": "কথাটি সত্য কি না জানি না।",
+      "target": "කතාව ඇත්තද නැද්ද නොදනී."
+    },
+    {
+      "source": "ওষুধটি নিরাপদ কি না যাচাই করুন।",
+      "target": "බෙහෙත ආරක්ෂිතද නැද්ද පරීක්ෂා කරන්න."
+    },
+    {
+      "source": "Noun-এর だ বাদ।",
+      "target": "Noun එකේ だ ඉවත් කිරීම."
+    },
+    {
+      "source": "ফল কী হয় জানতে বাস্তবে চেষ্টা করে দেখা",
+      "target": "ප්‍රතිඵලය කුමක්දැයි දැන ගැනීමට ඇත්තටම උත්සාහ කර බැලීම"
+    },
+    {
+      "source": "চেষ্টা",
+      "target": "උත්සාහය"
+    },
+    {
+      "source": "ইচ্ছা",
+      "target": "අභිප්‍රාය"
+    },
+    {
+      "source": "পরামর্শ",
+      "target": "උපදෙස්"
+    },
+    {
+      "source": "অতীত",
+      "target": "අතීතය"
+    },
+    {
+      "source": "এখানে みる ‘দেখা’ নয়; auxiliary হয়ে ‘try doing’। তাই objectকে 見る নয়, আগের verb-এর て-form: この料理を食べてみます।",
+      "target": "මෙහි みる යනු ‘බැලීම’ නොවේ; auxiliary එක වී ‘try doing’ යන්නයි. එබැවින් object එක 見る නොව, පෙර verb එකේ て-form එකයි: この料理を食べてみます."
+    },
+    {
+      "source": "অজানা ফল/অভিজ্ঞতা যাচাই করতে ব্যবহার হয়। প্রতিদিনের নিশ্চিত কাজ ‘চেষ্টা’ নয়: 毎朝歯を磨いてみます অস্বাভাবিক, যদি নতুন পদ্ধতি পরীক্ষা না হয়।",
+      "target": "නොදන්නා ප්‍රතිඵලය/අත්දැකීම පරීක්ෂා කිරීමට භාවිතා වේ. සෑම දිනම නිශ්චිත වැඩය ‘උත්සාහය’ නොවේ: 毎朝歯を磨いてみます අසාමාන්‍යයි, නව ක්‍රමයක් පරීක්ෂා නොකරන්නේ නම්."
+    },
+    {
+      "source": "Vようとする (চেষ্টা করা/ঠিক মুহূর্ত) উচ্চতর ভিন্ন pattern; N4-এ てみるকে experiential try হিসেবে ধরুন।",
+      "target": "Vようとする (උත්සාහ කිරීම/හරියටම මොහොත) යනු ඉහළ වෙනත් pattern එකකි; N4 එකේ てみる experiential try එකක් ලෙස ගන්න."
+    },
+    {
+      "source": "見る kanji সাধারণত auxiliary てみる-তে kana-তে লেখা হয়, তবে দুটোই দেখা যায়।",
+      "target": "見る kanji එක සාමාන්‍යයෙන් auxiliary てみる එකේ kana වලින් ලියනු ලැබේ, නමුත් දෙකම දැකිය හැකිය."
+    },
+    {
+      "source": "খাবারটি সুস্বাদু মনে হচ্ছে। খেয়ে দেখি।",
+      "target": "ආහාරය රසවත් බව පෙනේ. කා බලනවා."
+    },
+    {
+      "source": "বুঝিনি বলে শিক্ষককে জিজ্ঞেস করে দেখেছি।",
+      "target": "නොතේරුණු නිසා ගුරුවරයාගෙන් අසා බැලුවා."
+    },
+    {
+      "source": "অ্যাপটি ব্যবহার করে দেখুন।",
+      "target": "app එක භාවිතා කර බලන්න."
+    },
+    {
+      "source": "জাপানে গেলে কিমোনো পরে দেখতে চাই।",
+      "target": "ජපානයට ගියොත් කිමෝනෝව ඇඳ බලන්නට අවශ්‍යයි."
+    },
+    {
+      "source": "মূল verb-এর て-form＋みます।",
+      "target": "ප්‍රධාන verb එකේ て-form එක＋みます."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "එක් බැල්මකින් වෙනස"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "කිනම් තත්ත්වයකදී කුමක්ද?"
+    },
+    {
+      "source": "মূল প্রশ্ন",
+      "target": "ප්‍රධාන ප්‍රශ්නය"
+    },
+    {
+      "source": "Embedded রূপ",
+      "target": "Embedded රූපය"
+    },
+    {
+      "source": "ব্যবহার",
+      "target": "භාවිතය"
+    },
+    {
+      "source": "な-A-এর だ বাদ",
+      "target": "な-A එකේ だ ඉවත් කිරීම"
+    },
+    {
+      "source": "বাস্তবে চেষ্টা করে দেখা",
+      "target": "ඇත්තටම උත්සාහ කර බැලීම"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "සැබෑ සංවාදය"
+    },
+    {
+      "source": "নতুন রেস্তোরাঁ যাচাই",
+      "target": "නව අවන්හල පරීක්ෂා කිරීම"
+    },
+    {
+      "source": "স্টেশনের সামনে নতুন দোকান হয়েছে।",
+      "target": "දුම්රිය ස්ථානය ඉදිරිපිට නව සාප්පුවක් ඇති වී ඇත."
+    },
+    {
+      "source": "হ্যাঁ। কতটা পর্যন্ত খোলা জানেন?",
+      "target": "ඔව්. කීයටද විවෘතව ඇත්තේ කියා දන්නවාද?"
+    },
+    {
+      "source": "না। বুকিং দরকার কি না তাও জানি না।",
+      "target": "නැහැ. booking එකක් අවශ්‍යද නැද්ද කියාත් නොදනී."
+    },
+    {
+      "source": "তাহলে ফোন করে জিজ্ঞেস করে দেখি।",
+      "target": "එහෙනම් දුරකථනයෙන් අමතා අසා බලනවා."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "ඔබම පරීක්ෂා කරන්න"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice සහ පැහැදිලි කිරීම් සහිත පිළිතුරු"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "පළමුව පොතේ පිළිතුර ලියන්න, ඉන්පසු ප්‍රශ්නය ඔබා පිළිතුර සහ හේතුව ගළපා බලන්න."
+    },
+    {
+      "source": "1. Direct: どこで買いましたか—‘কোথায় কিনেছে জানি না’ করুন।",
+      "target": "1. Direct: どこで買いましたか—‘කොහෙන් මිලදී ගත්තාද කියා නොදනී’ කරන්න."
+    },
+    {
+      "source": "2. ‘কাল বৃষ্টি হবে কি না পরীক্ষা/চেক করি’ বলুন।",
+      "target": "2. ‘හෙට වැස්සේද නැද්ද පරීක්ෂා කරනවා’ කියන්න."
+    },
+    {
+      "source": "3. ‘এই শব্দের অর্থ কী বলুন’—embedded question করুন।",
+      "target": "3. ‘මෙම වචනයේ තේරුම කුමක්ද කියා කියන්න’—embedded question එකක් කරන්න."
+    },
+    {
+      "source": "4. ‘জাপানি খাবার বানিয়ে দেখতে চাই’ বলুন।",
+      "target": "4. ‘ජපන් ආහාර සාදා බලන්නට අවශ්‍යයි’ කියන්න."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "එක් වාක්‍යයෙන් Master Key"
+    },
+    {
+      "source": "Question word থাকলে plain＋か; yes/no হলে plain＋かどうか; উত্তর শুধু মাথায় নয়, কাজ করে যাচাই করলে Vてみます।",
+      "target": "Question word එකක් තිබේ නම් plain එක＋か; yes/no නම් plain එක＋かどうか; පිළිතුර සිතේ පමණක් නොව, වැඩය කර පරීක්ෂා කරන්නේ නම් Vてみます."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "විශ්වාසදායක reference"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus සහ සත්‍යාපනය"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "මෙම ස්වාධීන සිංහල lesson එක Minna no Nihongo II එකේ lesson sequence, official JLPT N4 scope සහ Japan Foundation එකේ learner resources ඒකාබද්ධ කර සාදා ඇත. උදාහරණ සහ සිංහල පැහැදිලි කිරීම් අලුතින් රචනා කර ඇත."
+    },
+    {
+      "source": "← আগের Lesson 39",
+      "target": "← පෙර Lesson 39"
+    },
+    {
+      "source": "পরের Lesson 41 →",
+      "target": "ඊළඟ Lesson 41 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson දර්ශකය"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "ඉගෙනුම් ඉලක්කය"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "වෙනස්කම් වගුව"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "සංවාද"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress පූරණය වෙමින්…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "සිසුන් සඳහා නොමිලේ, විස්තරාත්මක සිංහල self-study edition."
+    }
+  ]
+}
