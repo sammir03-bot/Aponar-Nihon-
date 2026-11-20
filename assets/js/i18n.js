@@ -494,7 +494,14 @@
     mountProfileLanguageSelect(storedLanguage() || currentLanguage);
     if (currentLanguage !== DEFAULT_LANGUAGE) translateAnnotated(document);
     if (currentLanguage !== DEFAULT_LANGUAGE || languageFromPath()) {
-      window.setTimeout(function () { navigateToLanguage(currentLanguage, true); }, 0);
+      // Redirect synchronously, not via setTimeout: this handler was
+      // registered before i18n-content.js's startRuntime handler, so
+      // initiating the navigation here means the move to the reviewed
+      // static version begins before the runtime translator can start
+      // an in-place pass on this master page (Run 13). When there is
+      // no static version, navigateToLanguage returns false and the
+      // runtime fallback proceeds exactly as before.
+      navigateToLanguage(currentLanguage, true);
     }
     window.setTimeout(syncProfileLanguage, 500);
     window.setTimeout(syncProfileLanguage, 1600);

@@ -3,8 +3,8 @@
 
   if (!window.AponarI18n) return;
 
-  var RUNTIME_VERSION = "20260909.4";
-  var CACHE_VERSION = "20260909.4";
+  var RUNTIME_VERSION = "20261121.1";
+  var CACHE_VERSION = "20261121.1";
   var API_PATH = "/api/i18n/translate";
   var CACHE_NAME = "aponar-nihon-i18n-" + CACHE_VERSION;
   // Retained for compatibility with existing checks/callers. The runtime no
@@ -74,6 +74,32 @@
     return first && first !== "bn" && window.AponarI18n.languages[first] ? first : "";
   }
   var staticLocalized = staticRouteLanguage() !== "";
+
+  // Master (Bengali) page, but the visitor's current language has a
+  // reviewed static version (the hreflang alternate i18n.js redirects
+  // to on load): the runtime must not start an in-place translation
+  // pass that races the redirect — Bengali visible first, chunks
+  // swapping seconds later, layout jumping (Run 13). Pages without an
+  // alternate for the language keep the runtime fallback unchanged,
+  // and Bengali visitors are never affected.
+  function normalizedRoutePath(pathname) {
+    var path = pathname || "/";
+    path = path.replace(/\/index\.html$/i, "/").replace(/\.html$/i, "");
+    if (path.length > 1) path = path.replace(/\/+$/, "");
+    return path || "/";
+  }
+  function staticRedirectPending() {
+    if (staticLocalized) return false;
+    var language = window.AponarI18n.getLanguage();
+    if (!language || language === "bn") return false;
+    if (typeof window.AponarI18n.localizedPath !== "function") return false;
+    var target = window.AponarI18n.localizedPath(language);
+    if (!target) return false;
+    try {
+      var targetPath = new URL(target, window.location.href).pathname;
+      return normalizedRoutePath(targetPath) !== normalizedRoutePath(window.location.pathname);
+    } catch (_error) { return false; }
+  }
 
   function pageKey() {
     var path = window.location.pathname || "/";
@@ -632,7 +658,7 @@
     });
   }
 
-  if (!staticLocalized && window.AponarI18n.getLanguage() !== "bn") captureOriginals(document.documentElement);
+  if (!staticLocalized && !staticRedirectPending() && window.AponarI18n.getLanguage() !== "bn") captureOriginals(document.documentElement);
   window.AponarI18nContent = {
     pageKey: pageKey, reload: function () { return sync(true); }, restore: restoreCaptured, translateText: translateText,
     alert: function (message) { return localizedDialog(message, false); }, confirm: function (message) { return localizedDialog(message, true); },
@@ -641,6 +667,14 @@
   window.alert = function (message) { window.AponarI18nContent.alert(message); };
 
   function startRuntime(blocking) {
+    if (staticRedirectPending()) {
+      // i18n.js is redirecting this master page to its reviewed
+      // static version; stay out of the way — no capture, no
+      // observer, no sync, no toast.
+      document.documentElement.dataset.i18nReady = "true";
+      hideStatus();
+      return;
+    }
     if (staticLocalized) {
       // Static localized page: open ready, exactly as the builder
       // rendered it. No capture, no observer, no sync, no toast.

@@ -13,7 +13,7 @@ self.addEventListener = function(type, listener, options){
   return __anNativeAddEventListener(type, listener, options);
 };
 
-importScripts('/sw-base-v27.js');
+importScripts('/sw-base-v28.js');
 self.addEventListener = __anNativeAddEventListener;
 
 const __AN_N3_CSS = '<link rel="stylesheet" href="/n3-vocabulary-all.css?v=5">';
