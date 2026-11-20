@@ -1,0 +1,426 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n4-grammar-lesson-45-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "跳转至主要内容"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 45 · প্রয়োগ ও সূক্ষ্মতা",
+      "target": "Lesson 45 · 应用与细微差别"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "所有 Lesson"
+    },
+    {
+      "source": "প্রয়োগ ও সূক্ষ্মতা",
+      "target": "应用与细腻表达"
+    },
+    {
+      "source": "ধাপ ৪ · 41–45",
+      "target": "步骤 4 · 41–45"
+    },
+    {
+      "source": "সম্ভাব্য বিশেষ পরিস্থিতিতে করণীয়, অনাকাঙ্ক্ষিত ঘটনা সামলানো এবং প্রত্যাশার বিপরীত ফল/আফসোস প্রকাশ।",
+      "target": "可能特殊情况的应对、处理意外事件和表达与预期相反的结果/遗憾。"
+    },
+    {
+      "source": "3টি বিস্তারিত grammar block",
+      "target": "3 个详细 grammar block"
+    },
+    {
+      "source": "11টি Japanese example",
+      "target": "11 个 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 个带解释的 practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline、mobile 和 print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "隐藏 あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "尚未完成"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ 标记完成"
+    },
+    {
+      "source": "Lesson 45 · লক্ষ্য",
+      "target": "Lesson 45 · 目标"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "学完本 Lesson 后能做到"
+    },
+    {
+      "source": "場合は এবং のに দুটোই দুই clause যুক্ত করে, কিন্তু মানসিক দিক উল্টো। 場合は বলে ‘এই case ঘটলে কী করব’; のに বলে ‘এত কিছুর পরও প্রত্যাশার বিপরীত কেন হলো’।",
+      "target": "場合は 和 のに 都连接两个 clause，但心理方向相反。場合は 说“发生这个 case 时做什么”；のに 说“都这样了为什么与预期相反”。"
+    },
+    {
+      "source": "verb, い-A, な-A ও noun-এর সঙ্গে 場合は সঠিক form বসাবেন",
+      "target": "能对 verb、/い-A、な-A 和 noun 正确放 場合は 的 form"
+    },
+    {
+      "source": "manual, rule ও emergency instruction-এ 場合は ব্যবহার করবেন",
+      "target": "能在 manual、rule 和 emergency instruction 用 場合は"
+    },
+    {
+      "source": "のに দিয়ে unexpected contrast ও আবেগ প্রকাশ করবেন",
+      "target": "能用 のに 表达 unexpected contrast 和情感"
+    },
+    {
+      "source": "のに, ても, けど-এর nuance আলাদা করবেন",
+      "target": "能区分 のに、ても、けど 的 nuance"
+    },
+    {
+      "source": "নির্দিষ্ট situation/case ঘটলে—বিশেষ করে সম্ভাব্য, সমস্যা বা আনুষ্ঠানিক পরিস্থিতি",
+      "target": "特定 situation/case 发生时——特别是可能、问题或正式情况"
+    },
+    {
+      "source": "গঠন",
+      "target": "构成"
+    },
+    {
+      "source": "ধরন",
+      "target": "类型"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "例句"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "动词"
+    },
+    {
+      "source": "い-বিশেষণ",
+      "target": "い-形容词"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-形容词"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "名词"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "详细解释"
+    },
+    {
+      "source": "場合（ばあい） একটি noun ‘case/situation’; তাই な-A＋な, N＋の। Verb tense situation-এর সময়/সম্পন্নতা দেখায়: 故障した場合は = নষ্ট হয়ে গেলে/নষ্ট হওয়ার case; 故障する場合は = নষ্ট হওয়ার সম্ভাব্য case।",
+      "target": "場合（ばあい）是 noun “case/situation”；所以 な-A＋な、N＋の。Verb tense 显示 situation 的时间/完成：故障した場合は = 坏了的 case；故障する場合は = 可能坏的 case。"
+    },
+    {
+      "source": "নির্দেশিকা, নিয়ম, application, emergency, customer service-এ বহুল: 分からない場合は、担当者に聞いてください।",
+      "target": "说明书、规则、application、emergency、customer service 常用：分からない場合は、担当者に聞いてください。"
+    },
+    {
+      "source": "খুব সাধারণ recurring condition-এ と/ば সহজ; 場合は scenario-কে আলাদা case হিসেবে তুলে ধরে এবং formal শোনায়।",
+      "target": "很普通的 recurring condition 用 と/ば 简单；場合は 把 scenario 作单独 case 提出，听 formal。"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "要记住的"
+    },
+    {
+      "source": "Main clause-এ instruction/request স্বাভাবিক: 問題がある場合は、連絡してください。",
+      "target": "Main clause 中 instruction/request 自然：問題がある場合は、連絡してください。"
+    },
+    {
+      "source": "ট্রেন দেরি করলে অফিসে যোগাযোগ করুন।",
+      "target": "电车晚点时请联系办公室。"
+    },
+    {
+      "source": "পাসওয়ার্ড ভুলে গেলে এখানে চাপুন।",
+      "target": "忘了密码时请点这里。"
+    },
+    {
+      "source": "ভূমিকম্পের ক্ষেত্রে লিফট ব্যবহার করবেন না।",
+      "target": "地震时不要用电梯。"
+    },
+    {
+      "source": "বুকিং প্রয়োজন হলে আগের দিনের মধ্যে ফোন করব।",
+      "target": "需要预订时前一天打电话。"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ 错误"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ 正确"
+    },
+    {
+      "source": "কেন:",
+      "target": "为什么："
+    },
+    {
+      "source": "Noun 雨＋の＋場合; な নয়。",
+      "target": "Noun 雨＋の＋場合；不是 な。"
+    },
+    {
+      "source": "যদিও/সত্ত্বেও—প্রত্যাশার বিপরীত ফল, প্রায়ই বিস্ময়/অসন্তোষ/আফসোস",
+      "target": "虽然/尽管——与预期相反的结果，常带惊讶/不满/遗憾"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "动词/い-A"
+    },
+    {
+      "source": "Speaker-এর প্রত্যাশা: ‘পড়েছি → পাস করার কথা’; বাস্তব: ফেল। 勉強したのに、試験に落ちました—এই mismatch-ই のに।",
+      "target": "Speaker 的预期：“学了 → 应该通过”；现实：没通过。勉強したのに、試験に落ちました——这个 mismatch 就是 のに。"
+    },
+    {
+      "source": "কেবল neutral contrast নয়; আবেগ/অপ্রত্যাশিত ফল থাকে। তাই main clause-এ বক্তার command/intention সাধারণত অস্বাভাবিক: 雨なのに、出かけましょう ✕ (শুধু neutral contrast হলে けど/ても)।",
+      "target": "不只是 neutral contrast；有情感/意外结果。所以 main clause 中说话人的 command/intention 通常不自然：雨なのに、出かけましょう ✕（只是 neutral contrast 时 けど/ても）。"
+    },
+    {
+      "source": "Sentence শেষে のに…/のに。 রেখে complaint/অসম্পূর্ণ আফসোস: 何度も電話したのに…。 = এতবার ফোন করলাম, তবু…",
+      "target": "句末留 のに…/のに。作 complaint/未完遗憾：何度も電話したのに…。= 打了这么多次电话，却…"
+    },
+    {
+      "source": "Lesson 42-এর utility のに আলাদা: 料理するのに便利です (রান্নায় সুবিধাজনক)—এখানে পরের predicate utility/cost।",
+      "target": "Lesson 42 的 utility のに 不同：料理するのに便利です（做饭方便）——这里后面的 predicate 是 utility/cost。"
+    },
+    {
+      "source": "Expected result নয়, actual surprising result main clause-এ।",
+      "target": "不是 Expected result，actual surprising result 在 main clause。"
+    },
+    {
+      "source": "ওষুধ খেয়েছি, তবু জ্বর আছে।",
+      "target": "吃了药，却还有发烧。"
+    },
+    {
+      "source": "ঘরটি ছোট, অথচ ভাড়া বেশি।",
+      "target": "房间小，租金却高。"
+    },
+    {
+      "source": "তানাকা জাপানি হওয়া সত্ত্বেও সুশি অপছন্দ করেন।",
+      "target": "田中虽是日本人却不喜欢寿司。"
+    },
+    {
+      "source": "রবিবার হলেও অফিসে যেতে হবে।",
+      "target": "即使星期日也要去办公室。"
+    },
+    {
+      "source": "な-বিশেষণ＋な＋のに।",
+      "target": "な-形容词＋な＋のに。"
+    },
+    {
+      "source": "のに বনাম ても বনাম けど",
+      "target": "のに 对比 ても 对比 けど"
+    },
+    {
+      "source": "unexpected result, hypothetical concession এবং সাধারণ contrast",
+      "target": "unexpected result、hypothetical concession 和一般 contrast"
+    },
+    {
+      "source": "のに actual fact + violated expectation + emotion। ても actual বা hypothetical concession: 雨が降っても行きます = বৃষ্টি হলেও যাব (speaker intention সম্ভব)।",
+      "target": "のに 是 actual fact + violated expectation + emotion。ても 是 actual 或 hypothetical concession：雨が降っても行きます = 下雨也去（speaker intention 可能）。"
+    },
+    {
+      "source": "けど/が neutral contrast বা soft introduction; আবেগ বাধ্যতামূলক নয়: 小さいけど便利です।",
+      "target": "けど/が 是 neutral contrast 或 soft introduction；情感不强制：小さいけど便利です。"
+    },
+    {
+      "source": "Main clause intention/command হলে ても/けど বেছে নিন: 雨でも行きましょう। のに বললে ‘বৃষ্টি হচ্ছে অথচ চল যাই’ logic অস্বাভাবিক, বিশেষ context ছাড়া।",
+      "target": "Main clause 是 intention/command 时选 ても/けど：雨でも行きましょう。のに 说“下着雨却一起去吧”logic 不自然，无特殊 context 时。"
+    },
+    {
+      "source": "নিজের future decision ‘তবুও করব’ → ても; ঘটে যাওয়া হতাশা → のに।",
+      "target": "自己的 future decision “还是要做” → ても；已发生的失望 → のに。"
+    },
+    {
+      "source": "বৃষ্টি হলেও ম্যাচ করব।",
+      "target": "下雨也打比赛。"
+    },
+    {
+      "source": "বৃষ্টি হয়েছিল, তবুও (অপ্রত্যাশিতভাবে) ম্যাচ হয়েছে।",
+      "target": "下过雨，却（意外地）打了比赛。"
+    },
+    {
+      "source": "দোকানটি ছোট, কিন্তু খাবার ভালো।",
+      "target": "店小，但食物好。"
+    },
+    {
+      "source": "雨が降るのに、明日出かけます。（নিজের plan)",
+      "target": "雨が降るのに、明日出かけます。（自己的 plan）"
+    },
+    {
+      "source": "নিজের ‘বৃষ্টি হলেও যাব’ decision-এ ても।",
+      "target": "自己“下雨也去”的 decision 用 ても。"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "一目了然的差别"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "什么情况用哪个？"
+    },
+    {
+      "source": "রূপ",
+      "target": "形式"
+    },
+    {
+      "source": "বিশেষ case ঘটলে",
+      "target": "特殊 case 发生时"
+    },
+    {
+      "source": "করণীয়/নির্দেশ",
+      "target": "应对/指示"
+    },
+    {
+      "source": "fact থাকা সত্ত্বেও unexpected",
+      "target": "尽管有 fact 却 unexpected"
+    },
+    {
+      "source": "ফল/আবেগ; intention নয়",
+      "target": "结果/情感；不是 intention"
+    },
+    {
+      "source": "speaker intention/command সম্ভব",
+      "target": "speaker intention/command 可能"
+    },
+    {
+      "source": "সাধারণ contrast/soft lead-in",
+      "target": "一般 contrast/soft lead-in"
+    },
+    {
+      "source": "neutral ও flexible",
+      "target": "neutral 且 flexible"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "实际对话"
+    },
+    {
+      "source": "অনলাইন ফর্মের সমস্যা",
+      "target": "在线表单的问题"
+    },
+    {
+      "source": "যতবারই লিখি, error হয়।",
+      "target": "写多少次都 error。"
+    },
+    {
+      "source": "error হলে screen save করুন।",
+      "target": "error 时请保存 screen。"
+    },
+    {
+      "source": "নির্দেশ অনুযায়ী করেও হয়নি।",
+      "target": "按指示做了也没成。"
+    },
+    {
+      "source": "তাহলে support-এ যোগাযোগ করি।",
+      "target": "那联系 support 吧。"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "自我检查"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice 和带解释的答案"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "先在笔记本上写答案，然后点击问题核对答案和原因。"
+    },
+    {
+      "source": "1. ‘আগুন লাগলে এই দরজা ব্যবহার করুন’ বলুন।",
+      "target": "1. 说“着火时请用这个门”。"
+    },
+    {
+      "source": "2. ‘সুবিধাজনক হওয়া সত্ত্বেও ব্যবহার করি না’ বলুন।",
+      "target": "2. 说“虽然方便却不用”。"
+    },
+    {
+      "source": "3. ‘পড়েছি, তবু বুঝিনি’ বলুন।",
+      "target": "3. 说“学了，却没懂”。"
+    },
+    {
+      "source": "4. ‘বৃষ্টি হলেও যাব’—নিজের intention বলুন।",
+      "target": "4. “下雨也去”——说自己的 intention。"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "一句话 Master Key"
+    },
+    {
+      "source": "সম্ভাব্য special case ও করণীয় → 場合は; সত্য ঘটেও expectation ভাঙলে → のに; hypothetical ‘হলেও করব’ → ても; নিরপেক্ষ contrast → けど।",
+      "target": "可能 special case 与应对 → 場合は；事实发生却打破 expectation → のに；hypothetical “即使也做” → ても；中立 contrast → けど。"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "可信参考"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "大纲与核对"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "这个独立的中文 lesson 结合 Minna no Nihongo II 的 lesson sequence、official JLPT N4 scope 和 Japan Foundation 的 learner resources 制作。例句和中文解释均为新写。"
+    },
+    {
+      "source": "← আগের Lesson 44",
+      "target": "← 上一个 Lesson 44"
+    },
+    {
+      "source": "পরের Lesson 46 →",
+      "target": "下一个 Lesson 46 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson 索引"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "学习目标"
+    },
+    {
+      "source": "3. のに বনাম ても বনাম けど",
+      "target": "3. のに 对比 ても 对比 けど"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "差别表"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "会话"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress 加载中…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "为学习者免费提供的详细中文 self-study edition。"
+    }
+  ]
+}

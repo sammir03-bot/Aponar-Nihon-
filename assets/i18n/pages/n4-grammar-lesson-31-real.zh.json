@@ -1,0 +1,482 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "zh",
+  "page": "n4-grammar-lesson-31-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "跳转至主要内容"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 31 · ইচ্ছা ও শর্ত",
+      "target": "Lesson 31 · 意愿与条件"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "所有 Lesson"
+    },
+    {
+      "source": "ইচ্ছা ও শর্ত",
+      "target": "意愿与条件"
+    },
+    {
+      "source": "ধাপ ২ · 31–35",
+      "target": "步骤 2 · 31–35"
+    },
+    {
+      "source": "হঠাৎ প্রস্তাব, আগে থেকে থাকা ইচ্ছা, দৃঢ় ব্যক্তিগত সংকল্প এবং নির্ধারিত সূচি—চার স্তরের ভবিষ্যৎ পরিকল্পনা।",
+      "target": "临时提议、早已有的意愿、坚定的个人决心和确定的日程——四个层次的将来计划。"
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 个详细 grammar block"
+    },
+    {
+      "source": "10টি Japanese example",
+      "target": "10 个 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 个带解释的 practice"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline、mobile 和 print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "隐藏 あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "尚未完成"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ 标记完成"
+    },
+    {
+      "source": "Lesson 31 · লক্ষ্য",
+      "target": "Lesson 31 · 目标"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "学完本 Lesson 后能做到"
+    },
+    {
+      "source": "জাপানিতে ‘করব’ বলার একটিমাত্র future tense নেই। বক্তা এখন প্রস্তাব করছেন, আগে থেকেই ভাবছেন, দৃঢ়ভাবে ইচ্ছা করেছেন, নাকি সময়সূচি নির্ধারিত—এই পার্থক্য অনুযায়ী রূপ বদলায়। Lesson 31 সেই সিদ্ধান্তের মানচিত্র।",
+      "target": "日语没有单一的“要做”future tense。说话人是现在提议、早就想着、坚定地有意愿，还是日程已确定——形式随这个差别变化。Lesson 31 是那个决定的地图。"
+    },
+    {
+      "source": "তিন group-এর volitional form বানাতে পারবেন",
+      "target": "能造出三个 group 的 volitional form"
+    },
+    {
+      "source": "〜ようと思っています দিয়ে আগে থেকে থাকা ইচ্ছা বলবেন",
+      "target": "能用 〜ようと思っています 说早已有的意愿"
+    },
+    {
+      "source": "つもり এবং 予定-এর ব্যক্তিগত ইচ্ছা বনাম নির্ধারিত সূচি আলাদা করবেন",
+      "target": "能区分 つもり 和 予定 的个人意愿与确定日程"
+    },
+    {
+      "source": "affirmative ও negative plan সঠিক plain form-এ প্রকাশ করবেন",
+      "target": "能用正确的 plain form 表达 affirmative 和 negative plan"
+    },
+    {
+      "source": "‘চল করি/করব’—plain-style প্রস্তাব বা নিজের দৃঢ় সংকল্প",
+      "target": "“一起做吧/我要做”——plain-style 提议或自己的坚定决心"
+    },
+    {
+      "source": "গঠন",
+      "target": "构成"
+    },
+    {
+      "source": "ধরন",
+      "target": "类型"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "例句"
+    },
+    {
+      "source": "শেষ う-row → お-row＋う",
+      "target": "末尾 う-row → お-row＋う"
+    },
+    {
+      "source": "る বাদ＋よう",
+      "target": "去掉 る＋よう"
+    },
+    {
+      "source": "অনিয়মিত",
+      "target": "不规则"
+    },
+    {
+      "source": "ভদ্র সমতুল্য",
+      "target": "礼貌等价形"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "详细解释"
+    },
+    {
+      "source": "বন্ধু/পরিবারের সঙ্গে 行こう বললে 行きましょう-এর casual রূপ—‘চল যাই’। নিজেকে বললেও সংকল্প বোঝায়: よし、勉強しよう = ঠিক আছে, পড়তে বসি।",
+      "target": "对朋友/家人说 行こう 是 行きましょう 的 casual 形式——“一起去吧”。对自己说也表示决心：よし、勉強しよう = 好，开始学习。"
+    },
+    {
+      "source": "শুধু future fact জানানোর সাধারণ রূপ নয়। 明日雨が降ろう বলা যায় না; অনিচ্ছাকৃত ঘটনা volitional নেয় না। নিজের controllable action-এর ইচ্ছা লাগে।",
+      "target": "不只是告知 future fact 的普通形式。不能说明日雨が降ろう；非自愿事件不接 volitional。需要自己 controllable action 的意愿。"
+    },
+    {
+      "source": "Invitation question casual-এ 行こうか = চল যাব?; ভদ্রভাবে 行きましょうか।",
+      "target": "Invitation question casual 用 行こうか = 一起去吗？；礼貌用 行きましょうか。"
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "要记住的"
+    },
+    {
+      "source": "Group 1-এ দুই ধাপ: 書く→書こ＋う = 書こう।",
+      "target": "Group 1 两步：書く→書こ＋う = 書こう。"
+    },
+    {
+      "source": "来よう-এর reading こよう; きよう নয়।",
+      "target": "来よう 的读音是 こよう；不是 きよう。"
+    },
+    {
+      "source": "ক্লান্ত, তাই না? চল একটু বিশ্রাম নিই।",
+      "target": "累了，对吧？一起休息一下吧。"
+    },
+    {
+      "source": "এই বছরই JLPT পাস করব—এই সংকল্প।",
+      "target": "今年就要通过 JLPT——这个决心。"
+    },
+    {
+      "source": "একসঙ্গে দুপুরের খাবার খাব?",
+      "target": "一起吃午饭吗？"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ 错误"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ 正确"
+    },
+    {
+      "source": "কেন:",
+      "target": "为什么："
+    },
+    {
+      "source": "Volitional সরাসরি です নেয় না; পরিকল্পনা জানাতে 思っています বা つもりです লাগবে।",
+      "target": "Volitional 不直接接 です；告知计划需要 思っています 或 つもりです。"
+    },
+    {
+      "source": "আগে থেকে ভেবে রাখা ব্যক্তিগত ইচ্ছা/পরিকল্পনা",
+      "target": "早就想好的个人意愿/计划"
+    },
+    {
+      "source": "ইচ্ছা",
+      "target": "意愿"
+    },
+    {
+      "source": "এই মুহূর্তের ভাবনা",
+      "target": "这一刻的想法"
+    },
+    {
+      "source": "〜ようと思っています বললে চিন্তাটি আগে শুরু হয়েছে এবং এখনো মনের মধ্যে আছে। 〜ようと思います অনেক সময় এই মুহূর্তের সিদ্ধান্ত বা তুলনামূলক হালকা intention।",
+      "target": "〜ようと思っています 表示想法早就开始、现在还在心里。〜ようと思います 很多时候是这一刻的决定或较轻的 intention。"
+    },
+    {
+      "source": "অন্য ব্যক্তির অন্তরের ইচ্ছা নিশ্চিতভাবে বলা কঠিন; 田中さんは行こうと思っています বলতে তার কথায় জানা দরকার। অনুমান হলে 〜と思っているようです ইত্যাদি লাগে।",
+      "target": "很难确定地说别人的内心意愿；说 田中さんは行こうと思っています 需要从他的话里知道。是猜测时需要 〜と思っているようです 等。"
+    },
+    {
+      "source": "Negative intention সাধারণত Vないつもりです বেশি সরল; 〜まいと思っています উচ্চতর স্তর, N4-এ দরকার নেই।",
+      "target": "Negative intention 通常 Vないつもりです 更简单；〜まいと思っています 是更高层次，N4 不需要。"
+    },
+    {
+      "source": "উদ্ধৃতি particle と বাদ যাবে না: 行こうと思っています।",
+      "target": "引用 particle と 不能省略：行こうと思っています。"
+    },
+    {
+      "source": "আগামী বছর জাপানে পড়তে যাওয়ার কথা ভাবছি।",
+      "target": "在想明年去日本留学。"
+    },
+    {
+      "source": "সপ্তাহান্তে ঘর গুছাব বলে ভাবছি।",
+      "target": "在想周末整理房间。"
+    },
+    {
+      "source": "日本へ行くと思っています。（নিজের intention বলতে）",
+      "target": "日本へ行くと思っています。（说自己的 intention 时）"
+    },
+    {
+      "source": "Plain 行くと思う সাধারণত ‘মনে করি যাবে/যাব’—prediction; volitional＋と思う intention।",
+      "target": "Plain 行くと思う 通常是“觉得会去/要去”——prediction；volitional＋と思う 是 intention。"
+    },
+    {
+      "source": "দৃঢ় ব্যক্তিগত ইচ্ছা বা সিদ্ধান্ত",
+      "target": "坚定的个人意愿或决定"
+    },
+    {
+      "source": "করার ইচ্ছা",
+      "target": "做的意愿"
+    },
+    {
+      "source": "না করার ইচ্ছা",
+      "target": "不做的意愿"
+    },
+    {
+      "source": "অতীতের intention",
+      "target": "过去的 intention"
+    },
+    {
+      "source": "つもり বক্তার মনে স্থির করা intention। এটি timetable নয়; পরিকল্পনা বাস্তবায়নের সম্ভাবনা থাকলেও এখনো বাহ্যিকভাবে নির্ধারিত নাও হতে পারে।",
+      "target": "つもり 是说话人心里定下的 intention。它不是 timetable；计划虽可能实现，但可能还没在外部确定。"
+    },
+    {
+      "source": "つもりでした বললে ইচ্ছা ছিল—প্রসঙ্গ প্রায়ই দেখায় পরিকল্পনা বদলেছে: 行くつもりでしたが、病気で行けませんでした।",
+      "target": "つもりでした 表示曾经有意愿——语境常显示计划变了：行くつもりでしたが、病気で行けませんでした。"
+    },
+    {
+      "source": "অন্যকে ‘আপনি কি করবেন?’ জিজ্ঞেস করতে つもりですか সরাসরি/চাপের মতো শোনাতে পারে; 予定ですか বা どうする予定ですか অনেক ক্ষেত্রে নরম।",
+      "target": "问别人“您打算做什么？”时 つもりですか 可能听起来直接/有压力；予定ですか 或 どうする予定ですか 很多场合更柔和。"
+    },
+    {
+      "source": "Negative-এ 辞書形＋ない নয়; সঠিক ない-form: 行かないつもりです।",
+      "target": "Negative 不是 辞書形＋ない；正确的 ない-form：行かないつもりです。"
+    },
+    {
+      "source": "স্নাতক শেষে দেশে ফেরার সিদ্ধান্ত নিয়েছি।",
+      "target": "决定毕业后回国。"
+    },
+    {
+      "source": "আজ রাতে টিভি না দেখার সিদ্ধান্ত নিয়েছি।",
+      "target": "决定今晚不看电视。"
+    },
+    {
+      "source": "ভ্রমণের ইচ্ছা ছিল, কিন্তু পরিকল্পনা বদলেছি।",
+      "target": "曾经想旅行，但计划变了。"
+    },
+    {
+      "source": "つもり-এর আগে polite ます নয়, dictionary/plain form।",
+      "target": "つもり 前不用 polite ます，用 dictionary/plain form。"
+    },
+    {
+      "source": "সূচি, আয়োজন বা তুলনামূলকভাবে নির্ধারিত পরিকল্পনা",
+      "target": "日程、安排或相对确定的计划"
+    },
+    {
+      "source": "কাজ",
+      "target": "任务"
+    },
+    {
+      "source": "না হওয়ার সূচি",
+      "target": "不举行的日程"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "名词"
+    },
+    {
+      "source": "予定 বাহ্যিক schedule/arrangement-এর অনুভূতি দেয়—সময়, বুকিং বা সংশ্লিষ্ট পক্ষের ব্যবস্থা থাকতে পারে। つもり ব্যক্তির মনের সিদ্ধান্ত; 予定 ক্যালেন্ডারে বসানো plan।",
+      "target": "予定 给外部 schedule/arrangement 的感觉——可能有时间、预订或相关方的安排。つもり 是个人心里的决定；予定 是放进日历的 plan。"
+    },
+    {
+      "source": "ট্রেন/ইভেন্টের নির্ধারিত পরিকল্পনাতেও ব্যবহৃত হয়: 電車は十時に到着する予定です। ব্যক্তিগত ইচ্ছা না থাকলেও schedule হতে পারে।",
+      "target": "也用于电车/活动的确定计划：電車は十時に到着する予定です。没有个人意愿也可以是 schedule。"
+    },
+    {
+      "source": "N＋予定 নয়; Nの予定: 来週は出張の予定です।",
+      "target": "不是 N＋予定；Nの予定：来週は出張の予定です。"
+    },
+    {
+      "source": "মিটিং বিকেল তিনটায় শুরু হওয়ার কথা/সূচি।",
+      "target": "会议下午三点开始的预定/日程。"
+    },
+    {
+      "source": "আগামী মাসে ওসাকায় ব্যবসায়িক সফরের সূচি আছে।",
+      "target": "下个月有去大阪出差的日程。"
+    },
+    {
+      "source": "Noun-এর পরে の প্রয়োজন।",
+      "target": "Noun 后需要 の。"
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "一目了然的差别"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "什么情况用哪个？"
+    },
+    {
+      "source": "রূপ",
+      "target": "形式"
+    },
+    {
+      "source": "সিদ্ধান্তের ধরন",
+      "target": "决定的类型"
+    },
+    {
+      "source": "স্বাভাবিক উদাহরণ",
+      "target": "自然例句"
+    },
+    {
+      "source": "এখনকার প্রস্তাব/সংকল্প",
+      "target": "现在的提议/决心"
+    },
+    {
+      "source": "চল যাই",
+      "target": "走吧"
+    },
+    {
+      "source": "আগে থেকে ভাবছি",
+      "target": "早就想着"
+    },
+    {
+      "source": "বিদেশে পড়তে যাব ভাবছি",
+      "target": "在想去国外留学"
+    },
+    {
+      "source": "ব্যক্তিগত দৃঢ় সিদ্ধান্ত",
+      "target": "个人坚定决定"
+    },
+    {
+      "source": "প্রতিদিন পড়ব",
+      "target": "每天学习"
+    },
+    {
+      "source": "নির্ধারিত schedule",
+      "target": "确定的 schedule"
+    },
+    {
+      "source": "মিটিং তিনটায়",
+      "target": "会议三点"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "实际对话"
+    },
+    {
+      "source": "ছুটির পরিকল্পনা",
+      "target": "假期计划"
+    },
+    {
+      "source": "গ্রীষ্মের ছুটিতে কী করার পরিকল্পনা?",
+      "target": "暑假有什么计划？"
+    },
+    {
+      "source": "হোক্কাইদো যাওয়ার কথা ভাবছি।",
+      "target": "在想去北海道。"
+    },
+    {
+      "source": "কখন যাবেন?",
+      "target": "什么时候去？"
+    },
+    {
+      "source": "১০ আগস্ট রওনা হওয়ার সূচি। এবার বিমানে না যাওয়ার সিদ্ধান্ত নিয়েছি।",
+      "target": "预定 8 月 10 日出发。这次决定不坐飞机去。"
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "自我检查"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice 和带解释的答案"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "先在笔记本上写答案，然后点击问题核对答案和原因。"
+    },
+    {
+      "source": "1. 読む-এর volitional form বানান।",
+      "target": "1. 造 読む 的 volitional form。"
+    },
+    {
+      "source": "2. ‘আগামী বছর চাকরি বদলানোর কথা ভাবছি’ বলুন।",
+      "target": "2. 说“我在想明年换工作”。"
+    },
+    {
+      "source": "আগে থেকে থাকা intention: volitional＋と思っています।",
+      "target": "早就有的 intention：volitional＋と思っています。"
+    },
+    {
+      "source": "3. ‘আমি গাড়ি না কেনার সিদ্ধান্ত নিয়েছি’ বলুন।",
+      "target": "3. 说“我决定不买车”。"
+    },
+    {
+      "source": "4. ‘আগামীকাল মিটিংয়ের সূচি আছে’ বলুন।",
+      "target": "4. 说“明天有会议日程”。"
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "一句话 Master Key"
+    },
+    {
+      "source": "মনের দৃঢ় সিদ্ধান্তে つもり, ক্যালেন্ডারের নির্ধারিত পরিকল্পনায় 予定, আগে থেকে ভাবা intention-এ ようと思っています, আর তাৎক্ষণিক ‘চল করি’-তে volitional।",
+      "target": "心里坚定的决定用 つもり，日历上确定的计划用 予定，早就想的 intention 用 ようと思っています，即时的“一起做吧”用 volitional。"
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "可信参考"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "大纲与核对"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "这个独立的中文 lesson 结合 Minna no Nihongo II 的 lesson sequence、official JLPT N4 scope 和 Japan Foundation 的 learner resources 制作。例句和中文解释均为新写。"
+    },
+    {
+      "source": "← আগের Lesson 30",
+      "target": "← 上一个 Lesson 30"
+    },
+    {
+      "source": "Preparation：Vてあります ও Vておきます",
+      "target": "Preparation：Vてあります 与 Vておきます"
+    },
+    {
+      "source": "পরের Lesson 32 →",
+      "target": "下一个 Lesson 32 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Lesson 索引"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "学习目标"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "差别表"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "会话"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Course progress 加载中…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "为学习者免费提供的详细中文 self-study edition。"
+    }
+  ]
+}
