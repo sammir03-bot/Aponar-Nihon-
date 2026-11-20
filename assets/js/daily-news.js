@@ -1,6 +1,9 @@
 (function () {
   "use strict";
 
+  function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"dn.furiganaOn": "ফুরিগানা ON", "dn.furiganaOff": "ফুরিগানা OFF", "dn.updatedToday": "আজকের নিউজ আপডেট হয়েছে", "dn.lastUpdate": "সর্বশেষ আপডেট: ", "dn.savedFallback": "সরাসরি আপডেট পাওয়া যায়নি; সংরক্ষিত খবর দেখানো হচ্ছে।", "dn.sourceProblem": "সংবাদ উৎসে এখন সমস্যা হচ্ছে; সর্বশেষ সংরক্ষিত খবর দেখানো হচ্ছে।", "dn.autoUpdate": "স্বয়ংক্রিয় আপডেট · প্রতি ৩ ঘণ্টায় উৎস যাচাই", "dn.lastCheck": " · সর্বশেষ যাচাই: ", "dn.checking": "আপডেট দেখছি…", "dn.empty": "এখনো কোনো নিউজ যোগ হয়নি।", "dn.waiting": "নিউজ আপডেটের অপেক্ষায়", "dn.noUpdate": "আপডেট পাওয়া যায়নি", "dn.emptyFilter": "এই ফিল্টারে কোনো নিউজ নেই।", "dn.refresh": "↻ আপডেট দেখুন", "dn.count": "{n}টি নিউজ", "dn.countOf": "{a} / {b}টি নিউজ", "dn.archiveFail": "নিউজ আর্কাইভ লোড করা যায়নি।", "dn.source": "মূল উৎস দেখুন", "dn.notFound": "নিউজটি পাওয়া যায়নি।", "dn.backToArchive": "নিউজ আর্কাইভে ফিরুন", "dn.backToArchiveShort": "আর্কাইভে ফিরুন", "dn.notFoundTitle": "নিউজ পাওয়া যায়নি | আপনার নিহোন", "dn.readerLoadFail": "নিউজটি লোড করা যায়নি। একটু পরে আবার চেষ্টা করুন।"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}
+Object.assign(dynT._b,{"dn.today": "আজ", "dn.badgeLatest": "সর্বশেষ", "dn.prevDay": "আগের দিন", "dn.badgeLead": "আজকের প্রধান", "dn.illustrative": "প্রতীকী চিত্র", "dn.readMore": "বিস্তারিত পড়ুন", "dn.kicker": "প্রতিদিনের জাপানি নিউজ", "dn.homeTitle": "কানজি দিয়ে খবর পড়ুন, বুঝুন বাংলায়", "dn.allNews": "সব নিউজ", "dn.loadingToday": "আজকের খবর লোড হচ্ছে…", "dn.noDate": "তারিখ নেই", "dn.latestDay": "সর্বশেষ দিন", "dn.newerNews": "নতুন নিউজ", "dn.olderNews": "আগের নিউজ", "dn.vocabTitle": "গুরুত্বপূর্ণ শব্দ", "dn.sourceLabel": "উৎস:", "dn.sourceFallback": "সংবাদ উৎস", "dn.allArchive": "আগের সব নিউজ", "dn.backHome": "হোমে ফিরুন"});
+
   var DATA_URL = "/assets/data/daily-news.json";
   var LIVE_URL = "/api/public/news";
   var NEWS_CACHE_KEY = "aponarDailyNewsLiveV1";
@@ -115,7 +118,7 @@
       var on = state === "on";
       button.setAttribute("aria-pressed", String(on));
       var label = button.querySelector("[data-furigana-label]");
-      if (label) label.textContent = on ? "ফুরিগানা ON" : "ফুরিগানা OFF";
+      if (label) label.textContent = on ? dynT('dn.furiganaOn') : dynT('dn.furiganaOff');
     });
   }
 
@@ -158,15 +161,15 @@
 
   function freshnessText(dateString) {
     if (!dateString) return "";
-    return dateString === tokyoToday() ? "আজকের নিউজ আপডেট হয়েছে" : "সর্বশেষ আপডেট: " + formatDate(dateString);
+    return dateString === tokyoToday() ? dynT('dn.updatedToday') : dynT('dn.lastUpdate') + formatDate(dateString);
   }
 
   function syncText(data) {
-    if (data.update_status === "saved") return "সরাসরি আপডেট পাওয়া যায়নি; সংরক্ষিত খবর দেখানো হচ্ছে।";
-    if (data.update_status === "source_unavailable") return "সংবাদ উৎসে এখন সমস্যা হচ্ছে; সর্বশেষ সংরক্ষিত খবর দেখানো হচ্ছে।";
+    if (data.update_status === "saved") return dynT('dn.savedFallback');
+    if (data.update_status === "source_unavailable") return dynT('dn.sourceProblem');
     var checked = "";
     try { if (data.checked_at) checked = new Intl.DateTimeFormat("bn-BD", {timeZone: "Asia/Tokyo", month: "short", day: "numeric", hour: "2-digit", minute: "2-digit"}).format(new Date(data.checked_at)); } catch (_error) { /* No date label. */ }
-    return "স্বয়ংক্রিয় আপডেট · প্রতি ৩ ঘণ্টায় উৎস যাচাই" + (checked ? " · সর্বশেষ যাচাই: " + checked + " JST" : "");
+    return dynT('dn.autoUpdate') + (checked ? dynT('dn.lastCheck') + checked + " JST" : "");
   }
 
   function newsImage(article) {
@@ -177,9 +180,9 @@
 
   function homeCard(article, index, latestDate) {
     var isFirst = index === 0;
-    var badge = isFirst ? (latestDate === tokyoToday() ? "আজকের প্রধান" : "সর্বশেষ") : "";
+    var badge = isFirst ? (latestDate === tokyoToday() ? dynT('dn.badgeLead') : dynT('dn.badgeLatest')) : "";
     return '<a class="daily-news-card' + (newsImage(article) ? ' has-news-photo' : '') + '" href="/daily-news-reader.html?id=' + encodeURIComponent(article.id) + '">' +
-      newsImage(article) + (article.image ? '<span class="news-art-label">' + escapeHtml(article.image.caption_bn || 'প্রতীকী চিত্র') + '</span>' : '') +
+      newsImage(article) + (article.image ? '<span class="news-art-label">' + escapeHtml(article.image.caption_bn || dynT('dn.illustrative')) + '</span>' : '') +
       '<div>' +
         '<div class="daily-news-meta">' +
           (badge ? '<span class="daily-news-badge">' + badge + '</span>' : '') +
@@ -190,7 +193,7 @@
         '<h3 lang="ja">' + escapeHtml(article.headline || "") + '</h3>' +
         '<p>' + escapeHtml(article.teaser_bn || "") + '</p>' +
       '</div>' +
-      '<span class="daily-news-open">বিস্তারিত পড়ুন <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>' +
+      '<span class="daily-news-open">' + dynT('dn.readMore') + ' <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span>' +
     '</a>';
   }
 
@@ -212,12 +215,12 @@
     section.setAttribute("data-i18n-no-content", "");
     section.innerHTML =
       '<div class="daily-news-head">' +
-        '<div><span class="daily-news-kicker"><i class="fa-solid fa-newspaper" aria-hidden="true"></i> প্রতিদিনের জাপানি নিউজ</span>' +
-        '<h2 id="daily-news-home-title">কানজি দিয়ে খবর পড়ুন, বুঝুন বাংলায়</h2>' +
-        '<span class="daily-news-freshness" data-daily-news-freshness><i class="fa-solid fa-circle" aria-hidden="true"></i> আপডেট দেখছি…</span></div>' +
-        '<a class="daily-news-all" href="/daily-news.html"><span>সব নিউজ</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>' +
+        '<div><span class="daily-news-kicker"><i class="fa-solid fa-newspaper" aria-hidden="true"></i> ' + dynT('dn.kicker') + '</span>' +
+        '<h2 id="daily-news-home-title">' + dynT('dn.homeTitle') + '</h2>' +
+        '<span class="daily-news-freshness" data-daily-news-freshness><i class="fa-solid fa-circle" aria-hidden="true"></i> ' + dynT('dn.checking') + '</span></div>' +
+        '<a class="daily-news-all" href="/daily-news.html"><span>' + dynT('dn.allNews') + '</span><i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>' +
       '</div>' +
-      '<div class="daily-news-grid" data-daily-news-home-list aria-live="polite"><div class="daily-news-state">আজকের খবর লোড হচ্ছে…</div></div>';
+      '<div class="daily-news-grid" data-daily-news-home-list aria-live="polite"><div class="daily-news-state">' + dynT('dn.loadingToday') + '</div></div>';
     anchor.insertAdjacentElement("afterend", section);
     renderHome();
   }
@@ -229,8 +232,8 @@
     loadData().then(function (data) {
       var all = data.articles || [];
       if (!all.length) {
-        list.innerHTML = '<div class="daily-news-state">এখনো কোনো নিউজ যোগ হয়নি।</div>';
-        if (freshness) freshness.textContent = "নিউজ আপডেটের অপেক্ষায়";
+        list.innerHTML = '<div class="daily-news-state">' + dynT('dn.empty') + '</div>';
+        if (freshness) freshness.textContent = dynT('dn.waiting');
         return;
       }
       var latestDate = all[0].date || "";
@@ -240,7 +243,7 @@
       if (freshness) freshness.innerHTML = '<i class="fa-solid fa-circle" aria-hidden="true"></i> ' + escapeHtml(freshnessText(latestDate)) + ' · ' + escapeHtml(syncText(data));
     }).catch(function () {
       list.innerHTML = '<div class="daily-news-state">নিউজ লোড করা যায়নি। একটু পরে আবার চেষ্টা করুন।</div>';
-      if (freshness) freshness.textContent = "আপডেট পাওয়া যায়নি";
+      if (freshness) freshness.textContent = dynT('dn.noUpdate');
     });
   }
 
@@ -263,17 +266,17 @@
   }
 
   function dateLabel(date, dates) {
-    if (date === tokyoToday()) return "আজ";
-    if (date === dates[0]) return "সর্বশেষ";
-    if (date === dates[1]) return "আগের দিন";
+    if (date === tokyoToday()) return dynT('dn.today');
+    if (date === dates[0]) return dynT('dn.badgeLatest');
+    if (date === dates[1]) return dynT('dn.prevDay');
     return formatDate(date);
   }
 
   function archiveGroups(articles, dates) {
-    if (!articles.length) return '<div class="daily-news-state">এই ফিল্টারে কোনো নিউজ নেই।</div>';
+    if (!articles.length) return '<div class="daily-news-state">' + dynT('dn.emptyFilter') + '</div>';
     var grouped = {};
     articles.forEach(function (article) {
-      var date = article.date || "তারিখ নেই";
+      var date = article.date || dynT('dn.noDate');
       if (!grouped[date]) grouped[date] = [];
       grouped[date].push(article);
     });
@@ -294,10 +297,10 @@
     toolbar.setAttribute("data-news-archive-toolbar", "");
     toolbar.setAttribute("aria-label", "নিউজ তারিখ ফিল্টার");
     toolbar.innerHTML =
-      '<button class="news-filter-chip" type="button" data-news-filter="all" aria-pressed="true">সব নিউজ</button>' +
-      '<button class="news-filter-chip" type="button" data-news-filter="latest" aria-pressed="false">সর্বশেষ দিন</button>' +
-      '<button class="news-filter-chip" type="button" data-news-filter="previous" aria-pressed="false">আগের দিন</button>' +
-      '<button class="news-filter-chip" type="button" data-news-refresh>↻ আপডেট দেখুন</button>';
+      '<button class="news-filter-chip" type="button" data-news-filter="all" aria-pressed="true">' + dynT('dn.allNews') + '</button>' +
+      '<button class="news-filter-chip" type="button" data-news-filter="latest" aria-pressed="false">' + dynT('dn.latestDay') + '</button>' +
+      '<button class="news-filter-chip" type="button" data-news-filter="previous" aria-pressed="false">' + dynT('dn.prevDay') + '</button>' +
+      '<button class="news-filter-chip" type="button" data-news-refresh>' + dynT('dn.refresh') + '</button>';
     list.parentNode.insertBefore(toolbar, list);
     return toolbar;
   }
@@ -328,16 +331,16 @@
         if (filter === "latest") visible = dates[0] ? articles.filter(function (item) { return item.date === dates[0]; }) : [];
         if (filter === "previous") visible = dates[1] ? articles.filter(function (item) { return item.date === dates[1]; }) : [];
         list.innerHTML = archiveGroups(visible, dates);
-        if (count) count.textContent = visible.length === articles.length ? String(articles.length) + "টি নিউজ" : String(visible.length) + " / " + String(articles.length) + "টি নিউজ";
+        if (count) count.textContent = visible.length === articles.length ? dynT('dn.count', {n: articles.length}) : dynT('dn.countOf', {a: visible.length, b: articles.length});
         toolbar.querySelectorAll("[data-news-filter]").forEach(function (button) {
           button.setAttribute("aria-pressed", String(button.dataset.newsFilter === filter));
         });
       }
 
       if (!articles.length) {
-        if (count) count.textContent = "০টি নিউজ";
+        if (count) count.textContent = dynT('dn.count', {n: dynLang() === 'bn' ? '০' : 0});
         toolbar.hidden = true;
-        list.innerHTML = '<div class="daily-news-state">এখনো কোনো নিউজ যোগ হয়নি।</div>';
+        list.innerHTML = '<div class="daily-news-state">' + dynT('dn.empty') + '</div>';
         return;
       }
 
@@ -347,7 +350,7 @@
       });
       applyFilter("all");
     }).catch(function () {
-      list.innerHTML = '<div class="daily-news-state">নিউজ আর্কাইভ লোড করা যায়নি।</div>';
+      list.innerHTML = '<div class="daily-news-state">' + dynT('dn.archiveFail') + '</div>';
     });
   }
 
@@ -363,7 +366,7 @@
 
   function adjacentLink(article, direction) {
     if (!article) return "";
-    var label = direction === "newer" ? "নতুন নিউজ" : "আগের নিউজ";
+    var label = direction === "newer" ? dynT('dn.newerNews') : dynT('dn.olderNews');
     var icon = direction === "newer" ? "fa-arrow-right" : "fa-arrow-left";
     return '<a class="news-adjacent-link is-' + direction + '" href="/daily-news-reader.html?id=' + encodeURIComponent(article.id) + '">' +
       '<small>' + (direction === "older" ? '<i class="fa-solid ' + icon + '" aria-hidden="true"></i> ' : '') + label + (direction === "newer" ? ' <i class="fa-solid ' + icon + '" aria-hidden="true"></i>' : '') + '</small>' +
@@ -389,14 +392,14 @@
     var source = article.source || {};
     var sourceUrl = safeSourceUrl(source.url);
     var sourceHtml = sourceUrl
-      ? '<a href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noopener noreferrer">মূল উৎস দেখুন <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>'
+      ? '<a href="' + escapeHtml(sourceUrl) + '" target="_blank" rel="noopener noreferrer">' + dynT('dn.source') + ' <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>'
       : "";
     var adjacent = adjacentLink(navigation.older, "older") + adjacentLink(navigation.newer, "newer");
 
     return '<article class="news-reader-card" data-i18n-no-content>' +
       '<div class="news-reader-topline">' +
         '<div class="news-reader-meta"><span class="news-level">' + escapeHtml(article.level || "") + '</span><span>' + escapeHtml(article.category_bn || "") + '</span><span>•</span><time datetime="' + escapeHtml(article.date) + '">' + escapeHtml(formatDate(article.date)) + '</time></div>' +
-        '<button class="furigana-toggle" type="button" data-furigana-toggle aria-pressed="true"><span data-furigana-label>ফুরিগানা ON</span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button>' +
+        '<button class="furigana-toggle" type="button" data-furigana-toggle aria-pressed="true"><span data-furigana-label>' + dynT('dn.furiganaOn') + '</span><span class="switch-track" aria-hidden="true"><span class="switch-knob"></span></span></button>' +
       '</div>' +
       '<h1 class="news-reader-title news-japanese" lang="ja" style="display:block">' + renderTokens(article.headline_tokens || []) + '</h1>' +
       (article.image ? '<figure class="news-reader-figure">' + newsImage(article) + '<figcaption>' + escapeHtml(article.image.caption_bn || '') + ' · ' + escapeHtml(article.image.credit || '') + ' <a href="' + escapeHtml(safeSourceUrl(article.image.source_url)) + '" target="_blank" rel="noopener noreferrer">ছবির উৎস</a></figcaption></figure>' : '') +
@@ -406,12 +409,12 @@
       '<div class="news-divider"></div>' +
       '<details class="news-explanation"><summary><span><i class="fa-solid fa-bangla-sign" aria-hidden="true"></i> বাংলা বিস্তারিত ব্যাখ্যা</span></summary><div class="news-explanation-body">' + explanations + '</div></details>' +
       '<div class="news-divider"></div>' +
-      '<section aria-labelledby="vocabulary-title"><h2 class="news-section-title" id="vocabulary-title"><i class="fa-solid fa-book-open" aria-hidden="true"></i> গুরুত্বপূর্ণ শব্দ</h2><div class="news-vocab-grid">' + vocab + '</div></section>' +
+      '<section aria-labelledby="vocabulary-title"><h2 class="news-section-title" id="vocabulary-title"><i class="fa-solid fa-book-open" aria-hidden="true"></i> ' + dynT('dn.vocabTitle') + '</h2><div class="news-vocab-grid">' + vocab + '</div></section>' +
       '<div class="news-divider"></div>' +
-      '<div class="news-source"><span><strong>উৎস:</strong> ' + escapeHtml(source.name || "সংবাদ উৎস") + '<br>' + escapeHtml(editorialNote || "") + '</span>' + sourceHtml + '</div>' +
+      '<div class="news-source"><span><strong>' + dynT('dn.sourceLabel') + '</strong> ' + escapeHtml(source.name || dynT('dn.sourceFallback')) + '<br>' + escapeHtml(editorialNote || "") + '</span>' + sourceHtml + '</div>' +
       (adjacent ? '<div class="news-reader-adjacent" aria-label="পরের ও আগের নিউজ">' + adjacent + '</div>' : '') +
       '<div class="news-divider"></div>' +
-      '<nav class="news-reader-nav" aria-label="নিউজ নেভিগেশন"><a href="/daily-news.html"><i class="fa-solid fa-box-archive" aria-hidden="true"></i> আগের সব নিউজ</a><a href="/"><i class="fa-solid fa-house" aria-hidden="true"></i> হোমে ফিরুন</a></nav>' +
+      '<nav class="news-reader-nav" aria-label="নিউজ নেভিগেশন"><a href="/daily-news.html"><i class="fa-solid fa-box-archive" aria-hidden="true"></i> ' + dynT('dn.allArchive') + '</a><a href="/"><i class="fa-solid fa-house" aria-hidden="true"></i> ' + dynT('dn.backHome') + '</a></nav>' +
     '</article>';
   }
 
@@ -425,12 +428,12 @@
       var articles = data.articles || [];
       var index = id ? articles.findIndex(function (item) { return item.id === id; }) : 0;
       if (id && index < 0) {
-        root.innerHTML = '<div class="news-reader-card"><div class="daily-news-state">নিউজটি পাওয়া যায়নি। <a href="/daily-news.html">নিউজ আর্কাইভে ফিরুন</a></div></div>';
-        document.title = "নিউজ পাওয়া যায়নি | আপনার নিহোন";
+        root.innerHTML = '<div class="news-reader-card"><div class="daily-news-state">' + dynT('dn.notFound') + ' <a href="/daily-news.html">' + dynT('dn.backToArchive') + '</a></div></div>';
+        document.title = dynT('dn.notFoundTitle');
         return;
       }
       if (index < 0 || !articles[index]) {
-        root.innerHTML = '<div class="news-reader-card"><div class="daily-news-state">এখনো কোনো নিউজ যোগ হয়নি। <a href="/daily-news.html">আর্কাইভে ফিরুন</a></div></div>';
+        root.innerHTML = '<div class="news-reader-card"><div class="daily-news-state">' + dynT('dn.empty') + ' <a href="/daily-news.html">' + dynT('dn.backToArchiveShort') + '</a></div></div>';
         return;
       }
       var article = articles[index];
@@ -444,7 +447,7 @@
       if (description && article.teaser_bn) description.setAttribute("content", article.teaser_bn);
       setupFuriganaToggle();
     }).catch(function () {
-      root.innerHTML = '<div class="news-reader-card"><div class="daily-news-state">নিউজটি লোড করা যায়নি। একটু পরে আবার চেষ্টা করুন।</div></div>';
+      root.innerHTML = '<div class="news-reader-card"><div class="daily-news-state">' + dynT('dn.readerLoadFail') + '</div></div>';
     });
   }
 

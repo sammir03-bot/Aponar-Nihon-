@@ -11893,12 +11893,12 @@
   </main>
   <footer>Progress এই browser-এ save হবে। · <a href="/n3-vocabulary.html">N3 Vocabulary</a> · <a href="/n3-grammar.html">N3 Grammar</a> · <a href="https://app.aponar-nihon.workers.dev/">আপনার নিহোন</a></footer>
   <script>
-    (()=>{const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+    (()=>{const dynT=(k,v)=>{if(window.AponarDyn)return window.AponarDyn(k,v);let s=dynT._b[k]||k;if(v)for(const x in v)s=s.split("{"+x+"}").join(v[x]);return s};dynT._b={"kj.progress": "{done} / {total} শেষ", "kj.itemsFound": "{n}টি item পাওয়া গেছে", "kj.score": "স্কোর {c} / {t} · উত্তর {a}/{t}", "kj.restart": "আবার শুরু করুন"};const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
     const search=$("#search"),select=$("#lessonSelect"),items=$$("[data-item]"),partBtns=$$(".part-btn"),empty=$("#emptyState"),result=$("#resultCount");
     const state={week:"all",item:"all",query:"",unfinished:false};const storageKey="aponarNihonN3VocabProgressV1";
     let saved={};try{saved=JSON.parse(localStorage.getItem(storageKey)||"{}")}catch(e){}
     $$(".done-check").forEach(c=>{c.checked=!!saved[c.dataset.key];c.addEventListener("change",()=>{saved[c.dataset.key]=c.checked;localStorage.setItem(storageKey,JSON.stringify(saved));updateProgress();apply()})});
-    function updateProgress(){const done=$$(".done-check").filter(c=>c.checked).length;$("#progress").value=done;$("#progressText").textContent=`${done} / 42 শেষ`}
+    function updateProgress(){const done=$$(".done-check").filter(c=>c.checked).length;$("#progress").value=done;$("#progressText").textContent=dynT("kj.progress",{done:done,total:\1})}
     function apply(){const q=state.query.trim().toLocaleLowerCase();let visible=0;
       items.forEach(card=>{let show=(state.week==="all"||card.dataset.week===state.week)&&(state.item==="all"||card.dataset.item===state.item);
         if(show&&state.unfinished&&$(".done-check",card)?.checked)show=false;
@@ -11908,7 +11908,7 @@
           if(show&&q)show=titleHit||hits>0;
         }else if(show&&q){show=card.dataset.titleSearch.includes(q)}
         card.hidden=!show;if(show)visible++});
-      empty.style.display=visible?"none":"block";result.textContent=`${visible}টি item পাওয়া গেছে`}
+      empty.style.display=visible?"none":"block";result.textContent=dynT("kj.itemsFound",{n:visible})}
     search.addEventListener("input",()=>{state.query=search.value;apply()});
     select.addEventListener("change",()=>{state.item=select.value;state.week="all";partBtns.forEach(b=>b.classList.toggle("active",b.dataset.week==="all"));apply();if(state.item!=="all")document.getElementById(state.item)?.scrollIntoView({behavior:"smooth",block:"start"})});
     partBtns.forEach(btn=>btn.addEventListener("click",()=>{state.week=btn.dataset.week;state.item="all";select.value="all";partBtns.forEach(b=>b.classList.toggle("active",b===btn));apply();if(state.week!=="all")document.getElementById(`part-${state.week}`)?.scrollIntoView({behavior:"smooth",block:"start"})}));
@@ -11919,8 +11919,8 @@
     const dark=localStorage.getItem("aponarNihonTheme")==="dark";document.body.classList.toggle("dark",dark);$("#themeToggle").textContent=dark?"☀️":"🌙";
     $("#themeToggle").addEventListener("click",e=>{const on=document.body.classList.toggle("dark");localStorage.setItem("aponarNihonTheme",on?"dark":"light");e.currentTarget.textContent=on?"☀️":"🌙"});
     $$("[data-scroll-top]").forEach(b=>b.addEventListener("click",()=>document.getElementById(`part-${b.closest("[data-week]").dataset.week}`)?.scrollIntoView({behavior:"smooth"})));
-    $$(".exam-form").forEach(form=>{form.addEventListener("submit",e=>{e.preventDefault();let correct=0,answered=0;const questions=$$(".question",form);questions.forEach(q=>{const chosen=$("input:checked",q),answer=Number(q.dataset.answer);if(chosen)answered++;$$(".option",q).forEach((label,i)=>{label.classList.toggle("correct",i+1===answer);label.classList.toggle("wrong",!!chosen&&Number(chosen.value)===i+1&&i+1!==answer)});$(".answer-note",q).classList.add("show");if(chosen&&Number(chosen.value)===answer)correct++});$(".score",form).textContent=`স্কোর ${correct} / ${questions.length} · উত্তর ${answered}/${questions.length}`;const check=$(`.done-check[data-key="exam-${form.dataset.exam}"]`);if(answered===questions.length){check.checked=true;check.dispatchEvent(new Event("change"))}});
-      $(".reset-exam",form).addEventListener("click",()=>{form.reset();$$(".option",form).forEach(x=>x.classList.remove("correct","wrong"));$$(".answer-note",form).forEach(x=>x.classList.remove("show"));$(".score",form).textContent="আবার শুরু করুন"})});
+    $$(".exam-form").forEach(form=>{form.addEventListener("submit",e=>{e.preventDefault();let correct=0,answered=0;const questions=$$(".question",form);questions.forEach(q=>{const chosen=$("input:checked",q),answer=Number(q.dataset.answer);if(chosen)answered++;$$(".option",q).forEach((label,i)=>{label.classList.toggle("correct",i+1===answer);label.classList.toggle("wrong",!!chosen&&Number(chosen.value)===i+1&&i+1!==answer)});$(".answer-note",q).classList.add("show");if(chosen&&Number(chosen.value)===answer)correct++});$(".score",form).textContent=dynT("kj.score",{c:correct,t:questions.length,a:answered});const check=$(`.done-check[data-key="exam-${form.dataset.exam}"]`);if(answered===questions.length){check.checked=true;check.dispatchEvent(new Event("change"))}});
+      $(".reset-exam",form).addEventListener("click",()=>{form.reset();$$(".option",form).forEach(x=>x.classList.remove("correct","wrong"));$$(".answer-note",form).forEach(x=>x.classList.remove("show"));$(".score",form).textContent=dynT("kj.restart")})});
     document.addEventListener("keydown",e=>{if(e.key==="/"&&document.activeElement!==search){e.preventDefault();search.focus()}if(e.key==="Escape"){search.value="";state.query="";apply()}});
     updateProgress();apply()})();
   </script>

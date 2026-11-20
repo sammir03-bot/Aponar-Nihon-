@@ -78,13 +78,14 @@ a{color:inherit}.page{width:min(760px,100%);margin:auto;min-height:100vh}.topbar
 <a href="index.html#quiz"><i class="fa-solid fa-clipboard-check"></i><span>Test</span></a>
 <a class="active" href="japan-newcomer-guide.html"><i class="fa-solid fa-torii-gate"></i><span>Japan</span></a>
 </nav><script>
+function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"ag.progress": "{done}/{total} সম্পন্ন"};
 const key='guide-progress-'+document.body.dataset.page;
 const boxes=[...document.querySelectorAll('.check input[type=checkbox]')];
 function updateProgress(){
   const done=boxes.filter(x=>x.checked).length;
   const pct=boxes.length?Math.round(done/boxes.length*100):0;
   document.querySelectorAll('.progress-bar').forEach(x=>x.style.width=pct+'%');
-  document.querySelectorAll('.progress-text').forEach(x=>x.textContent=done+'/'+boxes.length+' সম্পন্ন');
+  document.querySelectorAll('.progress-text').forEach(x=>x.textContent=dynT('ag.progress',{done:done,total:boxes.length}));
   localStorage.setItem(key,JSON.stringify(boxes.map(x=>x.checked)));
 }
 try{const saved=JSON.parse(localStorage.getItem(key)||'[]');boxes.forEach((x,i)=>x.checked=!!saved[i]);}catch(e){}

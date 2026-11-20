@@ -577,3 +577,28 @@ html[dir="rtl"] .aponar-language-option:not([dir="rtl"]) {
     transition: none !important;
   }
 }
+
+/* Run 11: home CSS-generated labels (home-reference-exact.css shows
+   content:"দরকারি বাক্য" / "সব দেখুন" regardless of page language).
+   These overrides key on the built page's data-language-preset and only
+   replace the generated text — same slot, same styling, no design change. */
+html[data-language-preset="en"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "Useful phrases"; }
+html[data-language-preset="en"] body.app-page[data-page="home"] .app-card-arrow::before { content: "See all"; }
+html[data-language-preset="ja"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "便利なフレーズ"; }
+html[data-language-preset="ja"] body.app-page[data-page="home"] .app-card-arrow::before { content: "すべて見る"; }
+html[data-language-preset="vi"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "Câu hữu ích"; }
+html[data-language-preset="vi"] body.app-page[data-page="home"] .app-card-arrow::before { content: "Xem tất cả"; }
+html[data-language-preset="ne"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "उपयोगी वाक्य"; }
+html[data-language-preset="ne"] body.app-page[data-page="home"] .app-card-arrow::before { content: "सबै हेर्नुहोस्"; }
+html[data-language-preset="hi"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "उपयोगी वाक्य"; }
+html[data-language-preset="hi"] body.app-page[data-page="home"] .app-card-arrow::before { content: "सभी देखें"; }
+html[data-language-preset="ur"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "ضروری جملے"; }
+html[data-language-preset="ur"] body.app-page[data-page="home"] .app-card-arrow::before { content: "سب دیکھیں"; }
+html[data-language-preset="my"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "အသုံးဝင်သောစကားစုများ"; }
+html[data-language-preset="my"] body.app-page[data-page="home"] .app-card-arrow::before { content: "အားလုံး ကြည့်ရန်"; }
+html[data-language-preset="zh"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "实用短语"; }
+html[data-language-preset="zh"] body.app-page[data-page="home"] .app-card-arrow::before { content: "查看全部"; }
+html[data-language-preset="si"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "ප්‍රයෝජනවත් වාක්‍ය"; }
+html[data-language-preset="si"] body.app-page[data-page="home"] .app-card-arrow::before { content: "සියල්ල බලන්න"; }
+html[data-language-preset="fil"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "Mahahalagang parirala"; }
+html[data-language-preset="fil"] body.app-page[data-page="home"] .app-card-arrow::before { content: "Tingnan lahat"; }

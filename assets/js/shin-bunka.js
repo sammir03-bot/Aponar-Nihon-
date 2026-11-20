@@ -28,6 +28,7 @@
     }
   } catch { storageAvailable = false; }
   const bn = (n) => String(n).replace(/[0-9]/g, (c) => '০১২৩৪৫৬৭৮৯'[Number(c)]);
+  function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"sb.storageWarn": "ব্রাউজারে অগ্রগতি রাখা যাচ্ছে না। এই পৃষ্ঠা খোলা থাকা পর্যন্ত পরিবর্তন কাজ করবে।", "sb.lessons": "{n}টি লেসন", "sb.furiganaOn": "ফুরিগানা: চালু", "sb.furiganaOff": "ফুরিগানা: বন্ধ", "sb.textNormal": "পাঠের লেখা স্বাভাবিক করুন", "sb.textBigger": "পাঠের লেখা বড় করুন", "sb.aMinus": "অ −", "sb.aPlus": "অ +", "sb.readDoneToggle": "✓ পড়া শেষ · আবার বাকি রাখুন", "sb.markRead": "পড়া শেষ চিহ্নিত করুন", "sb.readDone": "✓ পড়া শেষ", "sb.continueReading": "পড়া চালিয়ে যান", "sb.notStarted": "শুরু হয়নি", "sb.progress": "{total}টির মধ্যে {done}টি পড়া শেষ", "sb.readLesson": "লেসন {n} পড়ুন →", "sb.reread": "সব পড়া শেষ · আবার পড়ুন →", "sb.topicOf": "বিষয় {a} / {b}", "sb.finishLesson": "লেসন শেষ করুন ✓", "sb.nextTopic": "পরের বিষয় →"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}function num(v){return dynLang()==='bn'?bn(v):String(v);}
   const normalize = (text) => String(text).normalize('NFKC').toLowerCase().replace(/[০-৯]/g, (c) => String('০১২৩৪৫৬৭৮৯'.indexOf(c))).trim();
   const lesson = Number(document.body.dataset.sbLesson);
   const cards = [...document.querySelectorAll('[data-sb-card]')];
@@ -39,7 +40,7 @@
 
   function storageNotice() {
     document.querySelectorAll('.sb-storage').forEach((el) => {
-      el.textContent = storageAvailable ? '' : 'ব্রাউজারে অগ্রগতি রাখা যাচ্ছে না। এই পৃষ্ঠা খোলা থাকা পর্যন্ত পরিবর্তন কাজ করবে।';
+      el.textContent = storageAvailable ? '' : dynT('sb.storageWarn');
     });
   }
   function save() {
@@ -57,7 +58,7 @@
       if (!card.hidden) count += 1;
     });
     const result = document.getElementById('sb-results');
-    if (result) result.textContent = `${bn(count)}টি লেসন`;
+    if (result) result.textContent = dynT('sb.lessons', {n: num(count)});
     const empty = document.getElementById('sb-empty');
     if (empty) empty.hidden = count > 0;
   }
@@ -68,38 +69,38 @@
     if (ruby) {
       ruby.hidden = false;
       ruby.setAttribute('aria-pressed', String(state.ruby));
-      ruby.textContent = `ফুরিগানা: ${state.ruby ? 'চালু' : 'বন্ধ'}`;
+      ruby.textContent = state.ruby ? dynT('sb.furiganaOn') : dynT('sb.furiganaOff');
     }
     const size = document.getElementById('sb-text-size');
     if (size) {
       size.hidden = false;
       size.setAttribute('aria-pressed', String(state.large));
-      size.setAttribute('aria-label', state.large ? 'পাঠের লেখা স্বাভাবিক করুন' : 'পাঠের লেখা বড় করুন');
-      size.textContent = state.large ? 'অ −' : 'অ +';
+      size.setAttribute('aria-label', state.large ? dynT('sb.textNormal') : dynT('sb.textBigger'));
+      size.textContent = state.large ? dynT('sb.aMinus') : dynT('sb.aPlus');
     }
     document.querySelectorAll('[data-sb-complete]').forEach((button) => {
       const done = state.done.includes(Number(button.dataset.sbComplete));
       button.hidden = false;
       button.setAttribute('aria-pressed', String(done));
-      button.textContent = done ? '✓ পড়া শেষ · আবার বাকি রাখুন' : 'পড়া শেষ চিহ্নিত করুন';
+      button.textContent = done ? dynT('sb.readDoneToggle') : dynT('sb.markRead');
     });
     cards.forEach((card) => {
       const done = state.done.includes(Number(card.dataset.sbCard));
       card.classList.toggle('is-complete', done);
       const label = card.querySelector('.sb-card-status');
-      if (label) label.textContent = done ? '✓ পড়া শেষ' : (Number(card.dataset.sbCard) === state.last ? 'পড়া চালিয়ে যান' : 'শুরু হয়নি');
+      if (label) label.textContent = done ? dynT('sb.readDone') : (Number(card.dataset.sbCard) === state.last ? dynT('sb.continueReading') : dynT('sb.notStarted'));
     });
     const progress = document.getElementById('sb-progress');
     if (progress) { progress.value = state.done.length; progress.setAttribute('value', String(state.done.length)); }
     const label = document.getElementById('sb-progress-label');
-    if (label) label.textContent = `${bn(TOTAL)}টির মধ্যে ${bn(state.done.length)}টি পড়া শেষ`;
+    if (label) label.textContent = dynT('sb.progress', {total: num(TOTAL), done: num(state.done.length)});
     const percent = document.getElementById('sb-progress-percent');
-    if (percent) percent.textContent = `${bn(Math.round(state.done.length / TOTAL * 100))}%`;
+    if (percent) percent.textContent = `${num(Math.round(state.done.length / TOTAL * 100))}%`;
     const resume = document.getElementById('sb-resume');
     if (resume) {
       const next = !state.done.includes(state.last) ? state.last : Array.from({ length: TOTAL }, (_, i) => FIRST + i).find((n) => !state.done.includes(n));
       resume.href = `n4-shin-bunka-lesson-${next || FIRST}.html`;
-      resume.textContent = next ? `লেসন ${bn(next)} পড়ুন →` : 'সব পড়া শেষ · আবার পড়ুন →';
+      resume.textContent = next ? dynT('sb.readLesson', {n: num(next)}) : dynT('sb.reread');
     }
     applyFilter();
     storageNotice();
@@ -113,11 +114,11 @@
       else link.removeAttribute('aria-current');
     });
     const label = document.getElementById('sb-active-label');
-    if (label) label.textContent = `বিষয় ${bn(active)} / ${bn(panels.length)}`;
+    if (label) label.textContent = dynT('sb.topicOf', {a: num(active), b: num(panels.length)});
     const previous = document.getElementById('sb-topic-prev');
     if (previous) previous.disabled = active === 1;
     const next = document.getElementById('sb-topic-next');
-    if (next) next.textContent = active === panels.length ? 'লেসন শেষ করুন ✓' : 'পরের বিষয় →';
+    if (next) next.textContent = active === panels.length ? dynT('sb.finishLesson') : dynT('sb.nextTopic');
     state.topics[lesson] = active;
     save();
     if (updateHash) {

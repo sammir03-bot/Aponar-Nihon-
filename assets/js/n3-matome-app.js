@@ -1,5 +1,6 @@
 (function () {
   'use strict';
+  function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"sb.furiganaOn": "ফুরিগানা: চালু", "sb.furiganaOff": "ফুরিগানা: বন্ধ", "mt.searchPlaceholder": "জাপানি নিয়ম বা বাংলা অর্থ লিখে খুঁজুন…", "mt.onlyUnread": "শুধু না-পড়া", "mt.clearSearch": "খোঁজা মুছুন", "mt.print": "ছাপান / পিডিএফ", "mt.allParts": "সব {n} পার্ট", "mt.partWeek": "পার্ট {a} • সপ্তাহ {b}", "mt.showingFull": "{n}টি পূর্ণ পাঠ দেখা যাচ্ছে", "mt.progress": "{done} / {total} শেখা • {left} বাকি", "g3.partStat": "{done} শেখা • {left} বাকি", "mt.themeLight": "☀ আলো", "mt.themeDark": "☾ অন্ধকার"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}
 
   const rules = Array.isArray(window.N3_MATOME_RULES) ? window.N3_MATOME_RULES : [];
   const deepNotes = window.N3_MATOME_DETAILS || {};
@@ -13,7 +14,7 @@
   document.getElementById('themeToggle')?.after(furiganaToggle);
   let showFurigana=true;
   try { localStorage.setItem('n3-matome-furigana','shown'); } catch (_) {}
-  function setFurigana(){document.body.classList.toggle('furigana-hidden',!showFurigana);furiganaToggle.setAttribute('aria-pressed',String(showFurigana));furiganaToggle.textContent=showFurigana?'ফুরিগানা: চালু':'ফুরিগানা: বন্ধ';}
+  function setFurigana(){document.body.classList.toggle('furigana-hidden',!showFurigana);furiganaToggle.setAttribute('aria-pressed',String(showFurigana));furiganaToggle.textContent=showFurigana?dynT('sb.furiganaOn'):dynT('sb.furiganaOff');}
   furiganaToggle.onclick=()=>{showFurigana=!showFurigana;setFurigana();try{localStorage.setItem('n3-matome-furigana',showFurigana?'shown':'hidden');}catch(_){}};
   setFurigana();
 
@@ -241,13 +242,13 @@
     const compareCopy = compareTitle?.parentElement?.querySelector('p');
     if (compareTitle) compareTitle.textContent = 'দেখতে একই—কাজ কিন্তু আলাদা';
     if (compareCopy) compareCopy.textContent = 'যে নিয়মগুলো সহজে গুলিয়ে যায়, সেগুলোর পার্থক্য এখানে খুব ছোট করে বলা হয়েছে।';
-    if (els.q) { els.q.placeholder = 'জাপানি নিয়ম বা বাংলা অর্থ লিখে খুঁজুন…'; els.q.setAttribute('aria-label', 'নিয়ম খুঁজুন'); }
-    if (els.undone) els.undone.textContent = 'শুধু না-পড়া';
-    if (els.reset) els.reset.textContent = 'খোঁজা মুছুন';
+    if (els.q) { els.q.placeholder = dynT('mt.searchPlaceholder'); els.q.setAttribute('aria-label', 'নিয়ম খুঁজুন'); }
+    if (els.undone) els.undone.textContent = dynT('mt.onlyUnread');
+    if (els.reset) els.reset.textContent = dynT('mt.clearSearch');
     const printButton = document.querySelector('.controls button[onclick]');
-    if (printButton) printButton.textContent = 'ছাপান / পিডিএফ';
+    if (printButton) printButton.textContent = dynT('mt.print');
     [...els.partSelect.options].forEach((option) => {
-      option.textContent = option.value === 'all' ? 'সব ৬ পার্ট' : `পার্ট ${String(option.value).padStart(2, '0')} • সপ্তাহ ${option.value}`;
+      option.textContent = option.value === 'all' ? dynT('mt.allParts', {n: dynLang() === 'bn' ? '৬' : '6'}) : dynT('mt.partWeek', {a: String(option.value).padStart(2, '0'), b: option.value});
     });
     els.partSelect.setAttribute('aria-label', 'পার্ট বাছাই করুন');
     daySelect = node('select', 'day-select');
@@ -442,14 +443,14 @@
     });
     els.list.querySelectorAll('.day-group').forEach((group) => group.classList.toggle('hidden', !group.querySelector('.rule-card:not(.hidden)')));
     els.list.querySelectorAll('.part-group').forEach((group) => group.classList.toggle('hidden', !group.querySelector('.rule-card:not(.hidden)')));
-    els.count.textContent = `${visible}টি পূর্ণ পাঠ দেখা যাচ্ছে`; els.empty.classList.toggle('show', visible === 0); els.undone.classList.toggle('active', onlyUndone);
+    els.count.textContent = dynT('mt.showingFull', {n: visible}); els.empty.classList.toggle('show', visible === 0); els.undone.classList.toggle('active', onlyUndone);
   }
 
   function updateProgress() {
-    els.progress.max = rules.length; els.progress.value = done.size; els.progressText.textContent = `${done.size} / ${rules.length} শেখা • ${rules.length - done.size} বাকি`;
+    els.progress.max = rules.length; els.progress.value = done.size; els.progressText.textContent = dynT('mt.progress', {done: done.size, total: rules.length, left: rules.length - done.size});
     document.querySelectorAll('[data-part-progress]').forEach((stat) => {
       const ids = rules.filter((rule) => rule[1] === Number(stat.dataset.partProgress)).map((rule) => rule[0]); const learned = ids.filter((id) => done.has(id)).length;
-      stat.textContent = `${learned} শেখা • ${ids.length - learned} বাকি`;
+      stat.textContent = dynT('g3.partStat', {done: learned, left: ids.length - learned});
     });
   }
   function toggleVisibleLessons(open) { cards.forEach((card) => { if (!card.classList.contains('hidden')) { const details = card.querySelector('.mastery-details'); if (details) details.open = open; } }); }
@@ -466,7 +467,7 @@
   }
   function setupTheme() {
     const saved = localStorage.getItem(themeKey); const initial = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    const apply = (theme) => { document.body.dataset.theme = theme; els.theme.textContent = theme === 'dark' ? '☀ আলো' : '☾ অন্ধকার'; };
+    const apply = (theme) => { document.body.dataset.theme = theme; els.theme.textContent = theme === 'dark' ? dynT('mt.themeLight') : dynT('mt.themeDark'); };
     apply(initial); els.theme.addEventListener('click', () => { const next = document.body.dataset.theme === 'dark' ? 'light' : 'dark'; localStorage.setItem(themeKey, next); apply(next); });
   }
   function setupBackTop() { els.backTop.addEventListener('click', () => scrollTo({ top: 0, behavior: 'smooth' })); addEventListener('scroll', () => els.backTop.classList.toggle('show', scrollY > 700), { passive: true }); }

@@ -9,6 +9,7 @@
   const empty = document.querySelector('[data-library-empty]');
   let filter = 'all';
   const bn = number => String(number).replace(/\d/g, digit => '০১২৩৪৫৬৭৮৯'[Number(digit)]);
+function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"ll.resources": "{n}টি রিসোর্স", "ll.quartetSuffix": " · QUARTET I ও II", "ll.librarySuffix": " · আপনার শেখার লাইব্রেরি"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}function num(v){return dynLang()==='bn'?bn(v):String(v);}
   const normalize = value => value.toLocaleLowerCase().replace(/\s+/g, ' ').trim();
   function render() {
     const query = normalize(search.value);
@@ -21,7 +22,7 @@
       if (!card.hidden) visible++;
     });
     filters.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.libraryFilter === filter)));
-    count.textContent = bn(visible) + 'টি রিসোর্স' + (filter === 'quartet' ? ' · QUARTET I ও II' : ' · আপনার শেখার লাইব্রেরি');
+    count.textContent = dynT('ll.resources', {n: num(visible)}) + (filter === 'quartet' ? dynT('ll.quartetSuffix') : dynT('ll.librarySuffix'));
     empty.hidden = visible > 0;
   }
   search.addEventListener('input', render);

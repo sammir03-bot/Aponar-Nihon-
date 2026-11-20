@@ -38,6 +38,7 @@
 <div class="error" id="error"><p>Reader load করা যায়নি।</p><p>QUARTET I-এর গ্রামার সহায়িকা পড়তে পারেন।</p><a class="back" href="/n3-quartet-grammar.html">৫৫টি গ্রামার পাঠ খুলুন →</a><a class="back" href="/n3.html#course">← N3 Learning Center-এ ফিরুন</a></div>
 </div></div>
 <script>
+function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"ms.ebookLoading": "eBook load হচ্ছে… {p}%", "ms.ebookOpening": "Reader খুলছে…", "ms.ebookError": "eBook load করতে সমস্যা হয়েছে।"};
 (async()=>{
  const status=document.getElementById('status'),loader=document.getElementById('loader'),error=document.getElementById('error');
  try{
@@ -46,19 +47,19 @@
    const urls=Array.from({length:8},(_,i)=>base+'chunk-'+String(i+1).padStart(2,'0')+'.txt');
    let b64='';
    for(let i=0;i<urls.length;i++){
-     status.textContent='eBook load হচ্ছে… '+Math.round((i/urls.length)*100)+'%';
+     status.textContent=dynT('ms.ebookLoading', {p: Math.round((i/urls.length)*100)});
      const r=await fetch(urls[i],{cache:'force-cache'});
      if(!r.ok) throw new Error('Chunk '+(i+1));
      b64+=(await r.text()).trim();
    }
-   status.textContent='Reader খুলছে…';
+   status.textContent=dynT('ms.ebookOpening');
    const raw=atob(b64),bytes=new Uint8Array(raw.length);
    for(let i=0;i<raw.length;i++) bytes[i]=raw.charCodeAt(i);
    const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
    const bookHtml=await new Response(stream).text();
    document.open();document.write(bookHtml);document.close();
  }catch(e){
-   console.error(e);status.textContent='eBook load করতে সমস্যা হয়েছে।';loader.style.display='none';error.style.display='block';
+   console.error(e);status.textContent=dynT('ms.ebookError');loader.style.display='none';error.style.display='block';
  }
 })();
 </script>
