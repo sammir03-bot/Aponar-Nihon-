@@ -1,0 +1,410 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "n4-vocab-lesson-43-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N4 Vocabulary Lesson 43 | আপনার নিহোন",
+      "target": "N4 語彙レッスン43 | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "সব লেসন",
+      "target": "すべてのレッスン"
+    },
+    {
+      "source": "জাপানিজ শব্দভাণ্ডার",
+      "target": "日本語の語彙"
+    },
+    {
+      "source": "প্রথমবার পড়া শিক্ষার্থীর জন্য—জাপানিজ, ふりがな, বাংলা উচ্চারণ ও সহজ বাংলা অর্থ একই কার্ডে। সার্চ, অডিও, শেখা মার্ক ও কুইজও আছে।",
+      "target": "初めて読む学習者のために—日本語、ふりがな、発音、簡単な意味が同じカードにあります。検索、音声、学習済みマーク、クイズもあります。"
+    },
+    {
+      "source": "শব্দ শেখা শুরু",
+      "target": "単語学習を始める"
+    },
+    {
+      "source": "কুইজ দিন",
+      "target": "クイズを受ける"
+    },
+    {
+      "source": "30টি শব্দ",
+      "target": "30語"
+    },
+    {
+      "source": "১ম সংস্করণ অনুযায়ী সাজানো",
+      "target": "第1版に沿って並べた"
+    },
+    {
+      "source": "জাপানিজ অডিও",
+      "target": "日本語の音声"
+    },
+    {
+      "source": "ডিভাইসের Japanese voice ব্যবহার করে",
+      "target": "デバイスの日本語音声を使う"
+    },
+    {
+      "source": "০ / 30 শেখা",
+      "target": "0 / 30 学習済み"
+    },
+    {
+      "source": "এই browser-এ progress সংরক্ষিত থাকবে",
+      "target": "このブラウザに進捗が保存されます"
+    },
+    {
+      "source": "সব",
+      "target": "すべて"
+    },
+    {
+      "source": "শেখা হয়েছে",
+      "target": "学習済み"
+    },
+    {
+      "source": "বাকি",
+      "target": "残り"
+    },
+    {
+      "source": "30টি দেখানো হচ্ছে",
+      "target": "30語を表示中"
+    },
+    {
+      "source": "Lesson 43-এর শব্দ",
+      "target": "レッスン43の単語"
+    },
+    {
+      "source": "「—」 চিহ্ন মানে আগের স্বরটি একটু লম্বা করে পড়বেন।",
+      "target": "「ー」の印は前の音を少し長く読むという意味です。"
+    },
+    {
+      "source": "↻ একটি random শব্দ",
+      "target": "↻ ランダムな単語1つ"
+    },
+    {
+      "source": "১ম সংস্করণ",
+      "target": "第1版"
+    },
+    {
+      "source": "উচ্চারণ",
+      "target": "発音"
+    },
+    {
+      "source": "ফুএমাসু",
+      "target": "ふえます"
+    },
+    {
+      "source": "রপ্তানি বৃদ্ধি পায়",
+      "target": "輸出が増える"
+    },
+    {
+      "source": "🔊 শুনুন",
+      "target": "🔊 聞く"
+    },
+    {
+      "source": "⧉ কপি",
+      "target": "⧉ コピー"
+    },
+    {
+      "source": "○ শেখা বাকি",
+      "target": "○ 未学習"
+    },
+    {
+      "source": "হেরিমাসু",
+      "target": "へります"
+    },
+    {
+      "source": "রপ্তানি কমে যায়",
+      "target": "輸出が減る"
+    },
+    {
+      "source": "আগারিমাসু",
+      "target": "あがります"
+    },
+    {
+      "source": "দাম বেড়ে যায়",
+      "target": "値段が上がる"
+    },
+    {
+      "source": "সাগারিমাসু",
+      "target": "さがります"
+    },
+    {
+      "source": "দাম কমে যায়",
+      "target": "値段が下がる"
+    },
+    {
+      "source": "কিরেমাসু",
+      "target": "きれます"
+    },
+    {
+      "source": "দড়ি ছিঁড়ে যায়",
+      "target": "ひもが切れる"
+    },
+    {
+      "source": "তোরেমাসু",
+      "target": "とれます"
+    },
+    {
+      "source": "বোতাম খুলে যায়",
+      "target": "ボタンが取れる"
+    },
+    {
+      "source": "ওচিমাসু",
+      "target": "おちます"
+    },
+    {
+      "source": "মালপত্র পড়ে যায়",
+      "target": "荷物が落ちる"
+    },
+    {
+      "source": "নাকুনারিমাসু",
+      "target": "なくなります"
+    },
+    {
+      "source": "গ্যাসোলিন শেষ হয়ে যায়",
+      "target": "ガソリンが切れる"
+    },
+    {
+      "source": "জো—বু",
+      "target": "じょうぶ"
+    },
+    {
+      "source": "মজবুত; টেকসই",
+      "target": "丈夫"
+    },
+    {
+      "source": "হেন",
+      "target": "へん"
+    },
+    {
+      "source": "অদ্ভুত; অস্বাভাবিক",
+      "target": "変"
+    },
+    {
+      "source": "শিআওয়াসে",
+      "target": "しあわせ"
+    },
+    {
+      "source": "সুখী; সৌভাগ্যবান",
+      "target": "幸せ"
+    },
+    {
+      "source": "উমাই",
+      "target": "うまい"
+    },
+    {
+      "source": "সুস্বাদু; দক্ষ",
+      "target": "うまい"
+    },
+    {
+      "source": "মাজুই",
+      "target": "まずい"
+    },
+    {
+      "source": "বিস্বাদ; খারাপ",
+      "target": "まずい"
+    },
+    {
+      "source": "ৎসুমারানাই",
+      "target": "つまらない"
+    },
+    {
+      "source": "বিরক্তিকর; মজার নয়",
+      "target": "つまらない"
+    },
+    {
+      "source": "গাসোরিন",
+      "target": "ガソリン"
+    },
+    {
+      "source": "গ্যাসোলিন; পেট্রল",
+      "target": "ガソリン"
+    },
+    {
+      "source": "হি",
+      "target": "ひ"
+    },
+    {
+      "source": "আগুন",
+      "target": "火"
+    },
+    {
+      "source": "দানবো—",
+      "target": "だんぼう"
+    },
+    {
+      "source": "হিটার; গরম করার ব্যবস্থা",
+      "target": "暖房"
+    },
+    {
+      "source": "রে—বো—",
+      "target": "れいぼう"
+    },
+    {
+      "source": "এয়ার কন্ডিশনার; ঠান্ডা করার ব্যবস্থা",
+      "target": "冷房"
+    },
+    {
+      "source": "সেনসু",
+      "target": "センス"
+    },
+    {
+      "source": "রুচি; সেন্স",
+      "target": "センス"
+    },
+    {
+      "source": "ইমানিমো",
+      "target": "いまにも"
+    },
+    {
+      "source": "এখনই যেন; যেকোনো মুহূর্তে",
+      "target": "今にも"
+    },
+    {
+      "source": "ওয়াআ",
+      "target": "わあ"
+    },
+    {
+      "source": "ওয়াও!; আহা!",
+      "target": "わあ！"
+    },
+    {
+      "source": "কাইইন",
+      "target": "かいいん"
+    },
+    {
+      "source": "সদস্য",
+      "target": "会員"
+    },
+    {
+      "source": "তেকিতো—",
+      "target": "てきとう"
+    },
+    {
+      "source": "উপযুক্ত; যথাযথ",
+      "target": "適当"
+    },
+    {
+      "source": "নেনরে—",
+      "target": "ねんれい"
+    },
+    {
+      "source": "বয়স",
+      "target": "年齢"
+    },
+    {
+      "source": "শু—ন্যু—",
+      "target": "しゅうにゅう"
+    },
+    {
+      "source": "আয়; উপার্জন",
+      "target": "収入"
+    },
+    {
+      "source": "পিত্তারি",
+      "target": "ぴったり"
+    },
+    {
+      "source": "একদম ঠিক; মানানসই",
+      "target": "ぴったり"
+    },
+    {
+      "source": "সোনো—এ",
+      "target": "そのうえ"
+    },
+    {
+      "source": "তার ওপর; এছাড়াও",
+      "target": "その上"
+    },
+    {
+      "source": "～তো ইইমাসু",
+      "target": "〜といいます"
+    },
+    {
+      "source": "~ বলা হয়; নাম ~",
+      "target": "〜と言います"
+    },
+    {
+      "source": "বারা",
+      "target": "ばら"
+    },
+    {
+      "source": "গোলাপ",
+      "target": "バラ"
+    },
+    {
+      "source": "দোরাইবু",
+      "target": "ドライブ"
+    },
+    {
+      "source": "ড্রাইভ; গাড়িতে ঘোরা",
+      "target": "ドライブ"
+    },
+    {
+      "source": "কোনো শব্দ পাওয়া যায়নি।",
+      "target": "単語が見つかりませんでした。"
+    },
+    {
+      "source": "অন্য বানান বা বাংলা অর্থ দিয়ে চেষ্টা করুন।",
+      "target": "別のつづりや意味で試してください。"
+    },
+    {
+      "source": "১০ প্রশ্ন • দুই ধরনের অনুশীলন",
+      "target": "10問 • 2種類の練習"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "自分でテストしてみましょう"
+    },
+    {
+      "source": "কখনো জাপানিজ দেখে বাংলা অর্থ, আবার কখনো বাংলা দেখে সঠিক জাপানিজ বেছে নিন। প্রতিবার নতুন random প্রশ্ন আসবে।",
+      "target": "日本語を見て意味を選ぶことも、意味を見て正しい日本語を選ぶこともあります。毎回新しいランダムな問題が出ます。"
+    },
+    {
+      "source": "নতুন কুইজ শুরু",
+      "target": "新しいクイズを始める"
+    },
+    {
+      "source": "প্রশ্ন ১ / ১০",
+      "target": "問題 1 / 10"
+    },
+    {
+      "source": "স্কোর ০",
+      "target": "スコア 0"
+    },
+    {
+      "source": "পরের প্রশ্ন",
+      "target": "次の問題"
+    },
+    {
+      "source": "তালিকা নোট:",
+      "target": "リストの注:"
+    },
+    {
+      "source": "আপনার দেওয়া পুরোনো ফাইলের সঙ্গে মিল রেখে Minna no Nihongo Shokyu II-এর ১ম সংস্করণের lesson order ব্যবহার করা হয়েছে। OCR-এ ভাঙা কানা, duplicate example এবং ভুল বাংলা অর্থ বাদ দিয়ে entry-গুলো নতুন করে তৈরি করা হয়েছে। এটি শিক্ষার্থীর সহায়ক free resource; মূল বইয়ের বিকল্প নয়।",
+      "target": "あなたが提供した古いファイルに合わせて、Minna no Nihongo Shokyu II の第1版のレッスン順序を使いました。OCR で壊れたかな、重複した例、間違った意味を除いて、項目を作り直しました。これは学習者の補助的な無料リソースで、元の本の代わりではありません。"
+    },
+    {
+      "source": "আগের লেসন",
+      "target": "前のレッスン"
+    },
+    {
+      "source": "সব N4 লেসন",
+      "target": "すべての N4 レッスン"
+    },
+    {
+      "source": "পরের লেসন",
+      "target": "次のレッスン"
+    },
+    {
+      "source": "আপনার নিহোন • শিক্ষার্থীদের জন্য সহজ বাংলা জাপানিজ শিক্ষা",
+      "target": "আপনার নিহোন • 学習者のための簡単な日本語学習"
+    }
+  ]
+}

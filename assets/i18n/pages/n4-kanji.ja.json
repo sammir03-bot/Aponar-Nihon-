@@ -1,0 +1,86 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "n4-kanji",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N4 Kanji Master Dark — 漢字マスター | আপনার নিহোন",
+      "target": "N4 漢字マスターダーク — 漢字マスター | あなたのニホンの"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "☰ অপশন",
+      "target": "☰ メニュー"
+    },
+    {
+      "source": "২১০টি Kanji ফ্লিপ কার্ড, লেখার প্র্যাকটিস, কুইজ ও প্রোগ্রেস ট্র্যাকার — একসাথে।",
+      "target": "210個の漢字フリップカード、書き取り練習、クイズ、進捗トラッカーが一つの場所に。"
+    },
+    {
+      "source": "শেখা শুরু করুন ↓",
+      "target": "学習を始める ↓"
+    },
+    {
+      "source": "✍ লেখার প্র্যাকটিস",
+      "target": "✍ 書き取り練習"
+    },
+    {
+      "source": "সব",
+      "target": "すべて"
+    },
+    {
+      "source": "কমন",
+      "target": "よく使う"
+    },
+    {
+      "source": "সময়",
+      "target": "時間"
+    },
+    {
+      "source": "স্থান",
+      "target": "場所"
+    },
+    {
+      "source": "শিক্ষা",
+      "target": "教育"
+    },
+    {
+      "source": "খাবার",
+      "target": "食べ物"
+    },
+    {
+      "source": "প্রকৃতি",
+      "target": "自然"
+    },
+    {
+      "source": "মানুষ",
+      "target": "人"
+    },
+    {
+      "source": "ক্রিয়া",
+      "target": "動詞"
+    },
+    {
+      "source": "বিশেষণ",
+      "target": "形容詞"
+    },
+    {
+      "source": "অনুভূতি",
+      "target": "感情"
+    },
+    {
+      "source": "অন্যান্য",
+      "target": "その他"
+    },
+    {
+      "source": "© 2025 আপনার নিহোন",
+      "target": "© 2025 あなたのニホン"
+    }
+  ]
+}

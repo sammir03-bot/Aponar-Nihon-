@@ -1,0 +1,230 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "n5-grammar-lesson-17-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "N5 Grammar Lesson 17 | ない-form・ないでください・なければなりません・なくてもいいです | আপনার নিহোন",
+      "target": "N5 文法レッスン17 | ない形・ないでください・なければなりません・なくてもいいです | আপনার নিহোন"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "করবেন না, করতে হবে, না করলেও চলবে — rule ও obligation",
+      "target": "してはいけない、しなければならない、しなくてもいい — ルールと義務"
+    },
+    {
+      "source": "Grammar শুরু",
+      "target": "文法を始める"
+    },
+    {
+      "source": "আজকের Learning Goal",
+      "target": "今日の学習目標"
+    },
+    {
+      "source": "ない-form বানানো",
+      "target": "ない形を作る"
+    },
+    {
+      "source": "ভদ্র নিষেধ",
+      "target": "丁寧な禁止"
+    },
+    {
+      "source": "করতেই হবে",
+      "target": "しなければならない"
+    },
+    {
+      "source": "সহজ ব্যাখ্যা + structure + example",
+      "target": "やさしい解説 + structure + example"
+    },
+    {
+      "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+      "target": "各パターンはまず structure を見て、それから例文を声に出して言いましょう。Audio ボタンを押すと日本語の文が聞けます。"
+    },
+    {
+      "source": "verb-এর negative plain form। Lesson 17-এর সব grammar এই form দিয়ে তৈরি।",
+      "target": "動詞の否定の普通形です。Lesson 17 の文法はすべてこの形で作ります。"
+    },
+    {
+      "source": "ইকিমাসু → ইকানাই",
+      "target": "行きます → 行かない"
+    },
+    {
+      "source": "যাই → যাই না",
+      "target": "行く → 行かない"
+    },
+    {
+      "source": "তাবেমাসু → তাবেনাই",
+      "target": "食べます → 食べない"
+    },
+    {
+      "source": "খাই → খাই না",
+      "target": "食べる → 食べない"
+    },
+    {
+      "source": "শিমাসু → শিনাই",
+      "target": "します → しない"
+    },
+    {
+      "source": "করি → করি না",
+      "target": "する → しない"
+    },
+    {
+      "source": "দয়া করে করবেন না — polite prohibition/request।",
+      "target": "「〜しないでください」— 丁寧な禁止・依頼です。"
+    },
+    {
+      "source": "てはいけません হলো rule/forbidden; ないでください হলো request।",
+      "target": "てはいけません は規則・禁止、ないでください は依頼です。"
+    },
+    {
+      "source": "কোকো দে শাশিন ও তোরানাইদেকুদাসাই।",
+      "target": "ここで写真を撮らないでください。"
+    },
+    {
+      "source": "এখানে ছবি তুলবেন না।",
+      "target": "ここで写真を撮らないでください。"
+    },
+    {
+      "source": "নিহোনগো ও ওয়াসুরেনাইদেকুদাসাই।",
+      "target": "日本語を忘れないでください。"
+    },
+    {
+      "source": "জাপানি ভুলবেন না।",
+      "target": "日本語を忘れないでください。"
+    },
+    {
+      "source": "করতেই হবে / বাধ্যতামূলক।",
+      "target": "しなければならない／義務です。"
+    },
+    {
+      "source": "Formal/polite expression; spoken Japanese-এ なきゃ may appear, কিন্তু এখানে polite form শিখুন।",
+      "target": "フォーマルで丁寧な表現です。話し言葉では なきゃ が出ることもありますが、ここでは丁寧な形を学びましょう。"
+    },
+    {
+      "source": "আশিতা মাদে নি রেপোতো ও দাসানাকেরে বা নারিমাসেন।",
+      "target": "明日までにレポートを出さなければなりません。"
+    },
+    {
+      "source": "কাল পর্যন্ত রিপোর্ট জমা দিতে হবে।",
+      "target": "明日までにレポートを出さなければなりません。"
+    },
+    {
+      "source": "মাইনিচি বেনকিয়ো শিনাকেরে বা নারিমাসেন।",
+      "target": "毎日勉強しなければなりません。"
+    },
+    {
+      "source": "প্রতিদিন পড়তে হবে।",
+      "target": "毎日勉強しなければなりません。"
+    },
+    {
+      "source": "না করলেও চলবে / করতে হবে না।",
+      "target": "しなくてもいい／しなくてよいです。"
+    },
+    {
+      "source": "Obligation নেই বোঝায়, prohibition নয়।",
+      "target": "義務がないことを表します。禁止ではありません。"
+    },
+    {
+      "source": "আশিতা কোনাকুতে মো ইইদেসু।",
+      "target": "明日来なくてもいいです。"
+    },
+    {
+      "source": "কাল না এলেও চলবে।",
+      "target": "明日来なくてもいいです。"
+    },
+    {
+      "source": "কুৎসু ও নুগানাকুতে মো ইইদেসু।",
+      "target": "靴を脱がなくてもいいです。"
+    },
+    {
+      "source": "জুতা না খুললেও চলবে।",
+      "target": "靴を脱がなくてもいいです。"
+    },
+    {
+      "source": "object-কে contrast/topic করলে を এর জায়গায় は আসে।",
+      "target": "目的語を対比・主題にすると、を の代わりに は が来ます。"
+    },
+    {
+      "source": "কোনো কুসুরি ওয়া মাইনিচি নোমানাকেরে বা নারিমাসেন।",
+      "target": "この薬は毎日飲まなければなりません。"
+    },
+    {
+      "source": "এই ওষুধ প্রতিদিন খেতে হবে।",
+      "target": "この薬は毎日飲まなければなりません。"
+    },
+    {
+      "source": "ও সাকে ওয়া নোমিমাসেন।",
+      "target": "お酒は飲みません。"
+    },
+    {
+      "source": "মদ/অ্যালকোহল পান করি না।",
+      "target": "お酒は飲みません。"
+    },
+    {
+      "source": "মুখে বলার Practice",
+      "target": "スピーキング練習"
+    },
+    {
+      "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+      "target": "この文を面接・教室の会話のようにして、3回ずつ読みましょう。"
+    },
+    {
+      "source": "কোকো দে শাশিন ও তোত্তে মো ইইদেসু কা।",
+      "target": "ここで写真を撮ってもいいですか。"
+    },
+    {
+      "source": "এখানে ছবি তুলতে পারি?",
+      "target": "ここで写真を撮ってもいいですか。"
+    },
+    {
+      "source": "সুমিমাসেন, তোরানাইদেকুদাসাই।",
+      "target": "すみません、撮らないでください。"
+    },
+    {
+      "source": "দুঃখিত, তুলবেন না।",
+      "target": "すみません、撮らないでください。"
+    },
+    {
+      "source": "মাইনিচি নানি ও শিনাকেরে বা নারিমাসেন কা।",
+      "target": "毎日何をしなければなりませんか。"
+    },
+    {
+      "source": "প্রতিদিন কী করতে হয়?",
+      "target": "毎日何をしなければなりませんか。"
+    },
+    {
+      "source": "নিহোনগো ও বেনকিয়ো শিনাকেরে বা নারিমাসেন।",
+      "target": "日本語を勉強しなければなりません。"
+    },
+    {
+      "source": "জাপানি পড়তে হয়।",
+      "target": "日本語を勉強しなければなりません。"
+    },
+    {
+      "source": "আশিতা কোনাকুতে মো ইইদেসু কা।",
+      "target": "明日来なくてもいいですか。"
+    },
+    {
+      "source": "কাল না এলেও চলবে?",
+      "target": "明日来なくてもいいですか。"
+    },
+    {
+      "source": "নিজেকে পরীক্ষা করুন",
+      "target": "自分でテストしてみましょう"
+    },
+    {
+      "source": "না করলেও চলবে = ?",
+      "target": "しなくてもいいです = ?"
+    },
+    {
+      "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 17 • Verified Premium Detailed Version",
+      "target": "© 2026 আপনার নিহোন • N5 文法レッスン17 • Verified Premium Detailed Version"
+    }
+  ]
+}

@@ -1,0 +1,286 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "ja",
+  "page": "n5-grammar",
+  "reviewed": true,
+  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+  "entries": [
+    {
+      "source": "N5 Grammar | আপনার নিহোন",
+      "target": "N5 文法 | あなたのニホン"
+    },
+    {
+      "source": "Lesson তালিকায় যান",
+      "target": "レッスン一覧へ"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "হোম",
+      "target": "ホーム"
+    },
+    {
+      "source": "ভিত্তি থেকে আত্মবিশ্বাস",
+      "target": "基礎からの自信"
+    },
+    {
+      "source": "২৫টি ধাপে জাপানি বাক্য গঠন, particle, verb form ও প্রয়োজনীয় grammar বাংলা ব্যাখ্যায় আয়ত্ত করুন।",
+      "target": "25ステップで日本語の文句構築、助詞、動詞の活用、そして必要な文法をベンガル語の解説でマスターしましょう。"
+    },
+    {
+      "source": "প্রথম Lesson শুরু করুন",
+      "target": "最初のレッスンを始める"
+    },
+    {
+      "source": "Lesson খুঁজুন",
+      "target": "レッスンを検索"
+    },
+    {
+      "source": "আমার অগ্রগতি",
+      "target": "マイ進捗"
+    },
+    {
+      "source": "সম্পন্ন",
+      "target": "完了"
+    },
+    {
+      "source": "0/25 lesson সম্পন্ন",
+      "target": "0/25 レッスン完了"
+    },
+    {
+      "source": "শেষ করা lesson-এ ✓ দিন। এই device-এ আপনার progress স্বয়ংক্রিয়ভাবে সংরক্ষিত থাকবে।",
+      "target": "完了したレッスンに ✓ をつけてください。このデバイスにあなたの進捗が自動的に保存されます。"
+    },
+    {
+      "source": "মোট LESSON",
+      "target": "総レッスン数"
+    },
+    {
+      "source": "বাকি",
+      "target": "残り"
+    },
+    {
+      "source": "Lesson নম্বর বেছে নিন",
+      "target": "レッスン番号を選択"
+    },
+    {
+      "source": "দেখুন",
+      "target": "表示"
+    },
+    {
+      "source": "সব",
+      "target": "すべて"
+    },
+    {
+      "source": "পুরো কোর্স",
+      "target": "コース全体"
+    },
+    {
+      "source": "পরিচয় ও ভিত্তি",
+      "target": "紹介と基礎"
+    },
+    {
+      "source": "দৈনন্দিন বাক্য",
+      "target": "日常会話"
+    },
+    {
+      "source": "রূপ ও নিয়ম",
+      "target": "活用とルール"
+    },
+    {
+      "source": "প্রয়োগ ও সংযোগ",
+      "target": "応用と接続"
+    },
+    {
+      "source": "আপনার Lesson বেছে নিন",
+      "target": "レッスンを選択"
+    },
+    {
+      "source": "নম্বর, Japanese pattern অথবা বাংলা বিষয় দিয়ে search করুন। Range ও progress filter ব্যবহার করে প্রয়োজনীয় lesson দ্রুত খুলুন।",
+      "target": "番号、日本語のパターン、またはベンガル語のトピックで検索してください。範囲と進捗のフィルターを使用して、必要なレッスンを素早く開くことができます。"
+    },
+    {
+      "source": "টি lesson দেখানো হচ্ছে",
+      "target": "件のレッスンが表示されています"
+    },
+    {
+      "source": "ধাপ 1 · পরিচয় ও ভিত্তি",
+      "target": "ステップ 1 · 紹介と基礎"
+    },
+    {
+      "source": "নিজের পরিচয় ও basic statement/question তৈরি।",
+      "target": "自己紹介と基本的な文・質問の作成。"
+    },
+    {
+      "source": "文法 · ব্যাকরণ",
+      "target": "文法 · 文法"
+    },
+    {
+      "source": "Lesson খুলুন",
+      "target": "レッスンを開く"
+    },
+    {
+      "source": "জিনিস দেখিয়ে বলা, জিজ্ঞাসা করা ও ownership।",
+      "target": "ものを指し示して言うこと、尋ねること、所有権。"
+    },
+    {
+      "source": "স্থান, দিক, ভবন ও দাম নিয়ে বাক্য।",
+      "target": "場所、方向、建物、価格に関する文。"
+    },
+    {
+      "source": "সময়, তারিখ ও polite verb present/past।",
+      "target": "時間、日付、丁寧な動詞の現在形・過去形。"
+    },
+    {
+      "source": "যাওয়া/আসা/ফেরা, যানবাহন ও সঙ্গী।",
+      "target": "行く・来る・帰る、乗り物、同伴者。"
+    },
+    {
+      "source": "ধাপ 2 · দৈনন্দিন বাক্য",
+      "target": "ステップ 2 · 日常会話"
+    },
+    {
+      "source": "কাজ করা, invitation ও suggestion।",
+      "target": "行動すること、誘い、提案。"
+    },
+    {
+      "source": "উপকরণ/ভাষা দিয়ে কাজ ও দেওয়া-নেওয়া।",
+      "target": "道具・言語を使った動作、授受。"
+    },
+    {
+      "source": "adjective দিয়ে মানুষ/জিনিস বর্ণনা।",
+      "target": "形容詞を使った人やものの描写。"
+    },
+    {
+      "source": "পছন্দ, দক্ষতা, বোঝা ও কারণ বলা।",
+      "target": "好み、得意不得意、理解、理由を言うこと。"
+    },
+    {
+      "source": "কোথায় কী আছে—existence sentence।",
+      "target": "どこに何があるか — 存在を表す文。"
+    },
+    {
+      "source": "ধাপ 3 · রূপ ও নিয়ম",
+      "target": "ステップ 3 · 活用とルール"
+    },
+    {
+      "source": "গণনা, সময়কাল ও frequency।",
+      "target": "数えること、期間、頻度。"
+    },
+    {
+      "source": "past tense adjective/noun এবং comparison।",
+      "target": "形容詞・名詞の過去形と比較。"
+    },
+    {
+      "source": "ইচ্ছা ও উদ্দেশ্য নিয়ে বাক্য।",
+      "target": "願望と目的を表す文。"
+    },
+    {
+      "source": "অনুরোধ, চলমান কাজ ও offer।",
+      "target": "依頼、進行中の動作、およびオファー。"
+    },
+    {
+      "source": "অনুমতি, নিষেধ ও ongoing state।",
+      "target": "許可、禁止、および進行中の状態。"
+    },
+    {
+      "source": "ধাপ 4 · Verb forms",
+      "target": "ステップ 4 · 動詞の活用"
+    },
+    {
+      "source": "পরপর কাজ ও adjective/noun সংযোগ।",
+      "target": "連続する動作、および形容詞・名詞の接続。"
+    },
+    {
+      "source": "নিষেধ, বাধ্যতা ও না করলেও চলে।",
+      "target": "禁止、義務、およびしなくてもよいこと。"
+    },
+    {
+      "source": "ability, hobby এবং before structure।",
+      "target": "能力、趣味、および～する前の表現。"
+    },
+    {
+      "source": "অভিজ্ঞতা, multiple actions ও change।",
+      "target": "経験、複数の動作、および変化。"
+    },
+    {
+      "source": "formal থেকে casual speech-এর foundation।",
+      "target": "フォーマルからカジュアルな話し方への基礎。"
+    },
+    {
+      "source": "ধাপ 5 · প্রয়োগ ও সংযোগ",
+      "target": "ステップ 5 · 応用と接続"
+    },
+    {
+      "source": "মতামত, quote ও confirmation।",
+      "target": "意見、引用、および確認。"
+    },
+    {
+      "source": "clause দিয়ে noun বর্ণনা।",
+      "target": "節による名詞の修飾。"
+    },
+    {
+      "source": "সময় ও automatic condition।",
+      "target": "時間と自動的な条件。"
+    },
+    {
+      "source": "কারো জন্য কিছু করা/পাওয়া।",
+      "target": "誰かのために何かをすること・してもらうこと。"
+    },
+    {
+      "source": "if/when এবং even if structure।",
+      "target": "仮定・条件（if/when）と逆接の仮定（even if）の表現。"
+    },
+    {
+      "source": "কোনো Lesson পাওয়া যায়নি",
+      "target": "レッスンが見つかりませんでした"
+    },
+    {
+      "source": "অন্য শব্দ লিখুন অথবা filter মুছে আবার চেষ্টা করুন।",
+      "target": "別のキーワードを入力するか、フィルターをクリアしてもう一度お試しください。"
+    },
+    {
+      "source": "সব Lesson দেখুন",
+      "target": "すべてのレッスンを見る"
+    },
+    {
+      "source": "প্রতিটি Lesson থেকে সর্বোচ্চ ফল নিন",
+      "target": "すべてのレッスンから最大の成果を得る"
+    },
+    {
+      "source": "বিষয় দেখে Lesson খুলুন",
+      "target": "トピックからレッスンを選ぶ"
+    },
+    {
+      "source": "কার্ডের Japanese pattern ও বাংলা সারাংশ দেখে প্রয়োজনীয় lesson বেছে নিন।",
+      "target": "カードの日本語のパターンとベンガル語の要約を見て、必要なレッスンを選びましょう。"
+    },
+    {
+      "source": "উদাহরণসহ অনুশীলন করুন",
+      "target": "例文と一緒に練習する"
+    },
+    {
+      "source": "ব্যাখ্যা পড়ুন, audio শুনুন এবং quiz দিয়ে নিজের বোঝাপড়া যাচাই করুন।",
+      "target": "解説を読み、音声を聴いて、クイズで自分の理解度を確認しましょう。"
+    },
+    {
+      "source": "শেষ হলে ✓ দিন",
+      "target": "終わったら ✓ をつける"
+    },
+    {
+      "source": "সম্পন্ন lesson আলাদা থাকবে এবং Continue button পরের lesson দেখাবে।",
+      "target": "完了したレッスンは分けて保存され、「続ける」ボタンで次のレッスンが表示されます。"
+    },
+    {
+      "source": "· বাংলা ভাষাভাষীদের জন্য জাপানি শেখার প্ল্যাটফর্ম",
+      "target": "· ベンガル語話者のための日本語学習プラットフォーム"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "お問い合わせ"
+    }
+  ]
+}
