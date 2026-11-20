@@ -1,0 +1,414 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "n4-grammar-lesson-40-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Pumunta sa pangunahing nilalaman"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 40 · জটিল বাক্য",
+      "target": "Lesson 40 · Kumplikadong pangungusap"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Lahat ng Lesson"
+    },
+    {
+      "source": "জটিল বাক্য",
+      "target": "Mga kumplikadong pangungusap"
+    },
+    {
+      "source": "ধাপ ৩ · 36–40",
+      "target": "Hakbang 3 · 36–40"
+    },
+    {
+      "source": "একটি প্রশ্নকে বড় বাক্যের ভেতর বসানো, yes/no অনিশ্চয়তা প্রকাশ এবং উত্তর জানতে বাস্তবে চেষ্টা করে দেখা।",
+      "target": "Paglalagay ng isang tanong sa loob ng malaking pangungusap, pagpapahayag ng yes/no na kawalan ng katiyakan at aktwal na pagsubok upang malaman ang sagot."
+    },
+    {
+      "source": "3টি বিস্তারিত grammar block",
+      "target": "3 detalyadong grammar block"
+    },
+    {
+      "source": "10টি Japanese example",
+      "target": "10 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice na may paliwanag"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile at print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Itago ang あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Hindi pa tapos"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Markahan bilang tapos"
+    },
+    {
+      "source": "Lesson 40 · লক্ষ্য",
+      "target": "Lesson 40 · Layunin"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Ang magagawa mo pagkatapos ng Lesson na ito"
+    },
+    {
+      "source": "‘স্টেশন কোথায়?’ একটি সরাসরি প্রশ্ন। ‘স্টেশন কোথায় আছে জানেন?’—এখানে প্রশ্নটি বড় বাক্যের object। Japanese embedded question-এ ভেতরের か রেখে বাইরের 知っていますか／調べます／教えてください যোগ হয়; polite ですか সরাসরি বসে না।",
+      "target": "Ang 'nasaan ang istasyon?' ay isang direktang tanong. Ang 'alam mo ba kung nasaan ang istasyon?'—dito, ang tanong ang object ng malaking pangungusap. Sa Japanese embedded question, pinapanatili ang panloob na か at idinaragdag sa labas ang 知っていますか／調べます／教えてください; hindi direktang inilalagay ang polite na ですか."
+    },
+    {
+      "source": "疑問詞-সহ প্রশ্নকে plain clause＋か দিয়ে embed করবেন",
+      "target": "I-e-embed mo ang tanong na may 疑問詞 gamit ang plain clause＋か"
+    },
+    {
+      "source": "yes/no প্রশ্নে かどうか ব্যবহার করবেন",
+      "target": "Gagamitin mo ang かどうか sa yes/no na tanong"
+    },
+    {
+      "source": "embedded noun/な-adjective-এর だ বাদ দেওয়ার নিয়ম জানবেন",
+      "target": "Malalaman mo ang panuntunan sa pagtanggal ng だ ng embedded noun/な-adjective"
+    },
+    {
+      "source": "Vてみます দিয়ে ‘চেষ্টা করে দেখে ফল জানা’ বলবেন",
+      "target": "Sasabihin mo ang 'subukang gawin at malaman ang resulta' gamit ang Vてみます"
+    },
+    {
+      "source": "কী/কে/কোথায়/কখন—এমন প্রশ্নকে বড় বাক্যের অংশ করা",
+      "target": "Paggawa ng tanong tulad ng ano/sino/saan/kailan bilang bahagi ng malaking pangungusap"
+    },
+    {
+      "source": "গঠন",
+      "target": "Istruktura"
+    },
+    {
+      "source": "ধরন",
+      "target": "Uri"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Halimbawa"
+    },
+    {
+      "source": "ভেতরের প্রশ্ন",
+      "target": "Panloob na tanong"
+    },
+    {
+      "source": "জানানো",
+      "target": "Pagpapaalam"
+    },
+    {
+      "source": "তদন্ত",
+      "target": "Pagsisiyasat"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detalyadong paliwanag"
+    },
+    {
+      "source": "ভেতরের প্রশ্নের word order সাধারণ Japanese clause-এর মতো; question word নিজের জায়গায় থাকে। どこに駅がありますか → 駅がどこにあるか知っていますか।",
+      "target": "Ang word order ng panloob na tanong ay tulad ng karaniwang Japanese clause; ang question word ay nananatili sa sarili nitong lugar. どこに駅がありますか → 駅がどこにあるか知っていますか."
+    },
+    {
+      "source": "Embedded clause plain style নেয়; どこですか知っていますか ✕। ভেতরের か প্রশ্নের boundary, বাইরের か পুরো বাক্যকে প্রশ্ন করে—তাই শেষে দুই ভিন্ন か আসতে পারে।",
+      "target": "Ang embedded clause ay kumukuha ng plain style; どこですか知っていますか ✕. Ang panloob na か ay boundary ng tanong, ang panlabas na か ay gumagawa ng tanong sa buong pangungusap—kaya maaaring dumating ang dalawang magkaibang か sa dulo."
+    },
+    {
+      "source": "Subordinate subject অনেক সময় が: だれが来るか分かりません。",
+      "target": "Ang subordinate subject ay madalas が: だれが来るか分かりません."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Ang dapat tandaan"
+    },
+    {
+      "source": "Question word থাকলে かどうか নয়; শুধু か।",
+      "target": "Kung may question word, hindi かどうか; か lang."
+    },
+    {
+      "source": "পরের ট্রেন কখন আসে জানেন?",
+      "target": "Alam mo ba kung kailan darating ang susunod na tren?"
+    },
+    {
+      "source": "এই কানজি কীভাবে পড়ে বলুন।",
+      "target": "Sabihin mo kung paano basahin ang kanji na ito."
+    },
+    {
+      "source": "মিটিংয়ে কে থাকবেন যাচাই করছি।",
+      "target": "Sisiguraduhin ko kung sino ang dadalo sa meeting."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Mali"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Tama"
+    },
+    {
+      "source": "কেন:",
+      "target": "Bakit:"
+    },
+    {
+      "source": "Direct polite question-কে plain embedded clause-এ বদলান।",
+      "target": "Baguhin ang direct polite question sa plain embedded clause."
+    },
+    {
+      "source": "হবে কি হবে না / সত্য কি না—yes-no প্রশ্নকে embed করা",
+      "target": "Mangyayari ba o hindi / totoo ba o hindi—pag-e-embed ng yes-no na tanong"
+    },
+    {
+      "source": "ক্রিয়া/い-A",
+      "target": "Verb/い-A"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-adjective"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Pangngalan"
+    },
+    {
+      "source": "Original question-এর উত্তর はい/いいえ হলে かどうか: 店が開いていますか → 店が開いているかどうか調べます।",
+      "target": "Kung ang sagot sa original question ay はい/いいえ, かどうか: 店が開いていますか → 店が開いているかどうか調べます."
+    },
+    {
+      "source": "Question word থাকলে かどうか ব্যবহার করবেন না: いつ来るか ✓, いつ来るかどうか ✕।",
+      "target": "Kung may question word, huwag gumamit ng かどうか: いつ来るか ✓, いつ来るかどうか ✕."
+    },
+    {
+      "source": "N/な-A present affirmative-এর だ বাদ: 学生かどうか, 必要かどうか। Negative option আলাদা না লিখলেও どうか-তে ‘না কি’ অন্তর্ভুক্ত।",
+      "target": "Tanggalin ang だ ng N/な-A present affirmative: 学生かどうか, 必要かどうか. Kahit hindi hiwalay na isulat ang negative option, kasama na sa どうか ang 'o hindi'."
+    },
+    {
+      "source": "কখন/কোথায়/কে → か; হ্যাঁ কি না → かどうか।",
+      "target": "Kailan/saan/sino → か; oo ba o hindi → かどうか."
+    },
+    {
+      "source": "এই বাস স্টেশনে যায় কি না চালককে জিজ্ঞেস করব।",
+      "target": "Itatanong ko sa driver kung pupunta ang bus na ito sa istasyon."
+    },
+    {
+      "source": "কথাটি সত্য কি না জানি না।",
+      "target": "Hindi ko alam kung totoo ang sinabi."
+    },
+    {
+      "source": "ওষুধটি নিরাপদ কি না যাচাই করুন।",
+      "target": "Suriin kung ligtas ang gamot."
+    },
+    {
+      "source": "Noun-এর だ বাদ।",
+      "target": "Tanggalin ang だ ng noun."
+    },
+    {
+      "source": "ফল কী হয় জানতে বাস্তবে চেষ্টা করে দেখা",
+      "target": "Aktwal na pagsubok upang malaman kung ano ang resulta"
+    },
+    {
+      "source": "চেষ্টা",
+      "target": "Pagsubok"
+    },
+    {
+      "source": "ইচ্ছা",
+      "target": "Intensyon"
+    },
+    {
+      "source": "পরামর্শ",
+      "target": "Payo"
+    },
+    {
+      "source": "অতীত",
+      "target": "Nakaraan"
+    },
+    {
+      "source": "এখানে みる ‘দেখা’ নয়; auxiliary হয়ে ‘try doing’। তাই objectকে 見る নয়, আগের verb-এর て-form: この料理を食べてみます।",
+      "target": "Dito, ang みる ay hindi 'pagkita'; ito ay auxiliary na 'try doing'. Kaya hindi 見る ang object, kundi ang て-form ng naunang verb: この料理を食べてみます."
+    },
+    {
+      "source": "অজানা ফল/অভিজ্ঞতা যাচাই করতে ব্যবহার হয়। প্রতিদিনের নিশ্চিত কাজ ‘চেষ্টা’ নয়: 毎朝歯を磨いてみます অস্বাভাবিক, যদি নতুন পদ্ধতি পরীক্ষা না হয়।",
+      "target": "Ginagamit ito upang suriin ang hindi kilalang resulta/karanasan. Ang pang-araw-araw na tiyak na gawain ay hindi 'pagsubok': ang 毎朝歯を磨いてみます ay hindi natural, maliban kung sinusubukan ang bagong paraan."
+    },
+    {
+      "source": "Vようとする (চেষ্টা করা/ঠিক মুহূর্ত) উচ্চতর ভিন্ন pattern; N4-এ てみるকে experiential try হিসেবে ধরুন।",
+      "target": "Ang Vようとする (pagsubok/tamang sandali) ay mas mataas na magkaibang pattern; sa N4, ituring ang てみる bilang experiential try."
+    },
+    {
+      "source": "見る kanji সাধারণত auxiliary てみる-তে kana-তে লেখা হয়, তবে দুটোই দেখা যায়।",
+      "target": "Ang kanji ng 見る ay karaniwang isinusulat sa kana sa auxiliary na てみる, ngunit pareho itong nakikita."
+    },
+    {
+      "source": "খাবারটি সুস্বাদু মনে হচ্ছে। খেয়ে দেখি।",
+      "target": "Mukhang masarap ang pagkain. Subukan kong kainin."
+    },
+    {
+      "source": "বুঝিনি বলে শিক্ষককে জিজ্ঞেস করে দেখেছি।",
+      "target": "Dahil hindi ko naintindihan, sinubukan kong itanong sa guro."
+    },
+    {
+      "source": "অ্যাপটি ব্যবহার করে দেখুন।",
+      "target": "Subukan mong gamitin ang app."
+    },
+    {
+      "source": "জাপানে গেলে কিমোনো পরে দেখতে চাই।",
+      "target": "Kung pupunta ako sa Japan, gusto kong subukang magsuot ng kimono."
+    },
+    {
+      "source": "মূল verb-এর て-form＋みます।",
+      "target": "Ang て-form ng pangunahing verb＋みます."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Pagkakaiba sa isang sulyap"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Alin sa anong sitwasyon?"
+    },
+    {
+      "source": "মূল প্রশ্ন",
+      "target": "Orihinal na tanong"
+    },
+    {
+      "source": "Embedded রূপ",
+      "target": "Embedded na anyo"
+    },
+    {
+      "source": "ব্যবহার",
+      "target": "Paggamit"
+    },
+    {
+      "source": "な-A-এর だ বাদ",
+      "target": "Tanggalin ang だ ng な-A"
+    },
+    {
+      "source": "বাস্তবে চেষ্টা করে দেখা",
+      "target": "Aktwal na pagsubok"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Tunay na Pag-uusap"
+    },
+    {
+      "source": "নতুন রেস্তোরাঁ যাচাই",
+      "target": "Pagsusuri ng bagong restaurant"
+    },
+    {
+      "source": "স্টেশনের সামনে নতুন দোকান হয়েছে।",
+      "target": "May bagong tindahan sa harap ng istasyon."
+    },
+    {
+      "source": "হ্যাঁ। কতটা পর্যন্ত খোলা জানেন?",
+      "target": "Oo. Alam mo ba kung hanggang kailan ito bukas?"
+    },
+    {
+      "source": "না। বুকিং দরকার কি না তাও জানি না।",
+      "target": "Hindi. Hindi ko rin alam kung kailangan ng booking."
+    },
+    {
+      "source": "তাহলে ফোন করে জিজ্ঞেস করে দেখি।",
+      "target": "Kung gayon, tatawag ako at susubukang magtanong."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Suriin ang sarili mo"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice at sagot na may paliwanag"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Isulat muna ang sagot sa kuwaderno, pagkatapos ay pindutin ang tanong at itugma ang sagot at dahilan."
+    },
+    {
+      "source": "1. Direct: どこで買いましたか—‘কোথায় কিনেছে জানি না’ করুন।",
+      "target": "1. Direct: どこで買いましたか—gawing 'hindi ko alam kung saan niya binili'."
+    },
+    {
+      "source": "2. ‘কাল বৃষ্টি হবে কি না পরীক্ষা/চেক করি’ বলুন।",
+      "target": "2. Sabihin ang 'susuriin/che-check ko kung uulan bukas'."
+    },
+    {
+      "source": "3. ‘এই শব্দের অর্থ কী বলুন’—embedded question করুন।",
+      "target": "3. 'Sabihin mo kung ano ang kahulugan ng salitang ito'—gawing embedded question."
+    },
+    {
+      "source": "4. ‘জাপানি খাবার বানিয়ে দেখতে চাই’ বলুন।",
+      "target": "4. Sabihin ang 'gusto kong subukang gumawa ng pagkaing Hapon'."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Master Key sa isang pangungusap"
+    },
+    {
+      "source": "Question word থাকলে plain＋か; yes/no হলে plain＋かどうか; উত্তর শুধু মাথায় নয়, কাজ করে যাচাই করলে Vてみます।",
+      "target": "Kung may question word, plain＋か; kung yes/no, plain＋かどうか; kung susuriin hindi lang sa isip kundi sa gawa ang sagot, Vてみます."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Pinagkakatiwalaang reference"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus at pag-verify"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Ang independiyenteng Filipino lesson na ito ay ginawa sa pamamagitan ng pagsasama ng lesson sequence ng Minna no Nihongo II, official JLPT N4 scope at learner resources ng Japan Foundation. Ang mga halimbawa at Filipino na paliwanag ay bagong isinulat."
+    },
+    {
+      "source": "← আগের Lesson 39",
+      "target": "← Nakaraang Lesson 39"
+    },
+    {
+      "source": "পরের Lesson 41 →",
+      "target": "Susunod na Lesson 41 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Index ng Lesson"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Layunin sa pagkatuto"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Talahanayan ng pagkakaiba"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Naglo-load ang Course progress…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Para sa mga mag-aaral, libre at detalyadong Filipino self-study edition."
+    }
+  ]
+}

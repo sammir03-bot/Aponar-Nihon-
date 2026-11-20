@@ -1,0 +1,490 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "n4-grammar-lesson-37-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "Lesson 37: Passive Form：受け身形 পুরোপুরি পরিষ্কার | N4 Grammar",
+      "target": "Lesson 37: Passive Form：受け身形 ganap na malinaw | N4 Grammar"
+    },
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Pumunta sa pangunahing nilalaman"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 37 · জটিল বাক্য",
+      "target": "Lesson 37 · Kumplikadong pangungusap"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Lahat ng Lesson"
+    },
+    {
+      "source": "জটিল বাক্য",
+      "target": "Mga kumplikadong pangungusap"
+    },
+    {
+      "source": "ধাপ ৩ · 36–40",
+      "target": "Hakbang 3 · 36–40"
+    },
+    {
+      "source": "Passive Form：受け身形 পুরোপুরি পরিষ্কার",
+      "target": "Passive Form：受け身形 ganap na malinaw"
+    },
+    {
+      "source": "কাজ-গ্রহণকারীকে topic করা, ক্ষতি/বিরক্তির passive, possession বজায় রাখা এবং ঐতিহাসিক/বস্তুনিষ্ঠ passive।",
+      "target": "Paggawa ng topic sa tumatanggap ng gawain, passive ng pinsala/pagkabagot, pagpapanatili ng possession at makasaysayan/layunin na passive."
+    },
+    {
+      "source": "4টি বিস্তারিত grammar block",
+      "target": "4 detalyadong grammar block"
+    },
+    {
+      "source": "12টি Japanese example",
+      "target": "12 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice na may paliwanag"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile at print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Itago ang あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Hindi pa tapos"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Markahan bilang tapos"
+    },
+    {
+      "source": "Lesson 37 · লক্ষ্য",
+      "target": "Lesson 37 · Layunin"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Ang magagawa mo pagkatapos ng Lesson na ito"
+    },
+    {
+      "source": "Passive শুধু active বাক্য উল্টানো নয়। জাপানিতে বক্তা কার দৃষ্টিকোণকে সামনে আনছেন এবং ঘটনাটি তার ওপর কী প্রভাব ফেলেছে—এটাই মূল। 私は先生にほめられました-তে ‘আমি’ প্রশংসার প্রাপক; 私は雨に降られました-তে বৃষ্টি আমার জন্য বিরক্তিকর ঘটনা।",
+      "target": "Ang passive ay hindi lang pagbabaligtad ng active na pangungusap. Sa Hapon, ang pangunahing bagay ay kung kaninong pananaw ang inihaharap ng tagapagsalita at kung ano ang epekto ng pangyayari sa kanya. Sa 私は先生にほめられました, ang 'ako' ay tumatanggap ng papuri; sa 私は雨に降られました, ang ulan ay nakakabagot na pangyayari para sa akin."
+    },
+    {
+      "source": "তিন verb group-এর passive form তৈরি করবেন",
+      "target": "Gagawa ka ng passive form ng tatlong verb group"
+    },
+    {
+      "source": "agent に এবং recipient/topic は-এর ভূমিকা বুঝবেন",
+      "target": "Maiintindihan mo ang papel ng agent na に at recipient/topic na は"
+    },
+    {
+      "source": "direct passive ও adversity passive আলাদা করবেন",
+      "target": "Mapag-iiba mo ang direct passive at adversity passive"
+    },
+    {
+      "source": "সৃষ্টি/আবিষ্কারের agent-এ によって ব্যবহার করবেন",
+      "target": "Gagamitin mo ang によって sa agent ng paglikha/pag-imbento"
+    },
+    {
+      "source": "受け身形ের গঠন",
+      "target": "Istruktura ng 受け身形"
+    },
+    {
+      "source": "‘করা হয়/কারো দ্বারা প্রভাবিত হওয়া’ verb form",
+      "target": "Verb form na 'ginagawa/naaapektuhan ng isang tao'"
+    },
+    {
+      "source": "গঠন",
+      "target": "Istruktura"
+    },
+    {
+      "source": "ধরন",
+      "target": "Uri"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Halimbawa"
+    },
+    {
+      "source": "শেষ う-row → あ-row＋れる",
+      "target": "Huling う-row → あ-row＋れる"
+    },
+    {
+      "source": "る বাদ＋られる",
+      "target": "Tanggalin ang る＋られる"
+    },
+    {
+      "source": "অনিয়মিত",
+      "target": "Irregular"
+    },
+    {
+      "source": "ভদ্র",
+      "target": "Magalang"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detalyadong paliwanag"
+    },
+    {
+      "source": "Group 2 passive ও potential একই রূপ: 食べられる। Context/particle অর্থ নির্ধারণ করে: 魚が食べられます = মাছ খেতে পারি; 魚は猫に食べられました = মাছটি বিড়াল খেয়েছে।",
+      "target": "Ang Group 2 passive at potential ay parehong form: 食べられる. Ang context/particle ang tumutukoy sa kahulugan: 魚が食べられます = kaya kong kumain ng isda; 魚は猫に食べられました = kinain ng pusa ang isda."
+    },
+    {
+      "source": "Passive verb Group 2-এর মতো conjugate হয়: 書かれない, 書かれた, 書かれて。",
+      "target": "Ang passive verb ay nagko-conjugate tulad ng Group 2: 書かれない, 書かれた, 書かれて."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Ang dapat tandaan"
+    },
+    {
+      "source": "買う→買あれる নয়; う→わ: 買われる।",
+      "target": "買う→買あれる hindi; う→わ: 買われる."
+    },
+    {
+      "source": "প্রশংসা করা → প্রশংসিত হওয়া",
+      "target": "Pagpuri → pagkapuri"
+    },
+    {
+      "source": "ডাকা → ডাকা হওয়া",
+      "target": "Pagtawag → pagtawag (passive)"
+    },
+    {
+      "source": "সতর্ক করা → সতর্ক করা হওয়া",
+      "target": "Pagbabala → pagbabala (passive)"
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Mali"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Tama"
+    },
+    {
+      "source": "কেন:",
+      "target": "Bakit:"
+    },
+    {
+      "source": "Group 1: dictionary ending く→か＋れる; ます-stem নয়।",
+      "target": "Group 1: dictionary ending na く→か＋れる; hindi ます-stem."
+    },
+    {
+      "source": "কাজের সরাসরি প্রাপককে topic/subject করা",
+      "target": "Paggawa ng topic/subject sa direktang tumatanggap ng gawain"
+    },
+    {
+      "source": "Active-এর object B passive-এ は/が হয়ে সামনে আসে; agent A সাধারণত に। বক্তা B-এর দৃষ্টিকোণ থেকে ঘটনা বলেন।",
+      "target": "Ang object B ng active ay nagiging は/が sa passive at nauuna; ang agent A ay karaniwang に. Sinasabi ng tagapagsalita ang pangyayari mula sa pananaw ni B."
+    },
+    {
+      "source": "ইতিবাচক ঘটনাও passive হয়: 私は先生にほめられました = শিক্ষক আমাকে প্রশংসা করেছেন। তাই passive মানেই দুঃখ নয়।",
+      "target": "Ang positibong pangyayari ay nagiging passive rin: 私は先生にほめられました = pinuri ako ng guro. Kaya ang passive ay hindi nangangahulugang kalungkutan."
+    },
+    {
+      "source": "Agent সাধারণ/অজানা হলে বাদ: この歌は世界中で歌われています = গানটি বিশ্বজুড়ে গাওয়া হয়।",
+      "target": "Kung ang agent ay pangkalahatan/hindi alam, tanggalin ito: この歌は世界中で歌われています = inaawit ang kantang ito sa buong mundo."
+    },
+    {
+      "source": "কাজকারী に, কাজের প্রাপক は/が।",
+      "target": "Ang gumagawa ay に, ang tumatanggap ng gawain ay は/が."
+    },
+    {
+      "source": "বিভাগীয় প্রধান আমাকে মিটিংয়ে আমন্ত্রণ করেছেন।",
+      "target": "Inimbitahan ako ng department head sa meeting."
+    },
+    {
+      "source": "ছোট ভাই মায়ের বকা খেয়েছে।",
+      "target": "Pinagalitan ng nanay ang nakababatang kapatid ko."
+    },
+    {
+      "source": "এই গানটি অনেক মানুষের ভালোবাসা পায়।",
+      "target": "Minamahal ng maraming tao ang kantang ito."
+    },
+    {
+      "source": "Passive agent সাধারণত に; を নয়।",
+      "target": "Ang passive agent ay karaniwang に; hindi を."
+    },
+    {
+      "source": "অন্যের কাজ/ঘটনায় বক্তা ক্ষতি, বিরক্তি বা অসুবিধা ভোগ করেন",
+      "target": "Naghihirap ang tagapagsalita ng pinsala, pagkabagot o abala dahil sa gawain/pangyayari ng iba"
+    },
+    {
+      "source": "অন্যের কাজ",
+      "target": "Gawain ng iba"
+    },
+    {
+      "source": "প্রাকৃতিক ঘটনা",
+      "target": "Natural na pangyayari"
+    },
+    {
+      "source": "Japanese adversity passive-এ active object-এর মালিক topic হয়, কিন্তু body-part/possessed object を রেখেই বলা হয়: 私は犬に手をかまれました। 手は犬に… বললে ব্যক্তিগত ক্ষতির perspective কমে।",
+      "target": "Sa Japanese adversity passive, ang may-ari ng active object ang nagiging topic, ngunit sinasabi pa rin ang body-part/possessed object na を: 私は犬に手をかまれました. Kung sasabihing 手は犬に…, mababawasan ang perspective ng personal na pinsala."
+    },
+    {
+      "source": "Intransitive verb-ও adversity passive হয়: 友達に来られて、勉強できませんでした = বন্ধু এসে পড়ায় পড়তে পারিনি। বাংলায় সরাসরি passive না হলেও জাপানিতে ভুক্তভোগীর দৃষ্টিভঙ্গি।",
+      "target": "Ang intransitive verb ay nagiging adversity passive rin: 友達に来られて、勉強できませんでした = dahil dumating ang kaibigan, hindi ako nakapag-aral. Kahit hindi direktang passive sa Filipino, sa Hapon ito ay pananaw ng naghihirap."
+    },
+    {
+      "source": "সবসময় নাটকীয় ক্ষতি নয়; context অসুবিধা বা অপ্রত্যাশিত প্রভাব দেখায়।",
+      "target": "Hindi laging dramatikong pinsala; ipinapakita ng context ang abala o hindi inaasahang epekto."
+    },
+    {
+      "source": "Possession আলাদা করবেন না: 私は弟にケーキを食べられました।",
+      "target": "Huwag paghiwalayin ang possession: 私は弟にケーキを食べられました."
+    },
+    {
+      "source": "Natural event: 雨に降られる একটি fixed, বহুল ব্যবহৃত pattern।",
+      "target": "Natural event: ang 雨に降られる ay isang fixed, madalas gamiting pattern."
+    },
+    {
+      "source": "ট্রেনে পাশের লোক আমার পায়ে পা দিয়েছেন।",
+      "target": "Tinapakan ng taong katabi ko sa tren ang paa ko."
+    },
+    {
+      "source": "ছোট ভাই আমার জরুরি/প্রিয় কেকটি খেয়ে ফেলেছে।",
+      "target": "Kinain ng nakababatang kapatid ko ang mahalaga/paborito kong cake."
+    },
+    {
+      "source": "ফেরার পথে বৃষ্টিতে পড়েছিলাম।",
+      "target": "Naabutan ako ng ulan sa daan pauwi."
+    },
+    {
+      "source": "ক্ষতিগ্রস্ত ব্যক্তি topic 私は; নিজের body part を।",
+      "target": "Ang naghihirap na tao ang topic na 私は; ang sariling body part ay を."
+    },
+    {
+      "source": "বস্তুনিষ্ঠ passive ও Nによって",
+      "target": "Layunin na passive at Nによって"
+    },
+    {
+      "source": "নির্মাণ, আবিষ্কার, রচনা বা ইতিহাসে কাজ/ফলকে সামনে আনা",
+      "target": "Paghaharap ng gawain/resulta sa konstruksyon, pag-imbento, pagsulat o kasaysayan"
+    },
+    {
+      "source": "নির্মাণ",
+      "target": "Konstruksyon"
+    },
+    {
+      "source": "স্রষ্টা/আবিষ্কারক",
+      "target": "Tagalikha/tagaimbento"
+    },
+    {
+      "source": "বস্তু, ভবন, বই বা ধারণা topic হলে passive স্বাভাবিক; কে করেছেন তা গৌণ বা ঐতিহাসিক তথ্য।",
+      "target": "Kung ang bagay, gusali, libro o ideya ang topic, natural ang passive; kung sino ang gumawa ay pangalawa o makasaysayang impormasyon."
+    },
+    {
+      "source": "সৃষ্টি/আবিষ্কার/রচনা/নকশায় agent-এর পরে によって বেশি formal ও উপযুক্ত: 書かれる, 発明される, 建てられる, 設計される। সাধারণ interpersonal action-এ に যথেষ্ট।",
+      "target": "Sa paglikha/pag-imbento/pagsulat/disenyo, ang によって pagkatapos ng agent ay mas pormal at angkop: 書かれる, 発明される, 建てられる, 設計される. Sa karaniwang interpersonal action, sapat na ang に."
+    },
+    {
+      "source": "উপাদান/উৎস বোঝাতে から/で আলাদা; agent ব্যক্তি/গোষ্ঠী হলে によって।",
+      "target": "Para ipahiwatig ang materyal/pinagmulan, hiwalay ang から/で; kung ang agent ay tao/grupo, によって."
+    },
+    {
+      "source": "Personによって = by; time-এর に-এর সঙ্গে গুলাবেন না।",
+      "target": "Ang Personによって = by; huwag itong ikalito sa に ng oras."
+    },
+    {
+      "source": "এই সেতু একশ বছর আগে নির্মিত হয়েছিল।",
+      "target": "Itinayo ang tulay na ito isang daang taon na ang nakalipas."
+    },
+    {
+      "source": "গেঞ্জির কাহিনি মুরাসাকি শিকিবু রচনা করেছেন।",
+      "target": "Isinulat ni Murasaki Shikibu ang kuwento ni Genji."
+    },
+    {
+      "source": "এই পণ্য জাপানে তৈরি হয়।",
+      "target": "Ginagawa ang produktong ito sa Japan."
+    },
+    {
+      "source": "ঐতিহাসিক/রচনার agent-এ によって অধিক স্বাভাবিক।",
+      "target": "Sa makasaysayan/pagsulat na agent, mas natural ang によって."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Pagkakaiba sa isang sulyap"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Alin sa anong sitwasyon?"
+    },
+    {
+      "source": "Agent/বাকি অংশ",
+      "target": "Agent/natitirang bahagi"
+    },
+    {
+      "source": "কাজের সরাসরি প্রাপক",
+      "target": "Direktang tumatanggap ng gawain"
+    },
+    {
+      "source": "ক্ষতিগ্রস্ত ব্যক্তি",
+      "target": "Naghihirap na tao"
+    },
+    {
+      "source": "Agent に＋নিজের বস্তু を",
+      "target": "Agent に＋sariling bagay を"
+    },
+    {
+      "source": "বস্তু/কাজ/ইতিহাস",
+      "target": "Bagay/gawain/kasaysayan"
+    },
+    {
+      "source": "স্রষ্টা によって বা agent বাদ",
+      "target": "Tagalikha によって o tanggalin ang agent"
+    },
+    {
+      "source": "সক্ষম ব্যক্তি/বস্তু",
+      "target": "May kakayahang tao/bagay"
+    },
+    {
+      "source": "Object が; agent নেই",
+      "target": "Object が; walang agent"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Tunay na Pag-uusap"
+    },
+    {
+      "source": "হারানো ছাতা",
+      "target": "Nawalang payong"
+    },
+    {
+      "source": "কী হয়েছে?",
+      "target": "ano ang nangyari?"
+    },
+    {
+      "source": "স্টেশনে কেউ আমার ছাতা নিয়ে গেছে।",
+      "target": "May kumuha ng payong ko sa istasyon."
+    },
+    {
+      "source": "খারাপ হয়েছে। বৃষ্টিতেও পড়েননি তো?",
+      "target": "Masama iyan. Hindi ka naman naabutan ng ulan, di ba?"
+    },
+    {
+      "source": "হ্যাঁ। বন্ধু গাড়িতে পৌঁছে দিয়েছে বলে সমস্যা হয়নি।",
+      "target": "Oo. Dahil inihatid ako ng kaibigan sakay ng kotse, walang naging problema."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Suriin ang sarili mo"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice at sagot na may paliwanag"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Isulat muna ang sagot sa kuwaderno, pagkatapos ay pindutin ang tanong at itugma ang sagot at dahilan."
+    },
+    {
+      "source": "1. 書く-এর passive form বানান।",
+      "target": "1. Gawin ang passive form ng 書く."
+    },
+    {
+      "source": "2. Active: 先生が私をほめました—passive করুন।",
+      "target": "2. Active: 先生が私をほめました—gawing passive."
+    },
+    {
+      "source": "3. ‘কুকুর আমার হাতে কামড়েছে’—adversity passive বলুন।",
+      "target": "3. 'Kinagat ng aso ang kamay ko'—sabihin nang adversity passive."
+    },
+    {
+      "source": "ভুক্তভোগী は, agent に, body part を।",
+      "target": "Ang naghihirap ay は, ang agent ay に, ang body part ay を."
+    },
+    {
+      "source": "4. ‘এই ভবন বিখ্যাত স্থপতি দ্বারা নকশা করা’ বলুন।",
+      "target": "4. Sabihin ang 'idinisenyo ang gusaling ito ng isang sikat na arkitekto'."
+    },
+    {
+      "source": "স্রষ্টা/নকশাকারী＋によって＋passive।",
+      "target": "Tagalikha/tagadisenyo＋によって＋passive."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Master Key sa isang pangungusap"
+    },
+    {
+      "source": "Passive form বানানোর আগে perspective ঠিক করুন: সরাসরি প্রাপক, ক্ষতিগ্রস্ত মালিক, না কাজ/বস্তু? তারপর agent に/によって এবং নিজের বস্তু を বসান।",
+      "target": "Bago gumawa ng passive form, itakda ang perspective: direktang tumatanggap, naghihirap na may-ari, o gawain/bagay? Pagkatapos ay ilagay ang agent na に/によって at ang sariling bagay na を."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Pinagkakatiwalaang reference"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus at pag-verify"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Ang independiyenteng Filipino lesson na ito ay ginawa sa pamamagitan ng pagsasama ng lesson sequence ng Minna no Nihongo II, official JLPT N4 scope at learner resources ng Japan Foundation. Ang mga halimbawa at Filipino na paliwanag ay bagong isinulat."
+    },
+    {
+      "source": "← আগের Lesson 36",
+      "target": "← Nakaraang Lesson 36"
+    },
+    {
+      "source": "〜ように：লক্ষ্য, পরিবর্তন ও নিয়মিত চেষ্টা",
+      "target": "〜ように：layunin, pagbabago at regular na pagsisikap"
+    },
+    {
+      "source": "পরের Lesson 38 →",
+      "target": "Susunod na Lesson 38 →"
+    },
+    {
+      "source": "Nominalizer の：কাজকে বিশেষ্য বানানো",
+      "target": "Nominalizer の：paggawa ng pangngalan sa gawain"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Index ng Lesson"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Layunin sa pagkatuto"
+    },
+    {
+      "source": "1. 受け身形ের গঠন",
+      "target": "1. Istruktura ng 受け身形"
+    },
+    {
+      "source": "4. বস্তুনিষ্ঠ passive ও Nによって",
+      "target": "4. Layunin na passive at Nによって"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Talahanayan ng pagkakaiba"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Naglo-load ang Course progress…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Para sa mga mag-aaral, libre at detalyadong Filipino self-study edition."
+    }
+  ]
+}

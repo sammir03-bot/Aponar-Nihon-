@@ -1,0 +1,426 @@
+{
+  "sourceLanguage": "bn",
+  "targetLanguage": "fil",
+  "page": "n4-grammar-lesson-32-real",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 5, 2026-11-20): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 5. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "মূল কনটেন্টে যান",
+      "target": "Pumunta sa pangunahing nilalaman"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "Lesson 32 · ইচ্ছা ও শর্ত",
+      "target": "Lesson 32 · Layunin at kondisyon"
+    },
+    {
+      "source": "সব Lesson",
+      "target": "Lahat ng Lesson"
+    },
+    {
+      "source": "ইচ্ছা ও শর্ত",
+      "target": "Mga nais at kundisyon"
+    },
+    {
+      "source": "ধাপ ২ · 31–35",
+      "target": "Hakbang 2 · 31–35"
+    },
+    {
+      "source": "পরামর্শ দেওয়া, প্রমাণভিত্তিক সম্ভাব্য অনুমান এবং অনিশ্চিত সম্ভাবনা প্রকাশের সঠিক শক্তিমাত্রা।",
+      "target": "Pagbibigay ng payo, tamang antas ng lakas sa pagpapahayag ng posibleng hula batay sa ebidensya at hindi tiyak na posibilidad."
+    },
+    {
+      "source": "3টি বিস্তারিত grammar block",
+      "target": "3 detalyadong grammar block"
+    },
+    {
+      "source": "9টি Japanese example",
+      "target": "9 Japanese example"
+    },
+    {
+      "source": "4টি ব্যাখ্যাসহ practice",
+      "target": "4 practice na may paliwanag"
+    },
+    {
+      "source": "Offline, mobile ও print friendly",
+      "target": "Offline, mobile at print friendly"
+    },
+    {
+      "source": "あ Reading লুকান",
+      "target": "Itago ang あ Reading"
+    },
+    {
+      "source": "এখনো সম্পন্ন নয়",
+      "target": "Hindi pa tapos"
+    },
+    {
+      "source": "✓ সম্পন্ন করুন",
+      "target": "✓ Markahan bilang tapos"
+    },
+    {
+      "source": "Lesson 32 · লক্ষ্য",
+      "target": "Lesson 32 · Layunin"
+    },
+    {
+      "source": "এই Lesson শেষে যা পারবেন",
+      "target": "Ang magagawa mo pagkatapos ng Lesson na ito"
+    },
+    {
+      "source": "‘এটা করুন’, ‘সম্ভবত হবে’, ‘হয়তো হতে পারে’—তিনটির certainty এক নয়। Lesson 32-এ পরামর্শের ほうがいい, তুলনামূলক শক্ত অনুমানের でしょう এবং অনিশ্চিত かもしれません-কে একটি certainty scale-এ বসানো হবে।",
+      "target": "'Gawin mo ito', 'marahil mangyayari', 'baka mangyari'—hindi pareho ang certainty ng tatlo. Sa Lesson 32, ilalagay sa isang certainty scale ang ほうがいい ng payo, ang でしょう ng medyo malakas na hula at ang かもしれません ng hindi tiyak."
+    },
+    {
+      "source": "affirmative advice-এ Vた এবং negative advice-এ Vない ব্যবহার করবেন",
+      "target": "Gagamitin mo ang Vた sa affirmative advice at Vない sa negative advice"
+    },
+    {
+      "source": "でしょう দিয়ে যুক্তিযুক্ত অনুমান ও confirmation আলাদা করবেন",
+      "target": "Mapag-iiba mo ang makatwirang hula at confirmation gamit ang でしょう"
+    },
+    {
+      "source": "かもしれません দিয়ে বাস্তব সম্ভাবনা নরমভাবে বলবেন",
+      "target": "Sasabihin mo nang malumanay ang tunay na posibilidad gamit ang かもしれません"
+    },
+    {
+      "source": "な-বিশেষণ/বিশেষ্যের plain-form সংযোগে だ বাদ দেওয়ার নিয়ম আয়ত্ত করবেন",
+      "target": "Mamamaster mo ang panuntunan ng pagtanggal ng だ sa plain-form na koneksyon ng な-pang-uri/pangngalan"
+    },
+    {
+      "source": "কাজটি করাই ভালো—পরামর্শ/সতর্কতা",
+      "target": "Mas mabuting gawin ang gawain—payo/babala"
+    },
+    {
+      "source": "গঠন",
+      "target": "Istruktura"
+    },
+    {
+      "source": "ধরন",
+      "target": "Uri"
+    },
+    {
+      "source": "উদাহরণ",
+      "target": "Halimbawa"
+    },
+    {
+      "source": "করার পরামর্শ",
+      "target": "Payo na gawin"
+    },
+    {
+      "source": "না করার পরামর্শ",
+      "target": "Payo na huwag gawin"
+    },
+    {
+      "source": "বিস্তারিত ব্যাখ্যা",
+      "target": "Detalyadong paliwanag"
+    },
+    {
+      "source": "Affirmative advice-এ past form হলেও সময় অতীত নয়। Vた＋ほうがいい পুরো pattern-টি ‘এটি করাই ভালো’। Negative-এ Vない＋ほうがいい; Vなかった নয়।",
+      "target": "Sa affirmative advice, kahit past form, hindi nakaraan ang oras. Ang buong pattern na Vた＋ほうがいい ay 'mas mabuting gawin ito'. Sa negative, Vない＋ほうがいい; hindi Vなかった."
+    },
+    {
+      "source": "এই advice বেশ সরাসরি; গুরুতর স্বাস্থ্য/নিরাপত্তা বা কাছের সম্পর্কের জন্য স্বাভাবিক। অপরিচিত বা সংবেদনশীল বিষয়ে 〜たらどうですか／〜てもいいと思います নরম হতে পারে।",
+      "target": "Ang payong ito ay medyo direkta; natural ito para sa seryosong kalusugan/kaligtasan o malapit na relasyon. Para sa hindi kilala o sensitibong paksa, maaaring mas malumanay ang 〜たらどうですか／〜てもいいと思います."
+    },
+    {
+      "source": "নিজের সিদ্ধান্ত তুলনা করতেও ব্যবহার হয়: 電車で行ったほうがいいと思います।",
+      "target": "Ginagamit din ito para ikumpara ang sariling desisyon: 電車で行ったほうがいいと思います."
+    },
+    {
+      "source": "যা মনে রাখবেন",
+      "target": "Ang dapat tandaan"
+    },
+    {
+      "source": "অযাচিত ব্যক্তিগত পরামর্শে কণ্ঠস্বর নরম রাখুন।",
+      "target": "Sa hindi hininging personal na payo, panatilihing malumanay ang boses."
+    },
+    {
+      "source": "জ্বর থাকলে হাসপাতালে যাওয়া ভালো।",
+      "target": "Kung may lagnat, mas mabuting pumunta sa ospital."
+    },
+    {
+      "source": "রাতে দেরিতে কফি না খাওয়াই ভালো।",
+      "target": "Mas mabuting huwag uminom ng kape nang gabi na."
+    },
+    {
+      "source": "জরুরি ডেটার কপি রেখে দেওয়া ভালো।",
+      "target": "Mas mabuting magtago ng kopya ng mahalagang data."
+    },
+    {
+      "source": "✕ ভুল",
+      "target": "✕ Mali"
+    },
+    {
+      "source": "✓ সঠিক",
+      "target": "✓ Tama"
+    },
+    {
+      "source": "কেন:",
+      "target": "Bakit:"
+    },
+    {
+      "source": "নির্দিষ্ট advice pattern-এ affirmative verb た-form।",
+      "target": "Sa tiyak na advice pattern, affirmative verb na た-form."
+    },
+    {
+      "source": "উপলভ্য তথ্য অনুযায়ী ‘সম্ভবত/নিশ্চয়ই’—তুলনামূলক শক্ত অনুমান",
+      "target": "Ayon sa magagamit na impormasyon, 'marahil/tiyak'—medyo malakas na hula"
+    },
+    {
+      "source": "ক্রিয়া/い-বিশেষণ",
+      "target": "Pandiwa/い-pang-uri"
+    },
+    {
+      "source": "な-বিশেষণ",
+      "target": "な-adjective"
+    },
+    {
+      "source": "বিশেষ্য",
+      "target": "Pangngalan"
+    },
+    {
+      "source": "でしょう সাধারণত যুক্তিসঙ্গত তথ্য/অভিজ্ঞতার ভিত্তিতে মাঝারি থেকে উচ্চ সম্ভাবনা দেখায়। আবহাওয়ার পূর্বাভাসে বহুল: 明日は晴れるでしょう।",
+      "target": "Ang でしょう ay karaniwang nagpapakita ng katamtaman hanggang mataas na posibilidad batay sa makatwirang impormasyon/karanasan. Madalas sa forecast ng panahon: 明日は晴れるでしょう."
+    },
+    {
+      "source": "উর্ধ্বমুখী intonation-এ でしょう？ শ্রোতার সম্মতি/confirmation চায়: この料理、おいしいでしょう？ = খাবারটি সুস্বাদু, তাই না? লিখিত বাক্যে প্রসঙ্গ দেখে ধরতে হবে।",
+      "target": "Sa pataas na intonation, ang でしょう？ ay humihingi ng pagsang-ayon/confirmation ng nakikinig: この料理、おいしいでしょう？ = masarap ang pagkaing ito, di ba? Sa nakasulat na pangungusap, kailangang hulihin ito mula sa konteksto."
+    },
+    {
+      "source": "な-বিশেষণ ও noun-এর present affirmative plain だ, কিন্তু でしょう-এর আগে だ বাদ: 静かでしょう, 学生でしょう।",
+      "target": "Ang present affirmative plain ng な-pang-uri at noun ay だ, ngunit bago ang でしょう ay tinatanggal ang だ: 静かでしょう, 学生でしょう."
+    },
+    {
+      "source": "だでしょう ✕; N/な-A＋でしょう ✓। Past হলে だったでしょう।",
+      "target": "だでしょう ✕; N/な-A＋でしょう ✓. Kung past, だったでしょう."
+    },
+    {
+      "source": "আকাশ অন্ধকার; শিগগিরই বৃষ্টি হবে সম্ভবত।",
+      "target": "Madilim ang langit; marahil uulan agad."
+    },
+    {
+      "source": "রবিবার রাস্তা সম্ভবত ভিড় হবে।",
+      "target": "Marahil magiging masikip ang daan sa Linggo."
+    },
+    {
+      "source": "এই সমস্যাটি কঠিন, তাই না?",
+      "target": "Mahirap ang problemang ito, di ba?"
+    },
+    {
+      "source": "な-বিশেষণের だ বাদ দিয়ে でしょう।",
+      "target": "Tanggalin ang だ ng な-pang-uri at idagdag ang でしょう."
+    },
+    {
+      "source": "হয়তো; সম্ভাবনা আছে কিন্তু বক্তা নিশ্চিত নন",
+      "target": "Baka; may posibilidad ngunit hindi tiyak ang tagapagsalita"
+    },
+    {
+      "source": "でしょう-এর তুলনায় certainty কম। প্রমাণ অসম্পূর্ণ, বিপরীত ফলও বাস্তবভাবে সম্ভব—তখন かもしれません। সংখ্যা নির্দিষ্ট না হলেও mental scale-এ ‘maybe’।",
+      "target": "Mas mababa ang certainty kaysa でしょう. Hindi kumpleto ang ebidensya, posible rin sa katotohanan ang kabaligtarang resulta—noon ay かもしれません. Kahit hindi tiyak ang bilang, 'maybe' ito sa mental scale."
+    },
+    {
+      "source": "Negative possibility-ও হয়: 間に合わないかもしれません = হয়তো সময়মতো পৌঁছাব না। Past: 忘れたかもしれません = হয়তো ভুলে গেছি।",
+      "target": "May negative possibility rin: 間に合わないかもしれません = baka hindi ako makarating sa oras. Past: 忘れたかもしれません = baka nakalimutan ko."
+    },
+    {
+      "source": "কথ্য casual: かもしれない／かも। Formal শিক্ষা ও পরীক্ষায় かもしれません নিরাপদ।",
+      "target": "Sinasalitang casual: かもしれない／かも. Sa pormal na pag-aaral at pagsusulit, ligtas ang かもしれません."
+    },
+    {
+      "source": "N/な-A present affirmative-এ だ বাদ: 休みかもしれません।",
+      "target": "Sa N/な-A present affirmative, tanggalin ang だ: 休みかもしれません."
+    },
+    {
+      "source": "ট্রেন দেরি করছে, তাই হয়তো সময়মতো পৌঁছাতে পারব না।",
+      "target": "Nahuhuli ang tren, kaya baka hindi ako makarating sa oras."
+    },
+    {
+      "source": "এই ব্যাগটি হয়তো তানাকার।",
+      "target": "Baka kay Tanaka ang bag na ito."
+    },
+    {
+      "source": "চাবিটি হয়তো অফিসে ফেলে এসেছি।",
+      "target": "Baka naiwan ko ang susi sa opisina."
+    },
+    {
+      "source": "Noun-এর present だ বাদ যাবে।",
+      "target": "Tatanggalin ang present na だ ng noun."
+    },
+    {
+      "source": "এক নজরে পার্থক্য",
+      "target": "Pagkakaiba sa isang sulyap"
+    },
+    {
+      "source": "কোন পরিস্থিতিতে কোনটি?",
+      "target": "Alin sa anong sitwasyon?"
+    },
+    {
+      "source": "রূপ",
+      "target": "Form"
+    },
+    {
+      "source": "কাজ",
+      "target": "Gawain"
+    },
+    {
+      "source": "certainty/শক্তি",
+      "target": "certainty/lakas"
+    },
+    {
+      "source": "পরামর্শ",
+      "target": "Payo"
+    },
+    {
+      "source": "সরাসরি ও উপকারী হওয়া উচিত",
+      "target": "Dapat direktang at kapaki-pakinabang"
+    },
+    {
+      "source": "প্রমাণভিত্তিক অনুমান",
+      "target": "Hula batay sa ebidensya"
+    },
+    {
+      "source": "তুলনামূলক বেশি",
+      "target": "Medyo mas mataas"
+    },
+    {
+      "source": "অনিশ্চিত সম্ভাবনা",
+      "target": "Hindi tiyak na posibilidad"
+    },
+    {
+      "source": "কম; উল্টোও সম্ভব",
+      "target": "Mababa; posible rin ang kabaligtaran"
+    },
+    {
+      "source": "শ্রোতার সম্মতি চাওয়া",
+      "target": "Paghingi ng pagsang-ayon ng nakikinig"
+    },
+    {
+      "source": "‘তাই না?’",
+      "target": "'Di ba?'"
+    },
+    {
+      "source": "বাস্তব কথোপকথন",
+      "target": "Tunay na Pag-uusap"
+    },
+    {
+      "source": "ভ্রমণের আগে আবহাওয়া",
+      "target": "Panahon bago ang biyahe"
+    },
+    {
+      "source": "কাল পাহাড়ে ঠান্ডা হবে কি?",
+      "target": "Magiging malamig ba sa bundok bukas?"
+    },
+    {
+      "source": "হ্যাঁ। তুষারও পড়তে পারে।",
+      "target": "Oo. Maaari ring bumagsak ang niyebe."
+    },
+    {
+      "source": "কী সঙ্গে নিলে ভালো?",
+      "target": "Ano ang mabuting dalhin?"
+    },
+    {
+      "source": "মোটা কোট নিয়ে যাওয়া ভালো।",
+      "target": "Mas mabuting magdala ng makapal na coat."
+    },
+    {
+      "source": "নিজে যাচাই করুন",
+      "target": "Suriin ang sarili mo"
+    },
+    {
+      "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+      "target": "Practice at sagot na may paliwanag"
+    },
+    {
+      "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+      "target": "Isulat muna ang sagot sa kuwaderno, pagkatapos ay pindutin ang tanong at itugma ang sagot at dahilan."
+    },
+    {
+      "source": "1. ‘আরও ঘুমানো ভালো’—পরামর্শ দিন।",
+      "target": "1. 'Mas mabuting matulog pa'—magbigay ng payo."
+    },
+    {
+      "source": "2. ‘এত লবণ না খাওয়াই ভালো’ বলুন।",
+      "target": "2. Sabihin ang 'mas mabuting huwag kumain ng ganoon karaming asin'."
+    },
+    {
+      "source": "3. শূন্যস্থান: 彼は先生（だ／—）かもしれません。",
+      "target": "3. Punan ang patlang: 彼は先生（だ／—）かもしれません."
+    },
+    {
+      "source": "だ বাদ: 彼は先生かもしれません。",
+      "target": "Tanggalin ang だ: 彼は先生かもしれません."
+    },
+    {
+      "source": "Noun present affirmative-এর だ বাদ।",
+      "target": "Tanggalin ang だ ng noun present affirmative."
+    },
+    {
+      "source": "4. আকাশ পরিষ্কার—‘কাল সম্ভবত ভালো আবহাওয়া হবে’ বলুন।",
+      "target": "4. Maaliwalas ang langit—sabihin ang 'marahil magiging maganda ang panahon bukas'."
+    },
+    {
+      "source": "প্রমাণভিত্তিক তুলনামূলক শক্ত prediction: でしょう।",
+      "target": "Medyo malakas na prediction batay sa ebidensya: でしょう."
+    },
+    {
+      "source": "এক বাক্যে Master Key",
+      "target": "Master Key sa isang pangungusap"
+    },
+    {
+      "source": "কাজের উপকার/ক্ষতি বিচার করে পরামর্শে ほうがいい; প্রমাণ বেশ শক্ত হলে でしょう; শুধু বাস্তব সম্ভাবনা থাকলে かもしれません।",
+      "target": "Sa paghusga sa kapakinabangan/pinsala ng gawain, para sa payo ay ほうがいい; kung medyo malakas ang ebidensya, でしょう; kung tunay na posibilidad lang, かもしれません."
+    },
+    {
+      "source": "বিশ্বস্ত রেফারেন্স",
+      "target": "Pinagkakatiwalaang reference"
+    },
+    {
+      "source": "সিলেবাস ও যাচাই",
+      "target": "Syllabus at pag-verify"
+    },
+    {
+      "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+      "target": "Ang independiyenteng Filipino lesson na ito ay ginawa sa pamamagitan ng pagsasama ng lesson sequence ng Minna no Nihongo II, official JLPT N4 scope at learner resources ng Japan Foundation. Ang mga halimbawa at Filipino na paliwanag ay bagong isinulat."
+    },
+    {
+      "source": "← আগের Lesson 31",
+      "target": "← Nakaraang Lesson 31"
+    },
+    {
+      "source": "পরের Lesson 33 →",
+      "target": "Susunod na Lesson 33 →"
+    },
+    {
+      "source": "Lesson সূচি",
+      "target": "Index ng Lesson"
+    },
+    {
+      "source": "শেখার লক্ষ্য",
+      "target": "Layunin sa pagkatuto"
+    },
+    {
+      "source": "পার্থক্য টেবিল",
+      "target": "Talahanayan ng pagkakaiba"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "Conversation"
+    },
+    {
+      "source": "Course progress লোড হচ্ছে…",
+      "target": "Naglo-load ang Course progress…"
+    },
+    {
+      "source": "আপনার নিহোন · N4 Grammar 26–50",
+      "target": "আপনার নিহোন · N4 Grammar 26–50"
+    },
+    {
+      "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+      "target": "Para sa mga mag-aaral, libre at detalyadong Filipino self-study edition."
+    }
+  ]
+}
