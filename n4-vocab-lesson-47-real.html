@@ -835,6 +835,8 @@
   <footer class="container">আপনার নিহোন • শিক্ষার্থীদের জন্য সহজ বাংলা জাপানিজ শিক্ষা</footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+  <script src="/assets/i18n/data/n4-vocab-ui.js"></script>
+  <script src="/assets/i18n/data/n4-vocab-47.js"></script>
   <script>
 function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"v4.progressLine": "{a} / {b} শেখা", "v4.learned": "✓ শেখা হয়েছে", "v4.notLearned": "○ শেখা বাকি", "v4.showing": "{n}টি দেখানো হচ্ছে", "v4.noAudio": "এই browser-এ Japanese audio নেই", "v4.noWords": "দেখানোর মতো কোনো শব্দ নেই", "v4.quizDoneScore": "কুইজ শেষ! আপনার স্কোর {s} / {t}", "v4.mastered": "দারুণ! এই লেসনটি ভালোভাবে আয়ত্ত হয়েছে।", "v4.retryAdvice": "আরেকবার শব্দগুলো দেখে নতুন কুইজ দিন।", "v4.completed": "সম্পন্ন", "v4.whichJpTail": " — সঠিক জাপানিজ কোনটি?", "v4.meaningTail": " এর বাংলা অর্থ কী?", "v4.correctPron": "সঠিক ✓  উচ্চারণ: ", "v4.correctAnswer": "সঠিক উত্তর: ", "v4.pronSuffix": " • উচ্চারণ: ", "v4.score": "স্কোর {n}", "v4.copied": "শব্দটি copy হয়েছে", "qn.step": "প্রশ্ন {a} / {b}"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}function nfmt(x){return dynLang()==='bn'?(+x).toLocaleString('bn-BD'):String(x);}
   (() => {
@@ -853,6 +855,31 @@ function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._
       speak: card.dataset.speak,
       card
     }));
+    const pageLang = dynLang();
+    if (pageLang !== 'bn') {
+      const vdata = window.AponarN4Vocab && window.AponarN4Vocab[LESSON];
+      const vtable = vdata && vdata[pageLang];
+      if (vtable) {
+        words.forEach((word) => {
+          const row = vtable[word.id];
+          if (row) { word.meaning = row[0]; word.pronunciation = row[1]; }
+        });
+      }
+      const vui = window.AponarN4VocabUI && window.AponarN4VocabUI[pageLang];
+      if (vui) {
+        const ariaText = { "প্রধান নেভিগেশন": vui.nav, "N4 Vocabulary তালিকা": vui.brandList, "রঙের থিম বদলান": vui.theme, "লেসনের তথ্য": vui.lessonInfo, "শব্দ খুঁজুন": vui.searchWords, "শেখার অবস্থা": vui.learnStatus, "তথ্যসূত্র নোট": vui.sourceNote, "লেসন পরিবর্তন": vui.lessonNav, "শব্দটি কপি করুন": vui.copy, "শুনুন": vui.listenOnly };
+        document.querySelectorAll('[aria-label]').forEach((el) => {
+          const value = el.getAttribute('aria-label');
+          if (Object.prototype.hasOwnProperty.call(ariaText, value)) {
+            el.setAttribute('aria-label', ariaText[value]);
+          } else if (value.endsWith(" শুনুন")) {
+            el.setAttribute('aria-label', vui.listen.replace('{r}', value.slice(0, value.length - 6)));
+          }
+        });
+        const themeButton = document.getElementById('themeToggle');
+        if (themeButton) themeButton.title = vui.theme;
+      }
+    }
     const searchInput = document.getElementById('searchInput');
     const resultCount = document.getElementById('resultCount');
     const emptyState = document.getElementById('emptyState');
