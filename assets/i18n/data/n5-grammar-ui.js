@@ -1,0 +1,7 @@
+/* Aponar Nihon i18n data — shared UI labels for the N5 grammar lessons
+   (the rule-card template strings: the "why" label, the pronunciation label
+   and the listen-button aria text, which live inside the lessons' inline
+   script). pron reuses the reviewed N5 vocabulary UI value; listen follows
+   the Run 18 rendering with "Japanese" as the object. Self-translated in
+   Run 23. Bengali pages never read this table. */
+window.AponarN5GrammarUI = {"en":{"listen":"Listen to Japanese","pron":"Pronunciation","why":"Why use it:"},"fil":{"listen":"Pakinggan ang Japanese","pron":"Pagbigkas","why":"Bakit ginagamit:"},"hi":{"listen":"जापानी सुनें","pron":"उच्चारण","why":"क्यों इस्तेमाल करें:"},"ja":{"listen":"日本語を聞く","pron":"発音","why":"なぜ使うのか："},"my":{"listen":"ဂျပန်ဘာသာကို နားထောင်ပါ","pron":"အသံထွက်","why":"ဘာကြောင့် သုံးရတာလဲ:"},"ne":{"listen":"जापानी सुन्नुहोस्","pron":"उच्चारण","why":"किन प्रयोग गर्ने:"},"si":{"listen":"ජපන් අහන්න","pron":"උච්චාරණය","why":"ඇයි භාවිතා කරන්නේ:"},"ur":{"listen":"جاپانی سنیں","pron":"تلفظ","why":"کیوں استعمال کریں:"},"vi":{"listen":"Nghe tiếng Nhật","pron":"Phát âm","why":"Vì sao dùng:"},"zh":{"listen":"听日语","pron":"发音","why":"为什么使用："}};
