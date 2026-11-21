@@ -289,9 +289,52 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
 
   <div class="toast" id="toast" role="status" aria-live="polite">Saved</div>
 
+<script src="/assets/i18n/data/n5-vocab-ui.js"></script>
+<script src="/assets/i18n/data/n5-vocab-03.js"></script>
 <script>
 function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"v5.noVoiceSupport": "Voice supported নয়", "gl.correct": "正解! সঠিক", "v5.tryAgain": "আরেকবার চেষ্টা করুন", "gl.wrong": "ভুল হয়েছে", "v5.meaningTail": " এর অর্থ কী?"};
 const WORDS = [{"no": 1, "jp": "ここ", "kanji": "", "romaji": "koko", "bn": "এখানে", "cat": "স্থান", "ex": "ここは どこですか。", "ex_bn": "এখানে কোথায়?"}, {"no": 2, "jp": "そこ", "kanji": "", "romaji": "soko", "bn": "সেখানে", "cat": "স্থান", "ex": "そこは どこですか。", "ex_bn": "সেখানে কোথায়?"}, {"no": 3, "jp": "あそこ", "kanji": "", "romaji": "asoko", "bn": "ঐখানে", "cat": "স্থান", "ex": "あそこは どこですか。", "ex_bn": "ঐখানে কোথায়?"}, {"no": 4, "jp": "どこ", "kanji": "", "romaji": "doko", "bn": "কোথায়", "cat": "প্রশ্ন", "ex": "トイレは どこですか。", "ex_bn": "টয়লেট কোথায়?"}, {"no": 5, "jp": "こちら", "kanji": "", "romaji": "kochira", "bn": "এই দিকে / এখানে (সম্মানসূচক)", "cat": "স্থান", "ex": "こちらは どこですか。", "ex_bn": "এই দিকে / এখানে (সম্মানসূচক) কোথায়?"}, {"no": 6, "jp": "そちら", "kanji": "", "romaji": "sochira", "bn": "ওই দিকে / সেখানে (সম্মানসূচক)", "cat": "স্থান", "ex": "そちらは どこですか。", "ex_bn": "ওই দিকে / সেখানে (সম্মানসূচক) কোথায়?"}, {"no": 7, "jp": "あちら", "kanji": "", "romaji": "achira", "bn": "ঐ দিকে / ওখানে (সম্মানসূচক)", "cat": "স্থান", "ex": "あちらは どこですか。", "ex_bn": "ঐ দিকে / ওখানে (সম্মানসূচক) কোথায়?"}, {"no": 8, "jp": "どちら", "kanji": "", "romaji": "dochira", "bn": "কোন দিকে / কোথায় (সম্মানসূচক)", "cat": "প্রশ্ন", "ex": "エレベーターは どちらですか。", "ex_bn": "লিফট কোন দিকে?"}, {"no": 9, "jp": "きょうしつ", "kanji": "教室", "romaji": "kyoushitsu", "bn": "ক্লাসরুম", "cat": "স্থান", "ex": "きょうしつは どこですか。", "ex_bn": "ক্লাসরুম কোথায়?"}, {"no": 10, "jp": "しょくどう", "kanji": "食堂", "romaji": "shokudou", "bn": "ক্যান্টিন / খাবার ঘর", "cat": "স্থান", "ex": "しょくどうは どこですか。", "ex_bn": "ক্যান্টিন / খাবার ঘর কোথায়?"}, {"no": 11, "jp": "じむしょ", "kanji": "事務所", "romaji": "jimusho", "bn": "অফিস", "cat": "স্থান", "ex": "じむしょは どこですか。", "ex_bn": "অফিস কোথায়?"}, {"no": 12, "jp": "かいぎしつ", "kanji": "会議室", "romaji": "kaigishitsu", "bn": "মিটিং রুম", "cat": "স্থান", "ex": "かいぎしつは どこですか。", "ex_bn": "মিটিং রুম কোথায়?"}, {"no": 13, "jp": "うけつけ", "kanji": "受付", "romaji": "uketsuke", "bn": "রিসেপশন ডেস্ক", "cat": "স্থান", "ex": "うけつけは どこですか。", "ex_bn": "রিসেপশন ডেস্ক কোথায়?"}, {"no": 14, "jp": "ロビー", "kanji": "", "romaji": "robii", "bn": "লবি", "cat": "স্থান", "ex": "ロビーは どこですか。", "ex_bn": "লবি কোথায়?"}, {"no": 15, "jp": "へや", "kanji": "部屋", "romaji": "heya", "bn": "রুম / কক্ষ", "cat": "স্থান", "ex": "へやは どこですか。", "ex_bn": "রুম / কক্ষ কোথায়?"}, {"no": 16, "jp": "トイレ", "kanji": "", "romaji": "toire", "bn": "টয়লেট", "cat": "স্থান", "ex": "トイレは どこですか。", "ex_bn": "টয়লেট কোথায়?"}, {"no": 17, "jp": "おてあらい", "kanji": "お手洗い", "romaji": "otearai", "bn": "ওয়াশরুম / টয়লেট", "cat": "স্থান", "ex": "おてあらいは どこですか。", "ex_bn": "ওয়াশরুম / টয়লেট কোথায়?"}, {"no": 18, "jp": "かいだん", "kanji": "階段", "romaji": "kaidan", "bn": "সিঁড়ি", "cat": "স্থান", "ex": "かいだんは どこですか。", "ex_bn": "সিঁড়ি কোথায়?"}, {"no": 19, "jp": "エレベーター", "kanji": "", "romaji": "erebeetaa", "bn": "লিফট", "cat": "স্থান", "ex": "エレベーターは どこですか。", "ex_bn": "লিফট কোথায়?"}, {"no": 20, "jp": "エスカレーター", "kanji": "", "romaji": "esukareetaa", "bn": "চলন্ত সিঁড়ি", "cat": "স্থান", "ex": "エスカレーターは どこですか。", "ex_bn": "চলন্ত সিঁড়ি কোথায়?"}, {"no": 21, "jp": "くに", "kanji": "国", "romaji": "kuni", "bn": "দেশ", "cat": "দেশ", "ex": "くには どこですか。", "ex_bn": "দেশ কোথায়?"}, {"no": 22, "jp": "かいしゃ", "kanji": "会社", "romaji": "kaisha", "bn": "কোম্পানি", "cat": "প্রতিষ্ঠান", "ex": "かいしゃは どこですか。", "ex_bn": "কোম্পানি কোথায়?"}, {"no": 23, "jp": "うち", "kanji": "", "romaji": "uchi", "bn": "বাসা / বাড়ি", "cat": "স্থান", "ex": "うちは どこですか。", "ex_bn": "বাসা / বাড়ি কোথায়?"}, {"no": 24, "jp": "でんわ", "kanji": "電話", "romaji": "denwa", "bn": "টেলিফোন / ফোন কল", "cat": "বস্তু", "ex": "これは でんわです。", "ex_bn": "এটি টেলিফোন / ফোন কল।"}, {"no": 25, "jp": "くつ", "kanji": "靴", "romaji": "kutsu", "bn": "জুতা", "cat": "বস্তু", "ex": "これは くつです。", "ex_bn": "এটি জুতা।"}, {"no": 26, "jp": "ネクタイ", "kanji": "", "romaji": "nekutai", "bn": "নেকটাই", "cat": "বস্তু", "ex": "これは ネクタイです。", "ex_bn": "এটি নেকটাই।"}, {"no": 27, "jp": "ワイン", "kanji": "", "romaji": "wain", "bn": "ওয়াইন", "cat": "খাবার/পানীয়", "ex": "これは ワインです。", "ex_bn": "এটি ওয়াইন।"}, {"no": 28, "jp": "たばこ", "kanji": "", "romaji": "tabako", "bn": "সিগারেট", "cat": "বস্তু", "ex": "これは たばこです。", "ex_bn": "এটি সিগারেট।"}, {"no": 29, "jp": "うりば", "kanji": "売り場", "romaji": "uriba", "bn": "বিক্রির বিভাগ / counter", "cat": "স্থান", "ex": "うりばは どこですか。", "ex_bn": "বিক্রির বিভাগ / counter কোথায়?"}, {"no": 30, "jp": "ちか", "kanji": "地下", "romaji": "chika", "bn": "মাটির নিচের তলা", "cat": "স্থান", "ex": "ちかは どこですか。", "ex_bn": "মাটির নিচের তলা কোথায়?"}, {"no": 31, "jp": "～かい", "kanji": "～階", "romaji": "~kai", "bn": "～ তলা", "cat": "সংখ্যা/কাউন্টার", "ex": "～かいです。", "ex_bn": "এটি ～ তলা।"}, {"no": 32, "jp": "なんがい", "kanji": "何階", "romaji": "nangai", "bn": "কোন তলা?", "cat": "প্রশ্ন", "ex": "うりばは なんがいですか。", "ex_bn": "বিক্রয় বিভাগ কত তলায়?"}, {"no": 33, "jp": "～えん", "kanji": "～円", "romaji": "~en", "bn": "～ ইয়েন", "cat": "টাকা", "ex": "～えんです。", "ex_bn": "এটি ～ ইয়েন।"}, {"no": 34, "jp": "いくら", "kanji": "", "romaji": "ikura", "bn": "কত দাম?", "cat": "প্রশ্ন", "ex": "これは いくらですか。", "ex_bn": "এটির দাম কত?"}, {"no": 35, "jp": "ひゃく", "kanji": "百", "romaji": "hyaku", "bn": "১০০", "cat": "সংখ্যা", "ex": "ひゃくです。", "ex_bn": "এটি ১০০।"}, {"no": 36, "jp": "せん", "kanji": "千", "romaji": "sen", "bn": "১০০০", "cat": "সংখ্যা", "ex": "せんです。", "ex_bn": "এটি ১০০০।"}, {"no": 37, "jp": "まん", "kanji": "万", "romaji": "man", "bn": "১০,০০০", "cat": "সংখ্যা", "ex": "まんです。", "ex_bn": "এটি ১০,০০০।"}, {"no": 38, "jp": "すみません", "kanji": "", "romaji": "sumimasen", "bn": "মাফ করবেন / দুঃখিত", "cat": "ভদ্র বাক্য", "ex": "すみません。", "ex_bn": "মাফ করবেন / দুঃখিত।"}, {"no": 39, "jp": "～でございます", "kanji": "", "romaji": "~de gozaimasu", "bn": "～です-এর অত্যন্ত ভদ্র রূপ", "cat": "ভদ্র বাক্য", "ex": "こちらは うりばで ございます。", "ex_bn": "এটি বিক্রয় বিভাগ।"}, {"no": 40, "jp": "～をみせてください", "kanji": "～を見せてください", "romaji": "~wo misete kudasai", "bn": "দয়া করে ～ দেখান", "cat": "ভদ্র বাক্য", "ex": "その とけいを みせて ください。", "ex_bn": "দয়া করে ওই ঘড়িটি দেখান।"}, {"no": 41, "jp": "じゃ", "kanji": "", "romaji": "ja", "bn": "তাহলে / আচ্ছা", "cat": "সংযোগ", "ex": "じゃ、これを ください。", "ex_bn": "তাহলে, এটি দিন।"}, {"no": 42, "jp": "～をください", "kanji": "", "romaji": "~wo kudasai", "bn": "～ দিন / দয়া করে দিন", "cat": "ভদ্র বাক্য", "ex": "これを ください。", "ex_bn": "দয়া করে এটি দিন।"}, {"no": 43, "jp": "しんおおさか", "kanji": "新大阪", "romaji": "shin oosaka", "bn": "শিন-ওসাকা", "cat": "স্থান", "ex": "しんおおさかは どこですか。", "ex_bn": "শিন-ওসাকা কোথায়?"}, {"no": 44, "jp": "イタリア", "kanji": "", "romaji": "itaria", "bn": "ইতালি", "cat": "দেশ", "ex": "イタリアは どこですか。", "ex_bn": "ইতালি কোথায়?"}, {"no": 45, "jp": "スイス", "kanji": "", "romaji": "suisu", "bn": "সুইজারল্যান্ড", "cat": "দেশ", "ex": "スイスは どこですか。", "ex_bn": "সুইজারল্যান্ড কোথায়?"}, {"no": 46, "jp": "フランス", "kanji": "", "romaji": "furansu", "bn": "ফ্রান্স", "cat": "দেশ", "ex": "フランスは ヨーロッパに あります。", "ex_bn": "ফ্রান্স ইউরোপে অবস্থিত।"}, {"no": 47, "jp": "ジャカルタ", "kanji": "", "romaji": "jakaruta", "bn": "জাকার্তা", "cat": "দেশ/শহর", "ex": "ジャカルタは インドネシアに あります。", "ex_bn": "জাকার্তা ইন্দোনেশিয়ায় অবস্থিত।"}, {"no": 48, "jp": "バンコク", "kanji": "", "romaji": "bankoku", "bn": "ব্যাংকক", "cat": "দেশ/শহর", "ex": "バンコクは タイに あります。", "ex_bn": "ব্যাংকক থাইল্যান্ডে অবস্থিত।"}, {"no": 49, "jp": "ベルリン", "kanji": "", "romaji": "berurin", "bn": "বার্লিন", "cat": "দেশ/শহর", "ex": "ベルリンは ドイツに あります。", "ex_bn": "বার্লিন জার্মানিতে অবস্থিত।"}, {"no": 50, "jp": "MT／ヨーネン／アキックス", "kanji": "", "romaji": "MT / yoonen / akikkusu", "bn": "কাল্পনিক কোম্পানির নাম", "cat": "প্রতিষ্ঠান", "ex": "これは かいしゃの なまえです。", "ex_bn": "এগুলো কোম্পানির নাম।"}];
+(function () {
+  var pageLang = window.AponarDynLang ? window.AponarDynLang() : 'bn';
+  if (pageLang === 'bn') return;
+  var vdata = window.AponarN5Vocab && window.AponarN5Vocab["3"];
+  var vtable = vdata && vdata[pageLang];
+  if (vtable) {
+    WORDS.forEach(function (w) {
+      var row = vtable["3" + '-' + w.no];
+      if (!row) return;
+      if (row[0] != null) w.bn = row[0];
+      if (row[1] != null) w.ex_bn = row[1];
+      if (row[2] != null) w.cat = row[2];
+      if (row[3] != null) w.pron_bn = row[3];
+    });
+  }
+  var vui = window.AponarN5VocabUI && window.AponarN5VocabUI[pageLang];
+  if (!vui) return;
+  var TAIL = " এর বাংলা অর্থ কী?", PRON = "বাংলা উচ্চারণ", MEAN = "অর্থ", LISTEN = "শুনুন";
+  function fixChrome() {
+    document.querySelectorAll('.quiz-q').forEach(function (el) {
+      var s = el.textContent;
+      if (s.length > TAIL.length && s.slice(s.length - TAIL.length) === TAIL) {
+        el.textContent = s.slice(0, s.length - TAIL.length) + vui.quizTail;
+      }
+    });
+    document.querySelectorAll('.pron-bn > span').forEach(function (el) {
+      if (el.textContent === PRON) el.textContent = vui.pron;
+    });
+    document.querySelectorAll('.meaning-label').forEach(function (el) {
+      if (el.textContent === MEAN) el.textContent = vui.meaning;
+    });
+    document.querySelectorAll('button.speak').forEach(function (el) {
+      if (el.getAttribute('title') === LISTEN) el.setAttribute('title', vui.listen);
+    });
+  }
+  var _renderWords = renderWords;
+  renderWords = function () { _renderWords(); fixChrome(); };
+  var _newQuiz = newQuiz;
+  newQuiz = function () { _newQuiz(); fixChrome(); };
+})();
+
 const grid = document.getElementById('wordGrid');
 const STORAGE_KEY = 'aponar-nihon-n5-vocab-lesson-03-learned';
 function loadLearned(){try{const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]');return new Set(Array.isArray(saved)?saved.filter(Number.isFinite):[]);}catch{return new Set();}}

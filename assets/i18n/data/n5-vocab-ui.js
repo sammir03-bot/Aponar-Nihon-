@@ -1,0 +1,7 @@
+/* Aponar Nihon i18n data — shared UI labels for the N5 vocabulary lessons
+   (the card-template labels, the speak-button title and the hardcoded quiz
+   question tail in lessons 06-25, which live inside the lessons' inline
+   script and are never extracted by the pack builder). Values are the
+   reviewed pack/DYN renderings of those Bengali strings (Run 21 stage 2);
+   Bengali pages never read this table. */
+window.AponarN5VocabUI = {"en": {"meaning": "Meaning", "pron": "Pronunciation", "listen": "Listen", "quizTail": " — what does it mean in English?"}, "ja": {"meaning": "意味", "pron": "発音", "listen": "聞く", "quizTail": " の日本語の意味は何ですか？"}, "vi": {"meaning": "Ý nghĩa", "pron": "Phát âm", "listen": "Nghe", "quizTail": " có nghĩa tiếng Việt là gì?"}, "ne": {"meaning": "अर्थ", "pron": "उच्चारण", "listen": "सुन्नुहोस्", "quizTail": " को नेपाली अर्थ के हो?"}, "hi": {"meaning": "अर्थ", "pron": "उच्चारण", "listen": "सुनें", "quizTail": " का हिंदी अर्थ क्या है?"}, "ur": {"meaning": "معنی", "pron": "تلفظ", "listen": "سنیں", "quizTail": " کا اردو مطلب کیا ہے؟"}, "my": {"meaning": "အဓိပ္ပာယ်", "pron": "အသံထွက်", "listen": "နားထောင်ပါ", "quizTail": " ရဲ့ မြန်မာ အဓိပ္ပာယ် က ဘာလဲ?"}, "zh": {"meaning": "意思", "pron": "发音", "listen": "听", "quizTail": " 的中文意思是什么？"}, "si": {"meaning": "අර්ථය", "pron": "උච්චාරණය", "listen": "අහන්න", "quizTail": " යන්නෙහි සිංහල අර්ථය කුමක්ද?"}, "fil": {"meaning": "Kahulugan", "pron": "Pagbigkas", "listen": "Pakinggan", "quizTail": " — ano ang ibig sabihin sa Filipino?"}};

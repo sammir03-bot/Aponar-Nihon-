@@ -50,9 +50,52 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(-
     <nav class="bottom-nav"><a href="#top">Top</a><a href="#words">Words</a><a href="#quiz">Quiz</a><a href="n5-vocabulary.html">Course</a></nav>
   </main>
   <footer><div class="container">© 2026 আপনার নিহোন • N5 Vocabulary Lesson 7 • Real Premium HTML</div></footer><div class="toast" id="toast" role="status" aria-live="polite">Saved</div>
+  <script src="/assets/i18n/data/n5-vocab-ui.js"></script>
+  <script src="/assets/i18n/data/n5-vocab-07.js"></script>
   <script>
 function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"v5.noVoiceSupport2": "Voice support নেই", "gl.correct": "正解! সঠিক", "gl.wrong": "ভুল হয়েছে"};
 const WORDS = [{"no": 1, "jp": "きります", "kanji": "", "romaji": "kirimasu", "bn": "কাটা/স্লাইস করা", "cat": "Verb", "ex": "はさみで かみを きります。", "ex_bn": "কাঁচি দিয়ে কাগজ কাটি।"}, {"no": 2, "jp": "おくります", "kanji": "", "romaji": "okurimasu", "bn": "পাঠানো", "cat": "Verb", "ex": "てがみを おくります。", "ex_bn": "আমি চিঠি পাঠাই।"}, {"no": 3, "jp": "あげます", "kanji": "", "romaji": "agemasu", "bn": "দেওয়া", "cat": "Verb", "ex": "ともだちに はなを あげます。", "ex_bn": "বন্ধুকে ফুল দিই।"}, {"no": 4, "jp": "もらいます", "kanji": "", "romaji": "moraimasu", "bn": "পাওয়া", "cat": "Verb", "ex": "ともだちに プレゼントを もらいます。", "ex_bn": "বন্ধুর কাছ থেকে উপহার পাই।"}, {"no": 5, "jp": "かします", "kanji": "", "romaji": "kashimasu", "bn": "ধার দেওয়া", "cat": "Verb", "ex": "ともだちに ほんを かします。", "ex_bn": "বন্ধুকে বই ধার দিই।"}, {"no": 6, "jp": "かります", "kanji": "", "romaji": "karimasu", "bn": "ধার করা", "cat": "Verb", "ex": "ともだちに ほんを かります。", "ex_bn": "বন্ধুর কাছ থেকে বই ধার নিই।"}, {"no": 7, "jp": "おしえます", "kanji": "", "romaji": "oshiemasu", "bn": "শিখানো", "cat": "Verb", "ex": "にほんごを おしえます。", "ex_bn": "জাপানি ভাষা শেখাই।"}, {"no": 8, "jp": "ならいます", "kanji": "", "romaji": "naraimasu", "bn": "শেখা/পড়া", "cat": "Verb", "ex": "にほんごを ならいます。", "ex_bn": "জাপানি ভাষা শিখি।"}, {"no": 9, "jp": "でんわをかけます", "kanji": "", "romaji": "denwa o kakemasu", "bn": "টেলিফোন করা", "cat": "Phrase", "ex": "ともだちに でんわを かけます。", "ex_bn": "বন্ধুকে ফোন করি।"}, {"no": 10, "jp": "て", "kanji": "", "romaji": "te", "bn": "হাত", "cat": "Body", "ex": "これは てです。", "ex_bn": "এটি হাত।"}, {"no": 11, "jp": "はし", "kanji": "", "romaji": "hashi", "bn": "চপস্টিক/খাওয়ার কাঠি", "cat": "Object", "ex": "これは はしです。", "ex_bn": "এটি চপস্টিক/খাওয়ার কাঠি।"}, {"no": 12, "jp": "スプーン", "kanji": "", "romaji": "supuun", "bn": "চামচ", "cat": "Object", "ex": "これは スプーンです。", "ex_bn": "এটি চামচ।"}, {"no": 13, "jp": "ナイフ", "kanji": "", "romaji": "naifu", "bn": "চাকু", "cat": "Object", "ex": "これは ナイフです。", "ex_bn": "এটি চাকু।"}, {"no": 14, "jp": "フォーク", "kanji": "", "romaji": "fooku", "bn": "কাঁটাচামচ", "cat": "Object", "ex": "これは フォークです。", "ex_bn": "এটি কাঁটাচামচ।"}, {"no": 15, "jp": "はさみ", "kanji": "", "romaji": "hasami", "bn": "কাঁচি", "cat": "Object", "ex": "これは はさみです。", "ex_bn": "এটি কাঁচি।"}, {"no": 16, "jp": "ファクス", "kanji": "", "romaji": "fakusu", "bn": "ফ্যাক্স", "cat": "Office", "ex": "これは ファクスです。", "ex_bn": "এটি ফ্যাক্স।"}, {"no": 17, "jp": "ワープロ", "kanji": "", "romaji": "waapuro", "bn": "ওয়ার্ড প্রসেসর", "cat": "Office", "ex": "これは ワープロです。", "ex_bn": "এটি ওয়ার্ড প্রসেসর।"}, {"no": 18, "jp": "パソコン", "kanji": "", "romaji": "pasokon", "bn": "পার্সোনাল কম্পিউটার", "cat": "Office", "ex": "これは パソコンです。", "ex_bn": "এটি পার্সোনাল কম্পিউটার।"}, {"no": 19, "jp": "パンチ", "kanji": "", "romaji": "panchi", "bn": "পাঞ্চ মেশিন", "cat": "Office", "ex": "これは パンチです。", "ex_bn": "এটি পাঞ্চ মেশিন।"}, {"no": 20, "jp": "ホッチキス", "kanji": "", "romaji": "hocchikisu", "bn": "স্ট্যাপলার মেশিন", "cat": "Office", "ex": "これは ホッチキスです。", "ex_bn": "এটি স্ট্যাপলার মেশিন।"}, {"no": 21, "jp": "セロテープ", "kanji": "", "romaji": "seroteepu", "bn": "স্কচ টেপ/সেলোটেপ", "cat": "Office", "ex": "これは セロテープです。", "ex_bn": "এটি স্কচ টেপ/সেলোটেপ।"}, {"no": 22, "jp": "けしゴム", "kanji": "", "romaji": "keshigomu", "bn": "রাবার/ইরেজার", "cat": "Office", "ex": "これは けしゴムです。", "ex_bn": "এটি রাবার/ইরেজার।"}, {"no": 23, "jp": "かみ", "kanji": "", "romaji": "kami", "bn": "কাগজ", "cat": "Object", "ex": "これは かみです。", "ex_bn": "এটি কাগজ।"}, {"no": 24, "jp": "はな", "kanji": "", "romaji": "hana", "bn": "ফুল", "cat": "Object", "ex": "これは はなです。", "ex_bn": "এটি ফুল।"}, {"no": 25, "jp": "シャツ", "kanji": "", "romaji": "shatsu", "bn": "শার্ট", "cat": "Clothes", "ex": "これは シャツです。", "ex_bn": "এটি শার্ট।"}, {"no": 26, "jp": "プレゼント", "kanji": "", "romaji": "purezento", "bn": "উপহার", "cat": "Object", "ex": "これは プレゼントです。", "ex_bn": "এটি উপহার।"}, {"no": 27, "jp": "にもつ", "kanji": "", "romaji": "nimotsu", "bn": "মালপত্র/ব্যাগেজ/পার্সেল", "cat": "Object", "ex": "これは にもつです。", "ex_bn": "এটি মালপত্র/ব্যাগেজ/পার্সেল।"}, {"no": 28, "jp": "おかね", "kanji": "", "romaji": "okane", "bn": "টাকা", "cat": "Money", "ex": "これは おかねです。", "ex_bn": "এটি টাকা।"}, {"no": 29, "jp": "きっぷ", "kanji": "", "romaji": "kippu", "bn": "টিকিট", "cat": "Object", "ex": "これは きっぷです。", "ex_bn": "এটি টিকিট।"}, {"no": 30, "jp": "クリスマス", "kanji": "", "romaji": "kurisumasu", "bn": "বড়দিন/ক্রিসমাস", "cat": "Event", "ex": "これは クリスマスです。", "ex_bn": "এটি বড়দিন/ক্রিসমাস।"}, {"no": 31, "jp": "ちち", "kanji": "", "romaji": "chichi", "bn": "আমার বাবা", "cat": "Family", "ex": "これは ちちです。", "ex_bn": "এটি আমার বাবা।"}, {"no": 32, "jp": "はは", "kanji": "", "romaji": "haha", "bn": "আমার মা", "cat": "Family", "ex": "これは ははです。", "ex_bn": "এটি আমার মা।"}, {"no": 33, "jp": "おとうさん", "kanji": "", "romaji": "otousan", "bn": "আপনার/অন্য কারো বাবা", "cat": "Family", "ex": "これは おとうさんです。", "ex_bn": "এটি আপনার/অন্য কারো বাবা।"}, {"no": 34, "jp": "おかあさん", "kanji": "", "romaji": "okaasan", "bn": "আপনার/অন্য কারো মা", "cat": "Family", "ex": "これは おかあさんです。", "ex_bn": "এটি আপনার/অন্য কারো মা।"}, {"no": 35, "jp": "もう", "kanji": "", "romaji": "mou", "bn": "ইতোমধ্যে/হয়ে গেছে", "cat": "Adverb", "ex": "もう しゅくだいを しました。", "ex_bn": "আমি ইতোমধ্যে বাড়ির কাজ করেছি।"}, {"no": 36, "jp": "まだ", "kanji": "", "romaji": "mada", "bn": "এখনো/এখনো করা হয়নি", "cat": "Adverb", "ex": "まだ しゅくだいを していません。", "ex_bn": "আমি এখনো বাড়ির কাজ করিনি।"}, {"no": 37, "jp": "これから", "kanji": "", "romaji": "korekara", "bn": "এখন থেকে/শীঘ্রই", "cat": "Adverb", "ex": "これから べんきょうします。", "ex_bn": "এখন থেকে পড়াশোনা করব।"}, {"no": 38, "jp": "～すてきですね", "kanji": "", "romaji": "~suteki desu ne", "bn": "কি সুন্দর!", "cat": "Expression", "ex": "～すてきですね。", "ex_bn": "কি সুন্দর!"}, {"no": 39, "jp": "ごめんください", "kanji": "", "romaji": "gomen kudasai", "bn": "কেউ ভিতরে আছেন কি?/ভেতরে আসতে পারি?", "cat": "Expression", "ex": "ごめんください。", "ex_bn": "কেউ ভিতরে আছেন কি?/ভেতরে আসতে পারি?"}, {"no": 40, "jp": "いらっしゃい", "kanji": "", "romaji": "irasshai", "bn": "আসুন/স্বাগতম", "cat": "Expression", "ex": "いらっしゃい。", "ex_bn": "আসুন/স্বাগতম।"}, {"no": 41, "jp": "どうぞおあがりください", "kanji": "", "romaji": "douzo oagari kudasai", "bn": "ভেতরে আসুন/ঘরে উঠে আসুন", "cat": "Expression", "ex": "どうぞおあがりください。", "ex_bn": "ভেতরে আসুন/ঘরে উঠে আসুন।"}, {"no": 42, "jp": "しつれいします", "kanji": "", "romaji": "shitsurei shimasu", "bn": "ধন্যবাদ, একটু বিরক্ত করবো / excuse me", "cat": "Expression", "ex": "しつれいします。", "ex_bn": "মাফ করবেন / এবার উঠছি।"}, {"no": 43, "jp": "～はいかがですか", "kanji": "", "romaji": "~wa ikaga desu ka", "bn": "~ খাবেন কি?/নেবেন কি?", "cat": "Expression", "ex": "～はいかがですか。", "ex_bn": "~ খাবেন কি?/নেবেন কি?"}, {"no": 44, "jp": "いただきます", "kanji": "", "romaji": "itadakimasu", "bn": "খাওয়ার আগে বলা হয়: ধন্যবাদ, আমি নিচ্ছি", "cat": "Expression", "ex": "いただきます。", "ex_bn": "খাবার শুরু করার আগে কৃতজ্ঞতা জানিয়ে বলা হয়।"}, {"no": 45, "jp": "りょこう", "kanji": "", "romaji": "ryokou", "bn": "ভ্রমণ", "cat": "Travel", "ex": "まいにち りょこう。", "ex_bn": "প্রতিদিন ভ্রমণ।"}, {"no": 46, "jp": "りょこうをします", "kanji": "", "romaji": "ryokou o shimasu", "bn": "ভ্রমণ করা", "cat": "Travel", "ex": "まいにち りょこうをします。", "ex_bn": "প্রতিদিন ভ্রমণ করা।"}, {"no": 47, "jp": "おみやげ", "kanji": "", "romaji": "omiyage", "bn": "সুভেনির/সাধারণ উপহার", "cat": "Object", "ex": "これは おみやげです。", "ex_bn": "এটি সুভেনির/সাধারণ উপহার।"}, {"no": 48, "jp": "ヨーロッパ", "kanji": "", "romaji": "yooroppa", "bn": "ইউরোপ", "cat": "Place", "ex": "これは ヨーロッパです。", "ex_bn": "এটি ইউরোপ।"}, {"no": 49, "jp": "スペイン", "kanji": "", "romaji": "supein", "bn": "স্পেন", "cat": "Place", "ex": "これは スペインです。", "ex_bn": "এটি স্পেন।"}];
+(function () {
+  var pageLang = window.AponarDynLang ? window.AponarDynLang() : 'bn';
+  if (pageLang === 'bn') return;
+  var vdata = window.AponarN5Vocab && window.AponarN5Vocab["7"];
+  var vtable = vdata && vdata[pageLang];
+  if (vtable) {
+    WORDS.forEach(function (w) {
+      var row = vtable["7" + '-' + w.no];
+      if (!row) return;
+      if (row[0] != null) w.bn = row[0];
+      if (row[1] != null) w.ex_bn = row[1];
+      if (row[2] != null) w.cat = row[2];
+      if (row[3] != null) w.pron_bn = row[3];
+    });
+  }
+  var vui = window.AponarN5VocabUI && window.AponarN5VocabUI[pageLang];
+  if (!vui) return;
+  var TAIL = " এর বাংলা অর্থ কী?", PRON = "বাংলা উচ্চারণ", MEAN = "অর্থ", LISTEN = "শুনুন";
+  function fixChrome() {
+    document.querySelectorAll('.quiz-q').forEach(function (el) {
+      var s = el.textContent;
+      if (s.length > TAIL.length && s.slice(s.length - TAIL.length) === TAIL) {
+        el.textContent = s.slice(0, s.length - TAIL.length) + vui.quizTail;
+      }
+    });
+    document.querySelectorAll('.pron-bn > span').forEach(function (el) {
+      if (el.textContent === PRON) el.textContent = vui.pron;
+    });
+    document.querySelectorAll('.meaning-label').forEach(function (el) {
+      if (el.textContent === MEAN) el.textContent = vui.meaning;
+    });
+    document.querySelectorAll('button.speak').forEach(function (el) {
+      if (el.getAttribute('title') === LISTEN) el.setAttribute('title', vui.listen);
+    });
+  }
+  var _renderWords = renderWords;
+  renderWords = function () { _renderWords(); fixChrome(); };
+  var _newQuiz = newQuiz;
+  newQuiz = function () { _newQuiz(); fixChrome(); };
+})();
+
 const grid = document.getElementById('wordGrid');
 const STORAGE_KEY = 'aponar-nihon-n5-vocab-lesson-07-learned';
 function loadLearned(){try{const saved=JSON.parse(localStorage.getItem(STORAGE_KEY)||'[]');return new Set(Array.isArray(saved)?saved.filter(Number.isFinite):[]);}catch{return new Set();}}
