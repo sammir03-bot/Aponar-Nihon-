@@ -13,6 +13,22 @@ DEFAULT_LANGUAGE = "bn"
 SUPPORTED_LANGUAGES = ("ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil")
 RTL_LANGUAGES = {"ur"}
 BRAND_RE = re.compile(r"আপনার নিহোন|Aponar Nihon|あなたの日本(?!語)", re.IGNORECASE)
+BENGALI_RE = re.compile(r"[\u0980-\u09FF]")
+
+# Run 20 (2026-11-21): pages audited (Run 17 + the Run 19/20 inventories) for
+# text the authoring serializer wrote with HTML entities (&darr;, &#9997;,
+# &amp;) while the reviewed pack sources hold the decoded characters, so the
+# entries never matched. On these pages only, a text run containing an
+# entity/character reference is also matched in entity-decoded form. The same
+# matching gap exists on unaudited pages (N3, SSW, legacy vocabulary) and is
+# deliberately NOT changed here; widening this set is a separate decision.
+ENTITY_DECODE_PAGES = {
+    "n5-kanji",
+    "n4-kanji",
+    "n4-grammar-lesson-41-real",
+    "n4-grammar-lesson-42-real",
+    "n4-grammar-lesson-43-real",
+}
 
 LANGUAGE_PATTERN = "|".join(
     sorted((re.escape(code) for code in SUPPORTED_LANGUAGES), key=len, reverse=True)
@@ -89,39 +105,134 @@ def _normalize(value: str) -> str:
 
 
 class _ReviewedTranslationParser(HTMLParser):
-    """Translate only exact reviewed text nodes while preserving Japanese study text."""
+    """Translate only exact reviewed text nodes while preserving Japanese study text.
 
-    def __init__(self, entries: dict[str, str]) -> None:
+    Character content is buffered into text runs (data + entity/character
+    references, exactly the spans the pack extractor collected with
+    convert_charrefs=True) and flushed at every markup boundary.
+
+    Preserve kinds: "hard" elements (script/style/ruby/rt, lang="ja" blocks,
+    data-i18n-no-content) are emitted byte-for-byte. "soft" elements — the
+    site's class="jp" Japanese-study blocks — are also preserved, EXCEPT that
+    a whole run whose decoded, normalized form contains Bengali and exactly
+    matches a reviewed pack source is replaced by its reviewed target (Run 20:
+    the N4-grammar formation fragments inside jp blocks; Japanese-only runs
+    never match, so Japanese text stays byte-identical).
+
+    On ENTITY_DECODE_PAGES, an unpreserved run containing at least one
+    entity/character reference is additionally matched in decoded form (the
+    kanji hero buttons and the lesson 41-43 heading). A whole-run match whose
+    brand-preserved target equals the source is an identity translation and
+    falls through to the legacy per-chunk behaviour, so no-op entries never
+    change bytes. Everywhere else the legacy per-chunk matching applies
+    unchanged.
+    """
+
+    def __init__(self, entries: dict[str, str], decode_entities: bool = False) -> None:
         super().__init__(convert_charrefs=False)
         self.entries = entries
+        self.decode_entities = decode_entities
         self.parts: list[str] = []
-        self.stack: list[tuple[str, bool]] = []
-        self.skip_depth = 0
+        self.stack: list[tuple[str, str | None]] = []
+        self.preserve_kinds: list[str] = []
         self.translation_count = 0
+        # Buffered character-content run: (raw, decoded, is_data).
+        self._run: list[tuple[str, str, bool]] = []
+
+    @property
+    def skip_depth(self) -> int:
+        return len(self.preserve_kinds)
 
     @staticmethod
-    def _must_preserve(tag: str, attrs: list[tuple[str, str | None]]) -> bool:
+    def _preserve_kind(tag: str, attrs: list[tuple[str, str | None]]) -> str | None:
         if tag in SKIP_TEXT_TAGS:
-            return True
+            return "hard"
         attributes = {name.lower(): (value or "") for name, value in attrs}
-        if attributes.get("lang", "").lower().startswith("ja"):
-            return True
         classes = set(attributes.get("class", "").split())
-        return "jp" in classes or "data-i18n-no-content" in attributes
+        if "jp" in classes:
+            return "soft"
+        if attributes.get("lang", "").lower().startswith("ja"):
+            return "hard"
+        if "data-i18n-no-content" in attributes:
+            return "hard"
+        return None
+
+    def _replace(self, raw_text: str, source: str, target: str) -> None:
+        """Legacy replacement: brand-preserved target wrapped in the raw
+        text's own leading/trailing whitespace."""
+        target = _preserve_brand_names(source, target)
+        leading = re.match(r"^\s*", raw_text).group(0)
+        trailing = re.search(r"\s*$", raw_text).group(0)
+        self.parts.append(f"{leading}{target}{trailing}")
+        self.translation_count += 1
+
+    def _try_whole_run(self, raw_text: str, decoded_text: str) -> bool:
+        """Emit the run via an exact decoded pack match. Returns False
+        (emitting nothing) when there is no match, when the run carries the
+        brand (brand-bearing text stays on the legacy path: a few pack
+        entries render the brand in another script, which the site never
+        applies), or when the match is an identity translation — those fall
+        through to the legacy behaviour so bytes never change for a no-op."""
+        source = _normalize(decoded_text)
+        if not source or BRAND_RE.search(source):
+            return False
+        target = self.entries.get(source)
+        if target is None:
+            return False
+        if _preserve_brand_names(source, target) == source:
+            return False
+        self._replace(raw_text, source, target)
+        return True
+
+    def _flush_run(self) -> None:
+        if not self._run:
+            return
+        run, self._run = self._run, []
+        kind = self.preserve_kinds[-1] if self.preserve_kinds else None
+        raw_text = "".join(raw for raw, _decoded, _is_data in run)
+        if kind == "hard":
+            self.parts.extend(raw for raw, _decoded, _is_data in run)
+            return
+        if kind == "soft":
+            decoded_text = "".join(decoded for _raw, decoded, _is_data in run)
+            source = _normalize(decoded_text)
+            if source and BENGALI_RE.search(source):
+                if self._try_whole_run(raw_text, decoded_text):
+                    return
+            self.parts.extend(raw for raw, _decoded, _is_data in run)
+            return
+        if self.decode_entities and any(not is_data for _raw, _dec, is_data in run):
+            decoded_text = "".join(decoded for _raw, decoded, _is_data in run)
+            if self._try_whole_run(raw_text, decoded_text):
+                return
+        # Legacy per-chunk behaviour, unchanged.
+        for raw, _decoded, is_data in run:
+            if not is_data:
+                self.parts.append(raw)
+                continue
+            source = _normalize(raw)
+            target = self.entries.get(source)
+            if not source or target is None:
+                self.parts.append(raw)
+            else:
+                self._replace(raw, source, target)
 
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        self._flush_run()
         lower = tag.lower()
         self.parts.append(self.get_starttag_text())
-        skip_here = self._must_preserve(lower, attrs)
+        kind = self._preserve_kind(lower, attrs)
         if lower not in VOID_TAGS:
-            self.stack.append((lower, skip_here))
-            if skip_here:
-                self.skip_depth += 1
+            self.stack.append((lower, kind))
+            if kind is not None:
+                self.preserve_kinds.append(kind)
 
     def handle_startendtag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        self._flush_run()
         self.parts.append(self.get_starttag_text())
 
     def handle_endtag(self, tag: str) -> None:
+        self._flush_run()
         lower = tag.lower()
         self.parts.append(f"</{tag}>")
         for index in range(len(self.stack) - 1, -1, -1):
@@ -129,44 +240,40 @@ class _ReviewedTranslationParser(HTMLParser):
                 continue
             removed = self.stack[index:]
             del self.stack[index:]
-            self.skip_depth -= sum(1 for _name, skipped in removed if skipped)
-            self.skip_depth = max(0, self.skip_depth)
+            preserved = sum(1 for _name, kind in removed if kind is not None)
+            if preserved:
+                del self.preserve_kinds[-preserved:]
             break
 
     def handle_data(self, data: str) -> None:
-        if self.skip_depth:
-            self.parts.append(data)
-            return
-        source = _normalize(data)
-        target = self.entries.get(source)
-        if not source or target is None:
-            self.parts.append(data)
-            return
-        target = _preserve_brand_names(source, target)
-        leading = re.match(r"^\s*", data).group(0)
-        trailing = re.search(r"\s*$", data).group(0)
-        self.parts.append(f"{leading}{target}{trailing}")
-        self.translation_count += 1
+        self._run.append((data, data, True))
 
     def handle_entityref(self, name: str) -> None:
-        self.parts.append(f"&{name};")
+        raw = f"&{name};"
+        self._run.append((raw, html_lib.unescape(raw), False))
 
     def handle_charref(self, name: str) -> None:
-        self.parts.append(f"&#{name};")
+        raw = f"&#{name};"
+        self._run.append((raw, html_lib.unescape(raw), False))
 
     def handle_comment(self, data: str) -> None:
+        self._flush_run()
         self.parts.append(f"<!--{data}-->")
 
     def handle_decl(self, decl: str) -> None:
+        self._flush_run()
         self.parts.append(f"<!{decl}>")
 
     def handle_pi(self, data: str) -> None:
+        self._flush_run()
         self.parts.append(f"<?{data}>")
 
     def unknown_decl(self, data: str) -> None:
+        self._flush_run()
         self.parts.append(f"<![{data}]>")
 
     def document(self) -> str:
+        self._flush_run()
         return "".join(self.parts)
 
 
@@ -382,7 +489,9 @@ def build_localized_pages(root: Path) -> tuple[int, int, int]:
                 for entry in payload["entries"]
                 if isinstance(entry, dict) and entry.get("source") and entry.get("target")
             }
-            parser = _ReviewedTranslationParser(entries)
+            parser = _ReviewedTranslationParser(
+                entries, decode_entities=key in ENTITY_DECODE_PAGES
+            )
             parser.feed(source_document)
             parser.close()
             localized = parser.document()
