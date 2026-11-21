@@ -73,3 +73,65 @@
 
   if (typeof render === 'function') render();
 })();
+
+/* Run 24: N3 vocab parts i18n (defensive). In the current build nothing loads
+   this file and DATA is undefined, so this block is a complete no-op today;
+   if the parts app is ever revived, it swaps the example glosses/categories
+   and chrome strings from the per-language vocab sidecar before rendering. */
+(function () {
+  if (typeof DATA === "undefined" || !Array.isArray(DATA)) return;
+  function run24Lang() {
+    try { if (window.AponarDynLang) return window.AponarDynLang(); } catch (e) {}
+    var ok = { bn: 1, en: 1, ja: 1, vi: 1, ne: 1, hi: 1, ur: 1, my: 1, zh: 1, si: 1, fil: 1 };
+    var p = document.documentElement ? document.documentElement.getAttribute("data-language-preset") : null;
+    if (p && ok[p]) return p;
+    var s = location.pathname.split("/").filter(Boolean)[0];
+    return s && ok[s] ? s : "bn";
+  }
+  var L = run24Lang();
+  if (!L || L === "bn") return;
+  var s = document.createElement("script");
+  s.src = "/assets/i18n/data/n3-vocab." + L + ".js?v=20261121.24";
+  s.onload = function () {
+    var V = window.AponarN3Vocab;
+    if (!V || !V.vparts) return;
+    var map = V.vparts;
+    DATA.forEach(function (part) {
+      (part.words || []).forEach(function (w) {
+        (w[5] || []).forEach(function (ex) {
+          if (Object.prototype.hasOwnProperty.call(map, ex[2])) ex[2] = map[ex[2]];
+          if (Object.prototype.hasOwnProperty.call(map, ex[3])) ex[3] = map[ex[3]];
+        });
+      });
+    });
+    function renderTpl(tpl, vals) {
+      return tpl.replace(/\$\{([^}]*)\}/g, function (_, e) {
+        var k = e.trim();
+        return k in vals ? String(vals[k]) : _;
+      });
+    }
+    var totalWords = DATA.reduce(function (a, p) { return a + (p.words || []).length; }, 0);
+    var totalExamples = DATA.reduce(function (a, p) {
+      return a + (p.words || []).reduce(function (b, w) { return b + (w[5] || []).length; }, 0);
+    }, 0);
+    var vals = { "DATA.length": DATA.length, totalWords: totalWords, totalExamples: totalExamples, "words.length": totalWords };
+    var pats = V.vpartsPatterns || [];
+    var heroP = document.querySelector(".hero p");
+    if (heroP && Object.prototype.hasOwnProperty.call(map, heroP.textContent)) heroP.textContent = map[heroP.textContent];
+    var badges = document.querySelector(".hero-badges");
+    if (badges) pats.forEach(function (p) { if (renderTpl(p.s, vals) === badges.innerHTML) badges.innerHTML = renderTpl(p.t, vals); });
+    var sum = document.querySelector(".summary > span:first-child");
+    if (sum) pats.forEach(function (p) { if (renderTpl(p.s, vals) === sum.textContent) sum.textContent = renderTpl(p.t, vals); });
+    DATA.forEach(function (part, pi) {
+      var start = pi * 6;
+      var v2 = Object.assign({}, vals);
+      v2["i"] = start;
+      v2["i + 1"] = start + 1;
+      v2["Math.min(WORDS_PER_PART, words.length - i)"] = Math.min(6, totalWords - start);
+      v2["i + Math.min(WORDS_PER_PART, words.length - i)"] = start + Math.min(6, totalWords - start);
+      pats.forEach(function (p) { if (renderTpl(p.s, v2) === part.sub) part.sub = renderTpl(p.t, v2); });
+    });
+    if (typeof render === "function") render();
+  };
+  (document.head || document.documentElement).appendChild(s);
+})();
