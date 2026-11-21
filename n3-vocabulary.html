@@ -39,6 +39,7 @@
 <body>
 <div class="loading" id="loader"><div class="mark">語</div><b>N3 Vocabulary লোড হচ্ছে…</b><p>পুরো ১,৩৪৫ শব্দ প্রস্তুত করা হচ্ছে।</p><div class="bar"></div></div>
 <script>
+function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"ms.vocabLoadErrorTitle": "Vocabulary load করা যায়নি", "ms.vocabLoadErrorBody": "Internet connection check করে আবার reload করুন।"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}
 (async()=>{
   try{
     const response=await fetch('/n3-vocabulary-content.html?v=20260824',{cache:'force-cache'});
@@ -46,8 +47,7 @@
     let html=await response.text();
     if(!html.includes('data-vocab-row')) throw new Error('Vocabulary source invalid');
     html=html.replace('</head>','<link rel="stylesheet" href="/n3-vocabulary-all.css?v=5">\n</head>');
-    const enhancement='<script src="/n3-vocabulary-examples.js?v=1"></scr'+'ipt>\n<script src="/n3-vocabulary-all.js?v=5">
-function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"ms.vocabLoadErrorTitle": "Vocabulary load করা যায়নি", "ms.vocabLoadErrorBody": "Internet connection check করে আবার reload করুন।"};</scr'+'ipt>\n</body>';
+    const enhancement='<script src="/n3-vocabulary-examples.js?v=1"></scr'+'ipt>\n<script src="/n3-vocabulary-all.js?v=5">\nfunction dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"ms.vocabLoadErrorTitle": "Vocabulary load করা যায়নি", "ms.vocabLoadErrorBody": "Internet connection check করে আবার reload করুন।"};</scr'+'ipt>\n</body>';
     html=html.replace('</body>',enhancement);
     document.open();
     document.write(html);

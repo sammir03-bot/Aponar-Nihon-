@@ -13601,7 +13601,7 @@
     const state={week:"all",item:"all",query:""};const storageKey="aponarNihonN3GoiProgressV1";
     let saved={};try{saved=JSON.parse(localStorage.getItem(storageKey)||"{}")}catch(e){}
     $$(".done-check").forEach(c=>{c.checked=!!saved[c.dataset.key];c.addEventListener("change",()=>{saved[c.dataset.key]=c.checked;localStorage.setItem(storageKey,JSON.stringify(saved));updateProgress()})});
-    function updateProgress(){const done=$$(".done-check").filter(c=>c.checked).length;$("#progress").value=done;$("#progressText").textContent=dynT("kj.progress",{done:done,total:\1})}
+    function updateProgress(){const done=$$(".done-check").filter(c=>c.checked).length;$("#progress").value=done;$("#progressText").textContent=dynT("kj.progress",{done:done,total:42})}
     function apply(){const q=state.query.trim().toLocaleLowerCase();let visible=0;
       items.forEach(card=>{let show=(state.week==="all"||card.dataset.week===state.week)&&(state.item==="all"||card.dataset.item===state.item);
         if(card.dataset.kind==="lesson"){
