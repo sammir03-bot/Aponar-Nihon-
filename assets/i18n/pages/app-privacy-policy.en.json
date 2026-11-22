@@ -1,0 +1,86 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "en",
+ "page": "app-privacy-policy",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Android/iOS App Privacy Policy / অ্যাপ গোপনীয়তা নীতি",
+   "target": "Android/iOS App Privacy Policy / App Privacy Policy"
+  },
+  {
+   "source": "Account ও learning data",
+   "target": "Account and learning data"
+  },
+  {
+   "source": "Account তৈরি করলে email address, account name এবং authentication identifier সংরক্ষণ করা হয়। Optional profile fields-এ user school/institution, nationality, city, phone number, JLPT target, preferred language, study goal, bio বা profile-related information যোগ করতে পারেন। Signed-in learning activity, progress এবং timestamps service functionality ও learning analytics-এর জন্য সংরক্ষণ করা হতে পারে। Authentication Supabase Auth দ্বারা পরিচালিত হয়; password Aponar Nihon database-এ plain text হিসেবে রাখা হয় না।",
+   "target": "When you create an account, your email address, account name and authentication identifier are stored. In optional profile fields, users can add their school/institution, nationality, city, phone number, JLPT target, preferred language, study goal, bio or profile-related information. Signed-in learning activity, progress and timestamps may be stored for service functionality and learning analytics. Authentication is managed by Supabase Auth; passwords are not stored in plain text in the Aponar Nihon database."
+  },
+  {
+   "source": "Halal Scanner product barcode শনাক্ত করতে camera permission ব্যবহার করে। Barcode scan করার জন্য camera image/video Aponar Nihon account-এ upload বা media library হিসেবে সংরক্ষণ করা হয় না।",
+   "target": "The Halal Scanner uses camera permission to detect product barcodes. Camera images/video for barcode scanning are not uploaded to an Aponar Nihon account or stored as a media library."
+  },
+  {
+   "source": "CV Builder-এ user নিজের CV photo নির্বাচন করলে photo-library permission ব্যবহার করা হয়। নির্বাচিত photo CV/PDF তৈরির কাজে ব্যবহৃত হয়।",
+   "target": "In CV Builder, if the user selects their own CV photo, photo-library permission is used. The selected photo is used to create the CV/PDF."
+  },
+  {
+   "source": "User চাইলে local daily study reminder চালু করতে notification permission ব্যবহার করা হয়। Reminder optional.",
+   "target": "If the user wishes, notification permission is used to enable a local daily study reminder. The reminder is optional."
+  },
+  {
+   "source": "Halal Scanner ও product lookup",
+   "target": "Halal Scanner and product lookup"
+  },
+  {
+   "source": "Barcode scan করলে barcode/product lookup request Open Food Facts বা configured product-data provider-এ পাঠানো হতে পারে, যাতে product information পাওয়া যায়। Ingredient screening educational assistance; এটি official halal certification নয়। Verified certificate label কেবল যাচাইযোগ্য certifier/official source থাকা record-এর জন্য ব্যবহার করা হয়।",
+   "target": "When you scan a barcode, the barcode/product lookup request may be sent to Open Food Facts or a configured product-data provider so that product information can be obtained. Ingredient screening is educational assistance; it is not official halal certification. A verified certificate label is used only for records with a verifiable certifier/official source."
+  },
+  {
+   "source": "AI Tutor ব্যবহার করলে user-এর পাঠানো প্রশ্ন, practice text এবং প্রয়োজনীয় conversation context Aponar Nihon API/Cloudflare infrastructure হয়ে configured AI service provider-এর কাছে requested response তৈরির জন্য process হতে পারে। AI Tutor-এ অপ্রয়োজনীয় password, banking credential, residence-card/passport number বা অন্য sensitive identifier না দেওয়া উচিত। AI Tutor prompt advertising profile তৈরির জন্য বিক্রি করা হয় না।",
+   "target": "When you use AI Tutor, the questions you send, practice text and necessary conversation context may be processed via the Aponar Nihon API/Cloudflare infrastructure by the configured AI service provider to generate the requested response. You should not provide unnecessary passwords, banking credentials, residence-card/passport numbers or other sensitive identifiers to AI Tutor. AI Tutor prompts are not sold to create advertising profiles."
+  },
+  {
+   "source": "Native CV Builder user-এর entered CV data ও selected photo ব্যবহার করে PDF তৈরি করে এবং device share sheet দেয়। User নিজে share না করলে Aponar Nihon সেই generated PDF কোনো recipient-কে পাঠায় না। Future cloud-save/sync feature চালু হলে এই policy update করতে হবে।",
+   "target": "The Native CV Builder creates a PDF using the CV data entered by the user and the selected photo, and provides the device share sheet. Aponar Nihon does not send that generated PDF to any recipient unless the user shares it themselves. If a future cloud-save/sync feature is launched, this policy will need to be updated."
+  },
+  {
+   "source": "Production service-এ Supabase (authentication/database), Cloudflare (hosting/API), configured AI provider (AI Tutor), এবং Open Food Facts বা configured product-data source (barcode lookup) ব্যবহার হতে পারে। Requested feature চালাতে প্রয়োজনীয় data এই providers-এর infrastructure-এ process হতে পারে।",
+   "target": "The production service may use Supabase (authentication/database), Cloudflare (hosting/API), a configured AI provider (AI Tutor), and Open Food Facts or a configured product-data source (barcode lookup). Data necessary to run a requested feature may be processed on these providers' infrastructure."
+  },
+  {
+   "source": "Data account access, app functionality, learning progress, personalization, security, support এবং service improvement-এর জন্য ব্যবহার করা হয়। Aponar Nihon user data বিক্রি করে না এবং cross-company advertising tracking-এর উদ্দেশ্যে app data ব্যবহার করার জন্য design করা নয়।",
+   "target": "Data is used for account access, app functionality, learning progress, personalization, security, support and service improvement. Aponar Nihon does not sell user data and is not designed to use app data for cross-company advertising tracking."
+  },
+  {
+   "source": "HTTPS network transport, authenticated sessions, native secure session storage এবং database Row Level Security ব্যবহার করা হয়। Native client-এ Supabase publishable key থাকে; service-role/server secret client app-এ রাখা হয় না। Internet service-এ absolute security guarantee করা যায় না।",
+   "target": "HTTPS network transport, authenticated sessions, native secure session storage and database Row Level Security are used. The native client contains the Supabase publishable key; service-role/server secrets are not kept in the client app. Absolute security cannot be guaranteed for an internet service."
+  },
+  {
+   "source": "Data retention ও deletion",
+   "target": "Data retention and deletion"
+  },
+  {
+   "source": "Account active থাকা পর্যন্ত account-related data রাখা হতে পারে। Account এবং associated app data delete করার information/flow-এর জন্য",
+   "target": "Account-related data may be kept while the account is active. For information/flow to delete your account and associated app data,"
+  },
+  {
+   "source": "ব্যবহার করুন। আইনগত বা নিরাপত্তাজনিত বাধ্যতামূলক retention প্রয়োজন না হলে account-linked profile/progress/activity data deletion flow-এর মাধ্যমে সরানো হয়। Device-local generated CV/reminder data device/app data clear করেও সরানো যায়।",
+   "target": "please use it. Unless legal or security retention is required, account-linked profile/progress/activity data is removed through the deletion flow. Device-local generated CV/reminder data can also be removed by clearing device/app data."
+  },
+  {
+   "source": "Aponar Nihon সাধারণ education service; এটি 13 বছরের কম বয়সী শিশুদের কাছ থেকে জেনে-বুঝে account data সংগ্রহের উদ্দেশ্যে তৈরি নয়।",
+   "target": "Aponar Nihon is a general education service; it is not designed to knowingly collect account data from children under 13 years of age."
+  },
+  {
+   "source": "Policy changes ও contact",
+   "target": "Policy changes and contact"
+  },
+  {
+   "source": "App feature, provider বা legal requirement পরিবর্তিত হলে এই policy update হতে পারে। Privacy বা account-related প্রশ্নের জন্য Aponar Nihon website-এর Contact/Support option ব্যবহার করুন।",
+   "target": "This policy may be updated if app features, providers or legal requirements change. For privacy or account-related questions, use the Contact/Support option on the Aponar Nihon website."
+  }
+ ]
+}

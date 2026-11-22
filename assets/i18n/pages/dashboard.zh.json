@@ -1,0 +1,554 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "zh",
+ "page": "dashboard",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "আপনার নিহোন - ইন্টারেক্টিভ ড্যাশবোর্ড",
+   "target": "আপনার নিহোন - 交互式仪表板"
+  },
+  {
+   "source": "মূল সাইটে ফিরুন",
+   "target": "返回主站"
+  },
+  {
+   "source": "ইন্টারেক্টিভ ড্যাশবোর্ড",
+   "target": "交互式仪表板"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "ডেটা ভিজুয়ালাইজেশন",
+   "target": "数据可视化"
+  },
+  {
+   "source": "জাপানি ভাষা শিক্ষা, খরচ, JLPT লেভেল এবং ক্যারিয়ার সম্পর্কিত সকল তথ্য একনজরে দেখুন",
+   "target": "一目了然地查看与日语学习、费用、JLPT 级别和职业相关的所有信息"
+  },
+  {
+   "source": "০",
+   "target": "0"
+  },
+  {
+   "source": "মোট শিক্ষার্থী",
+   "target": "学生总数"
+  },
+  {
+   "source": "PDF রিসোর্স",
+   "target": "PDF 资源"
+  },
+  {
+   "source": "০%",
+   "target": "0%"
+  },
+  {
+   "source": "সাকসেস রেট",
+   "target": "成功率"
+  },
+  {
+   "source": "কুইজ প্রশ্ন",
+   "target": "测验问题"
+  },
+  {
+   "source": "ইন্টারভিউ প্রশ্ন",
+   "target": "面试问题"
+  },
+  {
+   "source": "প্রিন্ট / সেভ PDF",
+   "target": "打印 / 保存 PDF"
+  },
+  {
+   "source": "শেয়ার করুন",
+   "target": "分享"
+  },
+  {
+   "source": "শেখা শুরু করুন",
+   "target": "开始学习"
+  },
+  {
+   "source": "ডেটা বিশ্লেষণ",
+   "target": "数据分析"
+  },
+  {
+   "source": "প্ল্যাটফর্ম ওভারভিউ",
+   "target": "平台概览"
+  },
+  {
+   "source": "আপনার নিহোন প্ল্যাটফর্মের সকল রিসোর্স ও পরিসংখ্যান",
+   "target": "আপনার নিহোন 平台的所有资源和统计数据"
+  },
+  {
+   "source": "JLPT লেভেল ভিত্তিক রিসোর্স",
+   "target": "按 JLPT 级别划分的资源"
+  },
+  {
+   "source": "স্টাডি ম্যাটেরিয়াল ক্যাটেগরি",
+   "target": "学习材料类别"
+  },
+  {
+   "source": "বিভাগ",
+   "target": "除法"
+  },
+  {
+   "source": "জাপানে মাসিক খরচের তুলনা (ইয়েনে)",
+   "target": "日本每月费用比较（以日元计）"
+  },
+  {
+   "source": "শহরভিত্তিক",
+   "target": "按城市"
+  },
+  {
+   "source": "কুইজ ক্যাটেগরি বিশ্লেষণ",
+   "target": "测验类别分析"
+  },
+  {
+   "source": "N5 কুইজ",
+   "target": "N5 测验"
+  },
+  {
+   "source": "ইন্টারভিউ প্রস্তুতি ওভারভিউ",
+   "target": "面试准备概览"
+  },
+  {
+   "source": "প্রস্তুতি",
+   "target": "准备"
+  },
+  {
+   "source": "JLPT পাস রেট ট্রেন্ড (বিশ্বব্যাপী)",
+   "target": "JLPT 通过率趋势（全球）"
+  },
+  {
+   "source": "ট্রেন্ড",
+   "target": "趋势"
+  },
+  {
+   "source": "তুলনামূলক বিশ্লেষণ",
+   "target": "比较分析"
+  },
+  {
+   "source": "JLPT লেভেল তুলনা",
+   "target": "JLPT 级别比较"
+  },
+  {
+   "source": "প্রতিটি JLPT লেভেলের বিস্তারিত তুলনা",
+   "target": "每个 JLPT 级别的详细比较"
+  },
+  {
+   "source": "লেভেল",
+   "target": "等级"
+  },
+  {
+   "source": "কানজি",
+   "target": "汉字"
+  },
+  {
+   "source": "ভোকাবুলারি",
+   "target": "词汇"
+  },
+  {
+   "source": "সময়কাল",
+   "target": "时长"
+  },
+  {
+   "source": "পাস রেট",
+   "target": "通过率"
+  },
+  {
+   "source": "ব্যবহার",
+   "target": "用法"
+  },
+  {
+   "source": "১০২টি",
+   "target": "102个"
+  },
+  {
+   "source": "~৮০০",
+   "target": "~800"
+  },
+  {
+   "source": "৩-৪ মাস",
+   "target": "3-4个月"
+  },
+  {
+   "source": "~৪৫%",
+   "target": "~45%"
+  },
+  {
+   "source": "ভাষা স্কুলে ভর্তি",
+   "target": "进入语言学校"
+  },
+  {
+   "source": "৩২০টি",
+   "target": "320个"
+  },
+  {
+   "source": "~১,৫০০",
+   "target": "~1,500"
+  },
+  {
+   "source": "৬-৮ মাস",
+   "target": "6-8个月"
+  },
+  {
+   "source": "~৩৫%",
+   "target": "~35%"
+  },
+  {
+   "source": "দৈনন্দিন জীবন",
+   "target": "日常生活"
+  },
+  {
+   "source": "৬৫০টি",
+   "target": "650个"
+  },
+  {
+   "source": "~৩,৭৫০",
+   "target": "~3,750"
+  },
+  {
+   "source": "১২-১৮ মাস",
+   "target": "12-18个月"
+  },
+  {
+   "source": "~৩২%",
+   "target": "~32%"
+  },
+  {
+   "source": "কর্মক্ষেত্র / ভিসা",
+   "target": "职场 / 签证"
+  },
+  {
+   "source": "১,০০০টি",
+   "target": "1,000个"
+  },
+  {
+   "source": "~৬,০০০",
+   "target": "~6,000"
+  },
+  {
+   "source": "১৮-২৪ মাস",
+   "target": "18-24个月"
+  },
+  {
+   "source": "~৩৬%",
+   "target": "~36%"
+  },
+  {
+   "source": "বিশ্ববিদ্যালয় / চাকরি",
+   "target": "大学 / 工作"
+  },
+  {
+   "source": "২,০০০+",
+   "target": "2,000+"
+  },
+  {
+   "source": "~১০,০০০",
+   "target": "~10,000"
+  },
+  {
+   "source": "৩-৪ বছর",
+   "target": "3-4年"
+  },
+  {
+   "source": "~৩০%",
+   "target": "~30%"
+  },
+  {
+   "source": "প্রফেশনাল / একাডেমিক",
+   "target": "专业 / 学术"
+  },
+  {
+   "source": "খরচের বিশ্লেষণ",
+   "target": "费用分析"
+  },
+  {
+   "source": "জাপানে বার্ষিক খরচ (বাংলাদেশি টাকায়)",
+   "target": "日本年度费用（以孟加拉国塔卡计）"
+  },
+  {
+   "source": "শহরভেদে জাপানে পড়াশোনার আনুমানিক খরচ",
+   "target": "按城市估算的日本留学费用"
+  },
+  {
+   "source": "টোকিও",
+   "target": "东京"
+  },
+  {
+   "source": "সবচেয়ে ব্যয়বহুল",
+   "target": "最昂贵"
+  },
+  {
+   "source": "১২-১৫ লাখ",
+   "target": "120-150万"
+  },
+  {
+   "source": "বাৎসরিক (টাকা)",
+   "target": "年度（塔卡）"
+  },
+  {
+   "source": "টিউশন ফি",
+   "target": "学费"
+  },
+  {
+   "source": "৫-৬ লাখ",
+   "target": "50-60万"
+  },
+  {
+   "source": "বাসা ভাড়া",
+   "target": "房租"
+  },
+  {
+   "source": "৪-৫ লাখ",
+   "target": "40-50万"
+  },
+  {
+   "source": "খাবার ও অন্যান্য",
+   "target": "食物和其他"
+  },
+  {
+   "source": "৩-৪ লাখ",
+   "target": "30-40万"
+  },
+  {
+   "source": "ওসাকা / নাগোয়া",
+   "target": "大阪 / 名古屋"
+  },
+  {
+   "source": "মাঝারি খরচ",
+   "target": "中等费用"
+  },
+  {
+   "source": "১০-১২ লাখ",
+   "target": "100-120万"
+  },
+  {
+   "source": "৩ লাখ",
+   "target": "30万"
+  },
+  {
+   "source": "অন্যান্য শহর",
+   "target": "其他城市"
+  },
+  {
+   "source": "সবচেয়ে সাশ্রয়ী",
+   "target": "最实惠"
+  },
+  {
+   "source": "৮-১০ লাখ",
+   "target": "80-100万"
+  },
+  {
+   "source": "২-৩ লাখ",
+   "target": "20-30万"
+  },
+  {
+   "source": "২ লাখ",
+   "target": "20万"
+  },
+  {
+   "source": "শিক্ষার পথ",
+   "target": "教育之路"
+  },
+  {
+   "source": "জাপানে যাওয়ার সম্পূর্ণ রোডম্যাপ",
+   "target": "前往日本的完整路线图"
+  },
+  {
+   "source": "বাংলাদেশ থেকে জাপানে পড়াশোনার ধাপে ধাপে গাইড",
+   "target": "从孟加拉国到日本留学的分步指南"
+  },
+  {
+   "source": "ধাপ ১",
+   "target": "步骤 1"
+  },
+  {
+   "source": "JLPT N5 শিখুন",
+   "target": "学习 JLPT N5"
+  },
+  {
+   "source": "বেসিক জাপানি ভাষা শিখুন — হিরাগানা, কাতাকানা, ১০২টি কানজি, বেসিক গ্রামার ও ভোকাবুলারি।",
+   "target": "学习基础日语 — 平假名、片假名、102个汉字、基础语法和词汇。"
+  },
+  {
+   "source": "ধাপ ২",
+   "target": "步骤 2"
+  },
+  {
+   "source": "JLPT N4 সম্পন্ন করুন",
+   "target": "完成 JLPT N4"
+  },
+  {
+   "source": "ইন্টারমিডিয়েট লেভেল — ৩২০টি কানজি, জটিল গ্রামার, দৈনন্দিন কথোপকথন দক্ষতা অর্জন।",
+   "target": "中级水平 — 320个汉字、复杂语法、掌握日常会话技能。"
+  },
+  {
+   "source": "৩-৪ মাস অতিরিক্ত",
+   "target": "额外3-4个月"
+  },
+  {
+   "source": "ধাপ ৩",
+   "target": "步骤 3"
+  },
+  {
+   "source": "ইন্টারভিউ প্রস্তুতি",
+   "target": "面试准备"
+  },
+  {
+   "source": "Skype Interview (২৫০ প্রশ্ন) এবং Embassy Interview (১৫০ প্রশ্ন) এর জন্য পূর্ণ প্রস্তুতি নিন।",
+   "target": "为 Skype Interview（250个问题）和 Embassy Interview（150个问题）做好充分准备。"
+  },
+  {
+   "source": "১-২ মাস",
+   "target": "1-2个月"
+  },
+  {
+   "source": "ধাপ ৪",
+   "target": "步骤4"
+  },
+  {
+   "source": "COE ও ভিসা প্রসেসিং",
+   "target": "COE 和签证处理"
+  },
+  {
+   "source": "Certificate of Eligibility (COE) আবেদন, ব্যাংক স্টেটমেন্ট প্রস্তুত এবং ভিসা সংগ্রহ।",
+   "target": "Certificate of Eligibility (COE) 申请、准备银行对账单和领取签证。"
+  },
+  {
+   "source": "৩-৬ মাস প্রসেসিং",
+   "target": "处理需3-6个月"
+  },
+  {
+   "source": "ধাপ ৫",
+   "target": "步骤5"
+  },
+  {
+   "source": "জাপানে পৌঁছান ও পড়াশোনা শুরু",
+   "target": "抵达日本并开始学习"
+  },
+  {
+   "source": "ভাষা স্কুলে ভর্তি, পার্ট-টাইম জব (সপ্তাহে ২৮ ঘণ্টা), এবং উচ্চশিক্ষার প্রস্তুতি।",
+   "target": "进入语言学校、兼职工作（每周28小时），并为高等教育做准备。"
+  },
+  {
+   "source": "১-২ বছর",
+   "target": "1-2年"
+  },
+  {
+   "source": "ধাপ ৬",
+   "target": "步骤6"
+  },
+  {
+   "source": "ক্যারিয়ার গড়ুন",
+   "target": "建立职业生涯"
+  },
+  {
+   "source": "স্নাতক শেষে Job Hunting Visa নিয়ে IT, Engineering, Nursing সেক্টরে ক্যারিয়ার শুরু করুন।",
+   "target": "毕业后凭 Job Hunting Visa 在 IT、Engineering、Nursing 领域开始职业生涯。"
+  },
+  {
+   "source": "সারাজীবন",
+   "target": "终身"
+  },
+  {
+   "source": "রিসোর্স সারাংশ",
+   "target": "资源摘要"
+  },
+  {
+   "source": "প্ল্যাটফর্মের সকল রিসোর্স",
+   "target": "平台的所有资源"
+  },
+  {
+   "source": "আপনার নিহোনে যা যা পাবেন",
+   "target": "在 আপনার নিহোন 您将获得的一切"
+  },
+  {
+   "source": "N5 ভোকাবুলারি",
+   "target": "N5 词汇"
+  },
+  {
+   "source": "বাংলা অনুবাদসহ শব্দভাণ্ডার",
+   "target": "附孟加拉语翻译的词汇"
+  },
+  {
+   "source": "৩",
+   "target": "3"
+  },
+  {
+   "source": "N5 কানজি",
+   "target": "N5 汉字"
+  },
+  {
+   "source": "১০২টি কানজি ক্যারেক্টার",
+   "target": "102个汉字字符"
+  },
+  {
+   "source": "১",
+   "target": "1"
+  },
+  {
+   "source": "N5 গ্রামার",
+   "target": "N5 语法"
+  },
+  {
+   "source": "বেসিক জাপানি ব্যাকরণ",
+   "target": "基础日语语法"
+  },
+  {
+   "source": "২",
+   "target": "2"
+  },
+  {
+   "source": "N5 রিডিং",
+   "target": "N5 阅读"
+  },
+  {
+   "source": "Minna no Nihongo ভিত্তিক",
+   "target": "基于 Minna no Nihongo"
+  },
+  {
+   "source": "N4 ভোকাবুলারি",
+   "target": "N4 词汇"
+  },
+  {
+   "source": "Lesson 25-50 ভিত্তিক",
+   "target": "基于 Lesson 25-50"
+  },
+  {
+   "source": "N4 কানজি",
+   "target": "N4 汉字"
+  },
+  {
+   "source": "৩২০টি কানজি ক্যারেক্টার",
+   "target": "320个汉字字符"
+  },
+  {
+   "source": "N4 গ্রামার",
+   "target": "N4 语法"
+  },
+  {
+   "source": "ইন্টারমিডিয়েট ব্যাকরণ",
+   "target": "中级语法"
+  },
+  {
+   "source": "N4 রিডিং",
+   "target": "N4 阅读"
+  },
+  {
+   "source": "Lesson 25-50 রিডিং",
+   "target": "Lesson 25-50 阅读"
+  },
+  {
+   "source": "© ২০২৬",
+   "target": "© 2026"
+  },
+  {
+   "source": "| ইন্টারেক্টিভ ড্যাশবোর্ড | Created by SAMMIR",
+   "target": "| 交互式仪表板 | Created by SAMMIR"
+  }
+ ]
+}

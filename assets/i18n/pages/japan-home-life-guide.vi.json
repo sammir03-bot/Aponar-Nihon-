@@ -1,0 +1,370 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "japan-home-life-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন | আপনার নিহোন",
+   "target": "Nhà ở và cuộc sống hằng ngày | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "Cẩm nang Cuộc sống Nhật Bản"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "Tất cả cẩm nang"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "Sau khi đến"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "Nhà ở và Đời sống hàng ngày"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "Tàu điện và Sân ga"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Sử dụng Google Maps"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "Việc làm thêm"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "Hỗ trợ khẩn cấp"
+  },
+  {
+   "source": "গ্যাস, বিদ্যুৎ, পানি, ময়লা, প্রতিবেশী, delivery ও bill—জাপানের বাসা নিজের হাতে চালানোর পূর্ণ গাইড।",
+   "target": "Gas, điện, nước, rác, hàng xóm, giao hàng và hóa đơn—hướng dẫn đầy đủ để tự quản lý nhà ở tại Nhật Bản."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "Giải thích bằng tiếng Bengali"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "Câu tiếng Nhật"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "Các bước thực tế"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "Tiến độ của bạn"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "Hoàn thành 0/0"
+  },
+  {
+   "source": "ময়লা",
+   "target": "Rác"
+  },
+  {
+   "source": "কেনাকাটা",
+   "target": "Mua sắm"
+  },
+  {
+   "source": "বাক্য",
+   "target": "Câu"
+  },
+  {
+   "source": "বাসায় ওঠার দিন",
+   "target": "Ngày chuyển vào nhà"
+  },
+  {
+   "source": "আগের damage ও contract সংরক্ষণ করুন",
+   "target": "Hãy lưu lại hư hỏng trước đó và hợp đồng"
+  },
+  {
+   "source": "ঘরের video তুলুন",
+   "target": "Hãy quay video căn phòng"
+  },
+  {
+   "source": "দেয়াল, floor, kitchen, bathroom, air-conditioner ও সব scratch-এর dateসহ video/ছবি রাখুন।",
+   "target": "Hãy lưu video/ảnh có ngày tháng của tường, sàn, bếp, phòng tắm, điều hòa và mọi vết xước."
+  },
+  {
+   "source": "Meter ও key গুনে নিন",
+   "target": "Hãy đếm đồng hồ đo và chìa khóa"
+  },
+  {
+   "source": "Electricity/gas/water meter, key সংখ্যা ও mailbox lock লিখে রাখুন।",
+   "target": "Hãy ghi lại đồng hồ điện/gas/nước, số lượng chìa khóa và khóa hộp thư."
+  },
+  {
+   "source": "Contract-এর নিষেধগুলো চিহ্নিত করুন",
+   "target": "Hãy đánh dấu những điều bị cấm trong hợp đồng"
+  },
+  {
+   "source": "Smoking, pet, guest, bicycle parking, instrument, drilling ও moving-out cleaning fee দেখুন।",
+   "target": "Hãy xem quy định về hút thuốc, thú cưng, khách, chỗ đậu xe đạp, nhạc cụ, khoan đục và phí vệ sinh khi chuyển đi."
+  },
+  {
+   "source": "চাবি বদল বা drilling করবেন না",
+   "target": "Đừng thay khóa hoặc khoan đục"
+  },
+  {
+   "source": "Landlord/management company-এর লিখিত অনুমতি ছাড়া স্থায়ী পরিবর্তন করবেন না।",
+   "target": "Đừng thực hiện thay đổi lâu dài nếu không có sự cho phép bằng văn bản của chủ nhà/công ty quản lý."
+  },
+  {
+   "source": "বিদ্যুৎ, গ্যাস ও পানি চালু",
+   "target": "Kích hoạt điện, gas và nước"
+  },
+  {
+   "source": "কোনটি নিজে, কোনটিতে staff আসতে পারে",
+   "target": "Việc nào tự làm, việc nào nhân viên có thể đến"
+  },
+  {
+   "source": "শুরু করার সাধারণ পদ্ধতি",
+   "target": "Cách bắt đầu thông thường"
+  },
+  {
+   "source": "খেয়াল রাখুন",
+   "target": "Hãy chú ý"
+  },
+  {
+   "source": "Company ও plan contract-এ দেখুন",
+   "target": "Hãy xem công ty và gói dịch vụ trong hợp đồng"
+  },
+  {
+   "source": "Appointment নিয়ে staff opening",
+   "target": "Đặt lịch hẹn để nhân viên đến mở"
+  },
+  {
+   "source": "কেউ ঘরে থাকতে হতে পারে",
+   "target": "Có thể cần có người ở nhà"
+  },
+  {
+   "source": "Municipal bureau-তে start request",
+   "target": "Yêu cầu bắt đầu tại cơ quan thành phố"
+  },
+  {
+   "source": "Address/room number ঠিক দিন",
+   "target": "Hãy ghi đúng địa chỉ/số phòng"
+  },
+  {
+   "source": "Building line check ও contract",
+   "target": "Kiểm tra đường dây tòa nhà và hợp đồng"
+  },
+  {
+   "source": "Construction fee/period দেখুন",
+   "target": "Hãy xem phí thi công/thời hạn"
+  },
+  {
+   "source": "গ্যাস চালু করার ব্যবস্থা করুন।",
+   "target": "Hãy sắp xếp để mở gas."
+  },
+  {
+   "source": "বিদ্যুতের চুক্তি শুরু করতে চাই।",
+   "target": "Tôi muốn bắt đầu hợp đồng điện."
+  },
+  {
+   "source": "ময়লা ফেলার নিয়ম",
+   "target": "Quy tắc đổ rác"
+  },
+  {
+   "source": "Municipality, day ও category—তিনটি একসঙ্গে মিলান",
+   "target": "Chính quyền địa phương, ngày và loại rác—hãy đối chiếu cả ba cùng nhau"
+  },
+  {
+   "source": "জাপানে garbage rule এক শহর থেকে অন্য শহরে বদলায়। Building notice এবং municipality-এর calendar-ই চূড়ান্ত।",
+   "target": "Ở Nhật Bản, quy tắc rác thay đổi từ thành phố này sang thành phố khác. Thông báo của tòa nhà và lịch của chính quyền địa phương là chuẩn cuối cùng."
+  },
+  {
+   "source": "Collection day-এর আগের রাতে নয়",
+   "target": "Không phải vào đêm trước ngày thu gom"
+  },
+  {
+   "source": "Building/area rule অনুযায়ী নির্ধারিত সময়ের আগে collection point-এ দিন।",
+   "target": "Hãy mang rác ra điểm thu gom trước giờ quy định theo quy tắc của tòa nhà/khu vực."
+  },
+  {
+   "source": "PET bottle প্রস্তুত করুন",
+   "target": "Chuẩn bị chai PET"
+  },
+  {
+   "source": "Cap/label আলাদা, হালকা rinse, municipality rule অনুযায়ী crush করুন।",
+   "target": "Tách nắp/nhãn, tráng nhẹ, và bóp dẹp theo quy tắc của địa phương."
+  },
+  {
+   "source": "৩০ সেমি বা বড় item আগে check করুন",
+   "target": "Hãy kiểm tra trước các vật từ 30 cm trở lên"
+  },
+  {
+   "source": "অনেক জায়গায় bulky waste হিসেবে booking ও paid sticker দরকার হয়। স্থানীয় rule দেখুন।",
+   "target": "Ở nhiều nơi, cần đặt lịch và dán tem trả phí cho rác cồng kềnh. Hãy xem quy tắc địa phương."
+  },
+  {
+   "source": "আপনার এলাকার rule ছাড়া মুখস্থ করবেন না",
+   "target": "Đừng học thuộc nếu không có quy tắc của khu vực bạn"
+  },
+  {
+   "source": "এখানের category উদাহরণ; collection day ও bag rule city/ward website থেকে নিশ্চিত করুন।",
+   "target": "Các loại ở đây là ví dụ; hãy xác nhận ngày thu gom và quy tắc túi rác từ trang web của thành phố/phường."
+  },
+  {
+   "source": "প্রতিবেশী ও শব্দের নিয়ম",
+   "target": "Hàng xóm và quy tắc tiếng ồn"
+  },
+  {
+   "source": "শান্ত জীবন বজায় রাখার সহজ অভ্যাস",
+   "target": "Thói quen đơn giản để giữ cuộc sống yên tĩnh"
+  },
+  {
+   "source": "রাতের শব্দ কমান",
+   "target": "Giảm tiếng ồn vào ban đêm"
+  },
+  {
+   "source": "কথা, music, washing machine, vacuum ও furniture টানা—বিশেষ করে রাতে কম রাখুন।",
+   "target": "Hãy giữ ở mức thấp tiếng nói chuyện, nhạc, máy giặt, máy hút bụi và việc kéo đồ đạc—đặc biệt vào ban đêm."
+  },
+  {
+   "source": "Hallway ও balcony পরিষ্কার রাখুন",
+   "target": "Giữ hành lang và ban công sạch sẽ"
+  },
+  {
+   "source": "Emergency exit বা shared area-তে bicycle, box বা garbage রাখবেন না।",
+   "target": "Đừng để xe đạp, thùng hộp hoặc rác ở lối thoát hiểm hoặc khu vực chung."
+  },
+  {
+   "source": "Guest rule মানুন",
+   "target": "Tuân thủ quy tắc về khách"
+  },
+  {
+   "source": "দীর্ঘদিন কাউকে রাখার আগে contract/management company-এর নিয়ম দেখুন।",
+   "target": "Trước khi cho ai ở lại lâu dài, hãy xem quy tắc trong hợp đồng/công ty quản lý."
+  },
+  {
+   "source": "সমস্যায় আগে management company",
+   "target": "Khi có vấn đề, hãy liên hệ công ty quản lý trước"
+  },
+  {
+   "source": "নিজে ঝগড়া না করে ছবি/তারিখসহ 管理会社（かんりがいしゃ）-কে জানান।",
+   "target": "Đừng tự tranh cãi, hãy thông báo cho 管理会社（かんりがいしゃ） kèm ảnh/ngày tháng."
+  },
+  {
+   "source": "কেনাকাটা, Delivery ও Bill",
+   "target": "Mua sắm, giao hàng và hóa đơn"
+  },
+  {
+   "source": "দৈনন্দিন কাজের practical system",
+   "target": "Hệ thống thực tế cho công việc hằng ngày"
+  },
+  {
+   "source": "不在票 হারাবেন না",
+   "target": "Đừng làm mất 不在票"
+  },
+  {
+   "source": "Delivery miss হলে slip-এর QR/phone দিয়ে redelivery request করুন।",
+   "target": "Nếu lỡ giao hàng, hãy yêu cầu giao lại bằng mã QR/số điện thoại trên phiếu."
+  },
+  {
+   "source": "Payment deadline দেখুন",
+   "target": "Hãy xem hạn thanh toán"
+  },
+  {
+   "source": "Utility bill convenience store-এ দেওয়া যায় কি না barcode ও expiry দেখে নিন।",
+   "target": "Hãy kiểm tra mã vạch và ngày hết hạn để xem hóa đơn tiện ích có thể thanh toán tại cửa hàng tiện lợi hay không."
+  },
+  {
+   "source": "Receipt কিছুদিন রাখুন",
+   "target": "Hãy giữ biên lai một thời gian"
+  },
+  {
+   "source": "Return, warranty ও expense proof-এর জন্য গুরুত্বপূর্ণ receipt আলাদা envelope-এ রাখুন।",
+   "target": "Hãy giữ các biên lai quan trọng trong một phong bì riêng để đổi trả, bảo hành và chứng minh chi phí."
+  },
+  {
+   "source": "বাসায় প্রয়োজনীয় বাক্য",
+   "target": "Các câu cần thiết ở nhà"
+  },
+  {
+   "source": "Management company ও delivery-তে ব্যবহার",
+   "target": "Dùng khi liên hệ công ty quản lý và giao hàng"
+  },
+  {
+   "source": "গরম পানি আসছে না। দেখে দেবেন?",
+   "target": "Không có nước nóng. Bạn có thể kiểm tra giúp tôi không?"
+  },
+  {
+   "source": "পানি লিক করছে।",
+   "target": "Nước đang bị rò rỉ."
+  },
+  {
+   "source": "পুনরায় ডেলিভারি চাই।",
+   "target": "Tôi muốn giao hàng lại."
+  },
+  {
+   "source": "ময়লা ফেলার দিন বলবেন।",
+   "target": "Xin cho tôi biết ngày đổ rác."
+  },
+  {
+   "source": "দৈনন্দিন Checklist",
+   "target": "Danh sách kiểm tra hằng ngày"
+  },
+  {
+   "source": "নিজের ঘর চালানোর প্রস্তুতি",
+   "target": "Chuẩn bị để tự quản lý nhà của bạn"
+  },
+  {
+   "source": "Move-in damage-এর ছবি/video রেখেছি",
+   "target": "Đã lưu ảnh/video hư hỏng khi chuyển vào"
+  },
+  {
+   "source": "Electricity, gas, water চালু করেছি",
+   "target": "Đã kích hoạt điện, gas, nước"
+  },
+  {
+   "source": "Garbage calendar save করেছি",
+   "target": "Đã lưu lịch đổ rác"
+  },
+  {
+   "source": "Emergency exit ও breaker location চিনেছি",
+   "target": "Đã biết lối thoát hiểm và vị trí cầu dao"
+  },
+  {
+   "source": "Management company-এর phone save করেছি",
+   "target": "Đã lưu số điện thoại của công ty quản lý"
+  },
+  {
+   "source": "Bill deadline-এর reminder দিয়েছি",
+   "target": "Đã đặt nhắc nhở cho hạn hóa đơn"
+  },
+  {
+   "source": "Mailbox ও delivery name ঠিক আছে",
+   "target": "Tên trên hộp thư và giao hàng đã đúng"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "Nguồn chính thức và đáng tin cậy"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "Quy định có thể thay đổi—vui lòng kiểm tra thông tin chính thức trước khi quyết định cuối cùng"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "Hướng dẫn này mang tính chất tham khảo học tập. Đối với các quyết định pháp lý/y tế cá nhân, vui lòng tuân theo hướng dẫn của cơ quan hoặc chuyên gia liên quan."
+  },
+  {
+   "source": "হোম",
+   "target": "Trang chủ"
+  }
+ ]
+}

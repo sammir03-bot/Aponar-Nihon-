@@ -1,0 +1,54 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ur",
+ "page": "auth",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "এক অ্যাকাউন্টে আপনার সব Learning",
+   "target": "ایک account میں آپ کی تمام Learning"
+  },
+  {
+   "source": "Profile, Mock Test, CV Builder ও learning progress নিরাপদভাবে একই account-এ রাখুন।",
+   "target": "Profile، Mock Test، CV Builder اور learning progress کو محفوظ طریقے سے ایک ہی account میں رکھیں۔"
+  },
+  {
+   "source": "Verified account হলে login হবে।",
+   "target": "Verified account ہونے پر login ہوگا۔"
+  },
+  {
+   "source": "Password ভুলে গেছেন?",
+   "target": "Password بھول گئے؟"
+  },
+  {
+   "source": "আপনার নাম",
+   "target": "آپ کا نام"
+  },
+  {
+   "source": "Account তৈরি করুন",
+   "target": "Account بنائیں"
+  },
+  {
+   "source": "Account তৈরির পর Gmail-এ verification link যাবে। Link খুললে verification complete হয়ে Profile-এ যাবে।",
+   "target": "Account بنانے کے بعد Gmail پر verification link جائے گا۔ Link کھولنے پر verification مکمل ہو کر Profile پر لے جائے گا۔"
+  },
+  {
+   "source": "Verification mail না পেলে spam/junk folder দেখুন, তারপর আবার পাঠাতে পারেন।",
+   "target": "Verification mail نہ ملے تو spam/junk folder دیکھیں، پھر دوبارہ بھیج سکتے ہیں۔"
+  },
+  {
+   "source": "Verification email আবার পাঠান",
+   "target": "Verification email دوبارہ بھیجیں"
+  },
+  {
+   "source": "Password কখনো আমাদের database-এ plain text হিসেবে রাখা হয় না। Authentication Supabase Auth দ্বারা পরিচালিত হয়।",
+   "target": "Password کبھی ہمارے database میں plain text کے طور پر نہیں رکھا جاتا۔ Authentication کا انتظام Supabase Auth کرتا ہے۔"
+  },
+  {
+   "source": "← হোমে ফিরে যান",
+   "target": "← ہوم پر واپس جائیں"
+  }
+ ]
+}

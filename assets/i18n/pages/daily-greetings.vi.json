@@ -1,0 +1,242 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "daily-greetings",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "দৈনন্দিন শুভেচ্ছা | আপনার নিহোন",
+   "target": "Lời chào hằng ngày"
+  },
+  {
+   "source": "দৈনন্দিন শুভেচ্ছা",
+   "target": "Lời chào hằng ngày"
+  },
+  {
+   "source": "জাপানে প্রতিদিনের কথোপকথনে সবচেয়ে বেশি ব্যবহৃত শুভেচ্ছা ও ভদ্রতার বাক্য",
+   "target": "Những lời chào và câu lịch sự được dùng nhiều nhất trong hội thoại hằng ngày ở Nhật Bản"
+  },
+  {
+   "source": "সময় অনুযায়ী শুভেচ্ছা",
+   "target": "Lời chào theo thời gian"
+  },
+  {
+   "source": "সকাল / দুপুর / সন্ধ্যা / রাত",
+   "target": "Sáng / Trưa / Chiều tối / Đêm"
+  },
+  {
+   "source": "সুপ্রভাত (ফরমাল)",
+   "target": "Chào buổi sáng (trang trọng)"
+  },
+  {
+   "source": "সুপ্রভাত (ক্যাজুয়াল — বন্ধু/ফ্যামিলি)",
+   "target": "Chào buổi sáng (thân mật — bạn bè/gia đình)"
+  },
+  {
+   "source": "হ্যালো / শুভ দুপুর (সকাল ১১টা – সন্ধ্যা ৫টা)",
+   "target": "Xin chào / Chào buổi trưa (11 giờ sáng – 5 giờ chiều)"
+  },
+  {
+   "source": "শুভ সন্ধ্যা (সন্ধ্যা ৫টা পর থেকে)",
+   "target": "Chào buổi tối (từ sau 5 giờ chiều)"
+  },
+  {
+   "source": "শুভ রাত্রি / ঘুমান (ফরমাল)",
+   "target": "Chúc ngủ ngon / Ngủ ngon (trang trọng)"
+  },
+  {
+   "source": "শুভ রাত্রি (ক্যাজুয়াল)",
+   "target": "Chúc ngủ ngon (thân mật)"
+  },
+  {
+   "source": "ভদ্রতা ও কৃতজ্ঞতা",
+   "target": "Lịch sự và biết ơn"
+  },
+  {
+   "source": "ধন্যবাদ, ক্ষমা ও অনুমতি",
+   "target": "Cảm ơn, xin lỗi và xin phép"
+  },
+  {
+   "source": "আপনাকে অনেক ধন্যবাদ (ফরমাল)",
+   "target": "Cảm ơn bạn rất nhiều (trang trọng)"
+  },
+  {
+   "source": "ধন্যবাদ (ক্যাজুয়াল)",
+   "target": "Cảm ơn (thân mật)"
+  },
+  {
+   "source": "আপনাকে খুবই ধন্যবাদ (অনেক বেশি কৃতজ্ঞতা)",
+   "target": "Cảm ơn bạn rất rất nhiều (rất biết ơn)"
+  },
+  {
+   "source": "মাফ করবেন / এক্সকিউজ মি / দুঃখিত",
+   "target": "Xin lỗi / Xin phép / Rất tiếc"
+  },
+  {
+   "source": "আমি দুঃখিত / ক্ষমা করবেন (ফরমাল ক্ষমা)",
+   "target": "Tôi xin lỗi / Xin hãy tha lỗi (xin lỗi trang trọng)"
+  },
+  {
+   "source": "সরি (ক্যাজুয়াল — বন্ধুদের মধ্যে)",
+   "target": "Xin lỗi (thân mật — giữa bạn bè)"
+  },
+  {
+   "source": "অনুমতি দিন / আমি বিদায় নিচ্ছি (অফিস/ফরমাল)",
+   "target": "Xin phép / Tôi xin ra về (văn phòng/trang trọng)"
+  },
+  {
+   "source": "বিরক্ত করছি (ঘরে ঢোকার সময় বলা হয়)",
+   "target": "Xin làm phiền (nói khi bước vào nhà)"
+  },
+  {
+   "source": "নিজের পরিচয়",
+   "target": "Giới thiệu bản thân"
+  },
+  {
+   "source": "নিজের পরিচয় দেওয়া",
+   "target": "Giới thiệu về bản thân"
+  },
+  {
+   "source": "প্রথমবার দেখা হলো / আপনার সাথে পরিচয় পেয়ে ভালো লাগলো",
+   "target": "Rất vui được gặp bạn lần đầu / Rất vui được làm quen với bạn"
+  },
+  {
+   "source": "আমি ~ (নাম/পেশা)",
+   "target": "Tôi là ~ (tên/nghề nghiệp)"
+  },
+  {
+   "source": "আমার সাথে ভালোভাবে থাকবেন / আমাকে গ্রহণ করবেন (পরিচয়ের শেষে)",
+   "target": "Mong bạn đối xử tốt với tôi / Mong được bạn đón nhận (cuối phần giới thiệu)"
+  },
+  {
+   "source": "আমাকে গ্রহণ করো (ক্যাজুয়াল)",
+   "target": "Mong cậu đối xử tốt với tớ (thân mật)"
+  },
+  {
+   "source": "আপনার নাম কী?",
+   "target": "Tên bạn là gì?"
+  },
+  {
+   "source": "আমি ~ থেকে এসেছি",
+   "target": "Tôi đến từ ~"
+  },
+  {
+   "source": "বিদায়",
+   "target": "Tạm biệt"
+  },
+  {
+   "source": "বিদায় জানানো",
+   "target": "Nói lời tạm biệt"
+  },
+  {
+   "source": "বিদায় (দীর্ঘদিনের জন্য — আবেগঘন)",
+   "target": "Tạm biệt (trong thời gian dài — đầy cảm xúc)"
+  },
+  {
+   "source": "তাহলে পরে দেখা হবে (ক্যাজুয়াল)",
+   "target": "Vậy hẹn gặp lại sau (thân mật)"
+  },
+  {
+   "source": "আবার দেখা হবে (ক্যাজুয়াল)",
+   "target": "Hẹn gặp lại (thân mật)"
+  },
+  {
+   "source": "কাল দেখা হবে",
+   "target": "Hẹn gặp ngày mai"
+  },
+  {
+   "source": "আমি বের হচ্ছি (বাড়ি থেকে বের হওয়ার সময়)",
+   "target": "Tôi ra ngoài đây (khi rời khỏi nhà)"
+  },
+  {
+   "source": "ভালো থেকো / ফিরে আসো (যে বাড়িতে থাকে সে বলে)",
+   "target": "Đi cẩn thận / Hãy quay về nhé (người ở nhà nói)"
+  },
+  {
+   "source": "আমি ফিরে এসেছি (বাড়ি ফেরার সময়)",
+   "target": "Tôi đã về (khi về nhà)"
+  },
+  {
+   "source": "স্বাগতম / ফিরে আসার জন্য ধন্যবাদ (বাড়িতে থাকা ব্যক্তি বলে)",
+   "target": "Chào mừng về nhà / Cảm ơn vì đã quay về (người ở nhà nói)"
+  },
+  {
+   "source": "সাধারণ কথোপকথন",
+   "target": "Hội thoại thông thường"
+  },
+  {
+   "source": "প্রতিদিনের সাধারণ বাক্য",
+   "target": "Những câu thông dụng hằng ngày"
+  },
+  {
+   "source": "আপনি কেমন আছেন? (ফরমাল)",
+   "target": "Bạn có khỏe không? (trang trọng)"
+  },
+  {
+   "source": "আমি ভালো আছি",
+   "target": "Tôi khỏe"
+  },
+  {
+   "source": "হ্যাঁ / জি",
+   "target": "Vâng / Dạ"
+  },
+  {
+   "source": "না",
+   "target": "Không"
+  },
+  {
+   "source": "বুঝতে পেরেছি (ফরমাল)",
+   "target": "Tôi đã hiểu (trang trọng)"
+  },
+  {
+   "source": "আমি বুঝি (ফরমাল বর্তমান)",
+   "target": "Tôi hiểu (trang trọng, hiện tại)"
+  },
+  {
+   "source": "আমি বুঝতে পারছি না (ক্যাজুয়াল)",
+   "target": "Tôi không hiểu (thân mật)"
+  },
+  {
+   "source": "একটু অপেক্ষা করুন",
+   "target": "Xin đợi một chút"
+  },
+  {
+   "source": "আমি ঠিক আছি / কোনো সমস্যা নেই",
+   "target": "Tôi ổn / Không có vấn đề gì"
+  },
+  {
+   "source": "এটা মজার / আমি উপভোগ করছি",
+   "target": "Điều này thú vị / Tôi đang tận hưởng"
+  },
+  {
+   "source": "কপি হয়েছে!",
+   "target": "Đã sao chép!"
+  },
+  {
+   "source": "হোম",
+   "target": "Trang chủ"
+  },
+  {
+   "source": "ইন্টারভিউ",
+   "target": "Phỏng vấn"
+  },
+  {
+   "source": "কুইজ",
+   "target": "Quiz"
+  },
+  {
+   "source": "গাইড",
+   "target": "Hướng dẫn"
+  },
+  {
+   "source": "বাক্য",
+   "target": "Câu"
+  },
+  {
+   "source": "মক টেস্ট",
+   "target": "Bài thi thử"
+  }
+ ]
+}

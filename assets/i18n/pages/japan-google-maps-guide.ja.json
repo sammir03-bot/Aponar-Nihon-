@@ -1,0 +1,414 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ja",
+ "page": "japan-google-maps-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Google Maps দিয়ে যাতায়াত | আপনার নিহোন",
+   "target": "Google Mapsでの移動 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "日本生活ガイド"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "すべてのガイド"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "到着後"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "住まいと日常生活"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "電車とプラットフォーム"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Googleマップの使い方"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "アルバイト"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "緊急サポート"
+  },
+  {
+   "source": "Google Maps দিয়ে যাতায়াত",
+   "target": "Google Mapsでの移動"
+  },
+  {
+   "source": "Destination search থেকে platform, transfer, exit ও building entrance পর্যন্ত—Google Maps-এর প্রতিটি লেখা কী বোঝায় তা ধাপে ধাপে।",
+   "target": "目的地の検索からホーム、乗り換え、出口、建物の入口まで — Google Mapsのすべての表示が何を意味するかをステップごとに説明します。"
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "ベンガル語解説"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "日本語の文"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "実際のステップ"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "あなたの進捗"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 完了"
+  },
+  {
+   "source": "সঠিক Destination Search",
+   "target": "正しい目的地検索"
+  },
+  {
+   "source": "একই নামের ভুল জায়গা এড়ান",
+   "target": "同じ名前の間違った場所を避けましょう"
+  },
+  {
+   "source": "শুধু দোকানের নাম নয়, branch দিন",
+   "target": "お店の名前だけでなく、店舗名も入れてください"
+  },
+  {
+   "source": "যেমন “○○ 新宿店” বা postal address লিখুন।",
+   "target": "例えば「○○ 新宿店」や郵便住所を入力してください。"
+  },
+  {
+   "source": "Photo ও category মিলান",
+   "target": "写真とカテゴリを合わせましょう"
+  },
+  {
+   "source": "Restaurant, office, school বা park—map pin-এর category এবং exterior photo দেখুন।",
+   "target": "レストラン、オフィス、学校、公園 — 地図ピンのカテゴリと外観写真を確認してください。"
+  },
+  {
+   "source": "Address copy করে message-এর সঙ্গে মিলান",
+   "target": "住所をコピーしてメッセージと合わせましょう"
+  },
+  {
+   "source": "Interview/training address-এর ward, chōme, building ও floor সব দেখুন।",
+   "target": "面接 / 研修の住所の区、丁目、建物、階をすべて確認してください。"
+  },
+  {
+   "source": "Save ও label করুন",
+   "target": "保存してラベルを付けましょう"
+  },
+  {
+   "source": "School, Home, Work-এর মতো label দিলে পরেরবার দ্রুত route পাবেন।",
+   "target": "School、Home、Workのようなラベルを付けると、次回すばやくルートが見つかります。"
+  },
+  {
+   "source": "Directions থেকে Transit বাছাই",
+   "target": "経路から公共交通機関を選びましょう"
+  },
+  {
+   "source": "From ও To ঠিক করার নিয়ম",
+   "target": "出発地と目的地の決め方"
+  },
+  {
+   "source": "Directions চাপুন",
+   "target": "経路を押してください"
+  },
+  {
+   "source": "Starting point “Your location” ঠিক আছে কি না দেখুন; বাসা থেকে গেলে home address দিন।",
+   "target": "出発地点の「Your location」が正しいか確認してください。自宅から行く場合は自宅の住所を入れてください。"
+  },
+  {
+   "source": "Train icon নির্বাচন করুন",
+   "target": "電車アイコンを選んでください"
+  },
+  {
+   "source": "Public transit route দেখতে train/bus icon ব্যবহার করুন।",
+   "target": "公共交通機関のルートを見るには電車 / バスのアイコンを使ってください。"
+  },
+  {
+   "source": "Leave now / Depart at / Arrive by বাছুন",
+   "target": "Leave now / Depart at / Arrive by を選びましょう"
+  },
+  {
+   "source": "Interview হলে “Arrive by” দিয়ে 15–20 মিনিট buffer রাখুন।",
+   "target": "面接の場合は「Arrive by」を使い、15–20分の余裕を持たせてください。"
+  },
+  {
+   "source": "Options দেখুন",
+   "target": "オプションを見る"
+  },
+  {
+   "source": "কম transfer, কম walking, bus/train preference প্রয়োজনমতো দিন।",
+   "target": "乗り換えが少ない、歩く距離が少ない、バス / 電車の希望を必要に応じて設定してください。"
+  },
+  {
+   "source": "Route Screen-এর প্রতিটি অংশ",
+   "target": "ルート画面の各部分"
+  },
+  {
+   "source": "সময়, ভাড়া, walking ও transfer পড়ুন",
+   "target": "時間、運賃、歩行、乗り換えを読んでください"
+  },
+  {
+   "source": "চিহ্ন",
+   "target": "印をつける"
+  },
+  {
+   "source": "অর্থ",
+   "target": "意味"
+  },
+  {
+   "source": "সিদ্ধান্ত",
+   "target": "判断"
+  },
+  {
+   "source": "Departure ও arrival",
+   "target": "出発と到着"
+  },
+  {
+   "source": "বাসা থেকে station walking যোগ করুন",
+   "target": "自宅から駅までの歩行を加えてください"
+  },
+  {
+   "source": "আনুমানিক fare",
+   "target": "おおよその運賃"
+  },
+  {
+   "source": "IC balance রাখুন",
+   "target": "ICの残高を保ってください"
+  },
+  {
+   "source": "দুইবার line বদল",
+   "target": "路線を2回乗り換える"
+  },
+  {
+   "source": "Beginner হলে কম transfer route দেখুন",
+   "target": "初心者の場合は乗り換えの少ないルートを見てください"
+  },
+  {
+   "source": "Walking অংশ",
+   "target": "歩行の部分"
+  },
+  {
+   "source": "Exit-এর পর সময়",
+   "target": "出口の後の時間"
+  },
+  {
+   "source": "সম্ভাব্য platform",
+   "target": "考えられるホーム"
+  },
+  {
+   "source": "Station board-এ confirm",
+   "target": "駅の掲示で確認してください"
+  },
+  {
+   "source": "কাছের exit",
+   "target": "最寄りの出口"
+  },
+  {
+   "source": "Sign follow করুন",
+   "target": "標識に従ってください"
+  },
+  {
+   "source": "Platform ও Direction বোঝা",
+   "target": "ホームと行き先を理解する"
+  },
+  {
+   "source": "Maps-এর লেখাকে station sign-এর সঙ্গে মিলান",
+   "target": "地図の表示を駅の標識と合わせましょう"
+  },
+  {
+   "source": "Line name + direction একসঙ্গে পড়ুন",
+   "target": "路線名 + 行き先を一緒に読んでください"
+  },
+  {
+   "source": "শুধু platform number নয়; line এবং “for ○○” মিলতে হবে।",
+   "target": "ホーム番号だけでなく、路線と「for ○○」が一致しなければなりません。"
+  },
+  {
+   "source": "Maps platform পরিবর্তন হতে পারে",
+   "target": "地図のホームは変わることがあります"
+  },
+  {
+   "source": "Service disruption বা operational change-এ actual departure board-ই চূড়ান্ত।",
+   "target": "運行の乱れや運行変更の場合は、実際の発車標示が最終決定です。"
+  },
+  {
+   "source": "Train type দেখুন",
+   "target": "電車の種類を確認してください"
+  },
+  {
+   "source": "Maps যে service বলেছে—Local/Rapid—সেটিই ধরুন, অথবা আপনার station stop list যাচাই করুন।",
+   "target": "地図が示した種別 — Local / Rapid — に乗ってください。または自分の駅の停車リストを確認してください。"
+  },
+  {
+   "source": "Google নিজেও actual traffic rules/sign confirm করতে বলে। সন্দেহ হলে station staff-কে দেখান।",
+   "target": "Google自体も実際の交通ルール / 標識を確認するよう勧めています。迷ったら駅員に見せてください。"
+  },
+  {
+   "source": "স্টেশন থেকে Destination পর্যন্ত",
+   "target": "駅から目的地まで"
+  },
+  {
+   "source": "Exit, compass ও Street View",
+   "target": "出口、コンパス、ストリートビュー"
+  },
+  {
+   "source": "Exit number আগে দেখুন",
+   "target": "出口番号を先に確認してください"
+  },
+  {
+   "source": "বড় station-এ ভুল exit নিলে 10–20 মিনিট নষ্ট হতে পারে।",
+   "target": "大きな駅で間違った出口に出ると、10–20分無駄になることがあります。"
+  },
+  {
+   "source": "Blue dot-এর beam দেখুন",
+   "target": "青い点のビームを見てください"
+  },
+  {
+   "source": "আপনি কোন দিকে মুখ করে আছেন তা beam দেখায়; গোল হয়ে ঘুরলে compass calibrate করুন।",
+   "target": "どちらを向いているかをビームが示します。ぐるぐる回る場合はコンパスの調整をしてください。"
+  },
+  {
+   "source": "Street View দিয়ে building চিনুন",
+   "target": "ストリートビューで建物を認識しましょう"
+  },
+  {
+   "source": "Interview-এর আগের দিন entrance, signboard ও nearby landmark দেখে নিন।",
+   "target": "面接の前日に、入口、看板、近くの目印を確認しておきましょう。"
+  },
+  {
+   "source": "Building floor আলাদা করে লিখুন",
+   "target": "建物の階を別に書いてください"
+  },
+  {
+   "source": "Map pin সাধারণত building পর্যন্ত নেয়; floor/room message থেকে দেখুন।",
+   "target": "地図ピンは通常建物まで案内します。階 / 部屋はメッセージで確認してください。"
+  },
+  {
+   "source": "একটি বাস্তব Practice",
+   "target": "実際の練習1つ"
+  },
+  {
+   "source": "স্কুল/কাজে যাওয়ার আগের রাতের rehearsal",
+   "target": "学校 / 仕事に行く前夜のリハーサル"
+  },
+  {
+   "source": "ঠিক address খুলে “Work interview” নামে save করুন।",
+   "target": "正確な住所を開いて「Work interview」という名前で保存してください。"
+  },
+  {
+   "source": "Arrive by সেট",
+   "target": "Arrive by を設定"
+  },
+  {
+   "source": "Appointment 19:00 হলে 18:40 arrival দিন।",
+   "target": "予定が19:00なら、到着を18:40に設定してください。"
+  },
+  {
+   "source": "Departure station, line, direction, transfer, platform, exit—প্রতিটি screen রাখুন।",
+   "target": "出発駅、路線、行き先、乗り換え、ホーム、出口 — すべての画面を残してください。"
+  },
+  {
+   "source": "Alternative route দেখুন",
+   "target": "代替ルートを見てください"
+  },
+  {
+   "source": "Delay হলে দ্বিতীয় route কোনটি তা আগে জানুন।",
+   "target": "遅延した場合の2番目のルートを事前に知っておきましょう。"
+  },
+  {
+   "source": "Battery ও data প্রস্তুত",
+   "target": "バッテリーとデータの準備"
+  },
+  {
+   "source": "Power bank, phone charge এবং address text offline রাখুন।",
+   "target": "モバイルバッテリー、携帯電話の充電、住所のテキストをオフラインで保存しておきましょう。"
+  },
+  {
+   "source": "রাস্তা ও station-এ জিজ্ঞেস করার বাক্য",
+   "target": "道や駅で尋ねるときの文"
+  },
+  {
+   "source": "Map দেখিয়ে বলুন",
+   "target": "地図を見せて言いましょう"
+  },
+  {
+   "source": "আমি এই জায়গায় যেতে চাই।",
+   "target": "この場所に行きたいです。"
+  },
+  {
+   "source": "এই exit-টাই সঠিক?",
+   "target": "この出口で合っていますか？"
+  },
+  {
+   "source": "এই map-টা একটু দেখবেন?",
+   "target": "この地図を少し見ていただけますか？"
+  },
+  {
+   "source": "এখান থেকে হেঁটে কত মিনিট?",
+   "target": "ここから歩いて何分ですか？"
+  },
+  {
+   "source": "বের হওয়ার আগে ৩০ সেকেন্ডে",
+   "target": "出発前の30秒チェック"
+  },
+  {
+   "source": "Destination branch/address ঠিক আছে",
+   "target": "目的地の店舗/住所が合っている"
+  },
+  {
+   "source": "Departure বা Arrive by সময় ঠিক করেছি",
+   "target": "出発時刻または到着希望時刻を設定した"
+  },
+  {
+   "source": "Line, direction, train type দেখেছি",
+   "target": "路線、方向、列車の種別を確認した"
+  },
+  {
+   "source": "Transfer station screenshot আছে",
+   "target": "乗り換え駅のスクリーンショットがある"
+  },
+  {
+   "source": "Platform actual board-এ মিলাব",
+   "target": "ホームの実際の案内板と照らし合わせる"
+  },
+  {
+   "source": "Exit number save করেছি",
+   "target": "出口番号を保存した"
+  },
+  {
+   "source": "Battery/data ও alternative route প্রস্তুত",
+   "target": "バッテリー/データと代替ルートを準備した"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "公式で信頼できる情報源"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "規則は変更される可能性があります—最終決定の前に公式情報を確認してください"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "このガイドは学習のサポートを目的としています。個人の法律的・医療的な判断については、関係機関や専門家の指示に従ってください。"
+  },
+  {
+   "source": "হোম",
+   "target": "ホーム"
+  }
+ ]
+}

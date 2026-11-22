@@ -1,0 +1,98 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "my",
+ "page": "japan-newcomer-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জাপান লাইফ গাইড | আপনার নিহোন",
+   "target": "ဂျပန် Life Guide | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "ဂျပန်ဘဝလမ်းညွှန်"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "လမ်းညွှန်အားလုံး"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "ရောက်ရှိပြီးနောက်"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "နေအိမ်နှင့် နေ့စဉ်ဘဝ"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "ရထားနှင့် Platform"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Google Maps အသုံးပြုပုံ"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "အချိန်ပိုင်းအလုပ်"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "အရေးပေါ်အကူအညီ"
+  },
+  {
+   "source": "জাপানে নতুন জীবন",
+   "target": "ဂျပန်တွင် ဘဝသစ်"
+  },
+  {
+   "source": "শুরু থেকে শেষ পর্যন্ত",
+   "target": "အစမှ အဆုံးအထိ"
+  },
+  {
+   "source": "একটি বড় page নয়—প্রতিটি বিষয় আলাদা, পরিষ্কার এবং বাস্তব কাজের ক্রমে সাজানো।",
+   "target": "ကြီးမားသော page တစ်ခုတည်း မဟုတ်ပါ — အကြောင်းအရာတစ်ခုစီကို သီးသန့်, ရှင်းရှင်းလင်းလင်းနှင့် လက်တွေ့အလုပ် အစီအစဉ်အတိုင်း စီထားသည်။"
+  },
+  {
+   "source": "৬টি পূর্ণ গাইড",
+   "target": "ပြည့်စုံသော လမ်းညွှန် 6 ခု"
+  },
+  {
+   "source": "কোনটি শিখবেন?",
+   "target": "ဘယ်ဟာကို သင်ယူမလဲ။"
+  },
+  {
+   "source": "একটি card চাপলে সেই বিষয়ের সম্পূর্ণ গাইড খুলবে",
+   "target": "Card တစ်ခုကို နှိပ်လျှင် ထိုအကြောင်းအရာ၏ ပြည့်စုံသော လမ်းညွှန် ပွင့်လာမည်"
+  },
+  {
+   "source": "গ্যাস, বিদ্যুৎ, ময়লা, delivery",
+   "target": "ဓာတ်ငွေ့, လျှပ်စစ်, အမှိုက်, delivery"
+  },
+  {
+   "source": "লাইন, direction, transfer, IC card",
+   "target": "လိုင်း, direction, transfer, IC card"
+  },
+  {
+   "source": "সময়, platform, exit, fare",
+   "target": "အချိန်, platform, exit, fare"
+  },
+  {
+   "source": "শেখার সেরা ক্রম:",
+   "target": "သင်ယူရန် အကောင်းဆုံး အစီအစဉ်:"
+  },
+  {
+   "source": "আগমনের পর → বাসা → ট্রেন → Google Maps → চাকরি → জরুরি সহায়তা। প্রতিটি page-এর checklist আপনার browser-এ নিজে থেকে save থাকবে।",
+   "target": "ရောက်ရှိပြီးနောက် → အိမ် → ရထား → Google Maps → အလုပ် → အရေးပေါ် အကူအညီ။ Page တစ်ခုစီ၏ checklist သည် သင့် browser တွင် အလိုအလျောက် save ဖြစ်နေမည်။"
+  },
+  {
+   "source": "হোম",
+   "target": "ပင်မစာမျက်နှာ"
+  }
+ ]
+}

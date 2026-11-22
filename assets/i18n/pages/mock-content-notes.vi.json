@@ -1,0 +1,86 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "mock-content-notes",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "মক পরীক্ষার প্রশ্ন ও অডিও ক্রেডিট | আপনার নিহোন",
+   "target": "Nguồn câu hỏi và audio credit của bài thi thử | আপনার নিহোন"
+  },
+  {
+   "source": "← মক পরীক্ষায় ফিরুন",
+   "target": "← Quay lại bài thi thử"
+  },
+  {
+   "source": "প্রশ্নের উৎস ও অডিও ক্রেডিট",
+   "target": "Nguồn câu hỏi và Audio credit"
+  },
+  {
+   "source": "N5, N4 ও N3-এ ১০টি করে মোট ৩০টি মক সেট। প্রতিটি প্রশ্নের উত্তর রিভিউতে তার উৎস আলাদা করে দেওয়া আছে।",
+   "target": "10 bộ đề thử cho mỗi cấp N5, N4 và N3, tổng cộng 30 bộ. Trong phần review đáp án của mỗi câu hỏi, nguồn của nó được ghi riêng."
+  },
+  {
+   "source": "প্রশ্ন ও বাংলা ব্যাখ্যা",
+   "target": "Câu hỏi và giải thích bằng tiếng Việt"
+  },
+  {
+   "source": "-এর নির্বাচিত প্রশ্নে মূল প্রশ্ন, বিকল্প ও উত্তরক্রম রাখা হয়েছে। সংশ্লিষ্ট প্রশ্নের লিংক রিভিউতে পাবেন। অস্পষ্ট বা ভুল উত্তরযুক্ত প্রশ্ন ব্যবহার করা হয়নি।",
+   "target": "Trong các câu hỏi được chọn của -, câu hỏi gốc, các lựa chọn và thứ tự đáp án được giữ nguyên. Bạn sẽ tìm thấy link của câu hỏi liên quan trong phần review. Các câu hỏi không rõ ràng hoặc có đáp án sai đã không được sử dụng."
+  },
+  {
+   "source": "পরবর্তী সেট পূর্ণ করতে আপনার নিহোনের নিজস্ব প্রশ্ন ও পাঠ্য যোগ করা হয়েছে। এগুলো রিভিউতে “আপনার নিহোন · নিজস্ব প্রশ্ন” নামে চিহ্নিত। নিজস্ব গল্প, বিজ্ঞপ্তি ও কথোপকথন অনুশীলনের জন্য লেখা; বাস্তব প্রতিষ্ঠানের বর্তমান তথ্য হিসেবে ব্যবহার করবেন না।",
+   "target": "Để hoàn thiện các bộ tiếp theo, các câu hỏi và bài đọc riêng của আপনার নিহোন đã được thêm vào. Chúng được đánh dấu trong review là “আপনার নিহোন · Câu hỏi riêng”. Các câu chuyện, thông báo và hội thoại riêng được viết để luyện tập; đừng dùng chúng làm thông tin hiện tại của một tổ chức thật."
+  },
+  {
+   "source": "বাংলা অর্থ ও ব্যাখ্যা আপনার নিহোনে শেখার সুবিধার জন্য দেওয়া হয়েছে। পরীক্ষা মোডে জমা দেওয়ার পরে উত্তর দেখবেন। অনুশীলন মোডে উত্তর বেছে প্রতিটি প্রশ্নের ব্যাখ্যা দেখতে পারবেন।",
+   "target": "Nghĩa và giải thích bằng tiếng Việt được cung cấp trên আপনার নিহোন để thuận tiện cho việc học. Ở chế độ thi, bạn sẽ xem đáp án sau khi nộp bài. Ở chế độ luyện tập, bạn có thể chọn đáp án và xem giải thích của từng câu hỏi."
+  },
+  {
+   "source": "জাপানি লিসেনিং অডিও",
+   "target": "Audio listening tiếng Nhật"
+  },
+  {
+   "source": "আগের সেটগুলোর নির্বাচিত মূল অডিও ও ট্রান্সক্রিপ্ট JapaneseTest4You-এর। নতুন নিজস্ব লিসেনিংয়ে জাপানি কৃত্রিম কণ্ঠের রেকর্ডিং ব্যবহার করা হয়েছে। প্রতিটি অডিওর সম্পূর্ণ জাপানি পাঠ ও বাংলা অনুবাদ পরীক্ষার পরে দেখবেন।",
+   "target": "Bản audio và transcript gốc được chọn từ các bộ trước là của JapaneseTest4You. Trong các bài listening riêng mới, bản ghi giọng nhân tạo tiếng Nhật đã được sử dụng. Sau kỳ thi, bạn sẽ xem toàn bộ văn bản tiếng Nhật và bản dịch tiếng Việt của mỗi audio."
+  },
+  {
+   "source": "এই দুই কণ্ঠে তৈরি অডিও অন্য কোথাও ব্যবহার করলে উপরের কণ্ঠের ক্রেডিট রাখুন এবং সংশ্লিষ্ট ব্যবহারবিধি অনুসরণ করুন।",
+   "target": "Nếu sử dụng audio được tạo bằng hai giọng này ở nơi khác, hãy giữ credit của giọng ở trên và tuân theo điều khoản sử dụng liên quan."
+  },
+  {
+   "source": "四国めたん-এর ব্যবহারবিধি",
+   "target": "Điều khoản sử dụng của 四国めたん"
+  },
+  {
+   "source": "玄野武宏-এর ব্যবহারবিধি",
+   "target": "Điều khoản sử dụng của 玄野武宏"
+  },
+  {
+   "source": "সময়, স্কোর ও সনদ",
+   "target": "Thời gian, điểm số và chứng chỉ"
+  },
+  {
+   "source": "JLPT-এর বিভাগ অনুযায়ী সময়সীমা ও পাসসীমা অনুসরণ করা হয়েছে। প্রশ্নসংখ্যা অনুশীলনের জন্য নির্ধারিত। সঠিক উত্তরের অনুপাত থেকে ১৮০ নম্বরের স্কোর দেখানো হয়; এটি JLPT-এর অফিসিয়াল স্কেলড স্কোর নয়।",
+   "target": "Giới hạn thời gian và mức điểm đậu theo từng phần của JLPT đã được tuân theo. Số câu hỏi được quy định cho việc luyện tập. Điểm trên thang 180 được hiển thị từ tỷ lệ đáp án đúng; đây không phải official scaled score của JLPT."
+  },
+  {
+   "source": "পরীক্ষা শেষে নিজের নামে আপনার নিহোনের PDF মক সনদ পাবেন। এতে লেভেল, সেট, তারিখ, ফলাফল ও স্কোর থাকবে। এটি অনুশীলনের সনদ; অফিসিয়াল JLPT সার্টিফিকেট নয়।",
+   "target": "Sau kỳ thi, bạn sẽ nhận được chứng chỉ thử dạng PDF của আপনার নিহোন mang tên bạn. Nó sẽ có level, bộ đề, ngày, kết quả và điểm số. Đây là chứng chỉ luyện tập; không phải chứng chỉ JLPT chính thức."
+  },
+  {
+   "source": "JLPT পরীক্ষার বিভাগ ও সময়",
+   "target": "Các phần và thời gian của kỳ thi JLPT"
+  },
+  {
+   "source": "JLPT স্কোর ও পাসসীমা",
+   "target": "Điểm JLPT và mức điểm đậu"
+  },
+  {
+   "source": "© ২০২৬ আপনার নিহোন · Japanese Learning Hub",
+   "target": "© 2026 আপনার নিহোন · Japanese Learning Hub"
+  }
+ ]
+}

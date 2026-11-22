@@ -1,0 +1,554 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "dashboard",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "আপনার নিহোন - ইন্টারেক্টিভ ড্যাশবোর্ড",
+   "target": "আপনার নিহোন - Bảng điều khiển tương tác"
+  },
+  {
+   "source": "মূল সাইটে ফিরুন",
+   "target": "Quay lại trang chính"
+  },
+  {
+   "source": "ইন্টারেক্টিভ ড্যাশবোর্ড",
+   "target": "Bảng điều khiển tương tác"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "ডেটা ভিজুয়ালাইজেশন",
+   "target": "Trực quan hóa dữ liệu"
+  },
+  {
+   "source": "জাপানি ভাষা শিক্ষা, খরচ, JLPT লেভেল এবং ক্যারিয়ার সম্পর্কিত সকল তথ্য একনজরে দেখুন",
+   "target": "Xem tất cả thông tin về học tiếng Nhật, chi phí, cấp độ JLPT và sự nghiệp trong nháy mắt"
+  },
+  {
+   "source": "০",
+   "target": "0"
+  },
+  {
+   "source": "মোট শিক্ষার্থী",
+   "target": "Tổng số học viên"
+  },
+  {
+   "source": "PDF রিসোর্স",
+   "target": "Tài nguyên PDF"
+  },
+  {
+   "source": "০%",
+   "target": "0%"
+  },
+  {
+   "source": "সাকসেস রেট",
+   "target": "Tỷ lệ thành công"
+  },
+  {
+   "source": "কুইজ প্রশ্ন",
+   "target": "Câu hỏi quiz"
+  },
+  {
+   "source": "ইন্টারভিউ প্রশ্ন",
+   "target": "Câu hỏi phỏng vấn"
+  },
+  {
+   "source": "প্রিন্ট / সেভ PDF",
+   "target": "In / Lưu PDF"
+  },
+  {
+   "source": "শেয়ার করুন",
+   "target": "Chia sẻ"
+  },
+  {
+   "source": "শেখা শুরু করুন",
+   "target": "Bắt đầu học"
+  },
+  {
+   "source": "ডেটা বিশ্লেষণ",
+   "target": "Phân tích dữ liệu"
+  },
+  {
+   "source": "প্ল্যাটফর্ম ওভারভিউ",
+   "target": "Tổng quan nền tảng"
+  },
+  {
+   "source": "আপনার নিহোন প্ল্যাটফর্মের সকল রিসোর্স ও পরিসংখ্যান",
+   "target": "Tất cả tài nguyên và thống kê của nền tảng আপনার নিহোন"
+  },
+  {
+   "source": "JLPT লেভেল ভিত্তিক রিসোর্স",
+   "target": "Tài nguyên theo cấp độ JLPT"
+  },
+  {
+   "source": "স্টাডি ম্যাটেরিয়াল ক্যাটেগরি",
+   "target": "Danh mục tài liệu học tập"
+  },
+  {
+   "source": "বিভাগ",
+   "target": "Phép chia"
+  },
+  {
+   "source": "জাপানে মাসিক খরচের তুলনা (ইয়েনে)",
+   "target": "So sánh chi phí hằng tháng ở Nhật Bản (bằng yên)"
+  },
+  {
+   "source": "শহরভিত্তিক",
+   "target": "Theo thành phố"
+  },
+  {
+   "source": "কুইজ ক্যাটেগরি বিশ্লেষণ",
+   "target": "Phân tích danh mục quiz"
+  },
+  {
+   "source": "N5 কুইজ",
+   "target": "Quiz N5"
+  },
+  {
+   "source": "ইন্টারভিউ প্রস্তুতি ওভারভিউ",
+   "target": "Tổng quan chuẩn bị phỏng vấn"
+  },
+  {
+   "source": "প্রস্তুতি",
+   "target": "Chuẩn bị"
+  },
+  {
+   "source": "JLPT পাস রেট ট্রেন্ড (বিশ্বব্যাপী)",
+   "target": "Xu hướng tỷ lệ đỗ JLPT (toàn cầu)"
+  },
+  {
+   "source": "ট্রেন্ড",
+   "target": "Xu hướng"
+  },
+  {
+   "source": "তুলনামূলক বিশ্লেষণ",
+   "target": "Phân tích so sánh"
+  },
+  {
+   "source": "JLPT লেভেল তুলনা",
+   "target": "So sánh cấp độ JLPT"
+  },
+  {
+   "source": "প্রতিটি JLPT লেভেলের বিস্তারিত তুলনা",
+   "target": "So sánh chi tiết từng cấp độ JLPT"
+  },
+  {
+   "source": "লেভেল",
+   "target": "Cấp độ"
+  },
+  {
+   "source": "কানজি",
+   "target": "Kanji"
+  },
+  {
+   "source": "ভোকাবুলারি",
+   "target": "Từ vựng"
+  },
+  {
+   "source": "সময়কাল",
+   "target": "Thời gian"
+  },
+  {
+   "source": "পাস রেট",
+   "target": "Tỷ lệ đỗ"
+  },
+  {
+   "source": "ব্যবহার",
+   "target": "Cách dùng"
+  },
+  {
+   "source": "১০২টি",
+   "target": "102 mục"
+  },
+  {
+   "source": "~৮০০",
+   "target": "~800"
+  },
+  {
+   "source": "৩-৪ মাস",
+   "target": "3-4 tháng"
+  },
+  {
+   "source": "~৪৫%",
+   "target": "~45%"
+  },
+  {
+   "source": "ভাষা স্কুলে ভর্তি",
+   "target": "Nhập học trường ngôn ngữ"
+  },
+  {
+   "source": "৩২০টি",
+   "target": "320 mục"
+  },
+  {
+   "source": "~১,৫০০",
+   "target": "~1,500"
+  },
+  {
+   "source": "৬-৮ মাস",
+   "target": "6-8 tháng"
+  },
+  {
+   "source": "~৩৫%",
+   "target": "~35%"
+  },
+  {
+   "source": "দৈনন্দিন জীবন",
+   "target": "Cuộc sống hàng ngày"
+  },
+  {
+   "source": "৬৫০টি",
+   "target": "650 mục"
+  },
+  {
+   "source": "~৩,৭৫০",
+   "target": "~3,750"
+  },
+  {
+   "source": "১২-১৮ মাস",
+   "target": "12-18 tháng"
+  },
+  {
+   "source": "~৩২%",
+   "target": "~32%"
+  },
+  {
+   "source": "কর্মক্ষেত্র / ভিসা",
+   "target": "Nơi làm việc / Visa"
+  },
+  {
+   "source": "১,০০০টি",
+   "target": "1,000 mục"
+  },
+  {
+   "source": "~৬,০০০",
+   "target": "~6,000"
+  },
+  {
+   "source": "১৮-২৪ মাস",
+   "target": "18-24 tháng"
+  },
+  {
+   "source": "~৩৬%",
+   "target": "~36%"
+  },
+  {
+   "source": "বিশ্ববিদ্যালয় / চাকরি",
+   "target": "Đại học / Việc làm"
+  },
+  {
+   "source": "২,০০০+",
+   "target": "2,000+"
+  },
+  {
+   "source": "~১০,০০০",
+   "target": "~10,000"
+  },
+  {
+   "source": "৩-৪ বছর",
+   "target": "3-4 năm"
+  },
+  {
+   "source": "~৩০%",
+   "target": "~30%"
+  },
+  {
+   "source": "প্রফেশনাল / একাডেমিক",
+   "target": "Chuyên nghiệp / Học thuật"
+  },
+  {
+   "source": "খরচের বিশ্লেষণ",
+   "target": "Phân tích chi phí"
+  },
+  {
+   "source": "জাপানে বার্ষিক খরচ (বাংলাদেশি টাকায়)",
+   "target": "Chi phí hằng năm ở Nhật Bản (bằng taka Bangladesh)"
+  },
+  {
+   "source": "শহরভেদে জাপানে পড়াশোনার আনুমানিক খরচ",
+   "target": "Chi phí ước tính du học Nhật Bản theo thành phố"
+  },
+  {
+   "source": "টোকিও",
+   "target": "Tokyo"
+  },
+  {
+   "source": "সবচেয়ে ব্যয়বহুল",
+   "target": "Đắt nhất"
+  },
+  {
+   "source": "১২-১৫ লাখ",
+   "target": "12-15 lakh"
+  },
+  {
+   "source": "বাৎসরিক (টাকা)",
+   "target": "Hằng năm (taka)"
+  },
+  {
+   "source": "টিউশন ফি",
+   "target": "Học phí"
+  },
+  {
+   "source": "৫-৬ লাখ",
+   "target": "5-6 lakh"
+  },
+  {
+   "source": "বাসা ভাড়া",
+   "target": "Tiền thuê nhà"
+  },
+  {
+   "source": "৪-৫ লাখ",
+   "target": "4-5 lakh"
+  },
+  {
+   "source": "খাবার ও অন্যান্য",
+   "target": "Ăn uống và các khoản khác"
+  },
+  {
+   "source": "৩-৪ লাখ",
+   "target": "3-4 lakh"
+  },
+  {
+   "source": "ওসাকা / নাগোয়া",
+   "target": "Osaka / Nagoya"
+  },
+  {
+   "source": "মাঝারি খরচ",
+   "target": "Chi phí trung bình"
+  },
+  {
+   "source": "১০-১২ লাখ",
+   "target": "10-12 lakh"
+  },
+  {
+   "source": "৩ লাখ",
+   "target": "3 lakh"
+  },
+  {
+   "source": "অন্যান্য শহর",
+   "target": "Các thành phố khác"
+  },
+  {
+   "source": "সবচেয়ে সাশ্রয়ী",
+   "target": "Tiết kiệm nhất"
+  },
+  {
+   "source": "৮-১০ লাখ",
+   "target": "8-10 lakh"
+  },
+  {
+   "source": "২-৩ লাখ",
+   "target": "2-3 lakh"
+  },
+  {
+   "source": "২ লাখ",
+   "target": "2 lakh"
+  },
+  {
+   "source": "শিক্ষার পথ",
+   "target": "Lộ trình học tập"
+  },
+  {
+   "source": "জাপানে যাওয়ার সম্পূর্ণ রোডম্যাপ",
+   "target": "Lộ trình đầy đủ để đến Nhật Bản"
+  },
+  {
+   "source": "বাংলাদেশ থেকে জাপানে পড়াশোনার ধাপে ধাপে গাইড",
+   "target": "Hướng dẫn từng bước du học Nhật Bản từ Bangladesh"
+  },
+  {
+   "source": "ধাপ ১",
+   "target": "Bước 1"
+  },
+  {
+   "source": "JLPT N5 শিখুন",
+   "target": "Học JLPT N5"
+  },
+  {
+   "source": "বেসিক জাপানি ভাষা শিখুন — হিরাগানা, কাতাকানা, ১০২টি কানজি, বেসিক গ্রামার ও ভোকাবুলারি।",
+   "target": "Học tiếng Nhật cơ bản — Hiragana, Katakana, 102 kanji, ngữ pháp cơ bản và từ vựng."
+  },
+  {
+   "source": "ধাপ ২",
+   "target": "Bước 2"
+  },
+  {
+   "source": "JLPT N4 সম্পন্ন করুন",
+   "target": "Hoàn thành JLPT N4"
+  },
+  {
+   "source": "ইন্টারমিডিয়েট লেভেল — ৩২০টি কানজি, জটিল গ্রামার, দৈনন্দিন কথোপকথন দক্ষতা অর্জন।",
+   "target": "Cấp độ trung cấp — 320 kanji, ngữ pháp phức tạp, đạt kỹ năng hội thoại hằng ngày."
+  },
+  {
+   "source": "৩-৪ মাস অতিরিক্ত",
+   "target": "Thêm 3-4 tháng"
+  },
+  {
+   "source": "ধাপ ৩",
+   "target": "Bước 3"
+  },
+  {
+   "source": "ইন্টারভিউ প্রস্তুতি",
+   "target": "Chuẩn bị phỏng vấn"
+  },
+  {
+   "source": "Skype Interview (২৫০ প্রশ্ন) এবং Embassy Interview (১৫০ প্রশ্ন) এর জন্য পূর্ণ প্রস্তুতি নিন।",
+   "target": "Chuẩn bị đầy đủ cho Skype Interview (250 câu hỏi) và Embassy Interview (150 câu hỏi)."
+  },
+  {
+   "source": "১-২ মাস",
+   "target": "1-2 tháng"
+  },
+  {
+   "source": "ধাপ ৪",
+   "target": "Bước 4"
+  },
+  {
+   "source": "COE ও ভিসা প্রসেসিং",
+   "target": "Xử lý COE và visa"
+  },
+  {
+   "source": "Certificate of Eligibility (COE) আবেদন, ব্যাংক স্টেটমেন্ট প্রস্তুত এবং ভিসা সংগ্রহ।",
+   "target": "Đơn xin Certificate of Eligibility (COE), chuẩn bị sao kê ngân hàng và nhận visa."
+  },
+  {
+   "source": "৩-৬ মাস প্রসেসিং",
+   "target": "Xử lý 3-6 tháng"
+  },
+  {
+   "source": "ধাপ ৫",
+   "target": "Bước 5"
+  },
+  {
+   "source": "জাপানে পৌঁছান ও পড়াশোনা শুরু",
+   "target": "Đến Nhật Bản và bắt đầu học"
+  },
+  {
+   "source": "ভাষা স্কুলে ভর্তি, পার্ট-টাইম জব (সপ্তাহে ২৮ ঘণ্টা), এবং উচ্চশিক্ষার প্রস্তুতি।",
+   "target": "Nhập học trường ngôn ngữ, làm thêm (28 giờ mỗi tuần), và chuẩn bị cho giáo dục đại học."
+  },
+  {
+   "source": "১-২ বছর",
+   "target": "1-2 năm"
+  },
+  {
+   "source": "ধাপ ৬",
+   "target": "Bước 6"
+  },
+  {
+   "source": "ক্যারিয়ার গড়ুন",
+   "target": "Xây dựng sự nghiệp"
+  },
+  {
+   "source": "স্নাতক শেষে Job Hunting Visa নিয়ে IT, Engineering, Nursing সেক্টরে ক্যারিয়ার শুরু করুন।",
+   "target": "Sau khi tốt nghiệp, bắt đầu sự nghiệp trong các lĩnh vực IT, Engineering, Nursing với Job Hunting Visa."
+  },
+  {
+   "source": "সারাজীবন",
+   "target": "Suốt đời"
+  },
+  {
+   "source": "রিসোর্স সারাংশ",
+   "target": "Tóm tắt tài nguyên"
+  },
+  {
+   "source": "প্ল্যাটফর্মের সকল রিসোর্স",
+   "target": "Tất cả tài nguyên của nền tảng"
+  },
+  {
+   "source": "আপনার নিহোনে যা যা পাবেন",
+   "target": "Những gì bạn sẽ nhận được trên আপনার নিহোন"
+  },
+  {
+   "source": "N5 ভোকাবুলারি",
+   "target": "Từ vựng N5"
+  },
+  {
+   "source": "বাংলা অনুবাদসহ শব্দভাণ্ডার",
+   "target": "Từ vựng kèm bản dịch tiếng Bengal"
+  },
+  {
+   "source": "৩",
+   "target": "3"
+  },
+  {
+   "source": "N5 কানজি",
+   "target": "Kanji N5"
+  },
+  {
+   "source": "১০২টি কানজি ক্যারেক্টার",
+   "target": "102 ký tự kanji"
+  },
+  {
+   "source": "১",
+   "target": "1"
+  },
+  {
+   "source": "N5 গ্রামার",
+   "target": "Ngữ pháp N5"
+  },
+  {
+   "source": "বেসিক জাপানি ব্যাকরণ",
+   "target": "Ngữ pháp tiếng Nhật cơ bản"
+  },
+  {
+   "source": "২",
+   "target": "2"
+  },
+  {
+   "source": "N5 রিডিং",
+   "target": "Đọc hiểu N5"
+  },
+  {
+   "source": "Minna no Nihongo ভিত্তিক",
+   "target": "Dựa trên Minna no Nihongo"
+  },
+  {
+   "source": "N4 ভোকাবুলারি",
+   "target": "Từ vựng N4"
+  },
+  {
+   "source": "Lesson 25-50 ভিত্তিক",
+   "target": "Dựa trên Lesson 25-50"
+  },
+  {
+   "source": "N4 কানজি",
+   "target": "Kanji N4"
+  },
+  {
+   "source": "৩২০টি কানজি ক্যারেক্টার",
+   "target": "320 ký tự kanji"
+  },
+  {
+   "source": "N4 গ্রামার",
+   "target": "Ngữ pháp N4"
+  },
+  {
+   "source": "ইন্টারমিডিয়েট ব্যাকরণ",
+   "target": "Ngữ pháp trung cấp"
+  },
+  {
+   "source": "N4 রিডিং",
+   "target": "Đọc hiểu N4"
+  },
+  {
+   "source": "Lesson 25-50 রিডিং",
+   "target": "Bài đọc Lesson 25-50"
+  },
+  {
+   "source": "© ২০২৬",
+   "target": "© 2026"
+  },
+  {
+   "source": "| ইন্টারেক্টিভ ড্যাশবোর্ড | Created by SAMMIR",
+   "target": "| Bảng điều khiển tương tác | Created by SAMMIR"
+  }
+ ]
+}

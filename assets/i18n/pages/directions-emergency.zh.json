@@ -1,0 +1,242 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "zh",
+ "page": "directions-emergency",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "পথ ও জরুরি প্রয়োজন | আপনার নিহোন",
+   "target": "道路与紧急情况 | আপনার নিহোন"
+  },
+  {
+   "source": "পথ ও জরুরি প্রয়োজন",
+   "target": "道路与紧急情况"
+  },
+  {
+   "source": "রাস্তা খুঁজে বের করা, সহায়তা চাওয়া, জরুরি পরিস্থিতি ও দৈনন্দিন প্রয়োজনীয় জাপানি বাক্য",
+   "target": "找路、寻求帮助、紧急情况和日常必需的日语句子"
+  },
+  {
+   "source": "পথ জিজ্ঞাসা",
+   "target": "问路"
+  },
+  {
+   "source": "রাস্তা ও দিকনির্দেশনা",
+   "target": "道路和方向"
+  },
+  {
+   "source": "~ কোথায়? (যেকোনো জায়গার নাম বসান)",
+   "target": "~ 在哪里？（填入任何地名）"
+  },
+  {
+   "source": "স্টেশন কোথায়?",
+   "target": "车站在哪里？"
+  },
+  {
+   "source": "টয়লেট কোথায়?",
+   "target": "洗手间在哪里？"
+  },
+  {
+   "source": "কনভিনিয়েন্স স্টোর কোথায়?",
+   "target": "便利店在哪里？"
+  },
+  {
+   "source": "ডান দিক",
+   "target": "右边"
+  },
+  {
+   "source": "বাম দিক",
+   "target": "左边"
+  },
+  {
+   "source": "সোজা",
+   "target": "直"
+  },
+  {
+   "source": "পেছনে",
+   "target": "后面"
+  },
+  {
+   "source": "সামনে",
+   "target": "前面"
+  },
+  {
+   "source": "কাছাকাছি আছে?",
+   "target": "在附近吗？"
+  },
+  {
+   "source": "কত দূর? / কত সময় লাগবে?",
+   "target": "有多远？/ 需要多长时间？"
+  },
+  {
+   "source": "ধন্যবাদ, আপনার সাহায্যে বেঁচে গেলাম",
+   "target": "谢谢，多亏您的帮助我得救了"
+  },
+  {
+   "source": "যাতায়াত",
+   "target": "交通"
+  },
+  {
+   "source": "ট্রেন, বাস ও ট্যাক্সি",
+   "target": "火车、巴士和出租车"
+  },
+  {
+   "source": "~ যাওয়ার ট্রেন কোনটি?",
+   "target": "去 ~ 的火车是哪一趟？"
+  },
+  {
+   "source": "এই ট্রেন ~ যায়?",
+   "target": "这趟火车去 ~ 吗？"
+  },
+  {
+   "source": "পরবর্তী স্টেশন কোথায়?",
+   "target": "下一站在哪里？"
+  },
+  {
+   "source": "~ পর্যন্ত কত টাকা? (ট্যাক্সি/ট্রেন)",
+   "target": "到 ~ 多少钱？（出租车/火车）"
+  },
+  {
+   "source": "আমি এখানে নামব (ট্যাক্সি/বাস)",
+   "target": "我在这里下车（出租车/巴士）"
+  },
+  {
+   "source": "~ পর্যন্ত যান, অনুগ্রহ করে (ট্যাক্সি)",
+   "target": "请到 ~，拜托了（出租车）"
+  },
+  {
+   "source": "ম্যাপ দেখান, অনুগ্রহ করে",
+   "target": "请给我看地图"
+  },
+  {
+   "source": "স্টেশনে কীভাবে যাব?",
+   "target": "怎么去车站？"
+  },
+  {
+   "source": "জরুরি পরিস্থিতি",
+   "target": "紧急情况"
+  },
+  {
+   "source": "জরুরি ও বিপদজনক পরিস্থিতি",
+   "target": "紧急与危险情况"
+  },
+  {
+   "source": "আমাকে সাহায্য করুন!",
+   "target": "请帮帮我！"
+  },
+  {
+   "source": "বিপদ! / বিপজ্জনক!",
+   "target": "危险！/ 有危险！"
+  },
+  {
+   "source": "আমি আহত হয়েছি",
+   "target": "我受伤了"
+  },
+  {
+   "source": "হাসপাতাল কোথায়?",
+   "target": "医院在哪里？"
+  },
+  {
+   "source": "ফার্মেসি কোথায়?",
+   "target": "药店在哪里？"
+  },
+  {
+   "source": "পুলিশ ডাকুন, অনুগ্রহ করে",
+   "target": "请叫警察"
+  },
+  {
+   "source": "চোর! / চুরি হয়েছে!",
+   "target": "小偷！/ 被偷了！"
+  },
+  {
+   "source": "আগুন! (আগুন লেগেছে)",
+   "target": "着火了！(发生火灾)"
+  },
+  {
+   "source": "ভূমিকম্প!",
+   "target": "地震！"
+  },
+  {
+   "source": "আপনি ঠিক আছেন? (অন্যকে জিজ্ঞাসা)",
+   "target": "你没事吧？(询问他人)"
+  },
+  {
+   "source": "দৈনন্দিন প্রয়োজন",
+   "target": "日常需求"
+  },
+  {
+   "source": "সাধারণ প্রয়োজন ও অনুরোধ",
+   "target": "常见需求与请求"
+  },
+  {
+   "source": "আমি বুঝতে পারছি না (ফরমাল)",
+   "target": "我听不懂 (正式)"
+  },
+  {
+   "source": "আবার বলুন, অনুগ্রহ করে",
+   "target": "请再说一遍"
+  },
+  {
+   "source": "ধীরে বলুন, অনুগ্রহ করে",
+   "target": "请说慢一点"
+  },
+  {
+   "source": "আপনি কি ইংরেজি বলতে পারেন?",
+   "target": "你会说英语吗？"
+  },
+  {
+   "source": "আমি খুব কম জাপানি বুঝি",
+   "target": "我只懂一点日语"
+  },
+  {
+   "source": "আমি কি ফোন ধার নিতে পারি?",
+   "target": "可以借一下你的手机吗？"
+  },
+  {
+   "source": "Wi-Fi আছে?",
+   "target": "有 Wi-Fi 吗？"
+  },
+  {
+   "source": "আমার পাসপোর্ট হারিয়ে গেছে",
+   "target": "我的护照丢了"
+  },
+  {
+   "source": "দুঃখিত / আফসোস (কোনো খারাপ খবর শুনলে)",
+   "target": "很遗憾 / 听到坏消息时表示难过"
+  },
+  {
+   "source": "অনেক কঠিন তাই না? / দুঃখজনক",
+   "target": "太不容易了，是吧？/ 真令人难过"
+  },
+  {
+   "source": "কপি হয়েছে!",
+   "target": "已复制！"
+  },
+  {
+   "source": "হোম",
+   "target": "首页"
+  },
+  {
+   "source": "ইন্টারভিউ",
+   "target": "面试"
+  },
+  {
+   "source": "কুইজ",
+   "target": "测验"
+  },
+  {
+   "source": "গাইড",
+   "target": "指南"
+  },
+  {
+   "source": "বাক্য",
+   "target": "句子"
+  },
+  {
+   "source": "মক টেস্ট",
+   "target": "模拟考试"
+  }
+ ]
+}

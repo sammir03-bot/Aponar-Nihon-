@@ -1,0 +1,370 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "en",
+ "page": "japan-home-life-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন | আপনার নিহোন",
+   "target": "Home & Daily Life | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "Japan Life Guide"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "All Guides"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "After Arrival"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "Housing & Daily Life"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "Trains & Platform"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Using Google Maps"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "Part-time Jobs"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "Emergency Assistance"
+  },
+  {
+   "source": "গ্যাস, বিদ্যুৎ, পানি, ময়লা, প্রতিবেশী, delivery ও bill—জাপানের বাসা নিজের হাতে চালানোর পূর্ণ গাইড।",
+   "target": "Gas, electricity, water, garbage, neighbours, delivery and bills — a complete guide to running your home in Japan yourself."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "Bengali Explanation"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "Japanese Sentences"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "Practical Steps"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "Your Progress"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 Completed"
+  },
+  {
+   "source": "ময়লা",
+   "target": "Rubbish / trash"
+  },
+  {
+   "source": "কেনাকাটা",
+   "target": "Shopping"
+  },
+  {
+   "source": "বাক্য",
+   "target": "Sentence"
+  },
+  {
+   "source": "বাসায় ওঠার দিন",
+   "target": "Moving-in day"
+  },
+  {
+   "source": "আগের damage ও contract সংরক্ষণ করুন",
+   "target": "Save the existing damage and the contract"
+  },
+  {
+   "source": "ঘরের video তুলুন",
+   "target": "Take a video of the room"
+  },
+  {
+   "source": "দেয়াল, floor, kitchen, bathroom, air-conditioner ও সব scratch-এর dateসহ video/ছবি রাখুন।",
+   "target": "Keep a dated video/photos of the walls, floor, kitchen, bathroom, air-conditioner and every scratch."
+  },
+  {
+   "source": "Meter ও key গুনে নিন",
+   "target": "Count the meters and keys"
+  },
+  {
+   "source": "Electricity/gas/water meter, key সংখ্যা ও mailbox lock লিখে রাখুন।",
+   "target": "Write down the electricity/gas/water meters, the number of keys and the mailbox lock."
+  },
+  {
+   "source": "Contract-এর নিষেধগুলো চিহ্নিত করুন",
+   "target": "Mark the contract's prohibitions"
+  },
+  {
+   "source": "Smoking, pet, guest, bicycle parking, instrument, drilling ও moving-out cleaning fee দেখুন।",
+   "target": "Check smoking, pets, guests, bicycle parking, instruments, drilling and the moving-out cleaning fee."
+  },
+  {
+   "source": "চাবি বদল বা drilling করবেন না",
+   "target": "Do not change locks or drill"
+  },
+  {
+   "source": "Landlord/management company-এর লিখিত অনুমতি ছাড়া স্থায়ী পরিবর্তন করবেন না।",
+   "target": "Do not make permanent changes without written permission from the landlord/management company."
+  },
+  {
+   "source": "বিদ্যুৎ, গ্যাস ও পানি চালু",
+   "target": "Turning on electricity, gas and water"
+  },
+  {
+   "source": "কোনটি নিজে, কোনটিতে staff আসতে পারে",
+   "target": "Which ones you do yourself, and which may need a staff visit"
+  },
+  {
+   "source": "শুরু করার সাধারণ পদ্ধতি",
+   "target": "Usual way to get started"
+  },
+  {
+   "source": "খেয়াল রাখুন",
+   "target": "Be Careful"
+  },
+  {
+   "source": "Company ও plan contract-এ দেখুন",
+   "target": "Check the company and plan in the contract"
+  },
+  {
+   "source": "Appointment নিয়ে staff opening",
+   "target": "Staff opening by appointment"
+  },
+  {
+   "source": "কেউ ঘরে থাকতে হতে পারে",
+   "target": "Someone may need to be at home"
+  },
+  {
+   "source": "Municipal bureau-তে start request",
+   "target": "Start request at the municipal bureau"
+  },
+  {
+   "source": "Address/room number ঠিক দিন",
+   "target": "Give the address/room number correctly"
+  },
+  {
+   "source": "Building line check ও contract",
+   "target": "Building line check and contract"
+  },
+  {
+   "source": "Construction fee/period দেখুন",
+   "target": "Check the construction fee/period"
+  },
+  {
+   "source": "গ্যাস চালু করার ব্যবস্থা করুন।",
+   "target": "Please arrange to turn on the gas."
+  },
+  {
+   "source": "বিদ্যুতের চুক্তি শুরু করতে চাই।",
+   "target": "I want to start an electricity contract."
+  },
+  {
+   "source": "ময়লা ফেলার নিয়ম",
+   "target": "Garbage disposal rules"
+  },
+  {
+   "source": "Municipality, day ও category—তিনটি একসঙ্গে মিলান",
+   "target": "Match all three together: municipality, day and category"
+  },
+  {
+   "source": "জাপানে garbage rule এক শহর থেকে অন্য শহরে বদলায়। Building notice এবং municipality-এর calendar-ই চূড়ান্ত।",
+   "target": "In Japan, garbage rules change from one city to another. The building notice and the municipality's calendar are final."
+  },
+  {
+   "source": "Collection day-এর আগের রাতে নয়",
+   "target": "Not the night before collection day"
+  },
+  {
+   "source": "Building/area rule অনুযায়ী নির্ধারিত সময়ের আগে collection point-এ দিন।",
+   "target": "Put it at the collection point before the set time, according to the building/area rule."
+  },
+  {
+   "source": "PET bottle প্রস্তুত করুন",
+   "target": "Prepare PET bottles"
+  },
+  {
+   "source": "Cap/label আলাদা, হালকা rinse, municipality rule অনুযায়ী crush করুন।",
+   "target": "Separate the cap/label, rinse lightly, and crush according to the municipality rule."
+  },
+  {
+   "source": "৩০ সেমি বা বড় item আগে check করুন",
+   "target": "Check items 30 cm or larger first"
+  },
+  {
+   "source": "অনেক জায়গায় bulky waste হিসেবে booking ও paid sticker দরকার হয়। স্থানীয় rule দেখুন।",
+   "target": "In many places, bulky waste needs a booking and a paid sticker. Check the local rule."
+  },
+  {
+   "source": "আপনার এলাকার rule ছাড়া মুখস্থ করবেন না",
+   "target": "Do not memorise without your area's rule"
+  },
+  {
+   "source": "এখানের category উদাহরণ; collection day ও bag rule city/ward website থেকে নিশ্চিত করুন।",
+   "target": "The categories here are examples; confirm the collection day and bag rule from the city/ward website."
+  },
+  {
+   "source": "প্রতিবেশী ও শব্দের নিয়ম",
+   "target": "Neighbours and noise rules"
+  },
+  {
+   "source": "শান্ত জীবন বজায় রাখার সহজ অভ্যাস",
+   "target": "Simple habits to keep life quiet"
+  },
+  {
+   "source": "রাতের শব্দ কমান",
+   "target": "Reduce noise at night"
+  },
+  {
+   "source": "কথা, music, washing machine, vacuum ও furniture টানা—বিশেষ করে রাতে কম রাখুন।",
+   "target": "Keep talking, music, the washing machine, vacuum and dragging furniture low — especially at night."
+  },
+  {
+   "source": "Hallway ও balcony পরিষ্কার রাখুন",
+   "target": "Keep the hallway and balcony clean"
+  },
+  {
+   "source": "Emergency exit বা shared area-তে bicycle, box বা garbage রাখবেন না।",
+   "target": "Do not leave a bicycle, box or garbage at an emergency exit or in a shared area."
+  },
+  {
+   "source": "Guest rule মানুন",
+   "target": "Follow the guest rule"
+  },
+  {
+   "source": "দীর্ঘদিন কাউকে রাখার আগে contract/management company-এর নিয়ম দেখুন।",
+   "target": "Before letting someone stay for a long time, check the contract/management company rules."
+  },
+  {
+   "source": "সমস্যায় আগে management company",
+   "target": "For problems, go to the management company first"
+  },
+  {
+   "source": "নিজে ঝগড়া না করে ছবি/তারিখসহ 管理会社（かんりがいしゃ）-কে জানান।",
+   "target": "Do not argue yourself; report it to 管理会社（かんりがいしゃ） with photos/dates."
+  },
+  {
+   "source": "কেনাকাটা, Delivery ও Bill",
+   "target": "Shopping, Delivery & Bills"
+  },
+  {
+   "source": "দৈনন্দিন কাজের practical system",
+   "target": "A practical system for daily tasks"
+  },
+  {
+   "source": "不在票 হারাবেন না",
+   "target": "Do not lose the 不在票"
+  },
+  {
+   "source": "Delivery miss হলে slip-এর QR/phone দিয়ে redelivery request করুন।",
+   "target": "If you miss a delivery, request redelivery using the QR/phone on the slip."
+  },
+  {
+   "source": "Payment deadline দেখুন",
+   "target": "Check the payment deadline"
+  },
+  {
+   "source": "Utility bill convenience store-এ দেওয়া যায় কি না barcode ও expiry দেখে নিন।",
+   "target": "Check the barcode and expiry to see if a utility bill can be paid at a convenience store."
+  },
+  {
+   "source": "Receipt কিছুদিন রাখুন",
+   "target": "Keep receipts for a while"
+  },
+  {
+   "source": "Return, warranty ও expense proof-এর জন্য গুরুত্বপূর্ণ receipt আলাদা envelope-এ রাখুন।",
+   "target": "Keep important receipts in a separate envelope for returns, warranty and expense proof."
+  },
+  {
+   "source": "বাসায় প্রয়োজনীয় বাক্য",
+   "target": "Essential phrases for home"
+  },
+  {
+   "source": "Management company ও delivery-তে ব্যবহার",
+   "target": "For use with the management company and deliveries"
+  },
+  {
+   "source": "গরম পানি আসছে না। দেখে দেবেন?",
+   "target": "The hot water isn't coming. Could you check it?"
+  },
+  {
+   "source": "পানি লিক করছে।",
+   "target": "Water is leaking."
+  },
+  {
+   "source": "পুনরায় ডেলিভারি চাই।",
+   "target": "I want a redelivery."
+  },
+  {
+   "source": "ময়লা ফেলার দিন বলবেন।",
+   "target": "Please tell me the garbage disposal day."
+  },
+  {
+   "source": "দৈনন্দিন Checklist",
+   "target": "Daily Checklist"
+  },
+  {
+   "source": "নিজের ঘর চালানোর প্রস্তুতি",
+   "target": "Preparation for running your own home"
+  },
+  {
+   "source": "Move-in damage-এর ছবি/video রেখেছি",
+   "target": "I have kept photos/video of move-in damage"
+  },
+  {
+   "source": "Electricity, gas, water চালু করেছি",
+   "target": "I have turned on electricity, gas and water"
+  },
+  {
+   "source": "Garbage calendar save করেছি",
+   "target": "I have saved the garbage calendar"
+  },
+  {
+   "source": "Emergency exit ও breaker location চিনেছি",
+   "target": "I know the emergency exit and breaker location"
+  },
+  {
+   "source": "Management company-এর phone save করেছি",
+   "target": "I have saved the management company's phone number"
+  },
+  {
+   "source": "Bill deadline-এর reminder দিয়েছি",
+   "target": "I have set a reminder for bill deadlines"
+  },
+  {
+   "source": "Mailbox ও delivery name ঠিক আছে",
+   "target": "The mailbox and delivery name are correct"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "Official and reliable sources"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "Rules may change—check official information before final decisions"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "This guide is a learning aid. Follow instructions from the relevant office or professional for personal legal/medical decisions."
+  },
+  {
+   "source": "হোম",
+   "target": "Home"
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "part-time-cv-builder",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "পার্ট-টাইম Japanese CV",
+   "target": "Japanese CV cho việc làm thêm"
+  },
+  {
+   "source": "আপনার দেওয়া 履歴書 form-এর structure অনুযায়ী। Japanese label-এর নিচে বাংলা explanation থাকবে; final CV/PDF হবে clean Japanese format.",
+   "target": "Theo structure của 履歴書 form do bạn cung cấp. Bên dưới Japanese label sẽ có explanation bằng tiếng Việt; CV/PDF cuối cùng sẽ ở clean Japanese format."
+  },
+  {
+   "source": "(স্কুলের সময়),",
+   "target": "(giờ học ở trường),"
+  },
+  {
+   "source": "(কাজ শুরুর তারিখ) এবং",
+   "target": "(ngày bắt đầu làm việc) và"
+  },
+  {
+   "source": "আলাদা করে রাখা হয়েছে।",
+   "target": "đã được tách riêng."
+  },
+  {
+   "source": "ব্যক্তিগত তথ্য",
+   "target": "Thông tin cá nhân"
+  },
+  {
+   "source": "ছবি নির্বাচন",
+   "target": "Chọn ảnh"
+  },
+  {
+   "source": "সাধারণত 4cm × 3cm portrait photo ব্যবহার করুন।",
+   "target": "Thông thường hãy dùng ảnh chân dung 4cm × 3cm."
+  },
+  {
+   "source": "নামের হিরাগানা/ফুরিগানা",
+   "target": "Hiragana/furigana của tên"
+  },
+  {
+   "source": "পুরো নাম",
+   "target": "Họ và tên"
+  },
+  {
+   "source": "জন্মতারিখ",
+   "target": "Ngày sinh"
+  },
+  {
+   "source": "লিঙ্গ — ঐচ্ছিক",
+   "target": "Giới tính — tùy chọn"
+  },
+  {
+   "source": "ঠিকানার হিরাগানা",
+   "target": "Hiragana của địa chỉ"
+  },
+  {
+   "source": "পোস্টাল কোড",
+   "target": "Mã bưu chính"
+  },
+  {
+   "source": "CV-এর তারিখ — আজকের তারিখ নিজে বসবে",
+   "target": "Ngày của CV — ngày hôm nay sẽ tự động được điền"
+  },
+  {
+   "source": "বর্তমান ঠিকানা",
+   "target": "Địa chỉ hiện tại"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "Địa chỉ email"
+  },
+  {
+   "source": "ফোন নম্বর",
+   "target": "Số điện thoại"
+  },
+  {
+   "source": "/ শিক্ষা ও কাজ",
+   "target": "/ Học vấn và công việc"
+  },
+  {
+   "source": "＋ নতুন লাইন",
+   "target": "＋ Dòng mới"
+  },
+  {
+   "source": "/ যোগ্যতা",
+   "target": "/ Bằng cấp"
+  },
+  {
+   "source": "＋ যোগ্যতা যোগ করুন",
+   "target": "＋ Thêm bằng cấp"
+  },
+  {
+   "source": "আবেদন ও কাজের সময়",
+   "target": "Ứng tuyển và thời gian làm việc"
+  },
+  {
+   "source": "কেন এই কাজ করতে চান, skill ও ভালো দিক",
+   "target": "Vì sao bạn muốn làm công việc này, skill và điểm mạnh"
+  },
+  {
+   "source": "নতুন Student",
+   "target": "Student mới"
+  },
+  {
+   "source": "🏫 স্কুলের সময় ও কাজ শুরুর তারিখ",
+   "target": "🏫 Giờ học ở trường và ngày bắt đầu làm việc"
+  },
+  {
+   "source": "কোন দিন স্কুল থাকে",
+   "target": "Trường học vào những ngày nào"
+  },
+  {
+   "source": "স্কুল শুরু",
+   "target": "Bắt đầu học"
+  },
+  {
+   "source": "স্কুল শেষ",
+   "target": "Kết thúc học"
+  },
+  {
+   "source": "কোন তারিখ থেকে কাজ শুরু করতে পারবেন",
+   "target": "Bạn có thể bắt đầu làm việc từ ngày nào"
+  },
+  {
+   "source": "স্কুলের দিন ও সময় দিলে Japanese sentence এখানে তৈরি হবে।",
+   "target": "Nếu bạn nhập ngày và giờ học, Japanese sentence sẽ được tạo tại đây."
+  },
+  {
+   "source": "যে দিন/সময় কাজ করতে পারবেন",
+   "target": "Ngày/giờ bạn có thể làm việc"
+  },
+  {
+   "source": "কাজের ধরন, শাখা, সময় বা অন্যান্য অনুরোধ",
+   "target": "Loại công việc, chi nhánh, thời gian hoặc yêu cầu khác"
+  }
+ ]
+}

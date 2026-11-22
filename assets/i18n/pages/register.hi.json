@@ -1,0 +1,70 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "hi",
+ "page": "register",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "রেজিস্ট্রেশন | আপনার নিহোন",
+   "target": "रजिस्ट्रेशन | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "রেজিস্ট্রেশন করুন",
+   "target": "रजिस्ट्रेशन करें"
+  },
+  {
+   "source": "নতুন অ্যাকাউন্ট তৈরি করে শেখা শুরু করুন",
+   "target": "नया अकाउंट बनाकर सीखना शुरू करें"
+  },
+  {
+   "source": "Google দিয়ে রেজিস্ট্রেশন করুন",
+   "target": "Google से रजिस्ट्रेशन करें"
+  },
+  {
+   "source": "অথবা",
+   "target": "या"
+  },
+  {
+   "source": "পূর্ণ নাম",
+   "target": "पूरा नाम"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "ईमेल"
+  },
+  {
+   "source": "পাসওয়ার্ড",
+   "target": "पासवर्ड"
+  },
+  {
+   "source": "কমপক্ষে ৬ অক্ষরের পাসওয়ার্ড ব্যবহার করুন",
+   "target": "कम से कम 6 अक्षरों का पासवर्ड उपयोग करें"
+  },
+  {
+   "source": "আগে থেকেই অ্যাকাউন্ট আছে?",
+   "target": "पहले से ही अकाउंट है?"
+  },
+  {
+   "source": "লগইন করুন",
+   "target": "लॉगिन करें"
+  },
+  {
+   "source": "হোম",
+   "target": "होम"
+  },
+  {
+   "source": "সাহায্য",
+   "target": "मदद"
+  },
+  {
+   "source": "নিরাপদ রেজিস্ট্রেশন | SSL Protected",
+   "target": "सुरक्षित रजिस्ट्रेशन | SSL Protected"
+  }
+ ]
+}

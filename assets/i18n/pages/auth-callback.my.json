@@ -1,0 +1,26 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "my",
+ "page": "auth-callback",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Email verify করা হচ্ছে...",
+   "target": "Email အတည်ပြုနေသည်..."
+  },
+  {
+   "source": "Verification link নিরাপদভাবে যাচাই করছি।",
+   "target": "Verification link ကို လုံခြုံစွာ စစ်ဆေးနေသည်။"
+  },
+  {
+   "source": "Login / Register-এ ফিরুন",
+   "target": "Login / Register သို့ ပြန်သွားပါ"
+  },
+  {
+   "source": "হোমে যান",
+   "target": "ပင်မစာမျက်နှာသို့ သွားပါ"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "zh",
+ "page": "grammar-vs",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "একই রকম মনে হয়—কিন্তু ব্যবহার আলাদা। N5, N4, N3-এর confusing grammar একই page-এ side-by-side তুলনা, common mistake এবং মনে রাখার trick সহ।",
+   "target": "看起来相似——但用法不同。在同一 page 上 side-by-side 比较 N5、N4、N3 的 confusing grammar，附 common mistake 和记忆 trick。"
+  },
+  {
+   "source": "JLPT কোনো official grammar syllabus প্রকাশ করে না; level groupingটি প্রচলিত study materials ও practical learning difficulty অনুযায়ী সাজানো।",
+   "target": "JLPT 不公布官方 grammar syllabus；level grouping 是根据常见 study materials 和 practical learning difficulty 整理的。"
+  }
+ ]
+}

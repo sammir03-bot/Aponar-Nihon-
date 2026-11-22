@@ -1,0 +1,414 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "zh",
+ "page": "japan-google-maps-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Google Maps দিয়ে যাতায়াত | আপনার নিহোন",
+   "target": "用 Google Maps 出行 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "日本生活指南"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "所有指南"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "抵达后"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "家与日常生活"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "列车与Platform"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "使用谷歌地图"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "兼职工作"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "紧急援助"
+  },
+  {
+   "source": "Google Maps দিয়ে যাতায়াত",
+   "target": "用 Google Maps 出行"
+  },
+  {
+   "source": "Destination search থেকে platform, transfer, exit ও building entrance পর্যন্ত—Google Maps-এর প্রতিটি লেখা কী বোঝায় তা ধাপে ধাপে।",
+   "target": "从 Destination search 到 platform、transfer、exit 和 building entrance——逐步说明 Google Maps 上的每处文字是什么意思。"
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "日语解说"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "日语句子"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "实际步骤"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "您的进度"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 已完成"
+  },
+  {
+   "source": "সঠিক Destination Search",
+   "target": "正确的 Destination Search"
+  },
+  {
+   "source": "একই নামের ভুল জায়গা এড়ান",
+   "target": "避免同名的错误地点"
+  },
+  {
+   "source": "শুধু দোকানের নাম নয়, branch দিন",
+   "target": "不要只写商店名，要写 branch"
+  },
+  {
+   "source": "যেমন “○○ 新宿店” বা postal address লিখুন।",
+   "target": "例如写“○○ 新宿店”或 postal address。"
+  },
+  {
+   "source": "Photo ও category মিলান",
+   "target": "核对 Photo 和 category"
+  },
+  {
+   "source": "Restaurant, office, school বা park—map pin-এর category এবং exterior photo দেখুন।",
+   "target": "查看 Restaurant、office、school 或 park——map pin 的 category 和 exterior photo。"
+  },
+  {
+   "source": "Address copy করে message-এর সঙ্গে মিলান",
+   "target": "复制 Address 并与 message 对照"
+  },
+  {
+   "source": "Interview/training address-এর ward, chōme, building ও floor সব দেখুন।",
+   "target": "查看 Interview/training address 的 ward、chōme、building 和 floor 全部信息。"
+  },
+  {
+   "source": "Save ও label করুন",
+   "target": "Save 并 label"
+  },
+  {
+   "source": "School, Home, Work-এর মতো label দিলে পরেরবার দ্রুত route পাবেন।",
+   "target": "加上 School、Home、Work 等 label，下次能快速获得 route。"
+  },
+  {
+   "source": "Directions থেকে Transit বাছাই",
+   "target": "从 Directions 选择 Transit"
+  },
+  {
+   "source": "From ও To ঠিক করার নিয়ম",
+   "target": "设置 From 和 To 的规则"
+  },
+  {
+   "source": "Directions চাপুন",
+   "target": "点击 Directions"
+  },
+  {
+   "source": "Starting point “Your location” ঠিক আছে কি না দেখুন; বাসা থেকে গেলে home address দিন।",
+   "target": "确认 Starting point “Your location”是否正确；从家里出发时请输入 home address。"
+  },
+  {
+   "source": "Train icon নির্বাচন করুন",
+   "target": "选择 Train icon"
+  },
+  {
+   "source": "Public transit route দেখতে train/bus icon ব্যবহার করুন।",
+   "target": "使用 train/bus icon 查看 Public transit route。"
+  },
+  {
+   "source": "Leave now / Depart at / Arrive by বাছুন",
+   "target": "选择 Leave now / Depart at / Arrive by"
+  },
+  {
+   "source": "Interview হলে “Arrive by” দিয়ে 15–20 মিনিট buffer রাখুন।",
+   "target": "如果是 Interview，使用“Arrive by”并留出 15–20 分钟 buffer。"
+  },
+  {
+   "source": "Options দেখুন",
+   "target": "查看 Options"
+  },
+  {
+   "source": "কম transfer, কম walking, bus/train preference প্রয়োজনমতো দিন।",
+   "target": "根据需要设置少 transfer、少 walking、bus/train preference。"
+  },
+  {
+   "source": "Route Screen-এর প্রতিটি অংশ",
+   "target": "Route Screen 的每个部分"
+  },
+  {
+   "source": "সময়, ভাড়া, walking ও transfer পড়ুন",
+   "target": "阅读时间、车费、walking 和 transfer"
+  },
+  {
+   "source": "চিহ্ন",
+   "target": "标记"
+  },
+  {
+   "source": "অর্থ",
+   "target": "意思"
+  },
+  {
+   "source": "সিদ্ধান্ত",
+   "target": "决定"
+  },
+  {
+   "source": "Departure ও arrival",
+   "target": "Departure 和 arrival"
+  },
+  {
+   "source": "বাসা থেকে station walking যোগ করুন",
+   "target": "加上从家到 station 的 walking"
+  },
+  {
+   "source": "আনুমানিক fare",
+   "target": "预计 fare"
+  },
+  {
+   "source": "IC balance রাখুন",
+   "target": "保持 IC balance"
+  },
+  {
+   "source": "দুইবার line বদল",
+   "target": "换乘两次 line"
+  },
+  {
+   "source": "Beginner হলে কম transfer route দেখুন",
+   "target": "如果是 Beginner，请看少 transfer 的 route"
+  },
+  {
+   "source": "Walking অংশ",
+   "target": "Walking 部分"
+  },
+  {
+   "source": "Exit-এর পর সময়",
+   "target": "出 Exit 后的时间"
+  },
+  {
+   "source": "সম্ভাব্য platform",
+   "target": "可能的 platform"
+  },
+  {
+   "source": "Station board-এ confirm",
+   "target": "在 Station board 上 confirm"
+  },
+  {
+   "source": "কাছের exit",
+   "target": "最近的 exit"
+  },
+  {
+   "source": "Sign follow করুন",
+   "target": "跟随 Sign"
+  },
+  {
+   "source": "Platform ও Direction বোঝা",
+   "target": "理解 Platform 与 Direction"
+  },
+  {
+   "source": "Maps-এর লেখাকে station sign-এর সঙ্গে মিলান",
+   "target": "将 Maps 上的文字与 station sign 对照"
+  },
+  {
+   "source": "Line name + direction একসঙ্গে পড়ুন",
+   "target": "一起读 Line name + direction"
+  },
+  {
+   "source": "শুধু platform number নয়; line এবং “for ○○” মিলতে হবে।",
+   "target": "不只是 platform number；line 和“for ○○”都必须一致。"
+  },
+  {
+   "source": "Maps platform পরিবর্তন হতে পারে",
+   "target": "Maps platform 可能会变化"
+  },
+  {
+   "source": "Service disruption বা operational change-এ actual departure board-ই চূড়ান্ত।",
+   "target": "发生 Service disruption 或 operational change 时，以 actual departure board 为准。"
+  },
+  {
+   "source": "Train type দেখুন",
+   "target": "查看 Train type"
+  },
+  {
+   "source": "Maps যে service বলেছে—Local/Rapid—সেটিই ধরুন, অথবা আপনার station stop list যাচাই করুন।",
+   "target": "乘坐 Maps 所说的 service——Local/Rapid——或者核对你的 station stop list。"
+  },
+  {
+   "source": "Google নিজেও actual traffic rules/sign confirm করতে বলে। সন্দেহ হলে station staff-কে দেখান।",
+   "target": "Google 本身也建议 confirm actual traffic rules/sign。如有疑问，请给 station staff 看。"
+  },
+  {
+   "source": "স্টেশন থেকে Destination পর্যন্ত",
+   "target": "从车站到 Destination"
+  },
+  {
+   "source": "Exit, compass ও Street View",
+   "target": "Exit、compass 和 Street View"
+  },
+  {
+   "source": "Exit number আগে দেখুন",
+   "target": "先看 Exit number"
+  },
+  {
+   "source": "বড় station-এ ভুল exit নিলে 10–20 মিনিট নষ্ট হতে পারে।",
+   "target": "在大 station 走错 exit，可能会浪费 10–20 分钟。"
+  },
+  {
+   "source": "Blue dot-এর beam দেখুন",
+   "target": "看 Blue dot 的 beam"
+  },
+  {
+   "source": "আপনি কোন দিকে মুখ করে আছেন তা beam দেখায়; গোল হয়ে ঘুরলে compass calibrate করুন।",
+   "target": "beam 显示你面朝的方向；如果原地打转，请 calibrate compass。"
+  },
+  {
+   "source": "Street View দিয়ে building চিনুন",
+   "target": "用 Street View 认 building"
+  },
+  {
+   "source": "Interview-এর আগের দিন entrance, signboard ও nearby landmark দেখে নিন।",
+   "target": "在 Interview 前一天查看 entrance、signboard 和 nearby landmark。"
+  },
+  {
+   "source": "Building floor আলাদা করে লিখুন",
+   "target": "单独写明 Building floor"
+  },
+  {
+   "source": "Map pin সাধারণত building পর্যন্ত নেয়; floor/room message থেকে দেখুন।",
+   "target": "Map pin 通常只到 building；floor/room 请看 message。"
+  },
+  {
+   "source": "একটি বাস্তব Practice",
+   "target": "一次真实 Practice"
+  },
+  {
+   "source": "স্কুল/কাজে যাওয়ার আগের রাতের rehearsal",
+   "target": "去学校/上班前一晚的 rehearsal"
+  },
+  {
+   "source": "ঠিক address খুলে “Work interview” নামে save করুন।",
+   "target": "打开准确的 address，以“Work interview”为名 save。"
+  },
+  {
+   "source": "Arrive by সেট",
+   "target": "设置 Arrive by"
+  },
+  {
+   "source": "Appointment 19:00 হলে 18:40 arrival দিন।",
+   "target": "如果 Appointment 是 19:00，请设置 18:40 arrival。"
+  },
+  {
+   "source": "Departure station, line, direction, transfer, platform, exit—প্রতিটি screen রাখুন।",
+   "target": "保留每个 screen：Departure station、line、direction、transfer、platform、exit。"
+  },
+  {
+   "source": "Alternative route দেখুন",
+   "target": "查看 Alternative route"
+  },
+  {
+   "source": "Delay হলে দ্বিতীয় route কোনটি তা আগে জানুন।",
+   "target": "提前知道 Delay 时的第二条 route 是哪条。"
+  },
+  {
+   "source": "Battery ও data প্রস্তুত",
+   "target": "Battery 和 data 准备就绪"
+  },
+  {
+   "source": "Power bank, phone charge এবং address text offline রাখুন।",
+   "target": "请离线保存充电宝、手机充电和地址文字。"
+  },
+  {
+   "source": "রাস্তা ও station-এ জিজ্ঞেস করার বাক্য",
+   "target": "在路上和车站询问时用的句子"
+  },
+  {
+   "source": "Map দেখিয়ে বলুন",
+   "target": "指着地图说"
+  },
+  {
+   "source": "আমি এই জায়গায় যেতে চাই।",
+   "target": "我想去这个地方。"
+  },
+  {
+   "source": "এই exit-টাই সঠিক?",
+   "target": "这个出口对吗？"
+  },
+  {
+   "source": "এই map-টা একটু দেখবেন?",
+   "target": "能帮我看一下这张地图吗？"
+  },
+  {
+   "source": "এখান থেকে হেঁটে কত মিনিট?",
+   "target": "从这里步行需要多少分钟？"
+  },
+  {
+   "source": "বের হওয়ার আগে ৩০ সেকেন্ডে",
+   "target": "出发前30秒"
+  },
+  {
+   "source": "Destination branch/address ঠিক আছে",
+   "target": "目的地的分店/地址正确"
+  },
+  {
+   "source": "Departure বা Arrive by সময় ঠিক করেছি",
+   "target": "已设置出发或到达时间"
+  },
+  {
+   "source": "Line, direction, train type দেখেছি",
+   "target": "已查看线路、方向、列车类型"
+  },
+  {
+   "source": "Transfer station screenshot আছে",
+   "target": "有换乘站的截图"
+  },
+  {
+   "source": "Platform actual board-এ মিলাব",
+   "target": "会在实际站台显示屏上核对"
+  },
+  {
+   "source": "Exit number save করেছি",
+   "target": "已保存出口编号"
+  },
+  {
+   "source": "Battery/data ও alternative route প্রস্তুত",
+   "target": "电量/流量和备用路线已准备好"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "官方与可靠来源"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "规则可能会有变动——做出最终决定前请查阅官方信息"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "本指南仅供学习参考。涉及个人法律/医疗决策时，请遵循相关机构或专业人士的指导。"
+  },
+  {
+   "source": "হোম",
+   "target": "首页"
+  }
+ ]
+}

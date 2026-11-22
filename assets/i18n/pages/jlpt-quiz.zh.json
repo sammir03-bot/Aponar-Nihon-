@@ -1,0 +1,58 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "zh",
+ "page": "jlpt-quiz",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "JLPT Quiz | আপনার নিহোন",
+   "target": "JLPT Quiz | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন · JLPT Quiz",
+   "target": "আপনার নিহোন · JLPT Quiz"
+  },
+  {
+   "source": "বাংলা ব্যাখ্যাসহ প্র্যাকটিস",
+   "target": "带孟加拉语讲解的练习"
+  },
+  {
+   "source": "প্রশ্ন বেছে উত্তর দিন। প্রতিটি উত্তরের পর বাংলা ব্যাখ্যা দেখাবে।",
+   "target": "选择题目并作答。每答完一题后都会显示孟加拉语讲解。"
+  },
+  {
+   "source": "লেভেল",
+   "target": "等级"
+  },
+  {
+   "source": "০ / ০ উত্তর",
+   "target": "0 / 0 已答"
+  },
+  {
+   "source": "স্কোর ০",
+   "target": "分数 0"
+  },
+  {
+   "source": "সব প্রশ্নের উত্তর দিন",
+   "target": "回答所有题目"
+  },
+  {
+   "source": "আবার শুরু",
+   "target": "重新开始"
+  },
+  {
+   "source": "ভুলগুলো আবার করি",
+   "target": "重做错题"
+  },
+  {
+   "source": "পরের Part →",
+   "target": "下一 Part →"
+  },
+  {
+   "source": ". সব প্রশ্ন ও passage নতুন করে তৈরি করা হয়েছে; হুবহু কপি নয়।",
+   "target": ". 所有题目和 passage 都是全新创作的；并非原样复制。"
+  }
+ ]
+}

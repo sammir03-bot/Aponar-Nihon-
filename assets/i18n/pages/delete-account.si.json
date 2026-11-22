@@ -1,0 +1,38 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "si",
+ "page": "delete-account",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Account Delete / অ্যাকাউন্ট মুছুন",
+   "target": "Account Delete / ගිණුම මකන්න"
+  },
+  {
+   "source": "এই page Aponar Nihon app ও website—দুই জায়গা থেকেই account deletion-এর জন্য ব্যবহার করা যায়।",
+   "target": "මෙම page එක Aponar Nihon app සහ website — ස්ථාන දෙකෙන්ම account deletion සඳහා භාවිත කළ හැක."
+  },
+  {
+   "source": "সতর্কতা:",
+   "target": "අවවාදයයි:"
+  },
+  {
+   "source": "Delete করলে আপনার Aponar Nihon Auth account, profile, learning progress এবং activity history স্থায়ীভাবে মুছে যাবে। এই কাজ undo করা যাবে না।",
+   "target": "Delete කළහොත් ඔබේ Aponar Nihon Auth account එක, profile එක, learning progress එක සහ activity history එක ස්ථිරවම මැකී යනු ඇත. මෙම ක්‍රියාව undo කළ නොහැක."
+  },
+  {
+   "source": "Account যাচাই করা হচ্ছে…",
+   "target": "Account එක තහවුරු කරමින්…"
+  },
+  {
+   "source": "নিশ্চিত হলে DELETE লিখুন",
+   "target": "නිශ්චිත නම් DELETE ලෙස ටයිප් කරන්න"
+  },
+  {
+   "source": "Login করে ফিরে আসুন",
+   "target": "Login වී ආපසු එන්න"
+  }
+ ]
+}

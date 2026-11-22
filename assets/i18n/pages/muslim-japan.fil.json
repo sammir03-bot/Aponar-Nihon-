@@ -1,0 +1,114 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "fil",
+ "page": "muslim-japan",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "বাংলাদেশি মুসলিমদের জন্য নামাজের সময়, কিবলা নির্দেশনা, কাছের মসজিদ এবং হালাল খাবার—এক জায়গায়।",
+   "target": "Mga oras ng pagdarasal para sa mga Muslim na Bangladeshi, direksyon ng Qibla, malapit na mosque at halal na pagkain—lahat sa isang lugar."
+  },
+  {
+   "source": "আমার লোকেশন নিন",
+   "target": "Kunin ang aking lokasyon"
+  },
+  {
+   "source": "Compass চালু করুন",
+   "target": "I-on ang Compass"
+  },
+  {
+   "source": "লোকেশন দিলে আপনার এলাকার তথ্য দেখানো হবে।",
+   "target": "Kung ibibigay mo ang iyong lokasyon, ipapakita ang impormasyon para sa iyong lugar."
+  },
+  {
+   "source": "নামাজের সময়",
+   "target": "Mga oras ng pagdarasal"
+  },
+  {
+   "source": "Hanafi Asr — বাংলাদেশি default",
+   "target": "Hanafi Asr — default para sa Bangladeshi"
+  },
+  {
+   "source": "লোকেশন প্রয়োজন",
+   "target": "Kailangan ang lokasyon"
+  },
+  {
+   "source": "নামাজের সময় স্থানীয় মসজিদের timetable থেকে কয়েক মিনিট ভিন্ন হতে পারে। স্থানীয় মসজিদের সময়কে অগ্রাধিকার দিন।",
+   "target": "Maaaring magkaiba ng ilang minuto ang mga oras ng pagdarasal sa timetable ng lokal na mosque. Bigyang-priyoridad ang oras ng lokal na mosque."
+  },
+  {
+   "source": "কিবলা",
+   "target": "Qibla"
+  },
+  {
+   "source": "লোকেশন নিলে True North থেকে কিবলার degree দেখাবে। Compass permission দিলে ফোন ঘোরালে arrow update হবে।",
+   "target": "Kung kukunin mo ang lokasyon, ipapakita ang degree ng Qibla mula sa True North. Kung bibigyan mo ng Compass permission, mag-a-update ang arrow kapag pinihit mo ang phone."
+  },
+  {
+   "source": "কাছের মসজিদ ও হালাল খাবার",
+   "target": "Malapit na mosque at halal na pagkain"
+  },
+  {
+   "source": "OpenStreetMap · বাস্তব জায়গার তথ্য",
+   "target": "OpenStreetMap · Impormasyon ng totoong lugar"
+  },
+  {
+   "source": "🕌 মসজিদ",
+   "target": "🕌 Mosque"
+  },
+  {
+   "source": "🍛 হালাল খাবার",
+   "target": "🍛 Halal na pagkain"
+  },
+  {
+   "source": "এলাকা",
+   "target": "Lugar"
+  },
+  {
+   "source": "কত দূরে",
+   "target": "Gaano kalayo"
+  },
+  {
+   "source": "৩ কিমি",
+   "target": "3 km"
+  },
+  {
+   "source": "৬ কিমি",
+   "target": "6 km"
+  },
+  {
+   "source": "১০ কিমি",
+   "target": "10 km"
+  },
+  {
+   "source": "এই এলাকায় খুঁজুন",
+   "target": "Maghanap sa lugar na ito"
+  },
+  {
+   "source": "আপনার লোকেশন নিন অথবা এলাকা বেছে খুঁজুন। মানচিত্র সরিয়েও নতুন এলাকা বেছে নিতে পারেন।",
+   "target": "Kunin ang iyong lokasyon o pumili ng lugar para maghanap. Maaari ka ring pumili ng bagong lugar sa pamamagitan ng paggalaw ng mapa."
+  },
+  {
+   "source": "লোকেশন বা এলাকা বেছে নিলে কাছের জায়গা দেখানো হবে।",
+   "target": "Kung pipili ka ng lokasyon o lugar, ipapakita ang mga malapit na lugar."
+  },
+  {
+   "source": "আবার চেষ্টা করুন",
+   "target": "Subukan muli"
+  },
+  {
+   "source": "তথ্য:",
+   "target": "Impormasyon:"
+  },
+  {
+   "source": "। তথ্য অসম্পূর্ণ হতে পারে। খাবারের ক্ষেত্রে মানচিত্রের tag বা নাম ব্যবহার করা হয়; অর্ডারের আগে দোকানের বর্তমান হালাল সনদ ও উপাদান যাচাই করুন।",
+   "target": ". Maaaring hindi kumpleto ang impormasyon. Para sa pagkain, ginagamit ang tag o pangalan sa mapa; bago mag-order, beripikahin ang kasalukuyang halal certificate at mga sangkap ng tindahan."
+  },
+  {
+   "source": "মানচিত্রের ভুল জানান",
+   "target": "Iulat ang error sa mapa"
+  }
+ ]
+}

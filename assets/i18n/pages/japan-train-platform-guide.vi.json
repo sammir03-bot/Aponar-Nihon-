@@ -1,0 +1,398 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "japan-train-platform-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "ট্রেন ও Platform সম্পূর্ণ গাইড | আপনার নিহোন",
+   "target": "Hướng dẫn đầy đủ về tàu và sân ga | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "Cẩm nang Cuộc sống Nhật Bản"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "Tất cả cẩm nang"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "Sau khi đến"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "Nhà ở và Đời sống hàng ngày"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "Tàu điện và Sân ga"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Sử dụng Google Maps"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "Việc làm thêm"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "Hỗ trợ khẩn cấp"
+  },
+  {
+   "source": "ট্রেন ও Platform সম্পূর্ণ গাইড",
+   "target": "Hướng dẫn đầy đủ về tàu và sân ga"
+  },
+  {
+   "source": "লাইন, direction, Local/Rapid, IC card, transfer, platform ও exit—জাপানের ট্রেনে একা চলার জন্য পানির মতো ব্যাখ্যা।",
+   "target": "Tuyến, hướng đi, Local/Rapid, thẻ IC, chuyển tuyến, sân ga và lối ra—giải thích rõ ràng và dễ hiểu để đi tàu một mình tại Nhật Bản."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "Giải thích bằng tiếng Bengali"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "Câu tiếng Nhật"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "Các bước thực tế"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "Tiến độ của bạn"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "Hoàn thành 0/0"
+  },
+  {
+   "source": "সমস্যা",
+   "target": "Vấn đề"
+  },
+  {
+   "source": "একটি Route-এর ৭টি তথ্য পড়ুন",
+   "target": "Hãy đọc 7 thông tin của một tuyến đường"
+  },
+  {
+   "source": "শুধু সময় দেখে ট্রেনে উঠবেন না",
+   "target": "Đừng lên tàu chỉ nhìn vào giờ"
+  },
+  {
+   "source": "স্ক্রিনে যা দেখবেন",
+   "target": "Những gì bạn sẽ thấy trên màn hình"
+  },
+  {
+   "source": "অর্থ",
+   "target": "Ý nghĩa"
+  },
+  {
+   "source": "আপনার কাজ",
+   "target": "Việc bạn cần làm"
+  },
+  {
+   "source": "কোন railway line",
+   "target": "Tuyến đường sắt nào"
+  },
+  {
+   "source": "রঙ ও নাম মিলান",
+   "target": "Đối chiếu màu sắc và tên"
+  },
+  {
+   "source": "ট্রেন কোন দিক যাচ্ছে",
+   "target": "Tàu đang đi hướng nào"
+  },
+  {
+   "source": "শেষ station/major station দেখুন",
+   "target": "Hãy xem ga cuối/ga lớn"
+  },
+  {
+   "source": "ছাড়ার সময়",
+   "target": "Giờ khởi hành"
+  },
+  {
+   "source": "বর্তমান সময়ের সঙ্গে মিলান",
+   "target": "Đối chiếu với giờ hiện tại"
+  },
+  {
+   "source": "কোন platform",
+   "target": "Sân ga nào"
+  },
+  {
+   "source": "station board-এ আবার নিশ্চিত",
+   "target": "Xác nhận lại trên bảng ở nhà ga"
+  },
+  {
+   "source": "আপনার station-এ থামে কি না",
+   "target": "Có dừng ở ga của bạn hay không"
+  },
+  {
+   "source": "লাইন বদল",
+   "target": "Đổi tuyến"
+  },
+  {
+   "source": "station name ও walking time দেখুন",
+   "target": "Hãy xem tên ga và thời gian đi bộ"
+  },
+  {
+   "source": "স্টেশন থেকে বের হওয়ার gate",
+   "target": "Cổng ra khỏi nhà ga"
+  },
+  {
+   "source": "destination-এর কাছের exit নিন",
+   "target": "Chọn lối ra gần điểm đến"
+  },
+  {
+   "source": "স্টেশনের ভিতর Sign পড়া",
+   "target": "Đọc biển chỉ dẫn bên trong nhà ga"
+  },
+  {
+   "source": "Gate থেকে platform পর্যন্ত",
+   "target": "Từ cổng đến sân ga"
+  },
+  {
+   "source": "Line symbol খুঁজুন",
+   "target": "Tìm ký hiệu tuyến"
+  },
+  {
+   "source": "যেমন JY, JB, M ইত্যাদি station code ও line color আপনাকে দ্রুত সঠিক sign ধরতে সাহায্য করে।",
+   "target": "Ví dụ, mã ga và màu tuyến như JY, JB, M giúp bạn nhanh chóng nhận đúng biển chỉ dẫn."
+  },
+  {
+   "source": "“For ○○” বোর্ড দেখুন",
+   "target": "Hãy xem bảng “For ○○”"
+  },
+  {
+   "source": "একই line-এর opposite direction আলাদা platform-এ হতে পারে।",
+   "target": "Hướng ngược lại của cùng một tuyến có thể ở sân ga khác."
+  },
+  {
+   "source": "Platform board-এ train type মিলান",
+   "target": "Đối chiếu loại tàu trên bảng sân ga"
+  },
+  {
+   "source": "Local（各駅停車）, Rapid（快速）, Express（急行）-এর stop আলাদা হতে পারে।",
+   "target": "Điểm dừng của Local（各駅停車）, Rapid（快速）, Express（急行） có thể khác nhau."
+  },
+  {
+   "source": "IC Card দিয়ে ওঠা-নামা",
+   "target": "Lên và xuống bằng thẻ IC"
+  },
+  {
+   "source": "Tap, balance ও fare adjustment",
+   "target": "Chạm thẻ, số dư và điều chỉnh giá vé"
+  },
+  {
+   "source": "প্রবেশে একবার tap",
+   "target": "Chạm một lần khi vào"
+  },
+  {
+   "source": "Gate-এর blue/IC অংশে card স্থিরভাবে ছোঁয়ান। Beep ও gate open হলে যান।",
+   "target": "Hãy chạm thẻ chắc chắn vào phần màu xanh/IC của cổng. Khi nghe tiếng beep và cổng mở, hãy đi qua."
+  },
+  {
+   "source": "Transfer gate বুঝুন",
+   "target": "Hiểu cổng chuyển tuyến"
+  },
+  {
+   "source": "কিছু transfer-এ gate থেকে বের হলেও নির্দিষ্ট transfer gate/সময় থাকতে পারে। Sign অনুসরণ করুন।",
+   "target": "Ở một số điểm chuyển tuyến, dù ra khỏi cổng vẫn có thể có cổng chuyển tuyến/giờ quy định. Hãy làm theo biển chỉ dẫn."
+  },
+  {
+   "source": "বের হওয়ার সময় আবার tap",
+   "target": "Chạm lại khi ra ngoài"
+  },
+  {
+   "source": "ভাড়া balance থেকে কাটা হবে। Balance কম হলে fare adjustment/charge machine ব্যবহার করুন।",
+   "target": "Giá vé sẽ bị trừ vào số dư. Nếu số dư thấp, hãy dùng máy điều chỉnh giá vé/nạp tiền."
+  },
+  {
+   "source": "এক card এক ব্যক্তি",
+   "target": "Một thẻ cho một người"
+  },
+  {
+   "source": "একই IC card দিয়ে একসঙ্গে দুইজন প্রবেশ করতে পারবেন না।",
+   "target": "Không thể hai người cùng vào bằng một thẻ IC cùng lúc."
+  },
+  {
+   "source": "Gate বন্ধ হলে ভয় নয়",
+   "target": "Đừng sợ nếu cổng đóng"
+  },
+  {
+   "source": "পাশের station staff-কে card দেখিয়ে বলুন “出られません”。নিজে gate পার হওয়ার চেষ্টা করবেন না।",
+   "target": "Hãy cho nhân viên nhà ga bên cạnh xem thẻ và nói “出られません”. Đừng cố tự vượt qua cổng."
+  },
+  {
+   "source": "Local, Rapid, Express পার্থক্য",
+   "target": "Khác biệt giữa Local, Rapid, Express"
+  },
+  {
+   "source": "ভুল train এড়ানোর সবচেয়ে গুরুত্বপূর্ণ অংশ",
+   "target": "Phần quan trọng nhất để tránh nhầm tàu"
+  },
+  {
+   "source": "সাধারণ অর্থ",
+   "target": "Ý nghĩa thông thường"
+  },
+  {
+   "source": "সব/প্রায় সব station-এ থামে",
+   "target": "Dừng ở tất cả/gần như tất cả các ga"
+  },
+  {
+   "source": "ধীর, কিন্তু beginner-এর জন্য সহজ",
+   "target": "Chậm, nhưng dễ cho người mới bắt đầu"
+  },
+  {
+   "source": "কিছু station skip করে",
+   "target": "Bỏ qua một số ga"
+  },
+  {
+   "source": "আপনার station skip হতে পারে",
+   "target": "Ga của bạn có thể bị bỏ qua"
+  },
+  {
+   "source": "আরও কম station-এ থামে",
+   "target": "Dừng ở ít ga hơn nữa"
+  },
+  {
+   "source": "Stop list অবশ্যই দেখুন",
+   "target": "Nhất định phải xem danh sách điểm dừng"
+  },
+  {
+   "source": "কখনো extra ticket লাগে",
+   "target": "Đôi khi cần vé phụ thêm"
+  },
+  {
+   "source": "নামের উপর নয়, stop list-এর উপর ভরসা করুন",
+   "target": "Đừng tin vào tên, hãy tin vào danh sách điểm dừng"
+  },
+  {
+   "source": "Railway company ভেদে “Rapid/Express” ব্যবস্থা আলাদা। Platform display-এ destination station আছে কি না দেখুন।",
+   "target": "Hệ thống “Rapid/Express” khác nhau tùy công ty đường sắt. Hãy xem ga đích có trên bảng hiển thị sân ga hay không."
+  },
+  {
+   "source": "নামা থেকে দ্বিতীয় ট্রেনে ওঠা",
+   "target": "Từ lúc xuống đến khi lên tàu thứ hai"
+  },
+  {
+   "source": "নামার আগেই next line মনে রাখুন",
+   "target": "Hãy nhớ tuyến tiếp theo trước khi xuống"
+  },
+  {
+   "source": "Line name, color/code, direction এবং platform screenshot করুন।",
+   "target": "Hãy chụp màn hình tên tuyến, màu/mã, hướng đi và sân ga."
+  },
+  {
+   "source": "乗り換え sign অনুসরণ করুন",
+   "target": "Hãy làm theo biển 乗り換え"
+  },
+  {
+   "source": "Exit sign নয়—প্রথমে transfer line-এর arrow দেখুন।",
+   "target": "Không phải biển Exit—trước tiên hãy xem mũi tên của tuyến chuyển đổi."
+  },
+  {
+   "source": "Gate নিয়ে Maps-এর instruction পড়ুন",
+   "target": "Hãy đọc hướng dẫn của Maps về cổng"
+  },
+  {
+   "source": "“Stay inside station” হলে সাধারণত gate ছাড়বেন না; “Exit and re-enter” হলে বাইরে যেতে হতে পারে।",
+   "target": "Nếu là “Stay inside station” thì thường không rời cổng; nếu là “Exit and re-enter” thì có thể phải ra ngoài."
+  },
+  {
+   "source": "দ্বিতীয় platform-এ destination নিশ্চিত করুন",
+   "target": "Xác nhận điểm đến ở sân ga thứ hai"
+  },
+  {
+   "source": "Google Maps-এর platform বদলে যেতে পারে; actual board চূড়ান্ত।",
+   "target": "Sân ga trên Google Maps có thể thay đổi; bảng thực tế là chuẩn cuối cùng."
+  },
+  {
+   "source": "ভুল হলে কী করবেন",
+   "target": "Nếu nhầm thì làm gì"
+  },
+  {
+   "source": "ভুল train, ভুল gate, card error",
+   "target": "Nhầm tàu, nhầm cổng, lỗi thẻ"
+  },
+  {
+   "source": "এই ট্রেন শিনজুকুতে থামবে?",
+   "target": "Tàu này có dừng ở Shinjuku không?"
+  },
+  {
+   "source": "কত নম্বর platform?",
+   "target": "Sân ga số mấy?"
+  },
+  {
+   "source": "Transfer কোথায়?",
+   "target": "Chuyển tuyến ở đâu?"
+  },
+  {
+   "source": "ভুল করে উঠে গেছি। এখন কী করব?",
+   "target": "Tôi lỡ lên nhầm rồi. Bây giờ tôi nên làm gì?"
+  },
+  {
+   "source": "IC card দিয়ে বের হতে পারছি না।",
+   "target": "Tôi không thể ra ngoài bằng thẻ IC."
+  },
+  {
+   "source": "একাই যাতায়াতের আগে",
+   "target": "Trước khi tự đi lại một mình"
+  },
+  {
+   "source": "Line name ও color চিনতে পারি",
+   "target": "Tôi có thể nhận biết tên tuyến và màu sắc"
+  },
+  {
+   "source": "For/方面 দেখে direction বুঝি",
+   "target": "Tôi hiểu hướng đi khi xem For/方面"
+  },
+  {
+   "source": "Local/Rapid stop list দেখি",
+   "target": "Tôi xem danh sách điểm dừng của Local/Rapid"
+  },
+  {
+   "source": "Platform number actual board-এ মিলাই",
+   "target": "Tôi đối chiếu số sân ga với bảng thực tế"
+  },
+  {
+   "source": "IC card charge করতে পারি",
+   "target": "Tôi có thể nạp thẻ IC"
+  },
+  {
+   "source": "Transfer sign অনুসরণ করতে পারি",
+   "target": "Tôi có thể làm theo biển chuyển tuyến"
+  },
+  {
+   "source": "Exit number দেখে বের হতে পারি",
+   "target": "Tôi có thể ra ngoài bằng cách xem số lối ra"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "Nguồn chính thức và đáng tin cậy"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "Quy định có thể thay đổi—vui lòng kiểm tra thông tin chính thức trước khi quyết định cuối cùng"
+  },
+  {
+   "source": "বাসা ও জীবন",
+   "target": "Nhà ở và Đời sống"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "Hướng dẫn này mang tính chất tham khảo học tập. Đối với các quyết định pháp lý/y tế cá nhân, vui lòng tuân theo hướng dẫn của cơ quan hoặc chuyên gia liên quan."
+  },
+  {
+   "source": "হোম",
+   "target": "Trang chủ"
+  }
+ ]
+}

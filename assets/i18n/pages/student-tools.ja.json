@@ -1,0 +1,214 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ja",
+ "page": "student-tools",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Student Power Tools | আপনার নিহোন",
+   "target": "Student Power Tools | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "← হোম",
+   "target": "← ホーム"
+  },
+  {
+   "source": "পড়া, শোনা, JLPT প্রস্তুতি আর জাপানের দৈনন্দিন student life—সবকিছুর জন্য practical tools। আপনার progress এই device-এই save থাকবে।",
+   "target": "読む、聞く、JLPT対策、日本での日常の学生生活—すべてに役立つ実用ツール。あなたの進捗はこのデバイスに保存されます。"
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "ベンガル語解説"
+  },
+  {
+   "source": "ভুল খাতা",
+   "target": "間違いノート"
+  },
+  {
+   "source": "Japanese sentence শুনুন, তারপর একই rhythm-এ repeat করুন। Normal/Slow speed দুটোই আছে।",
+   "target": "日本語の文を聞いて、同じリズムで繰り返してください。通常／ゆっくりの両方の速度があります。"
+  },
+  {
+   "source": "← আগের",
+   "target": "← 前へ"
+  },
+  {
+   "source": "পরের →",
+   "target": "次へ →"
+  },
+  {
+   "source": "Shadowing নিয়ম",
+   "target": "シャドーイングのルール"
+  },
+  {
+   "source": "১) আগে না দেখে ২ বার শুনুন। ২) Japanese text দেখে ১ বার শুনুন। ৩) audio-এর সঙ্গে সঙ্গে বলুন। ৪) শেষে text না দেখে বলুন।",
+   "target": "1) まず見ないで2回聞いてください。 2) 日本語テキストを見ながら1回聞いてください。 3) 音声と一緒に言ってください。 4) 最後にテキストを見ないで言ってください。"
+  },
+  {
+   "source": "আজকের টার্গেট:",
+   "target": "今日の目標:"
+  },
+  {
+   "source": "অন্তত 5 sentence × 3 repeat।",
+   "target": "最低5文 × 3回繰り返し。"
+  },
+  {
+   "source": "Again / Hard / Good / Easy অনুযায়ী card-এর পরের review time বদলাবে।",
+   "target": "Again / Hard / Good / Easyに応じて、カードの次の復習時間が変わります。"
+  },
+  {
+   "source": "উত্তর দেখুন",
+   "target": "答えを見る"
+  },
+  {
+   "source": "আজকের Review",
+   "target": "今日の復習"
+  },
+  {
+   "source": "Starter deck-এ প্রয়োজনীয় N5 vocabulary রাখা হয়েছে। পরে আপনার existing vocabulary pages থেকে deck আরও বড় করা যাবে।",
+   "target": "スターターデッキには必要なN5語彙が入っています。後で既存の語彙ページからデッキをさらに大きくできます。"
+  },
+  {
+   "source": "コンビニ, 駅, 市役所, 病院—বাস্তব পরিস্থিতিতে কোন উত্তর দিতে হবে practice করুন। ভুল answer অটোমেটিক “ভুল খাতা”-য় যাবে।",
+   "target": "コンビニ, 駅, 市役所, 病院—実際の場面でどの答えをすべきか練習してください。間違えた答えは自動的に「間違いノート」に入ります。"
+  },
+  {
+   "source": "প্রতিটা ভুল answer পরে Mistake Notebook-এ review করতে পারবেন।",
+   "target": "間違えた答えはすべて、後でMistake Notebookで復習できます。"
+  },
+  {
+   "source": "আবার শুরু",
+   "target": "やり直す"
+  },
+  {
+   "source": "📅 আপনার পড়ার প্ল্যান",
+   "target": "📅 あなたの学習プラン"
+  },
+  {
+   "source": "Level, exam date, প্রতিদিনের সময় দিলে weekly study plan তৈরি হবে। এখানে target সংখ্যা planning estimate—official JLPT syllabus নয়।",
+   "target": "レベル、試験日、毎日の時間を入力すると、週間学習プランが作成されます。ここでの目標数は計画の目安であり、公式のJLPTシラバスではありません。"
+  },
+  {
+   "source": "প্রতিদিন কত মিনিট পড়বেন?",
+   "target": "毎日何分勉強しますか？"
+  },
+  {
+   "source": "সপ্তাহে কয়দিন?",
+   "target": "週に何日ですか？"
+  },
+  {
+   "source": "Plan তৈরি করুন",
+   "target": "プランを作成する"
+  },
+  {
+   "source": "আপনার Plan",
+   "target": "あなたのプラン"
+  },
+  {
+   "source": "তথ্য দিয়ে “Plan তৈরি করুন” চাপুন।",
+   "target": "情報を入力して「プランを作成する」を押してください。"
+  },
+  {
+   "source": "📝 আমার ভুল খাতা",
+   "target": "📝 私の間違いノート"
+  },
+  {
+   "source": "Flashcard ও Survival Simulator-এর ভুল এখানে নিজে থেকেই জমবে। Manual note-ও যোগ করতে পারবেন।",
+   "target": "フラッシュカードとSurvival Simulatorの間違いはここに自動的に集まります。手動でメモを追加することもできます。"
+  },
+  {
+   "source": "সঠিক অর্থ / উত্তর",
+   "target": "正しい意味 / 答え"
+  },
+  {
+   "source": "+ ভুল খাতায় যোগ করুন",
+   "target": "+ 間違いノートに追加する"
+  },
+  {
+   "source": "সব মুছুন",
+   "target": "すべて削除"
+  },
+  {
+   "source": "কাজের সময়, salary, transport, budget, address, emergency phrase ও city-office checklist—এক জায়গায়।",
+   "target": "仕事の時間、給料、交通費、予算、住所、緊急フレーズ、市役所チェックリスト—すべて1か所に。"
+  },
+  {
+   "source": "সব baito/part-time job মিলিয়ে shift যোগ করুন। সাধারণ term-এ weekly total দেখাবে। Official school long vacation mode-এ প্রতিদিন 8-hour check করবে।",
+   "target": "すべてのバイト／パートタイムの仕事を合わせてシフトを追加してください。通常学期では週間合計が表示されます。公式の学校長期休暇モードでは毎日8時間チェックを行います。"
+  },
+  {
+   "source": "+ Shift যোগ করুন",
+   "target": "+ シフトを追加する"
+  },
+  {
+   "source": "এই tracker কেবল হিসাবের সহায়ক। আপনার residence card/資格外活動許可-এর শর্তই চূড়ান্ত। সাধারণ comprehensive permission-এ সপ্তাহে 28 ঘণ্টা; স্কুলের নিয়মে নির্ধারিত long vacation-এ দিনে 8 ঘণ্টা পর্যন্ত।",
+   "target": "このトラッカーは計算の補助にすぎません。あなたの在留カード／資格外活動許可の条件が最終的なものです。通常の包括許可では週28時間、学校の規則で定められた長期休暇では1日8時間までです。"
+  },
+  {
+   "source": "হিসাব করুন",
+   "target": "計算する"
+  },
+  {
+   "source": "Gross estimate only—tax, insurance, overtime premium ইত্যাদি এখানে ধরা হয়নি।",
+   "target": "総額の見積もりのみ—税金、保険、残業割増などはここでは含まれていません。"
+  },
+  {
+   "source": "Romaji নামকে approximate Katakana-তে convert করবে। Official form-এ দেওয়ার আগে school/city office-এ spelling confirm করুন।",
+   "target": "ローマ字の名前をおおよそのカタカナに変換します。公式フォームに提出する前に、学校／市役所で綴りを確認してください。"
+  },
+  {
+   "source": "Katakana করুন",
+   "target": "カタカナにする"
+  },
+  {
+   "source": "অ্যাম্বুলেন্স ডাকুন",
+   "target": "救急車を呼んでください"
+  },
+  {
+   "source": "পুলিশ ডাকুন",
+   "target": "警察を呼んでください"
+  },
+  {
+   "source": "সাহায্য করুন",
+   "target": "助けてください"
+  },
+  {
+   "source": "জাপানিজ ভালো বুঝি না",
+   "target": "日本語がよく分かりません"
+  },
+  {
+   "source": "Police emergency 110-এর তথ্য Japan National Police Agency-এর official guidance-এ আছে।",
+   "target": "警察の緊急通報110に関する情報は、日本の警察庁の公式ガイダンスにあります。"
+  },
+  {
+   "source": "নতুন address নির্ধারণ/বাসা পরিবর্তনের পর প্রয়োজনীয় municipal procedure check করুন।",
+   "target": "新しい住所の決定／引っ越し後に必要な市区町村の手続きを確認してください。"
+  },
+  {
+   "source": "আপনার অবস্থার জন্য city/ward office-এ applicable health insurance procedure confirm করুন।",
+   "target": "あなたの状況について、市役所／区役所で該当する健康保険の手続きを確認してください。"
+  },
+  {
+   "source": "My Number-related notice/card procedure check করুন।",
+   "target": "マイナンバー関連の通知／カードの手続きを確認してください。"
+  },
+  {
+   "source": "Language school/university-কে নতুন address জানান।",
+   "target": "語学学校／大学に新しい住所を知らせてください。"
+  },
+  {
+   "source": "Immigration Services Agency অনুযায়ী mid-to-long-term resident-এর নতুন residence address notification সাধারণত residence নির্ধারণ/নতুন residence-এ move করার 14 দিনের মধ্যে municipal office-এ করতে হয়।",
+   "target": "出入国在留管理庁によると、中長期在留者の新しい住所の届出は、通常、住所を定めた／新しい住所に引っ越した日から14日以内に市区町村の窓口で行う必要があります。"
+  },
+  {
+   "source": "আপনার নিহোন · Student Power Tools · Data এই browser/device-এর localStorage-এ save হয়।",
+   "target": "আপনার নিহোন · Student Power Tools · データはこのブラウザ／デバイスのlocalStorageに保存されます。"
+  }
+ ]
+}

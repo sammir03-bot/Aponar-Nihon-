@@ -1,0 +1,438 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "my",
+ "page": "japan-emergency-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জরুরি সহায়তা ও নিরাপত্তা | আপনার নিহোন",
+   "target": "အရေးပေါ် အကူအညီနှင့် ဘေးကင်းရေး | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "ဂျပန်ဘဝလမ်းညွှန်"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "လမ်းညွှန်အားလုံး"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "ရောက်ရှိပြီးနောက်"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "နေအိမ်နှင့် နေ့စဉ်ဘဝ"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "ရထားနှင့် Platform"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Google Maps အသုံးပြုပုံ"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "အချိန်ပိုင်းအလုပ်"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "အရေးပေါ်အကူအညီ"
+  },
+  {
+   "source": "জরুরি সহায়তা ও নিরাপত্তা",
+   "target": "အရေးပေါ် အကူအညီနှင့် ဘေးကင်းရေး"
+  },
+  {
+   "source": "110, 119, lost property, hospital, earthquake, typhoon ও emergency bag—জাপানে বিপদের সময় কী করবেন তা স্পষ্ট গাইড।",
+   "target": "110, 119, lost property, hospital, earthquake, typhoon နှင့် emergency bag—ဂျပန်တွင် အန္တရာယ်ကြုံချိန် ဘာလုပ်ရမည်ကို ရှင်းလင်းသော လမ်းညွှန်။"
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "ဘင်္ဂါလီရှင်းလင်းချက်"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "ဂျပန်စာကြောင်းများ"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "လက်တွေ့အဆင့်များ"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "သင်၏တိုးတက်မှု"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 ပြီးစီး"
+  },
+  {
+   "source": "নম্বর",
+   "target": "နံပါတ်"
+  },
+  {
+   "source": "হারানো",
+   "target": "ပျောက်ဆုံးခြင်း"
+  },
+  {
+   "source": "তিনটি জরুরি নম্বর মুখস্থ করুন",
+   "target": "အရေးပေါ်နံပါတ် သုံးခုကို အလွတ်ကျက်ပါ"
+  },
+  {
+   "source": "কোন পরিস্থিতিতে কোন নম্বর",
+   "target": "ဘယ်အခြေအနေတွင် ဘယ်နံပါတ်"
+  },
+  {
+   "source": "সমুদ্র দুর্ঘটনা",
+   "target": "ပင်လယ်မတော်တဆမှု"
+  },
+  {
+   "source": "ফোনে প্রথমে কী বলবেন",
+   "target": "ဖုန်းဖြင့် ပထမဦးစွာ ဘာပြောရမလဲ"
+  },
+  {
+   "source": "কী হয়েছে → কোথায় → কয়জন → আপনার নাম/ফোন। Location না জানলে nearby building, station, shop sign বা map address পড়ুন।",
+   "target": "ဘာဖြစ်ခဲ့လဲ → ဘယ်မှာလဲ → ဘယ်နှစ်ယောက်လဲ → သင့်အမည်/ဖုန်း။ Location မသိလျှင် nearby building, station, shop sign သို့မဟုတ် map address ကို ဖတ်ပါ။"
+  },
+  {
+   "source": "শান্তভাবে ছোট বাক্যে বলুন",
+   "target": "စိတ်ငြိမ်ငြိမ်ဖြင့် ဝါကျတိုများဖြင့် ပြောပါ"
+  },
+  {
+   "source": "অ্যাম্বুলেন্স দরকার।",
+   "target": "လူနာတင်ယာဉ် လိုအပ်သည်။"
+  },
+  {
+   "source": "আগুন লেগেছে।",
+   "target": "မီးလောင်နေသည်။"
+  },
+  {
+   "source": "দুর্ঘটনা হয়েছে।",
+   "target": "မတော်တဆမှု ဖြစ်ခဲ့သည်။"
+  },
+  {
+   "source": "স্থানটি ○○।",
+   "target": "နေရာမှာ ○○ ဖြစ်သည်။"
+  },
+  {
+   "source": "আমি বেশি জাপানি বলতে পারি না।",
+   "target": "ကျွန်တော် ဂျပန်စကား သိပ်မပြောတတ်ပါ။"
+  },
+  {
+   "source": "ইংরেজি দোভাষী চাই।",
+   "target": "အင်္ဂလိပ် စကားပြန် လိုချင်သည်။"
+  },
+  {
+   "source": "কল কেটে দেবেন না",
+   "target": "ဖုန်းကို မချပါနှင့်"
+  },
+  {
+   "source": "Operator প্রশ্ন করবে। Location sharing/GPS চালু রাখুন এবং নির্দেশ না দেওয়া পর্যন্ত line-এ থাকুন।",
+   "target": "Operator က မေးခွန်းများ မေးလိမ့်မည်။ Location sharing/GPS ကို ဖွင့်ထားပြီး ညွှန်ကြားချက်မရမချင်း line ပေါ်တွင် နေပါ။"
+  },
+  {
+   "source": "জিনিস হারালে কী করবেন",
+   "target": "ပစ္စည်းပျောက်လျှင် ဘာလုပ်ရမလဲ"
+  },
+  {
+   "source": "Train, road ও দোকান—ভিন্ন পথ",
+   "target": "Train, road နှင့် ဆိုင်—မတူညီသော လမ်းကြောင်းများ"
+  },
+  {
+   "source": "ট্রেন/স্টেশনে হারালে station staff",
+   "target": "ရထား/ဘူတာရုံတွင် ပျောက်လျှင် station staff"
+  },
+  {
+   "source": "Line, train time, car number, ওঠা/নামা station, item color বলুন। Receipt/serial থাকলে দেখান।",
+   "target": "Line, train time, car number, တက်/ဆင်း station, item color ကို ပြောပါ။ Receipt/serial ရှိလျှင် ပြပါ။"
+  },
+  {
+   "source": "রাস্তা বা public place-এ হারালে Koban",
+   "target": "လမ်း သို့မဟုတ် public place တွင် ပျောက်လျှင် Koban"
+  },
+  {
+   "source": "交番（こうばん） বা police station-এ 遺失届（いしつとどけ） করুন।",
+   "target": "交番（こうばん） သို့မဟုတ် police station တွင် 遺失届（いしつとどけ） လုပ်ပါ။"
+  },
+  {
+   "source": "Phone হারালে remote lock",
+   "target": "Phone ပျောက်လျှင် remote lock"
+  },
+  {
+   "source": "Find My Device/Find My iPhone, SIM suspension, payment app lock ও police report করুন।",
+   "target": "Find My Device/Find My iPhone, SIM suspension, payment app lock နှင့် police report လုပ်ပါ။"
+  },
+  {
+   "source": "Residence Card হারালে দ্রুত ব্যবস্থা",
+   "target": "Residence Card ပျောက်လျှင် အမြန်ဆောင်ရွက်ပါ"
+  },
+  {
+   "source": "Police report-এর পর Immigration reissuance procedure অনুসরণ করুন; official deadline আছে।",
+   "target": "Police report ပြီးနောက် Immigration reissuance procedure ကို လိုက်နာပါ; official deadline ရှိသည်။"
+  },
+  {
+   "source": "মানিব্যাগ হারিয়েছি।",
+   "target": "ပိုက်ဆံအိတ် ပျောက်သွားခဲ့သည်။"
+  },
+  {
+   "source": "ট্রেনের ভেতরে ফেলে এসেছি।",
+   "target": "ရထားအတွင်းတွင် ထားခဲ့မိသည်။"
+  },
+  {
+   "source": "Lost property report করতে চাই।",
+   "target": "Lost property report လုပ်ချင်သည်။"
+  },
+  {
+   "source": "অসুস্থতা ও Hospital",
+   "target": "နာမကျန်းမှုနှင့် Hospital"
+  },
+  {
+   "source": "Emergency ও non-emergency আলাদা করুন",
+   "target": "Emergency နှင့် non-emergency ကို ခွဲခြားပါ"
+  },
+  {
+   "source": "জীবন-ঝুঁকি হলে 119",
+   "target": "အသက်အန္တရာယ်ရှိလျှင် 119"
+  },
+  {
+   "source": "শ্বাস নিতে না পারা, অচেতন, গুরুতর রক্তপাত, severe injury ইত্যাদিতে দেরি করবেন না।",
+   "target": "အသက်ရှူမရခြင်း၊ သတိလစ်ခြင်း၊ ပြင်းထန်သော သွေးထွက်ခြင်း၊ severe injury စသည်တို့တွင် မနှောင့်နှေးပါနှင့်။"
+  },
+  {
+   "source": "Non-emergency হলে clinic/hospital",
+   "target": "Non-emergency ဖြစ်လျှင် clinic/hospital"
+  },
+  {
+   "source": "Department search করুন: 内科 internal medicine, 外科 surgery, 歯科 dental, 皮膚科 dermatology।",
+   "target": "Department search လုပ်ပါ: 内科 internal medicine, 外科 surgery, 歯科 dental, 皮膚科 dermatology။"
+  },
+  {
+   "source": "সঙ্গে নিন",
+   "target": "ယူဆောင်သွားရမည့်အရာများ"
+  },
+  {
+   "source": "লক্ষণ লিখে দেখান",
+   "target": "လက္ခဏာများကို ရေးပြီး ပြပါ"
+  },
+  {
+   "source": "কখন শুরু, কোথায় ব্যথা, fever, allergy, current medicine—phone note-এ রাখুন।",
+   "target": "ဘယ်အချိန်စခဲ့လဲ၊ ဘယ်နေရာ နာလဲ၊ fever, allergy, current medicine—phone note တွင် ထားပါ။"
+  },
+  {
+   "source": "বুকে ব্যথা এবং শ্বাসকষ্ট হচ্ছে।",
+   "target": "ရင်ဘတ်နာပြီး အသက်ရှူကြပ်နေသည်။"
+  },
+  {
+   "source": "তিন দিন ধরে জ্বর আছে।",
+   "target": "သုံးရက်ကြာ အဖျားရှိနေသည်။"
+  },
+  {
+   "source": "এই ওষুধে আমার allergy আছে।",
+   "target": "ဒီဆေးနှင့် ကျွန်တော့်မှာ allergy ရှိသည်။"
+  },
+  {
+   "source": "ভূমিকম্প, আগুন ও Typhoon",
+   "target": "ငလျင်၊ မီးနှင့် Typhoon"
+  },
+  {
+   "source": "প্রথম ১০ মিনিটের সিদ্ধান্ত",
+   "target": "ပထမ 10 မိနစ်အတွင်း ဆုံးဖြတ်ချက်များ"
+  },
+  {
+   "source": "ঘটনা",
+   "target": "ဖြစ်ရပ်"
+  },
+  {
+   "source": "সঙ্গে সঙ্গে",
+   "target": "ချက်ချင်း"
+  },
+  {
+   "source": "পরে",
+   "target": "နောက်"
+  },
+  {
+   "source": "ভূমিকম্প",
+   "target": "ငလျင်"
+  },
+  {
+   "source": "মাথা ঢাকুন, নিচু হন, শক্ত table-এর নিচে",
+   "target": "ဦးခေါင်းကို ဖုံးအုပ်ပါ၊ နှိမ့်ချပါ၊ ခိုင်မာသော table အောက်တွင် နေပါ"
+  },
+  {
+   "source": "আগুন/গ্যাস check, official alert, safe route",
+   "target": "မီး/ဓာတ်ငွေ့ check, official alert, safe route"
+  },
+  {
+   "source": "আগুন",
+   "target": "မီး"
+  },
+  {
+   "source": "জোরে 火事, alarm, 119",
+   "target": "အသံကျယ်ကျယ် 火事, alarm, 119"
+  },
+  {
+   "source": "ধোঁয়ার নিচে থেকে exit; lift নয়",
+   "target": "မီးခိုးအောက်မှ နေပြီး exit; lift မဟုတ်ပါ"
+  },
+  {
+   "source": "Weather/evacuation alert দেখুন",
+   "target": "Weather/evacuation alert ကို ကြည့်ပါ"
+  },
+  {
+   "source": "নদী/underground area এড়ান",
+   "target": "မြစ်/underground area ကို ရှောင်ပါ"
+  },
+  {
+   "source": "সমুদ্র/নদীর মোহনা থেকে উঁচু স্থানে",
+   "target": "ပင်လယ်/မြစ်ဝ မှ မြင့်သောနေရာသို့"
+  },
+  {
+   "source": "Official all-clear না হওয়া পর্যন্ত ফিরবেন না",
+   "target": "Official all-clear မရမချင်း ပြန်မသွားပါနှင့်"
+  },
+  {
+   "source": "Evacuation level-এর ভাষা শিখুন",
+   "target": "Evacuation level ၏ ဘာသာစကားကို သင်ယူပါ"
+  },
+  {
+   "source": "কমপক্ষে ৩ দিনের basic প্রস্তুতি",
+   "target": "အနည်းဆုံး 3 ရက်စာ basic ပြင်ဆင်မှု"
+  },
+  {
+   "source": "পানি",
+   "target": "ရေ"
+  },
+  {
+   "source": "ব্যক্তি ও পরিস্থিতি অনুযায়ী",
+   "target": "လူနှင့် အခြေအနေအလိုက်"
+  },
+  {
+   "source": "খাবার",
+   "target": "အစားအစာ"
+  },
+  {
+   "source": "নিজের prescription",
+   "target": "ကိုယ်ပိုင် prescription"
+  },
+  {
+   "source": "Passport, Residence Card, insurance, contact ও address—waterproof pouch-এ copy।",
+   "target": "Passport, Residence Card, insurance, contact နှင့် address—waterproof pouch တွင် copy ထားပါ။"
+  },
+  {
+   "source": "Cash ও light",
+   "target": "Cash နှင့် light"
+  },
+  {
+   "source": "ছোট note/coin, flashlight, batteries, whistle।",
+   "target": "ငွေစက္ကူသေး/အကြွေစေ့၊ flashlight, batteries, whistle။"
+  },
+  {
+   "source": "171 জানা রাখুন",
+   "target": "171 ကို သိထားပါ"
+  },
+  {
+   "source": "বড় দুর্যোগে Disaster Emergency Message Dial 171 চালু হতে পারে; voice prompt Japanese। আগে family plan ঠিক করুন।",
+   "target": "ကြီးမားသော ဘေးအန္တရာယ်တွင် Disaster Emergency Message Dial 171 ကို ဖွင့်နိုင်သည်; voice prompt သည် Japanese ဖြစ်သည်။ ကြိုတင်၍ family plan ကို သတ်မှတ်ပါ။"
+  },
+  {
+   "source": "নিজের Emergency Card বানান",
+   "target": "ကိုယ်ပိုင် Emergency Card ဖန်တီးပါ"
+  },
+  {
+   "source": "Phone lock screen বা wallet-এ রাখুন",
+   "target": "Phone lock screen သို့မဟုတ် wallet တွင် ထားပါ"
+  },
+  {
+   "source": "নাম",
+   "target": "အမည်"
+  },
+  {
+   "source": "আপনার নাম লিখুন",
+   "target": "သင့်အမည်ကို ရေးပါ"
+  },
+  {
+   "source": "ঠিকানা",
+   "target": "လိပ်စာ"
+  },
+  {
+   "source": "Japanese address লিখুন",
+   "target": "Japanese address ကို ရေးပါ"
+  },
+  {
+   "source": "নাম ও ফোন",
+   "target": "အမည်နှင့် ဖုန်း"
+  },
+  {
+   "source": "যোগাযোগ নম্বর",
+   "target": "ဆက်သွယ်ရန် နံပါတ်"
+  },
+  {
+   "source": "না থাকলে なし",
+   "target": "မရှိလျှင် なし"
+  },
+  {
+   "source": "প্রয়োজনীয় তথ্য",
+   "target": "လိုအပ်သော အချက်အလက်"
+  },
+  {
+   "source": "Print / PDF করুন",
+   "target": "Print / PDF လုပ်ပါ"
+  },
+  {
+   "source": "আজই প্রস্তুত করুন",
+   "target": "ယနေ့ပင် ပြင်ဆင်ပါ"
+  },
+  {
+   "source": "110, 119 ও নিজের address মুখস্থ/Save করেছি",
+   "target": "110, 119 နှင့် ကိုယ်ပိုင် address ကို အလွတ်ကျက်/Save လုပ်ပြီးပြီ"
+  },
+  {
+   "source": "School/company emergency contact save করেছি",
+   "target": "School/company emergency contact ကို save လုပ်ပြီးပြီ"
+  },
+  {
+   "source": "Nearest hospital, koban ও shelter map-এ save করেছি",
+   "target": "Nearest hospital, koban နှင့် shelter ကို map တွင် save လုပ်ပြီးပြီ"
+  },
+  {
+   "source": "Emergency bag প্রস্তুত করেছি",
+   "target": "Emergency bag ပြင်ဆင်ပြီးပြီ"
+  },
+  {
+   "source": "Phone remote-find ও lock চালু করেছি",
+   "target": "Phone remote-find နှင့် lock ကို ဖွင့်ပြီးပြီ"
+  },
+  {
+   "source": "Family-এর সঙ্গে disaster contact plan করেছি",
+   "target": "Family နှင့် disaster contact plan လုပ်ပြီးပြီ"
+  },
+  {
+   "source": "Residence Card/passport copy নিরাপদে রেখেছি",
+   "target": "Residence Card/passport copy ကို လုံခြုံစွာ ထားပြီးပြီ"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "အစိုးရနှင့် ယုံကြည်စိတ်ချရသော ရင်းမြစ်များ"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "စည်းမျဉ်းများ ပြောင်းလဲနိုင်ပါသည်— နောက်ဆုံး ဆုံးဖြတ်ချက်မချမီ တရားဝင်အချက်အလက်များကို ကြည့်ရှုပါ"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "ဤလမ်းညွှန်သည် သင်ယူမှုအတွက် အထောက်အကူပြုပါသည်။ ကိုယ်ရေးကိုယ်တာ ဥပဒေဆိုင်ရာ/ဆေးဘက်ဆိုင်ရာ ဆုံးဖြတ်ချက်များအတွက် သက်ဆိုင်ရာရုံး သို့မဟုတ် ပညာရှင်များ၏ ညွှန်ကြားချက်ကို လိုက်နာပါ။"
+  },
+  {
+   "source": "হোম",
+   "target": "ပင်မစာမျက်နှာ"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "listening-lab",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Listening Hub · 800 অডিও অনুশীলন | আপনার নিহোন",
+   "target": "Listening Hub · 800 bài luyện nghe | আপনার নিহোন"
+  },
+  {
+   "source": "মূল লেখায় যান",
+   "target": "Đi đến bài viết gốc"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "শুনুন। উত্তর দিন। বুঝে শিখুন।",
+   "target": "Nghe. Trả lời. Học bằng cách hiểu."
+  },
+  {
+   "source": "৮০০টি রেকর্ড করা অনুশীলন। আপনার দেওয়া JapaneseTest4You উৎসের ২০৮টি প্রশ্ন এবং আপনার নিহোনের ৫৯২টি নিজস্ব অডিও প্রশ্ন। প্রতিটিতে সঠিক উত্তর ও বাংলায় কারণ আছে।",
+   "target": "800 bài luyện tập đã ghi âm. 208 câu hỏi từ nguồn JapaneseTest4You do bạn cung cấp và 592 câu hỏi audio riêng của আপনার নিহোন. Mỗi câu đều có đáp án đúng và lý do bằng tiếng Việt."
+  },
+  {
+   "source": "অডিও + ফুরিগানা",
+   "target": "Audio + Furigana"
+  },
+  {
+   "source": "আপনার লেভেল",
+   "target": "Level của bạn"
+  },
+  {
+   "source": "প্রশ্নের উৎস",
+   "target": "Nguồn câu hỏi"
+  },
+  {
+   "source": "সব উৎস",
+   "target": "Tất cả nguồn"
+  },
+  {
+   "source": "আপনার নিহোন · নিজস্ব",
+   "target": "আপনার নিহোন · Riêng"
+  },
+  {
+   "source": "অনুশীলন",
+   "target": "Bài tập"
+  },
+  {
+   "source": "সব অনুশীলন",
+   "target": "Tất cả bài luyện tập"
+  },
+  {
+   "source": "এখনো উত্তর দিইনি",
+   "target": "Chưa trả lời"
+  },
+  {
+   "source": "ভুলগুলো আবার",
+   "target": "Lại những câu sai"
+  },
+  {
+   "source": "রাখা প্রশ্ন",
+   "target": "Câu hỏi đã lưu"
+  },
+  {
+   "source": "লিসেনিং লোড হচ্ছে…",
+   "target": "Đang tải listening…"
+  },
+  {
+   "source": "পাঠের তালিকা",
+   "target": "Danh sách bài học"
+  },
+  {
+   "source": "প্রশ্ন খুঁজুন",
+   "target": "Tìm câu hỏi"
+  },
+  {
+   "source": "আরও পাঠ দেখুন",
+   "target": "Xem thêm bài học"
+  },
+  {
+   "source": "শুনে শেখার ছোট রুটিন",
+   "target": "Thói quen nhỏ để học bằng cách nghe"
+  },
+  {
+   "source": "ছবি বা বিকল্প দেখে কী তথ্য খুঁজবেন বুঝুন। একবার স্বাভাবিক গতিতে শুনুন।",
+   "target": "Nhìn hình ảnh hoặc các lựa chọn để hiểu bạn cần tìm thông tin gì. Nghe một lần với tốc độ tự nhiên."
+  },
+  {
+   "source": "উত্তর বেছে “উত্তর যাচাই” করুন। ভুল হলে কোন সিদ্ধান্ত, সময় বা পরিবর্তন মিস হয়েছে দেখুন।",
+   "target": "Chọn đáp án và “Kiểm tra đáp án”. Nếu sai, xem bạn đã bỏ lỡ quyết định, thời gian hay thay đổi nào."
+  },
+  {
+   "source": "ফুরিগানাসহ স্ক্রিপ্ট খুলে অডিও আবার শুনুন। নিজের মুখে একটি ছোট অংশ বলুন।",
+   "target": "Mở script kèm furigana và nghe lại audio. Tự nói một đoạn ngắn bằng miệng."
+  },
+  {
+   "source": "ভুল প্রশ্ন “ভুলগুলো আবার” তালিকায় থাকবে। পরে ঠিক করলে তালিকা থেকে সরবে।",
+   "target": "Các câu hỏi sai sẽ nằm trong danh sách “Lại những câu sai”. Sau này khi làm đúng, chúng sẽ rời khỏi danh sách."
+  },
+  {
+   "source": "JapaneseTest4You প্রশ্নে মূল রেকর্ডিং ও উৎসের লিংক আছে। নিজস্ব প্রশ্নে রেকর্ড করা জাপানি যন্ত্রকণ্ঠ (VOICEVOX) ব্যবহার করা হয়েছে। নিজস্ব প্রশ্নে সম্পূর্ণ বাংলা স্ক্রিপ্ট; উৎসের প্রশ্নে বাংলা উত্তর ও ব্যাখ্যা আছে। একই প্রশ্ন Mock Test-এও ব্যবহার করা হয়েছে।",
+   "target": "Các câu hỏi của JapaneseTest4You có bản ghi gốc và link nguồn. Các câu hỏi riêng sử dụng giọng máy tiếng Nhật đã ghi âm (VOICEVOX). Câu hỏi riêng có script đầy đủ bằng tiếng Việt; câu hỏi từ nguồn có đáp án và giải thích bằng tiếng Việt. Cùng câu hỏi này cũng đã được dùng trong Mock Test."
+  },
+  {
+   "source": "মিশ্র Revision →",
+   "target": "Revision hỗn hợp →"
+  },
+  {
+   "source": "আগের ৬০টি সহায়ক পাঠ →",
+   "target": "60 bài học hỗ trợ trước đây →"
+  },
+  {
+   "source": "আপনার নিহোন · সহজ জাপানি, ফুরিগানা ও বাংলা দিয়ে প্রতিদিন অনুশীলন।",
+   "target": "আপনার নিহোন · Luyện tập mỗi ngày với tiếng Nhật dễ hiểu, furigana và tiếng Bengal."
+  },
+  {
+   "source": "হোম",
+   "target": "Trang chủ"
+  },
+  {
+   "source": "প্রোফাইল",
+   "target": "Hồ sơ"
+  }
+ ]
+}

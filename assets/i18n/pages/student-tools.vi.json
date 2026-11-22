@@ -1,0 +1,214 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "student-tools",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Student Power Tools | আপনার নিহোন",
+   "target": "Student Power Tools | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "← হোম",
+   "target": "← Trang chủ"
+  },
+  {
+   "source": "পড়া, শোনা, JLPT প্রস্তুতি আর জাপানের দৈনন্দিন student life—সবকিছুর জন্য practical tools। আপনার progress এই device-এই save থাকবে।",
+   "target": "Công cụ thực tế cho mọi thứ: học, nghe, chuẩn bị JLPT và cuộc sống sinh viên hằng ngày ở Nhật Bản. Tiến độ của bạn sẽ được lưu trên thiết bị này."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "Giải thích bằng tiếng Bengali"
+  },
+  {
+   "source": "ভুল খাতা",
+   "target": "Sổ ghi lỗi sai"
+  },
+  {
+   "source": "Japanese sentence শুনুন, তারপর একই rhythm-এ repeat করুন। Normal/Slow speed দুটোই আছে।",
+   "target": "Nghe câu tiếng Nhật, sau đó lặp lại theo cùng nhịp điệu. Có cả tốc độ Normal/Slow."
+  },
+  {
+   "source": "← আগের",
+   "target": "← Trước"
+  },
+  {
+   "source": "পরের →",
+   "target": "Tiếp →"
+  },
+  {
+   "source": "Shadowing নিয়ম",
+   "target": "Quy tắc Shadowing"
+  },
+  {
+   "source": "১) আগে না দেখে ২ বার শুনুন। ২) Japanese text দেখে ১ বার শুনুন। ৩) audio-এর সঙ্গে সঙ্গে বলুন। ৪) শেষে text না দেখে বলুন।",
+   "target": "1) Nghe 2 lần trước mà không nhìn. 2) Nghe 1 lần trong khi nhìn văn bản tiếng Nhật. 3) Nói cùng lúc với âm thanh. 4) Cuối cùng nói mà không nhìn văn bản."
+  },
+  {
+   "source": "আজকের টার্গেট:",
+   "target": "Mục tiêu hôm nay:"
+  },
+  {
+   "source": "অন্তত 5 sentence × 3 repeat।",
+   "target": "Ít nhất 5 câu × 3 lần lặp lại."
+  },
+  {
+   "source": "Again / Hard / Good / Easy অনুযায়ী card-এর পরের review time বদলাবে।",
+   "target": "Thời gian ôn tập tiếp theo của thẻ sẽ thay đổi tùy theo Again / Hard / Good / Easy."
+  },
+  {
+   "source": "উত্তর দেখুন",
+   "target": "Xem đáp án"
+  },
+  {
+   "source": "আজকের Review",
+   "target": "Ôn tập hôm nay"
+  },
+  {
+   "source": "Starter deck-এ প্রয়োজনীয় N5 vocabulary রাখা হয়েছে। পরে আপনার existing vocabulary pages থেকে deck আরও বড় করা যাবে।",
+   "target": "Bộ thẻ Starter chứa từ vựng N5 cần thiết. Sau này bạn có thể mở rộng bộ thẻ từ các trang từ vựng hiện có của bạn."
+  },
+  {
+   "source": "コンビニ, 駅, 市役所, 病院—বাস্তব পরিস্থিতিতে কোন উত্তর দিতে হবে practice করুন। ভুল answer অটোমেটিক “ভুল খাতা”-য় যাবে।",
+   "target": "コンビニ, 駅, 市役所, 病院—luyện tập nên trả lời gì trong tình huống thực tế. Đáp án sai sẽ tự động vào “Sổ ghi lỗi sai”."
+  },
+  {
+   "source": "প্রতিটা ভুল answer পরে Mistake Notebook-এ review করতে পারবেন।",
+   "target": "Bạn có thể ôn lại mỗi đáp án sai sau này trong Mistake Notebook."
+  },
+  {
+   "source": "আবার শুরু",
+   "target": "Bắt đầu lại"
+  },
+  {
+   "source": "📅 আপনার পড়ার প্ল্যান",
+   "target": "📅 Kế hoạch học tập của bạn"
+  },
+  {
+   "source": "Level, exam date, প্রতিদিনের সময় দিলে weekly study plan তৈরি হবে। এখানে target সংখ্যা planning estimate—official JLPT syllabus নয়।",
+   "target": "Nếu bạn nhập trình độ, ngày thi và thời gian mỗi ngày, kế hoạch học tập hằng tuần sẽ được tạo. Số mục tiêu ở đây là ước tính lập kế hoạch—không phải chương trình JLPT chính thức."
+  },
+  {
+   "source": "প্রতিদিন কত মিনিট পড়বেন?",
+   "target": "Bạn sẽ học bao nhiêu phút mỗi ngày?"
+  },
+  {
+   "source": "সপ্তাহে কয়দিন?",
+   "target": "Mấy ngày mỗi tuần?"
+  },
+  {
+   "source": "Plan তৈরি করুন",
+   "target": "Tạo kế hoạch"
+  },
+  {
+   "source": "আপনার Plan",
+   "target": "Kế hoạch của bạn"
+  },
+  {
+   "source": "তথ্য দিয়ে “Plan তৈরি করুন” চাপুন।",
+   "target": "Nhập thông tin và nhấn “Tạo kế hoạch”."
+  },
+  {
+   "source": "📝 আমার ভুল খাতা",
+   "target": "📝 Sổ ghi lỗi sai của tôi"
+  },
+  {
+   "source": "Flashcard ও Survival Simulator-এর ভুল এখানে নিজে থেকেই জমবে। Manual note-ও যোগ করতে পারবেন।",
+   "target": "Lỗi sai từ Flashcard và Survival Simulator sẽ tự động tập hợp ở đây. Bạn cũng có thể thêm ghi chú thủ công."
+  },
+  {
+   "source": "সঠিক অর্থ / উত্তর",
+   "target": "Nghĩa / đáp án đúng"
+  },
+  {
+   "source": "+ ভুল খাতায় যোগ করুন",
+   "target": "+ Thêm vào sổ ghi lỗi sai"
+  },
+  {
+   "source": "সব মুছুন",
+   "target": "Xóa tất cả"
+  },
+  {
+   "source": "কাজের সময়, salary, transport, budget, address, emergency phrase ও city-office checklist—এক জায়গায়।",
+   "target": "Giờ làm việc, lương, đi lại, ngân sách, địa chỉ, câu khẩn cấp và danh sách kiểm tra tại văn phòng thành phố—tất cả ở một nơi."
+  },
+  {
+   "source": "সব baito/part-time job মিলিয়ে shift যোগ করুন। সাধারণ term-এ weekly total দেখাবে। Official school long vacation mode-এ প্রতিদিন 8-hour check করবে।",
+   "target": "Cộng các ca làm từ mọi baito/công việc làm thêm. Tổng hằng tuần sẽ hiển thị trong kỳ thông thường. Ở chế độ kỳ nghỉ dài chính thức của trường, sẽ kiểm tra 8 giờ mỗi ngày."
+  },
+  {
+   "source": "+ Shift যোগ করুন",
+   "target": "+ Thêm ca làm"
+  },
+  {
+   "source": "এই tracker কেবল হিসাবের সহায়ক। আপনার residence card/資格外活動許可-এর শর্তই চূড়ান্ত। সাধারণ comprehensive permission-এ সপ্তাহে 28 ঘণ্টা; স্কুলের নিয়মে নির্ধারিত long vacation-এ দিনে 8 ঘণ্টা পর্যন্ত।",
+   "target": "Công cụ theo dõi này chỉ hỗ trợ tính toán. Điều kiện trên thẻ cư trú/資格外活動許可 của bạn là quyết định cuối cùng. Với giấy phép toàn diện thông thường là 28 giờ mỗi tuần; trong kỳ nghỉ dài do trường quy định, tối đa 8 giờ mỗi ngày."
+  },
+  {
+   "source": "হিসাব করুন",
+   "target": "Tính toán"
+  },
+  {
+   "source": "Gross estimate only—tax, insurance, overtime premium ইত্যাদি এখানে ধরা হয়নি।",
+   "target": "Chỉ là ước tính tổng—thuế, bảo hiểm, phụ cấp làm thêm giờ, v.v. chưa được tính ở đây."
+  },
+  {
+   "source": "Romaji নামকে approximate Katakana-তে convert করবে। Official form-এ দেওয়ার আগে school/city office-এ spelling confirm করুন।",
+   "target": "Sẽ chuyển tên Romaji thành Katakana gần đúng. Trước khi điền vào biểu mẫu chính thức, hãy xác nhận cách viết tại trường/văn phòng thành phố."
+  },
+  {
+   "source": "Katakana করুন",
+   "target": "Chuyển sang Katakana"
+  },
+  {
+   "source": "অ্যাম্বুলেন্স ডাকুন",
+   "target": "Gọi xe cứu thương"
+  },
+  {
+   "source": "পুলিশ ডাকুন",
+   "target": "Gọi cảnh sát"
+  },
+  {
+   "source": "সাহায্য করুন",
+   "target": "Giúp tôi với"
+  },
+  {
+   "source": "জাপানিজ ভালো বুঝি না",
+   "target": "Tôi không hiểu tiếng Nhật tốt"
+  },
+  {
+   "source": "Police emergency 110-এর তথ্য Japan National Police Agency-এর official guidance-এ আছে।",
+   "target": "Thông tin về khẩn cấp cảnh sát 110 có trong hướng dẫn chính thức của Cơ quan Cảnh sát Quốc gia Nhật Bản."
+  },
+  {
+   "source": "নতুন address নির্ধারণ/বাসা পরিবর্তনের পর প্রয়োজনীয় municipal procedure check করুন।",
+   "target": "Sau khi xác định địa chỉ mới/thay đổi nhà, hãy kiểm tra thủ tục hành chính cần thiết."
+  },
+  {
+   "source": "আপনার অবস্থার জন্য city/ward office-এ applicable health insurance procedure confirm করুন।",
+   "target": "Xác nhận thủ tục bảo hiểm y tế áp dụng cho tình trạng của bạn tại văn phòng thành phố/quận."
+  },
+  {
+   "source": "My Number-related notice/card procedure check করুন।",
+   "target": "Kiểm tra thủ tục thông báo/thẻ liên quan đến My Number."
+  },
+  {
+   "source": "Language school/university-কে নতুন address জানান।",
+   "target": "Thông báo địa chỉ mới cho trường ngôn ngữ/đại học."
+  },
+  {
+   "source": "Immigration Services Agency অনুযায়ী mid-to-long-term resident-এর নতুন residence address notification সাধারণত residence নির্ধারণ/নতুন residence-এ move করার 14 দিনের মধ্যে municipal office-এ করতে হয়।",
+   "target": "Theo Cơ quan Dịch vụ Nhập cư, thông báo địa chỉ cư trú mới của cư dân trung và dài hạn thường phải thực hiện tại văn phòng hành chính trong vòng 14 ngày kể từ khi xác định nơi cư trú/chuyển đến nơi cư trú mới."
+  },
+  {
+   "source": "আপনার নিহোন · Student Power Tools · Data এই browser/device-এর localStorage-এ save হয়।",
+   "target": "আপনার নিহোন · Student Power Tools · Dữ liệu được lưu trong localStorage của trình duyệt/thiết bị này."
+  }
+ ]
+}

@@ -1,0 +1,138 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ne",
+ "page": "halal-scanner",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Halal Food Scanner | আপনার নিহোন",
+   "target": "Halal Food Scanner | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপানের খাবারের barcode scan করুন অথবা প্যাকেটের",
+   "target": "जापानको खानाको barcode scan गर्नुहोस् अथवा प्याकेटको"
+  },
+  {
+   "source": "লিখে ingredient check করুন। সন্দেহজনক উপাদান থাকলে কারণসহ দেখাবে—তথ্য না থাকলে কখনোই অনুমান করে “Halal” বলবে না।",
+   "target": "लेखेर ingredient check गर्नुहोस्। शंकास्पद सामग्री भए कारणसहित देखाउनेछ—जानकारी छैन भने कहिल्यै अनुमान गरेर “Halal” भन्ने छैन।"
+  },
+  {
+   "source": "Paid API নেই",
+   "target": "Paid API छैन"
+  },
+  {
+   "source": "History এই ডিভাইসেই",
+   "target": "History यही device मै"
+  },
+  {
+   "source": "ক্যামেরা চালু করে barcode সামনে ধরুন",
+   "target": "क्यामेरा खोलेर barcode अगाडि राख्नुहोस्"
+  },
+  {
+   "source": "ক্যামেরা permission শুধু scan করার সময় ব্যবহার হবে।",
+   "target": "क्यामेरा permission scan गर्ने बेलामा मात्र प्रयोग हुनेछ।"
+  },
+  {
+   "source": "স্ক্যান শুরু করতে নিচের button চাপুন",
+   "target": "scan सुरु गर्न तलको button थिच्नुहोस्"
+  },
+  {
+   "source": "ক্যামেরা দিয়ে স্ক্যান",
+   "target": "क्यामेराबाट scan"
+  },
+  {
+   "source": "ছবি থেকে",
+   "target": "तस्बिरबाट"
+  },
+  {
+   "source": "Barcode number লিখেও check করতে পারেন",
+   "target": "Barcode number लेखेर पनि check गर्न सक्नुहुन्छ"
+  },
+  {
+   "source": "Product data Open Food Facts-এর open database থেকে নেওয়া হয়। Database-এ product না থাকলে ingredient text দিয়ে check করুন।",
+   "target": "Product data Open Food Facts को open database बाट लिइन्छ। Database मा product छैन भने ingredient text दिएर check गर्नुहोस्।"
+  },
+  {
+   "source": "তথ্য যাচাই হচ্ছে",
+   "target": "जानकारी जाँच हुँदैछ"
+  },
+  {
+   "source": "Database-এর ingredient list",
+   "target": "Database को ingredient list"
+  },
+  {
+   "source": "copy করে paste করুন",
+   "target": "copy गरेर paste गर्नुहोस्"
+  },
+  {
+   "source": "Red — স্পষ্ট সমস্যা",
+   "target": "Red — स्पष्ट समस्या"
+  },
+  {
+   "source": "Pork/pig-derived বা alcohol-related ingredient signal পাওয়া গেছে।",
+   "target": "Pork/pig-derived वा alcohol-related ingredient signal फेला परेको छ।"
+  },
+  {
+   "source": "Yellow — উৎস যাচাই দরকার",
+   "target": "Yellow — स्रोत जाँच आवश्यक"
+  },
+  {
+   "source": "Gelatin, emulsifier, shortening-এর মতো source-dependent ingredient।",
+   "target": "Gelatin, emulsifier, shortening जस्ता source-dependent ingredient।"
+  },
+  {
+   "source": "Green — স্পষ্ট signal মেলেনি",
+   "target": "Green — स्पष्ट signal भेटिएन"
+  },
+  {
+   "source": "এটা Halal certification নয়; package/certifier দিয়ে final check করুন।",
+   "target": "यो Halal certification होइन; package/certifier बाट final check गर्नुहोस्।"
+  },
+  {
+   "source": "শেষ ১০টি result · শুধু এই device-এ",
+   "target": "पछिल्ला 10 वटा result · यही device मा मात्र"
+  },
+  {
+   "source": "সব মুছুন",
+   "target": "सबै मेट्नुहोस्"
+  },
+  {
+   "source": "গুরুত্বপূর্ণ:",
+   "target": "महत्त्वपूर्ण:"
+  },
+  {
+   "source": "এই scanner ingredient text-এর rule-based screening করে; এটি কোনো মুফতি, halal certifier বা official certification-এর বিকল্প নয়। Recipe, supplier ও ingredient source বদলাতে পারে—সন্দেহ থাকলে প্যাকেটের certification এবং manufacturer-এর তথ্য যাচাই করুন। Product data community-maintained Open Food Facts থেকে আসে, তাই তথ্য অসম্পূর্ণ বা ভুল হতে পারে।",
+   "target": "यो scanner ले ingredient text को rule-based screening गर्छ; यो कुनै मुफ्ती, halal certifier वा official certification को विकल्प होइन। Recipe, supplier र ingredient source बदलिन सक्छ—शंका भए प्याकेटको certification र manufacturer को जानकारी जाँच गर्नुहोस्। Product data community-maintained Open Food Facts बाट आउँछ, त्यसैले जानकारी अपूर्ण वा गलत हुन सक्छ।"
+  },
+  {
+   "source": "ভুল result রিপোর্ট করুন",
+   "target": "गलत result रिपोर्ट गर्नुहोस्"
+  },
+  {
+   "source": "যোগাযোগ",
+   "target": "सम्पर्क"
+  },
+  {
+   "source": "তথ্য:",
+   "target": "जानकारी:"
+  },
+  {
+   "source": "· Scanner: ZXing · © ২০২৬ আপনার নিহোন",
+   "target": "· Scanner: ZXing · © 2026 আপনার নিহোন"
+  },
+  {
+   "source": "হোম",
+   "target": "होम"
+  },
+  {
+   "source": "হালাল স্ক্যান",
+   "target": "हलाल स्क्यान"
+  }
+ ]
+}

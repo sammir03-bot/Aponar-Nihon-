@@ -1,0 +1,142 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ja",
+ "page": "part-time-cv-builder",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "পার্ট-টাইম Japanese CV",
+   "target": "パートタイム Japanese CV"
+  },
+  {
+   "source": "আপনার দেওয়া 履歴書 form-এর structure অনুযায়ী। Japanese label-এর নিচে বাংলা explanation থাকবে; final CV/PDF হবে clean Japanese format.",
+   "target": "あなたが提供した 履歴書 form の structure に従っています。Japanese label の下にベンガル語の explanation があります。final CV/PDF は clean な Japanese format になります。"
+  },
+  {
+   "source": "(স্কুলের সময়),",
+   "target": "(学校の時間)、"
+  },
+  {
+   "source": "(কাজ শুরুর তারিখ) এবং",
+   "target": "(仕事開始日)と"
+  },
+  {
+   "source": "আলাদা করে রাখা হয়েছে।",
+   "target": "別々に保持されています。"
+  },
+  {
+   "source": "ব্যক্তিগত তথ্য",
+   "target": "個人情報"
+  },
+  {
+   "source": "ছবি নির্বাচন",
+   "target": "写真を選択"
+  },
+  {
+   "source": "সাধারণত 4cm × 3cm portrait photo ব্যবহার করুন।",
+   "target": "通常は 4cm × 3cm の portrait photo を使用してください。"
+  },
+  {
+   "source": "নামের হিরাগানা/ফুরিগানা",
+   "target": "名前のひらがな/ふりがな"
+  },
+  {
+   "source": "পুরো নাম",
+   "target": "氏名"
+  },
+  {
+   "source": "জন্মতারিখ",
+   "target": "生年月日"
+  },
+  {
+   "source": "লিঙ্গ — ঐচ্ছিক",
+   "target": "性別 — 任意"
+  },
+  {
+   "source": "ঠিকানার হিরাগানা",
+   "target": "住所のひらがな"
+  },
+  {
+   "source": "পোস্টাল কোড",
+   "target": "郵便番号"
+  },
+  {
+   "source": "CV-এর তারিখ — আজকের তারিখ নিজে বসবে",
+   "target": "CV の日付 — 今日の日付が自動で入ります"
+  },
+  {
+   "source": "বর্তমান ঠিকানা",
+   "target": "現住所"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "メールアドレス"
+  },
+  {
+   "source": "ফোন নম্বর",
+   "target": "電話番号"
+  },
+  {
+   "source": "/ শিক্ষা ও কাজ",
+   "target": "/ 学歴と職歴"
+  },
+  {
+   "source": "＋ নতুন লাইন",
+   "target": "＋ 新しい行"
+  },
+  {
+   "source": "/ যোগ্যতা",
+   "target": "/ 資格"
+  },
+  {
+   "source": "＋ যোগ্যতা যোগ করুন",
+   "target": "＋ 資格を追加"
+  },
+  {
+   "source": "আবেদন ও কাজের সময়",
+   "target": "応募と勤務時間"
+  },
+  {
+   "source": "কেন এই কাজ করতে চান, skill ও ভালো দিক",
+   "target": "なぜこの仕事をしたいのか、skill と長所"
+  },
+  {
+   "source": "নতুন Student",
+   "target": "新しい Student"
+  },
+  {
+   "source": "🏫 স্কুলের সময় ও কাজ শুরুর তারিখ",
+   "target": "🏫 学校の時間と仕事開始日"
+  },
+  {
+   "source": "কোন দিন স্কুল থাকে",
+   "target": "学校がある曜日"
+  },
+  {
+   "source": "স্কুল শুরু",
+   "target": "学校開始"
+  },
+  {
+   "source": "স্কুল শেষ",
+   "target": "学校終了"
+  },
+  {
+   "source": "কোন তারিখ থেকে কাজ শুরু করতে পারবেন",
+   "target": "どの日から仕事を始められますか"
+  },
+  {
+   "source": "স্কুলের দিন ও সময় দিলে Japanese sentence এখানে তৈরি হবে।",
+   "target": "学校の曜日と時間を入力すると、ここに Japanese sentence が作成されます。"
+  },
+  {
+   "source": "যে দিন/সময় কাজ করতে পারবেন",
+   "target": "働ける曜日/時間"
+  },
+  {
+   "source": "কাজের ধরন, শাখা, সময় বা অন্যান্য অনুরোধ",
+   "target": "仕事の種類、店舗、時間、その他の希望"
+  }
+ ]
+}

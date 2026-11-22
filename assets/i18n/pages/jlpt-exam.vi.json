@@ -1,0 +1,182 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "jlpt-exam",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "JLPT Mock Test | আপনার নিহোন",
+   "target": "JLPT Mock Test | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "একটি করে প্রশ্ন দেখুন, নম্বর থেকে সরাসরি যান ও পরে দেখার চিহ্ন দিন। পরীক্ষার পরে বাংলা উত্তর, ব্যাখ্যা ও আপনার নামে PDF সনদ পাবেন।",
+   "target": "Xem từng câu hỏi một, đi thẳng từ số câu và đánh dấu để xem lại sau. Sau kỳ thi, bạn sẽ nhận được đáp án và giải thích bằng tiếng Việt cùng chứng chỉ PDF mang tên bạn."
+  },
+  {
+   "source": "পরীক্ষার্থীর নাম",
+   "target": "Tên thí sinh"
+  },
+  {
+   "source": "পরীক্ষা শেষে সনদের নাম পরিবর্তন করতে পারবেন।",
+   "target": "Sau khi thi xong, bạn có thể đổi tên trên chứng chỉ."
+  },
+  {
+   "source": "পরীক্ষার সময় নির্বাচন",
+   "target": "Chọn thời gian thi"
+  },
+  {
+   "source": "Practice · দ্রুত",
+   "target": "Practice · Nhanh"
+  },
+  {
+   "source": "লিসেনিংয়ের আগে শব্দ পরীক্ষা করুন",
+   "target": "Kiểm tra âm thanh trước phần Listening"
+  },
+  {
+   "source": "রেকর্ড করা অডিও শোনা গেলে প্রস্তুত",
+   "target": "Sẵn sàng khi nghe được bản ghi âm"
+  },
+  {
+   "source": "পরীক্ষা শুরু করুন →",
+   "target": "Bắt đầu thi →"
+  },
+  {
+   "source": "আগের জায়গা থেকে চালিয়ে যান",
+   "target": "Tiếp tục từ chỗ trước"
+  },
+  {
+   "source": "নতুন করে শুরু করুন",
+   "target": "Bắt đầu lại từ đầu"
+  },
+  {
+   "source": "পার্ট",
+   "target": "Phần"
+  },
+  {
+   "source": "শব্দভাণ্ডার",
+   "target": "Từ vựng"
+  },
+  {
+   "source": "প্রশ্ন তালিকা",
+   "target": "Danh sách câu hỏi"
+  },
+  {
+   "source": "০ / ০ উত্তর",
+   "target": "0 / 0 câu trả lời"
+  },
+  {
+   "source": "সব প্রশ্ন দেখুন",
+   "target": "Xem tất cả câu hỏi"
+  },
+  {
+   "source": "প্রশ্ন নম্বর ও অগ্রগতি",
+   "target": "Số câu hỏi và tiến độ"
+  },
+  {
+   "source": "সবুজ: উত্তর দেওয়া · ★: পরে দেখব · নীল: বর্তমান প্রশ্ন",
+   "target": "Xanh lá: đã trả lời · ★: xem lại sau · Xanh dương: câu hỏi hiện tại"
+  },
+  {
+   "source": "← আগের প্রশ্ন",
+   "target": "← Câu hỏi trước"
+  },
+  {
+   "source": "পরের প্রশ্ন →",
+   "target": "Câu hỏi tiếp theo →"
+  },
+  {
+   "source": "এই পার্ট শেষ করুন",
+   "target": "Kết thúc phần này"
+  },
+  {
+   "source": "পরীক্ষা মোডে উত্তর না দেওয়া প্রশ্ন রেখেও জমা দিতে পারবেন।",
+   "target": "Ở chế độ thi, bạn có thể nộp bài ngay cả khi còn câu chưa trả lời."
+  },
+  {
+   "source": "প্রথম উত্তর না-দেওয়া প্রশ্নে যান",
+   "target": "Đi đến câu chưa trả lời đầu tiên"
+  },
+  {
+   "source": "পার্টের অগ্রগতি",
+   "target": "Tiến độ của phần"
+  },
+  {
+   "source": "০ / ০ উত্তর দেওয়া",
+   "target": "0 / 0 đã trả lời"
+  },
+  {
+   "source": "পার্ট জমা দিন",
+   "target": "Nộp phần"
+  },
+  {
+   "source": "পার্ট সম্পন্ন",
+   "target": "Đã hoàn thành phần"
+  },
+  {
+   "source": "এই পার্ট জমা হয়েছে। এখন আগের উত্তরে ফিরে যাওয়া যাবে না।",
+   "target": "Phần này đã được nộp. Bây giờ bạn không thể quay lại đáp án trước nữa."
+  },
+  {
+   "source": "০/০",
+   "target": "0/0"
+  },
+  {
+   "source": "উত্তর দেওয়া",
+   "target": "Đã trả lời"
+  },
+  {
+   "source": "১/৩",
+   "target": "1/3"
+  },
+  {
+   "source": "পরবর্তী পার্ট শুরু করুন →",
+   "target": "Bắt đầu phần tiếp theo →"
+  },
+  {
+   "source": "আপনার নিহোন · ফলাফল",
+   "target": "আপনার নিহোন · Kết quả"
+  },
+  {
+   "source": "সনদ / PDF ডাউনলোড",
+   "target": "Chứng chỉ / Tải PDF"
+  },
+  {
+   "source": "সব Mock Test",
+   "target": "Tất cả Mock Test"
+  },
+  {
+   "source": "ফলাফল প্রিন্ট",
+   "target": "In kết quả"
+  },
+  {
+   "source": "আবার পরীক্ষা দিন",
+   "target": "Thi lại"
+  },
+  {
+   "source": "উত্তর রিভিউ",
+   "target": "Xem lại đáp án"
+  },
+  {
+   "source": "সঠিক উত্তর, বাংলা ব্যাখ্যা ও Listening transcript",
+   "target": "Đáp án đúng, giải thích bằng tiếng Việt và Listening transcript"
+  },
+  {
+   "source": "সব",
+   "target": "Tất cả"
+  },
+  {
+   "source": "ভুল",
+   "target": "Sai lầm"
+  },
+  {
+   "source": "সঠিক",
+   "target": "Đúng"
+  }
+ ]
+}

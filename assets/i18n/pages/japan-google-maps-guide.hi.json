@@ -1,0 +1,414 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "hi",
+ "page": "japan-google-maps-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Google Maps দিয়ে যাতায়াত | আপনার নিহোন",
+   "target": "Google Maps से आना-जाना | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "जापान लाइफ गाइड"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "सभी गाइड"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "आगमन के बाद"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "घर और दैनिक जीवन"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "ट्रेन और Platform"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Google Maps का उपयोग"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "पार्ट-टाइम नौकरी"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "आपातकालीन सहायता"
+  },
+  {
+   "source": "Google Maps দিয়ে যাতায়াত",
+   "target": "Google Maps से आना-जाना"
+  },
+  {
+   "source": "Destination search থেকে platform, transfer, exit ও building entrance পর্যন্ত—Google Maps-এর প্রতিটি লেখা কী বোঝায় তা ধাপে ধাপে।",
+   "target": "Destination search से platform, transfer, exit और building entrance तक — Google Maps के हर लेख का क्या मतलब है, चरण-दर-चरण।"
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "बंगाली व्याख्या"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "जापानी वाक्य"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "वास्तविक कदम"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "आपकी प्रगति"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 पूर्ण"
+  },
+  {
+   "source": "সঠিক Destination Search",
+   "target": "सही Destination Search"
+  },
+  {
+   "source": "একই নামের ভুল জায়গা এড়ান",
+   "target": "एक ही नाम की गलत जगह से बचें"
+  },
+  {
+   "source": "শুধু দোকানের নাম নয়, branch দিন",
+   "target": "सिर्फ दुकान का नाम नहीं, branch दें"
+  },
+  {
+   "source": "যেমন “○○ 新宿店” বা postal address লিখুন।",
+   "target": "जैसे “○○ 新宿店” या postal address लिखें।"
+  },
+  {
+   "source": "Photo ও category মিলান",
+   "target": "Photo और category मिलाएं"
+  },
+  {
+   "source": "Restaurant, office, school বা park—map pin-এর category এবং exterior photo দেখুন।",
+   "target": "Restaurant, office, school या park — map pin की category और exterior photo देखें।"
+  },
+  {
+   "source": "Address copy করে message-এর সঙ্গে মিলান",
+   "target": "Address copy करके message से मिलाएं"
+  },
+  {
+   "source": "Interview/training address-এর ward, chōme, building ও floor সব দেখুন।",
+   "target": "Interview/training address का ward, chōme, building और floor सब देखें।"
+  },
+  {
+   "source": "Save ও label করুন",
+   "target": "Save और label करें"
+  },
+  {
+   "source": "School, Home, Work-এর মতো label দিলে পরেরবার দ্রুত route পাবেন।",
+   "target": "School, Home, Work जैसे label देने से अगली बार जल्दी route मिलेगा।"
+  },
+  {
+   "source": "Directions থেকে Transit বাছাই",
+   "target": "Directions से Transit चुनें"
+  },
+  {
+   "source": "From ও To ঠিক করার নিয়ম",
+   "target": "From और To ठीक करने का नियम"
+  },
+  {
+   "source": "Directions চাপুন",
+   "target": "Directions दबाएं"
+  },
+  {
+   "source": "Starting point “Your location” ঠিক আছে কি না দেখুন; বাসা থেকে গেলে home address দিন।",
+   "target": "Starting point “Your location” ठीक है या नहीं देखें; घर से जाएं तो home address दें।"
+  },
+  {
+   "source": "Train icon নির্বাচন করুন",
+   "target": "Train icon चुनें"
+  },
+  {
+   "source": "Public transit route দেখতে train/bus icon ব্যবহার করুন।",
+   "target": "Public transit route देखने के लिए train/bus icon इस्तेमाल करें।"
+  },
+  {
+   "source": "Leave now / Depart at / Arrive by বাছুন",
+   "target": "Leave now / Depart at / Arrive by चुनें"
+  },
+  {
+   "source": "Interview হলে “Arrive by” দিয়ে 15–20 মিনিট buffer রাখুন।",
+   "target": "Interview हो तो “Arrive by” देकर 15–20 मिनट buffer रखें।"
+  },
+  {
+   "source": "Options দেখুন",
+   "target": "Options देखें"
+  },
+  {
+   "source": "কম transfer, কম walking, bus/train preference প্রয়োজনমতো দিন।",
+   "target": "कम transfer, कम walking, bus/train preference ज़रूरत के अनुसार दें।"
+  },
+  {
+   "source": "Route Screen-এর প্রতিটি অংশ",
+   "target": "Route Screen का हर भाग"
+  },
+  {
+   "source": "সময়, ভাড়া, walking ও transfer পড়ুন",
+   "target": "समय, किराया, walking और transfer पढ़ें"
+  },
+  {
+   "source": "চিহ্ন",
+   "target": "चिह्न"
+  },
+  {
+   "source": "অর্থ",
+   "target": "अर्थ"
+  },
+  {
+   "source": "সিদ্ধান্ত",
+   "target": "निर्णय"
+  },
+  {
+   "source": "Departure ও arrival",
+   "target": "Departure और arrival"
+  },
+  {
+   "source": "বাসা থেকে station walking যোগ করুন",
+   "target": "घर से station walking जोड़ें"
+  },
+  {
+   "source": "আনুমানিক fare",
+   "target": "अनुमानित fare"
+  },
+  {
+   "source": "IC balance রাখুন",
+   "target": "IC balance रखें"
+  },
+  {
+   "source": "দুইবার line বদল",
+   "target": "दो बार line बदलना"
+  },
+  {
+   "source": "Beginner হলে কম transfer route দেখুন",
+   "target": "Beginner हों तो कम transfer वाला route देखें"
+  },
+  {
+   "source": "Walking অংশ",
+   "target": "Walking भाग"
+  },
+  {
+   "source": "Exit-এর পর সময়",
+   "target": "Exit के बाद का समय"
+  },
+  {
+   "source": "সম্ভাব্য platform",
+   "target": "संभावित platform"
+  },
+  {
+   "source": "Station board-এ confirm",
+   "target": "Station board पर confirm करें"
+  },
+  {
+   "source": "কাছের exit",
+   "target": "नज़दीकी exit"
+  },
+  {
+   "source": "Sign follow করুন",
+   "target": "Sign follow करें"
+  },
+  {
+   "source": "Platform ও Direction বোঝা",
+   "target": "Platform और Direction समझना"
+  },
+  {
+   "source": "Maps-এর লেখাকে station sign-এর সঙ্গে মিলান",
+   "target": "Maps के लेख को station sign से मिलाएं"
+  },
+  {
+   "source": "Line name + direction একসঙ্গে পড়ুন",
+   "target": "Line name + direction एक साथ पढ़ें"
+  },
+  {
+   "source": "শুধু platform number নয়; line এবং “for ○○” মিলতে হবে।",
+   "target": "सिर्फ platform number नहीं; line और “for ○○” मिलना चाहिए।"
+  },
+  {
+   "source": "Maps platform পরিবর্তন হতে পারে",
+   "target": "Maps platform बदल सकता है"
+  },
+  {
+   "source": "Service disruption বা operational change-এ actual departure board-ই চূড়ান্ত।",
+   "target": "Service disruption या operational change में actual departure board ही अंतिम है।"
+  },
+  {
+   "source": "Train type দেখুন",
+   "target": "Train type देखें"
+  },
+  {
+   "source": "Maps যে service বলেছে—Local/Rapid—সেটিই ধরুন, অথবা আপনার station stop list যাচাই করুন।",
+   "target": "Maps ने जो service बताई है — Local/Rapid — वही पकड़ें, या अपने station stop list जांचें।"
+  },
+  {
+   "source": "Google নিজেও actual traffic rules/sign confirm করতে বলে। সন্দেহ হলে station staff-কে দেখান।",
+   "target": "Google खुद भी actual traffic rules/sign confirm करने को कहता है। संदेह हो तो station staff को दिखाएं।"
+  },
+  {
+   "source": "স্টেশন থেকে Destination পর্যন্ত",
+   "target": "स्टेशन से Destination तक"
+  },
+  {
+   "source": "Exit, compass ও Street View",
+   "target": "Exit, compass और Street View"
+  },
+  {
+   "source": "Exit number আগে দেখুন",
+   "target": "Exit number पहले देखें"
+  },
+  {
+   "source": "বড় station-এ ভুল exit নিলে 10–20 মিনিট নষ্ট হতে পারে।",
+   "target": "बड़े station में गलत exit लेने से 10–20 मिनट बर्बाद हो सकते हैं।"
+  },
+  {
+   "source": "Blue dot-এর beam দেখুন",
+   "target": "Blue dot का beam देखें"
+  },
+  {
+   "source": "আপনি কোন দিকে মুখ করে আছেন তা beam দেখায়; গোল হয়ে ঘুরলে compass calibrate করুন।",
+   "target": "आप किस दिशा में मुंह किए हैं, beam दिखाता है; गोल-गोल घूमे तो compass calibrate करें।"
+  },
+  {
+   "source": "Street View দিয়ে building চিনুন",
+   "target": "Street View से building पहचानें"
+  },
+  {
+   "source": "Interview-এর আগের দিন entrance, signboard ও nearby landmark দেখে নিন।",
+   "target": "Interview से एक दिन पहले entrance, signboard और nearby landmark देख लें।"
+  },
+  {
+   "source": "Building floor আলাদা করে লিখুন",
+   "target": "Building floor अलग से लिखें"
+  },
+  {
+   "source": "Map pin সাধারণত building পর্যন্ত নেয়; floor/room message থেকে দেখুন।",
+   "target": "Map pin आमतौर पर building तक ले जाता है; floor/room message से देखें।"
+  },
+  {
+   "source": "একটি বাস্তব Practice",
+   "target": "एक वास्तविक Practice"
+  },
+  {
+   "source": "স্কুল/কাজে যাওয়ার আগের রাতের rehearsal",
+   "target": "स्कूल/काम पर जाने से पिछली रात की rehearsal"
+  },
+  {
+   "source": "ঠিক address খুলে “Work interview” নামে save করুন।",
+   "target": "सही address खोलकर “Work interview” नाम से save करें।"
+  },
+  {
+   "source": "Arrive by সেট",
+   "target": "Arrive by सेट करें"
+  },
+  {
+   "source": "Appointment 19:00 হলে 18:40 arrival দিন।",
+   "target": "Appointment 19:00 हो तो 18:40 arrival दें।"
+  },
+  {
+   "source": "Departure station, line, direction, transfer, platform, exit—প্রতিটি screen রাখুন।",
+   "target": "Departure station, line, direction, transfer, platform, exit — हर screen रखें।"
+  },
+  {
+   "source": "Alternative route দেখুন",
+   "target": "Alternative route देखें"
+  },
+  {
+   "source": "Delay হলে দ্বিতীয় route কোনটি তা আগে জানুন।",
+   "target": "Delay हो तो दूसरा route कौन सा है, पहले से जानें।"
+  },
+  {
+   "source": "Battery ও data প্রস্তুত",
+   "target": "Battery और data तैयार रखें"
+  },
+  {
+   "source": "Power bank, phone charge এবং address text offline রাখুন।",
+   "target": "Power bank, phone charge और address text offline रखें।"
+  },
+  {
+   "source": "রাস্তা ও station-এ জিজ্ঞেস করার বাক্য",
+   "target": "सड़क और station पर पूछने के वाक्य"
+  },
+  {
+   "source": "Map দেখিয়ে বলুন",
+   "target": "Map दिखाकर कहें"
+  },
+  {
+   "source": "আমি এই জায়গায় যেতে চাই।",
+   "target": "मैं इस जगह जाना चाहता हूँ।"
+  },
+  {
+   "source": "এই exit-টাই সঠিক?",
+   "target": "क्या यही exit सही है?"
+  },
+  {
+   "source": "এই map-টা একটু দেখবেন?",
+   "target": "क्या आप यह map ज़रा देखेंगे?"
+  },
+  {
+   "source": "এখান থেকে হেঁটে কত মিনিট?",
+   "target": "यहाँ से पैदल कितने मिनट लगेंगे?"
+  },
+  {
+   "source": "বের হওয়ার আগে ৩০ সেকেন্ডে",
+   "target": "बाहर निकलने से पहले 30 सेकंड में"
+  },
+  {
+   "source": "Destination branch/address ঠিক আছে",
+   "target": "Destination branch/address सही है"
+  },
+  {
+   "source": "Departure বা Arrive by সময় ঠিক করেছি",
+   "target": "Departure या Arrive by का समय ठीक कर लिया है"
+  },
+  {
+   "source": "Line, direction, train type দেখেছি",
+   "target": "Line, direction, train type देख लिया है"
+  },
+  {
+   "source": "Transfer station screenshot আছে",
+   "target": "Transfer station का screenshot है"
+  },
+  {
+   "source": "Platform actual board-এ মিলাব",
+   "target": "Platform को actual board से मिलाऊँगा"
+  },
+  {
+   "source": "Exit number save করেছি",
+   "target": "Exit number save कर लिया है"
+  },
+  {
+   "source": "Battery/data ও alternative route প্রস্তুত",
+   "target": "Battery/data और alternative route तैयार है"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "सरकारी और विश्वसनीय स्रोत"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "नियम बदल सकते हैं—अ अंतिम निर्णय से पहले आधिकारिक जानकारी देखें"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "यह गाइड सीखने में सहायक है। व्यक्तिगत कानूनी/चिकित्सकीय निर्णयों के लिए संबंधित कार्यालय या पेशेवर के निर्देशों का पालन करें।"
+  },
+  {
+   "source": "হোম",
+   "target": "होम"
+  }
+ ]
+}

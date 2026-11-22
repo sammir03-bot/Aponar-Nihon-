@@ -1,0 +1,438 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "si",
+ "page": "japan-emergency-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জরুরি সহায়তা ও নিরাপত্তা | আপনার নিহোন",
+   "target": "හදිසි උදව් සහ ආරක්ෂාව | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "ජපන් ජීවන මාර්ගෝපදේශය"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "සියලුම මාර්ගෝපදේශ"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "පැමිණීමෙන් පසු"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "නිවස සහ දෛනික ජීවිතය"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "τρέන සහ Platform"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Google Maps භාවිතය"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "අර්ධකාලීන රැකියාව"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "හදිසි ආධාර"
+  },
+  {
+   "source": "জরুরি সহায়তা ও নিরাপত্তা",
+   "target": "හදිසි උදව් සහ ආරක්ෂාව"
+  },
+  {
+   "source": "110, 119, lost property, hospital, earthquake, typhoon ও emergency bag—জাপানে বিপদের সময় কী করবেন তা স্পষ্ট গাইড।",
+   "target": "110, 119, lost property, hospital, earthquake, typhoon සහ emergency bag — ජපානයේ අනතුරකදී කළ යුතු දේ පිළිබඳ පැහැදිලි මාර්ගෝපදේශය."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "බෙංගාලි පැහැදිලි කිරීම"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "ජපන් වැකිය"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "वास्तविक පියවර"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "ඔබේ ප්‍රගතිය"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 අවසන්"
+  },
+  {
+   "source": "নম্বর",
+   "target": "අංකය"
+  },
+  {
+   "source": "হারানো",
+   "target": "නැති වූ දේ"
+  },
+  {
+   "source": "তিনটি জরুরি নম্বর মুখস্থ করুন",
+   "target": "හදිසි අංක තුන කටපාඩම් කර ගන්න"
+  },
+  {
+   "source": "কোন পরিস্থিতিতে কোন নম্বর",
+   "target": "කුමන අවස්ථාවේදී කුමන අංකයද"
+  },
+  {
+   "source": "সমুদ্র দুর্ঘটনা",
+   "target": "මුහුදු අනතුර"
+  },
+  {
+   "source": "ফোনে প্রথমে কী বলবেন",
+   "target": "දුරකථනයෙන් පළමුව කුමක් කියන්නේද"
+  },
+  {
+   "source": "কী হয়েছে → কোথায় → কয়জন → আপনার নাম/ফোন। Location না জানলে nearby building, station, shop sign বা map address পড়ুন।",
+   "target": "කුමක් සිදු වීද → කොහෙද → කී දෙනෙක්ද → ඔබේ නම/දුරකථනය. Location එක නොදන්නේ නම් nearby building, station, shop sign හෝ map address එක කියවන්න."
+  },
+  {
+   "source": "শান্তভাবে ছোট বাক্যে বলুন",
+   "target": "සන්සුන්ව කෙටි වාක්‍ය වලින් කියන්න"
+  },
+  {
+   "source": "অ্যাম্বুলেন্স দরকার।",
+   "target": "ගිලන් රථයක් අවශ්‍යයි."
+  },
+  {
+   "source": "আগুন লেগেছে।",
+   "target": "ගින්නක් ඇති වී ඇත."
+  },
+  {
+   "source": "দুর্ঘটনা হয়েছে।",
+   "target": "අනතුරක් සිදු වී ඇත."
+  },
+  {
+   "source": "স্থানটি ○○।",
+   "target": "ස්ථානය ○○ ය."
+  },
+  {
+   "source": "আমি বেশি জাপানি বলতে পারি না।",
+   "target": "මට ජපන් බස වැඩියෙන් කතා කළ නොහැක."
+  },
+  {
+   "source": "ইংরেজি দোভাষী চাই।",
+   "target": "ඉංග්‍රීසි පරිවර්තකයෙකු අවශ්‍යයි."
+  },
+  {
+   "source": "কল কেটে দেবেন না",
+   "target": "ඇමතුම විසන්ධි නොකරන්න"
+  },
+  {
+   "source": "Operator প্রশ্ন করবে। Location sharing/GPS চালু রাখুন এবং নির্দেশ না দেওয়া পর্যন্ত line-এ থাকুন।",
+   "target": "Operator ප්‍රශ්න අසනු ඇත. Location sharing/GPS ක්‍රියාත්මකව තබා උපදෙස් ලැබෙන තෙක් line එකේ රැඳී සිටින්න."
+  },
+  {
+   "source": "জিনিস হারালে কী করবেন",
+   "target": "දෙයක් නැති වුවහොත් කුමක් කරන්නේද"
+  },
+  {
+   "source": "Train, road ও দোকান—ভিন্ন পথ",
+   "target": "Train, road සහ සාප්පුව — වෙනස් මාර්ග"
+  },
+  {
+   "source": "ট্রেন/স্টেশনে হারালে station staff",
+   "target": "දුම්රියේ/ස්ථානයේ නැති වුවහොත් station staff"
+  },
+  {
+   "source": "Line, train time, car number, ওঠা/নামা station, item color বলুন। Receipt/serial থাকলে দেখান।",
+   "target": "Line, train time, car number, නැඟි/බැසි station, item color කියන්න. Receipt/serial ඇත්නම් පෙන්වන්න."
+  },
+  {
+   "source": "রাস্তা বা public place-এ হারালে Koban",
+   "target": "මාර්ගයේ හෝ public place එකක නැති වුවහොත් Koban"
+  },
+  {
+   "source": "交番（こうばん） বা police station-এ 遺失届（いしつとどけ） করুন।",
+   "target": "交番（こうばん） හෝ police station එකේ 遺失届（いしつとどけ） කරන්න."
+  },
+  {
+   "source": "Phone হারালে remote lock",
+   "target": "Phone එක නැති වුවහොත් remote lock"
+  },
+  {
+   "source": "Find My Device/Find My iPhone, SIM suspension, payment app lock ও police report করুন।",
+   "target": "Find My Device/Find My iPhone, SIM suspension, payment app lock සහ police report කරන්න."
+  },
+  {
+   "source": "Residence Card হারালে দ্রুত ব্যবস্থা",
+   "target": "Residence Card එක නැති වුවහොත් ඉක්මන් පියවර"
+  },
+  {
+   "source": "Police report-এর পর Immigration reissuance procedure অনুসরণ করুন; official deadline আছে।",
+   "target": "Police report එකෙන් පසු Immigration reissuance procedure එක අනුගමනය කරන්න; official deadline එකක් ඇත."
+  },
+  {
+   "source": "মানিব্যাগ হারিয়েছি।",
+   "target": "මුදල් පසුම්බිය නැති වී ඇත."
+  },
+  {
+   "source": "ট্রেনের ভেতরে ফেলে এসেছি।",
+   "target": "දුම්රිය ඇතුළේ තබා ආවෙමි."
+  },
+  {
+   "source": "Lost property report করতে চাই।",
+   "target": "Lost property report එකක් කිරීමට අවශ්‍යයි."
+  },
+  {
+   "source": "অসুস্থতা ও Hospital",
+   "target": "අසනීප සහ Hospital"
+  },
+  {
+   "source": "Emergency ও non-emergency আলাদা করুন",
+   "target": "Emergency සහ non-emergency වෙන් කරන්න"
+  },
+  {
+   "source": "জীবন-ঝুঁকি হলে 119",
+   "target": "ජීවිත අවදානමක් ඇත්නම් 119"
+  },
+  {
+   "source": "শ্বাস নিতে না পারা, অচেতন, গুরুতর রক্তপাত, severe injury ইত্যাদিতে দেরি করবেন না।",
+   "target": "හුස්ම ගත නොහැකි වීම, සිහි නැති වීම, බරපතළ රුධිර වහනය, severe injury ආදියේදී ප්‍රමාද නොවන්න."
+  },
+  {
+   "source": "Non-emergency হলে clinic/hospital",
+   "target": "Non-emergency නම් clinic/hospital"
+  },
+  {
+   "source": "Department search করুন: 内科 internal medicine, 外科 surgery, 歯科 dental, 皮膚科 dermatology।",
+   "target": "Department search කරන්න: 内科 internal medicine, 外科 surgery, 歯科 dental, 皮膚科 dermatology."
+  },
+  {
+   "source": "সঙ্গে নিন",
+   "target": "රැගෙන යා යුਤු දේ"
+  },
+  {
+   "source": "লক্ষণ লিখে দেখান",
+   "target": "රෝග ලක්ෂණ ලියා පෙන්වන්න"
+  },
+  {
+   "source": "কখন শুরু, কোথায় ব্যথা, fever, allergy, current medicine—phone note-এ রাখুন।",
+   "target": "කවදා සිටද, කොහෙද වේදනාව, fever, allergy, current medicine — phone note එකේ තබා ගන්න."
+  },
+  {
+   "source": "বুকে ব্যথা এবং শ্বাসকষ্ট হচ্ছে।",
+   "target": "පපුවේ වේදනාව සහ හුස්ම ගැනීමේ අපහසුව ඇත."
+  },
+  {
+   "source": "তিন দিন ধরে জ্বর আছে।",
+   "target": "දින තුනක් තිස්සේ උණ ඇත."
+  },
+  {
+   "source": "এই ওষুধে আমার allergy আছে।",
+   "target": "මෙම ඖෂධයට මට allergy ඇත."
+  },
+  {
+   "source": "ভূমিকম্প, আগুন ও Typhoon",
+   "target": "භූමිකම්පාව, ගින්න සහ Typhoon"
+  },
+  {
+   "source": "প্রথম ১০ মিনিটের সিদ্ধান্ত",
+   "target": "පළමු මිනිත්තු 10 තීරණය"
+  },
+  {
+   "source": "ঘটনা",
+   "target": "සිදුවීම"
+  },
+  {
+   "source": "সঙ্গে সঙ্গে",
+   "target": "එසැණින්"
+  },
+  {
+   "source": "পরে",
+   "target": "පසුව"
+  },
+  {
+   "source": "ভূমিকম্প",
+   "target": "භූමිකම්පාව"
+  },
+  {
+   "source": "মাথা ঢাকুন, নিচু হন, শক্ত table-এর নিচে",
+   "target": "හිස වසන්න, පහත් වන්න, ශක්තිමත් table එකක් යටට යන්න"
+  },
+  {
+   "source": "আগুন/গ্যাস check, official alert, safe route",
+   "target": "ගින්න/ගෑස් check කරන්න, official alert, safe route"
+  },
+  {
+   "source": "আগুন",
+   "target": "ගින්දර"
+  },
+  {
+   "source": "জোরে 火事, alarm, 119",
+   "target": "හඬ නඟා 火事, alarm, 119"
+  },
+  {
+   "source": "ধোঁয়ার নিচে থেকে exit; lift নয়",
+   "target": "දුමට පහළින් සිට exit වෙත; lift නොවේ"
+  },
+  {
+   "source": "Weather/evacuation alert দেখুন",
+   "target": "Weather/evacuation alert බලන්න"
+  },
+  {
+   "source": "নদী/underground area এড়ান",
+   "target": "ගංගා/underground area මඟ හරින්න"
+  },
+  {
+   "source": "সমুদ্র/নদীর মোহনা থেকে উঁচু স্থানে",
+   "target": "මුහුද/ගංගා මෝයෙන් උස් ස්ථානයකට"
+  },
+  {
+   "source": "Official all-clear না হওয়া পর্যন্ত ফিরবেন না",
+   "target": "Official all-clear එක ලැබෙන තෙක් ආපසු නොයන්න"
+  },
+  {
+   "source": "Evacuation level-এর ভাষা শিখুন",
+   "target": "Evacuation level හි භාෂාව ඉගෙන ගන්න"
+  },
+  {
+   "source": "কমপক্ষে ৩ দিনের basic প্রস্তুতি",
+   "target": "අවම වශයෙන් දින 3 ක basic සූදානම"
+  },
+  {
+   "source": "পানি",
+   "target": "වතුර"
+  },
+  {
+   "source": "ব্যক্তি ও পরিস্থিতি অনুযায়ী",
+   "target": "පුද්ගලයා සහ අවස්ථාව අනුව"
+  },
+  {
+   "source": "খাবার",
+   "target": "ආහාර"
+  },
+  {
+   "source": "নিজের prescription",
+   "target": "ඔබේම prescription එක"
+  },
+  {
+   "source": "Passport, Residence Card, insurance, contact ও address—waterproof pouch-এ copy।",
+   "target": "Passport, Residence Card, insurance, contact සහ address — waterproof pouch එකක copy එකක්."
+  },
+  {
+   "source": "Cash ও light",
+   "target": "Cash සහ light"
+  },
+  {
+   "source": "ছোট note/coin, flashlight, batteries, whistle।",
+   "target": "කුඩා note/coin, flashlight, batteries, whistle."
+  },
+  {
+   "source": "171 জানা রাখুন",
+   "target": "171 දැන තබා ගන්න"
+  },
+  {
+   "source": "বড় দুর্যোগে Disaster Emergency Message Dial 171 চালু হতে পারে; voice prompt Japanese। আগে family plan ঠিক করুন।",
+   "target": "විශාල ආපදාවකදී Disaster Emergency Message Dial 171 ක්‍රියාත්මක විය හැක; voice prompt Japanese භාෂාවෙනි. කලින් family plan එකක් තීරණය කර ගන්න."
+  },
+  {
+   "source": "নিজের Emergency Card বানান",
+   "target": "ඔබේම Emergency Card එක සාදන්න"
+  },
+  {
+   "source": "Phone lock screen বা wallet-এ রাখুন",
+   "target": "Phone lock screen එකේ හෝ wallet එකේ තබා ගන්න"
+  },
+  {
+   "source": "নাম",
+   "target": "නම"
+  },
+  {
+   "source": "আপনার নাম লিখুন",
+   "target": "ඔබේ නම ලියන්න"
+  },
+  {
+   "source": "ঠিকানা",
+   "target": "ලිපිනය"
+  },
+  {
+   "source": "Japanese address লিখুন",
+   "target": "Japanese address එක ලියන්න"
+  },
+  {
+   "source": "নাম ও ফোন",
+   "target": "නම සහ දුරකථනය"
+  },
+  {
+   "source": "যোগাযোগ নম্বর",
+   "target": "සම්බන්ධතා අංකය"
+  },
+  {
+   "source": "না থাকলে なし",
+   "target": "නොමැති නම් なし"
+  },
+  {
+   "source": "প্রয়োজনীয় তথ্য",
+   "target": "අවශ්‍ය තොරතුරු"
+  },
+  {
+   "source": "Print / PDF করুন",
+   "target": "Print / PDF කරන්න"
+  },
+  {
+   "source": "আজই প্রস্তুত করুন",
+   "target": "අදම සූදානම් කරන්න"
+  },
+  {
+   "source": "110, 119 ও নিজের address মুখস্থ/Save করেছি",
+   "target": "110, 119 සහ මගේම address එක කටපාඩම්/Save කර ඇත"
+  },
+  {
+   "source": "School/company emergency contact save করেছি",
+   "target": "School/company emergency contact එක save කර ඇත"
+  },
+  {
+   "source": "Nearest hospital, koban ও shelter map-এ save করেছি",
+   "target": "Nearest hospital, koban සහ shelter එක map එකේ save කර ඇත"
+  },
+  {
+   "source": "Emergency bag প্রস্তুত করেছি",
+   "target": "Emergency bag එක සූදානම් කර ඇත"
+  },
+  {
+   "source": "Phone remote-find ও lock চালু করেছি",
+   "target": "Phone remote-find සහ lock ක්‍රියාත්මක කර ඇත"
+  },
+  {
+   "source": "Family-এর সঙ্গে disaster contact plan করেছি",
+   "target": "Family එක සමඟ disaster contact plan එකක් කර ඇත"
+  },
+  {
+   "source": "Residence Card/passport copy নিরাপদে রেখেছি",
+   "target": "Residence Card/passport copy එක ආරක්ෂිතව තබා ඇත"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "सरकारी සහ විශ්වාසදායක මූලාශ්‍ර"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "නොයෙකුත් නීති රීති වෙනස් විය හැක—අවසාන තීරණයට පෙර නිල තොරතුරු පරීක්ෂා කරන්න"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "මෙම මාර්ගෝපදේශය ඉගෙනීම සඳහා උපකාරී වේ. පුද්ගලික නීතිමය/වෛද්‍යමය තීරණවලදී අදාළ කාර්යාලයේ හෝ වෘත්තිකයෙකුගේ උපදෙස් අනුගමනය කරන්න."
+  },
+  {
+   "source": "হোম",
+   "target": "මුල් පිටුව"
+  }
+ ]
+}

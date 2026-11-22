@@ -1,0 +1,70 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "zh",
+ "page": "register",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "রেজিস্ট্রেশন | আপনার নিহোন",
+   "target": "注册 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "রেজিস্ট্রেশন করুন",
+   "target": "注册"
+  },
+  {
+   "source": "নতুন অ্যাকাউন্ট তৈরি করে শেখা শুরু করুন",
+   "target": "创建新账户，开始学习"
+  },
+  {
+   "source": "Google দিয়ে রেজিস্ট্রেশন করুন",
+   "target": "使用 Google 注册"
+  },
+  {
+   "source": "অথবা",
+   "target": "或者"
+  },
+  {
+   "source": "পূর্ণ নাম",
+   "target": "全名"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "电子邮箱"
+  },
+  {
+   "source": "পাসওয়ার্ড",
+   "target": "密码"
+  },
+  {
+   "source": "কমপক্ষে ৬ অক্ষরের পাসওয়ার্ড ব্যবহার করুন",
+   "target": "请使用至少6个字符的密码"
+  },
+  {
+   "source": "আগে থেকেই অ্যাকাউন্ট আছে?",
+   "target": "已经有账户了？"
+  },
+  {
+   "source": "লগইন করুন",
+   "target": "登录"
+  },
+  {
+   "source": "হোম",
+   "target": "首页"
+  },
+  {
+   "source": "সাহায্য",
+   "target": "帮助"
+  },
+  {
+   "source": "নিরাপদ রেজিস্ট্রেশন | SSL Protected",
+   "target": "安全注册 | SSL Protected"
+  }
+ ]
+}

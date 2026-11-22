@@ -1,0 +1,74 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ja",
+ "page": "privacy-policy",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Privacy Policy / গোপনীয়তা নীতি",
+   "target": "Privacy Policy / プライバシーポリシー"
+  },
+  {
+   "source": "তথ্য যা সংগ্রহ করা হতে পারে",
+   "target": "収集される可能性のある情報"
+  },
+  {
+   "source": "Account তৈরি করলে Aponar Nihon আপনার email address, account name এবং authentication identifier সংরক্ষণ করে। আপনি চাইলে profile-এ school/institution, nationality, city, phone number, JLPT target, preferred language, study goal, bio এবং profile photo URL যোগ করতে পারেন।",
+   "target": "アカウントを作成すると、Aponar Nihonはあなたのメールアドレス、アカウント名、認証識別子を保存します。任意で、プロフィールに学校／機関、国籍、都市、電話番号、JLPTの目標、希望言語、学習目標、自己紹介、プロフィール写真のURLを追加できます。"
+  },
+  {
+   "source": "Signed-in অবস্থায় learning activity যেমন visited section/page, selected learning actions, progress এবং activity timestamps সংরক্ষণ করা হতে পারে, যাতে student dashboard ও admin learning analytics কাজ করে। Password Aponar Nihon database-এ plain text হিসেবে সংরক্ষণ করা হয় না; authentication Supabase Auth দ্বারা পরিচালিত হয়।",
+   "target": "ログイン中、学生ダッシュボードと管理者向け学習分析が機能するよう、訪問したセクション／ページ、選択した学習アクション、進捗、アクティビティのタイムスタンプなどの学習活動が保存されることがあります。パスワードはAponar Nihonのデータベースに平文で保存されません。認証はSupabase Authによって管理されます。"
+  },
+  {
+   "source": "CV Builder ও Student Toolkit",
+   "target": "CV BuilderとStudent Toolkit"
+  },
+  {
+   "source": "CV Builder-এর resume content এবং Student Toolkit-এর part-time/time-management data browser local storage-এ রাখার জন্য design করা হয়েছে এবং Aponar Nihon learning-activity system ইচ্ছাকৃতভাবে CV-এর personal field content সংগ্রহ করে না। Page usage/activity event আলাদাভাবে log হতে পারে.",
+   "target": "CV Builderの履歴書コンテンツとStudent Toolkitのパートタイム／時間管理データはブラウザのローカルストレージに保存するよう設計されており、Aponar Nihonの学習活動システムはCVの個人フィールドの内容を意図的に収集しません。ページの利用／アクティビティイベントは別途記録されることがあります。"
+  },
+  {
+   "source": "তথ্য ব্যবহারের উদ্দেশ্য",
+   "target": "情報の利用目的"
+  },
+  {
+   "source": "Account login, profile, learning progress, study history, security, support, service improvement এবং student-facing/admin learning analytics-এর জন্য data ব্যবহার করা হয়। আমরা advertising profile তৈরি বা user data বিক্রি করি না।",
+   "target": "データは、アカウントログイン、プロフィール、学習進捗、学習履歴、セキュリティ、サポート、サービス改善、学生向け／管理者向け学習分析のために使用されます。私たちは広告用プロフィールを作成したり、ユーザーデータを販売したりしません。"
+  },
+  {
+   "source": "Aponar Nihon account, authentication এবং database-এর জন্য Supabase ব্যবহার করে। প্রয়োজনীয় data এই service provider-এর infrastructure-এ process হতে পারে।",
+   "target": "Aponar Nihonは、アカウント、認証、データベースにSupabaseを使用しています。必要なデータはこのサービスプロバイダーのインフラで処理されることがあります。"
+  },
+  {
+   "source": "Account active থাকা পর্যন্ত account-related data রাখা হতে পারে। User account delete করলে Aponar Nihon account-এর সাথে সম্পর্কিত profile, learning progress ও activity records মুছে দেওয়ার flow প্রদান করে, আইনগত বা নিরাপত্তাজনিত বাধ্যতামূলক retention প্রয়োজন না হলে।",
+   "target": "アカウントが有効な間、アカウント関連データが保持されることがあります。ユーザーがアカウントを削除した場合、法的またはセキュリティ上の保持義務がない限り、Aponar Nihonはアカウントに関連するプロフィール、学習進捗、アクティビティ記録を削除するフローを提供します。"
+  },
+  {
+   "source": "নিজের account এবং associated app data delete করতে",
+   "target": "自分のアカウントと関連するアプリデータを削除するには"
+  },
+  {
+   "source": "ব্যবহার করুন। Logged-in user সরাসরি deletion confirm করতে পারবেন। এই page Play Store-এর external account-deletion URL হিসেবেও ব্যবহারযোগ্য।",
+   "target": "を使用してください。ログイン中のユーザーは直接削除を確認できます。このページはPlay Storeの外部アカウント削除URLとしても使用できます。"
+  },
+  {
+   "source": "Access control, authenticated sessions এবং database Row Level Security ব্যবহার করা হয়। তবুও internet-based service-এ absolute security guarantee করা যায় না।",
+   "target": "アクセス制御、認証済みセッション、データベースのRow Level Securityが使用されます。それでも、インターネットベースのサービスで絶対的なセキュリティを保証することはできません。"
+  },
+  {
+   "source": "Aponar Nihon সাধারণ education service; এটি 13 বছরের কম বয়সী শিশুদের কাছ থেকে জেনে-বুঝে account data সংগ্রহের উদ্দেশ্যে তৈরি নয়।",
+   "target": "Aponar Nihonは一般向けの教育サービスです。13歳未満の子どもから故意にアカウントデータを収集することを目的として設計されていません。"
+  },
+  {
+   "source": "Service বা legal requirement পরিবর্তিত হলে এই policy update হতে পারে। নতুন effective date এই page-এ দেখানো হবে।",
+   "target": "サービスや法的要件が変更された場合、このポリシーは更新されることがあります。新しい発効日はこのページに表示されます。"
+  },
+  {
+   "source": "Privacy বা account-related প্রশ্নের জন্য Aponar Nihon website-এর Contact/Support option ব্যবহার করুন।",
+   "target": "プライバシーやアカウントに関する質問については、Aponar NihonウェブサイトのContact/Supportオプションをご利用ください。"
+  }
+ ]
+}
