@@ -1,0 +1,54 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "zh",
+ "page": "auth",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "এক অ্যাকাউন্টে আপনার সব Learning",
+   "target": "在一个账户中管理您的全部学习"
+  },
+  {
+   "source": "Profile, Mock Test, CV Builder ও learning progress নিরাপদভাবে একই account-এ রাখুন।",
+   "target": "将 Profile、Mock Test、CV Builder 和学习进度安全地保存在同一个账户中。"
+  },
+  {
+   "source": "Verified account হলে login হবে।",
+   "target": "如果是已验证账户，即可登录。"
+  },
+  {
+   "source": "Password ভুলে গেছেন?",
+   "target": "忘记密码了？"
+  },
+  {
+   "source": "আপনার নাম",
+   "target": "您的姓名"
+  },
+  {
+   "source": "Account তৈরি করুন",
+   "target": "创建账户"
+  },
+  {
+   "source": "Account তৈরির পর Gmail-এ verification link যাবে। Link খুললে verification complete হয়ে Profile-এ যাবে।",
+   "target": "创建账户后，验证链接将发送到 Gmail。打开链接后，验证完成并进入 Profile。"
+  },
+  {
+   "source": "Verification mail না পেলে spam/junk folder দেখুন, তারপর আবার পাঠাতে পারেন।",
+   "target": "如果未收到验证邮件，请查看垃圾邮件/垃圾文件夹，然后可以重新发送。"
+  },
+  {
+   "source": "Verification email আবার পাঠান",
+   "target": "重新发送验证电子邮件"
+  },
+  {
+   "source": "Password কখনো আমাদের database-এ plain text হিসেবে রাখা হয় না। Authentication Supabase Auth দ্বারা পরিচালিত হয়।",
+   "target": "密码永远不会以纯文本形式保存在我们的数据库中。身份验证由 Supabase Auth 管理。"
+  },
+  {
+   "source": "← হোমে ফিরে যান",
+   "target": "← 返回首页"
+  }
+ ]
+}

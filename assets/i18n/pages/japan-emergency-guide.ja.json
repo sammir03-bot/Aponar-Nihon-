@@ -1,0 +1,438 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ja",
+ "page": "japan-emergency-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জরুরি সহায়তা ও নিরাপত্তা | আপনার নিহোন",
+   "target": "緊急時の助けと安全 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "日本生活ガイド"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "すべてのガイド"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "到着後"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "住まいと日常生活"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "電車とプラットフォーム"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Googleマップの使い方"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "アルバイト"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "緊急サポート"
+  },
+  {
+   "source": "জরুরি সহায়তা ও নিরাপত্তা",
+   "target": "緊急時の助けと安全"
+  },
+  {
+   "source": "110, 119, lost property, hospital, earthquake, typhoon ও emergency bag—জাপানে বিপদের সময় কী করবেন তা স্পষ্ট গাইড।",
+   "target": "110、119、落とし物、病院、地震、台風、非常用バッグ — 日本で危険なときに何をすべきかの明確なガイドです。"
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "ベンガル語解説"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "日本語の文"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "実際のステップ"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "あなたの進捗"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 完了"
+  },
+  {
+   "source": "নম্বর",
+   "target": "番号"
+  },
+  {
+   "source": "হারানো",
+   "target": "落とし物"
+  },
+  {
+   "source": "তিনটি জরুরি নম্বর মুখস্থ করুন",
+   "target": "3つの緊急番号を覚えましょう"
+  },
+  {
+   "source": "কোন পরিস্থিতিতে কোন নম্বর",
+   "target": "どの状況でどの番号か"
+  },
+  {
+   "source": "সমুদ্র দুর্ঘটনা",
+   "target": "海の事故"
+  },
+  {
+   "source": "ফোনে প্রথমে কী বলবেন",
+   "target": "電話で最初に何を言うか"
+  },
+  {
+   "source": "কী হয়েছে → কোথায় → কয়জন → আপনার নাম/ফোন। Location না জানলে nearby building, station, shop sign বা map address পড়ুন।",
+   "target": "何が起きたか → どこで → 何人か → 自分の名前 / 電話番号。場所が分からない場合は、近くの建物、駅、お店の看板、地図の住所を読んでください。"
+  },
+  {
+   "source": "শান্তভাবে ছোট বাক্যে বলুন",
+   "target": "落ち着いて短い文で言いましょう"
+  },
+  {
+   "source": "অ্যাম্বুলেন্স দরকার।",
+   "target": "救急車が必要です。"
+  },
+  {
+   "source": "আগুন লেগেছে।",
+   "target": "火事です。"
+  },
+  {
+   "source": "দুর্ঘটনা হয়েছে।",
+   "target": "事故が起きました。"
+  },
+  {
+   "source": "স্থানটি ○○।",
+   "target": "場所は○○です。"
+  },
+  {
+   "source": "আমি বেশি জাপানি বলতে পারি না।",
+   "target": "日本語はあまり話せません。"
+  },
+  {
+   "source": "ইংরেজি দোভাষী চাই।",
+   "target": "英語の通訳がほしいです。"
+  },
+  {
+   "source": "কল কেটে দেবেন না",
+   "target": "電話を切らないでください"
+  },
+  {
+   "source": "Operator প্রশ্ন করবে। Location sharing/GPS চালু রাখুন এবং নির্দেশ না দেওয়া পর্যন্ত line-এ থাকুন।",
+   "target": "オペレーターが質問します。位置情報共有 / GPSをオンにし、指示があるまで電話を切らずにいてください。"
+  },
+  {
+   "source": "জিনিস হারালে কী করবেন",
+   "target": "物をなくしたらどうするか"
+  },
+  {
+   "source": "Train, road ও দোকান—ভিন্ন পথ",
+   "target": "電車、道路、お店 — それぞれ違う方法"
+  },
+  {
+   "source": "ট্রেন/স্টেশনে হারালে station staff",
+   "target": "電車 / 駅でなくしたら駅員へ"
+  },
+  {
+   "source": "Line, train time, car number, ওঠা/নামা station, item color বলুন। Receipt/serial থাকলে দেখান।",
+   "target": "路線、電車の時刻、車両番号、乗った駅 / 降りた駅、物の色を言ってください。領収書 / シリアル番号があれば見せてください。"
+  },
+  {
+   "source": "রাস্তা বা public place-এ হারালে Koban",
+   "target": "道路や公共の場所でなくしたら交番へ"
+  },
+  {
+   "source": "交番（こうばん） বা police station-এ 遺失届（いしつとどけ） করুন।",
+   "target": "交番（こうばん）または警察署で遺失届（いしつとどけ）を出してください。"
+  },
+  {
+   "source": "Phone হারালে remote lock",
+   "target": "携帯電話をなくしたらリモートロック"
+  },
+  {
+   "source": "Find My Device/Find My iPhone, SIM suspension, payment app lock ও police report করুন।",
+   "target": "Find My Device / Find My iPhone、SIMの停止、決済アプリのロック、警察への届け出をしてください。"
+  },
+  {
+   "source": "Residence Card হারালে দ্রুত ব্যবস্থা",
+   "target": "在留カードをなくしたらすぐに対応"
+  },
+  {
+   "source": "Police report-এর পর Immigration reissuance procedure অনুসরণ করুন; official deadline আছে।",
+   "target": "警察への届け出の後、出入国在留管理庁の再交付手続きに従ってください。公式の期限があります。"
+  },
+  {
+   "source": "মানিব্যাগ হারিয়েছি।",
+   "target": "財布をなくしました。"
+  },
+  {
+   "source": "ট্রেনের ভেতরে ফেলে এসেছি।",
+   "target": "電車の中に置き忘れました。"
+  },
+  {
+   "source": "Lost property report করতে চাই।",
+   "target": "落とし物の届け出をしたいです。"
+  },
+  {
+   "source": "অসুস্থতা ও Hospital",
+   "target": "病気と病院"
+  },
+  {
+   "source": "Emergency ও non-emergency আলাদা করুন",
+   "target": "緊急と緊急でない場合を分けましょう"
+  },
+  {
+   "source": "জীবন-ঝুঁকি হলে 119",
+   "target": "命に関わる場合は119"
+  },
+  {
+   "source": "শ্বাস নিতে না পারা, অচেতন, গুরুতর রক্তপাত, severe injury ইত্যাদিতে দেরি করবেন না।",
+   "target": "呼吸ができない、意識がない、ひどい出血、重傷などの場合は遅らせないでください。"
+  },
+  {
+   "source": "Non-emergency হলে clinic/hospital",
+   "target": "緊急でない場合はクリニック / 病院へ"
+  },
+  {
+   "source": "Department search করুন: 内科 internal medicine, 外科 surgery, 歯科 dental, 皮膚科 dermatology।",
+   "target": "診療科を検索してください: 内科 internal medicine, 外科 surgery, 歯科 dental, 皮膚科 dermatology。"
+  },
+  {
+   "source": "সঙ্গে নিন",
+   "target": "持ち物"
+  },
+  {
+   "source": "লক্ষণ লিখে দেখান",
+   "target": "症状を書いて見せましょう"
+  },
+  {
+   "source": "কখন শুরু, কোথায় ব্যথা, fever, allergy, current medicine—phone note-এ রাখুন।",
+   "target": "いつ始まったか、どこが痛いか、熱、アレルギー、今飲んでいる薬 — 携帯電話のメモに残してください。"
+  },
+  {
+   "source": "বুকে ব্যথা এবং শ্বাসকষ্ট হচ্ছে।",
+   "target": "胸が痛くて、息が苦しいです。"
+  },
+  {
+   "source": "তিন দিন ধরে জ্বর আছে।",
+   "target": "3日間熱があります。"
+  },
+  {
+   "source": "এই ওষুধে আমার allergy আছে।",
+   "target": "この薬にアレルギーがあります。"
+  },
+  {
+   "source": "ভূমিকম্প, আগুন ও Typhoon",
+   "target": "地震、火事、台風"
+  },
+  {
+   "source": "প্রথম ১০ মিনিটের সিদ্ধান্ত",
+   "target": "最初の10分間の判断"
+  },
+  {
+   "source": "ঘটনা",
+   "target": "出来事"
+  },
+  {
+   "source": "সঙ্গে সঙ্গে",
+   "target": "すぐに"
+  },
+  {
+   "source": "পরে",
+   "target": "後で"
+  },
+  {
+   "source": "ভূমিকম্প",
+   "target": "地震"
+  },
+  {
+   "source": "মাথা ঢাকুন, নিচু হন, শক্ত table-এর নিচে",
+   "target": "頭を守り、低くなり、頑丈なテーブルの下へ"
+  },
+  {
+   "source": "আগুন/গ্যাস check, official alert, safe route",
+   "target": "火事 / ガスの確認、公式アラート、安全なルート"
+  },
+  {
+   "source": "আগুন",
+   "target": "火"
+  },
+  {
+   "source": "জোরে 火事, alarm, 119",
+   "target": "大声で火事、警報、119"
+  },
+  {
+   "source": "ধোঁয়ার নিচে থেকে exit; lift নয়",
+   "target": "煙の下を通って出口へ。エレベーターではなく"
+  },
+  {
+   "source": "Weather/evacuation alert দেখুন",
+   "target": "天気 / 避難アラートを確認してください"
+  },
+  {
+   "source": "নদী/underground area এড়ান",
+   "target": "川 / 地下のエリアを避けてください"
+  },
+  {
+   "source": "সমুদ্র/নদীর মোহনা থেকে উঁচু স্থানে",
+   "target": "海 / 川の河口から高い場所へ"
+  },
+  {
+   "source": "Official all-clear না হওয়া পর্যন্ত ফিরবেন না",
+   "target": "公式の解除があるまで戻らないでください"
+  },
+  {
+   "source": "Evacuation level-এর ভাষা শিখুন",
+   "target": "避難レベルの言葉を学びましょう"
+  },
+  {
+   "source": "কমপক্ষে ৩ দিনের basic প্রস্তুতি",
+   "target": "少なくとも3日分の基本的な備え"
+  },
+  {
+   "source": "পানি",
+   "target": "水"
+  },
+  {
+   "source": "ব্যক্তি ও পরিস্থিতি অনুযায়ী",
+   "target": "人と状況に応じて"
+  },
+  {
+   "source": "খাবার",
+   "target": "食べ物"
+  },
+  {
+   "source": "নিজের prescription",
+   "target": "自分の処方薬"
+  },
+  {
+   "source": "Passport, Residence Card, insurance, contact ও address—waterproof pouch-এ copy।",
+   "target": "パスポート、在留カード、保険、連絡先、住所 — 防水ポーチにコピーを。"
+  },
+  {
+   "source": "Cash ও light",
+   "target": "現金とライト"
+  },
+  {
+   "source": "ছোট note/coin, flashlight, batteries, whistle।",
+   "target": "小さい紙幣 / 硬貨、懐中電灯、電池、笛。"
+  },
+  {
+   "source": "171 জানা রাখুন",
+   "target": "171を知っておきましょう"
+  },
+  {
+   "source": "বড় দুর্যোগে Disaster Emergency Message Dial 171 চালু হতে পারে; voice prompt Japanese। আগে family plan ঠিক করুন।",
+   "target": "大きな災害では災害用伝言ダイヤル171が使えるようになる場合があります。音声ガイダンスは日本語です。事前に家族との計画を決めてください。"
+  },
+  {
+   "source": "নিজের Emergency Card বানান",
+   "target": "自分の緊急カードを作りましょう"
+  },
+  {
+   "source": "Phone lock screen বা wallet-এ রাখুন",
+   "target": "携帯電話のロック画面か財布に入れておきましょう"
+  },
+  {
+   "source": "নাম",
+   "target": "名前"
+  },
+  {
+   "source": "আপনার নাম লিখুন",
+   "target": "名前を書いてください"
+  },
+  {
+   "source": "ঠিকানা",
+   "target": "住所"
+  },
+  {
+   "source": "Japanese address লিখুন",
+   "target": "日本の住所を書いてください"
+  },
+  {
+   "source": "নাম ও ফোন",
+   "target": "名前と電話番号"
+  },
+  {
+   "source": "যোগাযোগ নম্বর",
+   "target": "連絡先番号"
+  },
+  {
+   "source": "না থাকলে なし",
+   "target": "ない場合はなし"
+  },
+  {
+   "source": "প্রয়োজনীয় তথ্য",
+   "target": "必要な情報"
+  },
+  {
+   "source": "Print / PDF করুন",
+   "target": "印刷 / PDFにする"
+  },
+  {
+   "source": "আজই প্রস্তুত করুন",
+   "target": "今日準備しましょう"
+  },
+  {
+   "source": "110, 119 ও নিজের address মুখস্থ/Save করেছি",
+   "target": "110、119と自分の住所を覚えた / 保存した"
+  },
+  {
+   "source": "School/company emergency contact save করেছি",
+   "target": "学校 / 会社の緊急連絡先を保存した"
+  },
+  {
+   "source": "Nearest hospital, koban ও shelter map-এ save করেছি",
+   "target": "最寄りの病院、交番、避難所を地図に保存した"
+  },
+  {
+   "source": "Emergency bag প্রস্তুত করেছি",
+   "target": "非常用バッグを準備した"
+  },
+  {
+   "source": "Phone remote-find ও lock চালু করেছি",
+   "target": "携帯電話のリモート検索とロックをオンにした"
+  },
+  {
+   "source": "Family-এর সঙ্গে disaster contact plan করেছি",
+   "target": "家族と災害時の連絡計画を立てた"
+  },
+  {
+   "source": "Residence Card/passport copy নিরাপদে রেখেছি",
+   "target": "在留カード / パスポートのコピーを安全に保管した"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "公式で信頼できる情報源"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "規則は変更される可能性があります—最終決定の前に公式情報を確認してください"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "このガイドは学習のサポートを目的としています。個人の法律的・医療的な判断については、関係機関や専門家の指示に従ってください。"
+  },
+  {
+   "source": "হোম",
+   "target": "ホーム"
+  }
+ ]
+}

@@ -1,0 +1,242 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "directions-emergency",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "পথ ও জরুরি প্রয়োজন | আপনার নিহোন",
+   "target": "Đường đi và khẩn cấp | আপনার নিহোন"
+  },
+  {
+   "source": "পথ ও জরুরি প্রয়োজন",
+   "target": "Đường đi và khẩn cấp"
+  },
+  {
+   "source": "রাস্তা খুঁজে বের করা, সহায়তা চাওয়া, জরুরি পরিস্থিতি ও দৈনন্দিন প্রয়োজনীয় জাপানি বাক্য",
+   "target": "Các câu tiếng Nhật để tìm đường, nhờ giúp đỡ, tình huống khẩn cấp và nhu cầu hằng ngày"
+  },
+  {
+   "source": "পথ জিজ্ঞাসা",
+   "target": "Hỏi đường"
+  },
+  {
+   "source": "রাস্তা ও দিকনির্দেশনা",
+   "target": "Đường và chỉ dẫn"
+  },
+  {
+   "source": "~ কোথায়? (যেকোনো জায়গার নাম বসান)",
+   "target": "~ ở đâu? (điền tên bất kỳ địa điểm nào)"
+  },
+  {
+   "source": "স্টেশন কোথায়?",
+   "target": "Ga ở đâu?"
+  },
+  {
+   "source": "টয়লেট কোথায়?",
+   "target": "Nhà vệ sinh ở đâu?"
+  },
+  {
+   "source": "কনভিনিয়েন্স স্টোর কোথায়?",
+   "target": "Cửa hàng tiện lợi ở đâu?"
+  },
+  {
+   "source": "ডান দিক",
+   "target": "Phía bên phải"
+  },
+  {
+   "source": "বাম দিক",
+   "target": "Phía bên trái"
+  },
+  {
+   "source": "সোজা",
+   "target": "Thẳng"
+  },
+  {
+   "source": "পেছনে",
+   "target": "Phía sau"
+  },
+  {
+   "source": "সামনে",
+   "target": "Trước"
+  },
+  {
+   "source": "কাছাকাছি আছে?",
+   "target": "Có gần đây không?"
+  },
+  {
+   "source": "কত দূর? / কত সময় লাগবে?",
+   "target": "Bao xa? / Mất bao lâu?"
+  },
+  {
+   "source": "ধন্যবাদ, আপনার সাহায্যে বেঁচে গেলাম",
+   "target": "Cảm ơn bạn, nhờ bạn giúp mà tôi thoát nạn"
+  },
+  {
+   "source": "যাতায়াত",
+   "target": "Đi lại"
+  },
+  {
+   "source": "ট্রেন, বাস ও ট্যাক্সি",
+   "target": "Tàu, xe buýt và taxi"
+  },
+  {
+   "source": "~ যাওয়ার ট্রেন কোনটি?",
+   "target": "Tàu nào đi đến ~?"
+  },
+  {
+   "source": "এই ট্রেন ~ যায়?",
+   "target": "Tàu này có đi đến ~ không?"
+  },
+  {
+   "source": "পরবর্তী স্টেশন কোথায়?",
+   "target": "Ga tiếp theo ở đâu?"
+  },
+  {
+   "source": "~ পর্যন্ত কত টাকা? (ট্যাক্সি/ট্রেন)",
+   "target": "Đến ~ hết bao nhiêu tiền? (taxi/tàu)"
+  },
+  {
+   "source": "আমি এখানে নামব (ট্যাক্সি/বাস)",
+   "target": "Tôi sẽ xuống ở đây (taxi/xe buýt)"
+  },
+  {
+   "source": "~ পর্যন্ত যান, অনুগ্রহ করে (ট্যাক্সি)",
+   "target": "Xin hãy đi đến ~ (taxi)"
+  },
+  {
+   "source": "ম্যাপ দেখান, অনুগ্রহ করে",
+   "target": "Xin hãy cho tôi xem bản đồ"
+  },
+  {
+   "source": "স্টেশনে কীভাবে যাব?",
+   "target": "Làm thế nào để đến nhà ga?"
+  },
+  {
+   "source": "জরুরি পরিস্থিতি",
+   "target": "Tình huống khẩn cấp"
+  },
+  {
+   "source": "জরুরি ও বিপদজনক পরিস্থিতি",
+   "target": "Tình huống khẩn cấp và nguy hiểm"
+  },
+  {
+   "source": "আমাকে সাহায্য করুন!",
+   "target": "Xin hãy giúp tôi!"
+  },
+  {
+   "source": "বিপদ! / বিপজ্জনক!",
+   "target": "Nguy hiểm! / Nguy hiểm!"
+  },
+  {
+   "source": "আমি আহত হয়েছি",
+   "target": "Tôi bị thương"
+  },
+  {
+   "source": "হাসপাতাল কোথায়?",
+   "target": "Bệnh viện ở đâu?"
+  },
+  {
+   "source": "ফার্মেসি কোথায়?",
+   "target": "Hiệu thuốc ở đâu?"
+  },
+  {
+   "source": "পুলিশ ডাকুন, অনুগ্রহ করে",
+   "target": "Xin hãy gọi cảnh sát"
+  },
+  {
+   "source": "চোর! / চুরি হয়েছে!",
+   "target": "Trộm! / Bị trộm rồi!"
+  },
+  {
+   "source": "আগুন! (আগুন লেগেছে)",
+   "target": "Cháy! (Có cháy)"
+  },
+  {
+   "source": "ভূমিকম্প!",
+   "target": "Động đất!"
+  },
+  {
+   "source": "আপনি ঠিক আছেন? (অন্যকে জিজ্ঞাসা)",
+   "target": "Bạn có sao không? (Hỏi người khác)"
+  },
+  {
+   "source": "দৈনন্দিন প্রয়োজন",
+   "target": "Nhu cầu hằng ngày"
+  },
+  {
+   "source": "সাধারণ প্রয়োজন ও অনুরোধ",
+   "target": "Nhu cầu và yêu cầu thông thường"
+  },
+  {
+   "source": "আমি বুঝতে পারছি না (ফরমাল)",
+   "target": "Tôi không hiểu (lịch sự)"
+  },
+  {
+   "source": "আবার বলুন, অনুগ্রহ করে",
+   "target": "Xin hãy nói lại lần nữa"
+  },
+  {
+   "source": "ধীরে বলুন, অনুগ্রহ করে",
+   "target": "Xin hãy nói chậm lại"
+  },
+  {
+   "source": "আপনি কি ইংরেজি বলতে পারেন?",
+   "target": "Bạn có nói được tiếng Anh không?"
+  },
+  {
+   "source": "আমি খুব কম জাপানি বুঝি",
+   "target": "Tôi chỉ hiểu rất ít tiếng Nhật"
+  },
+  {
+   "source": "আমি কি ফোন ধার নিতে পারি?",
+   "target": "Tôi có thể mượn điện thoại của bạn không?"
+  },
+  {
+   "source": "Wi-Fi আছে?",
+   "target": "Có Wi-Fi không?"
+  },
+  {
+   "source": "আমার পাসপোর্ট হারিয়ে গেছে",
+   "target": "Tôi bị mất hộ chiếu"
+  },
+  {
+   "source": "দুঃখিত / আফসোস (কোনো খারাপ খবর শুনলে)",
+   "target": "Rất tiếc / Xin chia buồn (khi nghe tin xấu)"
+  },
+  {
+   "source": "অনেক কঠিন তাই না? / দুঃখজনক",
+   "target": "Khó khăn quá, phải không? / Thật đáng buồn"
+  },
+  {
+   "source": "কপি হয়েছে!",
+   "target": "Đã sao chép!"
+  },
+  {
+   "source": "হোম",
+   "target": "Trang chủ"
+  },
+  {
+   "source": "ইন্টারভিউ",
+   "target": "Phỏng vấn"
+  },
+  {
+   "source": "কুইজ",
+   "target": "Quiz"
+  },
+  {
+   "source": "গাইড",
+   "target": "Hướng dẫn"
+  },
+  {
+   "source": "বাক্য",
+   "target": "Câu"
+  },
+  {
+   "source": "মক টেস্ট",
+   "target": "Bài thi thử"
+  }
+ ]
+}

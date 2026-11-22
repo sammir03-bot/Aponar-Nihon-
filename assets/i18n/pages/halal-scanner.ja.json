@@ -1,0 +1,138 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ja",
+ "page": "halal-scanner",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Halal Food Scanner | আপনার নিহোন",
+   "target": "ハラールフードスキャナー | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপানের খাবারের barcode scan করুন অথবা প্যাকেটের",
+   "target": "日本の食品のバーコードをスキャンするか、パッケージの"
+  },
+  {
+   "source": "লিখে ingredient check করুন। সন্দেহজনক উপাদান থাকলে কারণসহ দেখাবে—তথ্য না থাকলে কখনোই অনুমান করে “Halal” বলবে না।",
+   "target": "と書いて原材料をチェックしてください。疑わしい成分がある場合は理由と一緒に表示します — 情報がない場合は決して推測で「Halal」とは言いません。"
+  },
+  {
+   "source": "Paid API নেই",
+   "target": "有料APIなし"
+  },
+  {
+   "source": "History এই ডিভাইসেই",
+   "target": "履歴はこのデバイスにのみ"
+  },
+  {
+   "source": "ক্যামেরা চালু করে barcode সামনে ধরুন",
+   "target": "カメラを起動してバーコードを前にかざしてください"
+  },
+  {
+   "source": "ক্যামেরা permission শুধু scan করার সময় ব্যবহার হবে।",
+   "target": "カメラの許可はスキャンするときだけ使われます。"
+  },
+  {
+   "source": "স্ক্যান শুরু করতে নিচের button চাপুন",
+   "target": "スキャンを始めるには下のボタンを押してください"
+  },
+  {
+   "source": "ক্যামেরা দিয়ে স্ক্যান",
+   "target": "カメラでスキャン"
+  },
+  {
+   "source": "ছবি থেকে",
+   "target": "画像から"
+  },
+  {
+   "source": "Barcode number লিখেও check করতে পারেন",
+   "target": "バーコード番号を入力してチェックすることもできます"
+  },
+  {
+   "source": "Product data Open Food Facts-এর open database থেকে নেওয়া হয়। Database-এ product না থাকলে ingredient text দিয়ে check করুন।",
+   "target": "商品データはOpen Food Factsのオープンデータベースから取得します。データベースに商品がない場合は、原材料テキストでチェックしてください。"
+  },
+  {
+   "source": "তথ্য যাচাই হচ্ছে",
+   "target": "情報を確認中"
+  },
+  {
+   "source": "Database-এর ingredient list",
+   "target": "データベースの原材料リスト"
+  },
+  {
+   "source": "copy করে paste করুন",
+   "target": "コピーして貼り付けてください"
+  },
+  {
+   "source": "Red — স্পষ্ট সমস্যা",
+   "target": "Red — 明らかな問題"
+  },
+  {
+   "source": "Pork/pig-derived বা alcohol-related ingredient signal পাওয়া গেছে।",
+   "target": "豚 / 豚由来、またはアルコール関連の原材料のサインが見つかりました。"
+  },
+  {
+   "source": "Yellow — উৎস যাচাই দরকার",
+   "target": "Yellow — 出所の確認が必要"
+  },
+  {
+   "source": "Gelatin, emulsifier, shortening-এর মতো source-dependent ingredient।",
+   "target": "ゼラチン、乳化剤、ショートニングのような、出所によって変わる原材料です。"
+  },
+  {
+   "source": "Green — স্পষ্ট signal মেলেনি",
+   "target": "Green — 明らかなサインは見つかりませんでした"
+  },
+  {
+   "source": "এটা Halal certification নয়; package/certifier দিয়ে final check করুন।",
+   "target": "これはHalal認証ではありません。パッケージ / 認証機関で最終確認をしてください。"
+  },
+  {
+   "source": "শেষ ১০টি result · শুধু এই device-এ",
+   "target": "直近10件の結果 · このデバイスのみ"
+  },
+  {
+   "source": "সব মুছুন",
+   "target": "すべて削除"
+  },
+  {
+   "source": "গুরুত্বপূর্ণ:",
+   "target": "重要："
+  },
+  {
+   "source": "এই scanner ingredient text-এর rule-based screening করে; এটি কোনো মুফতি, halal certifier বা official certification-এর বিকল্প নয়। Recipe, supplier ও ingredient source বদলাতে পারে—সন্দেহ থাকলে প্যাকেটের certification এবং manufacturer-এর তথ্য যাচাই করুন। Product data community-maintained Open Food Facts থেকে আসে, তাই তথ্য অসম্পূর্ণ বা ভুল হতে পারে।",
+   "target": "このスキャナーは原材料テキストのルールベースのスクリーニングを行います。ムフティー、ハラール認証機関、公式認証の代わりではありません。レシピ、供給元、原材料の出所は変わることがあります — 疑わしい場合はパッケージの認証とメーカー情報を確認してください。商品データはコミュニティが維持するOpen Food Factsから来るため、情報が不完全または間違っている場合があります。"
+  },
+  {
+   "source": "ভুল result রিপোর্ট করুন",
+   "target": "間違った結果を報告する"
+  },
+  {
+   "source": "যোগাযোগ",
+   "target": "お問い合わせ"
+  },
+  {
+   "source": "তথ্য:",
+   "target": "情報:"
+  },
+  {
+   "source": "· Scanner: ZXing · © ২০২৬ আপনার নিহোন",
+   "target": "· Scanner: ZXing · © 2026 আপনার নিহোন"
+  },
+  {
+   "source": "হোম",
+   "target": "ホーム"
+  },
+  {
+   "source": "হালাল স্ক্যান",
+   "target": "ハラールスキャン"
+  }
+ ]
+}

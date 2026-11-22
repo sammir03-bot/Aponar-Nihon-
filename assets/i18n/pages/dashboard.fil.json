@@ -1,0 +1,554 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "fil",
+ "page": "dashboard",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "আপনার নিহোন - ইন্টারেক্টিভ ড্যাশবোর্ড",
+   "target": "আপনার নিহোন - Interactive na Dashboard"
+  },
+  {
+   "source": "মূল সাইটে ফিরুন",
+   "target": "Bumalik sa pangunahing site"
+  },
+  {
+   "source": "ইন্টারেক্টিভ ড্যাশবোর্ড",
+   "target": "Interactive na Dashboard"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "ডেটা ভিজুয়ালাইজেশন",
+   "target": "Visualization ng Data"
+  },
+  {
+   "source": "জাপানি ভাষা শিক্ষা, খরচ, JLPT লেভেল এবং ক্যারিয়ার সম্পর্কিত সকল তথ্য একনজরে দেখুন",
+   "target": "Tingnan sa isang sulyap ang lahat ng impormasyon tungkol sa pag-aaral ng wikang Hapones, gastos, antas ng JLPT at karera"
+  },
+  {
+   "source": "০",
+   "target": "0"
+  },
+  {
+   "source": "মোট শিক্ষার্থী",
+   "target": "Kabuuang mag-aaral"
+  },
+  {
+   "source": "PDF রিসোর্স",
+   "target": "Mga Resource na PDF"
+  },
+  {
+   "source": "০%",
+   "target": "0%"
+  },
+  {
+   "source": "সাকসেস রেট",
+   "target": "Rate ng Tagumpay"
+  },
+  {
+   "source": "কুইজ প্রশ্ন",
+   "target": "Mga Tanong sa Quiz"
+  },
+  {
+   "source": "ইন্টারভিউ প্রশ্ন",
+   "target": "Mga Tanong sa Interview"
+  },
+  {
+   "source": "প্রিন্ট / সেভ PDF",
+   "target": "I-print / I-save bilang PDF"
+  },
+  {
+   "source": "শেয়ার করুন",
+   "target": "Ibahagi"
+  },
+  {
+   "source": "শেখা শুরু করুন",
+   "target": "Simulan ang Pag-aaral"
+  },
+  {
+   "source": "ডেটা বিশ্লেষণ",
+   "target": "Pagsusuri ng Data"
+  },
+  {
+   "source": "প্ল্যাটফর্ম ওভারভিউ",
+   "target": "Pangkalahatang-ideya ng Platform"
+  },
+  {
+   "source": "আপনার নিহোন প্ল্যাটফর্মের সকল রিসোর্স ও পরিসংখ্যান",
+   "target": "Lahat ng resource at istatistika ng platform ng আপনার নিহোন"
+  },
+  {
+   "source": "JLPT লেভেল ভিত্তিক রিসোর্স",
+   "target": "Mga Resource ayon sa Antas ng JLPT"
+  },
+  {
+   "source": "স্টাডি ম্যাটেরিয়াল ক্যাটেগরি",
+   "target": "Kategorya ng Materyal sa Pag-aaral"
+  },
+  {
+   "source": "বিভাগ",
+   "target": "Paghahati"
+  },
+  {
+   "source": "জাপানে মাসিক খরচের তুলনা (ইয়েনে)",
+   "target": "Paghahambing ng buwanang gastos sa Japan (sa yen)"
+  },
+  {
+   "source": "শহরভিত্তিক",
+   "target": "Ayon sa lungsod"
+  },
+  {
+   "source": "কুইজ ক্যাটেগরি বিশ্লেষণ",
+   "target": "Pagsusuri ng Kategorya ng Quiz"
+  },
+  {
+   "source": "N5 কুইজ",
+   "target": "Quiz sa N5"
+  },
+  {
+   "source": "ইন্টারভিউ প্রস্তুতি ওভারভিউ",
+   "target": "Pangkalahatang-ideya ng Paghahanda sa Interview"
+  },
+  {
+   "source": "প্রস্তুতি",
+   "target": "Paghahanda"
+  },
+  {
+   "source": "JLPT পাস রেট ট্রেন্ড (বিশ্বব্যাপী)",
+   "target": "Trend ng Rate ng Pagpasa sa JLPT (sa buong mundo)"
+  },
+  {
+   "source": "ট্রেন্ড",
+   "target": "Trend"
+  },
+  {
+   "source": "তুলনামূলক বিশ্লেষণ",
+   "target": "Paghahambing na Pagsusuri"
+  },
+  {
+   "source": "JLPT লেভেল তুলনা",
+   "target": "Paghahambing ng Antas ng JLPT"
+  },
+  {
+   "source": "প্রতিটি JLPT লেভেলের বিস্তারিত তুলনা",
+   "target": "Detalyadong paghahambing ng bawat antas ng JLPT"
+  },
+  {
+   "source": "লেভেল",
+   "target": "Level"
+  },
+  {
+   "source": "কানজি",
+   "target": "Kanji"
+  },
+  {
+   "source": "ভোকাবুলারি",
+   "target": "Vocabulary"
+  },
+  {
+   "source": "সময়কাল",
+   "target": "Panahon"
+  },
+  {
+   "source": "পাস রেট",
+   "target": "Rate ng Pagpasa"
+  },
+  {
+   "source": "ব্যবহার",
+   "target": "Paggamit"
+  },
+  {
+   "source": "১০২টি",
+   "target": "102 piraso"
+  },
+  {
+   "source": "~৮০০",
+   "target": "~800"
+  },
+  {
+   "source": "৩-৪ মাস",
+   "target": "3-4 na buwan"
+  },
+  {
+   "source": "~৪৫%",
+   "target": "~45%"
+  },
+  {
+   "source": "ভাষা স্কুলে ভর্তি",
+   "target": "Pagpasok sa paaralan ng wika"
+  },
+  {
+   "source": "৩২০টি",
+   "target": "320 piraso"
+  },
+  {
+   "source": "~১,৫০০",
+   "target": "~1,500"
+  },
+  {
+   "source": "৬-৮ মাস",
+   "target": "6-8 na buwan"
+  },
+  {
+   "source": "~৩৫%",
+   "target": "~35%"
+  },
+  {
+   "source": "দৈনন্দিন জীবন",
+   "target": "Pang-araw-araw na Buhay"
+  },
+  {
+   "source": "৬৫০টি",
+   "target": "650 piraso"
+  },
+  {
+   "source": "~৩,৭৫০",
+   "target": "~3,750"
+  },
+  {
+   "source": "১২-১৮ মাস",
+   "target": "12-18 na buwan"
+  },
+  {
+   "source": "~৩২%",
+   "target": "~32%"
+  },
+  {
+   "source": "কর্মক্ষেত্র / ভিসা",
+   "target": "Lugar ng trabaho / Visa"
+  },
+  {
+   "source": "১,০০০টি",
+   "target": "1,000 piraso"
+  },
+  {
+   "source": "~৬,০০০",
+   "target": "~6,000"
+  },
+  {
+   "source": "১৮-২৪ মাস",
+   "target": "18-24 na buwan"
+  },
+  {
+   "source": "~৩৬%",
+   "target": "~36%"
+  },
+  {
+   "source": "বিশ্ববিদ্যালয় / চাকরি",
+   "target": "Unibersidad / Trabaho"
+  },
+  {
+   "source": "২,০০০+",
+   "target": "2,000+"
+  },
+  {
+   "source": "~১০,০০০",
+   "target": "~10,000"
+  },
+  {
+   "source": "৩-৪ বছর",
+   "target": "3-4 na taon"
+  },
+  {
+   "source": "~৩০%",
+   "target": "~30%"
+  },
+  {
+   "source": "প্রফেশনাল / একাডেমিক",
+   "target": "Propesyonal / Akademiko"
+  },
+  {
+   "source": "খরচের বিশ্লেষণ",
+   "target": "Pagsusuri ng Gastos"
+  },
+  {
+   "source": "জাপানে বার্ষিক খরচ (বাংলাদেশি টাকায়)",
+   "target": "Taunang gastos sa Japan (sa taka ng Bangladesh)"
+  },
+  {
+   "source": "শহরভেদে জাপানে পড়াশোনার আনুমানিক খরচ",
+   "target": "Tinatayang gastos sa pag-aaral sa Japan ayon sa lungsod"
+  },
+  {
+   "source": "টোকিও",
+   "target": "Tokyo"
+  },
+  {
+   "source": "সবচেয়ে ব্যয়বহুল",
+   "target": "Pinakamahal"
+  },
+  {
+   "source": "১২-১৫ লাখ",
+   "target": "12-15 lakh"
+  },
+  {
+   "source": "বাৎসরিক (টাকা)",
+   "target": "Taunan (Taka)"
+  },
+  {
+   "source": "টিউশন ফি",
+   "target": "Bayad sa Tuition"
+  },
+  {
+   "source": "৫-৬ লাখ",
+   "target": "5-6 lakh"
+  },
+  {
+   "source": "বাসা ভাড়া",
+   "target": "Renta sa Bahay"
+  },
+  {
+   "source": "৪-৫ লাখ",
+   "target": "4-5 lakh"
+  },
+  {
+   "source": "খাবার ও অন্যান্য",
+   "target": "Pagkain at Iba Pa"
+  },
+  {
+   "source": "৩-৪ লাখ",
+   "target": "3-4 lakh"
+  },
+  {
+   "source": "ওসাকা / নাগোয়া",
+   "target": "Osaka / Nagoya"
+  },
+  {
+   "source": "মাঝারি খরচ",
+   "target": "Katamtamang gastos"
+  },
+  {
+   "source": "১০-১২ লাখ",
+   "target": "10-12 lakh"
+  },
+  {
+   "source": "৩ লাখ",
+   "target": "3 lakh"
+  },
+  {
+   "source": "অন্যান্য শহর",
+   "target": "Iba pang mga lungsod"
+  },
+  {
+   "source": "সবচেয়ে সাশ্রয়ী",
+   "target": "Pinaka-abot-kaya"
+  },
+  {
+   "source": "৮-১০ লাখ",
+   "target": "8-10 lakh"
+  },
+  {
+   "source": "২-৩ লাখ",
+   "target": "2-3 lakh"
+  },
+  {
+   "source": "২ লাখ",
+   "target": "2 lakh"
+  },
+  {
+   "source": "শিক্ষার পথ",
+   "target": "Landas ng Edukasyon"
+  },
+  {
+   "source": "জাপানে যাওয়ার সম্পূর্ণ রোডম্যাপ",
+   "target": "Buong roadmap papuntang Japan"
+  },
+  {
+   "source": "বাংলাদেশ থেকে জাপানে পড়াশোনার ধাপে ধাপে গাইড",
+   "target": "Hakbang-hakbang na gabay sa pag-aaral sa Japan mula sa Bangladesh"
+  },
+  {
+   "source": "ধাপ ১",
+   "target": "Hakbang 1"
+  },
+  {
+   "source": "JLPT N5 শিখুন",
+   "target": "Matutunan ang JLPT N5"
+  },
+  {
+   "source": "বেসিক জাপানি ভাষা শিখুন — হিরাগানা, কাতাকানা, ১০২টি কানজি, বেসিক গ্রামার ও ভোকাবুলারি।",
+   "target": "Matutunan ang pangunahing wikang Hapones — hiragana, katakana, 102 kanji, pangunahing grammar at vocabulary."
+  },
+  {
+   "source": "ধাপ ২",
+   "target": "Hakbang 2"
+  },
+  {
+   "source": "JLPT N4 সম্পন্ন করুন",
+   "target": "Kumpletuhin ang JLPT N4"
+  },
+  {
+   "source": "ইন্টারমিডিয়েট লেভেল — ৩২০টি কানজি, জটিল গ্রামার, দৈনন্দিন কথোপকথন দক্ষতা অর্জন।",
+   "target": "Intermediate na antas — 320 kanji, komplikadong grammar, makamit ang kasanayan sa pang-araw-araw na usapan."
+  },
+  {
+   "source": "৩-৪ মাস অতিরিক্ত",
+   "target": "Karagdagang 3-4 na buwan"
+  },
+  {
+   "source": "ধাপ ৩",
+   "target": "Hakbang 3"
+  },
+  {
+   "source": "ইন্টারভিউ প্রস্তুতি",
+   "target": "Paghahanda sa panayam"
+  },
+  {
+   "source": "Skype Interview (২৫০ প্রশ্ন) এবং Embassy Interview (১৫০ প্রশ্ন) এর জন্য পূর্ণ প্রস্তুতি নিন।",
+   "target": "Maghanda nang buo para sa Skype Interview (250 tanong) at Embassy Interview (150 tanong)."
+  },
+  {
+   "source": "১-২ মাস",
+   "target": "1-2 buwan"
+  },
+  {
+   "source": "ধাপ ৪",
+   "target": "Hakbang 4"
+  },
+  {
+   "source": "COE ও ভিসা প্রসেসিং",
+   "target": "Pagproseso ng COE at Visa"
+  },
+  {
+   "source": "Certificate of Eligibility (COE) আবেদন, ব্যাংক স্টেটমেন্ট প্রস্তুত এবং ভিসা সংগ্রহ।",
+   "target": "Aplikasyon para sa Certificate of Eligibility (COE), paghahanda ng bank statement at pagkuha ng visa."
+  },
+  {
+   "source": "৩-৬ মাস প্রসেসিং",
+   "target": "Pagproseso ng 3-6 na buwan"
+  },
+  {
+   "source": "ধাপ ৫",
+   "target": "Hakbang 5"
+  },
+  {
+   "source": "জাপানে পৌঁছান ও পড়াশোনা শুরু",
+   "target": "Dumating sa Japan at simulan ang pag-aaral"
+  },
+  {
+   "source": "ভাষা স্কুলে ভর্তি, পার্ট-টাইম জব (সপ্তাহে ২৮ ঘণ্টা), এবং উচ্চশিক্ষার প্রস্তুতি।",
+   "target": "Pagpasok sa paaralan ng wika, part-time job (28 oras bawat linggo), at paghahanda para sa mas mataas na edukasyon."
+  },
+  {
+   "source": "১-২ বছর",
+   "target": "1-2 taon"
+  },
+  {
+   "source": "ধাপ ৬",
+   "target": "Hakbang 6"
+  },
+  {
+   "source": "ক্যারিয়ার গড়ুন",
+   "target": "Buuin ang iyong Karera"
+  },
+  {
+   "source": "স্নাতক শেষে Job Hunting Visa নিয়ে IT, Engineering, Nursing সেক্টরে ক্যারিয়ার শুরু করুন।",
+   "target": "Pagkatapos ng graduation, simulan ang karera sa sektor ng IT, Engineering, Nursing gamit ang Job Hunting Visa."
+  },
+  {
+   "source": "সারাজীবন",
+   "target": "Habang-buhay"
+  },
+  {
+   "source": "রিসোর্স সারাংশ",
+   "target": "Buod ng mga Resource"
+  },
+  {
+   "source": "প্ল্যাটফর্মের সকল রিসোর্স",
+   "target": "Lahat ng resource ng platform"
+  },
+  {
+   "source": "আপনার নিহোনে যা যা পাবেন",
+   "target": "Ano ang makukuha mo sa আপনার নিহোন"
+  },
+  {
+   "source": "N5 ভোকাবুলারি",
+   "target": "Vocabulary ng N5"
+  },
+  {
+   "source": "বাংলা অনুবাদসহ শব্দভাণ্ডার",
+   "target": "Vocabulary na may pagsasalin sa Filipino"
+  },
+  {
+   "source": "৩",
+   "target": "3"
+  },
+  {
+   "source": "N5 কানজি",
+   "target": "Kanji ng N5"
+  },
+  {
+   "source": "১০২টি কানজি ক্যারেক্টার",
+   "target": "102 karakter ng kanji"
+  },
+  {
+   "source": "১",
+   "target": "1"
+  },
+  {
+   "source": "N5 গ্রামার",
+   "target": "Grammar ng N5"
+  },
+  {
+   "source": "বেসিক জাপানি ব্যাকরণ",
+   "target": "Pangunahing grammar ng Hapones"
+  },
+  {
+   "source": "২",
+   "target": "2"
+  },
+  {
+   "source": "N5 রিডিং",
+   "target": "Reading ng N5"
+  },
+  {
+   "source": "Minna no Nihongo ভিত্তিক",
+   "target": "Batay sa Minna no Nihongo"
+  },
+  {
+   "source": "N4 ভোকাবুলারি",
+   "target": "Vocabulary ng N4"
+  },
+  {
+   "source": "Lesson 25-50 ভিত্তিক",
+   "target": "Batay sa Lesson 25-50"
+  },
+  {
+   "source": "N4 কানজি",
+   "target": "Kanji ng N4"
+  },
+  {
+   "source": "৩২০টি কানজি ক্যারেক্টার",
+   "target": "320 karakter ng kanji"
+  },
+  {
+   "source": "N4 গ্রামার",
+   "target": "Grammar ng N4"
+  },
+  {
+   "source": "ইন্টারমিডিয়েট ব্যাকরণ",
+   "target": "Intermediate na grammar"
+  },
+  {
+   "source": "N4 রিডিং",
+   "target": "Reading ng N4"
+  },
+  {
+   "source": "Lesson 25-50 রিডিং",
+   "target": "Reading ng Lesson 25-50"
+  },
+  {
+   "source": "© ২০২৬",
+   "target": "© 2026"
+  },
+  {
+   "source": "| ইন্টারেক্টিভ ড্যাশবোর্ড | Created by SAMMIR",
+   "target": "| Interactive na Dashboard | Created by SAMMIR"
+  }
+ ]
+}

@@ -1,0 +1,438 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "fil",
+ "page": "japan-emergency-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জরুরি সহায়তা ও নিরাপত্তা | আপনার নিহোন",
+   "target": "Tulong na pang-emergency at kaligtasan | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "Gabay sa Buhay sa Japan"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "Lahat ng Gabay"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "Pagkatapos Dumating"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "Tirahan at Araw-araw na Buhay"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "Tren at Platform"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Paggamit ng Google Maps"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "Part-time na Trabaho"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "Emergency na Tulong"
+  },
+  {
+   "source": "জরুরি সহায়তা ও নিরাপত্তা",
+   "target": "Tulong na pang-emergency at kaligtasan"
+  },
+  {
+   "source": "110, 119, lost property, hospital, earthquake, typhoon ও emergency bag—জাপানে বিপদের সময় কী করবেন তা স্পষ্ট গাইড।",
+   "target": "110, 119, lost property, ospital, lindol, bagyo at emergency bag — malinaw na gabay kung ano ang gagawin sa oras ng panganib sa Japan."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "Paliwanag sa Bengali"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "Pangungusap na Hapon"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "Aktwal na Hakbang"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "Ang iyong progreso"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 tapos na"
+  },
+  {
+   "source": "নম্বর",
+   "target": "Numero"
+  },
+  {
+   "source": "হারানো",
+   "target": "Nawala"
+  },
+  {
+   "source": "তিনটি জরুরি নম্বর মুখস্থ করুন",
+   "target": "Kabisaduhin ang tatlong numerong pang-emergency"
+  },
+  {
+   "source": "কোন পরিস্থিতিতে কোন নম্বর",
+   "target": "Aling numero para sa aling sitwasyon"
+  },
+  {
+   "source": "সমুদ্র দুর্ঘটনা",
+   "target": "Aksidente sa dagat"
+  },
+  {
+   "source": "ফোনে প্রথমে কী বলবেন",
+   "target": "Ano ang unang sasabihin sa telepono"
+  },
+  {
+   "source": "কী হয়েছে → কোথায় → কয়জন → আপনার নাম/ফোন। Location না জানলে nearby building, station, shop sign বা map address পড়ুন।",
+   "target": "Ano ang nangyari → saan → ilan ang tao → pangalan/numero ng telepono mo. Kung hindi mo alam ang lokasyon, basahin ang kalapit na gusali, istasyon, karatula ng tindahan o address sa mapa."
+  },
+  {
+   "source": "শান্তভাবে ছোট বাক্যে বলুন",
+   "target": "Magsalita nang mahinahon sa maiikling pangungusap"
+  },
+  {
+   "source": "অ্যাম্বুলেন্স দরকার।",
+   "target": "Kailangan ng ambulansya."
+  },
+  {
+   "source": "আগুন লেগেছে।",
+   "target": "May sunog."
+  },
+  {
+   "source": "দুর্ঘটনা হয়েছে।",
+   "target": "Nagkaroon ng aksidente."
+  },
+  {
+   "source": "স্থানটি ○○।",
+   "target": "Ang lugar ay ○○."
+  },
+  {
+   "source": "আমি বেশি জাপানি বলতে পারি না।",
+   "target": "Hindi ako gaanong nakakapagsalita ng Hapon."
+  },
+  {
+   "source": "ইংরেজি দোভাষী চাই।",
+   "target": "Gusto ko ng interpreter sa Ingles."
+  },
+  {
+   "source": "কল কেটে দেবেন না",
+   "target": "Huwag ibaba ang tawag"
+  },
+  {
+   "source": "Operator প্রশ্ন করবে। Location sharing/GPS চালু রাখুন এবং নির্দেশ না দেওয়া পর্যন্ত line-এ থাকুন।",
+   "target": "Magtatanong ang operator. Panatilihing naka-on ang location sharing/GPS at manatili sa linya hanggang sabihin sa iyo."
+  },
+  {
+   "source": "জিনিস হারালে কী করবেন",
+   "target": "Ano ang gagawin kung may nawala kang gamit"
+  },
+  {
+   "source": "Train, road ও দোকান—ভিন্ন পথ",
+   "target": "Tren, kalsada at tindahan — iba't ibang paraan"
+  },
+  {
+   "source": "ট্রেন/স্টেশনে হারালে station staff",
+   "target": "Kung nawala sa tren/istasyon, sa station staff"
+  },
+  {
+   "source": "Line, train time, car number, ওঠা/নামা station, item color বলুন। Receipt/serial থাকলে দেখান।",
+   "target": "Sabihin ang linya, oras ng tren, numero ng bagon, istasyon kung saan sumakay/bumaba at kulay ng gamit. Kung may resibo/serial, ipakita ito."
+  },
+  {
+   "source": "রাস্তা বা public place-এ হারালে Koban",
+   "target": "Kung nawala sa kalsada o pampublikong lugar, sa Koban"
+  },
+  {
+   "source": "交番（こうばん） বা police station-এ 遺失届（いしつとどけ） করুন।",
+   "target": "Maghain ng 遺失届（いしつとどけ） sa 交番（こうばん） o police station."
+  },
+  {
+   "source": "Phone হারালে remote lock",
+   "target": "Kung nawala ang telepono, remote lock"
+  },
+  {
+   "source": "Find My Device/Find My iPhone, SIM suspension, payment app lock ও police report করুন।",
+   "target": "Gawin ang Find My Device/Find My iPhone, suspensyon ng SIM, pag-lock ng payment app at police report."
+  },
+  {
+   "source": "Residence Card হারালে দ্রুত ব্যবস্থা",
+   "target": "Kung nawala ang Residence Card, kumilos agad"
+  },
+  {
+   "source": "Police report-এর পর Immigration reissuance procedure অনুসরণ করুন; official deadline আছে।",
+   "target": "Pagkatapos ng police report, sundin ang proseso ng muling pag-isyu ng Immigration; may opisyal na deadline."
+  },
+  {
+   "source": "মানিব্যাগ হারিয়েছি।",
+   "target": "Nawala ang pitaka ko."
+  },
+  {
+   "source": "ট্রেনের ভেতরে ফেলে এসেছি।",
+   "target": "Naiwan ko ito sa loob ng tren."
+  },
+  {
+   "source": "Lost property report করতে চাই।",
+   "target": "Gusto kong maghain ng lost property report."
+  },
+  {
+   "source": "অসুস্থতা ও Hospital",
+   "target": "Sakit at ospital"
+  },
+  {
+   "source": "Emergency ও non-emergency আলাদা করুন",
+   "target": "Paghiwalayin ang emergency at non-emergency"
+  },
+  {
+   "source": "জীবন-ঝুঁকি হলে 119",
+   "target": "Kung nanganganib ang buhay, 119"
+  },
+  {
+   "source": "শ্বাস নিতে না পারা, অচেতন, গুরুতর রক্তপাত, severe injury ইত্যাদিতে দেরি করবেন না।",
+   "target": "Huwag mag-antala sa mga kaso tulad ng hirap huminga, walang malay, matinding pagdurugo at severe injury."
+  },
+  {
+   "source": "Non-emergency হলে clinic/hospital",
+   "target": "Kung non-emergency, sa clinic/ospital"
+  },
+  {
+   "source": "Department search করুন: 内科 internal medicine, 外科 surgery, 歯科 dental, 皮膚科 dermatology।",
+   "target": "Maghanap ng department: 内科 internal medicine, 外科 surgery, 歯科 dental, 皮膚科 dermatology."
+  },
+  {
+   "source": "সঙ্গে নিন",
+   "target": "Dalhin"
+  },
+  {
+   "source": "লক্ষণ লিখে দেখান",
+   "target": "Isulat ang mga sintomas at ipakita"
+  },
+  {
+   "source": "কখন শুরু, কোথায় ব্যথা, fever, allergy, current medicine—phone note-এ রাখুন।",
+   "target": "Isulat sa note ng telepono kung kailan nagsimula, saan masakit, lagnat, allergy at kasalukuyang gamot."
+  },
+  {
+   "source": "বুকে ব্যথা এবং শ্বাসকষ্ট হচ্ছে।",
+   "target": "Sumasakit ang dibdib ko at nahihirapan akong huminga."
+  },
+  {
+   "source": "তিন দিন ধরে জ্বর আছে।",
+   "target": "Tatlong araw na akong may lagnat."
+  },
+  {
+   "source": "এই ওষুধে আমার allergy আছে।",
+   "target": "May allergy ako sa gamot na ito."
+  },
+  {
+   "source": "ভূমিকম্প, আগুন ও Typhoon",
+   "target": "Lindol, sunog at bagyo"
+  },
+  {
+   "source": "প্রথম ১০ মিনিটের সিদ্ধান্ত",
+   "target": "Mga desisyon sa unang 10 minuto"
+  },
+  {
+   "source": "ঘটনা",
+   "target": "Pangyayari"
+  },
+  {
+   "source": "সঙ্গে সঙ্গে",
+   "target": "Kaagad"
+  },
+  {
+   "source": "পরে",
+   "target": "pagkatapos"
+  },
+  {
+   "source": "ভূমিকম্প",
+   "target": "Lindol"
+  },
+  {
+   "source": "মাথা ঢাকুন, নিচু হন, শক্ত table-এর নিচে",
+   "target": "Takpan ang ulo, yumuko, pumunta sa ilalim ng matibay na mesa"
+  },
+  {
+   "source": "আগুন/গ্যাস check, official alert, safe route",
+   "target": "Suriin ang sunog/gas, opisyal na alerto, ligtas na ruta"
+  },
+  {
+   "source": "আগুন",
+   "target": "apoy"
+  },
+  {
+   "source": "জোরে 火事, alarm, 119",
+   "target": "Sumigaw ng 火事, alarm, 119"
+  },
+  {
+   "source": "ধোঁয়ার নিচে থেকে exit; lift নয়",
+   "target": "Manatili sa ilalim ng usok papunta sa exit; hindi sa lift"
+  },
+  {
+   "source": "Weather/evacuation alert দেখুন",
+   "target": "Tingnan ang alerto tungkol sa panahon/paglikas"
+  },
+  {
+   "source": "নদী/underground area এড়ান",
+   "target": "Iwasan ang ilog/underground area"
+  },
+  {
+   "source": "সমুদ্র/নদীর মোহনা থেকে উঁচু স্থানে",
+   "target": "Pumunta sa mataas na lugar mula sa dagat/bibig ng ilog"
+  },
+  {
+   "source": "Official all-clear না হওয়া পর্যন্ত ফিরবেন না",
+   "target": "Huwag bumalik hanggang sa magkaroon ng opisyal na all-clear"
+  },
+  {
+   "source": "Evacuation level-এর ভাষা শিখুন",
+   "target": "Matutunan ang wika ng antas ng paglikas"
+  },
+  {
+   "source": "কমপক্ষে ৩ দিনের basic প্রস্তুতি",
+   "target": "Pangunahing paghahanda para sa hindi bababa sa 3 araw"
+  },
+  {
+   "source": "পানি",
+   "target": "tubig"
+  },
+  {
+   "source": "ব্যক্তি ও পরিস্থিতি অনুযায়ী",
+   "target": "Ayon sa tao at sitwasyon"
+  },
+  {
+   "source": "খাবার",
+   "target": "Pagkain"
+  },
+  {
+   "source": "নিজের prescription",
+   "target": "Sarili mong reseta"
+  },
+  {
+   "source": "Passport, Residence Card, insurance, contact ও address—waterproof pouch-এ copy।",
+   "target": "Kopya ng pasaporte, Residence Card, insurance, contact at address — sa waterproof pouch."
+  },
+  {
+   "source": "Cash ও light",
+   "target": "Cash at ilaw"
+  },
+  {
+   "source": "ছোট note/coin, flashlight, batteries, whistle।",
+   "target": "Maliit na papel na pera/barya, flashlight, baterya, pito."
+  },
+  {
+   "source": "171 জানা রাখুন",
+   "target": "Alamin ang 171"
+  },
+  {
+   "source": "বড় দুর্যোগে Disaster Emergency Message Dial 171 চালু হতে পারে; voice prompt Japanese। আগে family plan ঠিক করুন।",
+   "target": "Sa malaking sakuna, maaaring paganahin ang Disaster Emergency Message Dial 171; Hapon ang voice prompt. Ayusin muna ang plano ng pamilya."
+  },
+  {
+   "source": "নিজের Emergency Card বানান",
+   "target": "Gumawa ng sarili mong Emergency Card"
+  },
+  {
+   "source": "Phone lock screen বা wallet-এ রাখুন",
+   "target": "Ilagay ito sa lock screen ng telepono o sa pitaka"
+  },
+  {
+   "source": "নাম",
+   "target": "Pangalan"
+  },
+  {
+   "source": "আপনার নাম লিখুন",
+   "target": "Isulat ang pangalan mo"
+  },
+  {
+   "source": "ঠিকানা",
+   "target": "Address"
+  },
+  {
+   "source": "Japanese address লিখুন",
+   "target": "Isulat ang address sa Japan"
+  },
+  {
+   "source": "নাম ও ফোন",
+   "target": "Pangalan at telepono"
+  },
+  {
+   "source": "যোগাযোগ নম্বর",
+   "target": "Numero ng contact"
+  },
+  {
+   "source": "না থাকলে なし",
+   "target": "Kung wala, なし"
+  },
+  {
+   "source": "প্রয়োজনীয় তথ্য",
+   "target": "Mahalagang impormasyon"
+  },
+  {
+   "source": "Print / PDF করুন",
+   "target": "I-print / Gawing PDF"
+  },
+  {
+   "source": "আজই প্রস্তুত করুন",
+   "target": "Ihanda ito ngayon"
+  },
+  {
+   "source": "110, 119 ও নিজের address মুখস্থ/Save করেছি",
+   "target": "Kabisado/na-save ko na ang 110, 119 at sarili kong address"
+  },
+  {
+   "source": "School/company emergency contact save করেছি",
+   "target": "Na-save ko na ang emergency contact ng paaralan/kumpanya"
+  },
+  {
+   "source": "Nearest hospital, koban ও shelter map-এ save করেছি",
+   "target": "Na-save ko na sa mapa ang pinakamalapit na ospital, koban at shelter"
+  },
+  {
+   "source": "Emergency bag প্রস্তুত করেছি",
+   "target": "Naihanda ko na ang emergency bag"
+  },
+  {
+   "source": "Phone remote-find ও lock চালু করেছি",
+   "target": "Na-on ko na ang remote-find at lock ng telepono"
+  },
+  {
+   "source": "Family-এর সঙ্গে disaster contact plan করেছি",
+   "target": "Nagplano na ako kasama ang pamilya ng contact plan sa sakuna"
+  },
+  {
+   "source": "Residence Card/passport copy নিরাপদে রেখেছি",
+   "target": "Ligtas kong itinago ang kopya ng Residence Card/pasaporte"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "Mga opisyal at maaasahang mapagkukunan"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "Maaaring magbago ang mga panuntunan—tingnan ang opisyal na impormasyon bago gumawa ng huling desisyon"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "Ang gabay na ito ay para sa pag-aaral. Sundin ang mga tagubilin ng nauugnay na opisina o propesyonal para sa mga personal na desisyong legal o medikal."
+  },
+  {
+   "source": "হোম",
+   "target": "Home"
+  }
+ ]
+}

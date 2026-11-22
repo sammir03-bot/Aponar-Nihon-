@@ -1,0 +1,414 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "japan-google-maps-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Google Maps দিয়ে যাতায়াত | আপনার নিহোন",
+   "target": "Đi lại bằng Google Maps | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "Cẩm nang Cuộc sống Nhật Bản"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "Tất cả cẩm nang"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "Sau khi đến"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "Nhà ở và Đời sống hàng ngày"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "Tàu điện và Sân ga"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Sử dụng Google Maps"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "Việc làm thêm"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "Hỗ trợ khẩn cấp"
+  },
+  {
+   "source": "Google Maps দিয়ে যাতায়াত",
+   "target": "Đi lại bằng Google Maps"
+  },
+  {
+   "source": "Destination search থেকে platform, transfer, exit ও building entrance পর্যন্ত—Google Maps-এর প্রতিটি লেখা কী বোঝায় তা ধাপে ধাপে।",
+   "target": "Từ tìm điểm đến đến sân ga, chuyển tuyến, cửa ra và lối vào tòa nhà — từng bước giải thích mỗi dòng chữ trên Google Maps có nghĩa là gì."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "Giải thích bằng tiếng Bengali"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "Câu tiếng Nhật"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "Các bước thực tế"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "Tiến độ của bạn"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "Hoàn thành 0/0"
+  },
+  {
+   "source": "সঠিক Destination Search",
+   "target": "Tìm Destination đúng cách"
+  },
+  {
+   "source": "একই নামের ভুল জায়গা এড়ান",
+   "target": "Tránh nhầm nơi có cùng tên"
+  },
+  {
+   "source": "শুধু দোকানের নাম নয়, branch দিন",
+   "target": "Đừng chỉ ghi tên cửa hàng, hãy thêm chi nhánh"
+  },
+  {
+   "source": "যেমন “○○ 新宿店” বা postal address লিখুন।",
+   "target": "Ví dụ, viết “○○ 新宿店” hoặc địa chỉ bưu điện."
+  },
+  {
+   "source": "Photo ও category মিলান",
+   "target": "Đối chiếu Photo và category"
+  },
+  {
+   "source": "Restaurant, office, school বা park—map pin-এর category এবং exterior photo দেখুন।",
+   "target": "Nhà hàng, văn phòng, trường học hay công viên — hãy xem category của ghim trên map và ảnh bên ngoài."
+  },
+  {
+   "source": "Address copy করে message-এর সঙ্গে মিলান",
+   "target": "Sao chép Address và đối chiếu với tin nhắn"
+  },
+  {
+   "source": "Interview/training address-এর ward, chōme, building ও floor সব দেখুন।",
+   "target": "Đối với địa chỉ phỏng vấn/đào tạo, hãy xem tất cả: quận, chōme, tòa nhà và tầng."
+  },
+  {
+   "source": "Save ও label করুন",
+   "target": "Lưu và gắn nhãn"
+  },
+  {
+   "source": "School, Home, Work-এর মতো label দিলে পরেরবার দ্রুত route পাবেন।",
+   "target": "Nếu gắn nhãn như School, Home, Work, lần sau bạn sẽ tìm được tuyến đường nhanh hơn."
+  },
+  {
+   "source": "Directions থেকে Transit বাছাই",
+   "target": "Chọn Transit từ Directions"
+  },
+  {
+   "source": "From ও To ঠিক করার নিয়ম",
+   "target": "Cách đặt From và To đúng"
+  },
+  {
+   "source": "Directions চাপুন",
+   "target": "Nhấn Directions"
+  },
+  {
+   "source": "Starting point “Your location” ঠিক আছে কি না দেখুন; বাসা থেকে গেলে home address দিন।",
+   "target": "Kiểm tra xem điểm bắt đầu “Your location” có đúng không; nếu đi từ nhà, hãy nhập địa chỉ nhà."
+  },
+  {
+   "source": "Train icon নির্বাচন করুন",
+   "target": "Chọn biểu tượng Train"
+  },
+  {
+   "source": "Public transit route দেখতে train/bus icon ব্যবহার করুন।",
+   "target": "Dùng biểu tượng tàu/xe buýt để xem tuyến đường bằng phương tiện công cộng."
+  },
+  {
+   "source": "Leave now / Depart at / Arrive by বাছুন",
+   "target": "Chọn Leave now / Depart at / Arrive by"
+  },
+  {
+   "source": "Interview হলে “Arrive by” দিয়ে 15–20 মিনিট buffer রাখুন।",
+   "target": "Nếu đi phỏng vấn, hãy dùng “Arrive by” và để dư 15–20 phút."
+  },
+  {
+   "source": "Options দেখুন",
+   "target": "Xem Options"
+  },
+  {
+   "source": "কম transfer, কম walking, bus/train preference প্রয়োজনমতো দিন।",
+   "target": "Đặt ít chuyển tuyến, ít đi bộ, ưu tiên xe buýt/tàu tùy nhu cầu."
+  },
+  {
+   "source": "Route Screen-এর প্রতিটি অংশ",
+   "target": "Từng phần của Route Screen"
+  },
+  {
+   "source": "সময়, ভাড়া, walking ও transfer পড়ুন",
+   "target": "Đọc thời gian, giá vé, đi bộ và chuyển tuyến"
+  },
+  {
+   "source": "চিহ্ন",
+   "target": "Dấu hiệu, ký hiệu"
+  },
+  {
+   "source": "অর্থ",
+   "target": "Ý nghĩa"
+  },
+  {
+   "source": "সিদ্ধান্ত",
+   "target": "Quyết định"
+  },
+  {
+   "source": "Departure ও arrival",
+   "target": "Khởi hành và đến nơi"
+  },
+  {
+   "source": "বাসা থেকে station walking যোগ করুন",
+   "target": "Cộng thêm thời gian đi bộ từ nhà đến ga"
+  },
+  {
+   "source": "আনুমানিক fare",
+   "target": "Giá vé ước tính"
+  },
+  {
+   "source": "IC balance রাখুন",
+   "target": "Giữ số dư IC"
+  },
+  {
+   "source": "দুইবার line বদল",
+   "target": "Đổi tuyến hai lần"
+  },
+  {
+   "source": "Beginner হলে কম transfer route দেখুন",
+   "target": "Nếu bạn là người mới, hãy xem tuyến ít chuyển tuyến"
+  },
+  {
+   "source": "Walking অংশ",
+   "target": "Phần đi bộ"
+  },
+  {
+   "source": "Exit-এর পর সময়",
+   "target": "Thời gian sau khi ra khỏi cửa ra"
+  },
+  {
+   "source": "সম্ভাব্য platform",
+   "target": "Sân ga dự kiến"
+  },
+  {
+   "source": "Station board-এ confirm",
+   "target": "Xác nhận trên bảng ở nhà ga"
+  },
+  {
+   "source": "কাছের exit",
+   "target": "Cửa ra gần nhất"
+  },
+  {
+   "source": "Sign follow করুন",
+   "target": "Đi theo biển chỉ dẫn"
+  },
+  {
+   "source": "Platform ও Direction বোঝা",
+   "target": "Hiểu Platform và Direction"
+  },
+  {
+   "source": "Maps-এর লেখাকে station sign-এর সঙ্গে মিলান",
+   "target": "Đối chiếu chữ trên Maps với biển ở nhà ga"
+  },
+  {
+   "source": "Line name + direction একসঙ্গে পড়ুন",
+   "target": "Đọc tên tuyến + hướng cùng nhau"
+  },
+  {
+   "source": "শুধু platform number নয়; line এবং “for ○○” মিলতে হবে।",
+   "target": "Không chỉ số sân ga; tuyến và “for ○○” cũng phải khớp."
+  },
+  {
+   "source": "Maps platform পরিবর্তন হতে পারে",
+   "target": "Platform trên Maps có thể thay đổi"
+  },
+  {
+   "source": "Service disruption বা operational change-এ actual departure board-ই চূড়ান্ত।",
+   "target": "Khi có gián đoạn dịch vụ hoặc thay đổi vận hành, bảng khởi hành thực tế là quyết định cuối cùng."
+  },
+  {
+   "source": "Train type দেখুন",
+   "target": "Xem loại tàu"
+  },
+  {
+   "source": "Maps যে service বলেছে—Local/Rapid—সেটিই ধরুন, অথবা আপনার station stop list যাচাই করুন।",
+   "target": "Hãy đi đúng dịch vụ mà Maps đã nói — Local/Rapid — hoặc kiểm tra danh sách ga dừng của bạn."
+  },
+  {
+   "source": "Google নিজেও actual traffic rules/sign confirm করতে বলে। সন্দেহ হলে station staff-কে দেখান।",
+   "target": "Chính Google cũng khuyên xác nhận quy tắc giao thông/biển báo thực tế. Nếu nghi ngờ, hãy cho station staff xem."
+  },
+  {
+   "source": "স্টেশন থেকে Destination পর্যন্ত",
+   "target": "Từ nhà ga đến Destination"
+  },
+  {
+   "source": "Exit, compass ও Street View",
+   "target": "Cửa ra, la bàn và Street View"
+  },
+  {
+   "source": "Exit number আগে দেখুন",
+   "target": "Xem số cửa ra trước"
+  },
+  {
+   "source": "বড় station-এ ভুল exit নিলে 10–20 মিনিট নষ্ট হতে পারে।",
+   "target": "Ở ga lớn, nếu ra nhầm cửa, bạn có thể mất 10–20 phút."
+  },
+  {
+   "source": "Blue dot-এর beam দেখুন",
+   "target": "Xem tia của chấm xanh"
+  },
+  {
+   "source": "আপনি কোন দিকে মুখ করে আছেন তা beam দেখায়; গোল হয়ে ঘুরলে compass calibrate করুন।",
+   "target": "Tia cho thấy bạn đang hướng về phía nào; nếu nó quay vòng, hãy hiệu chỉnh la bàn."
+  },
+  {
+   "source": "Street View দিয়ে building চিনুন",
+   "target": "Nhận biết tòa nhà bằng Street View"
+  },
+  {
+   "source": "Interview-এর আগের দিন entrance, signboard ও nearby landmark দেখে নিন।",
+   "target": "Ngày trước buổi phỏng vấn, hãy xem trước lối vào, bảng hiệu và địa điểm nổi bật gần đó."
+  },
+  {
+   "source": "Building floor আলাদা করে লিখুন",
+   "target": "Ghi riêng tầng của tòa nhà"
+  },
+  {
+   "source": "Map pin সাধারণত building পর্যন্ত নেয়; floor/room message থেকে দেখুন।",
+   "target": "Ghim trên map thường chỉ đến tòa nhà; hãy xem tầng/phòng trong tin nhắn."
+  },
+  {
+   "source": "একটি বাস্তব Practice",
+   "target": "Một bài luyện tập thực tế"
+  },
+  {
+   "source": "স্কুল/কাজে যাওয়ার আগের রাতের rehearsal",
+   "target": "Diễn tập vào đêm trước khi đi học/đi làm"
+  },
+  {
+   "source": "ঠিক address খুলে “Work interview” নামে save করুন।",
+   "target": "Mở đúng địa chỉ và lưu với tên “Work interview”."
+  },
+  {
+   "source": "Arrive by সেট",
+   "target": "Đặt Arrive by"
+  },
+  {
+   "source": "Appointment 19:00 হলে 18:40 arrival দিন।",
+   "target": "Nếu cuộc hẹn lúc 19:00, hãy đặt giờ đến là 18:40."
+  },
+  {
+   "source": "Departure station, line, direction, transfer, platform, exit—প্রতিটি screen রাখুন।",
+   "target": "Giữ lại từng màn hình: ga khởi hành, tuyến, hướng, chuyển tuyến, sân ga, cửa ra."
+  },
+  {
+   "source": "Alternative route দেখুন",
+   "target": "Xem tuyến đường thay thế"
+  },
+  {
+   "source": "Delay হলে দ্বিতীয় route কোনটি তা আগে জানুন।",
+   "target": "Hãy biết trước tuyến thứ hai là gì nếu bị trễ."
+  },
+  {
+   "source": "Battery ও data প্রস্তুত",
+   "target": "Chuẩn bị pin và dữ liệu"
+  },
+  {
+   "source": "Power bank, phone charge এবং address text offline রাখুন।",
+   "target": "Hãy mang sạc dự phòng, giữ điện thoại đủ pin và lưu địa chỉ dạng văn bản ngoại tuyến."
+  },
+  {
+   "source": "রাস্তা ও station-এ জিজ্ঞেস করার বাক্য",
+   "target": "Các câu để hỏi trên đường và ở nhà ga"
+  },
+  {
+   "source": "Map দেখিয়ে বলুন",
+   "target": "Hãy chỉ vào bản đồ và nói"
+  },
+  {
+   "source": "আমি এই জায়গায় যেতে চাই।",
+   "target": "Tôi muốn đến nơi này."
+  },
+  {
+   "source": "এই exit-টাই সঠিক?",
+   "target": "Lối ra này có đúng không?"
+  },
+  {
+   "source": "এই map-টা একটু দেখবেন?",
+   "target": "Bạn có thể xem bản đồ này giúp tôi một chút không?"
+  },
+  {
+   "source": "এখান থেকে হেঁটে কত মিনিট?",
+   "target": "Từ đây đi bộ mất bao nhiêu phút?"
+  },
+  {
+   "source": "বের হওয়ার আগে ৩০ সেকেন্ডে",
+   "target": "Trong 30 giây trước khi ra ngoài"
+  },
+  {
+   "source": "Destination branch/address ঠিক আছে",
+   "target": "Chi nhánh/địa chỉ điểm đến đã đúng"
+  },
+  {
+   "source": "Departure বা Arrive by সময় ঠিক করেছি",
+   "target": "Đã đặt đúng giờ Departure hoặc Arrive by"
+  },
+  {
+   "source": "Line, direction, train type দেখেছি",
+   "target": "Đã xem tuyến, hướng đi và loại tàu"
+  },
+  {
+   "source": "Transfer station screenshot আছে",
+   "target": "Đã có ảnh chụp màn hình ga chuyển tuyến"
+  },
+  {
+   "source": "Platform actual board-এ মিলাব",
+   "target": "Sẽ đối chiếu sân ga với bảng thực tế"
+  },
+  {
+   "source": "Exit number save করেছি",
+   "target": "Đã lưu số lối ra"
+  },
+  {
+   "source": "Battery/data ও alternative route প্রস্তুত",
+   "target": "Pin/dữ liệu và tuyến đường thay thế đã sẵn sàng"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "Nguồn chính thức và đáng tin cậy"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "Quy định có thể thay đổi—vui lòng kiểm tra thông tin chính thức trước khi quyết định cuối cùng"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "Hướng dẫn này mang tính chất tham khảo học tập. Đối với các quyết định pháp lý/y tế cá nhân, vui lòng tuân theo hướng dẫn của cơ quan hoặc chuyên gia liên quan."
+  },
+  {
+   "source": "হোম",
+   "target": "Trang chủ"
+  }
+ ]
+}

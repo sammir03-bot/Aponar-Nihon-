@@ -1,0 +1,242 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "fil",
+ "page": "directions-emergency",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "পথ ও জরুরি প্রয়োজন | আপনার নিহোন",
+   "target": "Direksyon at Pangangailangang Pang-emergency | আপনার নিহোন"
+  },
+  {
+   "source": "পথ ও জরুরি প্রয়োজন",
+   "target": "Direksyon at Pangangailangang Pang-emergency"
+  },
+  {
+   "source": "রাস্তা খুঁজে বের করা, সহায়তা চাওয়া, জরুরি পরিস্থিতি ও দৈনন্দিন প্রয়োজনীয় জাপানি বাক্য",
+   "target": "Mga pangungusap sa Hapones para sa paghahanap ng daan, paghingi ng tulong, mga sitwasyong pang-emergency at pang-araw-araw na pangangailangan"
+  },
+  {
+   "source": "পথ জিজ্ঞাসা",
+   "target": "Pagtatanong ng Direksyon"
+  },
+  {
+   "source": "রাস্তা ও দিকনির্দেশনা",
+   "target": "Daan at Direksyon"
+  },
+  {
+   "source": "~ কোথায়? (যেকোনো জায়গার নাম বসান)",
+   "target": "~ nasaan? (ilagay ang pangalan ng anumang lugar)"
+  },
+  {
+   "source": "স্টেশন কোথায়?",
+   "target": "Nasaan ang istasyon?"
+  },
+  {
+   "source": "টয়লেট কোথায়?",
+   "target": "Nasaan ang banyo?"
+  },
+  {
+   "source": "কনভিনিয়েন্স স্টোর কোথায়?",
+   "target": "Nasaan ang convenience store?"
+  },
+  {
+   "source": "ডান দিক",
+   "target": "Kanang bahagi"
+  },
+  {
+   "source": "বাম দিক",
+   "target": "Kaliwang bahagi"
+  },
+  {
+   "source": "সোজা",
+   "target": "tuwid"
+  },
+  {
+   "source": "পেছনে",
+   "target": "Sa likod"
+  },
+  {
+   "source": "সামনে",
+   "target": "harap"
+  },
+  {
+   "source": "কাছাকাছি আছে?",
+   "target": "May malapit ba?"
+  },
+  {
+   "source": "কত দূর? / কত সময় লাগবে?",
+   "target": "Gaano kalayo? / Gaano katagal?"
+  },
+  {
+   "source": "ধন্যবাদ, আপনার সাহায্যে বেঁচে গেলাম",
+   "target": "Salamat, nailigtas mo ako sa tulong mo"
+  },
+  {
+   "source": "যাতায়াত",
+   "target": "Transportasyon"
+  },
+  {
+   "source": "ট্রেন, বাস ও ট্যাক্সি",
+   "target": "Tren, Bus at Taxi"
+  },
+  {
+   "source": "~ যাওয়ার ট্রেন কোনটি?",
+   "target": "Aling tren ang papuntang ~?"
+  },
+  {
+   "source": "এই ট্রেন ~ যায়?",
+   "target": "Pupunta ba ang tren na ito sa ~?"
+  },
+  {
+   "source": "পরবর্তী স্টেশন কোথায়?",
+   "target": "Nasaan ang susunod na istasyon?"
+  },
+  {
+   "source": "~ পর্যন্ত কত টাকা? (ট্যাক্সি/ট্রেন)",
+   "target": "Magkano hanggang ~? (Taxi/Tren)"
+  },
+  {
+   "source": "আমি এখানে নামব (ট্যাক্সি/বাস)",
+   "target": "Dito na ako bababa (Taxi/Bus)"
+  },
+  {
+   "source": "~ পর্যন্ত যান, অনুগ্রহ করে (ট্যাক্সি)",
+   "target": "Pumunta hanggang ~, pakiusap (Taxi)"
+  },
+  {
+   "source": "ম্যাপ দেখান, অনুগ্রহ করে",
+   "target": "Ipakita ang mapa, pakiusap"
+  },
+  {
+   "source": "স্টেশনে কীভাবে যাব?",
+   "target": "Paano ako makakarating sa istasyon?"
+  },
+  {
+   "source": "জরুরি পরিস্থিতি",
+   "target": "Sitwasyong pang-emergency"
+  },
+  {
+   "source": "জরুরি ও বিপদজনক পরিস্থিতি",
+   "target": "Mga sitwasyong pang-emergency at mapanganib"
+  },
+  {
+   "source": "আমাকে সাহায্য করুন!",
+   "target": "Tulungan ninyo ako!"
+  },
+  {
+   "source": "বিপদ! / বিপজ্জনক!",
+   "target": "Panganib! / Mapanganib!"
+  },
+  {
+   "source": "আমি আহত হয়েছি",
+   "target": "Nasugatan ako"
+  },
+  {
+   "source": "হাসপাতাল কোথায়?",
+   "target": "Saan ang ospital?"
+  },
+  {
+   "source": "ফার্মেসি কোথায়?",
+   "target": "Saan ang botika?"
+  },
+  {
+   "source": "পুলিশ ডাকুন, অনুগ্রহ করে",
+   "target": "Tumawag po kayo ng pulis, pakiusap"
+  },
+  {
+   "source": "চোর! / চুরি হয়েছে!",
+   "target": "Magnanakaw! / May ninakaw!"
+  },
+  {
+   "source": "আগুন! (আগুন লেগেছে)",
+   "target": "Sunog! (May sunog)"
+  },
+  {
+   "source": "ভূমিকম্প!",
+   "target": "Lindol!"
+  },
+  {
+   "source": "আপনি ঠিক আছেন? (অন্যকে জিজ্ঞাসা)",
+   "target": "Ayos ka lang ba? (pagtatanong sa iba)"
+  },
+  {
+   "source": "দৈনন্দিন প্রয়োজন",
+   "target": "Pang-araw-araw na pangangailangan"
+  },
+  {
+   "source": "সাধারণ প্রয়োজন ও অনুরোধ",
+   "target": "Mga karaniwang pangangailangan at kahilingan"
+  },
+  {
+   "source": "আমি বুঝতে পারছি না (ফরমাল)",
+   "target": "Hindi ko maintindihan (pormal)"
+  },
+  {
+   "source": "আবার বলুন, অনুগ্রহ করে",
+   "target": "Pakiulit po, pakiusap"
+  },
+  {
+   "source": "ধীরে বলুন, অনুগ্রহ করে",
+   "target": "Pakibagalan po ang pagsasalita, pakiusap"
+  },
+  {
+   "source": "আপনি কি ইংরেজি বলতে পারেন?",
+   "target": "Nakakapagsalita ka ba ng Ingles?"
+  },
+  {
+   "source": "আমি খুব কম জাপানি বুঝি",
+   "target": "Kaunti lang ang naiintindihan kong Hapon"
+  },
+  {
+   "source": "আমি কি ফোন ধার নিতে পারি?",
+   "target": "Maaari ko bang hiramin ang telepono mo?"
+  },
+  {
+   "source": "Wi-Fi আছে?",
+   "target": "May Wi-Fi ba?"
+  },
+  {
+   "source": "আমার পাসপোর্ট হারিয়ে গেছে",
+   "target": "Nawala ang pasaporte ko"
+  },
+  {
+   "source": "দুঃখিত / আফসোস (কোনো খারাপ খবর শুনলে)",
+   "target": "Nakikiramay / Paumanhin (kapag nakarinig ng masamang balita)"
+  },
+  {
+   "source": "অনেক কঠিন তাই না? / দুঃখজনক",
+   "target": "Napakahirap niyan, hindi ba? / Nakakalungkot"
+  },
+  {
+   "source": "কপি হয়েছে!",
+   "target": "Nakopya na!"
+  },
+  {
+   "source": "হোম",
+   "target": "Home"
+  },
+  {
+   "source": "ইন্টারভিউ",
+   "target": "Interview"
+  },
+  {
+   "source": "কুইজ",
+   "target": "Quiz"
+  },
+  {
+   "source": "গাইড",
+   "target": "Gabay"
+  },
+  {
+   "source": "বাক্য",
+   "target": "Pangungusap"
+  },
+  {
+   "source": "মক টেস্ট",
+   "target": "Mock Test"
+  }
+ ]
+}

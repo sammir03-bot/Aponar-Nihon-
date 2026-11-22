@@ -1,0 +1,242 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "en",
+ "page": "directions-emergency",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "পথ ও জরুরি প্রয়োজন | আপনার নিহোন",
+   "target": "Directions and Emergencies | আপনার নিহোন"
+  },
+  {
+   "source": "পথ ও জরুরি প্রয়োজন",
+   "target": "Directions and Emergencies"
+  },
+  {
+   "source": "রাস্তা খুঁজে বের করা, সহায়তা চাওয়া, জরুরি পরিস্থিতি ও দৈনন্দিন প্রয়োজনীয় জাপানি বাক্য",
+   "target": "Japanese phrases for finding your way, asking for help, emergencies and everyday needs"
+  },
+  {
+   "source": "পথ জিজ্ঞাসা",
+   "target": "Asking for directions"
+  },
+  {
+   "source": "রাস্তা ও দিকনির্দেশনা",
+   "target": "Roads and directions"
+  },
+  {
+   "source": "~ কোথায়? (যেকোনো জায়গার নাম বসান)",
+   "target": "Where is ~? (insert any place name)"
+  },
+  {
+   "source": "স্টেশন কোথায়?",
+   "target": "Where is the station?"
+  },
+  {
+   "source": "টয়লেট কোথায়?",
+   "target": "Where is the toilet?"
+  },
+  {
+   "source": "কনভিনিয়েন্স স্টোর কোথায়?",
+   "target": "Where is the convenience store?"
+  },
+  {
+   "source": "ডান দিক",
+   "target": "Right side"
+  },
+  {
+   "source": "বাম দিক",
+   "target": "Left side"
+  },
+  {
+   "source": "সোজা",
+   "target": "Straight ahead"
+  },
+  {
+   "source": "পেছনে",
+   "target": "Behind"
+  },
+  {
+   "source": "সামনে",
+   "target": "In front of"
+  },
+  {
+   "source": "কাছাকাছি আছে?",
+   "target": "Is there one nearby?"
+  },
+  {
+   "source": "কত দূর? / কত সময় লাগবে?",
+   "target": "How far? / How long will it take?"
+  },
+  {
+   "source": "ধন্যবাদ, আপনার সাহায্যে বেঁচে গেলাম",
+   "target": "Thank you, your help saved me"
+  },
+  {
+   "source": "যাতায়াত",
+   "target": "Transport"
+  },
+  {
+   "source": "ট্রেন, বাস ও ট্যাক্সি",
+   "target": "Trains, buses and taxis"
+  },
+  {
+   "source": "~ যাওয়ার ট্রেন কোনটি?",
+   "target": "Which train goes to ~?"
+  },
+  {
+   "source": "এই ট্রেন ~ যায়?",
+   "target": "Does this train go to ~?"
+  },
+  {
+   "source": "পরবর্তী স্টেশন কোথায়?",
+   "target": "Where is the next station?"
+  },
+  {
+   "source": "~ পর্যন্ত কত টাকা? (ট্যাক্সি/ট্রেন)",
+   "target": "How much is it to ~? (taxi/train)"
+  },
+  {
+   "source": "আমি এখানে নামব (ট্যাক্সি/বাস)",
+   "target": "I will get off here (taxi/bus)"
+  },
+  {
+   "source": "~ পর্যন্ত যান, অনুগ্রহ করে (ট্যাক্সি)",
+   "target": "Please go to ~ (taxi)"
+  },
+  {
+   "source": "ম্যাপ দেখান, অনুগ্রহ করে",
+   "target": "Please show me the map"
+  },
+  {
+   "source": "স্টেশনে কীভাবে যাব?",
+   "target": "How do I get to the station?"
+  },
+  {
+   "source": "জরুরি পরিস্থিতি",
+   "target": "Emergency situations"
+  },
+  {
+   "source": "জরুরি ও বিপদজনক পরিস্থিতি",
+   "target": "Emergencies and dangerous situations"
+  },
+  {
+   "source": "আমাকে সাহায্য করুন!",
+   "target": "Help me, please!"
+  },
+  {
+   "source": "বিপদ! / বিপজ্জনক!",
+   "target": "Danger! / It's dangerous!"
+  },
+  {
+   "source": "আমি আহত হয়েছি",
+   "target": "I am injured"
+  },
+  {
+   "source": "হাসপাতাল কোথায়?",
+   "target": "Where is the hospital?"
+  },
+  {
+   "source": "ফার্মেসি কোথায়?",
+   "target": "Where is the pharmacy?"
+  },
+  {
+   "source": "পুলিশ ডাকুন, অনুগ্রহ করে",
+   "target": "Please call the police"
+  },
+  {
+   "source": "চোর! / চুরি হয়েছে!",
+   "target": "Thief! / I've been robbed!"
+  },
+  {
+   "source": "আগুন! (আগুন লেগেছে)",
+   "target": "Fire! (There's a fire)"
+  },
+  {
+   "source": "ভূমিকম্প!",
+   "target": "Earthquake!"
+  },
+  {
+   "source": "আপনি ঠিক আছেন? (অন্যকে জিজ্ঞাসা)",
+   "target": "Are you OK? (asking someone else)"
+  },
+  {
+   "source": "দৈনন্দিন প্রয়োজন",
+   "target": "Everyday needs"
+  },
+  {
+   "source": "সাধারণ প্রয়োজন ও অনুরোধ",
+   "target": "Common needs and requests"
+  },
+  {
+   "source": "আমি বুঝতে পারছি না (ফরমাল)",
+   "target": "I don't understand (formal)"
+  },
+  {
+   "source": "আবার বলুন, অনুগ্রহ করে",
+   "target": "Please say that again"
+  },
+  {
+   "source": "ধীরে বলুন, অনুগ্রহ করে",
+   "target": "Please speak slowly"
+  },
+  {
+   "source": "আপনি কি ইংরেজি বলতে পারেন?",
+   "target": "Can you speak English?"
+  },
+  {
+   "source": "আমি খুব কম জাপানি বুঝি",
+   "target": "I understand very little Japanese"
+  },
+  {
+   "source": "আমি কি ফোন ধার নিতে পারি?",
+   "target": "May I borrow your phone?"
+  },
+  {
+   "source": "Wi-Fi আছে?",
+   "target": "Is there Wi-Fi?"
+  },
+  {
+   "source": "আমার পাসপোর্ট হারিয়ে গেছে",
+   "target": "I have lost my passport"
+  },
+  {
+   "source": "দুঃখিত / আফসোস (কোনো খারাপ খবর শুনলে)",
+   "target": "I'm sorry / That's a shame (when you hear bad news)"
+  },
+  {
+   "source": "অনেক কঠিন তাই না? / দুঃখজনক",
+   "target": "That must be so hard, isn't it? / That's sad"
+  },
+  {
+   "source": "কপি হয়েছে!",
+   "target": "Copied!"
+  },
+  {
+   "source": "হোম",
+   "target": "Home"
+  },
+  {
+   "source": "ইন্টারভিউ",
+   "target": "Interview"
+  },
+  {
+   "source": "কুইজ",
+   "target": "Quiz"
+  },
+  {
+   "source": "গাইড",
+   "target": "Guide"
+  },
+  {
+   "source": "বাক্য",
+   "target": "Sentence"
+  },
+  {
+   "source": "মক টেস্ট",
+   "target": "Mock Test"
+  }
+ ]
+}

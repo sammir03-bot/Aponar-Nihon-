@@ -1,0 +1,54 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "my",
+ "page": "auth",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "এক অ্যাকাউন্টে আপনার সব Learning",
+   "target": "Account တစ်ခုတည်းတွင် သင်၏ Learning အားလုံး"
+  },
+  {
+   "source": "Profile, Mock Test, CV Builder ও learning progress নিরাপদভাবে একই account-এ রাখুন।",
+   "target": "Profile, Mock Test, CV Builder နှင့် learning progress တို့ကို လုံခြုံစွာ account တစ်ခုတည်းတွင် ထားပါ။"
+  },
+  {
+   "source": "Verified account হলে login হবে।",
+   "target": "Verified account ဖြစ်ပါက login ဝင်မည်။"
+  },
+  {
+   "source": "Password ভুলে গেছেন?",
+   "target": "Password မေ့နေပါသလား?"
+  },
+  {
+   "source": "আপনার নাম",
+   "target": "သင့်အမည်"
+  },
+  {
+   "source": "Account তৈরি করুন",
+   "target": "Account ဖန်တီးပါ"
+  },
+  {
+   "source": "Account তৈরির পর Gmail-এ verification link যাবে। Link খুললে verification complete হয়ে Profile-এ যাবে।",
+   "target": "Account ဖန်တီးပြီးနောက် Gmail သို့ verification link ပို့မည်။ Link ကိုဖွင့်ပါက verification complete ဖြစ်ပြီး Profile သို့ သွားမည်။"
+  },
+  {
+   "source": "Verification mail না পেলে spam/junk folder দেখুন, তারপর আবার পাঠাতে পারেন।",
+   "target": "Verification mail မရပါက spam/junk folder ကို ကြည့်ပါ၊ ထို့နောက် ပြန်ပို့နိုင်သည်။"
+  },
+  {
+   "source": "Verification email আবার পাঠান",
+   "target": "Verification email ပြန်ပို့ပါ"
+  },
+  {
+   "source": "Password কখনো আমাদের database-এ plain text হিসেবে রাখা হয় না। Authentication Supabase Auth দ্বারা পরিচালিত হয়।",
+   "target": "Password ကို ကျွန်ုပ်တို့ database တွင် plain text အဖြစ် မည်သည့်အခါမျှ မထားပါ။ Authentication ကို Supabase Auth ဖြင့် စီမံသည်။"
+  },
+  {
+   "source": "← হোমে ফিরে যান",
+   "target": "← ပင်မစာမျက်နှာသို့ ပြန်သွားပါ"
+  }
+ ]
+}

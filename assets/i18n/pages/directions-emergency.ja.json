@@ -1,0 +1,242 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ja",
+ "page": "directions-emergency",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "পথ ও জরুরি প্রয়োজন | আপনার নিহোন",
+   "target": "道案内と緊急時 | আপনার নিহোন"
+  },
+  {
+   "source": "পথ ও জরুরি প্রয়োজন",
+   "target": "道案内と緊急時"
+  },
+  {
+   "source": "রাস্তা খুঁজে বের করা, সহায়তা চাওয়া, জরুরি পরিস্থিতি ও দৈনন্দিন প্রয়োজনীয় জাপানি বাক্য",
+   "target": "道を探す、助けを求める、緊急時、日常生活に必要な日本語表現"
+  },
+  {
+   "source": "পথ জিজ্ঞাসা",
+   "target": "道を尋ねる"
+  },
+  {
+   "source": "রাস্তা ও দিকনির্দেশনা",
+   "target": "道と方向"
+  },
+  {
+   "source": "~ কোথায়? (যেকোনো জায়গার নাম বসান)",
+   "target": "~はどこですか？（場所の名前を入れてください）"
+  },
+  {
+   "source": "স্টেশন কোথায়?",
+   "target": "駅はどこですか？"
+  },
+  {
+   "source": "টয়লেট কোথায়?",
+   "target": "トイレはどこですか？"
+  },
+  {
+   "source": "কনভিনিয়েন্স স্টোর কোথায়?",
+   "target": "コンビニはどこですか？"
+  },
+  {
+   "source": "ডান দিক",
+   "target": "右側"
+  },
+  {
+   "source": "বাম দিক",
+   "target": "左側"
+  },
+  {
+   "source": "সোজা",
+   "target": "まっすぐ"
+  },
+  {
+   "source": "পেছনে",
+   "target": "後ろ"
+  },
+  {
+   "source": "সামনে",
+   "target": "前"
+  },
+  {
+   "source": "কাছাকাছি আছে?",
+   "target": "近くにありますか？"
+  },
+  {
+   "source": "কত দূর? / কত সময় লাগবে?",
+   "target": "どのくらい遠いですか？ / どのくらい時間がかかりますか？"
+  },
+  {
+   "source": "ধন্যবাদ, আপনার সাহায্যে বেঁচে গেলাম",
+   "target": "ありがとうございます、助かりました"
+  },
+  {
+   "source": "যাতায়াত",
+   "target": "交通"
+  },
+  {
+   "source": "ট্রেন, বাস ও ট্যাক্সি",
+   "target": "電車、バス、タクシー"
+  },
+  {
+   "source": "~ যাওয়ার ট্রেন কোনটি?",
+   "target": "~へ行く電車はどれですか？"
+  },
+  {
+   "source": "এই ট্রেন ~ যায়?",
+   "target": "この電車は~へ行きますか？"
+  },
+  {
+   "source": "পরবর্তী স্টেশন কোথায়?",
+   "target": "次の駅はどこですか？"
+  },
+  {
+   "source": "~ পর্যন্ত কত টাকা? (ট্যাক্সি/ট্রেন)",
+   "target": "~までいくらですか？（タクシー／電車）"
+  },
+  {
+   "source": "আমি এখানে নামব (ট্যাক্সি/বাস)",
+   "target": "ここで降ります（タクシー／バス）"
+  },
+  {
+   "source": "~ পর্যন্ত যান, অনুগ্রহ করে (ট্যাক্সি)",
+   "target": "~まで行ってください（タクシー）"
+  },
+  {
+   "source": "ম্যাপ দেখান, অনুগ্রহ করে",
+   "target": "地図を見せてください"
+  },
+  {
+   "source": "স্টেশনে কীভাবে যাব?",
+   "target": "駅へはどう行けばいいですか？"
+  },
+  {
+   "source": "জরুরি পরিস্থিতি",
+   "target": "緊急事態"
+  },
+  {
+   "source": "জরুরি ও বিপদজনক পরিস্থিতি",
+   "target": "緊急・危険な状況"
+  },
+  {
+   "source": "আমাকে সাহায্য করুন!",
+   "target": "助けてください！"
+  },
+  {
+   "source": "বিপদ! / বিপজ্জনক!",
+   "target": "危険！ / 危ない！"
+  },
+  {
+   "source": "আমি আহত হয়েছি",
+   "target": "けがをしました"
+  },
+  {
+   "source": "হাসপাতাল কোথায়?",
+   "target": "病院はどこですか？"
+  },
+  {
+   "source": "ফার্মেসি কোথায়?",
+   "target": "薬局はどこですか？"
+  },
+  {
+   "source": "পুলিশ ডাকুন, অনুগ্রহ করে",
+   "target": "警察を呼んでください"
+  },
+  {
+   "source": "চোর! / চুরি হয়েছে!",
+   "target": "泥棒！ / 盗まれました！"
+  },
+  {
+   "source": "আগুন! (আগুন লেগেছে)",
+   "target": "火事！（火が出ています）"
+  },
+  {
+   "source": "ভূমিকম্প!",
+   "target": "地震！"
+  },
+  {
+   "source": "আপনি ঠিক আছেন? (অন্যকে জিজ্ঞাসা)",
+   "target": "大丈夫ですか？（相手に聞くとき）"
+  },
+  {
+   "source": "দৈনন্দিন প্রয়োজন",
+   "target": "日常の必需・用事"
+  },
+  {
+   "source": "সাধারণ প্রয়োজন ও অনুরোধ",
+   "target": "一般的な用事とお願い"
+  },
+  {
+   "source": "আমি বুঝতে পারছি না (ফরমাল)",
+   "target": "分かりません（フォーマル）"
+  },
+  {
+   "source": "আবার বলুন, অনুগ্রহ করে",
+   "target": "もう一度言ってください"
+  },
+  {
+   "source": "ধীরে বলুন, অনুগ্রহ করে",
+   "target": "ゆっくり言ってください"
+  },
+  {
+   "source": "আপনি কি ইংরেজি বলতে পারেন?",
+   "target": "英語を話せますか？"
+  },
+  {
+   "source": "আমি খুব কম জাপানি বুঝি",
+   "target": "日本語は少ししか分かりません"
+  },
+  {
+   "source": "আমি কি ফোন ধার নিতে পারি?",
+   "target": "電話を借りてもいいですか？"
+  },
+  {
+   "source": "Wi-Fi আছে?",
+   "target": "Wi-Fiはありますか？"
+  },
+  {
+   "source": "আমার পাসপোর্ট হারিয়ে গেছে",
+   "target": "パスポートをなくしました"
+  },
+  {
+   "source": "দুঃখিত / আফসোস (কোনো খারাপ খবর শুনলে)",
+   "target": "残念ですね / お気の毒に（悪い知らせを聞いたとき）"
+  },
+  {
+   "source": "অনেক কঠিন তাই না? / দুঃখজনক",
+   "target": "大変ですね？ / 残念ですね"
+  },
+  {
+   "source": "কপি হয়েছে!",
+   "target": "コピーしました！"
+  },
+  {
+   "source": "হোম",
+   "target": "ホーム"
+  },
+  {
+   "source": "ইন্টারভিউ",
+   "target": "面接"
+  },
+  {
+   "source": "কুইজ",
+   "target": "クイズ"
+  },
+  {
+   "source": "গাইড",
+   "target": "ガイド"
+  },
+  {
+   "source": "বাক্য",
+   "target": "文"
+  },
+  {
+   "source": "মক টেস্ট",
+   "target": "模擬試験"
+  }
+ ]
+}

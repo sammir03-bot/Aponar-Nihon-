@@ -1,0 +1,554 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "my",
+ "page": "dashboard",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "আপনার নিহোন - ইন্টারেক্টিভ ড্যাশবোর্ড",
+   "target": "আপনার নিহোন - အပြန်အလှန်တုံ့ပြန်နိုင်သော dashboard"
+  },
+  {
+   "source": "মূল সাইটে ফিরুন",
+   "target": "ပင်မဆိုဒ်သို့ ပြန်သွားပါ"
+  },
+  {
+   "source": "ইন্টারেক্টিভ ড্যাশবোর্ড",
+   "target": "အပြန်အလှန် dashboard"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "ডেটা ভিজুয়ালাইজেশন",
+   "target": "Data visualization"
+  },
+  {
+   "source": "জাপানি ভাষা শিক্ষা, খরচ, JLPT লেভেল এবং ক্যারিয়ার সম্পর্কিত সকল তথ্য একনজরে দেখুন",
+   "target": "ဂျပန်ဘာသာ လေ့လာမှု၊ ကုန်ကျစရိတ်၊ JLPT level နှင့် career ဆိုင်ရာ အချက်အလက်အားလုံးကို တစ်ချက်ကြည့်ရုံဖြင့် ကြည့်ပါ"
+  },
+  {
+   "source": "০",
+   "target": "0"
+  },
+  {
+   "source": "মোট শিক্ষার্থী",
+   "target": "ကျောင်းသား စုစုပေါင်း"
+  },
+  {
+   "source": "PDF রিসোর্স",
+   "target": "PDF အရင်းအမြစ်များ"
+  },
+  {
+   "source": "০%",
+   "target": "0%"
+  },
+  {
+   "source": "সাকসেস রেট",
+   "target": "အောင်မြင်မှုနှုန်း"
+  },
+  {
+   "source": "কুইজ প্রশ্ন",
+   "target": "Quiz မေးခွန်းများ"
+  },
+  {
+   "source": "ইন্টারভিউ প্রশ্ন",
+   "target": "Interview မေးခွန်းများ"
+  },
+  {
+   "source": "প্রিন্ট / সেভ PDF",
+   "target": "Print / PDF သိမ်းပါ"
+  },
+  {
+   "source": "শেয়ার করুন",
+   "target": "Share လုပ်ပါ"
+  },
+  {
+   "source": "শেখা শুরু করুন",
+   "target": "လေ့လာမှု စတင်ပါ"
+  },
+  {
+   "source": "ডেটা বিশ্লেষণ",
+   "target": "Data ခွဲခြမ်းစိတ်ဖြာမှု"
+  },
+  {
+   "source": "প্ল্যাটফর্ম ওভারভিউ",
+   "target": "Platform overview"
+  },
+  {
+   "source": "আপনার নিহোন প্ল্যাটফর্মের সকল রিসোর্স ও পরিসংখ্যান",
+   "target": "আপনার নিহোন platform ၏ အရင်းအမြစ်နှင့် စာရင်းအင်းအားလုံး"
+  },
+  {
+   "source": "JLPT লেভেল ভিত্তিক রিসোর্স",
+   "target": "JLPT level အလိုက် အရင်းအမြစ်များ"
+  },
+  {
+   "source": "স্টাডি ম্যাটেরিয়াল ক্যাটেগরি",
+   "target": "Study material အမျိုးအစားများ"
+  },
+  {
+   "source": "বিভাগ",
+   "target": "စားမှု"
+  },
+  {
+   "source": "জাপানে মাসিক খরচের তুলনা (ইয়েনে)",
+   "target": "ဂျပန်တွင် လစဉ် ကုန်ကျစရိတ် နှိုင်းယှဉ်မှု (ယန်းဖြင့်)"
+  },
+  {
+   "source": "শহরভিত্তিক",
+   "target": "မြို့အလိုက်"
+  },
+  {
+   "source": "কুইজ ক্যাটেগরি বিশ্লেষণ",
+   "target": "Quiz အမျိုးအစား ခွဲခြမ်းစိတ်ဖြာမှု"
+  },
+  {
+   "source": "N5 কুইজ",
+   "target": "N5 quiz"
+  },
+  {
+   "source": "ইন্টারভিউ প্রস্তুতি ওভারভিউ",
+   "target": "Interview ပြင်ဆင်မှု overview"
+  },
+  {
+   "source": "প্রস্তুতি",
+   "target": "ပြင်ဆင်မှု"
+  },
+  {
+   "source": "JLPT পাস রেট ট্রেন্ড (বিশ্বব্যাপী)",
+   "target": "JLPT အောင်နှုန်း trend (ကမ္ဘာတစ်ဝှမ်း)"
+  },
+  {
+   "source": "ট্রেন্ড",
+   "target": "Trend"
+  },
+  {
+   "source": "তুলনামূলক বিশ্লেষণ",
+   "target": "နှိုင်းယှဉ် ခွဲခြမ်းစိတ်ဖြာမှု"
+  },
+  {
+   "source": "JLPT লেভেল তুলনা",
+   "target": "JLPT level နှိုင်းယှဉ်မှု"
+  },
+  {
+   "source": "প্রতিটি JLPT লেভেলের বিস্তারিত তুলনা",
+   "target": "JLPT level တစ်ခုစီ၏ အသေးစိတ် နှိုင်းယှဉ်မှု"
+  },
+  {
+   "source": "লেভেল",
+   "target": "အဆင့်"
+  },
+  {
+   "source": "কানজি",
+   "target": "ကန်ဂျီ"
+  },
+  {
+   "source": "ভোকাবুলারি",
+   "target": "Vocabulary"
+  },
+  {
+   "source": "সময়কাল",
+   "target": "ကာလ"
+  },
+  {
+   "source": "পাস রেট",
+   "target": "အောင်နှုန်း"
+  },
+  {
+   "source": "ব্যবহার",
+   "target": "အသုံးပြုပုံ"
+  },
+  {
+   "source": "১০২টি",
+   "target": "102 ခု"
+  },
+  {
+   "source": "~৮০০",
+   "target": "~800"
+  },
+  {
+   "source": "৩-৪ মাস",
+   "target": "3-4 လ"
+  },
+  {
+   "source": "~৪৫%",
+   "target": "~45%"
+  },
+  {
+   "source": "ভাষা স্কুলে ভর্তি",
+   "target": "ဘာသာစကားကျောင်းသို့ ဝင်ခွင့်"
+  },
+  {
+   "source": "৩২০টি",
+   "target": "320 ခု"
+  },
+  {
+   "source": "~১,৫০০",
+   "target": "~1,500"
+  },
+  {
+   "source": "৬-৮ মাস",
+   "target": "6-8 လ"
+  },
+  {
+   "source": "~৩৫%",
+   "target": "~35%"
+  },
+  {
+   "source": "দৈনন্দিন জীবন",
+   "target": "နေ့စဉ်ဘဝ"
+  },
+  {
+   "source": "৬৫০টি",
+   "target": "650 ခု"
+  },
+  {
+   "source": "~৩,৭৫০",
+   "target": "~3,750"
+  },
+  {
+   "source": "১২-১৮ মাস",
+   "target": "12-18 လ"
+  },
+  {
+   "source": "~৩২%",
+   "target": "~32%"
+  },
+  {
+   "source": "কর্মক্ষেত্র / ভিসা",
+   "target": "အလုပ်ခွင် / visa"
+  },
+  {
+   "source": "১,০০০টি",
+   "target": "1,000 ခု"
+  },
+  {
+   "source": "~৬,০০০",
+   "target": "~6,000"
+  },
+  {
+   "source": "১৮-২৪ মাস",
+   "target": "18-24 လ"
+  },
+  {
+   "source": "~৩৬%",
+   "target": "~36%"
+  },
+  {
+   "source": "বিশ্ববিদ্যালয় / চাকরি",
+   "target": "တက္ကသိုလ် / အလုပ်"
+  },
+  {
+   "source": "২,০০০+",
+   "target": "2,000+"
+  },
+  {
+   "source": "~১০,০০০",
+   "target": "~10,000"
+  },
+  {
+   "source": "৩-৪ বছর",
+   "target": "3-4 နှစ်"
+  },
+  {
+   "source": "~৩০%",
+   "target": "~30%"
+  },
+  {
+   "source": "প্রফেশনাল / একাডেমিক",
+   "target": "Professional / Academic"
+  },
+  {
+   "source": "খরচের বিশ্লেষণ",
+   "target": "ကုန်ကျစရိတ် ခွဲခြမ်းစိတ်ဖြာမှု"
+  },
+  {
+   "source": "জাপানে বার্ষিক খরচ (বাংলাদেশি টাকায়)",
+   "target": "ဂျပန်တွင် နှစ်စဉ် ကုန်ကျစရိတ် (ဘင်္ဂလားဒေ့ရှ် taka ဖြင့်)"
+  },
+  {
+   "source": "শহরভেদে জাপানে পড়াশোনার আনুমানিক খরচ",
+   "target": "မြို့အလိုက် ဂျပန်တွင် ပညာသင်ကြားခြင်း ခန့်မှန်းကုန်ကျစရိတ်"
+  },
+  {
+   "source": "টোকিও",
+   "target": "တိုကျို"
+  },
+  {
+   "source": "সবচেয়ে ব্যয়বহুল",
+   "target": "အကုန်အကျအများဆုံး"
+  },
+  {
+   "source": "১২-১৫ লাখ",
+   "target": "12-15 သိန်း"
+  },
+  {
+   "source": "বাৎসরিক (টাকা)",
+   "target": "နှစ်စဉ် (taka)"
+  },
+  {
+   "source": "টিউশন ফি",
+   "target": "ကျောင်းလခ"
+  },
+  {
+   "source": "৫-৬ লাখ",
+   "target": "5-6 သိန်း"
+  },
+  {
+   "source": "বাসা ভাড়া",
+   "target": "အိမ်ငှားခ"
+  },
+  {
+   "source": "৪-৫ লাখ",
+   "target": "4-5 သိန်း"
+  },
+  {
+   "source": "খাবার ও অন্যান্য",
+   "target": "အစားအစာနှင့် အခြားများ"
+  },
+  {
+   "source": "৩-৪ লাখ",
+   "target": "3-4 သိန်း"
+  },
+  {
+   "source": "ওসাকা / নাগোয়া",
+   "target": "အိုဆာကာ / နာဂိုယာ"
+  },
+  {
+   "source": "মাঝারি খরচ",
+   "target": "အလယ်အလတ် ကုန်ကျစရိတ်"
+  },
+  {
+   "source": "১০-১২ লাখ",
+   "target": "10-12 သိန်း"
+  },
+  {
+   "source": "৩ লাখ",
+   "target": "3 သိန်း"
+  },
+  {
+   "source": "অন্যান্য শহর",
+   "target": "အခြားမြို့များ"
+  },
+  {
+   "source": "সবচেয়ে সাশ্রয়ী",
+   "target": "အသက်သာဆုံး"
+  },
+  {
+   "source": "৮-১০ লাখ",
+   "target": "8-10 သိန်း"
+  },
+  {
+   "source": "২-৩ লাখ",
+   "target": "2-3 သိန်း"
+  },
+  {
+   "source": "২ লাখ",
+   "target": "2 သိန်း"
+  },
+  {
+   "source": "শিক্ষার পথ",
+   "target": "ပညာရေး လမ်းကြောင်း"
+  },
+  {
+   "source": "জাপানে যাওয়ার সম্পূর্ণ রোডম্যাপ",
+   "target": "ဂျပန်သို့ သွားရန် လမ်းညွှန်အပြည့်အစုံ"
+  },
+  {
+   "source": "বাংলাদেশ থেকে জাপানে পড়াশোনার ধাপে ধাপে গাইড",
+   "target": "ဘင်္ဂလားဒေ့ရှ်မှ ဂျပန်တွင် ပညာသင်ကြားရန် အဆင့်ဆင့် လမ်းညွှန်"
+  },
+  {
+   "source": "ধাপ ১",
+   "target": "အဆင့် 1"
+  },
+  {
+   "source": "JLPT N5 শিখুন",
+   "target": "JLPT N5 လေ့လာပါ"
+  },
+  {
+   "source": "বেসিক জাপানি ভাষা শিখুন — হিরাগানা, কাতাকানা, ১০২টি কানজি, বেসিক গ্রামার ও ভোকাবুলারি।",
+   "target": "အခြေခံ ဂျပန်ဘာသာကို လေ့လာပါ — hiragana, katakana, kanji 102 လုံး, basic grammar နှင့် vocabulary။"
+  },
+  {
+   "source": "ধাপ ২",
+   "target": "အဆင့် 2"
+  },
+  {
+   "source": "JLPT N4 সম্পন্ন করুন",
+   "target": "JLPT N4 ပြီးမြောက်ပါ"
+  },
+  {
+   "source": "ইন্টারমিডিয়েট লেভেল — ৩২০টি কানজি, জটিল গ্রামার, দৈনন্দিন কথোপকথন দক্ষতা অর্জন।",
+   "target": "အလယ်အလတ်အဆင့် — kanji 320 လုံး, ရှုပ်ထွေးသော grammar, နေ့စဉ် စကားပြောကျွမ်းကျင်မှု ရယူပါ။"
+  },
+  {
+   "source": "৩-৪ মাস অতিরিক্ত",
+   "target": "3-4 လ ထပ်ဆောင်း"
+  },
+  {
+   "source": "ধাপ ৩",
+   "target": "အဆင့် 3"
+  },
+  {
+   "source": "ইন্টারভিউ প্রস্তুতি",
+   "target": "အင်တာဗျူး ပြင်ဆင်မှု"
+  },
+  {
+   "source": "Skype Interview (২৫০ প্রশ্ন) এবং Embassy Interview (১৫০ প্রশ্ন) এর জন্য পূর্ণ প্রস্তুতি নিন।",
+   "target": "Skype Interview (မေးခွန်း 250) နှင့် Embassy Interview (မေးခွန်း 150) အတွက် အပြည့်အဝ ပြင်ဆင်ပါ။"
+  },
+  {
+   "source": "১-২ মাস",
+   "target": "1-2 လ"
+  },
+  {
+   "source": "ধাপ ৪",
+   "target": "အဆင့် 4"
+  },
+  {
+   "source": "COE ও ভিসা প্রসেসিং",
+   "target": "COE နှင့် visa လုပ်ငန်းစဉ်"
+  },
+  {
+   "source": "Certificate of Eligibility (COE) আবেদন, ব্যাংক স্টেটমেন্ট প্রস্তুত এবং ভিসা সংগ্রহ।",
+   "target": "Certificate of Eligibility (COE) လျှောက်ထားခြင်း၊ bank statement ပြင်ဆင်ခြင်းနှင့် visa ရယူခြင်း။"
+  },
+  {
+   "source": "৩-৬ মাস প্রসেসিং",
+   "target": "3-6 လ လုပ်ငန်းစဉ်"
+  },
+  {
+   "source": "ধাপ ৫",
+   "target": "အဆင့် 5"
+  },
+  {
+   "source": "জাপানে পৌঁছান ও পড়াশোনা শুরু",
+   "target": "ဂျပန်သို့ ရောက်ရှိပြီး ပညာသင်ကြားမှု စတင်ပါ"
+  },
+  {
+   "source": "ভাষা স্কুলে ভর্তি, পার্ট-টাইম জব (সপ্তাহে ২৮ ঘণ্টা), এবং উচ্চশিক্ষার প্রস্তুতি।",
+   "target": "ဘာသာစကားကျောင်းသို့ ဝင်ခွင့်၊ part-time job (တစ်ပတ် 28 နာရီ) နှင့် အဆင့်မြင့်ပညာရေး ပြင်ဆင်မှု။"
+  },
+  {
+   "source": "১-২ বছর",
+   "target": "1-2 နှစ်"
+  },
+  {
+   "source": "ধাপ ৬",
+   "target": "အဆင့် 6"
+  },
+  {
+   "source": "ক্যারিয়ার গড়ুন",
+   "target": "Career တည်ဆောက်ပါ"
+  },
+  {
+   "source": "স্নাতক শেষে Job Hunting Visa নিয়ে IT, Engineering, Nursing সেক্টরে ক্যারিয়ার শুরু করুন।",
+   "target": "ဘွဲ့ရပြီးနောက် Job Hunting Visa ဖြင့် IT, Engineering, Nursing ကဏ္ဍများတွင် career စတင်ပါ။"
+  },
+  {
+   "source": "সারাজীবন",
+   "target": "တစ်သက်လုံး"
+  },
+  {
+   "source": "রিসোর্স সারাংশ",
+   "target": "အရင်းအမြစ် အကျဉ်းချုပ်"
+  },
+  {
+   "source": "প্ল্যাটফর্মের সকল রিসোর্স",
+   "target": "Platform ၏ အရင်းအမြစ်အားလုံး"
+  },
+  {
+   "source": "আপনার নিহোনে যা যা পাবেন",
+   "target": "আপনার নিহোন တွင် ရရှိမည့်အရာများ"
+  },
+  {
+   "source": "N5 ভোকাবুলারি",
+   "target": "N5 vocabulary"
+  },
+  {
+   "source": "বাংলা অনুবাদসহ শব্দভাণ্ডার",
+   "target": "မြန်မာ ဘာသာပြန်နှင့်အတူ ဝေါဟာရများ"
+  },
+  {
+   "source": "৩",
+   "target": "3"
+  },
+  {
+   "source": "N5 কানজি",
+   "target": "N5 kanji"
+  },
+  {
+   "source": "১০২টি কানজি ক্যারেক্টার",
+   "target": "kanji စာလုံး 102 လုံး"
+  },
+  {
+   "source": "১",
+   "target": "1"
+  },
+  {
+   "source": "N5 গ্রামার",
+   "target": "N5 grammar"
+  },
+  {
+   "source": "বেসিক জাপানি ব্যাকরণ",
+   "target": "အခြေခံ ဂျပန် grammar"
+  },
+  {
+   "source": "২",
+   "target": "2"
+  },
+  {
+   "source": "N5 রিডিং",
+   "target": "N5 reading"
+  },
+  {
+   "source": "Minna no Nihongo ভিত্তিক",
+   "target": "Minna no Nihongo အခြေခံ"
+  },
+  {
+   "source": "N4 ভোকাবুলারি",
+   "target": "N4 vocabulary"
+  },
+  {
+   "source": "Lesson 25-50 ভিত্তিক",
+   "target": "Lesson 25-50 အခြေခံ"
+  },
+  {
+   "source": "N4 কানজি",
+   "target": "N4 kanji"
+  },
+  {
+   "source": "৩২০টি কানজি ক্যারেক্টার",
+   "target": "kanji စာလုံး 320 လုံး"
+  },
+  {
+   "source": "N4 গ্রামার",
+   "target": "N4 grammar"
+  },
+  {
+   "source": "ইন্টারমিডিয়েট ব্যাকরণ",
+   "target": "အလယ်အလတ် grammar"
+  },
+  {
+   "source": "N4 রিডিং",
+   "target": "N4 reading"
+  },
+  {
+   "source": "Lesson 25-50 রিডিং",
+   "target": "Lesson 25-50 reading"
+  },
+  {
+   "source": "© ২০২৬",
+   "target": "© 2026"
+  },
+  {
+   "source": "| ইন্টারেক্টিভ ড্যাশবোর্ড | Created by SAMMIR",
+   "target": "| အပြန်အလှန် dashboard | Created by SAMMIR"
+  }
+ ]
+}

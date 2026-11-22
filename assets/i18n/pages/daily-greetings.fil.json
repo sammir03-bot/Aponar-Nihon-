@@ -1,0 +1,242 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "fil",
+ "page": "daily-greetings",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "দৈনন্দিন শুভেচ্ছা | আপনার নিহোন",
+   "target": "Pang-araw-araw na Pagbati"
+  },
+  {
+   "source": "দৈনন্দিন শুভেচ্ছা",
+   "target": "Pang-araw-araw na Pagbati"
+  },
+  {
+   "source": "জাপানে প্রতিদিনের কথোপকথনে সবচেয়ে বেশি ব্যবহৃত শুভেচ্ছা ও ভদ্রতার বাক্য",
+   "target": "Ang mga pagbati at magagalang na pangungusap na pinakaginagamit sa pang-araw-araw na usapan sa Japan"
+  },
+  {
+   "source": "সময় অনুযায়ী শুভেচ্ছা",
+   "target": "Mga pagbati ayon sa oras"
+  },
+  {
+   "source": "সকাল / দুপুর / সন্ধ্যা / রাত",
+   "target": "Umaga / Tanghali / Takipsilim / Gabi"
+  },
+  {
+   "source": "সুপ্রভাত (ফরমাল)",
+   "target": "Magandang umaga (pormal)"
+  },
+  {
+   "source": "সুপ্রভাত (ক্যাজুয়াল — বন্ধু/ফ্যামিলি)",
+   "target": "Magandang umaga (kaswal — kaibigan/pamilya)"
+  },
+  {
+   "source": "হ্যালো / শুভ দুপুর (সকাল ১১টা – সন্ধ্যা ৫টা)",
+   "target": "Hello / Magandang tanghali (11:00 AM – 5:00 PM)"
+  },
+  {
+   "source": "শুভ সন্ধ্যা (সন্ধ্যা ৫টা পর থেকে)",
+   "target": "Magandang gabi (mula 5:00 PM pataas)"
+  },
+  {
+   "source": "শুভ রাত্রি / ঘুমান (ফরমাল)",
+   "target": "Magandang gabi / Matulog nang mahimbing (pormal)"
+  },
+  {
+   "source": "শুভ রাত্রি (ক্যাজুয়াল)",
+   "target": "Magandang gabi (kaswal)"
+  },
+  {
+   "source": "ভদ্রতা ও কৃতজ্ঞতা",
+   "target": "Pagkamagalang at Pasasalamat"
+  },
+  {
+   "source": "ধন্যবাদ, ক্ষমা ও অনুমতি",
+   "target": "Salamat, paumanhin at pahintulot"
+  },
+  {
+   "source": "আপনাকে অনেক ধন্যবাদ (ফরমাল)",
+   "target": "Maraming salamat sa iyo (pormal)"
+  },
+  {
+   "source": "ধন্যবাদ (ক্যাজুয়াল)",
+   "target": "Salamat (kaswal)"
+  },
+  {
+   "source": "আপনাকে খুবই ধন্যবাদ (অনেক বেশি কৃতজ্ঞতা)",
+   "target": "Maraming-maraming salamat sa iyo (labis na pasasalamat)"
+  },
+  {
+   "source": "মাফ করবেন / এক্সকিউজ মি / দুঃখিত",
+   "target": "Paumanhin / Excuse me / Sorry"
+  },
+  {
+   "source": "আমি দুঃখিত / ক্ষমা করবেন (ফরমাল ক্ষমা)",
+   "target": "Paumanhin ako / Patawarin mo ako (pormal na paghingi ng tawad)"
+  },
+  {
+   "source": "সরি (ক্যাজুয়াল — বন্ধুদের মধ্যে)",
+   "target": "Sorry (kaswal — sa pagitan ng magkakaibigan)"
+  },
+  {
+   "source": "অনুমতি দিন / আমি বিদায় নিচ্ছি (অফিস/ফরমাল)",
+   "target": "Paalam / Aalis na po ako (opisina/pormal)"
+  },
+  {
+   "source": "বিরক্ত করছি (ঘরে ঢোকার সময় বলা হয়)",
+   "target": "Nakakaabala ako (sinasabi kapag pumapasok sa bahay)"
+  },
+  {
+   "source": "নিজের পরিচয়",
+   "target": "Pagpapakilala sa sarili"
+  },
+  {
+   "source": "নিজের পরিচয় দেওয়া",
+   "target": "Pagpapakilala ng sarili"
+  },
+  {
+   "source": "প্রথমবার দেখা হলো / আপনার সাথে পরিচয় পেয়ে ভালো লাগলো",
+   "target": "Unang pagkikita / Ikinagagalak kitang makilala"
+  },
+  {
+   "source": "আমি ~ (নাম/পেশা)",
+   "target": "Ako si ~ (pangalan/propesyon)"
+  },
+  {
+   "source": "আমার সাথে ভালোভাবে থাকবেন / আমাকে গ্রহণ করবেন (পরিচয়ের শেষে)",
+   "target": "Maging mabuti ka sa akin / Tanggapin mo ako (sa dulo ng pagpapakilala)"
+  },
+  {
+   "source": "আমাকে গ্রহণ করো (ক্যাজুয়াল)",
+   "target": "Tanggapin mo ako (kaswal)"
+  },
+  {
+   "source": "আপনার নাম কী?",
+   "target": "Ano ang pangalan mo?"
+  },
+  {
+   "source": "আমি ~ থেকে এসেছি",
+   "target": "Galing ako sa ~"
+  },
+  {
+   "source": "বিদায়",
+   "target": "Paalam"
+  },
+  {
+   "source": "বিদায় জানানো",
+   "target": "Pagpapaalam"
+  },
+  {
+   "source": "বিদায় (দীর্ঘদিনের জন্য — আবেগঘন)",
+   "target": "Paalam (para sa mahabang panahon — emosyonal)"
+  },
+  {
+   "source": "তাহলে পরে দেখা হবে (ক্যাজুয়াল)",
+   "target": "Kita-kits mamaya (kaswal)"
+  },
+  {
+   "source": "আবার দেখা হবে (ক্যাজুয়াল)",
+   "target": "Kita-kits ulit (kaswal)"
+  },
+  {
+   "source": "কাল দেখা হবে",
+   "target": "Kita-kits bukas"
+  },
+  {
+   "source": "আমি বের হচ্ছি (বাড়ি থেকে বের হওয়ার সময়)",
+   "target": "Aalis na ako (kapag umaalis ng bahay)"
+  },
+  {
+   "source": "ভালো থেকো / ফিরে আসো (যে বাড়িতে থাকে সে বলে)",
+   "target": "Ingat ka / Bumalik ka nang ligtas (sinasabi ng taong naiwan sa bahay)"
+  },
+  {
+   "source": "আমি ফিরে এসেছি (বাড়ি ফেরার সময়)",
+   "target": "Nakauwi na ako (kapag bumalik sa bahay)"
+  },
+  {
+   "source": "স্বাগতম / ফিরে আসার জন্য ধন্যবাদ (বাড়িতে থাকা ব্যক্তি বলে)",
+   "target": "Maligayang pagbabalik / Salamat sa pagbalik (sinasabi ng taong nasa bahay)"
+  },
+  {
+   "source": "সাধারণ কথোপকথন",
+   "target": "Pangkalahatang Usapan"
+  },
+  {
+   "source": "প্রতিদিনের সাধারণ বাক্য",
+   "target": "Mga pang-araw-araw na pangungusap"
+  },
+  {
+   "source": "আপনি কেমন আছেন? (ফরমাল)",
+   "target": "Kumusta ka? (pormal)"
+  },
+  {
+   "source": "আমি ভালো আছি",
+   "target": "Mabuti ako"
+  },
+  {
+   "source": "হ্যাঁ / জি",
+   "target": "Oo / Opo"
+  },
+  {
+   "source": "না",
+   "target": "hindi"
+  },
+  {
+   "source": "বুঝতে পেরেছি (ফরমাল)",
+   "target": "Naiintindihan ko (pormal)"
+  },
+  {
+   "source": "আমি বুঝি (ফরমাল বর্তমান)",
+   "target": "Naiintindihan ko (pormal, kasalukuyan)"
+  },
+  {
+   "source": "আমি বুঝতে পারছি না (ক্যাজুয়াল)",
+   "target": "Hindi ko naiintindihan (kaswal)"
+  },
+  {
+   "source": "একটু অপেক্ষা করুন",
+   "target": "Maghintay ka sandali"
+  },
+  {
+   "source": "আমি ঠিক আছি / কোনো সমস্যা নেই",
+   "target": "Ayos lang ako / Walang problema"
+  },
+  {
+   "source": "এটা মজার / আমি উপভোগ করছি",
+   "target": "Nakakatuwa ito / Nasisiyahan ako"
+  },
+  {
+   "source": "কপি হয়েছে!",
+   "target": "Nakopya na!"
+  },
+  {
+   "source": "হোম",
+   "target": "Home"
+  },
+  {
+   "source": "ইন্টারভিউ",
+   "target": "Interview"
+  },
+  {
+   "source": "কুইজ",
+   "target": "Quiz"
+  },
+  {
+   "source": "গাইড",
+   "target": "Gabay"
+  },
+  {
+   "source": "বাক্য",
+   "target": "Pangungusap"
+  },
+  {
+   "source": "মক টেস্ট",
+   "target": "Mock Test"
+  }
+ ]
+}
