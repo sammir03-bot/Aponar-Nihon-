@@ -1,0 +1,114 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ja",
+ "page": "muslim-japan",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "বাংলাদেশি মুসলিমদের জন্য নামাজের সময়, কিবলা নির্দেশনা, কাছের মসজিদ এবং হালাল খাবার—এক জায়গায়।",
+   "target": "バングラデシュのムスリムのために、礼拝時刻、キブラの方向、近くのモスク、ハラール食品を—1か所にまとめました。"
+  },
+  {
+   "source": "আমার লোকেশন নিন",
+   "target": "現在地を取得する"
+  },
+  {
+   "source": "Compass চালু করুন",
+   "target": "Compass をオンにする"
+  },
+  {
+   "source": "লোকেশন দিলে আপনার এলাকার তথ্য দেখানো হবে।",
+   "target": "位置情報を提供すると、あなたのエリアの情報が表示されます。"
+  },
+  {
+   "source": "নামাজের সময়",
+   "target": "礼拝時刻"
+  },
+  {
+   "source": "Hanafi Asr — বাংলাদেশি default",
+   "target": "Hanafi Asr — バングラデシュの default"
+  },
+  {
+   "source": "লোকেশন প্রয়োজন",
+   "target": "位置情報が必要です"
+  },
+  {
+   "source": "নামাজের সময় স্থানীয় মসজিদের timetable থেকে কয়েক মিনিট ভিন্ন হতে পারে। স্থানীয় মসজিদের সময়কে অগ্রাধিকার দিন।",
+   "target": "礼拝時刻は地元のモスクの timetable と数分異なる場合があります。地元のモスクの時刻を優先してください。"
+  },
+  {
+   "source": "কিবলা",
+   "target": "キブラ"
+  },
+  {
+   "source": "লোকেশন নিলে True North থেকে কিবলার degree দেখাবে। Compass permission দিলে ফোন ঘোরালে arrow update হবে।",
+   "target": "位置情報を取得すると、True North からキブラの degree が表示されます。Compass の permission を許可すると、電話を回すと arrow が update されます。"
+  },
+  {
+   "source": "কাছের মসজিদ ও হালাল খাবার",
+   "target": "近くのモスクとハラール食品"
+  },
+  {
+   "source": "OpenStreetMap · বাস্তব জায়গার তথ্য",
+   "target": "OpenStreetMap · 実際の場所の情報"
+  },
+  {
+   "source": "🕌 মসজিদ",
+   "target": "🕌 モスク"
+  },
+  {
+   "source": "🍛 হালাল খাবার",
+   "target": "🍛 ハラール食品"
+  },
+  {
+   "source": "এলাকা",
+   "target": "エリア"
+  },
+  {
+   "source": "কত দূরে",
+   "target": "距離"
+  },
+  {
+   "source": "৩ কিমি",
+   "target": "3 km"
+  },
+  {
+   "source": "৬ কিমি",
+   "target": "6 km"
+  },
+  {
+   "source": "১০ কিমি",
+   "target": "10 km"
+  },
+  {
+   "source": "এই এলাকায় খুঁজুন",
+   "target": "このエリアで探す"
+  },
+  {
+   "source": "আপনার লোকেশন নিন অথবা এলাকা বেছে খুঁজুন। মানচিত্র সরিয়েও নতুন এলাকা বেছে নিতে পারেন।",
+   "target": "現在地を取得するか、エリアを選んで探してください。地図を動かして新しいエリアを選ぶこともできます。"
+  },
+  {
+   "source": "লোকেশন বা এলাকা বেছে নিলে কাছের জায়গা দেখানো হবে।",
+   "target": "位置情報またはエリアを選ぶと、近くの場所が表示されます。"
+  },
+  {
+   "source": "আবার চেষ্টা করুন",
+   "target": "もう一度試す"
+  },
+  {
+   "source": "তথ্য:",
+   "target": "情報:"
+  },
+  {
+   "source": "। তথ্য অসম্পূর্ণ হতে পারে। খাবারের ক্ষেত্রে মানচিত্রের tag বা নাম ব্যবহার করা হয়; অর্ডারের আগে দোকানের বর্তমান হালাল সনদ ও উপাদান যাচাই করুন।",
+   "target": "。情報が不完全な場合があります。食品については地図の tag や名前が使用されます。注文前に店の現在のハラール認証と原材料を確認してください。"
+  },
+  {
+   "source": "মানচিত্রের ভুল জানান",
+   "target": "地図の間違いを報告する"
+  }
+ ]
+}

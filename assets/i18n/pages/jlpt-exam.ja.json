@@ -1,0 +1,182 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ja",
+ "page": "jlpt-exam",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "JLPT Mock Test | আপনার নিহোন",
+   "target": "JLPT 模擬テスト | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "একটি করে প্রশ্ন দেখুন, নম্বর থেকে সরাসরি যান ও পরে দেখার চিহ্ন দিন। পরীক্ষার পরে বাংলা উত্তর, ব্যাখ্যা ও আপনার নামে PDF সনদ পাবেন।",
+   "target": "問題を1問ずつ見て、番号から直接移動したり、後で見るマークを付けたりできます。試験後にはベンガル語の解答と解説、そしてあなたの名前入りのPDF修了証がもらえます。"
+  },
+  {
+   "source": "পরীক্ষার্থীর নাম",
+   "target": "受験者名"
+  },
+  {
+   "source": "পরীক্ষা শেষে সনদের নাম পরিবর্তন করতে পারবেন।",
+   "target": "試験終了後に修了証の名前を変更できます。"
+  },
+  {
+   "source": "পরীক্ষার সময় নির্বাচন",
+   "target": "試験時間の選択"
+  },
+  {
+   "source": "Practice · দ্রুত",
+   "target": "Practice · クイック"
+  },
+  {
+   "source": "লিসেনিংয়ের আগে শব্দ পরীক্ষা করুন",
+   "target": "リスニングの前に音声をテストしてください"
+  },
+  {
+   "source": "রেকর্ড করা অডিও শোনা গেলে প্রস্তুত",
+   "target": "録音された音声が聞こえれば準備完了です"
+  },
+  {
+   "source": "পরীক্ষা শুরু করুন →",
+   "target": "試験を開始する →"
+  },
+  {
+   "source": "আগের জায়গা থেকে চালিয়ে যান",
+   "target": "前回の続きから再開する"
+  },
+  {
+   "source": "নতুন করে শুরু করুন",
+   "target": "最初から始める"
+  },
+  {
+   "source": "পার্ট",
+   "target": "パート"
+  },
+  {
+   "source": "শব্দভাণ্ডার",
+   "target": "語彙"
+  },
+  {
+   "source": "প্রশ্ন তালিকা",
+   "target": "問題リスト"
+  },
+  {
+   "source": "০ / ০ উত্তর",
+   "target": "0 / 0 回答"
+  },
+  {
+   "source": "সব প্রশ্ন দেখুন",
+   "target": "すべての問題を見る"
+  },
+  {
+   "source": "প্রশ্ন নম্বর ও অগ্রগতি",
+   "target": "問題番号と進捗"
+  },
+  {
+   "source": "সবুজ: উত্তর দেওয়া · ★: পরে দেখব · নীল: বর্তমান প্রশ্ন",
+   "target": "緑: 回答済み · ★: 後で見る · 青: 現在の問題"
+  },
+  {
+   "source": "← আগের প্রশ্ন",
+   "target": "← 前の問題"
+  },
+  {
+   "source": "পরের প্রশ্ন →",
+   "target": "次の問題 →"
+  },
+  {
+   "source": "এই পার্ট শেষ করুন",
+   "target": "このパートを終了する"
+  },
+  {
+   "source": "পরীক্ষা মোডে উত্তর না দেওয়া প্রশ্ন রেখেও জমা দিতে পারবেন।",
+   "target": "試験モードでは、未回答の問題を残したまま提出できます。"
+  },
+  {
+   "source": "প্রথম উত্তর না-দেওয়া প্রশ্নে যান",
+   "target": "最初の未回答の問題へ移動する"
+  },
+  {
+   "source": "পার্টের অগ্রগতি",
+   "target": "パートの進捗"
+  },
+  {
+   "source": "০ / ০ উত্তর দেওয়া",
+   "target": "0 / 0 回答済み"
+  },
+  {
+   "source": "পার্ট জমা দিন",
+   "target": "パートを提出する"
+  },
+  {
+   "source": "পার্ট সম্পন্ন",
+   "target": "パート完了"
+  },
+  {
+   "source": "এই পার্ট জমা হয়েছে। এখন আগের উত্তরে ফিরে যাওয়া যাবে না।",
+   "target": "このパートは提出済みです。以前の回答には戻れません。"
+  },
+  {
+   "source": "০/০",
+   "target": "0/0"
+  },
+  {
+   "source": "উত্তর দেওয়া",
+   "target": "回答済み"
+  },
+  {
+   "source": "১/৩",
+   "target": "1/3"
+  },
+  {
+   "source": "পরবর্তী পার্ট শুরু করুন →",
+   "target": "次のパートを開始する →"
+  },
+  {
+   "source": "আপনার নিহোন · ফলাফল",
+   "target": "আপনার নিহোন · 結果"
+  },
+  {
+   "source": "সনদ / PDF ডাউনলোড",
+   "target": "修了証 / PDFダウンロード"
+  },
+  {
+   "source": "সব Mock Test",
+   "target": "すべての Mock Test"
+  },
+  {
+   "source": "ফলাফল প্রিন্ট",
+   "target": "結果を印刷する"
+  },
+  {
+   "source": "আবার পরীক্ষা দিন",
+   "target": "もう一度受験する"
+  },
+  {
+   "source": "উত্তর রিভিউ",
+   "target": "解答レビュー"
+  },
+  {
+   "source": "সঠিক উত্তর, বাংলা ব্যাখ্যা ও Listening transcript",
+   "target": "正解、ベンガル語の解説、Listening transcript"
+  },
+  {
+   "source": "সব",
+   "target": "すべて"
+  },
+  {
+   "source": "ভুল",
+   "target": "間違い"
+  },
+  {
+   "source": "সঠিক",
+   "target": "正しい"
+  }
+ ]
+}

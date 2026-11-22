@@ -1,0 +1,182 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "si",
+ "page": "jlpt-exam",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "JLPT Mock Test | আপনার নিহোন",
+   "target": "JLPT Mock Test | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "একটি করে প্রশ্ন দেখুন, নম্বর থেকে সরাসরি যান ও পরে দেখার চিহ্ন দিন। পরীক্ষার পরে বাংলা উত্তর, ব্যাখ্যা ও আপনার নামে PDF সনদ পাবেন।",
+   "target": "එකින් එක ප්‍රශ්නය බලන්න, අංකයෙන් කෙලින්ම යන්න සහ පසුව බැලීමට සලකුණු කරන්න. විභාගයෙන් පසු සිංහල පිළිතුරු, පැහැදිලි කිරීම් සහ ඔබේ නමින් PDF සහතිකයක් ලැබේ."
+  },
+  {
+   "source": "পরীক্ষার্থীর নাম",
+   "target": "විභාග අපේක්ෂකයාගේ නම"
+  },
+  {
+   "source": "পরীক্ষা শেষে সনদের নাম পরিবর্তন করতে পারবেন।",
+   "target": "විභාගය අවසන් වූ පසු සහතිකයේ නම වෙනස් කළ හැකිය."
+  },
+  {
+   "source": "পরীক্ষার সময় নির্বাচন",
+   "target": "විභාග කාලය තෝරන්න"
+  },
+  {
+   "source": "Practice · দ্রুত",
+   "target": "Practice · ඉක්මන්"
+  },
+  {
+   "source": "লিসেনিংয়ের আগে শব্দ পরীক্ষা করুন",
+   "target": "සවන්දීමට පෙර ශබ්දය පරීක්ෂා කරන්න"
+  },
+  {
+   "source": "রেকর্ড করা অডিও শোনা গেলে প্রস্তুত",
+   "target": "පටිගත කළ ශ්‍රව්‍යය ඇසෙන්නේ නම් සූදානම්"
+  },
+  {
+   "source": "পরীক্ষা শুরু করুন →",
+   "target": "විභාගය අරඹන්න →"
+  },
+  {
+   "source": "আগের জায়গা থেকে চালিয়ে যান",
+   "target": "කලින් තැන සිට ඉදිරියට යන්න"
+  },
+  {
+   "source": "নতুন করে শুরু করুন",
+   "target": "අලුතින් අරඹන්න"
+  },
+  {
+   "source": "পার্ট",
+   "target": "කොටස"
+  },
+  {
+   "source": "শব্দভাণ্ডার",
+   "target": "වචන මාලාව"
+  },
+  {
+   "source": "প্রশ্ন তালিকা",
+   "target": "ප්‍රශ්න ලැයිස්තුව"
+  },
+  {
+   "source": "০ / ০ উত্তর",
+   "target": "0 / 0 පිළිතුරු"
+  },
+  {
+   "source": "সব প্রশ্ন দেখুন",
+   "target": "සියලු ප්‍රශ්න බලන්න"
+  },
+  {
+   "source": "প্রশ্ন নম্বর ও অগ্রগতি",
+   "target": "ප්‍රශ්න අංකය සහ ප්‍රගතිය"
+  },
+  {
+   "source": "সবুজ: উত্তর দেওয়া · ★: পরে দেখব · নীল: বর্তমান প্রশ্ন",
+   "target": "කොළ: පිළිතුරු දී ඇත · ★: පසුව බලන්න · නිල්: වත්මන් ප්‍රශ්නය"
+  },
+  {
+   "source": "← আগের প্রশ্ন",
+   "target": "← පෙර ප්‍රශ්නය"
+  },
+  {
+   "source": "পরের প্রশ্ন →",
+   "target": "ඊළඟ ප්‍රශ්නය →"
+  },
+  {
+   "source": "এই পার্ট শেষ করুন",
+   "target": "මෙම කොටස අවසන් කරන්න"
+  },
+  {
+   "source": "পরীক্ষা মোডে উত্তর না দেওয়া প্রশ্ন রেখেও জমা দিতে পারবেন।",
+   "target": "විභාග ප්‍රකාරයේදී පිළිතුරු නොදුන් ප්‍රශ්න තිබියදීත් ඉදිරිපත් කළ හැකිය."
+  },
+  {
+   "source": "প্রথম উত্তর না-দেওয়া প্রশ্নে যান",
+   "target": "පළමු පිළිතුරු නොදුන් ප්‍රශ්නයට යන්න"
+  },
+  {
+   "source": "পার্টের অগ্রগতি",
+   "target": "කොටසේ ප්‍රගතිය"
+  },
+  {
+   "source": "০ / ০ উত্তর দেওয়া",
+   "target": "0 / 0 පිළිතුරු දී ඇත"
+  },
+  {
+   "source": "পার্ট জমা দিন",
+   "target": "කොටස ඉදිරිපත් කරන්න"
+  },
+  {
+   "source": "পার্ট সম্পন্ন",
+   "target": "කොටස සම්පූර්ණයි"
+  },
+  {
+   "source": "এই পার্ট জমা হয়েছে। এখন আগের উত্তরে ফিরে যাওয়া যাবে না।",
+   "target": "මෙම කොටස ඉදිරිපත් කර ඇත. දැන් පෙර පිළිතුරු වෙත ආපසු යා නොහැක."
+  },
+  {
+   "source": "০/০",
+   "target": "0/0"
+  },
+  {
+   "source": "উত্তর দেওয়া",
+   "target": "පිළිතුරු දී ඇත"
+  },
+  {
+   "source": "১/৩",
+   "target": "1/3"
+  },
+  {
+   "source": "পরবর্তী পার্ট শুরু করুন →",
+   "target": "ඊළඟ කොටස අරඹන්න →"
+  },
+  {
+   "source": "আপনার নিহোন · ফলাফল",
+   "target": "আপনার নিহোন · ප්‍රතිඵල"
+  },
+  {
+   "source": "সনদ / PDF ডাউনলোড",
+   "target": "සහතිකය / PDF බාගත කරන්න"
+  },
+  {
+   "source": "সব Mock Test",
+   "target": "සියලු Mock Test"
+  },
+  {
+   "source": "ফলাফল প্রিন্ট",
+   "target": "ප්‍රතිඵල මුද්‍රණය කරන්න"
+  },
+  {
+   "source": "আবার পরীক্ষা দিন",
+   "target": "නැවත විභාගය කරන්න"
+  },
+  {
+   "source": "উত্তর রিভিউ",
+   "target": "පිළිතුරු සමාලෝචනය"
+  },
+  {
+   "source": "সঠিক উত্তর, বাংলা ব্যাখ্যা ও Listening transcript",
+   "target": "නිවැරදි පිළිතුරු, සිංහල පැහැදිලි කිරීම සහ Listening transcript"
+  },
+  {
+   "source": "সব",
+   "target": "සියල්ල"
+  },
+  {
+   "source": "ভুল",
+   "target": "වැරැද්ද"
+  },
+  {
+   "source": "সঠিক",
+   "target": "නිවැරදි"
+  }
+ ]
+}

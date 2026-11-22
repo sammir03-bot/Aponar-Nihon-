@@ -1,0 +1,58 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ne",
+ "page": "jlpt-quiz",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "JLPT Quiz | আপনার নিহোন",
+   "target": "JLPT Quiz | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন · JLPT Quiz",
+   "target": "আপনার নিহোন · JLPT Quiz"
+  },
+  {
+   "source": "বাংলা ব্যাখ্যাসহ প্র্যাকটিস",
+   "target": "नेपाली व्याख्यासहित अभ्यास"
+  },
+  {
+   "source": "প্রশ্ন বেছে উত্তর দিন। প্রতিটি উত্তরের পর বাংলা ব্যাখ্যা দেখাবে।",
+   "target": "प्रश्न छानेर उत्तर दिनुहोस्। प्रत्येक उत्तरपछि नेपाली व्याख्या देखिनेछ।"
+  },
+  {
+   "source": "লেভেল",
+   "target": "लेभल"
+  },
+  {
+   "source": "০ / ০ উত্তর",
+   "target": "0 / 0 उत्तर"
+  },
+  {
+   "source": "স্কোর ০",
+   "target": "Score 0"
+  },
+  {
+   "source": "সব প্রশ্নের উত্তর দিন",
+   "target": "सबै प्रश्नको उत्तर दिनुहोस्"
+  },
+  {
+   "source": "আবার শুরু",
+   "target": "फेरि सुरु गर्नुहोस्"
+  },
+  {
+   "source": "ভুলগুলো আবার করি",
+   "target": "गल्तीहरू फेरि गरौं"
+  },
+  {
+   "source": "পরের Part →",
+   "target": "अर्को Part →"
+  },
+  {
+   "source": ". সব প্রশ্ন ও passage নতুন করে তৈরি করা হয়েছে; হুবহু কপি নয়।",
+   "target": ". सबै प्रश्न र passage नयाँ बनाइएका छन्; हुबहु कपी होइन।"
+  }
+ ]
+}

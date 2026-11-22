@@ -1,0 +1,86 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "zh",
+ "page": "jpy-bdt-remittance",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জাপানি ইয়েন ও বাংলাদেশি টাকার reference rate দেখুন এবং কোন ধরনের transfer channel আপনার পরিস্থিতিতে ভালো হতে পারে তা তুলনা করুন।",
+   "target": "查看日元与孟加拉国塔卡的 reference rate，并比较哪种 transfer channel 可能更适合您的情况。"
+  },
+  {
+   "source": "¥৳",
+   "target": "¥/BDT"
+  },
+  {
+   "source": "Rate load হলে হিসাব দেখাবে।",
+   "target": "Rate 加载后将显示计算结果。"
+  },
+  {
+   "source": ". Provider-এর actual send/receive rate ও fee আলাদা হতে পারে।",
+   "target": ". Provider 的实际 send/receive rate 和 fee 可能不同。"
+  },
+  {
+   "source": "“best” = use-case অনুযায়ী",
+   "target": "“best” = 根据 use-case 而定"
+  },
+  {
+   "source": "Japan থেকে JPY দিয়ে Bangladesh-এ BDT পাঠানো যায়; recipient bank account, bKash বা Nagad support থাকতে পারে। Fee ও delivery estimate transfer setup-এর সময় live দেখুন।",
+   "target": "可以从 Japan 用 JPY 向 Bangladesh 发送 BDT；可能支持 recipient bank account、bKash 或 Nagad。设置 transfer 时请实时查看 Fee 和 delivery estimate。"
+  },
+  {
+   "source": "বড় amount, formal bank trail বা specific beneficiary bank requirement থাকলে useful হতে পারে। Sending bank + intermediary + receiving bank fee আলাদা হতে পারে।",
+   "target": "如果金额较大、有 formal bank trail 或 specific beneficiary bank requirement，可能会有用。Sending bank + intermediary + receiving bank 的 fee 可能各不相同。"
+  },
+  {
+   "source": "cash দরকার হলে",
+   "target": "需要 cash 时"
+  },
+  {
+   "source": "Recipient-এর bank account না থাকলে cash pickup service useful হতে পারে। Availability, ID requirement, fee এবং exchange rate provider অনুযায়ী check করুন।",
+   "target": "如果 Recipient 没有 bank account，cash pickup service 可能会有用。请根据 provider 检查 Availability、ID requirement、fee 和 exchange rate。"
+  },
+  {
+   "source": "কোনটা বেছে নেব?",
+   "target": "该选哪一个？"
+  },
+  {
+   "source": "একটা provider সব সময় সবার জন্য best নয়",
+   "target": "没有一个 provider 始终对所有人都是 best"
+  },
+  {
+   "source": "কম/মাঝারি student remittance",
+   "target": "小额/中等金额的学生 remittance"
+  },
+  {
+   "source": "Live quote-এ recipient কত BDT পাবে সেটা তুলনা করুন। Wise-এর মতো online service সাধারণত সহজ comparison দেয়।",
+   "target": "在 Live quote 中比较 recipient 将收到多少 BDT。像 Wise 这样的 online service 通常提供简单的 comparison。"
+  },
+  {
+   "source": "বড় amount",
+   "target": "大金额"
+  },
+  {
+   "source": "Transfer limit, source-of-funds document, bank compliance এবং total fee আগে দেখুন। শুধু headline FX rate দেখে সিদ্ধান্ত নেবেন না।",
+   "target": "请先查看 Transfer limit、source-of-funds document、bank compliance 和 total fee。不要只看 headline FX rate 就做决定。"
+  },
+  {
+   "source": "জরুরি টাকা",
+   "target": "紧急汇款"
+  },
+  {
+   "source": "Delivery ETA + recipient method (bank/bKash/Nagad/cash) priority দিন। Fastest option সবসময় cheapest নাও হতে পারে।",
+   "target": "优先考虑 Delivery ETA + recipient method (bank/bKash/Nagad/cash)。Fastest option 并不总是 cheapest。"
+  },
+  {
+   "source": "গুরুত্বপূর্ণ:",
+   "target": "重要："
+  },
+  {
+   "source": "এই page financial advice নয় এবং এখানে দেখানো FX rate provider quote নয়। টাকা পাঠানোর আগে provider-এর final fee, exchange rate, transfer limit, eligibility এবং recipient amount যাচাই করুন। Bangladesh-এর remittance incentive থাকলে eligibility/provider support আলাদাভাবে confirm করুন।",
+   "target": "本 page 不是 financial advice，这里显示的 FX rate 也不是 provider quote。汇款前，请核实 provider 的 final fee、exchange rate、transfer limit、eligibility 和 recipient amount。如 Bangladesh 有 remittance incentive，请另行确认 eligibility/provider support。"
+  }
+ ]
+}

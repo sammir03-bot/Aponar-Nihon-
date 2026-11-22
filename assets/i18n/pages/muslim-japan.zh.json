@@ -1,0 +1,114 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "zh",
+ "page": "muslim-japan",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "বাংলাদেশি মুসলিমদের জন্য নামাজের সময়, কিবলা নির্দেশনা, কাছের মসজিদ এবং হালাল খাবার—এক জায়গায়।",
+   "target": "为孟加拉国穆斯林提供礼拜时间、朝拜方向、附近清真寺和清真食物——集中在一处。"
+  },
+  {
+   "source": "আমার লোকেশন নিন",
+   "target": "获取我的位置"
+  },
+  {
+   "source": "Compass চালু করুন",
+   "target": "开启 Compass"
+  },
+  {
+   "source": "লোকেশন দিলে আপনার এলাকার তথ্য দেখানো হবে।",
+   "target": "提供位置后，将显示您所在地区的信息。"
+  },
+  {
+   "source": "নামাজের সময়",
+   "target": "礼拜时间"
+  },
+  {
+   "source": "Hanafi Asr — বাংলাদেশি default",
+   "target": "Hanafi Asr — 孟加拉国 default"
+  },
+  {
+   "source": "লোকেশন প্রয়োজন",
+   "target": "需要位置"
+  },
+  {
+   "source": "নামাজের সময় স্থানীয় মসজিদের timetable থেকে কয়েক মিনিট ভিন্ন হতে পারে। স্থানীয় মসজিদের সময়কে অগ্রাধিকার দিন।",
+   "target": "礼拜时间可能与当地清真寺的 timetable 相差几分钟。请以当地清真寺的时间为准。"
+  },
+  {
+   "source": "কিবলা",
+   "target": "朝拜方向"
+  },
+  {
+   "source": "লোকেশন নিলে True North থেকে কিবলার degree দেখাবে। Compass permission দিলে ফোন ঘোরালে arrow update হবে।",
+   "target": "获取位置后，将显示从 True North 起的朝拜 degree。授予 Compass permission 后，转动手机时 arrow 会更新。"
+  },
+  {
+   "source": "কাছের মসজিদ ও হালাল খাবার",
+   "target": "附近的清真寺与清真食物"
+  },
+  {
+   "source": "OpenStreetMap · বাস্তব জায়গার তথ্য",
+   "target": "OpenStreetMap · 真实地点信息"
+  },
+  {
+   "source": "🕌 মসজিদ",
+   "target": "🕌 清真寺"
+  },
+  {
+   "source": "🍛 হালাল খাবার",
+   "target": "🍛 清真食物"
+  },
+  {
+   "source": "এলাকা",
+   "target": "地区"
+  },
+  {
+   "source": "কত দূরে",
+   "target": "距离多远"
+  },
+  {
+   "source": "৩ কিমি",
+   "target": "3 公里"
+  },
+  {
+   "source": "৬ কিমি",
+   "target": "6 公里"
+  },
+  {
+   "source": "১০ কিমি",
+   "target": "10 公里"
+  },
+  {
+   "source": "এই এলাকায় খুঁজুন",
+   "target": "在此地区搜索"
+  },
+  {
+   "source": "আপনার লোকেশন নিন অথবা এলাকা বেছে খুঁজুন। মানচিত্র সরিয়েও নতুন এলাকা বেছে নিতে পারেন।",
+   "target": "获取您的位置或选择地区进行搜索。移动地图也可以选择新的地区。"
+  },
+  {
+   "source": "লোকেশন বা এলাকা বেছে নিলে কাছের জায়গা দেখানো হবে।",
+   "target": "选择位置或地区后，将显示附近的地点。"
+  },
+  {
+   "source": "আবার চেষ্টা করুন",
+   "target": "重试"
+  },
+  {
+   "source": "তথ্য:",
+   "target": "信息："
+  },
+  {
+   "source": "। তথ্য অসম্পূর্ণ হতে পারে। খাবারের ক্ষেত্রে মানচিত্রের tag বা নাম ব্যবহার করা হয়; অর্ডারের আগে দোকানের বর্তমান হালাল সনদ ও উপাদান যাচাই করুন।",
+   "target": "。信息可能不完整。食物方面使用地图的 tag 或名称；下单前请核实商店当前的清真证书和成分。"
+  },
+  {
+   "source": "মানচিত্রের ভুল জানান",
+   "target": "报告地图错误"
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ja",
+ "page": "listening-lab",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Listening Hub · 800 অডিও অনুশীলন | আপনার নিহোন",
+   "target": "Listening Hub · 800件の音声練習 | আপনার নিহোন"
+  },
+  {
+   "source": "মূল লেখায় যান",
+   "target": "本文へ移動"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "শুনুন। উত্তর দিন। বুঝে শিখুন।",
+   "target": "聞きましょう。答えましょう。理解して学びましょう。"
+  },
+  {
+   "source": "৮০০টি রেকর্ড করা অনুশীলন। আপনার দেওয়া JapaneseTest4You উৎসের ২০৮টি প্রশ্ন এবং আপনার নিহোনের ৫৯২টি নিজস্ব অডিও প্রশ্ন। প্রতিটিতে সঠিক উত্তর ও বাংলায় কারণ আছে।",
+   "target": "800件の録音練習です。あなたが提供した JapaneseTest4You 出典の208問と、আপনার নিহোন の592問のオリジナル音声問題があります。各問題に正解とベンガル語の理由があります。"
+  },
+  {
+   "source": "অডিও + ফুরিগানা",
+   "target": "音声 + ふりがな"
+  },
+  {
+   "source": "আপনার লেভেল",
+   "target": "あなたのレベル"
+  },
+  {
+   "source": "প্রশ্নের উৎস",
+   "target": "問題の出典"
+  },
+  {
+   "source": "সব উৎস",
+   "target": "すべての出典"
+  },
+  {
+   "source": "আপনার নিহোন · নিজস্ব",
+   "target": "আপনার নিহোন · オリジナル"
+  },
+  {
+   "source": "অনুশীলন",
+   "target": "練習問題"
+  },
+  {
+   "source": "সব অনুশীলন",
+   "target": "すべての練習"
+  },
+  {
+   "source": "এখনো উত্তর দিইনি",
+   "target": "まだ答えていません"
+  },
+  {
+   "source": "ভুলগুলো আবার",
+   "target": "間違えた問題をもう一度"
+  },
+  {
+   "source": "রাখা প্রশ্ন",
+   "target": "保存した質問"
+  },
+  {
+   "source": "লিসেনিং লোড হচ্ছে…",
+   "target": "リスニングを読み込み中…"
+  },
+  {
+   "source": "পাঠের তালিকা",
+   "target": "レッスンリスト"
+  },
+  {
+   "source": "প্রশ্ন খুঁজুন",
+   "target": "問題を探す"
+  },
+  {
+   "source": "আরও পাঠ দেখুন",
+   "target": "もっとレッスンを見る"
+  },
+  {
+   "source": "শুনে শেখার ছোট রুটিন",
+   "target": "聞いて学ぶ小さなルーティン"
+  },
+  {
+   "source": "ছবি বা বিকল্প দেখে কী তথ্য খুঁজবেন বুঝুন। একবার স্বাভাবিক গতিতে শুনুন।",
+   "target": "絵や選択肢を見て、どんな情報を探せばよいか理解してください。1回、通常の速さで聞いてください。"
+  },
+  {
+   "source": "উত্তর বেছে “উত্তর যাচাই” করুন। ভুল হলে কোন সিদ্ধান্ত, সময় বা পরিবর্তন মিস হয়েছে দেখুন।",
+   "target": "答えを選んで「答えを確認」してください。間違えたら、どの判断、時間、変化を聞き逃したか見てください。"
+  },
+  {
+   "source": "ফুরিগানাসহ স্ক্রিপ্ট খুলে অডিও আবার শুনুন। নিজের মুখে একটি ছোট অংশ বলুন।",
+   "target": "ふりがな付きスクリプトを開いて、音声をもう一度聞いてください。小さな部分を自分の口で言ってみてください。"
+  },
+  {
+   "source": "ভুল প্রশ্ন “ভুলগুলো আবার” তালিকায় থাকবে। পরে ঠিক করলে তালিকা থেকে সরবে।",
+   "target": "間違えた問題は「間違えた問題をもう一度」リストに残ります。後で正解するとリストから外れます。"
+  },
+  {
+   "source": "JapaneseTest4You প্রশ্নে মূল রেকর্ডিং ও উৎসের লিংক আছে। নিজস্ব প্রশ্নে রেকর্ড করা জাপানি যন্ত্রকণ্ঠ (VOICEVOX) ব্যবহার করা হয়েছে। নিজস্ব প্রশ্নে সম্পূর্ণ বাংলা স্ক্রিপ্ট; উৎসের প্রশ্নে বাংলা উত্তর ও ব্যাখ্যা আছে। একই প্রশ্ন Mock Test-এও ব্যবহার করা হয়েছে।",
+   "target": "JapaneseTest4You の問題には元の録音と出典へのリンクがあります。オリジナル問題では録音された日本の機械音声（VOICEVOX）を使用しています。オリジナル問題には完全なベンガル語スクリプトがあり、出典の問題にはベンガル語の解答と解説があります。同じ問題は Mock Test でも使用されています。"
+  },
+  {
+   "source": "মিশ্র Revision →",
+   "target": "ミックス Revision →"
+  },
+  {
+   "source": "আগের ৬০টি সহায়ক পাঠ →",
+   "target": "以前の60件の補助レッスン →"
+  },
+  {
+   "source": "আপনার নিহোন · সহজ জাপানি, ফুরিগানা ও বাংলা দিয়ে প্রতিদিন অনুশীলন।",
+   "target": "আপনার নিহোন · やさしい日本語、ふりがな、ベンガル語で毎日練習。"
+  },
+  {
+   "source": "হোম",
+   "target": "ホーム"
+  },
+  {
+   "source": "প্রোফাইল",
+   "target": "プロフィール"
+  }
+ ]
+}

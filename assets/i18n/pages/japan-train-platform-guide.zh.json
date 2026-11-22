@@ -1,0 +1,398 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "zh",
+ "page": "japan-train-platform-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "ট্রেন ও Platform সম্পূর্ণ গাইড | আপনার নিহোন",
+   "target": "火车与站台完整指南 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "日本生活指南"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "所有指南"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "抵达后"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "家与日常生活"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "列车与Platform"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "使用谷歌地图"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "兼职工作"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "紧急援助"
+  },
+  {
+   "source": "ট্রেন ও Platform সম্পূর্ণ গাইড",
+   "target": "火车与站台完整指南"
+  },
+  {
+   "source": "লাইন, direction, Local/Rapid, IC card, transfer, platform ও exit—জাপানের ট্রেনে একা চলার জন্য পানির মতো ব্যাখ্যা।",
+   "target": "线路、方向、Local/Rapid、IC卡、换乘、站台和出口——让你能独自乘坐日本火车的清晰讲解。"
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "日语解说"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "日语句子"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "实际步骤"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "您的进度"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 已完成"
+  },
+  {
+   "source": "সমস্যা",
+   "target": "问题"
+  },
+  {
+   "source": "একটি Route-এর ৭টি তথ্য পড়ুন",
+   "target": "阅读一条路线的7项信息"
+  },
+  {
+   "source": "শুধু সময় দেখে ট্রেনে উঠবেন না",
+   "target": "不要只看时间就上火车"
+  },
+  {
+   "source": "স্ক্রিনে যা দেখবেন",
+   "target": "你在屏幕上会看到什么"
+  },
+  {
+   "source": "অর্থ",
+   "target": "意思"
+  },
+  {
+   "source": "আপনার কাজ",
+   "target": "你要做的事"
+  },
+  {
+   "source": "কোন railway line",
+   "target": "哪条铁路线路"
+  },
+  {
+   "source": "রঙ ও নাম মিলান",
+   "target": "核对颜色和名称"
+  },
+  {
+   "source": "ট্রেন কোন দিক যাচ্ছে",
+   "target": "火车往哪个方向走"
+  },
+  {
+   "source": "শেষ station/major station দেখুন",
+   "target": "查看终点站/主要车站"
+  },
+  {
+   "source": "ছাড়ার সময়",
+   "target": "发车时间"
+  },
+  {
+   "source": "বর্তমান সময়ের সঙ্গে মিলান",
+   "target": "与当前时间核对"
+  },
+  {
+   "source": "কোন platform",
+   "target": "哪个站台"
+  },
+  {
+   "source": "station board-এ আবার নিশ্চিত",
+   "target": "在车站显示屏上再次确认"
+  },
+  {
+   "source": "আপনার station-এ থামে কি না",
+   "target": "是否在你的车站停靠"
+  },
+  {
+   "source": "লাইন বদল",
+   "target": "换乘线路"
+  },
+  {
+   "source": "station name ও walking time দেখুন",
+   "target": "查看车站名称和步行时间"
+  },
+  {
+   "source": "স্টেশন থেকে বের হওয়ার gate",
+   "target": "出站的检票口"
+  },
+  {
+   "source": "destination-এর কাছের exit নিন",
+   "target": "选择离目的地近的出口"
+  },
+  {
+   "source": "স্টেশনের ভিতর Sign পড়া",
+   "target": "阅读车站内的指示牌"
+  },
+  {
+   "source": "Gate থেকে platform পর্যন্ত",
+   "target": "从检票口到站台"
+  },
+  {
+   "source": "Line symbol খুঁজুন",
+   "target": "寻找线路标志"
+  },
+  {
+   "source": "যেমন JY, JB, M ইত্যাদি station code ও line color আপনাকে দ্রুত সঠিক sign ধরতে সাহায্য করে।",
+   "target": "例如JY、JB、M等车站代码和线路颜色能帮你快速找到正确的指示牌。"
+  },
+  {
+   "source": "“For ○○” বোর্ড দেখুন",
+   "target": "查看“For ○○”牌子"
+  },
+  {
+   "source": "একই line-এর opposite direction আলাদা platform-এ হতে পারে।",
+   "target": "同一条线路的相反方向可能在不同的站台。"
+  },
+  {
+   "source": "Platform board-এ train type মিলান",
+   "target": "在站台显示屏上核对列车类型"
+  },
+  {
+   "source": "Local（各駅停車）, Rapid（快速）, Express（急行）-এর stop আলাদা হতে পারে।",
+   "target": "Local（各駅停車）、Rapid（快速）、Express（急行）的停靠站可能不同。"
+  },
+  {
+   "source": "IC Card দিয়ে ওঠা-নামা",
+   "target": "使用IC卡上下车"
+  },
+  {
+   "source": "Tap, balance ও fare adjustment",
+   "target": "刷卡、余额和车费调整"
+  },
+  {
+   "source": "প্রবেশে একবার tap",
+   "target": "进入时刷一次"
+  },
+  {
+   "source": "Gate-এর blue/IC অংশে card স্থিরভাবে ছোঁয়ান। Beep ও gate open হলে যান।",
+   "target": "将卡稳定地贴在检票口的蓝色/IC部分。听到蜂鸣声且闸门打开后通过。"
+  },
+  {
+   "source": "Transfer gate বুঝুন",
+   "target": "了解换乘检票口"
+  },
+  {
+   "source": "কিছু transfer-এ gate থেকে বের হলেও নির্দিষ্ট transfer gate/সময় থাকতে পারে। Sign অনুসরণ করুন।",
+   "target": "在某些换乘中，即使出了检票口，也可能有特定的换乘检票口/时间。请遵循指示牌。"
+  },
+  {
+   "source": "বের হওয়ার সময় আবার tap",
+   "target": "出站时再次刷卡"
+  },
+  {
+   "source": "ভাড়া balance থেকে কাটা হবে। Balance কম হলে fare adjustment/charge machine ব্যবহার করুন।",
+   "target": "车费会从余额中扣除。如果余额不足，使用车费调整/充值机。"
+  },
+  {
+   "source": "এক card এক ব্যক্তি",
+   "target": "一卡一人"
+  },
+  {
+   "source": "একই IC card দিয়ে একসঙ্গে দুইজন প্রবেশ করতে পারবেন না।",
+   "target": "不能用同一张IC卡两个人一起进入。"
+  },
+  {
+   "source": "Gate বন্ধ হলে ভয় নয়",
+   "target": "闸门关闭不要害怕"
+  },
+  {
+   "source": "পাশের station staff-কে card দেখিয়ে বলুন “出られません”。নিজে gate পার হওয়ার চেষ্টা করবেন না।",
+   "target": "向旁边的车站工作人员出示卡，并说“出られません”。不要自己试图越过闸门。"
+  },
+  {
+   "source": "Local, Rapid, Express পার্থক্য",
+   "target": "Local、Rapid、Express的区别"
+  },
+  {
+   "source": "ভুল train এড়ানোর সবচেয়ে গুরুত্বপূর্ণ অংশ",
+   "target": "避免坐错火车的最重要部分"
+  },
+  {
+   "source": "সাধারণ অর্থ",
+   "target": "一般含义"
+  },
+  {
+   "source": "সব/প্রায় সব station-এ থামে",
+   "target": "在所有/几乎所有车站停靠"
+  },
+  {
+   "source": "ধীর, কিন্তু beginner-এর জন্য সহজ",
+   "target": "速度慢，但对初学者容易"
+  },
+  {
+   "source": "কিছু station skip করে",
+   "target": "跳过一些车站"
+  },
+  {
+   "source": "আপনার station skip হতে পারে",
+   "target": "你的车站可能被跳过"
+  },
+  {
+   "source": "আরও কম station-এ থামে",
+   "target": "停靠的车站更少"
+  },
+  {
+   "source": "Stop list অবশ্যই দেখুন",
+   "target": "必须查看停靠站列表"
+  },
+  {
+   "source": "কখনো extra ticket লাগে",
+   "target": "有时需要额外车票"
+  },
+  {
+   "source": "নামের উপর নয়, stop list-এর উপর ভরসা করুন",
+   "target": "不要相信名称，要相信停靠站列表"
+  },
+  {
+   "source": "Railway company ভেদে “Rapid/Express” ব্যবস্থা আলাদা। Platform display-এ destination station আছে কি না দেখুন।",
+   "target": "不同铁路公司的“Rapid/Express”系统不同。请查看站台显示屏上有没有目的地车站。"
+  },
+  {
+   "source": "নামা থেকে দ্বিতীয় ট্রেনে ওঠা",
+   "target": "从下车到乘坐第二趟火车"
+  },
+  {
+   "source": "নামার আগেই next line মনে রাখুন",
+   "target": "下车前记住下一条线路"
+  },
+  {
+   "source": "Line name, color/code, direction এবং platform screenshot করুন।",
+   "target": "截图保存线路名称、颜色/代码、方向和站台。"
+  },
+  {
+   "source": "乗り換え sign অনুসরণ করুন",
+   "target": "跟随乗り換え指示牌"
+  },
+  {
+   "source": "Exit sign নয়—প্রথমে transfer line-এর arrow দেখুন।",
+   "target": "不是出口指示牌——先看换乘线路的箭头。"
+  },
+  {
+   "source": "Gate নিয়ে Maps-এর instruction পড়ুন",
+   "target": "阅读地图关于检票口的说明"
+  },
+  {
+   "source": "“Stay inside station” হলে সাধারণত gate ছাড়বেন না; “Exit and re-enter” হলে বাইরে যেতে হতে পারে।",
+   "target": "如果是“Stay inside station”，一般不要出检票口；如果是“Exit and re-enter”，可能需要出去。"
+  },
+  {
+   "source": "দ্বিতীয় platform-এ destination নিশ্চিত করুন",
+   "target": "在第二个站台确认目的地"
+  },
+  {
+   "source": "Google Maps-এর platform বদলে যেতে পারে; actual board চূড়ান্ত।",
+   "target": "Google Maps的站台可能会变；以实际显示屏为准。"
+  },
+  {
+   "source": "ভুল হলে কী করবেন",
+   "target": "出错了怎么办"
+  },
+  {
+   "source": "ভুল train, ভুল gate, card error",
+   "target": "坐错火车、走错检票口、卡出错"
+  },
+  {
+   "source": "এই ট্রেন শিনজুকুতে থামবে?",
+   "target": "这趟火车会在新宿停吗？"
+  },
+  {
+   "source": "কত নম্বর platform?",
+   "target": "是几号站台？"
+  },
+  {
+   "source": "Transfer কোথায়?",
+   "target": "在哪里换乘？"
+  },
+  {
+   "source": "ভুল করে উঠে গেছি। এখন কী করব?",
+   "target": "我坐错车了。现在该怎么办？"
+  },
+  {
+   "source": "IC card দিয়ে বের হতে পারছি না।",
+   "target": "我用IC卡出不去。"
+  },
+  {
+   "source": "একাই যাতায়াতের আগে",
+   "target": "独自出行前"
+  },
+  {
+   "source": "Line name ও color চিনতে পারি",
+   "target": "我能认出线路名称和颜色"
+  },
+  {
+   "source": "For/方面 দেখে direction বুঝি",
+   "target": "看到For/方面我能理解方向"
+  },
+  {
+   "source": "Local/Rapid stop list দেখি",
+   "target": "我会看Local/Rapid停靠站列表"
+  },
+  {
+   "source": "Platform number actual board-এ মিলাই",
+   "target": "我会在实际显示屏上核对站台编号"
+  },
+  {
+   "source": "IC card charge করতে পারি",
+   "target": "我会给IC卡充值"
+  },
+  {
+   "source": "Transfer sign অনুসরণ করতে পারি",
+   "target": "我能跟随换乘指示牌"
+  },
+  {
+   "source": "Exit number দেখে বের হতে পারি",
+   "target": "我能看着出口编号出站"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "官方与可靠来源"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "规则可能会有变动——做出最终决定前请查阅官方信息"
+  },
+  {
+   "source": "বাসা ও জীবন",
+   "target": "住房与生活"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "本指南仅供学习参考。涉及个人法律/医疗决策时，请遵循相关机构或专业人士的指导。"
+  },
+  {
+   "source": "হোম",
+   "target": "首页"
+  }
+ ]
+}

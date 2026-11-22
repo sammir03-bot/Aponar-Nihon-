@@ -1,0 +1,142 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "en",
+ "page": "part-time-cv-builder",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "পার্ট-টাইম Japanese CV",
+   "target": "Part-time Japanese CV"
+  },
+  {
+   "source": "আপনার দেওয়া 履歴書 form-এর structure অনুযায়ী। Japanese label-এর নিচে বাংলা explanation থাকবে; final CV/PDF হবে clean Japanese format.",
+   "target": "Based on the structure of the 履歴書 form you provided. A Bengali explanation will appear below each Japanese label; the final CV/PDF will be in a clean Japanese format."
+  },
+  {
+   "source": "(স্কুলের সময়),",
+   "target": "(school hours),"
+  },
+  {
+   "source": "(কাজ শুরুর তারিখ) এবং",
+   "target": "(work start date) and"
+  },
+  {
+   "source": "আলাদা করে রাখা হয়েছে।",
+   "target": "have been kept separate."
+  },
+  {
+   "source": "ব্যক্তিগত তথ্য",
+   "target": "Personal Information"
+  },
+  {
+   "source": "ছবি নির্বাচন",
+   "target": "Select photo"
+  },
+  {
+   "source": "সাধারণত 4cm × 3cm portrait photo ব্যবহার করুন।",
+   "target": "Generally, use a 4cm × 3cm portrait photo."
+  },
+  {
+   "source": "নামের হিরাগানা/ফুরিগানা",
+   "target": "Hiragana/furigana for your name"
+  },
+  {
+   "source": "পুরো নাম",
+   "target": "Full name"
+  },
+  {
+   "source": "জন্মতারিখ",
+   "target": "Date of birth"
+  },
+  {
+   "source": "লিঙ্গ — ঐচ্ছিক",
+   "target": "Gender — optional"
+  },
+  {
+   "source": "ঠিকানার হিরাগানা",
+   "target": "Hiragana for your address"
+  },
+  {
+   "source": "পোস্টাল কোড",
+   "target": "Postal code"
+  },
+  {
+   "source": "CV-এর তারিখ — আজকের তারিখ নিজে বসবে",
+   "target": "CV date — today's date will be filled in automatically"
+  },
+  {
+   "source": "বর্তমান ঠিকানা",
+   "target": "Address"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "Email"
+  },
+  {
+   "source": "ফোন নম্বর",
+   "target": "Phone"
+  },
+  {
+   "source": "/ শিক্ষা ও কাজ",
+   "target": "/ Education and work"
+  },
+  {
+   "source": "＋ নতুন লাইন",
+   "target": "＋ New line"
+  },
+  {
+   "source": "/ যোগ্যতা",
+   "target": "/ Qualifications"
+  },
+  {
+   "source": "＋ যোগ্যতা যোগ করুন",
+   "target": "＋ Add qualification"
+  },
+  {
+   "source": "আবেদন ও কাজের সময়",
+   "target": "Application and working hours"
+  },
+  {
+   "source": "কেন এই কাজ করতে চান, skill ও ভালো দিক",
+   "target": "Why you want this job, your skills and strengths"
+  },
+  {
+   "source": "নতুন Student",
+   "target": "New Student"
+  },
+  {
+   "source": "🏫 স্কুলের সময় ও কাজ শুরুর তারিখ",
+   "target": "🏫 School hours and work start date"
+  },
+  {
+   "source": "কোন দিন স্কুল থাকে",
+   "target": "Which days you have school"
+  },
+  {
+   "source": "স্কুল শুরু",
+   "target": "School starts"
+  },
+  {
+   "source": "স্কুল শেষ",
+   "target": "School ends"
+  },
+  {
+   "source": "কোন তারিখ থেকে কাজ শুরু করতে পারবেন",
+   "target": "From what date you can start work"
+  },
+  {
+   "source": "স্কুলের দিন ও সময় দিলে Japanese sentence এখানে তৈরি হবে।",
+   "target": "If you enter your school days and hours, a Japanese sentence will be generated here."
+  },
+  {
+   "source": "যে দিন/সময় কাজ করতে পারবেন",
+   "target": "Days/times you can work"
+  },
+  {
+   "source": "কাজের ধরন, শাখা, সময় বা অন্যান্য অনুরোধ",
+   "target": "Job type, branch, hours or other requests"
+  }
+ ]
+}

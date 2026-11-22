@@ -1,0 +1,170 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "en",
+ "page": "jlpt-revision",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Full Revision · বাস্তব প্রশ্ন ও ভুলের রিভিউ | আপনার নিহোন",
+   "target": "Full Revision · Review of real questions and mistakes | আপনার নিহোন"
+  },
+  {
+   "source": "মূল লেখায় যান",
+   "target": "Go to the original text"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "আজ পড়া মনে আছে?",
+   "target": "Do you remember what you studied today?"
+  },
+  {
+   "source": "ছোট প্রশ্নের সেশন দিয়ে ঝালাই করুন। ব্যাকরণ, শব্দ, কানজি, রিডিং ও লিসেনিং—২,৫৪০টি যাচাই করা প্রশ্ন। উত্তর দিলে বাংলা ব্যাখ্যা দেখুন, ভুলগুলো পরে আবার করুন।",
+   "target": "Brush up with a short question session. Grammar, vocabulary, kanji, reading and listening — 2,540 verified questions. Answer to see the Bengali explanation, and redo your mistakes later."
+  },
+  {
+   "source": "প্রশ্ন দিয়ে Revision",
+   "target": "Revision with questions"
+  },
+  {
+   "source": "পূর্ণ Mock Test →",
+   "target": "Full Mock Test →"
+  },
+  {
+   "source": "লেভেল",
+   "target": "Level"
+  },
+  {
+   "source": "আজকের অনুশীলন বাছুন",
+   "target": "Choose today's practice"
+  },
+  {
+   "source": "আগে না করা প্রশ্নকে অগ্রাধিকার দেওয়া হবে। এই অনুশীলন ব্যাংকের প্রশ্নগুলো Mock Test-এও আছে।",
+   "target": "Questions you have not attempted before will be prioritised. The questions in this practice bank are also in the Mock Tests."
+  },
+  {
+   "source": "বিষয়",
+   "target": "Subject"
+  },
+  {
+   "source": "সব বিষয় মিশিয়ে",
+   "target": "All subjects mixed"
+  },
+  {
+   "source": "ব্যাকরণ",
+   "target": "Grammar"
+  },
+  {
+   "source": "শব্দভান্ডার",
+   "target": "Vocabulary"
+  },
+  {
+   "source": "কানজি",
+   "target": "Kanji"
+  },
+  {
+   "source": "রিডিং",
+   "target": "Reading"
+  },
+  {
+   "source": "লিসেনিং",
+   "target": "Listening"
+  },
+  {
+   "source": "প্রশ্নের সংখ্যা",
+   "target": "Number of questions"
+  },
+  {
+   "source": "১০টি · ছোট সেশন",
+   "target": "10 · Short session"
+  },
+  {
+   "source": "২০টি · বেশি অনুশীলন",
+   "target": "20 · More practice"
+  },
+  {
+   "source": "নতুন সেশন শুরু",
+   "target": "Start a new session"
+  },
+  {
+   "source": "ভুলগুলো আবার করি",
+   "target": "Redo my mistakes"
+  },
+  {
+   "source": "আগের সেশন চালিয়ে যান",
+   "target": "Continue the previous session"
+  },
+  {
+   "source": "প্রশ্নব্যাংক লোড হচ্ছে…",
+   "target": "Loading question bank…"
+  },
+  {
+   "source": "দেখে নয়, মনে করে বলুন",
+   "target": "Don't look — recall and say it"
+  },
+  {
+   "source": "কানজির অর্থ ও একটি শব্দ মনে করার চেষ্টা করুন। তারপর পেছন দেখুন। আগের Flashcard-এর অগ্রগতি রাখা হয়েছে।",
+   "target": "Try to recall the kanji's meaning and one word. Then check the back. Your previous Flashcard progress has been kept."
+  },
+  {
+   "source": "কার্ডের তালিকা",
+   "target": "Card list"
+  },
+  {
+   "source": "আজ রিভিউ দরকার",
+   "target": "Needs review today"
+  },
+  {
+   "source": "সব কার্ড",
+   "target": "All cards"
+  },
+  {
+   "source": "কঠিন কার্ড",
+   "target": "Difficult cards"
+  },
+  {
+   "source": "রাখা কার্ড",
+   "target": "Saved cards"
+  },
+  {
+   "source": "কার্ড লোড হচ্ছে…",
+   "target": "Loading cards…"
+  },
+  {
+   "source": "ভুল কমানোর রুটিন",
+   "target": "A routine to reduce mistakes"
+  },
+  {
+   "source": "প্রতিদিন একটি ছোট সেশন করুন। আন্দাজে ঠিক হলে ব্যাখ্যাটি পড়ুন।",
+   "target": "Do one short session every day. If you got it right by guessing, read the explanation."
+  },
+  {
+   "source": "“ভুলগুলো আবার করি” খুলে উত্তর না দেখে চেষ্টা করুন। ঠিক হলে প্রশ্নটি ভুলের তালিকা থেকে সরে যাবে।",
+   "target": "Open “Redo my mistakes” and try without looking at the answer. If you get it right, the question will be removed from your mistakes list."
+  },
+  {
+   "source": "একই বিষয়ে বারবার ভুল হলে নিচের লেভেলের পাঠে নিয়মটি পড়ুন।",
+   "target": "If you keep making mistakes on the same topic, read the rule in the lower-level lesson."
+  },
+  {
+   "source": "সময়সীমাসহ পুরো পরীক্ষা দিতে Mock Test খুলুন। এখানে শেখার জন্য প্রশ্ন ধরে অনুশীলন।",
+   "target": "Open a Mock Test to take a full timed exam. Here, practise question by question for learning."
+  },
+  {
+   "source": "আপনার নিহোন · সহজ জাপানি, ফুরিগানা ও বাংলা দিয়ে প্রতিদিন অনুশীলন।",
+   "target": "আপনার নিহোন · Practise every day with easy Japanese, furigana and Bengali."
+  },
+  {
+   "source": "হোম",
+   "target": "Home"
+  },
+  {
+   "source": "প্রোফাইল",
+   "target": "Profile"
+  }
+ ]
+}

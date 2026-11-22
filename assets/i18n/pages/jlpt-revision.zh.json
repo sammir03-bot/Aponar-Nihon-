@@ -1,0 +1,170 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "zh",
+ "page": "jlpt-revision",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Full Revision · বাস্তব প্রশ্ন ও ভুলের রিভিউ | আপনার নিহোন",
+   "target": "Full Revision · 真题与错题复习 | আপনার নিহোন"
+  },
+  {
+   "source": "মূল লেখায় যান",
+   "target": "前往原文"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "আজ পড়া মনে আছে?",
+   "target": "还记得今天学的内容吗？"
+  },
+  {
+   "source": "ছোট প্রশ্নের সেশন দিয়ে ঝালাই করুন। ব্যাকরণ, শব্দ, কানজি, রিডিং ও লিসেনিং—২,৫৪০টি যাচাই করা প্রশ্ন। উত্তর দিলে বাংলা ব্যাখ্যা দেখুন, ভুলগুলো পরে আবার করুন।",
+   "target": "用短小的题目 session 来巩固。语法、词汇、汉字、阅读与听力——2,540 道经过核查的题目。答题后查看孟加拉语讲解，错题稍后再重做。"
+  },
+  {
+   "source": "প্রশ্ন দিয়ে Revision",
+   "target": "用题目进行 Revision"
+  },
+  {
+   "source": "পূর্ণ Mock Test →",
+   "target": "完整 Mock Test →"
+  },
+  {
+   "source": "লেভেল",
+   "target": "等级"
+  },
+  {
+   "source": "আজকের অনুশীলন বাছুন",
+   "target": "选择今天的练习"
+  },
+  {
+   "source": "আগে না করা প্রশ্নকে অগ্রাধিকার দেওয়া হবে। এই অনুশীলন ব্যাংকের প্রশ্নগুলো Mock Test-এও আছে।",
+   "target": "将优先安排之前未做过的题目。本练习题库中的题目也包含在 Mock Test 中。"
+  },
+  {
+   "source": "বিষয়",
+   "target": "主题"
+  },
+  {
+   "source": "সব বিষয় মিশিয়ে",
+   "target": "所有主题混合"
+  },
+  {
+   "source": "ব্যাকরণ",
+   "target": "语法"
+  },
+  {
+   "source": "শব্দভান্ডার",
+   "target": "词汇"
+  },
+  {
+   "source": "কানজি",
+   "target": "汉字"
+  },
+  {
+   "source": "রিডিং",
+   "target": "阅读"
+  },
+  {
+   "source": "লিসেনিং",
+   "target": "听力"
+  },
+  {
+   "source": "প্রশ্নের সংখ্যা",
+   "target": "题目数量"
+  },
+  {
+   "source": "১০টি · ছোট সেশন",
+   "target": "10 道 · 短 session"
+  },
+  {
+   "source": "২০টি · বেশি অনুশীলন",
+   "target": "20 道 · 更多练习"
+  },
+  {
+   "source": "নতুন সেশন শুরু",
+   "target": "开始新 session"
+  },
+  {
+   "source": "ভুলগুলো আবার করি",
+   "target": "重做错题"
+  },
+  {
+   "source": "আগের সেশন চালিয়ে যান",
+   "target": "继续之前的 session"
+  },
+  {
+   "source": "প্রশ্নব্যাংক লোড হচ্ছে…",
+   "target": "题库加载中…"
+  },
+  {
+   "source": "দেখে নয়, মনে করে বলুন",
+   "target": "不要看，要回忆着说出来"
+  },
+  {
+   "source": "কানজির অর্থ ও একটি শব্দ মনে করার চেষ্টা করুন। তারপর পেছন দেখুন। আগের Flashcard-এর অগ্রগতি রাখা হয়েছে।",
+   "target": "试着回忆汉字的含义和一个词语。然后翻看背面。之前 Flashcard 的进度已保留。"
+  },
+  {
+   "source": "কার্ডের তালিকা",
+   "target": "卡片列表"
+  },
+  {
+   "source": "আজ রিভিউ দরকার",
+   "target": "今天需要复习"
+  },
+  {
+   "source": "সব কার্ড",
+   "target": "所有卡片"
+  },
+  {
+   "source": "কঠিন কার্ড",
+   "target": "难卡片"
+  },
+  {
+   "source": "রাখা কার্ড",
+   "target": "已保存的卡片"
+  },
+  {
+   "source": "কার্ড লোড হচ্ছে…",
+   "target": "卡片加载中…"
+  },
+  {
+   "source": "ভুল কমানোর রুটিন",
+   "target": "减少错误的方法"
+  },
+  {
+   "source": "প্রতিদিন একটি ছোট সেশন করুন। আন্দাজে ঠিক হলে ব্যাখ্যাটি পড়ুন।",
+   "target": "每天做一个短 session。如果是猜对的，也请阅读讲解。"
+  },
+  {
+   "source": "“ভুলগুলো আবার করি” খুলে উত্তর না দেখে চেষ্টা করুন। ঠিক হলে প্রশ্নটি ভুলের তালিকা থেকে সরে যাবে।",
+   "target": "打开“重做错题”，在不看答案的情况下尝试作答。答对后，该题将从错题列表中移除。"
+  },
+  {
+   "source": "একই বিষয়ে বারবার ভুল হলে নিচের লেভেলের পাঠে নিয়মটি পড়ুন।",
+   "target": "如果在同一主题上反复出错，请到低一级的课程中阅读该规则。"
+  },
+  {
+   "source": "সময়সীমাসহ পুরো পরীক্ষা দিতে Mock Test খুলুন। এখানে শেখার জন্য প্রশ্ন ধরে অনুশীলন।",
+   "target": "如需在限时内完成整场考试，请打开 Mock Test。这里是按题目逐题练习，以学习为主。"
+  },
+  {
+   "source": "আপনার নিহোন · সহজ জাপানি, ফুরিগানা ও বাংলা দিয়ে প্রতিদিন অনুশীলন।",
+   "target": "আপনার নিহোন · 用简单日语、注音假名和孟加拉语每天练习。"
+  },
+  {
+   "source": "হোম",
+   "target": "首页"
+  },
+  {
+   "source": "প্রোফাইল",
+   "target": "个人资料"
+  }
+ ]
+}

@@ -1,0 +1,86 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "en",
+ "page": "jpy-bdt-remittance",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জাপানি ইয়েন ও বাংলাদেশি টাকার reference rate দেখুন এবং কোন ধরনের transfer channel আপনার পরিস্থিতিতে ভালো হতে পারে তা তুলনা করুন।",
+   "target": "See the reference rate for Japanese yen and Bangladeshi taka, and compare which type of transfer channel may suit your situation."
+  },
+  {
+   "source": "¥৳",
+   "target": "¥Tk"
+  },
+  {
+   "source": "Rate load হলে হিসাব দেখাবে।",
+   "target": "Once the rate loads, the calculation will be shown."
+  },
+  {
+   "source": ". Provider-এর actual send/receive rate ও fee আলাদা হতে পারে।",
+   "target": ". The provider's actual send/receive rate and fee may differ."
+  },
+  {
+   "source": "“best” = use-case অনুযায়ী",
+   "target": "“best” = depending on the use case"
+  },
+  {
+   "source": "Japan থেকে JPY দিয়ে Bangladesh-এ BDT পাঠানো যায়; recipient bank account, bKash বা Nagad support থাকতে পারে। Fee ও delivery estimate transfer setup-এর সময় live দেখুন।",
+   "target": "You can send BDT to Bangladesh from Japan in JPY; the recipient's bank account, bKash or Nagad may be supported. See the fee and delivery estimate live during the transfer setup."
+  },
+  {
+   "source": "বড় amount, formal bank trail বা specific beneficiary bank requirement থাকলে useful হতে পারে। Sending bank + intermediary + receiving bank fee আলাদা হতে পারে।",
+   "target": "It may be useful for large amounts, a formal bank trail, or a specific beneficiary bank requirement. Sending bank + intermediary + receiving bank fees may apply separately."
+  },
+  {
+   "source": "cash দরকার হলে",
+   "target": "If cash is needed"
+  },
+  {
+   "source": "Recipient-এর bank account না থাকলে cash pickup service useful হতে পারে। Availability, ID requirement, fee এবং exchange rate provider অনুযায়ী check করুন।",
+   "target": "If the recipient has no bank account, a cash pickup service may be useful. Check availability, ID requirements, fees and the exchange rate with the provider."
+  },
+  {
+   "source": "কোনটা বেছে নেব?",
+   "target": "Which one should I choose?"
+  },
+  {
+   "source": "একটা provider সব সময় সবার জন্য best নয়",
+   "target": "One provider is not always the best for everyone"
+  },
+  {
+   "source": "কম/মাঝারি student remittance",
+   "target": "Small/medium student remittance"
+  },
+  {
+   "source": "Live quote-এ recipient কত BDT পাবে সেটা তুলনা করুন। Wise-এর মতো online service সাধারণত সহজ comparison দেয়।",
+   "target": "Compare how much BDT the recipient will get in the live quote. Online services like Wise usually make comparison easy."
+  },
+  {
+   "source": "বড় amount",
+   "target": "Large amount"
+  },
+  {
+   "source": "Transfer limit, source-of-funds document, bank compliance এবং total fee আগে দেখুন। শুধু headline FX rate দেখে সিদ্ধান্ত নেবেন না।",
+   "target": "Check the transfer limit, source-of-funds documents, bank compliance and total fee first. Do not decide based only on the headline FX rate."
+  },
+  {
+   "source": "জরুরি টাকা",
+   "target": "Urgent money"
+  },
+  {
+   "source": "Delivery ETA + recipient method (bank/bKash/Nagad/cash) priority দিন। Fastest option সবসময় cheapest নাও হতে পারে।",
+   "target": "Prioritise the delivery ETA + recipient method (bank/bKash/Nagad/cash). The fastest option may not always be the cheapest."
+  },
+  {
+   "source": "গুরুত্বপূর্ণ:",
+   "target": "Important:"
+  },
+  {
+   "source": "এই page financial advice নয় এবং এখানে দেখানো FX rate provider quote নয়। টাকা পাঠানোর আগে provider-এর final fee, exchange rate, transfer limit, eligibility এবং recipient amount যাচাই করুন। Bangladesh-এর remittance incentive থাকলে eligibility/provider support আলাদাভাবে confirm করুন।",
+   "target": "This page is not financial advice, and the FX rate shown here is not a provider quote. Before sending money, verify the provider's final fee, exchange rate, transfer limit, eligibility and recipient amount. If Bangladesh offers a remittance incentive, confirm eligibility/provider support separately."
+  }
+ ]
+}

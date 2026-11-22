@@ -1,0 +1,98 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "zh",
+ "page": "japan-newcomer-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জাপান লাইফ গাইড | আপনার নিহোন",
+   "target": "日本生活指南 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "日本生活指南"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "所有指南"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "抵达后"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "家与日常生活"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "列车与Platform"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "使用谷歌地图"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "兼职工作"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "紧急援助"
+  },
+  {
+   "source": "জাপানে নতুন জীবন",
+   "target": "在日本的新生活"
+  },
+  {
+   "source": "শুরু থেকে শেষ পর্যন্ত",
+   "target": "从开始到结束"
+  },
+  {
+   "source": "একটি বড় page নয়—প্রতিটি বিষয় আলাদা, পরিষ্কার এবং বাস্তব কাজের ক্রমে সাজানো।",
+   "target": "不是一个大页面——每个主题分开、清晰，并按实际事务顺序排列。"
+  },
+  {
+   "source": "৬টি পূর্ণ গাইড",
+   "target": "6个完整指南"
+  },
+  {
+   "source": "কোনটি শিখবেন?",
+   "target": "你想学哪个？"
+  },
+  {
+   "source": "একটি card চাপলে সেই বিষয়ের সম্পূর্ণ গাইড খুলবে",
+   "target": "点击一张卡片，就会打开该主题的完整指南"
+  },
+  {
+   "source": "গ্যাস, বিদ্যুৎ, ময়লা, delivery",
+   "target": "燃气、电、垃圾、配送"
+  },
+  {
+   "source": "লাইন, direction, transfer, IC card",
+   "target": "线路、方向、换乘、IC卡"
+  },
+  {
+   "source": "সময়, platform, exit, fare",
+   "target": "时间、站台、出口、车费"
+  },
+  {
+   "source": "শেখার সেরা ক্রম:",
+   "target": "最佳学习顺序："
+  },
+  {
+   "source": "আগমনের পর → বাসা → ট্রেন → Google Maps → চাকরি → জরুরি সহায়তা। প্রতিটি page-এর checklist আপনার browser-এ নিজে থেকে save থাকবে।",
+   "target": "抵达后 → 住房 → 火车 → Google Maps → 工作 → 紧急援助。每个页面的清单都会自动保存在你的浏览器中。"
+  },
+  {
+   "source": "হোম",
+   "target": "首页"
+  }
+ ]
+}

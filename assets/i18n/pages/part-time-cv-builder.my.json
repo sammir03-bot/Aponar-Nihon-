@@ -1,0 +1,142 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "my",
+ "page": "part-time-cv-builder",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "পার্ট-টাইম Japanese CV",
+   "target": "အချိန်ပိုင်း Japanese CV"
+  },
+  {
+   "source": "আপনার দেওয়া 履歴書 form-এর structure অনুযায়ী। Japanese label-এর নিচে বাংলা explanation থাকবে; final CV/PDF হবে clean Japanese format.",
+   "target": "သင်ပေးထားသော 履歴書 form ၏ structure အရ။ Japanese label အောက်တွင် မြန်မာ ရှင်းလင်းချက် ရှိပါမည်; final CV/PDF သည် သန့်ရှင်းသော Japanese format ဖြစ်ပါမည်။"
+  },
+  {
+   "source": "(স্কুলের সময়),",
+   "target": "(ကျောင်း အချိန်),"
+  },
+  {
+   "source": "(কাজ শুরুর তারিখ) এবং",
+   "target": "(အလုပ် စတင်မည့် ရက်စွဲ) နှင့်"
+  },
+  {
+   "source": "আলাদা করে রাখা হয়েছে।",
+   "target": "သီးခြား ထားရှိပါသည်။"
+  },
+  {
+   "source": "ব্যক্তিগত তথ্য",
+   "target": "ကိုယ်ရေးကိုယ်တာ အချက်အလက်"
+  },
+  {
+   "source": "ছবি নির্বাচন",
+   "target": "ဓာတ်ပုံ ရွေးချယ်ခြင်း"
+  },
+  {
+   "source": "সাধারণত 4cm × 3cm portrait photo ব্যবহার করুন।",
+   "target": "များသောအားဖြင့် 4cm × 3cm portrait photo အသုံးပြုပါ။"
+  },
+  {
+   "source": "নামের হিরাগানা/ফুরিগানা",
+   "target": "အမည်၏ ဟီရာဂါနာ/ဖူရီဂါနာ"
+  },
+  {
+   "source": "পুরো নাম",
+   "target": "အမည်အပြည့်အစုံ"
+  },
+  {
+   "source": "জন্মতারিখ",
+   "target": "မွေးသက္ကရာဇ်"
+  },
+  {
+   "source": "লিঙ্গ — ঐচ্ছিক",
+   "target": "ကျား/မ — ရွေးချယ်နိုင်သည်"
+  },
+  {
+   "source": "ঠিকানার হিরাগানা",
+   "target": "လိပ်စာ၏ ဟီရာဂါနာ"
+  },
+  {
+   "source": "পোস্টাল কোড",
+   "target": "စာတိုက်ကုဒ်"
+  },
+  {
+   "source": "CV-এর তারিখ — আজকের তারিখ নিজে বসবে",
+   "target": "CV ရက်စွဲ — ယနေ့ ရက်စွဲ အလိုအလျောက် ထည့်ပါမည်"
+  },
+  {
+   "source": "বর্তমান ঠিকানা",
+   "target": "လက်ရှိလိပ်စာ"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "အီးမေးလ်"
+  },
+  {
+   "source": "ফোন নম্বর",
+   "target": "ဖုန်းနံပါတ်"
+  },
+  {
+   "source": "/ শিক্ষা ও কাজ",
+   "target": "/ ပညာရေးနှင့် အလုပ်"
+  },
+  {
+   "source": "＋ নতুন লাইন",
+   "target": "＋ စာကြောင်းအသစ်"
+  },
+  {
+   "source": "/ যোগ্যতা",
+   "target": "/ အရည်အချင်းများ"
+  },
+  {
+   "source": "＋ যোগ্যতা যোগ করুন",
+   "target": "＋ အရည်အချင်း ထည့်ပါ"
+  },
+  {
+   "source": "আবেদন ও কাজের সময়",
+   "target": "လျှောက်ထားခြင်းနှင့် အလုပ် အချိန်"
+  },
+  {
+   "source": "কেন এই কাজ করতে চান, skill ও ভালো দিক",
+   "target": "ဤအလုပ်ကို ဘာကြောင့် လုပ်လိုသနည်း, skill နှင့် အားသာချက်များ"
+  },
+  {
+   "source": "নতুন Student",
+   "target": "Student အသစ်"
+  },
+  {
+   "source": "🏫 স্কুলের সময় ও কাজ শুরুর তারিখ",
+   "target": "🏫 ကျောင်း အချိန်နှင့် အလုပ် စတင်မည့် ရက်စွဲ"
+  },
+  {
+   "source": "কোন দিন স্কুল থাকে",
+   "target": "ဘယ်နေ့တွင် ကျောင်း ရှိသနည်း"
+  },
+  {
+   "source": "স্কুল শুরু",
+   "target": "ကျောင်း စတင်ချိန်"
+  },
+  {
+   "source": "স্কুল শেষ",
+   "target": "ကျောင်း ပြီးဆုံးချိန်"
+  },
+  {
+   "source": "কোন তারিখ থেকে কাজ শুরু করতে পারবেন",
+   "target": "ဘယ်ရက်စွဲမှ အလုပ် စတင်နိုင်သနည်း"
+  },
+  {
+   "source": "স্কুলের দিন ও সময় দিলে Japanese sentence এখানে তৈরি হবে।",
+   "target": "ကျောင်း နေ့နှင့် အချိန် ပေးပါက Japanese ဝါကျ ဤနေရာတွင် ဖန်တီးပါမည်။"
+  },
+  {
+   "source": "যে দিন/সময় কাজ করতে পারবেন",
+   "target": "ဘယ်နေ့/အချိန်တွင် အလုပ်လုပ်နိုင်သနည်း"
+  },
+  {
+   "source": "কাজের ধরন, শাখা, সময় বা অন্যান্য অনুরোধ",
+   "target": "အလုပ်အမျိုးအစား, ဆိုင်ခွဲ, အချိန် သို့မဟုတ် အခြား တောင်းဆိုချက်များ"
+  }
+ ]
+}

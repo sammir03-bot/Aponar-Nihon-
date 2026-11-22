@@ -1,0 +1,170 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "jlpt-revision",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Full Revision · বাস্তব প্রশ্ন ও ভুলের রিভিউ | আপনার নিহোন",
+   "target": "Full Revision · Ôn tập câu hỏi thật và câu sai | আপনার নিহোন"
+  },
+  {
+   "source": "মূল লেখায় যান",
+   "target": "Đi đến bài viết gốc"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "আজ পড়া মনে আছে?",
+   "target": "Bạn còn nhớ bài học hôm nay không?"
+  },
+  {
+   "source": "ছোট প্রশ্নের সেশন দিয়ে ঝালাই করুন। ব্যাকরণ, শব্দ, কানজি, রিডিং ও লিসেনিং—২,৫৪০টি যাচাই করা প্রশ্ন। উত্তর দিলে বাংলা ব্যাখ্যা দেখুন, ভুলগুলো পরে আবার করুন।",
+   "target": "Ôn lại bằng một phiên câu hỏi ngắn. Ngữ pháp, từ vựng, kanji, reading và listening—2,540 câu hỏi đã được kiểm chứng. Khi trả lời, xem giải thích bằng tiếng Việt, và làm lại những câu sai sau."
+  },
+  {
+   "source": "প্রশ্ন দিয়ে Revision",
+   "target": "Revision bằng câu hỏi"
+  },
+  {
+   "source": "পূর্ণ Mock Test →",
+   "target": "Mock Test đầy đủ →"
+  },
+  {
+   "source": "লেভেল",
+   "target": "Cấp độ"
+  },
+  {
+   "source": "আজকের অনুশীলন বাছুন",
+   "target": "Chọn bài luyện tập hôm nay"
+  },
+  {
+   "source": "আগে না করা প্রশ্নকে অগ্রাধিকার দেওয়া হবে। এই অনুশীলন ব্যাংকের প্রশ্নগুলো Mock Test-এও আছে।",
+   "target": "Ưu tiên câu hỏi bạn chưa làm. Các câu hỏi trong ngân hàng luyện tập này cũng có trong Mock Test."
+  },
+  {
+   "source": "বিষয়",
+   "target": "Chủ đề"
+  },
+  {
+   "source": "সব বিষয় মিশিয়ে",
+   "target": "Trộn tất cả chủ đề"
+  },
+  {
+   "source": "ব্যাকরণ",
+   "target": "Ngữ pháp"
+  },
+  {
+   "source": "শব্দভান্ডার",
+   "target": "Từ vựng"
+  },
+  {
+   "source": "কানজি",
+   "target": "Kanji"
+  },
+  {
+   "source": "রিডিং",
+   "target": "Reading"
+  },
+  {
+   "source": "লিসেনিং",
+   "target": "Listening"
+  },
+  {
+   "source": "প্রশ্নের সংখ্যা",
+   "target": "Số câu hỏi"
+  },
+  {
+   "source": "১০টি · ছোট সেশন",
+   "target": "10 câu · Phiên ngắn"
+  },
+  {
+   "source": "২০টি · বেশি অনুশীলন",
+   "target": "20 câu · Luyện tập nhiều hơn"
+  },
+  {
+   "source": "নতুন সেশন শুরু",
+   "target": "Bắt đầu phiên mới"
+  },
+  {
+   "source": "ভুলগুলো আবার করি",
+   "target": "Làm lại những câu sai"
+  },
+  {
+   "source": "আগের সেশন চালিয়ে যান",
+   "target": "Tiếp tục phiên trước"
+  },
+  {
+   "source": "প্রশ্নব্যাংক লোড হচ্ছে…",
+   "target": "Đang tải ngân hàng câu hỏi…"
+  },
+  {
+   "source": "দেখে নয়, মনে করে বলুন",
+   "target": "Nói từ trí nhớ, không nhìn"
+  },
+  {
+   "source": "কানজির অর্থ ও একটি শব্দ মনে করার চেষ্টা করুন। তারপর পেছন দেখুন। আগের Flashcard-এর অগ্রগতি রাখা হয়েছে।",
+   "target": "Hãy cố nhớ nghĩa của kanji và một từ chứa nó. Sau đó xem mặt sau. Tiến độ Flashcard trước đây của bạn đã được giữ lại."
+  },
+  {
+   "source": "কার্ডের তালিকা",
+   "target": "Danh sách thẻ"
+  },
+  {
+   "source": "আজ রিভিউ দরকার",
+   "target": "Cần ôn tập hôm nay"
+  },
+  {
+   "source": "সব কার্ড",
+   "target": "Tất cả thẻ"
+  },
+  {
+   "source": "কঠিন কার্ড",
+   "target": "Thẻ khó"
+  },
+  {
+   "source": "রাখা কার্ড",
+   "target": "Thẻ đã lưu"
+  },
+  {
+   "source": "কার্ড লোড হচ্ছে…",
+   "target": "Đang tải thẻ…"
+  },
+  {
+   "source": "ভুল কমানোর রুটিন",
+   "target": "Thói quen giảm lỗi sai"
+  },
+  {
+   "source": "প্রতিদিন একটি ছোট সেশন করুন। আন্দাজে ঠিক হলে ব্যাখ্যাটি পড়ুন।",
+   "target": "Mỗi ngày hãy làm một phiên ngắn. Nếu đoán đúng, hãy đọc phần giải thích."
+  },
+  {
+   "source": "“ভুলগুলো আবার করি” খুলে উত্তর না দেখে চেষ্টা করুন। ঠিক হলে প্রশ্নটি ভুলের তালিকা থেকে সরে যাবে।",
+   "target": "Mở “Làm lại những câu sai” và cố gắng làm mà không xem đáp án. Nếu đúng, câu hỏi sẽ rời khỏi danh sách câu sai."
+  },
+  {
+   "source": "একই বিষয়ে বারবার ভুল হলে নিচের লেভেলের পাঠে নিয়মটি পড়ুন।",
+   "target": "Nếu bạn liên tục sai ở cùng một chủ đề, hãy đọc lại quy tắc trong bài học ở cấp độ thấp hơn."
+  },
+  {
+   "source": "সময়সীমাসহ পুরো পরীক্ষা দিতে Mock Test খুলুন। এখানে শেখার জন্য প্রশ্ন ধরে অনুশীলন।",
+   "target": "Để làm bài thi đầy đủ có giới hạn thời gian, hãy mở Mock Test. Ở đây, luyện tập từng câu hỏi để học."
+  },
+  {
+   "source": "আপনার নিহোন · সহজ জাপানি, ফুরিগানা ও বাংলা দিয়ে প্রতিদিন অনুশীলন।",
+   "target": "আপনার নিহোন · Luyện tập mỗi ngày với tiếng Nhật dễ hiểu, furigana và tiếng Bengal."
+  },
+  {
+   "source": "হোম",
+   "target": "Trang chủ"
+  },
+  {
+   "source": "প্রোফাইল",
+   "target": "Hồ sơ"
+  }
+ ]
+}

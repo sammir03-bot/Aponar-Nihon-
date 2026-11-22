@@ -1,0 +1,170 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "fil",
+ "page": "jlpt-revision",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Full Revision · বাস্তব প্রশ্ন ও ভুলের রিভিউ | আপনার নিহোন",
+   "target": "Full Revision · Review ng totoong tanong at mga mali | আপনার নিহোন"
+  },
+  {
+   "source": "মূল লেখায় যান",
+   "target": "Pumunta sa pangunahing teksto"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "আজ পড়া মনে আছে?",
+   "target": "Naalala mo pa ba ang pinag-aralan mo ngayon?"
+  },
+  {
+   "source": "ছোট প্রশ্নের সেশন দিয়ে ঝালাই করুন। ব্যাকরণ, শব্দ, কানজি, রিডিং ও লিসেনিং—২,৫৪০টি যাচাই করা প্রশ্ন। উত্তর দিলে বাংলা ব্যাখ্যা দেখুন, ভুলগুলো পরে আবার করুন।",
+   "target": "Mag-refresh sa pamamagitan ng maikling question session. Grammar, bokabularyo, kanji, reading at listening—2,540 na beripikadong tanong. Kapag sumagot ka, tingnan ang paliwanag sa Filipino, at ulitin ang mga mali mamaya."
+  },
+  {
+   "source": "প্রশ্ন দিয়ে Revision",
+   "target": "Revision gamit ang mga tanong"
+  },
+  {
+   "source": "পূর্ণ Mock Test →",
+   "target": "Buong Mock Test →"
+  },
+  {
+   "source": "লেভেল",
+   "target": "Level"
+  },
+  {
+   "source": "আজকের অনুশীলন বাছুন",
+   "target": "Piliin ang practice ngayong araw"
+  },
+  {
+   "source": "আগে না করা প্রশ্নকে অগ্রাধিকার দেওয়া হবে। এই অনুশীলন ব্যাংকের প্রশ্নগুলো Mock Test-এও আছে।",
+   "target": "Bibigyang-priyoridad ang mga tanong na hindi mo pa nasasagutan. Ang mga tanong sa practice bank na ito ay nasa Mock Test din."
+  },
+  {
+   "source": "বিষয়",
+   "target": "Paksa"
+  },
+  {
+   "source": "সব বিষয় মিশিয়ে",
+   "target": "Pinaghalo ang lahat ng paksa"
+  },
+  {
+   "source": "ব্যাকরণ",
+   "target": "Grammar"
+  },
+  {
+   "source": "শব্দভান্ডার",
+   "target": "Bokabularyo"
+  },
+  {
+   "source": "কানজি",
+   "target": "Kanji"
+  },
+  {
+   "source": "রিডিং",
+   "target": "Reading"
+  },
+  {
+   "source": "লিসেনিং",
+   "target": "Listening"
+  },
+  {
+   "source": "প্রশ্নের সংখ্যা",
+   "target": "Bilang ng mga tanong"
+  },
+  {
+   "source": "১০টি · ছোট সেশন",
+   "target": "10 · Maikling session"
+  },
+  {
+   "source": "২০টি · বেশি অনুশীলন",
+   "target": "20 · Mas maraming practice"
+  },
+  {
+   "source": "নতুন সেশন শুরু",
+   "target": "Magsimula ng bagong session"
+  },
+  {
+   "source": "ভুলগুলো আবার করি",
+   "target": "Ulitin ang mga mali"
+  },
+  {
+   "source": "আগের সেশন চালিয়ে যান",
+   "target": "Ipagpatuloy ang nakaraang session"
+  },
+  {
+   "source": "প্রশ্নব্যাংক লোড হচ্ছে…",
+   "target": "Naglo-load ang question bank…"
+  },
+  {
+   "source": "দেখে নয়, মনে করে বলুন",
+   "target": "Sabihin mula sa memorya, hindi sa pagtingin"
+  },
+  {
+   "source": "কানজির অর্থ ও একটি শব্দ মনে করার চেষ্টা করুন। তারপর পেছন দেখুন। আগের Flashcard-এর অগ্রগতি রাখা হয়েছে।",
+   "target": "Subukang alalahanin ang kahulugan ng kanji at isang salita. Pagkatapos ay tingnan ang likod. Napanatili ang progreso ng dating Flashcard."
+  },
+  {
+   "source": "কার্ডের তালিকা",
+   "target": "Listahan ng mga card"
+  },
+  {
+   "source": "আজ রিভিউ দরকার",
+   "target": "Kailangang i-review ngayon"
+  },
+  {
+   "source": "সব কার্ড",
+   "target": "Lahat ng card"
+  },
+  {
+   "source": "কঠিন কার্ড",
+   "target": "Mahihirap na card"
+  },
+  {
+   "source": "রাখা কার্ড",
+   "target": "Na-save na mga card"
+  },
+  {
+   "source": "কার্ড লোড হচ্ছে…",
+   "target": "Naglo-load ang mga card…"
+  },
+  {
+   "source": "ভুল কমানোর রুটিন",
+   "target": "Routine para mabawasan ang mga mali"
+  },
+  {
+   "source": "প্রতিদিন একটি ছোট সেশন করুন। আন্দাজে ঠিক হলে ব্যাখ্যাটি পড়ুন।",
+   "target": "Gumawa ng isang maikling session araw-araw. Kung tama ang hula mo, basahin ang paliwanag."
+  },
+  {
+   "source": "“ভুলগুলো আবার করি” খুলে উত্তর না দেখে চেষ্টা করুন। ঠিক হলে প্রশ্নটি ভুলের তালিকা থেকে সরে যাবে।",
+   "target": "Buksan ang “Ulitin ang mga mali” at subukan nang hindi tinitingnan ang sagot. Kapag tama na, aalisin ang tanong sa listahan ng mga mali."
+  },
+  {
+   "source": "একই বিষয়ে বারবার ভুল হলে নিচের লেভেলের পাঠে নিয়মটি পড়ুন।",
+   "target": "Kung paulit-ulit kang nagkakamali sa parehong paksa, basahin ang patakaran sa aralin ng mas mababang level."
+  },
+  {
+   "source": "সময়সীমাসহ পুরো পরীক্ষা দিতে Mock Test খুলুন। এখানে শেখার জন্য প্রশ্ন ধরে অনুশীলন।",
+   "target": "Para kumuha ng buong pagsusulit na may time limit, buksan ang Mock Test. Dito, mag-practice ayon sa tanong para matuto."
+  },
+  {
+   "source": "আপনার নিহোন · সহজ জাপানি, ফুরিগানা ও বাংলা দিয়ে প্রতিদিন অনুশীলন।",
+   "target": "আপনার নিহোন · Magsanay araw-araw gamit ang madaling Hapon, furigana at paliwanag."
+  },
+  {
+   "source": "হোম",
+   "target": "Home"
+  },
+  {
+   "source": "প্রোফাইল",
+   "target": "Personal na tala"
+  }
+ ]
+}

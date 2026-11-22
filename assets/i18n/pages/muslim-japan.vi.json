@@ -1,0 +1,114 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "muslim-japan",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "বাংলাদেশি মুসলিমদের জন্য নামাজের সময়, কিবলা নির্দেশনা, কাছের মসজিদ এবং হালাল খাবার—এক জায়গায়।",
+   "target": "Giờ cầu nguyện, hướng Qibla, nhà thờ Hồi giáo gần nhất và đồ ăn halal cho người Hồi giáo Bangladesh—tất cả ở một nơi."
+  },
+  {
+   "source": "আমার লোকেশন নিন",
+   "target": "Lấy vị trí của tôi"
+  },
+  {
+   "source": "Compass চালু করুন",
+   "target": "Bật Compass"
+  },
+  {
+   "source": "লোকেশন দিলে আপনার এলাকার তথ্য দেখানো হবে।",
+   "target": "Nếu bạn cung cấp vị trí, thông tin khu vực của bạn sẽ được hiển thị."
+  },
+  {
+   "source": "নামাজের সময়",
+   "target": "Giờ cầu nguyện"
+  },
+  {
+   "source": "Hanafi Asr — বাংলাদেশি default",
+   "target": "Hanafi Asr — mặc định của Bangladesh"
+  },
+  {
+   "source": "লোকেশন প্রয়োজন",
+   "target": "Cần vị trí"
+  },
+  {
+   "source": "নামাজের সময় স্থানীয় মসজিদের timetable থেকে কয়েক মিনিট ভিন্ন হতে পারে। স্থানীয় মসজিদের সময়কে অগ্রাধিকার দিন।",
+   "target": "Giờ cầu nguyện có thể chênh vài phút so với timetable của nhà thờ Hồi giáo địa phương. Hãy ưu tiên giờ của nhà thờ Hồi giáo địa phương."
+  },
+  {
+   "source": "কিবলা",
+   "target": "Qibla"
+  },
+  {
+   "source": "লোকেশন নিলে True North থেকে কিবলার degree দেখাবে। Compass permission দিলে ফোন ঘোরালে arrow update হবে।",
+   "target": "Nếu lấy vị trí, nó sẽ hiển thị degree của Qibla từ True North. Nếu cấp Compass permission, arrow sẽ update khi bạn xoay điện thoại."
+  },
+  {
+   "source": "কাছের মসজিদ ও হালাল খাবার",
+   "target": "Nhà thờ Hồi giáo và đồ ăn halal gần nhất"
+  },
+  {
+   "source": "OpenStreetMap · বাস্তব জায়গার তথ্য",
+   "target": "OpenStreetMap · Thông tin địa điểm thực tế"
+  },
+  {
+   "source": "🕌 মসজিদ",
+   "target": "🕌 Nhà thờ Hồi giáo"
+  },
+  {
+   "source": "🍛 হালাল খাবার",
+   "target": "🍛 Đồ ăn halal"
+  },
+  {
+   "source": "এলাকা",
+   "target": "Khu vực"
+  },
+  {
+   "source": "কত দূরে",
+   "target": "Khoảng cách bao xa"
+  },
+  {
+   "source": "৩ কিমি",
+   "target": "3 km"
+  },
+  {
+   "source": "৬ কিমি",
+   "target": "6 km"
+  },
+  {
+   "source": "১০ কিমি",
+   "target": "10 km"
+  },
+  {
+   "source": "এই এলাকায় খুঁজুন",
+   "target": "Tìm trong khu vực này"
+  },
+  {
+   "source": "আপনার লোকেশন নিন অথবা এলাকা বেছে খুঁজুন। মানচিত্র সরিয়েও নতুন এলাকা বেছে নিতে পারেন।",
+   "target": "Lấy vị trí của bạn hoặc chọn khu vực để tìm. Bạn cũng có thể di chuyển bản đồ để chọn khu vực mới."
+  },
+  {
+   "source": "লোকেশন বা এলাকা বেছে নিলে কাছের জায়গা দেখানো হবে।",
+   "target": "Khi bạn chọn vị trí hoặc khu vực, các địa điểm gần đó sẽ được hiển thị."
+  },
+  {
+   "source": "আবার চেষ্টা করুন",
+   "target": "Thử lại"
+  },
+  {
+   "source": "তথ্য:",
+   "target": "Thông tin:"
+  },
+  {
+   "source": "। তথ্য অসম্পূর্ণ হতে পারে। খাবারের ক্ষেত্রে মানচিত্রের tag বা নাম ব্যবহার করা হয়; অর্ডারের আগে দোকানের বর্তমান হালাল সনদ ও উপাদান যাচাই করুন।",
+   "target": ". Thông tin có thể chưa đầy đủ. Đối với đồ ăn, tag hoặc tên trên bản đồ được sử dụng; trước khi order, hãy kiểm tra chứng nhận halal và thành phần hiện tại của cửa hàng."
+  },
+  {
+   "source": "মানচিত্রের ভুল জানান",
+   "target": "Báo lỗi trên bản đồ"
+  }
+ ]
+}

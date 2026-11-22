@@ -1,0 +1,170 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ja",
+ "page": "jlpt-revision",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Full Revision · বাস্তব প্রশ্ন ও ভুলের রিভিউ | আপনার নিহোন",
+   "target": "Full Revision · 実際の問題と間違いのレビュー | আপনার নিহোন"
+  },
+  {
+   "source": "মূল লেখায় যান",
+   "target": "本文へ移動"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "আজ পড়া মনে আছে?",
+   "target": "今日学んだことを覚えていますか?"
+  },
+  {
+   "source": "ছোট প্রশ্নের সেশন দিয়ে ঝালাই করুন। ব্যাকরণ, শব্দ, কানজি, রিডিং ও লিসেনিং—২,৫৪০টি যাচাই করা প্রশ্ন। উত্তর দিলে বাংলা ব্যাখ্যা দেখুন, ভুলগুলো পরে আবার করুন।",
+   "target": "短い問題セッションで復習しましょう。文法、単語、漢字、読解、リスニング—検証済みの2,540問です。答えるとベンガル語の解説が見られ、間違えた問題は後でもう一度できます。"
+  },
+  {
+   "source": "প্রশ্ন দিয়ে Revision",
+   "target": "問題で Revision"
+  },
+  {
+   "source": "পূর্ণ Mock Test →",
+   "target": "フル Mock Test →"
+  },
+  {
+   "source": "লেভেল",
+   "target": "レベル"
+  },
+  {
+   "source": "আজকের অনুশীলন বাছুন",
+   "target": "今日の練習を選ぶ"
+  },
+  {
+   "source": "আগে না করা প্রশ্নকে অগ্রাধিকার দেওয়া হবে। এই অনুশীলন ব্যাংকের প্রশ্নগুলো Mock Test-এও আছে।",
+   "target": "まだ解いていない問題が優先されます。この練習バンクの問題は Mock Test にも含まれています。"
+  },
+  {
+   "source": "বিষয়",
+   "target": "トピック"
+  },
+  {
+   "source": "সব বিষয় মিশিয়ে",
+   "target": "すべてのトピックをミックス"
+  },
+  {
+   "source": "ব্যাকরণ",
+   "target": "文法"
+  },
+  {
+   "source": "শব্দভান্ডার",
+   "target": "語彙"
+  },
+  {
+   "source": "কানজি",
+   "target": "漢字"
+  },
+  {
+   "source": "রিডিং",
+   "target": "読解"
+  },
+  {
+   "source": "লিসেনিং",
+   "target": "リスニング"
+  },
+  {
+   "source": "প্রশ্নের সংখ্যা",
+   "target": "問題数"
+  },
+  {
+   "source": "১০টি · ছোট সেশন",
+   "target": "10問 · 短いセッション"
+  },
+  {
+   "source": "২০টি · বেশি অনুশীলন",
+   "target": "20問 · しっかり練習"
+  },
+  {
+   "source": "নতুন সেশন শুরু",
+   "target": "新しいセッションを開始"
+  },
+  {
+   "source": "ভুলগুলো আবার করি",
+   "target": "間違えた問題をもう一度やる"
+  },
+  {
+   "source": "আগের সেশন চালিয়ে যান",
+   "target": "前回のセッションを続ける"
+  },
+  {
+   "source": "প্রশ্নব্যাংক লোড হচ্ছে…",
+   "target": "問題バンクを読み込み中…"
+  },
+  {
+   "source": "দেখে নয়, মনে করে বলুন",
+   "target": "見ないで、思い出して答えましょう"
+  },
+  {
+   "source": "কানজির অর্থ ও একটি শব্দ মনে করার চেষ্টা করুন। তারপর পেছন দেখুন। আগের Flashcard-এর অগ্রগতি রাখা হয়েছে।",
+   "target": "漢字の意味と単語を1つ思い出すよう努めてください。それから裏面を見ましょう。以前の Flashcard の進捗は保持されています。"
+  },
+  {
+   "source": "কার্ডের তালিকা",
+   "target": "カードリスト"
+  },
+  {
+   "source": "আজ রিভিউ দরকার",
+   "target": "今日復習が必要"
+  },
+  {
+   "source": "সব কার্ড",
+   "target": "すべてのカード"
+  },
+  {
+   "source": "কঠিন কার্ড",
+   "target": "難しいカード"
+  },
+  {
+   "source": "রাখা কার্ড",
+   "target": "保存したカード"
+  },
+  {
+   "source": "কার্ড লোড হচ্ছে…",
+   "target": "カードを読み込み中…"
+  },
+  {
+   "source": "ভুল কমানোর রুটিন",
+   "target": "間違いを減らすルーティン"
+  },
+  {
+   "source": "প্রতিদিন একটি ছোট সেশন করুন। আন্দাজে ঠিক হলে ব্যাখ্যাটি পড়ুন।",
+   "target": "毎日短いセッションを1つ行いましょう。勘で正解した場合も解説を読んでください。"
+  },
+  {
+   "source": "“ভুলগুলো আবার করি” খুলে উত্তর না দেখে চেষ্টা করুন। ঠিক হলে প্রশ্নটি ভুলের তালিকা থেকে সরে যাবে।",
+   "target": "「間違えた問題をもう一度やる」を開いて、答えを見ずに挑戦してください。正解すると、その問題は間違いリストから外れます。"
+  },
+  {
+   "source": "একই বিষয়ে বারবার ভুল হলে নিচের লেভেলের পাঠে নিয়মটি পড়ুন।",
+   "target": "同じトピックで繰り返し間違える場合は、下のレベルのレッスンでルールを読んでください。"
+  },
+  {
+   "source": "সময়সীমাসহ পুরো পরীক্ষা দিতে Mock Test খুলুন। এখানে শেখার জন্য প্রশ্ন ধরে অনুশীলন।",
+   "target": "時間制限付きのフル試験を受けるには Mock Test を開いてください。ここでは学習のために問題ごとに練習します。"
+  },
+  {
+   "source": "আপনার নিহোন · সহজ জাপানি, ফুরিগানা ও বাংলা দিয়ে প্রতিদিন অনুশীলন।",
+   "target": "আপনার নিহোন · やさしい日本語、ふりがな、ベンガル語で毎日練習。"
+  },
+  {
+   "source": "হোম",
+   "target": "ホーム"
+  },
+  {
+   "source": "প্রোফাইল",
+   "target": "プロフィール"
+  }
+ ]
+}
