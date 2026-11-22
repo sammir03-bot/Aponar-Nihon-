@@ -2,6 +2,12 @@
    No provider API key, upstream access key or secret is stored in this file. */
 (function () {
   "use strict";
+  /* Run 31: error strings resolve through the tutor i18n loader
+     (assets/i18n/data/tutor-i18n.js) by exact Bengali source match;
+     on bn pages the lookup is the identity and nothing changes. */
+  function T(source) {
+    return window.AponarTutorT ? window.AponarTutorT(source) : source;
+  }
   var BASE = "https://xgudgxnkolpqfovfmijl.supabase.co/functions/v1/worm-tutor";
   var PREFIX = "nihon_worm_conversation_";
   var lastUserId = "";
@@ -22,7 +28,7 @@
   }
   async function errorMessage(response) {
     var data = await response.json().catch(function () { return {}; });
-    return data.message || "WORM GPT সংযোগে সমস্যা হয়েছে (HTTP " + response.status + ")";
+    return data.message || T("WORM GPT সংযোগে সমস্যা হয়েছে (HTTP ") + response.status + ")";
   }
   async function available() {
     try {
@@ -46,7 +52,7 @@
   }
   async function request(action, payload, signal, userSession) {
     var s = userSession || await session();
-    if (!s) throw new Error("WORM GPT ব্যবহারের জন্য লগইন করুন");
+    if (!s) throw new Error(T("WORM GPT ব্যবহারের জন্য লগইন করুন"));
     var response = await fetch(BASE, {
       method: "POST",
       headers: authHeaders(s),
@@ -89,7 +95,7 @@
 
   async function sendMessage(payload, signal, onChunk) {
     var s = await session();
-    if (!s) throw new Error("লগইন প্রয়োজন");
+    if (!s) throw new Error(T("লগইন প্রয়োজন"));
     var key = PREFIX + s.user.id;
     if (forceFresh) {
       try { localStorage.removeItem(key); } catch (_error) { /* ignore */ }
@@ -103,13 +109,13 @@
       }, signal, s);
       var result = await created.json();
       id = result.conversation_id || "";
-      if (!/^[a-f0-9-]{36}$/i.test(id)) throw new Error("নতুন চ্যাট তৈরি করা যায়নি");
+      if (!/^[a-f0-9-]{36}$/i.test(id)) throw new Error(T("নতুন চ্যাট তৈরি করা যায়নি"));
       try { localStorage.setItem(key, id); } catch (_error) { /* ignore */ }
     }
     var response = await request("send-message", Object.assign({
       conversation_id: id
     }, payload), signal, s);
-    if (!response.body) throw new Error("AI streaming response পাওয়া যায়নি");
+    if (!response.body) throw new Error(T("AI streaming response পাওয়া যায়নি"));
     var reader = response.body.getReader();
     var decoder = new TextDecoder();
     var pending = "";
@@ -128,7 +134,7 @@
           var obj = JSON.parse(data);
           if (!obj || typeof obj !== "object") continue;
           if (obj.error || obj.type === "error") {
-            streamError = "WORM GPT সেবা থেকে উত্তর পাওয়া যায়নি";
+            streamError = T("WORM GPT সেবা থেকে উত্তর পাওয়া যায়নি");
             continue;
           }
           var delta = "";
@@ -175,7 +181,7 @@
       if (answer && typeof onChunk === "function") onChunk(answer);
     }
     if (streamError) throw new Error(streamError);
-    if (!answer.trim()) throw new Error("WORM GPT উত্তর পাঠায়নি। একটু পরে আবার চেষ্টা করুন।");
+    if (!answer.trim()) throw new Error(T("WORM GPT উত্তর পাঠায়নি। একটু পরে আবার চেষ্টা করুন।"));
     return answer.trim();
   }
   function resetConversation() {
