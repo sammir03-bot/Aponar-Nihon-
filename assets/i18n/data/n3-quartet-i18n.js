@@ -17,6 +17,32 @@
   var lang = resolveLang();
   if (!lang || lang === 'bn') return;
 
+  /* Remnant fix (Run 25 follow-up): AponarDyn resolves qt.countSuffix with
+     row[lang] || row.bn, so the five languages whose reviewed DYN value is
+     an empty string (en, vi, hi, ur, fil) fall back to the Bengali counter
+     in the chapter dropdown. Expose the exact DYN row here (values copied
+     programmatically from i18n.js) so the app can use it verbatim; bn
+     never loads this file, and pages without this loader (e.g. the N2
+     guide) keep the previous dynT behaviour. */
+  var COUNT_SUFFIX = {"en": "", "ja": "件", "vi": "", "ne": " वटा", "hi": "", "ur": "", "my": " ခု", "zh": " 个", "si": " ක්", "fil": ""};
+  if (Object.prototype.hasOwnProperty.call(COUNT_SUFFIX, lang)) {
+    window.AponarQuartetCountSuffix = COUNT_SUFFIX[lang];
+  }
+
+  /* Remnant fix: fetch the tiny attribute sidecar (the 11 static
+     aria-labels + meta description) first, in parallel with the full data
+     sidecar below, and swap the page's static attributes as soon as it
+     arrives instead of after the much larger data sidecar. The data
+     sidecar's qh pass at the bottom stays as the fallback and is an
+     idempotent no-op when this early pass already ran. */
+  var attrReady = new Promise(function (resolve) {
+    var s = document.createElement('script');
+    s.src = '/assets/i18n/data/n3-quartet-attr.' + lang + '.js';
+    s.onload = function () { resolve(window.AponarQuartetAttr || null); };
+    s.onerror = function () { resolve(null); };
+    document.head.appendChild(s);
+  });
+
   var ready = new Promise(function (resolve) {
     var s = document.createElement('script');
     s.src = '/assets/i18n/data/n3-quartet-data.' + lang + '.js';
@@ -55,16 +81,7 @@
     }
   }
 
-  function applyAttributes(qh) {
-    if (!qh) return;
-    var aria = {}, metaSource = null, metaTarget = null;
-    for (var field in qh) {
-      if (field.indexOf('attr.') === 0 && field.slice(-'@aria-label'.length) === '@aria-label') {
-        for (var a in qh[field]) aria[a] = qh[field][a];
-      } else if (field === 'attr.meta@description') {
-        for (var m in qh[field]) { metaSource = m; metaTarget = qh[field][m]; }
-      }
-    }
+  function applyAria(aria, metaSource, metaTarget) {
     var els = document.querySelectorAll('[aria-label]');
     for (var i = 0; i < els.length; i++) {
       var v = els[i].getAttribute('aria-label');
@@ -76,10 +93,26 @@
     }
   }
 
+  function applyAttributes(qh) {
+    if (!qh) return;
+    var aria = {}, metaSource = null, metaTarget = null;
+    for (var field in qh) {
+      if (field.indexOf('attr.') === 0 && field.slice(-'@aria-label'.length) === '@aria-label') {
+        for (var a in qh[field]) aria[a] = qh[field][a];
+      } else if (field === 'attr.meta@description') {
+        for (var m in qh[field]) { metaSource = m; metaTarget = qh[field][m]; }
+      }
+    }
+    applyAria(aria, metaSource, metaTarget);
+  }
+
   window.AponarQuartetI18n = function (course, deep) {
     return ready.then(function (data) {
       if (data) swapData(course, deep, data);
     });
   };
+  attrReady.then(function (attr) {
+    if (attr) applyAria(attr.aria || {}, attr.meta ? attr.meta[0] : null, attr.meta ? attr.meta[1] : null);
+  });
   ready.then(function (data) { if (data) applyAttributes(data.qh); });
 })();
