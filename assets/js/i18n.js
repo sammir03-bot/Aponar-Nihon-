@@ -979,3 +979,41 @@
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", applyDynAttributes);
   else applyDynAttributes();
 })();
+
+/* ==== Run 28: inline-data pages (window.AponarRun28) ====
+   grammar-vs and Hiragana-Katagana keep their lesson data in inline
+   scripts, and the Run 27 pages carry a handful of inline-script UI
+   strings; packs cannot reach those. On localized routes only, this
+   hook loads the Run 28 data loader (assets/i18n/data/run28-i18n.js),
+   which swaps that inline Bengali from per-language sidecars. Bengali
+   pages return before anything is loaded and render exactly as
+   before. */
+(function () {
+  "use strict";
+  try {
+    var lang = window.AponarDynLang ? window.AponarDynLang() : "bn";
+    if (!lang || lang === "bn") return;
+    var segs = window.location.pathname.split("/").filter(Boolean);
+    var stem = segs.length >= 2 ? segs[1] : "";
+    var PAGES = {
+      "grammar-vs": 1, "Hiragana-Katagana": 1, "admin": 1, "auth": 1,
+      "auth-callback": 1, "daily-greetings": 1, "dashboard": 1,
+      "delete-account": 1, "directions-emergency": 1,
+      "japan-emergency-guide": 1, "japan-google-maps-guide": 1,
+      "japan-home-life-guide": 1, "japan-newcomer-guide": 1,
+      "japan-part-time-job-guide": 1, "japan-train-platform-guide": 1,
+      "japanese-conversation-bangla-ebook": 1, "jpy-bdt-remittance": 1,
+      "part-time-cv-builder": 1, "refresh-site": 1, "reset-password": 1,
+      "shop-food-phrases": 1, "speak-japanese-today-bangla-ebook": 1,
+      "student-tools": 1
+    };
+    if (!PAGES[stem]) return;
+    var start = function () {
+      var s = document.createElement("script");
+      s.src = "/assets/i18n/data/run28-i18n.js";
+      document.head.appendChild(s);
+    };
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+    else start();
+  } catch (e) { /* the Run 28 hook must never break a page */ }
+})();
