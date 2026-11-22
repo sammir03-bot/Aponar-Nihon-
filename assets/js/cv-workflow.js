@@ -3,6 +3,7 @@
   'use strict';
   if (!document.getElementById('paperArea') || typeof state === 'undefined') return;
   const E = id => document.getElementById(id);
+  const T = s => window.AponarCvT ? window.AponarCvT(s) : s;
   const currentKind = () => document.querySelector('[data-preview].active')?.dataset.preview || 'rireki';
   const filled = v => String(v || '').trim();
   function disclosure(el,title) {
@@ -14,12 +15,12 @@
   // The commonly used fields stay visible; old form details are still available.
   const postal=E('postal')?.closest('.field');if(postal)E('address').closest('.field').before(postal);
   const strengths=E('strengths')?.closest('.field');if(strengths)E('motive').closest('.field').after(strengths);
-  disclosure(E('jisPersonalExtra'),'অন্য যোগাযোগ ও FAX · ঐচ্ছিক');
-  disclosure(E('jisApplicationExtra'),'যাতায়াত, পরিবার ও অভিভাবক · ঐচ্ছিক');
+  disclosure(E('jisPersonalExtra'),T('অন্য যোগাযোগ ও FAX · ঐচ্ছিক'));
+  disclosure(E('jisApplicationExtra'),T('যাতায়াত, পরিবার ও অভিভাবক · ঐচ্ছিক'));
   const careerTitle=[...document.querySelectorAll('[data-form="3"] > .div-title')].find(x=>x.textContent.includes('職務経歴書'));
   if(careerTitle) {
     const group=document.createElement('details');group.className='cv-optional-fields';group.id='cvCareerFields';
-    group.innerHTML='<summary>職務経歴書 · কাজের অভিজ্ঞতার বিস্তারিত</summary>';
+    group.innerHTML='<summary>職務経歴書' + T(' · কাজের অভিজ্ঞতার বিস্তারিত') + '</summary>';
     careerTitle.before(group);let next=careerTitle;
     while(next && !next.classList.contains('cv-optional-fields')) {const following=next.nextElementSibling;group.append(next);next=following;}
   }
@@ -27,34 +28,34 @@
   E('created').max='';E('dob').max=tokyoToday();
   for(const id of ['commuteHour','commuteMin','dependents'])if(E(id)){E(id).min=0;E(id).step=1;}
   if(E('commuteMin'))E('commuteMin').max=59;
-  E('cvZoom').onclick=()=>{const full=document.body.classList.toggle('cv-preview-full');E('cvZoom').setAttribute('aria-pressed',String(full));E('cvZoom').textContent=full?'পর্দায় ফিট করুন':'বড় করে দেখুন';fit();};
+  E('cvZoom').onclick=()=>{const full=document.body.classList.toggle('cv-preview-full');E('cvZoom').setAttribute('aria-pressed',String(full));E('cvZoom').textContent=full?T('পর্দায় ফিট করুন'):T('বড় করে দেখুন');fit();};
 
   const review=document.createElement('section');review.id='cvValidation';review.className='cv-validation';
-  review.innerHTML='<h3>জমা দেওয়ার প্রস্তুতি</h3><p id="cvReviewSummary"></p><ul id="cvIssueList"></ul><p class="cv-review-note">ছবি, যোগ্যতা ও ঐচ্ছিক ঘর প্রয়োজনমতো পূরণ করুন। চূড়ান্ত CV-তে নিজের সঠিক তথ্যই ব্যবহার করুন।</p>';
+  review.innerHTML='<h3>' + T('জমা দেওয়ার প্রস্তুতি') + '</h3><p id="cvReviewSummary"></p><ul id="cvIssueList"></ul><p class="cv-review-note">' + T('ছবি, যোগ্যতা ও ঐচ্ছিক ঘর প্রয়োজনমতো পূরণ করুন। চূড়ান্ত CV-তে নিজের সঠিক তথ্যই ব্যবহার করুন।') + '</p>';
   document.querySelector('[data-form="4"] .nav-actions').before(review);
   function issues(kind=currentKind()) {
     const out=[];const add=(id,text,step=1)=>out.push({id,text,step});
-    if(!filled(state.name))add('name','পুরো নাম লিখুন।');
-    if(!filled(state.address))add('address','বর্তমান ঠিকানা লিখুন।');
-    if(!filled(state.phone)&&!filled(state.email))add('phone','যোগাযোগের ফোন বা ইমেইল দিন।');
-    if(state.email&&!E('email').validity.valid)add('email','ইমেইলের বানান ও @ চিহ্ন মিলিয়ে নিন।');
-    if(state.phone&&!/^[+\d\s()－ー-]{7,25}$/.test(state.phone))add('phone','ফোন নম্বরের অঙ্ক ও মাপ মিলিয়ে নিন।');
-    if(state.dob&&(!validDate(state.dob)||state.dob>tokyoToday()))add('dob','সঠিক জন্মতারিখ বেছে নিন।');
-    if(!validDate(state.created))add('created','CV-এর সঠিক তারিখ বেছে নিন।');
+    if(!filled(state.name))add('name',T('পুরো নাম লিখুন।'));
+    if(!filled(state.address))add('address',T('বর্তমান ঠিকানা লিখুন।'));
+    if(!filled(state.phone)&&!filled(state.email))add('phone',T('যোগাযোগের ফোন বা ইমেইল দিন।'));
+    if(state.email&&!E('email').validity.valid)add('email',T('ইমেইলের বানান ও @ চিহ্ন মিলিয়ে নিন।'));
+    if(state.phone&&!/^[+\d\s()－ー-]{7,25}$/.test(state.phone))add('phone',T('ফোন নম্বরের অঙ্ক ও মাপ মিলিয়ে নিন।'));
+    if(state.dob&&(!validDate(state.dob)||state.dob>tokyoToday()))add('dob',T('সঠিক জন্মতারিখ বেছে নিন।'));
+    if(!validDate(state.created))add('created',T('CV-এর সঠিক তারিখ বেছে নিন।'));
     for(const type of ['edu','work','qual'])state[type].forEach((row,index)=>{
       if(!filled(row.text)&&!row.year&&!row.month)return;
-      if(!filled(row.text)||!/^\d{4}$/.test(row.year)||!/^\d{1,2}$/.test(row.month)||+row.month<1||+row.month>12)add(type+'Rows',`${{edu:'শিক্ষা',work:'কাজ',qual:'যোগ্যতা'}[type]}: ${index+1} নম্বর সারির সাল, মাস ও বিবরণ সম্পূর্ণ করুন।`,2);
+      if(!filled(row.text)||!/^\d{4}$/.test(row.year)||!/^\d{1,2}$/.test(row.month)||+row.month<1||+row.month>12)add(type+'Rows',`${T({edu:'শিক্ষা',work:'কাজ',qual:'যোগ্যতা'}[type])}: ${index+1}${T(' নম্বর সারির সাল, মাস ও বিবরণ সম্পূর্ণ করুন।')}`,2);
     });
-    for(const id of ['commuteHour','commuteMin','dependents'])if(state[id]&&(!/^\d+$/.test(state[id])||(id==='commuteMin'&&+state[id]>59)))add(id,'যাতায়াত/পরিবারের সংখ্যাটি ঠিক করুন।',3);
-    if(kind==='career'&&!filled(state.summary))add('summary','職務経歴書-এর জন্য অভিজ্ঞতার সংক্ষিপ্ত বিবরণ লিখুন।',3);
-    if(kind==='career'&&!filled(state.skills))add('skills','職務経歴書-এর জন্য কাজের দক্ষতা লিখুন।',3);
+    for(const id of ['commuteHour','commuteMin','dependents'])if(state[id]&&(!/^\d+$/.test(state[id])||(id==='commuteMin'&&+state[id]>59)))add(id,T('যাতায়াত/পরিবারের সংখ্যাটি ঠিক করুন।'),3);
+    if(kind==='career'&&!filled(state.summary))add('summary',T('職務経歴書-এর জন্য অভিজ্ঞতার সংক্ষিপ্ত বিবরণ লিখুন।'),3);
+    if(kind==='career'&&!filled(state.skills))add('skills',T('職務経歴書-এর জন্য কাজের দক্ষতা লিখুন।'),3);
     return out;
   }
   function goToIssue(issue) {showStep(issue.step);const el=E(issue.id);let parent=el?.parentElement;while(parent){if(parent.tagName==='DETAILS')parent.open=true;parent=parent.parentElement;}const control=el?.matches('input,textarea,select')?el:el?.querySelector('input,textarea,select');control?.focus({preventScroll:true});el?.scrollIntoView({block:'center',behavior:'smooth'});}
   let wasCareerMode=false;
   function updateReview() {
     const list=E('cvIssueList'),items=issues();list.replaceChildren();
-    E('cvReviewSummary').textContent=items.length?`${items.length}টি বিষয় ঠিক করে Preview মিলিয়ে নিন।`:'মূল তথ্য পূরণ হয়েছে। বানান, নমুনা লেখা ও ছবিটি শেষবার মিলিয়ে নিন।';
+    E('cvReviewSummary').textContent=items.length?`${items.length}${T('টি বিষয় ঠিক করে Preview মিলিয়ে নিন।')}`:T('মূল তথ্য পূরণ হয়েছে। বানান, নমুনা লেখা ও ছবিটি শেষবার মিলিয়ে নিন।');
     for(const issue of items){const li=document.createElement('li'),button=document.createElement('button');button.type='button';button.textContent=issue.text;button.onclick=()=>goToIssue(issue);li.append(button);list.append(li);}
     const careerMode=state.template==='career'||currentKind()==='career';
     if(careerMode&&!wasCareerMode)E('cvCareerFields').open=true;
@@ -87,7 +88,7 @@
     }
     const show=currentKind()==='rireki'&&state.outputFormat!=='a4-1';
     document.querySelectorAll('.cv-continuation').forEach(p=>p.style.display=show?'block':'none');
-    const note=E('cvPreviewFormatNote');if(note&&state.outputFormat==='a4-2')note.textContent=`Preview: A4 · ${2+document.querySelectorAll('.cv-continuation').length} Pages · বেশি ইতিহাস হলে অতিরিক্ত পাতা যুক্ত হয়`;
+    const note=E('cvPreviewFormatNote');if(note&&state.outputFormat==='a4-2')note.textContent=`Preview: A4 · ${2+document.querySelectorAll('.cv-continuation').length}${T(' Pages · বেশি ইতিহাস হলে অতিরিক্ত পাতা যুক্ত হয়')}`;
   }
   const baseRender=render;render=function(){baseRender();continuations();updateReview();fit();};
   const basePreview=preview;preview=function(kind){basePreview(kind);continuations();updateReview();fit();};
@@ -99,14 +100,14 @@
   const basePrint=printDoc;
   printDoc=async function(kind) {
     collect();preview(kind);const found=issues(kind);
-    if(found.length){message('PDF করার আগে এই তথ্যটি ঠিক করুন: '+found[0].text,true);showStep(4);E('cvValidation').scrollIntoView({block:'center',behavior:'smooth'});return;}
-    if(kind==='rireki'&&state.outputFormat==='a3-1'&&document.querySelectorAll('.cv-continuation').length){message('ইতিহাস/যোগ্যতা বেশি হওয়ায় অতিরিক্ত পাতা প্রয়োজন। A4 · 2 Pages বেছে নিন; অতিরিক্ত পাতাও PDF-তে থাকবে।',true);showStep(0);return;}
-    if(kind==='rireki'&&state.outputFormat==='a4-1'&&(allHistory().length>10||state.qual.filter(x=>x.year||x.month||x.text).length>3||String(state.motive||'').length>260||String(state.selfpr||state.strengths||'').length>210||String(state.address||'').length>75)){message('এক পাতায় সব তথ্য নিরাপদভাবে ধরছে না। A4 · 2 Pages বেছে নিন অথবা লেখা ছোট করুন।',true);showStep(4);return;}
+    if(found.length){message(T('PDF করার আগে এই তথ্যটি ঠিক করুন: ')+found[0].text,true);showStep(4);E('cvValidation').scrollIntoView({block:'center',behavior:'smooth'});return;}
+    if(kind==='rireki'&&state.outputFormat==='a3-1'&&document.querySelectorAll('.cv-continuation').length){message(T('ইতিহাস/যোগ্যতা বেশি হওয়ায় অতিরিক্ত পাতা প্রয়োজন। A4 · 2 Pages বেছে নিন; অতিরিক্ত পাতাও PDF-তে থাকবে।'),true);showStep(0);return;}
+    if(kind==='rireki'&&state.outputFormat==='a4-1'&&(allHistory().length>10||state.qual.filter(x=>x.year||x.month||x.text).length>3||String(state.motive||'').length>260||String(state.selfpr||state.strengths||'').length>210||String(state.address||'').length>75)){message(T('এক পাতায় সব তথ্য নিরাপদভাবে ধরছে না। A4 · 2 Pages বেছে নিন অথবা লেখা ছোট করুন।'),true);showStep(4);return;}
     await Promise.race([document.fonts.ready,new Promise(resolve=>setTimeout(resolve,3500))]);
     const pages=kind==='career'?[E('careerDoc')]:state.outputFormat==='a4-1'?[E('cvCompactResume')]:[...document.querySelectorAll('.print-jis')];
-    if(pages.some(contentOverflows)){message('কিছু লেখা পাতার বাইরে যাচ্ছে। দীর্ঘ বিবরণ ছোট করুন; ১ পৃষ্ঠা হলে A4 · 2 Pages বেছে নিন। তথ্য কেটে PDF তৈরি করা হবে না।',true);showStep(4);return;}
+    if(pages.some(contentOverflows)){message(T('কিছু লেখা পাতার বাইরে যাচ্ছে। দীর্ঘ বিবরণ ছোট করুন; ১ পৃষ্ঠা হলে A4 · 2 Pages বেছে নিন। তথ্য কেটে PDF তৈরি করা হবে না।'),true);showStep(4);return;}
     document.title=kind==='career'?'職務経歴書 - Aponar Nihon':'履歴書 - Aponar Nihon';
-    message('Print খুলছে। Destination → Save as PDF, Scale → 100%, Headers/footers → বন্ধ রাখুন।');basePrint(kind);
+    message(T('Print খুলছে। Destination → Save as PDF, Scale → 100%, Headers/footers → বন্ধ রাখুন।'));basePrint(kind);
   };
   document.querySelectorAll('[data-preview]').forEach(b=>b.onclick=()=>preview(b.dataset.preview));
   E('printRireki').onclick=()=>printDoc('rireki');E('printCareer').onclick=()=>printDoc('career');E('mobilePrint').onclick=()=>{showStep(4);printDoc(currentKind());};

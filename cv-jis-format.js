@@ -1,5 +1,6 @@
 (()=>{
   const E=id=>document.getElementById(id);
+  const T = s => window.AponarCvT ? window.AponarCvT(s) : s;
   const safe=(v='')=>String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
   if(!E('paperArea')||typeof state==='undefined') return;
 
@@ -15,34 +16,34 @@
   function mountExtraFields(){
     const personal=document.querySelector('.step[data-form="1"]');
     if(personal&&!E('jisPersonalExtra')){
-      personal.insertAdjacentHTML('beforeend',`<div class="jis-extra" id="jisPersonalExtra"><div class="jis-extra-title">📄 Traditional 履歴書 — অতিরিক্ত তথ্য</div><div class="jis-extra-note">Final CV-র layout আপনার দেওয়া দুই-পৃষ্ঠার Japanese resume form অনুযায়ী হবে।</div><div class="jis-extra-grid">
-        ${field('postal','郵便番号','পোস্টাল কোড','text','124-0011')}
-        ${field('tel','電話（TEL）','বাসা/অন্য ফোন নম্বর','tel','03-0000-0000')}
-        ${field('fax','FAX','FAX নম্বর — না থাকলে খালি রাখুন','text','')}
-        ${field('contactKana','連絡先 ふりがな','অন্য যোগাযোগের ঠিকানার ফুরিগানা','text','')}
-        ${field('contactPostal','連絡先 郵便番号','অন্য যোগাযোগের পোস্টাল কোড','text','')}
-        ${field('contactAddress','連絡先','বর্তমান ঠিকানা ছাড়া অন্য যোগাযোগের ঠিকানা','text','')}
-        ${field('contactTel','連絡先 電話','অন্য যোগাযোগের ফোন','tel','')}
-        ${field('contactFax','連絡先 FAX','অন্য যোগাযোগের FAX','text','')}
+      personal.insertAdjacentHTML('beforeend',`<div class="jis-extra" id="jisPersonalExtra"><div class="jis-extra-title">📄 Traditional 履歴書 — ${T('অতিরিক্ত তথ্য')}</div><div class="jis-extra-note">${T('Final CV-র layout আপনার দেওয়া দুই-পৃষ্ঠার Japanese resume form অনুযায়ী হবে।')}</div><div class="jis-extra-grid">
+        ${field('postal','郵便番号',T('পোস্টাল কোড'),'text','124-0011')}
+        ${field('tel','電話（TEL）',T('বাসা/অন্য ফোন নম্বর'),'tel','03-0000-0000')}
+        ${field('fax','FAX',T('FAX নম্বর — না থাকলে খালি রাখুন'),'text','')}
+        ${field('contactKana','連絡先 ふりがな',T('অন্য যোগাযোগের ঠিকানার ফুরিগানা'),'text','')}
+        ${field('contactPostal','連絡先 郵便番号',T('অন্য যোগাযোগের পোস্টাল কোড'),'text','')}
+        ${field('contactAddress','連絡先',T('বর্তমান ঠিকানা ছাড়া অন্য যোগাযোগের ঠিকানা'),'text','')}
+        ${field('contactTel','連絡先 電話',T('অন্য যোগাযোগের ফোন'),'tel','')}
+        ${field('contactFax','連絡先 FAX',T('অন্য যোগাযোগের FAX'),'text','')}
       </div></div>`);
     }
     const app=document.querySelector('.step[data-form="3"]');
     if(app&&!E('jisApplicationExtra')){
-      app.insertAdjacentHTML('beforeend',`<div class="jis-extra" id="jisApplicationExtra"><div class="jis-extra-title">📄 履歴書 ২য় পৃষ্ঠার তথ্য</div><div class="jis-extra-note">Japanese option-এর নিচে বাংলা দেওয়া আছে; final Preview/PDF-তে form-এর original Japanese/English layout থাকবে।</div><div class="jis-extra-grid">
-        ${field('commuteHour','通勤時間（時間）','যাতায়াতে কত ঘণ্টা লাগে','number','0')}
-        ${field('commuteMin','通勤時間（分）','যাতায়াতে অতিরিক্ত কত মিনিট লাগে','number','30')}
-        ${field('dependents','扶養家族数','আপনার উপর নির্ভরশীল পরিবারের সদস্য সংখ্যা','number','0')}
-        ${field('spouse','配偶者','স্বামী/স্ত্রী আছে কি?','select','<option value="">未記載 / না লিখব</option><option value="有">有 / আছে</option><option value="無">無 / নেই</option>')}
-        ${field('spouseSupport','配偶者の扶養義務','স্বামী/স্ত্রীর ভরণপোষণের দায়িত্ব আছে কি?','select','<option value="">未記載 / না লিখব</option><option value="有">有 / আছে</option><option value="無">無 / নেই</option>')}
-        ${field('stationLine','最寄り駅 — 線','নিকটতম স্টেশনের লাইন','text','総武線')}
-        ${field('stationName','最寄り駅 — 駅','নিকটতম স্টেশনের নাম','text','新小岩駅')}
+      app.insertAdjacentHTML('beforeend',`<div class="jis-extra" id="jisApplicationExtra"><div class="jis-extra-title">📄 履歴書 ${T('২য় পৃষ্ঠার তথ্য')}</div><div class="jis-extra-note">${T('Japanese option-এর নিচে বাংলা দেওয়া আছে; final Preview/PDF-তে form-এর original Japanese/English layout থাকবে।')}</div><div class="jis-extra-grid">
+        ${field('commuteHour','通勤時間（時間）',T('যাতায়াতে কত ঘণ্টা লাগে'),'number','0')}
+        ${field('commuteMin','通勤時間（分）',T('যাতায়াতে অতিরিক্ত কত মিনিট লাগে'),'number','30')}
+        ${field('dependents','扶養家族数',T('আপনার উপর নির্ভরশীল পরিবারের সদস্য সংখ্যা'),'number','0')}
+        ${field('spouse','配偶者',T('স্বামী/স্ত্রী আছে কি?'),'select','<option value="">未記載 / ' + T('না লিখব') + '</option><option value="有">有 / ' + T('আছে') + '</option><option value="無">無 / ' + T('নেই') + '</option>')}
+        ${field('spouseSupport','配偶者の扶養義務',T('স্বামী/স্ত্রীর ভরণপোষণের দায়িত্ব আছে কি?'),'select','<option value="">未記載 / ' + T('না লিখব') + '</option><option value="有">有 / ' + T('আছে') + '</option><option value="無">無 / ' + T('নেই') + '</option>')}
+        ${field('stationLine','最寄り駅 — 線',T('নিকটতম স্টেশনের লাইন'),'text','総武線')}
+        ${field('stationName','最寄り駅 — 駅',T('নিকটতম স্টেশনের নাম'),'text','新小岩駅')}
       </div>
-      ${field('strengths','特技・趣味・得意科目等','দক্ষতা, শখ, ভালো বিষয় ইত্যাদি','textarea','例：接客、サッカー、日本語学習')}
+      ${field('strengths','特技・趣味・得意科目等',T('দক্ষতা, শখ, ভালো বিষয় ইত্যাদি'),'textarea','例：接客、サッカー、日本語学習')}
       <div class="jis-extra-grid">
-        ${field('guardianName','保護者 氏名','অপ্রাপ্তবয়স্ক হলে অভিভাবকের নাম','text','')}
-        ${field('guardianTel','保護者 電話','অভিভাবকের ফোন','tel','')}
-        ${field('guardianAddress','保護者 住所','অভিভাবকের ঠিকানা','text','')}
-        ${field('guardianFax','保護者 FAX','অভিভাবকের FAX','text','')}
+        ${field('guardianName','保護者 氏名',T('অপ্রাপ্তবয়স্ক হলে অভিভাবকের নাম'),'text','')}
+        ${field('guardianTel','保護者 電話',T('অভিভাবকের ফোন'),'tel','')}
+        ${field('guardianAddress','保護者 住所',T('অভিভাবকের ঠিকানা'),'text','')}
+        ${field('guardianFax','保護者 FAX',T('অভিভাবকের FAX'),'text','')}
       </div></div>`);
     }
     extraKeys.forEach(k=>{const el=E(k);if(!el)return;el.value=state[k]??'';el.oninput=el.onchange=()=>{state[k]=el.value;save();render();};});

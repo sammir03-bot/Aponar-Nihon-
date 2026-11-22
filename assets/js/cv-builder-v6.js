@@ -1,6 +1,7 @@
 (()=>{
   'use strict';
   const E=id=>document.getElementById(id);
+  const T = s => window.AponarCvT ? window.AponarCvT(s) : s;
   if(!E('paperArea')||typeof state==='undefined') return;
 
   const DEFAULTS={
@@ -30,8 +31,8 @@
     const el=E(id);if(!el)return;
     const field=el.closest('.field');if(!field||field.querySelector(`.cv-v6-guide[data-guide="${id}"]`))return;
     const icon=type==='default'?'fa-wand-magic-sparkles':'fa-pen';
-    const reset=type==='default'?`<button type="button" class="cv-default-reset" data-reset-default="${id}">নমুনা ব্যবহার করুন</button>`:'';
-    el.insertAdjacentHTML('beforebegin',`<div class="cv-v6-guide ${type}" data-guide="${id}"><i class="fa-solid ${icon}"></i><span>${text}${reset}</span></div>`);
+    const reset=type==='default'?`<button type="button" class="cv-default-reset" data-reset-default="${id}">${T('নমুনা ব্যবহার করুন')}</button>`:'';
+    el.insertAdjacentHTML('beforebegin',`<div class="cv-v6-guide ${type}" data-guide="${id}"><i class="fa-solid ${icon}"></i><span>${T(text)}${reset}</span></div>`);
   }
 
   function mountGuides(){
@@ -45,19 +46,19 @@
       E(id).value=DEFAULTS[id];state[id]=DEFAULTS[id];saveNow();render();
     }));
     const historyStep=document.querySelector('.step[data-form="2"]');
-    if(historyStep&&!historyStep.querySelector('.cv-history-guide'))historyStep.insertAdjacentHTML('afterbegin','<div class="cv-history-guide"><i class="fa-solid fa-pen"></i> 学歴・職歴・資格は ব্যক্তিভেদে আলাদা—এগুলো সবসময় নিজে লিখবেন। ভুল তথ্য auto-fill করা হবে না।</div>');
+    if(historyStep&&!historyStep.querySelector('.cv-history-guide'))historyStep.insertAdjacentHTML('afterbegin','<div class="cv-history-guide"><i class="fa-solid fa-pen"></i> 学歴・職歴・資格は' + T(' ব্যক্তিভেদে আলাদা—এগুলো সবসময় নিজে লিখবেন। ভুল তথ্য auto-fill করা হবে না।') + '</div>');
   }
 
   function mountFormatPicker(){
     const step=document.querySelector('.step[data-form="0"]');
     if(!step||E('cvOutputPicker'))return;
     const grid=step.querySelector('.template-grid');
-    const html=`<div class="cv-v6-intro"><b>সহজভাবে করুন:</b> চাকরির ধরন এবং CV-এর page format বেছে নিন। ২ পৃষ্ঠা সবচেয়ে নিরাপদ; Baito-এর জন্য সংক্ষিপ্ত ১ পৃষ্ঠাও ব্যবহার করা যাবে।</div>
+    const html=`<div class="cv-v6-intro"><b>${T('সহজভাবে করুন:')}</b>${T(' চাকরির ধরন এবং CV-এর page format বেছে নিন। ২ পৃষ্ঠা সবচেয়ে নিরাপদ; Baito-এর জন্য সংক্ষিপ্ত ১ পৃষ্ঠাও ব্যবহার করা যাবে।')}</div>
       <div class="cv-output-title">PDF / Print format</div>
       <div class="cv-output-grid" id="cvOutputPicker">
-        <button type="button" class="cv-output" data-output-format="a4-1"><span class="cv-output-icon"><i class="fa-solid fa-file"></i></span><strong>A4 · 1 Page</strong><small>アルバイト向け সহজ compact CV। তথ্য বেশি হলে 2 Page ব্যবহার করুন।</small></button>
-        <button type="button" class="cv-output" data-output-format="a4-2"><span class="recommended">おすすめ</span><span class="cv-output-icon"><i class="fa-solid fa-copy"></i></span><strong>A4 · 2 Pages</strong><small>Japanese traditional 履歴書-এর পূর্ণ layout। Default.</small></button>
-        <button type="button" class="cv-output" data-output-format="a3-1"><span class="cv-output-icon"><i class="fa-solid fa-table-columns"></i></span><strong>A3 · 1 Sheet</strong><small>দুইটি A4 page এক A3 landscape sheet-এ। Convenience-store A3 print-এর জন্য।</small></button>
+        <button type="button" class="cv-output" data-output-format="a4-1"><span class="cv-output-icon"><i class="fa-solid fa-file"></i></span><strong>A4 · 1 Page</strong><small>アルバイト向け${T(' সহজ compact CV। তথ্য বেশি হলে 2 Page ব্যবহার করুন।')}</small></button>
+        <button type="button" class="cv-output" data-output-format="a4-2"><span class="recommended">おすすめ</span><span class="cv-output-icon"><i class="fa-solid fa-copy"></i></span><strong>A4 · 2 Pages</strong><small>${T('Japanese traditional 履歴書-এর পূর্ণ layout। Default.')}</small></button>
+        <button type="button" class="cv-output" data-output-format="a3-1"><span class="cv-output-icon"><i class="fa-solid fa-table-columns"></i></span><strong>A3 · 1 Sheet</strong><small>${T('দুইটি A4 page এক A3 landscape sheet-এ। Convenience-store A3 print-এর জন্য।')}</small></button>
       </div>`;
     (grid||step.firstElementChild)?.insertAdjacentHTML(grid?'beforebegin':'afterend',html);
     document.querySelectorAll('[data-output-format]').forEach(btn=>btn.addEventListener('click',()=>setFormat(btn.dataset.outputFormat)));
@@ -69,14 +70,14 @@
     if(!step||E('cvPrintHub'))return;
     step.insertAdjacentHTML('beforeend',`<div class="cv-print-hub" id="cvPrintHub">
       <h3><i class="fa-solid fa-store"></i> コンビニで印刷 — Seven‑Eleven / FamilyMart / Lawson</h3>
-      <p>প্রথমে “履歴書 PDF / Print” চাপুন এবং ফোনে <b>Save as PDF</b> করুন। তারপর নিচের official service খুলে সেই PDF upload/transfer করুন।</p>
-      <div class="cv-print-step"><i class="fa-solid fa-circle-1"></i><span><b>সেরা সেটিং:</b> CV সাধারণত A4, সাদা-কালো, Actual size / 100%। A3 1 Sheet বাছলে A3 landscape ব্যবহার করুন।</span></div>
+      <p>${T('প্রথমে “履歴書 PDF / Print” চাপুন এবং ফোনে ')}<b>Save as PDF</b>${T(' করুন। তারপর নিচের official service খুলে সেই PDF upload/transfer করুন।')}</p>
+      <div class="cv-print-step"><i class="fa-solid fa-circle-1"></i><span><b>${T('সেরা সেটিং:')}</b>${T(' CV সাধারণত A4, সাদা-কালো, Actual size / 100%। A3 1 Sheet বাছলে A3 landscape ব্যবহার করুন।')}</span></div>
       <div class="cv-store-grid">
-        <a class="cv-store" href="${PROVIDERS.seven}" target="_blank" rel="noopener" data-store="seven"><span class="store-name">7‑Eleven · netprint</span><small>PDF online register করে nationwide Seven‑Eleven multi-copy machine-এ print করুন।</small><span class="store-action">Official netprint খুলুন →</span></a>
-        <a class="cv-store" href="${PROVIDERS.family}" target="_blank" rel="noopener" data-store="family"><span class="store-name">FamilyMart · Network Print</span><small>PDF upload করে FamilyMart multi-copy machine-এ print করুন। Smartphone/PrintSmash-ও ব্যবহার করা যায়।</small><span class="store-action">FamilyMart Print খুলুন →</span></a>
-        <a class="cv-store" href="${PROVIDERS.lawson}" target="_blank" rel="noopener" data-store="lawson"><span class="store-name">Lawson · Network Print / PrintSmash</span><small>PDF smartphone থেকে multi-copy machine-এ পাঠানো বা Network Print ব্যবহার করা যায়।</small><span class="store-action">Lawson guide খুলুন →</span></a>
+        <a class="cv-store" href="${PROVIDERS.seven}" target="_blank" rel="noopener" data-store="seven"><span class="store-name">7‑Eleven · netprint</span><small>${T('PDF online register করে nationwide Seven‑Eleven multi-copy machine-এ print করুন।')}</small><span class="store-action">${T('Official netprint খুলুন →')}</span></a>
+        <a class="cv-store" href="${PROVIDERS.family}" target="_blank" rel="noopener" data-store="family"><span class="store-name">FamilyMart · Network Print</span><small>${T('PDF upload করে FamilyMart multi-copy machine-এ print করুন। Smartphone/PrintSmash-ও ব্যবহার করা যায়।')}</small><span class="store-action">${T('FamilyMart Print খুলুন →')}</span></a>
+        <a class="cv-store" href="${PROVIDERS.lawson}" target="_blank" rel="noopener" data-store="lawson"><span class="store-name">Lawson · Network Print / PrintSmash</span><small>${T('PDF smartphone থেকে multi-copy machine-এ পাঠানো বা Network Print ব্যবহার করা যায়।')}</small><span class="store-action">${T('Lawson guide খুলুন →')}</span></a>
       </div>
-      <div class="cv-print-note"><b>নোট:</b> Aponar Nihon আপনার PDF নিজে থেকে দোকানের printer-এ পাঠায় না; convenience-store service-এ PDF transfer/upload করতে হবে। এতে provider-এর official flow-ই ব্যবহার হয়।</div>
+      <div class="cv-print-note"><b>${T('নোট:')}</b>${T(' Aponar Nihon আপনার PDF নিজে থেকে দোকানের printer-এ পাঠায় না; convenience-store service-এ PDF transfer/upload করতে হবে। এতে provider-এর official flow-ই ব্যবহার হয়।')}</div>
     </div>`);
   }
 
@@ -93,7 +94,7 @@
     </div>`);
     const tools=document.querySelector('.preview-tools');
     if(tools&&!E('cvPreviewFormatNote'))tools.insertAdjacentHTML('afterend','<div class="cv-preview-format-note" id="cvPreviewFormatNote"></div>');
-    const picker=E('cvOutputPicker');if(picker&&!E('cvOverflowWarning'))picker.insertAdjacentHTML('afterend','<div class="cv-overflow-warning" id="cvOverflowWarning"><i class="fa-solid fa-triangle-exclamation"></i> ১ পৃষ্ঠায় আপনার সব তথ্য নিরাপদভাবে ধরছে না। কিছু লেখা ছোট করুন অথবা A4 · 2 Pages বেছে নিন।</div>');
+    const picker=E('cvOutputPicker');if(picker&&!E('cvOverflowWarning'))picker.insertAdjacentHTML('afterend','<div class="cv-overflow-warning" id="cvOverflowWarning"><i class="fa-solid fa-triangle-exclamation"></i>' + T(' ১ পৃষ্ঠায় আপনার সব তথ্য নিরাপদভাবে ধরছে না। কিছু লেখা ছোট করুন অথবা A4 · 2 Pages বেছে নিন।') + '</div>');
   }
 
   function row(y='',m='',t='',cls=''){return `<tr><td class="cv-compact-year">${safe(y)}</td><td class="cv-compact-month">${safe(m)}</td><td class="${cls}">${safe(t)}</td></tr>`;}
@@ -127,7 +128,7 @@
   function applyFormatPreview(kind=currentKind()){
     const format=state.outputFormat||'a4-2';
     const note=E('cvPreviewFormatNote');
-    if(note)note.textContent=format==='a4-1'?'Preview: A4 · 1 Page compact':format==='a3-1'?'Preview: 2 pages দেখানো হচ্ছে; Print-এ A3 · 1 Sheet হবে':'Preview: A4 · 2 Pages official-style';
+    if(note)note.textContent=format==='a4-1'?'Preview: A4 · 1 Page compact':format==='a3-1'?T('Preview: 2 pages দেখানো হচ্ছে; Print-এ A3 · 1 Sheet হবে'):'Preview: A4 · 2 Pages official-style';
     if(kind!=='rireki'){if(E('cvCompactResume'))E('cvCompactResume').style.display='none';return;}
     if(format==='a4-1'){
       document.querySelectorAll('.jis-page,.parttime-rireki').forEach(p=>p.style.display='none');if(E('rirekiDoc'))E('rirekiDoc').style.display='none';if(E('cvCompactResume'))E('cvCompactResume').style.display='block';
@@ -150,7 +151,7 @@
     saveNow();render();
     const format=state.outputFormat||'a4-2';
     if(format==='a4-1'){
-      if(compactTooLong()){alert('১ পৃষ্ঠায় সব তথ্য নিরাপদভাবে ধরছে না। কিছু তথ্য ছোট করুন অথবা A4 · 2 Pages বেছে নিন।');return;}
+      if(compactTooLong()){alert(T('১ পৃষ্ঠায় সব তথ্য নিরাপদভাবে ধরছে না। কিছু তথ্য ছোট করুন অথবা A4 · 2 Pages বেছে নিন।'));return;}
       document.querySelectorAll('.page').forEach(p=>p.classList.remove('print-me'));E('cvCompactResume')?.classList.add('print-me');document.body.classList.add('cv-print-a4-one');setPageStyle('@page{size:A4 portrait;margin:0}');setTimeout(()=>window.print(),80);return;
     }
     if(format==='a3-1'){
