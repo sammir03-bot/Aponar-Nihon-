@@ -25,7 +25,7 @@
   console.error('QUARTET course:', error);
   return;
  }
- if (!secondVolume && window.AponarQuartetI18n) { try { await window.AponarQuartetI18n(course, deep); } catch (error) { console.error('QUARTET i18n:', error); } }
+ if (window.AponarQuartetI18n) { try { await window.AponarQuartetI18n(course, deep); } catch (error) { console.error('QUARTET i18n:', error); } }
  const byId=new Map(course.lessons.map(x=>[x.id,x]));
  const readSaved = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
  const save = (key, value) => { try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* Studying still works without storage. */ } };
