@@ -11,6 +11,19 @@
   var VALID_LEVELS = ["N5", "N4", "N3"];
   var VALID_DEPTHS = ["quick", "standard", "deep"];
 
+  /* Run 31: UI strings resolve through the tutor i18n loader
+     (assets/i18n/data/tutor-i18n.js) by exact Bengali source match.
+     On bn pages the loader is a no-op and T returns every source
+     unchanged, so Bengali behaviour is byte-identical. */
+  function T(source) {
+    return window.AponarTutorT ? window.AponarTutorT(source) : source;
+  }
+  var TUTOR_LOCALES = {en: "en-US-u-nu-latn", ja: "ja-JP", vi: "vi-VN-u-nu-latn", ne: "ne-NP", hi: "hi-IN-u-nu-latn", ur: "ur-PK-u-nu-latn", my: "my-MM-u-nu-latn", zh: "zh-CN-u-nu-latn", si: "si-LK-u-nu-latn", fil: "fil-PH-u-nu-latn"};
+  function tutorLocale() {
+    var lang = window.AponarDynLang ? window.AponarDynLang() : "bn";
+    return lang === "bn" ? "bn-BD" : (TUTOR_LOCALES[lang] || "en-US-u-nu-latn");
+  }
+
   var MODES = {
     learn: {
       label: "বুঝিয়ে শেখান",
@@ -269,7 +282,7 @@
   }
 
   function updateUsage() {
-    if (els.dailyUsage) els.dailyUsage.textContent = getUsage().count.toLocaleString("bn-BD");
+    if (els.dailyUsage) els.dailyUsage.textContent = getUsage().count.toLocaleString(tutorLocale());
   }
 
   function createClientId() {
@@ -360,7 +373,7 @@
   }
 
   function timeNow() {
-    return new Date().toLocaleTimeString("bn-BD", { hour: "2-digit", minute: "2-digit" });
+    return new Date().toLocaleTimeString(tutorLocale(), { hour: "2-digit", minute: "2-digit" });
   }
 
   function showToast(message, isError) {
@@ -375,9 +388,9 @@
 
   function starterMarkup() {
     return MODES[state.mode].starters.map(function (starter) {
-      return '<button class="tutor-starter" type="button" data-prompt="' + escapeHtml(starter[3]) + '">' +
-        '<i class="fa-solid ' + starter[0] + '" aria-hidden="true"></i><span><strong>' + escapeHtml(starter[1]) +
-        "</strong><small>" + escapeHtml(starter[2]) + "</small></span></button>";
+      return '<button class="tutor-starter" type="button" data-prompt="' + escapeHtml(T(starter[3])) + '">' +
+        '<i class="fa-solid ' + starter[0] + '" aria-hidden="true"></i><span><strong>' + escapeHtml(T(starter[1])) +
+        "</strong><small>" + escapeHtml(T(starter[2])) + "</small></span></button>";
     }).join("");
   }
 
@@ -385,9 +398,9 @@
     var mode = MODES[state.mode];
     return '<section class="tutor-welcome" id="tutorWelcome">' +
       '<span class="tutor-welcome-mark"><i class="fa-solid fa-robot" aria-hidden="true"></i></span>' +
-      '<h2 id="welcomeTitle">' + escapeHtml(mode.title) + "</h2>" +
-      '<p id="welcomeText">' + escapeHtml(mode.text) + "</p>" +
-      '<div class="tutor-capabilities" aria-label="AI Tutor সুবিধা"><span>বাংলায় ব্যাখ্যা</span><span>সঠিক ふりがな</span><span>Natural Japanese</span><span>JLPT ' + state.level + "</span></div>" +
+      '<h2 id="welcomeTitle">' + escapeHtml(T(mode.title)) + "</h2>" +
+      '<p id="welcomeText">' + escapeHtml(T(mode.text)) + "</p>" +
+      T('<div class="tutor-capabilities" aria-label="AI Tutor সুবিধা"><span>বাংলায় ব্যাখ্যা</span><span>সঠিক ふりがな</span><span>Natural Japanese</span><span>JLPT ') + state.level + "</span></div>" +
       '<div class="tutor-starters" id="tutorStarters">' + starterMarkup() + "</div></section>";
   }
 
@@ -413,15 +426,15 @@
     var meta = document.createElement("div");
     meta.className = "tutor-message-meta";
     var label = document.createElement("span");
-    var sourceLabel = isUser ? "আপনি" : message.provider === "worm" ? "WORM GPT" : message.provider === "legacy" ? "আগের AI Tutor" : "AI Tutor";
+    var sourceLabel = isUser ? T("আপনি") : message.provider === "worm" ? "WORM GPT" : message.provider === "legacy" ? T("আগের AI Tutor") : "AI Tutor";
     label.textContent = sourceLabel + (message.time ? " · " + message.time : "");
     meta.appendChild(label);
 
     if (!isUser && !message.error && !message.pending) {
       var actions = document.createElement("span");
       actions.className = "tutor-message-actions";
-      actions.innerHTML = '<button class="tutor-msg-action" type="button" data-action="copy" aria-label="উত্তর কপি করুন" title="কপি"><i class="fa-regular fa-copy" aria-hidden="true"></i></button>' +
-        '<button class="tutor-msg-action" type="button" data-action="speak" aria-label="উত্তর শুনুন" title="শুনুন"><i class="fa-solid fa-volume-high" aria-hidden="true"></i></button>';
+      actions.innerHTML = T('<button class="tutor-msg-action" type="button" data-action="copy" aria-label="উত্তর কপি করুন" title="কপি"><i class="fa-regular fa-copy" aria-hidden="true"></i></button>') +
+        T('<button class="tutor-msg-action" type="button" data-action="speak" aria-label="উত্তর শুনুন" title="শুনুন"><i class="fa-solid fa-volume-high" aria-hidden="true"></i></button>');
       meta.appendChild(actions);
     }
     content.appendChild(bubble);
@@ -443,7 +456,7 @@
 
   function renderPromptRail() {
     els.promptRail.innerHTML = MODES[state.mode].chips.map(function (chip) {
-      return '<button class="tutor-prompt-chip" type="button" data-prompt="' + escapeHtml(chip[1]) + '">' + escapeHtml(chip[0]) + "</button>";
+      return '<button class="tutor-prompt-chip" type="button" data-prompt="' + escapeHtml(T(chip[1])) + '">' + escapeHtml(T(chip[0])) + "</button>";
     }).join("");
   }
 
@@ -466,10 +479,10 @@
       button.setAttribute("aria-pressed", String(active));
     });
     els.activeLevel.textContent = "JLPT " + state.level;
-    els.activeMode.textContent = mode.label;
+    els.activeMode.textContent = T(mode.label);
     els.activeModeIcon.className = "fa-solid " + mode.icon;
-    els.input.placeholder = mode.placeholder;
-    els.depthLabel.textContent = state.depth === "quick" ? "সংক্ষিপ্ত উত্তর" : state.depth === "deep" ? "বিস্তারিত উত্তর" : "Standard উত্তর";
+    els.input.placeholder = T(mode.placeholder);
+    els.depthLabel.textContent = state.depth === "quick" ? T("সংক্ষিপ্ত উত্তর") : state.depth === "deep" ? T("বিস্তারিত উত্তর") : T("Standard উত্তর");
     renderPromptRail();
     if (!state.messages.length) renderConversation(false);
     updateUsage();
@@ -487,14 +500,14 @@
     state.mode = mode;
     saveState();
     updateInterface();
-    showToast(MODES[mode].label + " মোড চালু হয়েছে");
+    showToast(T(MODES[mode].label) + T(" মোড চালু হয়েছে"));
   }
 
   function addTyping() {
     var typing = document.createElement("article");
     typing.id = "tutorTyping";
     typing.className = "tutor-message assistant";
-    typing.innerHTML = '<span class="tutor-avatar"><i class="fa-solid fa-robot" aria-hidden="true"></i></span><div class="tutor-message-content"><div class="tutor-bubble tutor-typing" aria-label="AI উত্তর লিখছে"><i></i><i></i><i></i></div><div class="tutor-message-meta">ভাবছি ও যাচাই করছি…</div></div>';
+    typing.innerHTML = T('<span class="tutor-avatar"><i class="fa-solid fa-robot" aria-hidden="true"></i></span><div class="tutor-message-content"><div class="tutor-bubble tutor-typing" aria-label="AI উত্তর লিখছে"><i></i><i></i><i></i></div><div class="tutor-message-meta">ভাবছি ও যাচাই করছি…</div></div>');
     els.messages.appendChild(typing);
     scrollBottom();
   }
@@ -510,13 +523,13 @@
     els.input.disabled = busy;
     els.send.classList.toggle("stop", busy);
     els.send.disabled = false;
-    els.send.setAttribute("aria-label", busy ? "উত্তর থামান" : "প্রশ্ন পাঠান");
+    els.send.setAttribute("aria-label", busy ? T("উত্তর থামান") : T("প্রশ্ন পাঠান"));
     els.send.innerHTML = busy ? '<i class="fa-solid fa-stop" aria-hidden="true"></i>' : '<i class="fa-solid fa-arrow-up" aria-hidden="true"></i>';
   }
 
   function followupMarkup() {
     return '<div class="tutor-followups" id="tutorFollowups">' + MODES[state.mode].chips.map(function (chip) {
-      return '<button class="tutor-followup" type="button" data-prompt="' + escapeHtml(chip[1]) + '">' + escapeHtml(chip[0]) + "</button>";
+      return '<button class="tutor-followup" type="button" data-prompt="' + escapeHtml(T(chip[1])) + '">' + escapeHtml(T(chip[0])) + "</button>";
     }).join("") + "</div>";
   }
 
@@ -541,9 +554,9 @@
       signal: signal
     });
     var data = await response.json().catch(function () { return {}; });
-    if (!response.ok) throw new Error(data.message || "বিকল্প AI সেবা পাওয়া যাচ্ছে না।");
+    if (!response.ok) throw new Error(data.message || T("বিকল্প AI সেবা পাওয়া যাচ্ছে না।"));
     var answer = typeof data.response === "string" ? data.response.trim() : "";
-    if (!answer) throw new Error("বিকল্প AI খালি উত্তর দিয়েছে।");
+    if (!answer) throw new Error(T("বিকল্প AI খালি উত্তর দিয়েছে।"));
     return answer;
   }
 
@@ -565,8 +578,8 @@
       return { role: item.role, text: item.text };
     });
     state.messages.push({ role: "user", text: message, time: timeNow(), error: false });
-    var legacySlot = { role: "bot", provider: "legacy", text: "আগের AI উত্তর তৈরি করছে…", time: timeNow(), pending: true, error: false };
-    var wormSlot = { role: "bot", provider: "worm", text: "WORM GPT উত্তর তৈরি করছে…", time: timeNow(), pending: true, error: false };
+    var legacySlot = { role: "bot", provider: "legacy", text: T("আগের AI উত্তর তৈরি করছে…"), time: timeNow(), pending: true, error: false };
+    var wormSlot = { role: "bot", provider: "worm", text: T("WORM GPT উত্তর তৈরি করছে…"), time: timeNow(), pending: true, error: false };
     state.messages.push(legacySlot, wormSlot);
     state.messages = state.messages.slice(-30);
     saveState();
@@ -600,7 +613,7 @@
 
     async function runOriginal() {
       if (getUsage().count >= DAILY_LIMIT) {
-        updateSlot(legacySlot, "আজকের আগের AI Tutor-এর ২০টি প্রশ্ন শেষ। আগামীকাল আবার চেষ্টা করুন।", true, false);
+        updateSlot(legacySlot, T("আজকের আগের AI Tutor-এর ২০টি প্রশ্ন শেষ। আগামীকাল আবার চেষ্টা করুন।"), true, false);
         return;
       }
       try {
@@ -610,8 +623,8 @@
         incrementUsage();
       } catch (error) {
         var reason = controller.signal.aborted ?
-          (timedOut ? "আগের AI Tutor-এর উত্তর পেতে বেশি সময় লেগেছে।" : "উত্তর থামানো হয়েছে।") :
-          (error && error.message ? error.message : "আগের AI Tutor এই মুহূর্তে উত্তর দিতে পারেনি।");
+          (timedOut ? T("আগের AI Tutor-এর উত্তর পেতে বেশি সময় লেগেছে।") : T("উত্তর থামানো হয়েছে।")) :
+          (error && error.message ? error.message : T("আগের AI Tutor এই মুহূর্তে উত্তর দিতে পারেনি।"));
         updateSlot(legacySlot, "⚠️ " + reason, true, false);
       }
     }
@@ -619,7 +632,7 @@
     async function runWorm() {
       try {
         if (!window.WormTutor || !await window.WormTutor.ready()) {
-          updateSlot(wormSlot, "WORM GPT পাওয়া যাচ্ছে না। লগইন করে আবার চেষ্টা করুন।", true, false);
+          updateSlot(wormSlot, T("WORM GPT পাওয়া যাচ্ছে না। লগইন করে আবার চেষ্টা করুন।"), true, false);
           return;
         }
         var reply = await window.WormTutor.sendMessage({
@@ -636,8 +649,8 @@
         updateSlot(wormSlot, reply, false, false);
       } catch (error) {
         var reason = controller.signal.aborted ?
-          (timedOut ? "WORM GPT-এর উত্তর পেতে বেশি সময় লেগেছে।" : "উত্তর থামানো হয়েছে।") :
-          "WORM GPT এই প্রশ্নের উত্তর দিতে পারেনি। আগের AI Tutor-এর উত্তর উপরে দেখুন।";
+          (timedOut ? T("WORM GPT-এর উত্তর পেতে বেশি সময় লেগেছে।") : T("উত্তর থামানো হয়েছে।")) :
+          T("WORM GPT এই প্রশ্নের উত্তর দিতে পারেনি। আগের AI Tutor-এর উত্তর উপরে দেখুন।");
         updateSlot(wormSlot, "⚠️ " + reason, true, false);
       }
     }
@@ -646,8 +659,8 @@
       await Promise.allSettled([runOriginal(), runWorm()]);
       // A stopped response is not silently represented as complete.
       if (controller.signal.aborted) {
-        if (legacySlot.pending) updateSlot(legacySlot, "উত্তর থামানো হয়েছে।", true, false);
-        if (wormSlot.pending) updateSlot(wormSlot, "উত্তর থামানো হয়েছে।", true, false);
+        if (legacySlot.pending) updateSlot(legacySlot, T("উত্তর থামানো হয়েছে।"), true, false);
+        if (wormSlot.pending) updateSlot(wormSlot, T("উত্তর থামানো হয়েছে।"), true, false);
       }
       saveState();
       renderConversation(true);
@@ -669,7 +682,7 @@
   async function copyText(text) {
     try {
       await navigator.clipboard.writeText(text);
-      showToast("উত্তর কপি হয়েছে");
+      showToast(T("উত্তর কপি হয়েছে"));
     } catch (_error) {
       var temporary = document.createElement("textarea");
       temporary.value = text;
@@ -680,13 +693,13 @@
       temporary.select();
       document.execCommand("copy");
       temporary.remove();
-      showToast("উত্তর কপি হয়েছে");
+      showToast(T("উত্তর কপি হয়েছে"));
     }
   }
 
   function speakText(text) {
     if (!("speechSynthesis" in window)) {
-      showToast("এই browser-এ শোনার সুবিধা নেই", true);
+      showToast(T("এই browser-এ শোনার সুবিধা নেই"), true);
       return;
     }
     window.speechSynthesis.cancel();
@@ -700,7 +713,7 @@
     var Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!Recognition) {
       els.voice.disabled = true;
-      els.voice.title = "এই browser-এ voice input নেই";
+      els.voice.title = T("এই browser-এ voice input নেই");
       return;
     }
     var recognition = new Recognition();
@@ -710,13 +723,13 @@
     recognition.onstart = function () {
       els.voice.classList.add("recording");
       els.voice.innerHTML = '<i class="fa-solid fa-wave-square" aria-hidden="true"></i>';
-      showToast("বলুন—আমি শুনছি");
+      showToast(T("বলুন—আমি শুনছি"));
     };
     recognition.onend = function () {
       els.voice.classList.remove("recording");
       els.voice.innerHTML = '<i class="fa-solid fa-microphone" aria-hidden="true"></i>';
     };
-    recognition.onerror = function () { showToast("কণ্ঠ ঠিকভাবে শোনা যায়নি", true); };
+    recognition.onerror = function () { showToast(T("কণ্ঠ ঠিকভাবে শোনা যায়নি"), true); };
     recognition.onresult = function (event) {
       els.input.value = event.results[0][0].transcript;
       resizeInput();
@@ -730,7 +743,7 @@
 
   function setStatus(online) {
     els.statusDot.classList.toggle("offline", !online);
-    els.statusText.textContent = online ? "AI Tutor অনলাইন" : "সংযোগ পাওয়া যাচ্ছে না";
+    els.statusText.textContent = online ? T("AI Tutor অনলাইন") : T("সংযোগ পাওয়া যাচ্ছে না");
   }
 
   async function checkStatus() {
@@ -770,7 +783,7 @@
     state.messages = [];
     saveState();
     renderConversation(false);
-    if (notify) showToast("চ্যাটের ইতিহাস মুছে দেওয়া হয়েছে");
+    if (notify) showToast(T("চ্যাটের ইতিহাস মুছে দেওয়া হয়েছে"));
   }
 
   function bindEvents() {
@@ -814,7 +827,7 @@
       }
     });
     $("#newChatButton").addEventListener("click", async function () {
-      if (!state.messages.length || await window.AponarI18nContent.confirm("বর্তমান চ্যাট বন্ধ করে নতুন চ্যাট শুরু করবেন?")) clearConversation(false);
+      if (!state.messages.length || await window.AponarI18nContent.confirm(T("বর্তমান চ্যাট বন্ধ করে নতুন চ্যাট শুরু করবেন?"))) clearConversation(false);
     });
     $("#settingsButton").addEventListener("click", openSettings);
     var wormHistoryButton = $("#wormHistoryButton");
@@ -827,7 +840,7 @@
       });
       wormHistoryButton.addEventListener("click", async function () {
         if (!window.WormTutor) return;
-        wormHistoryList.textContent = "চ্যাট লোড হচ্ছে…";
+        wormHistoryList.textContent = T("চ্যাট লোড হচ্ছে…");
         if (typeof wormHistoryDialog.showModal === "function") wormHistoryDialog.showModal();
         else wormHistoryDialog.setAttribute("open", "");
         try {
@@ -835,7 +848,7 @@
           var chats = result && Array.isArray(result.chats) ? result.chats : [];
           wormHistoryList.innerHTML = "";
           if (!chats.length) {
-            wormHistoryList.textContent = "এখনো কোনো চ্যাট নেই।";
+            wormHistoryList.textContent = T("এখনো কোনো চ্যাট নেই।");
             return;
           }
           chats.forEach(function (chat) {
@@ -844,12 +857,12 @@
             item.type = "button";
             item.className = "tutor-dialog-btn";
             item.style.cssText = "display:block;width:100%;text-align:left;margin-bottom:8px";
-            item.textContent = String(chat.title || "নতুন চ্যাট").slice(0, 100);
+            item.textContent = String(chat.title || T("নতুন চ্যাট")).slice(0, 100);
             item.addEventListener("click", async function () {
               item.disabled = true;
               try {
                 var data = await window.WormTutor.getHistory(chat.id);
-                if (!data || !Array.isArray(data.messages)) throw new Error("চ্যাট হিস্ট্রি পাওয়া যায়নি");
+                if (!data || !Array.isArray(data.messages)) throw new Error(T("চ্যাট হিস্ট্রি পাওয়া যায়নি"));
                 var messages = data.messages.map(function (entry) {
                   var role = entry.role === "assistant" ? "bot" : entry.role;
                   if (role !== "user" && role !== "bot") return null;
@@ -870,7 +883,7 @@
                 if (typeof wormHistoryDialog.close === "function") wormHistoryDialog.close();
                 else wormHistoryDialog.removeAttribute("open");
               } catch (error) {
-                showToast(error && error.message ? error.message : "হিস্ট্রি লোড হয়নি", true);
+                showToast(error && error.message ? error.message : T("হিস্ট্রি লোড হয়নি"), true);
               } finally {
                 item.disabled = false;
               }
@@ -878,7 +891,7 @@
             wormHistoryList.appendChild(item);
           });
         } catch (error) {
-          wormHistoryList.textContent = error && error.message ? error.message : "হিস্ট্রি লোড হয়নি";
+          wormHistoryList.textContent = error && error.message ? error.message : T("হিস্ট্রি লোড হয়নি");
         }
       });
     }
@@ -890,10 +903,10 @@
       saveState();
       updateInterface();
       closeSettings();
-      showToast("Tutor সেটিংস সংরক্ষণ হয়েছে");
+      showToast(T("Tutor সেটিংস সংরক্ষণ হয়েছে"));
     });
     $("#clearHistoryButton").addEventListener("click", async function () {
-      if (!state.messages.length || await window.AponarI18nContent.confirm("এই browser থেকে AI Tutor-এর সম্পূর্ণ চ্যাট মুছবেন?")) {
+      if (!state.messages.length || await window.AponarI18nContent.confirm(T("এই browser থেকে AI Tutor-এর সম্পূর্ণ চ্যাট মুছবেন?"))) {
         clearConversation(true);
         closeSettings();
       }
@@ -923,15 +936,15 @@
     button.className = "tutor-icon-btn";
     button.type = "button";
     button.style.display = "none";
-    button.setAttribute("aria-label", "আগের WORM GPT চ্যাট");
-    button.title = "WORM GPT চ্যাট হিস্ট্রি";
+    button.setAttribute("aria-label", T("আগের WORM GPT চ্যাট"));
+    button.title = T("WORM GPT চ্যাট হিস্ট্রি");
     button.innerHTML = '<i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>';
     newChat.insertAdjacentElement("afterend", button);
     var dialog = document.createElement("dialog");
     dialog.id = "wormHistoryDialog";
     dialog.className = "tutor-dialog";
     dialog.setAttribute("aria-labelledby", "wormHistoryTitle");
-    dialog.innerHTML = '<div class="tutor-dialog-head"><h2 id="wormHistoryTitle">আগের WORM GPT চ্যাট</h2><button class="tutor-icon-btn" id="wormHistoryClose" type="button" aria-label="বন্ধ করুন"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div><div class="tutor-dialog-body" id="wormHistoryList">চ্যাট লোড হচ্ছে…</div>';
+    dialog.innerHTML = T('<div class="tutor-dialog-head"><h2 id="wormHistoryTitle">আগের WORM GPT চ্যাট</h2><button class="tutor-icon-btn" id="wormHistoryClose" type="button" aria-label="বন্ধ করুন"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div><div class="tutor-dialog-body" id="wormHistoryList">চ্যাট লোড হচ্ছে…</div>');
     document.body.appendChild(dialog);
   }
 
@@ -965,6 +978,25 @@
     setupViewport();
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initialize);
-  else initialize();
+  /* Run 31: on localized pages, wait for the tutor sidecar before the
+     first render so the welcome screen never flashes Bengali; a 1.5 s
+     safety timeout (and a guarded repaint if the sidecar lands after
+     it) keeps the tutor usable on slow or failed loads. On bn pages
+     AponarTutorReady is already resolved and nothing changes. */
+  var tutorBooted = false;
+  function bootTutor() {
+    if (tutorBooted) return;
+    tutorBooted = true;
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", initialize);
+    else initialize();
+  }
+  if (window.AponarTutorReady) {
+    window.AponarTutorReady.then(function (installed) {
+      if (!tutorBooted) bootTutor();
+      else if (installed && !state.busy) {
+        try { updateInterface(); renderConversation(false); } catch (_error) { /* repaint is best-effort */ }
+      }
+    });
+    window.setTimeout(bootTutor, 1500);
+  } else bootTutor();
 })();
