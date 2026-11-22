@@ -1,0 +1,74 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "vi",
+ "page": "privacy-policy",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Privacy Policy / গোপনীয়তা নীতি",
+   "target": "Privacy Policy / Chính sách bảo mật"
+  },
+  {
+   "source": "তথ্য যা সংগ্রহ করা হতে পারে",
+   "target": "Thông tin có thể được thu thập"
+  },
+  {
+   "source": "Account তৈরি করলে Aponar Nihon আপনার email address, account name এবং authentication identifier সংরক্ষণ করে। আপনি চাইলে profile-এ school/institution, nationality, city, phone number, JLPT target, preferred language, study goal, bio এবং profile photo URL যোগ করতে পারেন।",
+   "target": "Khi tạo tài khoản, Aponar Nihon lưu địa chỉ email, tên tài khoản và mã định danh xác thực của bạn. Nếu muốn, bạn có thể thêm vào hồ sơ trường học/tổ chức, quốc tịch, thành phố, số điện thoại, mục tiêu JLPT, ngôn ngữ ưa thích, mục tiêu học tập, tiểu sử và URL ảnh hồ sơ."
+  },
+  {
+   "source": "Signed-in অবস্থায় learning activity যেমন visited section/page, selected learning actions, progress এবং activity timestamps সংরক্ষণ করা হতে পারে, যাতে student dashboard ও admin learning analytics কাজ করে। Password Aponar Nihon database-এ plain text হিসেবে সংরক্ষণ করা হয় না; authentication Supabase Auth দ্বারা পরিচালিত হয়।",
+   "target": "Khi đã đăng nhập, các hoạt động học tập như mục/trang đã truy cập, các hành động học tập đã chọn, tiến độ và dấu thời gian hoạt động có thể được lưu, để bảng điều khiển của học viên và phân tích học tập của quản trị viên hoạt động. Mật khẩu không được lưu dưới dạng văn bản thuần trong cơ sở dữ liệu của Aponar Nihon; việc xác thực do Supabase Auth quản lý."
+  },
+  {
+   "source": "CV Builder ও Student Toolkit",
+   "target": "CV Builder và Student Toolkit"
+  },
+  {
+   "source": "CV Builder-এর resume content এবং Student Toolkit-এর part-time/time-management data browser local storage-এ রাখার জন্য design করা হয়েছে এবং Aponar Nihon learning-activity system ইচ্ছাকৃতভাবে CV-এর personal field content সংগ্রহ করে না। Page usage/activity event আলাদাভাবে log হতে পারে.",
+   "target": "Nội dung hồ sơ của CV Builder và dữ liệu làm thêm/quản lý thời gian của Student Toolkit được thiết kế để lưu trong bộ nhớ cục bộ của trình duyệt, và hệ thống hoạt động học tập của Aponar Nihon cố ý không thu thập nội dung các trường cá nhân của CV. Sự kiện sử dụng/hoạt động trang có thể được ghi riêng."
+  },
+  {
+   "source": "তথ্য ব্যবহারের উদ্দেশ্য",
+   "target": "Mục đích sử dụng thông tin"
+  },
+  {
+   "source": "Account login, profile, learning progress, study history, security, support, service improvement এবং student-facing/admin learning analytics-এর জন্য data ব্যবহার করা হয়। আমরা advertising profile তৈরি বা user data বিক্রি করি না।",
+   "target": "Dữ liệu được sử dụng cho đăng nhập tài khoản, hồ sơ, tiến độ học tập, lịch sử học tập, bảo mật, hỗ trợ, cải thiện dịch vụ và phân tích học tập dành cho học viên/quản trị viên. Chúng tôi không tạo hồ sơ quảng cáo hay bán dữ liệu người dùng."
+  },
+  {
+   "source": "Aponar Nihon account, authentication এবং database-এর জন্য Supabase ব্যবহার করে। প্রয়োজনীয় data এই service provider-এর infrastructure-এ process হতে পারে।",
+   "target": "Aponar Nihon sử dụng Supabase cho tài khoản, xác thực và cơ sở dữ liệu. Dữ liệu cần thiết có thể được xử lý trên hạ tầng của nhà cung cấp dịch vụ này."
+  },
+  {
+   "source": "Account active থাকা পর্যন্ত account-related data রাখা হতে পারে। User account delete করলে Aponar Nihon account-এর সাথে সম্পর্কিত profile, learning progress ও activity records মুছে দেওয়ার flow প্রদান করে, আইনগত বা নিরাপত্তাজনিত বাধ্যতামূলক retention প্রয়োজন না হলে।",
+   "target": "Dữ liệu liên quan đến tài khoản có thể được giữ khi tài khoản còn hoạt động. Khi người dùng xóa tài khoản, Aponar Nihon cung cấp quy trình xóa hồ sơ, tiến độ học tập và bản ghi hoạt động liên quan đến tài khoản Aponar Nihon, trừ khi pháp luật hoặc bảo mật yêu cầu lưu giữ bắt buộc."
+  },
+  {
+   "source": "নিজের account এবং associated app data delete করতে",
+   "target": "Để xóa tài khoản của bạn và dữ liệu ứng dụng liên quan"
+  },
+  {
+   "source": "ব্যবহার করুন। Logged-in user সরাসরি deletion confirm করতে পারবেন। এই page Play Store-এর external account-deletion URL হিসেবেও ব্যবহারযোগ্য।",
+   "target": "hãy sử dụng. Người dùng đã đăng nhập có thể xác nhận xóa trực tiếp. Trang này cũng có thể dùng làm URL xóa tài khoản bên ngoài của Play Store."
+  },
+  {
+   "source": "Access control, authenticated sessions এবং database Row Level Security ব্যবহার করা হয়। তবুও internet-based service-এ absolute security guarantee করা যায় না।",
+   "target": "Kiểm soát truy cập, phiên đăng nhập đã xác thực và Row Level Security của cơ sở dữ liệu được sử dụng. Tuy nhiên, không thể đảm bảo an toàn tuyệt đối cho dịch vụ trên internet."
+  },
+  {
+   "source": "Aponar Nihon সাধারণ education service; এটি 13 বছরের কম বয়সী শিশুদের কাছ থেকে জেনে-বুঝে account data সংগ্রহের উদ্দেশ্যে তৈরি নয়।",
+   "target": "Aponar Nihon là dịch vụ giáo dục thông thường; nó không được thiết kế để cố ý thu thập dữ liệu tài khoản từ trẻ em dưới 13 tuổi."
+  },
+  {
+   "source": "Service বা legal requirement পরিবর্তিত হলে এই policy update হতে পারে। নতুন effective date এই page-এ দেখানো হবে।",
+   "target": "Chính sách này có thể được cập nhật khi dịch vụ hoặc yêu cầu pháp lý thay đổi. Ngày có hiệu lực mới sẽ được hiển thị trên trang này."
+  },
+  {
+   "source": "Privacy বা account-related প্রশ্নের জন্য Aponar Nihon website-এর Contact/Support option ব্যবহার করুন।",
+   "target": "Đối với các câu hỏi về quyền riêng tư hoặc tài khoản, hãy sử dụng tùy chọn Contact/Support trên website Aponar Nihon."
+  }
+ ]
+}

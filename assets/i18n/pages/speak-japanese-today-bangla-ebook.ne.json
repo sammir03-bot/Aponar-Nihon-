@@ -1,0 +1,22 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ne",
+ "page": "speak-japanese-today-bangla-ebook",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Speak Japanese Today — বাংলা স্টাডি ইবুক",
+   "target": "Speak Japanese Today — नेपाली अध्ययन ई-बुक"
+  },
+  {
+   "source": "বাংলা ব্যাখ্যাসহ ইন্টার‌্যাক্টিভ স্টাডি ইবুক প্রস্তুত হচ্ছে…",
+   "target": "बंगला व्याख्यासहित अन्तरक्रियात्मक अध्ययन इबुक तयार हुँदैछ…"
+  },
+  {
+   "source": "বইয়ের ডাটা লোড হচ্ছে",
+   "target": "पुस्तकको data load हुँदैछ"
+  }
+ ]
+}

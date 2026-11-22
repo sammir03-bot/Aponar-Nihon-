@@ -1,0 +1,74 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ur",
+ "page": "privacy-policy",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 27, 2026-11-22): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 27. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Privacy Policy / গোপনীয়তা নীতি",
+   "target": "Privacy Policy / رازداری کی پالیسی"
+  },
+  {
+   "source": "তথ্য যা সংগ্রহ করা হতে পারে",
+   "target": "وہ معلومات جو جمع کی جا سکتی ہیں"
+  },
+  {
+   "source": "Account তৈরি করলে Aponar Nihon আপনার email address, account name এবং authentication identifier সংরক্ষণ করে। আপনি চাইলে profile-এ school/institution, nationality, city, phone number, JLPT target, preferred language, study goal, bio এবং profile photo URL যোগ করতে পারেন।",
+   "target": "اکاؤنٹ بنانے پر Aponar Nihon آپ کا ای میل ایڈریس، اکاؤنٹ کا نام اور تصدیقی شناخت محفوظ کرتا ہے۔ آپ چاہیں تو پروفائل میں اسکول/ادارہ، قومیت، شہر، فون نمبر، JLPT ہدف، پسندیدہ زبان، مطالعے کا ہدف، بائیو اور پروفائل فوٹو URL شامل کر سکتے ہیں۔"
+  },
+  {
+   "source": "Signed-in অবস্থায় learning activity যেমন visited section/page, selected learning actions, progress এবং activity timestamps সংরক্ষণ করা হতে পারে, যাতে student dashboard ও admin learning analytics কাজ করে। Password Aponar Nihon database-এ plain text হিসেবে সংরক্ষণ করা হয় না; authentication Supabase Auth দ্বারা পরিচালিত হয়।",
+   "target": "سائن ان حالت میں سیکھنے کی سرگرمی جیسے وزٹ کیا گیا سیکشن/صفحہ، منتخب کردہ سیکھنے کے اقدامات، پیش رفت اور سرگرمی کے ٹائم اسٹیمپ محفوظ کیے جا سکتے ہیں، تاکہ اسٹوڈنٹ ڈیش بورڈ اور ایڈمن لرننگ اینالیٹکس کام کر سکیں۔ پاس ورڈ Aponar Nihon ڈیٹا بیس میں سادہ متن کے طور پر محفوظ نہیں کیا جاتا؛ تصدیق Supabase Auth کے ذریعے منظم کی جاتی ہے۔"
+  },
+  {
+   "source": "CV Builder ও Student Toolkit",
+   "target": "CV Builder اور Student Toolkit"
+  },
+  {
+   "source": "CV Builder-এর resume content এবং Student Toolkit-এর part-time/time-management data browser local storage-এ রাখার জন্য design করা হয়েছে এবং Aponar Nihon learning-activity system ইচ্ছাকৃতভাবে CV-এর personal field content সংগ্রহ করে না। Page usage/activity event আলাদাভাবে log হতে পারে.",
+   "target": "CV Builder کے ریزیومے مواد اور Student Toolkit کے پارٹ ٹائم/ٹائم مینجمنٹ ڈیٹا کو براؤزر لوکل اسٹوریج میں رکھنے کے لیے ڈیزائن کیا گیا ہے اور Aponar Nihon لرننگ ایکٹیویٹی سسٹم جان بوجھ کر CV کے ذاتی فیلڈ مواد جمع نہیں کرتا۔ صفحے کے استعمال/سرگرمی کا ایونٹ الگ سے لاگ ہو سکتا ہے۔"
+  },
+  {
+   "source": "তথ্য ব্যবহারের উদ্দেশ্য",
+   "target": "معلومات کے استعمال کا مقصد"
+  },
+  {
+   "source": "Account login, profile, learning progress, study history, security, support, service improvement এবং student-facing/admin learning analytics-এর জন্য data ব্যবহার করা হয়। আমরা advertising profile তৈরি বা user data বিক্রি করি না।",
+   "target": "ڈیٹا اکاؤنٹ لاگ ان، پروفائل، سیکھنے کی پیش رفت، مطالعے کی تاریخ، سیکیورٹی، سپورٹ، سروس کی بہتری اور طلبہ و ایڈمن کے لیے لرننگ اینالیٹکس کے لیے استعمال کیا جاتا ہے۔ ہم اشتہاری پروفائل نہیں بناتے اور صارف کا ڈیٹا فروخت نہیں کرتے۔"
+  },
+  {
+   "source": "Aponar Nihon account, authentication এবং database-এর জন্য Supabase ব্যবহার করে। প্রয়োজনীয় data এই service provider-এর infrastructure-এ process হতে পারে।",
+   "target": "Aponar Nihon اکاؤنٹ، تصدیق اور ڈیٹا بیس کے لیے Supabase استعمال کرتا ہے۔ ضروری ڈیٹا اس سروس فراہم کنندہ کے انفراسٹرکچر پر پروسیس ہو سکتا ہے۔"
+  },
+  {
+   "source": "Account active থাকা পর্যন্ত account-related data রাখা হতে পারে। User account delete করলে Aponar Nihon account-এর সাথে সম্পর্কিত profile, learning progress ও activity records মুছে দেওয়ার flow প্রদান করে, আইনগত বা নিরাপত্তাজনিত বাধ্যতামূলক retention প্রয়োজন না হলে।",
+   "target": "اکاؤنٹ فعال رہنے تک اکاؤنٹ سے متعلق ڈیٹا رکھا جا سکتا ہے۔ صارف کے اکاؤنٹ حذف کرنے پر Aponar Nihon اکاؤنٹ سے منسلک پروفائل، سیکھنے کی پیش رفت اور سرگرمی کے ریکارڈ حذف کرنے کا طریقہ فراہم کرتا ہے، جب تک کہ قانونی یا سیکیورٹی وجوہات کی بنا پر برقرار رکھنا لازمی نہ ہو۔"
+  },
+  {
+   "source": "নিজের account এবং associated app data delete করতে",
+   "target": "اپنا اکاؤنٹ اور منسلک ایپ ڈیٹا حذف کرنے کے لیے"
+  },
+  {
+   "source": "ব্যবহার করুন। Logged-in user সরাসরি deletion confirm করতে পারবেন। এই page Play Store-এর external account-deletion URL হিসেবেও ব্যবহারযোগ্য।",
+   "target": "استعمال کریں۔ لاگ ان صارف براہ راست حذف کی تصدیق کر سکے گا۔ یہ صفحہ Play Store کے بیرونی اکاؤنٹ حذف URL کے طور پر بھی استعمال ہو سکتا ہے۔"
+  },
+  {
+   "source": "Access control, authenticated sessions এবং database Row Level Security ব্যবহার করা হয়। তবুও internet-based service-এ absolute security guarantee করা যায় না।",
+   "target": "رسائی کنٹرول، تصدیق شدہ سیشنز اور ڈیٹا بیس Row Level Security استعمال کی جاتی ہے۔ پھر بھی انٹرنیٹ پر مبنی سروس میں مکمل سیکیورٹی کی ضمانت نہیں دی جا سکتی۔"
+  },
+  {
+   "source": "Aponar Nihon সাধারণ education service; এটি 13 বছরের কম বয়সী শিশুদের কাছ থেকে জেনে-বুঝে account data সংগ্রহের উদ্দেশ্যে তৈরি নয়।",
+   "target": "Aponar Nihon ایک عام education service ہے؛ یہ 13 سال سے کم عمر بچوں سے جان بوجھ کر account data جمع کرنے کے مقصد سے نہیں بنائی گئی۔"
+  },
+  {
+   "source": "Service বা legal requirement পরিবর্তিত হলে এই policy update হতে পারে। নতুন effective date এই page-এ দেখানো হবে।",
+   "target": "سروس یا قانونی تقاضے تبدیل ہونے پر یہ پالیسی اپ ڈیٹ ہو سکتی ہے۔ نئی مؤثر تاریخ اس صفحے پر دکھائی جائے گی۔"
+  },
+  {
+   "source": "Privacy বা account-related প্রশ্নের জন্য Aponar Nihon website-এর Contact/Support option ব্যবহার করুন।",
+   "target": "رازداری یا اکاؤنٹ سے متعلق سوالات کے لیے Aponar Nihon ویب سائٹ کا Contact/Support آپشن استعمال کریں۔"
+  }
+ ]
+}
