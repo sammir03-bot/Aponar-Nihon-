@@ -522,3 +522,28 @@
     init();
   }
 })();
+
+/* Run 24: N3 vocab i18n sidecar loader (bn = strict no-op). Loads the
+   per-language data sidecar before the app renders; if document.write is
+   unavailable, falls back to an async load (the sidecar self-initializes). */
+(function () {
+  function run24Lang() {
+    try { if (window.AponarDynLang) return window.AponarDynLang(); } catch (e) {}
+    var ok = { bn: 1, en: 1, ja: 1, vi: 1, ne: 1, hi: 1, ur: 1, my: 1, zh: 1, si: 1, fil: 1 };
+    var p = document.documentElement ? document.documentElement.getAttribute("data-language-preset") : null;
+    if (p && ok[p]) return p;
+    var s = location.pathname.split("/").filter(Boolean)[0];
+    return s && ok[s] ? s : "bn";
+  }
+  var L = run24Lang();
+  if (!L || L === "bn") return;
+  var url = "/assets/i18n/data/n3-vocab." + L + ".js?v=20261121.24";
+  document.write('<script src="' + url + '"><\/script>');
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!window.AponarN3Vocab) {
+      var s = document.createElement("script");
+      s.src = url;
+      (document.head || document.documentElement).appendChild(s);
+    }
+  });
+})();

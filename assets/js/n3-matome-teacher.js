@@ -134,3 +134,28 @@ window.N3_MATOME_WALKTHROUGH = [null,
 'দুধের পরে ডিমও যোগ করছি। それと তালিকায় বাড়তি জিনিস; একটি বাছতে বলা নয়।',
 'ট্রেন নাকি বাস—একটি বাছতে বলছি। প্রশ্নে বিকল্প জোড়ার それとも; তালিকায় যোগ করার それと আলাদা।',
 'ঘর বড়, তার ওপর স্টেশন কাছে। その上 একই দিকের আরেক সুবিধা যোগ করে মূল্যায়নকে শক্ত করে।'];
+
+/* Run 24: N3 matome i18n sidecar loader (bn = strict no-op). Loads the
+   per-language data sidecar before the app renders; if document.write is
+   unavailable, falls back to an async load (the sidecar self-initializes). */
+(function () {
+  function run24Lang() {
+    try { if (window.AponarDynLang) return window.AponarDynLang(); } catch (e) {}
+    var ok = { bn: 1, en: 1, ja: 1, vi: 1, ne: 1, hi: 1, ur: 1, my: 1, zh: 1, si: 1, fil: 1 };
+    var p = document.documentElement ? document.documentElement.getAttribute("data-language-preset") : null;
+    if (p && ok[p]) return p;
+    var s = location.pathname.split("/").filter(Boolean)[0];
+    return s && ok[s] ? s : "bn";
+  }
+  var L = run24Lang();
+  if (!L || L === "bn") return;
+  var url = "/assets/i18n/data/n3-matome." + L + ".js?v=20261121.24";
+  document.write('<script src="' + url + '"><\/script>');
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!window.AponarN3Matome) {
+      var s = document.createElement("script");
+      s.src = url;
+      (document.head || document.documentElement).appendChild(s);
+    }
+  });
+})();
