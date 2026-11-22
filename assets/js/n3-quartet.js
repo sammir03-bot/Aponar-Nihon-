@@ -111,7 +111,7 @@
   hasRendered=true;
  }
  function go(id,mode=tab){const target=link(id,mode);if(location.hash===target)route();else location.hash=target;}
- chapterSelect.innerHTML=course.chapters.map(c=>'<option value="'+c.id+'">'+c.title_bn+' · '+bn(c.lesson_count)+dynT('qt.countSuffix')+'</option>').join('');
+ chapterSelect.innerHTML=course.chapters.map(c=>'<option value="'+c.id+'">'+c.title_bn+' · '+bn(c.lesson_count)+(typeof window.AponarQuartetCountSuffix==='string'?window.AponarQuartetCountSuffix:dynT('qt.countSuffix'))+'</option>').join('');
  document.getElementById('form-guide').innerHTML=course.form_guide.map(g=>'<div class="guide-row"><strong>'+esc(g.label)+'</strong><p>'+ruby(g.meaning_bn)+'</p><p class="jp">'+ruby(g.example)+'</p></div>').join('');
  chapterSelect.addEventListener('change',()=>go(course.lessons.find(i=>i.chapter===Number(chapterSelect.value)).id));
  lessonSelect.addEventListener('change',()=>go(lessonSelect.value,'lesson'));
