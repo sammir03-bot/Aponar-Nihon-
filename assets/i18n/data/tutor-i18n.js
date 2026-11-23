@@ -1,6 +1,6 @@
 /* Run 31 — AI Tutor i18n loader.
-   tutor-pro.js and worm-client.js carry their UI strings as Bengali
-   literals and resolve them through window.AponarTutorT(source), an
+   tutor-pro.js carries its UI strings as Bengali
+   literals and resolves them through window.AponarTutorT(source), an
    exact-source-match lookup defined here. On non-bn pages this loader
    fetches the per-language sidecar (assets/i18n/data/tutor.<lang>.js,
    which sets window.AponarTutorData) and installs it as the lookup map;

@@ -308,6 +308,8 @@
     if (!item || typeof item.text !== "string") return null;
     var role = item.role || item.sender;
     if (role !== "user" && role !== "bot") return null;
+    // WORM GPT was removed: drop its saved answers so no dead labels remain.
+    if (role === "bot" && item.provider === "worm") return null;
     var text = item.text.trim().slice(0, 12000);
     if (!text) return null;
     return {
@@ -315,7 +317,7 @@
       text: text,
       time: typeof item.time === "string" ? item.time : "",
       error: Boolean(item.error || item.isError || item.pending),
-      provider: item.role === "bot" && ["legacy", "worm"].includes(item.provider) ? item.provider : "",
+      provider: item.role === "bot" && item.provider === "legacy" ? item.provider : "",
       pending: false
     };
   }
@@ -408,7 +410,6 @@
     var isUser = message.role === "user";
     var article = document.createElement("article");
     article.className = "tutor-message " + (isUser ? "user" : "assistant") + (message.error ? " error" : "") + (message.pending ? " pending" : "");
-    if (message.provider === "worm") article.classList.add("provider-worm");
     if (message.provider === "legacy") article.classList.add("provider-legacy");
     article.dataset.messageIndex = String(index);
 
@@ -426,7 +427,7 @@
     var meta = document.createElement("div");
     meta.className = "tutor-message-meta";
     var label = document.createElement("span");
-    var sourceLabel = isUser ? T("আপনি") : message.provider === "worm" ? "WORM GPT" : message.provider === "legacy" ? T("আগের AI Tutor") : "AI Tutor";
+    var sourceLabel = isUser ? T("আপনি") : message.provider === "legacy" ? T("আগের AI Tutor") : "AI Tutor";
     label.textContent = sourceLabel + (message.time ? " · " + message.time : "");
     meta.appendChild(label);
 
@@ -560,7 +561,6 @@
     return answer;
   }
 
-  // Both providers run independently: one failing never hides the other result.
   async function sendMessage(rawMessage) {
     if (state.busy) {
       if (state.controller) state.controller.abort();
@@ -572,15 +572,13 @@
       return;
     }
     var history = state.messages.filter(function (item) {
-      // Do not send WORM answers to the original tutor as its own previous answers.
-      return !item.error && !item.pending && (item.role === "user" || item.provider !== "worm");
+      return !item.error && !item.pending;
     }).slice(-8).map(function (item) {
       return { role: item.role, text: item.text };
     });
     state.messages.push({ role: "user", text: message, time: timeNow(), error: false });
     var legacySlot = { role: "bot", provider: "legacy", text: T("আগের AI উত্তর তৈরি করছে…"), time: timeNow(), pending: true, error: false };
-    var wormSlot = { role: "bot", provider: "worm", text: T("WORM GPT উত্তর তৈরি করছে…"), time: timeNow(), pending: true, error: false };
-    state.messages.push(legacySlot, wormSlot);
+    state.messages.push(legacySlot);
     state.messages = state.messages.slice(-30);
     saveState();
     renderConversation(true);
@@ -629,38 +627,11 @@
       }
     }
 
-    async function runWorm() {
-      try {
-        if (!window.WormTutor || !await window.WormTutor.ready()) {
-          updateSlot(wormSlot, T("WORM GPT পাওয়া যাচ্ছে না। লগইন করে আবার চেষ্টা করুন।"), true, false);
-          return;
-        }
-        var reply = await window.WormTutor.sendMessage({
-          message: message,
-          level: state.level,
-          mode: state.mode,
-          depth: state.depth
-        }, controller.signal, function (partial) {
-          if (controller.signal.aborted) return;
-          updateSlot(wormSlot, partial, false, true);
-          scrollBottom();
-        });
-        if (controller.signal.aborted) return;
-        updateSlot(wormSlot, reply, false, false);
-      } catch (error) {
-        var reason = controller.signal.aborted ?
-          (timedOut ? T("WORM GPT-এর উত্তর পেতে বেশি সময় লেগেছে।") : T("উত্তর থামানো হয়েছে।")) :
-          T("WORM GPT এই প্রশ্নের উত্তর দিতে পারেনি। আগের AI Tutor-এর উত্তর উপরে দেখুন।");
-        updateSlot(wormSlot, "⚠️ " + reason, true, false);
-      }
-    }
-
     try {
-      await Promise.allSettled([runOriginal(), runWorm()]);
+      await runOriginal();
       // A stopped response is not silently represented as complete.
       if (controller.signal.aborted) {
         if (legacySlot.pending) updateSlot(legacySlot, T("উত্তর থামানো হয়েছে।"), true, false);
-        if (wormSlot.pending) updateSlot(wormSlot, T("উত্তর থামানো হয়েছে।"), true, false);
       }
       saveState();
       renderConversation(true);
@@ -752,10 +723,6 @@
       return;
     }
     try {
-      if (window.WormTutor && await window.WormTutor.ready()) {
-        setStatus(true);
-        return;
-      }
       var response = await fetch(API_ENDPOINT, { method: "HEAD", cache: "no-store" });
       setStatus(response.ok);
     } catch (_error) {
@@ -779,7 +746,6 @@
 
   function clearConversation(notify) {
     if (state.controller) state.controller.abort();
-    if (window.WormTutor) window.WormTutor.resetConversation();
     state.messages = [];
     saveState();
     renderConversation(false);
@@ -830,71 +796,6 @@
       if (!state.messages.length || await window.AponarI18nContent.confirm(T("বর্তমান চ্যাট বন্ধ করে নতুন চ্যাট শুরু করবেন?"))) clearConversation(false);
     });
     $("#settingsButton").addEventListener("click", openSettings);
-    var wormHistoryButton = $("#wormHistoryButton");
-    var wormHistoryDialog = $("#wormHistoryDialog");
-    var wormHistoryList = $("#wormHistoryList");
-    if (wormHistoryButton && wormHistoryDialog && wormHistoryList) {
-      $("#wormHistoryClose").addEventListener("click", function () {
-        if (typeof wormHistoryDialog.close === "function") wormHistoryDialog.close();
-        else wormHistoryDialog.removeAttribute("open");
-      });
-      wormHistoryButton.addEventListener("click", async function () {
-        if (!window.WormTutor) return;
-        wormHistoryList.textContent = T("চ্যাট লোড হচ্ছে…");
-        if (typeof wormHistoryDialog.showModal === "function") wormHistoryDialog.showModal();
-        else wormHistoryDialog.setAttribute("open", "");
-        try {
-          var result = await window.WormTutor.listChats();
-          var chats = result && Array.isArray(result.chats) ? result.chats : [];
-          wormHistoryList.innerHTML = "";
-          if (!chats.length) {
-            wormHistoryList.textContent = T("এখনো কোনো চ্যাট নেই।");
-            return;
-          }
-          chats.forEach(function (chat) {
-            if (!chat || !/^[a-f0-9-]{36}$/i.test(String(chat.id || ""))) return;
-            var item = document.createElement("button");
-            item.type = "button";
-            item.className = "tutor-dialog-btn";
-            item.style.cssText = "display:block;width:100%;text-align:left;margin-bottom:8px";
-            item.textContent = String(chat.title || T("নতুন চ্যাট")).slice(0, 100);
-            item.addEventListener("click", async function () {
-              item.disabled = true;
-              try {
-                var data = await window.WormTutor.getHistory(chat.id);
-                if (!data || !Array.isArray(data.messages)) throw new Error(T("চ্যাট হিস্ট্রি পাওয়া যায়নি"));
-                var messages = data.messages.map(function (entry) {
-                  var role = entry.role === "assistant" ? "bot" : entry.role;
-                  if (role !== "user" && role !== "bot") return null;
-                  var content = String(entry.content || "").trim();
-                  if (role === "user") {
-                    var marker = "\n\nLearner\'s message:\n";
-                    var boundary = content.lastIndexOf(marker);
-                    if (boundary >= 0) content = content.slice(boundary + marker.length).trim();
-                  }
-                  if (!content) return null;
-                  var time = entry.created_at ? new Date(entry.created_at).toLocaleTimeString() : timeNow();
-                  return { role: role, text: content.slice(0, 12000), time: time, error: false, provider: role === "bot" ? "worm" : "" };
-                }).filter(Boolean).slice(-30);
-                window.WormTutor.selectConversation(chat.id);
-                state.messages = messages;
-                saveState();
-                renderConversation(true);
-                if (typeof wormHistoryDialog.close === "function") wormHistoryDialog.close();
-                else wormHistoryDialog.removeAttribute("open");
-              } catch (error) {
-                showToast(error && error.message ? error.message : T("হিস্ট্রি লোড হয়নি"), true);
-              } finally {
-                item.disabled = false;
-              }
-            });
-            wormHistoryList.appendChild(item);
-          });
-        } catch (error) {
-          wormHistoryList.textContent = error && error.message ? error.message : T("হিস্ট্রি লোড হয়নি");
-        }
-      });
-    }
     $("#saveSettingsButton").addEventListener("click", function () {
       var selectedLevel = $('input[name="settingsLevel"]:checked');
       var selectedDepth = $('input[name="settingsDepth"]:checked');
@@ -927,27 +828,6 @@
     updateViewport();
   }
 
-  function setupWormHistoryUi() {
-    if (document.getElementById("wormHistoryButton")) return;
-    var newChat = $("#newChatButton");
-    if (!newChat) return;
-    var button = document.createElement("button");
-    button.id = "wormHistoryButton";
-    button.className = "tutor-icon-btn";
-    button.type = "button";
-    button.style.display = "none";
-    button.setAttribute("aria-label", T("আগের WORM GPT চ্যাট"));
-    button.title = T("WORM GPT চ্যাট হিস্ট্রি");
-    button.innerHTML = '<i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>';
-    newChat.insertAdjacentElement("afterend", button);
-    var dialog = document.createElement("dialog");
-    dialog.id = "wormHistoryDialog";
-    dialog.className = "tutor-dialog";
-    dialog.setAttribute("aria-labelledby", "wormHistoryTitle");
-    dialog.innerHTML = T('<div class="tutor-dialog-head"><h2 id="wormHistoryTitle">আগের WORM GPT চ্যাট</h2><button class="tutor-icon-btn" id="wormHistoryClose" type="button" aria-label="বন্ধ করুন"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div><div class="tutor-dialog-body" id="wormHistoryList">চ্যাট লোড হচ্ছে…</div>');
-    document.body.appendChild(dialog);
-  }
-
   function initialize() {
     els.messages = $("#tutorMessages");
     els.chat = $("#tutorChat");
@@ -970,7 +850,6 @@
     applyUrlPreferences();
     renderConversation(false);
     updateInterface();
-    setupWormHistoryUi();
     bindEvents();
     setupVoice();
     checkStatus();
