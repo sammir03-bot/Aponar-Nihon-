@@ -1,7 +1,7 @@
 (async()=>{
   'use strict';
   const bn=v=>String(v).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
-  const dynT=(k,v)=>{if(window.AponarDyn)return window.AponarDyn(k,v);let s=dynT._b[k]||k;if(v)for(const x in v)s=s.split("{"+x+"}").join(v[x]);return s};dynT._b={"mh.loadFail": "টেস্ট তালিকা লোড হয়নি", "mh.updating": "টেস্ট তালিকা আপডেট হচ্ছে", "mc.setsLine": "JLPT {level} · {n}টি চালু পূর্ণ পরীক্ষা", "mc.minutes": "{parts} = {total} মিনিট", "mc.questions": "{parts} = {total} প্রশ্ন", "mc.statsLine": "{n}টি চালু পূর্ণ পরীক্ষা · ৩টি লেভেল · নিজের সাইটেই পরীক্ষা ও ফলাফল", "mc.reloadSetsSuffix": "। পেজ রিলোড করে চালু সেট দেখুন।"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}function num(v){return dynLang()==='bn'?bn(v):String(v);}
+  const dynT=(k,v)=>{if(window.AponarDyn)return window.AponarDyn(k,v);let s=dynT._b[k]||k;if(v)for(const x in v)s=s.split("{"+x+"}").join(v[x]);return s};dynT._b={"mh.loadFail": "টেস্ট তালিকা লোড হয়নি", "mh.updating": "টেস্ট তালিকা আপডেট হচ্ছে", "mc.setsLine": "JLPT {level} · {n}টি চালু পূর্ণ পরীক্ষা", "mc.minutes": "{parts} = {total} মিনিট", "mc.heroText": "আপনার নিহোনে পূর্ণ মক পরীক্ষা দিন। পার্ট অনুযায়ী টাইমার, অটো-সেভ, বিস্তারিত স্কোর, প্রতিটি উত্তরের বাংলা ব্যাখ্যা এবং নিজের নামে সনদ।", "mc.introText": "প্রতিটি লেভেলে ১০টি পূর্ণ সেট। লেভেল বেছে এখানেই পরীক্ষা শুরু করুন।", "mc.noteHtml": "প্রশ্ন ও অডিও: JapaneseTest4You এবং আপনার নিহোনের নিজস্ব প্রশ্ন। নতুন নিজস্ব লিসেনিংয়ে জাপানি কৃত্রিম কণ্ঠ। JLPT সময় ও পাসসীমা অনুসরণ করা হয়েছে; স্কোর অনুশীলনের। <a href=\"mock-content-notes.html\" style=\"color:#93c5fd\">উৎস ও ক্রেডিট</a>", "mc.questions": "{parts} = {total} প্রশ্ন", "mc.statsLine": "{n}টি চালু পূর্ণ পরীক্ষা · ৩টি লেভেল · নিজের সাইটেই পরীক্ষা ও ফলাফল", "mc.reloadSetsSuffix": "। পেজ রিলোড করে চালু সেট দেখুন।"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}function num(v){return dynLang()==='bn'?bn(v):String(v);}
   try{
     const response=await fetch('/assets/data/jtest4you/catalog.json?v=20261006.complete',{cache:'no-cache'});
     if(!response.ok)throw new Error(dynT('mh.loadFail'));
@@ -22,13 +22,13 @@
       document.getElementById(level+'bar').style.width=(c.availableSets?done/c.availableSets*100:0)+'%';
     }
     const hero=document.querySelector('.hero p');
-    if(hero)hero.textContent='আপনার নিহোনে পূর্ণ মক পরীক্ষা দিন। পার্ট অনুযায়ী টাইমার, অটো-সেভ, বিস্তারিত স্কোর, প্রতিটি উত্তরের বাংলা ব্যাখ্যা এবং নিজের নামে সনদ।';
+    if(hero)hero.textContent=dynT('mc.heroText');
     const stats=document.querySelector('.hero-meta');
     if(stats)stats.textContent=dynT('mc.statsLine',{n:num(totalSets)});
     const intro=document.querySelector('.head p');
-    if(intro)intro.textContent='প্রতিটি লেভেলে ১০টি পূর্ণ সেট। লেভেল বেছে এখানেই পরীক্ষা শুরু করুন।';
+    if(intro)intro.textContent=dynT('mc.introText');
     const note=document.querySelector('.note');
-    if(note)note.innerHTML='প্রশ্ন ও অডিও: JapaneseTest4You এবং আপনার নিহোনের নিজস্ব প্রশ্ন। নতুন নিজস্ব লিসেনিংয়ে জাপানি কৃত্রিম কণ্ঠ। JLPT সময় ও পাসসীমা অনুসরণ করা হয়েছে; স্কোর অনুশীলনের। <a href="mock-content-notes.html" style="color:#93c5fd">উৎস ও ক্রেডিট</a>';
+    if(note)note.innerHTML=dynT('mc.noteHtml');
   }catch(error){
     const note=document.querySelector('.note');if(note)note.textContent=error.message+dynT('mc.reloadSetsSuffix');
   }
