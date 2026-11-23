@@ -15,6 +15,7 @@ import {
   serverTimestamp
 } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore.js";
 
+function T(s) { return window.AponarAppT ? window.AponarAppT(s) : s; }
 const registerForm = document.getElementById("registerForm");
 const registerBtn = document.getElementById("registerBtn");
 const googleRegisterBtn = document.getElementById("googleRegisterBtn");
@@ -75,12 +76,12 @@ if (registerForm) {
     const password = passwordInput?.value || "";
 
     if (!name || !email || !password) {
-      showMessage("অনুগ্রহ করে সব ফিল্ড পূরণ করুন।", "error");
+      showMessage(T("অনুগ্রহ করে সব ফিল্ড পূরণ করুন।"), "error");
       return;
     }
 
     if (password.length < 6) {
-      showMessage("পাসওয়ার্ড কমপক্ষে ৬ অক্ষরের হতে হবে।", "error");
+      showMessage(T("পাসওয়ার্ড কমপক্ষে ৬ অক্ষরের হতে হবে।"), "error");
       return;
     }
 
@@ -98,26 +99,26 @@ if (registerForm) {
 
       await ensureStudentProfile(userCredential.user, name);
 
-      showMessage("সফলভাবে রেজিস্ট্রেশন হয়েছে।", "success");
+      showMessage(T("সফলভাবে রেজিস্ট্রেশন হয়েছে।"), "success");
 
       setTimeout(() => {
         window.location.href = "./student-dashboard.html";
       }, 900);
     } catch (error) {
-      let text = "রেজিস্ট্রেশন করা যায়নি। আবার চেষ্টা করুন।";
+      let text = T("রেজিস্ট্রেশন করা যায়নি। আবার চেষ্টা করুন।");
 
       switch (error.code) {
         case "auth/email-already-in-use":
-          text = "এই ইমেইল দিয়ে আগে থেকেই অ্যাকাউন্ট আছে।";
+          text = T("এই ইমেইল দিয়ে আগে থেকেই অ্যাকাউন্ট আছে।");
           break;
         case "auth/invalid-email":
-          text = "ইমেইল ফরম্যাট সঠিক নয়।";
+          text = T("ইমেইল ফরম্যাট সঠিক নয়।");
           break;
         case "auth/weak-password":
-          text = "আরও শক্তিশালী পাসওয়ার্ড দিন।";
+          text = T("আরও শক্তিশালী পাসওয়ার্ড দিন।");
           break;
         case "auth/network-request-failed":
-          text = "ইন্টারনেট সংযোগে সমস্যা হয়েছে।";
+          text = T("ইন্টারনেট সংযোগে সমস্যা হয়েছে।");
           break;
       }
 
@@ -146,26 +147,26 @@ if (googleRegisterBtn) {
       const result = await signInWithPopup(auth, provider);
       await ensureStudentProfile(result.user, result.user.displayName || "");
 
-      showMessage("Google দিয়ে সফলভাবে রেজিস্ট্রেশন হয়েছে।", "success");
+      showMessage(T("Google দিয়ে সফলভাবে রেজিস্ট্রেশন হয়েছে।"), "success");
 
       setTimeout(() => {
         window.location.href = "./student-dashboard.html";
       }, 900);
     } catch (error) {
-      let text = "Google রেজিস্ট্রেশন করা যায়নি।";
+      let text = T("Google রেজিস্ট্রেশন করা যায়নি।");
 
       switch (error.code) {
         case "auth/popup-closed-by-user":
-          text = "Google popup বন্ধ করা হয়েছে।";
+          text = T("Google popup বন্ধ করা হয়েছে।");
           break;
         case "auth/popup-blocked":
-          text = "Popup block হয়েছে। Browser থেকে popup allow করুন।";
+          text = T("Popup block হয়েছে। Browser থেকে popup allow করুন।");
           break;
         case "auth/cancelled-popup-request":
-          text = "আগের popup request cancel হয়েছে। আবার চেষ্টা করুন।";
+          text = T("আগের popup request cancel হয়েছে। আবার চেষ্টা করুন।");
           break;
         case "auth/network-request-failed":
-          text = "ইন্টারনেট সংযোগে সমস্যা হয়েছে।";
+          text = T("ইন্টারনেট সংযোগে সমস্যা হয়েছে।");
           break;
       }
 

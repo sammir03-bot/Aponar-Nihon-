@@ -17,6 +17,7 @@
     ["মাংস বা মাংসের নির্যাস—উৎস ও সনদ যাচাই করুন", /チキン|ビーフ|鶏肉|牛肉|肉エキス|ハム|\b(?:ham|chicken|beef|meat\s+extract)\b/i],
     ["ফারমেন্টেড সিজনিং—উপাদান যাচাই করুন", /発酵調味料/i]
   ];
+  var T = function (s) { return window.AponarAppT ? window.AponarAppT(s) : s; };
   function toast(message) {
     $("scannerToast").textContent = message;
     $("scannerToast").classList.add("show");
@@ -49,23 +50,23 @@
     var list = $("historyList"); list.textContent = "";
     history().forEach(function (item) {
       var row = document.createElement("button"); row.type = "button"; row.className = "history-item";
-      var name = document.createElement("span"); name.textContent = item.name || "উপাদান যাচাই";
-      var code = document.createElement("small"); code.textContent = item.code || "নিজে লেখা উপাদান";
+      var name = document.createElement("span"); name.textContent = item.name || T("উপাদান যাচাই");
+      var code = document.createElement("small"); code.textContent = item.code || T("নিজে লেখা উপাদান");
       row.append(name, code);
       if (item.code) row.onclick = function () { $("barcodeInput").value = item.code; lookup(item.code); };
       else row.disabled = true;
       list.appendChild(row);
     });
-    if (!list.children.length) list.textContent = "এখনো কোনো খাবার যাচাই করা হয়নি।";
+    if (!list.children.length) list.textContent = T("এখনো কোনো খাবার যাচাই করা হয়নি।");
   }
   function render(product, analysis, save) {
     var copy = copies[analysis.status], info = product || {};
     $("resultCard").hidden = false;
-    $("productName").textContent = info.name || "উপাদান যাচাই";
+    $("productName").textContent = info.name || T("উপাদান যাচাই");
     $("productBrand").textContent = info.brand || "";
-    $("productCode").textContent = info.code ? "BARCODE · " + info.code : "নিজে লেখা উপাদান";
+    $("productCode").textContent = info.code ? "BARCODE · " + info.code : T("নিজে লেখা উপাদান");
     $("productImage").hidden = !info.image;
-    if (info.image && /^https:\/\//.test(info.image)) { $("productImage").src = info.image; $("productImage").alt = info.name || "খাবারের ছবি"; }
+    if (info.image && /^https:\/\//.test(info.image)) { $("productImage").src = info.image; $("productImage").alt = info.name || T("খাবারের ছবি"); }
     else $("productImage").removeAttribute("src");
     $("verdictBox").dataset.status = analysis.status;
     $("verdictIcon").innerHTML = '<i class="fa-solid ' + copy[0] + '"></i>';
@@ -77,25 +78,25 @@
     $("ingredientsBox").hidden = !analysis.text; $("productIngredients").textContent = analysis.text;
     var source = $("productSource"); source.textContent = "";
     if (info.code) {
-      var link = document.createElement("a"); link.href = "https://world.openfoodfacts.org/product/" + info.code; link.target = "_blank"; link.rel = "noopener"; link.textContent = "Open Food Facts-এ মূল তথ্য দেখুন"; source.appendChild(link);
-      if (info.reportedHalalLabel) source.appendChild(document.createTextNode(" · তথ্যভাণ্ডারে halal label আছে; প্যাকেটের বর্তমান সনদ মিলিয়ে নিন।"));
+      var link = document.createElement("a"); link.href = "https://world.openfoodfacts.org/product/" + info.code; link.target = "_blank"; link.rel = "noopener"; link.textContent = T("Open Food Facts-এ মূল তথ্য দেখুন"); source.appendChild(link);
+      if (info.reportedHalalLabel) source.appendChild(document.createTextNode(T(" · তথ্যভাণ্ডারে halal label আছে; প্যাকেটের বর্তমান সনদ মিলিয়ে নিন।")));
     }
     if (save !== false) {
       var rows = history().filter(function (r) { return info.code ? r.code !== info.code : r.code; });
-      rows.unshift({code: info.code || "", name: info.name || "উপাদান যাচাই", status: analysis.status, at: Date.now()});
+      rows.unshift({code: info.code || "", name: info.name || T("উপাদান যাচাই"), status: analysis.status, at: Date.now()});
       try { localStorage.setItem(KEY, JSON.stringify(rows.slice(0, 10))); } catch (_) { /* Private mode still supports checks. */ }
       showHistory();
     }
   }
   async function lookup(raw) {
     var code = normalize(raw);
-    if (!valid(code)) { toast("সঠিক ৮, ১২, ১৩ বা ১৪ সংখ্যার barcode দিন। শেষ সংখ্যাটিও মিলতে হবে।"); return; }
+    if (!valid(code)) { toast(T("সঠিক ৮, ১২, ১৩ বা ১৪ সংখ্যার barcode দিন। শেষ সংখ্যাটিও মিলতে হবে।")); return; }
     var token = ++lookupToken;
     if (lookupAbort) lookupAbort.abort();
     var abort = new AbortController(); lookupAbort = abort;
     var timeout = setTimeout(function () { abort.abort(); }, 18000);
-    render({code: code, name: "খাবারের তথ্য খোঁজা হচ্ছে…"}, analyze(""), false);
-    $("verdictTitle").textContent = "তথ্যভাণ্ডার থেকে উপাদান আনা হচ্ছে…";
+    render({code: code, name: T("খাবারের তথ্য খোঁজা হচ্ছে…")}, analyze(""), false);
+    $("verdictTitle").textContent = T("তথ্যভাণ্ডার থেকে উপাদান আনা হচ্ছে…");
     $("barcodeLookupBtn").disabled = true;
     try {
       var res = await fetch("/api/public/food?barcode=" + encodeURIComponent(code), {signal: abort.signal, headers: {Accept: "application/json"}});
@@ -103,12 +104,12 @@
       var data = await res.json();
       if (token !== lookupToken) return;
       if (!data.ok) throw new Error("lookup");
-      if (!data.found) { render({code: code, name: "তথ্যভাণ্ডারে এই খাবার পাওয়া যায়নি"}, analyze("")); return; }
+      if (!data.found) { render({code: code, name: T("তথ্যভাণ্ডারে এই খাবার পাওয়া যায়নি")}, analyze("")); return; }
       render(data.product, analyze(data.product.ingredients));
     } catch (error) {
       if (token !== lookupToken) return;
-      render({code: code, name: error.status === 429 ? "কিছুক্ষণ পরে আবার চেষ্টা করুন" : "তথ্যভাণ্ডার এখন পাওয়া যাচ্ছে না"}, analyze(""), false);
-      $("verdictText").textContent = "নেটওয়ার্ক বা তথ্যের সেবায় সমস্যা হয়েছে। প্যাকেটের উপাদান লিখে যাচাই এখনো করা যাবে।";
+      render({code: code, name: error.status === 429 ? T("কিছুক্ষণ পরে আবার চেষ্টা করুন") : T("তথ্যভাণ্ডার এখন পাওয়া যাচ্ছে না")}, analyze(""), false);
+      $("verdictText").textContent = T("নেটওয়ার্ক বা তথ্যের সেবায় সমস্যা হয়েছে। প্যাকেটের উপাদান লিখে যাচাই এখনো করা যাবে।");
     } finally { clearTimeout(timeout); if (token === lookupToken) $("barcodeLookupBtn").disabled = false; }
   }
   function stopCamera(message) {
@@ -116,15 +117,15 @@
     if (controls) { controls.stop(); controls = null; }
     if (stream) { stream.getTracks().forEach(function (t) { t.stop(); }); stream = null; }
     $("scannerVideo").srcObject = null; $("scannerVideo").hidden = true; $("cameraEmpty").hidden = false;
-    $("startScanBtn").innerHTML = '<i class="fa-solid fa-camera"></i> ক্যামেরা দিয়ে স্ক্যান';
+    $("startScanBtn").innerHTML = T('<i class="fa-solid fa-camera"></i> ক্যামেরা দিয়ে স্ক্যান');
     if (message) status(message);
   }
   async function startCamera() {
-    if (cameraActive) { stopCamera("স্ক্যান বন্ধ করা হয়েছে"); return; }
-    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) { toast("ক্যামেরা ব্যবহার করা যাচ্ছে না। Barcode লিখে বা ছবি দিয়ে যাচাই করুন।"); return; }
-    if (!window.ZXingBrowser) { toast("Scanner লোড হয়নি। পেজটি আবার খুলুন বা barcode লিখুন।"); return; }
+    if (cameraActive) { stopCamera(T("স্ক্যান বন্ধ করা হয়েছে")); return; }
+    if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) { toast(T("ক্যামেরা ব্যবহার করা যাচ্ছে না। Barcode লিখে বা ছবি দিয়ে যাচাই করুন।")); return; }
+    if (!window.ZXingBrowser) { toast(T("Scanner লোড হয়নি। পেজটি আবার খুলুন বা barcode লিখুন।")); return; }
     var token = ++cameraToken; cameraActive = true;
-    $("startScanBtn").textContent = "স্ক্যান বন্ধ করুন"; status("ক্যামেরা ব্যবহারের অনুমতি দিন…");
+    $("startScanBtn").textContent = T("স্ক্যান বন্ধ করুন"); status(T("ক্যামেরা ব্যবহারের অনুমতি দিন…"));
     try {
       var nextStream = await navigator.mediaDevices.getUserMedia({audio: false, video: {facingMode: {ideal: "environment"}, width: {ideal: 1280}, height: {ideal: 720}}});
       if (token !== cameraToken) { nextStream.getTracks().forEach(function (t) { t.stop(); }); return; }
@@ -133,14 +134,14 @@
       var nextControls = await reader.decodeFromStream(stream, $("scannerVideo"), function (result, error, scanControls) {
         if (!result || token !== cameraToken) return;
         var code = normalize(result.getText()); if (!valid(code)) return;
-        scanControls.stop(); stopCamera("Barcode পাওয়া গেছে। খাবারের তথ্য খোঁজা হচ্ছে…");
+        scanControls.stop(); stopCamera(T("Barcode পাওয়া গেছে। খাবারের তথ্য খোঁজা হচ্ছে…"));
         $("barcodeInput").value = code; lookup(code);
       });
       if (token !== cameraToken) nextControls.stop();
-      else { controls = nextControls; status("Barcode সোজা করে frame-এর মাঝখানে স্থির রাখুন"); }
+      else { controls = nextControls; status(T("Barcode সোজা করে frame-এর মাঝখানে স্থির রাখুন")); }
     } catch (error) {
       if (token !== cameraToken) return;
-      var message = error.name === "NotAllowedError" ? "ক্যামেরার অনুমতি পাওয়া যায়নি। Site settings থেকে Camera Allow করুন, অথবা ছবি বা barcode দিন।" : "ক্যামেরা চালু হয়নি। অন্য camera app বন্ধ করে আবার চেষ্টা করুন, অথবা ছবি দিন।";
+      var message = error.name === "NotAllowedError" ? T("ক্যামেরার অনুমতি পাওয়া যায়নি। Site settings থেকে Camera Allow করুন, অথবা ছবি বা barcode দিন।") : T("ক্যামেরা চালু হয়নি। অন্য camera app বন্ধ করে আবার চেষ্টা করুন, অথবা ছবি দিন।");
       stopCamera(message); toast(message);
     }
   }
@@ -148,15 +149,18 @@
     if (!file) return;
     stopCamera(); var url = URL.createObjectURL(file);
     try {
-      status("ছবির barcode পড়া হচ্ছে…");
+      status(T("ছবির barcode পড়া হচ্ছে…"));
       var reader = new ZXingBrowser.BrowserMultiFormatOneDReader();
       var result = await reader.decodeFromImageUrl(url), code = normalize(result.getText());
       if (!valid(code)) throw new Error("invalid barcode");
-      $("barcodeInput").value = code; status("ছবিতে barcode পাওয়া গেছে"); await lookup(code);
-    } catch (_) { status("ছবিতে পরিষ্কার barcode পাওয়া যায়নি"); toast("Barcode-এর পুরো অংশ পরিষ্কার করে আবার ছবি দিন বা সংখ্যাটি লিখুন।"); }
+      $("barcodeInput").value = code; status(T("ছবিতে barcode পাওয়া গেছে")); await lookup(code);
+    } catch (_) { status(T("ছবিতে পরিষ্কার barcode পাওয়া যায়নি")); toast(T("Barcode-এর পুরো অংশ পরিষ্কার করে আবার ছবি দিন বা সংখ্যাটি লিখুন।")); }
     finally { URL.revokeObjectURL(url); $("barcodeImageInput").value = ""; }
   }
   function init() {
+    danger.forEach(function (r) { r[0] = T(r[0]); });
+    doubts.forEach(function (r) { r[0] = T(r[0]); });
+    Object.keys(copies).forEach(function (k) { copies[k][1] = T(copies[k][1]); copies[k][2] = T(copies[k][2]); });
     $("startScanBtn").onclick = startCamera;
     $("imageScanBtn").onclick = function () { $("barcodeImageInput").click(); };
     $("barcodeImageInput").onchange = function () { scanImage(this.files[0]); };
@@ -164,14 +168,15 @@
     $("analyzeIngredientsBtn").onclick = function () {
       ++lookupToken; if (lookupAbort) lookupAbort.abort(); $("barcodeLookupBtn").disabled = false;
       var analysis = analyze($("ingredientInput").value);
-      if (!analysis.text) { toast("প্যাকেটের উপাদানের তালিকা আগে লিখুন।"); return; }
+      if (!analysis.text) { toast(T("প্যাকেটের উপাদানের তালিকা আগে লিখুন।")); return; }
       render({}, analysis);
     };
     $("clearIngredientsBtn").onclick = function () { $("ingredientInput").value = ""; $("ingredientInput").focus(); };
     $("clearHistoryBtn").onclick = function () { try { localStorage.removeItem(KEY); } catch (_) {} showHistory(); };
     window.addEventListener("pagehide", function () { stopCamera(); if (lookupAbort) lookupAbort.abort(); });
-    document.addEventListener("visibilitychange", function () { if (document.hidden) stopCamera("ক্যামেরা বন্ধ করা হয়েছে"); });
-    showHistory(); status("ক্যামেরা, barcode-এর ছবি বা সংখ্যাটি দিয়ে শুরু করুন");
+    document.addEventListener("visibilitychange", function () { if (document.hidden) stopCamera(T("ক্যামেরা বন্ধ করা হয়েছে")); });
+    showHistory(); status(T("ক্যামেরা, barcode-এর ছবি বা সংখ্যাটি দিয়ে শুরু করুন"));
   }
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init();
+  var launch36 = function () { if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init); else init(); };
+  if (window.AponarAppReady) window.AponarAppReady.then(launch36); else launch36();
 })();

@@ -7,6 +7,7 @@
   const external=(href,label,icon='fa-arrow-up-right-from-square')=>`<a class="an-job-link" target="_blank" rel="noopener external" href="${href}"><i class="fa-solid ${icon}" aria-hidden="true"></i>${label}</a>`;
   const ruby=(kanji,reading)=>`<ruby>${kanji}<rt>${reading}</rt></ruby>`;
 
+  const T=s=>window.AponarAppT?window.AponarAppT(s):s;
   function addStyles(){
     if(document.getElementById('an-jobs-enhance-style'))return;
     const style=document.createElement('style');
@@ -53,7 +54,7 @@
       if(words[key])el.innerHTML=words[key];
     });
     document.querySelectorAll('.flow-card b').forEach(el=>{
-      if((el.textContent||'').trim()==='応募 করুন')el.innerHTML=`${ruby('応募','おうぼ')} করুন`;
+      if((el.textContent||'').trim()===T('応募 করুন'))el.innerHTML=`${ruby('応募','おうぼ')}${T(" করুন")}`;
     });
   }
 
@@ -64,14 +65,14 @@
     box.id='an-reading-strip';
     box.className='an-jobs-enhance';
     box.innerHTML=`
-      <div class="an-jobs-head"><span class="an-eyebrow">JAPANESE READING</span><h2>Job-এর দরকারি কাঞ্জি + ফুরিগানা</h2><p>এই ৬টা শব্দ আগে চিনে রাখলে TownWork, Baitoru এবং company job page বুঝতে অনেক সহজ হবে।</p></div>
+      <div class="an-jobs-head"><span class="an-eyebrow">JAPANESE READING</span><h2>${T("Job-এর দরকারি কাঞ্জি + ফুরিগানা")}</h2><p>${T("এই ৬টা শব্দ আগে চিনে রাখলে TownWork, Baitoru এবং company job page বুঝতে অনেক সহজ হবে।")}</p></div>
       <div class="an-reading-strip">
-        <span class="an-reading-chip">${ruby('仕事','しごと')} <small>কাজ</small></span>
-        <span class="an-reading-chip">${ruby('求人','きゅうじん')} <small>চাকরির বিজ্ঞাপন</small></span>
-        <span class="an-reading-chip">${ruby('応募','おうぼ')} <small>আবেদন</small></span>
-        <span class="an-reading-chip">${ruby('面接','めんせつ')} <small>ইন্টারভিউ</small></span>
+        <span class="an-reading-chip">${ruby('仕事','しごと')} <small>${T("কাজ")}</small></span>
+        <span class="an-reading-chip">${ruby('求人','きゅうじん')} <small>${T("চাকরির বিজ্ঞাপন")}</small></span>
+        <span class="an-reading-chip">${ruby('応募','おうぼ')} <small>${T("আবেদন")}</small></span>
+        <span class="an-reading-chip">${ruby('面接','めんせつ')} <small>${T("ইন্টারভিউ")}</small></span>
         <span class="an-reading-chip">${ruby('履歴書','りれきしょ')} <small>CV</small></span>
-        <span class="an-reading-chip">${ruby('時給','じきゅう')} <small>ঘণ্টাপ্রতি বেতন</small></span>
+        <span class="an-reading-chip">${ruby('時給','じきゅう')} <small>${T("ঘণ্টাপ্রতি বেতন")}</small></span>
       </div>`;
     hero.insertAdjacentElement('afterend',box);
   }
@@ -83,30 +84,30 @@
     section.id='an-login-guide';
     section.className='an-jobs-enhance';
     section.innerHTML=`
-      <div class="an-jobs-head"><span class="an-eyebrow">ACCOUNT · LOGIN</span><h2>Registration / Login কীভাবে করবেন?</h2><p>আপনার Nihon কোনো account তৈরি করে না। নিচের ধাপ দেখে original TownWork/Baitoru page-এ account ব্যবহার করুন।</p></div>
+      <div class="an-jobs-head"><span class="an-eyebrow">ACCOUNT · LOGIN</span><h2>${T("Registration / Login কীভাবে করবেন?")}</h2><p>${T("আপনার Nihon কোনো account তৈরি করে না। নিচের ধাপ দেখে original TownWork/Baitoru page-এ account ব্যবহার করুন।")}</p></div>
       <div class="an-login-grid">
         <article class="an-login-card">
           <div class="an-login-top"><span class="an-login-icon"><i class="fa-solid fa-building"></i></span><div><h3>TownWork</h3><small>${ruby('会員','かいいん')} / ${ruby('応募','おうぼ')} guide</small></div></div>
           <div class="an-steps">
-            <div class="an-step"><span class="an-step-no">1</span><div><b>TownWork official site খুলুন</b><small>Home থেকে ${ruby('マイページ','')} / job search ব্যবহার করুন।</small></div></div>
-            <div class="an-step"><span class="an-step-no">2</span><div><b>Login/registration screen এলে নির্দেশনা অনুসরণ করুন</b><small>Screen-এ যে option দেখাবে সেটাই ব্যবহার করুন; UI সময়ের সাথে বদলাতে পারে।</small></div></div>
-            <div class="an-step"><span class="an-step-no">3</span><div><b>${ruby('求人','きゅうじん')} খুঁজুন</b><small>Tokyo → station/area → job type → shift দিয়ে filter করুন।</small></div></div>
-            <div class="an-step"><span class="an-step-no">4</span><div><b>${ruby('応募','おうぼ')} button চাপুন</b><small>Original form-এ নিজের সঠিক phone/email দিন এবং confirmation করুন।</small></div></div>
+            <div class="an-step"><span class="an-step-no">1</span><div><b>${T("TownWork official site খুলুন")}</b><small>${T("Home থেকে ")}${ruby('マイページ','')}${T(" / job search ব্যবহার করুন।")}</small></div></div>
+            <div class="an-step"><span class="an-step-no">2</span><div><b>${T("Login/registration screen এলে নির্দেশনা অনুসরণ করুন")}</b><small>${T("Screen-এ যে option দেখাবে সেটাই ব্যবহার করুন; UI সময়ের সাথে বদলাতে পারে।")}</small></div></div>
+            <div class="an-step"><span class="an-step-no">3</span><div><b>${ruby('求人','きゅうじん')}${T(" খুঁজুন")}</b><small>${T("Tokyo → station/area → job type → shift দিয়ে filter করুন।")}</small></div></div>
+            <div class="an-step"><span class="an-step-no">4</span><div><b>${ruby('応募','おうぼ')}${T(" button চাপুন")}</b><small>${T("Original form-এ নিজের সঠিক phone/email দিন এবং confirmation করুন।")}</small></div></div>
           </div>
-          <div class="an-job-links">${external('https://townwork.net/','TownWork খুলুন','fa-arrow-up-right-from-square')}</div>
+          <div class="an-job-links">${external('https://townwork.net/',T('TownWork খুলুন'),'fa-arrow-up-right-from-square')}</div>
         </article>
         <article class="an-login-card">
           <div class="an-login-top"><span class="an-login-icon"><i class="fa-solid fa-bolt"></i></span><div><h3>Baitoru · dipID</h3><small>${ruby('ログイン','')} / ${ruby('利用開始','りようかいし')}</small></div></div>
           <div class="an-steps">
-            <div class="an-step"><span class="an-step-no">1</span><div><b>「ログインまたは利用開始する」 চাপুন</b><small>Baitoru home/menu-তে এই entry পাওয়া যায়।</small></div></div>
-            <div class="an-step"><span class="an-step-no">2</span><div><b>dipID তৈরি বা login করুন</b><small>Email অথবা official login screen-এ দেখানো supported sign-in option ব্যবহার করুন।</small></div></div>
-            <div class="an-step"><span class="an-step-no">3</span><div><b>Verification এলে complete করুন</b><small>Authentication code চাইলে নিজের registered email/official method ব্যবহার করুন।</small></div></div>
-            <div class="an-step"><span class="an-step-no">4</span><div><b>Job খুলে ${ruby('応募','おうぼ')} করুন</b><small>Application history পরে 「応募した仕事」 থেকে দেখা যায়।</small></div></div>
+            <div class="an-step"><span class="an-step-no">1</span><div><b>${T("「ログインまたは利用開始する」 চাপুন")}</b><small>${T("Baitoru home/menu-তে এই entry পাওয়া যায়।")}</small></div></div>
+            <div class="an-step"><span class="an-step-no">2</span><div><b>${T("dipID তৈরি বা login করুন")}</b><small>${T("Email অথবা official login screen-এ দেখানো supported sign-in option ব্যবহার করুন।")}</small></div></div>
+            <div class="an-step"><span class="an-step-no">3</span><div><b>${T("Verification এলে complete করুন")}</b><small>${T("Authentication code চাইলে নিজের registered email/official method ব্যবহার করুন।")}</small></div></div>
+            <div class="an-step"><span class="an-step-no">4</span><div><b>${T("Job খুলে ")}${ruby('応募','おうぼ')}${T(" করুন")}</b><small>${T("Application history পরে 「応募した仕事」 থেকে দেখা যায়।")}</small></div></div>
           </div>
-          <div class="an-job-links">${external('https://www.baitoru.com/','Baitoru খুলুন','fa-arrow-up-right-from-square')}${external('https://www.baitoru.com/about/ask/','Baitoru Help','fa-circle-question')}</div>
+          <div class="an-job-links">${external('https://www.baitoru.com/',T('Baitoru খুলুন'),'fa-arrow-up-right-from-square')}${external('https://www.baitoru.com/about/ask/','Baitoru Help','fa-circle-question')}</div>
         </article>
       </div>
-      <div class="an-safety-note"><i class="fa-solid fa-shield-halved"></i> Password, verification code বা login তথ্য কখনো Aponar Nihon-এ দেবেন না। সব account কাজ original site-এই করবেন।</div>`;
+      <div class="an-safety-note"><i class="fa-solid fa-shield-halved"></i>${T(" Password, verification code বা login তথ্য কখনো Aponar Nihon-এ দেবেন না। সব account কাজ original site-এই করবেন।")}</div>`;
     find.insertAdjacentElement('afterend',section);
   }
 
@@ -122,28 +123,28 @@
     section.id='an-employer-sites';
     section.className='an-jobs-enhance';
     section.innerHTML=`
-      <div class="an-jobs-head"><span class="an-eyebrow">ORIGINAL COMPANY JOB SITES</span><h2>Company-এর official site থেকেও সরাসরি আবেদন করুন</h2><p>TownWork/Baitoru ছাড়াও বড় chain-এর নিজস্ব recruitment site আছে। Job পছন্দ হলে original company page-এই apply করবেন।</p></div>
+      <div class="an-jobs-head"><span class="an-eyebrow">ORIGINAL COMPANY JOB SITES</span><h2>${T("Company-এর official site থেকেও সরাসরি আবেদন করুন")}</h2><p>${T("TownWork/Baitoru ছাড়াও বড় chain-এর নিজস্ব recruitment site আছে। Job পছন্দ হলে original company page-এই apply করবেন।")}</p></div>
       <div class="an-brand-groups">
         <div>
           <h3 class="an-brand-title"><i class="fa-solid fa-store"></i> Convenience Store · コンビニ</h3>
           <div class="an-brand-grid">
-            ${brandCard('7-Eleven','Store job খুঁজুন, job detail পড়ুন এবং WEB/phone application option ব্যবহার করুন।','https://ptj.sej.co.jp/','fa-7')}
-            ${brandCard('FamilyMart','Tokyo, shift, station এবং 留学生歓迎 / 外国人活躍 condition দিয়ে job খুঁজুন।','https://staff.family.co.jp/','fa-store')}
-            ${brandCard('Lawson','Lawson, Natural Lawson, Lawson Store 100; language/ひらがな option-ও আছে।','https://crew.lawson.co.jp/','fa-store')}
-            ${brandCard('MINISTOP','Recruitment store list থেকে কাছের দোকানের part-time opening দেখুন।','https://ministop-arbeit.jp/','fa-store')}
-            ${brandCard('Daily Yamazaki','売場クルー / 厨房クルー-এর part-time recruitment information দেখুন।','https://www.daily-yamazaki.jp/job/','fa-bread-slice')}
+            ${brandCard('7-Eleven',T('Store job খুঁজুন, job detail পড়ুন এবং WEB/phone application option ব্যবহার করুন।'),'https://ptj.sej.co.jp/','fa-7')}
+            ${brandCard('FamilyMart',T('Tokyo, shift, station এবং 留学生歓迎 / 外国人活躍 condition দিয়ে job খুঁজুন।'),'https://staff.family.co.jp/','fa-store')}
+            ${brandCard('Lawson',T('Lawson, Natural Lawson, Lawson Store 100; language/ひらがな option-ও আছে।'),'https://crew.lawson.co.jp/','fa-store')}
+            ${brandCard('MINISTOP',T('Recruitment store list থেকে কাছের দোকানের part-time opening দেখুন।'),'https://ministop-arbeit.jp/','fa-store')}
+            ${brandCard('Daily Yamazaki',T('売場クルー / 厨房クルー-এর part-time recruitment information দেখুন।'),'https://www.daily-yamazaki.jp/job/','fa-bread-slice')}
           </div>
         </div>
         <div>
           <h3 class="an-brand-title"><i class="fa-solid fa-utensils"></i> Restaurant · Ramen · Fast Food</h3>
           <div class="an-brand-grid">
-            ${brandCard("McDonald's",'Store search → crew job → application → interview flow ব্যবহার করুন।','https://www.mcdonalds.co.jp/recruit/crew_recruiting/','fa-burger')}
-            ${brandCard('KFC','KFC store jobs-এ WEB/LINE/phone application option job অনুযায়ী পাওয়া যেতে পারে।','https://job-kfc.net/','fa-drumstick-bite')}
-            ${brandCard('Sushiro','Sushiro recruitment site থেকে アルバイト・パート求人 entry খুলুন।','https://www.akindo-sushiro.co.jp/recruit/','fa-fish')}
-            ${brandCard('Sukiya','Tokyo-area hall/kitchen part-time openings এবং WEB application দেখুন।','https://work.sukiya.jp/','fa-bowl-rice')}
-            ${brandCard('Marugame / Toridoll','Marugame Seimen সহ Toridoll group-এর brand/area দিয়ে part-time job খুঁজুন।','https://jobs.toridoll.com/','fa-bowl-food')}
-            ${brandCard('ICHIRAN Ramen','一蘭-এর official recruitment page থেকে アルバイト応募 entry ব্যবহার করুন।','https://ichiran.com/recruit2018/','fa-bowl-food')}
-            ${brandCard('Marugen Ramen','物語コーポレーション-এর part-time recruitment entry থেকে 丸源ラーメン job খুঁজুন।','https://www.monogatari.co.jp/recruit/','fa-bowl-food')}
+            ${brandCard("McDonald's",T('Store search → crew job → application → interview flow ব্যবহার করুন।'),'https://www.mcdonalds.co.jp/recruit/crew_recruiting/','fa-burger')}
+            ${brandCard('KFC',T('KFC store jobs-এ WEB/LINE/phone application option job অনুযায়ী পাওয়া যেতে পারে।'),'https://job-kfc.net/','fa-drumstick-bite')}
+            ${brandCard('Sushiro',T('Sushiro recruitment site থেকে アルバイト・パート求人 entry খুলুন।'),'https://www.akindo-sushiro.co.jp/recruit/','fa-fish')}
+            ${brandCard('Sukiya',T('Tokyo-area hall/kitchen part-time openings এবং WEB application দেখুন।'),'https://work.sukiya.jp/','fa-bowl-rice')}
+            ${brandCard('Marugame / Toridoll',T('Marugame Seimen সহ Toridoll group-এর brand/area দিয়ে part-time job খুঁজুন।'),'https://jobs.toridoll.com/','fa-bowl-food')}
+            ${brandCard('ICHIRAN Ramen',T('一蘭-এর official recruitment page থেকে アルバイト応募 entry ব্যবহার করুন।'),'https://ichiran.com/recruit2018/','fa-bowl-food')}
+            ${brandCard('Marugen Ramen',T('物語コーポレーション-এর part-time recruitment entry থেকে 丸源ラーメン job খুঁজুন।'),'https://www.monogatari.co.jp/recruit/','fa-bowl-food')}
           </div>
         </div>
       </div>`;
@@ -157,12 +158,12 @@
     section.id='an-company-apply-flow';
     section.className='an-jobs-enhance';
     section.innerHTML=`
-      <div class="an-jobs-head"><span class="an-eyebrow">HOW TO APPLY</span><h2>Company job site-এ আবেদন করার সহজ নিয়ম</h2><p>Button-এর নাম brand অনুযায়ী একটু আলাদা হতে পারে, কিন্তু flow প্রায় একই।</p></div>
+      <div class="an-jobs-head"><span class="an-eyebrow">HOW TO APPLY</span><h2>${T("Company job site-এ আবেদন করার সহজ নিয়ম")}</h2><p>${T("Button-এর নাম brand অনুযায়ী একটু আলাদা হতে পারে, কিন্তু flow প্রায় একই।")}</p></div>
       <div class="an-apply-flow">
-        <div class="an-apply-step"><span>1</span><b>${ruby('求人','きゅうじん')} খুঁজুন</b><small>Tokyo / station / store / shift বেছে নিন।</small></div>
-        <div class="an-apply-step"><span>2</span><b>${ruby('募集要項','ぼしゅうようこう')} পড়ুন</b><small>時給, 勤務時間, 交通費, 条件 দেখে নিন।</small></div>
-        <div class="an-apply-step"><span>3</span><b>${ruby('応募','おうぼ')} করুন</b><small>WEB応募 / 応募する / エントリー button চাপুন।</small></div>
-        <div class="an-apply-step"><span>4</span><b>${ruby('面接','めんせつ')} প্রস্তুতি</b><small>Call/email এলে date confirm করুন, CV/履歴書 ready রাখুন।</small></div>
+        <div class="an-apply-step"><span>1</span><b>${ruby('求人','きゅうじん')}${T(" খুঁজুন")}</b><small>${T("Tokyo / station / store / shift বেছে নিন।")}</small></div>
+        <div class="an-apply-step"><span>2</span><b>${ruby('募集要項','ぼしゅうようこう')}${T(" পড়ুন")}</b><small>${T("時給, 勤務時間, 交通費, 条件 দেখে নিন।")}</small></div>
+        <div class="an-apply-step"><span>3</span><b>${ruby('応募','おうぼ')}${T(" করুন")}</b><small>${T("WEB応募 / 応募する / エントリー button চাপুন।")}</small></div>
+        <div class="an-apply-step"><span>4</span><b>${ruby('面接','めんせつ')}${T(" প্রস্তুতি")}</b><small>${T("Call/email এলে date confirm করুন, CV/履歴書 ready রাখুন।")}</small></div>
       </div>
       <div class="an-job-links">${external('/interview.html','Interview Guide','fa-user-tie').replace('target="_blank" rel="noopener external"','')}${external('/cv-builder.html','CV Builder','fa-file-signature').replace('target="_blank" rel="noopener external"','')}</div>`;
     employer.insertAdjacentElement('afterend',section);
@@ -181,5 +182,6 @@
     document.body.appendChild(marker);
   }
 
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
+  var start36=function(){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();};
+  if(window.AponarAppReady)window.AponarAppReady.then(start36);else start36();
 })();

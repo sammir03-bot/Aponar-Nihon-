@@ -16,6 +16,7 @@ import {
   updateDoc
 } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-firestore.js";
 
+function T(s) { return window.AponarAppT ? window.AponarAppT(s) : s; }
 const loginForm = document.getElementById("loginForm");
 const loginBtn = document.getElementById("loginBtn");
 const googleLoginBtn = document.getElementById("googleLoginBtn");
@@ -103,7 +104,7 @@ if (loginForm) {
     const password = passwordInput?.value || "";
 
     if (!email || !password) {
-      showMessage("অনুগ্রহ করে ইমেইল এবং পাসওয়ার্ড দিন।", "error");
+      showMessage(T("অনুগ্রহ করে ইমেইল এবং পাসওয়ার্ড দিন।"), "error");
       return;
     }
 
@@ -116,30 +117,30 @@ if (loginForm) {
       const userCredential = await signInWithEmailAndPassword(auth, email, password);
       const userData = await ensureUserProfile(userCredential.user);
 
-      showMessage("সফলভাবে লগইন হয়েছে।", "success");
+      showMessage(T("সফলভাবে লগইন হয়েছে।"), "success");
 
       setTimeout(() => {
         redirectByRole(userData);
       }, 700);
     } catch (error) {
-      let text = "লগইন করা যায়নি। আবার চেষ্টা করুন।";
+      let text = T("লগইন করা যায়নি। আবার চেষ্টা করুন।");
 
       switch (error.code) {
         case "auth/invalid-email":
-          text = "ইমেইল ফরম্যাট সঠিক নয়।";
+          text = T("ইমেইল ফরম্যাট সঠিক নয়।");
           break;
         case "auth/user-not-found":
         case "auth/invalid-credential":
-          text = "ইমেইল বা পাসওয়ার্ড ভুল।";
+          text = T("ইমেইল বা পাসওয়ার্ড ভুল।");
           break;
         case "auth/wrong-password":
-          text = "পাসওয়ার্ড ভুল হয়েছে।";
+          text = T("পাসওয়ার্ড ভুল হয়েছে।");
           break;
         case "auth/too-many-requests":
-          text = "অনেকবার চেষ্টা হয়েছে। কিছুক্ষণ পরে আবার চেষ্টা করুন।";
+          text = T("অনেকবার চেষ্টা হয়েছে। কিছুক্ষণ পরে আবার চেষ্টা করুন।");
           break;
         case "auth/network-request-failed":
-          text = "ইন্টারনেট সংযোগে সমস্যা হয়েছে।";
+          text = T("ইন্টারনেট সংযোগে সমস্যা হয়েছে।");
           break;
       }
 
@@ -168,26 +169,26 @@ if (googleLoginBtn) {
       const result = await signInWithPopup(auth, provider);
       const userData = await ensureUserProfile(result.user, result.user.displayName || "");
 
-      showMessage("Google দিয়ে সফলভাবে লগইন হয়েছে।", "success");
+      showMessage(T("Google দিয়ে সফলভাবে লগইন হয়েছে।"), "success");
 
       setTimeout(() => {
         redirectByRole(userData);
       }, 700);
     } catch (error) {
-      let text = "Google লগইন করা যায়নি।";
+      let text = T("Google লগইন করা যায়নি।");
 
       switch (error.code) {
         case "auth/popup-closed-by-user":
-          text = "Google popup বন্ধ করা হয়েছে।";
+          text = T("Google popup বন্ধ করা হয়েছে।");
           break;
         case "auth/popup-blocked":
-          text = "Popup block হয়েছে। Browser থেকে popup allow করুন।";
+          text = T("Popup block হয়েছে। Browser থেকে popup allow করুন।");
           break;
         case "auth/cancelled-popup-request":
-          text = "আগের popup request cancel হয়েছে। আবার চেষ্টা করুন।";
+          text = T("আগের popup request cancel হয়েছে। আবার চেষ্টা করুন।");
           break;
         case "auth/network-request-failed":
-          text = "ইন্টারনেট সংযোগে সমস্যা হয়েছে।";
+          text = T("ইন্টারনেট সংযোগে সমস্যা হয়েছে।");
           break;
       }
 

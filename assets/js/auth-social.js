@@ -5,10 +5,14 @@
   const tabs=$('.tabs');
   if(!tabs||!window.AN||!window.AN.sb) return;
 
-  const wrap=document.createElement('section');
+  const T=(s)=>window.AponarAppT?window.AponarAppT(s):s;
+  let wrap=null;
+  let buttons={};
+  function start(){
+  wrap=document.createElement('section');
   wrap.className='social-auth';
   wrap.setAttribute('aria-label','Social login');
-  wrap.innerHTML=`
+  wrap.innerHTML=T(`
     <div class="social-auth-grid">
       <button class="social-btn social-google" id="googleAuthBtn" type="button">
         <span class="social-icon" aria-hidden="true">G</span><span>Google দিয়ে চালিয়ে যান</span>
@@ -17,10 +21,10 @@
         <span class="social-icon" aria-hidden="true">f</span><span>Facebook দিয়ে চালিয়ে যান</span>
       </button>
     </div>
-    <div class="social-divider"><span>Email / Password</span></div>`;
+    <div class="social-divider"><span>Email / Password</span></div>`);
   tabs.insertAdjacentElement('afterend',wrap);
 
-  const buttons={
+  buttons={
     google:document.getElementById('googleAuthBtn'),
     facebook:document.getElementById('facebookAuthBtn')
   };
@@ -37,7 +41,7 @@
     const label=btn.querySelector('span:last-child');
     if(!label) return;
     if(!btn.dataset.label) btn.dataset.label=label.textContent;
-    label.textContent=on?'সংযোগ হচ্ছে...':btn.dataset.label;
+    label.textContent=on?T('সংযোগ হচ্ছে...'):btn.dataset.label;
   }
 
   async function signIn(provider){
@@ -53,11 +57,11 @@
       busy(btn,false);
       const text=(err?.message||String(err||'')).toLowerCase();
       if(text.includes('provider')&&(text.includes('enabled')||text.includes('unsupported'))){
-        showMessage(`${provider==='google'?'Google':'Facebook'} Login এখনো Supabase-এ enable করা হয়নি।`,true);
+        showMessage(`${provider==='google'?'Google':'Facebook'}${T(" Login এখনো Supabase-এ enable করা হয়নি।")}`,true);
       }else if(text.includes('redirect')){
-        showMessage('OAuth redirect configuration ঠিক নেই। Supabase ও provider callback URL আবার check করুন।',true);
+        showMessage(T('OAuth redirect configuration ঠিক নেই। Supabase ও provider callback URL আবার check করুন।'),true);
       }else{
-        showMessage(err?.message||'Social login শুরু করা যায়নি। আবার চেষ্টা করুন।',true);
+        showMessage(err?.message||T('Social login শুরু করা যায়নি। আবার চেষ্টা করুন।'),true);
       }
     }
   }
@@ -77,9 +81,11 @@
       for(const provider of ['google','facebook']){
         if(external[provider]===false&&buttons[provider]){
           buttons[provider].disabled=true;
-          buttons[provider].title=`Supabase-এ ${provider==='google'?'Google':'Facebook'} provider enable করুন`;
+          buttons[provider].title=`${T("Supabase-এ ")}${provider==='google'?'Google':'Facebook'}${T(" provider enable করুন")}`;
         }
       }
     }catch(_){ }
   })();
+  }
+  if(window.AponarAppReady)window.AponarAppReady.then(start);else start();
 })();

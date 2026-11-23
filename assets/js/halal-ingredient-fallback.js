@@ -6,6 +6,7 @@
 
   function $(id) { return document.getElementById(id); }
 
+  var T = function (s) { return window.AponarAppT ? window.AponarAppT(s) : s; };
   function toast(message) {
     var node = $("scannerToast");
     if (!node) return;
@@ -71,8 +72,8 @@
     if (!button) return;
     button.disabled = !!busy;
     button.innerHTML = busy
-      ? '<i class="fa-solid fa-spinner fa-spin"></i> ' + (label || "ছবি পড়া হচ্ছে…")
-      : '<i class="fa-solid fa-camera-retro"></i> Ingredient label-এর ছবি';
+      ? '<i class="fa-solid fa-spinner fa-spin"></i> ' + (label || T("ছবি পড়া হচ্ছে…"))
+      : T('<i class="fa-solid fa-camera-retro"></i> Ingredient label-এর ছবি');
   }
 
   async function readIngredientPhoto(file, sourceButton) {
@@ -81,7 +82,7 @@
     if (!textarea) return;
 
     ocrBusy = true;
-    setOcrButtonState(sourceButton, true, "OCR প্রস্তুত হচ্ছে…");
+    setOcrButtonState(sourceButton, true, T("OCR প্রস্তুত হচ্ছে…"));
 
     var worker = null;
     try {
@@ -90,7 +91,7 @@
         logger: function (message) {
           if (!sourceButton || !message) return;
           if (message.status === "recognizing text" && typeof message.progress === "number") {
-            setOcrButtonState(sourceButton, true, "পড়া হচ্ছে " + Math.round(message.progress * 100) + "%");
+            setOcrButtonState(sourceButton, true, T("পড়া হচ্ছে ") + Math.round(message.progress * 100) + "%");
           }
         }
       });
@@ -104,9 +105,9 @@
       textarea.dispatchEvent(new Event("input", { bubbles: true }));
       textarea.scrollIntoView({ behavior: "smooth", block: "center" });
       textarea.focus({ preventScroll: true });
-      toast("Ingredient text ছবি থেকে পড়া হয়েছে। OCR ভুল হতে পারে—text দেখে তারপর Ingredient check চাপুন।");
+      toast(T("Ingredient text ছবি থেকে পড়া হয়েছে। OCR ভুল হতে পারে—text দেখে তারপর Ingredient check চাপুন।"));
     } catch (_error) {
-      toast("ছবি থেকে ingredient text পরিষ্কারভাবে পড়া যায়নি। আলো ভালো রেখে 原材料名 অংশটা কাছ থেকে তুলুন।");
+      toast(T("ছবি থেকে ingredient text পরিষ্কারভাবে পড়া যায়নি। আলো ভালো রেখে 原材料名 অংশটা কাছ থেকে তুলুন।"));
     } finally {
       if (worker && typeof worker.terminate === "function") {
         try { await worker.terminate(); } catch (_error) {}
@@ -141,7 +142,7 @@
     button.type = "button";
     button.id = id;
     button.className = "halal-btn secondary";
-    button.innerHTML = '<i class="fa-solid fa-camera-retro"></i> Ingredient label-এর ছবি';
+    button.innerHTML = T('<i class="fa-solid fa-camera-retro"></i> Ingredient label-এর ছবি');
     button.addEventListener("click", function () { openIngredientCamera(button); });
     return button;
   }
@@ -158,7 +159,7 @@
     note.style.fontSize = ".74rem";
     note.style.lineHeight = "1.55";
     note.style.color = "#718596";
-    note.textContent = "原材料名-এর ছবি দিলে text এই browser-এই OCR হবে। Result দেওয়ার আগে OCR text একবার দেখে নিন।";
+    note.textContent = T("原材料名-এর ছবি দিলে text এই browser-এই OCR হবে। Result দেওয়ার আগে OCR text একবার দেখে নিন।");
     actions.insertAdjacentElement("afterend", note);
   }
 
@@ -188,7 +189,7 @@
       text.style.fontSize = ".78rem";
       text.style.lineHeight = "1.6";
       text.style.color = "#45665a";
-      text.textContent = "Database-এ ingredient list না থাকলে প্যাকেটের 原材料名 অংশের ছবি তুলুন। Text বের হলে দেখে Ingredient check দিন।";
+      text.textContent = T("Database-এ ingredient list না থাকলে প্যাকেটের 原材料名 অংশের ছবি তুলুন। Text বের হলে দেখে Ingredient check দিন।");
 
       var button = makePhotoButton("ingredientFallbackPhotoBtn");
       button.style.width = "100%";
@@ -223,6 +224,6 @@
     }
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true });
-  else init();
+  var launch36 = function () { if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init, { once: true }); else init(); };
+  if (window.AponarAppReady) window.AponarAppReady.then(launch36); else launch36();
 })();
