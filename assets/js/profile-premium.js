@@ -234,7 +234,7 @@
       if(goHome)setTimeout(()=>location.replace('/'),750);
     }catch(error){
       console.error('profile save',error);
-      toast(error?.message||t('saveError'),true);
+      toast(t('saveError'),true);
     }finally{
       if(!goHome)setSavingState(false);
     }
@@ -313,7 +313,7 @@
       $('avatarFile').value='';
       updateHero();
     });
-    document.querySelectorAll('[data-logout]').forEach(el=>el.addEventListener('click',async()=>{try{await AN.logout()}catch(error){toast(error?.message||'Logout failed',true)}}));
+    document.querySelectorAll('[data-logout]').forEach(el=>el.addEventListener('click',async()=>{try{await AN.logout()}catch(error){toast(T('লগআউট করা যায়নি। আবার চেষ্টা করুন।'),true)}}));
     const trigger=$('accountMenuButton'),menu=$('accountMenu');
     trigger?.addEventListener('click',event=>{event.stopPropagation();const open=!menu.hidden;menu.hidden=open;trigger.setAttribute('aria-expanded',String(!open))});
     document.addEventListener('click',event=>{if(menu&&!menu.hidden&&!menu.contains(event.target)&&event.target!==trigger){menu.hidden=true;trigger?.setAttribute('aria-expanded','false')}});
@@ -330,6 +330,7 @@
     // Never block the whole profile UI on network/activity requests.
     requestAnimationFrame(()=>{ const layer=$('loadingLayer'); if(layer) layer.hidden=true; });
     try{
+      if(!window.AN){location.replace('/auth.html');return}
       session=await AN.session();
       if(!session){location.replace('/auth.html');return}
       profile=await AN.ensureProfile();
@@ -340,7 +341,7 @@
       if(query.get('verified')==='1')toast(t('verifiedToast'));
     }catch(error){
       console.error('profile boot',error);
-      toast(error?.message||t('loadError'),true);
+      toast(t('loadError'),true);
     }finally{
       $('loadingLayer').hidden=true;
     }

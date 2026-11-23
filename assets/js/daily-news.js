@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"dn.furiganaOn": "ফুরিগানা ON", "dn.furiganaOff": "ফুরিগানা OFF", "dn.updatedToday": "আজকের নিউজ আপডেট হয়েছে", "dn.lastUpdate": "সর্বশেষ আপডেট: ", "dn.savedFallback": "সরাসরি আপডেট পাওয়া যায়নি; সংরক্ষিত খবর দেখানো হচ্ছে।", "dn.sourceProblem": "সংবাদ উৎসে এখন সমস্যা হচ্ছে; সর্বশেষ সংরক্ষিত খবর দেখানো হচ্ছে।", "dn.autoUpdate": "স্বয়ংক্রিয় আপডেট · প্রতি ৩ ঘণ্টায় উৎস যাচাই", "dn.lastCheck": " · সর্বশেষ যাচাই: ", "dn.checking": "আপডেট দেখছি…", "dn.empty": "এখনো কোনো নিউজ যোগ হয়নি।", "dn.waiting": "নিউজ আপডেটের অপেক্ষায়", "dn.noUpdate": "আপডেট পাওয়া যায়নি", "dn.emptyFilter": "এই ফিল্টারে কোনো নিউজ নেই।", "dn.refresh": "↻ আপডেট দেখুন", "dn.count": "{n}টি নিউজ", "dn.countOf": "{a} / {b}টি নিউজ", "dn.archiveFail": "নিউজ আর্কাইভ লোড করা যায়নি।", "dn.source": "মূল উৎস দেখুন", "dn.notFound": "নিউজটি পাওয়া যায়নি।", "dn.backToArchive": "নিউজ আর্কাইভে ফিরুন", "dn.backToArchiveShort": "আর্কাইভে ফিরুন", "dn.notFoundTitle": "নিউজ পাওয়া যায়নি | আপনার নিহোন", "dn.readerLoadFail": "নিউজটি লোড করা যায়নি। একটু পরে আবার চেষ্টা করুন।"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}
+  function dynT(k,v){if(window.AponarDyn)return window.AponarDyn(k,v);var s=dynT._b[k]||k;if(v)for(var x in v)s=s.split("{"+x+"}").join(v[x]);return s;}dynT._b={"dn.furiganaOn": "ফুরিগানা ON", "dn.furiganaOff": "ফুরিগানা OFF", "dn.updatedToday": "আজকের নিউজ আপডেট হয়েছে", "dn.lastUpdate": "সর্বশেষ আপডেট: ", "dn.savedFallback": "সরাসরি আপডেট পাওয়া যায়নি; সংরক্ষিত খবর দেখানো হচ্ছে।", "dn.sourceProblem": "সংবাদ উৎসে এখন সমস্যা হচ্ছে; সর্বশেষ সংরক্ষিত খবর দেখানো হচ্ছে।", "dn.autoUpdate": "স্বয়ংক্রিয় আপডেট · প্রতি ৩ ঘণ্টায় উৎস যাচাই", "dn.lastCheck": " · সর্বশেষ যাচাই: ", "dn.checking": "আপডেট দেখছি…", "dn.empty": "এখনো কোনো নিউজ যোগ হয়নি।", "dn.waiting": "নিউজ আপডেটের অপেক্ষায়", "dn.noUpdate": "আপডেট পাওয়া যায়নি", "dn.emptyFilter": "এই ফিল্টারে কোনো নিউজ নেই।", "dn.refresh": "↻ আপডেট দেখুন", "dn.count": "{n}টি নিউজ", "dn.countOf": "{a} / {b}টি নিউজ", "dn.archiveFail": "নিউজ আর্কাইভ লোড করা যায়নি।", "dn.source": "মূল উৎস দেখুন", "dn.notFound": "নিউজটি পাওয়া যায়নি।", "dn.backToArchive": "নিউজ আর্কাইভে ফিরুন", "dn.backToArchiveShort": "আর্কাইভে ফিরুন", "dn.notFoundTitle": "নিউজ পাওয়া যায়নি | আপনার নিহোন", "dn.readerLoadFail": "নিউজটি লোড করা যায়নি। একটু পরে আবার চেষ্টা করুন।", "dn.heroTitle": "খবর পড়তে পড়তে জাপানি শিখুন", "dn.heroText": "প্রতিদিন নতুন জাপানি headline, ভিতরে সহজ Japanese reading, ফুরিগানা ON/OFF, বাংলা বিস্তারিত ব্যাখ্যা এবং দরকারি vocabulary।", "dn.archiveKicker": "নিউজ আর্কাইভ", "dn.archiveTitle": "আজ ও আগের দিনের নিউজ"};function dynLang(){return window.AponarDynLang?window.AponarDynLang():'bn';}
 Object.assign(dynT._b,{"dn.homeLoadFail": "নিউজ লোড করা যায়নি। একটু পরে আবার চেষ্টা করুন।", "dn.filterLabel": "নিউজ তারিখ ফিল্টার", "dn.groupCount": "{n}টি", "dn.adjacentLabel": "পরের ও আগের নিউজ", "dn.navLabel": "নিউজ নেভিগেশন", "dn.explanationTitle": "বাংলা বিস্তারিত ব্যাখ্যা", "dn.imageSource": "ছবির উৎস", "dn.today": "আজ", "dn.badgeLatest": "সর্বশেষ", "dn.prevDay": "আগের দিন", "dn.badgeLead": "আজকের প্রধান", "dn.illustrative": "প্রতীকী চিত্র", "dn.readMore": "বিস্তারিত পড়ুন", "dn.kicker": "প্রতিদিনের জাপানি নিউজ", "dn.homeTitle": "কানজি দিয়ে খবর পড়ুন, বুঝুন বাংলায়", "dn.allNews": "সব নিউজ", "dn.loadingToday": "আজকের খবর লোড হচ্ছে…", "dn.noDate": "তারিখ নেই", "dn.latestDay": "সর্বশেষ দিন", "dn.newerNews": "নতুন নিউজ", "dn.olderNews": "আগের নিউজ", "dn.vocabTitle": "গুরুত্বপূর্ণ শব্দ", "dn.sourceLabel": "উৎস:", "dn.sourceFallback": "সংবাদ উৎস", "dn.allArchive": "আগের সব নিউজ", "dn.backHome": "হোমে ফিরুন"});
 
   var DATA_URL = "/assets/data/daily-news.json";
@@ -372,10 +372,29 @@ Object.assign(dynT._b,{"dn.homeLoadFail": "নিউজ লোড করা য�
     return toolbar;
   }
 
+  function applyArchiveChrome() {
+    if (dynLang() === "bn") return;
+    var title = document.querySelector("#news-page-title");
+    if (title) title.textContent = dynT('dn.heroTitle');
+    var heroText = document.querySelector(".news-hero p");
+    if (heroText) heroText.textContent = dynT('dn.heroText');
+    var kicker = document.querySelector(".news-shell-card .daily-news-kicker");
+    if (kicker) {
+      for (var i = 0; i < kicker.childNodes.length; i++) {
+        if (kicker.childNodes[i].nodeType === 3 && kicker.childNodes[i].nodeValue.trim()) {
+          kicker.childNodes[i].nodeValue = " " + dynT('dn.archiveKicker');
+        }
+      }
+    }
+    var archiveTitle = document.querySelector("#archive-title");
+    if (archiveTitle) archiveTitle.textContent = dynT('dn.archiveTitle');
+  }
+
   function renderArchive() {
     var list = document.querySelector("[data-news-archive-list]");
     var count = document.querySelector("[data-news-count]");
     if (!list) return;
+    applyArchiveChrome();
     ensureEnhancementStyles();
 
     loadData().then(function (data) {
