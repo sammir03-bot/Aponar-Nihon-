@@ -6,6 +6,8 @@
  const node=(tag,cls,html='')=>{const el=document.createElement(tag);el.className=cls;el.innerHTML=html;return el;};
  const isBangla=()=>!document.documentElement.lang||document.documentElement.lang==='bn';
  const text=(bn,en)=>isBangla()?bn:en;
+ const T=s=>window.AponarAppT?window.AponarAppT(s):s;
+ const T2=(bn,en)=>{if(window.AponarAppT&&window.AponarAppLang&&window.AponarAppLang!=="en")return window.AponarAppT(bn);return text(bn,en);};
  const launch=(href,icon,title,description)=>`<a class="ui-launch" href="${href}"><span class="ui-launch-icon" aria-hidden="true">${icon}</span><span><strong>${title}</strong><small>${description}</small></span></a>`;
 
  function cv(){
@@ -30,7 +32,7 @@
   new MutationObserver(updateStep).observe(wizard,{subtree:true,attributes:true,attributeFilter:['class']});
   q('.template-grid').addEventListener('click',()=>queueMicrotask(updateStep));
   // Associate the explanatory labels with their existing controls.
-  function labelFields(){all('.field').forEach(f=>{const input=q('input:not([type=hidden]),select,textarea',f),label=q('label',f);if(input?.id&&label)label.htmlFor=input.id;});all('[data-rtype]').forEach(input=>{input.setAttribute('aria-label',`${input.dataset.rtype} ${Number(input.dataset.i)+1} ${input.dataset.k}`);});all('.remove').forEach(b=>b.setAttribute('aria-label',text('এই সারি মুছুন','Remove this row')));}
+  function labelFields(){all('.field').forEach(f=>{const input=q('input:not([type=hidden]),select,textarea',f),label=q('label',f);if(input?.id&&label)label.htmlFor=input.id;});all('[data-rtype]').forEach(input=>{input.setAttribute('aria-label',`${input.dataset.rtype} ${Number(input.dataset.i)+1} ${input.dataset.k}`);});all('.remove').forEach(b=>b.setAttribute('aria-label',T2('এই সারি মুছুন','Remove this row')));}
   labelFields();all('.rows').forEach(rows=>new MutationObserver(labelFields).observe(rows,{childList:true}));
   const review=node('section','ui-review');review.id='cvReview';review.innerHTML=`<h3>${text('প্রিন্টের আগে মিলিয়ে নিন','Pre-print checklist')}</h3><p>${text('এটি তথ্য পূরণের তালিকা; বানান ও সঠিকতা নিজে যাচাই করুন।','This checks for filled fields; review spelling and accuracy yourself.')}</p><ul class="ui-checklist"></ul>`;
   q('[data-form="4"] .note').after(review);
@@ -46,7 +48,7 @@
   const grid=q('.ui-learning-grid',learning);
   for(const id of ['events','activity']){const card=q('#'+id)?.closest('.side-card');if(card)grid.append(card);}
   settings.id='studentSettings';settings.before(learning);
-  const tabs=node('div','ui-tabs');tabs.setAttribute('role','tablist');tabs.setAttribute('aria-label',text('শিক্ষার্থীর ড্যাশবোর্ড','Student dashboard'));
+  const tabs=node('div','ui-tabs');tabs.setAttribute('role','tablist');tabs.setAttribute('aria-label',T2('শিক্ষার্থীর ড্যাশবোর্ড','Student dashboard'));
   [[learning,text('আমার শেখা','My learning')],[settings,text('প্রোফাইল ও সেটিংস','Profile & settings')]].forEach(([panel,label],i)=>{
    const b=node('button','');b.type='button';b.id=`studentTab${i}`;b.textContent=label;b.setAttribute('role','tab');b.setAttribute('aria-controls',panel.id);panel.setAttribute('role','tabpanel');panel.setAttribute('aria-labelledby',b.id);tabs.append(b);
    b.addEventListener('click',()=>activate(i));
@@ -74,10 +76,10 @@
 
  function jobs(){
   const main=q('.jobs-main');if(!main)return;
-  const nav=node('nav','ui-jump');nav.setAttribute('aria-label',text('কাজের গাইড','Job guide'));nav.innerHTML=`<a href="#find">${text('কাজ খুঁজুন','Find work')}</a><a href="#apply-guide">${text('আবেদনের নিয়ম','How to apply')}</a><a href="/cv-builder.html">${text('CV তৈরি','Build a CV')}</a><a href="/interview.html">${text('ইন্টারভিউ প্রস্তুতি','Interview preparation')}</a>`;q('.hero',main).after(nav);
+  const nav=node('nav','ui-jump');nav.setAttribute('aria-label',T2('কাজের গাইড','Job guide'));nav.innerHTML=`<a href="#find">${text('কাজ খুঁজুন','Find work')}</a><a href="#apply-guide">${text('আবেদনের নিয়ম','How to apply')}</a><a href="/cv-builder.html">${text('CV তৈরি','Build a CV')}</a><a href="/interview.html">${text('ইন্টারভিউ প্রস্তুতি','Interview preparation')}</a>`;q('.hero',main).after(nav);
   function directory(){const host=q('#an-employer-sites');if(!host||q('#employerFilters'))return false;
    const cards=all('.an-brand-card',host);const groups=all('.an-brand-groups>div',host);
-   const filter=node('div','ui-filter');filter.id='employerFilters';filter.setAttribute('role','group');filter.setAttribute('aria-label',text('কাজের ধরন','Job category'));
+   const filter=node('div','ui-filter');filter.id='employerFilters';filter.setAttribute('role','group');filter.setAttribute('aria-label',T2('কাজের ধরন','Job category'));
    const categories=[['all','সব প্রতিষ্ঠান','All employers'],['0','কনভিনিয়েন্স স্টোর','Convenience stores'],['1','রেস্টুরেন্ট','Restaurants']];
    categories.forEach(([value,bn,en])=>{const b=node('button','ui-button');b.type='button';b.dataset.category=value;b.textContent=text(bn,en);b.setAttribute('aria-pressed',String(value==='all'));b.addEventListener('click',()=>{all('button',filter).forEach(btn=>btn.setAttribute('aria-pressed',String(btn===b)));groups.forEach((g,i)=>g.hidden=value!=='all'&&String(i)!==value);});filter.append(b);});
    q('.an-jobs-head',host).after(filter);const link=node('a','');link.href='#an-employer-sites';link.textContent=text('কোম্পানির সাইট','Employer sites');nav.insertBefore(link,nav.children[1]);return cards.length>0;
@@ -86,5 +88,6 @@
  }
  function report(){const stats=q('.stats-row');if(!stats)return;const links=node('nav','ui-launch-grid');links.setAttribute('aria-label','Student tools');links.innerHTML=launch('/profile.html','学',text('আমার শেখার ড্যাশবোর্ড','My learning dashboard'),text('নিজের অগ্রগতি ও প্রোফাইল','Your activity and profile'))+launch('/quiz.html','✓',text('অনুশীলন শুরু','Start practising'),text('JLPT কুইজ ও প্রস্তুতি','JLPT quizzes and preparation'))+launch('/cv-builder.html','CV',text('CV তৈরি','Build a CV'),text('জাপানে কাজের প্রস্তুতি','Prepare for work in Japan'));stats.after(links);}
  const boot=()=>({cv,student,admin,jobs,report}[document.body.dataset.workspaceUi]?.());
- if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
+ var start36=()=>{if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();};
+ if(window.AponarAppReady)window.AponarAppReady.then(start36);else start36();
 })();

@@ -51,6 +51,7 @@
     const code=(document.documentElement.dataset.language||localStorage.getItem(STORAGE_KEY)||'bn').toLowerCase();
     return I18N[code]?code:'en';
   };
+  const T=(s)=>window.AponarAppT?window.AponarAppT(s):s;
   const t=key=>Object.prototype.hasOwnProperty.call(I18N[languageCode()]||{},key)?I18N[languageCode()][key]:BASE[key]||key;
 
   function applyTranslations(){
@@ -322,6 +323,8 @@
   }
 
   async function boot(){
+    if(window.AponarAppReady)await window.AponarAppReady;
+    for(const k in BASE){if(typeof BASE[k]==='string')BASE[k]=T(BASE[k]);}
     bind();
     applyTranslations();
     // Never block the whole profile UI on network/activity requests.

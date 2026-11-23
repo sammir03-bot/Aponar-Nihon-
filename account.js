@@ -43,6 +43,7 @@
     remove(key){try{localStorage.removeItem(key)}catch(_){ }}
   };
 
+  const T=(s)=>window.AponarAppT?window.AponarAppT(s):s;
   async function getSession(){
     const {data,error}=await sb.auth.getSession();
     if(error) throw error;
@@ -127,7 +128,7 @@
 
   async function resendSignupEmail(email){
     const normalizedEmail=clean(email||storage.get('an_pending_verify_email'));
-    if(!normalizedEmail) throw new Error('Verification email address পাওয়া যায়নি।');
+    if(!normalizedEmail) throw new Error(T('Verification email address পাওয়া যায়নি।'));
     const {data,error}=await sb.auth.resend({
       type:'signup',
       email:normalizedEmail,
@@ -140,7 +141,7 @@
 
   async function requestPasswordReset(email){
     const normalizedEmail=clean(email);
-    if(!normalizedEmail) throw new Error('Email দিন।');
+    if(!normalizedEmail) throw new Error(T('Email দিন।'));
     const {data,error}=await sb.auth.resetPasswordForEmail(normalizedEmail,{
       redirectTo:resetUrl()
     });
@@ -246,7 +247,7 @@
     }
 
     if(!session) session=await waitForSession(4500);
-    if(!session) throw new Error('Verification linkটি invalid বা expire হয়ে গেছে। নতুন verification email পাঠান।');
+    if(!session) throw new Error(T('Verification linkটি invalid বা expire হয়ে গেছে। নতুন verification email পাঠান।'));
 
     // Email verification itself must not be reported as failed just because
     // profile initialization is temporarily unavailable.

@@ -3,6 +3,7 @@
   const INSTALL_ID='anSmartInstallCard';
   let deferredInstallPrompt=null;
 
+  function T(s) { return window.AponarAppT ? window.AponarAppT(s) : s; }
   function addStyles(){
     if(document.getElementById('anAccountWidgetStyles'))return;
     const style=document.createElement('style');
@@ -52,8 +53,8 @@
       const guide=grid.querySelector('a[href="#guide"]');
       const items=[
         {key:'grammar-vs',cls:'grammar-vs',href:'/grammar-vs.html',icon:'fa-code-compare',title:'Grammar VS',sub:'N5 · N4 · N3'},
-        {key:'muslim-japan',cls:'muslim-japan',href:'/muslim-japan.html',icon:'fa-mosque',title:'Muslim Japan',sub:'নামাজ · হালাল'},
-        {key:'money-bd',cls:'money-bd',href:'/jpy-bdt-remittance.html',icon:'fa-money-bill-transfer',title:'JPY ↔ BDT',sub:'রেট · রেমিট্যান্স'}
+        {key:'muslim-japan',cls:'muslim-japan',href:'/muslim-japan.html',icon:'fa-mosque',title:'Muslim Japan',sub:T('নামাজ · হালাল')},
+        {key:'money-bd',cls:'money-bd',href:'/jpy-bdt-remittance.html',icon:'fa-money-bill-transfer',title:'JPY ↔ BDT',sub:T('রেট · রেমিট্যান্স')}
       ];
       items.forEach(x=>{
         if(grid.querySelector(`[data-tool="${x.key}"]`))return;
@@ -113,12 +114,12 @@
 
   function isStandalone(){return window.matchMedia?.('(display-mode: standalone)').matches || window.navigator.standalone===true}
   function recentlyDismissed(){try{const at=Number(localStorage.getItem('anInstallDismissedAt')||0);return at&&Date.now()-at<7*24*60*60*1000}catch(_){return false}}
-  function installMessage(note){if(!note)return;note.textContent=/iphone|ipad|ipod/i.test(navigator.userAgent)?'Safari-এর Share বাটন চাপুন → “Add to Home Screen” নির্বাচন করুন।':'Browser menu (⋮) খুলে “Install app” অথবা “Add to Home screen” নির্বাচন করুন।';note.classList.add('show')}
+  function installMessage(note){if(!note)return;note.textContent=/iphone|ipad|ipod/i.test(navigator.userAgent)?T('Safari-এর Share বাটন চাপুন → “Add to Home Screen” নির্বাচন করুন।'):T('Browser menu (⋮) খুলে “Install app” অথবা “Add to Home screen” নির্বাচন করুন।');note.classList.add('show')}
   function mountInstallCard(){
     if(isStandalone()||recentlyDismissed()||document.getElementById(INSTALL_ID))return;
     if(!/^\/$|\/index\.html$/i.test(location.pathname))return;
     const card=document.createElement('section');card.id=INSTALL_ID;card.setAttribute('aria-label','Aponar Nihon app install');
-    card.innerHTML=`<div class="an-install-logo"><img src="/logo.png" alt="আপনার নিহোন"></div><div class="an-install-copy"><strong>আপনার নিহোন App ইনস্টল করুন</strong><span>Play Store ছাড়াই ফোনের Home Screen থেকে অ্যাপের মতো দ্রুত ব্যবহার করুন।</span></div><div class="an-install-art" aria-hidden="true"><span class="an-install-sun"></span><span class="an-install-mountain">🗻</span></div><button class="an-install-btn" type="button">Install করুন</button><button class="an-install-close" type="button" aria-label="Install banner বন্ধ করুন">×</button><div class="an-install-note" role="status"></div>`;
+    card.innerHTML=T(`<div class="an-install-logo"><img src="/logo.png" alt="আপনার নিহোন"></div><div class="an-install-copy"><strong>আপনার নিহোন App ইনস্টল করুন</strong><span>Play Store ছাড়াই ফোনের Home Screen থেকে অ্যাপের মতো দ্রুত ব্যবহার করুন।</span></div><div class="an-install-art" aria-hidden="true"><span class="an-install-sun"></span><span class="an-install-mountain">🗻</span></div><button class="an-install-btn" type="button">Install করুন</button><button class="an-install-close" type="button" aria-label="Install banner বন্ধ করুন">×</button><div class="an-install-note" role="status"></div>`);
     const tools=document.querySelector('.app-tools-card');const home=document.querySelector('.app-home-screen,main');if(tools?.parentNode)tools.parentNode.insertBefore(card,tools);else if(home)home.prepend(card);else document.body.appendChild(card);
     const installBtn=card.querySelector('.an-install-btn'),closeBtn=card.querySelector('.an-install-close'),note=card.querySelector('.an-install-note');
     installBtn?.addEventListener('click',async()=>{if(deferredInstallPrompt){try{deferredInstallPrompt.prompt();const choice=await deferredInstallPrompt.userChoice;if(choice?.outcome==='accepted')card.remove();deferredInstallPrompt=null}catch(_){installMessage(note)}}else installMessage(note)});
@@ -128,5 +129,6 @@
   window.addEventListener('appinstalled',()=>{deferredInstallPrompt=null;document.getElementById(INSTALL_ID)?.remove();try{localStorage.removeItem('anInstallDismissedAt')}catch(_){ }});
   function boot(){addStyles();updateBottomNav();mountSuperFeatures();setTimeout(mountSuperFeatures,450);setTimeout(mountSuperFeatures,1500);setTimeout(()=>renderAccount().catch(()=>{}),80);setTimeout(()=>renderAccount().catch(()=>{}),650);setTimeout(()=>renderAccount().catch(()=>{}),1600);setTimeout(mountInstallCard,180);setTimeout(mountInstallCard,1200)}
   window.addEventListener('an-auth-changed',()=>renderAccount().catch(()=>{}));window.addEventListener('an-profile-updated',()=>renderAccount().catch(()=>{}));
-  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
+  var start36=function(){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();};
+  if(window.AponarAppReady)window.AponarAppReady.then(start36);else start36();
 })();

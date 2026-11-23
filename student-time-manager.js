@@ -23,14 +23,16 @@
   const addDays=(date,n)=>{const d=new Date(date+'T12:00:00+09:00');d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10)};
   const monthOf=d=>d.slice(0,7);
   const fmtHours=h=>`${(Math.round(h*100)/100).toFixed(2)}h`;
+  const T=s=>window.AponarAppT?window.AponarAppT(s):s;
   const dayLabel=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
   const monthDay=d=>{const [,m,day]=d.split('-');return `${+m}/${+day}`};
 
   function findTracker(){return [...document.querySelectorAll('#toolkit .card')].find(c=>/28-hour Work Tracker/i.test(c.querySelector('h3')?.textContent||''));}
+  const start36=()=>{
   const card=findTracker();
   if(!card)return;
   card.classList.add('ptm-card');
-  card.innerHTML=`
+  card.innerHTML=T(`
     <div class="ptm-hero">
       <div class="ptm-title"><div class="ptm-logo">⏱️</div><div><h3>Part-time Time Manager</h3><p>কাজ শুরু–শেষ, break, weekly hours ও shift history</p></div></div>
       <div class="ptm-mode"><select id="workMode"><option value="normal">School term · 週28時間</option><option value="vacation">Official long vacation · 1日8時間</option></select></div>
@@ -66,7 +68,7 @@
       <div id="workSummary" class="result"></div>
       <div class="ptm-history"><div class="ptm-section-title"><b>Shift history</b><span id="ptmHistoryCount"></span></div><div id="shiftList"></div></div>
       <div class="official"><b>নোট:</b> এই tool আপনার কাজের সময় গুছিয়ে রাখার সহায়ক। নিজের permission/কাজের শর্ত অনুযায়ী limit যাচাই করুন।</div>
-    </div>`;
+    </div>`);
 
   const mode=$('workMode');
   mode.value=localStorage.getItem(MODE_KEY)||'normal';
@@ -83,7 +85,7 @@
 
   window.addShift=function(){
     const date=$('shiftDate').value,start=$('shiftStart').value,end=$('shiftEnd').value;
-    if(!date||!start||!end){alert('Date, start, end দিন।');return;}
+    if(!date||!start||!end){alert(T('Date, start, end দিন।'));return;}
     const br=Math.max(0,+$('shiftBreak').value||0);
     addShiftRecord({id:Date.now(),date,job:$('shiftJob').value.trim()||'Part-time',start,end,break:br,h:paidHours(start,end,br)});
     $('shiftStart').value='';$('shiftEnd').value='';$('shiftBreak').value='0';
@@ -91,7 +93,7 @@
   $('ptmManualAdd').onclick=window.addShift;
 
   window.delShift=async function(id){
-    if(!await window.AponarI18nContent.confirm('এই shift মুছবেন?'))return;
+    if(!await window.AponarI18nContent.confirm(T('এই shift মুছবেন?')))return;
     setShifts(getShifts().filter(x=>x.id!==id));renderShifts();
   };
 
@@ -116,10 +118,10 @@
   function renderActive(){
     const a=active(),status=$('ptmStatus');
     $('ptmStart').disabled=!!a;$('ptmStop').disabled=!a;$('ptmBreak').disabled=!a||!!a?.breakStartedAt;$('ptmResume').disabled=!a||!a?.breakStartedAt;
-    if(!a){status.className='ptm-status';status.textContent='Ready';$('ptmLiveInfo').textContent='কাজ শুরু করলে সময় automatic save হবে। Browser বন্ধ করলেও active shift থাকবে।';return;}
+    if(!a){status.className='ptm-status';status.textContent='Ready';$('ptmLiveInfo').textContent=T('কাজ শুরু করলে সময় automatic save হবে। Browser বন্ধ করলেও active shift থাকবে।');return;}
     const breaking=!!a.breakStartedAt;status.className='ptm-status '+(breaking?'break':'live');status.textContent=breaking?'On break':'Working';
     const gross=(Date.now()-a.startedAt)/3600000;let br=(+a.break||0);if(a.breakStartedAt)br+=(Date.now()-a.breakStartedAt)/60000;const paid=Math.max(0,gross-br/60);
-    $('ptmLiveInfo').innerHTML=`<b>${esc(a.job)}</b> · শুরু ${a.start} · ${breaking?'Break চলছে · ':''}বর্তমান paid time <b>${fmtHours(paid)}</b> · break ${Math.max(0,Math.round(br))}m`;
+    $('ptmLiveInfo').innerHTML=`<b>${esc(a.job)}</b>${T(" · শুরু ")}${a.start} · ${breaking?T('Break চলছে · '):''}${T("বর্তমান paid time ")}<b>${fmtHours(paid)}</b> · break ${Math.max(0,Math.round(br))}m`;
   }
 
   function currentWeekStats(list){
@@ -137,14 +139,16 @@
     $('ptmLimitNote').textContent=mode.value==='normal'?`Week ${fmtHours(wh)} / 28.00h`:`Today ${fmtHours(todayH)} / 8.00h`;
     const over=(mode.value==='normal'?wh>28:todayH>8),near=(mode.value==='normal'?wh>=24:todayH>=7);
     $('workSummary').className='result '+(over?'danger':near?'warn':'ok');
-    $('workSummary').innerHTML=over?`⚠️ Limit-এর ওপরে: <b>${fmtHours(mode.value==='normal'?wh:todayH)}</b>`:near?`⚠️ Limit-এর কাছাকাছি · বাকি <b>${fmtHours(remain)}</b>`:`✓ এখন পর্যন্ত বাকি <b>${fmtHours(remain)}</b>`;
+    $('workSummary').innerHTML=over?`${T("⚠️ Limit-এর ওপরে: ")}<b>${fmtHours(mode.value==='normal'?wh:todayH)}</b>`:near?`${T("⚠️ Limit-এর কাছাকাছি · বাকি ")}<b>${fmtHours(remain)}</b>`:`${T("✓ এখন পর্যন্ত বাকি ")}<b>${fmtHours(remain)}</b>`;
     $('ptmWeekRange').textContent=`${monthDay(ws.mon)} – ${monthDay(ws.sun)}`;
     $('ptmDays').innerHTML=dayLabel.map((name,i)=>{const d=addDays(ws.mon,i);const h=list.filter(x=>x.date===d).reduce((s,x)=>s+(+x.h||0),0)+(d===t?activePaidForDate(t):0);return `<div class="ptm-day ${d===t?'today':''}"><span>${name}</span><b>${h?h.toFixed(1):'—'}</b></div>`}).join('');
     const latest=list.slice().sort((a,b)=>(b.date+b.start).localeCompare(a.date+a.start));$('ptmHistoryCount').textContent=`${latest.length} shifts`;
-    $('shiftList').innerHTML=latest.length?latest.slice(0,40).map(x=>{const d=new Date(x.date+'T12:00:00+09:00');const wd=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Tokyo',weekday:'short'}).format(d);return `<div class="ptm-shift"><div class="ptm-datebox">${+x.date.slice(8,10)}<small>${wd}</small></div><div class="ptm-shift-main"><b>${esc(x.job||'Part-time')}</b><small>${x.date} · ${esc(x.start)}–${esc(x.end)} · break ${Math.round(+x.break||0)}m</small></div><div><div class="ptm-hours">${fmtHours(+x.h||0)}</div><button class="ptm-del" onclick="delShift(${Number(x.id)})">×</button></div></div>`}).join(''):'<div class="ptm-empty">এখনও কোনো shift নেই। “কাজ শুরু” চাপুন বা manual shift যোগ করুন।</div>';
+    $('shiftList').innerHTML=latest.length?latest.slice(0,40).map(x=>{const d=new Date(x.date+'T12:00:00+09:00');const wd=new Intl.DateTimeFormat('en-US',{timeZone:'Asia/Tokyo',weekday:'short'}).format(d);return `<div class="ptm-shift"><div class="ptm-datebox">${+x.date.slice(8,10)}<small>${wd}</small></div><div class="ptm-shift-main"><b>${esc(x.job||'Part-time')}</b><small>${x.date} · ${esc(x.start)}–${esc(x.end)} · break ${Math.round(+x.break||0)}m</small></div><div><div class="ptm-hours">${fmtHours(+x.h||0)}</div><button class="ptm-del" onclick="delShift(${Number(x.id)})">×</button></div></div>`}).join(''):T('<div class="ptm-empty">এখনও কোনো shift নেই। “কাজ শুরু” চাপুন বা manual shift যোগ করুন।</div>');
     if($('salaryHours'))$('salaryHours').value=Math.round(monthH*100)/100;
   };
 
   function tick(){const n=jpParts();$('ptmNow').textContent=n.sec;$('ptmNowDate').textContent=`${n.date} · ${n.weekday} · Japan time`;renderActive();if(active())renderShifts();}
   tick();renderShifts();setInterval(tick,1000);
+  };
+  if(window.AponarAppReady)window.AponarAppReady.then(start36);else start36();
 })();

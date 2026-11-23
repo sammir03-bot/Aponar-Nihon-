@@ -1077,3 +1077,32 @@
     };
   } catch (e) { /* the Run 34 hook must never break a page */ }
 })();
+
+  // ---- Run 36: remaining app-JS chrome (profile/auth, halal, muslim map, misc) ----
+  (function () {
+    try {
+      var lang = (window.AponarDynLang && AponarDynLang()) || document.documentElement.lang || 'bn';
+      if (!lang || lang === 'bn') return;
+      window.AponarAppLang = lang;
+      var data = null;
+      var src = '';
+      try { src = document.currentScript && document.currentScript.src ? document.currentScript.src.replace(/assets\/js\/i18n\.js.*$/, 'assets/i18n/data/app.' + lang + '.js') : ''; } catch (e) {}
+      if (!src) src = '/assets/i18n/data/app.' + lang + '.js';
+      window.AponarAppReady = new Promise(function (resolve) {
+        var s = document.createElement('script');
+        s.src = src; s.async = true;
+        s.onload = function () { data = window.AponarAppData || null; resolve(data); };
+        s.onerror = function () { resolve(null); };
+        (document.head || document.documentElement).appendChild(s);
+      });
+      window.AponarAppT = function (s) {
+        try {
+          if (data && typeof s === 'string') {
+            var k = s.normalize('NFC');
+            if (Object.prototype.hasOwnProperty.call(data, k)) return data[k];
+          }
+        } catch (e) {}
+        return s;
+      };
+    } catch (e) {}
+  })();

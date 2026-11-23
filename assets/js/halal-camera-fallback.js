@@ -14,6 +14,7 @@
 
   function $(id) { return document.getElementById(id); }
 
+  var T = function (s) { return window.AponarAppT ? window.AponarAppT(s) : s; };
   function setStatus(message) {
     var node = $("scanStatus");
     if (node) node.textContent = message;
@@ -42,7 +43,7 @@
       video.hidden = true;
     }
     if (empty) empty.hidden = false;
-    if (start) start.innerHTML = '<i class="fa-solid fa-camera"></i> ক্যামেরা দিয়ে স্ক্যান';
+    if (start) start.innerHTML = T('<i class="fa-solid fa-camera"></i> ক্যামেরা দিয়ে স্ক্যান');
     if (message) setStatus(message);
   }
 
@@ -57,24 +58,24 @@
       try { stream.getTracks().forEach(function (track) { track.stop(); }); } catch (_error) {}
     }
     stream = null;
-    resetUi(message || "স্ক্যান বন্ধ করা হয়েছে");
+    resetUi(message || T("স্ক্যান বন্ধ করা হয়েছে"));
   }
 
   function cameraErrorMessage(error) {
     var name = error && error.name ? error.name : "";
     if (name === "NotAllowedError" || name === "SecurityError") {
-      return "Camera permission পাওয়া যায়নি। Address bar-এর site settings থেকে Camera → Allow করুন।";
+      return T("Camera permission পাওয়া যায়নি। Address bar-এর site settings থেকে Camera → Allow করুন।");
     }
     if (name === "NotFoundError" || name === "DevicesNotFoundError") {
-      return "এই ডিভাইসে ব্যবহারযোগ্য camera পাওয়া যায়নি।";
+      return T("এই ডিভাইসে ব্যবহারযোগ্য camera পাওয়া যায়নি।");
     }
     if (name === "NotReadableError" || name === "TrackStartError") {
-      return "Camera অন্য app ব্যবহার করছে। অন্য camera app বন্ধ করে আবার চেষ্টা করুন।";
+      return T("Camera অন্য app ব্যবহার করছে। অন্য camera app বন্ধ করে আবার চেষ্টা করুন।");
     }
     if (name === "OverconstrainedError") {
-      return "Camera setting মিলছে না। আবার চেষ্টা করুন।";
+      return T("Camera setting মিলছে না। আবার চেষ্টা করুন।");
     }
-    return "Camera চালু করা যায়নি। আবার চেষ্টা করুন অথবা barcode number লিখুন।";
+    return T("Camera চালু করা যায়নি। আবার চেষ্টা করুন অথবা barcode number লিখুন।");
   }
 
   function loadZXing() {
@@ -91,19 +92,19 @@
     }
 
     if (active) {
-      stopFallback("স্ক্যান বন্ধ করা হয়েছে");
+      stopFallback(T("স্ক্যান বন্ধ করা হয়েছে"));
       return;
     }
 
     if (!window.isSecureContext) {
-      setStatus("Camera scan-এর জন্য HTTPS দরকার");
-      toast("Secure HTTPS connection ছাড়া camera permission পাওয়া যাবে না।");
+      setStatus(T("Camera scan-এর জন্য HTTPS দরকার"));
+      toast(T("Secure HTTPS connection ছাড়া camera permission পাওয়া যাবে না।"));
       return;
     }
 
     if (!navigator.mediaDevices || typeof navigator.mediaDevices.getUserMedia !== "function") {
-      setStatus("এই browser camera access support করছে না");
-      toast("Browser camera access support করছে না।");
+      setStatus(T("এই browser camera access support করছে না"));
+      toast(T("Browser camera access support করছে না।"));
       return;
     }
 
@@ -113,7 +114,7 @@
     if (!video) return;
 
     try {
-      setStatus("Camera permission দিন…");
+      setStatus(T("Camera permission দিন…"));
 
       // Ask for camera permission immediately from the user's click. This is
       // intentionally done before loading the fallback decoder.
@@ -131,8 +132,8 @@
       if (empty) empty.hidden = true;
       await video.play();
       active = true;
-      if (start) start.innerHTML = '<i class="fa-solid fa-stop"></i> স্ক্যান বন্ধ করুন';
-      setStatus("Camera চালু হয়েছে — barcode frame-এর মাঝখানে ধরুন");
+      if (start) start.innerHTML = T('<i class="fa-solid fa-stop"></i> স্ক্যান বন্ধ করুন');
+      setStatus(T("Camera চালু হয়েছে — barcode frame-এর মাঝখানে ধরুন"));
 
       var ZXingBrowser = await loadZXing();
       reader = new ZXingBrowser.BrowserMultiFormatReader(undefined, {
@@ -152,7 +153,7 @@
         finishing = true;
         var input = $("barcodeInput");
         if (input) input.value = value;
-        setStatus("Barcode পাওয়া গেছে — product check হচ্ছে…");
+        setStatus(T("Barcode পাওয়া গেছে — product check হচ্ছে…"));
         if (navigator.vibrate) navigator.vibrate(60);
 
         // Stop camera before starting the product lookup.
@@ -165,7 +166,7 @@
         }
         stream = null;
         active = false;
-        resetUi("Barcode পাওয়া গেছে — product check হচ্ছে…");
+        resetUi(T("Barcode পাওয়া গেছে — product check হচ্ছে…"));
 
         var form = $("barcodeForm");
         if (form) {
@@ -184,7 +185,7 @@
   async function decodeImageFallback(file) {
     if (!file) return;
     try {
-      setStatus("ছবির barcode পড়া হচ্ছে…");
+      setStatus(T("ছবির barcode পড়া হচ্ছে…"));
       var ZXingBrowser = await loadZXing();
       var imageReader = new ZXingBrowser.BrowserMultiFormatReader();
       var url = URL.createObjectURL(file);
@@ -201,15 +202,15 @@
       if (!value) throw new Error("empty barcode");
       var input = $("barcodeInput");
       if (input) input.value = value;
-      setStatus("Barcode পাওয়া গেছে — product check হচ্ছে…");
+      setStatus(T("Barcode পাওয়া গেছে — product check হচ্ছে…"));
       var form = $("barcodeForm");
       if (form) {
         if (typeof form.requestSubmit === "function") form.requestSubmit();
         else form.dispatchEvent(new Event("submit", { bubbles: true, cancelable: true }));
       }
     } catch (_error) {
-      setStatus("ছবি থেকে barcode পড়া যায়নি");
-      toast("Barcode পরিষ্কার ও সোজা রেখে আবার ছবি তুলুন।");
+      setStatus(T("ছবি থেকে barcode পড়া যায়নি"));
+      toast(T("Barcode পরিষ্কার ও সোজা রেখে আবার ছবি তুলুন।"));
     } finally {
       var inputFile = $("barcodeImageInput");
       if (inputFile) inputFile.value = "";
@@ -231,11 +232,10 @@
 
   window.addEventListener("pagehide", function () { stopFallback(); });
 
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", function () {
-      setStatus("Camera scan প্রস্তুত — button চাপলে permission চাইবে");
-    }, { once: true });
-  } else {
-    setStatus("Camera scan প্রস্তুত — button চাপলে permission চাইবে");
-  }
+  var ready36 = function () { setStatus(T("Camera scan প্রস্তুত — button চাপলে permission চাইবে")); };
+  var launch36 = function () {
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", ready36, { once: true });
+    else ready36();
+  };
+  if (window.AponarAppReady) window.AponarAppReady.then(launch36); else launch36();
 })();

@@ -1,4 +1,5 @@
 (()=>{
+    const T = (s) => window.AponarAppT ? window.AponarAppT(s) : s;
   const HOME_CARD_BN={
     '/n5.html':['JLPT N5','বেসিক কোর্স'],
     '/n4.html':['JLPT N4','পরবর্তী ধাপ'],
@@ -65,9 +66,9 @@
     const grid=document.querySelector('.app-tools-grid');
     if(!grid)return;
     let flash=grid.querySelector('[data-kanji-flashcards-entry]');
-    if(!flash){flash=document.createElement('a');flash.className='app-tool app-tool-flashcards';flash.href='/kanji-flashcards.html';flash.dataset.kanjiFlashcardsEntry='1';flash.dataset.label='Kanji Flashcards';flash.dataset.search='kanji flashcards flash card n5 n4 n3 漢字 কাঞ্জি ফ্ল্যাশকার্ড review spaced repetition weak ভুল';flash.dataset.searchIcon='fa-layer-group';flash.innerHTML='<span class="app-tool-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><b>Kanji Flashcards</b><small>N5 · N4 · N3 স্মার্ট রিভিউ</small>'}
+    if(!flash){flash=document.createElement('a');flash.className='app-tool app-tool-flashcards';flash.href='/kanji-flashcards.html';flash.dataset.kanjiFlashcardsEntry='1';flash.dataset.label='Kanji Flashcards';flash.dataset.search=T('kanji flashcards flash card n5 n4 n3 漢字 কাঞ্জি ফ্ল্যাশকার্ড review spaced repetition weak ভুল');flash.dataset.searchIcon='fa-layer-group';flash.innerHTML=T('<span class="app-tool-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><b>Kanji Flashcards</b><small>N5 · N4 · N3 স্মার্ট রিভিউ</small>')}
     let revision=grid.querySelector('[data-full-revision-entry]');
-    if(!revision){revision=document.createElement('a');revision.className='app-tool app-tool-revision';revision.href='/revision.html';revision.dataset.fullRevisionEntry='1';revision.dataset.label='Full Revision';revision.dataset.search='full revision jlpt n5 n4 n3 exam grammar vocabulary kanji reading listening mock quick weak রিভিশন পরীক্ষা';revision.dataset.searchIcon='fa-rotate';revision.innerHTML='<span class="app-tool-icon"><i class="fa-solid fa-rotate" aria-hidden="true"></i></span><b>Full Revision</b><small>পরীক্ষার আগে সব একসাথে</small>'}
+    if(!revision){revision=document.createElement('a');revision.className='app-tool app-tool-revision';revision.href='/revision.html';revision.dataset.fullRevisionEntry='1';revision.dataset.label='Full Revision';revision.dataset.search=T('full revision jlpt n5 n4 n3 exam grammar vocabulary kanji reading listening mock quick weak রিভিশন পরীক্ষা');revision.dataset.searchIcon='fa-rotate';revision.innerHTML=T('<span class="app-tool-icon"><i class="fa-solid fa-rotate" aria-hidden="true"></i></span><b>Full Revision</b><small>পরীক্ষার আগে সব একসাথে</small>')}
     const n3=grid.querySelector('a[href="/n3.html"]');
     if(n3&&n3.parentNode===grid){n3.insertAdjacentElement('afterend',revision);n3.insertAdjacentElement('afterend',flash)}else{grid.prepend(revision);grid.prepend(flash)}
   }
@@ -81,9 +82,9 @@
     card.href='/listening-lab.html';
     card.dataset.listeningLabEntry='1';
     card.dataset.label='Listening Lab';
-    card.dataset.search='listening lab jlpt n5 n4 n3 audio transcript script furigana vocabulary grammar clue listening weak শুনে উত্তর লিসিনিং স্ক্রিপ্ট';
+    card.dataset.search=T('listening lab jlpt n5 n4 n3 audio transcript script furigana vocabulary grammar clue listening weak শুনে উত্তর লিসিনিং স্ক্রিপ্ট');
     card.dataset.searchIcon='fa-headphones';
-    card.innerHTML='<span class="app-tool-icon"><i class="fa-solid fa-headphones" aria-hidden="true"></i></span><b>Listening Lab</b><small>শুনুন · উত্তর দিন · ভেঙে শিখুন</small>';
+    card.innerHTML=T('<span class="app-tool-icon"><i class="fa-solid fa-headphones" aria-hidden="true"></i></span><b>Listening Lab</b><small>শুনুন · উত্তর দিন · ভেঙে শিখুন</small>');
     const revision=grid.querySelector('[data-full-revision-entry]');
     if(revision&&revision.parentNode===grid)revision.insertAdjacentElement('afterend',card);else grid.prepend(card);
   }
@@ -93,7 +94,7 @@
     const grid=document.querySelector('.app-tools-grid');
     if(!grid||grid.querySelector('[data-jobs-in-japan-entry]'))return;
     const card=document.createElement('a');
-    card.className='app-tool app-tool-jobs';card.href='/jobs-in-japan.html';card.dataset.jobsInJapanEntry='1';card.dataset.label='জাপানে চাকরি';card.dataset.search='jobs japan baito part time townwork baitoru চাকরি কাজ আবেদন apply interview convenience restaurant';card.dataset.searchIcon='fa-briefcase';card.innerHTML='<span class="app-tool-icon tone-teal"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span><b>Jobs in Japan</b><small>Find Jobs · Learn to Apply</small>';
+    card.className='app-tool app-tool-jobs';card.href='/jobs-in-japan.html';card.dataset.jobsInJapanEntry='1';card.dataset.label=T('জাপানে চাকরি');card.dataset.search=T('jobs japan baito part time townwork baitoru চাকরি কাজ আবেদন apply interview convenience restaurant');card.dataset.searchIcon='fa-briefcase';card.innerHTML='<span class="app-tool-icon tone-teal"><i class="fa-solid fa-briefcase" aria-hidden="true"></i></span><b>Jobs in Japan</b><small>Find Jobs · Learn to Apply</small>';
     const japanLife=grid.querySelector('a[href="/japan-life.html"]');
     if(japanLife&&japanLife.parentNode===grid)japanLife.insertAdjacentElement('afterend',card);else grid.prepend(card);
   }
@@ -104,6 +105,8 @@
   async function mountHomeDailyNews(){if(!document.body||document.body.dataset.page!=='home')return;ensureStylesheet('an-daily-news-css','/assets/css/daily-news.css?v=20260904.2');if(!window.AponarDailyNews)await ensureScript('an-daily-news-js','/assets/js/daily-news.js?v=20260904.2');if(window.AponarDailyNews&&typeof window.AponarDailyNews.mountHome==='function')window.AponarDailyNews.mountHome()}
 
   async function boot(){
+    if(window.AponarAppReady)await window.AponarAppReady;
+    for(const k in HOME_CARD_BN){const a=HOME_CARD_BN[k];for(let i=0;i<a.length;i++)a[i]=T(a[i]);}
     applyMobileLayoutFix();mountRevisionCards();mountListeningLabEntry();mountJobsInJapanEntry();normalizeHalalScannerEntry();applyHomeCardLanguage();
     setTimeout(()=>{mountRevisionCards();mountListeningLabEntry();normalizeHalalScannerEntry();applyHomeCardLanguage()},0);
     loadJobsEnhancer();mountHomeDailyNews().catch(()=>{});

@@ -43,6 +43,7 @@
     });
   }
 
+  function T(s) { return window.AponarAppT ? window.AponarAppT(s) : s; }
   function setup() {
     const navs = [...document.querySelectorAll(selector)];
     if (!navs.length) return;
@@ -50,7 +51,7 @@
     navs.forEach(nav => {
       nav.classList.add('an-bottom-nav');
       nav.dataset.anBottomNav = 'true';
-      if (!nav.hasAttribute('aria-label')) nav.setAttribute('aria-label', document.documentElement.lang === 'bn' ? 'মূল নেভিগেশন' : 'Main navigation');
+      if (!nav.hasAttribute('aria-label')) nav.setAttribute('aria-label', window.AponarAppT ? T('মূল নেভিগেশন') : (document.documentElement.lang === 'bn' ? 'মূল নেভিগেশন' : 'Main navigation'));
       if (nav.tagName !== 'NAV') nav.setAttribute('role', 'navigation');
       markCurrent(nav);
     });
@@ -194,6 +195,6 @@
     updateViewport();
   }
 
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup, { once: true });
-  else setup();
+  var launch36 = function () { if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', setup, { once: true }); else setup(); };
+  if (window.AponarAppReady) window.AponarAppReady.then(launch36); else launch36();
 })();
