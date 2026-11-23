@@ -300,18 +300,60 @@ function injectGlobalActivity(html){
   return html;
 }
 
+/* Run 37 (2026-11-23): the seven Bengali fragments in the home
+   constants above, keyed by the language of the page being enhanced.
+   Five rows are the reviewed pack/DYN translations; বাজেট and তৈরি are
+   translated for this run. The bn row returns the constants above
+   unmodified, so Bengali behaviour is byte-identical to before. */
+const SW_HOME_FRAGMENTS = {
+  bn: { guide: "স্টাডি গাইড", roadmap: "শেখার রোডম্যাপ", library: "স্টাডি লাইব্রেরি", about: "আমাদের সম্পর্কে", tutor: "AI টিউটর", budget: "বাজেট", create: "তৈরি" },
+  en: { guide: "Study Guide", roadmap: "Learning Roadmap", library: "Study Library", about: "About Us", tutor: "AI Tutor", budget: "Budget", create: "Create" },
+  ja: { guide: "学習ガイド", roadmap: "学習ロードマップ", library: "学習ライブラリ", about: "当サイトについて", tutor: "AIチューター", budget: "予算", create: "作成" },
+  vi: { guide: "Hướng dẫn học tập", roadmap: "Lộ trình học tập", library: "Thư viện học tập", about: "Về chúng tôi", tutor: "AI Tutor", budget: "Ngân sách", create: "Tạo" },
+  ne: { guide: "अध्ययन मार्गदर्शन", roadmap: "सिकाइ रोडम्याप", library: "स्टडी लाइब्ररी", about: "हाम्रो बारेमा", tutor: "AI Tutor", budget: "बजेट", create: "बनाउनुहोस्" },
+  hi: { guide: "अध्ययन मार्गदर्शिका", roadmap: "सीखने का रोडमैप", library: "स्टडी लाइब्रेरी", about: "हमारे बारे में", tutor: "AI Tutor", budget: "बजट", create: "बनाएं" },
+  ur: { guide: "مطالعے کی رہنمائی", roadmap: "سیکھنے کا روڈ میپ", library: "اسٹڈی لائبریری", about: "ہمارے بارے میں", tutor: "AI Tutor", budget: "بجٹ", create: "بنائیں" },
+  my: { guide: "လေ့လာမှု လမ်းညွှန်", roadmap: "လေ့လာရေးလမ်းပြမြေပုံ", library: "လေ့လာရေးစာကြည့်တိုက်", about: "ကျွန်ုပ်တို့အကြောင်း", tutor: "AI Tutor", budget: "ဘတ်ဂျက်", create: "ဖန်တီးပါ" },
+  zh: { guide: "学习指南", roadmap: "学习路线图", library: "学习资料库", about: "关于我们", tutor: "AI Tutor", budget: "预算", create: "制作" },
+  si: { guide: "අධ්‍යයන මාර්ගෝපදේශය", roadmap: "ඉගෙනුම් මාර්ග සිතියම", library: "අධ්‍යයන පුස්තකාලය", about: "අපි ගැන", tutor: "AI Tutor", budget: "අයවැය", create: "සාදන්න" },
+  fil: { guide: "Gabay sa pag-aaral", roadmap: "Roadmap sa Pag-aaral", library: "Study Library", about: "Tungkol sa Amin", tutor: "AI Tutor", budget: "Budget", create: "Gumawa" }
+};
+function swFragmentsFor(lang) {
+  return Object.prototype.hasOwnProperty.call(SW_HOME_FRAGMENTS, lang)
+    ? SW_HOME_FRAGMENTS[lang] : SW_HOME_FRAGMENTS.bn;
+}
+function swSwap(template, from, to) {
+  return from === to ? template : template.split(from).join(to);
+}
+function swHomeCards(lang) {
+  const f = swFragmentsFor(lang);
+  if (f === SW_HOME_FRAGMENTS.bn) {
+    return { guide: GUIDE_MARKER, ebook: EBOOK_TOOL_CARD, student: STUDENT_TOOL_CARD, cv: CV_TOOL_CARD, about: NAV_ABOUT_MARKER, extra: NAV_EXTRA_ITEMS };
+  }
+  return {
+    guide: swSwap(swSwap(GUIDE_MARKER, "স্টাডি গাইড", f.guide), "শেখার রোডম্যাপ", f.roadmap),
+    ebook: swSwap(EBOOK_TOOL_CARD, "স্টাডি লাইব্রেরি", f.library),
+    student: swSwap(STUDENT_TOOL_CARD, "বাজেট", f.budget),
+    cv: swSwap(CV_TOOL_CARD, "তৈরি", f.create),
+    about: swSwap(NAV_ABOUT_MARKER, "আমাদের সম্পর্কে", f.about),
+    extra: swSwap(NAV_EXTRA_ITEMS, "AI টিউটর", f.tutor)
+  };
+}
+
 function injectHomeEnhancements(html){
-  if(!html.includes('data-tool="ebook-library"') && html.includes(GUIDE_MARKER)){
-    html = html.replace(GUIDE_MARKER,EBOOK_TOOL_CARD + GUIDE_MARKER);
+  const presetMatch = html.match(/data-language-preset="([a-z]{2,3})"/);
+  const CARDS = swHomeCards(presetMatch ? presetMatch[1] : "bn");
+  if(!html.includes('data-tool="ebook-library"') && html.includes(CARDS.guide)){
+    html = html.replace(CARDS.guide,CARDS.ebook + CARDS.guide);
   }
-  if(!html.includes('data-tool="student-toolkit"') && html.includes(GUIDE_MARKER)){
-    html = html.replace(GUIDE_MARKER,STUDENT_TOOL_CARD + GUIDE_MARKER);
+  if(!html.includes('data-tool="student-toolkit"') && html.includes(CARDS.guide)){
+    html = html.replace(CARDS.guide,CARDS.student + CARDS.guide);
   }
-  if(!html.includes('data-tool="cv-builder"') && html.includes(GUIDE_MARKER)){
-    html = html.replace(GUIDE_MARKER,CV_TOOL_CARD + GUIDE_MARKER);
+  if(!html.includes('data-tool="cv-builder"') && html.includes(CARDS.guide)){
+    html = html.replace(CARDS.guide,CARDS.cv + CARDS.guide);
   }
-  if(!html.includes('class="an-menu-extra"') && html.includes(NAV_ABOUT_MARKER)){
-    html = html.replace(NAV_ABOUT_MARKER,NAV_EXTRA_ITEMS + NAV_ABOUT_MARKER);
+  if(!html.includes('class="an-menu-extra"') && html.includes(CARDS.about)){
+    html = html.replace(CARDS.about,CARDS.extra + CARDS.about);
   }
   if(!html.includes('id="important-section-compact-v3"') && html.includes('</head>')){
     html = html.replace('</head>',COMPACT_HOME_STYLE + '\n' + MAZII_MENU_STYLE + '\n</head>');
