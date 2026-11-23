@@ -28,6 +28,19 @@ ENTITY_DECODE_PAGES = {
     "n4-grammar-lesson-41-real",
     "n4-grammar-lesson-42-real",
     "n4-grammar-lesson-43-real",
+    # Run 37 (2026-11-23): the Run 27 audit's entity-split residue, widened
+    # to exactly the pages carrying it — the JEJC "&copy;" footer on the
+    # four JEJC guides, the dashboard "&copy;" year, the terms intro
+    # (split at a bare "&"), and the part-time guide's "Q&A" line (split
+    # at a phantom-semicolon entityref). Nothing else changes: the gated
+    # whole-run attempt still requires an exact reviewed pack source.
+    "cost-of-studying-in-japan",
+    "japanese-language-course",
+    "part-time-job-in-japan",
+    "study-in-japan",
+    "dashboard",
+    "terms",
+    "japan-part-time-job-guide",
 }
 
 LANGUAGE_PATTERN = "|".join(
@@ -184,6 +197,27 @@ class _ReviewedTranslationParser(HTMLParser):
         self._replace(raw_text, source, target)
         return True
 
+    def _try_whole_run_gated(self, raw_text: str, decoded_text: str) -> bool:
+        """Run 37: whole-run match for ENTITY_DECODE_PAGES runs that the
+        parser split into several chunks. Unlike _try_whole_run, a
+        brand-bearing source may match — but only when brand preservation
+        keeps every brand form of the source verbatim in the result (the
+        terms intro keeps "আপনার নিহোন" in all 10 reviewed targets) and
+        the result is not an identity translation."""
+        source = _normalize(decoded_text)
+        if not source:
+            return False
+        target = self.entries.get(source)
+        if target is None:
+            return False
+        preserved = _preserve_brand_names(source, target)
+        if preserved == source:
+            return False
+        if any(original not in preserved for original in BRAND_RE.findall(source)):
+            return False
+        self._replace(raw_text, source, target)
+        return True
+
     def _flush_run(self) -> None:
         if not self._run:
             return
@@ -201,9 +235,34 @@ class _ReviewedTranslationParser(HTMLParser):
                     return
             self.parts.extend(raw for raw, _decoded, _is_data in run)
             return
-        if self.decode_entities and any(not is_data for _raw, _dec, is_data in run):
+        if self.decode_entities and (
+            len(run) > 1 or any(not is_data for _raw, _dec, is_data in run)
+        ):
             decoded_text = "".join(decoded for _raw, decoded, _is_data in run)
-            if self._try_whole_run(raw_text, decoded_text):
+            if any(not is_data for _raw, _dec, is_data in run):
+                # Entity-split run (Run 20 class): original brand-rejecting
+                # whole-run match, then a second attempt whose decoded form
+                # drops the phantom ";" the parser appends to an unknown
+                # entity reference ("Q&A" is buffered as "Q" + "&A;").
+                if self._try_whole_run(raw_text, decoded_text):
+                    return
+                corrected = "".join(
+                    raw[:-1]
+                    if (
+                        not is_data
+                        and decoded == raw
+                        and raw.startswith("&")
+                        and raw.endswith(";")
+                    )
+                    else decoded
+                    for raw, decoded, is_data in run
+                )
+                if corrected != decoded_text and self._try_whole_run(
+                    raw_text, corrected
+                ):
+                    return
+            elif self._try_whole_run_gated(raw_text, decoded_text):
+                # All-data run split at a bare "&" (Run 37: terms intro).
                 return
         # Legacy per-chunk behaviour, unchanged.
         for raw, _decoded, is_data in run:
@@ -401,9 +460,29 @@ def _truncate_description(value: str, limit: int = 165) -> str:
 def _localize_metadata(document: str, language: str, entries: dict[str, str]) -> str:
     def replace_title(match: re.Match[str]) -> str:
         source_title = match.group(2)
-        title = source_title
+        # Run 37 (2026-11-23): mask brand spans before the substring loop.
+        # A short pack entry could match INSIDE the brand — the standalone
+        # "না" entry turned "আপনার নিহোন" into "আপNoর নিহোন" on the
+        # Vocabulary-lesson1 titles in all 10 languages. Brand spans of the
+        # title and of every entry source/target are masked with the same
+        # token, so entries still match across the brand, but no entry can
+        # ever replace inside it; the source title's own brand spellings
+        # are restored afterwards.
+        brand_token = "\x00BRAND\x00"
+        originals = BRAND_RE.findall(source_title)
+
+        def mask(value: str) -> str:
+            return BRAND_RE.sub(brand_token, value)
+
+        title = mask(source_title)
         for source, target in sorted(entries.items(), key=lambda item: len(item[0]), reverse=True):
-            title = title.replace(source, target)
+            title = title.replace(mask(source), mask(target))
+        if originals:
+            pieces = title.split(brand_token)
+            restored = pieces[0]
+            for index, piece in enumerate(pieces[1:]):
+                restored += originals[min(index, len(originals) - 1)] + piece
+            title = restored
         title = _preserve_brand_names(source_title, title)
         return f"{match.group(1)}{title}{match.group(3)}"
 
