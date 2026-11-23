@@ -41,6 +41,11 @@ ENTITY_DECODE_PAGES = {
     "dashboard",
     "terms",
     "japan-part-time-job-guide",
+    # UI FIX (2026-11-23): the N3 hub quartet-series-note's second line is
+    # split by "&nbsp;" references while its reviewed pack source (present
+    # in all 10 n3 packs) holds the decoded, normalized text — the exact
+    # Run 20/37 gap, on the one page the 2026-11-23 UI audit flagged.
+    "n3",
 }
 
 LANGUAGE_PATTERN = "|".join(
