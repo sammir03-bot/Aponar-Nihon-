@@ -1024,3 +1024,52 @@
     else start();
   } catch (e) { /* the Run 28 hook must never break a page */ }
 })();
+
+/* Run 34: mock/exam chrome + interview Q&A data (gated sidecars; bn is a strict no-op). */
+(function () {
+  try {
+    var lang = window.AponarDynLang ? window.AponarDynLang() : "bn";
+    if (!lang || lang === "bn") return;
+    var segs = location.pathname.split("/").filter(Boolean);
+    var stem = segs.length ? decodeURIComponent(segs[segs.length - 1]).replace(/\.html$/, "").toLowerCase() : "";
+    var STEMS = { "jlpt-exam": 1, "embassy-interview": 1, "part-time-interview": 1, "skype sheet": 1, "interview": 1 };
+    if (!STEMS[stem]) return;
+    window.AponarExamLang = lang;
+    var data = null, ivData = null, ivPromise = null;
+    window.AponarExamReady = new Promise(function (resolve) {
+      var s = document.createElement("script");
+      s.src = "/assets/i18n/data/exam." + lang + ".js";
+      s.onload = function () { data = window.AponarExamData || {}; resolve(); };
+      s.onerror = function () { data = {}; resolve(); };
+      document.head.appendChild(s);
+    });
+    window.AponarExamT = function (t) {
+      if (typeof t !== "string" || !data) return t;
+      var k = t.normalize("NFC");
+      return Object.prototype.hasOwnProperty.call(data, k) ? data[k] : t;
+    };
+    window.AponarInterviewApply = function (url, d) {
+      if (!d || typeof d !== "object") return Promise.resolve(d);
+      if (!ivPromise) {
+        ivPromise = fetch("/assets/i18n/data/interview." + lang + ".json").then(function (r) { return r.json(); }).then(function (j) { ivData = j || {}; }).catch(function () { ivData = {}; });
+      }
+      return ivPromise.then(function () {
+        var FIELDS = ["topic", "qBn", "qPronBn", "aBn", "aPronBn", "noteBn", "noteHtml"];
+        var apply = function (q) {
+          if (!q || typeof q !== "object") return;
+          for (var i = 0; i < FIELDS.length; i++) {
+            var v = q[FIELDS[i]];
+            if (typeof v === "string") {
+              var k = v.normalize("NFC");
+              if (Object.prototype.hasOwnProperty.call(ivData, k)) q[FIELDS[i]] = ivData[k];
+            }
+          }
+        };
+        if (Array.isArray(d)) d.forEach(apply);
+        else if (Array.isArray(d.questions)) d.questions.forEach(apply);
+        else apply(d);
+        return d;
+      });
+    };
+  } catch (e) { /* the Run 34 hook must never break a page */ }
+})();
