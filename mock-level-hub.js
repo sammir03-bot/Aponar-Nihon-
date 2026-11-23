@@ -17,6 +17,7 @@
     const response=await fetch('/assets/data/jtest4you/catalog.json?v=20261006.complete',{cache:'no-cache'});
     if(!response.ok)throw new Error(dynT('mh.loadFail'));
     const catalog=await response.json();
+    if(window.AponarQbApply)await window.AponarQbApply('/assets/data/jtest4you/catalog.json',catalog);
     if(catalog.version!==9)throw new Error(dynT('mh.updating'));
     const c=catalog.levels[level],count=c.counts.reduce((a,b)=>a+b,0),time=c.times.reduce((a,b)=>a+b,0);
     document.title=`JLPT ${level.toUpperCase()} Mock Test | আপনার নিহোন`;
