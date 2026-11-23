@@ -671,3 +671,47 @@ html[lang="ur"] nav.bottom > a { line-height: 2; }
    frame (same width expression as .scan-frame) in every language. */
 .camera-empty { width: min(76%, 320px); max-width: 320px; padding: 10px 6px; }
 .camera-empty span { overflow-wrap: break-word; }
+
+/* ===== CV FIX 2026-11-24 (CV Builder walkthrough fixes #1–#4) ===== */
+
+/* #1/#2: the CV preview documents are Japanese JIS forms — LTR by nature.
+   On the RTL Urdu page the 210mm .page boxes are laid out from the right,
+   which pushes the fit()-scaled preview off-screen (measured x = -436)
+   and mirror-flips the document layout (title/photo swap), in print too.
+   Isolate the paper area's direction so the documents render in the
+   standard JIS layout; the form chrome around it stays RTL. Scoped to ur
+   (the only RTL language); bn/en already compute direction: ltr here, so
+   their rendering is unchanged. Applies to print as well (not media-
+   scoped): the @media print rules only add display/transform handling,
+   so the printed/PDF document keeps the standard layout. */
+html[lang="ur"] #paperArea { direction: ltr; }
+
+/* #3: extend the UI FIX #4 Nastaliq line-height treatment to the CV
+   Builder form panel — PR #136 covered hubs/news/dock but not this form,
+   whose headings, step-help, notes and labels still struck through each
+   other in Urdu (measured .note line-height 23.4px @ 13px, line boxes
+   overlapping up to ~20px). Same ~2x line-height pattern as UI FIX #4. */
+html[lang="ur"] .hero-card p { line-height: 2.05; }
+html[lang="ur"] .form-panel .panel-head h2 { line-height: 2; }
+html[lang="ur"] .form-panel .panel-head small { line-height: 1.95; }
+html[lang="ur"] .form-panel .note,
+html[lang="ur"] .form-panel .ui-step-help,
+html[lang="ur"] .form-panel .cv-v6-intro,
+html[lang="ur"] .form-panel .cv-history-guide,
+html[lang="ur"] .form-panel .cv-message,
+html[lang="ur"] .form-panel .cv-validation p,
+html[lang="ur"] .form-panel .jis-extra-note { line-height: 2; }
+html[lang="ur"] .form-panel .div-title,
+html[lang="ur"] .form-panel .cv-optional-fields > summary { line-height: 2; }
+html[lang="ur"] .form-panel .field .bn,
+html[lang="ur"] .form-panel .hint,
+html[lang="ur"] .form-panel .template small,
+html[lang="ur"] .form-panel .cv-output small { line-height: 1.95; }
+html[lang="ur"] .preview-panel .cv-preview-format-note { line-height: 1.95; }
+
+/* #4: time-range values inside RTL inputs render in reversed visual
+   order (typing 9:00〜12:30 displayed as 12:30〜9:00). The part-time
+   fields hold Japanese/time text, so force LTR entry order on them.
+   Display only — the stored values are unchanged. */
+html[lang="ur"] #schoolTime,
+html[lang="ur"] #availability { direction: ltr; }
