@@ -6,6 +6,7 @@
     const response=await fetch('/assets/data/jtest4you/catalog.json?v=20261006.complete',{cache:'no-cache'});
     if(!response.ok)throw new Error(dynT('mh.loadFail'));
     const catalog=await response.json();
+    if(window.AponarQbApply)await window.AponarQbApply('/assets/data/jtest4you/catalog.json',catalog);
     if(catalog.version!==9)throw new Error(dynT('mh.updating'));
     let results={};try{results=JSON.parse(localStorage.getItem('aponarNihonMockResults')||'{}')}catch{}
     let totalSets=0,totalTarget=0;
