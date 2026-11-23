@@ -406,6 +406,12 @@
       '<div class="tutor-starters" id="tutorStarters">' + starterMarkup() + "</div></section>";
   }
 
+  /* Tutor UI: the pending slot keeps its stored text, but presents as an
+     animated three-dot typing indicator instead of plain text. */
+  function typingDotsMarkup() {
+    return '<span class="tutor-typing" aria-hidden="true"><i></i><i></i><i></i></span>';
+  }
+
   function messageElement(message, index) {
     var isUser = message.role === "user";
     var article = document.createElement("article");
@@ -422,6 +428,7 @@
     var bubble = document.createElement("div");
     bubble.className = "tutor-bubble";
     if (isUser) bubble.textContent = message.text;
+    else if (message.pending) bubble.innerHTML = typingDotsMarkup();
     else bubble.innerHTML = renderMarkdown(message.text);
 
     var meta = document.createElement("div");
@@ -453,6 +460,105 @@
       state.messages.forEach(function (message, index) { els.messages.appendChild(messageElement(message, index)); });
     }
     if (scroll) scrollBottom();
+    if (streamState) applyStream();
+  }
+
+  /* Tutor UI: progressive reveal ("streaming") for a freshly computed
+     answer. Purely presentational: the stored message never changes,
+     history renders never stream, and completion restores the exact
+     HTML renderMarkdown produced. Structural blocks (tables, code,
+     ruby) reveal whole so markup is never split mid-tag. */
+  var streamState = null;
+
+  function streamAtomicNode(node) {
+    return node.nodeType === 1 && (node.tagName === "PRE" || node.tagName === "CODE" ||
+      node.tagName === "RUBY" || node.tagName === "TABLE" || node.tagName === "IMG" ||
+      node.classList.contains("tutor-table-wrap"));
+  }
+
+  function streamTokens(bubble) {
+    var tokens = [];
+    (function walk(node) {
+      Array.from(node.childNodes).forEach(function (child) {
+        if (child.nodeType === 3) {
+          var fragment = document.createDocumentFragment();
+          child.textContent.split(/(\s+)/).forEach(function (part) {
+            if (!part) return;
+            if (/^\s+$/.test(part)) { fragment.appendChild(document.createTextNode(part)); return; }
+            var span = document.createElement("span");
+            span.className = "tsw tsw-off";
+            span.textContent = part;
+            fragment.appendChild(span);
+            tokens.push(span);
+          });
+          node.replaceChild(fragment, child);
+        } else if (streamAtomicNode(child)) {
+          child.classList.add("tsw", "tsw-off");
+          tokens.push(child);
+        } else if (child.nodeType === 1) {
+          walk(child);
+        }
+      });
+    })(bubble);
+    return tokens;
+  }
+
+  function streamBubbleEl() {
+    if (!streamState || !els.messages) return null;
+    var article = els.messages.querySelector('[data-message-index="' + streamState.index + '"]');
+    return article ? article.querySelector(".tutor-bubble") : null;
+  }
+
+  function applyStream() {
+    var bubble = streamBubbleEl();
+    if (!bubble) {
+      if (streamState) { window.clearInterval(streamState.timer); streamState = null; }
+      return;
+    }
+    if (!bubble.hasAttribute("data-streaming")) {
+      bubble.setAttribute("data-streaming", "1");
+      streamState.tokens = streamTokens(bubble);
+      streamState.total = streamState.tokens.length;
+    }
+    var tokens = streamState.tokens || [];
+    for (var i = 0; i < tokens.length; i += 1) {
+      tokens[i].classList.toggle("tsw-off", i >= streamState.shown);
+    }
+    if (els.chat && els.chat.scrollHeight - els.chat.scrollTop - els.chat.clientHeight < 160) scrollBottom();
+  }
+
+  function finishStream() {
+    if (!streamState) return;
+    var index = streamState.index;
+    window.clearInterval(streamState.timer);
+    streamState = null;
+    if (!els.messages) return;
+    var article = els.messages.querySelector('[data-message-index="' + index + '"]');
+    var bubble = article ? article.querySelector(".tutor-bubble") : null;
+    var message = state.messages[index];
+    if (bubble && bubble.hasAttribute("data-streaming")) {
+      bubble.removeAttribute("data-streaming");
+      if (message && message.role === "bot") bubble.innerHTML = renderMarkdown(message.text);
+    }
+  }
+
+  function startStream(index) {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    var message = state.messages[index];
+    if (!message || message.role !== "bot" || message.error || message.pending) return;
+    finishStream();
+    streamState = { index: index, shown: 0, total: 0, tokens: null, timer: 0 };
+    applyStream();
+    if (!streamState || !streamState.total) { finishStream(); return; }
+    var total = streamState.total;
+    var steps = Math.max(6, Math.min(90, Math.round(total / 2.2)));
+    var perTick = Math.max(1, Math.ceil(total / steps));
+    streamState.timer = window.setInterval(function () {
+      if (!streamState) return;
+      streamState.shown = Math.min(total, streamState.shown + perTick);
+      if (streamState.shown >= total) { finishStream(); return; }
+      applyStream();
+    }, 34);
   }
 
   function renderPromptRail() {
@@ -576,6 +682,7 @@
     }).slice(-8).map(function (item) {
       return { role: item.role, text: item.text };
     });
+    finishStream();
     state.messages.push({ role: "user", text: message, time: timeNow(), error: false });
     var legacySlot = { role: "bot", provider: "legacy", text: T("আগের AI উত্তর তৈরি করছে…"), time: timeNow(), pending: true, error: false };
     state.messages.push(legacySlot);
@@ -602,10 +709,11 @@
       if (pending) {
         var index = state.messages.indexOf(slot);
         var bubble = els.messages.querySelector('[data-message-index="' + index + '"] .tutor-bubble');
-        if (bubble) bubble.innerHTML = renderMarkdown(slot.text);
+        if (bubble) bubble.innerHTML = typingDotsMarkup();
       } else {
         saveState();
         renderConversation(true);
+        if (!isError) startStream(state.messages.indexOf(slot));
       }
     }
 
@@ -745,6 +853,7 @@
   }
 
   function clearConversation(notify) {
+    finishStream();
     if (state.controller) state.controller.abort();
     state.messages = [];
     saveState();
@@ -756,6 +865,10 @@
     document.addEventListener("click", function (event) {
       var target = event.target instanceof Element ? event.target : null;
       if (!target) return;
+      if (streamState) {
+        var activeBubble = streamBubbleEl();
+        if (activeBubble && activeBubble.contains(target)) { finishStream(); return; }
+      }
       var modeButton = target.closest("[data-mode]");
       if (modeButton) {
         selectMode(modeButton.dataset.mode);
