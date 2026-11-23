@@ -1,6 +1,8 @@
 (function (global) {
   'use strict';
-  const bn=value=>String(value).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
+  const bn=value=>window.AponarExamLang&&window.AponarExamLang!=='bn'?String(value):String(value).replace(/\d/g,d=>'০১২৩৪৫৬৭৮৯'[d]);
+  const T=s=>window.AponarExamT?window.AponarExamT(s):s;
+  const DATE_LOCALES={en:'en-US-u-nu-latn',ja:'ja-JP',vi:'vi-VN-u-nu-latn',ne:'ne-NP',hi:'hi-IN-u-nu-latn',ur:'ur-PK-u-nu-latn',my:'my-MM-u-nu-latn',zh:'zh-CN-u-nu-latn',si:'si-LK-u-nu-latn',fil:'fil-PH-u-nu-latn'};
   const hash=value=>{let h=2166136261;for(const ch of value){h=Math.imul(h^ch.charCodeAt(0),16777619)}return(h>>>0).toString(16).padStart(8,'0').toUpperCase()};
   const idFor=result=>result.certificateId||`AN-${result.level.toUpperCase()}-${String(result.test).padStart(2,'0')}-${hash(result.completedAt+'|'+result.score+'|'+result.total)}`;
   let dialog,canvas,input,download,status,current,onName,drawEpoch=0;
@@ -9,7 +11,7 @@
     dialog=document.createElement('dialog');
     dialog.id='certificateDialog';
     dialog.setAttribute('aria-labelledby','certificateTitle');
-    dialog.innerHTML='<div class="certificate-toolbar"><div><h2 id="certificateTitle">আপনার নিহোন · পরীক্ষার সনদ</h2><p>নিজের নাম দিয়ে PDF ডাউনলোড করুন</p></div><button type="button" class="certificate-close" aria-label="সনদ বন্ধ করুন">×</button></div><label class="certificate-name">সনদে আপনার নাম<input id="certificateName" type="text" maxlength="80" autocomplete="name" placeholder="আপনার পুরো নাম লিখুন"></label><div class="certificate-preview"><canvas id="certificateCanvas" width="1684" height="1190" role="img" aria-label="আপনার নিহোন মক পরীক্ষার ফলাফলের সনদ"></canvas></div><div class="certificate-bottom"><p id="certificateStatus" role="status" aria-live="polite"></p><button type="button" id="downloadCertificate" class="primary-button">PDF ডাউনলোড করুন</button></div>';
+    dialog.innerHTML=T('<div class="certificate-toolbar"><div><h2 id="certificateTitle">আপনার নিহোন · পরীক্ষার সনদ</h2><p>নিজের নাম দিয়ে PDF ডাউনলোড করুন</p></div><button type="button" class="certificate-close" aria-label="সনদ বন্ধ করুন">×</button></div><label class="certificate-name">সনদে আপনার নাম<input id="certificateName" type="text" maxlength="80" autocomplete="name" placeholder="আপনার পুরো নাম লিখুন"></label><div class="certificate-preview"><canvas id="certificateCanvas" width="1684" height="1190" role="img" aria-label="আপনার নিহোন মক পরীক্ষার ফলাফলের সনদ"></canvas></div><div class="certificate-bottom"><p id="certificateStatus" role="status" aria-live="polite"></p><button type="button" id="downloadCertificate" class="primary-button">PDF ডাউনলোড করুন</button></div>');
     document.body.append(dialog);
     canvas=dialog.querySelector('canvas');input=dialog.querySelector('input');
     download=dialog.querySelector('#downloadCertificate');status=dialog.querySelector('#certificateStatus');
@@ -23,10 +25,11 @@
     download.addEventListener('click',downloadPDF);
   }
   async function show(result,callback){
+    if(window.AponarExamReady)await window.AponarExamReady;
     initialize();current=result;onName=callback;
     input.value=result.certificateName||result.candidateName||'';
     download.disabled=!input.value.trim();
-    status.textContent='আপনার নিহোনের মক পরীক্ষার সনদ · আপনার ডিভাইসে ফলাফল সেভ থাকে।';
+    status.textContent=T('আপনার নিহোনের মক পরীক্ষার সনদ · আপনার ডিভাইসে ফলাফল সেভ থাকে।');
     if(!dialog.open)dialog.showModal();
     await draw();
     if(!input.value.trim())input.focus();
@@ -59,20 +62,20 @@
     write(ctx,'日本語模擬試験 成績証明書',center,237,44,700);
     write(ctx,'MOCK EXAMINATION CERTIFICATE',center,279,20,600,'center','#916f31');
     ctx.strokeStyle='#d8c79d';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(160,311);ctx.lineTo(w-160,311);ctx.stroke();
-    write(ctx,'এই মর্মে সনদ দেওয়া যাচ্ছে যে',center,357,24,500);
-    write(ctx,input.value.trim()||'আপনার নাম',center,418,52,700,'center','#173152',w-260);
-    write(ctx,'আপনার নিহোনের নিচের মক পরীক্ষা সম্পন্ন করেছেন',center,465,25,500);
-    const mode=r.mode==='practice'?'অনুশীলন মোড':'পূর্ণ সময়ের পরীক্ষা';
+    write(ctx,T('এই মর্মে সনদ দেওয়া যাচ্ছে যে'),center,357,24,500);
+    write(ctx,input.value.trim()||T('আপনার নাম'),center,418,52,700,'center','#173152',w-260);
+    write(ctx,T('আপনার নিহোনের নিচের মক পরীক্ষা সম্পন্ন করেছেন'),center,465,25,500);
+    const mode=r.mode==='practice'?T('অনুশীলন মোড'):T('পূর্ণ সময়ের পরীক্ষা');
     write(ctx,`JLPT ${r.level.toUpperCase()} · Mock Test ${bn(String(r.test).padStart(2,'0'))} · ${mode}`,center,524,25,700);
-    write(ctx,`${bn(r.score)} / ১৮০`,center,614,74,800);
-    write(ctx,r.passed?'মক পরীক্ষায় উত্তীর্ণ':'মক পরীক্ষা সম্পন্ন · আরও অনুশীলন প্রয়োজন',center,663,26,700,'center',r.passed?'#167063':'#9a5540');
-    write(ctx,`${bn(r.correct)} / ${bn(r.total)}টি প্রশ্নের সঠিক উত্তর`,center,701,20,500,'center','#677486');
-    const groups=Object.values(r.groups),rows=[...groups,{label:'মোট স্কোর',score:r.score,max:180,min:global.JLPT_MOCK_CONFIG[r.level].pass}];
+    write(ctx,`${bn(r.score)}${T(" / ১৮০")}`,center,614,74,800);
+    write(ctx,r.passed?T('মক পরীক্ষায় উত্তীর্ণ'):T('মক পরীক্ষা সম্পন্ন · আরও অনুশীলন প্রয়োজন'),center,663,26,700,'center',r.passed?'#167063':'#9a5540');
+    write(ctx,`${bn(r.correct)} / ${bn(r.total)}${T("টি প্রশ্নের সঠিক উত্তর")}`,center,701,20,500,'center','#677486');
+    const groups=Object.values(r.groups),rows=[...groups,{label:T('মোট স্কোর'),score:r.score,max:180,min:global.JLPT_MOCK_CONFIG[r.level].pass}];
     const tableX=160,tableW=w-320,startY=734,rowH=57;
     ctx.fillStyle='#edf1f5';ctx.fillRect(tableX,startY,tableW,45);
-    write(ctx,'পরীক্ষার অংশ',tableX+22,startY+30,20,700,'left');
-    write(ctx,'প্রাপ্ত স্কোর',1050,startY+30,20,700);
-    write(ctx,'পাসসীমা',1380,startY+30,20,700);
+    write(ctx,T('পরীক্ষার অংশ'),tableX+22,startY+30,20,700,'left');
+    write(ctx,T('প্রাপ্ত স্কোর'),1050,startY+30,20,700);
+    write(ctx,T('পাসসীমা'),1380,startY+30,20,700);
     rows.forEach((g,i)=>{
       const y=startY+45+i*rowH;
       ctx.strokeStyle='#e0ddd3';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(tableX,y+rowH);ctx.lineTo(tableX+tableW,y+rowH);ctx.stroke();
@@ -81,16 +84,16 @@
       write(ctx,bn(g.min),1380,y+36,22,500);
     });
     const completed=new Date(r.completedAt);
-    const date=Number.isNaN(completed.getTime())?'—':completed.toLocaleDateString('bn-BD',{year:'numeric',month:'long',day:'numeric',timeZone:'Asia/Tokyo'});
-    write(ctx,`পরীক্ষার তারিখ: ${date}`,160,1060,22,600,'left');
+    const date=Number.isNaN(completed.getTime())?'—':completed.toLocaleDateString((window.AponarExamLang&&DATE_LOCALES[window.AponarExamLang])||'bn-BD',{year:'numeric',month:'long',day:'numeric',timeZone:'Asia/Tokyo'});
+    write(ctx,`${T("পরীক্ষার তারিখ: ")}${date}`,160,1060,22,600,'left');
     write(ctx,`Certificate ID: ${idFor(r)}`,160,1094,17,500,'left','#677486');
     const sealX=w-213,sealY=1060;
     ctx.strokeStyle='#b89553';ctx.lineWidth=3;ctx.beginPath();ctx.arc(sealX,sealY,62,0,Math.PI*2);ctx.stroke();
     ctx.lineWidth=1;ctx.beginPath();ctx.arc(sealX,sealY,54,0,Math.PI*2);ctx.stroke();
     write(ctx,'日',sealX,sealY+4,42,700,'center','#916f31');
     write(ctx,'模擬試験',sealX,sealY+31,16,600,'center','#916f31');
-    write(ctx,'অনুশীলনের ফলাফল · ১৮০ নম্বর সরল conversion · অফিসিয়াল JLPT সনদ নয়',center,1118,17,500,'center','#677486');
-    canvas.setAttribute('aria-label',`${input.value.trim()||'পরীক্ষার্থী'} · ${r.level.toUpperCase()} · ${r.score}/180 · ${r.passed?'মক পরীক্ষায় উত্তীর্ণ':'মক পরীক্ষা সম্পন্ন'}`);
+    write(ctx,T('অনুশীলনের ফলাফল · ১৮০ নম্বর সরল conversion · অফিসিয়াল JLPT সনদ নয়'),center,1118,17,500,'center','#677486');
+    canvas.setAttribute('aria-label',`${input.value.trim()||T('পরীক্ষার্থী')} · ${r.level.toUpperCase()} · ${r.score}/180 · ${r.passed?T('মক পরীক্ষায় উত্তীর্ণ'):T('মক পরীক্ষা সম্পন্ন')}`);
   }
   function jpegPDF(jpeg,width,height){
     const enc=new TextEncoder(),chunks=[],offsets=[0];let length=0;
@@ -111,7 +114,7 @@
   }
   async function downloadPDF(){
     if(!input.value.trim()){input.focus();return}
-    download.disabled=true;status.textContent='PDF তৈরি হচ্ছে…';
+    download.disabled=true;status.textContent=T('PDF তৈরি হচ্ছে…');
     try{
       await draw();
       const base64=canvas.toDataURL('image/jpeg',.95).split(',')[1];
@@ -120,8 +123,8 @@
       const link=document.createElement('a');link.href=url;
       link.download=`Aponar-Nihon-${current.level.toUpperCase()}-Mock-${String(current.test).padStart(2,'0')}-Certificate.pdf`;
       document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),10000);
-      status.textContent='সনদের PDF ডাউনলোড হয়েছে।';
-    }catch(error){status.textContent='PDF তৈরি হয়নি। আবার চেষ্টা করুন।';console.error(error)}
+      status.textContent=T('সনদের PDF ডাউনলোড হয়েছে।');
+    }catch(error){status.textContent=T('PDF তৈরি হয়নি। আবার চেষ্টা করুন।');console.error(error)}
     finally{download.disabled=!input.value.trim()}
   }
   global.AponarMockCertificate={show,idFor};
