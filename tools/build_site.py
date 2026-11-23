@@ -135,7 +135,7 @@ def build(destination: Path, check_links: bool = False) -> int:
     injected, injection_checked = inject_professional_assets(destination)
     changed, post_checked, repaired, secured = postprocess_site(destination)
     localized_pages, localized_clusters, localized_nodes = build_localized_pages(destination)
-    canonicals, noindex, seo_checked, verification, sitemap_urls = prepare_search_engine_files(destination)
+    canonicals, noindex, seo_checked, verification, sitemap_urls = prepare_search_engine_files(destination, ROOT)
     indexed = build_search_index(
         destination,
         destination / "assets" / "data" / "search-index.json",

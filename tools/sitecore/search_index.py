@@ -17,12 +17,25 @@ SKIP_NAMES = {
     "refresh-site.html",
 }
 
+# Directory-route equivalents of SKIP_NAMES (SEO run, 2026-11-24): localized
+# copies of the utility pages are written as <lang>/<slug>/index.html, so the
+# file name alone no longer identifies them. Without this, every localized
+# 404/auth/admin/profile page was treated as indexable — it received a
+# self-referencing canonical next to its noindex meta and a sitemap entry.
+SKIP_SLUGS = {name[: -len(".html")] for name in SKIP_NAMES if name.endswith(".html")}
+
 
 def should_index(path: Path, root: Path) -> bool:
     rel = path.relative_to(root)
     if "archive" in rel.parts:
         return False
     if path.name in SKIP_NAMES or path.name.startswith("google"):
+        return False
+    if (
+        path.name == "index.html"
+        and len(rel.parts) >= 2
+        and rel.parts[-2] in SKIP_SLUGS
+    ):
         return False
     return True
 
