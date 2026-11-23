@@ -602,3 +602,72 @@ html[data-language-preset="si"] body.app-page[data-page="home"] .app-quick-item:
 html[data-language-preset="si"] body.app-page[data-page="home"] .app-card-arrow::before { content: "සියල්ල බලන්න"; }
 html[data-language-preset="fil"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "Mahahalagang parirala"; }
 html[data-language-preset="fil"] body.app-page[data-page="home"] .app-card-arrow::before { content: "Tingnan lahat"; }
+
+/* ===== UI FIX 2026-11-23 (UI audit fixes #3, #4, #7, #8, #11) ===== */
+
+/* #3: Daily News archive cards — the "read more" affordance is CSS-generated
+   content in news-visual-fix.css (Bengali base rule). Per-language overrides
+   below use the site's own dn.readMore translations; bn keeps the base rule. */
+html[data-language-preset="en"] .news-list-copy::after { content: "Read more"; }
+html[data-language-preset="ja"] .news-list-copy::after { content: "詳しく読む"; }
+html[data-language-preset="vi"] .news-list-copy::after { content: "Đọc chi tiết"; }
+html[data-language-preset="ne"] .news-list-copy::after { content: "विस्तारमा पढ्नुहोस्"; }
+html[data-language-preset="hi"] .news-list-copy::after { content: "विस्तार से पढ़ें"; }
+html[data-language-preset="ur"] .news-list-copy::after { content: "تفصیل پڑھیں"; }
+html[data-language-preset="my"] .news-list-copy::after { content: "အသေးစိတ် ဖတ်ရန်"; }
+html[data-language-preset="zh"] .news-list-copy::after { content: "阅读详情"; }
+html[data-language-preset="si"] .news-list-copy::after { content: "විස්තර කියවන්න"; }
+html[data-language-preset="fil"] .news-list-copy::after { content: "Basahin ang detalye"; }
+
+/* #4: Urdu (Nastaliq script) needs much taller line boxes than the Latin
+   metrics the hero/dock styles were tuned for. Scoped to ur only; every
+   other language renders exactly as before. */
+html[lang="ur"] .lh-hero h1 { line-height: 2.05; }
+html[lang="ur"] .lh-progress-card h2 { line-height: 1.95; }
+html[lang="ur"] .study-hero h1 { line-height: 2.05; }
+html[lang="ur"] .news-hero h1 { line-height: 2.05; }
+html[lang="ur"] .an-bottom-nav > a > span:not(.app-nav-icon) { line-height: 1.9; padding-bottom: .3em; }
+/* The mock center's own static dock (mock-test.html .bottom) puts the label
+   as a bare text node under the icon; give it the same Nastaliq room. */
+html[lang="ur"] nav.bottom > a { line-height: 2; }
+
+/* #7: lesson data tables — visible sideways-scroll affordance (edge fade +
+   scroll shadows, the same pattern as the Tutor table fix). Presentation
+   only, all languages including bn; no content changes. */
+.table-wrap {
+  background-image:
+    linear-gradient(90deg, var(--card, var(--paper, #fff)) 28%, rgba(255, 255, 255, 0)),
+    linear-gradient(90deg, rgba(255, 255, 255, 0), var(--card, var(--paper, #fff)) 72%),
+    radial-gradient(farthest-side at 0 50%, rgba(15, 23, 42, .30), rgba(15, 23, 42, 0)),
+    radial-gradient(farthest-side at 100% 50%, rgba(15, 23, 42, .30), rgba(15, 23, 42, 0));
+  background-position: 0 0, 100% 0, 0 0, 100% 0;
+  background-size: 42px 100%, 42px 100%, 16px 100%, 16px 100%;
+  background-repeat: no-repeat;
+  background-attachment: local, local, scroll, scroll;
+  scrollbar-width: thin;
+}
+
+/* #8: floating language picker — compact state while scrolling (the scroll
+   behaviour itself is wired in i18n.js mountPicker). Globe + flag stay
+   visible and tappable; label/code/chevron return on scroll-up. */
+.aponar-language-floating.aponar-language-compact { min-width: 0; padding: 0 10px; }
+.aponar-language-floating.aponar-language-compact .aponar-language-current-label,
+.aponar-language-floating.aponar-language-compact .aponar-language-current-code,
+.aponar-language-floating.aponar-language-compact .aponar-language-chevron { display: none; }
+
+/* #11a: hub/tutor topbar titles — fluid size on narrow screens so the full
+   title fits instead of truncating mid-word. The hub selector outranks the
+   learning-library.css :is() rule (same specificity, i18n.css loads later);
+   the tutor selector matches the size that fits its 112px brand box. */
+@media (max-width: 600px) {
+  .lh-topbar-inner { gap: 10px; }
+  .lh-brand img { width: 36px; height: 36px; }
+  .lh-topbar .lh-brand-copy strong { font-size: .76rem; letter-spacing: -.01em; }
+  .tutor-brand-copy strong { font-size: .78rem; letter-spacing: -.01em; }
+  .tutor-top-actions .aponar-language-button { width: 38px; min-width: 38px; flex: 0 0 38px; height: 38px; }
+}
+
+/* #11b: Halal scanner — keep the camera empty-state text inside the scan
+   frame (same width expression as .scan-frame) in every language. */
+.camera-empty { width: min(76%, 320px); max-width: 320px; padding: 10px 6px; }
+.camera-empty span { overflow-wrap: break-word; }

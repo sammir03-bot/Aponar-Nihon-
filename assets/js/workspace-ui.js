@@ -8,7 +8,7 @@
  const text=(bn,en)=>isBangla()?bn:en;
  const T=s=>window.AponarAppT?window.AponarAppT(s):s;
  const T2=(bn,en)=>{if(window.AponarAppT&&window.AponarAppLang&&window.AponarAppLang!=="en")return window.AponarAppT(bn);return text(bn,en);};
- const launch=(href,icon,title,description)=>`<a class="ui-launch" href="${href}"><span class="ui-launch-icon" aria-hidden="true">${icon}</span><span><strong>${title}</strong><small>${description}</small></span></a>`;
+ const launch=(href,icon,title,description)=>`<a class="ui-launch" href="${href}"><span class="ui-launch-icon" aria-hidden="true">${icon}</span><span><strong dir="auto">${title}</strong><small dir="auto">${description}</small></span></a>`;
 
  function cv(){
   const form=q('.form-panel'),wizard=q('.wizard');if(!form||!wizard)return;
@@ -24,7 +24,7 @@
   ];
   function updateStep(){
    const active=q('.wiz.active');const index=Number(active?.dataset.step||0);const g=guidance[index];
-   help.replaceChildren(node('b','',text(g[0],g[2])),document.createTextNode(text(g[1],g[3])));
+   help.replaceChildren(node('b','',T2(g[0],g[2])),document.createTextNode(T2(g[1],g[3])));
    progress.firstElementChild.style.width=`${(index+1)*20}%`;progress.setAttribute('aria-valuenow',String(index+1));progress.setAttribute('aria-valuetext',`${index+1} / 5`);
    all('.wiz').forEach((b,i)=>{b.setAttribute('aria-current',i===index?'step':'false');});
    all('.template').forEach(b=>b.setAttribute('aria-pressed',String(b.classList.contains('active'))));
@@ -34,23 +34,23 @@
   // Associate the explanatory labels with their existing controls.
   function labelFields(){all('.field').forEach(f=>{const input=q('input:not([type=hidden]),select,textarea',f),label=q('label',f);if(input?.id&&label)label.htmlFor=input.id;});all('[data-rtype]').forEach(input=>{input.setAttribute('aria-label',`${input.dataset.rtype} ${Number(input.dataset.i)+1} ${input.dataset.k}`);});all('.remove').forEach(b=>b.setAttribute('aria-label',T2('এই সারি মুছুন','Remove this row')));}
   labelFields();all('.rows').forEach(rows=>new MutationObserver(labelFields).observe(rows,{childList:true}));
-  const review=node('section','ui-review');review.id='cvReview';review.innerHTML=`<h3>${text('প্রিন্টের আগে মিলিয়ে নিন','Pre-print checklist')}</h3><p>${text('এটি তথ্য পূরণের তালিকা; বানান ও সঠিকতা নিজে যাচাই করুন।','This checks for filled fields; review spelling and accuracy yourself.')}</p><ul class="ui-checklist"></ul>`;
+  const review=node('section','ui-review');review.id='cvReview';review.innerHTML=`<h3>${T2('প্রিন্টের আগে মিলিয়ে নিন','Pre-print checklist')}</h3><p>${T2('এটি তথ্য পূরণের তালিকা; বানান ও সঠিকতা নিজে যাচাই করুন।','This checks for filled fields; review spelling and accuracy yourself.')}</p><ul class="ui-checklist"></ul>`;
   q('[data-form="4"] .note').after(review);
   const checks=[['name','পুরো নাম','Full name'],['furigana','নামের কাতাকানা','Name in katakana'],['dob','জন্মতারিখ','Date of birth'],['phone','ফোন নম্বর','Phone'],['address','বর্তমান ঠিকানা','Address'],['motive','আবেদনের কারণ','Motivation']];
-  function updateReview(){const list=q('ul',review);list.replaceChildren();checks.forEach(([id,bn,en])=>{const filled=!!q('#'+id)?.value.trim();const li=node('li','');const b=node('button',filled?'done':'');b.type='button';b.textContent=`${filled?'✓':'○'} ${text(bn,en)} — ${filled?text('লেখা হয়েছে','Filled'):text('এখনও ফাঁকা','Empty')}`;b.addEventListener('click',()=>{q(`.wiz[data-step="${id==='motive'?3:1}"]`).click();q('#'+id).focus({preventScroll:true});q('#'+id).scrollIntoView({block:'center',behavior:'smooth'});});li.append(b);list.append(li);});}
+  function updateReview(){const list=q('ul',review);list.replaceChildren();checks.forEach(([id,bn,en])=>{const filled=!!q('#'+id)?.value.trim();const li=node('li','');const b=node('button',filled?'done':'');b.type='button';b.textContent=`${filled?'✓':'○'} ${T2(bn,en)} — ${filled?T2('লেখা হয়েছে','Filled'):T2('এখনও ফাঁকা','Empty')}`;b.addEventListener('click',()=>{q(`.wiz[data-step="${id==='motive'?3:1}"]`).click();q('#'+id).focus({preventScroll:true});q('#'+id).scrollIntoView({block:'center',behavior:'smooth'});});li.append(b);list.append(li);});}
   form.addEventListener('input',updateReview);form.addEventListener('click',()=>queueMicrotask(updateReview));updateReview();updateStep();
  }
 
  function student(){
   const main=q('main.page'),settings=q('.content-grid');if(!main||!settings)return;
   const learning=node('section','ui-learning');learning.id='studentLearning';
-  learning.innerHTML=`<div class="ui-panel"><h2 class="ui-section-title">${text('আজ কী শিখবেন?','What will you learn today?')}</h2><p class="ui-caption">${text('পাঠ, অনুশীলন ও প্রয়োজনীয় টুল—এক জায়গায়।','Lessons, practice and useful tools in one place.')}</p><div class="ui-launch-grid">${launch('/n5.html','文',text('জাপানি কোর্স','Japanese courses'),text('N5, N4 বা N3 থেকে শুরু করুন','Start with N5, N4 or N3'))}${launch('/quiz.html','✓',text('কুইজ অনুশীলন','Quiz practice'),text('নিজের শেখা যাচাই করুন','Check what you have learned'))}${launch('/tutor-section.html','AI','AI Tutor',text('জাপানি নিয়ে প্রশ্ন করুন','Ask a Japanese question'))}${launch('/daily-news.html','読',text('দৈনিক নিউজ','Daily news'),text('ফুরিগানাসহ পড়ার চর্চা','Reading practice with furigana'))}${launch('/cv-builder.html','CV',text('আমার CV তৈরি','Build my CV'),text('বাংলায় বুঝে জাপানি CV','Japanese CV with Bangla guidance'))}${launch('/jobs-in-japan.html','↗',text('জাপানে কাজ','Jobs in Japan'),text('কাজ খোঁজা ও আবেদন শেখা','Find work and learn to apply'))}</div><nav class="ui-jump" aria-label="JLPT courses"><a href="/n5.html">JLPT N5</a><a href="/n4.html">JLPT N4</a><a href="/n3.html">JLPT N3</a></nav></div><div class="ui-learning-grid"></div>`;
+  learning.innerHTML=`<div class="ui-panel"><h2 class="ui-section-title" dir="auto">${T2('আজ কী শিখবেন?','What will you learn today?')}</h2><p class="ui-caption" dir="auto">${T2('পাঠ, অনুশীলন ও প্রয়োজনীয় টুল—এক জায়গায়।','Lessons, practice and useful tools in one place.')}</p><div class="ui-launch-grid">${launch('/n5.html','文',T2('জাপানি কোর্স','Japanese courses'),T2('N5, N4 বা N3 থেকে শুরু করুন','Start with N5, N4 or N3'))}${launch('/quiz.html','✓',T2('কুইজ অনুশীলন','Quiz practice'),T2('নিজের শেখা যাচাই করুন','Check what you have learned'))}${launch('/tutor-section.html','AI','AI Tutor',T2('জাপানি নিয়ে প্রশ্ন করুন','Ask a Japanese question'))}${launch('/daily-news.html','読',T2('দৈনিক নিউজ','Daily news'),T2('ফুরিগানাসহ পড়ার চর্চা','Reading practice with furigana'))}${launch('/cv-builder.html','CV',T2('আমার CV তৈরি','Build my CV'),T2('বাংলায় বুঝে জাপানি CV','Japanese CV with Bangla guidance'))}${launch('/jobs-in-japan.html','↗',T2('জাপানে কাজ','Jobs in Japan'),T2('কাজ খোঁজা ও আবেদন শেখা','Find work and learn to apply'))}</div><nav class="ui-jump" aria-label="JLPT courses"><a href="/n5.html">JLPT N5</a><a href="/n4.html">JLPT N4</a><a href="/n3.html">JLPT N3</a></nav></div><div class="ui-learning-grid"></div>`;
   const grid=q('.ui-learning-grid',learning);
   for(const id of ['events','activity']){const card=q('#'+id)?.closest('.side-card');if(card)grid.append(card);}
   settings.id='studentSettings';settings.before(learning);
   const tabs=node('div','ui-tabs');tabs.setAttribute('role','tablist');tabs.setAttribute('aria-label',T2('শিক্ষার্থীর ড্যাশবোর্ড','Student dashboard'));
-  [[learning,text('আমার শেখা','My learning')],[settings,text('প্রোফাইল ও সেটিংস','Profile & settings')]].forEach(([panel,label],i)=>{
-   const b=node('button','');b.type='button';b.id=`studentTab${i}`;b.textContent=label;b.setAttribute('role','tab');b.setAttribute('aria-controls',panel.id);panel.setAttribute('role','tabpanel');panel.setAttribute('aria-labelledby',b.id);tabs.append(b);
+  [[learning,T2('আমার শেখা','My learning')],[settings,T2('প্রোফাইল ও সেটিংস','Profile & settings')]].forEach(([panel,label],i)=>{
+   const b=node('button','');b.type='button';b.id=`studentTab${i}`;b.textContent=label;b.setAttribute('dir','auto');b.setAttribute('role','tab');b.setAttribute('aria-controls',panel.id);panel.setAttribute('role','tabpanel');panel.setAttribute('aria-labelledby',b.id);tabs.append(b);
    b.addEventListener('click',()=>activate(i));
   });
   function activate(index){[learning,settings].forEach((p,i)=>{p.hidden=i!==index;const b=tabs.children[i];b.setAttribute('aria-selected',String(i===index));b.tabIndex=i===index?0:-1;});}
