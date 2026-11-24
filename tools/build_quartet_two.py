@@ -40,7 +40,7 @@ def build():
 <link rel="stylesheet" href="/assets/css/n3-quartet-study.css?v=20260915.1">
 <link rel="stylesheet" href="/assets/css/quartet-studio.css?v=20261020.1"></head>
 <body class="quartet-page quartet-guide" data-quartet-volume="2"><a class="skip-link" href="#study-content">পাঠে যান</a>
-<header class="study-header"><nav class="study-breadcrumb" aria-label="পথ নির্দেশনা"><a href="/n3.html#quartet">আপনার নিহোন · শেখার লাইব্রেরি</a><a href="/n2-quartet-grammar.html">গ্রামার অনুশীলন</a></nav>
+<header class="study-header"><nav class="study-breadcrumb" aria-label="পথ নির্দেশনা"><a href="/n2.html">আপনার নিহোন · শেখার লাইব্রেরি</a><a href="/n2-quartet-grammar.html">গ্রামার অনুশীলন</a></nav>
 <div class="quartet-hero"><div class="quartet-hero-copy"><span class="quartet-eyebrow">READ · WRITE · SPEAK · LISTEN</span><h1>QUARTET II<br>বাংলা স্টাডি সহায়িকা</h1><p>অধ্যায় ৭–১২ · নির্বাচিত ৩৬ গ্রামার · ৬টি নিজস্ব Reading passage · চার দক্ষতার অনুশীলন</p><p>{escape(course['scope_bn'])}</p></div><img class="quartet-hero-art" src="/assets/images/learning/quartet-ii.svg" alt="" width="640" height="300"></div></header>
 <nav class="quartet-series-nav" aria-label="QUARTET বই ও পড়ার ধরন"><a href="/n3-quartet-grammar.html">QUARTET I · N3</a><a href="/n2-quartet-grammar.html">QUARTET II · N2</a><a href="/n2-quartet-study-guide.html" aria-current="page">চার দক্ষতার গাইড</a></nav>
 <div class="study-toolbar" id="study-toolbar" hidden><label for="study-chapter-select">অধ্যায় বেছে নিন</label><select id="study-chapter-select">{options}</select><p id="study-status" role="status" aria-live="polite"></p></div>
@@ -88,7 +88,7 @@ def build():
             html.append(f'<li><a href="/n2-quartet-grammar.html#{lesson["id"]}/lesson">{ruby(lesson["title"])}</a> — {escape(lesson["meaning_bn"])}</li>')
         html.append('</ul>')
     html.append('''<h3>নিজের প্রস্তুতি যাচাই</h3><ol><li>৬টি Reading-এর মূল কথা এক বাক্যে বলুন।</li><li>দুটি কাছাকাছি গ্রামারের পার্থক্য নিজের উদাহরণ দিয়ে বোঝান।</li><li>একটি Writing model নিজের অভিজ্ঞতায় লিখুন।</li><li>একটি Speaking dialogue না দেখে বলুন।</li><li>Listening-এ সময়, স্থান, কারণ ও পরের কাজ লিখুন।</li></ol></section>
-<footer class="study-footer"><a href="/n2-quartet-grammar.html">৩৬টি ইন্টারঅ্যাকটিভ গ্রামার →</a><a href="/n3-quartet-study-guide.html">QUARTET I</a><a href="https://quartet.japantimes.co.jp/en/" target="_blank" rel="noopener noreferrer">প্রকাশকের বই ও রিসোর্স</a><a href="/n3.html#quartet">শেখার লাইব্রেরি</a></footer></main>
+<footer class="study-footer"><a href="/n2-quartet-grammar.html">৩৬টি ইন্টারঅ্যাকটিভ গ্রামার →</a><a href="/n3-quartet-study-guide.html">QUARTET I</a><a href="https://quartet.japantimes.co.jp/en/" target="_blank" rel="noopener noreferrer">প্রকাশকের বই ও রিসোর্স</a><a href="/n2.html">শেখার লাইব্রেরি</a></footer></main>
 <script defer src="/assets/js/n3-quartet-study.js?v=20261020.1"></script></body></html>''')
     (ROOT / 'n2-quartet-study-guide.html').write_text('\n'.join(html) + '\n')
 

@@ -1,4 +1,10 @@
-/* Aponar Nihon service-worker wrapper — app shell v48 — RUN 42 (2026-11-24):
+/* Aponar Nihon service-worker wrapper — app shell v49 — RUN 43 (2026-11-24):
+   New N2 section: n2 hub master + packs in all 14 languages, the
+   Quartet II card moved from the N3 hub to the N2 hub, home tile +
+   journey step for N2, two DYN aria rows added to i18n.js; the base
+   worker's caches are bumped to v43 in sw-base-v28.js so installed
+   phones flush and pick up the new assets.
+   RUN 42 (2026-11-24):
    Phase 4 (FINAL) for id/ar/ml: question-bank shards, interview, exam,
    study and news sidecars; the base worker's caches are bumped to v42 in
    sw-base-v28.js so installed phones flush and pick up the new assets.
