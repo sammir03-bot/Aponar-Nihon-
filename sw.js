@@ -1,4 +1,8 @@
-/* Aponar Nihon service-worker wrapper — app shell v45 — RUN 38 (2026-11-24):
+/* Aponar Nihon service-worker wrapper — app shell v46 — RUN 39 (2026-11-24):
+   Phase 1 chrome for id/ar/ml: DYN family values added to i18n.js and new
+   app/tutor/cv sidecars; the base worker's caches are bumped to v40 in
+   sw-base-v28.js so installed phones flush and pick up the new assets.
+   RUN 38 (2026-11-24):
    three new languages (id, ar, ml) registered in the i18n runtime; the base
    worker's caches are bumped to v39 in sw-base-v28.js so installed phones
    flush and pick up the new assets.
