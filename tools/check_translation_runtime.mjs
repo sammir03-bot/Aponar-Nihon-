@@ -34,7 +34,7 @@ assert.ok(valid('ja', 'CH-47 হেলিকপ্টার', 'CH-47ヘリコプ
 const ui = vm.createContext({ window: {}, Map });
 vm.runInContext(fs.readFileSync('assets/js/i18n-ui.js', 'utf8'), ui);
 for (const row of ui.window.AponarUIStrings.rows) {
-  assert.equal(row.length, 11);
+  assert.equal(row.length, 14);
   assert.ok(row.every(value => typeof value === 'string' && value.trim()));
 }
-console.log('Translation audit passed: large Bangla UTF-8 requests, proper names, native loanwords, residue rejection, and 11-language UI coverage.');
+console.log('Translation audit passed: large Bangla UTF-8 requests, proper names, native loanwords, residue rejection, and 14-language UI coverage.');
