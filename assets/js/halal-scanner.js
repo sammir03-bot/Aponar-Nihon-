@@ -62,6 +62,7 @@
   function render(product, analysis, save) {
     var copy = copies[analysis.status], info = product || {};
     $("resultCard").hidden = false;
+    $("resultCard").removeAttribute("data-food-lookup");
     $("productName").textContent = info.name || T("উপাদান যাচাই");
     $("productBrand").textContent = info.brand || "";
     $("productCode").textContent = info.code ? "BARCODE · " + info.code : T("নিজে লেখা উপাদান");
@@ -104,7 +105,13 @@
       var data = await res.json();
       if (token !== lookupToken) return;
       if (!data.ok) throw new Error("lookup");
-      if (!data.found) { render({code: code, name: T("তথ্যভাণ্ডারে এই খাবার পাওয়া যায়নি")}, analyze("")); return; }
+      if (!data.found) {
+        render({code: code, name: T("তথ্যভাণ্ডারে এই খাবার পাওয়া যায়নি")}, analyze(""));
+        $("resultCard").dataset.foodLookup = "not-found";
+        $("verdictTitle").textContent = T("এই product-টি database-এ এখনো নেই");
+        $("verdictText").textContent = T("Open Food Facts community database-এ এই barcode-এর তথ্য এখনো যোগ হয়নি। দোকানের নিজস্ব brand বা fresh খাবারের ক্ষেত্রে এমনটা সাধারণ। তবে packet-এর উপাদান দেখে এখনই যাচাই করা যাবে।");
+        return;
+      }
       render(data.product, analyze(data.product.ingredients));
     } catch (error) {
       if (token !== lookupToken) return;

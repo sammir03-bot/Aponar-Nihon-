@@ -1,9 +1,14 @@
 /* Aponar Nihon service-worker base v28 (2026-11-21, Run 13 cache flush).
    Cache names bumped v36 -> v37 so the activate handler deletes every
    v36 cache (which could hold pre-Run-10 i18n JS), and the precache
-   list now pins the i18n assets at ?v=20261121.1. */
-const STATIC_CACHE = "aponar-nihon-static-v37";
-const DYNAMIC_CACHE = "aponar-nihon-dynamic-v37";
+   list now pins the i18n assets at ?v=20261121.1.
+   HALAL FIX (2026-11-24): cache names bumped v37 -> v38 so the activate
+   handler (skipWaiting on install + clients.claim, both already below)
+   purges every v37-and-older cache on the next visit — a phone stuck on
+   an old worker could otherwise replay a stale cached response (the old
+   generic branch answered with ignoreSearch matching). */
+const STATIC_CACHE = "aponar-nihon-static-v38";
+const DYNAMIC_CACHE = "aponar-nihon-dynamic-v38";
 
 const STATIC_ASSETS = [
   "/",

@@ -17,12 +17,13 @@ export function validBarcode(code: string): boolean {
   return (10 - sum % 10) % 10 === Number(code.at(-1));
 }
 
-async function cached(key: string, seconds: number, load: () => Promise<unknown>): Promise<unknown> {
+async function cached(key: string, seconds: number | ((data: unknown) => number), load: () => Promise<unknown>): Promise<unknown> {
   const cache = typeof caches !== "undefined" ? (caches as CacheStorage & {default?: Cache}).default : undefined;
   const request = new Request("https://app.aponar-nihon.workers.dev/__open-data/" + key);
   if (cache) { try { const hit = await cache.match(request); if (hit) return await hit.json(); } catch { /* Cache is optional. */ } }
   const data = await load();
-  if (cache) { try { await cache.put(request, new Response(JSON.stringify(data), {headers: {"content-type": "application/json", "cache-control": "public, max-age=" + seconds}})); } catch { /* Serve fresh data. */ } }
+  const ttl = typeof seconds === "function" ? seconds(data) : seconds;
+  if (cache) { try { await cache.put(request, new Response(JSON.stringify(data), {headers: {"content-type": "application/json", "cache-control": "public, max-age=" + ttl}})); } catch { /* Serve fresh data. */ } }
   return data;
 }
 
@@ -39,7 +40,10 @@ async function food(url: URL): Promise<Response> {
   const barcode = url.searchParams.get("barcode") || "";
   if (!validBarcode(barcode)) return reply({ok: false, error: "invalid_barcode"}, 400);
   try {
-    const data = await cached("food-v1/" + barcode, 86400, async () => {
+    // Found products keep the 24h cache; a "not found" answer is cached for
+    // only 1h (HALAL FIX 2026-11-24) so a product newly added to Open Food
+    // Facts shows up the same day instead of a day later.
+    const data = await cached("food-v1/" + barcode, (result) => obj(result).found === false ? 3600 : 86400, async () => {
       let payload: Data;
       try { payload = obj(await fetchJson("https://world.openfoodfacts.org/api/v2/product/" + barcode + ".json?fields=" + OFF_FIELDS)); }
       catch (error) {

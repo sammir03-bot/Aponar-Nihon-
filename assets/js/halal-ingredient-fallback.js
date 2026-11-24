@@ -174,15 +174,20 @@
       if (box) box.hidden = true;
       return;
     }
+    var isNotFound = result.dataset.foodLookup === "not-found";
 
     if (!box) {
       box = document.createElement("div");
       box.id = "ingredientFallbackBox";
-      box.style.marginTop = "12px";
-      box.style.padding = "13px";
-      box.style.border = "1px solid #cfe7dd";
-      box.style.borderRadius = "15px";
-      box.style.background = "#f3fbf7";
+
+      var heading = document.createElement("b");
+      heading.id = "ingredientFallbackHeading";
+      heading.style.display = "block";
+      heading.style.margin = "0 0 6px";
+      heading.style.fontSize = ".92rem";
+      heading.style.lineHeight = "1.5";
+      heading.style.color = "#075f4b";
+      heading.textContent = T("উপাদানের ছবি তুলে এখনই যাচাই করুন");
 
       var text = document.createElement("p");
       text.style.margin = "0 0 10px";
@@ -193,13 +198,31 @@
 
       var button = makePhotoButton("ingredientFallbackPhotoBtn");
       button.style.width = "100%";
+      box.appendChild(heading);
       box.appendChild(text);
       box.appendChild(button);
       result.appendChild(box);
     }
+
+    var mode = isNotFound ? "not-found" : "quiet";
+    if (box.dataset.mode !== mode) {
+      box.dataset.mode = mode;
+      var headingNow = $("ingredientFallbackHeading");
+      var buttonNow = $("ingredientFallbackPhotoBtn");
+      if (isNotFound) {
+        box.style.cssText = "margin:12px 15px 15px;padding:15px;border:2px solid #0c8c69;border-radius:16px;background:linear-gradient(135deg,#e9f9f2,#f3fbf7);box-shadow:0 10px 24px rgba(8,115,87,.14)";
+        if (headingNow) headingNow.style.display = "block";
+        if (buttonNow) { buttonNow.className = "halal-btn primary"; buttonNow.style.minHeight = "52px"; buttonNow.style.fontSize = "13px"; }
+        if (verdict.nextElementSibling !== box) verdict.insertAdjacentElement("afterend", box);
+      } else {
+        box.style.cssText = "margin-top:12px;padding:13px;border:1px solid #cfe7dd;border-radius:15px;background:#f3fbf7";
+        if (headingNow) headingNow.style.display = "none";
+        if (buttonNow) { buttonNow.className = "halal-btn secondary"; buttonNow.style.minHeight = ""; buttonNow.style.fontSize = ""; }
+        if (result.lastElementChild !== box) result.appendChild(box);
+      }
+    }
     box.hidden = false;
   }
-
   function bindPhotoInput() {
     var input = ensurePhotoInput();
     input.addEventListener("change", function () {
