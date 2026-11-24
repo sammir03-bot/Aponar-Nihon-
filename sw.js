@@ -1,4 +1,9 @@
-/* Aponar Nihon service-worker wrapper — app shell v46 — RUN 39 (2026-11-24):
+/* Aponar Nihon service-worker wrapper — app shell v47 — RUN 41 (2026-11-24):
+   Phase 3 lesson data for id/ar/ml: new data sidecars (N3, Quartet,
+   Run 28 families) and id/ar/ml sections in the embedded vocab/kanji/
+   grammar data files; the base worker's caches are bumped to v41 in
+   sw-base-v28.js so installed phones flush and pick up the new assets.
+   RUN 39 (2026-11-24):
    Phase 1 chrome for id/ar/ml: DYN family values added to i18n.js and new
    app/tutor/cv sidecars; the base worker's caches are bumped to v40 in
    sw-base-v28.js so installed phones flush and pick up the new assets.
