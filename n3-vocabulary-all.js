@@ -529,7 +529,7 @@
 (function () {
   function run24Lang() {
     try { if (window.AponarDynLang) return window.AponarDynLang(); } catch (e) {}
-    var ok = { bn: 1, en: 1, ja: 1, vi: 1, ne: 1, hi: 1, ur: 1, my: 1, zh: 1, si: 1, fil: 1 };
+    var ok = { bn: 1, en: 1, ja: 1, vi: 1, ne: 1, hi: 1, ur: 1, my: 1, zh: 1, si: 1, fil: 1, id: 1, ar: 1, ml: 1 };
     var p = document.documentElement ? document.documentElement.getAttribute("data-language-preset") : null;
     if (p && ok[p]) return p;
     var s = location.pathname.split("/").filter(Boolean)[0];
