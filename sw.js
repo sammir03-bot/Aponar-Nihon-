@@ -1,4 +1,8 @@
-/* Aponar Nihon service-worker wrapper — app shell v47 — RUN 41 (2026-11-24):
+/* Aponar Nihon service-worker wrapper — app shell v48 — RUN 42 (2026-11-24):
+   Phase 4 (FINAL) for id/ar/ml: question-bank shards, interview, exam,
+   study and news sidecars; the base worker's caches are bumped to v42 in
+   sw-base-v28.js so installed phones flush and pick up the new assets.
+   RUN 41 (2026-11-24):
    Phase 3 lesson data for id/ar/ml: new data sidecars (N3, Quartet,
    Run 28 families) and id/ar/ml sections in the embedded vocab/kanji/
    grammar data files; the base worker's caches are bumped to v41 in

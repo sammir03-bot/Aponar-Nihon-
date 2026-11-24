@@ -13,9 +13,11 @@
    RUN 39 (2026-11-24): cache names bumped v39 -> v40 — Phase 1 DYN chrome
    values for id/ar/ml in i18n.js plus the new app/tutor/cv sidecars.
    RUN 41 (2026-11-24): cache names bumped v40 -> v41 — Phase 3 lesson
-   data for id/ar/ml (new data sidecars + embedded data sections). */
-const STATIC_CACHE = "aponar-nihon-static-v41";
-const DYNAMIC_CACHE = "aponar-nihon-dynamic-v41";
+   data for id/ar/ml (new data sidecars + embedded data sections).
+   RUN 42 (2026-11-24): cache names bumped v41 -> v42 — Phase 4 (final)
+   question-bank / interview / exam / study / news sidecars for id/ar/ml. */
+const STATIC_CACHE = "aponar-nihon-static-v42";
+const DYNAMIC_CACHE = "aponar-nihon-dynamic-v42";
 
 const STATIC_ASSETS = [
   "/",
