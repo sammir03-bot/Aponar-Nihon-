@@ -1,0 +1,474 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "n4-grammar-lesson-44-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "মূল কনটেন্টে যান",
+   "target": "Lewati ke konten utama"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "Lesson 44 · প্রয়োগ ও সূক্ষ্মতা",
+   "target": "Pelajaran 44 · Penerapan dan Nuansa"
+  },
+  {
+   "source": "সব Lesson",
+   "target": "Semua Lesson"
+  },
+  {
+   "source": "প্রয়োগ ও সূক্ষ্মতা",
+   "target": "Penerapan dan Nuansa"
+  },
+  {
+   "source": "ধাপ ৪ · 41–45",
+   "target": "Tahap 4 · 41–45"
+  },
+  {
+   "source": "মাত্রা ছাড়ানো, কাজের গঠনগত সহজ/কঠিনতা, ইচ্ছাকৃতভাবে অবস্থা বদলানো এবং বিকল্প থেকে বেছে নেওয়া।",
+   "target": "Melebihi kadar, kemudahan/kesulitan struktural suatu tindakan, mengubah keadaan dengan sengaja, dan memilih dari alternatif."
+  },
+  {
+   "source": "4টি বিস্তারিত grammar block",
+   "target": "4 blok grammar terperinci"
+  },
+  {
+   "source": "13টি Japanese example",
+   "target": "13 contoh bahasa Jepang"
+  },
+  {
+   "source": "4টি ব্যাখ্যাসহ practice",
+   "target": "4 soal latihan dengan penjelasan"
+  },
+  {
+   "source": "Offline, mobile ও print friendly",
+   "target": "Offline, ramah perangkat seluler dan cetak"
+  },
+  {
+   "source": "あ Reading লুকান",
+   "target": "Sembunyikan あ Reading"
+  },
+  {
+   "source": "এখনো সম্পন্ন নয়",
+   "target": "Belum selesai"
+  },
+  {
+   "source": "✓ সম্পন্ন করুন",
+   "target": "✓ Tandai Selesai"
+  },
+  {
+   "source": "Lesson 44 · লক্ষ্য",
+   "target": "Pelajaran 44 · Tujuan"
+  },
+  {
+   "source": "এই Lesson শেষে যা পারবেন",
+   "target": "Apa yang akan dapat Anda lakukan setelah pelajaran ini"
+  },
+  {
+   "source": "Lesson 44 চারটি দৈনন্দিন judgement শেখায়: ‘বেশি হয়ে গেছে’, ‘করা সহজ/কঠিন’, ‘এটাকে এমন করি’, এবং ‘এটাই নেব’। সবগুলোর আগে stem ঠিক করতে পারলেই conjugation সহজ।",
+   "target": "Pelajaran 44 mengajarkan empat penilaian sehari-hari: 'sudah berlebihan', 'mudah/sulit dilakukan', 'saya buat jadi seperti ini', dan 'saya ambil yang ini'. Jika Anda bisa menetapkan stem sebelum masing-masing, konjugasinya mudah."
+  },
+  {
+   "source": "verb/い-A/な-A stem-এর সঙ্গে すぎます জুড়বেন",
+   "target": "Anda akan dapat menempelkan すぎます pada stem kata kerja/kata sifat い/kata sifat な"
+  },
+  {
+   "source": "やすい/にくい দিয়ে action-এর সহজতা/কঠিনতা বলবেন",
+   "target": "Anda akan dapat menyatakan kemudahan/kesulitan suatu tindakan dengan やすい/にくい"
+  },
+  {
+   "source": "する দিয়ে agent-caused state change প্রকাশ করবেন",
+   "target": "Anda akan dapat menyatakan perubahan keadaan yang disebabkan pelaku dengan する"
+  },
+  {
+   "source": "Nにします দিয়ে menu/option নির্বাচন করবেন",
+   "target": "Anda akan dapat memilih menu/pilihan dengan Nにします"
+  },
+  {
+   "source": "স্বাভাবিক/কাম্য সীমার চেয়ে অতিরিক্ত",
+   "target": "Melebihi batas normal/diinginkan"
+  },
+  {
+   "source": "গঠন",
+   "target": "Pembentukan"
+  },
+  {
+   "source": "ধরন",
+   "target": "Jenis"
+  },
+  {
+   "source": "উদাহরণ",
+   "target": "Contoh"
+  },
+  {
+   "source": "ক্রিয়া",
+   "target": "Kata kerja"
+  },
+  {
+   "source": "Vます থেকে ます বাদ＋すぎる",
+   "target": "Dari Vます, hilangkan ます＋すぎる"
+  },
+  {
+   "source": "い-বিশেষণ",
+   "target": "い-adjective"
+  },
+  {
+   "source": "শেষ い বাদ＋すぎる",
+   "target": "Hilangkan い terakhir＋すぎる"
+  },
+  {
+   "source": "な-বিশেষণ",
+   "target": "な-adjective"
+  },
+  {
+   "source": "食べなさすぎます／簡単ではなさすぎる (কম ব্যবহৃত)",
+   "target": "食べなさすぎます／簡単ではなさすぎる (lebih jarang digunakan)"
+  },
+  {
+   "source": "বিস্তারিত ব্যাখ্যা",
+   "target": "Penjelasan Terperinci"
+  },
+  {
+   "source": "すぎる নিজে Group 2 verb; tense/negative শেষে: 食べすぎました, 高すぎません, 静かすぎて…。",
+   "target": "すぎる sendiri adalah kata kerja Kelompok 2; kala/negatifnya di akhir: 食べすぎました, 高すぎません, 静かすぎて…."
+  },
+  {
+   "source": "সাধারণত negative evaluation—মাত্রা সমস্যা করছে। কিন্তু きれいすぎる ‘অবিশ্বাস্য সুন্দর’ প্রশংসামূলক hyperbole-ও হতে পারে।",
+   "target": "Biasanya penilaian negatif — kadarnya menimbulkan masalah. Tetapi きれいすぎる, 'cantiknya tak terkira', juga bisa menjadi hiperbola pujian."
+  },
+  {
+   "source": "すぎて consequence যুক্ত হয়: 飲みすぎて、頭が痛いです।",
+   "target": "すぎて menambahkan akibat: 飲みすぎて、頭が痛いです."
+  },
+  {
+   "source": "যা মনে রাখবেন",
+   "target": "Yang Perlu Diingat"
+  },
+  {
+   "source": "Verb て-form নয়: 食べてすぎる ✕; 食べすぎる ✓।",
+   "target": "Bukan bentuk て kata kerja: 食べてすぎる ✕; 食べすぎる ✓."
+  },
+  {
+   "source": "গতকাল বেশি কফি খেয়েছি।",
+   "target": "Kemarin saya minum kopi terlalu banyak."
+  },
+  {
+   "source": "ব্যাগটি অতিরিক্ত ভারী, তাই নিতে পারছি না।",
+   "target": "Tasnya terlalu berat, jadi saya tidak bisa membawanya."
+  },
+  {
+   "source": "শহরটি রাতে অতিরিক্ত নীরব।",
+   "target": "Kotanya terlalu sunyi di malam hari."
+  },
+  {
+   "source": "✕ ভুল",
+   "target": "✕ Salah"
+  },
+  {
+   "source": "✓ সঠিক",
+   "target": "✓ Benar"
+  },
+  {
+   "source": "কেন:",
+   "target": "Mengapa:"
+  },
+  {
+   "source": "い-বিশেষণের শেষ い বাদ＋すぎます।",
+   "target": "Hilangkan い terakhir kata sifat い＋すぎます."
+  },
+  {
+   "source": "কাজটি করা সহজ / করা কঠিন—বস্তু বা পরিস্থিতির বৈশিষ্ট্য",
+   "target": "Tindakan itu mudah dilakukan / sulit dilakukan — sifat benda atau situasinya"
+  },
+  {
+   "source": "সহজ",
+   "target": "Mudah"
+  },
+  {
+   "source": "কঠিন",
+   "target": "Sulit"
+  },
+  {
+   "source": "い-বিশেষণের মতো",
+   "target": "Seperti kata sifat い"
+  },
+  {
+   "source": "やすい/にくい সাধারণত action-এর objective ease/difficulty বা tendency। このペンは書きやすい = কলমটির design/feel লিখতে সহজ। 私は漢字が書けません = আমার ability সমস্যা—আলাদা।",
+   "target": "やすい/にくい biasanya menyatakan kemudahan/kesulitan objektif suatu tindakan, atau kecenderungan. このペンは書きやすい = desain/rasa pena itu membuatnya mudah digunakan menulis. 私は漢字が書けません = kemampuan saya yang bermasalah — itu berbeda."
+  },
+  {
+   "source": "ভুল/পরিবর্তনের প্রবণতাও: このコップは割れやすい = সহজে ভেঙে যায়। 忘れやすい = সহজে ভুলে যাওয়ার tendency।",
+   "target": "Ada juga kecenderungan untuk berubah/salah: このコップは割れやすい = mudah pecah. 忘れやすい = kecenderungan mudah lupa."
+  },
+  {
+   "source": "Mental unwillingness-এর にくい nuance থাকতে পারে (言いにくい = বলা awkward), কিন্তু impossible নয়।",
+   "target": "にくい bisa mengandung nuansa keengganan mental (言いにくい = canggung untuk dikatakan), tetapi bukan berarti mustahil."
+  },
+  {
+   "source": "এই পাঠ্যবইয়ের ব্যাখ্যা বোঝা সহজ।",
+   "target": "Penjelasan buku teks ini mudah dipahami."
+  },
+  {
+   "source": "জুতাটি হালকা, তাই হাঁটা সহজ।",
+   "target": "Sepatunya ringan, jadi mudah dipakai berjalan."
+  },
+  {
+   "source": "কানজিটির আকার মিল বলে মনে রাখা কঠিন।",
+   "target": "Bentuk-bentuk kanjinya mirip, jadi sulit diingat."
+  },
+  {
+   "source": "জরুরি বিষয় সহজে ভুলে যাই, তাই নোট করি।",
+   "target": "Saya mudah melupakan hal penting, jadi saya mencatatnya."
+  },
+  {
+   "source": "読みます-এর stem 読み＋やすい।",
+   "target": "Stem dari 読みます adalah 読み＋やすい."
+  },
+  {
+   "source": "কেউ ইচ্ছাকৃতভাবে জিনিসের অবস্থা/গুণ বদলায়",
+   "target": "Seseorang dengan sengaja mengubah keadaan/kualitas suatu benda"
+  },
+  {
+   "source": "শেষ い→く＋します",
+   "target": "い terakhir→く＋します"
+  },
+  {
+   "source": "বিশেষ্য",
+   "target": "Kata benda"
+  },
+  {
+   "source": "なる-তে অবস্থা নিজে/স্বাভাবিকভাবে বদলায়: 部屋が明るくなりました। する-তে agent বদলায়: 電気をつけて、部屋を明るくしました।",
+   "target": "Dengan なる keadaan berubah sendiri/secara alami: 部屋が明るくなりました. Dengan する pelaku yang mengubahnya: 電気をつけて、部屋を明るくしました."
+  },
+  {
+   "source": "Object を: 音を小さくしてください = শব্দ ছোট/কম করুন। な-A/N-এ に: 部屋をきれいにします, 会議室を禁煙にします।",
+   "target": "Objek を: 音を小さくしてください = tolong kecilkan suaranya. Dengan kata sifat な/kata benda, に: 部屋をきれいにします, 会議室を禁煙にします."
+  },
+  {
+   "source": "Adverbial く/に＋する structure; する-এর tense শেষে।",
+   "target": "Strukturnya adverbial く/に＋する; kala dari する di akhir."
+  },
+  {
+   "source": "নিজে বদলায় が＋なる; কেউ বদলায় を＋する।",
+   "target": "Berubah sendiri が＋なる; seseorang mengubahnya を＋する."
+  },
+  {
+   "source": "অক্ষর আরেকটু বড় করুন।",
+   "target": "Tolong buat hurufnya sedikit lebih besar."
+  },
+  {
+   "source": "ঘরটি পরিষ্কার করেছি।",
+   "target": "Saya sudah membersihkan ruangan."
+  },
+  {
+   "source": "এই বাক্সটিকে বইয়ের তাক বানাব।",
+   "target": "Saya akan menjadikan kotak ini rak buku."
+  },
+  {
+   "source": "い-বিশেষণ 小さい→小さく＋する।",
+   "target": "Kata sifat い 小さい→小さく＋する."
+  },
+  {
+   "source": "Nにします（পছন্দ নির্বাচন）",
+   "target": "Nにします (Memilih Preferensi)"
+  },
+  {
+   "source": "একাধিক option থেকে N বেছে নেওয়া—‘আমি N নেব/ঠিক করলাম’",
+   "target": "Memilih N dari beberapa pilihan — 'saya ambil N / saya putuskan N'"
+  },
+  {
+   "source": "রেস্তোরাঁ, কেনাকাটা, রং/তারিখ/পথ—option বেছে নেওয়ার বহুল রূপ। コーヒーにします = কফিই নেব।",
+   "target": "Restoran, belanja, warna/tanggal/rute — bentuk yang sangat umum untuk memilih pilihan. コーヒーにします = saya ambil kopi."
+  },
+  {
+   "source": "決めます স্পষ্ট ‘সিদ্ধান্ত নিই’; Nにします কথোপকথনে selection-এর ফল সহজে বলে। Question: 何にしますか = কী নেবেন/কোনটি ঠিক করবেন?",
+   "target": "決めます jelas berarti 'saya memutuskan'; Nにします dengan mudah menyatakan hasil pilihan dalam percakapan. Pertanyaan: 何にしますか = Anda mau yang mana / Anda putuskan yang mana?"
+  },
+  {
+   "source": "Nにします state-change অর্থও হতে পারে; context object/option দেখে ধরুন: 部屋を教室にします = ঘরকে শ্রেণিকক্ষ বানাই; 飲み物はお茶にします = পানীয় হিসেবে চা নেব।",
+   "target": "Nにします juga bisa berarti perubahan keadaan; nilai dari objek/pilihan dalam konteks: 部屋を教室にします = saya jadikan ruangan itu kelas; 飲み物はお茶にします = untuk minumannya, saya ambil teh."
+  },
+  {
+   "source": "আমি কারি নেব।",
+   "target": "Saya ambil kari."
+  },
+  {
+   "source": "মিটিং শুক্রবার ঠিক করি।",
+   "target": "Kita tetapkan rapatnya hari Jumat."
+  },
+  {
+   "source": "রং হিসেবে নীল বেছে নিয়েছি।",
+   "target": "Saya memilih warna biru."
+  },
+  {
+   "source": "Option নির্বাচন particle に; を＋する অন্য action বোঝাবে।",
+   "target": "Partikel untuk memilih pilihan adalah に; を＋する akan menunjukkan tindakan yang berbeda."
+  },
+  {
+   "source": "এক নজরে পার্থক্য",
+   "target": "Perbedaan dalam Sekilas"
+  },
+  {
+   "source": "কোন পরিস্থিতিতে কোনটি?",
+   "target": "Yang mana dalam situasi apa?"
+  },
+  {
+   "source": "রূপ",
+   "target": "Bentuk"
+  },
+  {
+   "source": "কেন্দ্র",
+   "target": "Pusat"
+  },
+  {
+   "source": "সীমা ছাড়ানো",
+   "target": "Melebihi batas"
+  },
+  {
+   "source": "অতিরিক্ত দামি",
+   "target": "Terlalu mahal"
+  },
+  {
+   "source": "কাজের সহজতা",
+   "target": "Kemudahan suatu tindakan"
+  },
+  {
+   "source": "পড়া সহজ",
+   "target": "Mudah dibaca"
+  },
+  {
+   "source": "agent অবস্থা বদলায়",
+   "target": "Pelaku mengubah keadaan"
+  },
+  {
+   "source": "ঘর উজ্জ্বল করি",
+   "target": "Saya membuat ruangan terang"
+  },
+  {
+   "source": "option নির্বাচন",
+   "target": "Memilih pilihan"
+  },
+  {
+   "source": "কফি নিই",
+   "target": "Saya ambil kopi"
+  },
+  {
+   "source": "বাস্তব কথোপকথন",
+   "target": "Percakapan nyata"
+  },
+  {
+   "source": "রেস্তোরাঁয় অর্ডার",
+   "target": "Memesan di Restoran"
+  },
+  {
+   "source": "কী নেবেন?",
+   "target": "Anda mau yang mana?"
+  },
+  {
+   "source": "এই কারি অতিরিক্ত ঝাল কি?",
+   "target": "Apakah kari ini terlalu pedas?"
+  },
+  {
+   "source": "না। খেতে সহজ/হালকা।",
+   "target": "Tidak. Mudah dimakan/ringan."
+  },
+  {
+   "source": "তাহলে কারি নেব। ভাত কম দিন।",
+   "target": "Kalau begitu saya ambil kari. Tolong nasinya dikurangi."
+  },
+  {
+   "source": "নিজে যাচাই করুন",
+   "target": "Periksa Diri Anda Sendiri"
+  },
+  {
+   "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+   "target": "Latihan dengan jawaban dan penjelasan"
+  },
+  {
+   "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+   "target": "Pertama tulis jawaban di buku catatan Anda, lalu ketuk pertanyaan untuk memeriksa jawaban dan alasannya."
+  },
+  {
+   "source": "1. ‘গতকাল বেশি খেয়েছি’ বলুন।",
+   "target": "1. Katakan: 'Kemarin saya makan terlalu banyak'."
+  },
+  {
+   "source": "2. ‘এই কলম দিয়ে লেখা সহজ’ বলুন।",
+   "target": "2. Katakan: 'Pena ini mudah digunakan untuk menulis'."
+  },
+  {
+   "source": "3. ‘শব্দ একটু কম করুন’ বলুন।",
+   "target": "3. Katakan: 'Tolong kecilkan suaranya sedikit'."
+  },
+  {
+   "source": "4. ‘আমি চা নেব’ বলুন।",
+   "target": "4. Katakan: 'Saya ambil teh'."
+  },
+  {
+   "source": "এক বাক্যে Master Key",
+   "target": "Kunci Utama dalam Satu Kalimat"
+  },
+  {
+   "source": "মাত্রা বিচার → すぎる; action-এর designগত ease → やすい/にくい; agent বদলালে Aく/N・なAにする; option বাছলে Nにする।",
+   "target": "Menilai kadar → すぎる; kemudahan berdasarkan desain tindakan → やすい/にくい; jika pelaku mengubahnya, Aく/N・なAにする; jika memilih pilihan, Nにする."
+  },
+  {
+   "source": "বিশ্বস্ত রেফারেন্স",
+   "target": "Referensi Tepercaya"
+  },
+  {
+   "source": "সিলেবাস ও যাচাই",
+   "target": "Silabus dan Verifikasi"
+  },
+  {
+   "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+   "target": "Pelajaran mandiri dalam bahasa Indonesia ini dibuat dengan menyelaraskan urutan pelajaran Minna no Nihongo II, cakupan resmi JLPT N4, dan sumber belajar Japan Foundation. Contoh dan penjelasannya dalam bahasa Indonesia ditulis baru."
+  },
+  {
+   "source": "← আগের Lesson 43",
+   "target": "← Pelajaran 43 sebelumnya"
+  },
+  {
+   "source": "পরের Lesson 45 →",
+   "target": "Pelajaran 45 berikutnya →"
+  },
+  {
+   "source": "Lesson সূচি",
+   "target": "Indeks Lesson"
+  },
+  {
+   "source": "শেখার লক্ষ্য",
+   "target": "Tujuan belajar"
+  },
+  {
+   "source": "4. Nにします（পছন্দ নির্বাচন）",
+   "target": "4. Nにします (Memilih Preferensi)"
+  },
+  {
+   "source": "পার্থক্য টেবিল",
+   "target": "Tabel Perbandingan"
+  },
+  {
+   "source": "কথোপকথন",
+   "target": "Percakapan"
+  },
+  {
+   "source": "Course progress লোড হচ্ছে…",
+   "target": "Progress kursus sedang dimuat…"
+  },
+  {
+   "source": "আপনার নিহোন · N4 Grammar 26–50",
+   "target": "আপনার নিহোন · N4 Grammar 26–50"
+  },
+  {
+   "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+   "target": "Edisi belajar mandiri bahasa Indonesia yang gratis dan terperinci untuk pelajar."
+  }
+ ]
+}

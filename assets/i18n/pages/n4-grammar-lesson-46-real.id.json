@@ -1,0 +1,486 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "n4-grammar-lesson-46-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "মূল কনটেন্টে যান",
+   "target": "Lewati ke konten utama"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "Lesson 46 · সময় ও Keigo",
+   "target": "Pelajaran 46 · Waktu dan Keigo"
+  },
+  {
+   "source": "সব Lesson",
+   "target": "Semua Lesson"
+  },
+  {
+   "source": "সময় ও Keigo",
+   "target": "Waktu dan Keigo"
+  },
+  {
+   "source": "ধাপ ৫ · 46–50",
+   "target": "Tahap 5 · 46–50"
+  },
+  {
+   "source": "কাজ শুরু হওয়ার ঠিক আগে, চলার ঠিক সময়, শেষ হওয়ার ঠিক পরে, বক্তার কাছে সাম্প্রতিক অতীত এবং প্রমাণভিত্তিক প্রত্যাশা।",
+   "target": "Tepat sebelum pekerjaan dimulai, tepat saat sedang berlangsung, tepat setelah selesai, masa lalu baru-baru ini menurut perasaan pembicara, dan ekspektasi berdasarkan bukti."
+  },
+  {
+   "source": "5টি বিস্তারিত grammar block",
+   "target": "5 blok tata bahasa terperinci"
+  },
+  {
+   "source": "16টি Japanese example",
+   "target": "16 contoh bahasa Jepang"
+  },
+  {
+   "source": "5টি ব্যাখ্যাসহ practice",
+   "target": "5 soal latihan dengan penjelasan"
+  },
+  {
+   "source": "Offline, mobile ও print friendly",
+   "target": "Offline, ramah perangkat seluler dan cetak"
+  },
+  {
+   "source": "あ Reading লুকান",
+   "target": "Sembunyikan あ Reading"
+  },
+  {
+   "source": "এখনো সম্পন্ন নয়",
+   "target": "Belum selesai"
+  },
+  {
+   "source": "✓ সম্পন্ন করুন",
+   "target": "✓ Tandai Selesai"
+  },
+  {
+   "source": "Lesson 46 · লক্ষ্য",
+   "target": "Pelajaran 46 · Tujuan"
+  },
+  {
+   "source": "এই Lesson শেষে যা পারবেন",
+   "target": "Apa yang akan dapat Anda lakukan setelah pelajaran ini"
+  },
+  {
+   "source": "বাংলার ‘এইমাত্র’ বা ‘এখন’ Japanese-এ event-এর boundary অনুযায়ী বদলায়। 食べるところ = এখন শুরু করব, 食べているところ = মাঝখানে, 食べたところ = এইমাত্র শেষ। たばかり clock-এর exact মুহূর্ত নয়—বক্তার অনুভূতিতে ‘সাম্প্রতিক’। はず আবার জানা তথ্য থেকে expected conclusion।",
+   "target": "Kata 'baru saja' atau 'sekarang' dalam bahasa Bengali berubah dalam bahasa Jepang menurut batas peristiwanya. 食べるところ = sekarang akan mulai, 食べているところ = di tengah-tengah, 食べたところ = baru saja selesai. たばかり bukanlah momen yang tepat menurut jam — 'baru-baru ini' menurut perasaan pembicara. はず, sekali lagi, adalah kesimpulan yang diharapkan dari informasi yang diketahui."
+  },
+  {
+   "source": "তিনটি ところ form দিয়ে event timeline নির্ভুলভাবে বলবেন",
+   "target": "Anda akan dapat menyatakan garis waktu suatu peristiwa dengan tepat dengan tiga bentuk ところ"
+  },
+  {
+   "source": "たところ ও たばかり-এর objective immediacy বনাম subjective recency আলাদা করবেন",
+   "target": "Anda akan dapat membedakan kedekatan objektif たところ dan kebaruan subjektif たばかり"
+  },
+  {
+   "source": "はずです দিয়ে evidence-based expectation বলবেন",
+   "target": "Anda akan dapat menyatakan ekspektasi berdasarkan bukti dengan はずです"
+  },
+  {
+   "source": "はずがない/ないはず-এর সম্পূর্ণ ভিন্ন অর্থ বুঝবেন",
+   "target": "Anda akan memahami makna はずがない/ないはず yang sama sekali berbeda"
+  },
+  {
+   "source": "ঠিক এখন কাজটি শুরু করতে যাচ্ছি—just about to",
+   "target": "Saya tepat akan memulai tindakan itu sekarang — just about to"
+  },
+  {
+   "source": "গঠন",
+   "target": "Pembentukan"
+  },
+  {
+   "source": "ধরন",
+   "target": "Jenis"
+  },
+  {
+   "source": "উদাহরণ",
+   "target": "Contoh"
+  },
+  {
+   "source": "শুরু-পূর্ব",
+   "target": "Sebelum permulaan"
+  },
+  {
+   "source": "বিস্তারিত ব্যাখ্যা",
+   "target": "Penjelasan Terperinci"
+  },
+  {
+   "source": "কাজ এখনো শুরু হয়নি, boundary-এর ঠিক আগে। これから, 今から, ちょうど-এর সঙ্গে স্বাভাবিক।",
+   "target": "Tindakannya belum dimulai; tepat sebelum batasnya. Wajar dengan これから, 今から, ちょうど."
+  },
+  {
+   "source": "Simple future これから食べます কেবল ‘এখন খাব’; 食べるところです ‘খেতে বসেছি/শুরু করার ঠিক মুহূর্তে’—তাৎক্ষণিকতা বেশি।",
+   "target": "Masa depan sederhana これから食べます hanya berkata 'saya akan makan sekarang'; 食べるところです berkata 'saya akan makan / tepat pada momen memulainya' — kedekatannya lebih kuat."
+  },
+  {
+   "source": "ところ মূলত ‘স্থান’, কিন্তু এখানে সময়ের position—event timeline-এর কোন জায়গায় আছি।",
+   "target": "ところ awalnya berarti 'tempat', tetapi di sini ia adalah posisi dalam waktu — di mana saya berada pada garis waktu peristiwa itu."
+  },
+  {
+   "source": "যা মনে রাখবেন",
+   "target": "Yang Perlu Diingat"
+  },
+  {
+   "source": "এখনই মিটিং শুরু করতে যাচ্ছি।",
+   "target": "Saya tepat akan memulai rapat sekarang."
+  },
+  {
+   "source": "ঠিক এখন বাড়ি থেকে বের হওয়ার মুহূর্ত।",
+   "target": "Ini adalah momen tepat keluar dari rumah."
+  },
+  {
+   "source": "এখন দুপুরের খাবার বানাতে যাচ্ছি।",
+   "target": "Saya tepat akan membuat makan siang sekarang."
+  },
+  {
+   "source": "✕ ভুল",
+   "target": "✕ Salah"
+  },
+  {
+   "source": "✓ সঠিক",
+   "target": "✓ Benar"
+  },
+  {
+   "source": "কেন:",
+   "target": "Mengapa:"
+  },
+  {
+   "source": "ところ-এর আগে plain dictionary form।",
+   "target": "Sebelum ところ, bentuk kamus plain."
+  },
+  {
+   "source": "ঠিক এই মুহূর্তে কাজের মাঝখানে—right in the middle of",
+   "target": "Tepat pada momen ini di tengah-tengah pekerjaan — right in the middle of"
+  },
+  {
+   "source": "মধ্যবর্তী",
+   "target": "Di tengah-tengah"
+  },
+  {
+   "source": "Vています-এর চলমান অর্থের চেয়ে focus বেশি: ‘এই মুহূর্তেই কাজটি চলছে, এখনও শেষ হয়নি’। ফোনে status update-এ বহুল।",
+   "target": "Fokusnya lebih kuat daripada makna berlanjut dari Vています: 'tindakan itu sedang berlangsung tepat pada momen ini, dan belum selesai'. Sangat umum dalam pembaruan status lewat telepon."
+  },
+  {
+   "source": "Habitual ています-এর সঙ্গে সাধারণত নয়; 毎日勉強しているところです অস্বাভাবিক, যদি নির্দিষ্ট current phase বোঝানো না হয়।",
+   "target": "Biasanya tidak digunakan dengan ています habitual; 毎日勉強しているところです tidak wajar, kecuali jika fase tertentu saat ini yang dimaksud."
+  },
+  {
+   "source": "ている-এর casual contraction てるところ কথায় শোনা যায়; formal content-এ পূর্ণ form রাখুন।",
+   "target": "Kontraksi santai dari ている, てるところ, terdengar dalam percakapan; pertahankan bentuk lengkap dalam konten formal."
+  },
+  {
+   "source": "Process-এর ভিতর: Vているところ。",
+   "target": "Di dalam proses: Vているところ."
+  },
+  {
+   "source": "এখন ঠিক ওই বিষয়টি খতিয়ে দেখছি।",
+   "target": "Saat ini saya tepat sedang menyelidiki hal itu."
+  },
+  {
+   "source": "এখন রান্নার মাঝখানে, পরে ফোন করব।",
+   "target": "Saya sedang di tengah memasak sekarang, nanti saya telepon."
+  },
+  {
+   "source": "বিভাগীয় প্রধান এখন অতিথির সঙ্গে কথার মাঝখানে আছেন।",
+   "target": "Kepala departemen sekarang sedang di tengah berbicara dengan tamu."
+  },
+  {
+   "source": "今、調べたところです。（এখনো খুঁজছি বলতে）",
+   "target": "今、調べたところです。(bermaksud mengatakan bahwa saya masih menyelidikinya)"
+  },
+  {
+   "source": "চলমান phase-এ ている; たところ হলে এইমাত্র শেষ।",
+   "target": "Dalam fase berlanjut, ている; jika たところ, artinya baru saja selesai."
+  },
+  {
+   "source": "ঠিক এইমাত্র কাজ শেষ হয়েছে—just finished",
+   "target": "Tepat baru saja pekerjaan selesai — just finished"
+  },
+  {
+   "source": "শেষ-পরবর্তী",
+   "target": "Setelah akhir"
+  },
+  {
+   "source": "Event boundary-এর ঠিক পরে; সময়গতভাবে খুব কাছাকাছি। 今, たった今, ちょうど clue।",
+   "target": "Tepat setelah batas peristiwa; sangat dekat dalam waktu. 今, たった今, ちょうど adalah petunjuknya."
+  },
+  {
+   "source": "নতুন ফল/তথ্যও বোঝাতে পারে: 今確認したところ、間違いがありました (যাচাই করে দেখলাম…)—এটি উচ্চতর extension। N4-এ immediate completion আগে ধরুন।",
+   "target": "Juga dapat menunjukkan hasil/informasi baru: 今確認したところ、間違いがありました (saya memeriksa dan menemukan…) — ini adalah perluasan tingkat lebih tinggi. Di N4, pahami dulu penyelesaian seketika."
+  },
+  {
+   "source": "এক ঘণ্টা/এক বছর আগে হলে সাধারণত たところ নয়, যদি relative context-এ ‘ঠিক পরে’ বোঝানো না হয়।",
+   "target": "Satu jam/satu tahun yang lalu biasanya bukan たところ, kecuali jika 'tepat setelahnya' yang dimaksud dalam konteks relatif."
+  },
+  {
+   "source": "Immediate completion; clock-এ ‘খুব সাম্প্রতিক’।",
+   "target": "Penyelesaian seketika; 'sangat baru' menurut jam."
+  },
+  {
+   "source": "এইমাত্র স্টেশনে পৌঁছেছি।",
+   "target": "Saya baru saja tiba di stasiun."
+  },
+  {
+   "source": "মিটিং এইমাত্র শেষ হয়েছে।",
+   "target": "Rapat baru saja berakhir."
+  },
+  {
+   "source": "এইমাত্র ইমেইল পাঠিয়েছি।",
+   "target": "Saya baru saja mengirim email."
+  },
+  {
+   "source": "এক বছর সাধারণত immediate নয়; বক্তার subjective ‘সাম্প্রতিক’ হলে ばかり সম্ভব।",
+   "target": "Satu tahun biasanya tidak seketika; jika 'baru-baru ini' menurut perasaan subjektif pembicara, ばかり dimungkinkan."
+  },
+  {
+   "source": "বক্তার অনুভূতিতে অল্প আগে কাজ হয়েছে—just/recently",
+   "target": "Tindakan terjadi beberapa waktu lalu menurut perasaan pembicara — just/recently"
+  },
+  {
+   "source": "সাম্প্রতিক",
+   "target": "Baru-baru ini"
+  },
+  {
+   "source": "Exact সময়ের সীমা নেই। পাঁচ মিনিট, এক সপ্তাহ, এমনকি জীবনপর্ব অনুযায়ী এক বছরও speaker-এর কাছে ‘এই তো সেদিন’ হতে পারে।",
+   "target": "Tidak ada batas waktu yang pasti. Lima menit, satu minggu, bahkan satu tahun, tergantung tahap kehidupan, bisa menjadi 'baru beberapa hari lalu' bagi pembicara."
+  },
+  {
+   "source": "たところ objective immediate boundary; たばかり subjective recency। 今食べたところです = এইমাত্র শেষ; 先週食べたばかりです = গত সপ্তাহেই তো খেয়েছি।",
+   "target": "たところ adalah batas seketika yang objektif; たばかり adalah kebaruan subjektif. 今食べたところです = saya baru saja selesai makan; 先週食べたばかりです = saya baru makan minggu lalu."
+  },
+  {
+   "source": "ばかり-এর অন্য অর্থ ‘শুধুই’ (遊んでばかり) আছে; এখানে た-form＋ばかり = recently completed।",
+   "target": "ばかり mempunyai makna lain, 'hanya' (遊んでばかり); di sini bentuk た＋ばかり = baru saja selesai."
+  },
+  {
+   "source": "Time expression থাকলেও speaker judgement: 三か月前に始めたばかりです।",
+   "target": "Meskipun ada ungkapan waktu, tetap penilaian pembicara: 三か月前に始めたばかりです."
+  },
+  {
+   "source": "আমি গত মাসেই এই কোম্পানিতে যোগ দিয়েছি।",
+   "target": "Saya baru bergabung dengan perusahaan ini bulan lalu."
+  },
+  {
+   "source": "ফোনটি সবে কিনেছি, অথচ নষ্ট হয়ে গেছে।",
+   "target": "Ponselnya baru saya beli, namun sudah rusak."
+  },
+  {
+   "source": "সবে দুপুরের খাবার খেয়েছি, তাই এখনো পেট ভরা।",
+   "target": "Saya baru saja makan siang, jadi masih kenyang."
+  },
+  {
+   "source": "সাম্প্রতিক completion-এ Vた＋ばかり।",
+   "target": "Untuk penyelesaian yang baru terjadi, Vた＋ばかり."
+  },
+  {
+   "source": "জানা তথ্য/যুক্তি অনুযায়ী এমন হওয়ার কথা—strong expectation",
+   "target": "Menurut informasi/logika yang diketahui, seharusnya demikian — ekspektasi yang kuat"
+  },
+  {
+   "source": "ক্রিয়া/い-A",
+   "target": "Kata kerja / い-A"
+  },
+  {
+   "source": "な-বিশেষণ",
+   "target": "な-adjective"
+  },
+  {
+   "source": "বিশেষ্য",
+   "target": "Kata benda"
+  },
+  {
+   "source": "でしょう অনুমান; はず evidence/plan/logic থেকে stronger ‘হওয়ার কথা’। 時刻表によると、電車は十時に来るはずです।",
+   "target": "でしょう adalah dugaan; はず adalah 'seharusnya demikian' yang lebih kuat, dari bukti, rencana, atau logika. 時刻表によると、電車は十時に来るはずです."
+  },
+  {
+   "source": "Vないはず = না হওয়ার কথা। Vるはずがない = হওয়ার কোনো কথাই নেই/অসম্ভব। অবস্থান বদলালে অর্থ উল্টে যায়।",
+   "target": "Vないはず = seharusnya tidak terjadi. Vるはずがない = tidak mungkin terjadi/mustahil. Jika posisinya berubah, maknanya berbalik."
+  },
+  {
+   "source": "নিজের simple intention-এ はず নয়: 私は明日行くはずです অস্বাভাবিক, কারণ নিজের plan নিশ্চিত জানি—行く予定です/つもりです। তবে নিজের ওপর বাহ্যিক schedule হলে 私も参加するはずになっています ইত্যাদি সম্ভব।",
+   "target": "はず tidak digunakan untuk niat sederhana Anda sendiri: 私は明日行くはずです tidak wajar, karena Anda mengetahui rencana Anda sendiri dengan pasti — 行く予定です/つもりです. Tetapi jika jadwal eksternal berlaku untuk Anda, 私も参加するはずになっています dan sebagainya dimungkinkan."
+  },
+  {
+   "source": "Expectation ভুল হলে: 来るはずでしたが、来ませんでした।",
+   "target": "Jika ekspektasi ternyata salah: 来るはずでしたが、来ませんでした."
+  },
+  {
+   "source": "তানাকা কথা দিয়েছেন, তাই আসার কথা।",
+   "target": "Tanaka sudah berjanji, jadi ia seharusnya datang."
+  },
+  {
+   "source": "আজ রবিবার, তাই ব্যাংক বন্ধ থাকার কথা।",
+   "target": "Hari ini Minggu, jadi bank seharusnya tutup."
+  },
+  {
+   "source": "চাবি টেবিলে রেখেছি, তাই সেখানেই থাকার কথা।",
+   "target": "Kuncinya saya letakkan di meja, jadi seharusnya ada di sana."
+  },
+  {
+   "source": "এত সহজ সমস্যা ভুল করার কথা নয়।",
+   "target": "Tidak mungkin saya membuat kesalahan pada soal semudah ini."
+  },
+  {
+   "source": "এক নজরে পার্থক্য",
+   "target": "Perbedaan dalam Sekilas"
+  },
+  {
+   "source": "কোন পরিস্থিতিতে কোনটি?",
+   "target": "Yang mana dalam situasi apa?"
+  },
+  {
+   "source": "রূপ",
+   "target": "Bentuk"
+  },
+  {
+   "source": "Timeline/মানসিকতা",
+   "target": "Garis waktu/pola pikir"
+  },
+  {
+   "source": "শুরু হওয়ার ঠিক আগে",
+   "target": "Tepat sebelum dimulai"
+  },
+  {
+   "source": "ঠিক মাঝখানে",
+   "target": "Tepat di tengah"
+  },
+  {
+   "source": "শেষের ঠিক পরে",
+   "target": "Tepat setelah berakhir"
+  },
+  {
+   "source": "speaker-এর কাছে সাম্প্রতিক",
+   "target": "Baru-baru ini bagi pembicara"
+  },
+  {
+   "source": "先週/先月-ও সম্ভব",
+   "target": "先週/先月 juga dimungkinkan"
+  },
+  {
+   "source": "তথ্য থেকে expected",
+   "target": "Diharapkan dari informasi"
+  },
+  {
+   "source": "বাস্তব কথোপকথন",
+   "target": "Percakapan nyata"
+  },
+  {
+   "source": "ফোনে কাজের status",
+   "target": "Status Pekerjaan, lewat Telepon"
+  },
+  {
+   "source": "রিপোর্ট হয়ে গেছে?",
+   "target": "Apakah laporannya sudah selesai?"
+  },
+  {
+   "source": "এখন শেষ পৃষ্ঠাটি লিখছি।",
+   "target": "Sekarang saya sedang menulis halaman terakhir."
+  },
+  {
+   "source": "মিটিং তিনটা থেকে। সময়মতো হবে?",
+   "target": "Rapatnya dari jam tiga. Apakah akan tepat waktu?"
+  },
+  {
+   "source": "জি। আর দশ মিনিটে শেষ হওয়ার কথা।",
+   "target": "Ya. Seharusnya selesai sepuluh menit lagi."
+  },
+  {
+   "source": "নিজে যাচাই করুন",
+   "target": "Periksa Diri Anda Sendiri"
+  },
+  {
+   "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+   "target": "Latihan dengan jawaban dan penjelasan"
+  },
+  {
+   "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+   "target": "Pertama tulis jawaban di buku catatan Anda, lalu ketuk pertanyaan untuk memeriksa jawaban dan alasannya."
+  },
+  {
+   "source": "1. ‘এখনই বের হতে যাচ্ছি’ বলুন।",
+   "target": "1. Katakan: 'Saya tepat akan keluar'."
+  },
+  {
+   "source": "2. ‘এখন ঠিক খাবার খাচ্ছি’ বলুন।",
+   "target": "2. Katakan: 'Sekarang saya tepat sedang makan'."
+  },
+  {
+   "source": "3. ‘এইমাত্র পৌঁছেছি’ বলুন।",
+   "target": "3. Katakan: 'Saya baru saja tiba'."
+  },
+  {
+   "source": "4. ‘সবে চাকরি শুরু করেছি’ বলুন।",
+   "target": "4. Katakan: 'Saya baru saja mulai bekerja'."
+  },
+  {
+   "source": "5. ‘আজ দোকান খোলা থাকার কথা’ বলুন।",
+   "target": "5. Katakan: 'Hari ini toko seharusnya buka'."
+  },
+  {
+   "source": "এক বাক্যে Master Key",
+   "target": "Kunci Utama dalam Satu Kalimat"
+  },
+  {
+   "source": "Event-এর আগে/মাঝে/ঠিক পরে = る／ている／た＋ところ; subjective ‘সবে’ = たばかり; জানা তথ্য থেকে ‘হওয়ার কথা’ = はず。",
+   "target": "Sebelum/di tengah/tepat setelah suatu peristiwa = る/ている/た＋ところ; 'baru saja' subjektif = たばかり; 'seharusnya demikian' dari informasi yang diketahui = はず."
+  },
+  {
+   "source": "বিশ্বস্ত রেফারেন্স",
+   "target": "Referensi Tepercaya"
+  },
+  {
+   "source": "সিলেবাস ও যাচাই",
+   "target": "Silabus dan Verifikasi"
+  },
+  {
+   "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+   "target": "Pelajaran mandiri dalam bahasa Indonesia ini dibuat dengan menyelaraskan urutan pelajaran Minna no Nihongo II, cakupan resmi JLPT N4, dan sumber belajar Japan Foundation. Contoh dan penjelasannya dalam bahasa Indonesia ditulis baru."
+  },
+  {
+   "source": "← আগের Lesson 45",
+   "target": "← Pelajaran 45 sebelumnya"
+  },
+  {
+   "source": "পরের Lesson 47 →",
+   "target": "Pelajaran 47 berikutnya →"
+  },
+  {
+   "source": "Lesson সূচি",
+   "target": "Indeks Lesson"
+  },
+  {
+   "source": "শেখার লক্ষ্য",
+   "target": "Tujuan belajar"
+  },
+  {
+   "source": "পার্থক্য টেবিল",
+   "target": "Tabel Perbandingan"
+  },
+  {
+   "source": "কথোপকথন",
+   "target": "Percakapan"
+  },
+  {
+   "source": "Course progress লোড হচ্ছে…",
+   "target": "Progress kursus sedang dimuat…"
+  },
+  {
+   "source": "আপনার নিহোন · N4 Grammar 26–50",
+   "target": "আপনার নিহোন · N4 Grammar 26–50"
+  },
+  {
+   "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+   "target": "Edisi belajar mandiri bahasa Indonesia yang gratis dan terperinci untuk pelajar."
+  }
+ ]
+}

@@ -1,0 +1,414 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "n4-grammar-lesson-40-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "মূল কনটেন্টে যান",
+   "target": "Lewati ke konten utama"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "Lesson 40 · জটিল বাক্য",
+   "target": "Lesson 40 · Kalimat Kompleks"
+  },
+  {
+   "source": "সব Lesson",
+   "target": "Semua Lesson"
+  },
+  {
+   "source": "জটিল বাক্য",
+   "target": "Kalimat Kompleks"
+  },
+  {
+   "source": "ধাপ ৩ · 36–40",
+   "target": "Tahap 3 · 36–40"
+  },
+  {
+   "source": "একটি প্রশ্নকে বড় বাক্যের ভেতর বসানো, yes/no অনিশ্চয়তা প্রকাশ এবং উত্তর জানতে বাস্তবে চেষ্টা করে দেখা।",
+   "target": "Menempatkan pertanyaan di dalam kalimat yang lebih besar, menyatakan ketidakpastian ya / tidak, dan benar-benar mencoba sesuatu dalam praktik untuk menemukan jawabannya."
+  },
+  {
+   "source": "3টি বিস্তারিত grammar block",
+   "target": "3 blok grammar terperinci"
+  },
+  {
+   "source": "10টি Japanese example",
+   "target": "10 contoh Japanese"
+  },
+  {
+   "source": "4টি ব্যাখ্যাসহ practice",
+   "target": "4 soal latihan dengan penjelasan"
+  },
+  {
+   "source": "Offline, mobile ও print friendly",
+   "target": "Offline, ramah perangkat seluler dan cetak"
+  },
+  {
+   "source": "あ Reading লুকান",
+   "target": "Sembunyikan あ Reading"
+  },
+  {
+   "source": "এখনো সম্পন্ন নয়",
+   "target": "Belum selesai"
+  },
+  {
+   "source": "✓ সম্পন্ন করুন",
+   "target": "✓ Tandai Selesai"
+  },
+  {
+   "source": "Lesson 40 · লক্ষ্য",
+   "target": "Lesson 40 · Tujuan"
+  },
+  {
+   "source": "এই Lesson শেষে যা পারবেন",
+   "target": "Apa yang akan dapat Anda lakukan setelah pelajaran ini"
+  },
+  {
+   "source": "‘স্টেশন কোথায়?’ একটি সরাসরি প্রশ্ন। ‘স্টেশন কোথায় আছে জানেন?’—এখানে প্রশ্নটি বড় বাক্যের object। Japanese embedded question-এ ভেতরের か রেখে বাইরের 知っていますか／調べます／教えてください যোগ হয়; polite ですか সরাসরি বসে না।",
+   "target": "\"Di mana stasiun?\" adalah pertanyaan langsung. \"Apakah Anda tahu di mana stasiun berada?\" — di sini pertanyaan adalah objek dari kalimat yang lebih besar. Dalam pertanyaan tersemat bahasa Jepang, か di dalam dipertahankan dan 知っていますか／調べます／教えてください ditambahkan di luar; ですか sopan tidak langsung masuk ke dalam."
+  },
+  {
+   "source": "疑問詞-সহ প্রশ্নকে plain clause＋か দিয়ে embed করবেন",
+   "target": "Anda akan dapat menyematkan pertanyaan dengan 疑問詞 menggunakan klausa plain + か"
+  },
+  {
+   "source": "yes/no প্রশ্নে かどうか ব্যবহার করবেন",
+   "target": "Anda akan dapat menggunakan かどうか untuk pertanyaan ya / tidak"
+  },
+  {
+   "source": "embedded noun/な-adjective-এর だ বাদ দেওয়ার নিয়ম জানবেন",
+   "target": "Anda akan mengetahui aturan membuang だ pada kata benda / な-adjective yang tersemat"
+  },
+  {
+   "source": "Vてみます দিয়ে ‘চেষ্টা করে দেখে ফল জানা’ বলবেন",
+   "target": "Anda akan dapat menyatakan \"coba dan lihat hasilnya\" dengan Vてみます"
+  },
+  {
+   "source": "কী/কে/কোথায়/কখন—এমন প্রশ্নকে বড় বাক্যের অংশ করা",
+   "target": "Menjadikan pertanyaan apa / siapa / di mana / kapan bagian dari kalimat yang lebih besar"
+  },
+  {
+   "source": "গঠন",
+   "target": "Pembentukan"
+  },
+  {
+   "source": "ধরন",
+   "target": "Jenis"
+  },
+  {
+   "source": "উদাহরণ",
+   "target": "Contoh"
+  },
+  {
+   "source": "ভেতরের প্রশ্ন",
+   "target": "Pertanyaan di dalam"
+  },
+  {
+   "source": "জানানো",
+   "target": "Memberi tahu"
+  },
+  {
+   "source": "তদন্ত",
+   "target": "Penyelidikan"
+  },
+  {
+   "source": "বিস্তারিত ব্যাখ্যা",
+   "target": "Penjelasan Terperinci"
+  },
+  {
+   "source": "ভেতরের প্রশ্নের word order সাধারণ Japanese clause-এর মতো; question word নিজের জায়গায় থাকে। どこに駅がありますか → 駅がどこにあるか知っていますか।",
+   "target": "Urutan kata pertanyaan di dalam seperti klausa bahasa Jepang biasa; kata tanya tetap di tempatnya. どこに駅がありますか → 駅がどこにあるか知っていますか."
+  },
+  {
+   "source": "Embedded clause plain style নেয়; どこですか知っていますか ✕। ভেতরের か প্রশ্নের boundary, বাইরের か পুরো বাক্যকে প্রশ্ন করে—তাই শেষে দুই ভিন্ন か আসতে পারে।",
+   "target": "Klausa sisipan mengambil gaya biasa (plain style); どこですか知っていますか ✕. か di bagian dalam adalah batas pertanyaan, dan か di bagian luar mempertanyakan seluruh kalimat — jadi dua か yang berbeda bisa muncul di akhir."
+  },
+  {
+   "source": "Subordinate subject অনেক সময় が: だれが来るか分かりません。",
+   "target": "Subjek klausa bawahan sering memakai が: だれが来るか分かりません。"
+  },
+  {
+   "source": "যা মনে রাখবেন",
+   "target": "Yang Perlu Diingat"
+  },
+  {
+   "source": "Question word থাকলে かどうか নয়; শুধু か।",
+   "target": "Jika ada kata tanya, bukan かどうか; hanya か."
+  },
+  {
+   "source": "পরের ট্রেন কখন আসে জানেন?",
+   "target": "Apakah Anda tahu kapan kereta berikutnya datang?"
+  },
+  {
+   "source": "এই কানজি কীভাবে পড়ে বলুন।",
+   "target": "Tolong beritahu saya bagaimana kanji ini dibaca."
+  },
+  {
+   "source": "মিটিংয়ে কে থাকবেন যাচাই করছি।",
+   "target": "Saya sedang memeriksa siapa yang akan hadir di rapat."
+  },
+  {
+   "source": "✕ ভুল",
+   "target": "✕ Salah"
+  },
+  {
+   "source": "✓ সঠিক",
+   "target": "✓ Benar"
+  },
+  {
+   "source": "কেন:",
+   "target": "Mengapa:"
+  },
+  {
+   "source": "Direct polite question-কে plain embedded clause-এ বদলান।",
+   "target": "Ubahlah pertanyaan sopan langsung menjadi klausa sisipan gaya biasa (plain)."
+  },
+  {
+   "source": "হবে কি হবে না / সত্য কি না—yes-no প্রশ্নকে embed করা",
+   "target": "Akan terjadi atau tidak / benar atau tidak — menyisipkan pertanyaan ya-tidak"
+  },
+  {
+   "source": "ক্রিয়া/い-A",
+   "target": "Kata kerja / い-A"
+  },
+  {
+   "source": "な-বিশেষণ",
+   "target": "な-adjective"
+  },
+  {
+   "source": "বিশেষ্য",
+   "target": "Kata benda"
+  },
+  {
+   "source": "Original question-এর উত্তর はい/いいえ হলে かどうか: 店が開いていますか → 店が開いているかどうか調べます।",
+   "target": "Jika jawaban pertanyaan aslinya adalah はい/いいえ, gunakan かどうか: 店が開いていますか → 店が開いているかどうか調べます."
+  },
+  {
+   "source": "Question word থাকলে かどうか ব্যবহার করবেন না: いつ来るか ✓, いつ来るかどうか ✕।",
+   "target": "Jika ada kata tanya, jangan gunakan かどうか: いつ来るか ✓, いつ来るかどうか ✕."
+  },
+  {
+   "source": "N/な-A present affirmative-এর だ বাদ: 学生かどうか, 必要かどうか। Negative option আলাদা না লিখলেও どうか-তে ‘না কি’ অন্তর্ভুক্ত।",
+   "target": "Hilangkan だ pada kata benda / kata sifat な dalam bentuk afirmatif present: 学生かどうか, 必要かどうか. Meskipun pilihan negatifnya tidak ditulis terpisah, どうか sudah mencakup makna 'atau tidak'."
+  },
+  {
+   "source": "কখন/কোথায়/কে → か; হ্যাঁ কি না → かどうか।",
+   "target": "Kapan/di mana/siapa → か; ya atau tidak → かどうか."
+  },
+  {
+   "source": "এই বাস স্টেশনে যায় কি না চালককে জিজ্ঞেস করব।",
+   "target": "Saya akan bertanya kepada pengemudi apakah bus ini pergi ke stasiun."
+  },
+  {
+   "source": "কথাটি সত্য কি না জানি না।",
+   "target": "Saya tidak tahu apakah cerita itu benar."
+  },
+  {
+   "source": "ওষুধটি নিরাপদ কি না যাচাই করুন।",
+   "target": "Tolong periksa apakah obat ini aman."
+  },
+  {
+   "source": "Noun-এর だ বাদ।",
+   "target": "Hilangkan だ pada kata benda."
+  },
+  {
+   "source": "ফল কী হয় জানতে বাস্তবে চেষ্টা করে দেখা",
+   "target": "Benar-benar mencobanya untuk mengetahui bagaimana hasilnya"
+  },
+  {
+   "source": "চেষ্টা",
+   "target": "Mencoba"
+  },
+  {
+   "source": "ইচ্ছা",
+   "target": "Niat"
+  },
+  {
+   "source": "পরামর্শ",
+   "target": "Saran"
+  },
+  {
+   "source": "অতীত",
+   "target": "masa lalu"
+  },
+  {
+   "source": "এখানে みる ‘দেখা’ নয়; auxiliary হয়ে ‘try doing’। তাই objectকে 見る নয়, আগের verb-এর て-form: この料理を食べてみます।",
+   "target": "Di sini みる bukan berarti 'melihat'; sebagai kata kerja bantu artinya 'mencoba melakukan'. Jadi bukan 見る untuk objeknya, melainkan bentuk て dari kata kerja sebelumnya: この料理を食べてみます."
+  },
+  {
+   "source": "অজানা ফল/অভিজ্ঞতা যাচাই করতে ব্যবহার হয়। প্রতিদিনের নিশ্চিত কাজ ‘চেষ্টা’ নয়: 毎朝歯を磨いてみます অস্বাভাবিক, যদি নতুন পদ্ধতি পরীক্ষা না হয়।",
+   "target": "Digunakan untuk memeriksa hasil atau pengalaman yang belum diketahui. Tindakan sehari-hari yang sudah pasti bukanlah 'mencoba': 毎朝歯を磨いてみます terdengar tidak wajar, kecuali jika metode baru sedang diuji."
+  },
+  {
+   "source": "Vようとする (চেষ্টা করা/ঠিক মুহূর্ত) উচ্চতর ভিন্ন pattern; N4-এ てみるকে experiential try হিসেবে ধরুন।",
+   "target": "Vようとする (mencoba / tepat saat akan) adalah pola lain yang lebih tinggi; di N4, anggap てみる sebagai mencoba secara pengalaman (experiential try)."
+  },
+  {
+   "source": "見る kanji সাধারণত auxiliary てみる-তে kana-তে লেখা হয়, তবে দুটোই দেখা যায়।",
+   "target": "Kanji 見る biasanya ditulis dalam kana pada kata kerja bantu てみる, tetapi keduanya bisa dijumpai."
+  },
+  {
+   "source": "খাবারটি সুস্বাদু মনে হচ্ছে। খেয়ে দেখি।",
+   "target": "Makanannya tampak lezat. Saya coba dulu."
+  },
+  {
+   "source": "বুঝিনি বলে শিক্ষককে জিজ্ঞেস করে দেখেছি।",
+   "target": "Karena tidak paham, saya mencoba bertanya kepada guru."
+  },
+  {
+   "source": "অ্যাপটি ব্যবহার করে দেখুন।",
+   "target": "Cobalah menggunakan aplikasi ini."
+  },
+  {
+   "source": "জাপানে গেলে কিমোনো পরে দেখতে চাই।",
+   "target": "Kalau pergi ke Jepang, saya ingin mencoba mengenakan kimono."
+  },
+  {
+   "source": "মূল verb-এর て-form＋みます।",
+   "target": "Bentuk て dari kata kerja utama + みます."
+  },
+  {
+   "source": "এক নজরে পার্থক্য",
+   "target": "Perbedaan dalam Sekilas"
+  },
+  {
+   "source": "কোন পরিস্থিতিতে কোনটি?",
+   "target": "Yang mana dalam situasi apa?"
+  },
+  {
+   "source": "মূল প্রশ্ন",
+   "target": "Pertanyaan asli"
+  },
+  {
+   "source": "Embedded রূপ",
+   "target": "Bentuk sisipan"
+  },
+  {
+   "source": "ব্যবহার",
+   "target": "Penggunaan"
+  },
+  {
+   "source": "な-A-এর だ বাদ",
+   "target": "Menghilangkan だ pada kata sifat な"
+  },
+  {
+   "source": "বাস্তবে চেষ্টা করে দেখা",
+   "target": "Mencoba sesuatu dalam praktik"
+  },
+  {
+   "source": "বাস্তব কথোপকথন",
+   "target": "Percakapan nyata"
+  },
+  {
+   "source": "নতুন রেস্তোরাঁ যাচাই",
+   "target": "Memeriksa Restoran Baru"
+  },
+  {
+   "source": "স্টেশনের সামনে নতুন দোকান হয়েছে।",
+   "target": "Sebuah toko baru telah dibuka di depan stasiun."
+  },
+  {
+   "source": "হ্যাঁ। কতটা পর্যন্ত খোলা জানেন?",
+   "target": "Ya. Apakah Anda tahu sampai jam berapa buka?"
+  },
+  {
+   "source": "না। বুকিং দরকার কি না তাও জানি না।",
+   "target": "Tidak. Saya juga tidak tahu apakah perlu reservasi atau tidak."
+  },
+  {
+   "source": "তাহলে ফোন করে জিজ্ঞেস করে দেখি।",
+   "target": "Kalau begitu, saya akan menelepon dan mencobanya bertanya."
+  },
+  {
+   "source": "নিজে যাচাই করুন",
+   "target": "Periksa Diri Anda Sendiri"
+  },
+  {
+   "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+   "target": "Latihan dengan jawaban dan penjelasan"
+  },
+  {
+   "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+   "target": "Pertama tulis jawaban di buku catatan Anda, lalu ketuk pertanyaan untuk memeriksa jawaban dan alasannya."
+  },
+  {
+   "source": "1. Direct: どこで買いましたか—‘কোথায় কিনেছে জানি না’ করুন।",
+   "target": "1. Langsung: どこで買いましたか — buatlah menjadi 'Saya tidak tahu di mana dia membelinya'."
+  },
+  {
+   "source": "2. ‘কাল বৃষ্টি হবে কি না পরীক্ষা/চেক করি’ বলুন।",
+   "target": "2. Katakan: 'Saya akan memeriksa apakah besok akan hujan atau tidak'."
+  },
+  {
+   "source": "3. ‘এই শব্দের অর্থ কী বলুন’—embedded question করুন।",
+   "target": "3. 'Tolong beritahu saya apa arti kata ini' — buatlah menjadi pertanyaan sisipan."
+  },
+  {
+   "source": "4. ‘জাপানি খাবার বানিয়ে দেখতে চাই’ বলুন।",
+   "target": "4. Katakan: 'Saya ingin mencoba membuat makanan Jepang'."
+  },
+  {
+   "source": "এক বাক্যে Master Key",
+   "target": "Kunci Utama dalam Satu Kalimat"
+  },
+  {
+   "source": "Question word থাকলে plain＋か; yes/no হলে plain＋かどうか; উত্তর শুধু মাথায় নয়, কাজ করে যাচাই করলে Vてみます।",
+   "target": "Jika ada kata tanya, plain + か; jika ya/tidak, plain + かどうか; dan jika Anda memeriksa jawabannya bukan hanya di kepala tetapi dengan melakukannya, Vてみます."
+  },
+  {
+   "source": "বিশ্বস্ত রেফারেন্স",
+   "target": "Referensi Tepercaya"
+  },
+  {
+   "source": "সিলেবাস ও যাচাই",
+   "target": "Silabus dan Verifikasi"
+  },
+  {
+   "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+   "target": "Pelajaran mandiri dalam bahasa Indonesia ini dibuat dengan menyelaraskan urutan pelajaran Minna no Nihongo II, cakupan resmi JLPT N4, dan sumber belajar Japan Foundation. Contoh dan penjelasannya dalam bahasa Indonesia ditulis baru."
+  },
+  {
+   "source": "← আগের Lesson 39",
+   "target": "← Pelajaran 39 sebelumnya"
+  },
+  {
+   "source": "পরের Lesson 41 →",
+   "target": "Pelajaran 41 berikutnya →"
+  },
+  {
+   "source": "Lesson সূচি",
+   "target": "Indeks Lesson"
+  },
+  {
+   "source": "শেখার লক্ষ্য",
+   "target": "Tujuan belajar"
+  },
+  {
+   "source": "পার্থক্য টেবিল",
+   "target": "Tabel Perbandingan"
+  },
+  {
+   "source": "কথোপকথন",
+   "target": "Percakapan"
+  },
+  {
+   "source": "Course progress লোড হচ্ছে…",
+   "target": "Progress kursus sedang dimuat…"
+  },
+  {
+   "source": "আপনার নিহোন · N4 Grammar 26–50",
+   "target": "আপনার নিহোন · N4 Grammar 26–50"
+  },
+  {
+   "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+   "target": "Edisi belajar mandiri bahasa Indonesia yang gratis dan terperinci untuk pelajar."
+  }
+ ]
+}

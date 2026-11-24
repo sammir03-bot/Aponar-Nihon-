@@ -1,0 +1,210 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "profile",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জাপানি শেখার পূর্ণাঙ্গ প্ল্যাটফর্ম",
+   "target": "Platform pembelajaran bahasa Jepang yang lengkap"
+  },
+  {
+   "source": "হোম",
+   "target": "Beranda"
+  },
+  {
+   "source": "অ্যাডমিন",
+   "target": "Admin"
+  },
+  {
+   "source": "লগআউট",
+   "target": "Keluar"
+  },
+  {
+   "source": "ইমেইল ভেরিফাই হয়নি",
+   "target": "Email belum diverifikasi"
+  },
+  {
+   "source": "প্রয়োজনীয় তথ্য পূরণ করলে 100% হবে",
+   "target": "Mengisi informasi yang diperlukan akan mencapai 100%"
+  },
+  {
+   "source": "নাম",
+   "target": "Nama"
+  },
+  {
+   "source": "স্কুল",
+   "target": "Sekolah"
+  },
+  {
+   "source": "লোকেশন",
+   "target": "Lokasi"
+  },
+  {
+   "source": "লক্ষ্য",
+   "target": "Tujuan"
+  },
+  {
+   "source": "জন্মতারিখ",
+   "target": "Tanggal lahir"
+  },
+  {
+   "source": "প্রোফাইল আপডেট",
+   "target": "Pembaruan Profil"
+  },
+  {
+   "source": "তথ্যগুলো ঠিক করে নিরাপদভাবে Save করুন",
+   "target": "Perbaiki informasi dan Save dengan aman"
+  },
+  {
+   "source": "ব্যক্তিগত তথ্য",
+   "target": "Informasi Pribadi"
+  },
+  {
+   "source": "আপনার মূল পরিচিতি",
+   "target": "Identitas utama Anda"
+  },
+  {
+   "source": "পুরো নাম",
+   "target": "Nama lengkap"
+  },
+  {
+   "source": "লিঙ্গ",
+   "target": "Jenis kelamin"
+  },
+  {
+   "source": "নির্বাচন করুন",
+   "target": "Pilih"
+  },
+  {
+   "source": "পুরুষ",
+   "target": "Laki-laki"
+  },
+  {
+   "source": "নারী",
+   "target": "Perempuan"
+  },
+  {
+   "source": "বলতে চাই না",
+   "target": "Tidak ingin menyebutkan"
+  },
+  {
+   "source": "জাতীয়তা",
+   "target": "Kewarganegaraan"
+  },
+  {
+   "source": "পড়াশোনা ও JLPT",
+   "target": "Pendidikan & JLPT"
+  },
+  {
+   "source": "আপনার স্কুল ও শেখার লক্ষ্য",
+   "target": "Sekolah dan tujuan belajar Anda"
+  },
+  {
+   "source": "স্কুল / প্রতিষ্ঠান",
+   "target": "Sekolah / Institusi"
+  },
+  {
+   "source": "দৈনিক পড়ার সময়",
+   "target": "Waktu belajar harian"
+  },
+  {
+   "source": "15 মিনিট",
+   "target": "15 menit"
+  },
+  {
+   "source": "30 মিনিট",
+   "target": "30 menit"
+  },
+  {
+   "source": "45 মিনিট",
+   "target": "45 menit"
+  },
+  {
+   "source": "1 ঘণ্টা",
+   "target": "1 jam"
+  },
+  {
+   "source": "1.5 ঘণ্টা",
+   "target": "1.5 jam"
+  },
+  {
+   "source": "2 ঘণ্টা",
+   "target": "2 jam"
+  },
+  {
+   "source": "যোগাযোগ ও অবস্থান",
+   "target": "Kontak & Lokasi"
+  },
+  {
+   "source": "বর্তমান যোগাযোগের তথ্য",
+   "target": "Informasi kontak saat ini"
+  },
+  {
+   "source": "বর্তমান City",
+   "target": "Kota Saat Ini"
+  },
+  {
+   "source": "ফোন নম্বর",
+   "target": "Nomor telepon"
+  },
+  {
+   "source": "ঐচ্ছিক",
+   "target": "Opsional"
+  },
+  {
+   "source": "নিজের সম্পর্কে",
+   "target": "Tentang diri Anda"
+  },
+  {
+   "source": "সংক্ষিপ্ত learning profile",
+   "target": "Profil pembelajaran singkat"
+  },
+  {
+   "source": "বাতিল",
+   "target": "Batal"
+  },
+  {
+   "source": "নিজের ছবি যোগ বা পরিবর্তন করুন",
+   "target": "Tambahkan atau ubah foto Anda"
+  },
+  {
+   "source": "ছবি বেছে নিন",
+   "target": "Pilih foto"
+  },
+  {
+   "source": "Account photo ব্যবহার",
+   "target": "Gunakan foto akun"
+  },
+  {
+   "source": "JPG, PNG বা WebP · সর্বোচ্চ 2 MB",
+   "target": "JPG, PNG atau WebP · Maks 2 MB"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "Email"
+  },
+  {
+   "source": "বাংলা",
+   "target": "Bahasa Indonesia"
+  },
+  {
+   "source": "ভাষা Home থেকে পরিবর্তন করা যায়",
+   "target": "Bahasa dapat diubah dari Home"
+  },
+  {
+   "source": "Profile load হচ্ছে…",
+   "target": "Profil sedang dimuat…"
+  },
+  {
+   "source": "অ্যাকাউন্ট মুছলে আপনার profile ও learning data স্থায়ীভাবে মুছে যেতে পারে।",
+   "target": "Menghapus akun dapat menghapus profil dan data pembelajaran Anda secara permanen."
+  },
+  {
+   "source": "Delete options খুলুন",
+   "target": "Buka opsi hapus"
+  }
+ ]
+}

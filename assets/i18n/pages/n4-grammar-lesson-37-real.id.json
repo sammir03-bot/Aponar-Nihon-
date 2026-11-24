@@ -1,0 +1,490 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "n4-grammar-lesson-37-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Lesson 37: Passive Form：受け身形 পুরোপুরি পরিষ্কার | N4 Grammar",
+   "target": "Lesson 37: Passive Form — 受け身形 Dijelaskan Sepenuhnya | N4 Grammar"
+  },
+  {
+   "source": "মূল কনটেন্টে যান",
+   "target": "Lewati ke konten utama"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "Lesson 37 · জটিল বাক্য",
+   "target": "Lesson 37 · Kalimat Kompleks"
+  },
+  {
+   "source": "সব Lesson",
+   "target": "Semua Lesson"
+  },
+  {
+   "source": "জটিল বাক্য",
+   "target": "Kalimat Kompleks"
+  },
+  {
+   "source": "ধাপ ৩ · 36–40",
+   "target": "Tahap 3 · 36–40"
+  },
+  {
+   "source": "Passive Form：受け身形 পুরোপুরি পরিষ্কার",
+   "target": "Passive Form: 受け身形 Dijelaskan Sepenuhnya"
+  },
+  {
+   "source": "কাজ-গ্রহণকারীকে topic করা, ক্ষতি/বিরক্তির passive, possession বজায় রাখা এবং ঐতিহাসিক/বস্তুনিষ্ঠ passive।",
+   "target": "Menjadikan penerima tindakan sebagai topik, pasif kerugian dan gangguan, mempertahankan kepemilikan, dan pasif historis / objektif."
+  },
+  {
+   "source": "4টি বিস্তারিত grammar block",
+   "target": "4 blok grammar terperinci"
+  },
+  {
+   "source": "12টি Japanese example",
+   "target": "12 contoh Japanese"
+  },
+  {
+   "source": "4টি ব্যাখ্যাসহ practice",
+   "target": "4 soal latihan dengan penjelasan"
+  },
+  {
+   "source": "Offline, mobile ও print friendly",
+   "target": "Offline, ramah perangkat seluler dan cetak"
+  },
+  {
+   "source": "あ Reading লুকান",
+   "target": "Sembunyikan あ Reading"
+  },
+  {
+   "source": "এখনো সম্পন্ন নয়",
+   "target": "Belum selesai"
+  },
+  {
+   "source": "✓ সম্পন্ন করুন",
+   "target": "✓ Tandai Selesai"
+  },
+  {
+   "source": "Lesson 37 · লক্ষ্য",
+   "target": "Lesson 37 · Tujuan"
+  },
+  {
+   "source": "এই Lesson শেষে যা পারবেন",
+   "target": "Apa yang akan dapat Anda lakukan setelah pelajaran ini"
+  },
+  {
+   "source": "Passive শুধু active বাক্য উল্টানো নয়। জাপানিতে বক্তা কার দৃষ্টিকোণকে সামনে আনছেন এবং ঘটনাটি তার ওপর কী প্রভাব ফেলেছে—এটাই মূল। 私は先生にほめられました-তে ‘আমি’ প্রশংসার প্রাপক; 私は雨に降られました-তে বৃষ্টি আমার জন্য বিরক্তিকর ঘটনা।",
+   "target": "Pasif bukan hanya membalik kalimat aktif. Dalam bahasa Jepang, poinnya adalah sudut pandang siapa yang dibawa penutur ke depan, dan efek apa yang diberikan peristiwa itu kepada orang tersebut. Dalam 私は先生にほめられました, \"saya\" adalah penerima pujian; dalam 私は雨に降られました, hujan adalah peristiwa yang mengganggu bagi saya."
+  },
+  {
+   "source": "তিন verb group-এর passive form তৈরি করবেন",
+   "target": "Anda akan dapat membuat bentuk pasif dalam ketiga kelompok kata kerja"
+  },
+  {
+   "source": "agent に এবং recipient/topic は-এর ভূমিকা বুঝবেন",
+   "target": "Anda akan memahami peran agen に dan penerima / topik は"
+  },
+  {
+   "source": "direct passive ও adversity passive আলাদা করবেন",
+   "target": "Anda akan dapat membedakan pasif langsung dari pasif adversity"
+  },
+  {
+   "source": "সৃষ্টি/আবিষ্কারের agent-এ によって ব্যবহার করবেন",
+   "target": "Anda akan dapat menggunakan によって untuk agen penciptaan atau penemuan"
+  },
+  {
+   "source": "受け身形ের গঠন",
+   "target": "Pembentukan 受け身形"
+  },
+  {
+   "source": "‘করা হয়/কারো দ্বারা প্রভাবিত হওয়া’ verb form",
+   "target": "Bentuk kata kerja untuk \"dilakukan / dipengaruhi oleh seseorang\""
+  },
+  {
+   "source": "গঠন",
+   "target": "Pembentukan"
+  },
+  {
+   "source": "ধরন",
+   "target": "Jenis"
+  },
+  {
+   "source": "উদাহরণ",
+   "target": "Contoh"
+  },
+  {
+   "source": "শেষ う-row → あ-row＋れる",
+   "target": "Baris う terakhir → baris あ + れる"
+  },
+  {
+   "source": "る বাদ＋られる",
+   "target": "Buang る + られる"
+  },
+  {
+   "source": "অনিয়মিত",
+   "target": "Tidak beraturan"
+  },
+  {
+   "source": "ভদ্র",
+   "target": "Sopan"
+  },
+  {
+   "source": "বিস্তারিত ব্যাখ্যা",
+   "target": "Penjelasan Terperinci"
+  },
+  {
+   "source": "Group 2 passive ও potential একই রূপ: 食べられる। Context/particle অর্থ নির্ধারণ করে: 魚が食べられます = মাছ খেতে পারি; 魚は猫に食べられました = মাছটি বিড়াল খেয়েছে।",
+   "target": "Pasif Grup 2 dan potensial memiliki bentuk yang sama: 食べられる. Konteks dan partikel menentukan artinya: 魚が食べられます = saya dapat makan ikan; 魚は猫に食べられました = ikan itu dimakan oleh kucing."
+  },
+  {
+   "source": "Passive verb Group 2-এর মতো conjugate হয়: 書かれない, 書かれた, 書かれて。",
+   "target": "Kata kerja pasif berkonjugasi seperti kata kerja Grup 2: 書かれない, 書かれた, 書かれて."
+  },
+  {
+   "source": "যা মনে রাখবেন",
+   "target": "Yang Perlu Diingat"
+  },
+  {
+   "source": "買う→買あれる নয়; う→わ: 買われる।",
+   "target": "Bukan 買う→買あれる; う→わ: 買われる."
+  },
+  {
+   "source": "প্রশংসা করা → প্রশংসিত হওয়া",
+   "target": "Memuji → dipuji"
+  },
+  {
+   "source": "ডাকা → ডাকা হওয়া",
+   "target": "Memanggil → dipanggil"
+  },
+  {
+   "source": "সতর্ক করা → সতর্ক করা হওয়া",
+   "target": "Memperingatkan → diperingatkan"
+  },
+  {
+   "source": "✕ ভুল",
+   "target": "✕ Salah"
+  },
+  {
+   "source": "✓ সঠিক",
+   "target": "✓ Benar"
+  },
+  {
+   "source": "কেন:",
+   "target": "Mengapa:"
+  },
+  {
+   "source": "Group 1: dictionary ending く→か＋れる; ます-stem নয়।",
+   "target": "Grup 1: akhir kamus く→か + れる; bukan stem ます."
+  },
+  {
+   "source": "কাজের সরাসরি প্রাপককে topic/subject করা",
+   "target": "Menjadikan Penerima Langsung Tindakan sebagai Topik / Subjek"
+  },
+  {
+   "source": "Active-এর object B passive-এ は/が হয়ে সামনে আসে; agent A সাধারণত に। বক্তা B-এর দৃষ্টিকোণ থেকে ঘটনা বলেন।",
+   "target": "Dalam pasif, objek B dari kalimat aktif datang ke depan sebagai は／が; agen A biasanya mengambil に. Penutur menceritakan peristiwa dari sudut pandang B."
+  },
+  {
+   "source": "ইতিবাচক ঘটনাও passive হয়: 私は先生にほめられました = শিক্ষক আমাকে প্রশংসা করেছেন। তাই passive মানেই দুঃখ নয়।",
+   "target": "Peristiwa positif juga dapat pasif: 私は先生にほめられました = guru memuji saya. Jadi pasif tidak selalu berarti kesedihan."
+  },
+  {
+   "source": "Agent সাধারণ/অজানা হলে বাদ: この歌は世界中で歌われています = গানটি বিশ্বজুড়ে গাওয়া হয়।",
+   "target": "Jika agennya umum atau tidak diketahui, ia dihilangkan: この歌は世界中で歌われています = lagu ini dinyanyikan di seluruh dunia."
+  },
+  {
+   "source": "কাজকারী に, কাজের প্রাপক は/が।",
+   "target": "Pelaku mengambil に; penerima tindakan mengambil は／が."
+  },
+  {
+   "source": "বিভাগীয় প্রধান আমাকে মিটিংয়ে আমন্ত্রণ করেছেন।",
+   "target": "Kepala seksi mengundang saya ke rapat."
+  },
+  {
+   "source": "ছোট ভাই মায়ের বকা খেয়েছে।",
+   "target": "Adik laki-laki saya dimarahi oleh Ibu."
+  },
+  {
+   "source": "এই গানটি অনেক মানুষের ভালোবাসা পায়।",
+   "target": "Lagu ini dicintai oleh banyak orang."
+  },
+  {
+   "source": "Passive agent সাধারণত に; を নয়।",
+   "target": "Agen pasif biasanya に; bukan を."
+  },
+  {
+   "source": "অন্যের কাজ/ঘটনায় বক্তা ক্ষতি, বিরক্তি বা অসুবিধা ভোগ করেন",
+   "target": "Penutur menderita kerugian, gangguan, atau ketidaknyamanan dari tindakan orang lain atau suatu peristiwa"
+  },
+  {
+   "source": "অন্যের কাজ",
+   "target": "Tindakan orang lain"
+  },
+  {
+   "source": "প্রাকৃতিক ঘটনা",
+   "target": "Peristiwa alam"
+  },
+  {
+   "source": "Japanese adversity passive-এ active object-এর মালিক topic হয়, কিন্তু body-part/possessed object を রেখেই বলা হয়: 私は犬に手をかまれました। 手は犬に… বললে ব্যক্তিগত ক্ষতির perspective কমে।",
+   "target": "Dalam pasif adversity Jepang, pemilik objek dalam kalimat aktif menjadi topik, tetapi bagian tubuh atau benda yang dimiliki tetap dinyatakan dengan を: 私は犬に手をかまれました. Jika Anda mengatakan 手は犬に…, perspektif kerugian pribadi menjadi lebih lemah."
+  },
+  {
+   "source": "Intransitive verb-ও adversity passive হয়: 友達に来られて、勉強できませんでした = বন্ধু এসে পড়ায় পড়তে পারিনি। বাংলায় সরাসরি passive না হলেও জাপানিতে ভুক্তভোগীর দৃষ্টিভঙ্গি।",
+   "target": "Kata kerja intransitif juga membentuk pasif adversity: 友達に来られて、勉強できませんでした = teman saya datang, jadi saya tidak dapat belajar. Meskipun ini bukan pasif langsung dalam bahasa Indonesia, bahasa Jepang mengambil sudut pandang penderita."
+  },
+  {
+   "source": "সবসময় নাটকীয় ক্ষতি নয়; context অসুবিধা বা অপ্রত্যাশিত প্রভাব দেখায়।",
+   "target": "Tidak selalu kerugian yang dramatis; konteksnya menunjukkan ketidaknyamanan atau efek yang tidak terduga."
+  },
+  {
+   "source": "Possession আলাদা করবেন না: 私は弟にケーキを食べられました।",
+   "target": "Jangan memisahkan kepemilikan: 私は弟にケーキを食べられました."
+  },
+  {
+   "source": "Natural event: 雨に降られる একটি fixed, বহুল ব্যবহৃত pattern।",
+   "target": "Peristiwa alam: 雨に降られる adalah pola tetap yang sangat umum."
+  },
+  {
+   "source": "ট্রেনে পাশের লোক আমার পায়ে পা দিয়েছেন।",
+   "target": "Di kereta, orang di sebelah saya menginjak kaki saya."
+  },
+  {
+   "source": "ছোট ভাই আমার জরুরি/প্রিয় কেকটি খেয়ে ফেলেছে।",
+   "target": "Adik laki-laki saya menghabiskan kue favorit saya yang berharga."
+  },
+  {
+   "source": "ফেরার পথে বৃষ্টিতে পড়েছিলাম।",
+   "target": "Dalam perjalanan pulang saya terjebak hujan."
+  },
+  {
+   "source": "ক্ষতিগ্রস্ত ব্যক্তি topic 私は; নিজের body part を।",
+   "target": "Orang yang dirugikan adalah topik 私は; bagian tubuhnya sendiri mengambil を."
+  },
+  {
+   "source": "বস্তুনিষ্ঠ passive ও Nによって",
+   "target": "Pasif Objektif dan Nによって"
+  },
+  {
+   "source": "নির্মাণ, আবিষ্কার, রচনা বা ইতিহাসে কাজ/ফলকে সামনে আনা",
+   "target": "Membawa karya atau hasil ke depan dalam konstruksi, penemuan, penulisan, atau sejarah"
+  },
+  {
+   "source": "নির্মাণ",
+   "target": "Konstruksi"
+  },
+  {
+   "source": "স্রষ্টা/আবিষ্কারক",
+   "target": "Pencipta / penemu"
+  },
+  {
+   "source": "বস্তু, ভবন, বই বা ধারণা topic হলে passive স্বাভাবিক; কে করেছেন তা গৌণ বা ঐতিহাসিক তথ্য।",
+   "target": "Ketika benda, bangunan, buku, atau gagasan adalah topiknya, pasif adalah natural; siapa yang melakukannya adalah informasi sekunder atau historis."
+  },
+  {
+   "source": "সৃষ্টি/আবিষ্কার/রচনা/নকশায় agent-এর পরে によって বেশি formal ও উপযুক্ত: 書かれる, 発明される, 建てられる, 設計される। সাধারণ interpersonal action-এ に যথেষ্ট।",
+   "target": "Untuk agen penciptaan, penemuan, karya, atau desain, によって setelah agen lebih formal dan sesuai: 書かれる, 発明される, 建てられる, 設計される. Untuk tindakan antarpribadi biasa, に sudah cukup."
+  },
+  {
+   "source": "উপাদান/উৎস বোঝাতে から/で আলাদা; agent ব্যক্তি/গোষ্ঠী হলে によって।",
+   "target": "から／で untuk bahan atau sumber berbeda; ketika agen adalah orang atau kelompok, digunakan によって."
+  },
+  {
+   "source": "Personによって = by; time-এর に-এর সঙ্গে গুলাবেন না।",
+   "target": "Orang + によって = oleh; jangan tertukar dengan に untuk waktu."
+  },
+  {
+   "source": "এই সেতু একশ বছর আগে নির্মিত হয়েছিল।",
+   "target": "Jembatan ini dibangun seratus tahun yang lalu."
+  },
+  {
+   "source": "গেঞ্জির কাহিনি মুরাসাকি শিকিবু রচনা করেছেন।",
+   "target": "Kisah Genji ditulis oleh Murasaki Shikibu."
+  },
+  {
+   "source": "এই পণ্য জাপানে তৈরি হয়।",
+   "target": "Produk ini dibuat di Jepang."
+  },
+  {
+   "source": "ঐতিহাসিক/রচনার agent-এ によって অধিক স্বাভাবিক।",
+   "target": "Untuk agen historis atau penulis, によって lebih natural."
+  },
+  {
+   "source": "এক নজরে পার্থক্য",
+   "target": "Perbedaan dalam Sekilas"
+  },
+  {
+   "source": "কোন পরিস্থিতিতে কোনটি?",
+   "target": "Yang mana dalam situasi apa?"
+  },
+  {
+   "source": "Agent/বাকি অংশ",
+   "target": "Agen / bagian lainnya"
+  },
+  {
+   "source": "কাজের সরাসরি প্রাপক",
+   "target": "Penerima langsung tindakan"
+  },
+  {
+   "source": "ক্ষতিগ্রস্ত ব্যক্তি",
+   "target": "Orang yang dirugikan"
+  },
+  {
+   "source": "Agent に＋নিজের বস্তু を",
+   "target": "Agen に + benda milik sendiri を"
+  },
+  {
+   "source": "বস্তু/কাজ/ইতিহাস",
+   "target": "Benda / karya / sejarah"
+  },
+  {
+   "source": "স্রষ্টা によって বা agent বাদ",
+   "target": "Pencipta によって, atau agen dihilangkan"
+  },
+  {
+   "source": "সক্ষম ব্যক্তি/বস্তু",
+   "target": "Orang / benda yang mampu"
+  },
+  {
+   "source": "Object が; agent নেই",
+   "target": "Objek が; tanpa agen"
+  },
+  {
+   "source": "বাস্তব কথোপকথন",
+   "target": "Percakapan nyata"
+  },
+  {
+   "source": "হারানো ছাতা",
+   "target": "Payung yang Hilang"
+  },
+  {
+   "source": "কী হয়েছে?",
+   "target": "Apa yang terjadi?"
+  },
+  {
+   "source": "স্টেশনে কেউ আমার ছাতা নিয়ে গেছে।",
+   "target": "Di stasiun, seseorang mengambil payung saya."
+  },
+  {
+   "source": "খারাপ হয়েছে। বৃষ্টিতেও পড়েননি তো?",
+   "target": "Itu buruk. Anda tidak terjebak hujan, bukan?"
+  },
+  {
+   "source": "হ্যাঁ। বন্ধু গাড়িতে পৌঁছে দিয়েছে বলে সমস্যা হয়নি।",
+   "target": "Tidak. Seorang teman mengantar saya dengan mobil, jadi tidak ada masalah."
+  },
+  {
+   "source": "নিজে যাচাই করুন",
+   "target": "Periksa Diri Anda Sendiri"
+  },
+  {
+   "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+   "target": "Latihan dengan jawaban dan penjelasan"
+  },
+  {
+   "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+   "target": "Pertama tulis jawaban di buku catatan Anda, lalu ketuk pertanyaan untuk memeriksa jawaban dan alasannya."
+  },
+  {
+   "source": "1. 書く-এর passive form বানান।",
+   "target": "1. Buat bentuk pasif dari 書く."
+  },
+  {
+   "source": "2. Active: 先生が私をほめました—passive করুন।",
+   "target": "2. Aktif: 先生が私をほめました — jadikan pasif."
+  },
+  {
+   "source": "3. ‘কুকুর আমার হাতে কামড়েছে’—adversity passive বলুন।",
+   "target": "3. \"Anjing menggigit tangan saya\" — ucapkan dalam pasif adversity."
+  },
+  {
+   "source": "ভুক্তভোগী は, agent に, body part を।",
+   "target": "Penderita は, agen に, bagian tubuh を."
+  },
+  {
+   "source": "4. ‘এই ভবন বিখ্যাত স্থপতি দ্বারা নকশা করা’ বলুন।",
+   "target": "4. Ucapkan: \"Gedung ini dirancang oleh arsitek terkenal.\""
+  },
+  {
+   "source": "স্রষ্টা/নকশাকারী＋によって＋passive।",
+   "target": "Pencipta / perancang + によって + pasif."
+  },
+  {
+   "source": "এক বাক্যে Master Key",
+   "target": "Kunci Utama dalam Satu Kalimat"
+  },
+  {
+   "source": "Passive form বানানোর আগে perspective ঠিক করুন: সরাসরি প্রাপক, ক্ষতিগ্রস্ত মালিক, না কাজ/বস্তু? তারপর agent に/によって এবং নিজের বস্তু を বসান।",
+   "target": "Sebelum membuat bentuk pasif, tetapkan perspektifnya: penerima langsung, pemilik yang menderita kerugian, atau karya / benda? Kemudian tempatkan agen に／によって dan benda milik Anda sendiri を."
+  },
+  {
+   "source": "বিশ্বস্ত রেফারেন্স",
+   "target": "Referensi Tepercaya"
+  },
+  {
+   "source": "সিলেবাস ও যাচাই",
+   "target": "Silabus dan Verifikasi"
+  },
+  {
+   "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+   "target": "Pelajaran mandiri dalam bahasa Indonesia ini dibuat dengan menyelaraskan urutan pelajaran Minna no Nihongo II, cakupan resmi JLPT N4, dan sumber belajar Japan Foundation. Contoh dan penjelasannya dalam bahasa Indonesia ditulis baru."
+  },
+  {
+   "source": "← আগের Lesson 36",
+   "target": "← Lesson 36 Sebelumnya"
+  },
+  {
+   "source": "〜ように：লক্ষ্য, পরিবর্তন ও নিয়মিত চেষ্টা",
+   "target": "〜ように: Tujuan, Perubahan dan Usaha Teratur"
+  },
+  {
+   "source": "পরের Lesson 38 →",
+   "target": "Lesson 38 Berikutnya →"
+  },
+  {
+   "source": "Nominalizer の：কাজকে বিশেষ্য বানানো",
+   "target": "Nominalizer の: Mengubah Tindakan menjadi Kata Benda"
+  },
+  {
+   "source": "Lesson সূচি",
+   "target": "Indeks Lesson"
+  },
+  {
+   "source": "শেখার লক্ষ্য",
+   "target": "Tujuan belajar"
+  },
+  {
+   "source": "1. 受け身形ের গঠন",
+   "target": "1. Pembentukan 受け身形"
+  },
+  {
+   "source": "4. বস্তুনিষ্ঠ passive ও Nによって",
+   "target": "4. Pasif Objektif dan Nによって"
+  },
+  {
+   "source": "পার্থক্য টেবিল",
+   "target": "Tabel Perbandingan"
+  },
+  {
+   "source": "কথোপকথন",
+   "target": "Percakapan"
+  },
+  {
+   "source": "Course progress লোড হচ্ছে…",
+   "target": "Progress kursus sedang dimuat…"
+  },
+  {
+   "source": "আপনার নিহোন · N4 Grammar 26–50",
+   "target": "আপনার নিহোন · N4 Grammar 26–50"
+  },
+  {
+   "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+   "target": "Edisi belajar mandiri bahasa Indonesia yang gratis dan terperinci untuk pelajar."
+  }
+ ]
+}
