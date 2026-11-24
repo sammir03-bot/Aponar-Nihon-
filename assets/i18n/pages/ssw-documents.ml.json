@@ -1,0 +1,26 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "ssw-documents",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "SSW গাইডে নেওয়া হচ্ছে | আপনার নিহোন",
+   "target": "SSW Guide-ലേക്ക് redirect ചെയ്യുന്നു | আপনার নিহোন"
+  },
+  {
+   "source": "নতুন SSW গাইডে নেওয়া হচ্ছে…",
+   "target": "പുതിയ SSW Guide-ലേക്ക് redirect ചെയ്യുന്നു…"
+  },
+  {
+   "source": "পুরনো আলাদা page এখন একটি আপডেটেড, কম-bug SSW hub-এর অংশ।",
+   "target": "പഴയ പ്രത്യേക page-കൾ ഇപ്പോൾ ഒരു update ചെയ്ത, കുറഞ്ഞ bug ഉള്ള SSW hub-ന്റെ ഭാഗമാണ്."
+  },
+  {
+   "source": "এখনই খুলুন",
+   "target": "ഇപ്പോൾ തുറക്കൂ"
+  }
+ ]
+}

@@ -1,0 +1,210 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "profile",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জাপানি শেখার পূর্ণাঙ্গ প্ল্যাটফর্ম",
+   "target": "ജാപ്പനീസ് പഠിക്കാനുള്ള സമ്പൂർണ്ണ പ്ലാറ്റ്ഫോം"
+  },
+  {
+   "source": "হোম",
+   "target": "ഹോം"
+  },
+  {
+   "source": "অ্যাডমিন",
+   "target": "Admin"
+  },
+  {
+   "source": "লগআউট",
+   "target": "Logout"
+  },
+  {
+   "source": "ইমেইল ভেরিফাই হয়নি",
+   "target": "Email സ്ഥിരീകരിച്ചിട്ടില്ല"
+  },
+  {
+   "source": "প্রয়োজনীয় তথ্য পূরণ করলে 100% হবে",
+   "target": "ആവശ്യമായ വിവരങ്ങൾ പൂരിപ്പിക്കുന്നത് 100%-ൽ എത്തിക്കും"
+  },
+  {
+   "source": "নাম",
+   "target": "പേര്"
+  },
+  {
+   "source": "স্কুল",
+   "target": "സ്കൂൾ"
+  },
+  {
+   "source": "লোকেশন",
+   "target": "Location"
+  },
+  {
+   "source": "লক্ষ্য",
+   "target": "ലക്ഷ്യം"
+  },
+  {
+   "source": "জন্মতারিখ",
+   "target": "ജനനത്തീയതി"
+  },
+  {
+   "source": "প্রোফাইল আপডেট",
+   "target": "Profile Update"
+  },
+  {
+   "source": "তথ্যগুলো ঠিক করে নিরাপদভাবে Save করুন",
+   "target": "വിവരങ്ങൾ തിരുത്തി സുരക്ഷിതമായി Save ചെയ്യൂ"
+  },
+  {
+   "source": "ব্যক্তিগত তথ্য",
+   "target": "വ്യക്തിഗത വിവരങ്ങൾ"
+  },
+  {
+   "source": "আপনার মূল পরিচিতি",
+   "target": "നിങ്ങളുടെ പ്രാഥമിക വ്യക്തിത്വം"
+  },
+  {
+   "source": "পুরো নাম",
+   "target": "പൂർണ്ണ പേര്"
+  },
+  {
+   "source": "লিঙ্গ",
+   "target": "ലിംഗം"
+  },
+  {
+   "source": "নির্বাচন করুন",
+   "target": "തിരഞ്ഞെടുക്കൂ"
+  },
+  {
+   "source": "পুরুষ",
+   "target": "പുരുഷൻ"
+  },
+  {
+   "source": "নারী",
+   "target": "സ്ത്രീ"
+  },
+  {
+   "source": "বলতে চাই না",
+   "target": "പറയാൻ താൽപ്പര്യമില്ല"
+  },
+  {
+   "source": "জাতীয়তা",
+   "target": "ദേശീയത"
+  },
+  {
+   "source": "পড়াশোনা ও JLPT",
+   "target": "വിദ്യാഭ്യാസവും JLPT-യും"
+  },
+  {
+   "source": "আপনার স্কুল ও শেখার লক্ষ্য",
+   "target": "നിങ്ങളുടെ സ്കൂളും പഠന ലക്ഷ്യങ്ങളും"
+  },
+  {
+   "source": "স্কুল / প্রতিষ্ঠান",
+   "target": "School / Institution"
+  },
+  {
+   "source": "দৈনিক পড়ার সময়",
+   "target": "ദൈനംദിന പഠന സമയം"
+  },
+  {
+   "source": "15 মিনিট",
+   "target": "15 മിനിറ്റ്"
+  },
+  {
+   "source": "30 মিনিট",
+   "target": "30 മിനിറ്റ്"
+  },
+  {
+   "source": "45 মিনিট",
+   "target": "45 മിനിറ്റ്"
+  },
+  {
+   "source": "1 ঘণ্টা",
+   "target": "1 മണിക്കൂർ"
+  },
+  {
+   "source": "1.5 ঘণ্টা",
+   "target": "1.5 മണിക്കൂർ"
+  },
+  {
+   "source": "2 ঘণ্টা",
+   "target": "2 മണിക്കൂർ"
+  },
+  {
+   "source": "যোগাযোগ ও অবস্থান",
+   "target": "ബന്ധപ്പെടലും സ്ഥാനവും"
+  },
+  {
+   "source": "বর্তমান যোগাযোগের তথ্য",
+   "target": "നിലവിലെ ബന്ധപ്പെടാനുള്ള വിവരങ്ങൾ"
+  },
+  {
+   "source": "বর্তমান City",
+   "target": "നിലവിലെ City"
+  },
+  {
+   "source": "ফোন নম্বর",
+   "target": "ഫോൺ നമ്പർ"
+  },
+  {
+   "source": "ঐচ্ছিক",
+   "target": "ഓപ്ഷണൽ"
+  },
+  {
+   "source": "নিজের সম্পর্কে",
+   "target": "നിങ്ങളെക്കുറിച്ച്"
+  },
+  {
+   "source": "সংক্ষিপ্ত learning profile",
+   "target": "ചെറിയ learning profile"
+  },
+  {
+   "source": "বাতিল",
+   "target": "റദ്ദാക്കൂ"
+  },
+  {
+   "source": "নিজের ছবি যোগ বা পরিবর্তন করুন",
+   "target": "നിങ്ങളുടെ ഫോട്ടോ ചേർക്കുകയോ മാറ്റുകയോ ചെയ്യൂ"
+  },
+  {
+   "source": "ছবি বেছে নিন",
+   "target": "ഫോട്ടോ തിരഞ്ഞെടുക്കൂ"
+  },
+  {
+   "source": "Account photo ব্যবহার",
+   "target": "Account ഫോട്ടോ ഉപയോഗിക്കൂ"
+  },
+  {
+   "source": "JPG, PNG বা WebP · সর্বোচ্চ 2 MB",
+   "target": "JPG, PNG അല്ലെങ്കിൽ WebP · പരമാവധി 2 MB"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "ഇമെയിൽ"
+  },
+  {
+   "source": "বাংলা",
+   "target": "ബംഗാളി"
+  },
+  {
+   "source": "ভাষা Home থেকে পরিবর্তন করা যায়",
+   "target": "ഭാഷ Home-ൽ നിന്ന് മാറ്റാം"
+  },
+  {
+   "source": "Profile load হচ্ছে…",
+   "target": "Profile load ചെയ്യുന്നു…"
+  },
+  {
+   "source": "অ্যাকাউন্ট মুছলে আপনার profile ও learning data স্থায়ীভাবে মুছে যেতে পারে।",
+   "target": "Account delete ചെയ്യുന്നത് നിങ്ങളുടെ profile-ഉം learning data-യും ശാശ്വതമായി delete ചെയ്തേക്കാം."
+  },
+  {
+   "source": "Delete options খুলুন",
+   "target": "Delete option-കൾ തുറക്കൂ"
+  }
+ ]
+}

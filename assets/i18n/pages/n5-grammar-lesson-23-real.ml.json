@@ -1,0 +1,246 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "n5-grammar-lesson-23-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Grammar Lesson 23 | とき・と・Place を | আপনার নিহোন",
+   "target": "N5 Grammar Lesson 23 | とき・と・Place を | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "যখন… / যদি… নিয়মিত ফল হয় — সময় ও natural result",
+   "target": "എപ്പോൾ… / എങ്കിൽ… ഒരു പതിവ് ഫലം പിന്തുടരുന്നു — സമയവും സ്വാഭാവിക ഫലങ്ങളും"
+  },
+  {
+   "source": "Grammar শুরু",
+   "target": "Grammar തുടങ്ങുക"
+  },
+  {
+   "source": "আজকের Learning Goal",
+   "target": "ഇന്നത്തെ Learning Goal"
+  },
+  {
+   "source": "যখন বলা",
+   "target": "“എപ്പോൾ” എന്ന് പറയൽ"
+  },
+  {
+   "source": "আগে/পরে nuance",
+   "target": "മുമ്പ്/ശേഷം എന്ന സൂക്ഷ്മവ്യത്യാസം"
+  },
+  {
+   "source": "সহজ ব্যাখ্যা + structure + example",
+   "target": "ലളിതമായ വിശദീകരണം + structure + example"
+  },
+  {
+   "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+   "target": "ഓരോ pattern-നും ആദ്യം structure നോക്കൂ, പിന്നെ example-കൾ ഉറക്കെ പറയൂ. Audio button അമർത്തിയാൽ Japanese വാക്യം കേൾക്കാം."
+  },
+  {
+   "source": "কোনো কাজের সময়/যখন বলতে verb-এর plain form-এর পরে とき বসে। Present affirmative-এ dictionary form, negative-এ ない-form, past-এ た-form লাগে।",
+   "target": "ഒരു പ്രവൃത്തി നടക്കുന്ന സമയം പറയാൻ, とき ഒരു verb-ന്റെ plain രൂപത്തിന് ശേഷം പോകുന്നു. Present affirmative-ന് dictionary form, negative-ന് ない-form, past-ന് た-form ഉപയോഗിക്കൂ."
+  },
+  {
+   "source": "とき-এর আগে ます-form বসে না। বাক্যের সময় অনুযায়ী plain form বেছে নিন।",
+   "target": "ます-form ഒരിക്കലും とき-ക്ക് മുമ്പ് പോകുന്നില്ല. വാക്യത്തിലെ സമയമനുസരിച്ച് plain രൂപം തിരഞ്ഞെടുക്കൂ."
+  },
+  {
+   "source": "গাক্কো এ ইকু তোকি, বাসু নি নোরিমাসু।",
+   "target": "Gakkou e iku toki, basu ni norimasu."
+  },
+  {
+   "source": "স্কুলে যাওয়ার সময় বাসে উঠি।",
+   "target": "സ്കൂളിലേക്ക് പോകുമ്പോൾ, ഞാൻ ഒരു ബസിൽ കയറുന്നു."
+  },
+  {
+   "source": "কানজি গা ওয়াকারানাই তোকি, সেনসেই নি কিকিমাসু।",
+   "target": "Kanji ga wakaranai toki, sensei ni kikimasu."
+  },
+  {
+   "source": "কাঞ্জি না বুঝলে শিক্ষককে জিজ্ঞাসা করি।",
+   "target": "എനിക്ക് ഒരു kanji മനസ്സിലാകാത്തപ്പോൾ, ഞാൻ അധ്യാപകനോട് ചോദിക്കുന്നു."
+  },
+  {
+   "source": "い-adjective সরাসরি とき নেয়; な-adjective-এর পরে なとき; noun-এর পরে のとき বসে।",
+   "target": "ഒരു い-adjective とき നേരിട്ട് എടുക്കുന്നു; ഒരു な-adjective-ന് ശേഷം なとき എന്നും, ഒരു noun-ന് ശേഷം のとき എന്നുമാണ്."
+  },
+  {
+   "source": "暇 হলো な-adjective—তাই 暇なとき। 子ども হলো noun—তাই 子どものとき।",
+   "target": "暇 ഒരു な-adjective ആണ് — അതിനാൽ 暇なとき. 子ども ഒരു noun ആണ് — അതിനാൽ 子どものとき."
+  },
+  {
+   "source": "আৎসুই তোকি, মিজু ও নোমিমাসু।",
+   "target": "Atsui toki, mizu wo nomimasu."
+  },
+  {
+   "source": "গরমের সময় পানি পান করি।",
+   "target": "ചൂടുള്ളപ്പോൾ, ഞാൻ വെള്ളം കുടിക്കുന്നു."
+  },
+  {
+   "source": "হিমানা তোকি, হোন ও ইয়োমিমাসু।",
+   "target": "Hima na toki, hon wo yomimasu."
+  },
+  {
+   "source": "অবসরে বই পড়ি।",
+   "target": "എന്റെ ഒഴിവുസമയത്ത്, ഞാൻ പുസ്തകങ്ങൾ വായിക്കുന്നു."
+  },
+  {
+   "source": "কোদোমো নো তোকি, ইয়োকু ওয়োগিমাশিতা।",
+   "target": "Kodomo no toki, yoku oyogimashita."
+  },
+  {
+   "source": "শিশু বয়সে অনেক সাঁতার কাটতাম।",
+   "target": "കുട്ടിയായിരുന്നപ്പോൾ, ഞാൻ ധാരാളം നീന്താറുണ്ടായിരുന്നു."
+  },
+  {
+   "source": "Dictionary form হলে とき-clause-এর action এখনো শেষ হয়নি; た-form হলে সেই action শেষ হওয়ার পর/সময় main action ঘটে।",
+   "target": "Dictionary form ആണെങ്കിൽ, とき clause-ലെ പ്രവൃത്തി ഇനിയും പൂർത്തിയായിട്ടില്ല; た-form ആണെങ്കിൽ, ആ പ്രവൃത്തി അവസാനിച്ചതിന് ശേഷം, അല്ലെങ്കിൽ ആ സമയത്ത്, പ്രധാന പ്രവൃത്തി നടക്കുന്നു."
+  },
+  {
+   "source": "行くとき = যাওয়ার পথে/আগে; 行ったとき = গিয়ে পৌঁছানোর পর/যখন গিয়েছিলাম।",
+   "target": "行くとき = പോകുന്ന വഴിയിൽ / പോകുന്നതിന് മുമ്പ്; 行ったとき = എത്തിയതിന് ശേഷം / ഞാൻ പോയപ്പോൾ."
+  },
+  {
+   "source": "তোকিয়ো এ ইকু তোকি, কোনো কাবান ও কাইমাশিতা।",
+   "target": "Toukyou e iku toki, kono kaban wo kaimashita."
+  },
+  {
+   "source": "টোকিও যাওয়ার পথে এই ব্যাগ কিনেছিলাম।",
+   "target": "Tokyo-യിലേക്കുള്ള വഴിയിൽ, ഞാൻ ഈ ബാഗ് വാങ്ങി."
+  },
+  {
+   "source": "তোকিয়ো এ ইত্তা তোকি, কোনো কাবান ও কাইমাশিতা।",
+   "target": "Toukyou e itta toki, kono kaban wo kaimashita."
+  },
+  {
+   "source": "টোকিও গিয়ে এই ব্যাগ কিনেছিলাম।",
+   "target": "ഞാൻ Tokyo-യിൽ പോയപ്പോൾ, ഞാൻ ഈ ബാഗ് വാങ്ങി."
+  },
+  {
+   "source": "একটি কাজ করলে স্বাভাবিক, অবশ্যম্ভাবী বা নিয়মিত ফল ঘটে—এমন ক্ষেত্রে と ব্যবহার হয়।",
+   "target": "ഒരു കാര്യം ചെയ്യുന്നത് സ്വാഭാവികമായോ, അനിവാര്യമായോ, അല്ലെങ്കിൽ പതിവായോ ഒരു ഫലം കൊണ്ടുവരുമ്പോൾ と ഉപയോഗിക്കുന്നു."
+  },
+  {
+   "source": "と-এর পর ইচ্ছা, অনুরোধ, আমন্ত্রণ বা command বসে না; সেসব ক্ষেত্রে Lesson 25-এর たら ব্যবহার করুন।",
+   "target": "ഒരു ആഗ്രഹം, അഭ്യർത്ഥന, ക്ഷണം അല്ലെങ്കിൽ കല്പന と-യെ പിന്തുടരുന്നില്ല; അവയ്ക്ക്, Lesson 25-ലെ たら ഉപയോഗിക്കൂ."
+  },
+  {
+   "source": "কোনো বোতান ও ওসু তো, দোআ গা হিরাকিমাসু।",
+   "target": "Kono botan wo osu to, doa ga hirakimasu."
+  },
+  {
+   "source": "এই বোতাম চাপলে দরজা খুলে যায়।",
+   "target": "നിങ്ങൾ ഈ ബട്ടൺ അമർത്തുമ്പോൾ, വാതിൽ തുറക്കുന്നു."
+  },
+  {
+   "source": "মিগি এ মাগারু তো, ইউবিন কিয়োকু গা আরিমাসু।",
+   "target": "Migi e magaru to, yuubinkyoku ga arimasu."
+  },
+  {
+   "source": "ডানে ঘুরলে পোস্ট অফিস আছে।",
+   "target": "വലത്തേക്ക് തിരിയൂ, അവിടെ ഒരു പോസ്റ്റ് ഓഫീസുണ്ട്."
+  },
+  {
+   "source": "যে জায়গা দিয়ে চলাচল, পার হওয়া বা হাঁটা হয়—সেই পথ/এলাকাকে を দিয়ে চিহ্নিত করা হয়।",
+   "target": "നിങ്ങൾ കടന്നുപോകുന്ന, മുറിച്ചുകടക്കുന്ന അല്ലെങ്കിൽ നടക്കുന്ന പാത അല്ലെങ്കിൽ പ്രദേശം を ഉപയോഗിച്ച് അടയാളപ്പെടുത്തുന്നു."
+  },
+  {
+   "source": "এখানে を direct object নয়; movement-এর পথ বোঝায়।",
+   "target": "ഇവിടെ を ഒരു direct object അല്ല — അത് സഞ്ചാരത്തിന്റെ പാതയെ അടയാളപ്പെടുത്തുന്നു."
+  },
+  {
+   "source": "কোয়েন ও সানপো শিমাসু।",
+   "target": "Kouen wo sanpo shimasu."
+  },
+  {
+   "source": "পার্কে হাঁটাহাঁটি করি।",
+   "target": "ഞാൻ പാർക്കിൽ ഉലാത്തുന്നു."
+  },
+  {
+   "source": "মিচি ও ওয়াতারিমাসু।",
+   "target": "Michi wo watarimasu."
+  },
+  {
+   "source": "রাস্তা পার হই।",
+   "target": "ഞാൻ തെരുവ് മുറിച്ചുകടക്കുന്നു."
+  },
+  {
+   "source": "কোসাতেন ও মিগি এ মাগারিমাসু।",
+   "target": "Kousaten wo migi e magarimasu."
+  },
+  {
+   "source": "মোড়ে ডানে ঘুরি।",
+   "target": "ഞാൻ കവലയിൽ വലത്തേക്ക് തിരിയുന്നു."
+  },
+  {
+   "source": "মুখে বলার Practice",
+   "target": "ഉറക്കെ പറയാനുള്ള Practice"
+  },
+  {
+   "source": "এই বাক্যগুলো conversation-এর মতো করে ৩ বার করে পড়ুন।",
+   "target": "ഈ വാക്യങ്ങൾ ഒരു സംഭാഷണത്തിലെന്നപോലെ 3 തവണ വായിക്കൂ."
+  },
+  {
+   "source": "হিমানা তোকি, নানি ও শিমাসু কা।",
+   "target": "Hima na toki, nani wo shimasu ka."
+  },
+  {
+   "source": "ফ্রি সময়ে কী করেন?",
+   "target": "നിങ്ങളുടെ ഒഴിവുസമയത്ത് നിങ്ങൾ എന്ത് ചെയ്യുന്നു?"
+  },
+  {
+   "source": "হোন ও ইয়োন দারি, ওনগাকু ও কিই তারি শিমাসু।",
+   "target": "Hon wo yondari, ongaku wo kiitari shimasu."
+  },
+  {
+   "source": "বই পড়ি, গান শুনি ইত্যাদি।",
+   "target": "ഞാൻ പുസ്തകങ്ങൾ വായിക്കുക, സംഗീതം കേൾക്കുക, തുടങ്ങിയവ ചെയ്യുന്നു."
+  },
+  {
+   "source": "নিহোন এ ইকু তোকি, নানি ও মোত্তেইকিমাসু কা।",
+   "target": "Nihon e iku toki, nani wo motte ikimasu ka."
+  },
+  {
+   "source": "জাপানে যাওয়ার সময় কী নিয়ে যাবেন?",
+   "target": "നിങ്ങൾ ജപ്പാനിലേക്ക് പോകുമ്പോൾ നിങ്ങളോടൊപ്പം എന്താണ് കൊണ്ടുപോകുക?"
+  },
+  {
+   "source": "কোনো বোতান ও ওসু তো, দো নারিমাসু কা।",
+   "target": "Kono botan wo osu to, dou narimasu ka."
+  },
+  {
+   "source": "এই বোতাম চাপলে কী হয়?",
+   "target": "നിങ്ങൾ ഈ ബട്ടൺ അമർത്തുമ്പോൾ എന്ത് സംഭവിക്കുന്നു?"
+  },
+  {
+   "source": "দোআ গা হিরাকিমাসু।",
+   "target": "Doa ga hirakimasu."
+  },
+  {
+   "source": "দরজা খুলে যায়।",
+   "target": "വാതിൽ തുറക്കുന്നു."
+  },
+  {
+   "source": "✅ と-এর পরে command/request natural নয়।",
+   "target": "✅ と-ക്ക് ശേഷം ഒരു കല്പന അല്ലെങ്കിൽ അഭ്യർത്ഥന സ്വാഭാവികമല്ല."
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "തന്നെത്താൻ പരീക്ഷിക്കുക"
+  },
+  {
+   "source": "জাপানে গিয়েছিলাম যখন = ?",
+   "target": "ഞാൻ ജപ്പാനിൽ പോയിരുന്നപ്പോൾ = ?"
+  },
+  {
+   "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 23 • Verified Premium Detailed Version",
+   "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 23 • Verified Premium Detailed Version"
+  }
+ ]
+}

@@ -1,0 +1,230 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "n5-grammar-lesson-09-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Grammar Lesson 9 | 好き・嫌い・上手・下手 + が / わかります / あります / から | আপনার নিহোন",
+   "target": "N5 Grammar Lesson 9 | 好き・嫌い・上手・下手 + が / わかります / あります / から | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "পছন্দ-অপছন্দ, দক্ষতা, বোঝা, থাকা এবং কারণ বলা",
+   "target": "ഇഷ്ടങ്ങളും ഇഷ്ടക്കേടുകളും, കഴിവുകൾ, മനസ്സിലാക്കൽ, ഉണ്ടായിരിക്കൽ, കാരണങ്ങൾ എന്നിവ പറയൽ"
+  },
+  {
+   "source": "Grammar শুরু",
+   "target": "Grammar തുടങ്ങുക"
+  },
+  {
+   "source": "আজকের Learning Goal",
+   "target": "ഇന്നത്തെ Learning Goal"
+  },
+  {
+   "source": "পছন্দ বলা",
+   "target": "നിങ്ങൾക്ക് ഇഷ്ടമുള്ളത് പറയൽ"
+  },
+  {
+   "source": "দক্ষতা বলা",
+   "target": "കഴിവുകളെക്കുറിച്ച് പറയൽ"
+  },
+  {
+   "source": "কারণ দেওয়া",
+   "target": "കാരണങ്ങൾ നൽകൽ"
+  },
+  {
+   "source": "সহজ ব্যাখ্যা + structure + example",
+   "target": "ലളിതമായ വിശദീകരണം + structure + example"
+  },
+  {
+   "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+   "target": "ഓരോ pattern-നും ആദ്യം structure നോക്കൂ, പിന്നെ example-കൾ ഉറക്കെ പറയൂ. Audio button അമർത്തിയാൽ Japanese വാക്യം കേൾക്കാം."
+  },
+  {
+   "source": "কী পছন্দ/অপছন্দ তা が দিয়ে চিহ্নিত হয়।",
+   "target": "നിങ്ങൾക്ക് ഇഷ്ടമുള്ളതോ ഇഷ്ടമില്ലാത്തതോ が ഉപയോഗിച്ച് അടയാളപ്പെടുത്തുന്നു."
+  },
+  {
+   "source": "好き/嫌い দেখতে adjective, কিন্তু ব্যবহার হয় “N が” দিয়ে।",
+   "target": "好き/嫌い adjective-കൾ പോലെ തോന്നുന്നു, പക്ഷേ അവ “N が” ഉപയോഗിച്ചാണ് ഉപയോഗിക്കുന്നത്."
+  },
+  {
+   "source": "ওয়াতাশি ওয়া ওনগাকু গা সুকিদেসু।",
+   "target": "Watashi wa ongaku ga suki desu."
+  },
+  {
+   "source": "আমি গান/সঙ্গীত পছন্দ করি।",
+   "target": "എനിക്ക് സംഗീതം ഇഷ്ടമാണ്."
+  },
+  {
+   "source": "সাকানা গা কিরাইদেসু।",
+   "target": "Sakana ga kirai desu."
+  },
+  {
+   "source": "মাছ অপছন্দ করি।",
+   "target": "എനിക്ക് മത്സ്യം ഇഷ്ടമല്ല."
+  },
+  {
+   "source": "কোন বিষয়ে দক্ষ/দুর্বল তা が দিয়ে বলা হয়।",
+   "target": "നിങ്ങൾ എന്തിൽ മിടുക്കനോ ദുർബലനോ ആണെന്നതും が ഉപയോഗിച്ച് പറയുന്നു."
+  },
+  {
+   "source": "নিজের ব্যাপারে 上手です বলা জাপানিতে অহংকারী শোনাতে পারে; 得意です বেশি natural হতে পারে।",
+   "target": "നിങ്ങളെക്കുറിച്ച് തന്നെ 上手です എന്ന് പറയുന്നത് ജാപ്പനീസിൽ അഹങ്കാരമായി തോന്നാം; 得意です കൂടുതൽ സ്വാഭാവികമായി തോന്നാം."
+  },
+  {
+   "source": "তানাকা সান ওয়া রিয়োরি গা জোজুদেসু।",
+   "target": "Tanaka-san wa ryouri ga jouzu desu."
+  },
+  {
+   "source": "তানাকা-সান রান্নায় দক্ষ।",
+   "target": "Tanaka-san പാചകത്തിൽ മിടുക്കനാണ്."
+  },
+  {
+   "source": "ওয়াতাশি ওয়া কানজি গা হেতাদেসু।",
+   "target": "Watashi wa kanji ga heta desu."
+  },
+  {
+   "source": "আমি কানজিতে দুর্বল।",
+   "target": "ഞാൻ kanji-യിൽ ദുർബലനാണ്."
+  },
+  {
+   "source": "কিছু বোঝা/জানা যায় বলতে わかります。",
+   "target": "നിങ്ങൾ എന്തെങ്കിലും മനസ്സിലാക്കുന്നു അല്ലെങ്കിൽ അറിയുന്നു എന്ന് പറയാൻ わかります ഉപയോഗിക്കൂ."
+  },
+  {
+   "source": "日本語をわかります নয়; সাধারণভাবে 日本語がわかります।",
+   "target": "日本語をわかります അല്ല; സാധാരണയായി 日本語がわかります എന്നാണ്."
+  },
+  {
+   "source": "নিহোনগো গা সুকোশি ওয়াকারিমাসু।",
+   "target": "Nihongo ga sukoshi wakarimasu."
+  },
+  {
+   "source": "জাপানি একটু বুঝি।",
+   "target": "എനിക്ക് അല്പം ജാപ്പനീസ് മനസ്സിലാകും."
+  },
+  {
+   "source": "এইগো গা ওয়াকারিমাসু কা।",
+   "target": "Eigo ga wakarimasu ka."
+  },
+  {
+   "source": "ইংরেজি বোঝেন?",
+   "target": "നിങ്ങൾക്ക് ഇംഗ്ലീഷ് മനസ്സിലാകുമോ?"
+  },
+  {
+   "source": "সময়/কাজ/appointment/জিনিস আছে বলতে あります।",
+   "target": "സമയം, ജോലി, ഒരു appointment അല്ലെങ്കിൽ ഒരു വസ്തു ഉണ്ട് എന്ന് പറയാൻ あります ഉപയോഗിക്കൂ."
+  },
+  {
+   "source": "মানুষ/প্রাণীর existence হলে います, কিন্তু possession/schedule হলে あります।",
+   "target": "ആളുകളുടെയോ മൃഗങ്ങളുടെയോ അസ്തിത്വത്തിന് います ഉപയോഗിക്കൂ; കൈവശമുള്ളതിനോ ഒരു schedule-നോ あります ഉപയോഗിക്കൂ."
+  },
+  {
+   "source": "কিয়ো ওয়া জিকান গা আরিমাসু।",
+   "target": "Kyou wa jikan ga arimasu."
+  },
+  {
+   "source": "আজ সময় আছে।",
+   "target": "ഇന്ന് എനിക്ക് സമയമുണ്ട്."
+  },
+  {
+   "source": "আশিতা, ইয়াকুসোকু গা আরিমাসু।",
+   "target": "Ashita, yakusoku ga arimasu."
+  },
+  {
+   "source": "কাল appointment আছে।",
+   "target": "നാളെ എനിക്ക് ഒരു appointment ഉണ്ട്."
+  },
+  {
+   "source": "কারণ বলতে sentence শেষে から বসে: “কারণ…”।",
+   "target": "ഒരു കാരണം നൽകാൻ, から വാക്യത്തിന്റെ അവസാനം വരുന്നു: “because…”."
+  },
+  {
+   "source": "কারণ আগে, ফলাফল পরে হতে পারে।",
+   "target": "കാരണം ആദ്യം വരാം, ഫലം അതിന് ശേഷവും."
+  },
+  {
+   "source": "ইসোগাশিইদেসু কারা, ইকিমাসেন।",
+   "target": "Isogashii desu kara, ikimasen."
+  },
+  {
+   "source": "ব্যস্ত বলে যাব না।",
+   "target": "ഞാൻ തിരക്കിലായതിനാൽ പോകില്ല."
+  },
+  {
+   "source": "নিহোনগো গা সুকিদেসু কারা, বেনকিয়ো শিমাসু।",
+   "target": "Nihongo ga suki desu kara, benkyou shimasu."
+  },
+  {
+   "source": "জাপানি পছন্দ বলে পড়ি।",
+   "target": "എനിക്ക് ജാപ്പനീസ് ഇഷ്ടമായതിനാൽ ഞാൻ അത് പഠിക്കുന്നു."
+  },
+  {
+   "source": "মুখে বলার Practice",
+   "target": "ഉറക്കെ പറയാനുള്ള Practice"
+  },
+  {
+   "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+   "target": "ഈ വാക്യങ്ങൾ ഒരു interview/classroom conversation-ലെന്നപോലെ 3 തവണ ഉറക്കെ വായിക്കൂ."
+  },
+  {
+   "source": "দোন্না সুপোৎসু গা সুকিদেসু কা।",
+   "target": "Donna supootsu ga suki desu ka."
+  },
+  {
+   "source": "কোন খেলাধুলা পছন্দ?",
+   "target": "നിങ്ങൾക്ക് ഏത് കായിക ഇനങ്ങളാണ് ഇഷ്ടം?"
+  },
+  {
+   "source": "সাক্কা গা সুকিদেসু।",
+   "target": "Sakkaa ga suki desu."
+  },
+  {
+   "source": "ফুটবল পছন্দ।",
+   "target": "എനിക്ക് ഫുട്ബോൾ ഇഷ്ടമാണ്."
+  },
+  {
+   "source": "নিহোনগো গা ওয়াকারিমাসু কা।",
+   "target": "Nihongo ga wakarimasu ka."
+  },
+  {
+   "source": "জাপানি বোঝেন?",
+   "target": "നിങ്ങൾക്ക് ജാപ്പനീസ് മനസ്സിലാകുമോ?"
+  },
+  {
+   "source": "হাই, সুকোশি ওয়াকারিমাসু।",
+   "target": "Hai, sukoshi wakarimasu."
+  },
+  {
+   "source": "হ্যাঁ, একটু বুঝি।",
+   "target": "അതെ, എനിക്ക് അല്പം മനസ്സിലാകും."
+  },
+  {
+   "source": "দোশিতে বেনকিয়ো শিমাসু কা।",
+   "target": "Doushite benkyou shimasu ka."
+  },
+  {
+   "source": "কেন পড়েন?",
+   "target": "നിങ്ങൾ എന്തുകൊണ്ട് പഠിക്കുന്നു?"
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "തന്നെത്താൻ പരീക്ഷിക്കുക"
+  },
+  {
+   "source": "কারণ বোঝাতে কোনটি?",
+   "target": "ഏതാണ് ഒരു കാരണം നൽകുന്നത്?"
+  },
+  {
+   "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 9 • Verified Premium Detailed Version",
+   "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 9 • Verified Premium Detailed Version"
+  }
+ ]
+}
