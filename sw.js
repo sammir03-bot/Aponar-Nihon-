@@ -1,4 +1,9 @@
-/* Aponar Nihon service-worker wrapper — app shell v43 — Bunka II revised lessons 19–34.
+/* Aponar Nihon service-worker wrapper — app shell v44 — HALAL FIX (2026-11-24):
+   wrapper caches renamed v1 -> v2 and an activate handler below purges the
+   legacy v1 wrapper caches, so a phone stuck on an old worker self-heals on
+   its next visit (the base worker's own caches are bumped to v38 in
+   sw-base-v28.js; its install already skipWaiting()s and its activate
+   already clients.claim()s and deletes every non-current cache).
    The dashboard, dedicated section hubs and AI Tutor assets are available
    offline after install, while updated learning pages stay network-first. */
 
@@ -15,6 +20,20 @@ self.addEventListener = function(type, listener, options){
 
 importScripts('/sw-base-v28.js');
 self.addEventListener = __anNativeAddEventListener;
+
+/* HALAL FIX (2026-11-24): purge the legacy v1 wrapper caches on activate.
+   The base worker's activate already deletes every non-current cache, but
+   these two names belong to this wrapper — drop any version that is not
+   the current v2 so stale study/content responses can never be replayed. */
+const __AN_WRAPPER_CACHES = ['an-current-content-v2', 'an-study-workspaces-v2'];
+__anNativeAddEventListener('activate', event => {
+  event.waitUntil(
+    caches.keys().then(keys => Promise.all(keys.map(key =>
+      ((key.startsWith('an-current-content-') || key.startsWith('an-study-workspaces-')) &&
+        !__AN_WRAPPER_CACHES.includes(key)) ? caches.delete(key) : null
+    )))
+  );
+});
 
 const __AN_N3_CSS = '<link rel="stylesheet" href="/n3-vocabulary-all.css?v=5">';
 const __AN_N3_EXAMPLES = '<script src="/n3-vocabulary-examples.js?v=1"></script>';
@@ -62,7 +81,7 @@ __anNativeAddEventListener('fetch', event => {
         (url.pathname === '/assets/data/daily-news.json' || url.pathname.startsWith('/assets/data/quiz/') ||
          ['/assets/js/shin-bunka.js', '/assets/css/shin-bunka.css', '/assets/css/bunka-entry.css', '/assets/js/bottom-navigation.js', '/assets/css/bottom-navigation.css', '/assets/js/daily-news.js', '/assets/js/app-shell.js', '/assets/js/learning-hub-pro.js', '/assets/js/cv-builder.js', '/assets/js/cv-workflow.js', '/assets/js/cv-builder-v6.js', '/cv-jis-format.js', '/cv-jis-format.css', '/assets/css/cv-builder.css', '/assets/css/cv-builder-v6.css'].includes(url.pathname))) {
       event.respondWith(fetch(request, {cache:'no-store'}).then(response => {
-        if (response.ok) event.waitUntil(caches.open('an-current-content-v1').then(cache => cache.put(request, response.clone())));
+        if (response.ok) event.waitUntil(caches.open('an-current-content-v2').then(cache => cache.put(request, response.clone())));
         return response;
       }).catch(async () => (await caches.match(request)) || new Response('', {status:503})));
       return;
@@ -82,7 +101,7 @@ __anNativeAddEventListener('fetch', event => {
       event.respondWith(
         fetch(request, {cache:'no-store'}).then(response => {
           if (response.ok) {
-            event.waitUntil(caches.open('an-study-workspaces-v1').then(cache => cache.put(request, response.clone())));
+            event.waitUntil(caches.open('an-study-workspaces-v2').then(cache => cache.put(request, response.clone())));
           }
           return response;
         }).catch(async () => {
