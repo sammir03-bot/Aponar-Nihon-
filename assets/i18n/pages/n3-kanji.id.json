@@ -1,0 +1,4338 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "n3-kanji",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "JLPT N3 Kanji Lab বাংলা | আপনার নিহোন",
+   "target": "JLPT N3 Kanji Lab Bahasa Indonesia | আপনার নিহোন"
+  },
+  {
+   "source": "Lesson-এ যান",
+   "target": "Pergi ke Lesson"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপানি শেখা, বাংলায় সহজ",
+   "target": "Belajar bahasa Jepang, mudah dalam bahasa Bengali"
+  },
+  {
+   "source": "মূল সাইট ↗",
+   "target": "Situs utama ↗"
+  },
+  {
+   "source": "Kanji দেখুন।",
+   "target": "Lihat Kanji."
+  },
+  {
+   "source": "শব্দে ব্যবহার করুন।",
+   "target": "Gunakan dalam kata."
+  },
+  {
+   "source": "মনে রাখুন।",
+   "target": "Ingatlah."
+  },
+  {
+   "source": "Nihongo Sou Matome N3-এর বইয়ের ক্রমে",
+   "target": "Sesuai urutan buku Nihongo Sou Matome N3"
+  },
+  {
+   "source": "৩৬টি Lesson",
+   "target": "36 Lesson"
+  },
+  {
+   "source": "—বড় Kanji tile, furigana, সহজ বাংলা অর্থ এবং প্রতি Part শেষে Exam।",
+   "target": "—Tile Kanji besar, furigana, arti mudah dalam Bahasa Indonesia, dan Exam di akhir setiap Part."
+  },
+  {
+   "source": "শব্দ",
+   "target": "Kata"
+  },
+  {
+   "source": "Exam · 120 প্রশ্ন",
+   "target": "Exam · 120 pertanyaan"
+  },
+  {
+   "source": "まなぶ · শেখা",
+   "target": "まなぶ · Belajar"
+  },
+  {
+   "source": "সব Lesson ও Exam",
+   "target": "Semua Lesson & Exam"
+  },
+  {
+   "source": "Lesson 01 · 駐車場 · পার্কিং এলাকা",
+   "target": "Lesson 01 · 駐車場 · Area parkir"
+  },
+  {
+   "source": "Lesson 02 · 横断歩道 · পথচারী পারাপার",
+   "target": "Lesson 02 · 横断歩道 · Penyeberangan pejalan kaki"
+  },
+  {
+   "source": "Lesson 03 · サイン · বিভিন্ন সাইন ও চিহ্ন",
+   "target": "Lesson 03 · サイン · Berbagai tanda dan simbol"
+  },
+  {
+   "source": "Lesson 04 · 駅のホーム · স্টেশনের প্ল্যাটফর্ম",
+   "target": "Lesson 04 · 駅のホーム · Peron stasiun"
+  },
+  {
+   "source": "Lesson 05 · 特急電車 · লিমিটেড এক্সপ্রেস ট্রেন",
+   "target": "Lesson 05 · 特急電車 · Kereta ekspres terbatas"
+  },
+  {
+   "source": "Lesson 06 · バス · বাস",
+   "target": "Lesson 06 · バス · Bus"
+  },
+  {
+   "source": "Lesson 07 · レストラン · রেস্তোরাঁ",
+   "target": "Lesson 07 · レストラン · Restoran"
+  },
+  {
+   "source": "Lesson 08 · 禁煙 · ধূমপান নিষেধ",
+   "target": "Lesson 08 · 禁煙 · Dilarang merokok"
+  },
+  {
+   "source": "Lesson 09 · 観光地図 · পর্যটন মানচিত্র",
+   "target": "Lesson 09 · 観光地図 · Peta wisata"
+  },
+  {
+   "source": "Lesson 10 · 町の地図 · শহরের মানচিত্র",
+   "target": "Lesson 10 · 町の地図 · Peta kota"
+  },
+  {
+   "source": "Lesson 11 · 病院 · হাসপাতাল",
+   "target": "Lesson 11 · 病院 · Rumah sakit"
+  },
+  {
+   "source": "Lesson 12 · 困ったときは · সমস্যায় পড়লে",
+   "target": "Lesson 12 · 困ったときは · Saat dalam kesulitan"
+  },
+  {
+   "source": "Lesson 13 · 要冷蔵 · ফ্রিজে সংরক্ষণ",
+   "target": "Lesson 13 · 要冷蔵 · Simpan di lemari es"
+  },
+  {
+   "source": "Lesson 14 · 賞味期限 · ভালো থাকার শেষ তারিখ",
+   "target": "Lesson 14 · 賞味期限 · Tanggal kedaluwarsa terbaik (best-before)"
+  },
+  {
+   "source": "Lesson 15 · 自動販売機 · ভেন্ডিং মেশিন",
+   "target": "Lesson 15 · 自動販売機 · Mesin penjual otomatis"
+  },
+  {
+   "source": "Lesson 16 · レシピ · রেসিপি",
+   "target": "Lesson 16 · レシピ · Resep"
+  },
+  {
+   "source": "Lesson 17 · コピー機・留守番電話 · কপিয়ার ও অ্যানসারিং মেশিন",
+   "target": "Lesson 17 · コピー機・留守番電話 · Mesin fotokopi & mesin penjawab telepon"
+  },
+  {
+   "source": "Lesson 18 · 携帯電話 · মোবাইল ফোন",
+   "target": "Lesson 18 · 携帯電話 · Ponsel"
+  },
+  {
+   "source": "Lesson 19 · 日用品 · দৈনন্দিন প্রয়োজনীয় জিনিস",
+   "target": "Lesson 19 · 日用品 · Kebutuhan sehari-hari"
+  },
+  {
+   "source": "Lesson 20 · 広告メール · বিজ্ঞাপনী ইমেইল",
+   "target": "Lesson 20 · 広告メール · Email promosi"
+  },
+  {
+   "source": "Lesson 21 · 通信販売 · ডাক/অনলাইনে কেনাকাটা",
+   "target": "Lesson 21 · 通信販売 · Belanja lewat pos / online"
+  },
+  {
+   "source": "Lesson 22 · 申込書 · আবেদনপত্র",
+   "target": "Lesson 22 · 申込書 · Formulir pendaftaran"
+  },
+  {
+   "source": "Lesson 23 · 注文 · অর্ডার",
+   "target": "Lesson 23 · 注文 · Pesanan"
+  },
+  {
+   "source": "Lesson 24 · 不在通知 · অনুপস্থিতির ডেলিভারি নোটিশ",
+   "target": "Lesson 24 · 不在通知 · Pemberitahuan ketidakhadiran pengiriman"
+  },
+  {
+   "source": "Lesson 25 · メールを送る · ইমেইল পাঠানো",
+   "target": "Lesson 25 · メールを送る · Mengirim email"
+  },
+  {
+   "source": "Lesson 26 · アンケート · জরিপ ও প্রশ্নপত্র",
+   "target": "Lesson 26 · アンケート · Survei & kuesioner"
+  },
+  {
+   "source": "Lesson 27 · 日本語クラス · জাপানি ভাষার ক্লাস",
+   "target": "Lesson 27 · 日本語クラス · Kelas bahasa Jepang"
+  },
+  {
+   "source": "Lesson 28 · 作文 · রচনা লেখা",
+   "target": "Lesson 28 · 作文 · Menulis esai"
+  },
+  {
+   "source": "Lesson 29 · 問診票・歯科で · ডেন্টাল রোগীর ফর্ম",
+   "target": "Lesson 29 · 問診票・歯科で · Formulir pasien gigi"
+  },
+  {
+   "source": "Lesson 30 · 問診票・健康診断 · স্বাস্থ্য পরীক্ষার ফর্ম",
+   "target": "Lesson 30 · 問診票・健康診断 · Formulir pemeriksaan kesehatan"
+  },
+  {
+   "source": "Lesson 31 · 天気情報 · আবহাওয়ার তথ্য",
+   "target": "Lesson 31 · 天気情報 · Informasi cuaca"
+  },
+  {
+   "source": "Lesson 32 · 求人広告 · চাকরির বিজ্ঞাপন",
+   "target": "Lesson 32 · 求人広告 · Iklan lowongan kerja"
+  },
+  {
+   "source": "Lesson 33 · スポーツ記事 · খেলাধুলার সংবাদ",
+   "target": "Lesson 33 · スポーツ記事 · Artikel olahraga"
+  },
+  {
+   "source": "Lesson 34 · 経済 · অর্থনীতি",
+   "target": "Lesson 34 · 経済 · Ekonomi"
+  },
+  {
+   "source": "Lesson 35 · 地球温暖化 · বিশ্ব উষ্ণায়ন",
+   "target": "Lesson 35 · 地球温暖化 · Pemanasan global"
+  },
+  {
+   "source": "Lesson 36 · 政治 · রাজনীতি",
+   "target": "Lesson 36 · 政治 · Politik"
+  },
+  {
+   "source": "শুধু বাকি",
+   "target": "Hanya yang tersisa"
+  },
+  {
+   "source": "সব Part",
+   "target": "Semua Part"
+  },
+  {
+   "source": "Part 1 · বাইরে যাওয়া ১",
+   "target": "Part 1 · Pergi Keluar 1"
+  },
+  {
+   "source": "Part 2 · বাইরে যাওয়া ২",
+   "target": "Part 2 · Pergi Keluar 2"
+  },
+  {
+   "source": "Part 3 · ব্যবহার করা",
+   "target": "Part 3 · Penggunaan"
+  },
+  {
+   "source": "Part 4 · কেনাকাটা",
+   "target": "Part 4 · Berbelanja"
+  },
+  {
+   "source": "Part 5 · লেখা",
+   "target": "Part 5 · Menulis"
+  },
+  {
+   "source": "Part 6 · পড়া",
+   "target": "Part 6 · Membaca"
+  },
+  {
+   "source": "0 / 42 শেষ",
+   "target": "0 / 42 selesai"
+  },
+  {
+   "source": "42টি item",
+   "target": "42 item"
+  },
+  {
+   "source": "এক Lesson, তিন ধাপ",
+   "target": "Satu Lesson, tiga langkah"
+  },
+  {
+   "source": "Kanji → শব্দ → বাংলা recall; তারপর “পড়া শেষ” দিন।",
+   "target": "Kanji → Kata → mengingat arti Bengali; lalu klik “Selesai Membaca”."
+  },
+  {
+   "source": "বড় অক্ষরটি ৫ সেকেন্ড দেখুন",
+   "target": "Lihat karakter besar selama 5 detik"
+  },
+  {
+   "source": "Furigana জোরে ৩ বার পড়ুন",
+   "target": "Baca furigana dengan keras 3 kali"
+  },
+  {
+   "source": "বাংলা দেখে Japanese বলুন",
+   "target": "Ucapkan bahasa Jepangnya sambil melihat bahasa Bengali"
+  },
+  {
+   "source": "PART 1 · ৬ LESSON + EXAM",
+   "target": "PART 1 · 6 LESSON + EXAM"
+  },
+  {
+   "source": "বাইরে যাওয়া ১",
+   "target": "Pergi Keluar 1"
+  },
+  {
+   "source": "পার্কিং এলাকা · 21টি শব্দ",
+   "target": "Area Parkir · 21 kata"
+  },
+  {
+   "source": "পড়া শেষ",
+   "target": "Selesai Membaca"
+  },
+  {
+   "source": "প্রথমে এই ৩টি শব্দ",
+   "target": "Pertama, 3 kata ini"
+  },
+  {
+   "source": "জোরে তিনবার পড়ুন, তারপর বাংলা না দেখে অর্থ বলুন।",
+   "target": "Baca dengan keras tiga kali, lalu sebutkan artinya tanpa melihat bahasa Bengali."
+  },
+  {
+   "source": "গাড়ি পার্ক করা",
+   "target": "Memarkir mobil"
+  },
+  {
+   "source": "পার্কিং এলাকা",
+   "target": "Area parkir"
+  },
+  {
+   "source": "ছুটি ছাড়া খোলা",
+   "target": "Buka tanpa hari libur"
+  },
+  {
+   "source": "2টি শব্দ",
+   "target": "2 kata"
+  },
+  {
+   "source": "4টি শব্দ",
+   "target": "4 kata"
+  },
+  {
+   "source": "বিনামূল্যে",
+   "target": "Gratis"
+  },
+  {
+   "source": "অসম্ভব / অযৌক্তিক",
+   "target": "Tidak mungkin / tidak masuk akal"
+  },
+  {
+   "source": "নেই / অস্তিত্ব নেই",
+   "target": "Tidak ada / tidak eksis"
+  },
+  {
+   "source": "3টি শব্দ",
+   "target": "3 kata"
+  },
+  {
+   "source": "পার্কিং পূর্ণ",
+   "target": "Parkir penuh"
+  },
+  {
+   "source": "আসন পূর্ণ",
+   "target": "Kursi penuh"
+  },
+  {
+   "source": "অসন্তুষ্ট",
+   "target": "Tidak puas"
+  },
+  {
+   "source": "দিক",
+   "target": "Arah"
+  },
+  {
+   "source": "ওপারে / ওই দিকে",
+   "target": "Di seberang / ke arah sana"
+  },
+  {
+   "source": "দিকে যাওয়া / মুখ করা",
+   "target": "Menuju ke / menghadap"
+  },
+  {
+   "source": "~ এর জন্য উপযুক্ত",
+   "target": "~ cocok untuk"
+  },
+  {
+   "source": "1টি শব্দ",
+   "target": "1 kata"
+  },
+  {
+   "source": "নিষেধাজ্ঞা",
+   "target": "Larangan"
+  },
+  {
+   "source": "আগ্রহ উদ্বেগ",
+   "target": "Minat / kepedulian"
+  },
+  {
+   "source": "সম্পর্কিত / উদ্বেগ",
+   "target": "Terkait dengan / kepedulian"
+  },
+  {
+   "source": "সম্পর্ক",
+   "target": "Hubungan"
+  },
+  {
+   "source": "দায়িত্বপ্রাপ্ত ব্যক্তি / দায়িত্ব",
+   "target": "Penanggung jawab / tanggung jawab"
+  },
+  {
+   "source": "অনুমতি ছাড়া",
+   "target": "Tanpa izin"
+  },
+  {
+   "source": "পানি সরবরাহ বন্ধ",
+   "target": "Pasokan air terputus"
+  },
+  {
+   "source": "প্রত্যাখ্যান করা / না বলা",
+   "target": "Menolak / mengatakan tidak"
+  },
+  {
+   "source": "↑ Part-এর শুরুতে ফিরুন",
+   "target": "↑ Kembali ke awal part"
+  },
+  {
+   "source": "পথচারী পারাপার · 22টি শব্দ",
+   "target": "Penyeberangan Pejalan Kaki · 22 kata"
+  },
+  {
+   "source": "ক্রসিং অতিক্রম করা",
+   "target": "Menyeberangi persimpangan"
+  },
+  {
+   "source": "ক্রসওয়াক পথচারী পারাপার",
+   "target": "Crosswalk / penyeberangan pejalan kaki"
+  },
+  {
+   "source": "পার্শ্ব অনুভূমিক",
+   "target": "Samping / horizontal"
+  },
+  {
+   "source": "চাপ দেওয়া",
+   "target": "Mendorong"
+  },
+  {
+   "source": "চেপে ধরা",
+   "target": "Menahan ke bawah"
+  },
+  {
+   "source": "দেয়ালের আলমারি / স্টোরেজ ক্লোজেট",
+   "target": "Lemari dinding / lemari penyimpanan"
+  },
+  {
+   "source": "পুশ-বোতামের ধরন / পুশ-বোতাম-চালিত",
+   "target": "Tipe tombol tekan / dioperasikan dengan tombol tekan"
+  },
+  {
+   "source": "প্রবেশ অনুষ্ঠান",
+   "target": "Aula pintu masuk"
+  },
+  {
+   "source": "সূত্র গাণিতিক অভিব্যক্তি",
+   "target": "Rumus / ekspresi matematika"
+  },
+  {
+   "source": "পাঠানো / প্রেরণ",
+   "target": "Mengirim / pengiriman"
+  },
+  {
+   "source": "বিশ্বাস করা বিশ্বাস",
+   "target": "Percaya / kepercayaan"
+  },
+  {
+   "source": "আত্মবিশ্বাস",
+   "target": "Kepercayaan diri"
+  },
+  {
+   "source": "বিশ্বাস / আস্থা",
+   "target": "Kepercayaan / keyakinan"
+  },
+  {
+   "source": "সংকেত ট্রাফিক সিগন্যাল",
+   "target": "Sinyal / sinyal lalu lintas"
+  },
+  {
+   "source": "ট্রেনের বগি নম্বর",
+   "target": "Nomor gerbong kereta"
+  },
+  {
+   "source": "নির্ভুল / সঠিক",
+   "target": "Akurat / benar"
+  },
+  {
+   "source": "নিশ্চিত করা যাচাই",
+   "target": "Mengonfirmasi / memverifikasi"
+  },
+  {
+   "source": "নির্দিষ্ট নিশ্চিত",
+   "target": "Spesifik / terkonfirmasi"
+  },
+  {
+   "source": "স্বীকৃতি স্বীকার করা",
+   "target": "Pengakuan / mengakui"
+  },
+  {
+   "source": "বিমানবন্দর",
+   "target": "Bandara"
+  },
+  {
+   "source": "উড়া / লাফ দেওয়া",
+   "target": "Terbang / melompat"
+  },
+  {
+   "source": "বিভিন্ন সাইন ও চিহ্ন · 13টি শব্দ",
+   "target": "Berbagai Tanda dan Simbol · 13 kata"
+  },
+  {
+   "source": "জরুরি অবস্থা অসাধারণ",
+   "target": "darurat luar biasa"
+  },
+  {
+   "source": "অত্যন্ত খুব",
+   "target": "sangat amat"
+  },
+  {
+   "source": "জরুরি নির্গমনপথ",
+   "target": "pintu keluar darurat"
+  },
+  {
+   "source": "দৈনিক প্রতিদিন",
+   "target": "harian setiap hari"
+  },
+  {
+   "source": "স্বাভাবিক নিয়মিত",
+   "target": "normal teratur"
+  },
+  {
+   "source": "মেঝে / গল্প",
+   "target": "lantai / tingkat"
+  },
+  {
+   "source": "সিঁড়ি",
+   "target": "Tangga"
+  },
+  {
+   "source": "বাক্স / মামলা",
+   "target": "kotak / kasus"
+  },
+  {
+   "source": "আবর্জনা ক্যান / আবর্জনা বিন",
+   "target": "tempat sampah / tong sampah"
+  },
+  {
+   "source": "বিপদ বিপজ্জনক",
+   "target": "bahaya berbahaya"
+  },
+  {
+   "source": "ফেলে দেওয়া বাতিল",
+   "target": "membuang membatalkan"
+  },
+  {
+   "source": "স্টেশনের প্ল্যাটফর্ম · 22টি শব্দ",
+   "target": "Peron Stasiun · 22 kata"
+  },
+  {
+   "source": "লাইন ট্র্যাক",
+   "target": "jalur rel"
+  },
+  {
+   "source": "প্ল্যাটফর্ম নম্বর / ট্র্যাক নম্বর",
+   "target": "nomor peron / nomor jalur"
+  },
+  {
+   "source": "সমগ্র সম্পূর্ণ",
+   "target": "seluruh lengkap"
+  },
+  {
+   "source": "পর্দা / প্রদর্শন",
+   "target": "layar / tampilan"
+  },
+  {
+   "source": "নির্দেশ জন্য আবদ্ধ",
+   "target": "tujuan arah"
+  },
+  {
+   "source": "সাধারণ স্বাভাবিক",
+   "target": "umum normal"
+  },
+  {
+   "source": "প্রতিটি স্টেশন",
+   "target": "setiap stasiun"
+  },
+  {
+   "source": "প্রতিটি দেশ",
+   "target": "setiap negara"
+  },
+  {
+   "source": "প্রতিটি ব্যক্তি",
+   "target": "setiap orang"
+  },
+  {
+   "source": "বিষয়বস্তুর সারণী",
+   "target": "daftar isi"
+  },
+  {
+   "source": "পরের বার",
+   "target": "lain kali"
+  },
+  {
+   "source": "পরবর্তী",
+   "target": "berikutnya"
+  },
+  {
+   "source": "দ্রুত প্রকাশ",
+   "target": "ekspres cepat"
+  },
+  {
+   "source": "এক্সপ্রেসওয়ে / মহাসড়ক",
+   "target": "jalan tol / jalan raya"
+  },
+  {
+   "source": "গতি",
+   "target": "kecepatan"
+  },
+  {
+   "source": "দ্রুত দ্রুত",
+   "target": "cepat dengan cepat"
+  },
+  {
+   "source": "পাস করা পাস",
+   "target": "lulus lulus"
+  },
+  {
+   "source": "অতীত",
+   "target": "masa lalu"
+  },
+  {
+   "source": "পাস করা / অতিক্রম করা",
+   "target": "melewati / menyalip"
+  },
+  {
+   "source": "পাতাল রেল ভূগর্ভস্থ",
+   "target": "kereta bawah tanah bawah tanah"
+  },
+  {
+   "source": "রেলপথ",
+   "target": "jalur kereta api"
+  },
+  {
+   "source": "লোহা",
+   "target": "besi"
+  },
+  {
+   "source": "লিমিটেড এক্সপ্রেস ট্রেন · 24টি শব্দ",
+   "target": "Kereta Ekspres Terbatas · 24 kata"
+  },
+  {
+   "source": "পদবী স্পেসিফিকেশন",
+   "target": "spesifikasi judul"
+  },
+  {
+   "source": "সংরক্ষিত আসন",
+   "target": "kursi yang dipesan"
+  },
+  {
+   "source": "আঙুল",
+   "target": "jari"
+  },
+  {
+   "source": "রিং",
+   "target": "cincin"
+  },
+  {
+   "source": "নিয়মিত ছুটি / বন্ধ দিন",
+   "target": "hari libur rutin / hari tutup"
+  },
+  {
+   "source": "স্থিতিশীলতা / স্থিতিশীল",
+   "target": "stabilitas / stabil"
+  },
+  {
+   "source": "অস্থির অস্থিরতা",
+   "target": "tidak stabil ketidakstabilan"
+  },
+  {
+   "source": "আসন",
+   "target": "kursi"
+  },
+  {
+   "source": "উপস্থিতি উপস্থিতি",
+   "target": "kehadiran kehadiran"
+  },
+  {
+   "source": "অনুপস্থিতি",
+   "target": "ketidakhadiran"
+  },
+  {
+   "source": "স্বাধীনতা স্বাধীনতা",
+   "target": "kebebasan kemerdekaan"
+  },
+  {
+   "source": "অসংরক্ষিত আসন",
+   "target": "kursi tanpa reservasi"
+  },
+  {
+   "source": "কারণ",
+   "target": "Alasan"
+  },
+  {
+   "source": "সংখ্যা",
+   "target": "nomor"
+  },
+  {
+   "source": "জানালা",
+   "target": "jendela"
+  },
+  {
+   "source": "টিকিট জানালা / পরিষেবা কাউন্টার",
+   "target": "loket tiket / konter layanan"
+  },
+  {
+   "source": "উভয় পক্ষ",
+   "target": "kedua pihak"
+  },
+  {
+   "source": "জানালার পাশে / জানালার সিট",
+   "target": "sisi jendela / kursi dekat jendela"
+  },
+  {
+   "source": "ডান দিকে",
+   "target": "di sisi kanan"
+  },
+  {
+   "source": "করিডোর পথ",
+   "target": "jalur lorong"
+  },
+  {
+   "source": "রাস্তা",
+   "target": "jalan"
+  },
+  {
+   "source": "রেলপথ / রেলপথ ট্র্যাক",
+   "target": "rel kereta / jalur rel kereta"
+  },
+  {
+   "source": "বাস · 25টি শব্দ",
+   "target": "Bus · 25 kata"
+  },
+  {
+   "source": "থামা থামা",
+   "target": "berhenti berhenti"
+  },
+  {
+   "source": "বাস স্টপ",
+   "target": "Halte bus"
+  },
+  {
+   "source": "বাছাই / ব্যবস্থা",
+   "target": "penyortiran / pengaturan"
+  },
+  {
+   "source": "সংখ্যাযুক্ত টিকিট",
+   "target": "tiket bernomor"
+  },
+  {
+   "source": "পার্কিং টিকিট",
+   "target": "tiket parkir"
+  },
+  {
+   "source": "বোর্ডিং টিকেট",
+   "target": "tiket naik (boarding)"
+  },
+  {
+   "source": "টিকিটের বই / মাল্টি রাইড টিকেট",
+   "target": "buku tiket / tiket multi-perjalanan"
+  },
+  {
+   "source": "নগদ",
+   "target": "Uang tunai"
+  },
+  {
+   "source": "অভিব্যক্তি",
+   "target": "ekspresi"
+  },
+  {
+   "source": "প্রদর্শিত",
+   "target": "ditampilkan"
+  },
+  {
+   "source": "পিতামাতা",
+   "target": "orang tua"
+  },
+  {
+   "source": "ট্রেন গাড়ির জন্য কাউন্টার",
+   "target": "konter untuk gerbong kereta"
+  },
+  {
+   "source": "প্রতিস্থাপন বিনিময়",
+   "target": "penggantian pertukaran"
+  },
+  {
+   "source": "অর্থ বিনিময়",
+   "target": "penukaran uang"
+  },
+  {
+   "source": "কাপড় পরিবর্তন",
+   "target": "ganti pakaian"
+  },
+  {
+   "source": "অগ্রাধিকার আসন",
+   "target": "kursi prioritas"
+  },
+  {
+   "source": "অভিনেত্রী",
+   "target": "aktris"
+  },
+  {
+   "source": "ধরনের মৃদু",
+   "target": "tipe lembut"
+  },
+  {
+   "source": "আনুষ্ঠানিক নতজানু",
+   "target": "membungkuk formal"
+  },
+  {
+   "source": "বসা",
+   "target": "Duduk"
+  },
+  {
+   "source": "নামানো প্রস্থান",
+   "target": "pintu keluar penurunan"
+  },
+  {
+   "source": "পরে / তারপর",
+   "target": "setelah / kemudian"
+  },
+  {
+   "source": "নেমে যাওয়া",
+   "target": "Turun / menurun"
+  },
+  {
+   "source": "পতন (বৃষ্টি / তুষার)",
+   "target": "Jatuh (hujan / salju)"
+  },
+  {
+   "source": "20 প্রশ্ন · উত্তর Submit-এর আগে গোপন থাকবে",
+   "target": "20 pertanyaan · Jawaban akan tetap tersembunyi sebelum dikirim (submit)"
+  },
+  {
+   "source": "Exam শেষ",
+   "target": "Exam selesai"
+  },
+  {
+   "source": "প্রশ্নে furigana লুকানো—কারণ reading-টাই উত্তর। সবগুলো করে শেষে একসঙ্গে মিলিয়ে দেখুন।",
+   "target": "Furigana disembunyikan dalam pertanyaan—karena cara membacanya (reading) itu sendiri adalah jawabannya. Kerjakan semuanya dan periksa bersama di akhir."
+  },
+  {
+   "source": "দাগ দেওয়া শব্দের সঠিক পড়া বেছে নাও",
+   "target": "Pilih cara baca yang benar untuk kata yang digarisbawahi"
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · とびだしちゅうい",
+   "target": "Jawaban yang benar: 2 · とびだしちゅうい"
+  },
+  {
+   "source": "এখানে ‘হঠাৎ বেরিয়ে আসা থেকে সাবধান’ লেখা আছে।",
+   "target": "Di sini tertulis 'Hati-hati terhadap yang tiba-tiba keluar/berlari keluar'."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · せいかく",
+   "target": "Jawaban yang benar: 1 · せいかく"
+  },
+  {
+   "source": "এই ঘড়িটি সঠিক।",
+   "target": "Jam ini akurat."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · おうだん",
+   "target": "Jawaban yang benar: 2 · おうだん"
+  },
+  {
+   "source": "চলো ক্রসওয়াকে পার হই।",
+   "target": "Mari menyeberang di crosswalk."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · てつ",
+   "target": "Jawaban yang benar: 4 · てつ"
+  },
+  {
+   "source": "এই পাত্রটি লোহা দিয়ে তৈরি।",
+   "target": "Wadah ini terbuat dari besi."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · ゆうせん",
+   "target": "Jawaban yang benar: 3 · ゆうせん"
+  },
+  {
+   "source": "অনুগ্রহ করে অগ্রাধিকারের আসনে মোবাইল ফোন ব্যবহার করবেন না।",
+   "target": "Mohon jangan menggunakan ponsel di kursi prioritas."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · おりる",
+   "target": "Jawaban yang benar: 4 · おりる"
+  },
+  {
+   "source": "নামার সময় ভাড়া পরিশোধ করুন।",
+   "target": "Mohon bayar ongkos saat turun."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · かんけいしゃ",
+   "target": "Jawaban yang benar: 1 · かんけいしゃ"
+  },
+  {
+   "source": "আপনি অনুমোদিত না হলে অনুগ্রহ করে প্রবেশ করবেন না।",
+   "target": "Mohon jangan masuk kecuali Anda berwenang."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · かくにん",
+   "target": "Jawaban yang benar: 2 · かくにん"
+  },
+  {
+   "source": "নিশ্চিত বোতাম টিপুন।",
+   "target": "Tekan tombol konfirmasi."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · よこ",
+   "target": "Jawaban yang benar: 2 · よこ"
+  },
+  {
+   "source": "দরজার পাশে একটি সুইচ আছে।",
+   "target": "Ada saklar di samping pintu."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · ひこうじょう",
+   "target": "Jawaban yang benar: 4 · ひこうじょう"
+  },
+  {
+   "source": "হাইওয়ে থেকে এয়ারপোর্ট দেখা যায়।",
+   "target": "Bandara dapat dilihat dari jalan raya."
+  },
+  {
+   "source": "হিরাগানার সঠিক কানজি বেছে নাও",
+   "target": "Pilih kanji yang benar untuk hiragana"
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 何番",
+   "target": "Jawaban yang benar: 3 · 何番"
+  },
+  {
+   "source": "আসন সংখ্যা কত?",
+   "target": "Berapa nomor kursinya?"
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · 線",
+   "target": "Jawaban yang benar: 1 · 線"
+  },
+  {
+   "source": "অনুগ্রহ করে পিছনে যান এবং হলুদ লাইনের পিছনে অপেক্ষা করুন।",
+   "target": "Mohon mundur dan tunggu di belakang garis kuning."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 表現",
+   "target": "Jawaban yang benar: 4 · 表現"
+  },
+  {
+   "source": "সেই অভিনেত্রী খুবই ভাবপ্রবণ।",
+   "target": "Aktris itu sangat ekspresif."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 認めた",
+   "target": "Jawaban yang benar: 2 · 認めた"
+  },
+  {
+   "source": "প্রেসিডেন্ট ভুল স্বীকার করেছেন।",
+   "target": "Presiden mengakui kesalahannya."
+  },
+  {
+   "source": "শূন্যস্থানে সবচেয়ে উপযুক্ত কানজি বসাও",
+   "target": "Isi bagian kosong dengan kanji yang paling tepat"
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 各",
+   "target": "Jawaban yang benar: 3 · 各"
+  },
+  {
+   "source": "এই ট্রেনটি প্রতিটি স্টেশনে থামে।",
+   "target": "Kereta ini berhenti di setiap stasiun."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 式",
+   "target": "Jawaban yang benar: 4 · 式"
+  },
+  {
+   "source": "সেই সংকেতটি পুশ-বোতাম দ্বারা চালিত হয়।",
+   "target": "Sinyal itu dioperasikan dengan tombol tekan."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 満",
+   "target": "Jawaban yang benar: 2 · 満"
+  },
+  {
+   "source": "পার্কিং লট বর্তমানে পূর্ণ।",
+   "target": "Tempat parkir saat ini penuh."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 無",
+   "target": "Jawaban yang benar: 3 · 無"
+  },
+  {
+   "source": "10,000 ইয়েন বা তার বেশি অর্ডারের জন্য শিপিং বিনামূল্যে।",
+   "target": "Pengiriman gratis untuk pesanan 10.000 yen atau lebih."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 券",
+   "target": "Jawaban yang benar: 4 · 券"
+  },
+  {
+   "source": "অনুগ্রহ করে একটি নম্বরযুক্ত টিকিট নিন এবং অপেক্ষা করুন।",
+   "target": "Mohon ambil tiket bernomor dan tunggu."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · 箱",
+   "target": "Jawaban yang benar: 1 · 箱"
+  },
+  {
+   "source": "ভাড়া বাক্সে টাকা রাখুন.",
+   "target": "Masukkan uang ke dalam kotak ongkos."
+  },
+  {
+   "source": "উত্তর মিলিয়ে দেখুন",
+   "target": "Periksa jawaban"
+  },
+  {
+   "source": "আবার চেষ্টা",
+   "target": "Coba lagi"
+  },
+  {
+   "source": "স্কোর এখনো হয়নি",
+   "target": "Belum ada skor"
+  },
+  {
+   "source": "PART 2 · ৬ LESSON + EXAM",
+   "target": "PART 2 · 6 LESSON + EXAM"
+  },
+  {
+   "source": "বাইরে যাওয়া ২",
+   "target": "Pergi Keluar 2"
+  },
+  {
+   "source": "রেস্তোরাঁ · 17টি শব্দ",
+   "target": "Restoran · 17 kata"
+  },
+  {
+   "source": "প্রস্তুতি / ব্যবস্থা",
+   "target": "Persiapan / pengaturan"
+  },
+  {
+   "source": "ব্যবসা বিক্রয়",
+   "target": "Penjualan bisnis"
+  },
+  {
+   "source": "খোলা এবং বন্ধ",
+   "target": "Buka dan tutup"
+  },
+  {
+   "source": "বন্ধ করা / বন্ধ (অকার্যকর)",
+   "target": "Tutup / tidak beroperasi"
+  },
+  {
+   "source": "বন্ধ করা / বন্ধ (সক্রিয়)",
+   "target": "Tutup / dimatikan"
+  },
+  {
+   "source": "নির্দেশনা তথ্য",
+   "target": "Informasi panduan"
+  },
+  {
+   "source": "ধারণা প্রস্তাব",
+   "target": "Proposal konsep"
+  },
+  {
+   "source": "বাড়ির ভিতরে / স্ত্রী",
+   "target": "Di dalam rumah / istri"
+  },
+  {
+   "source": "ভিতরে অতিক্রম না",
+   "target": "Jangan melintasi di dalam"
+  },
+  {
+   "source": "ভিতরে ভিতরের দিক",
+   "target": "Di dalam / sisi dalam"
+  },
+  {
+   "source": "ঘরোয়া দেশের মধ্যে",
+   "target": "Domestik / di dalam negeri"
+  },
+  {
+   "source": "পরিকল্পনা সময়সূচী",
+   "target": "Rencana / jadwal"
+  },
+  {
+   "source": "প্রস্তুতি (একটি পাঠের জন্য) / পূর্বরূপ",
+   "target": "Persiapan (untuk pelajaran) / pratinjau"
+  },
+  {
+   "source": "সংরক্ষণ বুকিং",
+   "target": "Reservasi / pemesanan"
+  },
+  {
+   "source": "সম্পর্কে প্রায়",
+   "target": "Tentang / kira-kira"
+  },
+  {
+   "source": "ধূমপান নিষেধ · 18টি শব্দ",
+   "target": "Dilarang Merokok · 18 kata"
+  },
+  {
+   "source": "ধূমপান নেই / ধূমপান নিষিদ্ধ",
+   "target": "Dilarang merokok / merokok dilarang"
+  },
+  {
+   "source": "ধোঁয়া ধোঁয়া",
+   "target": "Asap asap"
+  },
+  {
+   "source": "সত্য বাস্তবতা",
+   "target": "Kebenaran / kenyataan"
+  },
+  {
+   "source": "আঘাত করা / সঠিক হতে",
+   "target": "Mengenai / menjadi benar"
+  },
+  {
+   "source": "স্পষ্ট প্রাকৃতিক",
+   "target": "Jelas / alami"
+  },
+  {
+   "source": "সব সম্পূর্ণ",
+   "target": "Semua / lengkap"
+  },
+  {
+   "source": "সব আসন",
+   "target": "Semua kursi"
+  },
+  {
+   "source": "নিরাপদ নিরাপদ",
+   "target": "Aman / terjamin"
+  },
+  {
+   "source": "অতিথি / গ্রাহক",
+   "target": "Tamu / pelanggan"
+  },
+  {
+   "source": "গ্রাহক / অতিথি",
+   "target": "Pelanggan / tamu"
+  },
+  {
+   "source": "চেহারা রাষ্ট্র",
+   "target": "Keadaan penampilan"
+  },
+  {
+   "source": "জনাব / সুশ্রী ○○",
+   "target": "Bapak / Ibu ○○"
+  },
+  {
+   "source": "বোঝা অনুধাবন",
+   "target": "Pemahaman pengertian"
+  },
+  {
+   "source": "ব্যাখ্যা ভাষ্য",
+   "target": "Penjelasan komentar"
+  },
+  {
+   "source": "উত্তর সমাধান",
+   "target": "Jawaban solusi"
+  },
+  {
+   "source": "খুলে ফেলা / বিচ্ছিন্নকরণ",
+   "target": "Melepas / pembongkaran"
+  },
+  {
+   "source": "সহযোগিতা সহযোগিতা",
+   "target": "Kerja sama kerja sama"
+  },
+  {
+   "source": "ইচ্ছা করা / অনুরোধ করতে",
+   "target": "Berharap / meminta"
+  },
+  {
+   "source": "পর্যটন মানচিত্র · 19টি শব্দ",
+   "target": "Peta Wisata · 19 kata"
+  },
+  {
+   "source": "দর্শনীয় স্থান পর্যটন",
+   "target": "Wisata tempat wisata"
+  },
+  {
+   "source": "দর্শক",
+   "target": "Pengunjung"
+  },
+  {
+   "source": "চিড়িয়াখানা",
+   "target": "Kebun binatang"
+  },
+  {
+   "source": "পোর্ট (স্থানের নামের অংশ হিসাবে)",
+   "target": "Pelabuhan (sebagai bagian dari nama tempat)"
+  },
+  {
+   "source": "বন্দর বন্দর",
+   "target": "Pelabuhan pelabuhan"
+  },
+  {
+   "source": "বিনোদন পার্ক",
+   "target": "Taman hiburan"
+  },
+  {
+   "source": "খেলতে নিজেকে উপভোগ করতে",
+   "target": "Bermain untuk menikmati diri sendiri"
+  },
+  {
+   "source": "শিল্প যাদুঘর / আর্ট গ্যালারি",
+   "target": "Museum seni / galeri seni"
+  },
+  {
+   "source": "সুন্দরী মহিলা / সৌন্দর্য",
+   "target": "Wanita cantik / kecantikan"
+  },
+  {
+   "source": "সুন্দর",
+   "target": "Cantik"
+  },
+  {
+   "source": "শিল্প",
+   "target": "Seni"
+  },
+  {
+   "source": "কৌশল প্রযুক্তি",
+   "target": "Teknik teknologi"
+  },
+  {
+   "source": "অস্ত্রোপচার অপারেশন",
+   "target": "Operasi pembedahan"
+  },
+  {
+   "source": "শিন্টো মাজার",
+   "target": "Kuil Shinto"
+  },
+  {
+   "source": "নার্ভাস উচ্চ স্ট্রং",
+   "target": "Gugup tinggi kuat"
+  },
+  {
+   "source": "ঈশ্বর দেবতা",
+   "target": "Tuhan dewa"
+  },
+  {
+   "source": "মন্দির (একটি জায়গার নামের অংশ হিসাবে)",
+   "target": "Kuil (sebagai bagian dari nama tempat)"
+  },
+  {
+   "source": "বৌদ্ধ মন্দির",
+   "target": "Kuil Buddha"
+  },
+  {
+   "source": "শহরের মানচিত্র · 18টি শব্দ",
+   "target": "Peta Kota · 18 kata"
+  },
+  {
+   "source": "সিটি হল / পৌরসভা অফিস",
+   "target": "Balai kota / kantor pemerintah kota"
+  },
+  {
+   "source": "দরকারী হতে / সহায়ক হতে",
+   "target": "Berguna / membantu"
+  },
+  {
+   "source": "অফিসার নির্বাহী বোর্ড সদস্য",
+   "target": "Pejabat anggota dewan eksekutif"
+  },
+  {
+   "source": "মেইল ডাক পরিষেবা",
+   "target": "Surat layanan pos"
+  },
+  {
+   "source": "ডাকঘর",
+   "target": "Kantor pos"
+  },
+  {
+   "source": "ফার্মেসী / ওষুধের দোকান",
+   "target": "Apotek / toko obat"
+  },
+  {
+   "source": "পুলিশ বক্স",
+   "target": "Pos polisi"
+  },
+  {
+   "source": "ট্রাফিক পরিবহন",
+   "target": "Lalu lintas transportasi"
+  },
+  {
+   "source": "বিনিময় অদলবদল",
+   "target": "Pertukaran tukar-menukar"
+  },
+  {
+   "source": "পার্থক্য ফাঁক",
+   "target": "Perbedaan kesenjangan"
+  },
+  {
+   "source": "হাতে দেওয়া / জমা দিতে",
+   "target": "Menyerahkan / menyerahkan (submit)"
+  },
+  {
+   "source": "প্রেরক প্রেরক",
+   "target": "Pengirim pengirim"
+  },
+  {
+   "source": "ছেদ জংশন",
+   "target": "Persimpangan"
+  },
+  {
+   "source": "পয়েন্ট / স্কোর",
+   "target": "Poin / Skor"
+  },
+  {
+   "source": "পয়েন্ট",
+   "target": "Poin"
+  },
+  {
+   "source": "পথচারী ওভারপাস / ফুটব্রিজ",
+   "target": "Jembatan penyeberangan pejalan kaki / footbridge"
+  },
+  {
+   "source": "সেতু",
+   "target": "Jembatan"
+  },
+  {
+   "source": "পার্ক",
+   "target": "Taman"
+  },
+  {
+   "source": "হাসপাতাল · 28টি শব্দ",
+   "target": "Rumah Sakit · 28 kata"
+  },
+  {
+   "source": "অভ্যর্থনা / রসিদ",
+   "target": "Resepsionis / kwitansi"
+  },
+  {
+   "source": "একটি পরীক্ষা নেওয়া / প্রবেশিকা পরীক্ষা",
+   "target": "Mengikuti ujian / ujian masuk"
+  },
+  {
+   "source": "গ্রহণ করা / নিতে",
+   "target": "Mengambil / mengambil"
+  },
+  {
+   "source": "সংযুক্ত করা / চালু",
+   "target": "Menghubungkan / menyalakan"
+  },
+  {
+   "source": "পরিপাটি / দূরে রাখা",
+   "target": "Rapi / menyimpan"
+  },
+  {
+   "source": "অভ্যর্থনা / অভ্যর্থনা ডেস্ক",
+   "target": "Resepsionis / meja resepsionis"
+  },
+  {
+   "source": "সংযুক্ত করা / চালু করা",
+   "target": "Menghubungkan / menyalakan"
+  },
+  {
+   "source": "বিজ্ঞান",
+   "target": "Sains"
+  },
+  {
+   "source": "অস্ত্রোপচার",
+   "target": "Pembedahan"
+  },
+  {
+   "source": "অভ্যন্তরীণ ঔষধ",
+   "target": "Penyakit dalam"
+  },
+  {
+   "source": "পাঠ্যপুস্তক",
+   "target": "Buku teks"
+  },
+  {
+   "source": "অটোল্যারিঙ্গোলজি / ইএনটি",
+   "target": "Otolaryngologi / THT"
+  },
+  {
+   "source": "নাক",
+   "target": "Hidung"
+  },
+  {
+   "source": "মহিলা",
+   "target": "Wanita"
+  },
+  {
+   "source": "প্রসূতি এবং স্ত্রীরোগবিদ্যা",
+   "target": "Obstetri dan ginekologi"
+  },
+  {
+   "source": "গৃহিণী",
+   "target": "Ibu rumah tangga"
+  },
+  {
+   "source": "5টি শব্দ",
+   "target": "5 kata"
+  },
+  {
+   "source": "ফর্ম বিন্যাস",
+   "target": "Tata letak formulir"
+  },
+  {
+   "source": "চিত্র / আকৃতি",
+   "target": "Gambar / bentuk"
+  },
+  {
+   "source": "অর্থোপেডিকস",
+   "target": "Ortopedi"
+  },
+  {
+   "source": "পুতুল",
+   "target": "Boneka"
+  },
+  {
+   "source": "আকৃতি / ফর্ম",
+   "target": "Bentuk / wujud"
+  },
+  {
+   "source": "ফ্র্যাকচার",
+   "target": "Patah tulang"
+  },
+  {
+   "source": "হাড়",
+   "target": "Tulang"
+  },
+  {
+   "source": "ডান মোড়",
+   "target": "Belok kanan"
+  },
+  {
+   "source": "বাম মোড়",
+   "target": "Belok kiri"
+  },
+  {
+   "source": "বিরতি ভাঁজ",
+   "target": "Patah lipatan"
+  },
+  {
+   "source": "অরিগামি",
+   "target": "Origami"
+  },
+  {
+   "source": "বিরতি ভাঁজ করা",
+   "target": "Patah melipat"
+  },
+  {
+   "source": "সমস্যায় পড়লে · 18টি শব্দ",
+   "target": "Saat Kesulitan · 18 kata"
+  },
+  {
+   "source": "বিরক্ত করা",
+   "target": "Mengganggu"
+  },
+  {
+   "source": "মুছে ফেলা বন্ধ",
+   "target": "Hapus / matikan"
+  },
+  {
+   "source": "অগ্নিনির্বাপণ / ফায়ার ডিপার্টমেন্ট",
+   "target": "Pemadam kebakaran / dinas pemadam kebakaran"
+  },
+  {
+   "source": "অদৃশ্য হওয়া বাইরে যান",
+   "target": "Menghilang, padam"
+  },
+  {
+   "source": "ইরেজার",
+   "target": "Penghapus"
+  },
+  {
+   "source": "প্রতিরোধ",
+   "target": "Pencegahan"
+  },
+  {
+   "source": "প্রতিরোধ করা বিরুদ্ধে রক্ষা",
+   "target": "Mencegah, melindungi dari"
+  },
+  {
+   "source": "অ্যাম্বুলেন্স",
+   "target": "Ambulans"
+  },
+  {
+   "source": "সংরক্ষণ করা উদ্ধার",
+   "target": "Menyelamatkan, menolong"
+  },
+  {
+   "source": "পুলিশ অফিসার",
+   "target": "Petugas polisi"
+  },
+  {
+   "source": "পুলিশ",
+   "target": "Polisi"
+  },
+  {
+   "source": "থানা",
+   "target": "Kantor polisi"
+  },
+  {
+   "source": "দুর্ঘটনা",
+   "target": "Kecelakaan"
+  },
+  {
+   "source": "ভাঙ্গন ত্রুটি",
+   "target": "Kerusakan, gangguan"
+  },
+  {
+   "source": "প্রয়াত (মৃত)",
+   "target": "Almarhum (meninggal)"
+  },
+  {
+   "source": "বার্তা",
+   "target": "Pesan"
+  },
+  {
+   "source": "জানাতে বোঝাতে",
+   "target": "Memberi tahu, menyampaikan"
+  },
+  {
+   "source": "সাহায্য করা",
+   "target": "Membantu"
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · きょうりょく",
+   "target": "Jawaban yang benar: 2 · きょうりょく"
+  },
+  {
+   "source": "আপনার সহযোগিতার জন্য আপনাকে ধন্যবাদ.",
+   "target": "Terima kasih atas kerja sama Anda."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · こまって",
+   "target": "Jawaban yang benar: 2 · こまって"
+  },
+  {
+   "source": "আমার সমস্যা হচ্ছে কারণ আমি জাপানি বুঝি না।",
+   "target": "Saya kesulitan karena saya tidak mengerti bahasa Jepang."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · てつだって",
+   "target": "Jawaban yang benar: 2 · てつだって"
+  },
+  {
+   "source": "আপনি কি আমাকে সাহায্য করতে পারেন?",
+   "target": "Bisakah Anda membantu saya?"
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · びじゅつかん",
+   "target": "Jawaban yang benar: 3 · びじゅつかん"
+  },
+  {
+   "source": "আর্ট মিউজিয়ামে গিয়েছিলাম পেইন্টিং দেখতে।",
+   "target": "Saya pergi ke museum seni untuk melihat lukisan."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · くうこう",
+   "target": "Jawaban yang benar: 1 · くうこう"
+  },
+  {
+   "source": "বিমানবন্দর হল আকাশের একটি বন্দর।",
+   "target": "Bandara adalah pelabuhan di langit."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · じ",
+   "target": "Jawaban yang benar: 1 · じ"
+  },
+  {
+   "source": "কিয়োটোতে কিনকাকু-জি নামে একটি বিখ্যাত মন্দির রয়েছে।",
+   "target": "Di Kyoto ada kuil terkenal bernama Kinkaku-ji."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · そなえて",
+   "target": "Jawaban yang benar: 4 · そなえて"
+  },
+  {
+   "source": "ভূমিকম্পের প্রস্তুতির জন্য আমরা বিভিন্ন কাজ করছি।",
+   "target": "Kami melakukan berbagai hal untuk bersiap menghadapi gempa bumi."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · よぼう",
+   "target": "Jawaban yang benar: 4 · よぼう"
+  },
+  {
+   "source": "ফ্লু প্রতিরোধ করুন।",
+   "target": "Cegah flu."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · かして",
+   "target": "Jawaban yang benar: 3 · かして"
+  },
+  {
+   "source": "আপনি কি আমাকে একটি ইরেজার ধার দিতে পারেন?",
+   "target": "Bisakah Anda meminjamkan saya penghapus?"
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · うちがわ",
+   "target": "Jawaban yang benar: 1 · うちがわ"
+  },
+  {
+   "source": "এটা বিপজ্জনক, তাই অনুগ্রহ করে পিছিয়ে যান এবং হলুদ লাইনের পিছনে অপেক্ষা করুন।",
+   "target": "Ini berbahaya, jadi mohon mundur dan tunggu di belakang garis kuning."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 当たり前",
+   "target": "Jawaban yang benar: 2 · 当たり前"
+  },
+  {
+   "source": "একজন বন্ধুকে সাহায্য করা সঠিক কাজ।",
+   "target": "Membantu teman adalah hal yang wajar dilakukan."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · 形",
+   "target": "Jawaban yang benar: 1 · 形"
+  },
+  {
+   "source": "মাউন্ট ফুজির আকৃতি সুন্দর।",
+   "target": "Bentuk Gunung Fuji indah."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 準備中",
+   "target": "Jawaban yang benar: 4 · 準備中"
+  },
+  {
+   "source": "আমরা এখন প্রস্তুতি নিচ্ছি।",
+   "target": "Kami sedang bersiap sekarang."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 警察",
+   "target": "Jawaban yang benar: 3 · 警察"
+  },
+  {
+   "source": "আমি একটি মানিব্যাগ খুঁজে পেয়েছি, তাই আমি এটি পুলিশের কাছে ফিরিয়ে দেব।",
+   "target": "Saya menemukan dompet, jadi saya akan mengembalikannya ke polisi."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 当",
+   "target": "Jawaban yang benar: 4 · 当"
+  },
+  {
+   "source": "এই স্টেশনে ধূমপান নিষিদ্ধ।",
+   "target": "Merokok dilarang di stasiun ini."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 全",
+   "target": "Jawaban yang benar: 3 · 全"
+  },
+  {
+   "source": "এই ট্রেনের সমস্ত আসন সংরক্ষিত।",
+   "target": "Semua kursi di kereta ini sudah dipesan."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 内",
+   "target": "Jawaban yang benar: 4 · 内"
+  },
+  {
+   "source": "মোড়ের কাছে গাড়ি থামাবেন না।",
+   "target": "Jangan menghentikan mobil di dekat tikungan."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · 科",
+   "target": "Jawaban yang benar: 1 · 科"
+  },
+  {
+   "source": "প্রসূতি এবং স্ত্রীরোগ অভ্যর্থনা ডেস্ক এ চেক ইন করুন.",
+   "target": "Mohon check in di meja resepsionis obstetri dan ginekologi."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 案",
+   "target": "Jawaban yang benar: 3 · 案"
+  },
+  {
+   "source": "আমি প্ল্যান A এর সাথে একমত",
+   "target": "Saya setuju dengan Rencana A."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 約",
+   "target": "Jawaban yang benar: 4 · 約"
+  },
+  {
+   "source": "এই শহরের জনসংখ্যা প্রায় 200,000।",
+   "target": "Populasi kota ini sekitar 200.000."
+  },
+  {
+   "source": "PART 3 · ৬ LESSON + EXAM",
+   "target": "PART 3 · 6 LESSON + EXAM"
+  },
+  {
+   "source": "ব্যবহার করা",
+   "target": "Menggunakan"
+  },
+  {
+   "source": "ফ্রিজে সংরক্ষণ · 21টি শব্দ",
+   "target": "Simpan di Lemari Es · 21 kata"
+  },
+  {
+   "source": "প্রয়োজনীয় প্রয়োজনীয়তা",
+   "target": "Persyaratan penting"
+  },
+  {
+   "source": "প্রয়োজন",
+   "target": "Kebutuhan"
+  },
+  {
+   "source": "গুরুত্বপূর্ণ",
+   "target": "Penting"
+  },
+  {
+   "source": "6টি শব্দ",
+   "target": "6 kata"
+  },
+  {
+   "source": "এয়ার কন্ডিশনার",
+   "target": "AC (air conditioner)"
+  },
+  {
+   "source": "ঠান্ডা",
+   "target": "Dingin"
+  },
+  {
+   "source": "ঠান্ডা করা / ঠান্ডা করতে",
+   "target": "Mendinginkan / menyejukkan"
+  },
+  {
+   "source": "ঠান্ডা হয়ে যেতে",
+   "target": "Menjadi dingin"
+  },
+  {
+   "source": "ঠান্ডা করা / উদ্যম হারাতে",
+   "target": "Mendinginkan / kehilangan semangat"
+  },
+  {
+   "source": "ফ্রিজার",
+   "target": "Freezer"
+  },
+  {
+   "source": "হিমায়িত করা",
+   "target": "Membekukan"
+  },
+  {
+   "source": "নিরাপদ খিলান",
+   "target": "Brankas aman"
+  },
+  {
+   "source": "গ্যারেজ",
+   "target": "Garasi"
+  },
+  {
+   "source": "খাওয়া / পান করা (সম্মানসূচক)",
+   "target": "Makan / minum (sopan)"
+  },
+  {
+   "source": "সংরক্ষণ করা / সংরক্ষণ করতে",
+   "target": "Menyimpan / mengawetkan"
+  },
+  {
+   "source": "জানতে (সম্মানজনক)",
+   "target": "Mengetahui (sopan)"
+  },
+  {
+   "source": "না জানা (নম্র)",
+   "target": "Tidak mengetahui (rendah hati)"
+  },
+  {
+   "source": "মরিয়া / ব্যাকুল",
+   "target": "Putus asa / sangat ingin"
+  },
+  {
+   "source": "অবশ্যই ব্যর্থ ছাড়া",
+   "target": "Tanpa gagal"
+  },
+  {
+   "source": "রেফ্রিজারেটর",
+   "target": "Kulkas"
+  },
+  {
+   "source": "ভালো থাকার শেষ তারিখ · 26টি শব্দ",
+   "target": "Tanggal Kedaluwarsa Terbaik · 26 kata"
+  },
+  {
+   "source": "খরচ খরচ",
+   "target": "Pengeluaran dan biaya"
+  },
+  {
+   "source": "ভোক্তা",
+   "target": "Konsumen"
+  },
+  {
+   "source": "ভ্রমণ খরচ",
+   "target": "Biaya perjalanan"
+  },
+  {
+   "source": "সদস্যতা ফি / বকেয়া",
+   "target": "Biaya keanggotaan / iuran"
+  },
+  {
+   "source": "সময়কাল / মেয়াদ",
+   "target": "Periode / masa"
+  },
+  {
+   "source": "কমিউটার পাস / সিজন টিকেট",
+   "target": "Tiket langganan komuter / tiket musiman"
+  },
+  {
+   "source": "দীর্ঘমেয়াদী",
+   "target": "Jangka panjang"
+  },
+  {
+   "source": "স্বল্পমেয়াদী",
+   "target": "Jangka pendek"
+  },
+  {
+   "source": "সময়সীমা সময় সীমা",
+   "target": "Batas waktu / kerangka waktu"
+  },
+  {
+   "source": "সীমা সীমাবদ্ধতা",
+   "target": "Batas / pembatasan"
+  },
+  {
+   "source": "সীমাবদ্ধতা সীমাবদ্ধতা",
+   "target": "Pembatasan / keterbatasan"
+  },
+  {
+   "source": "তৈরি (প্রত্যয়)",
+   "target": "Buatan (akhiran)"
+  },
+  {
+   "source": "পণ্য",
+   "target": "Produk"
+  },
+  {
+   "source": "উত্পাদন উত্পাদন",
+   "target": "Produksi / pembuatan"
+  },
+  {
+   "source": "পুরস্কার",
+   "target": "Penghargaan / hadiah"
+  },
+  {
+   "source": "সেরা-আগের তারিখ",
+   "target": "Tanggal best-before"
+  },
+  {
+   "source": "পুরস্কারের টাকা",
+   "target": "Uang hadiah / imbalan"
+  },
+  {
+   "source": "পদ্ধতি উপায়",
+   "target": "Metode / cara"
+  },
+  {
+   "source": "ব্যাকরণ",
+   "target": "Grammar"
+  },
+  {
+   "source": "তাপমাত্রা",
+   "target": "Suhu"
+  },
+  {
+   "source": "উষ্ণ / উষ্ণ হৃদয়",
+   "target": "Hangat / menghangatkan hati"
+  },
+  {
+   "source": "ঘরের তাপমাত্রা",
+   "target": "Suhu ruangan"
+  },
+  {
+   "source": "ভেন্ডিং মেশিন · 20টি শব্দ",
+   "target": "Mesin Penjual Otomatis · 20 kata"
+  },
+  {
+   "source": "বিক্রয় বিক্রি",
+   "target": "Penjualan / menjual"
+  },
+  {
+   "source": "ভেন্ডিং মেশিন",
+   "target": "Mesin penjual otomatis"
+  },
+  {
+   "source": "বিমান",
+   "target": "Pesawat"
+  },
+  {
+   "source": "মেশিন",
+   "target": "Mesin"
+  },
+  {
+   "source": "সুযোগ সুযোগ",
+   "target": "Kesempatan / peluang"
+  },
+  {
+   "source": "বৃদ্ধি উঠা",
+   "target": "Naik / meningkat"
+  },
+  {
+   "source": "বৃদ্ধি করা / হত্তয়া",
+   "target": "Meningkatkan / tumbuh"
+  },
+  {
+   "source": "বৃদ্ধি করা / যোগ করতে",
+   "target": "Meningkatkan / menambahkan"
+  },
+  {
+   "source": "হ্রাস / কমে যাওয়া",
+   "target": "Menurun / berkurang"
+  },
+  {
+   "source": "কমে যাওয়া",
+   "target": "Berkurang"
+  },
+  {
+   "source": "কমাতে",
+   "target": "Mengurangi"
+  },
+  {
+   "source": "পরিমাণ পরিমাণ",
+   "target": "Jumlah / kuantitas"
+  },
+  {
+   "source": "সংখ্যা পরিমাণ",
+   "target": "Angka / kuantitas"
+  },
+  {
+   "source": "বর্ধিত পরিমাণ / বৃদ্ধি (পরিমাণে)",
+   "target": "Jumlah bertambah / pertumbuhan (dalam kuantitas)"
+  },
+  {
+   "source": "পরিমাণ কমানো / ওজন কমানো",
+   "target": "Mengurangi jumlah / menurunkan berat badan"
+  },
+  {
+   "source": "বরফ",
+   "target": "Es"
+  },
+  {
+   "source": "উত্তর উত্তর",
+   "target": "Jawaban / balasan"
+  },
+  {
+   "source": "প্রত্যাবর্তন ফেরত দিতে",
+   "target": "Pengembalian mengembalikan"
+  },
+  {
+   "source": "ফিরে আসা / ফেরত দিতে",
+   "target": "Kembali / mengembalikan"
+  },
+  {
+   "source": "গরম জল",
+   "target": "Air panas"
+  },
+  {
+   "source": "রেসিপি · 23টি শব্দ",
+   "target": "Resep · 23 kata"
+  },
+  {
+   "source": "উপাদান / উপকরণ",
+   "target": "Bahan / material"
+  },
+  {
+   "source": "শিক্ষার উপকরণ",
+   "target": "Materi pembelajaran"
+  },
+  {
+   "source": "ডিম",
+   "target": "Telur"
+  },
+  {
+   "source": "ঘূর্ণিত অমলেট",
+   "target": "Omelet gulung"
+  },
+  {
+   "source": "দুধ",
+   "target": "Susu"
+  },
+  {
+   "source": "পাউডার / ময়দা",
+   "target": "Bubuk / tepung"
+  },
+  {
+   "source": "গমের আটা",
+   "target": "Tepung terigu"
+  },
+  {
+   "source": "ব্যাগ / বস্তা",
+   "target": "Tas / karung"
+  },
+  {
+   "source": "কাগজের ব্যাগ",
+   "target": "Kantong kertas"
+  },
+  {
+   "source": "আবর্জনা ব্যাগ / ট্র্যাশ ব্যাগ",
+   "target": "Kantong sampah / kantong trash"
+  },
+  {
+   "source": "গ্লাভস",
+   "target": "Sarung tangan"
+  },
+  {
+   "source": "বিভক্ত পায়ের মোজা",
+   "target": "Kaus kaki jari terpisah (tabi)"
+  },
+  {
+   "source": "ভিড় যানজট",
+   "target": "Kemacetan lalu lintas"
+  },
+  {
+   "source": "মিশ্রণ নাড়া",
+   "target": "Aduk campuran"
+  },
+  {
+   "source": "গ্রিল বেক রোস্ট",
+   "target": "Panggang bakar panggang (grill bake roast)"
+  },
+  {
+   "source": "রান্না করা / পুড়িয়ে ফেলা",
+   "target": "Memasak / membakar"
+  },
+  {
+   "source": "পৃষ্ঠ টেবিল সামনে",
+   "target": "Permukaan meja depan"
+  },
+  {
+   "source": "পৃষ্ঠ মুখ",
+   "target": "Permukaan wajah"
+  },
+  {
+   "source": "ঘোষণা উপস্থাপনা",
+   "target": "Pengumuman presentasi"
+  },
+  {
+   "source": "প্রতিনিধি / প্রতিনিধিত্ব",
+   "target": "Perwakilan / representasi"
+  },
+  {
+   "source": "প্রকাশ করা প্রতিনিধিত্ব",
+   "target": "Menyatakan representasi"
+  },
+  {
+   "source": "পেছন / উল্টো দিক / নিচের পিঠ",
+   "target": "Belakang / sisi sebaliknya / punggung bawah"
+  },
+  {
+   "source": "ঘুরিয়ে দেওয়া উল্টানো",
+   "target": "Terbalik / dibalik"
+  },
+  {
+   "source": "কপিয়ার ও অ্যানসারিং মেশিন · 24টি শব্দ",
+   "target": "Mesin Fotokopi & Mesin Penjawab · 24 kata"
+  },
+  {
+   "source": "বিদেশে পড়াশোনা",
+   "target": "Belajar di luar negeri"
+  },
+  {
+   "source": "ঘর-বসা",
+   "target": "Berdiam di rumah"
+  },
+  {
+   "source": "আটকে রাখা / সংরক্ষণ",
+   "target": "Terjebak / pengawetan"
+  },
+  {
+   "source": "নিবন্ধিত মেইল",
+   "target": "Surat tercatat"
+  },
+  {
+   "source": "প্রতিরক্ষা পাহারা দেওয়া",
+   "target": "Pertahanan penjagaan"
+  },
+  {
+   "source": "অনুপস্থিতি / বাড়ি থেকে দূরে থাকা",
+   "target": "Ketidakhadiran / jauh dari rumah"
+  },
+  {
+   "source": "রক্ষা করা আনুগত্য করা",
+   "target": "Melindungi kesetiaan"
+  },
+  {
+   "source": "পুরু / শক্তিশালী",
+   "target": "Tebal / kuat"
+  },
+  {
+   "source": "পাতলা দুর্বল",
+   "target": "Tipis / lemah"
+  },
+  {
+   "source": "অংশ অংশ",
+   "target": "Bagian porsi"
+  },
+  {
+   "source": "অনুষদ / বিভাগ",
+   "target": "Fakultas / departemen"
+  },
+  {
+   "source": "বিভাগের প্রধান",
+   "target": "Kepala departemen"
+  },
+  {
+   "source": "রুম",
+   "target": "Kamar"
+  },
+  {
+   "source": "সংখ্যা সংখ্যা",
+   "target": "Angka jumlah"
+  },
+  {
+   "source": "গণিত",
+   "target": "Matematika"
+  },
+  {
+   "source": "সংখ্যা গণনা",
+   "target": "Menghitung angka"
+  },
+  {
+   "source": "গণনা গণনা করা",
+   "target": "Menghitung kalkulasi"
+  },
+  {
+   "source": "বিষয় শিরোনাম",
+   "target": "Judul subjek"
+  },
+  {
+   "source": "ঘটনা মামলা",
+   "target": "Peristiwa kasus"
+  },
+  {
+   "source": "ব্যবসা ব্যাপার",
+   "target": "Urusan bisnis"
+  },
+  {
+   "source": "পুনরায় প্রবেশ",
+   "target": "Masuk kembali"
+  },
+  {
+   "source": "পুনরায় ডায়াল",
+   "target": "Panggil ulang (redial)"
+  },
+  {
+   "source": "প্লেব্যাক পুনর্জন্ম",
+   "target": "Putar ulang kelahiran kembali"
+  },
+  {
+   "source": "পরের সপ্তাহ পর",
+   "target": "Minggu depan setelah"
+  },
+  {
+   "source": "মোবাইল ফোন · 20টি শব্দ",
+   "target": "Ponsel · 20 kata"
+  },
+  {
+   "source": "সংযোগ / লিঙ্ক করা",
+   "target": "Koneksi / menghubungkan"
+  },
+  {
+   "source": "সাক্ষাৎকার",
+   "target": "Wawancara"
+  },
+  {
+   "source": "চালিয়ে যাওয়া শেষ",
+   "target": "Lanjut akhir"
+  },
+  {
+   "source": "চালিয়ে যাওয়া রাখা",
+   "target": "Lanjut menyimpan"
+  },
+  {
+   "source": "প্রদর্শন / ইঙ্গিত",
+   "target": "Tampilan / indikasi"
+  },
+  {
+   "source": "নির্দেশ ইঙ্গিত",
+   "target": "Instruksi petunjuk"
+  },
+  {
+   "source": "প্রদর্শন নির্দেশ করে",
+   "target": "Tampilan menunjukkan"
+  },
+  {
+   "source": "ফিরে যাওয়া",
+   "target": "Kembali"
+  },
+  {
+   "source": "পিছনে রাখা ফিরে",
+   "target": "Menahan kembali kembali"
+  },
+  {
+   "source": "সমাপ্তি / শেষ",
+   "target": "Akhir / selesai"
+  },
+  {
+   "source": "সম্পূর্ণ নিখুঁত",
+   "target": "Lengkap sempurna"
+  },
+  {
+   "source": "বোঝা সম্মতি",
+   "target": "Pemahaman persetujuan"
+  },
+  {
+   "source": "শেষ সমাপ্তি",
+   "target": "Akhir kesimpulan"
+  },
+  {
+   "source": "নিবন্ধন তালিকাভুক্তি",
+   "target": "Pendaftaran pencatatan"
+  },
+  {
+   "source": "পর্বত আরোহণ / পর্বতারোহণ",
+   "target": "Pendakian gunung / alpinisme"
+  },
+  {
+   "source": "আরোহণ আরোহন",
+   "target": "Pendakian kenaikan"
+  },
+  {
+   "source": "রেকর্ড / নথি",
+   "target": "Catatan / dokumen"
+  },
+  {
+   "source": "অডিও রেকর্ডিং / শব্দ রেকর্ডিং",
+   "target": "Rekaman audio / rekaman suara"
+  },
+  {
+   "source": "ভিডিও রেকর্ডিং / রেকর্ডিং",
+   "target": "Rekaman video / perekaman"
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · はんばい",
+   "target": "Jawaban yang benar: 1 · はんばい"
+  },
+  {
+   "source": "একটি ভেন্ডিং মেশিন থেকে একটি পানীয় কিনুন.",
+   "target": "Belilah minuman dari mesin penjual otomatis."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · おめしあがり",
+   "target": "Jawaban yang benar: 3 · おめしあがり"
+  },
+  {
+   "source": "দয়া করে যত তাড়াতাড়ি সম্ভব খেয়ে নিন।",
+   "target": "Mohon makan sesegera mungkin."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · きょうざい",
+   "target": "Jawaban yang benar: 1 · きょうざい"
+  },
+  {
+   "source": "জাপানি শেখার উপকরণ সন্ধান করুন।",
+   "target": "Carilah materi pembelajaran bahasa Jepang."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · こな",
+   "target": "Jawaban yang benar: 4 · こな"
+  },
+  {
+   "source": "সেখানে গুঁড়ো দিয়ে মেশান।",
+   "target": "Campur dengan bubuk di sana."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · たまごやき",
+   "target": "Jawaban yang benar: 4 · たまごやき"
+  },
+  {
+   "source": "বেন্টোতে একটি রোলড অমলেট রয়েছে।",
+   "target": "Ada omelet gulung di dalam bento."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · まもりましょう",
+   "target": "Jawaban yang benar: 2 · まもりましょう"
+  },
+  {
+   "source": "আসুন ট্রাফিক নিয়ম মেনে চলি।",
+   "target": "Mari patuhi peraturan lalu lintas."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · かず",
+   "target": "Jawaban yang benar: 3 · かず"
+  },
+  {
+   "source": "সংখ্যা গণনা করুন.",
+   "target": "Hitung angkanya."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · ゆ",
+   "target": "Jawaban yang benar: 1 · ゆ"
+  },
+  {
+   "source": "গরম জলে ঢালা, তিন মিনিট অপেক্ষা করুন, এবং এটি প্রস্তুত।",
+   "target": "Tuangkan air panas, tunggu tiga menit, dan siap."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · さいせい",
+   "target": "Jawaban yang benar: 2 · さいせい"
+  },
+  {
+   "source": "রেকর্ড করা বার্তাটি প্লে ব্যাক করুন।",
+   "target": "Putar ulang pesan yang direkam."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · れいぼう",
+   "target": "Jawaban yang benar: 1 · れいぼう"
+  },
+  {
+   "source": "এয়ার কন্ডিশনার খুব শক্তিশালী।",
+   "target": "AC-nya sangat kuat."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 返す",
+   "target": "Jawaban yang benar: 4 · 返す"
+  },
+  {
+   "source": "বইটি লাইব্রেরিতে ফেরত দিন।",
+   "target": "Kembalikan buku ke perpustakaan."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · 減量",
+   "target": "Jawaban yang benar: 1 · 減量"
+  },
+  {
+   "source": "বক্সাররা ম্যাচের আগে ওজন কমিয়ে দেন।",
+   "target": "Petinju menurunkan berat badan sebelum pertandingan."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 戻して",
+   "target": "Jawaban yang benar: 4 · 戻して"
+  },
+  {
+   "source": "এটি ব্যবহার করার পরে, দয়া করে এটিকে তার আসল জায়গায় ফিরিয়ে দিন।",
+   "target": "Setelah menggunakannya, mohon kembalikan ke tempat asalnya."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 続き",
+   "target": "Jawaban yang benar: 2 · 続き"
+  },
+  {
+   "source": "আজকের জন্য এতটুকুই। আমরা পরের সপ্তাহে চালিয়ে যাব।",
+   "target": "Cukup sekian untuk hari ini. Kita akan melanjutkan minggu depan."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 費",
+   "target": "Jawaban yang benar: 4 · 費"
+  },
+  {
+   "source": "পরিবহন ফি কত?",
+   "target": "Berapa biaya transportasinya?"
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 部",
+   "target": "Jawaban yang benar: 2 · 部"
+  },
+  {
+   "source": "এই নথির 30 কপি করুন.",
+   "target": "Buat 30 salinan dokumen ini."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · 袋",
+   "target": "Jawaban yang benar: 1 · 袋"
+  },
+  {
+   "source": "আমি কি এটা একটা কাগজের ব্যাগে রাখব?",
+   "target": "Haruskah saya memasukkan ini ke dalam kantong kertas?"
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 要",
+   "target": "Jawaban yang benar: 3 · 要"
+  },
+  {
+   "source": "এটা বলে 'কিপ ফ্রোজেন'।",
+   "target": "Di sini tertulis 'Keep Frozen'."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 再",
+   "target": "Jawaban yang benar: 2 · 再"
+  },
+  {
+   "source": "স্পিড-ডায়াল বোতাম টিপুন।",
+   "target": "Tekan tombol panggilan cepat (speed-dial)."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 期",
+   "target": "Jawaban yang benar: 3 · 期"
+  },
+  {
+   "source": "অল্প সময়ের জন্য দূরে থাকুন।",
+   "target": "Pergilah untuk waktu yang singkat."
+  },
+  {
+   "source": "PART 4 · ৬ LESSON + EXAM",
+   "target": "PART 4 · 6 LESSON + EXAM"
+  },
+  {
+   "source": "কেনাকাটা",
+   "target": "Belanja"
+  },
+  {
+   "source": "দৈনন্দিন প্রয়োজনীয় জিনিস · 19টি শব্দ",
+   "target": "Kebutuhan Sehari-hari · 19 kata"
+  },
+  {
+   "source": "চিনি",
+   "target": "Gula"
+  },
+  {
+   "source": "বালি",
+   "target": "Pasir"
+  },
+  {
+   "source": "টেবিল লবণ / লবণ",
+   "target": "Garam meja / garam"
+  },
+  {
+   "source": "লবণ",
+   "target": "Garam"
+  },
+  {
+   "source": "সয়া সস",
+   "target": "Kecap asin"
+  },
+  {
+   "source": "পেট্রোলিয়াম / তেল",
+   "target": "Minyak bumi / minyak"
+  },
+  {
+   "source": "কেরোসিন",
+   "target": "minyak tanah"
+  },
+  {
+   "source": "তেল গ্রীস",
+   "target": "minyak, gemuk"
+  },
+  {
+   "source": "গ্রিন টি",
+   "target": "teh hijau"
+  },
+  {
+   "source": "সবুজ (রঙ)",
+   "target": "hijau (warna)"
+  },
+  {
+   "source": "কালো চা",
+   "target": "teh hitam"
+  },
+  {
+   "source": "লিপস্টিক",
+   "target": "lipstik"
+  },
+  {
+   "source": "বই গণনার কাউন্টার",
+   "target": "satuan hitung untuk buku"
+  },
+  {
+   "source": "বই সংখ্যা",
+   "target": "jumlah buku"
+  },
+  {
+   "source": "ছোট জিনিস গণনার কাউন্টার",
+   "target": "satuan hitung untuk barang kecil"
+  },
+  {
+   "source": "আইটেম সংখ্যা",
+   "target": "jumlah item"
+  },
+  {
+   "source": "স্বতন্ত্র / ব্যক্তি",
+   "target": "individu / orang"
+  },
+  {
+   "source": "চ্যাপ্টা জিনিস গণনার কাউন্টার",
+   "target": "satuan hitung untuk benda pipih"
+  },
+  {
+   "source": "শীট সংখ্যা",
+   "target": "jumlah lembar"
+  },
+  {
+   "source": "বিজ্ঞাপনী ইমেইল · 20টি শব্দ",
+   "target": "Email Promosi · 20 kata"
+  },
+  {
+   "source": "বিজ্ঞাপন বিজ্ঞাপন",
+   "target": "iklan, komersial"
+  },
+  {
+   "source": "সুবিধাজনক সহজ",
+   "target": "nyaman, mudah"
+  },
+  {
+   "source": "ব্যবহার ব্যবহার",
+   "target": "penggunaan, pemakaian"
+  },
+  {
+   "source": "ভাগ করা বিরতি",
+   "target": "bersama, istirahat"
+  },
+  {
+   "source": "অনুপাত অনুপাত",
+   "target": "rasio, proporsi"
+  },
+  {
+   "source": "বিরতি বিভক্ত",
+   "target": "istirahat, membagi"
+  },
+  {
+   "source": "ছাড় / মূল্য হ্রাস",
+   "target": "diskon / penurunan harga"
+  },
+  {
+   "source": "বার -ভাঁজ",
+   "target": "satuan hitung -kali (lipatan/giliran)"
+  },
+  {
+   "source": "মূল্য খরচ",
+   "target": "harga, biaya"
+  },
+  {
+   "source": "দাম বাড়ানো",
+   "target": "kenaikan harga"
+  },
+  {
+   "source": "দাম কমানো / ছাড় দেওয়া",
+   "target": "penurunan harga / diskon"
+  },
+  {
+   "source": "দোকান দোকান",
+   "target": "toko, toko"
+  },
+  {
+   "source": "শাখা শাখা অফিস",
+   "target": "cabang, kantor cabang"
+  },
+  {
+   "source": "প্রধান দোকান / প্রধান কার্যালয়",
+   "target": "toko utama / kantor pusat"
+  },
+  {
+   "source": "শাখা অফিস / শাখা কোম্পানি",
+   "target": "kantor cabang / perusahaan cabang"
+  },
+  {
+   "source": "প্রধান কার্যালয় / সদর দপ্তর",
+   "target": "kantor pusat / markas besar"
+  },
+  {
+   "source": "বেতন",
+   "target": "gaji"
+  },
+  {
+   "source": "অর্থ প্রদান নিষ্পত্তি",
+   "target": "pembayaran, penyelesaian"
+  },
+  {
+   "source": "ডাক/অনলাইনে কেনাকাটা · 21টি শব্দ",
+   "target": "Belanja Lewat Pos/Online · 21 kata"
+  },
+  {
+   "source": "মার্কিন যুক্তরাষ্ট্র",
+   "target": "Amerika Serikat"
+  },
+  {
+   "source": "চাল আমেরিকা (ইউ.এস.)",
+   "target": "beras, Amerika (A.S.)"
+  },
+  {
+   "source": "উচ্চ শ্রেণীর / বিলাসিতা",
+   "target": "kelas tinggi / mewah"
+  },
+  {
+   "source": "মধ্যবর্তী / মধ্য স্তরের",
+   "target": "menengah / tingkat menengah"
+  },
+  {
+   "source": "উন্নত উপরের স্তর",
+   "target": "lanjutan, tingkat atas"
+  },
+  {
+   "source": "অতিরিক্ত সময় ওভারটাইম কাজ",
+   "target": "kerja lembur"
+  },
+  {
+   "source": "অবশিষ্ট অবশিষ্ট অংশ",
+   "target": "sisa, sisa bagian"
+  },
+  {
+   "source": "থাকা বাকি থাকা",
+   "target": "Tersisa / tertinggal"
+  },
+  {
+   "source": "পিছনে ছেড়ে সংরক্ষণ",
+   "target": "Meninggalkan / menyimpan"
+  },
+  {
+   "source": "বড় বড় মাপের",
+   "target": "Skala besar / ukuran besar"
+  },
+  {
+   "source": "ছোট কম্প্যাক্ট",
+   "target": "Kecil / kompak"
+  },
+  {
+   "source": "নতুন মডেল / নতুন ধরনের",
+   "target": "Model baru / tipe baru"
+  },
+  {
+   "source": "ভোগ কর / বিক্রয় কর",
+   "target": "Pajak konsumsi / pajak penjualan"
+  },
+  {
+   "source": "ট্যাক্স",
+   "target": "Pajak"
+  },
+  {
+   "source": "ভিড় করা / প্যাক করা",
+   "target": "Penuh sesak / padat"
+  },
+  {
+   "source": "স্থানান্তর (টাকা) / আমানত (ব্যাংক স্থানান্তর দ্বারা)",
+   "target": "Transfer (uang) / setoran (melalui transfer bank)"
+  },
+  {
+   "source": "ট্যাক্স অন্তর্ভুক্ত / ট্যাক্স সহ",
+   "target": "Termasuk pajak / sudah termasuk pajak"
+  },
+  {
+   "source": "তালিকা মূল্য / নির্দিষ্ট মূল্য",
+   "target": "Harga daftar / harga tetap"
+  },
+  {
+   "source": "পাস সাফল্য",
+   "target": "Lulus / sukses"
+  },
+  {
+   "source": "সস্তা দর কষাকষি",
+   "target": "Murah / tawar-menawar"
+  },
+  {
+   "source": "আবেদনপত্র · 24টি শব্দ",
+   "target": "Formulir Pendaftaran · 24 kata"
+  },
+  {
+   "source": "প্রয়োগ সাইন আপ",
+   "target": "Mendaftar / sign up"
+  },
+  {
+   "source": "আবেদনপত্র / প্রবেশপত্র",
+   "target": "Formulir pendaftaran / formulir masuk"
+  },
+  {
+   "source": "ঘোষণা রিপোর্ট",
+   "target": "Pengumuman / laporan"
+  },
+  {
+   "source": "আবেদন অনুরোধ",
+   "target": "Pendaftaran / permintaan"
+  },
+  {
+   "source": "'বলো' এর বিনীত রূপ",
+   "target": "Bentuk rendah hati dari 'berkata'"
+  },
+  {
+   "source": "বিনীতভাবে বলতে",
+   "target": "Berbicara dengan rendah hati"
+  },
+  {
+   "source": "পূরণ করতে / প্রবেশ",
+   "target": "Mengisi / memasukkan"
+  },
+  {
+   "source": "ডায়েরি জার্নাল",
+   "target": "Buku harian / jurnal"
+  },
+  {
+   "source": "প্রতীক / চিহ্ন",
+   "target": "Simbol / tanda"
+  },
+  {
+   "source": "নিবন্ধ / খবর গল্প",
+   "target": "Artikel / berita"
+  },
+  {
+   "source": "উদাহরণ উদাহরণ",
+   "target": "Contoh / ilustrasi"
+  },
+  {
+   "source": "বয়স",
+   "target": "Usia"
+  },
+  {
+   "source": "বয়স্ক / উন্নত বয়স",
+   "target": "Lansia / usia lanjut"
+  },
+  {
+   "source": "বছর বয়সী",
+   "target": "Tahun (usia)"
+  },
+  {
+   "source": "বিশ বছর বয়সী",
+   "target": "Dua puluh tahun"
+  },
+  {
+   "source": "যৌনতা লিঙ্গ",
+   "target": "Jenis kelamin / gender"
+  },
+  {
+   "source": "চরিত্র ব্যক্তিত্ব",
+   "target": "Karakter / kepribadian"
+  },
+  {
+   "source": "নারী / মহিলা",
+   "target": "Wanita / perempuan"
+  },
+  {
+   "source": "পুরুষ মানুষ",
+   "target": "Pria / laki-laki"
+  },
+  {
+   "source": "একটানা ছুটি",
+   "target": "Libur berturut-turut"
+  },
+  {
+   "source": "নিতে (কাউকে)",
+   "target": "Membawa (seseorang)"
+  },
+  {
+   "source": "আনতে (কাউকে)",
+   "target": "Membawa datang (seseorang)"
+  },
+  {
+   "source": "যোগাযোগ যোগাযোগ",
+   "target": "Kontak / komunikasi"
+  },
+  {
+   "source": "অর্ডার · 21টি শব্দ",
+   "target": "Pesanan · 21 kata"
+  },
+  {
+   "source": "বিতরণ করা / রিপোর্ট করতে",
+   "target": "Mengirimkan / melaporkan"
+  },
+  {
+   "source": "পৌঁছাতে পৌঁছাতে",
+   "target": "Mencapai / tiba"
+  },
+  {
+   "source": "একজনের বাড়ি বাড়ি",
+   "target": "Dari rumah ke rumah (door-to-door)"
+  },
+  {
+   "source": "আপনার বাড়ি / বাসস্থান (ভদ্র)",
+   "target": "Rumah Anda / tempat tinggal (sopan)"
+  },
+  {
+   "source": "হোম ডেলিভারি",
+   "target": "Pengiriman ke rumah"
+  },
+  {
+   "source": "ডেলিভারি",
+   "target": "Pengiriman"
+  },
+  {
+   "source": "শিপিং ফি / ডেলিভারি চার্জ",
+   "target": "Biaya pengiriman / ongkos kirim"
+  },
+  {
+   "source": "চিন্তা উদ্বেগ",
+   "target": "Kekhawatiran / kecemasan"
+  },
+  {
+   "source": "বিতরণ করা / হস্তান্তর করা",
+   "target": "Mengirimkan / menyerahkan"
+  },
+  {
+   "source": "আশা ইচ্ছা",
+   "target": "Harapan / keinginan"
+  },
+  {
+   "source": "হতাশা",
+   "target": "Kekecewaan"
+  },
+  {
+   "source": "আশা করা / ইচ্ছা করতে",
+   "target": "Berharap / menginginkan"
+  },
+  {
+   "source": "পণ্যের আগমন / রিস্টকিং",
+   "target": "Barang tiba / restok"
+  },
+  {
+   "source": "চালান শিপিং",
+   "target": "Faktur / pengiriman"
+  },
+  {
+   "source": "লাগেজ প্যাকেজ",
+   "target": "Bagasi / paket"
+  },
+  {
+   "source": "হাতের লাগেজ / বহন করা লাগেজ",
+   "target": "Bagasi tangan / bagasi kabin"
+  },
+  {
+   "source": "বিনিময় প্রতিস্থাপন",
+   "target": "Penukaran / penggantian"
+  },
+  {
+   "source": "ক্যাশ অন ডেলিভারি",
+   "target": "Bayar di tempat (cash on delivery)"
+  },
+  {
+   "source": "স্থানান্তর ট্রেন পরিবর্তন",
+   "target": "Transfer / berganti kereta"
+  },
+  {
+   "source": "পরিমাণ যোগফল",
+   "target": "Jumlah total"
+  },
+  {
+   "source": "অর্ধেক দাম",
+   "target": "Setengah harga"
+  },
+  {
+   "source": "অনুপস্থিতির ডেলিভারি নোটিশ · 20টি শব্দ",
+   "target": "Pemberitahuan Pengiriman Saat Tidak di Rumah · 20 kata"
+  },
+  {
+   "source": "অনুপস্থিতি / উপস্থিত না",
+   "target": "Ketidakhadiran / tidak berada di tempat"
+  },
+  {
+   "source": "এখন / বর্তমান",
+   "target": "Sekarang / saat ini"
+  },
+  {
+   "source": "গ্রহণ কুড়ান",
+   "target": "Menerima / mengambil"
+  },
+  {
+   "source": "গ্রহণ গ্রহণ",
+   "target": "Penerimaan / menerima"
+  },
+  {
+   "source": "প্রাপক প্রাপক",
+   "target": "Penerima penerima"
+  },
+  {
+   "source": "আমানত সঞ্চয়",
+   "target": "Setoran / tabungan"
+  },
+  {
+   "source": "অর্পণ আমানত",
+   "target": "Penitipan / setoran"
+  },
+  {
+   "source": "পোশাক",
+   "target": "Pakaian"
+  },
+  {
+   "source": "পোশাক / জামাকাপড়",
+   "target": "Pakaian / busana"
+  },
+  {
+   "source": "অংশগ্রহণ যোগদান",
+   "target": "Partisipasi / bergabung"
+  },
+  {
+   "source": "রেফারেন্স বই / পাঠ্যপুস্তক",
+   "target": "Buku referensi / buku teks"
+  },
+  {
+   "source": "যাওয়া/আসা (বিনয়ী রূপ) / হার মানা",
+   "target": "Pergi dan kembali (rendah hati) / menyerah"
+  },
+  {
+   "source": "উন্নতি অগ্রগতি",
+   "target": "Peningkatan / kemajuan"
+  },
+  {
+   "source": "দ্রুত ডাক / এক্সপ্রেস ডেলিভারি",
+   "target": "Surat kilat / pengiriman ekspres"
+  },
+  {
+   "source": "বন্ধু",
+   "target": "Teman"
+  },
+  {
+   "source": "যাতায়াত যাতায়াত",
+   "target": "Komuter / perjalanan kerja"
+  },
+  {
+   "source": "চাকরি করা / কর্মরত থাকা",
+   "target": "Bekerja / berstatus karyawan"
+  },
+  {
+   "source": "মোবাইল ফোন / সেল ফোন",
+   "target": "Ponsel / telepon seluler"
+  },
+  {
+   "source": "সময় স্লট / সময়কাল",
+   "target": "Slot waktu / periode waktu"
+  },
+  {
+   "source": "বেল্ট স্যাশ",
+   "target": "Sabuk / selempang"
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · ごうかく",
+   "target": "Jawaban yang benar: 3 · ごうかく"
+  },
+  {
+   "source": "পাস করার খবর পেয়ে সে আনন্দিত হয়েছে।",
+   "target": "Ia senang menerima kabar bahwa ia lulus."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · ふりこみ",
+   "target": "Jawaban yang benar: 3 · ふりこみ"
+  },
+  {
+   "source": "আমি ব্যাঙ্ক ট্রান্সফারের মাধ্যমে পেমেন্ট করব।",
+   "target": "Saya akan membayar melalui transfer bank."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · もうします",
+   "target": "Jawaban yang benar: 4 · もうします"
+  },
+  {
+   "source": "আমার নাম তানাকা।",
+   "target": "Nama saya Tanaka."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · ちゅうきゅう",
+   "target": "Jawaban yang benar: 1 · ちゅうきゅう"
+  },
+  {
+   "source": "আমি একটি মধ্যবর্তী-স্তরের জাপানি বই খুঁজছি।",
+   "target": "Saya mencari buku bahasa Jepang tingkat menengah."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · べいこく",
+   "target": "Jawaban yang benar: 3 · べいこく"
+  },
+  {
+   "source": "আমি যুক্তরাষ্ট্রে বিদেশে পড়াশোনা করব।",
+   "target": "Saya akan belajar di luar negeri di Amerika Serikat."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · べんり",
+   "target": "Jawaban yang benar: 2 · べんり"
+  },
+  {
+   "source": "মোবাইল ফোন সুবিধাজনক।",
+   "target": "Ponsel itu nyaman (praktis)."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · にゅうか",
+   "target": "Jawaban yang benar: 4 · にゅうか"
+  },
+  {
+   "source": "যখন আইটেম আসে আমি আপনাকে জানাতে হবে.",
+   "target": "Saat barang tiba, saya harus memberi tahu Anda."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · すな",
+   "target": "Jawaban yang benar: 4 · すな"
+  },
+  {
+   "source": "সাদা বালির ওপর দিয়ে হেঁটেছি।",
+   "target": "Saya berjalan di atas pasir putih."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · こうちゃ",
+   "target": "Jawaban yang benar: 3 · こうちゃ"
+  },
+  {
+   "source": "আমি দুধ দিয়ে চা খাই।",
+   "target": "Saya minum teh hitam dengan susu."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · ししゃ",
+   "target": "Jawaban yang benar: 1 · ししゃ"
+  },
+  {
+   "source": "আমি শাখা অফিসে নথি মেইল ​​করব.",
+   "target": "Saya akan mengirim dokumen melalui pos ke kantor cabang."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 払う",
+   "target": "Jawaban yang benar: 4 · 払う"
+  },
+  {
+   "source": "বাসের ভাড়া আমি দেব।",
+   "target": "Saya akan membayar ongkos bus."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 宅配",
+   "target": "Jawaban yang benar: 2 · 宅配"
+  },
+  {
+   "source": "হোম ডেলিভারির মাধ্যমে পাঠান।",
+   "target": "Mohon kirim melalui pengiriman ke rumah."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 預ける",
+   "target": "Jawaban yang benar: 3 · 預ける"
+  },
+  {
+   "source": "সন্তানকে তাদের পিতামাতার কাছে রেখে দিন।",
+   "target": "Tinggalkan anak dengan orang tuanya."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 緑",
+   "target": "Jawaban yang benar: 3 · 緑"
+  },
+  {
+   "source": "চারপাশে তেমন সবুজ নেই।",
+   "target": "Tidak banyak kehijauan di sekitar sini."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · 連",
+   "target": "Jawaban yang benar: 1 · 連"
+  },
+  {
+   "source": "আমি লম্বা ছুটিতে বেড়াতে যাওয়ার পরিকল্পনা করছি।",
+   "target": "Saya berencana pergi berlibur selama liburan panjang."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · 告",
+   "target": "Jawaban yang benar: 1 · 告"
+  },
+  {
+   "source": "বিজ্ঞাপন থেকে বিক্রয় সম্পর্কে জানুন.",
+   "target": "Pelajari tentang penjualan dari iklan."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 価",
+   "target": "Jawaban yang benar: 3 · 価"
+  },
+  {
+   "source": "আমি তালিকার অর্ধেকেরও কম দামে এটি কিনেছি।",
+   "target": "Saya membelinya dengan harga kurang dari setengah harga daftar."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · 税",
+   "target": "Jawaban yang benar: 1 · 税"
+  },
+  {
+   "source": "ভোগ কর কত শতাংশ?",
+   "target": "Berapa persen pajak konsumsinya?"
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 枚",
+   "target": "Jawaban yang benar: 2 · 枚"
+  },
+  {
+   "source": "আপনার কাছে কয়টি CD আছে?",
+   "target": "Berapa banyak CD yang Anda miliki?"
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 型",
+   "target": "Jawaban yang benar: 3 · 型"
+  },
+  {
+   "source": "একটি বড় ট্রাক দুর্ঘটনা ঘটায়।",
+   "target": "Sebuah truk besar menyebabkan kecelakaan."
+  },
+  {
+   "source": "PART 5 · ৬ LESSON + EXAM",
+   "target": "PART 5 · 6 LESSON + EXAM"
+  },
+  {
+   "source": "লেখা",
+   "target": "Menulis"
+  },
+  {
+   "source": "ইমেইল পাঠানো · 17টি শব্দ",
+   "target": "Mengirim Email · 17 kata"
+  },
+  {
+   "source": "ধন্যবাদ কৃতজ্ঞতা",
+   "target": "Terima kasih, rasa syukur"
+  },
+  {
+   "source": "জিজ্ঞাসা করা / পরিদর্শন করা (নম্র)",
+   "target": "Bertanya / mengunjungi (rendah hati)"
+  },
+  {
+   "source": "দেরি বিলম্ব",
+   "target": "Keterlambatan, keterlambatan"
+  },
+  {
+   "source": "ধীরে দেরী",
+   "target": "Lambat, terlambat"
+  },
+  {
+   "source": "দেরী হওয়া / পিছিয়ে পড়া",
+   "target": "Terlambat / tertinggal"
+  },
+  {
+   "source": "অসভ্য অসভ্য",
+   "target": "Tidak sopan, tidak sopan"
+  },
+  {
+   "source": "নিজেকে ক্ষমা করা / ছুটি নেওয়া",
+   "target": "Meminta izin / mengambil cuti"
+  },
+  {
+   "source": "ব্যর্থতা ভুল",
+   "target": "Kegagalan, kesalahan"
+  },
+  {
+   "source": "ঘাম ঘাম",
+   "target": "Keringat, keringat"
+  },
+  {
+   "source": "ঘাম হওয়া / ঘাম",
+   "target": "Berkeringat / keringat"
+  },
+  {
+   "source": "দুঃখজনক হতাশাজনক",
+   "target": "Sedih, mengecewakan"
+  },
+  {
+   "source": "স্মৃতিচারণ / স্মারক",
+   "target": "Kenangan / kenang-kenangan"
+  },
+  {
+   "source": "অশ্রু",
+   "target": "Air mata"
+  },
+  {
+   "source": "চোখের পানি ফেলা / কাঁদা",
+   "target": "Meneteskan air mata / menangis"
+  },
+  {
+   "source": "হাসতে হাসতে হাসতে",
+   "target": "Tertawa, tertawa, tertawa"
+  },
+  {
+   "source": "হাসি",
+   "target": "Senyum, tawa"
+  },
+  {
+   "source": "হাসিমুখ / হাসি",
+   "target": "Wajah tersenyum / senyum"
+  },
+  {
+   "source": "জরিপ ও প্রশ্নপত্র · 17টি শব্দ",
+   "target": "Survei dan Kuesioner · 17 kata"
+  },
+  {
+   "source": "অবস্থা রাষ্ট্র",
+   "target": "Keadaan, kondisi"
+  },
+  {
+   "source": "জোর চাপ",
+   "target": "Tekanan, stres"
+  },
+  {
+   "source": "তদন্ত করা / দেখতে",
+   "target": "Menyelidiki / melihat"
+  },
+  {
+   "source": "তদন্ত জরিপ",
+   "target": "Penyelidikan, survei"
+  },
+  {
+   "source": "আন্দোলন স্থানান্তর",
+   "target": "Pergerakan, perpindahan"
+  },
+  {
+   "source": "সরানো স্থানান্তর করা",
+   "target": "Berpindah, memindahkan"
+  },
+  {
+   "source": "স্থানান্তর করা",
+   "target": "Memindahkan"
+  },
+  {
+   "source": "কঠিন",
+   "target": "Sulit"
+  },
+  {
+   "source": "কঠিন সমস্যা",
+   "target": "Masalah sulit"
+  },
+  {
+   "source": "সহজ সহজ",
+   "target": "Mudah, sederhana"
+  },
+  {
+   "source": "ইউনিট ক্রেডিট",
+   "target": "Unit, kredit"
+  },
+  {
+   "source": "অনুভূতি অনুভূতি",
+   "target": "Perasaan, emosi"
+  },
+  {
+   "source": "গভীর আবেগ / সরানো হচ্ছে",
+   "target": "Emosi mendalam / terharu"
+  },
+  {
+   "source": "ছাপ / চিন্তা",
+   "target": "Kesan / pikiran"
+  },
+  {
+   "source": "প্রত্যাশা ভবিষ্যদ্বাণী",
+   "target": "Harapan, prediksi"
+  },
+  {
+   "source": "জাপানি ভাষার ক্লাস · 26টি শব্দ",
+   "target": "Kelas Bahasa Jepang · 26 kata"
+  },
+  {
+   "source": "অনুশীলন",
+   "target": "Latihan"
+  },
+  {
+   "source": "সাম্প্রতিক ইদানীং",
+   "target": "Baru-baru ini, akhir-akhir ini"
+  },
+  {
+   "source": "শুরু প্রথম",
+   "target": "Awal, pertama"
+  },
+  {
+   "source": "শেষ শেষ",
+   "target": "akhirnya"
+  },
+  {
+   "source": "সবচেয়ে",
+   "target": "paling"
+  },
+  {
+   "source": "উপযুক্ত উপযুক্ত",
+   "target": "cocok / tepat"
+  },
+  {
+   "source": "আরামদায়ক",
+   "target": "nyaman"
+  },
+  {
+   "source": "নির্বাচন",
+   "target": "pilihan / seleksi"
+  },
+  {
+   "source": "ক্রীড়াবিদ / খেলোয়াড়",
+   "target": "atlet / pemain"
+  },
+  {
+   "source": "চয়ন নির্বাচন করুন",
+   "target": "memilih / menyeleksi"
+  },
+  {
+   "source": "ভিন্ন হতে পার্থক্য",
+   "target": "berbeda / perbedaan"
+  },
+  {
+   "source": "ভুল ত্রুটি",
+   "target": "kesalahan / kekeliruan"
+  },
+  {
+   "source": "ভুল করা ভুল",
+   "target": "membuat kesalahan / salah"
+  },
+  {
+   "source": "সরলরেখা",
+   "target": "garis lurus"
+  },
+  {
+   "source": "সরাসরি সরাসরি",
+   "target": "langsung / lurus"
+  },
+  {
+   "source": "মেরামত করা / পুনরুদ্ধার",
+   "target": "memperbaiki / memulihkan"
+  },
+  {
+   "source": "ঠিক করা সঠিক",
+   "target": "memperbaiki / benar"
+  },
+  {
+   "source": "পুনরাবৃত্তি",
+   "target": "pengulangan"
+  },
+  {
+   "source": "রাউন্ড ট্রিপ",
+   "target": "perjalanan pulang-pergi"
+  },
+  {
+   "source": "পুনরুদ্ধার",
+   "target": "pemulihan / restorasi"
+  },
+  {
+   "source": "অভিধান",
+   "target": "Kamus"
+  },
+  {
+   "source": "ছেড়ে দেওয়া পদত্যাগ",
+   "target": "mengundurkan diri / menyerah"
+  },
+  {
+   "source": "বাড়ির কাজ",
+   "target": "pekerjaan rumah (PR)"
+  },
+  {
+   "source": "বোর্ডিং হাউস / বাসস্থান",
+   "target": "rumah kos / penginapan"
+  },
+  {
+   "source": "সরাইখানা / বাসস্থান",
+   "target": "penginapan / losmen"
+  },
+  {
+   "source": "রচনা লেখা · 23টি শব্দ",
+   "target": "Menulis Esai · 23 kata"
+  },
+  {
+   "source": "গতকাল",
+   "target": "Kemarin"
+  },
+  {
+   "source": "গত রাতে",
+   "target": "tadi malam"
+  },
+  {
+   "source": "গত বছর",
+   "target": "tahun lalu"
+  },
+  {
+   "source": "জনাব ___",
+   "target": "Bapak/Ibu ___"
+  },
+  {
+   "source": "তুমি / যুবক",
+   "target": "kamu / pemuda"
+  },
+  {
+   "source": "চমৎকার / যথেষ্ট",
+   "target": "luar biasa / cukup"
+  },
+  {
+   "source": "শেষে সব পরে",
+   "target": "setelah semua / pada akhirnya"
+  },
+  {
+   "source": "বাঁধা / যুক্ত করা",
+   "target": "mengikat / menghubungkan"
+  },
+  {
+   "source": "বিয়ে",
+   "target": "pernikahan / perkawinan"
+  },
+  {
+   "source": "মধুচন্দ্রিমা",
+   "target": "bulan madu"
+  },
+  {
+   "source": "ব্যস্ততা",
+   "target": "kesibukan / keterikatan"
+  },
+  {
+   "source": "সরকারী ছুটি",
+   "target": "hari libur nasional"
+  },
+  {
+   "source": "উদযাপন করতে",
+   "target": "merayakan"
+  },
+  {
+   "source": "উদযাপন অভিনন্দন উপহার",
+   "target": "perayaan / hadiah ucapan selamat"
+  },
+  {
+   "source": "গান / সুর",
+   "target": "lagu / melodi"
+  },
+  {
+   "source": "বক্ররেখা",
+   "target": "kurva"
+  },
+  {
+   "source": "বাঁক নেওয়া / ঘোরা",
+   "target": "berbelok / membengkok"
+  },
+  {
+   "source": "বাঁকানো / মোচড়ানো",
+   "target": "bengkok / terpuntir"
+  },
+  {
+   "source": "স্ত্রী / ম্যাডাম",
+   "target": "istri / nyonya"
+  },
+  {
+   "source": "অভ্যন্তর / ভিতরের অংশ",
+   "target": "bagian dalam / interior"
+  },
+  {
+   "source": "ঘুমাতে / শুয়ে থাকা",
+   "target": "tidur / berbaring"
+  },
+  {
+   "source": "দেরি করে ঘুম থেকে ওঠা",
+   "target": "bangun kesiangan"
+  },
+  {
+   "source": "ঘুম",
+   "target": "tidur"
+  },
+  {
+   "source": "ডেন্টাল রোগীর ফর্ম · 21টি শব্দ",
+   "target": "Formulir Pasien Gigi · 21 kata"
+  },
+  {
+   "source": "মাথাব্যথা",
+   "target": "sakit kepala"
+  },
+  {
+   "source": "পেট ব্যাথা",
+   "target": "sakit perut"
+  },
+  {
+   "source": "বেদনাদায়ক কালশিটে",
+   "target": "memar yang menyakitkan"
+  },
+  {
+   "source": "জ্বর / তাপ",
+   "target": "demam / suhu"
+  },
+  {
+   "source": "উত্সাহী উদ্যোগী",
+   "target": "antusias / berinisiatif"
+  },
+  {
+   "source": "গরম অনুরাগী",
+   "target": "penggemar berat / bersemangat"
+  },
+  {
+   "source": "পোকা বাগ",
+   "target": "serangga / bug"
+  },
+  {
+   "source": "দন্তচিকিৎসা",
+   "target": "kedokteran gigi"
+  },
+  {
+   "source": "দাঁত",
+   "target": "gigi"
+  },
+  {
+   "source": "গহ্বর / দাঁতের ক্ষয়",
+   "target": "lubang / kerusakan gigi"
+  },
+  {
+   "source": "প্রতিকার করা / নিরাময় করতে",
+   "target": "mengobati / menyembuhkan"
+  },
+  {
+   "source": "রাজনীতি",
+   "target": "politik"
+  },
+  {
+   "source": "চিকিৎসা",
+   "target": "pengobatan medis"
+  },
+  {
+   "source": "সুস্থ করা / নিরাময় করা",
+   "target": "menyembuhkan / mengobati"
+  },
+  {
+   "source": "নোংরা নোংরা",
+   "target": "kotor / jorok"
+  },
+  {
+   "source": "ময়লা হওয়া / দূষিত হওয়া",
+   "target": "menjadi kotor / tercemar"
+  },
+  {
+   "source": "লাইন আপ করা / লাইনে দাঁড়াতে",
+   "target": "berbaris / berdiri dalam antrean"
+  },
+  {
+   "source": "ব্যবস্থা করা লাইন আপ",
+   "target": "mengatur / membariskan"
+  },
+  {
+   "source": "দাঁত প্রান্তিককরণ",
+   "target": "perataan gigi"
+  },
+  {
+   "source": "অন্যান্য অন্য",
+   "target": "lain / lainnya"
+  },
+  {
+   "source": "স্বাস্থ্য পরীক্ষার ফর্ম · 22টি শব্দ",
+   "target": "Formulir Pemeriksaan Kesehatan · 22 kata"
+  },
+  {
+   "source": "উচ্চতা",
+   "target": "tinggi badan"
+  },
+  {
+   "source": "একক অবিবাহিত",
+   "target": "lajang / belum menikah"
+  },
+  {
+   "source": "সামাজিক অবস্থা / পদমর্যাদা",
+   "target": "status sosial / pangkat"
+  },
+  {
+   "source": "সাশিমি",
+   "target": "sashimi"
+  },
+  {
+   "source": "খাতির",
+   "target": "sake"
+  },
+  {
+   "source": "রান্নার খাতির / রান্নার ওয়াইন",
+   "target": "sake masak / anggur masak"
+  },
+  {
+   "source": "অ্যালকোহল / খাতির",
+   "target": "alkohol / sake"
+  },
+  {
+   "source": "মদের দোকান / খাতির দোকান",
+   "target": "toko minuman keras / toko sake"
+  },
+  {
+   "source": "শ্বাস / শ্বসন",
+   "target": "napas / pernapasan"
+  },
+  {
+   "source": "শ্বাস নেওয়া ধোঁয়া",
+   "target": "menghirup asap"
+  },
+  {
+   "source": "ক্ষুধা",
+   "target": "nafsu makan"
+  },
+  {
+   "source": "প্রেরণা ইচ্ছা",
+   "target": "motivasi / keinginan"
+  },
+  {
+   "source": "চাই ইচ্ছা",
+   "target": "ingin, berharap"
+  },
+  {
+   "source": "ঘুমঘুম",
+   "target": "mengantuk"
+  },
+  {
+   "source": "ক্লান্ত হওয়া / ক্লান্ত হয়ে",
+   "target": "menjadi lelah / kelelahan"
+  },
+  {
+   "source": "শ্বাস",
+   "target": "napas"
+  },
+  {
+   "source": "শ্বাসকষ্ট",
+   "target": "sesak napas"
+  },
+  {
+   "source": "পুত্র",
+   "target": "putra (anak laki-laki)"
+  },
+  {
+   "source": "কল তলব",
+   "target": "panggilan, pemanggilan"
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · ざんねん",
+   "target": "Jawaban yang benar: 3 · ざんねん"
+  },
+  {
+   "source": "আমি দুঃখিত আমি বিয়েতে যোগ দিতে পারিনি।",
+   "target": "Saya minta maaf tidak bisa menghadiri pernikahan itu."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · わらって",
+   "target": "Jawaban yang benar: 4 · わらって"
+  },
+  {
+   "source": "আমি ছবি তুলব। হাসি.",
+   "target": "Saya akan mengambil foto. Tersenyumlah."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · いどう",
+   "target": "Jawaban yang benar: 3 · いどう"
+  },
+  {
+   "source": "অনুগ্রহ করে গাড়িটি ওখানে সরান।",
+   "target": "Mohon pindahkan mobil ke sana."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · おくれて",
+   "target": "Jawaban yang benar: 1 · おくれて"
+  },
+  {
+   "source": "আমি দেরী উত্তর জন্য দুঃখিত.",
+   "target": "Saya minta maaf atas balasan yang terlambat."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · やめた",
+   "target": "Jawaban yang benar: 4 · やめた"
+  },
+  {
+   "source": "শুনেছি ইয়ামাদা কোম্পানি ছেড়ে দিয়েছে।",
+   "target": "Saya mendengar Yamada meninggalkan perusahaan."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · むすぶ",
+   "target": "Jawaban yang benar: 1 · むすぶ"
+  },
+  {
+   "source": "জুতার ফিতা বাঁধুন।",
+   "target": "Ikat tali sepatu Anda."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · おく",
+   "target": "Jawaban yang benar: 3 · おく"
+  },
+  {
+   "source": "এক বৃদ্ধ পাহাড়ের গভীরে থাকেন।",
+   "target": "Seorang pria tua tinggal jauh di dalam pegunungan."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · せいじ",
+   "target": "Jawaban yang benar: 1 · せいじ"
+  },
+  {
+   "source": "রাজনীতি নিয়ে কথা বলা কঠিন।",
+   "target": "Sulit membicarakan politik."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · むすこ",
+   "target": "Jawaban yang benar: 3 · むすこ"
+  },
+  {
+   "source": "আমি আমার ছেলের কাছ থেকে একটি চিঠি পেয়েছি।",
+   "target": "Saya menerima surat dari putra saya."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · にほんしゅ",
+   "target": "Jawaban yang benar: 4 · にほんしゅ"
+  },
+  {
+   "source": "চাল থেকে তৈরি হয় সাক।",
+   "target": "Sake dibuat dari beras."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · お礼",
+   "target": "Jawaban yang benar: 1 · お礼"
+  },
+  {
+   "source": "আমি একটি ধন্যবাদ পোস্টকার্ড লিখেছি।",
+   "target": "Saya menulis kartu pos ucapan terima kasih."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 伺えば",
+   "target": "Jawaban yang benar: 2 · 伺えば"
+  },
+  {
+   "source": "আমার দেখার জন্য কখন ভাল সময় হবে?",
+   "target": "Kapan waktu yang baik bagi saya untuk berkunjung?"
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 調べる",
+   "target": "Jawaban yang benar: 4 · 調べる"
+  },
+  {
+   "source": "একটি শব্দের অর্থ দেখুন।",
+   "target": "Cari arti sebuah kata."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 汗",
+   "target": "Jawaban yang benar: 2 · 汗"
+  },
+  {
+   "source": "তোয়ালে দিয়ে ঘাম মুছুন।",
+   "target": "Seka keringat dengan handuk."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 最",
+   "target": "Jawaban yang benar: 4 · 最"
+  },
+  {
+   "source": "প্রথমে উপাদানগুলো ভালো করে কেটে নিন।",
+   "target": "Pertama, potong bahan-bahannya dengan baik."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 復",
+   "target": "Jawaban yang benar: 2 · 復"
+  },
+  {
+   "source": "আবহাওয়ার উন্নতি হচ্ছে।",
+   "target": "Cuaca membaik."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 昨",
+   "target": "Jawaban yang benar: 4 · 昨"
+  },
+  {
+   "source": "এই বছর আপনার সব সাহায্যের জন্য আপনাকে অনেক ধন্যবাদ.",
+   "target": "Terima kasih banyak atas semua bantuan Anda tahun ini."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · 直",
+   "target": "Jawaban yang benar: 1 · 直"
+  },
+  {
+   "source": "অফিসে না ফিরে সোজা বাসায় চলে যাব।",
+   "target": "Saya akan langsung pulang ke rumah tanpa kembali ke kantor."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 痛",
+   "target": "Jawaban yang benar: 2 · 痛"
+  },
+  {
+   "source": "কিছু মাথাব্যথার ওষুধ কিনুন।",
+   "target": "Beli obat sakit kepala."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 欲",
+   "target": "Jawaban yang benar: 4 · 欲"
+  },
+  {
+   "source": "আমার ক্ষুধা নেই।",
+   "target": "Saya tidak punya nafsu makan."
+  },
+  {
+   "source": "PART 6 · ৬ LESSON + EXAM",
+   "target": "PART 6 · 6 LESSON + EXAM"
+  },
+  {
+   "source": "পড়া",
+   "target": "Membaca"
+  },
+  {
+   "source": "আবহাওয়ার তথ্য · 14টি শব্দ",
+   "target": "Informasi Cuaca · 14 kata"
+  },
+  {
+   "source": "পূর্বাভাস",
+   "target": "Prakiraan"
+  },
+  {
+   "source": "রিপোর্ট",
+   "target": "Laporan"
+  },
+  {
+   "source": "পরিষ্কার করা রৌদ্রোজ্জ্বল হয়ে",
+   "target": "Cerah menjadi cerah"
+  },
+  {
+   "source": "রৌদ্রোজ্জ্বল আবহাওয়া",
+   "target": "Cuaca cerah"
+  },
+  {
+   "source": "মেঘ",
+   "target": "Awan"
+  },
+  {
+   "source": "গরম করা",
+   "target": "Pemanasan"
+  },
+  {
+   "source": "উষ্ণ",
+   "target": "Hangat"
+  },
+  {
+   "source": "তুষার",
+   "target": "Salju"
+  },
+  {
+   "source": "ভূমিকম্প",
+   "target": "Gempa bumi"
+  },
+  {
+   "source": "ভূমিকম্পের তীব্রতা",
+   "target": "Intensitas gempa bumi"
+  },
+  {
+   "source": "রেডিও তরঙ্গ / সংকেত",
+   "target": "Gelombang radio / sinyal"
+  },
+  {
+   "source": "ঢেউ",
+   "target": "Gelombang"
+  },
+  {
+   "source": "সুনামি",
+   "target": "Tsunami"
+  },
+  {
+   "source": "বওয়া / ফুঁ দেওয়া",
+   "target": "Bertiup / meniup"
+  },
+  {
+   "source": "চাকরির বিজ্ঞাপন · 21টি শব্দ",
+   "target": "Iklan Lowongan Kerja · 21 kata"
+  },
+  {
+   "source": "চাহিদা অনুরোধ",
+   "target": "Permintaan kebutuhan"
+  },
+  {
+   "source": "কাজের প্রস্তাব / নিয়োগ",
+   "target": "Tawaran kerja / perekrutan"
+  },
+  {
+   "source": "চালান বিল",
+   "target": "Faktur tagihan"
+  },
+  {
+   "source": "সন্ধান করা / অনুরোধ করতে",
+   "target": "Mencari / meminta"
+  },
+  {
+   "source": "নিয়োগ / অনুরোধ",
+   "target": "Perekrutan / permintaan"
+  },
+  {
+   "source": "কর্মক্ষেত্র",
+   "target": "Tempat kerja"
+  },
+  {
+   "source": "পেশা",
+   "target": "Pekerjaan"
+  },
+  {
+   "source": "চাকরি পরিবর্তন / কর্মজীবন পরিবর্তন",
+   "target": "Pindah kerja / perubahan karier"
+  },
+  {
+   "source": "কর্মী সদস্য / কর্মচারী",
+   "target": "Anggota staf / karyawan"
+  },
+  {
+   "source": "বিউটি সেলুন / চুলের সেলুন",
+   "target": "Salon kecantikan / salon rambut"
+  },
+  {
+   "source": "বিষয়বস্তু / বিস্তারিত",
+   "target": "Isi / detail"
+  },
+  {
+   "source": "কৌশল প্রযুক্তি / দক্ষতা",
+   "target": "Teknik teknologi / keterampilan"
+  },
+  {
+   "source": "প্রকৌশলী প্রযুক্তিবিদ",
+   "target": "Insinyur teknisi"
+  },
+  {
+   "source": "অফিসের কাজ / কেরানি কাজ",
+   "target": "Pekerjaan kantor / pekerjaan administrasi"
+  },
+  {
+   "source": "সরকারি কর্মচারী",
+   "target": "Pegawai pemerintah"
+  },
+  {
+   "source": "অফিস সংস্থা",
+   "target": "Kantor organisasi"
+  },
+  {
+   "source": "ট্যাক্স অফিস / ট্যাক্স ব্যুরো",
+   "target": "Kantor pajak / biro pajak"
+  },
+  {
+   "source": "ধারা 1",
+   "target": "Bagian 1"
+  },
+  {
+   "source": "বিভাগ প্রধান / ম্যানেজার",
+   "target": "Kepala departemen / manajer"
+  },
+  {
+   "source": "সাধারণ সাধারণ",
+   "target": "Umum masyarakat umum"
+  },
+  {
+   "source": "সাধারণভাবে সাধারণভাবে",
+   "target": "Secara umum"
+  },
+  {
+   "source": "খেলাধুলার সংবাদ · 20টি শব্দ",
+   "target": "Berita Olahraga · 20 kata"
+  },
+  {
+   "source": "পৃথিবী / গ্লোব",
+   "target": "Bumi / globe"
+  },
+  {
+   "source": "বেসবল",
+   "target": "Bisbol"
+  },
+  {
+   "source": "আলো বাল্ব / বৈদ্যুতিক বাল্ব",
+   "target": "Bola lampu / bola lampu listrik"
+  },
+  {
+   "source": "কখনই কোনোভাবেই",
+   "target": "Tidak pernah / sama sekali tidak"
+  },
+  {
+   "source": "সিদ্ধান্ত সংকল্প",
+   "target": "Keputusan / tekad"
+  },
+  {
+   "source": "সিদ্ধান্ত নেওয়া / নির্ধারণ করতে",
+   "target": "Mengambil keputusan / menentukan"
+  },
+  {
+   "source": "সিদ্ধান্ত নেওয়া / নিষ্পত্তি করা",
+   "target": "Memutuskan / menyelesaikan"
+  },
+  {
+   "source": "চ্যাম্পিয়নশিপ / বিজয়",
+   "target": "Kejuaraan / kemenangan"
+  },
+  {
+   "source": "চূড়ান্ত ম্যাচের সিদ্ধান্ত",
+   "target": "Keputusan pertandingan final"
+  },
+  {
+   "source": "1 থেকে 2 / 1-2",
+   "target": "1 sampai 2 / 1-2"
+  },
+  {
+   "source": "বিপরীত বিরোধী",
+   "target": "Lawan / oposisi"
+  },
+  {
+   "source": "প্রবাহিত হওয়া / প্রবাহিত হতে",
+   "target": "Mengalir / mengalir"
+  },
+  {
+   "source": "প্রবাহিত হতে দেওয়া / দূরে ধোয়া",
+   "target": "Membiarkan mengalir / menghanyutkan"
+  },
+  {
+   "source": "ম্যাচ প্রতিযোগিতা",
+   "target": "Pertandingan / kompetisi"
+  },
+  {
+   "source": "হারাতে",
+   "target": "Kalah"
+  },
+  {
+   "source": "কলস",
+   "target": "Kendi (pitcher)"
+  },
+  {
+   "source": "নিক্ষেপ",
+   "target": "Melempar"
+  },
+  {
+   "source": "ফলাফল ফলাফল",
+   "target": "Hasil hasil"
+  },
+  {
+   "source": "ফল",
+   "target": "Buah"
+  },
+  {
+   "source": "অর্থনীতি · 18টি শব্দ",
+   "target": "Ekonomi · 18 kata"
+  },
+  {
+   "source": "যুদ্ধোত্তর যুদ্ধের পরে",
+   "target": "Pascaperang / setelah perang"
+  },
+  {
+   "source": "যুদ্ধ",
+   "target": "Perang"
+  },
+  {
+   "source": "লড়াই করা / যুদ্ধ করতে",
+   "target": "Berperang / berperang"
+  },
+  {
+   "source": "অভিজ্ঞতা অভিজ্ঞতা করতে",
+   "target": "Mengalami"
+  },
+  {
+   "source": "ব্যবস্থাপনা একটি ব্যবসা চালানো",
+   "target": "Manajemen / menjalankan bisnis"
+  },
+  {
+   "source": "বৃদ্ধি হত্তয়া",
+   "target": "Tumbuh"
+  },
+  {
+   "source": "সমাপ্তি / সম্পূর্ণ করতে",
+   "target": "Penyelesaian / menyelesaikan"
+  },
+  {
+   "source": "ব্যবসা বৈদেশিক বাণিজ্য",
+   "target": "Bisnis perdagangan luar negeri"
+  },
+  {
+   "source": "রপ্তানি রপ্তানি করতে",
+   "target": "Ekspor mengekspor"
+  },
+  {
+   "source": "পরিবহন পরিবহন",
+   "target": "Transportasi mengangkut"
+  },
+  {
+   "source": "আমদানি আমদানি করতে",
+   "target": "Impor mengimpor"
+  },
+  {
+   "source": "পরামর্শ পরামর্শ করতে",
+   "target": "Konsultasi berkonsultasi"
+  },
+  {
+   "source": "প্রধানমন্ত্রী",
+   "target": "Perdana Menteri"
+  },
+  {
+   "source": "অংশীদার প্রতিপক্ষ",
+   "target": "Mitra lawan"
+  },
+  {
+   "source": "অর্থনীতি অর্থনীতি",
+   "target": "Ekonomi ekonomi"
+  },
+  {
+   "source": "শেষ করা / যথেষ্ট হতে",
+   "target": "Menyelesaikan / menjadi cukup"
+  },
+  {
+   "source": "বিশ্ব উষ্ণায়ন · 17টি শব্দ",
+   "target": "Pemanasan global · 17 kata"
+  },
+  {
+   "source": "সংস্কৃতি",
+   "target": "Budaya"
+  },
+  {
+   "source": "-করণ",
+   "target": "-isasi"
+  },
+  {
+   "source": "রসায়ন",
+   "target": "Kimia"
+  },
+  {
+   "source": "মেকআপ প্রসাধনী",
+   "target": "Riasan kosmetik"
+  },
+  {
+   "source": "তুলনা করতে",
+   "target": "Membandingkan"
+  },
+  {
+   "source": "কাঁচামাল / উপাদান",
+   "target": "Bahan mentah / bahan-bahan"
+  },
+  {
+   "source": "কারণ কারণ",
+   "target": "Alasan sebab"
+  },
+  {
+   "source": "আন্তর্জাতিক",
+   "target": "Internasional"
+  },
+  {
+   "source": "সংঘ সম্পর্ক",
+   "target": "Asosiasi hubungan"
+  },
+  {
+   "source": "মিটিং সম্মেলন",
+   "target": "Rapat konferensi"
+  },
+  {
+   "source": "বিধায়ক সমাবেশের সদস্য",
+   "target": "Anggota legislatif anggota majelis"
+  },
+  {
+   "source": "জীবন জীবিকা",
+   "target": "Kehidupan mata pencaharian"
+  },
+  {
+   "source": "কার্যকলাপ / কর্ম",
+   "target": "Kegiatan / pekerjaan"
+  },
+  {
+   "source": "কঠিন গুরুতর",
+   "target": "Sulit serius"
+  },
+  {
+   "source": "পরিবর্তন প্রকরণ",
+   "target": "Perubahan variasi"
+  },
+  {
+   "source": "পরিবর্তন করা / পরিবর্তিত হতে",
+   "target": "Mengubah / berubah"
+  },
+  {
+   "source": "পরিবর্তন করা / পরিবর্তন করতে",
+   "target": "Mengubah / memodifikasi"
+  },
+  {
+   "source": "রাজনীতি · 20টি শব্দ",
+   "target": "Politik · 20 kata"
+  },
+  {
+   "source": "রাজনীতিবিদ",
+   "target": "Politisi"
+  },
+  {
+   "source": "সরকার",
+   "target": "Pemerintah"
+  },
+  {
+   "source": "প্রিফেকচার",
+   "target": "Prefektur"
+  },
+  {
+   "source": "পুনর্বিবেচনা / সংশোধন",
+   "target": "Peninjauan kembali / revisi"
+  },
+  {
+   "source": "টিকিট গেট / টিকিট বাধা",
+   "target": "Gerbang tiket / penghalang tiket"
+  },
+  {
+   "source": "পরিবর্তন করা / সংশোধন করতে",
+   "target": "Mengubah / merevisi"
+  },
+  {
+   "source": "অস্বীকার অস্বীকার",
+   "target": "Penyangkalan penyangkalan"
+  },
+  {
+   "source": "নেতিবাচক",
+   "target": "Negatif"
+  },
+  {
+   "source": "উদ্দেশ্য লক্ষ্য",
+   "target": "Tujuan sasaran"
+  },
+  {
+   "source": "ব্যক্তিগত",
+   "target": "Data pribadi"
+  },
+  {
+   "source": "আসলে / অনুশীলনে",
+   "target": "Sebenarnya / dalam praktiknya"
+  },
+  {
+   "source": "আসলে",
+   "target": "Sebenarnya"
+  },
+  {
+   "source": "পরীক্ষা পরীক্ষা",
+   "target": "Ujian tes"
+  },
+  {
+   "source": "অভাব ত্রুটি",
+   "target": "Kekurangan cacat"
+  },
+  {
+   "source": "অভাব থাকা / অনুপস্থিত হতে",
+   "target": "Kekurangan / tidak hadir"
+  },
+  {
+   "source": "বিশেষত্ব দক্ষতা",
+   "target": "Keahlian khusus keterampilan"
+  },
+  {
+   "source": "বিশেষজ্ঞ বিশেষজ্ঞ",
+   "target": "Ahli ahli"
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · はれる",
+   "target": "Jawaban yang benar: 3 · はれる"
+  },
+  {
+   "source": "এই সপ্তাহান্তে সারা দেশে রোদ থাকবে।",
+   "target": "Akhir pekan ini akan cerah di seluruh negeri."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · いっぱん",
+   "target": "Jawaban yang benar: 4 · いっぱん"
+  },
+  {
+   "source": "এটি একটি খাবার যা সাধারণত জাপানে বিক্রি হয়।",
+   "target": "Ini adalah makanan yang umumnya dijual di Jepang."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · くだもの",
+   "target": "Jawaban yang benar: 2 · くだもの"
+  },
+  {
+   "source": "এটা কি ধরনের ফল?",
+   "target": "Buah jenis apa ini?"
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · たたかって",
+   "target": "Jawaban yang benar: 4 · たたかって"
+  },
+  {
+   "source": "আমাদের দল একটি শক্তিশালী দলের সাথে লড়াই করেছে এবং জিতেছে।",
+   "target": "Tim kami bertarung melawan tim yang kuat dan menang."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · こくさいかいぎ",
+   "target": "Jawaban yang benar: 2 · こくさいかいぎ"
+  },
+  {
+   "source": "একটি আন্তর্জাতিক সম্মেলনে যোগদান.",
+   "target": "Menghadiri konferensi internasional."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · せいじけいざい",
+   "target": "Jawaban yang benar: 2 · せいじけいざい"
+  },
+  {
+   "source": "বিশ্ববিদ্যালয়ে রাজনৈতিক অর্থনীতি অধ্যয়ন করুন।",
+   "target": "Pelajari ekonomi politik di universitas."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · まけないで",
+   "target": "Jawaban yang benar: 4 · まけないで"
+  },
+  {
+   "source": "আসুন ঠান্ডা আমাদের ভাল হতে না দিন.",
+   "target": "Jangan biarkan hawa dingin mengalahkan kita."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · げんりょう",
+   "target": "Jawaban yang benar: 3 · げんりょう"
+  },
+  {
+   "source": "কাঁচামাল আমদানি করা।",
+   "target": "Mengimpor bahan mentah."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · なげすて",
+   "target": "Jawaban yang benar: 1 · なげすて"
+  },
+  {
+   "source": "দয়া করে গাড়ির জানালা দিয়ে আবর্জনা ফেলবেন না।",
+   "target": "Mohon jangan membuang sampah melalui jendela mobil."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · すませて",
+   "target": "Jawaban yang benar: 4 · すませて"
+  },
+  {
+   "source": "আমি আমার বাড়ির কাজ শেষ করে টিভি দেখব।",
+   "target": "Saya akan menyelesaikan pekerjaan rumah saya lalu menonton TV."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 実験",
+   "target": "Jawaban yang benar: 2 · 実験"
+  },
+  {
+   "source": "পরীক্ষামূলক ফলাফল রিপোর্ট.",
+   "target": "Laporkan hasil eksperimen."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · 専門家",
+   "target": "Jawaban yang benar: 1 · 専門家"
+  },
+  {
+   "source": "তাদের মতামতের জন্য একজন বিশেষজ্ঞকে জিজ্ঞাসা করুন।",
+   "target": "Mintalah pendapat seorang ahli."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 温暖化",
+   "target": "Jawaban yang benar: 3 · 温暖化"
+  },
+  {
+   "source": "বৈশ্বিক উষ্ণতা নিয়ে আলোচনা কর।",
+   "target": "Diskusikan pemanasan global."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 吹いて",
+   "target": "Jawaban yang benar: 2 · 吹いて"
+  },
+  {
+   "source": "আগামীকাল একটি উত্তর বাতাস বইবে, তাই এটি ঠান্ডা হয়ে যাবে।",
+   "target": "Besok angin utara akan bertiup, jadi akan menjadi dingin."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 課",
+   "target": "Jawaban yang benar: 2 · 課"
+  },
+  {
+   "source": "পরবর্তী পরীক্ষা পাঠ 10 পর্যন্ত কভার করে।",
+   "target": "Ujian berikutnya mencakup hingga Pelajaran 10."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 化",
+   "target": "Jawaban yang benar: 4 · 化"
+  },
+  {
+   "source": "কারখানাটি যান্ত্রিকীকরণ করা হয়েছিল।",
+   "target": "Pabrik itu dimekanisasi."
+  },
+  {
+   "source": "সঠিক উত্তর: 3 · 的",
+   "target": "Jawaban yang benar: 3 · 的"
+  },
+  {
+   "source": "আমি ব্যক্তিগত কারণে কোম্পানি ত্যাগ করেছি।",
+   "target": "Saya meninggalkan perusahaan karena alasan pribadi."
+  },
+  {
+   "source": "সঠিক উত্তর: 2 · 報",
+   "target": "Jawaban yang benar: 2 · 報"
+  },
+  {
+   "source": "আমি রেডিওতে আবহাওয়ার পূর্বাভাস শুনি।",
+   "target": "Saya mendengarkan ramalan cuaca di radio."
+  },
+  {
+   "source": "সঠিক উত্তর: 1 · 否",
+   "target": "Jawaban yang benar: 1 · 否"
+  },
+  {
+   "source": "প্রধানমন্ত্রী সংবাদের বিষয়বস্তু অস্বীকার করেছেন।",
+   "target": "Perdana Menteri menyangkal isi berita tersebut."
+  },
+  {
+   "source": "সঠিক উত্তর: 4 · 波",
+   "target": "Jawaban yang benar: 4 · 波"
+  },
+  {
+   "source": "ফোনে থাকা ব্যক্তিটি এমন একটি এলাকায় রয়েছে বলে মনে হচ্ছে যেখানে কোনও অভ্যর্থনা নেই৷",
+   "target": "Orang yang sedang menelepon tampaknya berada di daerah yang tidak ada sinyal."
+  },
+  {
+   "source": "কিছু পাওয়া যায়নি। Search spelling বা Part বদলে আবার চেষ্টা করুন।",
+   "target": "Tidak ditemukan. Silakan coba lagi dengan mengubah ejaan Search atau Part."
+  },
+  {
+   "source": "Progress এই browser-এ save হবে। ·",
+   "target": "Progress akan disimpan di browser ini. ·"
+  }
+ ]
+}

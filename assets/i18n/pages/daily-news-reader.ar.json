@@ -1,0 +1,42 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "daily-news-reader",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জাপানি নিউজ পড়ুন | আপনার নিহোন",
+   "target": "اقرأ الأخبار اليابانية | আপনার নিহোন"
+  },
+  {
+   "source": "প্রতিদিনের জাপানি নিউজ",
+   "target": "الأخبار اليابانية اليومية"
+  },
+  {
+   "source": "নিউজ লোড হচ্ছে…",
+   "target": "جارٍ تحميل الأخبار…"
+  },
+  {
+   "source": "সব নিউজ",
+   "target": "كل الأخبار"
+  },
+  {
+   "source": "আমাদের সম্পর্কে",
+   "target": "من نحن"
+  },
+  {
+   "source": "যোগাযোগ",
+   "target": "تواصل معنا"
+  },
+  {
+   "source": "© ২০২৬ আপনার নিহোন · Created by SAMMIR",
+   "target": "© 2026 আপনার নিহোন · Created by SAMMIR"
+  },
+  {
+   "source": "হোম",
+   "target": "الصفحة الرئيسية"
+  }
+ ]
+}

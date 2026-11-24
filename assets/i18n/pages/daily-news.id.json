@@ -1,0 +1,58 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "daily-news",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "প্রতিদিনের জাপানি নিউজ | আপনার নিহোন",
+   "target": "Berita Jepang Harian | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "খবর পড়তে পড়তে জাপানি শিখুন",
+   "target": "Belajar bahasa Jepang sambil membaca berita"
+  },
+  {
+   "source": "প্রতিদিন নতুন জাপানি headline, ভিতরে সহজ Japanese reading, ফুরিগানা ON/OFF, বাংলা বিস্তারিত ব্যাখ্যা এবং দরকারি vocabulary।",
+   "target": "Headline Jepang baru setiap hari, bacaan Jepang yang mudah di dalamnya, furigana ON/OFF, penjelasan terperinci dalam bahasa Bengali, dan kosakata yang berguna."
+  },
+  {
+   "source": "নিউজ আর্কাইভ",
+   "target": "Arsip Berita"
+  },
+  {
+   "source": "আজ ও আগের দিনের নিউজ",
+   "target": "Berita hari ini dan hari-hari sebelumnya"
+  },
+  {
+   "source": "লোড হচ্ছে…",
+   "target": "Memuat…"
+  },
+  {
+   "source": "নিউজ লোড হচ্ছে…",
+   "target": "Berita sedang dimuat…"
+  },
+  {
+   "source": "আমাদের সম্পর্কে",
+   "target": "Tentang Kami"
+  },
+  {
+   "source": "যোগাযোগ",
+   "target": "Kontak"
+  },
+  {
+   "source": "© ২০২৬ আপনার নিহোন · Created by SAMMIR",
+   "target": "© 2026 আপনার নিহোন · Created by SAMMIR"
+  },
+  {
+   "source": "হোম",
+   "target": "Beranda"
+  }
+ ]
+}

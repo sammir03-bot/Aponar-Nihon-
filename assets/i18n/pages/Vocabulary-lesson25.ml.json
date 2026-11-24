@@ -1,0 +1,254 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "Vocabulary-lesson25",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Vocabulary Lesson 25 | আপনার নিহোন",
+   "target": "N5 Vocabulary Lesson 25 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "N5 Lesson 25 · শর্ত & যদি",
+   "target": "N5 Lesson 25 · വ്യവസ്ഥകളും “If”-ഉം"
+  },
+  {
+   "source": "৫০+ শব্দ: 〜たら, 〜なら, 〜と — conditional forms",
+   "target": "50+ പദങ്ങൾ: 〜たら, 〜なら, 〜と — വ്യവസ്ഥാ രൂപങ്ങൾ"
+  },
+  {
+   "source": "৫০টি শব্দ",
+   "target": "50 പദങ്ങൾ"
+  },
+  {
+   "source": "🔀 মূল প্যাটার্ন",
+   "target": "🔀 പ്രധാന pattern"
+  },
+  {
+   "source": "যাওয়া",
+   "target": "പോകുക"
+  },
+  {
+   "source": "ক্রিয়া",
+   "target": "ക്രിയ"
+  },
+  {
+   "source": "আসা",
+   "target": "വരുക"
+  },
+  {
+   "source": "ফেরা",
+   "target": "മടങ്ങുക / തിരിച്ചുവരുക"
+  },
+  {
+   "source": "খাওয়া",
+   "target": "കഴിക്കുക"
+  },
+  {
+   "source": "পান করা",
+   "target": "കുടിക്കുക"
+  },
+  {
+   "source": "দেখা",
+   "target": "കാണുക / നോക്കുക"
+  },
+  {
+   "source": "শোনা",
+   "target": "കേൾക്കുക"
+  },
+  {
+   "source": "পড়া",
+   "target": "വായന"
+  },
+  {
+   "source": "লেখা",
+   "target": "എഴുത്ത്"
+  },
+  {
+   "source": "কেনা",
+   "target": "വാങ്ങുക"
+  },
+  {
+   "source": "আবহাওয়া",
+   "target": "കാലാവസ്ഥ"
+  },
+  {
+   "source": "বৃষ্টি",
+   "target": "മഴ"
+  },
+  {
+   "source": "তুষার",
+   "target": "മഞ്ഞ്"
+  },
+  {
+   "source": "বাতাস",
+   "target": "കാറ്റ് / വായു"
+  },
+  {
+   "source": "ঋতু",
+   "target": "ഋതു"
+  },
+  {
+   "source": "বন্ধু",
+   "target": "സുഹൃത്ത്"
+  },
+  {
+   "source": "ব্যক্তি",
+   "target": "വ്യക്തി"
+  },
+  {
+   "source": "পরিবার",
+   "target": "കുടുംബം"
+  },
+  {
+   "source": "যদি / যখন",
+   "target": "എങ്കിൽ / എപ്പോൾ"
+  },
+  {
+   "source": "যদি হয়",
+   "target": "അങ്ങനെയാണെങ്കിൽ / അത് സംഭവിച്ചാൽ"
+  },
+  {
+   "source": "যদি (natural)",
+   "target": "എങ്കിൽ (സ്വാഭാവിക ഫലം)"
+  },
+  {
+   "source": "কখন",
+   "target": "എപ്പോൾ"
+  },
+  {
+   "source": "প্রশ্ন",
+   "target": "ചോദ്യങ്ങൾ"
+  },
+  {
+   "source": "কী",
+   "target": "എന്ത്"
+  },
+  {
+   "source": "কোথায়",
+   "target": "എവിടെ"
+  },
+  {
+   "source": "যদি",
+   "target": "എങ്കിൽ"
+  },
+  {
+   "source": "হয়তো",
+   "target": "ഒരുപക്ഷേ"
+  },
+  {
+   "source": "নিশ্চয়ই",
+   "target": "തീർച്ചയായും"
+  },
+  {
+   "source": "ঠিক",
+   "target": "ശരി / കൃത്യം"
+  },
+  {
+   "source": "ভালো",
+   "target": "നല്ലത്"
+  },
+  {
+   "source": "বুঝলাম",
+   "target": "മനസ്സിലായി"
+  },
+  {
+   "source": "তারপর",
+   "target": "അതിനുശേഷം / പിന്നെ"
+  },
+  {
+   "source": "এবং",
+   "target": "ഉം"
+  },
+  {
+   "source": "কিন্তু",
+   "target": "പക്ഷേ / എന്നാൽ"
+  },
+  {
+   "source": "বড়",
+   "target": "വലുത്"
+  },
+  {
+   "source": "ছোট",
+   "target": "ചെറുത്"
+  },
+  {
+   "source": "খারাপ",
+   "target": "മോശം"
+  },
+  {
+   "source": "গরম",
+   "target": "ചൂട്"
+  },
+  {
+   "source": "ঠান্ডা",
+   "target": "തണുപ്പ്"
+  },
+  {
+   "source": "দ্রুত",
+   "target": "വേഗം / വേഗത്തിൽ"
+  },
+  {
+   "source": "ধীর",
+   "target": "പതുക്കെ"
+  },
+  {
+   "source": "নতুন",
+   "target": "പുതിയത്"
+  },
+  {
+   "source": "পুরাতন",
+   "target": "പഴയത് (വസ്തു)"
+  },
+  {
+   "source": "পছন্দ",
+   "target": "ഇഷ്ടം / പ്രിയപ്പെട്ടത്"
+  },
+  {
+   "source": "অপছন্দ",
+   "target": "ഇഷ്ടമില്ലായ്മ"
+  },
+  {
+   "source": "দক্ষ",
+   "target": "വൈദഗ്ധ്യമുള്ള / നല്ല"
+  },
+  {
+   "source": "অদক্ষ",
+   "target": "വൈദഗ്ധ്യമില്ലാത്ത / മോശം"
+  },
+  {
+   "source": "অবসর",
+   "target": "ഒഴിവുസമയം"
+  },
+  {
+   "source": "ব্যস্ত",
+   "target": "തിരക്ക്"
+  },
+  {
+   "source": "খুব",
+   "target": "വളരെ"
+  },
+  {
+   "source": "খুব বেশি না",
+   "target": "അത്രയധികമല്ല"
+  },
+  {
+   "source": "প্র্যাকটিস বাক্য",
+   "target": "പ്രാക്ടീസ് വാക്യങ്ങൾ"
+  },
+  {
+   "source": "পূর্ববর্তী লেসন ২৪",
+   "target": "മുമ്പത്തെ പാഠം 24"
+  },
+  {
+   "source": "ভোকাব সিরিজ সম্পূর্ণ",
+   "target": "Vocab പരമ്പര പൂർത്തിയായി"
+  }
+ ]
+}

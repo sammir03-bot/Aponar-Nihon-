@@ -1,0 +1,414 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "japan-google-maps-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Google Maps দিয়ে যাতায়াত | আপনার নিহোন",
+   "target": "التنقل باستخدام Google Maps | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "دليل الحياة في اليابان"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "كل الأدلة"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "بعد الوصول"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "السكن والحياة اليومية"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "القطارات والرصيف"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "استخدام Google Maps"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "الوظائف بدوام جزئي"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "مساعدة الطوارئ"
+  },
+  {
+   "source": "Google Maps দিয়ে যাতায়াত",
+   "target": "التنقل باستخدام Google Maps"
+  },
+  {
+   "source": "Destination search থেকে platform, transfer, exit ও building entrance পর্যন্ত—Google Maps-এর প্রতিটি লেখা কী বোঝায় তা ধাপে ধাপে।",
+   "target": "من البحث عن الوجهة إلى الرصيف والتحويل والمخرج ومدخل المبنى — خطوة بخطوة، ماذا يعني كل نص في Google Maps."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "شرح بالبنغالية"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "جمل يابانية"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "خطوات عملية"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "تقدمك"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 مكتمل"
+  },
+  {
+   "source": "সঠিক Destination Search",
+   "target": "بحث دقيق عن الوجهة"
+  },
+  {
+   "source": "একই নামের ভুল জায়গা এড়ান",
+   "target": "تجنّب المكان الخاطئ الذي يحمل الاسم نفسه"
+  },
+  {
+   "source": "শুধু দোকানের নাম নয়, branch দিন",
+   "target": "اذكر الفرع، لا اسم المتجر فقط"
+  },
+  {
+   "source": "যেমন “○○ 新宿店” বা postal address লিখুন।",
+   "target": "مثلا، اكتب ”○○ 新宿店“ أو العنوان البريدي."
+  },
+  {
+   "source": "Photo ও category মিলান",
+   "target": "طابق الصورة والفئة"
+  },
+  {
+   "source": "Restaurant, office, school বা park—map pin-এর category এবং exterior photo দেখুন।",
+   "target": "مطعم أو مكتب أو مدرسة أو حديقة — انظر إلى فئة دبوس الخريطة وصورة الواجهة الخارجية."
+  },
+  {
+   "source": "Address copy করে message-এর সঙ্গে মিলান",
+   "target": "انسخ العنوان وطابقه مع الرسالة"
+  },
+  {
+   "source": "Interview/training address-এর ward, chōme, building ও floor সব দেখুন।",
+   "target": "لعنوان مقابلة/تدريب، تحقق من الحي و chōme والمبنى والطابق."
+  },
+  {
+   "source": "Save ও label করুন",
+   "target": "احفظ وسمِّ"
+  },
+  {
+   "source": "School, Home, Work-এর মতো label দিলে পরেরবার দ্রুত route পাবেন।",
+   "target": "إذا سمّيت أماكن مثل School و Home و Work، فستحصل على المسار بسرعة في المرة القادمة."
+  },
+  {
+   "source": "Directions থেকে Transit বাছাই",
+   "target": "اختر Transit من Directions"
+  },
+  {
+   "source": "From ও To ঠিক করার নিয়ম",
+   "target": "قواعد ضبط From و To بشكل صحيح"
+  },
+  {
+   "source": "Directions চাপুন",
+   "target": "اضغط Directions"
+  },
+  {
+   "source": "Starting point “Your location” ঠিক আছে কি না দেখুন; বাসা থেকে গেলে home address দিন।",
+   "target": "تحقق مما إذا كانت نقطة البداية ”Your location“ صحيحة؛ إذا كنت ذاهبا من المنزل، فأدخل عنوان منزلك."
+  },
+  {
+   "source": "Train icon নির্বাচন করুন",
+   "target": "اختر أيقونة القطار"
+  },
+  {
+   "source": "Public transit route দেখতে train/bus icon ব্যবহার করুন।",
+   "target": "استخدم أيقونة القطار/الحافلة لرؤية مسارات النقل العام."
+  },
+  {
+   "source": "Leave now / Depart at / Arrive by বাছুন",
+   "target": "اختر Leave now / Depart at / Arrive by"
+  },
+  {
+   "source": "Interview হলে “Arrive by” দিয়ে 15–20 মিনিট buffer রাখুন।",
+   "target": "للمقابلة، استخدم ”Arrive by“ واحتفظ بهامش 15–20 دقيقة."
+  },
+  {
+   "source": "Options দেখুন",
+   "target": "شاهد Options"
+  },
+  {
+   "source": "কম transfer, কম walking, bus/train preference প্রয়োজনমতো দিন।",
+   "target": "عيّن تحويلات أقل ومشيا أقل وتفضيلات الحافلة/القطار حسب الحاجة."
+  },
+  {
+   "source": "Route Screen-এর প্রতিটি অংশ",
+   "target": "كل جزء من شاشة المسار"
+  },
+  {
+   "source": "সময়, ভাড়া, walking ও transfer পড়ুন",
+   "target": "اقرأ الوقت والأجرة والمشي والتحويلات"
+  },
+  {
+   "source": "চিহ্ন",
+   "target": "علامة"
+  },
+  {
+   "source": "অর্থ",
+   "target": "المعنى"
+  },
+  {
+   "source": "সিদ্ধান্ত",
+   "target": "القرار"
+  },
+  {
+   "source": "Departure ও arrival",
+   "target": "المغادرة والوصول"
+  },
+  {
+   "source": "বাসা থেকে station walking যোগ করুন",
+   "target": "أضف المشي من المنزل إلى المحطة"
+  },
+  {
+   "source": "আনুমানিক fare",
+   "target": "الأجرة التقديرية"
+  },
+  {
+   "source": "IC balance রাখুন",
+   "target": "احتفظ برصيد IC"
+  },
+  {
+   "source": "দুইবার line বদল",
+   "target": "تبديل الخطوط مرتين"
+  },
+  {
+   "source": "Beginner হলে কম transfer route দেখুন",
+   "target": "إذا كنت مبتدئا، فابحث عن مسار بتحويلات أقل"
+  },
+  {
+   "source": "Walking অংশ",
+   "target": "قسم المشي"
+  },
+  {
+   "source": "Exit-এর পর সময়",
+   "target": "الوقت بعد المخرج"
+  },
+  {
+   "source": "সম্ভাব্য platform",
+   "target": "الرصيف المحتمل"
+  },
+  {
+   "source": "Station board-এ confirm",
+   "target": "أكّد على لوحة المحطة"
+  },
+  {
+   "source": "কাছের exit",
+   "target": "أقرب مخرج"
+  },
+  {
+   "source": "Sign follow করুন",
+   "target": "اتبع اللافتات"
+  },
+  {
+   "source": "Platform ও Direction বোঝা",
+   "target": "فهم الرصيف والاتجاه"
+  },
+  {
+   "source": "Maps-এর লেখাকে station sign-এর সঙ্গে মিলান",
+   "target": "طابق النص في Maps مع لافتات المحطة"
+  },
+  {
+   "source": "Line name + direction একসঙ্গে পড়ুন",
+   "target": "اقرأ اسم الخط والاتجاه معا"
+  },
+  {
+   "source": "শুধু platform number নয়; line এবং “for ○○” মিলতে হবে।",
+   "target": "ليس رقم الرصيف فقط؛ يجب أن يتطابق الخط و ”for ○○“ أيضا."
+  },
+  {
+   "source": "Maps platform পরিবর্তন হতে পারে",
+   "target": "قد يتغير الرصيف في Maps"
+  },
+  {
+   "source": "Service disruption বা operational change-এ actual departure board-ই চূড়ান্ত।",
+   "target": "في حالة اضطراب الخدمة أو تغيير تشغيلي، تكون لوحة المغادرة الفعلية هي النهائية."
+  },
+  {
+   "source": "Train type দেখুন",
+   "target": "تحقق من نوع القطار"
+  },
+  {
+   "source": "Maps যে service বলেছে—Local/Rapid—সেটিই ধরুন, অথবা আপনার station stop list যাচাই করুন।",
+   "target": "خذ الخدمة التي أشار إليها Maps — Local/Rapid — أو تحقق من قائمة توقف محطتك."
+  },
+  {
+   "source": "Google নিজেও actual traffic rules/sign confirm করতে বলে। সন্দেহ হলে station staff-কে দেখান।",
+   "target": "تنصح Google نفسها أيضا بتأكيد قواعد/لافتات المرور الفعلية. إذا كنت في شك، فأظهرها لموظفي المحطة."
+  },
+  {
+   "source": "স্টেশন থেকে Destination পর্যন্ত",
+   "target": "من المحطة إلى وجهتك"
+  },
+  {
+   "source": "Exit, compass ও Street View",
+   "target": "المخرج والبوصلة و Street View"
+  },
+  {
+   "source": "Exit number আগে দেখুন",
+   "target": "تحقق من رقم المخرج أولا"
+  },
+  {
+   "source": "বড় station-এ ভুল exit নিলে 10–20 মিনিট নষ্ট হতে পারে।",
+   "target": "في محطة كبيرة، قد يضيّع أخذ المخرج الخاطئ 10–20 دقيقة."
+  },
+  {
+   "source": "Blue dot-এর beam দেখুন",
+   "target": "انظر إلى شعاع النقطة الزرقاء"
+  },
+  {
+   "source": "আপনি কোন দিকে মুখ করে আছেন তা beam দেখায়; গোল হয়ে ঘুরলে compass calibrate করুন।",
+   "target": "يُظهر الشعاع الاتجاه الذي تواجهه؛ إذا دار في دوائر، فعاير البوصلة."
+  },
+  {
+   "source": "Street View দিয়ে building চিনুন",
+   "target": "تعرّف على المبنى باستخدام Street View"
+  },
+  {
+   "source": "Interview-এর আগের দিন entrance, signboard ও nearby landmark দেখে নিন।",
+   "target": "في اليوم السابق للمقابلة، تحقق من المدخل واللافتة والمعلم القريب."
+  },
+  {
+   "source": "Building floor আলাদা করে লিখুন",
+   "target": "اكتب طابق المبنى بشكل منفصل"
+  },
+  {
+   "source": "Map pin সাধারণত building পর্যন্ত নেয়; floor/room message থেকে দেখুন।",
+   "target": "عادة يأخذك دبوس الخريطة إلى المبنى فقط؛ تحقق من الطابق/الغرفة من الرسالة."
+  },
+  {
+   "source": "একটি বাস্তব Practice",
+   "target": "تدريب حقيقي"
+  },
+  {
+   "source": "স্কুল/কাজে যাওয়ার আগের রাতের rehearsal",
+   "target": "بروفة في الليلة السابقة للذهاب إلى المدرسة/العمل"
+  },
+  {
+   "source": "ঠিক address খুলে “Work interview” নামে save করুন।",
+   "target": "افتح العنوان الدقيق واحفظه باسم ”Work interview“."
+  },
+  {
+   "source": "Arrive by সেট",
+   "target": "عيّن Arrive by"
+  },
+  {
+   "source": "Appointment 19:00 হলে 18:40 arrival দিন।",
+   "target": "إذا كان الموعد في 19:00، فعيّن الوصول في 18:40."
+  },
+  {
+   "source": "Departure station, line, direction, transfer, platform, exit—প্রতিটি screen রাখুন।",
+   "target": "احتفظ بكل شاشة: محطة المغادرة والخط والاتجاه والتحويل والرصيف والمخرج."
+  },
+  {
+   "source": "Alternative route দেখুন",
+   "target": "شاهد مسارا بديلا"
+  },
+  {
+   "source": "Delay হলে দ্বিতীয় route কোনটি তা আগে জানুন।",
+   "target": "اعرف مسبقا ما هو المسار الثاني إذا حدث تأخير."
+  },
+  {
+   "source": "Battery ও data প্রস্তুত",
+   "target": "البطارية والبيانات جاهزة"
+  },
+  {
+   "source": "Power bank, phone charge এবং address text offline রাখুন।",
+   "target": "احتفظ ببنك طاقة وشحن للهاتف ونص العنوان دون اتصال."
+  },
+  {
+   "source": "রাস্তা ও station-এ জিজ্ঞেস করার বাক্য",
+   "target": "عبارات للسؤال في الشارع وفي المحطة"
+  },
+  {
+   "source": "Map দেখিয়ে বলুন",
+   "target": "أظهر الخريطة وقل"
+  },
+  {
+   "source": "আমি এই জায়গায় যেতে চাই।",
+   "target": "أريد الذهاب إلى هذا المكان."
+  },
+  {
+   "source": "এই exit-টাই সঠিক?",
+   "target": "هل هذا هو المخرج الصحيح؟"
+  },
+  {
+   "source": "এই map-টা একটু দেখবেন?",
+   "target": "هل يمكنك إلقاء نظرة على هذه الخريطة؟"
+  },
+  {
+   "source": "এখান থেকে হেঁটে কত মিনিট?",
+   "target": "كم دقيقة مشيا من هنا؟"
+  },
+  {
+   "source": "বের হওয়ার আগে ৩০ সেকেন্ডে",
+   "target": "في 30 ثانية قبل أن تغادر"
+  },
+  {
+   "source": "Destination branch/address ঠিক আছে",
+   "target": "فرع/عنوان الوجهة صحيح"
+  },
+  {
+   "source": "Departure বা Arrive by সময় ঠিক করেছি",
+   "target": "عيّنت وقت المغادرة أو Arrive by"
+  },
+  {
+   "source": "Line, direction, train type দেখেছি",
+   "target": "تحققت من الخط والاتجاه ونوع القطار"
+  },
+  {
+   "source": "Transfer station screenshot আছে",
+   "target": "لديّ لقطة شاشة لمحطة التحويل"
+  },
+  {
+   "source": "Platform actual board-এ মিলাব",
+   "target": "سأطابق الرصيف على اللوحة الفعلية"
+  },
+  {
+   "source": "Exit number save করেছি",
+   "target": "حفظت رقم المخرج"
+  },
+  {
+   "source": "Battery/data ও alternative route প্রস্তুত",
+   "target": "البطارية/البيانات ومسار بديل جاهزة"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "مصادر رسمية وموثوقة"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "قد تتغير القواعد — تحقق من المعلومات الرسمية قبل القرارات النهائية"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "هذا الدليل مساعدة للتعلم. اتبع تعليمات المكتب أو المهني المختص للقرارات القانونية/الطبية الشخصية."
+  },
+  {
+   "source": "হোম",
+   "target": "الصفحة الرئيسية"
+  }
+ ]
+}

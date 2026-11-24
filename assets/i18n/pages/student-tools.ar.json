@@ -1,0 +1,214 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "student-tools",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Student Power Tools | আপনার নিহোন",
+   "target": "Student Power Tools | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "← হোম",
+   "target": "← الرئيسية"
+  },
+  {
+   "source": "পড়া, শোনা, JLPT প্রস্তুতি আর জাপানের দৈনন্দিন student life—সবকিছুর জন্য practical tools। আপনার progress এই device-এই save থাকবে।",
+   "target": "أدوات عملية لكل شيء — القراءة والاستماع والتحضير لـ JLPT وحياة الطالب اليومية في اليابان. تقدمك سيبقى محفوظا على هذا الجهاز."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "شرح بالبنغالية"
+  },
+  {
+   "source": "ভুল খাতা",
+   "target": "دفتر الأخطاء"
+  },
+  {
+   "source": "Japanese sentence শুনুন, তারপর একই rhythm-এ repeat করুন। Normal/Slow speed দুটোই আছে।",
+   "target": "استمع إلى جملة يابانية، ثم كررها بنفس الإيقاع. سرعتا Normal/Slow متاحتان."
+  },
+  {
+   "source": "← আগের",
+   "target": "← السابق"
+  },
+  {
+   "source": "পরের →",
+   "target": "التالي →"
+  },
+  {
+   "source": "Shadowing নিয়ম",
+   "target": "قواعد Shadowing"
+  },
+  {
+   "source": "১) আগে না দেখে ২ বার শুনুন। ২) Japanese text দেখে ১ বার শুনুন। ৩) audio-এর সঙ্গে সঙ্গে বলুন। ৪) শেষে text না দেখে বলুন।",
+   "target": "1) استمع مرتين أولا دون النظر. 2) استمع مرة واحدة مع النظر إلى النص الياباني. 3) تحدث مع الصوت. 4) أخيرا، تحدث دون النظر إلى النص."
+  },
+  {
+   "source": "আজকের টার্গেট:",
+   "target": "هدف اليوم:"
+  },
+  {
+   "source": "অন্তত 5 sentence × 3 repeat।",
+   "target": "على الأقل 5 جمل × 3 تكرارات."
+  },
+  {
+   "source": "Again / Hard / Good / Easy অনুযায়ী card-এর পরের review time বদলাবে।",
+   "target": "وقت مراجعة البطاقة التالي سيتغير وفق Again / Hard / Good / Easy."
+  },
+  {
+   "source": "উত্তর দেখুন",
+   "target": "أظهر الإجابة"
+  },
+  {
+   "source": "আজকের Review",
+   "target": "مراجعة اليوم"
+  },
+  {
+   "source": "Starter deck-এ প্রয়োজনীয় N5 vocabulary রাখা হয়েছে। পরে আপনার existing vocabulary pages থেকে deck আরও বড় করা যাবে।",
+   "target": "مفردات N5 الأساسية وُضعت في مجموعة Starter. لاحقا، يمكن توسيع المجموعة أكثر من صفحات مفرداتك الموجودة."
+  },
+  {
+   "source": "コンビニ, 駅, 市役所, 病院—বাস্তব পরিস্থিতিতে কোন উত্তর দিতে হবে practice করুন। ভুল answer অটোমেটিক “ভুল খাতা”-য় যাবে।",
+   "target": "コンビニ, 駅, 市役所, 病院 — تدرب على أي إجابة تعطي في مواقف حقيقية. الإجابات الخاطئة ستذهب تلقائيا إلى «دفتر الأخطاء»."
+  },
+  {
+   "source": "প্রতিটা ভুল answer পরে Mistake Notebook-এ review করতে পারবেন।",
+   "target": "يمكنك مراجعة كل إجابة خاطئة لاحقا في دفتر الأخطاء."
+  },
+  {
+   "source": "আবার শুরু",
+   "target": "ابدأ مرة أخرى"
+  },
+  {
+   "source": "📅 আপনার পড়ার প্ল্যান",
+   "target": "📅 خطة دراستك"
+  },
+  {
+   "source": "Level, exam date, প্রতিদিনের সময় দিলে weekly study plan তৈরি হবে। এখানে target সংখ্যা planning estimate—official JLPT syllabus নয়।",
+   "target": "أعط مستواك وتاريخ الامتحان والوقت اليومي، وستُنشأ خطة دراسة أسبوعية. أرقام الهدف هنا تقديرات تخطيط — ليست منهج JLPT الرسمي."
+  },
+  {
+   "source": "প্রতিদিন কত মিনিট পড়বেন?",
+   "target": "كم دقيقة ستدرس كل يوم؟"
+  },
+  {
+   "source": "সপ্তাহে কয়দিন?",
+   "target": "كم يوما في الأسبوع؟"
+  },
+  {
+   "source": "Plan তৈরি করুন",
+   "target": "أنشئ خطة"
+  },
+  {
+   "source": "আপনার Plan",
+   "target": "خطتك"
+  },
+  {
+   "source": "তথ্য দিয়ে “Plan তৈরি করুন” চাপুন।",
+   "target": "أدخل المعلومات واضغط «أنشئ خطة»."
+  },
+  {
+   "source": "📝 আমার ভুল খাতা",
+   "target": "📝 دفتر أخطائي"
+  },
+  {
+   "source": "Flashcard ও Survival Simulator-এর ভুল এখানে নিজে থেকেই জমবে। Manual note-ও যোগ করতে পারবেন।",
+   "target": "أخطاء Flashcards وSurvival Simulator ستتراكم هنا تلقائيا. يمكنك أيضا إضافة ملاحظات يدوية."
+  },
+  {
+   "source": "সঠিক অর্থ / উত্তর",
+   "target": "المعنى / الإجابة الصحيحة"
+  },
+  {
+   "source": "+ ভুল খাতায় যোগ করুন",
+   "target": "+ أضف إلى دفتر الأخطاء"
+  },
+  {
+   "source": "সব মুছুন",
+   "target": "حذف الكل"
+  },
+  {
+   "source": "কাজের সময়, salary, transport, budget, address, emergency phrase ও city-office checklist—এক জায়গায়।",
+   "target": "ساعات العمل والراتب والنقل والميزانية والعنوان وعبارات الطوارئ وقائمة مكتب المدينة — كلها في مكان واحد."
+  },
+  {
+   "source": "সব baito/part-time job মিলিয়ে shift যোগ করুন। সাধারণ term-এ weekly total দেখাবে। Official school long vacation mode-এ প্রতিদিন 8-hour check করবে।",
+   "target": "أضف ورديات كل أعمال baito/الجزئية معا. في فصل عادي، سيظهر المجموع الأسبوعي. في وضع عطلة المدرسة الطويلة الرسمية، سيتحقق من 8 ساعات كل يوم."
+  },
+  {
+   "source": "+ Shift যোগ করুন",
+   "target": "+ أضف وردية"
+  },
+  {
+   "source": "এই tracker কেবল হিসাবের সহায়ক। আপনার residence card/資格外活動許可-এর শর্তই চূড়ান্ত। সাধারণ comprehensive permission-এ সপ্তাহে 28 ঘণ্টা; স্কুলের নিয়মে নির্ধারিত long vacation-এ দিনে 8 ঘণ্টা পর্যন্ত।",
+   "target": "هذا المتعقب مجرد مساعد حساب. شروط بطاقة إقامتك/資格外活動許可 هي النهائية. بموجب الإذن الشامل المعتاد، 28 ساعة في الأسبوع؛ وخلال عطلة طويلة تحددها قواعد المدرسة، حتى 8 ساعات في اليوم."
+  },
+  {
+   "source": "হিসাব করুন",
+   "target": "احسب"
+  },
+  {
+   "source": "Gross estimate only—tax, insurance, overtime premium ইত্যাদি এখানে ধরা হয়নি।",
+   "target": "تقدير إجمالي فقط — الضريبة والتأمين وأقساط العمل الإضافي وما إلى ذلك غير مشمولة هنا."
+  },
+  {
+   "source": "Romaji নামকে approximate Katakana-তে convert করবে। Official form-এ দেওয়ার আগে school/city office-এ spelling confirm করুন।",
+   "target": "سيحول اسم Romaji إلى Katakana تقريبي. أكد الإملاء في مدرستك/مكتب المدينة قبل وضعه في نموذج رسمي."
+  },
+  {
+   "source": "Katakana করুন",
+   "target": "حول إلى Katakana"
+  },
+  {
+   "source": "অ্যাম্বুলেন্স ডাকুন",
+   "target": "اتصل بسيارة إسعاف"
+  },
+  {
+   "source": "পুলিশ ডাকুন",
+   "target": "اتصل بالشرطة"
+  },
+  {
+   "source": "সাহায্য করুন",
+   "target": "ساعدني"
+  },
+  {
+   "source": "জাপানিজ ভালো বুঝি না",
+   "target": "لا أفهم اليابانية جيدا"
+  },
+  {
+   "source": "Police emergency 110-এর তথ্য Japan National Police Agency-এর official guidance-এ আছে।",
+   "target": "معلومات عن رقم طوارئ الشرطة 110 موجودة في إرشادات Japan National Police Agency الرسمية."
+  },
+  {
+   "source": "নতুন address নির্ধারণ/বাসা পরিবর্তনের পর প্রয়োজনীয় municipal procedure check করুন।",
+   "target": "تحقق من الإجراءات البلدية الضرورية بعد تحديد عنوان جديد/الانتقال."
+  },
+  {
+   "source": "আপনার অবস্থার জন্য city/ward office-এ applicable health insurance procedure confirm করুন।",
+   "target": "أكد إجراء التأمين الصحي المنطبق لحالتك في مكتب المدينة/الحي."
+  },
+  {
+   "source": "My Number-related notice/card procedure check করুন।",
+   "target": "تحقق من إجراءات إشعار/بطاقة My Number."
+  },
+  {
+   "source": "Language school/university-কে নতুন address জানান।",
+   "target": "أخبر مدرسة اللغة/الجامعة بعنوانك الجديد."
+  },
+  {
+   "source": "Immigration Services Agency অনুযায়ী mid-to-long-term resident-এর নতুন residence address notification সাধারণত residence নির্ধারণ/নতুন residence-এ move করার 14 দিনের মধ্যে municipal office-এ করতে হয়।",
+   "target": "وفق Immigration Services Agency، المقيمون متوسطو إلى طويلو الأمد عموما يجب أن يخطروا المكتب البلدي بعنوان إقامة جديد خلال 14 يوما من تحديد إقامة/الانتقال إلى إقامة جديدة."
+  },
+  {
+   "source": "আপনার নিহোন · Student Power Tools · Data এই browser/device-এর localStorage-এ save হয়।",
+   "target": "আপনার নিহোন · Student Power Tools · تُحفظ البيانات في localStorage لهذا المتصفح/الجهاز."
+  }
+ ]
+}

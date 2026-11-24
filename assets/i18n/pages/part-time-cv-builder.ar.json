@@ -1,0 +1,142 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "part-time-cv-builder",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "পার্ট-টাইম Japanese CV",
+   "target": "سيرة ذاتية يابانية لعمل جزئي"
+  },
+  {
+   "source": "আপনার দেওয়া 履歴書 form-এর structure অনুযায়ী। Japanese label-এর নিচে বাংলা explanation থাকবে; final CV/PDF হবে clean Japanese format.",
+   "target": "وفق بنية نموذج 履歴書 الذي قدمته. سيظهر شرح بالبنغالية تحت كل تسمية يابانية؛ والسيرة الذاتية/PDF النهائية ستكون بتنسيق ياباني نظيف."
+  },
+  {
+   "source": "(স্কুলের সময়),",
+   "target": "(ساعات المدرسة), "
+  },
+  {
+   "source": "(কাজ শুরুর তারিখ) এবং",
+   "target": "(تاريخ بدء العمل) و"
+  },
+  {
+   "source": "আলাদা করে রাখা হয়েছে।",
+   "target": "تم الاحتفاظ بها منفصلة."
+  },
+  {
+   "source": "ব্যক্তিগত তথ্য",
+   "target": "معلومات شخصية"
+  },
+  {
+   "source": "ছবি নির্বাচন",
+   "target": "اختر صورة"
+  },
+  {
+   "source": "সাধারণত 4cm × 3cm portrait photo ব্যবহার করুন।",
+   "target": "عادة استخدم صورة بورتريه 4cm × 3cm."
+  },
+  {
+   "source": "নামের হিরাগানা/ফুরিগানা",
+   "target": "هيراغانا/فوريغانا لاسمك"
+  },
+  {
+   "source": "পুরো নাম",
+   "target": "الاسم الكامل"
+  },
+  {
+   "source": "জন্মতারিখ",
+   "target": "تاريخ الميلاد"
+  },
+  {
+   "source": "লিঙ্গ — ঐচ্ছিক",
+   "target": "الجنس — اختياري"
+  },
+  {
+   "source": "ঠিকানার হিরাগানা",
+   "target": "هيراغانا لعنوانك"
+  },
+  {
+   "source": "পোস্টাল কোড",
+   "target": "الرمز البريدي"
+  },
+  {
+   "source": "CV-এর তারিখ — আজকের তারিখ নিজে বসবে",
+   "target": "تاريخ السيرة الذاتية — سيُملأ تاريخ اليوم تلقائيا"
+  },
+  {
+   "source": "বর্তমান ঠিকানা",
+   "target": "العنوان الحالي"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "بريد إلكتروني"
+  },
+  {
+   "source": "ফোন নম্বর",
+   "target": "الهاتف"
+  },
+  {
+   "source": "/ শিক্ষা ও কাজ",
+   "target": "/ التعليم والعمل"
+  },
+  {
+   "source": "＋ নতুন লাইন",
+   "target": "＋ سطر جديد"
+  },
+  {
+   "source": "/ যোগ্যতা",
+   "target": "/ المؤهلات"
+  },
+  {
+   "source": "＋ যোগ্যতা যোগ করুন",
+   "target": "＋ أضف مؤهلا"
+  },
+  {
+   "source": "আবেদন ও কাজের সময়",
+   "target": "التقديم وساعات العمل"
+  },
+  {
+   "source": "কেন এই কাজ করতে চান, skill ও ভালো দিক",
+   "target": "لماذا تريد هذا العمل، مهاراتك ونقاط قوتك"
+  },
+  {
+   "source": "নতুন Student",
+   "target": "طالب جديد"
+  },
+  {
+   "source": "🏫 স্কুলের সময় ও কাজ শুরুর তারিখ",
+   "target": "🏫 ساعات المدرسة وتاريخ بدء العمل"
+  },
+  {
+   "source": "কোন দিন স্কুল থাকে",
+   "target": "أي أيام لديك مدرسة"
+  },
+  {
+   "source": "স্কুল শুরু",
+   "target": "تبدأ المدرسة"
+  },
+  {
+   "source": "স্কুল শেষ",
+   "target": "تنتهي المدرسة"
+  },
+  {
+   "source": "কোন তারিখ থেকে কাজ শুরু করতে পারবেন",
+   "target": "من أي تاريخ يمكنك بدء العمل"
+  },
+  {
+   "source": "স্কুলের দিন ও সময় দিলে Japanese sentence এখানে তৈরি হবে।",
+   "target": "إذا أدخلت أيام وساعات مدرستك، ستتكون جملة يابانية هنا."
+  },
+  {
+   "source": "যে দিন/সময় কাজ করতে পারবেন",
+   "target": "الأيام/الأوقات التي يمكنك العمل فيها"
+  },
+  {
+   "source": "কাজের ধরন, শাখা, সময় বা অন্যান্য অনুরোধ",
+   "target": "نوع العمل أو الفرع أو الساعات أو طلبات أخرى"
+  }
+ ]
+}

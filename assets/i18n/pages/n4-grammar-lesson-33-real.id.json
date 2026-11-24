@@ -1,0 +1,458 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "n4-grammar-lesson-33-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "মূল কনটেন্টে যান",
+   "target": "Lewati ke konten utama"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "Lesson 33 · ইচ্ছা ও শর্ত",
+   "target": "Lesson 33 · Niat dan Kondisi"
+  },
+  {
+   "source": "সব Lesson",
+   "target": "Semua Lesson"
+  },
+  {
+   "source": "ইচ্ছা ও শর্ত",
+   "target": "Keinginan & Kondisi"
+  },
+  {
+   "source": "ধাপ ২ · 31–35",
+   "target": "Tahap 2 · 31–35"
+  },
+  {
+   "source": "কঠোর নির্দেশ/নিষেধ চিনে নেওয়া, সাইনবোর্ডের লেখা ব্যাখ্যা করা এবং কারো বার্তা নির্ভুলভাবে পৌঁছে দেওয়া।",
+   "target": "Mengenali perintah dan larangan yang ketat, menjelaskan tulisan pada papan tanda, dan menyampaikan pesan seseorang secara akurat."
+  },
+  {
+   "source": "4টি বিস্তারিত grammar block",
+   "target": "4 blok grammar terperinci"
+  },
+  {
+   "source": "11টি Japanese example",
+   "target": "11 contoh Japanese"
+  },
+  {
+   "source": "4টি ব্যাখ্যাসহ practice",
+   "target": "4 soal latihan dengan penjelasan"
+  },
+  {
+   "source": "Offline, mobile ও print friendly",
+   "target": "Offline, ramah perangkat seluler dan cetak"
+  },
+  {
+   "source": "あ Reading লুকান",
+   "target": "Sembunyikan あ Reading"
+  },
+  {
+   "source": "এখনো সম্পন্ন নয়",
+   "target": "Belum selesai"
+  },
+  {
+   "source": "✓ সম্পন্ন করুন",
+   "target": "✓ Tandai Selesai"
+  },
+  {
+   "source": "Lesson 33 · লক্ষ্য",
+   "target": "Lesson 33 · Tujuan"
+  },
+  {
+   "source": "এই Lesson শেষে যা পারবেন",
+   "target": "Apa yang akan dapat Anda lakukan setelah pelajaran ini"
+  },
+  {
+   "source": "命令形 ও 禁止形 দৈনন্দিন ভদ্র অনুরোধ নয়; জরুরি অবস্থা, সাইন, ক্রীড়া, সামরিক/কঠোর ভাষা বা উদ্ধৃত নির্দেশে বেশি আসে। Lesson 33-এর বড় অংশ হলো—নিজে অকারণে কঠোর না হয়ে এই রূপ চিনতে শেখা এবং と দিয়ে লেখা/বার্তা উদ্ধৃত করা।",
+   "target": "命令形 dan 禁止形 bukanlah permintaan sopan sehari-hari; keduanya lebih sering muncul dalam keadaan darurat, tanda, olahraga, bahasa militer atau bahasa yang ketat, dan instruksi yang dikutip. Bagian utama Lesson 33 adalah belajar mengenali bentuk-bentuk ini tanpa bersikap keras sendiri tanpa sebab, dan mengutip tulisan dan pesan dengan と."
+  },
+  {
+   "source": "তিন group-এর imperative ও prohibitive form তৈরি করবেন",
+   "target": "Anda akan dapat membuat bentuk imperatif dan prohibitif dari ketiga kelompok"
+  },
+  {
+   "source": "কখন command form ব্যবহার অনুচিত তা বুঝবেন",
+   "target": "Anda akan memahami kapan tidak tepat menggunakan bentuk perintah"
+  },
+  {
+   "source": "সাইন বা শব্দ 〜と書いてあります／〜と読みます দিয়ে ব্যাখ্যা করবেন",
+   "target": "Anda akan dapat menjelaskan tanda atau kata dengan 〜と書いてあります／〜と読みます"
+  },
+  {
+   "source": "〜と言っていました ও 〜と伝えていただけませんか দিয়ে বার্তা জানাবেন",
+   "target": "Anda akan dapat menyampaikan pesan dengan 〜と言っていました dan 〜と伝えていただけませんか"
+  },
+  {
+   "source": "খুব শক্ত ‘কর!’ নির্দেশ",
+   "target": "Perintah \"Lakukan!\" yang sangat kuat"
+  },
+  {
+   "source": "গঠন",
+   "target": "Pembentukan"
+  },
+  {
+   "source": "ধরন",
+   "target": "Jenis"
+  },
+  {
+   "source": "উদাহরণ",
+   "target": "Contoh"
+  },
+  {
+   "source": "শেষ う-row → え-row",
+   "target": "Baris う terakhir → baris え"
+  },
+  {
+   "source": "る বাদ＋ろ",
+   "target": "Buang る＋ろ"
+  },
+  {
+   "source": "অনিয়মিত",
+   "target": "Tidak beraturan"
+  },
+  {
+   "source": "লিখিত/কঠোর বিকল্প",
+   "target": "Alternatif tertulis / ketat"
+  },
+  {
+   "source": "座りなさい（উর্ধ্বতন→অধস্তন）",
+   "target": "座りなさい (atasan → bawahan)"
+  },
+  {
+   "source": "বিস্তারিত ব্যাখ্যা",
+   "target": "Penjelasan Terperinci"
+  },
+  {
+   "source": "命令形 status-neutral নয়—শ্রোতার ওপর কর্তৃত্ব বা জরুরি বিপদ বোঝায়। আগুনে 逃げろ！, খেলায় 頑張れ！, স্লোগান বা quoted instruction-এ স্বাভাবিক।",
+   "target": "命令形 tidak netral status — ia menyiratkan otoritas atas pendengar atau bahaya yang mendesak. Dalam kebakaran, 逃げろ！; dalam olahraga, 頑張れ！; dalam slogan atau instruksi yang dikutip, ia natural."
+  },
+  {
+   "source": "দোকান, অফিস, অপরিচিত বা শিক্ষককে নিজের থেকে ব্যবহার করবেন না। ভদ্র নির্দেশে Vてください, নরম অনুরোধে Vていただけませんか।",
+   "target": "Jangan menggunakannya sendiri kepada toko, kantor, orang asing, atau guru. Untuk instruksi yang sopan, Vてください; untuk permintaan lembut, Vていただけませんか."
+  },
+  {
+   "source": "নারী/পুরুষ উভয়ই command বুঝতে পারেন; textbook-এর পুরনো ‘পুরুষের ভাষা’ সরলীকরণে আটকে যাবেন না—মূল বিষয় register ও power relation।",
+   "target": "Baik wanita maupun pria dapat memahami perintah; jangan terjebak pada penyederhanaan buku teks lama tentang \"bahasa pria\" — poin sebenarnya adalah register dan hubungan kekuasaan."
+  },
+  {
+   "source": "যা মনে রাখবেন",
+   "target": "Yang Perlu Diingat"
+  },
+  {
+   "source": "する→しろ; せよ-ও আনুষ্ঠানিক লিখিত নির্দেশে দেখা যায়।",
+   "target": "する→しろ; せよ juga terlihat dalam instruksi tertulis formal."
+  },
+  {
+   "source": "頑張れ একটি উৎসাহমূলক fixed use; সব imperative রাগ বোঝায় না।",
+   "target": "頑張れ adalah penggunaan tetap yang memberi semangat; tidak setiap imperatif menyatakan kemarahan."
+  },
+  {
+   "source": "বিপদ! থামো!",
+   "target": "Bahaya! Berhenti!"
+  },
+  {
+   "source": "শেষ পর্যন্ত চেষ্টা চালাও!",
+   "target": "Teruslah berusaha sampai akhir!"
+  },
+  {
+   "source": "শিক্ষক শিক্ষার্থীদের ‘তাড়াতাড়ি করো’ বলেছেন।",
+   "target": "Guru berkata kepada para siswa, \"Cepatlah\"."
+  },
+  {
+   "source": "✕ ভুল",
+   "target": "✕ Salah"
+  },
+  {
+   "source": "✓ সঠিক",
+   "target": "✓ Benar"
+  },
+  {
+   "source": "কেন:",
+   "target": "Mengapa:"
+  },
+  {
+   "source": "সেবা-কর্মীকে imperative অপমানজনক; Vてください ব্যবহার করুন।",
+   "target": "Imperatif bersifat menghina bagi pekerja layanan; gunakan Vてください."
+  },
+  {
+   "source": "খুব শক্ত ‘করো না!’ নিষেধ",
+   "target": "Larangan \"Jangan lakukan!\" yang sangat kuat"
+  },
+  {
+   "source": "সব group",
+   "target": "Semua kelompok"
+  },
+  {
+   "source": "Dictionary form-এর পরে な বসে। এখানে な sentence-ending prohibition; な-বিশেষণের な নয়।",
+   "target": "な ditempatkan setelah bentuk kamus. Di sini な adalah larangan di akhir kalimat; ini bukan な dari な-adjective."
+  },
+  {
+   "source": "সাইন, জরুরি সতর্কতা, কঠোর কর্তৃত্ব বা quoted speech-এ আসে। দৈনন্দিন ভদ্র নিষেধে Vないでください বা Vてはいけません ব্যবহার করুন।",
+   "target": "Ia muncul pada tanda, dalam peringatan mendesak, di bawah otoritas ketat, atau dalam tuturan yang dikutip. Untuk larangan sopan sehari-hari, gunakan Vないでください atau Vてはいけません."
+  },
+  {
+   "source": "ます-stem নয়: 入りな ✕ (এটি অন্য রূপের সঙ্গে গুলিয়ে যায়); 入るな ✓।",
+   "target": "Bukan stem ます: 入りな ✕ (ini tertukar dengan bentuk lain); 入るな ✓."
+  },
+  {
+   "source": "এখানে ঢুকবে না।",
+   "target": "Jangan masuk ke sini."
+  },
+  {
+   "source": "হাল ছেড়ো না!",
+   "target": "Jangan menyerah!"
+  },
+  {
+   "source": "সাইনবোর্ডে ‘ছবি তুলবে না’ লেখা আছে।",
+   "target": "Di papan tanda tertulis \"Dilarang memotret\"."
+  },
+  {
+   "source": "লেখা উদ্ধৃত করা, পড়ার ধরণ ও শব্দের অর্থ ব্যাখ্যা করা",
+   "target": "Mengutip tulisan, menjelaskan cara membacanya dan arti sebuah kata"
+  },
+  {
+   "source": "লেখা",
+   "target": "Menulis"
+  },
+  {
+   "source": "পড়া",
+   "target": "Membaca"
+  },
+  {
+   "source": "অর্থ",
+   "target": "Arti"
+  },
+  {
+   "source": "Quotation particle と-এর আগে লেখা/শব্দটি হুবহু আসে। と書いてあります result state—কোথাও সেই লেখা দেওয়া আছে।",
+   "target": "Tulisan atau kata datang persis apa adanya sebelum partikel kutipan と. と書いてあります adalah result state — tulisan itu ada di suatu tempat."
+  },
+  {
+   "source": "〜と読みます pronunciation/reading জানায়। 〜という意味です পুরো শব্দ বা বাক্যের অর্থ ব্যাখ্যা করে; という-এর আগে plain content।",
+   "target": "〜と読みます memberikan pelafalan / cara membaca. 〜という意味です menjelaskan arti keseluruhan kata atau kalimat; konten plain datang sebelum という."
+  },
+  {
+   "source": "সাইন উদ্ধৃত করলে command নিজে শ্রোতাকে দেওয়া হচ্ছে না; কেবল লেখা report করা হচ্ছে।",
+   "target": "Ketika Anda mengutip sebuah tanda, perintah itu tidak sedang Anda berikan kepada pendengar; Anda hanya melaporkan tulisannya."
+  },
+  {
+   "source": "স্থান に: ドアに「押す」と書いてあります。 উদ্ধৃতি と।",
+   "target": "Tempat に: ドアに「押す」と書いてあります. Kutipan と."
+  },
+  {
+   "source": "দরজায় ‘ঠেলুন’ লেখা আছে।",
+   "target": "\"Tekan\" tertulis di pintu."
+  },
+  {
+   "source": "এই কানজিটি ‘কিনএন’ পড়ে।",
+   "target": "Kanji ini dibaca \"kin'en\"."
+  },
+  {
+   "source": "立入禁止 মানে প্রবেশ করা নিষেধ।",
+   "target": "立入禁止 berarti \"Dilarang masuk\"."
+  },
+  {
+   "source": "লেখার content quotation と নেয়; を নয়।",
+   "target": "Konten tulisan mengambil kutipan と, bukan を."
+  },
+  {
+   "source": "কারো আগের কথা report করা এবং বার্তা পৌঁছাতে অনুরোধ",
+   "target": "Melaporkan apa yang dikatakan seseorang sebelumnya dan meminta pesan diteruskan"
+  },
+  {
+   "source": "বার্তার অনুরোধ",
+   "target": "Permintaan untuk meneruskan pesan"
+  },
+  {
+   "source": "言いました একটি নির্দিষ্ট utterance বলেছে; 言っていました আগের বলা বার্তা/তথ্য এখন report করছি—এমন অনুভূতি।",
+   "target": "言いました menyatakan satu ucapan tertentu; 言っていました memiliki nuansa melaporkan sekarang pesan atau informasi yang dikatakan sebelumnya."
+  },
+  {
+   "source": "伝える মানে খবর পৌঁছে দেওয়া। Xさんに〜と伝えていただけませんか = X-কে কি দয়া করে … জানাবেন? Person-এর পরে に, message-এর পরে と।",
+   "target": "伝える berarti menyampaikan kabar. Xさんに〜と伝えていただけませんか = bisakah Anda memberi tahu X bahwa …? に datang setelah orangnya, と setelah pesannya."
+  },
+  {
+   "source": "Quoted clause plain style নেয়; polite কথাকে report করলেও quote paraphrase করলে 明日は休むと言っていました। হুবহু quote হলে 「明日は休みます」と…。",
+   "target": "Klausa yang dikutip mengambil gaya plain; bahkan ketika melaporkan tuturan sopan, jika Anda memparafrasekan kutipannya menjadi 明日は休むと言っていました. Jika kutipan persis: 「明日は休みます」と…."
+  },
+  {
+   "source": "যাকে বলবেন: 人に; কী বলবেন: 内容と।",
+   "target": "Kepada siapa Anda akan mengatakannya: 人に; apa yang akan Anda katakan: 内容と."
+  },
+  {
+   "source": "ইয়ামাদা বলেছেন তিনি মিটিংয়ে থাকতে পারবেন না।",
+   "target": "Yamada mengatakan bahwa ia tidak dapat menghadiri rapat."
+  },
+  {
+   "source": "বিভাগীয় প্রধানকে ট্রেন দেরি করছে—এ কথা জানাবেন কি?",
+   "target": "Bisakah Anda memberi tahu kepala seksi bahwa kereta terlambat?"
+  },
+  {
+   "source": "বার্তার recipient に নেয়, を নয়।",
+   "target": "Penerima pesan mengambil に, bukan を."
+  },
+  {
+   "source": "এক নজরে পার্থক্য",
+   "target": "Perbedaan dalam Sekilas"
+  },
+  {
+   "source": "কোন পরিস্থিতিতে কোনটি?",
+   "target": "Yang mana dalam situasi apa?"
+  },
+  {
+   "source": "রূপ",
+   "target": "Bentuk"
+  },
+  {
+   "source": "ব্যবহার",
+   "target": "Penggunaan"
+  },
+  {
+   "source": "ভদ্র বিকল্প",
+   "target": "Alternatif sopan"
+  },
+  {
+   "source": "জরুরি/কঠোর ‘যাও!’",
+   "target": "\"Pergi!\" yang mendesak / ketat"
+  },
+  {
+   "source": "কঠোর ‘যেও না!’",
+   "target": "\"Jangan pergi!\" yang ketat"
+  },
+  {
+   "source": "লেখা report",
+   "target": "Melaporkan tulisan"
+  },
+  {
+   "source": "কঠোরতা বক্তার নয়",
+   "target": "Keketatan itu bukan dari penutur"
+  },
+  {
+   "source": "বার্তা পৌঁছাতে অনুরোধ",
+   "target": "Permintaan untuk meneruskan pesan"
+  },
+  {
+   "source": "খুব ভদ্র",
+   "target": "Sangat sopan"
+  },
+  {
+   "source": "বাস্তব কথোপকথন",
+   "target": "Percakapan nyata"
+  },
+  {
+   "source": "অফিসে ফোনের বার্তা",
+   "target": "Pesan Telepon di Kantor"
+  },
+  {
+   "source": "সাতো আছেন কি?",
+   "target": "Apakah Sato ada?"
+  },
+  {
+   "source": "এখন বাইরে গেছেন।",
+   "target": "Ia sedang keluar sekarang."
+  },
+  {
+   "source": "তাহলে মিটিং তিনটা থেকে—এ কথা জানাবেন কি?",
+   "target": "Kalau begitu, bisakah Anda memberi tahu beliau bahwa rapatnya mulai pukul tiga?"
+  },
+  {
+   "source": "জি। ফিরলে জানাব।",
+   "target": "Tentu. Saya akan memberi tahu beliau ketika beliau kembali."
+  },
+  {
+   "source": "নিজে যাচাই করুন",
+   "target": "Periksa Diri Anda Sendiri"
+  },
+  {
+   "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+   "target": "Latihan dengan jawaban dan penjelasan"
+  },
+  {
+   "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+   "target": "Pertama tulis jawaban di buku catatan Anda, lalu ketuk pertanyaan untuk memeriksa jawaban dan alasannya."
+  },
+  {
+   "source": "1. 話す-এর imperative form বানান।",
+   "target": "1. Buat bentuk imperatif dari 話す."
+  },
+  {
+   "source": "2. ‘এখানে গাড়ি থামিও না!’—prohibitive বলুন।",
+   "target": "2. \"Jangan menghentikan mobil di sini!\" — ucapkan dalam bentuk prohibitif."
+  },
+  {
+   "source": "3. ‘সাইনবোর্ডে “প্রবেশদ্বার” লেখা আছে’ বলুন।",
+   "target": "3. Ucapkan: \"'Pintu masuk' tertulis di papan tanda.\""
+  },
+  {
+   "source": "লেখার content＋と書いてあります।",
+   "target": "Konten tulisan + と書いてあります."
+  },
+  {
+   "source": "4. ‘ম্যানেজারকে আমি দেরি করব বলে জানাবেন কি?’ বলুন।",
+   "target": "4. Ucapkan: \"Bisakah Anda memberi tahu manajer bahwa saya akan terlambat?\""
+  },
+  {
+   "source": "এক বাক্যে Master Key",
+   "target": "Kunci Utama dalam Satu Kalimat"
+  },
+  {
+   "source": "命令形/禁止形 আগে চিনুন, পরে ব্যবহার করুন—এগুলো শক্ত register। লেখা/পড়া/অর্থ/বার্তা সবকিছুর content-কে quotation particle と দিয়ে বেঁধে দিন।",
+   "target": "Pertama kenali 命令形／禁止形, gunakan kemudian — keduanya adalah register yang kuat. Ikat konten tulisan, bacaan, arti, dan pesan dengan partikel kutipan と."
+  },
+  {
+   "source": "বিশ্বস্ত রেফারেন্স",
+   "target": "Referensi Tepercaya"
+  },
+  {
+   "source": "সিলেবাস ও যাচাই",
+   "target": "Silabus dan Verifikasi"
+  },
+  {
+   "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+   "target": "Pelajaran mandiri dalam bahasa Indonesia ini dibuat dengan menyelaraskan urutan pelajaran Minna no Nihongo II, cakupan resmi JLPT N4, dan sumber belajar Japan Foundation. Contoh dan penjelasannya dalam bahasa Indonesia ditulis baru."
+  },
+  {
+   "source": "← আগের Lesson 32",
+   "target": "← Lesson 32 Sebelumnya"
+  },
+  {
+   "source": "পরের Lesson 34 →",
+   "target": "Lesson 34 Berikutnya →"
+  },
+  {
+   "source": "Lesson সূচি",
+   "target": "Indeks Lesson"
+  },
+  {
+   "source": "শেখার লক্ষ্য",
+   "target": "Tujuan belajar"
+  },
+  {
+   "source": "পার্থক্য টেবিল",
+   "target": "Tabel Perbandingan"
+  },
+  {
+   "source": "কথোপকথন",
+   "target": "Percakapan"
+  },
+  {
+   "source": "Course progress লোড হচ্ছে…",
+   "target": "Progress kursus sedang dimuat…"
+  },
+  {
+   "source": "আপনার নিহোন · N4 Grammar 26–50",
+   "target": "আপনার নিহোন · N4 Grammar 26–50"
+  },
+  {
+   "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+   "target": "Edisi belajar mandiri bahasa Indonesia yang gratis dan terperinci untuk pelajar."
+  }
+ ]
+}

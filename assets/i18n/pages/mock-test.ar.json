@@ -1,0 +1,118 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "mock-test",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "JLPT N5 N4 N3 Mock Test Center | আপনার নিহোন",
+   "target": "JLPT N5 N4 N3 Mock Test Center | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "হোমে ফিরুন",
+   "target": "العودة إلى الصفحة الرئيسية"
+  },
+  {
+   "source": "N5, N4 ও N3-এ ১০টি করে ৩০টি পূর্ণ মক পরীক্ষা। বাংলা উত্তর ও ব্যাখ্যা, জাপানি অডিও, টাইমার এবং নিজের নামে মক সনদ।",
+   "target": "30 اختبارًا تجريبيًا كاملًا بواقع 10 لكل من N5 وN4 وN3. إجابات وشروح بالبنغالية، صوت ياباني، مؤقت، وشهادة تجريبية باسمك."
+  },
+  {
+   "source": "আলাদা প্রশ্নের সেট",
+   "target": "مجموعات أسئلة منفصلة"
+  },
+  {
+   "source": "৩টি Level",
+   "target": "3 مستويات"
+  },
+  {
+   "source": "উত্তর রিভিউ",
+   "target": "مراجعة الإجابات"
+  },
+  {
+   "source": "আপনার লেভেল বাছাই করুন",
+   "target": "اختر مستواك"
+  },
+  {
+   "source": "প্রতিটি লেভেলে ১০টি পূর্ণ সেট। লেভেল বেছে এখানেই পরীক্ষা শুরু করুন।",
+   "target": "10 مجموعات كاملة لكل مستوى. اختر مستواك وابدأ الاختبار هنا."
+  },
+  {
+   "source": "20 + 40 + 30 = 90 মিনিট",
+   "target": "20 + 40 + 30 = 90 دقيقة"
+  },
+  {
+   "source": "21 + 22 + 24 = 67 প্রশ্ন",
+   "target": "21 + 22 + 24 = 67 سؤالًا"
+  },
+  {
+   "source": "সোর্স ও নিজস্ব প্রশ্ন · জাপানি অডিও",
+   "target": "أسئلة من مصادر وأصلية · صوت ياباني"
+  },
+  {
+   "source": "N5 Mock Test খুলুন",
+   "target": "افتح اختبار N5 التجريبي"
+  },
+  {
+   "source": "25 + 55 + 35 = 115 মিনিট",
+   "target": "25 + 55 + 35 = 115 دقيقة"
+  },
+  {
+   "source": "28 + 29 + 28 = 85 প্রশ্ন",
+   "target": "28 + 29 + 28 = 85 سؤالًا"
+  },
+  {
+   "source": "N4 Mock Test খুলুন",
+   "target": "افتح اختبار N4 التجريبي"
+  },
+  {
+   "source": "30 + 70 + 40 = 140 মিনিট",
+   "target": "30 + 70 + 40 = 140 دقيقة"
+  },
+  {
+   "source": "35 + 39 + 28 = 102 প্রশ্ন",
+   "target": "35 + 39 + 28 = 102 سؤال"
+  },
+  {
+   "source": "N3 Mock Test খুলুন",
+   "target": "افتح اختبار N3 التجريبي"
+  },
+  {
+   "source": "প্রশ্ন ও অডিও:",
+   "target": "الأسئلة والصوت:"
+  },
+  {
+   "source": "JapaneseTest4You এবং আপনার নিহোনের নিজস্ব প্রশ্ন। নতুন নিজস্ব লিসেনিংয়ে জাপানি কৃত্রিম কণ্ঠ। JLPT-এর সময় ও পাসসীমা অনুসরণ করা হয়েছে; ১৮০ নম্বরের স্কোর অনুশীলনের।",
+   "target": "أسئلة أصلية من JapaneseTest4You وআপনার নিহোন. صوت ياباني اصطناعي مستخدم في الاستماع الأصلي الجديد. يتم اتباع توقيت JLPT وحدود النجاح؛ نتيجة تدريبية من 180 درجة."
+  },
+  {
+   "source": "উৎস ও ক্রেডিট",
+   "target": "المصدر والاعتمادات"
+  },
+  {
+   "source": "© ২০২৬ আপনার নিহোন · JLPT Mock Test Center",
+   "target": "© 2026 আপনার নিহোন · JLPT Mock Test Center"
+  },
+  {
+   "source": "হোম",
+   "target": "الصفحة الرئيسية"
+  },
+  {
+   "source": "কুইজ",
+   "target": "اختبار"
+  },
+  {
+   "source": "গাইড",
+   "target": "دليل"
+  },
+  {
+   "source": "মক টেস্ট",
+   "target": "اختبار تجريبي"
+  }
+ ]
+}

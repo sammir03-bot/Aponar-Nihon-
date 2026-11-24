@@ -1,0 +1,398 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "japan-train-platform-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "ট্রেন ও Platform সম্পূর্ণ গাইড | আপনার নিহোন",
+   "target": "Panduan Lengkap Kereta & Platform | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "Japan Life Guide"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "Semua Panduan"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "Setelah Kedatangan"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "Tempat Tinggal & Kehidupan Sehari-hari"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "Kereta & Platform"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Menggunakan Google Maps"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "Pekerjaan Paruh Waktu"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "Bantuan Darurat"
+  },
+  {
+   "source": "ট্রেন ও Platform সম্পূর্ণ গাইড",
+   "target": "Panduan Lengkap Kereta & Platform"
+  },
+  {
+   "source": "লাইন, direction, Local/Rapid, IC card, transfer, platform ও exit—জাপানের ট্রেনে একা চলার জন্য পানির মতো ব্যাখ্যা।",
+   "target": "Jalur, direction, Local/Rapid, IC card, transfer, platform, dan exit—penjelasan sejernih air untuk bepergian sendiri dengan kereta Jepang."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "Penjelasan Bahasa Bengali"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "Kalimat Bahasa Jepang"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "Langkah Praktis"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "Progres Anda"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 Selesai"
+  },
+  {
+   "source": "সমস্যা",
+   "target": "Masalah"
+  },
+  {
+   "source": "একটি Route-এর ৭টি তথ্য পড়ুন",
+   "target": "Baca 7 informasi untuk satu rute"
+  },
+  {
+   "source": "শুধু সময় দেখে ট্রেনে উঠবেন না",
+   "target": "Jangan naik kereta hanya dengan melihat waktu"
+  },
+  {
+   "source": "স্ক্রিনে যা দেখবেন",
+   "target": "Apa yang akan Anda lihat di layar"
+  },
+  {
+   "source": "অর্থ",
+   "target": "Arti"
+  },
+  {
+   "source": "আপনার কাজ",
+   "target": "Tugas Anda"
+  },
+  {
+   "source": "কোন railway line",
+   "target": "Jalur kereta mana"
+  },
+  {
+   "source": "রঙ ও নাম মিলান",
+   "target": "Cocokkan warna dan nama"
+  },
+  {
+   "source": "ট্রেন কোন দিক যাচ্ছে",
+   "target": "Kereta pergi ke arah mana"
+  },
+  {
+   "source": "শেষ station/major station দেখুন",
+   "target": "Lihat stasiun terakhir/stasiun utama"
+  },
+  {
+   "source": "ছাড়ার সময়",
+   "target": "Waktu keberangkatan"
+  },
+  {
+   "source": "বর্তমান সময়ের সঙ্গে মিলান",
+   "target": "Cocokkan dengan waktu saat ini"
+  },
+  {
+   "source": "কোন platform",
+   "target": "Platform mana"
+  },
+  {
+   "source": "station board-এ আবার নিশ্চিত",
+   "target": "Konfirmasi lagi di papan stasiun"
+  },
+  {
+   "source": "আপনার station-এ থামে কি না",
+   "target": "Apakah berhenti di stasiun Anda atau tidak"
+  },
+  {
+   "source": "লাইন বদল",
+   "target": "Berganti jalur"
+  },
+  {
+   "source": "station name ও walking time দেখুন",
+   "target": "Lihat nama stasiun dan waktu berjalan kaki"
+  },
+  {
+   "source": "স্টেশন থেকে বের হওয়ার gate",
+   "target": "Gerbang untuk keluar dari stasiun"
+  },
+  {
+   "source": "destination-এর কাছের exit নিন",
+   "target": "Ambil pintu keluar yang paling dekat dengan tujuan Anda"
+  },
+  {
+   "source": "স্টেশনের ভিতর Sign পড়া",
+   "target": "Membaca Papan Petunjuk di dalam Stasiun"
+  },
+  {
+   "source": "Gate থেকে platform পর্যন্ত",
+   "target": "Dari gerbang ke platform"
+  },
+  {
+   "source": "Line symbol খুঁজুন",
+   "target": "Temukan simbol jalur"
+  },
+  {
+   "source": "যেমন JY, JB, M ইত্যাদি station code ও line color আপনাকে দ্রুত সঠিক sign ধরতে সাহায্য করে।",
+   "target": "Kode stasiun dan warna jalur seperti JY, JB, M membantu Anda dengan cepat menemukan papan petunjuk yang tepat."
+  },
+  {
+   "source": "“For ○○” বোর্ড দেখুন",
+   "target": "Lihat papan “For ○○”"
+  },
+  {
+   "source": "একই line-এর opposite direction আলাদা platform-এ হতে পারে।",
+   "target": "Arah berlawanan pada jalur yang sama mungkin dari platform yang berbeda."
+  },
+  {
+   "source": "Platform board-এ train type মিলান",
+   "target": "Cocokkan jenis kereta di papan platform"
+  },
+  {
+   "source": "Local（各駅停車）, Rapid（快速）, Express（急行）-এর stop আলাদা হতে পারে।",
+   "target": "Pemberhentian untuk Local（各駅停車）, Rapid（快速）, Express（急行） mungkin berbeda."
+  },
+  {
+   "source": "IC Card দিয়ে ওঠা-নামা",
+   "target": "Naik dan Turun dengan IC Card"
+  },
+  {
+   "source": "Tap, balance ও fare adjustment",
+   "target": "Tap, saldo, dan penyesuaian tarif"
+  },
+  {
+   "source": "প্রবেশে একবার tap",
+   "target": "Tap sekali saat masuk"
+  },
+  {
+   "source": "Gate-এর blue/IC অংশে card স্থিরভাবে ছোঁয়ান। Beep ও gate open হলে যান।",
+   "target": "Tempelkan kartu dengan stabil pada bagian biru/IC gerbang. Pergilah saat berbunyi bip dan gerbang terbuka."
+  },
+  {
+   "source": "Transfer gate বুঝুন",
+   "target": "Pahami gerbang transfer"
+  },
+  {
+   "source": "কিছু transfer-এ gate থেকে বের হলেও নির্দিষ্ট transfer gate/সময় থাকতে পারে। Sign অনুসরণ করুন।",
+   "target": "Untuk beberapa transfer, meskipun Anda keluar dari gerbang, mungkin ada gerbang/waktu transfer yang ditentukan. Ikuti papan petunjuk."
+  },
+  {
+   "source": "বের হওয়ার সময় আবার tap",
+   "target": "Tap lagi saat keluar"
+  },
+  {
+   "source": "ভাড়া balance থেকে কাটা হবে। Balance কম হলে fare adjustment/charge machine ব্যবহার করুন।",
+   "target": "Tarif akan dipotong dari saldo Anda. Jika saldo Anda rendah, gunakan mesin penyesuaian tarif/isi ulang."
+  },
+  {
+   "source": "এক card এক ব্যক্তি",
+   "target": "Satu kartu, satu orang"
+  },
+  {
+   "source": "একই IC card দিয়ে একসঙ্গে দুইজন প্রবেশ করতে পারবেন না।",
+   "target": "Dua orang tidak dapat masuk bersama menggunakan IC card yang sama."
+  },
+  {
+   "source": "Gate বন্ধ হলে ভয় নয়",
+   "target": "Jangan panik jika gerbang menutup"
+  },
+  {
+   "source": "পাশের station staff-কে card দেখিয়ে বলুন “出られません”。নিজে gate পার হওয়ার চেষ্টা করবেন না।",
+   "target": "Tunjukkan kartu Anda kepada petugas stasiun terdekat dan katakan “出られません”. Jangan mencoba memaksa melewati gerbang sendiri."
+  },
+  {
+   "source": "Local, Rapid, Express পার্থক্য",
+   "target": "Perbedaan Local, Rapid, dan Express"
+  },
+  {
+   "source": "ভুল train এড়ানোর সবচেয়ে গুরুত্বপূর্ণ অংশ",
+   "target": "Bagian terpenting untuk menghindari kereta yang salah"
+  },
+  {
+   "source": "সাধারণ অর্থ",
+   "target": "Arti umum"
+  },
+  {
+   "source": "সব/প্রায় সব station-এ থামে",
+   "target": "Berhenti di semua/hampir semua stasiun"
+  },
+  {
+   "source": "ধীর, কিন্তু beginner-এর জন্য সহজ",
+   "target": "Lambat, tetapi mudah untuk pemula"
+  },
+  {
+   "source": "কিছু station skip করে",
+   "target": "Melewati beberapa stasiun"
+  },
+  {
+   "source": "আপনার station skip হতে পারে",
+   "target": "Stasiun Anda mungkin dilewati"
+  },
+  {
+   "source": "আরও কম station-এ থামে",
+   "target": "Berhenti di lebih sedikit stasiun lagi"
+  },
+  {
+   "source": "Stop list অবশ্যই দেখুন",
+   "target": "Pastikan untuk memeriksa daftar pemberhentian"
+  },
+  {
+   "source": "কখনো extra ticket লাগে",
+   "target": "Terkadang diperlukan tiket tambahan"
+  },
+  {
+   "source": "নামের উপর নয়, stop list-এর উপর ভরসা করুন",
+   "target": "Percayalah pada daftar pemberhentian, bukan namanya"
+  },
+  {
+   "source": "Railway company ভেদে “Rapid/Express” ব্যবস্থা আলাদা। Platform display-এ destination station আছে কি না দেখুন।",
+   "target": "Sistem “Rapid/Express” berbeda menurut perusahaan kereta api. Periksa apakah stasiun tujuan Anda ada di tampilan platform."
+  },
+  {
+   "source": "নামা থেকে দ্বিতীয় ট্রেনে ওঠা",
+   "target": "Dari turun hingga naik kereta kedua"
+  },
+  {
+   "source": "নামার আগেই next line মনে রাখুন",
+   "target": "Ingat jalur berikutnya sebelum Anda turun"
+  },
+  {
+   "source": "Line name, color/code, direction এবং platform screenshot করুন।",
+   "target": "Screenshot nama jalur, warna/kode, arah, dan platform."
+  },
+  {
+   "source": "乗り換え sign অনুসরণ করুন",
+   "target": "Ikuti papan petunjuk 乗り換え"
+  },
+  {
+   "source": "Exit sign নয়—প্রথমে transfer line-এর arrow দেখুন।",
+   "target": "Bukan papan petunjuk keluar—pertama cari panah jalur transfer."
+  },
+  {
+   "source": "Gate নিয়ে Maps-এর instruction পড়ুন",
+   "target": "Baca instruksi Maps tentang gerbang"
+  },
+  {
+   "source": "“Stay inside station” হলে সাধারণত gate ছাড়বেন না; “Exit and re-enter” হলে বাইরে যেতে হতে পারে।",
+   "target": "Jika tertulis “Stay inside station”, biasanya jangan keluar gerbang; jika tertulis “Exit and re-enter”, Anda mungkin perlu keluar."
+  },
+  {
+   "source": "দ্বিতীয় platform-এ destination নিশ্চিত করুন",
+   "target": "Konfirmasi tujuan di platform kedua"
+  },
+  {
+   "source": "Google Maps-এর platform বদলে যেতে পারে; actual board চূড়ান্ত।",
+   "target": "Platform Google Maps dapat berubah; papan sebenarnya adalah yang final."
+  },
+  {
+   "source": "ভুল হলে কী করবেন",
+   "target": "Apa yang harus dilakukan jika Anda membuat kesalahan"
+  },
+  {
+   "source": "ভুল train, ভুল gate, card error",
+   "target": "Kereta salah, gerbang salah, kesalahan kartu"
+  },
+  {
+   "source": "এই ট্রেন শিনজুকুতে থামবে?",
+   "target": "Apakah kereta ini akan berhenti di Shinjuku?"
+  },
+  {
+   "source": "কত নম্বর platform?",
+   "target": "Platform nomor berapa?"
+  },
+  {
+   "source": "Transfer কোথায়?",
+   "target": "Transfer di mana?"
+  },
+  {
+   "source": "ভুল করে উঠে গেছি। এখন কী করব?",
+   "target": "Saya naik kereta yang salah. Sekarang apa yang harus saya lakukan?"
+  },
+  {
+   "source": "IC card দিয়ে বের হতে পারছি না।",
+   "target": "Saya tidak bisa keluar dengan IC card."
+  },
+  {
+   "source": "একাই যাতায়াতের আগে",
+   "target": "Sebelum bepergian sendiri"
+  },
+  {
+   "source": "Line name ও color চিনতে পারি",
+   "target": "Saya bisa mengenali nama line dan warna"
+  },
+  {
+   "source": "For/方面 দেখে direction বুঝি",
+   "target": "Saya memahami arah dari For/方面"
+  },
+  {
+   "source": "Local/Rapid stop list দেখি",
+   "target": "Saya memeriksa daftar pemberhentian Local/Rapid"
+  },
+  {
+   "source": "Platform number actual board-এ মিলাই",
+   "target": "Saya mencocokkan nomor platform pada papan yang sebenarnya"
+  },
+  {
+   "source": "IC card charge করতে পারি",
+   "target": "Saya bisa mengisi ulang IC card"
+  },
+  {
+   "source": "Transfer sign অনুসরণ করতে পারি",
+   "target": "Saya bisa mengikuti rambu transfer"
+  },
+  {
+   "source": "Exit number দেখে বের হতে পারি",
+   "target": "Saya bisa keluar dengan memeriksa nomor exit"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "Sumber resmi dan terpercaya"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "Aturan dapat berubah—periksa informasi resmi sebelum mengambil keputusan akhir"
+  },
+  {
+   "source": "বাসা ও জীবন",
+   "target": "Rumah dan Kehidupan"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "Panduan ini adalah alat bantu belajar. Ikuti petunjuk dari kantor atau profesional terkait untuk keputusan hukum/medis pribadi."
+  },
+  {
+   "source": "হোম",
+   "target": "Beranda"
+  }
+ ]
+}

@@ -1,0 +1,242 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "n5-grammar-lesson-19-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Grammar Lesson 19 | た-form・たことがあります・たり〜たりします・なります | আপনার নিহোন",
+   "target": "N5 Grammar Lesson 19 | た-form・たことがあります・たり〜たりします・なります | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "অভিজ্ঞতা, মাঝে মাঝে কাজ, পরিবর্তন — past form দিয়ে natural conversation",
+   "target": "അനുഭവം, ഇടയ്ക്കിടെ കാര്യങ്ങൾ ചെയ്യൽ, മാറ്റം — ഭൂതകാല രൂപം ഉപയോഗിച്ച് സ്വാഭാവിക സംഭാഷണം"
+  },
+  {
+   "source": "Grammar শুরু",
+   "target": "Grammar തുടങ്ങുക"
+  },
+  {
+   "source": "আজকের Learning Goal",
+   "target": "ഇന്നത്തെ Learning Goal"
+  },
+  {
+   "source": "た-form বানানো",
+   "target": "た-form ഉണ്ടാക്കൽ"
+  },
+  {
+   "source": "অভিজ্ঞতা বলা",
+   "target": "അനുഭവത്തെക്കുറിച്ച് പറയൽ"
+  },
+  {
+   "source": "পরিবর্তন বলা",
+   "target": "മാറ്റത്തെക്കുറിച്ച് പറയൽ"
+  },
+  {
+   "source": "সহজ ব্যাখ্যা + structure + example",
+   "target": "ലളിതമായ വിശദീകരണം + structure + example"
+  },
+  {
+   "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+   "target": "ഓരോ pattern-നും ആദ്യം structure നോക്കൂ, പിന്നെ example-കൾ ഉറക്കെ പറയൂ. Audio button അമർത്തിയാൽ Japanese വാക്യം കേൾക്കാം."
+  },
+  {
+   "source": "verb-এর past plain form। て-form-এর মতোই pattern, শুধু て/で → た/だ।",
+   "target": "ഒരു verb-ന്റെ ഭൂതകാല plain രൂപം. Pattern て-form-ന്റേത് തന്നെയാണ് — て/で മാത്രം た/だ ആയി മാറുന്നു."
+  },
+  {
+   "source": "ইকিমাসু → ওকোনাত্তা",
+   "target": "Ikimasu → itta"
+  },
+  {
+   "source": "গিয়েছি/গিয়েছিলাম",
+   "target": "ഞാൻ പോയിട്ടുണ്ട് / ഞാൻ പോയി"
+  },
+  {
+   "source": "নোমিমাসু → নোনদা",
+   "target": "Nomimasu → nonda"
+  },
+  {
+   "source": "পান করেছি",
+   "target": "ഞാൻ കുടിച്ചിട്ടുണ്ട്"
+  },
+  {
+   "source": "তাবেমাসু → তাবেতা",
+   "target": "Tabemasu → tabeta"
+  },
+  {
+   "source": "খেয়েছি",
+   "target": "ഞാൻ കഴിച്ചിട്ടുണ്ട്"
+  },
+  {
+   "source": "কোনো কাজ করার অভিজ্ঞতা আছে।",
+   "target": "എന്തെങ്കിലും ചെയ്ത അനുഭവം ഉണ്ടായിരിക്കൽ."
+  },
+  {
+   "source": "একবার/কখনো করেছি — experience sense।",
+   "target": "ഒരിക്കൽ അല്ലെങ്കിൽ എപ്പോഴെങ്കിലും ചെയ്തിട്ടുണ്ട് — അനുഭവത്തിന്റെ അർത്ഥത്തിൽ."
+  },
+  {
+   "source": "নিহোন এ ইত্তা কোতো গা আরিমাসু।",
+   "target": "Nihon e itta koto ga arimasu."
+  },
+  {
+   "source": "জাপানে যাওয়ার অভিজ্ঞতা আছে।",
+   "target": "ഞാൻ മുമ്പ് ജപ്പാനിൽ പോയിട്ടുണ്ട്."
+  },
+  {
+   "source": "সুশি ও তাবেতা কোতো গা আরিমাসু।",
+   "target": "Sushi wo tabeta koto ga arimasu."
+  },
+  {
+   "source": "সুশি খাওয়ার অভিজ্ঞতা আছে।",
+   "target": "ഞാൻ മുമ്പ് സുഷി കഴിച്ചിട്ടുണ്ട്."
+  },
+  {
+   "source": "কোনো কাজ করার অভিজ্ঞতা নেই।",
+   "target": "എന്തെങ്കിലും ചെയ്ത അനുഭവം ഇല്ലാതിരിക്കൽ."
+  },
+  {
+   "source": "まだ + Vたことがありません = এখনো করিনি।",
+   "target": "まだ + V-たことがありません = ഇനിയും ചെയ്തിട്ടില്ല."
+  },
+  {
+   "source": "ফুজিসান নি নোবোত্তা কোতো গা আরিমাসেন।",
+   "target": "Fujisan ni nobotta koto ga arimasen."
+  },
+  {
+   "source": "ফুজি পাহাড়ে ওঠার অভিজ্ঞতা নেই।",
+   "target": "ഞാൻ ഒരിക്കലും Fuji പർവതം കയറിയിട്ടില്ല."
+  },
+  {
+   "source": "মাদা হোক্কাইদো এ ইত্তা কোতো গা আরিমাসেন।",
+   "target": "Mada Hokkaidou e itta koto ga arimasen."
+  },
+  {
+   "source": "এখনো হোক্কাইদো যাইনি।",
+   "target": "ഞാൻ ഇനിയും Hokkaido-യിൽ പോയിട്ടില്ല."
+  },
+  {
+   "source": "উদাহরণ হিসেবে কয়েকটি কাজ বলি — “কখনো এটা করি, কখনো ওটা করি”।",
+   "target": "ഉദാഹരണങ്ങളായി കുറച്ച് പ്രവൃത്തികൾ പറയൽ — “ചിലപ്പോൾ ഞാൻ ഇത് ചെയ്യും, ചിലപ്പോൾ അത് ചെയ്യും”."
+  },
+  {
+   "source": "সব কাজের সম্পূর্ণ list নয়, sample list।",
+   "target": "എല്ലാത്തിന്റെയും പൂർണ്ണമായ പട്ടികയല്ല — വെറും ഒരു സാമ്പിൾ പട്ടിക."
+  },
+  {
+   "source": "নিচিয়োবি ওয়া এইগা ও মি তারি, কাইমোনো শি তারি শিমাসু।",
+   "target": "Nichiyoubi wa eiga wo mitari, kaimono shitari shimasu."
+  },
+  {
+   "source": "রবিবার সিনেমা দেখি, কেনাকাটা করি ইত্যাদি।",
+   "target": "ഞായറാഴ്ചകളിൽ ഞാൻ സിനിമ കാണുക, ഷോപ്പിംഗ് നടത്തുക തുടങ്ങിയ കാര്യങ്ങൾ ചെയ്യുന്നു."
+  },
+  {
+   "source": "তোমোদাচি তো হানাশি তারি, গেমু ও শি তারি শিমাসু।",
+   "target": "Tomodachi to hanashitari, geemu wo shitari shimasu."
+  },
+  {
+   "source": "বন্ধুর সাথে কথা বলি, গেম খেলি ইত্যাদি।",
+   "target": "ഞാൻ സുഹൃത്തുക്കളോട് സംസാരിക്കുക, ഗെയിമുകൾ കളിക്കുക തുടങ്ങിയ കാര്യങ്ങൾ ചെയ്യുന്നു."
+  },
+  {
+   "source": "অবস্থা পরিবর্তন হয়ে গেছে/হচ্ছে — become।",
+   "target": "ഒരു അവസ്ഥ മാറിയിരിക്കുന്നു അല്ലെങ്കിൽ മാറിക്കൊണ്ടിരിക്കുന്നു — “ആയിത്തീരുക”."
+  },
+  {
+   "source": "সামুকু নারিমাশিতা।",
+   "target": "Samuku narimashita."
+  },
+  {
+   "source": "ঠান্ডা হয়ে গেছে।",
+   "target": "അത് തണുത്തതായി മാറിയിരിക്കുന്നു."
+  },
+  {
+   "source": "নিহোনগো গা জোজু নি নারিমাশিতা।",
+   "target": "Nihongo ga jouzu ni narimashita."
+  },
+  {
+   "source": "জাপানিতে দক্ষ হয়ে গেছি।",
+   "target": "ഞാൻ ജാപ്പനീസിൽ മിടുക്കനായി മാറിയിരിക്കുന്നു."
+  },
+  {
+   "source": "শোরাই, ইশা নি নারিমাসু।",
+   "target": "Shourai, isha ni narimasu."
+  },
+  {
+   "source": "ভবিষ্যতে ডাক্তার হব।",
+   "target": "ഭാവിയിൽ ഞാൻ ഒരു ഡോക്ടറാകും."
+  },
+  {
+   "source": "মুখে বলার Practice",
+   "target": "ഉറക്കെ പറയാനുള്ള Practice"
+  },
+  {
+   "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+   "target": "ഈ വാക്യങ്ങൾ ഒരു interview/classroom conversation-ലെന്നപോലെ 3 തവണ ഉറക്കെ വായിക്കൂ."
+  },
+  {
+   "source": "নিহোন এ ইত্তা কোতো গা আরিমাসু কা।",
+   "target": "Nihon e itta koto ga arimasu ka."
+  },
+  {
+   "source": "জাপানে যাওয়ার অভিজ্ঞতা আছে?",
+   "target": "നിങ്ങൾ എപ്പോഴെങ്കിലും ജപ്പാനിൽ പോയിട്ടുണ്ടോ?"
+  },
+  {
+   "source": "হাই, আরিমাসু।",
+   "target": "Hai, arimasu."
+  },
+  {
+   "source": "হ্যাঁ, আছে।",
+   "target": "അതെ, പോയിട്ടുണ്ട്."
+  },
+  {
+   "source": "শুমাৎসু, নানি ও শিমাসু কা।",
+   "target": "Shuumatsu, nani wo shimasu ka."
+  },
+  {
+   "source": "উইকেন্ডে কী করেন?",
+   "target": "വാരാന്ത്യത്തിൽ നിങ്ങൾ എന്ത് ചെയ്യുന്നു?"
+  },
+  {
+   "source": "এইগা ও মি তারি, কাইমোনো শি তারি শিমাসু।",
+   "target": "Eiga wo mitari, kaimono shitari shimasu."
+  },
+  {
+   "source": "সিনেমা দেখি, কেনাকাটা করি ইত্যাদি।",
+   "target": "ഞാൻ സിനിമ കാണുക, ഷോപ്പിംഗ് നടത്തുക തുടങ്ങിയ കാര്യങ്ങൾ ചെയ്യുന്നു."
+  },
+  {
+   "source": "সাইকিন, সামুকু নারিমাশিতা নে।",
+   "target": "Saikin, samuku narimashita ne."
+  },
+  {
+   "source": "সম্প্রতি ঠান্ডা হয়ে গেছে, তাই না?",
+   "target": "അടുത്തിടെ തണുപ്പായി മാറിയിരിക്കുന്നു, അല്ലേ?"
+  },
+  {
+   "source": "✅ 日本へ行ったことがあります。 — た-form দরকার।",
+   "target": "✅ 日本へ行ったことがあります。 — た-form ആവശ്യമാണ്."
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "തന്നെത്താൻ പരീക്ഷിക്കുക"
+  },
+  {
+   "source": "অভিজ্ঞতা আছে = ?",
+   "target": "അനുഭവം ഉണ്ടായിരിക്കുക = ?"
+  },
+  {
+   "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 19 • Verified Premium Detailed Version",
+   "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 19 • Verified Premium Detailed Version"
+  }
+ ]
+}

@@ -1,0 +1,454 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "japan-arrival-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "আগমনের পর A–Z | আপনার নিহোন",
+   "target": "Setelah Kedatangan A–Z | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "Japan Life Guide"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "Semua Panduan"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "Setelah Kedatangan"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "Tempat Tinggal & Kehidupan Sehari-hari"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "Kereta & Platform"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Menggunakan Google Maps"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "Pekerjaan Paruh Waktu"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "Bantuan Darurat"
+  },
+  {
+   "source": "আগমনের পর A–Z",
+   "target": "Setelah Kedatangan A–Z"
+  },
+  {
+   "source": "জাপানে নামার মুহূর্ত থেকে address registration, insurance, bank ও phone পর্যন্ত—একজন নতুন শিক্ষার্থীর সম্পূর্ণ প্রথম সপ্তাহের গাইড।",
+   "target": "Dari saat Anda mendarat di Jepang hingga pendaftaran alamat, asuransi, bank, dan telepon—panduan lengkap minggu pertama untuk pelajar baru."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "Penjelasan Bahasa Bengali"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "Kalimat Bahasa Jepang"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "Langkah Praktis"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "Progres Anda"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 Selesai"
+  },
+  {
+   "source": "এয়ারপোর্ট",
+   "target": "Bandara"
+  },
+  {
+   "source": "সিটি অফিস",
+   "target": "Kantor Kota"
+  },
+  {
+   "source": "বাক্য",
+   "target": "Kalimat"
+  },
+  {
+   "source": "এয়ারপোর্টে প্রথমে কী দেখবেন",
+   "target": "Apa yang pertama kali diperiksa di bandara"
+  },
+  {
+   "source": "Residence card, passport ও অনুমতির তথ্য যাচাই",
+   "target": "Verifikasi Residence card, passport, dan informasi izin"
+  },
+  {
+   "source": "ইমিগ্রেশন শেষ করার পর তাড়াহুড়া করে বের না হয়ে আপনার কাগজপত্র মিলিয়ে নিন। ভুল থাকলে এয়ারপোর্টেই জিজ্ঞেস করা সবচেয়ে সহজ।",
+   "target": "Jangan terburu-buru keluar setelah menyelesaikan imigrasi; periksa dokumen Anda terlebih dahulu. Jika ada kesalahan, paling mudah menanyakannya di bandara."
+  },
+  {
+   "source": "পাসপোর্টের নাম ও জন্মতারিখ মিলান",
+   "target": "Cocokkan nama dan tanggal lahir dengan paspor"
+  },
+  {
+   "source": "পাসপোর্ট, ভিসা/landing permission এবং Residence Card-এর বানান একই কি না দেখুন।",
+   "target": "Periksa apakah ejaan di paspor, visa/landing permission, dan Residence Card sama."
+  },
+  {
+   "source": "在留資格 ও মেয়াদ দেখুন",
+   "target": "Periksa 在留資格 dan masa berlaku"
+  },
+  {
+   "source": "মানে residence status এবং",
+   "target": "Artinya residence status dan"
+  },
+  {
+   "source": "মানে থাকার অনুমোদিত সময়।",
+   "target": "Artinya masa tinggal yang diizinkan."
+  },
+  {
+   "source": "কাজের অনুমতির stamp দেখুন",
+   "target": "Periksa stempel izin kerja"
+  },
+  {
+   "source": "শিক্ষার্থী হিসেবে part-time করতে চাইলে 資格外活動許可 আছে কি না যাচাই করুন। অনুমতি ছাড়া কাজ শুরু করবেন না।",
+   "target": "Jika Anda ingin melakukan pekerjaan paruh waktu sebagai pelajar, periksa apakah 資格外活動許可 ada. Jangan mulai bekerja tanpa izin."
+  },
+  {
+   "source": "কার্ড না পেলে নির্দেশনা সংরক্ষণ করুন",
+   "target": "Simpan petunjuk jika Anda tidak menerima kartu"
+  },
+  {
+   "source": "প্রবেশ বন্দরে কার্ড দেওয়া না হলে, ঠিকানা নিবন্ধনের পর ডাকযোগে আসতে পারে। পাওয়া কাগজ হারাবেন না।",
+   "target": "Jika kartu tidak diterbitkan di pelabuhan masuk, kartu dapat tiba melalui pos setelah pendaftaran alamat. Jangan hilangkan kertas yang Anda terima."
+  },
+  {
+   "source": "ছবি তুলে রাখুন",
+   "target": "Ambil foto dan simpan"
+  },
+  {
+   "source": "পাসপোর্টের পরিচয় পাতা, Residence Card-এর সামনে-পেছন এবং স্কুলের admission কাগজ নিরাপদ cloud folder-এ রাখুন।",
+   "target": "Simpan halaman identitas paspor, bagian depan dan belakang Residence Card, serta dokumen penerimaan sekolah di folder cloud yang aman."
+  },
+  {
+   "source": "প্রথম ২৪ ঘণ্টার পরিকল্পনা",
+   "target": "Rencana 24 jam pertama"
+  },
+  {
+   "source": "SIM, যাতায়াত, নগদ টাকা ও নিরাপদে বাসায় পৌঁছানো",
+   "target": "SIM, transportasi, uang tunai, dan tiba di rumah dengan selamat"
+  },
+  {
+   "source": "ইন্টারনেট",
+   "target": "Internet"
+  },
+  {
+   "source": "Airport Wi‑Fi বা বৈধ SIM/eSIM",
+   "target": "Wi‑Fi bandara atau SIM/eSIM yang valid"
+  },
+  {
+   "source": "যাতায়াত",
+   "target": "Transportasi"
+  },
+  {
+   "source": "IC card বা ticket",
+   "target": "IC card atau tiket"
+  },
+  {
+   "source": "নগদ",
+   "target": "Uang tunai"
+  },
+  {
+   "source": "কিছু cash সঙ্গে রাখুন",
+   "target": "Bawa sejumlah uang tunai bersama Anda"
+  },
+  {
+   "source": "ঠিকানা",
+   "target": "Alamat"
+  },
+  {
+   "source": "বাসার ঠিকানা জাপানিতে রাখুন",
+   "target": "Simpan alamat rumah Anda dalam bahasa Jepang"
+  },
+  {
+   "source": "বিল্ডিং নাম, room number, postal code সহ screenshot নিন। শুধু English map pin যথেষ্ট নয়।",
+   "target": "Ambil screenshot yang mencantumkan nama gedung, nomor kamar, dan kode pos. Pin peta berbahasa Inggris saja tidak cukup."
+  },
+  {
+   "source": "শেষ ট্রেনের সময় দেখুন",
+   "target": "Periksa waktu kereta terakhir"
+  },
+  {
+   "source": "রাতে পৌঁছালে Google Maps-এর last train এবং taxi fare তুলনা করুন।",
+   "target": "Jika tiba di malam hari, bandingkan kereta terakhir dan tarif taksi di Google Maps."
+  },
+  {
+   "source": "স্কুল/পরিচিত ব্যক্তিকে arrival message দিন",
+   "target": "Kirim pesan kedatangan ke sekolah/orang yang Anda kenal"
+  },
+  {
+   "source": "আপনি নিরাপদে পৌঁছেছেন এবং কোন সময় বাসায় যাবেন জানিয়ে দিন।",
+   "target": "Beri tahu mereka bahwa Anda telah tiba dengan selamat dan jam berapa Anda akan sampai di rumah."
+  },
+  {
+   "source": "সিটি অফিসে Address Registration",
+   "target": "Pendaftaran Alamat di Kantor Kota"
+  },
+  {
+   "source": "বাসা ঠিক করার পর ১৪ দিনের মধ্যে মূল কাজ",
+   "target": "Tugas utama dalam 14 hari setelah menetapkan rumah Anda"
+  },
+  {
+   "source": "বাসার ঠিকানা স্থির হওয়ার পর স্থানীয় 市役所（しやくしょ）/区役所（くやくしょ）-এ গিয়ে 転入届（てんにゅうとどけ） বা residence registration করুন।",
+   "target": "Setelah alamat rumah Anda tetap, kunjungi 市役所（しやくしょ）/区役所（くやくしょ） setempat untuk melakukan 転入届（てんにゅうとどけ） atau pendaftaran tempat tinggal."
+  },
+  {
+   "source": "সঙ্গে নিন",
+   "target": "Yang harus dibawa"
+  },
+  {
+   "source": "কেন লাগবে",
+   "target": "Mengapa diperlukan"
+  },
+  {
+   "source": "নোট",
+   "target": "Catatan"
+  },
+  {
+   "source": "ঠিকানা কার্ডে লিখতে",
+   "target": "Untuk menulis alamat pada kartu"
+  },
+  {
+   "source": "Original নিন",
+   "target": "Bawa yang asli"
+  },
+  {
+   "source": "পরিচয়/entry যাচাই",
+   "target": "Verifikasi identitas/masuk"
+  },
+  {
+   "source": "সবসময় চাইবে না, তবু নিন",
+   "target": "Tidak selalu diminta, tetapi bawalah"
+  },
+  {
+   "source": "বাসার পূর্ণ ঠিকানা",
+   "target": "Alamat rumah lengkap"
+  },
+  {
+   "source": "Room number ভুল করবেন না",
+   "target": "Jangan salah menulis nomor kamar"
+  },
+  {
+   "source": "Household তথ্য",
+   "target": "Informasi rumah tangga"
+  },
+  {
+   "source": "একসঙ্গে কারা থাকেন",
+   "target": "Siapa yang tinggal bersama"
+  },
+  {
+   "source": "পরিবার হলে relationship তথ্য",
+   "target": "Rincian hubungan jika keluarga"
+  },
+  {
+   "source": "আগের municipality-এর certificate",
+   "target": "Sertifikat dari munisipalitas sebelumnya"
+  },
+  {
+   "source": "Japan-এর ভিতরে move হলে",
+   "target": "Jika pindah di dalam Jepang"
+  },
+  {
+   "source": "নতুন আগমন হলে সাধারণত নেই",
+   "target": "Biasanya tidak berlaku untuk pendatang baru"
+  },
+  {
+   "source": "কাউন্টারে বলুন",
+   "target": "Katakan di loket"
+  },
+  {
+   "source": "“নতুন এসেছি, address registration করতে চাই।” নিচের বাক্য দেখান।",
+   "target": "“Saya baru tiba, saya ingin melakukan pendaftaran alamat.” Tunjukkan kalimat di bawah ini."
+  },
+  {
+   "source": "আমি ঠিকানা নিবন্ধন করতে চাই।",
+   "target": "Saya ingin mendaftarkan alamat saya."
+  },
+  {
+   "source": "আমি সদ্য জাপানে এসেছি। প্রয়োজনীয় প্রক্রিয়াগুলো বলবেন।",
+   "target": "Saya baru saja tiba di Jepang. Tolong beritahu saya prosedur yang diperlukan."
+  },
+  {
+   "source": "Health Insurance, Pension ও My Number",
+   "target": "Health Insurance, Pension, dan My Number"
+  },
+  {
+   "source": "কাউন্টারে কোনগুলো জিজ্ঞেস করবেন",
+   "target": "Apa yang harus ditanyakan di loket"
+  },
+  {
+   "source": "National Health Insurance সম্পর্কে জিজ্ঞেস করুন",
+   "target": "Tanyakan tentang National Health Insurance"
+  },
+  {
+   "source": "আপনার অন্য employee insurance না থাকলে National Health Insurance-এর eligibility ও enrolment সম্পর্কে city office জানাবে।",
+   "target": "Jika Anda tidak memiliki asuransi karyawan lain, kantor kota akan memberi tahu Anda tentang kelayakan dan pendaftaran National Health Insurance."
+  },
+  {
+   "source": "National Pension/Student exemption জিজ্ঞেস করুন",
+   "target": "Tanyakan tentang National Pension/pembebasan untuk pelajar"
+  },
+  {
+   "source": "বয়স ও status অনুযায়ী pension procedure হতে পারে। শিক্ষার্থী হলে 学生納付特例 বা অন্য exemption প্রযোজ্য কি না জিজ্ঞেস করুন।",
+   "target": "Prosedur pensiun dapat berlaku tergantung usia dan status Anda. Jika Anda seorang pelajar, tanyakan apakah 学生納付特例 atau pembebasan lain berlaku."
+  },
+  {
+   "source": "My Number notice-এর ঠিকানা নিশ্চিত করুন",
+   "target": "Konfirmasi alamat untuk pemberitahuan My Number"
+  },
+  {
+   "source": "通知書 ডাকযোগে আসতে পারে। Mailbox-এ নিজের নাম লিখুন এবং চিঠি নিয়মিত দেখুন।",
+   "target": "通知書 dapat tiba melalui pos. Tulis nama Anda di kotak surat dan periksa surat secara teratur."
+  },
+  {
+   "source": "সবাইয়ের অবস্থা এক নয়",
+   "target": "Situasi setiap orang tidak sama"
+  },
+  {
+   "source": "স্কুল, চাকরি, পরিবারের insurance ও residence status অনুযায়ী ব্যবস্থা বদলাতে পারে। কাউন্টারের লিখিত নির্দেশনা অনুসরণ করুন।",
+   "target": "Prosedur dapat berbeda tergantung sekolah, pekerjaan, asuransi keluarga, dan status tempat tinggal. Ikuti petunjuk tertulis di loket."
+  },
+  {
+   "source": "Bank account, Mobile ও দৈনন্দিন পরিচয়",
+   "target": "Rekening Bank, Ponsel, dan Identitas Sehari-hari"
+  },
+  {
+   "source": "Registration শেষ হলে পরের বাস্তব কাজ",
+   "target": "Tugas praktis setelah pendaftaran selesai"
+  },
+  {
+   "source": "জাপানি ফোন নম্বর নিন",
+   "target": "Dapatkan nomor telepon Jepang"
+  },
+  {
+   "source": "Job application, bank verification ও delivery-এর জন্য নিজের নামে সক্রিয় নম্বর দরকার হয়। Contract বুঝে sign করুন।",
+   "target": "Nomor aktif atas nama Anda diperlukan untuk lamaran pekerjaan, verifikasi bank, dan pengiriman. Pahami kontrak sebelum menandatangani."
+  },
+  {
+   "source": "Bank account-এর কাগজ প্রস্তুত করুন",
+   "target": "Siapkan dokumen rekening bank"
+  },
+  {
+   "source": "Residence Card, student ID, phone number, address, hanko লাগতে পারে। ব্যাংকভেদে requirements আলাদা।",
+   "target": "Residence Card, kartu pelajar, nomor telepon, alamat, atau hanko mungkin diperlukan. Persyaratan berbeda menurut bank."
+  },
+  {
+   "source": "Mailbox ও nameplate ঠিক করুন",
+   "target": "Atur kotak surat dan papan nama"
+  },
+  {
+   "source": "নাম না থাকলে Residence Card বা My Number-এর চিঠি ফেরত যেতে পারে।",
+   "target": "Jika nama tidak ada, surat untuk Residence Card atau My Number dapat dikembalikan."
+  },
+  {
+   "source": "সব deadline calendar-এ রাখুন",
+   "target": "Simpan semua tenggat waktu di kalender"
+  },
+  {
+   "source": "Residence expiry, school payment, utility bill ও insurance notice-এর reminder দিন।",
+   "target": "Atur pengingat untuk masa berlaku tempat tinggal, pembayaran sekolah, tagihan utilitas, dan pemberitahuan asuransi."
+  },
+  {
+   "source": "কাজের জাপানি বাক্য",
+   "target": "Kalimat bahasa Jepang untuk bekerja"
+  },
+  {
+   "source": "কাউন্টারে ফোন দেখিয়ে ব্যবহার করতে পারবেন",
+   "target": "Anda dapat menggunakannya dengan menunjukkan ponsel Anda di loket"
+  },
+  {
+   "source": "এই ফর্মটি কীভাবে লিখব, দেখিয়ে দিন।",
+   "target": "Tolong tunjukkan cara mengisi formulir ini."
+  },
+  {
+   "source": "আমার জাপানি এখনো ভালো নয়। আস্তে বলবেন।",
+   "target": "Bahasa Jepang saya belum bagus. Tolong bicara perlahan."
+  },
+  {
+   "source": "এরপর আমাকে কী করতে হবে?",
+   "target": "Apa yang harus saya lakukan setelah ini?"
+  },
+  {
+   "source": "এই ঠিকানায় নিবন্ধন করা যাবে?",
+   "target": "Bisakah saya mendaftar di alamat ini?"
+  },
+  {
+   "source": "আগমনের Checklist",
+   "target": "Checklist Kedatangan"
+  },
+  {
+   "source": "একটি শেষ হলে টিক দিন",
+   "target": "Centang setelah selesai"
+  },
+  {
+   "source": "Passport, Residence Card ও permission তথ্য মিলিয়েছি",
+   "target": "Telah memverifikasi informasi Passport, Residence Card, dan izin"
+  },
+  {
+   "source": "বাসার Japanese address screenshot করেছি",
+   "target": "Telah mengambil screenshot alamat rumah dalam bahasa Jepang"
+  },
+  {
+   "source": "Address registration-এর জন্য city/ward office গিয়েছি",
+   "target": "Telah pergi ke kantor kota/ward untuk pendaftaran alamat"
+  },
+  {
+   "source": "Insurance ও pension procedure জিজ্ঞেস করেছি",
+   "target": "Telah menanyakan prosedur asuransi dan pensiun"
+  },
+  {
+   "source": "Mailbox-এ নাম দিয়েছি",
+   "target": "Telah mencantumkan nama di kotak surat"
+  },
+  {
+   "source": "Phone number ও জরুরি contact save করেছি",
+   "target": "Telah menyimpan nomor telepon dan kontak darurat"
+  },
+  {
+   "source": "সব গুরুত্বপূর্ণ কাগজের backup রেখেছি",
+   "target": "Telah menyimpan cadangan semua dokumen penting"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "Sumber resmi dan terpercaya"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "Aturan dapat berubah—periksa informasi resmi sebelum mengambil keputusan akhir"
+  },
+  {
+   "source": "বাসা ও জীবন",
+   "target": "Rumah dan Kehidupan"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "Panduan ini adalah alat bantu belajar. Ikuti petunjuk dari kantor atau profesional terkait untuk keputusan hukum/medis pribadi."
+  },
+  {
+   "source": "হোম",
+   "target": "Beranda"
+  }
+ ]
+}

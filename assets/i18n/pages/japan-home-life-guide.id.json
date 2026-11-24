@@ -1,0 +1,370 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "japan-home-life-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন | আপনার নিহোন",
+   "target": "Rumah & Kehidupan Sehari-hari | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "Japan Life Guide"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "Semua Panduan"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "Setelah Kedatangan"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "Tempat Tinggal & Kehidupan Sehari-hari"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "Kereta & Platform"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "Menggunakan Google Maps"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "Pekerjaan Paruh Waktu"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "Bantuan Darurat"
+  },
+  {
+   "source": "গ্যাস, বিদ্যুৎ, পানি, ময়লা, প্রতিবেশী, delivery ও bill—জাপানের বাসা নিজের হাতে চালানোর পূর্ণ গাইড।",
+   "target": "Gas, listrik, air, sampah, tetangga, pengiriman, dan tagihan—panduan lengkap untuk mengelola rumah Anda di Jepang sendiri."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "Penjelasan Bahasa Bengali"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "Kalimat Bahasa Jepang"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "Langkah Praktis"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "Progres Anda"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 Selesai"
+  },
+  {
+   "source": "ময়লা",
+   "target": "Sampah"
+  },
+  {
+   "source": "কেনাকাটা",
+   "target": "Belanja"
+  },
+  {
+   "source": "বাক্য",
+   "target": "Kalimat"
+  },
+  {
+   "source": "বাসায় ওঠার দিন",
+   "target": "Hari pindah masuk"
+  },
+  {
+   "source": "আগের damage ও contract সংরক্ষণ করুন",
+   "target": "Simpan kerusakan yang sudah ada dan kontraknya"
+  },
+  {
+   "source": "ঘরের video তুলুন",
+   "target": "Ambil video ruangan"
+  },
+  {
+   "source": "দেয়াল, floor, kitchen, bathroom, air-conditioner ও সব scratch-এর dateসহ video/ছবি রাখুন।",
+   "target": "Simpan video/foto bertanggal dari dinding, lantai, dapur, kamar mandi, AC, dan setiap goresan."
+  },
+  {
+   "source": "Meter ও key গুনে নিন",
+   "target": "Hitung meteran dan kunci"
+  },
+  {
+   "source": "Electricity/gas/water meter, key সংখ্যা ও mailbox lock লিখে রাখুন।",
+   "target": "Catat meteran listrik/gas/air, jumlah kunci, dan kunci kotak surat."
+  },
+  {
+   "source": "Contract-এর নিষেধগুলো চিহ্নিত করুন",
+   "target": "Tandai larangan dalam kontrak"
+  },
+  {
+   "source": "Smoking, pet, guest, bicycle parking, instrument, drilling ও moving-out cleaning fee দেখুন।",
+   "target": "Periksa merokok, hewan peliharaan, tamu, parkir sepeda, alat musik, pengeboran, dan biaya pembersihan saat pindah keluar."
+  },
+  {
+   "source": "চাবি বদল বা drilling করবেন না",
+   "target": "Jangan mengganti kunci atau mengebor"
+  },
+  {
+   "source": "Landlord/management company-এর লিখিত অনুমতি ছাড়া স্থায়ী পরিবর্তন করবেন না।",
+   "target": "Jangan membuat perubahan permanen tanpa izin tertulis dari landlord/perusahaan manajemen."
+  },
+  {
+   "source": "বিদ্যুৎ, গ্যাস ও পানি চালু",
+   "target": "Menyalakan listrik, gas, dan air"
+  },
+  {
+   "source": "কোনটি নিজে, কোনটিতে staff আসতে পারে",
+   "target": "Mana yang Anda lakukan sendiri, dan mana yang mungkin memerlukan kunjungan petugas"
+  },
+  {
+   "source": "শুরু করার সাধারণ পদ্ধতি",
+   "target": "Cara umum untuk memulai"
+  },
+  {
+   "source": "খেয়াল রাখুন",
+   "target": "Berhati-hatilah"
+  },
+  {
+   "source": "Company ও plan contract-এ দেখুন",
+   "target": "Periksa perusahaan dan paket dalam kontrak"
+  },
+  {
+   "source": "Appointment নিয়ে staff opening",
+   "target": "Pembukaan oleh petugas dengan janji"
+  },
+  {
+   "source": "কেউ ঘরে থাকতে হতে পারে",
+   "target": "Seseorang mungkin perlu berada di rumah"
+  },
+  {
+   "source": "Municipal bureau-তে start request",
+   "target": "Permintaan memulai di biro munisipal"
+  },
+  {
+   "source": "Address/room number ঠিক দিন",
+   "target": "Berikan alamat/nomor kamar dengan benar"
+  },
+  {
+   "source": "Building line check ও contract",
+   "target": "Pemeriksaan jalur gedung dan kontrak"
+  },
+  {
+   "source": "Construction fee/period দেখুন",
+   "target": "Periksa biaya/masa konstruksi"
+  },
+  {
+   "source": "গ্যাস চালু করার ব্যবস্থা করুন।",
+   "target": "Tolong atur untuk menyalakan gas."
+  },
+  {
+   "source": "বিদ্যুতের চুক্তি শুরু করতে চাই।",
+   "target": "Saya ingin memulai kontrak listrik."
+  },
+  {
+   "source": "ময়লা ফেলার নিয়ম",
+   "target": "Aturan pembuangan sampah"
+  },
+  {
+   "source": "Municipality, day ও category—তিনটি একসঙ্গে মিলান",
+   "target": "Cocokkan ketiganya bersama-sama: municipality, hari, dan kategori"
+  },
+  {
+   "source": "জাপানে garbage rule এক শহর থেকে অন্য শহরে বদলায়। Building notice এবং municipality-এর calendar-ই চূড়ান্ত।",
+   "target": "Di Jepang, aturan sampah berubah dari satu kota ke kota lain. Pemberitahuan gedung dan kalender municipality adalah yang final."
+  },
+  {
+   "source": "Collection day-এর আগের রাতে নয়",
+   "target": "Bukan pada malam sebelum hari pengumpulan"
+  },
+  {
+   "source": "Building/area rule অনুযায়ী নির্ধারিত সময়ের আগে collection point-এ দিন।",
+   "target": "Letakkan di titik pengumpulan sebelum waktu yang ditentukan, menurut aturan gedung/area."
+  },
+  {
+   "source": "PET bottle প্রস্তুত করুন",
+   "target": "Siapkan botol PET"
+  },
+  {
+   "source": "Cap/label আলাদা, হালকা rinse, municipality rule অনুযায়ী crush করুন।",
+   "target": "Pisahkan tutup/label, bilas ringan, dan remas menurut aturan municipality."
+  },
+  {
+   "source": "৩০ সেমি বা বড় item আগে check করুন",
+   "target": "Periksa barang berukuran 30 cm atau lebih besar terlebih dahulu"
+  },
+  {
+   "source": "অনেক জায়গায় bulky waste হিসেবে booking ও paid sticker দরকার হয়। স্থানীয় rule দেখুন।",
+   "target": "Di banyak tempat, sampah besar memerlukan pemesanan dan stiker berbayar. Periksa aturan setempat."
+  },
+  {
+   "source": "আপনার এলাকার rule ছাড়া মুখস্থ করবেন না",
+   "target": "Jangan menghafal tanpa aturan area Anda"
+  },
+  {
+   "source": "এখানের category উদাহরণ; collection day ও bag rule city/ward website থেকে নিশ্চিত করুন।",
+   "target": "Kategori di sini adalah contoh; konfirmasi hari pengumpulan dan aturan kantong dari situs web kota/ward."
+  },
+  {
+   "source": "প্রতিবেশী ও শব্দের নিয়ম",
+   "target": "Aturan tetangga dan kebisingan"
+  },
+  {
+   "source": "শান্ত জীবন বজায় রাখার সহজ অভ্যাস",
+   "target": "Kebiasaan sederhana untuk menjaga kehidupan tetap tenang"
+  },
+  {
+   "source": "রাতের শব্দ কমান",
+   "target": "Kurangi kebisingan di malam hari"
+  },
+  {
+   "source": "কথা, music, washing machine, vacuum ও furniture টানা—বিশেষ করে রাতে কম রাখুন।",
+   "target": "Jaga agar pembicaraan, musik, mesin cuci, vacuum, dan menyeret furnitur tetap pelan — terutama di malam hari."
+  },
+  {
+   "source": "Hallway ও balcony পরিষ্কার রাখুন",
+   "target": "Jaga lorong dan balkon tetap bersih"
+  },
+  {
+   "source": "Emergency exit বা shared area-তে bicycle, box বা garbage রাখবেন না।",
+   "target": "Jangan meninggalkan sepeda, kotak, atau sampah di pintu keluar darurat atau area bersama."
+  },
+  {
+   "source": "Guest rule মানুন",
+   "target": "Ikuti aturan tamu"
+  },
+  {
+   "source": "দীর্ঘদিন কাউকে রাখার আগে contract/management company-এর নিয়ম দেখুন।",
+   "target": "Sebelum membiarkan seseorang menginap untuk waktu yang lama, periksa aturan kontrak/perusahaan manajemen."
+  },
+  {
+   "source": "সমস্যায় আগে management company",
+   "target": "Untuk masalah, hubungi perusahaan manajemen terlebih dahulu"
+  },
+  {
+   "source": "নিজে ঝগড়া না করে ছবি/তারিখসহ 管理会社（かんりがいしゃ）-কে জানান।",
+   "target": "Jangan berdebat sendiri; laporkan ke 管理会社（かんりがいしゃ） dengan foto/tanggal."
+  },
+  {
+   "source": "কেনাকাটা, Delivery ও Bill",
+   "target": "Belanja, Delivery & Bill"
+  },
+  {
+   "source": "দৈনন্দিন কাজের practical system",
+   "target": "Sistem praktis untuk tugas sehari-hari"
+  },
+  {
+   "source": "不在票 হারাবেন না",
+   "target": "Jangan hilangkan 不在票"
+  },
+  {
+   "source": "Delivery miss হলে slip-এর QR/phone দিয়ে redelivery request করুন।",
+   "target": "Jika Anda melewatkan pengiriman, minta pengiriman ulang menggunakan QR/telepon pada slip."
+  },
+  {
+   "source": "Payment deadline দেখুন",
+   "target": "Periksa tenggat pembayaran"
+  },
+  {
+   "source": "Utility bill convenience store-এ দেওয়া যায় কি না barcode ও expiry দেখে নিন।",
+   "target": "Periksa barcode dan masa berlaku untuk melihat apakah tagihan utilitas dapat dibayar di convenience store."
+  },
+  {
+   "source": "Receipt কিছুদিন রাখুন",
+   "target": "Simpan tanda terima untuk sementara waktu"
+  },
+  {
+   "source": "Return, warranty ও expense proof-এর জন্য গুরুত্বপূর্ণ receipt আলাদা envelope-এ রাখুন।",
+   "target": "Simpan tanda terima penting dalam amplop terpisah untuk pengembalian, garansi, dan bukti pengeluaran."
+  },
+  {
+   "source": "বাসায় প্রয়োজনীয় বাক্য",
+   "target": "Kalimat penting untuk rumah"
+  },
+  {
+   "source": "Management company ও delivery-তে ব্যবহার",
+   "target": "Untuk digunakan dengan perusahaan manajemen dan pengiriman"
+  },
+  {
+   "source": "গরম পানি আসছে না। দেখে দেবেন?",
+   "target": "Air panas tidak keluar. Bisakah Anda memeriksanya?"
+  },
+  {
+   "source": "পানি লিক করছে।",
+   "target": "Air bocor."
+  },
+  {
+   "source": "পুনরায় ডেলিভারি চাই।",
+   "target": "Saya ingin pengiriman ulang."
+  },
+  {
+   "source": "ময়লা ফেলার দিন বলবেন।",
+   "target": "Tolong beritahu saya hari pembuangan sampah."
+  },
+  {
+   "source": "দৈনন্দিন Checklist",
+   "target": "Checklist Harian"
+  },
+  {
+   "source": "নিজের ঘর চালানোর প্রস্তুতি",
+   "target": "Persiapan untuk mengelola rumah Anda sendiri"
+  },
+  {
+   "source": "Move-in damage-এর ছবি/video রেখেছি",
+   "target": "Saya telah menyimpan foto/video kerusakan saat pindah masuk"
+  },
+  {
+   "source": "Electricity, gas, water চালু করেছি",
+   "target": "Saya telah menyalakan listrik, gas, dan air"
+  },
+  {
+   "source": "Garbage calendar save করেছি",
+   "target": "Saya telah menyimpan kalender sampah"
+  },
+  {
+   "source": "Emergency exit ও breaker location চিনেছি",
+   "target": "Saya tahu pintu keluar darurat dan lokasi pemutus arus"
+  },
+  {
+   "source": "Management company-এর phone save করেছি",
+   "target": "Saya telah menyimpan nomor telepon perusahaan manajemen"
+  },
+  {
+   "source": "Bill deadline-এর reminder দিয়েছি",
+   "target": "Saya telah mengatur pengingat untuk tenggat tagihan"
+  },
+  {
+   "source": "Mailbox ও delivery name ঠিক আছে",
+   "target": "Kotak surat dan nama pengiriman sudah benar"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "Sumber resmi dan terpercaya"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "Aturan dapat berubah—periksa informasi resmi sebelum mengambil keputusan akhir"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "Panduan ini adalah alat bantu belajar. Ikuti petunjuk dari kantor atau profesional terkait untuk keputusan hukum/medis pribadi."
+  },
+  {
+   "source": "হোম",
+   "target": "Beranda"
+  }
+ ]
+}

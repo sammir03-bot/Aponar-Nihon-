@@ -1,0 +1,242 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "n5-grammar-lesson-22-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Grammar Lesson 22 | Noun Modification / Relative Clauses | আপনার নিহোন",
+   "target": "N5 Grammar Lesson 22 | Noun Modification / Relative Clauses | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "যে মানুষ, যে জিনিস, যে জায়গা — noun-এর আগে বাক্য বসানো",
+   "target": "ആരായ വ്യക്തി…, ഏതായ വസ്തു…, എവിടെയായ സ്ഥലം… — ഒരു noun-ന് മുമ്പ് ഒരു clause വെക്കൽ"
+  },
+  {
+   "source": "Grammar শুরু",
+   "target": "Grammar തുടങ്ങുക"
+  },
+  {
+   "source": "আজকের Learning Goal",
+   "target": "ഇന്നത്തെ Learning Goal"
+  },
+  {
+   "source": "Noun modify করা",
+   "target": "Noun-കളെ വിശേഷിപ്പിക്കൽ"
+  },
+  {
+   "source": "মানুষ বর্ণনা",
+   "target": "ആളുകളെ വിവരിക്കൽ"
+  },
+  {
+   "source": "আরও natural sentence",
+   "target": "കൂടുതൽ സ്വാഭാവിക വാക്യങ്ങൾ"
+  },
+  {
+   "source": "সহজ ব্যাখ্যা + structure + example",
+   "target": "ലളിതമായ വിശദീകരണം + structure + example"
+  },
+  {
+   "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+   "target": "ഓരോ pattern-നും ആദ്യം structure നോക്കൂ, പിന്നെ example-കൾ ഉറക്കെ പറയൂ. Audio button അമർത്തിയാൽ Japanese വാക്യം കേൾക്കാം."
+  },
+  {
+   "source": "noun-এর আগে plain sentence বসিয়ে “যে/যা/যেখানে” অর্থ তৈরি হয়।",
+   "target": "ഒരു noun-ന് മുമ്പ് ഒരു plain വാക്യം വെക്കുന്നത് “who / that / where” എന്ന അർത്ഥം നൽകുന്നു."
+  },
+  {
+   "source": "Japanese-এ relative clause noun-এর আগে আসে; বাংলা/ইংরেজিতে পরে আসতে পারে।",
+   "target": "ജാപ്പനീസിൽ, ഒരു relative clause noun-ന് മുമ്പ് വരുന്നു; ബംഗാളിയിലും ഇംഗ്ലീഷിലും അത് അതിന് ശേഷം വന്നേക്കാം."
+  },
+  {
+   "source": "কোরে ওয়া কিনো কাত্তা হোনদেসু।",
+   "target": "Kore wa kinou katta hon desu."
+  },
+  {
+   "source": "এটা গতকাল কেনা বই।",
+   "target": "ഞാൻ ഇന്നലെ വാങ്ങിയ ഒരു പുസ്തകമാണിത്."
+  },
+  {
+   "source": "আসোকো নি ইরু হিতো ওয়া তানাকা সানদেসু।",
+   "target": "Asoko ni iru hito wa Tanaka-san desu."
+  },
+  {
+   "source": "ওখানে থাকা ব্যক্তি তানাকা-সান।",
+   "target": "അവിടെയുള്ള വ്യക്തി Tanaka-san ആണ്."
+  },
+  {
+   "source": "noun modifying clause-এর ভিতরের subject সাধারণত が দিয়ে আসে।",
+   "target": "ഒരു noun-നെ വിശേഷിപ്പിക്കുന്ന clause-നുള്ളിലെ subject സാധാരണയായി が എടുക്കുന്നു."
+  },
+  {
+   "source": "母は作った料理 নয়; 母が作った料理।",
+   "target": "母は作った料理 അല്ല — അത് 母が作った料理 ആണ്."
+  },
+  {
+   "source": "কোরে ওয়া হাহা গা ৎসুকুত্তা রিয়োরিদেসু।",
+   "target": "Kore wa haha ga tsukutta ryouri desu."
+  },
+  {
+   "source": "এটা মায়ের বানানো খাবার।",
+   "target": "എന്റെ അമ്മ ഉണ്ടാക്കിയ ഒരു വിഭവമാണിത്."
+  },
+  {
+   "source": "ওয়াতাশি গা ইয়োমিতাই হোন ওয়া কোরেদেসু।",
+   "target": "Watashi ga yomitai hon wa kore desu."
+  },
+  {
+   "source": "আমি যে বই পড়তে চাই, সেটা এটা।",
+   "target": "ഞാൻ വായിക്കാൻ ആഗ്രഹിക്കുന്ന പുസ്തകം ഇതാണ്."
+  },
+  {
+   "source": "যে ব্যক্তি এখন/habitually কিছু করছে, তাকে describe করতে।",
+   "target": "ഇപ്പോൾ, അല്ലെങ്കിൽ പതിവായി, എന്തെങ്കിലും ചെയ്യുന്ന ഒരു വ്യക്തിയെ വിവരിക്കാൻ."
+  },
+  {
+   "source": "মেগানে ও কাকেতেইরু হিতো ওয়া ইয়ামাদা সানদেসু।",
+   "target": "Megane wo kakete iru hito wa Yamada-san desu."
+  },
+  {
+   "source": "চশমা পরা ব্যক্তি ইয়ামাদা-সান।",
+   "target": "കണ്ണട ധരിച്ച വ്യക്തി Yamada-san ആണ്."
+  },
+  {
+   "source": "দেনওয়া ও শিতেইরু হিতো ওয়া দারেদেসু কা।",
+   "target": "Denwa wo shite iru hito wa dare desu ka."
+  },
+  {
+   "source": "ফোন করছে যে ব্যক্তি, সে কে?",
+   "target": "ഫോണിൽ സംസാരിക്കുന്ന വ്യക്തി ആരാണ്?"
+  },
+  {
+   "source": "যে জায়গায়/যে সময় কিছু করি তা noun modification দিয়ে বলা যায়।",
+   "target": "നിങ്ങൾ എന്തെങ്കിലും ചെയ്യുന്ന സ്ഥലം, അല്ലെങ്കിൽ സമയം, noun modification ഉപയോഗിച്ചും പറയാം."
+  },
+  {
+   "source": "場所/時間 noun-কে আগের clause modify করে।",
+   "target": "場所/時間 പോലുള്ള ഒരു സ്ഥല അല്ലെങ്കിൽ സമയ noun അതിന് മുമ്പുള്ള clause കൊണ്ട് വിശേഷിപ്പിക്കപ്പെടുന്നു."
+  },
+  {
+   "source": "ওয়াতাশি গা বেনকিয়ো সুরু বাশো ওয়া তোশোকানদেসু।",
+   "target": "Watashi ga benkyou suru basho wa toshokan desu."
+  },
+  {
+   "source": "আমি যে জায়গায় পড়ি, তা লাইব্রেরি।",
+   "target": "ഞാൻ പഠിക്കുന്ന സ്ഥലം ലൈബ്രറിയാണ്."
+  },
+  {
+   "source": "গোহান ও তাবেরু জিকান গা আরিমাসেন।",
+   "target": "Gohan wo taberu jikan ga arimasen."
+  },
+  {
+   "source": "খাওয়ার সময় নেই।",
+   "target": "കഴിക്കാൻ സമയമില്ല."
+  },
+  {
+   "source": "বর্ণনা দিয়ে কোন ব্যক্তি/জিনিস তা জিজ্ঞাসা করা যায়।",
+   "target": "അതിനെ വിവരിച്ചുകൊണ്ട് ഏത് വ്യക്തി അല്ലെങ്കിൽ വസ്തു എന്ന് നിങ്ങൾക്ക് ചോദിക്കാം."
+  },
+  {
+   "source": "Noun modification conversation-এ খুব useful।",
+   "target": "Noun modification സംഭാഷണത്തിൽ വളരെ ഉപകാരപ്രദമാണ്."
+  },
+  {
+   "source": "মিরা সান গা সুনদেইরু ইয়ে ওয়া দোকোদেসু কা।",
+   "target": "Miraa-san ga sunde iru ie wa doko desu ka."
+  },
+  {
+   "source": "মিলার-সান যে বাড়িতে থাকেন, সেটা কোথায়?",
+   "target": "Miller-san താമസിക്കുന്ന വീട് എവിടെയാണ്?"
+  },
+  {
+   "source": "কিনো আত্তা হিতো ওয়া দারেদেসু কা।",
+   "target": "Kinou atta hito wa dare desu ka."
+  },
+  {
+   "source": "গতকাল যে ব্যক্তির সাথে দেখা হয়েছিল, তিনি কে?",
+   "target": "നിങ്ങൾ ഇന്നലെ കണ്ടുമുട്ടിയ വ്യക്തി ആരാണ്?"
+  },
+  {
+   "source": "মুখে বলার Practice",
+   "target": "ഉറക്കെ പറയാനുള്ള Practice"
+  },
+  {
+   "source": "এই বাক্যগুলো conversation-এর মতো করে ৩ বার করে পড়ুন।",
+   "target": "ഈ വാക്യങ്ങൾ ഒരു സംഭാഷണത്തിലെന്നപോലെ 3 തവണ വായിക്കൂ."
+  },
+  {
+   "source": "কোরে ওয়া নানিদেসু কা।",
+   "target": "Kore wa nan desu ka."
+  },
+  {
+   "source": "এটা কী?",
+   "target": "ഇത് എന്താണ്?"
+  },
+  {
+   "source": "কিনো কাত্তা হোনদেসু।",
+   "target": "Kinou katta hon desu."
+  },
+  {
+   "source": "গতকাল কেনা বই।",
+   "target": "ഇന്നലെ വാങ്ങിയ ഒരു പുസ്തകം."
+  },
+  {
+   "source": "আসোকো নি ইরু হিতো ওয়া দারেদেসু কা।",
+   "target": "Asoko ni iru hito wa dare desu ka."
+  },
+  {
+   "source": "ওখানে থাকা ব্যক্তি কে?",
+   "target": "അവിടെയുള്ള വ്യക്തി ആരാണ്?"
+  },
+  {
+   "source": "তানাকা সানদেসু।",
+   "target": "Tanaka-san desu."
+  },
+  {
+   "source": "তানাকা-সান।",
+   "target": "അത് Tanaka-san ആണ്."
+  },
+  {
+   "source": "আনাতা গা সুনদেইরু মাচি ওয়া দোকোদেসু কা।",
+   "target": "Anata ga sunde iru machi wa doko desu ka."
+  },
+  {
+   "source": "আপনি যে শহরে থাকেন সেটা কোথায়?",
+   "target": "നിങ്ങൾ താമസിക്കുന്ന പട്ടണം എവിടെയാണ്?"
+  },
+  {
+   "source": "✅ 母が作った料理 — modifying clause-এর subject が।",
+   "target": "✅ 母が作った料理 — ഒരു modifying clause-ന്റെ subject が എടുക്കുന്നു."
+  },
+  {
+   "source": "✅ 昨日買った本 — noun modify করতে plain form।",
+   "target": "✅ 昨日買った本 — ഒരു noun-നെ വിശേഷിപ്പിക്കാൻ plain രൂപം ഉപയോഗിക്കുന്നു."
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "തന്നെത്താൻ പരീക്ഷിക്കുക"
+  },
+  {
+   "source": "গতকাল কেনা বই = ?",
+   "target": "ഇന്നലെ വാങ്ങിയ ഒരു പുസ്തകം = ?"
+  },
+  {
+   "source": "মায়ের বানানো খাবার = ?",
+   "target": "അമ്മ ഉണ്ടാക്കിയ ഒരു വിഭവം = ?"
+  },
+  {
+   "source": "চশমা পরা ব্যক্তি = ?",
+   "target": "കണ്ണട ധരിച്ച ഒരു വ്യക്തി = ?"
+  },
+  {
+   "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 22 • Verified Premium Detailed Version",
+   "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 22 • Verified Premium Detailed Version"
+  }
+ ]
+}

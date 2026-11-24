@@ -1,0 +1,258 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "cv-builder",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "হোম",
+   "target": "الصفحة الرئيسية"
+  },
+  {
+   "source": "ও",
+   "target": "و"
+  },
+  {
+   "source": "বাংলায় বুঝে পূরণ করুন। বাংলা নির্দেশনা দেখে নিজের তথ্য লিখুন, Preview মিলিয়ে PDF হিসেবে সংরক্ষণ করুন।",
+   "target": "افهم بالعربية واملأ. اكتب معلوماتك باتباع التعليمات العربية، وقارن المعاينة، واحفظ بصيغة PDF."
+  },
+  {
+   "source": "এই ডিভাইসে draft সংরক্ষিত হয়",
+   "target": "تُحفظ المسودات على هذا الجهاز"
+  },
+  {
+   "source": "আপনার তথ্য ও ছবি এই browser-এ থাকে",
+   "target": "تبقى معلوماتك وصورك في هذا المتصفح"
+  },
+  {
+   "source": "ব্যক্তিগত",
+   "target": "البيانات الشخصية"
+  },
+  {
+   "source": "ইতিহাস",
+   "target": "التاريخ التعليمي والمهني"
+  },
+  {
+   "source": "আবেদন",
+   "target": "الطلب"
+  },
+  {
+   "source": "Template নির্বাচন",
+   "target": "اختيار القالب"
+  },
+  {
+   "source": "কাজ অনুযায়ী CV type বেছে নিন",
+   "target": "اختر نوع السيرة الذاتية وفقا للوظيفة"
+  },
+  {
+   "source": "কোনটা নেবেন?",
+   "target": "أيّها ستختار؟"
+  },
+  {
+   "source": "Baito/コンビニ/restaurant হলে",
+   "target": "إذا كان Baito/コンビニ/restaurant"
+  },
+  {
+   "source": ", সাধারণ চাকরিতে",
+   "target": "، للوظائف العامة"
+  },
+  {
+   "source": ", school/college শেষে first job হলে",
+   "target": "، للوظيفة الأولى بعد إنهاء المدرسة/الكلية"
+  },
+  {
+   "source": ", experience-based full-time job হলে",
+   "target": "، للوظيفة بدوام كامل القائمة على الخبرة"
+  },
+  {
+   "source": "সাধারণ Japanese চাকরির CV",
+   "target": "سيرة ذاتية يابانية قياسية للوظائف"
+  },
+  {
+   "source": "Student, convenience store, restaurant ইত্যাদি",
+   "target": "طالب، متجر صغير، مطعم، إلخ"
+  },
+  {
+   "source": "Education ও potential-কে গুরুত্ব",
+   "target": "التركيز على التعليم والإمكانات"
+  },
+  {
+   "source": "写真 — ছবি যোগ করুন",
+   "target": "写真 — أضف صورة"
+  },
+  {
+   "source": "ছবি সরান",
+   "target": "إزالة الصورة"
+  },
+  {
+   "source": "JPG / PNG / WebP · ৩:৪ ছবি · এই ডিভাইসেই থাকে",
+   "target": "JPG / PNG / WebP · صورة 3:4 · تبقى على هذا الجهاز"
+  },
+  {
+   "source": "ছবির মাপ",
+   "target": "حجم الصورة"
+  },
+  {
+   "source": "ডানে–বামে",
+   "target": "يمين–يسار"
+  },
+  {
+   "source": "উপরে–নিচে",
+   "target": "فوق–تحت"
+  },
+  {
+   "source": "CV-এর তারিখ — প্রয়োজনমতো বেছে নিন",
+   "target": "تاريخ السيرة الذاتية — اختر حسب الحاجة"
+  },
+  {
+   "source": "পুরো নাম",
+   "target": "الاسم الكامل"
+  },
+  {
+   "source": "নামের কাতাকানা",
+   "target": "الاسم بالكاتاكانا"
+  },
+  {
+   "source": "জন্মতারিখ",
+   "target": "تاريخ الميلاد"
+  },
+  {
+   "source": "未記載 / না লিখব",
+   "target": "未記載 / لن أحدد"
+  },
+  {
+   "source": "男 / পুরুষ",
+   "target": "男 / ذكر"
+  },
+  {
+   "source": "女 / নারী",
+   "target": "女 / أنثى"
+  },
+  {
+   "source": "その他 / অন্যান্য",
+   "target": "その他 / أخرى"
+  },
+  {
+   "source": "জাতীয়তা",
+   "target": "الجنسية"
+  },
+  {
+   "source": "মোবাইল নম্বর",
+   "target": "رقم الهاتف المحمول"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "بريد إلكتروني"
+  },
+  {
+   "source": "বর্তমান ঠিকানা + postal code",
+   "target": "العنوان الحالي + الرمز البريدي"
+  },
+  {
+   "source": "ঠিকানার কাতাকানা reading",
+   "target": "قراءة العنوان بالكاتاكانا"
+  },
+  {
+   "source": "Residence status / ভিসা",
+   "target": "حالة الإقامة / التأشيرة"
+  },
+  {
+   "source": "তারিখ অনুযায়ী লিখুন। 入学/卒業, 入社/退職 উল্লেখ করলে final CV সুন্দর হবে।",
+   "target": "اكتب حسب التاريخ. ذكر 入学/卒業 و 入社/退職 سيجعل السيرة الذاتية النهائية تبدو أجمل."
+  },
+  {
+   "source": "— শিক্ষাগত ইতিহাস",
+   "target": "— التاريخ التعليمي"
+  },
+  {
+   "source": "学歴 যোগ করুন",
+   "target": "أضف 学歴"
+  },
+  {
+   "source": "— কাজের ইতিহাস",
+   "target": "— التاريخ المهني"
+  },
+  {
+   "source": "職歴 যোগ করুন",
+   "target": "أضف 職歴"
+  },
+  {
+   "source": "— যোগ্যতা/লাইসেন্স",
+   "target": "— المؤهلات/التراخيص"
+  },
+  {
+   "source": "資格 যোগ করুন",
+   "target": "أضف 資格"
+  },
+  {
+   "source": "— Part-time তথ্য",
+   "target": "— معلومات العمل بدوام جزئي"
+  },
+  {
+   "source": "স্কুলের ক্লাসের সময়",
+   "target": "ساعات حصص المدرسة"
+  },
+  {
+   "source": "কোন দিন ও সময়ে কাজ করতে পারবেন",
+   "target": "الأيام والأوقات التي يمكنك العمل فيها"
+  },
+  {
+   "source": "কেন এই job চান + আপনার শক্তি · নিচের নমুনা সম্পাদনা করুন",
+   "target": "لماذا تريد هذه الوظيفة + نقاط قوتك · حرّر النموذج أدناه"
+  },
+  {
+   "source": "অন্য কোনো বিশেষ অনুরোধ",
+   "target": "أي طلبات خاصة أخرى"
+  },
+  {
+   "source": "আপনার কাজের অভিজ্ঞতার সংক্ষিপ্ত summary",
+   "target": "ملخص قصير لخبرتك العملية"
+  },
+  {
+   "source": "Skills — প্রতি লাইনে একটি করে লিখতে পারেন",
+   "target": "Skills — يمكنك كتابة واحدة في كل سطر"
+  },
+  {
+   "source": "নিজের শক্তি ও কাজের উদাহরণ",
+   "target": "نقاط قوتك وأمثلة على عملك"
+  },
+  {
+   "source": "শেষ ধাপ:",
+   "target": "الخطوة الأخيرة:"
+  },
+  {
+   "source": "নাম, তারিখ, ছবি ও লেখার বানান Preview-তে মিলিয়ে নিন। PDF / Print চাপলে browser-এর Print খুলবে; Destination থেকে",
+   "target": "تحقق من الاسم والتاريخ والصورة وإملاء الكتابة في المعاينة. الضغط على PDF / Print سيفتح قائمة Print في المتصفح؛ من Destination"
+  },
+  {
+   "source": "বেছে নিন।",
+   "target": "اختر."
+  },
+  {
+   "source": "Backup ফেরত আনুন",
+   "target": "استعادة النسخة الاحتياطية"
+  },
+  {
+   "source": "আগের ধাপ",
+   "target": "الخطوة السابقة"
+  },
+  {
+   "source": "পরের ধাপ",
+   "target": "الخطوة التالية"
+  },
+  {
+   "source": "নথির Preview",
+   "target": "معاينة المستند"
+  },
+  {
+   "source": "বড় করে দেখুন",
+   "target": "عرض أكبر"
+  },
+  {
+   "source": "।",
+   "target": "."
+  }
+ ]
+}

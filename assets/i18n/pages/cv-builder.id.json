@@ -1,0 +1,258 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "cv-builder",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "হোম",
+   "target": "Beranda"
+  },
+  {
+   "source": "ও",
+   "target": "Dan"
+  },
+  {
+   "source": "বাংলায় বুঝে পূরণ করুন। বাংলা নির্দেশনা দেখে নিজের তথ্য লিখুন, Preview মিলিয়ে PDF হিসেবে সংরক্ষণ করুন।",
+   "target": "Pahami dalam bahasa Bengali dan isilah. Tulis informasi Anda dengan mengikuti petunjuk bahasa Bengali, cocokkan dengan Preview, dan simpan sebagai PDF."
+  },
+  {
+   "source": "এই ডিভাইসে draft সংরক্ষিত হয়",
+   "target": "Draft tersimpan di perangkat ini"
+  },
+  {
+   "source": "আপনার তথ্য ও ছবি এই browser-এ থাকে",
+   "target": "Informasi dan foto Anda tetap berada di browser ini"
+  },
+  {
+   "source": "ব্যক্তিগত",
+   "target": "Data pribadi"
+  },
+  {
+   "source": "ইতিহাস",
+   "target": "Riwayat pendidikan dan pekerjaan"
+  },
+  {
+   "source": "আবেদন",
+   "target": "Aplikasi"
+  },
+  {
+   "source": "Template নির্বাচন",
+   "target": "Pemilihan Template"
+  },
+  {
+   "source": "কাজ অনুযায়ী CV type বেছে নিন",
+   "target": "Pilih jenis CV sesuai pekerjaan"
+  },
+  {
+   "source": "কোনটা নেবেন?",
+   "target": "Mana yang akan Anda pilih?"
+  },
+  {
+   "source": "Baito/コンビニ/restaurant হলে",
+   "target": "Jika Baito/コンビニ/restaurant"
+  },
+  {
+   "source": ", সাধারণ চাকরিতে",
+   "target": ", untuk pekerjaan umum"
+  },
+  {
+   "source": ", school/college শেষে first job হলে",
+   "target": ", untuk pekerjaan pertama setelah lulus sekolah/kuliah"
+  },
+  {
+   "source": ", experience-based full-time job হলে",
+   "target": ", untuk pekerjaan full-time berbasis pengalaman"
+  },
+  {
+   "source": "সাধারণ Japanese চাকরির CV",
+   "target": "CV standar untuk pekerjaan Jepang"
+  },
+  {
+   "source": "Student, convenience store, restaurant ইত্যাদি",
+   "target": "Student, convenience store, restaurant, dll."
+  },
+  {
+   "source": "Education ও potential-কে গুরুত্ব",
+   "target": "Penekanan pada Education dan potensi"
+  },
+  {
+   "source": "写真 — ছবি যোগ করুন",
+   "target": "写真 — Tambahkan foto"
+  },
+  {
+   "source": "ছবি সরান",
+   "target": "Hapus foto"
+  },
+  {
+   "source": "JPG / PNG / WebP · ৩:৪ ছবি · এই ডিভাইসেই থাকে",
+   "target": "JPG / PNG / WebP · Foto 3:4 · Tetap di perangkat ini"
+  },
+  {
+   "source": "ছবির মাপ",
+   "target": "Ukuran foto"
+  },
+  {
+   "source": "ডানে–বামে",
+   "target": "Kanan–kiri"
+  },
+  {
+   "source": "উপরে–নিচে",
+   "target": "Atas–bawah"
+  },
+  {
+   "source": "CV-এর তারিখ — প্রয়োজনমতো বেছে নিন",
+   "target": "Tanggal CV — pilih sesuai kebutuhan"
+  },
+  {
+   "source": "পুরো নাম",
+   "target": "Nama lengkap"
+  },
+  {
+   "source": "নামের কাতাকানা",
+   "target": "Nama dalam Katakana"
+  },
+  {
+   "source": "জন্মতারিখ",
+   "target": "Tanggal lahir"
+  },
+  {
+   "source": "未記載 / না লিখব",
+   "target": "未記載 / Tidak menulis"
+  },
+  {
+   "source": "男 / পুরুষ",
+   "target": "男 / Laki-laki"
+  },
+  {
+   "source": "女 / নারী",
+   "target": "女 / Perempuan"
+  },
+  {
+   "source": "その他 / অন্যান্য",
+   "target": "その他 / Lainnya"
+  },
+  {
+   "source": "জাতীয়তা",
+   "target": "Kewarganegaraan"
+  },
+  {
+   "source": "মোবাইল নম্বর",
+   "target": "Nomor ponsel"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "Email"
+  },
+  {
+   "source": "বর্তমান ঠিকানা + postal code",
+   "target": "Alamat saat ini + postal code"
+  },
+  {
+   "source": "ঠিকানার কাতাকানা reading",
+   "target": "Bacaan Katakana alamat"
+  },
+  {
+   "source": "Residence status / ভিসা",
+   "target": "Residence status / Visa"
+  },
+  {
+   "source": "তারিখ অনুযায়ী লিখুন। 入学/卒業, 入社/退職 উল্লেখ করলে final CV সুন্দর হবে।",
+   "target": "Tulis menurut urutan tanggal. Menyebutkan 入学/卒業, 入社/退職 akan membuat CV final terlihat bagus."
+  },
+  {
+   "source": "— শিক্ষাগত ইতিহাস",
+   "target": "— Riwayat pendidikan"
+  },
+  {
+   "source": "学歴 যোগ করুন",
+   "target": "Tambahkan 学歴"
+  },
+  {
+   "source": "— কাজের ইতিহাস",
+   "target": "— Riwayat pekerjaan"
+  },
+  {
+   "source": "職歴 যোগ করুন",
+   "target": "Tambahkan 職歴"
+  },
+  {
+   "source": "— যোগ্যতা/লাইসেন্স",
+   "target": "— Kualifikasi/Lisensi"
+  },
+  {
+   "source": "資格 যোগ করুন",
+   "target": "Tambahkan 資格"
+  },
+  {
+   "source": "— Part-time তথ্য",
+   "target": "— Informasi Part-time"
+  },
+  {
+   "source": "স্কুলের ক্লাসের সময়",
+   "target": "Jam kelas sekolah"
+  },
+  {
+   "source": "কোন দিন ও সময়ে কাজ করতে পারবেন",
+   "target": "Hari dan waktu Anda dapat bekerja"
+  },
+  {
+   "source": "কেন এই job চান + আপনার শক্তি · নিচের নমুনা সম্পাদনা করুন",
+   "target": "Mengapa Anda menginginkan pekerjaan ini + kekuatan Anda · Edit contoh di bawah ini"
+  },
+  {
+   "source": "অন্য কোনো বিশেষ অনুরোধ",
+   "target": "Permintaan khusus lainnya"
+  },
+  {
+   "source": "আপনার কাজের অভিজ্ঞতার সংক্ষিপ্ত summary",
+   "target": "Ringkasan singkat pengalaman kerja Anda"
+  },
+  {
+   "source": "Skills — প্রতি লাইনে একটি করে লিখতে পারেন",
+   "target": "Skills — Anda dapat menulis satu per baris"
+  },
+  {
+   "source": "নিজের শক্তি ও কাজের উদাহরণ",
+   "target": "Kekuatan Anda dan contoh pekerjaan"
+  },
+  {
+   "source": "শেষ ধাপ:",
+   "target": "Langkah terakhir:"
+  },
+  {
+   "source": "নাম, তারিখ, ছবি ও লেখার বানান Preview-তে মিলিয়ে নিন। PDF / Print চাপলে browser-এর Print খুলবে; Destination থেকে",
+   "target": "Cocokkan nama, tanggal, foto, dan ejaan tulisan di Preview. Menekan PDF / Print akan membuka menu Print browser; dari Destination"
+  },
+  {
+   "source": "বেছে নিন।",
+   "target": "pilih."
+  },
+  {
+   "source": "Backup ফেরত আনুন",
+   "target": "Pulihkan backup"
+  },
+  {
+   "source": "আগের ধাপ",
+   "target": "Langkah sebelumnya"
+  },
+  {
+   "source": "পরের ধাপ",
+   "target": "Langkah berikutnya"
+  },
+  {
+   "source": "নথির Preview",
+   "target": "Preview Dokumen"
+  },
+  {
+   "source": "বড় করে দেখুন",
+   "target": "Lihat lebih besar"
+  },
+  {
+   "source": "।",
+   "target": "."
+  }
+ ]
+}

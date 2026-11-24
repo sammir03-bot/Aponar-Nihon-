@@ -1,0 +1,214 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "n5-grammar-lesson-16-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Grammar Lesson 16 | て-form Connection・てから・Adjective Connection | আপনার নিহোন",
+   "target": "N5 Grammar Lesson 16 | て-form Connection・てから・Adjective Connection | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "একাধিক কাজ/বর্ণনা একসাথে বলা — তারপর/কারণ/গুণ যুক্ত করা",
+   "target": "നിരവധി പ്രവൃത്തികളോ വിവരണങ്ങളോ ഒരുമിച്ച് പറയൽ — ക്രമം, കാരണങ്ങൾ, ഗുണങ്ങൾ എന്നിവ ബന്ധിപ്പിക്കൽ"
+  },
+  {
+   "source": "Grammar শুরু",
+   "target": "Grammar തുടങ്ങുക"
+  },
+  {
+   "source": "আজকের Learning Goal",
+   "target": "ഇന്നത്തെ Learning Goal"
+  },
+  {
+   "source": "কাজগুলো ক্রমানুসারে বলা",
+   "target": "പ്രവൃത്തികൾ ക്രമത്തിൽ പറയൽ"
+  },
+  {
+   "source": "এক কাজের পরে আরেক কাজ",
+   "target": "ഒരു പ്രവൃത്തിക്ക് ശേഷം മറ്റൊന്ന്"
+  },
+  {
+   "source": "Adjective যুক্ত করা",
+   "target": "Adjective-കൾ ചേർക്കൽ"
+  },
+  {
+   "source": "সহজ ব্যাখ্যা + structure + example",
+   "target": "ലളിതമായ വിശദീകരണം + structure + example"
+  },
+  {
+   "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+   "target": "ഓരോ pattern-നും ആദ്യം structure നോക്കൂ, പിന്നെ example-കൾ ഉറക്കെ പറയൂ. Audio button അമർത്തിയാൽ Japanese വാക്യം കേൾക്കാം."
+  },
+  {
+   "source": "একাধিক কাজ ক্রমানুসারে বা ধারাবাহিকভাবে বলতে te-form দিয়ে verbগুলো যুক্ত করা হয়।",
+   "target": "നിരവധി പ്രവൃത്തികൾ ക്രമത്തിലോ ഒരു ശ്രേണിയായോ പറയാൻ, verb-കൾ te-form ഉപയോഗിച്ച് ബന്ധിപ്പിക്കുന്നു."
+  },
+  {
+   "source": "শেষ verb-এ tense/polite form থাকে; আগের verbগুলো te-form।",
+   "target": "അവസാന verb കാലവും മര്യാദയുള്ള രൂപവും വഹിക്കുന്നു; മുമ്പുള്ള verb-കൾ te-form-ൽ തുടരുന്നു."
+  },
+  {
+   "source": "আসা রোকুজি নি ওকিতে, কাও ও আরাত্তে, আসাগোহান ও তাবেমাসু।",
+   "target": "Asa rokuji ni okite, kao wo aratte, asagohan wo tabemasu."
+  },
+  {
+   "source": "সকাল ৬টায় উঠে, মুখ ধুয়ে, নাস্তা খাই।",
+   "target": "ഞാൻ രാവിലെ 6 മണിക്ക് എഴുന്നേറ്റ്, മുഖം കഴുകി, പ്രഭാതഭക്ഷണം കഴിക്കുന്നു."
+  },
+  {
+   "source": "গিনকো এ ইত্তে, ওকানে ও দাশিমাসু।",
+   "target": "Ginkou e itte, okane wo dashimasu."
+  },
+  {
+   "source": "ব্যাংকে গিয়ে টাকা তুলি।",
+   "target": "ഞാൻ ബാങ്കിൽ പോയി പണം പിൻവലിക്കുന്നു."
+  },
+  {
+   "source": "এক কাজ শেষ করার পরে আরেক কাজ করব — এই order জোর দিয়ে বোঝাতে।",
+   "target": "ഒരു പ്രവൃത്തി പൂർത്തിയാക്കി, പിന്നെ അടുത്തത് ചെയ്യുന്നു എന്ന ക്രമത്തിന് ഊന്നൽ നൽകാൻ."
+  },
+  {
+   "source": "てから = করার পরে। একই বাক্যে একবার ব্যবহার করলেই natural।",
+   "target": "てから = എന്തെങ്കിലും ചെയ്തതിന് ശേഷം. ഒരു വാക്യത്തിൽ ഒരിക്കൽ ഉപയോഗിച്ചാൽ സ്വാഭാവികമായി തോന്നാൻ മതിയാകും."
+  },
+  {
+   "source": "শুকুদাই ও শিতে কারা, তেরেবি ও মিমাসু।",
+   "target": "Shukudai wo shite kara, terebi wo mimasu."
+  },
+  {
+   "source": "হোমওয়ার্ক করার পরে টিভি দেখি।",
+   "target": "ഹോംവർക്ക് ചെയ്തതിന് ശേഷം, ഞാൻ TV കാണുന്നു."
+  },
+  {
+   "source": "শাওয়া ও আবিতে কারা, নেমাসু।",
+   "target": "Shawaa wo abite kara, nemasu."
+  },
+  {
+   "source": "গোসল করার পরে ঘুমাই।",
+   "target": "കുളിച്ചതിന് ശേഷം, ഞാൻ ഉറങ്ങാൻ പോകുന്നു."
+  },
+  {
+   "source": "দুই い-adjective একসাথে যুক্ত করতে শেষের い বাদ দিয়ে くて।",
+   "target": "രണ്ട് い-adjective-കൾ ബന്ധിപ്പിക്കാൻ, അവസാനത്തെ い ഒഴിവാക്കി くて ചേർക്കൂ."
+  },
+  {
+   "source": "কোনো রিয়োরি ওয়া ইয়াসুকুতে, ওইশিইদেসু।",
+   "target": "Kono ryouri wa yasukute, oishii desu."
+  },
+  {
+   "source": "এই খাবার সস্তা এবং সুস্বাদু।",
+   "target": "ഈ വിഭവം വിലകുറഞ്ഞതും രുചികരവുമാണ്."
+  },
+  {
+   "source": "কোনো হেয়া ওয়া হিরোকুতে, আকারুইদেসু।",
+   "target": "Kono heya wa hirokute, akarui desu."
+  },
+  {
+   "source": "এই ঘর প্রশস্ত এবং উজ্জ্বল।",
+   "target": "ഈ മുറി വിശാലവും പ്രകാശമുള്ളതുമാണ്."
+  },
+  {
+   "source": "な-adjective বা noun যুক্ত করতে で ব্যবহৃত হয়।",
+   "target": "ഒരു な-adjective അല്ലെങ്കിൽ ഒരു noun ബന്ധിപ്പിക്കാൻ で ഉപയോഗിക്കുന്നു."
+  },
+  {
+   "source": "কানোজো ওয়া শিনসেৎসুদে, কিরেইদেসু।",
+   "target": "Kanojo wa shinsetsu de, kirei desu."
+  },
+  {
+   "source": "তিনি দয়ালু এবং সুন্দর।",
+   "target": "അവൾ ദയയുള്ളവളും സുന്ദരിയുമാണ്."
+  },
+  {
+   "source": "চিচি ওয়া ইশা দে, হাহা ওয়া সেনসেইদেসু।",
+   "target": "Chichi wa isha de, haha wa sensei desu."
+  },
+  {
+   "source": "বাবা ডাক্তার, মা শিক্ষক।",
+   "target": "എന്റെ അച്ഛൻ ഒരു ഡോക്ടറാണ്, അമ്മ ഒരു അധ്യാപികയാണ്."
+  },
+  {
+   "source": "কারো/কিছুর বিশেষ অংশের বৈশিষ্ট্য বলতে は + が structure।",
+   "target": "ഒരു വ്യക്തിയുടെയോ വസ്തുവിന്റെയോ ഒരു പ്രത്യേക ഭാഗത്തിന്റെ സവിശേഷത വിവരിക്കാൻ, は + が structure ഉപയോഗിക്കൂ."
+  },
+  {
+   "source": "জো ওয়া হানা গা নাগাইদেসু।",
+   "target": "Zou wa hana ga nagai desu."
+  },
+  {
+   "source": "হাতির শুঁড় লম্বা।",
+   "target": "ഒരു ആനയുടെ തുമ്പിക്കൈ നീളമുള്ളതാണ്."
+  },
+  {
+   "source": "ইয়ামাদা সান ওয়া কামি গা কুরোইদেসু।",
+   "target": "Yamada-san wa kami ga kuroi desu."
+  },
+  {
+   "source": "ইয়ামাদা-সানের চুল কালো।",
+   "target": "Yamada-san-ന്റെ മുടി കറുത്തതാണ്."
+  },
+  {
+   "source": "মুখে বলার Practice",
+   "target": "ഉറക്കെ പറയാനുള്ള Practice"
+  },
+  {
+   "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+   "target": "ഈ വാക്യങ്ങൾ ഒരു interview/classroom conversation-ലെന്നപോലെ 3 തവണ ഉറക്കെ വായിക്കൂ."
+  },
+  {
+   "source": "মাইয়াসা, নানি ও শিমাসু কা।",
+   "target": "Maiasa, nani wo shimasu ka."
+  },
+  {
+   "source": "প্রতিদিন সকালে কী করেন?",
+   "target": "നിങ്ങൾ എല്ലാ രാവിലെയും എന്ത് ചെയ്യുന്നു?"
+  },
+  {
+   "source": "ওকিতে, শাওয়া ও আবিতে, আসা গোহান ও তাবেমাসু।",
+   "target": "Okite, shawaa wo abite, asagohan wo tabemasu."
+  },
+  {
+   "source": "উঠে, গোসল করে, নাস্তা খাই।",
+   "target": "ഞാൻ എഴുന്നേറ്റ്, കുളിച്ച്, പ്രഭാതഭക്ഷണം കഴിക്കുന്നു."
+  },
+  {
+   "source": "বেনকিয়ো শিতে কারা, নানি ও শিমাসু কা।",
+   "target": "Benkyou shite kara, nani wo shimasu ka."
+  },
+  {
+   "source": "পড়ার পরে কী করেন?",
+   "target": "പഠിച്ചതിന് ശേഷം നിങ്ങൾ എന്ത് ചെയ്യുന്നു?"
+  },
+  {
+   "source": "নেমাসু।",
+   "target": "Nemasu."
+  },
+  {
+   "source": "ঘুমাই।",
+   "target": "ഞാൻ ഉറങ്ങുന്നു."
+  },
+  {
+   "source": "আনাতা নো মাচি ওয়া দোদেসু কা।",
+   "target": "Anata no machi wa dou desu ka."
+  },
+  {
+   "source": "আপনার শহর কেমন?",
+   "target": "നിങ്ങളുടെ പട്ടണം എങ്ങനെയുണ്ട്?"
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "തന്നെത്താൻ പരീക്ഷിക്കുക"
+  },
+  {
+   "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 16 • Verified Premium Detailed Version",
+   "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 16 • Verified Premium Detailed Version"
+  }
+ ]
+}

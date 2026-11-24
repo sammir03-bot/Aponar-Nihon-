@@ -1,0 +1,266 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "Vocabulary-lesson3",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Vocabulary Lesson 3 | আপনার নিহোন",
+   "target": "N5 Vocabulary Lesson 3 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "N5 Lesson 3 · স্থান ও দিক",
+   "target": "N5 Lesson 3 · സ്ഥലങ്ങളും ദിശകളും"
+  },
+  {
+   "source": "এখানে, সেখানে, ওখানে — জিজ্ঞাসা করা ও দাম জানার শব্দ। প্রতিটি কার্ড অ্যানিমেশন সহ পড়ুন।",
+   "target": "ഇവിടെ, അവിടെ, അവിടെ ദൂരെ — ചോദിക്കാനും വിലകൾക്കുമുള്ള പദങ്ങൾ. ഓരോ കാർഡും അതിന്റെ ആനിമേഷനോടൊപ്പം വായിക്കുക."
+  },
+  {
+   "source": "৪০টি শব্দ",
+   "target": "40 പദങ്ങൾ"
+  },
+  {
+   "source": "দিক ও তলা",
+   "target": "ദിശകളും നിലകളും"
+  },
+  {
+   "source": "📍 মূল প্যাটার্ন",
+   "target": "📍 പ്രധാന pattern"
+  },
+  {
+   "source": "[স্থান] は どこですか？ / いくらですか？",
+   "target": "[സ്ഥലം] は どこですか？ / いくらですか？"
+  },
+  {
+   "source": "এখানে",
+   "target": "ഇവിടെ"
+  },
+  {
+   "source": "স্থান",
+   "target": "സ്ഥലം"
+  },
+  {
+   "source": "সেখানে (কাছাকাছি)",
+   "target": "അവിടെ (അടുത്ത്)"
+  },
+  {
+   "source": "ওখানে (দূরে)",
+   "target": "അവിടെ (ദൂരെ)"
+  },
+  {
+   "source": "কোথায়",
+   "target": "എവിടെ"
+  },
+  {
+   "source": "প্রশ্ন",
+   "target": "ചോദ്യങ്ങൾ"
+  },
+  {
+   "source": "এই দিক",
+   "target": "ഈ വഴി"
+  },
+  {
+   "source": "দিক",
+   "target": "ദിശ"
+  },
+  {
+   "source": "ওই দিক",
+   "target": "ആ വഴി (ശ്രോതാവിനടുത്ത്)"
+  },
+  {
+   "source": "সেই দিক",
+   "target": "ആ വഴി (ദൂരെ)"
+  },
+  {
+   "source": "কোন দিক",
+   "target": "ഏത് വഴി"
+  },
+  {
+   "source": "ক্লাসরুম",
+   "target": "ക്ലാസ് മുറി"
+  },
+  {
+   "source": "সুবিধা",
+   "target": "സൗകര്യം"
+  },
+  {
+   "source": "খাবার রুম / ক্যান্টিন",
+   "target": "ഭക്ഷണ ഹാൾ / കാന്റീൻ"
+  },
+  {
+   "source": "অফিস",
+   "target": "ഓഫീസ്"
+  },
+  {
+   "source": "মিটিং রুম",
+   "target": "മീറ്റിംഗ് റൂം"
+  },
+  {
+   "source": "রিসেপশন",
+   "target": "റിസെപ്ഷൻ ഡെസ്ക്"
+  },
+  {
+   "source": "লবি",
+   "target": "ലോബി"
+  },
+  {
+   "source": "রুম",
+   "target": "മുറി"
+  },
+  {
+   "source": "টয়লেট",
+   "target": "ടോയ്‌ലെറ്റ്"
+  },
+  {
+   "source": "টয়লেট (ভদ্রভাবে)",
+   "target": "വിശ്രമമുറി (മാന്യമായി)"
+  },
+  {
+   "source": "সিঁড়ি",
+   "target": "പടികൾ"
+  },
+  {
+   "source": "ভবন",
+   "target": "കെട്ടിടം"
+  },
+  {
+   "source": "লিফট",
+   "target": "ലിഫ്റ്റ്"
+  },
+  {
+   "source": "এসকেলেটর",
+   "target": "എസ്കലേറ്റർ"
+  },
+  {
+   "source": "দেশ",
+   "target": "രാജ്യം"
+  },
+  {
+   "source": "কোম্পানি",
+   "target": "കമ്പനി"
+  },
+  {
+   "source": "বাড়ি",
+   "target": "വീട്"
+  },
+  {
+   "source": "টেলিফোন",
+   "target": "ടെലിഫോൺ"
+  },
+  {
+   "source": "জিনিস",
+   "target": "വസ്തു"
+  },
+  {
+   "source": "জুতা",
+   "target": "ഷൂസ്"
+  },
+  {
+   "source": "নেকটাই",
+   "target": "നെക്ടൈ"
+  },
+  {
+   "source": "পোশাক",
+   "target": "വസ്ത്രം"
+  },
+  {
+   "source": "ওয়াইন",
+   "target": "വൈൻ"
+  },
+  {
+   "source": "খাবার",
+   "target": "ഭക്ഷണം"
+  },
+  {
+   "source": "সিগারেট",
+   "target": "സിഗരറ്റ്"
+  },
+  {
+   "source": "বিক্রয় স্থান / কাউন্টার",
+   "target": "വിൽപ്പന സ്ഥലം / കൗണ്ടർ"
+  },
+  {
+   "source": "দোকান",
+   "target": "കട / സ്റ്റോർ"
+  },
+  {
+   "source": "নিচতলা",
+   "target": "ബേസ്മെന്റ് നില"
+  },
+  {
+   "source": "তলা",
+   "target": "നില"
+  },
+  {
+   "source": "তলা (floor)",
+   "target": "നില (storey)"
+  },
+  {
+   "source": "কত তলা",
+   "target": "ഏത് നില"
+  },
+  {
+   "source": "ইয়েন",
+   "target": "യെൻ"
+  },
+  {
+   "source": "মুদ্রা",
+   "target": "നാണയം"
+  },
+  {
+   "source": "কত দাম",
+   "target": "എത്രയാണ് (വില)"
+  },
+  {
+   "source": "কোনটি",
+   "target": "ഏതാണ്"
+  },
+  {
+   "source": "কোন ~",
+   "target": "ഏത് ~"
+  },
+  {
+   "source": "মাফ করবেন / sorry",
+   "target": "ക്ഷമിക്കണം / sorry"
+  },
+  {
+   "source": "ভদ্র ভাষায় “হয়”",
+   "target": "“ആണ്” എന്നതിന്റെ മാന്യമായ പദം"
+  },
+  {
+   "source": "দেখান",
+   "target": "ദയവായി കാണിച്ചുതരൂ"
+  },
+  {
+   "source": "দিন",
+   "target": "ദിവസങ്ങൾ"
+  },
+  {
+   "source": "প্র্যাকটিস বাক্য",
+   "target": "പ്രാക്ടീസ് വാക്യങ്ങൾ"
+  },
+  {
+   "source": "ভোকাব সিরিজ",
+   "target": "Vocab പരമ്പര"
+  },
+  {
+   "source": "পরবর্তী লেসন",
+   "target": "അടുത്ത പാഠം"
+  },
+  {
+   "source": "◀ ৪০টি শব্দ · স্থান ও দাম জানার মূল শব্দ ▶",
+   "target": "◀ 40 പദങ്ങൾ · സ്ഥലങ്ങൾക്കും വിലകൾക്കുമുള്ള പ്രധാന പദങ്ങൾ ▶"
+  },
+  {
+   "source": "どこ？ いくら？ — নিজে প্রশ্ন করো: かいしゃはどこですか？ それはいくらですか？",
+   "target": "どこ？ いくら？ — സ്വയം ചോദ്യങ്ങൾ ചോദിക്കുക: かいしゃはどこですか？ それはいくらですか？"
+  }
+ ]
+}

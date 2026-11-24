@@ -1,0 +1,258 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "n5-grammar-lesson-24-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Grammar Lesson 24 | くれます・てあげます・てもらいます・てくれます | আপনার নিহোন",
+   "target": "N5 Grammar Lesson 24 | くれます・てあげます・てもらいます・てくれます | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "কারো জন্য কিছু করা/করিয়ে নেওয়া/আমার জন্য করে দেওয়া",
+   "target": "فعل شيء لشخص ما / تلقي معروف / أن يُفعل لي"
+  },
+  {
+   "source": "Grammar শুরু",
+   "target": "ابدأ Grammar"
+  },
+  {
+   "source": "আজকের Learning Goal",
+   "target": "هدف التعلم اليوم"
+  },
+  {
+   "source": "আমি করে দিই",
+   "target": "أفعل لشخص ما"
+  },
+  {
+   "source": "আমি করিয়ে পাই",
+   "target": "أتلقى معروف أن يُفعل لي"
+  },
+  {
+   "source": "আমার জন্য করে দেয়",
+   "target": "شخص ما يفعل لي"
+  },
+  {
+   "source": "সহজ ব্যাখ্যা + structure + example",
+   "target": "شرح بسيط + structure + example"
+  },
+  {
+   "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+   "target": "لكل نمط، انظر أولا إلى البنية، ثم قل الأمثلة بصوت عال. إذا ضغطت على زر الصوت، فستتمكن من سماع الجملة اليابانية."
+  },
+  {
+   "source": "কেউ আমাকে বা আমার ঘনিষ্ঠ কাউকে কোনো জিনিস দিলে くれます ব্যবহার হয়। わたしに জানা থাকলে বাদ দেওয়া যায়।",
+   "target": "عندما يعطي شخص شيئا لي أو لشخص قريب مني، تُستخدم くれます. إذا كان わたしに مفهوما، يمكن حذفه."
+  },
+  {
+   "source": "আমার দিকে gift এলে あげます নয়, くれます। কে দিয়েছে জিজ্ঞাসা/জোর করলে person + が হয়।",
+   "target": "عندما تأتي هدية نحوي تكون くれます، لا あげます. عند السؤال أو التأكيد على من أعطى، يأخذ الشخص が."
+  },
+  {
+   "source": "তোমোদাচি গা ওয়াতাশি নি হানা ও কুরেমাশিতা।",
+   "target": "Tomodachi ga watashi ni hana wo kuremashita."
+  },
+  {
+   "source": "বন্ধু আমাকে ফুল দিয়েছে।",
+   "target": "أعطاني صديقي زهورا."
+  },
+  {
+   "source": "চিচি গা জিতেনশা ও কুরেমাশিতা।",
+   "target": "Chichi ga jitensha wo kuremashita."
+  },
+  {
+   "source": "বাবা আমাকে সাইকেল দিয়েছেন।",
+   "target": "أعطاني أبي دراجة."
+  },
+  {
+   "source": "আমি/কেউ অন্য কারও উপকারের জন্য কিছু করে দিলে Vてあげます।",
+   "target": "عندما أفعل أنا أو شخص آخر شيئا لمصلحة شخص آخر، تُستخدم Vてあげます."
+  },
+  {
+   "source": "উচ্চপদস্থ বা অপরিচিত listener-কে সরাসরি বললে patronizing শোনাতে পারে; offer-এ Vましょうか নিরাপদ।",
+   "target": "إذا قيلت مباشرة لكبير أو غريب فقد تبدو متعالية؛ للعرض، Vましょうか أكثر أمانا."
+  },
+  {
+   "source": "ওয়াতাশি ওয়া তোমোদাচি নি নিহোনগো ও ওশিয়েতেআগেমাশিতা।",
+   "target": "Watashi wa tomodachi ni nihongo wo oshiete agemashita."
+  },
+  {
+   "source": "আমি বন্ধুকে জাপানি শিখিয়ে দিয়েছি।",
+   "target": "علمت صديقي اليابانية (كمعروف)."
+  },
+  {
+   "source": "কোদোমো নি হোন ও ইয়োনদেআগেমাসু।",
+   "target": "Kodomo ni hon wo yonde agemasu."
+  },
+  {
+   "source": "শিশুকে বই পড়ে দেব।",
+   "target": "سأقرأ كتابا للطفل."
+  },
+  {
+   "source": "কারও কাছ থেকে কাজ/সাহায্য করিয়ে তার সুবিধা গ্রহণ করলে Vてもらいます।",
+   "target": "عندما تتلقى فائدة قيام شخص بمهمة أو مساعدتك، تُستخدم Vてもらいます."
+  },
+  {
+   "source": "যিনি কাজটি করেন তিনি に (কখনো から), সুবিধা গ্রহণকারী は।",
+   "target": "الشخص الذي يقوم بالعمل يأخذ に (أحيانا から)؛ ومن يتلقى الفائدة يأخذ は."
+  },
+  {
+   "source": "সেনসেই নি নিহোনগো ও ওশিয়েতেমোরাইমাশিতা।",
+   "target": "Sensei ni nihongo wo oshiete moraimashita."
+  },
+  {
+   "source": "শিক্ষকের কাছ থেকে জাপানি শিখেছি।",
+   "target": "جعلت معلمي يعلمني اليابانية."
+  },
+  {
+   "source": "তোমোদাচি নি তেৎসুদাত্তেমোরাইমাশিতা।",
+   "target": "Tomodachi ni tetsudatte moraimashita."
+  },
+  {
+   "source": "বন্ধুর কাছ থেকে সাহায্য পেয়েছি।",
+   "target": "تلقيت مساعدة من صديقي."
+  },
+  {
+   "source": "কেউ স্বেচ্ছায় আমার/আমাদের উপকারের জন্য কাজ করে দিলে Vてくれます।",
+   "target": "عندما يفعل شخص طوعا شيئا لمصلحتي أو مصلحتنا، تُستخدم Vてくれます."
+  },
+  {
+   "source": "কাজের কর্তা が/は; সুবিধা আমার দিকে আসে। わたしに অনেক সময় বাদ যায়।",
+   "target": "الفاعل يأخذ が/は؛ والفائدة تأتي نحوي. わたしに غالبا تُحذف."
+  },
+  {
+   "source": "তোমোদাচি গা তেৎসুদাত্তেকুরেমাশিতা।",
+   "target": "Tomodachi ga tetsudatte kuremashita."
+  },
+  {
+   "source": "বন্ধু আমাকে সাহায্য করেছে।",
+   "target": "ساعدني صديقي."
+  },
+  {
+   "source": "হাহা গা রিয়োরি ও ৎসুকুত্তেকুরেমাশিতা।",
+   "target": "Haha ga ryouri wo tsukutte kuremashita."
+  },
+  {
+   "source": "মা আমার জন্য রান্না করেছেন।",
+   "target": "طَبخت أمي لي."
+  },
+  {
+   "source": "কে আমার জন্য কাজটি করেছে জানতে だれが ব্যবহার হয়; উত্তরের নতুন subject-ও が নেয়।",
+   "target": "لمعرفة من فعل شيئا لي، تُستخدم だれが؛ والفاعل الجديد في الإجابة يأخذ が أيضا."
+  },
+  {
+   "source": "প্রশ্নে だれは নয়—unknown subject হওয়ায় だれが।",
+   "target": "في السؤال ليست だれは — الفاعل غير معروف، لذا だれが."
+  },
+  {
+   "source": "দারে গা নিমোৎসু ও মোত্তেকুরেমাশিতা কা।",
+   "target": "Dare ga nimotsu wo motte kuremashita ka."
+  },
+  {
+   "source": "কে আপনার মালপত্র বহন করে দিয়েছে?",
+   "target": "من حمل أمتعتك لك؟"
+  },
+  {
+   "source": "তানাকা সান গা মোত্তেকুরেমাশিতা।",
+   "target": "Tanaka-san ga motte kuremashita."
+  },
+  {
+   "source": "তানাকা বহন করে দিয়েছেন।",
+   "target": "حملها تاناكا-سان لي."
+  },
+  {
+   "source": "あげる = আমার/subject থেকে বাইরে; もらう = আমি/subject সুবিধা গ্রহণ করি; くれる = অন্যের কাছ থেকে আমার দিকে সুবিধা আসে।",
+   "target": "あげる = إلى الخارج مني / من الفاعل؛ もらう = أنا / الفاعل أتلقى الفائدة؛ くれる = الفائدة تأتي من شخص آخر نحوي."
+  },
+  {
+   "source": "কাজ একই হলেও viewpoint বদলালে verb বদলায়। আগে কে benefit পাচ্ছে তা নির্ধারণ করুন।",
+   "target": "حتى عندما يكون الفعل نفسه، يتغير الفعل مع وجهة النظر. حدد أولا من يتلقى الفائدة."
+  },
+  {
+   "source": "ওয়াতাশি ওয়া ইমোতো নি শাশিন ও তোত্তেআগেমাশিতা।",
+   "target": "Watashi wa imouto ni shashin wo totte agemashita."
+  },
+  {
+   "source": "আমি বোনের ছবি তুলে দিয়েছি।",
+   "target": "التقطت صورة لأختي الصغرى."
+  },
+  {
+   "source": "ওয়াতাশি ওয়া তোমোদাচি নি শাশিন ও তোত্তেমোরাইমাশিতা।",
+   "target": "Watashi wa tomodachi ni shashin wo totte moraimashita."
+  },
+  {
+   "source": "বন্ধুকে দিয়ে ছবি তুলিয়েছি।",
+   "target": "جعلت صديقي يلتقط صورة لي."
+  },
+  {
+   "source": "তোমোদাচি গা শাশিন ও তোত্তেকুরেমাশিতা।",
+   "target": "Tomodachi ga shashin wo totte kuremashita."
+  },
+  {
+   "source": "বন্ধু আমার জন্য ছবি তুলেছে।",
+   "target": "التقط صديقي صورة لي."
+  },
+  {
+   "source": "মুখে বলার Practice",
+   "target": "تدريب على النطق"
+  },
+  {
+   "source": "এই বাক্যগুলো conversation-এর মতো করে ৩ বার করে পড়ুন।",
+   "target": "اقرأ هذه الجمل 3 مرات، كما لو في محادثة."
+  },
+  {
+   "source": "তোমোদাচি নি নানি ও শিতেআগেমাশিতা কা।",
+   "target": "Tomodachi ni nani wo shite agemashita ka."
+  },
+  {
+   "source": "বন্ধুর জন্য কী করেছেন?",
+   "target": "ماذا فعلت لصديقك؟"
+  },
+  {
+   "source": "নিহোনগো ও ওশিয়েতেআগেমাশিতা।",
+   "target": "Nihongo wo oshiete agemashita."
+  },
+  {
+   "source": "জাপানি শিখিয়ে দিয়েছি।",
+   "target": "علمتهم اليابانية."
+  },
+  {
+   "source": "দারে নি তেৎসুদাত্তেমোরাইমাশিতা কা।",
+   "target": "Dare ni tetsudatte moraimashita ka."
+  },
+  {
+   "source": "কার কাছ থেকে সাহায্য পেয়েছেন?",
+   "target": "من تلقيت المساعدة منه؟"
+  },
+  {
+   "source": "✅ 友達が私を手伝ってくれました。 — আমার জন্য করলে くれます।",
+   "target": "✅ 友達が私を手伝ってくれました。 — عندما يُفعل لي، تُستخدم くれます."
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "اختبر نفسك"
+  },
+  {
+   "source": "বন্ধু আমাকে সাহায্য করে দিয়েছে = ?",
+   "target": "ساعدني صديقي (كمعروف) = ?"
+  },
+  {
+   "source": "আমি শিক্ষকের কাছ থেকে শিখেছি = ?",
+   "target": "تعلمت من معلمي = ?"
+  },
+  {
+   "source": "কারো জন্য করে দিই = ?",
+   "target": "أفعل لشخص ما = ?"
+  },
+  {
+   "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 24 • Verified Premium Detailed Version",
+   "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 24 • Verified Premium Detailed Version"
+  }
+ ]
+}

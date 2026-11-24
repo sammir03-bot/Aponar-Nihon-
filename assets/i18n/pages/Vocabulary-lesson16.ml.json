@@ -1,0 +1,274 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "Vocabulary-lesson16",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Vocabulary Lesson 16 | আপনার নিহোন",
+   "target": "N5 Vocabulary Lesson 16 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "N5 Lesson 16 · ক্রম ও পরিবহন",
+   "target": "N5 Lesson 16 · ക്രമവും ഗതാഗതവും"
+  },
+  {
+   "source": "৫০+ শব্দ: ট্রেন বদল, টাকা তোলা, গোসল — 〜て form দিয়ে ধারাবাহিক কাজ",
+   "target": "50+ പദങ്ങൾ: ട്രെയിൻ മാറൽ, പണം പിൻവലിക്കൽ, കുളി — 〜て form ഉപയോഗിച്ച് പ്രവൃത്തികളുടെ ശ്രേണി"
+  },
+  {
+   "source": "৫০টি শব্দ",
+   "target": "50 പദങ്ങൾ"
+  },
+  {
+   "source": "🔁 মূল প্যাটার্ন",
+   "target": "🔁 പ്രധാന pattern"
+  },
+  {
+   "source": "[verb-て]から、[next action] (করার পরে, ...)",
+   "target": "[verb-て]から、[next action] (ചെയ്തതിനുശേഷം, ...)"
+  },
+  {
+   "source": "চড়া (যানবাহনে)",
+   "target": "കയറുക (ഒരു വാഹനത്തിൽ)"
+  },
+  {
+   "source": "ক্রিয়া",
+   "target": "ക്രിയ"
+  },
+  {
+   "source": "নামা",
+   "target": "ഇറങ്ങുക / താഴേക്ക് പോകുക"
+  },
+  {
+   "source": "বদলানো (ট্রান্সফার)",
+   "target": "മാറുക / ട്രാൻസ്ഫർ ചെയ്യുക"
+  },
+  {
+   "source": "গোসল করা",
+   "target": "കുളിക്കുക"
+  },
+  {
+   "source": "ঢোকানো",
+   "target": "ഉള്ളിലേക്ക് ഇടുക / ചേർക്കുക"
+  },
+  {
+   "source": "বের করা",
+   "target": "പുറത്തെടുക്കുക"
+  },
+  {
+   "source": "নামানো (money withdraw)",
+   "target": "പിൻവലിക്കുക (പണം)"
+  },
+  {
+   "source": "ঢোকা",
+   "target": "പ്രവേശിക്കുക"
+  },
+  {
+   "source": "বের হওয়া",
+   "target": "പുറത്തുപോകുക / വിടുക"
+  },
+  {
+   "source": "চাপ দেওয়া",
+   "target": "തള്ളുക"
+  },
+  {
+   "source": "আলাদা হওয়া",
+   "target": "വേറിട്ടിരിക്കുക"
+  },
+  {
+   "source": "স্পর্শ করা",
+   "target": "തൊടുക"
+  },
+  {
+   "source": "ট্রেন",
+   "target": "ട്രെയിൻ"
+  },
+  {
+   "source": "বাহন",
+   "target": "വാഹനം / ഗതാഗതം"
+  },
+  {
+   "source": "বাস",
+   "target": "ബസ്"
+  },
+  {
+   "source": "ট্যাক্সি",
+   "target": "ടാക്സി"
+  },
+  {
+   "source": "বিমান",
+   "target": "വിമാനം"
+  },
+  {
+   "source": "টাকা",
+   "target": "പണം"
+  },
+  {
+   "source": "বস্তু",
+   "target": "വസ്തു"
+  },
+  {
+   "source": "টিকিট",
+   "target": "ടിക്കറ്റ്"
+  },
+  {
+   "source": "চাবি",
+   "target": "താക്കോൽ"
+  },
+  {
+   "source": "ব্যাগ",
+   "target": "ബാഗ്"
+  },
+  {
+   "source": "ফোন",
+   "target": "ഫോൺ"
+  },
+  {
+   "source": "লিফট",
+   "target": "ലിഫ്റ്റ്"
+  },
+  {
+   "source": "এসকেলেটর",
+   "target": "എസ്കലേറ്റർ"
+  },
+  {
+   "source": "দরজা",
+   "target": "വാതിൽ"
+  },
+  {
+   "source": "স্টেশন",
+   "target": "സ്റ്റേഷൻ"
+  },
+  {
+   "source": "স্থান",
+   "target": "സ്ഥലം"
+  },
+  {
+   "source": "ব্যাংক",
+   "target": "ബാങ്ക്"
+  },
+  {
+   "source": "কনভিনিয়েন্স স্টোর",
+   "target": "കൺവീനിയൻസ് സ്റ്റോർ"
+  },
+  {
+   "source": "সুপারমার্কেট",
+   "target": "സൂപ്പർമാർക്കറ്റ്"
+  },
+  {
+   "source": "মানুষ",
+   "target": "ആളുകൾ"
+  },
+  {
+   "source": "ব্যক্তি",
+   "target": "വ്യക്തി"
+  },
+  {
+   "source": "বন্ধু",
+   "target": "സുഹൃത്ത്"
+  },
+  {
+   "source": "তারপর",
+   "target": "അതിനുശേഷം / പിന്നെ"
+  },
+  {
+   "source": "এর পরে",
+   "target": "ഇതിനുശേഷം"
+  },
+  {
+   "source": "করে (sequence)",
+   "target": "എന്നിട്ട് (ശ്രേണി)"
+  },
+  {
+   "source": "করার পরে",
+   "target": "ചെയ്തതിനുശേഷം"
+  },
+  {
+   "source": "করা যেতে পারে",
+   "target": "ചെയ്യാം / ചെയ്യാൻ അനുവാദമുണ്ട്"
+  },
+  {
+   "source": "করা যাবে না",
+   "target": "ചെയ്യരുത്"
+  },
+  {
+   "source": "কখন",
+   "target": "എപ്പോൾ"
+  },
+  {
+   "source": "প্রশ্ন",
+   "target": "ചോദ്യങ്ങൾ"
+  },
+  {
+   "source": "কোথায়",
+   "target": "എവിടെ"
+  },
+  {
+   "source": "কী",
+   "target": "എന്ത്"
+  },
+  {
+   "source": "মাফ করবেন",
+   "target": "ക്ഷമിക്കണം"
+  },
+  {
+   "source": "নিন",
+   "target": "ഇതാ / എടുത്തോളൂ"
+  },
+  {
+   "source": "ধন্যবাদ",
+   "target": "നന്ദി"
+  },
+  {
+   "source": "ভালো",
+   "target": "നല്ലത്"
+  },
+  {
+   "source": "একটু",
+   "target": "അല്പം"
+  },
+  {
+   "source": "এখানে",
+   "target": "ഇവിടെ"
+  },
+  {
+   "source": "সেখানে",
+   "target": "അവിടെ"
+  },
+  {
+   "source": "ওখানে",
+   "target": "അവിടെ (ദൂരെ)"
+  },
+  {
+   "source": "এই দিক",
+   "target": "ഈ വഴി"
+  },
+  {
+   "source": "ওই দিক",
+   "target": "ആ വഴി (ശ്രോതാവിനടുത്ത്)"
+  },
+  {
+   "source": "সেই দিক",
+   "target": "ആ വഴി (ദൂരെ)"
+  },
+  {
+   "source": "প্র্যাকটিস বাক্য",
+   "target": "പ്രാക്ടീസ് വാക്യങ്ങൾ"
+  },
+  {
+   "source": "পূর্ববর্তী লেসন ১৫",
+   "target": "മുമ്പത്തെ പാഠം 15"
+  },
+  {
+   "source": "পরবর্তী লেসন ১৭",
+   "target": "അടുത്ത പാഠം 17"
+  }
+ ]
+}

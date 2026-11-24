@@ -1,0 +1,54 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "auth",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "এক অ্যাকাউন্টে আপনার সব Learning",
+   "target": "كل تعلّمك في حساب واحد"
+  },
+  {
+   "source": "Profile, Mock Test, CV Builder ও learning progress নিরাপদভাবে একই account-এ রাখুন।",
+   "target": "احتفظ بملفك الشخصي و Mock Test و CV Builder وتقدم تعلّمك بأمان في الحساب نفسه."
+  },
+  {
+   "source": "Verified account হলে login হবে।",
+   "target": "إذا تم التحقق من حسابك، فسيتم تسجيل دخولك."
+  },
+  {
+   "source": "Password ভুলে গেছেন?",
+   "target": "هل نسيت كلمة المرور؟"
+  },
+  {
+   "source": "আপনার নাম",
+   "target": "اسمك"
+  },
+  {
+   "source": "Account তৈরি করুন",
+   "target": "إنشاء حساب"
+  },
+  {
+   "source": "Account তৈরির পর Gmail-এ verification link যাবে। Link খুললে verification complete হয়ে Profile-এ যাবে।",
+   "target": "بعد إنشاء حسابك، سيتم إرسال رابط تحقق إلى Gmail. فتح الرابط سيكمل التحقق ويأخذك إلى ملفك الشخصي."
+  },
+  {
+   "source": "Verification mail না পেলে spam/junk folder দেখুন, তারপর আবার পাঠাতে পারেন।",
+   "target": "إذا لم تستلم رسالة التحقق، فتحقق من مجلد spam/junk، ثم يمكنك طلبها مرة أخرى."
+  },
+  {
+   "source": "Verification email আবার পাঠান",
+   "target": "إعادة إرسال رسالة التحقق"
+  },
+  {
+   "source": "Password কখনো আমাদের database-এ plain text হিসেবে রাখা হয় না। Authentication Supabase Auth দ্বারা পরিচালিত হয়।",
+   "target": "لا يتم أبدا حفظ كلمات المرور بنص صريح في قاعدة بياناتنا. تتم إدارة المصادقة بواسطة Supabase Auth."
+  },
+  {
+   "source": "← হোমে ফিরে যান",
+   "target": "← العودة إلى الصفحة الرئيسية"
+  }
+ ]
+}

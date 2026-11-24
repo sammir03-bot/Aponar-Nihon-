@@ -1,0 +1,426 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "n4-grammar-lesson-45-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "মূল কনটেন্টে যান",
+   "target": "Lewati ke konten utama"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "Lesson 45 · প্রয়োগ ও সূক্ষ্মতা",
+   "target": "Pelajaran 45 · Penerapan dan Nuansa"
+  },
+  {
+   "source": "সব Lesson",
+   "target": "Semua Lesson"
+  },
+  {
+   "source": "প্রয়োগ ও সূক্ষ্মতা",
+   "target": "Penerapan dan Nuansa"
+  },
+  {
+   "source": "ধাপ ৪ · 41–45",
+   "target": "Tahap 4 · 41–45"
+  },
+  {
+   "source": "সম্ভাব্য বিশেষ পরিস্থিতিতে করণীয়, অনাকাঙ্ক্ষিত ঘটনা সামলানো এবং প্রত্যাশার বিপরীত ফল/আফসোস প্রকাশ।",
+   "target": "Apa yang harus dilakukan dalam situasi khusus yang mungkin terjadi, menangani peristiwa yang tidak diinginkan, dan menyatakan hasil yang berlawanan dengan ekspektasi atau penyesalan."
+  },
+  {
+   "source": "3টি বিস্তারিত grammar block",
+   "target": "3 blok grammar terperinci"
+  },
+  {
+   "source": "11টি Japanese example",
+   "target": "11 contoh Japanese"
+  },
+  {
+   "source": "4টি ব্যাখ্যাসহ practice",
+   "target": "4 soal latihan dengan penjelasan"
+  },
+  {
+   "source": "Offline, mobile ও print friendly",
+   "target": "Offline, ramah perangkat seluler dan cetak"
+  },
+  {
+   "source": "あ Reading লুকান",
+   "target": "Sembunyikan あ Reading"
+  },
+  {
+   "source": "এখনো সম্পন্ন নয়",
+   "target": "Belum selesai"
+  },
+  {
+   "source": "✓ সম্পন্ন করুন",
+   "target": "✓ Tandai Selesai"
+  },
+  {
+   "source": "Lesson 45 · লক্ষ্য",
+   "target": "Pelajaran 45 · Tujuan"
+  },
+  {
+   "source": "এই Lesson শেষে যা পারবেন",
+   "target": "Apa yang akan dapat Anda lakukan setelah pelajaran ini"
+  },
+  {
+   "source": "場合は এবং のに দুটোই দুই clause যুক্ত করে, কিন্তু মানসিক দিক উল্টো। 場合は বলে ‘এই case ঘটলে কী করব’; のに বলে ‘এত কিছুর পরও প্রত্যাশার বিপরীত কেন হলো’।",
+   "target": "場合は dan のに sama-sama menghubungkan dua klausa, tetapi arah mentalnya berlawanan. 場合は berkata 'jika kasus ini terjadi, apa yang akan saya lakukan'; のに berkata 'setelah semua itu, mengapa hasilnya berlawanan dengan yang diharapkan'."
+  },
+  {
+   "source": "verb, い-A, な-A ও noun-এর সঙ্গে 場合は সঠিক form বসাবেন",
+   "target": "Anda akan dapat memasang bentuk 場合は yang benar dengan kata kerja, kata sifat い, kata sifat な, dan kata benda"
+  },
+  {
+   "source": "manual, rule ও emergency instruction-এ 場合は ব্যবহার করবেন",
+   "target": "Anda akan dapat menggunakan 場合は dalam manual, aturan, dan instruksi darurat"
+  },
+  {
+   "source": "のに দিয়ে unexpected contrast ও আবেগ প্রকাশ করবেন",
+   "target": "Anda akan dapat menyatakan kontras tak terduga dan emosi dengan のに"
+  },
+  {
+   "source": "のに, ても, けど-এর nuance আলাদা করবেন",
+   "target": "Anda akan dapat membedakan nuansa のに, ても, dan けど"
+  },
+  {
+   "source": "নির্দিষ্ট situation/case ঘটলে—বিশেষ করে সম্ভাব্য, সমস্যা বা আনুষ্ঠানিক পরিস্থিতি",
+   "target": "Ketika situasi/kasus tertentu terjadi — terutama situasi yang mungkin terjadi, bermasalah, atau formal"
+  },
+  {
+   "source": "গঠন",
+   "target": "Pembentukan"
+  },
+  {
+   "source": "ধরন",
+   "target": "Jenis"
+  },
+  {
+   "source": "উদাহরণ",
+   "target": "Contoh"
+  },
+  {
+   "source": "ক্রিয়া",
+   "target": "Kata kerja"
+  },
+  {
+   "source": "い-বিশেষণ",
+   "target": "い-adjective"
+  },
+  {
+   "source": "な-বিশেষণ",
+   "target": "な-adjective"
+  },
+  {
+   "source": "বিশেষ্য",
+   "target": "Kata benda"
+  },
+  {
+   "source": "বিস্তারিত ব্যাখ্যা",
+   "target": "Penjelasan Terperinci"
+  },
+  {
+   "source": "場合（ばあい） একটি noun ‘case/situation’; তাই な-A＋な, N＋の। Verb tense situation-এর সময়/সম্পন্নতা দেখায়: 故障した場合は = নষ্ট হয়ে গেলে/নষ্ট হওয়ার case; 故障する場合は = নষ্ট হওয়ার সম্ভাব্য case।",
+   "target": "場合（ばあい） adalah kata benda 'kasus/situasi'; jadi kata sifat な＋な, N＋の. Kala kata kerja menunjukkan waktu/penyelesaian situasi: 故障した場合は = jika sudah rusak/kasus kerusakan; 故障する場合は = kasus yang mungkin terjadi bahwa ia akan rusak."
+  },
+  {
+   "source": "নির্দেশিকা, নিয়ম, application, emergency, customer service-এ বহুল: 分からない場合は、担当者に聞いてください।",
+   "target": "Sangat umum dalam petunjuk, aturan, aplikasi, keadaan darurat, dan layanan pelanggan: 分からない場合は、担当者に聞いてください."
+  },
+  {
+   "source": "খুব সাধারণ recurring condition-এ と/ば সহজ; 場合は scenario-কে আলাদা case হিসেবে তুলে ধরে এবং formal শোনায়।",
+   "target": "Untuk kondisi berulang yang sangat biasa, と/ば lebih mudah; 場合は menyajikan skenario sebagai kasus tersendiri dan terdengar formal."
+  },
+  {
+   "source": "যা মনে রাখবেন",
+   "target": "Yang Perlu Diingat"
+  },
+  {
+   "source": "Main clause-এ instruction/request স্বাভাবিক: 問題がある場合は、連絡してください。",
+   "target": "Instruksi/permintaan wajar dalam klausa utama: 問題がある場合は、連絡してください."
+  },
+  {
+   "source": "ট্রেন দেরি করলে অফিসে যোগাযোগ করুন।",
+   "target": "Jika kereta terlambat, hubungi kantor."
+  },
+  {
+   "source": "পাসওয়ার্ড ভুলে গেলে এখানে চাপুন।",
+   "target": "Jika Anda lupa kata sandi, tekan di sini."
+  },
+  {
+   "source": "ভূমিকম্পের ক্ষেত্রে লিফট ব্যবহার করবেন না।",
+   "target": "Dalam keadaan gempa bumi, jangan gunakan lift."
+  },
+  {
+   "source": "বুকিং প্রয়োজন হলে আগের দিনের মধ্যে ফোন করব।",
+   "target": "Jika reservasi diperlukan, saya akan menelepon paling lambat sehari sebelumnya."
+  },
+  {
+   "source": "✕ ভুল",
+   "target": "✕ Salah"
+  },
+  {
+   "source": "✓ সঠিক",
+   "target": "✓ Benar"
+  },
+  {
+   "source": "কেন:",
+   "target": "Mengapa:"
+  },
+  {
+   "source": "Noun 雨＋の＋場合; な নয়。",
+   "target": "Kata benda 雨＋の＋場合; bukan な."
+  },
+  {
+   "source": "যদিও/সত্ত্বেও—প্রত্যাশার বিপরীত ফল, প্রায়ই বিস্ময়/অসন্তোষ/আফসোস",
+   "target": "Meskipun/walaupun — hasil yang berlawanan dengan ekspektasi, sering kali keterkejutan/ketidakpuasan/penyesalan"
+  },
+  {
+   "source": "ক্রিয়া/い-A",
+   "target": "Kata kerja / い-A"
+  },
+  {
+   "source": "Speaker-এর প্রত্যাশা: ‘পড়েছি → পাস করার কথা’; বাস্তব: ফেল। 勉強したのに、試験に落ちました—এই mismatch-ই のに।",
+   "target": "Ekspektasi pembicara: 'saya belajar → seharusnya lulus'; kenyataannya: gagal. 勉強したのに、試験に落ちました — ketidakcocokan itulah のに."
+  },
+  {
+   "source": "কেবল neutral contrast নয়; আবেগ/অপ্রত্যাশিত ফল থাকে। তাই main clause-এ বক্তার command/intention সাধারণত অস্বাভাবিক: 雨なのに、出かけましょう ✕ (শুধু neutral contrast হলে けど/ても)।",
+   "target": "Bukan sekadar kontras netral; ada emosi/hasil tak terduga. Jadi perintah/niat pembicara dalam klausa utama biasanya tidak wajar: 雨なのに、出かけましょう ✕ (jika hanya kontras netral, けど/ても)."
+  },
+  {
+   "source": "Sentence শেষে のに…/のに。 রেখে complaint/অসম্পূর্ণ আফসোস: 何度も電話したのに…。 = এতবার ফোন করলাম, তবু…",
+   "target": "Mengakhiri kalimat dengan のに…/のに。 meninggalkan keluhan atau penyesalan yang belum selesai: 何度も電話したのに…。 = saya menelepon berkali-kali, namun…."
+  },
+  {
+   "source": "Lesson 42-এর utility のに আলাদা: 料理するのに便利です (রান্নায় সুবিধাজনক)—এখানে পরের predicate utility/cost।",
+   "target": "のに kegunaan di Pelajaran 42 berbeda: 料理するのに便利です (praktis untuk memasak) — di sini predikat berikutnya adalah kegunaan/biaya."
+  },
+  {
+   "source": "Expected result নয়, actual surprising result main clause-এ।",
+   "target": "Bukan hasil yang diharapkan, melainkan hasil mengejutkan yang sebenarnya, yang masuk ke klausa utama."
+  },
+  {
+   "source": "ওষুধ খেয়েছি, তবু জ্বর আছে।",
+   "target": "Saya sudah minum obat, namun masih demam."
+  },
+  {
+   "source": "ঘরটি ছোট, অথচ ভাড়া বেশি।",
+   "target": "Ruangannya kecil, tetapi sewanya mahal."
+  },
+  {
+   "source": "তানাকা জাপানি হওয়া সত্ত্বেও সুশি অপছন্দ করেন।",
+   "target": "Meskipun Tanaka orang Jepang, ia tidak suka sushi."
+  },
+  {
+   "source": "রবিবার হলেও অফিসে যেতে হবে।",
+   "target": "Meskipun hari Minggu, saya harus pergi ke kantor."
+  },
+  {
+   "source": "な-বিশেষণ＋な＋のに।",
+   "target": "Kata sifat な＋な＋のに."
+  },
+  {
+   "source": "のに বনাম ても বনাম けど",
+   "target": "のに versus ても versus けど"
+  },
+  {
+   "source": "unexpected result, hypothetical concession এবং সাধারণ contrast",
+   "target": "Hasil tak terduga, konsesi hipotetis, dan kontras biasa"
+  },
+  {
+   "source": "のに actual fact + violated expectation + emotion। ても actual বা hypothetical concession: 雨が降っても行きます = বৃষ্টি হলেও যাব (speaker intention সম্ভব)।",
+   "target": "のに adalah fakta aktual + ekspektasi yang dilanggar + emosi. ても adalah konsesi aktual atau hipotetis: 雨が降っても行きます = meskipun hujan, saya akan pergi (niat pembicara dimungkinkan)."
+  },
+  {
+   "source": "けど/が neutral contrast বা soft introduction; আবেগ বাধ্যতামূলক নয়: 小さいけど便利です।",
+   "target": "けど/が adalah kontras netral atau pembuka yang lembut; emosi tidak wajib: 小さいけど便利です."
+  },
+  {
+   "source": "Main clause intention/command হলে ても/けど বেছে নিন: 雨でも行きましょう। のに বললে ‘বৃষ্টি হচ্ছে অথচ চল যাই’ logic অস্বাভাবিক, বিশেষ context ছাড়া।",
+   "target": "Jika klausa utama adalah niat/perintah, pilih ても/けど: 雨でも行きましょう. Jika Anda mengatakan のに, logika 'sedang hujan, namun mari kita pergi' tidak wajar, kecuali dalam konteks khusus."
+  },
+  {
+   "source": "নিজের future decision ‘তবুও করব’ → ても; ঘটে যাওয়া হতাশা → のに।",
+   "target": "Keputusan masa depan Anda sendiri 'tetap akan saya lakukan' → ても; kekecewaan yang sudah terjadi → のに."
+  },
+  {
+   "source": "বৃষ্টি হলেও ম্যাচ করব।",
+   "target": "Meskipun hujan, kami akan tetap mengadakan pertandingan."
+  },
+  {
+   "source": "বৃষ্টি হয়েছিল, তবুও (অপ্রত্যাশিতভাবে) ম্যাচ হয়েছে।",
+   "target": "Sudah hujan, namun (secara tak terduga) pertandingan tetap diadakan."
+  },
+  {
+   "source": "দোকানটি ছোট, কিন্তু খাবার ভালো।",
+   "target": "Tokonya kecil, tetapi makanannya enak."
+  },
+  {
+   "source": "雨が降るのに、明日出かけます。（নিজের plan)",
+   "target": "雨が降るのに、明日出かけます。(rencana sendiri)"
+  },
+  {
+   "source": "নিজের ‘বৃষ্টি হলেও যাব’ decision-এ ても।",
+   "target": "Untuk keputusan Anda sendiri 'meskipun hujan saya akan pergi', gunakan ても."
+  },
+  {
+   "source": "এক নজরে পার্থক্য",
+   "target": "Perbedaan dalam Sekilas"
+  },
+  {
+   "source": "কোন পরিস্থিতিতে কোনটি?",
+   "target": "Yang mana dalam situasi apa?"
+  },
+  {
+   "source": "রূপ",
+   "target": "Bentuk"
+  },
+  {
+   "source": "বিশেষ case ঘটলে",
+   "target": "Ketika kasus khusus terjadi"
+  },
+  {
+   "source": "করণীয়/নির্দেশ",
+   "target": "Yang harus dilakukan/instruksi"
+  },
+  {
+   "source": "fact থাকা সত্ত্বেও unexpected",
+   "target": "Tak terduga, meskipun ada faktanya"
+  },
+  {
+   "source": "ফল/আবেগ; intention নয়",
+   "target": "Hasil/emosi; bukan niat"
+  },
+  {
+   "source": "speaker intention/command সম্ভব",
+   "target": "Niat/perintah pembicara dimungkinkan"
+  },
+  {
+   "source": "সাধারণ contrast/soft lead-in",
+   "target": "Kontras biasa/pembuka lembut"
+  },
+  {
+   "source": "neutral ও flexible",
+   "target": "Netral dan fleksibel"
+  },
+  {
+   "source": "বাস্তব কথোপকথন",
+   "target": "Percakapan nyata"
+  },
+  {
+   "source": "অনলাইন ফর্মের সমস্যা",
+   "target": "Masalah pada Formulir Online"
+  },
+  {
+   "source": "যতবারই লিখি, error হয়।",
+   "target": "Berapa kali pun saya mengetiknya, terjadi kesalahan (error)."
+  },
+  {
+   "source": "error হলে screen save করুন।",
+   "target": "Jika terjadi kesalahan, simpan layarnya."
+  },
+  {
+   "source": "নির্দেশ অনুযায়ী করেও হয়নি।",
+   "target": "Meskipun sudah melakukannya sesuai instruksi, tidak berhasil."
+  },
+  {
+   "source": "তাহলে support-এ যোগাযোগ করি।",
+   "target": "Kalau begitu saya akan menghubungi dukungan (support)."
+  },
+  {
+   "source": "নিজে যাচাই করুন",
+   "target": "Periksa Diri Anda Sendiri"
+  },
+  {
+   "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+   "target": "Latihan dengan jawaban dan penjelasan"
+  },
+  {
+   "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+   "target": "Pertama tulis jawaban di buku catatan Anda, lalu ketuk pertanyaan untuk memeriksa jawaban dan alasannya."
+  },
+  {
+   "source": "1. ‘আগুন লাগলে এই দরজা ব্যবহার করুন’ বলুন।",
+   "target": "1. Katakan: 'Jika ada kebakaran, gunakan pintu ini'."
+  },
+  {
+   "source": "2. ‘সুবিধাজনক হওয়া সত্ত্বেও ব্যবহার করি না’ বলুন।",
+   "target": "2. Katakan: 'Meskipun praktis, saya tidak menggunakannya'."
+  },
+  {
+   "source": "3. ‘পড়েছি, তবু বুঝিনি’ বলুন।",
+   "target": "3. Katakan: 'Saya sudah belajar, namun tidak paham'."
+  },
+  {
+   "source": "4. ‘বৃষ্টি হলেও যাব’—নিজের intention বলুন।",
+   "target": "4. 'Meskipun hujan, saya akan pergi' — nyatakan niat Anda sendiri."
+  },
+  {
+   "source": "এক বাক্যে Master Key",
+   "target": "Kunci Utama dalam Satu Kalimat"
+  },
+  {
+   "source": "সম্ভাব্য special case ও করণীয় → 場合は; সত্য ঘটেও expectation ভাঙলে → のに; hypothetical ‘হলেও করব’ → ても; নিরপেক্ষ contrast → けど।",
+   "target": "Kasus khusus yang mungkin terjadi dan yang harus dilakukan → 場合は; fakta terjadi namun ekspektasi patah → のに; hipotetis 'meskipun terjadi, akan saya lakukan' → ても; kontras netral → けど."
+  },
+  {
+   "source": "বিশ্বস্ত রেফারেন্স",
+   "target": "Referensi Tepercaya"
+  },
+  {
+   "source": "সিলেবাস ও যাচাই",
+   "target": "Silabus dan Verifikasi"
+  },
+  {
+   "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+   "target": "Pelajaran mandiri dalam bahasa Indonesia ini dibuat dengan menyelaraskan urutan pelajaran Minna no Nihongo II, cakupan resmi JLPT N4, dan sumber belajar Japan Foundation. Contoh dan penjelasannya dalam bahasa Indonesia ditulis baru."
+  },
+  {
+   "source": "← আগের Lesson 44",
+   "target": "← Pelajaran 44 sebelumnya"
+  },
+  {
+   "source": "পরের Lesson 46 →",
+   "target": "Pelajaran 46 berikutnya →"
+  },
+  {
+   "source": "Lesson সূচি",
+   "target": "Indeks Lesson"
+  },
+  {
+   "source": "শেখার লক্ষ্য",
+   "target": "Tujuan belajar"
+  },
+  {
+   "source": "3. のに বনাম ても বনাম けど",
+   "target": "3. のに versus ても versus けど"
+  },
+  {
+   "source": "পার্থক্য টেবিল",
+   "target": "Tabel Perbandingan"
+  },
+  {
+   "source": "কথোপকথন",
+   "target": "Percakapan"
+  },
+  {
+   "source": "Course progress লোড হচ্ছে…",
+   "target": "Progress kursus sedang dimuat…"
+  },
+  {
+   "source": "আপনার নিহোন · N4 Grammar 26–50",
+   "target": "আপনার নিহোন · N4 Grammar 26–50"
+  },
+  {
+   "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+   "target": "Edisi belajar mandiri bahasa Indonesia yang gratis dan terperinci untuk pelajar."
+  }
+ ]
+}

@@ -1,0 +1,138 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "halal-scanner",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Halal Food Scanner | আপনার নিহোন",
+   "target": "Halal Food Scanner | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপানের খাবারের barcode scan করুন অথবা প্যাকেটের",
+   "target": "امسح باركود الطعام في اليابان أو تحقق من مكونات العبوة"
+  },
+  {
+   "source": "লিখে ingredient check করুন। সন্দেহজনক উপাদান থাকলে কারণসহ দেখাবে—তথ্য না থাকলে কখনোই অনুমান করে “Halal” বলবে না।",
+   "target": "بكتابتها للتحقق من المكونات. إذا كان هناك مكون مشبوه، فسيظهر مع السبب — ولن يخمن أبدا ويقول”Halal“ عندما لا توجد معلومات."
+  },
+  {
+   "source": "Paid API নেই",
+   "target": "لا توجد Paid API"
+  },
+  {
+   "source": "History এই ডিভাইসেই",
+   "target": "السجل على هذا الجهاز فقط"
+  },
+  {
+   "source": "ক্যামেরা চালু করে barcode সামনে ধরুন",
+   "target": "شغّل الكاميرا وأمسكها أمام الباركود"
+  },
+  {
+   "source": "ক্যামেরা permission শুধু scan করার সময় ব্যবহার হবে।",
+   "target": "سيتم استخدام إذن الكاميرا فقط أثناء المسح."
+  },
+  {
+   "source": "স্ক্যান শুরু করতে নিচের button চাপুন",
+   "target": "اضغط الزر أدناه لبدء المسح"
+  },
+  {
+   "source": "ক্যামেরা দিয়ে স্ক্যান",
+   "target": "المسح بالكاميرا"
+  },
+  {
+   "source": "ছবি থেকে",
+   "target": "من صورة"
+  },
+  {
+   "source": "Barcode number লিখেও check করতে পারেন",
+   "target": "يمكنك أيضا التحقق بكتابة رقم الباركود"
+  },
+  {
+   "source": "Product data Open Food Facts-এর open database থেকে নেওয়া হয়। Database-এ product না থাকলে ingredient text দিয়ে check করুন।",
+   "target": "تؤخذ بيانات المنتج من قاعدة بيانات Open Food Facts المفتوحة. إذا لم يكن المنتج في قاعدة البيانات، فتحقق باستخدام نص المكونات."
+  },
+  {
+   "source": "তথ্য যাচাই হচ্ছে",
+   "target": "جارٍ التحقق من المعلومات"
+  },
+  {
+   "source": "Database-এর ingredient list",
+   "target": "قائمة مكونات قاعدة البيانات"
+  },
+  {
+   "source": "copy করে paste করুন",
+   "target": "انسخها والصقها"
+  },
+  {
+   "source": "Red — স্পষ্ট সমস্যা",
+   "target": "أحمر — مشكلة واضحة"
+  },
+  {
+   "source": "Pork/pig-derived বা alcohol-related ingredient signal পাওয়া গেছে।",
+   "target": "تم العثور على إشارة لمكون مشتق من الخنزير أو متعلق بالكحول."
+  },
+  {
+   "source": "Yellow — উৎস যাচাই দরকার",
+   "target": "أصفر — يحتاج المصدر إلى التحقق"
+  },
+  {
+   "source": "Gelatin, emulsifier, shortening-এর মতো source-dependent ingredient।",
+   "target": "مكونات تعتمد على المصدر مثل الجيلاتين والمستحلبات والدهون المهدرجة."
+  },
+  {
+   "source": "Green — স্পষ্ট signal মেলেনি",
+   "target": "أخضر — لم يتم العثور على إشارة واضحة"
+  },
+  {
+   "source": "এটা Halal certification নয়; package/certifier দিয়ে final check করুন।",
+   "target": "هذه ليست شهادة حلال؛ قم بفحص نهائي مع العبوة/جهة الاعتماد."
+  },
+  {
+   "source": "শেষ ১০টি result · শুধু এই device-এ",
+   "target": "آخر 10 نتائج · على هذا الجهاز فقط"
+  },
+  {
+   "source": "সব মুছুন",
+   "target": "حذف الكل"
+  },
+  {
+   "source": "গুরুত্বপূর্ণ:",
+   "target": "مهم:"
+  },
+  {
+   "source": "এই scanner ingredient text-এর rule-based screening করে; এটি কোনো মুফতি, halal certifier বা official certification-এর বিকল্প নয়। Recipe, supplier ও ingredient source বদলাতে পারে—সন্দেহ থাকলে প্যাকেটের certification এবং manufacturer-এর তথ্য যাচাই করুন। Product data community-maintained Open Food Facts থেকে আসে, তাই তথ্য অসম্পূর্ণ বা ভুল হতে পারে।",
+   "target": "يقوم هذا الماسح بفحص قائم على القواعد لنص المكونات؛ وهو ليس بديلا عن مفتٍ أو جهة اعتماد حلال أو شهادة رسمية. يمكن أن تتغير الوصفات والمورّدون ومصادر المكونات — إذا كنت في شك، فتحقق من الشهادة على العبوة ومعلومات الشركة المصنّعة. تأتي بيانات المنتج من Open Food Facts الذي يصونه المجتمع، لذا قد تكون المعلومات غير كاملة أو غير صحيحة."
+  },
+  {
+   "source": "ভুল result রিপোর্ট করুন",
+   "target": "الإبلاغ عن نتيجة خاطئة"
+  },
+  {
+   "source": "যোগাযোগ",
+   "target": "تواصل معنا"
+  },
+  {
+   "source": "তথ্য:",
+   "target": "معلومات:"
+  },
+  {
+   "source": "· Scanner: ZXing · © ২০২৬ আপনার নিহোন",
+   "target": "· Scanner: ZXing · © 2026 আপনার নিহোন"
+  },
+  {
+   "source": "হোম",
+   "target": "الصفحة الرئيسية"
+  },
+  {
+   "source": "হালাল স্ক্যান",
+   "target": "مسح الحلال"
+  }
+ ]
+}

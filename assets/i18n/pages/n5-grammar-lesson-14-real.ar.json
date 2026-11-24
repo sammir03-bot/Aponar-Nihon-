@@ -1,0 +1,254 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "n5-grammar-lesson-14-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Grammar Lesson 14 | て-form・てください・ています・ましょうか | আপনার নিহোন",
+   "target": "N5 Grammar Lesson 14 | て-form・てください・ています・ましょうか | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "অনুরোধ করা, এখন কী চলছে বলা, সাহায্য প্রস্তাব করা",
+   "target": "تقديم الطلبات، قول ما يحدث الآن، عرض المساعدة"
+  },
+  {
+   "source": "Grammar শুরু",
+   "target": "ابدأ Grammar"
+  },
+  {
+   "source": "আজকের Learning Goal",
+   "target": "هدف التعلم اليوم"
+  },
+  {
+   "source": "て-form বানানো",
+   "target": "تكوين صيغة て"
+  },
+  {
+   "source": "অনুরোধ করা",
+   "target": "تقديم الطلبات"
+  },
+  {
+   "source": "চলমান কাজ বলা",
+   "target": "قول الأفعال الجارية"
+  },
+  {
+   "source": "সহজ ব্যাখ্যা + structure + example",
+   "target": "شرح بسيط + structure + example"
+  },
+  {
+   "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+   "target": "لكل نمط، انظر أولا إلى البنية، ثم قل الأمثلة بصوت عال. إذا ضغطت على زر الصوت، فستتمكن من سماع الجملة اليابانية."
+  },
+  {
+   "source": "て-form জাপানির সবচেয়ে গুরুত্বপূর্ণ verb form; request, connection, ongoing action—সব জায়গায় লাগে।",
+   "target": "صيغة て هي أهم صيغة فعل في اليابانية؛ فهي لازمة في كل مكان: الطلبات، والربط، والأفعال الجارية."
+  },
+  {
+   "source": "Group 1/2/3 অনুযায়ী form বদলায়: 書きます→書いて, 飲みます→飲んで, 来ます→来て।",
+   "target": "تتغير الصيغة حسب Group 1/2/3: 書きます→書いて, 飲みます→飲んで, 来ます→来て."
+  },
+  {
+   "source": "কাকিমাসু → কাইতে",
+   "target": "Kakimasu → kaite"
+  },
+  {
+   "source": "লিখি → লিখে",
+   "target": "أكتب → كتابة (صيغة te)"
+  },
+  {
+   "source": "নোমিমাসু → নোনদে",
+   "target": "Nomimasu → nonde"
+  },
+  {
+   "source": "পান করি → পান করে",
+   "target": "أشرب → شرب (صيغة te)"
+  },
+  {
+   "source": "কিমাসু → কিতে",
+   "target": "Kimasu → kite"
+  },
+  {
+   "source": "আসি → এসে",
+   "target": "آتي → مجيء (صيغة te)"
+  },
+  {
+   "source": "ভদ্রভাবে “করুন/দয়া করে করুন” বলতে।",
+   "target": "للقول بأدب «افعل / افعل من فضلك»."
+  },
+  {
+   "source": "instructions, request, classroom, shop—সব জায়গায় খুব দরকার।",
+   "target": "ضروري في كل مكان — التعليمات، الطلبات، الفصل، المتاجر."
+  },
+  {
+   "source": "কোকো নি নামায়ে ও কাইতেকুদাসাই।",
+   "target": "Koko ni namae wo kaite kudasai."
+  },
+  {
+   "source": "এখানে নাম লিখুন।",
+   "target": "اكتب اسمك هنا من فضلك."
+  },
+  {
+   "source": "চোত্তো মাত্তেকুদাসাই।",
+   "target": "Chotto matte kudasai."
+  },
+  {
+   "source": "একটু অপেক্ষা করুন।",
+   "target": "انتظر لحظة من فضلك."
+  },
+  {
+   "source": "মোইচিদো ইত্তেকুদাসাই।",
+   "target": "Mou ichido itte kudasai."
+  },
+  {
+   "source": "আরেকবার বলুন।",
+   "target": "قلها مرة أخرى من فضلك."
+  },
+  {
+   "source": "এখন কাজ চলছে বোঝাতে।",
+   "target": "لإظهار أن الفعل جار الآن."
+  },
+  {
+   "source": "今 + Vています = এখন করছি।",
+   "target": "今 + Vています = أفعل الآن."
+  },
+  {
+   "source": "ইমা, নিহোনগো ও বেনকিয়ো শিতেইমাসু।",
+   "target": "Ima, nihongo wo benkyou shite imasu."
+  },
+  {
+   "source": "এখন জাপানি পড়ছি।",
+   "target": "أدرس اليابانية الآن."
+  },
+  {
+   "source": "মিরা সান ওয়া দেনওয়া ও কাকেতেইমাসু।",
+   "target": "Miraa-san wa denwa wo kakete imasu."
+  },
+  {
+   "source": "মিলার-সান ফোন করছেন।",
+   "target": "ميرر-سان يتحدث على الهاتف."
+  },
+  {
+   "source": "“আমি কি করে দেব?” — সাহায্য offer করতে।",
+   "target": "«هل أفعلها لك؟» — لعرض المساعدة."
+  },
+  {
+   "source": "শুনতে ভদ্র ও helpful লাগে।",
+   "target": "يبدو مهذبا ومفيدا."
+  },
+  {
+   "source": "মাদো ও আকেমাশো কা।",
+   "target": "Mado wo akemashou ka."
+  },
+  {
+   "source": "জানালা খুলে দেব?",
+   "target": "هل أفتح النافذة؟"
+  },
+  {
+   "source": "নিমোৎসু ও মোচিমাশো কা।",
+   "target": "Nimotsu wo mochimashou ka."
+  },
+  {
+   "source": "ব্যাগ/মালপত্র ধরে দেব?",
+   "target": "هل أحمل حقيبتك/أمتعتك؟"
+  },
+  {
+   "source": "বৃষ্টি, বাতাসের মতো প্রাকৃতিক ঘটনা বা চোখের সামনে চলমান অবস্থা বললে subject-কে が দিয়ে চিহ্নিত করা হয়।",
+   "target": "للظواهر الطبيعية مثل المطر أو الرياح، أو حالة تتكشف أمام عينيك، يُشار إلى الفاعل بـ が."
+  },
+  {
+   "source": "এখানে が হলো ঘটনার subject marker; action এখন চলছে বলে Vています।",
+   "target": "هنا が هي علامة فاعل الحدث؛ ولأن الفعل جار الآن، تُستخدم Vています."
+  },
+  {
+   "source": "আমে গা ফুত্তেইমাসু।",
+   "target": "Ame ga futte imasu."
+  },
+  {
+   "source": "বৃষ্টি হচ্ছে।",
+   "target": "إنها تمطر."
+  },
+  {
+   "source": "কাজে গা ফুইতেইমাসু।",
+   "target": "Kaze ga fuite imasu."
+  },
+  {
+   "source": "বাতাস বইছে।",
+   "target": "الرياح تهب."
+  },
+  {
+   "source": "ইউকি গা ফুত্তেইমাসু।",
+   "target": "Yuki ga futte imasu."
+  },
+  {
+   "source": "তুষার পড়ছে।",
+   "target": "الثلج يتساقط."
+  },
+  {
+   "source": "মুখে বলার Practice",
+   "target": "تدريب على النطق"
+  },
+  {
+   "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+   "target": "اقرأ هذه الجمل بصوت عال 3 مرات، كما لو كنت في مقابلة أو محادثة في الفصل."
+  },
+  {
+   "source": "সুমিমাসেন, মোইচিদো ইত্তেকুদাসাই।",
+   "target": "Sumimasen, mou ichido itte kudasai."
+  },
+  {
+   "source": "মাফ করবেন, আরেকবার বলুন।",
+   "target": "عذرا، قلها مرة أخرى من فضلك."
+  },
+  {
+   "source": "ইমা, নানি ও শিতেইমাসু কা।",
+   "target": "Ima, nani wo shite imasu ka."
+  },
+  {
+   "source": "এখন কী করছেন?",
+   "target": "ماذا تفعل الآن؟"
+  },
+  {
+   "source": "নিহোনগো ও বেনকিয়ো শিতেইমাসু।",
+   "target": "Nihongo wo benkyou shite imasu."
+  },
+  {
+   "source": "জাপানি পড়ছি।",
+   "target": "أدرس اليابانية."
+  },
+  {
+   "source": "তেৎসুদাইমাশো কা।",
+   "target": "Tetsudaimashou ka."
+  },
+  {
+   "source": "সাহায্য করে দেব?",
+   "target": "هل أساعدك؟"
+  },
+  {
+   "source": "✅ 勉強していますか。 — polite form practice করুন।",
+   "target": "✅ 勉強していますか。 — تدرب بالصيغة المهذبة."
+  },
+  {
+   "source": "❌ 荷物を持ちますか (offer হিসেবে awkward)",
+   "target": "❌ 荷物を持ちますか (محرج كعرض)"
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "اختبر نفسك"
+  },
+  {
+   "source": "আমি কি জানালা খুলে দেব? = ?",
+   "target": "هل أفتح النافذة؟ = ?"
+  },
+  {
+   "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 14 • Verified Premium Detailed Version",
+   "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 14 • Verified Premium Detailed Version"
+  }
+ ]
+}

@@ -1,0 +1,422 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "n4-vocab-lesson-46-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N4 Vocabulary Lesson 46 | আপনার নিহোন",
+   "target": "N4 Vocabulary Lesson 46 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "সব লেসন",
+   "target": "جميع الدروس"
+  },
+  {
+   "source": "জাপানিজ শব্দভাণ্ডার",
+   "target": "المفردات اليابانية"
+  },
+  {
+   "source": "প্রথমবার পড়া শিক্ষার্থীর জন্য—জাপানিজ, ふりがな, বাংলা উচ্চারণ ও সহজ বাংলা অর্থ একই কার্ডে। সার্চ, অডিও, শেখা মার্ক ও কুইজও আছে।",
+   "target": "للمتعلمين الذين يقرؤون لأول مرة — اليابانية، وふりがな، والنطق بالبنغالية، ومعانٍ بنغالية بسيطة على البطاقة نفسها. وهناك أيضا بحث، وصوت، وعلامة تعلّم، واختبار."
+  },
+  {
+   "source": "শব্দ শেখা শুরু",
+   "target": "ابدأ تعلّم الكلمات"
+  },
+  {
+   "source": "কুইজ দিন",
+   "target": "خض الاختبار"
+  },
+  {
+   "source": "32টি শব্দ",
+   "target": "32 كلمة"
+  },
+  {
+   "source": "১ম সংস্করণ অনুযায়ী সাজানো",
+   "target": "مرتّبة وفقا للطبعة الأولى"
+  },
+  {
+   "source": "জাপানিজ অডিও",
+   "target": "الصوت الياباني"
+  },
+  {
+   "source": "ডিভাইসের Japanese voice ব্যবহার করে",
+   "target": "يستخدم صوت الجهاز الياباني"
+  },
+  {
+   "source": "০ / 32 শেখা",
+   "target": "0 / 32 تم تعلُّمها"
+  },
+  {
+   "source": "এই browser-এ progress সংরক্ষিত থাকবে",
+   "target": "سيُحفظ تقدمك في هذا المتصفح"
+  },
+  {
+   "source": "সব",
+   "target": "الكل"
+  },
+  {
+   "source": "শেখা হয়েছে",
+   "target": "تم تعلّمها"
+  },
+  {
+   "source": "বাকি",
+   "target": "المتبقي"
+  },
+  {
+   "source": "32টি দেখানো হচ্ছে",
+   "target": "يُعرض 32"
+  },
+  {
+   "source": "Lesson 46-এর শব্দ",
+   "target": "كلمات الدرس 46"
+  },
+  {
+   "source": "「—」 চিহ্ন মানে আগের স্বরটি একটু লম্বা করে পড়বেন।",
+   "target": "علامة «—» تعني أنك تقرأ حرف العلة السابق أطول قليلا."
+  },
+  {
+   "source": "↻ একটি random শব্দ",
+   "target": "↻ كلمة عشوائية"
+  },
+  {
+   "source": "১ম সংস্করণ",
+   "target": "الطبعة الأولى"
+  },
+  {
+   "source": "উচ্চারণ",
+   "target": "النطق"
+  },
+  {
+   "source": "ইয়াকিমাসু",
+   "target": "yakimasu"
+  },
+  {
+   "source": "পোড়াই; ভাজি/বেক করি",
+   "target": "أن يخبز، أن يشوي، أن يحرق"
+  },
+  {
+   "source": "🔊 শুনুন",
+   "target": "🔊 استمع"
+  },
+  {
+   "source": "⧉ কপি",
+   "target": "⧉ نسخ"
+  },
+  {
+   "source": "○ শেখা বাকি",
+   "target": "○ لم يتم تعلّمها بعد"
+  },
+  {
+   "source": "ওয়াতাশিমাসু",
+   "target": "watashimasu"
+  },
+  {
+   "source": "হস্তান্তর করি; দিয়ে দিই",
+   "target": "أن يسلّم، أن يناول"
+  },
+  {
+   "source": "কাএত্তে কিমাসু",
+   "target": "kaette kimasu"
+  },
+  {
+   "source": "ফিরে আসি",
+   "target": "أن يعود"
+  },
+  {
+   "source": "দেমাসু",
+   "target": "demasu"
+  },
+  {
+   "source": "বাস ছাড়ে",
+   "target": "تغادر الحافلة"
+  },
+  {
+   "source": "রুসু",
+   "target": "rusu"
+  },
+  {
+   "source": "বাড়িতে অনুপস্থিত",
+   "target": "غائب عن المنزل، خارجًا"
+  },
+  {
+   "source": "তাকুহাইবিন",
+   "target": "takuhai bin"
+  },
+  {
+   "source": "হোম ডেলিভারি/কুরিয়ার সার্ভিস",
+   "target": "خدمة توصيل منزلي، خدمة بريد سريع"
+  },
+  {
+   "source": "গেনইন",
+   "target": "gen'in"
+  },
+  {
+   "source": "কারণ",
+   "target": "سبب"
+  },
+  {
+   "source": "চু—শা",
+   "target": "chuusha"
+  },
+  {
+   "source": "ইনজেকশন",
+   "target": "حقنة"
+  },
+  {
+   "source": "শোকুইয়োকু",
+   "target": "shokuyoku"
+  },
+  {
+   "source": "খাবারের রুচি; ক্ষুধা",
+   "target": "شهية"
+  },
+  {
+   "source": "পানফুরেত্তো",
+   "target": "panfuretto"
+  },
+  {
+   "source": "পুস্তিকা; ব্রোশিওর",
+   "target": "كتيّب، نشرة"
+  },
+  {
+   "source": "সুতেরেও",
+   "target": "sutereo"
+  },
+  {
+   "source": "স্টেরিও",
+   "target": "ستيريو"
+  },
+  {
+   "source": "কোচিরা",
+   "target": "kochira"
+  },
+  {
+   "source": "এই দিক; এখানে; আমরা",
+   "target": "من هنا، هنا، نحن (بأدب)"
+  },
+  {
+   "source": "～নো তোকোরো",
+   "target": "~no tokoro"
+  },
+  {
+   "source": "~ এর জায়গায়/কাছে",
+   "target": "عند ~، في مكان ~"
+  },
+  {
+   "source": "চো—দো",
+   "target": "choudo"
+  },
+  {
+   "source": "ঠিক; একদম",
+   "target": "تمامًا، بالضبط"
+  },
+  {
+   "source": "তাত্তাইমা",
+   "target": "tatta ima"
+  },
+  {
+   "source": "এইমাত্র",
+   "target": "الآن تمامًا، قبل لحظة"
+  },
+  {
+   "source": "ইমা ইইদেশো—কা",
+   "target": "ima ii deshou ka"
+  },
+  {
+   "source": "এখন কি একটু সময় হবে?",
+   "target": "هل الوقت مناسب الآن؟"
+  },
+  {
+   "source": "গাসুসা—বিসুসেনতা—",
+   "target": "gasu saabisu sentaa"
+  },
+  {
+   "source": "গ্যাস সার্ভিস সেন্টার",
+   "target": "مركز خدمة الغاز"
+  },
+  {
+   "source": "গাসুরেনজি",
+   "target": "gasu renji"
+  },
+  {
+   "source": "গ্যাস রেঞ্জ",
+   "target": "موقد غاز"
+  },
+  {
+   "source": "গুআই",
+   "target": "guai"
+  },
+  {
+   "source": "অবস্থা; কন্ডিশন",
+   "target": "حالة، وضع"
+  },
+  {
+   "source": "দোচিরাসামাদেশো—কা",
+   "target": "dochira sama deshou ka"
+  },
+  {
+   "source": "কে বলছেন?",
+   "target": "من المتصل، من فضلك؟"
+  },
+  {
+   "source": "মুকাইমাসু",
+   "target": "mukaimasu"
+  },
+  {
+   "source": "রওনা হই; এগিয়ে যাই",
+   "target": "أن يتجه إلى، أن يمضي نحو"
+  },
+  {
+   "source": "ওমাতাসেশিমাশিতা",
+   "target": "omataseshimashita"
+  },
+  {
+   "source": "অপেক্ষা করানোর জন্য দুঃখিত",
+   "target": "آسف لإبقائك منتظرًا"
+  },
+  {
+   "source": "চিশিকি",
+   "target": "chishiki"
+  },
+  {
+   "source": "জ্ঞান",
+   "target": "معرفة"
+  },
+  {
+   "source": "হো—কো",
+   "target": "houko"
+  },
+  {
+   "source": "ধনভান্ডার; ভাণ্ডার",
+   "target": "مخزن كنوز، مستودع"
+  },
+  {
+   "source": "তেনিহাইরিমাসু",
+   "target": "te ni hairimasu"
+  },
+  {
+   "source": "তথ্য পাওয়া যায়",
+   "target": "أن يصل إلى يده، أن يحصل على معلومات"
+  },
+  {
+   "source": "শিসুতেমু",
+   "target": "shisutemu"
+  },
+  {
+   "source": "সিস্টেম",
+   "target": "نظام"
+  },
+  {
+   "source": "তাতোএবা",
+   "target": "tatoeba"
+  },
+  {
+   "source": "যেমন; উদাহরণস্বরূপ",
+   "target": "على سبيل المثال"
+  },
+  {
+   "source": "কি—ওয়া—দো",
+   "target": "kiiwaado"
+  },
+  {
+   "source": "কীওয়ার্ড",
+   "target": "كلمة مفتاحية"
+  },
+  {
+   "source": "ইচিবুবুন",
+   "target": "ichibubun"
+  },
+  {
+   "source": "এক অংশ",
+   "target": "جزء"
+  },
+  {
+   "source": "ন্যু—র্যোকুশিমাসু",
+   "target": "nyuuryokushimasu"
+  },
+  {
+   "source": "ইনপুট করি",
+   "target": "أن يُدخل (بيانات)"
+  },
+  {
+   "source": "ব্যো—",
+   "target": "byou"
+  },
+  {
+   "source": "সেকেন্ড",
+   "target": "ثوانٍ"
+  },
+  {
+   "source": "বই প্রকাশিত হয়",
+   "target": "يُنشَر كتاب"
+  },
+  {
+   "source": "কোনো শব্দ পাওয়া যায়নি।",
+   "target": "لم يُعثر على كلمة."
+  },
+  {
+   "source": "অন্য বানান বা বাংলা অর্থ দিয়ে চেষ্টা করুন।",
+   "target": "جرّب إملاء آخر أو معنى بالبنغالية."
+  },
+  {
+   "source": "১০ প্রশ্ন • দুই ধরনের অনুশীলন",
+   "target": "10 أسئلة • نوعان من الممارسة"
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "اختبر نفسك"
+  },
+  {
+   "source": "কখনো জাপানিজ দেখে বাংলা অর্থ, আবার কখনো বাংলা দেখে সঠিক জাপানিজ বেছে নিন। প্রতিবার নতুন random প্রশ্ন আসবে।",
+   "target": "أحيانا انظر إلى اليابانية واختر المعنى بالبنغالية، وأحيانا انظر إلى البنغالية واختر اليابانية الصحيحة. ستأتي أسئلة عشوائية جديدة في كل مرة."
+  },
+  {
+   "source": "নতুন কুইজ শুরু",
+   "target": "ابدأ اختبارا جديدا"
+  },
+  {
+   "source": "প্রশ্ন ১ / ১০",
+   "target": "السؤال 1 / 10"
+  },
+  {
+   "source": "স্কোর ০",
+   "target": "النتيجة 0"
+  },
+  {
+   "source": "পরের প্রশ্ন",
+   "target": "السؤال التالي"
+  },
+  {
+   "source": "তালিকা নোট:",
+   "target": "ملاحظة القائمة:"
+  },
+  {
+   "source": "আপনার দেওয়া পুরোনো ফাইলের সঙ্গে মিল রেখে Minna no Nihongo Shokyu II-এর ১ম সংস্করণের lesson order ব্যবহার করা হয়েছে। OCR-এ ভাঙা কানা, duplicate example এবং ভুল বাংলা অর্থ বাদ দিয়ে entry-গুলো নতুন করে তৈরি করা হয়েছে। এটি শিক্ষার্থীর সহায়ক free resource; মূল বইয়ের বিকল্প নয়।",
+   "target": "بما يتوافق مع الملف القديم الذي قدمته، تم استخدام ترتيب دروس الطبعة الأولى من Minna no Nihongo Shokyu II. وحُذفت الكانا المكسورة بـ OCR، والأمثلة المكررة، والمعاني البنغالية الخاطئة، وأُنشئت الإدخالات من جديد. هذا مورد دعم مجاني للمتعلمين؛ وليس بديلا عن الكتاب الأصلي."
+  },
+  {
+   "source": "আগের লেসন",
+   "target": "الدرس السابق"
+  },
+  {
+   "source": "সব N4 লেসন",
+   "target": "جميع دروس N4"
+  },
+  {
+   "source": "পরের লেসন",
+   "target": "الدرس التالي"
+  },
+  {
+   "source": "আপনার নিহোন • শিক্ষার্থীদের জন্য সহজ বাংলা জাপানিজ শিক্ষা",
+   "target": "আপনার নিহোন • تعلّم يابانية سهلة بالبنغالية البسيطة للمتعلمين"
+  }
+ ]
+}

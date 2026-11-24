@@ -1,0 +1,238 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "n5-grammar-lesson-20-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Grammar Lesson 20 | Plain Form・普通形 Conversation | আপনার নিহোন",
+   "target": "N5 Grammar Lesson 20 | Plain Form・普通形 Conversation | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "বন্ধুদের সাথে casual কথা, diary style, short answer — polite থেকে plain form",
+   "target": "Percakapan santai dengan teman, gaya buku harian, jawaban singkat — dari bentuk sopan ke bentuk plain"
+  },
+  {
+   "source": "Grammar শুরু",
+   "target": "Mulai Grammar"
+  },
+  {
+   "source": "আজকের Learning Goal",
+   "target": "Tujuan Pembelajaran Hari Ini"
+  },
+  {
+   "source": "সহজ ব্যাখ্যা + structure + example",
+   "target": "Penjelasan sederhana + struktur + contoh"
+  },
+  {
+   "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+   "target": "Untuk setiap pola, lihat strukturnya terlebih dahulu, lalu ucapkan contohnya dengan lantang. Tekan tombol audio untuk mendengar kalimat bahasa Jepangnya."
+  },
+  {
+   "source": "ます-form নয়, dictionary/ない/た/なかった form দিয়ে casual/plain style।",
+   "target": "Bukan bentuk ます — gaya santai/plain menggunakan bentuk kamus, ない, た, dan なかった."
+  },
+  {
+   "source": "বন্ধু, পরিবার, diary, grammar connection-এ plain form লাগে।",
+   "target": "Bentuk plain diperlukan dengan teman dan keluarga, dalam buku harian, dan untuk penghubungan grammar."
+  },
+  {
+   "source": "আশিতা, গাক্কো এ ইকু।",
+   "target": "Ashita, gakkou e iku."
+  },
+  {
+   "source": "কাল স্কুলে যাব।",
+   "target": "Besok saya akan pergi ke sekolah."
+  },
+  {
+   "source": "কিয়ো ওয়া ইকানাই।",
+   "target": "Kyou wa ikanai."
+  },
+  {
+   "source": "আজ যাব না।",
+   "target": "Hari ini saya tidak akan pergi."
+  },
+  {
+   "source": "কিনো, ইত্তা।",
+   "target": "Kinou, itta."
+  },
+  {
+   "source": "গতকাল গিয়েছিলাম।",
+   "target": "Kemarin saya pergi."
+  },
+  {
+   "source": "い-adjective plain form-এ です বাদ যায়।",
+   "target": "Dalam bentuk plain, kata sifat い menghilangkan です."
+  },
+  {
+   "source": "কোনো মিসে ওয়া ইয়াসুই।",
+   "target": "Kono mise wa yasui."
+  },
+  {
+   "source": "এই দোকান সস্তা।",
+   "target": "Toko ini murah."
+  },
+  {
+   "source": "কিনো ওয়া সামুকাত্তা।",
+   "target": "Kinou wa samukatta."
+  },
+  {
+   "source": "গতকাল ঠান্ডা ছিল।",
+   "target": "Kemarin dingin."
+  },
+  {
+   "source": "কোনো এইগা ওয়া ওমোশিরোকুনাই।",
+   "target": "Kono eiga wa omoshirokunai."
+  },
+  {
+   "source": "এই সিনেমা মজার নয়।",
+   "target": "Film ini tidak menarik."
+  },
+  {
+   "source": "な-adjective ও noun plain affirmative present-এ だ লাগে; negative じゃない।",
+   "target": "Kata sifat な dan kata benda menggunakan だ dalam bentuk plain afirmatif present; negatifnya adalah じゃない."
+  },
+  {
+   "source": "Question/casual conversation-এ だ বাদও হতে পারে, কিন্তু basic pattern শিখুন।",
+   "target": "Dalam pertanyaan dan percakapan santai, だ juga dapat dihilangkan — tetapi pelajari pola dasarnya terlebih dahulu."
+  },
+  {
+   "source": "কোনো মাচি ওয়া শিজুকাদা।",
+   "target": "Kono machi wa shizuka da."
+  },
+  {
+   "source": "এই শহর শান্ত।",
+   "target": "Kota ini tenang."
+  },
+  {
+   "source": "কারে ওয়া গাকুসেই জানাই।",
+   "target": "Kare wa gakusei ja nai."
+  },
+  {
+   "source": "সে ছাত্র নয়।",
+   "target": "Dia bukan seorang siswa."
+  },
+  {
+   "source": "কিনো ওয়া ইয়াসুমিদাত্তা।",
+   "target": "Kinou wa yasumi datta."
+  },
+  {
+   "source": "গতকাল ছুটি ছিল।",
+   "target": "Kemarin adalah hari libur."
+  },
+  {
+   "source": "আশিতা ইকু？",
+   "target": "Ashita iku?"
+  },
+  {
+   "source": "কাল যাবে?",
+   "target": "Apakah Anda akan pergi besok?"
+  },
+  {
+   "source": "উন, ইকু।",
+   "target": "Un, iku."
+  },
+  {
+   "source": "হ্যাঁ, যাব।",
+   "target": "Ya, saya akan pergi."
+  },
+  {
+   "source": "উন, ইকানাই।",
+   "target": "Un, ikanai."
+  },
+  {
+   "source": "না, যাব না।",
+   "target": "Tidak, saya tidak akan pergi."
+  },
+  {
+   "source": "কাকে বলছেন তার উপর style বদলাতে হবে।",
+   "target": "Anda harus mengubah gaya tergantung pada siapa Anda berbicara."
+  },
+  {
+   "source": "শিক্ষক/বস/ইন্টারভিউতে polite; বন্ধু/পরিবারে plain।",
+   "target": "Sopan dengan guru, atasan, dan saat wawancara; plain dengan teman dan keluarga."
+  },
+  {
+   "source": "সেনসেই নি： আশিতা, গাক্কো এ ইকিমাসু।",
+   "target": "Sensei ni: Ashita, gakkou e ikimasu."
+  },
+  {
+   "source": "শিক্ষককে: কাল স্কুলে যাব।",
+   "target": "Kepada guru: Besok saya akan pergi ke sekolah."
+  },
+  {
+   "source": "তোমোদাচি নি： আশিতা, গাক্কো এ ইকু।",
+   "target": "Tomodachi ni: Ashita, gakkou e iku."
+  },
+  {
+   "source": "বন্ধুকে: কাল স্কুলে যাব।",
+   "target": "Kepada teman: Besok saya akan pergi ke sekolah."
+  },
+  {
+   "source": "মুখে বলার Practice",
+   "target": "Latihan Berbicara"
+  },
+  {
+   "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+   "target": "Bacalah kalimat-kalimat ini dengan lantang 3 kali, seolah-olah dalam wawancara atau percakapan di kelas."
+  },
+  {
+   "source": "আশিতা, গাক্কো এ ইকু？",
+   "target": "Ashita, gakkou e iku?"
+  },
+  {
+   "source": "কাল স্কুলে যাবে?",
+   "target": "Apakah Anda akan pergi ke sekolah besok?"
+  },
+  {
+   "source": "কিনো, নানি ও শিতা？",
+   "target": "Kinou, nani wo shita?"
+  },
+  {
+   "source": "গতকাল কী করেছিলে?",
+   "target": "Apa yang Anda lakukan kemarin?"
+  },
+  {
+   "source": "এইগা ও মিতা।",
+   "target": "Eiga wo mita."
+  },
+  {
+   "source": "সিনেমা দেখেছি।",
+   "target": "Saya menonton film."
+  },
+  {
+   "source": "কোনো মাচি ওয়া শিজুকা？",
+   "target": "Kono machi wa shizuka?"
+  },
+  {
+   "source": "এই শহর শান্ত?",
+   "target": "Apakah kota ini tenang?"
+  },
+  {
+   "source": "✅ বন্ধু হলে plain: 明日行く。 কিন্তু polite বললেও ভুল নয়, শুধু দূরত্ব/ভদ্রতা বেশি।",
+   "target": "✅ Dengan teman, gunakan bentuk plain: 明日行く。 Menggunakan bentuk sopan juga tidak salah — hanya menambah jarak dan formalitas."
+  },
+  {
+   "source": "✅ 高い。 — い-adj-এর সাথে だ নয়।",
+   "target": "✅ 高い。 — Kata sifat い tidak menggunakan だ."
+  },
+  {
+   "source": "✅ 学生だ。 — noun plain affirmative present-এ だ।",
+   "target": "✅ 学生だ。 — Kata benda menggunakan だ dalam bentuk plain afirmatif present."
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "Uji Diri Anda"
+  },
+  {
+   "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 20 • Verified Premium Detailed Version",
+   "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 20 • Verified Premium Detailed Version"
+  }
+ ]
+}

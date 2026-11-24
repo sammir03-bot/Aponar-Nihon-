@@ -1,0 +1,238 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "n5-grammar-lesson-07-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Grammar Lesson 7 | で as Tool/Language + あげます・もらいます・もう | আপনার নিহোন",
+   "target": "N5 Grammar Lesson 7 | で as Tool/Language + あげます・もらいます・もう | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "কিসে/কোন ভাষায় করি, দেওয়া-নেওয়া, এবং “already” বলা",
+   "target": "എന്തെങ്കിലും ഉപയോഗിച്ച് അല്ലെങ്കിൽ ഒരു ഭാഷയിൽ കാര്യങ്ങൾ ചെയ്യൽ, കൊടുക്കലും വാങ്ങലും, “already” എന്ന് പറയൽ"
+  },
+  {
+   "source": "Grammar শুরু",
+   "target": "Grammar തുടങ്ങുക"
+  },
+  {
+   "source": "আজকের Learning Goal",
+   "target": "ഇന്നത്തെ Learning Goal"
+  },
+  {
+   "source": "Tool দিয়ে কাজ বলা",
+   "target": "ഒരു tool ഉപയോഗിച്ച് കാര്യങ്ങൾ ചെയ്യുന്നതിനെക്കുറിച്ച് പറയൽ"
+  },
+  {
+   "source": "はしで食べます — চপস্টিক দিয়ে খাই",
+   "target": "はしで食べます — ഞാൻ ചോപ്സ്റ്റിക്ക് ഉപയോഗിച്ച് കഴിക്കുന്നു"
+  },
+  {
+   "source": "Give/receive বোঝা",
+   "target": "കൊടുക്കലും വാങ്ങലും മനസ്സിലാക്കൽ"
+  },
+  {
+   "source": "Already বলা",
+   "target": "“Already” എന്ന് പറയൽ"
+  },
+  {
+   "source": "সহজ ব্যাখ্যা + structure + example",
+   "target": "ലളിതമായ വിശദീകരണം + structure + example"
+  },
+  {
+   "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+   "target": "ഓരോ pattern-നും ആദ്യം structure നോക്കൂ, പിന്നെ example-കൾ ഉറക്കെ പറയൂ. Audio button അമർത്തിയാൽ Japanese വാക്യം കേൾക്കാം."
+  },
+  {
+   "source": "কোন tool/মাধ্যম দিয়ে কাজ করা হচ্ছে তা で দিয়ে বলা হয়।",
+   "target": "എന്തെങ്കിലും ചെയ്യാൻ ഉപയോഗിക്കുന്ന tool അല്ലെങ്കിൽ മാർഗം で ഉപയോഗിച്ച് അടയാളപ്പെടുത്തുന്നു."
+  },
+  {
+   "source": "Lesson 6-এর で ছিল action place; এখানে で = by/with।",
+   "target": "Lesson 6-ൽ で ഒരു പ്രവൃത്തിയുടെ സ്ഥലത്തെ അടയാളപ്പെടുത്തി; ഇവിടെ で = by/with."
+  },
+  {
+   "source": "হাশি দে গোহান ও তাবেমাসু।",
+   "target": "Hashi de gohan wo tabemasu."
+  },
+  {
+   "source": "চপস্টিক দিয়ে ভাত খাই।",
+   "target": "ഞാൻ ചോപ്സ്റ്റിക്ക് ഉപയോഗിച്ച് ചോറ് കഴിക്കുന്നു."
+  },
+  {
+   "source": "নিহোনগো দে রেপোতো ও কাকিমাসু।",
+   "target": "Nihongo de repooto wo kakimasu."
+  },
+  {
+   "source": "জাপানি ভাষায় রিপোর্ট লিখি।",
+   "target": "ഞാൻ ജാപ്പനീസിൽ റിപ്പോർട്ട് എഴുതുന്നു."
+  },
+  {
+   "source": "এনপিৎসু দে নামায়ে ও কাকিমাসু।",
+   "target": "Enpitsu de namae wo kakimasu."
+  },
+  {
+   "source": "পেন্সিল দিয়ে নাম লিখি।",
+   "target": "ഞാൻ പെൻസിൽ ഉപയോഗിച്ച് എന്റെ പേര് എഴുതുന്നു."
+  },
+  {
+   "source": "কোনো শব্দ অন্য ভাষায় কী, তা জিজ্ঞাসা করতে।",
+   "target": "ഒരു വാക്ക് മറ്റൊരു ഭാഷയിൽ എന്താണെന്ന് ചോദിക്കാൻ."
+  },
+  {
+   "source": "বাংলা/ইংরেজি/জাপানি meaning জানতে খুব useful।",
+   "target": "ബംഗാളി, ഇംഗ്ലീഷ്, ജാപ്പനീസ് ഭാഷകളിലെ അർത്ഥങ്ങൾ കണ്ടെത്താൻ വളരെ ഉപകാരപ്രദം."
+  },
+  {
+   "source": "「 Thank you」 ওয়া নিহোনগো দে নানিদেসু কা।",
+   "target": "「Thank you」 wa nihongo de nan desu ka."
+  },
+  {
+   "source": "“Thank you” জাপানিতে কী?",
+   "target": "“Thank you” ജാപ്പനീസിൽ എന്താണ്?"
+  },
+  {
+   "source": "「 আরিগাতো」দেসু।",
+   "target": "「Arigatou」 desu."
+  },
+  {
+   "source": "আরিগাতো।",
+   "target": "Arigatou."
+  },
+  {
+   "source": "আমি/কেউ কাউকে কিছু দিই।",
+   "target": "ഞാനോ മറ്റാരെങ്കിലുമോ മറ്റൊരാൾക്ക് എന്തെങ്കിലും കൊടുക്കുന്നു."
+  },
+  {
+   "source": "গ্রহীতা/person সাধারণত に দিয়ে আসে।",
+   "target": "സ്വീകർത്താവ്/വ്യക്തി സാധാരണയായി に ഉപയോഗിച്ച് അടയാളപ്പെടുത്തുന്നു."
+  },
+  {
+   "source": "ওয়াতাশি ওয়া তোমোদাচি নি হানা ও আগেমাসু।",
+   "target": "Watashi wa tomodachi ni hana wo agemasu."
+  },
+  {
+   "source": "আমি বন্ধুকে ফুল দিই।",
+   "target": "ഞാൻ എന്റെ സുഹൃത്തിന് പൂക്കൾ കൊടുക്കുന്നു."
+  },
+  {
+   "source": "হাহা নি পুরেজেনতো ও আগেমাশিতা।",
+   "target": "Haha ni purezento wo agemashita."
+  },
+  {
+   "source": "মাকে উপহার দিয়েছি।",
+   "target": "ഞാൻ അമ്മയ്ക്ക് ഒരു സമ്മാനം കൊടുത്തു."
+  },
+  {
+   "source": "কারো কাছ থেকে কিছু পাই/নিই।",
+   "target": "ആരിൽ നിന്നെങ്കിലും എന്തെങ്കിലും സ്വീകരിക്കുകയോ ലഭിക്കുകയോ ചെയ്യൽ."
+  },
+  {
+   "source": "source/person に বা から — দুটোই দেখা যায়; から বেশি স্পষ্ট “থেকে”।",
+   "target": "ഉറവിടം/വ്യക്തി に അല്ലെങ്കിൽ から എടുക്കുന്നു — രണ്ടും കാണാറുണ്ട്; から ആണ് കൂടുതൽ വ്യക്തമായ “from”."
+  },
+  {
+   "source": "ওয়াতাশি ওয়া সেনসেই নি হোন ও মোরাইমাশিতা।",
+   "target": "Watashi wa sensei ni hon wo moraimashita."
+  },
+  {
+   "source": "আমি শিক্ষকের কাছ থেকে বই পেয়েছি।",
+   "target": "എനിക്ക് അധ്യാപകനിൽ നിന്ന് ഒരു പുസ്തകം ലഭിച്ചു."
+  },
+  {
+   "source": "তোমোদাচি কারা শাশিন ও মোরাইমাশিতা।",
+   "target": "Tomodachi kara shashin wo moraimashita."
+  },
+  {
+   "source": "বন্ধুর কাছ থেকে ছবি পেয়েছি।",
+   "target": "എനിക്ക് സുഹൃത്തിൽ നിന്ന് ഒരു ഫോട്ടോ ലഭിച്ചു."
+  },
+  {
+   "source": "কাজ হয়ে গেছে বলতে もう; এখনো হয়নি হলে まだです।",
+   "target": "എന്തെങ്കിലും ഇതിനകം ചെയ്തു എന്ന് പറയാൻ もう ഉപയോഗിക്കൂ; ഇനിയും ചെയ്തിട്ടില്ലെങ്കിൽ まだです."
+  },
+  {
+   "source": "মো শুকুদাই ও শিমাশিতা কা।",
+   "target": "Mou shukudai wo shimashita ka."
+  },
+  {
+   "source": "হোমওয়ার্ক করেছেন?",
+   "target": "നിങ്ങൾ ഹോംവർക്ക് ചെയ്തോ?"
+  },
+  {
+   "source": "হাই, মোশিমাশিতা।",
+   "target": "Hai, mou shimashita."
+  },
+  {
+   "source": "হ্যাঁ, করেছি।",
+   "target": "അതെ, ഞാൻ ചെയ്തു."
+  },
+  {
+   "source": "ইইয়ে, মাদাদেসু।",
+   "target": "Iie, mada desu."
+  },
+  {
+   "source": "না, এখনো না।",
+   "target": "ഇല്ല, ഇനിയും ഇല്ല."
+  },
+  {
+   "source": "মুখে বলার Practice",
+   "target": "ഉറക്കെ പറയാനുള്ള Practice"
+  },
+  {
+   "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+   "target": "ഈ വാക്യങ്ങൾ ഒരു interview/classroom conversation-ലെന്നപോലെ 3 തവണ ഉറക്കെ വായിക്കൂ."
+  },
+  {
+   "source": "নানদে গোহান ও তাবেমাসু কা।",
+   "target": "Nan de gohan wo tabemasu ka."
+  },
+  {
+   "source": "কী দিয়ে ভাত খান?",
+   "target": "നിങ്ങൾ എന്ത് ഉപയോഗിച്ചാണ് ചോറ് കഴിക്കുന്നത്?"
+  },
+  {
+   "source": "হাশি দেতাবেমাসু।",
+   "target": "Hashi de tabemasu."
+  },
+  {
+   "source": "চপস্টিক দিয়ে খাই।",
+   "target": "ഞാൻ ചോപ്സ്റ്റിക്ക് ഉപയോഗിച്ച് കഴിക്കുന്നു."
+  },
+  {
+   "source": "তানজো বি নি নানি ও মোরাইমাশিতা কা।",
+   "target": "Tanjoubi ni nani wo moraimashita ka."
+  },
+  {
+   "source": "জন্মদিনে কী পেয়েছেন?",
+   "target": "നിങ്ങളുടെ ജന്മദിനത്തിൽ നിങ്ങൾക്ക് എന്ത് ലഭിച്ചു?"
+  },
+  {
+   "source": "তোমোদাচি নি হোন ও মোরাইমাশিতা।",
+   "target": "Tomodachi ni hon wo moraimashita."
+  },
+  {
+   "source": "বন্ধুর কাছ থেকে বই পেয়েছি।",
+   "target": "എനിക്ക് സുഹൃത്തിൽ നിന്ന് ഒരു പുസ്തകം ലഭിച്ചു."
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "തന്നെത്താൻ പരീക്ഷിക്കുക"
+  },
+  {
+   "source": "“না, এখনো না” কোনটি?",
+   "target": "“ഇല്ല, ഇനിയും ഇല്ല” എന്നാൽ ഏതാണ്?"
+  },
+  {
+   "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 7 • Verified Premium Detailed Version",
+   "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 7 • Verified Premium Detailed Version"
+  }
+ ]
+}

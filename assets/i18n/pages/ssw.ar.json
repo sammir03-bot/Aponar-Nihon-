@@ -1,0 +1,502 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "ssw",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "SSW — Specified Skilled Worker সম্পূর্ণ গাইড | আপনার নিহোন",
+   "target": "SSW — Specified Skilled Worker دليل كامل | আপনার নিহোন"
+  },
+  {
+   "source": "মূল কনটেন্টে যান",
+   "target": "تخط إلى المحتوى الرئيسي"
+  },
+  {
+   "source": "SSW গাইড",
+   "target": "SSW Guide"
+  },
+  {
+   "source": "হোম",
+   "target": "الصفحة الرئيسية"
+  },
+  {
+   "source": "জাপানের SSW তথ্য — এক জায়গায়, সহজ ও যাচাইযোগ্য",
+   "target": "معلومات SSW اليابان — في مكان واحد، سهلة وقابلة للتحقق"
+  },
+  {
+   "source": "SSW(i), SSW(ii), কাজের field, পরীক্ষা, চাকরি, ডকুমেন্টস ও ভিসা প্রক্রিয়া—সবকিছুর একটি আপডেটেড বাংলা গাইড।",
+   "target": "SSW(i)، SSW(ii)، مجالات العمل، الامتحانات، الأعمال، الوثائق وعملية التأشيرة — دليل محدث لكل شيء."
+  },
+  {
+   "source": "১৯টি field দেখুন",
+   "target": "عرض 19 مجالا"
+  },
+  {
+   "source": "প্রক্রিয়া দেখুন",
+   "target": "عرض العملية"
+  },
+  {
+   "source": "১৯টি",
+   "target": "19"
+  },
+  {
+   "source": "১১টি",
+   "target": "11"
+  },
+  {
+   "source": "৫ বছর",
+   "target": "5 سنوات"
+  },
+  {
+   "source": "SSW(i)-এর মোট upper limit",
+   "target": "الحد الأعلى الكلي لـ SSW(i)"
+  },
+  {
+   "source": "তথ্য যাচাই: ৪ সেপ্টেম্বর ২০২৬।",
+   "target": "تم التحقق من المعلومات: 4 سبتمبر 2026."
+  },
+  {
+   "source": "Immigration Services Agency-এর বর্তমান overview SSW(i)-এর ১৯টি field এবং SSW(ii)-এর ১১টি field দেখায়। নতুন কিছু field-এর বিস্তারিত এখনো পর্যায়ক্রমে প্রকাশ হচ্ছে। আবেদন বা পরীক্ষা বুক করার আগে official source-এ latest status মিলিয়ে নিন।",
+   "target": "نظرة Immigration Services Agency الحالية تظهر 19 مجالا لـ SSW(i) و11 مجالا لـ SSW(ii). تفاصيل بعض المجالات الجديدة ما زالت تُنشر تدريجيا. تحقق من آخر حالة في المصادر الرسمية قبل التقديم أو حجز امتحان."
+  },
+  {
+   "source": "Food Service সতর্কতা:",
+   "target": "تنبيه Food Service:"
+  },
+  {
+   "source": "বর্তমান official SSW page-এ Food Service field-এর জন্য “new applications” সাময়িকভাবে গ্রহণ করা হচ্ছে না বলে দেখানো হয়েছে। এই status পরিবর্তন হতে পারে, তাই আবেদন করার আগে official notice দেখুন।",
+   "target": "صفحة SSW الرسمية الحالية تشير إلى أن «new applications» لمجال Food Service لا تُقبل مؤقتا. هذه الحالة قد تتغير، لذا تحقق من الإشعارات الرسمية قبل التقديم."
+  },
+  {
+   "source": "SSW(i) এবং SSW(ii)",
+   "target": "SSW(i) وSSW(ii)"
+  },
+  {
+   "source": "দুই status-এর stay, family এবং skill requirement আলাদা।",
+   "target": "متطلبات الإقامة والعائلة والمهارة للحالتين مختلفة."
+  },
+  {
+   "source": "নির্দিষ্ট field-এ skilled work",
+   "target": "عمل ماهر في مجالات محددة"
+  },
+  {
+   "source": "জাপানে মোট থাকার upper limit সর্বোচ্চ ৫ বছর।",
+   "target": "الحد الأعلى للإقامة الكلية في اليابان هو 5 سنوات كحد أقصى."
+  },
+  {
+   "source": "Family accompaniment অনুমোদিত নয়।",
+   "target": "مرافقة العائلة غير مسموحة."
+  },
+  {
+   "source": "Japanese worker-এর সমপর্যায়ের remuneration-এর নিয়ম আছে।",
+   "target": "قواعد الأجر تعادل تلك للعمال اليابانيين."
+  },
+  {
+   "source": "নির্ধারিত support company বা registered support organization থেকে পাওয়া যায়।",
+   "target": "متاح من شركات دعم معينة أو منظمات دعم مسجلة."
+  },
+  {
+   "source": "উচ্চতর দক্ষতার status",
+   "target": "حالة مهارة متقدمة"
+  },
+  {
+   "source": "থাকার মেয়াদে নির্দিষ্ট upper limit নেই; renewal করা যায়।",
+   "target": "لا حد أعلى محدد لفترة الإقامة؛ يمكن تجديدها."
+  },
+  {
+   "source": "প্রযোজ্য immigration requirement পূরণ করলে family আনার সুযোগ আছে।",
+   "target": "فرصة لإحضار العائلة إذا استوفيت متطلبات الهجرة المنطبقة."
+  },
+  {
+   "source": "বর্তমানে ১১টি field SSW(ii)-এর আওতায়।",
+   "target": "حاليا 11 مجالا تحت SSW(ii)."
+  },
+  {
+   "source": "Advanced skill ও experience requirement field অনুযায়ী আলাদা।",
+   "target": "متطلبات المهارة المتقدمة والخبرة تختلف حسب المجال."
+  },
+  {
+   "source": "বর্তমান ১১টি SSW(ii) field",
+   "target": "مجالات SSW(ii) الحالية الـ 11"
+  },
+  {
+   "source": "Building Cleaning, Construction, Industrial Product Manufacturing, Shipbuilding & Ship Machinery, Automobile Repair & Maintenance, Aviation, Accommodation, Agriculture, Fishery & Aquaculture, Food & Beverage Manufacturing এবং Food Service।",
+   "target": "Building Cleaning, Construction, Industrial Product Manufacturing, Shipbuilding & Ship Machinery, Automobile Repair & Maintenance, Aviation, Accommodation, Agriculture, Fishery & Aquaculture, Food & Beverage Manufacturing وFood Service."
+  },
+  {
+   "source": "SSW যাওয়ার সাধারণ flow",
+   "target": "التدفق العام للذهاب عبر SSW"
+  },
+  {
+   "source": "দেশ, field এবং আপনার বর্তমান residence status অনুযায়ী কিছু ধাপ বদলাতে পারে।",
+   "target": "بعض الخطوات قد تتغير حسب البلد والمجال وحالة إقامتك الحالية."
+  },
+  {
+   "source": "Field বেছে নিন",
+   "target": "اختر مجالا"
+  },
+  {
+   "source": "কাজের ধরন, eligibility এবং current intake status দেখুন।",
+   "target": "تحقق من نوع العمل والأهلية وحالة القبول الحالية."
+  },
+  {
+   "source": "Field অনুযায়ী প্রয়োজনীয় Japanese test ও skill test সম্পন্ন করুন।",
+   "target": "أكمل اختبار اليابانية المطلوب واختبار المهارة حسب المجال."
+  },
+  {
+   "source": "চাকরি/contract",
+   "target": "عمل/عقد"
+  },
+  {
+   "source": "Company-এর সাথে employment contract final করুন।",
+   "target": "أنه عقد العمل مع الشركة."
+  },
+  {
+   "source": "COE বা status-of-residence procedure সম্পন্ন করুন।",
+   "target": "أكمل إجراء COE أو حالة الإقامة."
+  },
+  {
+   "source": "বিদেশ থেকে গেলে embassy/consulate-এর visa procedure অনুসরণ করুন।",
+   "target": "إذا ذهبت من الخارج، اتبع إجراءات تأشيرة السفارة/القنصلية."
+  },
+  {
+   "source": "SSW(i)-এর ১৯টি কাজের field",
+   "target": "19 مجال عمل لـ SSW(i)"
+  },
+  {
+   "source": "Search বা filter ব্যবহার করে দ্রুত field খুঁজুন।",
+   "target": "ابحث عن المجالات بسرعة باستخدام البحث أو التصفية."
+  },
+  {
+   "source": "সব",
+   "target": "الكل"
+  },
+  {
+   "source": "বিদ্যমান ১৬",
+   "target": "16 موجودة"
+  },
+  {
+   "source": "নতুন ৩",
+   "target": "3 جديدة"
+  },
+  {
+   "source": "নার্সিং কেয়ার · 介護",
+   "target": "رعاية تمريضية · 介護"
+  },
+  {
+   "source": "শারীরিক সহায়তা ও দৈনন্দিন জীবন support।",
+   "target": "مساعدة بدنية ودعم للحياة اليومية."
+  },
+  {
+   "source": "বিল্ডিং ক্লিনিং",
+   "target": "تنظيف المباني"
+  },
+  {
+   "source": "বিল্ডিংয়ের ভেতরের cleaning ও maintenance কাজ।",
+   "target": "أعمال تنظيف وصيانة داخل المباني."
+  },
+  {
+   "source": "কনস্ট্রাকশন · 建設",
+   "target": "بناء · 建設"
+  },
+  {
+   "source": "বাড়ি, ভবন ও অবকাঠামো নির্মাণ।",
+   "target": "بناء المنازل والمباني والبنية التحتية."
+  },
+  {
+   "source": "শিল্পপণ্য, parts ও related manufacturing।",
+   "target": "منتجات صناعية وقطع وتصنيع ذو صلة."
+  },
+  {
+   "source": "জাহাজ নির্মাণ ও সংশ্লিষ্ট machinery।",
+   "target": "بناء السفن وآلات ذات صلة."
+  },
+  {
+   "source": "গাড়ি inspection, repair ও maintenance।",
+   "target": "فحص السيارات وإصلاحها وصيانتها."
+  },
+  {
+   "source": "Airport ground handling ও aircraft maintenance-এর নির্দিষ্ট কাজ।",
+   "target": "مهام محددة في مناولة المطارات الأرضية وصيانة الطائرات."
+  },
+  {
+   "source": "Hotel reception ও guest service।",
+   "target": "استقبال الفنادق وخدمة الضيوف."
+  },
+  {
+   "source": "নির্ধারিত শর্তে truck, taxi ও bus driving-related work।",
+   "target": "أعمال قيادة الشاحنات وسيارات الأجرة والحافلات بشروط محددة."
+  },
+  {
+   "source": "Railway maintenance ও operation-এর নির্দিষ্ট কাজ।",
+   "target": "مهام محددة في صيانة السكك الحديدية وتشغيلها."
+  },
+  {
+   "source": "ফসল উৎপাদন, harvesting ও livestock-related কাজ।",
+   "target": "إنتاج المحاصيل والحصاد وأعمال ذات صلة بالماشية."
+  },
+  {
+   "source": "মাছ ধরা ও aquaculture।",
+   "target": "صيد الأسماك وتربية الأحياء المائية."
+  },
+  {
+   "source": "খাদ্য প্রস্তুত ও processing।",
+   "target": "تحضير الطعام ومعالجته."
+  },
+  {
+   "source": "Restaurant customer service ও food service।",
+   "target": "خدمة عملاء المطاعم وخدمة الطعام."
+  },
+  {
+   "source": "Current official notice অনুযায়ী নতুন আবেদন সাময়িকভাবে বন্ধ—latest status check করুন।",
+   "target": "وفق الإشعار الرسمي الحالي، الطلبات الجديدة مغلقة مؤقتا — تحقق من آخر حالة."
+  },
+  {
+   "source": "Tree planting ও forest management।",
+   "target": "زراعة الأشجار وإدارة الغابات."
+  },
+  {
+   "source": "Lumber ও wood processing।",
+   "target": "الأخشاب ومعالجة الخشب."
+  },
+  {
+   "source": "Waste processing plant-এ recycling ও proper disposal। নতুন field; intake/details official notice-এ যাচাই করুন।",
+   "target": "إعادة التدوير والتخلص السليم في محطات معالجة النفايات. مجال جديد؛ تحقق من القبول/التفاصيل في الإشعار الرسمي."
+  },
+  {
+   "source": "Hotel/হাসপাতালের linen collection, laundering ও related work। নতুন field; latest details official source-এ দেখুন।",
+   "target": "جمع البياضات للفنادق/المستشفيات وغسلها وأعمال ذات صلة. مجال جديد؛ تحقق من آخر التفاصيل من مصادر رسمية."
+  },
+  {
+   "source": "Warehouse receiving, shipping ও storage। নতুন field; intake/details official notice-এ যাচাই করুন।",
+   "target": "استلام المستودعات وشحنها وتخزينها. مجال جديد؛ تحقق من القبول/التفاصيل في الإشعار الرسمي."
+  },
+  {
+   "source": "Language ও skill test",
+   "target": "اختبار اللغة والمهارة"
+  },
+  {
+   "source": "সব field-এর requirement এক নয়—নিজের field-এর official test page অবশ্যই দেখুন।",
+   "target": "المتطلبات ليست نفسها لكل المجالات — تأكد من مراجعة صفحة اختبار مجالك الرسمية."
+  },
+  {
+   "source": "সাধারণ requirement",
+   "target": "متطلب عام"
+  },
+  {
+   "source": "অনেক SSW(i) field-এ JFT-Basic বা JLPT N4-or-higher ব্যবহার করা হয়। তবে কিছু field/occupation-এ higher বা additional language requirement আছে।",
+   "target": "في مجالات SSW(i) كثيرة، يُستخدم JFT-Basic أو JLPT N4-or-higher. ومع ذلك، بعض المجالات/المهن لها متطلبات لغوية أعلى أو إضافية."
+  },
+  {
+   "source": "নির্বাচিত field-এর skill assessment সাধারণত প্রয়োজন হয়, যদি কোনো official exemption প্রযোজ্য না হয়।",
+   "target": "تقييم مهارة للمجال المختار عادة مطلوب، ما لم ينطبق إعفاء رسمي."
+  },
+  {
+   "source": "অতিরিক্ত requirement",
+   "target": "متطلب إضافي"
+  },
+  {
+   "source": "Nursing care-এ অতিরিক্ত Japanese test আছে; automobile transportation-এর কিছু occupation-এ language, driving licence ও training requirement আলাদা।",
+   "target": "للرعاية التمريضية اختبار يابانية إضافي؛ لبعض مهن نقل السيارات، متطلبات اللغة ورخصة القيادة والتدريب مختلفة."
+  },
+  {
+   "source": "schedule নিয়মিত বদলায়। তাই কোনো দেশ বা কেন্দ্রকে স্থায়ীভাবে “আছে/নেই” ধরে না নিয়ে official Test Information page থেকে live schedule দেখুন।",
+   "target": "الجدول يتغير بانتظام. لذلك، لا تفترض أن أي بلد أو مركز «متاح/غير متاح» نهائيا؛ تحقق من الجدول المباشر من صفحة Test Information الرسمية."
+  },
+  {
+   "source": "ডকুমেন্ট checklist",
+   "target": "قائمة وثائق"
+  },
+  {
+   "source": "এটি general checklist; exact documents field, company, country এবং application type অনুযায়ী বদলায়।",
+   "target": "هذه قائمة عامة؛ الوثائق الدقيقة تختلف حسب المجال والشركة والبلد ونوع الطلب."
+  },
+  {
+   "source": "Passport ও identity documents",
+   "target": "جواز السفر ووثائق الهوية"
+  },
+  {
+   "source": "নাম, জন্মতারিখ ও validity মিলিয়ে নিন।",
+   "target": "تحقق من الاسم وتاريخ الميلاد والصلاحية."
+  },
+  {
+   "source": "আপনার field-এর applicable Japanese qualification বা exemption proof।",
+   "target": "مؤهل ياباني منطبق لمجالك أو إثبات إعفاء."
+  },
+  {
+   "source": "নির্বাচিত field-এর result/certificate বা applicable exemption proof।",
+   "target": "نتيجة/شهادة للمجال المختار أو إثبات إعفاء منطبق."
+  },
+  {
+   "source": "Salary, hours, job content ও working conditions ভালোভাবে পড়ুন।",
+   "target": "اقرأ الراتب والساعات ومحتوى العمل وظروف العمل بعناية."
+  },
+  {
+   "source": "Company/representative-এর সাথে latest official format ব্যবহার করুন।",
+   "target": "استخدم آخر تنسيق رسمي مع الشركة/الممثل."
+  },
+  {
+   "source": "Sending procedure, medical বা অন্য supporting documents প্রয়োজন হতে পারে।",
+   "target": "إجراء إرسال أو وثائق طبية أو داعمة أخرى قد تكون مطلوبة."
+  },
+  {
+   "source": "Job, salary ও company check",
+   "target": "فحص العمل والراتب والشركة"
+  },
+  {
+   "source": "একটি universal fixed salary নেই; contract এবং working conditions লিখিতভাবে যাচাই করুন।",
+   "target": "لا يوجد راتب ثابت عالمي؛ تحقق من العقد وظروف العمل كتابة."
+  },
+  {
+   "source": "SSW worker-এর remuneration comparable Japanese worker-এর সমপর্যায়ের হওয়া প্রয়োজন।",
+   "target": "أجر عامل SSW يجب أن يكون في مستوى عامل ياباني مماثل."
+  },
+  {
+   "source": "Contract পড়ুন",
+   "target": "اقرأ العقد"
+  },
+  {
+   "source": "Base wage, overtime rate, deductions, housing, transport, insurance, working hours ও holidays যাচাই করুন।",
+   "target": "تحقق من الأجر الأساسي ومعدل العمل الإضافي والخصومات والسكن والنقل والتأمين وساعات العمل والعطلات."
+  },
+  {
+   "source": "Employer change সম্ভব হতে পারে, তবে field/status procedure এবং Immigration notification ঠিকভাবে করতে হবে। নতুন field-এ গেলে নতুন requirement প্রযোজ্য হতে পারে।",
+   "target": "تغيير صاحب العمل قد يكون ممكنا، لكن إجراءات المجال/الحالة وإشعارات الهجرة يجب أن تتم بشكل صحيح. قد تنطبق متطلبات جديدة عند الانتقال إلى مجال جديد."
+  },
+  {
+   "source": "Interview প্রস্তুতি",
+   "target": "التحضير للمقابلة"
+  },
+  {
+   "source": "নিজের Japanese level ও বাস্তব experience অনুযায়ী সংক্ষিপ্ত, পরিষ্কার উত্তর practice করুন।",
+   "target": "تدرب على إجابات قصيرة وواضحة بناء على مستواك في اليابانية وخبرتك الحقيقية."
+  },
+  {
+   "source": "নাম, background, Japanese level, skill এবং কেন এই field—সংক্ষেপে বলার practice করুন।",
+   "target": "تدرب على الحديث باختصار عن اسمك وخلفيتك ومستواك في اليابانية ومهاراتك ولماذا هذا المجال."
+  },
+  {
+   "source": "Job description আগে পড়ে দায়িত্ব, shift, safety এবং teamwork-এর basic vocabulary শিখুন।",
+   "target": "اقرأ وصف العمل مسبقا وتعلم مفردات أساسية للمسؤوليات والورديات والسلامة والعمل الجماعي."
+  },
+  {
+   "source": "Salary, shift, housing, support, workplace location ও deductions নিয়ে ভদ্রভাবে প্রশ্ন করুন।",
+   "target": "اسأل بأدب عن الراتب والوردية والسكن والدعم وموقع العمل والخصومات."
+  },
+  {
+   "source": "সাধারণ প্রশ্ন ও উত্তর",
+   "target": "أسئلة وأجوبة عامة"
+  },
+  {
+   "source": "Category বেছে নিয়ে প্রয়োজনীয় উত্তর দ্রুত দেখুন। JavaScript বন্ধ থাকলেও সব উত্তর দেখা যাবে।",
+   "target": "اختر فئة واطلع بسرعة على الإجابات الضرورية. كل الإجابات ستكون مرئية حتى لو عُطل JavaScript."
+  },
+  {
+   "source": "ভিসা",
+   "target": "التأشيرة"
+  },
+  {
+   "source": "পরীক্ষা",
+   "target": "اختبار"
+  },
+  {
+   "source": "পরিবার",
+   "target": "عائلة"
+  },
+  {
+   "source": "কাজ",
+   "target": "مهام"
+  },
+  {
+   "source": "২০২৬ আপডেট",
+   "target": "تحديث 2026"
+  },
+  {
+   "source": "SSW(i)-এ পরিবার আনা যায়?",
+   "target": "هل يمكن إحضار العائلة في SSW(i)؟"
+  },
+  {
+   "source": "না। Official overview অনুযায়ী SSW(i)-এ family accompaniment অনুমোদিত নয়।",
+   "target": "لا. وفق النظرة الرسمية، مرافقة العائلة غير مسموحة في SSW(i)."
+  },
+  {
+   "source": "SSW(ii)-এ পরিবার আনা যায়?",
+   "target": "هل يمكن إحضار العائلة في SSW(ii)؟"
+  },
+  {
+   "source": "প্রযোজ্য immigration rules পূরণ করলে family আনার সুযোগ আছে। SSW(ii)-এর stay duration-এ নির্দিষ্ট upper limit নেই।",
+   "target": "هناك فرصة لإحضار العائلة إذا استوفيت قواعد الهجرة المنطبقة. لا حد أعلى محدد لمدة إقامة SSW(ii)."
+  },
+  {
+   "source": "SSW(i)-এ এখন কয়টি field?",
+   "target": "كم مجالا يوجد الآن في SSW(i)؟"
+  },
+  {
+   "source": "বর্তমান official overview ১৯টি field তালিকাভুক্ত করে। নতুন কয়েকটি field-এর implementation/details পর্যায়ক্রমে প্রকাশ হচ্ছে।",
+   "target": "النظرة الرسمية الحالية تدرج 19 مجالا. تنفيذ/تفاصيل عدة مجالات جديدة تُنشر تدريجيا."
+  },
+  {
+   "source": "সব field-এ JLPT N4 বা JFT-Basic হলেই হবে?",
+   "target": "هل سيكفي JLPT N4 أو JFT-Basic لكل المجالات؟"
+  },
+  {
+   "source": "না। অনেক field-এ এটি সাধারণ language route হলেও কিছু field/occupation-এ higher বা additional requirement আছে। নিজের field-এর official requirement দেখুন।",
+   "target": "لا. رغم أن هذا طريق لغوي شائع لمجالات كثيرة، بعض المجالات/المهن لها متطلبات أعلى أو إضافية. تحقق من المتطلبات الرسمية لمجالك."
+  },
+  {
+   "source": "বাংলাদেশে কোন SSW exam এখন আছে?",
+   "target": "أي امتحانات SSW متاحة حاليا في بنغلاديش؟"
+  },
+  {
+   "source": "Schedule দ্রুত বদলায়। Official Test Information page-এ country এবং date অনুযায়ী current schedule দেখুন।",
+   "target": "الجداول تتغير بسرعة. تحقق من الجدول الحالي حسب البلد والتاريخ في صفحة Official Test Information."
+  },
+  {
+   "source": "SSW(ii)-এ যেতে আগে ঠিক ৫ বছর SSW(i) করতেই হবে?",
+   "target": "هل من الضروري إكمال 5 سنوات بالضبط من SSW(i) قبل الانتقال إلى SSW(ii)؟"
+  },
+  {
+   "source": "একটি universal “ঠিক ৫ বছর” rule ধরে নেওয়া ঠিক নয়। SSW(ii)-এর advanced skill/experience requirement field অনুযায়ী আলাদা।",
+   "target": "ليس صحيحا افتراض قاعدة عالمية «5 سنوات بالضبط». متطلبات المهارة المتقدمة/الخبرة لـ SSW(ii) تختلف حسب المجال."
+  },
+  {
+   "source": "Fixed মাসিক salary কত?",
+   "target": "ما الراتب الشهري الثابت؟"
+  },
+  {
+   "source": "Universal fixed salary নেই। Region, employer, occupation, experience ও overtime অনুযায়ী আয় বদলায়; remuneration comparable Japanese worker-এর সমপর্যায়ের হওয়া প্রয়োজন।",
+   "target": "لا يوجد راتب ثابت عالمي. الدخل يختلف بناء على المنطقة وصاحب العمل والمهنة والخبرة والعمل الإضافي؛ الأجر يجب أن يكون في مستوى عامل ياباني مماثل."
+  },
+  {
+   "source": "SSC/JSC পাস কি universal SSW requirement?",
+   "target": "هل اجتياز SSC/JSC متطلب SSW عالمي؟"
+  },
+  {
+   "source": "General official overview-এ universal “SSC/JSC minimum” হিসেবে এমন blanket requirement নেই। Field, test, employment এবং country-specific procedure আলাদা হতে পারে।",
+   "target": "النظرة الرسمية العامة ليس فيها مثل هذا المتطلب الشامل كحد أدنى عالمي «SSC/JSC». المجالات والاختبارات والتوظيف والإجراءات الخاصة بالبلد قد تختلف."
+  },
+  {
+   "source": "SSW rules ও test schedule পরিবর্তিত হতে পারে। আবেদন করার আগে Immigration Services Agency-এর latest information মিলিয়ে নিন।",
+   "target": "قواعد SSW وجداول الاختبارات قد تتغير. تحقق من آخر معلومات Immigration Services Agency قبل التقديم."
+  },
+  {
+   "source": "SSW(i)/(ii) ও field list ↗",
+   "target": "SSW(i)/(ii) وقائمة المجالات ↗"
+  },
+  {
+   "source": "আপনার নিহোন · SSW",
+   "target": "আপনার নিহোন · SSW"
+  },
+  {
+   "source": "এটি তথ্যভিত্তিক গাইড; চূড়ান্ত সিদ্ধান্ত ও latest requirement সংশ্লিষ্ট কর্তৃপক্ষের official source অনুযায়ী হবে।",
+   "target": "هذا دليل معلوماتي؛ القرارات النهائية وآخر المتطلبات ستكون وفق المصدر الرسمي للسلطات ذات الصلة."
+  },
+  {
+   "source": "হোমে ফিরুন",
+   "target": "العودة إلى الصفحة الرئيسية"
+  }
+ ]
+}

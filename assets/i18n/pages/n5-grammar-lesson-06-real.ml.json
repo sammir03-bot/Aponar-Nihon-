@@ -1,0 +1,262 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "n5-grammar-lesson-06-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Grammar Lesson 6 | Particles を・で and Invitation ませんか / ましょう | আপনার নিহোন",
+   "target": "N5 Grammar Lesson 6 | Particles を・で and Invitation ませんか / ましょう | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "খাওয়া, পান করা, করা, আমন্ত্রণ দেওয়া — দৈনন্দিন কাজ বলার grammar",
+   "target": "കഴിക്കൽ, കുടിക്കൽ, ചെയ്യൽ, ക്ഷണിക്കൽ — ദൈനംദിന പ്രവൃത്തികളെക്കുറിച്ച് പറയാനുള്ള grammar"
+  },
+  {
+   "source": "Grammar শুরু",
+   "target": "Grammar തുടങ്ങുക"
+  },
+  {
+   "source": "আজকের Learning Goal",
+   "target": "ഇന്നത്തെ Learning Goal"
+  },
+  {
+   "source": "Direct object বোঝা",
+   "target": "Direct object മനസ്സിലാക്കൽ"
+  },
+  {
+   "source": "パンを食べます — রুটি খাই",
+   "target": "パンを食べます — ഞാൻ ബ്രെഡ് കഴിക്കുന്നു"
+  },
+  {
+   "source": "কোথায় কাজ করি",
+   "target": "ഒരു പ്രവൃത്തി നടക്കുന്ന സ്ഥലം"
+  },
+  {
+   "source": "駅で新聞を買います — স্টেশনে পত্রিকা কিনি",
+   "target": "駅で新聞を買います — ഞാൻ സ്റ്റേഷനിൽ പത്രം വാങ്ങുന്നു"
+  },
+  {
+   "source": "আসুন/চলুন বলা",
+   "target": "“നമുക്ക്” എന്ന് പറയൽ"
+  },
+  {
+   "source": "সহজ ব্যাখ্যা + structure + example",
+   "target": "ലളിതമായ വിശദീകരണം + structure + example"
+  },
+  {
+   "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+   "target": "ഓരോ pattern-നും ആദ്യം structure നോക്കൂ, പിന്നെ example-കൾ ഉറക്കെ പറയൂ. Audio button അമർത്തിയാൽ Japanese വാക്യം കേൾക്കാം."
+  },
+  {
+   "source": "কোন বস্তু/কাজটি verb-এর direct object, সেটা を দিয়ে দেখানো হয়।",
+   "target": "ഒരു verb-ന്റെ direct object ആയ വസ്തുവോ പ്രവൃത്തിയോ を ഉപയോഗിച്ച് അടയാളപ്പെടുത്തുന്നു."
+  },
+  {
+   "source": "বাংলায় “কি খাই/কি পড়ি/কি করি” — সেই উত্তরটি を-এর আগে আসে।",
+   "target": "“ഞാൻ എന്ത് കഴിക്കുന്നു / എന്ത് പഠിക്കുന്നു / എന്ത് ചെയ്യുന്നു” എന്നതിന്റെ ഉത്തരം ചിന്തിക്കൂ — ആ ഉത്തരം を-ന് മുമ്പ് വരുന്നു."
+  },
+  {
+   "source": "ওয়াতাশি ওয়া পান ও তাবেমাসু।",
+   "target": "Watashi wa pan wo tabemasu."
+  },
+  {
+   "source": "আমি রুটি খাই।",
+   "target": "ഞാൻ ബ്രെഡ് കഴിക്കുന്നു."
+  },
+  {
+   "source": "জুসু ও নোমিমাসু।",
+   "target": "Juusu wo nomimasu."
+  },
+  {
+   "source": "জুস পান করি।",
+   "target": "ഞാൻ ജ്യൂസ് കുടിക്കുന്നു."
+  },
+  {
+   "source": "নিহোনগো ও বেনকিয়ো শিমাসু।",
+   "target": "Nihongo wo benkyou shimasu."
+  },
+  {
+   "source": "জাপানি পড়াশোনা করি।",
+   "target": "ഞാൻ ജാപ്പനീസ് പഠിക്കുന്നു."
+  },
+  {
+   "source": "কোন জায়গায় action হচ্ছে তা で দিয়ে বলা হয়।",
+   "target": "ഒരു പ്രവൃത്തി നടക്കുന്ന സ്ഥലം で ഉപയോഗിച്ച് പറയുന്നു."
+  },
+  {
+   "source": "এখানে で মানে “at/in” — action-এর জায়গা।",
+   "target": "ഇവിടെ で എന്നാൽ “at/in” — പ്രവൃത്തി നടക്കുന്ന സ്ഥലം."
+  },
+  {
+   "source": "একি দে শিনবুন ও কাইমাসু।",
+   "target": "Eki de shinbun wo kaimasu."
+  },
+  {
+   "source": "স্টেশনে পত্রিকা কিনি।",
+   "target": "ഞാൻ സ്റ്റേഷനിൽ പത്രം വാങ്ങുന്നു."
+  },
+  {
+   "source": "গাক্কো দে নিহোনগো ও বেনকিয়ো শিমাসু।",
+   "target": "Gakkou de nihongo wo benkyou shimasu."
+  },
+  {
+   "source": "স্কুলে জাপানি পড়ি।",
+   "target": "ഞാൻ സ്കൂളിൽ ജാപ്പനീസ് പഠിക്കുന്നു."
+  },
+  {
+   "source": "কী করবেন/খাবেন/পড়বেন—verb-এর direct object জানতে 何を ব্যবহার হয়।",
+   "target": "ഒരു verb-ന്റെ direct object എന്താണെന്ന് — എന്ത് ചെയ്യും, കഴിക്കും അല്ലെങ്കിൽ പഠിക്കും എന്ന് — ചോദിക്കാൻ 何を ഉപയോഗിക്കുന്നു."
+  },
+  {
+   "source": "何を-এর উচ্চারণ なにを। উত্তরে object + を + verb বলুন।",
+   "target": "何を എന്ന് なにを എന്നാണ് ഉച്ചരിക്കുന്നത്. ഉത്തരത്തിൽ object + を + verb പറയൂ."
+  },
+  {
+   "source": "নানি ও তাবেমাসু কা।",
+   "target": "Nani wo tabemasu ka."
+  },
+  {
+   "source": "কী খাবেন?",
+   "target": "നിങ്ങൾ എന്ത് കഴിക്കും?"
+  },
+  {
+   "source": "পান ও তাবেমাসু।",
+   "target": "Pan wo tabemasu."
+  },
+  {
+   "source": "রুটি খাব।",
+   "target": "ഞാൻ ബ്രെഡ് കഴിക്കും."
+  },
+  {
+   "source": "নানি ও বেনকিয়ো শিমাসু কা।",
+   "target": "Nani wo benkyou shimasu ka."
+  },
+  {
+   "source": "কী পড়াশোনা করবেন?",
+   "target": "നിങ്ങൾ എന്ത് പഠിക്കും?"
+  },
+  {
+   "source": "ভদ্রভাবে কাউকে invite করতে ব্যবহার হয় — “করবেন না?” / “চলবেন?”।",
+   "target": "ഒരാളെ മര്യാദയോടെ ക്ഷണിക്കാൻ ഉപയോഗിക്കുന്നു — “ചെയ്യില്ലേ…?” / “കൂടെ വരുമോ?”"
+  },
+  {
+   "source": "প্রস্তাবটা listener-এর উপর ছেড়ে দেয়, তাই natural ও polite।",
+   "target": "ഇത് ഓഫർ കേൾക്കുന്നയാളുടെ തീരുമാനത്തിന് വിടുന്നു, അതിനാൽ സ്വാഭാവികവും മര്യാദയുള്ളതുമായി തോന്നുന്നു."
+  },
+  {
+   "source": "ইশ্শো নি কিয়োতো এ ইকিমাসেন কা।",
+   "target": "Issho ni Kyouto e ikimasen ka."
+  },
+  {
+   "source": "একসাথে কিয়োতো যাবেন?",
+   "target": "ഒരുമിച്ച് Kyoto-യിലേക്ക് പോകുമോ?"
+  },
+  {
+   "source": "ইশ্শো নি হিরু গোহান ও তাবেমাসেন কা।",
+   "target": "Issho ni hiru gohan wo tabemasen ka."
+  },
+  {
+   "source": "একসাথে দুপুরের খাবার খাবেন?",
+   "target": "ഒരുമിച്ച് ഉച്ചഭക്ഷണം കഴിക്കുമോ?"
+  },
+  {
+   "source": "চলুন করি / আসুন করি — speaker নিজেও করতে চায়।",
+   "target": "“നമുക്ക് ചെയ്യാം” — സംസാരിക്കുന്നയാൾക്കും അത് ചെയ്യാൻ ആഗ്രഹമുണ്ട്."
+  },
+  {
+   "source": "ませんか থেকে একটু বেশি direct suggestion।",
+   "target": "ませんか-യേക്കാൾ അല്പം കൂടുതൽ നേരിട്ടുള്ള നിർദ്ദേശം."
+  },
+  {
+   "source": "চোত্তো ইয়াসুমিমাশো।",
+   "target": "Chotto yasumimashou."
+  },
+  {
+   "source": "চলুন একটু বিশ্রাম নিই।",
+   "target": "നമുക്ക് അല്പം വിശ്രമിക്കാം."
+  },
+  {
+   "source": "বেনকিয়ো শিমাশো।",
+   "target": "Benkyou shimashou."
+  },
+  {
+   "source": "চলুন পড়াশোনা করি।",
+   "target": "നമുക്ക് പഠിക്കാം."
+  },
+  {
+   "source": "মুখে বলার Practice",
+   "target": "ഉറക്കെ പറയാനുള്ള Practice"
+  },
+  {
+   "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+   "target": "ഈ വാക്യങ്ങൾ ഒരു interview/classroom conversation-ലെന്നപോലെ 3 തവണ ഉറക്കെ വായിക്കൂ."
+  },
+  {
+   "source": "কিয়ো, নানি ও শিমাসু কা।",
+   "target": "Kyou, nani wo shimasu ka."
+  },
+  {
+   "source": "আজ কী করবেন?",
+   "target": "ഇന്ന് നിങ്ങൾ എന്ത് ചെയ്യും?"
+  },
+  {
+   "source": "ওয়াতাশি ওয়া নিহোনগো ও বেনকিয়ো শিমাসু।",
+   "target": "Watashi wa nihongo wo benkyou shimasu."
+  },
+  {
+   "source": "আমি জাপানি পড়ব।",
+   "target": "ഞാൻ ജാപ്പനീസ് പഠിക്കും."
+  },
+  {
+   "source": "দোকো দে বেনকিয়ো শিমাসু কা।",
+   "target": "Doko de benkyou shimasu ka."
+  },
+  {
+   "source": "কোথায় পড়বেন?",
+   "target": "നിങ്ങൾ എവിടെ പഠിക്കും?"
+  },
+  {
+   "source": "উচি দে বেনকিয়ো শিমাসু।",
+   "target": "Uchi de benkyou shimasu."
+  },
+  {
+   "source": "বাড়িতে পড়ব।",
+   "target": "ഞാൻ വീട്ടിൽ പഠിക്കും."
+  },
+  {
+   "source": "ইশ্শো নি বেনকিয়ো শিমাসেন কা।",
+   "target": "Issho ni benkyou shimasen ka."
+  },
+  {
+   "source": "একসাথে পড়বেন?",
+   "target": "ഒരുമിച്ച് പഠിക്കുമോ?"
+  },
+  {
+   "source": "✅ パンを食べます。 — direct object হলে を।",
+   "target": "✅ パンを食べます。 — direct object ആണെങ്കിൽ を ഉപയോഗിക്കൂ."
+  },
+  {
+   "source": "✅ 駅で新聞を買います。 — action-এর জায়গা হলে で।",
+   "target": "✅ 駅で新聞を買います。 — ഒരു പ്രവൃത്തിയുടെ സ്ഥലത്തിന് で ഉപയോഗിക്കൂ."
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "തന്നെത്താൻ പരീക്ഷിക്കുക"
+  },
+  {
+   "source": "চলুন বিশ্রাম নিই — কোনটি?",
+   "target": "നമുക്ക് വിശ്രമിക്കാം — ഏതാണ് അത്?"
+  },
+  {
+   "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 6 • Verified Premium Detailed Version",
+   "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 6 • Verified Premium Detailed Version"
+  }
+ ]
+}

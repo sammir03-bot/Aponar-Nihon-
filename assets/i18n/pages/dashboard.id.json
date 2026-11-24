@@ -1,0 +1,554 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "dashboard",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "আপনার নিহোন - ইন্টারেক্টিভ ড্যাশবোর্ড",
+   "target": "আপনার নিহোন - Interactive Dashboard"
+  },
+  {
+   "source": "মূল সাইটে ফিরুন",
+   "target": "Kembali ke situs utama"
+  },
+  {
+   "source": "ইন্টারেক্টিভ ড্যাশবোর্ড",
+   "target": "Interactive Dashboard"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "ডেটা ভিজুয়ালাইজেশন",
+   "target": "Visualisasi Data"
+  },
+  {
+   "source": "জাপানি ভাষা শিক্ষা, খরচ, JLPT লেভেল এবং ক্যারিয়ার সম্পর্কিত সকল তথ্য একনজরে দেখুন",
+   "target": "Lihat semua informasi tentang pembelajaran bahasa Jepang, biaya, level JLPT, dan karier sekilas"
+  },
+  {
+   "source": "০",
+   "target": "0"
+  },
+  {
+   "source": "মোট শিক্ষার্থী",
+   "target": "Total Siswa"
+  },
+  {
+   "source": "PDF রিসোর্স",
+   "target": "Sumber Daya PDF"
+  },
+  {
+   "source": "০%",
+   "target": "0%"
+  },
+  {
+   "source": "সাকসেস রেট",
+   "target": "Tingkat Keberhasilan"
+  },
+  {
+   "source": "কুইজ প্রশ্ন",
+   "target": "Pertanyaan Kuis"
+  },
+  {
+   "source": "ইন্টারভিউ প্রশ্ন",
+   "target": "Pertanyaan Wawancara"
+  },
+  {
+   "source": "প্রিন্ট / সেভ PDF",
+   "target": "Print / Save PDF"
+  },
+  {
+   "source": "শেয়ার করুন",
+   "target": "Bagikan"
+  },
+  {
+   "source": "শেখা শুরু করুন",
+   "target": "Mulai Belajar"
+  },
+  {
+   "source": "ডেটা বিশ্লেষণ",
+   "target": "Analisis Data"
+  },
+  {
+   "source": "প্ল্যাটফর্ম ওভারভিউ",
+   "target": "Ikhtisar Platform"
+  },
+  {
+   "source": "আপনার নিহোন প্ল্যাটফর্মের সকল রিসোর্স ও পরিসংখ্যান",
+   "target": "Semua sumber daya dan statistik platform আপনার নিহোন"
+  },
+  {
+   "source": "JLPT লেভেল ভিত্তিক রিসোর্স",
+   "target": "Sumber Daya berdasarkan Level JLPT"
+  },
+  {
+   "source": "স্টাডি ম্যাটেরিয়াল ক্যাটেগরি",
+   "target": "Kategori Materi Belajar"
+  },
+  {
+   "source": "বিভাগ",
+   "target": "Divisi"
+  },
+  {
+   "source": "জাপানে মাসিক খরচের তুলনা (ইয়েনে)",
+   "target": "Perbandingan biaya bulanan di Jepang (dalam yen)"
+  },
+  {
+   "source": "শহরভিত্তিক",
+   "target": "Berdasarkan kota"
+  },
+  {
+   "source": "কুইজ ক্যাটেগরি বিশ্লেষণ",
+   "target": "Analisis Kategori Kuis"
+  },
+  {
+   "source": "N5 কুইজ",
+   "target": "Kuis N5"
+  },
+  {
+   "source": "ইন্টারভিউ প্রস্তুতি ওভারভিউ",
+   "target": "Ikhtisar Persiapan Wawancara"
+  },
+  {
+   "source": "প্রস্তুতি",
+   "target": "Persiapan"
+  },
+  {
+   "source": "JLPT পাস রেট ট্রেন্ড (বিশ্বব্যাপী)",
+   "target": "Tren Tingkat Kelulusan JLPT (seluruh dunia)"
+  },
+  {
+   "source": "ট্রেন্ড",
+   "target": "Tren"
+  },
+  {
+   "source": "তুলনামূলক বিশ্লেষণ",
+   "target": "Analisis Perbandingan"
+  },
+  {
+   "source": "JLPT লেভেল তুলনা",
+   "target": "Perbandingan Level JLPT"
+  },
+  {
+   "source": "প্রতিটি JLPT লেভেলের বিস্তারিত তুলনা",
+   "target": "Perbandingan terperinci setiap level JLPT"
+  },
+  {
+   "source": "লেভেল",
+   "target": "Level"
+  },
+  {
+   "source": "কানজি",
+   "target": "Kanji"
+  },
+  {
+   "source": "ভোকাবুলারি",
+   "target": "Kosakata"
+  },
+  {
+   "source": "সময়কাল",
+   "target": "Durasi"
+  },
+  {
+   "source": "পাস রেট",
+   "target": "Tingkat Kelulusan"
+  },
+  {
+   "source": "ব্যবহার",
+   "target": "Penggunaan"
+  },
+  {
+   "source": "১০২টি",
+   "target": "102"
+  },
+  {
+   "source": "~৮০০",
+   "target": "~800"
+  },
+  {
+   "source": "৩-৪ মাস",
+   "target": "3-4 bulan"
+  },
+  {
+   "source": "~৪৫%",
+   "target": "~45%"
+  },
+  {
+   "source": "ভাষা স্কুলে ভর্তি",
+   "target": "Penerimaan sekolah bahasa"
+  },
+  {
+   "source": "৩২০টি",
+   "target": "320"
+  },
+  {
+   "source": "~১,৫০০",
+   "target": "~1.500"
+  },
+  {
+   "source": "৬-৮ মাস",
+   "target": "6-8 bulan"
+  },
+  {
+   "source": "~৩৫%",
+   "target": "~35%"
+  },
+  {
+   "source": "দৈনন্দিন জীবন",
+   "target": "Kehidupan Sehari-hari"
+  },
+  {
+   "source": "৬৫০টি",
+   "target": "650"
+  },
+  {
+   "source": "~৩,৭৫০",
+   "target": "~3.750"
+  },
+  {
+   "source": "১২-১৮ মাস",
+   "target": "12-18 bulan"
+  },
+  {
+   "source": "~৩২%",
+   "target": "~32%"
+  },
+  {
+   "source": "কর্মক্ষেত্র / ভিসা",
+   "target": "Tempat Kerja / Visa"
+  },
+  {
+   "source": "১,০০০টি",
+   "target": "1.000"
+  },
+  {
+   "source": "~৬,০০০",
+   "target": "~6.000"
+  },
+  {
+   "source": "১৮-২৪ মাস",
+   "target": "18-24 bulan"
+  },
+  {
+   "source": "~৩৬%",
+   "target": "~36%"
+  },
+  {
+   "source": "বিশ্ববিদ্যালয় / চাকরি",
+   "target": "Universitas / Pekerjaan"
+  },
+  {
+   "source": "২,০০০+",
+   "target": "2.000+"
+  },
+  {
+   "source": "~১০,০০০",
+   "target": "~10.000"
+  },
+  {
+   "source": "৩-৪ বছর",
+   "target": "3-4 tahun"
+  },
+  {
+   "source": "~৩০%",
+   "target": "~30%"
+  },
+  {
+   "source": "প্রফেশনাল / একাডেমিক",
+   "target": "Profesional / Akademik"
+  },
+  {
+   "source": "খরচের বিশ্লেষণ",
+   "target": "Analisis Biaya"
+  },
+  {
+   "source": "জাপানে বার্ষিক খরচ (বাংলাদেশি টাকায়)",
+   "target": "Biaya tahunan di Jepang (dalam taka Bangladesh)"
+  },
+  {
+   "source": "শহরভেদে জাপানে পড়াশোনার আনুমানিক খরচ",
+   "target": "Perkiraan biaya kuliah di Jepang menurut kota"
+  },
+  {
+   "source": "টোকিও",
+   "target": "Tokyo"
+  },
+  {
+   "source": "সবচেয়ে ব্যয়বহুল",
+   "target": "Paling mahal"
+  },
+  {
+   "source": "১২-১৫ লাখ",
+   "target": "12-15 lakh"
+  },
+  {
+   "source": "বাৎসরিক (টাকা)",
+   "target": "Tahunan (Taka)"
+  },
+  {
+   "source": "টিউশন ফি",
+   "target": "Biaya Kuliah"
+  },
+  {
+   "source": "৫-৬ লাখ",
+   "target": "5-6 lakh"
+  },
+  {
+   "source": "বাসা ভাড়া",
+   "target": "Sewa tempat tinggal"
+  },
+  {
+   "source": "৪-৫ লাখ",
+   "target": "4-5 lakh"
+  },
+  {
+   "source": "খাবার ও অন্যান্য",
+   "target": "Makanan dan lainnya"
+  },
+  {
+   "source": "৩-৪ লাখ",
+   "target": "3-4 lakh"
+  },
+  {
+   "source": "ওসাকা / নাগোয়া",
+   "target": "Osaka / Nagoya"
+  },
+  {
+   "source": "মাঝারি খরচ",
+   "target": "Biaya sedang"
+  },
+  {
+   "source": "১০-১২ লাখ",
+   "target": "10-12 lakh"
+  },
+  {
+   "source": "৩ লাখ",
+   "target": "3 lakh"
+  },
+  {
+   "source": "অন্যান্য শহর",
+   "target": "Kota lain"
+  },
+  {
+   "source": "সবচেয়ে সাশ্রয়ী",
+   "target": "Paling terjangkau"
+  },
+  {
+   "source": "৮-১০ লাখ",
+   "target": "8-10 lakh"
+  },
+  {
+   "source": "২-৩ লাখ",
+   "target": "2-3 lakh"
+  },
+  {
+   "source": "২ লাখ",
+   "target": "2 lakh"
+  },
+  {
+   "source": "শিক্ষার পথ",
+   "target": "Jalur Pendidikan"
+  },
+  {
+   "source": "জাপানে যাওয়ার সম্পূর্ণ রোডম্যাপ",
+   "target": "Peta jalan lengkap untuk pergi ke Jepang"
+  },
+  {
+   "source": "বাংলাদেশ থেকে জাপানে পড়াশোনার ধাপে ধাপে গাইড",
+   "target": "Panduan langkah demi langkah untuk kuliah di Jepang dari Bangladesh"
+  },
+  {
+   "source": "ধাপ ১",
+   "target": "Langkah 1"
+  },
+  {
+   "source": "JLPT N5 শিখুন",
+   "target": "Pelajari JLPT N5"
+  },
+  {
+   "source": "বেসিক জাপানি ভাষা শিখুন — হিরাগানা, কাতাকানা, ১০২টি কানজি, বেসিক গ্রামার ও ভোকাবুলারি।",
+   "target": "Pelajari bahasa Jepang dasar — hiragana, katakana, 102 kanji, tata bahasa dasar, dan kosakata."
+  },
+  {
+   "source": "ধাপ ২",
+   "target": "Langkah 2"
+  },
+  {
+   "source": "JLPT N4 সম্পন্ন করুন",
+   "target": "Selesaikan JLPT N4"
+  },
+  {
+   "source": "ইন্টারমিডিয়েট লেভেল — ৩২০টি কানজি, জটিল গ্রামার, দৈনন্দিন কথোপকথন দক্ষতা অর্জন।",
+   "target": "Level menengah — 320 kanji, tata bahasa kompleks, raih keterampilan percakapan sehari-hari."
+  },
+  {
+   "source": "৩-৪ মাস অতিরিক্ত",
+   "target": "3-4 bulan tambahan"
+  },
+  {
+   "source": "ধাপ ৩",
+   "target": "Langkah 3"
+  },
+  {
+   "source": "ইন্টারভিউ প্রস্তুতি",
+   "target": "Persiapan wawancara"
+  },
+  {
+   "source": "Skype Interview (২৫০ প্রশ্ন) এবং Embassy Interview (১৫০ প্রশ্ন) এর জন্য পূর্ণ প্রস্তুতি নিন।",
+   "target": "Persiapkan diri sepenuhnya untuk Skype Interview (250 pertanyaan) dan Embassy Interview (150 pertanyaan)."
+  },
+  {
+   "source": "১-২ মাস",
+   "target": "1-2 bulan"
+  },
+  {
+   "source": "ধাপ ৪",
+   "target": "Langkah 4"
+  },
+  {
+   "source": "COE ও ভিসা প্রসেসিং",
+   "target": "Pemrosesan COE dan Visa"
+  },
+  {
+   "source": "Certificate of Eligibility (COE) আবেদন, ব্যাংক স্টেটমেন্ট প্রস্তুত এবং ভিসা সংগ্রহ।",
+   "target": "Aplikasi Certificate of Eligibility (COE), persiapan rekening koran bank, dan pengambilan visa."
+  },
+  {
+   "source": "৩-৬ মাস প্রসেসিং",
+   "target": "Pemrosesan 3-6 bulan"
+  },
+  {
+   "source": "ধাপ ৫",
+   "target": "Langkah 5"
+  },
+  {
+   "source": "জাপানে পৌঁছান ও পড়াশোনা শুরু",
+   "target": "Tiba di Jepang dan mulai kuliah"
+  },
+  {
+   "source": "ভাষা স্কুলে ভর্তি, পার্ট-টাইম জব (সপ্তাহে ২৮ ঘণ্টা), এবং উচ্চশিক্ষার প্রস্তুতি।",
+   "target": "Penerimaan sekolah bahasa, part-time job (28 jam per minggu), dan persiapan pendidikan tinggi."
+  },
+  {
+   "source": "১-২ বছর",
+   "target": "1-2 tahun"
+  },
+  {
+   "source": "ধাপ ৬",
+   "target": "Langkah 6"
+  },
+  {
+   "source": "ক্যারিয়ার গড়ুন",
+   "target": "Bangun karier Anda"
+  },
+  {
+   "source": "স্নাতক শেষে Job Hunting Visa নিয়ে IT, Engineering, Nursing সেক্টরে ক্যারিয়ার শুরু করুন।",
+   "target": "Setelah lulus, mulailah karier di sektor IT, Engineering, dan Nursing dengan Job Hunting Visa."
+  },
+  {
+   "source": "সারাজীবন",
+   "target": "Seumur hidup"
+  },
+  {
+   "source": "রিসোর্স সারাংশ",
+   "target": "Ringkasan Sumber Daya"
+  },
+  {
+   "source": "প্ল্যাটফর্মের সকল রিসোর্স",
+   "target": "Semua sumber daya platform"
+  },
+  {
+   "source": "আপনার নিহোনে যা যা পাবেন",
+   "target": "Apa yang akan Anda temukan di আপনার নিহোন"
+  },
+  {
+   "source": "N5 ভোকাবুলারি",
+   "target": "Kosakata N5"
+  },
+  {
+   "source": "বাংলা অনুবাদসহ শব্দভাণ্ডার",
+   "target": "Kosakata dengan terjemahan bahasa Bengali"
+  },
+  {
+   "source": "৩",
+   "target": "3"
+  },
+  {
+   "source": "N5 কানজি",
+   "target": "Kanji N5"
+  },
+  {
+   "source": "১০২টি কানজি ক্যারেক্টার",
+   "target": "102 karakter kanji"
+  },
+  {
+   "source": "১",
+   "target": "1"
+  },
+  {
+   "source": "N5 গ্রামার",
+   "target": "Tata Bahasa N5"
+  },
+  {
+   "source": "বেসিক জাপানি ব্যাকরণ",
+   "target": "Tata bahasa Jepang dasar"
+  },
+  {
+   "source": "২",
+   "target": "2"
+  },
+  {
+   "source": "N5 রিডিং",
+   "target": "Reading N5"
+  },
+  {
+   "source": "Minna no Nihongo ভিত্তিক",
+   "target": "Berdasarkan Minna no Nihongo"
+  },
+  {
+   "source": "N4 ভোকাবুলারি",
+   "target": "Kosakata N4"
+  },
+  {
+   "source": "Lesson 25-50 ভিত্তিক",
+   "target": "Berdasarkan Lessons 25-50"
+  },
+  {
+   "source": "N4 কানজি",
+   "target": "Kanji N4"
+  },
+  {
+   "source": "৩২০টি কানজি ক্যারেক্টার",
+   "target": "320 karakter kanji"
+  },
+  {
+   "source": "N4 গ্রামার",
+   "target": "Tata Bahasa N4"
+  },
+  {
+   "source": "ইন্টারমিডিয়েট ব্যাকরণ",
+   "target": "Tata bahasa menengah"
+  },
+  {
+   "source": "N4 রিডিং",
+   "target": "Reading N4"
+  },
+  {
+   "source": "Lesson 25-50 রিডিং",
+   "target": "Reading Lessons 25-50"
+  },
+  {
+   "source": "© ২০২৬",
+   "target": "© 2026"
+  },
+  {
+   "source": "| ইন্টারেক্টিভ ড্যাশবোর্ড | Created by SAMMIR",
+   "target": "| Interactive Dashboard | Created by SAMMIR"
+  }
+ ]
+}

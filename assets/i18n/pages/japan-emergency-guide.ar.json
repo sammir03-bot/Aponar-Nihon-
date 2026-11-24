@@ -1,0 +1,438 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "japan-emergency-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জরুরি সহায়তা ও নিরাপত্তা | আপনার নিহোন",
+   "target": "مساعدة الطوارئ والسلامة | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "دليل الحياة في اليابان"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "كل الأدلة"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "بعد الوصول"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "السكن والحياة اليومية"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "القطارات والرصيف"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "استخدام Google Maps"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "الوظائف بدوام جزئي"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "مساعدة الطوارئ"
+  },
+  {
+   "source": "জরুরি সহায়তা ও নিরাপত্তা",
+   "target": "مساعدة الطوارئ والسلامة"
+  },
+  {
+   "source": "110, 119, lost property, hospital, earthquake, typhoon ও emergency bag—জাপানে বিপদের সময় কী করবেন তা স্পষ্ট গাইড।",
+   "target": "110 و 119 والمفقودات والمستشفيات والزلازل والأعاصير وحقائب الطوارئ — دليل واضح لما يجب فعله عند الخطر في اليابان."
+  },
+  {
+   "source": "বাংলা ব্যাখ্যা",
+   "target": "شرح بالبنغالية"
+  },
+  {
+   "source": "জাপানি বাক্য",
+   "target": "جمل يابانية"
+  },
+  {
+   "source": "বাস্তব ধাপ",
+   "target": "خطوات عملية"
+  },
+  {
+   "source": "আপনার অগ্রগতি",
+   "target": "تقدمك"
+  },
+  {
+   "source": "0/0 সম্পন্ন",
+   "target": "0/0 مكتمل"
+  },
+  {
+   "source": "নম্বর",
+   "target": "الأرقام"
+  },
+  {
+   "source": "হারানো",
+   "target": "المفقودات"
+  },
+  {
+   "source": "তিনটি জরুরি নম্বর মুখস্থ করুন",
+   "target": "احفظ أرقام الطوارئ الثلاثة"
+  },
+  {
+   "source": "কোন পরিস্থিতিতে কোন নম্বর",
+   "target": "أي رقم لأي موقف"
+  },
+  {
+   "source": "সমুদ্র দুর্ঘটনা",
+   "target": "حوادث في البحر"
+  },
+  {
+   "source": "ফোনে প্রথমে কী বলবেন",
+   "target": "ما يجب قوله أولا على الهاتف"
+  },
+  {
+   "source": "কী হয়েছে → কোথায় → কয়জন → আপনার নাম/ফোন। Location না জানলে nearby building, station, shop sign বা map address পড়ুন।",
+   "target": "ماذا حدث ← أين ← كم شخصا ← اسمك/هاتفك. إذا لم تعرف الموقع، فاقرأ مبنى قريبا أو محطة أو لافتة متجر أو عنوان الخريطة."
+  },
+  {
+   "source": "শান্তভাবে ছোট বাক্যে বলুন",
+   "target": "تحدّث بهدوء في جمل قصيرة"
+  },
+  {
+   "source": "অ্যাম্বুলেন্স দরকার।",
+   "target": "أحتاج إلى سيارة إسعاف."
+  },
+  {
+   "source": "আগুন লেগেছে।",
+   "target": "هناك حريق."
+  },
+  {
+   "source": "দুর্ঘটনা হয়েছে।",
+   "target": "حدث حادث."
+  },
+  {
+   "source": "স্থানটি ○○।",
+   "target": "المكان هو ○○."
+  },
+  {
+   "source": "আমি বেশি জাপানি বলতে পারি না।",
+   "target": "لا أستطيع التحدث باليابانية كثيرا."
+  },
+  {
+   "source": "ইংরেজি দোভাষী চাই।",
+   "target": "أريد مترجما للإنجليزية."
+  },
+  {
+   "source": "কল কেটে দেবেন না",
+   "target": "لا تُنهِ المكالمة"
+  },
+  {
+   "source": "Operator প্রশ্ন করবে। Location sharing/GPS চালু রাখুন এবং নির্দেশ না দেওয়া পর্যন্ত line-এ থাকুন।",
+   "target": "سيسأل المشغّل أسئلة. أبقِ مشاركة الموقع/GPS مفعّلة وابقَ على الخط حتى يُقال لك خلاف ذلك."
+  },
+  {
+   "source": "জিনিস হারালে কী করবেন",
+   "target": "ماذا تفعل إذا فقدت شيئا"
+  },
+  {
+   "source": "Train, road ও দোকান—ভিন্ন পথ",
+   "target": "القطارات والطرق والمتاجر — مسارات مختلفة"
+  },
+  {
+   "source": "ট্রেন/স্টেশনে হারালে station staff",
+   "target": "إذا فقدته في قطار/في محطة، موظفو المحطة"
+  },
+  {
+   "source": "Line, train time, car number, ওঠা/নামা station, item color বলুন। Receipt/serial থাকলে দেখান।",
+   "target": "اذكر الخط ووقت القطار ورقم العربة ومحطة الركوب/النزول ولون الغرض. إذا كان لديك إيصال/رقم تسلسلي، فأظهره."
+  },
+  {
+   "source": "রাস্তা বা public place-এ হারালে Koban",
+   "target": "إذا فقدته في الشارع أو في مكان عام، مركز شرطة صغير (Koban)"
+  },
+  {
+   "source": "交番（こうばん） বা police station-এ 遺失届（いしつとどけ） করুন।",
+   "target": "قدّم 遺失届（いしつとどけ） في 交番（こうばん） أو مركز شرطة."
+  },
+  {
+   "source": "Phone হারালে remote lock",
+   "target": "إذا فقدت هاتفك، القفل عن بُعد"
+  },
+  {
+   "source": "Find My Device/Find My iPhone, SIM suspension, payment app lock ও police report করুন।",
+   "target": "استخدم Find My Device/Find My iPhone، وعلّق SIM، واقفل تطبيقات الدفع، وقدّم بلاغا للشرطة."
+  },
+  {
+   "source": "Residence Card হারালে দ্রুত ব্যবস্থা",
+   "target": "إذا فقدت بطاقة إقامتك، تصرّف بسرعة"
+  },
+  {
+   "source": "Police report-এর পর Immigration reissuance procedure অনুসরণ করুন; official deadline আছে।",
+   "target": "بعد بلاغ الشرطة، اتبع إجراء إعادة إصدار الهجرة؛ هناك موعد نهائي رسمي."
+  },
+  {
+   "source": "মানিব্যাগ হারিয়েছি।",
+   "target": "لقد فقدت محفظتي."
+  },
+  {
+   "source": "ট্রেনের ভেতরে ফেলে এসেছি।",
+   "target": "تركته داخل القطار."
+  },
+  {
+   "source": "Lost property report করতে চাই।",
+   "target": "أريد تقديم بلاغ عن مفقودات."
+  },
+  {
+   "source": "অসুস্থতা ও Hospital",
+   "target": "المرض والمستشفيات"
+  },
+  {
+   "source": "Emergency ও non-emergency আলাদা করুন",
+   "target": "افصل الطارئ عن غير الطارئ"
+  },
+  {
+   "source": "জীবন-ঝুঁকি হলে 119",
+   "target": "إذا كانت الحياة في خطر، 119"
+  },
+  {
+   "source": "শ্বাস নিতে না পারা, অচেতন, গুরুতর রক্তপাত, severe injury ইত্যাদিতে দেরি করবেন না।",
+   "target": "لا تتأخر في حالة عدم القدرة على التنفس أو فقدان الوعي أو النزيف الشديد أو الإصابة الشديدة، إلخ."
+  },
+  {
+   "source": "Non-emergency হলে clinic/hospital",
+   "target": "إذا كان غير طارئ، عيادة/مستشفى"
+  },
+  {
+   "source": "Department search করুন: 内科 internal medicine, 外科 surgery, 歯科 dental, 皮膚科 dermatology।",
+   "target": "ابحث حسب القسم: 内科 الطب الباطني، 外科 الجراحة، 歯科 طب الأسنان، 皮膚科 طب الجلد."
+  },
+  {
+   "source": "সঙ্গে নিন",
+   "target": "ما يجب إحضاره"
+  },
+  {
+   "source": "লক্ষণ লিখে দেখান",
+   "target": "اكتب أعراضك وأظهرها"
+  },
+  {
+   "source": "কখন শুরু, কোথায় ব্যথা, fever, allergy, current medicine—phone note-এ রাখুন।",
+   "target": "احتفظ في ملاحظة هاتف: متى بدأت، أين يؤلم، الحمى، الحساسية، الأدوية الحالية."
+  },
+  {
+   "source": "বুকে ব্যথা এবং শ্বাসকষ্ট হচ্ছে।",
+   "target": "أعاني من ألم في الصدر وصعوبة في التنفس."
+  },
+  {
+   "source": "তিন দিন ধরে জ্বর আছে।",
+   "target": "أعاني من حمى منذ ثلاثة أيام."
+  },
+  {
+   "source": "এই ওষুধে আমার allergy আছে।",
+   "target": "أعاني من حساسية تجاه هذا الدواء."
+  },
+  {
+   "source": "ভূমিকম্প, আগুন ও Typhoon",
+   "target": "الزلازل والحرائق والأعاصير"
+  },
+  {
+   "source": "প্রথম ১০ মিনিটের সিদ্ধান্ত",
+   "target": "قرارات أول 10 دقائق"
+  },
+  {
+   "source": "ঘটনা",
+   "target": "الحدث"
+  },
+  {
+   "source": "সঙ্গে সঙ্গে",
+   "target": "فورا"
+  },
+  {
+   "source": "পরে",
+   "target": "بعد / لاحقا"
+  },
+  {
+   "source": "ভূমিকম্প",
+   "target": "زلزال"
+  },
+  {
+   "source": "মাথা ঢাকুন, নিচু হন, শক্ত table-এর নিচে",
+   "target": "غطِّ رأسك وانحنِ واختبئ تحت طاولة متينة"
+  },
+  {
+   "source": "আগুন/গ্যাস check, official alert, safe route",
+   "target": "تحقق من الحريق/الغاز والتنبيهات الرسمية ومسارات الأمان"
+  },
+  {
+   "source": "আগুন",
+   "target": "حريق"
+  },
+  {
+   "source": "জোরে 火事, alarm, 119",
+   "target": "اصرخ 火事 بصوت عالٍ، الإنذار، 119"
+  },
+  {
+   "source": "ধোঁয়ার নিচে থেকে exit; lift নয়",
+   "target": "اخرج بابقاء نفسك تحت الدخان؛ لا تستخدم المصعد"
+  },
+  {
+   "source": "Weather/evacuation alert দেখুন",
+   "target": "تحقق من تنبيهات الطقس/الإخلاء"
+  },
+  {
+   "source": "নদী/underground area এড়ান",
+   "target": "تجنّب الأنهار/المناطق تحت الأرض"
+  },
+  {
+   "source": "সমুদ্র/নদীর মোহনা থেকে উঁচু স্থানে",
+   "target": "إلى أرض مرتفعة بعيدا عن البحر/مصبات الأنهار"
+  },
+  {
+   "source": "Official all-clear না হওয়া পর্যন্ত ফিরবেন না",
+   "target": "لا تعد حتى يصدر إعلان رسمي بانتهاء الخطر"
+  },
+  {
+   "source": "Evacuation level-এর ভাষা শিখুন",
+   "target": "تعلّم لغة مستويات الإخلاء"
+  },
+  {
+   "source": "কমপক্ষে ৩ দিনের basic প্রস্তুতি",
+   "target": "استعداد أساسي ل3 أيام على الأقل"
+  },
+  {
+   "source": "পানি",
+   "target": "ماء"
+  },
+  {
+   "source": "ব্যক্তি ও পরিস্থিতি অনুযায়ী",
+   "target": "حسب الشخص والموقف"
+  },
+  {
+   "source": "খাবার",
+   "target": "طعام"
+  },
+  {
+   "source": "নিজের prescription",
+   "target": "وصفتك الطبية الخاصة"
+  },
+  {
+   "source": "Passport, Residence Card, insurance, contact ও address—waterproof pouch-এ copy।",
+   "target": "نسخ من جواز السفر وبطاقة الإقامة والتأمين وجهات الاتصال والعنوان — في حقيبة مقاومة للماء."
+  },
+  {
+   "source": "Cash ও light",
+   "target": "النقود والضوء"
+  },
+  {
+   "source": "ছোট note/coin, flashlight, batteries, whistle।",
+   "target": "أوراق نقدية/عملات صغيرة، مصباح يدوي، بطاريات، صفارة."
+  },
+  {
+   "source": "171 জানা রাখুন",
+   "target": "اعرف 171"
+  },
+  {
+   "source": "বড় দুর্যোগে Disaster Emergency Message Dial 171 চালু হতে পারে; voice prompt Japanese। আগে family plan ঠিক করুন।",
+   "target": "في كارثة كبرى، قد يتم تفعيل رقم رسائل الطوارئ للكوارث 171؛ التعليمات الصوتية باليابانية. حدّد خطة عائلية مسبقا."
+  },
+  {
+   "source": "নিজের Emergency Card বানান",
+   "target": "اصنع بطاقة طوارئ خاصة بك"
+  },
+  {
+   "source": "Phone lock screen বা wallet-এ রাখুন",
+   "target": "احتفظ بها على شاشة قفل هاتفك أو في محفظتك"
+  },
+  {
+   "source": "নাম",
+   "target": "الاسم"
+  },
+  {
+   "source": "আপনার নাম লিখুন",
+   "target": "اكتب اسمك"
+  },
+  {
+   "source": "ঠিকানা",
+   "target": "عنوان"
+  },
+  {
+   "source": "Japanese address লিখুন",
+   "target": "اكتب عنوانك الياباني"
+  },
+  {
+   "source": "নাম ও ফোন",
+   "target": "الاسم والهاتف"
+  },
+  {
+   "source": "যোগাযোগ নম্বর",
+   "target": "رقم الاتصال"
+  },
+  {
+   "source": "না থাকলে なし",
+   "target": "إذا لم يكن لديك، なし"
+  },
+  {
+   "source": "প্রয়োজনীয় তথ্য",
+   "target": "المعلومات الضرورية"
+  },
+  {
+   "source": "Print / PDF করুন",
+   "target": "اطبع / اصنع PDF"
+  },
+  {
+   "source": "আজই প্রস্তুত করুন",
+   "target": "جهّزها اليوم"
+  },
+  {
+   "source": "110, 119 ও নিজের address মুখস্থ/Save করেছি",
+   "target": "حفظت/سجّلت 110 و 119 وعنواني"
+  },
+  {
+   "source": "School/company emergency contact save করেছি",
+   "target": "حفظت جهة اتصال الطوارئ للمدرسة/الشركة"
+  },
+  {
+   "source": "Nearest hospital, koban ও shelter map-এ save করেছি",
+   "target": "حفظت أقرب مستشفى ومركز شرطة صغير وملجأ على خريطة"
+  },
+  {
+   "source": "Emergency bag প্রস্তুত করেছি",
+   "target": "جهّزت حقيبة طوارئ"
+  },
+  {
+   "source": "Phone remote-find ও lock চালু করেছি",
+   "target": "فعّلت خاصية العثور على الهاتف عن بُعد والقفل"
+  },
+  {
+   "source": "Family-এর সঙ্গে disaster contact plan করেছি",
+   "target": "وضعت خطة اتصال للكوارث مع عائلتي"
+  },
+  {
+   "source": "Residence Card/passport copy নিরাপদে রেখেছি",
+   "target": "احتفظت بنسخ من بطاقة إقامتي/جواز سفري بأمان"
+  },
+  {
+   "source": "সরকারি ও নির্ভরযোগ্য সূত্র",
+   "target": "مصادر رسمية وموثوقة"
+  },
+  {
+   "source": "নিয়ম পরিবর্তন হতে পারে—শেষ সিদ্ধান্তের আগে অফিসিয়াল তথ্য দেখুন",
+   "target": "قد تتغير القواعد — تحقق من المعلومات الرسمية قبل القرارات النهائية"
+  },
+  {
+   "source": "এই গাইড শেখার সহায়ক। ব্যক্তিগত আইনগত/চিকিৎসাগত সিদ্ধান্তে সংশ্লিষ্ট অফিস বা পেশাদারের নির্দেশনা অনুসরণ করুন।",
+   "target": "هذا الدليل مساعدة للتعلم. اتبع تعليمات المكتب أو المهني المختص للقرارات القانونية/الطبية الشخصية."
+  },
+  {
+   "source": "হোম",
+   "target": "الصفحة الرئيسية"
+  }
+ ]
+}
