@@ -139,6 +139,6 @@ assert second_guide.classes['lesson'] == 36
 assert second_guide.classes['sentence-note'] == 30
 assert second_guide.classes['dialogue-meaning'] == 24
 assert set(second_guide.anchors) <= second_guide.ids
-for name in ['n3.html', 'n3-quartet-grammar.html', 'n3-quartet-study-guide.html']:
+for name in ['n2.html', 'n3-quartet-grammar.html', 'n3-quartet-study-guide.html']:
     assert 'href="/n2-quartet-grammar.html"' in (ROOT / name).read_text(), name
 print('QUARTET II passed: chapters 7–12, 36 original lessons, 72 examples, six four-skill labs, complete furigana and working anchors.')
