@@ -28,7 +28,7 @@
      here (values extracted programmatically from i18n.js) so the app
      uses it verbatim; bn never loads this file. Same fix as the Run 25
      remnant pass applied to the N3 loader. */
-  var COUNT_SUFFIX = {"en": "", "ja": "件", "vi": "", "ne": " वटा", "hi": "", "ur": "", "my": " ခု", "zh": " 个", "si": " ක්", "fil": ""};
+  var COUNT_SUFFIX = {"en": "", "ja": "件", "vi": "", "ne": " वटा", "hi": "", "ur": "", "my": " ခု", "zh": " 个", "si": " ක්", "fil": "", "id": "", "ar": " درس", "ml": ""};
   if (Object.prototype.hasOwnProperty.call(COUNT_SUFFIX, lang)) {
     window.AponarQuartetCountSuffix = COUNT_SUFFIX[lang];
   }

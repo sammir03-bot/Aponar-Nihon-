@@ -36,7 +36,10 @@
     my: { loading: "စာမျက်နှာတစ်ခုလုံးကို မြန်မာဘာသာဖြင့် ပြင်ဆင်နေသည်…", detail: "အကြောင်းအရာ၊ ခလုတ်၊ ဖောင်နှင့် စာအသစ်များကို ဘာသာပြန်နေသည်။", error: "စာမျက်နှာတစ်ခုလုံးကို မဘာသာပြန်နိုင်သေးပါ။", retry: "ထပ်ကြိုးစားရန်", ok: "အိုကေ", cancel: "ပယ်ဖျက်" },
     zh: { loading: "正在将整个页面准备为中文…", detail: "正在翻译内容、按钮、表单和动态消息。", error: "暂时无法翻译整个页面。", retry: "重试", ok: "确定", cancel: "取消" },
     si: { loading: "මුළු පිටුවම සිංහලෙන් සූදානම් කරමින්…", detail: "අන්තර්ගතය, බොත්තම්, පෝරම සහ නව පණිවිඩ පරිවර්තනය වෙමින් පවතී.", error: "මුළු පිටුවම තවම පරිවර්තනය කළ නොහැකි විය.", retry: "නැවත උත්සාහ කරන්න", ok: "හරි", cancel: "අවලංගු කරන්න" },
-    fil: { loading: "Inihahanda ang buong page sa Filipino…", detail: "Isinasalin ang content, buttons, forms, at dynamic messages.", error: "Hindi pa maisalin ang buong page.", retry: "Subukan ulit", ok: "OK", cancel: "Kanselahin" }
+    fil: { loading: "Inihahanda ang buong page sa Filipino…", detail: "Isinasalin ang content, buttons, forms, at dynamic messages.", error: "Hindi pa maisalin ang buong page.", retry: "Subukan ulit", ok: "OK", cancel: "Kanselahin" },
+    id: { loading: "Menyiapkan seluruh halaman dalam Bahasa Indonesia…", detail: "Menerjemahkan teks, tombol, formulir, dan pesan dinamis.", error: "Seluruh halaman belum dapat diterjemahkan.", retry: "Coba lagi", ok: "OK", cancel: "Batal" },
+    ar: { loading: "جارٍ تجهيز الصفحة كاملة بالعربية…", detail: "جارٍ ترجمة المحتوى والأزرار والنماذج والرسائل الديناميكية.", error: "تعذّرت ترجمة الصفحة كاملة حتى الآن.", retry: "حاول مرة أخرى", ok: "حسنًا", cancel: "إلغاء" },
+    ml: { loading: "മുഴുവൻ പേജും മലയാളത്തിൽ തയ്യാറാക്കുന്നു…", detail: "ഉള്ളടക്കം, ബട്ടണുകൾ, ഫോമുകൾ, പുതിയ സന്ദേശങ്ങൾ എന്നിവ വിവർത്തനം ചെയ്യുന്നു.", error: "മുഴുവൻ പേജും ഇതുവരെ വിവർത്തനം ചെയ്യാൻ കഴിഞ്ഞില്ല.", retry: "വീണ്ടും ശ്രമിക്കുക", ok: "ശരി", cancel: "റദ്ദാക്കുക" }
   };
 
   var originalText = new WeakMap();

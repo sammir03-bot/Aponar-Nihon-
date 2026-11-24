@@ -1,8 +1,12 @@
-/* Aponar Nihon service-worker wrapper — app shell v44 — HALAL FIX (2026-11-24):
-   wrapper caches renamed v1 -> v2 and an activate handler below purges the
-   legacy v1 wrapper caches, so a phone stuck on an old worker self-heals on
-   its next visit (the base worker's own caches are bumped to v38 in
-   sw-base-v28.js; its install already skipWaiting()s and its activate
+/* Aponar Nihon service-worker wrapper — app shell v45 — RUN 38 (2026-11-24):
+   three new languages (id, ar, ml) registered in the i18n runtime; the base
+   worker's caches are bumped to v39 in sw-base-v28.js so installed phones
+   flush and pick up the new assets.
+   HALAL FIX (2026-11-24): wrapper caches renamed v1 -> v2 and an activate
+   handler below purges the legacy v1 wrapper caches, so a phone stuck on
+   an old worker self-heals on its next visit (the base worker's own caches
+   were bumped to v38 in sw-base-v28.js; its install already skipWaiting()s
+   and its activate
    already clients.claim()s and deletes every non-current cache).
    The dashboard, dedicated section hubs and AI Tutor assets are available
    offline after install, while updated learning pages stay network-first. */

@@ -6,9 +6,12 @@
    handler (skipWaiting on install + clients.claim, both already below)
    purges every v37-and-older cache on the next visit — a phone stuck on
    an old worker could otherwise replay a stale cached response (the old
-   generic branch answered with ignoreSearch matching). */
-const STATIC_CACHE = "aponar-nihon-static-v38";
-const DYNAMIC_CACHE = "aponar-nihon-dynamic-v38";
+   generic branch answered with ignoreSearch matching).
+   RUN 38 (2026-11-24): cache names bumped v38 -> v39 for the three new
+   languages (id, ar, ml) — same purge mechanism, so phones pick up the
+   new i18n runtime and language assets on their next visit. */
+const STATIC_CACHE = "aponar-nihon-static-v39";
+const DYNAMIC_CACHE = "aponar-nihon-dynamic-v39";
 
 const STATIC_ASSETS = [
   "/",
@@ -321,7 +324,10 @@ const SW_HOME_FRAGMENTS = {
   my: { guide: "လေ့လာမှု လမ်းညွှန်", roadmap: "လေ့လာရေးလမ်းပြမြေပုံ", library: "လေ့လာရေးစာကြည့်တိုက်", about: "ကျွန်ုပ်တို့အကြောင်း", tutor: "AI Tutor", budget: "ဘတ်ဂျက်", create: "ဖန်တီးပါ" },
   zh: { guide: "学习指南", roadmap: "学习路线图", library: "学习资料库", about: "关于我们", tutor: "AI Tutor", budget: "预算", create: "制作" },
   si: { guide: "අධ්‍යයන මාර්ගෝපදේශය", roadmap: "ඉගෙනුම් මාර්ග සිතියම", library: "අධ්‍යයන පුස්තකාලය", about: "අපි ගැන", tutor: "AI Tutor", budget: "අයවැය", create: "සාදන්න" },
-  fil: { guide: "Gabay sa pag-aaral", roadmap: "Roadmap sa Pag-aaral", library: "Study Library", about: "Tungkol sa Amin", tutor: "AI Tutor", budget: "Budget", create: "Gumawa" }
+  fil: { guide: "Gabay sa pag-aaral", roadmap: "Roadmap sa Pag-aaral", library: "Study Library", about: "Tungkol sa Amin", tutor: "AI Tutor", budget: "Budget", create: "Gumawa" },
+  id: { guide: "Panduan Belajar", roadmap: "Peta Jalan Pembelajaran", library: "Perpustakaan Belajar", about: "Tentang Kami", tutor: "AI Tutor", budget: "Anggaran", create: "Buat" },
+  ar: { guide: "دليل الدراسة", roadmap: "خطة التعلم", library: "مكتبة الدراسة", about: "من نحن", tutor: "AI Tutor", budget: "الميزانية", create: "إنشاء" },
+  ml: { guide: "സ്റ്റഡി ഗൈഡ്", roadmap: "പഠന റോഡ്‌മാപ്പ്", library: "സ്റ്റഡി ലൈബ്രറി", about: "ഞങ്ങളെക്കുറിച്ച്", tutor: "AI ട്യൂട്ടർ", budget: "ബജറ്റ്", create: "സൃഷ്ടിക്കുക" }
 };
 function swFragmentsFor(lang) {
   return Object.prototype.hasOwnProperty.call(SW_HOME_FRAGMENTS, lang)

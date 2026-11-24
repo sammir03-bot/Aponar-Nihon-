@@ -24,7 +24,7 @@
      programmatically from i18n.js) so the app can use it verbatim; bn
      never loads this file, and pages without this loader (e.g. the N2
      guide) keep the previous dynT behaviour. */
-  var COUNT_SUFFIX = {"en": "", "ja": "件", "vi": "", "ne": " वटा", "hi": "", "ur": "", "my": " ခု", "zh": " 个", "si": " ක්", "fil": ""};
+  var COUNT_SUFFIX = {"en": "", "ja": "件", "vi": "", "ne": " वटा", "hi": "", "ur": "", "my": " ခု", "zh": " 个", "si": " ක්", "fil": "", "id": "", "ar": " درس", "ml": ""};
   if (Object.prototype.hasOwnProperty.call(COUNT_SUFFIX, lang)) {
     window.AponarQuartetCountSuffix = COUNT_SUFFIX[lang];
   }

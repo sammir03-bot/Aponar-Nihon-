@@ -7,7 +7,7 @@ from pathlib import Path
 from sitecore.locales import localized_route_for_page
 
 ROOT = Path(__file__).resolve().parents[1]
-SUPPORTED = ("bn", "ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil")
+SUPPORTED = ("bn", "ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil", "id", "ar", "ml")
 
 
 def main() -> int:
@@ -159,7 +159,7 @@ def main() -> int:
 
     localized_checked = 0
     for code in SUPPORTED[1:]:
-        direction = "rtl" if code == "ur" else "ltr"
+        direction = "rtl" if code in ("ur", "ar") else "ltr"
         for route in ("about", "n5"):
             localized = site / code / route / "index.html"
             if not localized.exists():

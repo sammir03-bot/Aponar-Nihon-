@@ -12,7 +12,7 @@ type TutorHistoryItem = {
 type TutorLevel = "N5" | "N4" | "N3";
 type TutorMode = "learn" | "correct" | "conversation" | "interview" | "quiz" | "translate";
 type TutorDepth = "quick" | "standard" | "deep";
-type TutorLanguage = "bn" | "ja" | "en" | "vi" | "ne" | "hi" | "ur" | "my" | "zh" | "si" | "fil";
+type TutorLanguage = "bn" | "ja" | "en" | "vi" | "ne" | "hi" | "ur" | "my" | "zh" | "si" | "fil" | "id" | "ar" | "ml";
 
 type TutorRequest = {
   message: string;
@@ -73,7 +73,7 @@ const MAX_TRANSLATION_TOTAL_CHARS = 24_000;
 const TUTOR_LEVELS: readonly TutorLevel[] = ["N5", "N4", "N3"];
 const TUTOR_MODES: readonly TutorMode[] = ["learn", "correct", "conversation", "interview", "quiz", "translate"];
 const TUTOR_DEPTHS: readonly TutorDepth[] = ["quick", "standard", "deep"];
-const TUTOR_LANGUAGES: readonly TutorLanguage[] = ["bn", "ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil"];
+const TUTOR_LANGUAGES: readonly TutorLanguage[] = ["bn", "ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil", "id", "ar", "ml"];
 const TUTOR_LANGUAGE_NAMES: Record<TutorLanguage, string> = {
   bn: "Bangla (বাংলা)",
   ja: "Japanese (日本語)",
@@ -85,7 +85,10 @@ const TUTOR_LANGUAGE_NAMES: Record<TutorLanguage, string> = {
   my: "Burmese (မြန်မာ)",
   zh: "Chinese (中文)",
   si: "Sinhala (සිංහල)",
-  fil: "Filipino"
+  fil: "Filipino",
+  id: "Indonesian (Bahasa Indonesia)",
+  ar: "Arabic (العربية)",
+  ml: "Malayalam (മലയാളം)"
 };
 
 const SYSTEM_INSTRUCTION = `You are “Aponar Nihon AI Tutor”, an exceptionally careful Japanese-language teacher for international learners preparing for JLPT N5, N4 and N3.
@@ -543,7 +546,10 @@ const ENGLISH_UI_WORDS = /\b(?:app|basic|builder|cancel|challenge|close|created|
 
 function formatTranslationDigits(value: string, language: TutorLanguage): string {
   const scripts = ['০১২৩৪৫৬৭৮৯', '०१२३४५६७८९', '٠١٢٣٤٥٦٧٨٩', '۰۱۲۳۴۵۶۷۸۹', '၀၁၂၃၄၅၆၇၈၉'];
-  const formatter = new Intl.NumberFormat(language, { useGrouping: false });
+  // Run 38: Arabic on this site uses ASCII (Latin) digits by decision, so
+  // pin the numbering system — a plain "ar" locale would emit Arabic-Indic
+  // digits (٠١٢٣) here.
+  const formatter = new Intl.NumberFormat(language === "ar" ? "ar-u-nu-latn" : language, { useGrouping: false });
   return value.replace(/[০-৯०-९٠-٩۰-۹၀-၉]/g, digit => {
     const script = scripts.find(alphabet => alphabet.includes(digit));
     return script ? formatter.format(script.indexOf(digit)) : digit;
@@ -574,7 +580,7 @@ function translationHasLegacyProse(value: string, targetLanguage: TutorLanguage,
   }
   if (targetLanguage === "bn") return /[A-Za-z]/.test(residue);
   if (targetLanguage === "ja") return /[A-Za-z\p{Script=Bengali}]/u.test(residue);
-  if (targetLanguage === "vi" || targetLanguage === "fil") {
+  if (targetLanguage === "vi" || targetLanguage === "fil" || targetLanguage === "id") {
     return /[\p{Script=Bengali}\p{Script=Devanagari}\p{Script=Arabic}\p{Script=Myanmar}\p{Script=Sinhala}]/u.test(residue);
   }
   if (targetLanguage === "hi" || targetLanguage === "ne") {
@@ -582,6 +588,16 @@ function translationHasLegacyProse(value: string, targetLanguage: TutorLanguage,
   }
   if (targetLanguage === "ur") {
     return /[A-Za-z\p{Script=Bengali}\p{Script=Devanagari}\p{Script=Myanmar}\p{Script=Sinhala}]/u.test(residue);
+  }
+  if (targetLanguage === "ar") {
+    // Arabic script is the target script (permitted, like ur); Latin and
+    // the other site scripts count as legacy prose.
+    return /[A-Za-z\p{Script=Bengali}\p{Script=Devanagari}\p{Script=Myanmar}\p{Script=Sinhala}]/u.test(residue);
+  }
+  if (targetLanguage === "ml") {
+    // Malayalam script is the target script (permitted); Latin and the
+    // other site scripts count as legacy prose.
+    return /[A-Za-z\p{Script=Bengali}\p{Script=Devanagari}\p{Script=Arabic}\p{Script=Myanmar}\p{Script=Sinhala}]/u.test(residue);
   }
   if (targetLanguage === "my") {
     return /[A-Za-z\p{Script=Bengali}\p{Script=Devanagari}\p{Script=Arabic}\p{Script=Sinhala}]/u.test(residue);
@@ -628,15 +644,27 @@ const NMT_LANGUAGE_CODES: Record<TutorLanguage, string> = {
   my: "my",
   zh: "zh",
   si: "si",
-  fil: "tl"
+  fil: "tl",
+  id: "id",
+  ar: "ar",
+  ml: "ml"
 };
 
 function detectTranslationSource(text: string): TutorLanguage {
   if (/\p{Script=Bengali}/u.test(text)) return "bn";
   if (/\p{Script=Hiragana}|\p{Script=Katakana}/u.test(text)) return "ja";
-  if (/\p{Script=Arabic}/u.test(text)) return "ur";
+  if (/\p{Script=Arabic}/u.test(text)) {
+    // Run 38 fix: previously EVERY Arabic-script text was detected as Urdu.
+    // Urdu-specific letters (ٹ ڈ ڑ ے ھ ں — U+0679, U+0688, U+0691, U+06D2,
+    // U+06BE, U+06BA) never occur in Arabic, so their presence marks Urdu;
+    // any other Arabic-script text is Arabic. (Urdu prose containing none
+    // of those letters will read as "ar" — an accepted heuristic limit,
+    // since the two scripts otherwise overlap almost completely.)
+    return /[ٹڈڑےھں]/u.test(text) ? "ur" : "ar";
+  }
   if (/\p{Script=Myanmar}/u.test(text)) return "my";
   if (/\p{Script=Sinhala}/u.test(text)) return "si";
+  if (/\p{Script=Malayalam}/u.test(text)) return "ml";
   if (/\p{Script=Devanagari}/u.test(text)) return "hi";
   if (/\p{Script=Han}/u.test(text)) return "ja";
   if (/[ăâđêôơưĂÂĐÊÔƠƯ]/u.test(text)) return "vi";

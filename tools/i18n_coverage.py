@@ -12,8 +12,8 @@ from i18n_extract import VisibleBanglaParser, page_key
 
 ROOT = Path(__file__).resolve().parents[1]
 PACK_DIR = ROOT / "assets" / "i18n" / "pages"
-SUPPORTED = ("ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil")
-PACK_RE = re.compile(r"^(?P<page>.+)\.(?P<language>ja|en|vi|ne|hi|ur|my|zh|si|fil)\.json$")
+SUPPORTED = ("ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil", "id", "ar", "ml")
+PACK_RE = re.compile(r"^(?P<page>.+)\.(?P<language>ja|en|vi|ne|hi|ur|my|zh|si|fil|id|ar|ml)\.json$")
 EXCLUDED_PAGES = {"refresh-site.html", "admin.html"}
 
 

@@ -24,7 +24,7 @@
    back to the async append used by the other loaders. */
 (function () {
   'use strict';
-  var LANGS = ['en', 'ja', 'vi', 'ne', 'hi', 'ur', 'my', 'zh', 'si', 'fil'];
+  var LANGS = ['en', 'ja', 'vi', 'ne', 'hi', 'ur', 'my', 'zh', 'si', 'fil', 'id', 'ar', 'ml'];
   function resolveLang() {
     if (window.AponarDynLang) { try { return window.AponarDynLang(); } catch (e) { /* fall through */ } }
     var preset = document.documentElement.getAttribute('data-language-preset');

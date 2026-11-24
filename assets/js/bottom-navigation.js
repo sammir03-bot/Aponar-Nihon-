@@ -2,7 +2,7 @@
   'use strict';
 
   const selector = 'nav.app-dock, nav.bottom, nav.bottom-nav, nav.app-bottom-nav, nav.study-dock, div.bottom-nav';
-  const locales = new Set(['bn', 'en', 'ja', 'vi', 'ne', 'hi', 'ur', 'my', 'zh', 'si', 'fil']);
+  const locales = new Set(['bn', 'en', 'ja', 'vi', 'ne', 'hi', 'ur', 'my', 'zh', 'si', 'fil', 'id', 'ar', 'ml']);
   const hashRoutes = { home: '/', n5: '/n5', n4: '/n4', n3: '/n3', quiz: '/quiz', guide: '/study-guide', interviews: '/interview', 'essential-phrases': '/essential-phrases' };
 
   function path(url) {
