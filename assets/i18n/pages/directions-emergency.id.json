@@ -1,0 +1,242 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "directions-emergency",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "পথ ও জরুরি প্রয়োজন | আপনার নিহোন",
+   "target": "Petunjuk Arah dan Keadaan Darurat | আপনার নিহোন"
+  },
+  {
+   "source": "পথ ও জরুরি প্রয়োজন",
+   "target": "Petunjuk Arah dan Keadaan Darurat"
+  },
+  {
+   "source": "রাস্তা খুঁজে বের করা, সহায়তা চাওয়া, জরুরি পরিস্থিতি ও দৈনন্দিন প্রয়োজনীয় জাপানি বাক্য",
+   "target": "Kalimat bahasa Jepang untuk menemukan jalan, meminta bantuan, keadaan darurat, dan kebutuhan sehari-hari"
+  },
+  {
+   "source": "পথ জিজ্ঞাসা",
+   "target": "Menanyakan arah"
+  },
+  {
+   "source": "রাস্তা ও দিকনির্দেশনা",
+   "target": "Jalan dan petunjuk arah"
+  },
+  {
+   "source": "~ কোথায়? (যেকোনো জায়গার নাম বসান)",
+   "target": "~ di mana? (masukkan nama tempat apa saja)"
+  },
+  {
+   "source": "স্টেশন কোথায়?",
+   "target": "Stasiun di mana?"
+  },
+  {
+   "source": "টয়লেট কোথায়?",
+   "target": "Toilet di mana?"
+  },
+  {
+   "source": "কনভিনিয়েন্স স্টোর কোথায়?",
+   "target": "Convenience store di mana?"
+  },
+  {
+   "source": "ডান দিক",
+   "target": "Sisi kanan"
+  },
+  {
+   "source": "বাম দিক",
+   "target": "Sisi kiri"
+  },
+  {
+   "source": "সোজা",
+   "target": "Lurus ke depan"
+  },
+  {
+   "source": "পেছনে",
+   "target": "Di belakang"
+  },
+  {
+   "source": "সামনে",
+   "target": "Di depan"
+  },
+  {
+   "source": "কাছাকাছি আছে?",
+   "target": "Apakah ada di dekat sini?"
+  },
+  {
+   "source": "কত দূর? / কত সময় লাগবে?",
+   "target": "Berapa jauh? / Berapa lama waktu yang dibutuhkan?"
+  },
+  {
+   "source": "ধন্যবাদ, আপনার সাহায্যে বেঁচে গেলাম",
+   "target": "Terima kasih, bantuan Anda menyelamatkan saya"
+  },
+  {
+   "source": "যাতায়াত",
+   "target": "Transportasi"
+  },
+  {
+   "source": "ট্রেন, বাস ও ট্যাক্সি",
+   "target": "Kereta, bus, dan taksi"
+  },
+  {
+   "source": "~ যাওয়ার ট্রেন কোনটি?",
+   "target": "Kereta mana yang pergi ke ~?"
+  },
+  {
+   "source": "এই ট্রেন ~ যায়?",
+   "target": "Apakah kereta ini pergi ke ~?"
+  },
+  {
+   "source": "পরবর্তী স্টেশন কোথায়?",
+   "target": "Stasiun berikutnya di mana?"
+  },
+  {
+   "source": "~ পর্যন্ত কত টাকা? (ট্যাক্সি/ট্রেন)",
+   "target": "Berapa biayanya sampai ~? (taksi/kereta)"
+  },
+  {
+   "source": "আমি এখানে নামব (ট্যাক্সি/বাস)",
+   "target": "Saya akan turun di sini (taksi/bus)"
+  },
+  {
+   "source": "~ পর্যন্ত যান, অনুগ্রহ করে (ট্যাক্সি)",
+   "target": "Tolong pergi ke ~ (taksi)"
+  },
+  {
+   "source": "ম্যাপ দেখান, অনুগ্রহ করে",
+   "target": "Tolong tunjukkan peta"
+  },
+  {
+   "source": "স্টেশনে কীভাবে যাব?",
+   "target": "Bagaimana cara saya pergi ke stasiun?"
+  },
+  {
+   "source": "জরুরি পরিস্থিতি",
+   "target": "Situasi darurat"
+  },
+  {
+   "source": "জরুরি ও বিপদজনক পরিস্থিতি",
+   "target": "Keadaan darurat dan situasi berbahaya"
+  },
+  {
+   "source": "আমাকে সাহায্য করুন!",
+   "target": "Tolong bantu saya!"
+  },
+  {
+   "source": "বিপদ! / বিপজ্জনক!",
+   "target": "Bahaya! / Berbahaya!"
+  },
+  {
+   "source": "আমি আহত হয়েছি",
+   "target": "Saya terluka"
+  },
+  {
+   "source": "হাসপাতাল কোথায়?",
+   "target": "Rumah sakit di mana?"
+  },
+  {
+   "source": "ফার্মেসি কোথায়?",
+   "target": "Apotek di mana?"
+  },
+  {
+   "source": "পুলিশ ডাকুন, অনুগ্রহ করে",
+   "target": "Tolong panggil polisi"
+  },
+  {
+   "source": "চোর! / চুরি হয়েছে!",
+   "target": "Pencuri! / Saya telah dirampok!"
+  },
+  {
+   "source": "আগুন! (আগুন লেগেছে)",
+   "target": "Kebakaran! (Ada kebakaran)"
+  },
+  {
+   "source": "ভূমিকম্প!",
+   "target": "Gempa bumi!"
+  },
+  {
+   "source": "আপনি ঠিক আছেন? (অন্যকে জিজ্ঞাসা)",
+   "target": "Apakah Anda baik-baik saja? (menanyakan kepada orang lain)"
+  },
+  {
+   "source": "দৈনন্দিন প্রয়োজন",
+   "target": "Kebutuhan sehari-hari"
+  },
+  {
+   "source": "সাধারণ প্রয়োজন ও অনুরোধ",
+   "target": "Kebutuhan dan permintaan umum"
+  },
+  {
+   "source": "আমি বুঝতে পারছি না (ফরমাল)",
+   "target": "Saya tidak mengerti (formal)"
+  },
+  {
+   "source": "আবার বলুন, অনুগ্রহ করে",
+   "target": "Tolong katakan lagi"
+  },
+  {
+   "source": "ধীরে বলুন, অনুগ্রহ করে",
+   "target": "Tolong bicara perlahan"
+  },
+  {
+   "source": "আপনি কি ইংরেজি বলতে পারেন?",
+   "target": "Bisakah Anda berbicara bahasa Inggris?"
+  },
+  {
+   "source": "আমি খুব কম জাপানি বুঝি",
+   "target": "Saya hanya memahami sedikit bahasa Jepang"
+  },
+  {
+   "source": "আমি কি ফোন ধার নিতে পারি?",
+   "target": "Bolehkah saya meminjam telepon Anda?"
+  },
+  {
+   "source": "Wi-Fi আছে?",
+   "target": "Apakah ada Wi-Fi?"
+  },
+  {
+   "source": "আমার পাসপোর্ট হারিয়ে গেছে",
+   "target": "Paspor saya hilang"
+  },
+  {
+   "source": "দুঃখিত / আফসোস (কোনো খারাপ খবর শুনলে)",
+   "target": "Saya turut berduka / Sayang sekali (saat mendengar kabar buruk)"
+  },
+  {
+   "source": "অনেক কঠিন তাই না? / দুঃখজনক",
+   "target": "Pasti sangat berat, bukan? / Itu menyedihkan"
+  },
+  {
+   "source": "কপি হয়েছে!",
+   "target": "Disalin!"
+  },
+  {
+   "source": "হোম",
+   "target": "Beranda"
+  },
+  {
+   "source": "ইন্টারভিউ",
+   "target": "Wawancara"
+  },
+  {
+   "source": "কুইজ",
+   "target": "Kuis"
+  },
+  {
+   "source": "গাইড",
+   "target": "Panduan"
+  },
+  {
+   "source": "বাক্য",
+   "target": "Kalimat"
+  },
+  {
+   "source": "মক টেস্ট",
+   "target": "Mock Test"
+  }
+ ]
+}

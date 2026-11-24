@@ -1,0 +1,114 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "muslim-japan",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "বাংলাদেশি মুসলিমদের জন্য নামাজের সময়, কিবলা নির্দেশনা, কাছের মসজিদ এবং হালাল খাবার—এক জায়গায়।",
+   "target": "Waktu salat, arah kiblat, masjid terdekat, dan makanan halal untuk Muslim Bangladesh — semua dalam satu tempat."
+  },
+  {
+   "source": "আমার লোকেশন নিন",
+   "target": "Ambil lokasi saya"
+  },
+  {
+   "source": "Compass চালু করুন",
+   "target": "Aktifkan kompas"
+  },
+  {
+   "source": "লোকেশন দিলে আপনার এলাকার তথ্য দেখানো হবে।",
+   "target": "Jika Anda memberikan lokasi Anda, informasi untuk area Anda akan ditampilkan."
+  },
+  {
+   "source": "নামাজের সময়",
+   "target": "Waktu salat"
+  },
+  {
+   "source": "Hanafi Asr — বাংলাদেশি default",
+   "target": "Hanafi Asr — default Bangladesh"
+  },
+  {
+   "source": "লোকেশন প্রয়োজন",
+   "target": "Lokasi diperlukan"
+  },
+  {
+   "source": "নামাজের সময় স্থানীয় মসজিদের timetable থেকে কয়েক মিনিট ভিন্ন হতে পারে। স্থানীয় মসজিদের সময়কে অগ্রাধিকার দিন।",
+   "target": "Waktu salat mungkin berbeda beberapa menit dari jadwal masjid setempat. Utamakan waktu masjid setempat."
+  },
+  {
+   "source": "কিবলা",
+   "target": "Kiblat"
+  },
+  {
+   "source": "লোকেশন নিলে True North থেকে কিবলার degree দেখাবে। Compass permission দিলে ফোন ঘোরালে arrow update হবে।",
+   "target": "Setelah lokasi Anda diambil, itu akan menunjukkan derajat kiblat dari True North. Jika Anda memberikan izin kompas, panah akan diperbarui saat Anda memutar ponsel."
+  },
+  {
+   "source": "কাছের মসজিদ ও হালাল খাবার",
+   "target": "Masjid dan makanan halal terdekat"
+  },
+  {
+   "source": "OpenStreetMap · বাস্তব জায়গার তথ্য",
+   "target": "OpenStreetMap · Informasi tempat nyata"
+  },
+  {
+   "source": "🕌 মসজিদ",
+   "target": "🕌 Masjid"
+  },
+  {
+   "source": "🍛 হালাল খাবার",
+   "target": "🍛 Makanan halal"
+  },
+  {
+   "source": "এলাকা",
+   "target": "Area"
+  },
+  {
+   "source": "কত দূরে",
+   "target": "Jarak"
+  },
+  {
+   "source": "৩ কিমি",
+   "target": "3 km"
+  },
+  {
+   "source": "৬ কিমি",
+   "target": "6 km"
+  },
+  {
+   "source": "১০ কিমি",
+   "target": "10 km"
+  },
+  {
+   "source": "এই এলাকায় খুঁজুন",
+   "target": "Cari di area ini"
+  },
+  {
+   "source": "আপনার লোকেশন নিন অথবা এলাকা বেছে খুঁজুন। মানচিত্র সরিয়েও নতুন এলাকা বেছে নিতে পারেন।",
+   "target": "Gunakan lokasi Anda atau pilih area untuk mencari. Anda juga dapat menggeser peta untuk memilih area baru."
+  },
+  {
+   "source": "লোকেশন বা এলাকা বেছে নিলে কাছের জায়গা দেখানো হবে।",
+   "target": "Setelah Anda memilih lokasi atau area, tempat terdekat akan ditampilkan."
+  },
+  {
+   "source": "আবার চেষ্টা করুন",
+   "target": "Coba lagi"
+  },
+  {
+   "source": "তথ্য:",
+   "target": "Informasi:"
+  },
+  {
+   "source": "। তথ্য অসম্পূর্ণ হতে পারে। খাবারের ক্ষেত্রে মানচিত্রের tag বা নাম ব্যবহার করা হয়; অর্ডারের আগে দোকানের বর্তমান হালাল সনদ ও উপাদান যাচাই করুন।",
+   "target": ". Informasi mungkin tidak lengkap. Untuk makanan, tag atau nama pada peta yang digunakan; sebelum memesan, verifikasi sertifikasi halal dan bahan-bahan toko saat ini."
+  },
+  {
+   "source": "মানচিত্রের ভুল জানান",
+   "target": "Laporkan kesalahan peta"
+  }
+ ]
+}

@@ -1,0 +1,482 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "n4-grammar-lesson-31-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "মূল কনটেন্টে যান",
+   "target": "Lewati ke konten utama"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "Lesson 31 · ইচ্ছা ও শর্ত",
+   "target": "Lesson 31 · Niat dan Rencana"
+  },
+  {
+   "source": "সব Lesson",
+   "target": "Semua Lesson"
+  },
+  {
+   "source": "ইচ্ছা ও শর্ত",
+   "target": "Keinginan & Kondisi"
+  },
+  {
+   "source": "ধাপ ২ · 31–35",
+   "target": "Tahap 2 · 31–35"
+  },
+  {
+   "source": "হঠাৎ প্রস্তাব, আগে থেকে থাকা ইচ্ছা, দৃঢ় ব্যক্তিগত সংকল্প এবং নির্ধারিত সূচি—চার স্তরের ভবিষ্যৎ পরিকল্পনা।",
+   "target": "Usulan mendadak, niat yang dimiliki sejak sebelumnya, tekad pribadi yang teguh, dan jadwal yang tetap — empat tingkat rencana masa depan."
+  },
+  {
+   "source": "4টি বিস্তারিত grammar block",
+   "target": "4 blok grammar terperinci"
+  },
+  {
+   "source": "10টি Japanese example",
+   "target": "10 contoh Japanese"
+  },
+  {
+   "source": "4টি ব্যাখ্যাসহ practice",
+   "target": "4 soal latihan dengan penjelasan"
+  },
+  {
+   "source": "Offline, mobile ও print friendly",
+   "target": "Offline, ramah perangkat seluler dan cetak"
+  },
+  {
+   "source": "あ Reading লুকান",
+   "target": "Sembunyikan あ Reading"
+  },
+  {
+   "source": "এখনো সম্পন্ন নয়",
+   "target": "Belum selesai"
+  },
+  {
+   "source": "✓ সম্পন্ন করুন",
+   "target": "✓ Tandai Selesai"
+  },
+  {
+   "source": "Lesson 31 · লক্ষ্য",
+   "target": "Lesson 31 · Tujuan"
+  },
+  {
+   "source": "এই Lesson শেষে যা পারবেন",
+   "target": "Apa yang akan dapat Anda lakukan setelah pelajaran ini"
+  },
+  {
+   "source": "জাপানিতে ‘করব’ বলার একটিমাত্র future tense নেই। বক্তা এখন প্রস্তাব করছেন, আগে থেকেই ভাবছেন, দৃঢ়ভাবে ইচ্ছা করেছেন, নাকি সময়সূচি নির্ধারিত—এই পার্থক্য অনুযায়ী রূপ বদলায়। Lesson 31 সেই সিদ্ধান্তের মানচিত্র।",
+   "target": "Bahasa Jepang tidak memiliki satu bentuk kala masa depan untuk \"saya akan melakukannya\". Bentuknya berubah tergantung apakah penutur mengusulkannya sekarang, telah memikirkannya sejak sebelumnya, telah berniat teguh, atau sudah tetap dalam jadwal. Lesson 31 adalah peta keputusan tersebut."
+  },
+  {
+   "source": "তিন group-এর volitional form বানাতে পারবেন",
+   "target": "Anda akan dapat membuat bentuk volisional dalam ketiga kelompok"
+  },
+  {
+   "source": "〜ようと思っています দিয়ে আগে থেকে থাকা ইচ্ছা বলবেন",
+   "target": "Anda akan dapat menyatakan niat yang dimiliki sejak sebelumnya dengan 〜ようと思っています"
+  },
+  {
+   "source": "つもり এবং 予定-এর ব্যক্তিগত ইচ্ছা বনাম নির্ধারিত সূচি আলাদা করবেন",
+   "target": "Anda akan dapat membedakan つもり, niat pribadi, dari 予定, jadwal yang tetap"
+  },
+  {
+   "source": "affirmative ও negative plan সঠিক plain form-এ প্রকাশ করবেন",
+   "target": "Anda akan dapat menyatakan rencana afirmatif dan negatif dalam bentuk plain yang benar"
+  },
+  {
+   "source": "‘চল করি/করব’—plain-style প্রস্তাব বা নিজের দৃঢ় সংকল্প",
+   "target": "\"Ayo lakukan / saya akan melakukannya\" — usulan gaya plain atau tekad teguh seseorang"
+  },
+  {
+   "source": "গঠন",
+   "target": "Pembentukan"
+  },
+  {
+   "source": "ধরন",
+   "target": "Jenis"
+  },
+  {
+   "source": "উদাহরণ",
+   "target": "Contoh"
+  },
+  {
+   "source": "শেষ う-row → お-row＋う",
+   "target": "Baris う terakhir → baris お＋う"
+  },
+  {
+   "source": "る বাদ＋よう",
+   "target": "Buang る＋よう"
+  },
+  {
+   "source": "অনিয়মিত",
+   "target": "Tidak beraturan"
+  },
+  {
+   "source": "ভদ্র সমতুল্য",
+   "target": "Padanan sopan"
+  },
+  {
+   "source": "বিস্তারিত ব্যাখ্যা",
+   "target": "Penjelasan Terperinci"
+  },
+  {
+   "source": "বন্ধু/পরিবারের সঙ্গে 行こう বললে 行きましょう-এর casual রূপ—‘চল যাই’। নিজেকে বললেও সংকল্প বোঝায়: よし、勉強しよう = ঠিক আছে, পড়তে বসি।",
+   "target": "Dengan teman/keluarga, 行こう adalah bentuk kasual dari 行きましょう — \"ayo pergi\". Diucapkan kepada diri sendiri, ia juga menyatakan tekad: よし、勉強しよう = baiklah, mari saya mulai belajar."
+  },
+  {
+   "source": "শুধু future fact জানানোর সাধারণ রূপ নয়। 明日雨が降ろう বলা যায় না; অনিচ্ছাকৃত ঘটনা volitional নেয় না। নিজের controllable action-এর ইচ্ছা লাগে।",
+   "target": "Ini bukan bentuk biasa untuk sekadar menyatakan fakta masa depan. Anda tidak dapat mengatakan 明日雨が降ろう; peristiwa yang tidak disengaja tidak mengambil bentuk volisional. Ia membutuhkan kehendak di balik tindakan yang dapat Anda kendalikan."
+  },
+  {
+   "source": "Invitation question casual-এ 行こうか = চল যাব?; ভদ্রভাবে 行きましょうか।",
+   "target": "Pertanyaan ajakan dalam gaya kasual: 行こうか = bagaimana kalau kita pergi?; dengan sopan: 行きましょうか."
+  },
+  {
+   "source": "যা মনে রাখবেন",
+   "target": "Yang Perlu Diingat"
+  },
+  {
+   "source": "Group 1-এ দুই ধাপ: 書く→書こ＋う = 書こう।",
+   "target": "Grup 1 memiliki dua langkah: 書く→書こ＋う = 書こう."
+  },
+  {
+   "source": "来よう-এর reading こよう; きよう নয়।",
+   "target": "Bacaan 来よう adalah こよう; bukan きよう."
+  },
+  {
+   "source": "ক্লান্ত, তাই না? চল একটু বিশ্রাম নিই।",
+   "target": "Anda lelah, bukan? Ayo beristirahat sebentar."
+  },
+  {
+   "source": "এই বছরই JLPT পাস করব—এই সংকল্প।",
+   "target": "Saya akan lulus JLPT tahun ini juga — itulah tekad saya."
+  },
+  {
+   "source": "একসঙ্গে দুপুরের খাবার খাব?",
+   "target": "Bagaimana kalau kita makan siang bersama?"
+  },
+  {
+   "source": "✕ ভুল",
+   "target": "✕ Salah"
+  },
+  {
+   "source": "✓ সঠিক",
+   "target": "✓ Benar"
+  },
+  {
+   "source": "কেন:",
+   "target": "Mengapa:"
+  },
+  {
+   "source": "Volitional সরাসরি です নেয় না; পরিকল্পনা জানাতে 思っています বা つもりです লাগবে।",
+   "target": "Bentuk volisional tidak mengambil です secara langsung; untuk menyatakan rencana Anda memerlukan 思っています atau つもりです."
+  },
+  {
+   "source": "আগে থেকে ভেবে রাখা ব্যক্তিগত ইচ্ছা/পরিকল্পনা",
+   "target": "Niat / rencana pribadi yang dipikirkan sejak sebelumnya"
+  },
+  {
+   "source": "ইচ্ছা",
+   "target": "Niat"
+  },
+  {
+   "source": "এই মুহূর্তের ভাবনা",
+   "target": "Pikiran saat ini"
+  },
+  {
+   "source": "〜ようと思っています বললে চিন্তাটি আগে শুরু হয়েছে এবং এখনো মনের মধ্যে আছে। 〜ようと思います অনেক সময় এই মুহূর্তের সিদ্ধান্ত বা তুলনামূলক হালকা intention।",
+   "target": "〜ようと思っています berarti pikiran itu dimulai lebih awal dan masih ada dalam pikiran Anda. 〜ようと思います sering merupakan keputusan saat ini, atau niat yang relatif ringan."
+  },
+  {
+   "source": "অন্য ব্যক্তির অন্তরের ইচ্ছা নিশ্চিতভাবে বলা কঠিন; 田中さんは行こうと思っています বলতে তার কথায় জানা দরকার। অনুমান হলে 〜と思っているようです ইত্যাদি লাগে।",
+   "target": "Sulit untuk menyatakan niat batin orang lain dengan pasti; untuk mengatakan 田中さんは行こうと思っています Anda perlu mengetahuinya dari apa yang mereka katakan. Untuk tebakan, diperlukan sesuatu seperti 〜と思っているようです."
+  },
+  {
+   "source": "Negative intention সাধারণত Vないつもりです বেশি সরল; 〜まいと思っています উচ্চতর স্তর, N4-এ দরকার নেই।",
+   "target": "Untuk niat negatif, Vないつもりです biasanya lebih sederhana; 〜まいと思っています adalah tingkat yang lebih tinggi dan tidak diperlukan di N4."
+  },
+  {
+   "source": "উদ্ধৃতি particle と বাদ যাবে না: 行こうと思っています।",
+   "target": "Partikel kutipan と tidak boleh dibuang: 行こうと思っています."
+  },
+  {
+   "source": "আগামী বছর জাপানে পড়তে যাওয়ার কথা ভাবছি।",
+   "target": "Saya berpikir untuk pergi belajar di Jepang tahun depan."
+  },
+  {
+   "source": "সপ্তাহান্তে ঘর গুছাব বলে ভাবছি।",
+   "target": "Saya berpikir untuk merapikan rumah pada akhir pekan."
+  },
+  {
+   "source": "日本へ行くと思っています。（নিজের intention বলতে）",
+   "target": "日本へ行くと思っています。(untuk menyatakan niat Anda sendiri)"
+  },
+  {
+   "source": "Plain 行くと思う সাধারণত ‘মনে করি যাবে/যাব’—prediction; volitional＋と思う intention।",
+   "target": "行くと思う yang plain biasanya \"Saya pikir saya/ia akan pergi\" — sebuah prediksi; volisional + と思う adalah niat."
+  },
+  {
+   "source": "দৃঢ় ব্যক্তিগত ইচ্ছা বা সিদ্ধান্ত",
+   "target": "Niat atau keputusan pribadi yang teguh"
+  },
+  {
+   "source": "করার ইচ্ছা",
+   "target": "Niat untuk melakukan"
+  },
+  {
+   "source": "না করার ইচ্ছা",
+   "target": "Niat untuk tidak melakukan"
+  },
+  {
+   "source": "অতীতের intention",
+   "target": "Niat di masa lampau"
+  },
+  {
+   "source": "つもり বক্তার মনে স্থির করা intention। এটি timetable নয়; পরিকল্পনা বাস্তবায়নের সম্ভাবনা থাকলেও এখনো বাহ্যিকভাবে নির্ধারিত নাও হতে পারে।",
+   "target": "つもり adalah niat yang ditetapkan dalam pikiran penutur. Ini bukan jadwal; meskipun rencana kemungkinan akan dilaksanakan, ia mungkin belum ditetapkan secara eksternal."
+  },
+  {
+   "source": "つもりでした বললে ইচ্ছা ছিল—প্রসঙ্গ প্রায়ই দেখায় পরিকল্পনা বদলেছে: 行くつもりでしたが、病気で行けませんでした।",
+   "target": "つもりでした mengatakan niat itu ada — konteksnya sering menunjukkan rencana berubah: 行くつもりでしたが、病気で行けませんでした."
+  },
+  {
+   "source": "অন্যকে ‘আপনি কি করবেন?’ জিজ্ঞেস করতে つもりですか সরাসরি/চাপের মতো শোনাতে পারে; 予定ですか বা どうする予定ですか অনেক ক্ষেত্রে নরম।",
+   "target": "Menanyakan kepada seseorang \"apa yang akan Anda lakukan?\" dengan つもりですか dapat terdengar langsung / menekan; 予定ですか atau どうする予定ですか lebih lembut dalam banyak kasus."
+  },
+  {
+   "source": "Negative-এ 辞書形＋ない নয়; সঠিক ない-form: 行かないつもりです।",
+   "target": "Untuk bentuk negatif, bukan 辞書形＋ない; bentuk ない yang benar: 行かないつもりです."
+  },
+  {
+   "source": "স্নাতক শেষে দেশে ফেরার সিদ্ধান্ত নিয়েছি।",
+   "target": "Saya telah memutuskan untuk kembali ke negara saya setelah lulus."
+  },
+  {
+   "source": "আজ রাতে টিভি না দেখার সিদ্ধান্ত নিয়েছি।",
+   "target": "Saya telah memutuskan untuk tidak menonton TV malam ini."
+  },
+  {
+   "source": "ভ্রমণের ইচ্ছা ছিল, কিন্তু পরিকল্পনা বদলেছি।",
+   "target": "Saya berniat untuk bepergian, tetapi saya mengubah rencana."
+  },
+  {
+   "source": "つもり-এর আগে polite ます নয়, dictionary/plain form।",
+   "target": "Sebelum つもり bukan ます yang sopan, melainkan bentuk kamus / plain."
+  },
+  {
+   "source": "সূচি, আয়োজন বা তুলনামূলকভাবে নির্ধারিত পরিকল্পনা",
+   "target": "Jadwal, pengaturan, atau rencana yang relatif tetap"
+  },
+  {
+   "source": "কাজ",
+   "target": "Tugas"
+  },
+  {
+   "source": "না হওয়ার সূচি",
+   "target": "Jadwal untuk tidak terjadi"
+  },
+  {
+   "source": "বিশেষ্য",
+   "target": "Kata benda"
+  },
+  {
+   "source": "予定 বাহ্যিক schedule/arrangement-এর অনুভূতি দেয়—সময়, বুকিং বা সংশ্লিষ্ট পক্ষের ব্যবস্থা থাকতে পারে। つもり ব্যক্তির মনের সিদ্ধান্ত; 予定 ক্যালেন্ডারে বসানো plan।",
+   "target": "予定 memberikan nuansa jadwal / pengaturan eksternal — mungkin ada waktu, pemesanan, atau pengaturan oleh pihak terkait. つもり adalah keputusan dalam pikiran seseorang; 予定 adalah rencana yang ditetapkan di kalender."
+  },
+  {
+   "source": "ট্রেন/ইভেন্টের নির্ধারিত পরিকল্পনাতেও ব্যবহৃত হয়: 電車は十時に到着する予定です। ব্যক্তিগত ইচ্ছা না থাকলেও schedule হতে পারে।",
+   "target": "Ia juga digunakan untuk rencana tetap kereta dan acara: 電車は十時に到着する予定です. Jadwal dapat ada bahkan tanpa niat pribadi."
+  },
+  {
+   "source": "N＋予定 নয়; Nの予定: 来週は出張の予定です।",
+   "target": "Bukan N＋予定 melainkan Nの予定: 来週は出張の予定です."
+  },
+  {
+   "source": "মিটিং বিকেল তিনটায় শুরু হওয়ার কথা/সূচি।",
+   "target": "Rapat dijadwalkan mulai pukul tiga sore."
+  },
+  {
+   "source": "আগামী মাসে ওসাকায় ব্যবসায়িক সফরের সূচি আছে।",
+   "target": "Bulan depan ada perjalanan bisnis ke Osaka dalam jadwal."
+  },
+  {
+   "source": "Noun-এর পরে の প্রয়োজন।",
+   "target": "Setelah kata benda, の diperlukan."
+  },
+  {
+   "source": "এক নজরে পার্থক্য",
+   "target": "Perbedaan dalam Sekilas"
+  },
+  {
+   "source": "কোন পরিস্থিতিতে কোনটি?",
+   "target": "Yang mana dalam situasi apa?"
+  },
+  {
+   "source": "রূপ",
+   "target": "Bentuk"
+  },
+  {
+   "source": "সিদ্ধান্তের ধরন",
+   "target": "Jenis keputusan"
+  },
+  {
+   "source": "স্বাভাবিক উদাহরণ",
+   "target": "Contoh natural"
+  },
+  {
+   "source": "এখনকার প্রস্তাব/সংকল্প",
+   "target": "Usulan / tekad saat ini"
+  },
+  {
+   "source": "চল যাই",
+   "target": "Ayo pergi"
+  },
+  {
+   "source": "আগে থেকে ভাবছি",
+   "target": "Memikirkannya sejak sebelumnya"
+  },
+  {
+   "source": "বিদেশে পড়তে যাব ভাবছি",
+   "target": "Berpikir untuk pergi belajar di luar negeri"
+  },
+  {
+   "source": "ব্যক্তিগত দৃঢ় সিদ্ধান্ত",
+   "target": "Keputusan pribadi yang teguh"
+  },
+  {
+   "source": "প্রতিদিন পড়ব",
+   "target": "Saya akan belajar setiap hari"
+  },
+  {
+   "source": "নির্ধারিত schedule",
+   "target": "Jadwal yang tetap"
+  },
+  {
+   "source": "মিটিং তিনটায়",
+   "target": "Rapat pukul tiga"
+  },
+  {
+   "source": "বাস্তব কথোপকথন",
+   "target": "Percakapan nyata"
+  },
+  {
+   "source": "ছুটির পরিকল্পনা",
+   "target": "Rencana Liburan"
+  },
+  {
+   "source": "গ্রীষ্মের ছুটিতে কী করার পরিকল্পনা?",
+   "target": "Apa yang Anda rencanakan untuk liburan musim panas?"
+  },
+  {
+   "source": "হোক্কাইদো যাওয়ার কথা ভাবছি।",
+   "target": "Saya berpikir untuk pergi ke Hokkaido."
+  },
+  {
+   "source": "কখন যাবেন?",
+   "target": "Kapan Anda akan pergi?"
+  },
+  {
+   "source": "১০ আগস্ট রওনা হওয়ার সূচি। এবার বিমানে না যাওয়ার সিদ্ধান্ত নিয়েছি।",
+   "target": "Jadwalnya berangkat pada 10 Agustus. Kali ini saya telah memutuskan untuk tidak pergi dengan pesawat."
+  },
+  {
+   "source": "নিজে যাচাই করুন",
+   "target": "Periksa Diri Anda Sendiri"
+  },
+  {
+   "source": "Practice ও ব্যাখ্যাসহ উত্তর",
+   "target": "Latihan dengan jawaban dan penjelasan"
+  },
+  {
+   "source": "আগে খাতায় উত্তর লিখুন, তারপর প্রশ্নে চাপ দিয়ে উত্তর ও কারণ মিলিয়ে নিন।",
+   "target": "Pertama tulis jawaban di buku catatan Anda, lalu ketuk pertanyaan untuk memeriksa jawaban dan alasannya."
+  },
+  {
+   "source": "1. 読む-এর volitional form বানান।",
+   "target": "1. Buat bentuk volisional dari 読む."
+  },
+  {
+   "source": "2. ‘আগামী বছর চাকরি বদলানোর কথা ভাবছি’ বলুন।",
+   "target": "2. Ucapkan: \"Saya berpikir untuk berganti pekerjaan tahun depan.\""
+  },
+  {
+   "source": "আগে থেকে থাকা intention: volitional＋と思っています।",
+   "target": "Niat yang dimiliki sejak sebelumnya: volisional + と思っています."
+  },
+  {
+   "source": "3. ‘আমি গাড়ি না কেনার সিদ্ধান্ত নিয়েছি’ বলুন।",
+   "target": "3. Ucapkan: \"Saya telah memutuskan untuk tidak membeli mobil.\""
+  },
+  {
+   "source": "4. ‘আগামীকাল মিটিংয়ের সূচি আছে’ বলুন।",
+   "target": "4. Ucapkan: \"Ada rapat yang dijadwalkan untuk besok.\""
+  },
+  {
+   "source": "এক বাক্যে Master Key",
+   "target": "Kunci Utama dalam Satu Kalimat"
+  },
+  {
+   "source": "মনের দৃঢ় সিদ্ধান্তে つもり, ক্যালেন্ডারের নির্ধারিত পরিকল্পনায় 予定, আগে থেকে ভাবা intention-এ ようと思っています, আর তাৎক্ষণিক ‘চল করি’-তে volitional।",
+   "target": "Untuk keputusan teguh dalam pikiran, つもり; untuk rencana tetap di kalender, 予定; untuk niat yang dipikirkan sejak sebelumnya, ようと思っています; dan untuk \"ayo lakukan\" yang segera, bentuk volisional."
+  },
+  {
+   "source": "বিশ্বস্ত রেফারেন্স",
+   "target": "Referensi Tepercaya"
+  },
+  {
+   "source": "সিলেবাস ও যাচাই",
+   "target": "Silabus dan Verifikasi"
+  },
+  {
+   "source": "এই স্বাধীন বাংলা lesson-টি Minna no Nihongo II-এর lesson sequence, official JLPT N4 scope এবং Japan Foundation-এর learner resources মিলিয়ে তৈরি। উদাহরণ ও বাংলা ব্যাখ্যা নতুনভাবে রচিত।",
+   "target": "Pelajaran mandiri dalam bahasa Indonesia ini dibuat dengan menyelaraskan urutan pelajaran Minna no Nihongo II, cakupan resmi JLPT N4, dan sumber belajar Japan Foundation. Contoh dan penjelasannya dalam bahasa Indonesia ditulis baru."
+  },
+  {
+   "source": "← আগের Lesson 30",
+   "target": "← Lesson 30 Sebelumnya"
+  },
+  {
+   "source": "Preparation：Vてあります ও Vておきます",
+   "target": "Preparation: Vてあります dan Vておきます"
+  },
+  {
+   "source": "পরের Lesson 32 →",
+   "target": "Lesson 32 Berikutnya →"
+  },
+  {
+   "source": "Lesson সূচি",
+   "target": "Indeks Lesson"
+  },
+  {
+   "source": "শেখার লক্ষ্য",
+   "target": "Tujuan belajar"
+  },
+  {
+   "source": "পার্থক্য টেবিল",
+   "target": "Tabel Perbandingan"
+  },
+  {
+   "source": "কথোপকথন",
+   "target": "Percakapan"
+  },
+  {
+   "source": "Course progress লোড হচ্ছে…",
+   "target": "Progress kursus sedang dimuat…"
+  },
+  {
+   "source": "আপনার নিহোন · N4 Grammar 26–50",
+   "target": "আপনার নিহোন · N4 Grammar 26–50"
+  },
+  {
+   "source": "শিক্ষার্থীদের জন্য বিনামূল্যে, বিস্তারিত বাংলা self-study edition।",
+   "target": "Edisi belajar mandiri bahasa Indonesia yang gratis dan terperinci untuk pelajar."
+  }
+ ]
+}

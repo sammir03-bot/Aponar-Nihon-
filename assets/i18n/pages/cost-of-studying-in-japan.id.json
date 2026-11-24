@@ -1,0 +1,302 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "cost-of-studying-in-japan",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "হোম",
+   "target": "Beranda"
+  },
+  {
+   "source": "যোগাযোগ",
+   "target": "Kontak"
+  },
+  {
+   "source": "বাংলাদেশ থেকে জাপানে পড়াশোনার সম্পূর্ণ খরচের হিসাব - শহরভিত্তিক বিশ্লেষণ এবং বাজেট প্ল্যানিং",
+   "target": "Perhitungan lengkap biaya kuliah di Jepang dari Bangladesh - analisis per kota dan perencanaan anggaran"
+  },
+  {
+   "source": "নিয়ে অনেকের মনে প্রশ্ন থাকে। প্রথম বছর ৮-১২ লাখ টাকা খরচ হলেও, part-time job করে এই খরচ অনেকাংশে ম্যানেজ করা যায়। এই পেইজে বিস্তারিত খরচের বিশ্লেষণ দেওয়া হলো।",
+   "target": "menjadi pertanyaan di benak banyak orang. Meskipun tahun pertama menghabiskan biaya 8-12 lakh taka, biaya ini dapat dikelola sebagian besar dengan melakukan part-time job. Analisis biaya terperinci diberikan di halaman ini."
+  },
+  {
+   "source": "মোট খরচের বিভাজন (প্রথম বছর)",
+   "target": "Rincian total biaya (tahun pertama)"
+  },
+  {
+   "source": "খাত",
+   "target": "Kategori"
+  },
+  {
+   "source": "টোকিও",
+   "target": "Tokyo"
+  },
+  {
+   "source": "ওসাকা",
+   "target": "Osaka"
+  },
+  {
+   "source": "অন্যান্য শহর",
+   "target": "Kota lain"
+  },
+  {
+   "source": "টিউশন ফি (Language School)",
+   "target": "Biaya kuliah (Language School)"
+  },
+  {
+   "source": "৫-৬ লাখ",
+   "target": "5-6 lakh"
+  },
+  {
+   "source": "৪-৫ লাখ",
+   "target": "4-5 lakh"
+  },
+  {
+   "source": "৩.৫-৪.৫ লাখ",
+   "target": "3,5-4,5 lakh"
+  },
+  {
+   "source": "থাকা (ডরমিটরি/শেয়ার হাউস)",
+   "target": "Tempat tinggal (Dormitory/Share House)"
+  },
+  {
+   "source": "৩-৪ লাখ",
+   "target": "3-4 lakh"
+  },
+  {
+   "source": "২-৩ লাখ",
+   "target": "2-3 lakh"
+  },
+  {
+   "source": "১.৫-২.৫ লাখ",
+   "target": "1,5-2,5 lakh"
+  },
+  {
+   "source": "খাবার",
+   "target": "Makanan"
+  },
+  {
+   "source": "২-২.৫ লাখ",
+   "target": "2-2,5 lakh"
+  },
+  {
+   "source": "১.৫-২ লাখ",
+   "target": "1,5-2 lakh"
+  },
+  {
+   "source": "ট্রান্সপোর্ট",
+   "target": "Transportasi"
+  },
+  {
+   "source": "৫০-৮০ হাজার",
+   "target": "50-80 ribu"
+  },
+  {
+   "source": "৪০-৬০ হাজার",
+   "target": "40-60 ribu"
+  },
+  {
+   "source": "৩০-৫০ হাজার",
+   "target": "30-50 ribu"
+  },
+  {
+   "source": "অন্যান্য (বই, ইউটিলিটি, মেডিকেল)",
+   "target": "Lainnya (buku, utilitas, medis)"
+  },
+  {
+   "source": "১-১.৫ লাখ",
+   "target": "1-1,5 lakh"
+  },
+  {
+   "source": "৮০ হাজার-১ লাখ",
+   "target": "80 ribu-1 lakh"
+  },
+  {
+   "source": "৬০-৮০ হাজার",
+   "target": "60-80 ribu"
+  },
+  {
+   "source": "মোট",
+   "target": "Total"
+  },
+  {
+   "source": "১২-১৫ লাখ",
+   "target": "12-15 lakh"
+  },
+  {
+   "source": "৯-১২ লাখ",
+   "target": "9-12 lakh"
+  },
+  {
+   "source": "৭-১০ লাখ",
+   "target": "7-10 lakh"
+  },
+  {
+   "source": "শহরভিত্তিক খরচ বিশ্লেষণ",
+   "target": "Analisis biaya per kota"
+  },
+  {
+   "source": "টোকিও (Tokyo)",
+   "target": "Tokyo (Tokyo)"
+  },
+  {
+   "source": "১২-১৫ লাখ টাকা/বছর",
+   "target": "12-15 lakh taka/tahun"
+  },
+  {
+   "source": "রাজধানী হওয়ায় সবচেয়ে বেশি খরচ। তবে job opportunity ও সবচেয়ে বেশি। Part-time job এ মাসে ১.৫-২ লাখ ইয়েন আয় সম্ভব।",
+   "target": "Sebagai ibu kota, biayanya paling tinggi. Namun peluang kerja juga paling banyak. Dengan part-time job, Anda dapat memperoleh 1,5-2 lakh yen per bulan."
+  },
+  {
+   "source": "ওসাকা (Osaka)",
+   "target": "Osaka (Osaka)"
+  },
+  {
+   "source": "৯-১২ লাখ টাকা/বছর",
+   "target": "9-12 lakh taka/tahun"
+  },
+  {
+   "source": "টোকিওর চেয়ে ২০-৩০% কম খরচ। ব্যবসায়িক শহর হওয়ায় job পাওয়া সহজ। লিভিং কস্ট রিজনেবল।",
+   "target": "Biaya 20-30% lebih rendah daripada Tokyo. Sebagai kota bisnis, pekerjaan mudah ditemukan. Biaya hidup wajar."
+  },
+  {
+   "source": "ফুকুওকা (Fukuoka)",
+   "target": "Fukuoka (Fukuoka)"
+  },
+  {
+   "source": "৭-৯ লাখ টাকা/বছর",
+   "target": "7-9 lakh taka/tahun"
+  },
+  {
+   "source": "দ্রুত বর্ধনশীল International Student ফ্রেন্ডলি শহর। সরকারি সহায়তা বেশি। লিভিং কস্ট কম।",
+   "target": "Kota yang berkembang pesat dan ramah International Student. Dukungan pemerintah lebih banyak. Biaya hidup rendah."
+  },
+  {
+   "source": "ব্যাংক স্টেটমেন্ট রিকোয়ারমেন্ট",
+   "target": "Persyaratan Rekening Koran Bank"
+  },
+  {
+   "source": "ভিসা আবেদনের জন্য প্রমাণ করতে হবে যে আপনি বা আপনার স্পনসর এই খরচ বহন করতে সক্ষম।",
+   "target": "Untuk aplikasi visa, Anda harus membuktikan bahwa Anda atau sponsor Anda mampu menanggung biaya ini."
+  },
+  {
+   "source": "প্রয়োজনীয় তহবিল:",
+   "target": "Dana yang diperlukan:"
+  },
+  {
+   "source": "১৫ লাখ টাকা (ব্যাংক স্টেটমেন্টে)",
+   "target": "15 lakh taka (di rekening koran bank)"
+  },
+  {
+   "source": "১৮-২০ লাখ টাকা",
+   "target": "18-20 lakh taka"
+  },
+  {
+   "source": "স্পনসরের ক্ষেত্রে:",
+   "target": "Dalam hal sponsor:"
+  },
+  {
+   "source": "স্পনসরের ব্যাংক স্টেটমেন্ট + আয়ের প্রমাণ",
+   "target": "Rekening koran bank sponsor + bukti penghasilan"
+  },
+  {
+   "source": "গুরুত্বপূর্ণ:",
+   "target": "Penting:"
+  },
+  {
+   "source": "টাকা হঠাৎ করে জমা না দিয়ে কমপক্ষে ৩-৬ মাস আগে থেকে ধীরে ধীরে জমা করুন।",
+   "target": "Jangan menyetor uang secara tiba-tiba; setorkan secara bertahap mulai setidaknya 3-6 bulan sebelumnya."
+  },
+  {
+   "source": "খরচ কমানোর উপায়",
+   "target": "Cara mengurangi biaya"
+  },
+  {
+   "source": "বিভিন্ন সরকারি এবং বেসরকারি Scholarship আছে (মাসে ৩০-৫০ হাজার ইয়েন)",
+   "target": "Terdapat berbagai Scholarship pemerintah dan swasta (30-50 ribu yen per bulan)"
+  },
+  {
+   "source": "সপ্তাহে ২৮ ঘণ্টা কাজ করে মাসে ১-১.৫ লাখ ইয়েন আয়",
+   "target": "Memperoleh 1-1,5 lakh yen per bulan dengan bekerja 28 jam seminggu"
+  },
+  {
+   "source": "একা থাকার চেয়ে roommate নিলে খরচ অর্ধেক",
+   "target": "Biaya menjadi setengahnya jika Anda mengambil teman sekamar daripada tinggal sendiri"
+  },
+  {
+   "source": "ট্রেন, রেস্তোরাঁ, শপিং এ ছাড় পাবেন",
+   "target": "Anda akan mendapatkan diskon untuk kereta, restoran, dan belanja"
+  },
+  {
+   "source": "খাবার:",
+   "target": "Makanan:"
+  },
+  {
+   "source": "বাইরে না খেয়ে নিজে রান্না করলে ৫০% সাশ্রয়",
+   "target": "Hemat 50% dengan memasak sendiri daripada makan di luar"
+  },
+  {
+   "source": "দ্বিতীয় বছর থেকে খরচ",
+   "target": "Biaya mulai tahun kedua"
+  },
+  {
+   "source": "প্রথম বছরে সেটআপ কস্ট বেশি থাকে। দ্বিতীয় বছর থেকে:",
+   "target": "Biaya penyiapan lebih tinggi di tahun pertama. Mulai tahun kedua:"
+  },
+  {
+   "source": "টিউশন ফি কমতে পারে (ভালো রেজাল্টে scholarship পেলে)",
+   "target": "Biaya kuliah dapat berkurang (jika Anda mendapatkan scholarship karena hasil yang baik)"
+  },
+  {
+   "source": "Part-time job এ আয় বাড়ে (জাপানি ভাষা ভালো হলে)",
+   "target": "Penghasilan part-time job meningkat (jika bahasa Jepang Anda bagus)"
+  },
+  {
+   "source": "মোট খরচ ৬-৮ লাখ টাকায় নামিয়ে আনা সম্ভব",
+   "target": "Total biaya dapat diturunkan menjadi 6-8 lakh taka"
+  },
+  {
+   "source": "বাজেট প্ল্যানিং এ সাহায্য দরকার?",
+   "target": "Butuh bantuan perencanaan anggaran?"
+  },
+  {
+   "source": "আমাদের কাউন্সেলররা আপনার আর্থিক অবস্থা অনুযায়ী সেরা প্ল্যান তৈরি করে দেবেন",
+   "target": "Konselor kami akan membuat rencana terbaik sesuai situasi keuangan Anda"
+  },
+  {
+   "source": "ফ্রি কনসাল্টেশন",
+   "target": "Konsultasi Gratis"
+  },
+  {
+   "source": "দ্রুত হিসাব",
+   "target": "Perhitungan cepat"
+  },
+  {
+   "source": "১০-১২ লাখ",
+   "target": "10-12 lakh"
+  },
+  {
+   "source": "৬-৮ লাখ",
+   "target": "6-8 lakh"
+  },
+  {
+   "source": "Net Cost: ৩-৫ লাখ/বছর",
+   "target": "Net Cost: 3-5 lakh/tahun"
+  },
+  {
+   "source": "টিপস",
+   "target": "Tips"
+  },
+  {
+   "source": "টোকিও বাদ দিয়ে Regional শহরে পড়াশোনা করলে ৩০% খরচ কমবে এবং Scholarship পাওয়ার সুযোগ বেশি।",
+   "target": "Jika Anda kuliah di kota regional selain Tokyo, biaya akan turun 30% dan peluang Anda mendapatkan Scholarship akan lebih besar."
+  },
+  {
+   "source": "© ২০২৪ Japan Education and Job Center. All rights reserved.",
+   "target": "© 2024 Japan Education and Job Center. All rights reserved."
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "n3-quartet-ebook",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "QUARTET I বাংলা Interactive eBook | আপনার নিহোন",
+   "target": "QUARTET I eBook Interaktif Bahasa Indonesia | আপনার নিহোন"
+  },
+  {
+   "source": "QUARTET I বাংলা eBook",
+   "target": "QUARTET I eBook Bahasa Indonesia"
+  },
+  {
+   "source": "১৩৫ পৃষ্ঠার Interactive Reader প্রস্তুত হচ্ছে…",
+   "target": "Reader Interaktif 135 halaman sedang disiapkan…"
+  },
+  {
+   "source": "Reader load করা যায়নি।",
+   "target": "Reader tidak dapat dimuat."
+  },
+  {
+   "source": "QUARTET I-এর গ্রামার সহায়িকা পড়তে পারেন।",
+   "target": "Anda dapat membaca panduan grammar QUARTET I."
+  },
+  {
+   "source": "৫৫টি গ্রামার পাঠ খুলুন →",
+   "target": "Buka 55 pelajaran grammar →"
+  },
+  {
+   "source": "← N3 Learning Center-এ ফিরুন",
+   "target": "← Kembali ke N3 Learning Center"
+  }
+ ]
+}

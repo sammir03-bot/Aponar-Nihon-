@@ -1,0 +1,242 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "id",
+ "page": "daily-greetings",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "দৈনন্দিন শুভেচ্ছা | আপনার নিহোন",
+   "target": "Sapaan Sehari-hari | আপনার নিহোন"
+  },
+  {
+   "source": "দৈনন্দিন শুভেচ্ছা",
+   "target": "Sapaan Sehari-hari"
+  },
+  {
+   "source": "জাপানে প্রতিদিনের কথোপকথনে সবচেয়ে বেশি ব্যবহৃত শুভেচ্ছা ও ভদ্রতার বাক্য",
+   "target": "Sapaan dan kalimat sopan yang paling sering digunakan dalam percakapan sehari-hari di Jepang"
+  },
+  {
+   "source": "সময় অনুযায়ী শুভেচ্ছা",
+   "target": "Sapaan berdasarkan waktu"
+  },
+  {
+   "source": "সকাল / দুপুর / সন্ধ্যা / রাত",
+   "target": "Pagi / Siang / Sore / Malam"
+  },
+  {
+   "source": "সুপ্রভাত (ফরমাল)",
+   "target": "Selamat pagi (formal)"
+  },
+  {
+   "source": "সুপ্রভাত (ক্যাজুয়াল — বন্ধু/ফ্যামিলি)",
+   "target": "Selamat pagi (kasual — teman/keluarga)"
+  },
+  {
+   "source": "হ্যালো / শুভ দুপুর (সকাল ১১টা – সন্ধ্যা ৫টা)",
+   "target": "Halo / Selamat siang (11.00 – 17.00)"
+  },
+  {
+   "source": "শুভ সন্ধ্যা (সন্ধ্যা ৫টা পর থেকে)",
+   "target": "Selamat sore (setelah pukul 17.00)"
+  },
+  {
+   "source": "শুভ রাত্রি / ঘুমান (ফরমাল)",
+   "target": "Selamat malam / Selamat tidur (formal)"
+  },
+  {
+   "source": "শুভ রাত্রি (ক্যাজুয়াল)",
+   "target": "Selamat malam (kasual)"
+  },
+  {
+   "source": "ভদ্রতা ও কৃতজ্ঞতা",
+   "target": "Kesopanan dan rasa terima kasih"
+  },
+  {
+   "source": "ধন্যবাদ, ক্ষমা ও অনুমতি",
+   "target": "Terima kasih, permintaan maaf, dan izin"
+  },
+  {
+   "source": "আপনাকে অনেক ধন্যবাদ (ফরমাল)",
+   "target": "Terima kasih banyak (formal)"
+  },
+  {
+   "source": "ধন্যবাদ (ক্যাজুয়াল)",
+   "target": "Terima kasih (kasual)"
+  },
+  {
+   "source": "আপনাকে খুবই ধন্যবাদ (অনেক বেশি কৃতজ্ঞতা)",
+   "target": "Terima kasih banyak sekali (rasa syukur yang mendalam)"
+  },
+  {
+   "source": "মাফ করবেন / এক্সকিউজ মি / দুঃখিত",
+   "target": "Permisi / Excuse me / Maaf"
+  },
+  {
+   "source": "আমি দুঃখিত / ক্ষমা করবেন (ফরমাল ক্ষমা)",
+   "target": "Saya minta maaf / Mohon maafkan saya (permintaan maaf formal)"
+  },
+  {
+   "source": "সরি (ক্যাজুয়াল — বন্ধুদের মধ্যে)",
+   "target": "Maaf (kasual — di antara teman)"
+  },
+  {
+   "source": "অনুমতি দিন / আমি বিদায় নিচ্ছি (অফিস/ফরমাল)",
+   "target": "Permisi / Saya pamit dulu (kantor/formal)"
+  },
+  {
+   "source": "বিরক্ত করছি (ঘরে ঢোকার সময় বলা হয়)",
+   "target": "Maaf mengganggu (diucapkan saat masuk ke rumah)"
+  },
+  {
+   "source": "নিজের পরিচয়",
+   "target": "Memperkenalkan diri"
+  },
+  {
+   "source": "নিজের পরিচয় দেওয়া",
+   "target": "Memberikan perkenalan diri"
+  },
+  {
+   "source": "প্রথমবার দেখা হলো / আপনার সাথে পরিচয় পেয়ে ভালো লাগলো",
+   "target": "Pertama kali bertemu / Senang berkenalan dengan Anda"
+  },
+  {
+   "source": "আমি ~ (নাম/পেশা)",
+   "target": "Saya ~ (nama/pekerjaan)"
+  },
+  {
+   "source": "আমার সাথে ভালোভাবে থাকবেন / আমাকে গ্রহণ করবেন (পরিচয়ের শেষে)",
+   "target": "Mohon bimbingannya / Mohon terima saya (di akhir perkenalan)"
+  },
+  {
+   "source": "আমাকে গ্রহণ করো (ক্যাজুয়াল)",
+   "target": "Mohon bimbingannya (kasual)"
+  },
+  {
+   "source": "আপনার নাম কী?",
+   "target": "Siapa nama Anda?"
+  },
+  {
+   "source": "আমি ~ থেকে এসেছি",
+   "target": "Saya berasal dari ~"
+  },
+  {
+   "source": "বিদায়",
+   "target": "Perpisahan"
+  },
+  {
+   "source": "বিদায় জানানো",
+   "target": "Mengucapkan selamat tinggal"
+  },
+  {
+   "source": "বিদায় (দীর্ঘদিনের জন্য — আবেগঘন)",
+   "target": "Selamat tinggal (untuk waktu lama — emosional)"
+  },
+  {
+   "source": "তাহলে পরে দেখা হবে (ক্যাজুয়াল)",
+   "target": "Sampai jumpa lagi kalau begitu (kasual)"
+  },
+  {
+   "source": "আবার দেখা হবে (ক্যাজুয়াল)",
+   "target": "Sampai jumpa lagi (kasual)"
+  },
+  {
+   "source": "কাল দেখা হবে",
+   "target": "Sampai jumpa besok"
+  },
+  {
+   "source": "আমি বের হচ্ছি (বাড়ি থেকে বের হওয়ার সময়)",
+   "target": "Saya berangkat (saat meninggalkan rumah)"
+  },
+  {
+   "source": "ভালো থেকো / ফিরে আসো (যে বাড়িতে থাকে সে বলে)",
+   "target": "Hati-hati / Kembalilah dengan selamat (diucapkan oleh orang yang tinggal di rumah)"
+  },
+  {
+   "source": "আমি ফিরে এসেছি (বাড়ি ফেরার সময়)",
+   "target": "Saya sudah pulang (saat kembali ke rumah)"
+  },
+  {
+   "source": "স্বাগতম / ফিরে আসার জন্য ধন্যবাদ (বাড়িতে থাকা ব্যক্তি বলে)",
+   "target": "Selamat datang kembali (diucapkan oleh orang di rumah)"
+  },
+  {
+   "source": "সাধারণ কথোপকথন",
+   "target": "Percakapan umum"
+  },
+  {
+   "source": "প্রতিদিনের সাধারণ বাক্য",
+   "target": "Kalimat umum sehari-hari"
+  },
+  {
+   "source": "আপনি কেমন আছেন? (ফরমাল)",
+   "target": "Apa kabar Anda? (formal)"
+  },
+  {
+   "source": "আমি ভালো আছি",
+   "target": "Saya baik-baik saja"
+  },
+  {
+   "source": "হ্যাঁ / জি",
+   "target": "Ya"
+  },
+  {
+   "source": "না",
+   "target": "Tidak"
+  },
+  {
+   "source": "বুঝতে পেরেছি (ফরমাল)",
+   "target": "Saya sudah mengerti (formal)"
+  },
+  {
+   "source": "আমি বুঝি (ফরমাল বর্তমান)",
+   "target": "Saya mengerti (formal, sekarang)"
+  },
+  {
+   "source": "আমি বুঝতে পারছি না (ক্যাজুয়াল)",
+   "target": "Saya tidak mengerti (kasual)"
+  },
+  {
+   "source": "একটু অপেক্ষা করুন",
+   "target": "Mohon tunggu sebentar"
+  },
+  {
+   "source": "আমি ঠিক আছি / কোনো সমস্যা নেই",
+   "target": "Saya baik-baik saja / Tidak masalah"
+  },
+  {
+   "source": "এটা মজার / আমি উপভোগ করছি",
+   "target": "Ini menyenangkan / Saya menikmatinya"
+  },
+  {
+   "source": "কপি হয়েছে!",
+   "target": "Disalin!"
+  },
+  {
+   "source": "হোম",
+   "target": "Beranda"
+  },
+  {
+   "source": "ইন্টারভিউ",
+   "target": "Wawancara"
+  },
+  {
+   "source": "কুইজ",
+   "target": "Kuis"
+  },
+  {
+   "source": "গাইড",
+   "target": "Panduan"
+  },
+  {
+   "source": "বাক্য",
+   "target": "Kalimat"
+  },
+  {
+   "source": "মক টেস্ট",
+   "target": "Mock Test"
+  }
+ ]
+}
