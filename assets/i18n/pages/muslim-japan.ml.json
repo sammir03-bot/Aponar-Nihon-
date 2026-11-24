@@ -1,0 +1,114 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "muslim-japan",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "বাংলাদেশি মুসলিমদের জন্য নামাজের সময়, কিবলা নির্দেশনা, কাছের মসজিদ এবং হালাল খাবার—এক জায়গায়।",
+   "target": "ബംഗ്ലാദേശി മുസ്ലീങ്ങൾക്കായി നമസ്കാര സമയങ്ങൾ, ഖിബ്ല ദിശ, അടുത്തുള്ള പള്ളികൾ, ഹലാൽ ഭക്ഷണം — എല്ലാം ഒരിടത്ത്."
+  },
+  {
+   "source": "আমার লোকেশন নিন",
+   "target": "എന്റെ ലൊക്കേഷൻ എടുക്കൂ"
+  },
+  {
+   "source": "Compass চালু করুন",
+   "target": "Compass ഓൺ ചെയ്യൂ"
+  },
+  {
+   "source": "লোকেশন দিলে আপনার এলাকার তথ্য দেখানো হবে।",
+   "target": "ലൊക്കേഷൻ നൽകിയാൽ നിങ്ങളുടെ പ്രദേശത്തെ വിവരങ്ങൾ കാണിക്കും."
+  },
+  {
+   "source": "নামাজের সময়",
+   "target": "നമസ്കാര സമയങ്ങൾ"
+  },
+  {
+   "source": "Hanafi Asr — বাংলাদেশি default",
+   "target": "Hanafi Asr — ബംഗ്ലാദേശി default"
+  },
+  {
+   "source": "লোকেশন প্রয়োজন",
+   "target": "ലൊക്കേഷൻ ആവശ്യമാണ്"
+  },
+  {
+   "source": "নামাজের সময় স্থানীয় মসজিদের timetable থেকে কয়েক মিনিট ভিন্ন হতে পারে। স্থানীয় মসজিদের সময়কে অগ্রাধিকার দিন।",
+   "target": "നമസ്കാര സമയങ്ങൾ പ്രാദേശിക പള്ളിയുടെ timetable-ൽ നിന്ന് കുറച്ച് മിനിറ്റ് വ്യത്യാസപ്പെടാം. പ്രാദേശിക പള്ളിയുടെ സമയങ്ങൾക്ക് മുൻഗണന നൽകൂ."
+  },
+  {
+   "source": "কিবলা",
+   "target": "ഖിബ്ല"
+  },
+  {
+   "source": "লোকেশন নিলে True North থেকে কিবলার degree দেখাবে। Compass permission দিলে ফোন ঘোরালে arrow update হবে।",
+   "target": "ലൊക്കേഷൻ എടുത്താൽ True North-ൽ നിന്നുള്ള ഖിബ്ല degree കാണിക്കും. Compass permission നൽകിയാൽ ഫോൺ തിരിക്കുമ്പോൾ arrow update ആകും."
+  },
+  {
+   "source": "কাছের মসজিদ ও হালাল খাবার",
+   "target": "അടുത്തുള്ള പള്ളികളും ഹലാൽ ഭക്ഷണവും"
+  },
+  {
+   "source": "OpenStreetMap · বাস্তব জায়গার তথ্য",
+   "target": "OpenStreetMap · യഥാർത്ഥ സ്ഥല വിവരങ്ങൾ"
+  },
+  {
+   "source": "🕌 মসজিদ",
+   "target": "🕌 പള്ളി"
+  },
+  {
+   "source": "🍛 হালাল খাবার",
+   "target": "🍛 ഹലാൽ ഭക്ഷണം"
+  },
+  {
+   "source": "এলাকা",
+   "target": "പ്രദേശം"
+  },
+  {
+   "source": "কত দূরে",
+   "target": "എത്ര ദൂരം"
+  },
+  {
+   "source": "৩ কিমি",
+   "target": "3 km"
+  },
+  {
+   "source": "৬ কিমি",
+   "target": "6 km"
+  },
+  {
+   "source": "১০ কিমি",
+   "target": "10 km"
+  },
+  {
+   "source": "এই এলাকায় খুঁজুন",
+   "target": "ഈ പ്രദേശത്ത് തിരയൂ"
+  },
+  {
+   "source": "আপনার লোকেশন নিন অথবা এলাকা বেছে খুঁজুন। মানচিত্র সরিয়েও নতুন এলাকা বেছে নিতে পারেন।",
+   "target": "നിങ്ങളുടെ ലൊക്കേഷൻ ഉപയോഗിക്കൂ അല്ലെങ്കിൽ ഒരു പ്രദേശം തിരഞ്ഞെടുത്ത് തിരയൂ. Map നീക്കിയും പുതിയ പ്രദേശം തിരഞ്ഞെടുക്കാം."
+  },
+  {
+   "source": "লোকেশন বা এলাকা বেছে নিলে কাছের জায়গা দেখানো হবে।",
+   "target": "ലൊക്കേഷനോ പ്രദേശമോ തിരഞ്ഞെടുത്താൽ അടുത്തുള്ള സ്ഥലങ്ങൾ കാണിക്കും."
+  },
+  {
+   "source": "আবার চেষ্টা করুন",
+   "target": "വീണ്ടും ശ്രമിക്കൂ"
+  },
+  {
+   "source": "তথ্য:",
+   "target": "വിവരങ്ങൾ:"
+  },
+  {
+   "source": "। তথ্য অসম্পূর্ণ হতে পারে। খাবারের ক্ষেত্রে মানচিত্রের tag বা নাম ব্যবহার করা হয়; অর্ডারের আগে দোকানের বর্তমান হালাল সনদ ও উপাদান যাচাই করুন।",
+   "target": ". വിവരങ്ങൾ അപൂർണ്ണമായേക്കാം. ഭക്ഷണത്തിന് map-ന്റെ tag അല്ലെങ്കിൽ പേര് ഉപയോഗിക്കുന്നു; ഓർഡർ ചെയ്യുന്നതിന് മുമ്പ് കടയുടെ നിലവിലെ ഹലാൽ സർട്ടിഫിക്കേഷനും ചേരുവകളും പരിശോധിക്കൂ."
+  },
+  {
+   "source": "মানচিত্রের ভুল জানান",
+   "target": "Map പിശക് റിപ്പോർട്ട് ചെയ്യൂ"
+  }
+ ]
+}

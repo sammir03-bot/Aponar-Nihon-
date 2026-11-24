@@ -1,0 +1,58 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "daily-news",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "প্রতিদিনের জাপানি নিউজ | আপনার নিহোন",
+   "target": "ദൈനംദിന ജാപ്പനീസ് വാർത്തകൾ | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "খবর পড়তে পড়তে জাপানি শিখুন",
+   "target": "വാർത്തകൾ വായിച്ചുകൊണ്ട് ജാപ്പനീസ് പഠിക്കുക"
+  },
+  {
+   "source": "প্রতিদিন নতুন জাপানি headline, ভিতরে সহজ Japanese reading, ফুরিগানা ON/OFF, বাংলা বিস্তারিত ব্যাখ্যা এবং দরকারি vocabulary।",
+   "target": "എല്ലാ ദിവസവും പുതിയ ജാപ്പനീസ് headlines, ഉള്ളിൽ എളുപ്പമുള്ള Japanese reading, furigana ON/OFF, വിശദമായ ബംഗാളി വിശദീകരണങ്ങൾ, ഉപയോഗപ്രദമായ vocabulary."
+  },
+  {
+   "source": "নিউজ আর্কাইভ",
+   "target": "വാർത്താ ആർക്കൈവ്"
+  },
+  {
+   "source": "আজ ও আগের দিনের নিউজ",
+   "target": "ഇന്നത്തെയും മുമ്പത്തെ ദിവസങ്ങളിലെയും വാർത്തകൾ"
+  },
+  {
+   "source": "লোড হচ্ছে…",
+   "target": "ലോഡ് ചെയ്യുന്നു…"
+  },
+  {
+   "source": "নিউজ লোড হচ্ছে…",
+   "target": "വാർത്തകൾ ലോഡ് ചെയ്യുന്നു…"
+  },
+  {
+   "source": "আমাদের সম্পর্কে",
+   "target": "ഞങ്ങളെക്കുറിച്ച്"
+  },
+  {
+   "source": "যোগাযোগ",
+   "target": "ബന്ധപ്പെടുക"
+  },
+  {
+   "source": "© ২০২৬ আপনার নিহোন · Created by SAMMIR",
+   "target": "© 2026 আপনার নিহোন · Created by SAMMIR"
+  },
+  {
+   "source": "হোম",
+   "target": "ഹോം"
+  }
+ ]
+}

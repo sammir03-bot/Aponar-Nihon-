@@ -1,0 +1,258 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "cv-builder",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "হোম",
+   "target": "ഹോം"
+  },
+  {
+   "source": "ও",
+   "target": "ഉം"
+  },
+  {
+   "source": "বাংলায় বুঝে পূরণ করুন। বাংলা নির্দেশনা দেখে নিজের তথ্য লিখুন, Preview মিলিয়ে PDF হিসেবে সংরক্ষণ করুন।",
+   "target": "ബംഗാളിയിൽ മനസ്സിലാക്കി പൂരിപ്പിക്കുക. ബംഗാളി നിർദ്ദേശങ്ങൾ പിന്തുടർന്ന് നിങ്ങളുടെ വിവരങ്ങൾ എഴുതുക, Preview-യുമായി ഒത്തുനോക്കുക, PDF ആയി സംഭരിക്കുക."
+  },
+  {
+   "source": "এই ডিভাইসে draft সংরক্ষিত হয়",
+   "target": "Draft-കൾ ഈ ഉപകരണത്തിൽ സംഭരിക്കുന്നു"
+  },
+  {
+   "source": "আপনার তথ্য ও ছবি এই browser-এ থাকে",
+   "target": "നിങ്ങളുടെ വിവരങ്ങളും ഫോട്ടോകളും ഈ browser-ൽ തന്നെ നിലനിൽക്കും"
+  },
+  {
+   "source": "ব্যক্তিগত",
+   "target": "വ്യക്തിഗത വിശദാംശങ്ങൾ"
+  },
+  {
+   "source": "ইতিহাস",
+   "target": "വിദ്യാഭ്യാസ, തൊഴിൽ ചരിത്രം"
+  },
+  {
+   "source": "আবেদন",
+   "target": "അപേക്ഷ"
+  },
+  {
+   "source": "Template নির্বাচন",
+   "target": "Template തിരഞ്ഞെടുപ്പ്"
+  },
+  {
+   "source": "কাজ অনুযায়ী CV type বেছে নিন",
+   "target": "ജോലിക്കനുസരിച്ച് CV type തിരഞ്ഞെടുക്കുക"
+  },
+  {
+   "source": "কোনটা নেবেন?",
+   "target": "ഏതാണ് നിങ്ങൾ തിരഞ്ഞെടുക്കുക?"
+  },
+  {
+   "source": "Baito/コンビニ/restaurant হলে",
+   "target": "Baito/コンビニ/restaurant ആണെങ്കിൽ"
+  },
+  {
+   "source": ", সাধারণ চাকরিতে",
+   "target": ", സാധാരണ ജോലികൾക്ക്"
+  },
+  {
+   "source": ", school/college শেষে first job হলে",
+   "target": ", school/college കഴിഞ്ഞുള്ള ആദ്യ ജോലിക്ക്"
+  },
+  {
+   "source": ", experience-based full-time job হলে",
+   "target": ", അനുഭവാധിഷ്ഠിത full-time ജോലിക്ക്"
+  },
+  {
+   "source": "সাধারণ Japanese চাকরির CV",
+   "target": "സാധാരണ ജാപ്പനീസ് ജോലി CV"
+  },
+  {
+   "source": "Student, convenience store, restaurant ইত্যাদি",
+   "target": "Student, convenience store, restaurant മുതലായവ"
+  },
+  {
+   "source": "Education ও potential-কে গুরুত্ব",
+   "target": "Education-നും potential-നും ഊന്നൽ"
+  },
+  {
+   "source": "写真 — ছবি যোগ করুন",
+   "target": "写真 — ഫോട്ടോ ചേർക്കുക"
+  },
+  {
+   "source": "ছবি সরান",
+   "target": "ഫോട്ടോ നീക്കം ചെയ്യുക"
+  },
+  {
+   "source": "JPG / PNG / WebP · ৩:৪ ছবি · এই ডিভাইসেই থাকে",
+   "target": "JPG / PNG / WebP · 3:4 ഫോട്ടോ · ഈ ഉപകരണത്തിൽ തന്നെ നിലനിൽക്കും"
+  },
+  {
+   "source": "ছবির মাপ",
+   "target": "ഫോട്ടോ വലുപ്പം"
+  },
+  {
+   "source": "ডানে–বামে",
+   "target": "വലത്–ഇടത്"
+  },
+  {
+   "source": "উপরে–নিচে",
+   "target": "മുകളിലേക്ക്–താഴേക്ക്"
+  },
+  {
+   "source": "CV-এর তারিখ — প্রয়োজনমতো বেছে নিন",
+   "target": "CV-യുടെ തീയതി — ആവശ്യാനുസരണം തിരഞ്ഞെടുക്കുക"
+  },
+  {
+   "source": "পুরো নাম",
+   "target": "പൂർണ്ണ പേര്"
+  },
+  {
+   "source": "নামের কাতাকানা",
+   "target": "പേര് Katakana-യിൽ"
+  },
+  {
+   "source": "জন্মতারিখ",
+   "target": "ജനനത്തീയതി"
+  },
+  {
+   "source": "未記載 / না লিখব",
+   "target": "未記載 / വ്യക്തമാക്കരുത്"
+  },
+  {
+   "source": "男 / পুরুষ",
+   "target": "男 / പുരുഷൻ"
+  },
+  {
+   "source": "女 / নারী",
+   "target": "女 / സ്ത്രീ"
+  },
+  {
+   "source": "その他 / অন্যান্য",
+   "target": "その他 / മറ്റുള്ളവ"
+  },
+  {
+   "source": "জাতীয়তা",
+   "target": "ദേശീയത"
+  },
+  {
+   "source": "মোবাইল নম্বর",
+   "target": "മൊബൈൽ നമ്പർ"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "ഇമെയിൽ"
+  },
+  {
+   "source": "বর্তমান ঠিকানা + postal code",
+   "target": "നിലവിലെ വിലാസം + postal code"
+  },
+  {
+   "source": "ঠিকানার কাতাকানা reading",
+   "target": "വിലാസത്തിന്റെ Katakana reading"
+  },
+  {
+   "source": "Residence status / ভিসা",
+   "target": "Residence status / വിസ"
+  },
+  {
+   "source": "তারিখ অনুযায়ী লিখুন। 入学/卒業, 入社/退職 উল্লেখ করলে final CV সুন্দর হবে।",
+   "target": "കാലക്രമത്തിൽ എഴുതുക. 入学/卒業, 入社/退職 എന്നിവ പരാമർശിക്കുന്നത് final CV മികച്ചതാക്കും."
+  },
+  {
+   "source": "— শিক্ষাগত ইতিহাস",
+   "target": "— വിദ്യാഭ്യാസ ചരിത്രം"
+  },
+  {
+   "source": "学歴 যোগ করুন",
+   "target": "学歴 ചേർക്കുക"
+  },
+  {
+   "source": "— কাজের ইতিহাস",
+   "target": "— തൊഴിൽ ചരിത്രം"
+  },
+  {
+   "source": "職歴 যোগ করুন",
+   "target": "職歴 ചേർക്കുക"
+  },
+  {
+   "source": "— যোগ্যতা/লাইসেন্স",
+   "target": "— യോഗ്യതകൾ/ലൈസൻസുകൾ"
+  },
+  {
+   "source": "資格 যোগ করুন",
+   "target": "資格 ചേർക്കുക"
+  },
+  {
+   "source": "— Part-time তথ্য",
+   "target": "— Part-time വിവരങ്ങൾ"
+  },
+  {
+   "source": "স্কুলের ক্লাসের সময়",
+   "target": "സ്കൂൾ ക്ലാസ് സമയങ്ങൾ"
+  },
+  {
+   "source": "কোন দিন ও সময়ে কাজ করতে পারবেন",
+   "target": "നിങ്ങൾക്ക് ജോലി ചെയ്യാൻ കഴിയുന്ന ദിവസങ്ങളും സമയങ്ങളും"
+  },
+  {
+   "source": "কেন এই job চান + আপনার শক্তি · নিচের নমুনা সম্পাদনা করুন",
+   "target": "എന്തുകൊണ്ടാണ് നിങ്ങൾക്ക് ഈ job വേണ്ടത് + നിങ്ങളുടെ ശക്തികൾ · താഴെയുള്ള സാമ്പിൾ എഡിറ്റ് ചെയ്യുക"
+  },
+  {
+   "source": "অন্য কোনো বিশেষ অনুরোধ",
+   "target": "മറ്റേതെങ്കിലും പ്രത്യേക അഭ്യർത്ഥനകൾ"
+  },
+  {
+   "source": "আপনার কাজের অভিজ্ঞতার সংক্ষিপ্ত summary",
+   "target": "നിങ്ങളുടെ തൊഴിൽ അനുഭവത്തിന്റെ ഹ്രസ്വ സംഗ്രഹം"
+  },
+  {
+   "source": "Skills — প্রতি লাইনে একটি করে লিখতে পারেন",
+   "target": "Skills — ഒരു വരിയിൽ ഒന്ന് വീതം എഴുതാം"
+  },
+  {
+   "source": "নিজের শক্তি ও কাজের উদাহরণ",
+   "target": "നിങ്ങളുടെ ശക്തികളും തൊഴിൽ ഉദാഹരണങ്ങളും"
+  },
+  {
+   "source": "শেষ ধাপ:",
+   "target": "അവസാന ഘട്ടം:"
+  },
+  {
+   "source": "নাম, তারিখ, ছবি ও লেখার বানান Preview-তে মিলিয়ে নিন। PDF / Print চাপলে browser-এর Print খুলবে; Destination থেকে",
+   "target": "പേര്, തീയതി, ഫോട്ടോ, അക്ഷരവിന്യാസം എന്നിവ Preview-യിൽ പരിശോധിക്കുക. PDF / Print അമർത്തുന്നത് browser-ന്റെ Print മെനു തുറക്കും; Destination-ൽ നിന്ന്"
+  },
+  {
+   "source": "বেছে নিন।",
+   "target": "തിരഞ്ഞെടുക്കുക."
+  },
+  {
+   "source": "Backup ফেরত আনুন",
+   "target": "Backup പുനഃസ്ഥാപിക്കുക"
+  },
+  {
+   "source": "আগের ধাপ",
+   "target": "മുമ്പത്തെ ഘട്ടം"
+  },
+  {
+   "source": "পরের ধাপ",
+   "target": "അടുത്ത ഘട്ടം"
+  },
+  {
+   "source": "নথির Preview",
+   "target": "ഡോക്യുമെന്റ് Preview"
+  },
+  {
+   "source": "বড় করে দেখুন",
+   "target": "വലുതായി കാണുക"
+  },
+  {
+   "source": "।",
+   "target": "."
+  }
+ ]
+}

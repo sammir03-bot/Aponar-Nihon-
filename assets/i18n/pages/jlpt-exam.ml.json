@@ -1,0 +1,182 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "jlpt-exam",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "JLPT Mock Test | আপনার নিহোন",
+   "target": "JLPT Mock Test | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "একটি করে প্রশ্ন দেখুন, নম্বর থেকে সরাসরি যান ও পরে দেখার চিহ্ন দিন। পরীক্ষার পরে বাংলা উত্তর, ব্যাখ্যা ও আপনার নামে PDF সনদ পাবেন।",
+   "target": "ഒരു സമയം ഒരു ചോദ്യം കാണൂ, നമ്പറുകളിൽ നിന്ന് നേരിട്ട് പോകൂ, പിന്നീട് കാണാൻ അടയാളപ്പെടുത്തൂ. പരീക്ഷയ്ക്ക് ശേഷം ബംഗാളി ഉത്തരങ്ങൾ, വിശദീകരണങ്ങൾ, നിങ്ങളുടെ പേരിലുള്ള PDF സർട്ടിഫിക്കറ്റ് എന്നിവ ലഭിക്കും."
+  },
+  {
+   "source": "পরীক্ষার্থীর নাম",
+   "target": "പരീക്ഷാർത്ഥിയുടെ പേര്"
+  },
+  {
+   "source": "পরীক্ষা শেষে সনদের নাম পরিবর্তন করতে পারবেন।",
+   "target": "പരീക്ഷയ്ക്ക് ശേഷം സർട്ടിഫിക്കറ്റിലെ പേര് മാറ്റാൻ കഴിയും."
+  },
+  {
+   "source": "পরীক্ষার সময় নির্বাচন",
+   "target": "പരീക്ഷാ സമയം തിരഞ്ഞെടുക്കുക"
+  },
+  {
+   "source": "Practice · দ্রুত",
+   "target": "Practice · ദ്രുതം"
+  },
+  {
+   "source": "লিসেনিংয়ের আগে শব্দ পরীক্ষা করুন",
+   "target": "Listening-ന് മുമ്പ് ശബ്ദം പരിശോധിക്കൂ"
+  },
+  {
+   "source": "রেকর্ড করা অডিও শোনা গেলে প্রস্তুত",
+   "target": "റെക്കോർഡ് ചെയ്ത ഓഡിയോ കേൾക്കാൻ കഴിയുമ്പോൾ തയ്യാർ"
+  },
+  {
+   "source": "পরীক্ষা শুরু করুন →",
+   "target": "പരീക്ഷ ആരംഭിക്കൂ →"
+  },
+  {
+   "source": "আগের জায়গা থেকে চালিয়ে যান",
+   "target": "നിർത്തിയ സ്ഥലത്ത് നിന്ന് തുടരൂ"
+  },
+  {
+   "source": "নতুন করে শুরু করুন",
+   "target": "പുതുതായി ആരംഭിക്കൂ"
+  },
+  {
+   "source": "পার্ট",
+   "target": "Part"
+  },
+  {
+   "source": "শব্দভাণ্ডার",
+   "target": "പദാവലി"
+  },
+  {
+   "source": "প্রশ্ন তালিকা",
+   "target": "ചോദ്യ പട്ടിക"
+  },
+  {
+   "source": "০ / ০ উত্তর",
+   "target": "0 / 0 ഉത്തരങ്ങൾ"
+  },
+  {
+   "source": "সব প্রশ্ন দেখুন",
+   "target": "എല്ലാ ചോദ്യങ്ങളും കാണൂ"
+  },
+  {
+   "source": "প্রশ্ন নম্বর ও অগ্রগতি",
+   "target": "ചോദ്യ നമ്പറുകളും പുരോഗതിയും"
+  },
+  {
+   "source": "সবুজ: উত্তর দেওয়া · ★: পরে দেখব · নীল: বর্তমান প্রশ্ন",
+   "target": "പച്ച: ഉത്തരം നൽകിയത് · ★: പിന്നീട് കാണാൻ · നീല: നിലവിലെ ചോദ്യം"
+  },
+  {
+   "source": "← আগের প্রশ্ন",
+   "target": "← മുൻ ചോദ്യം"
+  },
+  {
+   "source": "পরের প্রশ্ন →",
+   "target": "അടുത്ത ചോദ്യം →"
+  },
+  {
+   "source": "এই পার্ট শেষ করুন",
+   "target": "ഈ Part അവസാനിപ്പിക്കൂ"
+  },
+  {
+   "source": "পরীক্ষা মোডে উত্তর না দেওয়া প্রশ্ন রেখেও জমা দিতে পারবেন।",
+   "target": "പരീക്ഷാ മോഡിൽ ഉത്തരം നൽകാത്ത ചോദ്യങ്ങൾ ഉണ്ടായാലും സമർപ്പിക്കാൻ കഴിയും."
+  },
+  {
+   "source": "প্রথম উত্তর না-দেওয়া প্রশ্নে যান",
+   "target": "ആദ്യത്തെ ഉത്തരം നൽകാത്ത ചോദ്യത്തിലേക്ക് പോകൂ"
+  },
+  {
+   "source": "পার্টের অগ্রগতি",
+   "target": "Part-ന്റെ പുരോഗതി"
+  },
+  {
+   "source": "০ / ০ উত্তর দেওয়া",
+   "target": "0 / 0 ഉത്തരം നൽകി"
+  },
+  {
+   "source": "পার্ট জমা দিন",
+   "target": "Part സമർപ്പിക്കൂ"
+  },
+  {
+   "source": "পার্ট সম্পন্ন",
+   "target": "Part പൂർത്തിയായി"
+  },
+  {
+   "source": "এই পার্ট জমা হয়েছে। এখন আগের উত্তরে ফিরে যাওয়া যাবে না।",
+   "target": "ഈ Part സമർപ്പിച്ചു. ഇനി മുൻ ഉത്തരങ്ങളിലേക്ക് തിരികെ പോകാൻ കഴിയില്ല."
+  },
+  {
+   "source": "০/০",
+   "target": "0/0"
+  },
+  {
+   "source": "উত্তর দেওয়া",
+   "target": "ഉത്തരം നൽകി"
+  },
+  {
+   "source": "১/৩",
+   "target": "1/3"
+  },
+  {
+   "source": "পরবর্তী পার্ট শুরু করুন →",
+   "target": "അടുത്ത Part ആരംഭിക്കൂ →"
+  },
+  {
+   "source": "আপনার নিহোন · ফলাফল",
+   "target": "আপনার নিহোন · ഫലങ്ങൾ"
+  },
+  {
+   "source": "সনদ / PDF ডাউনলোড",
+   "target": "സർട്ടിഫിക്കറ്റ് / PDF ഡൗൺലോഡ്"
+  },
+  {
+   "source": "সব Mock Test",
+   "target": "എല്ലാ Mock Test-കളും"
+  },
+  {
+   "source": "ফলাফল প্রিন্ট",
+   "target": "ഫലങ്ങൾ പ്രിന്റ് ചെയ്യൂ"
+  },
+  {
+   "source": "আবার পরীক্ষা দিন",
+   "target": "വീണ്ടും പരീക്ഷ എഴുതൂ"
+  },
+  {
+   "source": "উত্তর রিভিউ",
+   "target": "ഉത്തര റിവ്യൂ"
+  },
+  {
+   "source": "সঠিক উত্তর, বাংলা ব্যাখ্যা ও Listening transcript",
+   "target": "ശരിയായ ഉത്തരങ്ങൾ, ബംഗാളി വിശദീകരണങ്ങൾ, Listening transcript"
+  },
+  {
+   "source": "সব",
+   "target": "എല്ലാം"
+  },
+  {
+   "source": "ভুল",
+   "target": "തെറ്റ്"
+  },
+  {
+   "source": "সঠিক",
+   "target": "ശരി"
+  }
+ ]
+}

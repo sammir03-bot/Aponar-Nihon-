@@ -1,0 +1,166 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ml",
+ "page": "n3-matome-grammar",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N3 Matome Grammar বাংলা — ৬ সপ্তাহে ১৩২টি Rule | আপনার নিহোন",
+   "target": "N3 Matome Grammar ബംഗാളി — 6 ആഴ്ചയിൽ 132 Rule-കൾ | আপনার নিহোন"
+  },
+  {
+   "source": "Rule তালিকায় যান",
+   "target": "Rule പട്ടികയിലേക്ക് പോകുക"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপানি শেখা, বাংলায় সহজ",
+   "target": "ജാപ്പനീസ് പഠിക്കൂ, ബംഗാളിയിൽ എളുപ്പം"
+  },
+  {
+   "source": "TRY! N3 খুলুন ↗",
+   "target": "TRY! N3 തുറക്കുക ↗"
+  },
+  {
+   "source": "N3 Matome Grammar — ৬ সপ্তাহে পুরো Revision",
+   "target": "N3 Matome Grammar — 6 ആഴ്ചയിൽ പൂർണ്ണമായ Revision"
+  },
+  {
+   "source": "TRY! N3-এর copy নয়। Matome-এর ৬-সপ্তাহের ধারায় ১৩২টি grammar point—একই পরিবারের rule পাশাপাশি, ছোট বাংলা অর্থ, exact গঠন, মনে রাখার ছবি এবং নিজস্ব উদাহরণ।",
+   "target": "TRY! N3-യുടെ പകർപ്പല്ല. Matome-യുടെ 6-ആഴ്ച ഘടനയിൽ 132 grammar point-കൾ—ഒരേ കുടുംബത്തിലെ rule-കൾ അരികിലായി, ചെറിയ ബംഗാളി അർത്ഥങ്ങൾ, കൃത്യമായ ഘടന, ഓർമ്മ ചിത്രങ്ങൾ, സ്വന്തം ഉദാഹരണങ്ങൾ."
+  },
+  {
+   "source": "৬ সপ্তাহ",
+   "target": "6 ആഴ്ച"
+  },
+  {
+   "source": "৩৬ Study Day",
+   "target": "36 Study Day-കൾ"
+  },
+  {
+   "source": "১৩২টি Rule",
+   "target": "132 Rule-കൾ"
+  },
+  {
+   "source": "১২টি আলাদা VS Comparison",
+   "target": "12 പ്രത്യേക VS Comparison-കൾ"
+  },
+  {
+   "source": "শব্দভাণ্ডার",
+   "target": "പദാവലി"
+  },
+  {
+   "source": "কানজি",
+   "target": "Kanji"
+  },
+  {
+   "source": "ব্যাকরণ",
+   "target": "വ്യാകരണം"
+  },
+  {
+   "source": "সব ৬ সপ্তাহ",
+   "target": "എല്ലാ 6 ആഴ്ചയും"
+  },
+  {
+   "source": "শুধু বাকি",
+   "target": "ബാക്കി മാത്രം"
+  },
+  {
+   "source": "Filter মুছুন",
+   "target": "Filter മായ്ക്കുക"
+  },
+  {
+   "source": "0 / 132 শেখা",
+   "target": "0 / 132 പഠിച്ചു"
+  },
+  {
+   "source": "একটি Rule মনে রাখার ৪-ধাপ Code",
+   "target": "ഒരു Rule ഓർമ്മിക്കാനുള്ള 4-ഘട്ട Code"
+  },
+  {
+   "source": "শুধু বাংলা অর্থ মুখস্থ নয়। Form → কাজ → পার্থক্য → নিজের বাক্য—এই ক্রমে পড়লে grammar দীর্ঘদিন মনে থাকে।",
+   "target": "വെറുതെ ബംഗാളി അർത്ഥം മനഃപാഠമാക്കരുത്. Form → പ്രവർത്തനം → വ്യത്യാസം → സ്വന്തം വാക്യം—ഈ ക്രമത്തിൽ വായിച്ചാൽ grammar ദീർഘകാലം ഓർമ്മയിൽ നിൽക്കും."
+  },
+  {
+   "source": "প্রতি দিন ৩–৪টি rule। আগের দিনের rule না দেখে বলার পর নতুন দিন শুরু করুন।",
+   "target": "ദിവസവും 3–4 rule-കൾ. മുൻ ദിവസത്തെ rule-കൾ നോക്കാതെ ഓർത്തെടുത്ത ശേഷം പുതിയ ദിവസം തുടങ്ങുക."
+  },
+  {
+   "source": "Form দেখুন",
+   "target": "Form പരിശോധിക്കുക"
+  },
+  {
+   "source": "Verb, noun বা adjective—কোন শরীর দরকার?",
+   "target": "Verb, noun അല്ലെങ്കിൽ adjective—ഏത് ശരീരഭാഗമാണ് വേണ്ടത്?"
+  },
+  {
+   "source": "এক লাইনের কাজ",
+   "target": "ഒരു വരിയിലെ പ്രവർത്തനം"
+  },
+  {
+   "source": "Ruleটি আসলে সময়, কারণ, মত নাকি তুলনা?",
+   "target": "Rule യഥാർത്ഥത്തിൽ സമയത്തെക്കുറിച്ചാണോ, കാരണത്തെക്കുറിച്ചാണോ, അഭിപ്രായത്തെക്കുറിച്ചാണോ, താരതമ്യത്തെക്കുറിച്ചാണോ?"
+  },
+  {
+   "source": "শব্দ নয়—মাথায় একটি চলমান ছবি রাখুন।",
+   "target": "വാക്കുകൾ മാത്രമല്ല—മനസ്സിൽ ഒരു ചലിക്കുന്ന ചിത്രം സൂക്ഷിക്കുക."
+  },
+  {
+   "source": "নিজের জীবন",
+   "target": "സ്വന്തം ജീവിതം"
+  },
+  {
+   "source": "Example বন্ধ করে নিজের school/work sentence বলুন।",
+   "target": "Example ഓഫ് ചെയ്ത് നിങ്ങളുടെ സ്വന്തം school/work വാക്യം പറയുക."
+  },
+  {
+   "source": "৬-সপ্তাহের Matome Map",
+   "target": "6-ആഴ്ച Matome Map"
+  },
+  {
+   "source": "একই কাজের grammar পাশাপাশি রাখা হয়েছে। একটি সপ্তাহ চাপলে শুধু সেই সপ্তাহের rule খুলবে।",
+   "target": "സമാന പ്രവർത്തനങ്ങളുള്ള grammar അരികിലായി വെച്ചിരിക്കുന്നു. ഒരു ആഴ്ചയിൽ ക്ലിക്ക് ചെയ്താൽ ആ ആഴ്ചയിലെ rule-കൾ മാത്രം തുറക്കും."
+  },
+  {
+   "source": "Confusing Grammar — আলাদা “VS” Section",
+   "target": "Confusing Grammar — പ്രത്യേക “VS” Section"
+  },
+  {
+   "source": "একই বাংলা অর্থ দেখে ভুল হয় এমন rule-গুলোকে side-by-side রাখা হয়েছে। প্রতিটি comparison আলাদা খুলে পড়ুন।",
+   "target": "ഒരേ ബംഗാളി അർത്ഥം കാരണം ആശയക്കുഴപ്പമുണ്ടാകുന്ന rule-കൾ അരികിലായി വെച്ചിരിക്കുന്നു. ഓരോ comparison-ഉം പ്രത്യേകം തുറന്ന് വായിക്കുക."
+  },
+  {
+   "source": "N3 Matome-এর ১৩২টি Rule",
+   "target": "N3 Matome-യുടെ 132 Rule-കൾ"
+  },
+  {
+   "source": "প্রতিটি card-এ গঠন, আসল কাজ, মনে রাখার ছবি এবং Japanese–Bangla example আছে। “শেখা” চাপলে অগ্রগতি এই device-এ save থাকবে।",
+   "target": "ഓരോ card-ലും ഘടന, യഥാർത്ഥ പ്രവർത്തനം, ഓർമ്മ ചിത്രം, Japanese–Bangla example എന്നിവയുണ്ട്. “പഠിച്ചു” എന്ന് ക്ലിക്ക് ചെയ്താൽ നിങ്ങളുടെ പുരോഗതി ഈ device-ൽ save ചെയ്യപ്പെടും."
+  },
+  {
+   "source": "১৩২টি Rule দেখা যাচ্ছে",
+   "target": "132 Rule-കൾ കാണിക്കുന്നു"
+  },
+  {
+   "source": "কোনো Rule পাওয়া যায়নি।",
+   "target": "Rule-കളൊന്നും കണ്ടെത്തിയില്ല."
+  },
+  {
+   "source": "অন্য spelling, বাংলা অর্থ বা সপ্তাহ দিয়ে আবার খুঁজুন।",
+   "target": "മറ്റൊരു spelling, ബംഗാളി അർത്ഥം അല്ലെങ്കിൽ ആഴ്ച ഉപയോഗിച്ച് വീണ്ടും തിരയുക."
+  },
+  {
+   "source": "এই page-এর ব্যাখ্যা, memory clue ও example আপনার নিহোনের জন্য নতুনভাবে লেখা। অগ্রগতি শুধু আপনার browser-এ থাকে। •",
+   "target": "ഈ page-ലെ വിശദീകരണങ്ങൾ, memory clue-കൾ, example-കൾ എന്നിവ আপনার নিহোন-ന് വേണ്ടി പുതുതായി എഴുതിയതാണ്. പുരോഗതി നിങ്ങളുടെ browser-ൽ മാത്രം നിലനിൽക്കും. •"
+  },
+  {
+   "source": "TRY! N3-এর বিশদ ১১৩টি Rule দেখুন",
+   "target": "TRY! N3-യുടെ വിശദമായ 113 Rule-കൾ കാണുക"
+  }
+ ]
+}
