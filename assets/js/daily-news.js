@@ -71,7 +71,7 @@ Object.assign(dynT._b,{"dn.homeLoadFail": "নিউজ লোড করা য�
      merge. bn returns the merged data untouched; any sidecar failure or
      missing entry keeps the Bengali original (graceful fallback for
      newly reviewed lessons until a top-up run refreshes the sidecars). */
-  var DATE_LOCALES = {en: "en-US-u-nu-latn", ja: "ja-JP", vi: "vi-VN-u-nu-latn", ne: "ne-NP", hi: "hi-IN-u-nu-latn", ur: "ur-PK-u-nu-latn", my: "my-MM-u-nu-latn", zh: "zh-CN-u-nu-latn", si: "si-LK-u-nu-latn", fil: "fil-PH-u-nu-latn"};
+  var DATE_LOCALES = {en: "en-US-u-nu-latn", ja: "ja-JP", vi: "vi-VN-u-nu-latn", ne: "ne-NP", hi: "hi-IN-u-nu-latn", ur: "ur-PK-u-nu-latn", my: "my-MM-u-nu-latn", zh: "zh-CN-u-nu-latn", si: "si-LK-u-nu-latn", fil: "fil-PH-u-nu-latn", id: "id-ID-u-nu-latn", ar: "ar-EG-u-nu-latn", ml: "ml-IN-u-nu-latn"};
   function dateLocale() {
     var lang = dynLang();
     return lang === "bn" ? "bn-BD" : (DATE_LOCALES[lang] || "en-US-u-nu-latn");
