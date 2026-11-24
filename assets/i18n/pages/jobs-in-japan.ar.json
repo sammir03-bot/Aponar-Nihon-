@@ -1,0 +1,350 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "jobs-in-japan",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "Jobs in Japan | TownWork + Baitoru বাংলা গাইড | আপনার নিহোন",
+   "target": "Jobs in Japan | دليل TownWork + Baitoru بالبنغالية | আপনার নিহোন"
+  },
+  {
+   "source": "পার্ট-টাইম কাজ খোঁজা ও আবেদন",
+   "target": "إيجاد أعمال بدوام جزئي والتقدم لها"
+  },
+  {
+   "source": "কাজ খুঁজুন → Original site খুলুন → আবেদন করুন",
+   "target": "ابحث عن عمل → افتح الموقع الأصلي → تقدم"
+  },
+  {
+   "source": "TownWork ও Baitoru-তে Tokyo-এর পার্ট-টাইম কাজ খুঁজে কীভাবে আবেদন করবেন—একদম শুরু থেকে বাংলায় দেখানো হয়েছে। আপনার নিহোন কোনো চাকরির আবেদন নিজে নেয় না।",
+   "target": "كيفية إيجاد أعمال بدوام جزئي في طوكيو على TownWork وBaitoru وكيفية التقديم — موضح بالبنغالية من البداية تمامًا. আপনার নিহোন لا يقبل طلبات العمل بنفسه."
+  },
+  {
+   "source": "নিরাপদ নিয়ম:",
+   "target": "قاعدة السلامة:"
+  },
+  {
+   "source": "আপনার Nihon-এ TownWork/Baitoru password দেবেন না। Apply করলে সবসময় original website-এই form পূরণ করবেন।",
+   "target": "لا تدخل كلمة مرور TownWork/Baitoru الخاصة بك في আপনার নিহোন. عند التقديم، املأ النموذج دائمًا على الموقع الأصلي."
+  },
+  {
+   "source": "এখন কাজ খুঁজুন",
+   "target": "ابحث عن عمل الآن"
+  },
+  {
+   "source": "আবেদন শিখুন",
+   "target": "تعلم كيفية التقديم"
+  },
+  {
+   "source": "কাজ খুঁজুন",
+   "target": "إيجاد عمل"
+  },
+  {
+   "source": "Tokyo এবং আপনার পছন্দের কাজ/এলাকা বেছে নিন।",
+   "target": "اختر طوكيو والعمل/المنطقة المفضلة لديك."
+  },
+  {
+   "source": "Original page খুলুন",
+   "target": "افتح الصفحة الأصلية"
+  },
+  {
+   "source": "TownWork বা Baitoru-এর official page-এ job details পড়ুন।",
+   "target": "اقرأ تفاصيل الوظيفة على صفحة TownWork أو Baitoru الرسمية."
+  },
+  {
+   "source": "応募 করুন",
+   "target": "تقدم (応募)"
+  },
+  {
+   "source": "応募する / 応募へ চাপুন এবং original form পূরণ করুন।",
+   "target": "اضغط 応募する / 応募へ واملأ النموذج الأصلي."
+  },
+  {
+   "source": "কোথায় কাজ খুঁজবেন?",
+   "target": "أين يجب أن تبحث عن عمل؟"
+  },
+  {
+   "source": "নিচের button চাপলে সরাসরি official source খুলবে। কোনো job data আপনার Nihon-এ copy করা হচ্ছে না।",
+   "target": "الضغط على الزر أدناه يفتح المصدر الرسمي مباشرة. لا يتم نسخ أي بيانات وظائف إلى আপনার নিহোন."
+  },
+  {
+   "source": "Tokyo-এর বিভিন্ন baito খুঁজুন। Original site-এ গিয়ে area, station, job type, salary ও shift filter করুন।",
+   "target": "ابحث عن أعمال baito متنوعة في طوكيو. اذهب إلى الموقع الأصلي وصنّف حسب المنطقة والمحطة ونوع العمل والراتب والوردية."
+  },
+  {
+   "source": "TownWork খুলে",
+   "target": "افتح TownWork وتحقق من"
+  },
+  {
+   "source": "(কাজের জায়গা),",
+   "target": "(مكان العمل)،"
+  },
+  {
+   "source": "(কাজের ধরন),",
+   "target": "(نوع العمل)،"
+  },
+  {
+   "source": "(বেতন) এবং",
+   "target": "(الراتب) و"
+  },
+  {
+   "source": "(সময়) দেখে নিন।",
+   "target": "(الساعات)."
+  },
+  {
+   "source": "Tokyo-এর baito browse করুন। Convenience store ও restaurant-এর direct category-ও নিচে দেওয়া আছে।",
+   "target": "تصفح أعمال baito في طوكيو. فئات مباشرة لمتاجر الراحة والمطاعم مذكورة أيضًا أدناه."
+  },
+  {
+   "source": "Baitoru-তে",
+   "target": "على Baitoru،"
+  },
+  {
+   "source": "filter ব্যবহার করলে দ্রুত উপযুক্ত job পাওয়া যায়।",
+   "target": "استخدام المرشحات يساعدك على إيجاد وظيفة مناسبة بسرعة."
+  },
+  {
+   "source": "আপনি কী খুঁজছেন?",
+   "target": "ما الذي تبحث عنه؟"
+  },
+  {
+   "source": "প্রথমে একটি category খুলুন। তারপর original site-এ নিজের station/সময় দিয়ে আরও narrow করুন।",
+   "target": "أولًا افتح فئة. ثم ضيّق النتائج أكثر على الموقع الأصلي حسب محطتك/وقتك."
+  },
+  {
+   "source": "Tokyo সব কাজ",
+   "target": "كل أعمال طوكيو"
+  },
+  {
+   "source": "TownWork থেকে filter করুন",
+   "target": "صنّف من TownWork"
+  },
+  {
+   "source": "TownWork / Baitoru-তে কীভাবে আবেদন করবেন?",
+   "target": "كيفية التقديم على TownWork / Baitoru؟"
+  },
+  {
+   "source": "Button-এর নাম একটু বদলাতে পারে, কিন্তু মূল flow প্রায় একই।",
+   "target": "قد تختلف أسماء الأزرار قليلًا، لكن التدفق الرئيسي هو نفسه تقريبًا."
+  },
+  {
+   "source": "পছন্দের job খুলে",
+   "target": "افتح وظيفة تعجبك و"
+  },
+  {
+   "source": "পড়ুন।",
+   "target": "اقرأها."
+  },
+  {
+   "source": "button চাপুন।",
+   "target": "اضغط الزر."
+  },
+  {
+   "source": "নাম, ふりがな, email, phone ইত্যাদি",
+   "target": "الاسم، ふりがな، البريد الإلكتروني، الهاتف، إلخ"
+  },
+  {
+   "source": "নিজের সঠিক তথ্য",
+   "target": "معلوماتك الدقيقة الخاصة"
+  },
+  {
+   "source": "লিখুন।",
+   "target": "أدخلها."
+  },
+  {
+   "source": "入力内容確認 (তথ্য যাচাই) screen-এ ভুল আছে কি না দেখুন।",
+   "target": "على شاشة 入力内容確認 (تحقق من بياناتك)، تحقق مما إذا كانت هناك أخطاء."
+  },
+  {
+   "source": "Submit করার পর employer-এর phone/email-এর জন্য অপেক্ষা করুন।",
+   "target": "بعد التقديم، انتظر مكالمة/بريد صاحب العمل."
+  },
+  {
+   "source": "Job detail-এ interview location ও contact method আলাদা থাকতে পারে। Submit করার আগে screenshot রেখে দিতে পারেন।",
+   "target": "قد يتم ذكر مكان المقابلة وطريقة الاتصال بشكل منفصل في تفاصيل الوظيفة. قد ترغب في حفظ لقطة شاشة قبل التقديم."
+  },
+  {
+   "source": "Job খুলে salary, shift, location ও 応募条件 ভালোভাবে পড়ুন।",
+   "target": "افتح الوظيفة واقرأ الراتب والوردية والموقع و応募条件 بعناية."
+  },
+  {
+   "source": "চাপুন। Login/registration screen এলে নির্দেশনা অনুসরণ করুন।",
+   "target": "اضغط عليه. إذا ظهرت شاشة تسجيل دخول/تسجيل، اتبع التعليمات."
+  },
+  {
+   "source": "Baitoru-এর account system-এ",
+   "target": "في نظام حساب Baitoru،"
+  },
+  {
+   "source": "দেখালে email দিয়ে account তৈরি/লগইন করুন।",
+   "target": "إذا ظهر، أنشئ حسابًا / سجل الدخول ببريدك الإلكتروني."
+  },
+  {
+   "source": "Application form-এ নিজের নাম, phone, email ও প্রয়োজনীয় তথ্য দিন।",
+   "target": "في نموذج التقديم، أدخل اسمك وهاتفك وبريدك الإلكتروني والمعلومات المطلوبة."
+  },
+  {
+   "source": "確認 → 応募完了 হলে employer-এর contact-এর জন্য অপেক্ষা করুন।",
+   "target": "بمجرد وصولك إلى 確認 → 応募完了، انتظر أن يتصل بك صاحب العمل."
+  },
+  {
+   "source": "মনে রাখবেন:",
+   "target": "تذكر:"
+  },
+  {
+   "source": "Password শুধু Baitoru/dip-এর original page-এ দিন। Aponar Nihon কখনো আপনার password চাইবে না।",
+   "target": "أدخل كلمة المرور الخاصة بك فقط على صفحة Baitoru/dip الأصلية. আপনার নিহোন لن يطلب كلمة المرور الخاصة بك أبدًا."
+  },
+  {
+   "source": "Application form-এর Japanese বুঝুন",
+   "target": "افهم اليابانية في نموذج التقديم"
+  },
+  {
+   "source": "সবচেয়ে বেশি দেখা যায় এমন field-এর সহজ বাংলা অর্থ।",
+   "target": "معانٍ بنغالية بسيطة للحقول الأكثر شيوعًا."
+  },
+  {
+   "source": "আপনার নাম",
+   "target": "اسمك"
+  },
+  {
+   "source": "নামের কাতাকানা reading",
+   "target": "قراءة الكاتاكانا لاسمك"
+  },
+  {
+   "source": "জন্মতারিখ",
+   "target": "تاريخ الميلاد"
+  },
+  {
+   "source": "ফোন নম্বর",
+   "target": "الهاتف"
+  },
+  {
+   "source": "বর্তমান occupation / student",
+   "target": "المهنة الحالية / طالب"
+  },
+  {
+   "source": "কোন দিন কাজ করতে চান",
+   "target": "الأيام التي تريد العمل فيها"
+  },
+  {
+   "source": "কোন সময় কাজ করতে চান",
+   "target": "الساعات التي تريد العمل فيها"
+  },
+  {
+   "source": "Apply করুন",
+   "target": "تقدم"
+  },
+  {
+   "source": "এই শব্দগুলো জানলে job ad বুঝতে সহজ হবে",
+   "target": "معرفة هذه الكلمات ستجعل إعلانات الوظائف أسهل في الفهم"
+  },
+  {
+   "source": "ঘণ্টাপ্রতি বেতন",
+   "target": "الأجر بالساعة"
+  },
+  {
+   "source": "যাতায়াত খরচ দেওয়া হয়",
+   "target": "تكاليف النقل مغطاة"
+  },
+  {
+   "source": "অভিজ্ঞতা না থাকলেও আবেদন করা যায়",
+   "target": "يمكنك التقديم حتى بدون خبرة"
+  },
+  {
+   "source": "সপ্তাহে ২ দিন থেকে",
+   "target": "من يومين في الأسبوع"
+  },
+  {
+   "source": "রাত/late-night shift",
+   "target": "وردية ليلية/متأخرة ليلًا"
+  },
+  {
+   "source": "Training আছে",
+   "target": "التدريب متوفر"
+  },
+  {
+   "source": "Apply করার আগে ৪টা জিনিস দেখুন",
+   "target": "تحقق من 4 أشياء قبل التقديم"
+  },
+  {
+   "source": "সময়",
+   "target": "الوقت"
+  },
+  {
+   "source": "আপনার school/অন্যান্য schedule-এর সাথে মিলছে কি?",
+   "target": "هل يناسب جدول مدرستك/جدولك الآخر؟"
+  },
+  {
+   "source": "যাতায়াত",
+   "target": "المواصلات"
+  },
+  {
+   "source": "শেষ train এবং commute time দেখে নিন।",
+   "target": "تحقق من آخر قطار ووقت التنقل."
+  },
+  {
+   "source": "কাজের জন্য দরকারি ভাষার level বুঝে আবেদন করুন।",
+   "target": "افهم مستوى اللغة المطلوب للوظيفة قبل التقديم."
+  },
+  {
+   "source": "আপনার residence status/permission অনুযায়ী কাজ করা যায় কি না নিশ্চিত করুন।",
+   "target": "تأكد من أنك مسموح لك بالعمل بموجب حالة إقامتك/إذنك."
+  },
+  {
+   "source": "আবেদন করার পর কী করবেন?",
+   "target": "ماذا تفعل بعد التقديم؟"
+  },
+  {
+   "source": "☎️ Employer ফোন করলে",
+   "target": "☎️ عندما يتصل صاحب العمل"
+  },
+  {
+   "source": "শান্তভাবে নিজের নাম বলুন এবং interview-এর date/time লিখে রাখুন।",
+   "target": "قل اسمك بهدوء ودوّن تاريخ/وقت المقابلة."
+  },
+  {
+   "source": "🎤 Interview প্রস্তুতি",
+   "target": "🎤 التحضير للمقابلة"
+  },
+  {
+   "source": "Common প্রশ্ন, shift answer ও phone script আগে practice করুন।",
+   "target": "تدرب على الأسئلة الشائعة وإجابات الورديات ونص مكالمة مسبقًا."
+  },
+  {
+   "source": "নিরাপদে ব্যবহার করুন",
+   "target": "استخدمه بأمان"
+  },
+  {
+   "source": "TownWork/Baitoru login password বা application-এর sensitive তথ্য Aponar Nihon-এ দেবেন না।",
+   "target": "لا تدخل كلمة مرور تسجيل الدخول إلى TownWork/Baitoru أو معلومات التقديم الحساسة في আপনার নিহোন."
+  },
+  {
+   "source": "Apply করার আগে browser-এর domain দেখে নিশ্চিত হন যে আপনি original TownWork/Baitoru page-এ আছেন।",
+   "target": "قبل التقديم، تحقق من نطاق المتصفح للتأكد من أنك على صفحة TownWork/Baitoru الأصلية."
+  },
+  {
+   "source": "নিজের residence status, school rules এবং work permission মেনে কাজ বেছে নিন।",
+   "target": "اختر عملًا يتوافق مع حالة إقامتك وقواعد المدرسة وإذن العمل."
+  },
+  {
+   "source": "Aponar Nihon হলো বাংলা guide ও official-source launcher; employer বা job platform নয়।",
+   "target": "আপনার নিহোন هو دليل بالبنغالية ومنصة إطلاق للمصادر الرسمية؛ ليس صاحب عمل أو منصة وظائف."
+  },
+  {
+   "source": "সহায়তা",
+   "target": "المساعدة"
+  },
+  {
+   "source": "© ২০২৬ আপনার নিহোন · Jobs in Japan",
+   "target": "© 2026 আপনার নিহোন · Jobs in Japan"
+  },
+  {
+   "source": "হোম",
+   "target": "الصفحة الرئيسية"
+  }
+ ]
+}

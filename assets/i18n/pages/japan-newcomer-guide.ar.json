@@ -1,0 +1,98 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "japan-newcomer-guide",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জাপান লাইফ গাইড | আপনার নিহোন",
+   "target": "دليل الحياة في اليابان | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "জাপান লাইফ গাইড",
+   "target": "دليل الحياة في اليابان"
+  },
+  {
+   "source": "সব গাইড",
+   "target": "كل الأدلة"
+  },
+  {
+   "source": "আগমনের পর",
+   "target": "بعد الوصول"
+  },
+  {
+   "source": "বাসা ও দৈনন্দিন জীবন",
+   "target": "السكن والحياة اليومية"
+  },
+  {
+   "source": "ট্রেন ও Platform",
+   "target": "القطارات والرصيف"
+  },
+  {
+   "source": "Google Maps ব্যবহার",
+   "target": "استخدام Google Maps"
+  },
+  {
+   "source": "পার্ট-টাইম চাকরি",
+   "target": "الوظائف بدوام جزئي"
+  },
+  {
+   "source": "জরুরি সহায়তা",
+   "target": "مساعدة الطوارئ"
+  },
+  {
+   "source": "জাপানে নতুন জীবন",
+   "target": "حياة جديدة في اليابان"
+  },
+  {
+   "source": "শুরু থেকে শেষ পর্যন্ত",
+   "target": "من البداية إلى النهاية"
+  },
+  {
+   "source": "একটি বড় page নয়—প্রতিটি বিষয় আলাদা, পরিষ্কার এবং বাস্তব কাজের ক্রমে সাজানো।",
+   "target": "ليست صفحة واحدة كبيرة — كل موضوع منفصل وواضح ومرتب بترتيب المهام الحقيقية."
+  },
+  {
+   "source": "৬টি পূর্ণ গাইড",
+   "target": "6 أدلة كاملة"
+  },
+  {
+   "source": "কোনটি শিখবেন?",
+   "target": "أيّها ستتعلم؟"
+  },
+  {
+   "source": "একটি card চাপলে সেই বিষয়ের সম্পূর্ণ গাইড খুলবে",
+   "target": "اضغط بطاقة لفتح الدليل الكامل لذلك الموضوع"
+  },
+  {
+   "source": "গ্যাস, বিদ্যুৎ, ময়লা, delivery",
+   "target": "الغاز والكهرباء والقمامة والتوصيل"
+  },
+  {
+   "source": "লাইন, direction, transfer, IC card",
+   "target": "الخط والاتجاه والتحويل وبطاقة IC"
+  },
+  {
+   "source": "সময়, platform, exit, fare",
+   "target": "الوقت والرصيف والمخرج والأجرة"
+  },
+  {
+   "source": "শেখার সেরা ক্রম:",
+   "target": "أفضل ترتيب للتعلم:"
+  },
+  {
+   "source": "আগমনের পর → বাসা → ট্রেন → Google Maps → চাকরি → জরুরি সহায়তা। প্রতিটি page-এর checklist আপনার browser-এ নিজে থেকে save থাকবে।",
+   "target": "بعد الوصول ← المنزل ← القطار ← Google Maps ← الوظيفة ← مساعدة الطوارئ. تُحفظ قائمة التحقق لكل صفحة بنفسها في متصفحك."
+  },
+  {
+   "source": "হোম",
+   "target": "الصفحة الرئيسية"
+  }
+ ]
+}

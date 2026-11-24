@@ -1,0 +1,274 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "Vocabulary-lesson16",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Vocabulary Lesson 16 | আপনার নিহোন",
+   "target": "N5 Vocabulary Lesson 16 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "N5 Lesson 16 · ক্রম ও পরিবহন",
+   "target": "N5 Lesson 16 · التسلسل والمواصلات"
+  },
+  {
+   "source": "৫০+ শব্দ: ট্রেন বদল, টাকা তোলা, গোসল — 〜て form দিয়ে ধারাবাহিক কাজ",
+   "target": "50+ كلمة: تبديل القطارات، سحب المال، الاستحمام — سلسلة من الأعمال بصيغة 〜て"
+  },
+  {
+   "source": "৫০টি শব্দ",
+   "target": "50 كلمة"
+  },
+  {
+   "source": "🔁 মূল প্যাটার্ন",
+   "target": "🔁 النمط الأساسي"
+  },
+  {
+   "source": "[verb-て]から、[next action] (করার পরে, ...)",
+   "target": "[verb-て]から、[next action] (بعد فعل، ...)"
+  },
+  {
+   "source": "চড়া (যানবাহনে)",
+   "target": "أن يركب (وسيلة نقل)"
+  },
+  {
+   "source": "ক্রিয়া",
+   "target": "فعل"
+  },
+  {
+   "source": "নামা",
+   "target": "أن ينزل"
+  },
+  {
+   "source": "বদলানো (ট্রান্সফার)",
+   "target": "أن يبدّل (تحويل)"
+  },
+  {
+   "source": "গোসল করা",
+   "target": "أن يستحم"
+  },
+  {
+   "source": "ঢোকানো",
+   "target": "أن يدخل / يدرج"
+  },
+  {
+   "source": "বের করা",
+   "target": "أن يخرج (شيئا)"
+  },
+  {
+   "source": "নামানো (money withdraw)",
+   "target": "أن يسحب (المال)"
+  },
+  {
+   "source": "ঢোকা",
+   "target": "أن يدخل"
+  },
+  {
+   "source": "বের হওয়া",
+   "target": "أن يخرج / يغادر"
+  },
+  {
+   "source": "চাপ দেওয়া",
+   "target": "دفع"
+  },
+  {
+   "source": "আলাদা হওয়া",
+   "target": "أن ينفصل"
+  },
+  {
+   "source": "স্পর্শ করা",
+   "target": "أن يلمس"
+  },
+  {
+   "source": "ট্রেন",
+   "target": "قطار"
+  },
+  {
+   "source": "বাহন",
+   "target": "وسيلة نقل"
+  },
+  {
+   "source": "বাস",
+   "target": "حافلة"
+  },
+  {
+   "source": "ট্যাক্সি",
+   "target": "سيارة أجرة"
+  },
+  {
+   "source": "বিমান",
+   "target": "طائرة"
+  },
+  {
+   "source": "টাকা",
+   "target": "مال"
+  },
+  {
+   "source": "বস্তু",
+   "target": "شيء / غرض"
+  },
+  {
+   "source": "টিকিট",
+   "target": "تذكرة"
+  },
+  {
+   "source": "চাবি",
+   "target": "مفتاح"
+  },
+  {
+   "source": "ব্যাগ",
+   "target": "حقيبة"
+  },
+  {
+   "source": "ফোন",
+   "target": "هاتف"
+  },
+  {
+   "source": "লিফট",
+   "target": "مصعد"
+  },
+  {
+   "source": "এসকেলেটর",
+   "target": "سلم متحرك"
+  },
+  {
+   "source": "দরজা",
+   "target": "باب"
+  },
+  {
+   "source": "স্টেশন",
+   "target": "محطة"
+  },
+  {
+   "source": "স্থান",
+   "target": "مكان"
+  },
+  {
+   "source": "ব্যাংক",
+   "target": "بنك"
+  },
+  {
+   "source": "কনভিনিয়েন্স স্টোর",
+   "target": "متجر صغير (كونبيني)"
+  },
+  {
+   "source": "সুপারমার্কেট",
+   "target": "سوبرماركت"
+  },
+  {
+   "source": "মানুষ",
+   "target": "الناس"
+  },
+  {
+   "source": "ব্যক্তি",
+   "target": "شخص"
+  },
+  {
+   "source": "বন্ধু",
+   "target": "صديق"
+  },
+  {
+   "source": "তারপর",
+   "target": "بعد ذلك"
+  },
+  {
+   "source": "এর পরে",
+   "target": "بعد هذا"
+  },
+  {
+   "source": "করে (sequence)",
+   "target": "ثم (تسلسل)"
+  },
+  {
+   "source": "করার পরে",
+   "target": "بعد الفعل"
+  },
+  {
+   "source": "করা যেতে পারে",
+   "target": "يجوز أن يفعل"
+  },
+  {
+   "source": "করা যাবে না",
+   "target": "لا يجوز أن يفعل"
+  },
+  {
+   "source": "কখন",
+   "target": "متى"
+  },
+  {
+   "source": "প্রশ্ন",
+   "target": "أسئلة"
+  },
+  {
+   "source": "কোথায়",
+   "target": "أين"
+  },
+  {
+   "source": "কী",
+   "target": "ماذا"
+  },
+  {
+   "source": "মাফ করবেন",
+   "target": "عفوا"
+  },
+  {
+   "source": "নিন",
+   "target": "تفضّل / خذه من فضلك"
+  },
+  {
+   "source": "ধন্যবাদ",
+   "target": "شكرا لك"
+  },
+  {
+   "source": "ভালো",
+   "target": "جيد"
+  },
+  {
+   "source": "একটু",
+   "target": "قليلا"
+  },
+  {
+   "source": "এখানে",
+   "target": "هنا"
+  },
+  {
+   "source": "সেখানে",
+   "target": "هناك"
+  },
+  {
+   "source": "ওখানে",
+   "target": "هناك (بعيدا)"
+  },
+  {
+   "source": "এই দিক",
+   "target": "من هذا الاتجاه"
+  },
+  {
+   "source": "ওই দিক",
+   "target": "ذلك الاتجاه (قرب المستمع)"
+  },
+  {
+   "source": "সেই দিক",
+   "target": "ذلك الاتجاه (بعيد)"
+  },
+  {
+   "source": "প্র্যাকটিস বাক্য",
+   "target": "جمل تدريبية"
+  },
+  {
+   "source": "পূর্ববর্তী লেসন ১৫",
+   "target": "السابق: الدرس 15"
+  },
+  {
+   "source": "পরবর্তী লেসন ১৭",
+   "target": "التالي: الدرس 17"
+  }
+ ]
+}
