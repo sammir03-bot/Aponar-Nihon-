@@ -29,7 +29,7 @@ body.aponar-language-open {
   background: transparent;
   pointer-events: none;
   color: var(--aponar-i18n-ink);
-  font-family: "Noto Sans Bengali", "Noto Sans JP", "Noto Sans Sinhala", "Noto Sans Myanmar", Inter, system-ui, sans-serif;
+  font-family: "Noto Sans Bengali", "Noto Sans JP", "Noto Sans Sinhala", "Noto Sans Myanmar", "Noto Sans Arabic", "Noto Sans Malayalam", Inter, system-ui, sans-serif;
 }
 
 .aponar-i18n-status-card {
@@ -108,7 +108,7 @@ html[lang] .app-tool > b{white-space:normal;overflow:visible;text-overflow:clip;
   display: grid;
   place-items: center;
   padding: 20px;
-  font-family: "Noto Sans Bengali", "Noto Sans JP", Inter, system-ui, sans-serif;
+  font-family: "Noto Sans Bengali", "Noto Sans JP", "Noto Sans Arabic", "Noto Sans Malayalam", Inter, system-ui, sans-serif;
 }
 
 .aponar-i18n-dialog-backdrop {
@@ -194,7 +194,7 @@ html[lang] .app-tool > b{white-space:normal;overflow:visible;text-overflow:clip;
   align-items: center;
   justify-content: center;
   gap: 7px;
-  font: 800 12px/1.1 "Noto Sans Bengali", "Noto Sans Sinhala", "Noto Sans Myanmar", Inter, system-ui, sans-serif;
+  font: 800 12px/1.1 "Noto Sans Bengali", "Noto Sans Sinhala", "Noto Sans Myanmar", "Noto Sans Arabic", "Noto Sans Malayalam", Inter, system-ui, sans-serif;
   white-space: nowrap;
   cursor: pointer;
   transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
@@ -323,7 +323,7 @@ html[dir="rtl"] .aponar-language-floating {
   opacity: 0;
   transform: translateY(14px) scale(0.98);
   transition: opacity 180ms ease, transform 180ms ease;
-  font-family: "Noto Sans Bengali", "Noto Sans Sinhala", "Noto Sans Myanmar", Inter, system-ui, sans-serif;
+  font-family: "Noto Sans Bengali", "Noto Sans Sinhala", "Noto Sans Myanmar", "Noto Sans Arabic", "Noto Sans Malayalam", Inter, system-ui, sans-serif;
 }
 
 .aponar-language-layer.open .aponar-language-backdrop,
@@ -461,7 +461,7 @@ html[dir="rtl"] .aponar-language-floating {
   border-radius: 15px;
   background: linear-gradient(135deg, #176fc1, #2d5ad1);
   color: #fff;
-  font: 900 13px/1 "Noto Sans Bengali", "Noto Sans Sinhala", Inter, system-ui, sans-serif;
+  font: 900 13px/1 "Noto Sans Bengali", "Noto Sans Sinhala", "Noto Sans Arabic", "Noto Sans Malayalam", Inter, system-ui, sans-serif;
   box-shadow: 0 10px 22px rgba(31, 91, 185, 0.22);
   cursor: pointer;
 }
@@ -602,6 +602,12 @@ html[data-language-preset="si"] body.app-page[data-page="home"] .app-quick-item:
 html[data-language-preset="si"] body.app-page[data-page="home"] .app-card-arrow::before { content: "සියල්ල බලන්න"; }
 html[data-language-preset="fil"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "Mahahalagang parirala"; }
 html[data-language-preset="fil"] body.app-page[data-page="home"] .app-card-arrow::before { content: "Tingnan lahat"; }
+html[data-language-preset="id"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "Frasa berguna"; }
+html[data-language-preset="id"] body.app-page[data-page="home"] .app-card-arrow::before { content: "Lihat semua"; }
+html[data-language-preset="ar"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "عبارات مفيدة"; }
+html[data-language-preset="ar"] body.app-page[data-page="home"] .app-card-arrow::before { content: "عرض الكل"; }
+html[data-language-preset="ml"] body.app-page[data-page="home"] .app-quick-item:nth-child(4) span::after { content: "ഉപയോഗപ്രദമായ വാക്യങ്ങൾ"; }
+html[data-language-preset="ml"] body.app-page[data-page="home"] .app-card-arrow::before { content: "എല്ലാം കാണുക"; }
 
 /* ===== UI FIX 2026-11-23 (UI audit fixes #3, #4, #7, #8, #11) ===== */
 
@@ -618,6 +624,9 @@ html[data-language-preset="my"] .news-list-copy::after { content: "အသေး�
 html[data-language-preset="zh"] .news-list-copy::after { content: "阅读详情"; }
 html[data-language-preset="si"] .news-list-copy::after { content: "විස්තර කියවන්න"; }
 html[data-language-preset="fil"] .news-list-copy::after { content: "Basahin ang detalye"; }
+html[data-language-preset="id"] .news-list-copy::after { content: "Baca selengkapnya"; }
+html[data-language-preset="ar"] .news-list-copy::after { content: "اقرأ المزيد"; }
+html[data-language-preset="ml"] .news-list-copy::after { content: "കൂടുതൽ വായിക്കുക"; }
 
 /* #4: Urdu (Nastaliq script) needs much taller line boxes than the Latin
    metrics the hero/dock styles were tuned for. Scoped to ur only; every
@@ -630,6 +639,16 @@ html[lang="ur"] .an-bottom-nav > a > span:not(.app-nav-icon) { line-height: 1.9;
 /* The mock center's own static dock (mock-test.html .bottom) puts the label
    as a bare text node under the icon; give it the same Nastaliq room. */
 html[lang="ur"] nav.bottom > a { line-height: 2; }
+
+/* Run 38 (2026-11-24): Arabic (Naskh script) gets the same treatment as
+   Urdu above, tuned lower — Naskh ascenders/diacritics need more room
+   than Latin metrics but less than Nastaliq's ~2x. Scoped to ar only. */
+html[lang="ar"] .lh-hero h1 { line-height: 1.85; }
+html[lang="ar"] .lh-progress-card h2 { line-height: 1.8; }
+html[lang="ar"] .study-hero h1 { line-height: 1.85; }
+html[lang="ar"] .news-hero h1 { line-height: 1.85; }
+html[lang="ar"] .an-bottom-nav > a > span:not(.app-nav-icon) { line-height: 1.75; padding-bottom: .3em; }
+html[lang="ar"] nav.bottom > a { line-height: 1.85; }
 
 /* #7: lesson data tables — visible sideways-scroll affordance (edge fade +
    scroll shadows, the same pattern as the Tutor table fix). Presentation
@@ -680,38 +699,59 @@ html[lang="ur"] nav.bottom > a { line-height: 2; }
    and mirror-flips the document layout (title/photo swap), in print too.
    Isolate the paper area's direction so the documents render in the
    standard JIS layout; the form chrome around it stays RTL. Scoped to ur
-   (the only RTL language); bn/en already compute direction: ltr here, so
+   (at the time the only RTL language; Run 38 extends every rule
+   below to ar, the second RTL language, with identical treatment); bn/en already compute direction: ltr here, so
    their rendering is unchanged. Applies to print as well (not media-
    scoped): the @media print rules only add display/transform handling,
    so the printed/PDF document keeps the standard layout. */
-html[lang="ur"] #paperArea { direction: ltr; }
+html[lang="ur"] #paperArea ,
+html[lang="ar"] #paperArea { direction: ltr; }
 
 /* #3: extend the UI FIX #4 Nastaliq line-height treatment to the CV
    Builder form panel — PR #136 covered hubs/news/dock but not this form,
    whose headings, step-help, notes and labels still struck through each
    other in Urdu (measured .note line-height 23.4px @ 13px, line boxes
    overlapping up to ~20px). Same ~2x line-height pattern as UI FIX #4. */
-html[lang="ur"] .hero-card p { line-height: 2.05; }
-html[lang="ur"] .form-panel .panel-head h2 { line-height: 2; }
-html[lang="ur"] .form-panel .panel-head small { line-height: 1.95; }
+html[lang="ur"] .hero-card p ,
+html[lang="ar"] .hero-card p { line-height: 2.05; }
+html[lang="ur"] .form-panel .panel-head h2 ,
+html[lang="ar"] .form-panel .panel-head h2 { line-height: 2; }
+html[lang="ur"] .form-panel .panel-head small ,
+html[lang="ar"] .form-panel .panel-head small { line-height: 1.95; }
 html[lang="ur"] .form-panel .note,
+html[lang="ar"] .form-panel .note,
 html[lang="ur"] .form-panel .ui-step-help,
+html[lang="ar"] .form-panel .ui-step-help,
 html[lang="ur"] .form-panel .cv-v6-intro,
+html[lang="ar"] .form-panel .cv-v6-intro,
 html[lang="ur"] .form-panel .cv-history-guide,
+html[lang="ar"] .form-panel .cv-history-guide,
 html[lang="ur"] .form-panel .cv-message,
+html[lang="ar"] .form-panel .cv-message,
 html[lang="ur"] .form-panel .cv-validation p,
-html[lang="ur"] .form-panel .jis-extra-note { line-height: 2; }
+html[lang="ar"] .form-panel .cv-validation p,
+html[lang="ur"] .form-panel .jis-extra-note ,
+html[lang="ar"] .form-panel .jis-extra-note { line-height: 2; }
 html[lang="ur"] .form-panel .div-title,
-html[lang="ur"] .form-panel .cv-optional-fields > summary { line-height: 2; }
+html[lang="ar"] .form-panel .div-title,
+html[lang="ur"] .form-panel .cv-optional-fields > summary ,
+html[lang="ar"] .form-panel .cv-optional-fields > summary { line-height: 2; }
 html[lang="ur"] .form-panel .field .bn,
+html[lang="ar"] .form-panel .field .bn,
 html[lang="ur"] .form-panel .hint,
+html[lang="ar"] .form-panel .hint,
 html[lang="ur"] .form-panel .template small,
-html[lang="ur"] .form-panel .cv-output small { line-height: 1.95; }
-html[lang="ur"] .preview-panel .cv-preview-format-note { line-height: 1.95; }
+html[lang="ar"] .form-panel .template small,
+html[lang="ur"] .form-panel .cv-output small ,
+html[lang="ar"] .form-panel .cv-output small { line-height: 1.95; }
+html[lang="ur"] .preview-panel .cv-preview-format-note ,
+html[lang="ar"] .preview-panel .cv-preview-format-note { line-height: 1.95; }
 
 /* #4: time-range values inside RTL inputs render in reversed visual
    order (typing 9:00〜12:30 displayed as 12:30〜9:00). The part-time
    fields hold Japanese/time text, so force LTR entry order on them.
    Display only — the stored values are unchanged. */
 html[lang="ur"] #schoolTime,
-html[lang="ur"] #availability { direction: ltr; }
+html[lang="ar"] #schoolTime,
+html[lang="ur"] #availability ,
+html[lang="ar"] #availability { direction: ltr; }

@@ -10,8 +10,8 @@ from urllib.parse import quote, unquote, urlsplit, urlunsplit
 
 PRODUCTION_ORIGIN = "https://app.aponar-nihon.workers.dev"
 DEFAULT_LANGUAGE = "bn"
-SUPPORTED_LANGUAGES = ("ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil")
-RTL_LANGUAGES = {"ur"}
+SUPPORTED_LANGUAGES = ("ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil", "id", "ar", "ml")
+RTL_LANGUAGES = {"ur", "ar"}
 BRAND_RE = re.compile(r"আপনার নিহোন|Aponar Nihon|あなたの日本(?!語)", re.IGNORECASE)
 BENGALI_RE = re.compile(r"[\u0980-\u09FF]")
 

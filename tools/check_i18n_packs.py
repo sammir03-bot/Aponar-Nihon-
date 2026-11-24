@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PACK_DIR = ROOT / "assets" / "i18n" / "pages"
-SUPPORTED = {"ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil"}
+SUPPORTED = {"ja", "en", "vi", "ne", "hi", "ur", "my", "zh", "si", "fil", "id", "ar", "ml"}
 LANGUAGE_PATTERN = "|".join(sorted((re.escape(code) for code in SUPPORTED), key=len, reverse=True))
 PACK_NAME_RE = re.compile(rf"^(?P<page>.+)\.(?P<language>{LANGUAGE_PATTERN})\.json$")
 
