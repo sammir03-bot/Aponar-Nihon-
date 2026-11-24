@@ -9,9 +9,11 @@
    generic branch answered with ignoreSearch matching).
    RUN 38 (2026-11-24): cache names bumped v38 -> v39 for the three new
    languages (id, ar, ml) — same purge mechanism, so phones pick up the
-   new i18n runtime and language assets on their next visit. */
-const STATIC_CACHE = "aponar-nihon-static-v39";
-const DYNAMIC_CACHE = "aponar-nihon-dynamic-v39";
+   new i18n runtime and language assets on their next visit.
+   RUN 39 (2026-11-24): cache names bumped v39 -> v40 — Phase 1 DYN chrome
+   values for id/ar/ml in i18n.js plus the new app/tutor/cv sidecars. */
+const STATIC_CACHE = "aponar-nihon-static-v40";
+const DYNAMIC_CACHE = "aponar-nihon-dynamic-v40";
 
 const STATIC_ASSETS = [
   "/",
