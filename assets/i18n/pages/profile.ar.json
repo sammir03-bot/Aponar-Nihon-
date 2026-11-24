@@ -1,0 +1,210 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "profile",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "জাপানি শেখার পূর্ণাঙ্গ প্ল্যাটফর্ম",
+   "target": "منصة كاملة لتعلم اليابانية"
+  },
+  {
+   "source": "হোম",
+   "target": "الصفحة الرئيسية"
+  },
+  {
+   "source": "অ্যাডমিন",
+   "target": "المسؤول"
+  },
+  {
+   "source": "লগআউট",
+   "target": "تسجيل الخروج"
+  },
+  {
+   "source": "ইমেইল ভেরিফাই হয়নি",
+   "target": "البريد الإلكتروني غير موثق"
+  },
+  {
+   "source": "প্রয়োজনীয় তথ্য পূরণ করলে 100% হবে",
+   "target": "ملء المعلومات المطلوبة سيصل إلى 100%"
+  },
+  {
+   "source": "নাম",
+   "target": "الاسم"
+  },
+  {
+   "source": "স্কুল",
+   "target": "مدرسة"
+  },
+  {
+   "source": "লোকেশন",
+   "target": "الموقع"
+  },
+  {
+   "source": "লক্ষ্য",
+   "target": "الهدف"
+  },
+  {
+   "source": "জন্মতারিখ",
+   "target": "تاريخ الميلاد"
+  },
+  {
+   "source": "প্রোফাইল আপডেট",
+   "target": "تحديث الملف"
+  },
+  {
+   "source": "তথ্যগুলো ঠিক করে নিরাপদভাবে Save করুন",
+   "target": "صحح المعلومات واحفظ بأمان"
+  },
+  {
+   "source": "ব্যক্তিগত তথ্য",
+   "target": "معلومات شخصية"
+  },
+  {
+   "source": "আপনার মূল পরিচিতি",
+   "target": "هويتك الأساسية"
+  },
+  {
+   "source": "পুরো নাম",
+   "target": "الاسم الكامل"
+  },
+  {
+   "source": "লিঙ্গ",
+   "target": "الجنس"
+  },
+  {
+   "source": "নির্বাচন করুন",
+   "target": "اختر"
+  },
+  {
+   "source": "পুরুষ",
+   "target": "ذكر"
+  },
+  {
+   "source": "নারী",
+   "target": "أنثى"
+  },
+  {
+   "source": "বলতে চাই না",
+   "target": "أفضل عدم القول"
+  },
+  {
+   "source": "জাতীয়তা",
+   "target": "الجنسية"
+  },
+  {
+   "source": "পড়াশোনা ও JLPT",
+   "target": "التعليم وJLPT"
+  },
+  {
+   "source": "আপনার স্কুল ও শেখার লক্ষ্য",
+   "target": "مدرستك وأهداف تعلمك"
+  },
+  {
+   "source": "স্কুল / প্রতিষ্ঠান",
+   "target": "المدرسة / المؤسسة"
+  },
+  {
+   "source": "দৈনিক পড়ার সময়",
+   "target": "وقت الدراسة اليومي"
+  },
+  {
+   "source": "15 মিনিট",
+   "target": "15 دقيقة"
+  },
+  {
+   "source": "30 মিনিট",
+   "target": "30 دقيقة"
+  },
+  {
+   "source": "45 মিনিট",
+   "target": "45 دقيقة"
+  },
+  {
+   "source": "1 ঘণ্টা",
+   "target": "1 ساعة"
+  },
+  {
+   "source": "1.5 ঘণ্টা",
+   "target": "1.5 ساعة"
+  },
+  {
+   "source": "2 ঘণ্টা",
+   "target": "2 ساعة"
+  },
+  {
+   "source": "যোগাযোগ ও অবস্থান",
+   "target": "الاتصال والموقع"
+  },
+  {
+   "source": "বর্তমান যোগাযোগের তথ্য",
+   "target": "معلومات الاتصال الحالية"
+  },
+  {
+   "source": "বর্তমান City",
+   "target": "المدينة الحالية"
+  },
+  {
+   "source": "ফোন নম্বর",
+   "target": "الهاتف"
+  },
+  {
+   "source": "ঐচ্ছিক",
+   "target": "اختياري"
+  },
+  {
+   "source": "নিজের সম্পর্কে",
+   "target": "عن نفسك"
+  },
+  {
+   "source": "সংক্ষিপ্ত learning profile",
+   "target": "ملف تعلم قصير"
+  },
+  {
+   "source": "বাতিল",
+   "target": "إلغاء"
+  },
+  {
+   "source": "নিজের ছবি যোগ বা পরিবর্তন করুন",
+   "target": "أضف أو غير صورتك"
+  },
+  {
+   "source": "ছবি বেছে নিন",
+   "target": "اختر صورة"
+  },
+  {
+   "source": "Account photo ব্যবহার",
+   "target": "استخدم صورة الحساب"
+  },
+  {
+   "source": "JPG, PNG বা WebP · সর্বোচ্চ 2 MB",
+   "target": "JPG, PNG أو WebP · بحد أقصى 2 MB"
+  },
+  {
+   "source": "ইমেইল",
+   "target": "بريد إلكتروني"
+  },
+  {
+   "source": "বাংলা",
+   "target": "العربية"
+  },
+  {
+   "source": "ভাষা Home থেকে পরিবর্তন করা যায়",
+   "target": "يمكن تغيير اللغة من Home"
+  },
+  {
+   "source": "Profile load হচ্ছে…",
+   "target": "الملف يُحمل…"
+  },
+  {
+   "source": "অ্যাকাউন্ট মুছলে আপনার profile ও learning data স্থায়ীভাবে মুছে যেতে পারে।",
+   "target": "حذف الحساب قد يحذف ملفك وبيانات تعلمك نهائيا."
+  },
+  {
+   "source": "Delete options খুলুন",
+   "target": "افتح خيارات الحذف"
+  }
+ ]
+}

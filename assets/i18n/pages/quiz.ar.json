@@ -1,0 +1,238 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "quiz",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "JLPT কুইজ ও Practice Arena | আপনার নিহোন",
+   "target": "JLPT Quiz وPractice Arena | আপনার নিহোন"
+  },
+  {
+   "source": "JLPT কুইজ Arena",
+   "target": "JLPT Quiz Arena"
+  },
+  {
+   "source": "হোম",
+   "target": "الصفحة الرئيسية"
+  },
+  {
+   "source": "কুইজ",
+   "target": "اختبار"
+  },
+  {
+   "source": "ভুলকে score নয়,",
+   "target": "لا تعامل خطأ كنتيجة،"
+  },
+  {
+   "source": "পরের lesson বানান",
+   "target": "اجعله درسك التالي"
+  },
+  {
+   "source": "N5, N4 ও N3—level বেছে এক tap-এ quiz শুরু করুন। প্রতিটি উত্তরের সঙ্গে বাংলা explanation, part-by-part auto-save, daily challenge, AI quiz coach এবং ৩০টি full mock exam।",
+   "target": "N5 وN4 وN3 — اختر المستوى وابدأ الاختبار بضغطة واحدة. شروح بنغالية لكل إجابة، حفظ تلقائي جزءا بجزء، تحد يومي، مدرب اختبار AI و30 امتحانا تجريبيا كاملا."
+  },
+  {
+   "source": "আজকের Challenge",
+   "target": "تحدي اليوم"
+  },
+  {
+   "source": "আপনার Practice Record",
+   "target": "سجل تدريبك"
+  },
+  {
+   "source": "Saved quiz ও mock result দেখা হচ্ছে…",
+   "target": "عرض نتائج الاختبارات والامتحانات التجريبية المحفوظة…"
+  },
+  {
+   "source": "৩টি Level",
+   "target": "3 مستويات"
+  },
+  {
+   "source": "৪ Category",
+   "target": "4 فئات"
+  },
+  {
+   "source": "১২০ Quiz Set",
+   "target": "120 مجموعة اختبار"
+  },
+  {
+   "source": "৩০ Full Mock",
+   "target": "30 امتحانا تجريبيا كاملا"
+  },
+  {
+   "source": "আপনার level-এ সরাসরি শুরু করুন",
+   "target": "ابدأ مباشرة في مستواك"
+  },
+  {
+   "source": "Level card vocabulary দিয়ে শুরু করবে; quiz-এর ভেতরেই category ও Part 1–10 বদলাতে পারবেন।",
+   "target": "بطاقة المستوى ستبدأ بالمفردات؛ يمكنك تغيير الفئة وPart 1–10 داخل الاختبار."
+  },
+  {
+   "source": "Basic Vocabulary, ১২০ Kanji, particle, conjugation ও ছোট Reading passage।",
+   "target": "مفردات أساسية، 120 Kanji، أدوات، تصريف ومقاطع Reading قصيرة."
+  },
+  {
+   "source": "বাংলা Explanation",
+   "target": "شرح بنغالي"
+  },
+  {
+   "source": "N5 Quiz শুরু করুন",
+   "target": "ابدأ N5 Quiz"
+  },
+  {
+   "source": "Lesson 26–50 vocabulary, contextual Kanji, Grammar usage ও longer Reading।",
+   "target": "مفردات Lesson 26–50، Kanji سياقي، استخدام Grammar وReading أطول."
+  },
+  {
+   "source": "N4 Quiz শুরু করুন",
+   "target": "ابدأ N4 Quiz"
+  },
+  {
+   "source": "Vocabulary, Kanji, Grammar ও Reading—প্রতিটি উত্তরের বাংলা অর্থ ও কারণ।",
+   "target": "مفردات، Kanji، Grammar وReading — معان بنغالية وأسباب لكل إجابة."
+  },
+  {
+   "source": "N3 Quiz শুরু করুন",
+   "target": "ابدأ N3 Quiz"
+  },
+  {
+   "source": "আজ কোন skill যাচাই করবেন?",
+   "target": "أي مهارة ستختبر اليوم؟"
+  },
+  {
+   "source": "অর্থ + context",
+   "target": "معنى + سياق"
+  },
+  {
+   "source": "সঠিক pattern",
+   "target": "نمط صحيح"
+  },
+  {
+   "source": "Practice থেকে full exam",
+   "target": "من التدريب إلى الامتحان الكامل"
+  },
+  {
+   "source": "দ্রুত quiz দিয়ে দুর্বলতা বের করুন, AI দিয়ে কারণ বুঝুন, তারপর timer-সহ full mock দিন।",
+   "target": "حدد نقاط الضعف باختبارات سريعة، افهم الأسباب بـ AI، ثم خذ امتحانا تجريبيا كاملا بمؤقت."
+  },
+  {
+   "source": "শুরু হয়নি",
+   "target": "لم يبدأ بعد"
+  },
+  {
+   "source": "N5, N4, N3—প্রতি level-এ ১০টি exam, real timing, Listening, resume ও ১৮০ নম্বরের marksheet।",
+   "target": "N5، N4، N3 — 10 امتحانات لكل مستوى، توقيت حقيقي، Listening، استئناف وكشوف درجات من 180."
+  },
+  {
+   "source": "Mock Center খুলুন",
+   "target": "افتح Mock Center"
+  },
+  {
+   "source": "একটানা timed question flow—notes ছাড়া নিজের concentration ও speed যাচাই করুন।",
+   "target": "تدفق أسئلة موقوت مستمر — اختبر تركيزك وسرعتك دون ملاحظات."
+  },
+  {
+   "source": "Exam Mode খুলুন",
+   "target": "افتح Exam Mode"
+  },
+  {
+   "source": "একবারে একটি প্রশ্ন, আপনার attempt-এর পর marking, ছোট বাংলা explanation এবং পরের প্রশ্ন।",
+   "target": "سؤال واحد في المرة، تصحيح بعد محاولتك، شرح بنغالي قصير ثم السؤال التالي."
+  },
+  {
+   "source": "AI Coach খুলুন",
+   "target": "افتح AI Coach"
+  },
+  {
+   "source": "একটি ভুলকে চার ধাপে ঠিক করুন",
+   "target": "صحح خطأ واحدا في أربع خطوات"
+  },
+  {
+   "source": "প্রথমবার notes ছাড়া উত্তর দিন—বর্তমান অবস্থাটা সত্যি করে জানুন।",
+   "target": "أجب دون ملاحظات لأول مرة — اعرف وضعك الحالي الحقيقي."
+  },
+  {
+   "source": "Reason পড়ুন",
+   "target": "اقرأ السبب"
+  },
+  {
+   "source": "সঠিক option নয়, কেন অন্যগুলো ভুল সেটিও এক লাইনে বলুন।",
+   "target": "لا تعط الخيار الصحيح فقط، اشرح في سطر واحد لماذا الأخريات خاطئة أيضا."
+  },
+  {
+   "source": "Lesson-এ ফিরুন",
+   "target": "عد إلى الدرس"
+  },
+  {
+   "source": "যে category দুর্বল, তার N5/N4/N3 full lesson page-এ revise করুন।",
+   "target": "راجع الفئة الضعيفة في صفحة درس N5/N4/N3 الكاملة."
+  },
+  {
+   "source": "৭ দিন পরে retest",
+   "target": "أعد الاختبار بعد 7 أيام"
+  },
+  {
+   "source": "নতুন part বা full mock দিয়ে একই skill আবার যাচাই করুন।",
+   "target": "اختبر المهارة نفسها مرة أخرى بجزء جديد أو امتحان تجريبي كامل."
+  },
+  {
+   "source": "আজকের Test Routine",
+   "target": "روتين اختبار اليوم"
+  },
+  {
+   "source": "ছোট checklist—exam habit ধীরে ধীরে শক্ত হবে।",
+   "target": "قائمة تحقق قصيرة — عادة الامتحان ستقوى تدريجيا."
+  },
+  {
+   "source": "0/6 শেষ",
+   "target": "0/6 منته"
+  },
+  {
+   "source": "৮ প্রশ্নের warm-up",
+   "target": "إحماء من 8 أسئلة"
+  },
+  {
+   "source": "Notes ছাড়া attempt",
+   "target": "محاولة دون ملاحظات"
+  },
+  {
+   "source": "সব explanation পড়া",
+   "target": "قراءة كل الشروح"
+  },
+  {
+   "source": "৩টি ভুল লিখে রাখা",
+   "target": "كتابة 3 أخطاء"
+  },
+  {
+   "source": "দুর্বল lesson revise",
+   "target": "مراجعة الدروس الضعيفة"
+  },
+  {
+   "source": "Retest date ঠিক করা",
+   "target": "تحديد تاريخ إعادة الاختبار"
+  },
+  {
+   "source": "এক প্রশ্ন করে AI Quiz",
+   "target": "اختبار AI بسؤال واحد في المرة"
+  },
+  {
+   "source": "Answer আগে দেখাবে না। আপনি চেষ্টা করলে mark, explain ও next question দেবে।",
+   "target": "لن يظهر الإجابة أولا. إذا حاولت، سيصحح ويشرح ويعطي السؤال التالي."
+  },
+  {
+   "source": "AI Quiz শুরু করুন",
+   "target": "ابدأ AI Quiz"
+  },
+  {
+   "source": "আপনার নিহোন · Practice করুন, বুঝুন, আবার চেষ্টা করুন",
+   "target": "আপনার নিহোন · تدرب، افهم، حاول مرة أخرى"
+  },
+  {
+   "source": "✓ Practice plan সংরক্ষণ হয়েছে",
+   "target": "✓ تم حفظ خطة التدريب"
+  }
+ ]
+}

@@ -1,0 +1,694 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "n4-vocab-lesson-40-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N4 Vocabulary Lesson 40 | আপনার নিহোন",
+   "target": "N4 Vocabulary Lesson 40 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "সব লেসন",
+   "target": "جميع الدروس"
+  },
+  {
+   "source": "জাপানিজ শব্দভাণ্ডার",
+   "target": "المفردات اليابانية"
+  },
+  {
+   "source": "প্রথমবার পড়া শিক্ষার্থীর জন্য—জাপানিজ, ふりがな, বাংলা উচ্চারণ ও সহজ বাংলা অর্থ একই কার্ডে। সার্চ, অডিও, শেখা মার্ক ও কুইজও আছে।",
+   "target": "للمتعلمين الذين يقرؤون لأول مرة — اليابانية، وふりがな، والنطق بالبنغالية، ومعانٍ بنغالية بسيطة على البطاقة نفسها. وهناك أيضا بحث، وصوت، وعلامة تعلّم، واختبار."
+  },
+  {
+   "source": "শব্দ শেখা শুরু",
+   "target": "ابدأ تعلّم الكلمات"
+  },
+  {
+   "source": "কুইজ দিন",
+   "target": "خض الاختبار"
+  },
+  {
+   "source": "66টি শব্দ",
+   "target": "66 كلمة"
+  },
+  {
+   "source": "১ম সংস্করণ অনুযায়ী সাজানো",
+   "target": "مرتّبة وفقا للطبعة الأولى"
+  },
+  {
+   "source": "জাপানিজ অডিও",
+   "target": "الصوت الياباني"
+  },
+  {
+   "source": "ডিভাইসের Japanese voice ব্যবহার করে",
+   "target": "يستخدم صوت الجهاز الياباني"
+  },
+  {
+   "source": "০ / 66 শেখা",
+   "target": "0 / 66 تم تعلُّمها"
+  },
+  {
+   "source": "এই browser-এ progress সংরক্ষিত থাকবে",
+   "target": "سيُحفظ تقدمك في هذا المتصفح"
+  },
+  {
+   "source": "সব",
+   "target": "الكل"
+  },
+  {
+   "source": "শেখা হয়েছে",
+   "target": "تم تعلّمها"
+  },
+  {
+   "source": "বাকি",
+   "target": "المتبقي"
+  },
+  {
+   "source": "66টি দেখানো হচ্ছে",
+   "target": "يُعرض 66"
+  },
+  {
+   "source": "Lesson 40-এর শব্দ",
+   "target": "كلمات الدرس 40"
+  },
+  {
+   "source": "「—」 চিহ্ন মানে আগের স্বরটি একটু লম্বা করে পড়বেন।",
+   "target": "علامة «—» تعني أنك تقرأ حرف العلة السابق أطول قليلا."
+  },
+  {
+   "source": "↻ একটি random শব্দ",
+   "target": "↻ كلمة عشوائية"
+  },
+  {
+   "source": "১ম সংস্করণ",
+   "target": "الطبعة الأولى"
+  },
+  {
+   "source": "উচ্চারণ",
+   "target": "النطق"
+  },
+  {
+   "source": "কাজোএমাসু",
+   "target": "kazoemasu"
+  },
+  {
+   "source": "গণনা করা",
+   "target": "أن يعدّ"
+  },
+  {
+   "source": "🔊 শুনুন",
+   "target": "🔊 استمع"
+  },
+  {
+   "source": "⧉ কপি",
+   "target": "⧉ نسخ"
+  },
+  {
+   "source": "○ শেখা বাকি",
+   "target": "○ لم يتم تعلّمها بعد"
+  },
+  {
+   "source": "হাকারিমাসু",
+   "target": "hakarimasu"
+  },
+  {
+   "source": "মাপা; ওজন করা",
+   "target": "أن يقيس، أن يزن"
+  },
+  {
+   "source": "তাশিকামেমাসু",
+   "target": "tashikamemasu"
+  },
+  {
+   "source": "যাচাই করা; নিশ্চিত হওয়া",
+   "target": "أن يتحقق، أن يتأكد"
+  },
+  {
+   "source": "আইমাসু",
+   "target": "aimasu"
+  },
+  {
+   "source": "[মাপ/সাইজ] ঠিক হওয়া",
+   "target": "[المقاس] أن يناسب تمامًا"
+  },
+  {
+   "source": "শুপ্পাৎসুশিমাসু",
+   "target": "shuppatsushimasu"
+  },
+  {
+   "source": "রওনা হওয়া; প্রস্থান করা",
+   "target": "أن يغادر، أن ينطلق"
+  },
+  {
+   "source": "তো—চাকুশিমাসু",
+   "target": "touchakushimasu"
+  },
+  {
+   "source": "পৌঁছানো",
+   "target": "أن يصل"
+  },
+  {
+   "source": "ইয়োইমাসু",
+   "target": "yoimasu"
+  },
+  {
+   "source": "মাতাল হওয়া; যানবাহনে বমিভাব হওয়া",
+   "target": "أن يسكر، أن يشعر بالدوار (في مركبة)"
+  },
+  {
+   "source": "কিকেন",
+   "target": "kiken"
+  },
+  {
+   "source": "বিপজ্জনক",
+   "target": "خطير"
+  },
+  {
+   "source": "হিৎসুইয়ো—",
+   "target": "hitsuyou"
+  },
+  {
+   "source": "প্রয়োজনীয়; দরকারি",
+   "target": "ضروري، لازم"
+  },
+  {
+   "source": "উচু—",
+   "target": "uchuu"
+  },
+  {
+   "source": "মহাকাশ; মহাবিশ্ব",
+   "target": "الفضاء، الكون"
+  },
+  {
+   "source": "চিক্যু—",
+   "target": "chikyuu"
+  },
+  {
+   "source": "পৃথিবী; পৃথিবী গ্রহ",
+   "target": "الأرض، كوكب الأرض"
+  },
+  {
+   "source": "বো—নেনকাই",
+   "target": "bounenkai"
+  },
+  {
+   "source": "বছরশেষের পার্টি",
+   "target": "حفل نهاية السنة"
+  },
+  {
+   "source": "শিননেনকাই",
+   "target": "shinnenkai"
+  },
+  {
+   "source": "নববর্ষের পার্টি",
+   "target": "حفل رأس السنة"
+  },
+  {
+   "source": "নিজিকাই",
+   "target": "nijikai"
+  },
+  {
+   "source": "মূল অনুষ্ঠানের পরের দ্বিতীয় পার্টি",
+   "target": "حفل ثانٍ، حفل لاحق"
+  },
+  {
+   "source": "তাইকাই",
+   "target": "taikai"
+  },
+  {
+   "source": "বড় সভা; প্রতিযোগিতা; সম্মেলন",
+   "target": "اجتماع كبير، بطولة، مؤتمر"
+  },
+  {
+   "source": "মারাসোন",
+   "target": "marason"
+  },
+  {
+   "source": "ম্যারাথন",
+   "target": "ماراثون"
+  },
+  {
+   "source": "কোনতেসুতো",
+   "target": "kontesuto"
+  },
+  {
+   "source": "প্রতিযোগিতা; কনটেস্ট",
+   "target": "مسابقة، منافسة"
+  },
+  {
+   "source": "ওমোতে",
+   "target": "omote"
+  },
+  {
+   "source": "সামনের দিক; উপরিভাগ",
+   "target": "الواجهة، السطح"
+  },
+  {
+   "source": "উরা",
+   "target": "ura"
+  },
+  {
+   "source": "পেছনের দিক; উল্টো পিঠ",
+   "target": "الخلف، الوجه الآخر"
+  },
+  {
+   "source": "হেনজি",
+   "target": "henji"
+  },
+  {
+   "source": "উত্তর; জবাব",
+   "target": "رد، إجابة"
+  },
+  {
+   "source": "মো—শিকোমি",
+   "target": "moushikomi"
+  },
+  {
+   "source": "আবেদন",
+   "target": "الطلب"
+  },
+  {
+   "source": "হোনতো—",
+   "target": "hontou"
+  },
+  {
+   "source": "সত্য; বাস্তব ঘটনা",
+   "target": "حقيقة، واقع"
+  },
+  {
+   "source": "মাচিগাই",
+   "target": "machigai"
+  },
+  {
+   "source": "ভুল",
+   "target": "خطأ"
+  },
+  {
+   "source": "কিজু",
+   "target": "kizu"
+  },
+  {
+   "source": "দাগ; আঁচড়; ক্ষত",
+   "target": "خدش، جرح، عيب"
+  },
+  {
+   "source": "জুবোন",
+   "target": "zubon"
+  },
+  {
+   "source": "প্যান্ট; ট্রাউজার্স",
+   "target": "بنطال"
+  },
+  {
+   "source": "নাগাসা",
+   "target": "nagasa"
+  },
+  {
+   "source": "দৈর্ঘ্য",
+   "target": "الطول"
+  },
+  {
+   "source": "ওমোসা",
+   "target": "omosa"
+  },
+  {
+   "source": "ওজন",
+   "target": "الوزن"
+  },
+  {
+   "source": "তাকাসা",
+   "target": "takasa"
+  },
+  {
+   "source": "উচ্চতা",
+   "target": "طول"
+  },
+  {
+   "source": "ও—কিসা",
+   "target": "ookisa"
+  },
+  {
+   "source": "আকার; আয়তন",
+   "target": "الحجم"
+  },
+  {
+   "source": "ফ্লাইট; ফ্লাইট নম্বর",
+   "target": "رحلة طيران، رقم رحلة"
+  },
+  {
+   "source": "～গো—",
+   "target": "~gou"
+  },
+  {
+   "source": "ট্রেন/টাইফুন ইত্যাদির নম্বর",
+   "target": "رقم قطار أو إعصار وما شابه"
+  },
+  {
+   "source": "～কো",
+   "target": "~ko"
+  },
+  {
+   "source": "ছোট বস্তু গণনার কাউন্টার",
+   "target": "عدّاد للأشياء الصغيرة"
+  },
+  {
+   "source": "～কিরো",
+   "target": "~kiro"
+  },
+  {
+   "source": "～ কিলোগ্রাম বা কিলোমিটার",
+   "target": "~ كيلوغرام أو كيلومتر"
+  },
+  {
+   "source": "～গুরামু",
+   "target": "~guramu"
+  },
+  {
+   "source": "～ গ্রাম",
+   "target": "~ غرام"
+  },
+  {
+   "source": "～সেনচি",
+   "target": "~senchi"
+  },
+  {
+   "source": "～ সেন্টিমিটার",
+   "target": "~ سنتيمتر"
+  },
+  {
+   "source": "～মিরি",
+   "target": "~miri"
+  },
+  {
+   "source": "～ মিলিমিটার",
+   "target": "~ مليمتر"
+  },
+  {
+   "source": "～ইজো—",
+   "target": "~ijou"
+  },
+  {
+   "source": "～ বা তার বেশি; অন্তত ～",
+   "target": "~ أو أكثر، على الأقل ~"
+  },
+  {
+   "source": "～ইকা",
+   "target": "~ika"
+  },
+  {
+   "source": "～ বা তার কম; সর্বোচ্চ ～",
+   "target": "~ أو أقل، على الأكثر ~"
+  },
+  {
+   "source": "সাআ",
+   "target": "saa"
+  },
+  {
+   "source": "দেখি…; আচ্ছা… (অনিশ্চিত হলে)",
+   "target": "حسنًا…، دعني أرى… (عند التردد)"
+  },
+  {
+   "source": "গোহ্হো",
+   "target": "Gohho"
+  },
+  {
+   "source": "ভিনসেন্ট ভ্যান গখ—ডাচ চিত্রশিল্পী",
+   "target": "فينسنت فان غوخ — رسام هولندي"
+  },
+  {
+   "source": "ইউকিমাৎসুরি",
+   "target": "Yukimatsuri"
+  },
+  {
+   "source": "সাপ্পোরোর তুষার উৎসব",
+   "target": "مهرجان سابورو للثلج"
+  },
+  {
+   "source": "নোজোমি",
+   "target": "Nozomi"
+  },
+  {
+   "source": "নোজোমি—শিনকানসেন ট্রেনের নাম",
+   "target": "نوزومي — اسم قطار شينكانسن"
+  },
+  {
+   "source": "জে-এল",
+   "target": "Jee Eru"
+  },
+  {
+   "source": "জাপান এয়ারলাইন্স (JAL)",
+   "target": "الخطوط الجوية اليابانية (JAL)"
+  },
+  {
+   "source": "দো—দেশো—কা",
+   "target": "dou deshou ka"
+  },
+  {
+   "source": "কেমন হবে/কেমন আছে? (ভদ্র রূপ)",
+   "target": "كيف سيكون / كيف هو؟ (صيغة مهذبة)"
+  },
+  {
+   "source": "কুরাসু",
+   "target": "kurasu"
+  },
+  {
+   "source": "ক্লাস; শ্রেণি",
+   "target": "صف، فصل"
+  },
+  {
+   "source": "তেসুতো",
+   "target": "tesuto"
+  },
+  {
+   "source": "পরীক্ষা",
+   "target": "اختبار"
+  },
+  {
+   "source": "সে—সেকি",
+   "target": "seiseki"
+  },
+  {
+   "source": "ফলাফল; নম্বর; পারফরম্যান্স",
+   "target": "نتائج، درجات، أداء"
+  },
+  {
+   "source": "তোকোরোদে",
+   "target": "tokoro de"
+  },
+  {
+   "source": "আচ্ছা, প্রসঙ্গত; কথা হলো",
+   "target": "بالمناسبة"
+  },
+  {
+   "source": "ইরাশ্শাইমাসু",
+   "target": "irasshaimasu"
+  },
+  {
+   "source": "আসেন (きます-এর সম্মানসূচক রূপ)",
+   "target": "يأتي (صيغة الاحترام من きます)"
+  },
+  {
+   "source": "ইয়ো—সু",
+   "target": "yousu"
+  },
+  {
+   "source": "অবস্থা; পরিস্থিতি; চেহারা",
+   "target": "حالة، وضع، مظهر"
+  },
+  {
+   "source": "জিকেন",
+   "target": "jiken"
+  },
+  {
+   "source": "ঘটনা; মামলা",
+   "target": "حادثة، قضية"
+  },
+  {
+   "source": "ও—তোবাই",
+   "target": "ootobai"
+  },
+  {
+   "source": "মোটরসাইকেল",
+   "target": "دراجة نارية"
+  },
+  {
+   "source": "বাকুদান",
+   "target": "bakudan"
+  },
+  {
+   "source": "বোমা",
+   "target": "قنبلة"
+  },
+  {
+   "source": "ৎসুমিমাসু",
+   "target": "tsumimasu"
+  },
+  {
+   "source": "বোঝাই করা; স্তূপ করা",
+   "target": "أن يحمّل، أن يكدّس"
+  },
+  {
+   "source": "উনতেনশু",
+   "target": "untenshu"
+  },
+  {
+   "source": "চালক; ড্রাইভার",
+   "target": "سائق"
+  },
+  {
+   "source": "হানারেতা",
+   "target": "hanareta"
+  },
+  {
+   "source": "দূরের; বিচ্ছিন্ন",
+   "target": "بعيد، منفصل"
+  },
+  {
+   "source": "গা",
+   "target": "ga"
+  },
+  {
+   "source": "কিন্তু",
+   "target": "لكن / غير أن"
+  },
+  {
+   "source": "ক্যু—নি",
+   "target": "kyuu ni"
+  },
+  {
+   "source": "হঠাৎ করে",
+   "target": "فجأة"
+  },
+  {
+   "source": "উগোকাশিমাসু",
+   "target": "ugokashimasu"
+  },
+  {
+   "source": "চালু করা; নড়ানো; পরিচালনা করা",
+   "target": "أن يحرّك، أن يشغّل، أن يدير"
+  },
+  {
+   "source": "হাননিন",
+   "target": "hannin"
+  },
+  {
+   "source": "অপরাধী; দোষী ব্যক্তি",
+   "target": "مجرم، الجاني"
+  },
+  {
+   "source": "তেনি ইরেমাসু",
+   "target": "te ni iremasu"
+  },
+  {
+   "source": "হাতে পাওয়া; অর্জন করা",
+   "target": "أن يحصل على، أن يمتلك"
+  },
+  {
+   "source": "ইমাদেমো",
+   "target": "ima demo"
+  },
+  {
+   "source": "এখনও; এমনকি এখনো",
+   "target": "حتى الآن، ما زال"
+  },
+  {
+   "source": "উওয়াসাশিমাসু",
+   "target": "uwasashimasu"
+  },
+  {
+   "source": "গুজব করা; পরচর্চা করা",
+   "target": "أن يغتاب، أن ينشر الشائعات"
+  },
+  {
+   "source": "～হোন (－পোন, －বোন)",
+   "target": "~hon (-pon, -bon)"
+  },
+  {
+   "source": "লম্বা বস্তু গণনার কাউন্টার",
+   "target": "عدّاد للأشياء الطويلة الرفيعة"
+  },
+  {
+   "source": "～হাই (－পাই, －বাই)",
+   "target": "~hai (-pai, -bai)"
+  },
+  {
+   "source": "গ্লাস বা কাপ গণনার কাউন্টার",
+   "target": "عدّاد للأكواب والكؤوس الممتلئة"
+  },
+  {
+   "source": "ইশ্শো—কেনমে—",
+   "target": "isshoukenmei"
+  },
+  {
+   "source": "প্রাণপণে; সর্বশক্তি দিয়ে",
+   "target": "بكل قوته، بكل ما يستطيع"
+  },
+  {
+   "source": "কোনো শব্দ পাওয়া যায়নি।",
+   "target": "لم يُعثر على كلمة."
+  },
+  {
+   "source": "অন্য বানান বা বাংলা অর্থ দিয়ে চেষ্টা করুন।",
+   "target": "جرّب إملاء آخر أو معنى بالبنغالية."
+  },
+  {
+   "source": "১০ প্রশ্ন • দুই ধরনের অনুশীলন",
+   "target": "10 أسئلة • نوعان من الممارسة"
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "اختبر نفسك"
+  },
+  {
+   "source": "কখনো জাপানিজ দেখে বাংলা অর্থ, আবার কখনো বাংলা দেখে সঠিক জাপানিজ বেছে নিন। প্রতিবার নতুন random প্রশ্ন আসবে।",
+   "target": "أحيانا انظر إلى اليابانية واختر المعنى بالبنغالية، وأحيانا انظر إلى البنغالية واختر اليابانية الصحيحة. ستأتي أسئلة عشوائية جديدة في كل مرة."
+  },
+  {
+   "source": "নতুন কুইজ শুরু",
+   "target": "ابدأ اختبارا جديدا"
+  },
+  {
+   "source": "প্রশ্ন ১ / ১০",
+   "target": "السؤال 1 / 10"
+  },
+  {
+   "source": "স্কোর ০",
+   "target": "النتيجة 0"
+  },
+  {
+   "source": "পরের প্রশ্ন",
+   "target": "السؤال التالي"
+  },
+  {
+   "source": "তালিকা নোট:",
+   "target": "ملاحظة القائمة:"
+  },
+  {
+   "source": "আপনার দেওয়া পুরোনো ফাইলের সঙ্গে মিল রেখে Minna no Nihongo Shokyu II-এর ১ম সংস্করণের lesson order ব্যবহার করা হয়েছে। OCR-এ ভাঙা কানা, duplicate example এবং ভুল বাংলা অর্থ বাদ দিয়ে entry-গুলো নতুন করে তৈরি করা হয়েছে। এটি শিক্ষার্থীর সহায়ক free resource; মূল বইয়ের বিকল্প নয়।",
+   "target": "بما يتوافق مع الملف القديم الذي قدمته، تم استخدام ترتيب دروس الطبعة الأولى من Minna no Nihongo Shokyu II. وحُذفت الكانا المكسورة بـ OCR، والأمثلة المكررة، والمعاني البنغالية الخاطئة، وأُنشئت الإدخالات من جديد. هذا مورد دعم مجاني للمتعلمين؛ وليس بديلا عن الكتاب الأصلي."
+  },
+  {
+   "source": "আগের লেসন",
+   "target": "الدرس السابق"
+  },
+  {
+   "source": "সব N4 লেসন",
+   "target": "جميع دروس N4"
+  },
+  {
+   "source": "পরের লেসন",
+   "target": "الدرس التالي"
+  },
+  {
+   "source": "আপনার নিহোন • শিক্ষার্থীদের জন্য সহজ বাংলা জাপানিজ শিক্ষা",
+   "target": "আপনার নিহোন • تعلّم يابانية سهلة بالبنغالية البسيطة للمتعلمين"
+  }
+ ]
+}

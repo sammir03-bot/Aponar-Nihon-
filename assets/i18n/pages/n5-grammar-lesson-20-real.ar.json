@@ -1,0 +1,238 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "n5-grammar-lesson-20-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N5 Grammar Lesson 20 | Plain Form・普通形 Conversation | আপনার নিহোন",
+   "target": "N5 Grammar Lesson 20 | Plain Form・普通形 Conversation | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "বন্ধুদের সাথে casual কথা, diary style, short answer — polite থেকে plain form",
+   "target": "حديث غير رسمي مع الأصدقاء، أسلوب اليوميات، إجابات قصيرة — من الصيغة المهذبة إلى الصيغة العادية"
+  },
+  {
+   "source": "Grammar শুরু",
+   "target": "ابدأ Grammar"
+  },
+  {
+   "source": "আজকের Learning Goal",
+   "target": "هدف التعلم اليوم"
+  },
+  {
+   "source": "সহজ ব্যাখ্যা + structure + example",
+   "target": "شرح بسيط + structure + example"
+  },
+  {
+   "source": "প্রতিটি pattern আগে structure দেখে, তারপর example মুখে বলুন। Audio button চাপলে Japanese sentence শুনতে পারবেন।",
+   "target": "لكل نمط، انظر أولا إلى البنية، ثم قل الأمثلة بصوت عال. إذا ضغطت على زر الصوت، فستتمكن من سماع الجملة اليابانية."
+  },
+  {
+   "source": "ます-form নয়, dictionary/ない/た/なかった form দিয়ে casual/plain style।",
+   "target": "ليست صيغة ます — الأسلوب غير الرسمي/العادي يستخدم صيغ القاموس وない وた وなかった."
+  },
+  {
+   "source": "বন্ধু, পরিবার, diary, grammar connection-এ plain form লাগে।",
+   "target": "الصيغة العادية لازمة مع الأصدقاء والعائلة، في اليوميات، ولروابط grammar."
+  },
+  {
+   "source": "আশিতা, গাক্কো এ ইকু।",
+   "target": "Ashita, gakkou e iku."
+  },
+  {
+   "source": "কাল স্কুলে যাব।",
+   "target": "سأذهب إلى المدرسة غدا."
+  },
+  {
+   "source": "কিয়ো ওয়া ইকানাই।",
+   "target": "Kyou wa ikanai."
+  },
+  {
+   "source": "আজ যাব না।",
+   "target": "لن أذهب اليوم."
+  },
+  {
+   "source": "কিনো, ইত্তা।",
+   "target": "Kinou, itta."
+  },
+  {
+   "source": "গতকাল গিয়েছিলাম।",
+   "target": "ذهبت أمس."
+  },
+  {
+   "source": "い-adjective plain form-এ です বাদ যায়।",
+   "target": "في الصيغة العادية، صفات い تحذف です."
+  },
+  {
+   "source": "কোনো মিসে ওয়া ইয়াসুই।",
+   "target": "Kono mise wa yasui."
+  },
+  {
+   "source": "এই দোকান সস্তা।",
+   "target": "هذا المتجر رخيص."
+  },
+  {
+   "source": "কিনো ওয়া সামুকাত্তা।",
+   "target": "Kinou wa samukatta."
+  },
+  {
+   "source": "গতকাল ঠান্ডা ছিল।",
+   "target": "كان باردا أمس."
+  },
+  {
+   "source": "কোনো এইগা ওয়া ওমোশিরোকুনাই।",
+   "target": "Kono eiga wa omoshirokunai."
+  },
+  {
+   "source": "এই সিনেমা মজার নয়।",
+   "target": "هذا الفيلم ليس ممتعا."
+  },
+  {
+   "source": "な-adjective ও noun plain affirmative present-এ だ লাগে; negative じゃない।",
+   "target": "صفات な والأسماء تأخذ だ في الحاضر المثبت العادي؛ والنفي هو じゃない."
+  },
+  {
+   "source": "Question/casual conversation-এ だ বাদও হতে পারে, কিন্তু basic pattern শিখুন।",
+   "target": "في الأسئلة والمحادثة غير الرسمية، يمكن حذف だ أيضا — لكن تعلم النمط الأساسي أولا."
+  },
+  {
+   "source": "কোনো মাচি ওয়া শিজুকাদা।",
+   "target": "Kono machi wa shizuka da."
+  },
+  {
+   "source": "এই শহর শান্ত।",
+   "target": "هذه المدينة هادئة."
+  },
+  {
+   "source": "কারে ওয়া গাকুসেই জানাই।",
+   "target": "Kare wa gakusei ja nai."
+  },
+  {
+   "source": "সে ছাত্র নয়।",
+   "target": "هو ليس طالبا."
+  },
+  {
+   "source": "কিনো ওয়া ইয়াসুমিদাত্তা।",
+   "target": "Kinou wa yasumi datta."
+  },
+  {
+   "source": "গতকাল ছুটি ছিল।",
+   "target": "كان أمس يوم عطلة."
+  },
+  {
+   "source": "আশিতা ইকু？",
+   "target": "Ashita iku?"
+  },
+  {
+   "source": "কাল যাবে?",
+   "target": "هل ستذهب غدا؟"
+  },
+  {
+   "source": "উন, ইকু।",
+   "target": "Un, iku."
+  },
+  {
+   "source": "হ্যাঁ, যাব।",
+   "target": "نعم، سأذهب."
+  },
+  {
+   "source": "উন, ইকানাই।",
+   "target": "Un, ikanai."
+  },
+  {
+   "source": "না, যাব না।",
+   "target": "لا، لن أذهب."
+  },
+  {
+   "source": "কাকে বলছেন তার উপর style বদলাতে হবে।",
+   "target": "يجب أن تغير الأسلوب حسب من تتحدث إليه."
+  },
+  {
+   "source": "শিক্ষক/বস/ইন্টারভিউতে polite; বন্ধু/পরিবারে plain।",
+   "target": "مهذب مع المعلمين والرؤساء وفي المقابلات؛ وعادي مع الأصدقاء والعائلة."
+  },
+  {
+   "source": "সেনসেই নি： আশিতা, গাক্কো এ ইকিমাসু।",
+   "target": "Sensei ni: Ashita, gakkou e ikimasu."
+  },
+  {
+   "source": "শিক্ষককে: কাল স্কুলে যাব।",
+   "target": "للمعلم: سأذهب إلى المدرسة غدا."
+  },
+  {
+   "source": "তোমোদাচি নি： আশিতা, গাক্কো এ ইকু।",
+   "target": "Tomodachi ni: Ashita, gakkou e iku."
+  },
+  {
+   "source": "বন্ধুকে: কাল স্কুলে যাব।",
+   "target": "لصديق: سأذهب إلى المدرسة غدا."
+  },
+  {
+   "source": "মুখে বলার Practice",
+   "target": "تدريب على النطق"
+  },
+  {
+   "source": "এই বাক্যগুলো interview/classroom conversation-এর মতো করে ৩ বার করে পড়ুন।",
+   "target": "اقرأ هذه الجمل بصوت عال 3 مرات، كما لو كنت في مقابلة أو محادثة في الفصل."
+  },
+  {
+   "source": "আশিতা, গাক্কো এ ইকু？",
+   "target": "Ashita, gakkou e iku?"
+  },
+  {
+   "source": "কাল স্কুলে যাবে?",
+   "target": "هل ستذهب إلى المدرسة غدا؟"
+  },
+  {
+   "source": "কিনো, নানি ও শিতা？",
+   "target": "Kinou, nani wo shita?"
+  },
+  {
+   "source": "গতকাল কী করেছিলে?",
+   "target": "ماذا فعلت أمس؟"
+  },
+  {
+   "source": "এইগা ও মিতা।",
+   "target": "Eiga wo mita."
+  },
+  {
+   "source": "সিনেমা দেখেছি।",
+   "target": "شاهدت فيلما."
+  },
+  {
+   "source": "কোনো মাচি ওয়া শিজুকা？",
+   "target": "Kono machi wa shizuka?"
+  },
+  {
+   "source": "এই শহর শান্ত?",
+   "target": "هل هذه المدينة هادئة؟"
+  },
+  {
+   "source": "✅ বন্ধু হলে plain: 明日行く。 কিন্তু polite বললেও ভুল নয়, শুধু দূরত্ব/ভদ্রতা বেশি।",
+   "target": "✅ مع صديق، استخدم الصيغة العادية: 明日行く。 استخدام الصيغة المهذبة ليس خطأ أيضا — إنه يضيف مسافة ورسمية فقط."
+  },
+  {
+   "source": "✅ 高い。 — い-adj-এর সাথে だ নয়।",
+   "target": "✅ 高い。 — صفات い لا تأخذ だ."
+  },
+  {
+   "source": "✅ 学生だ。 — noun plain affirmative present-এ だ।",
+   "target": "✅ 学生だ。 — الاسم يأخذ だ في الحاضر المثبت العادي."
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "اختبر نفسك"
+  },
+  {
+   "source": "© 2026 আপনার নিহোন • N5 Grammar Lesson 20 • Verified Premium Detailed Version",
+   "target": "© 2026 আপনার নিহোন • N5 Grammar Lesson 20 • Verified Premium Detailed Version"
+  }
+ ]
+}

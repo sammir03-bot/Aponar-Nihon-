@@ -1,0 +1,610 @@
+{
+ "sourceLanguage": "bn",
+ "targetLanguage": "ar",
+ "page": "n4-vocab-lesson-30-real",
+ "reviewed": true,
+ "generatedBy": "Claude self-translation (Run 40, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+ "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 40. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+ "entries": [
+  {
+   "source": "N4 Vocabulary Lesson 30 | আপনার নিহোন",
+   "target": "N4 Vocabulary Lesson 30 | আপনার নিহোন"
+  },
+  {
+   "source": "আপনার নিহোন",
+   "target": "আপনার নিহোন"
+  },
+  {
+   "source": "সব লেসন",
+   "target": "جميع الدروس"
+  },
+  {
+   "source": "জাপানিজ শব্দভাণ্ডার",
+   "target": "المفردات اليابانية"
+  },
+  {
+   "source": "প্রথমবার পড়া শিক্ষার্থীর জন্য—জাপানিজ, ふりがな, বাংলা উচ্চারণ ও সহজ বাংলা অর্থ একই কার্ডে। সার্চ, অডিও, শেখা মার্ক ও কুইজও আছে।",
+   "target": "للمتعلمين الذين يقرؤون لأول مرة — اليابانية، وふりがな، والنطق بالبنغالية، ومعانٍ بنغالية بسيطة على البطاقة نفسها. وهناك أيضا بحث، وصوت، وعلامة تعلّم، واختبار."
+  },
+  {
+   "source": "শব্দ শেখা শুরু",
+   "target": "ابدأ تعلّم الكلمات"
+  },
+  {
+   "source": "কুইজ দিন",
+   "target": "خض الاختبار"
+  },
+  {
+   "source": "55টি শব্দ",
+   "target": "55 كلمة"
+  },
+  {
+   "source": "১ম সংস্করণ অনুযায়ী সাজানো",
+   "target": "مرتّبة وفقا للطبعة الأولى"
+  },
+  {
+   "source": "জাপানিজ অডিও",
+   "target": "الصوت الياباني"
+  },
+  {
+   "source": "ডিভাইসের Japanese voice ব্যবহার করে",
+   "target": "يستخدم صوت الجهاز الياباني"
+  },
+  {
+   "source": "০ / 55 শেখা",
+   "target": "0 / 55 تم تعلُّمها"
+  },
+  {
+   "source": "এই browser-এ progress সংরক্ষিত থাকবে",
+   "target": "سيُحفظ تقدمك في هذا المتصفح"
+  },
+  {
+   "source": "সব",
+   "target": "الكل"
+  },
+  {
+   "source": "শেখা হয়েছে",
+   "target": "تم تعلّمها"
+  },
+  {
+   "source": "বাকি",
+   "target": "المتبقي"
+  },
+  {
+   "source": "55টি দেখানো হচ্ছে",
+   "target": "يُعرض 55"
+  },
+  {
+   "source": "Lesson 30-এর শব্দ",
+   "target": "كلمات الدرس 30"
+  },
+  {
+   "source": "「—」 চিহ্ন মানে আগের স্বরটি একটু লম্বা করে পড়বেন।",
+   "target": "علامة «—» تعني أنك تقرأ حرف العلة السابق أطول قليلا."
+  },
+  {
+   "source": "↻ একটি random শব্দ",
+   "target": "↻ كلمة عشوائية"
+  },
+  {
+   "source": "১ম সংস্করণ",
+   "target": "الطبعة الأولى"
+  },
+  {
+   "source": "উচ্চারণ",
+   "target": "النطق"
+  },
+  {
+   "source": "হারিমাসু",
+   "target": "harimasu"
+  },
+  {
+   "source": "লাগাব, সাঁটাব",
+   "target": "أن يلصق"
+  },
+  {
+   "source": "🔊 শুনুন",
+   "target": "🔊 استمع"
+  },
+  {
+   "source": "⧉ কপি",
+   "target": "⧉ نسخ"
+  },
+  {
+   "source": "○ শেখা বাকি",
+   "target": "○ لم يتم تعلّمها بعد"
+  },
+  {
+   "source": "কাকেমাসু",
+   "target": "kakemasu"
+  },
+  {
+   "source": "ঝুলাব, লাগাব",
+   "target": "أن يعلّق، أن يثبّت"
+  },
+  {
+   "source": "কাজারিমাসু",
+   "target": "kazarimasu"
+  },
+  {
+   "source": "সাজাব, প্রদর্শন করব",
+   "target": "أن يزيّن، أن يعرض"
+  },
+  {
+   "source": "নারাবেমাসু",
+   "target": "narabemasu"
+  },
+  {
+   "source": "সারিবদ্ধভাবে সাজাব",
+   "target": "أن يصفّ، أن يرتّب"
+  },
+  {
+   "source": "উএমাসু",
+   "target": "uemasu"
+  },
+  {
+   "source": "রোপণ করব, লাগাব",
+   "target": "أن يزرع، أن يغرس"
+  },
+  {
+   "source": "মোদোশিমাসু",
+   "target": "modoshimasu"
+  },
+  {
+   "source": "ফেরত দেব, আগের জায়গায় রাখব",
+   "target": "أن يُعيد، أن يضع في مكانه الأصلي"
+  },
+  {
+   "source": "মাতোমেমাসু",
+   "target": "matomemasu"
+  },
+  {
+   "source": "একসাথে করব, সংক্ষেপে গুছাব",
+   "target": "أن يجمع معًا، أن يلخّص"
+  },
+  {
+   "source": "কাতাজুকেমাসু",
+   "target": "katazukemasu"
+  },
+  {
+   "source": "গুছাব, পরিষ্কার করব",
+   "target": "أن يرتّب، أن يزيل الفوضى"
+  },
+  {
+   "source": "শিমাইমাসু",
+   "target": "shimaimasu"
+  },
+  {
+   "source": "সঠিক জায়গায় গুছিয়ে রাখব",
+   "target": "أن يضع في مكانه الصحيح"
+  },
+  {
+   "source": "কিমেমাসু",
+   "target": "kimemasu"
+  },
+  {
+   "source": "সিদ্ধান্ত নেব",
+   "target": "أن يقرّر"
+  },
+  {
+   "source": "শিরাসেমাসু",
+   "target": "shirasemasu"
+  },
+  {
+   "source": "জানাব",
+   "target": "أن يُعلم، أن يُخطر"
+  },
+  {
+   "source": "সো—দানশিমাসু",
+   "target": "soudanshimasu"
+  },
+  {
+   "source": "পরামর্শ করব, আলোচনা করব",
+   "target": "أن يستشير، أن يناقش"
+  },
+  {
+   "source": "ইয়োশু—শিমাসু",
+   "target": "yoshuushimasu"
+  },
+  {
+   "source": "আগে থেকে পড়ব/প্রস্তুতি নেব",
+   "target": "أن يدرس مسبقًا، أن يستعدّ"
+  },
+  {
+   "source": "ফুকুশু—শিমাসু",
+   "target": "fukushuushimasu"
+  },
+  {
+   "source": "পুনরাবৃত্তি করব, রিভিউ করব",
+   "target": "أن يراجع"
+  },
+  {
+   "source": "সোনোমামানি শিমাসু",
+   "target": "sono mama ni shimasu"
+  },
+  {
+   "source": "যেমন আছে তেমনই রাখব",
+   "target": "أن يتركه كما هو"
+  },
+  {
+   "source": "ওকোসান",
+   "target": "okosan"
+  },
+  {
+   "source": "অন্যের সন্তান",
+   "target": "طفل شخص آخر"
+  },
+  {
+   "source": "জুগ্যো—",
+   "target": "jugyou"
+  },
+  {
+   "source": "ক্লাস, পাঠ",
+   "target": "حصة، درس"
+  },
+  {
+   "source": "কো—গি",
+   "target": "kougi"
+  },
+  {
+   "source": "লেকচার, বক্তৃতা",
+   "target": "محاضرة"
+  },
+  {
+   "source": "মি—তিনগু",
+   "target": "miitingu"
+  },
+  {
+   "source": "মিটিং, সভা",
+   "target": "اجتماع"
+  },
+  {
+   "source": "ইয়োতে—",
+   "target": "yotei"
+  },
+  {
+   "source": "পরিকল্পনা, সূচি",
+   "target": "خطة، جدول"
+  },
+  {
+   "source": "ওশিরাসে",
+   "target": "oshirase"
+  },
+  {
+   "source": "নোটিশ, বিজ্ঞপ্তি",
+   "target": "إشعار، إعلان"
+  },
+  {
+   "source": "আননাইশো",
+   "target": "annaisho"
+  },
+  {
+   "source": "গাইডবুক, নির্দেশিকা",
+   "target": "دليل إرشادي"
+  },
+  {
+   "source": "কারেনদা—",
+   "target": "karendaa"
+  },
+  {
+   "source": "ক্যালেন্ডার",
+   "target": "تقويم"
+  },
+  {
+   "source": "পোসুতা—",
+   "target": "posutaa"
+  },
+  {
+   "source": "পোস্টার",
+   "target": "ملصق"
+  },
+  {
+   "source": "গোমিবাকো",
+   "target": "gomibako"
+  },
+  {
+   "source": "ময়লার ঝুড়ি",
+   "target": "سلة مهملات"
+  },
+  {
+   "source": "নিনগ্যো—",
+   "target": "ningyou"
+  },
+  {
+   "source": "পুতুল",
+   "target": "دمية"
+  },
+  {
+   "source": "কাবিন",
+   "target": "kabin"
+  },
+  {
+   "source": "ফুলদানি",
+   "target": "مزهرية"
+  },
+  {
+   "source": "কাগামি",
+   "target": "kagami"
+  },
+  {
+   "source": "আয়না",
+   "target": "مرآة"
+  },
+  {
+   "source": "হিকিদাশি",
+   "target": "hikidashi"
+  },
+  {
+   "source": "ড্রয়ার",
+   "target": "درج"
+  },
+  {
+   "source": "গেনকান",
+   "target": "genkan"
+  },
+  {
+   "source": "বাড়ির প্রবেশদ্বার",
+   "target": "مدخل المنزل"
+  },
+  {
+   "source": "রো—কা",
+   "target": "rouka"
+  },
+  {
+   "source": "করিডর",
+   "target": "ممر"
+  },
+  {
+   "source": "কাবে",
+   "target": "kabe"
+  },
+  {
+   "source": "দেয়াল",
+   "target": "حائط"
+  },
+  {
+   "source": "ইকে",
+   "target": "ike"
+  },
+  {
+   "source": "পুকুর",
+   "target": "بركة"
+  },
+  {
+   "source": "কো—বান",
+   "target": "kouban"
+  },
+  {
+   "source": "পুলিশ বক্স",
+   "target": "كشك شرطة"
+  },
+  {
+   "source": "মোতোনো তোকোরো",
+   "target": "moto no tokoro"
+  },
+  {
+   "source": "মূল জায়গা",
+   "target": "المكان الأصلي"
+  },
+  {
+   "source": "মাওয়ারি",
+   "target": "mawari"
+  },
+  {
+   "source": "চারপাশ",
+   "target": "المناطق المحيطة"
+  },
+  {
+   "source": "মাননাকা",
+   "target": "mannaka"
+  },
+  {
+   "source": "মাঝখান",
+   "target": "الوسط تمامًا"
+  },
+  {
+   "source": "সুমি",
+   "target": "sumi"
+  },
+  {
+   "source": "কোণা",
+   "target": "زاوية"
+  },
+  {
+   "source": "মাদা",
+   "target": "mada"
+  },
+  {
+   "source": "এখনো",
+   "target": "ما زال، ليس بعد"
+  },
+  {
+   "source": "～হোদো",
+   "target": "~hodo"
+  },
+  {
+   "source": "প্রায় ~",
+   "target": "حوالي ~"
+  },
+  {
+   "source": "ইয়োতে—হ্যো—",
+   "target": "yoteihyou"
+  },
+  {
+   "source": "সময়সূচি",
+   "target": "جدول مواعيد"
+  },
+  {
+   "source": "গোকুরো—সামা",
+   "target": "gokurousama"
+  },
+  {
+   "source": "কষ্ট করার জন্য ধন্যবাদ",
+   "target": "شكرًا على عملك الشاق"
+  },
+  {
+   "source": "কিবো—",
+   "target": "kibou"
+  },
+  {
+   "source": "ইচ্ছা, আশা",
+   "target": "أمنية، أمل"
+  },
+  {
+   "source": "নানিকা গোকিবো—গা আরিমাসুকা",
+   "target": "nanika gokibou ga arimasu ka"
+  },
+  {
+   "source": "আপনার কোনো ইচ্ছা/চাহিদা আছে কি?",
+   "target": "هل لديك أي أمنية أو طلب؟"
+  },
+  {
+   "source": "ম্যু—জিকারু",
+   "target": "myuujikaru"
+  },
+  {
+   "source": "মিউজিক্যাল",
+   "target": "مسرحية موسيقية"
+  },
+  {
+   "source": "সোরেহা ইইদেসুনে",
+   "target": "sore wa ii desu ne"
+  },
+  {
+   "source": "এটা ভালো, তাই না?",
+   "target": "هذا جميل، أليس كذلك؟"
+  },
+  {
+   "source": "বুরো—দো—য়ে—",
+   "target": "Buroodouei"
+  },
+  {
+   "source": "ব্রডওয়ে",
+   "target": "Broadway"
+  },
+  {
+   "source": "মারুই",
+   "target": "marui"
+  },
+  {
+   "source": "গোলাকার",
+   "target": "مستدير"
+  },
+  {
+   "source": "ৎসুকি",
+   "target": "tsuki"
+  },
+  {
+   "source": "চাঁদ",
+   "target": "القمر"
+  },
+  {
+   "source": "আরু ～",
+   "target": "aru ~"
+  },
+  {
+   "source": "একটি নির্দিষ্ট ~",
+   "target": "~ معيّن"
+  },
+  {
+   "source": "চিক্যু—",
+   "target": "chikyuu"
+  },
+  {
+   "source": "পৃথিবী",
+   "target": "الأرض"
+  },
+  {
+   "source": "উরেশিই",
+   "target": "ureshii"
+  },
+  {
+   "source": "খুশি",
+   "target": "سعيد، مسرور"
+  },
+  {
+   "source": "ইইয়া",
+   "target": "iya"
+  },
+  {
+   "source": "অপছন্দনীয়",
+   "target": "غير سارّ، مزعج"
+  },
+  {
+   "source": "সুরুতো",
+   "target": "suruto"
+  },
+  {
+   "source": "তখন, এরপর",
+   "target": "حينئذ، وعندها"
+  },
+  {
+   "source": "মেগা সামেমাসু",
+   "target": "me ga samemasu"
+  },
+  {
+   "source": "ঘুম ভাঙবে",
+   "target": "أن يستيقظ"
+  },
+  {
+   "source": "কোনো শব্দ পাওয়া যায়নি।",
+   "target": "لم يُعثر على كلمة."
+  },
+  {
+   "source": "অন্য বানান বা বাংলা অর্থ দিয়ে চেষ্টা করুন।",
+   "target": "جرّب إملاء آخر أو معنى بالبنغالية."
+  },
+  {
+   "source": "১০ প্রশ্ন • দুই ধরনের অনুশীলন",
+   "target": "10 أسئلة • نوعان من الممارسة"
+  },
+  {
+   "source": "নিজেকে পরীক্ষা করুন",
+   "target": "اختبر نفسك"
+  },
+  {
+   "source": "কখনো জাপানিজ দেখে বাংলা অর্থ, আবার কখনো বাংলা দেখে সঠিক জাপানিজ বেছে নিন। প্রতিবার নতুন random প্রশ্ন আসবে।",
+   "target": "أحيانا انظر إلى اليابانية واختر المعنى بالبنغالية، وأحيانا انظر إلى البنغالية واختر اليابانية الصحيحة. ستأتي أسئلة عشوائية جديدة في كل مرة."
+  },
+  {
+   "source": "নতুন কুইজ শুরু",
+   "target": "ابدأ اختبارا جديدا"
+  },
+  {
+   "source": "প্রশ্ন ১ / ১০",
+   "target": "السؤال 1 / 10"
+  },
+  {
+   "source": "স্কোর ০",
+   "target": "النتيجة 0"
+  },
+  {
+   "source": "পরের প্রশ্ন",
+   "target": "السؤال التالي"
+  },
+  {
+   "source": "তালিকা নোট:",
+   "target": "ملاحظة القائمة:"
+  },
+  {
+   "source": "আপনার দেওয়া পুরোনো ফাইলের সঙ্গে মিল রেখে Minna no Nihongo Shokyu II-এর ১ম সংস্করণের lesson order ব্যবহার করা হয়েছে। OCR-এ ভাঙা কানা, duplicate example এবং ভুল বাংলা অর্থ বাদ দিয়ে entry-গুলো নতুন করে তৈরি করা হয়েছে। এটি শিক্ষার্থীর সহায়ক free resource; মূল বইয়ের বিকল্প নয়।",
+   "target": "بما يتوافق مع الملف القديم الذي قدمته، تم استخدام ترتيب دروس الطبعة الأولى من Minna no Nihongo Shokyu II. وحُذفت الكانا المكسورة بـ OCR، والأمثلة المكررة، والمعاني البنغالية الخاطئة، وأُنشئت الإدخالات من جديد. هذا مورد دعم مجاني للمتعلمين؛ وليس بديلا عن الكتاب الأصلي."
+  },
+  {
+   "source": "আগের লেসন",
+   "target": "الدرس السابق"
+  },
+  {
+   "source": "সব N4 লেসন",
+   "target": "جميع دروس N4"
+  },
+  {
+   "source": "পরের লেসন",
+   "target": "الدرس التالي"
+  },
+  {
+   "source": "আপনার নিহোন • শিক্ষার্থীদের জন্য সহজ বাংলা জাপানিজ শিক্ষা",
+   "target": "আপনার নিহোন • تعلّم يابانية سهلة بالبنغالية البسيطة للمتعلمين"
+  }
+ ]
+}
