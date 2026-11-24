@@ -3,7 +3,7 @@
 
   var STORAGE_KEY = "aponarNihonLanguage";
   var DEFAULT_LANGUAGE = "bn";
-  var RTL_LANGUAGES = { ur: true };
+  var RTL_LANGUAGES = { ur: true, ar: true };
 
   var LANGUAGES = {
     bn: { label: "বাংলা", short: "BN", flag: "🇧🇩" },
@@ -16,7 +16,10 @@
     my: { label: "မြန်မာ", short: "MY", flag: "🇲🇲" },
     zh: { label: "中文", short: "ZH", flag: "🇨🇳" },
     si: { label: "සිංහල", short: "SI", flag: "🇱🇰" },
-    fil: { label: "Filipino", short: "FIL", flag: "🇵🇭" }
+    fil: { label: "Filipino", short: "FIL", flag: "🇵🇭" },
+    id: { label: "Bahasa Indonesia", short: "ID", flag: "🇮🇩" },
+    ar: { label: "العربية", short: "AR", flag: "🇸🇦" },
+    ml: { label: "മലയാളം", short: "ML", flag: "🇮🇳" }
   };
 
   var LANGUAGE_ALIASES = {
@@ -33,7 +36,11 @@
     chinese: "zh",
     sinhala: "si",
     tagalog: "fil",
-    filipino: "fil"
+    filipino: "fil",
+    indonesian: "id",
+    "bahasa indonesia": "id",
+    arabic: "ar",
+    malayalam: "ml"
   };
 
   var MESSAGES = {
@@ -153,6 +160,60 @@
       "language.button": "Wika", "language.title": "Piliin ang iyong wika", "language.subtitle": "Mananatiling default ang Bangla. Tatandaan sa device na ito ang pinili mo.", "language.close": "Isara", "language.active": "Kasalukuyang wika", "brand.name": "Aponar Nihon", "brand.tagline": "Pag-aaral ng Japanese para sa lahat",
       "menu.main": "Pangunahin", "menu.jlpt": "Mag-aral ng JLPT", "menu.practice": "Pagsasanay at paghahanda", "menu.japan": "Buhay sa Japan at mga tool", "menu.home": "Home", "menu.home.note": "Lahat ng mahalagang seksyon", "menu.n5.note": "Learning center para sa baguhan", "menu.n4.note": "Elementary learning center", "menu.n3.note": "Intermediate learning center", "menu.quiz": "Quiz Arena", "menu.quiz.note": "Magsanay ayon sa level at category", "menu.tutor.note": "Personal mong Japanese coach", "menu.mock.note": "Mock exam at review", "menu.interview": "Interview", "menu.interview.note": "Trabaho, paaralan, embahada at SSW", "menu.japanlife": "Buhay sa Japan", "menu.japanlife.note": "Praktikal na gabay para sa mga bagong dating", "menu.cv.note": "Gumawa ng Japanese-style CV", "menu.toolkit.note": "Mga tool para sa buhay at pag-aaral", "menu.profile.note": "Progress at account", "menu.title": "Aponar Nihon", "menu.subtitle": "Buong learning app sa iisang menu", "menu.intro": "Buksan dito mismo ang seksyong kailangan mo", "menu.footer": "Mag-aral ng Japanese sa sarili mong wika · あなたの日本", "menu.close": "Isara ang menu",
       "home.search": "Maghanap ng kanji, vocabulary, grammar…", "home.noResults": "Walang nakita—subukan ang N5, N4, N3, AI o quiz", "home.eyebrow": "Lahat sa iisang lugar", "home.title": "Lahat ng mahalagang seksyon", "home.n5.note": "Basic course", "home.n4.note": "Susunod na hakbang", "home.n3.note": "Intermediate", "home.quiz": "Quiz", "home.quiz.note": "Libreng pagsasanay", "home.tutor": "AI Tutor", "home.tutor.note": "Magtanong sa sarili mong wika", "home.mock.note": "Pagsasanay para sa exam", "home.interview": "Interview", "home.interview.note": "Trabaho at embahada", "home.ssw.note": "Kumpletong gabay", "home.phrases": "Mahahalagang parirala", "home.phrases.note": "Conversation", "home.japanlife": "Buhay sa Japan", "home.japanlife.note": "Gabay para sa bagong dating", "home.kana": "Hiragana at Katakana", "home.kana.note": "Aralin ang mga character", "progress.done": "tapos", "progress.opened": "Nabuksan", "progress.notStarted": "Hindi pa nasisimulan", "progress.saved": "Naka-save ang progress", "progress.finished": "tapos", "progress.continue": "Magpatuloy mula sa huling lesson"
+    },
+    id: {
+      "language.button": "Bahasa", "language.title": "Pilih bahasa Anda",
+      "language.subtitle": "Bahasa Bengali tetap menjadi bahasa bawaan. Setelah Anda memilih bahasa, pilihan itu akan diingat di perangkat ini.", "language.close": "Tutup",
+      "language.active": "Bahasa saat ini", "brand.name": "আপনার নিহোন", "brand.tagline": "Belajar Bahasa Jepang untuk semua orang", "menu.main": "Utama", "menu.jlpt": "Belajar JLPT",
+      "menu.practice": "Latihan & Persiapan", "menu.japan": "Jepang & Alat Berguna", "menu.home": "Beranda", "menu.home.note": "Semua bagian penting",
+      "menu.n5.note": "Pusat belajar tingkat pemula", "menu.n4.note": "Pusat belajar tingkat dasar", "menu.n3.note": "Pusat belajar tingkat menengah", "menu.quiz": "Arena Kuis",
+      "menu.quiz.note": "Latihan per level dan kategori", "menu.tutor.note": "Pelatih Bahasa Jepang pribadi dalam bahasa Anda sendiri", "menu.mock.note": "Simulasi ujian dan ulasan",
+      "menu.interview": "Wawancara", "menu.interview.note": "Pekerjaan, sekolah, kedutaan, dan SSW", "menu.japanlife": "Kehidupan di Jepang",
+      "menu.japanlife.note": "Panduan praktis untuk pendatang baru", "menu.cv.note": "Buat resume Jepang 履歴書", "menu.toolkit.note": "Alat untuk kehidupan dan belajar",
+      "menu.profile.note": "Kemajuan dan akun", "menu.title": "আপনার নিহোন", "menu.subtitle": "Seluruh aplikasi belajar Anda dalam satu menu",
+      "menu.intro": "Buka bagian yang Anda butuhkan langsung dari sini", "menu.footer": "Aplikasi lengkap belajar Bahasa Jepang dalam bahasa Anda sendiri · あなたの日本", "menu.close": "Tutup menu",
+      "home.search": "Cari kanji, kosakata, tata bahasa…", "home.noResults": "Tidak ditemukan—coba tulis N5, N4, N3, AI, atau kuis", "home.eyebrow": "Semua dalam satu tempat",
+      "home.title": "Semua bagian penting", "home.n5.note": "Kursus dasar", "home.n4.note": "Langkah berikutnya", "home.n3.note": "Menengah", "home.quiz": "Kuis",
+      "home.quiz.note": "Latihan gratis", "home.tutor": "AI Tutor", "home.tutor.note": "Bertanya dalam bahasa Anda sendiri", "home.mock.note": "Latihan ujian", "home.interview": "Wawancara",
+      "home.interview.note": "Pekerjaan dan kedutaan", "home.ssw.note": "Panduan lengkap", "home.phrases": "Frasa berguna", "home.phrases.note": "Percakapan",
+      "home.japanlife": "Kehidupan di Jepang", "home.japanlife.note": "Panduan untuk pendatang baru", "home.kana": "Hiragana & Katakana", "home.kana.note": "Belajar aksara",
+      "progress.done": "selesai", "progress.opened": "Dibuka", "progress.notStarted": "Belum dimulai", "progress.saved": "pembelajaran tersimpan", "progress.finished": "selesai",
+      "progress.continue": "Lanjutkan dari sumber belajar terakhir Anda"
+    },
+    ar: {
+      "language.button": "اللغة", "language.title": "اختر لغتك", "language.subtitle": "تبقى البنغالية هي اللغة الافتراضية، وسيُحفظ اختيارك على هذا الجهاز.", "language.close": "إغلاق",
+      "language.active": "اللغة الحالية", "brand.name": "আপনার নিহোন", "brand.tagline": "منصة متكاملة لتعلم اللغة اليابانية", "menu.main": "الرئيسية", "menu.jlpt": "تعلم JLPT",
+      "menu.practice": "التدريب والتحضير", "menu.japan": "اليابان والأدوات المفيدة", "menu.home": "الصفحة الرئيسية", "menu.home.note": "جميع الأقسام المهمة",
+      "menu.n5.note": "مركز تعلم للمبتدئين", "menu.n4.note": "مركز تعلم للمستوى الابتدائي", "menu.n3.note": "مركز تعلم للمستوى المتوسط", "menu.quiz": "ساحة الاختبارات",
+      "menu.quiz.note": "التدريب حسب المستوى والفئة", "menu.tutor.note": "مدربك الشخصي لليابانية بلغتك", "menu.mock.note": "محاكاة الامتحان والمراجعة", "menu.interview": "المقابلة",
+      "menu.interview.note": "العمل، والمدرسة، والسفارة، وSSW", "menu.japanlife": "الحياة في اليابان", "menu.japanlife.note": "دليل عملي للقادمين الجدد", "menu.cv.note": "أنشئ 履歴書",
+      "menu.toolkit.note": "أدوات للحياة والدراسة", "menu.profile.note": "التقدم والحساب", "menu.title": "আপনার নিহোন", "menu.subtitle": "تطبيق التعلم كاملا في قائمة واحدة",
+      "menu.intro": "افتح أي قسم تحتاجه مباشرة من هنا", "menu.footer": "تطبيق متكامل لتعلم اليابانية بلغتك · あなたの日本", "menu.close": "إغلاق القائمة",
+      "home.search": "ابحث عن الكانجي والمفردات والقواعد…", "home.noResults": "لم يتم العثور على شيء — جرّب N5 أو N4 أو N3 أو AI أو اختبار", "home.eyebrow": "كل شيء في مكان واحد",
+      "home.title": "جميع الأقسام المهمة", "home.n5.note": "الدورة الأساسية", "home.n4.note": "الخطوة التالية", "home.n3.note": "المستوى المتوسط", "home.quiz": "اختبار",
+      "home.quiz.note": "تدريب مجاني", "home.tutor": "AI Tutor", "home.tutor.note": "اسأل بلغتك", "home.mock.note": "تدريب على الامتحان", "home.interview": "المقابلة",
+      "home.interview.note": "العمل والسفارة", "home.ssw.note": "الدليل الكامل", "home.phrases": "عبارات مفيدة", "home.phrases.note": "المحادثة", "home.japanlife": "الحياة في اليابان",
+      "home.japanlife.note": "دليل للقادمين الجدد", "home.kana": "الهيراغانا والكاتاكانا", "home.kana.note": "تعلم الحروف", "progress.done": "مكتمل", "progress.opened": "تم فتحه",
+      "progress.notStarted": "لم يبدأ بعد", "progress.saved": "تم حفظ التعلم", "progress.finished": "انتهى", "progress.continue": "تابع من آخر مصدر لك"
+    },
+    ml: {
+      "language.button": "ഭാഷ", "language.title": "നിങ്ങളുടെ ഭാഷ തിരഞ്ഞെടുക്കുക",
+      "language.subtitle": "ബംഗ്ലാ സ്ഥിരസ്ഥിതിയായി തുടരും. നിങ്ങൾ ഒരു തവണ ഭാഷ തിരഞ്ഞെടുത്താൽ ഈ ഉപകരണത്തിൽ അത് ഓർമ്മിക്കപ്പെടും.", "language.close": "അടയ്ക്കുക",
+      "language.active": "നിലവിലെ ഭാഷ", "brand.name": "আপনার নিহোন", "brand.tagline": "ജാപ്പനീസ് പഠനത്തിനുള്ള സമ്പൂർണ്ണ പ്ലാറ്റ്‌ഫോം", "menu.main": "പ്രധാനം", "menu.jlpt": "JLPT പഠിക്കുക",
+      "menu.practice": "പരിശീലനവും തയ്യാറെടുപ്പും", "menu.japan": "ജപ്പാനും ഉപയോഗപ്രദമായ ടൂളുകളും", "menu.home": "ഹോം", "menu.home.note": "എല്ലാ പ്രധാന വിഭാഗങ്ങളും",
+      "menu.n5.note": "തുടക്കക്കാർക്കുള്ള പഠന കേന്ദ്രം", "menu.n4.note": "പ്രാഥമിക പഠന കേന്ദ്രം", "menu.n3.note": "ഇടത്തരം പഠന കേന്ദ്രം", "menu.quiz": "ക്വിസ് Arena",
+      "menu.quiz.note": "ലെവലും വിഭാഗവും അനുസരിച്ച് പരിശീലനം", "menu.tutor.note": "നിങ്ങളുടെ ഭാഷയിലുള്ള നിങ്ങളുടെ സ്വകാര്യ ജാപ്പനീസ് കോച്ച്", "menu.mock.note": "പരീക്ഷാ സിമുലേഷനും അവലോകനവും",
+      "menu.interview": "അഭിമുഖം", "menu.interview.note": "ജോലി, സ്കൂൾ, എംബസി, SSW", "menu.japanlife": "ജപ്പാൻ ലൈഫ്", "menu.japanlife.note": "പുതുതായി വരുന്നവർക്കുള്ള പ്രായോഗിക ഗൈഡ്",
+      "menu.cv.note": "履歴書 ഉണ്ടാക്കുക", "menu.toolkit.note": "ജീവിതത്തിനും പഠനത്തിനുമുള്ള ടൂളുകൾ", "menu.profile.note": "പുരോഗതിയും അക്കൗണ്ടും", "menu.title": "আপনার নিহোন",
+      "menu.subtitle": "ഒരു മെനുവിൽ നിങ്ങളുടെ മുഴുവൻ പഠന ആപ്പും", "menu.intro": "നിങ്ങൾക്ക് ആവശ്യമുള്ള വിഭാഗം ഇവിടെ നിന്ന് നേരിട്ട് തുറക്കുക",
+      "menu.footer": "നിങ്ങളുടെ സ്വന്തം ഭാഷയിൽ ജാപ്പനീസ് പഠിക്കാനുള്ള സമ്പൂർണ്ണ ആപ്പ് · あなたの日本", "menu.close": "മെനു അടയ്ക്കുക", "home.search": "കാഞ്ചി, പദാവലി, വ്യാകരണം തിരയുക…",
+      "home.noResults": "ഒന്നും കണ്ടെത്തിയില്ല—N5, N4, N3, AI അല്ലെങ്കിൽ ക്വിസ് എന്ന് എഴുതി നോക്കുക", "home.eyebrow": "എല്ലാം ഒരിടത്ത്", "home.title": "എല്ലാ പ്രധാന വിഭാഗങ്ങളും",
+      "home.n5.note": "അടിസ്ഥാന കോഴ്‌സ്", "home.n4.note": "അടുത്ത ഘട്ടം", "home.n3.note": "ഇടത്തരം", "home.quiz": "ക്വിസ്", "home.quiz.note": "സൗജന്യ പരിശീലനം", "home.tutor": "AI ട്യൂട്ടർ",
+      "home.tutor.note": "നിങ്ങളുടെ ഭാഷയിൽ ചോദിക്കുക", "home.mock.note": "പരീക്ഷാ പരിശീലനം", "home.interview": "അഭിമുഖം", "home.interview.note": "ജോലികളും എംബസിയും",
+      "home.ssw.note": "സമ്പൂർണ്ണ ഗൈഡ്", "home.phrases": "ഉപയോഗപ്രദമായ വാക്യങ്ങൾ", "home.phrases.note": "സംഭാഷണം", "home.japanlife": "ജപ്പാൻ ലൈഫ്",
+      "home.japanlife.note": "പുതുതായി വരുന്നവർക്കുള്ള ഗൈഡ്", "home.kana": "ഹിരഗാനയും കതകാനയും", "home.kana.note": "അക്ഷരമാല പഠിക്കുക", "progress.done": "പൂർത്തിയായി",
+      "progress.opened": "തുറന്നു", "progress.notStarted": "ആരംഭിച്ചിട്ടില്ല", "progress.saved": "പഠനം സംരക്ഷിച്ചു", "progress.finished": "കഴിഞ്ഞു",
+      "progress.continue": "നിങ്ങളുടെ അവസാന റിസോഴ്‌സിൽ നിന്ന് തുടരുക"
     }
   };
 
@@ -2264,7 +2325,7 @@
   var DYN_DATA_LABELS_NFC = dynNormMap(DYN_DATA_LABELS);
   var DYN_TITLES_NFC = dynNormMap(DYN_TITLES);
   var DYN_ARIA_LABELS_NFC = dynNormMap(DYN_ARIA_LABELS);
-  var DYN_LANGS = { bn: 1, en: 1, ja: 1, vi: 1, ne: 1, hi: 1, ur: 1, my: 1, zh: 1, si: 1, fil: 1 };
+  var DYN_LANGS = { bn: 1, en: 1, ja: 1, vi: 1, ne: 1, hi: 1, ur: 1, my: 1, zh: 1, si: 1, fil: 1, id: 1, ar: 1, ml: 1 };
   function dynLang() {
     var preset = document.documentElement.getAttribute("data-language-preset");
     if (preset && DYN_LANGS[preset]) return preset;
