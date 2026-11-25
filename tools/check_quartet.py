@@ -105,13 +105,13 @@ class StudyGuideAudit(HTMLParser):
 guide = StudyGuideAudit()
 guide.feed((ROOT / 'n3-quartet-study-guide.html').read_text())
 for name, count in {'study-chapter': 8, 'lesson': 55, 'example': 110,
-                    'sentence': 51, 'sentence-note': 24, 'dialogue-meaning': 27}.items():
+                    'sentence': 101, 'sentence-note': 74, 'dialogue-meaning': 27}.items():
     assert guide.classes[name] == count, (name, guide.classes[name])
 assert set(guide.anchors) <= guide.ids, set(guide.anchors) - guide.ids
 assert guide.classes['expanded-lesson-link'] == 55
 for name in ['n3.html', 'n3-grammar.html', 'n3-quartet-grammar.html']:
     assert 'href="/n3-quartet-study-guide.html"' in (ROOT / name).read_text(), name
-print('Study guide passed: 6 chapters, 24 reading explanations, 27 writing sentences, 27 dialogue translations, complete furigana and navigation.')
+print('Study guide passed: 6 chapters, 74 reading explanations, 27 writing sentences, 27 dialogue translations, complete furigana and navigation.')
 print('QUARTET passed: 6 chapters, 55 lessons, 110 examples, 55 quizzes, furigana and source preservation.')
 
 # The second volume contains original thematic selections, explicitly scoped as such.

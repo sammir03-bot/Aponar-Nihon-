@@ -1,4 +1,11 @@
-/* Aponar Nihon service-worker wrapper — app shell v50 — RUN 44 (2026-11-24):
+/* Aponar Nihon service-worker wrapper — app shell v51 — RUN 45 (2026-11-25):
+   Quartet I study guide Lesson 1 pilot: Chapter 1 Reading Lab now carries
+   the book's real Lesson 1 passages (verbatim) with Bengali explanations,
+   the book's vocabulary list, and Chapter 1 grammar examples rebuilt
+   book-first in all 14 languages; the base worker's caches are bumped to
+   v45 in sw-base-v28.js so installed phones flush and pick up the new
+   guide page and Quartet data sidecars.
+   RUN 44 (2026-11-24):
    Home tools grid: the JLPT N2 tile takes the first-row slot (the CSS
    order rule in halal-nav.css now lists /n2.html instead of /quiz.html,
    and the two tiles swap places in index.html); the base worker's

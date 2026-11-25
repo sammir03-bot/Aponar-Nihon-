@@ -18,11 +18,14 @@
    (n2 hub + packs, i18n.js DYN aria rows).
    RUN 42 (2026-11-24): cache names bumped v41 -> v42 — Phase 4 (final)
    question-bank / interview / exam / study / news sidecars for id/ar/ml.
+   RUN 45 (2026-11-25): cache names bumped v44 -> v45 — Quartet I study
+   guide Lesson 1 pilot (guide page + Quartet data/sidecars) so phones
+   flush the cached guide and data files.
    RUN 44 (2026-11-24): cache names bumped v43 -> v44 — home tools grid
    tile swap (halal-nav.css order rule + index.html) so phones flush the
    cached stylesheet and home shell. */
-const STATIC_CACHE = "aponar-nihon-static-v44";
-const DYNAMIC_CACHE = "aponar-nihon-dynamic-v44";
+const STATIC_CACHE = "aponar-nihon-static-v45";
+const DYNAMIC_CACHE = "aponar-nihon-dynamic-v45";
 
 const STATIC_ASSETS = [
   "/",
