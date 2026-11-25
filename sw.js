@@ -1,4 +1,10 @@
-/* Aponar Nihon service-worker wrapper — app shell v51 — RUN 45 (2026-11-25):
+/* Aponar Nihon service-worker wrapper — app shell v52 — RUN 46 (2026-11-25):
+   Quartet I study guide: the book passages become the guide's main entry —
+   a "বইয়ের Passage" index strip now sits at the top of the guide and
+   Chapter 1 opens with its Reading Lab (the book's passages) as the first
+   block; the base worker's caches are bumped to v46 in sw-base-v28.js so
+   installed phones flush and pick up the restructured guide page.
+   RUN 45 (2026-11-25):
    Quartet I study guide Lesson 1 pilot: Chapter 1 Reading Lab now carries
    the book's real Lesson 1 passages (verbatim) with Bengali explanations,
    the book's vocabulary list, and Chapter 1 grammar examples rebuilt
