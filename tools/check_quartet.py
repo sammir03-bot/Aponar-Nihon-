@@ -104,11 +104,14 @@ class StudyGuideAudit(HTMLParser):
 
 guide = StudyGuideAudit()
 guide.feed((ROOT / 'n3-quartet-study-guide.html').read_text())
-for name, count in {'study-chapter': 8, 'lesson': 55, 'example': 110,
+for name, count in {'study-chapter': 8, 'lesson': 0, 'example': 0,
                     'sentence': 101, 'sentence-note': 74, 'dialogue-meaning': 27}.items():
     assert guide.classes[name] == count, (name, guide.classes[name])
 assert set(guide.anchors) <= guide.ids, set(guide.anchors) - guide.ids
-assert guide.classes['expanded-lesson-link'] == 55
+# Run 46 (2026-11-25): the study guide carries passages only — its Grammar
+# Core (lesson/example blocks + expanded-lesson links) was removed; the
+# rules live in n3-quartet-grammar.html, guarded by the first suite above.
+assert guide.classes['expanded-lesson-link'] == 0
 for name in ['n3.html', 'n3-grammar.html', 'n3-quartet-grammar.html']:
     assert 'href="/n3-quartet-study-guide.html"' in (ROOT / name).read_text(), name
 print('Study guide passed: 6 chapters, 74 reading explanations, 27 writing sentences, 27 dialogue translations, complete furigana and navigation.')
