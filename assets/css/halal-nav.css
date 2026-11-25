@@ -9,12 +9,14 @@
 .app-dock-link--halal.active>i{background:linear-gradient(145deg,#075f4b,#0a936c)!important;box-shadow:0 12px 28px rgba(8,127,91,.34),0 0 0 5px #eafaf4!important}
 .app-dock-link--halal>span{font-weight:900!important;letter-spacing:-.02em}
 
-/* Home grid: first row stays N5/N4/N3/Quiz; Halal starts the second row. */
+/* Home grid: first row stays N5/N4/N3/N2 (RUN 44, 2026-11-24: N2 takes
+   the Quiz tile's former first-row slot; Quiz falls back to the default
+   order group); Halal starts the second row. */
 body[data-page="home"] .app-tools-grid>.app-tool{order:2}
 body[data-page="home"] .app-tools-grid>.app-tool[href="/n5.html"],
 body[data-page="home"] .app-tools-grid>.app-tool[href="/n4.html"],
 body[data-page="home"] .app-tools-grid>.app-tool[href="/n3.html"],
-body[data-page="home"] .app-tools-grid>.app-tool[href="/quiz.html"]{order:0}
+body[data-page="home"] .app-tools-grid>.app-tool[href="/n2.html"]{order:0}
 body[data-page="home"] .app-tools-grid>.app-tool-halal{order:1!important;grid-row:auto!important;grid-column:auto!important}
 
 /* Halal tile follows the same visual language as the other important sections. */

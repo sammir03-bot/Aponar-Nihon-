@@ -17,9 +17,12 @@
    RUN 43 (2026-11-24): cache names bumped v42 -> v43 — new N2 section
    (n2 hub + packs, i18n.js DYN aria rows).
    RUN 42 (2026-11-24): cache names bumped v41 -> v42 — Phase 4 (final)
-   question-bank / interview / exam / study / news sidecars for id/ar/ml. */
-const STATIC_CACHE = "aponar-nihon-static-v43";
-const DYNAMIC_CACHE = "aponar-nihon-dynamic-v43";
+   question-bank / interview / exam / study / news sidecars for id/ar/ml.
+   RUN 44 (2026-11-24): cache names bumped v43 -> v44 — home tools grid
+   tile swap (halal-nav.css order rule + index.html) so phones flush the
+   cached stylesheet and home shell. */
+const STATIC_CACHE = "aponar-nihon-static-v44";
+const DYNAMIC_CACHE = "aponar-nihon-dynamic-v44";
 
 const STATIC_ASSETS = [
   "/",
