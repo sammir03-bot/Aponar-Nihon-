@@ -1,4 +1,12 @@
-/* Aponar Nihon service-worker wrapper — app shell v55 — RUN 49 (2026-11-26):
+/* Aponar Nihon service-worker wrapper — app shell v56 — RUN 50 (2026-11-26):
+   TRY! N3 grammar rules 1-19 and 31-113: the machine-style explanation
+   prose is replaced by teacher-voice lessons (one-line heart, why it is
+   used, a story from the learner's own life, step-by-step formation,
+   real common mistakes, self-check questions) in all 14 languages, so
+   all 113 rules now carry teacher lessons; the base worker's caches are
+   bumped to v50 in sw-base-v28.js so installed phones flush and pick up
+   the new lessons.
+   RUN 49 (2026-11-26):
    TRY! N3 grammar rules 20-30: the machine-style explanation prose is
    replaced by teacher-voice lessons (one-line heart, why it is used, a
    story from the learner's own life, step-by-step formation, real common
