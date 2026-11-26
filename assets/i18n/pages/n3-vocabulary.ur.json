@@ -1,22 +1,22 @@
 {
-  "sourceLanguage": "bn",
-  "targetLanguage": "ur",
-  "page": "n3-vocabulary",
-  "reviewed": true,
-  "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
-  "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
-  "entries": [
-    {
-      "source": "JLPT N3 Vocabulary বাংলা | আপনার নিহোন",
-      "target": "JLPT N3 Vocabulary اردو | آپ کا نیہون"
-    },
-    {
-      "source": "N3 Vocabulary লোড হচ্ছে…",
-      "target": "N3 Vocabulary لوڈ ہو رہا ہے…"
-    },
-    {
-      "source": "পুরো ১,৩৪৫ শব্দ প্রস্তুত করা হচ্ছে।",
-      "target": "پورے 1,345 الفاظ تیار کیے جا رہے ہیں۔"
-    }
-  ]
+ "sourceLanguage": "bn",
+ "targetLanguage": "ur",
+ "page": "n3-vocabulary",
+ "reviewed": true,
+ "generatedBy": "machine translation pipeline (Google Gemini via the site owner's Gemini connector, model fallback chain recorded in the run log; seeded by the site's own translation memory and prior reviewed packs)",
+ "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
+ "entries": [
+  {
+   "source": "JLPT N3 Vocabulary বাংলা | আপনার নিহোন",
+   "target": "JLPT N3 Vocabulary اردو | آپ کا نیہون"
+  },
+  {
+   "source": "N3 Vocabulary লোড হচ্ছে…",
+   "target": "N3 Vocabulary لوڈ ہو رہا ہے…"
+  },
+  {
+   "source": "পুরো ১,৩৩৬ শব্দ প্রস্তুত করা হচ্ছে।",
+   "target": "پورے 1,336 الفاظ تیار کیے جا رہے ہیں۔"
+  }
+ ]
 }
