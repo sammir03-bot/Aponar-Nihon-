@@ -27,8 +27,8 @@
    RUN 44 (2026-11-24): cache names bumped v43 -> v44 — home tools grid
    tile swap (halal-nav.css order rule + index.html) so phones flush the
    cached stylesheet and home shell. */
-const STATIC_CACHE = "aponar-nihon-static-v46";
-const DYNAMIC_CACHE = "aponar-nihon-dynamic-v46";
+const STATIC_CACHE = "aponar-nihon-static-v47";
+const DYNAMIC_CACHE = "aponar-nihon-dynamic-v47";
 
 const STATIC_ASSETS = [
   "/",

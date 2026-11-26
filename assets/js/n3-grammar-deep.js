@@ -338,7 +338,7 @@
     },
     48: {
       core: 'লিখিত নির্দেশ, report বা formal narration-এ ます বাদ দেওয়া stem কাজগুলোকে compactভাবে জোড়া দেয়।',
-      nuance: '店を出て、駅へ向かった-এর formal লিখিত রূপ 店を出、… নয়; verb অনুযায়ী 連用形: 店を出て? সব verb শুধু stem দিয়ে যুক্ত করা natural নয়—প্রচলিত formal verbs-এ বেশি।',
+      nuance: '店[みせ]を出[で]て、駅[えき]へ向[む]かった-এর formal লিখিত রূপ হলো 店[みせ]を出[で]、駅[えき]へ向[む]かった—て বাদ দিয়ে 連用形[れんようけい] (ます-stem) দিয়ে জোড়া হয়, এটাই সঠিক রূপ। তবে সব verb শুধু stem দিয়ে যুক্ত করা natural নয়—প্রচলিত formal verb-জোড়ায় (出[で]、向[む]かい、加[くわ]え…) বেশি দেখা যায়।',
       compare: 'て-form দৈনন্দিন ও বহুমুখী; ます-stem connection concise written style, বিশেষত recipes/notices: 加え、混ぜます।',
       memory: 'Recipe-এর জায়গা বাঁচাতে ます কেটে comma বসেছে—切り、入れ、混ぜる。',
       drill: '“কাগজটি ভাঁজ করে, বাক্সে রাখুন” recipe style stem দিয়ে লেখো।'
@@ -701,7 +701,7 @@
       drill: 'আজকাল একটু ঘুম কম হচ্ছে/ক্লান্ত লাগছে—気味 দিয়ে বলো।'
     },
     100: {
-      core: 'যে noun/action-কে reject করা হচ্ছে সেটিকে contempt/emotion সহ সামনে এনে শক্ত否定: “ওরকম N একদমই নয়/করব না।”',
+      core: 'যে noun/action-কে reject করা হচ্ছে সেটিকে contempt/emotion সহ সামনে এনে শক্ত 否定[ひてい]: “ওরকম N একদমই নয়/করব না।”',
       nuance: 'Nなんか＋negative। Tone খুব শক্ত; জিনিস/নিজের idea-তে চলতে পারে, ব্যক্তির দিকে বললে অপমানজনক।',
       compare: '～なんか example বা humility হতে পারে; なんか…ない-এ negative predicate সঙ্গে strong rejection নিশ্চিত।',
       memory: 'N-কে হাত দিয়ে দূরে ঠেলে বলছ “না, একদম না!”—なんか…ない।',
@@ -800,13 +800,26 @@
     }
   };
 
+  // Run 47 furigana fix: bracket notation -> ruby, mirroring n3-grammar-explain.js.
+  const RUBY_TOKEN = /([㐀-鿿々〆ヵヶ][㐀-鿿々〆ぁ-ゖァ-ヶー・]*)\[([ぁ-ゖァ-ヶー]+)\]/g;
+  function rubyHtml(s) {
+    const esc = (x) => String(x).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    let out = '', last = 0, m;
+    RUBY_TOKEN.lastIndex = 0;
+    while ((m = RUBY_TOKEN.exec(String(s)))) {
+      out += esc(String(s).slice(last, m.index)) + '<ruby lang="ja">' + esc(m[1]) + '<rp>（</rp><rt>' + esc(m[2]) + '</rt><rp>）</rp></ruby>';
+      last = m.index + m[0].length;
+    }
+    return out + esc(String(s).slice(last));
+  }
+
   function makeCell(label, text, extraClass) {
     const cell = document.createElement('div');
     cell.className = `deep-mastery-cell${extraClass ? ` ${extraClass}` : ''}`;
     const heading = document.createElement('b');
     heading.textContent = label;
     const paragraph = document.createElement('p');
-    paragraph.textContent = text;
+    paragraph.innerHTML = rubyHtml(text);
     cell.append(heading, paragraph);
     return cell;
   }
