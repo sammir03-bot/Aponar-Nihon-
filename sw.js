@@ -1,4 +1,4 @@
-/* Aponar Nihon service-worker wrapper — app shell v52 — RUN 46 (2026-11-25):
+/* Aponar Nihon service-worker wrapper — app shell v53 — RUN 47 (2026-11-26):
    Quartet I study guide: the book passages become the guide's main entry —
    a "বইয়ের Passage" index strip now sits at the top of the guide and
    Chapter 1 opens with its Reading Lab (the book's passages) as the first

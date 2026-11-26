@@ -7985,6 +7985,954 @@
   {
    "source": "আপনার নিহোনে ফিরুন",
    "target": "Kembali ke আপনার নিহোন"
+  },
+  {
+   "source": "(বা",
+   "target": "(atau"
+  },
+  {
+   "source": ") আসে।",
+   "target": ") muncul."
+  },
+  {
+   "source": ") বসে, তারপর মূল কাজের verb আসে:",
+   "target": ") diletakkan, lalu verb dari tindakan utama muncul:"
+  },
+  {
+   "source": "); এরপর অযোগ্য/অপ্রয়োজনীয় বোঝানো predicate বসে।",
+   "target": "); setelah itu diletakkan predicate yang menunjukkan tidak pantas/tidak perlu."
+  },
+  {
+   "source": "-এর পরে とか বসে:",
+   "target": "Setelah -, とか diletakkan:"
+  },
+  {
+   "source": "-র কোনো অংশ বাদ দেওয়া যায় না, আর এটি বাক্যের শুরুতে বিষয়টি তোলার জন্যই বসে।",
+   "target": "Tidak ada bagian dari - yang boleh dihilangkan, dan bentuk ini diletakkan justru untuk mengangkat topik di awal kalimat."
+  },
+  {
+   "source": "-র কোনো অংশ বাদ দেওয়া যায় না; তবে এটি noun-এর আগে বর্ণনা হিসেবে বসলে রূপ হয়",
+   "target": "Tidak ada bagian dari - yang boleh dihilangkan; tetapi bila diletakkan sebagai keterangan sebelum noun, bentuknya menjadi"
+  },
+  {
+   "source": "-র জায়গায় noun-এর ঠিক পরে",
+   "target": "tepat setelah noun, menggantikan -"
+  },
+  {
+   "source": "-র পরে সাধারণত কোনো কাজের verb নয়, মূল্যায়ন (",
+   "target": "Setelah -, biasanya bukan verb tindakan, melainkan penilaian ("
+  },
+  {
+   "source": "Verb ও い-adjective-এর plain clause-এর শেষে সবচেয়ে বেশি বসে; noun/な-adjective clause-এও শেষের だ না রেখে সরাসরি じゃない জুড়ে বলা হয়।",
+   "target": "Paling sering diletakkan di akhir plain clause dari verb dan い-adjective; pada clause noun/な-adjective pun diucapkan dengan langsung menambahkan じゃない tanpa mempertahankan だ di akhir."
+  },
+  {
+   "source": "Verb, い-adjective সরাসরি plain form-এ; な-adjective-এ な, noun-এ の জুড়ে তার পরে বসে।",
+   "target": "Verb dan い-adjective langsung dalam plain form; pada な-adjective ditambahkan な, pada noun ditambahkan の, lalu setelahnya diletakkan."
+  },
+  {
+   "source": "Verb, い-adjective সরাসরি plain form-এ; な-adjective/noun-এ だ ছাড়া stem-এর পরে বসে।",
+   "target": "Verb dan い-adjective langsung dalam plain form; pada な-adjective/noun diletakkan setelah stem tanpa だ."
+  },
+  {
+   "source": "Verb, い-adjective, な-adjective, noun — চারটিরই plain clause-এর পরে বসে; শুধু な-adjective/noun-এর だ-র ব্যবহার উপরের নিয়মে বদলায়।",
+   "target": "Diletakkan setelah plain clause dari keempatnya — verb, い-adjective, な-adjective, dan noun; hanya penggunaan だ pada な-adjective/noun yang berubah menurut aturan di atas."
+  },
+  {
+   "source": "Verb, い-adjective, な-adjective, noun — চারটিরই plain clause-এর পরে বসে; な-adjective/noun-এ だ থাকে না, সরাসরি だろう বসে।",
+   "target": "Diletakkan setelah plain clause dari keempatnya — verb, い-adjective, な-adjective, dan noun; pada な-adjective/noun tidak ada だ, langsung diletakkan だろう."
+  },
+  {
+   "source": "Verb, い-adjective, な-adjective, noun — চারটিরই plain clause-এর পরে বসে; な-adjective/noun-এ だ বাদ যায় না।",
+   "target": "Diletakkan setelah plain clause dari keempatnya — verb, い-adjective, な-adjective, dan noun; pada な-adjective/noun, だ tidak dihilangkan."
+  },
+  {
+   "source": "Verb, い-adjective, な-adjective, noun — চারটিরই plain clause-এর পরে বসে; な-adjective/noun-এর だ-র ব্যবহার ～ということ-এর মতোই।",
+   "target": "Diletakkan setelah plain clause dari keempatnya — verb, い-adjective, な-adjective, dan noun; penggunaan だ pada な-adjective/noun sama seperti pada ～ということ."
+  },
+  {
+   "source": "Verb, い-adjective-এর plain form-এর পরে সরাসরি; noun-এ だ ছাড়া, な-adjective-এ stem+に আকারে বসে।",
+   "target": "Langsung setelah plain form verb dan い-adjective; pada noun tanpa だ, pada な-adjective dalam bentuk stem+に."
+  },
+  {
+   "source": "Verb, い-adjective-এর plain form-এর পরে সরাসরি; noun-এ だ ছাড়া, な-adjective-এ である আকারে বসে।",
+   "target": "Langsung setelah plain form verb dan い-adjective; pada noun tanpa だ, pada な-adjective dalam bentuk である."
+  },
+  {
+   "source": "clause-এর পরে とは",
+   "target": "setelah clause, とは"
+  },
+  {
+   "source": "noun এবং verb-এর plain form — দুটোরই পরে বসে; দুই বা ততোধিক উদাহরণের প্রতিটির শেষে とか যোগ হয় এবং তালিকাটি সম্পূর্ণ নয় বোঝায়।",
+   "target": "Diletakkan setelah noun maupun plain form verb; とか ditambahkan di akhir setiap contoh dari dua contoh atau lebih, dan menunjukkan bahwa daftarnya tidak lengkap."
+  },
+  {
+   "source": "plain clause-এর পরে に",
+   "target": "setelah plain clause, に"
+  },
+  {
+   "source": "plain clause-এর পরে わけがない বসে (ভদ্র রূপ わけがありません): verb হলে",
+   "target": "Setelah plain clause diletakkan わけがない (bentuk sopan わけがありません): bila verb,"
+  },
+  {
+   "source": "। noun-এর কোনো পরিবর্তন হয় না এবং",
+   "target": ". Noun tidak mengalami perubahan apa pun dan"
+  },
+  {
+   "source": "। গঠন সবসময়",
+   "target": ". Polanya selalu"
+  },
+  {
+   "source": "। বাক্যের শেষে বসলে রূপটি",
+   "target": ". Bila diletakkan di akhir kalimat, bentuknya"
+  },
+  {
+   "source": "। শেষাংশ তিনভাবে বসে: বাক্যের শেষে",
+   "target": ". Bagian akhirnya diletakkan dengan tiga cara: di akhir kalimat"
+  },
+  {
+   "source": "অনুমানের clause-এর পরে だろう, তার পরে と",
+   "target": "Setelah clause dugaan diletakkan だろう, setelah itu と"
+  },
+  {
+   "source": "অনুশীলন না করার কারণে ম্যাচে হেরে গেছি।",
+   "target": "Karena tidak berlatih, saya kalah dalam pertandingan."
+  },
+  {
+   "source": "অবমূল্যায়ন করা noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang diremehkan tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "অস্বীকার করা noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang disangkal tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "আগামীকালের মধ্যে রিপোর্টটি লিখতেই হবে।",
+   "target": "Laporan itu harus ditulis selambat-lambatnya besok."
+  },
+  {
+   "source": "আজ একটু জ্বর-জ্বর লাগছে, তাই তাড়াতাড়ি বাড়ি ফিরব।",
+   "target": "Hari ini saya merasa agak demam, jadi saya akan pulang lebih awal."
+  },
+  {
+   "source": "আমার বন্ধু উঁচু জায়গা ভয় পায়।",
+   "target": "Teman saya takut pada tempat yang tinggi."
+  },
+  {
+   "source": "আরও আগে স্টেশন থেকে বের হলে ভালো হতো।",
+   "target": "Seandainya saya berangkat dari stasiun lebih awal, tentu lebih baik."
+  },
+  {
+   "source": "আলোচনার বিষয় বোঝানো noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang menunjukkan topik pembahasan tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "ইত্যাদি); এরপর পুরো সময়জুড়ে চলা অবস্থা বা ঘটনার verb/adjective বসে।",
+   "target": "dan sebagainya); setelah itu diletakkan verb/adjective keadaan atau peristiwa yang berlangsung selama seluruh waktu tersebut."
+  },
+  {
+   "source": "ইত্যাদি); এরপর প্রতি-এককের মূল্য, সময় বা সীমা বোঝানো অংশ বসে — মূলত নোটিশ ও আনুষ্ঠানিক ঘোষণায় ব্যবহৃত হয়।",
+   "target": "dan sebagainya); setelah itu diletakkan bagian yang menunjukkan harga, waktu, atau batas per satuan — terutama digunakan dalam pemberitahuan dan pengumuman resmi."
+  },
+  {
+   "source": "ইত্যাদি); এরপর মূল্যায়ন বোঝানো adjective/noun বসে।",
+   "target": "dan sebagainya); setelah itu diletakkan adjective/noun yang menunjukkan penilaian."
+  },
+  {
+   "source": "ইমেলটি ইতিমধ্যে পাঠিয়ে থাকার কথা।",
+   "target": "Email itu seharusnya sudah dikirim."
+  },
+  {
+   "source": "উদাহরণ হিসেবে তোলা noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang diangkat sebagai contoh tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "এই পার্কে চেরি ফুল তো অবশ্যই, শরতের লাল পাতাও সুন্দর।",
+   "target": "Di taman ini, bunga sakura tentu saja indah, daun merah musim gugur pun indah."
+  },
+  {
+   "source": "এই স্কুলে শুধু ক্লাসই নয়, সাংস্কৃতিক অনুষ্ঠানও অনেক হয়।",
+   "target": "Di sekolah ini tidak hanya ada kelas, acara budaya pun banyak diadakan."
+  },
+  {
+   "source": "একক বা হার বোঝানো noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang menunjukkan satuan atau tarif tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "একক＋につき＋সংখ্যা/পরিমাণ",
+   "target": "satuan＋につき＋angka/jumlah"
+  },
+  {
+   "source": "এমন সহজ সমস্যা তো সঙ্গে সঙ্গেই সমাধান করা যায়।",
+   "target": "Soal semudah ini tentu bisa langsung diselesaikan."
+  },
+  {
+   "source": "এসে গঠনটি সম্পূর্ণ হয়:",
+   "target": "datang dan polanya menjadi lengkap:"
+  },
+  {
+   "source": "এসে জোরালো অস্বীকার সম্পূর্ণ হয়: うそ → うそなんかついていません。お",
+   "target": "datang dan penyangkalan yang kuat menjadi lengkap: うそ → うそなんかついていません。お"
+  },
+  {
+   "source": "ওই দোকানে একদম আর যাব না।",
+   "target": "Saya tidak akan pernah pergi lagi ke toko itu."
+  },
+  {
+   "source": "কথ্য ভাষায় topic marker",
+   "target": "dalam bahasa lisan, penanda topik"
+  },
+  {
+   "source": "কারণ বোঝানো noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang menunjukkan sebab tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "কারণ বোঝায় এমন noun (প্রাকৃতিক ঘটনা, দুর্ঘটনা, অসুস্থতা, ত্রুটি জাতীয় বিষয়); তারপর による হয়ে ফলাফল বোঝায় এমন noun (ক্ষতি, দেরি, বিভ্রাট, অনুপস্থিতি) বসে।",
+   "target": "Noun yang menunjukkan sebab (peristiwa alam, kecelakaan, penyakit, cacat, dan sejenisnya); kemudian melalui による diletakkan noun yang menunjukkan akibat (kerugian, keterlambatan, gangguan, ketidakhadiran)."
+  },
+  {
+   "source": "কারণের clause-এর পরে からこそ বসে, clause-এর form অপরিবর্তিত থাকে: verb হলে",
+   "target": "Setelah clause sebab diletakkan からこそ, bentuk clause tidak berubah: bila verb,"
+  },
+  {
+   "source": "কারণের clause-এর পরে からといって বসে, clause-এর form অপরিবর্তিত থাকে: verb হলে",
+   "target": "Setelah clause sebab diletakkan からといって, bentuk clause tidak berubah: bila verb,"
+  },
+  {
+   "source": "কারণ＋による＋ফলাফল",
+   "target": "sebab＋による＋akibat"
+  },
+  {
+   "source": "কাল টাইফুন আসবে বলে ট্রেন নিশ্চয়ই থেমে যাবে।",
+   "target": "Karena besok topan akan datang, kereta pasti akan berhenti."
+  },
+  {
+   "source": "কালকের পরীক্ষাটা কি কঠিন?",
+   "target": "Apakah ujian besok sulit?"
+  },
+  {
+   "source": "ক্লান্ত হওয়া সত্ত্বেও জোর করে কাজ করে যাচ্ছে।",
+   "target": "Meskipun lelah, ia memaksakan diri untuk terus bekerja."
+  },
+  {
+   "source": "গঠনটি দুই অংশের: প্রথম noun-এর পরে",
+   "target": "Polanya terdiri dari dua bagian: setelah noun pertama"
+  },
+  {
+   "source": "ঘর পরিষ্কার করতে করতে হারানো চাবিটি পেয়ে গেছি।",
+   "target": "Saat sedang membersihkan kamar, saya menemukan kunci yang hilang."
+  },
+  {
+   "source": "ঘরে ঢুকতেই হঠাৎ ফোন বেজে উঠতে শুরু করল।",
+   "target": "Begitu masuk ke kamar, tiba-tiba telepon mulai berdering."
+  },
+  {
+   "source": "ঘুম থেকে দেরি করে ওঠায় মুখ না ধুয়ে বাড়ি থেকে বের হয়েছি।",
+   "target": "Karena bangun kesiangan, saya keluar rumah tanpa mencuci muka."
+  },
+  {
+   "source": "চশমা পরা অবস্থায়ই শাওয়ার করে ফেলেছি।",
+   "target": "Saya terlanjur mandi shower dalam keadaan masih memakai kacamata."
+  },
+  {
+   "source": "চেনা চরিত্রের মানুষ বোঝানো noun-এর পরে",
+   "target": "setelah noun yang menunjukkan orang yang karakternya dikenal"
+  },
+  {
+   "source": "ছেলেটি শুধু মাঙ্গাই পড়ে।",
+   "target": "Anak laki-laki itu hanya membaca manga."
+  },
+  {
+   "source": "জন্মস্থানের মতো আপন জায়গা আর নেই।",
+   "target": "Tidak ada tempat yang senyaman tempat kelahiran sendiri."
+  },
+  {
+   "source": "জানালাটা খুলে দেবেন?",
+   "target": "Bisakah Anda membukakan jendelanya?"
+  },
+  {
+   "source": "তথ্যের উৎস বোঝানো noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang menunjukkan sumber informasi tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "তথ্যের উৎস বোঝায় এমন noun (খবর, আবহাওয়া-পূর্বাভাস, পত্রিকা, কোনো ব্যক্তি বা সংস্থার ঘোষণা); বাক্যের শুরুতে বসে এবং শেষে সাধারণত そうだ বা ということだ আসে।",
+   "target": "Noun yang menunjukkan sumber informasi (berita, prakiraan cuaca, surat kabar, pernyataan seseorang atau suatu organisasi); diletakkan di awal kalimat dan di akhir biasanya muncul そうだ atau ということだ."
+  },
+  {
+   "source": "তার কণ্ঠ গায়িকাসুলভ সুন্দর।",
+   "target": "Suaranya indah seperti penyanyi."
+  },
+  {
+   "source": "তুলনার ভিত্তি বোঝানো noun-এর পরে",
+   "target": "setelah noun yang menunjukkan dasar perbandingan"
+  },
+  {
+   "source": "তুলনীয় দুটি noun (বিষয়, জায়গা, সময়, মানুষ বা গুণ); প্রথমটির পরে はもちろん আর দ্বিতীয়টির পরে も বসে, যেখানে দ্বিতীয়টি হলো অতিরিক্ত/বিস্ময়কর তথ্য।",
+   "target": "Dua noun yang dapat dibandingkan (hal, tempat, waktu, orang, atau sifat); setelah yang pertama diletakkan はもちろん dan setelah yang kedua も, di mana yang kedua adalah informasi tambahan/yang mengejutkan."
+  },
+  {
+   "source": "দাদিকে ফোন করলেই লম্বা কথা হয়ে যায়।",
+   "target": "Setiap kali menelepon nenek, pembicaraannya menjadi panjang."
+  },
+  {
+   "source": "দায়িত্বপ্রাপ্ত শিক্ষকের কাছ থেকে নির্দেশনা পেয়েছি।",
+   "target": "Saya menerima arahan dari guru yang bertanggung jawab."
+  },
+  {
+   "source": "দিয়ে — noun-এর আগে বসা による রূপটি এখানে ব্যবহার হয় না।",
+   "target": "dengan — bentuk による yang diletakkan sebelum noun tidak digunakan di sini."
+  },
+  {
+   "source": "নিজে কখনো বদলায় না, আর দুই noun-এর মাঝখানে কোনো particle বসে না।",
+   "target": "Bentuk itu sendiri tidak pernah berubah, dan di antara kedua noun tidak diletakkan particle apa pun."
+  },
+  {
+   "source": "নেতিবাচক রূপ",
+   "target": "bentuk negatif"
+  },
+  {
+   "source": "পুরো clause-টিকে noun বানিয়ে তার পরে ということ বসে — clause-এর শেষ form-টাই ঠিক থাকে: verb হলে",
+   "target": "Seluruh clause dijadikan noun, lalu setelahnya diletakkan ということ — bentuk akhir clause tetap persis sama: bila verb,"
+  },
+  {
+   "source": "পুরো শীতজুড়ে এই হ্রদটি জমে থাকে।",
+   "target": "Sepanjang musim dingin, danau ini membeku."
+  },
+  {
+   "source": "পুরো সময়কাল বোঝানো noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang menunjukkan seluruh kurun waktu tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "প্রতিটি উদাহরণের শেষে আলাদা করে",
+   "target": "secara terpisah di akhir setiap contoh"
+  },
+  {
+   "source": "বড় ভাই আমার প্রিয় ছাতাটা হারিয়ে ফেলেছে।",
+   "target": "Kakak laki-laki saya menghilangkan payung kesayangan saya."
+  },
+  {
+   "source": "বন্ধুটি যেন পেশাদার খেলোয়াড়—এমনভাবে দক্ষভাবে সাঁতার কাটল।",
+   "target": "Teman itu berenang dengan terampil, seolah-olah ia atlet profesional."
+  },
+  {
+   "source": "বললে তা বিনয় শোনায়, কিন্তু একই গঠন অন্য মানুষের নামে বসলে তা অবজ্ঞা শোনায় — বসানোর জায়গা অনুযায়ী টোন বদলে যায়।",
+   "target": "Bila diucapkan untuk diri sendiri terdengar merendah, tetapi bila pola yang sama diletakkan untuk orang lain terdengar meremehkan — nadanya berubah tergantung pada siapa yang menjadi sasaran."
+  },
+  {
+   "source": "বসে — noun-এর কোনো পরিবর্তন হয় না, আর は তখন আর থাকে না: この",
+   "target": "diletakkan — noun tidak mengalami perubahan apa pun, dan は pada saat itu tidak ada lagi: この"
+  },
+  {
+   "source": "বসে — একটিমাত্র  とか দিয়ে এই গঠন হয় না: すし → すしとか",
+   "target": "diletakkan — pola ini tidak terbentuk hanya dengan satu とか: すし → すしとか"
+  },
+  {
+   "source": "বসে — の বাদ দেওয়া যায় না:",
+   "target": "diletakkan — の tidak boleh dihilangkan:"
+  },
+  {
+   "source": "বসে, noun-এর নিজের কোনো পরিবর্তন হয় না:",
+   "target": "diletakkan, noun itu sendiri tidak mengalami perubahan apa pun:"
+  },
+  {
+   "source": "বসে, আর পরে আসে পার্থক্য বোঝানো predicate:",
+   "target": "diletakkan, dan setelahnya muncul predicate yang menunjukkan perbedaan:"
+  },
+  {
+   "source": "বসে, আর বাক্যের শেষে অবশ্যই একটি",
+   "target": "diletakkan, dan di akhir kalimat pasti ada sebuah"
+  },
+  {
+   "source": "বসে, আর বাক্যের শেষে সাধারণত",
+   "target": "diletakkan, dan di akhir kalimat biasanya"
+  },
+  {
+   "source": "বসে, তারপর",
+   "target": "diletakkan, lalu"
+  },
+  {
+   "source": "বসে, তারপর আরেকটি noun আসে যার কাজ/বিষয়টি ওই মাধ্যমে হয়:",
+   "target": "diletakkan, lalu muncul noun lain yang tindakan/topiknya terjadi melalui perantara tersebut:"
+  },
+  {
+   "source": "বসে, তারপর তুচ্ছ/অযোগ্য বোঝানো মূল্যায়ন আসে:",
+   "target": "diletakkan, lalu muncul penilaian yang menunjukkan remeh/tidak layak:"
+  },
+  {
+   "source": "বসে, তারপর মূল্যায়নের কথাটি আসে:",
+   "target": "diletakkan, lalu muncul ungkapan penilaiannya:"
+  },
+  {
+   "source": "বসে, তারপর সেই এককের হার/সীমা:",
+   "target": "diletakkan, lalu tarif/batas satuan tersebut:"
+  },
+  {
+   "source": "বসে, তারপর সেই কারণে ঘটা ফলাফল বোঝানো noun আসে:",
+   "target": "diletakkan, lalu muncul noun yang menunjukkan akibat yang terjadi karena sebab tersebut:"
+  },
+  {
+   "source": "বসে, তারপর সেই বিষয় শুনলেই প্রথমে মনে আসা প্রতিনিধি জিনিসটি বলা হয়:",
+   "target": "diletakkan, lalu disebutkan hal perwakilan yang pertama terlintas begitu mendengar topik tersebut:"
+  },
+  {
+   "source": "বসে, তারপর সেই বিষয়ে কথা বলা/ভাবা/জিজ্ঞেস করার verb আসে:",
+   "target": "diletakkan, lalu muncul verb berbicara/memikirkan/menanyakan tentang hal tersebut:"
+  },
+  {
+   "source": "বসে, তারপর সেই রকমের noun আসে:",
+   "target": "diletakkan, lalu muncul noun yang seperti itu:"
+  },
+  {
+   "source": "বসে:",
+   "target": "diletakkan:"
+  },
+  {
+   "source": "বসে: お",
+   "target": "diletakkan: お"
+  },
+  {
+   "source": "বাক্যের শুরুতে বসে; মাঝখানে বা শেষে টেনে আনা যায় না।",
+   "target": "Diletakkan di awal kalimat; tidak dapat dipindahkan ke tengah atau akhir."
+  },
+  {
+   "source": "বাচ্চা ঘুমিয়ে থাকতেই কেনাকাটা করে আসি।",
+   "target": "Selagi anak tidur, saya pergi berbelanja."
+  },
+  {
+   "source": "বাদ দেওয়া জিনিস বোঝানো noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang menunjukkan hal yang dikecualikan tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "বাদ দেওয়া যায় না —",
+   "target": "tidak boleh dihilangkan —"
+  },
+  {
+   "source": "বাদ দেওয়া যায় না, আর আগে আসা noun-টি অবশ্যই একটি বিস্তৃত সময়/পর্ব হতে হয় — এক মুহূর্তের সময় হলে এই গঠন বসে না।",
+   "target": "Tidak boleh dihilangkan, dan noun yang muncul sebelumnya harus berupa rentang waktu/periode yang panjang — bila waktunya hanya sesaat, pola ini tidak digunakan."
+  },
+  {
+   "source": "বাদ দেওয়া যায় না। তবে pattern-টি verb-কে বর্ণনা করলে শেষাংশ বদলে হয়",
+   "target": "Tidak boleh dihilangkan. Namun, bila pattern ini menerangkan verb, bagian akhirnya berubah menjadi"
+  },
+  {
+   "source": "বাবা এখন সংবাদপত্র পড়ছে।",
+   "target": "Ayah sekarang sedang membaca koran."
+  },
+  {
+   "source": "বাস আর নেই, তাই বন্ধুর বাসায় রাত কাটানো ছাড়া উপায় নেই।",
+   "target": "Bus sudah tidak ada, jadi tidak ada pilihan selain menginap di rumah teman."
+  },
+  {
+   "source": "বিদেশি শিক্ষার্থীদের জন্য বাসা ভাড়া বেশি হওয়া বড় সমস্যা।",
+   "target": "Bagi pelajar asing, sewa tempat tinggal yang mahal adalah masalah besar."
+  },
+  {
+   "source": "বিভাগীয় প্রধান এখন ইমেইল লিখছেন।",
+   "target": "Kepala bagian sekarang sedang menulis email."
+  },
+  {
+   "source": "বিষয় বোঝানো noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang menunjukkan topik tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "বোন ঘরে গান গাইছে।",
+   "target": "Adik perempuan bernyanyi di kamar."
+  },
+  {
+   "source": "ভরে যাওয়া জিনিস বোঝানো noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang menunjukkan hal yang memenuhi dan meluap tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "মনে হচ্ছে ঘরটা নীরব।",
+   "target": "Kamarnya terasa sunyi."
+  },
+  {
+   "source": "মাঝখানে থাকা মাধ্যম/মানুষ বোঝানো noun-এর পরে",
+   "target": "setelah noun yang menunjukkan perantara/orang yang berada di tengah"
+  },
+  {
+   "source": "মাধ্যম বোঝানো noun-এর কোনো পরিবর্তন হয় না — noun-এর ঠিক পরে",
+   "target": "Noun yang menunjukkan perantara tidak mengalami perubahan apa pun — tepat setelah noun"
+  },
+  {
+   "source": "মানেই ‘ওই N-এর কথা বললে…’ — একই বাক্যে は আর って দুটো একসঙ্গে বসে না।",
+   "target": "Artinya ‘kalau soal N itu…’ — dalam satu kalimat yang sama, は dan って tidak diletakkan bersamaan."
+  },
+  {
+   "source": "মুহূর্তের ধারণার clause-এর পরে かと",
+   "target": "setelah clause yang mengandung bayangan sesaat, かと"
+  },
+  {
+   "source": "মূলত noun — আলোচনা, চিন্তা বা প্রশ্নের বিষয় বোঝায় এমন noun; এরপর",
+   "target": "Pada dasarnya noun — noun yang menunjukkan topik pembahasan, pemikiran, atau pertanyaan; setelah itu"
+  },
+  {
+   "source": "মূলত noun — আলোচনার সূত্র বোঝায় এমন noun (জায়গা, ঋতু, খাবার, অনুষ্ঠান বা বিষয়); এরপর সেটির সবচেয়ে পরিচিত প্রতিনিধি উদাহরণ বা মনে-পড়া বিষয় বসে।",
+   "target": "Pada dasarnya noun — noun yang menunjukkan pemicu pembahasan (tempat, musim, makanan, acara, atau topik); setelah itu diletakkan contoh perwakilannya yang paling dikenal atau hal yang teringat darinya."
+  },
+  {
+   "source": "মূলত noun — উদাহরণ বা তুলনার ভিত্তি বোঝায় এমন noun (জায়গা, মানুষ, জিনিস, ঋতু); এরপর のような হয়ে বর্ণনা-পাওয়া noun বসে।",
+   "target": "Pada dasarnya noun — noun yang menunjukkan contoh atau dasar perbandingan (tempat, orang, benda, musim); setelah itu melalui のような diletakkan noun yang diterangkan."
+  },
+  {
+   "source": "মূলত noun — উদাহরণ হিসেবে হালকাভাবে তোলা জিনিস, খাবার, কাজ বা জায়গা; particle দরকার হলে তা noun-এর গায়ে নয়, なんか-এর পরে বসে।",
+   "target": "Pada dasarnya noun — benda, makanan, pekerjaan, atau tempat yang diangkat secara ringan sebagai contoh; bila particle diperlukan, particle itu diletakkan bukan pada noun, melainkan setelah なんか."
+  },
+  {
+   "source": "মূলত noun — চরিত্র ও স্বভাব ভালোভাবে চেনা এমন মানুষ (বা পরিচিত সংস্থা); এরপর তার স্বভাব থেকে অনুমান করা কথা বসে, সাধারণত きっと・はず・でしょう সহ।",
+   "target": "Pada dasarnya noun — orang (atau organisasi yang dikenal) yang karakter dan sifatnya dikenal dengan baik; setelah itu diletakkan dugaan yang ditarik dari sifatnya, biasanya bersama きっと・はず・でしょう."
+  },
+  {
+   "source": "মূলত noun — চারদিকে ছড়িয়ে ভরে যাওয়া অপছন্দনীয় জিনিস বোঝায় এমন noun (ভুল, কাদা, আবর্জনা, ক্ষত, ঘাম); এরপর です、の＋noun বা になる বসে।",
+   "target": "Pada dasarnya noun — noun yang menunjukkan hal tidak menyenangkan yang menyebar dan memenuhi sekeliling (kesalahan, lumpur, sampah, luka, keringat); setelah itu diletakkan です、の＋noun atau になる."
+  },
+  {
+   "source": "মূলত noun — জোর দিয়ে অস্বীকার করা বিষয় বোঝায় এমন noun (কাজ, কথা, জিনিস, অনুভূতি); বাক্যের শেষে অবশ্যই নেতিবাচক predicate বসে।",
+   "target": "Pada dasarnya noun — noun yang menunjukkan hal yang disangkal dengan tegas (tindakan, ucapan, benda, perasaan); di akhir kalimat pasti diletakkan predicate negatif."
+  },
+  {
+   "source": "মূলত noun — তুচ্ছ করে দেখা মানুষ বা জিনিস বোঝায় এমন noun (বিনয়ের জন্য বিশেষ করে",
+   "target": "Pada dasarnya noun — noun yang menunjukkan orang atau benda yang dipandang remeh (khususnya untuk merendah,"
+  },
+  {
+   "source": "মূলত noun — বাদ দিয়ে করা হচ্ছে এমন জিনিস, ধাপ বা ব্যক্তি বোঝায় এমন noun (খাবার, বিরতি, মজা, ব্যাখ্যা); এরপর মূল কাজের verb বসে।",
+   "target": "Pada dasarnya noun — noun yang menunjukkan hal, langkah, atau orang yang dikecualikan saat melakukan sesuatu (makanan, istirahat, lelucon, penjelasan); setelah itu diletakkan verb tindakan utama."
+  },
+  {
+   "source": "মূলত noun — ভেদের ভিত্তি বোঝায় এমন noun (মানুষ, দেশ, ঋতু, দোকান, সময়, বয়স); এরপর",
+   "target": "Pada dasarnya noun — noun yang menunjukkan dasar perbedaan (orang, negara, musim, toko, waktu, usia); setelah itu"
+  },
+  {
+   "source": "মূলত noun — মধ্যস্থ/মাধ্যম বোঝায় এমন noun (মানুষ, সংস্থা, ইন্টারনেট জাতীয় মাধ্যম, বা কোনো অভিজ্ঞতা); এরপর মূল কাজের verb বসে।",
+   "target": "Pada dasarnya noun — noun yang menunjukkan perantara/media (orang, organisasi, media seperti internet, atau suatu pengalaman); setelah itu diletakkan verb tindakan utama."
+  },
+  {
+   "source": "মূলত noun — মাধ্যম/উপায় বোঝায় এমন noun (যন্ত্র, যোগাযোগ-মাধ্যম, ব্যক্তি বা সংস্থা) প্রথমে বসে; তার ঠিক পরে による হয়ে দ্বিতীয় noun (কাজ, আবেদন, পেমেন্ট জাতীয় বিষয়) বসে।",
+   "target": "Pada dasarnya noun — noun yang menunjukkan media/cara (alat, media komunikasi, orang, atau organisasi) diletakkan pertama; tepat setelahnya melalui による diletakkan noun kedua (hal seperti pekerjaan, permohonan, pembayaran)."
+  },
+  {
+   "source": "মূলত noun — মানুষ, প্রশ্ন, মতামত, অভিযোগ ইত্যাদি যার প্রতি মনোভাব, আচরণ বা প্রতিক্রিয়া দেখানো হয়; এরপর সেই মনোভাব/প্রতিক্রিয়া বোঝানো verb বা adjective বসে।",
+   "target": "Pada dasarnya noun — orang, pertanyaan, pendapat, keluhan, dan sebagainya yang menjadi sasaran sikap, perilaku, atau reaksi; setelah itu diletakkan verb atau adjective yang menunjukkan sikap/reaksi tersebut."
+  },
+  {
+   "source": "মূলত noun — মূল্যায়ন যার জন্য/যার দৃষ্টিতে, সেই মানুষ বা গোষ্ঠী বোঝায় এমন noun (",
+   "target": "Pada dasarnya noun — noun yang menunjukkan orang atau kelompok yang untuknya/dari sudut pandangnya penilaian dibuat ("
+  },
+  {
+   "source": "মূলত noun — যাদের উদ্দেশ্য করে তৈরি, সেই গোষ্ঠী বোঝায় এমন noun (শিশু, ছাত্র, বিদেশি, পর্যটক জাতীয় মানুষের ধরন); এরপর の হয়ে পণ্য, বই, সেবা বা অনুষ্ঠান বোঝায় এমন noun বসে।",
+   "target": "Pada dasarnya noun — noun yang menunjukkan kelompok sasaran pembuatannya (jenis orang seperti anak-anak, pelajar, orang asing, wisatawan); setelah itu melalui の diletakkan noun yang menunjukkan produk, buku, layanan, atau acara."
+  },
+  {
+   "source": "যার দিকে মনোভাব বা প্রতিক্রিয়া যাচ্ছে, সেই noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang menjadi arah sikap atau reaksi tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "যার দৃষ্টিকোণ থেকে মূল্যায়ন করা হচ্ছে, সেই noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang dari sudut pandangnya penilaian dilakukan tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "যার ভেদে ফল বদলায়, সেই noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang perbedaannya mengubah hasil tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "যেকোনো noun যা বাক্যের topic হতে পারে (মানুষ, জায়গা, জিনিস, পরীক্ষা বা বিষয়); শুধু কথ্য ভাষায় বসে — আনুষ্ঠানিক লেখা ও বক্তব্যে এর বদলে は ব্যবহার হয়।",
+   "target": "Noun apa pun yang dapat menjadi topic kalimat (orang, tempat, benda, ujian, atau hal); hanya digunakan dalam bahasa lisan — dalam tulisan dan pidato resmi, は digunakan sebagai gantinya."
+  },
+  {
+   "source": "লক্ষ্য গোষ্ঠী বোঝানো noun-এর কোনো পরিবর্তন হয় না — ঠিক পরে",
+   "target": "Noun yang menunjukkan kelompok sasaran tidak mengalami perubahan apa pun — tepat setelahnya"
+  },
+  {
+   "source": "লম্বা রিপোর্টটি এক রাতেই পুরো লিখে শেষ করেছি।",
+   "target": "Laporan yang panjang itu selesai saya tulis seluruhnya dalam satu malam."
+  },
+  {
+   "source": "শিক্ষক কঠোর বলেই শিক্ষার্থীরা মনোযোগ দিয়ে পড়ে।",
+   "target": "Justru karena gurunya tegas, para siswa belajar dengan penuh perhatian."
+  },
+  {
+   "source": "শিক্ষকের নাম আমি আগে থেকেই জানি।",
+   "target": "Nama guru itu sudah saya ketahui sejak sebelumnya."
+  },
+  {
+   "source": "শিশুদের সামনে খারাপ কথা বলা উচিত নয়।",
+   "target": "Di depan anak-anak, tidak sepatutnya mengucapkan kata-kata buruk."
+  },
+  {
+   "source": "শোনা তথ্যের clause-এর পরে ということです বসে, clause-এর form বদলায় না: verb হলে",
+   "target": "Setelah clause informasi yang didengar diletakkan ということです, bentuk clause tidak berubah: bila verb,"
+  },
+  {
+   "source": "সংখ্যা+counter দিয়ে গোনা যায় এমন একক বোঝানো noun (",
+   "target": "Noun yang menunjukkan satuan yang dapat dihitung dengan angka+counter ("
+  },
+  {
+   "source": "সবে নতুন অ্যাপার্টমেন্টে উঠেছি।",
+   "target": "Saya baru saja pindah ke apartemen baru."
+  },
+  {
+   "source": "সময়কাল বা পুরো পর্ব বোঝায় এমন noun (",
+   "target": "Noun yang menunjukkan kurun waktu atau seluruh periode ("
+  },
+  {
+   "source": "সময়সূচি অনুযায়ী ক্লাস এগিয়ে চলল।",
+   "target": "Kelas berjalan sesuai jadwal."
+  },
+  {
+   "source": "সম্পূর্ণ plain clause-এর একদম শেষে じゃない জুড়লেই হয়, clause-এর ভেতরের form একটুও বদলায় না:",
+   "target": "Cukup tambahkan じゃない tepat di akhir plain clause yang lengkap, bentuk di dalam clause tidak berubah sedikit pun:"
+  },
+  {
+   "source": "সম্প্রতি পাড়ায় নতুন দোকান বাড়তে শুরু করেছে।",
+   "target": "Akhir-akhir ini toko-toko baru di lingkungan ini mulai bertambah."
+  },
+  {
+   "source": "সহ",
+   "target": "bersama"
+  },
+  {
+   "source": "সহ পুরো",
+   "target": "bersama seluruh"
+  },
+  {
+   "source": "সিনিয়র স্টেশন পর্যন্ত পৌঁছে দেওয়ায় ট্রেন ধরতে পেরেছি।",
+   "target": "Karena senior mengantar saya sampai stasiun, saya berhasil naik kereta."
+  },
+  {
+   "source": "সে তুষারের মতো সাদা ওয়ানপিস পরে আছে।",
+   "target": "Ia memakai gaun terusan putih seperti salju."
+  },
+  {
+   "source": "সে যেন কিছুই শোনেনি—এমনভাবে জানালার বাইরে তাকিয়ে ছিল।",
+   "target": "Ia menatap ke luar jendela seolah-olah tidak mendengar apa pun."
+  },
+  {
+   "source": "স্কুলভেদে ইউনিফর্ম আলাদা।",
+   "target": "Seragam berbeda-beda tergantung sekolahnya."
+  },
+  {
+   "source": "স্টেশনের ঘোষণা অনুযায়ী, ট্রেন কিছুক্ষণ দেরি করবে বলে শোনা গেছে।",
+   "target": "Menurut pengumuman di stasiun, terdengar bahwa kereta akan terlambat beberapa saat."
+  },
+  {
+   "source": "হয়; মাঝখানে কোনো particle বসে না।",
+   "target": "menjadi; di tengahnya tidak diletakkan particle apa pun."
+  },
+  {
+   "source": "হয়ে পণ্য/সেবাটির নাম আসে:",
+   "target": "melalui itu muncul nama produk/layanannya:"
+  },
+  {
+   "source": "— এই জোড়াটি একসঙ্গে মনে রাখো।",
+   "target": "— ingatlah pasangan ini sebagai satu kesatuan."
+  },
+  {
+   "source": "— দুই noun-এরই কোনো পরিবর্তন হয় না:",
+   "target": "— kedua noun tidak mengalami perubahan apa pun:"
+  },
+  {
+   "source": "— প্রথম noun-টি কারণ না হলে এই অর্থ দাঁড়ায় না।",
+   "target": "— bila noun pertama bukan sebab, makna ini tidak terbentuk."
+  },
+  {
+   "source": "— মাঝখানে কোনো particle বসে না।",
+   "target": "— di tengahnya tidak diletakkan particle apa pun."
+  },
+  {
+   "source": "— につき-র আগে আলাদা কোনো particle বসে না।",
+   "target": "— sebelum につき tidak diletakkan particle terpisah apa pun."
+  },
+  {
+   "source": "、noun-এর আগে",
+   "target": "、sebelum noun"
+  },
+  {
+   "source": "、আর অবস্থার পরিবর্তনে",
+   "target": "、dan pada perubahan keadaan"
+  },
+  {
+   "source": "、দ্বিতীয় noun-এর পরে",
+   "target": "、setelah noun kedua"
+  },
+  {
+   "source": "いありません): verb হলে",
+   "target": "いありません): bila verb,"
+  },
+  {
+   "source": "いということ (だ বসে না)। な-adjective/noun-এর present positive-এ だ থাকে:",
+   "target": "いということ (だ tidak diletakkan). Pada present positive な-adjective/noun, だ tetap ada:"
+  },
+  {
+   "source": "いない বসে (ভদ্র রূপ に",
+   "target": "いない diletakkan (bentuk sopan に"
+  },
+  {
+   "source": "いない; い-adjective হলে",
+   "target": "いない; bila い-adjective,"
+  },
+  {
+   "source": "いない; な-adjective হলে である রূপ নাও:",
+   "target": "いない; bila な-adjective, ambillah bentuk である:"
+  },
+  {
+   "source": "いない। noun-এর だ বাদ যায়, সরাসরি に বসে:",
+   "target": "いない. だ pada noun dihilangkan, langsung diletakkan に:"
+  },
+  {
+   "source": "いました): verb হলে",
+   "target": "いました): bila verb,"
+  },
+  {
+   "source": "いわけがない। わけ একটি noun, তাই তার আগের modifier-এর নিয়ম মানতে হয়: な-adjective হলে な জোড়ে:",
+   "target": "いわけがない. わけ adalah sebuah noun, jadi harus mengikuti aturan modifier sebelumnya: bila な-adjective, tambahkan な:"
+  },
+  {
+   "source": "う বসে: verb হলে",
+   "target": "う diletakkan: bila verb,"
+  },
+  {
+   "source": "う, past হলে",
+   "target": "う, bila past,"
+  },
+  {
+   "source": "う; い-adjective হলে",
+   "target": "う; bila い-adjective,"
+  },
+  {
+   "source": "う। な-adjective/noun-এর だ বাদ যায়, だろう-ই তার জায়গা নেয়:",
+   "target": "う. だ pada な-adjective/noun dihilangkan, dan だろう-lah yang mengambil tempatnya:"
+  },
+  {
+   "source": "えるわけがない; い-adjective হলে",
+   "target": "えるわけがない; bila い-adjective,"
+  },
+  {
+   "source": "からだということです; negative-এ だ পড়ে যায়:",
+   "target": "からだということです; pada bentuk negatif, だ gugur:"
+  },
+  {
+   "source": "がある। আর pattern-টি অন্য noun-এর আগে বর্ণনা হিসেবে বসলে রূপ হয়",
+   "target": "がある. Dan bila pattern ini diletakkan sebagai keterangan sebelum noun lain, bentuknya menjadi"
+  },
+  {
+   "source": "き ＋ grammar। します → し ＋ grammar。 এই নিয়মে এই pattern-এর পুরো রূপটি দাঁড়ায় যেমন:",
+   "target": "き ＋ grammar. します → し ＋ grammar。 Dengan aturan ini, bentuk lengkap pattern ini menjadi seperti:"
+  },
+  {
+   "source": "き, তার সাথে",
+   "target": "き, bersamanya"
+  },
+  {
+   "source": "き, তার সাথে かけ জুড়ে",
+   "target": "き, dengan menambahkan かけ padanya"
+  },
+  {
+   "source": "きかけ — noun-এর আগে হলে",
+   "target": "きかけ — bila sebelum noun"
+  },
+  {
+   "source": "きかけのメール-এর মতো かけの আকারে বসে।",
+   "target": "diletakkan dalam bentuk かけの, seperti pada きかけのメール."
+  },
+  {
+   "source": "きました。আর pattern-টি noun-এর আগে বর্ণনা হিসেবে বসলে রূপ হয়",
+   "target": "きました. Dan bila pattern ini diletakkan sebagai keterangan sebelum noun, bentuknya menjadi"
+  },
+  {
+   "source": "きます → ます বাদ দিয়ে",
+   "target": "きます → dengan menghilangkan ます"
+  },
+  {
+   "source": "くありません। শেষের নেতিবাচক অংশ (～ない・～たくない・～くない) বাদ পড়লে এই গঠনই থাকে না — なんか আর নেতিবাচক রূপ জোড়া হিসেবে মনে রাখো।",
+   "target": "くありません. Bila bagian negatif di akhir (～ない・～たくない・～くない) hilang, pola ini pun tidak ada lagi — ingatlah なんか dan bentuk negatif sebagai satu pasangan."
+  },
+  {
+   "source": "け, তার সাথে っぱなし জুড়ে",
+   "target": "け, dengan menambahkan っぱなし padanya"
+  },
+  {
+   "source": "けます → ます বাদ দিয়ে",
+   "target": "けます → dengan menghilangkan ます"
+  },
+  {
+   "source": "けます। দ্বিতীয় noun-এর পরে は বসে না, বসে",
+   "target": "けます. Setelah noun kedua tidak diletakkan は, melainkan diletakkan"
+  },
+  {
+   "source": "ける জুড়ে",
+   "target": "dengan menambahkan ける"
+  },
+  {
+   "source": "さんって、JLPTは → JLPTって। অর্থাৎ",
+   "target": "さんって、JLPTは → JLPTって. Artinya"
+  },
+  {
+   "source": "しいからこそ। な-adjective/noun-এর present positive-এ だ থাকে:",
+   "target": "しいからこそ. Pada present positive な-adjective/noun, だ tetap ada:"
+  },
+  {
+   "source": "しいからといって। な-adjective/noun-এর present positive-এ だ থাকে:",
+   "target": "しいからといって. Pada present positive な-adjective/noun, だ tetap ada:"
+  },
+  {
+   "source": "しいということです (だ বসে না)। な-adjective/noun-এর present positive-এ だ থাকে:",
+   "target": "しいということです (だ tidak diletakkan). Pada present positive な-adjective/noun, だ tetap ada:"
+  },
+  {
+   "source": "したからこそ; い-adjective হলে",
+   "target": "したからこそ; bila い-adjective,"
+  },
+  {
+   "source": "して একাই বসে না, পুরো গঠনটি একসঙ্গে মনে রাখো।",
+   "target": "して tidak diletakkan sendirian, ingatlah seluruh polanya sebagai satu kesatuan."
+  },
+  {
+   "source": "して। এখানে",
+   "target": "して. Di sini"
+  },
+  {
+   "source": "す জুড়ে",
+   "target": "dengan menambahkan す"
+  },
+  {
+   "source": "する জাতীয় verb বসে।",
+   "target": "diletakkan verb sejenis する."
+  },
+  {
+   "source": "するはずです। গঠনটি বাক্যের শুরুতে বসে, পরে সেই স্বভাব থেকে করা অনুমানটি আসে।",
+   "target": "するはずです. Pola ini diletakkan di awal kalimat, lalu setelahnya muncul dugaan yang ditarik dari sifat tersebut."
+  },
+  {
+   "source": "たじゃない। এটি সাধারণ negative নয় — শেষের স্বর উঁচু করে বললেই তিরস্কার বা আবিষ্কারের জোর আসে, তাই আলাদা করে কোনো form বানাতে হয় না।",
+   "target": "たじゃない. Ini bukan negative biasa — hanya dengan mengucapkan nada akhir yang meninggi, tekanan teguran atau penemuan muncul, jadi tidak perlu membuat bentuk tersendiri."
+  },
+  {
+   "source": "った বসে (ভদ্র রূপ かと",
+   "target": "った diletakkan (bentuk sopan かと"
+  },
+  {
+   "source": "った); এখানে な/の-ও জুড়বে না।",
+   "target": "った); di sini な/の pun tidak ditambahkan."
+  },
+  {
+   "source": "った; い-adjective হলে",
+   "target": "った; bila い-adjective,"
+  },
+  {
+   "source": "った। な-adjective/noun-এর だ বাদ যায়, stem-এর পরেই か বসে:",
+   "target": "った. だ pada な-adjective/noun dihilangkan, dan か diletakkan tepat setelah stem:"
+  },
+  {
+   "source": "ったということ; い-adjective হলে",
+   "target": "ったということ; bila い-adjective,"
+  },
+  {
+   "source": "っている — noun আর particle-এর মাঝখানে なんか ঢুকে যায়।",
+   "target": "っている — なんか menyisip di antara noun dan particle."
+  },
+  {
+   "source": "です। লক্ষ্য করো, প্রয়োজনীয় particle (が・に・も)",
+   "target": "です. Perhatikan, particle yang diperlukan (が・に・も)"
+  },
+  {
+   "source": "とか। verb হলে তার",
+   "target": "とか. Bila verb, bentuknya"
+  },
+  {
+   "source": "ないということです; い-adjective হলে",
+   "target": "ないということです; bila い-adjective,"
+  },
+  {
+   "source": "なわけがない; noun হলে の জোড়ে:",
+   "target": "なわけがない; bila noun, tambahkan の:"
+  },
+  {
+   "source": "なんか-এর পরে",
+   "target": "setelah なんか"
+  },
+  {
+   "source": "なんかいりません। নিজেকে বোঝাতে",
+   "target": "なんかいりません. Untuk menunjukkan diri sendiri"
+  },
+  {
+   "source": "まっている বসে, clause-এর রূপ বদলায় না: verb হলে",
+   "target": "まっている diletakkan, bentuk clause tidak berubah: bila verb,"
+  },
+  {
+   "source": "まっている; い-adjective হলে",
+   "target": "まっている; bila い-adjective,"
+  },
+  {
+   "source": "まっている; な-adjective হলে stem-এর সাথে সরাসরি に:",
+   "target": "まっている; bila な-adjective, langsung に pada stem:"
+  },
+  {
+   "source": "まっている। তবে noun-এর だ বাদ যায়, সরাসরি に বসে: うそだ→うそに",
+   "target": "まっている. Namun だ pada noun dihilangkan, langsung diletakkan に: うそだ→うそに"
+  },
+  {
+   "source": "み, তার সাথে",
+   "target": "み, bersamanya"
+  },
+  {
+   "source": "み, তার সাথে きる জুড়ে",
+   "target": "み, dengan menambahkan きる padanya"
+  },
+  {
+   "source": "みきる (て-form দরকার হলে",
+   "target": "みきる (bila memerlukan て-form,"
+  },
+  {
+   "source": "みだということ; কিন্তু negative-এ だ পড়ে যায়:",
+   "target": "みだということ; tetapi pada bentuk negatif, だ gugur:"
+  },
+  {
+   "source": "みます → ます বাদ দিয়ে",
+   "target": "みます → dengan menghilangkan ます"
+  },
+  {
+   "source": "むとか। noun-এরও কোনো রূপ বদলায় না, শুধু প্রতিবার とか যোগ হয়।",
+   "target": "むとか. Bentuk noun pun tidak berubah, hanya とか ditambahkan setiap kali."
+  },
+  {
+   "source": "める জুড়ে",
+   "target": "dengan menambahkan める"
+  },
+  {
+   "source": "らない বসে: verb হলে",
+   "target": "らない diletakkan: bila verb,"
+  },
+  {
+   "source": "らない); এখানে な/の জুড়বে না।",
+   "target": "らない); di sini な/の tidak ditambahkan."
+  },
+  {
+   "source": "らない; い-adjective হলে",
+   "target": "らない; bila い-adjective,"
+  },
+  {
+   "source": "らない। な-adjective/noun-এর だ বাদ যায়, stem সরাসরি বসে:",
+   "target": "らない. だ pada な-adjective/noun dihilangkan, stem diletakkan langsung:"
+  },
+  {
+   "source": "れ। অর্থাৎ গঠন",
+   "target": "れ. Artinya polanya"
+  },
+  {
+   "source": "わります। এখানে গঠনটি বাক্যের মাঝখানে বসে এবং শেষ হয়",
+   "target": "わります. Di sini pola ini diletakkan di tengah kalimat dan berakhir dengan"
+  },
+  {
+   "source": "わる জাতীয় পার্থক্য বোঝানো predicate বসে।",
+   "target": "diletakkan predicate yang menunjukkan perbedaan sejenis わる."
+  },
+  {
+   "source": "んでいるからといって; い-adjective হলে",
+   "target": "んでいるからといって; bila い-adjective,"
+  },
+  {
+   "source": "＋ と、তারপর past discovery → V",
+   "target": "＋ と、lalu past discovery → V"
   }
  ]
 }
