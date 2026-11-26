@@ -1,12 +1,9 @@
-/* Aponar Nihon service-worker wrapper — app shell v57 — RUN 51 (2026-11-26):
-   N3 vocabulary full fix: all 1,336 glosses proofread in dictionary style
-   with POS tags completed; every word now has real example sentences with
-   full-sentence furigana and Bengali translations (813 words gained newly
-   written examples; the 515 Tatoeba corpus examples gained ruby +
-   translations); slot-fill template examples are no longer served; the
-   dead n3-vocabulary-parts-v2.js was removed; the base worker's caches
-   are bumped to v51 in sw-base-v28.js so installed phones flush and
-   pick up the fixed vocabulary.
+/* Aponar Nihon service-worker wrapper — app shell v58 — RUN 52 (2026-11-26):
+   Localized home-page taglines: the home <title>, meta description and
+   og:title/og:description now carry a crafted per-language tagline in all
+   14 languages (via the index packs + builder metadata localization);
+   the base worker's caches are bumped to v52 in sw-base-v28.js so
+   installed phones flush and pick up the new home pages.
 */
 
 const __anNativeAddEventListener = self.addEventListener.bind(self);

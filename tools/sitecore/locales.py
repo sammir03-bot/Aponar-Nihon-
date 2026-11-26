@@ -82,6 +82,15 @@ DESCRIPTION_RE = re.compile(
     flags=re.IGNORECASE,
 )
 TITLE_RE = re.compile(r"(<title\b[^>]*>)(.*?)(</title\s*>)", re.IGNORECASE | re.DOTALL)
+OG_TITLE_RE = re.compile(
+    r'<meta\b(?=[^>]*\bproperty=["\']og:title["\'])[^>]*>',
+    flags=re.IGNORECASE,
+)
+OG_DESCRIPTION_RE = re.compile(
+    r'<meta\b(?=[^>]*\bproperty=["\']og:description["\'])[^>]*>',
+    flags=re.IGNORECASE,
+)
+CONTENT_ATTR_RE = re.compile(r"\bcontent\s*=\s*([\"'])(.*?)\1", re.IGNORECASE | re.DOTALL)
 HTML_TAG_RE = re.compile(r"<html\b([^>]*)>", re.IGNORECASE)
 URL_ATTRIBUTE_RE = re.compile(
     r"(?P<prefix>\b(?:href|src|action)\s*=\s*)(?P<quote>[\"'])(?P<value>.*?)(?P=quote)",
@@ -462,6 +471,36 @@ def _truncate_description(value: str, limit: int = 165) -> str:
     return shortened.rstrip(" ,.;:—-") + "…"
 
 
+def _meta_content(tag: str) -> str | None:
+    match = CONTENT_ATTR_RE.search(tag)
+    return match.group(2) if match else None
+
+
+def _set_meta_content(tag: str, value: str) -> str:
+    def replace(match: re.Match[str]) -> str:
+        quote = match.group(1)
+        return f"content={quote}{html_lib.escape(value, quote=True)}{quote}"
+
+    return CONTENT_ATTR_RE.sub(replace, tag, count=1)
+
+
+def _localize_og_title(document: str, entries: dict[str, str]) -> str:
+    # Run 52 (2026-11-26): localize og:title through the same reviewed pack
+    # entries, but ONLY on an exact full-string match of the whole og:title
+    # value — in practice the home page, whose og:title mirrors its <title>.
+    # Pages whose packs carry no such entry keep their source og:title.
+    match = OG_TITLE_RE.search(document)
+    if not match:
+        return document
+    content = _meta_content(match.group(0))
+    if content is None:
+        return document
+    target = entries.get(_normalize(html_lib.unescape(content)))
+    if target is None:
+        return document
+    return document[: match.start()] + _set_meta_content(match.group(0), target) + document[match.end():]
+
+
 def _localize_metadata(document: str, language: str, entries: dict[str, str]) -> str:
     def replace_title(match: re.Match[str]) -> str:
         source_title = match.group(2)
@@ -492,14 +531,25 @@ def _localize_metadata(document: str, language: str, entries: dict[str, str]) ->
         return f"{match.group(1)}{title}{match.group(3)}"
 
     document = TITLE_RE.sub(replace_title, document, count=1)
+    document = _localize_og_title(document, entries)
     candidates = [target for target in entries.values() if len(_normalize(target)) >= 55]
     if not candidates:
         return document
     description = _truncate_description(max(candidates, key=lambda item: len(_normalize(item))))
     snippet = f'<meta name="description" content="{html_lib.escape(description, quote=True)}">'
     if DESCRIPTION_RE.search(document):
-        return DESCRIPTION_RE.sub(snippet, document, count=1)
-    return re.sub(r"</head\s*>", f"\n{snippet}\n</head>", document, count=1, flags=re.IGNORECASE)
+        document = DESCRIPTION_RE.sub(snippet, document, count=1)
+    else:
+        document = re.sub(r"</head\s*>", f"\n{snippet}\n</head>", document, count=1, flags=re.IGNORECASE)
+    # Run 52: og:description mirrors the localized meta description.
+    og_match = OG_DESCRIPTION_RE.search(document)
+    if og_match:
+        document = (
+            document[: og_match.start()]
+            + _set_meta_content(og_match.group(0), description)
+            + document[og_match.end():]
+        )
+    return document
 
 
 def _inject_alternates(document: str, alternates: list[tuple[str, str]]) -> str:

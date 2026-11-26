@@ -7,8 +7,8 @@
   "reviewNote": "Machine-generated and machine-validated only (batch count/order, Bengali-residue check, digit conversion). NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it. Strings that failed validation were dropped and remain on the runtime translator fallback.",
   "entries": [
     {
-      "source": "আপনার নিহোন | JLPT N5 N4 N3 ও জাপান লাইফ গাইড",
-      "target": "तपाईंको निहोन | JLPT N5 N4 N3 र जापान लाइफ गाइड"
+      "source": "আপনার নিহোন — তোমার জাপান: JLPT আর জাপানের জীবনের সবকিছু এক ঠিকানায়",
+      "target": "আপনার নিহোন — तपाईंको जापान: JLPT र जापानको जीवन, सबै एकै ठाउँमा"
     },
     {
       "source": "আপনার নিহোন",
@@ -253,6 +253,10 @@
     {
       "source": "QUARTET II, অধ্যায় ৭–১২",
       "target": "QUARTET II, अध्याय ७–१२"
+    },
+    {
+      "source": "আপনার নিহোন — তোমার জাপান: JLPT N5–N3 ও N2, কাঞ্জি, মক টেস্ট, AI Tutor, CV Builder আর জাপানের জীবনের সবকিছু এক ঠিকানায়।",
+      "target": "আপনার নিহোন — तपाईंको जापान: JLPT N5–N3 र N2, कान्जी, मोक टेस्ट, AI ट्युटर, CV बिल्डर र जापानको दैनिक जीवन — सबै एकै ठाउँमा।"
     }
   ]
 }

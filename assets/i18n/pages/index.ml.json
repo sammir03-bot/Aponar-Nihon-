@@ -1,258 +1,262 @@
 {
- "sourceLanguage": "bn",
- "targetLanguage": "ml",
- "page": "index",
- "reviewed": true,
- "generatedBy": "Claude self-translation (Run 38, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
- "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 38. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
- "entries": [
-  {
-   "source": "আপনার নিহোন | JLPT N5 N4 N3 ও জাপান লাইফ গাইড",
-   "target": "আপনার নিহোন | JLPT N5 N4 N3 & ജപ്പാൻ ലൈഫ് ഗൈഡ്"
-  },
-  {
-   "source": "আপনার নিহোন",
-   "target": "আপনার নিহোন"
-  },
-  {
-   "source": "বাং",
-   "target": "മല"
-  },
-  {
-   "source": "কানজি",
-   "target": "കാഞ്ചി"
-  },
-  {
-   "source": "ভোকাব",
-   "target": "പദാവലി"
-  },
-  {
-   "source": "গ্রামার",
-   "target": "വ്യാകരണം"
-  },
-  {
-   "source": "কথা বলা",
-   "target": "സംസാരിക്കൽ"
-  },
-  {
-   "source": "এক জায়গায় সবকিছু",
-   "target": "എല്ലാം ഒരിടത്ത്"
-  },
-  {
-   "source": "সব গুরুত্বপূর্ণ সেকশন",
-   "target": "എല്ലാ പ്രധാന വിഭാഗങ്ങളും"
-  },
-  {
-   "source": "বেসিক কোর্স",
-   "target": "അടിസ്ഥാന കോഴ്‌സ്"
-  },
-  {
-   "source": "পরবর্তী ধাপ",
-   "target": "അടുത്ത ഘട്ടം"
-  },
-  {
-   "source": "ইন্টারমিডিয়েট",
-   "target": "ഇടത്തരം"
-  },
-  {
-   "source": "N5 · N4 · N3 স্মার্ট রিভিউ",
-   "target": "N5 · N4 · N3 സ്മാർട്ട് റിവ്യൂ"
-  },
-  {
-   "source": "পরীক্ষার আগে সব একসাথে",
-   "target": "പരീക്ഷയ്ക്ക് മുമ്പ് എല്ലാം ഒരുമിച്ച്"
-  },
-  {
-   "source": "শুনুন · উত্তর দিন · ভেঙে শিখুন",
-   "target": "കേൾക്കുക · ഉത്തരം നൽകുക · വിഭജിച്ച് പഠിക്കുക"
-  },
-  {
-   "source": "কুইজ",
-   "target": "ക്വിസ്"
-  },
-  {
-   "source": "ফ্রি প্র্যাকটিস",
-   "target": "സൗജന്യ പരിശീലനം"
-  },
-  {
-   "source": "AI টিউটর",
-   "target": "AI ട്യൂട്ടർ"
-  },
-  {
-   "source": "বাংলায় জিজ্ঞাসা",
-   "target": "മലയാളത്തിൽ ചോദിക്കുക"
-  },
-  {
-   "source": "পরীক্ষা প্র্যাকটিস",
-   "target": "പരീക്ഷാ പരിശീലനം"
-  },
-  {
-   "source": "ইন্টারভিউ",
-   "target": "അഭിമുഖം"
-  },
-  {
-   "source": "চাকরি ও এম্বাসি",
-   "target": "ജോലികളും എംബസിയും"
-  },
-  {
-   "source": "সম্পূর্ণ গাইড",
-   "target": "സമ്പൂർണ്ണ ഗൈഡ്"
-  },
-  {
-   "source": "দরকারি বাক্য",
-   "target": "ഉപയോഗപ്രദമായ വാക്യങ്ങൾ"
-  },
-  {
-   "source": "কথোপকথন",
-   "target": "സംഭാഷണം"
-  },
-  {
-   "source": "জাপান লাইফ",
-   "target": "ജപ്പാൻ ലൈഫ്"
-  },
-  {
-   "source": "নতুনদের গাইড",
-   "target": "പുതുതായി വരുന്നവർക്കുള്ള ഗൈഡ്"
-  },
-  {
-   "source": "হিরাগানা-কানা",
-   "target": "ഹിരഗാനയും കതകാനയും"
-  },
-  {
-   "source": "অক্ষর শেখা",
-   "target": "അക്ഷരമാല പഠിക്കുക"
-  },
-  {
-   "source": "স্টাডি লাইব্রেরি",
-   "target": "സ്റ്റഡി ലൈബ്രറി"
-  },
-  {
-   "source": "২৮h + বাস্তব টুল",
-   "target": "28h + പ്രായോഗിക ടൂളുകൾ"
-  },
-  {
-   "source": "履歴書 তৈরি",
-   "target": "履歴書 ഉണ്ടാക്കുക"
-  },
-  {
-   "source": "নামাজ · হালাল",
-   "target": "നമാസ് · ഹലാൽ"
-  },
-  {
-   "source": "রেট · রেমিট্যান্স",
-   "target": "നിരക്ക് · പണമയയ്ക്കൽ"
-  },
-  {
-   "source": "স্টাডি গাইড",
-   "target": "സ്റ്റഡി ഗൈഡ്"
-  },
-  {
-   "source": "শেখার রোডম্যাপ",
-   "target": "പഠന റോഡ്‌മാപ്പ്"
-  },
-  {
-   "source": "নতুন AI শেখার অভিজ্ঞতা",
-   "target": "പുതിയ AI പഠനാനുഭവം"
-  },
-  {
-   "source": "শুধু উত্তর নয়—আপনাকে বুঝিয়ে শেখাবে",
-   "target": "വെറും ഉത്തരങ്ങളല്ല—അത് നിങ്ങളെ വിശദീകരിച്ച് പഠിപ്പിക്കും"
-  },
-  {
-   "source": "JLPT ব্যাকরণ, বাক্য সংশোধন, কথোপকথন, কুইজ ও অনুবাদ—N5, N4 বা N3 লেভেল বেছে নিয়ে বাংলায় শিখুন।",
-   "target": "JLPT വ്യാകരണം, വാക്യ തിരുത്തൽ, സംഭാഷണം, ക്വിസുകൾ, വിവർത്തനം—N5, N4 അല്ലെങ്കിൽ N3 ലെവൽ തിരഞ്ഞെടുത്ത് മലയാളത്തിൽ പഠിക്കുക."
-  },
-  {
-   "source": "AI Tutor খুলুন",
-   "target": "AI ട്യൂട്ടർ തുറക്കുക"
-  },
-  {
-   "source": "৫ প্রশ্ন",
-   "target": "5 ചോദ്യങ്ങൾ"
-  },
-  {
-   "source": "অবশ্যই করতে হবে",
-   "target": "നിർബന്ധമായും ചെയ്യണം"
-  },
-  {
-   "source": "আজকের প্র্যাকটিস",
-   "target": "ഇന്നത്തെ പരിശീലനം"
-  },
-  {
-   "source": "কুইজ শুরু করুন",
-   "target": "ക്വിസ് ആരംഭിക്കുക"
-  },
-  {
-   "source": "শেখার যাত্রা",
-   "target": "പഠന യാത്ര"
-  },
-  {
-   "source": "স্বাগতম",
-   "target": "സ്വാഗതം"
-  },
-  {
-   "source": "—আজ কোথা থেকে শুরু করবেন?",
-   "target": "—ഇന്ന് നിങ്ങൾ എവിടെ നിന്ന് തുടങ്ങും?"
-  },
-  {
-   "source": "N5 দিয়ে ভিত্তি তৈরি",
-   "target": "N5 ഉപയോഗിച്ച് അടിത്തറ ഉണ്ടാക്കുക"
-  },
-  {
-   "source": "কানা, শব্দ, কানজি ও basic grammar",
-   "target": "കാന, പദാവലി, കാഞ്ചി, അടിസ്ഥാന വ്യാകരണം"
-  },
-  {
-   "source": "N4 দিয়ে বাক্য বাড়ান",
-   "target": "N4 ഉപയോഗിച്ച് വാക്യങ്ങൾ വികസിപ്പിക്കുക"
-  },
-  {
-   "source": "দৈনন্দিন Japanese ও reading",
-   "target": "ദൈനംദിന ജാപ്പനീസും വായനയും"
-  },
-  {
-   "source": "N3 দিয়ে বাস্তব দক্ষতা",
-   "target": "N3 ഉപയോഗിച്ച് യഥാർത്ഥ ലോക വൈദഗ്ധ്യം"
-  },
-  {
-   "source": "TRY! N3, Matome ও exam practice",
-   "target": "TRY! N3, Matome, പരീക്ഷാ പരിശീലനം"
-  },
-  {
-   "source": "আমাদের সম্পর্কে",
-   "target": "ഞങ്ങളെക്കുറിച്ച്"
-  },
-  {
-   "source": "যোগাযোগ",
-   "target": "ബന്ധപ്പെടുക"
-  },
-  {
-   "source": "© ২০২৬ আপনার নিহোন · Created by SAMMIR",
-   "target": "© 2026 আপনার নিহোন · Created by SAMMIR"
-  },
-  {
-   "source": "হোম",
-   "target": "ഹോം"
-  },
-  {
-   "source": "আপনার নিহোন App",
-   "target": "আপনার নিহোন App"
-  },
-  {
-   "source": "ফোনে install করে দ্রুত খুলুন",
-   "target": "ഫോണിൽ ഇൻസ്റ്റാൾ ചെയ്ത് വേഗത്തിൽ തുറക്കുക"
-  },
-  {
-   "source": "অ্যাডভান্সড",
-   "target": "അഡ്വാൻസ്ഡ്"
-  },
-  {
-   "source": "N2 দিয়ে advanced দক্ষতা",
-   "target": "N2 കൊണ്ട് advanced വൈദഗ്ധ്യം"
-  },
-  {
-   "source": "QUARTET II, অধ্যায় ৭–১২",
-   "target": "QUARTET II, അധ്യായങ്ങൾ 7–12"
-  }
- ]
+  "sourceLanguage": "bn",
+  "targetLanguage": "ml",
+  "page": "index",
+  "reviewed": true,
+  "generatedBy": "Claude self-translation (Run 38, 2026-11-24): translated directly by a Muse model, no external translation API used; seeded by the site's own translation memory and prior reviewed packs where applicable",
+  "reviewNote": "Machine-validated only (entry count/order against page sources, Bengali-residue check except the brand name, digit conversion, target != source). Provenance: claude-self for entries translated in Run 38. NOT human-reviewed; the 'reviewed' flag is set because the pack tooling only ships packs carrying it.",
+  "entries": [
+    {
+      "source": "আপনার নিহোন — তোমার জাপান: JLPT আর জাপানের জীবনের সবকিছু এক ঠিকানায়",
+      "target": "আপনার নিহোন — നിങ്ങളുടെ ജപ്പാൻ: JLPT-ഉം ജപ്പാൻ ജീവിതവും, എല്ലാം ഒരിടത്ത്"
+    },
+    {
+      "source": "আপনার নিহোন",
+      "target": "আপনার নিহোন"
+    },
+    {
+      "source": "বাং",
+      "target": "മല"
+    },
+    {
+      "source": "কানজি",
+      "target": "കാഞ്ചി"
+    },
+    {
+      "source": "ভোকাব",
+      "target": "പദാവലി"
+    },
+    {
+      "source": "গ্রামার",
+      "target": "വ്യാകരണം"
+    },
+    {
+      "source": "কথা বলা",
+      "target": "സംസാരിക്കൽ"
+    },
+    {
+      "source": "এক জায়গায় সবকিছু",
+      "target": "എല്ലാം ഒരിടത്ത്"
+    },
+    {
+      "source": "সব গুরুত্বপূর্ণ সেকশন",
+      "target": "എല്ലാ പ്രധാന വിഭാഗങ്ങളും"
+    },
+    {
+      "source": "বেসিক কোর্স",
+      "target": "അടിസ്ഥാന കോഴ്‌സ്"
+    },
+    {
+      "source": "পরবর্তী ধাপ",
+      "target": "അടുത്ത ഘട്ടം"
+    },
+    {
+      "source": "ইন্টারমিডিয়েট",
+      "target": "ഇടത്തരം"
+    },
+    {
+      "source": "N5 · N4 · N3 স্মার্ট রিভিউ",
+      "target": "N5 · N4 · N3 സ്മാർട്ട് റിവ്യൂ"
+    },
+    {
+      "source": "পরীক্ষার আগে সব একসাথে",
+      "target": "പരീക്ഷയ്ക്ക് മുമ്പ് എല്ലാം ഒരുമിച്ച്"
+    },
+    {
+      "source": "শুনুন · উত্তর দিন · ভেঙে শিখুন",
+      "target": "കേൾക്കുക · ഉത്തരം നൽകുക · വിഭജിച്ച് പഠിക്കുക"
+    },
+    {
+      "source": "কুইজ",
+      "target": "ക്വിസ്"
+    },
+    {
+      "source": "ফ্রি প্র্যাকটিস",
+      "target": "സൗജന്യ പരിശീലനം"
+    },
+    {
+      "source": "AI টিউটর",
+      "target": "AI ട്യൂട്ടർ"
+    },
+    {
+      "source": "বাংলায় জিজ্ঞাসা",
+      "target": "മലയാളത്തിൽ ചോദിക്കുക"
+    },
+    {
+      "source": "পরীক্ষা প্র্যাকটিস",
+      "target": "പരീക്ഷാ പരിശീലനം"
+    },
+    {
+      "source": "ইন্টারভিউ",
+      "target": "അഭിമുഖം"
+    },
+    {
+      "source": "চাকরি ও এম্বাসি",
+      "target": "ജോലികളും എംബസിയും"
+    },
+    {
+      "source": "সম্পূর্ণ গাইড",
+      "target": "സമ്പൂർണ്ണ ഗൈഡ്"
+    },
+    {
+      "source": "দরকারি বাক্য",
+      "target": "ഉപയോഗപ്രദമായ വാക്യങ്ങൾ"
+    },
+    {
+      "source": "কথোপকথন",
+      "target": "സംഭാഷണം"
+    },
+    {
+      "source": "জাপান লাইফ",
+      "target": "ജപ്പാൻ ലൈഫ്"
+    },
+    {
+      "source": "নতুনদের গাইড",
+      "target": "പുതുതായി വരുന്നവർക്കുള്ള ഗൈഡ്"
+    },
+    {
+      "source": "হিরাগানা-কানা",
+      "target": "ഹിരഗാനയും കതകാനയും"
+    },
+    {
+      "source": "অক্ষর শেখা",
+      "target": "അക്ഷരമാല പഠിക്കുക"
+    },
+    {
+      "source": "স্টাডি লাইব্রেরি",
+      "target": "സ്റ്റഡി ലൈബ്രറി"
+    },
+    {
+      "source": "২৮h + বাস্তব টুল",
+      "target": "28h + പ്രായോഗിക ടൂളുകൾ"
+    },
+    {
+      "source": "履歴書 তৈরি",
+      "target": "履歴書 ഉണ്ടാക്കുക"
+    },
+    {
+      "source": "নামাজ · হালাল",
+      "target": "നമാസ് · ഹലാൽ"
+    },
+    {
+      "source": "রেট · রেমিট্যান্স",
+      "target": "നിരക്ക് · പണമയയ്ക്കൽ"
+    },
+    {
+      "source": "স্টাডি গাইড",
+      "target": "സ്റ്റഡി ഗൈഡ്"
+    },
+    {
+      "source": "শেখার রোডম্যাপ",
+      "target": "പഠന റോഡ്‌മാപ്പ്"
+    },
+    {
+      "source": "নতুন AI শেখার অভিজ্ঞতা",
+      "target": "പുതിയ AI പഠനാനുഭവം"
+    },
+    {
+      "source": "শুধু উত্তর নয়—আপনাকে বুঝিয়ে শেখাবে",
+      "target": "വെറും ഉത്തരങ്ങളല്ല—അത് നിങ്ങളെ വിശദീകരിച്ച് പഠിപ്പിക്കും"
+    },
+    {
+      "source": "JLPT ব্যাকরণ, বাক্য সংশোধন, কথোপকথন, কুইজ ও অনুবাদ—N5, N4 বা N3 লেভেল বেছে নিয়ে বাংলায় শিখুন।",
+      "target": "JLPT വ്യാകരണം, വാക്യ തിരുത്തൽ, സംഭാഷണം, ക്വിസുകൾ, വിവർത്തനം—N5, N4 അല്ലെങ്കിൽ N3 ലെവൽ തിരഞ്ഞെടുത്ത് മലയാളത്തിൽ പഠിക്കുക."
+    },
+    {
+      "source": "AI Tutor খুলুন",
+      "target": "AI ട്യൂട്ടർ തുറക്കുക"
+    },
+    {
+      "source": "৫ প্রশ্ন",
+      "target": "5 ചോദ്യങ്ങൾ"
+    },
+    {
+      "source": "অবশ্যই করতে হবে",
+      "target": "നിർബന്ധമായും ചെയ്യണം"
+    },
+    {
+      "source": "আজকের প্র্যাকটিস",
+      "target": "ഇന്നത്തെ പരിശീലനം"
+    },
+    {
+      "source": "কুইজ শুরু করুন",
+      "target": "ക്വിസ് ആരംഭിക്കുക"
+    },
+    {
+      "source": "শেখার যাত্রা",
+      "target": "പഠന യാത്ര"
+    },
+    {
+      "source": "স্বাগতম",
+      "target": "സ്വാഗതം"
+    },
+    {
+      "source": "—আজ কোথা থেকে শুরু করবেন?",
+      "target": "—ഇന്ന് നിങ്ങൾ എവിടെ നിന്ന് തുടങ്ങും?"
+    },
+    {
+      "source": "N5 দিয়ে ভিত্তি তৈরি",
+      "target": "N5 ഉപയോഗിച്ച് അടിത്തറ ഉണ്ടാക്കുക"
+    },
+    {
+      "source": "কানা, শব্দ, কানজি ও basic grammar",
+      "target": "കാന, പദാവലി, കാഞ്ചി, അടിസ്ഥാന വ്യാകരണം"
+    },
+    {
+      "source": "N4 দিয়ে বাক্য বাড়ান",
+      "target": "N4 ഉപയോഗിച്ച് വാക്യങ്ങൾ വികസിപ്പിക്കുക"
+    },
+    {
+      "source": "দৈনন্দিন Japanese ও reading",
+      "target": "ദൈനംദിന ജാപ്പനീസും വായനയും"
+    },
+    {
+      "source": "N3 দিয়ে বাস্তব দক্ষতা",
+      "target": "N3 ഉപയോഗിച്ച് യഥാർത്ഥ ലോക വൈദഗ്ധ്യം"
+    },
+    {
+      "source": "TRY! N3, Matome ও exam practice",
+      "target": "TRY! N3, Matome, പരീക്ഷാ പരിശീലനം"
+    },
+    {
+      "source": "আমাদের সম্পর্কে",
+      "target": "ഞങ്ങളെക്കുറിച്ച്"
+    },
+    {
+      "source": "যোগাযোগ",
+      "target": "ബന്ധപ്പെടുക"
+    },
+    {
+      "source": "© ২০২৬ আপনার নিহোন · Created by SAMMIR",
+      "target": "© 2026 আপনার নিহোন · Created by SAMMIR"
+    },
+    {
+      "source": "হোম",
+      "target": "ഹോം"
+    },
+    {
+      "source": "আপনার নিহোন App",
+      "target": "আপনার নিহোন App"
+    },
+    {
+      "source": "ফোনে install করে দ্রুত খুলুন",
+      "target": "ഫോണിൽ ഇൻസ്റ്റാൾ ചെയ്ത് വേഗത്തിൽ തുറക്കുക"
+    },
+    {
+      "source": "অ্যাডভান্সড",
+      "target": "അഡ്വാൻസ്ഡ്"
+    },
+    {
+      "source": "N2 দিয়ে advanced দক্ষতা",
+      "target": "N2 കൊണ്ട് advanced വൈദഗ്ധ്യം"
+    },
+    {
+      "source": "QUARTET II, অধ্যায় ৭–১২",
+      "target": "QUARTET II, അധ്യായങ്ങൾ 7–12"
+    },
+    {
+      "source": "আপনার নিহোন — তোমার জাপান: JLPT N5–N3 ও N2, কাঞ্জি, মক টেস্ট, AI Tutor, CV Builder আর জাপানের জীবনের সবকিছু এক ঠিকানায়।",
+      "target": "আপনার নিহোন — നിങ്ങളുടെ ജപ്പാൻ: JLPT N5–N3, N2, കാൻജി, മോക്ക് ടെസ്റ്റ്, AI ട്യൂട്ടർ, CV ബിൽഡർ, ജപ്പാനിലെ ദൈനംദിന ജീവിതം — എല്ലാം ഒരിടത്ത്."
+    }
+  ]
 }
