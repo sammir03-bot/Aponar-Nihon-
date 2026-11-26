@@ -1,4 +1,11 @@
-/* Aponar Nihon service-worker wrapper — app shell v53 — RUN 47 (2026-11-26):
+/* Aponar Nihon service-worker wrapper — app shell v54 — RUN 48 (2026-11-26):
+   N3 grammar page: the verb-form factory tables, the decision guide and the
+   categorized rule index move below the rules so the 113 rules come first;
+   furigana now covers every deep-note and card-prose field (nested rubies
+   normalized to one clean ruby per word); the base worker's caches are
+   bumped to v48 in sw-base-v28.js so installed phones flush and pick up
+   the reordered, fully-annotated page.
+   RUN 47 (2026-11-26):
    Quartet I study guide: the book passages become the guide's main entry —
    a "বইয়ের Passage" index strip now sits at the top of the guide and
    Chapter 1 opens with its Reading Lab (the book's passages) as the first
