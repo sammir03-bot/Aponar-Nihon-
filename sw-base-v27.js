@@ -39,7 +39,6 @@ const STATIC_ASSETS = [
   "/grammar-vs.html",
   "/n3-vocabulary.html",
   "/n3-vocabulary-original.css",
-  "/n3-vocabulary-parts-v2.js",
 
   "/admin.html",
   "/supabase-config.js",

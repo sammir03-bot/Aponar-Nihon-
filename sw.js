@@ -1,68 +1,13 @@
-/* Aponar Nihon service-worker wrapper — app shell v56 — RUN 50 (2026-11-26):
-   TRY! N3 grammar rules 1-19 and 31-113: the machine-style explanation
-   prose is replaced by teacher-voice lessons (one-line heart, why it is
-   used, a story from the learner's own life, step-by-step formation,
-   real common mistakes, self-check questions) in all 14 languages, so
-   all 113 rules now carry teacher lessons; the base worker's caches are
-   bumped to v50 in sw-base-v28.js so installed phones flush and pick up
-   the new lessons.
-   RUN 49 (2026-11-26):
-   TRY! N3 grammar rules 20-30: the machine-style explanation prose is
-   replaced by teacher-voice lessons (one-line heart, why it is used, a
-   story from the learner's own life, step-by-step formation, real common
-   mistakes, self-check questions) in all 14 languages; the base worker's
-   caches are bumped to v49 in sw-base-v28.js so installed phones flush
-   and pick up the new lessons.
-   RUN 47 (2026-11-26):
-   Quartet I study guide: the book passages become the guide's main entry —
-   a "বইয়ের Passage" index strip now sits at the top of the guide and
-   Chapter 1 opens with its Reading Lab (the book's passages) as the first
-   block; the base worker's caches are bumped to v46 in sw-base-v28.js so
-   installed phones flush and pick up the restructured guide page.
-   RUN 45 (2026-11-25):
-   Quartet I study guide Lesson 1 pilot: Chapter 1 Reading Lab now carries
-   the book's real Lesson 1 passages (verbatim) with Bengali explanations,
-   the book's vocabulary list, and Chapter 1 grammar examples rebuilt
-   book-first in all 14 languages; the base worker's caches are bumped to
-   v45 in sw-base-v28.js so installed phones flush and pick up the new
-   guide page and Quartet data sidecars.
-   RUN 44 (2026-11-24):
-   Home tools grid: the JLPT N2 tile takes the first-row slot (the CSS
-   order rule in halal-nav.css now lists /n2.html instead of /quiz.html,
-   and the two tiles swap places in index.html); the base worker's
-   caches are bumped to v44 in sw-base-v28.js so installed phones flush
-   and pick up the new stylesheet and home page.
-   RUN 43 (2026-11-24):
-   New N2 section: n2 hub master + packs in all 14 languages, the
-   Quartet II card moved from the N3 hub to the N2 hub, home tile +
-   journey step for N2, two DYN aria rows added to i18n.js; the base
-   worker's caches are bumped to v43 in sw-base-v28.js so installed
-   phones flush and pick up the new assets.
-   RUN 42 (2026-11-24):
-   Phase 4 (FINAL) for id/ar/ml: question-bank shards, interview, exam,
-   study and news sidecars; the base worker's caches are bumped to v42 in
-   sw-base-v28.js so installed phones flush and pick up the new assets.
-   RUN 41 (2026-11-24):
-   Phase 3 lesson data for id/ar/ml: new data sidecars (N3, Quartet,
-   Run 28 families) and id/ar/ml sections in the embedded vocab/kanji/
-   grammar data files; the base worker's caches are bumped to v41 in
-   sw-base-v28.js so installed phones flush and pick up the new assets.
-   RUN 39 (2026-11-24):
-   Phase 1 chrome for id/ar/ml: DYN family values added to i18n.js and new
-   app/tutor/cv sidecars; the base worker's caches are bumped to v40 in
-   sw-base-v28.js so installed phones flush and pick up the new assets.
-   RUN 38 (2026-11-24):
-   three new languages (id, ar, ml) registered in the i18n runtime; the base
-   worker's caches are bumped to v39 in sw-base-v28.js so installed phones
-   flush and pick up the new assets.
-   HALAL FIX (2026-11-24): wrapper caches renamed v1 -> v2 and an activate
-   handler below purges the legacy v1 wrapper caches, so a phone stuck on
-   an old worker self-heals on its next visit (the base worker's own caches
-   were bumped to v38 in sw-base-v28.js; its install already skipWaiting()s
-   and its activate
-   already clients.claim()s and deletes every non-current cache).
-   The dashboard, dedicated section hubs and AI Tutor assets are available
-   offline after install, while updated learning pages stay network-first. */
+/* Aponar Nihon service-worker wrapper — app shell v57 — RUN 51 (2026-11-26):
+   N3 vocabulary full fix: all 1,336 glosses proofread in dictionary style
+   with POS tags completed; every word now has real example sentences with
+   full-sentence furigana and Bengali translations (813 words gained newly
+   written examples; the 515 Tatoeba corpus examples gained ruby +
+   translations); slot-fill template examples are no longer served; the
+   dead n3-vocabulary-parts-v2.js was removed; the base worker's caches
+   are bumped to v51 in sw-base-v28.js so installed phones flush and
+   pick up the fixed vocabulary.
+*/
 
 const __anNativeAddEventListener = self.addEventListener.bind(self);
 let __anLegacyFetchListener = null;

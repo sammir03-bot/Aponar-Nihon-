@@ -74,6 +74,8 @@
   }
 
   const corpusExamples = window.N3_VOCAB_CORPUS_EXAMPLES || {};
+  const authoredExamples = window.N3_VOCAB_AUTHORED_EXAMPLES || {};
+  const corpusUpgrades = window.N3_VOCAB_CORPUS_UPGRADES || {};
 
   const example = (jp, yomi, bangla, tag, extra = {}) => ({ jp, yomi, bangla, tag, ...extra });
 
@@ -108,13 +110,14 @@
   function sourceExample(info) {
     const source = corpusExamples[`${info.word}␟${info.reading}`];
     if (!source) return null;
+    const upgrade = corpusUpgrades[`${info.word}␟${info.reading}`];
     const match = String(source.match || info.word);
     const pieces = String(source.text || '').split(match);
     const highlighted = pieces.map(escapeHtml).join(targetRuby(match, info.reading));
     return example(
-      highlighted,
+      upgrade ? upgrade.jp : highlighted,
       source.reading || `টার্গেট: ${info.reading}`,
-      `এই বাক্যে “${info.word}” অর্থ “${info.bn || info.word}”। আগে নিজে পুরো বাক্যের অর্থ ধরার চেষ্টা করুন।`,
+      upgrade ? upgrade.bn : `এই বাক্যে “${info.word}” অর্থ “${info.bn || info.word}”। আগে নিজে পুরো বাক্যের অর্থ ধরার চেষ্টা করুন।`,
       'Corpus • বাস্তব বাক্য',
       {
         speak: source.text,
@@ -291,52 +294,52 @@
     const ruby = targetRuby(word, reading);
     const banks = {
       'お茶わん': [
-        example(`${ruby}にご飯をよそいます。`, `${reading}にごはんをよそいます。`, 'ভাতের বাটিতে ভাত পরিবেশন করি।', 'রান্নাঘর'),
-        example(`食事の後で、${ruby}を洗いました。`, `しょくじのあとで、${reading}をあらいました。`, 'খাওয়ার পর ভাতের বাটিটি ধুয়েছি।', 'ঘরের কাজ'),
-        example(`この${ruby}は、毎日使っています。`, `この${reading}は、まいにちつかっています。`, 'এই ভাতের বাটিটি প্রতিদিন ব্যবহার করি।', 'দৈনন্দিন'),
-        example(`${ruby}を食器棚に戻してください。`, `${reading}をしょっきだなにもどしてください。`, 'ভাতের বাটিটি আলমারিতে ফিরিয়ে রাখুন।', 'নির্দেশনা')
+        example(`${ruby}に<ruby>ご飯<rt>ごはん</rt></ruby>をよそいます。`, `${reading}にごはんをよそいます。`, 'ভাতের বাটিতে ভাত পরিবেশন করি।', 'রান্নাঘর'),
+        example(`<ruby>食事<rt>しょくじ</rt></ruby>の<ruby>後<rt>あと</rt></ruby>で、${ruby}を<ruby>洗<rt>あら</rt></ruby>いました。`, `しょくじのあとで、${reading}をあらいました。`, 'খাওয়ার পর ভাতের বাটিটি ধুয়েছি।', 'ঘরের কাজ'),
+        example(`この${ruby}は、<ruby>毎日<rt>まいにち</rt></ruby><ruby>使<rt>つか</rt></ruby>っています。`, `この${reading}は、まいにちつかっています。`, 'এই ভাতের বাটিটি প্রতিদিন ব্যবহার করি।', 'দৈনন্দিন'),
+        example(`${ruby}を<ruby>食器棚<rt>しょっきだな</rt></ruby>に<ruby>戻<rt>もど</rt></ruby>してください。`, `${reading}をしょっきだなにもどしてください。`, 'ভাতের বাটিটি আলমারিতে ফিরিয়ে রাখুন।', 'নির্দেশনা')
       ],
       '時速１００キロで走る': [
-        example(`この車は高速道路を${ruby}ことができます。`, `このくるまはこうそくどうろを${reading}ことができます。`, 'এই গাড়িটি এক্সপ্রেসওয়েতে ঘণ্টায় ১০০ কিলোমিটার গতিতে চলতে পারে।', 'গাড়ি'),
-        example(`${ruby}と、止まるまでの距離が長くなります。`, `${reading}と、とまるまでのきょりがながくなります。`, 'ঘণ্টায় ১০০ কিলোমিটার গতিতে চললে থামার দূরত্ব বেড়ে যায়।', 'নিরাপত্তা'),
-        example(`${ruby}前に、制限速度を確認してください。`, `${reading}まえに、せいげんそくどをかくにんしてください。`, 'ঘণ্টায় ১০০ কিলোমিটার গতিতে চলার আগে গতিসীমা যাচাই করুন।', 'Traffic rule'),
-        example(`雨の日に${ruby}のは危険です。`, `あめのひに${reading}のはきけんです。`, 'বৃষ্টির দিনে ঘণ্টায় ১০০ কিলোমিটার গতিতে চলা বিপজ্জনক।', 'সতর্কতা')
+        example(`この<ruby>車<rt>くるま</rt></ruby>は<ruby>高速道路<rt>こうそくどうろ</rt></ruby>を${ruby}ことができます。`, `このくるまはこうそくどうろを${reading}ことができます。`, 'এই গাড়িটি এক্সপ্রেসওয়েতে ঘণ্টায় ১০০ কিলোমিটার গতিতে চলতে পারে।', 'গাড়ি'),
+        example(`${ruby}と、<ruby>止<rt>と</rt></ruby>まるまでの<ruby>距離<rt>きょり</rt></ruby>が<ruby>長<rt>なが</rt></ruby>くなります。`, `${reading}と、とまるまでのきょりがながくなります。`, 'ঘণ্টায় ১০০ কিলোমিটার গতিতে চললে থামার দূরত্ব বেড়ে যায়।', 'নিরাপত্তা'),
+        example(`${ruby}<ruby>前<rt>まえ</rt></ruby>に、<ruby>制限速度<rt>せいげんそくど</rt></ruby>を<ruby>確認<rt>かくにん</rt></ruby>してください。`, `${reading}まえに、せいげんそくどをかくにんしてください。`, 'ঘণ্টায় ১০০ কিলোমিটার গতিতে চলার আগে গতিসীমা যাচাই করুন।', 'Traffic rule'),
+        example(`<ruby>雨<rt>あめ</rt></ruby>の<ruby>日<rt>ひ</rt></ruby>に${ruby}のは<ruby>危険<rt>きけん</rt></ruby>です。`, `あめのひに${reading}のはきけんです。`, 'বৃষ্টির দিনে ঘণ্টায় ১০০ কিলোমিটার গতিতে চলা বিপজ্জনক।', 'সতর্কতা')
       ],
       'かける': [
         example(`３に４を${ruby}と、１２になります。`, `さんによんを${reading}と、じゅうにになります。`, '৩-কে ৪ দিয়ে গুণ করলে ১২ হয়।', 'গণিত'),
-        example(`この問題では、二つの数を${ruby}。`, `このもんだいでは、ふたつのかずを${reading}。`, 'এই অঙ্কে দুটি সংখ্যা গুণ করতে হবে।', 'সমস্যা'),
-        example(`５に０を${ruby}と、答えは０です。`, `ごにぜろを${reading}と、こたえはぜろです。`, '৫-কে ০ দিয়ে গুণ করলে উত্তর ০।', 'উত্তর'),
-        example(`まず足して、それから２を${ruby}。`, `まずたして、それからにを${reading}。`, 'প্রথমে যোগ করুন, তারপর ২ দিয়ে গুণ করুন।', 'ধাপ')
+        example(`この<ruby>問題<rt>もんだい</rt></ruby>では、<ruby>二<rt>ふた</rt></ruby>つの<ruby>数<rt>かず</rt></ruby>を${ruby}。`, `このもんだいでは、ふたつのかずを${reading}。`, 'এই অঙ্কে দুটি সংখ্যা গুণ করতে হবে।', 'সমস্যা'),
+        example(`５に０を${ruby}と、<ruby>答<rt>こた</rt></ruby>えは０です。`, `ごにぜろを${reading}と、こたえはぜろです。`, '৫-কে ০ দিয়ে গুণ করলে উত্তর ০।', 'উত্তর'),
+        example(`まず<ruby>足<rt>た</rt></ruby>して、それから２を${ruby}。`, `まずたして、それからにを${reading}。`, 'প্রথমে যোগ করুন, তারপর ২ দিয়ে গুণ করুন।', 'ধাপ')
       ],
       '指定席': [
-        example(`新幹線の${ruby}を予約しました。`, `しんかんせんの${reading}をよやくしました。`, 'শিনকানসেনের সংরক্ষিত আসন বুক করেছি।', 'ট্রেন'),
-        example(`${ruby}の切符を見せてください。`, `${reading}のきっぷをみせてください。`, 'সংরক্ষিত আসনের টিকিট দেখান।', 'টিকিট'),
-        example(`窓側の${ruby}は空いていますか。`, `まどがわの${reading}はあいていますか。`, 'জানালার পাশের সংরক্ষিত আসন খালি আছে কি?', 'জিজ্ঞেস'),
-        example(`${ruby}は何号車ですか。`, `${reading}はなんごうしゃですか。`, 'সংরক্ষিত আসনটি কোন বগিতে?', 'স্টেশন')
+        example(`<ruby>新幹線<rt>しんかんせん</rt></ruby>の${ruby}を<ruby>予約<rt>よやく</rt></ruby>しました。`, `しんかんせんの${reading}をよやくしました。`, 'শিনকানসেনের সংরক্ষিত আসন বুক করেছি।', 'ট্রেন'),
+        example(`${ruby}の<ruby>切符<rt>きっぷ</rt></ruby>を<ruby>見<rt>み</rt></ruby>せてください。`, `${reading}のきっぷをみせてください。`, 'সংরক্ষিত আসনের টিকিট দেখান।', 'টিকিট'),
+        example(`<ruby>窓側<rt>まどがわ</rt></ruby>の${ruby}は<ruby>空<rt>あ</rt></ruby>いていますか。`, `まどがわの${reading}はあいていますか。`, 'জানালার পাশের সংরক্ষিত আসন খালি আছে কি?', 'জিজ্ঞেস'),
+        example(`${ruby}は<ruby>何号車<rt>なんごうしゃ</rt></ruby>ですか。`, `${reading}はなんごうしゃですか。`, 'সংরক্ষিত আসনটি কোন বগিতে?', 'স্টেশন')
       ],
       'パンツ': [
-        example(`黒い${ruby}に白いシャツを合わせました。`, `くろい${reading}にしろいしゃつをあわせました。`, 'কালো প্যান্টের সঙ্গে সাদা শার্ট মিলিয়েছি।', 'পোশাক'),
-        example(`この${ruby}は少しきついです。`, `この${reading}はすこしきついです。`, 'এই প্যান্টটি একটু আঁটসাঁট।', 'মাপ'),
-        example(`仕事には、落ち着いた色の${ruby}をはきます。`, `しごとには、おちついたいろの${reading}をはきます。`, 'কাজে শান্ত রঙের প্যান্ট পরি।', 'কাজের পোশাক'),
-        example(`${ruby}のサイズを確認してから買いました。`, `${reading}のさいずをかくにんしてからかいました。`, 'প্যান্টের মাপ যাচাই করে কিনেছি।', 'কেনাকাটা')
+        example(`<ruby>黒<rt>くろ</rt></ruby>い${ruby}に<ruby>白<rt>しろ</rt></ruby>いシャツを<ruby>合<rt>あ</rt></ruby>わせました。`, `くろい${reading}にしろいしゃつをあわせました。`, 'কালো প্যান্টের সঙ্গে সাদা শার্ট মিলিয়েছি।', 'পোশাক'),
+        example(`この${ruby}は<ruby>少<rt>すこ</rt></ruby>しきついです。`, `この${reading}はすこしきついです。`, 'এই প্যান্টটি একটু আঁটসাঁট।', 'মাপ'),
+        example(`<ruby>仕事<rt>しごと</rt></ruby>には、<ruby>落<rt>お</rt></ruby>ち<ruby>着<rt>つ</rt></ruby>いた<ruby>色<rt>いろ</rt></ruby>の${ruby}をはきます。`, `しごとには、おちついたいろの${reading}をはきます。`, 'কাজে শান্ত রঙের প্যান্ট পরি।', 'কাজের পোশাক'),
+        example(`${ruby}のサイズを<ruby>確認<rt>かくにん</rt></ruby>してから<ruby>買<rt>か</rt></ruby>いました。`, `${reading}のさいずをかくにんしてからかいました。`, 'প্যান্টের মাপ যাচাই করে কিনেছি।', 'কেনাকাটা')
       ],
       '吐く': [
-        example(`気分が悪くて、食べた物を${ruby}ことがあります。`, `きぶんがわるくて、たべたものを${reading}ことがあります。`, 'শরীর খারাপ হয়ে কখনও খাওয়া খাবার বমি হয়েছে।', 'স্বাস্থ্য'),
-        example(`何度も${ruby}なら、医者に相談してください。`, `なんども${reading}なら、いしゃにそうだんしてください。`, 'বারবার বমি হলে ডাক্তারের পরামর্শ নিন।', 'পরামর্শ'),
-        example(`吐き気はありますが、${ruby}ほどではありません。`, `はきけはありますが、${reading}ほどではありません。`, 'বমিভাব আছে, তবে বমি করার মতো নয়।', 'উপসর্গ'),
-        example(`子どもが急に${ruby}ことがあります。`, `こどもがきゅうに${reading}ことがあります。`, 'শিশু কখনও হঠাৎ বমি করতে পারে।', 'সতর্কতা')
+        example(`<ruby>気分<rt>きぶん</rt></ruby>が<ruby>悪<rt>わる</rt></ruby>くて、<ruby>食<rt>た</rt></ruby>べた<ruby>物<rt>もの</rt></ruby>を${ruby}ことがあります。`, `きぶんがわるくて、たべたものを${reading}ことがあります。`, 'শরীর খারাপ হয়ে কখনও খাওয়া খাবার বমি হয়েছে।', 'স্বাস্থ্য'),
+        example(`<ruby>何度<rt>なんど</rt></ruby>も${ruby}なら、<ruby>医者<rt>いしゃ</rt></ruby>に<ruby>相談<rt>そうだん</rt></ruby>してください。`, `なんども${reading}なら、いしゃにそうだんしてください。`, 'বারবার বমি হলে ডাক্তারের পরামর্শ নিন।', 'পরামর্শ'),
+        example(`<ruby>吐<rt>は</rt></ruby>き<ruby>気<rt>け</rt></ruby>はありますが、${ruby}ほどではありません。`, `はきけはありますが、${reading}ほどではありません。`, 'বমিভাব আছে, তবে বমি করার মতো নয়।', 'উপসর্গ'),
+        example(`<ruby>子<rt>こ</rt></ruby>どもが<ruby>急<rt>きゅう</rt></ruby>に${ruby}ことがあります。`, `こどもがきゅうに${reading}ことがあります。`, 'শিশু কখনও হঠাৎ বমি করতে পারে।', 'সতর্কতা')
       ],
       'おごり': [
-        example(`今日は私の${ruby}です。`, `きょうはわたしの${reading}です。`, 'আজ আমি খাওয়াব।', 'দাওয়াত'),
-        example(`このコーヒーは先輩の${ruby}でした。`, `このこーひーはせんぱいの${reading}でした。`, 'এই কফিটি সিনিয়র খাইয়েছেন।', 'ক্যাফে'),
-        example(`次は私の${ruby}にさせてください。`, `つぎはわたしの${reading}にさせてください。`, 'পরেরবার আমাকে খাওয়াতে দিন।', 'কথ্য'),
-        example(`「ここは僕の${ruby}だよ」と友達が言いました。`, `「ここはぼくの${reading}だよ」とともだちがいいました。`, '“এখানে আমি খাওয়াব,” বন্ধু বলল।', 'সংলাপ')
+        example(`<ruby>今日<rt>きょう</rt></ruby>は<ruby>私<rt>わたし</rt></ruby>の${ruby}です。`, `きょうはわたしの${reading}です。`, 'আজ আমি খাওয়াব।', 'দাওয়াত'),
+        example(`このコーヒーは<ruby>先輩<rt>せんぱい</rt></ruby>の${ruby}でした。`, `このこーひーはせんぱいの${reading}でした。`, 'এই কফিটি সিনিয়র খাইয়েছেন।', 'ক্যাফে'),
+        example(`<ruby>次<rt>つぎ</rt></ruby>は<ruby>私<rt>わたし</rt></ruby>の${ruby}にさせてください。`, `つぎはわたしの${reading}にさせてください。`, 'পরেরবার আমাকে খাওয়াতে দিন।', 'কথ্য'),
+        example(`「ここは<ruby>僕<rt>ぼく</rt></ruby>の${ruby}だよ」と<ruby>友達<rt>ともだち</rt></ruby>が<ruby>言<rt>い</rt></ruby>いました。`, `「ここはぼくの${reading}だよ」とともだちがいいました。`, '“এখানে আমি খাওয়াব,” বন্ধু বলল।', 'সংলাপ')
       ],
       '道路が混んでいる': [
-        example(`朝は${ruby}ので、早く家を出ます。`, `あさは${reading}ので、はやくいえをでます。`, 'সকালে রাস্তা ভিড় থাকে বলে তাড়াতাড়ি বাসা থেকে বের হই।', 'সকাল'),
-        example(`${ruby}と、バスが遅れることがあります。`, `${reading}と、ばすがおくれることがあります。`, 'রাস্তা ভিড় থাকলে বাস কখনও দেরি করে।', 'বাস'),
-        example(`今日は${ruby}か、地図で確認しました。`, `きょうは${reading}か、ちずでかくにんしました。`, 'আজ রাস্তা ভিড় কি না ম্যাপে দেখেছি।', 'মানচিত্র'),
-        example(`${ruby}時間を避けて出発します。`, `${reading}じかんをさけてしゅっぱつします。`, 'রাস্তা ভিড় থাকে এমন সময় এড়িয়ে রওনা হব।', 'পরিকল্পনা')
+        example(`<ruby>朝<rt>あさ</rt></ruby>は${ruby}ので、<ruby>早<rt>はや</rt></ruby>く<ruby>家<rt>いえ</rt></ruby>を<ruby>出<rt>で</rt></ruby>ます。`, `あさは${reading}ので、はやくいえをでます。`, 'সকালে রাস্তা ভিড় থাকে বলে তাড়াতাড়ি বাসা থেকে বের হই।', 'সকাল'),
+        example(`${ruby}と、バスが<ruby>遅<rt>おく</rt></ruby>れることがあります。`, `${reading}と、ばすがおくれることがあります。`, 'রাস্তা ভিড় থাকলে বাস কখনও দেরি করে।', 'বাস'),
+        example(`<ruby>今日<rt>きょう</rt></ruby>は${ruby}か、<ruby>地図<rt>ちず</rt></ruby>で<ruby>確認<rt>かくにん</rt></ruby>しました。`, `きょうは${reading}か、ちずでかくにんしました。`, 'আজ রাস্তা ভিড় কি না ম্যাপে দেখেছি।', 'মানচিত্র'),
+        example(`${ruby}<ruby>時間<rt>じかん</rt></ruby>を<ruby>避<rt>さ</rt></ruby>けて<ruby>出発<rt>しゅっぱつ</rt></ruby>します。`, `${reading}じかんをさけてしゅっぱつします。`, 'রাস্তা ভিড় থাকে এমন সময় এড়িয়ে রওনা হব।', 'পরিকল্পনা')
       ]
     };
     return banks[word] || null;
@@ -345,23 +348,33 @@
   function buildExamples(info) {
     const curated = curatedExamples(info);
     if (curated) return curated;
-    const type = classify(info);
+    const key = `${info.word}␟${info.reading}`;
+    const authored = (authoredExamples[key] || []).map(ex =>
+      example(ex.jp, ex.yomi, ex.bn, ex.tag));
     const source = sourceExample(info);
-    const output = source ? [source] : [];
-    const wanted = 4 - output.length;
 
     if (isCompleteEntry(info.word)) {
-      output.push(example(
+      const output = [example(
         targetRuby(info.word, info.reading),
         info.reading,
-        info.bn || 'সম্পূর্ণ কথোপকথনটি জোরে পড়ুন।',
+        info.bn || 'সম্পূর্ণ কথোপকথনটি জোরে পড়ুন।',
         'মূল phrase',
         { speak: info.word }
-      ));
+      )];
+      output.push(...authored);
+      if (output.length > 1) return output.slice(0, 4);
       output.push(...pickTemplates(commonStudyTemplates(), 4 - output.length, info, 'dialogue'));
       return output.slice(0, 4);
     }
 
+    const output = [];
+    if (source) output.push(source);
+    output.push(...authored);
+    if (output.length) return output.slice(0, 4);
+
+    // Last-resort fallback (no row should reach here after Run 51):
+    const type = classify(info);
+    const wanted = 4 - output.length;
     const banks = {
       verb: verbTemplates,
       clause: clauseTemplates,
@@ -493,16 +506,16 @@
   function updateCopy(total, sourceCount) {
     const heroCopy = $('.hero-copy');
     if (heroCopy) {
-      heroCopy.textContent = `Nihongo Sou Matome N3-এর বইয়ের ক্রমে Lesson 1–36। মোট ${total.toLocaleString('en-US')} vocabulary—একঘেয়ে template নয়; শব্দভেদে আলাদা sentence practice, আর ${sourceCount.toLocaleString('en-US')}টিতে Tatoeba corpus-এর বাস্তব বাক্য ও উৎস link।`;
+      heroCopy.textContent = `Nihongo Sou Matome N3-এর বইয়ের ক্রমে Lesson 1–36। মোট ${total.toLocaleString('en-US')} vocabulary—প্রতিটি শব্দের সঙ্গে furigana-সহ আসল উদাহরণ বাক্য ও বাংলা অনুবাদ, আর ${sourceCount.toLocaleString('en-US')}টিতে Tatoeba corpus-এর বাস্তব বাক্য ও উৎস link।`;
     }
     const note = $('.note-main p');
-    if (note) note.textContent = 'Part খুলুন → শব্দ + furigana দেখুন → “ব্যবহার + Practice” tap করুন → Corpus বাক্য থাকলে আগে নিজে অর্থ ধরুন → তারপর আলাদা pattern-এ sentence বলুন।';
+    if (note) note.textContent = 'Part খুলুন → শব্দ + furigana দেখুন → “ব্যবহার + Practice” tap করুন → উদাহরণ বাক্যগুলো পড়ুন ও বাংলা অনুবাদ মিলান → তারপর নিজে একই শব্দ দিয়ে বাক্য বলুন।';
     const studyNote = $('.study-note');
     if (studyNote && !$('#n3SourceNote')) {
       const sourceNote = document.createElement('aside');
       sourceNote.id = 'n3SourceNote';
       sourceNote.className = 'n3-source-note';
-      sourceNote.innerHTML = '<b>কোনটি বাস্তব, কোনটি Practice?</b><p><strong>Corpus • বাস্তব বাক্য</strong> card-এ Tatoeba sentence ID, লেখক ও source/license link আছে। বাকি card-গুলো শব্দের ধরন অনুযায়ী আলাদা sentence-building practice—এগুলো স্পষ্টভাবে label করা হয়েছে।</p>';
+      sourceNote.innerHTML = '<b>উদাহরণ বাক্য সম্পর্কে</b><p>প্রতিটি শব্দের উদাহরণ বাক্য এই তালিকার জন্য লেখা আসল বাক্য—পুরো বাক্যে furigana ও বাংলা অনুবাদসহ। <strong>Corpus • বাস্তব বাক্য</strong> লেখা card-গুলোতে Tatoeba-র বাক্য আছে; সেখানে sentence ID, লেখক ও source/license link দেওয়া আছে।</p>';
       studyNote.insertAdjacentElement('afterend', sourceNote);
     }
   }
@@ -537,7 +550,7 @@
   }
   var L = run24Lang();
   if (!L || L === "bn") return;
-  var url = "/assets/i18n/data/n3-vocab." + L + ".js?v=20261121.24";
+  var url = "/assets/i18n/data/n3-vocab." + L + ".js?v=20261126.51";
   document.write('<script src="' + url + '"><\/script>');
   document.addEventListener("DOMContentLoaded", function () {
     if (!window.AponarN3Vocab) {
